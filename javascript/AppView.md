@@ -1,0 +1,785 @@
+---
+layout: post
+title: AppView
+metaname: 
+metacontent: 
+---
+
+Custom Design for Html Appview.
+
+
+
+
+
+
+
+
+
+
+#### $(element).AppView<span class="signature">()</span>
+
+
+
+
+
+
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+&lt;div data-role="appview"&gt;&lt;/div&gt;
+       </code>
+</pre>
+
+
+
+
+
+
+### Requires
+
+
+
+
+* module:jQuery
+
+
+* module:ej.core
+
+
+* module:ej.unobtrusive
+
+
+* module:ej.mobile.core
+
+
+
+
+### Members
+
+
+
+
+
+
+
+
+#### addMetaTags<span class="type-signature type boolean">boolean</span>
+
+
+
+
+
+
+
+
+Specifies the Appview addMetaTags property to disable the meta description in the page
+
+
+
+
+Default Value:
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//To set addMetaTags API value
+&lt;script&gt;
+      App.addMetaTags=false;
+&lt;/script&gt;         </code>
+</pre>
+
+
+
+
+
+
+#### pageTransition<span class="type-signature type enum">enum</span>
+
+
+
+
+
+
+
+
+Specifies the Appview renderEJMControlsByDef property to disable modifying nomar style controls
+
+
+
+
+Default Value:
+
+
+
+
+
+
+* slide
+
+
+
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//To set renderEJMControlsByDef API value
+&lt;div data-role="appview"&gt;
+&lt;a href="page2.html" data-ej-apptransition="pop"&gt; Move To Page2 &lt;/a&gt;
+&lt;/div&gt;</code>
+</pre>
+
+
+
+
+
+
+#### renderEJMControlsByDef<span class="type-signature type boolean">boolean</span>
+
+
+
+
+
+
+
+
+Specifies the Appview renderEJMControlsByDef property to disable modifying nomar style controls
+
+
+
+
+Default Value:
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//To set renderEJMControlsByDef API value
+&lt;script&gt;
+      App.renderEJMControlsByDef=false;
+&lt;/script&gt;         </code>
+</pre>
+
+
+
+
+### Methods
+
+
+
+
+
+
+
+
+#### activeHistory<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To return the Current Page History
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Get History about Current Page
+&lt;script&gt;            
+      App.pageHistory.activeHistory();            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### add<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To Add the Page History
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Set History about Page
+&lt;script&gt;            
+      App.pageHistory.add("http://js.syncfusion.com/demos/mobile/",{title:"Mobile Demo"});            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### clearForward<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To Clear the Forward History
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Clear Forward History
+&lt;script&gt;            
+      App.pageHistory.clearForward();            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### convertToRelativeUrl<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To convert absolute url to relative url
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//check for hash
+&lt;script&gt;            
+      App.route.convertToRelativeUrl("http://js.syncfusion.com/demos/mobile/default.html");            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### createPage<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To create a Appview Page
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Create AppView
+&lt;script&gt;            
+      App.createPage($("#AppPage"));            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### find<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To find url in History
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//find the url in history
+&lt;script&gt;            
+      App.pageHistory.find("http://js.syncfusion.com/demos/mobile/");            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### getLocation<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To get the URL location of current page
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>             
+&lt;script&gt;
+      App.getLocation();//return current url location
+&lt;/script&gt;         </code>
+</pre>
+
+
+
+
+
+
+#### hasProtocol<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To check url has protocol
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//check for hash
+&lt;script&gt;            
+      App.route.hasProtocol("http://js.syncfusion.com/demos/mobile/default.html");            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### initPage<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To Initalize the dynamically created appview
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Initalize AppView
+&lt;script&gt;            
+      App.initPage();            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### lastHistory<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To return the Last Page History
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Get History about Last Page
+&lt;script&gt;            
+      App.pageHistory.lastHistory();            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### loadView<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To load a specific view page
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Load Page
+&lt;script&gt;            
+      App.loadView("page2.html");            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### makeUrlAbsolute<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To Get Compelete Url
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//get absolute url
+&lt;script&gt;            
+      App.route.makeUrlAbsolute("#default");            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### nextHistory<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To return the Current Next History
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Get History about Next Page
+&lt;script&gt;            
+      App.pageHistory.nextHistory();            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### prevHistory<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To return the Current Previous History
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Get History about Next Page
+&lt;script&gt;            
+      App.pageHistory.prevHistory();            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### replace<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To Replace the Page History
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Set History about Page
+&lt;script&gt;            
+      App.pageHistory.replace("#sample");            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### setPageRenderMode<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To set page rendermode
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//set page render mode
+&lt;script&gt;            
+      App.route.setPageRenderMode($("#page2"));            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### splitUrl<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To Split URL
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code> 
+//Get Url Sections
+&lt;script&gt;            
+      App.route.splitUrl("http://js.syncfusion.com/demos/mobile/");            
+&lt;/script&gt;           </code>
+</pre>
+
+
+
+
+
+
+#### transferPage<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To transfer one page to another page
+
+
+
+
+
+##### Examples
+
+<pre class="prettyprint">
+<code> 
+//Transfer Page
+&lt;script&gt;
+ function loadpage(){
+      App.transferPage(App.activePage,"page2.html");
+ }
+&lt;/script&gt;  </code>
+</pre>
+<pre class="prettyprint">
+<code>&lt;body&gt;
+&lt;a href="#" onClick="loadpage()" &gt; Move to Page2  &lt;/a&gt;
+&lt;/body&gt;</code>
+</pre>
+
+
+
+
+
+
+#### userAgent<span class="signature">()</span>
+
+
+
+
+
+
+
+
+To get the userAgent Name
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>             
+&lt;script&gt;
+      ej.userAgent();//return user agent name
+&lt;/script&gt;         </code>
+</pre>
+
+
+
