@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejTile
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

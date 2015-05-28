@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejSplitter
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

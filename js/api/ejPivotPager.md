@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejPivotPager
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

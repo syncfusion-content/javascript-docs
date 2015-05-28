@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmCheckBox
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

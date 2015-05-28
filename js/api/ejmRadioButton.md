@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmRadioButton
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

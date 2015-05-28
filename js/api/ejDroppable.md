@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejDroppable
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

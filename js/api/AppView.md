@@ -1,6 +1,8 @@
 ---
 layout: post
 title: AppView
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

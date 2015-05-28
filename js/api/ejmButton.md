@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmButton
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejBarcode
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

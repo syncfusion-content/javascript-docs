@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmTextBox
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

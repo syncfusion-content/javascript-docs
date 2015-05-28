@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejReportViewer
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

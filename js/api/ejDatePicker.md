@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejDatePicker
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

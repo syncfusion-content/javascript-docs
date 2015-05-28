@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejDraggable
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

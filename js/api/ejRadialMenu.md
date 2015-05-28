@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejRadialMenu
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

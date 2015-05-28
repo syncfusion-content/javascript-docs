@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejRadioButton
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

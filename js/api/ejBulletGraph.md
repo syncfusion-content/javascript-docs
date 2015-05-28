@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejBulletGraph
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

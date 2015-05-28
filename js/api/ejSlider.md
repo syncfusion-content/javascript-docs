@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejSlider
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

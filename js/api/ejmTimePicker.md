@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmTimePicker
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

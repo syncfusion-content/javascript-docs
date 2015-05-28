@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejMenu
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejCalculate
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

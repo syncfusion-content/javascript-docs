@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejLinearGauge
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

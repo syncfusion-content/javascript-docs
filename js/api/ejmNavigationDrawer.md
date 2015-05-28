@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmNavigationDrawer
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

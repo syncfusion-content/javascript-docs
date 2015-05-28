@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejUploadbox
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

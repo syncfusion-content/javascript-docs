@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejCircularGauge
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

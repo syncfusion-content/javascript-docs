@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmTab
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

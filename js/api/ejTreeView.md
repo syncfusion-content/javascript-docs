@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejTreeView
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

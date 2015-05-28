@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejResizable
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejOlapClient
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

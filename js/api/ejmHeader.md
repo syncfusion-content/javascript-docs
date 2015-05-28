@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmHeader
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

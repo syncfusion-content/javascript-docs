@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejToggleButton
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

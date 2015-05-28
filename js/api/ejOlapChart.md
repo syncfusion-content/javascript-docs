@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejOlapChart
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejSchedule
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

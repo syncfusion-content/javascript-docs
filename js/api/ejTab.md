@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejTab
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

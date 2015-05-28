@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmScrollPanel
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

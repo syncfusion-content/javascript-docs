@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejCaptcha
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

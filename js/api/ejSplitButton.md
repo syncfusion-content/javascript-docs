@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejSplitButton
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

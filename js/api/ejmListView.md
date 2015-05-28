@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmListView
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

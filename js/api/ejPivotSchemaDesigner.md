@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejPivotSchemaDesigner
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

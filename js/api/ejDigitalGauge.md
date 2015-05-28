@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejDigitalGauge
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

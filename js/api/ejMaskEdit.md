@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejMaskEdit
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

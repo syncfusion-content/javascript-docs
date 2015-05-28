@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejTextBoxes
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

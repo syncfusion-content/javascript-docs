@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejWaitingPopup
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejScroller
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

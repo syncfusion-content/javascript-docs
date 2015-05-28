@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejRotator
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

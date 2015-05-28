@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejProgressBar
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

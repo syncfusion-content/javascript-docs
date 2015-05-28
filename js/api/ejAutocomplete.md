@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejAutocomplete
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

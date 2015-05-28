@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejOlapGauge
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

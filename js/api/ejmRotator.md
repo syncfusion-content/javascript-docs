@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejmRotator
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

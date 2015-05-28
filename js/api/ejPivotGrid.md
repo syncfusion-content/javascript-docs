@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejPivotGrid
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

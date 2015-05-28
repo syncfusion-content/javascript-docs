@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejQuery
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

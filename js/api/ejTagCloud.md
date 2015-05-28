@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejTagCloud
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

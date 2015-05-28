@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejGantt
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

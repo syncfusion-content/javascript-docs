@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejListBox
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

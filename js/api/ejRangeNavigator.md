@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejRangeNavigator
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---

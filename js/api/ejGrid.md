@@ -1,6 +1,8 @@
 ---
 layout: post
 title: ejGrid
+documentation: ug
+platform: js
 metaname: 
 metacontent: 
 ---
