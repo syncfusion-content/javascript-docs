@@ -1,0 +1,97 @@
+---
+layout: post
+title: user-interaction
+description: user interaction
+platform: js
+control: BulletGraph	
+documentation: ug
+---
+
+# User Interaction
+
+## Animation
+
+**Bullet Graph** supports animation that makes the performance measure bar to animate when rendering the **Bullet Graph**. **Animation** is enabled or disabled using **enableAnimation** property. By default, **Animation** is enabled in **Bullet Graph**.
+
+{% highlight js %}
+
+**[JavaScript]**
+
+$("#BulletGraph1").ejBulletGraph({
+                    enableAnimation: true,
+                    value: 8,
+                    comparativeMeasureValue: 5,                    
+                });
+
+
+{% endhighlight %}
+
+## Responsiveness during browser resize
+
+**Bullet Graph** is made responsive when resizing the browser by using **enableResizing** property. By default the value of this property is **true** in **Bullet Graph**.
+
+{% highlight js %}
+
+**[JavaScript]**
+
+$("#BulletGraph1").ejBulletGraph({
+                    enableResizing: true,
+                    value: 8,
+                    comparativeMeasureValue: 5,                    
+                });
+
+
+{% endhighlight %}
+
+
+
+## Applying same color to all ticks and labels in a range
+
+Background color for qualitative range is applied to major ticks and minor ticks of the **Bullet Graph** using **applyRangeStrokeToTicks** property. The range colors are applied to labels using **applyRangeStrokeToLabels** property. By default same colors are not applied to a qualitative range and its corresponding ticks or labels.
+
+{% highlight js %}
+
+**[JavaScript]**
+
+$("#BulletGraph1").ejBulletGraph({
+                    applyRangeStrokeToTicks: true,
+                    applyRangeStrokeToLabels: true,
+
+                    qualitativeRanges: [
+                        { rangeEnd: 3.5, rangeStroke: 'darkred', rangeOpacity: 0.5 },
+                        { rangeEnd: 5.0, rangeStroke: 'red', rangeOpacity: 1 },
+                        { rangeEnd: 7.5, rangeStroke: 'blue', rangeOpacity: 0.7 },
+                        { rangeEnd: 9.0, rangeStroke: 'lightgreen', rangeOpacity: 1 },
+                        { rangeEnd: 10.0, rangeStroke: 'green', rangeOpacity: 1 }
+                    ],
+                    value: 8,
+                    comparativeMeasureValue: 5,                    
+                });
+
+
+{% endhighlight %}
+
+![](user-interaction_images\user-interaction_img1.png)
+
+## Tooltip
+
+By default **Bullet Graph** displays **Tooltip** when mouse is hovered over feature measure bar. **Tooltip** is enabled or disabled using visible property in **tooltipSettings**.
+
+{% include image.html url="\js\BulletGraph\concepts-and-features\user-interaction_images\user-interaction_img2.png" Caption="Bullet Graph with tooltip"%}
+
+Bullet Graph supports Tooltip template instead of default Tooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the template property in tooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="BulletGraphTooltip" style="display:none; width:125px; padding-top: 10px; padding-bottom:10px; color: blue"&gt;           &lt;div align="center" style="color:blue; font-weight:bold"&gt;           Sales           &lt;/div&gt;                           &lt;table style="color:green"&gt;           &lt;tr&gt;                &lt;td&gt;                    Current                &lt;/td&gt;                &lt;td&gt;                    : <b>{{:</b>currentValue<b>}}</b>                &lt;/td&gt;                           &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                    Target                &lt;/td&gt;                &lt;td&gt;                    : <b>{{:</b>targetValue<b>}}</b>                &lt;/td&gt;                           &lt;/tr&gt;                             &lt;/table&gt;           &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>$("#BulletGraph1").ejBulletGraph({                    value: 8,                    comparativeMeasureValue: 6,                    height: 150,                    tooltipSettings: { template: 'BulletGraphTooltip' }                });</td></tr>
+</table>
+
+
+The following screenshot displays **Bullet Graph** with a customized **Tooltip** including a header and contents such as current value and target value in different colors.
+
+{% include image.html url="\js\BulletGraph\concepts-and-features\user-interaction_images\user-interaction_img3.png" Caption="Bullet Graph using a tooltip template"%}
+
