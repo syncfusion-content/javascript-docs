@@ -1,0 +1,104 @@
+---
+layout: post
+title: angular-support
+description: angular support
+platform: js
+control: TimePicker
+documentation: ug
+---
+
+# Angular Support
+
+**TimePicker** widget is availed with two types of **angular JS** support namely, 
+
+* One way binding
+
+* Two way binding 
+
+One way binding refers to the process of applying scope values to all the available properties of the **TimePicker** widget where the changes made in the widget is not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **TimePicker** widget.
+
+Two-way binding supports both the processes – it applies the scope values to the **TimePicker** properties as well as the changes made in the widget is also reflected back and triggered within the angular scope change function.
+
+Apply the plugin and property assigning to the **TimePicker** widget element through the directive that starts with a letter **“e-“.**
+
+To know more details about Angular binding, refer the following link location,
+
+[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+
+The following code example depicts you the way to bind data to the **TimePicker** widget through angular support,
+
+
+{% highlight html %}
+
+**[HTML]**
+
+<html ng-app="TimeCtrl">
+<head>
+    <title>Essential Studio for JavaScript : Timepicker angular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+    <!--scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"> </script>
+</head>
+<body ng-controller="TimePickerCtrl">
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame" style="width: 30%; height: 17px;">
+                    <div id="control" style="float: left;width: 45%;">
+                      <input id="time" type="text" ej-timepicker e-value="tvalue" />
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way Angular Support</span></h6>
+                    </div>
+                    <div id="binding" style=" float: right;width: 45%;">
+                        <input id="timectrl" type="text" ej-timepicker e-value="tvalue" e-interval="10"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        angular.module('TimeCtrl', ['ejangular'])
+               .controller('TimePickerCtrl', function ($scope) {
+                   $scope.tvalue = "12:50 AM";
+               });
+    </script>
+<style type="text/css" class="cssStyles">
+        .control {
+            margin: 0 auto;
+            width: 136px;
+        }
+#time_timewidget, #timectrl_timewidget {
+            width: 84%;
+        }
+        #timeValue {
+            text-indent: 10px;
+        }
+</style>
+</body>
+</html>
+
+
+{% endhighlight %}
+
+
+
+Execute the above code to render the following output.
+
+
+
+![](angular-support_images\angular-support_img1.png)
+
+_Figure_ _10__23__:_ _TimePicker_ _with Angular Support_
+

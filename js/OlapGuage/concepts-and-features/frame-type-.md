@@ -1,0 +1,182 @@
+---
+layout: post
+title: frame-type-
+description: frame type 
+platform: js
+control: OLAP Gauge
+documentation: ug
+---
+
+# Frame Type 
+
+**OLAP Gauge** supports built-in frame types to provide effective rim styles. The **frameType** property is used to set the frame type of the **OlapGauge** control. The supported frame types are:
+
+* **Full Circle -** displays full view of the **OlapGauge**.
+
+* **Half Circle** - displays half view of the **OlapGauge**.
+
+## Full Circle
+
+By default, frame type is **Full Circle**. You can also set frame type with **frameType** property to **fullCircle**.
+
+
+
+{% highlight js %}
+
+**[JS]**
+$(function () {
+$("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
+                            backgroundColor: "transparent", **frameType:"fullcircle",**
+                            scales: [{
+                                showRanges: true,
+                                radius: 150, showScaleBar: true, size: 1,
+                                border: {
+                                    width: 0.5
+                                },
+                                showIndicators: true, showLabels: true,
+                                pointers: [{
+                                    showBackNeedle: true,
+                                    backNeedleLength: 20,
+                                    length: 120,
+                                    width: 7
+                                },
+                        {
+                            type: "marker",
+                            markerType: "diamond",
+                            distanceFromScale: 5,
+                            placement: "center",
+                            backgroundColor: "#29A4D9",
+                            length: 25,
+                            width: 15
+                        }],
+                                ticks: [{
+                                    type: "major",
+                                    distanceFromScale: 2,
+                                    height: 16,
+                                    width: 1, color: "#8c8c8c"
+                                },
+                                {
+                                    type: "minor",
+                                    height: 6,
+                                    width: 1,
+                                    distanceFromScale: 2,
+                                    color: "#8c8c8c"
+                                }],
+                                labels: [{
+                                    color: "#8c8c8c"
+                                }],
+                                ranges: [{
+                                    distanceFromScale: -5,
+                                    backgroundColor: "#fc0606",
+                                    border: { color: "#fc0606" }
+                                }, {
+                                    distanceFromScale: -5
+                                }],
+                                customLabels: [{
+                                    position: { x: 180, y: 290 },
+                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+                                }, {
+                                    position: { x: 180, y: 320 },
+                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+                                }, {
+                                    position: { x: 180, y: 150 },
+                                    font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+                                }]
+                            }]
+                        });
+                    });
+
+
+{% endhighlight %}
+
+
+
+
+
+
+
+{% include image.html url="\js\OlapGuage\concepts-and-features\frame-type-_images\frame-type-_img1.png" Caption="Figure: Full Circle"%}
+
+## Half Circle
+
+You can set frame type as **halfCircle** with the help of **frameType** property to visualize the gauge control in half circle.
+
+
+
+{% highlight js %}
+
+**[JS]**
+
+$(function () {
+$("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
+                            backgroundColor: "transparent", **frameType:"halfcircle",**
+                            scales: [{
+                                showRanges: true,
+                                radius: 150, showScaleBar: true, size: 1,
+                                border: {
+                                    width: 0.5
+                                },
+                                showIndicators: true, showLabels: true,
+                                pointers: [{
+                                    showBackNeedle: true,
+                                    backNeedleLength: 20,
+                                    length: 120,
+                                    width: 7
+                                },
+                        {
+                            type: "marker",
+                            markerType: "diamond",
+                            distanceFromScale: 5,
+                            placement: "center",
+                            backgroundColor: "#29A4D9",
+                            length: 25,
+                            width: 15
+                        }],
+                                ticks: [{
+                                    type: "major",
+                                    distanceFromScale: 2,
+                                    height: 16,
+                                    width: 1, color: "#8c8c8c"
+                                },
+                                {
+                                    type: "minor",
+                                    height: 6,
+                                    width: 1,
+                                    distanceFromScale: 2,
+                                    color: "#8c8c8c"
+                                }],
+                                labels: [{
+                                    color: "#8c8c8c"
+                                }],
+                                ranges: [{
+                                    distanceFromScale: -5,
+                                    backgroundColor: "#fc0606",
+                                    border: { color: "#fc0606" }
+                                }, {
+                                    distanceFromScale: -5
+                                }],
+                                customLabels: [{
+                                    position: { x: 180, y: 290 },
+                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+                                }, {
+                                    position: { x: 180, y: 320 },
+                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+                                }, {
+                                    position: { x: 180, y: 150 },
+                                    font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
+                                }]
+                            }]
+                        });
+                    });
+
+
+{% endhighlight %}
+
+
+
+
+
+
+
+{% include image.html url="\js\OlapGuage\concepts-and-features\frame-type-_images\frame-type-_img2.png" Caption="Figure: Half Circle Frame Type"%}
+
