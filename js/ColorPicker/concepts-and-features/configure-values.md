@@ -1,0 +1,199 @@
+---
+layout: post
+title: configure-values
+description: configure values
+platform: js
+control: ColorPicker
+documentation: ug
+---
+
+# Configure Values
+
+## opacityValue
+
+The **ColorPicker** control allows you to change the opacity value by using the **opacityValue** property. The selected color opacity is adjusted by using the opacityValue. 
+
+The **opacityValue** property is Number type and its default value is 10.
+
+* In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
+
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
+<tr>
+<td>
+<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({ value: "#278787", opacityValue: 40 });    });&lt;/script&gt;</td></tr>
+</table>
+
+
+**[CSHTML]**
+
+**//** In the **CSHTML** page, add the Html helpers to render **ColorPicker** widget
+
+ @Html.EJ().ColorPicker("colorPicker").Value("#278787").OpacityValue(40)   
+
+
+
+**[ASPX]**
+
+// In the **ASPX** page add the following code to render **ColorPicker** widget
+
+ &lt;ej:ColorPicker runat="server" ID="colorpicker" Value="#278787" OpacityValue="40"&gt; &lt;/ej:ColorPicker&gt;    
+
+
+
+The following screenshot displays the output of the above code example.
+
+{% include image.html url="\js\ColorPicker\concepts-and-features\configure-values_images\configure-values_img1.png" Caption="Figure 179: ColorPicker with Opacity Value"%}
+
+## button and tooltipText
+
+### buttonText
+
+The **ColorPicker** control allows you to define the text to be displayed in button elements. You can specify the text by using **buttonText** property. In **ColorPicker** control, popup contains two button elements “Apply” and “Cancel”.
+
+To configure the **buttonText** property for the button elements, use the corresponding default values listed in the following table.
+
+_Table_ _1__: List of Button elements_
+
+<table>
+<tr>
+<td>
+<b>Element</b></td><td>
+<b>Default value</b></td></tr>
+<tr>
+<td>
+apply</td><td>
+Apply</td></tr>
+<tr>
+<td>
+cancel</td><td>
+Cancel</td></tr>
+</table>
+### tooltipText
+
+The **ColorPicker** control consists of more number of sub controls and elements. To provide some information about each element and sub control, you can use the tooltip concept and you can achieve this by using **tooltipText** property.
+
+To configure the **tooltipText,** use****the following listed elements and its corresponding default value.
+
+_Table_ _2__: List of Tooltip elements_
+
+<table>
+<tr>
+<td>
+<b>Element</b></td><td>
+<b>Default value</b></td></tr>
+<tr>
+<td>
+switcher</td><td>
+Switcher</td></tr>
+<tr>
+<td>
+addbutton</td><td>
+Add Color</td></tr>
+<tr>
+<td>
+basic</td><td>
+Basic</td></tr>
+<tr>
+<td>
+monochrome</td><td>
+Mono Chrome</td></tr>
+<tr>
+<td>
+flatcolors</td><td>
+Flat Colors</td></tr>
+<tr>
+<td>
+seawolf</td><td>
+Sea Wolf</td></tr>
+<tr>
+<td>
+webcolors</td><td>
+Web Colors</td></tr>
+<tr>
+<td>
+sandy</td><td>
+Sandy</td></tr>
+<tr>
+<td>
+pinkshades</td><td>
+Pink Shades</td></tr>
+<tr>
+<td>
+misty</td><td>
+Misty</td></tr>
+<tr>
+<td>
+vintage</td><td>
+Vintage</td></tr>
+<tr>
+<td>
+moonlight</td><td>
+Moon Light</td></tr>
+<tr>
+<td>
+candycrush</td><td>
+Candy Crush</td></tr>
+<tr>
+<td>
+currentcolor</td><td>
+Current Color</td></tr>
+<tr>
+<td>
+selectedcolor</td><td>
+Selected Color</td></tr>
+<tr>
+<td>
+citrus</td><td>
+Citrus</td></tr>
+</table>
+
+
+When it is necessary to set the button text and tooltipText values in **Spanish** culture, the **ColorPicker** allow you to define the culture values to **buttonText** and **tooltipText** property. The following section explains on how to define the Spanish culture values to **ColorPicker** control.
+
+* In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget.
+
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
+<tr>
+<td>
+<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({             value: "#278787",             //spanish culture values             buttonText: { apply: "aplicar ", cancel: "cancelar" }, tooltipText: { sandy: "arenoso" }        });    });&lt;/script&gt;</td></tr>
+</table>
+
+
+**[CSHTML]**
+
+**//** In the **CSHTML** page, add the Html helpers to render **ColorPicker** widget
+
+ @Html.EJ().ColorPicker("colorPicker").Value("#278787").ColorPickerButtonText(color=> color.Apply("aplicar").Cancel("cancelar")).ColorPickerTooltipText(tooltip=> 
+
+tooltip.Sandy("arenoso")  
+
+
+
+**[ASPX]**
+
+// In the **ASPX** page add the following code to render **ColorPicker** widget
+
+&lt;ej:ColorPicker runat="server" ID="colorpicker" Value="#278787"&gt;
+
+      &lt;ColorPickerButtonText Apply="aplicar" Cancel="cancelar" /&gt;
+
+      &lt;ColorPickerTooltipText Sandy="arenoso" /&gt;
+
+&lt;/ej:ColorPicker&gt;
+
+
+
+The following screenshot displays the output of the above code example.
+
+{% include image.html url="\js\ColorPicker\concepts-and-features\configure-values_images\configure-values_img2.png" Caption="Figure 1810: ColorPicker with Culture Support"%}
+
