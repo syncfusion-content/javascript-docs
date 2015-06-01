@@ -1,0 +1,33 @@
+---
+layout: post
+title: State-Maintenance
+description: state maintenance
+platform: js
+control: ProgressBar
+documentation: ug
+---
+
+# State Maintenance
+
+Save current model value to cookies for **State Maintenance**. While refreshing the **ProgressBar** widget, page retains the model value applied from browser cookies. By default, the ‘**enablePersistence**’ property is set to ‘**false**’ in the **ProgressBar**.
+
+The following steps explain the **State Maintenance** in the **ProgressBar** control.
+
+* In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
+
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;        </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following script to enable State Maintenance.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressBar").ejProgressBar({            <b>enablePersistence: true,</b>            value: 40,            width: 500,            height: 40        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + " %" });    });&lt;/script&gt;</td></tr>
+</table>
+
+
+* The following screenshot displays the output.
+
+{% include image.html url="/js/ProgressBar/Concepts-and-features/State-Maintenance_images/State-Maintenance_img1.png" Caption="Figure 13: State Maintenance in ProgressBar"%}
+

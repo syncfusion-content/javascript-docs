@@ -1,0 +1,91 @@
+---
+layout: post
+title: Knockout-Support
+description: knockout support
+platform: js
+control: PercentageTextBox 
+documentation: ug
+---
+
+# Knockout Support
+
+**Knockout support** allows you to bind the **HTML** elements against any of the available data models. It is of two types**.**
+
+* One-way binding
+
+* Two-way binding
+
+**One-way binding** refers to the process of applying observable values to all the available properties of the **PercentageTextBox** widget, but the changes made in **PercentageTextBox** widget are not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the **PercentageTextBox** widget.
+
+**Two-way binding** supports both the processes; it applies the observable values to the **Textbox** widget properties as well as the changes made in the **PercentageTextBox** widget are also reflected back and triggered within the observable collections. 
+
+For more information about the **knockout binding**, refer the following online documentation in the given link location,
+
+[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+
+The following example depicts the way to bind data to the **PercentageTextBox** widgets through **knockout****support** that enables and populates data to the **PercentageTextBox** widget based on the value set to the other **PercentageTextBox** widget.
+
+{% highlight html %}
+
+**[HTML]**
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!-- Style sheet for default theme (flat azure) -->
+    <link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+</head>
+<body>
+    <div id="center">
+        <table cellpadding="10">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="percent">Percent</label>
+                    </td>
+                    <td>
+                        <input id="percent" type="text" data-bind="ejPercentageTextbox: { value: pvalue }" />
+                    </td>
+                    <td>
+                        <input type="text" class="e-input" style="border:1px solid #bdbcbd" data-bind="value: pvalue" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        window.viewModel = {
+            pvalue: ko.observable(50),
+        }
+        jQuery(function ($) {
+            ko.applyBindings(viewModel);
+        });
+    </script>
+</body>
+</html>
+
+
+{% endhighlight %}
+
+
+
+
+
+The output of **Knockout binding** in **PercentageTextBox** .
+
+
+
+{% include image.html url="/js/PercentageTextBox/Concepts-and-Features/Knockout-Support_images/Knockout-Support_img1.png" Caption="Figure 26: PercentageTextBox at initial load"%}
+
+
+
+{% include image.html url="/js/PercentageTextBox/Concepts-and-Features/Knockout-Support_images/Knockout-Support_img2.png" Caption="Figure 27: PercentageTextBox with knockout binding"%}
+

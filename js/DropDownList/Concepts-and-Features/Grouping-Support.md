@@ -1,0 +1,95 @@
+---
+layout: post
+title: Grouping-Support
+description: grouping support
+platform: js
+control: DropDownList
+documentation: ug
+---
+
+# Grouping Support
+
+**Grouping Support using DataSource**
+
+**Grouping****DropDownList** items can be done by using **category** field. Set the **category** field and define it in the **DataSource**. Then map the fields for the data items of the **DropDownList** and set **allowGrouping** property value to **true**.
+
+The following steps explain you how to group data items in the **DropDownList** control by using **DataSource**.
+
+1. In an **HTML** page, add a **&lt;input&gt;** element to configure **DropDownList** widget.
+
+
+
+{% highlight html %}
+
+**[HTML]**
+
+<input type="text" id="categoryGrouping" />     
+
+
+{% endhighlight %}
+
+
+
+2. Configure the **DataSource** and initialize the **DropDownList** widget in the Script section as follows.
+
+{% highlight js %}
+
+**[Script]**
+
+      $(function () {
+            var countries = [
+               { country: "Austria", group: "A" },
+               { country: "Australia", group: "A" }, { country: "Antarctica", group: "A" },
+               { country: "Bangladesh", group: "B" }, { country: "Belgium", group: "B" },
+               { country: "Brazil", group: "B" },
+               { country: "Canada", group: "C" }, { country: "China", group: "C" },
+               { country: "Cuba", group: "C" },
+               { country: "Denmark", group: "D" }, { country: "Dominica", group: "D" },
+               { country: "Europe", group: "E" }, { country: "Egypt", group: "E" },
+               { country: "England", group: "E" },
+               { country: "India", group: "I" }, { country: "Indonesia", group: "I" },
+               { country: "Ireland", group: "I" }, { country: "Italy", group: "I" },
+               { country: "France", group: "F" }, { country: "Finland", group: "F" },
+               { country: "Germany", group: "G" }, { country: "Greece", group: "G" },
+               { country: "Greenland", group: "G" }, { country: "Georgia", group: "G" },
+               { country: "Haiti", group: "H" }, { country: "Hong Kong", group: "H" }
+            ];
+            $('#categoryGrouping').ejDropDownList({
+                **dataSource: countries,**
+                **fields: { text: "country", category: "group" },**
+                **allowGrouping: true,**
+                width: "150px"
+            });
+});
+
+
+{% endhighlight %}
+
+
+
+3. The above code example illustrates the following output.
+
+
+
+{% include image.html url="/js/DropDownList/Concepts-and-Features/Grouping-Support_images/Grouping-Support_img1.png" Caption="Figure 29: Grouping support by using DateaSource"%}
+
+**Grouping Support using UL and LI structure**
+
+Another way to group **DropDownList** is by using **UL** and **LI structure**. Here, you have to specify the group category in the **&lt;span&gt;** tag. The ID of the **&lt;div&gt;** tag should be given as the **targetId** for the **DropDownList** control. The following code example illustrates how to achieve Grouping in **DropDownList** control by using **UL and LI structure**.
+
+1. Add the input element and the UL and LI structures to group the **DropDownList** control.
+
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input type="text" id="vegetable" /&gt;                        &lt;div id="vegetablelist"&gt;                            &lt;ul&gt;                                <span>Leafy and Salad</span>                                <li>Cabbage</li>                                <li>Pea</li>                                <li>Spinach</li>                                <li>Wheatgrass</li>                                <li>Yarrow &lt;/li&gt;                                <span>Beans</span>                                <li>Chickpea</li>                                <li>Green bean</li>                                  <span>Bulb and Stem</span>                                <li>Garlic</li>                                <li>Garlic Chives</li>                                 <span>Root and Tuberous</span>                                <li>Beetroot</li>                                <li>Carrot</li>                            &lt;/ul&gt;                        &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[Script]</b><b>// You can initialize the DropDownList control in the script section and add the Target ID to the DropDownList as follows.</b>$('#vegetable').ejDropDownList({                 <b>targetID: "vegetablelist",</b>                 width:"150px"             });</td></tr>
+</table>
+
+
+{% include image.html url="/js/DropDownList/Concepts-and-Features/Grouping-Support_images/Grouping-Support_img2.png" Caption="Figure 30: Grouping in Dropdownlist by using UL and LI structure "%}
+

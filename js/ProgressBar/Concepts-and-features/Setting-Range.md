@@ -1,0 +1,31 @@
+---
+layout: post
+title: Setting-Range
+description: setting range
+platform: js
+control: ProgressBar
+documentation: ug
+---
+
+# Setting Range
+
+The **range** of the **ProgressBar** is set by using minimum and maximum values. The Minimum value specifies the value where the **ProgressBar** shows the process to have started. The Maximum value specifies the value where the process is completed. You can set the range by using the **‘minValue’** and **‘maxValue’** property.
+
+* In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
+
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add Range for the ProgressBar widget as follows.&lt;script type="text/javascript"&gt;                      $(function () {//Declaration.                $("#progressbar").ejProgressBar({                    <b>minValue: 40,</b><b>                    maxValue: 80,</b>                    value: 80,                    height: 20,                    width: 500                });                var progress = $("#progressbar").data("ejProgressBar");                progress.setModel({ text: progress.getPercentage() + " % Completed" });            });&lt;/script&gt;</td></tr>
+</table>
+
+
+* The following screenshot displays the output.
+
+{% include image.html url="/js/ProgressBar/Concepts-and-features/Setting-Range_images/Setting-Range_img1.png" Caption="Figure 8: Range in ProgressBar"%}
+

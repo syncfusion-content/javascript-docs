@@ -1,0 +1,1066 @@
+---
+layout: post
+title: ejQuery
+documentation: API
+platform: js
+metaname: 
+metacontent: 
+---
+
+Communicates with data source and returns the desired result based on the Query provided.
+
+
+
+
+
+
+
+
+
+
+#### $(element).ejQuery<span class="signature">()</span>
+
+
+
+
+
+
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid; padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(5));
+var tbody = ""; 
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;td&gt;{3}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity,="" dm[i].freight);="" $(".table="" tbody").html(tbody);};=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+### Methods
+
+
+
+
+
+
+
+
+#### addParams<span class="signature">(key, value)</span>
+
+
+
+
+
+
+
+
+Passes custom parameters to our API URL.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>key</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"></td>
+</tr>
+<tr>
+<td class="name"><code>value</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;script&gt;
+var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"}).executeQuery(new ej.Query().addParams("test","value"));
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### clone<span class="signature">()</span>
+
+
+
+
+
+
+
+
+clone is used to dublicate the data.
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","equal","10250").clone());
+var tbody="";
+tbody += String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;", dm[0].OrderID, dm[0].CustomerID, dm[0].ShipCity);
+$(".table tbody").html(tbody);
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### excute<span class="signature">(dataManager)</span>
+
+
+
+
+
+
+
+
+It is used to excute the query on URL Binding
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>dataManager</code></td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">json data or OData</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Returns:
+
+method executes all operations immediately and does not wait for each individual operation to complete. The result of each operation will be handled once the result is available.
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;script&gt;
+var dataManager = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"});
+var promise =  ej.Query().select(["OrderID", "CustomerID", "ShipName", "ShipCity", "Freight"]).execute(dataManager,done).take(3);
+promise.done(function(e){}) 
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### excuteLocal<span class="signature">(dataManager)</span>
+
+
+
+
+
+
+
+
+It is used to excute the query on Local Binding
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>dataManager</code></td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">json data</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;script&gt;
+var dm = ej.DataManager(window.gridData);
+var promise =  ej.Query().select(["OrderID", "CustomerID", "ShipName", "ShipCity", "Freight"]).executeLocal(dm).take(3);
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### expand<span class="signature">(tables)</span>
+
+
+
+
+
+
+
+
+expand is used to performs complex binding.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>tables</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the tables</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;script&gt;
+var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
+.executeQuery(ej.Query().from("Orders").select("OrderID", "CustomerID", "ShipCity", "Employee.FirstName").expand("Employee"));
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### foreignKey<span class="signature">(key)</span>
+
+
+
+
+
+
+
+
+Relates two tables. A foreign key is a column or combination of columns which is used to establish and enforce a link between two tables.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>key</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">primary key field name</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;script&gt;
+var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
+.executeQuery(ej.Query().from("Orders")
+.hierarchy(ej.Query().from("Order_Details").foreignKey("OrderID").sortBy("Quantity"),function () {
+ return [10250, 10251, 10252, 10253] }));
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### from<span class="signature">(tableName)</span>
+
+
+
+
+
+
+
+
+Specifies the name of table(s) to retrieve data.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>tableName</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the table</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().from("Orders"));
+var tbody="";
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### group<span class="signature">(fieldName)</span>
+
+
+
+
+
+
+
+
+Groups records based on the given field name.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>fieldName</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the column</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().group("CustomerID"));
+var tbody="";
+for(var i=0;i&lt;3;i++){ row="dm[0].items[i];" tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," row.orderid,="" row.customerid,="" row.shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### hierarchy<span class="signature">(query)</span>
+
+
+
+
+
+
+
+
+Displays the records in hierarchical relationships. The foreign key is used to relate two tables.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>query</code></td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">query the json data</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;script&gt;
+var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
+.executeQuery(ej.Query().from("Orders")
+.hierarchy(ej.Query().foreignKey("OrderID").from("Order_Details"),function () {
+ return [10248] }));
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### page<span class="signature">(pageIndex, pageSize)</span>
+
+
+
+
+
+
+
+
+Retrieves records based on the given page index and size.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>pageIndex</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">page number</td>
+</tr>
+<tr>
+<td class="name"><code>pageSize</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Number of rows in the page</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+//page(pageIndex,pageSize)
+var dm = ej.DataManager(window.employeeData).executeLocal(ej.Query().page(2,3));
+var tbody="";
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].employeeid,="" dm[i].lastname,="" dm[i].firstname);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### range<span class="signature">(start, end)</span>
+
+
+
+
+
+
+
+
+The range property is used to retrieve the records based on the given start and end index.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>start</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">start index of json data</td>
+</tr>
+<tr>
+<td class="name"><code>end</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">end index of json data</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+//range(startIndex,endIndex)
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(20).range(2,5));
+var tbody="";
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### requiresCount<span class="signature">()</span>
+
+
+
+
+
+
+
+
+It is used to count records.
+
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().requiresCount()));
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### search<span class="signature">(fieldName, operator, value, ignoreCase)</span>
+
+
+
+
+
+
+
+
+It is used to search the given search key value in JSON data
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>fieldName</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the column</td>
+</tr>
+<tr>
+<td class="name"><code>operator</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">conditional Operators</td>
+</tr>
+<tr>
+<td class="name"><code>value</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">value to filter the field name</td>
+</tr>
+<tr>
+<td class="name"><code>ignoreCase</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">on/off case sensitive.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID","ShipCity","CustomerID"]).search("10251","OrderID","equal"));
+var tbody="";
+tbody += String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;", dm[0].OrderID, dm[0].CustomerID, dm[0].ShipCity);
+$(".table tbody").html(tbody);
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### select<span class="signature">(fieldName)</span>
+
+
+
+
+
+
+
+
+Selects specified columns from the data source.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>fieldName</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the columns</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID","CustomerID","ShipCity"]));
+var tbody="";
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### skip<span class="signature">(nos)</span>
+
+
+
+
+
+
+
+
+Skips the given count of records from the data source.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>nos</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">number of records</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.employeeData).executeLocal(ej.Query().skip(5));
+var tbody="";
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].employeeid,="" dm[i].lastname,="" dm[i].firstname);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### sortBy<span class="signature">(fieldName)</span>
+
+
+
+
+
+
+
+
+Sort items or records in an ordered sequence.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>fieldName</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the column</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().sortBy("CustomerID desc"));
+var tbody="";
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### sortByDesc<span class="signature">(fieldName)</span>
+
+
+
+
+
+
+
+
+Sort items or records in descending order.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>fieldName</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the column</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().sortByDesc("CustomerID"));
+var tbody="";
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### take<span class="signature">(nos)</span>
+
+
+
+
+
+
+
+
+Picks the given count of records from the top of the datasource.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>nos</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">number of records</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(5));
+var tbody="";
+for(var i=0;i&lt;5;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/5;i++){&gt;</code>
+</pre>
+
+
+
+
+
+
+#### using<span class="signature">(dataManager)</span>
+
+
+
+
+
+
+
+
+using is a method used to query the data manager.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>dataManager</code></td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Pass new data source</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData);
+var local = dm.executeLocal(ej.Query().using(dm).take(1));
+var tbody = ""; 
+ tbody += String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;/tr&gt;", local[0].OrderID, local[0].CustomerID);
+ $(".table tbody").html(tbody); 
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+#### where<span class="signature">(fieldName, operator, value, ignoreCase)</span>
+
+
+
+
+
+
+
+
+It is used to filter records based on the filter condition.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>fieldName</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the column</td>
+</tr>
+<tr>
+<td class="name"><code>operator</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">conditional Operators</td>
+</tr>
+<tr>
+<td class="name"><code>value</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">value to filter the field name</td>
+</tr>
+<tr>
+<td class="name"><code>ignoreCase</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">on/off case sensitive.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+##### Example
+
+<pre class="prettyprint">
+<code>&lt;style&gt;
+.table,tr,td{ border:1px solid;padding:3px;}
+&lt;/style&gt;
+&lt;table class="table" style="border-collapse:collapse"&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;script&gt;
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","lessthan","10253"));
+var tbody="";
+for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
+</pre>
+
+
+

@@ -1,0 +1,65 @@
+---
+layout: post
+title: Accordion-Panel-enabler
+description: accordion panel enabler
+platform: js
+control: Accordion 
+documentation: ug
+---
+
+# Accordion Panel enabler
+
+**Enable/Disable widget**
+
+**You can enable or disable the Accordion** widget on initial rendering using the **enabled** property. By default **enabled** property is set to true and the **Accordion** panels are active always. 
+
+ The following steps explain you on how to disable the **Accordion** widget
+
+1. In an HTML page, define a &lt;div&gt; element that is a container for  Accordion widget and add the contents correspondingly
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="accordion" style="width: 400px"&gt;     &lt;h3&gt;          <a href="#">Orubase</a>&lt;/h3&gt;      &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;          Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.    &lt;/div&gt;      &lt;h3&gt;           <a href="#">WinRTXAML</a>&lt;/h3&gt;       &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.           &lt;/div&gt;            &lt;h3&gt;             <a href="#">Metro Studio</a>&lt;/h3&gt;     &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;           Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                          &lt;/div&gt;                         &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>// </b>To disable the control set <b>enabled</b> property value as <b>false</b>            $("#accordion").ejAccordion({<b>                enabled:false</b>            });</td></tr>
+</table>
+
+
+2. Output for disabled Accordion control is as follows.
+
+
+
+{% include image.html url="/js/Accordion/Concepts-and-Features/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png" Caption="Disabled accordion widget"%}
+
+**Enable panel items**
+
+You can enable the **Accordion** widget items on initial loading using **enabledItems** property. This property takes array of indices whose panel needs to be enabled in **Accordion** widget. 
+
+The **disabledItems** property disables the **Accordion** items based on the index. This takes array of indices whose panel is to be disabled. 
+
+**Enabling accordion panel items**
+
+The following steps explains you on how to enable the panel items in **Accordion** widget
+
+1. In an HTML page, define a &lt;div&gt; element that is a container for  Accordion widget and add the contents correspondingly
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="accordion" style="width: 400px"&gt;     &lt;h3&gt;          <a href="#">Orubase</a>&lt;/h3&gt;      &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;          Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.    &lt;/div&gt;      &lt;h3&gt;           <a href="#">WinRTXAML</a>&lt;/h3&gt;       &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.           &lt;/div&gt;            &lt;h3&gt;             <a href="#">Metro Studio</a>&lt;/h3&gt;     &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;           Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                          &lt;/div&gt;                         &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// To enable and disable accordion panel items set the values for enabledItems and disabledItems            $("#accordion").ejAccordion({<b>                enabledItems: [1, 2],</b><b>                disabledItems:[0],</b><b>                </b>selectedItemIndex:1,                enableMultipleOpen : true            });</td></tr>
+</table>
+
+
+2. Output for Accordion control with some enabled and disabled items, where first panel is disabled and it can’t be expanded or collapsed is as follows.
+
+
+
+{% include image.html url="/js/Accordion/Concepts-and-Features/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png" Caption="Accordion with disabled and enabled items"%}
+

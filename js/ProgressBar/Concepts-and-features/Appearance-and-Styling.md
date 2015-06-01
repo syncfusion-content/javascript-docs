@@ -1,0 +1,127 @@
+---
+layout: post
+title: Appearance-and-Styling
+description: appearance and styling
+platform: js
+control: ProgressBar
+documentation: ug
+---
+
+# Appearance and Styling
+
+## Adjusting ProgressBar size
+
+**ProgressBar** widget provides the ability to change or adjust the **ProgressBar** size. The ‘**height’** and ‘**width’** properties in the **ProgressBar** widget allows you to set the maximum height and maximum width for the **ProgressBar**. The value set to this property is **string or Number** type.
+
+The following steps explain you on how to adjust the **ProgressBar** size.
+
+* In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget
+
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the code example to adjust the ProgressBar size (Number).&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({            value: 50,<b>            width: 400,</b><b>            height: 40</b>        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + " %" });    });&lt;/script&gt;(OR)Add the code to adjust the <b>ProgressBar </b>size (String).<b>[JavaScript]</b>&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({            value: 50,<b>            width: "400px",</b><b>            height: "40px"</b>        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + " %" });    });&lt;/script&gt;</td></tr>
+</table>
+
+
+The following screenshot displays the output.
+
+{% include image.html url="/js/ProgressBar/Concepts-and-features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption=" Figure 9: Adjusting ProgressBar size"%}
+
+## Custom text
+
+**Custom text** is displayed when the **ProgressBar** shows different levels of progress in the **ProgressBar**. Support for **Custom text** to mention the percentage or any other message inside the **ProgressBar** is possible by using “**text**” property.
+
+The following steps explain the configuration of the **Custom text** for the **ProgressBar** widget.
+
+*   In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="control"&gt;            &lt;div id="progressbar"&gt;&lt;/div&gt; &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add Custom Text for the ProgressBar widget.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({            <b>text: "loading",</b>            value: 35,            height: 20,            width: 500        });    });&lt;/script&gt;</td></tr>
+</table>
+
+
+* The following screenshot displays the output.       {% include image.html url="/js/ProgressBar/Concepts-and-features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="    Figure 10: Custom Text in ProgressBar"%}
+
+## Theme
+
+The **ProgressBar** widget style and appearance are controlled based on **CSS** classes. In order to apply **Theme** to the **ProgressBar** widget, you can refer two files, namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. When the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project, as **ej.widgets.all.min.css** is the combination of these both. 
+
+By default, there are 12 themes’ support available for the **ProgressBar** widget namely,
+
+* Default-theme
+
+* Flat-azure-dark
+
+* Fat-lime
+
+* Flat-lime-dark
+
+* Flat-saffron
+
+* Flat-saffron-dark
+
+* Gradient-azure
+
+* Gradient-azure-dark
+
+* Gradient-lime
+
+* Gradient-lime-dark
+
+* Gradient-saffron
+
+* Gradient-saffron-dark
+
+## CSS class
+
+To apply custom styles to the **ProgressBar** widget, you can specify the **cssClass** property. The specified **CSS** name is added in the root of the **ProgressBar** widget.
+
+The following code example is used to render the **ProgressBar** widget with customized style.
+
+* In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
+
+
+
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;        </td></tr>
+<tr>
+<td>
+ <b>[JavaScript]</b>// Add the class for the ProgressBar Widget.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({<b>            cssClass: 'custom',</b>            value: 70,            height: 20,            width: 500        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + "%" });    });&lt;/script&gt;</td></tr>
+</table>
+
+
+* Add the following styles to render the **ProgressBar** with customized style.
+
+{% highlight css %}
+
+**[CSS]**
+
+<style type="text/css">
+    .custom .e-progress {
+      background-color:gray;
+    }
+
+</style>
+
+
+{% endhighlight %}
+
+
+
+* The following screenshot displays the output.
+
+{% include image.html url="/js/ProgressBar/Concepts-and-features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="      Figure 11: Appearance and styling in ProgressBar"%}
+

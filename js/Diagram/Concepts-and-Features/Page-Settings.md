@@ -1,0 +1,215 @@
+---
+layout: post
+title: Page-Settings
+description: page settings
+platform: js
+control: Diagram
+documentation: ug
+---
+
+# Page Settings
+
+**Page settings** enable you to customize the width and height of the Diagram page. The properties of **Page****setting** are listed as follows.
+
+_Page settings_
+
+<table>
+<tr>
+<td>
+<b>Properties</b></td><td>
+<b>Data Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+pageWidth</td><td>
+number</td><td>
+Gets or sets the width of the page</td></tr>
+<tr>
+<td>
+pageHeight</td><td>
+number</td><td>
+Gets or sets the height of the page</td></tr>
+<tr>
+<td>
+multiplePage</td><td>
+boolean</td><td>
+Gets or sets whether  multiple page option is enabled or not</td></tr>
+<tr>
+<td>
+pageBorderWidth</td><td>
+number</td><td>
+Gets or sets the border width of the page</td></tr>
+<tr>
+<td>
+pageBackgroundColor</td><td>
+string</td><td>
+Gets or sets the background color of the page</td></tr>
+<tr>
+<td>
+pageBorderColor</td><td>
+string</td><td>
+Gets or sets the border color of the page</td></tr>
+<tr>
+<td>
+pageMargin</td><td>
+number</td><td>
+Gets or sets the  margin of the page</td></tr>
+<tr>
+<td>
+showPageBreak</td><td>
+boolean</td><td>
+Gets or sets whether  page break option is enabled or not</td></tr>
+<tr>
+<td>
+pageOrientation</td><td>
+ej.datavisualization.Diagram.PageOrientations</td><td>
+Gets or sets the orientation of the page</td></tr>
+</table>
+
+
+The following code illustrates how to customize **Page Settings**
+
+{% highlight js %}
+
+**[JS]**
+
+//set page setting properties
+$("#Diagram").ejDiagram({ pageSettings: { pageHeight : 300, pageWidth : 450, pageBorderWidth : 4, pageBackgroundColor : "lightblue", pageBorderColor : "black", pageMargin : 35, showPageBreaks : true, multiplePage : true, pageOrientation : ej.datavisualization.Diagram.Orientation.Portrait }});
+
+
+{% endhighlight %}
+
+
+
+{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img1.png" Caption=""%}
+
+_Page Appearance-PageSettings based_
+
+## MultiplePage and PageBreaks
+
+When **multiplePage** is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. **PageBreaks** is used as a visual guide to see how pages are split into multiple pages.
+
+{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img2.png" Caption=""%}
+
+_Multiple Page and Page Breaks_
+
+## AutoScroll
+
+Autoscroll feature automatically scrolls the Diagram whenever the node or connector is beyond the boundary of the diagram so that, it is always visible during dragging, resizing and multiple selection operations.
+
+Autoscroll is automatically triggered when, any one of the following is dragged towards edges of the diagram.
+
+* Node dragging
+
+* Node’s control points: resizer, rotator
+
+* Connector’s control points: end point, segment
+
+* Rubber band selection
+
+* Dropping item from palette
+
+_Properties table_
+
+<table>
+<tr>
+<td>
+<b>Properties</b></td><td>
+<b>Data Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+scrollLimit</td><td>
+string</td><td>
+Gets or sets the scroll limit of the page</td></tr>
+<tr>
+<td>
+scrollableArea</td><td>
+object</td><td>
+Gets or sets the scrollable region of the page</td></tr>
+<tr>
+<td>
+autoScrollBorder</td><td>
+object</td><td>
+Gets or sets the auto scroll starting point </td></tr>
+</table>
+
+
+**Autoscroll border**
+
+The autoscroll border is used to specify the distance, from where the autoscroll is to be enabled when moving the node or connector. The default value is set as 15 for all sides (left, right, top and bottom).
+
+The following code example illustrates how to set autoscroll border.
+
+{% highlight js %}
+
+**[JS]**
+pageSettings: 
+   { 
+// Specifies autoscroll border
+     autoScrollBorder: { left: 150, top: 15, right:15, 
+      bottom: 15}  
+}  
+
+
+{% endhighlight %}
+
+
+
+**Scroll limit**
+
+The scroll limit allows you to scroll the diagram page along X and Y axis based on the options specified. 
+
+* By default the value is set as infinity (can scroll in all directions, without any restrictions). 
+
+* When scroll limit is set as diagram, you are restricted to scroll the page beyond the diagram content. 
+
+* By specifying the value as limited you can set the limit of the scrollable area through scrollable area property. 
+
+
+
+> _**Note: Refer to the scrollable area for more details**_
+
+The following code example illustrates how to specify scroll limit. 
+
+{% highlight js %}
+
+**[JS]**
+pageSettings: 
+   { 
+//Scrolllimit for diagram by default
+    scrollLimit:"infinity" 
+}
+
+
+{% endhighlight %}
+
+
+
+**Scrollable Area**
+
+You can restrict scrolling beyond a particular rectangular area and the rectangular area is specified using **scrollableArea** property. This is applicable only when the scroll limit for the diagram is specified as **limited**. 
+
+The following code example illustrates how to customize scrollable area of diagram.
+
+{% highlight js %}
+
+**[JS]**
+pageSettings: 
+   { 
+    //Scrolllimit for diagram as limited
+      scrollLimit:"limited",
+     //Set limit of the scrollable area
+      scrollableArea: { x: 0, y: 0, width: 5000,
+       height: 5000}
+    }
+
+
+{% endhighlight %}
+
+
+
+{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img3.png" Caption=""%}
+
+_AutoScroll Border_
+
