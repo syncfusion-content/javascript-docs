@@ -32,7 +32,7 @@ The following code example is for the **Grid** with default options.
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
-                **allowPaging: true,**
+              **allowPaging: true,**
 
             });
         });
@@ -166,7 +166,7 @@ In this section, you can see how to use paging methods in **Grid** control. The 
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
-**allowPaging: true,**
+              **allowPaging: true,**
                 pageSettings: { pageSize: 5 },
 
             });

@@ -52,7 +52,7 @@ If you want **Toolbar** items other than the above items, you can make it using 
             });
             var gridObj = $("#Grid").ejGrid({
                 dataSource: dataManager,
- **toolbarSettings: { showToolbar: true, customToolbarItems: [{ templateID: "#Refresh" }] },**
+              **toolbarSettings: { showToolbar: true, customToolbarItems: [{ templateID: "#Refresh" }] },**
                 scrollSettings: { height: 300,width: "auto" },
                 allowScrolling: true,
                 columns: [
@@ -65,7 +65,7 @@ If you want **Toolbar** items other than the above items, you can make it using 
             }).data("ejGrid");
             $("#products").ejDropDownList({
                 selectedItemIndex: 0,
-**change: function(args) {**
+   **change: function(args) {**
                     **if (this.getSelectedValue() != "")**
                         **$("#Grid").ejGrid("model.query", new ej.Query().where("CategoryID", ej.FilterOperators.equal, parseInt(this.getSelectedValue(), 10)));**
                     **else**

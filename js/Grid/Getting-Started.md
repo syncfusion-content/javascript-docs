@@ -17,6 +17,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 {% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img1.png" Caption="Managed sales data"%}
 
+
 1.   Create an **HTML** file and add the following references to the required libraries.
 
 {% highlight html %}
@@ -97,7 +98,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 **Set Sales Data**
 
-You can pass the data to the **Grid** can either be local or remote. Assign the web service **URL** link to the **url** property of the **ejDataManager.** The **crossDomain** property****is enabled****to retrieve data from another domain and **offline** property allows you to load data on time from server.
+You can pass the data to the **Grid**  either  locally or remotly. Assign the web service **URL** link to the **url** property of the **ejDataManager.** The **crossDomain** property **is enabled to retrieve data from another domain** and **offline** property allows you to load data on time from server.
 
 {% highlight html %}
 
@@ -107,14 +108,14 @@ You can pass the data to the **Grid** can either be local or remote. Assign the 
 <!-- ... -->
 <script type="text/javascript">
 $(function () {
-**window.dataManager = ej.DataManager({**
+        **window.dataManager = ej.DataManager({**
         **url: "http://mvc.syncfusion.com/UGService/api/Orders",**
         **crossDomain: true,**
         **offline:true**
     **});**
 
     $("#Grid").ejGrid({
-**dataSource: window.dataManager,**
+      **dataSource: window.dataManager,**
         columns: [
                 { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -158,7 +159,7 @@ $(function () {
 
     $("#Grid").ejGrid({
         dataSource: window.dataManager,
-**allowPaging: true,**
+      **allowPaging: true,**
         columns: [
                 { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -184,7 +185,7 @@ Use **allowPaging** to switch between pages.
 
 **Enable Filtering**
 
-**Filtering** feature in **Grid** is used****to facilitate the extraction of a subset of records that meets certain criteria. You can apply **Filter** to one or more columns. This feature is used to filter particular sales data to review details.
+**Filtering** feature in **Grid** is used**to facilitate the extraction of a subset of records that meets certain criteria**. You can apply **Filter** to one or more columns. This feature is used to filter particular sales data to review details.
 
 To enable filtering, use **allowFiltering** property of **Grid** as follows.
 
@@ -205,7 +206,7 @@ $(function () {
     $("#Grid").ejGrid({
         dataSource: window.dataManager,
         allowPaging: true,
-**allowFiltering: true,**
+      **allowFiltering: true,**
         columns: [
                 { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -253,8 +254,8 @@ $(function () {
         dataSource: window.dataManager,
         allowPaging: true,
         allowFiltering: true,
-**allowGrouping: true,**
-**groupSettings: { groupedColumns: ["ShipName"] },**
+      **allowGrouping: true,**
+      **groupSettings: { groupedColumns: ["ShipName"] },**
         columns: [
                 { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -304,7 +305,7 @@ $(function () {
         allowFiltering: true,
         allowGrouping: true,
         groupSettings: { groupedColumns: ["ShipName"] },
-**showSummary: true,**
+      **showSummary: true,**
         columns: [
                 { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -312,7 +313,7 @@ $(function () {
                 { field: "ShipCity", headerText: "Ship City", width: 100 },
                 { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
        ],
-**summaryRows: [{**
+       **summaryRows: [{**
                 **showTotalSummary: false,**
                 **summaryColumns: [{**
                     **summaryType: ej.Grid.SummaryType.Sum,**

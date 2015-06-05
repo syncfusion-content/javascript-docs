@@ -37,7 +37,7 @@ The following code example demonstrates how to switch the culture of **ejGrid** 
                 pageSettings: { pageCount: 5 },
                 allowGrouping: true,
                 groupSettings:{enableDropAreaAnimation: false},
-**locale: "de-DE",**
+              **locale: "de-DE",**
                 columns: [
                               { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 75 },
                               { field: "CustomerID", headerText: "Customer ID", width: 90 },

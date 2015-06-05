@@ -33,7 +33,7 @@ documentation: ug
             $("#Grid").ejGrid({
                 // the datasource "window.employeeView" is referred from jsondata.min.js
                 dataSource: ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9)),
-**detailsTemplate**: "#tabGridContents", // detail template
+                **detailsTemplate**: "#tabGridContents", // detail template
             });
         });
     </script>
@@ -68,7 +68,7 @@ In this section, you can learn how to use the **Hierachy****tree** in **Grid****
             $("#Grid").ejGrid({
                 // the datasource "window.employeeView" is referred from jsondata.min.js
                 dataSource: ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9)),
-**detailsTemplate**: "#tabGridContents",
+                **detailsTemplate**: "#tabGridContents",
                 detailData: "detailGridData",
             });
         });

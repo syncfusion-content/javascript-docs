@@ -36,7 +36,7 @@ documentation: ug
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
                 dataSource: window.gridData,
-**toolbarSettings: {**
+              **toolbarSettings: {**
                     **showToolbar: true,**
                     **toolbarItems: [**
                        **ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,**
@@ -72,17 +72,17 @@ The following output is displayed as a result of the above code example.
 
 Essential Studio JavaScript Grid supports column edit type by using delegated controls for specific data types. They are:
 
-* CheckBox control for boolean data type.
+* **CheckBox** control for boolean data type.
 
-* NumericTextBox control for integers, double, and decimal types.
+* **NumericTextBox** control for integers, double, and decimal types.
 
-* InputTextBox control for string data types.
+* **InputTextBox** control for string data types.
 
-* DatePicker control for date data.
+* **DatePicker** control for date data.
 
-* DateTimePicker control for date-time data.
+* **DateTimePicker** control for date-time data.
 
-* DropDownList control for list of data.
+* **DropDownList** control for list of data.
 
 The edit type of every column can be customized using the **editType** property.
 
@@ -131,10 +131,8 @@ The following output is displayed as a result of the above code example.
 
 By default, the datasource for Dropdown Edit Column is set by Grid Control from its datasource. You can also bind external datasource to the Dropdown control of corresponding column in edit mode by using “**dataSource**” Grid Column property.
 
-> _**Note: The external datasource must be given in a structure that it should contain properties “text” and**_  
-_**“value” which holds the data.**_
+> _**Note: The external datasource must be given in a structure that it should contain properties “text” and “value” that holds the data.**_
 
-> 
 
 {% highlight html %}
 
@@ -273,7 +271,7 @@ This feature allows you to edit various fields of a single record, simultaneousl
                     ]
                 },
                 editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
-**editMode: ej.Grid.EditMode.Normal** },
+              **editMode: ej.Grid.EditMode.Normal** },
                 allowPaging: true,
                 columns: [
                     { field: "OrderID", headerText: "Order ID", isPrimarKey: true, textAlign: "right" },
@@ -318,7 +316,7 @@ The **Dialog Edit** feature allows you to edit data, using a dialog box that has
                     ]
                 },
                 editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
-**editMode: ej.Grid.EditMode.Dialog**},
+              **editMode: ej.Grid.EditMode.Dialog**},
                 allowPaging: true,
                 columns: [
                     { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
@@ -363,7 +361,7 @@ This feature allows you to edit various fields of a single record, simultaneousl
                     ]
                 },
                 editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
-**editMode: ej.Grid.EditMode.InlineForm**},
+              **editMode: ej.Grid.EditMode.InlineForm**},
                 allowPaging: true,
                 pageSettings: { pageSize: 8 },
                 columns: [
@@ -415,7 +413,7 @@ You can position the edit form either in the top-right corner or the bottom-left
                     ]
                 },
                 editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
-**editMode: ej.Grid.EditMode.ExternalForm,**
+              **editMode: ej.Grid.EditMode.ExternalForm,**
                         **formPosition: ej.Grid.FormPosition.BottomLeft**},
                 allowPaging: true,
                 pageSettings: { pageSize: 8 },
@@ -457,15 +455,138 @@ You can also edit the fields that are not visible in the **Grid** using this tem
 
 In Inline Template, you can specify the template inside the script tag and select the type as text/template. Only then the HTML elements defined in the template will not be displayed in the browser. You can define the template as follows. Using inlineFormTemplateID we are able to set the form template for editing.
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>    <b>&lt;script id="template" type="text/template"&gt;</b><b>        &lt;table cellspacing="10"&gt;</b><b>            &lt;tr&gt;</b><b>                <td style="text-align: right;">Order ID</b><b>                &lt;/td&gt;</b><b>                &lt;td style="text-align: left"&gt;</b><b>                    &lt;input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /&gt;</b><b>                &lt;/td&gt;</b><b>                <td style="text-align: right;">Customer ID</b><b>                &lt;/td&gt;</b><b>                &lt;td style="text-align: left"&gt;</b><b>                    &lt;input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /&gt;</b><b>                &lt;/td&gt;</b><b>            &lt;/tr&gt;</b><b>            &lt;tr&gt;</b><b>                <td style="text-align: right;">Employee ID</b><b>                &lt;/td&gt;</b><b>                &lt;td style="text-align: left"&gt;</b><b>                    &lt;input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" /&gt;</b><b>                &lt;/td&gt;</b><b>                <td style="text-align: right;">Ship City</b><b>                &lt;/td&gt;</b><b>                &lt;td style="text-align: left"&gt;</b><b>                    &lt;input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" /&gt;</b><b>                &lt;/td&gt;</b><b>            &lt;/tr&gt;</b><b>            &lt;tr&gt;</b><b>                <td style="text-align: right;">Freight</b><b>                &lt;/td&gt;</b><b>                &lt;td style="text-align: left"&gt;</b><b>                    &lt;input id="Freight" name="Freight" value="{{: Freight}}" /&gt;</b><b>                &lt;/td&gt;</b><b>            &lt;/tr&gt;</b><b>        &lt;/table&gt;</b><b>    &lt;/script&gt;</b></td></tr>
-<tr>
-<td>
-// Now you can assign the template id to the <b>InlineFormTemplateId</b> property of edit.     &lt;div id="Grid"&gt;&lt;/div&gt;    <b>&lt;script id="template" type="text/template"&gt;</b>        &lt;table cellspacing="10"&gt;            &lt;tr&gt;                <td style="text-align: right;">Order ID                &lt;/td&gt;                &lt;td style="text-align: left"&gt;                    &lt;input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /&gt;                &lt;/td&gt;                <td style="text-align: right;">Customer ID                &lt;/td&gt;                &lt;td style="text-align: left"&gt;                    &lt;input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /&gt;                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                <td style="text-align: right;">Employee ID                &lt;/td&gt;                &lt;td style="text-align: left"&gt;                    &lt;input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" /&gt;                &lt;/td&gt;                <td style="text-align: right;">Ship City                &lt;/td&gt;                &lt;td style="text-align: left"&gt;                    &lt;input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" /&gt;                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                <td style="text-align: right;">Freight                &lt;/td&gt;                &lt;td style="text-align: left"&gt;                    &lt;input id="Freight" name="Freight" value="{{: Freight}}" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/script&gt;    &lt;script type="text/javascript"&gt;        $(function () {// Document is ready.            $("#Grid").ejGrid({                dataSource: window.gridData,                toolbarSettings: {                    showToolbar: true,                    toolbarItems: [                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,                       ej.Grid.ToolBarItems.Cancel                    ]                },                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,<b>                        editMode: ej.Grid.EditMode.InlineTemplateForm,</b><b>                        inlineFormTemplateID: "#template"</b>},                allowPaging: true,                pageSettings: { pageSize: 6 },                columns: [                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }              ]            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+**[JS]**
+ <script id="template" type="text/template">
+        <table cellspacing="10">
+            <tr>
+                <td style="text-align: right;">Order ID
+                </td>
+                <td style="text-align: left">
+                    <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
+                </td>
+                <td style="text-align: right;">Customer ID
+                </td>
+                <td style="text-align: left">
+                    <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Employee ID
+                </td>
+                <td style="text-align: left">
+                    <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+                </td>
+                <td style="text-align: right;">Ship City
+                </td>
+                <td style="text-align: left">
+                    <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Freight
+                </td>
+                <td style="text-align: left">
+                    <input id="Freight" name="Freight" value="{{: Freight}}" />
+                </td>
+            </tr>
+        </table>
+    </script>
+    
+    
+    // Now you can assign the template id to the InlineFormTemplateId property of edit.
 
+    <div id="Grid"></div>
+
+    <script id="template" type="text/template">
+        <table cellspacing="10">
+            <tr>
+                <td style="text-align: right;">Order ID
+                </td>
+                <td style="text-align: left">
+                    <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
+                </td>
+                <td style="text-align: right;">Customer ID
+                </td>
+                <td style="text-align: left">
+                    <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Employee ID
+                </td>
+                <td style="text-align: left">
+                    <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+                </td>
+                <td style="text-align: right;">Ship City
+                </td>
+                <td style="text-align: left">
+                    <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Freight
+                </td>
+                <td style="text-align: left">
+                    <input id="Freight" name="Freight" value="{{: Freight}}" />
+                </td>
+            </tr>
+        </table>
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {// Document is ready.
+
+            $("#Grid").ejGrid({
+
+                dataSource: window.gridData,
+
+                toolbarSettings: {
+
+                    showToolbar: true,
+
+                    toolbarItems: [
+
+                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+
+                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+
+                       ej.Grid.ToolBarItems.Cancel
+
+                    ]
+
+                },
+
+                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
+
+                        editMode: ej.Grid.EditMode.InlineTemplateForm,
+
+                        inlineFormTemplateID: "#template"},
+
+                allowPaging: true,
+
+                pageSettings: { pageSize: 6 },
+
+                columns: [
+
+                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+
+                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+
+                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+
+                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
+
+              ]
+
+            });
+
+        });
+
+    </script>
+
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
@@ -475,7 +596,7 @@ In the above screenshot you can see that the elements are not rendered based on 
 
 While using template, you can change the elements that are defined in the template, to appropriate control based on the column type. 
 
-Through the **actionComplete****Grid** event, you can achieve this.
+Through the **actionComplete** **Grid** event, you can achieve this.
 
 {% highlight html %}
 
@@ -486,7 +607,7 @@ Through the **actionComplete****Grid** event, you can achieve this.
             $("#Grid").ejGrid({
 
                //. . . .
-**actionComplete: "complete",**
+           **actionComplete: "complete",**
               //. . . .
 
             });
@@ -561,8 +682,8 @@ Now, the elements defined in the templates, are changed to JavaScript controls. 
                 },
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.InlineTemplateForm,
-                    inlineFormTemplateID: "#template"
+                   **editMode: ej.Grid.EditMode.InlineTemplateForm,**
+                    **inlineFormTemplateID: "#template"**
                 },
                 allowPaging: true,
                 pageSettings: { pageSize: 6 },
@@ -604,8 +725,8 @@ The above mentioned procedure applies to **ExternalTemplate** editing feature al
                 //. . . .
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true,
-                    **editMode: ej.Grid.editMode.ExternalFormTemplate,**
-                    **externalFormTemplateID: "#template"**
+                  **editMode: ej.Grid.editMode.ExternalFormTemplate,**
+                  **externalFormTemplateID: "#template"**
                 },
                //. . . .
             });
@@ -675,7 +796,7 @@ These markers are not shown after the updated data is rendered. The following co
                 },
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.Batch
+                    **editMode: ej.Grid.EditMode.Batch**
                 },
                 allowPaging: true,
                 pageSettings: { pageSize: 6 },
@@ -1095,9 +1216,9 @@ public static void InitializeService(DataServiceConfiguration config)
 
 {% highlight html %}
 
-**var dataManger = ej.DataManager({**
-                **url: "/model/Northwnd.svc/Orders"**
-**});**
+**var dataManger = ej.DataManager({
+                url: "/model/Northwnd.svc/Orders"
+});**
 
 
 {% endhighlight %}
@@ -1117,7 +1238,7 @@ public static void InitializeService(DataServiceConfiguration config)
                 **url: "/model/Northwnd.svc/Orders"**
             **});**
             $("#Grid").ejGrid({
-**dataSource: dataManger,**
+              **dataSource: dataManger,**
                 toolbarSettings: {
                     showToolbar: true,
                     toolbarItems: [
@@ -1212,7 +1333,7 @@ This property helps you to add a new row dynamically and save the record either 
 $(function () {// Document is ready.
                 $("#Grid").ejGrid({
                     dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
-**editSettings**: { allowEditing: true, allowAdding: true, allowDeleting: true, rowPosition: "bottom", **showAddNewRow**: true },
+                    **editSettings**: { allowEditing: true, allowAdding: true, allowDeleting: true, rowPosition: "bottom", **showAddNewRow**: true },
                     toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
                     columns: [
                            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID" },

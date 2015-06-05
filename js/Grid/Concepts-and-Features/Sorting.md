@@ -66,7 +66,7 @@ In **ejGrid**, you have an **API** to sort a column dynamically. The following c
             $(function () {// Document is ready.
                 $("#Grid").ejGrid({
                     dataSource: window.gridData,
-  **allowSorting: true,**
+                  **allowSorting: true,**
                     **allowMultiSorting: true,**
                     allowPaging: true,
                 });

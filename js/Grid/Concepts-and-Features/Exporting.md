@@ -27,7 +27,8 @@ Also since JS Grid is a Client-side, it does not have **mapper** property for cu
                 dataSource: ej.DataManager({ url: "/api/Orders/", offline: true ,adaptor:”WebApiAdaptor”}),
                 allowPaging: true,
                 allowSorting: true,
-toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport, ej.Grid.ToolBarItems.PdfExport] },
+                 toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport, 
+                      ej.Grid.ToolBarItems.PdfExport] },
 
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 , textAlign: ej.TextAlign.Right },

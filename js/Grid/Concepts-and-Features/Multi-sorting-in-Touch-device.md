@@ -36,8 +36,8 @@ In **ejGrid**, you have an **API** to clear sorted columns. Through this **API**
             $(function () {// Document is ready.
                 $("#Grid").ejGrid({
                     dataSource: window.gridData,
-**allowSorting: true,**
-                    **allowMultiSorting: true,**
+                  **allowSorting: true,**
+                  **allowMultiSorting: true,**
                     sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }, { field: "EmployeeID", direction: ej.sortOrder.Ascending }] },
                     allowPaging: true
                 });
@@ -74,10 +74,10 @@ In the normal way of sorting, first preference is given to capital letters and t
                 ej.support.**enableLocalizedSort** = true
                 $("#Grid").ejGrid({
                     dataSource: window.gridData,
-**allowSorting: true,**
+                  **allowSorting: true,**
                     sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }]},
                     allowPaging: true
-columns: [
+                    columns: [
                           { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 100 },
                           { field: "CustomerID", headerText: "Customer ID", width: 130 },
                           { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
