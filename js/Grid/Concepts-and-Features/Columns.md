@@ -9,11 +9,11 @@ documentation: ug
 
 # Columns
 
-Colums are a key feature in **Grid** to define schema in a control based on datasource. It is useful to map field to datasource values.
+Columns are a key feature in **Grid** to define schema in a control based on a datasource. It is useful to map field to datasource values.
 
 ## Formatting
 
-**Formatting** is used to convert data values to human readable formats using specific culture settings. In **ejGrid**, you have an option to format a particular column through the **format** property. For more details about **globalize.js**, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in **Grid**.
+**Formatting** is used to convert data values to human readable formats by using specific culture settings. In **ejGrid**, you have an option to format a particular column through the **format** property. For more details about **globalize.js**, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in **Grid**.
 
 {% highlight html %}
 
