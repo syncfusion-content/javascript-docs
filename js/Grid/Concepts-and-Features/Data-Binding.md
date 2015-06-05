@@ -11,7 +11,7 @@ documentation: ug
 
 ## Local data
 
-**Grid** data source can be set client-side through **JavaScript**. It has full support for **JSON** array binding. It is used to bind records in client-side by using **JSON** data that is mostly helpful in **Single Page Application** (**SPA**).
+**Grid** data source can be set to client-side through **JavaScript**. It has full support for **JSON** array binding. It is used to bind records in client-side by using **JSON** data that is mostly helpful in **Single Page Application** (**SPA**).
 
 {% highlight html %}
 
@@ -119,7 +119,7 @@ The following output is the result of the above code example.
 
 ### Load on demand
 
-**Load on demand** is a powerful technique that is used to reduce bandwidth size of consuming the data. In **ejGrid**, you have support to use **load on demand**. In the following example, **oData** **service** is used. At load time, it retrieves required data from service, only for the visible page and not for all the records. When you move to another page, it loads for current page. You do not have to configure **Grid** to enable **load on demand**, since **load on demand** is enabled by default in **Grid**. The following code example shows you how **load on demand** works with **Grid**.
+**Load on demand** is a powerful technique used to reduce bandwidth size of consuming the data. In **ejGrid**, you have support to use **load on demand**. In the following example, **oData** **service** is used. At load time, it retrieves required data from service, only for the visible page and not for all the records. When you move to another page, it loads for current page. You do not have to configure **Grid** to enable **load on demand**, since **load on demand** is enabled by default in **Grid**. The following code example shows you how **load on demand** works with **Grid**.
 
 {% highlight html %}
 
