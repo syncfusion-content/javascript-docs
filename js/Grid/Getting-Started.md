@@ -98,7 +98,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 **Set Sales Data**
 
-You can pass the data to the **Grid** can either be local or remote. Assign the web service **URL** link to the **url** property of the **ejDataManager.** The **crossDomain** property **is enabled to retrieve data from another domain** and **offline** property allows you to load data on time from server.
+You can pass the data to the **Grid**  either  locally or remotly. Assign the web service **URL** link to the **url** property of the **ejDataManager.** The **crossDomain** property **is enabled to retrieve data from another domain** and **offline** property allows you to load data on time from server.
 
 {% highlight html %}
 
