@@ -25,8 +25,8 @@ In **ejGrid**, there is an option to group columns at **Grid Initialize** that i
                 $("#Grid").ejGrid({
                     //window.gridData is refered from jsondata.min.js
                     dataSource: window.gridData,
-                    **groupSettings: { groupedColumns :["ShipCity"] },**
-**allowGrouping**: true,
+                  **groupSettings: { groupedColumns :["ShipCity"] },**
+                  **allowGrouping**: true,
                     allowPaging: true,
 
                 });
@@ -57,7 +57,7 @@ Group buttons is one of the features under Grouping. It is helpful to do Groupin
                     //window.gridData is refered from jsondata.min.js
                     dataSource: window.gridData,
                     allowGrouping: true,
-                    **groupSettings: { showToggleButton: true,** groupedColumns: ["ShipCity"] **},**
+                  **groupSettings: { showToggleButton: true,** groupedColumns: ["ShipCity"] **},**
                     allowPaging: true,
 
                 });
@@ -90,7 +90,7 @@ In **GroupDropArea**, grouped columns have an option to ungroup a column using *
                 $("#Grid").ejGrid({
                     //window.gridData is refered from jsondata.min.js
                     dataSource: window.gridData,
-                    **groupSettings: { showUngroupButton: false ,** groupedColumns: ["ShipCity"] **},**
+                  **groupSettings: { showUngroupButton: false ,** groupedColumns: ["ShipCity"] **},**
                     allowGrouping: true,
                     allowPaging: true,
                 });
@@ -119,7 +119,7 @@ If you drag any header to Group column in Grid, it expands smoothly its Group Dr
                 $("#Grid").ejGrid({
                     //window.gridData is refered from jsondata.min.js
                     dataSource: window.gridData,
-                    **groupSettings: { enableDropAreaAutoSizing: false },**
+                  **groupSettings: { enableDropAreaAutoSizing: false },**
                     allowGrouping: true,
                     allowPaging: true,
                 });
@@ -152,8 +152,8 @@ When the **showDropArea** property is set to **false**, the **groupDropArea** is
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
                 allowPaging: true,
-allowGrouping: true,
-**groupSettings**: { groupedColumns: ["ShipCountry"],**showDropArea**: false }                
+                allowGrouping: true,
+              **groupSettings**: { groupedColumns: ["ShipCountry"],**showDropArea**: false }                
             });
         });
 </script>

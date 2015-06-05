@@ -286,14 +286,14 @@ Cell merging feature enables to merge cells based on your requirement. The follo
     <script type="text/javascript">
         $(function () {// Document is ready.
             // Data for grid.
-     var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
+            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
             $("#Grid").ejGrid({
                dataSource:dataManager,
                allowPaging: true,
                allowScrolling: true,
-**allowCellMerging: true,**
-****columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ],
-**mergeCellInfo: function (args) {**
+             **allowCellMerging: true,**
+             **columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ],**
+             **mergeCellInfo: function (args) {**
                        **if (args.column.field == "EmployeeID" && args.data.OrderID == 10248) {**
                            **args.rowMerge(3);**
                        **}**
@@ -336,7 +336,7 @@ AutoWrap feature allows you to wrap cell content to next line when the content e
                 dataSource:dataManager,
                 allowPaging: true,
                 allowScrolling: true,
- **allowTextWrap: true,**
+              **allowTextWrap: true,**
                 columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ]
             });
         });
@@ -363,9 +363,8 @@ Execute the above code to render the following output.
     <script type="text/javascript">
         $(function () {   
             $("#Grid").ejGrid({
-**showColumnChooser: true,**
-                columns: ["OrderID","CustomerID","EmployeeID","Freight”         
-                          ,"OrderDate"]
+             **showColumnChooser: true,**
+               columns: [ "OrderID","CustomerID", "EmployeeID","Freight","OrderDate" ]
             });
         });
     </script>
@@ -418,7 +417,7 @@ The following output is displayed as a result of the above code example.
 
 ## Stacked Header
 
-The **Stacked Header** feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel **Stacked Headers** as well. Enable the **Stacked Header** by setting the **showStackedHeader** property to **true a**nd set the stacked header row by using the **stakedHeaderRows** property. The **Stacked Header** feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
+The **Stacked Header** feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel **Stacked Headers** as well. Enable the **Stacked Header** by setting the **showStackedHeader** property to **true** and set the stacked header row by using the **stakedHeaderRows** property. The **Stacked Header** feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
 
 {% highlight html %}
 
@@ -430,14 +429,13 @@ The **Stacked Header** feature allows additional header rows that span across th
             var data =  ej.DataManager(window.gridData).executeLocal(ej.Query().take(50));
             $(“#Grid”).ejGrid({
                 dataSource: data,
-**showStackedHeader:true,**
-**stackedHeaderRows**:[
-                   {**stackedHeaderColumn**:[{stackedHeaderText:”Order Details” ,column:”OrderID,OrderDate,Freight”}
-,{stackedHeaderText:”Ship Details” ,column:”ShipName,ShipCity,ShipCountry”}
-]},
-],
-                  columns: [“OrderID “,”OrderDate”,”Freight”,”ShipCity”
-                        ,”ShipCountry”]
+              **showStackedHeader:true,**
+              **stackedHeaderRows**:[
+                   {**stackedHeaderColumn**:[{stackedHeaderText:”Order Details” ,column:”OrderID,OrderDate,Freight”},
+                       {stackedHeaderText:”Ship Details” ,column:”ShipName,ShipCity,ShipCountry”}
+                 ]},
+                ],
+                  columns: [“OrderID “,”OrderDate”,”Freight”,”ShipCity”,”ShipCountry”]
             });
         });
     </script>

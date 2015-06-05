@@ -55,9 +55,8 @@ To enable **Context Menu** in **Grid** use **enableContextMenu** property in **c
                     allowSorting: true,
                     allowPaging: true,
                     allowGrouping: true,
-                     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
-**contextMenuSettings** : {**enableContextMenu** : true},
-
+                    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
+                    **contextMenuSettings** : {**enableContextMenu** : true},
                     columns: [
                             { field: "OrderID", headerText: "Order ID", textAlign:ej.TextAlign.Right },
                             { field: "CustomerID", headerText: "Employee ID" },

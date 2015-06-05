@@ -42,8 +42,8 @@ By default, the selection mode of the grid is “**Row**”. This enables you to
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
                 allowPaging: true,
-**allowSelection: true,**
-**selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },**
+              **allowSelection: true,**
+              **selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },**
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 },
                         { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -82,7 +82,7 @@ Cell selection can be enabled using the **selectionMode** property. This enables
                 dataSource: window.gridData,
                 allowPaging: true,
                 allowSelection: true,
-**selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },**
+              **selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },**
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 },
                         { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -120,8 +120,8 @@ Column selection can be enabled using the **selectionMode** property. This enabl
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
                 allowPaging: true,
-**allowSelection: true,**
-**selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },**
+              **allowSelection: true,**
+              **selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },**
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 },
                         { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -167,8 +167,8 @@ By default, the selection mode of the grid is “**Row**”. This enable you to 
                 allowPaging: true,
                 allowSelection: true,
                 //select the multiple records in the grid.
-**selectionType:** "multiple",   // you can also enable to select single record{selectionType:"single"}
-**selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },**
+              **selectionType:** "multiple",   // you can also enable to select single record{selectionType:"single"}
+              **selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },**
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 },
                         { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -208,8 +208,8 @@ Cell selection can be enabled using the **selectionMode** property. This enables
                 allowPaging: true,
                 allowSelection: true,
                 //select the multiple records in the grid.
-**selectionType:** "multiple",   // you can also enable to select single record{selectionType:"single"}
-**selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },**
+             **selectionType:** "multiple",   // you can also enable to select single record{selectionType:"single"}
+             **selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },**
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 },
                         { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -249,8 +249,8 @@ Column selection can be enabled using the selectionMode property. This enables y
                 allowPaging: true,
                 allowSelection: true,
                 //select the multiple records in the grid.
-**selectionType:** "multiple",   // you can also enable to select single record{selectionType:"single"}
-**selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },**
+              **selectionType:** "multiple",   // you can also enable to select single record{selectionType:"single"}
+              **selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },**
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 },
                         { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -287,7 +287,7 @@ You can also enable all the three modes of selection using **selectionMode** pro
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
                 allowPaging: true,
-**allowSelection: true,**
+              **allowSelection: true,**
                 **selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row, ej.Grid.SelectionMode.Cell, ej.Grid.SelectionMode.Column] },**
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 },
@@ -327,7 +327,7 @@ You can toggle the selection using the **enableToggle** property. This provides 
                 dataSource: window.gridData,
                 allowPaging: true,
                 allowSelection: true,
-**selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row], enableToggle:** true **},**
+              **selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row], enableToggle:** true **},**
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 },
                         { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -374,7 +374,7 @@ In this section, you can learn how to customize or override selection background
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
                 //select the multiple records in the grid.
-**selectionType: "multiple**",  // you can also enable to select single       
+               **selectionType: "multiple**",  // you can also enable to select single       
                 allowPaging: true, 
                 pageSettings: { pageSize: 8 }              
             });          

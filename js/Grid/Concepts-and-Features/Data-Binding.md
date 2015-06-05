@@ -22,7 +22,7 @@ documentation: ug
     $(function () {// Document is ready.
         // Data for grid.
         window.gridData = [
-{ firstName: "John", lastName: "Beckett", email: "john@syncfusion.com" },
+          { firstName: "John", lastName: "Beckett", email: "john@syncfusion.com" },
           { firstName: "Ben", lastName: "Beckett", email: "ben@syncfusion.com" },
           { firstName: "Andrew", lastName: "Beckett", email: "andrew@syncfusion.com" }
         ];
@@ -52,7 +52,7 @@ Result of the above code example.
 
 ### oData Binding	
 
-**oData** is standardized protocol for creating and consuming data. You can retrieve data from **oData****service** using **DataManager.** The following code is a simple example of remote data binding using **oData****service**.
+**oData** is standardized protocol for creating and consuming data. You can retrieve data from **oData** **service** using **DataManager.** The following code is a simple example of remote data binding using **oData** **service**.
 
 {% highlight html %}
 
@@ -62,7 +62,7 @@ Result of the above code example.
 <script type="text/javascript">
     $(function () {// Document is ready.
         //oData Adaptor with DataManager 
-        **var dataManager = ej.DataManager("****http://mvc.syncfusion.com/Services/Northwnd.svc/Products****");**
+        **var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");**
 
         $("#Grid").ejGrid({
             dataSource: dataManager,
@@ -119,7 +119,7 @@ The following output is the result of the above code example.
 
 ### Load on demand
 
-**Load on demand** is a powerful technique that is used to reduce bandwidth size of consuming data. In **ejGrid**, you have support to use **load on demand**. In the following example, **oData****service** is used. At load time, it retrieves required data from service, only for the visible page and not for all records. And if you move to another page, it loads for current page. You do not have to configure **Grid** to enable **load on demand**, since **load on demand** is enabled by default in **Grid**. The following code example shows you how **load on demand** works with **Grid**.
+**Load on demand** is a powerful technique that is used to reduce bandwidth size of consuming data. In **ejGrid**, you have support to use **load on demand**. In the following example, **oData** **service** is used. At load time, it retrieves required data from service, only for the visible page and not for all records. And if you move to another page, it loads for current page. You do not have to configure **Grid** to enable **load on demand**, since **load on demand** is enabled by default in **Grid**. The following code example shows you how **load on demand** works with **Grid**.
 
 {% highlight html %}
 
@@ -172,7 +172,7 @@ ejGrid can use cross domain data service with the help of DataManager. The given
         $("#Grid").ejGrid({
             allowPaging: true,
             dataSource: dataManager,
-columns: ["OrderID","CustomerID","EmployeeID","ShipCity"]
+            columns: ["OrderID","CustomerID","EmployeeID","ShipCity"]
         });
     });
 
@@ -224,7 +224,7 @@ The following screenshot is the result of the above code example.
 
 ### Supported DataTypes
 
-**ejGrid** supports various DataTypes in **JavaScript** such as string, number, datetime and Boolean. By default, **ejGrid** reads DataTypes from **Grid** data source. Using these data types, **Grid** uses it at to edit, add, save, filter and other such operations. You can also customize these DataTypes through column property type**.** It can override default data type reading**.**
+**ejGrid** supports various DataTypes in **JavaScript** such as string, number, datetime and Boolean. By default, **ejGrid** reads DataTypes from **Grid** data source. Using these data types, **Grid** uses it at to edit, add, save, filter and other such operations. You can also customize these DataTypes through column property type**.**It can override default data type reading**.
 
 {% highlight html %}
 
@@ -315,7 +315,7 @@ $("#Grid").ejGrid({
 <script type="text/javascript">
     $(function () {// Document is ready.
         $("#Grid").ejGrid({
-**dataSource: ej.DataManager($("#Table1")),** // binding table to grid
+          **dataSource: ej.DataManager($("#Table1")),** // binding table to grid
             columns: [
                      { field: "Laptop", headerText: "Laptop Brands"},
                      { field: "Model", headerText: "Model" },
