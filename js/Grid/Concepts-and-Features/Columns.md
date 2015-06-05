@@ -130,7 +130,7 @@ The following output is displayed as a result of the above code example.
 
 ## Read only
 
-**allowEditing** enables you to edit a column, but it prevents the fields from showing it as editable. If you want to make a column as **read-only** then set **allowEditing** as **False for** that column. The following code example shows **Essential JavaScript** column as **read-only**.
+**allowEditing** enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set **allowEditing** as **False for** that column. The following code example shows **Essential JavaScript** column as **read-only**.
 
 {% highlight html %}
 
