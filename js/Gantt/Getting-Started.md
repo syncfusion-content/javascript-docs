@@ -13,15 +13,15 @@ This section explains briefly about how to create a **Gantt****chart** in your a
 
 ## Create your first Gantt in JavaScript
 
-**Control Structure**
+### Control Structure
 
 Gantt chart is used to edit and visualize project schedule, and also to track progress of a task. The following screenshot illustrates the elements that constitute a **Gantt** chart.
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img1.png" Caption="Gantt chart"%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1:Gantt chart"%}
 
 * **Toolbar** – It is a collection of toolbar buttons to add, edit, or delete a task. You can indent or outdent a task, using their respective buttons. Following screenshot illustrates the function of each toolbar button,
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img2.png" Caption="Toolbar of Gantt chart"%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2:Toolbar of Gantt chart"%}
 
 * **Search Textbox** – It is used to search tasks that contain a search string.
 
@@ -39,17 +39,17 @@ Gantt chart is used to edit and visualize project schedule, and also to track pr
 
 * **Interactive Editing** – You can edit the duration of a task, by simply dragging or resizing the task bar. Following screenshot illustrates how this works.
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img3.png" Caption="Customization of Gantt "%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 3:Customization of Gantt "%}
 
-**Create your Gantt chart**
+### Create your Gantt chart
 
 In this tutorial, you can learn how to create a simple Gantt chart, add tasks or subtasks, and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial,
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img4.png" Caption="Simple Gantt chart"%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 4:Simple Gantt chart"%}
 
 1. Create an HTML file and add the following template to the HTML file.
 
-{% highlight js %}
+{% highlight html %}
 
 <!DOCTYPE html>
 
@@ -84,7 +84,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 2. Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
 
-{% highlight js %}
+{% highlight html %}
 
 <body>
 <!--Add  Gantt control here-->
@@ -190,25 +190,25 @@ A **Gantt** chart is created as shown in the following screen shot.
 
 {% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img5.png" Caption="Gantt Chart"%}
 
-**Enable Toolbar**
+### Enable Toolbar
 
 Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the **toolbar** option.
 
 {% highlight js %}
 
 toolbarSettings: {
-          showToolbar: true,
-          toolbarItems: [ej.Gantt.ToolbarItems.Add,
-          ej.Gantt.ToolbarItems.Edit,
-          ej.Gantt.ToolbarItems.Delete,
-          ej.Gantt.ToolbarItems.Update,
-          ej.Gantt.ToolbarItems.Cancel,
-          ej.Gantt.ToolbarItems.Indent,
-          ej.Gantt.ToolbarItems.Outdent,
-          ej.Gantt.ToolbarItems.ExpandAll,
-          ej.Gantt.ToolbarItems.CollapseAll,
-          ej.Gantt.ToolbarItems.Search],
-      }
+ showToolbar:true,
+ toolbarItems:[ej.Gantt.ToolbarItems.Add,
+ ej.Gantt.ToolbarItems.Edit,
+ ej.Gantt.ToolbarItems.Delete,
+ ej.Gantt.ToolbarItems.Update,
+ ej.Gantt.ToolbarItems.Cancel,
+ ej.Gantt.ToolbarItems.Indent,
+ ej.Gantt.ToolbarItems.Outdent,
+ ej.Gantt.ToolbarItems.ExpandAll,
+ ej.Gantt.ToolbarItems.CollapseAll,
+ ej.Gantt.ToolbarItems.Search],
+ }
 
 
 {% endhighlight %}
@@ -217,15 +217,15 @@ toolbarSettings: {
 
 The following screen shot displays a Tool bar in Gantt chart control:
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img6.png" Caption="Toolbar in Gantt Chart"%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img6.png" Caption="Figure 6:Toolbar in Gantt Chart"%}
 
 > _**Note: Add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete properties in the edit Options.**_
 
-**Enable Sorting** 
+### Enable Sorting
 
 The **ejGantt** control has sorting functionality to arrange the tasks in ascending or descending order based on a particular column.
 
-**Multicolumn Sorting**
+#### Multicolumn Sorting
 
 Enable the multicolumn sorting in **ejGantt** by setting **allowMultiSorting** as “_True_”. You can sort multiple columns in **ejGantt** ,by selecting the desired column header while holding the **CTRL** key.
 
@@ -240,38 +240,38 @@ $("#GanttContainer").ejGantt({
 
 {% endhighlight %}
 
-**Enable Editing**
+### Enable Editing
 
 You can enable editing using **edit** and **allowGanttChartEditing** options**.**
 
-**Cell Editing**
+#### Cell Editing
 
 Modify the task details through the grid cell editing by setting the **editMode** as **cellEditing.**
 
-**Normal Editing**
+#### Normal Editing
 
 Modify the task details through the edit dialog by setting the **editMode** as **normal.**
 
-**Taskbar Editing**
+#### Taskbar Editing
 
 Modify the task details through user interaction such as resizing and dragging the taskbar.
 
-**Predecessor Editing**
+#### Predecessor Editing
 
 Modify the predecessor details of a task using mouse interactions by setting **allowGanttChartEditing** as true and setting the value for **predecessorMapping** property.
 
 {% highlight js %}
 
 $("#GanttContainer").ejGantt({              
-    //...
-    allowGanttChartEditing:true, //enable the taskbar editing 
-****predecessorMapping**:"**predecessor**"** ,// Predecessor editing 
-    editSettings: {
-        allowEditing: true,  
-        allowAdding: true,
-        allowDeleting: true,      
-        editMode: "normal",
-    },
+//...
+allowGanttChartEditing:true, //enable the taskbar editing 
+predecessorMapping:"predecessor" ,// Predecessor editing 
+editSettings: {
+allowEditing: true,  
+allowAdding: true,
+allowDeleting: true,      
+editMode: "normal",
+},
 });
 
 
@@ -281,11 +281,11 @@ $("#GanttContainer").ejGantt({              
 
 The following screen shot displays a Gantt chart control with Enable Editing options.
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img7.png" Caption="Gantt chart control with Enable Editing options"%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img7.png" Caption="Figure 7: Gantt chart control with Enable Editing options"%}
 
 > _**Note: Both cellEditing and  normal  editing operations are performed through double-click action.**_
 
-**Enable Context Menu**
+### Enable Context Menu
 
 You can enable the context menu in **ejGantt,** by setting the **enableContextMenu** as _**True**_.
 
@@ -303,9 +303,9 @@ $("#GanttContainer").ejGantt({
 
 The following screen shot displays **Gantt chart** in which Context menu option is enabled:
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img8.png" Caption="Gantt chart with Context menu option enabled"%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img8.png" Caption="Figure 8: Gantt chart with Context menu option enabled"%}
 
-**Provide tasks relationship**
+### Provide tasks relationship
 
 In **ejGantt**, you have the predecessor support to show the relationship between two different tasks.
 
@@ -323,7 +323,7 @@ You can show the relationship in tasks, by using the **predecessorsMapping,** as
 
 $("# GanttContainer ").ejGantt({                
    //…
-   **predecessorMapping: "predecessor"**
+   predecessorMapping: "predecessor"
 });
 
 
@@ -333,9 +333,9 @@ $("# GanttContainer ").ejGantt({
 
 The following screenshot displays the relationship between tasks.
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img9.png" Caption="Gantt chart with task relationship"%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img9.png" Caption="Figure 9: Gantt chart with task relationship"%}
 
-**Provide Resources**
+### Provide Resources
 
 In **ejGantt** control, you can display and assign the resource for each task. Create a collection of **JSON** object, which contains id and name of the resource and assign it to **resourceCollection** option. Then, specify the field name for id and name of the resource in the resource collection to **resourceIdMapping** and **resourceNameMapping** options. The name of the field, which contains the actual resources assigned for a particular task in the **dataSource** is specified using **resourceInfoMapping.**
 
@@ -378,7 +378,7 @@ $("# GanttContainer ").ejGantt({
 
 The following screenshot displays resource allocation for tasks in Gantt chart.
 
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img10.png" Caption="Gantt chart with resource allocation for tasks"%}
+{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img10.png" Caption="Figure 10 :Gantt chart with resource allocation for tasks"%}
 
 By following these steps, you have learnt how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
 
