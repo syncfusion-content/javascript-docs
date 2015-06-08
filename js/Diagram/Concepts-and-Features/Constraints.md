@@ -56,21 +56,13 @@ Default</td><td>
 Enables all the constraints.</td></tr>
 </table>
 
-
 Default value for the diagram constraints property is ej.datavisualization.Diagram.DiagramConstraints.Default.
 
 {% highlight js %}
 
-**[JS]**
-
 //Disable PageEditing 
 $("#diagram").ejDiagram({
   constraints:   ej.datavisualization.Diagram.DiagramConstraints.Default &~ ej.datavisualization.Diagram.DiagramConstraints.PageEditable 
-            });
 });
 
-
 {% endhighlight %}
-
-
-

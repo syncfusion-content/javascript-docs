@@ -47,6 +47,7 @@ align</td><td>
 <b>direction</b> (string)Values accepted-(“left”/”right”/”center”/”top”/”bottom”/”middle”)</td><td>
 Align all the nodes/connectors in the selection list to the left/right/center/top/bottom/middle of the selection boundary</td></tr>
 </table>
+
 _Alignment Command_
 
 <table>
@@ -64,14 +65,11 @@ spaceDown</td><td>
 Align the nodes/connectors in the selection list with equal vertical distance between them.</td></tr>
 </table>
 
-
 **Vertical Alignment commands**
 
-The node is aligned vertically to left, right and center using alignment commands. The following code illustrates how to execute the vertical alignment command**.**
+The node is aligned vertically to left, right and center using alignment commands. The following code illustrates how to execute the vertical alignment command.
 
 {% highlight js %}
-
-**[JS]**
 
 //align left
 diagram.align("left");
@@ -82,14 +80,9 @@ diagram.align("right");
 //align center
 diagram.align("center");
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img1.png" Caption=""%}
-
-_Vertical Alignment_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img1.png" Caption="Vertical Alignment"%}
 
 **Horizontal Alignment commands**
 
@@ -97,23 +90,18 @@ The node is aligned horizontally to top, bottom, and middle using alignment comm
 
 {% highlight js %}
 
-**[JS]**
-
 //align top
 diagram.align("top");
+
 //align bottom
 diagram.align("bottom");
+
 //align middle
 diagram.align("middle");
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img2.png" Caption=""%}
-
-_Horizontal alignment_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img2.png" Caption="Horizontal alignment"%}
 
 ## Spacing Command
 
@@ -121,51 +109,37 @@ _Horizontal alignment_
 
 **spaceAcross Command**
 
-The **spaceAcross****command** spaces selected nodes with equal horizontal distance between them.
+The **spaceAcross command** spaces selected nodes with equal horizontal distance between them.
 
-The following code illustrates how to execute **spaceAcross****command.**
+The following code illustrates how to execute **spaceAcross command.**
 
 {% highlight js %}
-
-**[JS]**
 
 //SpaceAcross
 diagram.spaceAcross();
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img3.png" Caption=""%}
-
-_Space Across_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img3.png" Caption="Space Across"%}
 
 **spaceDown Command**
 
-The **spaceDown****command** spaces selected nodes with equal vertical distance between them.
+The **spaceDown command** spaces selected nodes with equal vertical distance between them.
 
-The following code illustrate how to execute **spaceDown****command.**
+The following code illustrate how to execute **spaceDown command.**
 
 {% highlight js %}
-
-**[JS]**
 
 //space down
 diagram.spaceDown();
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img4.png" Caption=""%}
-
-_Space Down_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img4.png" Caption="Space Down"%}
 
 ## Sizing Command
 
-**Sizing****commands** are used to size the selected nodes on the Diagram. The following are the sizing commands.
+**Sizing commands** are used to size the selected nodes on the Diagram. The following are the sizing commands.
 
 _Sizing Command_
 
@@ -177,7 +151,7 @@ _Sizing Command_
 <tr>
 <td>
 sameSize</td><td>
-Size of the nodes in the selection list is resized to size of first node in the selection list</td></tr>
+Size of the nodes in the selection list is resized to size of first node in the selection list.</td></tr>
 <tr>
 <td>
 sameHeight</td><td>
@@ -188,12 +162,9 @@ sameWidth</td><td>
 Width of the nodes in the selection list is resized to width of first node in the selection list.</td></tr>
 </table>
 
-
 The following code illustrate how to execute **Sizing commands**
 
 {% highlight js %}
-
-**[JS]**
 
 //same size
 diagram.sameSize();
@@ -204,18 +175,13 @@ diagram.sameHeight();
 //same width
 diagram.sameWidth();
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img5.png" Caption=""%}
-
-_Sizing Commands_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img5.png" Caption="Sizing Commands"%}
 
 ## Clipboard commands 
 
-**Clipboard****commands** are used to cut, copy, and paste the selected elements on Diagram. The following are the **Clipboard****commands.**
+**Clipboard commands** are used to cut, copy, and paste the selected elements on Diagram. The following are the **Clipboard commands.**
 
 * cut
 
@@ -227,37 +193,27 @@ _Sizing Commands_
 
 **Cut** the selected elements from the Diagram to the Diagram’s clipboard. 
 
-The following code illustrates how to execute **Cut****command**
+The following code illustrates how to execute **Cut command**
 
 {% highlight js %}
-
-**[JS]**
 
 //cut the selected nodes/connectors
 diagram.cut();
 
-
 {% endhighlight %}
-
-
 
 **Copy**
 
 **Copy** the selected elements from the Diagram to the Diagram’s clipboard. 
 
-The following code illustrates how to execute **Copy****command**
+The following code illustrates how to execute **Copy command**
 
 {% highlight js %}
-
-**[JS]**
 
 //copy the nodes/connectors
 diagram.copy();
 
-
 {% endhighlight %}
-
-
 
 **Paste**
 
@@ -267,19 +223,12 @@ The following code illustrates how to execute **Paste command.**
 
 {% highlight js %}
 
-**[JS]**
-
 //paste the cut/copied nodes/connectors on diagram
 diagram.paste();
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img6.png" Caption=""%}
-
-_Paste_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img6.png" Caption="Paste"%}
 
 ## Grouping Commands
 
@@ -291,15 +240,10 @@ The following code illustrates how to **Group** the selected elements on Diagram
 
 {% highlight js %}
 
-**[JS]**
-
 //group the selected nodes/connectors
 diagram.group();
 
-
 {% endhighlight %}
-
-
 
 **Ungroup**
 
@@ -307,11 +251,8 @@ The following code illustrates how to **Ungroup** the selected group on diagram.
 
 {% highlight js %}
 
-**[JS]**
-
 //ungroup the selected group 
 diagram.ungroup();
-
 
 {% endhighlight %}
 
@@ -328,8 +269,6 @@ These commands provide support to control overlapping objects.
 
 * sendBackward
 
-
-
 **bringToFront Commands**
 
 The **bringToFront** command moves the selected element over other elements by increasing the selected element’s z-index to Diagram element’s maximum value.
@@ -338,18 +277,12 @@ The following code illustrates how to execute the **BringToFront** command.
 
 {% highlight js %}
 
-**[JS]**
 //bring to front
 diagram.bringToFront();
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img7.png" Caption=""%}
-
-_Bring To Front_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img7.png" Caption="Bring To Front"%}
 
 **sendToBack Commands**
 
@@ -359,19 +292,12 @@ The following code illustrates how to execute **sendToBack** command.
 
 {% highlight js %}
 
-**[JS]**
-
 //send to back
 diagram.sendToBack();
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img8.png" Caption=""%}
-
-_Send To Back_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img8.png" Caption="Send To Back"%}
 
 **moveForward Commands**
 
@@ -381,19 +307,12 @@ The following code illustrates how to execute **moveForward** Command.
 
 {% highlight js %}
 
-**[JS]**
-
 //move forward
 diagram.moveForward();
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img9.png" Caption=""%}
-
-_Move Forward_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img9.png" Caption="Move Forward"%}
 
 **sendBackward Commands**
 
@@ -403,19 +322,12 @@ The following code illustrates how to execute **sendBackward** command.
 
 {% highlight js %}
 
-**[JS]**
-
 //send backward
 diagram.sendBackward();
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img10.png" Caption=""%}
-
-_Send Backward_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img10.png" Caption="Send Backward"%}
 
 ## Zoom Commands
 
@@ -425,35 +337,27 @@ The following code illustrates how to zoom-in the Diagram.
 
 {% highlight js %}
 
-**[JS]**
-
 //ZoomIn
 function ZoomIn() 
 {
- var diagram = $("#diagram").ejDiagram("instance");
- var zoom = { zoomFactor: 0.2,zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn };
- diagram.zoomTo(zoom);    
+	var diagram = $("#diagram").ejDiagram("instance");
+	var zoom = { zoomFactor: 0.2,zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn };
+	diagram.zoomTo(zoom);    
 }     
 
-
 {% endhighlight %}
-
-
 
 The following code illustrates how to zoom-out the Diagram.
 
 {% highlight js %}
 
-**[JS]**
-
 //ZoomOut       
 function ZoomOut() 
 {
- var diagram = $("#diagram").ejDiagram("instance");
- var zoom = { zoomFactor: 0.2, zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut };
- diagram.zoomTo(zoom);
+	var diagram = $("#diagram").ejDiagram("instance");
+	var zoom = { zoomFactor: 0.2, zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut };
+	diagram.zoomTo(zoom);
 }
-
 
 {% endhighlight %}
 
@@ -472,7 +376,9 @@ _Nudge Commands_
 <tr>
 <td>
 nudge</td><td>
-direction<br>(string)Value accepted-(“up”/”down”/<br>”left”/”right”)delta(integer) </td><td>
+direction (string)<br/>
+Value accepted-(“up”/”down”/”left”/”right”)<br/>
+delta(integer)</td><td>
 Nudge command moves the selected elements towards up/ down/ left/ right by the number of pixels specified by the parameter delta.When delta is not specified, by default it is considered as 1 pixel.</td></tr>
 </table>
 
@@ -480,22 +386,16 @@ The following code illustrates how to execute **Nudge** command.
 
 {% highlight js %}
 
-**[JS]**
 //nudge up
 diagram.nudge("up" , 5);
 
-
 {% endhighlight %}
-
-
 
 **Nudge by using Arrow Keys**
 
 The corresponding arrow keys are used to move the selected elements to up, down, left or right by 1 pixel.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img11.png" Caption=""%}
-
-_Keyboard-Arrow Keys_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img11.png" Caption="Keyboard-Arrow Keys"%}
 
 **Nudge** commands are particularly useful for accurate placement of **Diagram** elements on the **Diagram** as it allows you to move by 1 pixel each time.
 
@@ -514,23 +414,25 @@ _fitToPage Commands_
 <tr>
 <td>
 fitToPage</td><td>
-<b>mode</b><br>(string)Value accepted- ej.datavisualization.Diagram.FitMode<b>region</b>(string) Value accepted-ej.datavisualization.Diagram.Region<b>margin</b>(object) </td><td>
-<b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into a view is specified through the parameters.<b>mode</b> – To specify whether to fit the <b>Diagram</b> into view either in terms of width, height or entire page.<b>region</b> – To specify whether to fit the content based on the <b>Diagram</b> elements or page settings.<b>margin</b> – Space that is to be left in between the content and viewport.</td></tr>
+<b>mode</b> (string)<br/>
+Value accepted: ej.datavisualization.Diagram.FitMode<br/><br/>
+<b>region</b> (string)<br/>
+Value accepted-ej.datavisualization.Diagram.Region<br/><br/>
+<b>margin</b> (object) </td><td>
+<b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into a view is specified through the parameters.<br/>
+<b>mode</b> – To specify whether to fit the <b>Diagram</b> into view either in terms of width, height or entire page.<br/>
+<b>region</b> – To specify whether to fit the content based on the <b>Diagram</b> elements or page settings.<br/>
+<b>margin</b> – Space that is to be left in between the content and viewport.</td></tr>
 </table>
-
 
 The following code illustrates how to execute **FitToPage** command.
 
 {% highlight js %}
 
-**[JS]**
 //fit to page – fit diagram based on elements
 diagram.fitToPage("page", "content", { "left": 25, "top": 25, "right": 25, "bottom": 25 });
 
-
 {% endhighlight %}
-
-
 
 **FitToMode**
 
@@ -557,7 +459,6 @@ Height</td><td>
 Fits the height of <b>Diagram</b> content into view</td></tr>
 </table>
 
-
 **Region**
 
 Region is to specify the region/bounds of **Diagram** content to fit into view.
@@ -581,4 +482,3 @@ Specifies the region based on page settings</td></tr>
 **Undo/Redo**
 
 Refer the Link for Undo/Redo Commands.
-

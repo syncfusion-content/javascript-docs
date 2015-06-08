@@ -19,8 +19,7 @@ The following code illustrates how a group node is created and added in the node
 
 {% highlight js %}
 
-**[JS]**
- //Creates a group node.
+//Creates a group node.
 var nodes = [    
 //Group node.
     { name: "group", type: "group",
@@ -31,10 +30,7 @@ var nodes = [
     }
 ];
 
-
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Group_images/Group_img1.png" Caption="Group"%}
 
@@ -50,11 +46,9 @@ The following steps illustrate how to select an object that has two groups.
 
 2. Click again to select the inner group to which it belongs.
 
-
+3. Click again to select the child node after all groups have been traversed.
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Group_images/Group_img3.png" Caption="Selecting an inner Group"%}
-
-3. Click again to select the child node after all groups have been traversed.
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Group_images/Group_img4.png" Caption="Selecting a Child of Group"%}
 
@@ -75,14 +69,15 @@ _Editing a Group_
 <tr>
 <td>
 Resize</td><td>
-<img src="Group_images\Group_img5.png" alt="" width="141pt" height="177pt"</td><td>
-<img src="Group_images\Group_img6.png" alt="" width="131pt" height="139pt"</td></tr>
+<img src="/js/Diagram/Concepts-and-Features/Group_images/Group_img5.png" alt="" width="141pt" height="177pt"/></td><td>
+<img src="/js/Diagram/Concepts-and-Features/Group_images/Group_img6.png" alt="" width="131pt" height="139pt"/></td></tr>
 <tr>
 <td>
 Rotate</td><td>
-<img src="Group_images\Group_img7.png" alt="" width="141pt" height="177pt"</td><td>
-<img src="Group_images\Group_img8.png" alt="" width="190pt" height="188pt"</td></tr>
+<img src="/js/Diagram/Concepts-and-Features/Group_images/Group_img7.png" alt="" width="141pt" height="177pt"/></td><td>
+<img src="/js/Diagram/Concepts-and-Features/Group_images/Group_img8.png" alt="" width="190pt" height="188pt"/></td></tr>
 </table>
+
 ## Layout Panel
 
 The **Container** property of **Group** can be set to any of the available **‘layout panel’**. It is used to control the size and position of Group’s children.
@@ -154,44 +149,37 @@ paddingRight</td><td>
 number</td><td>
 Gets or sets the right padding value of the group.</td></tr>
 </table>
+
 ### Canvas Panel
 
 The Canvas panel supports absolute positioning and provides the least layout functionality to its contained diagram elements. Canvas allows you to position contained elements at an offset and also elements can be arranged with either horizontally or vertically.
 
 {% highlight js %}
 
-**[JS]**
-
 var nodes = [{
     name: "Canvas", offsetX: 400, offsetY: 400,
     children: [
-{ type: "node", name: "snode1", fillColor: "darkCyan" },
-{ type: "node", name: "snode2", marginTop: 30, marginLeft: 30,
-                                                fillColor: "white" },
-{ type: "node", name: "snode3", marginTop: 60, marginLeft: 60,
-                                            fillColor: "darkCyan" },
-{ type: "node", name: "snode4", marginTop: 90, marginLeft: 90,
-                                               fillColor: "white" }
-  ],
+        { type: "node", name: "snode1", fillColor: "darkCyan" },
+        { type: "node", name: "snode2", marginTop: 30, marginLeft: 30, fillColor: "white" },
+        { type: "node", name: "snode3", marginTop: 60, marginLeft: 60, fillColor: "darkCyan" },
+        { type: "node", name: "snode4", marginTop: 90, marginLeft: 90, fillColor: "white" }
+    ],
     //Canvas Panel.
     container: { type: "canvas" },
     fillColor: "#E7EBF4", borderColor: "black",
     paddingLeft: 30, paddingTop: 30, paddingRight: 30, paddingBottom: 30
-},
-        ];
-        $("#diagram").ejDiagram({
-            nodes: nodes,
-            defaultSettings: {
-                node: {
-                    height: 70, width: 70, parent: "Canvas",
-                },
-            },
-        });
+}];
 
+$("#diagram").ejDiagram({
+    nodes: nodes,
+    defaultSettings: {
+        node: {
+            height: 70, width: 70, parent: "Canvas",
+        },
+    },
+});
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Group_images/Group_img9.png" Caption="Canvas Panel"%}
 
@@ -203,38 +191,27 @@ The following code illustrates how to add stack panel.
 
 {% highlight js %}
 
-**[JS]**
-
-        var nodes = [
-   {
-       type: "group", name: "Stack", offsetX: 200, offsetY: 400,
+var nodes = [
+   { type: "group", name: "Stack", offsetX: 200, offsetY: 400,
        children: [
-   { type: "node", name: "cnode1", fillColor: "darkCyan", 
-                                             horizontalAlign: "left" },
-   { type: "node", name: "cnode2", fillColor: "darkCyan", 
-                                            horizontalAlign: "right" },
-   { type: "node", name: "cnode3", fillColor: "darkCyan",
-                                          horizontalAlign: "stretch" },
+           { type: "node", name: "cnode1", fillColor: "darkCyan", horizontalAlign: "left" },
+           { type: "node", name: "cnode2", fillColor: "darkCyan", horizontalAlign: "right" },
+           { type: "node", name: "cnode3", fillColor: "darkCyan", horizontalAlign: "stretch" },
        ],
        // Stack panel.
        container: { type: "stack" },
        fillColor: "#E7EBF4", borderColor: "black",
        minHeight: 300, minWidth: 300
-   },
-        ];
-        $("#diagram").ejDiagram({
-            nodes: nodes,
-            defaultSettings: {
-                node: {
-                    height: 100, width: 100, parent: "Stack",
-                },
-            }
-        });
-
+   }];
+$("#diagram").ejDiagram({
+    nodes: nodes,
+    defaultSettings: {
+        node: {
+            height: 100, width: 100, parent: "Stack",
+        },
+    }
+});
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/Diagram/Concepts-and-Features/Group_images/Group_img10.png" Caption="Stack Panel containing three nodes"%}
-

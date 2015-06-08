@@ -12,29 +12,20 @@ documentation: ug
 You can export the Diagram to the following formats.
 
 * JPG
-
 * PNG
-
 * BMP
-
 * SVG
 
 The following code illustrates how to export the diagram as image
 
 {% highlight js %}
 
-[**JS]**
-
 var diagram = $("#DiagramContent").ejDiagram("instance");
 
 //Exports the diagram as an image of JPEG format
-
 diagram.exportDiagram();
 
-
 {% endhighlight %}
-
-
 
 **Exporting options**
 
@@ -44,32 +35,27 @@ The following code example illustrates how to export and download the positive r
 
 {% highlight js %}
 
-[**JS]**
-
 var diagram = $("#DiagramContent").ejDiagram("instance");
 
 var options = {
-           //Name of the exported file
-           fileName: "diagram", 
-           //Specifies whether to export as files/data
-           mode: "download", 
-           //Specifies the region to be exported
-           region: "pageSettings", 
-           //Format of the exported file
-           format: "jpg",
-           //Can be set as a rectangle {x,y width, height}
-           bounds: { x: 0, y: 0 }, 
-           //margin to the exported file/data
-           margin: { left: 30 }
-           };
+    //Name of the exported file
+    fileName: "diagram", 
+    //Specifies whether to export as files/data
+    mode: "download", 
+    //Specifies the region to be exported
+    region: "pageSettings", 
+    //Format of the exported file
+    format: "jpg",
+    //Can be set as a rectangle {x,y width, height}
+    bounds: { x: 0, y: 0 }, 
+    //margin to the exported file/data
+    margin: { left: 30 }
+};
 
 //Exports the positivie region of diagram as an image of JPEG format.
 diagram.exportDiagram(options);
 
-
 {% endhighlight %}
-
-
 
 **File Name**
 
@@ -100,7 +86,6 @@ Data</td><td>
 Exports diagram as data of formats ImageURL/SVG.</td></tr>
 </table>
 
-
 **Region**
 
 You can export any particular region of the **Diagram**. The region to be exported is based on the region and bounds properties.
@@ -124,14 +109,10 @@ PageSettings</td><td>
 Export diagram is based on page setting (page size, multiple page, page margin, etc.)</td></tr>
 </table>
 
-
 **Format**
 
 Format is to specify the type/format of the exported file.
 
 It includes jpg, png, bmp and svg.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Exporting_images/Exporting_img1.png" Caption=""%}
-
-_Exported diagram_
-
+{% include image.html url="/js/Diagram/Concepts-and-Features/Exporting_images/Exporting_img1.png" Caption="Exported diagram"%}

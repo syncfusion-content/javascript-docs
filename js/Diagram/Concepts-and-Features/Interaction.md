@@ -50,12 +50,9 @@ rotateTool</td><td>
 Allow you to rotate nodes</td></tr>
 </table>
 
-
 The following code illustrates how to activate and deactivate the desired tool
 
 {% highlight js %}
-
-**[JS]**
 
 //activate pan tool
 var diagram = $("#Diagram").ejDiagram("instance");
@@ -63,7 +60,6 @@ diagram.activateTool("panTool");
 
 //deactivate current tool
 diagram.deactivateTool();
-
 
 {% endhighlight %}
 
@@ -75,7 +71,7 @@ diagram.deactivateTool();
 
 * Multiple selection
 
-**Single selection**
+### Single selection
 
 The Nodes/Connectors in Diagram surface is selected when the **Select** constraint is enabled. **Selection** is done through the following two ways. 
 
@@ -94,33 +90,24 @@ The following code illustrates how to add node/connector to selection.
 
 {% highlight js %}
 
-**[JS]**
-
 var node = diagram.model.nodes[0];
 
 //add node to selection
 diagram.addSelection(node);
 
-
 {% endhighlight %}
 
+{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img1.png" Caption="Single selection"%}
 
+### Multiple Selections
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img1.png" Caption=""%}
-
-_Single selection_
-
-**Multiple Selections**
-
-**Multiple selection** is done using rubber band selection, Ctrl + Click and Ctrl + A. During **Multiple****selections**, the selector binds all the selected items.
+**Multiple selection** is done using rubber band selection, Ctrl + Click and Ctrl + A. During **Multiple selections**, the selector binds all the selected items.
 
 **Rubber band Selection**
 
 **Rubber band selection** is done by clicking and dragging mouse pointer on Diagram canvas and rectangle helper appears during **Rubber band selection**. The diagram Nodes/Connectors that intersect in the selection rectangle bounds are added to the selection list.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img2.png" Caption=""%}
-
-_Multiple Selections_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img2.png" Caption="Multiple Selections"%}
 
 ## User Handle
 
@@ -193,7 +180,6 @@ boolean</td><td>
 Gets or sets whether the User handle is enabled for  multiple selection </td></tr>
 </table>
 
-
 The following example describes how to create **delete user handle** in diagram.
 
 * Create handle
@@ -208,18 +194,13 @@ The following code illustrates how to create **Delete User handle**
 
 {% highlight js %}
 
-**[JS]**
-
 //Create handle
 var userHandles = [];
 var deleteHandle = { name: "deleteHandle", position: ej.datavisualization.Diagram.UserHandlePositions.BottomRight, showOnMultipleSelection: false, size:30, backgoundColor: "#4D4D4D", pathData: “M33.977998,27.684L33.977998,58.102997 “ +“41.373998,58.102997 41.373998,27.684z M14.841999,27.684L14.841999,58.102997 22.237998,58.102997 “+”22.237998,27.684z M4.0319996,22.433001L52.183,22.433001 52.183,63.999001 4.0319996,63.999001z “+”M15.974,0L40.195001,0 40.195001,7.7260003 56.167001,7.7260003 56.167001,16.000999 0,16.000999 “+”0,7.7260003 15.974,7.7260003z” };
 deletHandle.tool = new DeleteTool(deleteHandle.name);
 userHandles.push(deletHandle);
 
-
 {% endhighlight %}
-
-
 
 **Create tool for Delete Userhandle**
 
@@ -227,47 +208,42 @@ The following code illustrates how to create tool for **Delete User handle.**
 
 {% highlight js %}
 
- **[JS]**
-
 //create tool for delete handle
 var DeleteTool = (function (base) {
 
-ej.datavisualization.Diagram.extends(DeleteTool, base);
-
-function DeleteTool(name) {
-base.call(this, name);
-this.singleAction = true;
-}
-
-//mouse down for delete tool
-DeleteTool.prototype.mousedown = function (evt) {
-base.prototype.mousedown.call(this, evt);
-this.inAction = true;
-this.selectedObject = this.diagram.selectionList[0];
-};
-
-//mouse move for delete tool
-DeleteTool.prototype.mousemove = function (evt) { 
-base.prototype.mousemove.call(this, evt);
-};
-
-//mouse up for delete tool
-DeleteTool.prototype.mouseup = function (evt) {
-var diagram = $(“#diagram”).ejDiagram(“instance”);
-if (this.inAction) 
- {
-   this.inAction = false;
-   diagram.remove(this.selectedObject);
- }
- base.prototype.mouseup.call(this, evt);
-};
-return DeleteTool;
+    ej.datavisualization.Diagram.extends(DeleteTool, base);
+    
+    function DeleteTool(name) {
+        base.call(this, name);
+        this.singleAction = true;
+    }
+    
+    //mouse down for delete tool
+    DeleteTool.prototype.mousedown = function (evt) {
+        base.prototype.mousedown.call(this, evt);
+        this.inAction = true;
+        this.selectedObject = this.diagram.selectionList[0];
+    };
+    
+    //mouse move for delete tool
+    DeleteTool.prototype.mousemove = function (evt) { 
+        base.prototype.mousemove.call(this, evt);
+    };
+    
+    //mouse up for delete tool
+    DeleteTool.prototype.mouseup = function (evt) {
+        var diagram = $(“#diagram”).ejDiagram(“instance”);
+        if (this.inAction) 
+        {
+           this.inAction = false;
+           diagram.remove(this.selectedObject);
+        }
+        base.prototype.mouseup.call(this, evt);
+    };
+    return DeleteTool;
 })
 
-
 {% endhighlight %}
-
-
 
 **Adding delete handle in Diagram**
 
@@ -275,18 +251,13 @@ The following code illustrates how to add **Delete handle** in diagram
 
 {% highlight js %}
 
-**[JS]**
 //add user handles to diagram
 $(“#Diagram”).ejDiagram({ userHandles: userHandles });
 
 
 {% endhighlight %}
 
-****
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img3.png" Caption=""%}
-
-_Delete-User Handle_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img3.png" Caption="Delete-User Handle"%}
 
 **Events**
 
@@ -304,6 +275,7 @@ selectionChange</td><td>
 {cancel, changeType, element, model, type}cancel :booleanchangeType: string (“insert“/ “remove”)element: object(Node/Connector to be add or remove)model: object(diagram’s model)type: string(event name “selectionChange”)</td><td>
 This event is raised when the selection added to the node /connector during run time.</td></tr>
 </table>
+
 ## Zoom 
 
 The Diagram is zoomed in and out. **Zooming** is achieved in the following two ways.
@@ -322,14 +294,9 @@ Diagram allows you to set the **zoomFactor** by which you can zoom in or out. Th
 
 {% highlight js %}
 
-**[JS]**
-
 var zoom = { zoomFactor: 0.2 };
 
-
 {% endhighlight %}
-
-
 
 **ZoomCommands**
 
@@ -399,6 +366,7 @@ nudgeRight(move the selected elements towards right by one pixel)</td></tr>
 Ctrl+MouseScroll</td><td>
 Zoom(Zoom in/Zoom out the diagram)</td></tr>
 </table>
+
 ## Touch
 
 **Touch** support for Diagram view has the following features:
@@ -464,14 +432,11 @@ ej.datavisualization.Diagram.SnapConstraints</td><td>
 Gets or sets whether snapping to gridlines option is enabled or not</td></tr>
 </table>
 
-
 **Enable snapping** 
 
 Snapping to gridlines is enabled or disabled by changing the value of snap Setting’s **SnapConstraints** as **ej.datavisualization.Diagram.SnapConstraints**
 
 {% highlight js %}
-
-**[JS]**
 
 //enable snap to horizontal gridlines constraint
 var snapSettings = { snapConstraints : ej.datavisualization.Diagram.SnapConstraints.SnapToHorizontalLines };
@@ -482,10 +447,7 @@ snapSettings = { snapConstraints: ej.datavisualization.Diagram.SnapConstraints.S
 //enable snap to both horizontal and vertical gridlines constraint
 snapSettings = { snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToLines}
 
-
 {% endhighlight %}
-
-
 
 **SnapInterval**
 
@@ -495,12 +457,8 @@ You can customize the position to which a diagram object snaps by changing the v
 
 {% highlight js %}
 
-**[JS]**
-
 //set snap interval
 var snapSettings = { horizontalGridlines: { snapInterval: [20] }, verticalGridlines: { snapInterval: [20] }};
-
-
 
 {% endhighlight %}
 
@@ -508,9 +466,7 @@ var snapSettings = { horizontalGridlines: { snapInterval: [20] }, verticalGridli
 
 The **snap-to-object** feature provides visual cues to assist with aligning and spacing diagram nodes. You can snap a node with its neighboring objects based on its size and position. Such alignments are visually represented as guidelines.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img4.png" Caption=""%}
-
-_Snap to Object_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img4.png" Caption="Snap to Object"%}
 
 **Enabling and Disabling snapping to objects**
 
@@ -518,15 +474,10 @@ _Snap to Object_
 
 {% highlight js %}
 
-**[JS]**
-
 //enable snap to object behavior
 $("#Diagram").ejDiagram({ snapSettings: { enableSnapToObject: true }});
 
-
 {% endhighlight %}
-
-
 
 **SnapAngle**
 
@@ -534,11 +485,8 @@ You can rotate the Node with multiples of **snapAngle**.
 
 {% highlight js %}
 
-**[JS]** 
-
 //set snap angle
 $("#Diagram").ejDiagram({ snapSettings: { snapAngle: 5 }});
-
 
 {% endhighlight %}
 
@@ -555,28 +503,46 @@ _Events_
 <tr>
 <td>
 mouseLeave</td><td>
-{cancel, element, model, type}cancel: booleanelement-object(node/connector)model: object(diagram’s model)type: string(event name “mouseLeave”)</td><td>
+{cancel, element, model, type}<br/>
+cancel: boolean<br/>
+element: object(node/connector)<br/>
+model: object(diagram’s model)<br/>
+type: string(event name “mouseLeave”)</td><td>
 This event is raised when themouse pointer leaves from the node/connector during runtime.</td></tr>
 <tr>
 <td>
 mouseEnter</td><td>
-{cancel, element, model, type}cancel: booleanelement-object(node/connector)model: object(diagram’s model)type: string(event name “mouseEnter”)</td><td>
+{cancel, element, model, type}<br/>
+cancel: boolean<br/>
+element: object(node/connector)<br/>
+model: object(diagram’s model)<br/>
+type: string(event name “mouseEnter”)</td><td>
 This event is raised when the mouse pointer enters on the node/connector during runtime.</td></tr>
 <tr>
 <td>
 mouseHover</td><td>
-{ cancel, diagram, model, type }cancel: booleandiagram:object(node/connector)model: object(diagram’s model)type: string(event name “mouseHover”)</td><td>
+{ cancel, diagram, model, type }<br/>
+cancel: boolean<br/>
+diagram: object(node/connector)<br/>
+model: object(diagram’s model)<br/>
+type: string(event name “mouseHover”)</td><td>
 This event is raised when mouse pointer hovers on the node/connector during runtime.</td></tr>
 <tr>
 <td>
 click</td><td>
-{cancel, element, model, type}cancel: booleanelement-object(node/connector)model: object(diagram’s model)type: string(event name “click”)</td><td>
+{cancel, element, model, type}<br/>
+cancel: boolean<br/>
+element: object(node/connector)<br/>
+model: object(diagram’s model)<br/>
+type: string(event name “click”)</td><td>
 This event is raised when you click on the node/connector during runtime.</td></tr>
 <tr>
 <td>
 doubleClick</td><td>
-{cancel, element, model, type}cancel: booleanelement-object(node/connector)model: object(diagram’s model)type: string(event name “doubleClick”)</td><td>
+{cancel, element, model, type}<br/>
+cancel: boolean<br/>
+element: object(node/connector)<br/>
+model: object(diagram’s model)<br/>
+type: string(event name “doubleClick”)</td><td>
 This event when you Double-click on the node/connector during runtime.</td></tr>
 </table>
-
-

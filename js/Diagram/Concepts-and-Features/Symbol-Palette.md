@@ -21,8 +21,6 @@ The following code example illustrates how to create and add symbols in Palette.
 
 {% highlight js %}
 
-**[JS]**
-
 // palette array
 var paletteCollection = [];
 var basiShapes = { "name": "Basic Shapes" };
@@ -46,7 +44,6 @@ function createConnector(name,segments,decorator) {
 }
 
 $("#palette").ejSymbolPalette({ palettes: paletteCollection });
-
 
 {% endhighlight %}
 
@@ -120,45 +117,29 @@ string</td><td>
 Gets or sets the name of the selected item in the palette</td></tr>
 </table>
 
-
-The following code illustrates how to customize the **Appearance** of****the **Palette.**
+The following code illustrates how to customize the **Appearance** of the **Palette.**
 
 {% highlight js %}
 
-**[JS]**
-
 // properties to symbol palette
-
-$("#palette").ejSymbolPalette({
-
+$("#palette").ejSymbolPalette({ 
        palettes: collection,
-
        diagramId: "DiagramContent",
-
        height: "100%",
-
        width: "100%",
-
        paletteItemWidth: 45,
-
        paletteItemHeight: 45,
-
        showPaletteItemText: true,
-
        headerHeight: 30,
-
        allowDrag: true,
        selectedPaletteName: "Basic Shapes"
-
-
 }); 
-
 
 {% endhighlight %}
 
 ## Preview for Drag and Drop
 
-Diagram provides preview support for **Palette****item** during drag and drop. When you drag an item from the palette to **Diagram**, a preview of the dragged item is displayed.
+Diagram provides preview support for **Palette item** during drag and drop. When you drag an item from the palette to **Diagram**, a preview of the dragged item is displayed.
 
 **Preview Appearance**
 
@@ -175,33 +156,28 @@ _Preview Appearance_
 <tr>
 <td>
 previewWidth</td><td>
- number</td><td>
+number</td><td>
 Gets or sets the preview width of palette item.</td></tr>
 <tr>
 <td>
 previewHeight</td><td>
- number</td><td>
+number</td><td>
 Gets or sets the preview height of palette item.</td></tr>
 <tr>
 <td>
 previewOffset</td><td>
- object</td><td>
+object</td><td>
 Gets or sets the preview x and y value of palette item.</td></tr>
 </table>
-
 
 The following code example illustrates how to customize **Preview Content**.
 
 {% highlight js %}
 
-**[JS]**
-
-//set properties to symbol palette preview
+  //set properties to symbol palette preview
   previewWidth: 100,
   previewHeight: 100,
   previewOffset: { x: 102, y: 102 }
-
-
 
 {% endhighlight %}
 
@@ -217,9 +193,11 @@ _Events_
 <b>Description</b></td></tr>
 <tr>
 <td>
- drop</td><td>
-{ cancel, element, model, type}cancel: booleanelement: object(node/connector)model: object (diagram model’s)type: string (event name “drop”)</td><td>
+drop</td><td>
+{ cancel, element, model, type}<br/>
+cancel: boolean<br/>
+element: object(node/connector)<br/>
+model: object (diagram model’s)<br/>
+type: string (event name “drop”)</td><td>
 This event is raised when you drag and drop a node or a connector from the palette.</td></tr>
 </table>
-
-
