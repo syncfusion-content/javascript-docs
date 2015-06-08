@@ -33,7 +33,7 @@ The following steps explains you the implementation of resize option in the **Di
 
 2. The output for Dialog control when “enableResize” is “true” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="Dialog with “enableResize”                                                                                 "%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="Dialog with enableResize"%}
 
 ## Drag Support
 
@@ -57,7 +57,7 @@ The following steps explains you the implementation of drag option in the **Dial
 
 2. The output for Dialog control when “allowDraggable” is “true” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img2.png" Caption="Dialog with "allowDraggable"                                                                  "%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img2.png" Caption="Dialog with allowDraggable"%}
 
 ## Close Icon ToolTip Support
 
@@ -82,7 +82,7 @@ The following steps explains you the implementation of close icon tooltip option
 
 2. The output for Dialog control when “closeIconTooltip” is “close” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="Dialog with "closeIconTooltip     "%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="Dialog with closeIconTooltip"%}
 
 ## Persistence Support
 
@@ -107,7 +107,7 @@ The following steps explains the implementation of persistence support in the **
 
 Make resize and reload the web page. The state is maintained in the **Dialog** control. The output for **Dialog** control when “**enablePersistence**” is “**true**” is as follows. 
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="Dialog with “enablePersistence""%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="Dialog with enablePersistence"%}
 
 ## Enabled or Disabled
 
@@ -133,7 +133,7 @@ The following steps explains the implementation of enable option in the **Dialog
 
 2. The output for Dialog control when “enabled” is “true” is as follows.          
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img5.png" Caption="Dialog with “enabled" as “true”"%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img5.png" Caption="Dialog with enabled as true"%}
 
 ## Disable Dialog Control
 
@@ -153,7 +153,7 @@ The following steps explains you the implementation of disable option in the **D
 </table>
 2. The output for Dialog control when enabled is “false” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img6.png" Caption="Dialog with “enabled" as “false”                                                                  "%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img6.png" Caption="Dialog with enabled as false"%}
 
 ## Dialog Position
 
@@ -175,7 +175,7 @@ The **Dialog** provides the option to place the control based upon its X-axis an
 
 2. The output for Dialog control after setting X-axis and Y-axis value.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img7.png" Caption="Dialog with “Position""%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img7.png" Caption="Dialog with Position"%}
 
 ## Header Option
 
@@ -197,7 +197,7 @@ You can show or hide the **Dialog** header by setting **showHeader** property. T
 
 2. The output for Dialog control when showHeader is “true” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="Dialog with “showHeader" as “true”                                           "%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="Dialog with showHeader as true"%}
 
 ## Hide Header
 
@@ -217,7 +217,7 @@ You can show or hide the **Dialog** header by setting **showHeader** property. T
 
 2. The output for Dialog control when showHeader is “false” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="Dialog with “showHeader" as “false”                                     "%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="Dialog with showHeader as false"%}
 
 ## Show at Initial
 
@@ -237,7 +237,7 @@ The **Dialog** control contains an option to be visible or hidden at initializat
 
 2. The output for Dialog control when showOnInit is “true” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img10.png" Caption="Dialog with “showOnInit"                               "%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img10.png" Caption="Dialog with showOnInit"%}
 
 ## Rounded Corner Support
 
@@ -259,5 +259,5 @@ The **Dialog** can support with rounded corner appearance, the default value for
 
 2. The output for **Dialog** control when **showRoundedCorner** is “**true**” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img11.png" Caption="Dialog with “showRoundedCorner""%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img11.png" Caption="Dialog with showRoundedCorner"%}
 

@@ -75,7 +75,7 @@ The following steps explain the configuration of the filtering conditions for an
 
 The following image is the output for **AutoComplete** control that filters list items based on the **endswith** option.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="AutoComplete using "endswith" filterType"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="AutoComplete using endswith filterType"%}
 
 ## AutoFill
 

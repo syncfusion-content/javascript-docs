@@ -31,5 +31,5 @@ The following steps explain enabling the right-to-left property for **Dialog** c
 
 2. The output for **Dialog** when **enabelRTL** is “**True**” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="Dialog with “enableRTL""%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="Dialog with enableRTL"%}
 
