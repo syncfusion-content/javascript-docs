@@ -63,25 +63,18 @@ collection</td><td>
 Gets or sets the value that is used to draw the custom handles on the selected elements.</td></tr>
 </table>
 
-
 **Move, Resize or Rotate selected items**
 
 The following code example is used to update the size and position of the selected elements.
 
-{% highlight js %}
-
-**[JS]**
+{% highlight js %}s
 
 var diagram = $("#diagram").ejDiagram("instance");
+
 //update the size and position of selected elements
-diagram.updateSelector({ offsetX: 100, offsetY: 100,       
-     width: 100, height: 100 });
-
-
+diagram.updateSelector({ offsetX: 100, offsetY: 100, width: 100, height: 100 });
 
 {% endhighlight %}
-
-
 
 **Iterate though selected items**
 
@@ -89,19 +82,14 @@ The following code example is used to get the selected elements.
 
 {% highlight js %}
 
-**[JS]**
-
 var diagram = $("#diagram").ejDiagram("instance");
 //get the selected elements.
-for(var i=0; i< diagram.model.selectedItems.children.length;                  i++)
+for(var i=0; i< diagram.model.selectedItems.children.length; i++)
 {
-   var child = diagram.model.selectedItems.children[i];
+    var child = diagram.model.selectedItems.children[i];
 }
 
-
 {% endhighlight %}
-
-
 
 **User Handles**
 
@@ -109,19 +97,13 @@ The following code example is used to draw custom handles on the selected elemen
 
 {% highlight js %}
 
-**[JS]**
+var userHandle= [];
+function createUserHandles() {
+    //create a new instance of user handle.
+    var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+    userhandle.push(cloneHandle);
+}
 
-     var userHandle= [];
-     function createUserHandles() {
-       //create a new instance of user handle.
-       var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-       userhandle.push(cloneHandle);
-     }
-
-     $("#diagram").ejDiagram({ selectedItems: { userHandles: userHandle } });
-
+$("#diagram").ejDiagram({ selectedItems: { userHandles: userHandle } });
 
 {% endhighlight %}
-
-
-

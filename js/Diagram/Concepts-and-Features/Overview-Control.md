@@ -19,31 +19,26 @@ The following code illustrates how to create **overview** control.
 
 {% highlight html %}
 
-**[HTML]**
-
 //Initialize overview
 <div id="Overview"></div>
 //Initialize diagram
 <div id="diagram"></div>
 
-**[JS]**
+{% endhighlight %}
+
+{% highlight js %}
 
 $("#diagram").ejDiagram({
-                width: "1020px",
-                height: "600px"
-        });
+        width: "1020px",
+        height: "600px"
+});
 
 $("#overview").ejOverview({
        sourceID: "diagram", 
        width: "100%", 
        height: "100%" 
-     });
-
-
+});
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/Diagram/Concepts-and-Features/Overview-Control_images/Overview-Control_img1.png" Caption="Overview"%}
-

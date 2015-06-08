@@ -23,8 +23,6 @@ The following code illustrates how to save and load diagram.
 
 {% highlight js %}
 
-**[JS]**
-
 var diagram = $("#Diagram").ejDiagram("instance");
 
 //returns diagram model’s json data
@@ -33,8 +31,4 @@ var json= diagram.save();
 //load the diagram using saved json data 
 diagram.load(json);
 
-
 {% endhighlight %}
-
-
-

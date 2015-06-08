@@ -19,13 +19,9 @@ You can **add** or **enable** multiple values at a time by using **Bitwise** ‘
 
 {% highlight js %}
 
-**[JS]**
-node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select |ej.datavisualization.Diagram.NodeConstraints.Rotate;
-
+node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
 
 {% endhighlight %}
-
-
 
 In the above example, you can do both selection and rotation.
 
@@ -35,13 +31,9 @@ You can **remove** or **disable** values by using **Bitwise** ‘&~’ (XOR) **o
 
 {% highlight js %}
 
-**[JS]**
 node.constraints = node.constraints &~ (ej.datavisualization.Diagram.NodeConstraints.Rotate);
 
-
 {% endhighlight %}
-
-
 
 In the above example, **Rotation** is disabled but other constraints are enabled.
 
@@ -51,14 +43,8 @@ You can check any values using **Bitwise** ‘&’ (AND) **operator**.
 
 {% highlight js %}
 
-**[JS]**
-
 if ((node.constraints & (ej.datavisualization.Diagram.NodeConstraints.Rotate)) == (ej.datavisualization.Diagram.NodeConstraints.Rotate));
-
 
 {% endhighlight %}
 
-
-
 In the above example, you can check whether the rotate constraints are enabled in a Node. When Node constraints have rotate constraints, the expression returns a rotate constraint.
-

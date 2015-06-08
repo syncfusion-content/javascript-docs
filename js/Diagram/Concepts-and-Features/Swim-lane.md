@@ -74,6 +74,7 @@ phases</td><td>
 array</td><td>
 Gets or sets the phases as collection.</td></tr>
 </table>
+
 ## Lane
 
 The lane is an object that controls the diagram elements in the swim lane. Lane has the following properties.
@@ -107,6 +108,7 @@ orientation</td><td>
 string</td><td>
 Gets or sets the orientation of the swim lane.</td></tr>
 </table>
+
 ## Header
 
 This is used to define header for a swim lane. It has the following properties.
@@ -130,9 +132,10 @@ text</td><td>
 string</td><td>
 Gets or sets the text value for the header.</td></tr>
 </table>
+
 ## Phase
 
-****A Phase is a line that separates the swim lane. Phase has following properties.
+A Phase is a line that separates the swim lane. Phase has following properties.
 
 _Phase Properties_
 
@@ -174,72 +177,63 @@ string</td><td>
 Gets or sets the parent of the phase</td></tr>
 </table>
 
-
 The following code illustrates how to create a simple **swim lane**.
 
 {% highlight js %}
 
-**[JS]**
 var nodes = [];
 var node =
 //creating the swimlane and set its type as swimlane
 {
-type: "swimlane",
-name: "swimlane",
-//initialize swimlane header
-header: {
-    text: "HEADER",
-    height: 50,
-    fillColor: "#C7D4DF",
-    fontSize: 11
-},
-fillColor: "#f5f5f5",
-orientation: "horizontal",
-offsetX: 350,
-offsetY: 290,
-height: 100,
-width: 450,
-//add lanes
-lanes: [
-         {
-         	name: "stackCanvas1",
-        	header: {
+    type: "swimlane",
+    name: "swimlane",
+    //initialize swimlane header
+    header: {
+        text: "HEADER",
+        height: 50,
+        fillColor: "#C7D4DF",
+        fontSize: 11
+    },
+    fillColor: "#f5f5f5",
+    orientation: "horizontal",
+    offsetX: 350,
+    offsetY: 290,
+    height: 100,
+    width: 450,
+    //add lanes
+    lanes: [
+        {
+        name: "stackCanvas1",
+        header: {
          	text: "HEADER",
          	width: 50,
          	fillColor: "#C7D4DF",
          	fontSize: 11
-         	},
-       	fillColor: "#f5f5f5",
-        	height: 120,
-
-children: [
+        },
+        fillColor: "#f5f5f5",
+        height: 120,
+        children: [
          	{
            	shape: { type: "path", pathData: pathData },
            	name: "Node1",
            	labels: [{ text: "Node1", fontSize: 11 }],
            	marginLeft: 100,
            	marginTop: 10,
-           },
-           {
+            },
+            {
              	shape: { type: "path", pathData: pathData },
              	name: "Node2",
              	labels: [{ text: "Node2", fontSize: 11 }],
              	marginLeft: 250,
              	marginTop: 10,
-            }
-          ]
-      }
-   ]
+            }]
+        }]
 }
+
 nodes.push(node);   
 //add nodes to Diagram
 $("#Diagram").ejDiagram({
     nodes: nodes
 }); 
 
-
-
 {% endhighlight %}
-
-
-

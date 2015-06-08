@@ -15,8 +15,6 @@ The following code illustrates how to create a **Diagram** with some model prope
 
 {% highlight js %}
 
-**[JS]** 
-
 //create diagram
 $("#Diagram").ejDiagram({
   //set diagram model properties
@@ -25,10 +23,7 @@ $("#Diagram").ejDiagram({
   pageSettings: { pageWidth: 2000, pageHeight: 2000 }
 });
 
-
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Model_images/Model_img1.png" Caption="Model"%}
 
@@ -43,15 +38,22 @@ _Events_
 <b>Argument</b></td><td>
 <b>Description</b></td></tr>
 <tr>
-<td>
-nodeCollectionChange</td><td>
-{cancel, changeType, element, model, type}cancel: booleanchangeType-string(“insert”/”remove”) element- object(Node to be added or removed) model- object(diagram’s model)type-string(event name: “nodeCollectionChange”) </td><td>
+<td>nodeCollectionChange</td><td>
+{cancel, changeType, element, model, type}<br/>
+cancel: boolean<br/>
+changeType: string(“insert”/”remove”)<br/>
+element: object(Node to be added or removed)<br/>
+model: object(diagram’s model)<br/>
+type: string(event name: “nodeCollectionChange”) </td><td>
 This event is raised when you add/delete node during runtime.</td></tr>
 <tr>
 <td>
 connectorCollectionChange</td><td>
-{cancel, changeType, element, model, type }cancel: booleanchangeType- string(“insert”/”remove”) element- object(Connector to be added or removed)model- object(diagram’s model)type- string(event name: “connectorCollectionChange”)</td><td>
+{cancel, changeType, element, model, type }<br/>
+cancel: boolean<br/>
+changeType: string(“insert”/”remove”)<br/>
+element: object(Connector to be added or removed)<br/>
+model: object(diagram’s model)<br/>
+type: string(event name: “connectorCollectionChange”)</td><td>
 This event is raised when you add/delete connector during run time.</td></tr>
 </table>
-
-
