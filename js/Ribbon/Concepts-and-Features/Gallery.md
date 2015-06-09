@@ -35,6 +35,7 @@ To use the gallery feature, include the following properties under **tabgroups**
 
 **[JS]**
 
+**[HTML]**
 <!-- ... -->
 <head>
 </head>
