@@ -38,7 +38,7 @@ There are four different **TreeMap** layouts such as
                 levels: [
                   { groupPath: "Continent", groupGap: 5 }
                 ],
-**itemsLayoutMode:"Squarified"**
+                **itemsLayoutMode:"Squarified"**
             });
         });
 
@@ -63,7 +63,7 @@ There are four different **TreeMap** layouts such as
 
             $("#treemapContainer").ejTreeMap({
                 // ...             
-**itemsLayoutMode:"SliceAndDiceAuto",**
+                **itemsLayoutMode:"SliceAndDiceAuto",**
                 // ...             
             });
         });
@@ -87,7 +87,7 @@ There are four different **TreeMap** layouts such as
 
             $("#treemapContainer").ejTreeMap({
                 // ...   
-**itemsLayoutMode:"SliceAndDiceHorizontal",**
+                **itemsLayoutMode:"SliceAndDiceHorizontal",**
                 // ...   
             });
         });
@@ -112,7 +112,7 @@ There are four different **TreeMap** layouts such as
 
             $("#treemapContainer").ejTreeMap({
                 // ...   
- **itemsLayoutMode:"SliceAndDiceVertical",**
+                **itemsLayoutMode:"SliceAndDiceVertical",**
                 // ...   
             });
         });
