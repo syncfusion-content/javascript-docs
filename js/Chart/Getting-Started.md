@@ -19,7 +19,7 @@ This section encompasses on how to configure the **Charts** for your business re
 
 **Create a Chart**
 
-Getting started with your **Essential JavaScript Chart** is very easy. You can start by creating a simple line **Chart`**.
+Getting started with your **Essential JavaScript Chart** is very easy. You can start by creating a simple line **Chart**.
 
 1. Create an **HTML** page and add the following code example.
 
@@ -48,8 +48,8 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 {% highlight js %}
 
 <body>
-<div id=”chartcontainer” style=”width:820px; height:500px;”></div>
-    </body>
+<div id=”chartcontainer” style=”width:820px;height:500px;”></div>
+</body>
 
 
 {% endhighlight %}
