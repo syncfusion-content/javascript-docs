@@ -15,7 +15,7 @@ This section explains briefly you on how to create a **Chart** in your applicati
 
 This section encompasses on how to configure the **Charts** for your business requirements. You can also pass the required data to default **Chart** and customize it according to your requirements. In this example, you can see how to display the average climate data for Washington, DC during the period 1961 -1990.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img1.png" Caption="Chart"%}
+{% include image.html url="gettingstarted_images\gettingstarted_img1.png" Caption="Chart"%}
 
 **Create a Chart**
 
@@ -25,18 +25,21 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 {% highlight html %}
 
-<!DOCTYPE html>
+**[HTML]**
+<!DOCTYPE html>
 <html>
 <head>
-    <!--  jquery script  -->
-  <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <!--  jquery localization dependency  -->
-   <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
-    <!-- Essential JS UI widget -->
-   <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <!--  jquery script  -->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <!--  jquery localization dependency  -->
+    <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
+    <!-- Essential JS UI widget -->
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
 </head>
-<body></body>
+<body>
+</body>
 </html>
+
 
 
 {% endhighlight %}
@@ -45,11 +48,12 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 2. Create a **&lt;div&gt;** tag with an id and set height and width of the **Chart**.
 
-{% highlight js %}
+{% highlight html %}
 
+**[HTML]**
 <body>
-<div id=”chartcontainer” style=”width:820px; height:500px;”></div>
-    </body>
+    <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
+</body>
 
 
 {% endhighlight %}
@@ -58,15 +62,16 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 3. Add a script tag inside the **&lt;Body&gt;** tag and add the following code example.
 
-{% highlight js %}
+{% highlight html %}
 
+**[HTML]**
 <body>
-<script type="text/javascript" language="javascript ">
-
-            $(function () {
-                $("#chartcontainer").ejChart();
-            });
-</script>
+    <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
+    <script type="text/javascript" language="javascript ">
+        $(function () {
+            $("#chartcontainer").ejChart();
+        });
+    </script>
 </body>
 
 
@@ -78,7 +83,7 @@ The above code example renders a **Chart** with the default **Column series** ty
 
 The following screenshot displays the Chart.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img2.png" Caption="Chart"%}
+{% include image.html url="gettingstarted_images\gettingstarted_img2.png" Caption="Chart"%}
 
 **Add a Chart series**
 
@@ -94,32 +99,32 @@ By default, line series is used. To create a **series**, you need to add the fol
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart(
-      {
-           // ...      
-          series: [
-                    {
-                        name: 'Precipitation',
-                        type: 'column',
-points: [
-                                 { x: 'Jan', y: 3.03 },
-                                 { x: 'Feb', y: 2.48 },
-                                 { x: 'Mar', y: 3.23 },
-                                 { x: 'Apr', y: 3.15 },
-                                 { x: 'May', y: 4.13 },
-                                 { x: 'Jun', y: 3.23 },
-                                 { x: 'Jul', y: 4.13 },
-                                 { x: 'Aug', y: 4.88 },
-                                 { x: 'Sep', y: 3.82 },
-                                 { x: 'Oct', y: 3.07 },
-                                 { x: 'Nov', y: 2.83 },
-                                 { x: 'Dec', y: 2.8 },
-                                 ],
-                           }
-                         ],
-                   // ...             
+**[JS]**
+            $("#chartcontainer").ejChart({
+                // ...      
+                series: [{
+                    name: 'Precipitation',
+                    type: 'column',
+                    points:
+                        [
+                             { x: 'Jan', y: 3.03 },
+                             { x: 'Feb', y: 2.48 },
+                             { x: 'Mar', y: 3.23 },
+                             { x: 'Apr', y: 3.15 },
+                             { x: 'May', y: 4.13 },
+                             { x: 'Jun', y: 3.23 },
+                             { x: 'Jul', y: 4.13 },
+                             { x: 'Aug', y: 4.88 },
+                             { x: 'Sep', y: 3.82 },
+                             { x: 'Oct', y: 3.07 },
+                             { x: 'Nov', y: 2.83 },
+                             { x: 'Dec', y: 2.8 },
+                        ],
+                }
+                ],
+                // ...             
 
-                  });
+            });
 
 
 {% endhighlight %}
@@ -128,7 +133,7 @@ points: [
 
 The following screenshot displays a Chart series:
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img3.png" Caption="Chart Series"%}
+{% include image.html url="gettingstarted_images\gettingstarted_img3.png" Caption="Chart Series"%}
 
 **Add JSON data to the Chart**
 
@@ -138,19 +143,23 @@ The precipitation data is taken from [http://www.usclimatedata.com/](http://www.
 
 {% highlight js %}
 
-window.chartData = [  //Json data for chart datasource
-        { date: 'Jan', high: 42, low: 27, precipitation: 3.03 },
-        { date: 'Feb', high: 44, low: 28, precipitation: 2.48 },
-        { date: 'Mar', high: 53, low: 35, precipitation: 3.23 },
-        { date: 'Apr', high: 64, low: 44, precipitation: 3.15 },
-        { date: 'May', high: 75, low: 54, precipitation: 4.13 },
-        { date: 'Jun', high: 83, low: 63, precipitation: 3.23 },
-{ date: 'Jul', high: 87, low: 68, precipitation: 4.13 },
+**[JS]**
+        //Json data for chart datasource
+        window.chartData = [
+            { date: 'Jan', high: 42, low: 27, precipitation: 3.03 },
+            { date: 'Feb', high: 44, low: 28, precipitation: 2.48 },
+            { date: 'Mar', high: 53, low: 35, precipitation: 3.23 },
+            { date: 'Apr', high: 64, low: 44, precipitation: 3.15 },
+            { date: 'May', high: 75, low: 54, precipitation: 4.13 },
+            { date: 'Jun', high: 83, low: 63, precipitation: 3.23 },
+       	{ date: 'Jul', high: 87, low: 68, precipitation: 4.13 },
 { date: 'Aug', high: 84, low: 66, precipitation: 4.88 },
 { date: 'Sep', high: 78, low: 59, precipitation: 3.82 },
 { date: 'Oct', high: 67, low: 48, precipitation: 3.07 },
 { date: 'Nov', high: 55, low: 38, precipitation: 2.83 },
-{ date: 'Dec', high: 45, low: 29, precipitation: 2.8 }];
+{ date: 'Dec', high: 45, low: 29, precipitation: 2.8 }
+        ];
+
 
 
 {% endhighlight %}
@@ -161,36 +170,37 @@ Now, set the **datasource** to the **Chart** series using **data, xName, yName**
 
 {% highlight js %}
 
-$(function () {
-$("#chartcontainer").ejChart(
-{
-	// ...             
-series: [
-{
-name: 'Precipitation',
-			type: 'column', 
-			dataSource: window.chartData, 
-			xName: "date", 
-			yName: "precipitation"        
-},
-{
-name: 'Low',
-			type: 'line', 
-			dataSource: window.chartData, 
-			xName: "date", 
-			yName: "low"                        
-},
-{
-name: 'High',
-			type: 'line', 
-			dataSource: window.chartData, 
-			xName: "date", 
-			yName: "high"                       
-},
-]
-	// ...             
-});
-});
+**[JS]**
+    $(function () {
+            $("#chartcontainer").ejChart(
+            {
+                // ...             
+                series: [
+                    {
+                        name: 'Precipitation',
+                        type: 'column',
+                        dataSource: window.chartData,
+                        xName: "date",
+                        yName: "precipitation"
+                    },
+                    {
+                        name: 'Low',
+                        type: 'line',
+                        dataSource: window.chartData,
+                        xName: "date",
+                        yName: "low"
+                    },
+                    {
+                        name: 'High',
+                        type: 'line',
+                        dataSource: window.chartData,
+                        xName: "date",
+                        yName: "high"
+                    },
+                ]
+                // ...             
+            });
+     });
 
 
 {% endhighlight %}
@@ -199,7 +209,7 @@ name: 'High',
 
 The following screenshot displays the Chart when **JSON** data is added.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img4.png" Caption="Chart with JSON data"%}
+{% include image.html url="gettingstarted_images\gettingstarted_img4.png" Caption="Chart with JSON data"%}
 
 **Add Chart Axis of your choice**
 
@@ -296,7 +306,7 @@ name: 'High',
 
 The following screenshot displays a Chart with the desired output.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img5.png" Caption="Chart with axes"%}
+{% include image.html url="gettingstarted_images\gettingstarted_img5.png" Caption="Chart with axes"%}
 
 **Add Data Labels**
 
@@ -304,30 +314,31 @@ The following screenshot displays a Chart with the desired output.
 
 {% highlight js %}
 
-
-$("#chartcontainer").ejChart({   
-	// ...             
-series: [
-{
-name: 'Precipitation',
-		type: 'column', 
-		dataSource: window.chartData, 
-		xName: "date", 
-yName: "precipitation",
-yAxisName:'Precipitation',
-		marker: { dataLabel: { 
-visible: true,
-textPosition: "top",
-fill:"#FF7777",
-			verticalTextAlignment: "top", 
-			offset:20, 
-			shape: "rectangle", 
-font: { color: "white" } } }
-}
-
-	// ...  
-	]           
-});
+**[JS]** 
+        $("#chartcontainer").ejChart({
+            // ...             
+            series: [{
+                name: 'Precipitation',
+                type: 'column',
+                dataSource: window.chartData,
+                xName: "date",
+                yName: "precipitation",
+                yAxisName: 'Precipitation',
+                marker: {
+                    dataLabel: {
+                        visible: true,
+                        textPosition: "top",
+                        fill: "#FF7777",
+                        verticalTextAlignment: "top",
+                        offset: 20,
+                        shape: "rectangle",
+                        font: { color: "white" }
+                    }
+                }
+            }
+            // ...  
+            ]
+        });
 
 
 {% endhighlight %}
@@ -336,7 +347,7 @@ font: { color: "white" } } }
 
 The following screenshot displays a Chart when data labels are enabled.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img6.png" Caption="Chart with Data Labels"%}
+{% include image.html url="gettingstarted_images\gettingstarted_img6.png" Caption="Chart with Data Labels"%}
 
 **Enable Tooltip**
 
@@ -344,33 +355,35 @@ To display the **tooltip** of **Chart** series, you can enable the “**visible*
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart({   
-	// ...             
-series: [
-{
-name: 'Precipitation',
-		type: 'column', 
-		dataSource: window.chartData, 
-		xName: "date", 
-yName: "precipitation",
-yAxisName:'Precipitation',
-		marker: { dataLabel: { 
-visible: true,
-textPosition: "top",
-fill:"#FF7777",
-			verticalTextAlignment: "top", 
-			offset:20, 
-			shape: "rectangle", 
-font: { color: "white" },
+**[JS]**
+****$("#chartcontainer").ejChart({
+            // ...             
+            series: [
+            {
+                name: 'Precipitation',
+                type: 'column',
+                dataSource: window.chartData,
+                xName: "date",
+                yName: "precipitation",
+                yAxisName: 'Precipitation',
+                marker: {
+                    dataLabel: {
+                        visible: true,
+                        textPosition: "top",
+                        fill: "#FF7777",
+                        verticalTextAlignment: "top",
+                        offset: 20,
+                        shape: "rectangle",
+                        font: { color: "white" },
 
-		 } 
-},
-           tooltip:{visible:true},
-}
+                    }
+                },
+                tooltip: { visible: true },
+            }
 
-	// ...  
-	]           
-});
+            // ...  
+            ]
+        });
 
 
 {% endhighlight %}
@@ -379,5 +392,5 @@ font: { color: "white" },
 
 The following screenshot displays a Chart when tooltip is enabled.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img7.png" Caption="Chart with ToolTip"%}
+{% include image.html url="gettingstarted_images\gettingstarted_img7.png" Caption="Chart with ToolTip"%}
 

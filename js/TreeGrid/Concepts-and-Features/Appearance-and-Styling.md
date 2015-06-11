@@ -11,7 +11,7 @@ documentation: ug
 
 You can customize the look and feel of the **TreeGrid** control by applying themes.
 
-You are provided the following twelve different themes in **TreeGrid** control.
+The following are the available themes in **TreeGrid** control.
 
 1. Flat Azure                          
 
@@ -37,9 +37,11 @@ You are provided the following twelve different themes in **TreeGrid** control
 
 12. Gradient Saffron Dark
 
+13. Bootstrap
+
 You can apply the theme (Gradient lime) to the **TreeGrid** control by using the style sheet from the online link as follows.
 
-{% highlight js %}
+{% highlight html %}
 
 <!DOCTYPE html>
 

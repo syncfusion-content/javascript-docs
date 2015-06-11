@@ -11,15 +11,15 @@ documentation: ug
 
 The **Gantt** control provides built-in support to add, insert and update the task inside **Gantt**. **Gantt** provides three types of editing, they are:
 
-* Cell Editing
+*Cell Editing
 
-* Normal Editing
+*Normal Editing
 
-* Taskbar Editing
+*Taskbar Editing
 
-* Predecessor Editing
+*Predecessor Editing
 
-## Cell Editing
+### Cell Editing
 
 Update the task details through grid cell editing by setting editMode as cellEditing.
 
@@ -45,7 +45,7 @@ The output of Gantt with cellEditing is as follows.
 
 {% include image.html url="/js/Gantt/Concepts-and-Features/Editing_images/Editing_img1.png" Caption="Gantt with cellEdit"%}
 
-## Normal Editing
+### Normal Editing
 
 Update the task details through edit dialog by setting **EditMode** as normal.
 
@@ -71,7 +71,7 @@ The following screenshot shows the output of normal editing.
 
 {% include image.html url="/js/Gantt/Concepts-and-Features/Editing_images/Editing_img2.png" Caption="Normal Editing"%}
 
-## Taskbar Editing
+### Taskbar Editing
 
 Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows you how to enable taskbar resizing in **Gantt** control.
 
@@ -86,7 +86,7 @@ $("#GanttContainer").ejGantt({
 
 {% endhighlight %}
 
-## Predecessor Editing
+### Predecessor Editing
 
 Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.
 

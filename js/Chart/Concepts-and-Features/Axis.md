@@ -26,30 +26,28 @@ You can choose any of the Chart axis type using the” **valueType**” property
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            // ...             
+            primaryXAxis:
+            {
+                majorTickLines: { visible: false },
+                title: { text: 'Country' }
+            },
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                      		  primaryXAxis:
-                           {
-                              majorTickLines: { visible: false },
-                              title: { text: 'Country' }
-                            },
+            primaryYAxis:
+            {
 
-                            primaryYAxis:
-                            {
-
-                                title: { text: 'Production' },
-                            },                
-                   // ...             
-               });
+                title: { text: 'Production' },
+            },
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img1.png" Caption="Chart with Axis"%}
+{% include image.html url="axis_images\axis_img1.png" Caption="Chart with Axis"%}
 
 ## Double 
 
@@ -58,31 +56,26 @@ By default the valueType of the axis is double and it represents the numerical d
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                       primaryXAxis:
-                          {
-                              title: { text: 'Year' },
-                              valueType:'double'
-                          },
-                        series: [
-                              {
-                              points: [
-                                  { x: 200, y: 10 }, { x: 210, y: 13 },
-                                  { x: 220, y: 18 }, { x: 230, y: 13 },
-                                  { x: 240, y: 15 }, { x: 250, y: 13 }, 
-                                  { x: 260, y: 16 }, { x: 270, y: 10 },
-                                  { x: 280, y: 18 }
-                              ],
-                              name: 'product A'
-
-                            }            
-                        ],        
+        $("#chartcontainer").ejChart({
             // ...             
-
-             });
+            primaryXAxis:
+            {
+                title: { text: 'Year' },
+                valueType: 'double'
+            },
+            series: [{
+                points: [
+                    { x: 200, y: 10 }, { x: 210, y: 13 },
+                    { x: 220, y: 18 }, { x: 230, y: 13 },
+                    { x: 240, y: 15 }, { x: 250, y: 13 },
+                    { x: 260, y: 16 }, { x: 270, y: 10 },
+                    { x: 280, y: 18 }
+                ],
+                name: 'product A'
+            }
+            ],
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -99,7 +92,7 @@ By default, the **rangePadding** for Numerical Axis is none.
 
 The following screenshot displays a Chart’s x-axis with **rangePadding** set to **none**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img2.png" Caption="Chart with double axis"%}
+{% include image.html url="axis_images\axis_img2.png" Caption="Chart with double axis"%}
 
 #### Additional
 
@@ -107,7 +100,7 @@ If **rangePadding** for Numerical Axis is set to **additional**, the interval of
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **additional**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img3.png" Caption="Chart’s x-axis with RangePadding set to Additional"%}
+{% include image.html url="axis_images\axis_img3.png" Caption="Chart’s x-axis with RangePadding set to Additional"%}
 
 #### Normal
 
@@ -115,7 +108,7 @@ Normal **rangePadding** for a Numerical Axis is used mostly for the y-axis to ha
 
 The following screenshot illustrates a Chart’s y-axis with **rangePadding** set to **normal**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img4.png" Caption="Chart’s y-axis with RangePadding set to Normal"%}
+{% include image.html url="axis_images\axis_img4.png" Caption="Chart’s y-axis with RangePadding set to Normal"%}
 
 #### Round
 
@@ -123,7 +116,7 @@ Round **rangePadding** for a Numerical Axis rounds the range of the Chart axis t
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **Round**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img5.png" Caption="Chart’s x-axis with RangePadding set to Round"%}
+{% include image.html url="axis_images\axis_img5.png" Caption="Chart’s x-axis with RangePadding set to Round"%}
 
 ## DateTime Axis
 
@@ -148,43 +141,41 @@ The **Interval** property of **DateTime** Axis can be any double value based on 
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                     primaryXAxis:
-                          {
-
-                           title: { text: 'Year' },
-                           valueType: 'datetime',
-                           range: { min: new Date(2000, 6, 1), 
-                                    max: new Date(2010, 6, 1), 
-                                    interval: 1 
-                                  },
-                           intervalType: 'Years'
-                          },                        
-                      series: [{
-                              points: [
-                                   { x: new Date(2000, 06, 11), y: 10 },
-                                   { x: new Date(2002, 03, 07), y: 30 },
-                                   { x: new Date(2004, 03, 06), y: 15 }, 
-                                   { x: new Date(2006, 03, 30), y: 65 },
-                                   { x: new Date(2008, 03, 08), y: 90 },
-                                   { x: new Date(2010, 03, 08), y: 85 }
-                              ],
-                              name: 'Sales', type: 'line'
-                            }
-                          ],
+        $("#chartcontainer").ejChart({
             // ...             
+            primaryXAxis:
+            {
 
-             });
+                title: { text: 'Year' },
+                valueType: 'datetime',
+                range: {
+                    min: new Date(2000, 6, 1),
+                    max: new Date(2010, 6, 1),
+                    interval: 1
+                },
+                intervalType: 'Years'
+            },
+            series: [{
+                points: [
+                     { x: new Date(2000, 06, 11), y: 10 },
+                     { x: new Date(2002, 03, 07), y: 30 },
+                     { x: new Date(2004, 03, 06), y: 15 },
+                     { x: new Date(2006, 03, 30), y: 65 },
+                     { x: new Date(2008, 03, 08), y: 90 },
+                     { x: new Date(2010, 03, 08), y: 85 }
+                ],
+                name: 'Sales', type: 'line'
+            }
+            ],
+            // ...  
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img6.png" Caption="Chart with DateTime Axis"%}
+{% include image.html url="axis_images\axis_img6.png" Caption="Chart with DateTime Axis"%}
 
 With the default auto range calculation, the **rangePadding** properties for date-time axis allow you to customize the automatic range calculation.
 
@@ -196,7 +187,7 @@ By default, the **rangePadding** for a **DateTime** Axis is none.
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **none**. 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img7.png" Caption="Chart’s x-axis with RangePadding set to None"%}
+{% include image.html url="axis_images\axis_img7.png" Caption="Chart’s x-axis with RangePadding set to None"%}
 
 #### Additional
 
@@ -204,7 +195,7 @@ If **rangePadding** for **DateTime** Axis is set to **additional**, the **DateTi
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **Additional**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img8.png" Caption="Chart’s x-axis with RangePadding set to Additional"%}
+{% include image.html url="axis_images\axis_img8.png" Caption="Chart’s x-axis with RangePadding set to Additional"%}
 
 #### Round
 
@@ -212,7 +203,7 @@ Round **rangePadding** for a **DateTime** Axis rounds the range of the Chart axi
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **Round**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img9.png" Caption="Chart’s x-axis with RangePadding set to Round"%}
+{% include image.html url="axis_images\axis_img9.png" Caption="Chart’s x-axis with RangePadding set to Round"%}
 
 ## Category Axis
 
@@ -221,36 +212,32 @@ Category (x) axis displays text labels instead of numerical intervals. By defaul
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            // ...             
+            primaryYAxis:
+            {
+                range: { min: 0, max: 80, interval: 20 },
+                title: { text: 'Medals' }
+            },
+            series: [{
+                points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
+                     { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
+                     { x: "France", y: 50 }, { x: "Germany", y: 40 },
+                     { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
+                ],
 
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                       primaryYAxis:
-                           {
-                               range: { min: 0, max: 80, interval: 20 },
-                               title: { text: 'Medals' }
-                           },
-                         series: [
-                                {
-                                points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
-                                     { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
-                                     { x: "France", y: 50 }, { x: "Germany", y: 40 },         
-                                     { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
-                                ],
-
-                                name: 'Gold'
-                              } 
-                            ],     
-                     // ...             
-
-             });
+                name: 'Gold'
+            }
+            ],
+            // ...  
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img10.png" Caption="Chart with Category Axis"%}
+{% include image.html url="axis_images\axis_img10.png" Caption="Chart with Category Axis"%}
 
 ## Logarithmic Axis
 
@@ -259,35 +246,30 @@ An axis displaying a logarithmic scale is very useful when your data values span
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                    primaryYAxis:
-                        {
-                            valueType: "logarithmic",
-
-                        },
-                    series: [
-                        {
-                        points: [
-                             { x: 1990, y: 80 }, { x: 1991, y: 200 }, 
-                             { x: 1992, y: 400 }, { x: 1993, y: 600 },
-                             { x: 1994, y: 900 }, { x: 1995, y: 1400 }, 
-                             { x: 1996, y: 2000 }, { x: 1997, y: 4000 },
-                             { x: 1998, y: 6000 }, { x: 1999, y: 8000 },
-                             { x: 2000, y: 9000 }],
-                        type: 'line'
-                    }],
-                     // ...             
-             });
+        $("#chartcontainer").ejChart({
+            // ...             
+            primaryYAxis: {
+                valueType: "logarithmic",
+            },
+            series: [{
+                points: [
+                     { x: 1990, y: 80 }, { x: 1991, y: 200 },
+                     { x: 1992, y: 400 }, { x: 1993, y: 600 },
+                     { x: 1994, y: 900 }, { x: 1995, y: 1400 },
+                     { x: 1996, y: 2000 }, { x: 1997, y: 4000 },
+                     { x: 1998, y: 6000 }, { x: 1999, y: 8000 },
+                     { x: 2000, y: 9000 }],
+                type: 'line'
+            }],
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img11.png" Caption="Chart with Logarthimic Axis"%}
+{% include image.html url="axis_images\axis_img11.png" Caption="Chart with Logarthimic Axis"%}
 
 ## Chart Axis Properties
 
@@ -314,74 +296,68 @@ In cases of multiple series, a **Chart** can have multiple x and y axes to repre
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            // ...             
+            rowDefinitions:
+            [{
+                rowHeight: 50,
+                unit: 'percentage'
+            },
+            {
+                rowHeight: 50,
+                unit: 'percentage'
+            }],
+            primaryXAxis:
+            {
+                title: { text: "Month" }
+            },
 
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                    rowDefinitions:
-                         [{
-                             rowHeight: 50,
-                             unit: 'percentage'
-                          },
-                           {
-                               rowHeight: 50,
-                               unit: 'percentage'
-                           }
-                         ],
-                         primaryXAxis:
-                          {
-                              title: { text: "Month" }
-                          },
+            primaryYAxis:
+            {
+                title: { text: "Temperature(Fahrenheit)" },
+                range: { min: 0, max: 60, interval: 10 },
+            },
+            axes: [{
+                orientation: 'Vertical',
+                rowIndex: "1",
+                name: 'yAxis',
+                title: { text: "Temperature(Celsius)" },
+                plotOffset: 20
+            }],
 
-                        primaryYAxis:
-                         {
-                           title: { text: "Temperature(Fahrenheit)" },
-                           range: { min: 0, max: 60, interval: 10 },
+            series: [{
+                points: [{ x: "Jan", y: 15 }, { x: "Feb", y: 20 },
+                         { x: "Mar", y: 35 }, { x: "Apr", y: 40 },
+                         { x: "May", y: 30 }, { x: "Jun", y: 40 },
+                         { x: "Jul", y: 43 }, { x: "Aug", y: 35 },
+                ],
+                name: 'Germany',
+            },
 
-                         },
-                        axes: [
-                        {                      
-                         orientation: 'Vertical',
-                         rowIndex: "1",
-                         name: 'yAxis',
-                         title: { text: "Temperature(Celsius)" },
-                         plotOffset:20
-                        }
-                        ],
+            {
+                points: [{ x: "Jan", y: 33 }, { x: "Feb", y: 31 },
+                         { x: "Mar", y: 30 }, { x: "Apr", y: 28 },
+                         { x: "May", y: 29 }, { x: "Jun", y: 30 },
+                         { x: "Jul", y: 33 }, { x: "Aug", y: 32 },
+                ],
+                name: 'India', yAxisName: 'yAxis',
 
-                        series: [{
-                            points: [{ x: "Jan", y: 15 }, { x: "Feb", y: 20 },
-                                     { x: "Mar", y: 35 }, { x: "Apr", y: 40 },
-                                     { x: "May", y: 30 }, { x: "Jun", y: 40 },
-                                     { x: "Jul", y: 43 }, { x: "Aug", y: 35 }, 
-                            ],
-                            name: 'Germany',  
-                          },
-
-                     {
-                      points: [{ x: "Jan", y: 33 }, { x: "Feb", y: 31 },
-                               { x: "Mar", y: 30 }, { x: "Apr", y: 28 },
-                               { x: "May", y: 29 }, { x: "Jun", y: 30 },
-                               { x: "Jul", y: 33 }, { x: "Aug", y: 32 },  
-                         ],
-                       name: 'India',  yAxisName: 'yAxis', 
-
-                     },
-               ],        
+            },
+            ],
             // ...             
 
-             });
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img12.png" Caption="Chart with Multiple Axis"%}
+{% include image.html url="axis_images\axis_img12.png" Caption="Chart with Multiple Axis"%}
 
 In the above code, you can remove the **rowDefinition** and **rowIndex** from axis to arrange the axes in the side-by- side mode.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img13.png" Caption="Chart with Multiple Axis"%}
+{% include image.html url="axis_images\axis_img13.png" Caption="Chart with Multiple Axis"%}
 
 ### Spanning Axis
 
@@ -390,91 +366,85 @@ In the above code, you can remove the **rowDefinition** and **rowIndex** from ax
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            // ...  
 
-$("#chartcontainer").ejChart(
-               {   
-                    // ...  
+            // split the chart area into 3 rows with different height       
+            rowDefinitions: [{
+                rowHeight: 25,
+                unit: "percentage"
+            },
+            {
+                rowHeight: 25,
+                unit: "percentage"
+            },
+            {
+                rowHeight: 50,
+                unit: "percentage"
+            }],
+            primaryXAxis:
+            {
+                title: { text: "Date" },
+            },
+            primaryYAxis:
+            {
+                rowIndex: 0,   // renders in 1st row                
+                range: { min: 0, max: 100, interval: 25 },
+                font: { size: '14px' },
+                title: { text: "Quater 1" }
+            },
+            axes: [{
+                name: 'y1SecondQuater',
+                rowIndex: 1,
+                rowSpan: 2, // renders in 2nd row and spans to 2 rows
+                range: { min: 0, max: 100, interval: 20 },
+                plotOffset: 30,
+                title: { text: "Quater 2" }
+            },
+            {
+                name: 'y2SecondQuater',
+                rowSpan: 3, // renders in 1st row and spans to 3 rows
+                range: { min: 0, max: 100, interval: 10 },
+                title: { text: "Quater 3" }
+            }
+            ],
+            series: [{
+                points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
+                         { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
+                         { x: "France", y: 50 }, { x: "Germany", y: 40 },
+                         { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
+                ],
 
-                   // split the chart area into 3 rows with different height       
-                  rowDefinitions: [
-                          {
-                              rowHeight: 25,
-                              unit: "percentage"
-                          },
-                          {
-                               rowHeight: 25,
-                               unit: "percentage"
-                          },
-                          {
-                             rowHeight: 50,
-                             unit: "percentage"
-                         }],
-                        primaryXAxis:
-                          {
-                              title: { text: "Date" },            
-                          },
-                        primaryYAxis:
-                        {
-                           rowIndex: 0,   // renders in 1st row                
-                           range: { min: 0, max: 100, interval: 25 },
-                           font: { size: '14px' },
-                           title: { text: "Quater 1" }
-                        },
-                        axes: [
-                             {
-                                name: 'y1SecondQuater',
-                                rowIndex: 1,
-                                rowSpan: 2, // renders in 2nd row and spans to 2 rows
-                                range: { min: 0, max: 100, interval: 20 },
-                                plotOffset: 30,
-                                title: { text: "Quater 2" }
-                             },
-                             {
-                                name: 'y2SecondQuater',
-                                rowSpan: 3, // renders in 1st row and spans to 3 rows
-                                range: { min: 0, max: 100, interval: 10 },
-                                title: { text: "Quater 3" }
-                             }
-                        ],
-                        series: [{
-                            points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
-                                     { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
-                                     { x: "France", y: 50 }, { x: "Germany", y: 40 },    
-                                     { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
-                            ],
+                name: 'Gold', type: 'column'
+            },
+            {
+                points: [{ x: "USA", y: 70 }, { x: "China", y: 60 },
+                        { x: "Japan", y: 40 }, { x: "Australia", y: 36 },
+                        { x: "France", y: 25 }, { x: "Germany", y: 30 },
+                        { x: "Italy", y: 35 }, { x: "Sweden", y: 25 }
+                ],
 
-                            name: 'Gold', type: 'column'
-                            },
-                            {
-                            points: [{ x: "USA", y: 70 }, { x: "China", y: 60 }, 
-                                    { x: "Japan", y: 40 }, { x: "Australia", y: 36 },
-                                    { x: "France", y: 25 }, { x: "Germany", y: 30 },
-                                    { x: "Italy", y: 35 }, { x: "Sweden", y: 25 }
-                                    ],
+                name: 'Silver', yAxisName: "y1SecondQuater",
+            },
+            {
+                points: [{ x: "USA", y: 10 }, { x: "China", y: 19 },
+                         { x: "Japan", y: 40 }, { x: "Australia", y: 70 },
+                         { x: "France", y: 35 }, { x: "Germany", y: 82 },
+                         { x: "Italy", y: 57 }, { x: "Sweden", y: 97 }
+                ],
+                name: 'Bronze', yAxisName: "y2SecondQuater", type: 'spline'
+            }
+            ],
+            // ...             
 
-                                    name: 'Silver', yAxisName: "y1SecondQuater",
-                             },
-
-                             {
-                           points: [{ x: "USA", y: 10 }, { x: "China", y: 19 }, 
-                                    { x: "Japan", y: 40 }, { x: "Australia", y: 70 },
-                                    { x: "France", y: 35 }, { x: "Germany", y: 82 }, 
-                                    { x: "Italy", y: 57 }, { x: "Sweden", y: 97 }
-                                    ],
-                           name: 'Bronze', yAxisName: "y2SecondQuater", type:'spline'
-                                }
-
-                        ],       
-                   // ...             
-
-             });
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img14.png" Caption="Chart with Spanning Axis"%}
+{% include image.html url="axis_images\axis_img14.png" Caption="Chart with Spanning Axis"%}
 
 ## Axis Title
 
@@ -483,66 +453,59 @@ You can customize the ejChart Axis title text, font styles and color using “**
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            primaryXAxis:
+            {
+                title: { text: "Expenditure", font: { color: '# AA3eeF', fontFamily: 'Segoe UI', fontStyle: 'Normal', size: '16px', opacity: 1, fontWeight: 'regular' } },
+            },
 
-$("#chartcontainer").ejChart({
-
-                   primaryXAxis:
-                        {
-                            title: {text: "Expenditure", font: { color: '# AA3eeF', fontFamily: 'Segoe UI', fontStyle:       'Normal', size:  '16px', opacity: 1, fontWeight: 'regular' }},
-       	                    },
-
-                        primaryYAxis:
-                        {
-                            title: {text: "Expense", font: { color: '# AA3eeF',  fontFamily: 'Segoe UI', fontStyle: 'Normal', size: '16px', opacity: 1, fontWeight: 'regular' } },                           
-                        },      
-// ...                       
-});
-});
-
+            primaryYAxis:
+            {
+                title: { text: "Expense", font: { color: '# AA3eeF', fontFamily: 'Segoe UI', fontStyle: 'Normal', size: '16px', opacity: 1, fontWeight: 'regular' } },
+            },
+            // ...                       
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img15.png" Caption="Chart with Axis Title"%}
+{% include image.html url="axis_images\axis_img15.png" Caption="Chart with Axis Title"%}
 
 ### Trim Title
 
 **EjChart** supports **Trimming****Axis****Titles** with the properties, **enableTrim** and **maximumTitleWidth**. These are useful for shortening the lengthy titles. On hovering with the mouse, you can see the full title in the tooltip.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img16.png" Caption="X-Axis Title Trim         "%}
+{% include image.html url="axis_images\axis_img16.png" Caption="X-Axis Title Trim         "%}
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img17.png" Caption="Y-Axis Title Trim"%}
+{% include image.html url="axis_images\axis_img17.png" Caption="Y-Axis Title Trim"%}
 
 {% highlight js %}
 
 **[JS]**
-
-$("#container").ejChart(
-       //......
-{
-primaryXAxis:
-{
-title:{
-		text:'List of countries which are using solar power in the 				year 2014,                       
-enableTrim:true,
-                            maximumTitleWidth:60
-},
-
-      		},
-primaryYAxis:
-{
-title:{
-                           text:'Measurements of Solar power used in different     				countries in the year 2014( in GW)'
-enableTrim:true,
-maximumTitleWidth:80
-},
-range: { min: 0, max: 40, interval: 5 },
-labelFormat:"{value}GW",
-},
-//......
-       });        
+$("#container").ejChart({
+            //......
+            primaryXAxis:
+            {
+                title: {
+                    text: 'List of countries which are using solar power in the year 2014',
+                    enableTrim: true,
+                    maximumTitleWidth: 60
+                },
+            },
+            primaryYAxis:
+            {
+                title: {
+                    text: 'Measurements of Solar power used in different countries in the year 2014( in GW)',
+                    enableTrim: true,
+                    maximumTitleWidth: 80
+                },
+                range: { min: 0, max: 40, interval: 5 },
+                labelFormat: "{value}GW",
+            },
+            //......
+        });        
 
 
 {% endhighlight %}
@@ -554,34 +517,32 @@ The axis labels are present along the axis **showing** the value of the data it 
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            // ...             
+            primaryXAxis:
+            {
+                title: { text: 'Countries' },
+                font: { size: '11px', color: 'red' }
 
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                     primaryXAxis:
-                            {
-                                title: { text: 'Countries' },
-                                font: { size: '11px', color: 'red' }
+            },
 
-                            },
-
-                     primaryYAxis:
-                           {
-                               labelFormat: "{value}%",
-                               font:{size:'11px', color:'red'},
-                               title: { text: 'Efficiency' },
-                           },
+            primaryYAxis:
+            {
+                labelFormat: "{value}%",
+                font: { size: '11px', color: 'red' },
+                title: { text: 'Efficiency' },
+            },
 
             // ...             
 
-             });
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img18.png" Caption="Figure 1: "%}
+{% include image.html url="axis_images\axis_img18.png" Caption="Figure 1: "%}
 
 **LabelPlacement:**
 
@@ -598,28 +559,26 @@ There are two types of **LabelPlacement**:
 {% highlight js %}
 
 **[JS]**
+$("#chartcontainer").ejChart({
+            // ...             
+            primaryXAxis:
+            {
+                title: { text: 'Countries' },
+                labelPlacement: 'onticks',
+                font: { size: '11px', color: 'red' }
 
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                    primaryXAxis:
-                            {
-                                title: { text: 'Countries' },
-                                labelPlacement:'onticks',
-                                font: { size: '11px', color: 'red' }
-
-                            }, 
-                    // ...             
-             });
+            },
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img19.png" Caption="Chart with LabelPlacement OnTicks"%}
+{% include image.html url="axis_images\axis_img19.png" Caption="Chart with LabelPlacement OnTicks"%}
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img20.png" Caption="Chart with LabelPlacement BetweenTicks"%}
+{% include image.html url="axis_images\axis_img20.png" Caption="Chart with LabelPlacement BetweenTicks"%}
 
 **Label Position**
 
@@ -628,8 +587,7 @@ Axis labels can further be customized to render inside the chart area using the 
 {% highlight js %}
 
 **[JS]**
-
- $("#Container").ejChart({
+        $("#Container").ejChart({
             primaryXAxis: {
                 labelPosition: "inside",
                 majorTickLines: { visible: false }
@@ -637,14 +595,15 @@ Axis labels can further be customized to render inside the chart area using the 
             primaryYAxis: {
                 labelPosition: "inside",
                 majorTickLines: { visible: false }
-            },});
+            },
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img21.png" Caption="Label inside Chart"%}
+{% include image.html url="axis_images\axis_img21.png" Caption="Label inside Chart"%}
 
 **Axis label trimming** 
 
@@ -653,22 +612,20 @@ Axis labels can further be customized to render inside the chart area using the 
 {% highlight js %}
 
 **[JS]**
-     $("#chartcontainer").ejChart(
-                  {
+        $("#chartcontainer").ejChart({
+            primaryXAxis:
+            {
+                enableTrim: true,
+                maximumLabelWidth: 34
 
-                     primaryXAxis:
-                          {                             
-                              enableTrim: true,
-                              maximumLabelWidth:34
-
-                          },
-                      primaryYAxis:
-                         {                           
-                             enableTrim: true,
-                             maximumLabelWidth :34
-                         }
-
-                    });
+            },
+            primaryYAxis:
+            {
+                enableTrim: true,
+                maximumLabelWidth: 34
+            }
+            // ...
+        });
 
 
 {% endhighlight %}
@@ -677,7 +634,7 @@ Axis labels can further be customized to render inside the chart area using the 
 
 The following screenshot displays the **Chart Axis** with **trimming**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img22.png" Caption="Axis Label Trimming"%}
+{% include image.html url="axis_images\axis_img22.png" Caption="Axis Label Trimming"%}
 
 ## Tick Marks
 
@@ -694,40 +651,37 @@ It is rendered between the major tick lines of Chart axis. To display **minorTic
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            primaryXAxis:
+            {
+                majorTickLines:
+                {
+                    width: 1.5, size: 6, visible: true
+                },
+                minorTickLines: { width: 1, size: 4, visible: true },
+                minorTicksPerInterval: 5,
 
-$("#chartcontainer").ejChart({
-                        primaryXAxis:
-                             {
-                      majorTickLines:
-                        {
-                            width: 1.5, size: 6, visible: true
-                  },
-		   minorTickLines:{ width: 1, size: 4, visible: true }, 
-                                minorTicksPerInterval: 5,
+            },
+            primaryYAxis:
+            {
+                majorTickLines:
+                {
+                    width: 1.5, size: 6, visible: true
+                },
+                minorTickLines: { width: 1, size: 4, visible: true },
+                minorTicksPerInterval: 5,
 
-                             },  
-             primaryYAxis:
-               {          
-                      majorTickLines:
-                        {
-                            width: 1.5, size: 6, visible: true
-                  },
-		   minorTickLines:{ width: 1, size: 4, visible: true }, 
-                                minorTicksPerInterval: 5,
+            },
 
-                        },   
-
-     // ...                       
-});
-});
-
+            // ...                       
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img23.png" Caption="Chart with Tick lines"%}
+{% include image.html url="axis_images\axis_img23.png" Caption="Chart with Tick lines"%}
 
 **Tick lines placement**
 
@@ -736,22 +690,21 @@ You can customize tick lines and render them inside the chart area using the pro
 {% highlight js %}
 
 **[JS]**
-
- $("#chartcontainer").ejChart({      
+        $("#chartcontainer").ejChart({
             primaryXAxis: {
-                tickLinesPosition: "inside",                
+                tickLinesPosition: "inside",
             },
-            primaryYAxis: {                
-                tickLinesPosition: "inside",                              
+            primaryYAxis: {
+                tickLinesPosition: "inside",
             },
-});
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img24.png" Caption="Tick Lines inside chart"%}
+{% include image.html url="axis_images\axis_img24.png" Caption="Tick Lines inside chart"%}
 
 ## Grid Lines	
 
@@ -768,44 +721,41 @@ It is rendered between the **major gridlines** of Chart area.To display **minor 
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart({
-                        primaryXAxis:
-                        {
-                            majorGridLines:
-                          {
-                                    width: 2,  dashArray:"", visible: true, opacity:1
-                           },
-                          minorGridLines:
-                          {
-                                   width: 1, dashArray: "", visible: true
-                         },
-minorTicksPerInterval: 1,
-           },  
-        primaryYAxis:
-           {
-              majorGridLines:
+        $("#chartcontainer").ejChart({
+            primaryXAxis:
+            {
+                majorGridLines:
                 {
-                    width: 2,  dashArray:"", visible: true, opacity:1
+                    width: 2, dashArray: "", visible: true, opacity: 1
+                },
+                minorGridLines:
+                {
+                    width: 1, dashArray: "", visible: true
+                },
+                minorTicksPerInterval: 1,
+            },
+            primaryYAxis:
+            {
+                majorGridLines:
+                {
+                    width: 2, dashArray: "", visible: true, opacity: 1
 
                 },
-             minorGridLines:
-               {
-                   width: 1, dashArray: "", visible: true
-               },
-minorTicksPerInterval: 1,
-           },       
-// ...                       
-});
-});
-
+                minorGridLines:
+                {
+                    width: 1, dashArray: "", visible: true
+                },
+                minorTicksPerInterval: 1,
+            },
+            // ...                       
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img25.png" Caption="Chart with Grid lines"%}
+{% include image.html url="axis_images\axis_img25.png" Caption="Chart with Grid lines"%}
 
 **Alternate Grid Band**
 
@@ -822,25 +772,23 @@ Immediate adjacent band of every even grid bands are Odd Grid Bands**.** You can
 {% highlight js %}
 
 **[JS]**
-$("#container").ejChart(
-                       {
-                           primaryXAxis: {
-                               alternateGridBand: {
-                                   even: {
-                                       fill: "#E896E8",
-                                       opacity: 0.5
-                                   }
-                               }
-                           },
-                           primaryYAxis: {
-                               alternateGridBand: {
-                                   odd: {
-                                       fill: "#E6F0E7",
-                                       opacity: 0.5
-                                   }
-                               }
-                           }
-                       });
+        $("#container").ejChart({
+            primaryXAxis: {
+                alternateGridBand: {
+                    even: {
+                        fill: "#E896E8",
+                        opacity: 0.5
+                    }
+                }
+            },
+            primaryYAxis: {
+                alternateGridBand: {
+                    odd: {
+                        fill: "#E6F0E7",
+                        opacity: 0.5
+                    }
+                }
+            }
         });
 
 
@@ -848,7 +796,7 @@ $("#container").ejChart(
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img26.png" Caption="Chart explaining grid band"%}
+{% include image.html url="axis_images\axis_img26.png" Caption="Chart explaining grid band"%}
 
 ## Inversed Axis
 
@@ -856,25 +804,21 @@ You can display the Chart series in to inversed position using “**isInversed**
 
 {% highlight js %}
 
- **[JS]**
-
-$("#chartcontainer").ejChart({
-
-                        primaryYAxis:
-                        {
-                  isInversed: true,
-          },      
-// ...                       
-});
-});
-
+**[JS]**
+        $("#chartcontainer").ejChart({           
+            primaryYAxis:
+            {
+                isInversed: true,
+            },      
+            // ...                       
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img27.png" Caption="Chart with Inversed Axis"%}
+{% include image.html url="axis_images\axis_img27.png" Caption="Chart with Inversed Axis"%}
 
 ## Opposed Position
 
@@ -883,29 +827,25 @@ By default, the x-axis is arranged horizontally at the bottom of the Chart and t
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            primaryXAxis:
+            {
+                opposedPosition: true,
+            },
 
-$("#chartcontainer").ejChart({
-
-                     primaryXAxis:
-                            {
-                                opposedPosition:true,
-                            },
-
-                            primaryYAxis:
-                           {   
-                               opposedPosition: true,
-                    },
-// ...                       
-});
-});
-
+            primaryYAxis:
+            {
+                opposedPosition: true,
+            },
+            // ...                       
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img28.png" Caption="Chart with OpposedPosition set to True"%}
+{% include image.html url="axis_images\axis_img28.png" Caption="Chart with OpposedPosition set to True"%}
 
 ## Smart Axis Labels
 
@@ -928,26 +868,22 @@ Sometimes the Chart dimensions could cause the labels to intersect. You can avoi
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart({
-
-                        primaryXAxis:
-                        {
-                         labelIntersectAction :  'rotate45'
-          },      
-                        primaryYAxis:
-                        {
-                         labelIntersectAction :  'none'
-          },      
-// ...                       
-});
-});
-
+        $("#chartcontainer").ejChart({
+            primaryXAxis:
+            {
+                labelIntersectAction: 'rotate45'
+            },
+            primaryYAxis:
+            {
+                labelIntersectAction: 'none'
+            },
+            // ...                       
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Axis_images/Axis_img29.png" Caption="Chart with Smart Axis Labels"%}
+{% include image.html url="axis_images\axis_img29.png" Caption="Chart with Smart Axis Labels"%}
 

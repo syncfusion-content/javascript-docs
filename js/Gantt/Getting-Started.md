@@ -47,7 +47,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 4:Simple Gantt chart"%}
 
-1. Create an HTML file and add the following template to the HTML file.
+1.Create an HTML file and add the following template to the HTML file.
 
 {% highlight html %}
 
@@ -82,7 +82,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 
 
-2. Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
+2.Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
 
 {% highlight html %}
 
@@ -96,12 +96,12 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 
 
-3. Create data source for ejGantt.
+3.Create data source for ejGantt.
 
 {% highlight js %}
 
 <head>
-   //…
+   //...
 <script type="text/javascript">
 
     //data source for ejGantt control
@@ -163,7 +163,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 {% highlight js %}
 
 <script type="text/javascript">   
-   //…
+   //...
    $(function () {
             $("#GanttContainer").ejGantt({
                 dataSource: data, //Provides data source for Gantt
@@ -198,17 +198,19 @@ Gantt control contains toolbar options to edit, search, expand or collapse all r
 
 toolbarSettings: {
  showToolbar:true,
- toolbarItems:[ej.Gantt.ToolbarItems.Add,
- ej.Gantt.ToolbarItems.Edit,
- ej.Gantt.ToolbarItems.Delete,
- ej.Gantt.ToolbarItems.Update,
- ej.Gantt.ToolbarItems.Cancel,
- ej.Gantt.ToolbarItems.Indent,
- ej.Gantt.ToolbarItems.Outdent,
- ej.Gantt.ToolbarItems.ExpandAll,
- ej.Gantt.ToolbarItems.CollapseAll,
- ej.Gantt.ToolbarItems.Search],
- }
+ toolbarItems:[
+        ej.Gantt.ToolbarItems.Add,
+        ej.Gantt.ToolbarItems.Edit,
+        ej.Gantt.ToolbarItems.Delete,
+        ej.Gantt.ToolbarItems.Update,
+        ej.Gantt.ToolbarItems.Cancel,
+        ej.Gantt.ToolbarItems.Indent,
+        ej.Gantt.ToolbarItems.Outdent,
+        ej.Gantt.ToolbarItems.ExpandAll,
+        ej.Gantt.ToolbarItems.CollapseAll,
+        ej.Gantt.ToolbarItems.Search
+        ],
+    }
 
 
 {% endhighlight %}
@@ -262,16 +264,16 @@ Modify the predecessor details of a task using mouse interactions by setting **a
 
 {% highlight js %}
 
-$("#GanttContainer").ejGantt({              
-//...
-allowGanttChartEditing:true, //enable the taskbar editing 
-predecessorMapping:"predecessor" ,// Predecessor editing 
-editSettings: {
-allowEditing: true,  
-allowAdding: true,
-allowDeleting: true,      
-editMode: "normal",
-},
+$("#GanttContainer").ejGantt({
+    //...
+    allowGanttChartEditing:true, //enable the taskbar editing 
+    predecessorMapping:"predecessor" ,// Predecessor editing 
+    editSettings: {
+        allowEditing: true,
+        allowAdding: true,
+        allowDeleting: true,
+        editMode: "normal",
+    },
 });
 
 
@@ -292,7 +294,7 @@ You can enable the context menu in **ejGantt,** by setting the **enableContextMe
 {% highlight js %}
 
 $("#GanttContainer").ejGantt({   
-    //…   
+    //...
     enableContextMenu:true
 });
 
@@ -322,7 +324,7 @@ You can show the relationship in tasks, by using the **predecessorsMapping,** as
 {% highlight js %}
 
 $("# GanttContainer ").ejGantt({                
-   //…
+   //...
    predecessorMapping: "predecessor"
 });
 
@@ -339,12 +341,12 @@ The following screenshot displays the relationship between tasks.
 
 In **ejGantt** control, you can display and assign the resource for each task. Create a collection of **JSON** object, which contains id and name of the resource and assign it to **resourceCollection** option. Then, specify the field name for id and name of the resource in the resource collection to **resourceIdMapping** and **resourceNameMapping** options. The name of the field, which contains the actual resources assigned for a particular task in the **dataSource** is specified using **resourceInfoMapping.**
 
-1. Create the resource collection to be displayed in ejGantt
+1.Create the resource collection to be displayed in ejGantt
 
 {% highlight js %}
 
 <script type="text/javascript">
- //..
+//...
 //resourceInfo declaration for Gantt  Control
 var projectResources = [
     { resourceId: 1, resourceName: "Project Manager" },
@@ -359,12 +361,12 @@ var projectResources = [
 
 
 
-2. Initialize the ejGantt with resources created in last step. 
+2.Initialize the ejGantt with resources created in last step. 
 
 {% highlight js %}
 
 $("# GanttContainer ").ejGantt({
-    //…
+    //...
     resourceInfoMapping: "resourceId", //Field name which contains resource details for the task 
     resourceNameMapping: "resourceName",//resource Name mapping
     resourceIdMapping: "resourceId",//resource Id Mapping

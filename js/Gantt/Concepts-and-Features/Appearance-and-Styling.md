@@ -45,8 +45,9 @@ You can customize the **Taskbar** based on the task information in Gantt control
 
 $("#GanttContainer").ejGantt({
         //...
-        queryTaskbarInfo: function (args) {//QUQERYTASKBARINFO EVENT IT WILL FIRE WHILE TASK RENDERING
-
+        queryTaskbarInfo: function (args) {
+        //queryTaskbarInfo will be triggered when a taskbar is rendered
+        
             if (args.data.level === 0) {
                 args.parentTaskbarBackground = "pink";
                 args.parentProgressbarBackground = "cyan";
@@ -74,31 +75,33 @@ The following screenshot shows the customized taskbar in **Gantt** control.
 
 ## Themes
 
- You are provided the following twelve different themes in **Gantt** control.
+ The following are the types of themes available in **Gantt** control.
 
-1. Flat Azure                           
+1.Flat Azure                           
 
-2. Flat Azure Dark                  
+2.Flat Azure Dark                  
 
-3. Flat Lime                             
+3.Flat Lime                             
 
-4. Flat Lime Dark                   
+4.Flat Lime Dark                   
 
-5. Flat Saffron                        
+5.Flat Saffron                        
 
-6. Flat Saffron Dark
+6.Flat Saffron Dark
 
-7. Gradient Azure
+7.Gradient Azure
 
-8. Gradient Azure Dark
+8.Gradient Azure Dark
 
-9. Gradient Lime
+9.Gradient Lime
 
-10. Gradient Lime Dark
+10.Gradient Lime Dark
 
-11. Gradient Saffron
+11.Gradient Saffron
 
-12. Gradient Saffron Dark
+12.Gradient Saffron Dark
+
+13.Bootstrap
 
 You can apply the theme (Gradient lime) to the **Gantt** control by using the style sheet from the online link as follows.
 
@@ -111,8 +114,7 @@ You can apply the theme (Gradient lime) to the **Gantt** control by using the st
 <title>Getting Started with Gantt Control for JavaScript</title>
 <!-- style sheet for default theme(gradient lime) -->
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> 
-//…
-
+//...
 </html>
 
 
