@@ -91,9 +91,9 @@ Where,
 
 **Remarks:**
 
-#N/A-occurs when data types are not valid.
+'#N/A'-occurs when data types are not valid.
 
-#VALUE!-occurs when num falls outside the allowable range, when number is zero.
+'#VALUE!'-occurs when num falls outside the allowable range, when number is zero.
 
 #### UNICODE
 
@@ -109,7 +109,7 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when data type is not valid.
+'#VALUE!'-occurs when data type is not valid.
 
 #### Upper
 
@@ -271,7 +271,7 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when text1 does not appear in text2 and when num is not greater than zero.
+'#VALUE!'-occurs when text1 does not appear in text2 and when num is not greater than zero.
 
 #### T
 
@@ -319,7 +319,7 @@ where,
 
 **Remark:**
 
-#VALUE!-occurs when find Text is not found.
+'#VALUE!'-occurs when find Text is not found.
 
 #### Substitute
 
@@ -379,7 +379,7 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when any of the argument is not valid.
+'#VALUE!'-occurs when any of the argument is not valid.
 
 #### Dollar
 
@@ -451,9 +451,9 @@ where,
 
 **Remarks:**
 
-#NUM!-occurs when number is not a valid binary number, when places is negative.
+'#NUM!'-occurs when number is not a valid binary number, when places is negative.
 
-#VALUE!-occurs when places is non-numeric.
+'#VALUE!'-occurs when places is non-numeric.
 
 #### BIN2DEC
 
@@ -469,7 +469,7 @@ Where,
 
 **Remark:**
 
-#NUM!-occurs when number is not a valid binary number or when number contains more than 10 characters.
+'#NUM!'-occurs when number is not a valid binary number or when number contains more than 10 characters.
 
 #### DEC2BIN
 
@@ -489,9 +489,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when number &lt; -512 or if number &gt; 511 and when places is zero or negative.
+'#NUM!'-occurs when number &lt; -512 or if number &gt; 511 and when places is zero or negative.
 
-#VALUE!-occurs when number  or places is non-numeric and when DEC2BIN requires more than the number of characters specified in places.
+'#VALUE!'-occurs when number  or places is non-numeric and when DEC2BIN requires more than the number of characters specified in places.
 
 #### DEC2OCT
 
@@ -511,9 +511,9 @@ where,
 
 **Remarks:**
 
-#NUM!-occurs when number &lt; -512 or if number &gt; 511 and when places is zero or negative.
+'#NUM!'-occurs when number &lt; -512 or if number &gt; 511 and when places is zero or negative.
 
-#VALUE!-occurs when the number or places is non-numeric and when DEC2OCT requires more than the number of characters specified in places.
+'#VALUE!'-occurs when the number or places is non-numeric and when DEC2OCT requires more than the number of characters specified in places.
 
 #### HEX2BIN
 
@@ -533,9 +533,9 @@ where,
 
 **Remarks:**
 
-#NUM!-occurs when number is not a valid binary number and when places is negative.
+'#NUM!'-occurs when number is not a valid binary number and when places is negative.
 
-#VALUE!-occurs when places is non-numeric.
+'#VALUE!'-occurs when places is non-numeric.
 
 #### HEX2OCT
 
@@ -555,9 +555,9 @@ where:
 
 **Remarks:**
 
-#NUM!-occurs when number is not a valid hexadecimal number and when places is negative.
+'#NUM!'-occurs when number is not a valid hexadecimal number and when places is negative.
 
-#VALUE!-occurs when places is non-numeric.
+'#VALUE!'-occurs when places is non-numeric.
 
 ### Date and Time formulas
 
@@ -655,9 +655,9 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when the supplied startDate is not a valid date.
+'#VALUE!'-occurs when the supplied startDate is not a valid date.
 
-#VALUE!-occurs when the supplied Months argument is non-numeric.
+'#VALUE!'-occurs when the supplied Months argument is non-numeric.
 
 #### EOMonth
 
@@ -677,11 +677,11 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when any of the supplied argument is not a numeric value. 
+'#VALUE!'-occurs when any of the supplied argument is not a numeric value. 
 
-#NUM!-occurs when the supplied startDate is not a valid date.
+'#NUM!'-occurs when the supplied startDate is not a valid date.
 
-#NUM!-occurs when the supplied startDate plus the value of the months argument is not a valid date.
+'#NUM!'-occurs when the supplied startDate plus the value of the months argument is not a valid date.
 
 #### Hour
 
@@ -711,7 +711,7 @@ Where,
 
 Time values are a portion of a date value represented by a decimal number (for example, 12:00 PM is represented as 0.5).
 
-### Month
+#### Month
 
 Returns the month of a date represented by a serial number. The **Month** is given as an integer ranging from 1 (January) to 12 (December).
 
@@ -775,7 +775,7 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when the supplied startDate and endDate are not valid dates. 
+'#VALUE!'-occurs when the supplied startDate and endDate are not valid dates. 
 
 #### Time
 
@@ -837,17 +837,24 @@ _Weekday(serial_number,return_type)_
 
 * return_type is a number that determines the type of return value.
 
-* When **return_type is**:              **Number returned**:
-
-1 or omitted                 	 Numbers 1 (Sunday) through 7 (Saturday).
-
-      	2                                 	 Numbers 1 (Monday) through 7 (Sunday).
-
-        	3                                  	 Numbers 0 (Monday) through 6 (Sunday).
-
-
-
-
+<table>
+<tr>
+<td>
+<b>Return type  </b></td><td>
+<b>Number returned</b></td></tr>
+<tr>
+<td>
+1 or omitted       </td><td>
+Numbers 1 (Sunday) through 7 (Saturday).</td></tr>
+<tr>
+<td>
+2</td><td>
+Numbers 1 (Monday) through 7 (Sunday).</td></tr>
+<tr>
+<td>
+3</td><td>
+Numbers 0 (Monday) through 6 (Sunday).</td></tr>
+</table>
 
 **Remark:**
 
@@ -875,11 +882,11 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when the supplied serialNum cannot be recognized as a numeric value or a date. 
+'#VALUE!'-occurs when the supplied serialNum cannot be recognized as a numeric value or a date. 
 
-#NUM!-occurs when the supplied [returnType] argument is not one of the above listed permitted values. 
+'#NUM!'-occurs when the supplied [returnType] argument is not one of the above listed permitted values. 
 
-#NUM!-occurs when the supplied serialNum argument is numeric, but is out of range for the current date base. 
+'#NUM!'-occurs when the supplied serialNum argument is numeric, but is out of range for the current date base. 
 
 #### Workday.intl
 
@@ -903,13 +910,13 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when the supplied startDate plus the supplied days argument results in an invalid date.
+'#NUM!'-occurs when the supplied startDate plus the supplied days argument results in an invalid date.
 
-#NUM!-occurs when the supplied [weekend] argument is invalid (see above explanation of this argument).
+'#NUM!'-occurs when the supplied [weekend] argument is invalid (see above explanation of this argument).
 
-#VALUE!-occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates.
+'#VALUE!'-occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates.
 
-#VALUE!-occurs when the supplied days argument is non-numeric.
+'#VALUE!'-occurs when the supplied days argument is non-numeric.
 
 #### Workday
 
@@ -931,9 +938,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when the supplied startDate plus the supplied days argument results in an invalid date. 
+'#NUM!'-occurs when the supplied startDate plus the supplied days argument results in an invalid date. 
 
-#VALUE!-occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates, when the supplied days argument is non-numeric.
+'#VALUE!'-occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates, when the supplied days argument is non-numeric.
 
 #### ISOWeekNum
 
@@ -949,9 +956,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when the date argument is not a valid number.
+'#NUM!'-occurs when the date argument is not a valid number.
 
-#VALUE!-occurs when the date argument is not a valid date type.
+'#VALUE!'-occurs when the date argument is not a valid date type.
 
 #### Days
 
@@ -1163,9 +1170,9 @@ where,
 
 **Remarks:**
 
-#REF!-occurs when value argument is not a valid value.
+'#REF!'-occurs when value argument is not a valid value.
 
-#NA-occurs when value argument is a sheet name that is not valid.
+'#NA'-occurs when value argument is a sheet name that is not valid.
 
 #### Sheets
 
@@ -1181,9 +1188,9 @@ Where,
 
 **Remarks:**
 
-#REF!-occurs when reference is not a valid value.
+'#REF!'-occurs when reference is not a valid value.
 
-### Transpose
+#### Transpose
 
 The **Transpose** function copies a horizontal range of cells into a vertical range and vice versa.
 
@@ -1195,7 +1202,7 @@ Where,
 
 * array argument is a range of spreadsheet cells. 
 
-### FormulaText
+#### FormulaText
 
 **FormulaText** function returns the formula as a string.
 
@@ -1209,17 +1216,17 @@ Where,
 
 **Remarks:**
 
-#N/A-occurs when the reference argument is to another workbook that is not open.
+'#N/A'-occurs when the reference argument is to another workbook that is not open.
 
-#N/A-occurs when the reference argument is to a range containing more than one cell.
+'#N/A'-occurs when the reference argument is to a range containing more than one cell.
 
-#N/A-occurs when the cell used as the reference argument does not contain a formula.
+'#N/A'-occurs when the cell used as the reference argument does not contain a formula.
 
-#N/A-occurs when the formula in the cell is longer than 8192 characters.
+'#N/A'-occurs when the formula in the cell is longer than 8192 characters.
 
-#N/A-occurs when the formula cannot be displayed in the worksheet.
+'#N/A'-occurs when the formula cannot be displayed in the worksheet.
 
-#N/A-occurs when an external workbook that contains the formula is not open.
+'#N/A'-occurs when an external workbook that contains the formula is not open.
 
 ### Statistical formulas
 
@@ -1241,9 +1248,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when k is equal to or less than zero, when k is equal to or greater than 1, and when the array is empty.
+'#NUM!'-occurs when k is equal to or less than zero, when k is equal to or greater than 1, and when the array is empty.
 
-#VALUE!-occurs when k is non-numeric.
+'#VALUE!'-occurs when k is non-numeric.
 
 #### Percentile.Inc
 
@@ -1263,9 +1270,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when k is equal to or less than zero, when k is equal to or greater than 1, and when the array is empty.
+'#NUM!'-occurs when k is equal to or less than zero, when k is equal to or greater than 1, and when the array is empty.
 
-#VALUE!-occurs when k is a non-numeric.
+'#VALUE!'-occurs when k is a non-numeric.
 
 #### Percentrank.Exc
 
@@ -1285,9 +1292,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when this argument is empty.
+'#NUM!'-occurs when this argument is empty.
 
-#NUM!-occurs when the argument is less than one.
+'#NUM!'-occurs when the argument is less than one.
 
 #### STDEV.P
 
@@ -1355,9 +1362,9 @@ Where,
 
  **Remarks:**
 
-#VALUE!-occurs when numeric arguments use data types that are non-numeric.
+'#VALUE!'-occurs when numeric arguments use data types that are non-numeric.
 
-#NUM!-occurs when numeric arguments are values that are not valid.
+'#NUM!'-occurs when numeric arguments are values that are not valid.
 
 #### Norm.S.Dist
 
@@ -1407,9 +1414,9 @@ Where,
 
  **Remarks:**
 
-#NUM!-occurs when x is lesser than zero and when alpha or beta is equal to or less than zero.
+'#NUM!'-occurs when x is lesser than zero and when alpha or beta is equal to or less than zero.
 
-#VALUE!-occurs when beta is non-numeric.
+'#VALUE!'-occurs when beta is non-numeric.
 
 #### Expon.Dist
 
@@ -1431,9 +1438,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when x is less than zero and if y is equal to or less than zero. 
+'#NUM!'-occurs when x is less than zero and if y is equal to or less than zero. 
 
-#VALUE!-occurs when x or y is non-numeric.
+'#VALUE!'-occurs when x or y is non-numeric.
 
 #### Gamma.Inv
 
@@ -1457,9 +1464,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when x is lesser than zero, when z is equal to or lesser than zero and occurs when alpha is equal to or less than zero. 
+'#NUM!'-occurs when x is lesser than zero, when z is equal to or lesser than zero and occurs when alpha is equal to or less than zero. 
 
-#VALUE!-occurs when x or y or z is non-numeric.
+'#VALUE!'-occurs when x or y or z is non-numeric.
 
 #### Gammaln.Precise
 
@@ -1476,9 +1483,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when x is less than zero.
+'#NUM!'-occurs when x is less than zero.
 
-#VALUE!-occurs when x is non-numeric.
+'#VALUE!'-occurs when x is non-numeric.
 
 #### F.INV.RT
 
@@ -1500,9 +1507,9 @@ Where,
 
 **Remarks:**
 
-#NUM! - occurs when probability is equal to or less than zero and when probability is equal to or greater than one.
+'#NUM!' - occurs when probability is equal to or less than zero and when probability is equal to or greater than one.
 
-#VALUE! - occurs when probability or degFreedom1 or degFreedom2 is non-numeric.
+'#VALUE!' - occurs when probability or degFreedom1 or degFreedom2 is non-numeric.
 
 #### Lognorm.Dist
 
@@ -1526,9 +1533,9 @@ where,
 
 **Remarks:**
 
-#VALUE!-occurs when any argument is non-numeric.
+'#VALUE!'-occurs when any argument is non-numeric.
 
-#NUM!-occurs when x ≤ 0 or if stdev ≤ 0.
+'#NUM!'-occurs when x ≤ 0 or if stdev ≤ 0.
 
 #### Lognorm.Inv
 
@@ -1550,9 +1557,9 @@ where,
 
 **Remarks:**
 
-#VALUE!-occurs when any argument is non-numeric.
+'#VALUE!'-occurs when any argument is non-numeric.
 
-#NUM!-occurs when probability &lt;= 0 or probability &gt;= 1 and if Stdev<=0.
+'#NUM!'-occurs when probability &lt;= 0 or probability &gt;= 1 and if Stdev<=0.
 
 #### Confidence.Norm
 
@@ -1574,11 +1581,11 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when any argument is non-numeric.
+'#VALUE!'-occurs when any argument is non-numeric.
 
-#NUM!-occurs when alpha and stdev is lesser than or equal to zero or when alpha is greater than or equal to zero.
+'#NUM!'-occurs when alpha and stdev is lesser than or equal to zero or when alpha is greater than or equal to zero.
 
-#DIV/0!-occurs when the size is equal to one.
+'#DIV/0!'-occurs when the size is equal to one.
 
 #### CHISQ.DIST.RT
 
@@ -1598,11 +1605,11 @@ where,
 
 **Remarks:**
 
-#VALUE!-occurs when either argument is non-numeric.
+'#VALUE!'-occurs when either argument is non-numeric.
 
-#VALUE!-occurs when any argument is non-numeric.
+'#VALUE!'-occurs when any argument is non-numeric.
 
-#NUM!-occurs when f degFreedom &lt; 1 or degFreedom &gt; 10^10.
+'#NUM!'-occurs when f degFreedom &lt; 1 or degFreedom &gt; 10^10.
 
 #### F.Dist 
 
@@ -1626,9 +1633,9 @@ where,
 
 **Remarks:**
 
-#VALUE!-occurs when any argument is non-numeric.
+'#VALUE!'-occurs when any argument is non-numeric.
 
-#NUM!-occurs when x is negative, when degFreedom1< 1 and when degFreedom1< 1
+'#NUM!'-occurs when x is negative, when degFreedom1< 1 and when degFreedom1< 1
 
 #### F.Dist.Rt
 
@@ -1650,9 +1657,9 @@ where,
 
 **Remarks:**
 
-#VALUE!-occurs when any argument is non-numeric.
+'#VALUE!'-occurs when any argument is non-numeric.
 
-#NUM!-occurs when x is negative, when degFreedom1< 1 and  when degFreedom2< 1.
+'#NUM!'-occurs when x is negative, when degFreedom1< 1 and  when degFreedom2< 1.
 
 ####  Chisq.Inv
 
@@ -1672,9 +1679,9 @@ where,
 
 **Remarks:**
 
-#NUM!-occurs when probability is lesser than zero, when probability is greater than 1, and degFreedom is lesser than 1.
+'#NUM!'-occurs when probability is lesser than zero, when probability is greater than 1, and degFreedom is lesser than 1.
 
-#VALUE!-occurs when probability or degFreedom is non-numeric.
+'#VALUE!'-occurs when probability or degFreedom is non-numeric.
 
 #### CHISQ.INV.RT
 
@@ -1694,9 +1701,9 @@ where,
 
 **Remarks:**
 
-#NUM!-occurs when probability is lesser than zero, when probability is greater than 1, and when degFreedom is lesser than 1.
+'#NUM!'-occurs when probability is lesser than zero, when probability is greater than 1, and when degFreedom is lesser than 1.
 
-#VALUE!-occurs when probability or degFreedom is non-numeric. 
+'#VALUE!'-occurs when probability or degFreedom is non-numeric. 
 
 #### Binom.Dist
 
@@ -1720,9 +1727,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when trial number is lesser than zero, when sp and value are lesser than zero or greater than one.
+'#NUM!'-occurs when trial number is lesser than zero, when sp and value are lesser than zero or greater than one.
 
-#VALUE!-occurs when trials, sp, and value are non-numeric.
+'#VALUE!'-occurs when trials, sp, and value are non-numeric.
 
 #### Negbinom.Dist
 
@@ -1764,11 +1771,11 @@ where,
 
 **Remarks:**
 
-#VALUE!-occurs when x is not an integer.
+'#VALUE!'-occurs when x is not an integer.
 
-#NUM!-occurs when x or mean is non-numeric and s when x < 0.
+'#NUM!'-occurs when x or mean is non-numeric and s when x < 0.
 
-### ZTest
+#### ZTest
 
 **ZTest** function returns the one-tailed probability value of a z-test.
 
@@ -1786,7 +1793,7 @@ where,
 
 
 
-### Rank.Eq
+#### Rank.Eq
 
 The **Rank.Eq** function returns the statistical rank of a given value within a supplied array of values.
 
@@ -1818,9 +1825,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when the number is outside of its constraints.
+'#NUM!'-occurs when the number is outside of its constraints.
 
-#VALUE!-occurs when number is a non-numeric value.
+'#VALUE!'-occurs when number is a non-numeric value.
 
 #### Abs
 
@@ -1930,9 +1937,9 @@ The number must be greater than or equal to half the value of multiple.
 
 **Remarks:**
 
-#NUM!-Occurs when the number and multiple have different signs.
+'#NUM!'-Occurs when the number and multiple have different signs.
 
-#VALUE!-Occurs when any of the given argument is non-numeric.
+'#VALUE!'-Occurs when any of the given argument is non-numeric.
 
 #### RandBetween
 
@@ -1950,9 +1957,9 @@ _= RandBetween  (start_num, end_num)_
 
 **Remarks:**
 
-#NUM!-Occurs when the end_num value is larger than start_num value.
+'#NUM!'-Occurs when the end_num value is larger than start_num value.
 
-#VALUE!-Occurs when any of the given arguments is non-numeric. 
+'#VALUE!'-Occurs when any of the given arguments is non-numeric. 
 
 #### SQRTPI
 
@@ -1968,9 +1975,9 @@ Where**,**
 
 **Remarks:**
 
-#NUM!-When the number is less than zero (0).
+'#NUM!'-When the number is less than zero (0).
 
-#VALUE!-Occurs when any of the given argument is non-numeric. 
+'#VALUE!'-Occurs when any of the given argument is non-numeric. 
 
 #### Quotient
 
@@ -1988,7 +1995,7 @@ _=Quotient (numerator, denominator)_
 
 **Remarks:**
 
-#VALUE!-Occurs when any of the given argument is non-numeric. 
+'#VALUE!'-Occurs when any of the given argument is non-numeric. 
 
 #### FactDouble
 
@@ -2004,9 +2011,9 @@ Where**,**
 
 **Remarks:**
 
-#NUM!-when the number is lesser than zero (0).
+'#NUM!'-when the number is lesser than zero (0).
 
-#VALUE!-Occurs when any of the given argument is non-numeric
+'#VALUE!'-Occurs when any of the given argument is non-numeric
 
 #### GCD
 
@@ -2022,9 +2029,9 @@ When any value is not an integer, then it is rounded down. 
 
 **Remarks:**
 
-#NUM! -When the number is lesser than zero (0). 
+'#NUM!' -When the number is lesser than zero (0). 
 
-#VALUE! -Occurs when any of the given argument is non-numeric.
+'#VALUE!' -Occurs when any of the given argument is non-numeric.
 
 #### LCM
 
@@ -2042,9 +2049,9 @@ When any value is not an integer, then it is rounded down. 
 
 **Remarks:**
 
-#NUM! -When the number is lesser than zero (0).
+'#NUM!' -When the number is lesser than zero (0).
 
-#VALUE!-Occurs when any of the given argument is non-numeric. 
+'#VALUE!'-Occurs when any of the given argument is non-numeric. 
 
 #### Roman
 
@@ -2057,8 +2064,6 @@ _=ROMAN( number, (form) )_
 * number-This value is required.
 
 * form-Optional. This value specifies the style of the Roman numeral.
-
-
 
 When the number is not an integer, then it is rounded down.
 
@@ -2090,9 +2095,10 @@ More concise. See example as follows.</td></tr>
 4</td><td>
 Simplified.</td></tr>
 </table>
+
  **Remark:**
 
-#VALUE! -Occurs when any of the given value is non-numeric or for values lesser than 0 and greater than 3999. 
+'#VALUE!' -Occurs when any of the given value is non-numeric or for values lesser than 0 and greater than 3999. 
 
 #### T
 
@@ -2178,9 +2184,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when the number is out of range.
+'#NUM!'-occurs when the number is out of range.
 
-#VALUE!-occurs when the number is a non-numeric value.
+'#VALUE!'-occurs when the number is a non-numeric value.
 
 #### CSC
 
@@ -2196,9 +2202,9 @@ where:
 
  **Remarks:**
 
-#NUM!-occurs when the number is outside its constraints.
+'#NUM!'-occurs when the number is outside its constraints.
 
-#VALUE!-occurs when the number is a non-numeric value.
+'#VALUE!'-occurs when the number is a non-numeric value.
 
 #### CSCH
 
@@ -2214,9 +2220,9 @@ Where:
 
  **Remarks:**
 
-#NUM!-occurs when the number is outside of its constraints.
+'#NUM!'-occurs when the number is outside of its constraints.
 
-#VALUE!-occurs when the number is a non-numeric value.
+'#VALUE!'-occurs when the number is a non-numeric value.
 
 #### ACOT
 
@@ -2234,7 +2240,7 @@ Where,
 
  **Remark:**
 
-#VALUE!-occurs when the number is a non-numeric value.
+'#VALUE!'-occurs when the number is a non-numeric value.
 
 The returned angle when given in radians in the range of 0 (zero) to pi.
 
@@ -2252,9 +2258,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when number is less than one.
+'#NUM!'-occurs when number is less than one.
 
-#VALUE!-occurs when absolute value of number is less than one.
+'#VALUE!'-occurs when absolute value of number is less than one.
 
 #### Trunc
 
@@ -2290,9 +2296,9 @@ Where,
 
 **Remarks:**
 
-#NUM!-occurs when either value is out of range.
+'#NUM!'-occurs when either value is out of range.
 
-#VALUE!-occurs when either value is non-numeric.
+'#VALUE!'-occurs when either value is non-numeric.
 
 #### Arabic
 
@@ -2308,9 +2314,9 @@ Where,
 
 **Remarks:**
 
-#VALUE!-occurs when text is not a valid value.
+'#VALUE!'-occurs when text is not a valid value.
 
-#VALUE!-occurs when text is not a valid Roman numeral.
+'#VALUE!'-occurs when text is not a valid Roman numeral.
 
 Value zero occurs when an empty string is given as an input.
 
@@ -2350,7 +2356,7 @@ Where,
 
 **Remarks:**
 
-#NUM! or #VALUE!-occurs when text or radix is outside the constraints.
+'#NUM!' or '#VALUE!'-occurs when text or radix is outside the constraints.
 
 #### ISeven
 
@@ -2408,7 +2414,7 @@ Where,
 
 * number is any real number.
 
-### Logic Function
+### Logical functions
 
 #### And
 
@@ -2624,6 +2630,7 @@ _Return Value of Function_
 Anything else</td><td>
 #N/A</td></tr>
 </table>
+
 #### IsBlank
 
 The **IsBlank** function checks for blank or null values.
@@ -2756,7 +2763,7 @@ Where,
 
 **Remark:**
 
-#VALUE!-occurs when reference is not a valid data type.
+'#VALUE!'-occurs when reference is not a valid data type.
 
 #### IsOdd
 

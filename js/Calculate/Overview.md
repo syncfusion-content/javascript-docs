@@ -19,7 +19,7 @@ The key features of the **Calculate** engine are,
 
 * You can easily set up applications that have calculation dependencies among various controls.
 
-* Calculate arises with a function library of more than 200 formulas and supports cross sheet references.
+* Calculate arises with a function library of more than 150 formulas and supports cross sheet references.
 
 * It is not dependent on Microsoft Excel and thus enables you to perform calculations independent of Excel.
 
