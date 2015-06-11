@@ -198,17 +198,19 @@ Gantt control contains toolbar options to edit, search, expand or collapse all r
 
 toolbarSettings: {
  showToolbar:true,
- toolbarItems:[ej.Gantt.ToolbarItems.Add,
- ej.Gantt.ToolbarItems.Edit,
- ej.Gantt.ToolbarItems.Delete,
- ej.Gantt.ToolbarItems.Update,
- ej.Gantt.ToolbarItems.Cancel,
- ej.Gantt.ToolbarItems.Indent,
- ej.Gantt.ToolbarItems.Outdent,
- ej.Gantt.ToolbarItems.ExpandAll,
- ej.Gantt.ToolbarItems.CollapseAll,
- ej.Gantt.ToolbarItems.Search],
- }
+ toolbarItems:[
+        ej.Gantt.ToolbarItems.Add,
+        ej.Gantt.ToolbarItems.Edit,
+        ej.Gantt.ToolbarItems.Delete,
+        ej.Gantt.ToolbarItems.Update,
+        ej.Gantt.ToolbarItems.Cancel,
+        ej.Gantt.ToolbarItems.Indent,
+        ej.Gantt.ToolbarItems.Outdent,
+        ej.Gantt.ToolbarItems.ExpandAll,
+        ej.Gantt.ToolbarItems.CollapseAll,
+        ej.Gantt.ToolbarItems.Search
+        ],
+    }
 
 
 {% endhighlight %}
@@ -262,14 +264,14 @@ Modify the predecessor details of a task using mouse interactions by setting **a
 
 {% highlight js %}
 
-$("#GanttContainer").ejGantt({              
+$("#GanttContainer").ejGantt({
 //...
 allowGanttChartEditing:true, //enable the taskbar editing 
 predecessorMapping:"predecessor" ,// Predecessor editing 
 editSettings: {
-allowEditing: true,  
+allowEditing: true,
 allowAdding: true,
-allowDeleting: true,      
+allowDeleting: true,
 editMode: "normal",
 },
 });
@@ -339,7 +341,7 @@ The following screenshot displays the relationship between tasks.
 
 In **ejGantt** control, you can display and assign the resource for each task. Create a collection of **JSON** object, which contains id and name of the resource and assign it to **resourceCollection** option. Then, specify the field name for id and name of the resource in the resource collection to **resourceIdMapping** and **resourceNameMapping** options. The name of the field, which contains the actual resources assigned for a particular task in the **dataSource** is specified using **resourceInfoMapping.**
 
-1. Create the resource collection to be displayed in ejGantt
+1.Create the resource collection to be displayed in ejGantt
 
 {% highlight js %}
 
@@ -359,7 +361,7 @@ var projectResources = [
 
 
 
-2. Initialize the ejGantt with resources created in last step. 
+2.Initialize the ejGantt with resources created in last step. 
 
 {% highlight js %}
 
