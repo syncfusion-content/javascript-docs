@@ -71,8 +71,6 @@ To create a new web form in the application
 
 * System.Net.Http.Formatting,
 
-* Syncfusion.Core.dll,
-
 * Syncfusion.Linq.Base.dll,
 
 * Syncfusion.EJ.ReportViewer,
@@ -97,7 +95,7 @@ To create a new web form in the application
 
 
 
-_**Note: Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting dlls from ASP.NET WebApi nuget package.**_
+>_**Note: Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting dlls from ASP.NET WebApi nuget package.**_
 
 
 
@@ -111,7 +109,7 @@ _**Note: Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebReq
 
 Add the script files and CSS files in the **&lt;title&gt;** tag of the **default.html** page.
 
-_**Note: Use the following code example while adding scripts and styles.**_
+>_**Note: Use the following code example while adding scripts and styles.**_
 
 
 
@@ -156,7 +154,7 @@ $("#viewer").ejReportViewer(
 
 
 
-_**Note: Add your report files to your application’s App_Data folder. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\XX.X.X.XX\Common\Data\ejReportTemplate). “XX.X.X.XX” is the Essential Studio Release Version.**_
+>_**Note: Add your report files to your application’s App_Data folder. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\XX.X.X.XX\Common\Data\ejReportTemplate). “XX.X.X.XX” is the Essential Studio Release Version.**_
 
 
 

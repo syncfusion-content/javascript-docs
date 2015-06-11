@@ -23,7 +23,8 @@ $("#viewer").ejReportViewer(
                 {
                     reportServiceUrl: "/api/SSRSReport",
                     processingMode: ej.ReportViewer.ProcessingMode.Remote,
-                    reportPath: "~/InvoiceTemplate",                    parameters: [{ name: 'InvoiceID', labels: ['InvoiceID'], values: [10250], nullable: false }]
+                    reportPath: "~/InvoiceTemplate", 
+                    parameters: [{ name: 'InvoiceID', labels: ['InvoiceID'], values: [10250], nullable: false }]
                 });
 
 

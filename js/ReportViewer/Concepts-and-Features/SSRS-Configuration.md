@@ -52,7 +52,7 @@ The **Network credentials** can be given at **Web****API** Controller to connect
 
 
 
-_**Note: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.**_
+>_**Note: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.**_
 
 
 
