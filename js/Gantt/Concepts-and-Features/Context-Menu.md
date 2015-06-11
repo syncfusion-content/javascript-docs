@@ -13,15 +13,15 @@ documentation: ug
 
 The default context menu contains the following options.
 
-* Task Details
+*Task Details
 
-* Add New Task
+*Add New Task
 
-* Indent
+*Indent
 
-* Outdent
+*Outdent
 
-* Delete
+*Delete
 
 The following code example shows you how to enable the default context menu in **Gantt** control.
 

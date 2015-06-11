@@ -11,7 +11,7 @@ documentation: ug
 
 The **TreeGrid** rows displays the information of each row from the bounded data source.
 
-## Row Template
+### Row Template
 
 Row template is used to customize the **TreeGrid** rows based on requirements. In **ejTreeGrid**, **rowTemplateID** and **altRowTemplateID** properties are used for customizing the row.
 
@@ -37,7 +37,7 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
 
 <script id="rowTemplateScript" type="text/x-jsrender">
 
- <tr style="background-color:#F2F2F2;color:#000000;">
+<tr style="background-color:#F2F2F2;color:#000000;">
 
    <td class="border" style='height:30px;'>
       <div>**{{:**#data['EmployeeID']**}}**</div>
@@ -45,8 +45,8 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
 
    <td class="border" style='height:30px;'>
       <div style="font-size:14px;">
-**{{:**#data['Name']**}}**
-         <p style="font-size:9px;">**{{:**#data['Designation']**}}**</p>
+      {{:#data['Name']}}
+      <p style="font-size:9px;">{{:#data['Designation']}}</p>
       </div>
    </td>
 
@@ -55,54 +55,51 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
       <div style="display:inline-flex !important;">
       <img src="../images/treegrid/**{{:**#data['Full Name']**}}**.png" /></div>
       <div style="display:inline-block;padding-left:10px;">
-**{{:**#data['Address']**}}**
-         <p>**{{:**#data['Country']**}}**</p>
-         <p style="font-size:12px;">**{{:**#data['Contact']**}}**</p>
+      {{:#data['Address']}}
+      <p>{{:#data['Country']}}</p>
+      <p style="font-size:12px;">{{:#data['Contact']}}</p>
       </div>
       </div>
    </td>
 
    <td class="border" style='height:30px;'>
-      <div>**{{:**#data['DOB']**}}**</div>
+   <div>{{:#data['DOB']}}</div>
    </td>
-
- </tr>
-
+   
+</tr>
 </script>
 
 <script id="altRowTemplateScript" type="text/x-jsrender">
 
-  <tr style="background-color:#E6E6E6;color:#000000;">
+<tr style="background-color:#E6E6E6;color:#000000;">
 
     <td class="border" style='height:30px;'>
-     <div>**{{:**#data['EmployeeID']**}}**</div>
-   </td>
+    <div>{{:#data['EmployeeID']}}</div>
+    </td>
 
-   <td class="border" style='height:30px;'> 
-     <div style="font-size:14px;">
-**{{:**#data['Name']**}}**
-        <p style="font-size:9px;">**{{:**#data['Designation']**}}**</p>
-     </div>
+   <td class="border" style='height:30px;'>
+   <div style="font-size:14px;">{{:#data['Name']}}
+   <p style="font-size:9px;">{{:#data['Designation']}}</p>
+   </div>
    </td>
 
    <td class="border">
-     <div style="padding-top:5px;">
-     <div style="display:inline-flex !important;">
-     <img src="../images/treegrid/**{{:**#data['Full Name']**}}**.png" /></div>
-     <div style="display:inline-block;padding-left:10px;">
-**{{:**#data['Address']**}}**
-        <p>**{{:**#data['Country']**}}**</p>
-        <p style="font-size:12px;">**{{:**#data['Contact']**}}**</p>
-     </div>
-     </div>
+   <div style="padding-top:5px;">
+   <div style="display:inline-flex !important;">
+   <img src="../images/treegrid/**{{:#data['Full Name']}}.png" /></div>
+   <div style="display:inline-block;padding-left:10px;">
+   {{:#data['Address']}}
+   <p>{{:#data['Country']}}</p>
+   <p style="font-size:12px;">{{:#data['Contact']}}</p>
+   </div>
+   </div>
    </td>     
 
    <td class="border" style='height:30px;'>
-     <div>**{{:**#data['DOB']**}}**</div>
+   <div>{{:#data['DOB']}}</div>
    </td>
-
- </tr>
-
+   
+</tr>
 </script>
 
 <script type="text/javascript">
@@ -162,7 +159,7 @@ The output of **TreeGrid** with **Row Template** is as follows.
 
 {% include image.html url="/js/TreeGrid/Concepts-and-Features/Rows_images/Rows_img1.png" Caption="TreeGrid with Row Template"%}
 
-## Row Drag and Drop
+### Row Drag and Drop
 
 It is possible to dynamically re-arrange the rows in the **TreeGrid** control by using the **allowDragAndDrop** property. With this property, **row drag** can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the **TreeGrid** row and this tooltip can be customized by the **dragTooltip** property**. T**his property****has inner properties such as **showTooltip**, **tooltipItems** and **tooltipTemplate**.
 
@@ -199,7 +196,7 @@ The following screenshot depicts a **row drag and drop** in the **TreeGrid.**
 
 {% include image.html url="/js/TreeGrid/Concepts-and-Features/Rows_images/Rows_img2.png" Caption="Row drag and drop in TreeGrid"%}
 
-**Customizing Drag tooltip**
+#### Customizing Drag tooltip
 
 The **tooltipItems** property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is **null,** and all the defined field items are rendered in the tooltip.
 
@@ -238,18 +235,18 @@ The following code shows how to render **row drag tooltip** with tooltip templat
 {% highlight js %}
 
 
-       <script id="customTooltip" type="text/x-jsrender">
+<script id="customTooltip" type="text/x-jsrender">
+<tr>
+   <td class="border" style='height:30px;'>
+   <div>{{:#data['TaskId']}}</div>
+   </td>
+   
+   <td class="border" style='height:30px;'>
+   <div>{{:#data['TaskName']}}</div>
+   </td>
+</tr>
+</script>
 
-        <tr>
-            <td class="border" style='height:30px;'>
-                <div>**{{:**#data['TaskId']**}}**</div>
-            </td>
-            <td class="border" style='height:30px;'>
-                <div>**{{:**#data['TaskName']**}}**</div>
-            </td>        
-
-        </tr>
-    </script>
        $("#treegrid1").ejTreeGrid(
         {   
            //...     

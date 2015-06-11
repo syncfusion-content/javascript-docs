@@ -54,26 +54,24 @@ The following are **3D** series types:
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                 depth: 100,
-                 wallSize: 2,
-                 tilt: 0,
-                 rotation: 34,
-                 perspectiveAngle: 90,                          
-                 enableRotation: true,
-                 enable3D: true,              
-      // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            depth: 100,
+            wallSize: 2,
+            tilt: 0,
+            rotation: 34,
+            perspectiveAngle: 90,
+            enableRotation: true,
+            enable3D: true,
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/3D-Chart_images/3D-Chart_img1.png" Caption="3D Column Chart"%}
+{% include image.html url="3dchart_images\3dchart_img1.png" Caption="3D Column Chart"%}
 
 ### 3D Bar Chart
 
@@ -82,27 +80,25 @@ $("#chartcontainer").ejChart(
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               { 
-               commonSeriesOptions:{type:"bar"},
-                   // ...             
-                 depth: 100,
-                 wallSize: 2,
-                 tilt: 0,
-                 rotation: 34,
-                 perspectiveAngle: 90,                          
-                 enableRotation: true,
-                 enable3D: true,              
-      // ...             
-               });
+        $("#chartcontainer").ejChart({
+            commonSeriesOptions: { type: "bar" },
+            // ...             
+            depth: 100,
+            wallSize: 2,
+            tilt: 0,
+            rotation: 34,
+            perspectiveAngle: 90,
+            enableRotation: true,
+            enable3D: true,
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/3D-Chart_images/3D-Chart_img2.png" Caption="3D Bar Chart"%}
+{% include image.html url="3dchart_images\3dchart_img2.png" Caption="3D Bar Chart"%}
 
 ### 3D Stacking Column Chart
 
@@ -111,39 +107,39 @@ $("#chartcontainer").ejChart(
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...   
-      series: [{
-             points: [{ x: 2006, y: 8 }, { x: 2007, y: 5 }, { x: 2008,    
-                          y: 4 }, { x: 2009, y: 12 }, { x: 2010, y: 16 },          
-                          { x: 2011, y: 6 }, { x: 2012, y: 13 }],          
-                          name: "Google", type: 'stackingcolumn'
-                           },
-                     {
-              points: [{ x: 2006, y: 5 }, { x: 2007, y: 6 }, { x: 2008, 
-                           y: 7 }, { x: 2009, y: 10 }, { x: 2010, y: 14 }, { 
-                           x: 2011, y: 14 }, { x: 2012, y: 15 }],                 
-                            name: "Bing", type: 'stackingcolumn'
-                              }
-                       ],                                                                                                                        
-                 depth: 100,
-                 wallSize: 2,
-                 tilt: 0,
-                 rotation: 34,
-                 perspectiveAngle: 90,                          
-                 enableRotation: true,
-                 enable3D: true,              
-      // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...   
+            series: [{
+                points: [{ x: 2006, y: 8 }, { x: 2007, y: 5 },
+                    { x: 2008, y: 4 }, { x: 2009, y: 12 },
+                    { x: 2010, y: 16 }, { x: 2011, y: 6 },
+                    { x: 2012, y: 13 }],
+                name: "Google", type: 'stackingcolumn'
+            },
+            {
+                points: [{ x: 2006, y: 5 }, { x: 2007, y: 6 },
+                    { x: 2008, y: 7 }, { x: 2009, y: 10 },
+                    { x: 2010, y: 14 }, { x: 2011, y: 14 },
+                    { x: 2012, y: 15 }],
+                name: "Bing", type: 'stackingcolumn'
+            }
+            ],
+            depth: 100,
+            wallSize: 2,
+            tilt: 0,
+            rotation: 34,
+            perspectiveAngle: 90,
+            enableRotation: true,
+            enable3D: true,
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/3D-Chart_images/3D-Chart_img3.png" Caption="3D Stacking Column Charts Chart"%}
+{% include image.html url="3dchart_images\3dchart_img3.png" Caption="3D Stacking Column Charts Chart"%}
 
 ### 3D Stacking Bar Chart
 
@@ -152,38 +148,36 @@ $("#chartcontainer").ejChart(
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ... 
-      series: [{
-             points: [{ x: 2009, y: 2.9 }, { x: 2010, y: 3.8 }, { x: 2011,
-                       y: 4.9 }, { x: 2012, y: 6.5 }, { x: 2013, y: 7.1 },                                                  
-                       { x: 2014, y: 7.5 } ], 
-                       name:"Desktop Display", type: 'stackingbar'
-                 },
-                 {
-               points: [{ x: 2009, y: 0.1 }, { x: 2010, y: 0.5 }, { x: 2011,
-                         y: 1.4 }, { x: 2012, y: 2.9 }, { x: 2013, y: 4.9 },
-                         { x: 2014, y: 6.8 }],
-                          name:"Mobile", type: 'stackingbar'
-                     }],
-                 depth: 100,
-                 wallSize: 2,
-                 tilt: 0,
-                 rotation: 34,
-                 perspectiveAngle: 90,                          
-                 enableRotation: true,
-                 enable3D: true,              
-      // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ... 
+            series: [{
+                points: [{ x: 2009, y: 2.9 }, { x: 2010, y: 3.8 },
+                    { x: 2011, y: 4.9 }, { x: 2012, y: 6.5 },
+                    { x: 2013, y: 7.1 }, { x: 2014, y: 7.5 }],
+                name: "Desktop Display", type: 'stackingbar'
+            },
+            {
+                points: [{ x: 2009, y: 0.1 }, { x: 2010, y: 0.5 },
+                    { x: 2011, y: 1.4 }, { x: 2012, y: 2.9 },
+                    { x: 2013, y: 4.9 }, { x: 2014, y: 6.8 }],
+                name: "Mobile", type: 'stackingbar'
+            }],
+            depth: 100,
+            wallSize: 2,
+            tilt: 0,
+            rotation: 34,
+            perspectiveAngle: 90,
+            enableRotation: true,
+            enable3D: true,
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/3D-Chart_images/3D-Chart_img4.png" Caption="3D Stacking Bar"%}
+{% include image.html url="3dchart_images\3dchart_img4.png" Caption="3D Stacking Bar"%}
 
 ### 3D Pie Chart
 
@@ -192,35 +186,33 @@ $("#chartcontainer").ejChart(
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...  
-        series: [{
-           points: [{ x: "Housing", y: 31 }, { x: "Food", y: 16 }, 
-                    { x: "Transportation", y: 14 }, { x: "Clothing", y: 6 },
-                    { x: "Health care", y: 8 }, { x: "Education", y: 17 }, 
-                    { x: "Miscellaneous", y: 8 }], 
-                    explodeIndex: 1,                              
-                    border: { width: 2, color: 'white' },
-                    type: 'pie', startAngle: 145                           
-                  }],   
-                 depth: 30,
-                 wallSize: 10,
-                 tilt: -30,
-                 rotation: -30,
-                 perspectiveAngle: 90,                          
-                 enableRotation: true,
-                 enable3D: true,              
-      // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...  
+            series: [{
+                points: [{ x: "Housing", y: 31 }, { x: "Food", y: 16 },
+                         { x: "Transportation", y: 14 }, { x: "Clothing", y: 6 },
+                         { x: "Health care", y: 8 }, { x: "Education", y: 17 },
+                         { x: "Miscellaneous", y: 8 }],
+                explodeIndex: 1,
+                border: { width: 2, color: 'white' },
+                type: 'pie', startAngle: 145
+            }],
+            depth: 30,
+            wallSize: 10,
+            tilt: -30,
+            rotation: -30,
+            perspectiveAngle: 90,
+            enableRotation: true,
+            enable3D: true,
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/3D-Chart_images/3D-Chart_img5.png" Caption="3D Pie Chart"%}
+{% include image.html url="3dchart_images\3dchart_img5.png" Caption="3D Pie Chart"%}
 
 ### 3D Doughnut Chart
 
@@ -229,34 +221,32 @@ $("#chartcontainer").ejChart(
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...  
-        series: [{
-           points: [{ x: "Watching TV", y: 56 },{ x:"Socializing”, y: 26 }, 
-                    { x: "Reading", y: 3 }, { x: "Sports", y: 7 },
-                    { x: "Others", y: 8 }], 
-                    explodeIndex: 1,                              
-                    doughnutCoefficient: 0.5, doughnutSize: 0.8,                     
-                    type: 'doughnut', startAngle: 145                           
-                 }],   
-                 depth: 30,
-                 wallSize: 10,
-                 tilt: -30,
-                 rotation: -30,
-                 perspectiveAngle: 90,                          
-                 enableRotation: true,
-                 enable3D: true,              
-      // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...  
+            series: [{
+                points: [{ x: "Watching TV", y: 56 }, { x: "Socializing", y: 26 },
+                         { x: "Reading", y: 3 }, { x: "Sports", y: 7 },
+                         { x: "Others", y: 8 }],
+                explodeIndex: 1,
+                doughnutCoefficient: 0.5, doughnutSize: 0.8,
+                type: 'doughnut', startAngle: 145
+            }],
+            depth: 30,
+            wallSize: 10,
+            tilt: -30,
+            rotation: -30,
+            perspectiveAngle: 90,
+            enableRotation: true,
+            enable3D: true,
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/3D-Chart_images/3D-Chart_img6.png" Caption="3D Doughnut Chart"%}
+{% include image.html url="3dchart_images\3dchart_img6.png" Caption="3D Doughnut Chart"%}
 
 ### 100% 3D Stacking Column
 
@@ -265,35 +255,30 @@ $("#chartcontainer").ejChart(
 {% highlight js %}
 
 **[JS]**
-$("#chartcontainer").ejChart(
-    {
-
-     commonSeriesOptions:
-     {
-        type: 'stackingcolumn100'
-     },
-     series:
-     [
-        {
-         points: [{ x: 2006, y: 80000 }, { x: 2007, y: 22000 },
-                  { x: 2008, y: 60000 }, { x: 2009, y: 39000 },
-                  { x: 2010, y: 62000 }, { x: 2011, y: 90000 }
-                 ],
-         name  : "Australia"
-         },
-         {
-         points: [{ x: 2006, y: 50000 }, { x: 2007, y: 41000 },
-                  { x: 2008, y: 52000 }, { x: 2009, y: 43000 },
-                  { x: 2010, y: 47000 }, { x: 2011, y: 93000 }
-                 ],
-         name  : "China"
-        }
-     ],
-
-     enable3D: true,
-
-    }
-  );
+        $("#chartcontainer").ejChart({
+            commonSeriesOptions:
+            {
+                type: 'stackingcolumn100'
+            },
+            series:
+            [
+               {
+                   points: [{ x: 2006, y: 80000 }, { x: 2007, y: 22000 },
+                            { x: 2008, y: 60000 }, { x: 2009, y: 39000 },
+                            { x: 2010, y: 62000 }, { x: 2011, y: 90000 }
+                   ],
+                   name: "Australia"
+               },
+               {
+                   points: [{ x: 2006, y: 50000 }, { x: 2007, y: 41000 },
+                            { x: 2008, y: 52000 }, { x: 2009, y: 43000 },
+                            { x: 2010, y: 47000 }, { x: 2011, y: 93000 }
+                   ],
+                   name: "China"
+               }
+            ],
+            enable3D: true,
+        });
 
 
 {% endhighlight %}
@@ -302,7 +287,7 @@ $("#chartcontainer").ejChart(
 
 The following screenshot displays the **100% 3D Stacking Column.**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/3D-Chart_images/3D-Chart_img7.png" Caption="100% 3D Stacking Column"%}
+{% include image.html url="3dchart_images\3dchart_img7.png" Caption="100% 3D Stacking Column"%}
 
 ### 100% 3D Stacking Bar
 
@@ -311,34 +296,30 @@ The following screenshot displays the **100% 3D Stacking Column.**
 {% highlight js %}
 
 **[JS]**
-$("#chartcontainer").ejChart(
-     {
-      commonSeriesOptions:
-      {
-         type: 'stackingbar100'
-      },
-      series:
-      [
-         {
-          points: [{ x: 2006, y: 8000  }, { x: 2007, y: 1200  },
-                   { x: 2008, y: 20000 }, { x: 2009, y: 21000 },
-                   { x: 2010, y: 28000 }, { x: 2011, y: 29000 }
-                  ],
-          name  : "Brazil"
-         },
-         {
-          points: [{ x: 2006, y: 5000  }, { x: 2007, y: 15000 },
-                   { x: 2008, y: 19000 }, { x: 2009, y: 25000 },
-                   { x: 2010, y: 26000 }, { x: 2011, y: 30000 }
-                  ],
-          name  : "Nigeria"
-         }
-      ],
-
-      enable3D: true,
-
-     }
-  );
+        $("#chartcontainer").ejChart({
+            commonSeriesOptions:
+            {
+                type: 'stackingbar100'
+            },
+            series:
+            [
+               {
+                   points: [{ x: 2006, y: 8000 }, { x: 2007, y: 1200 },
+                            { x: 2008, y: 20000 }, { x: 2009, y: 21000 },
+                            { x: 2010, y: 28000 }, { x: 2011, y: 29000 }
+                   ],
+                   name: "Brazil"
+               },
+               {
+                   points: [{ x: 2006, y: 5000 }, { x: 2007, y: 15000 },
+                            { x: 2008, y: 19000 }, { x: 2009, y: 25000 },
+                            { x: 2010, y: 26000 }, { x: 2011, y: 30000 }
+                   ],
+                   name: "Nigeria"
+               }
+            ],
+            enable3D: true,
+        });
 
 
 {% endhighlight %}
@@ -347,5 +328,5 @@ $("#chartcontainer").ejChart(
 
 The following screenshot displays the **100% 3D Stacking Bar**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/3D-Chart_images/3D-Chart_img8.png" Caption="100% 3D Stacking Bar."%}
+{% include image.html url="3dchart_images\3dchart_img8.png" Caption="100% 3D Stacking Bar."%}
 

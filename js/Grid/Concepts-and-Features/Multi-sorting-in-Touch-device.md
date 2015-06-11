@@ -36,8 +36,8 @@ In **ejGrid**, you have an **API** to clear sorted columns. Through this **API**
             $(function () {// Document is ready.
                 $("#Grid").ejGrid({
                     dataSource: window.gridData,
-**allowSorting: true,**
-                    **allowMultiSorting: true,**
+                  **allowSorting: true,**
+                  **allowMultiSorting: true,**
                     sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }, { field: "EmployeeID", direction: ej.sortOrder.Ascending }] },
                     allowPaging: true
                 });
@@ -70,14 +70,14 @@ In the normal way of sorting, first preference is given to capital letters and t
 [JS]
  <div id="Grid"></div>
         <script type="text/javascript">
-            $(function () {// Document is ready.
+		  $(function () {// Document is ready.
                 ej.support.**enableLocalizedSort** = true
                 $("#Grid").ejGrid({
                     dataSource: window.gridData,
-**allowSorting: true,**
+                  **allowSorting: true,**
                     sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }]},
                     allowPaging: true
-columns: [
+                    columns: [
                           { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 100 },
                           { field: "CustomerID", headerText: "Customer ID", width: 130 },
                           { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
@@ -86,7 +86,29 @@ columns: [
                 });
             });
         </script>
+<input type="button" id="clearsorting" name="sorting" value="clear sorting" />
 
+        <div id="Grid"></div>
+        <script type="text/javascript">
+            $(function () {// Document is ready.
+			ej.support.**enableLocalizedSort** = true
+                $("#Grid").ejGrid({
+                    dataSource: window.gridData,
+                  **allowSorting: true,**
+                  **allowMultiSorting: true,**
+                    sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }] },
+                    allowPaging: true,
+					columns: [
+                          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 100 },
+                          { field: "CustomerID", headerText: "Customer ID", width: 130 },
+                          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
+                          { field: "ShipCountry", headerText: "ShipCountry", width: 100 }
+                ]
+				});
+				});
+            });
+
+        </script>
 
 {% endhighlight %}
 

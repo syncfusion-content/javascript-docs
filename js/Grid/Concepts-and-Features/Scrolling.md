@@ -25,8 +25,8 @@ In this following code example, **scrollSettings** property is used to adjust t
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(30)),
-**allowScrolling: true,**
-**scrollSettings: { width: 886, height: 300 },**                
+              **allowScrolling: true,**
+              **scrollSettings: { width: 886, height: 300 },**                
                 columns: [
                              { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
                              { field: "CustomerID", headerText: "Customer ID", width: 100 },
@@ -74,8 +74,8 @@ The following code example illustrates how to enable vertical scrolling in the *
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(30)),
-**allowScrolling: true,**
-**scrollSettings: { height: 300 },**                
+              **allowScrolling: true,**
+              **scrollSettings: { height: 300 },**                
                 columns: [
                              { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
                              { field: "CustomerID", headerText: "Customer ID", width: 100 },
@@ -121,8 +121,8 @@ The following code example illustrates how to enable horizontal scrolling in the
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(30)),
-**allowScrolling: true,**
-**scrollSettings: { width: 800 },**                
+              **allowScrolling: true,**
+              **scrollSettings: { width: 800 },**                
                 columns: [
                              { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
                              { field: "CustomerID", headerText: "Customer ID", width: 100 },
@@ -174,12 +174,12 @@ This feature allows you to load the **Grid** with data while scrolling. The foll
                 allowScrolling: true,
                 scrollSettings: { width: 0, height: 300, **allowVirtualScrolling: true,****virtualScrollMode: ej.Grid.VirtualScrollMode.Normal** },
                 columns: [
-            { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right },
-            { field: "CustomerID", headerText: "Customer ID" },
-            { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right },
-            { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, format: "{0:C}" },
-            { field: "ShipCity", headerText: "Ship City" },
-            { field: "ShipName", headerText: "Ship Name" }
+                          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right },
+                          { field: "CustomerID", headerText: "Customer ID" },
+                          { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right },
+                          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, format: "{0:C}" },
+                          { field: "ShipCity", headerText: "Ship City" },
+                          { field: "ShipName", headerText: "Ship Name" }
                 ]
             });
         })
@@ -214,12 +214,12 @@ You can enable the continuous mode by setting the **virtualScrollMode** proper
                 allowScrolling: true,
                 scrollSettings: { width: 0, height: 300, allowVirtualScrolling: true, **virtualScrollMode: ej.Grid.VirtualScrollMode.Continuous** },
                 columns: [
-            { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right },
-            { field: "CustomerID", headerText: "Customer ID" },
-            { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right },
-            { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, format: "{0:C}" },
-            { field: "ShipCity", headerText: "Ship City" },
-            { field: "ShipName", headerText: "Ship Name" }
+                          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right },
+                          { field: "CustomerID", headerText: "Customer ID" },
+                          { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right },
+                          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, format: "{0:C}" },
+                          { field: "ShipCity", headerText: "Ship City" },
+                          { field: "ShipName", headerText: "Ship Name" }
                 ]
             });
         })

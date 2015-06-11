@@ -51,24 +51,18 @@ None</td><td>
 Disables all tools</td></tr>
 </table>
 
-
 **Single Tool Selection**
 
 The following code illustrates how to enable SingleSelect tool.
 
 {% highlight js %}
 
-**[JS]**
-// To Enable SingleSelection 
-  $("#diagram").ejDiagram({
-  tool:ej.datavisualization.Diagram.Tool.SingleSelect
-            });
-        });
-
+//To Enable SingleSelection 
+$("#diagram").ejDiagram({
+    tool:ej.datavisualization.Diagram.Tool.SingleSelect
+});
 
 {% endhighlight %}
-
-
 
 **Multiple Diagram Tools**
 
@@ -76,14 +70,12 @@ Diagram provides support to enable multiple tools at a time. The following code 
 
 {% highlight js %}
 
-**[JS]**
-// To Enable Multiple Selection    
-  $("#diagram").ejDiagram({
- tool:   ej.datavisualization.Diagram.Tool.SingleSelect|
+//To Enable Multiple Selection    
+$("#diagram").ejDiagram({
+   tool: ej.datavisualization.Diagram.Tool.SingleSelect|
          ej.datavisualization.Diagram.Tool.ZoomPan
-            });
-        });
-
+  });
+});
 
 {% endhighlight %}
 
@@ -97,36 +89,29 @@ The following code example illustrates how to draw the rectangle shape at run ti
 
 {% highlight js %}
 
-**[JS]**
-
 <script type="text/Javascript">
 
 var diagram = $("#diagram").ejDiagram("instance");
 
 //Define the node to be drawn using drawing tool
-diagram.model.**drawType** = { 
+diagram.model.drawType = { 
 	type: ej.datavisualization.Diagram.Shapes.Basic, 
-shape: "rectangle",
-fillColor:"#fcbc7c",
-borderColor:"#f89b4c",
-labels: [{ "text": "Rectangle",fontColor:"white" }]
+    shape: "rectangle",
+    fillColor:"#fcbc7c",
+    borderColor:"#f89b4c",
+    labels: [{ "text": "Rectangle",fontColor:"white" }]
 };
 
 //To activate the drawing tool
 diagram.update({ 
-**tool**: ej.datavisualization.Diagram.Tool.DrawOnce 
+    tool: ej.datavisualization.Diagram.Tool.DrawOnce 
 })
 
 </script>
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Tools_images/Tools_img1.png" Caption=""%}
-
-_Rectangle_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Tools_images/Tools_img1.png" Caption="Rectangle"%}
 
 Similarly you can draw any node using drawing tool, by assigning the required node to diagram.model.drawType property.
 
@@ -140,30 +125,21 @@ The following code example illustrates how to draw a straight connector at runti
 
 {% highlight js %}
 
-**[JS]**
-
 <script type="text/Javascript">
 
-var diagram = $("#diagram").ejDiagram("instance");
-
-//Define the connector to be drawn using drawing tool
-diagram.model.**drawType** = { 
-	type:"straightLine", 
-};
-
-//To activate the drawing tool
-diagram.update({ 
-**tool**: ej.datavisualization.Diagram.Tool.DrawOnce 
+    var diagram = $("#diagram").ejDiagram("instance");
+    
+    //Define the connector to be drawn using drawing tool
+    diagram.model.drawType = { 
+    	type:"straightLine", 
+    };
+    
+    //To activate the drawing tool
+    diagram.update({ 
+    tool: ej.datavisualization.Diagram.Tool.DrawOnce 
 })
-
 </script>
-
 
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Tools_images/Tools_img2.jpeg" Caption=""%}
-
-_Straight Connector_
-
+{% include image.html url="/js/Diagram/Concepts-and-Features/Tools_images/Tools_img2.jpeg" Caption="Straight Connector"%}

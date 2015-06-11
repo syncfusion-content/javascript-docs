@@ -42,9 +42,9 @@ Filter menus are a good **UI** based filtering option. It visibly denotes filter
             $(function () {// Document is ready.
                 $("#Grid").ejGrid({
                     dataSource: window.gridData,
-**allowFiltering: true,**
-                    **filterSettings: {filterType:"menu"},**
-allowPaging: true,                  
+                  **allowFiltering: true,**
+                 **filterSettings: {filterType:"menu"},**
+                   allowPaging: true,                  
                 });
             });
 
@@ -107,8 +107,8 @@ Boolean filter bar works with either <b>true</b> or <b>false</b>.</td></tr>
             $(function () {// Document is ready.
                 $("#Grid").ejGrid({
                     dataSource: window.gridData,
-                    **allowFiltering: true,**
-                    **filterSettings: { filterType: ej.Grid.FilterType.FilterBar },**
+                  **allowFiltering: true,**
+                  **filterSettings: { filterType: ej.Grid.FilterType.FilterBar },**
                     allowPaging: true,
                 });
             });
@@ -162,8 +162,8 @@ The ourput of the custom filter menu was showed in below screenshot.
                 $("#Filtering").ejGrid({
                     dataSource: window.gridData,
                     allowSorting:true
-**allowFiltering: true,**
-                    **filterSettings: { filterType: "excel", maxFilterChoices:100,enableCaseSensitivity:false },**
+                  **allowFiltering: true,**
+                  **filterSettings: { filterType: "excel", maxFilterChoices:100,enableCaseSensitivity:false },**
                     allowPaging: true,
                     columns: [
                         { field: "OrderID", headerText: "Order ID", textAlign: "right" },

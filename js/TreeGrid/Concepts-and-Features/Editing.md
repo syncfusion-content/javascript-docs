@@ -11,7 +11,7 @@ documentation: ug
 
 The **TreeGrid** control provides built-in support for **Editing** cell items. 
 
-**Cell Editing**
+### Cell Editing
 
 Update the task details through grid **Cell Editing** by setting **editMode** as **cellEditing**.
 

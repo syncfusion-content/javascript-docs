@@ -15,26 +15,21 @@ documentation: ug
 
 **[JS]**
 
-**[HTML]**
-<!-- ... -->
-<head></head>
-<!-- ... -->
-<body>
-                <div id="defaultRibbon"></div>
-                <ul id="ribbonmenu">
+     <div id="defaultRibbon"></div>    
+     <ul id="ribbonmenu">
                <li><a>FILE</a>
               <ul><li><a>New</a></li></ul>
                </li>
-               </ul>
-    <script type="text/javascript">
-        var ribbonObj, menuObj;
-        $(function () {
+               </ul>                        
+       <script type="text/javascript">
+       $(function () {
             $("#defaultRibbon").ejRibbon({
                 width: "70%",
-****_**allowResizing**_**: true,**
+               **allowResizing: true**, 
                 applicationTab: {
                     Type: "ApplicationMenu", itemID: "ribbonmenu"
                 },
+                
                 tabs: [{
                     id: "home", text: "HOME", groups: [{
                         text: "Clipboard", alignType: ej.Ribbon.alignType.rows, content: [
@@ -50,6 +45,7 @@ documentation: ug
                             ]
                         }]
                     },
+                    
                     {
                         text: "Font", alignType: "rows", content: [
                         {
@@ -77,38 +73,36 @@ documentation: ug
                             }
                         }]
                     },
-{
-text: "New", alignType: ej.Ribbon.alignType.rows, content: [{
-groups: [{
-id: "new",
-text: "New",
-}
-],
-}]
-},
-{
-text: "Actions", alignType: ej.Ribbon.alignType.rows, content: [{
-groups: [{
-id: "undo",
-text: "Undo"
-},
-{
-id: "redo",
-text: "Redo"
-}
-],
-}]
-}]
+                    
+                    {
+                    text: "New", alignType: ej.Ribbon.alignType.rows, content: [{
+                    groups: [{
+                    id: "new",
+                    text: "New",
+                    }
+                    ],
+                    }]
+                    },
+                    {
+                    text: "Actions", alignType: ej.Ribbon.alignType.rows, content: [{
+                    groups: [{
+                    id: "undo",
+                    text: "Undo"
+                    },
+                    {
+                    id: "redo",
+                    text: "Redo"
+                    }
+                    ],
+                    }]
+                    }]
                 }]
             });
         });
     </script>
-</body>
-<!-- ... -->
 
 
 {% endhighlight %}
-
 
 
 The following screenshot displays **Ribbon** control without resizing the window.

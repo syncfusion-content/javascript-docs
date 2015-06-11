@@ -30,7 +30,7 @@ The **allowEditOnDblClick** property can be set as **True** to enable editing th
                 },
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true,
-**allowEditOnDblClick : false**
+                  **allowEditOnDblClick : false**
                 },
                 allowPaging: true,
                 pageSettings: { pageSize: 6 },

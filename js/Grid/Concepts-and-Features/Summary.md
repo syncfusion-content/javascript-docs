@@ -38,9 +38,9 @@ There are some default summary types available for basic summary formula. The fo
                 /// the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
                 allowPaging: true,
-**showSummary**: true,
+              **showSummary**: true,
                 pageSettings: { pageSize: 5 },
-**summaryRows**: [
+               **summaryRows**: [
                     { title: "Sum", **summaryColumns**: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
                     { title: "Average", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
                 ],

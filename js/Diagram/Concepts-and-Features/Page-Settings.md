@@ -9,7 +9,7 @@ documentation: ug
 
 # Page Settings
 
-**Page settings** enable you to customize the width and height of the Diagram page. The properties of **Page****setting** are listed as follows.
+**Page settings** enable you to customize the width and height of the Diagram page. The properties of **Page setting** are listed as follows.
 
 _Page settings_
 
@@ -66,32 +66,22 @@ ej.datavisualization.Diagram.PageOrientations</td><td>
 Gets or sets the orientation of the page</td></tr>
 </table>
 
-
 The following code illustrates how to customize **Page Settings**
 
 {% highlight js %}
 
-**[JS]**
-
 //set page setting properties
 $("#Diagram").ejDiagram({ pageSettings: { pageHeight : 300, pageWidth : 450, pageBorderWidth : 4, pageBackgroundColor : "lightblue", pageBorderColor : "black", pageMargin : 35, showPageBreaks : true, multiplePage : true, pageOrientation : ej.datavisualization.Diagram.Orientation.Portrait }});
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img1.png" Caption=""%}
-
-_Page Appearance-PageSettings based_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img1.png" Caption="Page Appearance-PageSettings based"%}
 
 ## MultiplePage and PageBreaks
 
 When **multiplePage** is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. **PageBreaks** is used as a visual guide to see how pages are split into multiple pages.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img2.png" Caption=""%}
-
-_Multiple Page and Page Breaks_
+{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img2.png" Caption="Multiple Page and Page Breaks"%}
 
 ## AutoScroll
 
@@ -134,7 +124,6 @@ object</td><td>
 Gets or sets the auto scroll starting point </td></tr>
 </table>
 
-
 **Autoscroll border**
 
 The autoscroll border is used to specify the distance, from where the autoscroll is to be enabled when moving the node or connector. The default value is set as 15 for all sides (left, right, top and bottom).
@@ -143,18 +132,13 @@ The following code example illustrates how to set autoscroll border.
 
 {% highlight js %}
 
-**[JS]**
 pageSettings: 
-   { 
-// Specifies autoscroll border
-     autoScrollBorder: { left: 150, top: 15, right:15, 
-      bottom: 15}  
-}  
-
+    { 
+        // Specifies autoscroll border
+        autoScrollBorder: { left: 150, top: 15, right:15, bottom: 15}  
+    }  
 
 {% endhighlight %}
-
-
 
 **Scroll limit**
 
@@ -166,21 +150,17 @@ The scroll limit allows you to scroll the diagram page along X and Y axis based 
 
 * By specifying the value as limited you can set the limit of the scrollable area through scrollable area property. 
 
-
-
 > _**Note: Refer to the scrollable area for more details**_
 
 The following code example illustrates how to specify scroll limit. 
 
 {% highlight js %}
 
-**[JS]**
 pageSettings: 
-   { 
-//Scrolllimit for diagram by default
-    scrollLimit:"infinity" 
-}
-
+    { 
+        //Scrolllimit for diagram by default
+        scrollLimit:"infinity" 
+    }
 
 {% endhighlight %}
 
@@ -194,22 +174,15 @@ The following code example illustrates how to customize scrollable area of diagr
 
 {% highlight js %}
 
-**[JS]**
 pageSettings: 
-   { 
-    //Scrolllimit for diagram as limited
-      scrollLimit:"limited",
-     //Set limit of the scrollable area
-      scrollableArea: { x: 0, y: 0, width: 5000,
-       height: 5000}
+    { 
+        //Scrolllimit for diagram as limited
+        scrollLimit:"limited",
+        
+        //Set limit of the scrollable area
+        scrollableArea: { x: 0, y: 0, width: 5000, height: 5000}
     }
-
 
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img3.png" Caption=""%}
-
-_AutoScroll Border_
-
+{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img3.png" Caption="AutoScroll Border"%}

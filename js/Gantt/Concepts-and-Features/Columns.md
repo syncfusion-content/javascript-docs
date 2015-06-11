@@ -11,7 +11,7 @@ documentation: ug
 
 The **TreeGrid** column displays the information from a bounded data source and it will be editable to update the task details through **TreeGrid**.
 
-**Column Resizing** 
+### Column Resizing
 
 You can change the width of the column in **TreeGrid** to show the entire text of the column by resizing the column. The following code example shows you how to enable the Column Resize feature at **Gantt** initialize.
 
@@ -28,7 +28,7 @@ You can change the width of the column in **TreeGrid** to show the entire text o
 
 
 
-**Column Template**
+### Column Template
 
 Column template is used to customize the column’s look and feel, based on requirement. 
 
@@ -182,7 +182,7 @@ The following screenshot displays the customized column in Gantt control.
 
 {% include image.html url="/js/Gantt/Concepts-and-Features/Columns_images/Columns_img1.png" Caption="Customized column"%}
 
-**Column Chooser**
+### Column Chooser
 
 **Gantt** supports enabling and disabling the visibility of the columns dynamically with the **showColumnChooser** property. The visibility of the custom columns can also be toggled with this property. **Column chooser** option is rendered as a sub menu item within the column menu in the Gantt columns. 
 

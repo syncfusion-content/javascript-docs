@@ -15,50 +15,51 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
 
 **[JS]**
 **[HTML]**
-<!-- ... -->
-<head>
-</head>
-<!-- ... -->
-<body>
-<div id="defaultRibbon"></div>
-<ul id="ribbonmenu">
-    <li><a>FILE</a>
-        <ul>
-            <li><a>New</a></li>
-        </ul>
-    </li>
-</ul>
-<script type="text/javascript">
-    $(function () {
-        $("#defaultRibbon").ejRibbon({
-            width: "100%", 
-            applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu },
-            tabs: [{
-                id: "home", text: "HOME", groups: [
-                {
-                    text: "Clipboard", alignType: ej.Ribbon.alignType.columns, content: [{
-                        groups: [{
-                            id: "paste",
-                            text: "paste",
-                            customToolTip: {
-                                title: "Paste",
-                                content: "<h6>Paste the content.<br/><br/>Add content on the Clipboard to your document.</h6>",
-                                prefixIcon: "e-pastetip"
-                            },
-                            buttonSettings: {
-                                contentType: ej.ContentType.ImageOnly,
-                                prefixIcon: "e-ribbon e-ribbonpaste"
+
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
+    <div id="defaultRibbon"></div>
+    <ul id="ribbonmenu">
+        <li><a>FILE</a>
+            <ul>
+                <li><a>New</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        $(function () {
+            $("#defaultRibbon").ejRibbon({
+                width: "100%", 
+                applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu },
+                tabs: [{
+                    id: "home", text: "HOME", groups: [
+                    {
+                        text: "Clipboard", alignType: ej.Ribbon.alignType.columns, content: [{
+                            groups: [{
+                                id: "paste",
+                                text: "paste",
+                                customToolTip: {
+                                    title: "Paste",
+                                    content: "<h6>Paste the content.<br/><br/>Add content on the Clipboard to your document.</h6>",
+                                    prefixIcon: "e-pastetip"
+                                },
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-ribbon e-ribbonpaste"
+                                }
                             }
-                        }
-                        ]
+                            ]
+                        }]
                     }]
                 }]
-            }]
+            });
         });
-    });
-</script>
-</body>
-<!-- ... -->
+    </script>
+    </body>
+    <!-- ... -->
 
 
 {% endhighlight %}

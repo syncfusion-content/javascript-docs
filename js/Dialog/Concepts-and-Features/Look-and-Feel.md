@@ -63,7 +63,7 @@ The **CSS** properties can be customized by using **css**Class in the **Dialog**
 
 3. The output for **Dialog** control after customizing the “**cssClass**” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/Look-and-Feel_images/Look-and-Feel_img1.png" Caption="Dialog with “cssClass""%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/Look-and-Feel_images/Look-and-Feel_img1.png" Caption="Dialog with cssClass"%}
 
 
 

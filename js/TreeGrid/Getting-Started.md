@@ -17,7 +17,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img1.png" Caption="TreeGrid"%}
 
-1. Create an **HTML** file and add the following template to the **HTML** file.
+1.Create an **HTML** file and add the following template to the **HTML** file.
 
 {% highlight html %}
 
@@ -55,7 +55,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 
 
-2. Add **&lt;div&gt;** element with in the **&lt;Body&gt;** tag.
+2.Add **&lt;div&gt;** element with in the **&lt;Body&gt;** tag.
 
 {% highlight js %}
 
@@ -70,7 +70,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 
 
-3. Create the **ejTreeGrid** with the empty data source.
+3.Create the **ejTreeGrid** with the empty data source.
 
 {% highlight js %}
 
@@ -97,7 +97,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img2.png" Caption="TreeGrid with empty datasource "%}
 
-4. Create data source for ejTreeGrid.
+4.Create data source for ejTreeGrid.
 
 {% highlight js %}
 
@@ -207,7 +207,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 
 
-5. Initialize the **ejTreeGrid** with data source created in last step.
+5.Initialize the **ejTreeGrid** with data source created in last step.
 
 {% highlight js %}
 
@@ -239,11 +239,11 @@ A **TreeGrid** is displayed as the output in the following screenshot.
 
 {% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img3.png" Caption="TreeGrid with given datasource"%}
 
-**Enable Sorting**
+### Enable Sorting
 
 The **ejTreeGrid** control has sorting functionality, to arrange the data in ascending or descending order based on a particular column.
 
-**Multicolumn Sorting**
+#### Multicolumn Sorting
 
 Enable the multicolumn sorting in **ejTreeGrid** by setting **allowMultiSorting** as **True**. You can sort multiple columns in **ejTreeGrid,** by selecting the desired column header while holding the **CTRL** key.
 
@@ -265,7 +265,7 @@ Enable the multicolumn sorting in **ejTreeGrid** by setting **allowMultiSorting*
 
 {% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img4.png" Caption="TreeGrid enabled with sorting "%}
 
-**Enable Editing**
+### Enable Editing
 
 You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows.
 

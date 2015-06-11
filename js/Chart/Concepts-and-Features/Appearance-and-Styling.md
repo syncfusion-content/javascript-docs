@@ -17,50 +17,54 @@ You can customize a **tooltip** with required template by adding a **“div”**
 
 {% highlight js %}
 
-<div id="Tooltip" style="display: none;">
-<div id="icon">
-       <div id="grain"></div>
-</div>
+**[HTML]**
+    <div id="Tooltip" style="display: none;">
+        <div id="icon">
+            <div id="grain"></div>
+        </div>
         <div id="value">
             <div>
-            <div id="efpercentage">#point.x#</div>
+                <div id="efpercentage">#point.x#</div>
                 <div id="ef">#point.y#</div>
-             </div>
+            </div>
         </div>
-
     </div>
 
-<style class="cssStyles">
+    <style class="cssStyles">
         .tooltipDiv {
-            background-color:#C1272D !important;        
+            background-color: #C1272D !important;
             color: white;
-width:100px;
+            width: 100px;
         }
-        #Tooltip >div:first-child {
+
+        #Tooltip > div:first-child {
             float: left;
         }
+
         #Tooltip #value {
             float: right;
             height: 50px;
             width: 50px;
-            background-color:#C1272D
+            background-color: #C1272D;
         }
-        #Tooltip #value >div {
-            margin: 3px 5px 5px 5px;
 
-        }
+            #Tooltip #value > div {
+                margin: 3px 5px 5px 5px;
+            }
+
         #Tooltip #efpercentage {
             font-size: 12px;
             font-family: segoe ui;
-            color:#E7C554;
-font-weight: bold;
+            color: #E7C554;
+            font-weight: bold;
         }
-         #Tooltip #ef {
-             font-size: 20px;
-             font-family: segoe ui;
-font-weight: bold;
 
+        #Tooltip #ef {
+            font-size: 20px;
+            font-family: segoe ui;
+            font-weight: bold;
         }
+
         #grain {
             background-image: url("../images/chart/grain.png");
             height: 50px;
@@ -68,38 +72,34 @@ font-weight: bold;
             background-repeat: no-repeat;
         }
     </style>
+    <script type="text/javascript" language="javascript "> 
 
-<script type="text/javascript" language="javascript">
 **[JS]**
 
-         $(function () {
-             $("#container").ejChart(
-                       {
-                           series: [{
-                               points: [{ x: 2002, y: 1.61 }, { x: 2003, y: 2.34 },
-                               { x: 2004, y: 2.16 }, { x: 2005, y: 2.10 }, { x: 2006, 				y: 1.81 }, { x: 2007, y: 2.05 }, { x: 2008, y: 2.50 },
-                               { x: 2009, y: 2.22 }, { x: 2010, y: 2.21 }, { x: 2011, 				y: 2.00 }, { x: 2012, y: 2.27 }],
-                            name: 'India', 
-tooltip :
-{
-					visible:true, 
-template: 'Tooltip'
-}
-                           }
+        $(function () {
+            $("#container").ejChart({
+                series: [{
+                    points: [{ x: 2002, y: 1.61 }, { x: 2003, y: 2.34 },
+                    { x: 2004, y: 2.16 }, { x: 2005, y: 2.10 }, { x: 2006, y: 1.81 }, { x: 2007, y: 2.05 }, { x: 2008, y: 2.50 },
+                    { x: 2009, y: 2.22 }, { x: 2010, y: 2.21 }, { x: 2011, y: 2.00 }, { x: 2012, y: 2.27 }],
+                    name: 'India',
+                    tooltip:
+                    {
+                        visible: true,
+                        template: 'Tooltip'
+                    }
+                }]
+            });
+        });
 
-                           ]
-                       });
-         });
-
-
-    </script>
+    </script>         
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Chart with Customized ToolTip"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img1.png" Caption="Chart with Customized ToolTip"%}
 
 ## Label Template
 
@@ -107,12 +107,14 @@ You customize a **data label** with required template by adding a **“div”** 
 
 {% highlight js %}
 
-<div id="template">
+**[HTML]**
+    <div id="template">
+
         <div id="left">
-            <img src="../images/chart/icon_investments.png"/>
+            <img src="../images/chart/icon_investments.png" />
         </div>
         <div id="right">
-            <div id="point">#point.y#%</div>
+            <div id="Div2">#point.y#%</div>
         </div>
     </div>
 
@@ -122,53 +124,64 @@ You customize a **data label** with required template by adding a **“div”** 
             font-size: 16px;
             color: black;
         }
+
         #left, #right {
-            float: left;   
+            float: left;
         }
+
         img {
             height: 25px;
             width: 30px;
         }
-        #left{
-            background-color: #8CC640;   
+
+        #left {
+            background-color: #8CC640;
         }
-        #right{
-            background-color: #C3C3C3; 
+
+        #right {
+            background-color: #C3C3C3;
             height: 30px;
-            border-style:solid;
-            border-color:#8CC640;
-            border-width: 1px;				
+            border-style: solid;
+            border-color: #8CC640;
+            border-width: 1px;
         }
+
         #template {
-            display:none;
+            display: none;
         }
     </style>
-
 **[JS]**
-
     <script type="text/javascript" language="javascript">
         $(function () {
             $("#container").ejChart(
                 {
                     series: [{
-                        	points: [{ x: 2005, y: 28.1, { x: 2006, y: 29.2 }, { x: 				2007,y: 33.9 },{ x: 2008, y: 36 }, { x: 2009, y: 32.4 }, { 				x: 2010, y: 32 },{ x: 2011, y: 32.8,],name: 'India',  					marker: { 
-					dataLabel: { 
-						visible:true, 										template:'template'}}, 
-						fill: '#8CC640' 
-                    			},
-                        //....
-
+                        points: [
+                            { x: 2005, y: 28.1 }, { x: 2006, y: 29.2 },
+                            { x: 2007, y: 33.9 }, { x: 2008, y: 36 },
+                            { x: 2009, y: 32.4 }, { x: 2010, y: 32 },
+                            { x: 2011, y: 32.8 }],
+                        name: 'India',
+                        marker: {
+                            dataLabel: {
+                                visible: true,
+                                template: 'template'
+                            }
+                        },
+                        fill: '#8CC640'
+                    },
+                    //....                        
                     ]
                 });
         });
-        </script>
+    </script>
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Chart with Customized Label"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img2.png" Caption="Chart with Customized Label"%}
 
 ## Label Formatting
 
@@ -179,16 +192,14 @@ By default, the label texts are automatically determined based on the axis data 
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...              
-                    primaryYAxis:
-                         {
-                             labelFormat: "{value}%",
-                         }
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...              
+            primaryYAxis:
+                 {
+                     labelFormat: "{value}%",
+                 }
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -218,25 +229,23 @@ Some of the **labelFormat** for **datetime** axis:
 {% highlight js %}
 
 **[JS]**
+        $("#chartcontainer").ejChart({
+            // ...              
+            primaryXAxis:
+            {
+                labelFormat: 'MMM-yyyy',
+                valueType: 'datetime'
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...              
-                    primaryXAxis:
-                           {                
-                               labelFormat: 'MMM-yyyy',
-                               valueType: 'datetime'
-
-                           },
-                   // ...             
-               });
+            },
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Chart with Customized Axis Labels"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img3.png" Caption="Chart with Customized Axis Labels"%}
 
 ## Title and Subtitle
 
@@ -245,13 +254,12 @@ $("#chartcontainer").ejChart(
 {% highlight js %}
 
 **[JS]**
-    $("#chartcontainer").ejChart(
-    {
-        title: {
-            text: "Chart Title",        
-            subTitle: { text: "Subtitle" }
-        }
-    });
+       $("#chartcontainer").ejChart({
+            title: {
+                text: "Chart Title",
+                subTitle: { text: "Subtitle" }
+            }
+        });
 
 
 {% endhighlight %}
@@ -260,7 +268,7 @@ $("#chartcontainer").ejChart(
 
 The following screenshot shows the **Title and Subtitle** in **Chart** control.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="Title and subtitle"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img4.png" Caption="Title and subtitle"%}
 
 ## Chart Background and Foreground
 
@@ -275,19 +283,17 @@ Using the **background** property you can customize the background color of the 
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {                 
-                    background: '#1E90FF',
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            background: '#1E90FF',
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="Chart with customized background"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img5.png" Caption="Chart with customized background"%}
 
 ### To Chart Area
 
@@ -298,20 +304,18 @@ Using **background** property in **ChartArea** you can customize the background 
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...              
-                    chartArea: { background: '#cc3333' },
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...              
+            chartArea: { background: '#cc3333' },
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="Chart with Customized Chart area"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img6.png" Caption="Chart with Customized Chart area"%}
 
 ### BackGround Image
 
@@ -320,20 +324,18 @@ JS Chart allows you to add background image for your Chart using backGroundImage
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...              
-                      backGroundImageUrl: '../images/chart/wheat.png',
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...              
+            backGroundImageUrl: '../images/chart/wheat.png',
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption="Chart with background image"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img7.png" Caption="Chart with background image"%}
 
 ## Theme
 
@@ -358,13 +360,11 @@ Chart has built-in theme support. The theme configures the colors of following C
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...              
-                      theme: 'gradientlight',
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...              
+            theme: 'gradientlight',
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -405,7 +405,7 @@ Following predefined themes are available in **JS Chart**.
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img8.png" Caption="Chart with Theme"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img8.png" Caption="Chart with Theme"%}
 
 ## Custom Color palette 
 
@@ -414,18 +414,16 @@ Apart from the themes, to define custom set of color you can use “**palette**�
 {% highlight js %}
 
 **[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...              
-                    palette: ["#69D2E7", "#E27F2D", "#6A4B82"],
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...              
+            palette: ["#69D2E7", "#E27F2D", "#6A4B82"],
+            // ...             
+        });
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img9.png" Caption="Chart with Palette property"%}
+{% include image.html url="appearanceandstyling_images\appearanceandstyling_img9.png" Caption="Chart with Palette property"%}
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Columns
 
-Colums are a key feature in **Grid** to define schema in a control based on datasource. It is useful to map field to datasource values.
+Columns are a key feature in **Grid** to define schema in a control based on a datasource. It is useful to map field to datasource values.
 
 ## Formatting
 
-**Formatting** is used to convert data values to human readable formats using specific culture settings. In **ejGrid**, you have an option to format a particular column through the **format** property. For more details about **globalize.js**, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in **Grid**.
+**Formatting** is used to convert data values to human readable formats by using specific culture settings. In **ejGrid**, you have an option to format a particular column through the **format** property. For more details about **globalize.js**, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in **Grid**.
 
 {% highlight html %}
 
@@ -130,7 +130,7 @@ The following output is displayed as a result of the above code example.
 
 ## Read only
 
-**allowEditing** enables you to edit a column, but it prevents the fields from showing it as editable. If you want to make a column as **read-only** then set **allowEditing** as **False for** that column. The following code example shows **Essential JavaScript** column as **read-only**.
+**allowEditing** enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set **allowEditing** as **False for** that column. The following code example shows **Essential JavaScript** column as **read-only**.
 
 {% highlight html %}
 
@@ -286,14 +286,14 @@ Cell merging feature enables to merge cells based on your requirement. The follo
     <script type="text/javascript">
         $(function () {// Document is ready.
             // Data for grid.
-     var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
+            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
             $("#Grid").ejGrid({
                dataSource:dataManager,
                allowPaging: true,
                allowScrolling: true,
-**allowCellMerging: true,**
-****columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ],
-**mergeCellInfo: function (args) {**
+             **allowCellMerging: true,**
+             **columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ],**
+             **mergeCellInfo: function (args) {**
                        **if (args.column.field == "EmployeeID" && args.data.OrderID == 10248) {**
                            **args.rowMerge(3);**
                        **}**
@@ -336,7 +336,7 @@ AutoWrap feature allows you to wrap cell content to next line when the content e
                 dataSource:dataManager,
                 allowPaging: true,
                 allowScrolling: true,
- **allowTextWrap: true,**
+              **allowTextWrap: true,**
                 columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ]
             });
         });
@@ -363,9 +363,8 @@ Execute the above code to render the following output.
     <script type="text/javascript">
         $(function () {   
             $("#Grid").ejGrid({
-**showColumnChooser: true,**
-                columns: ["OrderID","CustomerID","EmployeeID","Freight”         
-                          ,"OrderDate"]
+             **showColumnChooser: true,**
+               columns: [ "OrderID","CustomerID", "EmployeeID","Freight","OrderDate" ]
             });
         });
     </script>
@@ -418,7 +417,7 @@ The following output is displayed as a result of the above code example.
 
 ## Stacked Header
 
-The **Stacked Header** feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel **Stacked Headers** as well. Enable the **Stacked Header** by setting the **showStackedHeader** property to **true a**nd set the stacked header row by using the **stakedHeaderRows** property. The **Stacked Header** feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
+The **Stacked Header** feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel **Stacked Headers** as well. Enable the **Stacked Header** by setting the **showStackedHeader** property to **true** and set the stacked header row by using the **stakedHeaderRows** property. The **Stacked Header** feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
 
 {% highlight html %}
 
@@ -430,14 +429,13 @@ The **Stacked Header** feature allows additional header rows that span across th
             var data =  ej.DataManager(window.gridData).executeLocal(ej.Query().take(50));
             $(“#Grid”).ejGrid({
                 dataSource: data,
-**showStackedHeader:true,**
-**stackedHeaderRows**:[
-                   {**stackedHeaderColumn**:[{stackedHeaderText:”Order Details” ,column:”OrderID,OrderDate,Freight”}
-,{stackedHeaderText:”Ship Details” ,column:”ShipName,ShipCity,ShipCountry”}
-]},
-],
-                  columns: [“OrderID “,”OrderDate”,”Freight”,”ShipCity”
-                        ,”ShipCountry”]
+              **showStackedHeader:true,**
+              **stackedHeaderRows**:[
+                   {**stackedHeaderColumn**:[{stackedHeaderText:”Order Details” ,column:”OrderID,OrderDate,Freight”},
+                       {stackedHeaderText:”Ship Details” ,column:”ShipName,ShipCity,ShipCountry”}
+                 ]},
+                ],
+                  columns: [“OrderID “,”OrderDate”,”Freight”,”ShipCity”,”ShipCountry”]
             });
         });
     </script>
