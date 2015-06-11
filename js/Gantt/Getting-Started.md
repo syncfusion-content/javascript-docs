@@ -47,7 +47,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 4:Simple Gantt chart"%}
 
-1. Create an HTML file and add the following template to the HTML file.
+1.Create an HTML file and add the following template to the HTML file.
 
 {% highlight html %}
 
@@ -82,7 +82,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 
 
-2. Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
+2.Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
 
 {% highlight html %}
 
@@ -96,12 +96,12 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 
 
-3. Create data source for ejGantt.
+3.Create data source for ejGantt.
 
 {% highlight js %}
 
 <head>
-   //…
+   //...
 <script type="text/javascript">
 
     //data source for ejGantt control
@@ -163,7 +163,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 {% highlight js %}
 
 <script type="text/javascript">   
-   //…
+   //...
    $(function () {
             $("#GanttContainer").ejGantt({
                 dataSource: data, //Provides data source for Gantt
@@ -265,15 +265,15 @@ Modify the predecessor details of a task using mouse interactions by setting **a
 {% highlight js %}
 
 $("#GanttContainer").ejGantt({
-//...
-allowGanttChartEditing:true, //enable the taskbar editing 
-predecessorMapping:"predecessor" ,// Predecessor editing 
-editSettings: {
-allowEditing: true,
-allowAdding: true,
-allowDeleting: true,
-editMode: "normal",
-},
+    //...
+    allowGanttChartEditing:true, //enable the taskbar editing 
+    predecessorMapping:"predecessor" ,// Predecessor editing 
+    editSettings: {
+        allowEditing: true,
+        allowAdding: true,
+        allowDeleting: true,
+        editMode: "normal",
+    },
 });
 
 
@@ -294,7 +294,7 @@ You can enable the context menu in **ejGantt,** by setting the **enableContextMe
 {% highlight js %}
 
 $("#GanttContainer").ejGantt({   
-    //…   
+    //...
     enableContextMenu:true
 });
 
@@ -324,7 +324,7 @@ You can show the relationship in tasks, by using the **predecessorsMapping,** as
 {% highlight js %}
 
 $("# GanttContainer ").ejGantt({                
-   //…
+   //...
    predecessorMapping: "predecessor"
 });
 
@@ -346,7 +346,7 @@ In **ejGantt** control, you can display and assign the resource for each task. C
 {% highlight js %}
 
 <script type="text/javascript">
- //..
+//...
 //resourceInfo declaration for Gantt  Control
 var projectResources = [
     { resourceId: 1, resourceName: "Project Manager" },
@@ -366,7 +366,7 @@ var projectResources = [
 {% highlight js %}
 
 $("# GanttContainer ").ejGantt({
-    //…
+    //...
     resourceInfoMapping: "resourceId", //Field name which contains resource details for the task 
     resourceNameMapping: "resourceName",//resource Name mapping
     resourceIdMapping: "resourceId",//resource Id Mapping
