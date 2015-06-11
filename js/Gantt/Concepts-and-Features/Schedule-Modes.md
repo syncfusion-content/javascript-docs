@@ -149,25 +149,16 @@ The **Hour Schedule Mode** supports both the **minute** and h**our** duration un
 {% highlight js %}
 
 
-               $("#GanttContainer").ejGantt({
-
-                        // ...                
-
-                               dateFormat: "M/d/yyyy hh:mm:ss tt",
-
-                               durationUnit: ej.Gantt.DurationUnit.Minute,
-
-                               scheduleHeaderSettings: {
-
-                               scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Hour,
-
-                               minutesPerInterval: ej.Gantt.minutesPerInterval.FiveMinutes,
-
-                                 },
-
-                                                   // ...
-
-                           });
+ $("#GanttContainer").ejGantt({
+               // ... 
+               dateFormat: "M/d/yyyy hh:mm:ss tt",
+               durationUnit: ej.Gantt.DurationUnit.Minute,
+               scheduleHeaderSettings: {
+               scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Hour, 
+               minutesPerInterval: ej.Gantt.minutesPerInterval.FiveMinutes,
+               },
+               // ...
+});
 
 
 
