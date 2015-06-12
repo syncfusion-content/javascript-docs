@@ -25,25 +25,18 @@ Ribbon tab and Contextual Tab are rendered with the following code example.
 
 **[JS]**
 
-**[HTML]**
-<!--To Render the Ribbon control-->
-<!doctype html>
-<html ng-app="syncApp">
-<head>
-<!—Refer the necessary script here-->
-</head>
-<body>
-<div ng-app="ribbonApp">
-            <div ng-controller="RibbonCtrl">
-                <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-itemid="ribbonmenu" e-applicationtab-type="ApplicationMenu">
-                    <div e-tabs>
-                        <div e-tab e-id="home" e-text="HOME">
-                            <div e-groups>
-                                <div e-group e-text="New" e-aligntype="rows">
-                                    <div e-content>
-                                        <div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
-                                            <div e-groups>
-                                                <div e-group e-id="new" e-text="New">
+    <div ng-app="ribbonApp">
+                <div ng-controller="RibbonCtrl">
+                    <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-itemid="ribbonmenu" e-applicationtab-type="ApplicationMenu">
+                        <div e-tabs>
+                            <div e-tab e-id="home" e-text="HOME">
+                                <div e-groups>
+                                    <div e-group e-text="New" e-aligntype="rows">
+                                        <div e-content>
+                                            <div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
+                                                <div e-groups>
+                                                    <div e-group e-id="new" e-text="New">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -51,17 +44,17 @@ Ribbon tab and Contextual Tab are rendered with the following code example.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div e-contextualtabs>
-                        <div e-contextualtab e-backgroundcolor="#FCFBEB" e-bordercolor="#F2CC1C">
-                            <div e-tabs>
-                                <div e-tab e-id="Design" e-text="DESIGN">
-                                    <div e-groups>
-                                        <div e-group e-text="New" e-aligntype="rows">
-                                            <div e-content>
-                                                <div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
-                                                    <div e-groups>
-                                                        <div e-group e-id="Design" e-text="Design">
+                        <div e-contextualtabs>
+                            <div e-contextualtab e-backgroundcolor="#FCFBEB" e-bordercolor="#F2CC1C">
+                                <div e-tabs>
+                                    <div e-tab e-id="Design" e-text="DESIGN">
+                                        <div e-groups>
+                                            <div e-group e-text="New" e-aligntype="rows">
+                                                <div e-content>
+                                                    <div e-content e-defaults-type="button" e-defaults-width="60" e-defaults-height="70">
+                                                        <div e-groups>
+                                                            <div e-group e-id="Design" e-text="Design">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -72,17 +65,13 @@ Ribbon tab and Contextual Tab are rendered with the following code example.
                             </div>
                         </div>
                     </div>
+                    <ul id="ribbonmenu">
+                        <li>
+                            <a>FILE</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul id="ribbonmenu">
-                    <li>
-                        <a>FILE</a>
-                    </li>
-                </ul>
             </div>
-        </div>
-</body>
-</html>
-
 
 {% endhighlight %}
 
@@ -102,19 +91,11 @@ Gallery and Custom Tooltip are rendered by using the following code example.
 
 {% highlight html %}
 
-**[JS]**
+**[HTML]**
 
-[HTML]
-<!--To Render the Ribbon control-->
-<!doctype html>
-<html ng-app="syncApp">
-<head>
-<!—Refer the necessary script here-->
-</head>
-<body>
-<div ng-app="ribbonApp">
+     <div ng-app="ribbonApp">
             <div ng-controller="RibbonCtrl">
-                <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-itemid="ribbonmenu" e-applicationtab-type="ApplicationMenu" e-allowresizing ="true">
+                <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-itemid="ribbonmenu" e-applicationtab-type="ApplicationMenu" e-allowresizing="true">
                     <div e-tabs>
                         <div e-tab e-id="home" e-text="HOME">
                             <div e-groups>
@@ -153,11 +134,7 @@ Gallery and Custom Tooltip are rendered by using the following code example.
                     </li>
                 </ul>
             </div>
-</ul>
-</body>
-</html>
-
-
+        </div>
 {% endhighlight %}
 
 

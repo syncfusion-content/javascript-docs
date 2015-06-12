@@ -27,17 +27,17 @@ The following code example shows how to bind the hierarchical local data into th
 
 <head>
 
-   <title>Getting Started with Gantt Control for JavaScript</title>
+<title>Getting Started with Gantt Control for JavaScript</title>
+<meta charset="utf-8" />
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-    <meta charset="utf-8" />
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
- <!--scripts-->   
- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
- <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
+<!--scripts-->   
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js">
 </script>
- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
- <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
 
     <script type="text/javascript">
 
@@ -45,58 +45,57 @@ The following code example shows how to bind the hierarchical local data into th
 
         var taskDetails = [{
             taskID: 1,
-            taskName: "Design",
-            startDate: new Date("02/10/2014"),
-            endDate: new Date("02/14/2014"),
-            baselineStartDate: new Date("02/10/2014"),
-            baselineEndDate: new Date("02/12/2014"),
-            duration: 5,
-            subtasks: [
-                {
-                    taskID: 2,
-                    taskName: "Software Specification",
-                    startDate: new Date("02/10/2014"),
-                    endDate: new Date("02/12/2014"),
-                    baselineStartDate: new Date("02/10/2014"),
-                    baselineEndDate: new Date("02/12/2014"),
-                    duration: 4,
-                    progress: "60",
-                    resourceId: [2]
-                },
-                {
-                    taskID: 3,
-                    taskName: "Develop prototype",
-                    startDate: new Date("02/10/2014"),
-                    endDate: new Date("02/12/2014"),
-                    baselineStartDate: new Date("02/10/2014"),
-                    baselineEndDate: new Date("02/12/2014"),
-                    duration: 4,
-                    progress: "70",
-                    resourceId: [3]
-                },
-                {
-                    taskID: 4,
-                    taskName: "Get approval from customer",
-                    startDate: new Date("02/12/2014"),
-                    endDate: new Date("02/14/2014"),
-                    baselineStartDate: new Date("02/10/2014"),
-                    baselineEndDate: new Date("02/12/2014"),
-                    duration: 2,
-                    progress: "80",
-                    predecessor: "3FS",
-                    resourceId: [1]
-                },
-                {
-                    taskID: 5,
-                    taskName: "Design complete",
-                    startDate: new Date("02/14/2014"),
-                    endDate: new Date("02/14/2014"),
-                    baselineStartDate: new Date("02/10/2014"),
-                    baselineEndDate: new Date("02/12/2014"),
-                    duration: 0,
-                    predecessor: "4FS"
-                }
-            ]
+            taskName: "Design",
+            startDate: new Date("02/10/2014"),
+            endDate: new Date("02/14/2014"),
+            baselineStartDate: new Date("02/10/2014"),
+            baselineEndDate: new Date("02/12/2014"),
+            duration: 5,subtasks: [
+            { 
+                taskID: 2,
+                taskName: "Software Specification",
+                startDate: new Date("02/10/2014"),
+                endDate: new Date("02/12/2014"),
+                baselineStartDate: new Date("02/10/2014"),
+                baselineEndDate: new Date("02/12/2014"),
+                duration: 4,
+                progress: "60",
+                resourceId: [2]
+            },
+            {
+                taskID: 3,
+                taskName: "Develop prototype",
+                startDate: new Date("02/10/2014"),
+                endDate: new Date("02/12/2014"), 
+                baselineStartDate: new Date("02/10/2014"),
+                baselineEndDate: new Date("02/12/2014"),
+                duration: 4,
+                progress: "70",
+                resourceId: [3]
+            },
+            { 
+                taskID: 4,
+                taskName: "Get approval from customer",
+                startDate: new Date("02/12/2014"),
+                endDate: new Date("02/14/2014"),
+                baselineStartDate: new Date("02/10/2014"),
+                baselineEndDate: new Date("02/12/2014"),
+                duration: 2,
+                progress: "80",
+                predecessor: "3FS",
+                resourceId: [1]
+            },
+            {
+                taskID: 5,
+                taskName: "Design complete",
+                startDate: new Date("02/14/2014"),
+                endDate: new Date("02/14/2014"),
+                baselineStartDate: new Date("02/10/2014"),
+                baselineEndDate: new Date("02/12/2014"),
+                duration: 0,
+                predecessor: "4FS"
+            }
+            ]
         }];
 
     </script>
@@ -110,20 +109,21 @@ The following code example shows how to bind the hierarchical local data into th
 
     <script type="text/javascript">
 
-        $(function () {
-            $("#GanttContainer").ejGantt({
-                dataSource: taskDetails,
-                taskIdMapping: "taskID",
-                taskNameMapping: "taskName",
-                scheduleStartDate: "02/01/2014",
-                scheduleEndDate: "03/14/2014",
-                startDateMapping: "startDate",
-                durationMapping: "duration",
-                progressMapping: "progress",
-                childMapping: "subtasks",
-                treeColumnIndex: 1
-            });
-        });
+    $(function () {
+    $("#GanttContainer").ejGantt(
+    {
+        dataSource: taskDetails,
+        taskIdMapping: "taskID",
+        taskNameMapping: "taskName",
+        scheduleStartDate: "02/01/2014",
+        scheduleEndDate: "03/14/2014",
+        startDateMapping: "startDate",
+        durationMapping: "duration",
+        progressMapping: "progress",
+        childMapping: "subtasks",
+        treeColumnIndex: 1
+    });
+});
 </script>
 
 </body>
@@ -179,21 +179,22 @@ var projectData1 = [
 
         $(function () {
 
-            $("#GanttContainer").ejGantt({
+            $("#GanttContainer").ejGantt(
+            {
                 dataSource: projectData,
                 taskIdMapping: "taskID",
-                parentTaskIdMapping: "pId",  
+                parentTaskIdMapping: "pId",
                 taskNameMapping: "taskName",
-                startDateMapping: "startDate",
-                progressMapping: "progress",
-                durationMapping: "duration",
-                endDateMapping: "endDate",
-                childMapping: "subtasks",
-                enableVirtualization: true,
-                highlightWeekEnds: true,
-                includeWeekend: false,
-                scheduleStartDate: "02/01/2014",
-                scheduleEndDate: "03/14/2014",
+                startDateMapping: "startDate",
+               progressMapping: "progress",
+                durationMapping: "duration",
+                endDateMapping: "endDate",
+                childMapping: "subtasks",
+                enableVirtualization: true,
+                highlightWeekEnds: true,
+                includeWeekend: false,
+                scheduleStartDate: "02/01/2014",
+                scheduleEndDate: "03/14/2014",
             });
         });
 

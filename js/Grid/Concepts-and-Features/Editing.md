@@ -137,27 +137,32 @@ By default, the datasource for Dropdown Edit Column is set by Grid Control from 
 {% highlight html %}
 
 **[JS]**
-<div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {
-        **var countries = [{ text: "France", value: "France"}, { text: "Mexico", value: "Mexico"}, { text: "Belgium", value: "Belgium" }, { text: "Brazil", value: "Brazil" }]**
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowPaging: true,
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-                toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-                columns: [
-                        { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
-                        { field: "CustomerID", headerText: 'Customer ID', width: 90 },
-                        { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80},
-                        { field: "Freight", headerText: 'Freight', width: 80},
-                        { field: "ShipCountry", headerText: 'Ship Country', width: 90, editType: ej.Grid.EditingType.Dropdown, **dataSource: countries** }
-                ]
-        });
-        });
-</script>
+ <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                toolbarSettings: {
+                    showToolbar: true,
+                    toolbarItems: [
+                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                       ej.Grid.ToolBarItems.Cancel
+                    ]
+                },
+                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+                allowPaging: true,
+                columns: [
+                   { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
+                    { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+                    { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80},
+                    { field: "Freight", headerText: 'Freight', width: 80},
+                    { field: "ShipCountry", headerText: 'Ship Country', width: 90, editType: ej.Grid.EditingType.Dropdown, **dataSource: countries** }
+                ]
+            });
+        });
 
-
+    </script>
 {% endhighlight %}
 
 

@@ -16,37 +16,38 @@ The **application menu** support is provided in the Ribbon control application t
 **[JS]**
 
 **[HTML]**
-<!-- ... -->
-<head>
-</head>
-<!-- ... -->
-<body>
-<div id="Ribbon"></div>
-<ul id="menu">
-<li><a>FILE</a>
-<ul>
-<li><a>New</a></li>
-<li><a>Open</a></li>
-</ul>
-</li>
-</ul>
-<div id="Contents">Custom control</div>
-<script type="text/javascript">
-$(function () {
-$("#Ribbon").ejRibbon({
-width: "800px",
-applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
-tabs: [{
-id: "home", text: "HOME", groups: [
-{
-text: "CustomControls", type: "custom", contentID: "Contents"
-}]
-}]
-});
-});
-</script>
-</body>
-<!-- ... -->
+
+	<!-- ... -->
+	<head>
+	</head>
+	<!-- ... -->
+	<body>
+	<div id="Ribbon"></div>
+	<ul id="menu">
+	<li><a>FILE</a>
+	<ul>
+	<li><a>New</a></li>
+	<li><a>Open</a></li>
+	</ul>
+	</li>
+	</ul>
+	<div id="Contents">Custom control</div>
+	<script type="text/javascript">
+	$(function () {
+	$("#Ribbon").ejRibbon({
+	width: "800px",
+	applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+	tabs: [{
+	id: "home", text: "HOME", groups: [
+	{
+	text: "CustomControls", type: "custom", contentID: "Contents"
+	}]
+	}]
+	});
+	});
+	</script>
+	</body>
+	<!-- ... -->
 
 
 {% endhighlight %}

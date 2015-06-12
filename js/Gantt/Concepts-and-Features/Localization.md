@@ -27,8 +27,35 @@ Empty Record</td><td>
 emptyRecord: "No records to display"</td></tr>
 <tr>
 <td>
-Column Header Texts:taskIdtaskNamestartDateendDateresourceInfodurationstatuspredecessorbaselineStartDatebaselineEndDate</td><td>
-columnHeaderTexts: {    taskId: "ID",    taskName: "Task Name",    startDate: "Start Date",    endDate: "End Date",    resourceInfo: "Resources",    duration: "Duration",    status: "Progress",    predecessor: "Predecessor",    baselineStartDate: "Baseline Start Date",    baselineEndDate: "Baseline End Date"}</td></tr>
+<b>Column Header Texts:<b><br/>
+taskId<br/>
+taskName<br/>
+startDate<br/>
+endDate<br/>
+resourceInfo<br/>
+duration<br/>
+status<br/>
+predecessor<br/>
+baselineStartDate<br/>
+baselineEndDate<br/>
+</td>
+<td>
+{% highlight js %}
+columnHeaderTexts: 
+{
+taskId: "ID",
+taskName: "Task Name",
+startDate: "Start Date",
+endDate: "End Date",
+resourceInfo: "Resources",
+duration: "Duration",
+status: "Progress",
+predecessor: "Predecessor",
+baselineStartDate: "Baseline Start Date",
+baselineEndDate: "Baseline End Date"
+}
+{% endhighlight %}
+</td></tr>
 <tr>
 <td>
 Edit Dialog Texts:addFormTitleeditFormTitlesaveButtoncancelButton</td><td>
@@ -36,7 +63,43 @@ editDialogTexts: {     addFormTitle: "New Task",     editFormTitle: "Edit Task",
 <tr>
 <td>
 Date Format</td><td>
-calendars: {     standard: {         days: {             // full name of days             names: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],             // abbreviated names of days             namesAbbr: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],         },         months: {             // full name of months             names: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],             // abbreviated name of months             namesAbbr: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]         },         // set of predefined date and time patterns used by the culture.         patterns: {             d: "M/d/yyyy",             D: "dddd, MMMM dd, yyyy",             F: "dddd, MMMM dd, yyyy h:mm:ss tt",             g: "M/d/yyyy h:mm tt",             G: "M/d/yyyy h:mm:ss tt",             m: "MMMM dd",             M: "MMMM dd",             s: "yyyy'-'MM'-'ddTHH':'mm':'ss",             t: "h:mm tt",             T: "h:mm:ss tt",             u: "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",             y: "MMMM, yyyy",             Y: "MMMM, yyyy"         }     } }</td></tr>
+{% highlight js %}
+calendars: 
+{
+standard: {
+days: 
+{
+// full name of days
+names: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+// abbreviated names of days
+namesAbbr: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+},
+months: {
+// full name of months
+names: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+// abbreviated name of months
+namesAbbr: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+},
+// set of predefined date and time patterns used by the culture.
+patterns: {
+d: "M/d/yyyy",
+D: "dddd, MMMM dd, yyyy",
+F: "dddd, MMMM dd, yyyy h:mm:ss tt",
+g: "M/d/yyyy h:mm tt",
+G: "M/d/yyyy h:mm:ss tt",
+m: "MMMM dd",
+M: "MMMM dd",
+s: "yyyy'-'MM'-'ddTHH':'mm':'ss",
+t: "h:mm tt",
+T: "h:mm:ss tt",
+u: "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
+y: "MMMM, yyyy",
+Y: "MMMM, yyyy"
+}     
+} 
+}
+{% endhighlight %}
+</td></tr>
 </table>
 
 
@@ -122,12 +185,12 @@ ej.Gantt.localization["fr-FR"] = {
 
 $(function () {
 $("#GanttContainer").ejGantt({
-//…
+//...
 locale: "fr-FR"
 });
 });
 
-    </script>
+</script>
 
 </body>
 

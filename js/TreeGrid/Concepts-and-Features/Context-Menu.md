@@ -36,7 +36,7 @@ The following screenshot displays the Context menu in **TreeGrid** control.
 
 {% include image.html url="/js/TreeGrid/Concepts-and-Features/Context-Menu_images/Context-Menu_img1.png" Caption="Context menu in TreeGrid"%}
 
-## ContextMenu Customization
+### ContextMenu Customization
 
 Context menu can be customized by adding a new custom menu item to it. In **ejTreeGrid**, context menu can be customized using **contextMenuOpen** client side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event,
 
@@ -48,7 +48,7 @@ Context menu can be customized by adding a new custom menu item to it. In **ejTr
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 
 $("#treegrid1").ejTreeGrid(
@@ -61,22 +61,21 @@ $("#treegrid1").ejTreeGrid(
 
 
 <script type=”text/javascript”>
-  function customMenu( args )
-{
-   args.contextMenuItems.push(
-   {
-      headerText: "customMenu",
-   iconPath: “url(…/images/custommenu.png)”,
-   eventHandler: customMenuClick,
-   }
-   );
-}
-  function customMenuClick( args )
-  {
-                // ...     
 
-             // ...     
-  }
+function customMenu( args )
+{
+   args.contextMenuItems.push({
+      headerText: "customMenu",
+      iconPath: “url(…/images/custommenu.png)”,
+      eventHandler: customMenuClick,
+   });
+}
+   
+function customMenuClick( args )
+{
+   // ...
+}
+
 </script>
 
 
