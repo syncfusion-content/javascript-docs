@@ -15,16 +15,22 @@ One of the main goal of the unobtrusive support is to achieve the clear separati
 
 The **ej.unobtrusive.min.js** file can be accessed from the following location, which can then be copied and referred in your application.
 
-{% highlight text %}
-
-**<installed location>**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
-
+<table>
+<tr>
+<td>
+**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+</td>
+</tr>
+<tr>
+<td>
+<br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+</td>
+</tr>
+</table>
 
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
-
-
-{% endhighlight %}
 
 
 
@@ -52,18 +58,18 @@ The demonstration of such **data-role** declaration with a simple **DatePicker**
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
-****<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+    <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jquery.globalize.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    **<script src="Scripts/ej/ej.unobtrusive.min.js"></script>**
+    <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
 </head>
 <body> 
 
 <!--DatePicker Control creation with data-role-->
-**<input id="myDatePicker" data-role="ejdatepicker" data-ej-value="05/07/2015" />**
+<input id="myDatePicker" data-role="ejdatepicker" data-ej-value="05/07/2015" />
 
 </body>
 
@@ -75,13 +81,11 @@ The demonstration of such **data-role** declaration with a simple **DatePicker**
 
 
 
-{% highlight text %}
 
-> _**Note: In the above code, value is one of the DatePicker property to set the date value for the control, which is defined here with data-ej keyword prepended to it.**_
-> _**The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the ej.unobtrusive.min.js file from its installed location into the scripts/ej folder of your application.**_
+> _**Note: In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **data-ej** keyword prepended to it.**_
+> _**The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.**_
 
 
-{% endhighlight %}
 
 
 
@@ -106,18 +110,18 @@ An important thing to be noted while using EJ role is that, you need to add the 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
-****<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+    <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jquery.globalize.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    **<script src="Scripts/ej/ej.unobtrusive.min.js"></script>**
+    <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
 </head>
 <body **data-ejrole**> 
 
 <!--DatePicker Control creation with ej-role-->
-**<input id="myDatePicker" type="text" ej-datepicker ej-value= "01/01/2013" />**
+<input id="myDatePicker" type="text" ej-datepicker ej-value= "01/01/2013" />
 
 </body>
 
@@ -128,13 +132,10 @@ An important thing to be noted while using EJ role is that, you need to add the 
 
 
 
-{% highlight text %}
-
-> _**Note: In the above code, value is one of the DatePicker property to set the date value for the control, which is defined here with ej- keyword prepended to it.**_ 
-> _**Also, before proceeding with the property definition, it is necessary to define the control name with the ej- prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)**_
+> _**Note: In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **ej- ** keyword prepended to it.**_ 
+> _**Also, before proceeding with the property definition, it is necessary to define the control name with the **ej- ** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)**_
 
 
-{% endhighlight %}
 
 
 
@@ -159,18 +160,18 @@ While making use of directives, you need to add the **data-directive** attribute
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
-****<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+    <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jquery.globalize.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    **<script src="Scripts/ej/ej.unobtrusive.min.js"></script>**
+    <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
 </head>
-<body **data-directive**> 
+<body data-directive> 
 
 <!--DatePicker Control creation with data-directive-->
-**<datepicker ej-value="01/01/2015" ></datepicker>**
+<datepicker ej-value="01/01/2015" ></datepicker>
 
 </body>
 
@@ -181,13 +182,9 @@ While making use of directives, you need to add the **data-directive** attribute
 
 
 
-{% highlight text %}
-
-> _**Note: In the above code, value is one of the available DatePicker property to set the value for the control, which is defined here with ej- keyword prepended to it.**_ 
+> _**Note: In the above code, **value** is one of the available DatePicker property to set the value for the control, which is defined here with **ej- ** keyword prepended to it.**_ 
 > _**Also, you can notice here that the HTML tag name is replaced by the control name to be created.**_
 
-
-{% endhighlight %}
 
 
 

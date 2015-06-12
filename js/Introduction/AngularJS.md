@@ -29,32 +29,40 @@ The following two JavaScript libraries are necessary to create AngularJS applica
 
 You can find the common **angular.min.js** from the following installed location of your machine,
 
-{% highlight text %}
-
-**<installed location>**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external 
-
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
-
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+</td>
+</tr>
+<tr>
+<td> 
+<br/>
+**For example**, If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+</td>
+</tr>
+</table>
 
 
 The **ej.widget.angular.min.js** file can be copied from the below specified location,
 
-{% highlight text %}
-
-**<installed location>**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\ scripts\ common 
-
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\ common
-
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common 
+</td>
+</tr>
+<tr>
+<td>
+</br>
+**For example**, If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<br/>
+C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+</td>
+</tr>
+</table>
 
 
 ### Directives
@@ -64,7 +72,7 @@ In general, AngularJS directives are extended HTML attributes with the prefix **
 {% highlight html %}
 
 
-<html xmlns="http://www.w3.org/1999/xhtml" **ng-app="DateCtrl"**>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
   <head>
     <title>Essential Studio for JavaScript - Angular</title>
   </head>
@@ -84,13 +92,13 @@ All the Syncfusion widget’s **control directives** are prefixed with **ej-** t
 {% highlight html %}
 
 
-<html xmlns="http://www.w3.org/1999/xhtml" **ng-app="DateCtrl"**>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
   <head>
     <title>Essential Studio for JavaScript : DatePicker - Angular</title>
   </head>
 
   <body ng-controller="DatePickerCtrl">
-    <input id="datepick" **ej-datepicker****e-value**="dateValue" **e-enableStrictMode**="true" />
+    <input id="datepick" ej-datepicker e-value="dateValue" e-enableStrictMode="true" />
 
   </body>
 
@@ -111,12 +119,12 @@ AngularJS applications are controlled by the Controllers, which maintains the en
 {% highlight html %}
 
 
-<html xmlns="http://www.w3.org/1999/xhtml" **ng-app="DateCtrl"**>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
   <head>
     <title>Essential Studio for JavaScript : DatePicker - Angular</title>
   </head>
 
-  <body **ng-controller="DatePickerCtrl"**>
+  <body ng-controller="DatePickerCtrl">
 
     <input id="datepick" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
 
@@ -134,18 +142,17 @@ AngularJS applications are controlled by the Controllers, which maintains the en
 
 A **module** is a container for the various parts of an application that we create and it mainly defines an application. All the controllers within an application should belong to this module.
 
-To use our Syncfusion widgets in AngularJS applications, all the EJ directives are encapsulated into a single module called **ejangular**. Therefore, in order to make use of Syncfusion widget’s angular features, you need to set your application’s module name as **ejangular a**s depicted in the below sample code, 
+To use our Syncfusion widgets in AngularJS applications, all the EJ directives are encapsulated into a single module called **ejangular**. Therefore, in order to make use of Syncfusion widget’s angular features, you need to set your application’s module name as **ejangular** as depicted in the below sample code, 
 
 {% highlight js %}
 
 
     <script type="text/javascript">
-        angular.module('DateCtrl', **['ejangular']**)
+        angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl', function ($scope) {
                $scope.dateValue = "2/3/2013";
            });
     </script>
-
 
 
 
@@ -164,7 +171,7 @@ It is said one-way binding because the model values are directly bound to the wi
 {% highlight html %}
 
 
-    <input id="datepick" ej-datepicker  **e-value="01/01/2015" e-enableStrictMode="true"** />
+    <input id="datepick" ej-datepicker  e-value="01/01/2015" e-enableStrictMode="true" />
 
 
 
@@ -198,11 +205,11 @@ value</td></tr>
 <tr>
 <td>
 ejBarcode</td><td>
-No Two way binding properties</td></tr>
+-</td></tr>
 <tr>
 <td>
 ejBulletgraph</td><td>
-valuecomparativeMeasureValue</td></tr>
+value<br/>comparativeMeasureValue</td></tr>
 <tr>
 <td>
 ejButton</td><td>
@@ -210,7 +217,7 @@ ejButton</td><td>
 <tr>
 <td>
 ejChart</td><td>
-xZoomFactoryZoomFactorxZoomPositionyZoomPosition </td></tr>
+xZoomFactor<br/>yZoomFactor<br/>xZoomPosition<br/>yZoomPosition </td></tr>
 <tr>
 <td>
 ejCheckBox</td><td>
@@ -218,7 +225,7 @@ ejCheckBox</td><td>
 <tr>
 <td>
 ejCircularGauge</td><td>
-valueminimummaximum</td></tr>
+value<br/>minimum<br/>maximum</td></tr>
 <tr>
 <td>
 ejDatePicker</td><td>
@@ -250,15 +257,15 @@ selectedItem</td></tr>
 <tr>
 <td>
 ejGrid</td><td>
-dataSourceselectedRowpageSettings.currentPage</td></tr>
+dataSource<br/>selectedRow<br/>pageSettings.currentPage</td></tr>
 <tr>
 <td>
 ejLinearGauge</td><td>
-valueminimummaximum</td></tr>
+value<br/>minimum<br/>maximum</td></tr>
 <tr>
 <td>
 ejMaps</td><td>
-zoomLevel,minZoom,zoomFactor,maxZoom,baseMapIndex</td></tr>
+zoomLevel<br/>minZoom<br/>zoomFactor<br/>maxZoom<br/>baseMapIndex</td></tr>
 <tr>
 <td>
 ejMaskEdit</td><td>
@@ -270,19 +277,19 @@ ejMenu</td><td>
 <tr>
 <td>
 ejOlapChart</td><td>
-title.textcommonSeriesOptions.typelocale</td></tr>
+title.text<br/>commonSeriesOptions.type<br/>locale</td></tr>
 <tr>
 <td>
 ejOlapClient</td><td>
-TitlegridLayoutdisplaySettings.modedisplaySettings.defaultViewdisplaySettings.controlPlacementdisplaySettings.enableTogglePanellocale </td></tr>
+Title<br/>gridLayout<br/>displaySettings.mode<br/>displaySettings.defaultView<br/>displaySettings.controlPlacement<br/>displaySettings.enableTogglePanel<br/>locale </td></tr>
 <tr>
 <td>
 ejOlapGauge</td><td>
-rowsCountcolumnsCountshowHeaderLabellocaleradiusframeType </td></tr>
+rowsCount<br/>columnsCount<br/>showHeaderLabel<br/>locale<br/>radius<br/>frameType </td></tr>
 <tr>
 <td>
 ejOlapGrid</td><td>
-LayoutenableCellContexthyperlinkSettings.enableValueCellHyperlinkhyperlinkSettings.enableRowHeaderHyperlinkhyperlinkSettings.enableColumnHeaderHyperlinkhyperlinkSettings.enableSummaryCellHyperlink </td></tr>
+Layout<br/>enableCellContext<br/>hyperlinkSettings.enableValueCellHyperlink<br/>hyperlinkSettings.enableRowHeaderHyperlink<br/>hyperlinkSettings.enableColumnHeaderHyperlink<br/>hyperlinkSettings.enableSummaryCellHyperlink </td></tr>
 <tr>
 <td>
 ejRadioButton</td><td>
@@ -306,15 +313,15 @@ ejRotator</td><td>
 <tr>
 <td>
 ejSchedule</td><td>
-fields.dataSourcecurrentViewcurrentDate</td></tr>
+fields.dataSource<br/>currentView<br/>currentDate</td></tr>
 <tr>
 <td>
 ejScroller</td><td>
-scrollTop  scrollLeft</td></tr>
+scrollTop<br/>  scrollLeft</td></tr>
 <tr>
 <td>
 ejSlider</td><td>
-value  values</td></tr>
+value <br/> values</td></tr>
 <tr>
 <td>
 ejSplitButton</td><td>
@@ -358,7 +365,7 @@ ejToolbar</td><td>
 <tr>
 <td>
 ejTreemap</td><td>
-dataSource,colorValuePath,weightValuePath</td></tr>
+dataSource<br/>colorValuePath<br/>weightValuePath</td></tr>
 <tr>
 <td>
 ejTreeView</td><td>
@@ -387,14 +394,14 @@ The two-way data binding has been demonstrated in the below code,
 
   <body ng-controller="DatePickerCtrl">
 
-    <input id="mydatepicker1" ej-datepicker  e-value="**dateValue**" e-enableStrictMode="true" />
+    <input id="mydatepicker1" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
 
-    <input id="mydatepicker2" ej-datepicker  e-value="**dateValue**" e-enableStrictMode="true" />
+    <input id="mydatepicker2" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
 
     <script type="text/javascript">
         angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl', function ($scope) {
-               $scope.**dateValue** = "01/01/2015";
+               $scope.dateValue = "01/01/2015";
            });
     </script>
 

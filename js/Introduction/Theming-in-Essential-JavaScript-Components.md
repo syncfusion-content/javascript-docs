@@ -17,7 +17,7 @@ By default, there are **13** kinds of theming supports available for **Essential
 
 * flat-azure-dark
 
-* fat-lime
+* flat-lime
 
 * flat-lime-dark
 
@@ -52,25 +52,23 @@ For example – Here, we are showing you how to refer only the **flat-saffron** 
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img1.png)
 {:.image }
 
-Figure 40: Files to be chosen for referring only single theme in your application
+    Files to be chosen for referring only single theme in your application
 {:.caption }
 
 
 
 
-{% highlight text %}
 
-> _**Note: The common-images folder is needed to be copied into your application mandatorily for any of the theme selection, as it includes all the common font icons and other images required for the control to render.**_
+> _**Note: The **common-images** folder is needed to be copied into your application mandatorily for any of the theme selection, as it includes all the common font icons and other images required for the control to render.**_
 
 
-{% endhighlight %}
 
 The below image depicts the files that are copied into the **Content** folder of your JS application,
 
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img2.png)
 {:.image }
 
-Figure 41: Folder structure depicting the copied theme files in the application
+    Folder structure depicting the copied theme files in the application
 {:.caption }
 
 
@@ -85,7 +83,7 @@ Once the required theme folders are copied into your application, it is necessar
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
-    **<link href="Content/ej/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" />**
+    <link href="Content/ej/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" />
     <!-- Other required SCRIPT REFERENCES -->
 </head>
 <body> 
@@ -108,10 +106,8 @@ Once the required theme folders are copied into your application, it is necessar
 
 
 
-{% highlight text %}
-
-> _**Note: The ej.web.all.min.css file is available separately for all the 13 available themes in their respective theme folders.**_
-> _**It is the combination of two files namely, ej.theme.min.css file (available separately within each of the theme folders) and ej.widgets.core.min.css – which is shown in the below image,**_
+ _**Note: The **ej.web.all.min.css** file is available separately for all the 13 available themes in their respective theme folders.**_
+ _**It is the combination of two files namely, **ej.theme.min.css** file (available separately within each of the theme folders) and **ej.widgets.core.min.css** – which is shown in the below image,**_
 
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img3.png)
 {:.image }
@@ -122,7 +118,6 @@ Once the required theme folders are copied into your application, it is necessar
 
 
 
-{% endhighlight %}
 
 Since, ej.web.all.min.css file is a combination of two files (**ej.theme.min.css & ej.widgets.core.min.css**), therefore it is also possible to refer these two files directly in the place of its reference as shown below, 
 
@@ -134,8 +129,8 @@ Since, ej.web.all.min.css file is a combination of two files (**ej.theme.min.css
 
 <head>
     <title>My first HTML page</title>
-    **<link href="Content/ej/web/ej.widgets.core.min.css" rel="stylesheet" />**
-    **<link href="Content/ej/web/flat-saffron/ej.theme.min.css" rel="stylesheet" />**
+    <link href="Content/ej/web/ej.widgets.core.min.css" rel="stylesheet" />
+    <link href="Content/ej/web/flat-saffron/ej.theme.min.css" rel="stylesheet" />
     <!-- Other required SCRIPT REFERENCES -->
 </head>
 <body> 
@@ -179,7 +174,7 @@ By default, the header element of the DatePicker control which displays the Mont
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img4.png)
 {:.image }
 
-Figure 42: DatePicker control with header color displayed based on the theme applied.
+    DatePicker control with header color displayed based on the theme applied.
 {:.caption }
 
 
@@ -211,7 +206,7 @@ To change the background-color of the above header element of the DatePicker, yo
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>My first HTML page</title>
-    **<link href="Content/ej/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" />**
+    <link href="Content/ej/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" />
     <!-- Other required SCRIPT REFERENCES -->
   </head>
 
@@ -222,14 +217,14 @@ To change the background-color of the above header element of the DatePicker, yo
     <script type="text/javascript">
         $(function () {
             // declaration of ejDatePicker
-            $("#startDate").ejDatePicker({ **cssClass: "customStyles"** });
+            $("#startDate").ejDatePicker({ cssClass: "customStyles" });
         });
     </script>
 
     <style>
-**.customStyles .e-header {**
-            **background-color: yellowgreen;**
-        **}**
+        .customStyles .e-header {
+            background-color: yellowgreen;
+        }
     </style>
 
   </body>
@@ -245,11 +240,9 @@ To change the background-color of the above header element of the DatePicker, yo
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img5.png)
 {:.image }
 
-
+    DatePicker control with customized header color & **customStyles** class added to the root element
 {:.caption }
-
-
-Figure 43: DatePicker control with customized header color & **customStyles** class added to the root element 
+ 
 
 
 
@@ -284,9 +277,9 @@ Follow the below steps to customize the entire css file and refer it in your HTM
   <head>
     <title>My first HTML page</title>
 
-**<link href="~/Content/ej/web/ej.widgets.core.min.css" rel="stylesheet" />**
-     **<link href="~/Content/ej/web/flat-saffron/ej.theme.css" rel="stylesheet" />**
-     <!-- Other required SCRIPT REFERENCES -->
+    <link href="~/Content/ej/web/ej.widgets.core.min.css" rel="stylesheet" />
+    <link href="~/Content/ej/web/flat-saffron/ej.theme.css" rel="stylesheet" />
+    <!-- Other required SCRIPT REFERENCES -->
   </head>
 
   <body> 
@@ -315,7 +308,7 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img7.png)
 {:.image }
 
-                      Figure 45: CSS file with default root e-datepicker name
+    CSS file with default root e-datepicker name
 {:.caption }
 
 
@@ -324,7 +317,7 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img8.png)
 {:.image }
 
-Figure 46: CSS file with Customized root class name
+    CSS file with Customized root class name
 {:.caption }
 
 
@@ -378,8 +371,8 @@ Figure 46: CSS file with Customized root class name
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>My first HTML page</title>
-******<link href="~/Content/ej/web/ej.widgets.core.min.css" rel="stylesheet" />**
-     **<link href="~/Content/ej/web/flat-saffron/ej.theme.css" rel="stylesheet" />**
+    <link href="~/Content/ej/web/ej.widgets.core.min.css" rel="stylesheet" />
+    <link href="~/Content/ej/web/flat-saffron/ej.theme.css" rel="stylesheet" />
     <!-- Other required SCRIPT REFERENCES -->
   </head>
 
@@ -390,7 +383,7 @@ Figure 46: CSS file with Customized root class name
     <script type="text/javascript">
         $(function () {
             // declaration of ejDatePicker
-            $("#startDate").ejDatePicker({ **cssClass: "e-customdatepicker"** });
+            $("#startDate").ejDatePicker({ cssClass: "e-customdatepicker" });
         });
     </script>
 
@@ -409,7 +402,7 @@ Figure 46: CSS file with Customized root class name
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img12.png)
 {:.image }
 
-                             Figure 47: DatePicker control with customized elements
+    DatePicker control with customized elements
 {:.caption }
 
 

@@ -23,13 +23,11 @@ Syncfusion JavaScript components are compatible with almost all the major browse
 
 * Safari 5 +
 
-{% highlight text %}
 
-> _**Note: To render the Syncfusion JavaScript components properly in the web browsers, it is mandatory to specify the document type declaration, DOCTYPE at the beginning of your HTML or XHTML application.**_ 
-> _**If DOCTYPE is not specified in your HTML document, then the quirks mode in web browser will not support the rendering of any of the Syncfusion JavaScript components.**_
+> _**Note: To render the Syncfusion JavaScript components properly in the web browsers, it is mandatory to specify the document type declaration, **DOCTYPE** at the beginning of your HTML or XHTML application.**_ 
+> _**If **DOCTYPE** is not specified in your HTML document, then the quirks mode in web browser will not support the rendering of any of the Syncfusion JavaScript components.**_
 
 
-{% endhighlight %}
 
 ### Platforms
 
