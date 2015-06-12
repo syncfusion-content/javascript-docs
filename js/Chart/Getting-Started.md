@@ -25,7 +25,6 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 {% highlight html %}
 
-**[HTML]**
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +49,7 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 {% highlight html %}
 
-**[HTML]**
+
 <body>
     <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
 </body>
@@ -64,7 +63,7 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 {% highlight html %}
 
-**[HTML]**
+
 <body>
     <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
     <script type="text/javascript" language="javascript ">
@@ -99,7 +98,7 @@ By default, line series is used. To create a **series**, you need to add the fol
 
 {% highlight js %}
 
-**[JS]**
+
             $("#chartcontainer").ejChart({
                 // ...      
                 series: [{
@@ -143,7 +142,7 @@ The precipitation data is taken from [http://www.usclimatedata.com/](http://www.
 
 {% highlight js %}
 
-**[JS]**
+
         //Json data for chart datasource
         window.chartData = [
             { date: 'Jan', high: 42, low: 27, precipitation: 3.03 },
@@ -152,12 +151,12 @@ The precipitation data is taken from [http://www.usclimatedata.com/](http://www.
             { date: 'Apr', high: 64, low: 44, precipitation: 3.15 },
             { date: 'May', high: 75, low: 54, precipitation: 4.13 },
             { date: 'Jun', high: 83, low: 63, precipitation: 3.23 },
-       	{ date: 'Jul', high: 87, low: 68, precipitation: 4.13 },
-{ date: 'Aug', high: 84, low: 66, precipitation: 4.88 },
-{ date: 'Sep', high: 78, low: 59, precipitation: 3.82 },
-{ date: 'Oct', high: 67, low: 48, precipitation: 3.07 },
-{ date: 'Nov', high: 55, low: 38, precipitation: 2.83 },
-{ date: 'Dec', high: 45, low: 29, precipitation: 2.8 }
+       	    { date: 'Jul', high: 87, low: 68, precipitation: 4.13 },
+            { date: 'Aug', high: 84, low: 66, precipitation: 4.88 },
+            { date: 'Sep', high: 78, low: 59, precipitation: 3.82 },
+            { date: 'Oct', high: 67, low: 48, precipitation: 3.07 },
+            { date: 'Nov', high: 55, low: 38, precipitation: 2.83 },
+            { date: 'Dec', high: 45, low: 29, precipitation: 2.8 }
         ];
 
 
@@ -170,7 +169,7 @@ Now, set the **datasource** to the **Chart** series using **data, xName, yName**
 
 {% highlight js %}
 
-**[JS]**
+
     $(function () {
             $("#chartcontainer").ejChart(
             {
@@ -233,7 +232,7 @@ The following code example illustrates how to add Chart axis.
 
 {% highlight js %}
 
-**[JS]**
+
 $("#chartcontainer").ejChart({
 // ...
       primaryXAxis: {
@@ -314,7 +313,7 @@ The following screenshot displays a Chart with the desired output.
 
 {% highlight js %}
 
-**[JS]** 
+
         $("#chartcontainer").ejChart({
             // ...             
             series: [{
@@ -355,7 +354,7 @@ To display the **tooltip** of **Chart** series, you can enable the “**visible*
 
 {% highlight js %}
 
-**[JS]**
+
 ****$("#chartcontainer").ejChart({
             // ...             
             series: [
