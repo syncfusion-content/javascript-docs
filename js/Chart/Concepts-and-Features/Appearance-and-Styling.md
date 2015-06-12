@@ -97,7 +97,7 @@ You can customize a **tooltip** with required template by adding a **“div”**
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img1.png" Caption="Chart with Customized ToolTip"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img1.png" Caption="Chart with Customized ToolTip"%}
 
 ## Label Template
 
@@ -178,7 +178,7 @@ You customize a **data label** with required template by adding a **“div”** 
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img2.png" Caption="Chart with Customized Label"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img2.png" Caption="Chart with Customized Label"%}
 
 ## Label Formatting
 
@@ -240,7 +240,7 @@ Some of the **labelFormat** for **datetime** axis:
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img3.png" Caption="Chart with Customized Axis Labels"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img3.png" Caption="Chart with Customized Axis Labels"%}
 
 ## Title and Subtitle
 
@@ -262,7 +262,7 @@ Some of the **labelFormat** for **datetime** axis:
 
 The following screenshot shows the **Title and Subtitle** in **Chart** control.
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img4.png" Caption="Title and subtitle"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img4.png" Caption="Title and subtitle"%}
 
 ## Chart Background and Foreground
 
@@ -286,7 +286,7 @@ Using the **background** property you can customize the background color of the 
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img5.png" Caption="Chart with customized background"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img5.png" Caption="Chart with customized background"%}
 
 ### To Chart Area
 
@@ -307,7 +307,7 @@ Using **background** property in **ChartArea** you can customize the background 
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img6.png" Caption="Chart with Customized Chart area"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img6.png" Caption="Chart with Customized Chart area"%}
 
 ### BackGround Image
 
@@ -325,7 +325,7 @@ JS Chart allows you to add background image for your Chart using backGroundImage
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img7.png" Caption="Chart with background image"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img7.png" Caption="Chart with background image"%}
 
 ## Theme
 
@@ -393,7 +393,7 @@ Following predefined themes are available in **JS Chart**.
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img8.png" Caption="Chart with Theme"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img8.png" Caption="Chart with Theme"%}
 
 ## Custom Color palette 
 
@@ -412,5 +412,5 @@ Apart from the themes, to define custom set of color you can use “**palette**�
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img9.png" Caption="Chart with Palette property"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/appearanceandstyling_img9.png" Caption="Chart with Palette property"%}
 
