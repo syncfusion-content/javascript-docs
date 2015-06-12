@@ -11,7 +11,7 @@ documentation: ug
 
 The functions can be invoked the same way the properties are accessed. The following syntaxes defines the ways to invoke the public methods of the widgets.
 
-{% highlight text %}
+
 ```js
 
 1. var obj = $(“jquery-selector”).data(“<ej-plugin-name>”); **[Recommended method]**
@@ -32,7 +32,6 @@ The functions can be invoked the same way the properties are accessed. The follo
 ```
 
 
-{% endhighlight %}
 
 
 
