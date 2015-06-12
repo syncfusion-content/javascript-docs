@@ -13,7 +13,7 @@ Whenever the control undergoes some changes or action, it should be notified to 
 
 #### During Initialization
 
-{% highlight text %}
+
 ```js
 
 1. $(“jquery-selector”).<ej-plugin-name>({ eventName : <eventhandler> });
@@ -21,12 +21,11 @@ Whenever the control undergoes some changes or action, it should be notified to 
    $("#myDate").ejDatePicker({ select: function () { // event handler }  });
 ```
 
-{% endhighlight %}
 
 
 #### After initialization
 
-{% highlight text %}
+
 ```js
 
 1. $(“jquery-selector”).<ej-plugin-name>(“model.eventName”, <eventhandler>);
@@ -44,7 +43,7 @@ Whenever the control undergoes some changes or action, it should be notified to 
 
 
 ```
-{% endhighlight %}
+
 
 
 
