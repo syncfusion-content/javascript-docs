@@ -7,17 +7,19 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# Title
+### Title
 
 **Title** is the area on top of the Chart control that displays the text explaining the **OlapChart** data. Title text is displayed in a customizable format. 
+
 
 **Setting value to Chart Title**
 
 Title property allows you to set the default title for a Chart as follows. 
 
+
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
         title: { text: "OLAP Chart in Essential Studio" }
@@ -26,9 +28,9 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Title_images/Title_img1.png" Caption="OLAP Chart Title"%}
+
+<br/>
 
 **Title Text Customization** 
 
@@ -36,7 +38,7 @@ You can customize the title text font using **title.font** property.
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $(function () {
     $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",title: { text: "OlapChart in Essential Studio" 
@@ -48,11 +50,7 @@ function load(args) {
         this.model.title.font.fontWeight = "bold"
 }
 
-
-
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Title_images/Title_img2.png" Caption="Customizing Chart Title"%}
 

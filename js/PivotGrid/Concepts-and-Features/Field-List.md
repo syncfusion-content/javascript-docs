@@ -7,17 +7,15 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Field List
+### Field List
 
-> _**Note:**__**This feature is applicable only for relational datasource.**_
+> _**Note:**_ **This feature is applicable only for relational datasource.**
 
 Field List (also known as Pivot Schema Designer) is powerful tool that allows you to create and manage PivotTable (PivotGrid) with multi-dimensional/relational data. Using this **PivotGrid** you can visualize large amount of data in cross-tabular format and the Field List also allows you to filter members and also to customize the report dynamically on the fly using drag-and-drop operation.
 
-
-
 {% highlight javascript %}
 
-**[JS]** 
+[JS]
   $(function () {
                     $("#PivotGrid").ejPivotGrid({
                             url: "/wcf/PivotGridService.svc", afterServiceInvoke: "onServiceInvokes"
@@ -29,16 +27,11 @@ Field List (also known as Pivot Schema Designer) is powerful tool that allows yo
                     }
 
 
-
 {% endhighlight %}
 
-
-
-
-
-
-
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img1.png" Caption="Field List"%}
+
+<br/>
 
 **Interactions**
 
@@ -48,11 +41,15 @@ You can change the report on the fly through simple drag-and-drop operation. You
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img2.png" Caption="Drag and drop operation"%}
 
+<br/>
+
 **Check and Uncheck**
 
 You can alter the report on the fly through check and uncheck option (as an alternate). By default, fields are added to the row label when checked.
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img3.png" Caption="Check and Uncheck operation"%}
+
+<br/>
 
 **Filtering** 
 
@@ -60,9 +57,11 @@ Filter pop-up window can be launched by clicking on the expander icon available 
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img4.png" Caption="Filter pop-up window - Open Indicator "%}
 
-
+<br/>
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img5.png" Caption="Filter pop-up window"%}
+
+<br/>
 
 **Layout Section**
 

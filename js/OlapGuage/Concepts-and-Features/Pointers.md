@@ -7,27 +7,25 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-# Pointers
+### Pointers
 
 **Pointers** are used to indicate the range on scale area based on the values passed for the range values.
 
-## Types of Pointers
+#### Types of Pointers
 
 Two different types of pointer available in **OlapGuage** are:
 
-1. Needle
+   1. Needle
 
-2. Marker
+   2. Marker
 
-## Changing Pointer Types
+#### Changing Pointer Types
 
-You can set the **pointer** to Needle type by setting “**pointerType**”****property to “**Needle**” and the pointer to Marker type by setting the “**pointerType”** properties to “**Marker**”.
-
-
+You can set the **pointer** to Needle type by setting “**pointerType**”  property to “**Needle**” and the pointer to Marker type by setting the “**pointerType**" properties to  “**Marker**”.
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -96,21 +94,17 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 
 
+{% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img1.png" Caption="Pointer Type – Needle & Marker"%}
 
+<br/>
 
-
-
-{% include image.html url="/js/OlapGuage/Concepts-and-Features/Pointers_images/Pointers_img1.png" Caption="Figure: Pointer Type – Needle & Marker"%}
-
-## Length and Width Customization
+#### Length and Width Customization
 
 You can customize the **Pointer** length and width using the “**pointerLength**” and “**pointerWidth**” property.
 
-
-
 {% highlight js %}
 
-**[JS]**
+[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -179,21 +173,17 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 
 
+{% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img2.png" Caption="Length and Width Customization"%}
 
+<br/>
 
+#### Background Customization 
 
-
-{% include image.html url="/js/OlapGuage/Concepts-and-Features/Pointers_images/Pointers_img2.png" Caption="Figure: Length and Width Customization"%}
-
-## Background Customization 
-
-You can customize the **Pointer background** color using “**backgroundcolor**”****property.
-
-
+You can customize the **Pointer background** color using “**backgroundcolor**” property.
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
          backgroundColor: "transparent", 
@@ -263,23 +253,17 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 
 
+{% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img3.png" Caption="Background Color Customization"%}
 
+<br/>
 
+#### Shapes Customization
 
-
-
-
-{% include image.html url="/js/OlapGuage/Concepts-and-Features/Pointers_images/Pointers_img3.png" Caption="Figure: Background Color Customization"%}
-
-## Shapes Customization
-
-You can customize **Pointer****shapes** using the “**needlestyle**” property. 
-
-
+You can customize **Pointer shapes** using the “**needlestyle**” property. 
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -349,9 +333,5 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 
 
-
-
-
-
-{% include image.html url="/js/OlapGuage/Concepts-and-Features/Pointers_images/Pointers_img4.png" Caption="Figure: Shape Customization"%}
+{% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img4.png" Caption="Shape Customization"%}
 
