@@ -79,7 +79,6 @@ The following are **3D** series types:
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             commonSeriesOptions: { type: "bar" },
             // ...             
@@ -106,7 +105,6 @@ The following are **3D** series types:
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...   
             series: [{
@@ -147,7 +145,6 @@ The following are **3D** series types:
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ... 
             series: [{
@@ -185,7 +182,6 @@ The following are **3D** series types:
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...  
             series: [{
@@ -220,7 +216,6 @@ The following are **3D** series types:
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...  
             series: [{
@@ -254,7 +249,6 @@ The following are **3D** series types:
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             commonSeriesOptions:
             {
@@ -295,7 +289,6 @@ The following screenshot displays the **100% 3D Stacking Column.**
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             commonSeriesOptions:
             {

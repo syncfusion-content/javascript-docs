@@ -25,7 +25,6 @@ You can choose any of the Chart axis type using the” **valueType**” property
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...             
             primaryXAxis:
@@ -55,7 +54,6 @@ By default the valueType of the axis is double and it represents the numerical d
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...             
             primaryXAxis:
@@ -140,7 +138,6 @@ The **Interval** property of **DateTime** Axis can be any double value based on 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...             
             primaryXAxis:
@@ -211,7 +208,6 @@ Category (x) axis displays text labels instead of numerical intervals. By defaul
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...             
             primaryYAxis:
@@ -245,7 +241,6 @@ An axis displaying a logarithmic scale is very useful when your data values span
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...             
             primaryYAxis: {
@@ -295,7 +290,6 @@ In cases of multiple series, a **Chart** can have multiple x and y axes to repre
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...             
             rowDefinitions:
@@ -365,7 +359,6 @@ In the above code, you can remove the **rowDefinition** and **rowIndex** from ax
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...  
 
@@ -452,7 +445,6 @@ You can customize the ejChart Axis title text, font styles and color using “**
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             primaryXAxis:
             {
@@ -483,7 +475,6 @@ You can customize the ejChart Axis title text, font styles and color using “**
 
 {% highlight js %}
 
-**[JS]**
 $("#container").ejChart({
             //......
             primaryXAxis:
@@ -516,7 +507,6 @@ The axis labels are present along the axis **showing** the value of the data it 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...             
             primaryXAxis:
@@ -558,7 +548,6 @@ There are two types of **LabelPlacement**:
 
 {% highlight js %}
 
-**[JS]**
 $("#chartcontainer").ejChart({
             // ...             
             primaryXAxis:
@@ -586,7 +575,6 @@ Axis labels can further be customized to render inside the chart area using the 
 
 {% highlight js %}
 
-**[JS]**
         $("#Container").ejChart({
             primaryXAxis: {
                 labelPosition: "inside",
@@ -611,7 +599,7 @@ Axis labels can further be customized to render inside the chart area using the 
 
 {% highlight js %}
 
-**[JS]**
+
         $("#chartcontainer").ejChart({
             primaryXAxis:
             {
@@ -650,7 +638,6 @@ It is rendered between the major tick lines of Chart axis. To display **minorTic
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             primaryXAxis:
             {
@@ -689,7 +676,6 @@ You can customize tick lines and render them inside the chart area using the pro
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             primaryXAxis: {
                 tickLinesPosition: "inside",
@@ -720,7 +706,6 @@ It is rendered between the **major gridlines** of Chart area.To display **minor 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             primaryXAxis:
             {
@@ -771,7 +756,6 @@ Immediate adjacent band of every even grid bands are Odd Grid Bands**.** You can
 
 {% highlight js %}
 
-**[JS]**
         $("#container").ejChart({
             primaryXAxis: {
                 alternateGridBand: {
@@ -804,7 +788,6 @@ You can display the Chart series in to inversed position using “**isInversed**
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({           
             primaryYAxis:
             {
@@ -826,7 +809,6 @@ By default, the x-axis is arranged horizontally at the bottom of the Chart and t
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             primaryXAxis:
             {
@@ -867,7 +849,6 @@ Sometimes the Chart dimensions could cause the labels to intersect. You can avoi
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             primaryXAxis:
             {

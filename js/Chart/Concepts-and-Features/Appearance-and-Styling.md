@@ -15,9 +15,8 @@ documentation: ug
 
 You can customize a **tooltip** with required template by adding a **“div”** element with an **“id”** to the web page and assigning the **“id”** to the property **“template”** under **“tooltip”** as illustrated in the following code example.
 
-{% highlight js %}
+{% highlight html %}
 
-**[HTML]**
     <div id="Tooltip" style="display: none;">
         <div id="icon">
             <div id="grain"></div>
@@ -74,7 +73,6 @@ You can customize a **tooltip** with required template by adding a **“div”**
     </style>
     <script type="text/javascript" language="javascript "> 
 
-**[JS]**
 
         $(function () {
             $("#container").ejChart({
@@ -107,7 +105,6 @@ You customize a **data label** with required template by adding a **“div”** 
 
 {% highlight js %}
 
-**[HTML]**
     <div id="template">
 
         <div id="left">
@@ -150,7 +147,7 @@ You customize a **data label** with required template by adding a **“div”** 
             display: none;
         }
     </style>
-**[JS]**
+
     <script type="text/javascript" language="javascript">
         $(function () {
             $("#container").ejChart(
@@ -191,7 +188,6 @@ By default, the label texts are automatically determined based on the axis data 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             primaryYAxis:
@@ -228,7 +224,6 @@ Some of the **labelFormat** for **datetime** axis:
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             primaryXAxis:
@@ -253,7 +248,6 @@ Some of the **labelFormat** for **datetime** axis:
 
 {% highlight js %}
 
-**[JS]**
        $("#chartcontainer").ejChart({
             title: {
                 text: "Chart Title",
@@ -282,7 +276,6 @@ Using the **background** property you can customize the background color of the 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             background: '#1E90FF',
             // ...             
@@ -303,7 +296,6 @@ Using **background** property in **ChartArea** you can customize the background 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             chartArea: { background: '#cc3333' },
@@ -323,13 +315,11 @@ JS Chart allows you to add background image for your Chart using backGroundImage
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             backGroundImageUrl: '../images/chart/wheat.png',
             // ...             
         });
-
 
 {% endhighlight %}
 
@@ -359,13 +349,11 @@ Chart has built-in theme support. The theme configures the colors of following C
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             theme: 'gradientlight',
             // ...             
         });
-
 
 {% endhighlight %}
 
@@ -413,7 +401,6 @@ Apart from the themes, to define custom set of color you can use “**palette**�
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             palette: ["#69D2E7", "#E27F2D", "#6A4B82"],

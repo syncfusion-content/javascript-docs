@@ -19,39 +19,39 @@ Accumulation distribution indicator is one of the technical indicator supported 
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                axes:[     // axis for indicator
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            axes: [     // axis for indicator
+            {
+                name: 'indicator',
+                opposedPosition: true
+            }],
+            // ... 
+            series: [
                 {
-                   name: 'indicator',
-                   opposedPosition: true
-                }],      
-             // ... 
-series: [
-                {  name: 'candle', 
-type: 'hiloopenclose',
-drawMode: 'both',
-                  dataSource: window.chartData,
-                  high:"High",
-                  low: "Low",
-                  close: "Close",
-                  open: "Open",
-                  volume:"Volume",
-                  xName: "xDate",
+                    name: 'candle',
+                    type: 'hiloopenclose',
+                    drawMode: 'both',
+                    dataSource: window.chartData,
+                    high: "High",
+                    low: "Low",
+                    close: "Close",
+                    open: "Open",
+                    volume: "Volume",
+                    xName: "xDate",
 
-                }],  
-             // ... 
+                }],
+            // ... 
 
-                 indicators:[
-                  {
-                     type: 'accumulationdistribution', 
-                     seriesName: 'indicator',
-                     yAxisName:'indicator'
-                  }],
-              // ...   
-               });
+            indicators: [
+             {
+                 type: 'accumulationdistribution',
+                 seriesName: 'indicator',
+                 yAxisName: 'indicator'
+             }],
+            // ...   
+        });
 
 
 {% endhighlight %}
@@ -70,23 +70,22 @@ Average true range Indicator is one of the technical indicator supported by **ej
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                axes:[     // axis for indicator
-                {
-                   name: 'indicator',
-                   opposedPosition: true
-                 }],      
-             // ...   
-                 indicators:[
-                  {
-                     type: 'atr', seriesName: 'indicator',period:14,
-                     yAxisName:'indicator'
-                  }],
-              // ...   
-               });
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            axes: [     // axis for indicator
+            {
+                name: 'indicator',
+                opposedPosition: true
+            }],
+            // ...   
+            indicators: [
+            {
+                type: 'atr', seriesName: 'indicator', period: 14,
+                yAxisName: 'indicator'
+            }],
+            // ...   
+        });
 
 
 {% endhighlight %}
@@ -102,25 +101,24 @@ Bollinger Band Indicator is one of the technical indicator supported by **ejChar
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-              // ...             
-                axes:[     // axis for indicator
-                {
-                   name: 'indicator',
-                   opposedPosition: true
-                 }],      
-             // ...   
-                indicators:[
-                  {
-                      type: 'bollingerband', 
-                      seriesName: 'indicator',            						period:5,
-standardDeviations:2,
-                      yAxisName:'indicator'
-                  }],
-              // ...   
-               });
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            axes: [     // axis for indicator
+            {
+                name: 'indicator',
+                opposedPosition: true
+            }],
+            // ...   
+            indicators: [
+              {
+                  type: 'bollingerband',
+                  seriesName: 'indicator', period: 5,
+                  standardDeviations: 2,
+                  yAxisName: 'indicator'
+              }],
+            // ...   
+        });
 
 
 {% endhighlight %}
@@ -137,20 +135,19 @@ Exponential Moving Average Indicator is one of the technical indicator supported
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-              {   
-                axes:[{
-                   name: 'indicator',
-                   opposedPosition: true
-                     }],      
-                indicators:[{
-                        type: 'ema',
-                        seriesName: 'indicator',
-                        period:14,
-                        yAxisName:'indicator'
-                            }],
-               });
+
+        $("#chartcontainer").ejChart({
+            axes: [{
+                name: 'indicator',
+                opposedPosition: true
+            }],
+            indicators: [{
+                type: 'ema',
+                seriesName: 'indicator',
+                period: 14,
+                yAxisName: 'indicator'
+            }],
+        });
 
 
 {% endhighlight %}
@@ -167,23 +164,22 @@ Momentum is one of the technical indicator supported by **ejChart**. The indicat
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                axes:[     // axis for indicator
-                {
-                   name: 'indicator',
-                   opposedPosition: true
-                 }],      
-             // ...   
-                 indicators:[
-                  {
-                     type: 'momentum', seriesName: 'indicator',period:3,
-                     yAxisName:'indicator'
-                  }],
-              // ...   
-               });
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            axes: [     // axis for indicator
+            {
+                name: 'indicator',
+                opposedPosition: true
+            }],
+            // ...   
+            indicators: [
+             {
+                 type: 'momentum', seriesName: 'indicator', period: 3,
+                 yAxisName: 'indicator'
+             }],
+            // ...   
+        });
 
 
 {% endhighlight %}
@@ -200,25 +196,28 @@ The following screenshot displays the momentum technical indicator.
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                axes:[     // axis for indicator
-                {
-                   name: "yAxis1",
-                   opposedPosition: true
-                 }],      
-                // ...   
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            axes: [     // axis for indicator
+            {
+                name: "yAxis1",
+                opposedPosition: true
+            }],
+            // ...   
             indicators: [{
-                type: "macd", seriesName: "Hilo", yAxisName: "yaxis", 
+                type: "macd", seriesName: "Hilo", yAxisName: "yaxis",
                 longPeriod: 26, shortPeriod: 12, trigger: 9,
-                histogram: { fill: "red", opacity: 0.7, border: { color: 
-                "red", width: 1 } },
+                histogram: {
+                    fill: "red", opacity: 0.7, border: {
+                        color:
+                        "red", width: 1
+                    }
+                },
                 macdType: "both", tooltip: { visible: true }
-             }],              
-          // ...   
-   });
+            }],
+            // ...   
+        });
 
 
 {% endhighlight %}
@@ -235,25 +234,24 @@ The following screenshot displays the MACD technical indicator
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                axes:[     // axis for indicator
-                {
-                   name: "yAxis1",
-                   opposedPosition: true
-                 }],      
-                // ...   
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            axes: [     // axis for indicator
+            {
+                name: "yAxis1",
+                opposedPosition: true
+            }],
+            // ...   
             indicators: [{
-                type: "rsi", seriesName: "Hilo", 
+                type: "rsi", seriesName: "Hilo",
                 yAxisName: "yAxis1", fill: "darkblue", width: 1,
-upperLine: {fill: "green", width: 1},
-lowerLine: {fill: "red", width: 1},
-tooltip: {visible: true}
-           }],              
-          // ...   
-   });
+                upperLine: { fill: "green", width: 1 },
+                lowerLine: { fill: "red", width: 1 },
+                tooltip: { visible: true }
+            }],
+            // ...   
+        });
 
 
 {% endhighlight %}
@@ -270,32 +268,25 @@ Simple Moving Average Indicator is one of the technical indicators supported by 
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-         {   
-             // ... 
 
-                axes:[      
-                      {
-                       name: 'indicator',
-                       opposedPosition: true
-                      }
-                     ], 
+        $("#chartcontainer").ejChart({
+            // ... 
 
-             // ...   
-
-                indicators:[
-                      {
-                       type: 'sma',
-                       seriesName: 'indicator',
-                       period:14,
-                       yAxisName:'indicator'
-                       }
-                      ],
-
-              // ...   
-          }
-);
+            axes: [{
+                name: 'indicator',
+                opposedPosition: true
+            }
+            ],
+            // ...   
+            indicators: [{
+                type: 'sma',
+                seriesName: 'indicator',
+                period: 14,
+                yAxisName: 'indicator'
+            }
+            ],
+            // ...   
+        });
 
 
 {% endhighlight %}
@@ -314,27 +305,26 @@ Stochastic technical indicator is one of the most common indicators used in tech
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                axes:[     // axis for indicator
-                {
-                   name: 'indicator',
-                   opposedPosition: true
-                }],      
-             // ...   
-                 indicators:[
-                 {
-                     type: 'stochastic', 
-                     seriesName:'indicator',
-                     period:14,
-                     kPeriod:3,
-                     dPeriod:3,
-                     yAxisName:'indicator'   
-                  }],
-              // ...   
-               });
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            axes: [     // axis for indicator
+            {
+                name: 'indicator',
+                opposedPosition: true
+            }],
+            // ...   
+            indicators: [
+            {
+                type: 'stochastic',
+                seriesName: 'indicator',
+                period: 14,
+                kPeriod: 3,
+                dPeriod: 3,
+                yAxisName: 'indicator'
+            }],
+            // ...   
+        });
 
 
 {% endhighlight %}
@@ -345,23 +335,21 @@ Triangular Moving Average Indicator is one of the technical indicator supported 
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-              // ...             
-                axes:[     // axis for indicator
-                {
-                   name: 'indicator',
-                   opposedPosition: true
-                 }],      
-             // ...   
-                indicators:[
-                  {
-                      type: 'tma', 
-                      seriesName: 'indicator',            						period:14,                       						yAxisName:'indicator'
-                  }],
-              // ...   
-               });
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            axes: [     // axis for indicator
+            {
+                name: 'indicator',
+                opposedPosition: true
+            }],
+            // ...   
+            indicators: [{
+                type: 'tma',
+                seriesName: 'indicator', period: 14, yAxisName: 'indicator'
+            }],
+            // ...   
+        });
 
 
 {% endhighlight %}

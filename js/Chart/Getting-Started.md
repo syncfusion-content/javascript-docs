@@ -25,6 +25,7 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 {% highlight html %}
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -233,27 +234,27 @@ The following code example illustrates how to add Chart axis.
 {% highlight js %}
 
 
-$("#chartcontainer").ejChart({
-// ...
-      primaryXAxis: {
-            valueType:"category",
-      },
-      primaryYAxis:{
-            valueType: "double",
-            labelFormat: '{value}°F',
-            range:{min:0, max:120,interval:20}
-      },
-      axes:[
-      {
-            orientation:'Vertical',
-            opposedPosition: true,        
-            name: 'Precipitation',
-            range:{min:0,max:6,interval:1},
-            labelFormat: '{value} inch',
-      },
+    $("#chartcontainer").ejChart({
+    // ...
+          primaryXAxis: {
+                valueType:"category",
+        },
+        primaryYAxis:{
+                valueType: "double",
+                labelFormat: "{value}°F",
+                range:{min:0, max:120,interval:20}
+        },
+        axes:[
+        {
+                orientation:'Vertical',
+                opposedPosition: true,        
+                name: 'Precipitation',
+                range:{min:0,max:6,interval:1},
+                labelFormat: '{value} inch',
+        },
 
-      ],
-// ...             
+        ]
+    // ...             
 });
 
 
@@ -265,38 +266,38 @@ To assign the **axis** to the respective series, you can set **yAxisName** prope
 
 {% highlight js %}
 
-$(function () {
-$("#chartcontainer").ejChart(
-{
-	// ...             
-series: [
-{
-name: 'Precipitation',
+    $(function () {
+        $("#chartcontainer").ejChart(
+        {
+	       // ...             
+            series: [
+            {
+            name: 'Precipitation',
 			type: 'column', 
 			dataSource: window.chartData, 
 			xName: "date", 
-yName: "precipitation",
-yAxisName:'Precipitation',
+            yName: "precipitation",
+            yAxisName:'Precipitation',
 
-},
-{
-name: 'Low',
+            },
+            {
+            name: 'Low',
 			type: 'line', 
 			dataSource: window.chartData, 
 			xName: "date", 
 			yName: "low"                       
-},
-{
-name: 'High',
+            },
+            {
+            name: 'High',
 			type: 'line', 
 			dataSource: window.chartData, 
 			xName: "date", 
 			yName: "high"                       
-},
-]
-	// ...             
-});
-});
+            },
+            ]
+	       // ...             
+        });
+    });
 
 
 {% endhighlight %}
@@ -313,7 +314,7 @@ The following screenshot displays a Chart with the desired output.
 
 {% highlight js %}
 
-
+ 
         $("#chartcontainer").ejChart({
             // ...             
             series: [{
@@ -355,7 +356,7 @@ To display the **tooltip** of **Chart** series, you can enable the “**visible*
 {% highlight js %}
 
 
-****$("#chartcontainer").ejChart({
+         $("#chartcontainer").ejChart({
             // ...             
             series: [
             {
