@@ -9,7 +9,7 @@ documentation: ug
 
 ## KnockoutJS
 
-**Essential JavaScript** provides complete support of [KnockoutJS](http://knockoutjs.com/documentation/introduction.html)****(**MVVM** pattern)****for all the Syncfusion widgets, which can be achieved by integrating and referring the Syncfusion JS library (**ej.widget.ko.min.js**) file in the application.
+**Essential JavaScript** provides complete support of **[KnockoutJS](http://knockoutjs.com/documentation/introduction.html)** (**MVVM** pattern) for all the Syncfusion widgets, which can be achieved by integrating and referring the Syncfusion JS library (**ej.widget.ko.min.js**) file in the application.
 
 ### Required JavaScript libraries
 
@@ -21,29 +21,41 @@ The following two JavaScript libraries are necessary to work with **KnockoutJS**
 
 The **knockout.min.js** file can be availed from the following installed location,
 
-{% highlight text %}
-
-**<installed location>**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external 
+<table>
+<tr>
+<td>
+**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+</td>
+</tr>
+<tr>
+<td> 
+<br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
-
-
-{% endhighlight %}
-
-
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+</td>
+</tr>
+</table>
+<br/>
 
 The **ej.widget.ko.min.js** file which needs to be referred along with the knockout.min file can be availed from the following location on your machine,
 
-{% highlight text %}
-
-**<installed location>**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common 
+<table>
+<tr>
+<td>
+**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+</td>
+</tr>
+<tr>
+<td> 
+<br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
-
-
-{% endhighlight %}
-
-
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+</td>
+</tr>
+</table>
+<br/>
 
 ### KnockoutJS Concepts
 
@@ -62,7 +74,7 @@ The below code snippet shows how the data-bind attribute is used with our Syncfu
 {% highlight html %}
 
 
-<input id="datepick2" **data-bind**="**ejDatePicker**: { value: '01/01/2015', enableStrictMode: true }"/> 
+<input id="datepick2" data-bind="ejDatePicker: { value: '01/01/2015', enableStrictMode: true }"/> 
 
 
 {% endhighlight %}
@@ -82,7 +94,7 @@ Here, the below sample code defines how to use the **observable** variable,
 
         <script type="text/javascript">
             window.viewModel = {
-**dateValue**: **ko.observable**(new Date(2014, 05, 15))
+            dateValue: ko.observable(new Date(2014, 05, 15))
             };
         </script>
 
@@ -105,15 +117,13 @@ The **data-bind** attribute which we have defined in the previous section cannot
             };
             $(function () {
                 // declaration
-**ko.applyBindings(viewModel);**
+                ko.applyBindings(viewModel);
             });                        
         </script>
 
 
 
 {% endhighlight %}
-
-
 
 ### Data binding
 
@@ -126,7 +136,7 @@ Here, the model values are directly bound to the widget’s properties. The chan
 {% highlight html %}
 
 
-<input id="myDatePicker1" data-bind="ejDatePicker: { **value: '01/01/2015'**, enableStrictMode: true }"/>
+<input id="myDatePicker1" data-bind="ejDatePicker: { value: '01/01/2015', enableStrictMode: true }"/>
 
 
 
@@ -138,7 +148,7 @@ Here, in the above code, the value property of the DatePicker widget is assigned
 
 #### Two way binding
 
-It linksthe data model to an UI, thus making a smooth synchronization between them. Here, the **ko.observable** variable defined in the script section is bound to the widget’s properties instead of direct values, so that both can have a good data synchronization. In general, we could have more than one property bound to the same variable. **The properties of all the Syncfusion widgets that supports two-****way data-binding are** **depicted** here. 
+It links the data model to an UI, thus making a smooth synchronization between them. Here, the **ko.observable** variable defined in the script section is bound to the widget’s properties instead of direct values, so that both can have a good data synchronization. In general, we could have more than one property bound to the same variable. **The properties of all the Syncfusion widgets that supports two-****way data-binding are** **depicted** here. 
 
 The two-way data binding has been demonstrated in the below code with two DatePicker controls sharing the same **ko.observable** variable,
 
@@ -153,13 +163,13 @@ The two-way data binding has been demonstrated in the below code with two DatePi
 
   <body>
 
-    <input id="mydatepicker1" data-bind="ejDatePicker: { value: **dateValue**, enableStrictMode: true }"/>
+    <input id="mydatepicker1" data-bind="ejDatePicker: { value: dateValue, enableStrictMode: true }"/>
 
-    <input id="mydatepicker2" data-bind="ejDatePicker: { value: **dateValue**, enableStrictMode: true }"/>
+    <input id="mydatepicker2" data-bind="ejDatePicker: { value: dateValue, enableStrictMode: true }"/>
 
     <script type="text/javascript">
             window.viewModel = {
-**dateValue**: ko.observable(new Date(2014, 05, 15))
+            dateValue: ko.observable(new Date(2014, 05, 15))
             };
             $(function () {
                 // declaration
@@ -170,7 +180,6 @@ The two-way data binding has been demonstrated in the below code with two DatePi
   </body>
 
 </html>
-
 
 
 {% endhighlight %}

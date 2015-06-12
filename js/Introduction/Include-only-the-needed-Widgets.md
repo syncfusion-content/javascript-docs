@@ -18,7 +18,7 @@ The users with **Essential Studio Enterprise license** or **Essential Studio for
 ![](Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img1.png)
 {:.image }
 
-Figure 4: Custom Script Generator utility options
+    Custom Script Generator utility options
 {:.caption }
 
 
@@ -31,7 +31,7 @@ Figure 4: Custom Script Generator utility options
 ![](Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img2.png)
 {:.image }
 
-Figure 5: To Generate a file with the specified name
+    To Generate a file with the specified name
 {:.caption }
 
 
@@ -44,20 +44,18 @@ Figure 5: To Generate a file with the specified name
 ![](Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img3.png)
 {:.image }
 
-
+    Custom Script Generator utility with download option enabled
 {:.caption }
 
 
-Figure 6: Custom Script Generator utility with download option enabled
+    
 
 
 
-{% highlight text %}
 
 > _**Note: It is not necessary to sit idle for a long time, you can simply close the above information and proceed with your work, as an e-mail alert with the Custom script downloadable link will be sent to you automatically.**_ 
 
 
-{% endhighlight %}
 
 ### Settings Customization
 
@@ -70,7 +68,7 @@ You can save the frequently used controls to generate custom Script and CSS file
 ![](Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img4.png)
 {:.image }
 
-Figure 7: Saving the frequently used Custom settings
+    Saving the frequently used Custom settings
 {:.caption }
 
 
@@ -85,7 +83,7 @@ The steps given below are to be followed, to perform custom Script and CSS file 
 ![](Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img5.png)
 {:.image }
 
-Figure 8: Custom Script Generator – Settings page
+    Custom Script Generator – Settings page
 {:.caption }
 
 
@@ -93,12 +91,12 @@ Figure 8: Custom Script Generator – Settings page
 
 
 
-* Now click on the **Proceed****icon** to request for the Custom script and css file generation for the required controls.
+* Now click on the **Proceed** **icon** to request for the Custom script and css file generation for the required controls.
 
 ![](Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img6.png)
 {:.image }
 
-Figure 9: Custom Script Generator utility displaying Proceed icon
+    Custom Script Generator utility displaying Proceed icon
 {:.caption }
 
 
@@ -113,7 +111,7 @@ You can also modify or delete the existing controls by making use of the **edit*
 ![](Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img7.png)
 {:.image }
 
-Figure 10: Custom Script Generator utility displaying Proceed, edit & delete icon
+    Custom Script Generator utility displaying Proceed, edit & delete icon
 {:.caption }
 
 

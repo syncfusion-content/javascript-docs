@@ -17,19 +17,24 @@ Download the setup file (.exe) of **Essential Studio for JavaScript** product fr
 
 The below specified root location is the place from where all the Syncfusion assemblies, scripts, stylesheets and dashboard samples are available,
 
-{% highlight text %}
 
-**<installed location>**\Syncfusion\Essential Studio\13.1.0.21\
-
+<table>
+<tr>
+<td>
+**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\
+</td>
+</tr>
+<tr>
+<td>
+<br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\
+</td>
+</tr>
+</table>
 
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\
-
-
-{% endhighlight %}
-
-
-
+<br/>
 If you are looking for the **JavaScript Samples**, you can find it from the **Samples** folder present within the above specified location. 
 
 ##### JavaScript Folder Structure and Asset Details
@@ -40,30 +45,34 @@ The location mentioned below is the root **JavaScript** folder which contains tw
 
 * Src
 
-{% highlight text %}
-
-**<installed location>**\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\
-
+<table>
+<tr>
+<td>
+**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\
+</td>
+</tr>
+<tr>
+<td>
+	<br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\
-
-
-{% endhighlight %}
-
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\
+</td>
+</tr>
+</table>
 
 
 ###### assets 
 
 The **assets** folder comprises of all the minified versions of the external and common Scripts, StyleSheets and TypeScript files under their corresponding folders. It mainly includes 4 sub-folders namely,
 
-* Css
+>>* Css
 
-* External
+>>* External
 
-* Scripts
+>>* Scripts
 
-* TypeScript
+>>* TypeScript
 
 
 
@@ -93,18 +102,22 @@ The location under where these non-minified files are available are as follows,
 
 
 
-{% highlight text %}
-
-**<installed location>**\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\Src\assets-src
-
+<table>
+<tr>
+<td>
+**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\Src\assets-src
+</td>
+</tr>
+<tr>
+<td>
+	<br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\Src\assets-src
-
-
-{% endhighlight %}
-
-
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\Src\assets-src
+</td>
+</tr>
+</table>
+<br/>
 
 ### For MAC and Linux OS Users
 
@@ -118,14 +131,9 @@ For **MAC OS** and **Linux** users, we are providing a zip folder instead of .ex
 
 It also includes other folders namely Release Notes, License Agreement and Read Me. The control creation will be same as described in the Getting Started section (Here, the scripts and StyleSheets are needed to be referred from the **Assets** folder into their respective HTML pages).
 
-{% highlight text %}
 
-> _**Note: The MAC and Linux users cannot be able to make use of the Reporting and Business Intelligence controls, as it needs assembly reference to be included in the application. Due to the installation of .exe is not supported in those two OS (the assembly libraries required for the Reporting & BI controls are not available in the system), we provide only the zip folder containing the JavaScript related Scripts, StyleSheets and Samples.**_ 
+> _**Note: The **MAC** and **Linux** users cannot be able to make use of the Reporting and Business Intelligence controls, as it needs assembly reference to be included in the application. Due to the installation of .exe is not supported in those two OS (the assembly libraries required for the Reporting & BI controls are not available in the system), we provide only the zip folder containing the JavaScript related Scripts, Stylesheets and Samples.**_ 
 > _**Also, the exporting functionality available in some of the JavaScript widgets will not work here, due to the assembly dependency.**_ 
-
-
-{% endhighlight %}
-
 
 
 ### Configuring Syncfusion Nuget Packages
@@ -141,7 +149,7 @@ The steps to download and configure the Syncfusion Nuget Packages in Visual Stud
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 {:.image }
 
-Figure 1: Package Manager Settings pop-up
+    Package Manager Settings pop-up
 {:.caption }
 
 
@@ -157,18 +165,15 @@ Figure 1: Package Manager Settings pop-up
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 {:.image }
 
-Figure 2: Package Manager Settings pop-up with selected Nuget Package
+    Package Manager Settings pop-up with selected Nuget Package
 {:.caption }
 
 
 
 
-{% highlight text %}
-
-> _**Note: The Source textbox in the above image denotes the location of the nuget packages in your machine and the Name section, allows you to provide a unique name which we will refer in the package installation section later.**_ 
+> _**Note: The **Source** textbox in the above image denotes the location of the nuget packages in your machine and the Name section, allows you to provide a unique name which we will refer in the package installation section later.**_ 
 
 
-{% endhighlight %}
 
 
 
@@ -177,7 +182,7 @@ Figure 2: Package Manager Settings pop-up with selected Nuget Package
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 {:.image }
 
-Figure 3: Package Manager Settings pop-up with new Nuget Package added
+    Package Manager Settings pop-up with new Nuget Package added
 {:.caption }
 
 
