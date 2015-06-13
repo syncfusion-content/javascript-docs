@@ -14,7 +14,6 @@ platform: js
 {% highlight c#  %}
 
 
-
 public class WordCountMapper : MapperBase
 {
 	public override void Map(string inputLine, MapperContext context)
