@@ -21,7 +21,6 @@ The following steps explain the **dimensional** properties of an **AutoComplete*
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -33,13 +32,13 @@ The following steps explain the **dimensional** properties of an **AutoComplete*
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
-**height: "50px",**
-                **width: "250px",**
+                height: "50px",
+                width: "250px",
                 multiSelectMode: ej.MultiSelectMode.Delimiter,
                 dataSource: carList            });	 
-
+</script>
 
 {% endhighlight %}
 
@@ -61,7 +60,6 @@ The following steps explain enabling the **showRoundedCorner** property for an *
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -73,13 +71,13 @@ The following steps explain enabling the **showRoundedCorner** property for an *
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-**showRoundedCorner**: **true**
+                showRoundedCorner:true
             });
-
+</script>
 
 
 {% endhighlight %}
@@ -102,7 +100,6 @@ The following steps explain you how to configure **watermarkText** property for 
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -114,13 +111,13 @@ The following steps explain you how to configure **watermarkText** property for 
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
 $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-**watermarkText:"Select an item"**
+                watermarkText:"Select an item"
             });
-
+</script>
 
 
 {% endhighlight %}
@@ -143,7 +140,6 @@ The following steps help you set height and width of the popup panel of an **Aut
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -155,15 +151,15 @@ The following steps help you set height and width of the popup panel of an **Aut
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 filterType: "startswith",
-**popupHeight:"80px",**
-                **popupWidth:"350px"**
+                popupHeight:"80px",
+                popupWidth:"350px"
             });
-
+</script>
 
 
 {% endhighlight %}
@@ -186,7 +182,6 @@ The following steps are used to set the time delay to load the popup panel of an
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -198,14 +193,14 @@ The following steps are used to set the time delay to load the popup panel of an
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 filterType: "startswith",
-**delaySuggestionTimeout:1000**
+                delaySuggestionTimeout:1000
             });
-
+</script>
 
 
 {% endhighlight %}
@@ -256,7 +251,6 @@ The following steps allow you to configure **CSS****class** for an **AutoComplet
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -268,7 +262,6 @@ The following steps allow you to configure **CSS****class** for an **AutoComplet
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
         /* Customize the PopUp panel */
         .customCss
@@ -296,13 +289,13 @@ The following steps allow you to configure **CSS****class** for an **AutoComplet
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
           $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 cssClass:"customCss"
             });
-
+</script>
 
 
 {% endhighlight %}

@@ -15,15 +15,57 @@ The following are some miscellaneous properties that enables you to change the b
 
 The **Toolbar** property **enabled** is used to enable or disable the **Toolbar**. Set the value to this property as **Boolean** type.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="cols-sample-area"&gt;    &lt;div id="toolbarcontent"&gt;        &lt;ul&gt;            &lt;li id="Left" title="Left"&gt;                &lt;div class="ToolbarItems LeftAlign_tool"&gt;&lt;/div&gt;            &lt;/li&gt;            &lt;li id="Center" title="Center"&gt;                &lt;div class="ToolbarItems CenterAlign_tool"&gt;&lt;/div&gt;            &lt;/li&gt;            &lt;li id="Right" title="Right"&gt;                &lt;div class="ToolbarItems RightAlign_tool"&gt;&lt;/div&gt;            &lt;/li&gt;            &lt;li id="Justify" title="Justify"&gt;                &lt;div class="ToolbarItems Justify_tool"&gt;&lt;/div&gt;            &lt;/li&gt;        &lt;/ul&gt;        &lt;ul&gt;            &lt;li id="Bold" title="Bold"&gt;                &lt;div class="ToolbarItems Bold_tool"&gt;&lt;/div&gt;            &lt;/li&gt;            &lt;li id="Italic" title="Italic"&gt;                &lt;div class="ToolbarItems Italic_tool"&gt;&lt;/div&gt;            &lt;/li&gt;            &lt;li id="StrikeThrough" title="Strike Through"&gt;                &lt;div class="ToolbarItems StrikeThrough_tool"&gt;&lt;/div&gt;            &lt;/li&gt;            &lt;li id="UndeLine" title="UnderLine"&gt;                &lt;div class="ToolbarItems Underline_tool"&gt;&lt;/div&gt;            &lt;/li&gt;        &lt;/ul&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ enabled: true });    });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+  <div class="cols-sample-area">
+    <div id="toolbarcontent">
+        <ul>
+            <li id="Left" title="Left">
+                <div class="ToolbarItems LeftAlign_tool"></div>
+            </li>
+            <li id="Center" title="Center">
+                <div class="ToolbarItems CenterAlign_tool"></div>
+            </li>
+            <li id="Right" title="Right">
+                <div class="ToolbarItems RightAlign_tool"></div>
+            </li>
+            <li id="Justify" title="Justify">
+                <div class="ToolbarItems Justify_tool"></div>
+            </li>
+        </ul>
+        <ul>
+            <li id="Bold" title="Bold">
+                <div class="ToolbarItems Bold_tool"></div>
+            </li>
+            <li id="Italic" title="Italic">
+                <div class="ToolbarItems Italic_tool"></div>
+            </li>
+            <li id="StrikeThrough" title="Strike Through">
+                <div class="ToolbarItems StrikeThrough_tool"></div>
+            </li>
+            <li id="UndeLine" title="UnderLine">
+                <div class="ToolbarItems Underline_tool"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JS]**
+
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#toolbarcontent").ejToolbar({ enabled: true });
+    });
+</script>
+
+{% endhighlight %}
 
 {% highlight css %}
 
@@ -83,7 +125,6 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 ## Hiding Toolbar 
 
 The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set the value to this property as **Boolean** type.
-
 
 
 {% highlight js %}

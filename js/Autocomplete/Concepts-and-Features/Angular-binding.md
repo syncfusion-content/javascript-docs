@@ -29,9 +29,8 @@ The following code example depicts the way to bind data to the **AutoComplete** 
 
 {% highlight html %}
 
-**[HTML]**
 <!doctype html>
-<html lang="en" **ng-app="syncApp"**>
+<html lang="en" ng-app="syncApp">
 <head>
     <meta charset="utf-8">
     <title>Essential Studio for JavaScript : AutoComplete - Angular support</title>
@@ -48,18 +47,18 @@ charset="utf-8"  />
     </script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js">
     </script></head>
-<body **ng-controller="AutocompleteCtrl"**>
+<body ng-controller="AutocompleteCtrl">
     <div class="content-container-fluid">
         <div class="row">
             <div class="cols-sample-area">
                 <div class="" style="width: 40%;height:38px;">
                     <span style="display:block">Select Bike</span>					
                     <div id="control" style="float: left;width:45%">
-                        <input type="text" **ej-autocomplete e-datasource="dataList" e-value="setValue"** />
+                        <input type="text" ej-autocomplete e-datasource="dataList" e-value="setValue" />
                         <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way Angular Support</span></h6>
                     </div>
                     <div id="binding" style="float: right;width:45%">
-                        <input type="text" name="AutoComplete" class="input **ejinputtext**" **ng-model="setValue"** />
+                        <input type="text" name="AutoComplete" class="input ejinputtext" ng-model="setValue" />
                     </div>
                 </div>
             </div>
@@ -107,7 +106,6 @@ width:81%;
     </style>
 </body>
 </html>
-
 
 {% endhighlight %}
 

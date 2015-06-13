@@ -17,17 +17,28 @@ The following steps explains you on how to set the default value of the **TimePi
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Set default value of the TimePicker as follows.</b>$(function () {            $('#time').ejTimePicker({             value: "10:10 AM"              });});</td></tr>
-</table>
-Execute the above code to render the following output.
+         <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Set default value of the TimePicker as follows.
+<script>
+    $(function () {
+        $('#time').ejTimePicker({
+             value: "10:10 AM"
+        });
+    });
+</script>
+{% endhighlight %}
+
 
 {% include image.html url="/js/TimePicker/Concepts-and-Features/Behaviour-Settings_images/Behaviour-Settings_img1.png" Caption="TimePicker default value"%}
 
@@ -39,16 +50,35 @@ The following steps explain you to enable/disable property in **TimePicker** wid
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// To enable/disable TimePicker controls use the following code example.</b><br><b>Enable Timepicker:</b>$(function () {            $('#time').ejTimePicker();            var timeObj = $('#time').data("ejTimePicker");            timeObj.enable();        });<b>Disable Timepicker:</b>$(function () {            $('#time').ejTimePicker();            var timeObj = $('#time').data("ejTimePicker");            timeObj.disable();        });</td></tr>
-</table>
+         <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// To enable/disable TimePicker controls use the following code example.
+<script>
+
+//Enable Timepicker:
+$(function () {
+            $('#time').ejTimePicker();
+            var timeObj = $('#time').data("ejTimePicker");
+            timeObj.enable();
+        });
+//Disable Timepicker:
+$(function () {
+            $('#time').ejTimePicker();
+            var timeObj = $('#time').data("ejTimePicker");
+            timeObj.disable();
+        });
+</script>
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -67,16 +97,25 @@ The following steps allows you to disable editing value in **TimePicker**.
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Configure delay time for PopUp panel in TimePicker control as follows,</b>    $('#time').ejTimePicker({                <b>readOnly:true</b>                });</td></tr>
-</table>
+         <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Configure delay time for PopUp panel in TimePicker control as follows,
+<script>
+    $('#time').ejTimePicker({
+          readOnly:true
+    });
+</script>
+{% endhighlight %}
 
 
 The following screenshot illustrates a **TimePicker** textbox configured to restrict editing.
@@ -93,16 +132,27 @@ The following steps explain you to change the edges of the textbox to rounded co
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
+
+**[HTML]**
+
+         <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// You can configure Rounded Corner  in TimePicker control as follows,
+<script>
+    $('#time').ejTimePicker({
+        showRoundedCorner:true,
+    });
+</script>
+{% endhighlight %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// You can configure Rounded Corner  in TimePicker control as follows,</b>    $('#time').ejTimePicker({                <b>showRoundedCorner:true</b>,                });</td></tr>
-</table>
 The following screenshot illustrates a **TimePicker** when **showRoundedCorner** is set to “**true**”.
 
 {% include image.html url="/js/TimePicker/Concepts-and-Features/Behaviour-Settings_images/Behaviour-Settings_img5.png" Caption="Rounded corner of TimePicker Textbox"%}
@@ -117,16 +167,28 @@ You can use **height** and **width** property to customize **TimePicker** width 
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>       &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// You can customize the width and height of the TimePicker as follows.</b>$(function () {                $('#time').ejTimePicker({                 width: 150,                height: 50        }); });</td></tr>
-</table>
+       <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// You can customize the width and height of the TimePicker as follows.
+<script>
+       $(function () {
+           $('#time').ejTimePicker({ 
+                width: 150,
+                height: 50
+           }); 
+	   });
+</script>
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -139,15 +201,28 @@ You can use **popupHeight** and **popupWidth** property to customize **TimePicke
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>       &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Use popupHeight and popupWidth property for the TimePicker as follows.</b>$(function () {                $('#time').ejTimePicker({                 popupHeight: 170,                popupWidth: 120        }); });</td></tr>
-</table>
+**[HTML]**
+
+       <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Use popupHeight and popupWidth property for the TimePicker as follows.
+<script>
+       $(function () {
+              $('#time').ejTimePicker({ 
+                popupHeight: 170,
+                popupWidth: 120
+             }); 
+		});
+</script>
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -164,16 +239,30 @@ The following steps explains you to use **enablePersistence** property.
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
+
+**[HTML]**
+
+       <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Use enablePersistence property to maintain selected value as follows.
+<script>
+       $(function () {
+             $('#time').ejTimePicker({ 
+                value:"10:00 AM",
+                enablePersistence: true
+            }); 
+		});
+</script>
+{% endhighlight %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>       &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Use enablePersistence property to maintain selected value as follows.</b>$(function () {                $('#time').ejTimePicker({                 value:"10:00 AM",                <b>enablePersistence: true</b>        }); });</td></tr>
-</table>
 ## Strict mode of the TimePicker
 
 **TimePicker** widget provides you an option to set default value when there is no default value between minTime and maxTime by using **enableStrictMode** property.  
@@ -184,16 +273,29 @@ The following steps explains you to use strict mode property.
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>       &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Use enableStrictMode property to set default value as follows.</b>    $(function () {        $('#time').ejTimePicker({         value : "9:00 AM",        enableStrictMode: true,        minTime: "10:00 AM",        maxTime: "9:00 PM"    });});</td></tr>
-</table>
+**[HTML]**
 
+       <input type="text" id="time" />
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Use enableStrictMode property to set default value as follows.
+<script>
+    $(function () {
+        $('#time').ejTimePicker({ 
+        value : "9:00 AM",
+        enableStrictMode: true,
+        minTime: "10:00 AM",
+        maxTime: "9:00 PM"
+    });
+});
+</script>
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -210,15 +312,29 @@ The following steps explains you to change the Time Interval of the **TimePicker
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>       &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Change Time Interval using hourInterval, minuteInterval and secondInterval property.</b>$(function () {                $('#time').ejTimePicker({                 value : "9:00 AM",                timeFormat: "h:mm:ss tt",                hourInterval:2,                minutesInterval:30,                secondsInterval:20        }); });</td></tr>
-</table>
+       <input type="text" id="time" />
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Change Time Interval using hourInterval, minuteInterval and secondInterval property.
+<script>
+       $(function () {
+           $('#time').ejTimePicker({ 
+                value : "9:00 AM",
+                timeFormat: "h:mm:ss tt",
+                hourInterval:2,
+                minutesInterval:30,
+                secondsInterval:20
+            }); 
+		});
+</script>
+{% endhighlight %}
 

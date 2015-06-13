@@ -24,6 +24,9 @@ The following steps explain how to change the **Split Button** as **Dropdown Bu
     <li><span>Guest</span></li>
     <li><span>Admin</span></li>
 </ul>
+{% endhighlight %}
+
+{% highlight js %}
 
 **[JavaScript]**
 // Initialize the control in JavaScript

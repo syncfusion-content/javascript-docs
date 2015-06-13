@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show ToolTip
 
-**Rating** control provides support for **Tooltip** values. This is achieved by enabling the **showTooltip** property to be **‘True’.** When you move the mouse over the **Rating** control it displays the **Tooltip** value as **rating****value**. By default this property value is set to **‘True’**.
+**Rating** control provides support for **Tooltip** values. This is achieved by enabling the **showTooltip** property to be **‘True’.** When you move the mouse over the **Rating** control it displays the **Tooltip** value as **rating** **value**. By default this property value is set to **‘True’**.
 
 The following code example is used to render the **Rating** control without **tooltip**.
 
@@ -19,7 +19,7 @@ The following code example is used to render the **Rating** control without **to
 
 {% highlight html %}
 
-**[HTML]**
+[HTML]
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -60,7 +60,7 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight html %}
 
-**[HTML]**
+[HTML]
 <div style="margin-top: 0px;">
         <h4>Rating:</h4>
         <input id="rating" type="text" class="rating" />
@@ -81,7 +81,7 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight css %}
 
-**[CSS]**
+[CSS]
 <style type="text/css">
         .e-rating
 {
@@ -163,19 +163,39 @@ By default, there are 12 themes support available for **Rating** control namely:
 
 The style of the **Rating** control is customized by **cssClass** property. 
 
-The following code example is used to render the **Rating** control with **customized****style**.
+The following code example is used to render the **Rating** control with **customized** **style**.
 
 1. Add the following HTML to render Rating with customized style.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="container" style="border: 1px solid black; width: 300px; padding: 2px"&gt;        &lt;table&gt;            &lt;tr&gt;                <td valign="top">Rating:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="rating" type="text" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render Rating with customized style.&lt;script type="text/javascript"&gt;        $("#rating").ejRating({ cssClass: "custom" });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+<div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
+        <table>
+            <tr>
+                <td valign="top">Rating:
+                </td>
+                <td>
+                    <input id="rating" type="text" />
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+{% endhighlight %}
+
+{% highlight html %}
+
+**[JS]**
+
+// Add the following script to render Rating with customized style.
+
+<script type="text/javascript">
+        $("#rating").ejRating({ cssClass: "custom" });
+    </script>
+
+{% endhighlight %}
 
 2. Add the following styles.
 

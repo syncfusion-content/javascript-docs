@@ -19,16 +19,43 @@ The following steps explains you the configuration of **targetID** property in *
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **Dropdownlist** widget
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;       &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                <b>targetID</b>: "list"            });        });    &lt;/script&gt;</td></tr>
-</table>
+         <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+       </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**  
+
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list"
+            });
+        });
+    </script>
+
+{% endhighlight %}
+
 **Number of items in the list**
 
 **Dropdown** widget provides you support to customize the items visible on popup visible. The **itemsCount** property defines the number of items that is displayed on **DropdownList** . Its data type is number.
@@ -37,17 +64,43 @@ The following steps explains you the configuration of **itemsCount** property in
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>itemsCount</b>: 3                            });        });    &lt;/script&gt;</td></tr>
-</table>
+         <input type="text" id="dropdownlist" />
 
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]** 
+ 
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                itemsCount: 3                
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -66,16 +119,45 @@ The following steps explains you the configuration of **selectedItemIndex** prop
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList**  widget
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>selectedItemIndex</b>: 1                            });        });    &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+         <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+        </div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**  
+
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                
+selectedItemIndex: 1                
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -93,14 +175,44 @@ The following steps explains you the configuration of **showPopupOnLoad** proper
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>showPopupOnLoad</b>: true            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+         <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+        </div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**  
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                showPopupOnLoad: true
+            });
+        });
+    </script>
+
+{% endhighlight %}
+
 **Multiple selection through index** 
 
 You can select the list of items from the **DropdownList** using **selectedItems** property. Its data type is array. To achieve this, you need to set true to **checkbox** property in **DropdownList** . 
@@ -109,16 +221,42 @@ The following steps explains you the configuration of **selectedItems** property
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;      $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>selectedItems</b>: [0, 1],                <b>showCheckbox</b>:true            });    &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+      <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**  
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+$('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                selectedItems: [0, 1],
+                showCheckbox:true
+
+            });
+    </script>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -136,14 +274,43 @@ The following steps explains you the configuration of **readOnly** property in *
 1. In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;       &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>readOnly</b>: true            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+     <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+       </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**  
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                readOnly: true
+            });
+        });
+    </script>
+
+{% endhighlight %}
+
 **Enable or Disable the Dropdown Widget**
 
 This features enables you to set the enable or disable options for dropdown by setting Boolean type value to **enabled** property. 
@@ -153,17 +320,43 @@ The following steps explains you the configuration of **enabled** property in **
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget.
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;       &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>enabled</b>: false            });        });   &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
 
+     <input type="text" id="dropdownlist" />
 
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+       </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]** 
+
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                enabled: false
+            });
+        });
+   </script>
+
+{% endhighlight %}
 
 Output of the above steps 
 
@@ -181,13 +374,41 @@ The following steps explains you the configuration of **enablePersistence** prop
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;  &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>enablePersistence</b>: true            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+     <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+  </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+  
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                enablePersistence: true
+            });
+        });	
+    </script>
 
 
+{% endhighlight %}

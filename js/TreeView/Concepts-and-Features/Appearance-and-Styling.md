@@ -11,15 +11,13 @@ documentation: ug
 
 ## Css Class
 
-Sets the root class for **TreeView** theme. This **cssClass****API** helps you to use custom skinning option for **TreeView** control. By defining the root class using this API, you can include this root class in **CSS**.
+Sets the root class for **TreeView** theme. This **cssClass** **API** helps you to use custom skinning option for **TreeView** control. By defining the root class using this API, you can include this root class in **CSS**.
 
 The following steps explain enabling the **cssClass** property for **TreeView**.
 
 1. In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
 
 {% highlight html %}
-
-**[HTML]**
 
 <ul id="treeView">
         <li class="expanded">
@@ -68,8 +66,6 @@ The following steps explain enabling the **cssClass** property for **TreeView**.
         </li>
     </ul>
 
-
-
 {% endhighlight %}
 
 
@@ -78,7 +74,6 @@ The following steps explain enabling the **cssClass** property for **TreeView**.
 
 {% highlight css %}
 
-**[CSS]**
     .customCss .e-treeview {
         background-color: #E0E0E0;
         /* Old browsers */
@@ -87,18 +82,17 @@ The following steps explain enabling the **cssClass** property for **TreeView**.
         border-image: initial;
     }
 
-
-
 {% endhighlight %}
 
 
 
-3. Add the cssClass property to TreeView.
+3. Add the **cssClass** property to TreeView.
 
 {% highlight js %}
 
+<script type="text/javascript">
     $("#treeView").ejTreeView({ cssClass: "customCss" });
-
+</script>
 
 {% endhighlight %}
 
@@ -120,15 +114,64 @@ The following steps explain how to use the **height** property of **TreeVie**w.
 
 1. In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;ul id="treeView"&gt;        &lt;li class="expanded"&gt;            Favorites            &lt;ul&gt;                <li>Desktop</li>                <li>Downloads</li>                <li>Recent places</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li class="expanded"&gt;            Libraries            &lt;ul&gt;                &lt;li&gt;                    Documents                    &lt;ul&gt;                        <li>My Documents</li>                        <li>Public Documents</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Pictures                    &lt;ul&gt;                        <li>My Pictures</li>                        <li>Public Pictures</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Music                    &lt;ul&gt;                        <li>My Music</li>                        <li>Public Music</li>                    &lt;/ul&gt;                &lt;/li&gt;                <li>Subversion</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;            Computer            &lt;ul&gt;                <li>Folder(C)&lt;/li&gt;                <li>Folder(D)&lt;/li&gt;                <li>Folder(F)&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;    &lt;/ul&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Set height property for TreeView control as follows.            $("#treeView").ejTreeView({ height: "75px" });</td></tr>
-</table>
+{% highlight html %}
 
+<ul id="treeView">
+        <li class="expanded">
+            Favorites
+            <ul>
+
+                <li>Desktop</li>
+                <li>Downloads</li>
+                <li>Recent places</li>
+            </ul>
+        </li>
+        <li class="expanded">
+            Libraries
+            <ul>
+                <li>
+                    Documents
+                    <ul>
+                        <li>My Documents</li>
+                        <li>Public Documents</li>
+                    </ul>
+                </li>
+                <li>
+                    Pictures
+                    <ul>
+                        <li>My Pictures</li>
+                        <li>Public Pictures</li>
+                    </ul>
+                </li>
+                <li>
+                    Music
+                    <ul>
+                        <li>My Music</li>
+                        <li>Public Music</li>
+                    </ul>
+                </li>
+                <li>Subversion</li>
+            </ul>
+        </li>
+        <li>
+            Computer
+            <ul>
+                <li>Folder(C)</li>
+                <li>Folder(D)</li>
+                <li>Folder(F)</li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+    $("#treeView").ejTreeView({ height: "75px" });
+</script>
+
+{% endhighlight %}
 
 The following screenshot displays the appearance of **height** of the **TreeView** component.
 
@@ -142,14 +185,64 @@ The following steps explain how to use the **width** property for **TreeView**.
 
 1. In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;ul id="treeView"&gt;        &lt;li class="expanded"&gt;            Favorites            &lt;ul&gt;                <li>Desktop</li>                <li>Downloads</li>                <li>Recent places</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li class="expanded"&gt;            Libraries            &lt;ul&gt;                &lt;li&gt;                    Documents                    &lt;ul&gt;                        <li>My Documents</li>                        <li>Public Documents</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Pictures                    &lt;ul&gt;                        <li>My Pictures</li>                        <li>Public Pictures</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Music                    &lt;ul&gt;                        <li>My Music</li>                        <li>Public Music</li>                    &lt;/ul&gt;                &lt;/li&gt;                <li>Subversion</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;            Computer            &lt;ul&gt;                <li>Folder(C)&lt;/li&gt;                <li>Folder(D)&lt;/li&gt;                <li>Folder(F)&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;    &lt;/ul&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Setting width property for TreeView control as follows.          $("#treeView").ejTreeView({ width: 300 });</td></tr>
-</table>
+{% highlight html %}
+
+<ul id="treeView">
+        <li class="expanded">
+            Favorites
+            <ul>
+
+                <li>Desktop</li>
+                <li>Downloads</li>
+                <li>Recent places</li>
+            </ul>
+        </li>
+        <li class="expanded">
+            Libraries
+            <ul>
+                <li>
+                    Documents
+                    <ul>
+                        <li>My Documents</li>
+                        <li>Public Documents</li>
+                    </ul>
+                </li>
+                <li>
+                    Pictures
+                    <ul>
+                        <li>My Pictures</li>
+                        <li>Public Pictures</li>
+                    </ul>
+                </li>
+                <li>
+                    Music
+                    <ul>
+                        <li>My Music</li>
+                        <li>Public Music</li>
+                    </ul>
+                </li>
+                <li>Subversion</li>
+            </ul>
+        </li>
+        <li>
+            Computer
+            <ul>
+                <li>Folder(C)</li>
+                <li>Folder(D)</li>
+                <li>Folder(F)</li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+    $("#treeView").ejTreeView({ width: 300 });
+</script>
+
+{% endhighlight %}
 
 
 The following screenshot displays the appearance of width of the **TreeView** component.

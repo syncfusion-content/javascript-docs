@@ -17,17 +17,35 @@ The following steps explain you on how to adjust the **ProgressBar** size.
 
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Add the code example to adjust the ProgressBar size (Number).&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({            value: 50,<b>            width: 400,</b><b>            height: 40</b>        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + " %" });    });&lt;/script&gt;(OR)Add the code to adjust the <b>ProgressBar </b>size (String).<b>[JavaScript]</b>&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({            value: 50,<b>            width: "400px",</b><b>            height: "40px"</b>        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + " %" });    });&lt;/script&gt;</td></tr>
-</table>
+            <div class="control">
+            <div id="progressbar"></div>
+            </div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+<script type="text/javascript">
+    $(function () {
+//Declaration.
+        $("#progressbar").ejProgressBar({
+            value: 50,
+            width: "400px",
+            height: "40px"
+        });
+        var progress = $("#progressbar").data("ejProgressBar");
+        progress.setModel({ text: progress.getValue() + " %" });
+
+    });
+</script>
+
+{% endhighlight %}
 
 The following screenshot displays the output.
 
@@ -41,15 +59,34 @@ The following steps explain the configuration of the **Custom text** for the **P
 
 *   In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;            &lt;div id="progressbar"&gt;&lt;/div&gt; &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Add Custom Text for the ProgressBar widget.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({            <b>text: "loading",</b>            value: 35,            height: 20,            width: 500        });    });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+            <div class="control">
+            <div id="progressbar"></div>
+            </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Add Custom Text for the ProgressBar widget.
+<script type="text/javascript">
+    $(function () {
+//Declaration.
+        $("#progressbar").ejProgressBar({
+            text: "loading",
+            value: 35,
+            height: 20,
+            width: 500
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 * The following screenshot displays the output.       {% include image.html url="/js/ProgressBar/Concepts-and-features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="    Figure 10: Custom Text in ProgressBar"%}
 
@@ -93,15 +130,37 @@ The following code example is used to render the **ProgressBar** widget with cus
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;        </td></tr>
-<tr>
-<td>
- <b>[JavaScript]</b>// Add the class for the ProgressBar Widget.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({<b>            cssClass: 'custom',</b>            value: 70,            height: 20,            width: 500        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + "%" });    });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+            <div class="control">
+            <div id="progressbar"></div>
+            </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Add the class for the ProgressBar Widget.
+<script type="text/javascript">
+
+    $(function () {
+//Declaration.
+        $("#progressbar").ejProgressBar({
+            cssClass: 'custom',
+            value: 70,
+            height: 20,
+            width: 500
+        });
+        var progress = $("#progressbar").data("ejProgressBar");
+        progress.setModel({ text: progress.getValue() + "%" });
+    });	
+</script>
+
+{% endhighlight %}
 
 * Add the following styles to render the **ProgressBar** with customized style.
 

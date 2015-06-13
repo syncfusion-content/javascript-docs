@@ -11,7 +11,7 @@ documentation: ug
 
 **AngularJS** is a **JavaScript** framework. It is added to an **HTML** page with a **&lt;script&gt;** tag. It extends **HTML** attributes with directives, and binds data to **HTML** with expressions. **AngularJS** directives allow you to specify custom and reusable **HTML** tags that moderate the behavior of certain elements.
 
-**Angular****binding** uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in **HTML** attributes. To know more about **Angular binding** refer the following link,
+**Angular** **binding** uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in **HTML** attributes. To know more about **Angular binding** refer the following link,
 
 [http://help.syncfusion.com/ug/js/#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/)
 
@@ -20,15 +20,16 @@ Apply the plugin and property assigning the **TreeView** element through the dir
 {% highlight html %}
 
 <!DOCTYPE html>
-<html lang="en" **ng-app**="treeApp">
+<html lang="en" ng-app="treeApp">
 <head>
     <!--To add the following script in html page for angular support-->
-<scriptsrc="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"> </script>
+<script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"> </script>
 </head>
-<body **ng-controller**="TreeCtrl">
+<body ng-controller="TreeCtrl">
 
-    <div id="treeView" ej-treeview e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="pid" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" />
+   <div id="treeView" ej-treeview e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="pid" e-fields-text="name" e-fields-haschild="hasChild" e-fields-expanded="expanded" />
     <script>
         var icons = [
                    { id: 1, name: "Favorites", hasChild: true },

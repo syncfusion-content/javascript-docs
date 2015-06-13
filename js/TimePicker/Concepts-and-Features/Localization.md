@@ -38,7 +38,7 @@ The following steps explains you on how to enable **Localization** property for 
     <title>Essential Studio for JavaScript : Timepicker </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
  <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -48,7 +48,7 @@ The following steps explains you on how to enable **Localization** property for 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
    <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js"> </script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script  src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
 
 
 </head>

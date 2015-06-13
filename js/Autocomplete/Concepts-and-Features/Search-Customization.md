@@ -21,7 +21,6 @@ The following steps explain how you can enable the **highlightSearch** property 
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -33,17 +32,16 @@ The following steps explain how you can enable the **highlightSearch** property 
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 filterType: "contains",
-**highlightSearch:true**
+                highlightSearch:true
             });
-
+</script>
 
 
 {% endhighlight %}
@@ -64,18 +62,18 @@ The following steps explain you how to enable the **caseSensitiveSearch** proper
 
 1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
 
-**[HTML]**
+{% highlight html %}
 
-         &lt;input type="text" id="autocomplete" /&gt;
+         <input type="text" id="autocomplete" />
 
 
+{% endhighlight %}
 
 2. Enable **caseSensitiveSearch** for **AutoComplete** control as follows.
 
 {% highlight js %}
 
-**[JavaScript]**
-
+<script type="text/javascript">
 // Here define CarList local data as per the previous the code block.
 
     $('#autocomplete').ejAutocomplete({
@@ -84,7 +82,7 @@ The following steps explain you how to enable the **caseSensitiveSearch** proper
                 filterType: "startswith",
 **caseSensitiveSearch: true**
             });
-
+</script>
 
 
 {% endhighlight %}

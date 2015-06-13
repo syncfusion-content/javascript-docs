@@ -16,15 +16,117 @@ In the following example, the Sub menus opens in the Left side of the menu.
 * Add the following code in your **HTML** page.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]    </b>&lt;div class="content-container-fluid"&gt;    &lt;div class="row"&gt;        &lt;div class="cols-sample-area"&gt;            &lt;ul id="coProducts"&gt;                &lt;li id="Products"&gt;                    <a href="#">Products</a>                    &lt;ul&gt;                        &lt;li&gt;<a>ASP.NET</a>&lt;/li&gt;                        &lt;li&gt;<a>ASP.NET MVC</a>&lt;/li&gt;                        &lt;ul&gt;                            &lt;li&gt;<a>WinRT (XMAL)&lt;/a&gt;&lt;/li&gt;                            &lt;li&gt;<a>Silverlight</a>&lt;/li&gt;                        &lt;/ul&gt;                &lt;/li&gt;            &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="Support"&gt;                <a>Support</a>                &lt;ul&gt;                    &lt;li&gt;<a>Direct-Trac Support</a>&lt;/li&gt;                    &lt;li&gt;                        <a>Services</a>                        &lt;ul&gt;                            &lt;li&gt;<a>Consulting</a>&lt;/li&gt;                            &lt;li&gt;<a>Training</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="Purchase"&gt;<a>Purchase</a>&lt;/li&gt;            &lt;li id="Downloads"&gt;                <a>Downloads</a>                &lt;ul&gt;                    &lt;li&gt;<a>Evaluation</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="Resources"&gt;                <a>Resources</a>                &lt;ul&gt;                    &lt;li&gt;                        <a>Technology Resource Portal &lt;/a&gt;                        &lt;ul&gt;                            &lt;li&gt;<a>White Papers</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                    &lt;li&gt;<a>FAQ</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="Company"&gt;                <a>Company</a>                &lt;ul&gt;                    &lt;li&gt;                        <a>About Us</a>                        &lt;ul&gt;                            &lt;li&gt;<a>Media Kit</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                    &lt;li&gt;<a>Company Blog</a>&lt;/li&gt;                    &lt;li&gt;<a>Technical Blog</a>&lt;/li&gt;                    &lt;li&gt;<a>Newsletter</a>&lt;/li&gt;                    &lt;li&gt;                        <a>Partners</a>                        &lt;ul&gt;                            &lt;li&gt;<a>Technology Partners</a>&lt;/li&gt;                            &lt;li&gt;<a>Training Partners</a>&lt;/li&gt;                            &lt;li&gt;<a>Consulting Partners</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                    &lt;li&gt;                        <a>Locations</a>                        &lt;ul&gt;                            &lt;li&gt;<a>RDU</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                    &lt;li&gt;<a>Contact Us</a>&lt;/li&gt;                    &lt;li&gt;<a>Careers</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;/ul&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Add the following code in your &lt;script&gt; section.</b>&lt;script type="text/javascript"&gt;    jQuery(function ($) {        $("#coProducts").ejMenu(        {            subMenuDirection: "left"        });    });&lt;/script&gt;</td></tr>
-</table>
+**[HTML]**   
+ 
+<div class="content-container-fluid">
+    <div class="row">
+        <div class="cols-sample-area">
+            <ul id="coProducts">
+                <li id="Products">
+                    <a href="#">Products</a>
+                    <ul>
+                        <li><a>ASP.NET</a></li>
+                        <li><a>ASP.NET MVC</a></li>
+                        <ul>
+                            <li><a>WinRT (XMAL)</a></li>
+                            <li><a>Silverlight</a></li>
+                        </ul>
+                       </ul>
+                </li>
+            </ul>
+
+            <li id="Support">
+                <a>Support</a>
+                <ul>
+                    <li><a>Direct-Trac Support</a></li>
+                    <li>
+                        <a>Services</a>
+                        <ul>
+                            <li><a>Consulting</a></li>
+                            <li><a>Training</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="Purchase"><a>Purchase</a></li>
+
+            <li id="Downloads">
+                <a>Downloads</a>
+                <ul>
+                    <li><a>Evaluation</a></li>
+                </ul>
+            </li>
+
+            <li id="Resources">
+                <a>Resources</a>
+                <ul>
+                    <li>
+                        <a>Technology Resource Portal </a>
+                        <ul>
+                            <li><a>White Papers</a></li>
+                        </ul>
+                    </li>
+                    <li><a>FAQ</a></li>
+                </ul>
+            </li>
+
+            <li id="Company">
+                <a>Company</a>
+                <ul>
+                    <li>
+                        <a>About Us</a>
+                        <ul>
+                            <li><a>Media Kit</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Company Blog</a></li>
+                    <li><a>Technical Blog</a></li>
+                    <li><a>Newsletter</a></li>
+                    <li>
+                        <a>Partners</a>
+                        <ul>
+                            <li><a>Technology Partners</a></li>
+                            <li><a>Training Partners</a></li>
+                            <li><a>Consulting Partners</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Locations</a>
+                        <ul>
+                            <li><a>RDU</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Careers</a></li>
+                </ul>
+            </li>
+
+        </div>
+    </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Add the following code in your <script> section.
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#coProducts").ejMenu(
+        {
+            subMenuDirection: "left"
+        });
+    });
+</script>
+
+{% endhighlight %}
+
 
 
 The output for the above code example is as follows.          
@@ -37,17 +139,61 @@ You can even achieve auto positioning for Context Menu. Use the following code s
 
 * Add the following code in your **HTML** page.
 
+{% highlight html %}
 
+**[HTML]**     
 
-<table>
-<tr>
-<td>
-<b>[HTML]     </b> &lt;div&gt;    &lt;div id="target" class="textarea"&gt;        HTML is written in the form of HTML elements consisting of tags enclosed in angle        brackets (like        &lt;html&gt;        ),within the web page content. HTML tags most commonly come in pairs like and ,although        some tags, known as empty elements, are unpaired, for example        &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into        visible or audible web pages. The browser does not display the HTML tags, but uses        the tags to interpret the content of the page.    &lt;/div&gt;    &lt;ul id="contextMenu"&gt;        &lt;li&gt;            <a>Cut</a>            &lt;ul&gt;                &lt;li&gt;                    <a>Cut Particular</a>                &lt;/li&gt;                &lt;li&gt;<a>Cut Fully</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;<a>Copy</a>&lt;/li&gt;        &lt;li&gt;<a>Paste</a>&lt;/li&gt;        &lt;li class="separator"&gt;&lt;/li&gt;        &lt;li&gt;<a>Comments</a>&lt;/li&gt;        &lt;li&gt;<a>Links</a>&lt;/li&gt;        &lt;li&gt;<a>Clear Formatting</a>&lt;/li&gt;    &lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript] </b><b>// Add the following code in your &lt;script&gt; section.</b>&lt;script type="text/javascript"&gt;    jQuery(function ($) {        $("#contextMenu").ejMenu(             {                 menuType: ej.MenuType.ContextMenu,                 openOnClick: false,                 contextMenuTarget: "#target",                 <b>subMenuDirection: ej.Direction.Left</b>             });    });&lt;/script&gt;</td></tr>
-</table>
+ <div>
+    <div id="target" class="textarea">
+        HTML is written in the form of HTML elements consisting of tags enclosed in angle
+        brackets (like
+        &lt;html&gt;
+        ),within the web page content. HTML tags most commonly come in pairs like and ,although
+        some tags, known as empty elements, are unpaired, for example
+        &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into
+        visible or audible web pages. The browser does not display the HTML tags, but uses
+        the tags to interpret the content of the page.
+    </div>
+    <ul id="contextMenu">
+        <li>
+            <a>Cut</a>
+            <ul>
+                <li>
+                    <a>Cut Particular</a>
+                </li>
+                <li><a>Cut Fully</a></li>
+            </ul>
+        </li>
+        <li><a>Copy</a></li>
+        <li><a>Paste</a></li>
+        <li class="separator"></li>
+        <li><a>Comments</a></li>
+        <li><a>Links</a></li>
+        <li><a>Clear Formatting</a></li>
+    </ul>
+</div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]** 
+
+// Add the following code in your script section.
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#contextMenu").ejMenu(
+             {
+                 menuType: ej.MenuType.ContextMenu,
+                 openOnClick: false,
+                 contextMenuTarget: "#target",
+                 subMenuDirection: ej.Direction.Left
+             });
+    });
+</script>
+
+{% endhighlight %}
 
 * Add the following code in your style section.
 

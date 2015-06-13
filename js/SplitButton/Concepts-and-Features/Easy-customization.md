@@ -21,7 +21,7 @@ The following steps explains you the details about rendering the **Split Button*
 
 {% highlight html %}
 
-**[HTML]**
+[HTML]
   <div class="spltspan">
         <button id="spltbutton">login</button>
         <ul id="Ul11">
@@ -31,7 +31,7 @@ The following steps explains you the details about rendering the **Split Button*
         </ul>
     </div>
 
-**[JavaScript]**
+[JavaScript]
 // Initialize the control in JavaScript
 
     <script type="text/javascript">

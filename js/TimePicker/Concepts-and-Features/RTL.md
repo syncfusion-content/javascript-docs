@@ -17,16 +17,26 @@ The following steps explains you in enabling the right-to-left property for the 
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.   
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Enable RTL for TimePicker controls as follows.</b>$(function () {           $('#time').ejTimePicker({                       enableRTL: true                 }); });</td></tr>
-</table>
+         <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+// Enable RTL for TimePicker controls as follows.
+<script>
+$(function () {
+           $('#time').ejTimePicker({ 
+                enableRTL: true 
+           });
+ });
+</script>
+{% endhighlight %}
 
 
 The following screenshot illustrates a **TimePicker** control when **enableRTL** is set to **“true”**

@@ -17,17 +17,30 @@ The following steps explains you the implementation of custom action.
 
 1. In the **HTML** page set a **&lt;div&gt;** element with dialog content for rendering the **Dialog** control. 
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div id="customAction" title="Audi-R8"&gt;        &lt;img src="Content/images/r8-coupe.png" /&gt;        The Audi R8 was initially equipped with a 4.2 litre V8 engine. Specifically, it is an all-aluminum alloy 32-valve (four valves per cylinder) petrol engine, utilising Fuel Stratified Injection (FSI), and has a displacement of 4,163 cubic centimetres (254.0 cu in).    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Set the <b>actionButtons</b> property in the <b>Dialog</b> function. The default value of <b>actionButtons</b> is <b>[“close”]</b>    &lt;script type="text/javascript"&gt;        $("#customAction").ejDialog({            width: 300,            <b>actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]                               </b>        });    &lt;/script&gt;</td></tr>
-</table>
+     <div id="customAction" title="Audi-R8">
+        <img src="Content/images/r8-coupe.png" />
+        The Audi R8 was initially equipped with a 4.2 litre V8 engine. Specifically, it is an all-aluminum alloy 32-valve (four valves per cylinder) petrol engine, utilising Fuel Stratified Injection (FSI), and has a displacement of 4,163 cubic centimetres (254.0 cu in).
+    </div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Set the actionButtons property in the Dialog function. The default value of actionButtons is [“close”]
+    <script type="text/javascript">
+        $("#customAction").ejDialog({
+            width: 300,
+            actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]                               
+        });
+    </script>
+
+{% endhighlight %}
 
 2. The output of **actionButtons** in **Dialog** widget is as follows.
 

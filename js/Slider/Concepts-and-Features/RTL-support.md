@@ -21,15 +21,33 @@ The following steps explains you on how to enable **RTL** support in **Slider**.
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>        <div class="txt">Range Slider</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// In JavaScript, when initializing the Slider, specify the value for “enableRTL” property as “true”    &lt;script&gt;        $("#rangeSlider").ejSlider({            sliderType: ej.SliderType.Range,            values: [25,75],            width: "500",<b>            enableRTL:true</b>        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+       <div class="txt">Range Slider</div>
+        <div id="rangeSlider"></div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// In JavaScript, when initializing the Slider, specify the value for “enableRTL” property as “true”
+
+   <script>
+        $("#rangeSlider").ejSlider({
+            sliderType: ej.SliderType.Range,
+            values: [25,75],
+            width: "500",
+            enableRTL:true
+        });
+    </script>
+
+
+{% endhighlight %}
 
 Execute the above code example to render the following output.
 

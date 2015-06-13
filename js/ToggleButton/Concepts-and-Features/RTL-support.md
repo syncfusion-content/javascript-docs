@@ -15,17 +15,37 @@ The following steps explains you the details about rendering the **Toggle Button
 
 * In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
+{% highlight html %}
 
+**[HTML]**
+ <input type="checkbox" id="toggle_rtl" />
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="checkbox" id="toggle_rtl" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            $("#toggle_rtl").ejToggleButton({                size: "small",                imagePosition: "imageleft",                contentType: "textandimage",                showRoundedCorner: true,                defaultText: "Play",                activeText: "Next",                defaultPrefixIcon: "e-mediaplay e-uiLight",                activePrefixIcon: "e-mediapause e-uiLight",                //used to enable or disable RTL support for toggle button<b>                enableRTL: true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% endhighlight %}
 
+{% highlight html %}
+
+**[JavaScript]**
+
+//Initialize the control in JavaScript
+
+   <script type="text/javascript">
+        $(function () {
+            $("#toggle_rtl").ejToggleButton({
+                size: "small",
+                imagePosition: "imageleft",
+                contentType: "textandimage",
+                showRoundedCorner: true,
+                defaultText: "Play",
+                activeText: "Next",
+                defaultPrefixIcon: "e-mediaplay e-uiLight",
+                activePrefixIcon: "e-mediapause e-uiLight",
+                //used to enable or disable RTL support for toggle button
+                enableRTL: true
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 In above mentioned code example **prefixIcon** property is used and the icon that is to be on left side, (before text) is rendered on right side as **enableRTL** property is used with **prefixIcon.**  Consequently, the alignment is changed in right to left order.
 

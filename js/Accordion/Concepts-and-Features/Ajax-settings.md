@@ -15,18 +15,45 @@ documentation: ug
 
 1. Create HTML files with required content to be loaded for Accordion panel and save it in your drive location.
 
-2. In the HTML page, define a &lt;div&gt; element that is a container for Accordion widget and add the contents URL location in the &lt;a&gt; tag accordingly.
+2. In the HTML page, define a div element that is a container for Accordion widget and add the contents URL location in the &lt;a&gt; tag accordingly.
+
+{% highlight html %}
+
+  **[HTML]**
+   
+    <div id="accordion" style="width: 650px">
+    <h3>
+        <a href="#">WCF</a></h3>
+    <div>
+        <p>
+            WCF is a tool often used to implement and deploy a service-oriented architecture (SOA). 
+            It is designed using service-oriented architecture principles to support distributed computing where services have remote consumers. Clients can consume multiple services; services can be consumed by multiple clients. Services are loosely coupled to each other. Services typically have a WSDL interface (Web Services Description Language) that any WCF client can use to consume the service, regardless of which platform the service is hosted on. 
+            WCF implements many advanced Web services (WS) standards such as WS-Addressing, WS-ReliableMessaging and WS-Security. With the release of .NET Framework 4.0, WCF also provides RSS Syndication Services, WS-Discovery, routing and better support for REST services.
+        </p>
+    </div>
+    <h3>
+        <a href="mvccontent.html">Model–view–controller (MVC)</a></h3>
+    <div>
+    </div>
+    <h3>
+        <a href="wpfcontent.html">WPF</a></h3>
+    <div>
+    </div>                      
+</div>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="accordion" style="width: 650px"&gt;    &lt;h3&gt;        <a href="#">WCF</a>&lt;/h3&gt;    &lt;div&gt;        &lt;p&gt;            WCF is a tool often used to implement and deploy a service-oriented architecture (SOA).             It is designed using service-oriented architecture principles to support distributed computing where services have remote consumers. Clients can consume multiple services; services can be consumed by multiple clients. Services are loosely coupled to each other. Services typically have a WSDL interface (Web Services Description Language) that any WCF client can use to consume the service, regardless of which platform the service is hosted on.             WCF implements many advanced Web services (WS) standards such as WS-Addressing, WS-ReliableMessaging and WS-Security. With the release of .NET Framework 4.0, WCF also provides RSS Syndication Services, WS-Discovery, routing and better support for REST services.        &lt;/p&gt;    &lt;/div&gt;    &lt;h3&gt;<b>        <a href="mvccontent.html">Model–view–controller (MVC)&lt;/a&gt;</b>&lt;/h3&gt;    &lt;div&gt;    &lt;/div&gt;    &lt;h3&gt;        <b><a href="wpfcontent.html">WPF</a></b>&lt;/h3&gt;    &lt;div&gt;    &lt;/div&gt;                      &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Configure the <b>Accordion</b> control          $("#accordion").ejAccordion();</td></tr>
-</table>
+{% endhighlight %}
 
+{% highlight js %}
+
+[JavaScript]
+
+// Configure the Accordion control
+
+          $("#accordion").ejAccordion();
+
+
+{% endhighlight %}
 
 3. Output for Accordion control with loaded Ajax content is as follows.
 

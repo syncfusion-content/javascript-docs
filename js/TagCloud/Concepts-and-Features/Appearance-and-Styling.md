@@ -19,16 +19,28 @@ The following steps explains you on how to configure font sizes for a **TagCloud
 
 * In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
+{% highlight html %}
+
+**[HTML]**
+                 <div id="techweblist"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+// Assign the values for minFontSize  and maxFontSize properties below.
+<script>
+        $("#techweblist").ejTagCloud({
+                minFontSize: "20px",
+                maxFontSize: "50px",
+                titleText: "Tech Sites",
+                dataSource: websiteCollection
+           });
+ </script>
+{% endhighlight %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;div id="techweblist"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Assign the values for minFontSize  and maxFontSize properties as follows.</b>    $("#techweblist").ejTagCloud({<b>                minFontSize: "20px",</b><b>                maxFontSize: "50px",</b>                titleText: "Tech Sites",<b>                </b>dataSource: websiteCollection           });</td></tr>
-</table>
 The following screenshot illustrates the **TagCloud** control with customized font sizes.
 
 {% include image.html url="/js/TagCloud/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption=""%}
@@ -45,17 +57,43 @@ The following steps explains you to configure format for a **TagCloud**.
 
 * In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
+{% highlight html %}
 
-
-<table>
-<tr>
-<td>
-<b>[HTML]</b> &lt;table&gt;    &lt;tr&gt;        &lt;td&gt;            <span>Tag format cloud</span>            &lt;div id="techwebcloud"&gt;&lt;/div&gt;        &lt;/td&gt;        &lt;td&gt;            <span>Tag format list</span>            &lt;div id="techweblist"&gt;&lt;/div&gt;        &lt;/td&gt;    &lt;/tr&gt;&lt;/table&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Assign the values for format property in TagCloud.      $("#techweblist").ejTagCloud({                <b>format:"list",</b>                titleText: "Tech Sites List",                dataSource: websiteCollection            });            $("#techwebcloud").ejTagCloud({                <b>format: "cloud",</b>                titleText: "Tech Sites Cloud",                dataSource: websiteCollection            });</td></tr>
+**[HTML]**
+ 
+   <table>
+    <tr>
+        <td>
+            <span>Tag format cloud</span>
+            <div id="techwebcloud"></div>
+        </td>
+        <td>
+            <span>Tag format list</span>
+            <div id="techweblist"></div>
+        </td>
+    </tr>
 </table>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Assign the values for format property in TagCloud.
+<script>
+    $("#techweblist").ejTagCloud({
+                format:"list",
+                titleText: "Tech Sites List",
+                dataSource: websiteCollection
+            });
+            $("#techwebcloud").ejTagCloud({
+                format: "cloud",
+                titleText: "Tech Sites Cloud",
+                dataSource: websiteCollection
+            });
+</script>
+{% endhighlight %}
 
 The following screenshot illustrates the **TagCloud** control with customized formats.
 
@@ -104,16 +142,26 @@ The following steps allows you to configure **CSS** class for **TagCloud**.
 * In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;div id="techweblist"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Add the cssClass property to TagCloud.          $("#techweblist").ejTagCloud({                titleText: "Tech Sites",                dataSource: websiteCollection,                <b>cssClass:"CustomCss"</b>            });</td></tr>
-</table>
+**[HTML]**
+         <div id="techweblist"></div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Add the cssClass property to TagCloud.
+   <script>   
+             $("#techweblist").ejTagCloud({
+                titleText: "Tech Sites",
+                dataSource: websiteCollection,
+                cssClass:"CustomCss"
+            });
+   </script>
+{% endhighlight %}
 
 Define CSS class for customizing the **TagCloud** widget.
 

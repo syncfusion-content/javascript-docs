@@ -26,15 +26,43 @@ The following steps explains you the configuration of **popupHeight** & **popupW
 * In an **HTML** page, add a &lt;input&gt; element to configure **DropdownList** widget
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;      &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;         $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>popupWidth</b>: "250px",                <b>popupHeight</b>: "100px"                          });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+    <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+      </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**  
+
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+         $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                popupWidth: "250px",
+                popupHeight: "100px"              
+
+            });
+        });    </script>
+
+{% endhighlight %}
 
 * Output of the above steps
 
@@ -60,16 +88,45 @@ The following steps explains you the configuration of **height** & **width** pro
 
 * In an **HTML** page, add a &lt;input&gt; element to configure **DropdownList** widget
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript] </b>// Initialize the control in <b>JavaScript</b><b> </b>&lt;script type="text/javascript"&gt;        $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>width</b>: "250px",                <b>height</b>: "50px"                          });        });&lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+    <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]** 
+
+// Initialize the control in JavaScript
+ 
+<script type="text/javascript">
+
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                width: "250px",
+                height: "50px"              
+
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -88,16 +145,44 @@ The following steps explains the configuration of **watermarkText** properties i
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;      &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Initialize the control in <b>JavaScript</b><b>  </b>&lt;script type="text/javascript"&gt;   $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>watermarkText</b>: "Select"            });        }); &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+    <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+      </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the control in JavaScript
+  
+<script type="text/javascript">
+
+   $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                watermarkText: "Select"
+            });
+        }); 
+</script>
+
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -114,16 +199,44 @@ The following steps explains you  the configuration of Rounded corner of the **D
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget.
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;                &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;      &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",<b>                showRoundedCorner:true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+    <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+      </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                showRoundedCorner:true
+            });
+        });	
+    </script>
+
+
+{% endhighlight %}
 
 * Output of the above steps
 
@@ -137,21 +250,68 @@ _Figure 24: Dropdown with Rounded corner property_
 You can add the icons or images with list items in dropdown popup by using sprite **CSS** class. The following steps explains you the configuration about the icons support with **DropdownList**
 
 
-> {% include image.html url="/js/DropDownList/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption=""%}_**Note: Images for this sample are available in ‘installed location /themes/images’ and you need to define images in mentioned CSS. Henceforth the images display.**_ 
+> {% include image.html url="/js/DropDownList/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption=""%}_
+
+**Note: Images for this sample are available in ‘installed location /themes/images’ and you need to define images in mentioned CSS. Henceforth the images display.**_ 
 
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]   </b>  &lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="mailtoolslist"&gt;            &lt;ul&gt;                &lt;li&gt;                    &lt;div class="mailtools categorize"&gt;&lt;/div&gt;                    Categorize and Move</li>                &lt;li&gt;                    &lt;div class="mailtools done"&gt;&lt;/div&gt;                    Done</li>                &lt;li&gt;                    &lt;div class="mailtools flag"&gt;&lt;/div&gt;                    Flag & Move</li>                &lt;li&gt;                    &lt;div class="mailtools forward"&gt;&lt;/div&gt;                    Forward</li>                &lt;li&gt;                    &lt;div class="mailtools movetofolder"&gt;&lt;/div&gt;                    Move to Folder</li>                &lt;li&gt;                    &lt;div class="mailtools newmail"&gt;&lt;/div&gt;                    New E-mail</li>                &lt;li&gt;                    &lt;div class="mailtools meeting"&gt;&lt;/div&gt;                    New Meeting</li>                &lt;li&gt;                    &lt;div class="mailtools reply"&gt;&lt;/div&gt;                    Reply & Delete</li>            &lt;/ul&gt;     &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        var target;        $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "mailtoolslist"                });        });    &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+    <input type="text" id="dropdownlist" />
+
+        <div id="mailtoolslist">
+            <ul>
+                <li>
+                    <div class="mailtools categorize"></div>
+                    Categorize and Move</li>
+                <li>
+                    <div class="mailtools done"></div>
+                    Done</li>
+                <li>
+                    <div class="mailtools flag"></div>
+                    Flag & Move</li>
+                <li>
+                    <div class="mailtools forward"></div>
+                    Forward</li>
+                <li>
+                    <div class="mailtools movetofolder"></div>
+                    Move to Folder</li>
+                <li>
+                    <div class="mailtools newmail"></div>
+                    New E-mail</li>
+                <li>
+                    <div class="mailtools meeting"></div>
+                    New Meeting</li>
+                <li>
+                    <div class="mailtools reply"></div>
+                    Reply & Delete</li>
+            </ul>
+     </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+        var target;
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "mailtoolslist"
+                });
+
+
+        });	
+    </script>
+
+{% endhighlight %}
 
 * Configure sprite **CSS** styles to **DropdownList**
 
@@ -236,16 +396,44 @@ The following steps explains you the configuration of **enableAnimation** proper
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;   $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>enableAnimation :</b> true            });        }); &lt;/script&gt;</td></tr>
-</table>
+    <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]** 
+
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+
+   $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                enableAnimation : true
+            });
+        }); 
+</script>
+
+{% endhighlight %}
+
 **Theme**
 
 **DropdownList** control’s style and appearance can be controlled based on **CSS** classes. In order to apply styles to the **DropdownList** control, you need to refer two files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. If the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.widgets.all.min.css** is the combination of these two. 
@@ -289,15 +477,44 @@ The following steps explains you the configuration of **cssClass** properties in
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;        &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>                <li>Science</li>            &lt;/ul&gt;       &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript] </b>// Initialize the control in <b>JavaScript</b><b> </b>&lt;script type="text/javascript"&gt;$(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                <b>cssClass</b>: "customclass"            });        });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+    <input type="text" id="dropdownlist" />
+
+        <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+                <li>Science</li>
+            </ul>
+
+       </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]** 
+
+// Initialize the control in JavaScript
+ 
+<script type="text/javascript">
+
+$(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                cssClass: "customclass"
+            });
+        });
+</script>
+
+
+{% endhighlight %}
 
 * Configure the **CSS** styles to apply on **DropdownList**
 

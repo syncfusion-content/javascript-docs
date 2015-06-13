@@ -59,6 +59,7 @@ Triggered when the control resize start</td></tr>
 resizeStop</td><td>
 Triggered when the control resize stop</td></tr>
 </table>
+
 ## Configure Events
 
 The following steps describes you on how the events are added to the **Dialog** control.
@@ -89,7 +90,7 @@ The following steps describes you on how the events are added to the **Dialog** 
 
 **[JavaScript]**
 
-    <script type="text/javascript">
+   <script type="text/javascript">
         $("#eventDialog").ejDialog({
             create: "onCreate",
             beforeClose: "onBeforeClose",
@@ -118,7 +119,7 @@ The following steps describes you on how the events are added to the **Dialog** 
 
 **[JavaScript]**
 
-    <script type="text/javascript">
+   <script type="text/javascript">
         function onCreate(args) {
             // {boolean} argument.cancel - returns the cancel option value
             // {object} argument.model - returns the dialog model
@@ -219,6 +220,7 @@ alert("Event triggered is " + args.type);
 <img src="Events_images\Events_img1.png" alt="C:\Users\ApoorvahR\Desktop\1.png" width="223pt" height="150pt"</td><td>
 <img src="Events_images\Events_img2.png" alt="C:\Users\ApoorvahR\Desktop\2.png" width="214pt" height="141pt"</td></tr>
 </table>
+
 _Dialog triggered create and beforeOpen event_               
 
 __
@@ -229,6 +231,7 @@ __
 <img src="Events_images\Events_img3.png" alt="C:\Users\ApoorvahR\Desktop\3.png" width="332pt" height="226pt"</td><td>
 <img src="Events_images\Events_img4.png" alt="C:\Users\ApoorvahR\Desktop\4.png" width="339pt" height="236pt"</td></tr>
 </table>
+
 _Dialog triggered open and before close event_  
 __
 
@@ -238,6 +241,7 @@ __
 <img src="Events_images\Events_img5.png" alt="C:\Users\ApoorvahR\Desktop\5.png" width="214pt" height="157pt"</td><td>
 <img src="Events_images\Events_img6.png" alt="C:\Users\ApoorvahR\Desktop\6.png" width="347pt" height="242pt"</td></tr>
 </table>
+
 _Dialog triggered close and drag event_
 
 
@@ -247,6 +251,7 @@ _Dialog triggered close and drag event_
 <img src="Events_images\Events_img7.png" alt="C:\Users\ApoorvahR\Desktop\7.png" width="329pt" height="222pt"</td><td>
 <img src="Events_images\Events_img8.png" alt="C:\Users\ApoorvahR\Desktop\8.png" width="322pt" height="158pt"</td></tr>
 </table>
+
 _Dialog triggered dragStart and dragStop event_
 
 
@@ -256,6 +261,7 @@ _Dialog triggered dragStart and dragStop event_
 <img src="Events_images\Events_img9.png" alt="C:\Users\ApoorvahR\Desktop\9.png" width="323pt" height="214pt"</td><td>
 <img src="Events_images\Events_img10.png" alt="C:\Users\ApoorvahR\Desktop\10.png" width="320pt" height="212pt"</td></tr>
 </table>
+
 _Dialog triggered resize and resizeStart event_
 
 __

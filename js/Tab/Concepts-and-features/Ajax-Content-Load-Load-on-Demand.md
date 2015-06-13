@@ -21,33 +21,81 @@ The following code example illustrates to create the **Tab** control within the 
 
 * Add the following **HTML** to render sub **Tab** with **ajax** content.
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;        &lt;div id="pizzaType"&gt;            &lt;ul&gt;                &lt;li&gt;                    <a href="content/cornSpinach.html">Corn & Spinach &lt;/a&gt;&lt;/li&gt;                &lt;li&gt;                    <a href="Content/chickenDelite.html">Chicken Delite &lt;/a&gt;&lt;/li&gt;            &lt;/ul&gt;        &lt;/div&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;        &lt;div id="sandwichType"&gt;            &lt;ul&gt;                &lt;li&gt;                    <a href="Content/gardenVeggie.html">Garden Veggie &lt;/a&gt;&lt;/li&gt;                &lt;li&gt;                    <a href="Content/chickenTikka.html">Chicken Tikka &lt;/a&gt;&lt;/li&gt;                &lt;li&gt;                    <a href="Content/paneerTikka.html">Paneer Tikka &lt;/a&gt;&lt;/li&gt;            &lt;/ul&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render sub Tab with Ajax content.&lt;script type="text/javascript"&gt;   $(function () {        $("#dishtype").ejTab();                        $("#pizzaType").ejTab({ dataType: "html", contentType: "html", async: true });            $("#sandwichType").ejTab({ dataType: "html", contentType: "html", async: true }); });         &lt;/script&gt; </td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+            <div id="pizzaType">
+                <ul>
+                    <li>
+                        <a href="content/cornSpinach.html">Corn & Spinach </a></li>
+                    <li>
+                        <a href="Content/chickenDelite.html">Chicken Delite </a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+            <div id="sandwichType">
+                <ul>
+                    <li>
+                        <a href="Content/gardenVeggie.html">Garden Veggie </a></li>
+                    <li>
+                        <a href="Content/chickenTikka.html">Chicken Tikka </a></li>
+                    <li>
+                        <a href="Content/paneerTikka.html">Paneer Tikka </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+ [JS]
+
+// Add the following script to render sub Tab with Ajax content.
+
+    <script type="text/javascript">
+       $(function () {        
+    $("#dishtype").ejTab();            
+                $("#pizzaType").ejTab({ dataType: "html", contentType: "html", async: true });
+                $("#sandwichType").ejTab({ dataType: "html", contentType: "html", async: true }); 
+    });         
+    </script> 
+
+
+{% endhighlight %}
 
 
 *   The file ‘**cornSpinach.html**’ content is as follows. 
 
 {% highlight html %}
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<body>
-    <div class="e-content">
-<imgsrc="[http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png](http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png)"alt="corn-spinach">
-        <div class="ingredients">
-            Rate    : $70<br/> Ingredients : cheese, sweet corn &amp; green capsicums.
-            <br />
-            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                    </div>
-    </div>   
-</body>
-</html>
+**[HTML]**
 
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <body>
+        <div class="e-content">
+    <imgsrc="[http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png](http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png)"alt="corn-spinach">
+            <div class="ingredients">
+                Rate    : $70<br/> Ingredients : cheese, sweet corn &amp; green capsicums.
+                <br />
+                Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                    </div>
+        </div>   
+    </body>
+    </html>
 
 {% endhighlight %}
 
@@ -57,18 +105,20 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight html %}
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<body>
-    <div class="e-content">
-        <img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite">
-        <div class="ingredients">
-            Rate    : $100<br /> Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.   <br /> 
-             Description: This is a tasty, elegant chicken dish that is easy to prepare.
+**[HTML]**
+
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <body>
+        <div class="e-content">
+            <img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite">
+            <div class="ingredients">
+                Rate    : $100<br /> Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.   <br /> 
+                 Description: This is a tasty, elegant chicken dish that is easy to prepare.
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
 
 
 {% endhighlight %}

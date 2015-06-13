@@ -23,15 +23,44 @@ The following steps explains you the configuration of search options in **Dropdo
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;  &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>            &lt;/ul&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                                width: "200px",                               showRoundedCorner: true,<b>                enableIncrementalSearch: true,</b><b>                caseSensitiveSearch:false</b>            });        });   &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
+
+     <input type="text" id="dropdownlist" />
+
+      <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+<script type="text/javascript">
+      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",                
+                width: "200px",               
+                showRoundedCorner: true,
+                enableIncrementalSearch: true,
+                caseSensitiveSearch:false
+            });
+        });
+   </script>
+
+{% endhighlight %}
+
 Output of the above steps
 
 {% include image.html url="/js/DropDownList/Concepts-and-Features/Search-Options_images/Search-Options_img1.png" Caption=""%}

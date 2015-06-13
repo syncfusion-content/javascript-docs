@@ -17,16 +17,29 @@ The **Splitter** supports both vertical and horizontal orientation of the pane. 
 
 * In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** widget. 
 
+{% highlight html %}
 
+        <div id="splitter">
+            <div>
+                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
+            </div>
+            <div>
+                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
+            </div>
+        </div>
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>        &lt;div id="splitter"&gt;            &lt;div&gt;                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>            &lt;/div&gt;            &lt;div&gt;                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>            &lt;/div&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Set the <b>orientation</b> property as <b>ej.Orientation.Vertical</b> for the outer pane in the <b>ejSplitter</b> function. The default orientation value is horizontal in the <b>Splitter</b> widget.    &lt;script type="text/javascript"&gt;        $("#splitter").ejSplitter({            height: 280, width: 400,            <b>orientation: ej.Orientation.Vertical,</b>        });      &lt;/script&gt;</td></tr>
-</table>
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+	        $("#splitter").ejSplitter({
+            height: 280, width: 400,
+            orientation: ej.Orientation.Vertical,
+        });  
+</script>
+
+{% endhighlight %}
 
 
 The output for **Splitter** with **ej.Orientation.Vertical**.

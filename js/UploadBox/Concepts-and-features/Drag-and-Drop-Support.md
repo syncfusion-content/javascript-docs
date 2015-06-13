@@ -25,15 +25,38 @@ The following steps explain how to enable the drag and drop in the **Uploadbox**
 
 1. In the HTML page, add a **&lt;div&gt;** element to enable the drag and drop in Uploadbox control.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="frame"&gt;     &lt;div class="control"&gt;            &lt;div id="Uploadbox"&gt;&lt;/div&gt;       &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Initialize the <b>UploadBox</b> by using the following code example.&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#Uploadbox").ejUploadbox({                saveUrl: "http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx",                removeUrl: "http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx",                <b>allowDragAndDrop</b>: true,                multipleFilesSelection: true            });        }); &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+     <div class="frame">
+     <div class="control">
+            <div id="Uploadbox"></div>
+       </div>
+</div>
+
+{% endhighlight %}
+
+
+<{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the UploadBox by using the following code example.
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#Uploadbox").ejUploadbox({
+                saveUrl: "http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx",
+                removeUrl: "http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx",
+                allowDragAndDrop: true,
+                multipleFilesSelection: true
+            });
+        });
+ </script>
+
+
+{% endhighlight %}
 
 To know about file action, refer to the following link: [http://help.syncfusion.com/ug/js/default.htm#!documents/fileactions.htm](http://help.syncfusion.com/ug/js/default.htm)
 
@@ -70,17 +93,38 @@ You can change the drag area text by using the **dragAreaText** property.  By de
 
 * In the **HTML** page, add a **&lt;div&gt;** element to enable the drag and drop in the **Uploadbox** control.
 
+{% highlight html %}
+
+**[HTML]**
+
+     <div class="frame">
+     <div class="control">
+            <div id="Uploadbox"></div>
+       </div>
+</div>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="frame"&gt;     &lt;div class="control"&gt;            &lt;div id="Uploadbox"&gt;&lt;/div&gt;       &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Initialize the UploadBox using the following code example.&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#Uploadbox").ejUploadbox({                saveUrl: "http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx",                removeUrl: "http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx",                allowDragAndDrop: true,                <b>dragAreaText:"Drop files here",</b>                multipleFilesSelection: true            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% endhighlight %}
 
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the UploadBox using the following code example.
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#Uploadbox").ejUploadbox({
+                saveUrl: "http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx",
+                removeUrl: "http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx",
+                allowDragAndDrop: true,
+                dragAreaText:"Drop files here",
+                multipleFilesSelection: true
+            });
+        });	
+    </script>
+
+{% endhighlight %}
 
 * In CSS, configure the custom styles for drag and drop.
 
@@ -117,17 +161,37 @@ The following steps explain you on how to adjust the Drop Area Size.
 
 * In the **HTML** page, add a **&lt;div&gt;** element to enable the drag and drop in **Uploadbox** control.
 
+{% highlight html %}
+
+**[HTML]**
+
+     <div class="control">
+     <div id="Uploadbox"></div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the Uploadbox using the following code example.
+   <script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#Uploadbox").ejUploadbox({
+                saveUrl: "http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx",
+                removeUrl: "http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx",
+                allowDragAndDrop: true,
+                multipleFilesSelection: true,
+	         dropAreaHeight:"300px",
+	         dropAreaWidth:"600px" 
+            });
+        });	
+    </script>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;     &lt;div id="Uploadbox"&gt;&lt;/div&gt; &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Initialize the Uploadbox using the following code example.    &lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#Uploadbox").ejUploadbox({                saveUrl: "http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx",                removeUrl: "http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx",                allowDragAndDrop: true,                multipleFilesSelection: true,	<b>         dropAreaHeight:"300px",</b><b>	         dropAreaWidth:"600px" </b>            });        });    &lt;/script&gt;</td></tr>
-</table>
-
+{% endhighlight %}
 
 The following screenshot displays the output for the above code.
 
@@ -145,15 +209,38 @@ The following steps explains the droppable area containing the browse button beh
 
 * In the **HTML** page, add a **&lt;div&gt;** element to enable drag and drop in the **Uploadbox** control.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="frame"&gt;     &lt;div class="control"&gt;            &lt;div id="Uploadbox"&gt;&lt;/div&gt;       &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Initialize the Uploadbox by using the following code example.&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#Uploadbox").ejUploadbox({                saveUrl: "http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx",                removeUrl: "http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx",                <b>allowDragAndDrop</b>: true,                <b>showBrowseButton:false</b>,                multipleFilesSelection: true            });        }); &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+     <div class="frame">
+     <div class="control">
+            <div id="Uploadbox"></div>
+       </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the Uploadbox by using the following code example.
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#Uploadbox").ejUploadbox({
+                saveUrl: "http://js.syncfusion.com/demos/web/uploadbox/saveFiles.ashx",
+                removeUrl: "http://js.syncfusion.com/demos/web/uploadbox/removeFiles.ashx",
+                allowDragAndDrop: true,
+                showBrowseButton:false,
+                multipleFilesSelection: true
+            });
+        });
+ </script>
+
+
+{% endhighlight %}
 
 * In CSS, configure the custom styles for drag and drop.
 

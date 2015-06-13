@@ -34,16 +34,68 @@ The following steps explains you the details about rendering the **Toggle Button
 * In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;table&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="type_button" /&gt;                         &lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="type_submit" /&gt;                            &lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="type_mini" /&gt;                            &lt;/td&gt;        &lt;/tr&gt;    &lt;/table&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;      $(function () {          //type property is used to render different type of toggle buttons          $("#type_button").ejToggleButton({              size: "mini",<b>              type: "button",</b>              showRoundedCorner: true,              defaultText: "Play",              activeText: "Next",          });          $("#type_submit").ejToggleButton({              size: "mini",<b>              type: "submit",</b>              showRoundedCorner: true,              defaultText: "submit",              activeText: "submited",          });          $("#type_mini").ejToggleButton({              size: "mini",<b>              type: "reset",</b>              showRoundedCorner: true,              defaultText: "reset",              activeText: "reseted",          });      });    &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+    <table>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="type_button" />             
+            </td>
+        </tr>
+        <tr>
+
+            <td class="btnsht">
+                <input type="checkbox" id="type_submit" />                
+            </td>
+        </tr>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="type_mini" />                
+            </td>
+
+        </tr>
+    </table>
+	
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+//Initialize the control in JavaScript
+
+<script type="text/javascript">
+      $(function () {
+          //type property is used to render different type of toggle buttons
+          $("#type_button").ejToggleButton({
+              size: "mini",
+              type: "button",
+              showRoundedCorner: true,
+              defaultText: "Play",
+              activeText: "Next",
+
+          });
+          $("#type_submit").ejToggleButton({
+              size: "mini",
+              type: "submit",
+              showRoundedCorner: true,
+              defaultText: "submit",
+              activeText: "submited",
+          });
+          $("#type_mini").ejToggleButton({
+              size: "mini",
+              type: "reset",
+              showRoundedCorner: true,
+              defaultText: "reset",
+              activeText: "reseted",
+          });
+
+      });
+    </script>
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

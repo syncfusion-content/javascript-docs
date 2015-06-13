@@ -13,7 +13,7 @@ This section explains briefly about how to create a **DatePicker** in your appli
 
 ## Create your first DatePicker in JavaScript
 
-The **Essential JavaScript****DatePicker** provides support to display a calendar within your web page and allows you to pick a date from the calendar. In this example, you can learn how to customize two **DatePickers** in a real-time ticket booking application. The example shows you how to use the **DatePicker** control to book a ticket within a limited number of days. 
+The **Essential JavaScript DatePicker** provides support to display a calendar within your web page and allows you to pick a date from the calendar. In this example, you can learn how to customize two **DatePickers** in a real-time ticket booking application. The example shows you how to use the **DatePicker** control to book a ticket within a limited number of days. 
 
 The following screenshot illustrates the functionality of a **DatePicker**with date range of maximum 60 days. You can select a date for Onward and Return journeys ranging for a period of 60 days from the current day. This avoids selecting a journey date prior to the current date.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 **Rating** provides support for **vertical** orientation. By default **Rating** renders with **horizontal** orientation. You can the change the orientation by the ‘**orientation**’ property.
 
-The following code example is used to render the **Rating** control with **vertical****orientation**.
+The following code example is used to render the **Rating** control with **vertical** **orientation**.
 
 1. Add the following HTML to render Rating with customized orientation.
 

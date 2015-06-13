@@ -73,19 +73,28 @@ The following steps explains you on how to enable keyboard interaction for the *
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget and enable keyboard interaction by setting the **access key** property.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>        &lt;input type="text" id="time" accesskey="j"/&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// You can render the TimePicker control using the following code.</b>   &lt;script type="text/javascript"&gt;    $(function () {         $('#time').ejTimePicker();        });    &lt;/script&gt;</td></tr>
-</table>
+        <input type="text" id="time" accesskey="j"/>
 
+{% endhighlight %}
 
-Run the code sample, press [Access key](http://en.wikipedia.org/wiki/Access_key)******+ J** to focus in the **TimePicker** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
+{% highlight js %}
+
+**[JavaScript]**
+
+// You can render the TimePicker control using the following code.
+   <script type="text/javascript">
+    $(function () {
+         $('#time').ejTimePicker();
+        });
+    </script>
+
+{% endhighlight %}
+
+Run the code sample, press [Access key](http://en.wikipedia.org/wiki/Access_key)** ** **+ J** to focus in the **TimePicker** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 
 
 

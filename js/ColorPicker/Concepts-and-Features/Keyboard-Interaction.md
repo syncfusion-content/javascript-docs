@@ -63,23 +63,37 @@ Downwards to value 0</td></tr>
 End</td><td>
 Upwards to value 100</td></tr>
 </table>
+
 **Configure Keyboard Interaction**
 
 The following steps explain how you can enable **keyboard** interaction for **ColorPicker** textbox.
 
 *     In the **HTML** page, add an **&lt;input&gt;** element to configure the **ColorPicker** widget and enable keyboard interaction by the **accesskey** property.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
-<tr>
-<td>
-<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {          $('#colorPicker').ejColorPicker({ value: "#278787", displayInline: true });          $(document).on("keydown", function (e) {                if (e.altKey && e.keyCode === 74) { // j- key code.                    $("#colorPickerWrapper").focus();                }            });    });&lt;/script&gt;</td></tr>
-</table>
+    <input type="text" id="colorPicker" />    
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JAVASCRIPT]**
+ 
+<script>
+    jQuery(function ($) {
+          $('#colorPicker').ejColorPicker({ value: "#278787", displayInline: true });
+          $(document).on("keydown", function (e) {
+                if (e.altKey && e.keyCode === 74) { // j- key code.
+                    $("#colorPickerWrapper").focus();
+                }
+            });
+    });
+</script>
+
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 

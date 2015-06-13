@@ -15,15 +15,31 @@ Add the following code in your **HTML** page.
 
 
 
-<table>
-<tr>
-<td>
-  <b>[HTML]    </b>  &lt;div class="control"&gt;        &lt;input type="text" id="dateTime" /&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code in your script section to render <b>DateTimePicker</b> with 1 hour interval between two adjacent times in time picker popup        $('#dateTime').ejDateTimePicker({            <b>interval: 60,</b>            width: '200px',        });</td></tr>
-</table>
+{% highlight html %}
 
+  **[HTML]**
+  
+  	  <div class="control">
+	        <input type="text" id="dateTime" />
+	    </div>
+
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  // Add the code in your script section to render DateTimePicker with 1 hour interval between two adjacent times in time picker popup
+  
+	        $('#dateTime').ejDateTimePicker({
+	            interval: 60,
+	            width: '200px',
+	        });
+
+
+  {% endhighlight %}
 
 {% include image.html url="/js/DateTimePicker/Concepts-and-Features/Time-Interval_images/Time-Interval_img1.png" Caption="Showcase for DateTimePicker with I hour interval in time picker popup"%}
 

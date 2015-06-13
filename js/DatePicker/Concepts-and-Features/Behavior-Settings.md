@@ -17,14 +17,33 @@ The following steps explains how to set the **Button Text** for **DatePicker** w
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to set the <b>Button Text</b> of <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                buttonText: "Todaydate" </b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+
+  {% highlight html %}
+  
+**[HTML]**
+
+    <input id="datepicker" type="text" />
+    
+  {% endhighlight %}
+
+
+  {% highlight js %}
+  
+ **[JavaScript]**
+ 
+// Add the code to set the Button Text of DatePicker widget
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                buttonText: "Todaydate" 
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
 
 
 * The following screenshot displays the output for the above code.
@@ -43,14 +62,34 @@ The following steps explain **displayDefaultDate** in **DatePicker** widget.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Add the code to set the <b>displayDefaultDate</b> in <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                displayDefaultDate: false,</b><b>                </b>value: new Date("5/8/2014")<b>                </b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+  
+**[HTML]**
+
+    <input id="datepicker" type="text" />
+    
+  {% endhighlight %}
+
+  {% highlight js %}
+  
+  **[JavaScript]**
+  
+// Add the code to set the displayDefaultDate in DatePicker widget
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                displayDefaultDate: false,
+                value: new Date("5/8/2014")
+                
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
+
 ## Enabled
 
 You can **Enable** or **Disable** the **DatePicker** widget. By default “**enabled**” property is set to ‘**true**’ in **DatePicker** widget. You can disable the **DatePicker** widget by setting “**enabled**” property as ‘**false**’.
@@ -59,14 +98,31 @@ The following steps explain you how to disable the **DatePicker** widget.
 
 * In the HTML page, add a **&lt;input&gt;** element to render **DatePicker** widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to disable the <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                enabled: false</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+  
+  **[HTML]**
+
+       <input id="datepicker" type="text" />
+  {% endhighlight %}
+
+  {% highlight js %}
+  
+  **[JavaScript]**
+  
+  // Add the code to disable the DatePicker widget
+  
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                enabled: false
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
+  
 ## Enable strict mode
 
 When **enableStrictMode** is set to ‘**true**’, **DatePicker** doesn’t allow the value out of the range, it is internally changed to the correct value. . By default “**enableStrictMode**” property is set as ‘**false**’ in **DatePicker**.
@@ -75,14 +131,32 @@ The following steps explain you how to enable the “**enableStrictMode**” for
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** Widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to enable the <b>enableStrictMode</b> for <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                enableStrictMode: true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+  
+**[HTML]**
+
+    <input id="datepicker" type="text"/>
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+  
+  **[JavaScript]**
+  
+// Add the code to enable the enableStrictMode for DatePicker widget
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                enableStrictMode: true
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
 
 
 ## Fields
@@ -125,17 +199,40 @@ The following steps explain you how to specify the **fields****mapping** in **Da
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to specify the <b>fields mapping</b> in <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;    $(function () {        var today = new Date(),                       spldays = [                              { date: new Date(today.getFullYear(), today.getMonth(), 1), tooltip: "In America", icon: "flag-am" },                              { date: new Date(today.getFullYear(), today.getMonth() + 1, 6), tooltip: "In Argendina", icon: "flag-ar" },                              { date: new Date(today.getFullYear(), today.getMonth() + 1, 27), tooltip: "In Bangladesh", icon: "flag-bd" },                              { date: new Date(today.getFullYear(), today.getMonth() - 1, 3), tooltip: "In Brasil", icon: "flag-br" },                              { date: new Date(today.getFullYear(), today.getMonth() - 2, 22), tooltip: "In Canada", icon: "flag-ca" },                       ]        // declaration        $("#datepicker").ejDatePicker({            specialDates: spldays,            <b>fields: { date: "date", tooltip: "tooltip", icon: "icon" }</b>        });    });&lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+  
+**[HTML]**
+
+    <input id="datepicker" type="text" />
+
+  {% endhighlight %}
 
 
+  {% highlight js %}
+  
+  **[JavaScript]**
+  
+// Add the code to specify the fields mapping in DatePicker widget
+<script type="text/javascript">
+    $(function () {
+        var today = new Date(),
+                       spldays = [
+                              { date: new Date(today.getFullYear(), today.getMonth(), 1), tooltip: "In America", icon: "flag-am" },
+                              { date: new Date(today.getFullYear(), today.getMonth() + 1, 6), tooltip: "In Argendina", icon: "flag-ar" },
+                              { date: new Date(today.getFullYear(), today.getMonth() + 1, 27), tooltip: "In Bangladesh", icon: "flag-bd" },
+                              { date: new Date(today.getFullYear(), today.getMonth() - 1, 3), tooltip: "In Brasil", icon: "flag-br" },
+                              { date: new Date(today.getFullYear(), today.getMonth() - 2, 22), tooltip: "In Canada", icon: "flag-ca" },
+                       ]
+        // declaration
+        $("#datepicker").ejDatePicker({
+            specialDates: spldays,
+            fields: { date: "date", tooltip: "tooltip", icon: "icon" }
 
+        });
+    });
+</script>
+
+  {% endhighlight %}
 
 * Add the following styles to specify the **fields mapping** in **DatePicker** widget.
 
@@ -165,9 +262,6 @@ The following steps explain you how to specify the **fields****mapping** in **Da
 {% endhighlight %}
 
 
-
-
-
 *  The following screenshot displays the output for the above code.
 
 {% include image.html url="/js/DatePicker/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="Figure 7: Fields mapping in DatePicker"%}
@@ -180,15 +274,31 @@ The following steps explain you how to specify the **start day of the week** in 
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to specify the <b>start day of the week</b> in <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                startDay: 2</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
 
+  {% highlight js %}
+  
+  **[JavaScript]**
+  
+// Add the code to specify the start day of the week in DatePicker widget
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                startDay: 2
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
 
 * The following screenshot displays the output for the above code.
 
@@ -201,16 +311,33 @@ It specifies the number of months to navigate at one click in next and previous 
 The following steps explain you how to specify the number of months to navigate at one click
 
 *  In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
+ 
+{% highlight html %}
+  
+   **[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to specify the number of months to navigate at one click&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                stepMonths: 2</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+    <input id="datepicker" type="text"/>
 
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  **[JavaScript]**
+
+// Add the code to specify the number of months to navigate at one click
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                stepMonths: 2
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
 
 ## Define value
 
@@ -220,14 +347,32 @@ The following steps explain you how to specify the selected value.
 
 *  In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Add the code to specify the selected date value&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#datepicker").ejDatePicker({            <b>value: new Date("5/8/2014")</b>        });    });    &lt;/script&gt;</td></tr>
-</table>
+
+  {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+  // Add the code to specify the selected date value
+  
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#datepicker").ejDatePicker({
+            value: new Date("5/8/2014")
+        });
+    });
+
+    </script>
+
+
+  {% endhighlight %}
 
 
 *  The following screenshot displays the output for the above code.
@@ -244,14 +389,31 @@ The following steps explain you how to specify the **watermark Text** in **DateP
 
 *  In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to specify <b>Watermark</b> <b>Text</b> to be display in input text&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#datepicker").ejDatePicker({            <b>watermarkText: "Enter date"</b>        });    });&lt;/script&gt;</td></tr>
-</table>
+
+  {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  // Add the code to specify Watermark Text to be display in input text
+  
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#datepicker").ejDatePicker({
+            watermarkText: "Enter date"
+        });
+    });
+</script>
+
+  {% endhighlight %}
 
 
 * The following screenshot displays the output for the above code.

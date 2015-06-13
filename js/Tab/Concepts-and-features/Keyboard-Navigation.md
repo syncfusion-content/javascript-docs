@@ -47,14 +47,48 @@ The following code example is used to render the **Tab** element in **RTL** form
 
 * Add the following **HTML** to render **Tab** with **keyboard** navigation.
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render Tab with keyboard navigation.&lt;script type="text/javascript"&gt;        $(function () {             $("#dishtype").ejTab({ allowKeyboardNavigation: true });                //Control focus key        $(document).on("keydown", function (e) {            if (e.altKey && e.keyCode === 74) {                // j- key code.                $("#dishtype ul a").focus();            }        });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JS]**
+
+    // Add the following script to render Tab with keyboard navigation.
+    <script type="text/javascript">
+            $(function () {
+                 $("#dishtype").ejTab({ allowKeyboardNavigation: true });      
+      
+            //Control focus key
+            $(document).on("keydown", function (e) {
+                if (e.altKey && e.keyCode === 74) {
+                    // j- key code.
+                    $("#dishtype ul a").focus();
+                }
+            });
+            });
+        </script>
+
+
+{% endhighlight %}
 
 
 * The following screenshot illustrates the **Tab** with **keyboard** navigation.

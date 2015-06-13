@@ -17,21 +17,74 @@ The following steps explain configuring the template option for **TreeView**.
 
 1. In the HTML page, add &lt;ul&gt; and &lt;li&gt; element to configure TreeView.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;ul id="treeView"&gt;    &lt;li class="expanded"&gt;        <a>Favorites</a>        &lt;ul&gt;            <li>Desktop<div class="cont-del">&lt;/div&gt;&lt;/li&gt;            <li>Downloads<div class="cont-del">&lt;/div&gt;&lt;/li&gt;            <li>Recent places<div class="cont-del">&lt;/div&gt;&lt;/li&gt;        &lt;/ul&gt;    &lt;/li&gt;    &lt;li class="expanded"&gt;        <a>Libraries</a>        &lt;ul&gt;            &lt;li&gt;                <a>Documents</a>                &lt;ul&gt;                    <li>My Documents<div class="cont-del">&lt;/div&gt;&lt;/li&gt;                    <li>Public Documents<div class="cont-del">&lt;/div&gt;&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li&gt;                <a>Pictures</a>                &lt;ul&gt;                    <li>My Pictures<div class="cont-del">&lt;/div&gt;&lt;/li&gt;                    <li>Public Pictures<div class="cont-del">&lt;/div&gt;&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li&gt;                <a>Music</a>                &lt;ul&gt;                    <li>My Music<div class="cont-del">&lt;/div&gt;&lt;/li&gt;                    <li>Public Music<div class="cont-del">&lt;/div&gt;&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li&gt;<a>Subversion</a>&lt;/li&gt;        &lt;/ul&gt;    &lt;/li&gt;    &lt;li&gt;        <a>Computer</a>        &lt;ul&gt;            <li>Folder(C)&lt;div class="cont-del"&gt;&lt;/div&gt;&lt;/li&gt;            <li>Folder(D)&lt;div class="cont-del"&gt;&lt;/div&gt;&lt;/li&gt;            <li>Folder(F)&lt;div class="cont-del"&gt;&lt;/div&gt;&lt;/li&gt;        &lt;/ul&gt;    &lt;/li&gt;&lt;/ul&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Enable template for TreeView control in the script as follows.            $("#treeView").ejTreeView();            var treeObj = $("#treeView").data("ejTreeView");            $("#treeView").find(".cont-del").bind("click", function (e) {                treeObj.removeNode($(e.target).parents("li").first());            });        });</td></tr>
-</table>
+{% highlight html %}
+
+<ul id="treeView">
+    <li class="expanded">
+        <a>Favorites</a>
+        <ul>
+            <li>Desktop<div class="cont-del"></div></li>
+            <li>Downloads<div class="cont-del"></div></li>
+            <li>Recent places<div class="cont-del"></div></li>
+        </ul>
+    </li>
+    <li class="expanded">
+        <a>Libraries</a>
+        <ul>
+            <li>
+                <a>Documents</a>
+                <ul>
+                    <li>My Documents<div class="cont-del"></div></li>
+                    <li>Public Documents<div class="cont-del"></div></li>
+                </ul>
+            </li>
+            <li>
+                <a>Pictures</a>
+                <ul>
+                    <li>My Pictures<div class="cont-del"></div></li>
+                    <li>Public Pictures<div class="cont-del"></div></li>
+                </ul>
+            </li>
+            <li>
+                <a>Music</a>
+                <ul>
+                    <li>My Music<div class="cont-del"></div></li>
+                    <li>Public Music<div class="cont-del"></div></li>
+                </ul>
+            </li>
+            <li><a>Subversion</a></li>
+        </ul>
+    </li>
+    <li>
+        <a>Computer</a>
+        <ul>
+            <li>Folder(C)<div class="cont-del"></div></li>
+            <li>Folder(D)<div class="cont-del"></div></li>
+            <li>Folder(F)<div class="cont-del"></div></li>
+        </ul>
+    </li>
+</ul>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+    $("#treeView").ejTreeView();
+            var treeObj = $("#treeView").data("ejTreeView");
+            $("#treeView").find(".cont-del").bind("click", function (e) {
+                treeObj.removeNode($(e.target).parents("li").first());
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
 2. Adding the style for TreeView control as follows.
 
 {% highlight css %}
 
-**[CSS]**
 <style class="cssStyles">
         .cont-del {
             background: url("../images/treeview/remove-icon.png") no-repeat 50% 50%;
@@ -42,10 +95,7 @@ The following steps explain configuring the template option for **TreeView**.
         }
     </style>
 
-
-
 {% endhighlight %}
-
 
 
 The **TreeView** control template displays the following output.

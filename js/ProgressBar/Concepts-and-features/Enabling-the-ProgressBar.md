@@ -15,17 +15,37 @@ The following steps explain how to disable the **ProgressBar** widget when ‘**
 
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
 
+{% highlight html %}
 
+**[HTML]**
+            <div class="control">
+            <div id="progressbar"></div>
+            </div>
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;        </td></tr>
-<tr>
-<td>
-	<b>[JavaScript]</b>// Add the ‘enabled’ property as follows.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#Progrssbar").ejProgressBar({            <b>enabled: false,</b>            value: 40,            width: 500,            height: 40        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + " %" });    });&lt;/script&gt;</td></tr>
-</table>
+{% endhighlight %}
 
+{% highlight js %}
+
+**[JavaScript]**
+
+// Add the ‘enabled’ property as follows.
+<script type="text/javascript">
+    $(function () {
+//Declaration.
+        $("#Progrssbar").ejProgressBar({
+            enabled: false,
+            value: 40,
+            width: 500,
+            height: 40
+        });
+        var progress = $("#progressbar").data("ejProgressBar");
+        progress.setModel({ text: progress.getValue() + " %" });
+
+    });
+
+</script>
+
+{% endhighlight %}
 
 * The following screenshot displays the output for the above code.
 

@@ -17,19 +17,35 @@ The following steps explain you the configuration of the **allowMultiSelection**
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
+
+**[HTML]**
+
+    <input type="text" id="dropdownlist" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Configure multiSelectMode type for Dropdownlist control
+<script type="text/javascript">
+
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                width: "200px",
+                showCheckbox: true,
+                allowMultiSelection: true
+
+            });
+        });
+
+   </script>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;input type="text" id="dropdownlist" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Configure multiSelectMode type for <b>Dropdownlist</b> control&lt;script type="text/javascript"&gt;        $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                width: "200px",                <b>showCheckbox</b>: true,                <b>allowMultiSelection</b>: true            });        });   &lt;/script&gt;</td></tr>
-</table>
-
-
-
+{% endhighlight %}
 
 Output for Dropdown control that provides multiple selection is as follows.
 

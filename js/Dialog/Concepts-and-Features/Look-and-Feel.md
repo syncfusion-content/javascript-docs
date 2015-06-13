@@ -18,17 +18,30 @@ The **CSS** properties can be customized by using **css**Class in the **Dialog**
 
 1. In the **HTML** page set a **&lt;div&gt;** element with the dialog content for rendering the **Dialog** control. 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div id="Dialog" title="Syncfusion Dialog"&gt;        The Syncfusion Dialog control is rendered.    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Set the <b>cssClass</b> property to the <b>Dialog</b> function    &lt;script type="text/javascript"&gt;        $("#Dialog").ejDialog({            height: 200,            width: 300,<b>            cssClass: "customCss"</b>        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
 
+      <div id="Dialog" title="Syncfusion Dialog">
+        The Syncfusion Dialog control is rendered.
+    </div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Set the cssClass property to the Dialog function
+    <script type="text/javascript">
+        $("#Dialog").ejDialog({
+            height: 200,
+            width: 300,
+            cssClass: "customCss"
+        });
+    </script>
+
+{% endhighlight %}
 
 2. Customize the **CSS** class by setting **CSS** Properties. 
 

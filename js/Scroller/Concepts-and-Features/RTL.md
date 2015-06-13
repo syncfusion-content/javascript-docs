@@ -15,14 +15,42 @@ The following steps explains you the configuration of **enableRTL** property in 
 
 1. In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="scrollcontent"&gt;  &lt;div&gt;                              &lt;!--Wrapper div for Scroller.--&gt;     &lt;div id="innercontent"&gt;         &lt;!--Content div--&gt;        <h3>MVC &lt;/h3&gt;         &lt;p&gt;           Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it. The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.         &lt;/p&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>&lt;script type="text/javascript"&gt;    $(function () {        $("#scrollcontent").ejScroller({                height: 170,                width: 350, <b>               enableRTL: true</b>        });    });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+	
+	<div id="scrollcontent">
+	  <div>                              <!--Wrapper div for Scroller.-->
+	     <div id="innercontent">         <!--Content div-->
+	        <h3>MVC </h3>
+	         <p>
+	           Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it. The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
+	         </p>
+	    </div>
+	  </div>
+	</div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+	<script type="text/javascript">
+	
+	    $(function () {
+	        $("#scrollcontent").ejScroller({ 
+	               height: 170, 
+	               width: 350, 
+	               enableRTL: true
+	        });
+	    }); 
+	   
+	</script>
+
+
+{% endhighlight %}
 
 
 The following screenshot displays the **Scroller** control in **RTL** direction.

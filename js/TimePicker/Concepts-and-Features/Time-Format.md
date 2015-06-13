@@ -17,16 +17,27 @@ The following steps explains you to change the time format for the **TimePicker*
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Change time format for TimePicker controls as follows.</b>$(function () {                $('#time').ejTimePicker({                 timeFormat: "h:mm:ss tt"         }); });</td></tr>
-</table>
+    <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Change time format for TimePicker controls as follows.
+<script>
+$(function () {
+        $('#time').ejTimePicker({ 
+            timeFormat: "h:mm:ss tt" 
+        }); 
+});
+</script>
+{% endhighlight %}
 
 
 Execute the above code to render the following output.

@@ -19,18 +19,43 @@ The following steps explain how to enable the **loadOnDemand** property for **Tr
 
 1. In the **HTML** page, add a &lt;div&gt; element to configure TreeView.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="treeView"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Define local data source elements with fields.              var localData = [                   { id: 1, name: "Favorites", hasChild: true },                   { id: 2, pid: 1, name: "Desktop" },                   { id: 3, pid: 1, name: "Downloads" },                   { id: 4, pid: 1, name: "Recent places" },                   { id: 5, name: "libraries", hasChild: true },                   { id: 6, pid: 5, name: "Documents", hasChild: true },                   { id: 7, pid: 6, name: "My Documents" },                   { id: 8, pid: 6, name: "Public Documents" },                   { id: 9, pid: 5, name: "Pictures", hasChild: true },                   { id: 10, pid: 9, name: "My Pictures" },                   { id: 11, pid: 9, name: "Public Pictures" },                   { id: 12, pid: 5, name: "Music", hasChild: true },                   { id: 13, pid: 9, name: "My Music" },                   { id: 14, pid: 9, name: "Public Music" },                   { id: 15, pid: 5, name: "Subversion" },                   { id: 16, name: "Computer", hasChild: true },                   { id: 17, pid: 16, name: "Folder(C)" },                   { id: 18, pid: 16, name: "Folder(D)" },                   { id: 19, pid: 16, name: "Folder(F)" },        ];</td></tr>
-<tr>
-<td>
-            [JavaScript]// Map local data source to corresponding fields and enable loadOnDemand for TreeView control as follows.            $("#treeView").ejTreeView({                loadOnDemand: true,                fields: { dataSource: localData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }            });</td></tr>
-</table>
+{% highlight html %}
 
+<div id="treeView"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+    var localData = [
+                   { id: 1, name: "Favorites", hasChild: true },
+                   { id: 2, pid: 1, name: "Desktop" },
+                   { id: 3, pid: 1, name: "Downloads" },
+                   { id: 4, pid: 1, name: "Recent places" },
+                   { id: 5, name: "libraries", hasChild: true },
+                   { id: 6, pid: 5, name: "Documents", hasChild: true },
+                   { id: 7, pid: 6, name: "My Documents" },
+                   { id: 8, pid: 6, name: "Public Documents" },
+                   { id: 9, pid: 5, name: "Pictures", hasChild: true },
+                   { id: 10, pid: 9, name: "My Pictures" },
+                   { id: 11, pid: 9, name: "Public Pictures" },
+                   { id: 12, pid: 5, name: "Music", hasChild: true },
+                   { id: 13, pid: 9, name: "My Music" },
+                   { id: 14, pid: 9, name: "Public Music" },
+                   { id: 15, pid: 5, name: "Subversion" },
+                   { id: 16, name: "Computer", hasChild: true },
+                   { id: 17, pid: 16, name: "Folder(C)" },
+                   { id: 18, pid: 16, name: "Folder(D)" },
+                   { id: 19, pid: 16, name: "Folder(F)" },
+        ];
+            $("#treeView").ejTreeView({
+                loadOnDemand: true,
+                fields: { dataSource: localData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }
+            });
+</script>
+
+{% endhighlight %}
 
 The output for TreeView when loadOnDemand is set to “True” is as follows.
 

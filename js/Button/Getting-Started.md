@@ -33,14 +33,14 @@ Essential JavaScript Button control has different functionalities such as Displa
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- Style sheet for default theme (flat azure) -->
 
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -187,6 +187,7 @@ Essential JavaScript Button control has different functionalities such as Displa
             <source src="song.mp3" type="audio/mpeg">
         </audio>
     </div>
+    
 <div class="case1">
         <table>
             <tr>
@@ -271,21 +272,32 @@ Essential JavaScript Button control has different functionalities such as Displa
 
 </script>
 
-
 {% endhighlight %}
-
-
 
 3. Add the following function in **&lt;script&gt;** tag.
 
-<table>
-<tr>
-<td>
-function start(e){v.play();// play the current song}function stop(e){v.pause();// pause the current song}</td></tr>
-<tr>
-<td>
-function playpause(e) {           if (e.isChecked) {               v.play();            }           else {                v.pause();            }        }</td></tr>
-</table>
+{% highlight js %}
+
+<script>
+function start(e)
+{
+    v.play();// play the current song
+}
+function stop(e)
+{
+    v.pause();// pause the current song
+}
+function playpause(e) {
+    if (e.isChecked) {
+       v.play();
+    }
+    else {
+       v.pause();
+    }
+}
+</script>
+
+{% endhighlight %}
 
 
 The following screenshot displays the output.
@@ -299,7 +311,6 @@ In a real-time scenario, MS Office Bold and Italic options work as **Toggle Butt
 1. Add **&lt;Button&gt;** element using the following code example.
 
 {% highlight html %}
-
 
 <div class="case1">
             <table>
@@ -368,7 +379,8 @@ In a real-time scenario, MS Office Bold and Italic options work as **Toggle Butt
 
 {% highlight js %}
 
-function boldsetunset(e) {
+<script type="text/javascript">
+        function boldsetunset(e) {
             if (e.isChecked) {
                 $(".sample span").wrap("<b></b>");// add the bold tag to span
             }
@@ -391,7 +403,7 @@ function boldsetunset(e) {
                 $(".sample span").wrap("<u></u>");// remove the italic tag to span 
             }
         }
-
+</script>
 
 {% endhighlight %}
 
@@ -401,7 +413,7 @@ The following screenshot displays Office Ribbon Application.
 
 {% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img3.png" Caption="Office Ribbon"%}
 
-The following screenshot displays **Office Ribbon****Bold** Option.	
+The following screenshot displays **Office Ribbon** **Bold** Option.	
 
 {% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img4.png" Caption="Office Ribbon with Bold option"%}
 
