@@ -33,7 +33,7 @@ The following steps explains you the implementation of resize option in the **Di
 
 **[JavaScript]**
 
-// Enable resize in the Dialog function by setting enableResize property as true. By default, value for enableResize is true
+// Enables resize in the Dialog function by setting enableResize property as true. By default, value for enableResize is true
      <script type="text/javascript">
         $(function () {
             // declaration
@@ -75,7 +75,7 @@ The following steps explains you the implementation of drag option in the **Dial
 
 **[JavaScript]**
 
-// Allow drag in the Dialog function by setting allowDraggable property as true. The default value for allowDraggable is true in the Dialog control
+// Allows you to drag in the Dialog function by setting allowDraggable property as true. The default value for allowDraggable is true in the Dialog control
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -114,7 +114,7 @@ The following steps explains you the implementation of close icon tooltip option
 
 **[JavaScript]**
 
-// Set the closeIconTooltip value in the Dialog function using the following codes. The default value for closeIconTooltip is close in the Dialog control
+// Sets the closeIconTooltip value in the Dialog function by using the following codes. The default value for closeIconTooltip is close in the Dialog control
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -153,7 +153,7 @@ The following steps explains the implementation of persistence support in the **
 
 **[JavaScript]**
 
-// Enable the persistence to the Dialog function by setting enablePersistence property as true. The default value for enablePersistence is false in the Dialog control
+// Enables the persistence to the Dialog function by setting enablePersistence property as true. The default value for enablePersistence is false in the Dialog control
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -193,7 +193,7 @@ The following steps explains the implementation of enable option in the **Dialog
 
 **[JavaScript]**
 
-// Enable the Dialog in the Dialog function by setting enabled property as true. The default value for enabled is true in the Dialog control
+// Enables the Dialog in the Dialog function by setting enabled property as true. The default value for enabled is true in the Dialog control
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -228,7 +228,7 @@ The following steps explains you the implementation of disable option in the **D
 
 **[JavaScript]**
 
-// Disable the Dialog in the ejDialog function by setting enabled as false
+// Disables the Dialog in the ejDialog function by setting enabled as false
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -266,7 +266,7 @@ The **Dialog** provides the option to place the control based upon its X-axis an
 
 **[JavaScript]**
 
-// Set the X and Y position to the Dialog function by setting Position property
+// Sets the X and Y position to the Dialog function by setting Position property
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -303,7 +303,7 @@ You can show or hide the **Dialog** header by setting **showHeader** property. T
 
 **[JavaScript]**
 
-// Set the showHeader property as true in the Dialog function
+// Sets the showHeader property as true in the Dialog function
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -336,7 +336,7 @@ You can show or hide the **Dialog** header by setting **showHeader** property. T
 
 **[JavaScript]**
 
-// Set the showHeader property as false in the Dialog function
+// Sets the showHeader property as false in the Dialog function
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -371,7 +371,7 @@ The **Dialog** control contains an option to be visible or hidden at initializat
 
 **[JavaScript]**
 
-// Set the showOnInit property as true in the Dialog function
+// Sets the showOnInit property as true in the Dialog function
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
@@ -406,7 +406,7 @@ The **Dialog** can support with rounded corner appearance, the default value for
 
 **[JavaScript]**
 
-// Set the showRoundedCorner property as true in the Dialog function
+// Sets the showRoundedCorner property as true in the Dialog function
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
