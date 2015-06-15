@@ -54,7 +54,7 @@ The following steps explains you the configuration of **targetID** property in *
 
 **[JavaScript]**
  
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
  
 <script type="text/javascript">
     $(function () {
@@ -141,7 +141,7 @@ The following steps explains you the configuration of **enabled** property in **
 
 **[JavaScript]**
   
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 <script type="text/javascript">
     $(function () {
         // JSON data declaration
@@ -151,7 +151,7 @@ The following steps explains you the configuration of **enabled** property in **
         { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
         { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
         ];
-        //Render ListBox by mapping fields with JSON data
+        //Renders the ListBox by mapping fields with JSON data
         $("#listboxSample").ejListBox({
             width: "240", dataSource: skillset,
             fields: { text: "skill" }, enabled: false
