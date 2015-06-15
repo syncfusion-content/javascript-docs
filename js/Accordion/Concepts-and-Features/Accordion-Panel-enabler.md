@@ -46,7 +46,7 @@ documentation: ug
 
 [JavaScript]
 
-// To disable the control set enabled property value as false
+// To disable the control, set enabled property value as false
 
             $("#accordion").ejAccordion({
                 enabled:false
@@ -101,7 +101,7 @@ The following steps explains you on how to enable the panel items in **Accordion
 
 [JavaScript]
 
-// To enable and disable accordion panel items set the values for enabledItems and disabledItems
+// To enable and disable accordion panel items, set the values for enabledItems and disabledItems
 
             $("#accordion").ejAccordion({
                 enabledItems: [1, 2],
