@@ -31,7 +31,7 @@ The following steps explains you the behaviour of Load-onDemand support in **Lis
 
 **[JavaScript]** 
 
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 <script type="text/javascript">
     jQuery(function ($) {
         var dataManger = ej.DataManager({
@@ -47,7 +47,7 @@ The following steps explains you the behaviour of Load-onDemand support in **Lis
             query: query, enableLoadOnDemand: true, itemsCount: 91, itemRequest: "itemRequested"
         });
 });
-//Load set of items in itemRequested client-side method
+//Loads the set of items in itemRequested client-side method
     function itemRequested(args) {
         var target = $("#selectCar").data("ejListBox");
         target.model.query = ej.Query().from("Customers").range(args.start, args.start + 20);
