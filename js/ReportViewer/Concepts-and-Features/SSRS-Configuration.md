@@ -13,7 +13,7 @@ The **ReportViewer** has support to load RDL/RDLC reports from SSRS server. You 
 
 {% highlight javascript %}
 
-**[JS]**
+
 
 $("#viewer").ejReportViewer(
                 {
@@ -34,7 +34,7 @@ The **Network credentials** can be given at **Web****API** Controller to connect
 
 {% highlight c# %}
 
-**[CS]**
+
 
                    /// <summary>
         /// Report Initialization method that is triggered when report begins to process.

@@ -47,7 +47,7 @@ Fires when the report is loaded.</td></tr>
 
 {% highlight javascript %}
 
-**[JS]**
+
 
 $("#viewer").ejReportViewer(
                         {

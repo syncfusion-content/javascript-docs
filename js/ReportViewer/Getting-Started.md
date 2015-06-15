@@ -115,7 +115,7 @@ Add the script files and CSS files in the **&lt;title&gt;** tag of the **defa
 
 {% highlight html %}
 
-**[HTML]**   
+  
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"> </script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"> </script>
@@ -132,7 +132,7 @@ Add the following code example in the **&lt;body&gt;** tag in the **Default.h
 
 {% highlight html %}
 
-**[HTML]**
+
 <div>
         <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
         <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
@@ -170,7 +170,7 @@ The **ApiController** inherits the **IReportController** and you can add the fol
 
 {% highlight c# %}
 
-**[C#]**
+
 using Syncfusion.EJ.ReportViewer;
 using System;
 using System.Collections.Generic;
@@ -225,7 +225,7 @@ namespace ReportViewerDemo.Api
 
 {% highlight c# %}
 
-**[C#]**
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -267,7 +267,7 @@ Run the sample application and you can see the **ReportViewer** on the page as d
 
 {% highlight html %}
 
-**[HTML]**
+
 <div>
         <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
         <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
@@ -292,7 +292,7 @@ $("#viewer").ejReportViewer(
 
 {% highlight c# %}
 
-**[CS]**
+
         public void OnInitReportOptions(ReportViewerOptions reportOption)
         {
 //Add SSRS Server and database credentials here
@@ -317,7 +317,7 @@ The **ReportViewer** has data binding support to visualize the **RDLC** reports.
 
 {% highlight html %}
 
-**[HTML]**
+
 <div>
         <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
         <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
