@@ -17,31 +17,27 @@ You can plot **multiple****series** on the same Chart. Series are defined by add
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({     
-                   series: [
-                            {
-                            points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
-                                     { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
-                                     { x: "France", y: 50 }, { x: "Germany", y: 40 },                 
-                                     { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
-                                ],
-                                name: 'Gold', type:'column'
-                            },
-                            {
-                            points: [{ x: "USA", y: 70 }, { x: "China", y: 60 },
-                                     { x: "Japan", y: 60 }, { x: "Australia", y: 56 },
-                                     { x: "France", y: 45 }, { x: "Germany", y: 30 },                 
-                                     { x: "Italy", y: 35 }, { x: "Sweden", y: 25 }
-                                    ],
-                                    name: 'Silver', type:'column'
-                                }
-                      ],
-                                // ...                       
-});
-});
-
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
+                         { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
+                         { x: "France", y: 50 }, { x: "Germany", y: 40 },
+                         { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
+                ],
+                name: 'Gold', type: 'column'
+            },
+            {
+                points: [{ x: "USA", y: 70 }, { x: "China", y: 60 },
+                         { x: "Japan", y: 60 }, { x: "Australia", y: 56 },
+                         { x: "France", y: 45 }, { x: "Germany", y: 30 },
+                         { x: "Italy", y: 35 }, { x: "Sweden", y: 25 }
+                ],
+                name: 'Silver', type: 'column'
+            }
+            ],
+            // ...                       
+        });
 
 
 {% endhighlight %}
@@ -56,43 +52,33 @@ You can specify the properties common to all series of the Chart in **commonSeri
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({     
+        $("#chartcontainer").ejChart({
+            commonSeriesOptions: {
+                type: 'column',
+                border: { width: 2, color: 'black' }
+            },
+            series: [{
+                points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
+                         { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
+                         { x: "France", y: 50 }, { x: "Germany", y: 40 },
+                         { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
+                ],
 
-         commonSeriesOptions: {
-                            type:'column',
-                            border: {width:2, color:'black'}
-                            },
+                name: 'Gold'
+            },
+            {
+                points: [{ x: "USA", y: 70 }, { x: "China", y: 60 },
+                         { x: "Japan", y: 60 }, { x: "Australia", y: 56 },
+                         { x: "France", y: 45 }, { x: "Germany", y: 30 },
+                         { x: "Italy", y: 35 }, { x: "Sweden", y: 25 }
+                ],
 
-
-             series: [
-                      {
-                       points: [{ x: "USA", y: 50 }, { x: "China", y: 40 }, 
-                                { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
-                                { x: "France", y: 50 }, { x: "Germany", y: 40 }, 
-                                { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
-                                ],
-
-                                name: 'Gold'
-                       },
-                       {
-                        points: [{ x: "USA", y: 70 }, { x: "China", y: 60 },
-                                 { x: "Japan", y: 60 }, { x: "Australia", y: 56 },
-                                 { x: "France", y: 45 }, { x: "Germany", y: 30 },
-                                 { x: "Italy", y: 35 }, { x: "Sweden", y: 25 }
-                                 ],
-
-                                    name: 'Silver'
-                        }
-
-
-
-                ],                   
-             // ...                       
-});
-});
-
+                name: 'Silver'
+            }
+            ],
+            // ...                       
+        });
 
 
 {% endhighlight %}
@@ -113,55 +99,48 @@ A combination Chart combines two or more Charts types in single Charts. For exam
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({     
+        $("#chartcontainer").ejChart({
+            primaryYAxis:
+            {
+                title: { text: "Unit Sold" }
+            },
+            axes: [{
+                majorGridLines:
+                {
+                    visible: false
+                },
+                orientation: 'Vertical',
+                opposedPosition: true,
+                axisLine: { visible: false },
+                rangePadding: 'normal',
+                name: 'yAxis',
+                labelFormat: '${value}',
+                title: { text: "Total Transactions" }
+            }
+            ],
 
-                     primaryYAxis:
-                            {
-                             title: { text: "Unit Sold" }                                      
-                            },
-                     axes: [
-                           {
-                             majorGridLines:
-                                      {
+            series: [{
+                points: [{ x: "Jan", y: 45 }, { x: "Feb", y: 100 },
+                        { x: "March", y: 25 }, { x: "April", y: 100 },
+                        { x: "May", y: 85 }, { x: "June", y: 140 }
+                ],
+                fill: "#69D2E7",
+                name: 'Unit Sold', type: 'column',
 
-                                          visible: false
-                                      },
-                              orientation: 'Vertical',
-                              opposedPosition: true,
-                              axisLine: { visible: false },
-                              rangePadding: 'normal',
-                              name: 'yAxis',
-                              labelFormat: '${value}',
-                              title: { text: "Total Transactions" }
-                             }
-                            ],
+            },
+            {
+                points: [{ x: "Jan", y: 1000 }, { x: "Feb", y: 3000 },
+                     { x: "March", y: 1000 }, { x: "April", y: 7000 },
+                     { x: "May", y: 5000 }, { x: "June", y: 7000 }
+                ],
+                name: 'Total Transaction', type: 'line',
+                enableAnimation: true, yAxisName: 'yAxis', width: 4
 
-                      series: [{
-                                points: [{ x: "Jan", y: 45 }, { x: "Feb", y: 100 },
-                                        { x: "March", y: 25 }, { x: "April", y: 100 },  
-                                        { x: "May", y: 85 },{ x: "June", y: 140 }
-                                    ],
-                                    fill: "#69D2E7",
-                                    name: 'Unit Sold', type: 'column',                                     
-
-                                },
-
-                               {
-                                points: [{ x: "Jan", y: 1000 }, { x: "Feb", y: 3000 },
-                                     { x: "March", y: 1000 }, { x: "April", y: 7000 },  
-                                     { x: "May", y: 5000 }, { x: "June", y: 7000 }
-                                     ],
-                                name: 'Total Transaction', type: 'line', 
-                                enableAnimation: true, yAxisName: 'yAxis', width:4                
-
-                             }
-                            ],
-             // ...                       
-});
-});
-
+            }
+            ],
+            // ...                       
+        });
 
 
 {% endhighlight %}
@@ -176,26 +155,21 @@ You can customize the Chart series using fill, border width and border color. Yo
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({     
-
-           series: [{
-              points: [{ x: "Jan", y: 45 }, 
-              { x: "Feb", y: 100, fill: '#F07542', border: { color: "red", width:2 }},
-              { x: "March", y: 25 }, { x: "April", y: 100 }, { x: "May", y: 85 },
-              { x: "June", y: 140 }
-              ],
-              fill: "#69D2E7", name: 'Unit Sold', type: 'column',
-              border: { width: 1, color: 'black' }
-
-               },
-
-                 ],           
-                                        // ...                       
-});
-});
-
+       $("#chartcontainer").ejChart({
+            series: [{
+                points: [
+                    { x: "Jan", y: 45 },
+                    { x: "Feb", y: 100, fill: '#F07542', border: { color: "red", width: 2 } },
+                    { x: "March", y: 25 }, { x: "April", y: 100 }, { x: "May", y: 85 },
+                    { x: "June", y: 140 }
+                ],
+                fill: "#69D2E7", name: 'Unit Sold', type: 'column',
+                border: { width: 1, color: 'black' }
+            },
+            ],
+            // ...                       
+        });
 
 
 {% endhighlight %}
@@ -210,39 +184,34 @@ Data labels refer to the y values of data points that appear on each point. You 
 
 {% highlight js %}
 
-<div id="template">
-     <div id="point">#point.x#:#point.y#%</div>
- </div>
+   <div id="template">
+        <div id="point">#point.x#:#point.y#%</div>
+    </div>
 
-**[JS]**
-
-$("#chartcontainer").ejChart({     
-
-           series: [{
-                   points: [{ x: 2006, y: 29.2 }, { x: 2007, y: 33.9 },
-                            { x: 2008, y: 36 }, { x: 2009, y: 32.4 },
-                            { x: 2010, y: 32 }],
-                        name: 'India',
-                       marker: {
-                                dataLabel: { visible: true, template: 'template' } 
-                             },
-                       fill: '#8CC640'
-                    },
-                    {
-                     points: [{ x: 2006, y: 21.8 }, { x: 2007, y: 24.9 },
-                              { x: 2008, y: 28.5 }, { x: 2009, y: 27.2 },
-                              { x: 2010, y: 23.4 } ],
-                         name: 'Singapore',
-                         marker: { 
-                                   dataLabel: { visible: true, shape: 'Rectangle'} 
-                                },
-                         fill: '#CBA4C7'
-                     },
-                    ],                    
-                     // ...                       
-});
-});
-
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [{ x: 2006, y: 29.2 }, { x: 2007, y: 33.9 },
+                         { x: 2008, y: 36 }, { x: 2009, y: 32.4 },
+                         { x: 2010, y: 32 }],
+                name: 'India',
+                marker: {
+                    dataLabel: { visible: true, template: 'template' }
+                },
+                fill: '#8CC640'
+            },
+            {
+                points: [{ x: 2006, y: 21.8 }, { x: 2007, y: 24.9 },
+                         { x: 2008, y: 28.5 }, { x: 2009, y: 27.2 },
+                         { x: 2010, y: 23.4 }],
+                name: 'Singapore',
+                marker: {
+                    dataLabel: { visible: true, shape: 'Rectangle' }
+                },
+                fill: '#CBA4C7'
+            },
+            ],
+            // ...                       
+        });
 
 
 {% endhighlight %}
@@ -257,33 +226,28 @@ $("#chartcontainer").ejChart({
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({     
-
-      series: [{
-          points: [{ x: 'Other Personnal', y: 94658, text: 'Other Personal, 88.47%' },                              
-                   { x: 'Medical care', y: 9090, text: 'Medical care, 8.49%' },
-                   { x: 'Housing', y: 2577, text: 'Housing, 2.40%' },
-                   { x: 'Transportation', y: 473, text: 'Transportation, 0.44%' },
-                   { x: 'Education', y: 120, text: 'Education, 0.11%' },
-                   { x: 'Electronics', y: 70, text: 'Electronics, 0.06%' }                   
-                   ],
-            marker: {
-                      dataLabel: {
-                            visible:true,
-                            shape: 'none',
-                            connectorLine: { type: 'bezier',color: 'black', width:1 },
-                            font: {size:'14px'}
-                             }
-                     },
-
-                     }
-              ],
-                                // ...                       
-});
-});
-
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [{ x: 'Other Personnal', y: 94658, text: 'Other Personal, 88.47%' },
+                         { x: 'Medical care', y: 9090, text: 'Medical care, 8.49%' },
+                         { x: 'Housing', y: 2577, text: 'Housing, 2.40%' },
+                         { x: 'Transportation', y: 473, text: 'Transportation, 0.44%' },
+                         { x: 'Education', y: 120, text: 'Education, 0.11%' },
+                         { x: 'Electronics', y: 70, text: 'Electronics, 0.06%' }
+                ],
+                marker: {
+                    dataLabel: {
+                        visible: true,
+                        shape: 'none',
+                        connectorLine: { type: 'bezier', color: 'black', width: 1 },
+                        font: { size: '14px' }
+                    }
+                },
+            }
+            ],
+            // ...                       
+        });
 
 
 {% endhighlight %}
@@ -300,32 +264,29 @@ Data labels refer to the y values of data points, which appear on each point. Yo
 
 {% highlight js %}
 
-**[JS]**
 
-$("#container").ejChart(
-       //......
-{
-                   commonSeriesOptions: {
-                            type: 'column', enableAnimation: false,
-tooltip:{visible:true},
-                            marker:
-                            {
-                                dataLabel: {
-                                     font: { color: 'white',size:'16px' },
-                                     angle:90,
-textPosition:'middle',
-visible:true
-},
-                             }
-                             },
-                       series: [{
-                      points: [{ x: "Print Ads", y: 110 }, { x: "Online Ads", y: 125 },
-                         { x: "Content Marketing", y: 95 }, { x: "Tradeshows", y: 60}],
-                     name: 'Marketing', tooltip: { visible: true, template: 'Tooltip' }
-                          }],
+        $("#container").ejChart({
+            //......
+            commonSeriesOptions: {
+                type: 'column', enableAnimation: false,
+                tooltip: { visible: true },
+                marker: {
+                    dataLabel: {
+                        font: { color: 'white', size: '16px' },
+                        angle: 90,
+                        textPosition: 'middle',
+                        visible: true
+                    },
+                }
+            },
+            series: [{
+                points: [{ x: "Print Ads", y: 110 }, { x: "Online Ads", y: 125 },
+                   { x: "Content Marketing", y: 95 }, { x: "Tradeshows", y: 60 }],
+                name: 'Marketing', tooltip: { visible: true, template: 'Tooltip' }
+            }],
 
-                        //......
-                          });        
+            //......
+        }); 
 
 
 {% endhighlight %}

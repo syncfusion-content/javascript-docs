@@ -21,17 +21,14 @@ By default the visibility of **tooltip** is set to **false**, but you can change
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-     {
+        $("#chartcontainer").ejChart({
             //  . . . 
             commonSeriesOptions: {
-**tooltip: { visible: true }**
+                tooltip: { visible: true }
                 // . . .
             }
-
-      });
+        });
 
 
 {% endhighlight %}
@@ -54,16 +51,16 @@ format: " **#point.x# #series.name# #point.high# #point.low# #point.open# #point
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-        {
+        $("#chartcontainer").ejChart({
             // . . .
-            commonSeriesOptions:{ 
-                tooltip: { visible: true, format: "In #point.x# #series.name# produced #point.y#%" },
-            // . . .
-        }
-    });
+            commonSeriesOptions: {
+                tooltip: {
+                    visible: true, format: "In #point.x# #series.name# produced #point.y#%"
+                },
+                // . . .
+            }
+        });
 
 
 {% endhighlight %}
@@ -78,16 +75,16 @@ EjChart provides you options to customize the border of the tooltip. You can cha
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-        {
+        $("#chartcontainer").ejChart({
             // . . .
             commonSeriesOptions: {
-                tooltip: { visible: true, border: { width: 1, color: "#000000" } },
+                tooltip: {
+                    visible: true, border: { width: 1, color: "#000000" }
+                },
                 // . . .
             }
-   });
+        });
 
 
 {% endhighlight %}
@@ -102,15 +99,14 @@ You can modify the fill color of **tooltip**. By default the **tooltip** renders
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({
+        $("#chartcontainer").ejChart({
             // . . 
             commonSeriesOptions: {
                 tooltip: { visible: true, fill: "#000000" },
                 // . . 
             }
-});
+        });
 
 
 {% endhighlight %}
@@ -125,15 +121,19 @@ $("#chartcontainer").ejChart({
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({
+       $("#chartcontainer").ejChart({
             // . . .
-            commonSeriesOptions:{ 
-                tooltip: { visible: true, font :{fontFamily: "Algerian", fontWeight: "lighter", fontStyle: "Italic", size:"14px", color:"#000000"}},
-            // . . .
-           }
-});
+            commonSeriesOptions: {
+                tooltip: {
+                    visible: true,
+                    font: {
+                        fontFamily: "Algerian", fontWeight: "lighter", fontStyle: "Italic", size: "14px", color: "#000000"
+                    }
+                },
+                // . . .
+            }
+        });
 
 
 {% endhighlight %}
@@ -148,15 +148,16 @@ $("#chartcontainer").ejChart({
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({
+        $("#chartcontainer").ejChart({
             // . . 
             commonSeriesOptions: {
-                tooltip: { visible: true, template: 'Tooltip', enableAnimation: true, duaration: "600ms" }
+                tooltip: {
+                    visible: true, template: 'Tooltip', enableAnimation: true, duaration: "600ms"
+                }
                 // . . .
             }
-});
+        });
 
 
 {% endhighlight %}
@@ -169,15 +170,14 @@ $("#chartcontainer").ejChart({
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart({
+        $("#chartcontainer").ejChart({
             // . . .
             commonSeriesOptions: {
                 tooltip: { visible: true, rx: "50", ry: "50" }
                 // . . .                                
             }
-});
+        });
 
 
 {% endhighlight %}
@@ -196,15 +196,12 @@ By default zooming is not enabled. You can enable it using the “enable” opti
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-     {
+        $("#chartcontainer").ejChart({
             //  . . . 
-**zooming: { enable: true }**
+            zooming: { enable: true }
             // . . .
-
-      });
+        });
 
 
 {% endhighlight %}
@@ -233,15 +230,12 @@ Programmatically the Chart can be zoomed using **zoomPosition** and **zoomFactor
 
 {% highlight js %}
 
-**[JS]**
 
- $("#chartcontainer").ejChart(
-        {
+        $("#chartcontainer").ejChart({
             // . . .
-                zooming: { enable: true, enableMouseWheel :****true****} 
-           // . . .
-        }
-    });
+            zooming: { enable: true, enableMouseWheel : true } 
+            // . . .
+        });
 
 
 {% endhighlight %}
@@ -254,15 +248,12 @@ Programmatically the Chart can be zoomed using **zoomPosition** and **zoomFactor
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-    {
-        // . . .
-            zooming: { enable: true, enableMouseWheel :****true****, type: 'y'} 
-        //. . .
-       }
-   });
+        $("#chartcontainer").ejChart({
+            // . . .
+            zooming: { enable: true, enableMouseWheel: true, type: 'y' }
+            //. . .
+        });
 
 
 {% endhighlight %}
@@ -285,30 +276,28 @@ The following code example illustrates you on how to enable the **crosshair**.
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(a
-               {   
-                    // ...             
-                     primaryXAxis:
-                        {                  
-                            crosshairLabel: { visible: true },
-                        },
+        $("#chartcontainer").ejChart({
+            // ...             
+            primaryXAxis:
+            {
+                crosshairLabel: { visible: true },
+            },
 
-                     primaryYAxis:
-                         {
-                             crosshairLabel: { visible: true },
-                         },
+            primaryYAxis:
+            {
+                crosshairLabel: { visible: true },
+            },
 
-                     crosshair:
-                         {
-                            visible: true,
-                            type: 'crosshair',
-                            line: {width:2, color:'black'}
-                  },       
-                    // ...             
+            crosshair:
+            {
+                visible: true,
+                type: 'crosshair',
+                line: { width: 2, color: 'black' }
+            },
+            // ...             
 
-             });
+        });
 
 
 {% endhighlight %}
@@ -323,25 +312,23 @@ In order to track a data point closer to the mouse position or touch contact poi
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                    primaryXAxis:
-                              {
-                                 crosshairLabel: { visible: true, fill: '#E94649' },
-                              },                                               
-                    crosshair:
-                          {
-                            visible: true,
-                            type: 'trackball',
-                            line: { width: 2, color: 'blue' },
+        $("#chartcontainer").ejChart({
+            // ...             
+            primaryXAxis:
+            {
+                crosshairLabel: { visible: true, fill: '#E94649' },
+            },
+            crosshair:
+            {
+                visible: true,
+                type: 'trackball',
+                line: { width: 2, color: 'blue' },
 
-                          },              
-                   // ...             
+            },
+            // ...             
 
-             });
+        });
 
 
 {% endhighlight %}
@@ -356,41 +343,37 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                    // ...             
-                     series: [{
-                            points: [{ x: "SUV", y: 25, text: '25%' }, 
-                                     { x: "Car", y: 37, text: '37%' }],
-                            name: 'Market'                            
-                        }
-                        ],
-                     pointRegionClick: 'onclick',
-                   // ...           
-                       });
-           });
+        $("#chartcontainer").ejChart({   
+            // ...             
+            series: [{
+                points: [{ x: "SUV", y: 25, text: '25%' }, 
+                         { x: "Car", y: 37, text: '37%' }],
+                name: 'Market'                            
+            }
+            ],
+            pointRegionClick: 'onclick',
+            // ...           
+        });
 
-function onclick(sender) {
-   var pointIndex = sender.Data.Region.Region.PointIndex
-   if (sender.model.series[0].name == "Market")
-         $("#container").ejChart("option", {"drilldown": pieSeries(pointIndex) });
- }
+       function onclick(sender) {
+            var pointIndex = sender.Data.Region.Region.PointIndex
+            if (sender.model.series[0].name == "Market")
+                $("#container").ejChart("option", { "drilldown": pieSeries(pointIndex) });
+        }
 
-
-   function pieSeries(index) {
+        function pieSeries(index) {
             if (index == 0) {
                 return {
                     title: { text: 'Automobile Sales in the SUV segment' },
                     series: [{
-                        points: [{ x: "Toyota", y: 8, text: 'Toyota 8%' }, 
+                        points: [{ x: "Toyota", y: 8, text: 'Toyota 8%' },
                                  { x: "Ford", y: 12, text: 'Ford 12%' },
                                  { x: "GM", y: 17, text: 'GM 17%' }
-                               ],
+                        ],
                         name: 'SUV-Sale', labelPosition: 'outside',
                         marker: {
-                            dataLabel: { visible: true}
+                            dataLabel: { visible: true }
                         }
                     }],
 
@@ -402,21 +385,20 @@ function onclick(sender) {
                     title: { text: 'Automobile Sales in the Car segment' },
                     series: [{
                         points: [{ x: "Toyota", y: 7, text: 'Toyota 7%' },
-                                 { x: "Chrysler", y: 12, text: 'Chrysler 12%' }, 
-                                 { x: "Nissan", y: 9, text: 'Nissan 9%' } 
-                           ],
+                                 { x: "Chrysler", y: 12, text: 'Chrysler 12%' },
+                                 { x: "Nissan", y: 9, text: 'Nissan 9%' }
+                        ],
 
                         name: 'Car-Sale', labelPosition: 'outside',
                         marker: {
-                            dataLabel: { visible: true}
+                            dataLabel: { visible: true }
                         }
                     }],
                     legend: { visible: false }
 
                 };
-
             }
-}
+        }
 
 
 {% endhighlight %}

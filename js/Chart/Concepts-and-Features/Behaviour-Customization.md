@@ -17,24 +17,19 @@ You can acquire the information related to a particular data point of series by 
 
 {% highlight js %}
 
-**[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                       commonSeriesOptions: {type:'column'},
-                        pointRegionMouseMove: "pointDetails",
-                        pointRegionClick: " pointDetails ",
-                        size: {width:800, height:600}
-
-                    });
+        $("#chartcontainer").ejChart({   
+            // ...             
+            commonSeriesOptions: {type:'column'},
+            pointRegionMouseMove: "pointDetails",
+            pointRegionClick: " pointDetails ",
+            size: {width:800, height:600}
         });
-        function pointDetails (sender) {      
+        function pointDetails(sender) {
             series = sender.model.series[sender.data.region.SeriesIndex];
             var X = series.points[sender.data.region.Region.PointIndex].x;
             var Y = series.points[sender.data.region.Region.PointIndex].y;
             alert("X:" + X + "  Y:" + Y);
-        }
+        }        
 
 
 {% endhighlight %}
@@ -53,17 +48,12 @@ This event is handled when the Chart gets loaded; a parameter **sender** is pass
 
 {% highlight js %}
 
-**[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                        load: function (sender) {
-                     sender.model.canResize = false;
-                    },
-                    });
-        });
-
+        $("#chartcontainer").ejChart({   
+            // ...             
+            load: function (sender) {
+                sender.model.canResize = false;
+            },
+        });         
 
 
 {% endhighlight %}
@@ -76,17 +66,12 @@ This event is handled before the Chart gets rendered; a parameter **sender** is 
 
 {% highlight js %}
 
-**[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                        preRender: function (sender) {
-                    console.log(sender.model.series.length);
-                    },
-                    });
-        });
-
+        $("#chartcontainer").ejChart({
+            // ...             
+            preRender: function (sender) {
+                console.log(sender.model.series.length);
+            },
+        });         
 
 
 {% endhighlight %}
@@ -99,17 +84,13 @@ This event is handled before the Chart title gets rendered; a parameter **sender
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                      titleRendering: function (sender) {
-                              sender.data.title = "Olympic";
-                            },
-                    });
-        });
-
+        $("#chartcontainer").ejChart({   
+            // ...             
+            titleRendering: function (sender) {
+                sender.data.title = "Olympic";
+            },
+        });         
 
 
 {% endhighlight %}
@@ -124,17 +105,13 @@ This event is handled before the Chart axis gets rendered; a parameter sender is
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-          axesLabelsInitialize: function (sender) {                                    
-                                    sender.data.axes[0].orientation = "horizontal";
-                                   },
-               });
-        });
-
+        $("#chartcontainer").ejChart({
+            // ...             
+            axesLabelsInitialize: function (sender) {
+                sender.data.axes[0].orientation = "horizontal";
+            },
+        });         
 
 
 {% endhighlight %}
@@ -147,15 +124,12 @@ This event is handled after the Chart axis range gets calculated; a parameter se
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
+        $("#chartcontainer").ejChart({   
+            // ...             
             axesRangeCalculate: function (sender) {
-                                   sender.data.range.min = 2;
-                            },       
-             });
+                sender.data.range.min = 2;
+            },       
         });
 
 
@@ -167,17 +141,13 @@ This event is handled before the Chart axis title gets rendered; a parameter sen
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-           axesTitleRendering: function (sender) {                                                           
-                                 sender.data.title = "Countries";
-                                },          
-               });
-        });
-
+        $("#chartcontainer").ejChart({
+            // ...             
+            axesTitleRendering: function (sender) {
+                sender.data.title = "Countries";
+            },
+        });         
 
 
 {% endhighlight %}
@@ -190,17 +160,13 @@ This event is handled before the Chart axis label gets rendered; a parameter sen
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-           axesLabelRendering: function (sender) {                                                               
-                                sender.data.label.Text = "Label1";
-                               },
-               });
-        });
-
+        $("#chartcontainer").ejChart({
+            // ...             
+            axesLabelRendering: function (sender) {
+                sender.data.label.Text = "Label1";
+            },
+        });         
 
 
 {% endhighlight %}
@@ -215,17 +181,13 @@ This event is handled before the Chart series gets rendered; a parameter sender 
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-           seriesRendering: function (sender) {                                                             
-                              sender.data.series.name = "horizontal";
-                            },
-               });
-        });
-
+        $("#chartcontainer").ejChart({
+            // ...             
+            seriesRendering: function (sender) {
+                sender.data.series.name = "horizontal";
+            },
+        });         
 
 
 {% endhighlight %}
@@ -238,17 +200,13 @@ This event is handled before the marker of each series point gets rendered; a pa
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-           symbolRendering: function (sender) {                    
+        $("#chartcontainer").ejChart({
+            // ...             
+            symbolRendering: function (sender) {
                 console.log(sender.data.style.PointIndex);
-          },    
-           });
-        });
-
+            },
+        });         
 
 
 {% endhighlight %}
@@ -261,17 +219,13 @@ This event is handled before the dataLabel of each series points gets rendered; 
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-           displayTextRendering: function (sender) {                         
-                                  sender.data.text = "34";
-                                },
-           });
-        });
-
+        $("#chartcontainer").ejChart({
+            // ...             
+            displayTextRendering: function (sender) {
+                sender.data.text = "34";
+            },
+        });         
 
 
 {% endhighlight %}
@@ -284,17 +238,13 @@ This event is handled after the series animation is completed; a parameter sende
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-            animationComplete: function (sender) {           
-                                console.log(sender.data.series.name);
-                            },
-           });
-        });
-
+        $("#chartcontainer").ejChart({
+            // ...             
+            animationComplete: function (sender) {
+                console.log(sender.data.series.name);
+            },
+        });         
 
 
 {% endhighlight %}
@@ -309,17 +259,13 @@ This event is handled before the legend of each series points gets rendered; a p
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-        legendItemRendering: function (sender) {                       
-                                sender.data.legendItem.Text= "Series1"
-                            },
-           });
-        });
-
+        $("#chartcontainer").ejChart({
+            // ...             
+            legendItemRendering: function (sender) {
+                sender.data.legendItem.Text = "Series1"
+            },
+        });         
 
 
 {% endhighlight %}
@@ -332,17 +278,13 @@ This event is handled when you click the legend item; a parameter sender is pass
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-        legendItemClick: function (sender) {
-                               console.log("Legend Item Click")
-                            },
-           });
-        });
-
+        $("#chartcontainer").ejChart({   
+            // ...             
+            legendItemClick: function (sender) {
+                console.log("Legend Item Click")
+            },
+        });         
 
 
 {% endhighlight %}
@@ -355,17 +297,13 @@ This event is handled when you move the mouse over the legend item; a parameter 
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-        legendItemMouseMove: function (sender) {
-                               console.log("Legend Item Click")
-                            },
-           });
-        });
-
+        $("#chartcontainer").ejChart({   
+            // ...             
+            legendItemMouseMove: function (sender) {
+                console.log("Legend Item Click")
+            },
+        });         
 
 
 {% endhighlight %}
@@ -378,17 +316,13 @@ This event is handled after the bounds for legend is calculated.  A parameter se
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-        legendBoundsCalculate: function (sender) {
-                                 sender.data.legendBound.Height = 34;
-                            },
-           });
-        });
-
+        $("#chartcontainer").ejChart({   
+            // ...             
+            legendBoundsCalculate: function (sender) {
+                sender.data.legendBound.Height = 34;
+            },
+        });     
 
 
 {% endhighlight %}
@@ -403,17 +337,13 @@ This event is handled before the tooltip gets rendered.  A parameter sender is p
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-        toolTipInitialize: function (sender) {
-                                 sender.data.currentText="tooltip"
-                            },
-           });
-        });
-
+        $("#chartcontainer").ejChart({   
+            // ...             
+            toolTipInitialize: function (sender) {
+                sender.data.currentText="tooltip"
+            },
+        });         
 
 
 {% endhighlight %}
@@ -426,17 +356,13 @@ This event is handled before the tooltip for axis gets rendered when crosshair i
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-        trackAxisToolTip: function (sender) {                                
-                             sender.data.currentTrackText="tooltip"
-                            },
-           });
-        });
-
+        $("#chartcontainer").ejChart({   
+            // ...             
+            trackAxisToolTip: function (sender) {                                
+                sender.data.currentTrackText="tooltip"
+            },
+        });         
 
 
 {% endhighlight %}
@@ -449,17 +375,13 @@ This event is handled before the tooltip for trackball get rendered when trackba
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-        trackToolTip: function (sender) {
-                          sender.data.currentText = "tooltip"
-                         },
-           });
-        });
-
+        $("#chartcontainer").ejChart({   
+            // ...             
+            trackToolTip: function (sender) {
+                sender.data.currentText = "tooltip"
+            },
+        });         
 
 
 {% endhighlight %}

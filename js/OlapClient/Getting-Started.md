@@ -7,18 +7,23 @@ control: OLAP Client
 documentation: ug
 ---
 
-# Getting Started 
+## Getting Started 
 
 This section explains briefly about how to create an **OLAP Client** in your application with **JavaScript**.
 
 **Control Structure**
 
 The following screenshot shows the structure of an **OLAP Client** control.
+
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Client Control for JavaScript"%}
+
+<br/>
 
 **Syncfusion OLAP Controls – Architecture**
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img2.png" Caption="Architecture of OLAP controls"%}
+
+<br/>
 
 As shown in an above architecture, control rendering takes place at the client-side and the analytical operations on each action takes place at the server-side.
 
@@ -28,19 +33,19 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
 1. DataSource Connectivity: You can establish a connection between different cube data sources such as
 
-1. Offline Cube
+   * Offline Cube
 
-2. Online Cube (XML/A)
+   * Online Cube (XML/A)
 
-3. Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (**XML/A**) option. Using service, you can connect any cube data source without any limitation.
+   * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (**XML/A**) option. Using service, you can connect any cube data source without any limitation.
 
 2. Cube Schema: As the connection is moved to service-side, you obviously use Microsoft ADOMD assembly to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
 
-1. Availability of cubes.
+   * Availability of cubes.
 
-2. A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only.
+   * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only.
 
-3. Localized information is also available in cube schema.
+   * Localized information is also available in cube schema.
 
 3. MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you need to send framed MDX via Microsoft ADOMD assembly. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any OLAP controls.
 
@@ -54,17 +59,19 @@ Further operations are carried with updated **OLAP Reports** only and you can se
 
 This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation_**.**_
 
-5. Saving and Loading Report in Database:  you can save and load the reports available in OLAP Client control via service only. This is not applicable at the client-side. You can serialize the OLAP Report class in the Syncfusion.Olap.Base assembly and save to database as stream.  Also you can load back from database via service.
+    1. Saving and Loading Report in Database:  you can save and load the reports available in OLAP Client control via service only. This is not applicable at the client-side. You can serialize the OLAP Report class in the Syncfusion.Olap.Base assembly and save to database as stream.  Also you can load back from database via service.
 
-6. Exporting: You can export OLAP values and information to excel sheet via service only. So this provides feasible option to save and view OLAP information.
+    2. Exporting: You can export OLAP values and information to excel sheet via service only. So this provides feasible option to save and view OLAP information.
 
 **Create an application**
 
-This section encompasses on how to configure the **OLAP Client** control in an application. You can also pass the required data to **OLAP****Client** and customize it according to your requirements.
+This section encompasses on how to configure the **OLAP Client** control in an application. You can also pass the required data to **OLAP Client** and customize it according to your requirements.
 
-In this example, you can see how **OLAP****Client** component plots the data of customer count over different fiscal years.
+In this example, you can see how **OLAP Client** component plots the data of customer count over different fiscal years.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img3.png" Caption="Customer Count over different fiscal years"%}
+
+<br/>
 
 Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web** category. Select the **ASP.NET Empty Web Application** template, and then click **OK**.
 
@@ -72,31 +79,37 @@ The following screen shot displays a Project Creation Wizard:
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img4.png" Caption="New Project Wizard"%}
 
+<br/>
+
 **Create HTML page**
 
 To create a new web form in the application
 
-1. Right-click on the project and select Add.
+Right-click on the project and select Add.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img5.png" Caption="Add New Item Wizard"%}
 
-2. Click New Item and select HTML Page from the listed templates.
+<br/>
 
-3. Name the page as default.html and click OK.
+Click New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
 
 **Add References, Scripts, Styles and Control in HTML page**
 
 **Add References**
 
-1. In the Solution Explorer, right-click the References folder and then click Add Reference.
+* In the Solution Explorer, right-click the References folder and then click Add Reference.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img6.png" Caption="Adding Reference"%}
 
+<br/>
+
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img7.png" Caption="Referencing Syncfusion.Olap.Base"%}
 
-2. Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.Olap.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll and Syncfusion.XlsIO.Base.dll, System.Data.SqlServerCe.dll (Version: 4.0.0.0).
+<br/>
 
-3. Click OK.
+* Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.Olap.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll and Syncfusion.XlsIO.Base.dll, System.Data.SqlServerCe.dll (Version: 4.0.0.0).
+
+* Click OK.
 
 **Add Scripts and Styles** 
 
@@ -105,18 +118,15 @@ Add the script files and CSS files in the &lt;title&gt; tag of the default.html 
 > _**Note: Use the following code sample while adding scripts and styles.**_
 
 
-
 {% highlight html %}
 
 
-**[HTML]**
+[HTML]
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
 <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-
-
 
 {% endhighlight %}
 
@@ -126,7 +136,7 @@ Add the following code sample in the **&lt;body&gt;** tag in the **default.html*
 
 {% highlight html %}
 
-**[HTML]**
+[HTML]
 <div>
     //Creating a div tag, which will act as a container for ejOlapClient widget.
     <div id="OlapClient" style="height: 350px; width: 100%; overflow: auto">
@@ -147,17 +157,23 @@ Add the following code sample in the **&lt;body&gt;** tag in the **default.html*
 
 **Create WCF Services**
 
-1. Right-click the project and select Add > New Folder.  Name the folder as WCF.
+Right-click the project and select Add > New Folder.  Name the folder as WCF.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img8.png" Caption="Add New Folder"%}
 
-2. Now right-click the WCF folder created and select Add > New Item.
+<br/>
+
+Now right-click the WCF folder created and select Add > New Item.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img9.png" Caption="Add New Item Wizard"%}
 
-3. In the Add New Item window, select WCF Service and name it OlapClientService.svc. Click Add.
+<br/>
+
+In the Add New Item window, select WCF Service and name it OlapClientService.svc. Click Add.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img10.png" Caption="Creating WCF Service"%}
+
+<br/>
 
 **Add service methods inside Interface**
 
@@ -168,42 +184,60 @@ Add the following code inside the **IOlapClientService** interface available in 
 **[C#]**
 
 [ServiceContract]
+
     public interface IOlapClientService
     {
         [OperationContract]
         Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams);
+        
         [OperationContract]
         Dictionary<string, object> FetchMemberTreeNodes(string action, string dimensionName, string olapReport);
+        
         [OperationContract]
         Dictionary<string, object> InitializeChart(string action, string currentReport, string customObject);
+        
         [OperationContract]
         Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string clientReports);
+        
         [OperationContract]
         Dictionary<string, object> InitializeGrid(string action, string currentReport, string gridLayout, string customObject);
+        
         [OperationContract]
         Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string clientReports, string headerInfo, string layout);
+        
         [OperationContract]
         Dictionary<string, object> FilterElement(string action, string clientParams, string olapReport, string clientReports);
+        
         [OperationContract]
         Dictionary<string, object> RemoveSplitButton(string action, string clientParams, string olapReport, string clientReports);
+        
         [OperationContract]
         Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string olapReport, string clientReports);
+        
         [OperationContract]
         Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams);
+        
         [OperationContract]
         Dictionary<string, object> MeasureGroupChanged(string action, string measureGroupName);
+        
         [OperationContract]
         Dictionary<string, object> ToolbarOperations(string action, string toolbarOperation, string clientInfo, string olapReport, string clientReports);
+        
         [OperationContract]
         Dictionary<string, object> UpdateReport(string action, string clientParams, string olapReport, string clientReports);
+        
         [OperationContract]
         Dictionary<string, object> SaveReportToDB(string reportName, string olapReport, string clientReports);
+        
         [OperationContract]
         Dictionary<string, object> LoadReportFromDB(string reportName, string olapReport, string clientReports);
+        
         [OperationContract]
         Dictionary<string, object> FetchReportListFromDB();
+        
         [OperationContract]
         Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string dimensionName, string cubeName, string olapReport, string clientReports);
+        
         [OperationContract]
         void ExportOptions(System.IO.Stream stream);
 
@@ -218,7 +252,7 @@ Add the following necessary namespaces required to implement the **service** met
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -250,13 +284,16 @@ You can create the **OlapClientService** class to implement the **service** meth
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
 
 namespace WebApplication2
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    
     public class OlapClientService : IOlapClientService
+    
     {
+    
     }
 }
 
@@ -267,11 +304,11 @@ namespace WebApplication2
 
 You can add the following methods to the service that are invoked for any server-side operations performed in **OLAP Client**.
 
-1. Initialize the OLAP Client helper class.
+* Initialize the OLAP Client helper class.
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
 
    OlapClient olapClientHelper = new OlapClient();
    OlapChart htmlHelper = new OlapChart();
@@ -279,22 +316,21 @@ You can add the following methods to the service that are invoked for any server
    string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
    string conStringforDB = "DataSource=" + HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\wcf" }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
 
-
-
 {% endhighlight %}
 
 
-
-2. Add the following relevant service methods.
+* Add the following relevant service methods.
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
 
 //This method provides the required information from the server side for initializing the OlapClient.
 
 public Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams)
+    
         {
+        
             OlapDataManager DataManager = null;
             DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(CreateOlapReport());
@@ -306,8 +342,7 @@ public Dictionary<string, object> InitializeClient(string action, string customO
         public Dictionary<string, object> InitializeGrid(string action, string currentReport, string gridLayout, string customObject)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-
-DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
             return olapClientHelper.GetJsonData(action, DataManager, gridLayout);
         }
 
@@ -319,6 +354,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
             return htmlHelper.GetJsonData(action, DataManager);
         }
+        
 //This method provides the required information from the server side while drill up/down operation is performed in OlapChart.
 
         public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string clientReports)
@@ -330,6 +366,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
         }
 
 //This method provides the required information from the server side while filtering operation performed with the members inside respective dimension.
+
         public Dictionary<string, object> FilterElement(string action, string clientParams, string olapReport, string clientReports)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -337,7 +374,8 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
             return olapClientHelper.GetJsonData(action, DataManager, clientParams);
         }
-//This method provides the required information from the server side while a split button is removed from any axes. 
+        
+//This method provides the required information from the server side while a split button is removed from any axes.
 
         public Dictionary<string, object> RemoveSplitButton(string action, string clientParams, string olapReport, string clientReports)
         {
@@ -346,6 +384,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
             return olapClientHelper.GetJsonData(action, DataManager, clientParams);
         }
+        
 //This method provides the required information from the server side while creating a member tree-view inside the editor dialog.
 
         public Dictionary<string, object> FetchMemberTreeNodes(string action, string dimensionName, string olapReport)
@@ -364,6 +403,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
             return olapClientHelper.GetJsonData(action, DataManager, cellPosition, headerInfo, layout);
         }
+        
 //This method provides the required information from the server side while a node is dropped to any of the axes. 
 
         public Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string olapReport, string clientReports)
@@ -373,7 +413,9 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
             return olapClientHelper.GetJsonData(action, DataManager, dropType, nodeInfo);
         }
-//This method provides the required information from the server side while a cube is changed. 
+        
+//This method provides the required information from the server side while a cube is changed.
+ 
         public Dictionary<string, object> CubeChanged(string action, string cubeName, string clientParams)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -384,7 +426,9 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             return olapClientHelper.GetJsonData(action, DataManager, measureGroupName);
         }
+        
 //This method provides the required information from the server side while any toolbar operations are performed.
+
         public Dictionary<string, object> ToolbarOperations(string action, string toolbarOperation, string clientInfo, string olapReport, string clientReports)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -394,7 +438,9 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
                 DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
             return olapClientHelper.GetJsonData(action, DataManager, toolbarOperation, clientInfo);
         }
+        
 //This method fetches the required information from the server side while expanding a member inside member editor dialog.
+
         public Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string dimensionName, string cubeName, string olapReport, string clientReports)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -404,14 +450,16 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
                 DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
             return olapClientHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, dimensionName, cubeName);
         }
-//This method fetches the required information from the server side while updating reports using measure group. 
-
+        
+//This method fetches the required information from the server side while updating reports using measure group.
+ 
         public Dictionary<string, object> UpdateReport(string action, string clientParams, string olapReport, string clientReports)
         {
             return olapClientHelper.GetJsonData(action, clientParams, olapReport, clientReports);
         }
 
 //This method saves the OlapReports with the specific/entered name into the database.
+
         public Dictionary<string, object> SaveReportToDB(string reportName, string olapReport, string clientReports)
         {
             SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
@@ -423,6 +471,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             con.Close();
             return null;
         }
+        
 //This method fetches the list of OlapReports stored in the database.
 
         public Dictionary<string, object> FetchReportListFromDB()
@@ -434,6 +483,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             dictionary.Add("ReportNameList", reportNames);
             return dictionary;
         }
+        
 //This method loads the selected OlapReports from the database based on the name with which it’s been stored. 
 
         public Dictionary<string, object> LoadReportFromDB(string reportName, string olapReport, string clientReports)
@@ -452,6 +502,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             DataManager.SetCurrentReport(DataManager.Reports[0]);
             return olapClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
         }
+        
 //This method returns the table containing the reports from the database.
 
         private DataTable GetDataTable()
@@ -463,6 +514,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             con.Close();
             return dSet.Tables[0];
         }
+        
 //This method exports the OlapGrid content to an excel sheet.
 
         public void ExportOptions(Stream stream)
@@ -472,7 +524,9 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
             olapGridHelper.ExportToExcel(DataManager, new StreamReader(stream).ReadToEnd(), "Sample.xls", HttpContext.Current.Response);
         }
+        
 //This method carries the information about the default report which would be rendered within **OlapClient** initially.
+
         private OlapReport CreateOlapReport()
         {
             OlapReport olapReport = new OlapReport() { Name = "Default Report" };
@@ -490,27 +544,26 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             return olapReport;
         }
 
-
-
 {% endhighlight %}
 
 **Configure Web.Config**
 
-1. You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.OlapClientService" where "OlapClientService" is the service class name and “WebApplication2" is the namespace name where service class appears.
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.OlapClientService" where "OlapClientService" is the service class name and “WebApplication2" is the namespace name where
+    
+service class appears.
 
-2. The following are the properties that meet the appropriate endpoint.  
+The following are the properties that meet the appropriate endpoint.  
 
-1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapClientService** contract and hence it is "**WebApplication2.IOlapClientService**".
+   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapClientService** contract and hence it is "**WebApplication2.IOlapClientService**".
 
-2. **Binding:** In your application, you can use **webHttpBinding** to post and receive the requests and responses between client-end and service-end.
+   2. **Binding:** In your application, you can use **webHttpBinding** to post and receive the requests and responses between client-end and service-end.
 
-3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
-
+   3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
 
 
 {% highlight xml %}
 
-**[Web.Config]**
+[Web.Config]
 <services>
       <service name="**WebApplication2.OlapClientService**">
         <endpoint address="" behaviorConfiguration="**WebApplication2.OlapClientServiceAspNetAjaxBehavior**"
@@ -521,13 +574,13 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 {% endhighlight %}
 
+* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, "WebApplication2.OlapClientServiceAspNetAjaxBehavior" refers to the OlapClientService class under the namespace
 
-
-3. The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, "WebApplication2.OlapClientServiceAspNetAjaxBehavior" refers to the OlapClientService class under the namespace WebApplication2 in OlapClientService.svc.cs file that is the appropriate behavior for the endpoint.
+ WebApplication2 in OlapClientService.svc.cs file that is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
 
-**[Web.Config]**
+[Web.Config]
 <endpointBehaviors>
         <behavior name="**WebApplication2.OlapClientServiceAspNetAjaxBehavior**">
           <enableWebScript />
@@ -536,8 +589,6 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 
 {% endhighlight %}
-
-> 
 
 > _**Note: In this example, “WebApplication2” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created.**_
 

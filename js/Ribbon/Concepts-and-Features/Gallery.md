@@ -33,9 +33,6 @@ To use the gallery feature, include the following properties under **tabgroups**
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
     <!-- ... -->
     <head>

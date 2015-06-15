@@ -19,7 +19,6 @@ Here is the code example to create Code 39 barcode:
 
 {% highlight js %}
 
-[JavaScript]
             $("#barcode").ejBarcode({ text: "SYNCFUSION", 
 symbologyType: "code39", 
 displayText: true, 

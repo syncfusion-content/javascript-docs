@@ -17,7 +17,7 @@ Data available in client-side (local data) can be bound with **Bullet Graph** us
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 var localData = [
                {
@@ -59,7 +59,7 @@ The following screenshot displays **Bullet Graph** with local data generated usi
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
                //Creating data manager instance
                 var dataManger = new ej.DataManager({

@@ -7,13 +7,13 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-# Tooltip
+### Tooltip
 
-**Tooltip** provides the information about the **OlapGauge** when you move the mouse pointer over the control. You can enable it using “**showtooltip**”****property**.**
+**Tooltip** provides the information about the **OlapGauge** when you move the mouse pointer over the control. You can enable it using "**showtooltip**”  property.
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 <script type="text/javascript">
 $(function () {
 $("#OlapGauge1").ejOlapGauge({
@@ -66,13 +66,13 @@ $("#OlapGauge1").ejOlapGauge({
 
 {% endhighlight %}
 
-## Customizing the tooltip using CSS
+#### Customizing the tooltip using CSS
 
 You can customize the **Tooltip** by overriding the existing style attributes and referring it in web page.
 
 {% highlight css %}
 
-**[CSS]**
+[CSS]
 <style>
 .e-olapgauge-tooltip {
   background-color: aqua !important;

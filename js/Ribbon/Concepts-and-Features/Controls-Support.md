@@ -27,9 +27,6 @@ The default type is **button**.
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
 	<!-- ... -->
 	<head>

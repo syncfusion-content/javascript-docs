@@ -13,9 +13,6 @@ The **application menu** support is provided in the Ribbon control application t
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
 	<!-- ... -->
 	<head>

@@ -13,9 +13,6 @@ You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In **cont
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
     <!-- ... -->
     <head>

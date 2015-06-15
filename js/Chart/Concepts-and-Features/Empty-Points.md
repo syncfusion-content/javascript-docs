@@ -13,24 +13,21 @@ The data that is passed to the Chart can have null or undefined values that are 
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                   series: [{
-                               points: [
-
-                               { x: 1, y: 210 }, { x: 2, y: 150},
-                               { x: 3, y: 200 }, { x: 4, y: null },
-                               { x: 5, y: 170 }, { x: 6, y: 230 },
-                               { x: 7, y: 120 },  
-                               ],
-                               name: 'Course', type: 'column',
-                           }
-                      ],	
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            series: [{
+                points: [
+                { x: 1, y: 210 }, { x: 2, y: 150 },
+                { x: 3, y: 200 }, { x: 4, y: null },
+                { x: 5, y: 170 }, { x: 6, y: 230 },
+                { x: 7, y: 120 },
+                ],
+                name: 'Course', type: 'column',
+            }
+            ],
+            // ...             
+        });
 
 
 {% endhighlight %}

@@ -7,15 +7,15 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Context Menu
+### Context Menu
 
-**Cell Context** support in **PivotGrid** allows you to choose the right-click event to access each cell for any desired operation. **Cell****Context** is enabled by setting the **enableCellContext** property to ‘**True**’. The name of the event to trigger on right-clicking is stored in the **cellContextEvent** property. After enabling **Cell****Context** on right-clicking a cell, the event triggers. The information about the cell is carried through a parameter.
+**Cell Context** support in **PivotGrid** allows you to choose the right-click event to access each cell for any desired operation. **Cell Context** is enabled by setting the **enableCellContext** property to ‘**True**’. The name of the event to trigger on right-clicking is stored in the **cellContextEvent** property. After enabling **Cell Context** on right-clicking a cell, the event triggers. The information about the cell is carried through a parameter.
 
-The following code example illustrates how to create the **PivotGrid** control with the enabled **Cell****Context**. Here, the **Cell****Context** event displays a pop-up menu as follows.
+The following code example illustrates how to create the **PivotGrid** control with the enabled **Cell Context**. Here, the **Cell Context** event displays a pop-up menu as follows.
 
 {% highlight javascript %}
 
-**[JS]**   
+[JS]   
 <head>
     <style>
         .menuItem {
@@ -81,12 +81,9 @@ The following code example illustrates how to create the **PivotGrid** control w
        </script>
 </body>
 
-
 {% endhighlight %}
 
-
-
-The output of the above code creates a **PivotGrid** with **Cell****Context** options as shown in the following screenshot.
+The output of the above code creates a **PivotGrid** with **Cell Context** options as shown in the following screenshot.
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Context-Menu_images/Context-Menu_img1.png" Caption="Cell Context"%}
 

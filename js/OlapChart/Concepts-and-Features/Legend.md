@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# Legend
+### Legend
 
 **Legend** is a color code that helps to differentiate between chart items. Legend also has labels beside each color to indicate that it applies to information from Series 1, Series 2, and so on.
 
@@ -17,7 +17,7 @@ In **OlapChart**, you can customize the legend symbol with different shapes like
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" }, legend: { visible: true, rowCount: 3, shape: "Star" },
 });
@@ -25,9 +25,9 @@ url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studi
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Legend_images/Legend_img1.png" Caption="Legend Symbol"%}
+
+<br/>
 
 **Legend Position**
 
@@ -35,7 +35,7 @@ You can customize the legend position in top, bottom, left and right position of
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" },    legend: { visible: true, rowCount: 3, shape: "Star", position: "top" },
 });
@@ -43,9 +43,9 @@ url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studi
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Legend_images/Legend_img2.png" Caption="Legend Position"%}
+
+<br/>
 
 **Legend Arrangement**
 
@@ -53,7 +53,7 @@ You can align the legend using **alignment** property of legend. This allows you
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" }, legend: { visible: true, rowCount: 3, alignment: "Near" }
 });
@@ -63,25 +63,27 @@ url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studi
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Legend_images/Legend_img3.png" Caption="Legend Arrangement"%}
 
+<br/>
+
 **Legend Style**
 
 You can draw and customize the outline of Chart legend using **border** property of legend. Default value of legend border color is “**Transparent**”.
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
   url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" },
  legend: { visible: true, rowCount: 3, border: { color: 'red', width: 2 } } 
 });
 
 
-
 {% endhighlight %}
 
 
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Legend_images/Legend_img4.png" Caption="Legend Style Customization"%}
+
+<br/>
 
 **Legend Item** 
 
@@ -89,16 +91,17 @@ $("#OlapChart1").ejOlapChart({
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" },     legend: { visible: true, rowCount: 3,
           itemSize: { border: { color: "green", width: 0.5 }}}
 });
 
-
 {% endhighlight %}
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Legend_images/Legend_img5.png" Caption="Legend Item Customization"%}
+
+<br/>
 
 **Legend Text**
 
@@ -106,14 +109,13 @@ You can customize the **legend text** - font family, font style, font weight and
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" }, legend: { visible: true, rowCount: 3, font: { fontFamily: 'Segoe UI', fontStyle: 'italic', fontWeight: 'bold', size: '13px' } },
 });
 
 
 {% endhighlight %}
-
 
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Legend_images/Legend_img6.png" Caption="Legend Text Customization "%}

@@ -25,16 +25,19 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 {% highlight html %}
 
-**[HTML]**
 <!DOCTYPE html>
-<htmlxmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<metaname="viewport" content="width=device-width, initial-scale=1.0"/>
-<metacharset="utf-8"/>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-<scriptsrc="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script> <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <!--  jquery script  -->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <!--  jquery localization dependency  -->
+    <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
+    <!-- Essential JS UI widget -->
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
 </head>
-
+<body>
+</body>
+</html>
 
 {% endhighlight %}
 
@@ -44,8 +47,8 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 {% highlight html %}
 
-**[HTML]**
 
+<html>
 <body>
 <divid="Bullet"></div>
 </body>
@@ -60,7 +63,7 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 {% highlight html %}
 
-**[HTML]**
+
 
 <head>
 <!-- … -->
@@ -89,8 +92,8 @@ Assign the data in**localData**variable to the **dataSource** property of **Bull
 
 {% highlight js %}
 
-**[JavaScript]**
-var localData = [
+
+    var localData = [
                 {
                     value: 90, comparativeMeasureValue: 100,
                     category: 2013
@@ -195,11 +198,12 @@ var localData = [
                     value: 119, comparativeMeasureValue: 112,
                     category: 1988
                 }];
-$(function () {
-    $("#Bullet").ejBulletGraph({
-**fields: {**
-                **dataSource: localData**
-            **}**
+                
+    $(function () {
+        $("#Bullet").ejBulletGraph({
+        fields: {
+            dataSource: localData
+            }
         });
      });
 
@@ -214,14 +218,14 @@ Once the **dataSource** property is assigned with the required values, you canbi
 
 {% highlight js %}
 
-**[JavaScript]**
-$(function () {
+
+    $(function () {
     $("#Bullet").ejBulletGraph({
-**fields: {**
-                **dataSource: localData, category: "category",**
-                **featureMeasures: "value",**
-                **comparativeMeasure: "comparativeMeasureValue"**
-            **}**
+        fields: {
+                dataSource: localData, category: "category",
+                featureMeasures: "value",
+                comparativeMeasure: "comparativeMeasureValue"
+            }
         });
      });
 
@@ -238,26 +242,23 @@ By default, the **BulletGraph**is rendered in the Horizontal orientation with it
 
 {% highlight js %}
 
-**[JavaScript]**
 
-$(function () {
+    $(function () {
     $("#Bullet").ejBulletGraph({
             width:850,
             height: 540,
-**qualitativeRangeSize: 800,**
-            **quantitativeScaleLength: 425,** 
-            **orientation: ej.datavisualization.BulletGraph.orientation.Vertical,**
-            **flowDirection:** 
-**ej.datavisualization.BulletGraph.flowDirection.Backward,**
+            qualitativeRangeSize: 800,
+            quantitativeScaleLength: 425, 
+            orientation: ej.datavisualization.BulletGraph.orientation.Vertical,
+            flowDirection: ej.datavisualization.BulletGraph.flowDirection.Backward,
             quantitativeScaleSettings: {
-**minimum: 70,**
-                **maximum: 130,**
-                **interval: 10,**
-                **tickPosition:** 
-**ej.datavisualization.BulletGraph.tickPosition.Above,**
-                **labelSettings: {**
-**position: ej.datavisualization.BulletGraph.labelPosition.Above**
-                **}**
+                minimum: 70,
+                maximum: 130,
+                interval: 10,
+                tickPosition: ej.datavisualization.BulletGraph.tickPosition.Above,
+                labelSettings: {
+                    position: ej.datavisualization.BulletGraph.labelPosition.Above
+                }
             },
             fields: {
                 dataSource: localData, category: "category",
@@ -282,22 +283,22 @@ By default, 3 ranges are displayed in the **BulletGraph**control duringthe initi
 
 {% highlight js %}
 
-**[JavaScript]**
-$(function () {
+
+    $(function () {
     $("#Bullet").ejBulletGraph({
             width:850,
             height: 540,
             qualitativeRangeSize: 800,
             quantitativeScaleLength: 425, 
-            orientation: ej.**datavisualization**.BulletGraph.orientation.Vertical,
-            flowDirection: ej.**datavisualization**.BulletGraph.flowDirection.Backward,
+            orientation: ej.datavisualization.BulletGraph.orientation.Vertical,
+            flowDirection: ej.datavisualization.BulletGraph.flowDirection.Backward,
             quantitativeScaleSettings: {
                 minimum: 70,
                 maximum: 130,
                 interval: 10,
-                tickPosition: ej.**datavisualization**.BulletGraph.tickPosition.Above,
+                tickPosition: ej.datavisualization.BulletGraph.tickPosition.Above,
                 labelSettings: {
-position: ej.**datavisualization**.BulletGraph.labelPosition.Above
+                    position: ej.datavisualization.BulletGraph.labelPosition.Above
                 }
             },
             fields: {
@@ -305,13 +306,15 @@ position: ej.**datavisualization**.BulletGraph.labelPosition.Above
                 featureMeasures: "value",
                 comparativeMeasure: "comparativeMeasureValue"
             },
-**qualitativeRanges: [{**
-                **rangeEnd: 90**
-            **}, {**
-                **rangeEnd: 110**
-            **}, {**
-                **rangeEnd: 130, rangeStroke: "#CDC9C9"**
-            **}]**
+            qualitativeRanges: [{
+                rangeEnd: 90
+            }, 
+            {
+                rangeEnd: 110
+            },
+            {
+                rangeEnd: 130, rangeStroke: "#CDC9C9"
+            }]
 
         });
      });
@@ -332,28 +335,28 @@ You have to dothe following code changes in the quantitative scalein order to cu
 
 {% highlight js %}
 
-**[JavaScript]**
-$(function () {
+
+    $(function () {
     $("#Bullet").ejBulletGraph({
             width:850,
             height: 540,
             qualitativeRangeSize: 800,
             quantitativeScaleLength: 425, 
-            orientation: ej.**datavisualization**.BulletGraph.orientation.Vertical,
-            flowDirection: ej.**datavisualization**.BulletGraph.flowDirection.Backward,
+            orientation: ej.datavisualization.BulletGraph.orientation.Vertical,
+            flowDirection: ej.datavisualization.BulletGraph.flowDirection.Backward,
             quantitativeScaleSettings: {
                 minimum: 70,
                 maximum: 130,
                 interval: 10,
-                tickPosition: ej.**datavisualization**.BulletGraph.tickPosition.Above,
+                tickPosition: ej.datavisualization.BulletGraph.tickPosition.Above,
                 labelSettings: {
-position: ej.**datavisualization**.BulletGraph.labelPosition.Above
+                    position: ej.datavisualization.BulletGraph.labelPosition.Above
                 },
 
-   **majorTickSettings:{width:1, size:7},**
-                **minorTickSettings:{width:1},**
-   **comparativeMeasureSettings:{stroke:"#507786"},**
-**featuredMeasureSettings:{stroke: "#169DD8"},**
+            majorTickSettings:{width:1, size:7},
+            minorTickSettings:{width:1},
+            comparativeMeasureSettings:{stroke:"#507786"},
+            featuredMeasureSettings:{stroke: "#169DD8"},
 
             },
             fields: {
@@ -388,28 +391,28 @@ You can display an appropriate Caption and Subtitle in the **BulletGraph**by add
 
 {% highlight js %}
 
-**[JavaScript]**
-$(function () {
+
+    $(function () {
     $("#Bullet").ejBulletGraph({
             width:850,
             height: 540,
             qualitativeRangeSize: 800,
             quantitativeScaleLength: 425, 
-            orientation: ej.**datavisualization**.BulletGraph.orientation.Vertical,
-            flowDirection: ej.**datavisualization**.BulletGraph.flowDirection.Backward,
+            orientation: ej.datavisualization.BulletGraph.orientation.Vertical,
+            flowDirection: ej.datavisualization.BulletGraph.flowDirection.Backward,
             quantitativeScaleSettings: {
                 minimum: 70,
                 maximum: 130,
                 interval: 10,
-                tickPosition: ej.**datavisualization**.BulletGraph.tickPosition.Above,
+                tickPosition: ej.datavisualization.BulletGraph.tickPosition.Above,
                 labelSettings: {
-position: ej.**datavisualization**.BulletGraph.labelPosition.Above
+                    position: ej.datavisualization.BulletGraph.labelPosition.Above
                 },
 
-                **majorTickSettings:{width:1, size:7},**
-                **minorTickSettings:{width:1},**
-   **comparativeMeasureSettings:{stroke:"#507786"},**
-**featuredMeasureSettings:{stroke: "#169DD8"},**
+                majorTickSettings:{width:1, size:7},
+                minorTickSettings:{width:1},
+                comparativeMeasureSettings:{stroke:"#507786"},
+                featuredMeasureSettings:{stroke: "#169DD8"},
 
             },
             fields: {
@@ -424,19 +427,19 @@ position: ej.**datavisualization**.BulletGraph.labelPosition.Above
             }, {
                 rangeEnd: 130, rangeStroke: "#CDC9C9"
             }],
-**captionSettings: {**
-                **textAngle: 90,**
-                **location: { x: 470, y: 270 },** 
-                **text: "Monsoon Rainfall - Actual vs Forecast",** 
-                **font: { fontFamily: 'Segoe UI', size: '20px',** 
-                        **fontWeight: 'regular', opacity: 1 },** 
-                **subTitle: {**
-                    **textAngle: 0,**
-                    **text: "Rainfall (mm)", location: { x: 180, y: 4 },** 
-                    **font: { fontFamily: 'Segoe UI', size: '14px',** 
-                    **fontWeight: 'regular', opacity: 1}** 
-                **}**
-            **}**
+            captionSettings: {
+                textAngle: 90,
+                location: { x: 470, y: 270 }, 
+                text: "Monsoon Rainfall - Actual vs Forecast", 
+                font: { fontFamily: 'Segoe UI', size: '20px', 
+                        fontWeight: 'regular', opacity: 1 }, 
+                subTitle: {
+                    textAngle: 0,
+                    text: "Rainfall (mm)", location: { x: 180, y: 4 }, 
+                    font: { fontFamily: 'Segoe UI', size: '14px',
+                    fontWeight: 'regular', opacity: 1} 
+                }
+            }
         });
      });
 
@@ -455,30 +458,30 @@ You can use a Tooltip in your application to display anyinformation. In this exa
 
 {% highlight js %}
 
-**[JavaScript]**
-$(function () {
+
+    $(function () {
     $("#Bullet").ejBulletGraph({
             width:850,
             height: 540, 
             tooltipSettings:{visible:true, template: **: "Tooltip"**}
             qualitativeRangeSize: 800,
             quantitativeScaleLength: 425, 
-            orientation: ej.**datavisualization**.BulletGraph.orientation.Vertical,
-            flowDirection: ej.**datavisualization**.BulletGraph.flowDirection.Backward,                
+            orientation: ej.datavisualization.BulletGraph.orientation.Vertical,
+            flowDirection: ej.datavisualization.BulletGraph.flowDirection.Backward,                
             quantitativeScaleSettings: {
                 minimum: 70,
                 maximum: 130,
                 interval: 10,
-                tickPosition: ej.**datavisualization**.BulletGraph.tickPosition.Above,
+                tickPosition: ej.datavisualization.BulletGraph.tickPosition.Above,
                 labelSettings: {
-position: ej.**datavisualization**.BulletGraph.labelPosition.Above
+                    position: ej.datavisualization.BulletGraph.labelPosition.Above
                 },
 
 
-   **majorTickSettings:{width:1, size:7},**
-                **minorTickSettings:{width:1},**
-   **comparativeMeasureSettings:{stroke:"#507786"},**
-**featuredMeasureSettings:{stroke: "#169DD8"},**
+            majorTickSettings:{width:1, size:7},
+            minorTickSettings:{width:1},
+            comparativeMeasureSettings:{stroke:"#507786"},
+            featuredMeasureSettings:{stroke: "#169DD8"},
 
             },
             fields: {
@@ -509,9 +512,9 @@ position: ej.**datavisualization**.BulletGraph.labelPosition.Above
         });
      });
 
-**[Template content]**
+Template content
 
-<divid="**Tooltip**"style="display:none; width:125px;padding-top: 10px;padding-bottom:10px">
+<divid="Tooltip"style="display:none; width:125px;padding-top: 10px;padding-bottom:10px">
 <divalign="center"style="font-weight:bold">
            Rainfall </div>
 <table>

@@ -17,23 +17,20 @@ You can combine several Chart types in one Chart using the **type** property on 
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart( 
- { 
-     series: [
-             {
-**type**: 'line' ,
-               name: 'lineSeries',
-              //.......
-             },
-             {
-**type**: 'column' ,
-               name: 'columnSeries',
-              //.......
-             }
-     ],
-});
+        $("#chartcontainer").ejChart({
+            series: [{
+                type: 'line',
+                name: 'lineSeries',
+                //.......
+            },
+            {
+                type: 'column',
+                name: 'columnSeries',
+                //.......
+            }
+            ],
+        });
 
 
 {% endhighlight %}
@@ -44,21 +41,19 @@ In multiple series case, you can use **commonSeriesOptions** property to specify
 
 {% highlight js %}
 
-**[JS]**
 
- $("#container").ejChart(
-        {
-              commonSeriesOptions: {
-                  type: 'line', enableAnimation: false,
-                   marker:
-                      {
-                         shape: 'circle',
-                         size: {height: 10, width: 10},
-                         visible: true
-                       },
-                   },             
-                //.......
-       });
+        $("#container").ejChart({
+            commonSeriesOptions: {
+                type: 'line', enableAnimation: false,
+                marker:
+                   {
+                       shape: 'circle',
+                       size: { height: 10, width: 10 },
+                       visible: true
+                   },
+            },
+            //.......
+        });
 
 
 {% endhighlight %}
@@ -73,20 +68,18 @@ You can configure the appearance of the lines and the points with options **fill
 
 {% highlight js %}
 
-**[JS]**
 
- $("#chartcontainer").ejChart( 
- { 
-     //  .......
-     series: [
-             {
-             points: [{ x: 2005, y: 28 }, { x: 2006, y: 35 },  { x: 2007, y: 42 }, 
-      { x: 2008, y: 37 }, { x: 2009, y: 41 }, { x: 2010, y: 35 }, { x: 2011, y: 37 }],
-                 name: 'India', type: 'line', width: 4, fill: '#FBAF4F'
-             }],
-   //.......
-
-});
+       $("#chartcontainer").ejChart({
+            //  .......
+            series: [{
+                points: [{ x: 2005, y: 28 }, { x: 2006, y: 35 },
+                    { x: 2007, y: 42 }, { x: 2008, y: 37 },
+                    { x: 2009, y: 41 }, { x: 2010, y: 35 },
+                    { x: 2011, y: 37 }],
+                name: 'India', type: 'line', width: 4, fill: '#FBAF4F'
+            }],
+            //.......
+        }); 
 
 
 {% endhighlight %}
@@ -99,20 +92,18 @@ You can configure the appearance of the lines and the points with options **fill
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart( 
-    {
+        $("#chartcontainer").ejChart({
 
-                          //   .......
-        series: [{
-          points: [{ x: 2006, y:430 }, { x: 2007, y: 416 },  { x: 2008, y: 404 },
-                   { x: 2009, y: 390 }, { x: 2010, y: 376 },  { x: 2011, y: 362 },
-                   { x: 2012, y: 351 }],
-                   name: 'USA', type: "stepline", fill: '#F07542', width: 3
-                }],
-                 // .......
-             });
+            //   .......
+            series: [{
+                points: [{ x: 2006, y: 430 }, { x: 2007, y: 416 }, { x: 2008, y: 404 },
+                         { x: 2009, y: 390 }, { x: 2010, y: 376 }, { x: 2011, y: 362 },
+                         { x: 2012, y: 351 }],
+                name: 'USA', type: "stepline", fill: '#F07542', width: 3
+            }],
+            // .......
+        });
 
 
 {% endhighlight %}
@@ -125,40 +116,29 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart( 
-  {
-
-             //   .......
-
-      series: [
-
-               {
-                   points: [{ x: 1900, y: 2.6 }, { x: 1920, y: 2.8 },
-                            { x: 1940, y: 2.6 }, { x: 1960, y: 3 },
-                            { x: 1980, y: 3.6 }, { x: 2000, y: 3 }
-                   ],
-
-                   name: 'Product B', type: 'Area',
-                   border: { color: 'black', width:1 }, fill: '#C4C24A'
-
-               },
-               {
-                   points: [{ x: 1900, y: 2.8 }, { x: 1920, y: 2.5 },
-                            { x: 1940, y: 2.8 }, { x: 1960, y: 3.2 },
-                            { x: 1980, y: 2.9 }, { x: 2000, y: 2 }
-                   ],
-
-                   name: 'Product C', type: 'Area',
-                   border: { color: 'black', width:1 }, fill: '#6A4B82',
-
-               }
-      ],         
-
+        $("#chartcontainer").ejChart({
+            //   .......
+            series: [{
+                points: [{ x: 1900, y: 2.6 }, { x: 1920, y: 2.8 },
+                         { x: 1940, y: 2.6 }, { x: 1960, y: 3 },
+                         { x: 1980, y: 3.6 }, { x: 2000, y: 3 }
+                ],
+                name: 'Product B', type: 'Area',
+                border: { color: 'black', width: 1 }, fill: '#C4C24A'
+            },
+            {
+                points: [{ x: 1900, y: 2.8 }, { x: 1920, y: 2.5 },
+                         { x: 1940, y: 2.8 }, { x: 1960, y: 3.2 },
+                         { x: 1980, y: 2.9 }, { x: 2000, y: 2 }
+                ],
+                name: 'Product C', type: 'Area',
+                border: { color: 'black', width: 1 }, fill: '#6A4B82',
+            }
+            ],
             //.......
 
-             });
+        });
 
 
 {% endhighlight %}
@@ -173,35 +153,34 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart( 
-  {      
-              series: [{
-                   points: [{ x: 1900, low: 2,   high: 4   },
-                            { x: 1920, low: 2.5, high: 4.5 },
-                            { x: 1940, low: 3,   high: 5   },
-                            { x: 1960, low: 3.3, high: 5.3 },
-                            { x: 1980, low: 3,   high: 5   },
-                            { x: 2000, low: 2.5, high: 4.5 },
-                            { x: 2020, low: 2,   high: 4   }
-                   ],
-                   name: 'Product B'
-               },
-               {
-                   points: [{ x: 1900, low: 0, high: 2 },
-                            { x: 1920, low: 0.5, high: 2.5 },
-                            { x: 1940, low: 1, high: 3},
-                            { x: 1960, low: 1.3, high: 3.3 },
-                            { x: 1980, low: 1, high: 3 },
-                            { x: 2000, low: 0.5, high: 2.5 },
-                            { x: 2020, low: 0, high: 2 }
-                   ],
 
-                   name: 'Product C',
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [{ x: 1900, low: 2, high: 4 },
+                         { x: 1920, low: 2.5, high: 4.5 },
+                         { x: 1940, low: 3, high: 5 },
+                         { x: 1960, low: 3.3, high: 5.3 },
+                         { x: 1980, low: 3, high: 5 },
+                         { x: 2000, low: 2.5, high: 4.5 },
+                         { x: 2020, low: 2, high: 4 }
+                ],
+                name: 'Product B'
+            },
+            {
+                points: [{ x: 1900, low: 0, high: 2 },
+                         { x: 1920, low: 0.5, high: 2.5 },
+                         { x: 1940, low: 1, high: 3 },
+                         { x: 1960, low: 1.3, high: 3.3 },
+                         { x: 1980, low: 1, high: 3 },
+                         { x: 2000, low: 0.5, high: 2.5 },
+                         { x: 2020, low: 0, high: 2 }
+                ],
 
-               }
-         ],           
-});
+                name: 'Product C',
+
+            }
+            ],
+        });
 
 
 {% endhighlight %}
@@ -214,28 +193,23 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-******[JS]**
 
-  $("#chartcontainer").ejChart( 
-            {
-                    //.......
+        $("#chartcontainer").ejChart({
+            //.......
+            series: [{
+                points: [{ x: 2000, y: 416 }, { x: 2001, y: 490 },
+                         { x: 2002, y: 470 }, { x: 2003, y: 500 },
+                         { x: 2004, y: 449 }, { x: 2005, y: 470 },
+                         { x: 2006, y: 437 }, { x: 2007, y: 458 },
+                         { x: 2008, y: 500 }, { x: 2009, y: 473 },
+                         { x: 2010, y: 520 }, { x: 2011, y: 509 }],
+                name: 'Brazil', border: { color: 'black', width: 2 },
+                fill: '#69D2E7', type: 'steparea'
+            }
+            ],
+            //......
 
-                series: [
-                         {
-                             points: [{ x: 2000, y: 416 }, { x: 2001, y: 490 }, 
-                                      { x: 2002, y: 470 }, { x: 2003, y: 500 }, 
-                                      { x: 2004, y: 449 }, { x: 2005, y: 470 },
-                                      { x: 2006, y: 437 }, { x: 2007, y: 458 }, 
-                                      { x: 2008, y: 500 }, { x: 2009, y: 473 }, 
-                                      { x: 2010, y: 520 }, { x: 2011, y: 509 }],
-                             name: 'Brazil', border: { color: 'black', width:2 },
-                             fill: '#69D2E7',type: 'steparea'
-
-                         }
-                ],
-                //......
-
-             });
+        });  
 
 
 {% endhighlight %}
@@ -248,34 +222,30 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
- **[JS]**
+ 
+        $("#chartcontainer").ejChart({
+            //    .......
 
-$("#chartcontainer").ejChart( 
-    {
-              //    .......
+            series: [{
+                points: [{ x: 2002, y: 2.2 }, { x: 2003, y: 3.4 },
+                         { x: 2004, y: 2.8 }, { x: 2005, y: 1.6 }, { x: 2006, y: 2.3 },
+                         { x: 2007, y: 2.5 }, { x: 2008, y: 2.9 }, { x: 2009, y: 3.8 },
+                         { x: 2010, y: 1.4 }, { x: 2011, y: 3.1 }],
+                name: 'US', border: { color: 'transparent' },
+                fill: '#C4C24A', type: "splinearea"
+            },
+            {
+                points: [{ x: 2002, y: 0.8 }, { x: 2003, y: 1.3 },
+                         { x: 2004, y: 1.1 }, { x: 2005, y: 1.6 }, { x: 2006, y: 2 },
+                         { x: 2007, y: 1.7 }, { x: 2008, y: 2.3 }, { x: 2009, y: 2.7 },
+                         { x: 2010, y: 1.1 }, { x: 2011, y: 2.3 }],
+                name: 'Germany', border: { color: 'transparent' },
+                fill: '#6A4B82', type: "splinearea"
+            }
+            ],
+            //......
 
-        series: [
-          {
-              points: [{ x: 2002, y: 2.2 }, { x: 2003, y: 3.4 }, 
-                       { x: 2004, y: 2.8 }, { x: 2005, y: 1.6 }, { x: 2006, y: 2.3 },  
-                       { x: 2007, y: 2.5 }, { x: 2008, y: 2.9 }, { x: 2009, y: 3.8 },  
-                       { x: 2010, y: 1.4 }, { x: 2011, y: 3.1 }],
-              name: 'US', border: { color: 'transparent' }, 
-              fill: '#C4C24A', type:"splinearea"
-          },
-
-          {
-              points: [{ x: 2002, y: 0.8 }, { x: 2003, y: 1.3 }, 
-                       { x: 2004, y: 1.1 }, { x: 2005, y: 1.6 }, { x: 2006, y: 2 },
-                       { x: 2007, y: 1.7 }, { x: 2008, y: 2.3 }, { x: 2009, y: 2.7},            
-                       { x: 2010, y: 1.1 }, { x: 2011, y: 2.3 }],
-              name: 'Germany', border: { color: 'transparent' },
-              fill: '#6A4B82', type: "splinearea"
-          }
-        ],             
-          //......
-
-             });
+        });
 
 
 {% endhighlight %}
@@ -288,34 +258,31 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart( 
-{
-               //.......
-    series: [
-              {
-                  points: [{ x: 2002, y: 6 }, { x: 2003, y: 7.5 },
-                     { x: 2004, y: 6 }, { x: 2005, y: 6.5 }, { x: 2006, y: 7.4 },
-                     { x: 2007, y: 7.9 }, { x: 2008, y: 7.5 }, { x: 2009, y: 8.5 },  
-                     { x: 2010, y: 4.8 }, { x: 2011, y: 9.3 }],
-                  name: 'US', border: { color: 'black', width:2 },
-                  fill: '#C4C24A', type: 'stackingarea'
-              },
-               {
-                   points: [{ x: 2002, y: 3.5 }, { x: 2003, y: 4.9 }, 
-                    { x: 2004, y: 3.7 }, { x: 2005, y: 7.5 }, { x: 2006, y: 4.8 },
-                    { x: 2007, y: 2.6 }, { x: 2008, y: 4.7 }, { x: 2009, y: 3.7 },  
-                    { x: 2010, y: 3.5 }, { x: 2011, y: 3.6 }],
-                   name: 'Indonesia', border: { color: 'black', width:2 },
-                   fill: '#69D2E7', type: 'stackingarea'
-               }
+        $("#chartcontainer").ejChart(
+        {
+            //.......
+            series: [{
+                points: [{ x: 2002, y: 6 }, { x: 2003, y: 7.5 },
+                   { x: 2004, y: 6 }, { x: 2005, y: 6.5 }, { x: 2006, y: 7.4 },
+                   { x: 2007, y: 7.9 }, { x: 2008, y: 7.5 }, { x: 2009, y: 8.5 },
+                   { x: 2010, y: 4.8 }, { x: 2011, y: 9.3 }],
+                name: 'US', border: { color: 'black', width: 2 },
+                fill: '#C4C24A', type: 'stackingarea'
+            },
+            {
+                points: [{ x: 2002, y: 3.5 }, { x: 2003, y: 4.9 },
+                 { x: 2004, y: 3.7 }, { x: 2005, y: 7.5 }, { x: 2006, y: 4.8 },
+                 { x: 2007, y: 2.6 }, { x: 2008, y: 4.7 }, { x: 2009, y: 3.7 },
+                 { x: 2010, y: 3.5 }, { x: 2011, y: 3.6 }],
+                name: 'Indonesia', border: { color: 'black', width: 2 },
+                fill: '#69D2E7', type: 'stackingarea'
+            }
 
-    ],    
-                    //......
+            ],
+            //......
 
-             });
-
+        });
 
 
 {% endhighlight %}
@@ -326,29 +293,28 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
-    $("#chartcontainer").ejChart({
-                series: [
-                           {
-                               points: [{ x: 2006, y: 34 }, { x: 2007, y: 20 },
-                                        { x: 2008, y: 40 }, { x: 2009, y: 51 },
-                                        { x: 2010, y: 26 }, { x: 2011, y: 37 },
-                                        { x: 2012, y: 54 }, { x: 2013, y: 44 },
-                                        { x: 2014, y: 48 }
-                               ],
-                               type: "stackingarea100"
-                           },
-                           {
-                               points: [{ x: 2006, y: 51 }, { x: 2007, y: 26 },
-                                        { x: 2008, y: 37 }, { x: 2009, y: 51 },
-                                        { x: 2010, y: 26 }, { x: 2011, y: 37 },
-                                        { x: 2012, y: 43 }, { x: 2013, y: 23 },
-                                        { x: 2014, y: 55 }
-                               ],
-                               type: "stackingarea100"
-                           }
-                     ],
-     });
+
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [{ x: 2006, y: 34 }, { x: 2007, y: 20 },
+                         { x: 2008, y: 40 }, { x: 2009, y: 51 },
+                         { x: 2010, y: 26 }, { x: 2011, y: 37 },
+                         { x: 2012, y: 54 }, { x: 2013, y: 44 },
+                         { x: 2014, y: 48 }
+                ],
+                type: "stackingarea100"
+            },
+            {
+                points: [{ x: 2006, y: 51 }, { x: 2007, y: 26 },
+                         { x: 2008, y: 37 }, { x: 2009, y: 51 },
+                         { x: 2010, y: 26 }, { x: 2011, y: 37 },
+                         { x: 2012, y: 43 }, { x: 2013, y: 23 },
+                         { x: 2014, y: 55 }
+                ],
+                type: "stackingarea100"
+            }
+            ],
+        });
 
 
 {% endhighlight %}
@@ -367,22 +333,20 @@ The following screenshot displays the **100% Stacking area chart.**
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-{
-    //   .......
-    series: [
-         {
-             points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
-                      { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
-                      { x: "France", y: 50 }, { x: "Germany", y: 40 },
-                      { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
-             ],
+        $("#chartcontainer").ejChart(
+        {
+            //   .......
+            series: [{
+                points: [{ x: "USA", y: 50 }, { x: "China", y: 40 },
+                         { x: "Japan", y: 70 }, { x: "Australia", y: 60 },
+                         { x: "France", y: 50 }, { x: "Germany", y: 40 },
+                         { x: "Italy", y: 40 }, { x: "Sweden", y: 30 }
+                ],
 
-             name: 'Gold', type: 'column',
-             border: { width: 2, color: 'black' }, fill: '#BF812A'
-         },
+                name: 'Gold', type: 'column',
+                border: { width: 2, color: 'black' }, fill: '#BF812A'
+            },
             {
                 points: [{ x: "USA", y: 70 }, { x: "China", y: 60 },
                          { x: "Japan", y: 60 }, { x: "Australia", y: 56 },
@@ -394,10 +358,10 @@ $("#chartcontainer").ejChart(
                 border: { width: 2, color: 'black' }, fill: '#0D97D4'
             },
 
-    ],
-    //    ......
+            ],
+            //    ......
 
-});
+        });
 
 
 {% endhighlight %}
@@ -410,33 +374,28 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
 
- $("#chartcontainer").ejChart( 
+        $("#chartcontainer").ejChart({
+            //          .......
+            series: [{
+                points: [{ x: 'Jan', low: 0.7, high: 6.1 },
+                          { x: 'Feb', low: 1.3, high: 6.3 },
+                          { x: 'Mar', low: 1.9, high: 8.5 },
+                          { x: 'Apr', low: 3.1, high: 10.8 },
+                          { x: 'May', low: 5.7, high: 14.4 }],
+                name: 'India', fill: '#E94649', border: { color: 'black', width: 1 }
+            },
             {
-                    //          .......
-            series: [
-                      {
-               points: [ { x: 'Jan', low: 0.7, high: 6.1 }, 
-                         { x: 'Feb', low: 1.3, high: 6.3 },   
-                         { x: 'Mar', low: 1.9, high: 8.5 },
-                         { x: 'Apr', low: 3.1, high: 10.8 },                    
-                         { x: 'May', low: 5.7, high: 14.4 }],
-              name: 'India', fill: '#E94649', border: { color: 'black', width: 1 }
-                        },
-                        {
-               points: [{ x: 'Jan', low: 1.7, high: 7.1 }, 
-                        { x: 'Feb', low: 1.9, high: 7.7 }, 
-                        { x: 'Mar', low: 1.2, high: 7.5 },
-                        { x: 'Apr', low: 2.5, high: 9.8 },  
-                        { x: 'May', low: 4.7, high: 11.4 }],
-              name: 'Germany', fill: '#F6B53F', border: { color: 'black', width: 1 }
-                        }],     
-              //  ......
+                points: [{ x: 'Jan', low: 1.7, high: 7.1 },
+                         { x: 'Feb', low: 1.9, high: 7.7 },
+                         { x: 'Mar', low: 1.2, high: 7.5 },
+                         { x: 'Apr', low: 2.5, high: 9.8 },
+                         { x: 'May', low: 4.7, high: 11.4 }],
+                name: 'Germany', fill: '#F6B53F', border: { color: 'black', width: 1 }
+            }],
+            //  ......
 
-             });
-
-
+        });
 
 
 {% endhighlight %}
@@ -449,44 +408,39 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart( 
-       {
-                        // .......
-           series: [
-                     {
-                         points: [{ x: 'Jan', y: 900 }, { x: 'Feb', y: 820 },
-                                  { x: 'Mar', y: 880 }, { x: 'Apr', y: 725 }, 
-                                  { x: 'May', y: 765 }
-                         ],
-                         name: 'Google', fill: '#00558B', type: 'stackingcolumn',               
-                         border: { color: 'black', width: 1 }
-                     },
+        $("#chartcontainer").ejChart({
+            // .......
+            series: [{
+                points: [{ x: 'Jan', y: 900 }, { x: 'Feb', y: 820 },
+                         { x: 'Mar', y: 880 }, { x: 'Apr', y: 725 },
+                         { x: 'May', y: 765 }
+                ],
+                name: 'Google', fill: '#00558B', type: 'stackingcolumn',
+                border: { color: 'black', width: 1 }
+            },
 
-                      {
-                          points: [{ x: 'Jan', y: 190 }, { x: 'Feb', y: 226 },
-                                   { x: 'Mar', y: 194 }, { x: 'Apr', y: 250 }, 
-                                   { x: 'May', y: 222 },
-                          ],
-                          name: 'Bing', fill: '#75A010', type: 'stackingcolumn', 
-                          border: { color: 'black', width: 1 }
-                      },
+            {
+                points: [{ x: 'Jan', y: 190 }, { x: 'Feb', y: 226 },
+                         { x: 'Mar', y: 194 }, { x: 'Apr', y: 250 },
+                         { x: 'May', y: 222 },
+                ],
+                name: 'Bing', fill: '#75A010', type: 'stackingcolumn',
+                border: { color: 'black', width: 1 }
+            },
 
-                       {
-                           points: [{ x: 'Jan', y: 250 }, { x: 'Feb', y: 145 },
-                                    { x: 'Mar', y: 190 }, { x: 'Apr', y: 220 },
-                                    { x: 'May', y: 225 },
-                           ],
-                           name: 'Yahoo', fill: '#D98F31', type: 'stackingcolumn', 
-                           border: { color: 'black', width: 1 }
-                       }
+            {
+                points: [{ x: 'Jan', y: 250 }, { x: 'Feb', y: 145 },
+                         { x: 'Mar', y: 190 }, { x: 'Apr', y: 220 },
+                         { x: 'May', y: 225 },
+                ],
+                name: 'Yahoo', fill: '#D98F31', type: 'stackingcolumn',
+                border: { color: 'black', width: 1 }
+            }
+            ],
+            //  ......
 
-
-           ],        
- //  ......
-
-             }); 
+        });
 
 
 {% endhighlight %}
@@ -497,27 +451,26 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
-    $("#chartcontainer").ejChart({
-                series: [
-                           {
-                               points :[ { x:2006,y:900},{ x:2007,y:544},  
-                                         { x:2008,y:880},{ x:2009,y:725},
-                                         { x:2010,y:765},{ x:2011,y:679},
-                                         { x:2012,y:770}
-                                      ],                     
-                               type: "stackingcolumn100"
-                           },
-                           {
-                              points: [{ x:2006,y:190},{ x:2007,y:226},  
-                                       { x:2008,y:194},{ x:2009,y:545},
-                                       { x:2010,y:222},{ x:2011,y:181},
-                                       { x:2012,y:128}
-                                     ],
-                               type: "stackingcolumn100"
-                           }
-                     ],
-     });
+
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [{ x: 2006, y: 900 }, { x: 2007, y: 544 },
+                          { x: 2008, y: 880 }, { x: 2009, y: 725 },
+                          { x: 2010, y: 765 }, { x: 2011, y: 679 },
+                          { x: 2012, y: 770 }
+                ],
+                type: "stackingcolumn100"
+            },
+            {
+                points: [{ x: 2006, y: 190 }, { x: 2007, y: 226 },
+                         { x: 2008, y: 194 }, { x: 2009, y: 545 },
+                         { x: 2010, y: 222 }, { x: 2011, y: 181 },
+                         { x: 2012, y: 128 }
+                ],
+                type: "stackingcolumn100"
+            }
+            ],
+        });
 
 
 {% endhighlight %}
@@ -536,34 +489,32 @@ The following screenshot displays the **100% Stacking column chat**.
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart( 
-{
-     //  .......
-    series: [{
-        points: [{ x: 2006, y: 7.8 }, { x: 2007, y: 7.2 }, 
-                 { x: 2008, y: 6.8 }, { x: 2009, y: 10.7 },
-                 { x: 2010, y: 10.8 }, { x: 2011, y: 9.8 }
-        ],
+        $("#chartcontainer").ejChart({
+            //  .......
+            series: [{
+                points: [{ x: 2006, y: 7.8 }, { x: 2007, y: 7.2 },
+                         { x: 2008, y: 6.8 }, { x: 2009, y: 10.7 },
+                         { x: 2010, y: 10.8 }, { x: 2011, y: 9.8 }
+                ],
 
-        name: 'India', fill: '#C8D7A8', type: 'bar', 
-        border: { color: 'black', width: 1 }
-    },
-              {
-                  points: [{ x: 2006, y: 4.8 }, { x: 2007, y: 4.6 },
-                           { x: 2008, y: 7.2 }, { x: 2009, y: 9.3 },
-                           { x: 2010, y: 9.7 }, { x: 2011, y: 9 }
-                  ],
+                name: 'India', fill: '#C8D7A8', type: 'bar',
+                border: { color: 'black', width: 1 }
+            },
+            {
+                points: [{ x: 2006, y: 4.8 }, { x: 2007, y: 4.6 },
+                         { x: 2008, y: 7.2 }, { x: 2009, y: 9.3 },
+                         { x: 2010, y: 9.7 }, { x: 2011, y: 9 }
+                ],
 
-                  name: 'US', fill: '#004068', type: 'bar', 
-                  border: { color: 'black', width: 1 }
-              }
+                name: 'US', fill: '#004068', type: 'bar',
+                border: { color: 'black', width: 1 }
+            }
 
-    ],   
-      //  ......
+            ],
+            //  ......
 
-             }); 
+        }); 
 
 
 {% endhighlight %}
@@ -576,38 +527,34 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
 
- $("#chartcontainer").ejChart( 
-  {
-                 //   .......
-      series: [{
-          points: [{ x: "Jan", y: 6 }, { x: "Feb", y: 8 }, 
-                   { x: "Mar", y: 12 }, { x: "Apr", y: 15.5 }, 
-                   { x: "May", y: 20 }, { x: "Jun", y: 24 }, 
-                   { x: "Jul", y: 28 }, 
-          ],
+        $("#chartcontainer").ejChart({
+            //   .......
+            series: [{
+                points: [{ x: "Jan", y: 6 }, { x: "Feb", y: 8 },
+                         { x: "Mar", y: 12 }, { x: "Apr", y: 15.5 },
+                         { x: "May", y: 20 }, { x: "Jun", y: 24 },
+                         { x: "Jul", y: 28 },
+                ],
 
-          name: 'Apple', type: 'stackingbar',
-          fill: "#1ABC9C", border: { color: 'black', width: 1 }
-      },
+                name: 'Apple', type: 'stackingbar',
+                fill: "#1ABC9C", border: { color: 'black', width: 1 }
+            },
 
-                 {
-                     points: [{ x: "Jan", y: -1 }, { x: "Feb", y: -1.5 }, 
-                              { x: "Mar", y: -2 }, { x: "Apr", y: -2.5 },
-                            { x: "May", y: -3 }, { x: "Jun", y: -3.5 }, 
-                            { x: "Jul", y: -4 },  
-                     ],
+            {
+                points: [{ x: "Jan", y: -1 }, { x: "Feb", y: -1.5 },
+                         { x: "Mar", y: -2 }, { x: "Apr", y: -2.5 },
+                       { x: "May", y: -3 }, { x: "Jun", y: -3.5 },
+                       { x: "Jul", y: -4 },
+                ],
 
-                     name: 'Wastage', type: 'stackingbar', fill: "#34495E",          
-                     opacity: 0.7, border: { color: 'black', width: 1 }
-                 }
+                name: 'Wastage', type: 'stackingbar', fill: "#34495E",
+                opacity: 0.7, border: { color: 'black', width: 1 }
+            }
+            ],
+            // ......
 
-
-      ],            
-                      // ......
-
-             });
+        });          
 
 
 {% endhighlight %}
@@ -618,27 +565,26 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
-    $("#chartcontainer").ejChart({
-                series: [
-                           {
-                               points :[{ x:2007,y:453},{ x:2008,y:354},  
-                                        { x:2009,y:282},{ x:2010,y:321},
-                                        { x:2011,y:333},{ x:2012,y:351},
-                                        { x:2013,y:403},{ x:2014,y:421}
-                                      ],                     
-                               type: "stackingbar100"
-                           },
-                           {
-                              points: [{ x:2007,y:876},{ x:2008,y:564},  
-                                       { x:2009,y:242},{ x:2010,y:121},
-                                       { x:2011,y:343},{ x:2012,y:451},
-                                       { x:2013,y:203},{ x:2014,y:431},
-                                     ],
-                               type: "stackingbar100"
-                           }
-                     ],
-     });
+
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [{ x: 2007, y: 453 }, { x: 2008, y: 354 },
+                         { x: 2009, y: 282 }, { x: 2010, y: 321 },
+                         { x: 2011, y: 333 }, { x: 2012, y: 351 },
+                         { x: 2013, y: 403 }, { x: 2014, y: 421 }
+                ],
+                type: "stackingbar100"
+            },
+            {
+                points: [{ x: 2007, y: 876 }, { x: 2008, y: 564 },
+                         { x: 2009, y: 242 }, { x: 2010, y: 121 },
+                         { x: 2011, y: 343 }, { x: 2012, y: 451 },
+                         { x: 2013, y: 203 }, { x: 2014, y: 431 },
+                ],
+                type: "stackingbar100"
+            }
+            ],
+        });   
 
 
 {% endhighlight %}
@@ -657,34 +603,32 @@ The following screenshot displays the **100% Stackingbar chart.**
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart( 
+        $("#chartcontainer").ejChart({
+            //  .......
+            series: [{
+                points: [{ x: 'Jan', y: -1 }, { x: 'Feb', y: -1 },
+                         { x: 'Mar', y: 2 }, { x: 'Apr', y: 8 },
+                         { x: 'May', y: 6 }, { x: 'Jun', y: 18 },
+                         { x: 'Jul', y: 11 }
+
+                ],
+                name: 'London', type: 'spline', fill: '#E49519', width: 3
+            },
             {
-               //  .......
-                series: [{
-                    points: [{ x: 'Jan', y: -1 }, { x: 'Feb', y: -1 },
-                             { x: 'Mar', y: 2 }, { x: 'Apr', y: 8 }, 
-                             { x: 'May', y: 6 }, { x: 'Jun', y: 18 },
-                             { x: 'Jul', y: 11 }
+                points: [{ x: 'Jan', y: 3 }, { x: 'Feb', y: 3.5 },
+                         { x: 'Mar', y: 7 }, { x: 'Apr', y: 5.5 },
+                         { x: 'May', y: 5 }, { x: 'Jun', y: 13.5 },
+                         { x: 'Jul', y: 16 }
 
-                    ],
-                    name: 'London', type: 'spline', fill: '#E49519', width: 3
-                },
-                          {
-                              points: [{ x: 'Jan', y: 3 }, { x: 'Feb', y: 3.5 },
-                                       { x: 'Mar', y: 7 }, { x: 'Apr', y: 5.5 },
-                                       { x: 'May', y: 5 }, { x: 'Jun', y: 13.5 },
-                                       { x: 'Jul', y: 16 }
+                ],
+                name: 'Germany', type: 'spline', fill: '#986827', width: 3
+            },
 
-                              ],
-                         name: 'Germany', type: 'spline', fill: '#986827', width: 3
-                          },
+            ],
+            // ......
 
-                ],        
-                // ......
-
-             });
+        });
 
 
 {% endhighlight %}
@@ -697,34 +641,41 @@ A **Pie Chart** renders y values as slices in a pie. The slices are rendered in 
 
 {% highlight js %}
 
-**[JS]**
 
-    $("#chartcontainer").ejChart( 
-{
-               //  .......
-    series: [{
-        points: [{ x: 'Labour', y: 28, text: 'Labour 28%', fill: '#00558B' },
-                 { x: 'Legal', y: 10, text: 'Legal 10%', fill: '#00558B' },
-                 { x: 'Production', y: 20, text: 'Production 20%', 
-                     fill:'#68E1E6' },
-                 { x: 'License', y: 15, text:'License 15%', fill:'#57760B' },
-                 { x: 'Facilities', y: 23, text: 'Facilities 23%',
-                     fill: '#00558B' },
-                 { x: 'Taxes', y: 17, text: 'Taxes 17%', fill: '#8A4B05' },
-                 { x: 'Insurance', y: 12, text: 'Insurance 12%',
-                     fill: '#8A4B05' }
-        ],
-        marker: { 
-            dataLabel: { visible: true, connectorLine:{height:30}, 
-                font: { size: '20px' } }
-        },
-        name: 'Newyork', type: 'pie', explode: true, labelPosition: 'outside',              
-        pieCoefficient: 0.7, explodeIndex: 2, border: {width:1, color:'black'}
-    }
-    ],                 
-         // ......
+        $("#chartcontainer").ejChart(
+        {
+            //  .......
+            series: [{
+                points: [{ x: 'Labour', y: 28, text: 'Labour 28%', fill: '#00558B' },
+                         { x: 'Legal', y: 10, text: 'Legal 10%', fill: '#00558B' },
+                         {
+                             x: 'Production', y: 20, text: 'Production 20%',
+                             fill: '#68E1E6'
+                         },
+                         { x: 'License', y: 15, text: 'License 15%', fill: '#57760B' },
+                         {
+                             x: 'Facilities', y: 23, text: 'Facilities 23%',
+                             fill: '#00558B'
+                         },
+                         { x: 'Taxes', y: 17, text: 'Taxes 17%', fill: '#8A4B05' },
+                         {
+                             x: 'Insurance', y: 12, text: 'Insurance 12%',
+                             fill: '#8A4B05'
+                         }
+                ],
+                marker: {
+                    dataLabel: {
+                        visible: true, connectorLine: { height: 30 },
+                        font: { size: '20px' }
+                    }
+                },
+                name: 'Newyork', type: 'pie', explode: true, labelPosition: 'outside',
+                pieCoefficient: 0.7, explodeIndex: 2, border: { width: 1, color: 'black' }
+            }
+            ],
+            // ......
 
-             });
+        });
 
 
 {% endhighlight %}
@@ -737,35 +688,41 @@ A **Pie Chart** renders y values as slices in a pie. The slices are rendered in 
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart( 
-       {
+        $("#chartcontainer").ejChart({
             //.......
-           series: [{
-               points: [{ x: 'Labour', y: 28, text: 'Labour 28%', fill: '#00558B' },
-                        { x: 'Legal', y: 10, text: 'Legal 10%', fill: '#00558B' },
-                        { x: 'Production', y: 20, text: 'Production 20%', 
-                            fill: '#57760B' },
-                        { x: 'License', y: 15, text:'License 15%', fill:'#57760B' },
-                        { x: 'Facilities', y: 23, text: 'Facilities 23%',
-                            fill: '#00558B' },
-                        { x: 'Taxes', y: 17, text: 'Taxes 17%', fill: '#8A4B05' },
-                        { x: 'Insurance', y: 12, text: 'Insurance 12%',
-                            fill: '#8A4B05' }
-               ],
-               marker: { 
-                   dataLabel: { visible: true, connectorLine:{height:30}, 
-                       font: { size: '20px' } }
-               },
-               name: 'Newyork', type: 'doughnut', explode: true,
-               labelPosition: 'outside', doughnutCoefficient: 0.4, 
-               border: {width:1, color:'black'}
-           }
-           ],                 
-       //   ......
+            series: [{
+                points: [{ x: 'Labour', y: 28, text: 'Labour 28%', fill: '#00558B' },
+                         { x: 'Legal', y: 10, text: 'Legal 10%', fill: '#00558B' },
+                         {
+                             x: 'Production', y: 20, text: 'Production 20%',
+                             fill: '#57760B'
+                         },
+                         { x: 'License', y: 15, text: 'License 15%', fill: '#57760B' },
+                         {
+                             x: 'Facilities', y: 23, text: 'Facilities 23%',
+                             fill: '#00558B'
+                         },
+                         { x: 'Taxes', y: 17, text: 'Taxes 17%', fill: '#8A4B05' },
+                         {
+                             x: 'Insurance', y: 12, text: 'Insurance 12%',
+                             fill: '#8A4B05'
+                         }
+                ],
+                marker: {
+                    dataLabel: {
+                        visible: true, connectorLine: { height: 30 },
+                        font: { size: '20px' }
+                    }
+                },
+                name: 'Newyork', type: 'doughnut', explode: true,
+                labelPosition: 'outside', doughnutCoefficient: 0.4,
+                border: { width: 1, color: 'black' }
+            }
+            ],
+            //   ......
 
-             });
+        });
 
 
 {% endhighlight %}
@@ -778,28 +735,27 @@ The semi pie and doughnut chart is a semicircular chart. Data are represented in
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-     {   
-                   // ...     
-      series: [{
-               points: [{ x: 'Australia', y: 53.3, text: 'Australia 53.3'},
-                        { x: 'China', y: 55.7, text: 'China 55.7' },
-                        { x: 'India', y: 60.5, text: 'India 60.5' },
-                        { x: 'Japan', y: 12.5, text:'Japan 12.5'},
-                        { x: 'South Africa', y: 79.4, text: 'South Africa 79.4'},
-                        { x: 'United Kingdom', y: 70.9, text: 'United Kingdom 70.9'},
-                        { x: 'United States', y: 45.0, text: 'United States 45.0'}
-                       ],
-                       },
-               border:{width:1,color: 'white'}
-               name: 'Agricultural Land', type: 'doughnut', labelPosition: 'outside',
-               startAngle:-90,endAngle:90
-               },
-              ],                 
-                   // ...             
-     });
+
+        $("#chartcontainer").ejChart({
+            // ...     
+            series: [{
+                points: [{ x: 'Australia', y: 53.3, text: 'Australia 53.3' },
+                         { x: 'China', y: 55.7, text: 'China 55.7' },
+                         { x: 'India', y: 60.5, text: 'India 60.5' },
+                         { x: 'Japan', y: 12.5, text: 'Japan 12.5' },
+                         { x: 'South Africa', y: 79.4, text: 'South Africa 79.4' },
+                         { x: 'United Kingdom', y: 70.9, text: 'United Kingdom 70.9' },
+                         { x: 'United States', y: 45.0, text: 'United States 45.0' }
+                ],
+                border: { width: 1, color: 'white' },
+                name: 'Agricultural Land', type: 'doughnut', labelPosition: 'outside',
+                startAngle: -90, endAngle: 90
+            },
+            ],
+            // ...             
+        });
+
 
 
 {% endhighlight %}
@@ -818,34 +774,32 @@ The **Pyramid Chart** type displays the data that when totalled renders 100%. Th
 
 {% highlight js %}
 
-**[JS]**
 
- $("#chartcontainer").ejChart( 
-    {
-              //.......
-        series: [{
-            points: [{ x: 'India', y: 24, text: 'India 24%' },
-                    { x: 'Japan', y: 25, text: 'Japan 25%' },
-                    { x: 'Australia', y: 20, text: 'Australia 20%' },
-                    { x: 'USA', y: 35, text: ' USA 35%' },
-                    { x: 'China', y: 23, text: ' China 23%' },
-                    { x: 'Germany', y: 27, text: ' Germany 27%' },
-                    { x: 'France', y: 22, text: ' France 22%' }
-            ],
-            marker: {
-                dataLabel: {
-                    visible: true, shape: 'rectangle',
-                    font: { color: 'white', size: '15px’ }
-                    }
-                },
-                name: 'Newyork', type: 'pyramid', labelPosition: 'outside',
+        $("#chartcontainer").ejChart( {
+            //.......
+            series: [{
+                points: [{ x: 'India', y: 24, text: 'India 24%' },
+                        { x: 'Japan', y: 25, text: 'Japan 25%' },
+                        { x: 'Australia', y: 20, text: 'Australia 20%' },
+                        { x: 'USA', y: 35, text: ' USA 35%' },
+                        { x: 'China', y: 23, text: ' China 23%' },
+                        { x: 'Germany', y: 27, text: ' Germany 27%' },
+                        { x: 'France', y: 22, text: ' France 22%' }
+                ],
+                marker: {
+                    dataLabel: {
+                        visible: true, shape: 'rectangle',
+                        font: { color: 'white', size: '15px’ }
+                        }
+                    },
+                    name: 'Newyork', type: 'pyramid', labelPosition: 'outside',
 
+                }
             }
-        }
-        ],
-       //......
+            ],
+            //......
 
-             }); 
+        }); 
 
 
 {% endhighlight %}
@@ -858,33 +812,30 @@ The **Funnel** chart is a single series chart representing the data as portions 
 
 {% highlight js %}
 
-**[JS]**
 
- $("#chartcontainer").ejChart( 
-    {
-              //.......
-        series: [{
-            points: [{ x: 'Renewed', y: 18.20, text: 'Renewed : 18.20%' },
-                    { x: 'Subscribe', y: 27.3, text: 'Subscribed : 27.3%' },
-                    { x: 'Support', y: 55.9, text: 'Contact to Support : 55.9%' },
-                    { x: 'Downloaded', y: 76.8, text: ' Downloaded a Trail : 76.8%' },
-                    { x: 'Visited', y: 100, text: ' Visited Web Site : 100%' },
-            ],
-            marker: {
-                dataLabel: {
-                    visible: true, shape: 'rectangle',
-                    font: { color: 'white', size: '15px’ }
+        $("#chartcontainer").ejChart({
+            //.......
+            series: [{
+                points: [{ x: 'Renewed', y: 18.20, text: 'Renewed : 18.20%' },
+                        { x: 'Subscribe', y: 27.3, text: 'Subscribed : 27.3%' },
+                        { x: 'Support', y: 55.9, text: 'Contact to Support : 55.9%' },
+                        { x: 'Downloaded', y: 76.8, text: ' Downloaded a Trail : 76.8%' },
+                        { x: 'Visited', y: 100, text: ' Visited Web Site : 100%' },
+                ],	
+                marker: {
+                    dataLabel: {
+                        visible: true, shape: 'rectangle',
+                        font: { color: 'white', size: '15px' }
                     }
                 },
-                name: 'Website', type: 'funnel',funnelWidth: '32.7%' funnelHeight: '11.2%' labelPosition: 'outside',
+                name: 'Website', type: 'funnel', funnelWidth: '32.7%',
+                funnelHeight: '11.2%', labelPosition: 'outside',
 
             }
-        }
-        ],
-       //......
+            ],
+            //......
 
-             }); 	
-
+        });
 
 
 {% endhighlight %}
@@ -897,36 +848,33 @@ The **Funnel** chart is a single series chart representing the data as portions 
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").).ejChart( 
-         {
-     //.......      
-      series: [
-                    {
-                    points: [
-                            { x: 92.2, y: 7.8, size: 1.347, fill: '#E94649' },
-                            { x: 74, y: 6.5, size: 1.241, fill: '#F6B53F' },
-                            { x: 90.4, y: 6.0, size: 0.238, fill: '#6FAAB0'},
-                            { x: 99.4, y: 2.2, size: 0.312, fill: '#C4C24A' }, 
-                            { x: 88.6, y: 1.3, size: 0.197, fill: '#FB954F' },
-                            { x: 54.9, y: 3.7, size: 0.177, fill: '#D9CEB2' },
-                            { x: 99, y: 0.7, size: 0.0818, fill: '#FF8D8D' },
-                            { x: 72, y: 2.0, size: 0.0826, fill: '#69D2E7' }, 
-                            { x: 99.6, y: 3.4, size: 0.143, fill: '#E27F2D' },
-                            { x: 99, y: 0.2, size: 0.128, fill: '#6A4B82' },
-                            { x: 86.1, y: 4.0, size: 0.115, fill: '#F6B53F' }, 
-                            { x: 92.6, y: 6.6, size: 0.096, fill: '#C4C24A' },
-                            { x: 61.3, y: 14.5, size: 0.162, fill: '#FF8D8D' },
-                            { x: 56.8, y: 6.1, size: 0.151, fill: '#69D2E7' }
-                          ],
-                          enableAnimation: true,           
-                          name: 'pound',
-                          type: 'bubble',
-                         },
-                  ],
-          //.......
-             });
+        $("#chartcontainer").ejChart({
+            //.......      
+            series: [{
+                points: [
+                        { x: 92.2, y: 7.8, size: 1.347, fill: '#E94649' },
+                        { x: 74, y: 6.5, size: 1.241, fill: '#F6B53F' },
+                        { x: 90.4, y: 6.0, size: 0.238, fill: '#6FAAB0' },
+                        { x: 99.4, y: 2.2, size: 0.312, fill: '#C4C24A' },
+                        { x: 88.6, y: 1.3, size: 0.197, fill: '#FB954F' },
+                        { x: 54.9, y: 3.7, size: 0.177, fill: '#D9CEB2' },
+                        { x: 99, y: 0.7, size: 0.0818, fill: '#FF8D8D' },
+                        { x: 72, y: 2.0, size: 0.0826, fill: '#69D2E7' },
+                        { x: 99.6, y: 3.4, size: 0.143, fill: '#E27F2D' },
+                        { x: 99, y: 0.2, size: 0.128, fill: '#6A4B82' },
+                        { x: 86.1, y: 4.0, size: 0.115, fill: '#F6B53F' },
+                        { x: 92.6, y: 6.6, size: 0.096, fill: '#C4C24A' },
+                        { x: 61.3, y: 14.5, size: 0.162, fill: '#FF8D8D' },
+                        { x: 56.8, y: 6.1, size: 0.151, fill: '#69D2E7' }
+                ],
+                enableAnimation: true,
+                name: 'pound',
+                type: 'bubble',
+            },
+            ],
+            //.......
+        });
 
 
 {% endhighlight %}
@@ -939,23 +887,24 @@ The following code example is used to create a simple **scatter series**.
 
 {% highlight js %}
 
-**[JS]**
 
-     $("#chartcontainer").ejChart(
-           {
-             primaryXAxis: {
-                 rangePadding:"additional"
-             },
-               series: [{
-               points: [{ x:10, y: 126.45 },
-                        { x: 11, y: 150.99  },
-                        { x: 12, y: 40.19  },
-                        { x: 13, y: 160.23  },
-                        { x: 15, y: 200.89  }],
-               name: 'Scatter', type: 'scatter', marker: {**size**: { height: 10, width: 10 }, **border**: { width: 2, color: "black" } }
-               }],
-           });
-
+        $("#chartcontainer").ejChart({
+            primaryXAxis: {
+                rangePadding: "additional"
+            },
+            series: [{
+                points: [{ x: 10, y: 126.45 },
+                         { x: 11, y: 150.99 },
+                         { x: 12, y: 40.19 },
+                         { x: 13, y: 160.23 },
+                         { x: 15, y: 200.89 }],
+                name: 'Scatter', type: 'scatter',
+                marker: {
+                    size: { height: 10, width: 10 },
+                    border: { width: 2, color: "black" }
+                }
+            }],
+        });
 
 
 {% endhighlight %}
@@ -1026,20 +975,18 @@ To create a simple **HiLoOpenCloseSeries** use the following code example.
 
 {% highlight js %}
 
-**[JS]**
 
-   $("#chartcontainer").ejChart(
-       {
-
-series: [{
-           points: [{ x: new Date(1950, 1, 12), **high**: 125.45, **low**: 70.23, **open**: 125.22, **close**: 90.44 }, 
-{ x: new Date(1953, 1, 12), high: 150.99, low: 60.23, open: 120.55, close: 70.90 },
-{ x: new Date(1956, 1, 12), high: 200.19, low: 130.37, open: 160.13, close: 190.78 }, { x: new Date(1959, 1, 12), high: 160.23, low: 90.16, open: 140.38, close: 110.24 }, 
-{ x: new Date(1962, 1, 12), high: 200.89, low: 100.23, open: 180.90, close: 120.29 }],
-           name: 'Series', **type**: 'hiloopenclose', **drawMode**: 'both' , **border**:{**width**:2}                   
-       }],
-     });
-
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [
+                    { x: new Date(1950, 1, 12), high: 125.45, low: 70.23, open: 125.22, close: 90.44 },
+                    { x: new Date(1953, 1, 12), high: 150.99, low: 60.23, open: 120.55, close: 70.90 },
+                    { x: new Date(1956, 1, 12), high: 200.19, low: 130.37, open: 160.13, close: 190.78 },
+                    { x: new Date(1959, 1, 12), high: 160.23, low: 90.16, open: 140.38, close: 110.24 },
+                    { x: new Date(1962, 1, 12), high: 200.89, low: 100.23, open: 180.90, close: 120.29 }],
+                name: 'Series', type: 'hiloopenclose', drawMode: 'both', border: { width: 2 }
+            }],
+        });
 
 
 {% endhighlight %}
@@ -1094,21 +1041,19 @@ To create a simple **Candle series** use the following code example.
 
 {% highlight js %}
 
-**[JS]**
 
-  $("#chartcontainer").ejChart(
-       {
+        $("#chartcontainer").ejChart({
 
-series: [{
-           points: [{ x: new Date(1950, 1, 12), **high**: 125.45, **low**: 70.23, **open**: 125.22, **close**: 90.44 }, 
-{ x: new Date(1953, 1, 12), high: 150.99, low: 60.23, open: 120.55, close: 70.90 },
-{ x: new Date(1956, 1, 12), high: 200.19, low: 130.37, open: 160.13, close: 190.78 }, { x: new Date(1959, 1, 12), high: 160.23, low: 90.16, open: 140.38, close: 110.24 }, 
-{ x: new Date(1962, 1, 12), high: 200.89, low: 100.23, open: 180.90, close: 120.29 }],
-           name: 'Series', **type**: 'candle',  **border**:{**width**:2}                   
-       }],
-     });
-
-
+            series: [{
+                points: [
+                    { x: new Date(1950, 1, 12), high: 125.45, low: 70.23, open: 125.22, close: 90.44 },
+                    { x: new Date(1953, 1, 12), high: 150.99, low: 60.23, open: 120.55, close: 70.90 },
+                    { x: new Date(1956, 1, 12), high: 200.19, low: 130.37, open: 160.13, close: 190.78 },
+                    { x: new Date(1959, 1, 12), high: 160.23, low: 90.16, open: 140.38, close: 110.24 },
+                    { x: new Date(1962, 1, 12), high: 200.89, low: 100.23, open: 180.90, close: 120.29 }],
+                name: 'Series', type: 'candle', border: { width: 2 }
+            }],
+        });
 
 
 {% endhighlight %}
@@ -1147,20 +1092,17 @@ To create a simple **Hilo series** use the following code example.
 
 {% highlight js %}
 
-**[JS]**
 
-    $("#chartcontainer").ejChart(
-           {
-               series: [{
-               points: [{ x: new Date(1950, 1, 12), high: 126.45, low: 70.23},
-                        { x: new Date(1953, 1, 12), high: 150.99, low: 60.23},
-                        { x: new Date(1956, 1, 12), high: 200.19, low: 130.37 },
-                        { x: new Date(1959, 1, 12), high: 160.23, low: 90.16 },
-                        { x: new Date(1962, 1, 12), high: 200.89, low: 100.23 }],
-                       name: 'Series', type: 'hilo', border: { width: 2 }
-               }],
-           });
-
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [{ x: new Date(1950, 1, 12), high: 126.45, low: 70.23 },
+                         { x: new Date(1953, 1, 12), high: 150.99, low: 60.23 },
+                         { x: new Date(1956, 1, 12), high: 200.19, low: 130.37 },
+                         { x: new Date(1959, 1, 12), high: 160.23, low: 90.16 },
+                         { x: new Date(1962, 1, 12), high: 200.89, low: 100.23 }],
+                name: 'Series', type: 'hilo', border: { width: 2 }
+            }],
+        }); 
 
 
 {% endhighlight %}
@@ -1185,22 +1127,19 @@ To create a simple **Polar series** use the following code example.
 
 {% highlight js %}
 
-**[JS]**
 
-  $("#chartcontainer").ejChart(
-           {
-                   series: [{
-                               points: [
-                                        { x: '1990', y: 10 }, { x: '1991', y: 3 },
-                                        { x: '1992', y: 20 }, { x: '1993', y: 16 },
-                                        { x: '1994', y: 10 }, { x: '1995', y: 18 },
-                                        { x: '1996', y: 16 }, { x: '1997', y: 15 }
-                               ],
-                               name: 'India', enableAnimation: true, width: 3
-                           }
-                           ],
-           });
-
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [
+                         { x: '1990', y: 10 }, { x: '1991', y: 3 },
+                         { x: '1992', y: 20 }, { x: '1993', y: 16 },
+                         { x: '1994', y: 10 }, { x: '1995', y: 18 },
+                         { x: '1996', y: 16 }, { x: '1997', y: 15 }
+                ],
+                name: 'India', enableAnimation: true, width: 3
+            }
+            ],
+        }); 
 
 
 {% endhighlight %}
@@ -1225,24 +1164,21 @@ To create simple **RadarSeries** use the following code example.
 
 {% highlight js %}
 
-**[JS]**
 
-        $("#chartcontainer").ejChart(
-           {
-              series: [{
-                               points: [
-                                   { x: '1990', y: 10 }, { x: '1991', y: 3 },
-                               { x: '1992', y: 20 },
-                               { x: '1993', y: 16 }, { x: '1994', y: 10 },
-                                { x: '1995', y: 18 },
-                               { x: '1996', y: 16 }, { x: '1997', y: 15 }
-                               ],
-               name: 'India', enableAnimation: true, type: 'radar',
-               border: { width: 2, color: 'black' }, drawType: 'area'
-                           }
-                           ],
-           });
-
+        $("#chartcontainer").ejChart({
+            series: [{
+                points: [
+                    { x: '1990', y: 10 }, { x: '1991', y: 3 },
+                { x: '1992', y: 20 },
+                { x: '1993', y: 16 }, { x: '1994', y: 10 },
+                 { x: '1995', y: 18 },
+                { x: '1996', y: 16 }, { x: '1997', y: 15 }
+                ],
+                name: 'India', enableAnimation: true, type: 'radar',
+                border: { width: 2, color: 'black' }, drawType: 'area'
+            }
+            ],
+        }); 
 
 
 {% endhighlight %}

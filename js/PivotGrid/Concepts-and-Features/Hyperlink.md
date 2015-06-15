@@ -7,16 +7,17 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Hyperlink
+ ### Hyperlink
 
-The **PivotGrid** control supports **Hyperlink** option to link data for any individual cell. **Hyperlinks** are enabled individually for value, row, column, and summary cells by setting the **corresponding** property to **‘True’.** After enabling the property, the specified cells display **Hyperlink** on hovering. The name of the event to be triggered is passed to the **corresponding****event** property. On clicking the cells, the passed event is triggered and the information of the cell is carried through a parameter.
+The PivotGrid control supports **Hyperlink** option to link data for any individual cell. **Hyperlinks** are enabled individually for value, row, column, and summary cells by setting the **corresponding** property to **‘True’.** After enabling the property, the specified cells display **Hyperlink** on hovering. The name of the event to be triggered is passed to the **corresponding event** property. On clicking the cells, the passed event is triggered and the information of the cell is carried through a parameter.
 
 The following code example demonstrates how to create the **PivotGrid** control using **Hyperlink** support.
 
 
 {% highlight javascript %}
 
-**[JS]**
+[JS]
+
 <body>
 <div id="PivotGrid1" style="height: 380px; width: 72%; display:block; float:left; overflow: auto" />
   <script type="text/javascript">
@@ -42,14 +43,9 @@ The following code example demonstrates how to create the **PivotGrid** control 
 </script>
 </body>
 
-
 {% endhighlight %}
 
-
-
 The output of the above code creates a **PivotGrid** with the **Hyperlink** option as shown in the following screenshot:
-
-
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Hyperlink_images/Hyperlink_img1.png" Caption="Hyperlink Cell"%}
 

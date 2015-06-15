@@ -7,13 +7,13 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# Chart Axes 
+### Chart Axes 
 
 **OlapChart** typically have two axes that are used to measure and categorize data: a vertical (y) axis and a horizontal (x) axis. By default horizontal (x) axis and vertical (y) axis is added to the Chart with axis labels, gridlines, and tick lines. You can also customize this axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
   url: "../wcf/OlapChartService.svc",
   primaryXAxis: { majorTickLines: { visible: false } },
@@ -23,13 +23,14 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
+
 **Axis Title Customization**
 
 Primary axis title font appearance is further customized with the help of the following code example.
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $(function () {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
@@ -43,9 +44,9 @@ $(function () {
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img1.png" Caption="Primary Axis - Title Customization"%}
+
+<br/>
 
 **Axis Line**
 
@@ -53,7 +54,7 @@ $(function () {
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },  
 legend: { visible: true, rowCount: 3 },
@@ -71,8 +72,9 @@ legend: { visible: true, rowCount: 3 },
 {% endhighlight %}
 
 
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img2.png" Caption="Axis Line Customization"%}
+
+<br/>
 
 **Position Opposed**
 
@@ -80,7 +82,7 @@ legend: { visible: true, rowCount: 3 },
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },
         primaryXAxis: {opposedPosition: true },primaryYAxis: {opposedPosition: true}
@@ -91,8 +93,9 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img3.png" Caption="Position Opposed"%}
+
+<br/>
 
 **Appearance Customization** 
 
@@ -108,14 +111,13 @@ Background, border color and outer width of the Chart Area is customized with th
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" }, chartArea: { border: { color: "gray", width: 4 }, background: "aqua" }
 });
 
 
 {% endhighlight %}
-
 
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img4.png" Caption="Chart Area Customization"%}

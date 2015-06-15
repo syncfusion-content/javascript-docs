@@ -44,7 +44,7 @@ While using the manual reference method, the user needs to maintain their HTML p
 ![](Control-Initialization_images/Control-Initialization_img1.png)
 {:.image }
 
-Figure 10: Sample folder containing the Scripts & Content folder
+    Sample folder containing the Scripts & Content folder
 {:.caption }
 
 
@@ -54,40 +54,38 @@ Figure 10: Sample folder containing the Scripts & Content folder
 
 Navigating to the below specified location, you can find all the required web related theme folders – which you need to copy entirely to the **Content** folder of your application – so as to render the Syncfusion controls properly with its unique style and theme,
 
-{% highlight text %}
-
-**<installed location>**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
-
+<table>
+<tr>
+<td>
+**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+</td>
+</tr>
+<tr>
+<td>
+<br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+</td>
+</tr>
+</table>
 
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
-
-
-{% endhighlight %}
 
 
 
-Create a first level sub-folder named **ej** within the **Content** folder. Now again create another sub-folder namely **web** within the **ej** folder****and place all the copied files into it as shown below,
+Create a first level sub-folder named **ej** within the **Content** folder. Now again create another sub-folder namely **web** within the **ej** folder and place all the copied files into it as shown below,
 
 ![](Control-Initialization_images/Control-Initialization_img2.png)
 {:.image }
 
-Figure 11: Stylesheet files copied into the Content folder of the Sample Project
+    Stylesheet files copied into the Content folder of the Sample Project
 {:.caption }
 
 
+> _**Note: The **common-images** folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.**_
 
 
-{% highlight text %}
-
-> _**Note: The common-images folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.**_
-
-
-{% endhighlight %}
-
-
-
-Now Include the specific theme reference to your HTML file by referring the appropriate **ej.web.all.min.css** file from a particular theme folder (here, we have referred the **default-theme**), within the head section as shown below,
+Now, Include the specific theme reference to your HTML file by referring the appropriate **ej.web.all.min.css** file from a particular theme folder (here, we have referred the **default-theme**), within the head section as shown below,
 
 {% highlight html %}
 
@@ -96,7 +94,7 @@ Now Include the specific theme reference to your HTML file by referring the appr
     <head>
         <title>My first HTML page</title>
 
-        **<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />**
+        <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
 
     </head>
 
@@ -109,14 +107,7 @@ Now Include the specific theme reference to your HTML file by referring the appr
 {% endhighlight %}
 
 
-
-{% highlight text %}
-
 > _**Note: In the above highlighted location of the code, you can simply use any of the 13 available themes.**_
-
-
-{% endhighlight %}
-
 
 
 #### Adding the required JavaScript files
@@ -133,43 +124,51 @@ Adding and referring the required JavaScript files into your HTML file plays an 
 
 Navigating to the below specified location, you can find the above specified 4 dependency external script files which you need to copy and paste it into the **Scripts** folder of your application,
 
-{% highlight text %}
 
-**<installed location>**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external 
-
+<table>
+<tr>
+<td>
+**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external 
+</td>
+</tr>
+<tr>
+<td>
+    <br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
-
-
-
-{% endhighlight %}
-
-
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+</td>
+</tr>
+</table>
+<br/>
 
 Apart from the above common scripts, it is also necessary to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script in a minified format.
 
 Navigate to the below specified location and copy the **ej.web.all.min.js** file, which needs to be then pasted onto the **ej** sub-folder (create a new sub-folder **ej** under **Scripts** folder) within the **Scripts** folder.
 
-{% highlight text %}
 
-**<installed location>**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
-
+<table>
+<tr>
+<td>
+**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
+</td>
+</tr>
+<tr>
+<td>
+    <br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
-
-
-
-{% endhighlight %}
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
+</td>
+</tr>
+</table>
+<br/>
 
 ![](Control-Initialization_images/Control-Initialization_img3.png)
 {:.image }
 
-Figure 13: Script files copied into the Sample Project
+    Script files copied into the Sample Project
 {:.caption }
-
-
 
 
 Now, include the reference to it in your HTML page within the head section as shown below,
@@ -180,12 +179,12 @@ Now, include the reference to it in your HTML page within the head section as sh
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>My first HTML page</title>
-****<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
-**<script src="Scripts/jquery-1.10.2.min.js"></script>**
-    **<script src="Scripts/jquery.easing.1.3.min.js"></script>**
-    **<script src="Scripts/jquery.globalize.min.js"></script>**
-    **<script src="Scripts/jsrender.min.js"></script>**
-    **<script src="Scripts/ej/ej.web.all.min.js"></script>**
+    <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.easing.1.3.min.js"></script>
+    <script src="Scripts/jquery.globalize.min.js"></script>
+    <script src="Scripts/jsrender.min.js"></script>
+    <script src="Scripts/ej/ej.web.all.min.js"></script>
   </head>
   <body>    
   </body>
@@ -196,12 +195,8 @@ Now, include the reference to it in your HTML page within the head section as sh
 
 
 
-{% highlight text %}
 
 > _**Note:The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.**_
-
-
-{% endhighlight %}
 
 
 
@@ -218,7 +213,7 @@ To add any of our Syncfusion JavaScript widgets into your HTML page,
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>My first HTML page</title>
-****<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+        <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="Scripts/jquery-1.10.2.min.js"></script>
         <script src="Scripts/jquery.easing.1.3.min.js"></script>
         <script src="Scripts/jquery.globalize.min.js"></script>
@@ -227,14 +222,14 @@ To add any of our Syncfusion JavaScript widgets into your HTML page,
     </head>
     <body>     
         <!--Container for ejDatePicker widget-->
-**<input id="startDate" type="text" />** 
+        <input id="startDate" type="text" /> 
 
-        **<script type="text/javascript">**
-            **$(function () {**
-                **// initialization of ejDatePicker control**
-                **$("#startDate").ejDatePicker();**
-            **});**
-        **</script>**
+        <script type="text/javascript">
+            $(function () {
+                // initialization of ejDatePicker control
+                $("#startDate").ejDatePicker();
+            });
+        </script>
     </body>
 </html>
 
@@ -248,10 +243,8 @@ To add any of our Syncfusion JavaScript widgets into your HTML page,
 ![](Control-Initialization_images/Control-Initialization_img4.png)
 {:.image }
 
-         Figure 14: DatePicker widget displayed on the web browser
+    DatePicker widget displayed on the web browser
 {:.caption }
-
-
 
 
 ### Using Syncfusion Nuget Package in Visual Studio for Scripts and Stylesheet reference
@@ -263,10 +256,8 @@ Start the Visual Studio. Create a new ASP.NET Empty Web Application or ASP.NET E
 ![](Control-Initialization_images/Control-Initialization_img5.png)
 {:.image }
 
-Figure 15: Visual Studio -> New Project Window
+    Visual Studio -> New Project Window
 {:.caption }
-
-
 
 
 #### Configuring and Installing Nuget into your project
@@ -278,10 +269,8 @@ To add the required scripts and css files automatically into your Project (Confi
 ![](Control-Initialization_images/Control-Initialization_img6.png)
 {:.image }
 
-Figure 16: Manage Nuget Packages pop-up
+    Manage Nuget Packages pop-up
 {:.caption }
-
-
 
 
 * You need to install the **SyncfusionJavaScript** package shown in the above image just by clicking the **install** button. The below image depicts that the Nuget Packages for **JavaScript** has been successfully installed into your project.
@@ -289,10 +278,8 @@ Figure 16: Manage Nuget Packages pop-up
 ![](Control-Initialization_images/Control-Initialization_img7.png)
 {:.image }
 
-Figure 17: Manage Nuget Packages pop-up
+    Manage Nuget Packages pop-up
 {:.caption }
-
-
 
 
 #### Adding HTML page in your application
@@ -302,7 +289,7 @@ Right click on your Project in Solution Explorer. Select **Add** -> **New Item**
 ![](Control-Initialization_images/Control-Initialization_img8.png)
 {:.image }
 
-Figure 18: Add New Item pop-up
+    Add New Item pop-up
 {:.caption }
 
 
@@ -316,7 +303,7 @@ Since the stylesheets are automatically loaded into the **Content** folder of yo
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>My first HTML page</title>
-**<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />**
+        <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     </head>
     <body>    
     </body>
@@ -337,12 +324,12 @@ It is mandatory to include the reference to the required JavaScript files in you
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
-****<link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
-**<script src="Scripts/jquery-1.10.2.min.js"></script>**
-    **<script src="Scripts/jquery.easing.1.3.min.js"></script>**
-    **<script src="Scripts/jquery.globalize.min.js"></script>**
-    **<script src="Scripts/jsrender.min.js"></script>**
-    **<script src="Scripts/ej/ej.web.all.min.js"></script>**
+    <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.easing.1.3.min.js"></script>
+    <script src="Scripts/jquery.globalize.min.js"></script>
+    <script src="Scripts/jsrender.min.js"></script>
+    <script src="Scripts/ej/ej.web.all.min.js"></script>
 </head>
 <body>    
 </body>
@@ -353,18 +340,14 @@ It is mandatory to include the reference to the required JavaScript files in you
 
 
 
-{% highlight text %}
-
 > _**Note: The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.**_
-
-
-{% endhighlight %}
 
 
 
 #### Adding Syncfusion Widget into your HTML page
 
 Finally, to add the Syncfusion datepicker widget into the HTML page, refer the same steps mentioned here in the manual method. 
+
 
 ### Using CDN link for Script and Stylesheet reference 
 
@@ -373,7 +356,6 @@ With this method, you can skip the process of copying and pasting the required S
 #### HTML file creation
 
 * Create a basic HTML file and directly refer all the required cdn links for the Script and Stylesheets within the &lt;head&gt; section as shown below, - For other cdn links, refer the CDN section in the introduction part.
-
 
 
 * Here, we have referred the cdn link of **default-theme**. Likewise, any of the 13 available themes can be referred in the below highlighted code, as per the user needs.
@@ -385,7 +367,7 @@ With this method, you can skip the process of copying and pasting the required S
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>My first HTML page</title>
-****<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+        <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
@@ -410,7 +392,7 @@ Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which act
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>My first HTML page</title>
-****<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+        <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
@@ -419,28 +401,26 @@ Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which act
     </head>
     <body>     
         <!--Container for ejDatePicker widget-->
-**<input id="startDate" type="text" />** 
+        <input id="startDate" type="text" /> 
 
-        **<script type="text/javascript">**
-            **$(function () {**
-                **// initialization of ejDatePicker control**
-                **$("#startDate").ejDatePicker();**
-            **});**
-        **</script>**
+        <script type="text/javascript">
+            $(function () {
+                // initialization of ejDatePicker control
+                $("#startDate").ejDatePicker();
+            });
+        </script>
     </body>
 </html>
 
 
 {% endhighlight %}
 
-
-
 Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
 
 ![](Control-Initialization_images/Control-Initialization_img9.png)
 {:.image }
 
-         Figure 20: DatePicker widget displayed on the web browser
+    DatePicker widget displayed on the web browser
 {:.caption }
 
 

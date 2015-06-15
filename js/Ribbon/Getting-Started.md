@@ -23,7 +23,6 @@ The **Ribbon** can be easily configured to the DOM element such as **&lt;div&g
 
 {% highlight html %}
 
-**[HTML]**
 
 	<!doctype html>
 	<html>
@@ -57,8 +56,6 @@ The **Ribbon** can be easily configured to the DOM element such as **&lt;div&g
 2. Add a **&lt;div&gt;** element. It is a container for **ejRibbon**.
 
 {% highlight html %}
-
-**[HTML]**
 
 	<!-- ... -->
 	<body>
@@ -144,8 +141,6 @@ The default **alignType** is rows.
 
 {% highlight html %}
 
-	**[HTML]**
-	
 	<!-- ... -->
 	<head>
 	</head>
@@ -297,7 +292,6 @@ The **Ribbon** control has control separator support. Set enableSeparator value 
 
 {% highlight html %}
 
-**[HTML]**
 
 	<!-- ... -->
 	<head>

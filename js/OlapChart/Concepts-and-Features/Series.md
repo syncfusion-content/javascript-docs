@@ -7,23 +7,22 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# Series
+### Series
 
-Series is a collection of series items that contain the actual data points to be displayed on the chart. Series type allows you to customize the chart type whose appearance/style is customized.
+**Series** is a collection of series items that contain the actual data points to be displayed on the chart. Series type allows you to customize the chart type whose appearance/style is customized.
 
 **Series Type Customization**
 
 A combination Chart combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
 
-1. Can’t combine Column and Bar series.
+   1. Can’t combine Column and Bar series.
 
-2. Pie Chart can’t be used with other series types.
-
+   2. Pie Chart can’t be used with other series types.
 
 
 {% highlight js %}
 
-**[JS]** 
+[JS] 
 $(function () {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", animation: true, commonSeriesOptions: {
@@ -42,8 +41,9 @@ function onSeriesRenders(args) {
 {% endhighlight %}
 
 
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Series_images/Series_img1.png" Caption="Combination Chart"%}
+
+<br/>
 
 **Series Points Customization**
 
@@ -51,7 +51,7 @@ function onSeriesRenders(args) {
 
 {% highlight js %}
 
-**[JS]** 
+[JS] 
 $(function () {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",

@@ -13,8 +13,6 @@ documentation: ug
 
 {% highlight html %}
 
-**[JS]**
-
      <div id="defaultRibbon"></div>    
      <ul id="ribbonmenu">
                <li><a>FILE</a>

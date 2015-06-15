@@ -23,7 +23,6 @@ Ribbon tab and Contextual Tab are rendered with the following code example.
 
 {% highlight html %}
 
-**[JS]**
 
     <div ng-app="ribbonApp">
                 <div ng-controller="RibbonCtrl">
@@ -91,7 +90,6 @@ Gallery and Custom Tooltip are rendered by using the following code example.
 
 {% highlight html %}
 
-**[HTML]**
 
      <div ng-app="ribbonApp">
             <div ng-controller="RibbonCtrl">

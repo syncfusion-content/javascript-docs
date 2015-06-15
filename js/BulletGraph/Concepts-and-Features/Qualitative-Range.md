@@ -13,7 +13,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({                                        
 
