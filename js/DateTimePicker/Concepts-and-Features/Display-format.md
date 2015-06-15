@@ -94,7 +94,7 @@ In the following example, set **dateTimeFormat** to **fulldatetime** format.
 
   **[JavaScript]**
   
-  // Add the code in your script section to render the DateTimePicker 
+  // Adds the code in your script section to render the DateTimePicker 
   
 	$('#dateTime').ejDateTimePicker({
 	            dateTimeFormat: "dddd, MMMM dd, yyyy hh:mm:ss tt",
@@ -162,7 +162,7 @@ Add the following code in your **HTML** page.
 
   **[JavaScript]**
   
-  // Add the code in your script section to render the DateTimePicker with short header        
+  // Adds the code in your script section to render the DateTimePicker with short header        
 	 $('#dateTime').ejDateTimePicker({
 	                dayHeaderFormat: "showHeaderShort",
 	                width: '200px',
