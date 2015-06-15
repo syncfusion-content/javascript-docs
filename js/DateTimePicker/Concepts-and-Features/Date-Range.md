@@ -42,7 +42,7 @@ Add the following code in your **HTML** page.
 
   **[JavaScript]**
   
-  // Add the code in your script section to render the DateTimePicker with fixed minimum and maximum date and time
+  // Adds the code in your script section to render the DateTimePicker with fixed minimum and maximum date and time
           
 	 $('#dateTime').ejDateTimePicker({
 	                width: 200,
