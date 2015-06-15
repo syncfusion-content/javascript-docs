@@ -7,15 +7,13 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Localization
+### Localization
 
-_**Note: This feature is currently not applicable for PivotTable Field List.**_
-
-
+>_**Note: This feature is currently not applicable for PivotTable Field List.**_
 
 **Localization** is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, data is displayed in a specific language and culture of a particular country or region. The **JavaScript****PivotGrid** control provides inherent support to localize its UI.The following table lists the default English localization user interface based on French culture. 
 
-_List of default English localization user interface based on French culture_
+_Table: List of default English localization user interface based on French culture_
 
 <table>
 <tr>
@@ -56,12 +54,13 @@ RenderingFailed</td><td>
 "Rendant pas"</td></tr>
 </table>
 
+<br/>
 
 The following code example illustrates how to localize **PivotGrid’s** user interface based on “French” culture.
 
 {% highlight javascript %}
 
-**[JS]**
+[JS]
 <script type="text/javascript">
  $(function () {
      $("#PivotGrid1").ejPivotGrid({
@@ -85,13 +84,9 @@ url: "../wcf/PivotGridService.svc", locale**: "fr-FR",** enableVirtualScrolling:
            SeriesPage: "Série Page",
            CategoricalPage: "Catégorique Page"
           };
-</script>    
-
+</script>       
 
 {% endhighlight %}
-
-
-
 
 
 > _**Note: In order to render the localized PivotGrid, you can reset the content available in both**_
@@ -106,37 +101,36 @@ To apply control side **Localization**, you can refer the following code example
 
 {% highlight html %}
 
-**[HTML]**
-ej.PivotGrid.locale["zh-CN"] = {
-//Corresponding keyword values needs to be set here.
-} 
+[HTML]
 
+ej.PivotGrid.locale["zh-CN"] = {
+
+//Corresponding keyword values needs to be set here.
+
+} 
 
 {% endhighlight %}
 
 **Localizing Cube Information**
 
-To get the **Localized****Cube****Information**, “_**Locale**_****_**Identifier**__"_ is set in the connection string
+To get the **Localized Cube Information** ,  ** “Locale Identifier"** is set in the connection string
 
 
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
 //1036 refers to “fr-FR” culture.
 string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);
 DataManager.Culture = new System.Globalization.CultureInfo(1036);
 DataManager.OverrideDefaultFormatStrings = true;
 
-
 {% endhighlight %}
-
 
 
 The following screenshot displays the **PivotGrid** with French localization:
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Localization_images/Localization_img1.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Concepts-and-Features/Localization_images/Localization_img1.png" Caption="Localized PivotGrid"%}
 
-_Localized PivotGrid_
 

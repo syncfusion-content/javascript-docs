@@ -11,17 +11,17 @@ documentation: ug
 
 {% include image.html url="/js/OlapGauge/OlapGauge-Elements_images/OlapGauge-Elements_img1.png" Caption="OlapGauge"%}
 
-* Scale: Range of numbers bound by a minimum and a maximum value.
+* **Scale**: Range of numbers bound by a minimum and a maximum value.
 
-* Indicators: Shows the status and trend for the respective KPI report.
+* **Indicators**: Shows the status and trend for the respective KPI report.
 
-* Pointer: Indicates the KPI Value.
+* **Pointer**: Indicates the KPI Value.
 
-* Marker: Indicates the KPI Goal.
+* **Marker**: Indicates the KPI Goal.
 
-* Range: Indicates critical ranges.
+* **Range**: Indicates critical ranges.
 
-* Label: Used to customize the appearance of the gauge by providing relevant report information.
+* **Label**: Used to customize the appearance of the gauge by providing relevant report information.
 
 
 

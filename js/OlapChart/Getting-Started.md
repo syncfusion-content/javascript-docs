@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting-Started
 description: getting started
@@ -7,13 +7,17 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# Getting Started
+## Getting Started
 
-This section explains briefly about how to create an OLAP Chart in your application with JavaScript.
+This section explains briefly about how to create an **OLAP Chart** in your application with **JavaScript.**
 
-The following screen shot shows the OLAP Chart for JavaScript.
+**Control Structure**
+
+The following screen shot shows the **OLAP Chart** for **JavaScript**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Chart"%}
+
+<br/>
 
 **Syncfusion OLAP Controls – Architecture**
 
@@ -21,35 +25,36 @@ The following screen shot shows the OLAP Chart for JavaScript.
 
 The architecture gives a clear idea about how the control rendering takes place at client-side and all other analytical operations on each action takes place at the server-side.
 
+<br />
 **Service for OLAP Controls**
 
 The primary reasons for using service in an **OLAP** processing are as follows:
 
-1. DataSource Connectivity: You can establish a connection between different cube data sources such as
+1. **DataSource Connectivity:** You can establish a connection between different cube data sources such as
 
-1. Offline Cube
+    * Offline Cube
 
-2. Online Cube (XML/A)
+    * Online Cube (XML/A)
 
-3. Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
+    * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
 
-2. Cube Schema: As the connection is moved to service-side, you obviously use Microsoft ADOMD assembly to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
+2. **Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
 
-1. Availability of cubes.
+    * Availability of cubes.
 
-2. A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only.
+    * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
 
-3. Localized information is also available in cube schema.
+    * Localized information is also available in cube schema.  
 
-3. MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you need to send framed MDX via Microsoft ADOMD assembly. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any OLAP controls.
+3. **MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap**.**Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
-4. OLAP Report: The OLAP Report class in the Syncfusion.Olap.Base holds the complete information of each axes such as column, row and slicer. Using OLAP Report class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.
+4. **OLAP Report:** The **OLAP Report** class in the **Syncfusion.Olap.Base** holds the complete information of each axes such as column, row and slicer. Using **OLAP Report** class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
 
 As the **OLAP Control** is the key for each and every operation, initially you need to serialize the **OLAP Report** and send to client-side in a form of string.
 
 When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OLAP Report** from the client-side to the service in a de-serialized and updated format.
 
-Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again.
+Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again. 
 
 This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation_**.**_
 
@@ -61,53 +66,59 @@ In the following example, the **OLAP Chart** component displays the customer cou
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img3.png" Caption="Fiscal year vs Geographical locations"%}
 
-Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**.
+<br />
+
+Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**.  
 
 The following screen shot displays the Project Creation Wizard:
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img4.png" Caption="Project Creation Wizard"%}
 
+<br />
+
 **Create HTML Page**
 
 To create a new web form in the application
 
-1. Right-click on the project and select **Add**.
+Right-click on the project and select **Add**.
 
 The following screen shot shows the Add New Item Wizard.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img5.png" Caption="Add New Item Wizard"%}
 
-2. Click **New Item** and select **HTML Page** from the listed templates.
+<br />
 
-3. Name the page as **default.html** and click **OK**.
+Click **New Item** and select **HTML Page** from the listed templates. Name the page as **default.html** and click **OK**.
 
 **Add References, Scripts, Styles and Control in HTML page**
 
 **Add References**
 
-1. In the Solution Explorer, right-click the References folder, then click Add Reference.
+In the **Solution Explorer**, right-click the **References** folder, then click **Add Reference**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img6.png" Caption="Solution Explorer"%}
+
+<br />
 
 The following screen shot illustrates how to reference **Syncfusion.Olap.Base.**
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img7.png" Caption="Adding reference to Syncfusion.Olap.Base"%}
 
-2. Select the following assemblies: 
+<br />  
 
-1. Microsoft.AnalysisServices.AdomdClient.dll,
+**Select the following assemblies**: 
 
-2. Syncfusion.Core.dll,
+   * Microsoft.AnalysisServices.AdomdClient.dll,  
 
-3. Syncfusion.Linq.Base.dll,
+   * Syncfusion.Core.dll,  Syncfusion.Linq.Base.dll, 
 
-4. Syncfusion.Olap.Base.dll,
+   * Syncfusion.Olap.Base.dll,  
 
-5. Syncfusion.EJ.dll 
+   * Syncfusion.EJ.dll 
 
-6. Syncfusion.EJ.Olap.dll.
+   * Syncfusion.EJ.Olap.dll.
 
-3. Click OK.
+Click **OK.**
 
 **Add Scripts and Styles** 
 
@@ -115,17 +126,15 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 > _**Note: Please follow the following order while adding scripts and styles.**_
 
-> 
-
 {% highlight html %}
 
-**[HTML]**
+[HTML]
+
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
 <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-
 
 {% endhighlight %}
 
@@ -135,7 +144,8 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 {% highlight html %}
 
-**[HTML]**
+[HTML]
+
 <div>
      //Creating a div tag which will act as a container for ejOlapChart widget.
     <div id="OlapChart" style="height: 350px; width: 100%; overflow: auto">
@@ -158,15 +168,15 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 **Create WCF Services**
 
-1. Right-click the project, select Add > New Folder.  Name the folder as WCF.
+1. Right-click the project, select **Add > New Folder**.  Name the folder as **WCF.**
 
-2. Now right-click the WCF folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it as OlapChartService.svc
+2. Now right-click the **WCF** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**
 
-3. Click Add.
-
-
+3. Click **Add**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img8.png" Caption="Adding WCF service"%}
+
+<br />
 
 **Add service methods inside Interface**
 
@@ -174,16 +184,21 @@ Add the following code sample inside the **IOlapChartService** interface availab
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
+
     [ServiceContract]
+
     public interface IOlapChartService
+
     {
+
         [OperationContract]
+
         Dictionary<string, object> InitializeChart(string action, string customObject);        [OperationContract]
+
         Dictionary<string, object> **DrillChart**(string action, string drilledSeries, string olapReport, string customObject);
+
     }
-
-
 {% endhighlight %}
 
 **Add Namespaces**
@@ -192,19 +207,29 @@ Add the following namespaces to implement the service methods.
 
 {% highlight c# %}
 
-**[C#]**
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
-using System.ServiceModel.Activation;
-using Syncfusion.Olap.Manager;
-using Syncfusion.Olap.Reports;
-using Syncfusion.JavaScript.Olap;
-using System.Web.Script.Serialization;
+[C#]
 
+using System;
+
+using System.Collections.Generic;
+
+using System.Linq;
+
+using System.Runtime.Serialization;
+
+using System.ServiceModel;
+
+using System.Text;
+
+using System.ServiceModel.Activation;
+
+using Syncfusion.Olap.Manager;
+
+using Syncfusion.Olap.Reports;
+
+using Syncfusion.JavaScript.Olap;
+
+using System.Web.Script.Serialization;
 
 {% endhighlight %}
 
@@ -214,15 +239,21 @@ Create the **OlapChartService** class to implement the service methods. Inherit 
 
 {% highlight c# %}
 
-**[C#]**
-namespace **WebApplication2**
-{
-    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapChartService : IOlapChartService
-    {
-    }
-}
+[C#]
 
+namespace **WebApplication2**
+
+{
+
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+
+    public class OlapChartService : IOlapChartService
+
+    {
+
+    }
+
+}
 
 {% endhighlight %}
 
@@ -230,87 +261,124 @@ namespace **WebApplication2**
 
 Add the following methods to the service, which is invoked during any server-side operations performed in **OLAP Chart**.
 
-1. Initialize the **OLAP Charts** helper class and **OLAP DataManager** with appropriate connection string.
+* Initialize the **OLAP Charts** helper class and **OLAP DataManager** with appropriate connection string. 
 
 {% highlight c# %}
 
-**[C#]**
-JavaScriptSerializer serializer = new JavaScriptSerializer();
-OlapChart htmlHelper = new OlapChart();
-static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-OlapDataManager DataManager = new OlapDataManager(connectionString);
+[C#]
 
+JavaScriptSerializer serializer = new JavaScriptSerializer();
+
+OlapChart htmlHelper = new OlapChart();        
+
+static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";   
+
+OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-
-
-2. Initialize the following service methods.
+* Initialize the following service methods.
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
 
 //This method provides the required information from the server side to initialize the OlapChart.
+
          public Dictionary<string, object> InitializeChart(string action, string customObject)
+
         {
+
             OlapDataManager DataManager = null;
+
             dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
 
-            DataManager = new OlapDataManager(connectionString);
+            DataManager = new OlapDataManager(connectionString); 
+
             DataManager.SetCurrentReport(CreateOlapReport());
+
             return htmlHelper.GetJsonData(action, DataManager);
-        }
-//This method provides the required information from the server side while drill up/down operation is performed in OlapChart.
-        public Dictionary<string, object> **DrillChart**(string action, string drilledSeries, string olapReport, string customObject)
-        {
-            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(olapReport));
-dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
-            return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
+
         }
 
-//This method carries information about the default report rendered within OlapChart initially.
-        private OlapReport CreateOlapReport()
+//This method provides the required information from the server side while drill up/down operation is performed in OlapChart.
+
+        public Dictionary<string, object> **DrillChart**(string action, string drilledSeries, string olapReport, string customObject)
+
         {
+
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(olapReport)); 
+
+            dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());            
+
+            return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
+
+        }
+
+//This method carries information about the default report rendered within OlapChart initially. 
+
+        private OlapReport CreateOlapReport()
+
+        {
+
             OlapReport olapReport = new OlapReport();
+
             olapReport.Name = "Default Report";
+
             olapReport.CurrentCubeName = "Adventure Works";
 
+
             DimensionElement dimensionElementColumn = new DimensionElement();
+
             dimensionElementColumn.Name = "Customer";
+
             dimensionElementColumn.AddLevel("Customer Geography", "Country");
 
+
             MeasureElements measureElementColumn = new MeasureElements();
+
             measureElementColumn.Elements.Add(new MeasureElement { Name = "Customer Count" });
 
+
+
             DimensionElement dimensionElementRow = new DimensionElement();
+
             dimensionElementRow.Name = "Date";
+
             dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
 
-            olapReport.SeriesElements.Add(dimensionElementRow);
-            olapReport.CategoricalElements.Add(dimensionElementColumn);
-            olapReport.CategoricalElements.Add(measureElementColumn);
-            return olapReport;
-        }
 
+
+            olapReport.SeriesElements.Add(dimensionElementRow);
+
+            olapReport.CategoricalElements.Add(dimensionElementColumn);
+
+            olapReport.CategoricalElements.Add(measureElementColumn);
+
+            return olapReport;
+
+        }
 
 {% endhighlight %}
 
 **Configuring Web.Config**
 
-1. You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is "**WebApplication2.OlapChartService**" where "**OlapChartService**" is the service class name and “**WebApplication2**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
+* You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is "**WebApplication2.OlapChartService**" where "**OlapChartService**" is the service class name and “**WebApplication2**" is the namespace
+    
+name where service class appears.
 
-1. Contract: This property indicates the contract of the endpoint is exposing. Here you are referring IOlapChartService contract and hence it is "WebApplication2.IOlapChartService".
+The following are the properties that meet the appropriate endpoint.  
 
-2. Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
+   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapChartService** contract and hence it is "**WebApplication2.IOlapChartService**".
 
-3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint. endpointBehaviors are illustrated as follows
+   2. **Binding:** In your application, you use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
 
-
+   3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows
 
 {% highlight xml %}
 
-**[Web.Config]**
+[Web.Config]
+
 <services>
       <service name="**WebApplication2.OlapChartService**">
         <endpoint address="" behaviorConfiguration="**WebApplication2.OlapChartServiceAspNetAjaxBehavior**"
@@ -318,16 +386,16 @@ dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
       </service>
 </services>
 
-
 {% endhighlight %}
 
-
-
-2. The **endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this **name** property. In the following code sample, "**WebApplication2.OlapChartServiceAspNetAjaxBehavior**" refers to the **OlapChartService** class under the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is the appropriate behavior for the endpoint.
+* The **endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this **name** property. In the following code sample, "**WebApplication2.OlapChartServiceAspNetAjaxBehavior**" refers to the **OlapChartService** class under
+    
+the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}
 
-**[Web.Config]**
+[Web.Config]
+
 <endpointBehaviors>
         <behavior name="**WebApplication2.OlapChartServiceAspNetAjaxBehavior**">
           <enableWebScript />
@@ -337,9 +405,7 @@ dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
 
 {% endhighlight %}
 
-
-
-> _**Note: In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created.**_
+> _**Note In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created.**_
 
 
 

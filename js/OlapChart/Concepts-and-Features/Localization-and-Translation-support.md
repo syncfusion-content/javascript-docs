@@ -7,13 +7,13 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# Localization and Translation support
+### Localization and Translation support
 
 **Localization** is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, data is displayed in a language and culture specific to a particular country or region. The **JavaScript OlapChart** control provides inherent support to localize its UI.
 
-The following table lists the default English **localization****User****Interface** based on “French” culture.
+The following table lists the default English **localization User Interface** based on “French” culture.
 
-_List of default English localization User Interface based on “French” culture_
+*Table: List of default English localization User Interface based on “French” culture*
 
 <table>
 <tr>
@@ -75,11 +75,11 @@ RenderingFailed</td><td>
 </table>
 
 
-The following code example shows how to localize **OlapChart’s****User Interface** (UI) based on “French” culture.
+The following code example shows how to localize **OlapChart’s User Interface** (UI) based on “French” culture.
 
 {% highlight js %}
 
-**[JS]** 
+[JS] 
 <script type="text/javascript">
     ej.olap.OlapChart.locale["fr-FR"] = {
         Measure: "Mesurer ",
@@ -109,13 +109,11 @@ The following code example shows how to localize **OlapChart’s****User Interfa
 
 {% endhighlight %}
 
-
-
 > _**Note: In order to render the localized OLAP Chart, you are required to reset the content available in both**_
 
-1. _**OLAP Chart Control**_
+   1. _**OLAP Chart Control**_
 
-2. _**OLAP Cube**_
+   2. _**OLAP Cube**_
 
 **Localizing Control Information**
 
@@ -123,7 +121,7 @@ To apply control side localization, refer the following code example:
 
 {% highlight html %}
 
-**[HTML]**
+[HTML]
 ej.olap.OlapChart.locale["zh-CN"] = {
 //Corresponding keyword values needs to be set here.
 }
@@ -131,15 +129,13 @@ ej.olap.OlapChart.locale["zh-CN"] = {
 
 {% endhighlight %}
 
-
-
 **Localizing Cube Information**
 
 To get the localized Cube information, “_Locale__Identifier"_ has to be set in the connection string:
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
 //1036 refers to “fr-FR” culture.
 string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);
@@ -149,11 +145,7 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 {% endhighlight %}
 
+The output for the **Localized OlapChart** is as follows:
 
-
-The output for the **Localized****OlapChart** is as follows:
-
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png" Caption=""%}
-
-_Localized OlapChart_
+{% include image.html url="/js/OlapChart/Concepts-and-Features/Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png" Caption="Localized OlapChart"%}
 

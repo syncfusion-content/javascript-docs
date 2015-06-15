@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Appearance & Styling
+### Appearance & Styling
 
 The **PivotGrid** control customizes its appearance using user-defined CSS. The custom CSS is applied to the control by referring the **custom theme CSS** next to **ej.widgets.all.min.css** in the view page.
 
@@ -17,7 +17,7 @@ You can refer custom CSS in **default.html** page.
 
 {% highlight javascript %}
 
-**[JS]**
+[JS]
 <head>
 <title>PivotGrid Custom theme</title>
      <link href="../themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
@@ -31,7 +31,7 @@ You can refer custom CSS in **default.html** page.
 
 {% highlight css %}
 
-**[CSS]**
+[CSS]
 /*-----------------------For PivotGrid control definition-----------------*/
 
 .e-pivotgrid table {
@@ -513,10 +513,7 @@ You can refer custom CSS in **default.html** page.
 }
 
 
-
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Appearance--Styling_images/Appearance--Styling_img1.png" Caption="PivotGrid with Custom Theme"%}
 
