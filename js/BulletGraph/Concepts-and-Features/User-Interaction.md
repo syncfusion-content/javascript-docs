@@ -15,7 +15,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     enableAnimation: true,
@@ -32,7 +32,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     enableResizing: true,
@@ -51,7 +51,7 @@ Background color for qualitative range is applied to major ticks and minor ticks
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     applyRangeStrokeToTicks: true,

@@ -27,7 +27,7 @@ You can create an **HTML** file as shown in the following code example.
 
 {% highlight js %}
 
-**[HTML]**
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,7 +64,7 @@ The following code example renders a **RangeNavigator** with a range from 2010, 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <script type=”text/javascript” language=”javascript”>
         $(function () {
             $(“#rangecontainer”).ejRangeNavigator({
@@ -94,7 +94,7 @@ You can create data source for **RangeNavigator** as follows.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 window.chartData = [{ “xDate”: new Date(2011, 0, 1), “yValue”: 10 },
                     { “xDate”: new Date(2011, 2, 1), “yValue”: 5 },
                     { “xDate”: new Date(2011, 4, 1), “yValue”: 15 },
@@ -137,7 +137,7 @@ The following code sample shows how to enable a Tooltip.
 
 {% highlight js %}
 
-**[JS]**
+
        $(function () {
           $(“#rangecontainer”).ejRangeNavigator({
             //…
@@ -247,7 +247,7 @@ You can create a **dataSource** for Chart Series with integer Values using the f
 
 {% highlight js %}
 
-**[JavaScript]**
+
 window.chartData = [
 { "xDate": 0, "yValue": 10 },
 { "xDate": 50, "yValue": 5 },

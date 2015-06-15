@@ -23,7 +23,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
       //...
         valueType: "numeric",
@@ -46,7 +46,7 @@ By default the **valueType** of the **RangeNavigator** is “**datetime**” and
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
       //...
         valueType: "datetime",
@@ -81,7 +81,7 @@ The **DateTime** range type contains an **intervalType** property that sets the 
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
    //...
      labelSettings:
@@ -117,7 +117,7 @@ The **rangePadding** property allows you to customize the automatic range calcul
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
    //...
         valueType: "numeric",
@@ -170,7 +170,7 @@ Using the default range calculation for **RangeNavigator**, the **rangePadding**
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
    //...
         rangePadding: 'none ',
@@ -204,7 +204,7 @@ The following code example renders a RangeNavigator with a range from 2010 Janua
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
    //...
          rangeSettings: {
@@ -231,7 +231,7 @@ The **Series** property provides access to a collection of all series that are d
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
    //...
     // Adding series
@@ -281,7 +281,7 @@ If you set enableDeferredUpdate****to true, the **rangeChanged** event gets fire
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
    //...
         enableDeferredUpdate: true,
@@ -304,7 +304,7 @@ This event is handled when the **RangeNavigator** gets loaded. A parameter **sen
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...             
@@ -325,7 +325,7 @@ This event gets fired whenever the selected range changes in **RangeNavigator**.
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...             
@@ -347,7 +347,7 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...             
@@ -378,7 +378,7 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
 
 {% highlight js %}
 
- **[JS]**
+ 
 <script type="text/x-jsrender" id="left" >
            <svg height="24" width="32" style="fill:#DD4A4A;stroke:black;">
                 <path d="M2 2 L2 22 L22 22 L32 12 L22 2 Z" />
@@ -421,7 +421,7 @@ The labels are found along the range, displaying the value of the data it corres
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...             
@@ -481,7 +481,7 @@ The following screen shot illustrates both the lower and higher level labels tha
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...             
@@ -517,7 +517,7 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...    
@@ -607,7 +607,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...              
@@ -633,7 +633,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...              
@@ -683,7 +683,7 @@ Some of the **labelFormat** for **DateTime** data area as follows:
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
                {   
                    // ...              
@@ -723,7 +723,7 @@ Tooltip get displayed only when we move the slider.</td></tr>
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
                {   
                    // ...              
@@ -768,7 +768,7 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
                {   
                    // ...              
@@ -789,7 +789,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 {% highlight js %}
 
-**[JS]**
+
 $("#rangecontainer").ejRangeNavigator({
                {   
                    // ...              

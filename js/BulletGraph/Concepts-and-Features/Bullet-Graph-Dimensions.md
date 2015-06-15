@@ -15,7 +15,7 @@ This section explains you on how to change the dimensions of the **Bullet Graph*
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#bullet1").ejBulletGraph({
                     width: 500, height: 100                  
@@ -36,7 +36,7 @@ The feature measure bar value is customized using the **value** property. Defaul
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#bullet1").ejBulletGraph({
                     value: 5                  
@@ -57,7 +57,7 @@ The **Comparative measure value** is set using **comparativeMeasureValue** prope
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#bullet1").ejBulletGraph({
                     comparativeMeasureValue: 5                  
@@ -78,7 +78,7 @@ The following screenshot displays **Bullet Graph** with comparative measure valu
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#bullet1").ejBulletGraph({
                     theme : 'flatdark',
@@ -99,7 +99,7 @@ Bullet Graph is oriented either horizontally or vertically using orientation pro
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#bullet1").ejBulletGraph({
                     orientation: 'vertical',
@@ -117,7 +117,7 @@ The Flow direction of Bullet Graph is customized using flowDirection property. D
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#bullet1").ejBulletGraph({
                     flowDirection: 'backward',
@@ -139,7 +139,7 @@ Size of the Qualitative range is customized using qualitativeRangeSize property.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#bullet1").ejBulletGraph({
                     qualitativeRangeSize: 50
@@ -161,7 +161,7 @@ Length of the **Quantitative****scale** is customized using **quantitativeScaleL
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
                 $("#bullet1").ejBulletGraph({
                     quantitativeScaleLength: 500
