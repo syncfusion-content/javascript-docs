@@ -32,7 +32,7 @@ The following steps explain enabling the right-to-left property for **Dialog** c
 
 **[JavaScript]**
 
-// Enable RTL to the Dialog control by setting enableRTL property as true
+// Enables RTL to the Dialog control by setting enableRTL property as true
     <script type="text/javascript">
         $("#rtlDialog").ejDialog({
             enableRTL: true,
