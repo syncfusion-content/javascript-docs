@@ -17,7 +17,7 @@ The **PivotGrid** is viewed page-by-page through **Pager** option. The **Pager**
 
 {% highlight javascript %}
 
-**[JS]**
+[JS]
 <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
 <div id="Pager1" style="margin-top:10px; overflow: auto"></div>                
 <script type="text/javascript">                     
@@ -52,6 +52,7 @@ The large **PivotGrid** data content is viewed page-by-page using **Virtual Scro
                         enableVirtualScrolling: true
                      });     
 
+{% endhighlight %}
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Paging_images/Paging_img2.png" Caption="PivotGrid with Virtual Scroller"%}
 
