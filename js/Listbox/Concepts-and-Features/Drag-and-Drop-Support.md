@@ -37,7 +37,7 @@ The following steps explains you the behaviour of template support with **ListBo
 
 **[JavaScript]**
   
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 <script type="text/javascript">
     $(function () {
         var skillset = [
