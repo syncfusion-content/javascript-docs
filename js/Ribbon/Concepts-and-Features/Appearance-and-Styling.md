@@ -15,7 +15,6 @@ Specifies the index of the **Ribbon tab** to select the given index tab item in 
 
 {% highlight html %}
 
-**[JS]**
 
      <div id="Ribbon"></div>
         <ul id="menu">
@@ -71,7 +70,6 @@ Specifies the index of the **Ribbon tab** to select the given index tab item in 
 
 {% highlight css %}
 
-**[CSS]**
 
     <style type="text/css">
     .e-ribbon .e-ribbonpaste:before {
@@ -94,8 +92,6 @@ The following output is displayed as a result of the above code example.
 Specifies the index or indexes to disable the corresponding tabs in the **Ribbon** control.
 
 {% highlight html %}
-
-**[JS]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -168,8 +164,6 @@ The following output is displayed as a result of the above code example.
 
 {% highlight html %}
 
-**[JS]**
-
         <div id="Ribbon"></div>
         <ul id="menu">
         <li><a>FILE</a>
@@ -225,8 +219,7 @@ The following output is displayed as a result of the above code example.
 
 {% highlight css %}
 
-   **[CSS]**
-   
+  
         <style type="text/css">
         .e-ribbon .e-ribbonpaste:before {
         content: "\e645";
@@ -250,7 +243,6 @@ This method is used to hide the given text tab in the **Ribbon** control.
 
 {% highlight html %}
 
-**[JS]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -305,7 +297,6 @@ This method is used to hide the given text tab in the **Ribbon** control.
 
 {% highlight css %}
 
-   **[CSS]**
 
      <style type="text/css">
         .e-ribbon .e-ribbonpaste:before {
@@ -331,7 +322,6 @@ This method is used to show the given text tab in the **Ribbon** control.
 
 {% highlight html %}
 
-**[JS]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -387,8 +377,7 @@ This method is used to show the given text tab in the **Ribbon** control.
   
 {% highlight css %}
 
-   **[CSS]**
-   
+     
         <style type="text/css">
         .e-ribbon .e-ribbonpaste:before {
         content: "\e645";
@@ -411,7 +400,6 @@ This method is used to remove the given index tab item from the **Ribbon** contr
 
 {% highlight html %}
 
-**[JS]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -464,8 +452,6 @@ This method is used to remove the given index tab item from the **Ribbon** contr
 {% endhighlight %}
 
 {% highlight css %}
-
-  **[CSS]**
   
         <style type="text/css">
         .e-ribbon .e-ribbonpaste:before {
@@ -488,8 +474,6 @@ The following output is displayed as a result of the above code example.
 Specifies the **width** to the **Ribbon** control.
 
 {% highlight html %}
-
-**[JS]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -540,7 +524,6 @@ Specifies the **width** to the **Ribbon** control.
 
 {% highlight css %}
 
-**[CSS]**
 
         <style type="text/css">
         .e-ribbon .e-ribbonpaste:before {
@@ -571,10 +554,6 @@ This method is used to add Ribbon Group dynamically in the Ribbon control. This 
 
 
 {% highlight html %}
-
- **[JS]**
-
-**[HTML]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -648,9 +627,6 @@ This method is used to add group content dynamically in the ribbon. This method 
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
     <div id="Ribbon"></div>
     <ul id="menu">
@@ -710,7 +686,6 @@ The following output is displayed as a result of the above code example.
 
 {% highlight html %}
 
-**[JS]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -750,9 +725,6 @@ The following screenshot displays the output of the above code example.
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -796,9 +768,6 @@ This method is used to add tab dynamically in the Ribbon control. This method re
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
         <div id="Ribbon"></div>
         <ul id="menu">
@@ -847,9 +816,6 @@ This method is used to add contextual tabs dynamically.This method has two argum
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
         <div id="Ribbon"></div>
         <ul id="menu">

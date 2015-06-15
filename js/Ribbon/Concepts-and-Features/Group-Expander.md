@@ -13,10 +13,6 @@ The **Ribbon** control has group expander support. Set **enableGroupExpander** v
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
-
 	<!-- ... -->
 	<head>
 	</head>

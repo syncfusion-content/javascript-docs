@@ -13,9 +13,6 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
 
 {% highlight html %}
 
-**[JS]**
-**[HTML]**
-
     <!-- ... -->
     <head>
     </head>
