@@ -65,7 +65,7 @@ The following steps explains you to enable keyboard interaction for **Dialog** c
 
 **[JavaScript]**
 
-// Set the width and define the Dialog function
+// Sets the width and define the Dialog function
     <script type="text/javascript">
         $("#keyboardDialog").ejDialog({
             width: 550            
