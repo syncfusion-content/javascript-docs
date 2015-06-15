@@ -11,7 +11,7 @@ documentation: ug
 
 **Adjusting Accordion size**
 
-You can customize the **Accordion** panel height using **heightAdjustMode** property. It can be set to **enum** values like content, fill or auto. By default **heightAdjustMode** is set to **content** so the panel height is adjusted to the content size.
+You can customize the **Accordion** panel height by using the **heightAdjustMode** property. It can be set to **enum** values like content, fill or auto. By default **heightAdjustMode** is set to **content** so the panel height is adjusted to the content size.
 
 **Configure Height of Accordion panel**
 
@@ -27,7 +27,7 @@ The following steps explains you on how to configure **Accordion** panel height.
     <h3>  
         <a href="#">Orubase</a></h3>    
      <div>  <!-- add accordion contents here to load contents under this header -->  
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
     </div>  
     <h3>   
         <a href="#">WinRTXAML</a></h3>     
@@ -49,7 +49,7 @@ The following steps explains you on how to configure **Accordion** panel height.
 
 [JavaScript]
 
-// Configure heightAdjustMode for accordion
+// Configures the heightAdjustMode for accordion
 
             $("#accordion").ejAccordion({
                 heightAdjustMode: "auto"
@@ -83,7 +83,7 @@ The following steps explains you in enabling the **showRoundedCorner** property 
     <h3>  
         <a href="#">Orubase</a></h3>    
       <div>  <!-- add accordion contents here to load contents under this header -->  
-            Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+            Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
         </div>  
         <h3>   
             <a href="#">WinRTXAML</a></h3>     
@@ -105,7 +105,7 @@ The following steps explains you in enabling the **showRoundedCorner** property 
 
 [JavaScript]
 
-// Enable showRoundedCorner for Accordion
+// Enables showRoundedCorner for Accordion
 
     $("#accordion").ejAccordion({
                 showRoundedCorner: true
@@ -138,7 +138,7 @@ The following steps explains you the configuration of icon for an **Accordion** 
             <h3>  
                 <a href="#">Orubase</a></h3>    
           <div>  <!-- add accordion contents here to load contents under this header -->  
-                Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+                Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
             </div>  
             <h3>   
                 <a href="#">WinRTXAML</a></h3>     
@@ -186,7 +186,7 @@ $("#accordion").ejAccordion({
 
 **Set animation**
 
-By default the **Animation** for expanding and collapsing is enabled. To remove the Animation you can set the **enableAnimation** property to **false**. This restricts customizing animations as well. By default **enableAnimation** is set to **true**.
+By default, the **Animation** for expanding and collapsing is enabled. To remove the Animation you can set the **enableAnimation** property to **false**. This restricts customizing animations as well. By default, **enableAnimation** is set to **true**.
 
 Following code disables **Animation** for **Accordion**.
 
@@ -203,7 +203,7 @@ $("#accordion").ejAccordion({
 
 **Expand and collapse speed**
 
-This feature allows you to set the speed for expanding and collapsing the **Accordion** panels. By default it is set to 300 in milliseconds. By configuring the animation speed you can optimize the delay in loading the panel content.
+This feature allows you to set the speed for expanding and collapsing the **Accordion** panels. By default, it is set to 300 in milliseconds. By configuring the animation speed, you can optimize the delay in loading the panel content.
 
 The following code sample sets value for **expandSpeed** and **collapseSpeed** properties,
 
@@ -271,7 +271,7 @@ The following steps allows you to configure **CSS** class for an **Accordion** w
         <h3>  
             <a href="#">Orubase</a></h3>    
       <div>  <!-- add accordion contents here to load contents under this header -->  
-            Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+            Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
         </div>  
         <h3>   
             <a href="#">WinRTXAML</a></h3>     
@@ -292,7 +292,7 @@ The following steps allows you to configure **CSS** class for an **Accordion** w
 
 [JavaScript]
 
-// Set the cssClass property for Accordion
+// Sets the cssClass property for Accordion
 
          $("#accordion").ejAccordion({
                 cssClass: "customCss"
