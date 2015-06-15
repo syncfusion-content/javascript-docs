@@ -2098,7 +2098,7 @@ Simplified.</td></tr>
 
  **Remark:**
 
-'#VALUE!' -Occurs when any of the given value is non-numeric or for values lesser than 0 and greater than 3999. 
+'#VALUE!' -Occurs when any of the given value is non-numeric or for the values lesser than 0 and greater than 3999. 
 
 #### T
 
@@ -2220,7 +2220,7 @@ Where:
 
  **Remarks:**
 
-'#NUM!'-occurs when the number is outside of its constraints.
+'#NUM!'-occurs when the number is outside its constraints.
 
 '#VALUE!'-occurs when the number is a non-numeric value.
 
