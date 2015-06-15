@@ -31,7 +31,7 @@ Add the following code in your **HTML** page.
 
   **[JavaScript]**
   
-  // Add the code in your script section to render DateTimePicker with 1 hour interval between two adjacent times in time picker popup
+  // Adds the code in your script section to render DateTimePicker with 1 hour interval between two adjacent times in time picker popup
   
 	        $('#dateTime').ejDateTimePicker({
 	            interval: 60,
