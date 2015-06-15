@@ -65,7 +65,7 @@ To open or close the **Dialog** widget by using client side API:
 
 **[JavaScript]**
 
-// Set the width and height to the Dialog function and get the Dialog object. Call the open and close methods in the corresponding input button’s click event
+// Sets the width and height to the Dialog function and get the Dialog object. Calls the open and close methods in the corresponding input button’s click event
    
    <script type="text/javascript">
         $("#dialogAPI").ejDialog({
