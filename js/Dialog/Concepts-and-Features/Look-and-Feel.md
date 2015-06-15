@@ -32,7 +32,7 @@ The **CSS** properties can be customized by using **css**Class in the **Dialog**
 
 **[JavaScript]**
 
-// Set the cssClass property to the Dialog function
+// Sets the cssClass property to the Dialog function
     <script type="text/javascript">
         $("#Dialog").ejDialog({
             height: 200,
