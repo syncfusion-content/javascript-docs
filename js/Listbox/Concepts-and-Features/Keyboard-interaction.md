@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard interaction
 
-You can use **Keyboard** shortcut keys as an alternative to the mouse on using **ListBox** widget. **ListBox** Widget allows you to perform all kind of actions using keyboard shortcuts.
+You can use **Keyboard** shortcut keys as an alternative to the mouse by using **ListBox** widget. **ListBox** Widget allows you to perform all kind of actions by using the keyboard shortcuts.
 
 _Table_ _4__: Keyboard shortcut keys_
 
@@ -25,11 +25,11 @@ Focuses into the ListBox text box</td></tr>
 <tr>
 <td>
 Up</td><td>
-Moves to previous item in the ListBox</td></tr>
+Moves to the previous item in the ListBox</td></tr>
 <tr>
 <td>
 Down</td><td>
-Moves to next item in the ListBox</td></tr>
+Moves to the next item in the ListBox</td></tr>
 <tr>
 <td>
 Enter</td><td>
@@ -41,7 +41,7 @@ Moves to previous item in the ListBox</td></tr>
 <tr>
 <td>
 Right </td><td>
-Moves to next item in the ListBox</td></tr>
+Moves to the next item in the ListBox</td></tr>
 <tr>
 <td>
 Home</td><td>
@@ -75,7 +75,7 @@ The following steps explains you to enable keyboard interaction for a **ListBox*
 
 **[JavaScript]**
 
-// Render Listbox control
+// Renders the Listbox control
 <script type="text/javascript">
     $(function () {
         var skillset = [
@@ -100,7 +100,7 @@ The following steps explains you to enable keyboard interaction for a **ListBox*
 
 {% endhighlight %}
 
-Run the sample, press Alt + J to focus in the **ListBox** widget that enables it and you can navigate using arrow keys.
+Run the sample, press Alt + J to focus the **ListBox** widget that enables it and you can navigate by using arrow keys.
 
 
 {% include image.html url="/js/Listbox/Concepts-and-Features/Keyboard-interaction_images/Keyboard-interaction_img1.png" Caption="Figure 29: ListBox focused and moved with Keyboard shortcut"%}
