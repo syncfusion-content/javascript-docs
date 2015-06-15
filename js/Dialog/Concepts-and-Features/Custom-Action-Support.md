@@ -32,7 +32,7 @@ The following steps explains you the implementation of custom action.
 
 **[JavaScript]**
 
-// Set the actionButtons property in the Dialog function. The default value of actionButtons is [“close”]
+// Sets the actionButtons property in the Dialog function. The default value of actionButtons is [“close”]
     <script type="text/javascript">
         $("#customAction").ejDialog({
             width: 300,
