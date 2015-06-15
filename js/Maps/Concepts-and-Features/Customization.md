@@ -43,7 +43,6 @@ The above properties of **shapeSettings** are applied only when **autoFill** pro
 
 {% highlight html %}
 
- **[JS]**
 **[HTML]**
 jQuery(function ($) {
            $("#mapContainer").ejMap({
@@ -123,7 +122,6 @@ Gets or sets the start point and end point gradient colors to be applied for spe
 
 {% highlight html %}
 
-**[JS]**
 **[HTML]**
  jQuery(function ($) {
             $("#mapContainer").ejMap({
@@ -384,7 +382,6 @@ The tooltip is displayed only when you set showTooltip to “True” in the shap
 
 {% highlight html %}
 
-**[JS]**
 **[HTML]**
       jQuery(function ($) {	
              $("#mapContainer").ejMap({
@@ -417,7 +414,6 @@ The tooltipTemplate property is used for customizing the template for tooltip.
 
 {% highlight html %}
 
-**[JS]**
 **[HTML]**
 <script type="text/javascript">
       jQuery(function ($) {			

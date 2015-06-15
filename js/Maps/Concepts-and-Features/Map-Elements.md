@@ -27,7 +27,6 @@ The **markers** property has a list of objects that contains the data for Annota
 
 {% highlight html %}
 
- **[JS]**
 **[HTML]**
 var markers = [
             { latitude: 37.0000, longitude: -120.0000, city: "California" },
@@ -79,7 +78,6 @@ Without datasource, n number of markers can be added to shape layers with **mark
 
 {% highlight html %}
 
-**[JS]**
 **[HTML]**
 jQuery(function ($) {
      $("#mapContainer").ejMap({
@@ -179,7 +177,6 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 {% highlight html %}
 
-**[JS]**
 **[HTML]**
 jQuery(function ($) {
             $("#mapContainer").ejMap({
@@ -280,7 +277,6 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 {% highlight html %}
 
-**[JS]** 
 
 **[HTML]**
 jQuery(function ($) {
@@ -325,7 +321,6 @@ You can provide the left and right labels to interactive legend by using **leftL
 
 {% highlight html %}
 
-**[JS]** 
 **[HTML]**
 jQuery(function ($) {
              $("#mapContainer").ejMap({
@@ -360,7 +355,6 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 {% highlight html %}
 
-**[JS]**
 
 **[HTML]**
 

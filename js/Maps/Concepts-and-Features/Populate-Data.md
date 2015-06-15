@@ -132,7 +132,6 @@ The **JSON** object “populationData” is used as dataSource in the following 
 
 {% highlight html %}
 
-**[JS]**
 **[HTML]**
     <script type="text/javascript">
         jQuery(function ($) {

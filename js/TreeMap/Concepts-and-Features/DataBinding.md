@@ -15,7 +15,6 @@ The **dataSource** property accepts the collection values as input. For example,
 
 {% highlight js %}
 
-**[JS]**  
 
 **[HTML]**
 ****
