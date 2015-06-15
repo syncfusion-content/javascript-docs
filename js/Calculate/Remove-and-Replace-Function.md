@@ -1216,7 +1216,7 @@ Where,
 
 **Remarks:**
 
-'#N/A'-occurs when the reference argument is to another workbook that is not open.
+'#N/A'-occurs when the reference argument is to another workbook that is not opened.
 
 '#N/A'-occurs when the reference argument is to a range containing more than one cell.
 
