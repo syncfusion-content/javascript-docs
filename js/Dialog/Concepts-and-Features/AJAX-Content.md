@@ -30,7 +30,7 @@ The following steps explains you the implementation of **AJAX** content in the *
 
 **[JavaScript]**
 
-// Set the contentUrl from the file reference path and set the contentType as ajax. The default value of contentUrl and contentType are null
+// Sets the contentUrl from the file reference path and sets the contentType as ajax. The default value of contentUrl and contentType are null
     <script type="text/javascript">
         $("#ajaxDialog").ejDialog(
               {
