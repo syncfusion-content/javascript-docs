@@ -105,7 +105,7 @@ The following steps explains you the details of data binding with **ListBox**.
 
 **[JavaScript]**
 
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 <script type="text/javascript">
     jQuery(function ($) {
         // JSON data declaration
@@ -115,7 +115,7 @@ The following steps explains you the details of data binding with **ListBox**.
         { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
         { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
         ];
-        //Render ListBox by mapping fields with JSON data
+        //Renders the ListBox by mapping fields with JSON data
         $("#listboxSample").ejListBox({
             width: "240", dataSource: skillset,
             fields: { text: "skill" }
@@ -156,7 +156,7 @@ The following steps explains you the details of data binding from remote.
 
 **[JavaScript]**
 
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 <script type="text/javascript">
     $(function () {
         // DataManager creation
@@ -256,7 +256,7 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 
    <script type="text/javascript">
         
-**//** Initialize the control and bind the data in **JavaScript**
+**//** Initializes the control and bind the data in **JavaScript**
         var list = [
                     { empid: "cr1", text: "Dodge Avenger" },
                     { empid: "cr2", text: "Chrysler 200" },
