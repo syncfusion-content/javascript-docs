@@ -34,7 +34,7 @@ The following steps explain you the configuration of the **allowMultiSelection**
 
 **[JavaScript]**
 
-// Configure allowMultiSelection option for ListBox control as follows
+// Configures the allowMultiSelection option for ListBox control as follows
 <script type="text/javascript">
     $(function () {
         // JSON data declaration
@@ -83,7 +83,7 @@ The following steps explains you the configuration of **selectedItemlist** prope
 
 **[JavaScript]**
   
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 
 <script type="text/javascript">
     $(function () {
@@ -136,7 +136,7 @@ The following steps explains you the configuration of checkbox options in **List
 
 **[JavaScript]**
 
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 
 <script type="text/javascript">
     $(function () {
@@ -186,7 +186,7 @@ The following steps explains you the configuration of checkbox options in **List
 
 **[JavaScript]**
 
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 
 <script type="text/javascript">
     $(function () {
