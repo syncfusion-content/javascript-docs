@@ -1226,7 +1226,7 @@ Where,
 
 '#N/A'-occurs when the formula cannot be displayed in the worksheet.
 
-'#N/A'-occurs when an external workbook that contains the formula is not open.
+'#N/A'-occurs when an external workbook that contains the formula is not opened.
 
 ### Statistical formulas
 
@@ -1248,7 +1248,7 @@ Where,
 
 **Remarks:**
 
-'#NUM!'-occurs when k is equal to or less than zero, when k is equal to or greater than 1, and when the array is empty.
+'#NUM!'-occurs when k is equal to or lesser than zero, when k is equal to or greater than 1, and when the array is empty.
 
 '#VALUE!'-occurs when k is non-numeric.
 
@@ -1270,7 +1270,7 @@ Where,
 
 **Remarks:**
 
-'#NUM!'-occurs when k is equal to or less than zero, when k is equal to or greater than 1, and when the array is empty.
+'#NUM!'-occurs when k is equal to or lesser than zero, when k is equal to or greater than 1, and when the array is empty.
 
 '#VALUE!'-occurs when k is a non-numeric.
 
@@ -1294,7 +1294,7 @@ Where,
 
 '#NUM!'-occurs when this argument is empty.
 
-'#NUM!'-occurs when the argument is less than one.
+'#NUM!'-occurs when the argument is lesser than one.
 
 #### STDEV.P
 
@@ -1364,7 +1364,7 @@ Where,
 
 '#VALUE!'-occurs when numeric arguments use data types that are non-numeric.
 
-'#NUM!'-occurs when numeric arguments are values that are not valid.
+'#NUM!'-occurs when numeric arguments have values that are not valid.
 
 #### Norm.S.Dist
 
@@ -1414,7 +1414,7 @@ Where,
 
  **Remarks:**
 
-'#NUM!'-occurs when x is lesser than zero and when alpha or beta is equal to or less than zero.
+'#NUM!'-occurs when x is lesser than zero and when alpha or beta is equal to or lesser than zero.
 
 '#VALUE!'-occurs when beta is non-numeric.
 
@@ -1438,7 +1438,7 @@ Where,
 
 **Remarks:**
 
-'#NUM!'-occurs when x is less than zero and if y is equal to or less than zero. 
+'#NUM!'-occurs when x is lesser than zero and y is equal to or lesser than zero. 
 
 '#VALUE!'-occurs when x or y is non-numeric.
 
@@ -1464,7 +1464,7 @@ Where,
 
 **Remarks:**
 
-'#NUM!'-occurs when x is lesser than zero, when z is equal to or lesser than zero and occurs when alpha is equal to or less than zero. 
+'#NUM!'-occurs when x is lesser than zero, when z is equal to or lesser than zero and occurs when alpha is equal to or lesser than zero. 
 
 '#VALUE!'-occurs when x or y or z is non-numeric.
 
@@ -1483,7 +1483,7 @@ Where,
 
 **Remarks:**
 
-'#NUM!'-occurs when x is less than zero.
+'#NUM!'-occurs when x is lesser than zero.
 
 '#VALUE!'-occurs when x is non-numeric.
 
@@ -1507,7 +1507,7 @@ Where,
 
 **Remarks:**
 
-'#NUM!' - occurs when probability is equal to or less than zero and when probability is equal to or greater than one.
+'#NUM!' - occurs when probability is equal to or lesser than zero and when probability is equal to or greater than one.
 
 '#VALUE!' - occurs when probability or degFreedom1 or degFreedom2 is non-numeric.
 
@@ -1825,7 +1825,7 @@ Where,
 
 **Remarks:**
 
-'#NUM!'-occurs when the number is outside of its constraints.
+'#NUM!'-occurs when the number is outside its constraints.
 
 '#VALUE!'-occurs when number is a non-numeric value.
 
@@ -1959,7 +1959,7 @@ _= RandBetween  (start_num, end_num)_
 
 '#NUM!'-Occurs when the end_num value is larger than start_num value.
 
-'#VALUE!'-Occurs when any of the given arguments is non-numeric. 
+'#VALUE!'-Occurs when any of the given argument is non-numeric. 
 
 #### SQRTPI
 
@@ -1975,7 +1975,7 @@ Where**,**
 
 **Remarks:**
 
-'#NUM!'-When the number is less than zero (0).
+'#NUM!'-When the number is lesser than zero (0).
 
 '#VALUE!'-Occurs when any of the given argument is non-numeric. 
 
@@ -2184,7 +2184,7 @@ Where,
 
 **Remarks:**
 
-'#NUM!'-occurs when the number is out of range.
+'#NUM!'-occurs when the number is out of the range.
 
 '#VALUE!'-occurs when the number is a non-numeric value.
 
@@ -2258,9 +2258,9 @@ Where,
 
 **Remarks:**
 
-'#NUM!'-occurs when number is less than one.
+'#NUM!'-occurs when number is lesser than one.
 
-'#VALUE!'-occurs when absolute value of number is less than one.
+'#VALUE!'-occurs when absolute value of number is lesser than one.
 
 #### Trunc
 
