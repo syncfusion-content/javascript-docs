@@ -61,7 +61,7 @@ The following steps explains you on how to enable keyboard interaction for an **
         <h3>  
             <a href="#">Orubase</a></h3>    
       <div>  <!-- add accordion contents here to load contents under this header -->  
-            Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+            Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
         </div>  
         <h3>   
             <a href="#">WinRTXAML</a></h3>     
