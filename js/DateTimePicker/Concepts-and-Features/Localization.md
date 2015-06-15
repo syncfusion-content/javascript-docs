@@ -89,7 +89,7 @@ Add the following code in your **HTML** page.
 
   **[JavaScript]**
   
-  // Add the code in your script section to render the DateTimePicker with Spanish culture
+  // Adds the code in your script section to render the DateTimePicker with Spanish culture
   
 	          $("#dateTime").ejDateTimePicker({
 	              locale: "es-ES"
