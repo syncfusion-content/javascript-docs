@@ -186,7 +186,7 @@ $("#accordion").ejAccordion({
 
 **Set animation**
 
-By default, the **Animation** for expanding and collapsing is enabled. To remove the Animation you can set the **enableAnimation** property to **false**. This restricts customizing animations as well. By default, **enableAnimation** is set to **true**.
+By default, the **Animation** for expanding and collapsing is enabled. To remove the Animation, you can set the **enableAnimation** property to **false**. This restricts customizing animations as well. By default, **enableAnimation** is set to **true**.
 
 Following code disables **Animation** for **Accordion**.
 
