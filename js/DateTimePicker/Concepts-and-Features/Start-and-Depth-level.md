@@ -63,7 +63,7 @@ Add the following code in your **HTML** page.
 
   **[JavaScript]**
   
-  // Add the code in your script section with start level as century in DateTimePicker popup
+  // Adds the code in your script section with start level as century in DateTimePicker popup
 	        $('#dateTime').ejDateTimePicker({
 	            startLevel: "century",
 	        });
