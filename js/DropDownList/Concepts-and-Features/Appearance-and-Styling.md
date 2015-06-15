@@ -50,7 +50,7 @@ The following steps explains you the configuration of **popupHeight** & **popupW
 
 **[JavaScript]**  
 
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 
 <script type="text/javascript">
          $(function () {
@@ -112,7 +112,7 @@ The following steps explains you the configuration of **height** & **width** pro
 
 **[JavaScript]** 
 
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
  
 <script type="text/javascript">
 
