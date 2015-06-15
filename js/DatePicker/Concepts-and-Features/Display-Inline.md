@@ -28,7 +28,7 @@ The following steps explain you how to get the **Calendar** control using **Date
 
   **[JavaScript]**
   
-// Add the code to get the Calendar control using DatePicker
+// Adds the code to get the Calendar control using DatePicker
 
 <script type="text/javascript">
 $(function () {
