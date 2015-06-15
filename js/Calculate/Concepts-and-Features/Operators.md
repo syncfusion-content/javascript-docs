@@ -37,11 +37,11 @@ Binary Logical Operators</td><td>
 </table>
 All operations are subjected to the following hierarchy of operations. The level 1 operations are done first, followed by level 2, and so on. Within the same level, the operations are performed from left to right in the order where they are encountered during the parsing of the formula.
 
-1. - (Unary Minus)
+1. \- (Unary Minus)
 
-2. *    /
+2. \*    /
 
-3. +    -
+3. \+    -
 
 4. &lt;   &gt;    =    &lt;=    &gt;=    &lt;&gt;
 
@@ -118,7 +118,7 @@ Some library functions cannot have arguments, but you can still include the pare
 {% highlight js %}
 
 
-                      calcObj.**addNamedRange**($("#newName").val(), cell
+                      calcObj.addNamedRange($("#newName").val(), cell
 
 
 {% endhighlight %}
