@@ -44,7 +44,7 @@ The following steps explains the implementation of multiple **Dialog** in the sa
 
 **[JavaScript]**
 
-// Write multiple Dialog control in a single web page
+// Writes multiple Dialog control in a single web page
     <script type="text/javascript">
         $("#mvcDialog").ejDialog({ position: { X: 20, Y: 26 } });
         $("#orubaseDialog").ejDialog({ position: { X: 521, Y: 20 } });
