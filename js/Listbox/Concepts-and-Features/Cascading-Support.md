@@ -54,7 +54,7 @@ The following steps explains you the behaviour of cascade **ListBox**.
 
 **[JavaScript]**
   
-// Initialize the control in JavaScript
+// Initializes the control in JavaScript
 
   <script type="text/javascript">
     var target;
@@ -127,7 +127,7 @@ The following steps explains you the behaviour of cascade **ListBox**.
 
 {% endhighlight %}
 
-Configure the styles as follows.
+Configures the styles as follows.
 
 
 
