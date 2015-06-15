@@ -17,38 +17,31 @@ Chart gets data either locally or remotely. To populate the Chart with data, you
 
 {% highlight js %}
 
-**[JS]**
 
-var dataVal = [
-  {"FoodName": "CHEESE BURGER", "Calorie": 100, "Protein": 15, "Fat": 15 },
-  { "FoodName": "PIZZA", "Calorie": 100, "Protein": 15, "Fat": 9 },
-  { "FoodName": "CHICKEN NOODLE", "Calorie": 50, "Protein": 4, "Fat": 2 },
-  { "FoodName": "YOGURT", "Calorie": 75, "Protein": 10, "Fat": 2 },
-  { "FoodName": "BEEF SANDWICH", "Calorie": 125, "Protein": 22, "Fat": 13}
-  ];
-$("#chartcontainer").ejChart({     
+        var dataVal = [
+            {"FoodName": "CHEESE BURGER", "Calorie": 100, "Protein": 15, "Fat": 15 },
+            { "FoodName": "PIZZA", "Calorie": 100, "Protein": 15, "Fat": 9 },
+            { "FoodName": "CHICKEN NOODLE", "Calorie": 50, "Protein": 4, "Fat": 2 },
+            { "FoodName": "YOGURT", "Calorie": 75, "Protein": 10, "Fat": 2 },
+            { "FoodName": "BEEF SANDWICH", "Calorie": 125, "Protein": 22, "Fat": 13}
+        ];
+        $("#chartcontainer").ejChart({     
+            series: [{                        
+                dataSource: dataVal,
+                xName: 'FoodName', 
+                yName: 'Calorie',
+                type:'column'
 
-      series: [{
-
-                 dataSource: dataVal,
-                  xName: 'FoodName', 
-                  yName: 'Calorie',
-                  type:'column'
-
-                  },
-
-                {
-
-                  dataSource: dataVal,
-                  xName: 'FoodName',
-                  yName: 'Protein',
-                  type: 'column'
-                 }
-              ],                      
-                 // ...                       
-});
-});
-
+            },
+            {
+                dataSource: dataVal,
+                xName: 'FoodName',
+                yName: 'Protein',
+                type: 'column'
+            }
+            ],                      
+            // ...                       
+        });
 
 
 {% endhighlight %}
@@ -71,27 +64,24 @@ The following code example illustrates binding **ejChart** to oData service.
 
 {% highlight js %}
 
-**[JS]**
 
-$(function () {
-                //Remote URL           
-                var dataManger = new ej.DataManager({
-                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-
-                });
-                // Query creation
-                var query = ej.Query().from("Orders").take(6);
-                $("#chartcontainer").ejChart(
-                           {
-                               series: [{
-                                   type: 'column',
-                                   dataSource: dataManger,
-                                        xName: "ShipCity",
-				            yName: "Freight", 
-				            query: query,                                   
-                                 }], 
-                           });				
-              });
+        $(function () {
+            //Remote URL           
+            var dataManger = new ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+            // Query creation
+            var query = ej.Query().from("Orders").take(6);
+            $("#chartcontainer").ejChart({
+                series: [{
+                    type: 'column',
+                    dataSource: dataManger,
+                    xName: "ShipCity",
+                    yName: "Freight",
+                    query: query,
+                }],
+            });
+        });
 
 
 {% endhighlight %}

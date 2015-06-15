@@ -15,17 +15,17 @@ This section explains briefly you on how to create a **Chart** in your applicati
 
 This section encompasses on how to configure the **Charts** for your business requirements. You can also pass the required data to default **Chart** and customize it according to your requirements. In this example, you can see how to display the average climate data for Washington, DC during the period 1961 -1990.
 
-{% include image.html url="gettingstarted_images\gettingstarted_img1.png" Caption="Chart"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img1.png" Caption="Chart"%}
 
 **Create a Chart**
 
-Getting started with your **Essential JavaScript Chart** is very easy. You can start by creating a simple line **Chart`**.
+Getting started with your **Essential JavaScript Chart** is very easy. You can start by creating a simple line **Chart**.
 
 1. Create an **HTML** page and add the following code example.
 
 {% highlight html %}
 
-**[HTML]**
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +50,7 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 {% highlight html %}
 
-**[HTML]**
+
 <body>
     <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
 </body>
@@ -64,7 +64,7 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 {% highlight html %}
 
-**[HTML]**
+
 <body>
     <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
     <script type="text/javascript" language="javascript ">
@@ -83,7 +83,7 @@ The above code example renders a **Chart** with the default **Column series** ty
 
 The following screenshot displays the Chart.
 
-{% include image.html url="gettingstarted_images\gettingstarted_img2.png" Caption="Chart"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img2.png" Caption="Chart"%}
 
 **Add a Chart series**
 
@@ -99,7 +99,7 @@ By default, line series is used. To create a **series**, you need to add the fol
 
 {% highlight js %}
 
-**[JS]**
+
             $("#chartcontainer").ejChart({
                 // ...      
                 series: [{
@@ -133,7 +133,7 @@ By default, line series is used. To create a **series**, you need to add the fol
 
 The following screenshot displays a Chart series:
 
-{% include image.html url="gettingstarted_images\gettingstarted_img3.png" Caption="Chart Series"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img3.png" Caption="Chart Series"%}
 
 **Add JSON data to the Chart**
 
@@ -143,7 +143,7 @@ The precipitation data is taken from [http://www.usclimatedata.com/](http://www.
 
 {% highlight js %}
 
-**[JS]**
+
         //Json data for chart datasource
         window.chartData = [
             { date: 'Jan', high: 42, low: 27, precipitation: 3.03 },
@@ -152,12 +152,12 @@ The precipitation data is taken from [http://www.usclimatedata.com/](http://www.
             { date: 'Apr', high: 64, low: 44, precipitation: 3.15 },
             { date: 'May', high: 75, low: 54, precipitation: 4.13 },
             { date: 'Jun', high: 83, low: 63, precipitation: 3.23 },
-       	{ date: 'Jul', high: 87, low: 68, precipitation: 4.13 },
-{ date: 'Aug', high: 84, low: 66, precipitation: 4.88 },
-{ date: 'Sep', high: 78, low: 59, precipitation: 3.82 },
-{ date: 'Oct', high: 67, low: 48, precipitation: 3.07 },
-{ date: 'Nov', high: 55, low: 38, precipitation: 2.83 },
-{ date: 'Dec', high: 45, low: 29, precipitation: 2.8 }
+       	    { date: 'Jul', high: 87, low: 68, precipitation: 4.13 },
+            { date: 'Aug', high: 84, low: 66, precipitation: 4.88 },
+            { date: 'Sep', high: 78, low: 59, precipitation: 3.82 },
+            { date: 'Oct', high: 67, low: 48, precipitation: 3.07 },
+            { date: 'Nov', high: 55, low: 38, precipitation: 2.83 },
+            { date: 'Dec', high: 45, low: 29, precipitation: 2.8 }
         ];
 
 
@@ -170,7 +170,7 @@ Now, set the **datasource** to the **Chart** series using **data, xName, yName**
 
 {% highlight js %}
 
-**[JS]**
+
     $(function () {
             $("#chartcontainer").ejChart(
             {
@@ -209,7 +209,7 @@ Now, set the **datasource** to the **Chart** series using **data, xName, yName**
 
 The following screenshot displays the Chart when **JSON** data is added.
 
-{% include image.html url="gettingstarted_images\gettingstarted_img4.png" Caption="Chart with JSON data"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img4.png" Caption="Chart with JSON data"%}
 
 **Add Chart Axis of your choice**
 
@@ -233,28 +233,28 @@ The following code example illustrates how to add Chart axis.
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart({
-// ...
-      primaryXAxis: {
-            valueType:"category",
-      },
-      primaryYAxis:{
-            valueType: "double",
-            labelFormat: '{value}°F',
-            range:{min:0, max:120,interval:20}
-      },
-      axes:[
-      {
-            orientation:'Vertical',
-            opposedPosition: true,        
-            name: 'Precipitation',
-            range:{min:0,max:6,interval:1},
-            labelFormat: '{value} inch',
-      },
 
-      ],
-// ...             
+    $("#chartcontainer").ejChart({
+    // ...
+          primaryXAxis: {
+                valueType:"category",
+        },
+        primaryYAxis:{
+                valueType: "double",
+                labelFormat: "{value}°F",
+                range:{min:0, max:120,interval:20}
+        },
+        axes:[
+        {
+                orientation:'Vertical',
+                opposedPosition: true,        
+                name: 'Precipitation',
+                range:{min:0,max:6,interval:1},
+                labelFormat: '{value} inch',
+        },
+
+        ]
+    // ...             
 });
 
 
@@ -266,38 +266,38 @@ To assign the **axis** to the respective series, you can set **yAxisName** prope
 
 {% highlight js %}
 
-$(function () {
-$("#chartcontainer").ejChart(
-{
-	// ...             
-series: [
-{
-name: 'Precipitation',
+    $(function () {
+        $("#chartcontainer").ejChart(
+        {
+	       // ...             
+            series: [
+            {
+            name: 'Precipitation',
 			type: 'column', 
 			dataSource: window.chartData, 
 			xName: "date", 
-yName: "precipitation",
-yAxisName:'Precipitation',
+            yName: "precipitation",
+            yAxisName:'Precipitation',
 
-},
-{
-name: 'Low',
+            },
+            {
+            name: 'Low',
 			type: 'line', 
 			dataSource: window.chartData, 
 			xName: "date", 
 			yName: "low"                       
-},
-{
-name: 'High',
+            },
+            {
+            name: 'High',
 			type: 'line', 
 			dataSource: window.chartData, 
 			xName: "date", 
 			yName: "high"                       
-},
-]
-	// ...             
-});
-});
+            },
+            ]
+	       // ...             
+        });
+    });
 
 
 {% endhighlight %}
@@ -306,7 +306,7 @@ name: 'High',
 
 The following screenshot displays a Chart with the desired output.
 
-{% include image.html url="gettingstarted_images\gettingstarted_img5.png" Caption="Chart with axes"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img5.png" Caption="Chart with axes"%}
 
 **Add Data Labels**
 
@@ -314,7 +314,7 @@ The following screenshot displays a Chart with the desired output.
 
 {% highlight js %}
 
-**[JS]** 
+ 
         $("#chartcontainer").ejChart({
             // ...             
             series: [{
@@ -347,7 +347,7 @@ The following screenshot displays a Chart with the desired output.
 
 The following screenshot displays a Chart when data labels are enabled.
 
-{% include image.html url="gettingstarted_images\gettingstarted_img6.png" Caption="Chart with Data Labels"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img6.png" Caption="Chart with Data Labels"%}
 
 **Enable Tooltip**
 
@@ -355,8 +355,8 @@ To display the **tooltip** of **Chart** series, you can enable the “**visible*
 
 {% highlight js %}
 
-**[JS]**
-****$("#chartcontainer").ejChart({
+
+         $("#chartcontainer").ejChart({
             // ...             
             series: [
             {
@@ -392,5 +392,5 @@ To display the **tooltip** of **Chart** series, you can enable the “**visible*
 
 The following screenshot displays a Chart when tooltip is enabled.
 
-{% include image.html url="gettingstarted_images\gettingstarted_img7.png" Caption="Chart with ToolTip"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img7.png" Caption="Chart with ToolTip"%}
 

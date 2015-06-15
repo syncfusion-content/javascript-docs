@@ -9,11 +9,11 @@ documentation: ug
 
 # Localization 
 
-Localization is the****process of customizing the **UI** (User Interface) as locale-specific, in order to display regional data. Using this feature, data can be displayed in a specific language and culture, of a particular country or region. The **JavaScript****OLAP Client** control provides inherent support to localize its **UI**.
+Localization is the**process of customizing the UI** (User Interface) as locale-specific, in order to display regional data. Using this feature, data can be displayed in a specific language and culture, of a particular country or region. The **JavaScript OLAP Client** control provides inherent support to localize its **UI**.
 
 The following table lists the default English localization User Interface based on French culture.
 
-_List of default English localization User Interface based on French culture_
+_Table: List of default English localization User Interface based on French culture_
 
 <table>
 <tr>
@@ -210,22 +210,21 @@ And</td><td>
 " et "</td></tr>
 </table>
 
+<br/>
 
 The following code example shows how to localize OLAP Client’s User Interface (UI) based on French culture.
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapClient1").ejOlapClient({ url: "../wcf/OlapClientService.svc", **locale:"fr-FR"** }); 
 
 
 {% endhighlight %}
 
-
-
 {% highlight html %}
 
-**[HTML]**
+[HTML]
 <script type="text/javascript">
  {
 ej.olap.OlapClient.locale["fr-FR"] = {
@@ -292,8 +291,6 @@ Exit:"Quitter"
 
 {% endhighlight %}
 
-
-
 > _**Note: In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube**_
 
 **Localizing Control Information**
@@ -302,7 +299,7 @@ To apply control side localization, use the following code example.
 
 {% highlight html %}
 
-**[HTML]**
+[HTML]
 ej.olap.OlapClient.locale["zh-CN"]={
 //Corresponding keyword values needs to be set here.
 }
@@ -310,15 +307,13 @@ ej.olap.OlapClient.locale["zh-CN"]={
 
 {% endhighlight %}
 
-
-
 **Localizing Cube Information**
 
-To get the localized Cube information,set **Locale****Identifier**__in the connection string.
+To get the localized Cube information,set **Locale Identifier** in the connection string.
 
 {% highlight c# %}
 
-**[C#]**
+[C#]
 //1036 refers to“fr-FR” culture.
 String connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);
@@ -328,11 +323,8 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 {% endhighlight %}
 
-
-
 The following screenshot shows the OLAP Client with French localization.
 
-{% include image.html url="/js/OlapClient/Concepts-and-Features/Localization_images/Localization_img1.png" Caption=""%}
+{% include image.html url="/js/OlapClient/Concepts-and-Features/Localization_images/Localization_img1.png" Caption="Localized OLAP Client"%}
 
-_Localized OLAP Client_
 

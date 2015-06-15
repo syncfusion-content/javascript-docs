@@ -7,19 +7,17 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-# Indicators
+### Indicators
 
-**KPIs** are displayed with **Trend and Status visualizations** that supports Traffic Light, Road Signs and Standard Arrow .Status and Trend values are highlighted through user friendly images__within the **OlapGauge** that is known as **indicators**.
+**KPIs** are displayed with **Trend and Status visualizations** that supports Traffic Light, Road Signs and Standard Arrow .Status and Trend values are highlighted through user friendly images within the **OlapGauge** that is known as **indicators**.
 
-## Hiding Indicators
+#### Hiding Indicators
 
 You can hide the **Indicator** by changing the “**showIndicator**” property to “**false**”.
 
-
-
 {% highlight js %}
 
-**[JS]**
+[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
         backgroundColor: "transparent", 
@@ -88,9 +86,5 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 
 
-
-
-
-
-{% include image.html url="/js/OlapGuage/Concepts-and-Features/Indicators_images/Indicators_img1.png" Caption="Figure: Hiding Indicators"%}
+{% include image.html url="/js/OlapGauge/Concepts-and-Features/Indicators_images/Indicators_img1.png" Caption="Hiding Indicators"%}
 

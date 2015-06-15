@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-# Label
+### Label
 
 **Label** represents the text on the axis data points in the Chart. Each axis data point are represented by separate label text information in order to provide precise information about each points. **Label** text is displayed in a customizable format.
 
@@ -17,7 +17,7 @@ Font style and color of the label text is customized with the help of **font** a
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
         primaryXAxis: { font: { fontFamily: "Algerian", fontWeight: "lighter", fontStyle: "Italic", size: "14px", color: "red" } },
@@ -26,12 +26,11 @@ $("#OlapChart1").ejOlapChart({
  });
 
 
-
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Label_images/Label_img1.png" Caption="Label Text Customization "%}
+
+<br/>
 
 **Rotating Axis Labels**
 
@@ -39,14 +38,13 @@ You can rotate the labels to desired angle. The axis labels are rendered in the 
 
 {% highlight js %}
 
-**[JS]**
+[JS]
 $("#OlapChart1").ejOlapChart({ url: "../wcf/OlapChartService.svc", 
 primaryXAxis: { labelRotation: 45 }
 });
 
 
 {% endhighlight %}
-
 
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Label_images/Label_img2.png" Caption="Label Rotation"%}

@@ -7,33 +7,32 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Key Performance Indicator (KPI)
+### Key Performance Indicator (KPI)
 
-**Key****Performance****Indicators** are a collection of calculations associated with a measure group that evaluates business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. **KPIs** also have additional metadata that provide information about how grid applications display the results of the **KPI** calculations.
+**Key Performance Indicators** are a collection of calculations associated with a measure group that evaluates business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. **KPIs** also have additional metadata that provide information about how grid applications display the results of the **KPI** calculations.
 
-_**Note: This feature is applicable only for OLAP datasource.**_
+>_**Note: This feature is applicable only for OLAP datasource.**_
 
 The different types of available indicators are as follows:
 
-* KPI Goal
+  * KPI Goal
 
-* KPI Status
+  * KPI Status
 
-* KPI Trend
+  * KPI Trend
 
-* KPI Value
-
-
+  * KPI Value
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.jpeg" Caption="KPI in OlapGrid"%}
 
+<br/>
+
 The following code example illustrates how to initialize **KPI** element within the **OLAP** Report:
-
-
 
 {% highlight c# %}
 
 **[C#]**
+
    private OlapReport CreateOlapReport()
         {
          OlapReport olapReport = new OlapReport();
@@ -42,7 +41,8 @@ The following code example illustrates how to initialize **KPI** element within 
          DimensionElement dimensionElementColumn = new DimensionElement();
          dimensionElementColumn.Name = "Product";
          dimensionElementColumn.AddLevel("Product Categories", "Category");             
-         dimensionElementColumn.Hierarchy.LevelElements["Category"].Add("Accessories");            dimensionElementColumn.Hierarchy.LevelElements["Category"].IncludeAvailableMembers = true;
+         dimensionElementColumn.Hierarchy.LevelElements["Category"].Add("Accessories");           
+         dimensionElementColumn.Hierarchy.LevelElements["Category"].IncludeAvailableMembers = true;
          MeasureElements measureElementColumn = new MeasureElements();      
          measureElementColumn.Elements.Add(new MeasureElement { Name = "Gross Profit" });
          DimensionElement dimensionElementRow = new DimensionElement();           

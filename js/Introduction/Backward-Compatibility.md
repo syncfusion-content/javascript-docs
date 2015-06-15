@@ -34,7 +34,8 @@ ej.Orientation = {    Horizontal: "horizontal",              �
 </table>
 
 
-The other changes based on each components are as follows,__
+
+The other changes based on each components are as follows,
 
 <table>
 <tr>
@@ -110,6 +111,7 @@ ejOlapGrid</td><td>
 ejSplitter</td><td>
 </td></tr>
 </table>
+
 **ejAccordion**
 
 <table>
@@ -179,7 +181,7 @@ We have removed this method. Already we have <b>hide </b>method to achieve this
 <tr>
 <td>
 panelCount</td><td>
- <b>getItemsCount</b></td><td>
+ getItemsCount</td><td>
  </td></tr>
 <tr>
 <td>
@@ -194,8 +196,8 @@ We have removed this method. Already we have <b>show method</b> to achieve thi
 <tr>
 <td>
  <b>Enum</b></td><td>
- ej.Accordion.heightFormat = {        Content: "content",             Auto: "auto",               Fill: "fill"    }; </td><td>
- ej.Accordion.HeightAdjustMode = {        Content: "content",             Auto: "auto",                Fill: "fill"    };</td><td>
+ ej.Accordion.heightFormat = { Content: "content", Auto: "auto", Fill: "fill" }; </td><td>
+ ej.Accordion.HeightAdjustMode = { Content: "content", Auto: "auto", Fill: "fill" };</td><td>
  </td></tr>
 <tr>
 <td>
@@ -216,6 +218,7 @@ args.activePanel</td><td>
  </td><td>
 Removed event argument</td></tr>
 </table>
+
 **ejAutoComplete**
 
 <table>
@@ -229,108 +232,108 @@ Removed event argument</td></tr>
 <td rowspan = "19">
   <b>Properties</b></td><td>
 fields: {uniqueKeyhtmlAttr}</td><td>
-<b>key,htmlAttributes</b></td><td>
+key,htmlAttributes</td><td>
  </td></tr>
 <tr>
 <td>
 Grouping</td><td>
-<b>allowGrouping</b></td><td>
+allowGrouping</td><td>
  </td></tr>
 <tr>
 <td>
 Distinct</td><td>
-<b>enableDistinct</b></td><td>
+enableDistinct</td><td>
  </td></tr>
 <tr>
 <td>
 sortOrder</td><td>
-<b>sortingOrder</b></td><td>
+sortingOrder</td><td>
  </td></tr>
 <tr>
 <td>
 allowNew</td><td>
-<b>allowAddNew</b></td><td>
+allowAddNew</td><td>
  </td></tr>
 <tr>
 <td>
 roundedCorner</td><td>
-<b>showRoundedCorner </b></td><td>
+showRoundedCorner</td><td>
  </td></tr>
 <tr>
 <td>
 Watermark</td><td>
-<b>watermarkText</b></td><td>
+watermarkText</td><td>
  </td></tr>
 <tr>
 <td>
 Filter</td><td>
-<b>filterType</b></td><td>
+filterType</td><td>
  </td></tr>
 <tr>
 <td>
 caseSensitive</td><td>
-<b>caseSensitiveSearch</b></td><td>
+caseSensitiveSearch</td><td>
  </td></tr>
 <tr>
 <td>
 loadingImage</td><td>
-<b>showLoadingIcon</b></td><td>
+showLoadingIcon</td><td>
  </td></tr>
 <tr>
 <td>
 listSize </td><td>
-<b>itemsCount</b></td><td>
+itemsCount</td><td>
  </td></tr>
 <tr>
 <td>
 dropdown</td><td>
-<b>showPopupButton</b></td><td>
+showPopupButton</td><td>
  </td></tr>
 <tr>
 <td>
 autoFill</td><td>
-<b>enableAutoFill</b></td><td>
+enableAutoFill</td><td>
  </td></tr>
 <tr>
 <td>
 rtl</td><td>
-<b>enableRTL  </b></td><td>
+enableRTL </td><td>
  </td></tr>
 <tr>
 <td>
 noResults</td><td>
-<b>emptyResultText</b></td><td>
+emptyResultText</td><td>
  </td></tr>
 <tr>
 <td>
 showNoResults</td><td>
-<b>showEmptyResultText</b></td><td>
+showEmptyResultText</td><td>
  </td></tr>
 <tr>
 <td>
 persist</td><td>
-<b>enablePersistence </b></td><td>
+enablePersistence </td><td>
  </td></tr>
 <tr>
 <td>
 suggestionBoxHeight</td><td>
-<b>popupHeight</b></td><td>
+popupHeight</td><td>
  </td></tr>
 <tr>
 <td>
 suggestionBoxWidth </td><td>
-<b>popupWidth</b></td><td>
+popupWidth</td><td>
  </td></tr>
 <tr>
 <td rowspan = "2">
  <b>Enum</b></td><td>
- ej.sortingOrder = {Ascending:"ascending",               Descending: "descending"    }; </td><td>
- ej.SortOrder = {        Ascending: "ascending",        Descending: "descending"    };</td><td>
+ ej.sortingOrder = { Ascending:"ascending", Descending: "descending" }; </td><td>
+ ej.SortOrder = { Ascending: "ascending", Descending: "descending" };</td><td>
  </td></tr>
 <tr>
 <td>
- ej.multiSelectMode = {        None: "none",        Delimiter: "delimiter",        VisualMode: "visualmode"    } </td><td>
- ej.MultiSelectMode = {        None: "none",        Delimiter: "delimiter",        VisualMode: "visualmode"    }</td><td>
+ ej.multiSelectMode = { None: "none", Delimiter: "delimiter", VisualMode: "visualmode" } </td><td>
+ ej.MultiSelectMode = { None: "none", Delimiter: "delimiter", VisualMode: "visualmode" }</td><td>
  </td></tr>
 <tr>
 <td>
@@ -357,6 +360,7 @@ args.selectedText</td><td>
 args.text</td><td>
  </td></tr>
 </table>
+
 **ejBarcode**
 
 <table>
@@ -368,7 +372,7 @@ args.text</td><td>
 <b>Comments</b></td></tr>
 <tr>
 <td>
-<b>SymbologyType(Enum)</b></td><td>
+SymbologyType(Enum)</td><td>
 symbologyType</td><td>
 SymbologyType</td><td>
  </td></tr>

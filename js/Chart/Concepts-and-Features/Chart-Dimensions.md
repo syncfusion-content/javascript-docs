@@ -19,14 +19,11 @@ You can specify the width and height in pixels to change the dimension of the Ch
 
 {% highlight js %}
 
-**[JS]**
 
-
-$("#chartcontainer").ejChart(
-               {                   
-                     	              size: { width: "800", height: "600" },
-                    canResize: true,
-               });
+****$("#chartcontainer").ejChart({
+            size: { width: "800", height: "600" },
+            canResize: true,
+        });
 
 
 {% endhighlight %}
@@ -45,13 +42,14 @@ You can also set the width and height of the **Chart** in percentage. The Chart 
 
 {% highlight js %}
 
-<div id="chartContainer" style="width:700px;height:500px;border-color:#ff0000;border-style:solid;"/>
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                      		size: { width: "80%", height: "90%" },                     
-               });
+    <div id="chartContainer" style="width: 700px; height: 500px; border-color: #ff0000; border-style: solid;">
+    </div>
+
+
+        $("#chartcontainer").ejChart({
+            size: { width: "80%", height: "90%" },
+        });
 
 
 {% endhighlight %}

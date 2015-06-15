@@ -17,7 +17,7 @@ The **Quantitative Scale** appearance is customized using **quantitativeScaleSet
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     quantitativeScaleSettings: {                      
@@ -43,7 +43,7 @@ Bullet Graph does not position Quantitative scale automatically based on its siz
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     quantitativeScaleSettings: {                      
@@ -64,7 +64,7 @@ Color, size and width of **Major tick** lines are customized using **majorTickSe
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     quantitativeScaleSettings: {                      
@@ -91,7 +91,7 @@ Minor ticks can also be customized similar to major ticks. The properties stroke
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     quantitativeScaleSettings: {                      
@@ -118,7 +118,7 @@ The following screenshot displays **Bullet Graph** with customized **Minor ticks
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     quantitativeScaleSettings: {                      
@@ -143,7 +143,7 @@ The following screenshot displays **Bullet Graph** with ticks positioned above q
 
 {% highlight js %}
 
-**[JS]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                 value: 8,
@@ -178,7 +178,7 @@ The following screenshot displays **Bullet Graph** ticks inside **Quantitative S
 
 {% highlight js %}
 
-**[JS]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     quantitativeScaleSettings: {                      
@@ -214,7 +214,7 @@ The following screenshot displays **Bullet Graph** labels in blue color
 
 {% highlight js %}
 
-**[JS]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                 value: 8,
@@ -251,7 +251,7 @@ Performance measure bar is customized using featuredMeasureSettings in quantitat
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     value: 5,
@@ -278,7 +278,7 @@ Comparative symbol color and width are customized using comparativeMeasureSettin
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     comparativeMeasureValue: 5,
@@ -305,7 +305,7 @@ The following screenshot displays **Bullet Graph** with customized **Comparative
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     qualitativeRangeSize: 60,

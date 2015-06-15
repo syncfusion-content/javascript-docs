@@ -9,7 +9,7 @@ documentation: ug
 
 ## Function Library
 
-The **Function Library** contains many functions from statistics, finance, and mathematics, along with other general purpose functions. There are more than 200 entries in the library, and it is easy to add your own calculations. The functions are discussed in the following topics.
+The **Function Library** contains many functions from statistics, finance, and mathematics, along with other general purpose functions. There are more than 150 entries in the library, and it is easy to add your own calculations. The functions are discussed in the following topics.
 
 ### Add Function
 

@@ -35,12 +35,12 @@ Such visual indications through keyboard navigation are very useful for the acce
 
 
 
-Each and every widgets available within the **Syncfusion Essential JavaScript suite** has its unique behaviour and responds appropriately to the keyboard actions. As an example, we will look onto the below **3****editors** placed on the same page and how to navigate between them through keyboard,
+Each and every widgets available within the **Syncfusion Essential JavaScript suite** has its unique behaviour and responds appropriately to the keyboard actions. As an example, we will look onto the below **3** **editors** placed on the same page and how to navigate between them through keyboard,
 
 ![](Accessibility_images/Accessibility_img1.png)
 {:.image }
 
-                 Figure 28: Editors
+         Editors
 {:.caption }
 
 
@@ -74,19 +74,20 @@ All the Syncfusion widgets are assigned with built-in **States** and **propertie
 
 For example, our Syncfusion **button** widget, when created through JavaScript code will render in the web browser with HTML DOM elements (along with the assigned built-in ARIA attributes) as shown below,
 
-{% highlight js %}
+{% highlight html %}
 
-
-//  container to render the Syncfusion button
+<!--container to render the Syncfusion button-->
 <button id="button11">login</button>
+
+{% endhighlight %}
+
+{% highlight js %} 
 
 //  initialization of ejButton widget 
 $("#button11").ejButton({
      size: "normal",
      showRoundedCorner : true
 });
-
-
 
 {% endhighlight %}
 
@@ -97,7 +98,7 @@ When the above code is executed on the browser, the Syncfusion button widget wil
 {% highlight html %}
 
 
-<button id="button11" class="e-button e-js e-btn-normal e-btn e-select e-widget e-corner-all" tabindex="" type="submit" role="button" **aria-describedby="login"****aria-disabled="false"**></button>
+<button id="button11" class="e-button e-js e-btn-normal e-btn e-select e-widget e-corner-all" tabindex="" type="submit" role="button" aria-describedby="login" aria-disabled="false"></button>
 
 
 {% endhighlight %}

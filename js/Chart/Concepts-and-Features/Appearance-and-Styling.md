@@ -15,9 +15,8 @@ documentation: ug
 
 You can customize a **tooltip** with required template by adding a **“div”** element with an **“id”** to the web page and assigning the **“id”** to the property **“template”** under **“tooltip”** as illustrated in the following code example.
 
-{% highlight js %}
+{% highlight html %}
 
-**[HTML]**
     <div id="Tooltip" style="display: none;">
         <div id="icon">
             <div id="grain"></div>
@@ -74,7 +73,6 @@ You can customize a **tooltip** with required template by adding a **“div”**
     </style>
     <script type="text/javascript" language="javascript "> 
 
-**[JS]**
 
         $(function () {
             $("#container").ejChart({
@@ -99,7 +97,7 @@ You can customize a **tooltip** with required template by adding a **“div”**
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img1.png" Caption="Chart with Customized ToolTip"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Chart with Customized ToolTip"%}
 
 ## Label Template
 
@@ -107,7 +105,6 @@ You customize a **data label** with required template by adding a **“div”** 
 
 {% highlight js %}
 
-**[HTML]**
     <div id="template">
 
         <div id="left">
@@ -150,7 +147,7 @@ You customize a **data label** with required template by adding a **“div”** 
             display: none;
         }
     </style>
-**[JS]**
+
     <script type="text/javascript" language="javascript">
         $(function () {
             $("#container").ejChart(
@@ -181,7 +178,7 @@ You customize a **data label** with required template by adding a **“div”** 
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img2.png" Caption="Chart with Customized Label"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Chart with Customized Label"%}
 
 ## Label Formatting
 
@@ -191,7 +188,6 @@ By default, the label texts are automatically determined based on the axis data 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             primaryYAxis:
@@ -228,7 +224,6 @@ Some of the **labelFormat** for **datetime** axis:
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             primaryXAxis:
@@ -245,7 +240,7 @@ Some of the **labelFormat** for **datetime** axis:
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img3.png" Caption="Chart with Customized Axis Labels"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Chart with Customized Axis Labels"%}
 
 ## Title and Subtitle
 
@@ -253,7 +248,6 @@ Some of the **labelFormat** for **datetime** axis:
 
 {% highlight js %}
 
-**[JS]**
        $("#chartcontainer").ejChart({
             title: {
                 text: "Chart Title",
@@ -268,7 +262,7 @@ Some of the **labelFormat** for **datetime** axis:
 
 The following screenshot shows the **Title and Subtitle** in **Chart** control.
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img4.png" Caption="Title and subtitle"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="Title and subtitle"%}
 
 ## Chart Background and Foreground
 
@@ -282,7 +276,6 @@ Using the **background** property you can customize the background color of the 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             background: '#1E90FF',
             // ...             
@@ -293,7 +286,7 @@ Using the **background** property you can customize the background color of the 
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img5.png" Caption="Chart with customized background"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="Chart with customized background"%}
 
 ### To Chart Area
 
@@ -303,7 +296,6 @@ Using **background** property in **ChartArea** you can customize the background 
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             chartArea: { background: '#cc3333' },
@@ -315,7 +307,7 @@ Using **background** property in **ChartArea** you can customize the background 
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img6.png" Caption="Chart with Customized Chart area"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="Chart with Customized Chart area"%}
 
 ### BackGround Image
 
@@ -323,19 +315,17 @@ JS Chart allows you to add background image for your Chart using backGroundImage
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             backGroundImageUrl: '../images/chart/wheat.png',
             // ...             
         });
 
-
 {% endhighlight %}
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img7.png" Caption="Chart with background image"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption="Chart with background image"%}
 
 ## Theme
 
@@ -359,13 +349,11 @@ Chart has built-in theme support. The theme configures the colors of following C
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             theme: 'gradientlight',
             // ...             
         });
-
 
 {% endhighlight %}
 
@@ -405,7 +393,7 @@ Following predefined themes are available in **JS Chart**.
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img8.png" Caption="Chart with Theme"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img8.png" Caption="Chart with Theme"%}
 
 ## Custom Color palette 
 
@@ -413,7 +401,6 @@ Apart from the themes, to define custom set of color you can use “**palette**�
 
 {% highlight js %}
 
-**[JS]**
         $("#chartcontainer").ejChart({
             // ...              
             palette: ["#69D2E7", "#E27F2D", "#6A4B82"],
@@ -425,5 +412,5 @@ Apart from the themes, to define custom set of color you can use “**palette**�
 
 
 
-{% include image.html url="appearanceandstyling_images\appearanceandstyling_img9.png" Caption="Chart with Palette property"%}
+{% include image.html url="/js/Chart/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img9.png" Caption="Chart with Palette property"%}
 

@@ -27,7 +27,7 @@ Install the Syncfuion JavaScript NuGet package in your project. Once installatio
 
 Add the script files and CSS files in the title tag of _the_ default.html page.
 
-> _**Note: Please follow the following order while adding scripts and styles.**_
+> _*Note: Follow the following order while adding the scripts and styles.*_
 
 
 
@@ -75,7 +75,7 @@ This section encompasses the details on how you can configure the **calculate** 
 
 Add the script files and CSS files in the title tag of the default.html page.
 
-> _**Note: Please keep the following order while adding scripts and styles.**_
+> _*Note: Keep the following order while adding the scripts and styles.*_
 
 
 

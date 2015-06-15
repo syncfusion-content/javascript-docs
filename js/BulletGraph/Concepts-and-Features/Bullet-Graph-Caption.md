@@ -17,7 +17,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     quantitativeScaleSettings: {
@@ -61,7 +61,7 @@ The following screenshot displays a **Bullet Graph** with customized caption usi
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     height: 700, width: 600,
@@ -98,7 +98,7 @@ Indicator displays a symbol along with text which is different from caption and 
 
 {% highlight js %}
 
-**[JS]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                     captionSettings: {
@@ -148,7 +148,7 @@ The title, subtitle and indicator text can be overlapped to the scale group. You
 
 {% highlight js %}
 
-**[JS]**
+
 
 $("#BulletGraph1").ejBulletGraph({
       captionSettings: {
@@ -177,7 +177,7 @@ The property, textPosition, is used to position the text at the top, bottom, lef
 
 {% highlight js %}
 
-**[JS]**
+
 
             $("#BulletGraph1").ejBulletGraph({
                 value: 8,
@@ -211,7 +211,7 @@ Alignment of text at different positions with respect to scale can be customized
 
 {% highlight js %}
 
-**[JS]**
+
 
             $("#BulletGraph1").ejBulletGraph({
                 value: 8,
@@ -256,7 +256,7 @@ Text elements aligned at the same position are anchored by using the textAnchor 
 
 {% highlight js %}
 
-**[JS]**
+
 
             $("#BulletGraph1").ejBulletGraph({
                 value: 8,
@@ -299,7 +299,7 @@ The space required between text and quantitative scale is customized by using th
 
 {% highlight js %}
 
-**[JS]**
+
 
 $("#BulletGraph1").ejBulletGraph({
                 value: 8,

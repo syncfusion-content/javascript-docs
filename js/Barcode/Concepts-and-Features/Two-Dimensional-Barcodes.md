@@ -19,7 +19,6 @@ Here is the code snippet to create a QR Barcode:
 
 {% highlight js %}
 
-[JavaScript]
 
 $("#barcode").ej.Barcode({ text:"B5330E8278BC4C797C49DD3ED5AD9715", symbologyType: "qrbarcode", xDimension: 8});
 

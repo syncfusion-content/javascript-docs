@@ -13,13 +13,12 @@ documentation: ug
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-         enableCanvasRendering : true,
-                   // ...             
-               });
+
+       $("#chartcontainer").ejChart({
+            // ...             
+            enableCanvasRendering: true,
+            // ...             
+        });
 
 
 {% endhighlight %}

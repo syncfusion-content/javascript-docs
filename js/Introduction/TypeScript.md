@@ -15,18 +15,22 @@ Apart from the type-checking, it also supports the other important concepts like
 
 The installed location on your machine where you can be availed with **ej.widgets.all.d.ts** file is as follows,
 
-{% highlight text %}
-
-**<installed location>**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
-
+<table>
+<tr>
+<td>
+**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
+</td>
+</tr>
+<tr>
+<td>
+<br/>
 **For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
-
-
-{% endhighlight %}
-
-
+<br/>
+**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
+</td>
+</tr>
+</table>
+<br/>
 
 Apart from the above specified file (**ej.widgets.all.d.ts**), it is also necessary to make use of the **jquery.d.ts** file in your TypeScript application, which can be downloaded from [here](https://github.com/borisyankov/DefinitelyTyped).
 
@@ -47,7 +51,7 @@ To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below men
 ![](TypeScript_images/TypeScript_img1.png)
 {:.image }
 
-Figure 30: Visual Studio New Project Pop-up
+    Visual Studio New Project Pop-up
 {:.caption }
 
 
@@ -58,7 +62,7 @@ Figure 30: Visual Studio New Project Pop-up
 ![](TypeScript_images/TypeScript_img2.png)
 {:.image }
 
-                               Figure 31: scripts & themes folder copied into current project
+    scripts & themes folder copied into current project
 {:.caption }
 
 
@@ -69,7 +73,7 @@ Figure 30: Visual Studio New Project Pop-up
 ![](TypeScript_images/TypeScript_img3.png)
 {:.image }
 
-              Figure 32: ej.widgets.all.d.ts & jquery.d.ts files added to the project
+    ej.widgets.all.d.ts & jquery.d.ts files added to the project
 {:.caption }
 
 
@@ -82,7 +86,7 @@ Now, refer these two files within the **app.ts** file (before referring these fi
 ![](TypeScript_images/TypeScript_img4.png)
 {:.image }
 
-                      Figure 33: Reference of ej.widgets.all.d.ts & jquery.d.ts files in app.ts
+    Reference of ej.widgets.all.d.ts & jquery.d.ts files in app.ts
 {:.caption }
 
 
@@ -93,7 +97,7 @@ Now, refer these two files within the **app.ts** file (before referring these fi
 ![](TypeScript_images/TypeScript_img5.png)
 {:.image }
 
-Figure 34: Script & StyleSheet reference, Container declaration in index.html page
+    Script & StyleSheet reference, Container declaration in index.html page
 {:.caption }
 
 
@@ -114,14 +118,14 @@ Initialization of Syncfusion widgets can be done through the instance created fo
 ![](TypeScript_images/TypeScript_img6.png)
 {:.image }
 
-
+    Initializing DatePicker widget through ej.DatePicker class
 {:.caption }
-_Figure 38: Initializing DatePicker widget through_ _**ej.DatePicker**_ _class_
+
 
 ![](TypeScript_images/TypeScript_img7.png)
 {:.image }
 
-Figure 39: Accessing DatePicker methods through the DatePicker instance
+    Accessing DatePicker methods through the DatePicker instance
 {:.caption }
 
 
@@ -134,7 +138,7 @@ Here, the widgets are initialized using the plug-in name, by passing all the req
 ![](TypeScript_images/TypeScript_img8.png)
 {:.image }
 
-Figure 35: Initializing the DatePicker widget through intelliSense
+    Initializing the DatePicker widget through intelliSense
 {:.caption }
 
 
@@ -143,7 +147,7 @@ Figure 35: Initializing the DatePicker widget through intelliSense
 ![](TypeScript_images/TypeScript_img9.png)
 {:.image }
 
-Figure 36: Configuring the DatePicker properties
+    Configuring the DatePicker properties
 {:.caption }
 
 
@@ -152,7 +156,7 @@ Figure 36: Configuring the DatePicker properties
 ![](TypeScript_images/TypeScript_img10.png)
 {:.image }
 
-Figure 37: Accessing the DatePicker methods through the widgets’ object
+    Accessing the DatePicker methods through the widgets’ object
 {:.caption }
 
 

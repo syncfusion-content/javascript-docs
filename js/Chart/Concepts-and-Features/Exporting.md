@@ -15,22 +15,18 @@ The **EJChart** supports client-side exporting using **canvg** script. **canvg**
 
 {% highlight js %}
 
-<img src="../images/chart/export.png" onclick="onExport()" title="Export Chart" style="float: right" />
-<div id="container"></div>
-<canvas id="canvas2" style="display:none"></canvas>
+    <img src="../images/chart/export.png" onclick="onExport()" title="Export Chart" style="float: right" />
+    <div id="container"></div>
+    <canvas id="canvas2" style="display: none"></canvas>
 
-**[JS]**
-
-$("#chartcontainer").ejChart(
-               {   
-           });
+        $("#chartcontainer").ejChart({   
         });
-function onExport() {
+        function onExport() {
             var canvas = document.getElementById('canvas2');
             svg = $("#container").html();
             canvg(canvas, svg);
             var image = canvas.toDataURL("image/png")
-                              .replace("image/png","image/octet-stream");
+                              .replace("image/png", "image/octet-stream");
             var downloadLink = document.createElement("a");
             downloadLink.href = image;
             downloadLink.download = "Chart.png";
@@ -38,8 +34,7 @@ function onExport() {
             downloadLink.click();
             document.body.removeChild(downloadLink);
             $('#canvas2').hide();
-        }
-
+        }         
 
 
 {% endhighlight %}

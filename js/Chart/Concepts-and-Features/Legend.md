@@ -17,34 +17,23 @@ documentation: ug
 
 {% highlight js %}
 
-**[JS]**
 
-  $("#container").ejChart({
-
-       legend: {
-
+                $("#container").ejChart({
+            legend: {
                 visible: true,
-
-                title:
-                   {
-                      text:"Countries",
-
-                      textAlignment: 'center',
-
-                        font: {
-
-                            size: ' 18px',
-
-                            color: 'black',
-
-                            fontFamily: "Segoe UI",
-
-                            fontStyle: "normal"
-                        },  
-
-                    },      
-
-            },        
+                title: {
+                    text: "Countries",
+                    textAlignment: 'center',
+                    font: {
+                        size: ' 18px',
+                        color: 'black',
+                        fontFamily: "Segoe UI",
+                        fontStyle: "normal"
+                    },
+                },
+            }
+            // ...
+        });
 
 
 {% endhighlight %}
@@ -61,14 +50,12 @@ You can position the **legend** at top, bottom, left or right position of the Ch
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                      legend: { visible: true, position: 'bottom' ,  alignment: 'center'}
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: { visible: true, position: 'bottom', alignment: 'center' }
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -85,14 +72,15 @@ In **EjChart**, you can customize the legend shape with different symbols like r
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                     legend: { visible: true, border: { color: 'red', width: 2 }, shape: 'circle' }
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                visible: true,
+                border: { color: 'red', width: 2 }, shape: 'circle'
+            }
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -107,14 +95,12 @@ $("#chartcontainer").ejChart(
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                    legend: { visible: true, rowCount: 2 }
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: { visible: true, rowCount: 2 }
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -129,16 +115,19 @@ EjChart allows you to customize the legend item size, and border color and width
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-                                       legend: { visible: true, rowCount: 2, 
-                    itemStyle: { height: 12, width: 12, border: { color: 'magenta', width: 1.5 } }, }
-
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                visible: true, rowCount: 2,
+                itemStyle:
+                    {
+                        height: 12, width: 12,
+                        border: { color: 'magenta', width: 1.5 }
+                    },
+            }
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -153,17 +142,18 @@ You can customize the legend font family, font style, font weight and size and f
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-legend: { visible: true,
-               font: { fontFamily: 'Segoe UI', fontStyle: 'Normal',fontWeight:'Bold', size: '15px' },
-                              rowCount: 2,border: { color: 'red', width: 2 }, shape: 'circle'}                  
-
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                visible: true,
+                font: { fontFamily: 'Segoe UI', fontStyle: 'Normal', fontWeight: 'Bold', size: '15px' },
+                rowCount: 2,
+                border: { color: 'red', width: 2 },
+                shape: 'circle'
+            }
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -178,15 +168,18 @@ legend: { visible: true,
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-legend: { visible: true, opacity: 1.5, itemPadding: 20,
-                             itemStyle: { height: 12, width: 12, border: { color: 'magenta', width: 1.5 } } 
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                visible: true, opacity: 1.5, itemPadding: 20,
+                itemStyle: {
+                    height: 12, width: 12,
+                    border: { color: 'magenta', width: 1.5 }
+                }
+            }
+            // ...             
+        });
 
 
 {% endhighlight %}
@@ -205,16 +198,14 @@ Scrollbar is enabled for the legends, when the legend size is greater than the u
 
 {% highlight js %}
 
-**[JS]**
 
-$("#chartcontainer").ejChart(
-        {   
-           // ...     
-            commonSeriesOptions:{type: ‘pie’}        
-            size: { width: ‘800’, height: ‘600’ },
-            legend: { visible: true, shape: ‘circle’, columnCount:2,
-                       size:{height:‘25%’,width:‘150’}
-                    }
+        $("#chartcontainer").ejChart({   
+            // ...     
+            commonSeriesOptions:{type: 'pie'},       
+            size: { width: '800', height: '600' },
+            legend: { visible: true, shape: 'circle', columnCount:2,
+                size:{height:'25%',width:'150'}
+            }
             // ...             
         });
 
@@ -231,17 +222,15 @@ You can customize the shape of the legend icon. Normally the available shapes ar
 
 {% highlight js %}
 
-**[JS]**
-$("#chartcontainer").ejChart(
-               {   
-                   // ...             
-        legend: { visible: true, position: ‘bottom’, shape:’seriesType’
 
-            itemStyle:{ height:15, width:15 }
-
-         }
-                   // ...             
-               });
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                visible: true, position: 'bottom', shape: 'seriesType',
+                itemStyle: { height: 15, width: 15 }
+            }
+            // ...             
+        });
 
 
 {% endhighlight %}
