@@ -19,7 +19,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -59,7 +59,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {
