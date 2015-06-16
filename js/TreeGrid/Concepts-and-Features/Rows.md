@@ -19,38 +19,38 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
 
 **altRowTemplateID** is used to customize the alternative rows in **TreeGrid**. For this property, ID of the alternative row template is to be provided.
 
-{% highlight js %}
+{% highlight html %}
 
-<style>
+      <style>
 
-.e-treegrid .e-selectionbackground {
-  background-color: #CED8F6;
-  }
+      .e-treegrid .e-selectionbackground {
+        background-color: #CED8F6;
+        }
 
-.border {
-  border-color: #BDBDBD;
-  border-width: 1px;
-  border-style: solid;
- }
+      .border {
+        border-color: #BDBDBD;
+        border-width: 1px;
+        border-style: solid;
+       }
 
-</style>
+      </style>
 
-<script id="rowTemplateScript" type="text/x-jsrender">
+      <script id="rowTemplateScript" type="text/x-jsrender">
 
-<tr style="background-color:#F2F2F2;color:#000000;">
+      <tr style="background-color:#F2F2F2;color:#000000;">
 
-   <td class="border" style='height:30px;'>
-      <div>**{{:**#data['EmployeeID']**}}**</div>
-   </td>
+      <td class="border" style='height:30px;'>
+         <div>**{{:**#data['EmployeeID']**}}**</div>
+      </td>
 
-   <td class="border" style='height:30px;'>
-      <div style="font-size:14px;">
-      {{:#data['Name']}}
-      <p style="font-size:9px;">{{:#data['Designation']}}</p>
-      </div>
-   </td>
+      <td class="border" style='height:30px;'>
+         <div style="font-size:14px;">
+         {{:#data['Name']}}
+         <p style="font-size:9px;">{{:#data['Designation']}}</p>
+         </div>
+      </td>
 
-   <td class="border">
+      <td class="border">
       <div style="padding-top:5px;">
       <div style="display:inline-flex !important;">
       <img src="../images/treegrid/**{{:**#data['Full Name']**}}**.png" /></div>
@@ -60,49 +60,50 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
       <p style="font-size:12px;">{{:#data['Contact']}}</p>
       </div>
       </div>
-   </td>
+      </td>
 
-   <td class="border" style='height:30px;'>
-   <div>{{:#data['DOB']}}</div>
-   </td>
+      <td class="border" style='height:30px;'>
+      <div>{{:#data['DOB']}}</div>
+      </td>
+      
+      </tr>
+      </script>
+
+      <script id="altRowTemplateScript" type="text/x-jsrender">
+
+      <tr style="background-color:#E6E6E6;color:#000000;">
+
+       <td class="border" style='height:30px;'>
+       <div>{{:#data['EmployeeID']}}</div>
+       </td>
+
+      <td class="border" style='height:30px;'>
+      <div style="font-size:14px;">{{:#data['Name']}}
+      <p style="font-size:9px;">{{:#data['Designation']}}</p>
+      </div>
+      </td>
+
+      <td class="border">
+      <div style="padding-top:5px;">
+      <div style="display:inline-flex !important;">
+      <img src="../images/treegrid/**{{:#data['Full Name']}}.png" /></div>
+      <div style="display:inline-block;padding-left:10px;">
+      {{:#data['Address']}}
+      <p>{{:#data['Country']}}</p>
+      <p style="font-size:12px;">{{:#data['Contact']}}</p>
+      </div>
+      </div>
+      </td>     
+
+      <td class="border" style='height:30px;'>
+      <div>{{:#data['DOB']}}</div>
+      </td>
    
-</tr>
-</script>
+      </tr>
+      </script>
+{% endhighlight %}
 
-<script id="altRowTemplateScript" type="text/x-jsrender">
-
-<tr style="background-color:#E6E6E6;color:#000000;">
-
-    <td class="border" style='height:30px;'>
-    <div>{{:#data['EmployeeID']}}</div>
-    </td>
-
-   <td class="border" style='height:30px;'>
-   <div style="font-size:14px;">{{:#data['Name']}}
-   <p style="font-size:9px;">{{:#data['Designation']}}</p>
-   </div>
-   </td>
-
-   <td class="border">
-   <div style="padding-top:5px;">
-   <div style="display:inline-flex !important;">
-   <img src="../images/treegrid/**{{:#data['Full Name']}}.png" /></div>
-   <div style="display:inline-block;padding-left:10px;">
-   {{:#data['Address']}}
-   <p>{{:#data['Country']}}</p>
-   <p style="font-size:12px;">{{:#data['Contact']}}</p>
-   </div>
-   </div>
-   </td>     
-
-   <td class="border" style='height:30px;'>
-   <div>{{:#data['DOB']}}</div>
-   </td>
-   
-</tr>
-</script>
-
-<script type="text/javascript">
+{% highlight js %}
 
         var treeData = [{
             "Name": "Robert King",
@@ -129,26 +130,25 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
 
             }]
         }];
-$(function () {
+        
+      $(function () {
 
- $("#TreeGridContainer").ejTreeGrid({
+       $("#TreeGridContainer").ejTreeGrid({
 
-   dataSource: treeData,
-   childMapping: "Children",
-   allowColumnResize: true,
-   rowTemplateID: "rowTemplateScript",
-   altRowTemplateID: "altRowTemplateScript",
-   editSettings: { allowEditing: true, editMode: "cellEditing" },
-   columns: [
+      dataSource: treeData,
+      childMapping: "Children",
+      allowColumnResize: true,
+      rowTemplateID: "rowTemplateScript",
+      altRowTemplateID: "altRowTemplateScript",
+      editSettings: { allowEditing: true, editMode: "cellEditing" },
+      columns: [
              {headerText: "Employee ID", width: "180" },
              { field: "Name", headerText: "Employee Name" },
              { field: "Address", headerText: "Employee picture", width: "300" },
              { field: "DOB", headerText: "DOB", editType: "datepicker" },
             ]
-    })
- });
-
-</script>
+       })
+    });
 
 
 {% endhighlight %}
