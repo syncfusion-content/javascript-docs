@@ -27,7 +27,6 @@ There are four different **TreeMap** layouts such as
 
 {% highlight js %}
 
-**[JS]**
 **[HTML]**
         jQuery(function ($) {
 
@@ -55,7 +54,6 @@ There are four different **TreeMap** layouts such as
 
 {% highlight js %}
 
-**[JS]**
 
 **[HTML]**
 
@@ -81,7 +79,6 @@ There are four different **TreeMap** layouts such as
 
 {% highlight js %}
 
-**[JS]**
 **[HTML]**
        jQuery(function ($) {
 
@@ -106,7 +103,6 @@ There are four different **TreeMap** layouts such as
 
 {% highlight js %}
 
-**[JS]**
 **[HTML]**
         jQuery(function ($) {
 

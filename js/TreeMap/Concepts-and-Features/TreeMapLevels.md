@@ -27,7 +27,6 @@ You can use **groupGap** property to separate the items from every flat level a
 
 {% highlight js %}
 
-**[JS]**
 **[HTML]**
         jQuery(function ($) {
 
@@ -56,7 +55,6 @@ You can use **groupGap** property to separate the items from every flat level a
 
 {% highlight js %}
 
-**[JS]**
 **[HTML]**
         jQuery(function ($) {
 
