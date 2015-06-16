@@ -19,14 +19,12 @@ The following steps explains you the enabling of right-to-left property in **Tag
 
 {% highlight html %}
 
-**[HTML]**
          <div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Enable RTL property for TagCloud.
   <script> 

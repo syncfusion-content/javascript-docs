@@ -17,7 +17,6 @@ The following code example is used to render the **Tab** element in RTL format.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -38,7 +37,6 @@ The following code example is used to render the **Tab** element in RTL format.
 
 {% highlight js %}
 
-   **[JS]**
    
     // Add the following script to render Tab with RTL format.
     <script type="text/javascript">

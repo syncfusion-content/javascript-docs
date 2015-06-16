@@ -19,7 +19,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
          <input type="text" id="time" />
 
@@ -27,7 +26,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Set default value of the TimePicker as follows.
 <script>
@@ -52,7 +50,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
          <input type="text" id="time" />
 
@@ -60,7 +57,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // To enable/disable TimePicker controls use the following code example.
 <script>
@@ -99,7 +95,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
+
 
          <input type="text" id="time" />
 
@@ -107,7 +103,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Configure delay time for PopUp panel in TimePicker control as follows,
 <script>
@@ -134,7 +130,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
          <input type="text" id="time" />
 
@@ -142,7 +137,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // You can configure Rounded Corner  in TimePicker control as follows,
 <script>
@@ -169,7 +163,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
+
 
        <input type="text" id="time" />
 
@@ -177,7 +171,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // You can customize the width and height of the TimePicker as follows.
 <script>
@@ -203,7 +196,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
        <input type="text" id="time" />
 
@@ -211,7 +203,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Use popupHeight and popupWidth property for the TimePicker as follows.
 <script>
@@ -241,7 +232,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
        <input type="text" id="time" />
 
@@ -249,7 +239,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Use enablePersistence property to maintain selected value as follows.
 <script>
@@ -275,14 +264,13 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
        <input type="text" id="time" />
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Use enableStrictMode property to set default value as follows.
 <script>
@@ -314,7 +302,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
        <input type="text" id="time" />
 
@@ -322,7 +309,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Change Time Interval using hourInterval, minuteInterval and secondInterval property.
 <script>

@@ -51,7 +51,6 @@ Navigates to next group.</td></tr>
 
 {% highlight html %}
 
-**[HTML]**
 
 <div>
     <div>
@@ -113,7 +112,6 @@ Navigates to next group.</td></tr>
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section.
 
@@ -135,7 +133,6 @@ Navigates to next group.</td></tr>
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
     #keyboard {

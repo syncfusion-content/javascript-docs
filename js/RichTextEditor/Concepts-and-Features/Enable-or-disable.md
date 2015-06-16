@@ -15,7 +15,6 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="rte">
         <textarea id="disable_tool"></textarea>
@@ -25,7 +24,6 @@ Add the following code in your **HTML** page.
 
 {% highlight js %}
 
-**[JavaScript]**
 
  //Add the following code in your script section to render RTE
  <script>

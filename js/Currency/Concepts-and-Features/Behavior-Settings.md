@@ -82,7 +82,7 @@ The output for **CurrencyTextBox** with **enablePersistence** is as follows. You
 
 ## Strict Mode Support
 
-The **CurrencyTextBox** widget allows you to use the strict mode option by setting the **enableStrictMode** property. You can set the **minValue** and **maxValue** to the controls to enable strict mode functionality. When the CurrencyTextBox****value exceeds the **maxValue**, it restricts the exceeded value and returns the **maxValue**. Likewise when the CurrencyTextBox****value goes below **minValue**, it restricts the new value and returns the **minValue**.
+The **CurrencyTextBox** widget allows you to use the strict mode option by setting the **enableStrictMode** property. You can set the **minValue** and **maxValue** to the controls to enable strict mode functionality. When the CurrencyTextBox** **value exceeds the **maxValue**, it restricts the exceeded value and returns the **maxValue**. Likewise when the CurrencyTextBox **value goes below **minValue**, it restricts the new value and returns the **minValue.
 
 ### Configure Strict Mode Support 
 
@@ -119,7 +119,7 @@ The output for **CurrencyTextBox** when **enableStrictMode** is **“True”** i
 
 ## Enabled or Disabled
 
-The CurrencyTextBox****control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the CurrencyTextBox****control.
+The CurrencyTextBox **control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the CurrencyTextBox** control.
 
 ### Configure Enabled or Disabled 
 

@@ -31,11 +31,10 @@ Also in the button sample, you can use the icon class names as follows,
 
 {% highlight js %}
 
-**[JS]**
 <script>
      $("#buttonid").ejButton({
            contentType: "imageonly",
-           **prefixIcon: "e-handup"**
+           prefixIcon: "e-handup"
      });
 </script>
 

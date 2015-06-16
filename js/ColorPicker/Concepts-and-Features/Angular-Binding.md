@@ -9,7 +9,7 @@ documentation: ug
 
 # Angular Binding
 
-The **ColorPicker** widget is availed with two types of **angular****JS** support namely, 
+The **ColorPicker** widget is availed with two types of **angular** **JS** support namely, 
 
 * One-way binding
 
@@ -31,9 +31,8 @@ To know more about the **Angular** binding, you can refer to the online document
 
 {% highlight html %}
 
-**[HTML]**
 <!doctype html>
-<html lang="en" **ng-app="PickerCtrl"**>
+<html lang="en" ng-app="PickerCtrl">
 <head>
     <meta charset="utf-8">
     <title>Essential Studio for JavaScript : ColorPicker - Angular support</title>

@@ -17,7 +17,6 @@ The following steps explains you the behaviour of template support with **ListBo
 
 {% highlight html %}
 
-**[HTML]**
    
 <div class="control">
     <div class="ctrllabel">Drag and drop skills</div>
@@ -35,9 +34,8 @@ The following steps explains you the behaviour of template support with **ListBo
 
 {% highlight js %}
 
-**[JavaScript]**
   
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
 <script type="text/javascript">
     $(function () {
         var skillset = [
@@ -62,7 +60,6 @@ Add the following class in CSS.
 
 {% highlight css %}
 
-**[CSS]**
   
 <style type="text/css" class="cssStyles">
     .control {

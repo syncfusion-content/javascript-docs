@@ -31,7 +31,6 @@ The following example depicts the way to bind data to the **TimePicker** widget 
 
 {% highlight html %}
 
-**[HTML]**
 
 <html>
 <head>

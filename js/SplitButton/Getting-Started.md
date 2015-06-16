@@ -25,7 +25,7 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
 {% highlight html %}
 
-**[HTML]**
+
 
 <!doctype html>
 <html>
@@ -56,7 +56,6 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
 {% highlight html %}
 
-**[HTML]**
 
 <button id="sbutton">Save</button>
 <ul id="target">

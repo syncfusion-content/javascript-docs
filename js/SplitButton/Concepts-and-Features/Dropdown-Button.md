@@ -17,7 +17,6 @@ The following steps explain how to change the **Split Button** as **Dropdown Bu
 
 {% highlight html %}
 
-**[HTML]**
 <button id="dropdownbtn">login</button>
 <ul id="menu">
     <li><span>User</span></li>
@@ -28,7 +27,6 @@ The following steps explain how to change the **Split Button** as **Dropdown Bu
 
 {% highlight js %}
 
-**[JavaScript]**
 // Initialize the control in JavaScript
 
 <script type="text/javascript">

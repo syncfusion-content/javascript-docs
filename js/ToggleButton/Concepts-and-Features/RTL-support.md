@@ -17,14 +17,12 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
  <input type="checkbox" id="toggle_rtl" />
 
 {% endhighlight %}
 
 {% highlight html %}
 
-**[JavaScript]**
 
 //Initialize the control in JavaScript
 

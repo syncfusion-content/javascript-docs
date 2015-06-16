@@ -55,13 +55,12 @@ The following steps explains you on how to enable keyboard interaction for an **
 
 {% highlight html %}
 
- **[HTML]**
 
     <div id="accordion" style="width: 400px"> 
         <h3>  
             <a href="#">Orubase</a></h3>    
       <div>  <!-- add accordion contents here to load contents under this header -->  
-            Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+            Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
         </div>  
         <h3>   
             <a href="#">WinRTXAML</a></h3>     
@@ -80,27 +79,26 @@ The following steps explains you on how to enable keyboard interaction for an **
 
 {% highlight js %}
 
-      [JavaScript]
 
-           <script>
-            
-        	      $(function () {
-        		
-                // Configure Keyboard navigation for Accordion by setting allowKeyboardNavigation property to true. Now define the script to focus the Accordion widget on AccessKey + J
-        		
-                $("#accordion").ejAccordion({
-                  allowKeyboardNavigation: true
-               }); 
-        	   
-             // Define script to focus into the Accordion control on Alt + J shortcut keys.
-        
-                $(document).on("keydown", function (e) {
-                    if (e.altKey && e.keyCode === 74) { // j- key code.
-                        $("#accordion").focus();
-                    }
-                });
-            });
-            </script>
+   <script>
+    
+	    $(function () {
+		
+        // Configure Keyboard navigation for Accordion by setting allowKeyboardNavigation property to true. Now define the script to focus the Accordion widget on AccessKey + J
+		
+        $("#accordion").ejAccordion({
+          allowKeyboardNavigation: true
+       }); 
+	   
+     // Define script to focus into the Accordion control on Alt + J shortcut keys.
+
+        $(document).on("keydown", function (e) {
+            if (e.altKey && e.keyCode === 74) { // j- key code.
+                $("#accordion").focus();
+            }
+        });
+    });
+    </script>
 
 
 {% endhighlight %}

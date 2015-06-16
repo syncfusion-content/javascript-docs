@@ -13,7 +13,6 @@ This feature supports to change the left-to-right alignment of the **Rotator** t
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration

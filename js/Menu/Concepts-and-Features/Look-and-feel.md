@@ -47,7 +47,6 @@ Using this **cssClass** you can override the existing styles under the theme sty
 
 {% highlight html %}
 
-**[HTML]**
 
 <div>
     <div>
@@ -105,7 +104,6 @@ Using this **cssClass** you can override the existing styles under the theme sty
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section.
 
@@ -124,7 +122,6 @@ Using this **cssClass** you can override the existing styles under the theme sty
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css" class="cssStyles">
     .Purple-dark {

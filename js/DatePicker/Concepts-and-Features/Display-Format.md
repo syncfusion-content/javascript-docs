@@ -11,7 +11,7 @@ documentation: ug
 
 ## Date format
 
-**Date format** defines a format or structure of the displayed date in the textbox. You can change the **Date****format** by using **“dateFormat”** property.
+**Date format** defines a format or structure of the displayed date in the textbox. You can change the **Date** **format** by using **“dateFormat”** property.
 
 The standard formats are listed as follows,
 
@@ -54,19 +54,14 @@ The following steps explain you how to set the date format as "**d MM, y**"
 
   {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
-
-  **[JavaScript]**
-  
-  // Add the code to set the date format as "d MM, y" for DatePicker widget
   
 <script type="text/javascript">
+    // Add the code to set the date format as "d MM, y" for DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -86,7 +81,7 @@ The following steps explain you how to set the date format as "**d MM, y**"
 
 ## Day header format
 
-It specifies the **header format** of days in short, long or min types. You can set the **DatePicker****day****header format** by using **“dayHeaderFormat”** property. By default “**dayHeaderFormat**” property is set as “**ShowHeaderMin**” in **DatePicker** widget. 
+It specifies the **header format** of days in short, long or min types. You can set the **DatePicker** **day** **header format** by using **“dayHeaderFormat”** property. By default “**dayHeaderFormat**” property is set as “**ShowHeaderMin**” in **DatePicker** widget. 
 
 Enum for DatePicker day header format
 
@@ -120,20 +115,15 @@ The following steps explain you how to get the **dayHeaderFormat** for **DatePic
 
 
   {% highlight html %}
-  
-  **[HTML]**
-  
+
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-  
-// Add the code to get the dayHeaderFormat of DatePicker widget
-
 <script type="text/javascript">
+  // Add the code to get the dayHeaderFormat of DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -160,19 +150,14 @@ The following steps explain you how to the header format to be displayed in the 
 
   {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to set the header format to be displayed in the pop up of DatePicker widget
-
 <script type="text/javascript">
+  // Add the code to set the header format to be displayed in the pop up of DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({

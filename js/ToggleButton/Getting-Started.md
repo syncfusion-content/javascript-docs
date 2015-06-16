@@ -90,7 +90,7 @@ A label element has to be explicitly associate a form control. A label is atta
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 <script>
         $(function () {

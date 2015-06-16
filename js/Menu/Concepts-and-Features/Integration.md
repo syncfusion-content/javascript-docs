@@ -23,7 +23,6 @@ In the following example, a **Menu** control for mail application is created. In
 
 {% highlight html %}
 
-**[HTML]**
 
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="menuApp">
@@ -51,7 +50,6 @@ In the following example, a **Menu** control for mail application is created. In
 
 {% highlight js %}
 
-**[Javascript]**
    
 // Initialize the control in JavaScript.
 <script>
@@ -94,7 +92,6 @@ In the following example, a **Menu** control for mail application is created. In
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
     #menu {
@@ -180,7 +177,6 @@ In the following example, select Sign Up menu, the requested menu value is send 
 
 {% highlight html %}
 
-**[HTML]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -207,7 +203,6 @@ In the following example, select Sign Up menu, the requested menu value is send 
 
 {% highlight css %}
 
-**[Javascript]**
   
 // Initialize the control in JavaScript.
 <script>
@@ -250,7 +245,6 @@ In the following example, select Sign Up menu, the requested menu value is send 
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
         #menuko {

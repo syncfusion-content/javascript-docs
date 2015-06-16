@@ -22,7 +22,6 @@ _**Note: Images for this sample are available in ‘installed location/images/Em
 
 {% highlight html %}
 
-**[HTML]**   
 
 <div id="controlitem">
     <h3>Template Support</h3>
@@ -33,7 +32,6 @@ _**Note: Images for this sample are available in ‘installed location/images/Em
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Initialize the control in JavaScript 
 
@@ -60,7 +58,6 @@ Customize the template in **CSS**.
 
 {% highlight css %}
 
-**[CSS]**
   
 <style>
     .eimg {

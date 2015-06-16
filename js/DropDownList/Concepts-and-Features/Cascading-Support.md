@@ -12,7 +12,9 @@ documentation: ug
 Using **cascade** option, you can create a behaviour of cascade between dropdown list controls. For this, you need to create database with single field as common between two dropdown data fields and then mention that column id in field. With this, you need to set second dropdown id in **cascadeTo** property in first one. 
 
 
-> {% include image.html url="/js/DropDownList/Concepts-and-Features/Cascading-Support_images/Cascading-Support_img1.png" Caption=""%}_**Note: In case the second dropdown is to disabled, until the first one is selected, you need to set enable property as false in second dropdown, which enables automatically once the value is selected in first one.**_ 
+> {% include image.html url="/js/DropDownList/Concepts-and-Features/Cascading-Support_images/Cascading-Support_img1.png" Caption=""%}
+
+_**Note: In case the second dropdown is to disabled, until the first one is selected, you need to set enable property as false in second dropdown, which enables automatically once the value is selected in first one.**_ 
 
 
 The following steps explains you the behaviour of cascade dropdown. 
@@ -21,8 +23,6 @@ The following steps explains you the behaviour of cascade dropdown.
 
 
 {% highlight html %}
-
-**[HTML]**
 
     <div class="control" style="float: left;">
         <span class="txt">Select Group</span>
@@ -38,12 +38,8 @@ The following steps explains you the behaviour of cascade dropdown.
 
 {% highlight js %}
 
-**[JavaScript]** 
-  
-// Initialize the control in JavaScript
-
    <script type="text/javascript">
-
+        // Initialize the control in JavaScript
         $(function () {
             // declaration
             var groups = [
@@ -96,7 +92,9 @@ _Figure 27: Dropdown with cascade property_
 
 Using multi cascade option, you can create a behavior of cascade between dropdown list controls. To achieve this, map the common field from table to “**fields**” property of all the dropdown lists. Also, specify the ID of cascading **DropDownList** in “**cascadeTo”** property of parent **DropDownList**. 
 
-> {% include image.html url="/js/DropDownList/Concepts-and-Features/Cascading-Support_images/Cascading-Support_img3.png" Caption=""%}_**Note: In case, when you want to show the cascading dropdowns in disabled state initially, then set the value of enable property as “false” in each cascading dropdowns. It is then enabled automatically once a value is selected in parent (first) dropdown list.**_
+> {% include image.html url="/js/DropDownList/Concepts-and-Features/Cascading-Support_images/Cascading-Support_img3.png" Caption=""%}
+
+_**Note: In case, when you want to show the cascading dropdowns in disabled state initially, then set the value of enable property as “false” in each cascading dropdowns. It is then enabled automatically once a value is selected in parent (first) dropdown list.**_
 
 The following steps explains you the behavior of multiple cascade dropdown.
 
@@ -106,26 +104,22 @@ The following steps explains you the behavior of multiple cascade dropdown.
 
 {% highlight html %}
 
-**[HTML]**
-
-     <div class="control" style="float: left; padding:10px;">
-    <span class="txt">Select Continent</span>
-    <input id="groupsList" type="text" />
+    <div class="control" style="float: left; padding:10px;">
+        <span class="txt">Select Continent</span>
+        <input id="groupsList" type="text" />
     </div>
-     <div class="control" style="float: left; padding:10px;">
-    <span class="txt">Select Country</span>
-    <input id="countryList" type="text" />
-     </div>
-         <div class="control" style="float: left; padding:10px;">
-    <span class="txt">Select Capital</span>
-    <input id="capitalList" type="text" />
-     </div>
+    <div class="control" style="float: left; padding:10px;">
+        <span class="txt">Select Country</span>
+        <input id="countryList" type="text" />
+    </div>
+    <div class="control" style="float: left; padding:10px;">
+        <span class="txt">Select Capital</span>
+        <input id="capitalList" type="text" />
+    </div>
      
  {% endhighlight %}
      
 {% highlight js %}
-
-**[JavaScript]**
 
 <script type="text/javascript">
     $(function () {
@@ -175,7 +169,7 @@ The following steps explains you the behavior of multiple cascade dropdown.
         $('#groupsList').ejDropDownList({
             dataSource: groups,
             fields: { value: "parentId" },
-**cascadeTo: 'countryList,capitalList'**
+            cascadeTo: 'countryList,capitalList'
         });
         $('#countryList').ejDropDownList({
             dataSource: countries,
@@ -183,8 +177,8 @@ The following steps explains you the behavior of multiple cascade dropdown.
             enabled:false
         });
         $('#capitalList').ejDropDownList({
-dataSource: capital,
-fields: { value: "parentId" },
+            dataSource: capital,
+            fields: { value: "parentId" },
             enabled:false
         });
     });
@@ -193,7 +187,6 @@ fields: { value: "parentId" },
 
 {% endhighlight %}
 
-****
 
 The following screenshot displays the output of the above code example.
 

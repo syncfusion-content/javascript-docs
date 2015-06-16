@@ -19,7 +19,6 @@ The following steps explain the details about rendering the **RadioButton** with
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="page-align">
         <table>
@@ -46,7 +45,6 @@ The following steps explain the details about rendering the **RadioButton** with
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Initialize the control in JavaScript
  <script type="text/javascript">
@@ -68,7 +66,6 @@ The following steps explain the details about rendering the **RadioButton** with
 
 {% highlight css %}
 
-**[CSS]**
      <style>
         .page-align {
             margin: 100px;
@@ -97,7 +94,6 @@ The following steps explain the details about rendering the **RadioButton** with
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="page-align">
         <table>
@@ -121,7 +117,6 @@ The following steps explain the details about rendering the **RadioButton** with
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Initialize the control in JavaScript
    <script type="text/javascript">
@@ -141,7 +136,6 @@ The following steps explain the details about rendering the **RadioButton** with
 
 {% highlight css %}
 
-**[CSS]**
    <style>
         .page-align {
             margin: 100px;
@@ -185,7 +179,6 @@ The following steps explain the details about rendering **RadioButton** with dif
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="page-align">
         <table>
@@ -230,7 +223,6 @@ The following steps explain the details about rendering **RadioButton** with dif
 
 {% highlight js %}
 
-**[JavaScript]**
 // Initialize the control in JavaScript
 <script type="text/javascript">
         $(function () {
@@ -252,7 +244,6 @@ The following steps explain the details about rendering **RadioButton** with dif
 
 {% highlight css %}
 
- **[CSS]**
    <style>
         .page-align {
             margin: 100px;
@@ -280,7 +271,6 @@ The following steps explain the details about rendering the **RadioButton** with
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="page-align">
         <table class="rightAlign">
@@ -301,7 +291,6 @@ The following steps explain the details about rendering the **RadioButton** with
 
 {% highlight js %}
 
-**[JavaScript]**
 // Initialize the control in JavaScript
 
    <script type="text/javascript">
@@ -323,7 +312,6 @@ In the above mentioned code, the **text** property has been used. In **LTR** for
 
 {% highlight css %}
 
-**[CSS]**
   <style>
         .page-align {
             margin: 100px;

@@ -92,7 +92,6 @@ The following steps explains you the details of data binding with **ListBox**.
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -103,9 +102,8 @@ The following steps explains you the details of data binding with **ListBox**.
 
 {% highlight js %}
 
-**[JavaScript]**
 
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
 <script type="text/javascript">
     jQuery(function ($) {
         // JSON data declaration
@@ -115,7 +113,7 @@ The following steps explains you the details of data binding with **ListBox**.
         { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
         { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
         ];
-        //Renders the ListBox by mapping fields with JSON data
+        //Render ListBox by mapping fields with JSON data
         $("#listboxSample").ejListBox({
             width: "240", dataSource: skillset,
             fields: { text: "skill" }
@@ -143,8 +141,6 @@ The following steps explains you the details of data binding from remote.
 
 {% highlight html %}
 
-**[HTML]**
-
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
     <ul id="listboxSample"></ul>
@@ -154,9 +150,8 @@ The following steps explains you the details of data binding from remote.
 
 {% highlight js %}
 
-**[JavaScript]**
 
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
 <script type="text/javascript">
     $(function () {
         // DataManager creation
@@ -212,8 +207,6 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 
 {% highlight html %}
 
-**[HTML]**
-
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="ListCtrl">
 <head>
@@ -252,11 +245,9 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 
 {% highlight js %}
 
-**[JavaScript]**
-
    <script type="text/javascript">
         
-**//** Initializes the control and bind the data in **JavaScript**
+**//** Initialize the control and bind the data in **JavaScript**
         var list = [
                     { empid: "cr1", text: "Dodge Avenger" },
                     { empid: "cr2", text: "Chrysler 200" },
@@ -281,8 +272,6 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 {% endhighlight %}
 
 {% highlight css %}
-
-**[CSS]**
    
    <style>
         #binding {
@@ -332,7 +321,6 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 
 {% highlight html %}
 
-**[HTML]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -370,7 +358,6 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 
 {% highlight js %}
 
-**[JavaScript]**
 
    <script type="text/javascript">
         $(function () {
@@ -400,7 +387,6 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 
 {% highlight CSS %}
  
-**[CSS]**
   
    <style type="text/css">
         .ejinputtext {

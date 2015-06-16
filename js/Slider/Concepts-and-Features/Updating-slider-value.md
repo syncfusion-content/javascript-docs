@@ -27,7 +27,6 @@ The following steps explains you the configuration of “value” and “values�
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -41,7 +40,6 @@ The following steps explains you the configuration of “value” and “values�
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // When initializing Slider widget, configure the “value” and “values” property as follows.
 	    
@@ -80,7 +78,6 @@ The following steps explains you on how to configure minValue and maxValue prope
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -93,7 +90,6 @@ The following steps explains you on how to configure minValue and maxValue prope
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // When initializing Slider widget, configure the minValue and maxValue properties as follows.
    

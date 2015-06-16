@@ -29,7 +29,6 @@ The usage of **Accordion** control is described in the following sections.
 
 {% highlight html %}
 
-**[HTML]**
     <html>
     <head>
         <title>Essential Studio for JavaScript : Default Functionalities</title>
@@ -63,7 +62,7 @@ The usage of **Accordion** control is described in the following sections.
 
 {% highlight html %}
 
-**[HTML]**
+
 
 <body>
 <div id="accordion" style="width: 400px">
@@ -149,7 +148,7 @@ The usage of **Accordion** control is described in the following sections.
 
 {% highlight js %}
 
-*[JavaScript]*
+
   <script type="text/javascript">
         $(function () {
             // document ready
@@ -181,8 +180,8 @@ You can also open all the panels during initialization using the **selectedItems
 
 {% highlight js %}
 
-**[JavaScript]**
-    <script type="text/javascript">
+
+   <script type="text/javascript">
         $(function () {
             $("#accordion").ejAccordion({
                 enableMultipleOpen: true, /* To set the multiple content panels  active at a time   */
@@ -210,8 +209,8 @@ You can also open all the panels during initialization using the **selectedItems
 
 {% highlight js %}
 
-**[JavaScript]**
-    <script type="text/javascript">
+
+   <script type="text/javascript">
         $(function () {
             $("#accordion").ejAccordion({
                 enableMultipleOpen: true,
@@ -240,8 +239,7 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
 
 {% highlight js %}
 
-**[JavaScript]**
-    <script type="text/javascript">
+   <script type="text/javascript">
         $(function () {
             $("#accordion").ejAccordion({
                 enableMultipleOpen: true,

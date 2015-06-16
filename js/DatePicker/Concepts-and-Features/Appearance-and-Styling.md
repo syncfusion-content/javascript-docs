@@ -11,7 +11,7 @@ documentation: ug
 
 ## Theme
 
-**DatePicker** control’s style and appearance are controlled based on **CSS****classes**. In order to apply **Theme** to the **DatePicker** widget, you can refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. When the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project, as **ej.widgets.all.min.css** is the combination of these both. 
+**DatePicker** control’s style and appearance are controlled based on **CSS** **classes**. In order to apply **Theme** to the **DatePicker** widget, you can refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. When the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project, as **ej.widgets.all.min.css** is the combination of these both. 
 
 By default, there are 12 themes support available for **DatePicker** widget namely,
 
@@ -51,7 +51,6 @@ The following code example is used to render the **DatePicker** widget with cust
 
  {% highlight html %}
   
-  **[HTML]**
   
       <input id="datepicker" type="text" />
       
@@ -59,9 +58,6 @@ The following code example is used to render the **DatePicker** widget with cust
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the class for DatePicker widget
 
 <script type="text/javascript">
     $(function () {
@@ -166,8 +162,7 @@ The following steps explain you to enable keyboard interaction for **DatePicker*
 
 
  {% highlight html %}
-  
-  **[HTML]**
+
   
       <input id="datepicker" type="text" />
       
@@ -175,9 +170,6 @@ The following steps explain you to enable keyboard interaction for **DatePicker*
   
   {% highlight js %}
 
-  **[JavaScript]**
-
- // Render DatePicker widget
 
    <script type="text/javascript">
         $(function () {

@@ -103,7 +103,6 @@ This section briefly describes you on how to create a QuizApp and RegistrationAp
 
     </div>
 
-
 {% endhighlight %}
 
 
@@ -145,8 +144,7 @@ This section briefly describes you on how to create a QuizApp and RegistrationAp
 
 
 
-4. Add the following styles.
-
+4. Add the following styles
 
 
 {% highlight css %}

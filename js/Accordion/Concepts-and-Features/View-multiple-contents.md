@@ -19,7 +19,6 @@ The following steps explains you to enable multiple panel for **Accordion**.
 
 {% highlight html %}
 
-   **[HTML]**
    
     <div id="accordion" style="width: 400px"> 
         <h3>  
@@ -44,14 +43,14 @@ The following steps explains you to enable multiple panel for **Accordion**.
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 // Enable multiple open for Accordion
 
             $("#accordion").ejAccordion({
                 enableMultipleOpen: true
             });
 
-
+</script>
 {% endhighlight %}
 
 

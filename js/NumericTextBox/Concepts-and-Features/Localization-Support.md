@@ -36,7 +36,9 @@ The following example describes the way to use localization for NumericTextBox w
 {% highlight html %}
 
         <input id="numeric" type="text" />
+{% endhighlight %}
 
+{% highlight js %}
         <script type="text/javascript">
         /* Numeric Textbox */
         $("#numeric").ejNumericTextbox({
@@ -45,9 +47,9 @@ The following example describes the way to use localization for NumericTextBox w
             locale: "de-DE"
         });
     </script>
-
-
 {% endhighlight %}
+
+
 
 
 

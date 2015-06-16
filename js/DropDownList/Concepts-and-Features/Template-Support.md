@@ -15,11 +15,11 @@ The following steps explains you the behaviour of template support with **Dropdo
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **Dropdownlist** widget
 
-> {% include image.html url="/js/DropDownList/Concepts-and-Features/Template-Support_images/Template-Support_img1.png" Caption=""%}_**Note: Images for this sample are available in ‘installed location /themes/images’**_ 
+> {% include image.html url="/js/DropDownList/Concepts-and-Features/Template-Support_images/Template-Support_img1.png" Caption=""%}
+
+_**Note: Images for this sample are available in ‘installed location /themes/images’**_ 
 
 {% highlight html %}
-
-**[HTML]**
 
     <div class="control">
             <div class="ctrllabel">Select an expert</div>
@@ -29,26 +29,20 @@ The following steps explains you the behaviour of template support with **Dropdo
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]** 
-
-// Initialize the control in JavaScript
  
    <script type="text/javascript">
-
+       // Initialize the control in JavaScript
         var empList = [
                 { text: "Erik Linden", eimg: "3", desig: "Representative", country: "England" }, { text: "John Linden", eimg: "6", desig: "Representative", country: "Norway" },
                 { text: "Louis", eimg: "7", desig: "Representative", country: "Australia" }, { text: "Lawrence", eimg: "8", desig: "Representative", country: "India" }
         ];
         $(function () {
-
             $('#dropdownlist').ejDropDownList({
                 dataSource: empList,
                 width: "200px",
                 template: '<img class="eimg" src="../images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/>' +
                         '<div class="customalign"><div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>'
             });
-
         });
     </script>
 
@@ -58,8 +52,7 @@ The following steps explains you the behaviour of template support with **Dropdo
 
 
 {% highlight css %}
-
-[CSS]  
+ 
   <style type="text/css">
         .customalign {
             display: inline;

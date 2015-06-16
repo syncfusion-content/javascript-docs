@@ -24,7 +24,6 @@ The following steps explains you on how to configure the **height** and **width*
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="BasicSlider"></div>
 
@@ -32,7 +31,6 @@ The following steps explains you on how to configure the **height** and **width*
 
 {% highlight js %}
 
-**[JavaScript]**
     <script>
         $("#BasicSlider").ejSlider({
             height: "20",
@@ -58,7 +56,6 @@ The following steps explains you on how to configure the **incrementStep** prope
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="ejSlider"></div>
 
@@ -66,7 +63,6 @@ The following steps explains you on how to configure the **incrementStep** prope
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // When initializing the Slider widget, configure the “incrementStep” property as follows.
     <script>
@@ -96,7 +92,6 @@ The following steps explain you on how to enable the **readOnly** property.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="ejSlider"></div>
 
@@ -104,7 +99,7 @@ The following steps explain you on how to enable the **readOnly** property.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // When initializing the Slider widget, enable the “readOnly” property as follows.
     <script>

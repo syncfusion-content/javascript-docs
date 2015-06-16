@@ -204,7 +204,7 @@ _Figure_ _2__: Textboxes with watermark text_
 
 ### Set the MinValue, MaxValue and Value in Textboxes
 
-You can set the **“minValue”,****“maxValue”** and **“value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **Maskedit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
+You can set the **“minValue”,** **“maxValue”** and **“value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **Maskedit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
 
 {% highlight js %}
 

@@ -19,7 +19,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
        <input type="text" id="time" />
 
@@ -27,7 +26,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Use minTime and maxTime property to change the Range of the TimePicker.
 <script>

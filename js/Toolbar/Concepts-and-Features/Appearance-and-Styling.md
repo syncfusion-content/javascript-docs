@@ -17,7 +17,6 @@ The **height** property is used to set height of the **Toolbar**. Set the value 
 
 {% highlight html %}
 
-**[JS]**
 
 <script type="text/javascript">
     $(function () {
@@ -34,7 +33,7 @@ The **width** property is used to set width of the **Toolbar**. Set the value to
 
 {% highlight html %}
 
-**[JS]**
+
 
 <script type="text/javascript">
     $(function () {
@@ -52,7 +51,7 @@ The **showRoundedCorner** property is used to enable rounded corner for **Toolba
 
 {% highlight js %}
 
-**[JS]**
+
 
 <script type="text/javascript">
     $(function () {
@@ -81,7 +80,7 @@ The **enableSeparator** property is used to set separator between **Toolbar** it
 
 {% highlight js %}
 
-**[JS]**
+
 
 <script type="text/javascript">
     $(function () {
@@ -137,7 +136,7 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
 {% highlight js %}
 
-**[JS]**
+
 
 <script type="text/javascript">
     $(function () {
@@ -153,7 +152,7 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
 {% highlight css %}
 
-**[CSS]**
+
 
 <style>
     .gradient-lime {

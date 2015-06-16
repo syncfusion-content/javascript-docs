@@ -17,7 +17,6 @@ The following steps explain how to disable the **ProgressBar** widget when ‘**
 
 {% highlight html %}
 
-**[HTML]**
             <div class="control">
             <div id="progressbar"></div>
             </div>
@@ -26,7 +25,6 @@ The following steps explain how to disable the **ProgressBar** widget when ‘**
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the ‘enabled’ property as follows.
 <script type="text/javascript">

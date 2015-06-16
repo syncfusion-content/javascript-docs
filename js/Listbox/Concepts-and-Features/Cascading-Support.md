@@ -28,7 +28,6 @@ The following steps explains you the behaviour of cascade **ListBox**.
 
 {% highlight html %}
 
-**[HTML]**  
 
 <div id="control">
     
@@ -52,9 +51,8 @@ The following steps explains you the behaviour of cascade **ListBox**.
 
 {% highlight js %}
 
-**[JavaScript]**
   
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
 
   <script type="text/javascript">
     var target;
@@ -127,13 +125,11 @@ The following steps explains you the behaviour of cascade **ListBox**.
 
 {% endhighlight %}
 
-Configures the styles as follows.
+Configure the styles as follows.
 
 
 
 {% highlight css %}
-
-**[CSS]**  
 
 <style>
     .controlitem {

@@ -19,7 +19,6 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="rte">
         <textarea id="rteSample"></textarea>
@@ -29,7 +28,6 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section to render RTE with default set of tools.
 <script>

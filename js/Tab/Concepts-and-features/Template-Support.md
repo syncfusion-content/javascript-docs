@@ -17,7 +17,6 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -48,7 +47,6 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 
 {% highlight js %}
 
-**[SCRIPT]**
 
 <script type="text/javascript">
         $(function () {

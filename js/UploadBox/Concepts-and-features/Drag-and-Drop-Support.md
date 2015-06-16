@@ -27,7 +27,7 @@ The following steps explain how to enable the drag and drop in the **Uploadbox**
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div class="frame">
      <div class="control">
@@ -40,7 +40,7 @@ The following steps explain how to enable the drag and drop in the **Uploadbox**
 
 <{% highlight js %}
 
-**[JavaScript]**
+
 
 // Initialize the UploadBox by using the following code example.
 <script type="text/javascript">
@@ -64,7 +64,7 @@ To know about file action, refer to the following link: [http://help.syncfusion.
 
 {% highlight css %}
 
-**[CSS]**
+
 <style>
         .frame {
             width: 500px;
@@ -95,7 +95,7 @@ You can change the drag area text by using the **dragAreaText** property.  By de
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div class="frame">
      <div class="control">
@@ -108,7 +108,7 @@ You can change the drag area text by using the **dragAreaText** property.  By de
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Initialize the UploadBox using the following code example.
 <script type="text/javascript">
@@ -130,7 +130,7 @@ You can change the drag area text by using the **dragAreaText** property.  By de
 
 {% highlight css %}
 
-**[CSS]**
+
 <style>
         .frame {
             width: 500px;
@@ -163,7 +163,7 @@ The following steps explain you on how to adjust the Drop Area Size.
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div class="control">
      <div id="Uploadbox"></div>
@@ -173,7 +173,7 @@ The following steps explain you on how to adjust the Drop Area Size.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Initialize the Uploadbox using the following code example.
    <script type="text/javascript">
@@ -211,7 +211,7 @@ The following steps explains the droppable area containing the browse button beh
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div class="frame">
      <div class="control">
@@ -223,7 +223,7 @@ The following steps explains the droppable area containing the browse button beh
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Initialize the Uploadbox by using the following code example.
 <script type="text/javascript">
@@ -246,7 +246,7 @@ The following steps explains the droppable area containing the browse button beh
 
 {% highlight css %}
 
-**[CSS]**
+
 <style>
         .frame {
             width: 500px;

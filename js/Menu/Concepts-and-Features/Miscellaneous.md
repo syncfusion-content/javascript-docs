@@ -18,7 +18,6 @@ Specifies the height of the root menu. You can customize the height of the **Men
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
     jQuery(function ($) {
@@ -39,7 +38,6 @@ Specifies the width of the main menu. You can customize the width of the **Menu*
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
     jQuery(function ($) {
@@ -62,7 +60,6 @@ Specifies the sub menu items to be show or open only on click. It accepts the Bo
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
     jQuery(function ($) {
@@ -94,7 +91,6 @@ _Figure_ _41__: Sub menu items to open on click_
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
     jQuery(function ($) {
@@ -125,7 +121,6 @@ Specifies the title to the responsive menu. You can provide title to the **Menu*
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
     jQuery(function ($) {
@@ -156,7 +151,6 @@ Specifies the main menu item arrows to display only when it contains child menu 
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
         jQuery(function ($) {
@@ -188,7 +182,6 @@ Specifies the sub menu items arrows to display only when it contains child menu 
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
         jQuery(function ($) {

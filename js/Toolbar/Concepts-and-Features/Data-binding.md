@@ -83,7 +83,7 @@ And also you can add image, image styles, sprite css class, query and html attri
 
 {% highlight html %}
 
-**[HTML]**
+
 
 <div class="cols-sample-area">
     <div id="toolbarcontent"></div>
@@ -93,7 +93,6 @@ And also you can add image, image styles, sprite css class, query and html attri
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
     .darktheme .cols-sample-area .e-tooltxt .ToolbarItems {
         background-image: url('../images/toolbar/ui-icons-metro.png');
@@ -164,7 +163,6 @@ To bind Remote data to **Toolbar**, use the following code example.
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="toolbarcontent"></div>
 
@@ -172,7 +170,6 @@ To bind Remote data to **Toolbar**, use the following code example.
 
 {% highlight js %}
 
-**[JS]**
 
 <script type="text/javascript">
     $(function () {
@@ -238,7 +235,6 @@ The following code example depicts you the way to bind data to the **Toolbar** t
 
 {% highlight html %}
 
-**[HTML]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -294,7 +290,6 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% highlight html %}
 
-**[HTML]**
 
 <!DOCTYPE html>
 <html lang="en" ng-app="toolApp">
@@ -334,7 +329,6 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% highlight js %}
 
-**[JS]**
 
 <script>
     var list = [{
@@ -378,7 +372,6 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css" class="cssStyles">
     /*controls*/

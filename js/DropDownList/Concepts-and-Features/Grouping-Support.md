@@ -11,7 +11,7 @@ documentation: ug
 
 **Grouping Support using DataSource**
 
-**Grouping****DropDownList** items can be done by using **category** field. Set the **category** field and define it in the **DataSource**. Then map the fields for the data items of the **DropDownList** and set **allowGrouping** property value to **true**.
+**Grouping** **DropDownList** items can be done by using **category** field. Set the **category** field and define it in the **DataSource**. Then map the fields for the data items of the **DropDownList** and set **allowGrouping** property value to **true**.
 
 The following steps explain you how to group data items in the **DropDownList** control by using **DataSource**.
 
@@ -20,8 +20,6 @@ The following steps explain you how to group data items in the **DropDownList** 
 
 
 {% highlight html %}
-
-**[HTML]**
 
      <input type="text" id="categoryGrouping" />     
 
@@ -33,8 +31,6 @@ The following steps explain you how to group data items in the **DropDownList** 
 2. Configure the **DataSource** and initialize the **DropDownList** widget in the Script section as follows.
 
 {% highlight js %}
-
-**[Script]**
 
    <script>
          $(function () {
@@ -56,9 +52,9 @@ The following steps explain you how to group data items in the **DropDownList** 
                { country: "Haiti", group: "H" }, { country: "Hong Kong", group: "H" }
             ];
             $('#categoryGrouping').ejDropDownList({
-                **dataSource: countries,**
-                **fields: { text: "country", category: "group" },**
-                **allowGrouping: true,**
+                dataSource: countries,
+                fields: { text: "country", category: "group" },
+                allowGrouping: true,
                 width: "150px"
             });
 });
@@ -84,42 +80,37 @@ Another way to group **DropDownList** is by using **UL** and **LI structure**. H
 
 {% highlight html %}
 
-**[HTML]**
-
-     <input type="text" id="vegetable" />
-                        <div id="vegetablelist">
-                            <ul>
-                                <span>Leafy and Salad</span>
-                                <li>Cabbage</li>
-                                <li>Pea</li>
-                                <li>Spinach</li>
-                                <li>Wheatgrass</li>
-                                <li>Yarrow </li>
-                                <span>Beans</span>
-                                <li>Chickpea</li>
-                                <li>Green bean</li> 
-                                 <span>Bulb and Stem</span>
-                                <li>Garlic</li>
-                                <li>Garlic Chives</li>
-                                 <span>Root and Tuberous</span>
-                                <li>Beetroot</li>
-                                <li>Carrot</li>
-                            </ul>
-                        </div>
+    <input type="text" id="vegetable" />
+    <div id="vegetablelist">
+        <ul>
+            <span>Leafy and Salad</span>
+            <li>Cabbage</li>
+            <li>Pea</li>
+            <li>Spinach</li>
+            <li>Wheatgrass</li>
+            <li>Yarrow </li>
+            <span>Beans</span>
+            <li>Chickpea</li>
+            <li>Green bean</li> 
+             <span>Bulb and Stem</span>
+            <li>Garlic</li>
+            <li>Garlic Chives</li>
+             <span>Root and Tuberous</span>
+            <li>Beetroot</li>
+            <li>Carrot</li>
+        </ul>
+    </div>
          
 {% endhighlight %}
 
 {% highlight js %}
 
-**[Script]**
-
-// You can initialize the DropDownList control in the script section and add the Target ID to the DropDownList as follows.
-
 <script>
-$('#vegetable').ejDropDownList({
-                 targetID: "vegetablelist",
-                 width:"150px"
-             });
+    // You can initialize the DropDownList control in the script section and add the Target ID to the DropDownList as follows.
+    $('#vegetable').ejDropDownList({
+         targetID: "vegetablelist",
+         width:"150px"
+     });
 </script>
 
 {% endhighlight %}

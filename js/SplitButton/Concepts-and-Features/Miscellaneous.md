@@ -20,7 +20,7 @@ The following steps explains you the details about rendering the **Split Button*
 
 {% highlight html %}
 
-**[HTML]**
+
 
    <div class="spltspan">
         <button id="spltbutton_text">login</button>
@@ -35,7 +35,6 @@ The following steps explains you the details about rendering the **Split Button*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Initialize the control in JavaScript
     <script type="text/javascript">
@@ -56,7 +55,6 @@ The following steps explains you the details about rendering the **Split Button*
 
 {% highlight css %}
 
-**[CSS]**
     <style>
         .spltspan {
             margin-left: 120px;
@@ -83,7 +81,7 @@ The following steps explains you the details about rendering the **Split Button*
 
 {% highlight html %}
 
-**[HTML]**
+
 <div class="spltspan">
         <button id="spltbutton_roundedCorner">login</button>
         <ul id="Ul11">
@@ -98,7 +96,7 @@ The following steps explains you the details about rendering the **Split Button*
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Initialize the control in JavaScript
     <script type="text/javascript">
@@ -120,7 +118,7 @@ The following steps explains you the details about rendering the **Split Button*
 
 {% highlight css %}
 
-**[CSS]**
+
     <style>
         .spltspan {
             margin-left: 120px;

@@ -49,7 +49,7 @@ The following code example is used to render the **Tab** element in **RTL** form
 
 {% highlight html %}
 
-**[HTML]**
+
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -70,7 +70,6 @@ The following code example is used to render the **Tab** element in **RTL** form
 
 {% highlight js %}
 
-**[JS]**
 
     // Add the following script to render Tab with keyboard navigation.
     <script type="text/javascript">

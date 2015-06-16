@@ -44,7 +44,6 @@ To open or close the **Dialog** widget by using client side API:
 
 {% highlight html %}
 
-**[HTML]**
 
      <div id="dialogAPI" title="Essential Grid">
         <p>
@@ -62,12 +61,9 @@ To open or close the **Dialog** widget by using client side API:
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**
-
-// Sets the width and height to the Dialog function and get the Dialog object. Calls the open and close methods in the corresponding input button’s click event
    
    <script type="text/javascript">
+       // Set the width and height to the Dialog function and get the Dialog object. Call the open and close methods in the corresponding input button’s click event
         $("#dialogAPI").ejDialog({
             width: 500,
             height: 300
@@ -112,8 +108,6 @@ To check the **Dialog** widget state by using client side API:
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="dialogAPI" title="Essential Grid">
         <p>
             Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
@@ -139,8 +133,6 @@ To check the **Dialog** widget state by using client side API:
 
 
 {% highlight js %}
-
-**[JavaScript]**
 
    <script type="text/javascript">
         $("#dialogAPI").ejDialog({

@@ -21,13 +21,12 @@ The following steps explains to enable Collapsible state for **Accordion**.
 
 {% highlight html %}
 
-  **[HTML]**
     
     <div id="accordion" style="width: 400px"> 
     <h3>  
         <a href="#">Orubase</a></h3>    
     <div>  <!-- add accordion contents here to load contents under this header -->  
-        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
     </div>  
     <h3>   
         <a href="#">WinRTXAML</a></h3>     
@@ -45,13 +44,14 @@ The following steps explains to enable Collapsible state for **Accordion**.
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 	
-// Configures the collapsible header for the Accordion
+// Configure collapsible header for Accordion
 
             $("#accordion").ejAccordion({
                 collapsible:true
             });
+</script>
 
 {% endhighlight %}
 
@@ -68,17 +68,16 @@ The following steps explains to enable Collapsible state for **Accordion**.
 
 The following steps explains you to configure header expand event for **Accordion**.
 
-1. In an HTML page, define a div element that is a container for the Accordion widget and add the contents correspondingly
+1. In an HTML page, define a div element that is a container for  Accordion widget and add the contents correspondingly
 
 {% highlight html %}
 
-   **[HTML]**
   
     <div id="accordion" style="width: 400px"> 
     <h3>  
         <a href="#">Orubase</a></h3>    
         <div>  <!-- add accordion contents here to load contents under this header -->  
-        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
     </div>  
     <h3>   
         <a href="#">WinRTXAML</a></h3>     
@@ -97,13 +96,13 @@ The following steps explains you to configure header expand event for **Accordio
 
 {% highlight js %}
 
-[JavaScript]
-// Configures the header expand event for the Accordion
+<script>
+// Configure header expand event for Accordion
 
             $("#accordion").ejAccordion({
                 events: "mouseout"
             });
-
+</script>
 
 {% endhighlight %}
 
@@ -123,17 +122,16 @@ Using **selectedItemIndex** property you can modify the expanded panel when the 
 
 The following steps explains you to configure selected item for **Accordion**.
 
-1. In an HTML page, define a div element that is a container for the Accordion widget and add the contents correspondingly
+1. In an HTML page, define a div element that is a container for  Accordion widget and add the contents correspondingly
 
 {% highlight html %}
 
-  **[HTML]**
   
     <div id="accordion" style="width: 400px"> 
     <h3>  
         <a href="#">Orubase</a></h3>    
      <div>  <!-- add accordion contents here to load contents under this header -->  
-        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
     </div>  
     <h3>   
         <a href="#">WinRTXAML</a></h3>     
@@ -151,13 +149,13 @@ The following steps explains you to configure selected item for **Accordion**.
 
 {% highlight js %}
 
-[JavaScript]
-// Configures the selected item for the Accordion based on the index
+<script>
+// Configure selected item for Accordion based on the index
 
             $("#accordion").ejAccordion({
                 selectedItemIndex: 1
             });
-
+</script>
 
 {% endhighlight %}
 
@@ -177,13 +175,12 @@ The following steps explains to configure selected items for **Accordion**.
 
 {% highlight html %}
 
-  **[HTML]**
   
      <div id="accordion" style="width: 400px"> 
     <h3>  
         <a href="#">Orubase</a></h3>    
       <div>  <!-- add accordion contents here to load contents under this header -->  
-        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
     </div>  
     <h3>   
         <a href="#">WinRTXAML</a></h3>     
@@ -202,14 +199,14 @@ The following steps explains to configure selected items for **Accordion**.
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 
-// Configures the multiple item selection for Accordion
+// Configure multiple item selection for Accordion
             $("#accordion").ejAccordion({
                 selectedItems:[0,2],
                 enableMultipleOpen : true
             });
-
+</script>
 
 {% endhighlight %}
 

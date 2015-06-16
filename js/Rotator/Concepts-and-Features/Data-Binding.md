@@ -41,7 +41,6 @@ This property retrieves data from remote data. This property is applicable only 
 
   {% highlight html %}
 
-  **[HTML]**
   
   	<div class="cols-sample-area">
 	    <ul id="slidercontent"></ul>
@@ -52,7 +51,6 @@ This property retrieves data from remote data. This property is applicable only 
 
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -129,7 +127,6 @@ The following code example depicts the way to bind data to the **Rotator** throu
 
   {% highlight html %}
 
-  **[HTML]**
   
   	<body data-autoinit="false">
 	    <div class="cols-sample-area">
@@ -142,7 +139,6 @@ The following code example depicts the way to bind data to the **Rotator** throu
 
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script>
 	    $(function () {
@@ -197,7 +193,6 @@ The following code example depicts the way to bind data to the **Rotator** widge
 
 {% highlight html %}
 
-**[HTML]**
 <!DOCTYPE html>
 <html lang="en" ng-app="rotatApp">
 <head>
@@ -230,7 +225,6 @@ The following code example depicts the way to bind data to the **Rotator** widge
 
 {% highlight js %}
 
-**[JS]**
 <script>
     var list = [
       { text: "snowfall", url: "../images/rotator/snowfall.jpg" },

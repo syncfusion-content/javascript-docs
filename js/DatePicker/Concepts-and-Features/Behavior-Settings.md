@@ -20,7 +20,6 @@ The following steps explains how to set the **Button Text** for **DatePicker** w
 
   {% highlight html %}
   
-**[HTML]**
 
     <input id="datepicker" type="text" />
     
@@ -28,10 +27,7 @@ The following steps explains how to set the **Button Text** for **DatePicker** w
 
 
   {% highlight js %}
-  
- **[JavaScript]**
- 
-// Add the code to set the Button Text of DatePicker widget
+
 
 <script type="text/javascript">
         $(function () {
@@ -64,7 +60,6 @@ The following steps explain **displayDefaultDate** in **DatePicker** widget.
 
   {% highlight html %}
   
-**[HTML]**
 
     <input id="datepicker" type="text" />
     
@@ -72,11 +67,9 @@ The following steps explain **displayDefaultDate** in **DatePicker** widget.
 
   {% highlight js %}
   
-  **[JavaScript]**
   
-// Add the code to set the displayDefaultDate in DatePicker widget
-
 <script type="text/javascript">
+  // Add the code to set the displayDefaultDate in DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -100,18 +93,14 @@ The following steps explain you how to disable the **DatePicker** widget.
 
   {% highlight html %}
   
-  **[HTML]**
-
        <input id="datepicker" type="text" />
+       
   {% endhighlight %}
 
   {% highlight js %}
-  
-  **[JavaScript]**
-  
-  // Add the code to disable the DatePicker widget
-  
+       
 <script type="text/javascript">
+  // Add the code to disable the DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -132,8 +121,6 @@ The following steps explain you how to enable the “**enableStrictMode**” for
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** Widget
 
   {% highlight html %}
-  
-**[HTML]**
 
     <input id="datepicker" type="text"/>
 
@@ -142,11 +129,8 @@ The following steps explain you how to enable the “**enableStrictMode**” for
 
   {% highlight js %}
   
-  **[JavaScript]**
-  
-// Add the code to enable the enableStrictMode for DatePicker widget
-
 <script type="text/javascript">
+  // Add the code to enable the enableStrictMode for DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -161,7 +145,7 @@ The following steps explain you how to enable the “**enableStrictMode**” for
 
 ## Fields
 
-You can specify the **fields****mapping** in **DatePicker**. You can also provide the support to add image, image styles, sprite css class, query, and HTML attributes.
+You can specify the **fields** **mapping** in **DatePicker**. You can also provide the support to add image, image styles, sprite css class, query, and HTML attributes.
 
 The **DatePicker** widget provides support to customize the particular date. i.e. you can customize the date with image and tooltip options. The following table specifies the special date fields and its configuration.
 
@@ -195,25 +179,21 @@ String</td></tr>
 </table>
 
 
-The following steps explain you how to specify the **fields****mapping** in **DatePicker** widget.
+The following steps explain you how to specify the **fields** **mapping** in **DatePicker** widget.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
   {% highlight html %}
   
-**[HTML]**
-
     <input id="datepicker" type="text" />
 
   {% endhighlight %}
 
 
   {% highlight js %}
-  
-  **[JavaScript]**
-  
-// Add the code to specify the fields mapping in DatePicker widget
+
 <script type="text/javascript">
+  // Add the code to specify the fields mapping in DatePicker widget
     $(function () {
         var today = new Date(),
                        spldays = [
@@ -242,7 +222,6 @@ The following steps explain you how to specify the **fields****mapping** in **Da
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
     .flag .e-image {
         background: url("../Content/flags.png") no-repeat scroll -50px -75px rgba(0, 0, 0, 0);
@@ -276,7 +255,6 @@ The following steps explain you how to specify the **start day of the week** in 
 
   {% highlight html %}
   
-  **[HTML]**
   
       <input id="datepicker" type="text" />
       
@@ -284,11 +262,8 @@ The following steps explain you how to specify the **start day of the week** in 
 
   {% highlight js %}
   
-  **[JavaScript]**
-  
-// Add the code to specify the start day of the week in DatePicker widget
-
 <script type="text/javascript">
+  // Add the code to specify the start day of the week in DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -313,8 +288,6 @@ The following steps explain you how to specify the number of months to navigate 
 *  In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
  
 {% highlight html %}
-  
-   **[HTML]**
 
     <input id="datepicker" type="text"/>
 
@@ -323,11 +296,8 @@ The following steps explain you how to specify the number of months to navigate 
 
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to specify the number of months to navigate at one click
-
 <script type="text/javascript">
+  // Add the code to specify the number of months to navigate at one click
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -350,18 +320,14 @@ The following steps explain you how to specify the selected value.
 
   {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
-
-  **[JavaScript]**
-  // Add the code to specify the selected date value
-  
+    
 <script type="text/javascript">
+    // Add the code to specify the selected date value
     $(function () {
         // declaration
         $("#datepicker").ejDatePicker({
@@ -392,19 +358,14 @@ The following steps explain you how to specify the **watermark Text** in **DateP
 
   {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
-
-  **[JavaScript]**
-  
-  // Add the code to specify Watermark Text to be display in input text
-  
+    
 <script type="text/javascript">
+  // Add the code to specify Watermark Text to be display in input text
     $(function () {
         // declaration
         $("#datepicker").ejDatePicker({

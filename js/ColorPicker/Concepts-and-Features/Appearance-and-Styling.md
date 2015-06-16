@@ -47,7 +47,6 @@ In the following code example, the **ColorPicker** popup model type is set as **
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -55,7 +54,6 @@ In the following code example, the **ColorPicker** popup model type is set as **
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {
@@ -169,7 +167,6 @@ presetType: ej.ColorPicker.PresetType.Candycrush</td></tr>
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -177,7 +174,6 @@ presetType: ej.ColorPicker.PresetType.Candycrush</td></tr>
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {
@@ -202,7 +198,6 @@ The **custompalette** property is a dependent property of **palette** and **mode
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -210,7 +205,6 @@ The **custompalette** property is a dependent property of **palette** and **mode
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {
@@ -239,7 +233,6 @@ The following steps explain you how to get the **ColorPicker** popup in **Displa
 
 {% highlight html %}
 
-**[HTML]**
 
  <div id="colorPicker" ></div>    
 
@@ -247,7 +240,6 @@ The following steps explain you how to get the **ColorPicker** popup in **Displa
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {
@@ -302,7 +294,6 @@ The following list is the twelve themes supported by ColorPicker:
 
 {% highlight html %}
 
-**[HTML]**
 
 <!doctype html>
 <html>
@@ -348,7 +339,6 @@ Using this property you can override the existing styles under the theme style s
 
 {% highlight html %}
 
-**[HTML]**
 
      <input type="text" id="colorPicker" />    
 
@@ -356,7 +346,6 @@ Using this property you can override the existing styles under the theme style s
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {

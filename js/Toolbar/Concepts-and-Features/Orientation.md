@@ -27,7 +27,6 @@ Add the following script in your **HTML** page.
 
 {% highlight js %}
 
-**[JS]**
 
 <script type="text/javascript">
     $(function () {
@@ -42,7 +41,6 @@ OR
 
 {% highlight js %}
 
-**[JS]**
 
 <script type="text/javascript">
     $(function () {
@@ -72,7 +70,6 @@ Add the following script in your **HTML** page.
 
 {% highlight js %}
 
-**[JS]**
 
 <script type="text/javascript">
     $(function () {
@@ -88,7 +85,6 @@ OR
 
 {% highlight js %}
 
-**[JS]**
 
 <script type="text/javascript">
     $(function () {

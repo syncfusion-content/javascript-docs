@@ -50,7 +50,6 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
 
-  **[HTML]**
   
   	<div class="control">
 	        <input type="text" id="dateTime" />
@@ -60,13 +59,14 @@ Add the following code in your **HTML** page.
 
 
   {% highlight js %}
-
-  **[JavaScript]**
   
-  // Adds the code in your script section with start level as century in DateTimePicker popup
+<script>
+  
+  // Add the code in your script section with start level as century in DateTimePicker popup
 	        $('#dateTime').ejDateTimePicker({
 	            startLevel: "century",
 	        });
+</script>
 
   {% endhighlight %}
 
@@ -86,14 +86,14 @@ The following code snippet is set to depth level in **DateTimePicker.**
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
 
                $('#dateTime').ejDateTimePicker({  
                    startLevel:"century",
                    depthLevel:"year",
                    width: '200px', 
                });       
-
+</script>
 
 {% endhighlight %}
 

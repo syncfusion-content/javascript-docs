@@ -19,7 +19,6 @@ The following steps explain enabling the **allowDragAndDrop** property for **Tre
 
 {% highlight html %}
 
-[HTML]
 
 <ul id="treeView">
         <li class="expanded">
@@ -72,7 +71,6 @@ The following steps explain enabling the **allowDragAndDrop** property for **Tre
 
 {% highlight js %}
 
-[JavaScript]
 
 // Enable allowDragAndDrop for TreeView control as follows.
 <script type="text/javascript">
@@ -95,7 +93,7 @@ You can allow the child level of specified node to be dropped in **TreeView** by
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <script type="text/javascript">
     $("#treeView").ejTreeView({ **allowDropChild**: true });
 </script>
@@ -108,7 +106,7 @@ You can drag the root node and drop it into the same level of node that is a sib
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <script type="text/javascript">
     $("#treeView").ejTreeView({ **allowDropSibling**: true });
 </script>

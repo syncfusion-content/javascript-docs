@@ -21,7 +21,6 @@ The following steps explains you the details on rendering the **Menu** control.
 
 {% highlight html %}
 
-**[HTML]** 
    
 <div>
     <ul id="menucontrol">
@@ -74,7 +73,6 @@ The following steps explains you the details on rendering the **Menu** control.
 
 {% highlight js %}
 
-**[Javascript]**
      
 // Initialize the control in JavaScript.
 
@@ -103,7 +101,6 @@ You can also render **Menu** control in vertical direction using **orientation.*
 
 {% highlight js %}
 
-**[JavaScript]**
 <script type="text/javascript">
     jQuery(function ($) {
         $("#menucontrol").ejMenu({

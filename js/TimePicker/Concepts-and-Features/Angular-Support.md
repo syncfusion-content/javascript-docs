@@ -32,7 +32,6 @@ The following code example depicts you the way to bind data to the **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
 <html ng-app="TimeCtrl">
 <head>

@@ -178,7 +178,6 @@ The following steps explains you the details about rendering the **Button** with
 
 {% highlight html %}
 
-**[HTML]**  
   
     <button id="button_imageonly">login</button>
     <button id="button_textonly">login</button>
@@ -198,9 +197,6 @@ The following steps explains you the details about rendering the **Button** with
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Initialize the control in JavaScript
 
 <script type="text/javascript">
         // Here use contentType property to render the button with different contents
@@ -289,7 +285,7 @@ _Button with different content types_
 
 ## Image Position
 
-To provide the best look and feel for **Button**, position of button images is an important customizable option. With **imagePosition** property you can easily customize the position of images inside button without using any complex **CSS**. **imagePosition** property is applicable only with the **textandimage****contentType** property. This property supports the following values.
+To provide the best look and feel for **Button**, position of button images is an important customizable option. With **imagePosition** property you can easily customize the position of images inside button without using any complex **CSS**. **imagePosition** property is applicable only with the **textandimage** **contentType** property. This property supports the following values.
 
 _List of values supported by contentType property_
 
@@ -319,7 +315,6 @@ The following steps explains you the details about rendering the **Button** with
 
 {% highlight html %}
 
-**[HTML]**
 
     <button id="button_imageleft_normal">login</button>
     <button id="button_imageleft_mini">login</button>
@@ -343,9 +338,6 @@ The following steps explains you the details about rendering the **Button** with
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Initialize the control in JavaScript
 <script type="text/javascript">
     //Using imagePosition property you can render the button images with different position
     $(function () {
@@ -484,7 +476,6 @@ The following steps explains you the details about rendering the **Button** with
 
 {% highlight html %}
 
-**[HTML]**
 
     <button id="button_customCss1">login</button>
     <button id="button_customCss2">login</button>
@@ -495,9 +486,6 @@ The following steps explains you the details about rendering the **Button** with
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**
-// Initialize the control in JavaScript
 
 <script type="text/javascript">
         //implement custom CSS for each button
@@ -547,7 +535,6 @@ The following steps explains you the details about rendering the **Button** with
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
         /* Customize the button background */
         .e-button.customCss1 {

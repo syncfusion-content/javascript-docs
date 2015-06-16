@@ -21,8 +21,6 @@ The following steps explains you the configuration of **targetID** property in *
 
 {% highlight html %}
 
-**[HTML]**
-
          <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -41,12 +39,8 @@ The following steps explains you the configuration of **targetID** property in *
 
 {% highlight js %}
 
-**[JavaScript]**  
-
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript      
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list"
@@ -66,9 +60,7 @@ The following steps explains you the configuration of **itemsCount** property in
 
 {% highlight html %}
 
-**[HTML]**
-
-         <input type="text" id="dropdownlist" />
+    <input type="text" id="dropdownlist" />
 
         <div id="list">
             <ul>
@@ -86,12 +78,8 @@ The following steps explains you the configuration of **itemsCount** property in
 
 {% highlight js %}
 
-**[JavaScript]** 
- 
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript      
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -121,8 +109,6 @@ The following steps explains you the configuration of **selectedItemIndex** prop
 
 {% highlight html %}
 
-**[HTML]**
-
          <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -142,17 +128,12 @@ The following steps explains you the configuration of **selectedItemIndex** prop
 
 {% highlight js %}
 
-**[JavaScript]**  
-
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript      
         $(function () {
             $('#dropdownlist').ejDropDownList({
-                targetID: "list",
-                
-selectedItemIndex: 1                
+                targetID: "list",                
+                selectedItemIndex: 1                
             });
         });
     </script>
@@ -177,7 +158,6 @@ The following steps explains you the configuration of **showPopupOnLoad** proper
 
 {% highlight html %}
 
-**[HTML]**
 
          <input type="text" id="dropdownlist" />
 
@@ -198,11 +178,8 @@ The following steps explains you the configuration of **showPopupOnLoad** proper
 
 {% highlight js %}
 
-**[JavaScript]**  
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript      
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -223,8 +200,6 @@ The following steps explains you the configuration of **selectedItems** property
 
 {% highlight html %}
 
-**[HTML]**
-
       <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -242,13 +217,10 @@ The following steps explains you the configuration of **selectedItems** property
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**  
-// Initialize the control in JavaScript
-
+ 
 <script type="text/javascript">
-      
-$('#dropdownlist').ejDropDownList({
+           // Initialize the control in JavaScript     
+           $('#dropdownlist').ejDropDownList({
                 targetID: "list",
                 selectedItems: [0, 1],
                 showCheckbox:true
@@ -276,7 +248,6 @@ The following steps explains you the configuration of **readOnly** property in *
 
 {% highlight html %}
 
-**[HTML]**
 
      <input type="text" id="dropdownlist" />
 
@@ -296,18 +267,15 @@ The following steps explains you the configuration of **readOnly** property in *
 
 {% highlight js %}
 
-**[JavaScript]**  
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript      
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
                 readOnly: true
             });
         });
-    </script>
+</script>
 
 {% endhighlight %}
 
@@ -322,8 +290,6 @@ The following steps explains you the configuration of **enabled** property in **
 
 {% highlight html %}
 
-**[HTML]**
-
      <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -342,19 +308,15 @@ The following steps explains you the configuration of **enabled** property in **
 
 {% highlight js %}
 
-**[JavaScript]** 
-
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript      
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
                 enabled: false
             });
         });
-   </script>
+</script>
 
 {% endhighlight %}
 
@@ -376,8 +338,6 @@ The following steps explains you the configuration of **enablePersistence** prop
 
 {% highlight html %}
 
-**[HTML]**
-
      <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -389,19 +349,14 @@ The following steps explains you the configuration of **enablePersistence** prop
                 <li>Sports</li>
                 <li>Science</li>
             </ul>
-
-  </div>
+        </div>
 
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**
   
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript    
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",

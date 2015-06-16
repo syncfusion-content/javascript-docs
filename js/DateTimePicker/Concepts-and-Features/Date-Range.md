@@ -29,8 +29,6 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
 
-  **[HTML]**
-  
   	<div class="control">
 	        <input type="text" id="dateTime" />
 	    </div>
@@ -40,9 +38,9 @@ Add the following code in your **HTML** page.
 
   {% highlight js %}
 
-  **[JavaScript]**
+<script>
   
-  // Adds the code in your script section to render the DateTimePicker with fixed minimum and maximum date and time
+  // Add the code in your script section to render the DateTimePicker with fixed minimum and maximum date and time
           
 	 $('#dateTime').ejDateTimePicker({
 	                width: 200,
@@ -50,6 +48,7 @@ Add the following code in your **HTML** page.
 	                maxDateTime: "9/21/2014 2:00 PM",
 	
 	            });
+ </script>
 
   {% endhighlight %}
 

@@ -29,7 +29,7 @@ The **Slider** properties **value** and **values** are provided with two way bin
 
 {% highlight html %}
 
-[**HTML**]
+
 
 <head>
     <title>Slider</title>
@@ -59,7 +59,6 @@ The **Slider** properties **value** and **values** are provided with two way bin
 
 {% highlight html %}
 
-**[HTML]**
 
 / / Add this code in your html page
 
@@ -82,7 +81,7 @@ The **Slider** properties **value** and **values** are provided with two way bin
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 //In JavaScript, bind the “value” and “width” property in Angular way as follows,
     <script>
@@ -124,7 +123,6 @@ Two way binding support is included only for the applicable **Slider** propertie
 
 {% highlight html %}
 
-**[HTML]**
 
        <body>
     <div class="frame">
@@ -142,7 +140,7 @@ Two way binding support is included only for the applicable **Slider** propertie
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // In JavaScript, specify the “value” property as observable in the ViewModel to enable the two way binding.
 
