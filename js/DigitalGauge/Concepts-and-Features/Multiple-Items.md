@@ -13,7 +13,7 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {
