@@ -17,7 +17,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -48,7 +48,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -86,7 +86,7 @@ The Pointers border is modified with the object called **border** as in scales. 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -131,7 +131,7 @@ Based on the value, the****pointer point out the label value. You can set the po
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -178,7 +178,7 @@ Pointer can be positioned with the help of two properties such as **distanceFrom
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -266,7 +266,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -323,7 +323,7 @@ You can position the **Circular Gauge** pointer value with the gauge as center b
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type=”text/javascript”>
 $(function () {
@@ -390,7 +390,7 @@ Appearance of the **Circular Gauge****pointer value text** is adjusted by using 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type=”text/javascript”>
 $(function () {
@@ -451,7 +451,7 @@ Similar to other collection, font option is also available in this pointer value
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type=”text/javascript”>
 $(function () {
