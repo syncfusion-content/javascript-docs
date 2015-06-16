@@ -103,7 +103,7 @@ You can customize a **tooltip** with required template by adding a **“div”**
 
 You customize a **data label** with required template by adding a **“div”** element with an **“id”** to the web page and assigning the **“id”** to the property **“template”** under **“dataLabel”** as illustrated in the following code example.
 
-{% highlight js %}
+{% highlight html %}
 
     <div id="template">
 

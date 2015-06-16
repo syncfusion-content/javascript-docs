@@ -222,7 +222,7 @@ By default zooming is not enabled. You can enable it using the “enable” opti
 
 ### Programmatic Zooming
 
-Programmatically the Chart can be zoomed using **zoomPosition** and **zoomFactor** properties.****Both the properties are usually between 0 and 1. When you set the **zoomFactor** to 1, the Chart isn't zoomed. When you set it to 0.5, the Chart is double its usual size. The **zoomPosition** is used to set the starting position of the zoomed axis. For example, when both the properties are set to 0.5 for horizontal axis then the Chart is zoomed to double its size and the view port of the horizontal axis start from half of the axis. 
+Programmatically the Chart can be zoomed using **zoomPosition** and **zoomFactor** properties.Both the properties are usually between 0 and 1. When you set the **zoomFactor** to 1, the Chart isn't zoomed. When you set it to 0.5, the Chart is double its usual size. The **zoomPosition** is used to set the starting position of the zoomed axis. For example, when both the properties are set to 0.5 for horizontal axis then the Chart is zoomed to double its size and the view port of the horizontal axis start from half of the axis. 
 
 ### Enable zoom via mouse wheel
 

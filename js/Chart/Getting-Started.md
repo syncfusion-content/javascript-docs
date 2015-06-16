@@ -21,7 +21,7 @@ This section encompasses on how to configure the **Charts** for your business re
 
 Getting started with your **Essential JavaScript Chart** is very easy. You can start by creating a simple line **Chart**.
 
-1. Create an **HTML** page and add the following code example.
+1.Create an **HTML** page and add the following code example.
 
 {% highlight html %}
 
@@ -46,7 +46,7 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 
 
-2. Create a **&lt;div&gt;** tag with an id and set height and width of the **Chart**.
+2.Create a **&lt;div&gt;** tag with an id and set height and width of the **Chart**.
 
 {% highlight html %}
 
@@ -60,7 +60,7 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 
 
 
-3. Add a script tag inside the **&lt;Body&gt;** tag and add the following code example.
+3.Add a script tag inside the **&lt;Body&gt;** tag and add the following code example.
 
 {% highlight html %}
 
