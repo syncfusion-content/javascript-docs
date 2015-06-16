@@ -15,14 +15,33 @@ The following steps explain you how to get the **Date Range** of **DatePicker** 
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to set the <b>Date Range</b> of <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({                <b>minDate: new Date("2014/06/03"),</b><b>                maxDate: new Date("2014/06/19")</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+
+// Add the code to set the Date Range of DatePicker widget
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                minDate: new Date("2014/06/03"),
+                maxDate: new Date("2014/06/19")
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
+
+
 
 
 *  The following screenshot displays the output for the above code.

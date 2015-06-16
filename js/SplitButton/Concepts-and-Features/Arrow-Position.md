@@ -66,7 +66,13 @@ The following steps explain you the details on rendering the **Split Button** 
         <li><span>Admin</span></li>
     </ul>
 </div>
-[JavaScript] // Initialize the control in JavaScript
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+ // Initialize the control in JavaScript
 <script type="text/javascript">
     $(function () {
         $("#spltbutton11").ejSplitButton({
@@ -97,7 +103,6 @@ The following steps explain you the details on rendering the **Split Button** 
         });
     });
 </script>
-
 
 {% endhighlight %}
 

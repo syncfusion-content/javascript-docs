@@ -19,7 +19,6 @@ The following steps explain you how to define a **Template** to display a text a
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="selectCountry" />
 
 
@@ -33,7 +32,6 @@ The following steps explain you how to define a **Template** to display a text a
 
 {% highlight css %}
 
-**[Style]**
 <style type="text/css" class="cssStyles">
         /* Sprite css for country flags */
         .flag
@@ -99,7 +97,7 @@ The following steps explain you how to define a **Template** to display a text a
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
 var countries = [
   { text: "Algeria", sprite: "flag-dz" }, { text: "Argentina", sprite: "flag-ar" },
   { text: "Armenia", sprite: "flag-am" }, { text: "Brazil", sprite: "flag-br" },
@@ -120,9 +118,7 @@ var countries = [
   { text: "Uruguay", sprite: "flag-uy" }, { text: "Viet Nam", sprite: "flag-vn" },
   { text: "Yemen", sprite: "flag-ye" }	
 ];
-
-
-
+</script>
 
 {% endhighlight %}
 
@@ -130,20 +126,19 @@ var countries = [
 
 4. Configure the **template** structure for **AutoComplete** control by including a **&lt;div&gt;** element with an image and text in every row of the popup panel. Assign the corresponding variable name within **${**&lt;field name&gt;**}** to map them into the list.
 
-**[JavaScript]**
 
-$('#selectCountry').ejAutocomplete({
+{% highlight js %}
 
+<script type="text/javascript">
+        $('#selectCountry').ejAutocomplete({
                 dataSource: countries,
-
                 width: 205,
-
-**template: '&lt;div class="flag ${sprite}"&gt; &lt;/div&gt;' +**
-
-                        **'&lt;div class="txt"&gt; ${text} &lt;/div&gt;'**
-
+                template: '&lt;div class="flag ${sprite}"&gt; &lt;/div&gt;' +
+                        '&lt;div class="txt"&gt; ${text} &lt;/div&gt;'
             });
+</script>
 
+{% endhighlight %}
 
 
 

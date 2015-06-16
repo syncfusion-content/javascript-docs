@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Split Button** in your app
 
 ## Create your first Split Button in JavaScript
 
-The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily configured as **Essential JavaScript Split Button** control.  The basic rendering of **Essential JavaScript Split****Button** is achieved by using default functionality. Initially the **targetID** is a mandatory one, without this field it does not act as normal button on two sides.
+The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily configured as **Essential JavaScript Split Button** control.  The basic rendering of **Essential JavaScript Split** **Button** is achieved by using default functionality. Initially the **targetID** is a mandatory one, without this field it does not act as normal button on two sides.
 
 **Control structure**
 
@@ -25,13 +25,14 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
 {% highlight html %}
 
+**[HTML]**
 
 <!doctype html>
 <html>
 <head>
 <title>Getting Started Essential JS</title> 
       <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -40,7 +41,7 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body><!--add button element here--></body>
@@ -51,9 +52,11 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
 
 
-2. Adding button element and **&lt;UL&gt;, &lt;LI&gt;** element for **Split****Button** rendering.
+2. Adding button element and **&lt;UL&gt;, &lt;LI&gt;** element for **Split** **Button** rendering.
 
 {% highlight html %}
+
+**[HTML]**
 
 <button id="sbutton">Save</button>
 <ul id="target">

@@ -16,6 +16,7 @@ This feature allows you to change the left-to-right alignment of the **Toolbar**
 {% highlight js %}
 
 **[JS]**
+
 <script type="text/javascript">
     $(function () {
         // declaration

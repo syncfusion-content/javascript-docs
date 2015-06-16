@@ -49,12 +49,14 @@ The following steps explain local data binding to an **AutoComplete** textbox.
 
 {% highlight html %}
 
-**[HTML]**
-         **<input type="text" id="autocomplete" />**
+<input type="text" id="autocomplete" />
+    
+{% endhighlight %}
 
-**[JavaScript]**
-**\\** Define local dataSource elements using the **key** and **text** fields.
-var states = [
+{% highlight js %}
+
+<script type="text/javascript">
+    var states = [
  { index: "s1", countryName: "Alabama" }, { index: "s2", countryName: "Alaska" },
  { index: "s3", countryName: "Arizona" }, { index: "s4", countryName: "Arkansas" },
  { index: "s5", countryName: "California" },{index: "s6",countryName: "Colorado" },
@@ -71,19 +73,16 @@ var states = [
  { index: "s27", countryName: "Nevada" }, {index: "s28",countryName: "New Jersey" }                 
 ];
 
-**[JavaScript]**
 \\ Map local dataSource to corresponding fields in AutoComplete.
 
     $('#autocomplete').ejAutocomplete({
-**dataSource: states,**
+                dataSource: states,
                 fields: { key: "index", text: "countryName" },
                 width: 205
             });
-
+</script>
 
 {% endhighlight %}
-
-
 
 
 
@@ -105,7 +104,6 @@ The following steps explain the remote data binding to an **AutoComplete** textb
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -117,14 +115,14 @@ The following steps explain the remote data binding to an **AutoComplete** textb
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
 var dataManger = **ej.DataManager**({
             // Web service host
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
             });
             // Query creation
 var query = **ej.Query().**from("Suppliers").select("SupplierID", "ContactName");
-
+</script>
 
 
 {% endhighlight %}
@@ -135,7 +133,7 @@ var query = **ej.Query().**from("Suppliers").select("SupplierID", "ContactName")
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
 **dataSource: dataManger,**
                 **query: query,**
@@ -143,7 +141,7 @@ var query = **ej.Query().**from("Suppliers").select("SupplierID", "ContactName")
                 filterType: ej.filterType.StartsWith,
                 width: 205
             });
-
+</script>
 
 
 {% endhighlight %}

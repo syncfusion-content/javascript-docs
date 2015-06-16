@@ -43,15 +43,31 @@ The following steps explain you how to specify the **Start Level** view in **Dat
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to specify the <b>Start Level</b> view in <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                startLevel: ej.DatePicker.Level.Century</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
 
+  **[JavaScript]**
+
+// Add the code to specify the Start Level view in DatePicker widget
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                startLevel: ej.DatePicker.Level.Century
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
 
 * The following screenshot displays the output for the above code.
 
@@ -93,14 +109,31 @@ The following steps explain you how to get the **Depth Level.**
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to render the <b>Depth Level</b>&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({            startLevel:ej.DatePicker.Level.Century,             <b>depthLevel: ej.DatePicker.Level.Year</b>            });        });  &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+
+// Add the code to render the Depth Level
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+            startLevel:ej.DatePicker.Level.Century,
+             depthLevel: ej.DatePicker.Level.Year
+            });
+        });
+  </script>
+
+  {% endhighlight %}
 
 
 * The following screenshot displays the output for the above code.

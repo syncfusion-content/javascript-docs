@@ -39,6 +39,7 @@ Selects the focused item</td></tr>
 Esc</td><td>
 Closes the popup</td></tr>
 </table>
+
 ## Configure Keyboard Interaction
 
 The following steps explain how you can enable **keyboard** interaction for an **AutoComplete** textbox.
@@ -47,8 +48,7 @@ The following steps explain how you can enable **keyboard** interaction for an *
 
 {% highlight html %}
 
-**[HTML]**
-           <input type="text" id="autocomplete" **accesskey="j"**/>
+           <input type="text" id="autocomplete" accesskey="j" />
 
 
 
@@ -60,12 +60,12 @@ The following steps explain how you can enable **keyboard** interaction for an *
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 200,
                 dataSource: carList
             });
-
+</script>
 
 
 {% endhighlight %}
@@ -76,9 +76,7 @@ The following steps explain how you can enable **keyboard** interaction for an *
 
 {% highlight js %}
 
-**[JavaScript]**
-
-    <script type="text/javascript">
+<script type="text/javascript">
     $(function () {
         $(document).on("keydown", function (e) {
             if (e.altKey && e.keyCode === 74) { // j- key code.

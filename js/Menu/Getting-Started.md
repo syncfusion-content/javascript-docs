@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Menu** control in your app
 
 ## Create Syncfusion Menu in JavaScript
 
-The **Essential JavaScript****Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion’s** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
+The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion’s** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
 
 
 
@@ -21,7 +21,7 @@ The **Essential JavaScript****Menu** supports displaying a **Menu** of list-out 
 
 **Create a Menu**
 
-**Essential JavaScript****Menu** widgets are basically provided with built-in features like keyboard navigation, show and hide **Menu** items with animations, and flexible API’s. From the following guidelines, you can learn how to render **Menu** control with Remote data source value.
+**Essential JavaScript** **Menu** widgets are basically provided with built-in features like keyboard navigation, show and hide **Menu** items with animations, and flexible API’s. From the following guidelines, you can learn how to render **Menu** control with Remote data source value.
 
 * Create an **HTML** file and add the following template into it for **Menu** creation.
 
@@ -32,7 +32,7 @@ The **Essential JavaScript****Menu** supports displaying a **Menu** of list-out 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
           <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -41,7 +41,7 @@ The **Essential JavaScript****Menu** supports displaying a **Menu** of list-out 
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -238,7 +238,7 @@ The following screenshot is the output.
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items through online data source. You can simply customize the **Menu** widget in an efficient manner.
 
-In summary of this getting started, you have now simulated the **Syncfusion’s** website **Menu** with Essential **JavaScript****Menu**. You have utilized and learnt the appearance customization etc.  
+In summary of this getting started, you have now simulated the **Syncfusion’s** website **Menu** with Essential **JavaScript** **Menu**. You have utilized and learnt the appearance customization etc.  
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items. You can simply customize the **Menu** in an efficient manner.
 

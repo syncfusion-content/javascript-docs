@@ -11,22 +11,55 @@ documentation: ug
 
 ## Checked status
 
-You have options to set the state of the radio button as either checked or unchecked. When you select any option from the group of radio buttons, a dot mark appears inside the circle. This is called the **checked****state**. Previously selected radio buttons in this group are unselected that is they go to the **unchecked state**. The **checked** property is used to set the state of the radio button.
+You have options to set the state of the radio button as either checked or unchecked. When you select any option from the group of radio buttons, a dot mark appears inside the circle. This is called the **checked** **state**. Previously selected radio buttons in this group are unselected that is they go to the **unchecked state**. The **checked** property is used to set the state of the radio button.
 
 The following steps explain the details about rendering the **RadioButton** with the **checked** option
 
 1. In the **HTML** page, add the following input elements to configure **RadioButton** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="page-align"&gt;        &lt;table&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;input type="radio" id="Radio_checked" /&gt;                &lt;/td&gt;                &lt;td&gt;                    <label for="Radio_checked" >Male</label>                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;input type="radio" id="Radio_unchecked" /&gt;                &lt;/td&gt;                &lt;td&gt;                    <label for="Radio_unchecked">Female</label>                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b> [JavaScript]</b><b>// </b>Initialize the control<b> </b>in<b> JavaScript</b> &lt;script type="text/javascript"&gt;        $(function () {            // Here we render checked and unchecked type of radio buttons in same group            // set checked state of radio button as follows            $("#Radio_checked").ejRadioButton({ name: "Gender", <b>checked: true</b> });            $("#Radio_unchecked").ejRadioButton({ name: "Gender" });        });    &lt;/script&gt;</td></tr>
-</table>
+    <div class="page-align">
+        <table>
+            <tr>
+                <td>
+                    <input type="radio" id="Radio_checked" />
+                </td>
+                <td>
+                    <label for="Radio_checked" >Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="Radio_unchecked" />
+                </td>
+                <td>
+                    <label for="Radio_unchecked">Female</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the control in JavaScript
+ <script type="text/javascript">
+        $(function () {
+            // Here we render checked and unchecked type of radio buttons in same group
+            // set checked state of radio button as follows
+            $("#Radio_checked").ejRadioButton({ name: "Gender", checked: true });
+            $("#Radio_unchecked").ejRadioButton({ name: "Gender" });
+
+        });
+    </script>
+    
+{% endhighlight %}
 
 
 2. Configure the CSS styles to align the radio buttons.
@@ -62,16 +95,44 @@ The following steps explain the details about rendering the **RadioButton** with
 
 1. In the **HTML** page, add the following input elements to configure the **RadioButton** widget.
 
+{% highlight html %}
+
+**[HTML]**
+
+    <div class="page-align">
+        <table>
+            <tr>
+                <td>
+                    <!--here we did not use label tag-->
+                    <input type="radio" id="RadBtn_male" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <!-- here we did not use label tag-->
+                    <input type="radio" id="RadBtn_female" />
+                </td>
+            </tr>
+        </table>
+    </div>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="page-align"&gt;        &lt;table&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;!--here we did not use label tag--&gt;                    &lt;input type="radio" id="RadBtn_male" /&gt;                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                   &lt;!-- here we did not use label tag--&gt;                    &lt;input type="radio" id="RadBtn_female" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Initialize the control<b> </b>in<b> JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            // radio button with text property            $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, <b>text: "Male" </b>});            $("#RadBtn_female").ejRadioButton({ name: "Gender", <b>text: "Female"</b> });        });    &lt;/script&gt;</td></tr>
-</table>
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the control in JavaScript
+   <script type="text/javascript">
+        $(function () {
+            // radio button with text property
+            $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male" });
+            $("#RadBtn_female").ejRadioButton({ name: "Gender", text: "Female" });
+        });
+    </script>
+
+{% endhighlight %}
 
 
 2. Configure the CSS styles to align the radio buttons.
@@ -122,16 +183,68 @@ The following steps explain the details about rendering **RadioButton** with dif
 
 3. In the HTML page, add the following input elements to configure RadioButton widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="page-align"&gt;        &lt;table&gt;            &lt;tr&gt;                <td>Small size Radio buttons                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;input type="radio" id="Radio_Male" /&gt;                    <label for="Radio_Male">Male</label>                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;input type="radio" id="Radio_Female" /&gt;                    <label for="Radio_Female">Female</label>                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;        &lt;table&gt;            &lt;tr&gt;                <td>Medium size Radio buttons                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;input type="radio" id="Radio1_Male" /&gt;                    <label for="Radio1_Male">Male</label>                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;input type="radio" id="Radio1_Female" /&gt;                    <label for="Radio1_Female">Female</label>                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Initialize the control<b> </b>in<b> JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            // small size of radio buttons in same group                      $("#Radio_Male").ejRadioButton({ name: "Gender", <b>size: "small"</b>, checked: true });            $("#Radio_Female").ejRadioButton({ name: "Gender", <b>size: "small"</b> });            // Medium size of radio buttons in same group                      $("#Radio1_Male").ejRadioButton({ name: "Gender1", <b>size: "medium"</b>, checked: true });            $("#Radio1_Female").ejRadioButton({ name: "Gender1", <b>size: "medium"</b> });        });    &lt;/script&gt;</td></tr>
-</table>
+    <div class="page-align">
+        <table>
+            <tr>
+                <td>Small size Radio buttons
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="Radio_Male" />
+                    <label for="Radio_Male">Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="Radio_Female" />
+                    <label for="Radio_Female">Female</label>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Medium size Radio buttons
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="Radio1_Male" />
+                    <label for="Radio1_Male">Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="Radio1_Female" />
+                    <label for="Radio1_Female">Female</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+// Initialize the control in JavaScript
+<script type="text/javascript">
+        $(function () {
+            // small size of radio buttons in same group          
+            $("#Radio_Male").ejRadioButton({ name: "Gender", size: "small", checked: true });
+            $("#Radio_Female").ejRadioButton({ name: "Gender", size: "small" });
+            // Medium size of radio buttons in same group          
+            $("#Radio1_Male").ejRadioButton({ name: "Gender1", size: "medium", checked: true });
+            $("#Radio1_Female").ejRadioButton({ name: "Gender1", size: "medium" });
+
+        });
+    </script>
+
+{% endhighlight %}
 
 
 4. Configure the CSS styles to align the radio buttons.
@@ -165,16 +278,41 @@ The following steps explain the details about rendering the **RadioButton** with
 
 1. In the HTML page, add the following button elements to configure RadioButton widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="page-align"&gt;        &lt;table class="rightAlign"&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;input type="radio" id="RadBtn_male" /&gt;                &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                    &lt;input type="radio" id="RadBtn_female" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Initialize the control<b> </b>in<b> JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            //set radio button with right to left format            $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male", <b>enableRTL: true</b> });            $("#RadBtn_female").ejRadioButton({ name: "Gender", text: "Female", <b>enableRTL: true</b> });        });    &lt;/script&gt;</td></tr>
-</table>
+    <div class="page-align">
+        <table class="rightAlign">
+            <tr>
+                <td>
+                    <input type="radio" id="RadBtn_male" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="RadBtn_female" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+// Initialize the control in JavaScript
+
+   <script type="text/javascript">
+        $(function () {
+            //set radio button with right to left format
+            $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male", enableRTL: true });
+            $("#RadBtn_female").ejRadioButton({ name: "Gender", text: "Female", enableRTL: true });
+        });
+    </script>
+
+{% endhighlight %}
 
 
 In the above mentioned code, the **text** property has been used. In **LTR** format, the **RadioButton** is on the left side. In **RTL** format, the **RadioButton** appears on the right side. Here the **text** property is used and the **enableRTL** property is set as “**True**”**.** It changes the alignment to right-to-left.

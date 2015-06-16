@@ -47,15 +47,27 @@ The following is the list of the twelve themes supported by **RTE**.
 
 Add the following code in your **HTML** page to initialize the **RTE** with gradient-azure-dark theme.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div class="rte"&gt;        &lt;textarea id="rteSample"&gt;&lt;/textarea&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>\\ Add the following code in the script section to initialize the RTE with gradient-azure-dark theme.                 $("#rteSample").ejRTE();       </td></tr>
-</table>
 
+{% highlight html %}
+
+**[HTML]**
+
+    <div class="rte">
+        <textarea id="rteSample"></textarea>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+// Add the following code in the script section to initialize the RTE with gradient-azure-dark theme.
+<script>
+      $(function(){
+           $("#rteSample").ejRTE();
+      });
+</script>
+{% endhighlight %}
 
 {% include image.html url="/js/RichTextEditor/Concepts-and-Features/Look-and-Feel_images/Look-and-Feel_img1.png" Caption="Showcase of RTE with Gradient-azure-dark theme"%}
 
@@ -68,15 +80,29 @@ You can override the existing styles under the theme style sheet by using this p
 * Add the following code in your **HTML** page.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div class="rte"&gt;        &lt;textarea id="rteSample"&gt;&lt;/textarea&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>\\ Add the following code in your script section to render the RTE with cssClass “light-Pink”.        $(function () {            $("#rteSample").ejRTE({ cssClass: "light-Pink" });        });</td></tr>
-</table>
+**[HTML]**
+
+    <div class="rte">
+        <textarea id="rteSample"></textarea>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Add the following code in your script section to render the RTE with cssClass “light-Pink”.
+<script>
+        $(function () {
+            $("#rteSample").ejRTE({ cssClass: "light-Pink" });
+        });
+</script>
+{% endhighlight %}
+
+
 In the following style sheet, the active theme style sheet file has been overridden using root class “light-Pink”.
 
 * Add the following styles in your styles section.
@@ -84,6 +110,7 @@ In the following style sheet, the active theme style sheet file has been overrid
 {% highlight css %}
 
 **[Style]**
+<style>
     .light-Pink .e-toolbar {
         color: black;
     }
@@ -96,8 +123,7 @@ In the following style sheet, the active theme style sheet file has been overrid
     .light-Pink .editarea {
         background-color: pink;
     }
-
-
+</style>
 {% endhighlight %}
 
 

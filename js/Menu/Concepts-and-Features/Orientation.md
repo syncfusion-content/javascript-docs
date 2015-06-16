@@ -11,7 +11,7 @@ documentation: ug
 
 It gets or sets the direction in which the **Menu** control renders and specifies the orientation of the normal menu.  According to the orientation property the **Menu** control renders in horizontal or vertical.
 
-**Horizontal Menu**
+##Horizontal Menu
 
 Horizontal orientation displays the menu items horizontally and it is the default orientation behavior of **Menu** control. 
 
@@ -19,16 +19,72 @@ The following steps explains you the details on rendering the **Menu** control.
 
 * In an **HTML** page, add the **&lt;ul&gt;** and **&lt;li&gt;** to configure **Menu** control.
 
+{% highlight html %}
 
+**[HTML]** 
+   
+<div>
+    <ul id="menucontrol">
+        <li id="home">
+            <a href="#">Home</a>
+            <ul>
+                <li><a>Foundation</a></li>
+                <li><a>Launch</a></li>
+                <li>
+                    <a>About</a>
+                    <ul>
+                        <li><a>Company</a></li>
+                        <li><a>Location</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li id="Services">
+            <a>Services</a>
+            <ul>
+                <li><a>Consulting</a></li>
+                <li><a>Outsourcing</a></li>
+            </ul>
+        </li>
+        <li id="About"><a>About</a></li>
+        <li id="Contact">
+            <a>Contact us</a>
+            <ul>
+                <li><a>Contact number</a></li>
+                <li><a>E-mail</a></li>
+            </ul>
+        </li>
+        <li id="Careers">
+            <a>Careers</a>
+            <ul>
+                <li>
+                    <a>Position</a>
+                    <ul>
+                        <li><a>Developer</a></li>
+                        <li><a>Manager</a></li>
+                    </ul>
+                </li>
+                <li><a>Apply online</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
-<table>
-<tr>
-<td>
-<b>[HTML]    </b>&lt;div&gt;    &lt;ul id="menucontrol"&gt;        &lt;li id="home"&gt;            <a href="#">Home</a>            &lt;ul&gt;                &lt;li&gt;<a>Foundation</a>&lt;/li&gt;                &lt;li&gt;<a>Launch</a>&lt;/li&gt;                &lt;li&gt;                    <a>About</a>                    &lt;ul&gt;                        &lt;li&gt;<a>Company</a>&lt;/li&gt;                        &lt;li&gt;<a>Location</a>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li id="Services"&gt;            <a>Services</a>            &lt;ul&gt;                &lt;li&gt;<a>Consulting</a>&lt;/li&gt;                &lt;li&gt;<a>Outsourcing</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li id="About"&gt;<a>About</a>&lt;/li&gt;        &lt;li id="Contact"&gt;            <a>Contact us</a>            &lt;ul&gt;                &lt;li&gt;<a>Contact number</a>&lt;/li&gt;                &lt;li&gt;<a>E-mail</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li id="Careers"&gt;            <a>Careers</a>            &lt;ul&gt;                &lt;li&gt;                    <a>Position</a>                    &lt;ul&gt;                        &lt;li&gt;<a>Developer</a>&lt;/li&gt;                        &lt;li&gt;<a>Manager</a>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;<a>Apply online</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;    &lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b> [Javascript]     </b><b>// Initialize the control in JavaScript.</b><br>&lt;script type="text/javascript"&gt;    jQuery(function ($) {        $("#menucontrol").ejMenu({ width: 500 });    });&lt;/script&gt;</td></tr>
-</table>
+{% endhighlight %}
+
+{% highlight js %}
+
+**[Javascript]**
+     
+// Initialize the control in JavaScript.
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#menucontrol").ejMenu({ width: 500 });
+    });
+</script>
+
+{% endhighlight %}
 
 
 The following screenshot displays the output of the above code.        
@@ -37,9 +93,9 @@ The following screenshot displays the output of the above code.
 
 _Figure 6: Horizontal Menu_
 
-**Vertical Menu**
+##Vertical Menu
 
-You can also render **Menu** control in vertical direction using orientation.****To set the vertical orientation of **Menu** control, replace the following script in the above sample code example.
+You can also render **Menu** control in vertical direction using **orientation.** To set the vertical orientation of **Menu** control, replace the following script in the above sample code example.
 
 * Add the following code in your **&lt;script&gt;** section.
 

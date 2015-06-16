@@ -17,16 +17,42 @@ The following steps explains you the behaviour of template support with **Dropdo
 
 > {% include image.html url="/js/DropDownList/Concepts-and-Features/Template-Support_images/Template-Support_img1.png" Caption=""%}_**Note: Images for this sample are available in ‘installed location /themes/images’**_ 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]   </b>     &lt;div class="control"&gt;            <div class="ctrllabel">Select an expert</div>            &lt;input type="text" id="dropdownlist" /&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript] </b>// Initialize the control in <b>JavaScript</b><b> </b>   &lt;script type="text/javascript"&gt;        var empList = [                { text: "Erik Linden", eimg: "3", desig: "Representative", country: "England" }, { text: "John Linden", eimg: "6", desig: "Representative", country: "Norway" },                { text: "Louis", eimg: "7", desig: "Representative", country: "Australia" }, { text: "Lawrence", eimg: "8", desig: "Representative", country: "India" }        ];        $(function () {            $('#dropdownlist').ejDropDownList({                dataSource: empList,                width: "200px",<b>                template: '&lt;img class="eimg" src="../images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/&gt;' +</b><b>                        '&lt;div class="customalign"&gt;&lt;div class="ename"&gt; ${text} &lt;/div&gt;&lt;div class="desig"&gt; ${desig} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;&lt;/div&gt;'</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+    <div class="control">
+            <div class="ctrllabel">Select an expert</div>
+            <input type="text" id="dropdownlist" />
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]** 
+
+// Initialize the control in JavaScript
+ 
+   <script type="text/javascript">
+
+        var empList = [
+                { text: "Erik Linden", eimg: "3", desig: "Representative", country: "England" }, { text: "John Linden", eimg: "6", desig: "Representative", country: "Norway" },
+                { text: "Louis", eimg: "7", desig: "Representative", country: "Australia" }, { text: "Lawrence", eimg: "8", desig: "Representative", country: "India" }
+        ];
+        $(function () {
+
+            $('#dropdownlist').ejDropDownList({
+                dataSource: empList,
+                width: "200px",
+                template: '<img class="eimg" src="../images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/>' +
+                        '<div class="customalign"><div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>'
+            });
+
+        });
+    </script>
+
+{% endhighlight %}
 
 * Customize the template in CSS. 
 

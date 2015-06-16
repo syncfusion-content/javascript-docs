@@ -33,6 +33,7 @@ Increments the value</td></tr>
 Down</td><td>
 Decrements the value</td></tr>
 </table>
+
 ## Configuring Keyboard Navigation
 
 The following steps explain the implementation of keyboard interaction in **PercentageTextBox** .
@@ -41,15 +42,32 @@ The following steps explain the implementation of keyboard interaction in **Perc
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" accesskey="j" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>&lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 22                    });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+       <table cellpadding="10">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="percent">Percent</label>
+                    </td>
+                    <td>
+                        <input id="percent" type="text" accesskey="j" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+	        $("#percent").ejPercentageTextbox({
+            value: 22            
+        });
+</script>
+
+{% endhighlight %}
 
 Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access_key) **+ j** key to focus the **PercentageTextB****ox******widget. Perform provided functionality by using keyboard shortcuts.
 

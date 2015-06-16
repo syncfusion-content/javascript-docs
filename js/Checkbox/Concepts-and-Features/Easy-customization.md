@@ -18,15 +18,36 @@ The following steps explains you the details about rendering the **Checkbox** wi
 * In the **HTML** page, add the following input elements to configure **Checkbox** widget.
 
 
+  {% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="align"&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_nonchecked" /&gt;        <label for="checkbox_nonchecked" class="clslab">Music</label>        &lt;br /&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_checked" /&gt;        <label for="checkbox_checked" class="clslab">Music</label>    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            //disable the checked status            $("#checkbox_nonchecked").ejCheckBox({ <b>checked: false</b> });            //enables the checked status            $("#checkbox_checked").ejCheckBox({ <b>checked: true</b> });        });    &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
+
+    <div class="align">
+        <input type="checkbox" class="nodetext" id="checkbox_nonchecked" />
+        <label for="checkbox_nonchecked" class="clslab">Music</label>
+        <br />
+        <input type="checkbox" class="nodetext" id="checkbox_checked" />
+        <label for="checkbox_checked" class="clslab">Music</label>
+    </div>
+
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  //Initialize the control in JavaScript
+
+   <script type="text/javascript">
+        $(function () {
+            //disable the checked status
+            $("#checkbox_nonchecked").ejCheckBox({ checked: false });
+            //enables the checked status
+            $("#checkbox_checked").ejCheckBox({ checked: true });
+        });
+    </script>
+
+  {% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -48,16 +69,39 @@ The following steps explains you the details about rendering the **Checkbox** wi
 * In the **HTML** page, add the following input elements to configure **Checkbox** widget.
 
 
+  {% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="align"&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_nonTriState" /&gt;        <label for="checkbox_nonTriState" class="clslab">Music</label>        &lt;br /&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_triState" /&gt;        <label for="checkbox_triState" class="clslab">Music</label>    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            //disables the Tri- state for checkbox            $("#checkbox_nonTriState").ejCheckBox({ <b>enableTriState: false</b> });            //enables the Tri- state for checkbox            $("#checkbox_triState").ejCheckBox({ enableTriState: true, checkState:"indeterminate" });        });    &lt;/script&gt;</td></tr>
-</table>
+  **[HTML]**
+ 
+    <div class="align">
+        <input type="checkbox" class="nodetext" id="checkbox_nonTriState" />
+        <label for="checkbox_nonTriState" class="clslab">Music</label>
+        <br />
+        <input type="checkbox" class="nodetext" id="checkbox_triState" />
+        <label for="checkbox_triState" class="clslab">Music</label>
+    </div>
 
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  //Initialize the control in JavaScript
+
+<script type="text/javascript">
+        $(function () {
+
+            //disables the Tri- state for checkbox
+            $("#checkbox_nonTriState").ejCheckBox({ enableTriState: false });
+
+            //enables the Tri- state for checkbox
+            $("#checkbox_triState").ejCheckBox({ enableTriState: true, checkState:"indeterminate" });
+        });
+    </script>
+
+  {% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -94,15 +138,42 @@ The following steps explains you the details about rendering the **Checkbox** wi
 * In the **HTML** page, add the following input elements to configure **Checkbox** widget.
 
 
+  {% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>  &lt;div class="align"&gt;        &lt;input type="checkbox" class="nodetext" id="check" /&gt;        <label for="check" class="clslab">Checked state</label>        &lt;br /&gt;        &lt;input type="checkbox" class="nodetext" id="uncheck" /&gt;        <label for="uncheck" class="clslab">Unchecked state</label>        &lt;br /&gt;        &lt;input type="checkbox" class="nodetext" id="indeterminate" /&gt;        <label for="indeterminate" class="clslab">Indeterminate state</label>    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            //checkState property used to mention the state of checkbox            $("#check").ejCheckBox({ enableTriState: true<b>, checkState: "check"</b> });            $("#uncheck").ejCheckBox({ enableTriState: true<b>, checkState: "uncheck"</b> });            $("#indeterminate").ejCheckBox({ enableTriState: true<b>, checkState: "indeterminate"</b> });        });    &lt;/script&gt;</td></tr>
-</table>
+  **[HTML]**
+  
+    <div class="align">
+        <input type="checkbox" class="nodetext" id="check" />
+        <label for="check" class="clslab">Checked state</label>
+        <br />
+        <input type="checkbox" class="nodetext" id="uncheck" />
+        <label for="uncheck" class="clslab">Unchecked state</label>
+        <br />
+        <input type="checkbox" class="nodetext" id="indeterminate" />
+        <label for="indeterminate" class="clslab">Indeterminate state</label>
+    </div>
+
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  //Initialize the control in JavaScript
+
+<script type="text/javascript">
+        $(function () {
+            //checkState property used to mention the state of checkbox
+            $("#check").ejCheckBox({ enableTriState: true, checkState: "check" });
+            $("#uncheck").ejCheckBox({ enableTriState: true, checkState: "uncheck" });
+            $("#indeterminate").ejCheckBox({ enableTriState: true, checkState: "indeterminate" });
+        });
+    </script>
+
+
+  {% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -136,15 +207,38 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="align"&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_small" /&gt;        <label for="checkbox_small" class="clslab">Small size</label>        &lt;br /&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_medium" /&gt;        <label for="checkbox_medium" class="clslab">Medium size</label>    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            //size property is used to specify the checkbox size            $("#checkbox_small").ejCheckBox({ <b>size: "small"</b> });            $("#checkbox_medium").ejCheckBox({ <b>size: "medium"</b> });        });    &lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
 
+  **[HTML]**
+  
+    <div class="align">
+        <input type="checkbox" class="nodetext" id="checkbox_small" />
+        <label for="checkbox_small" class="clslab">Small size</label>
+        <br />
+        <input type="checkbox" class="nodetext" id="checkbox_medium" />
+        <label for="checkbox_medium" class="clslab">Medium size</label>
+    </div>
+
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  //Initialize the control in JavaScript
+
+<script type="text/javascript">
+        $(function () {
+            //size property is used to specify the checkbox size
+            $("#checkbox_small").ejCheckBox({ size: "small" });
+            $("#checkbox_medium").ejCheckBox({ size: "medium" });
+        });
+    </script>
+
+
+  {% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -163,14 +257,33 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="align"&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_text" /&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            //size property is used to set text for checkbox            $("#checkbox_text").ejCheckBox({ <b>text: "Music"</b> });        });    &lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+
+  **[HTML]**
+  
+    <div class="align">
+        <input type="checkbox" class="nodetext" id="checkbox_text" />
+    </div>
+
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  //Initialize the control in JavaScript
+
+   <script type="text/javascript">
+        $(function () {
+            //size property is used to set text for checkbox
+            $("#checkbox_text").ejCheckBox({ text: "Music" });
+        });
+    </script>
+
+
+  {% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -190,14 +303,36 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>   &lt;div class="align"&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_normalCorner" /&gt;        &lt;br /&gt;        &lt;br /&gt;        &lt;input type="checkbox" class="nodetext" id="checkbox_roundedCorner" /&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            $("#checkbox_normalCorner").ejCheckBox({ <b>showRoundedCorner: false</b> });            $("#checkbox_roundedCorner").ejCheckBox({ <b>showRoundedCorner: true</b> });        });    &lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+
+  **[HTML]**
+  
+     <div class="align">
+        <input type="checkbox" class="nodetext" id="checkbox_normalCorner" />
+        <br />
+        <br />
+        <input type="checkbox" class="nodetext" id="checkbox_roundedCorner" />
+    </div>
+
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  //Initialize the control in JavaScript
+
+<script type="text/javascript">
+        $(function () {
+            $("#checkbox_normalCorner").ejCheckBox({ showRoundedCorner: false });
+            $("#checkbox_roundedCorner").ejCheckBox({ showRoundedCorner: true });
+        });
+    </script>
+
+
+  {% endhighlight %}
 
 
 

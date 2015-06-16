@@ -20,15 +20,69 @@ The following steps explains you the behaviour of cascade dropdown.
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]  </b>    &lt;div class="control" style="float: left;"&gt;        <span class="txt">Select Group</span>        &lt;input id="dropdownlist" type="text" /&gt;    &lt;/div&gt;    &lt;div class="control" style="float: left;"&gt;        <span class="txt">Select Country</span>        &lt;input id="dropdownlist1" type="text" /&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]   </b>// Initialize the control in <b>JavaScript</b>   &lt;script type="text/javascript"&gt;        $(function () {            // declaration            var groups = [          { Id: 'a', text: "Group A" },          { Id: 'b', text: "Group B" },          { Id: 'c', text: "Group C" },          { Id: 'd', text: "Group D" },          { Id: 'e', text: "Group E" }]            //first level child            var countries = [{ value: 11, Id: 'a', text: "Algeria", sprite: "flag-dz" },           { value: 12, Id: 'a', text: "Armenia" },           { value: 13, Id: 'a', text: "Bangladesh" },           { value: 14, Id: 'a', text: "Cuba" },           { value: 15, Id: 'b', text: "Denmark" },           { value: 16, Id: 'b', text: "Egypt" },           { value: 17, Id: 'c', text: "Finland" },           { value: 18, Id: 'c', text: "India" },           { value: 19, Id: 'c', text: "Malaysia" },           { value: 20, Id: 'd', text: "New Zealand" },           { value: 21, Id: 'd', text: "Norway" },           { value: 22, Id: 'd', text: "Poland" },           { value: 23, Id: 'e', text: "Romania" },           { value: 24, Id: 'e', text: "Singapore" },           { value: 25, Id: 'e', text: "Thailand" },           { value: 26, Id: 'e', text: "Ukraine" }]            $('#dropdownlist').ejDropDownList({                dataSource: groups,                fields: { value: "Id" },                <b>cascadeTo: "dropdownlist1"</b>            });            $('#dropdownlist1').ejDropDownList({                dataSource: countries,                enabled: false            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+    <div class="control" style="float: left;">
+        <span class="txt">Select Group</span>
+        <input id="dropdownlist" type="text" />
+    </div>
+
+    <div class="control" style="float: left;">
+        <span class="txt">Select Country</span>
+        <input id="dropdownlist1" type="text" />
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]** 
+  
+// Initialize the control in JavaScript
+
+   <script type="text/javascript">
+
+        $(function () {
+            // declaration
+            var groups = [
+          { Id: 'a', text: "Group A" },
+          { Id: 'b', text: "Group B" },
+          { Id: 'c', text: "Group C" },
+          { Id: 'd', text: "Group D" },
+          { Id: 'e', text: "Group E" }]
+            //first level child
+            var countries = [{ value: 11, Id: 'a', text: "Algeria", sprite: "flag-dz" },
+           { value: 12, Id: 'a', text: "Armenia" },
+           { value: 13, Id: 'a', text: "Bangladesh" },
+           { value: 14, Id: 'a', text: "Cuba" },
+           { value: 15, Id: 'b', text: "Denmark" },
+           { value: 16, Id: 'b', text: "Egypt" },
+           { value: 17, Id: 'c', text: "Finland" },
+           { value: 18, Id: 'c', text: "India" },
+           { value: 19, Id: 'c', text: "Malaysia" },
+           { value: 20, Id: 'd', text: "New Zealand" },
+           { value: 21, Id: 'd', text: "Norway" },
+           { value: 22, Id: 'd', text: "Poland" },
+           { value: 23, Id: 'e', text: "Romania" },
+           { value: 24, Id: 'e', text: "Singapore" },
+           { value: 25, Id: 'e', text: "Thailand" },
+           { value: 26, Id: 'e', text: "Ukraine" }]
+            $('#dropdownlist').ejDropDownList({
+                dataSource: groups,
+                fields: { value: "Id" },
+                cascadeTo: "dropdownlist1"
+            });
+            $('#dropdownlist1').ejDropDownList({
+                dataSource: countries,
+                enabled: false
+
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -53,20 +107,26 @@ The following steps explains you the behavior of multiple cascade dropdown.
 {% highlight html %}
 
 **[HTML]**
-<div class="control" style="float: left; padding:10px;">
+
+     <div class="control" style="float: left; padding:10px;">
     <span class="txt">Select Continent</span>
     <input id="groupsList" type="text" />
-</div>
-<div class="control" style="float: left; padding:10px;">
+    </div>
+     <div class="control" style="float: left; padding:10px;">
     <span class="txt">Select Country</span>
     <input id="countryList" type="text" />
-</div>
-<div class="control" style="float: left; padding:10px;">
+     </div>
+         <div class="control" style="float: left; padding:10px;">
     <span class="txt">Select Capital</span>
     <input id="capitalList" type="text" />
-</div>
+     </div>
+     
+ {% endhighlight %}
+     
+{% highlight js %}
 
 **[JavaScript]**
+
 <script type="text/javascript">
     $(function () {
         // declaration

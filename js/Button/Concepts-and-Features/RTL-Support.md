@@ -15,14 +15,31 @@ The following steps explains the details about rendering the button with Right t
 
 1. In the **HTML** page, add the following button elements to configure button widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b><button id="button_rtl">button</button></td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>     &lt;script type="text/javascript"&gt;        $(function () {            $("#button_rtl").ejButton({                size: "large", contentType: ej.ContentType.TextAndImage,                showRoundedCorner: true,                prefixIcon: "e-uiLight e-login",                //used to enable or disable RTL support for button<b>                enableRTL: true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+    <button id="button_rtl">button</button>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+// Initialize the control in JavaScript
+   <script type="text/javascript">
+        $(function () {
+            $("#button_rtl").ejButton({
+                size: "large", contentType: ej.ContentType.TextAndImage,
+                showRoundedCorner: true,
+                prefixIcon: "e-uiLight e-login",
+                //used to enable or disable RTL support for button
+                enableRTL: true
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 In above mentioned code example prefixIcon property is used and the icon that is to be on left side, (before text) is rendered on right side as enableRTL property is used with prefixIcon.  Consequently, the alignment is changed in right to left order.
 

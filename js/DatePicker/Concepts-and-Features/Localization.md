@@ -27,15 +27,33 @@ The following steps explain you how to get the **Localization**.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to render the <b>Localization</b>&lt;script type="text/javascript"&gt;        $(function () {            $("#datepicker").ejDatePicker({<b>                locale: "fr-FR",</b>                buttonText: "aujourd'hui"            });        });    &lt;/script&gt;</td></tr>
-</table>
 
+  {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+// Add the code to render the Localization
+
+<script type="text/javascript">
+        $(function () {
+            $("#datepicker").ejDatePicker({
+                locale: "fr-FR",
+                buttonText: "aujourd'hui"
+            });
+
+        });
+    </script>
+
+
+  {% endhighlight %}
 
 
 

@@ -15,14 +15,40 @@ The following steps explains you the details about rendering the button with Rig
 
 1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="spltspan"&gt;        <button id="spltbutton_rtl">login</button>        &lt;ul id="Ul11"&gt;            &lt;li&gt;<span>User</span>&lt;/li&gt;            &lt;li&gt;<span>Guest</span>&lt;/li&gt;            &lt;li&gt;<span>Admin</span>&lt;/li&gt;        &lt;/ul&gt; &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Initialize the control in JavaScript     &lt;script type="text/javascript"&gt;            $(function () {                $("#spltbutton_rtl").ejSplitButton({                    //used to enable or disable RTL support for split button                    enableRTL: true,                    size: "small",                    contentType: "textandimage",                    showRoundedCorner: true,                    targetID: "Ul11",                    prefixIcon: "e-uiLight e-login"                });            });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+<div class="spltspan">
+        <button id="spltbutton_rtl">login</button>
+        <ul id="Ul11">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+ </div>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+**[JavaScript]**
+// Initialize the control in JavaScript
+     <script type="text/javascript">
+            $(function () {
+                $("#spltbutton_rtl").ejSplitButton({
+                    //used to enable or disable RTL support for split button
+                    enableRTL: true,
+                    size: "small",
+                    contentType: "textandimage",
+                    showRoundedCorner: true,
+                    targetID: "Ul11",
+                    prefixIcon: "e-uiLight e-login"
+                });
+            });
+    </script>
+
+{% endhighlight %}
 
 
 2. Configure the styles 

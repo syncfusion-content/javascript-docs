@@ -32,7 +32,7 @@ The **Essential JavaScript****Splitter** property is a **layout** control that a
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- style sheet for default theme(flat azure) -->
-<linkhref=" http://cdn.syncfusion.com/js/web/flat-azure/ej.web.all-latest.min.css"rel="stylesheet"/>
+<link href=" http://cdn.syncfusion.com/js/web/flat-azure/ej.web.all-latest.min.css"rel="stylesheet"/>
     <!--scripts-->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>

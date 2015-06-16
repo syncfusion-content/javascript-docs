@@ -17,14 +17,47 @@ The following steps explain you how to specify the **height** of the **DatePicke
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to specify the <b>height</b> of the <b>DatePicker</b> input text&lt;script type="text/javascript"&gt;        $(function () {            // declaration             $("#datepicker").ejDatePicker({             //Number<b>                height: 22</b>            });        });    &lt;/script&gt;<b>[OR]</b>&lt;script type="text/javascript"&gt;        $(function () {            // declaration             $("#datepicker").ejDatePicker({                 //String<b>                height: “22px”</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+
+// Add the code to specify the height of the DatePicker input text
+
+<script type="text/javascript">
+        $(function () {
+            // declaration 
+            $("#datepicker").ejDatePicker({
+             //Number
+                height: 22
+            });
+        });
+
+    </script>
+
+[OR]
+
+<script type="text/javascript">
+        $(function () {
+            // declaration 
+            $("#datepicker").ejDatePicker({
+                 //String
+                height: “22px”
+            });
+        });
+
+    </script>
+
+
+  {% endhighlight %}
+  
 ## Define width
 
 It specifies the **width** of the **DatePicker** input text. The “**width”** property allows you to set the maximum **width** of **DatePicker**. The value set to this property should be **string or Numer** type
@@ -33,17 +66,52 @@ The following steps explain you how to specify the **width** of the **DatePicker
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **Datepicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to specify the <b>width</b> (Number) of the <b>DatePicker</b> input text&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({                //Number<b>                width: 200 </b>            });        });    &lt;/script&gt;</td></tr>
-<tr>
-<td>
-     <b>[OR]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#datepicker").ejDatePicker({            width:"200px"        });    });    &lt;/script&gt;</td></tr>
-</table>
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+
+// Add the code to specify the width (Number) of the DatePicker input text
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                //Number
+                width: 200 
+            });
+        });
+
+    </script>
+     
+[OR]
+
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#datepicker").ejDatePicker({
+            width:"200px"
+        });
+    });
+    </script><script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+               //String
+                width:” 200px” 
+            });
+        });
+
+    </script>
+
+  {% endhighlight %}
+  
 ## Highlight Section
 
 **Highlight section** highlights the current month, current week, current workdays. You can highlight a week, month, and work days by using “**highlightSection”** property.
@@ -78,15 +146,32 @@ The following steps explain you how to **highlight** the current week section
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to <b>highlight</b> the current Week in the <b>DatePicker</b> Calendar&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#datepicker").ejDatePicker({            <b>highlightSection: "week"</b>        });    });&lt;/script&gt;</td></tr>
-</table>
 
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+
+// Add the code to highlight the current Week in the DatePicker Calendar
+
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#datepicker").ejDatePicker({
+            highlightSection: "week"
+        });
+    });
+
+</script>
+
+  {% endhighlight %}
 
 
 
@@ -104,14 +189,31 @@ The following steps explain you how to set the **DatePicker** value as **readonl
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **Datepicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to set the <b>DatePicker</b> value as <b>readonly</b>&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                readOnly : true</b>            });        });&lt;/script&gt;</td></tr>
-</table>
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+// Add the code to set the DatePicker value as readonly
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                readOnly : true
+            });
+        });
+</script>
+
+  {% endhighlight %}
+  
 ## Show Footer
 
 It allows to **Show Footer** in **DatePicker** calendar to select today date. By default “**showFooter**” property is set as ‘**true**’ in **DatePicker** widget. You can hide footer in the **DatePicker** when this property is set to “**false**”.
@@ -120,14 +222,33 @@ The following steps explain you how to hide footer in the **DatePicker** widget.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **Datepicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to hide footer in the <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                showFooter: false</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+
+// Add the code to hide footer in the DatePicker widget
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                showFooter: false
+            });
+        });
+
+    </script>
+
+
+  {% endhighlight %}
+  
 ## Show popup button
 
 It shows the date icon button at right side of textbox and shows **DatePicker** popup on clicking it that can be achieved by using “**showPopupButton** “property. By default “**showPopupButton**” property is set as “**true**” in **DatePicker** widget. 
@@ -136,15 +257,32 @@ The following steps explain you how to hide the **popupbutton** in the **DatePic
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to hide <b>popupbutton</b> footer in the <b>DatePicker</b>&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                showPopupButton: false</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
 
+  **[JavaScript]**
+  
+// Add the code to hide popupbutton footer in the DatePicker
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                showPopupButton: false
+            });
+        });
+
+    </script>
+
+
+  {% endhighlight %}
 
 * The following screenshot displays the output for the above code.
 
@@ -160,14 +298,32 @@ The following steps explain you how to show **Roundedcorner** in the **DatePicke
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to show <b>Roundedcorner</b> in the <b>DatePicker</b>&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                showRoundedCorner : true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+// Add the code to show Roundedcorner in the DatePicker
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                showRoundedCorner : true
+            });
+        });
+
+    </script>
+
+
+  {% endhighlight %}
 
 
 *  The following screenshot displays the output for the above code.
@@ -176,22 +332,42 @@ The following steps explain you how to show **Roundedcorner** in the **DatePicke
 
 {% include image.html url="/js/DatePicker/Concepts-and-Features/Miscellaneous_images/Miscellaneous_img3.png" Caption="Figure 28: Rounded corner style in DatePicker"%}
 
+
 ## Show Tooltip
 
-**DatePicker****Tooltip** is displayed while you hover the date. By default “**showTooltip**” property as “**true**” in **DatePicker** widget.
+**DatePicker** **Tooltip** is displayed while you hover the date. By default “**showTooltip**” property as “**true**” in **DatePicker** widget.
 
 The following steps explain you how to hide the **ToolTip** in the **DatePicker**.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to hide the <b>ToolTip</b> in the <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({<b>                showTooltip : false</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+
+// Add the code to hide the ToolTip in the DatePicker widget
+
+<script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker({
+                showTooltip : false
+            });
+        });
+
+    </script>
+
+
+  {% endhighlight %}
+  
 * The following screenshot displays the output for the above code.
 
 

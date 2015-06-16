@@ -25,8 +25,6 @@ The following steps explain how you can enable the **showCheckbox** property for
 
 {% highlight html %}
 
-**[HTML]**
-
 <ul id="treeView">
         <li class="expanded">
             Favorites
@@ -93,6 +91,7 @@ The following steps explain how you can enable the **showCheckbox** property for
 {% highlight js %}
 
 **[JavaScript]**
+<script type="text/javascript">
 var tabIndex = 1;
 $("#treeView").ejTreeView();
         $("#treeviewMenu").ejMenu({
@@ -104,7 +103,7 @@ $("#treeView").ejTreeView();
             beforeOpen: "beforeOpen"
         });
         treeviewObj = $("#treeView").data("ejTreeView");
-
+</script>
 
 {% endhighlight %}
 
@@ -114,6 +113,7 @@ $("#treeView").ejTreeView();
 
 {% highlight js %}
 
+<script type="text/javascript">
 function beforeOpen(args) {
         if (!$(args.target).hasClass("e-text"))
             args.cancel = true;
@@ -138,7 +138,7 @@ function beforeOpen(args) {
         }
     }
 
-
+</script>
 
 {% endhighlight %}
 

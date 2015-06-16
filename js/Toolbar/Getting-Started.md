@@ -34,7 +34,7 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -43,7 +43,7 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -116,7 +116,8 @@ Initialize the Toolbar items with **UL LI** template as follows.
 {% highlight html %}
 
 **[HTML]**
-<div class="control">
+
+    <div class="control">
 
         <div id="ToolbarItem">
 
@@ -201,7 +202,7 @@ Apply the given styles in the code table to show the **toolbar items** as follow
 
 
 
-After updating the **Toolbar****items** with their **CSS** styles, you can render the toolbar inside **&lt;script&gt;** tag.
+After updating the **Toolbar** **items** with their **CSS** styles, you can render the toolbar inside **&lt;script&gt;** tag.
 
 
 
@@ -248,6 +249,7 @@ Initialize the Toolbar items with **UL LI** template as follows.
 {% highlight html %}
 
 **[HTML]**
+
 <div id="ToolbarItem">
 
         <!--Initializes toolbar items from above code example -->
@@ -310,11 +312,9 @@ Add the following styles in the code table to display the toolbar items as follo
 
 
 
+{% highlight css %}
 
-
-    /*Additional style for Remaining toolbar items*/
-
-
+<style>
 
        .PdfDocument.e-icon.previous {
 
@@ -322,15 +322,11 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
-
-
         .PdfDocument.e-icon.next {
 
             background-position: -439px 0px;
 
         }
-
-
 
         .PdfDocument.e-icon.zoomIn {
 
@@ -338,15 +334,11 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
-
-
         .PdfDocument.e-icon.zoomOut {
 
             background-position: -219px 0px;
 
         }
-
-
 
         .PdfDocument.e-icon.fitOne {
 
@@ -354,15 +346,11 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
-
-
         .PdfDocument.e-icon.sticky {
 
             background-position: -131px -1px;
 
         }
-
-
 
         .PdfDocument.e-icon.readMode {
 
@@ -370,15 +358,11 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
-
-
         .PdfDocument.e-icon.print {
 
             background-position: -43px 0px;
 
         }
-
-
 
         #ZoomValue .PdfDocument {
 
@@ -416,8 +400,9 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
-
-
+ </style>
+ 
+{% endhighlight %}
 
 
 After updating the Toolbar items with their **CSS** styles, you can render the toolbar inside the **&lt;script&gt;** tag and also need to render the drop down list control for **select zoom value**. Basically, dropdown list control is rendered with input element. **Set Zoom value** is one of the items in the toolbar. The following code example shows how to render and initialize **drop down control** with list of **zoom values**.
@@ -425,6 +410,7 @@ After updating the Toolbar items with their **CSS** styles, you can render the t
 {% highlight js %}
 
 **[JavaScript]**
+
   <script type="text/javascript">
 
         $(function () {
@@ -470,7 +456,8 @@ _Figure_ _4__: Toolbar items with separator_
 
 Now the **toolbar** is rendered so you need to render the header and content area to create a **PDF reader**. From the following section, you can learn how to render the **header** (Toolbar), **content****section** (PDF viewer area) and how to set the action to toolbar items.
 
-> {% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img5.jpeg" Caption=""%}_**Note: You are not going to deal with PDF reading or rendering task here. You will only simulate the PDF Reader app to demonstrate the Toolbar control usage and will completely ignore the PDF rendering area.**_
+> {% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img5.jpeg" Caption=""%}
+_**Note: You are not going to deal with PDF reading or rendering task here. You will only simulate the PDF Reader app to demonstrate the Toolbar control usage and will completely ignore the PDF rendering area.**_
 
 
 
@@ -526,7 +513,7 @@ You can apply the following styles with the above styles to design the **PDF hea
         }
 
         .ctrllabel {
-            background-image: url('http://js.syncfusion.com/UG/Web/Content/pdf-header.png');
+            background-image: url("http://js.syncfusion.com/UG/Web/Content/pdf-header.png");
             background-repeat: no-repeat;
             width: 634px;
             height: 32px;
@@ -553,6 +540,7 @@ So far, you have added the required toolbar items and configured its appearance.
 {% highlight js %}
 
 **[JavaScript]**
+
 <script type="text/javascript">
 
         $(function () {// document ready

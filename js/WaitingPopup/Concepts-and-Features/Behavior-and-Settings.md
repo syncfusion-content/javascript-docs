@@ -17,17 +17,32 @@ The following steps explains you on how to display the **WaitingPopup** on page 
 
 1. In an **HTML** page, add a **&lt;div&gt;** element to render **WaitingPopup** widget.
 
+{% highlight html %}
+
+**[HTML]**
+
+      <div class="control">               
+      <div id="waitingPopUp"></div>            
+       </div>  
+
+{% endhighlight %}
+
+{% highlight js %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;                   &lt;div id="waitingPopUp"&gt;&lt;/div&gt;            &lt;/div&gt;  </td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Configure the WaitingPopup to display automatically on page load as follows.</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#waitingPopUp").ejWaitingPopup({            <b>showOnInit</b>: true,        });    });&lt;/script&gt;</td></tr>
-</table>
+**[JavaScript]**
 
+// Configure the WaitingPopup to display automatically on page load as follows.
+        <script type="text/javascript">
+         $(function () {
+        // declaration
+        $("#waitingPopUp").ejWaitingPopup({
+            showOnInit: true,
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 2. Add the following styles to render **WaitingPopup** widget.
 
@@ -61,17 +76,44 @@ The following steps explains you to enable / disable popup indicator in **Waitin
 
 1. In the **HTML** page, add a **&lt;div&gt;** element to render **WaitingPopup** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;                   &lt;div id="waitingPopUp"&gt;&lt;/div&gt;            &lt;/div&gt;  </td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// To configure Enable / Disable popup indicator in WaitingPopup, use the following code.</b><b>Enable popup indicator:</b>$(function () {    // declaration    $("#waitingPopUp").ejWaitingPopup({        showOnInit: true,        <b>showImage: true,</b>         text: "Loading... Please wait..."    });});<b>Disable popup indicator:</b>$(function () {    // declaration    $("#waitingPopUp").ejWaitingPopup({        showOnInit: true,        <b>showImage: false,</b><b>        </b>text: "Loading... Please wait..."    });});</td></tr>
-</table>
+      <div class="control">               
+    <div id="waitingPopUp"></div>            
+    </div>  
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// To configure Enable / Disable popup indicator in WaitingPopup, use the following code.
+     <script type="text/javascript">
+      Enable popup indicator:
+      $(function () {
+     // declaration
+     $("#waitingPopUp").ejWaitingPopup({
+        showOnInit: true,
+        showImage: true,
+         text: "Loading... Please wait..."
+    });
+});
+
+      Disable popup indicator:
+      $(function () {
+      // declaration
+      $("#waitingPopUp").ejWaitingPopup({
+        showOnInit: true,
+        showImage: false,
+        text: "Loading... Please wait..."
+    });
+});
+</script>
+
+{% endhighlight %}
 
 2. Add the following styles to render **WaitingPopup** widget.
 
@@ -107,21 +149,40 @@ The following steps explains you to show / hide the **WaitingPopup** widget.
 
 1. In the **HTML** page, add a **&lt;div&gt;** element to render **WaitingPopup** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;                   &lt;div id="waitingPopUp"&gt;&lt;/div&gt;            &lt;/div&gt;  </td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Use the following code to Show / Hide WaitingPopup.</b><b>Show WaitingPopup:</b>$(function () {    $("#waitingPopUp").ejWaitingPopup();    var popUpObj = $("#waitingPopUp").data("ejWaitingPopup");    popUpObj.show();});<b>Hide WaitingPopup:</b>$(function () {    $("#waitingPopUp").ejWaitingPopup();    var popUpObj = $("#waitingPopUp").data("ejWaitingPopup");    popUpObj.hide();});</td></tr>
-</table>
+      <div class="control">               
+      <div id="waitingPopUp"></div>            
+     </div>  
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Use the following code to Show / Hide WaitingPopup.
+    <script type="text/javascript">
+Show WaitingPopup:
+$(function () {
+    $("#waitingPopUp").ejWaitingPopup();
+    var popUpObj = $("#waitingPopUp").data("ejWaitingPopup");
+    popUpObj.show();
+});	
+
+Hide WaitingPopup:
+$(function () {
+    $("#waitingPopUp").ejWaitingPopup();
+    var popUpObj = $("#waitingPopUp").data("ejWaitingPopup");
+    popUpObj.hide();
+});
+</script>
+     
+{% endhighlight %}
 
 2. Add the following styles to render **WaitingPopup** widget.
-
-
 
 {% highlight css %}
 

@@ -15,14 +15,46 @@ The following steps explains you the behaviour of template support with **ListBo
 
 * In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widget.
 
-<table>
-<tr>
-<td>
-<br><b>[HTML]   </b>&lt;div class="control"&gt;    <div class="ctrllabel">Drag and drop skills</div>    &lt;div class="control1" style="float: left;"&gt;        &lt;ul id="listboxSample"&gt;        &lt;/ul&gt;    &lt;/div&gt;    &lt;div class="control2"&gt;        &lt;ul id="dragsample"&gt;        &lt;/ul&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b><b>// </b>Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    $(function () {        var skillset = [    { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },    { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },    { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },    { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, <b>allowDragAndDrop: true</b>        });        $("#dragsample").ejListBox({ <b>allowDragAndDrop: true</b> });    });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+   
+<div class="control">
+    <div class="ctrllabel">Drag and drop skills</div>
+    <div class="control1" style="float: left;">
+        <ul id="listboxSample">
+        </ul>
+    </div>
+    <div class="control2">
+        <ul id="dragsample">
+        </ul>
+    </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+  
+// Initializes the control in JavaScript
+<script type="text/javascript">
+    $(function () {
+        var skillset = [
+    { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+    { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+    { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+    { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+        ];
+        $("#listboxSample").ejListBox({
+            width: "240", dataSource: skillset,
+            fields: { text: "skill" }, allowDragAndDrop: true
+        });
+        $("#dragsample").ejListBox({ allowDragAndDrop: true });
+    });
+</script>
+
+{% endhighlight %}
 
 
 Add the following class in CSS. 
@@ -30,7 +62,8 @@ Add the following class in CSS.
 
 {% highlight css %}
 
-[CSS]  
+**[CSS]**
+  
 <style type="text/css" class="cssStyles">
     .control {
         margin-left: 20px;

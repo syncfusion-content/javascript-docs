@@ -17,19 +17,43 @@ documentation: ug
 
 The following steps explains to enable Collapsible state for **Accordion**.
 
-1. In an HTML page, define a &lt;div&gt; element that is a container for Accordion widget and add the contents correspondingly
+1. In an HTML page, define a div element that is a container for Accordion widget and add the contents correspondingly
 
+{% highlight html %}
 
+  **[HTML]**
+    
+    <div id="accordion" style="width: 400px"> 
+    <h3>  
+        <a href="#">Orubase</a></h3>    
+    <div>  <!-- add accordion contents here to load contents under this header -->  
+        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+    </div>  
+    <h3>   
+        <a href="#">WinRTXAML</a></h3>     
+     <div>  <!-- add accordion contents here to load contents under this header --> 
+       Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.       
+    </div>        
+    <h3>     
+        <a href="#">Metro Studio</a></h3>   
+     <div>  <!-- add accordion contents here to load contents under this header -->   
+        Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                      
+    </div>                         
+     </div>
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="accordion" style="width: 400px"&gt;     &lt;h3&gt;          <a href="#">Orubase</a>&lt;/h3&gt;     &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;          Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.    &lt;/div&gt;      &lt;h3&gt;           <a href="#">WinRTXAML</a>&lt;/h3&gt;       &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.           &lt;/div&gt;            &lt;h3&gt;             <a href="#">Metro Studio</a>&lt;/h3&gt;     &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;           Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                          &lt;/div&gt;                         &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]	</b>// Configure collapsible header for <b>Accordion</b>            $("#accordion").ejAccordion({                <b>collapsible:true</b>            });</td></tr>
-</table>
+{% endhighlight %}
 
+{% highlight js %}
+
+[JavaScript]
+	
+// Configures the collapsible header for the Accordion
+
+            $("#accordion").ejAccordion({
+                collapsible:true
+            });
+
+{% endhighlight %}
 
 2. Output for Accordion control with collapsible headers.
 
@@ -44,18 +68,44 @@ The following steps explains to enable Collapsible state for **Accordion**.
 
 The following steps explains you to configure header expand event for **Accordion**.
 
-1. In an HTML page, define a &lt;div&gt; element that is a container for  Accordion widget and add the contents correspondingly
+1. In an HTML page, define a div element that is a container for the Accordion widget and add the contents correspondingly
+
+{% highlight html %}
+
+   **[HTML]**
+  
+    <div id="accordion" style="width: 400px"> 
+    <h3>  
+        <a href="#">Orubase</a></h3>    
+        <div>  <!-- add accordion contents here to load contents under this header -->  
+        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+    </div>  
+    <h3>   
+        <a href="#">WinRTXAML</a></h3>     
+    <div>  <!-- add accordion contents here to load contents under this header --> 
+       Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.       
+    </div>        
+    <h3>     
+        <a href="#">Metro Studio</a></h3>   
+    <div>  <!-- add accordion contents here to load contents under this header -->   
+        Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                      
+    </div>                         
+<   /div>
 
 
+{% endhighlight %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="accordion" style="width: 400px"&gt;     &lt;h3&gt;          <a href="#">Orubase</a>&lt;/h3&gt;     &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;          Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.    &lt;/div&gt;      &lt;h3&gt;           <a href="#">WinRTXAML</a>&lt;/h3&gt;       &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.           &lt;/div&gt;            &lt;h3&gt;             <a href="#">Metro Studio</a>&lt;/h3&gt;     &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;           Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                          &lt;/div&gt;                         &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Configure header expand event for <b>Accordion</b><br>            $("#accordion").ejAccordion({                <b>events: "mouseout"</b>            });</td></tr>
-</table>
+{% highlight js %}
+
+[JavaScript]
+// Configures the header expand event for the Accordion
+
+            $("#accordion").ejAccordion({
+                events: "mouseout"
+            });
+
+
+{% endhighlight %}
 
 
 2. Output for Accordion control that expands header on mouseout event is as follows.
@@ -73,18 +123,43 @@ Using **selectedItemIndex** property you can modify the expanded panel when the 
 
 The following steps explains you to configure selected item for **Accordion**.
 
-1. In an HTML page, define a &lt;div&gt; element that is a container for  Accordion widget and add the contents correspondingly
+1. In an HTML page, define a div element that is a container for the Accordion widget and add the contents correspondingly
+
+{% highlight html %}
+
+  **[HTML]**
+  
+    <div id="accordion" style="width: 400px"> 
+    <h3>  
+        <a href="#">Orubase</a></h3>    
+     <div>  <!-- add accordion contents here to load contents under this header -->  
+        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+    </div>  
+    <h3>   
+        <a href="#">WinRTXAML</a></h3>     
+     <div>  <!-- add accordion contents here to load contents under this header --> 
+       Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.       
+    </div>        
+    <h3>     
+        <a href="#">Metro Studio</a></h3>   
+     <div>  <!-- add accordion contents here to load contents under this header -->   
+        Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                      
+    </div>                         
+  </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+[JavaScript]
+// Configures the selected item for the Accordion based on the index
+
+            $("#accordion").ejAccordion({
+                selectedItemIndex: 1
+            });
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="accordion" style="width: 400px"&gt;     &lt;h3&gt;          <a href="#">Orubase</a>&lt;/h3&gt;      &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;          Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.    &lt;/div&gt;      &lt;h3&gt;           <a href="#">WinRTXAML</a>&lt;/h3&gt;       &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.           &lt;/div&gt;            &lt;h3&gt;             <a href="#">Metro Studio</a>&lt;/h3&gt;     &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;           Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                          &lt;/div&gt;                         &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Configure selected item for <b>Accordion</b> based on the index            $("#accordion").ejAccordion({<b>                selectedItemIndex: 1</b>            });</td></tr>
-</table>
-
+{% endhighlight %}
 
 2. Output for Accordion control with the selected item by index is as follows.
 
@@ -100,19 +175,43 @@ The following steps explains to configure selected items for **Accordion**.
 
 1. In an HTML page, define a &lt;div&gt; element that is a container for  Accordion widget and add the contents correspondingly
 
+{% highlight html %}
+
+  **[HTML]**
+  
+     <div id="accordion" style="width: 400px"> 
+    <h3>  
+        <a href="#">Orubase</a></h3>    
+      <div>  <!-- add accordion contents here to load contents under this header -->  
+        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+    </div>  
+    <h3>   
+        <a href="#">WinRTXAML</a></h3>     
+     <div>  <!-- add accordion contents here to load contents under this header --> 
+       Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.       
+    </div>        
+    <h3>     
+        <a href="#">Metro Studio</a></h3>   
+      <div>  <!-- add accordion contents here to load contents under this header -->   
+        Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                      
+    </div>                         
+     </div>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="accordion" style="width: 400px"&gt;     &lt;h3&gt;          <a href="#">Orubase</a>&lt;/h3&gt;      &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;          Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.    &lt;/div&gt;      &lt;h3&gt;           <a href="#">WinRTXAML</a>&lt;/h3&gt;       &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.           &lt;/div&gt;            &lt;h3&gt;             <a href="#">Metro Studio</a>&lt;/h3&gt;     &lt;div&gt;  &lt;!-- add accordion contents here to load contents under this header --&gt;           Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.                          &lt;/div&gt;                         &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Configure multiple item selection for <b>Accordion</b>            $("#accordion").ejAccordion({<b>                selectedItems:[0,2],</b><b>                enableMultipleOpen : true</b>            });</td></tr>
-</table>
+{% endhighlight %}
+
+{% highlight js %}
+
+[JavaScript]
+
+// Configures the multiple item selection for Accordion
+            $("#accordion").ejAccordion({
+                selectedItems:[0,2],
+                enableMultipleOpen : true
+            });
 
 
-
+{% endhighlight %}
 
 2. Output for Accordion control with the multiple selected items is as follows.
 

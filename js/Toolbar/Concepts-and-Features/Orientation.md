@@ -25,16 +25,33 @@ This property sets the **Toolbar** in **horizontal** orientation. You can refer 
 
 Add the following script in your **HTML** page.
 
+{% highlight js %}
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ width: "290px", orientation: ej.Orientation.Horizontal });    });&lt;/script&gt;</td></tr>
-<tr>
-<td>
-<b>OR</b><b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration                    $("#toolbarcontent").ejToolbar({ width: "290px", orientation: "Horizontal" });    });&lt;/script&gt;</td></tr>
-</table>
+**[JS]**
 
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#toolbarcontent").ejToolbar({ width: "290px", orientation: ej.Orientation.Horizontal });
+    });
+</script>
+
+{% endhighlight %}
+
+OR
+
+{% highlight js %}
+
+**[JS]**
+
+<script type="text/javascript">
+    $(function () {
+        // declaration            
+        $("#toolbarcontent").ejToolbar({ width: "290px", orientation: "Horizontal" });
+    });
+</script>
+
+{% endhighlight %}
 
 Build and run the application.
 
@@ -53,14 +70,34 @@ This property sets the **Toolbar** in **vertical** orientation. You can refer th
 Add the following script in your **HTML** page.
 
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ orientation: ej.Orientation.Vertical });    });&lt;/script&gt;</td></tr>
-<tr>
-<td>
-<b>OR</b><b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ orientation: "Vertical" });    });&lt;/script&gt;</td></tr>
-</table>
+{% highlight js %}
+
+**[JS]**
+
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#toolbarcontent").ejToolbar({ orientation: ej.Orientation.Vertical });
+    });
+</script>
+
+
+{% endhighlight %}
+
+OR
+
+{% highlight js %}
+
+**[JS]**
+
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#toolbarcontent").ejToolbar({ orientation: "Vertical" });
+    });
+</script>
+
+{% endhighlight %}
 
 
 Build and run the application.

@@ -27,7 +27,7 @@ In the above screenshot, you can select a list item from the first **ListBox** w
 
 **Create a ListBox Widget**
 
-**Essential****JavaScript****ListBox** widget renders with built-in features.
+**Essential** **JavaScript**  **ListBox** widget renders with built-in features.
 
 * You can create an **HTML** file and add the following code example to it. 
 
@@ -65,7 +65,7 @@ In the above screenshot, you can select a list item from the first **ListBox** w
 {% highlight html %}
 
 
-<div id="sample">
+   <div id="sample">
     <h5><b>Add people</b></h5>
     <h5>Choose a contact and click move button to add in group </h5>
     <div id="control">
@@ -153,6 +153,7 @@ In the above screenshot, you can select a list item from the first **ListBox** w
 
 {% highlight js %}
 
+**[JavaScript]**
 
 <script type="text/javascript">
     jQuery(function ($) {
@@ -291,6 +292,8 @@ You can drag an item from a **ListBox** and drop it in a droppable element.To dr
 
 
 {% highlight js %}
+
+**[JavaScript]**
 
 <script type="text/javascript">
     jQuery(function ($) {

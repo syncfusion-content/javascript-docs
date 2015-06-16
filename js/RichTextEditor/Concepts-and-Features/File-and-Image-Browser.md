@@ -23,14 +23,39 @@ To retrieve or upload the images in the image browser, it requires a server side
 
 Add the following code to initialize the **RTE** control in the page.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="rte"&gt;        &lt;textarea id="rteSample"&gt;&lt;/textarea&gt; &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JAVASCRIPT]</b>// Render the RTE control in script section.&lt;script type="text/javascript"&gt;        var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";        $(function () {            $("#rteSample").ejRTE({                //to showcase the image browser tool in rte toolbar                toolsList: ["images"],                tools: { images: ["image"] },                //This api enable the image browser support to the RTE control                <b>imageBrowser: {</b><b>                    filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/", </b><b>                    ajaxAction: fileService,</b><b>                    extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx"</b><b>                },</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+    <div class="rte">
+        <textarea id="rteSample"></textarea>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JAVASCRIPT]**
+
+// Render the RTE control in script section.
+<script type="text/javascript">
+        var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+        $(function () {
+            $("#rteSample").ejRTE({
+                //to showcase the image browser tool in rte toolbar
+                toolsList: ["images"],
+                tools: { images: ["image"] },
+                //This api enable the image browser support to the RTE control
+                imageBrowser: {
+                    filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/", 
+                    ajaxAction: fileService,
+                    extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx"
+                },
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 
 **filePath**
@@ -57,14 +82,45 @@ The **RTE** control provides the supports file browsing that is same as image br
 
 Add the following code to initialize the **RTE** control in the page.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="rte"&gt;        &lt;textarea id=" rteSample"&gt;&lt;/textarea&gt; &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JAVASCRIPT]</b><b>//</b> Render the RTE control in script section&lt;script type="text/javascript"&gt;        var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";        $(function () {            $("#rteSample").ejRTE({                //to showcase the image browser tool in rte toolbar                toolsList: ["images"],                tools: { images: ["image"] },                //This api enable the image browser support to the RTE control                imageBrowser: {                    filePath: <b>"</b>http://mvc.syncfusion.com/ODataServices/FileBrowser/<b>",</b>                    ajaxAction: fileService,                    extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx"                },                //This api enable the file browser support to the RTE control                <b>fileBrowser: {</b><b>                    filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",</b><b>                    ajaxAction: fileService,</b><b>                    extensionAllow: "*.txt, *.doc, *.pdf,*.docx"</b><b>                }</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+    <div class="rte">
+        <textarea id=" rteSample"></textarea>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JAVASCRIPT]**
+
+// Render the RTE control in script section
+<script type="text/javascript">
+        var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+        $(function () {
+            $("#rteSample").ejRTE({
+                //to showcase the image browser tool in rte toolbar
+                toolsList: ["images"],
+                tools: { images: ["image"] },
+                //This api enable the image browser support to the RTE control
+                imageBrowser: {
+                    filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+                    ajaxAction: fileService,
+                    extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx"
+                },
+                //This api enable the file browser support to the RTE control
+                fileBrowser: {
+                    filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+                    ajaxAction: fileService,
+                    extensionAllow: "*.txt, *.doc, *.pdf,*.docx"
+                }
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 
 **filePath**

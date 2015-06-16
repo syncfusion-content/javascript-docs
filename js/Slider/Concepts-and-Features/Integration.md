@@ -44,12 +44,12 @@ The **Slider** properties **value** and **values** are provided with two way bin
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-     <scriptsrc="[http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)"></script>
+     <script src="[http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)"></script>
 
-     <scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"></script>
+     <script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"></script>
 </head>
 
 
@@ -59,9 +59,11 @@ The **Slider** properties **value** and **values** are provided with two way bin
 
 {% highlight html %}
 
-[H**TML**]
-**/ /** Add this code in your html page
-<body ng-app="syncApp" **ng-controller="SliderCtrl"**>
+**[HTML]**
+
+/ / Add this code in your html page
+
+      <body ng-app="syncApp" **ng-controller="SliderCtrl"**>
     <div class="frame">
         <div id="sliderContainer" class="control">
             <div id="rangeSlider" ej-slider e-width="width" e-value="sliderValue"></div>
@@ -81,6 +83,7 @@ The **Slider** properties **value** and **values** are provided with two way bin
 {% highlight js %}
 
 **[JavaScript]**
+
 //In JavaScript, bind the “value” and “width” property in Angular way as follows,
     <script>
         // declaration                   
@@ -119,15 +122,42 @@ Two way binding support is included only for the applicable **Slider** propertie
 
 
 
-<table>
-<tr>
-<td>
-[<b>HTML</b>]&lt;body&gt;    &lt;div class="frame"&gt;        &lt;div id="sliderContainer" class="control"&gt;            &lt;div id="rangeSlider" data-bind="ejSlider: { value: sliderValue }"&gt;&lt;/div&gt;         &lt;/div&gt;        &lt;div id="binding"&gt;            &lt;input type="text" name="slider"  class="input ejinputtext" value="" data-bind="value: sliderValue" /&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/body&gt;</td></tr>
-<tr>
-<td>
-[<b>JavaScript</b>]// In JavaScript, specify the “value” property as observable in the ViewModel to enable the two way binding.    &lt;script&gt;        $(function () {            // declaration                        window.viewModel = {                sliderValue: ko.observable(40),            };            ko.applyBindings(viewModel);        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+       <body>
+    <div class="frame">
+        <div id="sliderContainer" class="control">
+            <div id="rangeSlider" data-bind="ejSlider: { value: sliderValue }"></div> 
+        </div>
+        <div id="binding">
+            <input type="text" name="slider"  class="input ejinputtext" value="" data-bind="value: sliderValue" />
+        </div>
+    </div>
+</body>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// In JavaScript, specify the “value” property as observable in the ViewModel to enable the two way binding.
+
+   <script>
+        $(function () {
+            // declaration            
+            window.viewModel = {
+                sliderValue: ko.observable(40),
+            };
+            ko.applyBindings(viewModel);
+        });
+    </script>
+
+
+{% endhighlight %}
 
 Execute the above code example to render the following output.
 

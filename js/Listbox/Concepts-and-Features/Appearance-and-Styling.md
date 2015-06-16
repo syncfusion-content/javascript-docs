@@ -25,16 +25,40 @@ The following steps explains you the configuration of **height** & **width** pro
 
 * In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Initialize the control in <b>JavaScript </b>&lt;script type="text/javascript"&gt;    $(function () {        // JSON data declaration        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        //Render ListBox by mapping fields with JSON data        $("#listboxSample").ejListBox({            <b>width: "240", height: "302"</b>, dataSource: skillset,            fields: { text: "skill" }        });    });&lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxSample"></ul>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the control in JavaScript 
+<script type="text/javascript">
+    $(function () {
+        // JSON data declaration
+        var skillset = [
+        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+        ];
+        //Render ListBox by mapping fields with JSON data
+        $("#listboxSample").ejListBox({
+            width: "240", height: "302", dataSource: skillset,
+            fields: { text: "skill" }
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -49,17 +73,38 @@ The following steps explains you the configuration of Rounded corner of the **Li
 
 * In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    $(function () {        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, <b>showRoundedCorner: true</b>        });    });&lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxSample"></ul>
+</div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// Initialize the control in JavaScript
+<script type="text/javascript">
+    $(function () {
+        var skillset = [
+        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+        ];
+        $("#listboxSample").ejListBox({
+            width: "240", dataSource: skillset,
+            fields: { text: "skill" }, showRoundedCorner: true
+        });
+    });
+</script>
+
+{% endhighlight %}
 Output of the above steps.
 
 

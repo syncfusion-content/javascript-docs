@@ -28,13 +28,13 @@ From the following steps you can learn how to create and use **PercentageTextBox
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- style sheet for default theme(flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
  <!--scripts-->
-<scriptsrc="[http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js](http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"> </script>
+<script src="[http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js](http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"> </script>
 </head>
 <body>
     <!--adds Textboxes elements here -->
@@ -157,7 +157,7 @@ From the following steps you can learn how to create and use **PercentageTextBox
          .ele-icon
         {
             display: inline-block;
-background-image:     url([http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png));
+            background-image: url([http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png));
             background-repeat: no-repeat;
             background-size: contain;
             height: 50px;
@@ -217,28 +217,28 @@ You can set the **“MinValue”,****“MaxValue”** and **“Value”** in Num
        // simple Numeric creation
               $("#unitmcalc").ejNumericTextbox({
                 watermarkText: "Units", // sets watermark in numeric
-**value: 35,** // sets value in the numeric
-**minValue: 1,** // sets min value for range 
-                **maxValue: 10000** // sets max value for range
+                value: 35, // sets value in the numeric
+                minValue: 1,// sets min value for range 
+                maxValue: 10000 // sets max value for range
             });
               // simple Percentage creation
               $("#servTax").ejPercentageTextbox({
                 watermarkText: " Service Tax", // sets watermark in percentage
-**value: 3,** // sets value by default 
-**minValue: 5,** // sets min value for calculation
-**maxValue: 100**// sets max value for calculation
+                value: 3, // sets value by default 
+                minValue: 5, // sets min value for calculation
+                maxValue: 100// sets max value for calculation
             });
               // simple Currency creation
               $("#amountperum").ejCurrencyTextbox({
                 watermarkText: " Amount per unit", //sets watermark in currency
-**value: 55,** // sets value by default
-**minValue: 5,** // sets min value for amount
-**maxValue: 55**// sets max value for amount
+                value: 55, // sets value by default
+                minValue: 5, // sets min value for amount
+                maxValue: 55// sets max value for amount
             });
               // simple MaskEdit creation
               $("#mobiNo").ejMaskEdit({
                  watermarkText: "Mobile No", // sets watermark in maskedit
-**maskFormat: "99-999-99999"**// sets the mask format in maskedit
+                maskFormat: "99-999-99999"// sets the mask format in maskedit
             });
               // simple Button creation
               $("#cbill").ejButton({
@@ -269,7 +269,6 @@ You can set the “**enableStrictMode” option** to restrict entering values de
 
 {% highlight js %}
 
-**[JS]**
 
 <script type="text/javascript">
    // Declares Necessary variable creation 
@@ -281,7 +280,7 @@ You can set the “**enableStrictMode” option** to restrict entering values de
                 value: 35, // sets value in the numeric
                 minValue: 1, // sets min value for range 
                 maxValue: 10000, // sets max value for range
-**enableStrictMode:true** // sets strict mode to True will set the value 
+                enableStrictMode:true // sets strict mode to True will set the value 
             });
               // simple Percentage creation
               $("#servTax").ejPercentageTextbox({
@@ -325,7 +324,7 @@ You can use events to calculate the total and display the value. You can achieve
 
 {% highlight js %}
 
-**[JS]**
+
 <script type="text/javascript">
    // Declares Necessary variable creation 
           var kmcalc, servtax, amuntperkm;
@@ -333,8 +332,8 @@ You can use events to calculate the total and display the value. You can achieve
                // Refers to the Textboxes customization section
               // Simple Button creation
               $("#cbill").ejButton({
-**click: "calculateBill",**
-****width: "100px",
+                click: "calculateBill",
+                width: "100px",
                 height: "30px",
                 contentType: "textandimage",
                 prefixIcon: "e-calender"

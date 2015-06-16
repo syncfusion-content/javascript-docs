@@ -13,7 +13,7 @@ This section explains briefly about how to create a **TimePicker** in your appli
 
 ## Create your first TimePicker in JavaScript
 
-The **Essential JavaScript****TimePicker** provides support to display a **TimePicker** in your webpage and allows you to pick a time from the given **TimePicker**. Here, you can learn how to customize two dates and **TimePickers** in a real-time hotel table booking application. 
+The **Essential JavaScript** **TimePicker** provides support to display a **TimePicker** in your webpage and allows you to pick a time from the given **TimePicker**. Here, you can learn how to customize two dates and **TimePickers** in a real-time hotel table booking application. 
 
 The following screenshot illustrates the functionality of a **TimePicker** with a time range of morning to evening. You can select a time to book a table, from a period of 9.00 AM to 6.00 PM for the current day. This avoids selecting a time prior to the morning.
 
@@ -32,7 +32,7 @@ The following screenshot illustrates the functionality of a **TimePicker** with 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -41,7 +41,7 @@ The following screenshot illustrates the functionality of a **TimePicker** with 
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -226,9 +226,9 @@ Execute the above code to achieve the desired result. You can select the date an
 
 ### Display the Acknowledgement Message
 
-The **acknowledgement****message** is displayed when you click the ‘**Book’** button.
+The **acknowledgement** **message** is displayed when you click the ‘**Book’** button.
 
-The following code example shows how to display the **acknowledgement****message**.
+The following code example shows how to display the **acknowledgement** **message**.
 
 {% highlight js %}
 
@@ -264,13 +264,13 @@ _});_
 
 {% endhighlight %}
 
-The following screenshot displays the **acknowledgement****message**.
+The following screenshot displays the **acknowledgement** **message**.
 
 {% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img5.png" Caption="Acknowledgement Message"%}
 
 ### Create Two TimePickers
 
-You can select the **Start****time** in the first **TimePicker** and then the **End****time** in the second **TimePicker**. The validation process is done after the selection of **Start****time** and the changes are reflected in the **End****time** selection **TimePicker**. You can manipulate this process in the **Select** event of **Start Time** selection **TimePicker**. 
+You can select the **Start** **time** in the first **TimePicker** and then the **End** **time** in the second **TimePicker**. The validation process is done after the selection of **Start** **time** and the changes are reflected in the **End** **time** selection **TimePicker**. You can manipulate this process in the **Select** event of **Start Time** selection **TimePicker**. 
 
 * Add input element to render **Two TimePickers**.
 

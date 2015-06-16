@@ -49,18 +49,30 @@ The following code example is used to render the **DatePicker** widget with cust
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>  &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the class for <b>DatePicker</b> widget&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#datepicker").ejDatePicker({            cssClass: "custom"        });    });    &lt;/script&gt;</td></tr>
-<tr>
-<td>
-</td></tr>
-</table>
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
 
+  **[JavaScript]**
+
+// Add the class for DatePicker widget
+
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#datepicker").ejDatePicker({
+            cssClass: "custom"
+        });
+    });
+    </script>
+
+  {% endhighlight %}
 
 
 
@@ -90,7 +102,7 @@ The following code example is used to render the **DatePicker** widget with cust
 
 
 
-With the **Keyboard Navigation****enabled** in the **DatePicker** widget, it is possible to widget the actions of the **DatePicker** with the provided shortcut keys. Almost all the **DatePicker** actions that are done through mouse are controlled with shortcut keys. By default, the **keyboard navigation** is set to ‘**true**’ for the widget and it is controlled with the property “**allowKeyboardNavigation**”.
+With the **Keyboard Navigation** **enabled** in the **DatePicker** widget, it is possible to widget the actions of the **DatePicker** with the provided shortcut keys. Almost all the **DatePicker** actions that are done through mouse are controlled with shortcut keys. By default, the **keyboard navigation** is set to ‘**true**’ for the widget and it is controlled with the property “**allowKeyboardNavigation**”.
 
 The various keyboard shortcuts available within the **DatePicker** widget are discussed in the following table.
 
@@ -152,15 +164,29 @@ The following steps explain you to enable keyboard interaction for **DatePicker*
 
 * In the **HTML** page, add a **&lt;input&gt;** element to configure **DatePicker** widget and enable keyboard interaction by setting the **accesskey** property
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input id="datepicker" type="text" accesskey="j" /&gt;</td></tr>
-<tr>
-<td>
-// Render <b>DatePicker</b> widget    &lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker();        });    &lt;/script&gt;</td></tr>
-</table>
 
+ {% highlight html %}
+  
+  **[HTML]**
+  
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+
+ // Render DatePicker widget
+
+   <script type="text/javascript">
+        $(function () {
+            // declaration
+            $("#datepicker").ejDatePicker();
+        });
+    </script>
+
+  {% endhighlight %}
 
 
 

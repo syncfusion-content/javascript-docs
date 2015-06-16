@@ -21,7 +21,6 @@ The following steps explain the configuration of the filtering conditions for an
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -32,8 +31,6 @@ The following steps explain the configuration of the filtering conditions for an
 2. Configure filter type for **AutoComplete** control as follows.
 
 {% highlight js %}
-
-**[JavaScript]**
 
     <script type="text/javascript">
        // Define the local JSON data
@@ -91,7 +88,6 @@ The following steps explain how to enable the **AutoFill** property for an **Aut
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -103,7 +99,6 @@ The following steps explain how to enable the **AutoFill** property for an **Aut
 
 {% highlight js %}
 
-**[JavaScript]**
 
    // Here define CarList local data as per the previous the code block.
 
@@ -111,7 +106,7 @@ The following steps explain how to enable the **AutoFill** property for an **Aut
                 width: 205,
                 dataSource: carList,
                 filterType: "startswith",
-**enableAutoFill**: **true**
+                enableAutoFill: true
             });
 
 
@@ -136,7 +131,6 @@ The following steps explain how to enable the **sorting** property for an **Auto
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -148,18 +142,17 @@ The following steps explain how to enable the **sorting** property for an **Auto
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 filterType: "startswith",
-**allowSorting:true,**
-                **sortOrder: "descending",**
+                allowSorting:true,
+                sortOrder: "descending",
             });
-
+</script>
 
 
 {% endhighlight %}
@@ -182,7 +175,6 @@ The following steps explain you how to enable the **distinct** property for an *
 
 {% highlight html %}
 
-**[HTML]**
 <div style="margin-right: 20px;">
     <div class="txt">Distinct disabled</div>
     <input type="text" id="autocomplete">
@@ -193,7 +185,6 @@ The following steps explain you how to enable the **distinct** property for an *
  </div>
 
 
-
 {% endhighlight %}
 
 
@@ -201,8 +192,6 @@ The following steps explain you how to enable the **distinct** property for an *
 2. Configure the Distinct property for **AutoComplete** control as follows,
 
 {% highlight js %}
-
-**[JavaScript]**
 
      <script type="text/javascript">
         var carList = [
@@ -261,7 +250,6 @@ The following steps explains you how to configure the **Popup****button** for an
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -273,17 +261,16 @@ The following steps explains you how to configure the **Popup****button** for an
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-
+<script type="text/javascript">
 $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-**showPopupButton:true,**
+                showPopupButton:true,
             });
 
-
+</script>
 
 {% endhighlight %}
 
@@ -305,7 +292,6 @@ The following steps help you to disable editing in an **AutoComplete** textbox.
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -317,19 +303,17 @@ The following steps help you to disable editing in an **AutoComplete** textbox.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-**readOnly:true,**
+                readOnly:true,
                 showPopupButton:true,
                 value:"BMW 7"
             });
-
-
+</script>
 
 {% endhighlight %}
 
@@ -351,7 +335,6 @@ The following steps allow you to set text for **empty****results** of an **AutoC
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -363,18 +346,16 @@ The following steps allow you to set text for **empty****results** of an **AutoC
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 310,
                 dataSource: carList,
 **showEmptyResultText: true,**
                 **emptyResultText:"Item not found in list"**
             });
-
-
+</script>
 
 {% endhighlight %}
 

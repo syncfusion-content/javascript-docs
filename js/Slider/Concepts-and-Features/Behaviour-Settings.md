@@ -22,16 +22,25 @@ The following steps explains you on how to configure the **height** and **width*
 * In an HTML page, add a &lt;div&gt; element to render it as a Slider widget.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-[<b>HTML</b>]&lt;div id="BasicSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-[<b>JavaScript</b>]    &lt;script&gt;        $("#BasicSlider").ejSlider({<b>            height: "20",</b><b>            width: "500"</b>        });    &lt;/script&gt;</td></tr>
-</table>
+**[HTML]**
 
+    <div id="BasicSlider"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+    <script>
+        $("#BasicSlider").ejSlider({
+            height: "20",
+            width: "500"
+        });
+    </script>
+
+{% endhighlight %}
 
 Execute the above code example to render the following output.
 
@@ -47,14 +56,28 @@ The following steps explains you on how to configure the **incrementStep** prope
 
 
 
-<table>
-<tr>
-<td>
-[<b>HTML</b>]&lt;div id="ejSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-[<b>JavaScript</b>]// When initializing the Slider widget, configure the “incrementStep” property as follows.    &lt;script&gt;        $("#ejSlider").ejSlider({            height: "15",            width: "500",<b>            incrementStep:5</b>        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+**[HTML]**
+
+    <div id="ejSlider"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// When initializing the Slider widget, configure the “incrementStep” property as follows.
+    <script>
+        $("#ejSlider").ejSlider({
+            height: "15",
+            width: "500",
+            incrementStep:5
+        });
+    </script>
+
+{% endhighlight %}
 
 
 Execute the above code example to render the following output.
@@ -71,17 +94,28 @@ The following steps explain you on how to enable the **readOnly** property.
 
 * In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** widget.
 
+{% highlight html %}
 
+**[HTML]**
 
-<table>
-<tr>
-<td>
-[<b>HTML</b>]&lt;div id="ejSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-[<b>JavaScript</b>]// When initializing the Slider widget, enable the “readOnly” property as follows.<br>    &lt;script&gt;        $("#ejSlider").ejSlider({            height: "15",            width: "500",<b>            readOnly:true</b>        });    &lt;/script&gt;</td></tr>
-</table>
+    <div id="ejSlider"></div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+**[JavaScript]**
+
+// When initializing the Slider widget, enable the “readOnly” property as follows.
+    <script>
+        $("#ejSlider").ejSlider({
+            height: "15",
+            width: "500",
+            readOnly:true
+        });
+    </script>
+
+{% endhighlight %}
 
 After you execute the above code example, the **Slider** values cannot be changed in any ways.
 

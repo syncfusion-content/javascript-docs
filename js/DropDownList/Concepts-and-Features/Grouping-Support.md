@@ -23,7 +23,7 @@ The following steps explain you how to group data items in the **DropDownList** 
 
 **[HTML]**
 
-<input type="text" id="categoryGrouping" />     
+     <input type="text" id="categoryGrouping" />     
 
 
 {% endhighlight %}
@@ -36,7 +36,8 @@ The following steps explain you how to group data items in the **DropDownList** 
 
 **[Script]**
 
-      $(function () {
+   <script>
+         $(function () {
             var countries = [
                { country: "Austria", group: "A" },
                { country: "Australia", group: "A" }, { country: "Antarctica", group: "A" },
@@ -61,7 +62,7 @@ The following steps explain you how to group data items in the **DropDownList** 
                 width: "150px"
             });
 });
-
+</script>
 
 {% endhighlight %}
 
@@ -81,15 +82,47 @@ Another way to group **DropDownList** is by using **UL** and **LI structure**. H
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="vegetable" /&gt;                        &lt;div id="vegetablelist"&gt;                            &lt;ul&gt;                                <span>Leafy and Salad</span>                                <li>Cabbage</li>                                <li>Pea</li>                                <li>Spinach</li>                                <li>Wheatgrass</li>                                <li>Yarrow &lt;/li&gt;                                <span>Beans</span>                                <li>Chickpea</li>                                <li>Green bean</li>                                  <span>Bulb and Stem</span>                                <li>Garlic</li>                                <li>Garlic Chives</li>                                 <span>Root and Tuberous</span>                                <li>Beetroot</li>                                <li>Carrot</li>                            &lt;/ul&gt;                        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[Script]</b><b>// You can initialize the DropDownList control in the script section and add the Target ID to the DropDownList as follows.</b>$('#vegetable').ejDropDownList({                 <b>targetID: "vegetablelist",</b>                 width:"150px"             });</td></tr>
-</table>
+{% highlight html %}
 
+**[HTML]**
+
+     <input type="text" id="vegetable" />
+                        <div id="vegetablelist">
+                            <ul>
+                                <span>Leafy and Salad</span>
+                                <li>Cabbage</li>
+                                <li>Pea</li>
+                                <li>Spinach</li>
+                                <li>Wheatgrass</li>
+                                <li>Yarrow </li>
+                                <span>Beans</span>
+                                <li>Chickpea</li>
+                                <li>Green bean</li> 
+                                 <span>Bulb and Stem</span>
+                                <li>Garlic</li>
+                                <li>Garlic Chives</li>
+                                 <span>Root and Tuberous</span>
+                                <li>Beetroot</li>
+                                <li>Carrot</li>
+                            </ul>
+                        </div>
+         
+{% endhighlight %}
+
+{% highlight js %}
+
+**[Script]**
+
+// You can initialize the DropDownList control in the script section and add the Target ID to the DropDownList as follows.
+
+<script>
+$('#vegetable').ejDropDownList({
+                 targetID: "vegetablelist",
+                 width:"150px"
+             });
+</script>
+
+{% endhighlight %}
 
 {% include image.html url="/js/DropDownList/Concepts-and-Features/Grouping-Support_images/Grouping-Support_img2.png" Caption="Figure 30: Grouping in Dropdownlist by using UL and LI structure "%}
 

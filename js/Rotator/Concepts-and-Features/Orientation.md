@@ -19,25 +19,46 @@ The following steps explain you how to set **orientation** for the **Rotator**.
 
 ## Horizontal
 
-This property sets the **Rotator** in **horizontal****orientation**. You can refer the following steps to set **horizontal****orientation** for **Rotator** control.
+This property sets the **Rotator** in **horizontal** **orientation**. You can refer the following steps to set **horizontal** **orientation** for **Rotator** control.
 
 * In **View**, create ul-li list of **Rotator** items and invoke the **Rotator** helper.
 
 * Add the following script in your **HTML** page.
 
 
+  {% highlight js %}
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ slideWidth: 500, <b>orientation: ej.Orientation.Horizontal</b> });    });&lt;/script&gt; <b>(or)</b></td></tr>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ slideWidth: 500, <b>orientation: "Horizontal"</b> });    });&lt;/script&gt;</td></tr>
-</table>
+  **[JavaScript]**
+  
+  	<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: ej.Orientation.Horizontal });
+	    });
+	</script> 
+
+
+  {% endhighlight %}
+  
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+  	<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: "Horizontal" });
+	    });
+	</script>
+
+
+  {% endhighlight %}
+
+
 ## Vertical
 
-This property sets the **Rotator** in **vertical****orientation**. You can refer the following steps to set **vertical****orientation** for **Rotator** control.
+This property sets the **Rotator** in **vertical** **orientation**. You can refer the following steps to set **vertical** **orientation** for **Rotator** control.
 
 * Create ul-li list of **Rotator** items and invoke the **Rotator** helper.
 
@@ -45,13 +66,30 @@ This property sets the **Rotator** in **vertical****orientation**. You can refer
 
 
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ slideWidth: 500, <b>orientation: ej.Orientation.Vertical</b> });    });&lt;/script&gt;<b>(or)</b></td></tr>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ slideWidth: 500, <b>orientation: "Vertical"</b> });    });&lt;/script&gt;</td></tr>
-</table>
+  {% highlight js %}
 
+  **[JavaScript]**
+  	
+<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: ej.Orientation.Vertical });
+	    });
+	</script>
+
+  {% endhighlight %}
+  
+  
+  {% highlight js %}
+
+  **[JavaScript]**
+  
+<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: "Vertical" });
+	    });
+	</script>
+
+  {% endhighlight %}
 

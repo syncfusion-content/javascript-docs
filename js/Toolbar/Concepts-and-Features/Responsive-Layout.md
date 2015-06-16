@@ -20,6 +20,7 @@ Add the above **css** link in the code sample.        
 {% highlight html %}
 
 **[HTML]**
+
 <div class="control">
     <!—list of toolbar items-->
     <div id="ToolbarItem">
@@ -85,7 +86,13 @@ Add the above **css** link in the code sample.        
         </ul>
     </div>
 </div>
-[CSS]
+
+{% endhighlight %}
+
+{% highlight css %}
+
+**[CSS]**
+
 <style type="text/css" class="cssStyles">
     .e-tooltxt .PdfDocument.e-icon {
         background-image: url('http://js.syncfusion.com/UG/Web/Content/pdf-icon.png');
@@ -171,7 +178,12 @@ Add the above **css** link in the code sample.        
     }
 </style>
 
+{% endhighlight %}
+
+{% highlight js %}
+
 **[Javascript]**
+
 <script type="text/javascript">
     $(function () {
         $("#ToolbarItem").ejToolbar({
