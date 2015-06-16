@@ -14,10 +14,10 @@ The **PivotGrid** control customizes its appearance using user-defined CSS. The 
 You can refer custom CSS in **default.html** page.
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <head>
-<title>PivotGrid Custom theme</title>
+     <title>PivotGrid Custom theme</title>
      <link href="../themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
      <link href="custom-theme**/ej.custom-theme.css**" rel="stylesheet" type="text/css" />
 </head> 
@@ -28,7 +28,6 @@ You can refer custom CSS in **default.html** page.
 
 
 {% highlight css %}
-
 
 /*-----------------------For PivotGrid control definition-----------------*/
 
@@ -509,7 +508,6 @@ You can refer custom CSS in **default.html** page.
 .e-pivotschemadesigner .e-btn .e-btntxt {
   padding: 0 6px 6px;
 }
-
 
 {% endhighlight %}
 

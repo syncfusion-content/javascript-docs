@@ -79,7 +79,6 @@ The following code example shows how to localize **OlapChart’s User Interface*
 
 {% highlight js %}
  
-<script type="text/javascript">
     ej.olap.OlapChart.locale["fr-FR"] = {
         Measure: "Mesurer ",
         Row: "Rangée",
@@ -103,8 +102,6 @@ The following code example shows how to localize **OlapChart’s User Interface*
             locale: "fr-FR", legend: { visible: true, rowCount: 3 }
         });
     });
-</script>
-
 
 {% endhighlight %}
 

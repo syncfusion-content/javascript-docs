@@ -179,15 +179,12 @@ You can maximize **OLAP Grid** and **OLAP Chart** to full screen mode inside **O
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img9.png" Caption="Full screen view icon"%}
 
-<br/>
-
 {% highlight js %}
 
 $("#OlapClient1").ejOlapClient({
     url: "../wcf/OlapClientService.svc", title: "OLAP Browser",
     displaySettings: { enableFullScreen: true }
 });
-
 
 {% endhighlight %}
 

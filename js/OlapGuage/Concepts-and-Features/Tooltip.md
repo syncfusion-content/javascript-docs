@@ -13,7 +13,6 @@ documentation: ug
 
 {% highlight js %}
 
-<script type="text/javascript">
 $(function () {
 $("#OlapGauge1").ejOlapGauge({
   url: "../wcf/OlapGaugeService.svc", **enableTooltip**: true, backgroundColor: "transparent",
@@ -59,9 +58,6 @@ $("#OlapGauge1").ejOlapGauge({
                             }]
                         });
                     });
-                </script>
-
-
 
 {% endhighlight %}
 
@@ -71,7 +67,6 @@ You can customize the **Tooltip** by overriding the existing style attributes an
 
 {% highlight css %}
 
-<style>
 .e-olapgauge-tooltip {
   background-color: aqua !important;
   border: 2px solid red !important;
@@ -82,12 +77,8 @@ You can customize the **Tooltip** by overriding the existing style attributes an
   font: 12px Segoe UI;
   line-height: 20px;
 }
-</style>
-
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Tooltip_images/Tooltip_img1.png" Caption="Tooltip Customization"%}
 

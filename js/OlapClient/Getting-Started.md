@@ -17,13 +17,9 @@ The following screenshot shows the structure of an **OLAP Client** control.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Client Control for JavaScript"%}
 
-<br/>
-
 **Syncfusion OLAP Controls – Architecture**
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img2.png" Caption="Architecture of OLAP controls"%}
-
-<br/>
 
 As shown in an above architecture, control rendering takes place at the client-side and the analytical operations on each action takes place at the server-side.
 
@@ -31,7 +27,7 @@ As shown in an above architecture, control rendering takes place at the client-s
 
 The primary reasons for using service in an **OLAP** processing are as follows:
 
-1. DataSource Connectivity: You can establish a connection between different cube data sources such as
+1. **DataSource Connectivity:** You can establish a connection between different cube data sources such as
 
    * Offline Cube
 
@@ -39,7 +35,7 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
    * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (**XML/A**) option. Using service, you can connect any cube data source without any limitation.
 
-2. Cube Schema: As the connection is moved to service-side, you obviously use Microsoft ADOMD assembly to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
+2. **Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
 
    * Availability of cubes.
 
@@ -47,21 +43,18 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
    * Localized information is also available in cube schema.
 
-3. MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you need to send framed MDX via Microsoft ADOMD assembly. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any OLAP controls.
+3. **MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap.Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
-4. OLAP Report: The OLAP Report class in the Syncfusion.Olap.Base holds the complete information of each axes such as column, row and slicer. Using OLAP Report class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
+4. **OLAP Report:** The **OLAP Report** class in the **Syncfusion.Olap.Base** holds the complete information of each axes such as column, row and slicer. Using **OLAP Report** class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
 
 As the **OLAP Control** is the key for each and every operation, initially you need to serialize the **OLAP Report** and send to client-side in a form of string.
-
 When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OLAP Report** from the client-side to the service in a de-serialized and updated format.
-
 Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again.
+This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
 
-This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation_**.**_
+    1. **Saving and Loading Report in Database:**  you can save and load the reports available in **OLAP Client** control via service only. This is not applicable at the client-side. You can serialize the **OLAP Report** class in the **Syncfusion.Olap.Base** assembly and save to database as stream.  Also you can load back from database via service.
 
-    1. Saving and Loading Report in Database:  you can save and load the reports available in OLAP Client control via service only. This is not applicable at the client-side. You can serialize the OLAP Report class in the Syncfusion.Olap.Base assembly and save to database as stream.  Also you can load back from database via service.
-
-    2. Exporting: You can export OLAP values and information to excel sheet via service only. So this provides feasible option to save and view OLAP information.
+    2. **Exporting:** You can export **OLAP** values and information to excel sheet via service only. So this provides feasible option to save and view **OLAP** information.
 
 **Create an application**
 
@@ -71,25 +64,15 @@ In this example, you can see how **OLAP Client** component plots the data of cus
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img3.png" Caption="Customer Count over different fiscal years"%}
 
-<br/>
-
-Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web** category. Select the **ASP.NET Empty Web Application** template, and then click **OK**.
-
-The following screen shot displays a Project Creation Wizard:
+Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web** category. Select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screen shot displays a Project Creation Wizard:
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img4.png" Caption="New Project Wizard"%}
 
-<br/>
-
 **Create HTML page**
 
-To create a new web form in the application
-
-Right-click on the project and select Add.
+To create a new web form in the application, right-click on the project and select Add.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img5.png" Caption="Add New Item Wizard"%}
-
-<br/>
 
 Click New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
 
@@ -101,11 +84,7 @@ Click New Item and select HTML Page from the listed templates. Name the page as 
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img6.png" Caption="Adding Reference"%}
 
-<br/>
-
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img7.png" Caption="Referencing Syncfusion.Olap.Base"%}
-
-<br/>
 
 * Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.Olap.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll and Syncfusion.XlsIO.Base.dll, System.Data.SqlServerCe.dll (Version: 4.0.0.0).
 
@@ -116,7 +95,6 @@ Click New Item and select HTML Page from the listed templates. Name the page as 
 Add the script files and CSS files in the &lt;title&gt; tag of the default.html page.
 
 > _**Note: Use the following code sample while adding scripts and styles.**_
-
 
 {% highlight html %}
 
@@ -147,30 +125,23 @@ Add the following code sample in the **&lt;body&gt;** tag in the **default.html*
         </script>
 </div>
 
-
 {% endhighlight %}
 
 **Add WCF Service for OLAP Client**
 
 **Create WCF Services**
 
-Right-click the project and select Add > New Folder.  Name the folder as WCF.
+Right-click the project and select **Add > New Folder**.  Name the folder as **WCF.**
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img8.png" Caption="Add New Folder"%}
 
-<br/>
-
-Now right-click the WCF folder created and select Add > New Item.
+Now right-click the **WCF** folder created and select **Add > New Item.**
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img9.png" Caption="Add New Item Wizard"%}
 
-<br/>
-
-In the Add New Item window, select WCF Service and name it OlapClientService.svc. Click Add.
+In the Add New Item window, select **WCF Service** and name it **OlapClientService.svc.** Click **Add.**
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img10.png" Caption="Creating WCF Service"%}
-
-<br/>
 
 **Add service methods inside Interface**
 
@@ -267,8 +238,6 @@ using OLAPUTILS = Syncfusion.JavaScript.Olap;
 using System.Web.Script.Serialization;
 using Syncfusion.JavaScript;
 using Syncfusion.JavaScript.Olap;
-
-
 
 {% endhighlight %}
 
@@ -536,11 +505,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 **Configure Web.Config**
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.OlapClientService" where "OlapClientService" is the service class name and “WebApplication2" is the namespace name where
-    
-service class appears.
-
-The following are the properties that meet the appropriate endpoint.  
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.OlapClientService" where "OlapClientService" is the service class name and “WebApplication2" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
    1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapClientService** contract and hence it is "**WebApplication2.IOlapClientService**".
 
@@ -561,9 +526,7 @@ The following are the properties that meet the appropriate endpoint.
 
 {% endhighlight %}
 
-* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, "WebApplication2.OlapClientServiceAspNetAjaxBehavior" refers to the OlapClientService class under the namespace
-
- WebApplication2 in OlapClientService.svc.cs file that is the appropriate behavior for the endpoint.
+* **The endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, **"WebApplication2.OlapClientServiceAspNetAjaxBehavior"** refers to the **OlapClientService** class under the namespace **WebApplication2** in **OlapClientService.svc.cs** file that is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
 
@@ -572,7 +535,6 @@ The following are the properties that meet the appropriate endpoint.
           <enableWebScript />
         </behavior>
 </endpointBehaviors>
-
 
 {% endhighlight %}
 

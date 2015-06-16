@@ -13,10 +13,8 @@ documentation: ug
 
 The following code example illustrates how to create the **PivotGrid** control with the enabled **Cell Context**. Here, the **Cell Context** event displays a pop-up menu as follows.
 
-{% highlight javascript %}
+{% highlight css %}
  
-<head>
-    <style>
         .menuItem {
             padding:5px 50px 5px 20px;
         }
@@ -40,11 +38,11 @@ The following code example illustrates how to create the **PivotGrid** control w
             background-color:#F9920B;
             color:white;
         }
-    </style>
-</head>
-<body>
-<div id="PivotGrid1" style="height: 380px; width: 72%; overflow: auto;float:left;display:block"></div>
-<script type="text/javascript">
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
      $(function () {
           $(document).bind("click", function () {
                             $(".contextMenuPopup").remove();
@@ -77,8 +75,6 @@ The following code example illustrates how to create the **PivotGrid** control w
                             alert("click event occurs");
                         });
                     }
-       </script>
-</body>
 
 {% endhighlight %}
 
