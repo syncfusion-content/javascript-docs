@@ -33,7 +33,6 @@ The **Normal** layout is the default Layout of the **PivotGrid** where the sum
 
 {% highlight javascript %}
 
-[JS]
 $("#PivotGrid1").ejPivotGrid({ url: "../wcf/PivotGridService.svc",
 layout: ej.PivotGrid.Layout.Normal });
 
@@ -50,7 +49,6 @@ In the **Excel-like** layout, the summary cells are positioned at the bottom o
 
 {% highlight javascript %}
 
-[JS]
 $("#PivotGrid1").ejPivotGrid({ url: "../wcf/PivotGridService.svc",
 layout: ej.PivotGrid.Layout.ExcelLikeLayout });
 
@@ -67,7 +65,6 @@ In the **Normal Top Summary** Layout, the summary cells are positioned at the 
 
 {% highlight javascript %}
 
-[JS]
 $("#PivotGrid1").ejPivotGrid({ url: "../wcf/PivotGridService.svc", 
 layout: ej.PivotGrid.Layout.NormalTopSummary });
 
@@ -84,7 +81,6 @@ In **No Summaries** Layout, the summary cells are hidden and the child members 
 
 {% highlight javascript %}
 
-[JS]
 $("#PivotGrid1").ejPivotGrid({ url: "../wcf/PivotGridService.svc", 
 layout: ej.PivotGrid.Layout.NoSummaries });
 

@@ -17,7 +17,6 @@ You can hide the **Indicator** by changing the “**showIndicator**” property 
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
         backgroundColor: "transparent", 

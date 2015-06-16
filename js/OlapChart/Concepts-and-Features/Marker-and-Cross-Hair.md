@@ -25,7 +25,6 @@ In **OlapChart**, you can customize the marker shape with different symbols like
 
 {% highlight js %}
 
-[JS] 
 $(function () {
  $("#OlapChart1").ejOlapChart({
    url: "../wcf/OlapChartService.svc",
@@ -52,7 +51,6 @@ In order to view the value at mouse position or touch contact point, you can use
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", 
         primaryXAxis: { crosshairLabel: { visible: true }, },

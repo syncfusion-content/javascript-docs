@@ -15,7 +15,6 @@ Field List (also known as Pivot Schema Designer) is powerful tool that allows yo
 
 {% highlight javascript %}
 
-[JS]
   $(function () {
                     $("#PivotGrid").ejPivotGrid({
                             url: "/wcf/PivotGridService.svc", afterServiceInvoke: "onServiceInvokes"

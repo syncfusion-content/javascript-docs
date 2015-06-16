@@ -17,7 +17,6 @@ The **PivotGrid** is viewed page-by-page through **Pager** option. The **Pager**
 
 {% highlight javascript %}
 
-[JS]
 <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
 <div id="Pager1" style="margin-top:10px; overflow: auto"></div>                
 <script type="text/javascript">                     
@@ -46,7 +45,6 @@ The large **PivotGrid** data content is viewed page-by-page using **Virtual Scro
 
 {% highlight javascript %}
 
-[JS]
   $("#PivotGrid1").ejPivotGrid({
                         url: "../wcf/PivotGridService.svc",
                         enableVirtualScrolling: true
@@ -65,8 +63,6 @@ The large **PivotGrid** data content is viewed page-by-page using **Virtual Scro
 **OLAP Report for Paging and Virtual Scrolling**
 
 {% highlight c# %}
-
-[C#]
 
 OlapReport olapReport = new OlapReport();
 olapReport.CurrentCubeName = "Adventure Works";

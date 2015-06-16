@@ -133,7 +133,6 @@ Add the script files and CSS files in the title tag of the default.html page.
 
 {% highlight html %}
 
-[HTML]
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
@@ -148,8 +147,6 @@ Add the script files and CSS files in the title tag of the default.html page.
 Add the following code inside the **&lt;Body&gt;** tag in the **default.html** page.
 
 {% highlight html %}
-
-[HTML]
 
 //Creating a div tag, which will act as a container for ejOlapGauge widget.
 
@@ -248,7 +245,6 @@ Add the following code inside the IOlapGaugeService interface available in the I
 
 {% highlight c# %}
 
-[C#]
     [ServiceContract]
     public interface IOlapGaugeService
     {
@@ -265,7 +261,6 @@ Add necessary namespaces required to implement the service methods.
 
 {% highlight c# %}
 
-[C#]
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -287,7 +282,6 @@ Create the **OlapGaugeService** class to implement the service methods. Inherit 
 
 {% highlight c# %}
 
-[C#]
 namespace WebApplication2
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
@@ -307,7 +301,6 @@ Add the following methods to the service invoked for any server-side operations 
 
 {% highlight c# %}
 
-[C#]
         OlapGauge htmlHelper = new OlapGauge();       
         static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
@@ -321,15 +314,12 @@ Add the following methods to the service invoked for any server-side operations 
 
 {% highlight c# %}
 
-[C#]
-
          //This method provides the required information from the server side for initializing the OlapGauge.
           public Dictionary<string, object> InitializeGauge(string action,string customObject)
         {
             OlapDataManager DataManager = null;
             dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
-
-                DataManager = new OlapDataManager(connectionString);                         
+            DataManager = new OlapDataManager(connectionString);                         
             DataManager.SetCurrentReport(CreateOlapReport());
             return htmlHelper.GetJsonData(action, DataManager);
         }        
@@ -387,8 +377,6 @@ Add the following methods to the service invoked for any server-side operations 
 
 {% highlight xml %}
 
-[Web.Config]
-
  <services>
       <service name="**WebApplication2.OlapGaugeService**">
         <endpoint address="" behaviorConfiguration="**WebApplication2.OlapGaugeServiceAspNetAjaxBehavior**"
@@ -402,8 +390,6 @@ Add the following methods to the service invoked for any server-side operations 
 * The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, "WebApplication2.OlapGaugeServiceAspNetAjaxBehavior" refers to the OlapGaugeService class under the namespace WebApplication2 in OlapGaugeService.svc.cs file that is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
-
-[Web.Config]
 
    <endpointBehaviors>
         <behavior name="**WebApplication2.OlapGaugeServiceAspNetAjaxBehavior**">

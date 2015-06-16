@@ -14,10 +14,8 @@ The **PivotGrid** control customizes its appearance using user-defined CSS. The 
 You can refer custom CSS in **default.html** page.
 
 
-
 {% highlight javascript %}
 
-[JS]
 <head>
 <title>PivotGrid Custom theme</title>
      <link href="../themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
@@ -31,7 +29,7 @@ You can refer custom CSS in **default.html** page.
 
 {% highlight css %}
 
-[CSS]
+
 /*-----------------------For PivotGrid control definition-----------------*/
 
 .e-pivotgrid table {

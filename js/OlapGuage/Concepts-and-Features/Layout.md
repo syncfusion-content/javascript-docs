@@ -29,8 +29,6 @@ You can set the number of gauges to be displayed in row using **rowsCount** prop
 
 {% highlight js %}
 
-[JS]
-
 $(function () {
      $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
          backgroundColor: "transparent",**rowsCount: 2,**
@@ -108,7 +106,6 @@ You can set the number of gauges to be displayed in column using **columnsCount*
 
 {% highlight js %}
 
-[JS]
 $(function () {
      $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
          backgroundColor: "transparent", columnsCount: 2,

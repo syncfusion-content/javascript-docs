@@ -23,7 +23,6 @@ The following code example illustrates how to save the document to Excel via a s
 
 {% highlight c# %}
 
-[C#]
 Public void ExportOptions(Stream stream)
 {
 OlapGrid olapGridHelper = new OlapGrid();

@@ -120,8 +120,6 @@ Add the script files and CSS files in the &lt;title&gt; tag of the default.html 
 
 {% highlight html %}
 
-
-[HTML]
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
@@ -136,7 +134,6 @@ Add the following code sample in the **&lt;body&gt;** tag in the **default.html*
 
 {% highlight html %}
 
-[HTML]
 <div>
     //Creating a div tag, which will act as a container for ejOlapClient widget.
     <div id="OlapClient" style="height: 350px; width: 100%; overflow: auto">
@@ -180,8 +177,6 @@ In the Add New Item window, select WCF Service and name it OlapClientService.svc
 Add the following code inside the **IOlapClientService** interface available in an **IOlapClientService.cs** file.
 
 {% highlight c# %}
-
-**[C#]**
 
 [ServiceContract]
 
@@ -252,7 +247,6 @@ Add the following necessary namespaces required to implement the **service** met
 
 {% highlight c# %}
 
-[C#]
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -284,8 +278,6 @@ You can create the **OlapClientService** class to implement the **service** meth
 
 {% highlight c# %}
 
-[C#]
-
 namespace WebApplication2
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
@@ -308,8 +300,6 @@ You can add the following methods to the service that are invoked for any server
 
 {% highlight c# %}
 
-[C#]
-
    OlapClient olapClientHelper = new OlapClient();
    OlapChart htmlHelper = new OlapChart();
    JavaScriptSerializer serializer = new JavaScriptSerializer();
@@ -322,8 +312,6 @@ You can add the following methods to the service that are invoked for any server
 * Add the following relevant service methods.
 
 {% highlight c# %}
-
-[C#]
 
 //This method provides the required information from the server side for initializing the OlapClient.
 
@@ -563,7 +551,6 @@ The following are the properties that meet the appropriate endpoint.
 
 {% highlight xml %}
 
-[Web.Config]
 <services>
       <service name="**WebApplication2.OlapClientService**">
         <endpoint address="" behaviorConfiguration="**WebApplication2.OlapClientServiceAspNetAjaxBehavior**"
@@ -580,7 +567,6 @@ The following are the properties that meet the appropriate endpoint.
 
 {% highlight xml %}
 
-[Web.Config]
 <endpointBehaviors>
         <behavior name="**WebApplication2.OlapClientServiceAspNetAjaxBehavior**">
           <enableWebScript />
