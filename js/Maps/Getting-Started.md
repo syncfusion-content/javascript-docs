@@ -148,8 +148,8 @@ Refer to both shape data and datasource as illustrated in the following code exa
 {% highlight js %}
 
 <body>
-<div id="mapContainer" style="width: 900px; height: 600px;"></div>
-    </body>
+    <div id="mapContainer" style="width: 900px; height: 600px;"></div>
+</body>
 
 
 {% endhighlight %}
@@ -160,14 +160,14 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 <script type="text/javascript" language="javascript ">
 
-               jQuery(function ($) {	
-$("#mapContainer").ejMap({
-layers: [
-{
-shapeData: usMap
-}]
-});
-});
+    jQuery(function ($) {	
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                shapeData: usMap
+            }]
+        });
+    });
 </script>
 
 
@@ -179,38 +179,38 @@ shapeData: usMap
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	    <title></title>    
-<!--  jquery script  -->
-                <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <title></title>    
+        <!--  jquery script  -->
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
 
-                <!-- Essential JS UI widget -->
-               <script src="http://cdn.syncfusion.com/13.1.0.21/
+        <!-- Essential JS UI widget -->
+        <script src="http://cdn.syncfusion.com/13.1.0.21/
 js/ej.widgets.all.min.js"></script>
 
-               <!-- JS Render widget -->
-               <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>     
+        <!-- JS Render widget -->
+        <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>     
 
-<!-- Shape data source file-->
-                <script src="usa.js" type="text/javascript"></script>
+        <!-- Shape data source file-->
+        <script src="usa.js" type="text/javascript"></script>
 
-                <!-- Business data source file-->
-                <script src="populationData.js" type="text/javascript"></script>
-
+        <!-- Business data source file-->
+        <script src="populationData.js" type="text/javascript"></script>
+        
 </head>
 <body>
 
-<div  id="mapContainer" style="width: 900px; height: 600px;"></div>
+    <div  id="mapContainer" style="width: 900px; height: 600px;"></div>
 
-<script type="text/javascript">
-jQuery(function ($) {
-$("#mapContainer").ejMap({
-layers: [
-{
-**shapeData: usMap**
-}]
-});
-	        }); 
-</script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $("#mapContainer").ejMap({
+                layers: [
+                {
+                    **shapeData: usMap**
+                }]
+            });
+	    }); 
+    </script>
 
 </body>
 </html>

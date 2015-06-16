@@ -86,10 +86,10 @@ You can set headers for each level by setting the **showHeader** propery of the 
     </script>     
 
 <script  id="headertemplate" type="application/jsrender">
-<div style="background-color: white; margin:5px">
-            <label style="color:black;font-size:medium;" >**{{:**header**}}**</label><br />            
-      </div>                        
-    </script>                      
+    <div style="background-color: white; margin:5px">
+        <label style="color:black;font-size:medium;" >**{{:**header**}}**</label><br />            
+    </div>                        
+</script>                      
 
 
 {% endhighlight %}
@@ -113,22 +113,21 @@ You can also set labels for the leaf nodes by setting the **showLabels** propert
                 // ...                 
                 levels: [
                   {groupPath: "Continent", groupGap: 2, headerHeight: 20, headerTemplate: 'headertemplate' }
-                        ],
+                ],
 
-**leafItemSettings: { labelPath: "Region", showLabels: true, labelTemplate: 'labeltemplate'}**
+                **leafItemSettings: { labelPath: "Region", showLabels: true, labelTemplate: 'labeltemplate'}**
                 // ...
-
             });
         }); 
     </script>     
 
-      <script  id="headertemplate" type="application/jsrender">
-<div style="background-color: white; margin:5px">
+    <script  id="headertemplate" type="application/jsrender">
+        <div style="background-color: white; margin:5px">
             <label style="color:black;font-size:medium;" >**{{:**header**}}**</label><br />            
-      </div>                        
+        </div>                        
     </script>      
-     <script  id="labeltemplate" type="application/jsrender">
-<div style="background-color: transparent;">
+    <script  id="labeltemplate" type="application/jsrender">
+        <div style="background-color: transparent;">
             <label style="color:white;font-size:small;margin:5px;" >**{{:**label**}}**</label><br />            
         </div>                        
     </script>      
