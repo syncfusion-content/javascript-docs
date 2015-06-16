@@ -21,7 +21,7 @@ The following code example explains how to enable **ReadOnly** property in the S
 
 {% highlight js %}
 
-**[Javascript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -340,7 +340,7 @@ The following code explains how the appointment resizing option is enabled for t
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -424,7 +424,7 @@ Use the following code example to search the appointment on the schedule datasou
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -510,7 +510,7 @@ _Figure_ _126__: Grid with appointment search result_
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -604,7 +604,7 @@ _Figure_ _128__: Grid with appointment search result_
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {

@@ -27,7 +27,6 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -60,8 +59,6 @@ The above example illustrates the horizontal view of **Schedule** control. Simil
 
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -111,8 +108,6 @@ Figure 94: Schedule with vertical view
 
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <div id="Schedule1"> </div>
 <script>
@@ -181,7 +176,6 @@ Figure 95: Schedule with horizontal multiple resources
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {

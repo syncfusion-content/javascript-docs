@@ -20,8 +20,6 @@ The following code example describes how to customize the display of view option
 
 {% highlight js %}
 
-**[JavaScript]**
-
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -76,7 +74,6 @@ The following code example explains how to change the current view of the **Sche
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -129,7 +126,6 @@ ___Figure_ _85__:___ _schedule with_ _current view._
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
