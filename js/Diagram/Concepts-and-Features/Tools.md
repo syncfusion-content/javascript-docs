@@ -16,7 +16,7 @@ _Tools_
 <table>
 <tr>
 <td>
-<b>  Precedence</b></td><td>
+<b>Precedence</b></td><td>
 <b>Tools</b></td><td>
 <b>Description</b></td></tr>
 <tr>

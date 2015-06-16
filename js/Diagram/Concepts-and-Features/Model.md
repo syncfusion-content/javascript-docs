@@ -41,7 +41,7 @@ _Events_
 <td>nodeCollectionChange</td><td>
 {cancel, changeType, element, model, type}<br/>
 cancel: boolean<br/>
-changeType: string(“insert”/”remove”)<br/>
+changeType: string(“insert”/“remove”)<br/>
 element: object(Node to be added or removed)<br/>
 model: object(diagram’s model)<br/>
 type: string(event name: “nodeCollectionChange”) </td><td>
@@ -51,7 +51,7 @@ This event is raised when you add/delete node during runtime.</td></tr>
 connectorCollectionChange</td><td>
 {cancel, changeType, element, model, type }<br/>
 cancel: boolean<br/>
-changeType: string(“insert”/”remove”)<br/>
+changeType: string(“insert”/“remove”)<br/>
 element: object(Connector to be added or removed)<br/>
 model: object(diagram’s model)<br/>
 type: string(event name: “connectorCollectionChange”)</td><td>

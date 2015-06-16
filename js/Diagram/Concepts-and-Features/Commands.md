@@ -44,7 +44,8 @@ _Alignment Command_
 <tr>
 <td>
 align</td><td>
-<b>direction</b> (string)Values accepted-(“left”/”right”/”center”/”top”/”bottom”/”middle”)</td><td>
+<b>direction</b> (string)<br/>
+Values accepted-(“left”/“right”/“center”/“top”/“bottom”/“middle”)</td><td>
 Align all the nodes/connectors in the selection list to the left/right/center/top/bottom/middle of the selection boundary</td></tr>
 </table>
 
@@ -377,7 +378,7 @@ _Nudge Commands_
 <td>
 nudge</td><td>
 direction (string)<br/>
-Value accepted-(“up”/”down”/”left”/”right”)<br/>
+Value accepted-(“up”/“down”/“left”/“right”)<br/>
 delta(integer)</td><td>
 Nudge command moves the selected elements towards up/ down/ left/ right by the number of pixels specified by the parameter delta.When delta is not specified, by default it is considered as 1 pixel.</td></tr>
 </table>
@@ -479,6 +480,7 @@ Specifies the region covered by the <b>Diagram</b> elements </td></tr>
 PageSettings</td><td>
 Specifies the region based on page settings</td></tr>
 </table>
+
 **Undo/Redo**
 
-Refer the Link for Undo/Redo Commands.
+Refer the Link for [Undo/Redo Commands](http://help.syncfusion.com/ug/js/documents/undoandredo.htm).
