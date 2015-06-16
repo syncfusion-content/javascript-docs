@@ -129,7 +129,7 @@ Filtering type can be defined by **filterEditType** property in each column obje
 {% highlight js %}
 
 
-$("#treegrid1").ejTreeGrid(
+    $("#treegrid1").ejTreeGrid(
         {   
            // ...     
             filterBarMode: "immediate",
@@ -178,21 +178,21 @@ You can also disable the visibility of the particular column in column collectio
 {% highlight js %}
 
 
-$("#treegrid1").ejTreeGrid(
-{   
-    // ...     
-    showColumnChooser: true,
-    allowSorting: true,
-    allowMultiSorting: true,
-    columns:[
+    $("#treegrid1").ejTreeGrid(
+    {   
+        // ...     
+        showColumnChooser: true,
+        allowSorting: true,
+        allowMultiSorting: true,
+        columns:[
               // ...  
               { field: "duration", headerText: "Duration", 
                 visible: false
               }
               // ...  
             ],
-    // ...             
-});
+        // ...             
+    });
 
 
 {% endhighlight %}
