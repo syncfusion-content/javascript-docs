@@ -31,10 +31,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/How-to/Change-the-default-type-of-the-series_images/Change-the-default-type-of-the-series_img1.png" Caption=""%}
-
-_Figure 29: Range Navigator with column series_
-
+{% include image.html url="/js/RangeNavigator/How-to/Change-the-default-type-of-the-series_images/Change-the-default-type-of-the-series_img1.png" Caption="Range Navigator with column series"%}
 
 
 When using multiple series in **RangeNavigator**, **type** property in **seriesSettings** is used to set a type common for all the series.
@@ -57,7 +54,6 @@ $("#rangecontainer").ejRangeNavigator({
 
 {% endhighlight %}
 
-{% include image.html url="/js/RangeNavigator/How-to/Change-the-default-type-of-the-series_images/Change-the-default-type-of-the-series_img2.png" Caption=""%}
+{% include image.html url="/js/RangeNavigator/How-to/Change-the-default-type-of-the-series_images/Change-the-default-type-of-the-series_img2.png" Caption="Range Navigator using ‘stacking column’ as series type common for all the series"%}
 
-_Figure 30: Range Navigator using ‘stacking column’ as series type common for all the series_
 

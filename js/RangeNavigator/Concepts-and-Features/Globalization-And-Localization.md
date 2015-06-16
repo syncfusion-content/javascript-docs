@@ -49,7 +49,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img22.png" Caption="Figure 27: Locialization"%}
+{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Globalization-And-Localization_images/Globalization-And-Localization_img1.png" Caption="Locialization"%}
 
 #### RTL
 
@@ -70,7 +70,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img23.png" Caption=""%}
+{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Globalization-And-Localization_images/Globalization-And-Localization_img2.png" Caption="RTL"%}
 
-Figure 28: RTL
+
 

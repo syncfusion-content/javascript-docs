@@ -46,7 +46,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img19.png" Caption="Figure 24: Tool Tip"%}
+{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Tooltip_images/Tooltip_img1.png" Caption="Tool Tip"%}
 
 #### Label Format
 
@@ -83,7 +83,7 @@ $("#rangecontainer").ejRangeNavigator({
 {% endhighlight %}
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img20.png" Caption="Figure 25: labelFormat"%}
+{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Tooltip_images/Tooltip_img2.png" Caption="labelFormat"%}
 
 #### Tooltip display mode
 
@@ -124,4 +124,4 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img21.png" Caption="Figure 26: Tool Tip display mode"%}
+{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Tooltip_images/Tooltip_img3.png" Caption="Tool Tip display mode"%}

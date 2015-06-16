@@ -29,9 +29,7 @@ $("#rangecontainer").ejRangeNavigator(
 {% endhighlight %}
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img12.png" Caption=""%}
-
-_Figure 17: Deferred update_
+{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Behavior-Customization_images/Behavior-Customization_img1.png" Caption="Deferred update"%}
 
 
 #### Handle Events
@@ -108,7 +106,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img13.png" Caption="Figure 18: Use of ZoomCoordinates"%}
+{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Behavior-Customization_images/Behavior-Customization_img2.png/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img13.png" Caption="Use of ZoomCoordinates"%}
 
 #### Thumb Template
 
@@ -147,4 +145,4 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
 
 The following screenshot displays the **RangeNavigator** using thumb template.
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-features_images/Concepts-and-features_img14.png" Caption="Figure 19: Thumb template"%}
+{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Behavior-Customization_images/Behavior-Customization_img3.png" Caption="Thumb template"%}
