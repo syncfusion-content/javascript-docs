@@ -15,7 +15,7 @@ The following code example illustrates how to add **DataSource** at control crea
 
 {% highlight javascript %}
 
-**[JS]**
+
 
 $("#viewer").ejReportViewer(
                     {
@@ -45,7 +45,7 @@ $("#viewer").ejReportViewer(
 
 {% highlight c# %}
 
-**[C#]**
+
 
 public class ReportsController : ApiController, IReportController
     {
@@ -96,7 +96,7 @@ The **DataSource** credentials can be given at **Web API** Controller to connect
 
 {% highlight c# %}
 
-**[CS]**
+
 
                    /// <summary>
         /// Report Initialization method that is triggered when report begins to process.

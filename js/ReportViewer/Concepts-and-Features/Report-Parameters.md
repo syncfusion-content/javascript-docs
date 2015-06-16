@@ -17,7 +17,7 @@ The following code example illustrates how to add **ReportParameter** at control
 
 {% highlight javascript %}
 
-**[JS]**
+
 
 $("#viewer").ejReportViewer(
                 {
@@ -34,7 +34,7 @@ The following code example illustrates how to add **ReportParameter** in **Web A
 
 {% highlight c# %}
 
-**[C#]**
+
 
 public class ReportsController : ApiController, IReportController
     {

@@ -13,7 +13,7 @@ The **ReportViewer** has an option to show or hide items in the **toolbar**. To 
 
 {% highlight javascript %}
 
-**[JS]**
+
 
 $("#viewer").ejReportViewer(
                 {
