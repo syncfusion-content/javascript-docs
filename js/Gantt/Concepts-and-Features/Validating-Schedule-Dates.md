@@ -16,7 +16,7 @@ Validating schedule dates is used to change the schedule start date and end date
 {% highlight js %}
 
 
-$(function () {
+        $(function () {
             $("#gantt").ejGantt({
                 // ...
                 //scheduleStartDate: "02/01/2014",
