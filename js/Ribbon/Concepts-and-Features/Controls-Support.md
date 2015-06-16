@@ -149,7 +149,7 @@ The default type is **button**.
 	function createControl(args) {
 	$("#fontcolor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-icon e-fontcoloricon"});
 	}
-	
+	</script>
 	<style>
 	.e-ribbon .e-ribbonpaste:before {
 	content: "\e645";
@@ -176,7 +176,9 @@ The default type is **button**.
 	font-size: 15px;
 	position: relative;
 	right: 10px;
-	}</body>
+	}
+	</style>
+	</body>
 	<!-- ... -->
 
 
