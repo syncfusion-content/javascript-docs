@@ -45,19 +45,19 @@ You can apply the theme (Gradient lime) to the **TreeGrid** control by using t
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+	<html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
+	<head>
 
-<title>Getting Started with TreeGrid Control for JavaScript</title>
+	<title>Getting Started with TreeGrid Control for JavaScript</title>
 
-<!-- style sheet for default theme(gradient lime) -->
+	<!-- style sheet for default theme(gradient lime) -->
 
-<link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet">
+	<link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet">
 
-//...
+	//...
 
-</html>
+	</html>
 
 
 {% endhighlight %}
