@@ -85,7 +85,7 @@ The following screenshot displays the Chart.
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img2.png" Caption="Chart"%}
 
-**Add a Chart series**
+## Add a Chart series
 
 By default, line series is used. To create a **series**, you need to add the following code example to the scripts. For example, the following steps illustrate how to add a column series to the **Chart**.
 
@@ -135,7 +135,7 @@ The following screenshot displays a Chart series:
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img3.png" Caption="Chart Series"%}
 
-**Add JSON data to the Chart**
+## Add JSON data to the Chart
 
 You can add **JSON** data to the **Chart** using the **datasource** property in Chart series. Since you need to show the average High and Low temperature along with the Precipitation, you can create a **JSON** data as in the following code example. 
 
@@ -211,7 +211,7 @@ The following screenshot displays the Chart when **JSON** data is added.
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img4.png" Caption="Chart with JSON data"%}
 
-**Add Chart Axis of your choice**
+## Add Chart Axis of your choice
 
 In the **Chart** when **JSON** is added, the axes are provided explicitly and **ejChart** initializes the right-axis based on the data type. You can also specify the axis type of your choice using **ValueType** option and customize the options available in the axes. The following axes types are supported:
 
@@ -234,33 +234,33 @@ The following code example illustrates how to add Chart axis.
 {% highlight js %}
 
 
-    $("#chartcontainer").ejChart({
-    // ...
-          primaryXAxis: {
-                valueType:"category",
-        },
-        primaryYAxis:{
-                valueType: "double",
-                labelFormat: "{value}°F",
-                range:{min:0, max:120,interval:20}
-        },
-        axes:[
-        {
-                orientation:'Vertical',
-                opposedPosition: true,        
-                name: 'Precipitation',
-                range:{min:0,max:6,interval:1},
-                labelFormat: '{value} inch',
-        },
-
-        ]
-    // ...             
-});
+    $("#chartcontainer").ejChart(
+    {
+        // ...
+            primaryXAxis: {
+                valueType:"category",
+            },
+            primaryYAxis:{
+            valueType: "double",
+            labelFormat: "{value}°F",
+            range:{min:0, max:120,interval:20}
+            },
+            axes:[
+            {
+                orientation:'Vertical',
+                opposedPosition: true,
+                name: 'Precipitation',
+                range:{min:0,max:6,interval:1},
+                labelFormat: '{value} inch',
+            },
+            ]
+        // ...
+    });
 
 
 {% endhighlight %}
 
-**Assign the axis to the respective series**
+## Assign the axis to the respective series
 
 To assign the **axis** to the respective series, you can set **yAxisName** property of the **series.** In the following code example, **yAxisName** of Column series is set to **“Precipitation”.** This is the name set to the axis in the above code example.
 
@@ -308,7 +308,7 @@ The following screenshot displays a Chart with the desired output.
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img5.png" Caption="Chart with axes"%}
 
-**Add Data Labels**
+## Add Data Labels
 
 **Data Labels** display the series points in **Chart**. To display the data labels, you need to enable the “**visible**” property of **DataLabel** in the **marker** of specific series. By default, it displays the Y-value with label format provided in axis (For example: 4.88 inch ). The following code example shows how to add **Data****Labels**.
 
@@ -349,9 +349,9 @@ The following screenshot displays a Chart when data labels are enabled.
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img6.png" Caption="Chart with Data Labels"%}
 
-**Enable Tooltip**
+## Enable Tooltip
 
-To display the **tooltip** of **Chart** series, you can enable the “**visible**” property of “**tooltip**” in the specific series. By default, it displays X****and****Y value of points when the mouse is hovered over the points. The following code example shows how to enable a Tooltip.
+To display the **tooltip** of **Chart** series, you can enable the “**visible**” property of “**tooltip**” in the specific series. By default, it displays **X** and **Y** value of points when the mouse is hovered over the points. The following code example shows how to enable a Tooltip.
 
 {% highlight js %}
 
