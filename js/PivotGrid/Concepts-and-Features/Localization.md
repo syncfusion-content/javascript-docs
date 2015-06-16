@@ -60,7 +60,6 @@ The following code example illustrates how to localize **PivotGrid’s** user in
 
 {% highlight javascript %}
 
-[JS]
 <script type="text/javascript">
  $(function () {
      $("#PivotGrid1").ejPivotGrid({
@@ -101,8 +100,6 @@ To apply control side **Localization**, you can refer the following code example
 
 {% highlight html %}
 
-[HTML]
-
 ej.PivotGrid.locale["zh-CN"] = {
 
 //Corresponding keyword values needs to be set here.
@@ -116,10 +113,8 @@ ej.PivotGrid.locale["zh-CN"] = {
 To get the **Localized Cube Information** ,  ** “Locale Identifier"** is set in the connection string
 
 
-
 {% highlight c# %}
 
-[C#]
 //1036 refers to “fr-FR” culture.
 string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);

@@ -93,8 +93,7 @@ Using this **cssClass** you can override the existing styles under the theme sty
 Add the following code in your **HTML** page to render the DateTimePicker.
 
 {% highlight html %}
-
-**[HTML]**    
+   
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -134,7 +133,7 @@ Add the following code in your style section.
 
 {% highlight css %}
 
-**[Style]**
+<style>
 
 .Purple-dark .e-week-header {
         color: #EBADD6;
@@ -186,7 +185,7 @@ Add the following code in your style section.
             background: #FF1975;
 
         }
-
+</style>
 
 {% endhighlight %}
 

@@ -15,9 +15,7 @@ The **dataSource** property accepts the collection values as input. For example,
 
 {% highlight js %}
 
-**[JS]**  
 
-**[HTML]**
 ****
        jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({ 
@@ -27,7 +25,7 @@ The **dataSource** property accepts the collection values as input. For example,
             });
         });
 
-var population_data = [
+        var population_data = [
                    { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
                    { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
                    { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
@@ -42,7 +40,7 @@ var population_data = [
                    { Continent: "Africa", Region: "Northern Africa", Growth: 1.70, Population: 210002000 },
                    { Continent: "Africa", Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
                    { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
-                   ];
+        ];
 
 
 

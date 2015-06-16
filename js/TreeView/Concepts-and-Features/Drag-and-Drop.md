@@ -17,15 +17,71 @@ The following steps explain enabling the **allowDragAndDrop** property for **Tre
 
 1. In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configure **TreeView.**
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;ul id="treeView"&gt;        &lt;li class="expanded"&gt;            Favorites            &lt;ul&gt;                <li>Desktop</li>                <li>Downloads</li>                <li>Recent places</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li class="expanded"&gt;            Libraries            &lt;ul&gt;                &lt;li&gt;                    Documents                    &lt;ul&gt;                        <li>My Documents</li>                        <li>Public Documents</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Pictures                    &lt;ul&gt;                        <li>My Pictures</li>                        <li>Public Pictures</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Music                    &lt;ul&gt;                        <li>My Music</li>                        <li>Public Music</li>                    &lt;/ul&gt;                &lt;/li&gt;                <li>Subversion</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;            Computer            &lt;ul&gt;                <li>Folder(C)&lt;/li&gt;                <li>Folder(D)&lt;/li&gt;                <li>Folder(F)&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;    &lt;/ul&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Enable allowDragAndDrop for TreeView control as follows.            $("#treeView").ejTreeView(              {              allowDragAndDrop: true,               });</td></tr>
-</table>
+{% highlight html %}
 
+
+<ul id="treeView">
+        <li class="expanded">
+            Favorites
+            <ul>
+
+                <li>Desktop</li>
+                <li>Downloads</li>
+                <li>Recent places</li>
+            </ul>
+        </li>
+        <li class="expanded">
+            Libraries
+            <ul>
+                <li>
+                    Documents
+                    <ul>
+                        <li>My Documents</li>
+                        <li>Public Documents</li>
+                    </ul>
+                </li>
+                <li>
+                    Pictures
+                    <ul>
+                        <li>My Pictures</li>
+                        <li>Public Pictures</li>
+                    </ul>
+                </li>
+                <li>
+                    Music
+                    <ul>
+                        <li>My Music</li>
+                        <li>Public Music</li>
+                    </ul>
+                </li>
+                <li>Subversion</li>
+            </ul>
+        </li>
+        <li>
+            Computer
+            <ul>
+                <li>Folder(C)</li>
+                <li>Folder(D)</li>
+                <li>Folder(F)</li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// Enable allowDragAndDrop for TreeView control as follows.
+<script type="text/javascript">
+            $("#treeView").ejTreeView(
+              {
+              allowDragAndDrop: true,
+              
+ });
+</script>
+
+{% endhighlight %}
 
 The output for **TreeView** when **allowDragAndDrop** is set to **True**.
 
@@ -37,10 +93,10 @@ You can allow the child level of specified node to be dropped in **TreeView** by
 
 {% highlight js %}
 
-**[JavaScript]**
+
+<script type="text/javascript">
     $("#treeView").ejTreeView({ **allowDropChild**: true });
-
-
+</script>
 
 {% endhighlight %}
 
@@ -50,10 +106,10 @@ You can drag the root node and drop it into the same level of node that is a sib
 
 {% highlight js %}
 
-**[JavaScript]**
+
+<script type="text/javascript">
     $("#treeView").ejTreeView({ **allowDropSibling**: true });
-
-
+</script>
 
 {% endhighlight %}
 

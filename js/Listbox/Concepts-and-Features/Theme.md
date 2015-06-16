@@ -54,14 +54,37 @@ The following steps explains you the configuration of **cssClass** properties in
 * In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b><b>// </b>Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    $(function () {        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, <b>cssClass: "customclass"</b>        });    });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxSample"></ul>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+  
+// Initialize the control in JavaScript
+
+<script type="text/javascript">
+    $(function () {
+        var skillset = [
+        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+        ];
+        $("#listboxSample").ejListBox({
+            width: "240", dataSource: skillset,
+            fields: { text: "skill" }, cssClass: "customclass"
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 
 Configure the **CSS** styles to apply on **ListBox**.
@@ -70,7 +93,7 @@ Configure the **CSS** styles to apply on **ListBox**.
 
 {% highlight css %}
 
-[CSS]  
+  
 <style>
     .customclass {
         background-color: #FFFFCC;

@@ -19,17 +19,25 @@ The following steps explains you on how to configure **title** for a **TagCloud*
 
 * In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;div id="techweblist"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Disable the Title element of TagCloud control as follows.    $("#techweblist").ejTagCloud({                <b>showTitle:false, </b><b>                dataSource: websiteCollection</b>            });</td></tr>
-</table>
+         <div id="techweblist"></div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// Disable the Title element of TagCloud control as follows.
+<script>
+    $("#techweblist").ejTagCloud({
+                showTitle:false, 
+                dataSource: websiteCollection
+            });
+</script>
+
+{% endhighlight %}
 
 The following screenshot illustrates a **TagCloud** control when you disable title,
 
@@ -47,16 +55,28 @@ The following steps explains you on how to configure **titleText** for a **TagCl
 
 * In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;div id="techweblist"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Disable the Title element of TagCloud control as follows:    $("#techweblist").ejTagCloud({<b>                </b>showTitle:true, <b>                titleText: "Tech Sites",</b><b>                </b>dataSource: websiteCollection            });</td></tr>
-</table>
+         <div id="techweblist"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+// Disable the Title element of TagCloud control as follows.
+<script>
+    $("#techweblist").ejTagCloud({
+                showTitle:true, 
+                titleText: "Tech Sites",
+                dataSource: websiteCollection
+            });
+
+</script>
+
+{% endhighlight %}
 
 
 The following screenshot illustrates the **TagCloud** control with customized title text.
@@ -75,16 +95,25 @@ The following steps explains you to configure **titleImage** for a **TagCloud**.
 
 * In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
+{% highlight html %}
+
+         <div id="techweblist"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>         &lt;div id="techweblist"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Assign the image URL from local location or remote location to titleImage property of TagCloud control as follows.$("#techweblist").ejTagCloud({<b>  titleImage: "http://js.syncfusion.com/demos/web/images/waitingpopup/js_logo.png",</b>  titleText: "Tech Sites",<b>  </b>dataSource: websiteCollection });</td></tr>
-</table>
+// Disable the Title element of TagCloud control as follows.
+<script>
+   $("#techweblist").ejTagCloud({
+        titleImage: "http://js.syncfusion.com/demos/web/images/waitingpopup/js_logo.png",
+        titleText: "Tech Sites",
+        dataSource: websiteCollection
+ });
+</script>
+
+{% endhighlight %}
 
 
 Using CSS class you can resize the image content as follows.
@@ -93,8 +122,7 @@ Using CSS class you can resize the image content as follows.
 
 {% highlight css %}
 
-**[Style]**
-style type="text/css">
+<style type="text/css">
 **.e-title-img** {
             height::35px;
             width:35px;

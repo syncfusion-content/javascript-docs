@@ -13,7 +13,7 @@ documentation: ug
 
 The following sub-properties provides you a way to bind either the local or remote data to the **Dropdown** control.
 
-_Table_ _1__:_ _Properties_ _of JavaScript_ 
+_Table_ _1:_ _Properties_ _of JavaScript_ 
 
 <table>
 <tr>
@@ -75,6 +75,7 @@ It defines the table name for the tag value or displays text while rendering rem
 </table>
 
 
+
 _**Local data**_
 
 **Dropdown** provides data binding support for **DropdownList**. Thus you can bind the data from **JSON** Data. To achieve this, you need to map the corresponding file with their column names
@@ -85,16 +86,37 @@ The following steps explains you the details of data binding with **DropdownList
 
 1. In an **HTML** page, add a **&lt;input&gt;** element to configure **Dropdownlist** widget
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>   &lt;div class="control"&gt;        <div class="ctrllabel">Select a bike</div>        &lt;input type="text" id="dropdownlist" /&gt;   &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;               $(function () {            // declaration            BikeList = [                 { id: "bk1", text: "Aache RTR" }, { id: "bk2", text: "CBR 150-R" }, { id: "bk3", text: "CBZ Xtreme" },                 { id: "bk4", text: "Discover" }, { id: "bk5", text: "Dazzler" }, { id: "bk6", text: "Flame" },                 { id: "bk7", text: "Fazzer" }, { id: "bk8", text: "FZ-S" }, { id: "bk9", text: "Pulsar" },                 { id: "bk10", text: "Shine" }, { id: "bk11", text: "R15" }, { id: "bk12", text: "Unicorn" }            ];            $('#dropdownlist').ejDropDownList({                dataSource: BikeList,            fields: { id: "id", text: "text", value: "text" }        });        });    &lt;/script&gt;</td></tr>
-</table>
 
+       <div class="control">
+        <div class="ctrllabel">Select a bike</div>
+        <input type="text" id="dropdownlist" />
+       </div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+   <script type="text/javascript">
+        // Initialize the control in JavaScript       
+        $(function () {
+            // declaration
+            BikeList = [
+                 { id: "bk1", text: "Aache RTR" }, { id: "bk2", text: "CBR 150-R" }, { id: "bk3", text: "CBZ Xtreme" },
+                 { id: "bk4", text: "Discover" }, { id: "bk5", text: "Dazzler" }, { id: "bk6", text: "Flame" },
+                 { id: "bk7", text: "Fazzer" }, { id: "bk8", text: "FZ-S" }, { id: "bk9", text: "Pulsar" },
+                 { id: "bk10", text: "Shine" }, { id: "bk11", text: "R15" }, { id: "bk12", text: "Unicorn" }
+            ];
+            $('#dropdownlist').ejDropDownList({
+                dataSource: BikeList,
+                fields: { id: "id", text: "text", value: "text" }
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -112,17 +134,35 @@ The following steps explains you the details of data binding from remote.
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
 
+         <div class="ctrllabel">Select a customer</div>
+         <input type="text" id="dropdownlist" />
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b><div class="ctrllabel">Select a customer</div>    &lt;input type="text" id="dropdownlist" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            // DataManager creation            var dataManger = ej.DataManager({                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"            });            // Query creation            var query = ej.Query()                   .from("Customers").take(6);             $('#dropdownlist').ejDropDownList({                dataSource: dataManger,                fields: { text: "CustomerID" },                query: query,            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% endhighlight %}
 
+{% highlight js %}
+
+<script type="text/javascript">
+       // Initialize the control in JavaScript       
+       $(function () {
+            // DataManager creation
+            var dataManger = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+            // Query creation
+            var query = ej.Query()
+                   .from("Customers").take(6);
+
+             $('#dropdownlist').ejDropDownList({
+                dataSource: dataManger,
+                fields: { text: "CustomerID" },
+                query: query,
+            });
+        });    
+</script>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -152,23 +192,100 @@ The following example depicts the way to bind data to the **DropdownList** widge
 
 
 
-> {% include image.html url="/js/DropDownList/Concepts-and-Features/Data-binding_images/Data-binding_img3.png" Caption=""%} _**Note: You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.**_
+> {% include image.html url="/js/DropDownList/Concepts-and-Features/Data-binding_images/Data-binding_img3.png" Caption=""%} 
+
+_**Note: You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.**_
 
 
 
 * In the **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
+
+<!doctype html>
+   <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DropCtrl">
+    <head>
+    <title>Essential Studio for JavaScript :  Angular</title>
+    <!-- style sheet for default theme(flat azure) -->
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
+    </head>
+    <body ng-controller="DropDownCtrl">
+     <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame" style="width: 50%; height: 27px">
+                    <span>Select a section</span>
+                    <div>
+                        <div id="control" style="float: left; width: 45%">
+                            <input id="dropdownlist" ej-dropdownlist e-datasource="dataList" e-value="value" />
+                            <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 4px;">Note:Two Way Angular Support</span></h6>
+                        </div>
+                    </div>
+                    <div id="binding" style="float: right; margin: auto; width: 45%">
+                        <input type="text" id="dropValue" class="input ejinputtext" ng-model="value" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+// Initialize the control and bind the data in JavaScript
+
+       var list = [
+                   { id: "cr1", text: "Dodge Avenger" },
+                   { id: "cr2", text: "Chrysler 200" },
+                   { id: "cr3", text: "Ford Focus" },
+                   { id: "cr4", text: "Ford Taurus", },
+                   { id: "cr5", text: "Dazzler", },
+                   { id: "cr6", text: "Chevy Spark", },
+                   { id: "cr7", text: "Chevy Volt", },
+                   { id: "cr8", text: "Honda Fit", },
+                   { id: "cr9", text: "Honda Crosstour", },
+                   { id: "cr10", text: "Acura RL", },
+                   { id: "cr11", text: "Hyundai Elantra", },
+                   { id: "cr12", text: "Mazda3", }
+       ];
+       angular.module('DropCtrl', ['ejangular'])
+          .controller('DropDownCtrl', function ($scope) {
+              $scope.dataList = list;
+              $scope.value = "Ford Focus";
+          });
+
+    </script>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;!doctype html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" ng-app="DropCtrl"&gt;&lt;head&gt;    <title>Essential Studio for JavaScript :  Angular</title>    &lt;!-- style sheet for default theme(flat azure) --&gt;    &lt;link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /&gt;    &lt;!--scripts--&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"&gt;&lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"&gt;&lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"&gt;&lt;/script&gt;&lt;/head&gt;&lt;body ng-controller="DropDownCtrl"&gt;    &lt;div class="content-container-fluid"&gt;        &lt;div class="row"&gt;            &lt;div class="cols-sample-area"&gt;                &lt;div class="frame" style="width: 50%; height: 27px"&gt;                    <span>Select a section</span>                    &lt;div&gt;                        &lt;div id="control" style="float: left; width: 45%"&gt;                            &lt;input id="dropdownlist" ej-dropdownlist e-datasource="dataList" e-value="value" /&gt;                            &lt;h6&gt;<span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 4px;">Note:Two Way Angular Support</span>&lt;/h6&gt;                        &lt;/div&gt;                    &lt;/div&gt;                    &lt;div id="binding" style="float: right; margin: auto; width: 45%"&gt;                        &lt;input type="text" id="dropValue" class="input ejinputtext" ng-model="value" /&gt;                    &lt;/div&gt;                &lt;/div&gt;            &lt;/div&gt;        &lt;/div&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-&lt;script type="text/javascript"&gt;// Initialize the control and bind the data in <b>JavaScript</b>       var list = [                   { id: "cr1", text: "Dodge Avenger" },                   { id: "cr2", text: "Chrysler 200" },                   { id: "cr3", text: "Ford Focus" },                   { id: "cr4", text: "Ford Taurus", },                   { id: "cr5", text: "Dazzler", },                   { id: "cr6", text: "Chevy Spark", },                   { id: "cr7", text: "Chevy Volt", },                   { id: "cr8", text: "Honda Fit", },                   { id: "cr9", text: "Honda Crosstour", },                   { id: "cr10", text: "Acura RL", },                   { id: "cr11", text: "Hyundai Elantra", },                   { id: "cr12", text: "Mazda3", }       ];       angular.module('DropCtrl', ['ejangular'])          .controller('DropDownCtrl', function ($scope) {              $scope.dataList = list;              $scope.value = "Ford Focus";          });    &lt;/script&gt;&lt;style type="text/css"&gt;        .control {            margin-top: 10px;        }        .input {            height: 27px;            text-indent: 10px;            width: 81%;        }    &lt;/style&gt;&lt;/body&gt;&lt;/html&gt;</td></tr>
-</table>
+{% endhighlight %}
 
+
+{% highlight css %}
+
+<style type="text/css">
+        .control {
+            margin-top: 10px;
+        }
+
+        .input {
+            height: 27px;
+            text-indent: 10px;
+            width: 81%;
+        }
+</style>
+
+{% endhighlight %}
 
 Output of the above steps
 
@@ -197,23 +314,86 @@ For more information about the knockout binding, refer the following online docu
 The following example depicts the way to bind data to the **DropdownList** widget through the knockout support that enables and populates data to a **DropdownList** widget based on the value set to the other dropdown widget.
 
 
-> {% include image.html url="/js/DropDownList/Concepts-and-Features/Data-binding_images/Data-binding_img5.png" Caption=""%}_**Note: You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.**_
+> {% include image.html url="/js/DropDownList/Concepts-and-Features/Data-binding_images/Data-binding_img5.png" Caption=""%}
+
+_**Note: You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.**_
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;    &lt;link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"&gt;&lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"&gt;&lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;    &lt;div class="control" style="float: left"&gt;        <div class="ctrllabel">Select a section</div>        &lt;input id="dropdownlist" data-bind="ejDropDownList: { dataSource: dataList, value: value }"&gt;    &lt;/div&gt;    &lt;div class="control" style="float: left; margin-left: 20px; height: 30px"&gt;        <div class="ctrllabel">Knockout textbox binding</div>        &lt;input type="text" id="Text4" class="input ejinputtext" data-bind="value: value" /&gt;    &lt;/div&gt;    &lt;script type="text/javascript"&gt;        // Initialize the control and bind the data in JavaScript        $(function () {            var carList = [                { id: "cr1", text: "Accordion" },                { id: "cr2", text: "Autocomplete" },                { id: "cr3", text: "Button" },                { id: "cr4", text: "Tab", },                { id: "cr5", text: "Menu", },                { id: "cr6", text: "Rating", },                { id: "cr7", text: "Slider", },                { id: "cr8", text: "Splitter", },                { id: "cr9", text: "Tagcloud", },                { id: "cr10", text: "Scroller", },                { id: "cr11", text: "TreeView", },                { id: "cr12", text: "WaitingPopup", }            ];            window.viewModel = {                dataList: ko.observable(carList),                value: ko.observable("Button"),            }            ko.applyBindings(viewModel);        });    &lt;/script&gt;    &lt;style type="text/css"&gt;        .ejinputtext {            background-color: #fff;            border: 1px solid #bbbcbb;            color: #5c5c5c;            height: 30px;            outline: medium none;        }    &lt;/style&gt;&lt;/body&gt;&lt;/html&gt;</td></tr>
-<tr>
-<td>
-</td></tr>
-</table>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+</head>
+<body>
+    <div class="control" style="float: left">
+        <div class="ctrllabel">Select a section</div>
+        <input id="dropdownlist" data-bind="ejDropDownList: { dataSource: dataList, value: value }">
+    </div>
+    <div class="control" style="float: left; margin-left: 20px; height: 30px">
+        <div class="ctrllabel">Knockout textbox binding</div>
+        <input type="text" id="Text4" class="input ejinputtext" data-bind="value: value" />
+    </div>
+</body>
+</html>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+        // Initialize the control and bind the data in JavaScript
+
+        $(function () {
+            var carList = [
+                { id: "cr1", text: "Accordion" },
+                { id: "cr2", text: "Autocomplete" },
+                { id: "cr3", text: "Button" },
+                { id: "cr4", text: "Tab", },
+                { id: "cr5", text: "Menu", },
+                { id: "cr6", text: "Rating", },
+                { id: "cr7", text: "Slider", },
+                { id: "cr8", text: "Splitter", },
+                { id: "cr9", text: "Tagcloud", },
+                { id: "cr10", text: "Scroller", },
+                { id: "cr11", text: "TreeView", },
+                { id: "cr12", text: "WaitingPopup", }
+            ];
+            window.viewModel = {
+                dataList: ko.observable(carList),
+                value: ko.observable("Button"),
+            }
+            ko.applyBindings(viewModel);
+        });
+    </script>
 
 
 
+{% endhighlight %}
+
+{% highlight css %}
+
+<style type="text/css">
+        .ejinputtext {
+            background-color: #fff;
+            border: 1px solid #bbbcbb;
+            color: #5c5c5c;
+            height: 30px;
+            outline: medium none;
+        }
+</style>
+
+
+{% endhighlight %}
 
 Output of the above steps
 

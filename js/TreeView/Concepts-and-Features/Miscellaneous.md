@@ -17,7 +17,7 @@ You can enable or disable the **TreeView** control by using the property **enabl
 
 <script>
     // Initialize the TreeView with the enabled value specified.
-    $("#treeView").ejTreeView({ **enabled**: true });
+    $("#treeView").ejTreeView({ enabled: true });
 </script>
 
 
@@ -31,7 +31,7 @@ You can specify the **expanded****node** level in **TreeView** by using the prop
 
 <script>
     // Initialize the TreeView with the expandedNodes value specified.
-    $("#treeView").ejTreeView({ **expandedNodes**: [0, 7] });
+    $("#treeView").ejTreeView({ expandedNodes: [0, 7] });
 </script>
 
 
@@ -45,7 +45,7 @@ You can specify the **expanded****node** level in **TreeView** by using the prop
 
 <script>
     //Initialize the TreeView with the expandOn value specified
-    $("#treeView").ejTreeView({ **expandOn**: 'dblclick' });
+    $("#treeView").ejTreeView({ expandOn: 'dblclick' });
 </script>
 
 

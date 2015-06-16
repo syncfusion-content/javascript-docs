@@ -37,16 +37,56 @@ This property retrieves data from remote data. This property is applicable only 
 
 ## Local data binding
 
-**Rotator** provides the data binding support for the **Rotator****item**. So you can bind the data from **JSON****Data**. For this behavior, you need to map the corresponding filed with their column names. The data can be bound as a list and it is assigned to **dataSource** property. You can refer the following code example to bind local data.
+**Rotator** provides the data binding support for the **Rotator** **item**. So you can bind the data from **JSON** **Data**. For this behavior, you need to map the corresponding filed with their column names. The data can be bound as a list and it is assigned to **dataSource** property. You can refer the following code example to bind local data.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="cols-sample-area"&gt;    &lt;ul id="slidercontent"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        var website = [      { text: "Beautiful Bird", url: "../images/rotator/bird.jpg" },      { text: "Colorful Night", url: "../images/rotator/night.jpg" },      { text: "Technology", url: "../images/rotator/tablet.jpg" },      { text: "Nature", url: "../images/rotator/nature.jpg" },      { text: "Snow Fall", url: "../images/rotator/snowfall.jpg" },      { text: "Credit Card", url: "../images/rotator/card.jpg" },      { text: "Amazing Sculptures", url: "../images/rotator/sculpture.jpg" }        ];        $("#slidercontent").ejRotator({            slideWidth: "600px",            frameSpace: "0px",            displayItemsCount: "1",            slideHeight: "350px",            navigateSteps: "1",            enableResize: true,            pagerPosition: ej.Rotator.PagerPosition.Outside,            dataSource: website,            orientation: ej.Orientation.Horizontal,            showPager: true,            enabled: true,            showCaption: true,            allowKeyboardNavigation: true,            enableRTL: true,            showPlayButton: true,            animationType: "slide",        });    });&lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+
+  
+  	<div class="cols-sample-area">
+	    <ul id="slidercontent"></ul>
+	</div>
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  
+  	<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        var website = [
+	      { text: "Beautiful Bird", url: "../images/rotator/bird.jpg" },
+	      { text: "Colorful Night", url: "../images/rotator/night.jpg" },
+	      { text: "Technology", url: "../images/rotator/tablet.jpg" },
+	      { text: "Nature", url: "../images/rotator/nature.jpg" },
+	      { text: "Snow Fall", url: "../images/rotator/snowfall.jpg" },
+	      { text: "Credit Card", url: "../images/rotator/card.jpg" },
+	      { text: "Amazing Sculptures", url: "../images/rotator/sculpture.jpg" }
+	        ];
+	        $("#slidercontent").ejRotator({
+	            slideWidth: "600px",
+	            frameSpace: "0px",
+	            displayItemsCount: "1",
+	            slideHeight: "350px",
+	            navigateSteps: "1",
+	            enableResize: true,
+	            pagerPosition: ej.Rotator.PagerPosition.Outside,
+	            dataSource: website,
+	            orientation: ej.Orientation.Horizontal,
+	            showPager: true,
+	            enabled: true,
+	            showCaption: true,
+	            allowKeyboardNavigation: true,
+	            enableRTL: true,
+	            showPlayButton: true,
+	            animationType: "slide"
+	        });
+	    });
+	</script>
+
+
+  {% endhighlight %}
 
 
 {% include image.html url="/js/Rotator/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="Rotator control with local data binding"%}
@@ -75,27 +115,53 @@ For more information about the **Knockout** binding, you can refer the online do
 
 * knockout-min.js
 
-* ej.widget.ko-latest.min.js
+* ej.widget.ko.min.js
 
 The link for those script files are as follows:
 
-[http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js](http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js)
+[http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
 
-" 
-
-" http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js
+http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js
 
 The following code example depicts the way to bind data to the **Rotator** through the **Knockout** support.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;body data-autoinit="false"&gt;    &lt;div class="cols-sample-area"&gt;        &lt;ul id="slidercontent" data-bind="ejRotator :{dataSource:dataList,slideWidth:width,slideHeight:height}" /&gt;    &lt;/div&gt;&lt;/body&gt;</td></tr>
-<tr>
-<td>
-<b>[JS]    </b>&lt;script&gt;    $(function () {        var imageList = [          { text: "bird", url: "../images/rotator/bird.jpg" },          { text: "night", url: "../images/rotator/night.jpg" },          { text: "tablet", url: "../images/rotator/tablet.jpg" },          { text: "nature", url: "../images/rotator/nature.jpg" },          { text: "snowfall", url: "../images/rotator/snowfall.jpg" },          { text: "card", url: "../images/rotator/card.jpg" },          { text: "sculpture", url: "../images/rotator/sculpture.jpg" }        ];        window.viewModel = {            dataList: ko.observableArray(imageList),            height: ko.observable("350px"),            width: ko.observable("600px"),        };        ko.applyBindings(viewModel);    });&lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
 
+  
+  	<body data-autoinit="false">
+	    <div class="cols-sample-area">
+	        <ul id="slidercontent" data-bind="ejRotator :{dataSource:dataList,slideWidth:width,slideHeight:height}" />
+	    </div>
+	</body>
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  
+  	<script>
+	    $(function () {
+	        var imageList = [
+	          { text: "bird", url: "../images/rotator/bird.jpg" },
+	          { text: "night", url: "../images/rotator/night.jpg" },
+	          { text: "tablet", url: "../images/rotator/tablet.jpg" },
+	          { text: "nature", url: "../images/rotator/nature.jpg" },
+	          { text: "snowfall", url: "../images/rotator/snowfall.jpg" },
+	          { text: "card", url: "../images/rotator/card.jpg" },
+	          { text: "sculpture", url: "../images/rotator/sculpture.jpg" }
+	        ];
+	
+	        window.viewModel = {
+	            dataList: ko.observableArray(imageList),
+	            height: ko.observable("350px"),
+	            width: ko.observable("600px"),
+	        };
+	        ko.applyBindings(viewModel);
+	    });
+	</script>
+
+  {% endhighlight %}
 
 {% include image.html url="/js/Rotator/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="Rotator control with Knockout support"%}
 
@@ -111,23 +177,22 @@ Rotator is availed with two types of angular JS support namely,
 
 **Two-way binding** supports both the processes – it applies the scope values to the **Rotator** properties as well as the changes made in the **Rotator** widget are also reflected back and triggered within the angular scope change function.
 
-To know more details about the **Angular****binding**, you can refer the following link location,
+To know more details about the **Angular** **binding**, you can refer the following link location,
 
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
-> _**Note: Add the following script files as given in the following example to access Knockout binding. They have JS library for angular binding.**_
+> _**Note: Add the following script files as given in the following example to access Angular binding. They have JS library for angular binding.**_
 
 
 
 * angular-min.js
 
-* ej.widget.angular-latest.min.js
+* ej.widget.angular.min.js
 
 The following code example depicts the way to bind data to the **Rotator** widget through **angular** support.
 
 {% highlight html %}
 
-**[HTML]**
 <!DOCTYPE html>
 <html lang="en" ng-app="rotatApp">
 <head>
@@ -140,7 +205,7 @@ The following code example depicts the way to bind data to the **Rotator** widge
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <scriptsrc="[http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)"></script>
+    <script src="[http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)"></script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
@@ -160,7 +225,6 @@ The following code example depicts the way to bind data to the **Rotator** widge
 
 {% highlight js %}
 
-**[JS]**
 <script>
     var list = [
       { text: "snowfall", url: "../images/rotator/snowfall.jpg" },

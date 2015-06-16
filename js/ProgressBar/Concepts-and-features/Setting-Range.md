@@ -13,17 +13,36 @@ The **range** of the **ProgressBar** is set by using minimum and maximum values.
 
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Add Range for the ProgressBar widget as follows.&lt;script type="text/javascript"&gt;                      $(function () {//Declaration.                $("#progressbar").ejProgressBar({                    <b>minValue: 40,</b><b>                    maxValue: 80,</b>                    value: 80,                    height: 20,                    width: 500                });                var progress = $("#progressbar").data("ejProgressBar");                progress.setModel({ text: progress.getPercentage() + " % Completed" });            });&lt;/script&gt;</td></tr>
-</table>
+            <div class="control">
+            <div id="progressbar"></div>
+            </div>
 
+{% endhighlight %}
+
+{% highlight js%}
+
+
+// Add Range for the ProgressBar widget as follows.
+<script type="text/javascript">
+            
+          $(function () {
+//Declaration.
+                $("#progressbar").ejProgressBar({
+                    minValue: 40,
+                    maxValue: 80,
+                    value: 80,
+                    height: 20,
+                    width: 500
+                });
+                var progress = $("#progressbar").data("ejProgressBar");
+                progress.setModel({ text: progress.getPercentage() + " % Completed" });
+            });
+</script>
+
+{% endhighlight %}
 
 * The following screenshot displays the output.
 

@@ -48,15 +48,27 @@ In the following example **DateTimePicker** popup start level view is set to “
 
 Add the following code in your **HTML** page.
 
-<table>
-<tr>
-<td>
-<b>[HTML]    </b>&lt;div class="control"&gt;        &lt;input type="text" id="dateTime" /&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code in your script section with start level as century in <b>DateTimePicker</b> popup        $('#dateTime').ejDateTimePicker({            <b>startLevel: "century",</b>        });</td></tr>
-</table>
+{% highlight html %}
 
+  
+  	<div class="control">
+	        <input type="text" id="dateTime" />
+	    </div>
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+  
+<script>
+  
+  // Add the code in your script section with start level as century in DateTimePicker popup
+	        $('#dateTime').ejDateTimePicker({
+	            startLevel: "century",
+	        });
+</script>
+
+  {% endhighlight %}
 
 {% include image.html url="/js/DateTimePicker/Concepts-and-Features/Start-and-Depth-level_images/Start-and-Depth-level_img1.png" Caption=""%}
 
@@ -74,13 +86,14 @@ The following code snippet is set to depth level in **DateTimePicker.**
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
+
                $('#dateTime').ejDateTimePicker({  
                    startLevel:"century",
                    depthLevel:"year",
                    width: '200px', 
                });       
-
+</script>
 
 {% endhighlight %}
 

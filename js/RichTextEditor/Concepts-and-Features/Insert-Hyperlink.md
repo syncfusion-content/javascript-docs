@@ -17,16 +17,25 @@ Also, this tool item enables you to add or edit the hyperlink, text, tooltip for
 
 Add the following code in your **HTML** page to initialize the **RTE**.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div class="rte"&gt;<b>        &lt;textarea id="rteSample"&gt;&lt;/textarea&gt;</b>    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>\\</b> Add the following code in your script section to render <b>RTE</b> with default set of tools.    $("#rteSample").ejRTE();</td></tr>
-</table>
+    <div class="rte">
+        <textarea id="rteSample"></textarea>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// Add the following code in your script section to render RTE with default set of tools.
+<script>
+	$(function(){
+          $("#rteSample").ejRTE();
+	});
+</script>
+{% endhighlight %}
 
 
 {% include image.html url="/js/RichTextEditor/Concepts-and-Features/Insert-Hyperlink_images/Insert-Hyperlink_img1.png" Caption="Show case for inserting hyperlink in RTE content area"%}

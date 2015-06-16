@@ -11,7 +11,7 @@ documentation: ug
 
 ## Knockout Binding
 
-**Knockout** support allows you to bind the **HTML** elements with any of the available data models. For **Knockout****Binding**, you can include the files **knockout-min.js** and **ej.widget.ko.min**.
+**Knockout** support allows you to bind the **HTML** elements with any of the available data models. For **Knockout** **Binding**, you can include the files **knockout-min.js** and **ej.widget.ko.min**.
 
 **Knockout Binding** is of two types:
 
@@ -31,7 +31,6 @@ The following example depicts the way to bind data to the **Rating** control thr
 
 {% highlight html %}
 
-**[HTML]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -110,7 +109,6 @@ The following example depicts the way to bind data to the **Rating** control by 
 
 {% highlight html %}
 
-**[HTML]**
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="syncApp">
 <head>

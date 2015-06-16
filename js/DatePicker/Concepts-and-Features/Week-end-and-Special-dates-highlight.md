@@ -21,14 +21,35 @@ The following steps explain you how to get the highlighted week end and special 
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code to get the highlighted week end and special dates&lt;script type="text/javascript"&gt;        $(function () {           //inserting a image for special dates to highlight a some special dates            var today = new Date(),                           spldays = [                                  { date: new Date(today.getFullYear(), today.getMonth(), 1), icon: "flag-am" },                                                             ]            // declaration             $("#datepicker").ejDatePicker({               <b> specialDates: spldays,</b><b>                highlightWeekend: true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+
+  {% highlight html %}
+
+      <input id="datepicker" type="text" />
+      
+  {% endhighlight %}
+  
+  {% highlight js %}
+
+<script type="text/javascript">
+    // Add the code to get the highlighted week end and special dates
+        $(function () {
+           //inserting a image for special dates to highlight a some special dates
+            var today = new Date(),
+                           spldays = [
+                                  { date: new Date(today.getFullYear(), today.getMonth(), 1), icon: "flag-am" },
+                                  
+                           ]
+            // declaration 
+            $("#datepicker").ejDatePicker({
+                specialDates: spldays,
+                highlightWeekend: true
+            });
+        });
+    </script>
+
+
+  {% endhighlight %}
+
 
 
 * Add the following styles to get the special dates highlighted.
@@ -37,7 +58,6 @@ The following steps explain you how to get the highlighted week end and special 
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
     .flag .e-image {
         background: url(/images/flags.png) no-repeat left center;

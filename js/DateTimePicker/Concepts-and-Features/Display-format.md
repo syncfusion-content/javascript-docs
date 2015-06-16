@@ -79,14 +79,31 @@ In the following example, set **dateTimeFormat** to **fulldatetime** format.
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]  </b>&lt;div class="control"&gt;        &lt;input type="text" id="dateTime" /&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]    </b><b>// </b>Add the code in your script section to render the <b>DateTimePicker </b>$('#dateTime').ejDateTimePicker({<b>            dateTimeFormat: "dddd, MMMM dd, yyyy hh:mm:ss tt",</b>            timePopupWidth: "150px",<b>            timeDisplayFormat: "hh:mm:ss tt",</b>            width: '300px',});</td></tr>
-</table>
+{% highlight html %}
+  
+    <div class="control">
+	        <input type="text" id="dateTime" />
+	    </div>
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+<script>
+  
+  // Add the code in your script section to render the DateTimePicker 
+  
+	$('#dateTime').ejDateTimePicker({
+	            dateTimeFormat: "dddd, MMMM dd, yyyy hh:mm:ss tt",
+	            timePopupWidth: "150px",
+	            timeDisplayFormat: "hh:mm:ss tt",
+	            width: '300px'
+	});
+
+</script>
+
+  {% endhighlight %}
 
 
 {% include image.html url="/js/DateTimePicker/Concepts-and-Features/Display-format_images/Display-format_img1.png" Caption=""%}
@@ -129,15 +146,28 @@ Add the following code in your **HTML** page.
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]    </b>&lt;div class="control"&gt;        &lt;input type="text" id="dateTime" /&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]   </b><b>// </b>Add the code in your script section to render the <b>DateTimePicker</b> with short header<b>        </b> $('#dateTime').ejDateTimePicker({                <b>dayHeaderFormat: "showHeaderShort</b>",                width: '200px',            });</td></tr>
-</table>
+{% highlight html %}
+  
+  	<div class="control">
+	        <input type="text" id="dateTime" />
+	 </div>
 
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+<script>
+  
+  // Add the code in your script section to render the DateTimePicker with short header        
+	 $('#dateTime').ejDateTimePicker({
+	                dayHeaderFormat: "showHeaderShort",
+	                width: '200px',
+	            });
+</script>
+
+  {% endhighlight %}
+  
 
 {% include image.html url="/js/DateTimePicker/Concepts-and-Features/Display-format_images/Display-format_img2.png" Caption=""%}
 

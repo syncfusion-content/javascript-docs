@@ -51,15 +51,37 @@ The following steps explains you on how to enable keyboard support in **Slider**
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>        <div class="txt">Range Slider</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Focus the Slider control in the document key down function.    &lt;script&gt;        $("#rangeSlider").ejSlider({            sliderType: ej.SliderType.Range,            values: [25,75],            width: "500",            enableRTL:true        });        $(document).on("keydown", function (e) {                if (e.altKey && e.keyCode === 74) { // j- key code.                    $("#rangeSlider a")[0].focus();                }            });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+       <div class="txt">Range Slider</div>
+        <div id="rangeSlider"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+// Focus the Slider control in the document key down function.
+
+   <script>
+        $("#rangeSlider").ejSlider({
+            sliderType: ej.SliderType.Range,
+            values: [25,75],
+            width: "500",
+            enableRTL:true
+        });
+
+        $(document).on("keydown", function (e) {
+                if (e.altKey && e.keyCode === 74) { // j- key code.
+                    $("#rangeSlider a")[0].focus();
+                }
+            });
+    </script>
+
+
+{% endhighlight %}
 
 Run the sample and press, **Alt + j** keys to set focus in the **Slider** handle and you can handle the Slider operations using the keyboard shortcut keys.
 

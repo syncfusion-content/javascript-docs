@@ -15,17 +15,36 @@ The following steps explain the **State Maintenance** in the **ProgressBar** con
 
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
 
+{% highlight html %}
+
+            <div class="control">
+            <div id="progressbar"></div>
+            </div>
+
+{% endhighlight %}
+
+<{% highlight js %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;        </td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Add the following script to enable State Maintenance.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressBar").ejProgressBar({            <b>enablePersistence: true,</b>            value: 40,            width: 500,            height: 40        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + " %" });    });&lt;/script&gt;</td></tr>
-</table>
+// Add the following script to enable State Maintenance.
+<script type="text/javascript">
+    $(function () {
 
+//Declaration.
+        $("#progressBar").ejProgressBar({
+            enablePersistence: true,
+            value: 40,
+            width: 500,
+            height: 40
+        });
+        var progress = $("#progressbar").data("ejProgressBar");
+        progress.setModel({ text: progress.getValue() + " %" });
+
+    });
+
+</script>
+
+{% endhighlight %}
 
 * The following screenshot displays the output.
 

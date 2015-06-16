@@ -13,10 +13,7 @@ The PivotGrid control supports **Hyperlink** option to link data for any indivi
 
 The following code example demonstrates how to create the **PivotGrid** control using **Hyperlink** support.
 
-
 {% highlight javascript %}
-
-[JS]
 
 <body>
 <div id="PivotGrid1" style="height: 380px; width: 72%; display:block; float:left; overflow: auto" />

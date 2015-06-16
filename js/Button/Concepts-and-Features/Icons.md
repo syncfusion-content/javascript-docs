@@ -13,7 +13,11 @@ The **Essential Studio for JavaScript** provide icons library that contains the 
 
 **Syntax**: .e-icon .e-[icon description]
 
+{% highlight html %}
+
 .e-icon .e-search
+
+{% endhighlight %}
 
 ## Adding icon in Button
 
@@ -27,18 +31,14 @@ Also in the button sample, you can use the icon class names as follows,
 
 {% highlight js %}
 
-[JS]
-
-$("#buttonid").ejButton({
-                contentType: "imageonly",
-**prefixIcon: "e-handup"**
-            });
-
-
+<script>
+     $("#buttonid").ejButton({
+           contentType: "imageonly",
+           prefixIcon: "e-handup"
+     });
+</script>
 
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 

@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Rotator** in your applicat
 
 ## Create your first Rotator in JavaScript
 
-**Essential****JavaScript****Image Rotator** comes with a visual that has a spectacular zoom in and fade out effect. A single line of code invokes the **JavaScript****Rotator** effect. Using the following guidelines you can create **Rotator** widget for a real-time website banner. It has five images that slide automatically. When you click the center button, image slides in a rotating manner and on second click the rotation stops.
+**Essential** **JavaScript** **Image Rotator** comes with a visual that has a spectacular zoom in and fade out effect. A single line of code invokes the **JavaScript** **Rotator** effect. Using the following guidelines you can create **Rotator** widget for a real-time website banner. It has five images that slide automatically. When you click the center button, image slides in a rotating manner and on second click the rotation stops.
 
 The following screenshot demonstrates the functionality of **Rotator** widget.
 

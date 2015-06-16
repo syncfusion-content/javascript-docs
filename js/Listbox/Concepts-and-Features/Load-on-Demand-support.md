@@ -15,17 +15,46 @@ The following steps explains you the behaviour of Load-onDemand support in **Lis
 
 * In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widget.
 
-_****_
 
-<table>
-<tr>
-<td>
-<b>[HTML]   </b>&lt;div class="control"&gt;    &lt;h5 class="ctrllabel"&gt; Select Customer ID</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript] </b><b>// </b>Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    jQuery(function ($) {        var dataManger = ej.DataManager({            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"        });        // Query creation        var query = ej.Query()                .from("Customers");        $('#listboxSample').ejListBox({            dataSource: dataManger,            fields: { text: "CustomerID" },            query: query, enableLoadOnDemand: true, itemsCount: 91, itemRequest: "itemRequested"        });});//Load set of items in itemRequested client-side method    function itemRequested(args) {        var target = $("#selectCar").data("ejListBox");        target.model.query = ej.Query().from("Customers").range(args.start, args.start + 20);        this.model.itemsCount = 20; //to load 20 items    }&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+<div class="control">
+    <h5 class="ctrllabel"> Select Customer ID</h5>
+    <ul id="listboxSample"></ul>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// Initialize the control in JavaScript
+<script type="text/javascript">
+    jQuery(function ($) {
+        var dataManger = ej.DataManager({
+            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+        });
+        // Query creation
+        var query = ej.Query()
+                .from("Customers");
+
+        $('#listboxSample').ejListBox({
+            dataSource: dataManger,
+            fields: { text: "CustomerID" },
+            query: query, enableLoadOnDemand: true, itemsCount: 91, itemRequest: "itemRequested"
+        });
+});
+//Load set of items in itemRequested client-side method
+    function itemRequested(args) {
+        var target = $("#selectCar").data("ejListBox");
+        target.model.query = ej.Query().from("Customers").range(args.start, args.start + 20);
+        this.model.itemsCount = 20; //to load 20 items
+
+    }
+</script>
+
+{% endhighlight %}
 
 Output of the above steps.
 

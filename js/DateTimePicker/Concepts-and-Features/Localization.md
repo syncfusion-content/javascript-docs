@@ -16,7 +16,7 @@ You can globalize your **DateTimePicker** control. People of different culture c
 [http://cdnjs.com/libraries/globalize/](http://cdnjs.com/libraries/globalize/)
 
 You can get the script file of various cultures from the following path also:
-**"&lt;Installed Location&gt;\****Syncfusion****\Essential Studio\&lt;version&gt;\JavaScript\assets\external\cultures**"
+**"&lt;Installed Location&gt;\** **Syncfusion** **\Essential Studio\&lt;version&gt;\JavaScript\assets\external\cultures**"
 
 If you want to use any cultures, add the script files of those corresponding culture in the sample. In order to add UK Culture in the **DateTimePicker** you can refer a script file named "**globalize.culture.es-ES.js**". 
 
@@ -34,6 +34,7 @@ The following code example is used to know Spanish calendar locale information.
 
 {% highlight js %}
 
+<script>
 calendars: {
               standard: {
                   firstDay: 1,
@@ -63,6 +64,7 @@ calendars: {
       }
 
 
+</script>
 
 {% endhighlight %}
 
@@ -73,16 +75,30 @@ The following code example can be used to get Spanish culture in **DateTimePicke
 Add the following code in your **HTML** page.
 
 
+  {% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]    </b> &lt;div class="control"&gt;        &lt;input type="text" id="dateTime" /&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Add the code in your script section to render the <b>DateTimePicker</b> with Spanish culture          $("#dateTime").ejDateTimePicker({<b>              locale: "es-ES",</b>          });</td></tr>
-</table>
+  
+     <div class="control">
+	        <input type="text" id="dateTime" />
+	    </div>
 
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+<script>
+  
+  // Add the code in your script section to render the DateTimePicker with Spanish culture
+  
+	          $("#dateTime").ejDateTimePicker({
+	              locale: "es-ES"
+	          });
+
+</script>
+
+  {% endhighlight %}
 
 {% include image.html url="/js/DateTimePicker/Concepts-and-Features/Localization_images/Localization_img1.png" Caption="Showcase for DateTimePicker with Spanish culture"%}
 

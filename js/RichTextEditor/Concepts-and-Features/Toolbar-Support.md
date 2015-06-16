@@ -63,7 +63,7 @@ Most used clipboard actions are cut, copy, and paste. These tools are used to re
 
 {% highlight html %}
 
-**[HTML]**
+
     <div>
         <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
         </textarea>
@@ -78,11 +78,12 @@ Most used clipboard actions are cut, copy, and paste. These tools are used to re
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
+    $(function(){
             $("#rteSample").ejRTE({
                 width: "850px",
                 showFooter: true,
-**tools**: {
+                **tools**: {
                     font: ["fontName", "fontSize", "fontColor", "backgrounColor"],
                     style: ["bold", "italic", "underline", "strikethrough"],
                     alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
@@ -98,8 +99,8 @@ Most used clipboard actions are cut, copy, and paste. These tools are used to re
                     paragraph: ["paragraph"]
                 }
             });
-
-
+    });
+</script>
 {% endhighlight %}
 
 

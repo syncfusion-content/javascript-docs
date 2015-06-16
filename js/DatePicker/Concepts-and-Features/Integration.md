@@ -25,11 +25,13 @@ To know more detail about the **Angular binding**, you can refer the following l
 
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
-> {% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img1.jpeg" Caption=""%}_**Note: Add the following script files as given in the following example to access knockout binding. They have JS library for angular binding.**_
+> {% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img1.jpeg" Caption=""%}
+
+_**Note: Add the following script files as given in the following example to access angular binding. They have JS library for angular binding.**_
 
 * angular-min.js
 
-* ej.widget.angular-latest.min.js
+* ej.widget.angular.min.js
 
 The following example depicts the way to bind data to the **DatePicker** widget through **angular support**.
 
@@ -100,21 +102,23 @@ Two types of **Knockout** binding are supported,
 
 **Two-way binding** supports both the processes – it applies the observable values to the **DatePicker** widget properties as well as the changes made in the **DatePicker** widget are also reflected back and triggered within the observable collections. 
 
-For more information about the **Knockout****binding**, you can refer the following online documentation in the following link location,
+For more information about the **Knockout** **binding**, you can refer the following online documentation in the following link location,
 
 [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
-> {% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img3.jpeg" Caption=""%}_**Note: Add the following script files along with the given code to access knockout binding. They have JS library for knockout binding.**_
+> {% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img3.jpeg" Caption=""%}
+
+_**Note: Add the following script files along with the given code to access knockout binding. They have JS library for knockout binding.**_
 
 * knockout-min.js
 
-* ej.widget.ko-latest.min.js
+* ej.widget.ko.min.js
 
 The link for those script files are as follows:
 
-[http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js](http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js)
+[http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
 
-[http://cdn.syncfusion.com/js/web/ej.widget.ko-latest.min.js](http://cdn.syncfusion.com/js/web/ej.widget.ko-latest.min.js)
+[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)
 
 The following example depicts the way to bind data to the **DatePicker** widget through the **Knockout** support that enables and populate data to a **DatePicker** widget based on the value set to the other **DatePicker** widget.
 
@@ -156,8 +160,6 @@ The following example depicts the way to bind data to the **DatePicker** widget 
     </script>
 </body>
 </html>
-
-
 
 {% endhighlight %}
 

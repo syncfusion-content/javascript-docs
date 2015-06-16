@@ -19,7 +19,6 @@ The following code illustrates how to connect to an offline cube:
 
 {% highlight c# %}
 
-[C#]
 String connectionString = @"DataSource= C:\Users\<UserName>\appdata\local\syncfusion\essentialstudio\x.x.x.x\Common\Data\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
@@ -34,7 +33,6 @@ The following code illustrates how to connect to a Cube available in local SQL S
 
 {% highlight c# %}
 
-[C#]
 String connectionString = @"DataSource= C:\Users\<UserName>\appdata\local\syncfusion\essentialstudio\x.x.x.x\Common\Data\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
@@ -55,7 +53,6 @@ The following code illustrates how to connect to the **SSAS** server available o
 
 {% highlight c# %}
 
-[C#]
 static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
@@ -70,7 +67,6 @@ The following code illustrates how to connect to the **Mondrian** Server:
 
 {% highlight c# %}
 
-[C#]
 // Connecting to Mondrian Server
 string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -87,7 +83,6 @@ The following code illustrates how to connect to **Active Pivot** Server:
 
 {% highlight c# %}
 
-[C#]
 // Connecting to Active Pivot Server
 String connectionString= @"Data Source=http://localhost:8081/var_s/xmla; Initial Catalog=VaRCubes; User ID=; Password=; Transport Compression=None;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);

@@ -13,7 +13,6 @@ Responsive layout is aimed at crafting sites to provide an optimal viewing exper
 
 {% highlight javascript %}
 
-[JS]
 <script type="text/javascript">
 $(function () {
        $("#PivotGrid1").ejPivotGrid({

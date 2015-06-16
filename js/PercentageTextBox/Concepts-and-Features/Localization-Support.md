@@ -35,7 +35,7 @@ The following example describes the way to use localization for **PercentageText
 
 {% highlight html %}
 
-**[HTML]**
+
 <table cellpadding="10">
             <tbody>
                 <tr>
@@ -48,19 +48,20 @@ The following example describes the way to use localization for **PercentageText
                 </tr>
             </tbody>
         </table>
-        <script type="text/javascript">
-        /* Percent Textbox */
-        $("#percent").ejPercentageTextbox({
-            value: 21234,
-            decimalPlaces: 3,
-**locale: "de-DE"**
-        });    
-</script>
-
 
 {% endhighlight %}
 
+{% highlight js %}
 
+<script type="text/javascript">
+                $("#percent").ejPercentageTextbox({
+            value: 21234,
+            decimalPlaces: 3,
+            locale: "de-DE"
+        });    
+</script>
+
+{% endhighlight %}
 
 The output for **PercentageTextBox** with localization.
 

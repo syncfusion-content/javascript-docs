@@ -39,15 +39,27 @@ The following steps explains you on how to configure the **orientation** propert
 
 
 
-<table>
-<tr>
-<td>
-[<b>HTML</b>]&lt;div id="ejSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-[<b>JavaScript</b>]// When initializing the Slider widget, configure the orientation property as follows.    &lt;script&gt;        $("#ejSlider").ejSlider({            height: "150",            width: "20",<b>            orientation:ej.Orientation.Vertical</b>        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+    <div id="ejSlider"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+// When initializing the Slider widget, configure the orientation property as follows.
+    <script>
+        $("#ejSlider").ejSlider({
+            height: "150",
+            width: "20",
+            orientation:ej.Orientation.Vertical
+        });
+    </script>
+
+{% endhighlight %}
 
 Execute the above code example to render the following output.
 

@@ -13,7 +13,6 @@ documentation: ug
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
   url: "../wcf/OlapChartService.svc",
   primaryXAxis: { majorTickLines: { visible: false } },
@@ -30,7 +29,6 @@ Primary axis title font appearance is further customized with the help of the fo
 
 {% highlight js %}
 
-[JS]
 $(function () {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
@@ -54,7 +52,6 @@ $(function () {
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },  
 legend: { visible: true, rowCount: 3 },
@@ -82,7 +79,6 @@ legend: { visible: true, rowCount: 3 },
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },
         primaryXAxis: {opposedPosition: true },primaryYAxis: {opposedPosition: true}
@@ -111,7 +107,6 @@ Background, border color and outer width of the Chart Area is customized with th
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" }, chartArea: { border: { color: "gray", width: 4 }, background: "aqua" }
 });

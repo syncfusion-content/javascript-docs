@@ -47,21 +47,20 @@ The following steps explains you on how to apply “**flat-lime-dark**” theme 
 
 {% highlight html %}
 
-[**_HTML**]
 
 //In **_Layout** page, specify the desired “**ej.widgets.all.min.css”** file to load the corresponding theme.
 <head>
     <title>Slider</title>
 
     <!--Flat-Lime theme-->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css)"rel="stylesheet"/>
 <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
 </head>
 
 
@@ -73,7 +72,6 @@ The following steps explains you on how to apply “**flat-lime-dark**” theme 
 
 {% highlight js %}
 
-**[JavaScript]**
 
     <script>
         $("#defaultSlider").ejSlider({
@@ -115,22 +113,36 @@ The following steps explains you on how to configure the **Slider** with custom 
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>        <div class="txt">Range Slider</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// In JavaScript, specify a class as the value for “cssClass” property.    &lt;script&gt;        $("#rangeSlider").ejSlider({            sliderType: ej.SliderType.Range,            values: [25,75],            width: "500",<b>            cssClass: "purple"</b>        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+            <div class="txt">Range Slider</div>
+        <div id="rangeSlider"></div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// In JavaScript, specify a class as the value for “cssClass” property.
+
+   <script>
+        $("#rangeSlider").ejSlider({
+            sliderType: ej.SliderType.Range,
+            values: [25,75],
+            width: "500",
+            cssClass: "purple"
+        });
+    </script>
+
+{% endhighlight %}
 
 * Include the **cssClass** value before each style of the **Slider** widget and customize the styles as follows.
 
 
 {% highlight css %}
 
-**[CSS]**
 
 .purple.e-slider.e-widget {
   background-color: burlywood;
@@ -179,16 +191,29 @@ The following steps explains you on how to disable the tooltip in **Slider**.
 
 * In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Default Slider**.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-[<b>JavaScript</b>]// In JavaScript, during initialization disable the showTooltip property.    &lt;script&gt;        $("#defaultSlider").ejSlider({            value: 60,            width: "500",<b>            showTooltip:false</b>        });    &lt;/script&gt;</td></tr>
-</table>
+                   <div class="txt">Default Slider</div>
+        <div id="defaultSlider"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// In JavaScript, during initialization disable the showTooltip property.
+
+   <script>
+        $("#defaultSlider").ejSlider({
+            value: 60,
+            width: "500",
+            showTooltip:false
+        });
+    </script>
+
+{% endhighlight %}
+
 ## Show Rounded Corner
 
 This property is used to display the **Slider** and its handle with rounded corners. By default **showRoundedCorner** is in disabled state. Data type of this property is “Boolean”.
@@ -198,16 +223,28 @@ The following steps explains you on how to disable the tooltip in **Slider**.
 * In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Default Slider”.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// In JavaScript, during initialization enable the showRoundedCorner property.    &lt;script&gt;        $("#defaultSlider").ejSlider({            value: 60,            width: "500",<b>            showRoundedCorner:true</b>        });    &lt;/script&gt;</td></tr>
-</table>
 
+        <div class="txt">Default Slider</div>
+        <div id="defaultSlider"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// In JavaScript, during initialization enable the showRoundedCorner property.
+
+   <script>
+        $("#defaultSlider").ejSlider({
+            value: 60,
+            width: "500",
+            showRoundedCorner:true
+        });
+    </script>
+
+{% endhighlight %}
 
 Execute the above code example to render the following output.
 

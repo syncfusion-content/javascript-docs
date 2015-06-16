@@ -17,22 +17,38 @@ The following steps explain the configuration of **saveUrl** property in the **U
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="Uploadbox"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b><b>// Initialize the control in JavaScript.</b>&lt;script type="text/javascript"&gt;        $(function () {//Declaration.            $("#Uploadbox").ejUploadbox({                <b>saveUrl</b>: "saveFiles.ashx"            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+
+      <div id="Uploadbox"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+  
+// Initialize the control in JavaScript.
+
+<script type="text/javascript">
+        $(function () {
+//Declaration.
+            $("#Uploadbox").ejUploadbox({
+                saveUrl: "saveFiles.ashx"
+            });
+        });
+    </script>
+
+
+{% endhighlight %}
 
 * Configure the handler to save the file. Create a folder (for example, uploadfiles) and save the uploaded files into this folder.  
 
 {% highlight c# %}
 
 #saveFiles.ashx
-**[ashx]**  
+ 
 
 public class saveFiles : IHttpHandler {
 
@@ -84,26 +100,39 @@ The following steps explain the configuration of **removeUrl** property in **Upl
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
+{% highlight html %}
+
+      <div id="Uploadbox"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+ 
+
+// Initialize the control in JavaScript.
+
+<script type="text/javascript">
+        $(function () {
+//Declaration.
+            $("#Uploadbox").ejUploadbox({
+                saveUrl: "saveFiles.ashx",
+                removeUrl: "removeFiles.ashx"
+            });
+        });
+    </script>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="Uploadbox"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b><b>// Initialize the control in JavaScript.</b>&lt;script type="text/javascript"&gt;        $(function () {//Declaration.            $("#Uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                <b>removeUrl</b>: "removeFiles.ashx"            });        });    &lt;/script&gt;</td></tr>
-</table>
-
+{% endhighlight %}
 
 * Configure the handlers to remove the file from the target location. From that location, the file is searched and removed from the ‘**uploadfiles’** folder.
 
 {% highlight c# %}
 
 #removeFiles.ashx
-**[ashx]**  
-public class removeFiles : IHttpHandler
-{
+
+    public class removeFiles : IHttpHandler
+     {
 
     public void ProcessRequest(HttpContext context)
     {
@@ -148,17 +177,31 @@ The following steps explain the configuration of **autoUpload** property in **Up
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="Uploadbox"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b><b>// Initialize the control in JavaScript.</b>&lt;script type="text/javascript"&gt;        $(function () {//Declaration.            $("#Uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                removeUrl: "removeFiles.ashx",<b>                autoUpload: true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
 
+      <div id="Uploadbox"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+ 
+// Initialize the control in JavaScript.
+<script type="text/javascript">
+        $(function () {
+//Declaration.
+            $("#Uploadbox").ejUploadbox({
+                saveUrl: "saveFiles.ashx",
+                removeUrl: "removeFiles.ashx",
+                autoUpload: true
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 * For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as mentioned in the Save file action and Remove file action respectively. 
 

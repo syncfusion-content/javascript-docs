@@ -60,10 +60,10 @@ var data = [
     {"Name": "Director"},
     {"Name": "Manager", "ReportingPerson":"Director"},
     {"Name": "TeamLead", "ReportingPerson":"Director" },
-    {"Name": " Software Developer", "ReportingPerson":"TeamLead"},
-    {"Name": “Testing engineer", "ReportingPerson":"TeamLead"},
-    {"Name": " Software Developer", "ReportingPerson":"Manager"},
-    {"Name": " Testing engineer", "ReportingPerson":"Manager"}
+    {"Name": "Software Developer", "ReportingPerson":"TeamLead"},
+    {"Name": "Testing engineer", "ReportingPerson":"TeamLead"},
+    {"Name": "Software Developer", "ReportingPerson":"Manager"},
+    {"Name": "Testing engineer", "ReportingPerson":"Manager"}
 ];
 
 //To customize nodes before rendering
@@ -116,15 +116,13 @@ $("#diagram").ejDiagram({
     nodeTemplate: nodeTemplate,
     
     //Initialize automatic layout
-    layout: {
-    type: "hierarchicaltree”},
+    layout: { type: "hierarchicaltree" },
     defaultSettings: {
         //set the default properties of the nodes
-         node: {
-              width: 100, height: 40, fillColor: "darkcyan",
-              labels: [{ name: "label1", bold: true,   
-                    fontColor: "white" }],
-              borderColor: "none" },
+        node: {
+            width: 100, height: 40, fillColor: "darkcyan",
+            labels: [{ name: "label1", bold: true, fontColor: "white" }],
+            borderColor: "none" },
         
         //set the default properties of the connectors
          connector: { segments: [{ type: "orthogonal" }] }
@@ -156,7 +154,7 @@ The following code example illustrates how to specify the root object for the Di
 dataSourceSettings: {
     id: "Name",   parent: "ReportingPerson",
     
-    //Object with id “Manager”, is considered as root of tree layout.
+    //Object with id "Manager", is considered as root of tree layout.
     root: "Manager",   
     
     //specifies the dataSource

@@ -32,7 +32,7 @@ The **Essential JavaScript****Splitter** property is a **layout** control that a
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- style sheet for default theme(flat azure) -->
-<linkhref=" http://cdn.syncfusion.com/js/web/flat-azure/ej.web.all-latest.min.css"rel="stylesheet"/>
+<link href=" http://cdn.syncfusion.com/js/web/flat-azure/ej.web.all-latest.min.css"rel="stylesheet"/>
     <!--scripts-->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
@@ -183,7 +183,7 @@ $(function () {
                 properties: [{}, { paneSize: 300 }]
                 });
 // simple TreeView creation
-**$("#mailboxTree").ejTreeView();**
+$("#mailboxTree").ejTreeView();
 });
 
 </script>
@@ -418,7 +418,7 @@ $(function () {
                     fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: outlookicons, expanded: "expanded" },
 
                     // Setting TreeNode Editing option to true
-**allowEditing**: true
+               allowEditing : true
 
                 });
 
@@ -459,7 +459,7 @@ $(function () {
                     allowEditing: true,
 
                     // Setting TreeView Drag and Drop option to true
-**allowDragAndDrop**: true
+                   allowDragAndDrop: true
 
                 });      });
     </script>
@@ -492,7 +492,7 @@ $(function () {
                    // Setting TreeView with the select event for node selection
                    nodeSelect: "setAction",
                    // Setting TreeView inline edit validation event for node editing
-**inlineEditValidation**: "validateFolder",
+                   inlineEditValidation: "validateFolder"
                 });      });
         function validateFolder(args) {
             //write your code here for other folder creation process.

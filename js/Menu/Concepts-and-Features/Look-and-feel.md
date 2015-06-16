@@ -37,7 +37,7 @@ gradient-saffron
 
 gradient-saffron-dark
 
-**Cssclass**
+##Cssclass
 
 **Menu** control also customizes its appearance using user-defined **CSS** and custom skin options (colors and backgrounds). To apply custom themes you can use the “cssClass” property. “cssClass” property sets the root class for **Menu** control theme.
 
@@ -45,23 +45,83 @@ Using this **cssClass** you can override the existing styles under the theme sty
 
 * Add the following code in your **HTML** page.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div&gt;    &lt;div&gt;        &lt;ul id="menucontrol"&gt;            &lt;li id="home"&gt;                <a href="#">Home</a>                &lt;ul&gt;                    &lt;li&gt;<a>Foundation</a>&lt;/li&gt;                    &lt;li&gt;<a>Launch</a>&lt;/li&gt;                    &lt;li&gt;                        <a>About</a>                        &lt;ul&gt;                            &lt;li&gt;<a>Location</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="Services"&gt;                <a>Services</a>                &lt;ul&gt;                    &lt;li&gt;<a>Outsourcing</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="About"&gt;<a>About</a>&lt;/li&gt;            &lt;li id="Contact"&gt;                <a>Contact us</a>                &lt;ul&gt;                    &lt;li&gt;<a>E-mail</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="Careers"&gt;                <a>Careers</a>                &lt;ul&gt;                    &lt;li&gt;                        <a>Position</a>                        &lt;ul&gt;                            &lt;li&gt;<a>Developer</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                    &lt;li&gt;<a>Apply online</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;        &lt;/ul&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Add the following code in your &lt;script&gt; section.</b>&lt;script type="text/javascript"&gt;    jQuery(function ($) {        $("#menucontrol").ejMenu({            width: 500,            cssClass: "Purple-dark"        });    });&lt;/script&gt;</td></tr>
-</table>
+<div>
+    <div>
+        <ul id="menucontrol">
+            <li id="home">
+                <a href="#">Home</a>
+                <ul>
+                    <li><a>Foundation</a></li>
+                    <li><a>Launch</a></li>
+                    <li>
+                        <a>About</a>
+                        <ul>
+                            <li><a>Location</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
 
+            <li id="Services">
+                <a>Services</a>
+                <ul>
+                    <li><a>Outsourcing</a></li>
+                </ul>
+            </li>
+
+            <li id="About"><a>About</a></li>
+
+            <li id="Contact">
+                <a>Contact us</a>
+                <ul>
+                    <li><a>E-mail</a></li>
+                </ul>
+            </li>
+
+            <li id="Careers">
+                <a>Careers</a>
+                <ul>
+                    <li>
+                        <a>Position</a>
+                        <ul>
+                            <li><a>Developer</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Apply online</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// Add the following code in your script section.
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#menucontrol").ejMenu({
+            width: 500,
+            cssClass: "Purple-dark"
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 * Add the following code in your style section.
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css" class="cssStyles">
     .Purple-dark {

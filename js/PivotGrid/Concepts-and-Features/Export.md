@@ -19,7 +19,6 @@ The following code example illustrates how to save the document to Excel via ser
 
 {% highlight c# %}
 
-[C#]
 public void ExportOptions(Stream stream)
 {
 PivotGrid pivotGridHelper = new PivotGrid();
@@ -31,7 +30,6 @@ pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(),
 
 {% highlight javascript %}
 
-[JS]
 <button id="Button1">Export Grid</button>
 <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"> </div> 
 <script type="text/javascript">

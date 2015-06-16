@@ -69,7 +69,7 @@ var connectors = [{
   lineWidth: 2, 
   segments: segments, 
   sourcePoint: { x: 300, y: 40 }, 
-targetPoint: { x: 400, y: 150 }}];
+  targetPoint: { x: 400, y: 150 }}];
 
 //add connectors to diagram model
 $("#Diagram").ejDiagram({
@@ -108,7 +108,7 @@ $("#Diagram").ejDiagram({
 
 The straight segments can be added by specifying points as to where the line has to be drawn. The segment end point links the source point and target point of the connector. 
 
-The following code example illustrates how to add straight segment through code.
+The following code example illustrates how to add **Straight Segment** through code.
 
 {% highlight js %}
 
@@ -503,7 +503,7 @@ var connector = [{
 
 **Connector Constraints**
 
-You can enable or disable certain behaviors of Connectors using the **constraints** property.__
+You can enable or disable certain behaviors of Connectors using the **constraints** property.
 
 _Constraints_
 

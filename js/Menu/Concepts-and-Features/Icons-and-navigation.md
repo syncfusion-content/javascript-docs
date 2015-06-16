@@ -9,20 +9,59 @@ documentation: ug
 
 # Icons and navigation
 
+##Icons
+
 Icons are the images that is displayed in the **Menu** control. To specify the menu with icons you can use **sprite** property to display the icons. 
 
 * Add the following code in your **HTML** page.
 
+{% highlight html %}
+
+        
+<div class="content-container-fluid">
+    <div class="row">
+        <div class="cols-sample-area">
+            <ul id="menujson"></ul>
+        </div>
+    </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>        &lt;div class="content-container-fluid"&gt;    &lt;div class="row"&gt;        &lt;div class="cols-sample-area"&gt;            &lt;ul id="menujson"&gt;&lt;/ul&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[Javascript]</b><b>// Initialize the Menu control in JavaScript.</b>&lt;script type="text/javascript"&gt;    var data = [        { id: 1, text: "Inbox", parentId: null, sprite: "mail-ca" },        { id: 2, text: "Sent Items", parentId: null, sprite: "mail-cn" },        { id: 3, text: "All Mail", parentId: null, sprite: "mail-ee" },        { id: 4, text: "Outbox", parentId: null, sprite: "mail-es" },        //first level child        { id: 11, parentId: 1, text: "Mark as unread", sprite: "mail-dz" },        { id: 12, parentId: 1, text: "Forward", sprite: "mail-am" },        { id: 13, parentId: 1, text: "Mark as favourite", sprite: "mail-bd" },        { id: 14, parentId: 1, text: "Mark as important", sprite: "mail-cu" },        { id: 15, parentId: 2, text: "Move to trash", sprite: "mail-dk" },        { id: 16, parentId: 2, text: "Delete", sprite: "mail-eg" },        { id: 17, parentId: 3, text: "New Mail", sprite: "mail-fi" },        { id: 18, parentId: 3, text: "Read Mail", sprite: "mail-in" },        { id: 19, parentId: 3, text: "Unread Mail", sprite: "mail-my" },        { id: 20, parentId: 4, text: "Discard draft", sprite: "mail-nz" },        { id: 21, parentId: 4, text: "Send again", sprite: "mail-no" },        { id: 22, parentId: 4, text: "Delete", sprite: "mail-pl" },    ];    jQuery(function ($) {        $("#menujson").ejMenu({            width: 425,            fields: { dataSource: data, id: "id", parentId: "parentId", text: "text", spriteCssClass: "sprite" }        });    });&lt;/script&gt;</td></tr>
-</table>
+// Initialize the Menu control in JavaScript.
+
+<script type="text/javascript">
+    var data = [
+        { id: 1, text: "Inbox", parentId: null, sprite: "mail-ca" },
+        { id: 2, text: "Sent Items", parentId: null, sprite: "mail-cn" },
+        { id: 3, text: "All Mail", parentId: null, sprite: "mail-ee" },
+        { id: 4, text: "Outbox", parentId: null, sprite: "mail-es" },
+        //first level child
+        { id: 11, parentId: 1, text: "Mark as unread", sprite: "mail-dz" },
+        { id: 12, parentId: 1, text: "Forward", sprite: "mail-am" },
+        { id: 13, parentId: 1, text: "Mark as favourite", sprite: "mail-bd" },
+        { id: 14, parentId: 1, text: "Mark as important", sprite: "mail-cu" },
+        { id: 15, parentId: 2, text: "Move to trash", sprite: "mail-dk" },
+        { id: 16, parentId: 2, text: "Delete", sprite: "mail-eg" },
+        { id: 17, parentId: 3, text: "New Mail", sprite: "mail-fi" },
+        { id: 18, parentId: 3, text: "Read Mail", sprite: "mail-in" },
+        { id: 19, parentId: 3, text: "Unread Mail", sprite: "mail-my" },
+        { id: 20, parentId: 4, text: "Discard draft", sprite: "mail-nz" },
+        { id: 21, parentId: 4, text: "Send again", sprite: "mail-no" },
+        { id: 22, parentId: 4, text: "Delete", sprite: "mail-pl" },
+    ];
+    jQuery(function ($) {
+        $("#menujson").ejMenu({
+            width: 425,
+            fields: { dataSource: data, id: "id", parentId: "parentId", text: "text", spriteCssClass: "sprite" }
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 
 * Add the following code in your style section.
@@ -31,7 +70,6 @@ Icons are the images that is displayed in the **Menu** control. To specify the m
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
         #menujson {
@@ -77,23 +115,62 @@ The following screenshot displays the output for the above code.
 
 _Figure 10: Menu with Icons_
 
-**Navigation**
+##Navigation
 
 Navigation in Menu control is the default usage to navigate into the other web page. You can navigate to another page in menu item by providing link to the menu items. Navigation in **Menu** control can be achieved by placing “**href**” path to the anchor tag. Use the following code sample for navigating in **Menu** control.
 
 * Add the following code in your **HTML** page.
 
+{% highlight html %}
+
+        
+<div>
+    <ul id="weblink">
+        <li id="searchengine">
+            <a href="#">Search engine</a>
+            <ul>
+                <li><a href="http://www.bing.com/">Bing</a></li>
+                <li><a href="https://www.google.co.in/">Google</a></li>
+                <li><a href="https://in.yahoo.com/">Yahoo</a></li>
+                <li><a href="http://www.rediff.com/">Rediff</a></li>
+            </ul>
+        </li>
+        <li id="atd"><a href="http://allthingsd.com/">All things digital</a></li>
+        <li id="electronics">
+            <a>Electronics</a>
+            <ul>
+                <li>
+                    <a href="http://www.engadget.com/">Engadget</a>
+                </li>
+                <li><a href="http://www.electronista.com/">Electronista</a></li>
+                <li><a href="http://www.gearlog.com/">Gearlog</a></li>
+            </ul>
+        </li>
+
+        <li id="cnet"><a href="http://www.centernetworks.com/">Center networks</a></li>
+
+        <li id="webpronews">
+            <a href="http://www.webpronews.com/">Webpronews</a>
+        </li>
+
+    </ul>
+</div>
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div&gt;    &lt;ul id="weblink"&gt;        &lt;li id="searchengine"&gt;            <a href="#">Search engine</a>            &lt;ul&gt;                &lt;li&gt;<a href="http://www.bing.com/">Bing</a>&lt;/li&gt;                &lt;li&gt;<a href="https://www.google.co.in/">Google</a>&lt;/li&gt;                &lt;li&gt;<a href="https://in.yahoo.com/">Yahoo</a>&lt;/li&gt;                &lt;li&gt;<a href="http://www.rediff.com/">Rediff</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li id="atd"&gt;<a href="http://allthingsd.com/">All things digital</a>&lt;/li&gt;        &lt;li id="electronics"&gt;            <a>Electronics</a>            &lt;ul&gt;                &lt;li&gt;                    <a href="http://www.engadget.com/">Engadget</a>                &lt;/li&gt;                &lt;li&gt;<a href="http://www.electronista.com/">Electronista</a>&lt;/li&gt;                &lt;li&gt;<a href="http://www.gearlog.com/">Gearlog</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li id="cnet"&gt;<a href="http://www.centernetworks.com/">Center networks</a>&lt;/li&gt;        &lt;li id="webpronews"&gt;            <a href="http://www.webpronews.com/">Webpronews</a>        &lt;/li&gt;    &lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[Javascript] </b><b>// Add the following code in your &lt;script&gt; section.</b>&lt;script type="text/javascript"&gt;    jQuery(function ($) {        $("#weblink").ejMenu({ width: 612 });    });&lt;/script&gt;</td></tr>
-</table>
+{% endhighlight %}
 
+{% highlight js %}
+
+ 
+// Add the following code in your script section.
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#weblink").ejMenu({ width: 612 });
+    });
+</script>
+
+{% endhighlight %}
 
 The following screenshot displays the output for the above code example.            
 

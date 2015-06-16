@@ -45,17 +45,34 @@ The following steps explain the configuration of **buttonText** property in **Up
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="Uploadbox"&gt;&lt;/div&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript] </b> <b>// Initialize the control in JavaScript.</b>&lt;script type="text/javascript"&gt;        $(function () {//Declaration.            $("#uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                removeUrl: "removeFiles.ashx",<b>                buttonText:{ browse:"Choose File", upload:"Upload File", cancel:"Cancel Upload"}</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
 
+     <div class="control">
+        <div id="Uploadbox"></div>
+
+         </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+ 
+ // Initialize the control in JavaScript.
+<script type="text/javascript">
+        $(function () {
+//Declaration.
+            $("#uploadbox").ejUploadbox({
+                saveUrl: "saveFiles.ashx",
+                removeUrl: "removeFiles.ashx",
+                buttonText:{ browse:"Choose File", upload:"Upload File", cancel:"Cancel Upload"}
+            });	
+        });
+    </script>
+
+{% endhighlight %}
 
 * For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as mentioned in the Save file action and Remove file action respectively.
 
@@ -95,21 +112,41 @@ Sets the alternative text for Size column. </td></tr>
 status</td><td>
 Sets the alternative text for status column.</td></tr>
 </table>
+
 The following steps explain the configuration of **dialogText** property in **Uploadbox**. 
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="Uploadbox"&gt;&lt;/div&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript] </b> <b>// Initialize the control in JavaScript.</b>&lt;script type="text/javascript"&gt;        $(function () {//Declaration.            $("#uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                removeUrl: "removeFiles.ashx",<b>                dialogText: { title: "Upload File List", name: "File Name", size: "File Size", status: "File Status" }</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
 
+     <div class="control">
+        <div id="Uploadbox"></div>
+
+        </div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+ // Initialize the control in JavaScript.
+<script type="text/javascript">
+        $(function () {
+//Declaration.
+            $("#uploadbox").ejUploadbox({
+                saveUrl: "saveFiles.ashx",
+                removeUrl: "removeFiles.ashx",
+                dialogText: { title: "Upload File List", name: "File Name", size: "File Size", status: "File Status" }
+            });
+        });
+    </script>
+
+
+{% endhighlight %}
 
 * For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as mentioned in the Save file action and Remove file action respectively. 
 
@@ -129,17 +166,34 @@ The following steps explains the configuration of **showFileDetails** property i
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="Uploadbox"&gt;&lt;/div&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>  // Initialize the control in JavaScript.</b>&lt;script type="text/javascript"&gt;        $(function () {//Declaration.            $("#uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                removeUrl: "removeFiles.ashx",<b>                showFileDetails:false</b>        });        });    &lt;/script&gt;</td></tr>
-</table>
 
+     <div class="control">
+        <div id="Uploadbox"></div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+  // Initialize the control in JavaScript.
+<script type="text/javascript">
+        $(function () {
+//Declaration.
+            $("#uploadbox").ejUploadbox({
+                saveUrl: "saveFiles.ashx",
+                removeUrl: "removeFiles.ashx",
+                showFileDetails:false
+        });
+        });
+    </script>
+
+
+{% endhighlight %}
 
 * For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as mentioned in the Save file action and Remove file action respectively.
 
@@ -185,21 +239,42 @@ The following steps explain the configuration of **cssClass** property in **Uplo
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div class="control"&gt;        &lt;div id="Uploadbox"&gt;&lt;/div&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b><b>// Initialize the control in JavaScript.</b>$(function () {//Declaration.            $("#uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                removeUrl: "removeFiles.ashx",                cssClass: "customcss"            });        });</td></tr>
-</table>
+{% highlight html %}
 
+
+
+     <div class="control">
+        <div id="Uploadbox"></div>
+
+    </div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+
+// Initialize the control in JavaScript.
+<script>
+  $(function () {
+//Declaration.
+            $("#uploadbox").ejUploadbox({
+                saveUrl: "saveFiles.ashx",
+                removeUrl: "removeFiles.ashx",
+                cssClass: "customcss"
+            });
+        });
+
+</script>
+{% endhighlight %}
 
 * In **CSS**, configure Custom Styles for the **Uploadbox**.
 
 {% highlight css %}
 
-**[CSS]**
+
   <style class="cssStyles">
       .customcss.e-uploadbox.e-widget .e-selectpart.e-select{
             background-color: #FFFFCC;

@@ -15,27 +15,61 @@ documentation: ug
 
 This property sets the **width** of a **Rotator** Item. The value set to this property is **string** or **number**.
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ <b>slideWidth: "500px"</b> });    });&lt;/script&gt;<b>(or)</b></td></tr>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ <b>slideWidth: 500</b> });    });&lt;/script&gt;</td></tr>
-</table>
+
+  {% highlight js %}
+  
+  	<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ slideWidth: "500px" });
+	    });
+	</script>
+
+  {% endhighlight %}
+  
+  
+  {% highlight js %}
+
+  
+  	<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ slideWidth: 500 });
+	    });
+	</script>
+
+
+  {% endhighlight %}
 
 
 ### Slide height
 
 This property sets the **height** of a **Rotator** Item. The value set to this property is **string** or **number**.
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ <b>slideHeight: "500px"</b> });    });&lt;/script&gt;<b>(or)</b></td></tr>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ <b>slideHeight: 500</b> });    });&lt;/script&gt;</td></tr>
-</table>
 
+  {% highlight js %}
+
+  
+  	<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ slideHeight: "500px" });
+	    });
+	</script>
+
+
+  {% endhighlight %}
+  
+  
+  {% highlight js %}
+
+  
+  	<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ slideHeight: 500 });
+	    });
+	</script>
+
+  {% endhighlight %}
 

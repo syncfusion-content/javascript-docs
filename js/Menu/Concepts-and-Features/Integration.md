@@ -17,27 +17,81 @@ AngularJS is an open-source web application framework. AngularJS extends **HT
 
 Sometime you can use menu value for retrieving information from the database by performing related action that is selected in menu. You can achieve this after the selected menu action is performed in the server side.
 
-In the following example, a **Menu** control for mail application is created. In this, when you click **mail****Inbox****development**, the selected development value is sent to the database. Normally a mail database contains different type of mails like HR team, Accounts team, etc. Whereas, in this example, the mail from development team is only retrieved from the database. Then the result is updated in the necessary page.
+In the following example, a **Menu** control for mail application is created. In this, when you click **mail** **Inbox** **development**, the selected development value is sent to the database. Normally a mail database contains different type of mails like HR team, Accounts team, etc. Whereas, in this example, the mail from development team is only retrieved from the database. Then the result is updated in the necessary page.
 
 * Add the following code in your **HTML** page.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;!doctype html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" ng-app="menuApp"&gt;&lt;head&gt;    <title>Essential Studio for JavaScript :  Angular</title>    &lt;!-- style sheet for default theme(flat azure) --&gt;    &lt;link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /&gt;    &lt;!--scripts--&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"&gt;&lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"&gt;&lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"&gt;&lt;/script&gt;&lt;/head&gt;&lt;body ng-controller="MenuCtrl"&gt;    <ul id="menu" ej-menu e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="parentId"        e-fields-text="text" e-fields-spritecssclass="sprite">&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</td></tr>
-<tr>
-<td>
-<b>[Javascript]   </b><b>// Initialize the control in JavaScript.</b>&lt;script&gt;    var data = [         { id: 1, text: "Mail", parentId: null },         { id: 2, text: "Calender", parentId: null },         { id: 3, text: "Notes", parentId: null },         { id: 4, text: "Contacts", parentId: null },         //first level child         { id: 11, parentId: 1, text: "Inbox", sprite: "mailicon sprite-inbox" },         { id: 12, parentId: 1, text: "Drafts", sprite: "mailicon sprite-drafts" },         { id: 13, parentId: 1, text: "Sent items", sprite: "mailicon sprite-sentitems" },         { id: 14, parentId: 1, text: "Deleted", sprite: "mailicon sprite-deleted" },         { id: 15, parentId: 1, text: "Junk mails", sprite: "mailicon sprite-junk" },         { id: 16, parentId: 1, text: "Personal", sprite: "mailicon sprite-folders" },         { id: 17, parentId: 2, text: "My Calender", sprite: "mailicon sprite-calendar" },         { id: 18, parentId: 2, text: "Team", sprite: "mailicon sprite-calendar" },         { id: 19, parentId: 2, text: "Others", sprite: "mailicon sprite-calendar" },         { id: 20, parentId: 3, text: "My Reference", sprite: "mailicon sprite-folder" },         { id: 21, parentId: 3, text: "Team Meeting", sprite: "mailicon sprite-folder" },         { id: 22, parentId: 3, text: "Others", sprite: "mailicon sprite-folder" },         { id: 23, parentId: 4, text: "Suggested", sprite: "mailicon sprite-contacts" },         { id: 24, parentId: 4, text: "My Team", sprite: "mailicon sprite-contacts" },         { id: 25, parentId: 4, text: "Others", sprite: "mailicon sprite-contacts" },         //second level child         { id: 111, parentId: 11, text: "Development", sprite: "mailicon sprite-folders" },         { id: 111, parentId: 11, text: "Supports", sprite: "mailicon sprite-folders" },         { id: 111, parentId: 11, text: "HR Team", sprite: "mailicon sprite-folders" },         { id: 112, parentId: 12, text: "Support Template", sprite: "mailicon sprite-folders" },         { id: 112, parentId: 12, text: "Personal", sprite: "mailicon sprite-folders" }    ];    angular.module('menuApp', ['ejangular']).controller('MenuCtrl', function ($scope) {        $scope.dataList = data;    });&lt;/script&gt;</td></tr>
-</table>
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="menuApp">
+<head>
+    <title>Essential Studio for JavaScript :  Angular</title>
+    <!-- style sheet for default theme(flat azure) -->
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
+</head>
+<body ng-controller="MenuCtrl">
 
+    <ul id="menu" ej-menu e-fields-datasource="dataList" e-fields-id="id" e-fields-parentid="parentId"
+        e-fields-text="text" e-fields-spritecssclass="sprite">
+    </ul>
+</body>
+</html>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+   
+// Initialize the control in JavaScript.
+<script>
+    var data = [
+         { id: 1, text: "Mail", parentId: null },
+         { id: 2, text: "Calender", parentId: null },
+         { id: 3, text: "Notes", parentId: null },
+         { id: 4, text: "Contacts", parentId: null },
+         //first level child
+         { id: 11, parentId: 1, text: "Inbox", sprite: "mailicon sprite-inbox" },
+         { id: 12, parentId: 1, text: "Drafts", sprite: "mailicon sprite-drafts" },
+         { id: 13, parentId: 1, text: "Sent items", sprite: "mailicon sprite-sentitems" },
+         { id: 14, parentId: 1, text: "Deleted", sprite: "mailicon sprite-deleted" },
+         { id: 15, parentId: 1, text: "Junk mails", sprite: "mailicon sprite-junk" },
+         { id: 16, parentId: 1, text: "Personal", sprite: "mailicon sprite-folders" },
+         { id: 17, parentId: 2, text: "My Calender", sprite: "mailicon sprite-calendar" },
+         { id: 18, parentId: 2, text: "Team", sprite: "mailicon sprite-calendar" },
+         { id: 19, parentId: 2, text: "Others", sprite: "mailicon sprite-calendar" },
+         { id: 20, parentId: 3, text: "My Reference", sprite: "mailicon sprite-folder" },
+         { id: 21, parentId: 3, text: "Team Meeting", sprite: "mailicon sprite-folder" },
+         { id: 22, parentId: 3, text: "Others", sprite: "mailicon sprite-folder" },
+         { id: 23, parentId: 4, text: "Suggested", sprite: "mailicon sprite-contacts" },
+         { id: 24, parentId: 4, text: "My Team", sprite: "mailicon sprite-contacts" },
+         { id: 25, parentId: 4, text: "Others", sprite: "mailicon sprite-contacts" },
+         //second level child
+         { id: 111, parentId: 11, text: "Development", sprite: "mailicon sprite-folders" },
+         { id: 111, parentId: 11, text: "Supports", sprite: "mailicon sprite-folders" },
+         { id: 111, parentId: 11, text: "HR Team", sprite: "mailicon sprite-folders" },
+         { id: 112, parentId: 12, text: "Support Template", sprite: "mailicon sprite-folders" },
+         { id: 112, parentId: 12, text: "Personal", sprite: "mailicon sprite-folders" }
+    ];
+    angular.module('menuApp', ['ejangular']).controller('MenuCtrl', function ($scope) {
+        $scope.dataList = data;
+    });
+</script>
+
+{% endhighlight %}
 
 * Add the following code in your style section.
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
     #menu {
@@ -105,7 +159,7 @@ The following screenshot displays the output of the above code example.
 
 _Figure 13: Angular binding of Menu Control_
 
-**Knockout binding**
+##Knockout binding
 
 **KnockoutJS** is a MVVM library that allows the separation of concerns. **Essential JavaScript** provides full support for KnockoutJS. The Knockout support is achieved by an integration JS library file. Add the following code for knockout binding **Menu** rendering.
 
@@ -121,23 +175,76 @@ In the following example, select Sign Up menu, the requested menu value is send 
 
 * Add the following code in your **HTML** page.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;    &lt;link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"&gt;&lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"&gt;&lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"&gt; &lt;/script&gt;    &lt;script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;    &lt;div class="content-container-fluid"&gt;        &lt;div class="row"&gt;            &lt;div class="cols-sample-area"&gt;                &lt;ul id="menuko" data-bind="ejMenu :{fields:{dataSource:dataList,id:'id',text:'text',parentId:'parentId',spriteCssClass:'sprite'}}"&gt;&lt;/ul&gt;            &lt;/div&gt;        &lt;/div&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b> [Javascript]  </b><b>// Initialize the control in JavaScript.</b>&lt;script&gt;    $(document).ready(function () {        // declaration        var menu = [            { id: 1, text: "Products", parentId: null },            { id: 2, text: "Support", parentId: null },            { id: 3, text: "Consulting", parentId: null },            { id: 4, text: "Login", parentId: null },            //first level child            { id: 11, parentId: 1, text: "JS" },            { id: 12, parentId: 1, text: "ASP.NET" },            { id: 13, parentId: 1, text: "ASP.NET MVC" },            { id: 14, parentId: 1, text: "Mobile" },            { id: 15, parentId: 1, text: "WPF" },            { id: 16, parentId: 2, text: "Direct Trac" },            { id: 17, parentId: 2, text: "Community Forum" },            { id: 18, parentId: 2, text: "Online Doc" },            { id: 20, parentId: 3, text: "Online App" },            { id: 21, parentId: 3, text: "Windows App" },            { id: 22, parentId: 3, text: "Mobile App" },            { id: 24, parentId: 3, text: "Servicing" },            { id: 30, parentId: 4, text: "Sign Up" },            { id: 32, parentId: 4, text: "Sign In" }        ];        window.viewModel = {            dataList: ko.observableArray(menu),        };        ko.applyBindings(viewModel);    });&lt;/script&gt;</td></tr>
-</table>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+</head>
+<body>
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <ul id="menuko" data-bind="ejMenu :{fields:{dataSource:dataList,id:'id',text:'text',parentId:'parentId',spriteCssClass:'sprite'}}"></ul>
+            </div>
+        </div>
+    </div>
+  </body>
+  </html>
+{% endhighlight %}
+
+{% highlight css %}
+
+  
+// Initialize the control in JavaScript.
+<script>
+    $(document).ready(function () {
+        // declaration
+        var menu = [
+            { id: 1, text: "Products", parentId: null },
+            { id: 2, text: "Support", parentId: null },
+            { id: 3, text: "Consulting", parentId: null },
+            { id: 4, text: "Login", parentId: null },
+            //first level child
+            { id: 11, parentId: 1, text: "JS" },
+            { id: 12, parentId: 1, text: "ASP.NET" },
+            { id: 13, parentId: 1, text: "ASP.NET MVC" },
+            { id: 14, parentId: 1, text: "Mobile" },
+            { id: 15, parentId: 1, text: "WPF" },
+            { id: 16, parentId: 2, text: "Direct Trac" },
+            { id: 17, parentId: 2, text: "Community Forum" },
+            { id: 18, parentId: 2, text: "Online Doc" },
+            { id: 20, parentId: 3, text: "Online App" },
+            { id: 21, parentId: 3, text: "Windows App" },
+            { id: 22, parentId: 3, text: "Mobile App" },
+            { id: 24, parentId: 3, text: "Servicing" },
+            { id: 30, parentId: 4, text: "Sign Up" },
+            { id: 32, parentId: 4, text: "Sign In" }
+        ];
+
+        window.viewModel = {
+            dataList: ko.observableArray(menu),
+
+        };
+        ko.applyBindings(viewModel);
+    });
+</script>
+
+{% endhighlight %}
 
 
 * Add the following code in your style section.
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
         #menuko {

@@ -19,7 +19,6 @@ The following steps explain you how to enable state maintenance for **AutoComple
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -31,17 +30,13 @@ The following steps explain you how to enable state maintenance for **AutoComple
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Here define CarList local data as per the previous the code block
-
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-                **enablePersistence:true**
+                enablePersistence:true
             });
-
-
+</script>
 
 {% endhighlight %}
 

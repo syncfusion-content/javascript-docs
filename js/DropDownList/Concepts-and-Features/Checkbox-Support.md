@@ -27,16 +27,38 @@ The following steps explains you the configuration of checkbox options in **Drop
 
 1. In an **HTML** page, add a &lt;input&gt; element to configure **DropdownList** widget
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="text" id="dropdownlist" /&gt;  &lt;div id="list"&gt;            &lt;ul&gt;                <li>Art</li>                <li>Architecture</li>                <li>Biography</li>                <li>comics</li>                <li>Sports</li>            &lt;/ul&gt;        &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;              $(function () {            $('#dropdownlist').ejDropDownList({                targetID: "list",                width: "200px",                <b>showCheckbox</b>: true,                <b>checkAll</b>: true                            });        });   &lt;/script&gt;</td></tr>
-</table>
+    <input type="text" id="dropdownlist" />
 
+     <div id="list">
+            <ul>
+                <li>Art</li>
+                <li>Architecture</li>
+                <li>Biography</li>
+                <li>comics</li>
+                <li>Sports</li>
+            </ul>
+
+        </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+        // Initialize the control in JavaScript      
+        $(function () {
+            $('#dropdownlist').ejDropDownList({
+                targetID: "list",
+                width: "200px",
+                showCheckbox: true,
+                checkAll: true                
+            });
+        });
+   </script>
+
+{% endhighlight %}
 
 Output of the above steps
 

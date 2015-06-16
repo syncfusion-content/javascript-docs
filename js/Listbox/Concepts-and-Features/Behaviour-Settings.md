@@ -20,16 +20,45 @@ The following steps explains you the configuration of **targetID** property in *
 * In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a font style</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;    &lt;ul id="targetlist"&gt;        <li>Algerian</li>        <li>ARIAL</li>        <li>Bimini</li>        <li>Courier</li>        <li>Cursive</li>        <li>Fantasy</li>        <li>Georgia</li>        <li>Impact</li>        <li>New york</li>        <li>Sans-Serif</li>        <li>Scripts</li>        <li>Times</li>        <li>Times New Roman</li>        <li>Verdana</li>        <li>Western</li>        <li>Zapfellipt bt</li>    &lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript] </b><b>// </b>Initialize the control in <b>JavaScript</b><b> </b>&lt;script type="text/javascript"&gt;    $(function () {        $('#listboxSample').ejListBox({ <b>targetID: "targetlist"</b> });    });&lt;/script&gt;</td></tr>
-</table>
+<div id="control">
+    <h5 class="ctrllabel">Select a font style</h5>
+    <ul id="listboxSample"></ul>
 
+    <ul id="targetlist">
+        <li>Algerian</li>
+        <li>ARIAL</li>
+        <li>Bimini</li>
+        <li>Courier</li>
+        <li>Cursive</li>
+        <li>Fantasy</li>
+        <li>Georgia</li>
+        <li>Impact</li>
+        <li>New york</li>
+        <li>Sans-Serif</li>
+        <li>Scripts</li>
+        <li>Times</li>
+        <li>Times New Roman</li>
+        <li>Verdana</li>
+        <li>Western</li>
+        <li>Zapfellipt bt</li>
+    </ul>
+</div>
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+// Initialize the control in JavaScript
+ 
+<script type="text/javascript">
+    $(function () {
+        $('#listboxSample').ejListBox({ targetID: "targetlist" });
+    });
+</script>
+
+{% endhighlight %}
 
 Output of the above steps.
 
@@ -49,13 +78,13 @@ The following steps explains you the configuration of **selectedItemIndex** prop
 
 {% highlight html %}
 
-**[HTML]**
+
 <div id="control">
         <h5 class="ctrllabel">Select a skill</h5>
         <ul id="listboxsample"></ul>
     </div>
 
-**[JavaScript]**  
+
 
 <script type="text/javascript">
     $(function () {
@@ -92,16 +121,38 @@ The following steps explains you the configuration of **enabled** property in **
 
 * In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]  </b><b>// </b>Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    $(function () {        // JSON data declaration        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        //Render ListBox by mapping fields with JSON data        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, <b>enabled: false</b>        });    });&lt;/script&gt;</td></tr>
-</table>
 
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxSample"></ul>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+  
+// Initialize the control in JavaScript
+<script type="text/javascript">
+    $(function () {
+        // JSON data declaration
+        var skillset = [
+        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+        ];
+        //Render ListBox by mapping fields with JSON data
+        $("#listboxSample").ejListBox({
+            width: "240", dataSource: skillset,
+            fields: { text: "skill" }, enabled: false
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 Output of the above steps.
 

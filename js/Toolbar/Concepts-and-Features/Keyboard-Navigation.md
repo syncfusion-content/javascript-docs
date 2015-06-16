@@ -57,11 +57,17 @@ The following code example illustrates shortcuts associated with the **Toolbar**
 
 
 
+{% highlight html %}
+
+
+<!-- Refer Local Data section for style and data bound for toolbar item -->
+
+{% endhighlight %}
+
 {% highlight js %}
 
-**[HTML]**
-<!-- Refer Local Data section for style and data bound for toolbar item -->
-**[JS]**
+
+
 <script type="text/javascript">
     $(function () {
         // declaration

@@ -13,11 +13,10 @@ This feature supports to change the left-to-right alignment of the **Rotator** t
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: 500, **enableRTL: true** });
+        $("#slidercontent").ejRotator({ slideWidth: 500, enableRTL: true });
     });
 </script>
 

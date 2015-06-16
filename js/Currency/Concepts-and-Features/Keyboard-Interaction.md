@@ -37,6 +37,7 @@ Decrements the value</td></tr>
 Tab</td><td>
 Focus the next element</td></tr>
 </table>
+
 ## Configuring Keyboard Navigation
 
 The following steps explain the implementation of keyboard interaction in **CurrencyTextBox** .
@@ -44,15 +45,21 @@ The following steps explain the implementation of keyboard interaction in **Curr
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** controls. Set the **accesskey** property to the **CurrencyTextBox** control for focusing the control while key is pressed.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;input id="currency" type="text" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>&lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 33                    });    &lt;/script&gt;</td></tr>
-</table>
+<input id="currency" type="text" />
+	
+{% endhighlight %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+	        $("#currency").ejCurrencyTextbox({
+            value: 33            
+        });
+</script>
+
+{% endhighlight %}
 
 
 Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access_key) **+ j** key to focus the **Textbox** widget. Perform provided functionality by using keyboard shortcuts.

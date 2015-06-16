@@ -13,7 +13,7 @@ documentation: ug
 
 ## Toggle State
 
-**Toggle Button** has two states like off / on state in a switch. By default you can set any state at initial and then you can move from one state to another state by clicking on the **Toggle Button**. These two states are **Default** and **Active.****toggleState** property is used to****set the state of **Toggle Button** as default state or active state.
+**Toggle Button** has two states like off / on state in a switch. By default you can set any state at initial and then you can move from one state to another state by clicking on the **Toggle Button**. These two states are **Default** and **Active.** **toggleState** property is used to** **set the state of **Toggle Button** as default state or active state.
 
 The following steps explains you the details about rendering the **Toggle Button** with different toggle state.
 
@@ -21,14 +21,48 @@ The following steps explains you the details about rendering the **Toggle Button
 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="checkbox" id="toggle_default" /&gt;        &lt;br /&gt;    &lt;input type="checkbox" id="toggle_active" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            $("#toggle_default").ejToggleButton({                size: "small",                contentType: "textandimage",                defaultText: "Play",                activeText: "Pause",                defaultPrefixIcon: "e-mediaplay e-uiLight",                activePrefixIcon: "e-mediapause e-uiLight",                //set the button in default state<b>                toggleState: false</b>            });            $("#toggle_active").ejToggleButton({                size: "small",                contentType: "textandimage",                defaultText: "Play",                activeText: "Pause",                defaultPrefixIcon: "e-mediaplay e-uiLight",                activePrefixIcon: "e-mediapause e-uiLight",                //set the button in active state<b>                toggleState: true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+
+    <input type="checkbox" id="toggle_default" />    
+    <br />
+    <input type="checkbox" id="toggle_active" />
+
+	
+{% endhighlight %}
+
+{% highlight js %}
+
+
+//Initialize the control in JavaScript
+
+<script type="text/javascript">
+        $(function () {
+            $("#toggle_default").ejToggleButton({
+                size: "small",
+                contentType: "textandimage",
+                defaultText: "Play",
+                activeText: "Pause",
+                defaultPrefixIcon: "e-mediaplay e-uiLight",
+                activePrefixIcon: "e-mediapause e-uiLight",
+                //set the button in default state
+                toggleState: false
+            });
+            $("#toggle_active").ejToggleButton({
+                size: "small",
+                contentType: "textandimage",
+                defaultText: "Play",
+                activeText: "Pause",
+                defaultPrefixIcon: "e-mediaplay e-uiLight",
+                activePrefixIcon: "e-mediapause e-uiLight",
+                //set the button in active state
+                toggleState: true
+            });
+        });
+    </script>
+
+
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -45,7 +79,7 @@ _Figure 4: Toggle button with two different toggle states_
 
 You can add icons in prefix and suffix position of **Toggle Button**. Location of Icon is customized easily using the following mentioned option. This is applicable for the content type’s **imageOnly**, **textandimage**, **imagetextimage** and **imageboth**.
 
-**Toggle Button** control also supports the build-in icon libraries. The **ej.widgets.core.min** CSS contains the definition for important icons that are used in toggle buttons. You can use these build-in icons by mentioning the icon class name as value in **defaultPrefixIcon**, **defaultSuffixIcon**, **activePrefixIcon**,****and **activeSuffixIcon** property. You can use any font icons that is defined in **ej.widgets.core.min** CSS. It avoids the complexity in specifying icon using sprite image and CSS.
+**Toggle Button** control also supports the build-in icon libraries. The **ej.widgets.core.min.css** contains the definition for important icons that are used in toggle buttons. You can use these build-in icons by mentioning the icon class name as value in **defaultPrefixIcon**, **defaultSuffixIcon**, **activePrefixIcon**, and **activeSuffixIcon** property. You can use any font icons that is defined in **ej.widgets.core.min.css**. It avoids the complexity in specifying icon using sprite image and CSS.
 
 For example the following mentioned build-in CSS class are used to show the font icons that are used by media player.
 
@@ -111,14 +145,40 @@ The following steps explains you the details about rendering the **Toggle Button
 
 
 
-<table>
-<tr>
-<td>
-<b> [HTML]</b>    &lt;input type="checkbox" id="toggle_content" /&gt;    <label for="toggle_content">Toggle</label></td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;            $(function () {                $("#toggle_content").ejToggleButton({                    showRoundedCorner: true,                    contentType: "imagetextimage",                    //e-mediaforward class contain font icon<b>                    defaultPrefixIcon: "e-mediaforward e-uiLight",</b><b>                    //e-mediaback class contain font icon</b><b>                    activePrefixIcon: "e-mediaback e-uiLight",</b><b>                    defaultText: "forward",</b><b>                    activeText: "backward",</b><b>                    //e-undo class contain font icon</b><b>                    defaultSuffixIcon: "e-undo e-uiLight",</b><b>                    //e- redo class contain font icon</b><b>                    activeSuffixIcon: "e-redo e-uiLight"</b>                });            });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+
+    <input type="checkbox" id="toggle_content" />
+    <label for="toggle_content">Toggle</label>
+	
+{% endhighlight %}
+
+{% highlight js %}
+
+
+//Initialize the control in JavaScript
+
+<script type="text/javascript">
+            $(function () {
+                $("#toggle_content").ejToggleButton({
+                    showRoundedCorner: true,
+                    contentType: "imagetextimage",
+                    //e-mediaforward class contain font icon
+                    defaultPrefixIcon: "e-mediaforward e-uiLight",
+                    //e-mediaback class contain font icon
+                    activePrefixIcon: "e-mediaback e-uiLight",
+                    defaultText: "forward",
+                    activeText: "backward",
+                    //e-undo class contain font icon
+                    defaultSuffixIcon: "e-undo e-uiLight",
+                    //e- redo class contain font icon
+                    activeSuffixIcon: "e-redo e-uiLight"
+                });
+            });
+
+    </script>
+
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -167,16 +227,116 @@ The following steps explains you the details about rendering the **Toggle Button
 
 * In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;table&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_normal" /&gt;                <label for="toggle_normal">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_mini" /&gt;                <label for="toggle_mini">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_small" /&gt;                <label for="toggle_small">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_medium" /&gt;                <label for="toggle_medium">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_large" /&gt;                <label for="toggle_large">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;      &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_customSize" /&gt;                <label for="toggle_customSize">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;    &lt;/table&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    //Here use size property to render the toggle button in different sizes    $(function () {        $("#toggle_normal").ejToggleButton({            //normal size of toggle button            <b>size: "normal",</b>            showRoundedCorner: true,            contentType: "imageonly",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight",        });        $("#toggle_mini").ejToggleButton({            defaultText: "Play",            showRoundedCorner: true,            activeText: "Next",            //mini size of toggle button<b>            size: "mini",</b>        });        $("#toggle_small").ejToggleButton({            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            //small size of toggle button<b>            size: "small",</b>        });        $("#toggle_medium").ejToggleButton({            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            //medium size of toggle button            <b>size: "medium",</b>        });        $("#toggle_large").ejToggleButton({            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            //large size of toggle button<b>            size: "large",</b>            contentType: "textandimage",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight",        });        $("#toggle_customSize").ejToggleButton({            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            //set own height and width<b>            height: 50,</b><b>            width: 150,</b>            contentType: "textandimage",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight",        });    });    &lt;/script&gt;</td></tr>
-</table>
+    <table>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_normal" />
+                <label for="toggle_normal">Toggle</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_mini" />
+                <label for="toggle_mini">Toggle</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_small" />
+                <label for="toggle_small">Toggle</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_medium" />
+                <label for="toggle_medium">Toggle</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_large" />
+                <label for="toggle_large">Toggle</label>
+            </td>
+        </tr>
+      <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_customSize" />
+                <label for="toggle_customSize">Toggle</label>
+            </td>
+        </tr>
+    </table>
+
+	
+{% endhighlight %}
+
+{% highlight js %}
+
+
+//Initialize the control in JavaScript
+
+<script type="text/javascript">
+    //Here use size property to render the toggle button in different sizes
+    $(function () {
+        $("#toggle_normal").ejToggleButton({
+            //normal size of toggle button
+            size: "normal",
+            showRoundedCorner: true,
+            contentType: "imageonly",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight",
+        });
+        $("#toggle_mini").ejToggleButton({
+            defaultText: "Play",
+            showRoundedCorner: true,
+            activeText: "Next",
+            //mini size of toggle button
+            size: "mini",
+        });
+        $("#toggle_small").ejToggleButton({
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            //small size of toggle button
+            size: "small",
+        });
+        $("#toggle_medium").ejToggleButton({
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            //medium size of toggle button
+            size: "medium",
+        });
+        $("#toggle_large").ejToggleButton({
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            //large size of toggle button
+            size: "large",
+            contentType: "textandimage",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight",
+        });
+        $("#toggle_customSize").ejToggleButton({
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            //set own height and width
+            height: 50,
+            width: 150,
+            contentType: "textandimage",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight",
+        });
+    });
+
+
+    </script>
+
+{% endhighlight %}
+
 
 
 Configure the styles 
@@ -185,7 +345,6 @@ Configure the styles
 
 {% highlight css %}
 
-[CSS]
     <style>
         .control {
             width: 600px;
@@ -239,14 +398,162 @@ The following steps explains you the details about rendering the **Toggle Button
 
 * In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;table&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageonly" /&gt;                <label for="toggle_imageonly">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_textonly" /&gt;                <label for="toggle_textonly">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageboth" /&gt;                <label for="toggle_imageboth">Toggle</label>            &lt;/td&gt;                   &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_textandimage" /&gt;                <label for="toggle_textandimage">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imagetextimage" /&gt;                <label for="toggle_imagetextimage">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;         &lt;/table&gt;    &lt;br /&gt;    &lt;br /&gt;     &lt;table&gt;          &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageonly_small" /&gt;                <label for="toggle_imageonly_small">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_textonly_small" /&gt;                <label for="toggle_textonly_small">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageboth_small" /&gt;                <label for="toggle_imageboth_small">Toggle</label>            &lt;/td&gt;                   &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_textandimage_small" /&gt;                <label for="toggle_textandimage_small">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imagetextimage_small" /&gt;                <label for="toggle_imagetextimage_small">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;    &lt;/table&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>   &lt;script type="text/javascript"&gt;      // Here use contentType property to render the toggle button with different contents      $(function () {          $("#toggle_imageonly").ejToggleButton({              showRoundedCorner: true,              //only image is used as content<b>              contentType: "imageonly",</b>              defaultPrefixIcon: "e-mediaplay e-uiLight",              activePrefixIcon: "e-mediapause e-uiLight"          });          $("#toggle_textonly").ejToggleButton({              //only text is used as content<b>              contentType: "textonly",</b>              defaultText: "Play",              showRoundedCorner: true,              activeText: "Next"          });          $("#toggle_imageboth").ejToggleButton({              //only images in both end is used as content<b>              contentType: "imageboth",</b>              showRoundedCorner: true,              defaultPrefixIcon: "e-mediaforward e-uiLight",              activePrefixIcon: "e-mediaback e-uiLight",              defaultSuffixIcon: "e-undo e-uiLight",              activeSuffixIcon: "e-redo e-uiLight"          });          $("#toggle_textandimage").ejToggleButton({              //text and image is used as content<b>              contentType: "textandimage",</b>              showRoundedCorner: true,              defaultText: "Play",              activeText: "Next",              defaultPrefixIcon: "e-mediaplay e-uiLight",              activePrefixIcon: "e-mediapause e-uiLight"          });          $("#toggle_imagetextimage").ejToggleButton({              //image text image is used as content<b>              contentType: "imagetextimage",</b>              showRoundedCorner: true,              defaultPrefixIcon: "e-mediaforward e-uiLight",              activePrefixIcon: "e-mediaback e-uiLight",              defaultText: "forward",              activeText: "backward",              defaultSuffixIcon: "e-undo e-uiLight",              activeSuffixIcon: "e-redo e-uiLight"          });          $("#toggle_imageonly_small").ejToggleButton({              size: "small",              showRoundedCorner: true,<b>              contentType: "imageonly",</b>              defaultPrefixIcon: "e-mediaplay e-uiLight",              activePrefixIcon: "e-mediapause e-uiLight"          });          $("#toggle_textonly_small").ejToggleButton({              size: "small",<b>              contentType: "textonly",</b>              defaultText: "Play",              showRoundedCorner: true,              activeText: "Next"          });          $("#toggle_imageboth_small").ejToggleButton({              size: "small",            <b>  contentType: "imageboth",</b>              showRoundedCorner: true,              defaultPrefixIcon: "e-mediaforward e-uiLight",              activePrefixIcon: "e-mediaback e-uiLight",              defaultSuffixIcon: "e-undo e-uiLight",              activeSuffixIcon: "e-redo e-uiLight"          });          $("#toggle_textandimage_small").ejToggleButton({              size: "small",<b>              contentType: "textandimage",</b>              showRoundedCorner: true,              defaultText: "Play",              activeText: "Next",              defaultPrefixIcon: "e-mediaplay e-uiLight",              activePrefixIcon: "e-mediapause e-uiLight"          });          $("#toggle_imagetextimage_small").ejToggleButton({              size: "small",<b>              contentType: "imagetextimage",</b>              showRoundedCorner: true,              defaultPrefixIcon: "e-mediaforward e-uiLight",              activePrefixIcon: "e-mediaback e-uiLight",              defaultText: "forward",              activeText: "backward",              defaultSuffixIcon: "e-undo e-uiLight",              activeSuffixIcon: "e-redo e-uiLight"          });      });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+
+    <table>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageonly" />
+                <label for="toggle_imageonly">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_textonly" />
+                <label for="toggle_textonly">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageboth" />
+                <label for="toggle_imageboth">Toggle</label>
+            </td>       
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_textandimage" />
+                <label for="toggle_textandimage">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imagetextimage" />
+                <label for="toggle_imagetextimage">Toggle</label>
+            </td>
+        </tr>
+         </table>
+    <br/>
+    <br/>
+     <table>
+          <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageonly_small" />
+                <label for="toggle_imageonly_small">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_textonly_small" />
+                <label for="toggle_textonly_small">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageboth_small" />
+                <label for="toggle_imageboth_small">Toggle</label>
+            </td>       
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_textandimage_small" />
+                <label for="toggle_textandimage_small">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imagetextimage_small" />
+                <label for="toggle_imagetextimage_small">Toggle</label>
+            </td>
+        </tr>
+    </table>
+
+	
+{% endhighlight %}
+
+{% highlight js %}
+
+
+//Initialize the control in JavaScript
+
+<script type="text/javascript">
+      // Here use contentType property to render the toggle button with different contents
+      $(function () {
+          $("#toggle_imageonly").ejToggleButton({
+              showRoundedCorner: true,
+              //only image is used as content
+              contentType: "imageonly",
+              defaultPrefixIcon: "e-mediaplay e-uiLight",
+              activePrefixIcon: "e-mediapause e-uiLight"
+          });
+          $("#toggle_textonly").ejToggleButton({
+              //only text is used as content
+              contentType: "textonly",
+              defaultText: "Play",
+              showRoundedCorner: true,
+              activeText: "Next"
+          });
+          $("#toggle_imageboth").ejToggleButton({
+              //only images in both end is used as content
+              contentType: "imageboth",
+              showRoundedCorner: true,
+              defaultPrefixIcon: "e-mediaforward e-uiLight",
+              activePrefixIcon: "e-mediaback e-uiLight",
+              defaultSuffixIcon: "e-undo e-uiLight",
+              activeSuffixIcon: "e-redo e-uiLight"
+          });
+          $("#toggle_textandimage").ejToggleButton({
+              //text and image is used as content
+              contentType: "textandimage",
+              showRoundedCorner: true,
+              defaultText: "Play",
+              activeText: "Next",
+              defaultPrefixIcon: "e-mediaplay e-uiLight",
+              activePrefixIcon: "e-mediapause e-uiLight"
+          });
+          $("#toggle_imagetextimage").ejToggleButton({
+              //image text image is used as content
+              contentType: "imagetextimage",
+              showRoundedCorner: true,
+              defaultPrefixIcon: "e-mediaforward e-uiLight",
+              activePrefixIcon: "e-mediaback e-uiLight",
+              defaultText: "forward",
+              activeText: "backward",
+              defaultSuffixIcon: "e-undo e-uiLight",
+              activeSuffixIcon: "e-redo e-uiLight"
+          });
+          $("#toggle_imageonly_small").ejToggleButton({
+              size: "small",
+              showRoundedCorner: true,
+              contentType: "imageonly",
+              defaultPrefixIcon: "e-mediaplay e-uiLight",
+              activePrefixIcon: "e-mediapause e-uiLight"
+          });
+          $("#toggle_textonly_small").ejToggleButton({
+              size: "small",
+              contentType: "textonly",
+              defaultText: "Play",
+              showRoundedCorner: true,
+              activeText: "Next"
+          });
+          $("#toggle_imageboth_small").ejToggleButton({
+              size: "small",
+              contentType: "imageboth",
+              showRoundedCorner: true,
+              defaultPrefixIcon: "e-mediaforward e-uiLight",
+              activePrefixIcon: "e-mediaback e-uiLight",
+              defaultSuffixIcon: "e-undo e-uiLight",
+              activeSuffixIcon: "e-redo e-uiLight"
+          });
+          $("#toggle_textandimage_small").ejToggleButton({
+              size: "small",
+              contentType: "textandimage",
+              showRoundedCorner: true,
+              defaultText: "Play",
+              activeText: "Next",
+              defaultPrefixIcon: "e-mediaplay e-uiLight",
+              activePrefixIcon: "e-mediapause e-uiLight"
+          });
+          $("#toggle_imagetextimage_small").ejToggleButton({
+              size: "small",
+              contentType: "imagetextimage",
+              showRoundedCorner: true,
+              defaultPrefixIcon: "e-mediaforward e-uiLight",
+              activePrefixIcon: "e-mediaback e-uiLight",
+              defaultText: "forward",
+              activeText: "backward",
+              defaultSuffixIcon: "e-undo e-uiLight",
+              activeSuffixIcon: "e-redo e-uiLight"
+          });
+      });
+
+    </script>
+
+{% endhighlight %}
 
 
 Configure the styles 
@@ -255,7 +562,6 @@ Configure the styles
 
 {% highlight css %}
 
-[CSS]
     <style>
         .normal {
             width: 300px;
@@ -307,17 +613,209 @@ The following steps explains you the details about rendering the **Toggle Button
 
 * In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;table&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageleft_normal" /&gt;                <label for="toggle_imageleft_normal">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageleft_mini" /&gt;                <label for="toggle_imageleft_mini">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageleft_small" /&gt;                <label for="toggle_imageleft_small">Toggle</label>            &lt;/td&gt;                   &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageleft_medium" /&gt;                <label for="toggle_imageleft_medium">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageleft_large" /&gt;                <label for="toggle_imageleft_large">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;         &lt;/table&gt;    &lt;br /&gt;    &lt;br /&gt;     &lt;table&gt;          &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageright_normal" /&gt;                <label for="toggle_imageright_normal">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageright_mini" /&gt;                <label for="toggle_imageright_mini">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageright_small" /&gt;                <label for="toggle_imageright_small">Toggle</label>            &lt;/td&gt;                   &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageright_medium" /&gt;                <label for="toggle_imageright_medium">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imageright_large" /&gt;                <label for="toggle_imageright_large">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;    &lt;/table&gt;     &lt;br /&gt;    &lt;br /&gt;     &lt;table&gt;          &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imagetop" /&gt;                <label for="toggle_imagetop">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_imagebottom" /&gt;                <label for="toggle_imagebottom">Toggle</label>            &lt;/td&gt;                       &lt;/tr&gt;    &lt;/table&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    //It explains how to render the toggle button images with different position    $(function () {        $("#toggle_imageleft_normal").ejToggleButton({            size: "normal",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageleft_mini").ejToggleButton({            size: "mini",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageleft_small").ejToggleButton({            size: "small",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageleft_medium").ejToggleButton({            size: "medium",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageleft_large").ejToggleButton({            size: "large",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageright_normal").ejToggleButton({            size: "normal",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageright_mini").ejToggleButton({            size: "mini",            <b>imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageright_small").ejToggleButton({            size: "small",            <b>imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageright_medium").ejToggleButton({            size: "medium",           <b> imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imageright_large").ejToggleButton({            size: "large",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_imagetop").ejToggleButton({<b>            imagePosition: "imagetop",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight",            width: 60        });        $("#toggle_imagebottom").ejToggleButton({<b>            imagePosition: "imagebottom",</b>            contentType: "textandimage",            showRoundedCorner: true,            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight",            width: 60        });    });    &lt;/script&gt;</td></tr>
-</table>
+     <table>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageleft_normal" />
+                <label for="toggle_imageleft_normal">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageleft_mini" />
+                <label for="toggle_imageleft_mini">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageleft_small" />
+                <label for="toggle_imageleft_small">Toggle</label>
+            </td>       
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageleft_medium" />
+                <label for="toggle_imageleft_medium">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageleft_large" />
+                <label for="toggle_imageleft_large">Toggle</label>
+            </td>
+        </tr>
+         </table>
+    <br />
+    <br />
+     <table>
+          <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageright_normal" />
+                <label for="toggle_imageright_normal">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageright_mini" />
+                <label for="toggle_imageright_mini">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageright_small" />
+                <label for="toggle_imageright_small">Toggle</label>
+            </td>       
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageright_medium" />
+                <label for="toggle_imageright_medium">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imageright_large" />
+                <label for="toggle_imageright_large">Toggle</label>
+            </td>
+        </tr>
+    </table>
+     <br />
+    <br />
+     <table>
+          <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imagetop" />
+                <label for="toggle_imagetop">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_imagebottom" />
+                <label for="toggle_imagebottom">Toggle</label>
+            </td>               
+        </tr>
+    </table>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+//Initialize the control in JavaScript
+
+<script type="text/javascript">
+    //It explains how to render the toggle button images with different position
+    $(function () {
+        $("#toggle_imageleft_normal").ejToggleButton({
+            size: "normal",
+            imagePosition: "imageleft",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageleft_mini").ejToggleButton({
+            size: "mini",
+            imagePosition: "imageleft",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageleft_small").ejToggleButton({
+            size: "small",
+            imagePosition: "imageleft",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageleft_medium").ejToggleButton({
+            size: "medium",
+            imagePosition: "imageleft",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageleft_large").ejToggleButton({
+            size: "large",
+            imagePosition: "imageleft",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageright_normal").ejToggleButton({
+            size: "normal",
+            imagePosition: "imageright",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageright_mini").ejToggleButton({
+            size: "mini",
+            imagePosition: "imageright",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageright_small").ejToggleButton({
+            size: "small",
+            imagePosition: "imageright",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageright_medium").ejToggleButton({
+            size: "medium",
+            imagePosition: "imageright",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imageright_large").ejToggleButton({
+            size: "large",
+            imagePosition: "imageright",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+        });
+        $("#toggle_imagetop").ejToggleButton({
+            imagePosition: "imagetop",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight",
+            width: 60
+        });
+        $("#toggle_imagebottom").ejToggleButton({
+            imagePosition: "imagebottom",
+            contentType: "textandimage",
+            showRoundedCorner: true,
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight",
+            width: 60
+        });
+    });
+    </script>
+
+{% endhighlight %}
 
 Configure the styles 
 
@@ -325,7 +823,7 @@ Configure the styles
 
 {% highlight css %}
 
-[CSS]
+
     <style>
         .one {
             width: 450px;
@@ -385,25 +883,108 @@ The following steps explains you the details about rendering the **Toggle Button
 
 * In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;table&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_customCss1" /&gt;                <label for="toggle_customCss1">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_customCss2" /&gt;                <label for="toggle_customCss2">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_customCss3" /&gt;                <label for="toggle_customCss3">Toggle</label>            &lt;/td&gt;                   &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_customCss4" /&gt;                <label for="toggle_customCss4">Toggle</label>            &lt;/td&gt;                 &lt;td class="btnsht"&gt;                &lt;input type="checkbox" id="toggle_customCss5" /&gt;                <label for="toggle_customCss5">Toggle</label>            &lt;/td&gt;        &lt;/tr&gt;         &lt;/table&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    //implement custom CSS for each toggle button    $(function () {        $("#toggle_customCss1").ejToggleButton({<b>            cssClass: "customCss1",</b>            size: "small",            showRoundedCorner: true,            contentType: "textandimage",            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_customCss2").ejToggleButton({<b>            cssClass: "customCss2",</b>            size: "small",            showRoundedCorner: true,            contentType: "textandimage",            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_customCss3").ejToggleButton({<b>            cssClass: "customCss3",</b>            size: "small",            showRoundedCorner: true,            contentType: "textandimage",            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_customCss4").ejToggleButton({<b>            cssClass: "customCss4",</b>            size: "small",            showRoundedCorner: true,            contentType: "textandimage",            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });        $("#toggle_customCss5").ejToggleButton({<b>            cssClass: "customCss5",</b>            size: "small",            showRoundedCorner: true,            contentType: "textandimage",            defaultText: "Play",            activeText: "Next",            defaultPrefixIcon: "e-mediaplay e-uiLight",            activePrefixIcon: "e-mediapause e-uiLight"        });    });    &lt;/script&gt;</td></tr>
-</table>
+    <table>
+        <tr>
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_customCss1" />
+                <label for="toggle_customCss1">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_customCss2" />
+                <label for="toggle_customCss2">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_customCss3" />
+                <label for="toggle_customCss3">Toggle</label>
+            </td>       
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_customCss4" />
+                <label for="toggle_customCss4">Toggle</label>
+            </td>     
+            <td class="btnsht">
+                <input type="checkbox" id="toggle_customCss5" />
+                <label for="toggle_customCss5">Toggle</label>
+            </td>
+        </tr>
+         </table>
+
+{% endhighlight %}
+
+{% highlight js %}
 
 
+//Initialize the control in JavaScript
+
+<script type="text/javascript">
+    //implement custom CSS for each toggle button
+    $(function () {
+        $("#toggle_customCss1").ejToggleButton({
+            cssClass: "customCss1",
+            size: "small",
+            showRoundedCorner: true,
+            contentType: "textandimage",
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+
+        });
+        $("#toggle_customCss2").ejToggleButton({
+            cssClass: "customCss2",
+            size: "small",
+            showRoundedCorner: true,
+            contentType: "textandimage",
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+
+        });
+        $("#toggle_customCss3").ejToggleButton({
+            cssClass: "customCss3",
+            size: "small",
+            showRoundedCorner: true,
+            contentType: "textandimage",
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+
+        });
+        $("#toggle_customCss4").ejToggleButton({
+            cssClass: "customCss4",
+            size: "small",
+            showRoundedCorner: true,
+            contentType: "textandimage",
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+
+        });
+        $("#toggle_customCss5").ejToggleButton({
+            cssClass: "customCss5",
+            size: "small",
+            showRoundedCorner: true,
+            contentType: "textandimage",
+            defaultText: "Play",
+            activeText: "Next",
+            defaultPrefixIcon: "e-mediaplay e-uiLight",
+            activePrefixIcon: "e-mediapause e-uiLight"
+
+        });
+    });
+    </script>
+
+{% endhighlight %}
 Configure the CSS styles to apply on buttons.
-
 
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
         /* Customize the button background */
         .e-togglebutton.customCss1 {

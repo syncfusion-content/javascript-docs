@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Rating** control in your a
 
 ## Create your first Rating widget in JavaScript
 
-**Essential JavaScript****Rating** helps to select the number of stars that represent **Rating**. Here, you can learn how to create **Rating** control in a real-time movie download application and also learn how to rate the application.
+**Essential JavaScript** **Rating** helps to select the number of stars that represent **Rating**. Here, you can learn how to create **Rating** control in a real-time movie download application and also learn how to rate the application.
 
 The following screenshot illustrates the functionality of a **Rating** widget with a Rating range of 0 to 5. 
 
@@ -32,7 +32,7 @@ The following screenshot illustrates the functionality of a **Rating** widget wi
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"charset="utf-8"  />
       <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -41,7 +41,7 @@ The following screenshot illustrates the functionality of a **Rating** widget wi
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>

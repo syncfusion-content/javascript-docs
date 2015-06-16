@@ -17,7 +17,7 @@ The following steps explain how to enable the **allowEditing** property for **Tr
 
 {% highlight html %}
 
-**[HTML]**
+
 <ul id="treeView">
         <li class="expanded">
             Favorites
@@ -65,15 +65,17 @@ The following steps explain how to enable the **allowEditing** property for **Tr
         </li>
     </ul>
 
-[JavaScript]
-// Enable allowEditing for TreeView control as follows.
-
-            $("#treeView").ejTreeView({ allowEditing: true });
-
-
-
 {% endhighlight %}
 
+{% highlight js %}
+
+
+// Enable allowEditing for TreeView control as follows.
+<script type="text/javascript">
+            $("#treeView").ejTreeView({ allowEditing: true });
+</script>
+
+{% endhighlight %}
 
 
 2. The following screenshot displays the appearance of Editing-cut-copy-paste the node in TreeView component.

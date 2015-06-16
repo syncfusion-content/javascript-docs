@@ -36,7 +36,7 @@ The following screenshot demonstrates the functionality of **Slider** control. B
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
       <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -45,7 +45,7 @@ The following screenshot demonstrates the functionality of **Slider** control. B
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -177,14 +177,54 @@ The following screenshot demonstrates the functionality of **Slider** control. B
 
 
 
-<table>
-<tr>
-<td>
-&lt;script type="text/javascript"&gt;    var priceObj, countObj, priceValue = 0, target;    $(function () {        $('#selectmobile').ejDropDownList({            targetID: "mobileList",            width: "150px"        });        var pricevalue = 25, interestvalue = 4, priceValue = 1;        $("#priceSlider").ejSlider({            height: 16,            value: pricevalue,            minValue: 10000,            maxValue: 50000,            incrementStep: 1,            change: "onchange",            slide: "onchange"        });        $("#countSlider").ejSlider({            height: 16,            value: priceValue,            minValue: 1,            maxValue: 20,            incrementStep: 1,            change: "onchange",            slide: "onchange"        });        mobObj = $("#selectmobile").data('ejDropDownList');        priceObj = $('#priceSlider').data('ejSlider');        countObj = $('#countSlider').data('ejSlider');        calculate();    });</td></tr>
-<tr>
-<td>
-    function onchange(args) {        this.wrapper.prev().children('span.value').html(args.value);        calculate();    }    function calculate() {        var price = priceObj.getValue();        var mob = mobObj.getValue();        var count = countObj.getValue();        $('#EventLog').html("Mobile is " + mob + "  Price is  Rs" + price + "  Count is  " + count);    }&lt;/script&gt;</td></tr>
-</table>
+{% highlight js %}
+
+
+   <script type="text/javascript">
+    var priceObj, countObj, priceValue = 0, target;
+    $(function () {
+        $('#selectmobile').ejDropDownList({
+            targetID: "mobileList",
+            width: "150px"
+        });
+        var pricevalue = 25, interestvalue = 4, priceValue = 1;
+        $("#priceSlider").ejSlider({
+            height: 16,
+            value: pricevalue,
+            minValue: 10000,
+            maxValue: 50000,
+            incrementStep: 1,
+            change: "onchange",
+            slide: "onchange"
+        });
+        $("#countSlider").ejSlider({
+            height: 16,
+            value: priceValue,
+            minValue: 1,
+            maxValue: 20,
+            incrementStep: 1,
+            change: "onchange",
+            slide: "onchange"
+        });
+        mobObj = $("#selectmobile").data('ejDropDownList');
+        priceObj = $('#priceSlider').data('ejSlider');
+        countObj = $('#countSlider').data('ejSlider');
+        calculate();
+    });
+   
+    function onchange(args) {
+        this.wrapper.prev().children('span.value').html(args.value);
+        calculate();
+    }
+    function calculate() {
+        var price = priceObj.getValue();
+        var mob = mobObj.getValue();
+        var count = countObj.getValue();
+        $('#EventLog').html("Mobile is " + mob + "  Price is  Rs" + price + "  Count is  " + count);
+    }
+     </script>
+
+{% endhighlight %}
 
 
 The following screenshot displays a **Mobile Purchase** using **Slider**.

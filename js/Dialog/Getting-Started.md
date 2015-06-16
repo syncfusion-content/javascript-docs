@@ -34,7 +34,7 @@ The **Essential JavaScript Dialog** control displays a **Dialog** window within 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
          <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -43,7 +43,7 @@ The **Essential JavaScript Dialog** control displays a **Dialog** window within 
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -79,13 +79,13 @@ The **Essential JavaScript Dialog** control displays a **Dialog** window within 
 {% highlight js %}
 
 
-    <script type="text/javascript">
-        $(function () {
-            // document ready
-            // Initialize Dialog control creation
-            $("#loginForm").ejDialog();
-        });
-                   </script> 
+<script type="text/javascript">
+    $(function () {
+        // document ready
+        // Initialize Dialog control creation
+        $("#loginForm").ejDialog();
+    });
+</script> 
 
 
 {% endhighlight %}
@@ -239,12 +239,12 @@ Render the dialog inside **&lt;script&gt;** tag after updating the dialog conten
 
 {% highlight js %}
 
-
-$(function () {
+<script>
+        $(function () {
             // declaration
             $("#loginForm").ejDialog();
         });
-
+</script>
 
 
 {% endhighlight %}
@@ -269,17 +269,17 @@ To remove the header and resizable options from dialog use the **enableResize** 
 
 {% highlight js %}
 
-
-$(function () {
+<script>
+        $(function () {
             // declaration
             $("#loginForm").ejDialog({
-width:"330px", // To set the width to Dialog control.
+                    width:"330px", // To set the width to Dialog control.
                     showHeader:false, // To remove Dialog Header from dialog
-enableResize:false // To remove Resizable option from dialog
+                    enableResize:false // To remove Resizable option from dialog
             });
         });
 
-
+</script>
 
 {% endhighlight %}
 
@@ -323,70 +323,70 @@ When the validation fails, set args.cancel value as ‘true’. This prevents th
 {% highlight js %}
 
 
-    <script type="text/javascript">
-        $(function () {
-            // declaration
-            $("#loginForm").ejDialog({
-                width: "330px", // To set the width to Dialog control.
-                showHeader: false, // To remove Dialog Header from dialog.
-                enableResize: false, // To remove Resizable option from dialog.
-                beforeClose: "onValidation" //Bind beforeClose event to onValidation function.
-            });
-
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#loginForm").ejDialog({
+            width: "330px", // To set the width to Dialog control.
+            showHeader: false, // To remove Dialog Header from dialog.
+            enableResize: false, // To remove Resizable option from dialog.
+            beforeClose: "onValidation" //Bind beforeClose event to onValidation function.
         });
 
-        //onSignUp function trigger when click on Sign up Button.
+    });
 
-        function onSignUp() {
-            var obj = $("#loginForm").data("ejDialog");
-            obj.close(); 
+    //onSignUp function trigger when click on Sign up Button.
+
+    function onSignUp() {
+        var obj = $("#loginForm").data("ejDialog");
+        obj.close(); 
+    }
+
+    // onValidation function trigger before close the dialog.
+
+    function onValidation(args) {
+        var error = [], re, regEmail;
+        //Regular expression for validating string type value
+        re = /^[A-Za-z]+$/;
+        //Regular expression for validating email address value
+        regEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        //Validating FirstName and Lastname field
+        $('#loginForm input.name[type=text]').each(function (n, element) {
+            if (($(element).val() == ''))
+                error.push('Please enter your ' + element.name);
+            else if (!re.test($(element).val()))
+                error.push(element.name + ' must have a string value');
+        });
+
+        //Validating email and re-enter email field
+        $('#loginForm input.email[type=text]').each(function (n, element) {
+            if (($(element).val() == ''))
+                error.push('Please enter your ' + element.name + ' address');
+            else if (!regEmail.test($(element).val()))
+                error.push('Please enter a valid email address');
+        });
+        !($("#loginForm input#email").val() === $("#loginForm input#reptemail").val()) ? error.push("Email address not matched") : "";
+
+        //Validating password field
+        if ($("#loginForm input#password").val() == '')
+            error.push('Please provide a password');
+        else if (($('#loginForm input#password').val().length < 5) || ($('#loginForm input#password').val().length > 8))
+            error.push('Your password must be at least 5 and at most 8 characters long');
+
+        //Creating error message and append in dialog 
+        ulTag = $(document.createElement('ul'));
+        for (var i = 0; i < error.length; i++) {
+            liTag = $(document.createElement('li'));
+            liTag.append("<span>-" + error[i] + "</span>");
+            ulTag.append(liTag);
         }
 
-        // onValidation function trigger before close the dialog.
-
-        function onValidation(args) {
-            var error = [], re, regEmail;
-            //Regular expression for validating string type value
-            re = /^[A-Za-z]+$/;
-            //Regular expression for validating email address value
-            regEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-            //Validating FirstName and Lastname field
-            $('#loginForm input.name[type=text]').each(function (n, element) {
-                if (($(element).val() == ''))
-                    error.push('Please enter your ' + element.name);
-                else if (!re.test($(element).val()))
-                    error.push(element.name + ' must have a string value');
-            });
-
-            //Validating email and re-enter email field
-            $('#loginForm input.email[type=text]').each(function (n, element) {
-                if (($(element).val() == ''))
-                    error.push('Please enter your ' + element.name + ' address');
-                else if (!regEmail.test($(element).val()))
-                    error.push('Please enter a valid email address');
-            });
-            !($("#loginForm input#email").val() === $("#loginForm input#reptemail").val()) ? error.push("Email address not matched") : "";
-
-            //Validating password field
-            if ($("#loginForm input#password").val() == '')
-                error.push('Please provide a password');
-            else if (($('#loginForm input#password').val().length < 5) || ($('#loginForm input#password').val().length > 8))
-                error.push('Your password must be at least 5 and at most 8 characters long');
-
-            //Creating error message and append in dialog 
-            ulTag = $(document.createElement('ul'));
-            for (var i = 0; i < error.length; i++) {
-                liTag = $(document.createElement('li'));
-                liTag.append("<span>-" + error[i] + "</span>");
-                ulTag.append(liTag);
-            }
-
-            //Check Whether valiadation Success or Not
-            (error.length != 0) ? ($(".errormsg").html(ulTag), args.cancel = true) // set args.cancel = true prevent dialog close
-            : alert("Sign Up Successfully Completed");
-        }
-    </script>
+        //Check Whether valiadation Success or Not
+        (error.length != 0) ? ($(".errormsg").html(ulTag), args.cancel = true) // set args.cancel = true prevent dialog close
+        : alert("Sign Up Successfully Completed");
+    }
+</script>
 
 
 
@@ -400,7 +400,7 @@ When the validation fails, set args.cancel value as ‘true’. This prevents th
 
 {% highlight css %}
 
-
+<style>
         .errormsg li {
             list-style: none outside none;
         }
@@ -412,7 +412,7 @@ When the validation fails, set args.cancel value as ‘true’. This prevents th
             margin: 2px 0;
             font-weight: normal;
         }
-
+</style>
 
 
 {% endhighlight %}

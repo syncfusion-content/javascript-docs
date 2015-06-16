@@ -29,13 +29,11 @@ You can color, all the leaf nodes with the same color by setting the **color** v
 
 {% highlight js %}
 
-**[JS]**
-**[HTML]**
        jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({
                 // ...   
-**uniColorMapping: {**
+                **uniColorMapping: {**
                     **color: "Crimson"**
                 **}**,         
                 // ...   
@@ -56,13 +54,11 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 {% highlight js %}
 
-**[JS]**
-**[HTML]**
         jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({
                 // ...   
-**rangeColorMapping: [**
+                **rangeColorMapping: [**
                         **{ color: "#77D8D8", from: "0", to: "1" },**
                         **{ color: "#AED960", from: "0", to: "2" },**
                         **{ color: "#FFAF51", from: "0", to: "3" },**
@@ -86,9 +82,6 @@ You can differentiate all the leaf nodes using the **desaturationColorMapping** 
 
 {% highlight js %}
 
-**[JS]**
-
-**[HTML]**
 
         jQuery(function ($) {
 
@@ -119,8 +112,6 @@ You can customize the **Leaf level TreeMap****items** using **leafItemsSetting**
 
 {% highlight js %}
 
-**[JS]**
-**[HTML]**
 <script type="text/javascript">
  jQuery(function ($) {
             $( "#treemapContainer").ejTreeMap({
@@ -137,26 +128,26 @@ You can customize the **Leaf level TreeMap****items** using **leafItemsSetting**
                   { groupPath: "Continent", groupGap: 5}
                 ],
 
-**leafItemSettings: { labelPath: "Region" },**
-  **showTooltip:true,**
+                **leafItemSettings: { labelPath: "Region" },**
+                **showTooltip:true,**
                 **tooltipTemplate:'template'** 
             });
         });
 
 </script>
 <script  id="template" type="application/jsrender">
-        <div  style="margin-left:17px;margin-top:-45px;">      
-<div style="height:auto;width:auto;background:black;border-radius:3px;opacity:0.6">
-                 <div style="margin-top:-20px;margin-left:9px;padding-top:3px;margin-right:9px;">
-                     <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">**{{:**Region**}}**</label>
-                 </div>
-                 <div style="height:10px;"></div>
-                 <div style="margin-top:-10px;margin-left:9px;margin-right:9px;padding-bottom:3px;">
-                     <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">**{{:**Population**}}**</label>
-                 </div>
-             </div>
-        </div>            
-    </script>
+    <div  style="margin-left:17px;margin-top:-45px;">      
+        <div style="height:auto;width:auto;background:black;border-radius:3px;opacity:0.6">
+            <div style="margin-top:-20px;margin-left:9px;padding-top:3px;margin-right:9px;">
+                <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">**{{:**Region**}}**</label>
+            </div>
+            <div style="height:10px;"></div>
+            <div style="margin-top:-10px;margin-left:9px;margin-right:9px;padding-bottom:3px;">
+                <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">**{{:**Population**}}**</label>
+            </div>
+        </div>
+    </div>            
+</script>
 
 
 {% endhighlight %}

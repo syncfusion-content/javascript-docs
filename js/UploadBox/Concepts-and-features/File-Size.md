@@ -19,7 +19,7 @@ In the **Uploadbox** control, you can browse files with the size going up to gig
 
 {% highlight html %}
 
-**[HTML]**
+
 <div class="control">
      <div id="Uploadbox"></div>
 </div>
@@ -35,7 +35,7 @@ In the **Uploadbox** control, you can browse files with the size going up to gig
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <script type="text/javascript">
         $("#UploadDefault").ejUploadbox({
             saveUrl: "save.ashx",

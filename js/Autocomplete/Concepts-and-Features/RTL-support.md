@@ -19,7 +19,6 @@ The following steps explain how you can enable the **right-to-left** property fo
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -31,16 +30,16 @@ The following steps explain how you can enable the **right-to-left** property fo
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
     $('#autocomplete').ejAutocomplete({
                 dataSource: countries,
                 width: 205,
                 popupHeight: "80px",
-**enableRTL: true,**
+                enableRTL: true,
                 template: '<div class="flag ${sprite}"> </div>' +
                         '<div class="txt"> ${text} </div>'
             });
-
+</script>
 
 
 {% endhighlight %}

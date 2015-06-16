@@ -15,37 +15,44 @@ documentation: ug
 
 The **height** property is used to set height of the **Toolbar**. Set the value to this property as **number** or **string** type.
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ height: 300 });    });&lt;/script&gt;</td></tr>
-<tr>
-<td>
-<b>                                OR</b><b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ height: "300px" });    });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#toolbarcontent").ejToolbar({ height: 300 });
+    });
+</script>
+
+{% endhighlight %}
+
 ### Width
 
 The **width** property is used to set width of the **Toolbar**. Set the value to this property as **number** or **string** type.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ width: 300 });    });&lt;/script&gt;</td></tr>
-<tr>
-<td>
-<b>                             OR</b><b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ width: "300px" });    });&lt;/script&gt;</td></tr>
-</table>
+
+<script type="text/javascript">
+    $(function () {
+        // declaration
+        $("#toolbarcontent").ejToolbar({ height: "300px" });
+    });
+</script>
+
+{% endhighlight %}
+
 ## Enabling Rounded Corner 
 
 The **showRoundedCorner** property is used to enable rounded corner for **Toolbar**. Set the value to this property as **Boolean** type.
 
 
-
 {% highlight js %}
 
-**[JS]**
+
+
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -73,7 +80,8 @@ The **enableSeparator** property is used to set separator between **Toolbar** it
 
 {% highlight js %}
 
-**[JS]**
+
+
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -128,7 +136,8 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
 {% highlight js %}
 
-**[JS]**
+
+
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -143,7 +152,8 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
 {% highlight css %}
 
-**[CSS]**
+
+
 <style>
     .gradient-lime {
         background-color: yellowgreen;

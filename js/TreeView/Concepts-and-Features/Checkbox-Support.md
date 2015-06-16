@@ -15,14 +15,69 @@ The following steps explain how you can enable the **showCheckbox** property for
 
 1. In the HTML page, add &lt;ul&gt; and &lt;li&gt; elements to configure **TreeView**.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;ul id="treeView"&gt;        &lt;li class="expanded"&gt;            Favorites            &lt;ul&gt;                <li>Desktop</li>                <li>Downloads</li>                <li>Recent places</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li class="expanded"&gt;            Libraries            &lt;ul&gt;                &lt;li&gt;                    Documents                    &lt;ul&gt;                        <li>My Documents</li>                        <li>Public Documents</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Pictures                    &lt;ul&gt;                        <li>My Pictures</li>                        <li>Public Pictures</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Music                    &lt;ul&gt;                        <li>My Music</li>                        <li>Public Music</li>                    &lt;/ul&gt;                &lt;/li&gt;                <li>Subversion</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;            Computer            &lt;ul&gt;                <li>Folder(C)&lt;/li&gt;                <li>Folder(D)&lt;/li&gt;                <li>Folder(F)&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;    &lt;/ul&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Enable showCheckbox for TreeView control as follows.        $("#treeView").ejTreeView({showCheckbox: true });</td></tr>
-</table>
+{% highlight html %}
+
+
+
+<ul id="treeView">
+        <li class="expanded">
+            Favorites
+            <ul>
+
+                <li>Desktop</li>
+                <li>Downloads</li>
+                <li>Recent places</li>
+            </ul>
+        </li>
+        <li class="expanded">
+            Libraries
+            <ul>
+                <li>
+                    Documents
+                    <ul>
+                        <li>My Documents</li>
+                        <li>Public Documents</li>
+                    </ul>
+                </li>
+                <li>
+                    Pictures
+                    <ul>
+                        <li>My Pictures</li>
+                        <li>Public Pictures</li>
+                    </ul>
+                </li>
+                <li>
+                    Music
+                    <ul>
+                        <li>My Music</li>
+                        <li>Public Music</li>
+                    </ul>
+                </li>
+                <li>Subversion</li>
+            </ul>
+        </li>
+        <li>
+            Computer
+            <ul>
+                <li>Folder(C)</li>
+                <li>Folder(D)</li>
+                <li>Folder(F)</li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+// Enable showCheckbox for TreeView control as follows.
+<script type="text/javascript">
+    $("#treeView").ejTreeView({showCheckbox: true });
+</script>
+
+{% endhighlight %}
 
 
 The following image is the output for TreeView when showCheckbox is set to “True”.
@@ -35,11 +90,10 @@ To overcome the default functionality of **TreeView**, when you don’t want the
 
 {% highlight js %}
 
-**[JavaScript]**
 
-    $("#treeView").ejTreeView({ **autoCheckParentNode**: false,showCheckbox: true});
-
-
+<script type="text/javascript">
+    $("#treeView").ejTreeView({ autoCheckParentNode: false,showCheckbox: true});
+</script>
 
 {% endhighlight %}
 
@@ -49,10 +103,10 @@ You can specify the **Checked Nodes** in **TreeView** initially by using the pro
 
 {% highlight js %}
 
-**[JavaScript]**
-    $("#treeView").ejTreeView({ showCheckbox: true, **checkedNodes**: [1, 2] });
 
-
+<script type="text/javascript">
+    $("#treeView").ejTreeView({ showCheckbox: true, checkedNodes: [1, 2] });
+</script>
 
 {% endhighlight %}
 

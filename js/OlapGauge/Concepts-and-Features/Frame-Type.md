@@ -21,7 +21,6 @@ By default, frame type is **Full Circle**. You can also set frame type with **fr
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", **frameType:"fullcircle",**
@@ -98,8 +97,6 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 You can set frame type as **halfCircle** with the help of **frameType** property to visualize the gauge control in half circle.
 
 {% highlight js %}
-
-[JS]
 
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,

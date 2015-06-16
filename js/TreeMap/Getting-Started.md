@@ -54,8 +54,8 @@ Create a **&lt;div&gt;** tag with a specific id and set the height and width to 
 {% highlight js %}
 
 <body>
-<div id="treemapContainer" style="width: 700px; height: 430px;"></div>
-    </body>
+  <div id="treemapContainer" style="width: 700px; height: 430px;"></div>
+</body>
 
 
 {% endhighlight %}
@@ -72,14 +72,13 @@ Add a **&lt;script&gt;** tag anywhere in a webpage and initialize **TreeMap** as
 
 {% highlight html %}
 
-**[HTML]**
 <script type="text/javascript">
-        jQuery(function ($) {	
-$("#treemapContainer").ejTreeMap({
-dataSource: population_data,
-                weightValuePath: "Population",
-});
-});
+  jQuery(function ($) {	
+    $("#treemapContainer").ejTreeMap({
+      dataSource: population_data,
+      weightValuePath: "Population",
+    });
+  });
 </script>
 
 
@@ -127,22 +126,24 @@ The final **HTML** file is illustrated in the following code sample.
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	    <title></title>    
-<!--  jquery script  -->
-                <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
-                <!-- Essential JS UI widget -->
-                <script src="http://cdn.syncfusion.com/13.1.0.21/js/
+    <title></title>    
+    <!--  jquery script  -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+    
+    <!-- Essential JS UI widget -->
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/
 ej.widgets.all.min.js"></script>
 
-               <!-- JS Render widget -->
-               <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>
-               <!-- Essential JS theme -->
-               <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" type="text/javascript"></script>
+    <!-- JS Render widget -->
+    <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>
+    
+    <!-- Essential JS theme -->
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" type="text/javascript"></script>
 
-<!-- TreeMapData -->
-               <script type="text/javascript">
+    <!-- TreeMapData -->
+    <script type="text/javascript">
 
-**var population_data = [**
+    **var population_data = [**
                    { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
                    { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
                    { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
@@ -159,18 +160,19 @@ ej.widgets.all.min.js"></script>
                    { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
                    ]
 
-               </script>
+    </script>
 </head>
-	<body>	   
-<div id="treemapContainer" style="width: 700px; height: 430px;"></div>
-<script type="text/javascript">
-        jQuery(function ($) {	
-$("#treemapContainer").ejTreeMap({
-dataSource: population_data,
-                weightValuePath: "Population",
-});
-});
-       </script>	        
+<body>	   
+  <div id="treemapContainer" style="width: 700px; height: 430px;"></div>
+  
+  <script type="text/javascript">
+      jQuery(function ($) {	
+          $("#treemapContainer").ejTreeMap({
+              dataSource: population_data,
+              weightValuePath: "Population",
+          });
+      });
+  </script>	        
 </body>
 </html>
 
@@ -199,7 +201,6 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 {% highlight html %}
 
-**[HTML]**
 <script type="text/javascript">
 jQuery(function ($) {
 
@@ -234,7 +235,6 @@ The following code sample explains how to customize TreeMap appearance using Ran
 
 {% highlight html %}
 
-**[HTML]**
 <script type="text/javascript">
            jQuery(function ($) {
 
@@ -274,7 +274,6 @@ You can customize the Leaf level TreeMap items using leafItemSettings. The Label
 
 {% highlight html %}
 
-**[HTML]**
     <script type="text/javascript">
       jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({
@@ -316,7 +315,6 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
 
 {% highlight html %}
 
-**[HTML]**
     <script type="text/javascript">
       jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({

@@ -13,28 +13,56 @@ documentation: ug
 
 The **“enabled”** property enables or disables the **Rotator** control. The default value is ‘**true**’. The value set to this property is **Boolean** type. You can refer the following code example to set this property.
 
-<table>
-<tr>
-<td>
-<b>[HTML]               </b> &lt;div class="cols-sample-area"&gt;    &lt;ul id="slidercontent" accesskey="e"&gt;        &lt;li&gt;            &lt;img class="image" src="../images/rotator/nature.jpg" title="Nature" /&gt;&lt;/li&gt;        &lt;li&gt;            &lt;img class="image" src="../images/rotator/bird.jpg" title="Beautiful Bird" /&gt;&lt;/li&gt;        &lt;li&gt;            &lt;img class="image" src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" /&gt;&lt;/li&gt;        &lt;li&gt;            &lt;img class="image" src="../images/rotator/seaview.jpg" title="Sea-View" /&gt;&lt;/li&gt;        &lt;li&gt;            &lt;img class="image" src="../images/rotator/snowfall.jpg" title="Snow Fall" /&gt;&lt;/li&gt;        &lt;li&gt;            &lt;img class="image" src="../images/rotator/card.jpg" title="Credit Card" /&gt;&lt;/li&gt;        &lt;li&gt;            &lt;img class="image" src="../images/rotator/night.jpg" title="Colorful Night" /&gt;&lt;/li&gt;    &lt;/ul&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#slidercontent").ejRotator({ <b>enabled: true</b> });    });&lt;/script&gt;</td></tr>
-</table>
+  {% highlight html %}
+
+  
+  <div class="cols-sample-area">
+	    <ul id="slidercontent" accesskey="e">
+	        <li>
+	            <img class="image" src="../images/rotator/nature.jpg" title="Nature" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/bird.jpg" title="Beautiful Bird" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/seaview.jpg" title="Sea-View" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/snowfall.jpg" title="Snow Fall" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/card.jpg" title="Credit Card" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/night.jpg" title="Colorful Night" /></li>
+	    </ul>
+	</div>
+
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+  
+  	<script type="text/javascript">
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ enabled: true });
+	    });
+	</script>
+
+  {% endhighlight %}
+  
 ## Responsive rotator
 
 The “isResponsive” property resizes the Rotator when the browser window is resized. The default value is ‘false’. The value set to this property is Boolean. 
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ **isResponsive: true** });
+        $("#slidercontent").ejRotator({ isResponsive : true });
     });
 </script>
-
 
 {% endhighlight %}
 
@@ -44,11 +72,10 @@ The **Rotator** Items continuously rotate without user interference by enable th
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ **enableAutoPlay: true** });
+        $("#slidercontent").ejRotator({ enableAutoPlay: true });
     });
 </script>
 
@@ -61,11 +88,10 @@ The **stopOnHover** property pauses the **auto play** while hover on the **Rotat
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ enableAutoPlay: true, **stopOnHover: true** });
+        $("#slidercontent").ejRotator({ enableAutoPlay: true, stopOnHover: true });
     });
 </script>
 
@@ -94,14 +120,13 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
         $("#slidercontent").ejRotator({
-**pagerPosition: ej.Rotator.PagerPosition.BottomLeft**,
+ pagerPosition: ej.Rotator.PagerPosition.BottomLeft,
             slideWidth: "630px",
-            slideHeight: "350px",
+            slideHeight: "350px"
         });
     });
 </script>
@@ -119,11 +144,10 @@ The **“showPager”** property turns on or off the **pager** support in the **
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ **showPager: false** });
+        $("#slidercontent").ejRotator({ showPager: false });
     });
 </script>
 
@@ -142,11 +166,10 @@ The “**showPlayButton**” property enables play / pause button on **Rotator**
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "600px", **showPlayButton: true** });
+        $("#slidercontent").ejRotator({ slideWidth: "600px", showPlayButton: true });
     });
 </script>
 
@@ -163,11 +186,10 @@ The “**showNavigateButton**” property turns on or off the slide buttons (nex
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", **showNavigateButton: true** });
+        $("#slidercontent").ejRotator({ slideWidth: "500px", showNavigateButton: true });
     });
 </script>
 
@@ -184,11 +206,10 @@ When the **Rotator** Item is an image, you can specify a caption for the **Rotat
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", **showCaption: true** });
+        $("#slidercontent").ejRotator({ slideWidth: "500px", showCaption: true });
     });
 </script>
 

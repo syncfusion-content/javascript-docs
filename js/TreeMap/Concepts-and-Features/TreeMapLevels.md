@@ -27,15 +27,13 @@ You can use **groupGap** property to separate the items from every flat level a
 
 {% highlight js %}
 
-**[JS]**
-**[HTML]**
         jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({
                 dataSource: population_data,
                 colorValuePath: "Growth",
                 weightValuePath: "Population",
-**levels: [**
+                **levels: [**
                      **{ groupPath: "Continent", groupGap: 5}**              
                 **]**
 
@@ -56,8 +54,6 @@ You can use **groupGap** property to separate the items from every flat level a
 
 {% highlight js %}
 
-**[JS]**
-**[HTML]**
         jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({
@@ -66,7 +62,7 @@ You can use **groupGap** property to separate the items from every flat level a
             });
         });
 
-**var population_data =**  [
+        **var population_data =**  [
             {Asia:[
             {Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
             {Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
@@ -86,7 +82,7 @@ You can use **groupGap** property to separate the items from every flat level a
             {Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
             {Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
             ]}
-];
+        ];
 
 
 

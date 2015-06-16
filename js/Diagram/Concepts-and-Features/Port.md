@@ -128,7 +128,7 @@ The following code illustrates how to set port constraints.
 
 {% highlight js %}
 
-//set port’s “Connect” constraint
+//set port’s "Connect" constraint
 var port = { constraints: ej.datavisualization.Diagram.PortConstraints.Connect };
 
 {% endhighlight %}

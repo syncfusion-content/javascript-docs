@@ -17,16 +17,27 @@ The following steps explains you to change the Range of the **TimePicker**.
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>       &lt;input type="text" id="time" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// Use minTime and maxTime property to change the Range of the TimePicker.</b>$(function () {                $('#time').ejTimePicker({                 minTime: "10:00 AM",                maxTime: "9:00 PM"        }); });</td></tr>
-</table>
+       <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+// Use minTime and maxTime property to change the Range of the TimePicker.
+<script>
+$(function () {
+       $('#time').ejTimePicker({ 
+             minTime: "10:00 AM",
+             maxTime: "9:00 PM"
+       });
+});
+</script>
+{% endhighlight %}
 
 
 Execute the above code to render the following output.

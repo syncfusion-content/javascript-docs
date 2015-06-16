@@ -69,17 +69,34 @@ The following steps explains you to enable keyboard interaction for a dropdown t
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget and enable keyboard interaction by setting the **accesskey** property
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>           &lt;input type="text" id="dropdowmlist" accesskey="j"/&gt;           &lt;div id="list"&gt;               &lt;ul&gt;                 <li>Art</li>                 <li>Architecture</li>                 <li>Biography</li>                 <li>comics</li>                 <li>Sports</li>                 <li>Science</li>            &lt;/ul&gt;           &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Render <b>Dropdownlist</b> control    $('#dropdownlist”).ejDropDownList({                width: 200,                targetID: "list"            });</td></tr>
-</table>
+       <input type="text" id="dropdowmlist" accesskey="j"/>
+       <div id="list">
+           <ul>
+             <li>Art</li>
+             <li>Architecture</li>
+             <li>Biography</li>
+             <li>comics</li>
+             <li>Sports</li>
+             <li>Science</li>
+           </ul>
+       </div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+<script>
+    // Render Dropdownlist control
+    $('#dropdownlist”).ejDropDownList({
+                width: 200,
+                targetID: "list"
+    });
+</script>
+
+{% endhighlight %}
 
 Run the sample, press Alt + J to focus in the **DropdownList** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 

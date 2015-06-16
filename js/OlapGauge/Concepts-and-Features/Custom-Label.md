@@ -21,7 +21,6 @@ You can set the location of the **custom label** in circular gauge using “**lo
 
 {% highlight js %}
 
-[JS]
 <script type="text/javascript">
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
@@ -100,7 +99,6 @@ You can customize the **custom label** font with font style, font family, and si
 
 {% highlight js %}
 
-[JS]
 <script type="text/javascript">
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,

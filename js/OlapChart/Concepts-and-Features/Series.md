@@ -22,7 +22,6 @@ A combination Chart combines two or more series types in a single Chart. But the
 
 {% highlight js %}
 
-[JS] 
 $(function () {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", animation: true, commonSeriesOptions: {
@@ -50,8 +49,7 @@ function onSeriesRenders(args) {
 **OlapChart** series is customized using fill, border width and border color. The stroke-width of the line, spline series is customized using **width** property of series.  The series color is customized using **fill** property of series. The border color and width of the column/bar is customized using **border** property of series. And the column/bar chart are customized using the ‘**fill’** and ‘**border’** property of each point.
 
 {% highlight js %}
-
-[JS] 
+ 
 $(function () {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",

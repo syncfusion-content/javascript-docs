@@ -43,19 +43,39 @@ The following steps explains you on how to configure the **sliderType** property
 
 * In an **HTML** page, specify the **&lt;div&gt;** elements to render the **RangeSlider** and **MinRange****Slider**.
 
-
-
-<table>
-<tr>
-<td>
-[<b>HTML</b>]        <div class="txt">Range</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt;        &lt;br /&gt;        &lt;br /&gt;        <div class="txt">Min-Range</div>        &lt;div id="minSlider"&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-[<b>JavaScript</b>]// When initializing the Slider components, configure the sliderType property as follows.    &lt;script&gt;        $("#minSlider").ejSlider({<b>            sliderType: ej.SliderType.MinRange,</b>            value: 60,            width:"500"        });        $("#rangeSlider").ejSlider({<b>            sliderType: ej.SliderType.Range,</b>            values: [30, 60],            width:"500"        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
 
 
+    <div class="txt">Range</div>
+        <div id="rangeSlider"></div>
+        <br />
+        <br />
+        <div class="txt">Min-Range</div>
+        <div id="minSlider"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+
+// When initializing the Slider components, configure the sliderType property as follows.
+	    
+<script type="text/javascript">
+        $("#minSlider").ejSlider({
+            sliderType: ej.SliderType.MinRange,
+            value: 60,
+            width:"500"
+        });
+        $("#rangeSlider").ejSlider({
+            sliderType: ej.SliderType.Range,
+            values: [30, 60],
+            width:"500"
+        });
+        </script>
+	
+{% endhighlight %}
 
 Execute the above code example to render the following output.
 

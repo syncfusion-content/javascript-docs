@@ -19,7 +19,6 @@ You can further customize **Ticks** by setting color, width and height.
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             load: "loadGaugeTheme", backgroundColor: "transparent",
@@ -87,7 +86,6 @@ You can change the distance from the scale and the **Ticks** using “**distance
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
         backgroundColor: "transparent", 
@@ -164,7 +162,6 @@ You can set the height and width of the **Ticks** using the “**tickWidth**” 
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
          backgroundColor: "transparent", 
@@ -241,7 +238,6 @@ You can hide the **Ticks** that indicate the range values using “**showTicks**
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
         backgroundColor: "transparent", 

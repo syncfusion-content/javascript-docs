@@ -15,25 +15,50 @@ The following steps explains you the behaviour of template support with **ListBo
 
 * In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widget.
 
-> {% include image.html url="/js/Listbox/Concepts-and-Features/Template-Support_images/Template-Support_img1.png" Caption=""%}_**Note: Images for this sample are available in ‘installed location/images/Employee’**_ 
+> {% include image.html url="/js/Listbox/Concepts-and-Features/Template-Support_images/Template-Support_img1.png" Caption=""%}
+
+_**Note: Images for this sample are available in ‘installed location/images/Employee’**_ 
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]   </b>&lt;div id="controlitem"&gt;    <h3>Template Support</h3>    &lt;div id="selectexperts"&gt;&lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>// </b>Initialize the control in <b>JavaScript </b>&lt;script type="text/javascript"&gt;    var target;    var empList = [       { text: "Erik Linden", eimg: "3", desig: "Representative", tooltip: "Representative", country: "England" }, { text: "John Linden", eimg: "6", tooltip: "Manager", desig: "Representative", country: "Norway" },          { text: "Louis", eimg: "7", tooltip: "CEO", desig: "Representative", country: "Australia" }, { text: "Lawrence", eimg: "8", tooltip: "President", desig: "Representative", country: "India" }];    $(function () {        $('#selectexperts').ejListBox({            dataSource: empList, height: "245", enableTooltip: true,            <b>template: '&lt;div title="${tooltip}"&gt;&lt;img class="eimg" src="images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/&gt;' +</b><b>                        '&lt;div class="ename"&gt; ${text} &lt;/div&gt; &lt;div class="desig"&gt; ${desig} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;&lt;/div&gt;'</b>        });    });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+<div id="controlitem">
+    <h3>Template Support</h3>
+    <div id="selectexperts"></div>
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+// Initialize the control in JavaScript 
+
+<script type="text/javascript">
+    var target;
+    var empList = [
+       { text: "Erik Linden", eimg: "3", desig: "Representative", tooltip: "Representative", country: "England" }, { text: "John Linden", eimg: "6", tooltip: "Manager", desig: "Representative", country: "Norway" },
+          { text: "Louis", eimg: "7", tooltip: "CEO", desig: "Representative", country: "Australia" }, { text: "Lawrence", eimg: "8", tooltip: "President", desig: "Representative", country: "India" }];
+    $(function () {
+
+        $('#selectexperts').ejListBox({
+            dataSource: empList, height: "245", enableTooltip: true,
+            template: '<div title="${tooltip}"><img class="eimg" src="images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/>' +
+                        '<div class="ename"> ${text} </div> <div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>'
+        });
+
+    });
+</script>
+
+{% endhighlight %}
 
 Customize the template in **CSS**. 
 
 
 {% highlight css %}
 
-[CSS]  
+  
 <style>
     .eimg {
         margin: 0;

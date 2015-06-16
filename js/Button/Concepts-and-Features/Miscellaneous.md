@@ -17,15 +17,26 @@ The following steps explains you the details about rendering the button with spe
 
 1. In the **HTML** page, add the following button elements to configure **Button** widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b><button id="button_text">button</button></td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            $("#button_text").ejButton({                size: "mini",                //used to set the text content for button<b>                text: "Enter"</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+    <button id="button_text">button</button>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+   <script type="text/javascript">
+        $(function () {
+            $("#button_text").ejButton({
+                size: "mini",
+                //used to set the text content for button
+                text: "Enter"
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 In the above code, the content of button “button” is replaced by the text value “Enter” that is given using text property.
 
@@ -41,14 +52,26 @@ The following steps explains you the details about rendering the button with rou
 
 1. In the **HTML** page, add the following button elements to configure **Button** widget.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b><button id="button_roundedCorner">button</button></td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            $("#button_roundedCorner").ejButton({                size: "mini",                //Enable or disable the rounded corner for button          <b>                showRoundedCorner: true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+
+     <button id="button_roundedCorner">button</button>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+   <script type="text/javascript">
+        $(function () {
+            $("#button_roundedCorner").ejButton({
+                size: "mini",
+                //Enable or disable the rounded corner for button          
+                showRoundedCorner: true
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

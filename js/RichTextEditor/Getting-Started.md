@@ -105,7 +105,7 @@ The following code example is used to render the additional in-built toolbar ite
 
 {% highlight js %}
 
-    <script type="text/javascript">
+   <script type="text/javascript">
 
         $(function () {
 
@@ -203,7 +203,7 @@ When the content area is empty, you set the notification message displayed in th
 
 {% highlight html %}
 
-<div class="commentSection">
+     <div class="commentSection">
         <div class="titleSection">
             <label>Title:</label>
             <input type="text" class="input ejinput"/>
@@ -213,7 +213,7 @@ When the content area is empty, you set the notification message displayed in th
         </textarea>
         <!-- validation message display area-->
         <div class="output"></div>
-</div>
+     </div>
 
 
 {% endhighlight %}
@@ -224,6 +224,7 @@ You can specify the custom tool as previous script section with validation opera
 
 {% highlight js %}
 
+<script>
         $(function () {
             $("#feedBackEditor").ejRTE({
 
@@ -267,7 +268,7 @@ You can specify the custom tool as previous script section with validation opera
 
             });
         });
-
+</script>
 
 {% endhighlight %}
 

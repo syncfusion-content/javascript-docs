@@ -45,17 +45,23 @@ In the following code example, the **ColorPicker** popup model type is set as **
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
-<tr>
-<td>
-<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({ modelType: "palette", value: "#278787" });    });&lt;/script&gt;</td></tr>
-</table>
+    <input type="text" id="colorPicker" />    
 
+{% endhighlight %}
+
+{% highlight js %}
+
+ 
+<script>
+    jQuery(function ($) {
+        $("#colorPicker").ejColorPicker({ modelType: "palette", value: "#278787" });
+    });
+</script>
+
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
@@ -86,6 +92,7 @@ CustomPalette</td><td>
 palette: ej.ColorPicker.Palette.CustomPalette</td><td>
 The palette model renders with the specified custom color values.</td></tr>
 </table>
+
 ## basicpalette
 
 The **basicpalette** type renders with predefined color values. The **basicpalette** model has 12 different preset patterns. Each pattern consists of 50 colors and over 600 colors are available by default. 
@@ -158,16 +165,23 @@ presetType: ej.ColorPicker.PresetType.Candycrush</td></tr>
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
-<tr>
-<td>
-<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {                $("#colorPicker").ejColorPicker({ modelType: "palette", value: "#278787", presetType: "flatcolors" });    });&lt;/script&gt;</td></tr>
-</table>
+    <input type="text" id="colorPicker" />    
+
+{% endhighlight %}
+
+{% highlight js %}
+
+ 
+<script>
+    jQuery(function ($) {
+                $("#colorPicker").ejColorPicker({ modelType: "palette", value: "#278787", presetType: "flatcolors" });
+    });
+</script>
+
+{% endhighlight %}
 
 
 The following screenshot displays the output of the above code example.
@@ -182,17 +196,26 @@ The **custompalette** property is a dependent property of **palette** and **mode
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
-<tr>
-<td>
-<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({            value: "#9999ff", palette: "custompalette", modelType: "palette",            custom: ["ffffff", "ffccff", "ff99ff", "ff66ff", "ff33ff", "ff00ff", "ccffff", "ccccff","cc99ff", "cc66ff", "cc33ff", "cc00ff", "99ffff", "99ccff", "9999ff", "9966ff","9933ff", "9900ff", "ffffcc", "ffcccc"]        });    });&lt;/script&gt;</td></tr>
-</table>
+    <input type="text" id="colorPicker" />    
 
+{% endhighlight %}
+
+{% highlight js %}
+
+ 
+<script>
+    jQuery(function ($) {
+        $("#colorPicker").ejColorPicker({
+            value: "#9999ff", palette: "custompalette", modelType: "palette",
+            custom: ["ffffff", "ffccff", "ff99ff", "ff66ff", "ff33ff", "ff00ff", "ccffff", "ccccff","cc99ff", "cc66ff", "cc33ff", "cc00ff", "99ffff", "99ccff", "9999ff", "9966ff","9933ff", "9900ff", "ffffcc", "ffcccc"]
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
@@ -208,17 +231,23 @@ The following steps explain you how to get the **ColorPicker** popup in **Displa
 
 * In the **HTML** page, add a **&lt;div&gt;** element to render **ColorPicker** widget
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b> &lt;div id="colorPicker" &gt;&lt;/div&gt;    </td></tr>
-<tr>
-<td>
-<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {          $('#colorPicker').ejColorPicker({ value: "#278787", displayInline: true });    });&lt;/script&gt;</td></tr>
-</table>
+ <div id="colorPicker" ></div>    
 
+{% endhighlight %}
+
+{% highlight js %}
+
+ 
+<script>
+    jQuery(function ($) {
+          $('#colorPicker').ejColorPicker({ value: "#278787", displayInline: true });
+    });
+</script>
+
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
@@ -265,25 +294,23 @@ The following list is the twelve themes supported by ColorPicker:
 
 {% highlight html %}
 
-**[HTML]**
 
 <!doctype html>
 <html>
 <head>
     <title>Essential Studio for JavaScript : ColorPicker – Built-in Theme Support</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css)"rel="stylesheet"/>
-   <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
+    <link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css)"rel="stylesheet"/>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)
-"> </script>
+    <script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"> </script>
 </head>
 <body>
-    <div id="control">
-        <input id="colorPicker" type="text" />                        
+     <div id="control">
+         <input id="colorPicker" type="text" />                        
     </div>                
     <script>
         jQuery(function ($) {
@@ -310,16 +337,25 @@ Using this property you can override the existing styles under the theme style s
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
-<tr>
-<td>
-<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({            value: "#278787", cssClass: "Light-Blue"         });    });&lt;/script&gt;</td></tr>
-</table>
+     <input type="text" id="colorPicker" />    
+
+{% endhighlight %}
+
+{% highlight js %}
+
+ 
+<script>
+    jQuery(function ($) {
+        $("#colorPicker").ejColorPicker({
+            value: "#278787", cssClass: "Light-Blue" 
+        });
+    });
+</script>
+
+{% endhighlight %}
 
 
 * Custom Css Styles.

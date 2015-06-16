@@ -19,44 +19,64 @@ The following code example is used to add the header image for the root **Tab** 
 
 * Add the following **HTML** to render **Tab** with header image.
 
+{% highlight html %}
+
+ 
+  
+     <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><span class="dish pizzaImg"></span><a href="#pizza">Pizza Menu</a></li>
+            <li><span class="dish sandwichImg"></span><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+   
+    // Add the following script for Tab render with customizes header image.
+    <script type="text/javascript">
+            $(function () {         
+                 $("#dishtype").ejTab();    
+            });
+    </script>
 
 
-<table>
-<tr>
-<td>
-[HTML] &lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;&lt;span class="dish pizzaImg"&gt;&lt;/span&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;&lt;span class="dish sandwichImg"&gt;&lt;/span&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-[JS]// Add the following script for Tab render with customizes header image.&lt;script type="text/javascript"&gt;        $(function () {                      $("#dishtype").ejTab();            });&lt;/script&gt;</td></tr>
-</table>
-
-
-
+{% endhighlight %}
 
 * Add following **CSS** for header image customization.
 
 {% highlight css %}
 
-[CSS]
-<style type="text/css" class="cssStyles">
-        .dish {
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0px -9px 0px 9px;           
-        }
-        .pizzaImg {
-            background: url("http://js.syncfusion.com/UG/Web/Content/rsz_chicken-delite.png") no-repeat;
-            height: 25px;
-            width: 25px;
-        }
-        .sandwichImg, .pastaImg {
-            height: 25px;
-            width: 25px;
-        }
-        .sandwichImg {
-            background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-fresh.png") no-repeat;
-        }
-</style> 
+
+    <style type="text/css" class="cssStyles">
+            .dish {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0px -9px 0px 9px;           
+            }
+            .pizzaImg {
+                background: url("http://js.syncfusion.com/UG/Web/Content/rsz_chicken-delite.png") no-repeat;
+                height: 25px;
+                width: 25px;
+            }
+            .sandwichImg, .pastaImg {
+                height: 25px;
+                width: 25px;
+            }
+            .sandwichImg {
+                background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-fresh.png") no-repeat;
+            }
+    </style> 
 
 
 {% endhighlight %}
@@ -75,15 +95,37 @@ The following code example is used to render the **Tab** widget with **Rounded C
 
 * Add the following **HTML** to render **Tab** with rounder corner.
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
-[JS]// Add the following script to render Tab with rounded corner.&lt;script type="text/javascript"&gt;        $(function () {                      $("#dishtype").ejTab({ showRoundedCorner: true });        });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    [JS]
+    // Add the following script to render Tab with rounded corner.
+    <script type="text/javascript">
+            $(function () {         
+                 $("#dishtype").ejTab({ showRoundedCorner: true });
+            });
+    </script>
+
+{% endhighlight %}
 
 * The following screenshot illustrates the **Tab** with Rounded corner.
 
@@ -98,16 +140,38 @@ You can enable or disable the **Tab** widget by ‘**enabled’** property. By d
 The following code example is used to render the **Tab** widget with enable/disable.
 
 * Add the following **HTML** to render **Tab** with enable/disable.
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render Tab with disabled format.&lt;script type="text/javascript"&gt;    $(function () {        $("#dishtype").ejTab({ enabled: false });    });&lt;/script&gt;</td></tr>
-</table>
+  
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+  
+    // Add the following script to render Tab with disabled format.
+    
+    <script type="text/javascript">
+        $(function () {
+            $("#dishtype").ejTab({ enabled: false });
+        });
+
+
+{% endhighlight %}
 
 * The following screenshot illustrates the **Tab** with disabled format.
 
@@ -115,23 +179,45 @@ The following code example is used to render the **Tab** widget with enable/disa
 
 _Figure_ _30__:_ _Tab with_ _disabled format_
 
-**Enabling Reload Icon**
-
+ **Enabling Reload Icon**
+ 
 Without refresh/reload the whole page, you can reload a particular **Tab** using **Reload** icon. The **Reload** icon is appeared at right corner of the **Tab** by enabling the property ‘**showReloadIcon**’ to ‘**true**’. When you move cursor over the **Tab** headers, the **Reload** icon is displayed. By default the property value is set to ‘**false**’.   
 
 The following code example is used to render the **Tab** widget with **Reload** icon.
 
 * Add the following **HTML** to render **Tab** with **Reload** icon.
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render Tab with Reload icon.&lt;script type="text/javascript"&gt;        $(function () {                      $("#dishtype").ejTab({ showReloadIcon: true });        });&lt;/script&gt;</td></tr>
-</table>
 
+{% highlight html %}
+
+        
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+// Add the following script to render Tab with Reload icon.
+    <script type="text/javascript">
+            $(function () {         
+                 $("#dishtype").ejTab({ showReloadIcon: true });
+            });
+    </script>
+
+{% endhighlight %}
 
 * The following screenshot illustrates the **Tab** with **Reload** icon.
 
@@ -149,14 +235,37 @@ The following code example is used to render the **Tab** widget with customized 
 
 * Add the following **HTML** to render **Tab** with customized collapsible mode.
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render Tab with customized collapsible mode.&lt;script type="text/javascript"&gt;        $(function () {                      $("#dishtype").ejTab({ collapsible: true });        });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+// Add the following script to render Tab with customized collapsible mode.
+<script type="text/javascript">
+        $(function () {         
+             $("#dishtype").ejTab({ collapsible: true });
+        });
+</script>
+
+
+{% endhighlight %}
 
 
 * The following screenshot illustrates the **Tab** with customized collapsible mode.
@@ -175,14 +284,39 @@ The following code example is used to render the **Tab** widget with customized 
 
 * Add the following **HTML** to render **Tab** with customized height and height adjust mode.
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render Tab with customized height and height adjust mode.&lt;script type="text/javascript"&gt;       $(function () {                    $("#dishtype").ejTab({ heightAdjustMode:"fill", height:"300px"});        });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
+
+
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    
+    // Add the following script to render Tab with customized height and height adjust mode.
+    <script type="text/javascript">
+           $(function () {         
+               $("#dishtype").ejTab({ heightAdjustMode:"fill", height:"300px"}); 
+           });
+    </script>
+
+{% endhighlight %}
+
 
 
 * The following screenshot illustrates the **Tab** with customized height and height adjust mode.
@@ -201,15 +335,38 @@ The following code example is used to render the **Tab** widget with customized 
 
 * Add the following **HTML** to render **Tab** with customized width.
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render Tab with customized width.&lt;script type="text/javascript"&gt;        $(function () {                      $("#dishtype").ejTab({ width:"450px" });        });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
+
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    // Add the following script to render Tab with customized width.
+    <script type="text/javascript">
+            $(function () {         
+                 $("#dishtype").ejTab({ width:"450px" });
+            });
+    </script>
+
+
+{% endhighlight %}
 
 * The following screenshot illustrates the **Tab** with customized width.
 
@@ -257,29 +414,48 @@ The following code example is used to render the **Tab** widget with customized 
 
 * Add the following **HTML** to render **Tab** with customized style.
 
-<table>
-<tr>
-<td>
-[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
-<tr>
-<td>
- [JS]// Add the following script to render Tab with customized style.&lt;script type="text/javascript"&gt;        $(function () {                      $("#dishtype").ejTab({ cssClass: "custom" });        });&lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
 
+    <div id="dishtype" style="width: 650px">
+        <ul>
+            <li><a href="#pizza">Pizza Menu</a></li>
+            <li><a href="#sandwich">Sandwich Menu</a></li>
+        </ul>
+        <div id="pizza" style="background-color: #F5F5F5">
+            <!--Food item description-->
+            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+        <div id="sandwich" style="background-color: #F5F5F5">
+            <!--dish description-->
+            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        </div>
+    </div>
 
+{% endhighlight %}
+
+{% highlight js %}
+
+   
+    // Add the following script to render Tab with customized style.
+    <script type="text/javascript">
+            $(function () {         
+                 $("#dishtype").ejTab({ cssClass: "custom" });
+            });
+    </script>
+
+{% endhighlight %}
 
 * Add the following styles
 
 {% highlight css %}
 
-**[CSS]**
-<style type="text/css">
-        .custom {
-            width:650px;
-        }
-    </style>
-
+    <style type="text/css">
+            .custom {
+                width:650px;
+            }
+        </style>
+    
 
 {% endhighlight %}
 

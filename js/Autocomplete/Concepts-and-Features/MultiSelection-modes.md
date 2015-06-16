@@ -23,7 +23,6 @@ The following steps explain the configuration of the **multiSelectMode** for an 
 
 {% highlight html %}
 
-**[HTML]**
 <div style="margin-right: 20px;">
     <span class="txt">Using Delimiter</span>
     <input type="text" id="delimit" />
@@ -49,27 +48,24 @@ The following steps explain the configuration of the **multiSelectMode** for an 
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Here define CarList local data as per the previous the code block.
-
+ <script type="text/javascript">
     $("#delimit").ejAutocomplete({
                 width: 225,
-**multiSelectMode: ej.MultiSelectMode.Delimiter,**
-                **delimiterChar:";",**
+                multiSelectMode: ej.MultiSelectMode.Delimiter,
+                delimiterChar:";",
                 dataSource: carList
             });
             $("#none").ejAutocomplete({
                 width: 225,
-**multiSelectMode: ej.MultiSelectMode.None,**
+                multiSelectMode: ej.MultiSelectMode.None,
                 dataSource: carList
             });
             $("#visualmode").ejAutocomplete({
                 width: 225,
-**multiSelectMode: ej.MultiSelectMode.VisualMode,**
+                multiSelectMode: ej.MultiSelectMode.VisualMode,
                 dataSource: carList
             }); 
-
+</script>
 
 {% endhighlight %}
 

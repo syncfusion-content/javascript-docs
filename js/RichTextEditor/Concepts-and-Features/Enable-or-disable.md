@@ -13,14 +13,29 @@ You can enable or disable the tool items that are available in the **RTE** toolb
 
 Add the following code in your **HTML** page.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div class="rte"&gt;<b>        &lt;textarea id="disable_tool"&gt;&lt;/textarea&gt;</b>    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>\\ Add the following code in your script section to render RTE    var rteobj;    $("#disable_tool").ejRTE();	    rteobj = $("#disable_tool").data("ejRTE");<b>    rteobj.disableToolbarItem("disable_toolimage");</b></td></tr>
-</table>
+{% highlight html %}
+
+
+    <div class="rte">
+        <textarea id="disable_tool"></textarea>
+    </div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+ //Add the following code in your script section to render RTE
+ <script>
+    var rteobj;
+    $(function(){
+        $("#disable_tool").ejRTE();	
+        rteobj = $("#disable_tool").data("ejRTE");
+        rteobj.disableToolbarItem("disable_toolimage");
+    });
+</script>
+
+{% endhighlight %}
 
 
 {% include image.html url="/js/RichTextEditor/Concepts-and-Features/Enable-or-disable_images/Enable-or-disable_img1.png" Caption="Showcase for disable the insert image in toolbar"%}

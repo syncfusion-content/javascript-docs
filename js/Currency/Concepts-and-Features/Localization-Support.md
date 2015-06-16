@@ -35,19 +35,20 @@ The following example describes the way to use localization for **CurrencyTextBo
 
 {% highlight html %}
 
-**[HTML]**
-
         <input id="currency" type="text" />
 
-        <script type="text/javascript">
+{% endhighlight %}
 
-        /* Currency Textbox */
-        $("#currency").ejCurrencyTextbox({
-            value: 33,
-            decimalPlaces: 2,
-**locale: "de-DE"**
-        });
-    </script>
+{% highlight js %}
+
+<script type="text/javascript">    
+    /* Currency Textbox */
+    $("#currency").ejCurrencyTextbox({
+       value: 33,
+       decimalPlaces: 2,
+       locale: "de-DE"
+    });
+</script>
 
 
 {% endhighlight %}

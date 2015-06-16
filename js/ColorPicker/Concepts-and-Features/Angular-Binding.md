@@ -9,7 +9,7 @@ documentation: ug
 
 # Angular Binding
 
-The **ColorPicker** widget is availed with two types of **angular****JS** support namely, 
+The **ColorPicker** widget is availed with two types of **angular** **JS** support namely, 
 
 * One-way binding
 
@@ -31,9 +31,8 @@ To know more about the **Angular** binding, you can refer to the online document
 
 {% highlight html %}
 
-**[HTML]**
 <!doctype html>
-<html lang="en" **ng-app="PickerCtrl"**>
+<html lang="en" ng-app="PickerCtrl">
 <head>
     <meta charset="utf-8">
     <title>Essential Studio for JavaScript : ColorPicker - Angular support</title>
@@ -47,9 +46,9 @@ href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css]
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)">
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)">
  </script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)">
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)">
 </script>
 </head>
 <body ng-controller="ColorPickerCtrl">

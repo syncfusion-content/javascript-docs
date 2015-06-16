@@ -47,7 +47,6 @@ The most used clipboard actions are cut, copy, and paste. These tools are used 
 
 {% highlight html %}
 
-**[HTML]**
 <div id="fileExplorer"></div>
 
 
@@ -60,9 +59,6 @@ Add the following code in your script section.
 
 
 {% highlight js %}
-
-
-**[JavaScript]**
 
 <script type="text/javascript">
         $(function () {
@@ -82,7 +78,7 @@ Add the following code in your script section.
                 }
             });
         });
-    </script>
+    
 
 //here tools API contains following default values, so toolbar render with below tools
                 //tools: {
@@ -95,7 +91,7 @@ Add the following code in your script section.
                 //    searchBar: ["Searchbar"]
                 //},
 
-
+</script>
 
 {% endhighlight %}
 

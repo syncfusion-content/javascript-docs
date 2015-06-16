@@ -19,7 +19,6 @@ The following steps explain you how to configure **Grouping** for an **AutoCompl
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -31,7 +30,7 @@ The following steps explain you how to configure **Grouping** for an **AutoCompl
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
  var countries = [
    { text: "Austria", category: "A" },
    { text: "Australia", category: "A" }, { text: "Lebanon", category: "L" },
@@ -46,9 +45,7 @@ The following steps explain you how to configure **Grouping** for an **AutoCompl
    {text:"Vatican City",category: "V" },{text: "Western Sahara",category: "W" },
    { text: "Yemen", category: "Y" }, { text: "Zimbabwe", category: "Z" }
  ];
-
-
-
+</script>
 
 {% endhighlight %}
 
@@ -58,7 +55,7 @@ The following steps explain you how to configure **Grouping** for an **AutoCompl
 
 {% highlight js %}
 
-**[JavaScript]**
+<script type="text/javascript">
 $('#autocomplete').ejAutocomplete({
                 dataSource: countries,
                 filterType: ej.filterType.Contains,
@@ -68,7 +65,7 @@ $('#autocomplete').ejAutocomplete({
                 highlightSearch: true,
                 popupHeight: "200px"
             });
-
+</script>
 
 {% endhighlight %}
 

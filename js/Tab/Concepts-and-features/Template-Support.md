@@ -17,7 +17,7 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 
 {% highlight html %}
 
-**[HTML]**
+
     <div id="dishtype" style="width: 650px">
         <ul>
             <li><a href="#corn">Corn & Spinach </a></li>
@@ -47,7 +47,7 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 
 {% highlight js %}
 
-**[SCRIPT]**
+
 <script type="text/javascript">
         $(function () {
             $("#dishtype").ejTab();

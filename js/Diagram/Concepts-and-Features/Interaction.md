@@ -196,7 +196,7 @@ The following code illustrates how to create **Delete User handle**
 
 //Create handle
 var userHandles = [];
-var deleteHandle = { name: "deleteHandle", position: ej.datavisualization.Diagram.UserHandlePositions.BottomRight, showOnMultipleSelection: false, size:30, backgoundColor: "#4D4D4D", pathData: “M33.977998,27.684L33.977998,58.102997 “ +“41.373998,58.102997 41.373998,27.684z M14.841999,27.684L14.841999,58.102997 22.237998,58.102997 “+”22.237998,27.684z M4.0319996,22.433001L52.183,22.433001 52.183,63.999001 4.0319996,63.999001z “+”M15.974,0L40.195001,0 40.195001,7.7260003 56.167001,7.7260003 56.167001,16.000999 0,16.000999 “+”0,7.7260003 15.974,7.7260003z” };
+var deleteHandle = { name: "deleteHandle", position: ej.datavisualization.Diagram.UserHandlePositions.BottomRight, showOnMultipleSelection: false, size:30, backgoundColor: "#4D4D4D", pathData: "M33.977998,27.684L33.977998,58.102997" + "41.373998,58.102997 41.373998,27.684z M14.841999,27.684L14.841999,58.102997 22.237998,58.102997" + "22.237998,27.684z M4.0319996,22.433001L52.183,22.433001 52.183,63.999001 4.0319996,63.999001z" + "M15.974,0L40.195001,0 40.195001,7.7260003 56.167001,7.7260003 56.167001,16.000999 0,16.000999" + "0,7.7260003 15.974,7.7260003z" };
 deletHandle.tool = new DeleteTool(deleteHandle.name);
 userHandles.push(deletHandle);
 
@@ -232,7 +232,7 @@ var DeleteTool = (function (base) {
     
     //mouse up for delete tool
     DeleteTool.prototype.mouseup = function (evt) {
-        var diagram = $(“#diagram”).ejDiagram(“instance”);
+        var diagram = $("#diagram").ejDiagram("instance");
         if (this.inAction) 
         {
            this.inAction = false;
@@ -252,7 +252,7 @@ The following code illustrates how to add **Delete handle** in diagram
 {% highlight js %}
 
 //add user handles to diagram
-$(“#Diagram”).ejDiagram({ userHandles: userHandles });
+$("#Diagram").ejDiagram({ userHandles: userHandles });
 
 
 {% endhighlight %}
@@ -272,7 +272,12 @@ _Events_
 <tr>
 <td>
 selectionChange</td><td>
-{cancel, changeType, element, model, type}cancel :booleanchangeType: string (“insert“/ “remove”)element: object(Node/Connector to be add or remove)model: object(diagram’s model)type: string(event name “selectionChange”)</td><td>
+{cancel, changeType, element, model, type}<br/>
+cancel :boolean<br/>
+changeType: string (“insert“/ “remove”)<br/>
+element: object(Node/Connector to be add or remove)<br/>
+model: object(diagram’s model)<br/>
+type: string(event name “selectionChange”)</td><td>
 This event is raised when the selection added to the node /connector during run time.</td></tr>
 </table>
 

@@ -17,19 +17,28 @@ The following steps explains you the implementation of **AJAX** content in the *
 
 1. In the **HTML** page set a **&lt;div&gt;** element for rendering the **Dialog** control. 
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div id="ajaxDialog"&gt;    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Set the <b>contentUrl</b> from the file reference path and set the <b>contentType</b> as <b>ajax</b>. The default value of <b>contentUrl</b> and <b>contentType</b> are <b>null</b>    &lt;script type="text/javascript"&gt;        $("#ajaxDialog").ejDialog(              {                  <b>contentUrl: "Content/twitter.html",</b><b>                  contentType: "ajax",</b>                  title: "Twitter",                  width: 500,              });    &lt;/script&gt;</td></tr>
-</table>
+     <div id="ajaxDialog"> </div>
+     
 
+{% endhighlight %}
 
+{% highlight js %}
 
+<script type="text/javascript">
+// Set the contentUrl from the file reference path and set the contentType as ajax. The default value of contentUrl and contentType are null
+    $("#ajaxDialog").ejDialog(
+          {
+              contentUrl: "Content/twitter.html",
+              contentType: "ajax",
+              title: "Twitter",
+              width: 500,
+          });
+</script>
+
+{% endhighlight %}
 
 2. Content inside the twitter.html 
 
@@ -37,9 +46,8 @@ The following steps explains you the implementation of **AJAX** content in the *
 
 {% highlight html %}
 
-**[twitter.html]**
-
 <!DOCTYPE html>
+<!-- twitter.html -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
@@ -56,7 +64,6 @@ The following steps explains you the implementation of **AJAX** content in the *
         }
 
         .comments-list {
-            /* background-color: #EFEFEF; */
             height: 210px;
         }
 
@@ -137,5 +144,5 @@ The following steps explains you the implementation of **AJAX** content in the *
 
 3. The output of **Dialog** with **AJAX** content.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/AJAX-Content_images/AJAX-Content_img1.png" Caption="Dialog with “AJAX Conten                                                             "%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/AJAX-Content_images/AJAX-Content_img1.png" Caption="Dialog with “AJAX Content                                                             "%}
 

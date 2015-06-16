@@ -18,17 +18,26 @@ The **CSS** properties can be customized by using **css**Class in the **Dialog**
 
 1. In the **HTML** page set a **&lt;div&gt;** element with the dialog content for rendering the **Dialog** control. 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>    &lt;div id="Dialog" title="Syncfusion Dialog"&gt;        The Syncfusion Dialog control is rendered.    &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>// Set the <b>cssClass</b> property to the <b>Dialog</b> function    &lt;script type="text/javascript"&gt;        $("#Dialog").ejDialog({            height: 200,            width: 300,<b>            cssClass: "customCss"</b>        });    &lt;/script&gt;</td></tr>
-</table>
+{% highlight html %}
 
+      <div id="Dialog" title="Syncfusion Dialog">
+        The Syncfusion Dialog control is rendered.
+    </div>
 
+{% endhighlight %}
 
+{% highlight js %}
+
+<script type="text/javascript">
+// Set the cssClass property to the Dialog function
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        cssClass: "customCss"
+    });
+</script>
+
+{% endhighlight %}
 
 2. Customize the **CSS** class by setting **CSS** Properties. 
 
@@ -36,24 +45,23 @@ The **CSS** properties can be customized by using **css**Class in the **Dialog**
 
 {% highlight css %}
 
-**[CSS]**
 
-    <style>
-        .customCss {            
-            border-color: #661e19 !important;
-        }
+<style>
+    .customCss {            
+        border-color: #661e19 !important;
+    }
 
-        /*Customize the dialog header*/
-        .customCss .e-header {
-            background-color: #2c683b;
-        }
+    /*Customize the dialog header*/
+    .customCss .e-header {
+        background-color: #2c683b;
+    }
 
-        /*Customize the dialog content*/
-        .customCss .e-dialog, .customCss .e-dialog-scroller {
-          color: #b21010;
-          background-color: #f6e492;        
-         }
-    </style>
+    /*Customize the dialog content*/
+    .customCss .e-dialog, .customCss .e-dialog-scroller {
+      color: #b21010;
+      background-color: #f6e492;        
+     }
+</style>
 
 
 

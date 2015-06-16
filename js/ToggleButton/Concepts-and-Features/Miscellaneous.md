@@ -17,17 +17,35 @@ The following steps explains you the details about rendering the **Toggle Button
 
 * In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
+{% highlight html %}
 
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="checkbox" id="toggle_roundedCorenr" /&gt;  </td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            $("#toggle_roundedCorenr").ejToggleButton({                size: "small",                contentType: "textandimage",                //used to specify the rounded corner for toggle button<b>                showRoundedCorner: true,</b>                defaultText: "Play",                activeText: "Next",                defaultPrefixIcon: "e-mediaplay e-uiLight",                activePrefixIcon: "e-mediapause e-uiLight"            });        });    &lt;/script&gt;</td></tr>
-</table>
+   <input type="checkbox" id="toggle_roundedCorenr" />  
 
+{% endhighlight %}
+
+{% highlight html %}
+
+
+
+//Initialize the control in JavaScript
+
+   <script type="text/javascript">
+        $(function () {
+            $("#toggle_roundedCorenr").ejToggleButton({
+                size: "small",
+                contentType: "textandimage",
+                //used to specify the rounded corner for toggle button
+                showRoundedCorner: true,
+                defaultText: "Play",
+                activeText: "Next",
+                defaultPrefixIcon: "e-mediaplay e-uiLight",
+                activePrefixIcon: "e-mediapause e-uiLight"
+            });
+        });
+    </script>
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -37,22 +55,43 @@ _Figure 13: Toggle button with Rounder corner_
 
 **Prevent Toggle**
 
-This property is used to prevent the state change of **Toggle Button** when it is clicked. When you set **preventToggle** property****as true, then the state of the **Toggle Button** is not changed even though it is clicked.
+This property is used to prevent the state change of **Toggle Button** when it is clicked. When you set **preventToggle** **property** as true, then the state of the **Toggle Button** is not changed even though it is clicked.
 
 The following steps explains you the details about rendering the **Toggle Button** with **preventToggle** property enabled.
 
 * In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;input type="checkbox" id="toggle_prevent" /&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            $("#toggle_prevent").ejToggleButton({                size: "small",                contentType: "textandimage",                defaultText: "Play",                activeText: "Next",                defaultPrefixIcon: "e-mediaplay e-uiLight",                activePrefixIcon: "e-mediapause e-uiLight",                //prevent changing state of toggle button<b>                preventToggle: true</b>            });        });    &lt;/script&gt;</td></tr>
-</table>
+
+   <input type="checkbox" id="toggle_prevent" />
+
+{% endhighlight %}
+
+{% highlight html %}
+
+
+
+//Initialize the control in JavaScript
+
+   <script type="text/javascript">
+        $(function () {
+            $("#toggle_prevent").ejToggleButton({
+                size: "small",
+                contentType: "textandimage",
+                defaultText: "Play",
+                activeText: "Next",
+                defaultPrefixIcon: "e-mediaplay e-uiLight",
+                activePrefixIcon: "e-mediapause e-uiLight",
+                //prevent changing state of toggle button
+                preventToggle: true
+            });
+        });
+    </script>
+
+
+{% endhighlight %}
 
 
 Execute the above code to render the following output.
@@ -61,5 +100,5 @@ Execute the above code to render the following output.
 
 {% include image.html url="/js/ToggleButton/Concepts-and-Features/Miscellaneous_images/Miscellaneous_img2.png" Caption=""%}
 
-_Figure 14: Toggle button with prevent Togg_le.
+_Figure 14: Toggle button with prevent_Toggle.
 

@@ -21,8 +21,6 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 {% highlight html %}
 
-**[JS]**
-**[HTML]**
 jQuery(function($) {
             $("#mapContainer").ejMap({
                 layers: [
@@ -86,9 +84,6 @@ The **maxValue** property is used to set the maximum zoom level of the map.
 
 {% highlight html %}
 
-**[JS]**
-
-**[HTML]**
 
 jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -157,8 +152,6 @@ When **enableZoomOnSelection** property is set to true, then, zoom on double cli
 
 {% highlight html %}
 
-**[JS]**
-**[HTML]**
 jQuery(function($) {
             $("#mapContainer").ejMap({
                                 // ...
@@ -207,7 +200,6 @@ Zoom level of the map</td></tr>
 
 {% highlight html %}
 
-**[HTML]**
 
 <script type="text/javascript">
 function buttonClick() {
@@ -225,8 +217,6 @@ The panning feature enables map navigation. The **enablePan** property is used t
 
 {% highlight html %}
 
-**[JS]**
-**[HTML]**
 jQuery(function($) {
             $("#mapContainer").ejMap({
                                 // ...
@@ -250,8 +240,6 @@ jQuery(function($) {
 
 {% highlight html %}
 
-**[JS]**
-**[HTML]**
 jQuery(function($) {
             $("#mapContainer").ejMap({
                                 // ...
@@ -313,8 +301,6 @@ You can set this option by using **dockPosition** property in **navigationContro
 
 {% highlight html %}
 
-**[JS]**
-**[HTML]**
 jQuery(function($) {
             $("#mapContainer").ejMap({
                                 // ...
