@@ -33,9 +33,9 @@ You can color, all the leaf nodes with the same color by setting the **color** v
 
             $("#treemapContainer").ejTreeMap({
                 // ...   
-                **uniColorMapping: {**
-                    **color: "Crimson"**
-                **}**,         
+                uniColorMapping: {
+                    color: "Crimson"
+                },         
                 // ...   
             });
         });
@@ -58,12 +58,12 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
             $("#treemapContainer").ejTreeMap({
                 // ...   
-                **rangeColorMapping: [**
-                        **{ color: "#77D8D8", from: "0", to: "1" },**
-                        **{ color: "#AED960", from: "0", to: "2" },**
-                        **{ color: "#FFAF51", from: "0", to: "3" },**
-                        **{ color: "#F3D240", from: "0", to: "4" }**
-                **],**
+                rangeColorMapping: [
+                        { color: "#77D8D8", from: "0", to: "1" },
+                        { color: "#AED960", from: "0", to: "2" },
+                        { color: "#FFAF51", from: "0", to: "3" },
+                        { color: "#F3D240", from: "0", to: "4" }
+                ],
                 // ...   
             });
         });
@@ -87,10 +87,10 @@ You can differentiate all the leaf nodes using the **desaturationColorMapping** 
 
             $("#treemapContainer").ejTreeMap({
                 // ...  
-                **desaturationColorMapping: {**
-                        **color: "DeepSkyBlue", from: "1", to: "0.2", rangeMinimum: "0",**  
-                        **rangeMaximum: "4"**                        
-                **},**
+                desaturationColorMapping: {
+                        color: "DeepSkyBlue", from: "1", to: "0.2", rangeMinimum: "0",  
+                        rangeMaximum: "4"                        
+                },
                 // ...  
             });
         });
@@ -128,9 +128,9 @@ You can customize the **Leaf level TreeMap****items** using **leafItemsSetting**
                   { groupPath: "Continent", groupGap: 5}
                 ],
 
-                **leafItemSettings: { labelPath: "Region" },**
-                **showTooltip:true,**
-                **tooltipTemplate:'template'** 
+                leafItemSettings: { labelPath: "Region" },
+                showTooltip:true,
+                tooltipTemplate:'template' 
             });
         });
 

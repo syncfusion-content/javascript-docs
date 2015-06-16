@@ -54,9 +54,10 @@ In this example, USA shape is used as shape data by utilizing the “**United St
 
 You can assign the complete contents in “**United States of America.json**” file to new **JSON** object. For your better understanding, a JS file “**usa.js”** is already created to store **JSON** data in **JSON** object “usMap”.
 
+**[usa.js]**
+
 {% highlight javascript %}
 
-**[usa.js]**
 
 var usMap = //Paste all the content copied from the JSON file//
 
@@ -67,9 +68,10 @@ var usMap = //Paste all the content copied from the JSON file//
 
 The datasource is populated with **JSON** data relative to shape data and stored in **JSON** object. U.S.A population as datasource is used for better understanding. The “**populationData.js”** file is used to store **JSON** data in **JSON** object “**populationData**”.
 
+**[populationData.js]**
+
 {% highlight js %}
 
-**[populationData.js]**
 var populationData = [
     { name: "California", population: "38332521" },
 { name: "Texas", population: "26448193" },
@@ -143,7 +145,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 **Initialize Map**
 
-1. Create a **&lt;div&gt;** tag with a specific id and set the height and width to determine the rendering map’s size.
+*1*. Create a **&lt;div&gt;** tag with a specific id and set the height and width to determine the rendering map’s size.
 
 {% highlight js %}
 
@@ -154,7 +156,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 {% endhighlight %}
 
-2. Add a script tag anywhere in the webpage and add the following code. 
+*2*. Add a script tag anywhere in the webpage and add the following code. 
 
 {% highlight javascript %}
 
@@ -173,7 +175,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 {% endhighlight %}
 
-3. The final **HTML** file appears as follows.
+*3*. The final **HTML** file appears as follows.
 
 {% highlight js %}
 

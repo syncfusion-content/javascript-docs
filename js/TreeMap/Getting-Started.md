@@ -94,7 +94,7 @@ Populate the TreeMap data in JSON object. For example, you can use population da
   <!-- TreeMapData -->
   <script type="text/javascript">
 
-**var population_data = [**
+var population_data = [
                    { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
                    { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
                    { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
