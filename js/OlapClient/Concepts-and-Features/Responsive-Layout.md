@@ -13,25 +13,18 @@ documentation: ug
 
 {% highlight js %}
 
-<script type="text/javascript">
 $(function () {
        $("#OlapClient1").ejOlapClient({ url: "../wcf/OlapClientService.svc", **isResponsive: true,** chartLoad: "setChartProperties" });
 });
 function setChartProperties(args) {
        this.model.load = "loadTheme";
 };
-</script>
-
 
 {% endhighlight %}
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Normal View"%}
 
-<br/>
-
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img3.png" Caption="Responsive View"%}
-
-<br/>
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img4.png" Caption="Responsive View"%}
 

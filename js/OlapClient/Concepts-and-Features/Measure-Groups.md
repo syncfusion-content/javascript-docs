@@ -21,7 +21,5 @@ On selecting a measure group from the drop-down list, the Cube Dimension Browser
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Measure-Groups_images/Measure-Groups_img1.png" Caption="OLAP Client with Measure Groups in a drop-down list"%}
 
-<br/>
-
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Measure-Groups_images/Measure-Groups_img2.png" Caption="OLAP Client with filtered tree-view in Cube Dimension Browser"%}
 

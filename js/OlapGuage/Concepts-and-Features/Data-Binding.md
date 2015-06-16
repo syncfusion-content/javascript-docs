@@ -59,8 +59,6 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-
-
 **Connecting to Mondrian Server**
 
 The following code illustrates how to connect to the **Mondrian** Server:
@@ -74,8 +72,6 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 
 {% endhighlight %}
-
-
 
 **Connecting to Active Pivot Server**
 

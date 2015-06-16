@@ -210,8 +210,6 @@ And</td><td>
 " et "</td></tr>
 </table>
 
-<br/>
-
 The following code example shows how to localize OLAP Client’s User Interface (UI) based on French culture.
 
 {% highlight js %}
@@ -221,10 +219,8 @@ $("#OlapClient1").ejOlapClient({ url: "../wcf/OlapClientService.svc", **locale:
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight js %}
 
-<script type="text/javascript">
- {
 ej.olap.OlapClient.locale["fr-FR"] = {
 Column:"Colonne",
 Row:"Rangée",
@@ -283,9 +279,6 @@ Expand:"Développer",
 Collapse:"Effondrement",
 Exit:"Quitter"
 }
-}
-</script>
-
 
 {% endhighlight %}
 

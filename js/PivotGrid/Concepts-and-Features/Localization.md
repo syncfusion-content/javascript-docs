@@ -54,14 +54,11 @@ RenderingFailed</td><td>
 "Rendant pas"</td></tr>
 </table>
 
-<br/>
-
 The following code example illustrates how to localize **PivotGrid’s** user interface based on “French” culture.
 
-{% highlight javascript %}
+{% highlight js %}
 
-<script type="text/javascript">
- $(function () {
+$(function () {
      $("#PivotGrid1").ejPivotGrid({
 url: "../wcf/PivotGridService.svc", locale**: "fr-FR",** enableVirtualScrolling: true});
     $("#Pager1").ejPivotPager({
@@ -83,7 +80,6 @@ url: "../wcf/PivotGridService.svc", locale**: "fr-FR",** enableVirtualScrolling:
            SeriesPage: "Série Page",
            CategoricalPage: "Catégorique Page"
           };
-</script>       
 
 {% endhighlight %}
 
@@ -122,7 +118,6 @@ DataManager.Culture = new System.Globalization.CultureInfo(1036);
 DataManager.OverrideDefaultFormatStrings = true;
 
 {% endhighlight %}
-
 
 The following screenshot displays the **PivotGrid** with French localization:
 

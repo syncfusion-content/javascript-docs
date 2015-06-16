@@ -13,23 +13,18 @@ The **OLAP Grid** inside the **OLAP Client** component can be exported to an Exc
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Export_images/Export_img1.png" Caption="Excel Export Icon"%}
 
-<br/>
-
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Export_images/Export_img2.png" Caption="Exported Excel Worksheet"%}
-
-<br/>
 
 The following code example illustrates how to save the document to Excel via a service.
 
 {% highlight c# %}
 
-Public void ExportOptions(Stream stream)
+public void ExportOptions(Stream stream)
 {
 OlapGrid olapGridHelper = new OlapGrid();
 OlapDataManager DataManager=new OlapDataManager(connectionString);
 olapGridHelper.ExportToExcel(DataManager,newStreamReader(stream).ReadToEnd(),"Sample.xls",HttpContext.Current.Response);
 }
-
 
 {% endhighlight %}
 
