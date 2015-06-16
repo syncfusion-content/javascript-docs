@@ -15,7 +15,7 @@ The opacity****of the character is adjustable with the help of **opacity** prope
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -61,7 +61,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 {% highlight js %}
 
- **[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -104,7 +104,7 @@ The text in the **Digital****Gauge** is positioned with position object. This ob
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -146,7 +146,7 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {
