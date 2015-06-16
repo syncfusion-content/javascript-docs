@@ -14,16 +14,16 @@ documentation: ug
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    stripLines: [{
-        day: "01/02/2014",
-        label: "Project Release",
-        lineStyle: "dotted",
-        lineColor: "Darkblue",
-        lineWidth: 2
-    }]
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        stripLines: [{
+            day: "01/02/2014",
+            label: "Project Release",
+            lineStyle: "dotted",
+            lineColor: "Darkblue",
+            lineWidth: 2
+        }]
+    });
 
 
 {% endhighlight %}
