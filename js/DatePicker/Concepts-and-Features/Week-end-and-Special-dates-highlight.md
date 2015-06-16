@@ -34,7 +34,7 @@ The following steps explain you how to get the highlighted week end and special 
 
   **[JavaScript]**
 
-// Add the code to get the highlighted week end and special dates
+// Adds the code to get the highlighted week end and special dates
 
 <script type="text/javascript">
         $(function () {
