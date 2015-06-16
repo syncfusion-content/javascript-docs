@@ -98,16 +98,6 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% highlight js %}
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-   //...
-    <script type="text/javascript">
-
-//data source for ejTreeGrid control
-
         var treeGridDataSource = [
                 {
                     taskID: 2,
@@ -196,9 +186,6 @@ This section explains how to create a **TreeGrid** control in your application w
                 }
 
         ]; 
-    </script>
-</head>
-
 
 {% endhighlight %}
 
@@ -208,8 +195,6 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% highlight js %}
 
-<script type="text/javascript">
-     //...
      $(function () {
          $("#TreeGridContainer").ejTreeGrid({
              dataSource: treeGridDataSource,
@@ -225,7 +210,6 @@ This section explains how to create a **TreeGrid** control in your application w
          });
 
      });
-</script>
 
 
 {% endhighlight %}
@@ -246,14 +230,12 @@ Enable the multicolumn sorting in **ejTreeGrid** by setting **allowMultiSorting*
 
 {% highlight js %}
 
-<script type="text/javascript">
-    //...
     $("#TreeGridContainer").ejTreeGrid({
         //...
         allowSorting: true,
         allowMultiSorting:true           
     });
-</script>
+
 
 
 {% endhighlight %}
@@ -268,8 +250,6 @@ You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows
 
 {% highlight js %}
 
-<script type="text/javascript">
-    //...
     $("#TreeGridContainer").ejTreeGrid({
         //...
         edit: {
@@ -277,7 +257,6 @@ You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows
             editMode: "cellEditing"
         }
     });
-</script>
 
 
 {% endhighlight %}
@@ -302,8 +281,7 @@ You can set the editor type for a particular column as follows.
 
 {% highlight js %}
 
-<script type="text/javascript">
-    //...
+
     $("#TreeGridContainer").ejTreeGrid({
         //...
         columns: [
@@ -312,8 +290,6 @@ You can set the editor type for a particular column as follows.
                { field: "duration", headerText: "Duration",editType:"numericedit"},
                  ]
     })
-</script>
-
 
 {% endhighlight %}
 
