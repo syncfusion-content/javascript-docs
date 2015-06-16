@@ -17,7 +17,7 @@ Sub gauge collection is directly added to the scale object. Refer the following 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 <div id="CircularGauge1"></div>
 
@@ -44,7 +44,7 @@ Basic attributes such as **height** and **width** property are used to set heigh
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id=" SubGauge1"></div>
 <div id="CircularGauge1"> </div>
 
@@ -90,7 +90,7 @@ You can set multiple sub gauges in a single **Circular Gauge** by adding an arra
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <div id=" SubGauge1"> </div>
 <div id=" SubGauge2"> </div
