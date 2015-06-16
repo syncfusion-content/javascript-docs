@@ -105,21 +105,18 @@ Y: "MMMM, yyyy"
 
 To localize the Column Header Texts based on French culture, refer to the following code example.
 
+Refer the external dependency to support localization
+
+{% highlight html %}
+
+     <!--Need to add for localize the date Time object based on the culture settings-->
+     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js"></script>
+
+{% endhighlight %}
+
 {% highlight js %}
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-
-    <title>Essential Studio for JavaScript : Gantt Localization</title>
-    //..
-    <!--Need to add for localize the date Time object based on the culture settings-->
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js"></script>
-
-    <script type="text/javascript">
-
-ej.Gantt.localization["fr-FR"] = {
+    ej.Gantt.localization["fr-FR"] = {
 
             //headerText to be displayed in gridtree
             columnHeaderTexts: {
@@ -171,32 +168,13 @@ ej.Gantt.localization["fr-FR"] = {
                 }
             }
         }
-    </script>
-
-</head>
-
-<body>   
-
-
-
-<script type="text/javascript">
-
-
-
-$(function () {
-$("#GanttContainer").ejGantt({
-//...
-locale: "fr-FR"
-});
-});
-
-</script>
-
-</body>
-
-</html>
-
-
+    
+    $(function () {
+        $("#GanttContainer").ejGantt({
+            //...
+            locale: "fr-FR"
+        });
+    });
 
 {% endhighlight %}
 
