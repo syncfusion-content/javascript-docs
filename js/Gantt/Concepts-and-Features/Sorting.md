@@ -18,10 +18,10 @@ The **Gantt** control for **JavaScript** has built-in support for sorting one or
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    allowSorting: true
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        allowSorting: true
+    });
 
 
 {% endhighlight %}
@@ -35,11 +35,11 @@ $("#GanttContainer").ejGantt({
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    allowSorting: true
-    allowMultiSorting: true
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        allowSorting: true
+        allowMultiSorting: true
+    });
 
 
 {% endhighlight %}
