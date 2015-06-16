@@ -57,7 +57,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 2.Add **&lt;div&gt;** element with in the **&lt;Body&gt;** tag.
 
-{% highlight js %}
+{% highlight html %}
 
 
 <body style="width:100%;height:100%;position:static;">
@@ -74,8 +74,6 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% highlight js %}
 
-<script type="text/javascript">
-     //...
      $(function () {
          $("#TreeGridContainer").ejTreeGrid({                
              columns: [                    
@@ -88,7 +86,6 @@ This section explains how to create a **TreeGrid** control in your application w
          });
 
      });
-</script>
 
 
 {% endhighlight %}
