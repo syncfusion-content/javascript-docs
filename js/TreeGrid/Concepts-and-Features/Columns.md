@@ -18,11 +18,11 @@ You can change the width of the column in **TreeGrid** to show the entire text
 {% highlight js %}
 
 
-$("#TreeGridContainer").ejTreeGrid({
+    $("#TreeGridContainer").ejTreeGrid({
 
-     //...
-     allowColumnResize: true,
-});
+         //...
+         allowColumnResize: true,
+    });
 
 
 
@@ -34,21 +34,19 @@ $("#TreeGridContainer").ejTreeGrid({
 
 The following code example shows you how to display the icon in the **TreeGrid** column.
 
-{% highlight js %}
-
-
-<script type="text/x-jsrender" id="customColumnTemplate">     
-     <div  style='height:20px;' unselectable='on'>{{if hasChildRecords}}<div class='intend' style='height:1px; float:left; width:{{:level*20}}px; display:inline-block;'></div>
-       {{else !hasChildRecords}}
-       <div class='intend' style='height:1px; float:left; width:{{:(level)*20}}px; display:inline-block;'></div>
-       {{/if}}                         
-       <div class='{{if expanded}}e-treegridexpand {{else hasChildRecords}}e-treegridcollapse {{/if}} {{if level===4}}e-doc{{/if}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;
-       style='float: left;display:inline-block; unselectable='on'></div>
-       <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{:#data['Name']}}</div>
-     </div>
+{% highlight html %}
+    <script type="text/x-jsrender" id="customColumnTemplate">     
+         <div  style='height:20px;' unselectable='on'>{{if hasChildRecords}}<div class='intend' style='height:1px; float:left; width:{{:level*20}}px; display:inline-block;'></div>
+           {{else !hasChildRecords}}
+           <div class='intend' style='height:1px; float:left; width:{{:(level)*20}}px; display:inline-block;'></div>
+           {{/if}}                         
+           <div class='{{if expanded}}e-treegridexpand {{else hasChildRecords}}e-treegridcollapse {{/if}} {{if level===4}}e-doc{{/if}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;
+           style='float: left;display:inline-block; unselectable='on'></div>
+           <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{:#data['Name']}}</div>
+         </div>
     </script>   
-
-    <style type="text/css">
+    
+        <style type="text/css">
         .e-treegrid .e-treegridexpand {
             background-image: url(../images/treegrid/folder-open.png);
             background-repeat: no-repeat;
@@ -76,8 +74,9 @@ The following code example shows you how to display the icon in the **TreeGrid*
             content: none;
         }
     </style>
+{% endhighlight %}
 
-    <script type="text/javascript">         
+{% highlight js %}
 
         $(function () {
 
@@ -90,9 +89,6 @@ The following code example shows you how to display the icon in the **TreeGrid*
                           { field: "DateModified", headerText: "Date Modified" }]
             })
         });
-
-    </script>
-
 
 {% endhighlight %}
 
