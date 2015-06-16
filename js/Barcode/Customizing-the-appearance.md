@@ -33,7 +33,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/Barcode/Concepts-and-Features/Customizing-the-appearance_images/Customizing-the-appearance_img2.png" Caption=""%}
+{% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img2.png" Caption=""%}
 
 _Figure_ _2_ _: Customized Barcode_
 
@@ -58,7 +58,7 @@ symbologyType: "code39",
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Barcode/Concepts-and-Features/Customizing-the-appearance_images/Customizing-the-appearance_img3.png" Caption=""%}
+{% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img3.png" Caption=""%}
 
 _Figure_ _3_ _: Barcode with customized height_
 

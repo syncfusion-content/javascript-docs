@@ -30,10 +30,10 @@ You can easily configure the **Barcode** to any **DOM** element such as div or s
 <head>
 <title>Getting Started Essential JS</title>
 <!-- Style sheet for default theme (flat azure)-->
-<link href = "http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.widgets.all.min.css" rel = "stylesheet" />
+<link href ="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.widgets.all.min.css" rel ="stylesheet" />
 <!--scripts-->
-<script src = "http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src = "http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
+<script src ="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src ="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
 </head>
 <body>
 //add barcode element here
