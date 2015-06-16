@@ -17,7 +17,7 @@ Range collection is directly added to the scale object. Refer the following code
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -49,7 +49,7 @@ The API **size** is used to specify the width of the ranges.  The major attribut
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -90,7 +90,7 @@ You can set the background color to improve the look and feel of the **Circular 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -131,7 +131,7 @@ You can position ranges using two properties such as **distanceFromScale** and *
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -176,7 +176,7 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -233,7 +233,7 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
