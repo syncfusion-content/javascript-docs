@@ -26,10 +26,10 @@ Use the following code example for setting different time scales of working hour
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    workingTimeScale: ej.Gantt.workingTimeScale.TimeScale24Hours,
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        workingTimeScale: ej.Gantt.workingTimeScale.TimeScale24Hours,
+    });
 
 
 {% endhighlight %}
@@ -40,11 +40,7 @@ Use the following code example for including time options in start date and end 
 
 {% highlight js %}
 
-
-//...
-//... 
-<script type="text/javascript"> 
-// data source for ejGantt control with time options
+    // data source for ejGantt control with time options
 
         var taskDetails = [{
             taskID: 1,
@@ -86,14 +82,9 @@ Use the following code example for including time options in start date and end 
 
             ]}
 
-</script> 
-</head> 
-<body> 
-<!--Add  Gantt control here-->
-<div id="GanttContainer"></div> 
-<script type="text/javascript">
-    $(function () {
-        $("#GanttContainer").ejGantt({
+
+        $(function () {
+            $("#GanttContainer").ejGantt({
                 dataSource: projectData,
                 taskIdMapping: "taskID",
                 taskNameMapping: "taskName",
@@ -108,11 +99,6 @@ Use the following code example for including time options in start date and end 
                 workingTimeScale: ej.Gantt.workingTimeScale.TimeScale24Hours,
                 });
             });
-</script>
- </body> 
-</html> 
-
-
 
 {% endhighlight %}
 
