@@ -21,7 +21,6 @@ Indicators collection is directly added to the scale object. Refer the following
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -63,7 +62,6 @@ Indicators are of several types such as, circle, rectangle, rounded rectangle, t
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -115,7 +113,7 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -180,7 +178,7 @@ You can use multiple indicators for a single **Gauge**. Each indicator have a li
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
