@@ -13,7 +13,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <button id="btnSubmit">Export</button>
 <div id=" fileName "> FileName </div>
