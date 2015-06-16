@@ -25,13 +25,13 @@ You can enable toolbar for **TreeGrid**, using the following code example.
 
 {% highlight js %}
 
-$("#TreeGridcontainer").ejTreeGrid(
+    $("#TreeGridcontainer").ejTreeGrid(
 
-                       //...
+    //...
     editSettings: {
                    //...
                     rowPosition:”aboveSelectedRow”
-                   },  
+    },  
 
     toolbarSettings: {
         showToolbar: true,
