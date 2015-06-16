@@ -17,7 +17,6 @@ The following code illustrates how to provide localization support for **Context
 
 {% highlight js %}
 
-**[JS]**
 $("#DiagramContent").ejDiagram({            
     locale:"es-ES",
     contextMenu: contextmenu

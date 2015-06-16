@@ -44,12 +44,11 @@ $("#diagram").ejDiagram ({
     layout: { type:"hierarchicaltree"},      
     defaultSettings: {
         //set the default properties of the node.
-        node: { width: 100,height: 40, fillColor:"darkcyan",                  
+        node: { width: 100,height: 40, fillColor:"darkcyan", 
                 labels: [{ name: "label1",bold: true, fontColor:"white"}]
         },
-    //set the default properties of the connector.    
-        connector: { segments: [{ "type": "orthogonal"}], 
-                     targetDecorator: {shape: "none"} } 
+        //set the default properties of the connector.    
+        connector: { segments: [{ "type": "orthogonal"}], targetDecorator: {shape: "none"} } 
     },       
     //initialize the node template.
     nodeTemplate: nodeTemplate,

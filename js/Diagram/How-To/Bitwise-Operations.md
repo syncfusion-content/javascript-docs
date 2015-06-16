@@ -7,15 +7,13 @@ control: Diagram
 documentation: ug
 ---
 
-### Bitwise Operations
+# Bitwise Operations
 
-**Bitwise Operation**
-
-Bitwise Operations are used to manipulate the flagged enumerations [enum]. In this section, Bitwise Operations are illustrated using Graph Constraints. The same is applicable while working with Node Constraints, Connector Constraints or Port Constraints.
+**Bitwise Operations** are used to manipulate the flagged enumerations \[enum\]. In this section, Bitwise Operations are illustrated using Graph Constraints. The same is applicable while working with Node Constraints, Connector Constraints or Port Constraints.
 
 **Add Operation**
 
-You can **add** or **enable** multiple values at a time by using **Bitwise** ‘|’ (OR) **operator**.
+You can **add** or **enable** multiple values at a time by using **Bitwise** ‘\|’ (OR) **operator**.
 
 {% highlight js %}
 
@@ -27,7 +25,7 @@ In the above example, you can do both selection and rotation.
 
 **Remove Operation**
 
-You can **remove** or **disable** values by using **Bitwise** ‘&~’ (XOR) **operator**.
+You can **remove** or **disable** values by using **Bitwise** ‘&\~’ (XOR) **operator**.
 
 {% highlight js %}
 

@@ -19,7 +19,7 @@ The following code example illustrates how to bind data to the diagram through *
 
 //References to be added for knockout support.
 <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
-<script src=" http://cdn.syncfusion.com/js/web/ej.unobtrusive-latest.min.js "></script>
+<script src="http://cdn.syncfusion.com/js/web/ej.unobtrusive-latest.min.js"></script>
 <script src="http://cdn.syncfusion.com/js/ej.widget.ko-latest.min.js"></script>
 
 //Initializes diagram.
