@@ -33,7 +33,6 @@ You can customize the labels of the **legend****item** using **legendLabel** pro
 
 {% highlight js %}
 
-**[HTML]**
        jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({
@@ -69,7 +68,6 @@ You can set headers for each level by setting the **showHeader** propery of the 
 
 {% highlight js %}
 
-**[HTML]**
 <div  id="treemap" style="width: 950px; height: 500px; "></div>
     <script type="text/javascript">
         jQuery(function ($) {
@@ -102,7 +100,6 @@ You can also set labels for the leaf nodes by setting the **showLabels** propert
 
 {% highlight js %}
 
-**[HTML]**
 <div  id="treemap" style="width: 1100px; height: 550px; "></div>
     <script type="text/javascript">
         jQuery(function ($) {

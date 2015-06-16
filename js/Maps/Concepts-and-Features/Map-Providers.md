@@ -21,8 +21,6 @@ You can enable this feature by setting the **layerType** property value as "OSM"
 
 {% highlight html %}
 
-[JS]
-[HTML]
 
 $("#map").ejMap({
 layers: [{
@@ -51,8 +49,6 @@ You can enable this feature by defining the LayerType as “bing”.
 
 {% highlight html %}
 
- [JS]
-[HTML]
 $("#map").ejMap({
        layers: [{
             layerType: ‘bing’,

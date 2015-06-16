@@ -29,7 +29,6 @@ You can color, all the leaf nodes with the same color by setting the **color** v
 
 {% highlight js %}
 
-**[HTML]**
        jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({
@@ -55,7 +54,6 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 {% highlight js %}
 
-**[HTML]**
         jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({
@@ -84,8 +82,6 @@ You can differentiate all the leaf nodes using the **desaturationColorMapping** 
 
 {% highlight js %}
 
-
-**[HTML]**
 
         jQuery(function ($) {
 
@@ -116,7 +112,6 @@ You can customize the **Leaf level TreeMap****items** using **leafItemsSetting**
 
 {% highlight js %}
 
-**[HTML]**
 <script type="text/javascript">
  jQuery(function ($) {
             $( "#treemapContainer").ejTreeMap({

@@ -72,7 +72,6 @@ Add a **&lt;script&gt;** tag anywhere in a webpage and initialize **TreeMap** as
 
 {% highlight html %}
 
-**[HTML]**
 <script type="text/javascript">
   jQuery(function ($) {	
     $("#treemapContainer").ejTreeMap({
@@ -202,7 +201,6 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 {% highlight html %}
 
-**[HTML]**
 <script type="text/javascript">
 jQuery(function ($) {
 
@@ -237,7 +235,6 @@ The following code sample explains how to customize TreeMap appearance using Ran
 
 {% highlight html %}
 
-**[HTML]**
 <script type="text/javascript">
            jQuery(function ($) {
 
@@ -277,7 +274,6 @@ You can customize the Leaf level TreeMap items using leafItemSettings. The Label
 
 {% highlight html %}
 
-**[HTML]**
     <script type="text/javascript">
       jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({
@@ -319,7 +315,6 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
 
 {% highlight html %}
 
-**[HTML]**
     <script type="text/javascript">
       jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({
