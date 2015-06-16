@@ -13,11 +13,7 @@ In Cube Dimension Browser tree-view can be viewed in a filtered manner through t
 
 {% highlight js %}
 
-[JS]
-
 $("#OlapClient").ejOlapClient({url:"../wcf/OlapClientService.svc", enableMeasureGroups:true});
-
-
 
 {% endhighlight %}
 

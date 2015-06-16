@@ -86,7 +86,6 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 {% highlight html %}
 
-[HTML]
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
@@ -100,7 +99,6 @@ Add the following code example inside the &lt;body&gt; tag in the default.html p
 
 {% highlight html %}
 
-[HTML]
 <div>
      //Create a <div> tag which acts as a container for ejPivotGrid widget.
     <div id="PivotGrid" style="height: 350px; width: 100%; overflow: auto">
@@ -143,8 +141,6 @@ Add the following code example in the **IPivotGridService** interface available 
 
 {% highlight c# %}
 
-[C#]
-
 [ServiceContract(SessionMode = SessionMode.Allowed)]
 
 public interface IPivotGridService
@@ -183,7 +179,6 @@ Add the following necessary namespaces required to implement the service methods
 
 {% highlight c# %}
 
-[C#]
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -206,8 +201,6 @@ You can create the **PivotGridService class** to implement the service methods. 
 
 {% highlight c# %}
 
-[C#]
-
 namespace WebApplication2
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
@@ -228,7 +221,6 @@ You can add the following methods to the service that are invoked for any server
 
 {% highlight c# %}
 
-[C#]
         PivotGrid htmlHelper = new PivotGrid();        
         static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";   
         JavaScriptSerializer serializer = new JavaScriptSerializer();
@@ -238,8 +230,6 @@ You can add the following methods to the service that are invoked for any server
 * Add the following relevant **service** methods.
 
 {% highlight c# %}
-
-[C#]
 
 //This method provides the required information from the server side when initializing the PivotGrid.
  
@@ -361,8 +351,6 @@ class appears. The following are the properties that meet the appropriate endpoi
    
 {% highlight xml %}
 
-[Web.Config]
-
 <services>
 
       <service name="WebApplication2.PivotGridService">
@@ -382,8 +370,6 @@ class appears. The following are the properties that meet the appropriate endpoi
  WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}
-
-[Web.Config]
 
   <endpointBehaviors>
 
@@ -476,7 +462,6 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 {% highlight html %}
 
-[HTML]
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
@@ -490,7 +475,6 @@ Add the following code sample inside the **&lt;body&gt;** tag in the **default.h
 
 {% highlight html %}
 
-[HTML]
 <div>
      //Create a <div> tag which acts as a container for ejPivotGrid widget.
     <div id="PivotGrid" style="height: 350px; width: 100%; overflow: auto">
@@ -533,8 +517,6 @@ Add the following code sample inside the **IPivotGridService** interface availab
 
 {% highlight c# %}
 
-[C#]
-
 [ServiceContract]
 
     public interface IPivotGridService
@@ -560,8 +542,6 @@ Add the following necessary namespaces required to implement the **service** met
 
 {% highlight c# %}
 
-[C#]
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -584,8 +564,6 @@ You can create the **PivotGridService** class to implement the **service** metho
 
 {% highlight c# %}
 
-[C#]
-
 namespace WebApplication2
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
@@ -606,8 +584,6 @@ You can add the following methods to the service that are invoked for any server
 
 {% highlight c# %}
 
-[C#]
-
 PivotGrid htmlHelper = new PivotGrid();
 
 JavaScriptSerializer serializer = new JavaScriptSerializer();
@@ -619,8 +595,6 @@ Dictionary<string, object> dict = new Dictionary<string, object>()>;
 * Add the following relevant service methods.
 
 {% highlight c# %}
-
-[C#]
 
 //This method provides the required information from the server side when initializing the PivotGrid.
  
@@ -682,8 +656,6 @@ Dictionary<string, object> dict = new Dictionary<string, object>()>;
 
 
 {% highlight c# %}
-
-[C#]
 
 namespace WebApplication2
 {
@@ -812,8 +784,6 @@ class appears.The following are the properties that meet the appropriate endpoin
 
 {% highlight xml %}   
 
-[Web.Config]
-
 <services>
 
 <service name="WebApplication2.PivotGridService">
@@ -833,8 +803,6 @@ binding="webHttpBinding" contract="**WebApplication2.IPivotGridService**" />
 WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}  
-
-[Web.Config]
 
 <endpointBehaviors>
         

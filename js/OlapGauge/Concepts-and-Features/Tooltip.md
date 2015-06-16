@@ -13,7 +13,6 @@ documentation: ug
 
 {% highlight js %}
 
-[JS]
 <script type="text/javascript">
 $(function () {
 $("#OlapGauge1").ejOlapGauge({
@@ -72,7 +71,6 @@ You can customize the **Tooltip** by overriding the existing style attributes an
 
 {% highlight css %}
 
-[CSS]
 <style>
 .e-olapgauge-tooltip {
   background-color: aqua !important;

@@ -31,8 +31,6 @@ The following code example illustrates how to initialize **KPI** element within 
 
 {% highlight c# %}
 
-**[C#]**
-
    private OlapReport CreateOlapReport()
         {
          OlapReport olapReport = new OlapReport();

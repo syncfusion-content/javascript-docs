@@ -19,7 +19,6 @@ The following code example illustrates how to connect to an offline cube.
 
 {% highlight c# %}
 
-[C#]
 String connectionString = @"DataSource= C:\Users\<UserName>\appdata\local\syncfusion\essentialstudio\x.x.x.x\Common\Data\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
@@ -32,8 +31,6 @@ The following code example illustrates how to connect to a local cube in SQL Ser
 
 {% highlight c# %}
 
-
-[C#]
 string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
@@ -54,7 +51,6 @@ The following code example illustrates how to connect to the **SSAS** server ava
 
 {% highlight c# %}
 
-[C#]
 static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 

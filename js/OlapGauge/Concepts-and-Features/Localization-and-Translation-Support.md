@@ -62,7 +62,6 @@ The following code example illustrates you on how to localize **OlapGuage’s** 
 
 {% highlight js %}
 
-[JS]
 <script type="text/javascript">
  ej.olap.OlapGauge.locale["fr-FR"] = {
                         RevenueGoal: "Objectif de chiffre d'affaires",
@@ -156,7 +155,6 @@ To apply control side localization, refer the following code example:
 
 {% highlight html %}
 
-[HTML]
 ej.olap.OlapGauge.locale["zh-CN"] = {
 //Corresponding keyword values needs to be set here.
 }
@@ -172,7 +170,6 @@ To render the localized Cube information, set **"Locale Identifier"** in the con
 
 {% highlight c# %}
 
-[C#]
 //1036 refers to “fr-FR” culture.
 string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);

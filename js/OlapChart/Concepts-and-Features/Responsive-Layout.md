@@ -13,7 +13,6 @@ documentation: ug
 
 {% highlight js %}
 
-[JS]
 <script type="text/javascript">
 $(function () {
         $("#OlapChart").ejOlapChart({ url: "../wcf/OlapChartService.svc",

@@ -14,8 +14,7 @@ documentation: ug
 The following code example illustrates how to create the **PivotGrid** control with the enabled **Cell Context**. Here, the **Cell Context** event displays a pop-up menu as follows.
 
 {% highlight javascript %}
-
-[JS]   
+ 
 <head>
     <style>
         .menuItem {

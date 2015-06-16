@@ -25,7 +25,6 @@ You can set the **pointer** to Needle type by setting “**pointerType**”  pro
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -104,7 +103,6 @@ You can customize the **Pointer** length and width using the “**pointerLength*
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -183,7 +181,6 @@ You can customize the **Pointer background** color using “**backgroundcolor**�
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
          backgroundColor: "transparent", 
@@ -263,7 +260,6 @@ You can customize **Pointer shapes** using the “**needlestyle**” property.
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 

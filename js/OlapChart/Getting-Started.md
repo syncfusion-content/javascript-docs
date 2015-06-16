@@ -128,8 +128,6 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 {% highlight html %}
 
-[HTML]
-
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
@@ -143,8 +141,6 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 {% highlight html %}
-
-[HTML]
 
 <div>
      //Creating a div tag which will act as a container for ejOlapChart widget.
@@ -184,8 +180,6 @@ Add the following code sample inside the **IOlapChartService** interface availab
 
 {% highlight c# %}
 
-[C#]
-
     [ServiceContract]
 
     public interface IOlapChartService
@@ -194,7 +188,9 @@ Add the following code sample inside the **IOlapChartService** interface availab
 
         [OperationContract]
 
-        Dictionary<string, object> InitializeChart(string action, string customObject);        [OperationContract]
+        Dictionary<string, object> InitializeChart(string action, string customObject);        
+        
+        [OperationContract]
 
         Dictionary<string, object> **DrillChart**(string action, string drilledSeries, string olapReport, string customObject);
 
@@ -207,7 +203,6 @@ Add the following namespaces to implement the service methods.
 
 {% highlight c# %}
 
-[C#]
 
 using System;
 
@@ -239,8 +234,6 @@ Create the **OlapChartService** class to implement the service methods. Inherit 
 
 {% highlight c# %}
 
-[C#]
-
 namespace **WebApplication2**
 
 {
@@ -265,8 +258,6 @@ Add the following methods to the service, which is invoked during any server-sid
 
 {% highlight c# %}
 
-[C#]
-
 JavaScriptSerializer serializer = new JavaScriptSerializer();
 
 OlapChart htmlHelper = new OlapChart();        
@@ -280,8 +271,6 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 * Initialize the following service methods.
 
 {% highlight c# %}
-
-[C#]
 
 //This method provides the required information from the server side to initialize the OlapChart.
 
@@ -377,8 +366,6 @@ The following are the properties that meet the appropriate endpoint.
 
 {% highlight xml %}
 
-[Web.Config]
-
 <services>
       <service name="**WebApplication2.OlapChartService**">
         <endpoint address="" behaviorConfiguration="**WebApplication2.OlapChartServiceAspNetAjaxBehavior**"
@@ -393,8 +380,6 @@ The following are the properties that meet the appropriate endpoint.
 the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}
-
-[Web.Config]
 
 <endpointBehaviors>
         <behavior name="**WebApplication2.OlapChartServiceAspNetAjaxBehavior**">
