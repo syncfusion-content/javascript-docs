@@ -34,9 +34,10 @@ You can easily configure the **Barcode** to any **DOM** element such as div or s
 <!--scripts-->
 <script src ="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src ="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
+<!--Add custom scripts here -->
 </head>
 <body>
-//add barcode element here
+<!-- Add Barcode element here. -->
 </body>
 </html>
 
@@ -60,9 +61,11 @@ You can easily configure the **Barcode** to any **DOM** element such as div or s
 
 
 
-* Initialize **ejBarcode** in script.
+* Add the following script in the **HTML** file to initialize **ejBarcode**.
 
 {% highlight js %}
+
+<script type="text/javascript">
 
 $(function (){
 // document ready
@@ -70,8 +73,11 @@ $(function (){
 $("#barcode").ejBarcode({ text:"http://www.syncfusion.com", symbologyType: "qrbarcode"});
 });
 
+</script>
 
 {% endhighlight %}
 
+The above code gives the output displayed in following screenshot.
 
+{% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: Barcode"%}
 
