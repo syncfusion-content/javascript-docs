@@ -170,7 +170,7 @@ The following code explains about enabling the row drag and drop with the defaul
 {% highlight js %}
 
 
-$("#treegrid1").ejTreeGrid(
+      $("#treegrid1").ejTreeGrid(
         {   
            //...     
             columns: [ { field: "taskID", headerText: "Task Id"},
@@ -205,7 +205,7 @@ The following code shows how to render row drag tooltip with the desired field i
 {% highlight js %}
 
 
-$("#treegrid1").ejTreeGrid(
+      $("#treegrid1").ejTreeGrid(
         {   
            //...     
 
@@ -232,20 +232,23 @@ The **tooltipTemplate** property renders the template tooltip for **row drag and
 
 The following code shows how to render **row drag tooltip** with tooltip template.	
 
-{% highlight js %}
+{% highlight html %}
 
-
-<script id="customTooltip" type="text/x-jsrender">
-<tr>
-   <td class="border" style='height:30px;'>
-   <div>{{:#data['TaskId']}}</div>
-   </td>
+      <script id="customTooltip" type="text/x-jsrender">
+      <tr>
+         <td class="border" style='height:30px;'>
+         <div>{{:#data['TaskId']}}</div>
+         </td>
    
-   <td class="border" style='height:30px;'>
-   <div>{{:#data['TaskName']}}</div>
-   </td>
-</tr>
-</script>
+         <td class="border" style='height:30px;'>
+         <div>{{:#data['TaskName']}}</div>
+         </td>
+      </tr>
+      </script>
+
+{% endhighlight %}
+
+{% highlight js %}
 
        $("#treegrid1").ejTreeGrid(
         {   
