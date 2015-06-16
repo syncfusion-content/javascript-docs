@@ -21,9 +21,10 @@ In this example, USA shape is used as shape data by utilizing the “United Stat
 
 You can assign the complete contents in “United States of America.json” file to new **JSON** object. For better understanding, a JS file “**usa.js”** is already created to store **JSON** data in **JSON** object “usMap”.****
 
+**[usa.js]**
+
 {% highlight javascript %}
 
-**[usa.js]**
 var usMap = //Paste all the content copied from the JSON file// 
 
 
@@ -61,9 +62,10 @@ The “populationData.js”****file is used to store **JSON** data in **JSON** o
 
 Refer both shape data and datasource as illustrated in the following code example.
 
+**[populationData.js]**
+
 {% highlight js %}
 
-**[populationData.js]**
 var populationData = [
 { name: "California", population: "38332521" },
 { name: "Texas", population: "26448193" },
