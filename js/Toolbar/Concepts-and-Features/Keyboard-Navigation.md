@@ -59,7 +59,6 @@ The following code example illustrates shortcuts associated with the **Toolbar**
 
 {% highlight html %}
 
-**[HTML]**
 
 <!-- Refer Local Data section for style and data bound for toolbar item -->
 
@@ -67,7 +66,7 @@ The following code example illustrates shortcuts associated with the **Toolbar**
 
 {% highlight js %}
 
-**[JS]**
+
 
 <script type="text/javascript">
     $(function () {

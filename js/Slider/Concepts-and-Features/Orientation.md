@@ -41,7 +41,6 @@ The following steps explains you on how to configure the **orientation** propert
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="ejSlider"></div>
 
@@ -49,7 +48,7 @@ The following steps explains you on how to configure the **orientation** propert
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // When initializing the Slider widget, configure the orientation property as follows.
     <script>

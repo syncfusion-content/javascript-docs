@@ -19,7 +19,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
    <input type="checkbox" id="toggle_roundedCorenr" />  
 
@@ -27,7 +26,7 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-[JavaScript]
+
 
 //Initialize the control in JavaScript
 
@@ -65,7 +64,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
    <input type="checkbox" id="toggle_prevent" />
 
@@ -73,7 +71,7 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-[JavaScript]
+
 
 //Initialize the control in JavaScript
 

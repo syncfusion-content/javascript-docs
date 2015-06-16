@@ -17,7 +17,7 @@ The following steps explain the configuration of **enabled** property in **Uploa
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div id="Uploadbox"></div>
 
@@ -25,7 +25,7 @@ The following steps explain the configuration of **enabled** property in **Uploa
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
   // Initialize the control in JavaScript.
 <script type="text/javascript">

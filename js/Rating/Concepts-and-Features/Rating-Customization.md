@@ -19,7 +19,6 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight html %}
 
-**[html]**
     <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -35,8 +34,6 @@ The following code example is used to render the **Rating** control with customi
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JS]**
 
 // Add the following script to render Rating with customized value.
     <script type="text/javascript">
@@ -59,7 +56,6 @@ The following code example is used to render the **Rating** control with **minim
 
 {% highlight html %}
 
-**[HTML]**
     <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -76,7 +72,6 @@ The following code example is used to render the **Rating** control with **minim
 
 {% highlight js %}
 
-**[JS]**
 
 // Add the following script to render Rating with minimum value.
 
@@ -100,7 +95,6 @@ The following code example is used to render the **Rating** control with **maxim
 
 {% highlight html %}
 
-**[HTML]**
     <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -116,8 +110,6 @@ The following code example is used to render the **Rating** control with **maxim
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JS]**
 
 // Add the following script to render Rating with minimum value.
 
@@ -140,7 +132,6 @@ The following code example is used to render the **Rating** control with **Preci
 1. Add the following HTML to render Rating with Precision.
 {% highlight html %}
 
-**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -174,8 +165,6 @@ The following code example is used to render the **Rating** control with **Preci
 
 {% highlight js %}
 
-**[JS]**
-
 // Add the following script to render Rating with Precision.
 
 <script type="text/javascript">        
@@ -200,7 +189,6 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight html %}
 
-**[HTML]**
     <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -216,8 +204,6 @@ The following code example is used to render the **Rating** control with customi
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JS]**
 
 // Add the following script to render Rating with customized increment.
 
@@ -241,7 +227,6 @@ The following code example is used to render the **Rating** control with **allow
 
 {% highlight js %}
 
-**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -266,7 +251,6 @@ The following code example is used to render the **Rating** control with **allow
 
 {% highlight js %}
 
-**[JS]**
 
 // Add the following script to render Rating with allowReset.
 
@@ -291,7 +275,6 @@ The following code example is used to render the **Rating** control with **readO
 
 {% highlight html %}
 
-**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -330,7 +313,6 @@ The following code example is used to render the **Rating** control with **enabl
 
 {% highlight html %}
 
-**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -342,8 +324,10 @@ The following code example is used to render the **Rating** control with **enabl
             </tr>
         </table>
     </div>
+    
+{% endhighlight %}
 
-[JS]
+{% highlight js %}
 // Add the following script to render Rating in disabled form.
 
 <script type="text/javascript">

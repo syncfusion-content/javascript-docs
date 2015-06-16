@@ -18,20 +18,15 @@ The following steps explain you how to specify the **height** of the **DatePicke
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
  {% highlight html %}
-  
-  **[HTML]**
-  
+
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to specify the height of the DatePicker input text
-
 <script type="text/javascript">
+    // Add the code to specify the height of the DatePicker input text
         $(function () {
             // declaration 
             $("#datepicker").ejDatePicker({
@@ -68,18 +63,14 @@ The following steps explain you how to specify the **width** of the **DatePicker
 
  {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
-
-  **[JavaScript]**
-
-// Add the code to specify the width (Number) of the DatePicker input text
+  
 <script type="text/javascript">
+    // Add the code to specify the width (Number) of the DatePicker input text
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -149,19 +140,14 @@ The following steps explain you how to **highlight** the current week section
 
  {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
-
-  **[JavaScript]**
-
-// Add the code to highlight the current Week in the DatePicker Calendar
-
+  
 <script type="text/javascript">
+    // Add the code to highlight the current Week in the DatePicker Calendar
     $(function () {
         // declaration
         $("#datepicker").ejDatePicker({
@@ -190,20 +176,15 @@ The following steps explain you how to set the **DatePicker** value as **readonl
 * In the **HTML** page, add a **&lt;input&gt;** element to render **Datepicker** widget
 
  {% highlight html %}
-  
-  **[HTML]**
-  
+ 
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-  
-// Add the code to set the DatePicker value as readonly
-
 <script type="text/javascript">
+    // Add the code to set the DatePicker value as readonly
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -224,19 +205,14 @@ The following steps explain you how to hide footer in the **DatePicker** widget.
 
  {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
-
-  **[JavaScript]**
-
-// Add the code to hide footer in the DatePicker widget
-
+  
 <script type="text/javascript">
+    // Add the code to hide footer in the DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -258,20 +234,15 @@ The following steps explain you how to hide the **popupbutton** in the **DatePic
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
  {% highlight html %}
-  
-  **[HTML]**
-  
+
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-  
-// Add the code to hide popupbutton footer in the DatePicker
-
 <script type="text/javascript">
+    // Add the code to hide popupbutton footer in the DatePicker
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -299,20 +270,15 @@ The following steps explain you how to show **Roundedcorner** in the **DatePicke
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
  {% highlight html %}
-  
-  **[HTML]**
-  
+    
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-  
-// Add the code to show Roundedcorner in the DatePicker
-
 <script type="text/javascript">
+    // Add the code to show Roundedcorner in the DatePicker
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -342,20 +308,15 @@ The following steps explain you how to hide the **ToolTip** in the **DatePicker*
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
  {% highlight html %}
-  
-  **[HTML]**
-  
+
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to hide the ToolTip in the DatePicker widget
-
 <script type="text/javascript">
+    // Add the code to hide the ToolTip in the DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({

@@ -17,7 +17,6 @@ The following steps explain the configuration of **enableRTL** property in **Upl
 
 {% highlight html %}
 
-**[HTML]**
 
       <div class="control">
         <div id="Uploadbox"></div>
@@ -27,7 +26,7 @@ The following steps explain the configuration of **enableRTL** property in **Upl
 
 {% highlight js %}
 
-**[JavaScript]** 
+
 
  // Initialize the control in JavaScript.
  <script>

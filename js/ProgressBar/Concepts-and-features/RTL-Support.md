@@ -17,7 +17,6 @@ The following steps explain how to **enable** the **RTL** property of the **Prog
 
 {% highlight html %}
 
-**[HTML]**
             <div class="control">
             <div id="progressbar"></div>
             </div>
@@ -26,7 +25,6 @@ The following steps explain how to **enable** the **RTL** property of the **Prog
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code example to enable the RTL property of the ProgressBar control.
 <script type="text/javascript">

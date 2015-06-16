@@ -47,7 +47,6 @@ The following steps explains you on how to apply “**flat-lime-dark**” theme 
 
 {% highlight html %}
 
-[**_HTML**]
 
 //In **_Layout** page, specify the desired “**ej.widgets.all.min.css”** file to load the corresponding theme.
 <head>
@@ -73,7 +72,6 @@ The following steps explains you on how to apply “**flat-lime-dark**” theme 
 
 {% highlight js %}
 
-**[JavaScript]**
 
     <script>
         $("#defaultSlider").ejSlider({
@@ -117,7 +115,6 @@ The following steps explains you on how to configure the **Slider** with custom 
 
 {% highlight html %}
 
-**[HTML]**
 
             <div class="txt">Range Slider</div>
         <div id="rangeSlider"></div>
@@ -127,7 +124,6 @@ The following steps explains you on how to configure the **Slider** with custom 
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // In JavaScript, specify a class as the value for “cssClass” property.
 
@@ -147,7 +143,6 @@ The following steps explains you on how to configure the **Slider** with custom 
 
 {% highlight css %}
 
-**[CSS]**
 
 .purple.e-slider.e-widget {
   background-color: burlywood;
@@ -198,7 +193,6 @@ The following steps explains you on how to disable the tooltip in **Slider**.
 
 {% highlight html %}
 
-**[HTML]**
 
                    <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -207,7 +201,6 @@ The following steps explains you on how to disable the tooltip in **Slider**.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // In JavaScript, during initialization disable the showTooltip property.
 
@@ -232,7 +225,6 @@ The following steps explains you on how to disable the tooltip in **Slider**.
 
 {% highlight html %}
 
-**[HTML]**
 
         <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -241,7 +233,6 @@ The following steps explains you on how to disable the tooltip in **Slider**.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // In JavaScript, during initialization enable the showRoundedCorner property.
 

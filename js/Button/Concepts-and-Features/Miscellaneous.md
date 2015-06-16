@@ -19,16 +19,12 @@ The following steps explains you the details about rendering the button with spe
 
 {% highlight html %}
 
-**[HTML]**
 
     <button id="button_text">button</button>
 
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**
-// Initialize the control in JavaScript
 
    <script type="text/javascript">
         $(function () {
@@ -57,16 +53,13 @@ The following steps explains you the details about rendering the button with rou
 1. In the **HTML** page, add the following button elements to configure **Button** widget.
 
 {% highlight html %}
-**[HTML]**
+
 
      <button id="button_roundedCorner">button</button>
 
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**
-// Initialize the control in JavaScript
 
    <script type="text/javascript">
         $(function () {

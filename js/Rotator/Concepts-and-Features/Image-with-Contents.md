@@ -13,7 +13,6 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 
   {% highlight html %}
 
-  **[HTML]**
   
   	<div class="cols-sample-area">
 	    <ul id="slidercontent">
@@ -93,7 +92,6 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -123,7 +121,6 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
     #slidercontent > li {
         background-color: #9ee8d8;
@@ -223,7 +220,6 @@ This property specifies the number of **Rotator** Items to be displayed. The def
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
        // declaration
@@ -238,7 +234,6 @@ slideHeight: "165px"
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
     #slidercontent > li .image {
         width:200px;

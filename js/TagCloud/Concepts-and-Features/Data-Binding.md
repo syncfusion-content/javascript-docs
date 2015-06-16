@@ -45,14 +45,13 @@ The following steps explains you the local data binding to **TagCloud** widget,
 
 {% highlight html %}
 
-**[HTML]**
+
          <div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Define local data source elements with text, url and frequency fields.
 <script>
@@ -85,7 +84,6 @@ Map Local datasource to corresponding fields in **TagCloud** control as follows,
 
 {% highlight js %}
 
-**[JavaScript]**
 
 <script>
    $("#techweblist").ejTagCloud({
@@ -119,7 +117,6 @@ The following steps explains you the local data binding to **TagCloud** widget.
 
 {% highlight html %}
 
-**[HTML]**
          <div id="techweblist"></div>
 
 
@@ -133,7 +130,6 @@ Define DataManager and assign remote data source to it. Initialize query for bin
 
 {% highlight js %}
 
-**[JavaScript]**
 
 <script>
     var dataManager = **ej.DataManager**({
@@ -153,7 +149,6 @@ Assign datasource and query property values to bind the remote data. Map the cor
 
 {% highlight js %}
 
-**[JavaScript]**
 
  <script>
    $("#techweblist").ejTagCloud({
@@ -195,7 +190,6 @@ The following code example depicts you the way to bind data to the **TagCloud** 
 
 {% highlight html %}
 
-**[HTML]**
 <!doctype html>
 <html>
 <head>
@@ -287,7 +281,6 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 {% highlight html %}
 
-**[HTML]**
 <!doctype html>
 <html lang="en" ng-app="tagApp">
 <head>

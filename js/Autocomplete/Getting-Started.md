@@ -25,7 +25,6 @@ The following screenshot illustrates the **AutoComplete** control that searches 
 
 {% highlight html %}
 
-**[HTML]**
 
 <!DOCTYPE html>
 <html>
@@ -57,7 +56,7 @@ The following screenshot illustrates the **AutoComplete** control that searches 
 
 {% highlight html %}
 
-**[HTML]**
+
 
 Select a component:
 <input type="text" id="autocomplete"/>
@@ -72,14 +71,13 @@ Select a component:
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
 
-    <script type="text/javascript">
-        //Simple Autocomplete creation
-        $(function () {
-            $("#autocomplete").ejAutocomplete();
-        });
-    </script>
+<script type="text/javascript">
+    //Simple Autocomplete creation
+    $(function () {
+        $("#autocomplete").ejAutocomplete();
+    });
+</script>
 
 
 
@@ -101,7 +99,7 @@ You can assign the required data from the remote **URL** as a variable **DataMan
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
 
 var dataManger = ej.DataManager({
           url: "http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"
@@ -109,7 +107,7 @@ var dataManger = ej.DataManager({
            // Query creation
 var query = ej.Query().from("ComponentLists").select("ComponentId", "ComponentName");
 
-
+</script>
 
 {% endhighlight %}
 
@@ -119,11 +117,11 @@ You can assign the **DataSource** property with the required values to bind the 
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
 
 $(function () {
      $('#autocomplete').ejAutocomplete({               
-        **dataSource: dataManger,**
+        dataSource: dataManger,
         query: query,
         fields: { 
           text: "ComponentName", // Content to be displayed in list
@@ -133,7 +131,7 @@ $(function () {
      });
 });
 
-
+</script>
 
 {% endhighlight %}
 
@@ -149,7 +147,7 @@ By default, the **AutoComplete** is rendered with single value selection that ca
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
 
 $(function () {
  $("#autocomplete").ejAutocomplete({
@@ -159,13 +157,13 @@ $(function () {
              text: "ComponentName", 
              key: "ComponentId"
            },
-           **multiSelectMode: ej.MultiSelectMode.VisualMode,**
-           **filterType: "startswith",**
+           multiSelectMode: ej.MultiSelectMode.VisualMode,
+           filterType: "startswith",
            height: "30",
            width: "500"
          });
      });
-
+</script>
 
 {% endhighlight %}
 
@@ -177,7 +175,7 @@ $(function () {
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
 
 $(function () {
       $("#autocomplete").ejAutocomplete({
@@ -193,13 +191,15 @@ $(function () {
              width: "500",
             });
      });
-
+</script>
 
 {% endhighlight %}
 
 
 
-When you set the **highlightSearch** property to **“True”**, the characters typed in textbox gets highlighted in the suggestion list. To display textbox reforms from sharp ends to rounded ends, you can enable the **showRoundedCorner** property.{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img4.png" Caption="AutoComplete textbox with highlight search enabled"%}
+When you set the **highlightSearch** property to **“True”**, the characters typed in textbox gets highlighted in the suggestion list. To display textbox reforms from sharp ends to rounded ends, you can enable the **showRoundedCorner** property.
+
+{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img4.png" Caption="AutoComplete textbox with highlight search enabled"%}
 
 ### Configure DropDown button
 
@@ -215,7 +215,6 @@ Now you can override the search icon class and replace the content to **DropDown
 
 {% highlight css %}
 
-[CSS]
 <style>
     .e-icon.e-search:before {
         content: url("common-images/icon-down.png") !important;
@@ -230,7 +229,7 @@ Now you can override the search icon class and replace the content to **DropDown
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
 
 $(function () {
 $("#autocomplete").ejAutocomplete({
@@ -241,7 +240,7 @@ $("#autocomplete").ejAutocomplete({
                key: "ComponentId"
              },
              multiSelectMode: ej.MultiSelectMode.VisualMode,
-             **showPopupButton: true,**
+             showPopupButton: true,
              highlightSearch: true,
              showRoundedCorner: true ,
              height: "30",
@@ -249,7 +248,7 @@ $("#autocomplete").ejAutocomplete({
             });
      });
 
-
+</script>
 {% endhighlight %}
 
 

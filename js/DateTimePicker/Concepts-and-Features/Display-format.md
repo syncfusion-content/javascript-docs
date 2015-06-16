@@ -80,8 +80,6 @@ In the following example, set **dateTimeFormat** to **fulldatetime** format.
 
 
 {% highlight html %}
-
-  **[HTML]**
   
     <div class="control">
 	        <input type="text" id="dateTime" />
@@ -92,9 +90,9 @@ In the following example, set **dateTimeFormat** to **fulldatetime** format.
 
   {% highlight js %}
 
-  **[JavaScript]**
+<script>
   
-  // Adds the code in your script section to render the DateTimePicker 
+  // Add the code in your script section to render the DateTimePicker 
   
 	$('#dateTime').ejDateTimePicker({
 	            dateTimeFormat: "dddd, MMMM dd, yyyy hh:mm:ss tt",
@@ -103,6 +101,7 @@ In the following example, set **dateTimeFormat** to **fulldatetime** format.
 	            width: '300px'
 	});
 
+</script>
 
   {% endhighlight %}
 
@@ -148,8 +147,6 @@ Add the following code in your **HTML** page.
 
 
 {% highlight html %}
-
-  **[HTML]**
   
   	<div class="control">
 	        <input type="text" id="dateTime" />
@@ -160,14 +157,14 @@ Add the following code in your **HTML** page.
 
   {% highlight js %}
 
-  **[JavaScript]**
+<script>
   
-  // Adds the code in your script section to render the DateTimePicker with short header        
+  // Add the code in your script section to render the DateTimePicker with short header        
 	 $('#dateTime').ejDateTimePicker({
 	                dayHeaderFormat: "showHeaderShort",
 	                width: '200px',
 	            });
-
+</script>
 
   {% endhighlight %}
   

@@ -17,7 +17,6 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 
 {% highlight html %}
 
-**[HTML]**
 
   <div class="cols-sample-area">
     <div id="toolbarcontent">
@@ -56,7 +55,6 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 
 {% highlight js %}
 
-**[JS]**
 
 <script type="text/javascript">
     $(function () {
@@ -69,7 +67,6 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
     .darktheme .cols-sample-area .e-tooltxt .ToolbarItems {
         background-image: url('../images/toolbar/ui-icons-metro.png');
@@ -129,7 +126,6 @@ The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set t
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration

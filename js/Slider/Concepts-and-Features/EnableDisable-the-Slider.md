@@ -23,7 +23,6 @@ The following steps explains you on how to disable the **Slider**.
 
 {% highlight html %}
 
-**[HTML]**
 
        <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -32,7 +31,6 @@ The following steps explains you on how to disable the **Slider**.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // During initialization disable the Slider by setting value for enabled property as false.
 

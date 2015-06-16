@@ -15,7 +15,6 @@ Add the following code in your **HTML** page.
 
   {% highlight html %}
 
-  **[HTML]**
   
   	   <div class="control">
 	        <input type="text" id="dateTime" />
@@ -27,15 +26,15 @@ Add the following code in your **HTML** page.
 
   {% highlight js %}
 
-  **[JavaScript]**
+<script>
   
-  // Adds the code in your script section to render DateTimePicker with right to left appearance
+  // Add the code in your script section to render DateTimePicker with right to left appearance
 
             $('#dateTime').ejDateTimePicker({
 	                width: 200,
-	                enableRTL:true
-	
+	                enableRTL:true	
 	            });
+</script>
 
   {% endhighlight %}
   

@@ -17,7 +17,6 @@ The following steps explains you the details about rendering the button with Rig
 
 {% highlight html %}
 
-**[HTML]**
 <div class="spltspan">
         <button id="spltbutton_rtl">login</button>
         <ul id="Ul11">
@@ -32,7 +31,6 @@ The following steps explains you the details about rendering the button with Rig
 
 {% highlight js %}
 
-**[JavaScript]**
 // Initialize the control in JavaScript
      <script type="text/javascript">
             $(function () {
@@ -55,7 +53,6 @@ The following steps explains you the details about rendering the button with Rig
 
 {% highlight css %}
 
-**[CSS]**
    <style>
         .spltspan {
             margin-left: 120px;

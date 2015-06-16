@@ -20,7 +20,6 @@ documentation: ug
 {% highlight html %}
 
 
-   **[HTML]**
    
       <div id="accordion" style="width: 400px"> 
     <h3>  
@@ -44,14 +43,15 @@ documentation: ug
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 
-// To disable the control, set enabled property value as false
+// To disable the control set enabled property value as false
 
             $("#accordion").ejAccordion({
                 enabled:false
             });
 
+</script>
 {% endhighlight %}
 
 
@@ -74,7 +74,6 @@ The following steps explains you on how to enable the panel items in **Accordion
 
 {% highlight html %}
 
-   **[HTML]**
    
       <div id="accordion" style="width: 400px"> 
     <h3>  
@@ -99,9 +98,9 @@ The following steps explains you on how to enable the panel items in **Accordion
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 
-// To enable and disable accordion panel items, set the values for enabledItems and disabledItems
+// To enable and disable accordion panel items set the values for enabledItems and disabledItems
 
             $("#accordion").ejAccordion({
                 enabledItems: [1, 2],
@@ -110,7 +109,7 @@ The following steps explains you on how to enable the panel items in **Accordion
                 enableMultipleOpen : true
             });
 
-
+</script>
 {% endhighlight %}
 
 2. Output for Accordion control with some enabled and disabled items, where first panel is disabled and it can’t be expanded or collapsed is as follows.

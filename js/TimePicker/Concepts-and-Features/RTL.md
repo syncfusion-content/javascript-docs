@@ -19,15 +19,12 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
-
          <input type="text" id="time" />
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
 // Enable RTL for TimePicker controls as follows.
 <script>
 $(function () {

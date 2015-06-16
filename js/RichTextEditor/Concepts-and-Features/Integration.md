@@ -29,7 +29,6 @@ Add the following code in your **HTML** page to initialize the **RTE** control.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div ng-app="syncApp" ng-controller="RTECtrl">
      <div id="control" style="float: left; width: 30%;">
@@ -68,7 +67,6 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="control" style="float: left; width: 30%;">
         <textarea id="rteSample" data-bind="ejRTE: {value:rteValue,width:width,height:height}"></textarea>
@@ -81,7 +79,6 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section to render RTE.
 <script>

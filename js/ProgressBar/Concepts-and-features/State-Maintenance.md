@@ -15,11 +15,8 @@ The following steps explain the **State Maintenance** in the **ProgressBar** con
 
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
 
-
-
 {% highlight html %}
 
-**[HTML]**
             <div class="control">
             <div id="progressbar"></div>
             </div>
@@ -28,7 +25,6 @@ The following steps explain the **State Maintenance** in the **ProgressBar** con
 
 <{% highlight js %}
 
-**[JavaScript]**
 
 // Add the following script to enable State Maintenance.
 <script type="text/javascript">

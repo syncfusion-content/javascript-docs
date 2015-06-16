@@ -25,7 +25,6 @@ The following steps explains you the configuration of search options in **Dropdo
 
 {% highlight html %}
 
-**[HTML]**
 
      <input type="text" id="dropdownlist" />
 
@@ -44,10 +43,8 @@ The following steps explains you the configuration of search options in **Dropdo
 
 {% highlight js %}
 
-**[JavaScript]**
 
-<script type="text/javascript">
-      
+<script type="text/javascript">      
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",                
@@ -57,7 +54,7 @@ The following steps explains you the configuration of search options in **Dropdo
                 caseSensitiveSearch:false
             });
         });
-   </script>
+</script>
 
 {% endhighlight %}
 

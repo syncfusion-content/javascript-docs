@@ -15,7 +15,6 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
 
   {% highlight html %}
 
-  **[HTML]**
   
   <div class="cols-sample-area">
 	    <ul id="slidercontent" accesskey="e">
@@ -42,7 +41,6 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
 
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -59,7 +57,6 @@ The “isResponsive” property resizes the Rotator when the browser window is r
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -75,7 +72,6 @@ The **Rotator** Items continuously rotate without user interference by enable th
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -92,7 +88,6 @@ The **stopOnHover** property pauses the **auto play** while hover on the **Rotat
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -125,7 +120,6 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -150,7 +144,6 @@ The **“showPager”** property turns on or off the **pager** support in the **
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -173,7 +166,6 @@ The “**showPlayButton**” property enables play / pause button on **Rotator**
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -194,7 +186,6 @@ The “**showNavigateButton**” property turns on or off the slide buttons (nex
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -215,7 +206,6 @@ When the **Rotator** Item is an image, you can specify a caption for the **Rotat
 
 {% highlight js %}
 
-**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration

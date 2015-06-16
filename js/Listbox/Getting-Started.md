@@ -153,8 +153,6 @@ In the above screenshot, you can select a list item from the first **ListBox** w
 
 {% highlight js %}
 
-**[JavaScript]**
-
 <script type="text/javascript">
     jQuery(function ($) {
         // document ready
@@ -292,8 +290,6 @@ You can drag an item from a **ListBox** and drop it in a droppable element.To dr
 
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <script type="text/javascript">
     jQuery(function ($) {

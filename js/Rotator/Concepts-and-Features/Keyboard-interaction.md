@@ -60,7 +60,6 @@ You can refer the following code example for **keyboard** navigation.
 
   {% highlight html %}
 
-  **[HTML]**
   
   	<div class="cols-sample-area">
 	    <ul id="slidercontent" accesskey="e">
@@ -103,7 +102,6 @@ You can refer the following code example for **keyboard** navigation.
 
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -138,7 +136,6 @@ Add the following code in your **JavaScript** to focus the control.
 
   {% highlight js %}
 
-  **[JavaScript]**
   
     //Control focus key
 	        $(document).on("keydown", function (e) {
@@ -151,7 +148,6 @@ Add the following code in your **JavaScript** to focus the control.
   
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
     .e-rotator-wrap .e-thumb .e-thumb-items li img {
         width: 130px;

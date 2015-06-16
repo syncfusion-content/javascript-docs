@@ -21,7 +21,6 @@ The following code example explains you the **rating** control creation. The inp
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -48,7 +47,6 @@ The following code example explains you the **rating** control creation. The inp
 
 {% highlight js %}
 
-**[JS]**
     // Add the following script to render Tab with other widget.
     
     <script type="text/javascript">
@@ -67,7 +65,6 @@ To render the **rating** controls in the first **Tab** element refer the styles 
 
 {% highlight css %}
 
-   **[CSS]**
     
     <style type="text/css" class="cssStyles">
             .dishRating {

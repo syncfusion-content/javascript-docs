@@ -19,26 +19,20 @@ The following steps explain you the configuration of the **allowMultiSelection**
 
 {% highlight html %}
 
-**[HTML]**
-
     <input type="text" id="dropdownlist" />
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Configure multiSelectMode type for Dropdownlist control
 <script type="text/javascript">
-
+        // Configure multiSelectMode type for Dropdownlist control
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
                 width: "200px",
                 showCheckbox: true,
                 allowMultiSelection: true
-
             });
         });
 

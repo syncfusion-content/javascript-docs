@@ -21,7 +21,6 @@ You can use the following code example to render the **Tab** widget with scroll 
 
 {% highlight html %}
 
-**[HTML]**
 
     <div style="width: 500px; padding: 50px;">
         <div id="dishtype">
@@ -71,7 +70,6 @@ You can use the following code example to render the **Tab** widget with scroll 
 
 {% highlight js %}
 
-[JS]
 // Add the following script to render Tab control
     <script type="text/javascript">
         $(function () {

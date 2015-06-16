@@ -53,7 +53,6 @@ The following steps explains you on how to enable keyboard support in **Slider**
 
 {% highlight html %}
 
-**[HTML]**
 
        <div class="txt">Range Slider</div>
         <div id="rangeSlider"></div>
@@ -62,7 +61,7 @@ The following steps explains you on how to enable keyboard support in **Slider**
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Focus the Slider control in the document key down function.
 

@@ -19,8 +19,6 @@ The following steps explain enabling the right-to-left property for **Dialog** c
 
 {% highlight html %}
 
-**[HTML]**
-
         <div id="rtlDialog" title="WinRT">
         Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications <span>including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more.</span>
         It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
@@ -30,15 +28,13 @@ The following steps explain enabling the right-to-left property for **Dialog** c
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Enables RTL to the Dialog control by setting enableRTL property as true
-    <script type="text/javascript">
-        $("#rtlDialog").ejDialog({
-            enableRTL: true,
-            width: 550            
-        });
-     </script>
+<script type="text/javascript">
+// Enable RTL to the Dialog control by setting enableRTL property as true
+    $("#rtlDialog").ejDialog({
+        enableRTL: true,
+        width: 550            
+    });
+ </script>
 
 {% endhighlight %}
 

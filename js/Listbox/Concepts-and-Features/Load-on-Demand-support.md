@@ -18,7 +18,6 @@ The following steps explains you the behaviour of Load-onDemand support in **Lis
 
 {% highlight html %}
 
-**[HTML]**   
 
 <div class="control">
     <h5 class="ctrllabel"> Select Customer ID</h5>
@@ -29,9 +28,8 @@ The following steps explains you the behaviour of Load-onDemand support in **Lis
 
 {% highlight js %}
 
-**[JavaScript]** 
 
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
 <script type="text/javascript">
     jQuery(function ($) {
         var dataManger = ej.DataManager({
@@ -47,7 +45,7 @@ The following steps explains you the behaviour of Load-onDemand support in **Lis
             query: query, enableLoadOnDemand: true, itemsCount: 91, itemRequest: "itemRequested"
         });
 });
-//Loads the set of items in itemRequested client-side method
+//Load set of items in itemRequested client-side method
     function itemRequested(args) {
         var target = $("#selectCar").data("ejListBox");
         target.model.query = ej.Query().from("Customers").range(args.start, args.start + 20);

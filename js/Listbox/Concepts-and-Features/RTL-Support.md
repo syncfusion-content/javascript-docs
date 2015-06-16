@@ -19,7 +19,6 @@ The following steps explains you the configuration of **enableRTL** properties i
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -30,7 +29,6 @@ The following steps explains you the configuration of **enableRTL** properties i
 
 {% highlight js %}
 
-**[JavaScript]**
   
 // Initialize the control in JavaScript
 

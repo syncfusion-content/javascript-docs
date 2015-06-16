@@ -23,7 +23,6 @@ The following steps explains you on how to disable the animation effect in **Sli
 
 {% highlight html %}
 
-**[HTML]**
 
         <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -32,7 +31,6 @@ The following steps explains you on how to disable the animation effect in **Sli
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // In JavaScript, during initialization disable the enableAnimation property.
 
@@ -58,7 +56,6 @@ The following steps explains you on how to customize the animation speed.
 
 {% highlight html %}
 
-**[HTML]**
 
         <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -67,7 +64,7 @@ The following steps explains you on how to customize the animation speed.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // In JavaScript, during initialization specify the value for animationSpeed property.
 

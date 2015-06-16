@@ -19,7 +19,6 @@ Add the above **css** link in the code sample.        
 
 {% highlight html %}
 
-**[HTML]**
 
 <div class="control">
     <!—list of toolbar items-->
@@ -91,7 +90,6 @@ Add the above **css** link in the code sample.        
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css" class="cssStyles">
     .e-tooltxt .PdfDocument.e-icon {
@@ -182,7 +180,6 @@ Add the above **css** link in the code sample.        
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
     $(function () {

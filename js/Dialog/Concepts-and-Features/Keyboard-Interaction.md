@@ -52,8 +52,6 @@ The following steps explains you to enable keyboard interaction for **Dialog** c
 
 {% highlight html %}
 
-**[HTML]**
-
       <div id="keyboardDialog" title="WinRT">
         Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications <span>including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more.</span>
         It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
@@ -63,20 +61,18 @@ The following steps explains you to enable keyboard interaction for **Dialog** c
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Sets the width and define the Dialog function
-    <script type="text/javascript">
-        $("#keyboardDialog").ejDialog({
-            width: 550            
-        });
-        //Control focus key
-        $(document).on("keydown", function (e) {
-            if (e.altKey && e.keyCode === 74) { // j- key code.
-                $("#keyboardDialog").focus();
-            }	
-        });
-     </script>
+<script type="text/javascript">
+// Set the width and define the Dialog function
+    $("#keyboardDialog").ejDialog({
+        width: 550            
+    });
+    //Control focus key
+    $(document).on("keydown", function (e) {
+        if (e.altKey && e.keyCode === 74) { // j- key code.
+            $("#keyboardDialog").focus();
+        }	
+    });
+ </script>
 
 {% endhighlight %}
 

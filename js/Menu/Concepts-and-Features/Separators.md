@@ -26,7 +26,6 @@ _Figure 22: Menu with Separators_
 
 {% highlight html %}
 
-**[HTML]**
     
 <div>
     <ul id="menucontrol">
@@ -79,7 +78,6 @@ _Figure 22: Menu with Separators_
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
     jQuery(function ($) {

@@ -19,7 +19,6 @@ The following steps explain you on how to set the **value** for the **ProgressBa
 
 {% highlight html %}
 
-**[HTML]**
 
             <div class="control">
             <div id="progressbar"></div>
@@ -29,7 +28,6 @@ The following steps explain you on how to set the **value** for the **ProgressBa
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code example to set the value for the ProgressBar widget.
 <script type="text/javascript">
@@ -70,7 +68,6 @@ The following steps explain you on how to set the value in **percentage** for th
 
 {% highlight html %}
 
-**[HTML]**
 
             <div class="control">
             <div id="progressbar"></div>
@@ -80,7 +77,6 @@ The following steps explain you on how to set the value in **percentage** for th
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code example to set the value in percentage for the ProgressBar widget.
 <script type="text/javascript">

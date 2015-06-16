@@ -17,7 +17,7 @@ The following steps guide you in uploading the file **asynchronously**.
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div id="Uploadbox"></div>
 
@@ -26,7 +26,7 @@ The following steps guide you in uploading the file **asynchronously**.
 {% highlight js %}
 
 
-**[JavaScript]**
+
 
 // Initialize the control in JavaScript.
 <script>

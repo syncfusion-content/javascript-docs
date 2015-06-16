@@ -23,20 +23,15 @@ The following steps explain you how to get the highlighted week end and special 
 
 
   {% highlight html %}
-  
-  **[HTML]**
-  
+
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Adds the code to get the highlighted week end and special dates
-
 <script type="text/javascript">
+    // Add the code to get the highlighted week end and special dates
         $(function () {
            //inserting a image for special dates to highlight a some special dates
             var today = new Date(),
@@ -63,7 +58,6 @@ The following steps explain you how to get the highlighted week end and special 
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
     .flag .e-image {
         background: url(/images/flags.png) no-repeat left center;

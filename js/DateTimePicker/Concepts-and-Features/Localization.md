@@ -34,6 +34,7 @@ The following code example is used to know Spanish calendar locale information.
 
 {% highlight js %}
 
+<script>
 calendars: {
               standard: {
                   firstDay: 1,
@@ -63,6 +64,7 @@ calendars: {
       }
 
 
+</script>
 
 {% endhighlight %}
 
@@ -75,7 +77,6 @@ Add the following code in your **HTML** page.
 
   {% highlight html %}
 
-  **[HTML]**
   
      <div class="control">
 	        <input type="text" id="dateTime" />
@@ -87,14 +88,15 @@ Add the following code in your **HTML** page.
 
   {% highlight js %}
 
-  **[JavaScript]**
+<script>
   
-  // Adds the code in your script section to render the DateTimePicker with Spanish culture
+  // Add the code in your script section to render the DateTimePicker with Spanish culture
   
 	          $("#dateTime").ejDateTimePicker({
 	              locale: "es-ES"
 	          });
 
+</script>
 
   {% endhighlight %}
 

@@ -21,14 +21,12 @@ The following steps explains you on how to configure font sizes for a **TagCloud
 
 {% highlight html %}
 
-**[HTML]**
                  <div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
 // Assign the values for minFontSize  and maxFontSize properties below.
 <script>
         $("#techweblist").ejTagCloud({
@@ -59,7 +57,7 @@ The following steps explains you to configure format for a **TagCloud**.
 
 {% highlight html %}
 
-**[HTML]**
+
  
    <table>
     <tr>
@@ -78,7 +76,7 @@ The following steps explains you to configure format for a **TagCloud**.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Assign the values for format property in TagCloud.
 <script>
@@ -144,14 +142,12 @@ The following steps allows you to configure **CSS** class for **TagCloud**.
 
 {% highlight html %}
 
-**[HTML]**
          <div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the cssClass property to TagCloud.
    <script>   
@@ -169,7 +165,6 @@ Define CSS class for customizing the **TagCloud** widget.
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
         /* Customize the TagCloud div element */
         .CustomCss

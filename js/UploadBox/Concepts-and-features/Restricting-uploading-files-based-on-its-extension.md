@@ -23,7 +23,6 @@ The following steps explain the configuration of **extensionsAllow** property in
 
 {% highlight html %}
 
-**[HTML]**
 
       <div id="Uploadbox"></div>
 
@@ -31,7 +30,7 @@ The following steps explain the configuration of **extensionsAllow** property in
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
   // Initialize the control in JavaScript.
   <script>
@@ -61,7 +60,6 @@ The following steps explain the configuration of **extensionsDeny** property in 
 
 {% highlight html %}
 
-**[HTML]**
 
       <div id="Uploadbox"></div>
 
@@ -69,7 +67,6 @@ The following steps explain the configuration of **extensionsDeny** property in 
 
 {% highlight js %}
 
-**[JavaScript]**
 
  // Initialize the control in JavaScript.
  <script>

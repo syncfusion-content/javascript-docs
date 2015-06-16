@@ -19,7 +19,7 @@ The following steps explain the configuration of **saveUrl** property in the **U
 
 {% highlight html %}
 
-**[HTML]**
+
 
       <div id="Uploadbox"></div>
 
@@ -27,7 +27,7 @@ The following steps explain the configuration of **saveUrl** property in the **U
 
 {% highlight js %}
 
-**[JavaScript]**
+
   
 // Initialize the control in JavaScript.
 
@@ -48,7 +48,7 @@ The following steps explain the configuration of **saveUrl** property in the **U
 {% highlight c# %}
 
 #saveFiles.ashx
-**[ashx]**  
+ 
 
 public class saveFiles : IHttpHandler {
 
@@ -102,15 +102,13 @@ The following steps explain the configuration of **removeUrl** property in **Upl
 
 {% highlight html %}
 
-**[HTML]**
-
       <div id="Uploadbox"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]** 
+ 
 
 // Initialize the control in JavaScript.
 
@@ -132,9 +130,9 @@ The following steps explain the configuration of **removeUrl** property in **Upl
 {% highlight c# %}
 
 #removeFiles.ashx
-**[ashx]**  
-public class removeFiles : IHttpHandler
-{
+
+    public class removeFiles : IHttpHandler
+     {
 
     public void ProcessRequest(HttpContext context)
     {
@@ -181,7 +179,7 @@ The following steps explain the configuration of **autoUpload** property in **Up
 
 {% highlight html %}
 
-**[HTML]**
+
 
       <div id="Uploadbox"></div>
 
@@ -189,7 +187,7 @@ The following steps explain the configuration of **autoUpload** property in **Up
 
 {% highlight js %}
 
-**[JavaScript]**
+
  
 // Initialize the control in JavaScript.
 <script type="text/javascript">

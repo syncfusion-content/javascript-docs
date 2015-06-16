@@ -21,7 +21,6 @@ The following steps explains you the configuration of **showScale** property.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -34,7 +33,6 @@ The following steps explains you the configuration of **showScale** property.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // In JavaScript, configure the showScale property as follows.
 
@@ -73,7 +71,6 @@ The following steps explains you on how to disable the small ticks in **Slider**
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -87,7 +84,6 @@ The following steps explains you on how to disable the small ticks in **Slider**
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // In JavaScript, set the value of showSmallTicks property as “false”.
 
@@ -132,7 +128,6 @@ The following steps explains you on how to configure the smallStep and largeStep
 
 {% highlight html %}
 
-**[HTML]**
 
             <div class="txt">Default Slider</div>
         <div id="defaultSlider"></div>
@@ -145,7 +140,6 @@ The following steps explains you on how to configure the smallStep and largeStep
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // In JavaScript, specify the value for smallStep and largeStep properties.
 

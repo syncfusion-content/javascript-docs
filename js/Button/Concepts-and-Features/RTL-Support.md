@@ -17,7 +17,6 @@ The following steps explains the details about rendering the button with Right t
 
 {% highlight html %}
 
-**[HTML]**
 
     <button id="button_rtl">button</button>
 
@@ -25,8 +24,6 @@ The following steps explains the details about rendering the button with Right t
 
 {% highlight js %}
 
-**[JavaScript]**
-// Initialize the control in JavaScript
    <script type="text/javascript">
         $(function () {
             $("#button_rtl").ejButton({

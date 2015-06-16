@@ -41,7 +41,6 @@ The following steps explains you on how to apply styles in **Scroller** control.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="scrollcontent">
       <div>                              <!--Wrapper div for Scroller.-->
@@ -86,8 +85,6 @@ The following steps explains you on how to apply styles in **Scroller** control.
 2. Configure the styles.
 
 {% highlight css %}
-
-**[CSS]**
 
 <style type="text/css">
 

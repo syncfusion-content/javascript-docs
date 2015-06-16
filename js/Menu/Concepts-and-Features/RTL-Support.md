@@ -16,7 +16,6 @@ The **enableRTL** option allows the **Menu** control to display it in the right 
 
 {% highlight html %}
 
-**[HTML]**
     
 <div>
     <ul id="menucontrol">
@@ -70,7 +69,6 @@ The **enableRTL** option allows the **Menu** control to display it in the right 
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
     jQuery(function ($) {

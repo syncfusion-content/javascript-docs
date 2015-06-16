@@ -23,7 +23,6 @@ Add the above **css** link in the code sample.
 
 {% highlight html %}
 
-**[HTML]**   
 
 <div>
     <ul id="menucontrol">
@@ -76,7 +75,6 @@ Add the above **css** link in the code sample.
 
 {% highlight js %}
 
-**[Javascript]**
 
 // Add the following code in your script section.
 

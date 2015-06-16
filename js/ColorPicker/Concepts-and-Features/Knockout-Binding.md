@@ -31,7 +31,6 @@ For more information about **Knockout** binding, you can refer to the online doc
 
 {% highlight html %}
 
-**[HTML]**
 
 <!doctype html>
 <html>

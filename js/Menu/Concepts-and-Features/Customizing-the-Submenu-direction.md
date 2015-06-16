@@ -18,7 +18,6 @@ In the following example, the Sub menus opens in the Left side of the menu.
 
 {% highlight html %}
 
-**[HTML]**   
  
 <div class="content-container-fluid">
     <div class="row">
@@ -112,7 +111,6 @@ In the following example, the Sub menus opens in the Left side of the menu.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your <script> section.
 
@@ -141,7 +139,6 @@ You can even achieve auto positioning for Context Menu. Use the following code s
 
 {% highlight html %}
 
-**[HTML]**     
 
  <div>
     <div id="target" class="textarea">
@@ -177,8 +174,6 @@ You can even achieve auto positioning for Context Menu. Use the following code s
 
 {% highlight js %}
 
-**[JavaScript]** 
-
 // Add the following code in your script section.
 
 <script type="text/javascript">
@@ -199,7 +194,6 @@ You can even achieve auto positioning for Context Menu. Use the following code s
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
     .textarea {

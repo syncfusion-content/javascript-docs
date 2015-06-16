@@ -19,8 +19,6 @@ The following steps explains the implementation of multiple **Dialog** in the sa
 
 {% highlight html %}
 
-**[HTML]**
-
      <div id="mvcDialog" title="MVC">
         <p>
             Essential Studio for ASP.NET MVC contains all the controls you need to build line-of-business web applications including grids, charts, gauges, menus, calendars, editors, and much more.
@@ -42,14 +40,12 @@ The following steps explains the implementation of multiple **Dialog** in the sa
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Writes multiple Dialog control in a single web page
-    <script type="text/javascript">
-        $("#mvcDialog").ejDialog({ position: { X: 20, Y: 26 } });
-        $("#orubaseDialog").ejDialog({ position: { X: 521, Y: 20 } });
-        $("#winrtDialog").ejDialog({ position: { X: 296, Y: 207 } });
-    </script>
+<script type="text/javascript">
+// Write multiple Dialog control in a single web page
+    $("#mvcDialog").ejDialog({ position: { X: 20, Y: 26 } });
+    $("#orubaseDialog").ejDialog({ position: { X: 521, Y: 20 } });
+    $("#winrtDialog").ejDialog({ position: { X: 296, Y: 207 } });
+</script>
 
 {% endhighlight %}
 
