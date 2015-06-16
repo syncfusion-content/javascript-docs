@@ -18,14 +18,14 @@ You can customize the week header format and day header format in the **Schedule
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    scheduleHeaderSettings: {
-        weekHeaderFormat: "MMM yyyy",
-        dayHeaderFormat: "d",
-        weekendBackground: '#F2F2F2'
-    }
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        scheduleHeaderSettings: {
+            weekHeaderFormat: "MMM yyyy",
+            dayHeaderFormat: "d",
+            weekendBackground: '#F2F2F2'
+        }
+    });
 
 
 {% endhighlight %}
@@ -43,7 +43,7 @@ You can customize the **Taskbar** based on the task information in Gantt control
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
+    $("#GanttContainer").ejGantt({
         //...
         queryTaskbarInfo: function (args) {
         //queryTaskbarInfo will be triggered when a taskbar is rendered
@@ -105,17 +105,17 @@ The following screenshot shows the customized taskbar in **Gantt** control.
 
 You can apply the theme (Gradient lime) to the **Gantt** control by using the style sheet from the online link as follows.
 
-{% highlight js %}
+{% highlight html %}
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>Getting Started with Gantt Control for JavaScript</title>
-<!-- style sheet for default theme(gradient lime) -->
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> 
-//...
-</html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <title>Getting Started with Gantt Control for JavaScript</title>
+    <!-- style sheet for default theme(gradient lime) -->
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> 
+    //...
+    </html>
 
 
 {% endhighlight %}
