@@ -43,8 +43,6 @@ var world_map = //Paste all the content copied from the JSON file//
 
 {% highlight javascript %}
 
-[JS]
-[HTML]
 jQuery(function ($) {
             $("#mapContainer").ejMap({
                 layers: [

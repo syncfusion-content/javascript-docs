@@ -27,7 +27,6 @@ You can use **groupGap** property to separate the items from every flat level a
 
 {% highlight js %}
 
-**[HTML]**
         jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({
@@ -55,7 +54,6 @@ You can use **groupGap** property to separate the items from every flat level a
 
 {% highlight js %}
 
-**[HTML]**
         jQuery(function ($) {
 
             $("#treemapContainer").ejTreeMap({

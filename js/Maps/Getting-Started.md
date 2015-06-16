@@ -249,7 +249,6 @@ The **JSON** object “populationData” is used as dataSource in the following 
 
 {% highlight html %}
 
-**[HTML]**
     <script type="text/javascript">
         jQuery(function ($) {
             $("#mapContainer").ejMap({
@@ -273,7 +272,6 @@ You can customize the shape’s color by using **fill**, **stroke** and **stroke
 
 {% highlight html %}
 
-**[HTML]**
    <script type="text/javascript">
       jQuery(function ($) {			
                 $("#mapContainer").ejMap({
@@ -317,7 +315,6 @@ The Range color mapping is used to differentiate the shape’s fill based on its
 
 {% highlight html %}
 
-**[HTML]**
 <script type="text/javascript">
        jQuery(function ($) {			
                 $("#mapContainer").ejMap({
@@ -387,7 +384,6 @@ The tooltip is displayed only when **showTooltip** is set to “**True**” in t
 
 {% highlight html %}
 
-**[HTML]**
 
 <script type="text/javascript">
       jQuery(function ($) {			
@@ -433,7 +429,6 @@ You can use **leftLabel** and **rightLabel** property to provide left and right 
 
 {% highlight html %}
 
-**[HTML]**
 <script type="text/javascript">
       jQuery(function ($) {			
                 $("#mapContainer").ejMap({

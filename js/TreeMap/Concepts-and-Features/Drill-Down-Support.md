@@ -43,7 +43,6 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
 
 {% highlight js %}
 
-**[HTML]**
 
 <div  id="treemap" style="width: 700px;height:400px;"></div>
 
