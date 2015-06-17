@@ -21,14 +21,14 @@ The below specified root location is the place from where all the Syncfusion ass
 <table>
 <tr>
 <td>
-**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\
 </td>
 </tr>
 <tr>
 <td>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\
 </td>
 </tr>
 </table>
@@ -46,14 +46,14 @@ The location mentioned below is the root **JavaScript** folder which contains tw
 <table>
 <tr>
 <td>
-**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\
 </td>
 </tr>
 <tr>
 <td>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\
 </td>
 </tr>
 </table>
@@ -102,14 +102,14 @@ The location under where these non-minified files are available are as follows,
 <table>
 <tr>
 <td>
-**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\Src\assets-src
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\Src\assets-src
 </td>
 </tr>
 <tr>
 <td>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\Src\assets-src
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\Src\assets-src
 </td>
 </tr>
 </table>
@@ -154,8 +154,7 @@ The steps to download and configure the Syncfusion Nuget Packages in Visual Stud
 {:.image }
 
 
-{:.caption }
- button to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
+{:.caption }button to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
 
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 {:.image }
