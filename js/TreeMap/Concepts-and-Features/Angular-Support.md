@@ -45,8 +45,6 @@ Apply the plugin and property assigning the **Treemap** element through the di
 
 {% highlight js %}
 
- [JS]
-[HTML]
 //References to be added for angular support.
 
     <script src=" https:/ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
