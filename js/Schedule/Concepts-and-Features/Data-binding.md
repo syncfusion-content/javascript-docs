@@ -81,7 +81,7 @@ The entire records that are initially assigned through dataSource is taken into 
 
 {% highlight js %}
 
-[JavaScript]
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -162,7 +162,7 @@ On executing the above specified code the **Location** field will be added in th
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 
@@ -272,7 +272,7 @@ _Figure_ _50__:_ _schedule____with Local Data Binding_
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 
@@ -349,11 +349,12 @@ The following code example shows you how **load on demand** works with **Sche
 
 {% highlight js %}
 
-**[Javascript]**
-// In this example **oData****service** is used
+
+
 <div id="Schedule1"> </div>
 
 <script>
+	// In this example **oData****service** is used
 $(function () {
 // DataManager creation
 var dataManager = ej.DataManager({

@@ -21,8 +21,6 @@ The following code example explains how to get the reminder list and display it 
 
 {% highlight js %}
 
-**[JavaScript]**
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

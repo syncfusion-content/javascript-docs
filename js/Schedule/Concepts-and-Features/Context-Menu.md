@@ -41,7 +41,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -111,7 +111,7 @@ You can refer the following code example to render the categorize options in the
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -184,7 +184,7 @@ Figure 99: Schedule for the categorize menu item in context menu
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
