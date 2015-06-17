@@ -21,7 +21,7 @@ The key features of the **OLAP Chart** control is listed as follows:
 
 * **Legend** - A color code that helps to differentiate between chart items. A legend also has labels beside each color to indicate that it applies to information from Series 1, Series 2, and so on.
 
-* **Drill** - down support-Clicking on an item moves you to a level of greater detail. This feature is known as drill-down that is supported in the OLAP Chart. 
+* **Drill support** - Clicking on an item moves you to a level of greater detail. This feature is known as drill-down that is supported in the OLAP Chart. 
 
 * **Tooltip** - When the cursor is moved over an item, a tooltip appears displaying the data point values of the respective chart series.
 

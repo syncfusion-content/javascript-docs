@@ -165,7 +165,6 @@ You can customize the **Range size** using “**size**” property.
 
 {% highlight js %}
 
-<script type="text/javascript">
 $(function () {
      $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
          backgroundColor: "transparent", 
@@ -228,8 +227,6 @@ $(function () {
          }]
      });
  });
-</script>
-
 
 {% endhighlight %}
 

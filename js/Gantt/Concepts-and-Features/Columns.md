@@ -18,10 +18,10 @@ You can change the width of the column in **TreeGrid** to show the entire text o
 {% highlight js %}
 
 
- $("#GanttContainer").ejGantt({
-    //...
-    allowColumnResize: true
-});
+     $("#GanttContainer").ejGantt({
+        //...
+        allowColumnResize: true
+    });
 
 
 {% endhighlight %}
@@ -34,13 +34,16 @@ Column template is used to customize the column’s look and feel, based on requ
 
 The following code example shows you how to display the icon in the **TreeGrid** column.
 
-{% highlight js %}
+{% highlight html %}
 
-//...
         <script type="text/x-jsrender" id="columnTemplate">        
                  <div  style='height:20px;width:20px;margin:auto;background-image:url("./images/{{:~className()}}")'/>              
         </script>
-        <script type="text/javascript">
+
+{% endhighlight %}
+
+{% highlight js %}
+
             $.views.helpers({ className: getClassName });
 
             function getClassName() {
@@ -170,9 +173,6 @@ The following code example shows you how to display the icon in the **TreeGrid**
                 });
             });
 
-        </script>
-
-
 
 {% endhighlight %}
 
@@ -203,14 +203,14 @@ The column menu provides the following options:
 {% highlight js %}
 
 
-$("#gantt").ejGantt(
-{   
-    // ...     
-      showColumnChooser: true,
-      allowSorting: true,
-      allowMultiSorting: true,
-    // ...             
-});
+    $("#gantt").ejGantt(
+    {   
+        // ...     
+          showColumnChooser: true,
+          allowSorting: true,
+          allowMultiSorting: true,
+        // ...             
+    });
 
 
 {% endhighlight %}

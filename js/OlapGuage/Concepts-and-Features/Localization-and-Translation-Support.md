@@ -62,7 +62,6 @@ The following code example illustrates you on how to localize **OlapGuage’s** 
 
 {% highlight js %}
 
-<script type="text/javascript">
  ej.olap.OlapGauge.locale["fr-FR"] = {
                         RevenueGoal: "Objectif de chiffre d'affaires",
                         RevenueValue: "Valeur du chiffre d'affaires",
@@ -75,7 +74,7 @@ The following code example illustrates you on how to localize **OlapGuage’s** 
                         RenderingFailed: "Rendant pas"
                     }
 
- $(function () {
+$(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,locale:"fr-FR",
                             backgroundColor: "transparent", 
                             scales: [{
@@ -137,17 +136,15 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
                             }]
                         });
                     });
-                </script>
-
 
 {% endhighlight %}
 
 
 > _**Note: In order to render the localized OLAP Gauge, You are required to reset the content available in both**_
 
-    1. _**OLAP Gauge Control**_
+    1. OLAP Gauge Control
 
-    2. _**OLAP Cube**_
+    2. OLAP Cube
 
 **Localizing Control Information**
 
@@ -162,7 +159,6 @@ ej.olap.OlapGauge.locale["zh-CN"] = {
 
 {% endhighlight %}
 
-
 **Localizing Cube Information**
 
 To render the localized Cube information, set **"Locale Identifier"** in the connection string.
@@ -175,10 +171,7 @@ DataManager = new OlapDataManager(connectionString);
 DataManager.Culture = new System.Globalization.CultureInfo(1036);
 DataManager.OverrideDefaultFormatStrings = true;
 
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the **OlapGauge** with French localization.
 

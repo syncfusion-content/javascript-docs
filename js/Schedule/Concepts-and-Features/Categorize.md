@@ -17,7 +17,7 @@ You can use the following code example to include the categorize option.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -83,7 +83,7 @@ The following code example illustrates on how to render categorize feature in th
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 <div id="Schedule1"> </div>
 <script>

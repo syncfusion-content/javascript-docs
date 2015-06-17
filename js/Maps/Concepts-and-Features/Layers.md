@@ -33,11 +33,11 @@ In this example, World Map shape is used as shape data by utilizing the “**Wor
 
 You can assign the complete contents in “**WorldMap.json**” file to new **JSON** object. For better understanding, a JS file “**WorldMap.js”** is already created to store **JSON** data in **JSON** object “usMap”****
 
+**[usa.js]**
+
 {% highlight javascript %}
 
-**[usa.js]**
 var world_map = //Paste all the content copied from the JSON file// 
-
 
 {% endhighlight %}
 

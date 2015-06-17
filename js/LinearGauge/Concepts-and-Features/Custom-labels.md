@@ -19,7 +19,7 @@ Custom labels collection can be directly added to the scale object. Refer the fo
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -86,7 +86,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -155,7 +155,7 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -218,7 +218,7 @@ You can set multiple custom labels in a single **Linear Gauge** by adding an arr
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {

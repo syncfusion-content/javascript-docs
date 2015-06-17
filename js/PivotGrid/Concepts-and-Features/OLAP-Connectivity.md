@@ -67,9 +67,9 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 {% endhighlight %}
 
-**Connecting to Active Pivot Server**
+**Connecting to ActivePivot Server**
 
-The following code example illustrates how to connect to Active Pivot Server:
+The following code example illustrates how to connect to ActivePivot Server:
 
 
 {% highlight c# %}

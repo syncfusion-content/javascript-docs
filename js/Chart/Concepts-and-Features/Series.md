@@ -182,11 +182,15 @@ You can customize the Chart series using fill, border width and border color. Yo
 
 Data labels refer to the y values of data points that appear on each point. You can also display category names or custom text in data label by applying template for the dataLabel. horizontalTextAlignment and verticalTextAlignment in dataLabel is used to align the label. 
 
-{% highlight js %}
+{% highlight html %}
 
    <div id="template">
         <div id="point">#point.x#:#point.y#%</div>
     </div>
+    
+{% endhighlight %}
+
+{% highlight js %}
 
         $("#chartcontainer").ejChart({
             series: [{

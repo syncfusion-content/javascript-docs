@@ -13,7 +13,6 @@ documentation: ug
 
 {% highlight js %}
 
-<script type="text/javascript">
 $(function () {
        $("#OlapGauge").ejOlapGauge({
                             url: "../wcf/OlapGaugeService.svc", enableTooltip: true, **isResponsive: true,**
@@ -76,16 +75,10 @@ $(function () {
                             }]
                         });
                     });
-</script>
-
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View"%}
-
-<br/>
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View"%}
 

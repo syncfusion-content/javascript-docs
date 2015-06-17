@@ -19,6 +19,18 @@ Essential **OLAP Chart JS** supports 13 different types of chart as follows:
 
    * Stacking Bar
 
+   * Pie
+
+   * Pyramid
+   
+   * Funnel
+
+   * Line
+
+   * Step Line
+
+   * Spline
+
    * Area
 
    * Step Area
@@ -26,16 +38,6 @@ Essential **OLAP Chart JS** supports 13 different types of chart as follows:
    * Spline Area
 
    * Stacking Area
-
-   * Pie
-
-   * Pyramid
-
-   * Line
-
-   * Step Line
-
-   * Spline
 
 #### Column Chart
 
@@ -163,6 +165,25 @@ $("#OlapChart1").ejOlapChart({
 The following screen shot displays the **Pyramid Chart.**
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Types_images/Chart-Types_img6.png" Caption="Pyramid Chart"%}
+
+<br/>
+
+#### Funnel Chart
+
+The **Funnel Chart**  type displays the data in the form of an inverted triangle. It helps you to visualize data in a hierarchical structure without any axes.
+
+{% highlight js %}
+
+$("#OlapChart1").ejOlapChart({
+     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
+     commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Funnel }
+});
+
+{% endhighlight %}
+
+The following screen shot displays the **Funnel Chart.**
+
+{% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Types_images/Chart-Types_img14.png" Caption="Funnel Chart"%}
 
 <br/>
 

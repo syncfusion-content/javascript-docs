@@ -11,8 +11,6 @@ documentation: ug
 
 {% include image.html url="/js/OlapChart/OLAP-Chart-Elements_images/OLAP-Chart-Elements_img1.png" Caption="OLAP Chart"%}
 
-<br/>
-
 * **Title:** The Chart title is the area on top of the Chart control that displays the text about the **OlapChart**.
 
 * **Chart Area:** Holds the plots/graphs that are defined in the chart. The **ChartArea** also includes the Chart axes that are defined. A primary x-axis and primary y-axis are defined by default.

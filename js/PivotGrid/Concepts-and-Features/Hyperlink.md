@@ -13,13 +13,10 @@ The PivotGrid control supports **Hyperlink** option to link data for any indivi
 
 The following code example demonstrates how to create the **PivotGrid** control using **Hyperlink** support.
 
-{% highlight javascript %}
+{% highlight js %}
 
-<body>
-<div id="PivotGrid1" style="height: 380px; width: 72%; display:block; float:left; overflow: auto" />
-  <script type="text/javascript">
        $(function () {
-                        $("#PivotGrid1").ejPivotGrid({
+                    $("#PivotGrid1").ejPivotGrid({
                             hyperlinkSettings: {
                                 enableValueCellHyperlink: true,
                                 enableRowHeaderHyperlink: true,
@@ -37,8 +34,6 @@ The following code example demonstrates how to create the **PivotGrid** control 
                             alert("Cell Click event is fired");
                         }
                    });
-</script>
-</body>
 
 {% endhighlight %}
 

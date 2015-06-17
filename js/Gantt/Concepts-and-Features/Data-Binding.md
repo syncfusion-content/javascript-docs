@@ -19,116 +19,59 @@ In the application that uses Gantt control, you can connect the data source gene
 
 The following code example shows how to bind the hierarchical local data into the **Gantt** control.
 
-{% highlight html %}
+{% highlight js %}
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<title>Getting Started with Gantt Control for JavaScript</title>
-<meta charset="utf-8" />
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
-<!--scripts-->   
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js">
-</script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
-
-    <script type="text/javascript">
-
-        //data source for ejGantt control
-
-        var taskDetails = [{
-            taskID: 1,
-            taskName: "Design",
-            startDate: new Date("02/10/2014"),
-            endDate: new Date("02/14/2014"),
-            baselineStartDate: new Date("02/10/2014"),
-            baselineEndDate: new Date("02/12/2014"),
-            duration: 5,subtasks: [
+    var taskDetails = [{
+            taskID: 1,
+            taskName:"Design",
+            startDate:new Date("02/10/2014"),
+            endDate:new Date("02/14/2014"),
+            baselineStartDate:new Date("02/10/2014"),
+            baselineEndDate:new Date("02/12/2014"),
+            duration: 5,
+            subtasks:[
             { 
                 taskID: 2,
-                taskName: "Software Specification",
-                startDate: new Date("02/10/2014"),
-                endDate: new Date("02/12/2014"),
-                baselineStartDate: new Date("02/10/2014"),
-                baselineEndDate: new Date("02/12/2014"),
+                taskName:"Software Specification",
+                startDate:new Date("02/10/2014"),
+                endDate:new Date("02/12/2014"),
+                baselineStartDate:new Date("02/10/2014"),
+                baselineEndDate:new Date("02/12/2014"),
                 duration: 4,
-                progress: "60",
-                resourceId: [2]
+                progress:"60",
+                resourceId:[2]
             },
             {
                 taskID: 3,
-                taskName: "Develop prototype",
-                startDate: new Date("02/10/2014"),
-                endDate: new Date("02/12/2014"), 
-                baselineStartDate: new Date("02/10/2014"),
-                baselineEndDate: new Date("02/12/2014"),
+                taskName:"Develop prototype",
+                startDate:new Date("02/10/2014"),
+                endDate:new Date("02/12/2014"), 
+                baselineStartDate:new Date("02/10/2014"),
+                baselineEndDate:new Date("02/12/2014"),
                 duration: 4,
-                progress: "70",
+                progress:"70",
                 resourceId: [3]
             },
-            { 
-                taskID: 4,
-                taskName: "Get approval from customer",
-                startDate: new Date("02/12/2014"),
-                endDate: new Date("02/14/2014"),
-                baselineStartDate: new Date("02/10/2014"),
-                baselineEndDate: new Date("02/12/2014"),
-                duration: 2,
-                progress: "80",
-                predecessor: "3FS",
-                resourceId: [1]
-            },
-            {
-                taskID: 5,
-                taskName: "Design complete",
-                startDate: new Date("02/14/2014"),
-                endDate: new Date("02/14/2014"),
-                baselineStartDate: new Date("02/10/2014"),
-                baselineEndDate: new Date("02/12/2014"),
-                duration: 0,
-                predecessor: "4FS"
-            }
-            ]
-        }];
+            //...
+            ]
+            }];
 
-    </script>
 
-</head>
-
-<body>
-
-   <!--Add  Gantt control here-->
-   <div id="GanttContainer"></div>
-
-    <script type="text/javascript">
-
-    $(function () {
-    $("#GanttContainer").ejGantt(
-    {
-        dataSource: taskDetails,
-        taskIdMapping: "taskID",
-        taskNameMapping: "taskName",
-        scheduleStartDate: "02/01/2014",
-        scheduleEndDate: "03/14/2014",
-        startDateMapping: "startDate",
-        durationMapping: "duration",
-        progressMapping: "progress",
-        childMapping: "subtasks",
-        treeColumnIndex: 1
+    $(function() {
+        $("#GanttContainer").ejGantt(
+        {
+            dataSource: taskDetails,
+            taskIdMapping:"taskID",
+            taskNameMapping:"taskName",
+            scheduleStartDate:"02/01/2014",
+            scheduleEndDate:"03/14/2014",
+            startDateMapping:"startDate",
+            durationMapping:"duration",
+            progressMapping:"progress",
+            childMapping:"subtasks",
+            treeColumnIndex: 1
+        });
     });
-});
-</script>
-
-</body>
-
-</html> 
 
 
 {% endhighlight %}
@@ -152,30 +95,25 @@ Gantt can be rendered from self-referential data structures, by providing two fi
 {% highlight js %}
 
 
-//...
-<script type="text/javascript">
+    var projectData1 = [
 
-var projectData1 = [
+    { taskID: 1, taskName: "Task 1", startDate: "02/03/2014", endDate: "03/07/2014", duration: 5},
+    { taskID: 2, pId: 1, taskName: "Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
+    { taskID: 3, pId: 1, taskName: "Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
+    { taskID: 22, pId: 2, taskName: "Sub Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5 },
+    { taskID: 23, pId: 2, taskName: "Sub Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
+    { taskID: 12, pId: 22, taskName: "Inner Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
+    { taskID: 13, pId: 22, taskName: "Inner Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100"},
+    { taskID: 4, taskName: "Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100"},
+    { taskID: 5, pId: 4, taskName: "Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
+    { taskID: 6, pId: 4, taskName: "Child Task 2", startDate: "02/07/2014", endDate: "02/07/2014", duration: 5},
+    { taskID: 7, pId: 6, taskName: "Sub Child Task 1", startDate: "02/07/2014", endDate: "02/07/2014", duration: 5},
+    { taskID: 8, pId: 7, taskName: "Inner Child Task 1", startDate: "02/10/2014", endDate: "02/12/2014", duration: 3, progress: "60"},
+    { taskID: 9, pId: 7, taskName: "Inner Child Task 2", startDate: "02/10/2014", endDate: "02/12/2014", duration: 3, progress: "100" },
+    { taskID: 10, taskName: "Task 3", startDate: "02/13/2014", endDate: "02/14/2014", duration: 2, progress: "100"},
+    { taskID: 11, taskName: "Task 4", startDate: "02/14/2014", endDate: "02/14/2014", duration: 0, }
 
-{ taskID: 1, taskName: "Task 1", startDate: "02/03/2014", endDate: "03/07/2014", duration: 5},
-{ taskID: 2, pId: 1, taskName: "Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
-{ taskID: 3, pId: 1, taskName: "Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
-{ taskID: 22, pId: 2, taskName: "Sub Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5 },
-{ taskID: 23, pId: 2, taskName: "Sub Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
-{ taskID: 12, pId: 22, taskName: "Inner Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
-{ taskID: 13, pId: 22, taskName: "Inner Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100"},
-{ taskID: 4, taskName: "Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100"},
-{ taskID: 5, pId: 4, taskName: "Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
-{ taskID: 6, pId: 4, taskName: "Child Task 2", startDate: "02/07/2014", endDate: "02/07/2014", duration: 5},
-{ taskID: 7, pId: 6, taskName: "Sub Child Task 1", startDate: "02/07/2014", endDate: "02/07/2014", duration: 5},
-{ taskID: 8, pId: 7, taskName: "Inner Child Task 1", startDate: "02/10/2014", endDate: "02/12/2014", duration: 3, progress: "60"},
-{ taskID: 9, pId: 7, taskName: "Inner Child Task 2", startDate: "02/10/2014", endDate: "02/12/2014", duration: 3, progress: "100" },
-{ taskID: 10, taskName: "Task 3", startDate: "02/13/2014", endDate: "02/14/2014", duration: 2, progress: "100"},
-{ taskID: 11, taskName: "Task 4", startDate: "02/14/2014", endDate: "02/14/2014", duration: 0, }
-
-];
-
-
+    ];
 
         $(function () {
 
@@ -186,7 +124,7 @@ var projectData1 = [
                 parentTaskIdMapping: "pId",
                 taskNameMapping: "taskName",
                 startDateMapping: "startDate",
-               progressMapping: "progress",
+                progressMapping: "progress",
                 durationMapping: "duration",
                 endDateMapping: "endDate",
                 childMapping: "subtasks",
@@ -197,8 +135,6 @@ var projectData1 = [
                 scheduleEndDate: "03/14/2014",
             });
         });
-
-    </script>
 
 
 {% endhighlight %}

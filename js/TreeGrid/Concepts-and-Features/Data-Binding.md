@@ -26,82 +26,50 @@ Two types of **Data Binding** are possible with **TreeGrid** control,
 The following code example shows you how to bind the **Hierarchical** local data into the **TreeGrid** control.
 
 {% highlight js %}
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-<title>Getting Started with TreeGrid Control for JavaScript</title>
-<meta charset="utf-8" />   
-<!-- style sheet for default theme(flat azure) -->
-<link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />   
-<!--scripts-->  
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-
-
-var projectData = [
-        {
-        taskID: 1,
-        taskName: "Planning",
-        startDate: "02/03/2014",
-        endDate: "02/07/2014",
-        progress: 100,
-        duration:5,
-        subtasks: [
-             {
-             taskID: 2,
-             taskName: "Plan timeline",
-             startDate: "02/03/2014",
-             endDate: "02/07/2014",
-             duration: 5, 
-             progress: 100
-             },
-             {
-             taskID: 3,
-             taskName: "Plan budget",
-             startDate: "02/03/2014",
-             endDate: "02/07/2014",
-             duration: 5,
-             progress: 100 
-             },
-             //...
-             //...
-        ]},
-        //...
-        //...
-
-];
-</script>
-</head>
-
-<body>
-<script type="text/javascript">
-        
-        $(function () {
+            var projectData = [
+                    {
+                    taskID: 1,
+                    taskName:"Planning",
+                    startDate:"02/03/2014",
+                    endDate:"02/07/2014",
+                    progress: 100,
+                    duration:5,
+                    subtasks: [
+                    {
+                        taskID: 2,
+                        taskName:"Plan timeline",
+                        startDate:"02/03/2014",
+                        endDate:"02/07/2014",
+                        duration: 5,
+                        progress: 100
+                     },
+                     {
+                        taskID: 3,
+                        taskName:"Plan budget",
+                        startDate:"02/03/2014",
+                        endDate:"02/07/2014",
+                        duration: 5,
+                        progress: 100
+                        },
+                        //...
+            ]},
+            //...
+            ];
+            
+        $(function() {
             $("#TreeGridContainer").ejTreeGrid({
                 dataSource: projectData,
-                childMapping: "subtasks",
+                childMapping:"subtasks",
                 treeColumnIndex:1,
                 columns: [
-                    { field:"taskID", headerText:"Task Id", width: "45" },
-                    { field:"taskName", headerText:"Task Name" },
-                    { field:"startDate", headerText:"Start Date" },
-                    { field:"endDate", headerText:"End Date" },
-                    { field:"duration", headerText:"Duration" },
-                    { field:"progress", headerText:"Progress" }
+                    { field:"taskID", headerText:"Task Id", width:"45"},
+                    { field:"taskName", headerText:"Task Name"},
+                    { field:"startDate", headerText:"Start Date"},
+                    { field:"endDate", headerText:"End Date"},
                     ]
-                })
+                    })
             });
-</script>
-</body>
-</html>
-
+                 
 
 {% endhighlight %}
 
@@ -123,30 +91,27 @@ The output of the above steps is as follows:
 
 {% highlight js %}
 
-//...
-<script type="text/javascript">      
+            var projectData1 = [
 
- var projectData1 = [
+                         { taskID: 1, taskName: "Task 1", startDate: "02/03/2014", endDate: "03/07/2014", duration: 5},
 
-             { taskID: 1, taskName: "Task 1", startDate: "02/03/2014", endDate: "03/07/2014", duration: 5},
+                        { taskID: 2, pId: 1, taskName: "Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
 
-            { taskID: 2, pId: 1, taskName: "Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
+                        { taskID: 3, pId: 1, taskName: "Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
 
-            { taskID: 3, pId: 1, taskName: "Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
+                        { taskID: 22, pId: 2, taskName: "Sub Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5 },
 
-            { taskID: 22, pId: 2, taskName: "Sub Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5 },
+                        { taskID: 23, pId: 2, taskName: "Sub Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
 
-            { taskID: 23, pId: 2, taskName: "Sub Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
+                        { taskID: 12, pId: 22, taskName: "Inner Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
 
-            { taskID: 12, pId: 22, taskName: "Inner Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
+                        { taskID: 13, pId: 22, taskName: "Inner Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100"}, 
 
-            { taskID: 13, pId: 22, taskName: "Inner Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100"}, 
+                        //...
 
-            //...
+                        //...
 
-            //...
-
-        ];
+                    ];
 
      $(function () {
 
@@ -166,8 +131,6 @@ The output of the above steps is as follows:
                 ]
             })
         });
-
-    </script>
 
 
 {% endhighlight %}

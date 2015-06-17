@@ -36,7 +36,6 @@ Figure 2: Schedule Control with Daily Important Activities
 
 {% highlight js %}
 
-**[HTML]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -69,7 +68,7 @@ Figure 2: Schedule Control with Daily Important Activities
 
 {% highlight js %}
 
-**[HTML]**
+
 
 <body>
 <div id="Schedule1"></div>
@@ -87,7 +86,7 @@ Figure 2: Schedule Control with Daily Important Activities
 
 {% highlight js %}
 
-**[HTML]**
+
 
 <head>
 <!-- ... -->
@@ -124,14 +123,15 @@ Figure 3: Empty Scheduler without Appointments
 
 {% highlight js %}
 
-**[JavaScript]**
 
-**// DataManager creation**
+
 **var dManager = ej.DataManager({**
 **url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"**
-**});**
-**// Query creation**
-**var queryString = ej.Query().from("Events").take(10);**
+**});**    **// DataManager creation**
+
+
+**var queryString = ej.Query().from("Events").take(10);**   **// Query creation**
+
 
 $(function () {
 $("#Schedule1").ejSchedule({
@@ -154,7 +154,7 @@ $("#Schedule1").ejSchedule({
 
 {% highlight js %}
 
-**[JavaScript]**
+
 $(function () {
 $("#Schedule1").ejSchedule({ currentDate: new Date(2014,4,5),
 **appointmentSettings: {**
@@ -199,7 +199,7 @@ You can also customize the appointments within the **Scheduler** using the **tem
 
 {% highlight js %}
 
-**[JavaScript]**
+
 $(function () {
 $("#Schedule1").ejSchedule({
 **appointmentTemplateId: "#apptemplate",**
@@ -219,9 +219,9 @@ $("#Schedule1").ejSchedule({
 });
 });
 
-// Method to choose images for the appointments
+
 $.views.helpers({ format: _getImages });
-function _getImages(date) {
+function _getImages(date) {     // Method to choose images for the appointments
 switch (new Date(date).getDay()) {
 case 0:
 return "<img src='Images/cake.png'/>"
@@ -246,7 +246,7 @@ return "<img src='Images/beach.png'/>"
 break;
 }
 }
-**[Template Content]**
+
 <script id="**apptemplate**" type="text/x-jsrender">
 
 <div style="height:100%">
@@ -294,7 +294,7 @@ Figure 5: Scheduler with Customized Appointments
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $(function () {
 // DataManager creation
@@ -320,9 +320,9 @@ recurrenceRule: "RecurrenceRule"
 }
 });
 });
-// method to choose images for the appointments
+
 $.views.helpers({ format: _getImages });
-function _getImages(date) {
+function _getImages(date) {    // method to choose images for the appointments
 switch (new Date(date).getDay()) {
 case 0:
 return "<img src='Images/cake.png'/>"
@@ -348,7 +348,7 @@ break;
 }
 }
 
-**[Template Content]**
+
 
 <script id="**apptemplate**" type="text/x-jsrender">
 <div style="height:100%">
@@ -385,7 +385,6 @@ Figure 6: Scheduler with the fixed appointment height in a “month” view.
 
 {% highlight css %}
 
-**[Style CSS]**
 
 <style>
 **.e-monthappointment**
@@ -405,7 +404,7 @@ Figure 6: Scheduler with the fixed appointment height in a “month” view.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 $(function () {
 
@@ -433,9 +432,9 @@ recurrenceRule: "RecurrenceRule"
 }
 });
 });
-// Method to choose images for the appointments
+
 $.views.helpers({ format: _getImages });
-function _getImages(date) {
+function _getImages(date) {    // Method to choose images for the appointments
 switch (new Date(date).getDay()) {
 case 0:
 return "<img src='Images/cake.png'/>"
@@ -461,7 +460,7 @@ break;
 }
 }
 
-**[Template Content]**
+
 
 <script id="**apptemplate**" type="text/x-jsrender">
 <div style="height:100%">
@@ -665,7 +664,6 @@ Figure 17: Quick Appointment Window
 
 {% highlight js %}
 
-**[JavaScript]**
 
 $(function () {
 $("#Schedule1").ejSchedule({

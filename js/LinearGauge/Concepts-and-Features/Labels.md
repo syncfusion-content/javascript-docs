@@ -23,7 +23,7 @@ Labels are units that are used to display the values in the scales. You can cust
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -88,7 +88,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {

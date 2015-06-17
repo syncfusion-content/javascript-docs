@@ -18,12 +18,12 @@ The **contextMenuItems** property is used to add the menu items to context menu,
 {% highlight js %}
 
 
-$("#treegrid1").ejTreeGrid(
+        $("#treegrid1").ejTreeGrid(
         {   
            // ...     
-            editSettings:{allowEditing: true , editMode:”rowEditing”},
+            editSettings:{allowEditing: true , editMode:"rowEditing"},
             contextMenuSettings:{showContextMenu: true 
-                                contextMenuItems:[ ”add”,”edit”,”delete”]},
+                                contextMenuItems:[ "add","edit","delete"]},
             // ...             
         });
 
@@ -48,10 +48,10 @@ Context menu can be customized by adding a new custom menu item to it. In **ejTr
 
 
 
-{% highlight html %}
+{% highlight js %}
 
 
-$("#treegrid1").ejTreeGrid(
+        $("#treegrid1").ejTreeGrid(
         {   
            // ...     
             contextMenuSettings:{showContextMenu: true},
@@ -59,25 +59,19 @@ $("#treegrid1").ejTreeGrid(
             // ...             
         });
 
-
-<script type=”text/javascript”>
-
-function customMenu( args )
-{
-   args.contextMenuItems.push({
-      headerText: "customMenu",
-      iconPath: “url(…/images/custommenu.png)”,
-      eventHandler: customMenuClick,
-   });
-}
+      function customMenu( args )
+      {
+         args.contextMenuItems.push({
+         headerText: "customMenu",
+         iconPath: "url(.../images/custommenu.png)",
+         eventHandler: customMenuClick,
+         });
+      }
    
-function customMenuClick( args )
-{
-   // ...
-}
-
-</script>
-
+      function customMenuClick( args )
+      {
+         // ...
+      }
 
 
 {% endhighlight %}

@@ -16,7 +16,6 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -113,8 +112,6 @@ ___Figure_ _82__:____schedule with_ _template._
 
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <div id="Schedule1"> </div>
 <script>

@@ -21,7 +21,7 @@ This example explains you on how to add the customized appointment window using 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -298,8 +298,6 @@ The following code example is added to the previous code example of appointment 
 
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -602,7 +600,7 @@ You can customize the appearance of the **Schedule** control by setting the spec
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -657,8 +655,6 @@ _Figure_ _107__:___ _schedule with_ _hour customization._
 
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <div id="Schedule1"> </div>
 <script>
@@ -721,7 +717,6 @@ The following code example explains how to change the current date of the **Sche
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 
@@ -778,7 +773,6 @@ The following code example explains how to change the **dateFormat** of the **Sc
 
 {% highlight js %}
 
-**[Javascript]**
 <div id="Schedule1"> </div>
 <script>
 
@@ -838,7 +832,6 @@ The following code example explains how to set the minimum and maximum date of t
 
 {% highlight js %}
 
-**[Javascript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -894,7 +887,6 @@ Figure 120: Schedule with Min and Max Dates set to 11/25/2014 and 12/4/2014 resp
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 
@@ -943,7 +935,6 @@ You can set the timezone to the **Schedule** control as follows.
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 
@@ -1019,7 +1010,6 @@ The following code example explains how to disable the current time indicator fr
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {

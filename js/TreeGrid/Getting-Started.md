@@ -21,35 +21,22 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% highlight html %}
 
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta charset="utf-8" />
-
-    <link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
-
-    <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
-</head>
-
-<body>
-    <!--Add TreeGrid control here -->
-</body>
-</html>
-
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
+            <meta charset="utf-8" />
+            <link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+            <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+            <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
+            <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
+            <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
+        </head>
+        <body>
+        <!--Add TreeGrid control here -->
+        </body>
+    </html>
 
 {% endhighlight %}
 
@@ -57,14 +44,12 @@ This section explains how to create a **TreeGrid** control in your application w
 
 2.Add **&lt;div&gt;** element with in the **&lt;Body&gt;** tag.
 
-{% highlight js %}
+{% highlight html %}
 
-
-<body style="width:100%;height:100%;position:static;">
-   <!--Add  TreeGrid control here-->
-   <div id="TreeGridContainer" style="width:60%;height:80%;position:absolute;"></div>
-</body>
-
+    <body style="width:100%;height:100%;position:static;">
+       <!--Add  TreeGrid control here-->
+       <div id="TreeGridContainer" style="width:60%;height:80%;position:absolute;"></div>
+    </body>
 
 {% endhighlight %}
 
@@ -74,21 +59,18 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% highlight js %}
 
-<script type="text/javascript">
-     //...
      $(function () {
          $("#TreeGridContainer").ejTreeGrid({                
              columns: [                    
                  { field: "taskName", headerText: "Task Name" },
                  { field: "startDate", headerText: "Start date"},
                  { field: "endDate", headerText: "End Date" },
-                 { field: "duration", headerText: "Duration”},
+                 { field: "duration", headerText: "Duration"},
                  { field: "progress", headerText: "Progress"}
              ]
          });
 
      });
-</script>
 
 
 {% endhighlight %}
@@ -100,16 +82,6 @@ This section explains how to create a **TreeGrid** control in your application w
 4.Create data source for ejTreeGrid.
 
 {% highlight js %}
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-   //...
-    <script type="text/javascript">
-
-//data source for ejTreeGrid control
 
         var treeGridDataSource = [
                 {
@@ -199,9 +171,6 @@ This section explains how to create a **TreeGrid** control in your application w
                 }
 
         ]; 
-    </script>
-</head>
-
 
 {% endhighlight %}
 
@@ -211,8 +180,6 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% highlight js %}
 
-<script type="text/javascript">
-     //...
      $(function () {
          $("#TreeGridContainer").ejTreeGrid({
              dataSource: treeGridDataSource,
@@ -228,8 +195,6 @@ This section explains how to create a **TreeGrid** control in your application w
          });
 
      });
-</script>
-
 
 {% endhighlight %}
 
@@ -249,15 +214,11 @@ Enable the multicolumn sorting in **ejTreeGrid** by setting **allowMultiSorting*
 
 {% highlight js %}
 
-<script type="text/javascript">
-    //...
-    $("#TreeGridContainer").ejTreeGrid({
-        //...
-        allowSorting: true,
-        allowMultiSorting:true           
-    });
-</script>
-
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            allowSorting: true,
+            allowMultiSorting:true           
+        });
 
 {% endhighlight %}
 
@@ -271,8 +232,6 @@ You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows
 
 {% highlight js %}
 
-<script type="text/javascript">
-    //...
     $("#TreeGridContainer").ejTreeGrid({
         //...
         edit: {
@@ -280,8 +239,6 @@ You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows
             editMode: "cellEditing"
         }
     });
-</script>
-
 
 {% endhighlight %}
 
@@ -305,8 +262,7 @@ You can set the editor type for a particular column as follows.
 
 {% highlight js %}
 
-<script type="text/javascript">
-    //...
+
     $("#TreeGridContainer").ejTreeGrid({
         //...
         columns: [
@@ -315,8 +271,6 @@ You can set the editor type for a particular column as follows.
                { field: "duration", headerText: "Duration",editType:"numericedit"},
                  ]
     })
-</script>
-
 
 {% endhighlight %}
 

@@ -106,7 +106,7 @@ The steps given below are to be followed, to perform custom Script and CSS file 
 
 You can also modify or delete the existing controls by making use of the **edit** or **delete** icons.
 
-* If you need to edit the settings, click on the **edit****icon** as shown in the below image, and make the further required changes in the control selection page that appears and then again click on the **Save Settings** button to update the modified one.
+* If you need to edit the settings, click on the **edit** **icon** as shown in the below image, and make the further required changes in the control selection page that appears and then again click on the **Save Settings** button to update the modified one.
 
 ![](Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img7.png)
 {:.image }
@@ -117,5 +117,5 @@ You can also modify or delete the existing controls by making use of the **edit*
 
 
 
-* To delete the unwanted or unused settings, you can make use of the **delete****icon** in the above image just by clicking on it.
+* To delete the unwanted or unused settings, you can make use of the **delete** **icon** in the above image just by clicking on it.
 

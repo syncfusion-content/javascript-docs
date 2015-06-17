@@ -21,7 +21,6 @@ You can set the location of the **custom label** in circular gauge using “**lo
 
 {% highlight js %}
 
-<script type="text/javascript">
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -82,12 +81,8 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
                             }]
                         });
                     });     
-           </script>
-
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Custom-Label_images/Custom-Label_img2.png" Caption="Positioning Custom Label"%}
 
@@ -99,7 +94,6 @@ You can customize the **custom label** font with font style, font family, and si
 
 {% highlight js %}
 
-<script type="text/javascript">
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -162,12 +156,8 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
                             }]
                         });
                     });
-                </script>
-
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Custom-Label_images/Custom-Label_img3.png" Caption="Style Customization"%}
 

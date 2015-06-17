@@ -28,13 +28,13 @@ The following code example shows you how to enable cellEditing in Gantt control.
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    editSettings: {
-        allowEditing: true,
-        editMode: "cellEditing"
-    }
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        editSettings: {
+            allowEditing: true,
+            editMode: "cellEditing"
+        }
+    });
 
 
 {% endhighlight %}
@@ -54,13 +54,13 @@ The following code example shows you how to enable normal editing in **Gantt** c
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    editSettings: {
-        allowEditing: true,
-        editMode: "normal"   
- }
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        editSettings: {
+            allowEditing: true,
+            editMode: "normal"   
+     }
+    });
 
 
 {% endhighlight %}
@@ -78,10 +78,10 @@ Update the task details by interactions such as resizing and dragging the taskba
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    allowGanttChartEditing:true
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        allowGanttChartEditing:true
+    });
 
 
 {% endhighlight %}
@@ -93,8 +93,8 @@ Update the predecessor details of a task using mouse interactions. The following
 {% highlight js %}
 
 
-  $("#GanttContainer").ejGantt({
-                //….
+          $("#GanttContainer").ejGantt({
+                //...
                 dataSource: data,
                 allowGanttChartEditing:true,
                 predecessorMapping: "predecessor",

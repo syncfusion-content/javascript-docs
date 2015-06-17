@@ -19,7 +19,6 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 
 {% highlight js %}
 
-**[HTML]**
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -42,7 +41,6 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 
 {% highlight js %}
 
-**[HTML]**
 
 <body>
 <div id="CircularGauge1"></div>
@@ -57,8 +55,6 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 3. Create the **ejCircularGauge** widget as follows,
 
 {% highlight js %}
-
-**[HTML]**
 
 <script type="text/javascript">
 $(function () {

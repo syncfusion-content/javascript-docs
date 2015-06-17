@@ -19,15 +19,15 @@ Resources are represented by staff, equipment and materials etc. In Gantt contro
 
 {% highlight js %}
 
-//..
+
     var projectResources = [
-  { resourceId: 1, resourceName: "Project Manager" },
-  { resourceId: 2, resourceName: "Software Analyst" },
-  { resourceId: 3, resourceName: "Developer" },
-  { resourceId: 4, resourceName: "Testing Engineer" }
+    { resourceId: 1, resourceName: "Project Manager" },
+    { resourceId: 2, resourceName: "Software Analyst" },
+    { resourceId: 3, resourceName: "Developer" },
+    { resourceId: 4, resourceName: "Testing Engineer" }
     ];
 
-$("#GanttContainer").ejGantt({
+    $("#GanttContainer").ejGantt({
         //...
         resourceInfoMapping: "resourceId", //Field name which contains resource details for the task
         resourceNameMapping: "resourceName",//resource Name mapping

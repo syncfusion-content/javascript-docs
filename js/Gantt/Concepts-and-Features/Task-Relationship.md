@@ -40,10 +40,10 @@ The following code example shows you how to show the predecessor in the **Gantt*
 {% highlight js %}
 
 
-$("#GanttContainer ").ejGantt({
-    //…
-    predecessorMapping: "predecessor"
-});
+    $("#GanttContainer ").ejGantt({
+        //...
+        predecessorMapping: "predecessor"
+    });
 
 
 {% endhighlight %}

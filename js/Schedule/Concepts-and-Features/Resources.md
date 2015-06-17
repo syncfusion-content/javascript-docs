@@ -73,8 +73,6 @@ The following code example explains how to render the multiple resources on the 
 
 {% highlight js %}
 
-**[JavaScript]**
-
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -195,7 +193,6 @@ The following steps defines the way to start with rendering multiple resources o
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -268,7 +265,6 @@ Recurrence: false,
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -358,8 +354,6 @@ ___Figure_ _88__:___ _schedule with_ _resource grouping._
 
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <div id="Schedule1"> </div>
 <script>

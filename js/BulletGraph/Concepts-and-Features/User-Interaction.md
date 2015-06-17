@@ -81,15 +81,25 @@ By default **Bullet Graph** displays **Tooltip** when mouse is hovered over feat
 
 Bullet Graph supports Tooltip template instead of default Tooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the template property in tooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
 
-<table>
-<tr>
-<td>
-<b>[HTML]</b>&lt;div id="BulletGraphTooltip" style="display:none; width:125px; padding-top: 10px; padding-bottom:10px; color: blue"&gt;           &lt;div align="center" style="color:blue; font-weight:bold"&gt;           Sales           &lt;/div&gt;                           &lt;table style="color:green"&gt;           &lt;tr&gt;                &lt;td&gt;                    Current                &lt;/td&gt;                &lt;td&gt;                    : <b>{{:</b>currentValue<b>}}</b>                &lt;/td&gt;                           &lt;/tr&gt;            &lt;tr&gt;                &lt;td&gt;                    Target                &lt;/td&gt;                &lt;td&gt;                    : <b>{{:</b>targetValue<b>}}</b>                &lt;/td&gt;                           &lt;/tr&gt;                             &lt;/table&gt;           &lt;/div&gt;</td></tr>
-<tr>
-<td>
-<b>[JavaScript]</b>$("#BulletGraph1").ejBulletGraph({                    value: 8,                    comparativeMeasureValue: 6,                    height: 150,                    tooltipSettings: { template: 'BulletGraphTooltip' }                });</td></tr>
-</table>
+{% highlight html %}
 
+<div id="BulletGraphTooltip" style="display:none; width:125px; padding-top: 10px; padding-bottom:10px; color: blue"> 
+    <div align="center" style="color:blue; font-weight:bold"> Sales </div> 
+    <table style="color:green"> <tr> <td> Current </td> <td> : </td> </tr> <tr> <td> Target </td> <td> : </td> </tr> </table> 
+</div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    $("#BulletGraph1").ejBulletGraph({
+         value: 8,
+         comparativeMeasureValue: 6,
+         height: 150,
+         tooltipSettings: { template: 'BulletGraphTooltip' } 
+    });
+
+{% endhighlight %}
 
 The following screenshot displays **Bullet Graph** with a customized **Tooltip** including a header and contents such as current value and target value in different colors.
 

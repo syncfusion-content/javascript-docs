@@ -19,7 +19,6 @@ You can print the **Schedule** control by using **print()** method. Use the foll
 
 {% highlight js %}
 
-**[JavaScript]**
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -86,7 +85,6 @@ _Figure_ _122__: Schedule with Print window_
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
