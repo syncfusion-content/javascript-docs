@@ -80,8 +80,7 @@ Add the script files and CSS files in the title tag of the default.html page.
 
 
 {% highlight html %}
-
-**[HTML]**   
+  
 <link href="http://cdn.syncfusion.com/js/web/flat-azure/ej.web.all-latest.min.css" rel="stylesheet" />
 <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"> </script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"> </script>
@@ -94,9 +93,7 @@ Add the script files and CSS files in the title tag of the default.html page.
 
 1. Add the following code example inside the **&lt;body&gt;** tag in the default.html page.
 
-{% highlight html %}
-
-**[HTML]**   
+{% highlight html %} 
 
 <!-- ... -->
 <head>
