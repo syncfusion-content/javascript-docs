@@ -30,7 +30,7 @@ You can enable toolbar for **TreeGrid**, using the following code example.
     //...
     editSettings: {
                    //...
-                    rowPosition:”aboveSelectedRow”
+                    rowPosition:"aboveSelectedRow"
     },  
 
     toolbarSettings: {
