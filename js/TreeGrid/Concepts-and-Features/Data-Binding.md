@@ -26,28 +26,28 @@ Two types of **Data Binding** are possible with **TreeGrid** control,
 The following code example shows you how to bind the **Hierarchical** local data into the **TreeGrid** control.
 
 {% highlight js %}
-            var projectData = [
+            var projectData = [
                     {
                     taskID: 1,
-                    taskName: "Planning",
-                    startDate: "02/03/2014",
-                    endDate: "02/07/2014",
+                    taskName:"Planning",
+                    startDate:"02/03/2014",
+                    endDate:"02/07/2014",
                     progress: 100,
                     duration:5,
                     subtasks: [
                     {
                         taskID: 2,
-                        taskName: "Plan timeline",
-                        startDate: "02/03/2014",
-                        endDate: "02/07/2014",
+                        taskName:"Plan timeline",
+                        startDate:"02/03/2014",
+                        endDate:"02/07/2014",
                         duration: 5,
                         progress: 100
                      },
                      {
                         taskID: 3,
-                        taskName: "Plan budget",
-                        startDate: "02/03/2014",
-                        endDate: "02/07/2014",
+                        taskName:"Plan budget",
+                        startDate:"02/03/2014",
+                        endDate:"02/07/2014",
                         duration: 5,
                         progress: 100
                         },
@@ -56,16 +56,16 @@ The following code example shows you how to bind the **Hierarchical** local data
             //...
             ];
             
-        $(function () {
+        $(function() {
             $("#TreeGridContainer").ejTreeGrid({
                 dataSource: projectData,
-                childMapping: "subtasks",
+                childMapping:"subtasks",
                 treeColumnIndex:1,
                 columns: [
-                    { field:"taskID", headerText:"Task Id", width: "45" },
-                    { field:"taskName", headerText:"Task Name" },
-                    { field:"startDate", headerText:"Start Date" },
-                    { field:"endDate", headerText:"End Date" },
+                    { field:"taskID", headerText:"Task Id", width:"45"},
+                    { field:"taskName", headerText:"Task Name"},
+                    { field:"startDate", headerText:"Start Date"},
+                    { field:"endDate", headerText:"End Date"},
                     ]
                     })
             });
