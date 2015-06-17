@@ -34,7 +34,10 @@ You can change the width of the column in **TreeGrid** to show the entire text
 
 The following code example shows you how to display the icon in the **TreeGrid** column.
 
+Code snippet to create a custom template element to be rendered
+
 {% highlight html %}
+
     <script type="text/x-jsrender" id="customColumnTemplate">     
          <div  style='height:20px;' unselectable='on'>{{if hasChildRecords}}<div class='intend' style='height:1px; float:left; width:{{:level*20}}px; display:inline-block;'></div>
            {{else !hasChildRecords}}
@@ -46,7 +49,12 @@ The following code example shows you how to display the icon in the **TreeGrid*
          </div>
     </script>   
     
-        <style type="text/css">
+{% endhighlight %}
+
+Code snippet for applying style to the template element
+
+{% highlight css %}
+
         .e-treegrid .e-treegridexpand {
             background-image: url(../images/treegrid/folder-open.png);
             background-repeat: no-repeat;
@@ -73,8 +81,10 @@ The following code example shows you how to display the icon in the **TreeGrid*
         .e-treegrid .e-treegridcollapse:before {
             content: none;
         }
-    </style>
+        
 {% endhighlight %}
+
+Code snippet to render custom template in TreeGrid columns
 
 {% highlight js %}
 
