@@ -11,7 +11,7 @@ documentation: ug
 
 The **ReportViewer** has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to **ReportViewer’s****reportServerUrl** property and set the relative path of RDL/RDLC file in SSRS to **ReportViewer’s****reportPath** property. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
 
@@ -19,8 +19,8 @@ $("#viewer").ejReportViewer(
                 {
                     reportServiceUrl: "/api/SSRSReport",
                     processingMode: ej.ReportViewer.ProcessingMode.Remote,
-                    reportPath: "/SSRSSamples2/Territory Sales New",
-                    reportServerUrl: "http://76.74.153.81/ReportServer"                    
+                    reportPath: "/SSRSSamples2/Territory Sales new",
+                    reportServerUrl: "http://mvc.syncfusion.com/reportserver"                    
                 });
 
 
@@ -52,7 +52,7 @@ The **Network credentials** can be given at **Web****API** Controller to connect
 
 
 
->_**Note: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.**_
+>_**Note**: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.**_
 
 
 

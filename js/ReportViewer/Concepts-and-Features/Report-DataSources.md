@@ -13,7 +13,7 @@ The **ReportViewer** has support to add data sources to **ReportViewer** for RDL
 
 The following code example illustrates how to add **DataSource** at control creation.
 
-{% highlight javascript %}
+{% highlight js %}
 
 
 

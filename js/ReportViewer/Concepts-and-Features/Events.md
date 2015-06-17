@@ -45,7 +45,7 @@ Fires when the report is loaded.</td></tr>
 </table>
 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
 
