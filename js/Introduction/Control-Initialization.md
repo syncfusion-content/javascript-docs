@@ -41,13 +41,7 @@ While using the manual reference method, the user needs to maintain their HTML p
 
 * For example, if you have created a folder named **JS_Sample** and placed the above HTML file into it, then create two new folders **Scripts** and **Content** under that root folder **JS_Sample** to maintain the scripts and stylesheets respectively as shown below,
 
-![](Control-Initialization_images/Control-Initialization_img1.png)
-{:.image }
-
-    Sample folder containing the Scripts & Content folder
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img1.png" Caption="Sample folder containing the Scripts & Content folder"%}
 
 
 #### Adding the required Stylesheets into Content folder
@@ -74,11 +68,7 @@ Navigating to the below specified location, you can find all the required web re
 
 Create a first level sub-folder named **ej** within the **Content** folder. Now again create another sub-folder namely **web** within the **ej** folder and place all the copied files into it as shown below,
 
-![](Control-Initialization_images/Control-Initialization_img2.png)
-{:.image }
-
-    Stylesheet files copied into the Content folder of the Sample Project
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img2.png" Caption="Stylesheet files copied into the Content folder of the Sample Project"%}
 
 
 > _**Note: The common-images folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.**_
@@ -106,7 +96,7 @@ Now, Include the specific theme reference to your HTML file by referring the app
 {% endhighlight %}
 
 
-> _**Note: In the above highlighted location of the code, you can simply use any of the 13 available themes.**_
+> _**Note: In the above css reference code section, you can simply use any of the 13 available themes.**_
 
 
 #### Adding the required JavaScript files
@@ -160,11 +150,7 @@ Navigate to the below specified location and copy the **ej.web.all.min.js** file
 </tr>
 </table>
 
-![](Control-Initialization_images/Control-Initialization_img3.png)
-{:.image }
-
-    Script files copied into the Sample Project
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img3.png" Caption="Script files copied into the Sample Project"%}
 
 
 Now, include the reference to it in your HTML page within the head section as shown below,
@@ -188,7 +174,6 @@ Now, include the reference to it in your HTML page within the head section as sh
 
 
 {% endhighlight %}
-
 
 
 
@@ -236,11 +221,7 @@ To add any of our Syncfusion JavaScript widgets into your HTML page,
 
 * Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
 
-![](Control-Initialization_images/Control-Initialization_img4.png)
-{:.image }
-
-    DatePicker widget displayed on the web browser
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img4.png" Caption="DatePicker widget displayed on the web browser"%}
 
 
 ### Using Syncfusion Nuget Package in Visual Studio for Scripts and Stylesheet reference
@@ -249,11 +230,7 @@ Using the Nuget Package method in Visual Studio automates the process of copying
 
 Start the Visual Studio. Create a new ASP.NET Empty Web Application or ASP.NET Empty Website from **File** -> **New** -> **Project/Website** and save it with a meaningful name****as below (we have used the ASP.NET Empty Web application here),
 
-![](Control-Initialization_images/Control-Initialization_img5.png)
-{:.image }
-
-    Visual Studio -> New Project Window
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img5.png" Caption="Visual Studio -> New Project Window"%}
 
 
 #### Configuring and Installing Nuget into your project
@@ -262,31 +239,18 @@ To add the required scripts and css files automatically into your Project (Confi
 
 * Right click on your project in the Solution explorer and select **Manage Nuget Packages** options from the sub-menu that pop-up on the screen. In the **Manage Nuget Packages** dialog, select the **Syncfusion Nuget Packages** within the **Online** tab, which will display the list of available packages in it, as shown below.
 
-![](Control-Initialization_images/Control-Initialization_img6.png)
-{:.image }
-
-    Manage Nuget Packages pop-up
-{:.caption }
-
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img6.png" Caption="Manage Nuget Packages pop-up"%}
 
 * You need to install the **SyncfusionJavaScript** package shown in the above image just by clicking the **install** button. The below image depicts that the Nuget Packages for **JavaScript** has been successfully installed into your project.
 
-![](Control-Initialization_images/Control-Initialization_img7.png)
-{:.image }
-
-    Manage Nuget Packages pop-up
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img7.png" Caption="Manage Nuget Packages pop-up"%}
 
 
 #### Adding HTML page in your application
 
 Right click on your Project in Solution Explorer. Select **Add** -> **New Item** -> **HTML Page** and add it to your application. The blank HTML page will get added to your application.
 
-![](Control-Initialization_images/Control-Initialization_img8.png)
-{:.image }
-
-    Add New Item pop-up
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img8.png" Caption="Add New Item pop-up"%}
 
 
 #### Adding reference to the required Stylesheets
@@ -413,13 +377,7 @@ Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which act
 
 Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
 
-![](Control-Initialization_images/Control-Initialization_img9.png)
-{:.image }
-
-    DatePicker widget displayed on the web browser
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img9.png" Caption="DatePicker widget displayed on the web browser"%}
 
 
 The **DatePicker** control is rendered with its default appearance now. You can then use its various available properties to set its value and also make use of its available events to trigger when necessary.
