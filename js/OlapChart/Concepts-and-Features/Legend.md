@@ -18,7 +18,7 @@ In **OlapChart**, you can customize the legend symbol with different shapes like
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" }, legend: { visible: true, rowCount: 3, shape: "Star" },
+url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" }, legend: { visible: true, rowCount: 3, shape: "Star" },
 });
 
 
@@ -35,7 +35,7 @@ You can customize the legend position in top, bottom, left and right position of
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" },    legend: { visible: true, rowCount: 3, shape: "Star", position: "top" },
+url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },    legend: { visible: true, rowCount: 3, shape: "Star", position: "top" },
 });
 
 
@@ -52,7 +52,7 @@ You can align the legend using **alignment** property of legend. This allows you
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" }, legend: { visible: true, rowCount: 3, alignment: "Near" }
+url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" }, legend: { visible: true, rowCount: 3, alignment: "Near" }
 });
 
 
@@ -69,7 +69,7 @@ You can draw and customize the outline of Chart legend using **border** property
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-  url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" },
+  url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },
  legend: { visible: true, rowCount: 3, border: { color: 'red', width: 2 } } 
 });
 
@@ -88,7 +88,7 @@ $("#OlapChart1").ejOlapChart({
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" },     legend: { visible: true, rowCount: 3,
+url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },     legend: { visible: true, rowCount: 3,
           itemSize: { border: { color: "green", width: 0.5 }}}
 });
 
@@ -105,7 +105,7 @@ You can customize the **legend text** - font family, font style, font weight and
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-url: "../wcf/OlapChartService.svc", title: { text: "OlapChart in Essential Studio" }, legend: { visible: true, rowCount: 3, font: { fontFamily: 'Segoe UI', fontStyle: 'italic', fontWeight: 'bold', size: '13px' } },
+url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" }, legend: { visible: true, rowCount: 3, font: { fontFamily: 'Segoe UI', fontStyle: 'italic', fontWeight: 'bold', size: '13px' } },
 });
 
 

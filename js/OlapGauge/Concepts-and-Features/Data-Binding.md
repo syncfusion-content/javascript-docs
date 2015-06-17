@@ -61,7 +61,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 **Connecting to Mondrian Server**
 
-The following code illustrates how to connect to the **Mondrian** Server:
+The following code illustrates how to connect to the **Mondrian Server**:
 
 {% highlight c# %}
 
@@ -73,13 +73,13 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 {% endhighlight %}
 
-**Connecting to Active Pivot Server**
+**Connecting to ActivePivot Server**
 
-The following code illustrates how to connect to **Active Pivot** Server:
+The following code illustrates how to connect to **ActivePivot Server**:
 
 {% highlight c# %}
 
-// Connecting to Active Pivot Server
+// Connecting to ActivePivot Server
 String connectionString= @"Data Source=http://localhost:8081/var_s/xmla; Initial Catalog=VaRCubes; User ID=; Password=; Transport Compression=None;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.ActivePivot;

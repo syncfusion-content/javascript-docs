@@ -33,7 +33,7 @@ $("#OlapChart1").ejOlapChart({
 
 **Rotating Axis Labels**
 
-You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the **label rotation** property.
+You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the **labelRotation** property.
 
 {% highlight js %}
 
