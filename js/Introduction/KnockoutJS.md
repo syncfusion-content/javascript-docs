@@ -24,38 +24,34 @@ The **knockout.min.js** file can be availed from the following installed locatio
 <table>
 <tr>
 <td>
-**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
 </td>
 </tr>
 <tr>
 <td> 
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-<br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
 </td>
 </tr>
 </table>
-<br/>
 
 The **ej.widget.ko.min.js** file which needs to be referred along with the knockout.min file can be availed from the following location on your machine,
 
 <table>
 <tr>
 <td>
-**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
 </td>
 </tr>
 <tr>
 <td> 
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-<br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
 </td>
 </tr>
 </table>
-<br/>
 
 ### KnockoutJS Concepts
 
@@ -87,16 +83,14 @@ Here, the **data-bind** attribute is assigned with the control **ejDatePicker**,
 
 **KnockoutJS** provides a special type of variable **observable**, through which the data-binding can be achieved in a more convenient manner. Everytime, when the model data is being changed, all those changes are automatically synchronized with the associated UI elements. It doesn’t require any additional event handlers or listeners to do this, as all those tasks are performed internally by the Knockout and observable variable. 
 
-Here, the below sample code defines how to use the **observable** variable,
+Here, the below sample code defines how to define the **observable** variable within the **script** section,
 
 {% highlight js %}
 
 
-        <script type="text/javascript">
             window.viewModel = {
             dateValue: ko.observable(new Date(2014, 05, 15))
             };
-        </script>
 
 
 
@@ -106,20 +100,19 @@ Here, the below sample code defines how to use the **observable** variable,
 
 The value to be bound to the UI element needs to be passed through the **ko.observable** varaiable as shown above. The **dateValue** defined in the above code is an observable variable holding a date value, which can be assigned to the properties of the UI components.
 
-The **data-bind** attribute which we have defined in the previous section cannot be identified directly by the HTML tags and also the browser on which we run that page.  Therefore, in order to work with Knockout, we need to declare the **ko.applyBindings()** function at the end of the script, so that the data-bind attribute will get recognised. Such Knockout code needs to be wrapped in a jQuery function as shown below, in order to work properly.
+The **data-bind** attribute which we have defined in the previous section cannot be identified directly by the HTML tags and also the browser on which we run that page.  Therefore, in order to work with Knockout, we need to declare the **ko.applyBindings()** function at the end of the script, so that the **data-bind** attribute will get recognised. Such Knockout code needs to be wrapped in a jQuery function as shown below within the **script** section, in order to work properly.
 
 {% highlight js %}
 
 
-        <script type="text/javascript">
             window.viewModel = {
                 value: ko.observable(new Date(2014, 05, 15))
             };
+            
             $(function () {
                 // declaration
                 ko.applyBindings(viewModel);
             });                        
-        </script>
 
 
 
@@ -144,7 +137,7 @@ Here, the model values are directly bound to the widget’s properties. The chan
 
 
 
-Here, in the above code, the value property of the DatePicker widget is assigned with the direct value **01/01/2015**. Therefore, whenever we change the value of the DatePicker dynamically, the changes won’t get reflected in the value property.
+Here, in the above code, the **value** property of the DatePicker widget is assigned with the direct value **01/01/2015**. Therefore, whenever we change the value of the DatePicker dynamically, the changes won’t get reflected in the value property.
 
 #### Two way binding
 
