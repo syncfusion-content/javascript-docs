@@ -19,7 +19,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>   
 <script type="text/javascript">
  $(function () {
@@ -74,7 +74,6 @@ _Linear Gauge with basic attributes_
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="LinearGauge1"></div>   
 <script type="text/javascript">
  $(function () {
@@ -133,7 +132,7 @@ _Linear Gauge with frame_
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>   
 <script type="text/javascript">
  $(function () {
@@ -194,7 +193,7 @@ _Linear Gauge with themes and colors_
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>   
 <script type="text/javascript">
  $(function () {
