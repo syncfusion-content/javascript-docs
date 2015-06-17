@@ -23,12 +23,13 @@ The following code example shows how to bind the hierarchical local data into th
 
     var taskDetails = [{
             taskID: 1,
-            taskName "Design",
+            taskName:"Design",
             startDate:new Date("02/10/2014"),
             endDate:new Date("02/14/2014"),
             baselineStartDate:new Date("02/10/2014"),
             baselineEndDate:new Date("02/12/2014"),
-            duration: 5,subtasks: [
+            duration: 5,
+            subtasks: [
             { 
                 taskID: 2,
                 taskName:"Software Specification",
@@ -52,11 +53,11 @@ The following code example shows how to bind the hierarchical local data into th
                 resourceId: [3]
             },
             //...
-            ]
-        }];
+            ]
+            }];
 
 
-    $(function () {
+    $(function() {
         $("#GanttContainer").ejGantt(
         {
             dataSource: taskDetails,
