@@ -15,7 +15,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <button id="btnSubmit">Export</button>
 <div id=" fileName "> FileName </div>
