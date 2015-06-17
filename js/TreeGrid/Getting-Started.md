@@ -21,7 +21,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% highlight html %}
 
-    <!DOCTYPE html>
+        <!DOCTYPE html>
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
                 <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
@@ -36,7 +36,7 @@ This section explains how to create a **TreeGrid** control in your application w
             <body>
                <!--Add TreeGrid control here -->
             </body>
-            </html>
+        </html>
 
 {% endhighlight %}
 
