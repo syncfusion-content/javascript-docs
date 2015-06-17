@@ -15,7 +15,7 @@ The following code example illustrates how to add **ReportParameter** at control
 
 
 
-{% highlight javascript %}
+{% highlight js %}
 
 
 
