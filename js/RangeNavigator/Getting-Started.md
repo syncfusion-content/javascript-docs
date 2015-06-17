@@ -25,7 +25,7 @@ Getting started with your **ejRangeNavigator** is simple. You can initialize the
 
 You can create an **HTML** file as shown in the following code example.
 
-{% highlight js %}
+{% highlight html %}
 
 
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ You can create an **HTML** file as shown in the following code example.
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 <body>
 <div id="rangecontainer"  ></div>
@@ -62,10 +62,10 @@ You can create an **HTML** file as shown in the following code example.
 
 The following code example renders a **RangeNavigator** with a range from 2010, January 1st to December 31st.
 
-{% highlight js %}
+{% highlight html %}
 
 
-<script type=”text/javascript” language=”javascript”>
+    <script type=”text/javascript” language=”javascript”>
         $(function () {
             $(“#rangecontainer”).ejRangeNavigator({
                 rangeSettings: {
@@ -94,17 +94,13 @@ You can create data source for **RangeNavigator** as follows.
 
 {% highlight js %}
 
-
-window.chartData = [{ “xDate”: new Date(2011, 0, 1), “yValue”: 10 },
-                    { “xDate”: new Date(2011, 2, 1), “yValue”: 5 },
-                    { “xDate”: new Date(2011, 4, 1), “yValue”: 15 },
-                    { “xDate”: new Date(2011, 6, 1), “yValue”: 25 },
-                    { “xDate”: new Date(2011, 8, 1), “yValue”: 10 },
-                    { “xDate”: new Date(2011, 10, 1), “yValue”: 5 },
-                    { “xDate”: new Date(2011, 12, 1), “yValue”: 15 }
-];
-
-
+    window.chartData = [{ “xDate”: new Date(2011, 0, 1), “yValue”: 10 },
+                        { “xDate”: new Date(2011, 2, 1), “yValue”: 5 },
+                        { “xDate”: new Date(2011, 4, 1), “yValue”: 15 },
+                        { “xDate”: new Date(2011, 6, 1), “yValue”: 25 },
+                        { “xDate”: new Date(2011, 8, 1), “yValue”: 10 },
+                        { “xDate”: new Date(2011, 10, 1), “yValue”: 5 },
+                        { “xDate”: new Date(2011, 12, 1), “yValue”: 15 }];
 
 {% endhighlight %}
 
@@ -113,7 +109,7 @@ Now, add the **dataSource** to the **RangeNavigator** and provide the field name
 
 {% highlight js %}
 
-$(function () {
+    $(function () {
             $(“#rangecontainer”).ejRangeNavigator({
               dataSource: window.chartData, xName: “xDate”, yName: “yValue”      
             });
@@ -131,7 +127,7 @@ The following screenshot displays a RangeNavigator with the default **“Line”
 
 **Enable tooltip**
 
-You can customize **Tooltip** for RangeNavigator using **tooltip** option. You can use **tooltipDisplayMode** option in **tooltip**,****to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using **labelFormat**.
+You can customize **Tooltip** for RangeNavigator using **tooltip** option. You can use **tooltipDisplayMode** option in **tooltip**,to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using **labelFormat**.
 
 The following code sample shows how to enable a Tooltip.
 
@@ -141,8 +137,8 @@ The following code sample shows how to enable a Tooltip.
        $(function () {
           $(“#rangecontainer”).ejRangeNavigator({
             //…
-tooltipSettings: {
-visible: true, labelForma“: "MMM/y”yy", tooltipDisplayMod“: "alw”ys",
+            tooltipSettings: {
+            visible: true, labelFormat: "MMM/yyy", tooltipDisplayMode: "always",
           },
           //...         
          });
@@ -158,7 +154,7 @@ The following screenshot displays the label format **Tooltip** in RangeNavigator
 
 **Update Chart**
 
-You****can use **ejRangeNavigator** with controls such as **chart** and **grid** to view the range of data selected in **ejRangeNavigator**. 
+You can use **ejRangeNavigator** with controls such as **chart** and **grid** to view the range of data selected in **ejRangeNavigator**. 
 
 In order to update **chart**, whenever the selected range changes in **ejRangeNavigator**, you need to use **rangeChanged** event of **ejRangeNavigator** and then update the **chart** with the selected data in this event. 
 
@@ -168,11 +164,11 @@ You can create a chart with line series using the following code sample.
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 <body>
 <div id=" chartContent "></div>
-    </body>
+</body>
 
 
 {% endhighlight %}
@@ -183,7 +179,7 @@ You can create a chart with line series using the following code sample.
 
 
 
-{% highlight js %}
+{% highlight html %}
 
   <body>
 <script type="text/javascript" language="javascript ">
@@ -192,15 +188,15 @@ $(function () {
       {
          title:{ text:"Sales Analysis"},
          legend: { visible: true, position: 'top' },
-primaryYAxis: {
+         primaryYAxis: {
                     title: { text: "Sales(Million)" }
                 },
-        series: [
-        {   
-        name: 'Product A', type: 'line',
-        dataSource: window.chartData, xName: "xDate", yName: "yValue" 
-         }                           
-          ],
+         series: [
+           {
+             name: 'Product A', type: 'line',
+             dataSource: window.chartData, xName: "xDate", yName: "yValue"
+           }                           
+         ],
        });
    });
 </script>
@@ -215,20 +211,19 @@ You can update the chart with the selected data using the **rangeChanged** event
 
 {% highlight js %}
 
-$("#rangecontainer").ejRangeNavigator({
-//...
-dataSource: window.chartData, xName: "xDate", yName: "yValue" ,
-rangeChanged: "onrangechanged",
-//...
-});
-function onrangechanged(sender) {
+    $("#rangecontainer").ejRangeNavigator({
+    //...
+      dataSource: window.chartData, xName: "xDate", yName: "yValue" ,
+      rangeChanged: "onrangechanged",
+    //...
+    });
+    function onrangechanged(sender) {
     var chartobj = $("#chartContent").data("ejChart");
     if (chartobj != null) {
            chartobj.model.series[0].dataSource = sender.selectedData;
            $("#chartContent").ejChart("redraw");
        }
    }
-
 
 {% endhighlight %}
 
@@ -248,15 +243,15 @@ You can create a **dataSource** for Chart Series with integer Values using the f
 {% highlight js %}
 
 
-window.chartData = [
-{ "xDate": 0, "yValue": 10 },
-{ "xDate": 50, "yValue": 5 },
-{ "xDate": 100, "yValue": 15 },
-{ "xDate": 150, "yValue": 25 },
-{ "xDate": 200, "yValue": 10 },
-{ "xDate": 250, "yValue": 5 },
-{ "xDate": 300, "yValue": 15 },
-];
+    window.chartData = [
+    { "xDate": 0, "yValue": 10 },
+    { "xDate": 50, "yValue": 5 },
+    { "xDate": 100, "yValue": 15 },
+    { "xDate": 150, "yValue": 25 },
+    { "xDate": 200, "yValue": 10 },
+    { "xDate": 250, "yValue": 5 },
+    { "xDate": 300, "yValue": 15 },
+    ];
 
 
 {% endhighlight %}

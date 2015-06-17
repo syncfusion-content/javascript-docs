@@ -35,7 +35,6 @@ You can choose any of the Chart axis type using the” **valueType**” property
 
             primaryYAxis:
             {
-
                 title: { text: 'Production' },
             },
             // ...             

@@ -241,9 +241,9 @@ The following code example illustrates how to add Chart axis.
                 valueType:"category",
             },
             primaryYAxis:{
-            valueType: "double",
-            labelFormat: "{value}°F",
-            range:{min:0, max:120,interval:20}
+                valueType: "double",
+                labelFormat: "{value}°F",
+                range:{min:0, max:120,interval:20}
             },
             axes:[
             {
@@ -272,27 +272,27 @@ To assign the **axis** to the respective series, you can set **yAxisName** prope
 	       // ...             
             series: [
             {
-            name: 'Precipitation',
-			type: 'column', 
-			dataSource: window.chartData, 
-			xName: "date", 
-            yName: "precipitation",
-            yAxisName:'Precipitation',
+                name: 'Precipitation',
+                type: 'column',
+                dataSource: window.chartData,
+                xName: "date",
+                yName: "precipitation",
+                yAxisName:'Precipitation',
 
             },
             {
-            name: 'Low',
-			type: 'line', 
-			dataSource: window.chartData, 
-			xName: "date", 
-			yName: "low"                       
+                name: 'Low',
+                type: 'line',
+                dataSource: window.chartData,
+                xName: "date",
+                yName: "low"
             },
             {
-            name: 'High',
-			type: 'line', 
-			dataSource: window.chartData, 
-			xName: "date", 
-			yName: "high"                       
+                name: 'High',
+                type: 'line',
+                dataSource: window.chartData,
+                xName: "date",
+                yName: "high"
             },
             ]
 	       // ...             
