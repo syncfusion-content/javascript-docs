@@ -50,7 +50,7 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 As the **OLAP Control** is the key for each and every operation, initially you need to serialize the **OLAP Report** and send to client-side in a form of string.
 When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OLAP Report** from the client-side to the service in a de-serialized and updated format.
 Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again. 
-This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation_**.**_
+This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
 
 **Create an application**
 
@@ -84,7 +84,7 @@ The following screen shot illustrates how to reference **Syncfusion.Olap.Base.**
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img7.png" Caption="Adding reference to Syncfusion.Olap.Base"%}
 
-**Select the following assemblies**: 
+Select the following assemblies: 
 
    * Microsoft.AnalysisServices.AdomdClient.dll,  
 
@@ -360,7 +360,7 @@ the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is th
 
 {% endhighlight %}
 
-> _**Note In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created.**_
+> _**Note: In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created.**_
 
 
 
