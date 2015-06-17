@@ -87,8 +87,8 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 {% highlight html %}
 
     <body>
-        <!--Add  Gantt control here-->
-        <div id="GanttContainer"></div>
+    <!--Add  Gantt control here-->
+    <div id="GanttContainer"></div>
     </body>
 
 
@@ -260,7 +260,7 @@ Modify the predecessor details of a task using mouse interactions by setting **a
             allowEditing: true,
             allowAdding: true,
             allowDeleting: true,
-            editMode: "normal",
+            editMode:"normal",
         },
     });
 
