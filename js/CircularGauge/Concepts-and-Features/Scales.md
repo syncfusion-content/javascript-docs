@@ -35,7 +35,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight js %}
 
 $(function () {
   //For circular gauge rendering
