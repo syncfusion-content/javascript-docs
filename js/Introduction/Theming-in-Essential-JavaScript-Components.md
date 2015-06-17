@@ -39,9 +39,7 @@ By default, there are **13** kinds of theming supports available for **Essential
 
 * bootstrap-theme
 
-The **Essential Studio** Suite provides a css file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the **EJ web components**. 
-
-All the above specified theme files are available within the **css** folder which is depicted here.
+The **Essential Studio** Suite provides a css file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the **EJ web components**. All the above specified theme files are available within the **css** folder which is depicted here.
 
 ### Adding specific theme to your application
 
@@ -59,7 +57,7 @@ For example – Here, we are showing you how to refer only the **flat-saffron** 
 
 
 
-> _**Note: The **common-images** folder is needed to be copied into your application mandatorily for any of the theme selection, as it includes all the common font icons and other images required for the control to render.**_
+> _**Note: The common-images folder is needed to be copied into your application mandatorily for any of the theme selection, as it includes all the common font icons and other images required for the control to render.**_
 
 
 
@@ -106,8 +104,8 @@ Once the required theme folders are copied into your application, it is necessar
 
 
 
- _**Note: The **ej.web.all.min.css** file is available separately for all the 13 available themes in their respective theme folders.**_
- _**It is the combination of two files namely, **ej.theme.min.css** file (available separately within each of the theme folders) and **ej.widgets.core.min.css** – which is shown in the below image,**_
+> _**Note: The **ej.web.all.min.css** file is available separately for all the 13 available themes in their respective theme folders.**_
+> _**It is the combination of two files namely, **ej.theme.min.css** file (available separately within each of the theme folders) and **ej.widgets.core.min.css** – which is shown in the below image,**_
 
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img3.png)
 {:.image }
@@ -185,11 +183,9 @@ To change the background-color of the above header element of the DatePicker, yo
 {% highlight css %}
 
 
-<style>
     .customStyles .e-header {
         background-color: yellowgreen;
     }
-</style>
 
 
 
@@ -258,7 +254,7 @@ The non-minified version of the css files are present within the assets-src fold
 
 Follow the below steps to customize the entire css file and refer it in your HTML page,
 
-* Follow the usual steps as specified earlier for CSS reference, addionally copy and paste the non-minified version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (non-minified) file present within the **flat-saffron** theme folder in our application)
+* Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the non-minified version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (non-minified) file present within the **flat-saffron** theme folder in our application)
 
 ![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img6.png)
 {:.image }
