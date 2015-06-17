@@ -145,7 +145,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 **Initialize Map**
 
-*1*. Create a **&lt;div&gt;** tag with a specific id and set the height and width to determine the rendering map’s size.
+1\. Create a **&lt;div&gt;** tag with a specific id and set the height and width to determine the rendering map’s size.
 
 {% highlight js %}
 
@@ -156,7 +156,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 {% endhighlight %}
 
-*2*. Add a script tag anywhere in the webpage and add the following code. 
+2\. Add a script tag anywhere in the webpage and add the following code. 
 
 {% highlight javascript %}
 
@@ -175,7 +175,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 {% endhighlight %}
 
-*3*. The final **HTML** file appears as follows.
+3\. The final **HTML** file appears as follows.
 
 {% highlight js %}
 
