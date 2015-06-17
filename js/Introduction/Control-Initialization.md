@@ -57,15 +57,14 @@ Navigating to the below specified location, you can find all the required web re
 <table>
 <tr>
 <td>
-**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
 </td>
 </tr>
 <tr>
 <td>
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-<br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
 </td>
 </tr>
 </table>
@@ -82,7 +81,7 @@ Create a first level sub-folder named **ej** within the **Content** folder. Now 
 {:.caption }
 
 
-> _**Note: The **common-images** folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.**_
+> _**Note: The common-images folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.**_
 
 
 Now, Include the specific theme reference to your HTML file by referring the appropriate **ej.web.all.min.css** file from a particular theme folder (here, we have referred the **default-theme**), within the head section as shown below,
@@ -128,19 +127,17 @@ Navigating to the below specified location, you can find the above specified 4 d
 <table>
 <tr>
 <td>
-**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external 
+<b>(installed location)</b>\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external 
 </td>
 </tr>
 <tr>
 <td>
-    <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
 </td>
 </tr>
 </table>
-<br/>
 
 Apart from the above common scripts, it is also necessary to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script in a minified format.
 
@@ -150,19 +147,18 @@ Navigate to the below specified location and copy the **ej.web.all.min.js** file
 <table>
 <tr>
 <td>
-**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
+<b>(installed location)</b>\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
 </td>
 </tr>
 <tr>
 <td>
     <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
 </td>
 </tr>
 </table>
-<br/>
 
 ![](Control-Initialization_images/Control-Initialization_img3.png)
 {:.image }
@@ -196,7 +192,7 @@ Now, include the reference to it in your HTML page within the head section as sh
 
 
 
-> _**Note:The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.**_
+> _**Note: The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.**_
 
 
 
