@@ -18,46 +18,29 @@ This section explains briefly about how to create a **PivotGrid** in your applic
 The following screenshot displays the **PivotGrid** control.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img1.png" Caption="PivotGrid Control"%}
-
-<br/>
  
 **Create an application**
 
-This section encompasses how to configure the **PivotGrid** component in an application.
-
-You can also pass the required data to **PivotGrid** and customize it according to your requirements.
+This section encompasses how to configure the **PivotGrid** component in an application. You can also pass the required data to **PivotGrid** and customize it according to your requirements.
 
 This example illustrates how the **PivotGrid** component tabulates the Internet Sales Amount over a period of fiscal years across different customer geographic locations. 
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img2.png" Caption="PivotGrid"%}
                                                                                    
-<br/>
-
-Open Visual Studio and create a new project by clicking **New Project**. Select the **Web category**, and then select the **ASP.NET Empty Web Application template** and then click **OK**.  
-
-The following screenshot displays the **Project Creation Wizard**:
+Open Visual Studio and create a new project by clicking **New Project**. Select the **Web category**, and then select the **ASP.NET Empty Web Application template** and then click **OK**. The following screenshot displays the **Project Creation Wizard**:
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img3.png" Caption="Project Creation Wizard"%}
 
-<br/>
-
 **Create HTML Page**
 
-To create new web form in the application:
-
-Right-click on the project and select Add.
+To create new web form in the application, right-click on the project and select Add.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img4.png" Caption="Creating New Web Form"%}
 
-<br/>
-
 Click **New Item** and select **HTML Page** from the listed templates. Name the page **default.html** and click **OK**.
-
 After clicking **OK**, the referred assemblies look as follows.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img5.png" Caption="References"%}
-
-<br/>
     
 **Add References, Scripts, Styles and Control in HTML page**
 
@@ -67,11 +50,7 @@ After clicking **OK**, the referred assemblies look as follows.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img6.png" Caption="Adding References"%}
 
-<br/>
-
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img7.png" Caption="Reference Manager Dialog"%}
-
-<br/>
 
 * Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll, Syncfusion.XlsIO.Base.dll, Syncfusion.PivotAnalysis.Base.dll and Syncfusion.Olap.Base.dll.
 
@@ -86,7 +65,6 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 {% highlight html %}
 
-[HTML]
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
@@ -100,7 +78,6 @@ Add the following code example inside the &lt;body&gt; tag in the default.html p
 
 {% highlight html %}
 
-[HTML]
 <div>
      //Create a <div> tag which acts as a container for ejPivotGrid widget.
     <div id="PivotGrid" style="height: 350px; width: 100%; overflow: auto">
@@ -123,27 +100,19 @@ Right-click the project and select Add > New Folder. Name the folder as WCF.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img8.png" Caption="Adding and Naming the WCF Folder"%}
 
-<br/>
-
 Now, right-click the WCF folder created and select Add > New Item.  
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img9.png" Caption="Adding New Item to Folder"%}
 
-<br/>
-
 In the **Add New Item** window, select **WCF Service** and name it as **PivotGridService.svc**. Click **Add**.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img10.png" Caption="Add New Item Dialog"%}
-
-<br/>
 
 **Add service methods inside Interface**
 
 Add the following code example in the **IPivotGridService** interface available in **IPivotGridService.cs** file.
 
 {% highlight c# %}
-
-[C#]
 
 [ServiceContract(SessionMode = SessionMode.Allowed)]
 
@@ -183,7 +152,6 @@ Add the following necessary namespaces required to implement the service methods
 
 {% highlight c# %}
 
-[C#]
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -197,7 +165,6 @@ using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript;
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
-
 {% endhighlight %}
 
 **Create Class in Service file**
@@ -205,8 +172,6 @@ using OLAPUTILS = Syncfusion.JavaScript.Olap;
 You can create the **PivotGridService class** to implement the service methods. You can inherit the class from the **IPivotGridService interface** that is created automatically when adding any new service.
 
 {% highlight c# %}
-
-[C#]
 
 namespace WebApplication2
 {
@@ -216,9 +181,7 @@ namespace WebApplication2
     }
 }
 
-
 {% endhighlight %}
-
 
 **Implement Service Methods**
 
@@ -228,7 +191,6 @@ You can add the following methods to the service that are invoked for any server
 
 {% highlight c# %}
 
-[C#]
         PivotGrid htmlHelper = new PivotGrid();        
         static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";   
         JavaScriptSerializer serializer = new JavaScriptSerializer();
@@ -238,8 +200,6 @@ You can add the following methods to the service that are invoked for any server
 * Add the following relevant **service** methods.
 
 {% highlight c# %}
-
-[C#]
 
 //This method provides the required information from the server side when initializing the PivotGrid.
  
@@ -349,9 +309,7 @@ You can add the following methods to the service that are invoked for any server
 
 **Configure Web.Config** 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service
-
-class appears. The following are the properties that meet the appropriate endpoint.  
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
 
    1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is "**WebApplication2.IPivotGridService**".
 
@@ -360,8 +318,6 @@ class appears. The following are the properties that meet the appropriate endpoi
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows.
    
 {% highlight xml %}
-
-[Web.Config]
 
 <services>
 
@@ -377,13 +333,9 @@ class appears. The following are the properties that meet the appropriate endpoi
 
 {% endhighlight %}
 
-* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example, "WebApplication2.PivotGridServiceAspNetAjaxBehavior" refers to the PivotGridService class under the namespace
-
- WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
+* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example, "WebApplication2.PivotGridServiceAspNetAjaxBehavior" refers to the PivotGridService class under the namespace WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}
-
-[Web.Config]
 
   <endpointBehaviors>
 
@@ -399,8 +351,6 @@ class appears. The following are the properties that meet the appropriate endpoi
 
 > _**Note: In this example, “WebApplication2” indicates the name of the project and “PivotGridService”     indicates the name of the WCF service created.**_
 
-<br/>
-
 **Relational**
 
 **Control structure**
@@ -409,45 +359,28 @@ The following screen shot displays the **PivotGrid** Control.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img11.png" Caption="PivotGrid Control"%}
 
-<br/>
-
 **Create an application**
 
-This section encompasses how to configure the **PivotGrid** component in an application.
-
-You can also pass the required data to **PivotGrid** and customize it according to your requirements.
+This section encompasses how to configure the **PivotGrid** component in an application. You can also pass the required data to **PivotGrid** and customize it according to your requirements.
 
 This example illustrates how the **PivotGrid** component tabulates the sales/revenue amount over a period of fiscal years across different geographic locations. 
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img12.png" Caption="PivotGrid"%}
 
-<br/>
-
-Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web category**, and then select the **ASP.NET Empty Web Application template** and then click **OK**.  
-
-The following screen shot displays the **Project Creation Wizard**:
+Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web category**, and then select the **ASP.NET Empty Web Application template** and then click **OK**.  The following screen shot displays the **Project Creation Wizard**:
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img13.png" Caption="Project Creation Wizard"%}
 
-<br/>
-
 **Create HTML Page**
 
-To create new web form in the application:
-
-Right-click on the project and select Add.
+To create new web form in the application, right-click on the project and select Add.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img14.png" Caption="Creating New Web Form"%}
 
-<br/>
-
 Click New Item and select HTML Page from the listed templates. Name the page default.html and click OK.
-
 After clicking OK, the referred assemblies look as follows.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img15.png" Caption="References"%}
-
-<br/>
 
 **Add References, Scripts, Styles and Control in HTML page**
 
@@ -457,11 +390,7 @@ After clicking OK, the referred assemblies look as follows.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img16.png" Caption="Adding References"%}
 
-<br/>
-
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img17.png" Caption="Reference Manager Dialog"%}
-
-<br/>
 
 * Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll, Syncfusion.XlsIO.Base.dll, Syncfusion.PivotAnalysis.Base.dll and Syncfusion.Olap.Base.dll.
 
@@ -472,11 +401,9 @@ After clicking OK, the referred assemblies look as follows.
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
 > _**Note: Use the following code sample when adding scripts and styles.**_
- 
 
 {% highlight html %}
 
-[HTML]
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
@@ -490,7 +417,6 @@ Add the following code sample inside the **&lt;body&gt;** tag in the **default.h
 
 {% highlight html %}
 
-[HTML]
 <div>
      //Create a <div> tag which acts as a container for ejPivotGrid widget.
     <div id="PivotGrid" style="height: 350px; width: 100%; overflow: auto">
@@ -513,27 +439,19 @@ Right-click the project and select Add > New Folder. Name the folder as WCF.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img18.png" Caption="Adding and Naming the WCF Folder"%}
 
-<br/>
-
 Now, right-click the WCF folder created and select Add > New Item.  
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img19.png" Caption="Adding New Item to Folder"%}
 
-<br/>
-
 In the Add New Item window, select WCF Service and name it as PivotGridService.svc. Click Add.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img20.png" Caption="Add New Item Dialog"%}
-
-<br/>
 
 **Add service methods inside Interface**
 
 Add the following code sample inside the **IPivotGridService** interface available in **IPivotGridService.cs** file.
 
 {% highlight c# %}
-
-[C#]
 
 [ServiceContract]
 
@@ -551,7 +469,6 @@ Add the following code sample inside the **IPivotGridService** interface availab
         Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport);
     }
 
-
 {% endhighlight %}
 
 **Add Namespaces**
@@ -559,8 +476,6 @@ Add the following code sample inside the **IPivotGridService** interface availab
 Add the following necessary namespaces required to implement the **service** methods.
 
 {% highlight c# %}
-
-[C#]
 
 using System;
 using System.Collections.Generic;
@@ -575,7 +490,6 @@ using Syncfusion.Olap.Reports;
 using Syncfusion.JavaScript;
 using Syncfusion.PivotAnalysis.Base;
 
-
 {% endhighlight %}
 
 **Create Class in Service file**
@@ -583,8 +497,6 @@ using Syncfusion.PivotAnalysis.Base;
 You can create the **PivotGridService** class to implement the **service** methods. You can inherit the class from the **IPivotGridService** interface that is created automatically when adding any new service.
 
 {% highlight c# %}
-
-[C#]
 
 namespace WebApplication2
 {
@@ -594,7 +506,6 @@ namespace WebApplication2
     }
 }
 
-
 {% endhighlight %}
 
 **Implement Service Methods**
@@ -603,10 +514,7 @@ You can add the following methods to the service that are invoked for any server
 
 * Initialize the PivotGrid helper class. 
 
-
 {% highlight c# %}
-
-[C#]
 
 PivotGrid htmlHelper = new PivotGrid();
 
@@ -619,8 +527,6 @@ Dictionary<string, object> dict = new Dictionary<string, object>()>;
 * Add the following relevant service methods.
 
 {% highlight c# %}
-
-[C#]
 
 //This method provides the required information from the server side when initializing the PivotGrid.
  
@@ -682,8 +588,6 @@ Dictionary<string, object> dict = new Dictionary<string, object>()>;
 
 
 {% highlight c# %}
-
-[C#]
 
 namespace WebApplication2
 {
@@ -794,14 +698,11 @@ namespace WebApplication2
     }
 }
 
-
 {% endhighlight %}
 
 **Configure Web.Config** 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service
-
-class appears.The following are the properties that meet the appropriate endpoint.  
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.  
 
    1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is "**WebApplication2.IPivotGridService**".
 
@@ -809,10 +710,7 @@ class appears.The following are the properties that meet the appropriate endpoin
 
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows.
    
-
 {% highlight xml %}   
-
-[Web.Config]
 
 <services>
 
@@ -828,13 +726,9 @@ binding="webHttpBinding" contract="**WebApplication2.IPivotGridService**" />
 
 {% endhighlight %}
 
-* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code sample, "WebApplication2.PivotGridServiceAspNetAjaxBehavior" refers to the PivotGridService class under the namespace
- 
-WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
+* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code sample, "WebApplication2.PivotGridServiceAspNetAjaxBehavior" refers to the PivotGridService class under the namespace WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}  
-
-[Web.Config]
 
 <endpointBehaviors>
         

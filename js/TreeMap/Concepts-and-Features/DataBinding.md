@@ -16,7 +16,6 @@ The **dataSource** property accepts the collection values as input. For example,
 {% highlight js %}
 
 
-****
        jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({ 
                 **dataSource: population_data,** 

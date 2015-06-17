@@ -210,23 +210,17 @@ And</td><td>
 " et "</td></tr>
 </table>
 
-<br/>
-
 The following code example shows how to localize OLAP Client’s User Interface (UI) based on French culture.
 
 {% highlight js %}
 
-[JS]
 $("#OlapClient1").ejOlapClient({ url: "../wcf/OlapClientService.svc", **locale:"fr-FR"** }); 
 
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight js %}
 
-[HTML]
-<script type="text/javascript">
- {
 ej.olap.OlapClient.locale["fr-FR"] = {
 Column:"Colonne",
 Row:"Rangée",
@@ -285,9 +279,6 @@ Expand:"Développer",
 Collapse:"Effondrement",
 Exit:"Quitter"
 }
-}
-</script>
-
 
 {% endhighlight %}
 
@@ -299,7 +290,6 @@ To apply control side localization, use the following code example.
 
 {% highlight html %}
 
-[HTML]
 ej.olap.OlapClient.locale["zh-CN"]={
 //Corresponding keyword values needs to be set here.
 }
@@ -313,7 +303,6 @@ To get the localized Cube information,set **Locale Identifier** in the connectio
 
 {% highlight c# %}
 
-[C#]
 //1036 refers to“fr-FR” culture.
 String connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);

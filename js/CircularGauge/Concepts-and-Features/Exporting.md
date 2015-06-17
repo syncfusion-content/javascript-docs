@@ -13,8 +13,6 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
-
 <input type="submit" value="Export Image" id="btnExportImage" />
 <div id=" circulargauge ">     </div>
 <div id="txtFileName"> FileName </div>

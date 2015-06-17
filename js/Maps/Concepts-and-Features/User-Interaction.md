@@ -123,8 +123,7 @@ Maps can be zoomed using the following options also,
 You can zoom the Maps using **zoom** method. The zoom method contains parameter zoom value. The map can be zoomed or scaled based on zoom value parameter.
 
 {% highlight html %}
-
-**[HTML]**   
+ 
    $("#map").ejMap("zoom", 2);
 
 

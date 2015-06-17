@@ -25,13 +25,9 @@ The different types of available indicators are as follows:
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.jpeg" Caption="KPI in OlapGrid"%}
 
-<br/>
-
 The following code example illustrates how to initialize **KPI** element within the **OLAP** Report:
 
 {% highlight c# %}
-
-**[C#]**
 
    private OlapReport CreateOlapReport()
         {
@@ -57,7 +53,6 @@ The following code example illustrates how to initialize **KPI** element within 
          olapReport.SeriesElements.Add(dimensionElementRow);
          return olapReport;
         }
-
 
 {% endhighlight %}
 

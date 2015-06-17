@@ -9,11 +9,10 @@ documentation: ug
 
 ### Chart Axes 
 
-**OlapChart** typically have two axes that are used to measure and categorize data: a vertical (y) axis and a horizontal (x) axis. By default horizontal (x) axis and vertical (y) axis is added to the Chart with axis labels, gridlines, and tick lines. You can also customize this axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
+**OlapChart** typically have two axes that are used to measure and categorize data: a vertical Y-axis and a horizontal X-axis. By default vertical Y-axis and horizontal X-axis is added to the Chart with axis labels, gridlines, and tick lines. You can also customize this axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
   url: "../wcf/OlapChartService.svc",
   primaryXAxis: { majorTickLines: { visible: false } },
@@ -30,7 +29,6 @@ Primary axis title font appearance is further customized with the help of the fo
 
 {% highlight js %}
 
-[JS]
 $(function () {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
@@ -54,7 +52,6 @@ $(function () {
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },  
 legend: { visible: true, rowCount: 3 },
@@ -82,7 +79,6 @@ legend: { visible: true, rowCount: 3 },
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },
         primaryXAxis: {opposedPosition: true },primaryYAxis: {opposedPosition: true}
@@ -111,7 +107,6 @@ Background, border color and outer width of the Chart Area is customized with th
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
 url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" }, chartArea: { border: { color: "gray", width: 4 }, background: "aqua" }
 });

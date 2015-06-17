@@ -50,7 +50,7 @@ You can customize the labels of the **legend****item** using **legendLabel** pro
                 levels: [
                   { groupPath: "Continent", groupGap: 5 }
                 ],
-                **treeMapLegend:{ iconHeight:20,iconWidth:20}**
+                treeMapLegend:{ iconHeight:20,iconWidth:20}
             });
         });
 
@@ -109,7 +109,7 @@ You can also set labels for the leaf nodes by setting the **showLabels** propert
                   {groupPath: "Continent", groupGap: 2, headerHeight: 20, headerTemplate: 'headertemplate' }
                 ],
 
-                **leafItemSettings: { labelPath: "Region", showLabels: true, labelTemplate: 'labeltemplate'}**
+                leafItemSettings: { labelPath: "Region", showLabels: true, labelTemplate: 'labeltemplate'}
                 // ...
             });
         }); 

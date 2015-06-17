@@ -19,6 +19,18 @@ Essential **OLAP Chart JS** supports 13 different types of chart as follows:
 
    * Stacking Bar
 
+   * Pie
+
+   * Pyramid
+   
+   * Funnel
+
+   * Line
+
+   * Step Line
+
+   * Spline
+
    * Area
 
    * Step Area
@@ -27,23 +39,12 @@ Essential **OLAP Chart JS** supports 13 different types of chart as follows:
 
    * Stacking Area
 
-   * Pie
-
-   * Pyramid
-
-   * Line
-
-   * Step Line
-
-   * Spline
-
 #### Column Chart
 
 **Column Chart** is the most commonly used chart types. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total or average of data in different categories. It is ideal to show the variations in the value of an item over a period of time.
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 }
     commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Column }
@@ -64,8 +65,6 @@ The following screenshot displays a **Column Chart**.
 **Stacking Column** Chart is similar to column charts except the “Y-values”. These “Y-values” stack on top of each other in a specified series order. This helps to visualize the relationship of parts to the whole chart.
 
 {% highlight js %}
-
-[JS]
 
 $("#OlapChart1").ejOlapChart({
      url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
@@ -88,7 +87,6 @@ The **Bar Chart** is the simplest and most versatile chart of statistical diagra
 
 {% highlight js %}
 
-[JS]
 
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
@@ -111,7 +109,6 @@ The following screenshot displays a **Bar Chart**.
 
 {% highlight js %}
 
-[JS]
 
 $("#OlapChart1").ejOlapChart({
      url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
@@ -135,7 +132,6 @@ A **Pie chart** is used to summarize a set of categorical data or displaying dif
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
   url: "../wcf/OlapChartService.svc",legend:{visible:true,rowCount:3},
   commonSeriesOptions:{type: ej.olap.OlapChart.ChartTypes.Pie }                                
@@ -157,7 +153,6 @@ The **Pyramid Chart** type displays the data in the form of a triangle. It helps
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
      url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
      commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Pyramid }
@@ -173,13 +168,31 @@ The following screen shot displays the **Pyramid Chart.**
 
 <br/>
 
+#### Funnel Chart
+
+The **Funnel Chart**  type displays the data in the form of an inverted triangle. It helps you to visualize data in a hierarchical structure without any axes.
+
+{% highlight js %}
+
+$("#OlapChart1").ejOlapChart({
+     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
+     commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Funnel }
+});
+
+{% endhighlight %}
+
+The following screen shot displays the **Funnel Chart.**
+
+{% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Types_images/Chart-Types_img14.png" Caption="Funnel Chart"%}
+
+<br/>
+
 #### Line Chart
 
 The **Line Chart** joins the data points on a plot using straight lines that show trends in data at equal intervals.
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
      url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
      commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Line }
@@ -202,7 +215,6 @@ The following screenshot displays the **Line Chart**.
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
      url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
      commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.StepLine }
@@ -225,7 +237,6 @@ The **spline chart** is similar to line charts except it connects different data
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
     commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Spline }
@@ -248,7 +259,6 @@ The following screenshot displays the **Spline Chart**.
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
     commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Area }
@@ -271,7 +281,6 @@ The following screenshot displays the **Area Chart**.
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
     commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.StepArea }
@@ -293,7 +302,6 @@ The following screenshot displays a **Step Area Chart.**
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
     commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.SplineArea }
@@ -315,7 +323,6 @@ The following Screenshot displays a **Spline Area Chart.**
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
     commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.StackingArea }

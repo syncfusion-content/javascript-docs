@@ -23,7 +23,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {

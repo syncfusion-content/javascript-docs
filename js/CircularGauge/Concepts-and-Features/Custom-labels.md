@@ -17,7 +17,6 @@ Custom labels collection is directly added to the scale object. Refer the follow
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -46,7 +45,6 @@ Font option is also available on  Customlabels. The basic three properties of fo
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -95,7 +93,6 @@ You can set multiple custom labels in a single **Circular Gauge** by adding an a
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -166,7 +163,6 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {

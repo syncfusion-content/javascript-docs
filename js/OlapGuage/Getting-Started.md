@@ -17,13 +17,9 @@ The following screen shot shows the structure of an **OLAP Gauge** control.
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Gauge Control for JavaScript"%}
 
-<br/>
-
 **Syncfusion OLAP Controls – Architecture**
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img2.png" Caption="Architecture of OLAP controls"%}
-
-<br/>
 
 As shown in an above architecture, control rendering takes place at client-side and all other analytical operations on each action takes place at server-side.
 
@@ -31,7 +27,7 @@ As shown in an above architecture, control rendering takes place at client-side 
 
 The primary reasons for using service in an **OLAP** processing are as follows:
 
-1.DataSource Connectivity: You can establish a connection between different cube data sources such as
+1.**DataSource Connectivity:** You can establish a connection between different cube data sources such as
 
    * Offline Cube
     
@@ -39,7 +35,7 @@ The primary reasons for using service in an **OLAP** processing are as follows:
     
    * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than <b>Online Cube</b> (XML/A) option. Using service, you can connect any cube data source without any limitation.
     
-2.Cube Schema: As the connection is moved to service-side, you obviously use Microsoft ADOMD assembly to get the entire cube schema. Only with the cube schema the following details are achieved for control rendering.
+2.**Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
 
    * Availability of cubes.
     
@@ -47,23 +43,12 @@ The primary reasons for using service in an **OLAP** processing are as follows:
     
    * Localized information is also available in cube schema.
 
-3.MDX Generator: You can frame the MDX query using an MDX generator in
-
-Syncfusion.Olap.Base assembly. To execute the framed MDX from the cube data source, you need to send framed MDX via Microsoft ADOMD assembly. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any OLAP
-
-controls.
+3.**MDX Generator:** You can frame the MDX query using an MDX generator in **Syncfusion.Olap.Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
 4.OLAP Report: The OlapReport class in the Syncfusion.Olap.Base holds the complete information of each axes such as column, row and slicer. Using OlapReport class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that
-
 is included and excluded.
 
-As the **OlapControl** is the key for each and every operation, initially you need to serialize the **OlapReport** and send to client-side in a form of string.
-
-When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OlapReport** from the client-side to the service in a de-serialized and updated format.
-
-Further operations are carried with updated **OlapReports** only and you can send the updated **OlapReport** back to client-side with **JSON** data in a serialized format again. 
-
-This process has the **OlapReport** always updated. You cannot operate serialized **OlapReport** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
+As the **OlapControl** is the key for each and every operation, initially you need to serialize the **OlapReport** and send to client-side in a form of string. When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OlapReport** from the client-side to the service in a de-serialized and updated format. Further operations are carried with updated **OlapReports** only and you can send the updated **OlapReport** back to client-side with **JSON** data in a serialized format again. This process has the **OlapReport** always updated. You cannot operate serialized **OlapReport** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
 
 **Create an application**
 
@@ -73,25 +58,15 @@ In the following example, **OLAP gauge** is used to visualize the Revenue for Re
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img3.png" Caption="Revenue for Reseller – FY 2004 – Accessories"%}
 
-<br/>
-
-Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**.
-
-The following screen shot displays the Project Creation Wizard:
+Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screen shot displays the Project Creation Wizard:
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img4.png" Caption="New Project Wizard"%}
 
-<br/>
-
 **Create HTML page**
 
-To create a new web form in the application
-
-Right-click on the project and select Add.
+To create a new web form in the application, right-click on the project and select Add.
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img5.png" Caption="Add New Item Wizard"%}
-
-<br/>
 
 Click on New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
 
@@ -103,11 +78,7 @@ Click on New Item and select HTML Page from the listed templates. Name the page 
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img6.png" Caption="Adding Reference"%}
 
-<br/>
-
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img7.png" Caption="Referencing Syncfusion.Olap.Base"%}
-
-<br/>
 
 * Select the following assemblies: 
 
@@ -133,13 +104,10 @@ Add the script files and CSS files in the title tag of the default.html page.
 
 {% highlight html %}
 
-[HTML]
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-
-
 
 {% endhighlight %}
 
@@ -148,8 +116,6 @@ Add the script files and CSS files in the title tag of the default.html page.
 Add the following code inside the **&lt;Body&gt;** tag in the **default.html** page.
 
 {% highlight html %}
-
-[HTML]
 
 //Creating a div tag, which will act as a container for ejOlapGauge widget.
 
@@ -223,8 +189,6 @@ Add the following code inside the **&lt;Body&gt;** tag in the **default.html** p
         });
     </script>
 
-
-
 {% endhighlight %}
 
 **Add WCF Service for OLAP Gauge**
@@ -240,15 +204,12 @@ Add the following code inside the **&lt;Body&gt;** tag in the **default.html** p
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png" Caption="Creating WCF Service"%}
 
-<br/>
-
 **Add service methods inside Interface**
 
 Add the following code inside the IOlapGaugeService interface available in the IOlapGaugeService.cs file.
 
 {% highlight c# %}
 
-[C#]
     [ServiceContract]
     public interface IOlapGaugeService
     {
@@ -265,7 +226,6 @@ Add necessary namespaces required to implement the service methods.
 
 {% highlight c# %}
 
-[C#]
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -287,7 +247,6 @@ Create the **OlapGaugeService** class to implement the service methods. Inherit 
 
 {% highlight c# %}
 
-[C#]
 namespace WebApplication2
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
@@ -307,13 +266,9 @@ Add the following methods to the service invoked for any server-side operations 
 
 {% highlight c# %}
 
-[C#]
         OlapGauge htmlHelper = new OlapGauge();       
         static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-
-
-
 
 {% endhighlight %}
 
@@ -321,15 +276,12 @@ Add the following methods to the service invoked for any server-side operations 
 
 {% highlight c# %}
 
-[C#]
-
          //This method provides the required information from the server side for initializing the OlapGauge.
           public Dictionary<string, object> InitializeGauge(string action,string customObject)
         {
             OlapDataManager DataManager = null;
             dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
-
-                DataManager = new OlapDataManager(connectionString);                         
+            DataManager = new OlapDataManager(connectionString);                         
             DataManager.SetCurrentReport(CreateOlapReport());
             return htmlHelper.GetJsonData(action, DataManager);
         }        
@@ -369,13 +321,11 @@ Add the following methods to the service invoked for any server-side operations 
             return report;
         }
 
-
-
 {% endhighlight %}
 
 **Configure Web.Config** 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.OlapGuageService" where "OlapGuageService" is the service class name and “WebApplication2" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is **"WebApplication2.OlapGuageService"** where **"OlapGuageService"** is the service class name and **“WebApplication2"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
    1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapGaugeService** contract and hence it is "**WebApplication2.IOlapGaugeService**".
 
@@ -383,11 +333,7 @@ Add the following methods to the service invoked for any server-side operations 
 
    3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
 
-
-
 {% highlight xml %}
-
-[Web.Config]
 
  <services>
       <service name="**WebApplication2.OlapGaugeService**">
@@ -396,14 +342,11 @@ Add the following methods to the service invoked for any server-side operations 
       </service>
     </services>
 
-
 {% endhighlight %}
 
-* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, "WebApplication2.OlapGaugeServiceAspNetAjaxBehavior" refers to the OlapGaugeService class under the namespace WebApplication2 in OlapGaugeService.svc.cs file that is the appropriate behavior for the endpoint.
+* The **endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, **"WebApplication2.OlapGaugeServiceAspNetAjaxBehavior"** refers to the OlapGaugeService class under the namespace **WebApplication2** in **OlapGaugeService.svc.cs** file that is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
-
-[Web.Config]
 
    <endpointBehaviors>
         <behavior name="**WebApplication2.OlapGaugeServiceAspNetAjaxBehavior**">

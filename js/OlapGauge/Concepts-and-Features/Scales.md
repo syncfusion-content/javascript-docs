@@ -17,8 +17,6 @@ Radius of the **Scale Bar** is changed with the help of **scale Radius** propert
 
 {% highlight js %}
 
-[JS]
-
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
         backgroundColor: "transparent", 

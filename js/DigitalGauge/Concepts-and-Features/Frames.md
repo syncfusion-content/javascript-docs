@@ -15,7 +15,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -50,7 +50,7 @@ For a better appearance, you can set the **background****image** for the **Digit
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="DigitalGauge1"></div>
 <script type="text/javascript">
 $(function () {

@@ -52,8 +52,6 @@ A grid is a tabular representation of data, arranged in the form of rows and col
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img1.png" Caption="Cube Selector"%}
 
-<br/>
-
 ### Cube Dimension Browser
 
 Cube Dimension Browser is a tree-view-like structure that organizes the dimensions, hierarchies, measures etc… from the selected cube into independent, logical groups.
@@ -94,8 +92,6 @@ Level of attributes down the hierarchy.</td></tr>
 User-defined hierarchy</td><td>
 Members of a dimension in a hierarchical structure.</td></tr>
 </table>
-
-<br/>
 
 **Attribute Hierarchy**
 
@@ -199,8 +195,6 @@ The slicer axis is used as a filter to narrow the focus of the multidimensional 
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img10.png" Caption="Axis Element Builder"%}
 
-<br/>
-
 #### Addition of Elements to an Axis Element Builder
 
 ##### Add Dimension, Hierarchy and Level to an Axis Element Builder 
@@ -209,15 +203,11 @@ The dimension, hierarchy and level elements can be dragged from the Cube Dimensi
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img11.png" Caption="Adding Dimension to Axis Element Builder"%}
 
-<br/>
-
 ##### Add Measure to an Axis Element Builder
 
 The measure elements can be dragged from Cube Dimension Browser and dropped into Axis Element Builder using drag-and-drop operation. Also user can move the measure elements from one axis to another by moving the Split Button named Measures.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img12.png" Caption="Adding Measure to an Axis Element Builder"%}
-
-<br/>
 
 #### Remove Elements from an Axis Element Builder
 
@@ -227,15 +217,11 @@ In order to remove dimension, hierarchy and level element from the Axis Element 
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img13.png" Caption="Removing an element in Axis Element Builder"%}
 
-<br/>
-
 ##### Remove Measure from an Axis Element Builder
 
 To remove the measure element from the Axis Element Builder, click the Remove symbol available next to the Measures Split Button while hovering over it.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img14.png" Caption="Removing Measure in Axis Element Builder"%}
-
-<br/>
 
 #### Rearrange Elements in an Axis Element Builder
 
@@ -243,11 +229,7 @@ Rearranging can be done by dragging an element one below the other.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img15.png" Caption="Before rearranging the elements"%}
 
-<br/>
-
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img16.png" Caption="Figure: Rearranging elements"%}
-
-<br/>
 
 ### Split Button
 
@@ -255,21 +237,16 @@ Split Button highlights the elements in the Axis Element Builder. It holds dimen
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img17.png" Caption="Split Button – Dimension"%}
 
-<br/>
 
 When you drag and drop a measure, the Axis Element Builder will create a Split Button only for the first measure. The next time a measure is added, it maintains the same single Split Button to hold the entire measure collection.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img18.png" Caption="Split Button – Measure"%}
-
-<br/>
 
 ##### Remove Split Button
 
 Split Button can be removed with the help of the Remove option available while hovering over it.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img19.png" Caption="Removing Split Button"%}
-
-<br/>
 
 ### Elements Editor
 
@@ -279,23 +256,17 @@ Measure Editor is a dialog that displays the collection of measures in the curre
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img20.png" Caption="Measure Editor"%}
 
-<br/>
-
 **Remove a Measure** 
 
 To remove a measure, click the Remove button next to the corresponding measure while hovering over it. To avoid removing the current selection, click Cancel.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img21.png" Caption="Removing a Measure"%}
 
-<br/>
-
 **Member Editor**
 
 Member Editor is a tree-view control that displays the member elements of the current dimension.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img22.png" Caption="Member Editor"%}
-
-<br/>
 
 **Represent State of Nodes of a dimension**
 
@@ -313,8 +284,6 @@ Unchecking the check box option is provided in such a way that on deselecting th
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img23.png" Caption="Selecting and Unselecting Nodes"%}
 
-<br/>
-
 **Check All and Uncheck All**
 
 * **Check All** – Will select all nodes in the tree view.
@@ -324,13 +293,9 @@ Unchecking the check box option is provided in such a way that on deselecting th
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img24.png" Caption="Check all nodes"%}
 
-<br/>
-
 ### Toolbar
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img25.png" Caption="OLAP Client Toolbar"%}
-
-<br/>
 
 _Table: Options Table_
 
@@ -391,11 +356,7 @@ Report List will hold all the reports of the current session of the **OLAP Clien
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img26.png" Caption="Report List"%}
 
-<br/>
-
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img27.png" Caption="Report List"%}
-
-<br/>
 
 When a change is made in the report, **OLAP** visualization controls and Axis Element Builder get re-populated with the data contained in the selected report.
 

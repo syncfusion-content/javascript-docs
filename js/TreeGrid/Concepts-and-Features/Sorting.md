@@ -18,11 +18,11 @@ The **TreeGrid** control for **JavaScript** has built-in support for **Sorti
 {% highlight js %}
 
 
-$("#TreeGridContainer").ejTreeGrid({
-         //...
+         $("#TreeGridContainer").ejTreeGrid({
+                  //...
 
-         allowSorting: true,
-});
+                  allowSorting: true,
+         });
 
 
 
@@ -34,11 +34,11 @@ $("#TreeGridContainer").ejTreeGrid({
 
 {% highlight js %}
 
-$("#TreeGridContainer").ejTreeGrid({
+         $("#TreeGridContainer").ejTreeGrid({
                 //...
                 allowSorting: true,
                 allowMultiSorting: true,
-});
+         });
 
 
 {% endhighlight %}

@@ -15,12 +15,15 @@ documentation: ug
 
 The **PivotGrid** is viewed page-by-page through **Pager** option. The **Pager** is set to **PivotGrid** using following code example.
 
-{% highlight javascript %}
+{% highlight html %}
 
-**[JS]**
 <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"></div>
 <div id="Pager1" style="margin-top:10px; overflow: auto"></div>                
-<script type="text/javascript">                     
+
+{% endhighlight %}
+
+{% highlight js %}
+
     $("#PivotGrid1").ejPivotGrid({
         url: "../wcf/PivotGridService.svc",
     });
@@ -28,44 +31,33 @@ The **PivotGrid** is viewed page-by-page through **Pager** option. The **Pager**
          mode: ej.PivotPager.Mode.Both,
         targetControlID: "PivotGrid1"
     });                       
-</script>
-
 
 {% endhighlight %}
-
 
 The page size for categorical and series axes are set in the **OlapReport**. **Pager** is loaded with current page and total pages of **PivotGrid** is automatically displayed as illustrated in the following screenshot. The icons to move pages to next, last, previous and first are added.  Also you can directly navigate to the desired page by entering the appropriate numeric value into the text box.
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Paging_images/Paging_img1.png" Caption="PivotGrid in paging mode"%}
 
-<br/>
-
 **Virtual Scrolling**
 
 The large **PivotGrid** data content is viewed page-by-page using **Virtual Scrolling** . The page size for categorical and series axes are set in **OlapReport**. By enabling **Virtual Scrolling** , the number of rows and columns for the **PivotGrid** are set as entered in the **OlapReport**. By scrolling the horizontal and vertical scrollbars, the categorical and series page numbers are obtained and **PivotGrid** contents are refreshed accordingly.
 
-{% highlight javascript %}
+{% highlight js %}
 
-[JS]
   $("#PivotGrid1").ejPivotGrid({
                         url: "../wcf/PivotGridService.svc",
                         enableVirtualScrolling: true
                      });     
 
+{% endhighlight %}
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Paging_images/Paging_img2.png" Caption="PivotGrid with Virtual Scroller"%}
 
-<br/>
-
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Paging_images/Paging_img3.png" Caption="Page indication while scrolling"%}
-
-<br/>
 
 **OLAP Report for Paging and Virtual Scrolling**
 
 {% highlight c# %}
-
-[C#]
 
 OlapReport olapReport = new OlapReport();
 olapReport.CurrentCubeName = "Adventure Works";

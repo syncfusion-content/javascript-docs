@@ -27,8 +27,6 @@ documentation: ug
 
 {% highlight js %}
 
-**[HTML]**
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -52,8 +50,6 @@ documentation: ug
 
 {% highlight js %}
 
-**[HTML]**
-
 <body>
 <div id="DigitalGauge1"></div>
 </body>
@@ -69,8 +65,6 @@ documentation: ug
 
 
 {% highlight js %}
-
-**[HTML]**
 
 <script type="text/javascript">
 $(function () {
@@ -157,7 +151,6 @@ You can add a **&lt;div&gt;** element to set the background for the **Digital Ga
 
 {% highlight js %}
 
-**[HTML]**
 
 <div id="frameDiv">
 <div id="DigitalGauge1" style="width:100%">
@@ -190,7 +183,6 @@ You can position the digital letters inside the canvas element using **location*
 
 {% highlight js %}
 
-**[Javascript]**
 $("#DigitalGauge1").ejDigitalGauge({
 height: 145,
 width: 260,
@@ -220,8 +212,6 @@ On executing the above code, sample renders a default **Digital Gauge** as follo
 You can add **Items****collection** to display the temperature value as used in the Digital thermometer.
 
 {% highlight js %}
-
-**[J[Javascript]**
 
 $("#DigitalGauge1").ejDigitalGauge({
 height: 145, width: 260,

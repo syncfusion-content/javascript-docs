@@ -14,12 +14,12 @@ documentation: ug
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    baselineStartDateMapping: "baselineStartDate",//MAPPING BASELINESTARTDATE TO GANTT
-    baselineEndDateMapping: "baselineEndDate",//MAPPING BASELINEENDDATE TO GANTT
-    renderBaseline: true//SHOW/HIDE THE BASELINE IN GANTT
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        baselineStartDateMapping: "baselineStartDate",//MAPPING BASELINESTARTDATE TO GANTT
+        baselineEndDateMapping: "baselineEndDate",//MAPPING BASELINEENDDATE TO GANTT
+        renderBaseline: true//SHOW/HIDE THE BASELINE IN GANTT
+    });
 
 
 {% endhighlight %}

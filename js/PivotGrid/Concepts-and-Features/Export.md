@@ -19,7 +19,6 @@ The following code example illustrates how to save the document to Excel via ser
 
 {% highlight c# %}
 
-[C#]
 public void ExportOptions(Stream stream)
 {
 PivotGrid pivotGridHelper = new PivotGrid();
@@ -28,26 +27,25 @@ pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(),
 }
 {% endhighlight %}
 
+{% highlight html %}
 
-{% highlight javascript %}
-
-[JS]
 <button id="Button1">Export Grid</button>
 <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"> </div> 
-<script type="text/javascript">
- $(function () {
-     $("#PivotGrid1").ejPivotGrid({ url: "../wcf/PivotGridService.svc"});
-
-  $("#Button1").ejButton({size: "normal",roundedCorner: true,click: "btnClick"});
- });
-  function btnClick(e) {
-      pivotGridObj = $('#PivotGrid').data("ejPivotGrid");
-      pivotGridObj.exportToExcel();
-}
-</script>
 
 {% endhighlight %}
 
+{% highlight js %}
+
+$(function () {
+     $("#PivotGrid1").ejPivotGrid({ url: "../wcf/PivotGridService.svc"});
+     $("#Button1").ejButton({size: "normal",roundedCorner: true,click: "btnClick"});
+});
+function btnClick(e) {
+      pivotGridObj = $('#PivotGrid').data("ejPivotGrid");
+      pivotGridObj.exportToExcel();
+}
+
+{% endhighlight %}
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Export_images/Export_img1.png" Caption="Exported Excel Worksheet"%}
 

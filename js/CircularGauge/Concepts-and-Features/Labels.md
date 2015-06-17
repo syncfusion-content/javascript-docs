@@ -17,7 +17,6 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -52,7 +51,7 @@ Font option is also available on the labels. The basic three properties of fonts
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -106,7 +105,7 @@ Labels can be positioned with the help of two properties such as **distanceFromS
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -150,7 +149,7 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {

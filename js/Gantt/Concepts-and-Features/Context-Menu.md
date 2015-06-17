@@ -28,10 +28,10 @@ The following code example shows you how to enable the default context menu in *
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    enableContextMenu:true
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        enableContextMenu:true
+    });
 
 
 {% endhighlight %}
@@ -48,10 +48,10 @@ You can add custom context menu option in **Gantt** control. The following code 
 
 {% highlight js %}
 
-$("#GanttContainer").ejGantt({
-    //...
-    contextMenuOpen: function (args) {
-        args.contextMenuItems.push(
+    $("#GanttContainer").ejGantt({
+        //...
+        contextMenuOpen: function (args) {
+            args.contextMenuItems.push(
             {
                 headerText: "ExpandAll",
                 iconPath: "url(../images/Expand All.png)",
@@ -59,8 +59,8 @@ $("#GanttContainer").ejGantt({
                     //event handler for custom menu items
                 }
             });
-    }
-});
+        }
+    });
 
 
 {% endhighlight %}

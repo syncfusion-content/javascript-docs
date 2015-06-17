@@ -25,8 +25,6 @@ After you click Split Button, Member Editor Dialog opens and through that you ca
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Data-Exploration_images/Data-Exploration_img1.png" Caption="Filtering by Members"%}
 
-<br/>
-
 The above filter illustrates that the members France and Germany, along with Queensland and South Australia are filtered from the **Grid** and **Chart** view.
 
 **Filtering by Value**
@@ -43,25 +41,21 @@ Row Filter checks each and every column of a row against the filter condition. T
 
 The options in Filtering tab are as follows:
 
-	* **Measure**: You can choose any one measure element from the list to apply the filter.
+	1. Measure: You can choose any one measure element from the list to apply the filter.
 
-	* **Condition**: You can choose any one condition that needs to appear in the filter expression.
+	2. Condition: You can choose any one condition that needs to appear in the filter expression.
 
-	* **Value**: You can enter the conditional value for the expression.
+	3. Value: You can enter the conditional value for the expression.
 
 The following screenshot displays the **Filtering** Dialog box.
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Data-Exploration_images/Data-Exploration_img2.png" Caption="Filtering Dialog"%}
 
-<br/>
-
 The following screenshot displays data before Filtering.
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Data-Exploration_images/Data-Exploration_img3.png" Caption="Before Filtering"%}
 
-<br/>
-
-The following screenshot displays the data after Filtering**.**
+The following screenshot displays the data after Filtering.
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Data-Exploration_images/Data-Exploration_img4.png" Caption="After Filtering"%}
 
@@ -83,23 +77,19 @@ Row sorting sorts the rows in the result set based on the row total of each row.
 
 The options in the Sorting tab are as follows:
 
-	* **Measure**: You can choose any one of the measure elements from the list to sort.
+	1. Measure: You can choose any one of the measure elements from the list to sort.
 
-	* **Order**: You can specify the sorting order.
+	2. Order: You can specify the sorting order.
 
-	* **Preserve Hierarchy**: You can sort the records without changing the hierarchy order.
+	3. Preserve Hierarchy: You can sort the records without changing the hierarchy order.
 
 The following screenshot displays the **Sorting** and **Filtering** dialog box.
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Data-Exploration_images/Data-Exploration_img5.png" Caption="Sorting and Filtering Dialog"%}
 
-<br/>
-
 The following screenshot displays the data before sorting.
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Data-Exploration_images/Data-Exploration_img6.png" Caption="Before Sorting"%}
-
-<br/>
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Data-Exploration_images/Data-Exploration_img7.png" Caption="After Sorting"%}
 

@@ -27,7 +27,7 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 {% highlight javascript %}
 
-**[HTML]**
+
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -53,7 +53,7 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 {% highlight html %}
 
-**[HTML]**
+
 
 <body>
     <div id="LinearGauge1"></div>   
@@ -71,7 +71,7 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 {% highlight html %}
 
-**[HTML]**
+
 
 <script type="text/javascript">
 $(function () {
