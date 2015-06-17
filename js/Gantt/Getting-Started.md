@@ -57,10 +57,11 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
     <head>
 
-    <title>Getting Started with Gantt Control for JavaScript</title>
+     <title>Getting Started with Gantt Control for JavaScript</title>
 
-    <!-- style sheet for default theme(flat azure) -->
-      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+     <!-- style sheet for default theme(flat azure) -->
+     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+     
      <!--scripts-->   
      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
@@ -70,7 +71,8 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
+     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
+      
     </head>
     <body>
     <!--Add  Gantt control here-->
@@ -87,10 +89,12 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 {% highlight html %}
 
     <body>
-    <!--Add  Gantt control here-->
-    <div id="GanttContainer"></div>
+    
+        <!--Add  Gantt control here-->
+    
+        <div id="GanttContainer"></div>
+    
     </body>
-
 
 {% endhighlight %}
 
