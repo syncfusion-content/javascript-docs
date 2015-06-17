@@ -15,7 +15,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -67,7 +67,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 
 <script type="text/javascript">
