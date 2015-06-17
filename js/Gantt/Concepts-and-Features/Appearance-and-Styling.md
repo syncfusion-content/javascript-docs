@@ -107,14 +107,14 @@ You can apply the theme (Gradient lime) to the **Gantt** control by using the st
 
 {% highlight html %}
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-   <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-    <title>Getting Started with Gantt Control for JavaScript</title>
-    <!-- style sheet for default theme(gradient lime) -->
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> 
-    //...
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <title>Getting Started with Gantt Control for JavaScript</title>
+        <!-- style sheet for default theme(gradient lime) -->
+        <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> 
+        //...
     </html>
 
 
