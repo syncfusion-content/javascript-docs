@@ -35,50 +35,55 @@ The possible enum values for the gaugePosition are as follows:
 
 * Bottomright
 
+{% highlight html %}
+
+<div style=”float: left” id=”gauge1”></div>
+<div id=" CoreCircularGaugehalfright "> </div>
+
+{% endhighlight %}
 
 
 {% highlight js %}
 
-<div style=”float: left” id=”gauge1”>
-<div id=" CoreCircularGaugehalfright "> </div
-<script type=”text/javascript”>
-$(function () {
-$("#CoreCircularGaugehalfright").ejCircularGauge({
-backgroundColor: "transparent",
 
-// To set dimension of the canvas.
-width: 500, height: 500,
+ $(function () {
+        $("#CoreCircularGaugehalfright").ejCircularGauge({
+            backgroundColor: "transparent",
 
-// To set the value and radius of the canvas frame.
-radius: 100, value: 60,
+            // To set dimension of the canvas.
+            width: 500, height: 500,
 
-// To set the gauge position.
-gaugePosition: "topleft",
+            // To set the value and radius of the canvas frame.
+            radius: 100, value: 60,
 
-// To set the distance from the corner.
-distanceFromCorner:25,
+            // To set the gauge position.
+            gaugePosition: "topleft",
 
-// To set the semicircle frame specifications.
-frame: {
-frameType: 'halfcircle',
-halfCircleFrameStartAngle: 270,
-halfCircleFrameEndAngle: 90
-},
+            // To set the distance from the corner.
+            distanceFromCorner: 25,
 
-// To set the scale specification.
-scales: [{
-startAngle: 270,
-sweepAngle: 180, radius: 100,
-showScaleBar: true, size: 1,
-maximum: 120, majorIntervalValue: 20,
-minorIntervalValue: 10,
-border: {
-width: 0.5,
-}
-}]
-});
-});
-</script>
+            // To set the semicircle frame specifications.
+            frame: {
+                frameType: 'halfcircle',
+                halfCircleFrameStartAngle: 270,
+                halfCircleFrameEndAngle: 90
+            },
+
+            // To set the scale specification.
+            scales: [{
+                startAngle: 270,
+                sweepAngle: 180, radius: 100,
+                showScaleBar: true, size: 1,
+                maximum: 120, majorIntervalValue: 20,
+                minorIntervalValue: 10,
+                border: {
+                    width: 0.5,
+                }
+            }]
+        });
+    });
+
+
 
 
 {% endhighlight %}
