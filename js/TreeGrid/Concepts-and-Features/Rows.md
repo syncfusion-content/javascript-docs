@@ -19,9 +19,7 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
 
 **altRowTemplateID** is used to customize the alternative rows in **TreeGrid**. For this property, ID of the alternative row template is to be provided.
 
-{% highlight html %}
-
-      <style>
+{% highlight css %}
 
       .e-treegrid .e-selectionbackground {
         background-color: #CED8F6;
@@ -33,7 +31,9 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
         border-style: solid;
        }
 
-      </style>
+{% endhighlight %}
+
+{% highlight html %}
 
       <script id="rowTemplateScript" type="text/x-jsrender">
 
