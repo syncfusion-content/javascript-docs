@@ -323,7 +323,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JS]**
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
