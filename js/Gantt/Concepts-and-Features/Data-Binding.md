@@ -21,60 +21,37 @@ The following code example shows how to bind the hierarchical local data into th
 
 {% highlight js %}
 
-        //data source for ejGantt control
-
-        var taskDetails = [{
-            taskID: 1,
-            taskName: "Design",
-            startDate: new Date("02/10/2014"),
-            endDate: new Date("02/14/2014"),
-            baselineStartDate: new Date("02/10/2014"),
-            baselineEndDate: new Date("02/12/2014"),
+    var taskDetails = [{
+            taskID: 1,
+            taskName "Design",
+            startDate:new Date("02/10/2014"),
+            endDate:new Date("02/14/2014"),
+            baselineStartDate:new Date("02/10/2014"),
+            baselineEndDate:new Date("02/12/2014"),
             duration: 5,subtasks: [
             { 
                 taskID: 2,
-                taskName: "Software Specification",
-                startDate: new Date("02/10/2014"),
-                endDate: new Date("02/12/2014"),
-                baselineStartDate: new Date("02/10/2014"),
-                baselineEndDate: new Date("02/12/2014"),
+                taskName:"Software Specification",
+                startDate:new Date("02/10/2014"),
+                endDate:new Date("02/12/2014"),
+                baselineStartDate:new Date("02/10/2014"),
+                baselineEndDate:new Date("02/12/2014"),
                 duration: 4,
-                progress: "60",
+                progress:"60",
                 resourceId: [2]
             },
             {
                 taskID: 3,
-                taskName: "Develop prototype",
-                startDate: new Date("02/10/2014"),
-                endDate: new Date("02/12/2014"), 
-                baselineStartDate: new Date("02/10/2014"),
-                baselineEndDate: new Date("02/12/2014"),
+                taskName:"Develop prototype",
+                startDate:new Date("02/10/2014"),
+                endDate:new Date("02/12/2014"), 
+                baselineStartDate:new Date("02/10/2014"),
+                baselineEndDate:new Date("02/12/2014"),
                 duration: 4,
-                progress: "70",
+                progress:"70",
                 resourceId: [3]
             },
-            { 
-                taskID: 4,
-                taskName: "Get approval from customer",
-                startDate: new Date("02/12/2014"),
-                endDate: new Date("02/14/2014"),
-                baselineStartDate: new Date("02/10/2014"),
-                baselineEndDate: new Date("02/12/2014"),
-                duration: 2,
-                progress: "80",
-                predecessor: "3FS",
-                resourceId: [1]
-            },
-            {
-                taskID: 5,
-                taskName: "Design complete",
-                startDate: new Date("02/14/2014"),
-                endDate: new Date("02/14/2014"),
-                baselineStartDate: new Date("02/10/2014"),
-                baselineEndDate: new Date("02/12/2014"),
-                duration: 0,
-                predecessor: "4FS"
-            }
+            //...
             ]
         }];
 
@@ -83,14 +60,14 @@ The following code example shows how to bind the hierarchical local data into th
         $("#GanttContainer").ejGantt(
         {
             dataSource: taskDetails,
-            taskIdMapping: "taskID",
-            taskNameMapping: "taskName",
-            scheduleStartDate: "02/01/2014",
-            scheduleEndDate: "03/14/2014",
-            startDateMapping: "startDate",
-            durationMapping: "duration",
-            progressMapping: "progress",
-            childMapping: "subtasks",
+            taskIdMapping:"taskID",
+            taskNameMapping:"taskName",
+            scheduleStartDate:"02/01/2014",
+            scheduleEndDate:"03/14/2014",
+            startDateMapping:"startDate",
+            durationMapping:"duration",
+            progressMapping:"progress",
+            childMapping:"subtasks",
             treeColumnIndex: 1
         });
     });
