@@ -15,20 +15,20 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img1.png" Caption="Speedometer Gauge"%}
 
-1. First create an **HTML** file and add references to the required libraries.
+* First create an **HTML** file and add references to the required libraries.
 
-{% highlight js %}
+{% highlight html %}
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta charset="utf-8" />
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-<!--scripts-->
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js"></script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js">                                                               </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js">                                                               </script>
 </head>
 
 
@@ -37,31 +37,31 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 
 
 
-2. Add a div element that acts as a container for **ejCircularGauge** widget.
+* Add a div element that acts as a container for **ejCircularGauge** widget.
 
-{% highlight js %}
+{% highlight html %}
 
 
 <body>
-<div id="CircularGauge1"></div>
+    <div id="CircularGauge1"></div>
 </body>
-
+</html>
 
 
 {% endhighlight %}
 
 
 
-3. Create the **ejCircularGauge** widget as follows,
+* Create the **ejCircularGauge** widget as follows,
 
 {% highlight js %}
 
-<script type="text/javascript">
+
 $(function () {
 $("#CircularGauge1").ejCircularGauge();
 });
-</script>
-</html>
+
+
 
 
 {% endhighlight %}
