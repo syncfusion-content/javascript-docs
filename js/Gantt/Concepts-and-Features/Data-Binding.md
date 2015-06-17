@@ -33,21 +33,21 @@ The following code example shows how to bind the hierarchical local data into th
             { 
                 taskID: 2,
                 taskName:"Software Specification",
-                startDate:new Date("02/10/2014"),
-                endDate:new Date("02/12/2014"),
-                baselineStartDate:new Date("02/10/2014"),
-                baselineEndDate:new Date("02/12/2014"),
+                startDate:new Date("02/10/2014"),
+                endDate:new Date("02/12/2014"),
+                baselineStartDate:new Date("02/10/2014"),
+                baselineEndDate:new Date("02/12/2014"),
                 duration: 4,
                 progress:"60",
-                resourceId: [2]
+                resourceId:[2]
             },
             {
                 taskID: 3,
                 taskName:"Develop prototype",
-                startDate:new Date("02/10/2014"),
-                endDate:new Date("02/12/2014"), 
-                baselineStartDate:new Date("02/10/2014"),
-                baselineEndDate:new Date("02/12/2014"),
+                startDate:new Date("02/10/2014"),
+                endDate:new Date("02/12/2014"), 
+                baselineStartDate:new Date("02/10/2014"),
+                baselineEndDate:new Date("02/12/2014"),
                 duration: 4,
                 progress:"70",
                 resourceId: [3]
