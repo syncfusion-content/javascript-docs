@@ -18,7 +18,7 @@ You can add Bar Pointer collection directly to the scale object. Refer the follo
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -70,7 +70,7 @@ Bar pointer value is also important element in the **Linear Gauge** as it indica
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -130,7 +130,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -192,7 +192,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -251,7 +251,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
