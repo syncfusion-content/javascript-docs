@@ -53,7 +53,7 @@ You can also set the width and height of the **Chart** in percentage. The Chart 
             size: { width: "80%", height: "90%" },
         });
         
-{% highlight js %}        
+{% endhighlight %}      
 
 
 
