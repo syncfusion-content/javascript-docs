@@ -19,7 +19,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="tooltipGauge"></div>
 <script type=”text/javascript”>
 $(function () {
@@ -77,7 +77,7 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 <div id=”Tooltip” style=”height: 60px; display: none;”>
 <div id=”icon”>
