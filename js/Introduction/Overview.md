@@ -12,9 +12,7 @@ documentation: ug
 **Syncfusion** **Essential Studio for JavaScript** has emerged as a combination of both **HTML** and **jQuery** based widget package, which provides several number of widgets very similar to the jQuery plug-in style, so that the same jQuery-like syntax can be followed in every actions. 
 
 
-
 It includes more than **80+** components (web and mobile) for both web and mobile application development which are categorized as follows,
-
 
 
 <table>
@@ -30,7 +28,7 @@ Grid</td><td colspan = "3">
 <td colspan = "3">
 <a href="http://help.syncfusion.com/ug/js/Documents/overview58.htm">TreeGrid</a></td></tr>
 <tr>
-<td rowspan = "5">
+<td rowspan = "4">
 DataVisualization</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview9.htm">Chart</a></td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview23.htm">Gantt</a></td><td>
@@ -50,13 +48,7 @@ DataVisualization</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview41.htm">RangeNavigator</a></td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview5.htm">Barcode</a></td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview53.htm">TagCloud</a></td></tr>
-<tr>
-<td>
-</td><td>
-</td><td>
-</td></tr>
-<tr>
-<td>
+<tr><td>
 Schedule</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview47.htm">Schedule</a></td><td colspan = "2">
 </td></tr>
@@ -80,8 +72,12 @@ Editors</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview55.htm">TimePicker</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview15.htm">DateTimePicker</a><br/><a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">PercentageTextBox</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">NumericTextbox </a><br/><a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">CurrencyTextBox</a></td></tr>
+<a href="http://help.syncfusion.com/ug/js/Documents/overview15.htm">DateTimePicker</a></td><td colspan = "2">
+<a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">NumericTextbox </a></td></tr>
+<tr>
+<td>
+<a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">PercentageTextBox</a></td><td colspan = "2">
+<a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">CurrencyTextBox</a></td></tr>
 <tr>
 <td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview4.htm">AutoComplete</a></td><td colspan = "2">
@@ -95,9 +91,20 @@ Editors</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview49.htm">Slider</a></td><td colspan = "2">
 <a href="http://help.syncfusion.com/ug/js/Documents/overview7.htm">Button</a></td></tr>
 <tr>
+<td></td>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview61.htm">UploadBox</a><br/><a href="http://help.syncfusion.com/ug/js/Documents/overview50.htm">Splitbutton</a><br/><a href="http://help.syncfusion.com/ug/js/Documents/overview8.htm">Captcha</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview29.htm">MaskEdit</a><br/><a href="http://help.syncfusion.com/ug/js/Documents/overview56.htm">Togglebutton</a><br/><a href="http://help.syncfusion.com/ug/js/index.html">Radiobutton</a>                    <a href="http://help.syncfusion.com/ug/js/index.html">Checkbox</a></td></tr>
+<a href="http://help.syncfusion.com/ug/js/Documents/overview61.htm">UploadBox</a></td><td colspan = "2">
+<a href="http://help.syncfusion.com/ug/js/Documents/overview29.htm">MaskEdit</a></td></tr>
+<tr><td></td>
+<td>
+<a href="http://help.syncfusion.com/ug/js/Documents/overview50.htm">Splitbutton</a></td><td colspan = "2">
+<a href="http://help.syncfusion.com/ug/js/Documents/overview56.htm">Togglebutton</a></td></tr>
+<tr><td></td>
+<td>
+<a href="http://help.syncfusion.com/ug/js/Documents/overview8.htm">Captcha</a></td><td>
+<a href="http://help.syncfusion.com/ug/js/index.html">Radiobutton</a></td><td>
+<a href="http://help.syncfusion.com/ug/js/index.html">Checkbox</a></td></tr>
+
 <tr>
 <td rowspan = "4">
 Navigation</td><td>
@@ -136,14 +143,12 @@ Business Intelligence</td><td>
 <tr>
 <td>
 Reporting</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview43.htm">ReportViewer</a></td><td colspan = "2">
-</td></tr>
+<a href="http://help.syncfusion.com/ug/js/Documents/overview43.htm">ReportViewer</a></td></tr>
 <tr>
 <td>
 Others</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/gettingstarted5.htm">Calculate</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/index.html">DataManager</a></td><td>
-</td></tr>
+<a href="http://help.syncfusion.com/ug/js/index.html">DataManager</a></td></tr>
 </table>
 
 All our web UI widgets supports the below listed major **key features** – which are more essential in building the web application in recent days.
