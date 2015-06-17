@@ -23,7 +23,7 @@ You can assign the complete contents in “United States of America.json” file
 
 **[usa.js]**
 
-{% highlight js %}
+{% highlight javascript %}
 
 var usMap = //Paste all the content copied from the JSON file// 
 
