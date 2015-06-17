@@ -35,7 +35,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>   
 <script type="text/javascript">
 $(function () {
@@ -93,7 +93,7 @@ _Linear Gauge with scales_
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>   
    <script type="text/javascript">
  $(function () {
@@ -156,7 +156,7 @@ _Linear Gauge with customized scale border_
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -233,7 +233,7 @@ For rectangular scale type, the scale renders with rectangular structure. Refer 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -286,7 +286,7 @@ For rounded rectangular scale type, the scale renders as rectangular structure b
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -343,7 +343,7 @@ For thermometer scale type, the scale renders as thermometer structure with roun
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -393,7 +393,7 @@ You can set multiple scales for a single **Linear Gauge** control by using an ar
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
