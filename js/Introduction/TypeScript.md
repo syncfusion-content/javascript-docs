@@ -11,26 +11,24 @@ documentation: ug
 
 The **Essential JavaScript** package provides the default type definition file (**ej.widgets.all.d.ts**) to include the support for **type-checking** (checking the type of the input value entered by the user for a particular widget’s API is valid or not) while initializing any of the Syncfusion widget. This file holds the type definition for almost all the widgets available within Syncfusion. The important thing that you need to do is to copy the ej.widgets.all.d.ts file into your project and then need to refer it in your TypeScript application (**app.ts** file), so that you will get the intelliSense support and also the compile time type-checking.
 
-Apart from the type-checking, it also supports the other important concepts like Classes and modules.
+Apart from the type-checking, it also supports the other important concepts like **Classes** and **Modules**.
 
 The installed location on your machine where you can be availed with **ej.widgets.all.d.ts** file is as follows,
 
 <table>
 <tr>
 <td>
-**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
 </td>
 </tr>
 <tr>
 <td>
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-<br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
 </td>
 </tr>
 </table>
-<br/>
 
 Apart from the above specified file (**ej.widgets.all.d.ts**), it is also necessary to make use of the **jquery.d.ts** file in your TypeScript application, which can be downloaded from [here](https://github.com/borisyankov/DefinitelyTyped).
 
@@ -42,11 +40,11 @@ To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below men
 
 * TypeScript 1.0 – It is available as built-in with Visual Studio 2013, but the Visual Studio 2012 users’ needs to download it from [here](https://visualstudiogallery.msdn.microsoft.com/fa041d2d-5d77-494b-b0ba-8b4550792b4d).
 
-* Microsoft Web Essential (for [Visual Studio 2012](http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6) / for [Visual Studio 2013](http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361))
+* Microsoft Web Essential (for [Visual Studio 2012](http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6) / [Visual Studio 2013](http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361))
 
 ### Getting Started
 
-* Start Visual Studio 2013 and Create a new TypeScript Application from **File** -> **New** -> **Project** and save it with a meaningful name****as below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
+* Start Visual Studio 2013 and Create a new TypeScript Application from **File** -> **New** -> **Project** and save it with a meaningful name as shown below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
 
 ![](TypeScript_images/TypeScript_img1.png)
 {:.image }
