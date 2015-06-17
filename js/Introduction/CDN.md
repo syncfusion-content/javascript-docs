@@ -12,7 +12,6 @@ documentation: ug
 The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the Scripts and Stylesheets, so that the users can have easier access to the Syncfusion JavaScript components. 
 
 
-
 > _**Note: All the provided cdn links can be accessed either through** http_ _**or**_ _https_**.**
 
 
@@ -27,7 +26,7 @@ The basic syntax follows below,
 <table>
 <tr>
 <td>
-http://cdn.syncfusion.com/js/assets/external/ **[fileName]**
+http://cdn.syncfusion.com/js/assets/external/<b>[fileName]</b>
 </td>
 </tr>
 <tr>
@@ -37,7 +36,6 @@ http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js
 </td>
 </tr>
 </table>
-</br>
 
 <table>
 <tr>
@@ -104,18 +102,17 @@ The **CDN** script files are maintained for each version of the **Essential S
 <table>
 <tr>
 <td>
-http://cdn.syncfusion.com/[ **version** ]/js/web/[ **fileName** ]
+http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>fileName</b>]
 </td>
 </tr>
 <tr>
 <td>
 </br>
-For example, to access the **ej.web.all.min.js** file in **13.1.0.21** version – 
+For example, to access the <b>ej.web.all.min.js</b> file in <b>13.1.0.21</b> version – 
  http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js
 </td>
 </tr>
 </table>
-</br>
 
 <table>
 <tr>
@@ -150,19 +147,19 @@ Provides complete support for Knockout JS</td><td>
 <a href="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js">http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js</a></td></tr>
 </table>
 
-</br>
+
 The Knockout and angular dependencies can be accessed through the following syntax,
 
 <table>
 <tr>
 <td>
-http://cdn.syncfusion.com/[ **version** ]/js/[ **fileName** ]
+http://cdn.syncfusion.com/[<b>version</b>]/js/[<b>fileName</b>]
 </td>
 </tr>
 <tr>
 <td>
 <br/>
-For example, to access the **ej.widget.angular.min.js** file in **13.1.0.21** version – 
+For example, to access the <b>ej.widget.angular.min.js</b> file in <b>13.1.0.21</b> version – 
  http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js
 </td>
 </tr>
@@ -176,18 +173,18 @@ The CDN links for all the css files (both core & theme related) are depicted tog
 <table>
 <tr>
 <td>
-http://cdn.syncfusion.com/[ **version** ]/js/web/[ **fileName** ] – Core (ej.widgets.core.min.css)
+http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>fileName</b>] – Core (ej.widgets.core.min.css)
 </td>
 </tr>
 <tr>
 <td>
 <br/>
-http://cdn.syncfusion.com/[ **version** ]/js/web/[ **theme-name** ]/[ **fileName** ] – Theme related
+http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>theme-name</b>]/[<b>fileName</b>] – Theme related
 </td>
 </tr>
 </table>
 
-<br/>
+
 <table>
 <tr>
 <td>
@@ -266,7 +263,7 @@ To make the widget responsive, it is necessary to refer this css file.</td><td>
 <a href="http://cdn.syncfusion.com/13.1.0.21/js/web/responsive-css/ej.responsive.css">http://cdn.syncfusion.com/13.1.0.21/js/web/responsive-css/ej.responsive.css</a></td></tr>
 </table>
 
-<br/>
+
 If in case, the user wants to refer the core and theme files of a specific theme separately (instead of the combined version of **ej.web.all.min.css** reference), then they can go with the below specified theme reference method. 
 
 Here – For example, we have depicted another way of theme reference for the **Flat-Azure** and **Flat-Azure Dark** themes in the below table. Likewise, you can refer for any of the 13 available themes (just by referring the required **ej.theme.min.css** available under each of the theme folders along with the widget core file).
