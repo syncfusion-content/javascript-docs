@@ -118,7 +118,7 @@ var population_data = [
 
 
 
-> _**Note: Population data**_ _**is**_ _**referred**_ _**from**_ [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population)_**.**_
+> _**Note:**_ Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 
 The final **HTML** file is illustrated in the following code sample.
 
@@ -346,7 +346,7 @@ The following screenshot displays labels in a **TreeMap** control.
 
 {% include image.html url="/js/TreeMap/Getting-Started_images/Getting-Started_img6.png" Caption="TreeMap with labels"%}
 
-> _**Note: Population data is referred from**_ [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population)_**.**_
+> _**Note:**_ Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 
 
 
