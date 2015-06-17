@@ -17,7 +17,6 @@ Font style and color of the label text is customized with the help of **font** a
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
         primaryXAxis: { font: { fontFamily: "Algerian", fontWeight: "lighter", fontStyle: "Italic", size: "14px", color: "red" } },
@@ -34,11 +33,10 @@ $("#OlapChart1").ejOlapChart({
 
 **Rotating Axis Labels**
 
-You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the **label rotation** property.
+You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the **labelRotation** property.
 
 {% highlight js %}
 
-[JS]
 $("#OlapChart1").ejOlapChart({ url: "../wcf/OlapChartService.svc", 
 primaryXAxis: { labelRotation: 45 }
 });

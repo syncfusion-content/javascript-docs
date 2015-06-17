@@ -71,33 +71,29 @@ The following steps explains you to enable keyboard interaction for a dropdown t
 
 {% highlight html %}
 
-**[HTML]**
 
-               <input type="text" id="dropdowmlist" accesskey="j"/>
-           <div id="list">
-               <ul>
-                 <li>Art</li>
-                 <li>Architecture</li>
-                 <li>Biography</li>
-                 <li>comics</li>
-                 <li>Sports</li>
-                 <li>Science</li>
-            </ul>
-
-           </div>
+       <input type="text" id="dropdowmlist" accesskey="j"/>
+       <div id="list">
+           <ul>
+             <li>Art</li>
+             <li>Architecture</li>
+             <li>Biography</li>
+             <li>comics</li>
+             <li>Sports</li>
+             <li>Science</li>
+           </ul>
+       </div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Render Dropdownlist control
 <script>
+    // Render Dropdownlist control
     $('#dropdownlist”).ejDropDownList({
                 width: 200,
                 targetID: "list"
-            });
+    });
 </script>
 
 {% endhighlight %}

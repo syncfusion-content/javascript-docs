@@ -19,7 +19,6 @@ The following code example is used to render the **Rating** control without **to
 
 {% highlight html %}
 
-[HTML]
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -31,9 +30,12 @@ The following code example is used to render the **Rating** control without **to
             </tr>
         </table>
     </div>
+    
+{% endhighlight %}
 
-[JS]
 // Add the following script to render Rating without Tooltip.
+
+{% highlight js %}
 
 <script type="text/javascript">
      $("#rating").ejRating({ showTooltip:false });
@@ -60,13 +62,14 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight html %}
 
-[HTML]
 <div style="margin-top: 0px;">
         <h4>Rating:</h4>
         <input id="rating" type="text" class="rating" />
  </div>
-
-[JS]
+ 
+ {% endhighlight %}
+ 
+{% highlight js %}
 // Add the following script to render Rating with customized shapeWidth and shapeHeight.
 
 <script type="text/javascript">
@@ -81,7 +84,6 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight css %}
 
-[CSS]
 <style type="text/css">
         .e-rating
 {
@@ -169,7 +171,6 @@ The following code example is used to render the **Rating** control with **custo
 
 {% highlight html %}
 
-**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -185,9 +186,8 @@ The following code example is used to render the **Rating** control with **custo
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight js %}
 
-**[JS]**
 
 // Add the following script to render Rating with customized style.
 
@@ -201,7 +201,6 @@ The following code example is used to render the **Rating** control with **custo
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css">
         .custom {
             background-color: greenyellow;

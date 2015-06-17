@@ -14,14 +14,14 @@ documentation: ug
 {% highlight js %}
 
 
-$("#GanttContainer").ejGantt({
-    //...
-    holidays: [ {
-        day: "2/11/2014",
-        label: " Public holiday",
-        background: "yellowgreen "
-    }]
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        holidays: [ {
+            day: "2/11/2014",
+            label: " Public holiday",
+            background: "yellowgreen "
+        }]
+    });
 
 
 {% endhighlight %}

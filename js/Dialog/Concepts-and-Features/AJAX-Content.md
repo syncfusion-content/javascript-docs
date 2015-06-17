@@ -19,27 +19,24 @@ The following steps explains you the implementation of **AJAX** content in the *
 
 {% highlight html %}
 
-**[HTML]**
 
-     <div id="ajaxDialog">
-     </div>
+     <div id="ajaxDialog"> </div>
+     
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Sets the contentUrl from the file reference path and sets the contentType as ajax. The default value of contentUrl and contentType are null
-    <script type="text/javascript">
-        $("#ajaxDialog").ejDialog(
-              {
-                  contentUrl: "Content/twitter.html",
-                  contentType: "ajax",
-                  title: "Twitter",
-                  width: 500,
-              });
-    </script>
+<script type="text/javascript">
+// Set the contentUrl from the file reference path and set the contentType as ajax. The default value of contentUrl and contentType are null
+    $("#ajaxDialog").ejDialog(
+          {
+              contentUrl: "Content/twitter.html",
+              contentType: "ajax",
+              title: "Twitter",
+              width: 500,
+          });
+</script>
 
 {% endhighlight %}
 
@@ -49,9 +46,8 @@ The following steps explains you the implementation of **AJAX** content in the *
 
 {% highlight html %}
 
-**[twitter.html]**
-
 <!DOCTYPE html>
+<!-- twitter.html -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
@@ -68,7 +64,6 @@ The following steps explains you the implementation of **AJAX** content in the *
         }
 
         .comments-list {
-            /* background-color: #EFEFEF; */
             height: 210px;
         }
 

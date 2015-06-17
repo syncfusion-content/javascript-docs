@@ -21,7 +21,7 @@ The following code example is used to add the header image for the root **Tab** 
 
 {% highlight html %}
 
-  **[HTML]**
+ 
   
      <div id="dishtype" style="width: 650px">
         <ul>
@@ -42,7 +42,6 @@ The following code example is used to add the header image for the root **Tab** 
 
 {% highlight js %}
 
-   **[JS]**
    
     // Add the following script for Tab render with customizes header image.
     <script type="text/javascript">
@@ -58,7 +57,6 @@ The following code example is used to add the header image for the root **Tab** 
 
 {% highlight css %}
 
- **[CSS]**
 
     <style type="text/css" class="cssStyles">
             .dish {
@@ -99,7 +97,6 @@ The following code example is used to render the **Tab** widget with **Rounded C
 
 {% highlight html %}
 
- **[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -145,7 +142,7 @@ The following code example is used to render the **Tab** widget with enable/disa
 * Add the following **HTML** to render **Tab** with enable/disable.
 {% highlight html %}
 
-    [HTML]
+  
     <div id="dishtype" style="width: 650px">
         <ul>
             <li><a href="#pizza">Pizza Menu</a></li>
@@ -165,7 +162,7 @@ The following code example is used to render the **Tab** widget with enable/disa
 
 {% highlight js %}
 
-    [JS]
+  
     // Add the following script to render Tab with disabled format.
     
     <script type="text/javascript">
@@ -193,8 +190,6 @@ The following code example is used to render the **Tab** widget with **Reload** 
 
 {% highlight html %}
 
-
-  **[HTML]**
         
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -215,7 +210,6 @@ The following code example is used to render the **Tab** widget with **Reload** 
 
 {% highlight js %}
 
-[JS]
 // Add the following script to render Tab with Reload icon.
     <script type="text/javascript">
             $(function () {         
@@ -243,7 +237,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight html %}
 
- **[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -264,7 +257,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight js %}
 
-[JS]
 // Add the following script to render Tab with customized collapsible mode.
 <script type="text/javascript">
         $(function () {         
@@ -294,7 +286,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -316,7 +307,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight js %}
 
-    [JS]
     
     // Add the following script to render Tab with customized height and height adjust mode.
     <script type="text/javascript">
@@ -347,7 +337,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -369,7 +358,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight js %}
 
-    [JS]
     // Add the following script to render Tab with customized width.
     <script type="text/javascript">
             $(function () {         
@@ -428,7 +416,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -449,7 +436,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight js %}
 
-   **[JS]**
    
     // Add the following script to render Tab with customized style.
     <script type="text/javascript">
@@ -464,7 +450,6 @@ The following code example is used to render the **Tab** widget with customized 
 
 {% highlight css %}
 
-  **[CSS]**
     <style type="text/css">
             .custom {
                 width:650px;

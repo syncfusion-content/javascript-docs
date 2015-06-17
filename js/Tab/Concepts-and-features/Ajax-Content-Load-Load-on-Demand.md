@@ -23,7 +23,6 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -62,7 +61,6 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight js %}
 
- [JS]
 
 // Add the following script to render sub Tab with Ajax content.
 
@@ -82,7 +80,6 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight html %}
 
-**[HTML]**
 
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
@@ -105,7 +102,6 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight html %}
 
-**[HTML]**
 
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">

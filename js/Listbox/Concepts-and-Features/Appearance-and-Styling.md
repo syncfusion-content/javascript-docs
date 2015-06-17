@@ -27,7 +27,6 @@ The following steps explains you the configuration of **height** & **width** pro
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -38,7 +37,6 @@ The following steps explains you the configuration of **height** & **width** pro
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Initialize the control in JavaScript 
 <script type="text/javascript">
@@ -75,7 +73,6 @@ The following steps explains you the configuration of Rounded corner of the **Li
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -86,7 +83,6 @@ The following steps explains you the configuration of Rounded corner of the **Li
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Initialize the control in JavaScript
 <script type="text/javascript">

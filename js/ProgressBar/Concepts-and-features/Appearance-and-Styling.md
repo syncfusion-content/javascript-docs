@@ -19,8 +19,6 @@ The following steps explain you on how to adjust the **ProgressBar** size.
 
 {% highlight html %}
 
-**[HTML]**
-
             <div class="control">
             <div id="progressbar"></div>
             </div>
@@ -29,7 +27,6 @@ The following steps explain you on how to adjust the **ProgressBar** size.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 <script type="text/javascript">
     $(function () {
@@ -61,7 +58,6 @@ The following steps explain the configuration of the **Custom text** for the **P
 
 {% highlight html %}
 
-**[HTML]**
 
             <div class="control">
             <div id="progressbar"></div>
@@ -71,7 +67,6 @@ The following steps explain the configuration of the **Custom text** for the **P
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add Custom Text for the ProgressBar widget.
 <script type="text/javascript">
@@ -132,8 +127,6 @@ The following code example is used to render the **ProgressBar** widget with cus
 
 {% highlight html %}
 
-**[HTML]**
-
             <div class="control">
             <div id="progressbar"></div>
             </div>
@@ -142,7 +135,6 @@ The following code example is used to render the **ProgressBar** widget with cus
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the class for the ProgressBar Widget.
 <script type="text/javascript">
@@ -166,7 +158,6 @@ The following code example is used to render the **ProgressBar** widget with cus
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
     .custom .e-progress {

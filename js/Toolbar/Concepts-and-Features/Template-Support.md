@@ -15,7 +15,6 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="toolbarcontent">
     <ul>
@@ -43,7 +42,6 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 {% highlight js %}
 
-**[JS]**
 
 <script type="text/javascript">
     $(function () {

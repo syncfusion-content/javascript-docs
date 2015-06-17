@@ -17,18 +17,14 @@ The following steps explain you how to get the **Date Range** of **DatePicker** 
 
   {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to set the Date Range of DatePicker widget
 <script type="text/javascript">
+  // Add the code to set the Date Range of DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({

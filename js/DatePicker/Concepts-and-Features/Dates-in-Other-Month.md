@@ -21,19 +21,14 @@ The following steps explain you how to get the current month date alone
 
   {% highlight html %}
   
-  **[HTML]**
-  
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to get the current month date
-
 <script type="text/javascript">
+  // Add the code to get the current month date
         $(function () {
             // declaration
              $("#datepicker").ejDatePicker({

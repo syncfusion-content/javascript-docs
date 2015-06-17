@@ -230,7 +230,7 @@ The following screenshot displays the MACD technical indicator
 
 ## Relative Strength Index Indicator
 
-**RSI** is one of the technical indicator supported by **ejChart**. It contains three lines namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal band is calculated based on the **RSI** formula. You can also****customize the width and color of the upper band, lower band and signal line with tooltip and animation options. 
+**RSI** is one of the technical indicator supported by **ejChart**. It contains three lines namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal band is calculated based on the **RSI** formula. You can also customize the width and color of the upper band, lower band and signal line with tooltip and animation options. 
 
 {% highlight js %}
 

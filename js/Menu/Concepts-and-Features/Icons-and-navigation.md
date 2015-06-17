@@ -17,7 +17,6 @@ Icons are the images that is displayed in the **Menu** control. To specify the m
 
 {% highlight html %}
 
-**[HTML]**
         
 <div class="content-container-fluid">
     <div class="row">
@@ -31,7 +30,6 @@ Icons are the images that is displayed in the **Menu** control. To specify the m
 
 {% highlight js %}
 
-**[Javascript]**
 
 // Initialize the Menu control in JavaScript.
 
@@ -72,7 +70,6 @@ Icons are the images that is displayed in the **Menu** control. To specify the m
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
         #menujson {
@@ -126,7 +123,6 @@ Navigation in Menu control is the default usage to navigate into the other web p
 
 {% highlight html %}
 
-**[HTML]**
         
 <div>
     <ul id="weblink">
@@ -165,7 +161,6 @@ Navigation in Menu control is the default usage to navigate into the other web p
 
 {% highlight js %}
 
-**[Javascript]**
  
 // Add the following code in your script section.
 

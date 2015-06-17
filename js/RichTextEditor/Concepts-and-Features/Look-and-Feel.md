@@ -50,7 +50,6 @@ Add the following code in your **HTML** page to initialize the **RTE** with grad
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="rte">
         <textarea id="rteSample"></textarea>
@@ -60,7 +59,6 @@ Add the following code in your **HTML** page to initialize the **RTE** with grad
 
 {% highlight js %}
 
-**[JavaScript]**
 // Add the following code in the script section to initialize the RTE with gradient-azure-dark theme.
 <script>
       $(function(){
@@ -82,7 +80,6 @@ You can override the existing styles under the theme style sheet by using this p
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="rte">
         <textarea id="rteSample"></textarea>
@@ -92,7 +89,6 @@ You can override the existing styles under the theme style sheet by using this p
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section to render the RTE with cssClass “light-Pink”.
 <script>
@@ -109,7 +105,6 @@ In the following style sheet, the active theme style sheet file has been overrid
 
 {% highlight css %}
 
-**[Style]**
 <style>
     .light-Pink .e-toolbar {
         color: black;

@@ -22,7 +22,6 @@ The following steps explain the configuration of **multipleFilesSelection** prop
 
 {% highlight html %}
 
-**[HTML]**
 
       <div class="control">
         <div id="Uploadbox"></div>
@@ -32,7 +31,7 @@ The following steps explain the configuration of **multipleFilesSelection** prop
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Initialize the control in JavaScript.
 <script type="text/javascript">

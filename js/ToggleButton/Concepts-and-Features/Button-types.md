@@ -36,7 +36,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
     <table>
         <tr>
@@ -62,7 +61,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight js %}
 
-**[JavaScript]**
 
 //Initialize the control in JavaScript
 

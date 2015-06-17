@@ -115,7 +115,7 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 {% highlight html %}
 
-**[HTML]**
+
 
     <div class="control">
 
@@ -248,7 +248,6 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="ToolbarItem">
 
@@ -409,7 +408,6 @@ After updating the Toolbar items with their **CSS** styles, you can render the t
 
 {% highlight js %}
 
-**[JavaScript]**
 
   <script type="text/javascript">
 
@@ -539,7 +537,6 @@ So far, you have added the required toolbar items and configured its appearance.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 <script type="text/javascript">
 

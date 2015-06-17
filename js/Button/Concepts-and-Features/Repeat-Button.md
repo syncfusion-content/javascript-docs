@@ -18,7 +18,6 @@ The following steps explains you the details about rendering the **Repeat Button
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="control">    
         <div class="align">                        
@@ -36,8 +35,7 @@ The following steps explains you the details about rendering the **Repeat Button
 
 {% highlight js %}
 
-**[JavaScript]**
-// Initialize the control in JavaScript
+
 <script type="text/javascript">
     $(function () {
         $("#button_repeat").ejButton({
@@ -63,7 +61,6 @@ The following steps explains you the details about rendering the **Repeat Button
 
 {% highlight css %}
 
-**[CSS]**
 <style>
         .align {
             display: table-cell;

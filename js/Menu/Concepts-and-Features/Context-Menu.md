@@ -19,8 +19,6 @@ In the following example, a context menu for the division containing text is cre
 
 {% highlight html %}
 
-**[HTML]**
-
    <div>
         <div id="target" class="textarea">
             HTML is written in the form of HTML elements consisting of tags enclosed in angle
@@ -47,7 +45,6 @@ In the following example, a context menu for the division containing text is cre
 
 {% highlight js %}
 
-**[Javascript]**
    
 // Add the following code in your script section.
 
@@ -68,7 +65,6 @@ Add the following code in your style section.
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
 
@@ -110,7 +106,6 @@ Hides the context menu control. Add the following script code in the sample in o
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
 
@@ -151,7 +146,6 @@ Shows the context menu control. Add the following script code in the sample in o
 
 {% highlight js %}
 
-**[Javascript]**
 
 <script type="text/javascript">
 

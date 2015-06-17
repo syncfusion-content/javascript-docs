@@ -31,7 +31,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -62,7 +62,7 @@ The Scale border is modified with the object called **border**. It has two borde
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -99,7 +99,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -135,7 +135,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -188,7 +188,7 @@ You can set **Multiple scales** for a single **Circular Gauge** control by using
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {

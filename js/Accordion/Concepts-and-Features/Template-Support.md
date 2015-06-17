@@ -13,7 +13,6 @@ In **JavaScript**, you can load the contents or **HTML** elements directly insid
 
 {% highlight html %}
 
-   **[HTML]**
    
     <div id="pizzaMenu" style="width: 500px">
         <h3>
@@ -55,9 +54,11 @@ In **JavaScript**, you can load the contents or **HTML** elements directly insid
 
 {% highlight js %}
 
-   **[SCRIPT]**
+<script>
     
         $("#pizzaMenu").ejAccordion({ enableMultipleOpen: true });
+        
+</script>
 
 {% endhighlight %}
 

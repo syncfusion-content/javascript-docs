@@ -17,7 +17,7 @@ The following steps explain how you can enable the **showCheckbox** property for
 
 {% highlight html %}
 
-**[HTML]**
+
 
 <ul id="treeView">
         <li class="expanded">
@@ -70,7 +70,7 @@ The following steps explain how you can enable the **showCheckbox** property for
 
 {% highlight js %}
 
-[JavaScript]
+
 
 // Enable showCheckbox for TreeView control as follows.
 <script type="text/javascript">
@@ -90,9 +90,9 @@ To overcome the default functionality of **TreeView**, when you don’t want the
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <script type="text/javascript">
-    $("#treeView").ejTreeView({ **autoCheckParentNode**: false,showCheckbox: true});
+    $("#treeView").ejTreeView({ autoCheckParentNode: false,showCheckbox: true});
 </script>
 
 {% endhighlight %}
@@ -103,9 +103,9 @@ You can specify the **Checked Nodes** in **TreeView** initially by using the pro
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <script type="text/javascript">
-    $("#treeView").ejTreeView({ showCheckbox: true, **checkedNodes**: [1, 2] });
+    $("#treeView").ejTreeView({ showCheckbox: true, checkedNodes: [1, 2] });
 </script>
 
 {% endhighlight %}

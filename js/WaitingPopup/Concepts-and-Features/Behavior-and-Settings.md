@@ -19,7 +19,7 @@ The following steps explains you on how to display the **WaitingPopup** on page 
 
 {% highlight html %}
 
-**[HTML]**
+
 
       <div class="control">               
       <div id="waitingPopUp"></div>            
@@ -30,7 +30,7 @@ The following steps explains you on how to display the **WaitingPopup** on page 
 {% highlight js %}
 
 
-**[JavaScript]**
+
 
 // Configure the WaitingPopup to display automatically on page load as follows.
         <script type="text/javascript">
@@ -50,7 +50,7 @@ The following steps explains you on how to display the **WaitingPopup** on page 
 
 {% highlight css %}
 
-**[css]**
+
 
 <style type="text/css" class="cssStyles">
     #waitingPopUp {
@@ -78,7 +78,7 @@ The following steps explains you to enable / disable popup indicator in **Waitin
 
 {% highlight html %}
 
-**[HTML]**
+
 
       <div class="control">               
     <div id="waitingPopUp"></div>            
@@ -88,7 +88,7 @@ The following steps explains you to enable / disable popup indicator in **Waitin
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // To configure Enable / Disable popup indicator in WaitingPopup, use the following code.
      <script type="text/javascript">
@@ -121,7 +121,7 @@ The following steps explains you to enable / disable popup indicator in **Waitin
 
 {% highlight css %}
 
-**[css]**
+
 
 <style type="text/css" class="cssStyles">
     #waitingPopUp {
@@ -151,7 +151,7 @@ The following steps explains you to show / hide the **WaitingPopup** widget.
 
 {% highlight html %}
 
-**[HTML]**
+
 
       <div class="control">               
       <div id="waitingPopUp"></div>            
@@ -161,7 +161,7 @@ The following steps explains you to show / hide the **WaitingPopup** widget.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Use the following code to Show / Hide WaitingPopup.
     <script type="text/javascript">
@@ -186,7 +186,7 @@ $(function () {
 
 {% highlight css %}
 
-**[css]**
+
 <style type="text/css" class="cssStyles">
     #waitingPopUp {
         height: 320px;

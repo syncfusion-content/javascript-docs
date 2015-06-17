@@ -19,7 +19,6 @@ The **showPreview** property is Boolean type and its default value is true.
 
 {% highlight html %}
 
-**[HTML]**
 
      <input type="text" id="colorPicker" />    
 
@@ -27,7 +26,6 @@ The **showPreview** property is Boolean type and its default value is true.
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {
@@ -51,7 +49,6 @@ The **showRecentColors** property is Boolean type and its default value is false
 
 {% highlight html %}
 
-**[HTML]**
 
      <input type="text" id="colorPicker" />    
 
@@ -59,7 +56,6 @@ The **showRecentColors** property is Boolean type and its default value is false
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {
@@ -84,7 +80,6 @@ The **enableOpacity** property is Boolean type and its default value is true.
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -92,7 +87,6 @@ The **enableOpacity** property is Boolean type and its default value is true.
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {
@@ -117,7 +111,6 @@ The **columns** property is Number type and its default value is 10.
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -125,7 +118,6 @@ The **columns** property is Number type and its default value is 10.
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {

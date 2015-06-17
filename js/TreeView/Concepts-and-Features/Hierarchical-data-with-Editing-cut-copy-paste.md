@@ -17,7 +17,7 @@ The following steps explain how to enable the **allowEditing** property for **Tr
 
 {% highlight html %}
 
-**[HTML]**
+
 <ul id="treeView">
         <li class="expanded">
             Favorites
@@ -69,7 +69,7 @@ The following steps explain how to enable the **allowEditing** property for **Tr
 
 {% highlight js %}
 
-[JavaScript]
+
 // Enable allowEditing for TreeView control as follows.
 <script type="text/javascript">
             $("#treeView").ejTreeView({ allowEditing: true });

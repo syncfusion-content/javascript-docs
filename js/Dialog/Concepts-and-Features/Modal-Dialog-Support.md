@@ -19,7 +19,6 @@ The following steps explains you the implementation of modal dialog.
 
 {% highlight html %}
 
-**[HTML]**
 
      <div id="dialogLoginForm" title="Login Form">
         <table>
@@ -50,16 +49,14 @@ The following steps explains you the implementation of modal dialog.
 
 {% highlight js %}
 
-**[JavaScript]**
-
+<script type="text/javascript">
 // Set enableModal property as true in the Dialog function. The default value of enableModal is false in the Dialog widget
-    <script type="text/javascript">
-        $("#dialogLoginForm").ejDialog({
-            width: 250,
-            height: 250,
-            enableModal: true
-        });   
-   </script>
+    $("#dialogLoginForm").ejDialog({
+        width: 250,
+        height: 250,
+        enableModal: true
+    });   
+</script>
 
 {% endhighlight %}
 

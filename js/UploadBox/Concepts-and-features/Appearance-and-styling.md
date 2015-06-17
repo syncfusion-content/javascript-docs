@@ -47,7 +47,7 @@ The following steps explain the configuration of **buttonText** property in **Up
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div class="control">
         <div id="Uploadbox"></div>
@@ -58,7 +58,7 @@ The following steps explain the configuration of **buttonText** property in **Up
 
 {% highlight js %}
 
-**[JavaScript]**
+
  
  // Initialize the control in JavaScript.
 <script type="text/javascript">
@@ -119,7 +119,7 @@ The following steps explain the configuration of **dialogText** property in **Up
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div class="control">
         <div id="Uploadbox"></div>
@@ -131,7 +131,7 @@ The following steps explain the configuration of **dialogText** property in **Up
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
  // Initialize the control in JavaScript.
 <script type="text/javascript">
@@ -168,7 +168,7 @@ The following steps explains the configuration of **showFileDetails** property i
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div class="control">
         <div id="Uploadbox"></div>
@@ -178,7 +178,7 @@ The following steps explains the configuration of **showFileDetails** property i
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
   // Initialize the control in JavaScript.
 <script type="text/javascript">
@@ -241,7 +241,7 @@ The following steps explain the configuration of **cssClass** property in **Uplo
 
 {% highlight html %}
 
-**[HTML]**
+
 
      <div class="control">
         <div id="Uploadbox"></div>
@@ -254,7 +254,7 @@ The following steps explain the configuration of **cssClass** property in **Uplo
 {% highlight js %}
 
 
-**[JavaScript]**
+
 
 // Initialize the control in JavaScript.
 <script>
@@ -274,7 +274,7 @@ The following steps explain the configuration of **cssClass** property in **Uplo
 
 {% highlight css %}
 
-**[CSS]**
+
   <style class="cssStyles">
       .customcss.e-uploadbox.e-widget .e-selectpart.e-select{
             background-color: #FFFFCC;

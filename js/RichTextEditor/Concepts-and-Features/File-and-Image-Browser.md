@@ -25,7 +25,6 @@ Add the following code to initialize the **RTE** control in the page.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="rte">
         <textarea id="rteSample"></textarea>
@@ -35,7 +34,6 @@ Add the following code to initialize the **RTE** control in the page.
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
 
 // Render the RTE control in script section.
 <script type="text/javascript">
@@ -84,7 +82,6 @@ Add the following code to initialize the **RTE** control in the page.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="rte">
         <textarea id=" rteSample"></textarea>
@@ -94,7 +91,6 @@ Add the following code to initialize the **RTE** control in the page.
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
 
 // Render the RTE control in script section
 <script type="text/javascript">

@@ -104,7 +104,7 @@ The following steps explain how you can bind local data to **TreeView**.
 
 {% highlight html %}
 
-**[HTML]**
+
 
 <div id="treeView"></div>
 
@@ -112,7 +112,7 @@ The following steps explain how you can bind local data to **TreeView**.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Define local data source elements with fields.
 
@@ -164,7 +164,6 @@ The following steps explain how you can bind remote data to **TreeView** control
 
 {% highlight html %}
 
-**[HTML]**
 
       <div id="treeView"></div>
 
@@ -176,7 +175,6 @@ The following steps explain how you can bind remote data to **TreeView** control
 
 {% highlight js %}
 
-**[JavaScript]**
 <script type="text/javascript">
       // DataMangaer creation
         var dataManager = ej.DataManager ({
@@ -189,13 +187,11 @@ The following steps explain how you can bind remote data to **TreeView** control
 
 {% endhighlight %}
 
-****
 
 3. Assign dataSource and query property values to bind the remote data. Map the corresponding fields in TreeView control as follows.
 
 {% highlight js %}
 
-**[JavaScript]**
 <script type="text/javascript">
         $("#treeView").ejTreeView(
        {

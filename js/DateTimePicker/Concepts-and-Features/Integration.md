@@ -24,8 +24,7 @@ Add the following code in your **HTML** page.
 
 
 {% highlight html %}
-
-**[HTML]**    
+  
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateTimeCtrl">
 <head>
@@ -83,7 +82,7 @@ $scope.value = "9/17/2014 2:47 AM";
 
 ## Knockout Support
 
-**KnockoutJS** is a **MVVM** library that allows the separation of concerns. **Essential****JavaScript** has full support for **KnockoutJS**. **Knockout support** is achieved by an integrated **JS** library file. Add the following code for **Knockout Binding** menu rendering.
+**KnockoutJS** is a **MVVM** library that allows the separation of concerns. **Essential** **JavaScript** has full support for **KnockoutJS**. **Knockout support** is achieved by an integrated **JS** library file. Add the following code for **Knockout Binding** menu rendering.
 
 If you use **KO** with your applications, you can get following benefits:
 
@@ -100,8 +99,7 @@ Add the following code in your **HTML** page.
 
 
 {% highlight html %}
-
-**[HTML]**    
+   
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

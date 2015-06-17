@@ -19,7 +19,6 @@ Add the following code in your **HTML** section to initialize the **RTE** with S
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="rte">
         <textarea id="rteSample">
@@ -34,7 +33,6 @@ Add the following code in your **HTML** section to initialize the **RTE** with S
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section to render RTE with Spanish culture
 <script>

@@ -179,7 +179,6 @@ The following screenshot demonstrates the functionality of **Slider** control. B
 
 {% highlight js %}
 
-**[JavaScript]**
 
    <script type="text/javascript">
     var priceObj, countObj, priceValue = 0, target;

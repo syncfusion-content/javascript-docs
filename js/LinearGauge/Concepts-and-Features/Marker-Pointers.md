@@ -18,7 +18,7 @@ You can add **Marker Pointer** collection directly to the scale object. To add p
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -66,7 +66,7 @@ The **value** property****is the important element in the marker pointer collect
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -136,7 +136,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -214,7 +214,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -309,7 +309,7 @@ It is possible to change the dimension of the marker pointer. Dimensions availab
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {

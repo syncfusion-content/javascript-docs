@@ -17,7 +17,6 @@ You can easily customize the layout of the FileExplorer control, enable or disab
 
 {% highlight html %}
 
-**[HTML]**
 <div id="fileExplorer"></div>
 
 
@@ -31,29 +30,26 @@ Add the following code in your script section.
 
 {% highlight js %}
 
-
-**[JavaScript]**
-
-    <script type="text/javascript">
-        $(function () {
-            var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
-            $("#fileExplorer").ejFileExplorer({
-                fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
-                layout: "list",
-                path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-                ajaxAction: localServ,
-                showToolbar: false,
-                ajaxSettings: {
-                    upload: {
-                        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-                    },
-                    download: {
-                        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-                    }
+<script type="text/javascript">
+    $(function () {
+        var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+        $("#fileExplorer").ejFileExplorer({
+            fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
+            layout: "list",
+            path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+            ajaxAction: localServ,
+            showToolbar: false,
+            ajaxSettings: {
+                upload: {
+                    url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
+                },
+                download: {
+                    url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
                 }
-            });
+            }
         });
-    </script>
+    });
+</script>
 
 
 {% endhighlight %}
@@ -68,7 +64,6 @@ To render **FileExplorer** with the above disable tree view and footer options
 
 {% highlight html %}
 
-**[HTML]**
 <div id="fileExplorer"></div>
 
 
@@ -82,8 +77,6 @@ Add the following code in your script section.
 
 {% highlight js %}
 
-
-**[JavaScript]**
 
 <script type="text/javascript">
         $(function () {

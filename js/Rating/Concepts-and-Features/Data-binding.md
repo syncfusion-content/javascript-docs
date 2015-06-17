@@ -31,7 +31,6 @@ The following example depicts the way to bind data to the **Rating** control thr
 
 {% highlight html %}
 
-[HTML]
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -110,7 +109,6 @@ The following example depicts the way to bind data to the **Rating** control by 
 
 {% highlight html %}
 
-[HTML]
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="syncApp">
 <head>

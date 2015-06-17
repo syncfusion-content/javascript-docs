@@ -19,7 +19,6 @@ The following steps explains you in enabling the right-to-left property for an *
 
 {% highlight html %}
 
-   **[HTML]**
 
     <div id="accordion" style="width: 400px"> 
         <h3>  
@@ -44,7 +43,7 @@ The following steps explains you in enabling the right-to-left property for an *
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 
 // Enable RTL for accordion control
 
@@ -53,7 +52,7 @@ The following steps explains you in enabling the right-to-left property for an *
                 enableRTL:true
 				
             });
-
+</script>
 	
 {% endhighlight %}
 

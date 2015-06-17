@@ -25,7 +25,7 @@ In the above screenshot, you can select a group from the first **DropDownList** 
 
 **Create DropDownList Widgets** 
 
-**Essential****JavaScript****DropDownList** widget basically renders with built-in features.
+**Essential** **JavaScript** **DropDownList** widget basically renders with built-in features.
 
 You can create an **HTML** file and add the following code example to it. 
 
@@ -49,7 +49,7 @@ You can create an **HTML** file and add the following code example to it.
     <!--Add custom scripts here -->
 </head>
 <body>
-       <!— add the DropDownList element here -->
+       <!-- add the DropDownList element here -->
 </body>
 </html>
 
@@ -67,7 +67,6 @@ You can create an **HTML** file and add the following code example to it.
 
 {% highlight html %}
 
-[HTML]
           <div class="control">
               <div class="ball-icon"></div>
               <div class="ball-txt" style="">WORLD CUP FOOTBALL</div>
@@ -214,7 +213,7 @@ You can configure **DropDownList** widgets using online services. Two different 
 
 [http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/](http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/)
 
-In the above mentioned scenario, the given data source is mentioned in the **Data****Source** property. In the first and second **DropDownList** widgets, you can mention the Group widgets and countries Data Source in the **Data****Source** property respectively. If the **Data****Source** has different field names you can map the fields with the **field’s** property.
+In the above mentioned scenario, the given data source is mentioned in the **Data Source** property. In the first and second **DropDownList** widgets, you can mention the Group widgets and countries Data Source in the **Data** **Source** property respectively. If the **Data** **Source** has different field names you can map the fields with the **field’s** property.
 
 The following code sample explains how to configure the **Data Source**.
 
@@ -244,19 +243,19 @@ The following code sample explains how to configure the **Data Source**.
               var query2 = ej.Query()
                    .from("TeamCountries");
 
-       // simple DropDownList creation
+              // simple DropDownList creation
               $('#groupsList').ejDropDownList({
 
                  watermarkText:"group", // set watermark text
 
                 // Set Data Source in the Data Source Property
-                **dataSource: dataManger,**
+                dataSource: dataManger,
 
-                **query: query1,** // set query for groups
+                query: query1, // set query for groups
 
                 // Map the fields in the data source with the fields property if it not has the fields as in the fields property
-**fields: { text: "GroupName", value: "GroupId" }**
-            });
+                fields: { text: "GroupName", value: "GroupId" }
+                });
 
               // simple DropDownList creation
                $('#countryList').ejDropDownList({
@@ -264,15 +263,15 @@ The following code sample explains how to configure the **Data Source**.
                 watermarkText:"country", // set watermark text
 
                 // Set Data Source in the Data Source Property
-                **dataSource: dataManger,**
+                dataSource: dataManger,
 
-**query: query2,** // setting query for countries
+                query: query2, // setting query for countries
 
                 // Set the popup list width
-**popupWidth: "300px",**
+                popupWidth: "300px",
 
                 // Configure fields with properties
-                **fields: { text: "CountryName", value: "CountryId", spriteCssClass: "CountryFlag" }**
+                fields: { text: "CountryName", value: "CountryId", spriteCssClass: "CountryFlag" }
               });
 
               // simple Button creation
@@ -298,7 +297,7 @@ _Figure_ _3__:_ _DropDown Appearance with Data__s__ource content_
 
 **Configure DropDownList with Sprite Icons**
 
-To style the **DropDownList** popup with the Country flag, you can create the **Sprite****CSS** styles using the flag icons from the following image source location.  You can add the following location in the **URL** path for the background image
+To style the **DropDownList** popup with the Country flag, you can create the **Sprite** **CSS** styles using the flag icons from the following image source location.  You can add the following location in the **URL** path for the background image
 
 [http://js.syncfusion.com/UG/Web/Content/countryFootbal.png](http://js.syncfusion.com/UG/Web/Content/countryFootbal.png)
 
@@ -308,7 +307,7 @@ You can load the spirit image icons for the countries in a **DropDownList** by a
 
 {% highlight css %}
 
-
+<style>
         #countryList_popup_wrapper .e-align
         {
             display: inline-block;
@@ -489,7 +488,7 @@ You can load the spirit image icons for the countries in a **DropDownList** by a
                 background-position: -120px -960px;
             }
 
-
+</style>
 
 {% endhighlight %}
 
@@ -539,7 +538,7 @@ The following code example explains how to set the Cascading Option.
                 fields: { text: "GroupName", value: "GroupId" },
 
                 // Set DropDownList id to load the dynamic data
-**cascadeTo: 'countryList'**
+                cascadeTo: 'countryList'
             });
 
               // simple DropDownList creation 
@@ -559,7 +558,7 @@ The following code example explains how to set the Cascading Option.
                 popupWidth: "300px",
 
                 // Disable the dropdownlist until to load the data
-                **enabled: false**
+                enabled: false
               });
 
               // simple Button creation
@@ -605,7 +604,9 @@ _Figure_ _8__:_ _DropDown Appearance for cascading after selection of group and 
 
 **Set the Vote process in the DropDownList Widget**
 
-The voting process is done by clicking the **V****ote** button. A button is customized to support the voting process. For more information about the button you can refer the following link:[http://help.syncfusion.com/ug/js/default.htm#!Documents/gettingstarted4.htm](http://help.syncfusion.com/ug/js/default.htm)
+The voting process is done by clicking the **Vote** button. A button is customized to support the voting process. For more information about the button you can refer the following link: 
+
+[http://help.syncfusion.com/ug/js/default.htm#!Documents/gettingstarted4.htm](http://help.syncfusion.com/ug/js/default.htm)
 
 The following code sample explains how to set the Vote process in the **DropDownList** widget.
 
@@ -629,24 +630,24 @@ The following code sample explains how to set the Vote process in the **DropDown
               // simple Button creation
               $("#voter").ejButton({
 
-**width: "80px",** // set the width for the Button
+              width: "80px", // set the width for the Button
 
-**height: "25px",** // set the height for the button
+              height: "25px", // set the height for the button
 
-                show**RoundedCorner: true,** // set the rounded corner option  to true
+              showRoundedCorner: true, // set the rounded corner option  to true
 
-**contentType: "textandimage",**// set the content type for the button
-
-**prefixIcon: "e-uiLight e-userlogin",**// set the Prefix icon for button
-
-**click: "selectVoted"** // set click event of button
+              contentType: "textandimage",// set the content type for the button
+            
+              prefixIcon: "e-uiLight e-userlogin",// set the Prefix icon for button
+            
+              click: "selectVoted" // set click event of button
             });
 
           });
 
          function selectVoted() {
-                grpSlct = $('#groupsList').data("ejDropDownList");
-              contrySlct = $('#countryList').data("ejDropDownList");
+            grpSlct = $('#groupsList').data("ejDropDownList");
+            contrySlct = $('#countryList').data("ejDropDownList");
             alert("You have voted for the " + contrySlct.model.text+ " country in " + grpSlct.model.text);
          }
 

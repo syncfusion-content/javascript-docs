@@ -17,7 +17,7 @@ Tick collection is directly added to the scale object. Refer the following code 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -48,7 +48,7 @@ Major type ticks are for major interval values and minor type ticks are for mino
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="CircularGauge1"></div>
 <script type="text/javascript">
 $(function () {

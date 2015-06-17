@@ -19,7 +19,6 @@ The **opacityValue** property is Number type and its default value is 10.
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -27,7 +26,6 @@ The **opacityValue** property is Number type and its default value is 10.
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {
@@ -152,7 +150,6 @@ When it is necessary to set the button text and tooltipText values in **Spanish*
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -160,7 +157,6 @@ When it is necessary to set the button text and tooltipText values in **Spanish*
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {

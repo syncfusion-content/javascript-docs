@@ -357,7 +357,6 @@ _Table_ _2__: List of keys and string values_
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -438,8 +437,6 @@ recurrenceRule: "RecurrenceRule"
 
 {% highlight js %}
 
-**[JavaScript]**
-
 <head>
 
 <link href="themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" />
@@ -483,7 +480,6 @@ The following code example explains how to enable the **rtl** property of the **
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 

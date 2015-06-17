@@ -104,7 +104,8 @@ In the above screenshot, you can upload a resume that restricts **.html** and **
 {% highlight c# %}
 
 **#SaveFiles.ashx**
-public void ProcessRequest(HttpContext context)
+
+    public void ProcessRequest(HttpContext context)
     {
         string targetFolder = HttpContext.Current.Server.MapPath("uploadfiles");
         if (!Directory.Exists(targetFolder))
@@ -143,7 +144,8 @@ public void ProcessRequest(HttpContext context)
 {% highlight c# %}
 
 **#removeFiles.ashx**
-public void ProcessRequest(HttpContext context)
+
+    public void ProcessRequest(HttpContext context)
     {
         System.Collections.Specialized.NameValueCollection s = context.Request.Params;
         string fileName = s["fileNames"];
@@ -169,7 +171,7 @@ public void ProcessRequest(HttpContext context)
 
 {% highlight js %}
 
-**[Script]**
+
 <script type="text/javascript">
     $(function () {
         // declaration

@@ -21,7 +21,7 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -88,7 +88,7 @@ State ranges are used to specify the indicator behavior in the certain region. *
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -174,7 +174,6 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {
@@ -330,7 +329,7 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>
 <script type="text/javascript">
 $(function () {

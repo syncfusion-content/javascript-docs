@@ -19,7 +19,7 @@ documentation: ug
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="LinearGauge1"></div>   
 <script type="text/javascript">
  $(function () {

@@ -51,31 +51,33 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% highlight html %}
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+    <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
+    <head>
 
-<title>Getting Started with Gantt Control for JavaScript</title>
+     <title>Getting Started with Gantt Control for JavaScript</title>
 
-<!-- style sheet for default theme(flat azure) -->
-  <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
- <!--scripts-->   
- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+     <!-- style sheet for default theme(flat azure) -->
+     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+     
+     <!--scripts-->   
+     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-<script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
+     <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 
- <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js"></script>
+     <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js"></script>
 
- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-  <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
-</head>
-<body>
-<!--Add  Gantt control here-->
-</body>
-</html>
+     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
+      
+    </head>
+    <body>
+    <!--Add  Gantt control here-->
+    </body>
+    </html>
 
 
 {% endhighlight %}
@@ -86,11 +88,13 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% highlight html %}
 
-<body>
-<!--Add  Gantt control here-->
-    <div id="GanttContainer"></div>
-</body>
-
+    <body>
+    
+        <!--Add  Gantt control here-->
+    
+        <div id="GanttContainer"></div>
+    
+    </body>
 
 {% endhighlight %}
 
@@ -100,11 +104,6 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% highlight js %}
 
-<head>
-   //...
-<script type="text/javascript">
-
-    //data source for ejGantt control
     var data = [{
         taskID: 1,
         taskName: "Design",
@@ -150,9 +149,6 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
             }
         ]
     }];
-    </script>
-</head>
-
 
 {% endhighlight %}
 
@@ -162,9 +158,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% highlight js %}
 
-<script type="text/javascript">   
-   //...
-   $(function () {
+       $(function () {
             $("#GanttContainer").ejGantt({
                 dataSource: data, //Provides data source for Gantt
                 taskIdMapping: "taskID",//Provide name of the property which contains task id in the data source
@@ -179,8 +173,6 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
                 childMapping: "subtasks",//Provide name of the property which contains subtask of the task in the data source
             });
         });
-</script>
-
 
 {% endhighlight %}
 
@@ -196,9 +188,9 @@ Gantt control contains toolbar options to edit, search, expand or collapse all r
 
 {% highlight js %}
 
-toolbarSettings: {
- showToolbar:true,
- toolbarItems:[
+    toolbarSettings: {
+     showToolbar:true,
+     toolbarItems:[
         ej.Gantt.ToolbarItems.Add,
         ej.Gantt.ToolbarItems.Edit,
         ej.Gantt.ToolbarItems.Delete,
@@ -233,11 +225,11 @@ Enable the multicolumn sorting in **ejGantt** by setting **allowMultiSorting** a
 
 {% highlight js %}
 
-$("#GanttContainer").ejGantt({
-     //…
-     allowSorting:true,
-     allowMultiSorting: true,
-});
+    $("#GanttContainer").ejGantt({
+         //…
+         allowSorting:true,
+         allowMultiSorting: true,
+    });
 
 
 {% endhighlight %}
@@ -264,17 +256,17 @@ Modify the predecessor details of a task using mouse interactions by setting **a
 
 {% highlight js %}
 
-$("#GanttContainer").ejGantt({
-    //...
-    allowGanttChartEditing:true, //enable the taskbar editing 
-    predecessorMapping:"predecessor" ,// Predecessor editing 
-    editSettings: {
-        allowEditing: true,
-        allowAdding: true,
-        allowDeleting: true,
-        editMode: "normal",
-    },
-});
+    $("#GanttContainer").ejGantt({
+        //...
+        allowGanttChartEditing:true, //enable the taskbar editing 
+        predecessorMapping:"predecessor" ,// Predecessor editing 
+        editSettings: {
+            allowEditing: true,
+            allowAdding: true,
+            allowDeleting: true,
+            editMode:"normal",
+        },
+    });
 
 
 {% endhighlight %}
@@ -293,10 +285,10 @@ You can enable the context menu in **ejGantt,** by setting the **enableContextMe
 
 {% highlight js %}
 
-$("#GanttContainer").ejGantt({   
-    //...
-    enableContextMenu:true
-});
+    $("#GanttContainer").ejGantt({   
+        //...
+        enableContextMenu:true
+    });
 
 
 {% endhighlight %}
@@ -323,10 +315,10 @@ You can show the relationship in tasks, by using the **predecessorsMapping,** as
 
 {% highlight js %}
 
-$("# GanttContainer ").ejGantt({                
-   //...
-   predecessorMapping: "predecessor"
-});
+    $("# GanttContainer ").ejGantt({                
+       //...
+       predecessorMapping: "predecessor"
+    });
 
 
 {% endhighlight %}
@@ -345,17 +337,12 @@ In **ejGantt** control, you can display and assign the resource for each task. C
 
 {% highlight js %}
 
-<script type="text/javascript">
-//...
-//resourceInfo declaration for Gantt  Control
-var projectResources = [
-    { resourceId: 1, resourceName: "Project Manager" },
-    { resourceId: 2, resourceName: "Software Analyst" },
-    { resourceId: 3, resourceName: "Developer" },
-    { resourceId: 4, resourceName: "Testing Engineer" }
-    ];
-</script>
-
+    var projectResources = [
+        { resourceId: 1, resourceName: "Project Manager" },
+        { resourceId: 2, resourceName: "Software Analyst" },
+        { resourceId: 3, resourceName: "Developer" },
+        { resourceId: 4, resourceName: "Testing Engineer" }
+        ];
 
 {% endhighlight %}
 
@@ -365,13 +352,13 @@ var projectResources = [
 
 {% highlight js %}
 
-$("# GanttContainer ").ejGantt({
-    //...
-    resourceInfoMapping: "resourceId", //Field name which contains resource details for the task 
-    resourceNameMapping: "resourceName",//resource Name mapping
-    resourceIdMapping: "resourceId",//resource Id Mapping
-    resources: projectResources,//resource collection dataSource
-});
+    $("# GanttContainer ").ejGantt({
+        //...
+        resourceInfoMapping: "resourceId", //Field name which contains resource details for the task 
+        resourceNameMapping: "resourceName",//resource Name mapping
+        resourceIdMapping: "resourceId",//resource Id Mapping
+        resources: projectResources,//resource collection dataSource
+    });
 
 
 {% endhighlight %}

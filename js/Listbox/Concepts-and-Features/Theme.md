@@ -56,7 +56,6 @@ The following steps explains you the configuration of **cssClass** properties in
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -67,7 +66,6 @@ The following steps explains you the configuration of **cssClass** properties in
 
 {% highlight js %}
 
-**[JavaScript]**
   
 // Initialize the control in JavaScript
 
@@ -95,7 +93,6 @@ Configure the **CSS** styles to apply on **ListBox**.
 
 {% highlight css %}
 
-**[CSS]**
   
 <style>
     .customclass {

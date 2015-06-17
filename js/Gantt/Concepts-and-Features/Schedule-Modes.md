@@ -32,14 +32,14 @@ In the Week schedule mode, the upper part of the schedule header displays the **
 {% highlight js %}
 
 
-  $("#GanttContainer").ejGantt({
+        $("#GanttContainer").ejGantt({
                 //...
                 scheduleHeaderSettings: {
-                scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Week,                                                            
-                weekHeaderFormat: "MMM dd , yyyy",
-                dayHeaderFormat: "ddd",
+                  scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Week,                                                            
+                  weekHeaderFormat: "MMM dd , yyyy",
+                  dayHeaderFormat: "ddd",
                 },             
- });
+       });
 
 
 {% endhighlight %}
@@ -57,14 +57,14 @@ In the Week schedule mode, the upper part of the schedule header displays the **
 {% highlight js %}
 
 
-  $("#GanttContainer").ejGantt({
+      $("#GanttContainer").ejGantt({
                 //... 
                scheduleHeaderSettings: {
-                scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Month,                                                            
-                monthHeaderFormat: "MMM yyyy",
-                weekHeaderFormat: "M/dd",
+                  scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Month,                                                            
+                  monthHeaderFormat: "MMM yyyy",
+                  weekHeaderFormat: "M/dd",
                 },             
- });
+     });
 
 
 {% endhighlight %}
@@ -82,14 +82,14 @@ In the Week schedule mode, the upper schedule header displays the **Years** wher
 {% highlight js %}
 
 
-  $("#GanttContainer").ejGantt({
+        $("#GanttContainer").ejGantt({
                 //...
                 scheduleHeaderSettings: {
-                scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Year,                                                            
-                yearHeaderFormat: "yyyy",
-                monthHeaderFormat: "MMM",
+                  scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Year,                                                            
+                  yearHeaderFormat: "yyyy",
+                  monthHeaderFormat: "MMM",
                 },             
- });
+       });
 
 
 {% endhighlight %}
@@ -106,14 +106,14 @@ In the Week schedule mode, the upper part of the header displays the **Days** wh
 {% highlight js %}
 
 
-  $("#GanttContainer").ejGantt({
+        $("#GanttContainer").ejGantt({
                 //...
                 scheduleHeaderSettings: {
-                scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Day,                                                            
-                dayHeaderFormat: " dd,MM,yy ",
-                hourHeaderFormat: "HH",
+                  scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Day,                                                            
+                  dayHeaderFormat: " dd,MM,yy ",
+                  hourHeaderFormat: "HH",
                 },             
- });
+       });
 
 
 {% endhighlight %}
@@ -149,16 +149,16 @@ The **Hour Schedule Mode** supports both the **minute** and h**our** duration un
 {% highlight js %}
 
 
- $("#GanttContainer").ejGantt({
+       $("#GanttContainer").ejGantt({
                // ... 
                dateFormat: "M/d/yyyy hh:mm:ss tt",
                durationUnit: ej.Gantt.DurationUnit.Minute,
                scheduleHeaderSettings: {
-               scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Hour, 
-               minutesPerInterval: ej.Gantt.minutesPerInterval.FiveMinutes,
+                 scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Hour, 
+                 minutesPerInterval: ej.Gantt.minutesPerInterval.FiveMinutes,
                },
                // ...
-});
+      });
 
 
 

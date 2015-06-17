@@ -17,7 +17,6 @@ The following steps explains you the configuration of **enableTouchScroll** prop
 
 {% highlight html %}
 
-**[HTML]**
 
 	<div id="scrollcontent">
 	  <div>                              <!--Wrapper div for Scroller.-->
@@ -35,7 +34,6 @@ The following steps explains you the configuration of **enableTouchScroll** prop
 
 {% highlight js %}
 
-**[JavaScript]**
  
 <script type="text/javascript">
 

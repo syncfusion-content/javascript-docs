@@ -21,7 +21,7 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 **Create a BulletGraph**
 
-1. Create an **HTML** file and add references to the required libraries.
+1.Create an **HTML** file and add references to the required libraries.
 
 {% highlight html %}
 
@@ -43,14 +43,14 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 
 
-2. Now add a &lt;div&gt; elementthat acts as a container for **ejBulletGraph** widget.
+2.Now add a &lt;div&gt; elementthat acts as a container for **ejBulletGraph** widget.
 
 {% highlight html %}
 
 
 <html>
 <body>
-<divid="Bullet"></div>
+<div id="Bullet"></div>
 </body>
 </html>
 
@@ -59,7 +59,7 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 
 
-3. Once the container is added, create the **ejBulletGraph** widget as follows.
+3.Once the container is added, create the **ejBulletGraph** widget as follows.
 
 {% highlight html %}
 
@@ -67,9 +67,9 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 <head>
 <!-- … -->
-<scriptty”e="text/javascr”pt">
+<script type="text/javascript">
     $(function () {
-       “$("#Bul”et").ejBulletGraph();
+       “$("#Bullet").ejBulletGraph();
     });
 </script>
 </head>
@@ -80,15 +80,15 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 
 
-4. Run the above code and the **BulletGraph**is displayed. In order to customize the measure bars within the **BulletGraph**, either local or remote data should be passed to it.
+4.Run the above code and the **BulletGraph** is displayed. In order to customize the measure bars within the **BulletGraph**, either local or remote data should be passed to it.
 
 {% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img2.png" Caption="BulletGraph"%}
 
 **Provide Required Data**
 
-You can customize the values of feature and comparative measure bars in a **BulletGraph`**, either locally or remotely. The category data is optional, and is used to display label values in parallel to the measure bars. 
+You can customize the values of feature and comparative measure bars in a **BulletGraph**, either locally or remotely. The category data is optional, and is used to display label values in parallel to the measure bars. 
 
-Assign the data in**localData**variable to the **dataSource** property of **BulletGraph** as shown in the following code example.
+Assign the data in **localData** variable to the **dataSource** property of **BulletGraph** as shown in the following code example.
 
 {% highlight js %}
 
@@ -214,7 +214,7 @@ Assign the data in**localData**variable to the **dataSource** property of **Bull
 
 
 
-Once the **dataSource** property is assigned with the required values, you canbind the variable names used in the **JSON**data to the corresponding fields of the **BulletGraph**as shown in the following code sample.
+Once the **dataSource** property is assigned with the required values, you canbind the variable names used in the **JSON** data to the corresponding fields of the **BulletGraph** as shown in the following code sample.
 
 {% highlight js %}
 
@@ -236,7 +236,7 @@ Once the **dataSource** property is assigned with the required values, you canbi
 
 You can plot more number of measure bars within the **BulletGraph**, the height and width of the control should be increased to locate all the measure bars within the graph.The **qualitativeRangesize** and **quantitativeScaleLength** property needs to be set accordingly as shown in the following code example.
 
-By default, the **BulletGraph**is rendered in the Horizontal orientation with its flow direction set to **Forward.** In this example,to achieve the desired output, horizontal orientation should bechanged to**Vertical** orientation with the flow direction set to **Backward**.
+By default, the **BulletGraph** is rendered in the Horizontal orientation with its flow direction set to **Forward.** In this example,to achieve the desired output, horizontal orientation should bechanged to **Vertical** orientation with the flow direction set to **Backward**.
 
 **Minimum**, **maximum** and **interval** values for the **quantitativeScale** of the **bulletgraph** should be set, as shown in the following code example. The ticks and labels within the scale also need to be positioned.
 
@@ -279,7 +279,7 @@ As you can see in the image above, the bullet graph without any ranges is displa
 
 **Add Qualitative Ranges**
 
-By default, 3 ranges are displayed in the **BulletGraph**control duringthe initial rendering of the control with its default values. In order to customize it, youneed to set appropriate values for the **rangeEnd** and its **rangeStroke** properties.  Any number of **qualitativeRanges**can be added to the control. 
+By default, 3 ranges are displayed in the **BulletGraph** control duringthe initial rendering of the control with its default values. In order to customize it, youneed to set appropriate values for the **rangeEnd** and its **rangeStroke** properties.  Any number of **qualitativeRanges** can be added to the control. 
 
 {% highlight js %}
 
@@ -381,13 +381,13 @@ You have to dothe following code changes in the quantitative scalein order to cu
 
 
 
-When customization of ticks and measure bars is done, **BulletGraph**looks as follows
+When customization of ticks and measure bars is done, **BulletGraph** looks as follows
 
 {% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img5.png" Caption="Figure 5: BulletGraph"%}
 
 **Add Caption and Subtitle**
 
-You can display an appropriate Caption and Subtitle in the **BulletGraph**by adding the following code example.
+You can display an appropriate Caption and Subtitle in the **BulletGraph** by adding the following code example.
 
 {% highlight js %}
 
@@ -448,13 +448,13 @@ You can display an appropriate Caption and Subtitle in the **BulletGraph**by add
 
 
 
-The following screenshot displays a **BulletGraph**in the caption and title in the **BulletGraph**.
+The following screenshot displays a **BulletGraph** in the caption and title in the **BulletGraph**.
 
 {% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img6.png" Caption="BulletGraph"%}
 
 **Show Tooltip**
 
-You can use a Tooltip in your application to display anyinformation. In this example, a tooltip is used to show the values (in millimetre) of forecasted rainfall, actual rainfall received in (mm) and also the appropriate year. The tooltip is enabled by setting the **visible** property in tooltipto**True.** Also, in order to set the template tooltip, you can pass the template id to it as shown in the following code example.
+You can use a Tooltip in your application to display anyinformation. In this example, a tooltip is used to show the values (in millimetre) of forecasted rainfall, actual rainfall received in (mm) and also the appropriate year. The tooltip is enabled by setting the **visible** property in tooltip to **True.** Also, in order to set the template tooltip, you can pass the template id to it as shown in the following code example.
 
 {% highlight js %}
 
@@ -511,12 +511,18 @@ You can use a Tooltip in your application to display anyinformation. In this exa
             }
         });
      });
+     
+{% endhighlight %}  
 
-Template content
+**Template content**
 
-<divid="Tooltip"style="display:none; width:125px;padding-top: 10px;padding-bottom:10px">
-<divalign="center"style="font-weight:bold">
-           Rainfall </div>
+{% highlight html %}
+
+
+<div id="Tooltip" style="display:none; width:125px;padding-top: 10px;padding-bottom:10px">
+<div align="center" style="font-weight:bold">
+           Rainfall 
+</div>
 <table>
 <tr><td>Actual</td>
 <td>: {{:currentValue}}mm</td></tr>
@@ -532,7 +538,7 @@ Template content
 
 
 
-By using the customization options discussed in this section, the **BulletGraph**is rendered as displayed on the following screenshot.
+By using the customization options discussed in this section, the **BulletGraph** is rendered as displayed on the following screenshot.
 
 {% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img7.png" Caption="BulletGraph"%}
 

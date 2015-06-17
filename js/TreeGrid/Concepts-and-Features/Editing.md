@@ -19,7 +19,7 @@ The following code example shows you how to enable **cellEditing** in **TreeG
 
 {% highlight js %}
 
-$("#TreeGridContainer").ejTreeGrid({
+    $("#TreeGridContainer").ejTreeGrid({
                 //...
                 editSettings: {
 
@@ -27,7 +27,7 @@ $("#TreeGridContainer").ejTreeGrid({
                     editMode: "cellEditing"
 
                 },
-});
+    });
 
 
 {% endhighlight %}

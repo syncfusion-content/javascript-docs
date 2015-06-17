@@ -18,20 +18,15 @@ The following steps explain you how to enable the **RTL** property of the **Date
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
 {% highlight html %}
-  
-  **[HTML]**
-  
+
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to enable the RTL property of the DatePicker widget
-
   <script type="text/javascript">
+    // Add the code to enable the RTL property of the DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({

@@ -15,7 +15,6 @@ The **range** of the **ProgressBar** is set by using minimum and maximum values.
 
 {% highlight html %}
 
-**[HTML]**
 
             <div class="control">
             <div id="progressbar"></div>
@@ -25,7 +24,6 @@ The **range** of the **ProgressBar** is set by using minimum and maximum values.
 
 {% highlight js%}
 
-**[JavaScript]**
 
 // Add Range for the ProgressBar widget as follows.
 <script type="text/javascript">

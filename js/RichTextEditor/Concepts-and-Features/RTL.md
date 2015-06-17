@@ -15,7 +15,6 @@ Add the following code to the script section in your **HTML** page to initialize
 
 {% highlight html %}
 
-**[HTML]**
 
     <div class="rte">
         <textarea id="RTL"></textarea>
@@ -25,7 +24,6 @@ Add the following code to the script section in your **HTML** page to initialize
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section to render RTE with right-to-left format.
 <script>

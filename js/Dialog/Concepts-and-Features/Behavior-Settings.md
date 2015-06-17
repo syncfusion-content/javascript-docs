@@ -21,8 +21,6 @@ The following steps explains you the implementation of resize option in the **Di
 
 {% highlight html %}
 
-**[HTML]**
-
      <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -31,19 +29,17 @@ The following steps explains you the implementation of resize option in the **Di
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Enables resize in the Dialog function by setting enableResize property as true. By default, value for enableResize is true
-     <script type="text/javascript">
-        $(function () {
-            // declaration
-            $("#Dialog").ejDialog({
-                height: 200,
-                width: 300,
-                enableResize: true
-            });
+ <script type="text/javascript">
+ // Enable resize in the Dialog function by setting enableResize property as true. By default, value for enableResize is true
+    $(function () {
+        // declaration
+        $("#Dialog").ejDialog({
+            height: 200,
+            width: 300,
+            enableResize: true
         });
-    </script>
+    });
+</script>
 
 {% endhighlight %}
 
@@ -63,7 +59,6 @@ The following steps explains you the implementation of drag option in the **Dial
 
 {% highlight html %}
 
-**[HTML]**
 
      <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
@@ -73,16 +68,14 @@ The following steps explains you the implementation of drag option in the **Dial
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Allows you to drag in the Dialog function by setting allowDraggable property as true. The default value for allowDraggable is true in the Dialog control
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            allowDraggable: true
-        });
-    </script>
+<script type="text/javascript">
+// Allow drag in the Dialog function by setting allowDraggable property as true. The default value for allowDraggable is true in the Dialog control
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        allowDraggable: true
+    });
+</script>
 
 {% endhighlight %}
 
@@ -102,8 +95,6 @@ The following steps explains you the implementation of close icon tooltip option
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -112,16 +103,14 @@ The following steps explains you the implementation of close icon tooltip option
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Sets the closeIconTooltip value in the Dialog function by using the following codes. The default value for closeIconTooltip is close in the Dialog control
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            closeIconTooltip: "close"
-        });
-    </script>
+<script type="text/javascript">
+// Set the closeIconTooltip value in the Dialog function using the following codes. The default value for closeIconTooltip is close in the Dialog control
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        closeIconTooltip: "close"
+    });
+</script>
 
 {% endhighlight %}
 
@@ -141,8 +130,6 @@ The following steps explains the implementation of persistence support in the **
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -151,16 +138,14 @@ The following steps explains the implementation of persistence support in the **
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Enables the persistence to the Dialog function by setting enablePersistence property as true. The default value for enablePersistence is false in the Dialog control
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            enablePersistence: true
-        });
-    </script>
+<script type="text/javascript">
+// Enable the persistence to the Dialog function by setting enablePersistence property as true. The default value for enablePersistence is false in the Dialog control
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        enablePersistence: true
+    });
+</script>
 
 
 {% endhighlight %}
@@ -181,8 +166,6 @@ The following steps explains the implementation of enable option in the **Dialog
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -191,16 +174,14 @@ The following steps explains the implementation of enable option in the **Dialog
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Enables the Dialog in the Dialog function by setting enabled property as true. The default value for enabled is true in the Dialog control
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            enabled: true
-        });
-    </script>
+<script type="text/javascript">
+// Enable the Dialog in the Dialog function by setting enabled property as true. The default value for enabled is true in the Dialog control
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        enabled: true
+    });
+</script>
 
 {% endhighlight %}
 
@@ -216,8 +197,6 @@ The following steps explains you the implementation of disable option in the **D
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -226,16 +205,14 @@ The following steps explains you the implementation of disable option in the **D
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Disables the Dialog in the ejDialog function by setting enabled as false
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            enabled: false
-        });
-    </script>
+<script type="text/javascript">
+// Disable the Dialog in the ejDialog function by setting enabled as false
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        enabled: false
+    });
+</script>
 
 {% endhighlight %}
 
@@ -251,8 +228,6 @@ The **Dialog** provides the option to place the control based upon its X-axis an
 
 {% highlight html %}
 
-**[HTML]**
-
      <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.<br />
         Position <br />
@@ -264,16 +239,14 @@ The **Dialog** provides the option to place the control based upon its X-axis an
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Sets the X and Y position to the Dialog function by setting Position property
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            position: { X: 20, Y: 26 }
-        });
-    </script>
+<script type="text/javascript">
+// Set the X and Y position to the Dialog function by setting Position property
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        position: { X: 20, Y: 26 }
+    });
+</script>
 
 {% endhighlight %}
 
@@ -291,8 +264,6 @@ You can show or hide the **Dialog** header by setting **showHeader** property. T
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -301,16 +272,15 @@ You can show or hide the **Dialog** header by setting **showHeader** property. T
 
 {% highlight js %}
 
-**[JavaScript]**
 
-// Sets the showHeader property as true in the Dialog function
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            showHeader: true
-        });
-    </script>
+<script type="text/javascript">
+// Set the showHeader property as true in the Dialog function
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        showHeader: true
+    });
+</script>
 
 {% endhighlight %}
 
@@ -324,8 +294,6 @@ You can show or hide the **Dialog** header by setting **showHeader** property. T
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -334,16 +302,14 @@ You can show or hide the **Dialog** header by setting **showHeader** property. T
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Sets the showHeader property as false in the Dialog function
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            showHeader: false
-        });
-    </script>
+<script type="text/javascript">
+// Set the showHeader property as false in the Dialog function
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        showHeader: false
+    });
+</script>
 
 {% endhighlight %}
 
@@ -359,8 +325,6 @@ The **Dialog** control contains an option to be visible or hidden at initializat
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -369,16 +333,14 @@ The **Dialog** control contains an option to be visible or hidden at initializat
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Sets the showOnInit property as true in the Dialog function
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            showOnInit: true /* false hides the dialog at initialization */  
-         });                       
-    </script>
+<script type="text/javascript">
+// Set the showOnInit property as true in the Dialog function
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        showOnInit: true /* false hides the dialog at initialization */  
+     });                       
+</script>
 	
 {% endhighlight %}
 
@@ -394,8 +356,6 @@ The **Dialog** can support with rounded corner appearance, the default value for
 
 {% highlight html %}
 
-**[HTML]**
-
     <div id="Dialog" title="Syncfusion Dialog">
         The Syncfusion Dialog control is rendered.
     </div>
@@ -404,16 +364,14 @@ The **Dialog** can support with rounded corner appearance, the default value for
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Sets the showRoundedCorner property as true in the Dialog function
-    <script type="text/javascript">
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            showRoundedCorner: true 
-        });
-    </script>
+<script type="text/javascript">
+// Set the showRoundedCorner property as true in the Dialog function
+    $("#Dialog").ejDialog({
+        height: 200,
+        width: 300,
+        showRoundedCorner: true 
+    });
+</script>
 
 {% endhighlight %}
 

@@ -90,7 +90,7 @@ The following steps explain how you can enable the **showCheckbox** property for
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <script type="text/javascript">
 var tabIndex = 1;
 $("#treeView").ejTreeView();

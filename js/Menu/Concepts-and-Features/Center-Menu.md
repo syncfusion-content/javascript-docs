@@ -15,7 +15,6 @@ You can align the **Menu** items to center by setting “enableCenterAlign” pr
 
 {% highlight html %}
 
-**[HTML]**
     
 <div>
     <ul id="menucontrol">
@@ -68,7 +67,6 @@ You can align the **Menu** items to center by setting “enableCenterAlign” pr
 
 {% highlight js %}
 
-**[Javascript]**
    
 <script type="text/javascript">
     jQuery(function ($) {

@@ -20,7 +20,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
   {% highlight html %}
 
-**[HTML]**
 
     <div class="align">
         <input type="checkbox" class="nodetext" id="checkbox_nonchecked" />
@@ -33,10 +32,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
   {% endhighlight %}
   
   {% highlight js %}
-
-  **[JavaScript]**
-  
-  //Initialize the control in JavaScript
 
    <script type="text/javascript">
         $(function () {
@@ -71,7 +66,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
   {% highlight html %}
 
-  **[HTML]**
  
     <div class="align">
         <input type="checkbox" class="nodetext" id="checkbox_nonTriState" />
@@ -85,10 +79,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
   {% highlight js %}
-
-  **[JavaScript]**
-  
-  //Initialize the control in JavaScript
 
 <script type="text/javascript">
         $(function () {
@@ -140,7 +130,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
   {% highlight html %}
 
-  **[HTML]**
   
     <div class="align">
         <input type="checkbox" class="nodetext" id="check" />
@@ -158,10 +147,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
   {% highlight js %}
-
-  **[JavaScript]**
-  
-  //Initialize the control in JavaScript
 
 <script type="text/javascript">
         $(function () {
@@ -208,8 +193,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
   {% highlight html %}
-
-  **[HTML]**
   
     <div class="align">
         <input type="checkbox" class="nodetext" id="checkbox_small" />
@@ -224,10 +207,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
   {% highlight js %}
-
-  **[JavaScript]**
-  
-  //Initialize the control in JavaScript
 
 <script type="text/javascript">
         $(function () {
@@ -259,7 +238,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
   {% highlight html %}
 
-  **[HTML]**
   
     <div class="align">
         <input type="checkbox" class="nodetext" id="checkbox_text" />
@@ -270,10 +248,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
   {% highlight js %}
-
-  **[JavaScript]**
-  
-  //Initialize the control in JavaScript
 
    <script type="text/javascript">
         $(function () {
@@ -305,7 +279,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
   {% highlight html %}
 
-  **[HTML]**
   
      <div class="align">
         <input type="checkbox" class="nodetext" id="checkbox_normalCorner" />
@@ -319,10 +292,6 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 
   {% highlight js %}
-
-  **[JavaScript]**
-  
-  //Initialize the control in JavaScript
 
 <script type="text/javascript">
         $(function () {

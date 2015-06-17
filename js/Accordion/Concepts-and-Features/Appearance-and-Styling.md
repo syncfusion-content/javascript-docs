@@ -11,7 +11,7 @@ documentation: ug
 
 **Adjusting Accordion size**
 
-You can customize the **Accordion** panel height by using the **heightAdjustMode** property. It can be set to **enum** values like content, fill or auto. By default **heightAdjustMode** is set to **content** so the panel height is adjusted to the content size.
+You can customize the **Accordion** panel height using **heightAdjustMode** property. It can be set to **enum** values like content, fill or auto. By default **heightAdjustMode** is set to **content** so the panel height is adjusted to the content size.
 
 **Configure Height of Accordion panel**
 
@@ -21,13 +21,12 @@ The following steps explains you on how to configure **Accordion** panel height.
 
 {% highlight html %}
 
-   **[HTML]**
 
      <div id="accordion" style="width: 400px"> 
     <h3>  
         <a href="#">Orubase</a></h3>    
      <div>  <!-- add accordion contents here to load contents under this header -->  
-        Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
     </div>  
     <h3>   
         <a href="#">WinRTXAML</a></h3>     
@@ -47,14 +46,14 @@ The following steps explains you on how to configure **Accordion** panel height.
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 
-// Configures the heightAdjustMode for accordion
+// Configure heightAdjustMode for accordion
 
             $("#accordion").ejAccordion({
                 heightAdjustMode: "auto"
             });
-
+</script>
 
 {% endhighlight %}
 
@@ -77,13 +76,12 @@ The following steps explains you in enabling the **showRoundedCorner** property 
 
 {% highlight html %}
 
-   **[HTML]**
 
       <div id="accordion" style="width: 400px"> 
     <h3>  
         <a href="#">Orubase</a></h3>    
       <div>  <!-- add accordion contents here to load contents under this header -->  
-            Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+            Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
         </div>  
         <h3>   
             <a href="#">WinRTXAML</a></h3>     
@@ -103,14 +101,14 @@ The following steps explains you in enabling the **showRoundedCorner** property 
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 
-// Enables showRoundedCorner for Accordion
+// Enable showRoundedCorner for Accordion
 
     $("#accordion").ejAccordion({
                 showRoundedCorner: true
             }); 
-
+</script>
 
 {% endhighlight %}
 
@@ -132,13 +130,12 @@ The following steps explains you the configuration of icon for an **Accordion** 
 
 {% highlight html %}
 
-   **[HTML]**
 
         <div id="accordion" style="width: 400px"> 
             <h3>  
                 <a href="#">Orubase</a></h3>    
           <div>  <!-- add accordion contents here to load contents under this header -->  
-                Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+                Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
             </div>  
             <h3>   
                 <a href="#">WinRTXAML</a></h3>     
@@ -157,7 +154,7 @@ The following steps explains you the configuration of icon for an **Accordion** 
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 
 // Set the “e-arrowheaddown” and “e-arrowheadup” classes to header and selectedHeader properties.  “e-arrowheaddown” and “e-arrowheadup” are available in ej.widgets.core.min.css file.
 
@@ -171,6 +168,7 @@ $("#accordion").ejAccordion({
                 } 
        });
 
+</script>
 
 {% endhighlight %}
 
@@ -186,37 +184,37 @@ $("#accordion").ejAccordion({
 
 **Set animation**
 
-By default, the **Animation** for expanding and collapsing is enabled. To remove the Animation, you can set the **enableAnimation** property to **false**. This restricts customizing animations as well. By default, **enableAnimation** is set to **true**.
+By default the **Animation** for expanding and collapsing is enabled. To remove the Animation you can set the **enableAnimation** property to **false**. This restricts customizing animations as well. By default **enableAnimation** is set to **true**.
 
 Following code disables **Animation** for **Accordion**.
 
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
 $("#accordion").ejAccordion({
-**enableAnimation: false**
+       enableAnimation: false
        }); 
 
-
+</script>
 {% endhighlight %}
 
 **Expand and collapse speed**
 
-This feature allows you to set the speed for expanding and collapsing the **Accordion** panels. By default, it is set to 300 in milliseconds. By configuring the animation speed, you can optimize the delay in loading the panel content.
+This feature allows you to set the speed for expanding and collapsing the **Accordion** panels. By default it is set to 300 in milliseconds. By configuring the animation speed you can optimize the delay in loading the panel content.
 
 The following code sample sets value for **expandSpeed** and **collapseSpeed** properties,
 
 {% highlight js %}
 
-**[JavaScript]**
+<script>
 $("#accordion").ejAccordion({
-                **expandSpeed:600,**
-                **collapseSpeed:1000,**
+                expandSpeed:600,
+                collapseSpeed:1000,
                 collapsible:true
             }); 
 
-
+</script>
 {% endhighlight %}
 
 
@@ -265,13 +263,12 @@ The following steps allows you to configure **CSS** class for an **Accordion** w
 
 {% highlight html %}
 
-  **[HTML]**
     
     <div id="accordion" style="width: 400px"> 
         <h3>  
             <a href="#">Orubase</a></h3>    
       <div>  <!-- add accordion contents here to load contents under this header -->  
-            Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+            Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
         </div>  
         <h3>   
             <a href="#">WinRTXAML</a></h3>     
@@ -290,14 +287,14 @@ The following steps allows you to configure **CSS** class for an **Accordion** w
 
 {% highlight js %}
 
-[JavaScript]
+<script>
 
-// Sets the cssClass property for Accordion
+// Set the cssClass property for Accordion
 
          $("#accordion").ejAccordion({
                 cssClass: "customCss"
             });
-
+</script>
 
 {% endhighlight %}
 
@@ -307,7 +304,6 @@ The following steps allows you to configure **CSS** class for an **Accordion** w
 
 {% highlight css %}
 
-**[Style]**
 <style class="cssStyles">
          .customCss
          {

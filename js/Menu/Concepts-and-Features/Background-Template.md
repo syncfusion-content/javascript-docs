@@ -17,7 +17,6 @@ Initialize the Template **Menu** as illustrated in the following code example.
 
 {% highlight html %}
 
-**[HTML]**
 
 <div class="content-container-fluid">
     <div class="row">
@@ -110,7 +109,6 @@ Initialize the Template **Menu** as illustrated in the following code example.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section.
 
@@ -128,7 +126,6 @@ Initialize the Template **Menu** as illustrated in the following code example.
 
 {% highlight css %}
 
-**[CSS]**
 
 <style type="text/css">
     .temp {

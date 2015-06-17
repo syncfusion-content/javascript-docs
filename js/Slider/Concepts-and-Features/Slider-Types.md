@@ -45,7 +45,7 @@ The following steps explains you on how to configure the **sliderType** property
 
 {% highlight html %}
 
-**[HTML]**
+
 
     <div class="txt">Range</div>
         <div id="rangeSlider"></div>
@@ -58,7 +58,7 @@ The following steps explains you on how to configure the **sliderType** property
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // When initializing the Slider components, configure the sliderType property as follows.
 	    

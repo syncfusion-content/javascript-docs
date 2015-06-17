@@ -19,7 +19,6 @@ The following code example is used to render the **Tab** widget with **Close****
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -41,7 +40,7 @@ The following code example is used to render the **Tab** widget with **Close****
 
 {% highlight js %}
 
-  **[JS]**
+
     
     //Add the following script for Tab Render with Close Button.
     <script type="text/javascript">
@@ -67,7 +66,6 @@ The following code example is used to render the sub **Tab** widget in the verti
 
 {% highlight html %}
 
- **[HTML]**
  
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -89,7 +87,6 @@ The following code example is used to render the sub **Tab** widget in the verti
 
 {% highlight js %}
 
-**[JS]**
     // Add the following script for Tab render with customized orientation.
     <script type="text/javascript">
             $(function () {         
@@ -115,7 +112,6 @@ The following code example is used to render the **Tab** widget with state maint
 
 {% highlight html %}
 
- **[HTML]**
 
     <div id="dishtype" style="width: 650px">
         <ul>
@@ -136,7 +132,6 @@ The following code example is used to render the **Tab** widget with state maint
 
 {% highlight js %}
 
-   **[JS]**
    
     // Add the following script for Tab state maintenance.
     <script type="text/javascript">

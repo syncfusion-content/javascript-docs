@@ -17,8 +17,6 @@ This property sets the **width** of a **Rotator** Item. The value set to this pr
 
 
   {% highlight js %}
-
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -32,7 +30,6 @@ This property sets the **width** of a **Rotator** Item. The value set to this pr
   
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -52,7 +49,6 @@ This property sets the **height** of a **Rotator** Item. The value set to this p
 
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -67,7 +63,6 @@ This property sets the **height** of a **Rotator** Item. The value set to this p
   
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {

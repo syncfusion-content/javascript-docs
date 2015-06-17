@@ -29,8 +29,6 @@ The following steps explains you the configuration of checkbox options in **Drop
 
 {% highlight html %}
 
-**[HTML]**
-
     <input type="text" id="dropdownlist" />
 
      <div id="list">
@@ -48,19 +46,14 @@ The following steps explains you the configuration of checkbox options in **Drop
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript      
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
                 width: "200px",
                 showCheckbox: true,
-                checkAll: true
-                
+                checkAll: true                
             });
         });
    </script>

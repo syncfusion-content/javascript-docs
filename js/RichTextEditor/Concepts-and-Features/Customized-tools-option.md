@@ -16,8 +16,6 @@ Add the following code in your **HTML** page to render **RTE** with new tool ite
 
 {% highlight html %}
 
-**[HTML]**
-
      <div>
         <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px"></textarea>
         <div id="cutomSourceCode" title="Paste you code and inset to RTE">
@@ -59,7 +57,6 @@ Add the following code in your **HTML** page to render **RTE** with new tool ite
 
 {% highlight js %}
 
-**[JavaScript]** 
 
 // Add the following code in your script section to render RTE and set the action of the new tool item.
 <script>
@@ -113,7 +110,6 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
 
-**[HTML]**
 
     <div>
         <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px"></textarea>
@@ -123,7 +119,6 @@ Add the following code in your **HTML** page.
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Add the following code in your script section to render the RTE and remove the “createTable” tool from the toolbar.
 <script>

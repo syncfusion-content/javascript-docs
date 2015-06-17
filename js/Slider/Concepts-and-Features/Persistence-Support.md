@@ -17,7 +17,6 @@ The following steps explain you on how to enable the **enablePersistence** prope
 
 {% highlight html %}
 
-**[HTML]**
 
     <div id="ejSlider"></div>
 
@@ -26,7 +25,6 @@ The following steps explain you on how to enable the **enablePersistence** prope
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // When initializing the Slider widget, enable the enablePersistence property as follows.
     <script>

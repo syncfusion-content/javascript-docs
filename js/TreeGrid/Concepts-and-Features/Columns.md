@@ -18,11 +18,11 @@ You can change the width of the column in **TreeGrid** to show the entire text
 {% highlight js %}
 
 
-$("#TreeGridContainer").ejTreeGrid({
+    $("#TreeGridContainer").ejTreeGrid({
 
-     //...
-     allowColumnResize: true,
-});
+         //...
+         allowColumnResize: true,
+    });
 
 
 
@@ -34,21 +34,27 @@ $("#TreeGridContainer").ejTreeGrid({
 
 The following code example shows you how to display the icon in the **TreeGrid** column.
 
-{% highlight js %}
+Code snippet to create a custom template element to be rendered
 
+{% highlight html %}
 
-<script type="text/x-jsrender" id="customColumnTemplate">     
-     <div  style='height:20px;' unselectable='on'>{{if hasChildRecords}}<div class='intend' style='height:1px; float:left; width:{{:level*20}}px; display:inline-block;'></div>
-       {{else !hasChildRecords}}
-       <div class='intend' style='height:1px; float:left; width:{{:(level)*20}}px; display:inline-block;'></div>
-       {{/if}}                         
-       <div class='{{if expanded}}e-treegridexpand {{else hasChildRecords}}e-treegridcollapse {{/if}} {{if level===4}}e-doc{{/if}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;
-       style='float: left;display:inline-block; unselectable='on'></div>
-       <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{:#data['Name']}}</div>
-     </div>
+    <script type="text/x-jsrender" id="customColumnTemplate">     
+         <div  style='height:20px;' unselectable='on'>{{if hasChildRecords}}
+         <div class='intend' style='height:1px; float:left; width:{{:level*20}}px; display:inline-block;'> </div>
+         {{else !hasChildRecords}}
+         <div class='intend' style='height:1px; float:left; width:{{:(level)*20}}px; display:inline-block;'> </div>
+         {{/if}}                         
+         <div class='{{if expanded}}e-treegridexpand {{else hasChildRecords}}e-treegridcollapse {{/if}} {{if level===4}}e-doc{{/if}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;style='float: left;display:inline-block; unselectable='on'> </div>
+         <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'> {{:#data['Name']}} </div>
+         </div>
     </script>   
+    
+{% endhighlight %}
 
-    <style type="text/css">
+Code snippet for applying style to the template element
+
+{% highlight css %}
+
         .e-treegrid .e-treegridexpand {
             background-image: url(../images/treegrid/folder-open.png);
             background-repeat: no-repeat;
@@ -75,9 +81,12 @@ The following code example shows you how to display the icon in the **TreeGrid*
         .e-treegrid .e-treegridcollapse:before {
             content: none;
         }
-    </style>
+        
+{% endhighlight %}
 
-    <script type="text/javascript">         
+Code snippet to render custom template in TreeGrid columns
+
+{% highlight js %}
 
         $(function () {
 
@@ -90,9 +99,6 @@ The following code example shows you how to display the icon in the **TreeGrid*
                           { field: "DateModified", headerText: "Date Modified" }]
             })
         });
-
-    </script>
-
 
 {% endhighlight %}
 
@@ -133,7 +139,7 @@ Filtering type can be defined by **filterEditType** property in each column obje
 {% highlight js %}
 
 
-$("#treegrid1").ejTreeGrid(
+    $("#treegrid1").ejTreeGrid(
         {   
            // ...     
             filterBarMode: "immediate",
@@ -182,21 +188,21 @@ You can also disable the visibility of the particular column in column collectio
 {% highlight js %}
 
 
-$("#treegrid1").ejTreeGrid(
-{   
-    // ...     
-    showColumnChooser: true,
-    allowSorting: true,
-    allowMultiSorting: true,
-    columns:[
+    $("#treegrid1").ejTreeGrid(
+    {   
+        // ...     
+        showColumnChooser: true,
+        allowSorting: true,
+        allowMultiSorting: true,
+        columns:[
               // ...  
               { field: "duration", headerText: "Duration", 
                 visible: false
               }
               // ...  
             ],
-    // ...             
-});
+        // ...             
+    });
 
 
 {% endhighlight %}

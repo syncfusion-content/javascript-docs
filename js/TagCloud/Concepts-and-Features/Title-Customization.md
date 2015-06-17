@@ -21,14 +21,13 @@ The following steps explains you on how to configure **title** for a **TagCloud*
 
 {% highlight html %}
 
-**[HTML]**
+
          <div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Disable the Title element of TagCloud control as follows.
 <script>
@@ -58,14 +57,14 @@ The following steps explains you on how to configure **titleText** for a **TagCl
 
 {% highlight html %}
 
-**[HTML]**
+
          <div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 // Disable the Title element of TagCloud control as follows.
 <script>
@@ -98,14 +97,12 @@ The following steps explains you to configure **titleImage** for a **TagCloud**.
 
 {% highlight html %}
 
-**[HTML]**
          <div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // Disable the Title element of TagCloud control as follows.
 <script>
@@ -125,7 +122,6 @@ Using CSS class you can resize the image content as follows.
 
 {% highlight css %}
 
-**[Style]**
 <style type="text/css">
 **.e-title-img** {
             height::35px;

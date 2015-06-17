@@ -31,19 +31,19 @@ Open **Visual Studio** and create a new project by clicking **New Project**. Sel
 
 To create a new web form in the application
 
-1. Right-Click on the project and select **Add**
+1\. Right-Click on the project and select **Add**
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img3.png" Caption="Add New Item Wizard"%}
 
 
 
-2. Click **New Item** and select **HTML** Page from the listed templates
+2\. Click **New Item** and select **HTML** Page from the listed templates
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img4.png" Caption="Adding HTML page"%}
 
 
 
-3. Name the page as **Default.html** and click **OK**.
+3\. Name the page as **Default.html** and click **OK**.
 
 
 
@@ -51,13 +51,13 @@ To create a new web form in the application
 
 **Add References**
 
-1. In the **Solution Explorer**, right-click the **References** folder and then click **Add Reference**
+1\. In the **Solution Explorer**, right-click the **References** folder and then click **Add Reference**
 
 
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img5.png" Caption="Adding reference"%}
 
-2. Add the following assemblies
+2\. Add the following assemblies
 
 * System.Web.Routing,  
 
@@ -101,7 +101,7 @@ To create a new web form in the application
 
 
 
-3. Click **OK**
+3\. Click **OK**
 
 
 
@@ -217,11 +217,11 @@ namespace ReportViewerDemo.Api
 
 **WebAPI Routing**
 
-1. Right-Click the **Project**, select **Add >** and select **Global.asax** file from the listed templates.
+1\. Right-Click the **Project**, select **Add >** and select **Global.asax** file from the listed templates.
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img7.png" Caption="Adding Global.asax"%}
 
-2. You can route the **WebAPI** in **Application_Start** event into **Global.asax** file as follows.
+2\. You can route the **WebAPI** in **Application_Start** event into **Global.asax** file as follows.
 
 {% highlight c# %}
 
@@ -263,7 +263,7 @@ Run the sample application and you can see the **ReportViewer** on the page as d
 
 **ReportViewer** supports to load RDL/RDLC files from SSRS Server. The following steps help you to load reports from SSRS Server.
 
-1. Set the **reportPath** from SSRS and SSRS **reportServerUrl** in the **ReportViewer** properties.
+1\. Set the **reportPath** from SSRS and SSRS **reportServerUrl** in the **ReportViewer** properties.
 
 {% highlight html %}
 
@@ -288,7 +288,7 @@ $("#viewer").ejReportViewer(
 
 {% endhighlight %}
 
-2. Add the credential information in **ReportApiController’s****OnInitReportOptions** method which is available in **IReportController**.
+2\. Add the credential information in **ReportApiController’s****OnInitReportOptions** method which is available in **IReportController**.
 
 {% highlight c# %}
 
@@ -305,7 +305,7 @@ $("#viewer").ejReportViewer(
 
 
 
-3. Run the application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
+3\. Run the application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img9.png" Caption="Report from SSRS"%}
 
@@ -313,7 +313,7 @@ $("#viewer").ejReportViewer(
 
 The **ReportViewer** has data binding support to visualize the **RDLC** reports. The following code example helps you to bind data to **ReportViewer**.
 
-1. Assign the **RDLC** report path to **ReportViewer’s****ReportPath** property and set the data sources to the **ReportViewer’s****dataSources** property.
+1\. Assign the **RDLC** report path to **ReportViewer’s****ReportPath** property and set the data sources to the **ReportViewer’s****dataSources** property.
 
 {% highlight html %}
 
@@ -352,7 +352,7 @@ $("#viewer").ejReportViewer(
 
 {% endhighlight %}
 
-2. Run the application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
+2\. Run the application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img10.png" Caption="Product List RDLC Report"%}
 

@@ -88,9 +88,8 @@ The following steps explains you the details of data binding with **DropdownList
 
 {% highlight html %}
 
-**[HTML]**
 
-          <div class="control">
+       <div class="control">
         <div class="ctrllabel">Select a bike</div>
         <input type="text" id="dropdownlist" />
        </div>
@@ -100,10 +99,8 @@ The following steps explains you the details of data binding with **DropdownList
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Initialize the control in JavaScript
-   <script type="text/javascript">       
+   <script type="text/javascript">
+        // Initialize the control in JavaScript       
         $(function () {
             // declaration
             BikeList = [
@@ -114,8 +111,8 @@ The following steps explains you the details of data binding with **DropdownList
             ];
             $('#dropdownlist').ejDropDownList({
                 dataSource: BikeList,
-            fields: { id: "id", text: "text", value: "text" }
-        });
+                fields: { id: "id", text: "text", value: "text" }
+            });
         });
     </script>
 
@@ -139,8 +136,6 @@ The following steps explains you the details of data binding from remote.
 
 {% highlight html %}
 
-**[HTML]**
-
          <div class="ctrllabel">Select a customer</div>
          <input type="text" id="dropdownlist" />
 
@@ -148,11 +143,8 @@ The following steps explains you the details of data binding from remote.
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Initialize the control in JavaScript
-
-<script type="text/javascript">       
+<script type="text/javascript">
+       // Initialize the control in JavaScript       
        $(function () {
             // DataManager creation
             var dataManger = ej.DataManager({
@@ -200,7 +192,9 @@ The following example depicts the way to bind data to the **DropdownList** widge
 
 
 
-> {% include image.html url="/js/DropDownList/Concepts-and-Features/Data-binding_images/Data-binding_img3.png" Caption=""%} _**Note: You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.**_
+> {% include image.html url="/js/DropDownList/Concepts-and-Features/Data-binding_images/Data-binding_img3.png" Caption=""%} 
+
+_**Note: You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.**_
 
 
 
@@ -208,12 +202,10 @@ The following example depicts the way to bind data to the **DropdownList** widge
 
 {% highlight html %}
 
-**[HTML]**
-
-        <!doctype html>
-          <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DropCtrl">
-          <head>
-         <title>Essential Studio for JavaScript :  Angular</title>
+<!doctype html>
+   <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DropCtrl">
+    <head>
+    <title>Essential Studio for JavaScript :  Angular</title>
     <!-- style sheet for default theme(flat azure) -->
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
@@ -223,8 +215,8 @@ The following example depicts the way to bind data to the **DropdownList** widge
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
-         </head>
-          <body ng-controller="DropDownCtrl">
+    </head>
+    <body ng-controller="DropDownCtrl">
      <div class="content-container-fluid">
         <div class="row">
             <div class="cols-sample-area">
@@ -243,14 +235,12 @@ The following example depicts the way to bind data to the **DropdownList** widge
             </div>
         </div>
     </div>
-    </body>
-	</html>
+</body>
+</html>
 
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <script type="text/javascript">
 // Initialize the control and bind the data in JavaScript
@@ -283,7 +273,6 @@ The following example depicts the way to bind data to the **DropdownList** widge
 
 {% highlight css %}
 
-**[css]**
 <style type="text/css">
         .control {
             margin-top: 10px;
@@ -294,7 +283,7 @@ The following example depicts the way to bind data to the **DropdownList** widge
             text-indent: 10px;
             width: 81%;
         }
-    </style>
+</style>
 
 {% endhighlight %}
 
@@ -325,17 +314,18 @@ For more information about the knockout binding, refer the following online docu
 The following example depicts the way to bind data to the **DropdownList** widget through the knockout support that enables and populates data to a **DropdownList** widget based on the value set to the other dropdown widget.
 
 
-> {% include image.html url="/js/DropDownList/Concepts-and-Features/Data-binding_images/Data-binding_img5.png" Caption=""%}_**Note: You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.**_
+> {% include image.html url="/js/DropDownList/Concepts-and-Features/Data-binding_images/Data-binding_img5.png" Caption=""%}
+
+_**Note: You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.**_
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
 {% highlight html %}
 
-**[HTML]**
 
-              <!DOCTYPE html>
-             <html xmlns="http://www.w3.org/1999/xhtml">
-            <head>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
@@ -343,8 +333,8 @@ The following example depicts the way to bind data to the **DropdownList** widge
     <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
-        </head>
-        <body>
+</head>
+<body>
     <div class="control" style="float: left">
         <div class="ctrllabel">Select a section</div>
         <input id="dropdownlist" data-bind="ejDropDownList: { dataSource: dataList, value: value }">
@@ -353,15 +343,12 @@ The following example depicts the way to bind data to the **DropdownList** widge
         <div class="ctrllabel">Knockout textbox binding</div>
         <input type="text" id="Text4" class="input ejinputtext" data-bind="value: value" />
     </div>
-
-    </body>
-	</html>
+</body>
+</html>
 
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**
 
 <script type="text/javascript">
         // Initialize the control and bind the data in JavaScript
@@ -395,7 +382,6 @@ The following example depicts the way to bind data to the **DropdownList** widge
 
 {% highlight css %}
 
-**[css]**
 <style type="text/css">
         .ejinputtext {
             background-color: #fff;
@@ -404,7 +390,7 @@ The following example depicts the way to bind data to the **DropdownList** widge
             height: 30px;
             outline: medium none;
         }
-    </style>
+</style>
 
 
 {% endhighlight %}

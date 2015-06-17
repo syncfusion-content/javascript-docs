@@ -19,8 +19,6 @@ The following steps explains you the implementation of custom action.
 
 {% highlight html %}
 
-**[HTML]**
-
      <div id="customAction" title="Audi-R8">
         <img src="Content/images/r8-coupe.png" />
         The Audi R8 was initially equipped with a 4.2 litre V8 engine. Specifically, it is an all-aluminum alloy 32-valve (four valves per cylinder) petrol engine, utilising Fuel Stratified Injection (FSI), and has a displacement of 4,163 cubic centimetres (254.0 cu in).
@@ -30,15 +28,13 @@ The following steps explains you the implementation of custom action.
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Sets the actionButtons property in the Dialog function. The default value of actionButtons is [“close”]
-    <script type="text/javascript">
-        $("#customAction").ejDialog({
-            width: 300,
-            actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]                               
-        });
-    </script>
+<script type="text/javascript">
+// Set the actionButtons property in the Dialog function. The default value of actionButtons is [“close”]
+    $("#customAction").ejDialog({
+        width: 300,
+        actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]                               
+    });
+</script>
 
 {% endhighlight %}
 

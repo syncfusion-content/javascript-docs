@@ -18,8 +18,6 @@ The property **thumbnailSourceID** specifies the source for **thumbnail** elemen
 You can refer the following code example of **Thumbnail** in **Rotator**.
 
   {% highlight html %}
-
-  **[HTML]**
   
   	<div class="cols-sample-area">
 	    <ul id="slidercontent">
@@ -62,7 +60,6 @@ You can refer the following code example of **Thumbnail** in **Rotator**.
 
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {

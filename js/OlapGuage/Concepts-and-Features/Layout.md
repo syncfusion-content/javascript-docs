@@ -13,11 +13,11 @@ The **OLAP Gauge** control provides support to display multiple gauges in a stru
 
 #### Supported Layouts
 
-    * **Wrap Layout**: Based on the available space, gauges are aligned and displayed automatically.
+    1. Wrap Layout: Based on the available space, gauges are aligned and displayed automatically.
 
-    * **Row count**: Specifies the number of gauge controls to be displayed row-wise.
+    2. Row count: Specifies the number of gauge controls to be displayed row-wise.
 
-    * **Column count**: Specifies the number of gauge controls to be displayed column-wise.
+    3. Column count: Specifies the number of gauge controls to be displayed column-wise.
 
 #### Layout Customization 
 
@@ -28,8 +28,6 @@ You can customize/limit the number of gauges to be displayed in the table with t
 You can set the number of gauges to be displayed in row using **rowsCount** property. By default the value is **0**.
 
 {% highlight js %}
-
-[JS]
 
 $(function () {
      $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
@@ -108,7 +106,6 @@ You can set the number of gauges to be displayed in column using **columnsCount*
 
 {% highlight js %}
 
-[JS]
 $(function () {
      $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
          backgroundColor: "transparent", columnsCount: 2,

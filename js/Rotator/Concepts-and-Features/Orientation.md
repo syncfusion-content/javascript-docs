@@ -28,7 +28,6 @@ This property sets the **Rotator** in **horizontal** **orientation**. You can re
 
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -43,7 +42,6 @@ This property sets the **Rotator** in **horizontal** **orientation**. You can re
   
   {% highlight js %}
 
-  **[JavaScript]**
   
   	<script type="text/javascript">
 	    $(function () {
@@ -68,7 +66,6 @@ This property sets the **Rotator** in **vertical** **orientation**. You can refe
 
   {% highlight js %}
 
-  **[JavaScript]**
   	
 <script type="text/javascript">
 	    $(function () {
@@ -82,7 +79,6 @@ This property sets the **Rotator** in **vertical** **orientation**. You can refe
   
   {% highlight js %}
 
-  **[JavaScript]**
   
 <script type="text/javascript">
 	    $(function () {

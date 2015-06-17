@@ -13,14 +13,10 @@ documentation: ug
 
 {% highlight js %}
 
-[JS]
-<script type="text/javascript">
 $(function () {
         $("#OlapChart").ejOlapChart({ url: "../wcf/OlapChartService.svc",
         animation: true, **isResponsive:true**, type:ej.olap.OlapChart.ChartTypes.Column, commonSeriesOptions: {  tooltip: { visible: true} }, size: { height: "460px", width: "100%" },load: "loadTheme"
         });
-</script>
-
 
 {% endhighlight %}
 

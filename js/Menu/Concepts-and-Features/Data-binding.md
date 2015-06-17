@@ -76,7 +76,6 @@ To define the local data to the **Menu** control, map the user-defined **JSON** 
 
 {% highlight html %}
 
-**[HTML]**       
 
 <div class="content-container-fluid">
     <div class="row">
@@ -89,8 +88,6 @@ To define the local data to the **Menu** control, map the user-defined **JSON** 
 {% endhighlight %}
 
 {% highlight js %}
-
-**[Javascript]**
 
 // In JavaScript, you can initialize the Menu control.
 
@@ -167,7 +164,6 @@ In the following example, [http://mvc.syncfusion.com/Services/Northwnd.svc/](htt
 
 {% highlight html %}
 
-**[HTML]**
 
 <div class="content-container-fluid">
     <div class="row">
@@ -181,7 +177,6 @@ In the following example, [http://mvc.syncfusion.com/Services/Northwnd.svc/](htt
 
 {% highlight js %}
 
-**[Javascript]**
    
 // Initialize the Menu control in JavaScript.
 

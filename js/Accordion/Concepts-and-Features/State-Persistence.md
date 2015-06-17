@@ -19,13 +19,12 @@ The following steps explains to enable state maintenance for **Accordion**.
 
 {% highlight html %}
 
-   **[HTML]**
    
     <div id="accordion" style="width: 400px"> 
         <h3>  
             <a href="#">Orubase</a></h3>    
       <div>  <!-- add accordion contents here to load contents under this header -->  
-            Orubase is the only mobile application development framework built, especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+            Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
         </div>  
         <h3>   
             <a href="#">WinRTXAML</a></h3>     
@@ -45,13 +44,14 @@ The following steps explains to enable state maintenance for **Accordion**.
 
 {% highlight js %}
 
-[JavaScript]
-// Configures the enablePersistence for the Accordion
+<script>
+// Configure enablePersistence for Accordion
 
             $("#accordion").ejAccordion({
                 enablePersistence:true
             });
 
+</script>
 
 {% endhighlight %}
 

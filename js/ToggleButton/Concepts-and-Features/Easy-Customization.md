@@ -23,7 +23,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="checkbox" id="toggle_default" />    
     <br />
@@ -34,7 +33,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight js %}
 
-**[JavaScript]**
 
 //Initialize the control in JavaScript
 
@@ -149,7 +147,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="checkbox" id="toggle_content" />
     <label for="toggle_content">Toggle</label>
@@ -158,7 +155,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight js %}
 
-**[JavaScript]**
 
 //Initialize the control in JavaScript
 
@@ -233,7 +229,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
     <table>
         <tr>
@@ -279,7 +274,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight js %}
 
-**[JavaScript]**
 
 //Initialize the control in JavaScript
 
@@ -351,7 +345,6 @@ Configure the styles
 
 {% highlight css %}
 
-[CSS]
     <style>
         .control {
             width: 600px;
@@ -407,7 +400,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
     <table>
         <tr>
@@ -465,7 +457,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight js %}
 
-**[JavaScript]**
 
 //Initialize the control in JavaScript
 
@@ -571,7 +562,6 @@ Configure the styles
 
 {% highlight css %}
 
-[CSS]
     <style>
         .normal {
             width: 300px;
@@ -625,7 +615,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
      <table>
         <tr>
@@ -696,7 +685,7 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight js %}
 
-**[JavaScript]**
+
 
 //Initialize the control in JavaScript
 
@@ -834,7 +823,7 @@ Configure the styles
 
 {% highlight css %}
 
-[CSS]
+
     <style>
         .one {
             width: 450px;
@@ -896,7 +885,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight html %}
 
-**[HTML]**
 
     <table>
         <tr>
@@ -927,7 +915,6 @@ The following steps explains you the details about rendering the **Toggle Button
 
 {% highlight js %}
 
-**[JavaScript]**
 
 //Initialize the control in JavaScript
 
@@ -998,7 +985,6 @@ Configure the CSS styles to apply on buttons.
 
 {% highlight css %}
 
-**[CSS]**
 <style type="text/css" class="cssStyles">
         /* Customize the button background */
         .e-togglebutton.customCss1 {

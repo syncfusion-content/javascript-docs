@@ -55,7 +55,6 @@ The following code example illustrates on how to render priority feature in the�
 
 {% highlight js %}
 
-[JavaScript]
 <div id=”Schedule”></div>
 <script type=”text/javascript”>
 $(function () {
@@ -160,7 +159,6 @@ The following code example illustrates on how to render priority feature with us
 
 {% highlight js %}
 
-[JavaScript]
 <div id=”Schedule”></div>
 <script type=”text/javascript”>
 $(function () {
@@ -255,7 +253,6 @@ background-position: 2px;
 
 {% highlight js %}
 
-[JavaScript]
 <div id=”Schedule”></div>
 <script type=”text/javascript”>
 $(function () {

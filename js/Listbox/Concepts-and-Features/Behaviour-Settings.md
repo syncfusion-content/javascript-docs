@@ -22,8 +22,6 @@ The following steps explains you the configuration of **targetID** property in *
 
 {% highlight html %}
 
-**[HTML]**
-
 <div id="control">
     <h5 class="ctrllabel">Select a font style</h5>
     <ul id="listboxSample"></ul>
@@ -51,10 +49,8 @@ The following steps explains you the configuration of **targetID** property in *
 {% endhighlight %}
 
 {% highlight html %}
-
-**[JavaScript]**
  
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
  
 <script type="text/javascript">
     $(function () {
@@ -82,14 +78,13 @@ The following steps explains you the configuration of **selectedItemIndex** prop
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
         <h5 class="ctrllabel">Select a skill</h5>
         <ul id="listboxsample"></ul>
     </div>
 
-**[JavaScript]**  
+
 
 <script type="text/javascript">
     $(function () {
@@ -128,7 +123,6 @@ The following steps explains you the configuration of **enabled** property in **
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -139,9 +133,8 @@ The following steps explains you the configuration of **enabled** property in **
 
 {% highlight js %}
 
-**[JavaScript]**
   
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
 <script type="text/javascript">
     $(function () {
         // JSON data declaration
@@ -151,7 +144,7 @@ The following steps explains you the configuration of **enabled** property in **
         { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
         { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
         ];
-        //Renders the ListBox by mapping fields with JSON data
+        //Render ListBox by mapping fields with JSON data
         $("#listboxSample").ejListBox({
             width: "240", dataSource: skillset,
             fields: { text: "skill" }, enabled: false

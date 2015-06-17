@@ -21,7 +21,6 @@ The following steps guide you in uploading the file **synchronously**.
 
 {% highlight html %}
 
-**[HTML]**
 
       <div class="control">
         <form id="upload" method="post" action="saveFiles.ashx">
@@ -34,7 +33,6 @@ The following steps guide you in uploading the file **synchronously**.
 
 {% highlight js %}
 
-**[JavaScript]**  
 
 // Initialize the control in JavaScript.
 

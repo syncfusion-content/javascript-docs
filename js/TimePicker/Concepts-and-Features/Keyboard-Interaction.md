@@ -75,7 +75,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-**[HTML]**
 
         <input type="text" id="time" accesskey="j"/>
 
@@ -83,7 +82,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight js %}
 
-**[JavaScript]**
 
 // You can render the TimePicker control using the following code.
    <script type="text/javascript">

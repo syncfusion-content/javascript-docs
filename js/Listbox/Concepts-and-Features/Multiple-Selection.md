@@ -21,7 +21,6 @@ The following steps explain you the configuration of the **allowMultiSelection**
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -32,9 +31,8 @@ The following steps explain you the configuration of the **allowMultiSelection**
 
 {% highlight js %}
 
-**[JavaScript]**
 
-// Configures the allowMultiSelection option for ListBox control as follows
+// Configure allowMultiSelection option for ListBox control as follows
 <script type="text/javascript">
     $(function () {
         // JSON data declaration
@@ -69,7 +67,6 @@ The following steps explains you the configuration of **selectedItemlist** prope
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -81,9 +78,8 @@ The following steps explains you the configuration of **selectedItemlist** prope
 
 {% highlight js %}
 
-**[JavaScript]**
-  
-// Initializes the control in JavaScript
+
+// Initialize the control in JavaScript
 
 <script type="text/javascript">
     $(function () {
@@ -123,7 +119,6 @@ The following steps explains you the configuration of checkbox options in **List
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -134,9 +129,8 @@ The following steps explains you the configuration of checkbox options in **List
 
 {% highlight js %}
 
-**[JavaScript]**
 
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
 
 <script type="text/javascript">
     $(function () {
@@ -173,7 +167,6 @@ The following steps explains you the configuration of checkbox options in **List
 
 {% highlight html %}
 
-**[HTML]**
 
 <div id="control">
     <h5 class="ctrllabel">Select a skill</h5>
@@ -184,9 +177,8 @@ The following steps explains you the configuration of checkbox options in **List
 
 {% highlight js %}
 
-**[JavaScript]**
 
-// Initializes the control in JavaScript
+// Initialize the control in JavaScript
 
 <script type="text/javascript">
     $(function () {

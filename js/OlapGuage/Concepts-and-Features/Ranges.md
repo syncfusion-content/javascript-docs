@@ -17,7 +17,6 @@ You can set the distance between the **ranges** and scales in **OlapGauge** usin
 
 {% highlight js %}
 
-[JS]
 $(function () {
  $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -90,7 +89,6 @@ You can set the background color for the **ranges** in **OlapGauge** using “**
 
 {% highlight js %}
 
-[JS]
 $(function () {
 $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
                             backgroundColor: "transparent", 
@@ -167,8 +165,6 @@ You can customize the **Range size** using “**size**” property.
 
 {% highlight js %}
 
-[JS]
-<script type="text/javascript">
 $(function () {
      $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
          backgroundColor: "transparent", 
@@ -231,8 +227,6 @@ $(function () {
          }]
      });
  });
-</script>
-
 
 {% endhighlight %}
 

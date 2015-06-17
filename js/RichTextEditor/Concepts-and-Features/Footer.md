@@ -31,7 +31,6 @@ Refer to the following code snippet to enable the footer in **RTE**.
 
 {% highlight js %}
 
-**[JavaScript]**
     $("#disable_tool").ejRTE({ **showFooter: true** });
 
 

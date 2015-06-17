@@ -70,7 +70,7 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
   <div class="content-container-fluid">      
             <div class="row">                
                 <div class="cols-sample-area">                                  
-<div class="frame">
+                    <div class="frame">
                         <div class="control">
                             <input type="text" id="dateTime" />
                         </div>
@@ -129,11 +129,11 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 
 {% highlight js %}
 
-    <script type="text/javascript">
-        $(function () {
-            $('#dateTime').ejDateTimePicker({ width: '180px', value: new Date(), minDateTime: "05/23/2014 09:00 AM", maxDateTime: "05/29/2014 09:00 PM" });
-        });
-    </script> 
+<script type="text/javascript">
+    $(function () {
+        $('#dateTime').ejDateTimePicker({ width: '180px', value: new Date(), minDateTime: "05/23/2014 09:00 AM", maxDateTime: "05/29/2014 09:00 PM" });
+    });
+</script> 
 
 
 {% endhighlight %}

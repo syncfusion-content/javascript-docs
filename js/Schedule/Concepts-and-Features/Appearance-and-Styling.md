@@ -25,7 +25,7 @@ For **Adaptive Schedule**, you can refer to the following **css** file in the ap
 
 {% highlight js %}
 
-**[JS]**
+
 
 <div id=”Schedule”></div>
 <script type=”text/javascript”>
@@ -84,7 +84,7 @@ Figure 110: Schedule displaying multiple resources in mobile mode
 
 {% highlight js %}
 
-**[Javascript]**
+
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -139,7 +139,7 @@ The following code eample explains how to change the height of the Schedule cont
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 
@@ -193,7 +193,7 @@ The following code example explains how to change the width of the **Schedule** 
 
 {% highlight js %}
 
-**[JavaScript]**
+
 <div id="Schedule1"> </div>
 <script>
 
@@ -259,7 +259,7 @@ The following code example explains how to change the cell height and width of t
 
 {% highlight js %}
 
-**[Javascript]**
+
 <div id="Schedule"> </div>
 <script>
 $(function () {

@@ -17,7 +17,6 @@ The **getValue**() method in **ColorPicker** returns the hexadecimal value.
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -25,7 +24,6 @@ The **getValue**() method in **ColorPicker** returns the hexadecimal value.
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
  <script>
    var ColorObj;
@@ -46,15 +44,12 @@ The **setValue**() method in **ColorPicker** is used to set the color value. The
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JAVASCRIPT]**
  
  <script>
    var ColorObj;
@@ -75,7 +70,6 @@ The **getColor**() method in **ColorPicker** control returns the color value in 
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -83,7 +77,6 @@ The **getColor**() method in **ColorPicker** control returns the color value in 
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
  <script>
    var ColorObj;

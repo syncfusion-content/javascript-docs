@@ -20,7 +20,6 @@ The following steps explains you on how to enable **Localization** property for 
 
 {% highlight html %}
 
-**[HTML]**
          <input type="text" id="time" />
 
 
@@ -30,7 +29,7 @@ The following steps explains you on how to enable **Localization** property for 
 
 {% highlight html %}
 
-**JavaScript]**
+
 **// You can enable localization property using the following code example.**
 
 <html>

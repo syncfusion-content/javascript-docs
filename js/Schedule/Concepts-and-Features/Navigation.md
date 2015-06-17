@@ -21,7 +21,6 @@ The following code example explains how to set the value for **enableAppointment
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 $(function () {
@@ -185,7 +184,6 @@ Once the required cells are selected, then a new appointment can be created for 
 
 {% highlight js %}
 
-**[JavaScript]**
 <div id="Schedule1"> </div>
 <script>
 

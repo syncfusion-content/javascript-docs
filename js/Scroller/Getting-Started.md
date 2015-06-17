@@ -85,7 +85,6 @@ This section explains briefly about how to create a **Scroller** in your applica
 
 {% highlight css %}
 
-    **[CSS]**
     
     <style type="text/css">
     

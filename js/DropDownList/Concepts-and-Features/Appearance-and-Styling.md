@@ -28,8 +28,6 @@ The following steps explains you the configuration of **popupHeight** & **popupW
 
 {% highlight html %}
 
-**[HTML]**
-
     <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -48,11 +46,8 @@ The following steps explains you the configuration of **popupHeight** & **popupW
 
 {% highlight js %}
 
-**[JavaScript]**  
-
-// Initializes the control in JavaScript
-
 <script type="text/javascript">
+    // Initialize the control in JavaScript
          $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -90,8 +85,6 @@ The following steps explains you the configuration of **height** & **width** pro
 
 {% highlight html %}
 
-**[HTML]**
-
     <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -109,13 +102,9 @@ The following steps explains you the configuration of **height** & **width** pro
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]** 
-
-// Initializes the control in JavaScript
  
 <script type="text/javascript">
-
+        // Initialize the control in JavaScript
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -141,13 +130,11 @@ _Figure 22: Dropdown with dropdown textbox customization property_
 
 **Defining the Water Mark property**
 
-The following steps explains the configuration of **watermarkText** properties in **DropdownList****.**
+The following steps explains the configuration of **watermarkText** properties in **DropdownList****.
 
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
 {% highlight html %}
-
-**[HTML]**
 
     <input type="text" id="dropdownlist" />
 
@@ -166,13 +153,9 @@ The following steps explains the configuration of **watermarkText** properties i
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]**
-
-// Initialize the control in JavaScript
   
 <script type="text/javascript">
-
+   // Initialize the control in JavaScript
    $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -201,8 +184,6 @@ The following steps explains you  the configuration of Rounded corner of the **D
 
 {% highlight html %}
 
-**[HTML]**
-
     <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -221,12 +202,8 @@ The following steps explains you  the configuration of Rounded corner of the **D
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-      
+        // Initialize the control in JavaScript      
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -258,8 +235,6 @@ You can add the icons or images with list items in dropdown popup by using sprit
 * In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
 {% highlight html %}
-
-**[HTML]**
 
     <input type="text" id="dropdownlist" />
 
@@ -296,18 +271,13 @@ You can add the icons or images with list items in dropdown popup by using sprit
 
 {% highlight js %}
 
-**[JavaScript]**
-
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
+        // Initialize the control in JavaScript
         var target;
         $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "mailtoolslist"
-                });
-
-
+            });
         });	
     </script>
 
@@ -318,8 +288,6 @@ You can add the icons or images with list items in dropdown popup by using sprit
 
 
 {% highlight css %}
-
-[CSS]
 
 <style type="text/css" class="cssStyles">
         /*controls*/
@@ -398,8 +366,6 @@ The following steps explains you the configuration of **enableAnimation** proper
 
 {% highlight html %}
 
-**[HTML]**
-
     <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -418,12 +384,8 @@ The following steps explains you the configuration of **enableAnimation** proper
 
 {% highlight js %}
 
-**[JavaScript]** 
-
-// Initialize the control in JavaScript
-
 <script type="text/javascript">
-
+   // Initialize the control in JavaScript
    $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -479,8 +441,6 @@ The following steps explains you the configuration of **cssClass** properties in
 
 {% highlight html %}
 
-**[HTML]**
-
     <input type="text" id="dropdownlist" />
 
         <div id="list">
@@ -498,13 +458,9 @@ The following steps explains you the configuration of **cssClass** properties in
 {% endhighlight %}
 
 {% highlight js %}
-
-**[JavaScript]** 
-
-// Initialize the control in JavaScript
  
 <script type="text/javascript">
-
+// Initialize the control in JavaScript
 $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -521,8 +477,7 @@ $(function () {
 
 
 {% highlight css %}
-
-[CSS]  
+  
   <style type="text/css">
         .customclass {
             background-color: #FFFFCC;

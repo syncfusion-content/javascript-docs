@@ -24,7 +24,7 @@ Alt + j               </td><td>
 Focuses into the <b>ColorPicker</b> control</td></tr>
 <tr>
 <td>
-Alt + Down</td><td>
+Enter</td><td>
 Open / Close the Popup</td></tr>
 <tr>
 <td>
@@ -72,7 +72,6 @@ The following steps explain how you can enable **keyboard** interaction for **Co
 
 {% highlight html %}
 
-**[HTML]**
 
     <input type="text" id="colorPicker" />    
 
@@ -80,7 +79,6 @@ The following steps explain how you can enable **keyboard** interaction for **Co
 
 {% highlight js %}
 
-**[JAVASCRIPT]**
  
 <script>
     jQuery(function ($) {

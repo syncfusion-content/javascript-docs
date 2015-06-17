@@ -35,7 +35,6 @@ The following steps explains you the details about rendering the **Button** with
 
 {% highlight html %}
 
-[HTML]
 
     <button id="buttonType_button">button</button>
     <br />
@@ -49,10 +48,8 @@ The following steps explains you the details about rendering the **Button** with
 
 {% highlight js %}
 
-[JavaScript]
-
-// Initialize the control in JavaScript
 <script type="text/javascript">
+    // Initialize the control in JavaScript
     //type property is used to render different type of buttons
     $(function () {
         $("#buttonType_button").ejButton({

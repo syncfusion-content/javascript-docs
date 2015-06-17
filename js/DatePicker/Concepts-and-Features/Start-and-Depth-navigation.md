@@ -44,20 +44,15 @@ The following steps explain you how to specify the **Start Level** view in **Dat
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
 {% highlight html %}
-  
-  **[HTML]**
-  
+
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to specify the Start Level view in DatePicker widget
-
 <script type="text/javascript">
+  // Add the code to specify the Start Level view in DatePicker widget
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
@@ -110,20 +105,15 @@ The following steps explain you how to get the **Depth Level.**
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
 {% highlight html %}
-  
-  **[HTML]**
-  
+
       <input id="datepicker" type="text" />
       
   {% endhighlight %}
   
   {% highlight js %}
 
-  **[JavaScript]**
-
-// Add the code to render the Depth Level
-
 <script type="text/javascript">
+  // Add the code to render the Depth Level
         $(function () {
             // declaration
             $("#datepicker").ejDatePicker({
