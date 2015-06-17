@@ -40,8 +40,6 @@ Use the following code example for including time options in start date and end 
 
 {% highlight js %}
 
-    // data source for ejGantt control with time options
-
         var taskDetails = [{
             taskID: 1,
             taskName: "Planning",
@@ -83,7 +81,7 @@ Use the following code example for including time options in start date and end 
             ]}
 
 
-        $(function () {
+        $(function() {
             $("#GanttContainer").ejGantt({
                 dataSource: projectData,
                 taskIdMapping: "taskID",
