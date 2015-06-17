@@ -19,7 +19,7 @@ documentation: ug
 
 * jQuery.Globalize
 
-As of now, all our Syncfusion components supports the latest version of jQuery (**jQuery 2.1.3**) - which supports almost all the old and modern browsers.
+As of now, all our Syncfusion components supports the latest version of jQuery (**jQuery 2.1.4**) - which supports almost all the old and modern browsers.
 
 **jsRender** script file is required to render the templates.
 
