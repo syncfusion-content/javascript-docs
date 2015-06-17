@@ -32,15 +32,14 @@ You can find the common **angular.min.js** from the following installed location
 <table>
 <tr>
 <td>
-**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
 </td>
 </tr>
 <tr>
 <td> 
+<b>For example</b>, If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**For example**, If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-<br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
 </td>
 </tr>
 </table>
@@ -51,15 +50,14 @@ The **ej.widget.angular.min.js** file can be copied from the below specified loc
 <table>
 <tr>
 <td>
-**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common 
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common 
 </td>
 </tr>
 <tr>
 <td>
-</br>
-**For example**, If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<b>For example</b>, If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
 </td>
 </tr>
 </table>
@@ -140,19 +138,17 @@ AngularJS applications are controlled by the Controllers, which maintains the en
 
 ### Module
 
-A **module** is a container for the various parts of an application that we create and it mainly defines an application. All the controllers within an application should belong to this module.
+A **Module** is a container for the various parts of an application that we create and it mainly defines an application. All the controllers within an application should belong to this module.
 
 To use our Syncfusion widgets in AngularJS applications, all the EJ directives are encapsulated into a single module called **ejangular**. Therefore, in order to make use of Syncfusion widget’s angular features, you need to set your application’s module name as **ejangular** as depicted in the below sample code, 
 
 {% highlight js %}
 
 
-    <script type="text/javascript">
         angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl', function ($scope) {
                $scope.dateValue = "2/3/2013";
-           });
-    </script>
+        });
 
 
 
@@ -162,7 +158,7 @@ To use our Syncfusion widgets in AngularJS applications, all the EJ directives a
 
 ### Data binding
 
-Data-binding can be defined as an automatic synchronization of data between model and View components. Our Syncfusion widgets supports both one-way and two-way (ng-model binding) binding.
+Data-binding can be defined as an automatic synchronization of data between model and View components. Our Syncfusion widgets supports both one-way and two-way (**ng-model**) binding.
 
 #### One way binding
 
