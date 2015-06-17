@@ -73,7 +73,6 @@ The **Ribbon** can be easily configured to the DOM element such as **&lt;div&g
 
 	{% highlight html %}
 	
-	**[HTML]**
 	
 	<!-- ... -->
 	<head>
