@@ -46,12 +46,10 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% highlight html %}
 
-
     <body style="width:100%;height:100%;position:static;">
        <!--Add  TreeGrid control here-->
        <div id="TreeGridContainer" style="width:60%;height:80%;position:absolute;"></div>
     </body>
-
 
 {% endhighlight %}
 
@@ -198,7 +196,6 @@ This section explains how to create a **TreeGrid** control in your application w
 
      });
 
-
 {% endhighlight %}
 
 
@@ -217,13 +214,11 @@ Enable the multicolumn sorting in **ejTreeGrid** by setting **allowMultiSorting*
 
 {% highlight js %}
 
-    $("#TreeGridContainer").ejTreeGrid({
-        //...
-        allowSorting: true,
-        allowMultiSorting:true           
-    });
-
-
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            allowSorting: true,
+            allowMultiSorting:true           
+        });
 
 {% endhighlight %}
 
@@ -244,7 +239,6 @@ You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows
             editMode: "cellEditing"
         }
     });
-
 
 {% endhighlight %}
 
