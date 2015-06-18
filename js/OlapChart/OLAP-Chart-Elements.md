@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## OLAP Chart Elements
+##OLAP Chart Elements
 
 {% include image.html url="/js/OlapChart/OLAP-Chart-Elements_images/OLAP-Chart-Elements_img1.png" Caption="OLAP Chart"%}
 

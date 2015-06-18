@@ -7,19 +7,17 @@ control: OLAP Chart
 documentation: ug
 ---
 
-### Marker and Cross Hair 
+##Marker and Cross Hair 
 
 **Markers** are the symbols that represent on the series of the Chart Area. **Cross Hair** helps you to view the value at mouse position or touch contact point.
 
-**Real-time use of Cross Hair**
+###Real-time use of Cross Hair
 
 You can view the information while moving the mouse pointer over the Chart Area with the help of Cross Hair. For example, in a line chart you can get exact values of x and y axis while moving the mouse on Chart Area.
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img1.png" Caption="Real time use of Cross Hair"%}
 
-<br/>
-
-**Marker Shape Customization** 
+###Marker Shape Customization
 
 In **OlapChart**, you can customize the marker shape with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
 
@@ -43,9 +41,7 @@ function onSeriesRenders(args) {
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img2.png" Caption="Marker Shape Customization"%}
 
-<br/>
-
-**Cross Hair Customization** 
+###Cross Hair Customization
 
 In order to view the value at mouse position or touch contact point, you can use the **crosshair** property. You can customize the appearance using the following code example.
 
