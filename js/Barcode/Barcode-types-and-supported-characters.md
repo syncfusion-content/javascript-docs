@@ -11,8 +11,6 @@ documentation: ug
 
 The following table contains the supported types and associated valid characters.
 
-_Table_ _1_ _:_ _Table of Barcode types and supported character_
-
 <table>
 <tr>
 <td>
@@ -94,4 +92,4 @@ Code128C</td><td>
 variable</td></tr>
 </table>
 
-
+_Table of Barcode types and supported character_
