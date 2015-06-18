@@ -9,7 +9,7 @@ documentation: ug
 
 ### Chart Types
 
-Essential **OLAP Chart JS** supports 13 different types of chart as follows:
+Essential **OLAP Chart JS** supports 14 different types of chart as follows:
 
    * Column
 

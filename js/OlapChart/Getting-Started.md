@@ -27,21 +27,21 @@ The architecture gives a clear idea about how the control rendering takes place 
 
 The primary reasons for using service in an **OLAP** processing are as follows:
 
-1. **DataSource Connectivity:** You can establish a connection between different cube data sources such as
+1.**DataSource Connectivity:** You can establish a connection between different cube data sources such as
 
-    * Offline Cube
+   * Offline Cube
 
-    * Online Cube (XML/A)
+   * Online Cube (XML/A)
 
-    * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
+   * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
 
-2. **Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
+2.**Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
 
-    * Availability of cubes.
+   * Availability of cubes.
 
-    * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
+   * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
 
-    * Localized information is also available in cube schema.  
+   * Localized information is also available in cube schema.  
 
 3. **MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap**.**Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
@@ -96,7 +96,7 @@ Select the following assemblies:
 
    * Syncfusion.EJ.Olap.dll.
 
-Click **OK.**
+Click **OK**.
 
 **Add Scripts and Styles** 
 
@@ -141,11 +141,11 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 **Create WCF Services**
 
-1. Right-click the project, select **Add > New Folder**.  Name the folder as **WCF.**
+1.Right-click the project, select **Add > New Folder**.  Name the folder as **WCF.**
 
-2. Now right-click the **WCF** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**
+2.Now right-click the **WCF** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**
 
-3. Click **Add**.
+3.Click **Add**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img8.png" Caption="Adding WCF service"%}
 
