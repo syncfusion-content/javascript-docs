@@ -743,7 +743,7 @@ The following output is displayed as a result of the above code example.
 
 {% highlight html %}
 
-    <!-- ... -->
+  <!-- ... -->
     <head>
     </head>
     <!-- ... -->
@@ -757,7 +757,7 @@ The following output is displayed as a result of the above code example.
         $(function () {
         $("#Ribbon").ejRibbon({
         width: "800px",
-        applicationTab: { Type: "ApplicationMenu", itemID: "menu},
+        applicationTab: { Type: "ApplicationMenu", itemID: "menu"},
         tabs: [
         {
         id: "insert", text: "INSERT", groups: [{
@@ -770,7 +770,7 @@ The following output is displayed as a result of the above code example.
         });
         </script>
         </body>
-	    <!-- ... -->   
+	    <!-- ... -->      
         
 {% endhighlight %}
 
