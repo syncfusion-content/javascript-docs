@@ -57,7 +57,7 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
       <div style="display:inline-block;padding-left:10px;">
       \{\{:\#data\['Address'\]\}\}
       <p>{{:#data['Country']}}</p>
-      <p style="font-size:12px;">\{{\:\#data\['Contact'\]\}\}</p>
+      <p style="font-size:12px;">\{\{:\#data\['Contact'\]\}\}</p>
       </div>
       </div>
       </td>
