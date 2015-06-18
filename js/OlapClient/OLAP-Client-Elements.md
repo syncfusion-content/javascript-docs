@@ -93,7 +93,7 @@ User-defined hierarchy</td><td>
 Members of a dimension in a hierarchical structure.</td></tr>
 </table>
 
-**Attribute Hierarchy**
+#### Attribute Hierarchy
 
 Attribute hierarchy contains the following levels:
 
@@ -103,11 +103,11 @@ Attribute hierarchy contains the following levels:
 
 	* An optional (All) level (IsAggregatable=True) containing the aggregated value of the attribute hierarchy's leaf members, with the member of the (All) level also known as the (All) member.
 
-**User-Defined Hierarchy**
+#### User-Defined Hierarchy
 
 User-defined hierarchy organizes the members of a dimension into hierarchical structure and provides navigation paths in a cube. For example, take a dimension table that supports three attributes such as Year, Quarter and Month. The Year, Quarter and Month attributes are used to construct a user-defined hierarchy, named Calendar, in the time dimension.
 
-**Differentiating Attribute hierarchy and User-defined hierarchy**
+#### Differentiating Attribute hierarchy and User-defined hierarchy
 
 Attribute hierarchy and User-defined hierarchy are normally differentiated by their tree node image.
 
@@ -123,7 +123,8 @@ Attribute Hierarchy, contains only one level.</td></tr>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img3.png" alt="" width="25pt" height="24pt" Caption=""%}</td><td>
  User Defined Hierarchy and its levels are mentioned with a similar image. It contains one or more levels.</td></tr>
 </table>
-**Symbolic Representation of the Nodes inside Cube Dimension Browser**
+
+#### Symbolic Representation of the Nodes inside Cube Dimension Browser
 
 _Table: Symbolic Representation of the Nodes inside Cube Dimension Browser_
 
@@ -158,8 +159,7 @@ Attribute Hierarchy</td></tr>
 Level Element</td></tr>
 </table>
 
-
-**Draggable and non-draggable nodes in the Cube Dimension Browser**
+#### Draggable and non-draggable nodes in the Cube Dimension Browser
 
 The dragabble nodes are:
 
@@ -181,15 +181,15 @@ The nodes that are not allowed to be dragged are:
 
 Axis Element Builder allows you to build the element in an axis of the **OLAP Client**. It supports three axes namely: Categorical, Series and Slicer. Based on the elements constructed **OLAP Grid** and **OLAP Chart** will display the resultant data.
 
-**Categorical (Column)**
+#### Categorical (Column)
 
 The categorical axis defines one or more dimensions that are displayed along the chart's y-axis as labels and in the columns of the grid. If more than one dimension is on the categorical axis, the Chart/Grid will stack each dimension. The order in which the dimensions are stacked on the Chart/Grid is based on the order that they appear on the categorical axis.
 
-**Series (Row)**
+#### Series (Row)
 
 The series axis defines one or more dimensions that are displayed along the chart's x-axis as labels and in the rows of the grid. If more than one dimension is on the series axis, the **Chart/Grid** will stack each dimension. The order in which the dimensions are stacked on the **Chart/Grid** is based on the order that they appear on the series axis.
 
-**Slicer**
+#### Slicer
 
 The slicer axis is used as a filter to narrow the focus of the multidimensional data displayed in the **Chart/Grid**. The slicer axis lets you analyze any member of a dimension, in-depth. For the slicer to display the member's data, that member must not be present on both categorical axis and series axis.
 
@@ -211,7 +211,7 @@ The measure elements can be dragged from Cube Dimension Browser and dropped into
 
 #### Remove Elements from an Axis Element Builder
 
-**Remove Dimension, Hierarchy and Level from an Axis Element Builder**
+##### Remove Dimension, Hierarchy and Level from an Axis Element Builder
 
 In order to remove dimension, hierarchy and level element from the Axis Element Builder, click the Remove symbol available next to the Split Button while hovering over it.
 
@@ -242,7 +242,7 @@ When you drag and drop a measure, the Axis Element Builder will create a Split B
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img18.png" Caption="Split Button – Measure"%}
 
-##### Remove Split Button
+#### Remove Split Button
 
 Split Button can be removed with the help of the Remove option available while hovering over it.
 
@@ -250,25 +250,25 @@ Split Button can be removed with the help of the Remove option available while h
 
 ### Elements Editor
 
-**Measure Editor**
+#### Measure Editor
 
 Measure Editor is a dialog that displays the collection of measures in the current report. 
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img20.png" Caption="Measure Editor"%}
 
-**Remove a Measure** 
+##### Remove a Measure 
 
 To remove a measure, click the Remove button next to the corresponding measure while hovering over it. To avoid removing the current selection, click Cancel.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img21.png" Caption="Removing a Measure"%}
 
-**Member Editor**
+#### Member Editor
 
 Member Editor is a tree-view control that displays the member elements of the current dimension.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img22.png" Caption="Member Editor"%}
 
-**Represent State of Nodes of a dimension**
+##### Represent State of Nodes of a dimension
 
 Nodes are represented in two states, namely:
 
@@ -276,7 +276,7 @@ Nodes are represented in two states, namely:
 
 * Unchecked
 
-**Select and Clear Nodes of a Dimension in the Member Editor**
+##### Select and Clear Nodes of a Dimension in the Member Editor
 
 The option Select is provided in such a way that on selecting the parent node, its corresponding child nodes are automatically selected. If a leaf node is selected, it does not affect others since it is the final node on a tree.
 
@@ -284,7 +284,7 @@ Unchecking the check box option is provided in such a way that on deselecting th
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img23.png" Caption="Selecting and Unselecting Nodes"%}
 
-**Check All and Uncheck All**
+##### Check All and Uncheck All
 
 * **Check All** – Will select all nodes in the tree view.
 

@@ -11,19 +11,19 @@ documentation: ug
 
 This section explains briefly about how to create an **OLAP Client** in your application with **JavaScript**.
 
-**Control Structure**
+###Control Structure
 
 The following screenshot shows the structure of an **OLAP Client** control.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Client Control for JavaScript"%}
 
-**Syncfusion OLAP Controls – Architecture**
+###Syncfusion OLAP Controls – Architecture
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img2.png" Caption="Architecture of OLAP controls"%}
 
 As shown in an above architecture, control rendering takes place at the client-side and the analytical operations on each action takes place at the server-side.
 
-**Service for OLAP Controls**
+###Service for OLAP Controls
 
 The primary reasons for using service in an **OLAP** processing are as follows:
 
@@ -52,11 +52,11 @@ When you perform any operation such as drill up/down, filtering, sorting etc., y
 Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again.
 This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
 
-    1. **Saving and Loading Report in Database:**  you can save and load the reports available in **OLAP Client** control via service only. This is not applicable at the client-side. You can serialize the **OLAP Report** class in the **Syncfusion.Olap.Base** assembly and save to database as stream.  Also you can load back from database via service.
+   * **Saving and Loading Report in Database:**  you can save and load the reports available in **OLAP Client** control via service only. This is not applicable at the client-side. You can serialize the **OLAP Report** class in the **Syncfusion.Olap.Base** assembly and save to database as stream.  Also you can load back from database via service.
 
-    2. **Exporting:** You can export **OLAP** values and information to excel sheet via service only. So this provides feasible option to save and view **OLAP** information.
+   * **Exporting:** You can export **OLAP** values and information to excel sheet via service only. So this provides feasible option to save and view **OLAP** information.
 
-**Create an application**
+###Create an application
 
 This section encompasses on how to configure the **OLAP Client** control in an application. You can also pass the required data to **OLAP Client** and customize it according to your requirements.
 
@@ -68,7 +68,7 @@ Open **Visual Studio** and create a new project by clicking **New Project**. Sel
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img4.png" Caption="New Project Wizard"%}
 
-**Create HTML page**
+###Create HTML page
 
 To create a new web form in the application, right-click on the project and select Add.
 
@@ -76,9 +76,9 @@ To create a new web form in the application, right-click on the project and sele
 
 Click New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
 
-**Add References, Scripts, Styles and Control in HTML page**
+###Add References, Scripts, Styles and Control in HTML page
 
-**Add References**
+####Add References
 
 * In the Solution Explorer, right-click the References folder and then click Add Reference.
 
@@ -90,7 +90,7 @@ Click New Item and select HTML Page from the listed templates. Name the page as 
 
 * Click OK.
 
-**Add Scripts and Styles** 
+####Add Scripts and Styles 
 
 Add the script files and CSS files in the &lt;title&gt; tag of the default.html page.
 
@@ -106,7 +106,7 @@ Add the script files and CSS files in the &lt;title&gt; tag of the default.html 
 
 {% endhighlight %}
 
-**Add Control in HTML page**
+####Add Control in HTML page
 
 Add the following code sample in the **&lt;body&gt;** tag in the **default.html** page.
 
@@ -127,9 +127,9 @@ Add the following code sample in the **&lt;body&gt;** tag in the **default.html*
 
 {% endhighlight %}
 
-**Add WCF Service for OLAP Client**
+###Add WCF Service for OLAP Client
 
-**Create WCF Services**
+####Create WCF Services
 
 Right-click the project and select **Add > New Folder**.  Name the folder as **WCF.**
 
@@ -143,7 +143,7 @@ In the Add New Item window, select **WCF Service** and name it **OlapClientServi
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img10.png" Caption="Creating WCF Service"%}
 
-**Add service methods inside Interface**
+####Add service methods inside Interface
 
 Add the following code inside the **IOlapClientService** interface available in an **IOlapClientService.cs** file.
 
@@ -212,7 +212,7 @@ Add the following code inside the **IOlapClientService** interface available in 
 
 {% endhighlight %}
 
-**Add Namespaces**
+####Add Namespaces
 
 Add the following necessary namespaces required to implement the **service** methods.
 
@@ -241,7 +241,7 @@ using Syncfusion.JavaScript.Olap;
 
 {% endhighlight %}
 
-**Create Class in Service file**
+####Create Class in Service file
 
 You can create the **OlapClientService** class to implement the **service** methods. You can inherit the class from the **IOlapClientService** interface that is created automatically while adding any new service.
 
@@ -261,7 +261,7 @@ namespace WebApplication2
 
 {% endhighlight %}
 
-**Implement Service Methods**
+####Implement Service Methods
 
 You can add the following methods to the service that are invoked for any server-side operations performed in **OLAP Client**.
 
@@ -276,7 +276,6 @@ You can add the following methods to the service that are invoked for any server
    string conStringforDB = "DataSource=" + HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\wcf" }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
 
 {% endhighlight %}
-
 
 * Add the following relevant service methods.
 
@@ -503,7 +502,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 {% endhighlight %}
 
-**Configure Web.Config**
+####Configure Web.Config
 
 * You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.OlapClientService" where "OlapClientService" is the service class name and “WebApplication2" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 

@@ -13,19 +13,19 @@ documentation: ug
 
 ###SSAS
 
-**Binding OLAP Chart to an Offline Cube**
+####Binding OLAP Chart to an Offline Cube
 
 The following code illustrates how to connect to an offline cube:
 
 {% highlight c# %}
 
-String connectionString = @"DataSource= C:\Users\<UserName>\appdata\local\syncfusion\essentialstudio\x.x.x.x\Common\
+string connectionString = @"DataSource= C:\Users\<UserName>\appdata\local\syncfusion\essentialstudio\x.x.x.x\Common\
 Data\OfflineCube\Adventure_Works_Ext.cub; Provider = MSOLAP;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-**Binding OLAP Chart to the SQL Server (Local)**
+####Binding OLAP Chart to the SQL Server (Local)
 
 The following code illustrates how to connect to a local Cube in SQL Server:
 
@@ -40,11 +40,11 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 **XML for Analysis** (XML/A) is a standard that allows the client applications to transfer multi-dimensional or OLAP data sources from an OLAP Server that is available online. The back and forth communication is done using the web standards – HTTP, SOAP, and XML. The query language used is MDX, which is most widely supported for reporting from multi-dimensional data stores.
 
-**Use Case Scenarios**
+####Use Case Scenarios
 
 **XML/A** provides the most efficient way to access an OLAP database over the Internet.
 
-**Connecting to SSAS Server (Online)**
+####Connecting to SSAS Server (Online)
 
 The following code illustrates how to connect to the **SSAS** server available online:
 
@@ -55,7 +55,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-**Connecting to Mondrian Server**
+####Connecting to Mondrian Server
 
 The following code illustrates how to connect to the **Mondrian Server**:
 
@@ -68,7 +68,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 {% endhighlight %}
 
 
-**Connecting to ActivePivot Server**
+####Connecting to ActivePivot Server
 
 The following code illustrates how to connect to **ActivePivot Server**:
 
