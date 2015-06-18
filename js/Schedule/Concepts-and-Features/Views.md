@@ -17,33 +17,35 @@ documentation: ug
 
 The following code example describes how to customize the display of view options of the **Schedule** control.
 
+{% highlight html %}
+
+<div id="Schedule1"> </div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
 $(function () {
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-**views: ["Week", "WorkWeek"],**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-currentDate: new Date (2014,4,5),
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            views: ["Week", "WorkWeek"],
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                currentDate: new Date (2014,4,5),
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 
@@ -72,32 +74,35 @@ _Figure_ _84__:____schedule with_ _view customization._
 
 The following code example explains how to change the current view of the **Schedule** control.
 
-{% highlight js %}
+{% highlight html %}
 
 <div id="Schedule1"> </div>
-<script>
-$(function () {
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-**currentView: ej.Schedule.CurrentView.Day,**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-currentDate: new Date (2014,4,5),
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+{% endhighlight %}
+
+{% highlight js %}
+
+$(function () {
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentView: ej.Schedule.CurrentView.Day,
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                currentDate: new Date (2014,4,5),
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 
@@ -122,38 +127,39 @@ ___Figure_ _85__:___ _schedule with_ _current view._
 
 * To render the **Schedule** control with specific date ranges, it is necessary to specify the start and end dates as follows.
 
+{% highlight html %}
 
+<div id="Schedule1"> </div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+ $(function () {
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-**currentView: ej.Schedule.CurrentView.CustomView,**
-**views: ["Day", "Week", "WorkWeek", "Month", "CustomView"],**
-**renderDates: {**
-**start: new Date(2014, 11, 7),**
-**end: new Date(2014, 12, 10)**
-**},**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentView: ej.Schedule.CurrentView.CustomView,
+            views: ["Day", "Week", "WorkWeek", "Month", "CustomView"],
+            renderDates: {
+               start: new Date(2014, 11, 7),
+               end: new Date(2014, 12, 10)
+        },
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 
