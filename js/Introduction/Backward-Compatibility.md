@@ -40,10 +40,10 @@ The other changes based on each components are as follows,
 <table>
 <tr>
 <td>
-ejAccordion</td><td>
-ejDigitalGauge</td><td>
-ejOlapPager</td><td>
-ejTab</td></tr>
+[ejAccordion](#ejAccordion)</td><td>
+[ejDigitalGauge](#ejDigitalGauge)</td><td>
+[ejOlapPager](#olappager)</td><td>
+[ejTab](#ejTab)</td></tr>
 <tr>
 <td>
 ejAutoComplete</td><td>
@@ -3803,7 +3803,8 @@ GridLayout</td><td>
 Layout</td><td>
  </td></tr>
 </table>
-**ejOlapPager**
+
+<a name="olappager"><b>ejOlapPager</b></a>
 
 <table>
 <tr>
@@ -3835,6 +3836,7 @@ PagerMode</td><td>
 Mode</td><td>
  </td></tr>
 </table>
+
 **ejProgressbar**
 
 <table>
