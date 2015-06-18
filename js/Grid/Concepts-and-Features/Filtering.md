@@ -35,20 +35,19 @@ Filter menus are a good **UI** based filtering option. It visibly denotes filter
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    dataSource: window.gridData,
-                  **allowFiltering: true,**
-                 **filterSettings: {filterType:"menu"},**
-                   allowPaging: true,                  
-                });
+  <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowFiltering: true,
+                filterSettings: { filterType: "menu" },
+                allowPaging: true,
             });
+        });
 
-        </script>
+    </script>
 
 
 {% endhighlight %}
@@ -100,20 +99,20 @@ Boolean filter bar works with either <b>true</b> or <b>false</b>.</td></tr>
 
 {% highlight javascript %}
 
-**[JS]**
-****
-<div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    dataSource: window.gridData,
-                  **allowFiltering: true,**
-                  **filterSettings: { filterType: ej.Grid.FilterType.FilterBar },**
-                    allowPaging: true,
-                });
-            });
 
-        </script>
+
+<div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowFiltering: true,
+                filterSettings: { filterType: ej.Grid.FilterType.FilterBar },
+                allowPaging: true,
+            });
+        });
+
+    </script>
 
 
 {% endhighlight %}
@@ -153,30 +152,29 @@ The ourput of the custom filter menu was showed in below screenshot.
 {% highlight html %}
 
 
-[JS]  
 
-<div id="Filtering"></div>
 
- <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Filtering").ejGrid({
-                    dataSource: window.gridData,
-                    allowSorting:true
-                  **allowFiltering: true,**
-                  **filterSettings: { filterType: "excel", maxFilterChoices:100,enableCaseSensitivity:false },**
-                    allowPaging: true,
-                    columns: [
-                        { field: "OrderID", headerText: "Order ID", textAlign: "right" },
-                        { field: "CustomerID", headerText: "Customer ID" },
-                        { field: "OrderDate", headerText: "Order Date", format: "{0:MM/dd/yy}" },
-                        { field: "EmployeeID", headerText: "Employee ID", textAlign: "right" },
-                        { field: "ShipCity", headerText: "Ship City" },
-                        { field: "Verified", headerText: "Verified" }
-                    ]
+  <div id="Filtering"></div>
 
-                });
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Filtering").ejGrid({
+                dataSource: window.gridData,
+                allowSorting: true,
+                allowFiltering: true,
+                filterSettings: { filterType: "excel", maxFilterChoices:100,enableCaseSensitivity:false },
+                allowPaging: true,
+                columns: [
+                    { field: "OrderID", headerText: "Order ID", textAlign: "right" },
+                    { field: "CustomerID", headerText: "Customer ID" },
+                    { field: "OrderDate", headerText: "Order Date", format: "{0:MM/dd/yy}" },
+                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right" },
+                    { field: "ShipCity", headerText: "Ship City" },
+                    { field: "Verified", headerText: "Verified" }
+                ]
             });
-</script>
+        });
+    </script>
 
 
 
@@ -216,7 +214,7 @@ ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOper
 
 {% highlight html %}
 
-**[JS]**
+
 
 <div>
         <div class="row">

@@ -29,20 +29,21 @@ There are some default summary types available for basic summary formula. The fo
 
 {% highlight html %}
 
-**[JS]**
 
- <div id="Grid"></div>
+
+ 
+    <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {
             $("#Grid").ejGrid({
                 /// the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
                 allowPaging: true,
-              **showSummary**: true,
+                showSummary: true,
                 pageSettings: { pageSize: 5 },
-               **summaryRows**: [
-                    { title: "Sum", **summaryColumns**: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
-                    { title: "Average", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
+                summaryRows: [
+                     { title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
+                     { title: "Average", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
                 ],
                 columns: [
                            { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
@@ -71,10 +72,10 @@ This property helps you to create custom summary formula for summary. The follow
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
-    <script type="text/javascript">	
+ <div id="Grid"></div>
+    <script type="text/javascript">
+
         $(function () {
 
             $("#Grid").ejGrid({
@@ -83,7 +84,7 @@ This property helps you to create custom summary formula for summary. The follow
                 allowPaging: true,
                 showSummary: true,
                 pageSettings: { pageSize: 5 },
-                summaryRows: [{ title: "Currency", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, **customSummaryValue**: currency(), displayColumn: "Freight", format: "{0:C2}" }] }
+                summaryRows: [{ title: "Currency", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, customSummaryValue: currency(), displayColumn: "Freight", format: "{0:C2}" }] }
                 ],
                 columns: [
                     { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 70 },
@@ -116,43 +117,32 @@ The following output is displayed as a result of the above code example.
 
 {% highlight html %}
 
-**[JS]**
 
-  <div id="Grid"></div>
+
+ <div id="Grid"></div>
 
     <script type="text/javascript">
-
-
         $(function () {
-
             $("#Grid").ejGrid({
-
                 // the datasource "window.gridData" is referred from jsondata.min.js
-
                 dataSource: window.gridData,
-
                 allowPaging: true,
-
                 showSummary: true,
-
                 pageSettings: { pageSize: 5 },
-
-                summaryRows: [{ title: "Currency", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, **customSummaryValue: currency,** displayColumn: "Freight", format: "{0:C2}" }] }
-
-                ],
-
+                summaryRows: [{
+                    title: "Currency", summaryColumns: [{
+                        summaryType: ej.Grid.SummaryType.Custom,
+                        customSummaryValue: currency, displayColumn: "Freight", format: "{0:C2}"
+                    }]
+                }],
                 columns: ["OrderID", "EmployeeID", "ShipCity", "Freight"],
-
             });
 
         });
 
         function currency() {
-
             var rs = 100000;
-
-            var dol = 0.017
-
+            var dol = 0.017;
             return (rs * dol);
         }
 
@@ -172,7 +162,7 @@ This property helps you to enable the group summary column in **Grid**. The foll
 
 {% highlight html %}
 
-**[JS]**
+
 
 <div id="Grid"></div>
 
@@ -217,9 +207,9 @@ This property is used to create Caption Summary column in **Grid**. **showCaptio
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
+
+ <div id="Grid"></div>
 
     <script type="text/javascript">
         $(function () {
@@ -231,11 +221,11 @@ This property is used to create Caption Summary column in **Grid**. **showCaptio
                 allowGrouping: true,
                 showSummary: true,
                 pageSettings: { pageSize: 10 },
-                summaryRows: [{ **showCaptionSummary**: true, summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}", prefix: "Average = " }], showTotalSummary: false }],
+                summaryRows: [{ showCaptionSummary: true, summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}", prefix: "Average = " }], showTotalSummary: false }],
                 groupSettings: { groupedColumns: ["CustomerID"] },
                 columns: [
                           { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 80, isPrimaryKey: true },
-                          { field: "CustomerID",headerText:"Customer ID", textAlign: ej.TextAlign.Left, width: 75 },
+                          { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 75 },
                           { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
                           { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
                 ]

@@ -13,28 +13,28 @@ In this section, you can learn how to customize drag and drop element. This drag
 
 {% highlight html %}
 
-**[JS]**
 
-<style type="text/css">
-**.e-grid .e-cloneproperties {**
-            **background-color: black;**
-        **}**
-    </style>
+<head>
+   <style type="text/css">
+      .e-grid .e-cloneproperties {
+      background-color: black;
+      }
+   </style>
 </head>
-    <body>
-        <div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    //window.gridData is refered from jsondata.min.js
-                    dataSource: window.gridData,
-                    allowGrouping: true,
-                    allowPaging: true
-                });
-            });
-        </script>
-    </body>
-</html>
+<body>
+   <div id="Grid"></div>
+   <script type="text/javascript">
+      $(function () {// Document is ready.
+          $("#Grid").ejGrid({
+              //window.gridData is refered from jsondata.min.js
+              dataSource: window.gridData,
+              allowGrouping: true,
+              allowPaging: true
+          });
+      });
+   </script>
+</body>
+
 
 
 {% endhighlight %}

@@ -13,16 +13,15 @@ This section explains briefly about how to create a **Grid** in your application
 
 ## Create your first Grid in JavaScript
 
-The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. You can create a **Grid** with a highly customizable look and feel. You can use the **Grid****control** to generate complex **Grid** based reports with rich formatting. In the following example, you can take a look at how the transaction of a product is managed, analysis of a particular sale using filtering and grouping feature. This section explains you about adding group, filter and paging of sales products.
+The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. You can create a **Grid** with a highly customizable look and feel. You can use the **Grid control** to generate complex **Grid** based reports with rich formatting. In the following example, you can take a look at how the transaction of a product is managed, analysis of a particular sale using filtering and grouping feature. This section explains you about adding group, filter and paging of sales products.
 
 {% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img1.png" Caption="Managed sales data"%}
 
 
-1.   Create an **HTML** file and add the following references to the required libraries.
+   Create an **HTML** file and add the following references to the required libraries.
 
 {% highlight html %}
 
-**[HTML]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -45,11 +44,11 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 
 
-2. Add a **&lt;div&gt;** element. It is a container for **ejGrid**.
+ Add a **&lt;div&gt;** element. It is a container for **ejGrid**.
 
 {% highlight html %}
 
-**[HTML]**
+
 <!-- ... -->
 <body>
     <div id="Grid"></div>   
@@ -62,11 +61,11 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 
 
-3. Create the **ejGrid** widget as follows. In Columns definition, the **textAlign** property allows you to align text of the columns, the **width** property allows you to define the width of the columns and **format** property allows you to format the particular columns value.
+ Create the **ejGrid** widget as follows. In Columns definition, the **textAlign** property allows you to align text of the columns, the **width** property allows you to define the width of the columns and **format** property allows you to format the particular columns value.
 
 {% highlight html %}
 
-**[HTML]**
+
 <!-- ... -->
 <head>
 <!-- ... -->
@@ -92,7 +91,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 
 
-4. You can execute the above code example to render an empty **ejGrid** with specified column headers, where the data is specified.
+ You can execute the above code example to render an empty **ejGrid** with specified column headers, where the data is specified.
 
 {% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img2.png" Caption="Empty grid                        "%}
 
@@ -102,31 +101,31 @@ You can pass the data to the **Grid**  either  locally or remotly. Assign the we
 
 {% highlight html %}
 
-**[HTML]**
-<!-- ... -->
-<head>
-<!-- ... -->
-<script type="text/javascript">
-$(function () {
-        **window.dataManager = ej.DataManager({**
-        **url: "http://mvc.syncfusion.com/UGService/api/Orders",**
-        **crossDomain: true,**
-        **offline:true**
-    **});**
 
-    $("#Grid").ejGrid({
-      **dataSource: window.dataManager,**
-        columns: [
-                { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
-                { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                { field: "ShipName", headerText: "Ship Name", width: 100 },
-                { field: "ShipCity", headerText: "Ship City", width: 100 },
-                { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
-       ]
-    });
-});
-</script>
-</head>
+<!-- ... -->
+   <head>
+        <!-- ... -->
+        <script type="text/javascript">
+            $(function () {
+                window.dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/UGService/api/Orders",
+                crossDomain: true,
+                offline:true
+            });
+
+            $("#Grid").ejGrid({
+              dataSource: window.dataManager,
+                columns: [
+                        { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                        { field: "ShipName", headerText: "Ship Name", width: 100 },
+                        { field: "ShipCity", headerText: "Ship City", width: 100 },
+                        { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
+                ]
+            });
+            });
+        </script>
+    </head>
 <!-- ... -->
 
 
@@ -145,7 +144,7 @@ The following screenshot illustrates a **Grid** with sales data.
 
 {% highlight html %}
 
-**[HTML]**
+
 <!-- ... -->
 <head>
 <!-- ... -->
@@ -159,7 +158,7 @@ $(function () {
 
     $("#Grid").ejGrid({
         dataSource: window.dataManager,
-      **allowPaging: true,**
+        allowPaging: true,
         columns: [
                 { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -191,7 +190,7 @@ To enable filtering, use **allowFiltering** property of **Grid** as follows.
 
 {% highlight html %}
 
-**[HTML]**
+
 <!-- ... -->
 <head>
 <!-- ... -->
@@ -206,7 +205,7 @@ $(function () {
     $("#Grid").ejGrid({
         dataSource: window.dataManager,
         allowPaging: true,
-      **allowFiltering: true,**
+        allowFiltering: true,
         columns: [
                 { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -238,7 +237,7 @@ To enable grouping, use **allowGrouping** property of **Grid** as follows.
 
 {% highlight html %}
 
-**[HTML]**
+
 <!-- ... -->
 <head>
 <!-- ... -->
@@ -254,8 +253,8 @@ $(function () {
         dataSource: window.dataManager,
         allowPaging: true,
         allowFiltering: true,
-      **allowGrouping: true,**
-      **groupSettings: { groupedColumns: ["ShipName"] },**
+        allowGrouping: true,
+        groupSettings: { groupedColumns: ["ShipName"] },
         columns: [
                 { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
@@ -287,45 +286,45 @@ The following code example shows the option to enable group summary.
 
 {% highlight html %}
 
-**[HTML]**
+
 <!-- ... -->
 <head>
 <!-- ... -->
-<script type="text/javascript">
-$(function () {
-    window.dataManager = ej.DataManager({
-        url: "http://mvc.syncfusion.com/UGService/api/Orders",
-        crossDomain: true,
-        offline:true
-    }); 
+ <script type="text/javascript">
+        $(function () {
+            window.dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/UGService/api/Orders",
+                crossDomain: true,
+                offline: true
+            });
 
-    $("#Grid").ejGrid({
-        dataSource: window.dataManager,
-        allowPaging: true,
-        allowFiltering: true,
-        allowGrouping: true,
-        groupSettings: { groupedColumns: ["ShipName"] },
-      **showSummary: true,**
-        columns: [
-                { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
-                { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                { field: "ShipName", headerText: "Ship Name", width: 100 },
-                { field: "ShipCity", headerText: "Ship City", width: 100 },
-                { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
-       ],
-       **summaryRows: [{**
-                **showTotalSummary: false,**
-                **summaryColumns: [{**
-                    **summaryType: ej.Grid.SummaryType.Sum,**
-                    **displayColumn: "Freight",**	
-                    **prefix: "Sum =",**
-                    **dataMember: "Freight",**
-                    **format: "{0:C3}"**
-                **}]**
-        **}]**
-    });
-});
-</script>
+            $("#Grid").ejGrid({
+                dataSource: window.dataManager,
+                allowPaging: true,
+                allowFiltering: true,
+                allowGrouping: true,
+                groupSettings: { groupedColumns: ["ShipName"] },
+                showSummary: true,
+                columns: [
+                        { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                        { field: "ShipName", headerText: "Ship Name", width: 100 },
+                        { field: "ShipCity", headerText: "Ship City", width: 100 },
+                        { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
+                ],
+                summaryRows: [{
+                    showTotalSummary: false,
+                    summaryColumns: [{
+                        summaryType: ej.Grid.SummaryType.Sum,
+                        displayColumn: "Freight",
+                        prefix: "Sum =",
+                        dataMember: "Freight",
+                        format: "{0:C3}"
+                    }]
+                }]
+            });
+        });
+    </script>
 </head>
 <!-- ... -->
 

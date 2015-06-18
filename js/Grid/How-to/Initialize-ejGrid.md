@@ -11,13 +11,13 @@ documentation: ug
 
 In this section, you can learn about **Grid’s** mandatory property to render a simple **Grid**. To initialize **Grid**, it needs two important properties. They are columns and its inner property field. **Columns** are used to define schema of **Grid** and **field** is mapping a name to the data source.
 
-{% highlight html %}
+{% highlight js %}
 
 $("#Grid").ejGrid({
      columns: [
-        { **field**: "OrderID" },
-        { **field**: "CustomerID" },
-        { **field**: "EmployeeID" }
+        { field: "OrderID" },
+        { field: "CustomerID" },
+        { field: "EmployeeID" }
      ]
 });
 

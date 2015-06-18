@@ -29,22 +29,22 @@ documentation: ug
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
+
+    <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
                 dataSource: window.gridData,
-              **toolbarSettings: {**
-                    **showToolbar: true,**
-                    **toolbarItems: [**
-                       **ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,**
-                       **ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,**
-                       **ej.Grid.ToolBarItems.Cancel**
-                    **]**
-                **},**
-                **editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },**
+                toolbarSettings: {
+                    showToolbar: true,
+                    toolbarItems: [
+                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                       ej.Grid.ToolBarItems.Cancel
+                    ]
+                },
+                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
                 allowPaging: true,
                 columns: [
                     { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
@@ -88,7 +88,7 @@ The edit type of every column can be customized using the **editType** property.
 
 {% highlight html %}
 
-**[JS]**
+
 
   <div id="Grid"></div>
     <script type="text/javascript">
@@ -131,13 +131,13 @@ The following output is displayed as a result of the above code example.
 
 By default, the datasource for Dropdown Edit Column is set by Grid Control from its datasource. You can also bind external datasource to the Dropdown control of corresponding column in edit mode by using “**dataSource**” Grid Column property.
 
-> _**Note: The external datasource must be given in a structure that it should contain properties “text” and “value” that holds the data.**_
+> _**Note**: The external datasource must be given in a structure that it should contain properties “text” and “value” that holds the data._
 
 
 {% highlight html %}
 
-**[JS]**
- <div id="Grid"></div>
+
+    <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
@@ -153,11 +153,11 @@ By default, the datasource for Dropdown Edit Column is set by Grid Control from 
                 editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
                 allowPaging: true,
                 columns: [
-                   { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
+                    { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
                     { field: "CustomerID", headerText: 'Customer ID', width: 90 },
-                    { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80},
-                    { field: "Freight", headerText: 'Freight', width: 80},
-                    { field: "ShipCountry", headerText: 'Ship Country', width: 90, editType: ej.Grid.EditingType.Dropdown, **dataSource: countries** }
+                    { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 80 },
+                    { field: "Freight", headerText: 'Freight', width: 80 },
+                    { field: "ShipCountry", headerText: 'Ship Country', width: 90, editType: ej.Grid.EditingType.Dropdown, dataSource: countries }
                 ]
             });
         });
@@ -183,15 +183,9 @@ The following code example is for **Edit Template.**
 
 {% highlight html %}
 
-**[JS]**
-<div class="content-container-fluid">
-        <div class="row">
-            <div class="cols-sample-area">
-                <div id="Grid"></div>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
+
+  <div id="Grid"></div>
+      <script type="text/javascript">
         $(function () {
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
@@ -204,16 +198,16 @@ The following code example is for **Edit Template.**
                         { field: "CustomerID", headerText: 'Customer ID', width: 90 },
                         {
                             field: "EmployeeID", headerText: 'Employee ID',
-                            **editTemplate: {**
-                                **create: function () {**
-                                    **return "<input>";**
-                                **},**
-                                **read: function (args) {**
-                                    **return args.ejMaskEdit("get_StrippedValue");**
-                                **},**
-                                **write: function (args) {**
-                                    **args.element.ejMaskEdit({ width: "100%", maskFormat: "9", value: args.rowdata !== undefined ? args.rowdata["EmployeeID"] : "" });**
-                                }
+                            editTemplate: {
+                                create: function () {
+                                    return "<input>";
+                                },
+                                read: function (args) {
+                                    return args.ejMaskEdit("get_StrippedValue");
+                                },
+                                write: function (args) {
+                                    args.element.ejMaskEdit({ width: "100%", maskFormat: "9", value: args.rowdata !== undefined ? args.rowdata["EmployeeID"] : "" });
+                                    }
                             }, textAlign: ej.TextAlign.Right, width: 80,
                         },
                         { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, width: 80, format: "{0:C0}" },
@@ -260,7 +254,7 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 {% highlight html %}
 
-**[JS]**
+
 
  <div id="Grid"></div>
     <script type="text/javascript">
@@ -275,8 +269,10 @@ This feature allows you to edit various fields of a single record, simultaneousl
                        ej.Grid.ToolBarItems.Cancel
                     ]
                 },
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
-              **editMode: ej.Grid.EditMode.Normal** },
+                editSettings: {
+                    allowEditing: true, allowAdding: true, allowDeleting: true,
+                    editMode: ej.Grid.EditMode.Normal
+                },
                 allowPaging: true,
                 columns: [
                     { field: "OrderID", headerText: "Order ID", isPrimarKey: true, textAlign: "right" },
@@ -306,8 +302,8 @@ The **Dialog Edit** feature allows you to edit data, using a dialog box that has
 
 {% highlight html %}
 
-**[JS]**
-    <div id="Grid"></div>
+
+   <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
@@ -320,8 +316,10 @@ The **Dialog Edit** feature allows you to edit data, using a dialog box that has
                        ej.Grid.ToolBarItems.Cancel
                     ]
                 },
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
-              **editMode: ej.Grid.EditMode.Dialog**},
+                editSettings: {
+                    allowEditing: true, allowAdding: true, allowDeleting: true,
+                    editMode: ej.Grid.EditMode.Dialog
+                },
                 allowPaging: true,
                 columns: [
                     { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
@@ -351,8 +349,8 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 {% highlight html %}
 
-**[JS]**
-    <div id="Grid"></div>
+
+     <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
@@ -365,8 +363,10 @@ This feature allows you to edit various fields of a single record, simultaneousl
                        ej.Grid.ToolBarItems.Cancel
                     ]
                 },
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
-              **editMode: ej.Grid.EditMode.InlineForm**},
+                editSettings: {
+                    allowEditing: true, allowAdding: true, allowDeleting: true,
+                    editMode: ej.Grid.EditMode.InlineForm
+                },
                 allowPaging: true,
                 pageSettings: { pageSize: 8 },
                 columns: [
@@ -374,7 +374,7 @@ This feature allows you to edit various fields of a single record, simultaneousl
                     { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
                     { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
                     { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-                    { field: "OrderDate", headerText: "Order Date",editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
+                    { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
                     { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
                 ]
             });
@@ -402,9 +402,9 @@ You can position the edit form either in the top-right corner or the bottom-left
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
+
+ <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
@@ -417,16 +417,18 @@ You can position the edit form either in the top-right corner or the bottom-left
                        ej.Grid.ToolBarItems.Cancel
                     ]
                 },
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
-              **editMode: ej.Grid.EditMode.ExternalForm,**
-                        **formPosition: ej.Grid.FormPosition.BottomLeft**},
+                editSettings: {
+                    allowEditing: true, allowAdding: true, allowDeleting: true,
+                    editMode: ej.Grid.EditMode.ExternalForm,
+                    formPosition: ej.Grid.FormPosition.BottomLeft
+                },
                 allowPaging: true,
                 pageSettings: { pageSize: 8 },
                 columns: [
                     { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
                     { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
                     { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                    { field: "ShipCity", headerText: "Ship City",editType: ej.Grid.EditingType.Dropdown },
+                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
                     { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
                     { field: "Verified", headerText: "Verified", editType: ej.Grid.editingType.Boolean }
                 ]
@@ -434,7 +436,6 @@ You can position the edit form either in the top-right corner or the bottom-left
         });
 
     </script>
-
 
 {% endhighlight %}
 
@@ -461,35 +462,40 @@ You can also edit the fields that are not visible in the **Grid** using this tem
 In Inline Template, you can specify the template inside the script tag and select the type as text/template. Only then the HTML elements defined in the template will not be displayed in the browser. You can define the template as follows. Using inlineFormTemplateID we are able to set the form template for editing.
 
 {% highlight html %}
-**[JS]**
- <script id="template" type="text/template">
+
+  <script id="template" type="text/template">
         <table cellspacing="10">
             <tr>
-                <td style="text-align: right;">Order ID
+                <td style="text-align: right;">
+                    Order ID
                 </td>
                 <td style="text-align: left">
                     <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
                 </td>
-                <td style="text-align: right;">Customer ID
+                <td style="text-align: right;">
+                    Customer ID
                 </td>
                 <td style="text-align: left">
                     <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right;">Employee ID
+                <td style="text-align: right;">
+                    Employee ID
                 </td>
                 <td style="text-align: left">
                     <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
                 </td>
-                <td style="text-align: right;">Ship City
+                <td style="text-align: right;">
+                    Ship City
                 </td>
                 <td style="text-align: left">
                     <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right;">Freight
+                <td style="text-align: right;">
+                    Freight
                 </td>
                 <td style="text-align: left">
                     <input id="Freight" name="Freight" value="{{: Freight}}" />
@@ -497,40 +503,45 @@ In Inline Template, you can specify the template inside the script tag and selec
             </tr>
         </table>
     </script>
-    
-    
-    // Now you can assign the template id to the InlineFormTemplateId property of edit.
+
+    <!-- Now you can assign the template id to the InlineFormTemplateId property of edit.-->
 
     <div id="Grid"></div>
 
     <script id="template" type="text/template">
+
         <table cellspacing="10">
             <tr>
-                <td style="text-align: right;">Order ID
+                <td style="text-align: right;">
+                    Order ID
                 </td>
                 <td style="text-align: left">
                     <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
                 </td>
-                <td style="text-align: right;">Customer ID
+                <td style="text-align: right;">
+                    Customer ID
                 </td>
                 <td style="text-align: left">
                     <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right;">Employee ID
+                <td style="text-align: right;">
+                    Employee ID
                 </td>
                 <td style="text-align: left">
                     <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
                 </td>
-                <td style="text-align: right;">Ship City
+                <td style="text-align: right;">
+                    Ship City
                 </td>
                 <td style="text-align: left">
                     <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right;">Freight
+                <td style="text-align: right;">
+                    Freight
                 </td>
                 <td style="text-align: left">
                     <input id="Freight" name="Freight" value="{{: Freight}}" />
@@ -563,11 +574,13 @@ In Inline Template, you can specify the template inside the script tag and selec
 
                 },
 
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,
+                editSettings: {
+                    allowEditing: true, allowAdding: true, allowDeleting: true,
 
-                        editMode: ej.Grid.EditMode.InlineTemplateForm,
+                    editMode: ej.Grid.EditMode.InlineTemplateForm,
 
-                        inlineFormTemplateID: "#template"},
+                    inlineFormTemplateID: "#template"
+                },
 
                 allowPaging: true,
 
@@ -583,7 +596,7 @@ In Inline Template, you can specify the template inside the script tag and selec
 
                     { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
 
-              ]
+                ]
 
             });
 
@@ -605,24 +618,24 @@ Through the **actionComplete** **Grid** event, you can achieve this.
 
 {% highlight html %}
 
-**[JS]**
 
-<script type="text/javascript">
+
+   <script type="text/javascript">
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
 
-               //. . . .
-           **actionComplete: "complete",**
-              //. . . .
+                //. . . .
+           actionComplete: "complete",
+                //. . . .
 
             });
         });
-        **function complete(args) {**
-            **$("#EmployeeID").ejNumericTextbox();**
-            **$("#Freight").ejNumericTextbox();**
-            **$("#ShipCity").ejDropDownList();**
-        **}**
-</script>
+        function complete(args) {
+            $("#EmployeeID").ejNumericTextbox();
+            $("#Freight").ejNumericTextbox();
+            $("#ShipCity").ejDropDownList();
+        }
+    </script>
 
 
 {% endhighlight %}
@@ -633,41 +646,45 @@ Now, the elements defined in the templates, are changed to JavaScript controls. 
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
+ <div id="Grid"></div>
     <script id="template" type="text/template">
         <table cellspacing="10">
             <tr>
-                <td style="text-align: right;">Order ID
+                <td style="text-align: right;">
+                    Order ID
                 </td>
                 <td style="text-align: left">
-                    <input id="OrderID" name="OrderID" value="**{{:** OrderID**}}**" disabled="disabled" />
+                    <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
                 </td>
-                <td style="text-align: right;">Customer ID
+                <td style="text-align: right;">
+                    Customer ID
                 </td>
                 <td style="text-align: left">
-                    <input id="CustomerID" name="CustomerID" value="**{{:** CustomerID**}}**" />
+                    <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right;">Employee ID
+                <td style="text-align: right;">
+                    Employee ID
                 </td>
                 <td style="text-align: left">
-                    <input type="text" id="EmployeeID" name="EmployeeID" value="**{{:**EmployeeID**}}**" />
+                    <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
                 </td>
-                <td style="text-align: right;">Ship City
+                <td style="text-align: right;">
+                    Ship City
                 </td>
                 <td style="text-align: left">
-                    <input id="ShipCity" name="ShipCity" value="**{{:** ShipCity**}}**" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
+                    <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
                 </td>
 
             </tr>
             <tr>
-                <td style="text-align: right;">Freight
+                <td style="text-align: right;">
+                    Freight
                 </td>
                 <td style="text-align: left">
-                    <input id="Freight" name="Freight" value="**{{:** Freight**}}**" />
+                    <input id="Freight" name="Freight" value="{{: Freight}}" />
                 </td>
 
             </tr>
@@ -687,16 +704,16 @@ Now, the elements defined in the templates, are changed to JavaScript controls. 
                 },
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true,
-                   **editMode: ej.Grid.EditMode.InlineTemplateForm,**
-                    **inlineFormTemplateID: "#template"**
+                    editMode: ej.Grid.EditMode.InlineTemplateForm,
+                    inlineFormTemplateID: "#template"
                 },
                 allowPaging: true,
                 pageSettings: { pageSize: 6 },
                 columns: [
                     { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
                     { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right",editType: ej.Grid.EditingType.Numeric },
-                    { field: "ShipCity", headerText: "Ship City",editType: ej.Grid.EditingType.Dropdown }
+                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
                 ],
                 actionComplete: "complete"
             });
@@ -707,8 +724,7 @@ Now, the elements defined in the templates, are changed to JavaScript controls. 
             $("#ShipCity").ejDropDownList();
         }
     </script>
-
-
+    
 {% endhighlight %}
 
 
@@ -721,21 +737,20 @@ The following output is displayed as a result of the above code example.
 
 The above mentioned procedure applies to **ExternalTemplate** editing feature also. Use the given code example instead of setting inlineTemplateForm as editMode. Using **externalFormTemplateID** we are able to set external template for editing.
 
-{% highlight html %}
+{% highlight js %}
 
- **[JS]**
-
+ 
  $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                //. . . .
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-                  **editMode: ej.Grid.editMode.ExternalFormTemplate,**
-                  **externalFormTemplateID: "#template"**
-                },
-               //. . . .
-            });
+        $("#Grid").ejGrid({
+    //. . . .
+            editSettings: {
+                allowEditing: true, allowAdding: true, allowDeleting: true,
+                editMode: ej.Grid.editMode.ExternalFormTemplate,
+                externalFormTemplateID: "#template"
+            },
+            //. . . .
         });
+    });
 
 
 
@@ -751,19 +766,19 @@ The following screenshot shows External Template Form Editing.
 
 The above mentioned procedure applies to **DialogTemplate** editing feature also. Use the given code example instead of setting for DialogTemplate as editMode. Using **dialogEditorTemplateID** property to set the dialog template for editing.
 
-{% highlight html %}
+{% highlight js %}
 
-**[JS]**
 
- $(function () {// Document is ready.
+
+$(function () {// Document is ready.
             $("#Grid").ejGrid({
                 //. . . .
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true,
-                    **editMode: ej.Grid.EditMode.DialogTemplate,**
-                    **dialogEditorTemplateID: "#template"**
-                },
-               //. . . .
+                    editMode: ej.Grid.EditMode.DialogTemplate,
+                    dialogEditorTemplateID: "#template"
+                    },
+                //. . . .
             });
         });
 
@@ -781,12 +796,12 @@ The following screenshot shows Dialog Template Form Editing.
 This feature allows you to edit various fields of the **Grid**, simultaneously, with the ease of Excel-like functionality in editing data.
 
 Edited data is marked on the **Grid,** so that you know which fields or cells have been edited.
-These markers are not shown after the updated data is rendered. The following code example shows you how to enable Excel-like editing, also called **Batch****editing**, in **Grid**.
+These markers are not shown after the updated data is rendered. The following code example shows you how to enable Excel-like editing, also called **Batch editing**, in **Grid**.
 
 {% highlight html %}
 
-**[JS]**
-    <div id="Grid"></div>
+
+   <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
@@ -801,7 +816,7 @@ These markers are not shown after the updated data is rendered. The following co
                 },
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true,
-                    **editMode: ej.Grid.EditMode.Batch**
+                    editMode: ej.Grid.EditMode.Batch
                 },
                 allowPaging: true,
                 pageSettings: { pageSize: 6 },
@@ -924,8 +939,8 @@ The following code example shows you how to include the jquery validation suppor
 
 {% highlight html %}
 
-  **[JS]**
- <div id="Grid"></div>
+  
+    <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
             $("#Grid").ejGrid({
@@ -941,14 +956,14 @@ The following code example shows you how to include the jquery validation suppor
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true
                 },
-                allowPaging: true,                
+                allowPaging: true,
                 columns: [
-                        { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", **validationRules: { required: true }** },
-                        { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String****},
+                        { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", validationRules: { required: true } },
+                        { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
                         { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                        { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric, **validationRules: { range: [0, 1000] }** },
+                        { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric, validationRules: { range: [0, 1000] } },
                         { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-               ]
+                ]
             });
         });
     </script>
@@ -968,19 +983,19 @@ In addition to jquery validation methods, you can also add your own custom valid
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
+
+  <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
-$.validator.addMethod("customCompare", function (value, element, params) {
-               return element.value > params[0] && element.value < params[1]
-           }, "Freight value must be between 1 and 9");
+            $.validator.addMethod("customCompare", function (value, element, params) {
+                return element.value > params[0] && element.value < params[1]
+            }, "Freight value must be between 1 and 9");
 
-           $.validator.addMethod("customRegex", function (value, element, params) {
-               if (element.value.length == params)
-                  return true;
-               return false;
+            $.validator.addMethod("customRegex", function (value, element, params) {
+                if (element.value.length == params)
+                    return true;
+                return false;
             }, "Customer ID must be 5 characters");
 
             $("#Grid").ejGrid({
@@ -996,18 +1011,17 @@ $.validator.addMethod("customCompare", function (value, element, params) {
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true
                 },
-                allowPaging: true,                
+                allowPaging: true,
                 columns: [
                         { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", validationRules: { required: true } },
-                        { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String**, validationRules: { customRegex: 5 }** },
+                        { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String, validationRules: { customRegex: 5 } },
                         { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                        { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric**, validationRules: { customCompare: [1, 9] }** },
+                        { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric, validationRules: { customCompare: [1, 9] } },
                         { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-                    ]
+                ]
             });
         });
     </script>
-
 
 
 {% endhighlight %}
@@ -1055,20 +1069,24 @@ Batch Add</td><td>
 added</td><td>
 public ActionResult BatchUpdate(List<Orders> changed, List<Orders> added, List<Orders> deleted){}</td></tr>
 </table>
+
+
+
 ### URL Adaptor
 
 You can use the **UrlAdaptor** of ejDataManger when binding datasource from remote data. At initial load of **Grid**, using **URL** property of DataManager, data are fetched from remote data and binded to **Grid**. You can map **CRUD** operation in **Grid** to Server-Side Controller action using the properties “InsertURL”, “UpdateURL” and “RemoveURL”. We can set insert, update and remove url using ejDataManager properties **insertUrl,removeUrl** and **updateUrl.**
 
 Also when you use **UrlAdaptor**, you need to return the data as **JSON** and the **JSON** object must contain field name as “result” with its value as dataSource and one more field name as “count” with its value as dataSource total records count.
 
+
 {% highlight html %}
 
-**[JS]**
-<div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {
+
+    <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {
             $("#Grid").ejGrid({
-                dataSource: ej.DataManager({ **url: "Home/DataSource", updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: “UrlAdaptor”** }),
+                dataSource: ej.DataManager({ url: "Home/DataSource", updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: “UrlAdaptor” }),
                 allowPaging: true,
                 editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
                 toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
@@ -1080,27 +1098,27 @@ Also when you use **UrlAdaptor**, you need to return the data as **JSON** and th
                         { field: "ShipName", headerText: 'Ship Name', width: 150 },
                         { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
                 ]
+            });
         });
-        });
-</script>
+    </script>
 
 
 {% endhighlight %}
 
 ### remoteSave Adaptor
 
-The **remoteSaveAdaptor** of DataManager can be used when you bind local data to **Grid** datasource. **CRUD** operations in **Grid** local data can be mapped to server-side controller using **CRUD****URL’s** “InsertUrl”, “UpdateUrl” and “RemoveUrl”. We can set insert, update and remove url using ejDataManager properties **insertUrl, removeUrl** and **updateUrl.**
+The **remoteSaveAdaptor** of DataManager can be used when you bind local data to **Grid** datasource. **CRUD** operations in **Grid** local data can be mapped to server-side controller using **CRUD URL’s** “InsertUrl”, “UpdateUrl” and “RemoveUrl”. We can set insert, update and remove url using ejDataManager properties **insertUrl, removeUrl** and **updateUrl.**
 
 When you use **remoteSaveAdaptor**, server-side post back occurs only for **CRUD** actions in **Grid**. Rest of the **Grid** actions (paging, sorting, filtering, etc.,) can be handled at client-side itself.
 
 {% highlight html %}
 
-**[JS]**
-<div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {
+
+   <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {
             $("#Grid").ejGrid({
-                dataSource: ej.DataManager({ **json: window.gridData, updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: "remoteSaveAdaptor" }**),
+                dataSource: ej.DataManager({ json: window.gridData, updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: "remoteSaveAdaptor" }),
                 allowPaging: true,
                 editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
                 toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
@@ -1112,10 +1130,9 @@ When you use **remoteSaveAdaptor**, server-side post back occurs only for **CRUD
                         { field: "ShipName", headerText: 'Ship Name', width: 150 },
                         { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
                 ]
+            });
         });
-        });
-</script>
-
+    </script>
 
 {% endhighlight %}
 
@@ -1133,7 +1150,7 @@ _Edit_
 
 ## Editing Remote Data
 
-In general, the client-side controls cannot be directly bound to SQL Server database. To access or modify the database, you must create web services that will return the **JSON** data, based on the request made.  **DataManager** can be bound to any web services. For a quick start, you can use **OData****Services** like WebApi, WCF DataServices.
+In general, the client-side controls cannot be directly bound to SQL Server database. To access or modify the database, you must create web services that will return the **JSON** data, based on the request made.  **DataManager** can be bound to any web services. For a quick start, you can use **ODataServices** like WebApi, WCF DataServices.
 
 Refer to the following steps to create WCF dataservice.
 
@@ -1219,11 +1236,11 @@ public static void InitializeService(DataServiceConfiguration config)
 
 16. Refer to the following code sample to get the data from the local server.
 
-{% highlight html %}
+{% highlight js %}
 
-**var dataManger = ej.DataManager({
+var dataManger = ej.DataManager({
                 url: "/model/Northwnd.svc/Orders"
-});**
+});
 
 
 {% endhighlight %}
@@ -1234,16 +1251,16 @@ public static void InitializeService(DataServiceConfiguration config)
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
+
+   <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
-**var dataManger = ej.DataManager({**
-                **url: "/model/Northwnd.svc/Orders"**
-            **});**
+            var dataManger = ej.DataManager({
+                url: "/model/Northwnd.svc/Orders"
+            });
             $("#Grid").ejGrid({
-              **dataSource: dataManger,**
+                dataSource: dataManger,
                 toolbarSettings: {
                     showToolbar: true,
                     toolbarItems: [
@@ -1255,9 +1272,9 @@ public static void InitializeService(DataServiceConfiguration config)
                 editSettings: {
                     allowEditing: true, allowAdding: true, allowDeleting: true
                 },
-                allowPaging: true,                
+                allowPaging: true,
                 columns: [
-                        { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right"},
+                        { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
                         { field: "CustomerID", headerText: "Customer ID" },
                         { field: "ShipCity", headerText: "Ship City " },
                         { field: "Freight", textAlign: "right" },
@@ -1291,21 +1308,21 @@ The following code example illustrates you how to set rowPosition.
 
 {% highlight html %}
 
-**[JS]**
-<div id="Grid"></div>
+
+    <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {
             // the datasource "window.gridData" is referred from jsondata.min.js
             $("#Grid").ejGrid({
-                dataSource:windows.griddata
+                dataSource: windows.gridData,
                 allowPaging: true,
                 scrollSettings: { width: 500, height: 300 },
-                editSettings: { allowAdding: true, **rowPosition: “bottom”,** allowEditing: true, allowDeleting: true },
+                editSettings: { allowAdding: true, rowPosition: "bottom", allowEditing: true, allowDeleting: true },
                 allowScrolling: true,
                 columns: [
-                            { field: "OrderID", headerText: "Order ID", textAlign:ej.TextAlign.Right },
+                            { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right },
                             { field: "CustomerID", headerText: "Employee ID" },
-                            { field: " EmployeeID ", headerText: "Frieght", textAlign:ej.TextAlign.Right },
+                            { field: " EmployeeID ", headerText: "Frieght", textAlign: ej.TextAlign.Right },
                             { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
                 ]
             });
@@ -1325,32 +1342,32 @@ _Adding new row position_
 
 ## Render grid with add new row
 
-In **ejGrid,** there is an option to****show the newly add row at the bottom or top of the Grid content during **Grid Initialize** that is achieved by using **showAddNewRow** property of **editSettings** in **Grid**. The default value is **false**.
+In **ejGrid,** there is an option to show the newly add row at the bottom or top of the Grid content during **Grid Initialize** that is achieved by using **showAddNewRow** property of **editSettings** in **Grid**. The default value is **false**.
 
 This property helps you to add a new row dynamically and save the record either top or bottom of the **Grid**.
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div> 
- <script type="text/javascript">
-$(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
-                    **editSettings**: { allowEditing: true, allowAdding: true, allowDeleting: true, rowPosition: "bottom", **showAddNewRow**: true },
-                    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-                    columns: [
-                           { field: "OrderID", isPrimaryKey: true, headerText: "Order ID" },
-                           { field: "CustomerID", headerText: 'Customer ID' },
-                           { field: "EmployeeID", headerText: 'Employee ID' },
-                           { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                           { field: "ShipCountry", headerText: 'Ship Country', editType: ej.Grid.EditingType.Dropdown },
 
-                    ],
-                });
+ <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
+                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, rowPosition: "bottom", showAddNewRow: true },
+                toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+                columns: [
+                       { field: "OrderID", isPrimaryKey: true, headerText: "Order ID" },
+                       { field: "CustomerID", headerText: 'Customer ID' },
+                       { field: "EmployeeID", headerText: 'Employee ID' },
+                       { field: "ShipName", headerText: 'Ship Name', width: 150 },
+                       { field: "ShipCountry", headerText: 'Ship Country', editType: ej.Grid.EditingType.Dropdown },
+
+                ],
             });
-</script>
+        });
+    </script>
 
 
 {% endhighlight %}

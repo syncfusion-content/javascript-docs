@@ -45,28 +45,27 @@ To enable **Context Menu** in **Grid** use **enableContextMenu** property in **c
 
 {% highlight html %}
 
-**[JS]**
 
 <div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    dataSource: window.gridData,
-                    allowSorting: true,
-                    allowPaging: true,
-                    allowGrouping: true,
-                    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
-                    **contextMenuSettings** : {**enableContextMenu** : true},
-                    columns: [
-                            { field: "OrderID", headerText: "Order ID", textAlign:ej.TextAlign.Right },
-                            { field: "CustomerID", headerText: "Employee ID" },
-                            { field: " EmployeeID ", headerText: "Frieght", textAlign:ej.TextAlign.Right },
-                            { field: "ShipCity", headerText: "Ship City", }
-                ]
-
-                });
-            });
-        </script>
+<script type="text/javascript">
+   $(function () {// Document is ready.
+       $("#Grid").ejGrid({
+           dataSource: window.gridData,
+           allowSorting: true,
+           allowPaging: true,
+           allowGrouping: true,
+           editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
+           contextMenuSettings : {enableContextMenu : true},
+           columns: [
+                   { field: "OrderID", headerText: "Order ID", textAlign:ej.TextAlign.Right },
+                   { field: "CustomerID", headerText: "Employee ID" },
+                   { field: " EmployeeID ", headerText: "Frieght", textAlign:ej.TextAlign.Right },
+                   { field: "ShipCity", headerText: "Ship City", }
+       ]
+   
+       });
+   });
+</script>
 
 
 {% endhighlight %}

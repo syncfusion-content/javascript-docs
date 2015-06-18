@@ -9,11 +9,11 @@ documentation: ug
 
 ### Refresh datasource
 
-**ejGrid** allows you to refresh datasource dynamically after **Grid****initialization**. It is useful to refresh **Grid****data****source**.
+**ejGrid** allows you to refresh datasource dynamically after **Grid** **initialization**. It is useful to refresh **Grid** **data** **source**.
 
 {% highlight html %}
 
-**[JS]**
+
 <input type="button" id="refresh" value="Refresh" name="refresh"/>
 <div id="Grid"></div>
 <script type="text/javascript">
@@ -41,7 +41,7 @@ documentation: ug
           { firstName: "Sam", lastName: "Beckett", email: "sam@syncfusion.com" }
         ];
         $("#refresh").click(function() {
-**$("#Grid").ejGrid("dataSource", newData);**
+            $("#Grid").ejGrid("dataSource", newData);
         });
     });
 </script>

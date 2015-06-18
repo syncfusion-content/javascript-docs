@@ -25,26 +25,24 @@ documentation: ug
 
 {% highlight html %}
 
-**[JS]**
+ <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            window.gridData = [
+                 { firstName: "John", lastName: "Beckett", email: "john@syncfusion.com" },
+                 { firstName: "Ben", lastName: "Beckett", email: "ben@syncfusion.com" },
+                 { firstName: "Andrew", lastName: "Beckett", email: "andrew@syncfusion.com" }
+            ];
+            //JSON adaptor with DataManager.
+            var dataManager = ej.DataManager(window.gridData);
+            dataManager.insert({firstName: "Joel", lastName:"Beckett", email:"joel@syncfusion.com"});
 
-<div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {// Document is ready.
-       window.gridData = [
-            { firstName: "John", lastName: "Beckett", email: "john@syncfusion.com" },
-            { firstName: "Ben", lastName: "Beckett", email: "ben@syncfusion.com" },
-            { firstName: "Andrew", lastName: "Beckett", email: "andrew@syncfusion.com" }
-        ];
-        //JSON adaptor with DataManager.
-        **var dataManager = ej.DataManager(window.gridData);**
-        **dataManager.insert({firstName: "Joel", lastName:"Beckett", email:"joel@syncfusion.com"});**
-
-        $("#Grid").ejGrid({
-            dataSource: **dataManager**,
+            $("#Grid").ejGrid({
+                dataSource: dataManager,
+            });
         });
-    });
 
-</script>
+    </script>
 
 
 {% endhighlight %}
@@ -61,20 +59,18 @@ Nowadays **oData** is a very useful technique in consuming data. You can use **o
 
 {% highlight html %}
 
-**[JS]**
+   <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            //oData Adaptor with DataManager
+            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
 
-<div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {// Document is ready.
-        //oData Adaptor with DataManager 
-        **var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");**
-
-        $("#Grid").ejGrid({
-            dataSource: dataManager,
-            columns: ["ProductID","ProductName","SupplierID","UnitPrice"]
+            $("#Grid").ejGrid({
+                dataSource: dataManager,
+                columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
+            });
         });
-    });
-</script>
+    </script>
 
 
 {% endhighlight %}
@@ -91,20 +87,18 @@ The following screenshot is the result of the above code example.
 
 {% highlight html %}
 
-**[JS]**
-
 <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {// Document is ready.
             //new custom adaptor implmentation
             //able to implement more option in custom adaptor other than insert
-            **var customAdaptor = new ej.Adaptor().extend({**
-                **insert: function (dm, data) {**
-                    **data["id"] = dm.dataSource.json[dm.dataSource.json.length - parseInt(1,10)].id + 1;// id auto increment**                    
-                    **return dm.dataSource.json.push(data);**
-                },
-           **processQuery:ej.JsonAdaptor.prototype.processQuery** // resused process query from json adaptor
-      **});**
+            var customAdaptor = new ej.Adaptor().extend({
+                insert: function (dm, data) {
+                    data["id"] = dm.dataSource.json[dm.dataSource.json.length - parseInt(1,10)].id + 1;// id auto increment
+                    return dm.dataSource.json.push(data);
+                    },
+           processQuery:ej.JsonAdaptor.prototype.processQuery // resused process query from json adaptor
+      });
             window.gridData = [
                 { id: 1 , firstName: "John", lastName: "Beckett", email: "john@syncfusion.com" },
                 { id: 2, firstName: "Ben", lastName: "Beckett", email: "ben@syncfusion.com" },
@@ -113,9 +107,9 @@ The following screenshot is the result of the above code example.
 
             var dataManager = new ej.DataManager(window.gridData);
             // assigning custom adaptor to datamanager
-             **dataManager.adaptor = new customAdaptor();**
+            dataManager.adaptor = new customAdaptor();
             // insert from custom adaptor usage
-            dataManager.insert({ firstName: "Joel", lastName: "Beckett", email: "joel@syncfusion.com" });
+           dataManager.insert({ firstName: "Joel", lastName: "Beckett", email: "joel@syncfusion.com" });
 
             $("#Grid").ejGrid({
                 dataSource: dataManager,
@@ -143,19 +137,19 @@ Cache Adaptor is a technique used to cache multiple page data by using the prope
 
 {% highlight html %}
 
-**[JS]**
-<div id="Grid"></div>
+  <div id="Grid"></div>
     <script type="text/javascript">
 
-     $(function () {
-       var dataManger = ej.DataManager({
-                   url:   [http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/](http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/)
-                   ,**enableCaching:true,cachingPageSize:3, timeTillExpiration:10000**
+        $(function () {
+            var dataManger = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
+                enableCaching: true,
+                cachingPageSize: 10,
+                timeTillExpiration: 120000
             });
             $("#Grid").ejGrid({
                 dataSource: dataManger,
-                columns: ["OrderID "," CustomerID "," EmployeeID "," Freight”
-                        ," ShipCity”]
+                columns: ["OrderID ", " CustomerID ", " EmployeeID ", " Freight", " ShipCity"]
             });
         });
     </script>

@@ -15,7 +15,7 @@ documentation: ug
 
 {% highlight html %}
 
-**[JS]**
+
 
 <div id="Grid"></div>
 <script type="text/javascript">
@@ -56,20 +56,18 @@ Result of the above code example.
 
 {% highlight html %}
 
-**[JS]**
-
 <div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {// Document is ready.
-        //oData Adaptor with DataManager 
-        **var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");**
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            //oData Adaptor with DataManager
+            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
 
-        $("#Grid").ejGrid({
-            dataSource: dataManager,
-            columns: ["ProductID","ProductName","SupplierID","UnitPrice"]
+            $("#Grid").ejGrid({
+                dataSource: dataManager,
+                columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
+            });
         });
-    });
-</script>
+    </script>
 
 
 {% endhighlight %}
@@ -80,7 +78,7 @@ The following output is the result of the above code example.
 
 {% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="OData binding"%}
 
-> _**Note: For information about DataManager with Grid check DataAdaptors concept.**_
+> _**Note**: For information about DataManager with Grid check DataAdaptors concept._
 
 ### Load at once
 
@@ -88,25 +86,24 @@ Through this **load at once** technique, you can load all remote data from the s
 
 {% highlight html %}
 
-**[JS]**
 
 <div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {// Document is ready.
-        //oData Adaptor with DataManager
-        var dataManager = ej.DataManager({
-            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products",
-            **offline: true**
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            //oData Adaptor with DataManager
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products",
+                offline: true
+            });
+
+            $("#Grid").ejGrid({
+                dataSource: dataManager,
+                allowPaging: true,
+                columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
+            });
         });
 
-        $("#Grid").ejGrid({
-            dataSource: dataManager,
-            allowPaging: true,
-            columns: ["ProductID","ProductName","SupplierID","UnitPrice"]
-        });
-    });
-
-</script>
+    </script>
 
 
 {% endhighlight %}
@@ -123,21 +120,21 @@ The following output is the result of the above code example.
 
 {% highlight html %}
 
-**[JS]**
+
 
 <div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {// Document is ready.
-        //oData Adaptor with DataManager 
-        **var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");**
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            //oData Adaptor with DataManager
+            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
 
-        $("#Grid").ejGrid({
-            dataSource: dataManager,
-            allowPaging: true,
-            columns: ["ProductID","ProductName","SupplierID","UnitPrice"]
+            $("#Grid").ejGrid({
+                dataSource: dataManager,
+                allowPaging: true,
+                columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
+            });
         });
-    });
-</script>
+    </script>
 
 
 {% endhighlight %}
@@ -158,25 +155,23 @@ ejGrid can use cross domain data service with the help of DataManager. The given
 
 {% highlight html %}
 
-**[JS]**
-
 <div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {// Document is ready.
-        //DataManger 
-        var dataManager = ej.DataManager({
-            url: "http://mvc.syncfusion.com/UGService/api/Orders",
-            **crossDomain: true,**
-            offline: true
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            //DataManger
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/UGService/api/Orders",
+                crossDomain: true,
+                offline: true
+            });
+            $("#Grid").ejGrid({
+                allowPaging: true,
+                dataSource: dataManager,
+                columns: ["OrderID", "CustomerID", "EmployeeID", "ShipCity"]
+            });
         });
-        $("#Grid").ejGrid({
-            allowPaging: true,
-            dataSource: dataManager,
-            columns: ["OrderID","CustomerID","EmployeeID","ShipCity"]
-        });
-    });
 
-</script>
+    </script>
 
 
 {% endhighlight %}
@@ -189,29 +184,29 @@ The following screenshot is the result of the above code example.
 
 ### HTTP additional parameters
 
-In this section, you can learn how to customize or add an extra parameter for **HTTP** request. You can add parameter to **oData****service****URL** using the **Query** property in **Grid**. **DataManager** uses this **Query** internally in **Grid**.
+In this section, you can learn how to customize or add an extra parameter for **HTTP** request. You can add parameter to **oDataserviceURL** using the **Query** property in **Grid**. **DataManager** uses this **Query** internally in **Grid**.
 
 {% highlight html %}
 
-**[JS]**
+
 
 <div id="Grid"></div>
-<script type="text/javascript">
-    $(function () {// Document is ready.
-        //oData Adaptor with DataManager
-        var dataManager = ej.DataManager({
-            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products"
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            //oData Adaptor with DataManager
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products"
+            });
+
+            $("#Grid").ejGrid({
+                dataSource: dataManager,
+                allowPaging: true,
+                query: new ej.Query().addParams("$filter", "ProductID gt 50"), //extra parameter
+                columns: ["ProductID", "ProductName", "SupplierID", "CategoryID"]
+            });
         });
 
-         $("#Grid").ejGrid({
-            dataSource: dataManager,
-            allowPaging: true,
-            **query: new ej.Query().addParams("$filter", "ProductID gt 50"),** //extra parameter
-            columns: ["ProductID", "ProductName", "SupplierID", "CategoryID"]
-        });
-    });
-
-</script>
+    </script>
 
 
 {% endhighlight %}
@@ -228,16 +223,19 @@ The following screenshot is the result of the above code example.
 
 {% highlight html %}
 
-**[JS]**
-
-$("#Grid").ejGrid({
-            dataSource:window.gridData,
-            columns: [
-                     { field: "firstName",**type**:"string" },
-                     { field: "lastName", **type**: "string" },
-                     { field: "email" }
-            ]
+<div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                columns: [
+                         { field: "firstName", type: "string" },
+                         { field: "lastName", type: "string" },
+                         { field: "email" }
+                ]
+            });
         });
+    </script>
 
 
 
@@ -249,23 +247,28 @@ $("#Grid").ejGrid({
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
-<table id="Table1">
+ <div id="Grid"></div>
+    <table id="Table1">
         <thead>
             <tr>
-                <th>Laptop
+                <th>
+                    Laptop
                 </th>
-                <th>Model
+                <th>
+                    Model
                 </th>
-                <th>Price
+                <th>
+                    Price
                 </th>
-                <th>OS
+                <th>
+                    OS
                 </th>
-                <th>RAM
+                <th>
+                    RAM
                 </th>
-                <th>ScreenSize
+                <th>
+                    ScreenSize
                 </th>
             </tr>
         </thead>
@@ -312,21 +315,21 @@ $("#Grid").ejGrid({
             </tr>
         </tbody>
     </table>
-<script type="text/javascript">
-    $(function () {// Document is ready.
-        $("#Grid").ejGrid({
-          **dataSource: ej.DataManager($("#Table1")),** // binds table to grid
-            columns: [
-                     { field: "Laptop", headerText: "Laptop Brands"},
-                     { field: "Model", headerText: "Model" },
-                     { field: "Price", headerText: "Price", width: 90, textAlign: ej.TextAlign.Right, format: " ${0:c}" },
-                     { field: "OS", headerText: "Operating System" },
-                     { field: "RAM", headerText: "RAM", width: 120, textAlign: ej.TextAlign.Right },
-                     { field: "ScreenSize", headerText: "Screen Size", textAlign: ej.TextAlign.Right, width: 100, format: "{0:N1} inch" }
-        ]
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+              dataSource: ej.DataManager($("#Table1")), // binds table to grid
+                columns: [
+                         { field: "Laptop", headerText: "Laptop Brands"},
+                         { field: "Model", headerText: "Model" },
+                         { field: "Price", headerText: "Price", width: 90, textAlign: ej.TextAlign.Right, format: " ${0:c}" },
+                         { field: "OS", headerText: "Operating System" },
+                         { field: "RAM", headerText: "RAM", width: 120, textAlign: ej.TextAlign.Right },
+                         { field: "ScreenSize", headerText: "Screen Size", textAlign: ej.TextAlign.Right, width: 100, format: "{0:N1} inch" }
+                ]
+            });
         });
-    });
-</script>
+    </script>
 
 
 {% endhighlight %}

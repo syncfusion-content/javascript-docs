@@ -11,11 +11,11 @@ documentation: ug
 
 Column format can be used dynamically to change data values format with the help of the public method. The following code example illustrates the **Essential JavaScript** with column formatting in public method.
 
-{% highlight html %}
+{% highlight js %}
 
 var grid = $("#Grid").data("ejGrid");
 var column = grid.getColumnByField("fieldName");
-column.format = **"{0:n2**}";
+column.format = "{0:n2}";
 grid.refreshContent(true);
 
 

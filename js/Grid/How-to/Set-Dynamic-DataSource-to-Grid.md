@@ -15,7 +15,7 @@ For instance, consider a textbox above **Grid** and depending on its value, you 
 
 {% highlight html %}
 
-**[JS]**
+
 Enter EmployeeID Field Value:
 <input type="text" id="colValue" />
 <input type="button" id="customButton" value="Change DataSource">
