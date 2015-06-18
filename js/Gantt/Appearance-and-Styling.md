@@ -17,7 +17,6 @@ You can customize the week header format and day header format in the **Schedule
 
 {% highlight js %}
 
-
     $("#GanttContainer").ejGantt({
         //...
         scheduleHeaderSettings: {
@@ -27,10 +26,7 @@ You can customize the week header format and day header format in the **Schedule
         }
     });
 
-
 {% endhighlight %}
-
-
 
 The following screenshot shows the customized format schedule header in **Gantt** control.
 
@@ -41,7 +37,6 @@ The following screenshot shows the customized format schedule header in **Gantt*
 You can customize the **Taskbar** based on the task information in Gantt control to highlight the task. The following code example shows how to customize the **Taskbar** in **Gantt** control.
 
 {% highlight js %}
-
 
     $("#GanttContainer").ejGantt({
         //...
@@ -66,8 +61,6 @@ You can customize the **Taskbar** based on the task information in Gantt control
 
 
 {% endhighlight %}
-
-
 
 The following screenshot shows the customized taskbar in **Gantt** control.
 
@@ -119,8 +112,6 @@ You can apply the theme (Gradient lime) to the **Gantt** control by using the st
 
 
 {% endhighlight %}
-
-
 
 The following screenshot shows the **Gantt** control with Gradient-lime theme.
 
