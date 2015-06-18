@@ -127,7 +127,7 @@ Gets or sets the start point and end point gradient colors to be applied for spe
                     {
                         shapeData: usMap,
                         shapeDataPath: "name",
-                        shapeIdTableField: "name",
+                        shapePropertyPath: "name",
                         dataSource:populationData,
                         shapeSettings: {
                             fill: "#9CBF4E",
@@ -269,7 +269,7 @@ jQuery(function($) {
         {
             shapeData: usMap,                        
             shapeDataPath: "State",                        
-            shapeIdTableField: "name",                        
+            shapePropertyPath: "name",                        
             dataSource: electionData,                        
             shapeSettings: 
             {                            
