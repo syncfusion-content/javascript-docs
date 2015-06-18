@@ -11,13 +11,13 @@ documentation: ug
 
 The **Gantt** control provides built-in support to add, insert and update the task inside **Gantt**. **Gantt** provides three types of editing, they are:
 
-*Cell Editing
+* Cell Editing
 
-*Normal Editing
+* Normal Editing
 
-*Taskbar Editing
+* Taskbar Editing
 
-*Predecessor Editing
+* Predecessor Editing
 
 ### Cell Editing
 
