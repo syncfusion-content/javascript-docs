@@ -126,7 +126,7 @@ ejSplitter</td><td>
 </td></tr>
 </table>
 
-**ejAccordion**
+### ejAccordion
 
 <table>
 <tr>
@@ -1827,7 +1827,7 @@ contentLoad</td><td>
  </td></tr>
 </table>
 
-**ejDigitalGauge**
+### ejDigitalGauge
 
 <table>
 <tr>
@@ -3929,7 +3929,7 @@ Layout</td><td>
  </td></tr>
 </table>
 
-<a name="olappager"><b>ejOlapPager</b></a>
+### olappager
 
 <table>
 <tr>
