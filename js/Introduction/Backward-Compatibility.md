@@ -2975,7 +2975,7 @@ args.pointerAngle</td></tr>
 <b>New API Name</b></td><td colspan = "2">
 <b>Comments</b></td></tr>
 <tr>
-<td rowspan = "1">
+<td rowspan = "49">
 <b>Property</b></td><td colspan = "2">
 zoomOnSelection</td><td colspan = "2">
 enableZoomOnSelection</td><td colspan = "2">
@@ -3010,15 +3010,9 @@ This API is removed since it is achieved in markers API.</td></tr>
 shapeFileLayer</td><td colspan = "2">
 shapeLayer</td><td colspan = "2">
  </td></tr>
+
 <tr>
 <td colspan = "2">
-<b>Event</b></td><td colspan = "2">
-annotationSelected</td><td colspan = "2">
-markerSelected</td><td colspan = "2">
- </td></tr>
-<tr>
-<td colspan = "2" rowspan = "37">
-<b>Property</b></td><td colspan = "2">
 bubbleSetting</td><td colspan = "2">
 bubbleSettings</td><td colspan = "2">
  </td></tr>
@@ -3203,19 +3197,7 @@ subshapeFileLayers</td><td colspan = "2">
 subLayers</td><td colspan = "2">
  </td></tr>
 <tr>
-<td colspan = "2" rowspan = "2">
-<b>Event</b></td><td colspan = "2">
-shapeHovered</td><td colspan = "2">
-mouseover</td><td colspan = "2">
- </td></tr>
-<tr>
 <td colspan = "2">
-shapeUnHovered</td><td colspan = "2">
-mouseleave</td><td colspan = "2">
- </td></tr>
-<tr>
-<td colspan = "2" rowspan = "5">
-<b>Property</b></td><td colspan = "2">
 minSize</td><td colspan = "2">
 minValue</td><td colspan = "2">
 This API comes under API bubbleSettings</td></tr>
@@ -3239,19 +3221,35 @@ shapeDataPath</td><td colspan = "2">
 shapeIdTableField</td><td colspan = "2">
 shapePropertyPath</td><td colspan = "2">
  </td></tr>
+<td colspan = "2" rowspan = "4">
+<b>Event</b></td><td colspan = "2">
+shapeHovered</td><td colspan = "2">
+mouseover</td><td colspan = "2">
+ </td></tr>
+<tr>
+<td colspan = "2">
+shapeUnHovered</td><td colspan = "2">
+mouseleave</td><td colspan = "2">
+ </td></tr>
+<tr>
+<td colspan = "2">
+annotationSelected</td><td colspan = "2">
+markerSelected</td><td colspan = "2">
+ </td></tr>
+<tr>
+<td colspan = "2">
+panning</td><td colspan = "2">
+N/A</td><td colspan = "2">
+This API is removed</td></tr>
+<tr>
 <tr>
 <td colspan = "2">
 <b>Enum</b></td><td colspan = "2">
 LayerType = {        Geometry: "geometry",        OSM: "osm"    };</td><td colspan = "2">
 LayerType = {Geometry: "geometry",        OSM: "osm",        Bing: "bing"    };</td><td colspan = "2">
  </td></tr>
-<tr>
-<td colspan = "2">
-<b>Event</b></td><td colspan = "2">
-panning</td><td colspan = "2">
-N/A</td><td colspan = "2">
-This API is removed</td></tr>
 </table>
+
 **ejMaskEdit**
 
 <table>
