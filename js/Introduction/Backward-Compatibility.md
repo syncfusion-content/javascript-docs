@@ -549,14 +549,6 @@ drawComparativeMeasureSymbol</td><td>
 <b>args.Object</b><b>args.Value</b></td><td colspan = "3">
 <b>args.object</b><b>args.value</b></td><td colspan = "2">
 Modified the args.Object and args.Value</td></tr>
-<tr>
-<td>
-</td><td>
-</td><td colspan = "2">
-</td><td>
-</td><td colspan = "2">
-</td><td>
-</td></tr>
 </table>
 **ejButton**
 
@@ -610,8 +602,8 @@ Added</td></tr>
 <b>New API</b></td><td colspan = "4">
 <b>Comments</b></td></tr>
 <tr>
-<td rowspan = "1">
-                Property</td><td colspan = "5">
+<td rowspan = "14">
+                <b>Property</b></td><td colspan = "5">
 Localization</td><td colspan = "3">
 locale</td><td colspan = "4">
  </td></tr>
