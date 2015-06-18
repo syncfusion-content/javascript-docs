@@ -28,7 +28,7 @@ documentation: ug
        $(function () {
             $("#defaultRibbon").ejRibbon({
                 width: "70%",
-               **allowResizing: true**, 
+                allowResizing: true, 
                 applicationTab: {
                     Type: "ApplicationMenu", itemID: "ribbonmenu"
                 },
