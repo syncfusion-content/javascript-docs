@@ -23,10 +23,7 @@ The **Gantt** control for **JavaScript** has built-in support for sorting one or
         allowSorting: true
     });
 
-
 {% endhighlight %}
-
-
 
 **Multicolumn sorting**
 
@@ -34,17 +31,13 @@ The **Gantt** control for **JavaScript** has built-in support for sorting one or
 
 {% highlight js %}
 
-
     $("#GanttContainer").ejGantt({
         //...
         allowSorting: true
         allowMultiSorting: true
     });
 
-
 {% endhighlight %}
-
-
 
 The following screenshot shows the output of multicolumn sorting in **Gantt** control.
 
