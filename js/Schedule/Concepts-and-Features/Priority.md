@@ -51,63 +51,64 @@ The following code example illustrates on how to render priority feature in the�
 
 
 
+{% highlight html %}
 
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id=”Schedule”></div>
-<script type=”text/javascript”>
-$(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-currentDate: new Date(2014, 4, 5),
-**prioritySettings: {**
-**enable: true**
-**},**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-description:"Description",
-allDay: "AllDay",
-**priority:"Priority",** // To display the Priority value appointment window need to bind the property like this
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentDate: new Date(2014, 4, 5),
+            prioritySettings: {
+            enable: true
+          },
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                description:"Description",
+                allDay: "AllDay",
+                priority:"Priority", // To display the Priority value appointment window need to bind the property like this
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
 
-});
+    });
 
-// The appointment data along with priority data to be passed to the dataSource are as follows,
-window.Default = [{
-Id: 100,
-Subject: "Bering Sea Gold",
-StartTime: new Date(2014,4,2,06,00),
-EndTime:new Date(2014,4,2,08,00),
-Description: "",
-**Priority:"low",**  // The Priority value passed in the JSON object like this with lower cases
-AllDay: false,
-Recurrence: true,
-RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
-Categorize:"3"
-},
-{
-Id: 101,
-Subject: "Bering Sea Gold",
-StartTime:new Date(2014,4,5,10,00),
-EndTime: new Date(2014,4,5,11,00),
-Description: "",
-**Priority: "high",**
-AllDay: false,
-Recurrence: false,
-Categorize: "1,3"
-}
-];
-</script>
+    // The appointment data along with priority data to be passed to the dataSource are as follows,
+    window.Default = [{
+        Id: 100,
+        Subject: "Bering Sea Gold",
+        StartTime: new Date(2014,4,2,06,00),
+        EndTime:new Date(2014,4,2,08,00),
+        Description: "",
+        Priority:"low",  // The Priority value passed in the JSON object like this with lower cases
+        AllDay: false,
+        Recurrence: true,
+        RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
+        Categorize:"3"
+    },
+    {
+        Id: 101,
+        Subject: "Bering Sea Gold",
+        StartTime:new Date(2014,4,5,10,00),
+        EndTime: new Date(2014,4,5,11,00),
+        Description: "",
+        Priority: "high",
+        AllDay: false,
+        Recurrence: false,
+        Categorize: "1,3"
+    }
+    ];
 
 
 {% endhighlight %}
@@ -155,45 +156,46 @@ The following code example illustrates on how to render priority feature with us
 
 
 
+{% highlight html %}
 
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id=”Schedule”></div>
-<script type=”text/javascript”>
-$(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-currentDate: new Date(2014, 4, 5),
-**prioritySettings: {**
-**enable: true,**
-**template: "<div class='${value}'></div>",**  // To display the Priority option in the appointment window while passing custom datasource we need to mention the template like this
-**dataSource:**   // We can pass the custom datasource (priority option) for the schedule control like the following
-**[**
-**{ text: "None", id: 1, value: "none" },**
-**{ text: "Critical", id: 2, value: "critical" },**
-**{ text: "UltraCritical", id: 3, value: "ultracritical" }**
-**],**
-**},**
-categorizeSettings:{enable:true},
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-description:"Description",
-allDay: "AllDay",
-**priority:"Priority",**
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentDate: new Date(2014, 4, 5),
+          prioritySettings: {
+          enable: true,
+          template: "<div class='${value}'></div>",  // To display the Priority option in the appointment window while passing custom datasource we need to mention the template like this
+          dataSource:  // We can pass the custom datasource (priority option) for the schedule control like the following
+          [
+          { text: "None", id: 1, value: "none" },
+          { text: "Critical", id: 2, value: "critical" },
+          { text: "UltraCritical", id: 3, value: "ultracritical" }
+          ],
+          },
+            categorizeSettings:{enable:true},
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                description:"Description",
+                allDay: "AllDay",
+                priority:"Priority",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
 
-});
-</script>
+    });
 
 
 {% endhighlight %}
@@ -215,27 +217,27 @@ The following code example illustrates how to define the css style while using t
 // Her we are defining the style of the “custom priority icon”
 
 <style>
-.critical,
-.ultracritical,
-.none {
-height: 16px;
-width: 17px;
-float: left;
-background-repeat: no-repeat;
-padding: 1px;
-}
+    .critical,
+    .ultracritical,
+    .none {
+        height: 16px;
+        width: 17px;
+        float: left;
+        background-repeat: no-repeat;
+        padding: 1px;
+    }
 
-.critical {
-background-image: url('../themes/images/arrowup.png');
-background-color: orange;
-background-position: 2px;
-}
+    .critical {
+        background-image: url('../themes/images/arrowup.png');
+        background-color: orange;
+        background-position: 2px;
+    }
 
-.ultracritical {
-background-image:url('../themes/images/arrowup.png');
-background-color: red;
-background-position: 2px;
-}
+    .ultracritical {
+        background-image: url('../themes/images/arrowup.png');
+        background-color: red;
+        background-position: 2px;
+    }
 </style>
 
 
@@ -249,44 +251,45 @@ background-position: 2px;
 
 
 
+{% highlight html %}
 
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id=”Schedule”></div>
-<script type=”text/javascript”>
-$(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-currentDate: new Date(2014, 4, 5),
-prioritySettings: {
-enable: true,
-**template: "<img class='eimg' src='../images/schedule/${value}.png' height='20px' width='20px'/>"**,  // We can use the image tag directly to display the priority icon/image
-dataSource:
-[
-{ text: "None", id: 1, value: "none" },
-{ text: "Critical", id: 2, value: "critical" },
-{ text: "UltraCritical", id: 3, value: "ultracritical" }
-],
-},
-categorizeSettings:{enable:true},
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-description:"Description",
-allDay: "AllDay",
-**priority:"Priority",**
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentDate: new Date(2014, 4, 5),
+            prioritySettings: {
+                enable: true,
+                template: "<img class='eimg' src='../images/schedule/${value}.png' height='20px' width='20px'/>",  // We can use the image tag directly to display the priority icon/image
+                dataSource:
+                [
+                { text: "None", id: 1, value: "none" },
+                { text: "Critical", id: 2, value: "critical" },
+                { text: "UltraCritical", id: 3, value: "ultracritical" }
+                ],
+            },
+            categorizeSettings:{enable:true},
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                description:"Description",
+                allDay: "AllDay",
+                priority:"Priority",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 {% endhighlight %}
