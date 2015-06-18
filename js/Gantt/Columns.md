@@ -26,8 +26,6 @@ You can change the width of the column in **TreeGrid** to show the entire text o
 
 {% endhighlight %}
 
-
-
 ### Column Template
 
 Column template is used to customize the column’s look and feel, based on requirement. 
@@ -176,8 +174,6 @@ The following code example shows you how to display the icon in the **TreeGrid**
 
 {% endhighlight %}
 
-
-
 The following screenshot displays the customized column in Gantt control.
 
 {% include image.html url="/js/Gantt/Columns_images/Columns_img1.png" Caption="Customized column"%}
@@ -212,10 +208,7 @@ The column menu provides the following options:
         // ...             
     });
 
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the column chooser in the **Gantt** control.
 
