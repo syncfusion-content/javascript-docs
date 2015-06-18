@@ -7,11 +7,11 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-### Ranges
+## Ranges
 
 **Ranges** are objects that highlight a range of values and can display different ranges in different colors. You can customize **Ranges** using various attributes such as height, color of the range. 
 
-#### Distance from Scale
+### Distance from Scale
 
 You can set the distance between the **ranges** and scales in **OlapGauge** using “**distanceFromScale”**.
 
@@ -83,7 +83,7 @@ $(function () {
 
 {% endhighlight %}
 
-#### Style Customization 
+### Style Customization 
 
 You can set the background color for the **ranges** in **OlapGauge** using “**backgroundColor**”.
 
@@ -155,11 +155,9 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Ranges_images/Ranges_img1.png" Caption="Range style customization"%}
 
-#### Size Setting
+### Size Setting
 
 You can customize the **Range size** using “**size**” property.
 
@@ -229,8 +227,6 @@ $(function () {
  });
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Ranges_images/Ranges_img2.png" Caption="Range Size Setting"%}
 

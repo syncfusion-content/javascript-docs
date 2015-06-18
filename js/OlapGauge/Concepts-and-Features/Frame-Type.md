@@ -7,7 +7,7 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-### Frame Type 
+## Frame Type 
 
 **OLAP Gauge** supports built-in frame types to provide effective rim styles. The **frameType** property is used to set the frame type of the **OlapGauge** control. The supported frame types are:
 
@@ -15,7 +15,7 @@ documentation: ug
 
     2. Half Circle - displays half view of the OlapGauge.
 
-#### Full Circle
+### Full Circle
 
 By default, frame type is **Full Circle**. You can also set frame type with **frameType** property to **fullCircle**.
 
@@ -86,13 +86,9 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Frame-Type_images/Frame-Type_img1.png" Caption="Full Circle"%}
 
-<br/>
-
-#### Half Circle
+### Half Circle
 
 You can set frame type as **halfCircle** with the help of **frameType** property to visualize the gauge control in half circle.
 
@@ -162,8 +158,6 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Frame-Type_images/Frame-Type_img2.png" Caption="Half Circle Frame Type"%}
 
