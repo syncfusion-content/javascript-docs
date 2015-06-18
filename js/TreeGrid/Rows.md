@@ -157,7 +157,7 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
 
 The output of **TreeGrid** with **Row Template** is as follows.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Rows_images/Rows_img1.png" Caption="TreeGrid with Row Template"%}
+{% include image.html url="/js/TreeGrid/Rows_images/Rows_img1.png" Caption="TreeGrid with Row Template"%}
 
 ### Row Drag and Drop
 
@@ -194,7 +194,7 @@ The following code explains about enabling the row drag and drop with the defaul
 
 The following screenshot depicts a **row drag and drop** in the **TreeGrid.**
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Rows_images/Rows_img2.png" Caption="Row drag and drop in TreeGrid"%}
+{% include image.html url="/js/TreeGrid/Rows_images/Rows_img2.png" Caption="Row drag and drop in TreeGrid"%}
 
 #### Customizing Drag tooltip
 
@@ -263,5 +263,5 @@ The following code shows how to render **row drag tooltip** with tooltip templat
 
 
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Rows_images/Rows_img3.png" Caption="Row drag and drop in TreeGrid with rowtemplate"%}
+{% include image.html url="/js/TreeGrid/Rows_images/Rows_img3.png" Caption="Row drag and drop in TreeGrid with rowtemplate"%}
 

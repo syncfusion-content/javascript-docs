@@ -48,7 +48,7 @@ In the Week schedule mode, the upper part of the schedule header displays the **
 
 The following screenshot illustrates the **Week Schedule** in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Schedule-Modes_images/Schedule-Modes_img1.png" Caption="Week Schedule in Gantt control"%}
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img1.png" Caption="Week Schedule in Gantt control"%}
 
 ## Month Schedule Mode
 
@@ -73,7 +73,7 @@ In the Week schedule mode, the upper part of the schedule header displays the **
 
 The following screenshot illustrates the **Month Schedule** in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Schedule-Modes_images/Schedule-Modes_img2.png" Caption="Month Schedule in Gantt control"%}
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img2.png" Caption="Month Schedule in Gantt control"%}
 
 ## Year Schedule Mode
 
@@ -97,7 +97,7 @@ In the Week schedule mode, the upper schedule header displays the **Years** wher
 
 The following screen shot shows the **Year Schedule** in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Schedule-Modes_images/Schedule-Modes_img3.png" Caption="Year Schedule in Gantt control"%}
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img3.png" Caption="Year Schedule in Gantt control"%}
 
 ## Day Schedule Mode
 
@@ -122,7 +122,7 @@ In the Week schedule mode, the upper part of the header displays the **Days** wh
 
 The following screenshot illustrates the **Day Schedule** in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Schedule-Modes_images/Schedule-Modes_img4.png" Caption="Day Schedule in Gantt control"%}
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img4.png" Caption="Day Schedule in Gantt control"%}
 
 ## Hour Schedule Mode
 
@@ -166,5 +166,5 @@ The **Hour Schedule Mode** supports both the **minute** and h**our** duration un
 
 
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Schedule-Modes_images/Schedule-Modes_img5.png" Caption="Hour-Minute schedule mode in Gantt control"%}
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img5.png" Caption="Hour-Minute schedule mode in Gantt control"%}
 

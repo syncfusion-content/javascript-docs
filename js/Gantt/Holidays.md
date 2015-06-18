@@ -30,5 +30,5 @@ documentation: ug
 
 The following screenshot shows the output of **Holidays** in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Holidays_images/Holidays_img1.png" Caption="Holidays"%}
+{% include image.html url="/js/Gantt/Holidays_images/Holidays_img1.png" Caption="Holidays"%}
 

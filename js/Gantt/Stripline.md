@@ -32,5 +32,5 @@ documentation: ug
 
 The following screenshot shows **stripline** in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Stripline_images/Stripline_img1.png" Caption="Stripline"%}
+{% include image.html url="/js/Gantt/Stripline_images/Stripline_img1.png" Caption="Stripline"%}
 

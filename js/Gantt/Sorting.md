@@ -48,5 +48,5 @@ The **Gantt** control for **JavaScript** has built-in support for sorting one or
 
 The following screenshot shows the output of multicolumn sorting in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Sorting_images/Sorting_img1.png" Caption="Multicolumn Sorting"%}
+{% include image.html url="/js/Gantt/Sorting_images/Sorting_img1.png" Caption="Multicolumn Sorting"%}
 

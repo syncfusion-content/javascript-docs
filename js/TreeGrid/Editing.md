@@ -36,5 +36,5 @@ The following code example shows you how to enable **cellEditing** in **TreeG
 
 The output of **TreeGrid** with **cellEditing** is as follows.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Editing_images/Editing_img1.png" Caption="Cell Editing"%}
+{% include image.html url="/js/TreeGrid/Editing_images/Editing_img1.png" Caption="Cell Editing"%}
 

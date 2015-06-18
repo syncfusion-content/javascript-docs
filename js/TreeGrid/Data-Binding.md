@@ -77,7 +77,7 @@ The following code example shows you how to bind the **Hierarchical** local data
 
 The output of the above steps is as follows:
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="Hierarchy Datasource Binding"%}
+{% include image.html url="/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png" Caption="Hierarchy Datasource Binding"%}
 
 ###Self-Referential Data Binding (Flat Data)
 
@@ -139,5 +139,5 @@ The output of the above steps is as follows:
 
 The following screenshot shows the output of the above steps,
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="Self-Referential DataBinding"%}
+{% include image.html url="/js/TreeGrid/Data-Binding_images/Data-Binding_img2.png" Caption="Self-Referential DataBinding"%}
 

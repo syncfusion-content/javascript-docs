@@ -41,5 +41,5 @@ documentation: ug
 
 The following screenshot shows the toolbar option in Gantt control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Toolbar_images/Toolbar_img1.png" Caption="Toolbar"%}
+{% include image.html url="/js/Gantt/Toolbar_images/Toolbar_img1.png" Caption="Toolbar"%}
 

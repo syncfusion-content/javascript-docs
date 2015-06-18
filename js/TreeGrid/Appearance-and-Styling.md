@@ -68,5 +68,5 @@ You can apply the theme (Gradient lime) to the **TreeGrid** control by using t
 
 The following screenshot shows the **TreeGrid** control with Gradient-lime theme.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Gradient Lime Theme"%}
+{% include image.html url="/js/TreeGrid/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Gradient Lime Theme"%}
 

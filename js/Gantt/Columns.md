@@ -180,13 +180,13 @@ The following code example shows you how to display the icon in the **TreeGrid**
 
 The following screenshot displays the customized column in Gantt control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Columns_images/Columns_img1.png" Caption="Customized column"%}
+{% include image.html url="/js/Gantt/Columns_images/Columns_img1.png" Caption="Customized column"%}
 
 ### Column Chooser
 
 **Gantt** supports enabling and disabling the visibility of the columns dynamically with the **showColumnChooser** property. The visibility of the custom columns can also be toggled with this property. **Column chooser** option is rendered as a sub menu item within the column menu in the Gantt columns. 
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Columns_images/Columns_img2.png" Caption="Column menu with column chooser    "%}
+{% include image.html url="/js/Gantt/Columns_images/Columns_img2.png" Caption="Column menu with column chooser    "%}
 
 The column menu is enabled with the **showColumnChooser** property, where the default value for this property is **false.**
 
@@ -219,5 +219,5 @@ The column menu provides the following options:
 
 The following screenshot displays the column chooser in the **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Columns_images/Columns_img3.png" Caption="Column chooser in Gantt control"%}
+{% include image.html url="/js/Gantt/Columns_images/Columns_img3.png" Caption="Column chooser in Gantt control"%}
 

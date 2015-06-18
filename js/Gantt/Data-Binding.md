@@ -80,7 +80,7 @@ The following code example shows how to bind the hierarchical local data into th
 
 The output of the above steps is as follows.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="Data Binding"%}
+{% include image.html url="/js/Gantt/Data-Binding_images/Data-Binding_img1.png" Caption="Data Binding"%}
 
 ### Self-Referential Data Binding (Flat Data)
 
@@ -143,5 +143,5 @@ Gantt can be rendered from self-referential data structures, by providing two fi
 
 The following screenshot shows the output of the above steps.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="Self-Referential Data Binding"%}
+{% include image.html url="/js/Gantt/Data-Binding_images/Data-Binding_img2.png" Caption="Self-Referential Data Binding"%}
 

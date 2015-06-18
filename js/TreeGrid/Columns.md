@@ -106,7 +106,7 @@ Code snippet to render custom template in TreeGrid columns
 
 The following screenshot displays the customized column in **TreeGrid** control.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Columns_images/Columns_img1.png" Caption="Customized Column"%}
+{% include image.html url="/js/TreeGrid/Columns_images/Columns_img1.png" Caption="Customized Column"%}
 
 ### Column Filtering
 
@@ -163,13 +163,13 @@ Filtering type can be defined by **filterEditType** property in each column obje
 
 The following screenshot displays the column filtering in **TreeGrid** control.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Columns_images/Columns_img2.png" Caption="Column filtering in TreeGrid control"%}
+{% include image.html url="/js/TreeGrid/Columns_images/Columns_img2.png" Caption="Column filtering in TreeGrid control"%}
 
 ### Column Chooser
 
 **TreeGrid** supports enabling and disabling the visibility of the columns dynamically with the **showColumnChooser** property. By using this property, the visibility of the custom columns can also be toggled. The **Column chooser** option is rendered as sub menu item within column menu in the **TreeGrid** columns.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Columns_images/Columns_img3.png" Caption="Column menu with column chooser                                                  "%}
+{% include image.html url="/js/TreeGrid/Columns_images/Columns_img3.png" Caption="Column menu with column chooser                                                  "%}
 
 The column menu is enabled with the **showColumnChooser** property and the default value for this property is **false**
 
@@ -209,5 +209,5 @@ You can also disable the visibility of the particular column in column collectio
 
 
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Columns_images/Columns_img4.png" Caption="TreeGrid with column chooser"%}
+{% include image.html url="/js/TreeGrid/Columns_images/Columns_img4.png" Caption="TreeGrid with column chooser"%}
 

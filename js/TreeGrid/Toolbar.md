@@ -56,5 +56,5 @@ You can enable toolbar for **TreeGrid**, using the following code example.
 
 The following screenshot displays the toolbar option in **TreeGrid** control.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Toolbar_images/Toolbar_img1.png" Caption="Toolbar option in TreeGrid"%}
+{% include image.html url="/js/TreeGrid/Toolbar_images/Toolbar_img1.png" Caption="Toolbar option in TreeGrid"%}
 

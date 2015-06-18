@@ -15,25 +15,25 @@ You can show the relationship between two tasks in Gantt control. These relation
 
 You cannot start a task until the other task also starts.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Task-Relationship_images/Task-Relationship_img1.png" Caption="Start to Start(SS)"%}
+{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img1.png" Caption="Start to Start(SS)"%}
 
 **Start to Finish(SF)**
 
 You cannot finish a task until the other task is started.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Task-Relationship_images/Task-Relationship_img2.png" Caption="Start to Finish(SF)"%}
+{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img2.png" Caption="Start to Finish(SF)"%}
 
 **Finish to Start(FS)**
 
 You cannot start a task until the other task is completed.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Task-Relationship_images/Task-Relationship_img3.png" Caption="Finish to Start(FS)"%}
+{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img3.png" Caption="Finish to Start(FS)"%}
 
 **Finish to Finish(FF)**
 
 You cannot finish a task until the other task is completed.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Task-Relationship_images/Task-Relationship_img4.png" Caption="Finish to Finish(FF)"%}
+{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img4.png" Caption="Finish to Finish(FF)"%}
 
 The following code example shows you how to show the predecessor in the **Gantt** control.
 
@@ -52,5 +52,5 @@ The following code example shows you how to show the predecessor in the **Gantt*
 
 The following screenshot displays the output of the above code. 
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Task-Relationship_images/Task-Relationship_img5.png" Caption="Task relationship"%}
+{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img5.png" Caption="Task relationship"%}
 

@@ -34,7 +34,7 @@ The **contextMenuItems** property is used to add the menu items to context menu,
 
 The following screenshot displays the Context menu in **TreeGrid** control.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Context-Menu_images/Context-Menu_img1.png" Caption="Context menu in TreeGrid"%}
+{% include image.html url="/js/TreeGrid/Context-Menu_images/Context-Menu_img1.png" Caption="Context menu in TreeGrid"%}
 
 ### ContextMenu Customization
 
@@ -80,5 +80,5 @@ Context menu can be customized by adding a new custom menu item to it. In **ejTr
 
 The following screenshot displays the customization of Context menu in **TreeGrid** control.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Context-Menu_images/Context-Menu_img2.png" Caption="Customization of Context menu"%}
+{% include image.html url="/js/TreeGrid/Context-Menu_images/Context-Menu_img2.png" Caption="Customization of Context menu"%}
 

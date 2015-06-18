@@ -40,7 +40,7 @@ The following code example shows you how to enable the default context menu in *
 
 The following screenshot shows the **Default Context Menu** in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Context-Menu_images/Context-Menu_img1.png" Caption="Default Context Menu"%}
+{% include image.html url="/js/Gantt/Context-Menu_images/Context-Menu_img1.png" Caption="Default Context Menu"%}
 
 **Custom Context Menu**
 
@@ -69,5 +69,5 @@ You can add custom context menu option in **Gantt** control. The following code 
 
 The screenshot of the **Custom Context Menu** items in **Gantt** control is as follows.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Context-Menu_images/Context-Menu_img2.png" Caption="Custom Context Menu"%}
+{% include image.html url="/js/Gantt/Context-Menu_images/Context-Menu_img2.png" Caption="Custom Context Menu"%}
 

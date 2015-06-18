@@ -38,5 +38,5 @@ Validating schedule dates is used to change the schedule start date and end date
 
 The following screenshot illustrates the output of the above code.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Validating-Schedule-Dates_images/Validating-Schedule-Dates_img1.png" Caption="Validating schedule dates"%}
+{% include image.html url="/js/Gantt/Validating-Schedule-Dates_images/Validating-Schedule-Dates_img1.png" Caption="Validating schedule dates"%}
 

@@ -28,5 +28,5 @@ documentation: ug
 
 The following screenshot shows the baseline in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Baseline_images/Baseline_img1.png" Caption="Baseline"%}
+{% include image.html url="/js/Gantt/Baseline_images/Baseline_img1.png" Caption="Baseline"%}
 

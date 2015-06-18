@@ -47,5 +47,5 @@ The **TreeGrid** control for **JavaScript** has built-in support for **Sorti
 
 The following screenshot shows the output of **Multicolumn sorting** in **TreeGrid** control.
 
-{% include image.html url="/js/TreeGrid/Concepts-and-Features/Sorting_images/Sorting_img1.png" Caption="Multicolumn Sorting"%}
+{% include image.html url="/js/TreeGrid/Sorting_images/Sorting_img1.png" Caption="Multicolumn Sorting"%}
 

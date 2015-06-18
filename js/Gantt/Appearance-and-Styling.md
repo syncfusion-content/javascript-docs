@@ -34,7 +34,7 @@ You can customize the week header format and day header format in the **Schedule
 
 The following screenshot shows the customized format schedule header in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Schedule Header Customization"%}
+{% include image.html url="/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Schedule Header Customization"%}
 
 ## Taskbar Customization
 
@@ -71,7 +71,7 @@ You can customize the **Taskbar** based on the task information in Gantt control
 
 The following screenshot shows the customized taskbar in **Gantt** control.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Customized taskbar"%}
+{% include image.html url="/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Customized taskbar"%}
 
 ## Themes
 
@@ -124,5 +124,5 @@ You can apply the theme (Gradient lime) to the **Gantt** control by using the st
 
 The following screenshot shows the **Gantt** control with Gradient-lime theme.
 
-{% include image.html url="/js/Gantt/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Gantt with Gradient lime theme"%}
+{% include image.html url="/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Gantt with Gradient lime theme"%}
 
