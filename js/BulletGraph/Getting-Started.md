@@ -383,7 +383,7 @@ You have to dothe following code changes in the quantitative scalein order to cu
 
 When customization of ticks and measure bars is done, **BulletGraph** looks as follows
 
-{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img5.png" Caption="Figure 5: BulletGraph"%}
+{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img5.png" Caption="BulletGraph"%}
 
 **Add Caption and Subtitle**
 

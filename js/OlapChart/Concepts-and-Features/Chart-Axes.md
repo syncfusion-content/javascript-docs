@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-### Chart Axes 
+##Chart Axes 
 
 **OlapChart** typically have two axes that are used to measure and categorize data: a vertical Y-axis and a horizontal X-axis. By default vertical Y-axis and horizontal X-axis is added to the Chart with axis labels, gridlines, and tick lines. You can also customize this axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
@@ -23,7 +23,7 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-**Axis Title Customization**
+###Axis Title Customization
 
 Primary axis title font appearance is further customized with the help of the following code example.
 
@@ -44,9 +44,7 @@ $(function () {
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img1.png" Caption="Primary Axis - Title Customization"%}
 
-<br/>
-
-**Axis Line**
+###Axis Line
 
 **Axis line** is drawn in Chart to represent the end of the axis in **ChartArea**. It is customized with the help of following code example.
 
@@ -71,9 +69,7 @@ legend: { visible: true, rowCount: 3 },
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img2.png" Caption="Axis Line Customization"%}
 
-<br/>
-
-**Position Opposed**
+###Position Opposed
 
 **Position** of the primary X and Y axis is set to the top with the help **opposedPosition** property.
 
@@ -91,9 +87,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img3.png" Caption="Position Opposed"%}
 
-<br/>
-
-**Appearance Customization** 
+###Appearance Customization 
 
 Background, border color and outer width of the Chart Area is customized with the help of following properties.
 

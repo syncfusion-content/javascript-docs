@@ -17,51 +17,52 @@ documentation: ug
 
 **ShowLabelTooltip** is to enable the **Tooltip** for labels and **showCustomLabelTooltip** is for enabling the **Tooltip** option for customLabels.
 
-{% highlight js %}
-
+{% highlight html %}
 
 <div id="tooltipGauge"></div>
-<script type=”text/javascript”>
-$(function () {
-$(“#tooltipGauge”).ejCircularGauge({
 
-//Defines the tooltip object.
-tooltip: {
+{% endhighlight %}
 
-//Enables the label tooltip.
-showLabelTooltip: true,
+{% highlight js %}
 
-//Enables the custom label tooltip.
-showCustomLabelTooltip: true,
-},
+ $(function () {
+        $(“#tooltipGauge”).ejCircularGauge({
 
-//Customizes the scale options.
-scales: [{
-showLabels: true,
-radius: 130,
+            //Defines the tooltip object.
+            tooltip: {
 
-//Customizes the custom label options.
-customLabels: [{
-value: "095345",
-font: {
-size: "18px",
-fontFamily: "Arial",
-fontStyle: "bold"
-},
+                //Enables the label tooltip.
+                showLabelTooltip: true,
 
-position: { x: 180, y: 220 }
-}],
+                //Enables the custom label tooltip.
+                showCustomLabelTooltip: true,
+            },
 
-//Customizes the pointers options.
-pointers: [{
-value: 60,
-length: 95,
-}]
-}]
-});
-});
-</script>
+            //Customizes the scale options.
+            scales: [{
+                showLabels: true,
+                radius: 130,
 
+                //Customizes the custom label options.
+                customLabels: [{
+                    value: "095345",
+                    font: {
+                        size: "18px",
+                        fontFamily: "Arial",
+                        fontStyle: "bold"
+                    },
+
+                    position: { x: 180, y: 220 }
+                }],
+
+                //Customizes the pointers options.
+                pointers: [{
+                    value: 60,
+                    length: 95,
+                }]
+            }]
+        });
+    });
 
 {% endhighlight %}
 
@@ -75,9 +76,7 @@ Execute the above code to render the following output.
 
 In **Tooltip** option, you can customize the Tooltip window by adding the tooltip template on that page with the help of API **TemplateID**. Refer to the following code example to know more about Tooltip template.
 
-{% highlight js %}
-
-
+{% highlight html %}
 
 <div id=”Tooltip” style=”height: 60px; display: none;”>
 <div id=”icon”>
@@ -91,49 +90,57 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
 </div>
 <div id="tooltipGauge"></div>
 
-<script type=”text/javascript”>
+
+{% endhighlight %}
+
+{% highlight js %}
+
 $(function () {
-$(“#tooltipGauge”).ejCircularGauge({
+        $(“#tooltipGauge”).ejCircularGauge({
 
-//Defines the tooltip object.
-tooltip: {
+            //Defines the tooltip object.
+            tooltip: {
 
-// Enables the label tooltip.
-showLabelTooltip: true,
+                // Enables the label tooltip.
+                showLabelTooltip: true,
 
-// Enables the custom label tooltip.
-showCustomLabelTooltip: true,
+                // Enables the custom label tooltip.
+                showCustomLabelTooltip: true,
 
-// Adds tooltip template.
-templateID: “Tooltip”
-},
+                // Adds tooltip template.
+                templateID: “Tooltip”
+            },
 
-// Customizes the scale options.
-scales: [{
-showLabels: true,
-radius: 130,
+            // Customizes the scale options.
+            scales: [{
+                showLabels: true,
+                radius: 130,
 
-// Customizes the custom label options.
-customLabels: [{
-value: “0 9 5 3 4 5”,
-font: {
-size: "18px",
-fontFamily: "Arial",
-fontStyle: "bold"
-},
+                // Customizes the custom label options.
+                customLabels: [{
+                    value: “0 9 5 3 4 5”,
+                    font: {
+            size: "18px",
+            fontFamily: "Arial",
+            fontStyle: "bold"
+                    },
 
-position: { x: 180, y: 220 }
-}],
+        position: { x: 180, y: 220 }
+    }],
 
-// Customizes the pointers options.
-pointers: [{
-value: 60,
-length: 95,
-}]
-}]
-});
-});
-</script>
+    // Customizes the pointers options.
+    pointers: [{
+        value: 60,
+        length: 95,
+    }]
+    }]
+    });
+    });
+
+{% endhighlight %}
+
+{% highlight html %}
+
 <style type=”text/css”>
 
 // Adds the necessary styles here.
@@ -142,6 +149,9 @@ length: 95,
 
 
 {% endhighlight %}
+
+
+
 
 
 Execute the above code to render the following output.

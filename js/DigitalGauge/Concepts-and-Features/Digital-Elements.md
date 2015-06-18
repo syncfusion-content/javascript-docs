@@ -20,25 +20,25 @@ documentation: ug
   * right
 
 
+{% highlight html %}
+
+<div id="DigitalGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="DigitalGauge1"></div>
-<script type="text/javascript">
-$(function () {
-// For Digital Gauge rendering
-$("#DigitalGauge1").ejDigitalGauge({
-items:[{
-// For setting alingment
-textAlign: "right",
-// For setting text
-value**:** "STOP",
-}]
-})
-});
-</script>
-
+ $(function () {
+        // For Digital Gauge rendering
+        $("#DigitalGauge1").ejDigitalGauge({
+            items:[{
+                // For setting alingment
+                textAlign: "right",
+                // For setting text
+                value: "STOP",
+                }]
+    })
+    });
 
 {% endhighlight %}
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting-Started
 description: getting started
@@ -7,41 +7,41 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Getting Started
+##Getting Started
 
 This section explains briefly about how to create an **OLAP Chart** in your application with **JavaScript.**
 
-**Control Structure**
+###Control Structure
 
 The following screen shot shows the **OLAP Chart** for **JavaScript**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Chart"%}
 
-**Syncfusion OLAP Controls – Architecture**
+###Syncfusion OLAP Controls – Architecture
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img2.png" Caption="OLAP Controls Architecture"%}
 
 The architecture gives a clear idea about how the control rendering takes place at client-side and all other analytical operations on each action takes place at the server-side.
 
-**Service for OLAP Controls**
+###Service for OLAP Controls##
 
 The primary reasons for using service in an **OLAP** processing are as follows:
 
-1. **DataSource Connectivity:** You can establish a connection between different cube data sources such as
+1.**DataSource Connectivity:** You can establish a connection between different cube data sources such as
 
-    * Offline Cube
+   * Offline Cube
 
-    * Online Cube (XML/A)
+   * Online Cube (XML/A)
 
-    * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
+   * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
 
-2. **Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
+2.**Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
 
-    * Availability of cubes.
+   * Availability of cubes.
 
-    * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
+   * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
 
-    * Localized information is also available in cube schema.  
+   * Localized information is also available in cube schema.  
 
 3. **MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap**.**Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
@@ -52,7 +52,7 @@ When you perform any operation such as drill up/down, filtering, sorting etc., y
 Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again. 
 This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
 
-**Create an application**
+###Create an application
 
 This section encompasses on how to configure an **OLAP Chart** component in an application. You can also learn how to pass the required data to **OLAP Chart** and to customize its various options according to your requirements. 
 
@@ -64,7 +64,7 @@ Open Visual Studio and create a new project by clicking **New Project**. Select 
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img4.png" Caption="Project Creation Wizard"%}
 
-**Create HTML Page**
+###Create HTML Page
 
 To create a new web form in the application, right-click on the project and select **Add**. The following screen shot shows the Add New Item Wizard.
 
@@ -72,9 +72,9 @@ To create a new web form in the application, right-click on the project and sele
 
 Click **New Item** and select **HTML Page** from the listed templates. Name the page as **default.html** and click **OK**.
 
-**Add References, Scripts, Styles and Control in HTML page**
+###Add References, Scripts, Styles and Control in HTML page
 
-**Add References**
+####Add References
 
 In the **Solution Explorer**, right-click the **References** folder, then click **Add Reference**.
 
@@ -96,9 +96,9 @@ Select the following assemblies:
 
    * Syncfusion.EJ.Olap.dll.
 
-Click **OK.**
+Click **OK**.
 
-**Add Scripts and Styles** 
+####Add Scripts and Styles 
 
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
@@ -114,7 +114,7 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 {% endhighlight %}
 
-**Add Control in HTML page**
+####Add Control in HTML page
 
 Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
@@ -137,19 +137,19 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 {% endhighlight %}
 
-**Add WCF service for OLAP Chart**
+###Add WCF service for OLAP Chart
 
-**Create WCF Services**
+####Create WCF Services
 
-1. Right-click the project, select **Add > New Folder**.  Name the folder as **WCF.**
+1.Right-click the project, select **Add > New Folder**.  Name the folder as **WCF.**
 
-2. Now right-click the **WCF** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**
+2.Now right-click the **WCF** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**
 
-3. Click **Add**.
+3.Click **Add**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img8.png" Caption="Adding WCF service"%}
 
-**Add service methods inside Interface**
+####Add service methods inside Interface
 
 Add the following code sample inside the **IOlapChartService** interface available in the **IOlapChartService.cs** file.
 
@@ -172,7 +172,7 @@ Add the following code sample inside the **IOlapChartService** interface availab
     }
 {% endhighlight %}
 
-**Add Namespaces**
+####Add Namespaces
 
 Add the following namespaces to implement the service methods.
 
@@ -203,7 +203,7 @@ using System.Web.Script.Serialization;
 
 {% endhighlight %}
 
-**Create Class in Service file**
+####Create Class in Service file
 
 Create the **OlapChartService** class to implement the service methods. Inherit the class from **IOlapChartService** interface, which is created automatically when any new service is added.
 
@@ -225,7 +225,7 @@ namespace **WebApplication2**
 
 {% endhighlight %}
 
-**Implement Service Methods**
+####Implement Service Methods
 
 Add the following methods to the service, which is invoked during any server-side operations performed in **OLAP Chart**.
 
@@ -325,7 +325,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-**Configuring Web.Config**
+####Configuring Web.Config
 
 * You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is "**WebApplication2.OlapChartService**" where "**OlapChartService**" is the service class name and “**WebApplication2**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
 

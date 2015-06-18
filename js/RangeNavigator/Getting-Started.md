@@ -17,7 +17,7 @@ This section encompasses on how to configure the **ejRangeNavigator** and update
 
 
 
-{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: RangeNavigator to analyze sales of a product"%}
+{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img1.png" Caption="RangeNavigator to analyze sales of a product"%}
 
 **Configure ejRangeNavigator**
 
@@ -84,7 +84,7 @@ The following screen shot displays the **RangeNavigator** with a range from 2010
 
 
 
-{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: RangeNavigator with range from 2010, January 1st to December 31st."%}
+{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img2.png" Caption="RangeNavigator with range from 2010, January 1st to December 31st."%}
 
 **Add series**
 
@@ -123,7 +123,7 @@ The following screenshot displays a RangeNavigator with the default **“Line”
 
 
 
-{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 3: RangeNavigator with the default “Line” series type"%}
+{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img3.png" Caption="RangeNavigator with the default “Line” series type"%}
 
 **Enable tooltip**
 
@@ -150,7 +150,7 @@ The following code sample shows how to enable a Tooltip.
 
 The following screenshot displays the label format **Tooltip** in RangeNavigator:
 
-{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 4: label format Tooltip in RangeNavigator"%}
+{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img4.png" Caption="Label format Tooltip in RangeNavigator"%}
 
 **Update Chart**
 
@@ -232,7 +232,7 @@ The following screenshot displays how a RangeNavigator is updated when a selecte
 
 
 
-{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img5.png" Caption="Figure 5: RangeNavigator is updated when a selected range is changed."%}
+{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img5.png" Caption="RangeNavigator is updated when a selected range is changed."%}
 
 **Set value type**
 
@@ -281,5 +281,5 @@ The following screenshot displays a RangeNavigator with numerical values:
 
 
 
-{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img6.png" Caption="Figure 6: RangeNavigator with numerical values"%}
+{% include image.html url="/js/RangeNavigator/Getting-Started_images/Getting-Started_img6.png" Caption="RangeNavigator with numerical values"%}
 

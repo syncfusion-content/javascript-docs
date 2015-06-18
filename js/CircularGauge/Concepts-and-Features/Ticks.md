@@ -15,21 +15,26 @@ Ticks are used to mark some values on the scale. Based on the tick’s value you
 
 Tick collection is directly added to the scale object. Refer the following code example to add tick collection in a **Gauge** control.
 
+{% highlight html %}
+
+<div id="CircularGauge1"></div>
+
+{% endhighlight %}
+
 {% highlight js %}
 
 
-<div id="CircularGauge1"></div>
-<script type="text/javascript">
-$(function () {
+    $(function () {
 
-//For circular gauge rendering
-$("#CircularGauge1").ejCircularGauge({
-scales: [{
-ticks:[{
-value:30
-}]
-}]
-})  }); </script>
+        //For circular gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+            scales: [{
+                ticks: [{
+                    value: 30
+                }]
+            }]
+        })
+    });
 
 
 {% endhighlight %}
@@ -46,36 +51,38 @@ Height and width of the ticks can be applied by using the properties **height** 
 
 Major type ticks are for major interval values and minor type ticks are for minor interval values.You can position ticks with the help of two properties such as **distanceFromScale** and **placement**. **distanceFromScale** property defines the distance between the scale and ticks.  **Placement** property is used to locate the ticks with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
-{% highlight js %}
-
+{% highlight html %}
 
 <div id="CircularGauge1"></div>
-<script type="text/javascript">
-$(function () {
 
-// For Circular Gauge rendering
-$("#CircularGauge1"). ejCircularGauge ({
-scales: [{
-ticks: [
-// For setting tick1
-{ **type: "major",color:"Red" },**
-// For setting tick2
-**{**
-// For setting tick type
-**type:"minor",**
-// For setting tick color
-**color:"yellow",**
-// For setting tick height
-**height:8,**
-// For setting tick placement
-**placement: "near",**
-// For setting tick distance from scale
-**distanceFromScale:5**}]
+{% endhighlight %}
 
-}]
-});
-});
-</script>
+{% highlight js %}
+
+ $(function () {
+
+        // For Circular Gauge rendering
+        $("#CircularGauge1"). ejCircularGauge ({
+            scales: [{
+                ticks: [
+                // For setting tick1
+                { type: "major",color:"Red" },
+                // For setting tick2
+                {
+                    // For setting tick type
+                type:"minor",
+                    // For setting tick color
+                color:"yellow",
+                    // For setting tick height
+                height:8,
+                    // For setting tick placement
+                placement: "near",
+                    // For setting tick distance from scale
+                distanceFromScale:5}]
+
+            }]
+        });
+    });
 
 
 {% endhighlight %}

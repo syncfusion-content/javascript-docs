@@ -24,13 +24,27 @@ List of **common changes** made for all the components are as follows,
 <tr>
 <td>
 <b>Enum</b></td><td>
-ej.textAlign = {        Center: 'center',        Justify: 'justify',        Left: 'left',        Right: 'right'    };</td><td>
-ej.TextAlign = {        Center: 'center',        Justify: 'justify',        Left: 'left',        Right: 'right'    };</td></tr>
+ej.textAlign = {   <br/><br/>
+    &nbsp; Center: 'center',<br/>
+    &nbsp;Justify: 'justify',<br/>
+    &nbsp; Left: 'left',<br/>
+    &nbsp; Right: 'right'<br/>
+     };</td><td>
+ej.TextAlign = {    <br/><br/>
+    &nbsp;Center: 'center',  <br/>
+    &nbsp;Justify: 'justify', <br/>
+    &nbsp;Left: 'left',  <br/>
+    &nbsp;Right: 'right'<br/>
+     };</td></tr>
 <tr>
 <td>
  </td><td>
-ej.orientation = {    Horizontal: "horizontal",            Vertical: "vertical" }; </td><td>
-ej.Orientation = {    Horizontal: "horizontal",                 Vertical:"vertical" }; </td></tr>
+ej.orientation = {   <br/><br/>
+   &nbsp;Horizontal: "horizontal",<br/>
+   &nbsp;Vertical: "vertical" <br/>}; </td><td>
+ej.Orientation = {    <br/><br/>
+  &nbsp;Horizontal: "horizontal",<br/>
+  &nbsp;Vertical:"vertical"<br/> }; </td></tr>
 </table>
 
 
@@ -40,10 +54,10 @@ The other changes based on each components are as follows,
 <table>
 <tr>
 <td>
-ejAccordion</td><td>
-ejDigitalGauge</td><td>
-ejOlapPager</td><td>
-ejTab</td></tr>
+[ejAccordion](#ejAccordion)</td><td>
+[ejDigitalGauge](#ejDigitalGauge)</td><td>
+[ejOlapPager](#olappager)</td><td>
+[ejTab](#ejTab)</td></tr>
 <tr>
 <td>
 ejAutoComplete</td><td>
@@ -549,14 +563,6 @@ drawComparativeMeasureSymbol</td><td>
 <b>args.Object</b><b>args.Value</b></td><td colspan = "3">
 <b>args.object</b><b>args.value</b></td><td colspan = "2">
 Modified the args.Object and args.Value</td></tr>
-<tr>
-<td>
-</td><td>
-</td><td colspan = "2">
-</td><td>
-</td><td colspan = "2">
-</td><td>
-</td></tr>
 </table>
 **ejButton**
 
@@ -610,8 +616,8 @@ Added</td></tr>
 <b>New API</b></td><td colspan = "4">
 <b>Comments</b></td></tr>
 <tr>
-<td rowspan = "1">
-                Property</td><td colspan = "5">
+<td rowspan = "14">
+                <b>Property</b></td><td colspan = "5">
 Localization</td><td colspan = "3">
 locale</td><td colspan = "4">
  </td></tr>
@@ -2142,7 +2148,7 @@ ej.Gantt.editMode</td><td>
 ej.Gantt.EditMode</td><td>
  </td></tr>
 </table>
-**ejGrid******
+**ejGrid**
 
 <table>
 <tr>
@@ -2301,18 +2307,18 @@ headerTemplateID</td><td>
 <td rowspan = "25">
 <b>Events</b></td><td>
 drag</td><td>
-columnDrag-       args.column</td><td>
-args.column - Newly added</td></tr>
+columnDrag     -  args.column</td><td>
+args.column    - Newly added</td></tr>
 <tr>
 <td>
 dragStop</td><td>
-columnDrop-       args.column</td><td>
-args.column - Newly added</td></tr>
+columnDrop     -  args.column</td><td>
+args.column    - Newly added</td></tr>
 <tr>
 <td>
 dragStart</td><td>
-columnDragStart-       args.column</td><td>
-args.column - Newly added</td></tr>
+columnDragStart-  args.column</td><td>
+args.column    - Newly added</td></tr>
 <tr>
 <td>
 toolBarClick</td><td>
@@ -2320,8 +2326,20 @@ toolbarClick</td><td>
  </td></tr>
 <tr>
 <td>
-gridRightClick-       args.currentRowIndex-       args.currrentRow-       args.currentData-       args.currentCellIndex-       args.currentCellValue-       args.currentCell</td><td>
-rightClick-       args.rowIndex-       args.row-       args.data-       args.cellIndex-       args.cellValue-       args.cell</td><td>
+gridRightClick <br/>
+	&nbsp;&nbsp;- &nbsp;	args.currentRowIndex<br/>
+	&nbsp;&nbsp;- &nbsp;	args.currrentRow<br/>
+	&nbsp;&nbsp;- &nbsp;	args.currentData<br/>
+	&nbsp;&nbsp;- &nbsp;	args.currentCellIndex<br/>
+	&nbsp;&nbsp;- &nbsp;	args.currentCellValue<br/>
+	&nbsp;&nbsp;- &nbsp;	args.currentCell</td><td>
+rightClick<br/>
+	&nbsp;&nbsp;- args.rowIndex<br/>
+	&nbsp;&nbsp;- args.row<br/>
+	&nbsp;&nbsp;- args.data<br/>
+	&nbsp;&nbsp;- args.cellIndex<br/>
+	&nbsp;&nbsp;- args.cellValue<br/>
+	&nbsp;&nbsp;- args.cell</td><td>
 While right click on grid content</td></tr>
 <tr>
 <td>
@@ -2330,8 +2348,11 @@ detailsCollapse</td><td>
  </td></tr>
 <tr>
 <td>
-detailData-       args.templateDetail</td><td>
-detailsDataBound-       args.detailsElement-       args.data</td><td>
+detailData<br/>
+&nbsp;- &nbsp; args.templateDetail</td><td>
+detailsDataBound<br/>
+&nbsp;-&nbsp; args.detailsElement<br/>
+&nbsp;-&nbsp; args.data</td><td>
 args.data(newly added)</td></tr>
 <tr>
 <td>
@@ -2380,48 +2401,88 @@ batchDelete</td><td>
  </td></tr>
 <tr>
 <td>
-rowSelecting-       args.currentRowIndex-       args.currrentRow-       args.currentData </td><td>
-rowSelecting-       args. rowIndex-       args. row-       args. data </td><td>
+rowSelecting<br/>
+&nbsp;&nbsp;- ;&nbsp;   args.currentRowIndex<br/>
+&nbsp;&nbsp;- &nbsp;   args.currrentRow <br/>
+&nbsp;&nbsp;- &nbsp;   args.currentData </td><td>
+rowSelecting<br/>
+&nbsp;&nbsp;- &nbsp  args. rowIndex<br/>
+&nbsp;&nbsp;- &nbsp;  args. row <br/>
+&nbsp;&nbsp;- &nbsp;  args. data </td><td>
  </td></tr>
 <tr>
 <td>
-rowSelected-       args.currentRowIndex-       args.currrentRow-       args.currentData </td><td>
-rowSelected-       args. rowIndex-       args. rowIndex-       args. data </td><td>
+rowSelected<br/>
+&nbsp;&nbsp;- &nbsp; args.currentRowIndex<br/>
+&nbsp;&nbsp;- &nbsp; args.currrentRow<br/>
+&nbsp;&nbsp;- &nbsp; args.currentData </td><td>
+rowSelected<br>
+&nbsp;&nbsp;- &nbsp; args. rowIndex<br/>
+&nbsp;&nbsp;- &nbsp; args. rowIndex<br/>
+&nbsp;&nbsp;- &nbsp; args. data </td><td>
  </td></tr>
 <tr>
 <td>
-recordClick-       args.currentRowIndex-       args.currrentRow-       args.currentData </td><td>
-recordClick-       args. rowIndex-       args. row-       args. data </td><td>
+recordClick<br/>
+&nbsp;&nbsp;- &nbsp; args.currentRowIndex<br/>
+&nbsp;&nbsp;- &nbsp; args.currrentRow<br/>
+&nbsp;&nbsp;- &nbsp; args.currentData </td><td>
+recordClick<br/>
+&nbsp;&nbsp;- &nbsp; args. rowIndex<br/>
+&nbsp;&nbsp;- &nbsp; args. row<br/>
+&nbsp;&nbsp;- &nbsp; args. data </td><td>
  </td></tr>
 <tr>
 <td>
-recordDoubleClick-       args.currentRowIndex-       args.currrentRow-       args.currentData </td><td>
-recordDoubleClick-       args. rowIndex-       args. row-       args. data </td><td>
+recordDoubleClick<br/>
+&nbsp;&nbsp;- &nbsp; args.currentRowIndex <br/>
+&nbsp;&nbsp;- &nbsp; args.currrentRow<br/>
+&nbsp;&nbsp;- &nbsp; args.currentData </td><td>
+recordDoubleClick<br/>
+&nbsp;&nbsp;- &nbsp; args. rowIndex<br/>
+&nbsp;&nbsp;- &nbsp; args. row<br/>
+&nbsp;&nbsp;-&nbsp; args. data </td><td>
  </td></tr>
 <tr>
 <td>
-rowDataBound-       args. Element</td><td>
-rowDataBound-       args.row</td><td>
+rowDataBound<br/>
+&nbsp;&nbsp;- &nbsp; args. Element</td><td>
+rowDataBound<br/>
+&nbsp;&nbsp;- &nbsp; args.row</td><td>
  </td></tr>
 <tr>
 <td>
-queryCellInfo-       args. Element-       args.Data-       args.Text</td><td>
-queryCellInfo-       args. cell-       args.data-       args.text</td><td>
+queryCellInfo<br/>
+&nbsp;&nbsp;- &nbsp; args. Element <br/>
+&nbsp;&nbsp;- &nbsp; args.Data <br/>
+&nbsp;&nbsp;- &nbsp; args.Text</td><td>
+queryCellInfo <br/>
+&nbsp;&nbsp;- &nbsp; args. cell<br/>
+&nbsp;&nbsp;- &nbsp; args.data <br/>
+&nbsp;&nbsp;- &nbsp; args.text</td><td>
  </td></tr>
 <tr>
 <td>
-actionBegin-       args.currentTr</td><td>
-actionBegin-       args.row-       args.selectedRow</td><td>
-args.selectedRow<b>- </b>Newly Added(Passed During Save) </td></tr>
+actionBegin<br/>
+&nbsp;&nbsp;- &nbsp; args.currentTr</td><td>
+actionBegin<br/>
+&nbsp;&nbsp;- &nbsp; args.row<br/>
+&nbsp;&nbsp;- &nbsp; args.selectedRow</td><td>
+args.selectedRow<br/><b>- </b>Newly Added(Passed During Save) </td></tr>
 <tr>
 <td>
-actionComplete-       args.currentTr</td><td>
-actionComplete-       args.row-       args.selectedRow</td><td>
-args.selectedRow<b>- </b>Newly Added(Passed During Save) </td></tr>
+actionComplete<br/>
+&nbsp;&nbsp;- &nbsp; args.currentTr</td><td>
+actionComplete<br/>
+&nbsp;&nbsp;- &nbsp; args.row<br/>
+&nbsp;&nbsp;- &nbsp; args.selectedRow</td><td>
+args.selectedRow<br/><b>- </b>Newly Added(Passed During Save) </td></tr>
 <tr>
 <td>
-beginEdit-       args.currentTr</td><td>
-beginEdit-       args.row</td><td>
+beginEdit<br/>
+&nbsp;&nbsp;- &nbsp; args.currentTr</td><td>
+beginEdit<br/>
+&nbsp;&nbsp;- &nbsp; args.row</td><td>
  </td></tr>
 <tr>
 <td rowspan = "23">
@@ -2511,8 +2572,30 @@ refreshToolbar</td><td>
  </td></tr>
 <tr>
 <td>
-refreshGridContentrenderGridgetGridContentgetGridContentTablegetGridFilterBargetGridFooterContentgetGridFooterTablegetGridHeaderContentgetGridHeaderTablegetGridPagergetGridRowHeightgetGridRows</td><td>
-refreshContentrendergetContentgetContentTablegetFilterBargetFooterContentgetFooterTablegetHeaderContentgetHeaderTablegetPagergetRowHeightgetRows</td><td>
+refreshGridContent<br/>
+renderGrid<br/>
+getGridContent<br/>
+getGridContentTable<br/>
+getGridFilterBar<br/>
+getGridFooterContent<br/>
+getGridFooterTable<br/>
+getGridHeaderContent<br/>
+getGridHeaderTable<br/>
+getGridPager<br/>
+getGridRowHeight<br/>
+getGridRows</td><td>
+refreshContent<br/>
+render<br/>
+getContent<br/>
+getContentTable<br/>
+getFilterBar<br/>
+getFooterContent<br/>
+getFooterTable<br/>
+getHeaderContent<br/>
+getHeaderTable<br/>
+getPager<br/>
+getRowHeight<br/>
+getRows</td><td>
  </td></tr>
 <tr>
 <td>
@@ -2542,8 +2625,20 @@ Private method</td></tr>
 <tr>
 <td rowspan = "11">
 <b>Enum</b></td><td>
-ej.Grid.localization ["en-US"] = {BulkSaveConifrmBulkSaveLostChangesfrozenColumnsViewAlertfrozenColumnsScrollAlertfrozenNotSupportedException}</td><td>
-ej.Grid.locale["en-US"] = {BatchSaveConfirmBatchSaveLostChangesFrozenColumnsViewAlertFrozenColumnsScrollAlertFrozenNotSupportedException}</td><td>
+ej.Grid.localization ["en-US"] = {<br/>
+BulkSaveConifrm<br/>
+BulkSaveLostChanges<br/>
+frozenColumnsViewAlert<br/>
+frozenColumnsScrollAlert<br/>
+frozenNotSupportedException<br/>
+}</td><td>
+ej.Grid.locale["en-US"] = {<br/>
+BatchSaveConfirm<br/>
+BatchSaveLostChanges<br/>
+FrozenColumnsViewAlert<br/>
+FrozenColumnsScrollAlert<br/>
+FrozenNotSupportedException<br/>
+}</td><td>
  </td></tr>
 <tr>
 <td>
@@ -2975,7 +3070,7 @@ args.pointerAngle</td></tr>
 <b>New API Name</b></td><td colspan = "2">
 <b>Comments</b></td></tr>
 <tr>
-<td rowspan = "1">
+<td rowspan = "49">
 <b>Property</b></td><td colspan = "2">
 zoomOnSelection</td><td colspan = "2">
 enableZoomOnSelection</td><td colspan = "2">
@@ -3010,15 +3105,9 @@ This API is removed since it is achieved in markers API.</td></tr>
 shapeFileLayer</td><td colspan = "2">
 shapeLayer</td><td colspan = "2">
  </td></tr>
+
 <tr>
 <td colspan = "2">
-<b>Event</b></td><td colspan = "2">
-annotationSelected</td><td colspan = "2">
-markerSelected</td><td colspan = "2">
- </td></tr>
-<tr>
-<td colspan = "2" rowspan = "37">
-<b>Property</b></td><td colspan = "2">
 bubbleSetting</td><td colspan = "2">
 bubbleSettings</td><td colspan = "2">
  </td></tr>
@@ -3203,19 +3292,7 @@ subshapeFileLayers</td><td colspan = "2">
 subLayers</td><td colspan = "2">
  </td></tr>
 <tr>
-<td colspan = "2" rowspan = "2">
-<b>Event</b></td><td colspan = "2">
-shapeHovered</td><td colspan = "2">
-mouseover</td><td colspan = "2">
- </td></tr>
-<tr>
 <td colspan = "2">
-shapeUnHovered</td><td colspan = "2">
-mouseleave</td><td colspan = "2">
- </td></tr>
-<tr>
-<td colspan = "2" rowspan = "5">
-<b>Property</b></td><td colspan = "2">
 minSize</td><td colspan = "2">
 minValue</td><td colspan = "2">
 This API comes under API bubbleSettings</td></tr>
@@ -3239,19 +3316,35 @@ shapeDataPath</td><td colspan = "2">
 shapeIdTableField</td><td colspan = "2">
 shapePropertyPath</td><td colspan = "2">
  </td></tr>
+<td colspan = "2" rowspan = "4">
+<b>Event</b></td><td colspan = "2">
+shapeHovered</td><td colspan = "2">
+mouseover</td><td colspan = "2">
+ </td></tr>
+<tr>
+<td colspan = "2">
+shapeUnHovered</td><td colspan = "2">
+mouseleave</td><td colspan = "2">
+ </td></tr>
+<tr>
+<td colspan = "2">
+annotationSelected</td><td colspan = "2">
+markerSelected</td><td colspan = "2">
+ </td></tr>
+<tr>
+<td colspan = "2">
+panning</td><td colspan = "2">
+N/A</td><td colspan = "2">
+This API is removed</td></tr>
+<tr>
 <tr>
 <td colspan = "2">
 <b>Enum</b></td><td colspan = "2">
 LayerType = {        Geometry: "geometry",        OSM: "osm"    };</td><td colspan = "2">
 LayerType = {Geometry: "geometry",        OSM: "osm",        Bing: "bing"    };</td><td colspan = "2">
  </td></tr>
-<tr>
-<td colspan = "2">
-<b>Event</b></td><td colspan = "2">
-panning</td><td colspan = "2">
-N/A</td><td colspan = "2">
-This API is removed</td></tr>
 </table>
+
 **ejMaskEdit**
 
 <table>
@@ -3811,7 +3904,8 @@ GridLayout</td><td>
 Layout</td><td>
  </td></tr>
 </table>
-**ejOlapPager**
+
+<a name="olappager"><b>ejOlapPager</b></a>
 
 <table>
 <tr>
@@ -3843,6 +3937,7 @@ PagerMode</td><td>
 Mode</td><td>
  </td></tr>
 </table>
+
 **ejProgressbar**
 
 <table>
