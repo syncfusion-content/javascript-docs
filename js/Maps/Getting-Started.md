@@ -481,6 +481,8 @@ layers: [
                              }
                         },
                         legendSettings: {
+                                    showLegend:true,
+									dockOnMap:true,
                                     height:18,
                                     width:190,
                                     mode:"interactive",

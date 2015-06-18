@@ -48,14 +48,14 @@ jQuery(function ($) {
                 layers: [
                     {
                         shapeData: world_map,
-                        ShapeSettings: {
+                        shapeSettings: {
                             fill: "#9CBF4E",
                             strokeThickness: "0.5",
                             stroke: "White"
                         },
-                        subShapeFileLayers: [{
+                        subLayers: [{
                             shapeData: usMap,
-                            ShapeSettings: {
+                            shapeSettings: {
                                 fill: "orange",
                                 strokeThickness: "1",
                                 stroke: "White"

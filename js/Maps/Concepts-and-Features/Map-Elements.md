@@ -282,10 +282,10 @@ layers: [
                                               // ...
 legendSettings:{
                           showLegend:true,
-                          positionX: 70,
-                          height: 20,
-                          width: 20,
-                          positionY: 60
+                          position:"bottomleft",
+                          height: 30,
+                          width: 70,
+                         
                     },
 // ...                        
                     }
@@ -324,6 +324,7 @@ layers: [
                                               // ...
                       legendSettings: {
                             showLegend: true,
+                            dockOnMap:true,
                             height: 15,
                             width: 150,
                             position: "topleft",
@@ -361,7 +362,7 @@ jQuery(function ($) {
 
                                // ...
 
-                            type: "bubbles",
+                            type: "bubbles",                            
 
                            // ...
                         },
