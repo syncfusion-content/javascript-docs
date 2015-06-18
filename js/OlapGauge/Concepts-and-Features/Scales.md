@@ -7,11 +7,11 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-### Scales
+## Scales
 
 **Scale** is a basic unit of **radial gauge**. You can customize the gauge scales by using properties such as radius, minimum, scale direction, interval values etc. 
 
-#### Resizing the Scale Bar
+### Resizing the Scale Bar
 
 Radius of the **Scale Bar** is changed with the help of **scale Radius** property and in order to make **Scale Bar** visible, set **showScaleBar** property to ‘**true’**. You can set size of the **Scale Bar** with the help of **scaleBareSize** and border width using **scaleBorderWidth** property**.** 
 
@@ -81,8 +81,6 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Scales_images/Scales_img1.png" Caption="Scale Bar – Style Customization"%}
 
