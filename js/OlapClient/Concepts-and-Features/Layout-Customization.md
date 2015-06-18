@@ -7,7 +7,7 @@ control: OLAP Client
 documentation: ug
 ---
 
-### Layout Customization
+## Layout Customization
 
 **OLAP Client UI** comes with options to customize the **Grid** and **Chart** layout, such as:
 
@@ -21,9 +21,9 @@ documentation: ug
 
     5. Maximized/Fullscreen view of the control(s) providing a precise view.
 
-#### Display View
+### Display View
 
-**Tile View**
+####Tile View
 
 In Tile View representation, both **Grid** and **Chart** will be displayed one over the other, in the same layout. 
 
@@ -39,9 +39,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img1.png" Caption="Tile View"%}
 
-<br/>
-
-**Tab View**
+#### Tab View
 
 In **Tab** View representation, both **Grid** and **Chart** will be displayed in a separate tab.
 
@@ -57,13 +55,11 @@ $("#OlapClient1").ejOlapClient({
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img2.png" Caption="Tab View"%}
 
-<br/>
-
-#### Default View
+### Default View
 
 After you set **defaultView** property either to **Chart** or **Grid**, the corresponding control is selected for initial view/visualization, within the layout when the **OLAP Client** control is loaded for the first time. 
 
-**Chart View**
+#### Chart View
 
 To display/visualize Chart control by default, set defaultView to Chart.
 
@@ -79,9 +75,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img3.png" Caption="Default Chart View"%}
 
-<br/>
-
-**Grid View**
+#### Grid View
 
 To display/visualize **Grid** control by default, set **defaultView** to **Grid**.
 
@@ -97,11 +91,9 @@ $("#OlapClient1").ejOlapClient({
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img4.png" Caption="Default Grid View"%}
 
-<br/>
+### Hide Grid/Chart
 
-#### Hide Grid/Chart
-
-**Grid Only**
+####Grid Only
 
 After you set the**displayMode** option to **GridOnly**, the **Chart** is hidden and the data is displayed only in **Grid**.
 
@@ -117,9 +109,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img5.png" Caption="Grid Only Mode"%}
 
-<br/>
-
-**Chart Only**
+####Chart Only
 
 After you set the **displayMode** option to **ChartOnly**, the **Grid** is hidden and data is displayed only in **Chart**.
 
@@ -135,9 +125,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img6.png" Caption="Chart Only Mode"%}
 
-<br/>
-
-**Both Grid and Chart**
+####Both Grid and Chart
 
 After you set the **displayMode** option to **ChartAndGrid**, data is displayed in both **Grid** and **Chart**.
 
@@ -153,9 +141,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img7.png" Caption="Grid and Chart Mode"%}
 
-<br/>
-
-#### Toggle Panel
+### Toggle Panel
 
 You are provided with an option to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in **OLAP Client**.
 
@@ -171,9 +157,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Layout-Customization_images/Layout-Customization_img8.png" Caption="OLAP Client in Toggled View"%}
 
-<br/>
-
-#### Maximized/Full Screen View
+### Maximized/Full Screen View
 
 You can maximize **OLAP Grid** and **OLAP Chart** to full screen mode inside **OLAP Client** for a precise view. By selecting Full Screen icon in the toolbar, **OLAP Grid** and **OLAP Chart** are maximized depending on the current tab. You can also perform drilldown action in both **OLAP Grid** and **OLAP Chart** in the maximized view.
 
