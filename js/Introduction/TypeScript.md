@@ -46,59 +46,27 @@ To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below men
 
 * Start Visual Studio 2013 and Create a new TypeScript Application from **File** -> **New** -> **Project** and save it with a meaningful name as shown below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
 
-![](TypeScript_images/TypeScript_img1.png)
-{:.image }
-
-    Visual Studio New Project Pop-up
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img1.png" Caption="Visual Studio New Project Pop-up" %}
 
 
 * Now, you need to add the required Scripts and Stylesheets into your Project, as shown below – Copy the required Scripts and themes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the manual reference section of the Getting Started topic),
 
-![](TypeScript_images/TypeScript_img2.png)
-{:.image }
-
-    scripts & themes folder copied into current project
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img2.png" Caption="Scripts & themes folder copied into current project" %}
 
 
 * Add the **ej.widgets.all.d.ts** and **jquery.d.ts** type-definition files in your project and refer it in the **app.ts** file of your project as shown below,
 
-![](TypeScript_images/TypeScript_img3.png)
-{:.image }
-
-    ej.widgets.all.d.ts & jquery.d.ts files added to the project
-{:.caption }
-
-
-
-
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img3.png" Caption="ej.widgets.all.d.ts & jquery.d.ts files added to the project" %}
 
 
 Now, refer these two files within the **app.ts** file (before referring these files, remove all the unwanted content in that app.ts file) as shown below,
 
-![](TypeScript_images/TypeScript_img4.png)
-{:.image }
-
-    Reference of ej.widgets.all.d.ts & jquery.d.ts files in app.ts
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img4.png" Caption="Reference of ej.widgets.all.d.ts & jquery.d.ts files in app.ts" %}
 
 
 * Within the **Index.html** page, define the container name for the specific Syncfusion widget to be used and also make the other Script and css references in this page as shown below,
 
-![](TypeScript_images/TypeScript_img5.png)
-{:.image }
-
-    Script & StyleSheet reference, Container declaration in index.html page
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img5.png" Caption="Script & StyleSheet reference, Container declaration in index.html page" %}
 
 
 * Now build your application, so that the **app.js** file is automatically generated and got added to your project (User have nothing to do with this file). Now, whatever code changes that you make in **app.ts** file will be reflected in app.js file automatically. 
@@ -113,49 +81,23 @@ Usually, the Syncfusion widget initialization is done within this **app.ts** fil
 
 Initialization of Syncfusion widgets can be done through the instance created for the required Widget’s classes. 
 
-![](TypeScript_images/TypeScript_img6.png)
-{:.image }
-
-    Initializing DatePicker widget through ej.DatePicker class
-{:.caption }
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img6.png" Caption="Initializing DatePicker widget through ej.DatePicker class" %}
 
 
-![](TypeScript_images/TypeScript_img7.png)
-{:.image }
-
-    Accessing DatePicker methods through the DatePicker instance
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img7.png" Caption="Accessing DatePicker methods through the DatePicker instance" %}
 
 
 #### JQuery Interface 
 
 Here, the widgets are initialized using the plug-in name, by passing all the required widget properties to it. The property names can be accessible through intelliSense and while providing input values to those properties – if any wrong data values were assigned to the properties by the user, then it will be automatically notified to the user at the compile time itself with an error message.
 
-![](TypeScript_images/TypeScript_img8.png)
-{:.image }
-
-    Initializing the DatePicker widget through intelliSense
-{:.caption }
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img8.png" Caption="Initializing the DatePicker widget through intelliSense" %}
 
 
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img9.png" Caption="Configuring the DatePicker properties" %}
 
 
-![](TypeScript_images/TypeScript_img9.png)
-{:.image }
-
-    Configuring the DatePicker properties
-{:.caption }
-
-
-
-
-![](TypeScript_images/TypeScript_img10.png)
-{:.image }
-
-    Accessing the DatePicker methods through the widgets’ object
-{:.caption }
+{% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img10.png" Caption="Accessing the DatePicker methods through the widgets’ object" %}
 
 
 
