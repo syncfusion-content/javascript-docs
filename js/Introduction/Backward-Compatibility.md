@@ -98,7 +98,7 @@ ejTreeMap</td></tr>
 <td>
 ejCircularGauge</td><td>
 ejMenu</td><td>
-ejSchedule</td><td>
+[ejSchedule](Schedule)</td><td>
 ejTreeView</td></tr>
 <tr>
 <td>
@@ -4521,7 +4521,7 @@ args.activeItemIndex</td><td>
  </td></tr>
 </table>
 
-**ejSchedule**
+<div id="Schedule"><b>ejSchedule</b></div>
 
 <table>
 <tr>
