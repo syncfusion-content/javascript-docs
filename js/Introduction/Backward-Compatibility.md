@@ -564,6 +564,7 @@ drawComparativeMeasureSymbol</td><td>
 <b>args.object</b><b>args.value</b></td><td colspan = "2">
 Modified the args.Object and args.Value</td></tr>
 </table>
+
 **ejButton**
 
 <table>
@@ -606,6 +607,7 @@ Added</td></tr>
  ej.ButtonSize = {Normal : "normal",         Mini: "mini",Small:"small",Medium:"medium",Large: "large"}; </td><td>
  </td></tr>
 </table>
+
 **ejChart**
 
 <table>
@@ -948,6 +950,7 @@ args:{cancelCancel<b>Data={Model}</b>modeltype} </td><td colspan = "3">
 args:{cancel<b>data={model}</b>modeltype} </td><td colspan = "3">
  Modified the args.Dataargs.Cancel removed</td></tr>
 </table>
+
 **ejCheckbox**
 
 <table>
@@ -1000,6 +1003,7 @@ enableRTL</td><td>
  ej.CheckState = {        Check: "check",        UnCheck: "uncheck",        Indeterminate:"indeterminate"    };</td><td>
  </td></tr>
 </table>
+
 **ejCircularGauge**
 
 <table>
@@ -1013,7 +1017,7 @@ enableRTL</td><td>
 <td rowspan = "50">
 <b>Property</b></td><td>
 frameType</td><td rowspan = "4">
-frame: {frameType: "fullCircle",                   backgroundImageUrl: null,             halfCircleFrameStartAngle: 180,                halfCircleFrameEndAngle: 360},</td><td rowspan = "4">
+frame: { <br/>frameType: "fullCircle", <br/>backgroundImageUrl: null, halfCircleFrameStartAngle: 180, halfCircleFrameEndAngle: 360 },</td><td rowspan = "4">
 All frame properties moved to Object type</td></tr>
 <tr>
 <td>
@@ -1037,7 +1041,7 @@ enableAnimation</td><td>
 <tr>
 <td>
 capBorderColor</td><td rowspan = "5">
-pointerCap: {    radius: 7,    borderWidth: 3,    interiorGradient: null,    borderColor: null,    backgroundColor: null,}</td><td rowspan = "5">
+pointerCap: { <br/>radius: 7, borderWidth: 3, <br/>interiorGradient: null, <br/>borderColor: null, <br/>backgroundColor: null }</td><td rowspan = "5">
 All  pointer cap properties moved to Object type</td></tr>
 <tr>
 <td>
@@ -1243,63 +1247,63 @@ gradients</td><td>
 <tr>
 <td rowspan = "12">
 <b>Enum</b></td><td>
-ej.CircularGauge.direction = {Clockwise: "Clockwise",CounterClockwise:"CounterClockwise"    };</td><td>
-ej.CircularGauge.Directions = {Clockwise: "clockwise",CounterClockwise: "counterclockwise"    };</td><td>
+ej.CircularGauge.<br/>direction = { <br/>Clockwise: "Clockwise", <br/>CounterClockwise: <br/>"CounterClockwise"    };</td><td>
+ej.CircularGauge.<br/>Directions = { <br/>Clockwise: "clockwise", <br/>CounterClockwise: <br/>"counterclockwise" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.pointerPlacement = {Near: "Near",Far: "Far",Center: "Center"    };</td><td>
-ej.CircularGauge.PointerPlacement = {Near: "near",Far: "far",Center: "center"    };</td><td>
+ej.CircularGauge.<br/>pointerPlacement = { <br/>Near: "Near", Far: "Far", <br/>Center: "Center" };</td><td>
+ej.CircularGauge.<br/>PointerPlacement = { <br/>Near: "near", Far: "far", <br/>Center: "center" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.pointerType = {Needle: "Needle",Marker: "Marker"    };</td><td>
-ej.CircularGauge.PointerType = {Needle: "needle",Marker: "marker"    };</td><td>
+ej.CircularGauge.<br/>pointerType = { <br/>Needle: "Needle", <br/>Marker: "Marker" };</td><td>
+ej.CircularGauge.<br/>PointerType = { <br/>Needle: "needle", <br/>Marker: "marker" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.needleType = {Triangle: "Triangle",Rectangle: "Rectangle",Trapezoid: "Trapezoid",Arrow: "Arrow"    };</td><td>
-ej.CircularGauge.NeedleType = {Triangle: "triangle",Rectangle: "rectangle",Trapezoid: "trapezoid",Arrow: "arrow"    };</td><td>
+ej.CircularGauge.<br/>needleType = { <br/>Triangle: "Triangle", <br/>Rectangle: "Rectangle", <br/>Trapezoid: "Trapezoid", <br/>Arrow: "Arrow" };</td><td>
+ej.CircularGauge.<br/>NeedleType = { <br/>Triangle: "triangle", <br/>Rectangle: "rectangle", <br/>Trapezoid: "trapezoid", <br/>Arrow: "arrow" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.markerType = {Rectangle: "Rectangle",Triangle: "Triangle",Ellipse: "Ellipse",Diamond: "Diamond",Pentagon: "Pentagon",Circle: "Circle",Slider: "Slider",Pointer: "Pointer",Wedge: "Wedge",Trapezoid: "Trapezoid",RoundedRectangle:"RoundedRectangle"    };</td><td>
-ej.CircularGauge.MarkerType = {Rectangle: "rectangle",Triangle: "triangle",Ellipse: "ellipse",Diamond: "diamond",Pentagon: "pentagon",Circle: "circle",Slider: "slider",Pointer: "pointer",Wedge: "wedge",Trapezoid: "trapezoid",RoundedRectangle: "roundedrectangle"    };</td><td>
+ej.CircularGauge.<br/>markerType = { <br/>Rectangle: "Rectangle", <br/>Triangle: "Triangle", <br/>Ellipse: "Ellipse", <br/>Diamond: "Diamond", <br/>Pentagon: "Pentagon", <br/>Circle: "Circle", <br/>Slider: "Slider", <br/>Pointer: "Pointer", <br/>Wedge: "Wedge", <br/>Trapezoid: "Trapezoid", <br/>RoundedRectangle: "RoundedRectangle" };</td><td>
+ej.CircularGauge.<br/>MarkerType = { <br/>Rectangle: "rectangle", <br/>Triangle: "triangle", <br/>Ellipse: "ellipse", <br/>Diamond: "diamond", <br/>Pentagon: "pentagon", <br/>Circle: "circle", <br/>Slider: "slider", <br/>Pointer: "pointer", <br/>Wedge: "wedge", <br/>Trapezoid: "trapezoid", <br/>RoundedRectangle: <br/>"roundedrectangle" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.rangePlacement = {Near: "Near",Far: "Far",Center: "Center"    };</td><td>
-ej.CircularGauge.RangePlacement = {Near: "near",Far: "far",Center: "center"    };</td><td>
+ej.CircularGauge.<br/>rangePlacement = { <br/>Near: "Near", Far: "Far", <br/>Center: "Center" };</td><td>
+ej.CircularGauge.<br/>RangePlacement = { <br/>Near: "near", Far: "far", <br/>Center: "center" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.tickType = {Major: "Major",Minor: "Minor"    };</td><td>
-ej.CircularGauge.TickType = {Major: "major",Minor: "minor"    };</td><td>
+ej.CircularGauge.<br/>tickType = <br/>{ Major: "Major", <br/>Minor: "Minor" };</td><td>
+ej.CircularGauge.<br/>TickType = <br/>{ Major: "major", <br/>Minor: "minor" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.tickPlacement = {Near: "Near",Far: "Far",Center: "Center"    };</td><td>
-ej.CircularGauge.TickPlacement = {Near: "near",Far: "far",Center: "center"    };</td><td>
+ej.CircularGauge.<br/>tickPlacement = { <br/>Near: "Near", <br/>Far: "Far", <br/>Center: "Center" };</td><td>
+ej.CircularGauge.<br/>TickPlacement = { <br/>Near: "near", <br/>Far: "far", <br/>Center: "center" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.labelPlacement = {Near: "Near",Far: "Far",Center: "Center"    };</td><td>
-ej.CircularGauge.LabelPlacement = {Near: "near",Far: "far",Center: "center"    };</td><td>
+ej.CircularGauge.<br/>labelPlacement = <br/>{ Near: "Near", <br/>Far: "Far", <br/>Center: "Center" };</td><td>
+ej.CircularGauge.<br/>LabelPlacement = <br/>{ Near: "near", <br/>Far: "far", <br/>Center: "center" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.labelType = {Major: "Major",Minor: "Minor"    };</td><td>
-ej.CircularGauge.LabelType = {Major: "major",Minor: "minor"    };</td><td>
+ej.CircularGauge.<br/>labelType = { <br/>Major: "Major", <br/>Minor: "Minor" };</td><td>
+ej.CircularGauge.<br/>LabelType = { <br/>Major: "major", <br/>Minor: "minor" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.unitTextPlacement = {Back: "Back",Front: "Front"    };</td><td>
-ej.CircularGauge.UnitTextPlacement = {Back: "back",Front: "front"    };</td><td>
+ej.CircularGauge.<br/>unitTextPlacement = { <br/>Back: "Back", <br/>Front: "Front" };</td><td>
+ej.CircularGauge.<br/>UnitTextPlacement = { <br/>Back: "back", <br/>Front: "front" };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.CircularGauge.indicatorType = {Rectangle: "Rectangle",Circle: "Circle",RoundedRectangle:"RoundedRectangle",Text: "Text"    };</td><td>
-ej.CircularGauge.IndicatorType = {Rectangle: "rectangle",Circle: "circle",RoundedRectangle:"roundedrectangle",Text: "text"    };</td><td>
+ej.CircularGauge.<br/>indicatorType = { <br/>Rectangle: "Rectangle", <br/>Circle: "Circle", RoundedRectangle: "RoundedRectangle", <br/>Text: "Text" };</td><td>
+ej.CircularGauge.<br/>IndicatorType = { <br/>Rectangle: "rectangle", <br/>Circle: "circle", <br/>RoundedRectangle: <br/>"roundedrectangle", <br/>Text: "text" };</td><td>
  </td></tr>
 <tr>
 <td rowspan = "19">
@@ -1310,7 +1314,7 @@ For Ticks</td></tr>
 <tr>
 <td>
 args.tickAngle</td><td rowspan = "3">
-args.tick{angleelementIndex}</td><td rowspan = "3">
+args.tick{angleelement<br/>Index}</td><td rowspan = "3">
 arguments moved to Object type</td></tr>
 <tr>
 <td>
@@ -1331,7 +1335,7 @@ args.position</td><td>
 <tr>
 <td>
 args.labelAngle</td><td rowspan = "3">
-args.label{angleelementIndex}</td><td rowspan = "3">
+args.label{angleelement<br/>Index}</td><td rowspan = "3">
 arguments moved to Object type</td></tr>
 <tr>
 <td>
@@ -1352,7 +1356,7 @@ For labels</td></tr>
 <tr>
 <td>
 args.pointerAngle</td><td rowspan = "3">
-args.pointer{angleelementIndex}</td><td rowspan = "3">
+args.pointer{angleelement<br/>Index}</td><td rowspan = "3">
 arguments moved to Object type</td></tr>
 <tr>
 <td>
@@ -1383,9 +1387,10 @@ For pointer cap</td></tr>
 <tr>
 <td>
 args.pointerElement</td><td>
-args.pointer{angleelementvalueIndex}</td><td>
+args.pointer{angleelement<br/>valueIndex}</td><td>
 arguments moved to Object type</td></tr>
 </table>
+
 **ejDatePicker**
 
 <table>
@@ -1465,6 +1470,7 @@ highlightWeekend</td><td>
  ej.DatePicker.Level = {        Month: "month",        Year: "year",        Decade: "decade",        Century: "century"    }; </td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -1499,6 +1505,7 @@ args.previousDate</td><td>
 args.prevDate</td><td>
  </td></tr>
 </table>
+
 **ejDateTimePicker**
 
 <table>
@@ -1551,6 +1558,7 @@ dateTimeNow</td><td>
 setCurrentDateTime</td><td colspan = "2">
  </td></tr>
 </table>
+
 **Event Arguments**
 
 <table>
@@ -1594,6 +1602,7 @@ args.value</td><td>
 args.prevDateTime</td><td>
  </td></tr>
 </table>
+
 **ejDiagram**
 
 <table>
@@ -1724,7 +1733,8 @@ connectionChanged</td></tr>
 nodeRotationChanged </td><td>
 rotationChange</td></tr>
 </table>
-**ejD****ialog**
+
+**ejDialog**
 
 <table>
 <tr>
@@ -1816,6 +1826,7 @@ Load</td><td>
 contentLoad</td><td>
  </td></tr>
 </table>
+
 **ejDigitalGauge**
 
 <table>
@@ -1829,7 +1840,7 @@ contentLoad</td><td>
 <td rowspan = "9">
 <b>Property</b></td><td>
 frameBackgroundImageUrl</td><td rowspan = "3">
-frame: {     backgroundImageUrl:null,     outerWidth: 12,     innerWidth: 8, },</td><td rowspan = "3">
+frame: {     <br/>backgroundImageUrl: null,     <br/>outerWidth: 12,     <br/>innerWidth: 8 }</td><td rowspan = "3">
 All properties moved to Object type</td></tr>
 <tr>
 <td>
@@ -1840,7 +1851,7 @@ frameInnerWidth</td></tr>
 <tr>
 <td>
 segmentLength</td><td rowspan = "5">
-segmentSettings:{      color:null,      length:2,      opacity:1,      spacing:2,      width:3,    }</td><td rowspan = "5">
+segmentSettings: {      <br/>color: null,      <br/>length: 2,      <br/>opacity: 1,      <br/>spacing: 2,      <br/>width: 3    }</td><td rowspan = "5">
  </td></tr>
 <tr>
 <td>
@@ -1862,22 +1873,23 @@ enableResize</td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
-ej.characterType = {SevenSegment:"SevenSegment",FourteenSegment:"FourteenSegment",SixteenSegment:"SixteenSegment",EightCrossEightDotMatrix:"EightCrossEightDotMatrix",EightCrossEightSquareMatrix:"EightCrossEightSquareMatrix"    };</td><td>
-ej.CharacterType = {SevenSegment:"sevensegment",FourteenSegment:"fourteensegment",SixteenSegment:"sixteensegment",EightCrossEightDotMatrix:"eightcrosseightdotmatrix",EightCrossEightSquareMatrix:"eightcrosseightsquarematrix"    };</td><td>
+ej.characterType = { SevenSegment: "SevenSegment", FourteenSegment: "FourteenSegment", SixteenSegment: "SixteenSegment", EightCrossEightDotMatrix: "EightCrossEightDotMatrix", EightCrossEightSquareMatrix: "EightCrossEightSquareMatrix"  <br/>  };</td><td>
+ej.CharacterType = { SevenSegment: "sevensegment", FourteenSegment: "fourteensegment", SixteenSegment: "sixteensegment", EightCrossEightDotMatrix: "eightcrosseightdotmatrix", EightCrossEightSquareMatrix: "eightcrosseightsquarematrix"  <br/>  };</td><td>
  </td></tr>
 <tr>
 <td>
 <b>Enum</b></td><td>
-ej.textAlignment = {Left: "Left",Right: "Right"    };</td><td>
-ej.TextAlignment = {Left: "left",Right: "right"    };</td><td>
+ej.textAlignment = { <br/>Left: "Left", Right: "Right"    };</td><td>
+ej.TextAlignment = { <br/>Left: "left", Right: "right"    };</td><td>
  </td></tr>
 <tr>
 <td>
 <b>Enum</b></td><td>
-ej.fontStyle = {Normal: "Normal",Bold: "Bold",Italic: "Italic",Underline: "Underline",Strikeout: "Strikeout"    };</td><td>
-ej.FontStyle = {Normal: "normal",Bold: "bold",Italic: "italic",Underline: "underline",Strikeout: "strikeout"    };</td><td>
+ej.fontStyle = { Normal: "Normal", <br/>Bold: "Bold", Italic: "Italic", Underline: "Underline", Strikeout: "Strikeout"    };</td><td>
+ej.FontStyle = { Normal: "normal", <br/>Bold: "bold", Italic: "italic", Underline: "underline", Strikeout: "strikeout"    };</td><td>
  </td></tr>
 </table>
+
 **ejDropDownList**
 
 <table>
@@ -2000,6 +2012,7 @@ selectItemByValue</td><td>
  setSelectedValue</td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -2046,6 +2059,7 @@ New Event argument</td></tr>
 args.value</td><td>
 New Event argument</td></tr>
 </table>
+
 **ejGantt**
 
 <table>
@@ -2148,6 +2162,7 @@ ej.Gantt.editMode</td><td>
 ej.Gantt.EditMode</td><td>
  </td></tr>
 </table>
+
 **ejGrid**
 
 <table>
@@ -2697,6 +2712,7 @@ ej.Grid.editEvent</td><td>
 --</td><td>
 Removed</td></tr>
 </table>
+
 **ejLinearGauge**
 
 <table>
@@ -2710,7 +2726,7 @@ Removed</td></tr>
 <td rowspan = "44">
 <b>Property</b></td><td>
 frameBackgroundImageUrl</td><td rowspan = "3">
-frame: {     backgroundImageUrl:null,     outerWidth: 12,     innerWidth: 8, },</td><td rowspan = "3">
+frame: { <br/>backgroundImageUrl: null, <br/>outerWidth: 12, <br/>innerWidth: 8 }</td><td rowspan = "3">
 Properties moved to Object type</td></tr>
 <tr>
 <td>
@@ -2756,7 +2772,7 @@ position</td><td>
 <tr>
 <td>
 borderColor</td><td rowspan = "2">
-border:{   color: null,   width:3}</td><td rowspan = "2">
+border:{ color: null, width:3 }</td><td rowspan = "2">
 Border properties moved to object type</td></tr>
 <tr>
 <td>
@@ -2790,7 +2806,7 @@ width</td><td>
 <td>
 xDistanceFromScale</td><td rowspan = "2">
 distanceFromScale: { x: 50, y: 50 }</td><td rowspan = "2">
-Property moved to object type</td></tr>
+Property moved to Object type</td></tr>
 <tr>
 <td>
 yDistanceFromScale</td></tr>
@@ -2807,7 +2823,7 @@ gradients</td><td>
 <tr>
 <td>
 borderColor</td><td rowspan = "2">
-border:{   color: null,   width:3}</td><td rowspan = "2">
+border: { color: null, width:3 }</td><td rowspan = "2">
 Property moved to object type</td></tr>
 <tr>
 <td>
@@ -2918,63 +2934,63 @@ gradients</td><td>
 <tr>
 <td rowspan = "12">
 <b>Enum</b></td><td>
-ej.tickType = {MajorInterval: "MajorInterval",MinorInterval: "MinorInterval"    };</td><td>
-ej.TickType = {MajorInterval: "majorinterval",MinorInterval: "minorinterval"    };</td><td>
+ej.tickType = { <br/>MajorInterval: "MajorInterval", <br/>MinorInterval: "MinorInterval"    };</td><td>
+ej.TickType = { <br/>MajorInterval: "majorinterval", <br/>MinorInterval: "minorinterval"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.labelType = {Major: "Major",Minor: "Minor"    };</td><td>
-ej.LabelType = {Major: "major",Minor: "minor"    };</td><td>
+ej.labelType = { <br/>Major: "Major", <br/>Minor: "Minor"    };</td><td>
+ej.LabelType = { <br/>Major: "major", <br/>Minor: "minor"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.fontType = {Bold: "Bold",Italic: "Italic",Regular: "Regular",Strikeout: "Strikeout",Underline: "Underline"    };</td><td>
-ej.FontStyle = {Bold: "bold",Italic: "italic",Regular: "regular",Strikeout: "strikeout",Underline: "underline"    };</td><td>
+ej.fontType = { <br/>Bold: "Bold", Italic: "Italic", <br/>Regular: "Regular", <br/>Strikeout: "Strikeout", <br/>Underline: "Underline"    };</td><td>
+ej.FontStyle = { <br/>Bold: "bold", Italic: "italic", <br/>Regular: "regular", <br/>Strikeout: "strikeout", <br/>Underline: "underline"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.pointerPlacement = {Near: "Near",Far: "Far",Center: "Center"    };</td><td>
-ej.PointerPlacement = {Near: "near",Far: "far",Center: "center"    };</td><td>
+ej.pointerPlacement = { <br/>Near: "Near", Far: "Far", <br/>Center: "Center"    };</td><td>
+ej.PointerPlacement = { <br/>Near: "near", Far: "far", <br/>Center: "center"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.tickPlacement = {Near: "Near",Far: "Far",Center: "Center"    };</td><td>
-ej.TickPlacement = {Near: "near",Far: "far",Center: "center"};</td><td>
+ej.tickPlacement = { <br/>Near: "Near", Far: "Far", <br/>Center: "Center"    };</td><td>
+ej.TickPlacement = { <br/>Near: "near", Far: "far", <br/>Center: "center"};</td><td>
  </td></tr>
 <tr>
 <td>
-ej.labelPlacement = {Near: "Near",Far: "Far",Center: "Center"    };</td><td>
-ej.LabelPlacement = {Near: "near",Far: "far",Center: "center"    };</td><td>
+ej.labelPlacement = { <br/>Near: "Near", Far: "Far", <br/>Center: "Center"    };</td><td>
+ej.LabelPlacement = { <br/>Near: "near", Far: "far", <br/>Center: "center"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.rangePlacement = {Near: "Near",Far: "Far",Center: "Center"    };</td><td>
-ej.RangePlacement = {Near: "near",Far: "far",Center: "center"    };</td><td>
+ej.rangePlacement = { <br/>Near: "Near", Far: "Far", <br/>Center: "Center"    };</td><td>
+ej.RangePlacement = { <br/>Near: "near", Far: "far", <br/>Center: "center"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.unitTextPlacement = {Front: "Front",Back: "Back"    };</td><td>
-ej.UnitTextPlacement = {Front: "front",Back: "back"    };</td><td>
+ej.unitTextPlacement = { <br/>Front: "Front", Back: "Back"    };</td><td>
+ej.UnitTextPlacement = { <br/>Front: "front", Back: "back"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.direction = {Clockwise: "Clockwise",CounterClockwise:"CounterClockwise"    };</td><td>
-ej.Directions = {Clockwise: "clockwise",CounterClockwise:"counterclockwise"    };</td><td>
+ej.direction = { <br/>Clockwise: "Clockwise", <br/>CounterClockwise: <br/>"CounterClockwise"    };</td><td>
+ej.Directions = { <br/>Clockwise: "clockwise", <br/>CounterClockwise: <br/>"counterclockwise"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.scaleType = {Rectangle: "Rectangle",RoundedRectangle:"RoundedRectangle",Thermometer: "Thermometer"    };</td><td>
-ej.ScaleType = {Rectangle: "rectangle",RoundedRectangle:"roundedrectangle",Thermometer: "thermometer"    };</td><td>
+ej.scaleType = { <br/>Rectangle: "Rectangle", <br/>RoundedRectangle: <br/>"RoundedRectangle", <br/>Thermometer: <br/>"Thermometer"    };</td><td>
+ej.ScaleType = { <br/>Rectangle: "rectangle", <br/>RoundedRectangle: <br/>"roundedrectangle", <br/>Thermometer: <br/>"thermometer"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.indicatorType = {Rectangle: "Rectangle",Circle: "Circle",RoundedRectangle:"RoundedRectangle",Text: "Text"    };</td><td>
-ej.IndicatorType = {Rectangle: "rectangle",Circle: "circle",RoundedRectangle:"roundedrectangle",Text: "text"    };</td><td>
+ej.indicatorType = { <br/>Rectangle: "Rectangle", <br/>Circle: "Circle", <br/>RoundedRectangle: <br/>"RoundedRectangle", <br/>Text: "Text"    };</td><td>
+ej.IndicatorType = { <br/>Rectangle: "rectangle", <br/>Circle: "circle", <br/>RoundedRectangle: <br/>"roundedrectangle", <br/>Text: "text"    };</td><td>
  </td></tr>
 <tr>
 <td>
-ej.markerType = {Rectangle: "Rectangle",Triangle: "Triangle",Ellipse: "Ellipse",Diamond: "Diamond",Pentagon: "Pentagon",Circle: "Circle",Star: "Star",Slider: "Slider",Pointer: "Pointer",Wedge: "Wedge",Trapezoid: "Trapezoid",RoundedRectangle:"RoundedRectangle"    };</td><td>
-ej.MarkerType = {Rectangle: "rectangle",Triangle: "triangle",Ellipse: "ellipse",Diamond: "diamond",Pentagon: "pentagon",Circle: "circle",Star: "star",Slider: "slider",Pointer: "pointer",Wedge: "wedge",Trapezoid: "trapezoid",RoundedRectangle:"roundedrectangle"    };</td><td>
+ej.markerType = { <br/>Rectangle: "Rectangle", <br/>Triangle: "Triangle", <br/>Ellipse: "Ellipse", <br/>Diamond: "Diamond", <br/>Pentagon: "Pentagon", <br/>Circle: "Circle", Star: "Star", <br/>Slider: "Slider", <br/>Pointer: "Pointer", <br/>Wedge: "Wedge", <br/>Trapezoid: "Trapezoid", <br/> RoundedRectangle: <br/>"RoundedRectangle"    };</td><td>
+ej.MarkerType = { <br/>Rectangle: "rectangle", <br/>Triangle: "triangle", <br/>Ellipse: "ellipse", <br/>Diamond: "diamond", <br/>Pentagon: "pentagon", <br/>Circle: "circle", Star: "star", <br/>Slider: "slider", <br/>Pointer: "pointer", <br/>Wedge: "wedge", <br/>Trapezoid: "trapezoid", <br/>RoundedRectangle: <br/>"roundedrectangle"    };</td><td>
  </td></tr>
 <tr>
 <td rowspan = "20">
@@ -2985,7 +3001,7 @@ For ticks</td></tr>
 <tr>
 <td>
 args.tickAngle</td><td rowspan = "4">
-args.tick{angle,element,index,value}</td><td rowspan = "4">
+args.tick{angle,element,<br/>index,value}</td><td rowspan = "4">
 arguments moved to Object type</td></tr>
 <tr>
 <td>
@@ -3004,7 +3020,7 @@ For label</td></tr>
 <tr>
 <td>
 args.labelAngle</td><td rowspan = "4">
-args.tick{angle,element,index,value}</td><td rowspan = "4">
+args.tick{angle,element,<br/>index,value}</td><td rowspan = "4">
 arguments moved to Object type</td></tr>
 <tr>
 <td>
@@ -3048,7 +3064,7 @@ For Render Complete</td></tr>
 <tr>
 <td>
 args.pointerElement</td><td rowspan = "4">
-args.pointer{angleelementIndexvalue}</td><td rowspan = "4">
+args.pointer{angle<br/>elementIndexvalue}</td><td rowspan = "4">
 arguments moved to Object type</td></tr>
 <tr>
 <td>
@@ -3060,6 +3076,7 @@ args.pointerValue</td></tr>
 <td>
 args.pointerAngle</td></tr>
 </table>
+
 **ejMaps**
 
 <table>
@@ -3413,6 +3430,7 @@ keyup</td><td>
  ej.InputMode = { Password: "password",Text: "text"                                };  </td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -3471,6 +3489,7 @@ args.unStrippedValue</td><td>
 args.unmaskedValue</td><td>
  </td></tr>
 </table>
+
 **ejMenu**
 
 <table>
@@ -3595,6 +3614,7 @@ showContextMenu</td><td colspan = "2">
  ej.AnimationType = {        None: "none",        Default: "default"    }; </td><td colspan = "2">
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -3669,6 +3689,7 @@ args.events.menuText</td><td>
 args.events.text</td><td>
  </td></tr>
 </table>
+
 **ejOlapChart**
 
 <table>
@@ -3690,6 +3711,7 @@ serviceMethods</td><td>
 serviceMethodSettings</td><td colspan = "2">
  </td></tr>
 </table>
+
 **ejOlapClient**
 
 <table>
@@ -3793,6 +3815,7 @@ clientSuccess</td><td>
 renderSuccess</td><td>
  </td></tr>
 </table>
+
 **ejOlapGauge**
 
 <table>
@@ -3840,6 +3863,7 @@ clientSuccess</td><td>
 renderSuccess</td><td>
  </td></tr>
 </table>
+
 **ejOlapGrid**
 
 <table>
@@ -3975,6 +3999,7 @@ getPercent</td><td>
 getPercentage</td><td>
  </td></tr>
 </table>
+
 **ejRadioButton**
 
 <table>
@@ -4007,6 +4032,7 @@ enableRTL   </td><td>
  ej.RadioButtonSize = {            Small: "small",            Medium:"medium"            }; </td><td>
  </td></tr>
 </table>
+
 **ejRangeNavigator**
 
 <table>
@@ -4150,6 +4176,7 @@ args:{cancelCancel<b>Data={Model}</b>modeltype}</td><td>
 args:{cancelCancel<b>data={model}</b>modeltype}</td><td>
 Modified args.DataRemoved args.Cancel</td></tr>
 </table>
+
 **ejRating**
 
 <table>
@@ -4230,6 +4257,7 @@ ej.Rating.precisions = {        Full: "full",        Half: "half",
 ej.Rating.Precision = {        Full: "full",        Half: "half",        Exact: "exact"    }</td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -4252,6 +4280,7 @@ args.Value</td><td>
 args.value</td><td>
  </td></tr>
 </table>
+
 **ejRichTextEditor**
 
 <table>
@@ -4319,6 +4348,7 @@ selectedHtml</td><td>
 getSelectedHtml</td><td>
  </td></tr>
 </table>
+
 **ejRotator**
 
 <table>
@@ -4419,6 +4449,7 @@ nextSlide</td><td>
  ej.Rotator.PagerPosition = {    TopLeft: "topleft",    TopRight: "topright",    BottomLeft: "bottomleft",    BottomRight: "bottomright",    TopCenter: "topCenter",    Outside: "outside"    }; </td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -4489,6 +4520,7 @@ args.index</td><td>
 args.activeItemIndex</td><td>
  </td></tr>
 </table>
+
 **ejSchedule**
 
 <table>
@@ -4583,6 +4615,7 @@ ej.Schedule.actions</td><td>
 ej.Schedule.Actions</td><td>
  </td></tr>
 </table>
+
 **ejScroller**
 
 <table>
@@ -4609,6 +4642,7 @@ rtl</td><td>
 enableRTL</td><td>
  </td></tr>
 </table>
+
 **ejSlider**
 
 <table>
@@ -4661,6 +4695,7 @@ incrementStep</td><td>
  ej.SliderType = {        Default: "default",        MinRange: "minrange",        Range: "range"    }; </td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -4695,6 +4730,7 @@ args.handleNo</td><td>
 args.sliderIndex</td><td>
  </td></tr>
 </table>
+
 **ejSplitButton**
 
 <table>
@@ -4738,6 +4774,7 @@ targetID</td><td>
  ej.ButtonSize = {                                                Normal : "normal",            Mini:"mini",              Small: "small",                          Medium:"medium",                        Large: "large"}; </td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -4811,6 +4848,7 @@ args.events.selectedItem</td><td>
  </td><td>
 Removed event argument</td></tr>
 </table>
+
 **ejSplitter**
 
 <table>
@@ -4843,6 +4881,7 @@ removePane</td><td>
 removeItem</td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -4979,6 +5018,7 @@ args.nextPane.paneSize</td><td>
 args.nextPane.size</td><td>
  </td></tr>
 </table>
+
 **ejTab**
 
 <table>
@@ -5067,6 +5107,7 @@ getItemsCount</td><td>
  ej.Tab.HeightAdjustMode = {        Content: "content",        Auto: "auto",        Fill: "fill"    }; </td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -5323,6 +5364,7 @@ args.cancel</td><td>
 args.data</td><td>
  </td></tr>
 </table>
+
 **ejTagCloud**
 
 <table>
@@ -5350,6 +5392,7 @@ title</td><td>
  ej.Format = {        Cloud: "cloud",        List: "list"    }; </td><td>
  </td></tr>
 </table>
+
 **ejTextBoxes**
 
 <table>
@@ -5396,6 +5439,7 @@ waterMarkText</td><td>
 watermarkText</td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -5418,6 +5462,7 @@ focusOut</td><td>
 args.value</td><td>
 New Event argument</td></tr>
 </table>
+
 **ejTimePicker**
 
 <table>
@@ -5475,6 +5520,7 @@ updateCurrentTime</td><td>
 setCurrentTime</td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -5575,6 +5621,7 @@ args.value</td><td>
 args.prevTime</td><td>
  </td></tr>
 </table>
+
 **ejToggle Button**
 
 <table>
@@ -5612,6 +5659,7 @@ Enum</td><td>
  ej.Contents = {TextOnly:"textonly",ImageOnly: "imageonly",ImageBoth: "imageboth",TextAndImage: "textandimage",ImageTextImage:"imagetextimage"}; </td><td>
  </td></tr>
 </table>
+
 **ejToolbar**
 
 <table>
@@ -5684,6 +5732,7 @@ removeItembyID</td><td>
 removeItemByID</td><td>
  </td></tr>
 </table>
+
 **ejTreeMap**
 
 <table>
@@ -5740,6 +5789,7 @@ labelTemplate</td><td>
 itemTemplate</td><td>
 This API comes under leafItemSettings. You can  use this template to customize the item with label.</td></tr>
 </table>
+
 **ejTreeView**
 
 <table>
@@ -5863,6 +5913,7 @@ isNodeExpanded</td><td>
  </td><td>
 We have removed this method. Use <b>isExpanded method</b> to achieve  this behaviour </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
@@ -5918,6 +5969,7 @@ args.UpdateChanges</td><td>
  </td><td>
 Removed Event argument</td></tr>
 </table>
+
 **ejUploadBox**
 
 <table>
@@ -5949,6 +6001,7 @@ rtl</td><td>
 enableRTL   </td><td>
  </td></tr>
 </table>
+
 **Event arguments**
 
 <table>
