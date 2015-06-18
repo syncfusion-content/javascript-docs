@@ -25,7 +25,7 @@ documentation: ug
 
 * First create an **HTML** file and then add references to the required libraries.
 
-{% highlight js %}
+{% highlight html %}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -48,12 +48,12 @@ documentation: ug
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 <body>
 <div id="DigitalGauge1"></div>
 </body>
-
+</html>
 
 
 {% endhighlight %}
@@ -66,12 +66,10 @@ documentation: ug
 
 {% highlight js %}
 
-<script type="text/javascript">
-$(function () {
-$("#DigitalGauge1").ejDigitalGauge();
-});
-</script>
 
+ $(function () {
+        $("#DigitalGauge1").ejDigitalGauge();
+    });
 
 
 
@@ -89,10 +87,12 @@ Basic attributes of each canvas elements are height and width. You can set the h
 
 {% highlight js %}
 
-$("#DigitalGauge1").ejDigitalGauge({
-height: 145,
-width: 260,
-});
+ $(function () {
+        $("#DigitalGauge1").ejDigitalGauge({
+            height: 145,
+            width: 260,
+        });
+    });
 
 
 {% endhighlight %}
@@ -127,16 +127,18 @@ You can customize the **Digital Gauge** using different properties.
 
 {% highlight js %}
 
-$("#DigitalGauge1").ejDigitalGauge({
-height: 145,
-width: 260,
+$(function () {
+        $("#DigitalGauge1").ejDigitalGauge({
+            height: 145,
+            width: 260,
 
-items: [{
-segmentSettings:{width: 2, length: 20},
-characterSettings:{type: "sevensegment",spacing: 12, },
-value: "102",
-}]
-});
+            items: [{
+                segmentSettings: { width: 2, length: 20 },
+                characterSettings: { type: "sevensegment", spacing: 12, },
+                value: "102",
+            }]
+        });
+    });
 
 
 {% endhighlight %}
@@ -149,14 +151,12 @@ On executing the above code, sample renders a **Digital Gauge** with default val
 
 You can add a **&lt;div&gt;** element to set the background for the **Digital Gauge** and attach the styles to the **HTML** page such as height , width, background image **URL** ,background repeat property, etc.In the following code example, image used is a road in California. You can pass the text as **“WELCOME TO CALIFORNIA”**
 
-{% highlight js %}
-
+{% highlight html %}
 
 <div id="frameDiv">
 <div id="DigitalGauge1" style="width:100%">
 </div>
 </div>
-
 <style>
 #frameDiv {
 align : center;
@@ -167,9 +167,6 @@ background-image :url("script/frame.png");
 background-repeat :no-repeat;
 }
 </style>
-
-
-
 {% endhighlight %}
 
 
@@ -183,18 +180,20 @@ You can position the digital letters inside the canvas element using **location*
 
 {% highlight js %}
 
-$("#DigitalGauge1").ejDigitalGauge({
-height: 145,
-width: 260,
+$(function () {
+        $("#DigitalGauge1").ejDigitalGauge({
+            height: 145,
+            width: 260,
 
-items: [{
-//For Diplaying Farenheit value
-segmentSettings:{width: 2, length: 20},
-characterSettings:{type: "sevensegment",spacing: 12, },
-value: "102",                       position: { x: 15, y: 40 }
+            items: [{
+                //For Diplaying Farenheit value
+                segmentSettings: { width: 2, length: 20 },
+                characterSettings: { type: "sevensegment", spacing: 12, },
+                value: "102", position: { x: 15, y: 40 }
 
-}]
-});
+            }]
+        });
+    });
 
 
 {% endhighlight %}
@@ -213,52 +212,55 @@ You can add **Items****collection** to display the temperature value as used in 
 
 {% highlight js %}
 
-$("#DigitalGauge1").ejDigitalGauge({
-height: 145, width: 260,
-items: [{
-//For Diplaying fahrenheit value
-segmentSettings: { width: 2, length: 20, spacing: 0 },
-characterSettings: { type: "sevensegment", spacing: 12, },
-value: "102",
-position: { x: 15, y: 40 }
+ $(function () {
+        $("#DigitalGauge1").ejDigitalGauge({
+            height: 145, width: 260,
+            items: [{
+                //For Diplaying fahrenheit value
+                segmentSettings: { width: 2, length: 20, spacing: 0 },
+                characterSettings: { type: "sevensegment", spacing: 12, },
+                value: "102",
+                position: { x: 15, y: 40 }
 
-},
-{
-//For displaying degree symbol
-segmentSettings: { width: 2, length: 5, spacing: 0 },
-characterSettings: { type: "sevensegment", spacing: 5, },
-value: "0",
-position: { x: 70, y: 28 }            },
-{
-//For displaying fahrenheit symbol
-segmentSettings: { width: 2, length: 20, spacing: 0 },
-characterSettings: { type: "sevensegment", spacing: 12, },
-value: "F",
-position: { x: 170, y: 40 }
-},
-{
-//For displaying Celcius value
-segmentSettings: { width: 1, length: 9, spacing: 0, color: "#F5b43f" },
-characterSettings: { type: "sevensegment", spacing: 12, },
-value: "38",
-position: { x: 70, y: 90 },
-},
-{
-//For displaying degree symbol
-segmentSettings: { width: 1, length: 3, spacing: 0, color: "#F5b43f" },
-characterSettings: { type: "sevensegment", spacing: 12, },
-value: "0",
-position: { x: 90, y: 80 }
-},
-{
-//For displaying celcius symbol
-segmentSettings: { width: 1, length: 9, spacing: 0, color: "#F5b43f" },
-characterSettings: { type: "sevensegment", spacing: 12, },
-value: "c",
-position: { x: 120, y: 90 }
+            },
+            {
+                //For displaying degree symbol
+                segmentSettings: { width: 2, length: 5, spacing: 0 },
+                characterSettings: { type: "sevensegment", spacing: 5, },
+                value: "0",
+                position: { x: 70, y: 28 }
+            },
+            {
+                //For displaying fahrenheit symbol
+                segmentSettings: { width: 2, length: 20, spacing: 0 },
+                characterSettings: { type: "sevensegment", spacing: 12, },
+                value: "F",
+                position: { x: 170, y: 40 }
+            },
+            {
+                //For displaying Celcius value
+                segmentSettings: { width: 1, length: 9, spacing: 0, color: "#F5b43f" },
+                characterSettings: { type: "sevensegment", spacing: 12, },
+                value: "38",
+                position: { x: 70, y: 90 },
+            },
+            {
+                //For displaying degree symbol
+                segmentSettings: { width: 1, length: 3, spacing: 0, color: "#F5b43f" },
+                characterSettings: { type: "sevensegment", spacing: 12, },
+                value: "0",
+                position: { x: 90, y: 80 }
+            },
+            {
+                //For displaying celcius symbol
+                segmentSettings: { width: 1, length: 9, spacing: 0, color: "#F5b43f" },
+                characterSettings: { type: "sevensegment", spacing: 12, },
+                value: "c",
+                position: { x: 120, y: 90 }
 
-}]
-});
+            }]
+        });
+    });
 
 
 {% endhighlight %}
