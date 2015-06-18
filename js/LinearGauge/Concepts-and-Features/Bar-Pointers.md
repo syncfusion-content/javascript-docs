@@ -255,7 +255,7 @@ Execute the above code to render the following output.
 
 **Linear Gauge** can contain multiple bar pointers on it. You can use any combination and any number of pointers in a gauge. That is, a Gauge can contain any number of marker pointer and any number of bar pointers. Refer the following code example containing multiple bar pointers.
 
-% highlight html %}
+{% highlight html %}
 
 <div id="LinearGauge1"></div>
 
