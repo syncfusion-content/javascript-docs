@@ -35,7 +35,7 @@ To localize any of our Syncfusion components into a particular culture, it is ne
 </tr>
 </table>
 
-> _**To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **globalize.culture.de-DE.min.js** file in your application, after the reference of jquery.globalize.min.js file.**_ 
+> _**To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the globalize.culture.de-DE.min.js file in your application, after the reference of jquery.globalize.min.js file.**_ 
 
 
 ### Localizing the Syncfusion components 
@@ -65,17 +65,9 @@ The Syncfusion components can be localized on two basis,
 
 The date formats, day names and month names are automatically translated into the specific culture based on the culture-code assigned to the **locale** property, as these date related common conversions are processed as built-in within the source. Here, the above code will render the DatePicker control in **German** culture, as shown below,
 
-![](Localization_images/Localization_img1.png)
-{:.image }
+{% include image.html url="/js/Introduction/Localization_images/Localization_img1.png" Caption="Datepicker in de-DE culture"%}
 
-    Datepicker in de-DE culture
-{:.caption }
-
-
-          
-
-
-
+      
 ##### Example 1: Defining locale property in the DatePicker control using built-in localized texts - Static
 
 * Refer the **Getting Started for JavaScript** document for creating a HTML page with Syncfusion components from the link here. 
@@ -127,11 +119,7 @@ The date formats, day names and month names are automatically translated into th
 
 * Browse your HTML page in any of the web browser and now the screen will display the DatePicker widget with the localized texts as shown below,
 
-![](Localization_images/Localization_img2.png)
-{:.image }
-
-    Datepicker in de-DE culture
-{:.caption }
+{% include image.html url="/js/Introduction/Localization_images/Localization_img2.png" Caption="Datepicker in de-DE culture"%}
 
 
 ##### To change the locale property dynamically in DatePicker control
@@ -368,11 +356,7 @@ There are other Syncfusion components like Grid, Gantt, FileExplorer and Schedul
 
 * Browse your HTML page in any of the web browser and now the screen will display the Grid control with the localized texts. Now double click on any of the row – the edit record dialog too pops-up with the localized words as shown below,
 
-![](Localization_images/Localization_img3.png)
-{:.image }
-
-    Grid control localized in de-DE culture
-{:.caption }
+{% include image.html url="/js/Introduction/Localization_images/Localization_img3.png" Caption="Grid control localized in de-DE culture"%}
 
 
 ##### To change the locale property dynamically in Grid control
