@@ -16,41 +16,42 @@ documentation: ug
 * By default it holds the true value. You can control the speed of the pointer during animating using **animationSpeed**. It is a numerical value that holds the time in mille seconds. That is when setting value is 1000, it is considered as 1 second.
 
 
+{% highlight html %}
+
+<div id="LinearGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="LinearGauge1"></div>   
-<script type="text/javascript">
- $(function () {
-// For Linear Gauge rendering
-$("#LinearGauge1").ejLinearGauge({
-//For enable Animation
-**enableAnimation: true,**
-//For enable Animation speed
-**animationSpeed:1000,**
-//For enable interaction
-**readOnly: false,**
-value:78**,**
-//For Adding scale collection
-scales: [{
-border: { color: "transparent", width: 0 },
-showBarPointers: true,
-//For Adding bar pointer collection
+$(function () {
+        // For Linear Gauge rendering
+        $("#LinearGauge1").ejLinearGauge({
+            //For enable Animation
+        enableAnimation: true,
+            //For enable Animation speed
+        animationSpeed:1000,
+            //For enable interaction
+        readOnly: false,
+            value:78,
+            //For Adding scale collection
+            scales: [{
+                border: { color: "transparent", width: 0 },
+                showBarPointers: true,
+                //For Adding bar pointer collection
  ]barPointers: [{ width: 5, backgroundColor: "Grey"}],
-//For Adding marker pointer collection
- markerPointers:[{
-width:10,length:10,backgroundColor:"Grey",distanceFromScale:-12
-}],
-//For Adding ticks collection
-ticks: [{ type: "majorinterval", width: 2, 
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } },
-{ type: "minorinterval", width: 1,height:6, 
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } }]
-}]
-});       
-});
-</script>
+        //For Adding marker pointer collection
+        markerPointers:[{
+            width:10,length:10,backgroundColor:"Grey",distanceFromScale:-12
+        }],
+        //For Adding ticks collection
+        ticks: [{ type: "majorinterval", width: 2, 
+            color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } },
+        { type: "minorinterval", width: 1,height:6, 
+            color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } }]
+    }]
+    });       
+    });
 
 
 {% endhighlight %}
