@@ -15,23 +15,27 @@ Custom labels are the texts that you can use them in any location of the **Gauge
 
 Custom labels collection is directly added to the scale object. Refer the following code to add custom labels collection in a **Gauge** control.
 
-{% highlight js %}
+{% highlight html %}
 
 <div id="CircularGauge1"></div>
-<script type="text/javascript">
-$(function () {
 
-//For circular gauge rendering
-$("#CircularGauge1").ejCircularGauge({
-scales: [{ showCustomLabels: true,
-customLabels:[{
-color: "Red"
-}]
-}]
-})
-});
-</script>
+{% endhighlight %}
 
+
+{% highlight js %}
+
+ $(function () {
+
+        //For circular gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+            scales: [{
+                showCustomLabels: true,
+                customLabels: [{
+                    color: "Red"
+                }]
+            }]
+        })
+    });
 
 {% endhighlight %}
 
@@ -43,40 +47,45 @@ You can use **Value** attribute to set the text value in the customlabels. To di
 
 Font option is also available on  Customlabels. The basic three properties of fonts such as size, family and style can be achieved by **size**, **fontStyle** and **fontFamily** attributes. 
 
-{% highlight js %}
+{% highlight html %}
 
 <div id="CircularGauge1"></div>
-<script type="text/javascript">
-$(function () {
 
-// For Circular Gauge rendering
-$("#CircularGauge1").ejCircularGauge({
-scales: [{
-size: 10,
-shadowOffset: 10,
-showCustomLabels: true,
-showRanges: true,
-showScaleBar: true,
-radius: 150, size: 2,
-customLabels: [{
-//For setting custom label text angle
-**textAngle: 10,**
-//For setting custom label color
-**color: "Red",**
-//For setting custom label value
-**value: "CustomLabel1",**
-//For setting custom label font option
-**font: {**
-**size: "18px",**
-**fontFamily: "Arial",**
-**fontStyle: "bold"**
-**}**,
-position: { x: 180, y: 100 }
-}]
-}]
-});
-});
-</script>
+{% endhighlight %}
+
+
+{% highlight js %}
+
+
+  $(function () {
+
+        // For Circular Gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+            scales: [{
+                size: 10,
+                shadowOffset: 10,
+                showCustomLabels: true,
+                showRanges: true,
+                showScaleBar: true,
+                radius: 150, size: 2,
+                customLabels: [{
+                    //For setting custom label text angle
+                textAngle: 10,
+                    //For setting custom label color
+                color: "Red",
+                    //For setting custom label value
+                value: "CustomLabel1",
+                    //For setting custom label font option
+                font: {
+                size: "18px",
+                fontFamily: "Arial",
+                fontStyle: "bold"
+                },
+                    position: { x: 180, y: 100 }
+                }]
+            }]
+        });
+    });
 
 
 {% endhighlight %}
@@ -91,52 +100,57 @@ Execute the above code to render the following output.
 
 You can set multiple custom labels in a single **Circular Gauge** by adding an array of custom label objects. Refer the following code example for multiple custom label functionality.
 
-{% highlight js %}
+{% highlight html %}
 
 <div id="CircularGauge1"></div>
-<script type="text/javascript">
-$(function () {
 
-// For Circular Gauge rendering
-$("#CircularGauge1").ejCircularGauge({
-scales: [{
-size: 10,
-shadowOffset: 10,
-showCustomLabels: true,
-showRanges: true,
-showScaleBar: true,
-radius: 150, size: 2,
-customLabels: [
-//custom label1
-{
-textAngle: 10,
-color: "Red",
-value: "CustomLabel1",
-font: {
-size: "18px",
-fontFamily: "Arial",
-fontStyle: "bold"
-},
-position: { x: 180, y: 100 }
-},
-//custom label2
-{
-textAngle: 10,
-color: "Green",
-value: "CustomLabel2",
-font: {
-size: "18px",
-fontFamily: "Arial",
-fontStyle: "bold"
-},
-position: { x: 180, y: 250 }
-}]
+{% endhighlight %}
+
+{% highlight js %}
 
 
-}]
-});
-});
-</script>
+ $(function () {
+
+          // For Circular Gauge rendering
+          $("#CircularGauge1").ejCircularGauge({
+              scales: [{
+                  size: 10,
+                  shadowOffset: 10,
+                  showCustomLabels: true,
+                  showRanges: true,
+                  showScaleBar: true,
+                  radius: 150, size: 2,
+                  customLabels: [
+                  //custom label1
+                  {
+                      textAngle: 10,
+                      color: "Red",
+                      value: "CustomLabel1",
+                      font: {
+                          size: "18px",
+                          fontFamily: "Arial",
+                          fontStyle: "bold"
+                      },
+                      position: { x: 180, y: 100 }
+                  },
+                  //custom label2
+                  {
+                      textAngle: 10,
+                      color: "Green",
+                      value: "CustomLabel2",
+                      font: {
+                          size: "18px",
+                          fontFamily: "Arial",
+                          fontStyle: "bold"
+                      },
+                      position: { x: 180, y: 250 }
+                  }]
+
+
+              }]
+          });
+      });
+
 
 
 {% endhighlight %}
@@ -161,51 +175,59 @@ Execute the above code to render the following output.
 
 When a custom label is to be displayed as an **Outer Custom Label**, set the API **customLabelType** as Outer. Refer to the following code example to get the **Outer Custom Label**.
 
-{% highlight js %}
+
+{% highlight html %}
 
 <div id="CircularGauge1"></div>
-<script type="text/javascript">
-$(function () {
-$("#CircularGauge1").ejCircularGauge({
 
-// Sets outer custom label position.
-outerCustomLabelPosition: "right",
+{% endhighlight %}
 
-//Defines the tooltip object.
-tooltip: {
 
-// Enables the custom label tooltip.
-showCustomLabelTooltip: true,
-},
+{% highlight js %}
 
-// Customizes the scale options.
-scales: [{
-showLabels: true,
-radius: 130,
 
-// Customizes the custom label options.
-customLabels: [{
-value: "Average Speed",
-position:{x:360, y:30},
-color: "Red",
-font: {
-size: "18px",
-fontFamily: "Arial",
-fontStyle: "bold"
-},
+ $(function () {
+          $("#CircularGauge1").ejCircularGauge({
 
-positionType: "outer",
-}],
+              // Sets outer custom label position.
+              outerCustomLabelPosition: "right",
 
-// Customizes the pointers options.
-pointers: [{
-value: 60,
-length: 95,
-}]
-}]
-});
-});
-</script>
+              //Defines the tooltip object.
+              tooltip: {
+
+                  // Enables the custom label tooltip.
+                  showCustomLabelTooltip: true,
+              },
+
+              // Customizes the scale options.
+              scales: [{
+                  showLabels: true,
+                  radius: 130,
+
+                  // Customizes the custom label options.
+                  customLabels: [{
+                      value: "Average Speed",
+                      position: { x: 360, y: 30 },
+                      color: "Red",
+                      font: {
+                          size: "18px",
+                          fontFamily: "Arial",
+                          fontStyle: "bold"
+                      },
+
+                      positionType: "outer",
+                  }],
+
+                  // Customizes the pointers options.
+                  pointers: [{
+                      value: 60,
+                      length: 95,
+                  }]
+              }]
+          });
+      });
+
+
 
 
 {% endhighlight %}

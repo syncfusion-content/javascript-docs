@@ -56,7 +56,7 @@ You can assign the complete contents in “**United States of America.json**” 
 
 **[usa.js]**
 
-{% highlight javascript %}
+{% highlight js %}
 
 
 var usMap = //Paste all the content copied from the JSON file//
@@ -158,7 +158,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 2\. Add a script tag anywhere in the webpage and add the following code. 
 
-{% highlight javascript %}
+{% highlight js %}
 
 <script type="text/javascript" language="javascript ">
 
@@ -208,7 +208,7 @@ js/ej.widgets.all.min.js"></script>
             $("#mapContainer").ejMap({
                 layers: [
                 {
-                    **shapeData: usMap**
+                    shapeData: usMap
                 }]
             });
 	    }); 
@@ -311,7 +311,7 @@ layers: [
 
 The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The **from** and **to** properties defines the value ranges and the **gradientColors** property defines the equivalent color ranges respective to their value ranges.
 
-> _**Note: The enableGradient property value should be true to apply gradient colors for maps.**_
+> _**Note:**_ The enableGradient property value should be true to apply gradient colors for maps.
 
 
 

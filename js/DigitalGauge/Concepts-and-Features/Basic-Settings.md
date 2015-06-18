@@ -13,23 +13,25 @@ documentation: ug
 
 The basic customization for any control is to set the dimension. Here dimension refers to two major attributes such as **height** and **width**. The **height** and **width** assigned in the control will render the canvas element in the given size. The code example to set **height** and **width** is as follow.
 
-{% highlight js %}
-
+{% highlight html %}
 
 <div id="DigitalGauge1"></div>
-<script type="text/javascript">
-$(function () {
-// For Digital Gauge rendering
-$("#DigitalGauge1").ejDigitalGauge({
-// For setting height of the canvas element.
-**height:200,**
-// For setting width of the canvas element.
-**width:500,**
-// For setting text
-value**:** "Syncfusion"
-})
-});
-</script>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+ $(function () {
+        // For Digital Gauge rendering
+        $("#DigitalGauge1").ejDigitalGauge({
+            // For setting height of the canvas element.
+          height:200,
+            // For setting width of the canvas element.
+          width:500,
+            // For setting text
+          value: "Syncfusion"
+        })
+    });
 
 
 
@@ -50,22 +52,23 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 * When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, **Gauge** control will changes the dimension based on its parent element change. This feature is enabled by using the property **canResize.**
 
 
+{% highlight html %}
+
+<div id="DigitalGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="DigitalGauge1"></div>
-<script type="text/javascript">
 $(function () {
-// For Digital Gauge rendering
-$("#DigitalGauge1").ejDigitalGauge({
-// For setting width of the canvas element.
-width:800,
-// For enabling resize.
-**canResize:** true**,**
+        // For Digital Gauge rendering
+        $("#DigitalGauge1").ejDigitalGauge({
+            // For setting width of the canvas element.
+            width:800,
+            // For enabling resize.
+           canResize: true,
 })
-});
-</script>
+    });
 
 
 {% endhighlight %}
@@ -86,27 +89,29 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 * flatdark
 
+{% highlight html %}
+
+<div id="DigitalGauge1"></div>
+
+{% endhighlight %}
 
 
 {% highlight js %}
 
 
-<div id="DigitalGauge1"></div>
-<script type="text/javascript">
-$(function () {
-// For Digital Gauge rendering
-$("#DigitalGauge1").ejDigitalGauge({
-// For setting width of the canvas element.
-width:800,
-// For enabling resize.
-**canResize:** true**,**
-// For setting theme for digital gauge.
-**themes:** "flatdark"**,**
-// For setting text
-value**:** "LOS ANGELS 40 KM"
-})
-});
-</script>
+ $(function () {
+        // For Digital Gauge rendering
+        $("#DigitalGauge1").ejDigitalGauge({
+            // For setting width of the canvas element.
+            width:800,
+            // For enabling resize.
+          canResize: true,
+            // For setting theme for digital gauge.
+          themes: "flatdark",
+            // For setting text
+          value: "LOS ANGELS 40 KM"
+        })
+    });
 
 
 {% endhighlight %}

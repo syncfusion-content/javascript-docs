@@ -18,15 +18,14 @@ The **ej.unobtrusive.min.js** file can be accessed from the following location, 
 <table>
 <tr>
 <td>
-**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
 </td>
 </tr>
 <tr>
 <td>
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-<br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
 </td>
 </tr>
 </table>
@@ -82,21 +81,15 @@ The demonstration of such **data-role** declaration with a simple **DatePicker**
 
 
 
-> _**Note: In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **data-ej** keyword prepended to it.**_
+> _**Note: In the above code, value is one of the DatePicker property to set the date value for the control, which is defined here with **data-ej** keyword prepended to it.**_
 > _**The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.**_
-
 
 
 
 
 The output of the above code will look as the one shown below with the value set to the given date,
 
-![](Unobtrusive-Support_images/Unobtrusive-Support_img1.png)
-{:.image }
-
-
-{:.caption }
-
+{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img1.png" %}
 
 ### EJ role
 
@@ -118,7 +111,7 @@ An important thing to be noted while using EJ role is that, you need to add the 
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
 </head>
-<body **data-ejrole**> 
+<body data-ejrole> 
 
 <!--DatePicker Control creation with ej-role-->
 <input id="myDatePicker" type="text" ej-datepicker ej-value= "01/01/2013" />
@@ -132,8 +125,8 @@ An important thing to be noted while using EJ role is that, you need to add the 
 
 
 
-> _**Note: In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **ej- ** keyword prepended to it.**_ 
-> _**Also, before proceeding with the property definition, it is necessary to define the control name with the **ej- ** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)**_
+> _**Note: In the above code, value is one of the DatePicker property to set the date value for the control, which is defined here with **ej-** keyword prepended to it.**_ 
+> _**Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)**_
 
 
 
@@ -141,11 +134,7 @@ An important thing to be noted while using EJ role is that, you need to add the 
 
 The output of the above code will look as the one shown below with the value set to the given date,
 
-![](Unobtrusive-Support_images/Unobtrusive-Support_img2.png)
-{:.image }
-
-
-{:.caption }
+{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img2.png" %}
 
 
 ### Directives
@@ -182,7 +171,7 @@ While making use of directives, you need to add the **data-directive** attribute
 
 
 
-> _**Note: In the above code, **value** is one of the available DatePicker property to set the value for the control, which is defined here with **ej- ** keyword prepended to it.**_ 
+> _**Note: In the above code, value is one of the available DatePicker property to set the value for the control, which is defined here with **ej-** keyword prepended to it.**_ 
 > _**Also, you can notice here that the HTML tag name is replaced by the control name to be created.**_
 
 
@@ -190,11 +179,7 @@ While making use of directives, you need to add the **data-directive** attribute
 
 The output of the above code will look as the one shown below with the value set to the given date,
 
-![](Unobtrusive-Support_images/Unobtrusive-Support_img3.png)
-{:.image }
-
-
-{:.caption }
+{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img3.png" %}
 
 
 The unobtrusive support can be easily achieved with the above specified 3 types of control initialization methods and all the options (properties) available within the Syncfusion controls can be easily assigned with its required values in an unobtrusive way. Thus, the control creation can be entirely coded in plain HTML with this unobtrusive support, by maintaining the scripts and css references separately.

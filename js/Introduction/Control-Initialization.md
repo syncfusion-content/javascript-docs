@@ -41,13 +41,7 @@ While using the manual reference method, the user needs to maintain their HTML p
 
 * For example, if you have created a folder named **JS_Sample** and placed the above HTML file into it, then create two new folders **Scripts** and **Content** under that root folder **JS_Sample** to maintain the scripts and stylesheets respectively as shown below,
 
-![](Control-Initialization_images/Control-Initialization_img1.png)
-{:.image }
-
-    Sample folder containing the Scripts & Content folder
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img1.png" Caption="Sample folder containing the Scripts & Content folder"%}
 
 
 #### Adding the required Stylesheets into Content folder
@@ -57,15 +51,14 @@ Navigating to the below specified location, you can find all the required web re
 <table>
 <tr>
 <td>
-**(installed location)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
 </td>
 </tr>
 <tr>
 <td>
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
-<br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
 </td>
 </tr>
 </table>
@@ -75,14 +68,10 @@ Navigating to the below specified location, you can find all the required web re
 
 Create a first level sub-folder named **ej** within the **Content** folder. Now again create another sub-folder namely **web** within the **ej** folder and place all the copied files into it as shown below,
 
-![](Control-Initialization_images/Control-Initialization_img2.png)
-{:.image }
-
-    Stylesheet files copied into the Content folder of the Sample Project
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img2.png" Caption="Stylesheet files copied into the Content folder of the Sample Project"%}
 
 
-> _**Note: The **common-images** folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.**_
+> _**Note: The common-images folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.**_
 
 
 Now, Include the specific theme reference to your HTML file by referring the appropriate **ej.web.all.min.css** file from a particular theme folder (here, we have referred the **default-theme**), within the head section as shown below,
@@ -107,7 +96,7 @@ Now, Include the specific theme reference to your HTML file by referring the app
 {% endhighlight %}
 
 
-> _**Note: In the above highlighted location of the code, you can simply use any of the 13 available themes.**_
+> _**Note: In the above css reference code section, you can simply use any of the 13 available themes.**_
 
 
 #### Adding the required JavaScript files
@@ -128,19 +117,17 @@ Navigating to the below specified location, you can find the above specified 4 d
 <table>
 <tr>
 <td>
-**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external 
+<b>(installed location)</b>\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external 
 </td>
 </tr>
 <tr>
 <td>
-    <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
 </td>
 </tr>
 </table>
-<br/>
 
 Apart from the above common scripts, it is also necessary to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script in a minified format.
 
@@ -150,25 +137,20 @@ Navigate to the below specified location and copy the **ej.web.all.min.js** file
 <table>
 <tr>
 <td>
-**(installed location)**\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
+<b>(installed location)</b>\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
 </td>
 </tr>
 <tr>
 <td>
     <br/>
-**For example,** If you have installed the Essential Studio package within **C:\Program Files (x86)**, then navigate to the below location,
+<b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-**C:\Program Files (x86)**\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web
 </td>
 </tr>
 </table>
-<br/>
 
-![](Control-Initialization_images/Control-Initialization_img3.png)
-{:.image }
-
-    Script files copied into the Sample Project
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img3.png" Caption="Script files copied into the Sample Project"%}
 
 
 Now, include the reference to it in your HTML page within the head section as shown below,
@@ -195,8 +177,7 @@ Now, include the reference to it in your HTML page within the head section as sh
 
 
 
-
-> _**Note:The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.**_
+> _**Note: The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.**_
 
 
 
@@ -240,11 +221,7 @@ To add any of our Syncfusion JavaScript widgets into your HTML page,
 
 * Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
 
-![](Control-Initialization_images/Control-Initialization_img4.png)
-{:.image }
-
-    DatePicker widget displayed on the web browser
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img4.png" Caption="DatePicker widget displayed on the web browser"%}
 
 
 ### Using Syncfusion Nuget Package in Visual Studio for Scripts and Stylesheet reference
@@ -253,11 +230,7 @@ Using the Nuget Package method in Visual Studio automates the process of copying
 
 Start the Visual Studio. Create a new ASP.NET Empty Web Application or ASP.NET Empty Website from **File** -> **New** -> **Project/Website** and save it with a meaningful name****as below (we have used the ASP.NET Empty Web application here),
 
-![](Control-Initialization_images/Control-Initialization_img5.png)
-{:.image }
-
-    Visual Studio -> New Project Window
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img5.png" Caption="Visual Studio -> New Project Window"%}
 
 
 #### Configuring and Installing Nuget into your project
@@ -266,31 +239,18 @@ To add the required scripts and css files automatically into your Project (Confi
 
 * Right click on your project in the Solution explorer and select **Manage Nuget Packages** options from the sub-menu that pop-up on the screen. In the **Manage Nuget Packages** dialog, select the **Syncfusion Nuget Packages** within the **Online** tab, which will display the list of available packages in it, as shown below.
 
-![](Control-Initialization_images/Control-Initialization_img6.png)
-{:.image }
-
-    Manage Nuget Packages pop-up
-{:.caption }
-
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img6.png" Caption="Manage Nuget Packages pop-up"%}
 
 * You need to install the **SyncfusionJavaScript** package shown in the above image just by clicking the **install** button. The below image depicts that the Nuget Packages for **JavaScript** has been successfully installed into your project.
 
-![](Control-Initialization_images/Control-Initialization_img7.png)
-{:.image }
-
-    Manage Nuget Packages pop-up
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img7.png" Caption="Manage Nuget Packages pop-up"%}
 
 
 #### Adding HTML page in your application
 
 Right click on your Project in Solution Explorer. Select **Add** -> **New Item** -> **HTML Page** and add it to your application. The blank HTML page will get added to your application.
 
-![](Control-Initialization_images/Control-Initialization_img8.png)
-{:.image }
-
-    Add New Item pop-up
-{:.caption }
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img8.png" Caption="Add New Item pop-up"%}
 
 
 #### Adding reference to the required Stylesheets
@@ -417,13 +377,7 @@ Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which act
 
 Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
 
-![](Control-Initialization_images/Control-Initialization_img9.png)
-{:.image }
-
-    DatePicker widget displayed on the web browser
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img9.png" Caption="DatePicker widget displayed on the web browser"%}
 
 
 The **DatePicker** control is rendered with its default appearance now. You can then use its various available properties to set its value and also make use of its available events to trigger when necessary.

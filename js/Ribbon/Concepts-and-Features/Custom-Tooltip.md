@@ -27,10 +27,10 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
         </li>
     </ul>
     <script type="text/javascript">
-        $(function () {
+         $(function () {
             $("#defaultRibbon").ejRibbon({
                 width: "100%", 
-                applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu },
+                applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu" },
                 tabs: [{
                     id: "home", text: "HOME", groups: [
                     {
@@ -40,12 +40,14 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
                                 text: "paste",
                                 customToolTip: {
                                     title: "Paste",
-                                    content: "<h6>Paste the content.<br/><br/>Add content on the Clipboard to your document.</h6>",
+                                    content: "Paste the content.Add content on the Clipboard to your document",
                                     prefixIcon: "e-pastetip"
                                 },
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
-                                    prefixIcon: "e-ribbon e-ribbonpaste"
+                                    prefixIcon: "e-ribbon e-ribbonpaste",
+									height:75,
+									width:70
                                 }
                             }
                             ]

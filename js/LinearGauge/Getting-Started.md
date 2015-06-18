@@ -21,13 +21,11 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 **Create a Linear Gauge**
 
-1. First create an HTML file, and then add references to the required libraries.
+* First create an HTML file, and then add references to the required libraries.
 
 
 
-{% highlight javascript %}
-
-
+{% highlight html %}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -47,7 +45,7 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 
 
-2. Now add a &lt;div&gt; element that acts as a container for **ejLinearGauge** widget.
+* Now add a &lt;div&gt; element that acts as a container for **ejLinearGauge** widget.
 
 
 
@@ -58,28 +56,23 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 <body>
     <div id="LinearGauge1"></div>   
 </body>
-
+</html>
 
 
 {% endhighlight %}
 
 
 
-3. Create the **ejLinearGauge** widget as follows,
+* Create the **ejLinearGauge** widget as follows,
 
 
 
-{% highlight html %}
+{% highlight js %}
 
 
-
-<script type="text/javascript">
 $(function () {
         $("#LinearGauge1").ejLinearGauge();
-});
-</script>
-</html>
-
+    });
 
 
 {% endhighlight %}
@@ -102,10 +95,12 @@ On executing the above code sample renders a default **Linear Gauge** with defau
 
 {% highlight js %}
 
-$("#LinearGauge1").ejLinearGauge({
-            height: 550, 
-            width: 500, 
-});
+ $(function () {
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
+        });
+    });
 
 
 {% endhighlight %}
@@ -128,13 +123,15 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 {% highlight js %}
 
-$("#LinearGauge1").ejLinearGauge({
-            height: 550, 
-            width: 500, 
+ $(function () {
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
             labelColor: "#8c8c8c",
-            enableAnimation: false,                    
-});
+            enableAnimation: false,
+        });
 
+    });
 
 {% endhighlight %}
 
@@ -162,28 +159,30 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 {% highlight js %}
 
-$("#LinearGauge1").ejLinearGauge({
-           height: 550, 
-           width: 500, 
-           labelColor: "#8c8c8c",
-           enableAnimation: false,                    
-                scales: [{
-                    type: "thermometer", 
-                    backgroundColor: "transparent", 
-                    minimum: -10, 
-                    maximum: 110, 
-                    minorIntervalValue: 5, 
-                    width: 20, 
-                    position: { x: 50, y: 18 }, 
-                    length: 355, 
-                    border: {width: 0.5}
+$(function () {
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
+            labelColor: "#8c8c8c",
+            enableAnimation: false,
+            scales: [{
+                type: "thermometer",
+                backgroundColor: "transparent",
+                minimum: -10,
+                maximum: 110,
+                minorIntervalValue: 5,
+                width: 20,
+                position: { x: 50, y: 18 },
+                length: 355,
+                border: { width: 0.5 }
                 //Add the pointers customization code here
                 //Add the labels customization code here
                 //Add the ticks customization code here
                 //Add the Custom labels customization code here
-                }]        });      
-
-
+            }]
+        });
+    });
+    
 {% endhighlight %}
 
 
@@ -204,27 +203,32 @@ In **Linear gauge** there are two types of pointers available such as marker poi
 
 {% highlight js %}
 
-$("#LinearGauge1").ejLinearGauge({
-           height: 550, 
-           width: 500, 
-           labelColor: "#8c8c8c",
-           enableAnimation: false,                    
-           scales: [{
+ $(function () {
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
+            labelColor: "#8c8c8c",
+            enableAnimation: false,
+            scales: [{
                 //Add the pointers customization code here
 
-                    markerPointers: [{ opacity: 0 }],
+                markerPointers: [{ opacity: 0 }],
 
-                    barPointers: [{
-                        width: 10, 
-                        distanceFromScale: -0.5,
-                        value: 37, 
-                        backgroundColor: "#DB3738"
-                    }],    
+                barPointers: [{
+                    width: 10,
+                    distanceFromScale: -0.5,
+                    value: 37,
+                    backgroundColor: "#DB3738"
+                }],
                 //Add the labels customization code here
                 //Add the ticks customization code here
                 //Add the Custom labels customization code here
-              }]
-});
+            }]
+        });
+
+
+
+    });
 
 
 {% endhighlight %}
@@ -245,29 +249,36 @@ On executing the above code sample renders a **Linear Gauge** with bar marker as
 
 {% highlight js %}
 
-$("#LinearGauge1").ejLinearGauge({
-           height: 550, 
-           width: 500, 
-           labelColor: "#8c8c8c",
-           enableAnimation: false,    
+ $(function () {
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
+            labelColor: "#8c8c8c",
+            enableAnimation: false,
 
-           scales: [{
+            scales: [{
                 //Add the pointers customization code here
                 //Add the labels customization code here
 
-                    labels: [{
-                        placement: "near", 
-                        font: { size: "10px", fontFamily: "Segoe UI",                  
-                        fontStyle: "Normal" }
-                    }, 
-                    {
-                        placement: "far",
-                        distanceFromScale: { x: 10 }
-                    }],
+                labels: [{
+                    placement: "near",
+                    font: {
+                        size: "10px", fontFamily: "Segoe UI",
+                        fontStyle: "Normal"
+                    }
+                },
+                {
+                    placement: "far",
+                    distanceFromScale: { x: 10 }
+                }],
                 //Add the ticks customization code here
                 //Add the Custom labels customization code here
             }]
         });
+
+
+
+    });
 
 
 {% endhighlight %}
@@ -288,47 +299,53 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 {% highlight js %}
 
-$("#LinearGauge1").ejLinearGauge({
-           height: 550, 
-           width: 500, 
-           labelColor: "#8c8c8c",
-           enableAnimation: false,    
+$(function () {
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
+            labelColor: "#8c8c8c",
+            enableAnimation: false,
 
-           scales: [{
+            scales: [{
                 //Add the pointers customization code here
                 //Add the labels customization code here
                 //Add the ticks customization code here
 
-                    ticks: [{
-type: "majorinterval", 
-                        height: 8, 
-                        width: 1, 
-                        color: "#8c8c8c", 
-                        distanceFromScale: { y: -4 }
-                    }, {
-                        type: "minorinterval", 
-                        height: 4, 
-                        width: 1, 
-                        color: "#8c8c8c", 
-                        distanceFromScale: { y: -4 }
-                    }, {
-                        type: "majorinterval", 
-                        placement: "far", 
-                        height: 8, 
-                        width: 1, 
-                        color: "#8c8c8c", 
-                        distanceFromScale: { y: -4 }                    }, {
-                        type: "minorinterval", 
-                        placement: "far", 
-                        height: 4, 
-                        width: 1, 
-                        color: "#8c8c8c", 
-                        distanceFromScale: { y: -4 }
-                    }], 
+                ticks: [{
+                    type: "majorinterval",
+                    height: 8,
+                    width: 1,
+                    color: "#8c8c8c",
+                    distanceFromScale: { y: -4 }
+                }, {
+                    type: "minorinterval",
+                    height: 4,
+                    width: 1,
+                    color: "#8c8c8c",
+                    distanceFromScale: { y: -4 }
+                }, {
+                    type: "majorinterval",
+                    placement: "far",
+                    height: 8,
+                    width: 1,
+                    color: "#8c8c8c",
+                    distanceFromScale: { y: -4 }
+                }, {
+                    type: "minorinterval",
+                    placement: "far",
+                    height: 4,
+                    width: 1,
+                    color: "#8c8c8c",
+                    distanceFromScale: { y: -4 }
+                }],
                 //Add the Custom labels customization code here   
-             }]
-});
+            }]
+        });
 
+
+
+
+    });
 
 {% endhighlight %}
 
@@ -350,35 +367,41 @@ The following code example illustrates how to use custom texts.
 
 {% highlight js %}
 
-$("#LinearGauge1").ejLinearGauge({
-           height: 550, 
-           width: 500, 
-           labelColor: "#8c8c8c",
-           enableAnimation: false,
+ $(function () {
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
+            labelColor: "#8c8c8c",
+            enableAnimation: false,
 
-           scales: [{
-           showCustomLabels: true,
+            scales: [{
+                showCustomLabels: true,
                 //Add the pointers customization code here
                 //Add the labels customization code here
                 //Add the ticks customization code here
                 //Add the Custom labels customization code here
 
-                    customLabels: [{
-                        value: "(° C)",
-                        position: { x: 44, y: 78 },
-                        font: "Bold 12px Segoe UI", color: "#666666"
-                    }, {
-                        value: "(° F)",
-                        position: { x: 56, y: 78 },
-                        font: "Bold 12px Segoe UI", color: "#666666"
-                    },
-                    {
-                        position: { x: 51, y: 90 },
-                        font: "Bold 13px Segoe UI",
-                        color: "#666666"
-                    }] 
-           }]
+                customLabels: [{
+                    value: "(° C)",
+                    position: { x: 44, y: 78 },
+                    font: "Bold 12px Segoe UI", color: "#666666"
+                }, {
+                    value: "(° F)",
+                    position: { x: 56, y: 78 },
+                    font: "Bold 12px Segoe UI", color: "#666666"
+                },
+                {
+                    position: { x: 51, y: 90 },
+                    font: "Bold 13px Segoe UI",
+                    color: "#666666"
+                }]
+            }]
         });
+
+
+
+
+    });
 
 
 {% endhighlight %}
@@ -397,23 +420,23 @@ You can add a function to convert the temperature from Degrees to Fahrenheit val
 
 {% highlight js %}
 
-<script type="text/javascript">
 $(function () {
-$("#LinearGauge1").ejLinearGauge({
-           height: 550, 
-           width: 500, 
-           labelColor: "#8c8c8c",
-           enableAnimation: false,
-           drawLabels: "DrawLabel"});
-});
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
+            labelColor: "#8c8c8c",
+            enableAnimation: false,
+            drawLabels: "DrawLabel"
+        });
+    });
 
-function DrawLabel(args) {
-            if (args.label.index== 1) {
-                args.style.textValue = (args.label.value * (9 / 5)) + 32;
-                args.style.font = "Normal 10px Segoe UI";
-            }
+    function DrawLabel(args) {
+        if (args.label.index == 1) {
+            args.style.textValue = (args.label.value * (9 / 5)) + 32;
+            args.style.font = "Normal 10px Segoe UI";
         }
-</script>
+    }
+
 
 
 {% endhighlight %}
@@ -434,52 +457,51 @@ You can add the function that displays the current temperature value in the cust
 
 {% highlight js %}
 
-<script type="text/javascript">
-$(function () {
-$("#LinearGauge1").ejLinearGauge({
-           height: 550, 
-           width: 500, 
-           labelColor: "#8c8c8c",
-           enableAnimation: false, 
-           drawCustomLabel: "DrawCustomLabel",                 
-           drawLabels: "DrawLabel"                   
-});
-});
 
-function DrawCustomLabel(args) {
-            if (args.customLabelIndex == 2) {
-                var temp = args.scaleElement.barPointers[0].value;
-                var fahValue = (temp * (9 / 5)) + 32;
-                if (temp == -10) {
-                    args.style.textValue = "Very Cold Weather" + "(" + fahValue.toFixed(1) + "° F)";
-                }
-                else if ((temp > -10 && temp < 0) || (temp > 0 && temp < 15)) {
-                    args.style.textValue = "Cool Weather" + " (" + fahValue.toFixed(1) + "° F)";
-                }
-                else if (temp == 0) {
-                    args.style.textValue = "Freezing point of Water" + " (" + fahValue.toFixed(1) + "° F)";
-                }
-                else if (temp >= 15 && temp < 30) {
-                    args.style.textValue = "Room Temperature" + " (" + fahValue.toFixed(1) + "° F)";
-                }
-                else if (temp == 30) {
-                    args.style.textValue = "Beach Weather" + " (" + fahValue.toFixed(1) + "° F)";
-                }
-                else if (temp == 37) {
-                    args.style.textValue = "Body Temperature" + " (" + fahValue.toFixed(1) + "° F)";
-                }
-                else if (temp == 40) {
-                    args.style.textValue = "Hot Bath Temperature" + " (" + fahValue.toFixed(1) + "° F)";
-                }
-                else if (temp > 40 && temp < 100) {
-                    args.style.textValue = "Very Hot Temperature" + " (" + fahValue.toFixed(1) + "° F)";
-                }
-                else if (temp == 100) {
-                    args.style.textValue = "Boiling point of Water" + " (" + fahValue.toFixed(1) + "° F)";
-                }
+ $(function () {
+        $("#LinearGauge1").ejLinearGauge({
+            height: 550,
+            width: 500,
+            labelColor: "#8c8c8c",
+            enableAnimation: false,
+            drawCustomLabel: "DrawCustomLabel",
+            drawLabels: "DrawLabel"
+        });
+    });
+
+    function DrawCustomLabel(args) {
+        if (args.customLabelIndex == 2) {
+            var temp = args.scaleElement.barPointers[0].value;
+            var fahValue = (temp * (9 / 5)) + 32;
+            if (temp == -10) {
+                args.style.textValue = "Very Cold Weather" + "(" + fahValue.toFixed(1) + "° F)";
+            }
+            else if ((temp > -10 && temp < 0) || (temp > 0 && temp < 15)) {
+                args.style.textValue = "Cool Weather" + " (" + fahValue.toFixed(1) + "° F)";
+            }
+            else if (temp == 0) {
+                args.style.textValue = "Freezing point of Water" + " (" + fahValue.toFixed(1) + "° F)";
+            }
+            else if (temp >= 15 && temp < 30) {
+                args.style.textValue = "Room Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+            }
+            else if (temp == 30) {
+                args.style.textValue = "Beach Weather" + " (" + fahValue.toFixed(1) + "° F)";
+            }
+            else if (temp == 37) {
+                args.style.textValue = "Body Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+            }
+            else if (temp == 40) {
+                args.style.textValue = "Hot Bath Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+            }
+            else if (temp > 40 && temp < 100) {
+                args.style.textValue = "Very Hot Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+            }
+            else if (temp == 100) {
+                args.style.textValue = "Boiling point of Water" + " (" + fahValue.toFixed(1) + "° F)";
             }
         }
-</script>
+    }
 
 
 {% endhighlight %}

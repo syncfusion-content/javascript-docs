@@ -16,18 +16,22 @@ It is possible to get and set the various properties available within the contro
 The API values can be accessed/retrieved by using either of the following ways,
 
 
-```js
-1. $(“jquery-selector”).<ej-plugin-name>(“model.propertyName”);
+{% highlight js %}
+
+
+   // First way
+   $("jquery-selector").ej-plugin-name("model.propertyName");
    // Example
    $("#myDate").ejDatePicker("model.buttonText");
 
 
-2. $(“jquery-selector”).<ej-plugin-name>(“option”, “propertyName”);
+   // Second way
+   $("jquery-selector").ej-plugin-name("option", "propertyName");
    // Example
    $("#myDate").ejDatePicker("option", "buttonText");
-```
+   
 
-
+{% endhighlight %}
 
 
 ### Setting values to the API
@@ -37,41 +41,50 @@ It is possible to set new values to the properties of the Syncfusion widgets eit
 #### During Initialization
 
 
-```js
-1. $(“jquery-selector”).<ej-plugin-name>({ propertyName1 : value1, propertyName2: value2, … });
+{% highlight js %}
+
+
+   $("jquery-selector").ej-plugin-name({ propertyName1 : value1, propertyName2: value2, … });
    // Example
    $("#myDate").ejDatePicker({ value: "01/01/2015", buttonText: "Hôm nay" });
 
-```
 
-
-
+{% endhighlight %}
 
 
 #### After initialization
 
 
-```js
-1. var obj = $(“jquery-selector”).data(“<ej-plugin-name>”);  **[Recommended method]**
+{% highlight js %}
+
+
+   // First way
+   var obj = $("jquery-selector").data("ej-plugin-name");  // [RECOMMENDED METHOD]
    obj.option({ propertyName: value });
    //Example
    var dateObject = $("#myDate").data("ejDatePicker");
    dateObject.option({ buttonText: "Hôm nay" });
 
 
-2. $(“jquery-selector”).<ej-plugin-name>(“model.propertyName”, “value”);
+   // Second way
+   $("jquery-selector").ej-plugin-name("model.propertyName", "value");
    //Example
    $("#myDate").ejDatePicker("model.buttonText", "Hôm nay" );
 
 
-3. $(“jquery-selector”).<ej-plugin-name>(“option”, “propertyName”, “value”);
+   // Third way
+   $("jquery-selector").ej-plugin-name("option", "propertyName", "value");
    //Example
    $("#myDate").ejDatePicker("option", "buttonText", "Hôm nay");
 
-4. $(“jquery-selector”).<ej-plugin-name>({ propertyName : “value” });
+
+   // Fourth way
+   $("jquery-selector").ej-plugin-name({ propertyName : "value" });
    //Example
    $("#myDate").ejDatePicker({ value: "01/01/2015" });
-```
+
+
+{% endhighlight %}
 
 
 

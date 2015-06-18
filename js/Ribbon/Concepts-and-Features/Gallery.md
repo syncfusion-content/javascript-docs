@@ -47,7 +47,7 @@ To use the gallery feature, include the following properties under **tabgroups**
         <ul id="custommenu">
             <li><a>New Quick Step</a>
                 <ul>
-                    <li><a>Flag & Move</a></li>
+                    <li><a>Flag and Move</a></li>
                 </ul>
             </li>
         </ul>

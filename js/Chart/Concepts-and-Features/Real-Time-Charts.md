@@ -41,8 +41,7 @@ documentation: ug
         function AddPoint(series, count) {
             if (series.points == undefined)
                 series.points = [];
-            series.points[series.points.length] =
-                         { x: series.points.length + count, y: getRandomNum(30, 40) };
+                series.points[series.points.length] = { x: series.points.length + count, y: getRandomNum(30, 40) };
         }
         function getRandomNum(lbound, ubound) {
             return (Math.floor(Math.random() * (ubound - lbound)) + lbound);

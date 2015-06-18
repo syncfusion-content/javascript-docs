@@ -15,7 +15,11 @@ Specifies the index of the **Ribbon tab** to select the given index tab item in 
 
 {% highlight html %}
 
-
+   <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
      <div id="Ribbon"></div>
         <ul id="menu">
         <li><a>FILE</a>
@@ -63,7 +67,8 @@ Specifies the index of the **Ribbon tab** to select the given index tab item in 
         ribbonObj.option({selectedItemIndex:2});
         });
         </script>
-
+    </body>
+    <!-- ... -->
 
 {% endhighlight %}
 
@@ -92,7 +97,12 @@ The following output is displayed as a result of the above code example.
 Specifies the index or indexes to disable the corresponding tabs in the **Ribbon** control.
 
 {% highlight html %}
-
+       
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
         <li><a>FILE</a>
@@ -150,6 +160,8 @@ Specifies the index or indexes to disable the corresponding tabs in the **Ribbon
         top: -4px;
         }
         </style>
+        </body>
+	    <!-- ... -->   
 
 
 {% endhighlight %}
@@ -163,7 +175,12 @@ The following output is displayed as a result of the above code example.
  Specifies the index or indexes to enable the corresponding tabs in the **Ribbon** control.
 
 {% highlight html %}
-
+        
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
         <li><a>FILE</a>
@@ -214,6 +231,8 @@ The following output is displayed as a result of the above code example.
         });
         
         </script>
+        </body>
+	    <!-- ... -->   
         
 {% endhighlight %}
 
@@ -243,7 +262,11 @@ This method is used to hide the given text tab in the **Ribbon** control.
 
 {% highlight html %}
 
-
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
         <li><a>FILE</a>
@@ -292,6 +315,8 @@ This method is used to hide the given text tab in the **Ribbon** control.
         ribbonObj.hideTab("HOME");
         });
         </script>
+        </body>
+	    <!-- ... -->   
       
 {% endhighlight %}
 
@@ -322,7 +347,11 @@ This method is used to show the given text tab in the **Ribbon** control.
 
 {% highlight html %}
 
-
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
         <li><a>FILE</a>
@@ -372,6 +401,8 @@ This method is used to show the given text tab in the **Ribbon** control.
         ribbonObj.showTab("HOME");
         });
         </script>
+        </body>
+	    <!-- ... -->   
   
   {% endhighlight %}
   
@@ -400,7 +431,11 @@ This method is used to remove the given index tab item from the **Ribbon** contr
 
 {% highlight html %}
 
-
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
         <li><a>FILE</a>
@@ -449,6 +484,9 @@ This method is used to remove the given index tab item from the **Ribbon** contr
         ribbonObj.removeTab(2);
         });
         </script>
+        </body>
+	    <!-- ... -->   
+        
 {% endhighlight %}
 
 {% highlight css %}
@@ -474,7 +512,12 @@ The following output is displayed as a result of the above code example.
 Specifies the **width** to the **Ribbon** control.
 
 {% highlight html %}
-
+       
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
         <li><a>FILE</a>
@@ -519,6 +562,8 @@ Specifies the **width** to the **Ribbon** control.
         });
         });
         </script>
+        </body>
+	    <!-- ... -->   
         
 {% endhighlight %}
 
@@ -554,10 +599,15 @@ This method is used to add Ribbon Group dynamically in the Ribbon control. This 
 
 
 {% highlight html %}
-
+        
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
-        <li><a>FILE</a>
+        <li><a>FILE</a></li>
         </ul>
         <script type="text/javascript">
         $(function () {$("#Ribbon").ejRibbon({
@@ -601,7 +651,8 @@ This method is used to add Ribbon Group dynamically in the Ribbon control. This 
               	// Add new ribbon group with given list
               	ribbonObj.addTabGroup(1,ribbonGrp,0);    
         </script>
-      
+      </body>
+	    <!-- ... -->   
 
 {% endhighlight %}
 
@@ -627,10 +678,14 @@ This method is used to add group content dynamically in the ribbon. This method 
 
 {% highlight html %}
 
-
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
     <div id="Ribbon"></div>
     <ul id="menu">
-    <li><a>FILE</a>
+    <li><a>FILE</a></li>
     </ul>
     <script type="text/javascript">
     $(function () {
@@ -667,7 +722,9 @@ This method is used to add group content dynamically in the ribbon. This method 
             // Add new ribbon content with given list
             ribbonObj.addTabGroupContent(1, 0, 0, content, 2);
         </script>
-
+        </body>
+	    <!-- ... -->   
+        
 {% endhighlight %}
 
 
@@ -686,17 +743,21 @@ The following output is displayed as a result of the above code example.
 
 {% highlight html %}
 
-
+  <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
-        <li><a>FILE</a>
+        <li><a>FILE</a></li>
         </ul>
         <div id="paste" style="height:40px;width:43px;">Paste</div>
         <script type="text/javascript">
         $(function () {
         $("#Ribbon").ejRibbon({
         width: "800px",
-        applicationTab: { Type: "ApplicationMenu", itemID: "menu},
+        applicationTab: { Type: "ApplicationMenu", itemID: "menu"},
         tabs: [
         {
         id: "insert", text: "INSERT", groups: [{
@@ -708,7 +769,9 @@ The following output is displayed as a result of the above code example.
         ribbonObj.collapse();
         });
         </script>
-
+        </body>
+	    <!-- ... -->      
+        
 {% endhighlight %}
 
 The following screenshot displays the output of the above code example.
@@ -725,10 +788,14 @@ The following screenshot displays the output of the above code example.
 
 {% highlight html %}
 
-
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
-        <li><a>FILE</a>
+        <li><a>FILE</a></li>
         </ul>
         <div id="paste" style="height:40px;width:43px;">Paste</div>
         <script type="text/javascript">
@@ -747,7 +814,9 @@ The following screenshot displays the output of the above code example.
         ribbonObj.expand();
         });
         </script>
-
+        </body>
+	    <!-- ... -->   
+        
 {% endhighlight %}
 
 
@@ -768,10 +837,14 @@ This method is used to add tab dynamically in the Ribbon control. This method re
 
 {% highlight html %}
 
-
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
-        <li><a>FILE</a>
+        <li><a>FILE</a></li>
         </ul>
         <div id="paste" style="height:40px;width:43px;">Paste</div>
         <div id="newtab" style="height:35px;width:43px;">AddTab</div>
@@ -795,6 +868,8 @@ This method is used to add tab dynamically in the Ribbon control. This method re
          ribbonObj.addTab("AddTab", tabGroup, 2);
                 });
             </script>
+        </body>
+	    <!-- ... -->   
 
 {% endhighlight %}
 
@@ -811,15 +886,16 @@ This method is used to add contextual tabs dynamically.This method has two argum
 * **Index**: Index in which the tab is to be added.It is optional argument. When this argument is not given, by default the tab is added at the last position.
 
 
-
-
-
 {% highlight html %}
 
-
+    <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
         <div id="Ribbon"></div>
         <ul id="menu">
-        <li><a>FILE</a>
+        <li><a>FILE</a></li>
         </ul>
         <div id="paste" style="height:40px;width:43px;">Paste</div>
         <div id="design">ContextualTab</div>
@@ -850,7 +926,8 @@ This method is used to add contextual tabs dynamically.This method has two argum
                     ribbonObj.addContextualTabs(contextualTab, 2);
                 });
             </script>
-
+        </body>
+	<!-- ... -->   
 
 {% endhighlight %}
 

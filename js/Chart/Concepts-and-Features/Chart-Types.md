@@ -1169,10 +1169,9 @@ To create simple **RadarSeries** use the following code example.
             series: [{
                 points: [
                     { x: '1990', y: 10 }, { x: '1991', y: 3 },
-                { x: '1992', y: 20 },
-                { x: '1993', y: 16 }, { x: '1994', y: 10 },
-                 { x: '1995', y: 18 },
-                { x: '1996', y: 16 }, { x: '1997', y: 15 }
+                    { x: '1992', y: 20 }, { x: '1993', y: 16 }, 
+                    { x: '1994', y: 10 }, { x: '1995', y: 18 },
+                    { x: '1996', y: 16 }, { x: '1997', y: 15 }
                 ],
                 name: 'India', enableAnimation: true, type: 'radar',
                 border: { width: 2, color: 'black' }, drawType: 'area'

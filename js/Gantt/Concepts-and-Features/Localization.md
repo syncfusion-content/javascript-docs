@@ -15,7 +15,6 @@ Localization is the key feature that provides solutions to global customers with
 
 The following **UIs** are provided to localize based on culture. The default English Localization UIs are listed as follows:
 
-_Localization_
 
 <table>
 <tr>
@@ -58,8 +57,22 @@ baselineEndDate: "Baseline End Date"
 </td></tr>
 <tr>
 <td>
-Edit Dialog Texts:addFormTitleeditFormTitlesaveButtoncancelButton</td><td>
-editDialogTexts: {     addFormTitle: "New Task",     editFormTitle: "Edit Task",     saveButton: "Save",     cancelButton: "Cancel" },</td></tr>
+<b>Edit Dialog Texts:</b><br>
+addFormTitle<br/>
+editFormTitle<br/>
+saveButton<br/>
+cancelButton<br/>
+</td><td>
+{% highlight js %}
+editDialogTexts: 
+{
+addFormTitle: "New Task",
+editFormTitle: "Edit Task",
+saveButton: "Save",
+cancelButton: "Cancel"
+}
+{% endhighlight %}
+</td></tr>
 <tr>
 <td>
 Date Format</td><td>
@@ -180,9 +193,9 @@ Refer the external dependency to support localization
 
 
 
-The following screenshot shows **Gantt** with French culture.
+The following screenshot shows Gantt with French culture.
 
 {% include image.html url="/js/Gantt/Concepts-and-Features/Localization_images/Localization_img1.png" Caption=""%}
 
-_Localization_
+
 

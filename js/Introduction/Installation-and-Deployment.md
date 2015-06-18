@@ -63,13 +63,13 @@ The location mentioned below is the root **JavaScript** folder which contains tw
 
 The **assets** folder comprises of all the minified versions of the external and common Scripts, StyleSheets and TypeScript files under their corresponding folders. It mainly includes 4 sub-folders namely,
 
->* Css
+  * Css
 
->* External
+  * External
 
->* Scripts
+  * Scripts
 
->* TypeScript
+  * TypeScript
 
 
 
@@ -141,27 +141,13 @@ The steps to download and configure the Syncfusion Nuget Packages in Visual Stud
 
 * In Visual Studio, navigate to **Tools** -> **Library Package Manager** -> **Package Manager Settings**, the **Options** pop-up will appear on the screen as below,
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
-{:.image }
-
-    Package Manager Settings pop-up
-{:.caption }
+{% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img1.png" Caption="Package Manager Settings pop-up"%}
 
 
+* Select **Package Manager** -> **Package Sources** in the above pop-up and click on the 
+{% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img2.png" %} button to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
 
-
-* Select **Package Manager** -> **Package Sources** in the above pop-up and click on the ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
-{:.image }
-
-
-{:.caption }button to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
-
-![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
-{:.image }
-
-    Package Manager Settings pop-up with selected Nuget Package
-{:.caption }
-
+{% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img3.png" Caption="Package Manager Settings pop-up with selected Nuget Package"%}
 
 
 
@@ -173,13 +159,7 @@ The steps to download and configure the Syncfusion Nuget Packages in Visual Stud
 
 * Now click the **Add** button and the package name will be listed in the **Available package sources** list as shown below and then Click **OK**.
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
-{:.image }
-
-    Package Manager Settings pop-up with new Nuget Package added
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img4.png" Caption="Package Manager Settings pop-up with new Nuget Package added"%}
 
 
 The configuration part of Syncfusion JavaScript Nuget packages ends here and now you can proceed with its installation part while using it in your application (which will be described in the Getting Started section).

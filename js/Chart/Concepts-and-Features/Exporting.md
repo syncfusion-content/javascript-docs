@@ -15,9 +15,9 @@ The **EJChart** supports client-side exporting using **canvg** script. **canvg**
 
 {% highlight html %}
 
-    <img src="../images/chart/export.png" onclick="onExport()" title="Export Chart" style="float: right" />
-    <div id="container"></div>
-    <canvas id="canvas2" style="display: none"></canvas>
+<img src="../images/chart/export.png" onclick="onExport()" title="Export Chart" style="float: right" />
+<div id="container"></div>
+<canvas id="canvas2" style="display: none"></canvas>
 
 {% endhighlight %}
 

@@ -13,6 +13,11 @@ documentation: ug
 
 {% highlight html %}
 
+     <!-- ... -->
+    <head>
+    </head>
+    <!-- ... -->
+    <body>
      <div id="defaultRibbon"></div>    
      <ul id="ribbonmenu">
                <li><a>FILE</a>
@@ -98,6 +103,8 @@ documentation: ug
             });
         });
     </script>
+    </body>
+    <!-- ... -->
 
 
 {% endhighlight %}
