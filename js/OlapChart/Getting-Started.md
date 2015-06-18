@@ -7,23 +7,23 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Getting Started
+##Getting Started
 
 This section explains briefly about how to create an **OLAP Chart** in your application with **JavaScript.**
 
-**Control Structure**
+###Control Structure
 
 The following screen shot shows the **OLAP Chart** for **JavaScript**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Chart"%}
 
-**Syncfusion OLAP Controls – Architecture**
+###Syncfusion OLAP Controls – Architecture
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img2.png" Caption="OLAP Controls Architecture"%}
 
 The architecture gives a clear idea about how the control rendering takes place at client-side and all other analytical operations on each action takes place at the server-side.
 
-**Service for OLAP Controls**
+###Service for OLAP Controls##
 
 The primary reasons for using service in an **OLAP** processing are as follows:
 
@@ -52,7 +52,7 @@ When you perform any operation such as drill up/down, filtering, sorting etc., y
 Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again. 
 This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
 
-**Create an application**
+###Create an application
 
 This section encompasses on how to configure an **OLAP Chart** component in an application. You can also learn how to pass the required data to **OLAP Chart** and to customize its various options according to your requirements. 
 
@@ -64,7 +64,7 @@ Open Visual Studio and create a new project by clicking **New Project**. Select 
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img4.png" Caption="Project Creation Wizard"%}
 
-**Create HTML Page**
+###Create HTML Page
 
 To create a new web form in the application, right-click on the project and select **Add**. The following screen shot shows the Add New Item Wizard.
 
@@ -72,9 +72,9 @@ To create a new web form in the application, right-click on the project and sele
 
 Click **New Item** and select **HTML Page** from the listed templates. Name the page as **default.html** and click **OK**.
 
-**Add References, Scripts, Styles and Control in HTML page**
+###Add References, Scripts, Styles and Control in HTML page
 
-**Add References**
+####Add References
 
 In the **Solution Explorer**, right-click the **References** folder, then click **Add Reference**.
 
@@ -98,7 +98,7 @@ Select the following assemblies:
 
 Click **OK**.
 
-**Add Scripts and Styles** 
+####Add Scripts and Styles 
 
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
@@ -114,7 +114,7 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 {% endhighlight %}
 
-**Add Control in HTML page**
+####Add Control in HTML page
 
 Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
@@ -137,9 +137,9 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 {% endhighlight %}
 
-**Add WCF service for OLAP Chart**
+###Add WCF service for OLAP Chart
 
-**Create WCF Services**
+####Create WCF Services
 
 1.Right-click the project, select **Add > New Folder**.  Name the folder as **WCF.**
 
@@ -149,7 +149,7 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img8.png" Caption="Adding WCF service"%}
 
-**Add service methods inside Interface**
+####Add service methods inside Interface
 
 Add the following code sample inside the **IOlapChartService** interface available in the **IOlapChartService.cs** file.
 
@@ -172,7 +172,7 @@ Add the following code sample inside the **IOlapChartService** interface availab
     }
 {% endhighlight %}
 
-**Add Namespaces**
+####Add Namespaces
 
 Add the following namespaces to implement the service methods.
 
@@ -203,7 +203,7 @@ using System.Web.Script.Serialization;
 
 {% endhighlight %}
 
-**Create Class in Service file**
+####Create Class in Service file
 
 Create the **OlapChartService** class to implement the service methods. Inherit the class from **IOlapChartService** interface, which is created automatically when any new service is added.
 
@@ -225,7 +225,7 @@ namespace **WebApplication2**
 
 {% endhighlight %}
 
-**Implement Service Methods**
+####Implement Service Methods
 
 Add the following methods to the service, which is invoked during any server-side operations performed in **OLAP Chart**.
 
@@ -325,7 +325,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-**Configuring Web.Config**
+####Configuring Web.Config
 
 * You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is "**WebApplication2.OlapChartService**" where "**OlapChartService**" is the service class name and “**WebApplication2**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
 

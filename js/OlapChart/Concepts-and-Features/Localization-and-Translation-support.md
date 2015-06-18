@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-### Localization and Translation support
+##Localization and Translation support
 
 **Localization** is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, data is displayed in a language and culture specific to a particular country or region. The **JavaScript OlapChart** control provides inherent support to localize its UI.
 
@@ -74,7 +74,6 @@ RenderingFailed</td><td>
 "Rendant pas "</td></tr>
 </table>
 
-
 The following code example shows how to localize **OlapChart’s User Interface** (UI) based on “French” culture.
 
 {% highlight js %}
@@ -111,7 +110,7 @@ The following code example shows how to localize **OlapChart’s User Interface*
 
    2. _**OLAP Cube**_
 
-**Localizing Control Information**
+###Localizing Control Information
 
 To apply control side localization, refer the following code example:
 
@@ -124,7 +123,7 @@ ej.olap.OlapChart.locale["zh-CN"] = {
 
 {% endhighlight %}
 
-**Localizing Cube Information**
+###Localizing Cube Information
 
 To get the localized Cube information, “_Locale__Identifier"_ has to be set in the connection string:
 

@@ -7,11 +7,11 @@ control: OLAP Chart
 documentation: ug
 ---
 
-### Data Binding
+##Data Binding
 
 **OLAP Chart** control enables you to retrieve multidimensional data either from **SSAS** or from any **XML/A** provider and present the OLAP information in a meaningful way.
 
-#### SSAS
+###SSAS
 
 **Binding OLAP Chart to an Offline Cube**
 
@@ -36,7 +36,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-#### XML/A
+###XML/A
 
 **XML for Analysis** (XML/A) is a standard that allows the client applications to transfer multi-dimensional or OLAP data sources from an OLAP Server that is available online. The back and forth communication is done using the web standards – HTTP, SOAP, and XML. The query language used is MDX, which is most widely supported for reporting from multi-dimensional data stores.
 
