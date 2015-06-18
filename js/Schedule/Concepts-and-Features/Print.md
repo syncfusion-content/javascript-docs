@@ -60,27 +60,13 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![](Print_images/Print_img1.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _121__: Schedule with print button_
+ {% include image.html url="/js/Schedule/Print_images/Print_img1.png" Caption="schedule with print button."%}
 
 Click the print button to render the following output.
 
 
+{% include image.html url="/js/Schedule/Print_images/Print_img2.png" Caption="schedule with Print window."%}
 
-![](Print_images/Print_img2.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _122__: Schedule with Print window_
 
 **Appointment Print**
 
@@ -128,28 +114,9 @@ _Figure_ _122__: Schedule with Print window_
 * Right click on the appointment and select print appointment in the context menu as follows.
 
 
-
-![](Print_images/Print_img3.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _123__: Schedule with Print option in Context Menu_
+{% include image.html url="/js/Schedule/Print_images/Print_img3.png" Caption="schedule with Print option in Context Menu."%}
 
 * Now, the widow is promoted to new document with appointment details and print window opens.
 
-
-
-![](Print_images/Print_img4.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _124__: Schedule with Appointment Print_
-
-
+{% include image.html url="/js/Schedule/Print_images/Print_img4.png" Caption="schedule with Appointment Print."%}
 

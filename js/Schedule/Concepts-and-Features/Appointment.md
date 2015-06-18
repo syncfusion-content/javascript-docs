@@ -17,34 +17,33 @@ documentation: ug
 
 The following code example explains how to enable **ReadOnly** property in the Schedule control.  
 
+{% highlight html %}
 
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-// Enables the readOnly property to the schedule
-**readOnly:true,**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-<\script>
-
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            // Enables the readOnly property to the schedule
+            readOnly:true,
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 {% endhighlight %}
 
@@ -52,16 +51,7 @@ recurrenceRule: "RecurrenceRule"
 
 The following screenshot displays the **Schedule** control with ReadOnly property set to true,
 
-![C:/Users/maheshp/Pictures/sshot-3.png](Appointment_images/Appointment_img1.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure 1: Schedule with Read Only property_
-
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img1.png" Caption="schedule with Read Only property."%}
 
 
 
@@ -80,27 +70,11 @@ _Figure 1: Schedule with Read Only property_
 The following screenshot displays the appointment window filled with the specific details like start & end time that opens while double-clicking on the specific cells.
 
 
-
-![](Appointment_images/Appointment_img2.png)
-{:.image }
-
-Figure 53: schedule with Appointment creation
-{:.caption }
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img2.png" Caption="schedule with Appointment creation."%}
 
 * When you fill the other details like Subject, Description and the recurrence details manually as per your requirements click **Done** to save the appointment details. The **Schedule** control is displayed as follows.
 
-
-
-![](Appointment_images/Appointment_img3.png)
-{:.image }
-
-Figure 54: schedule with Appointment saved in the cell.
-{:.caption }
-
-
-
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img3.png" Caption="schedule with Appointment saved in the cell."%}
 
 
 **Using quick appointment window**
@@ -109,32 +83,16 @@ Figure 54: schedule with Appointment saved in the cell.
 
 * You can open the normal appointment window while the quick window is in open state by choosing the “Detailed” option present within the quick appointment window.The quick appointment window is displayed as follows.
 
-
-
-![](Appointment_images/Appointment_img4.png)
-{:.image }
-
-Figure 57: schedule with appointment creation using quick appointment window 
-{:.caption }
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img4.png" Caption="schedule with appointment creation using quick appointment window ."%}
 
 
 * When the appointment is saved, the **Schedule** control displays the created appointment as follows,
 
-![](Appointment_images/Appointment_img5.png)
-{:.image }
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img5.png" Caption="schedule with appointment saved using quick appointment window."%}
 
-Figure 58: schedule with appointment saved using quick appointment window 
-{:.caption }
-
-
-
-
-{% highlight text %}
 
 > _**Important: We have a property named showQuickWindow that accepts Boolean value and set as true by default. When this property is set to false, it prevents the display of quick appointment window while single clicking on the Schedule cells or appointments. Thus the functionality of showing/hiding this quick window from the user depends on the value of this particular property.**_
 
-
-{% endhighlight %}
 
 
 
@@ -147,16 +105,7 @@ Figure 58: schedule with appointment saved using quick appointment window
 The following screenshot displays the **Context****menu** with a “**New Appointment**” option that is opened when you right-click on the cells.
 
 
-
-![](Appointment_images/Appointment_img6.png)
-{:.image }
-
-Figure 59: schedule with new appointment using context menu.
-{:.caption }
-
-
-
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img6.png" Caption="schedule with new appointment using context menu."%}
 
 
 ## Appointment Editing
@@ -167,21 +116,12 @@ Figure 59: schedule with new appointment using context menu.
 
 The following screenshot depicts the edit appointment window with its filled-in details.
 
-![](Appointment_images/Appointment_img7.png)
-{:.image }
-
-Figure 61: schedule with Normal appointment Editing
-{:.caption }
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img7.png" Caption="schedule with Normal appointment Editing."%}
 
 
 * In the above image, the end time has been changed from 8.00 AM to 7.00 AM, and once the changes are done, click the **Done** button. The appointment duration is changed and looks as follows.
 
-![](Appointment_images/Appointment_img8.png)
-{:.image }
-
-Figure 62: schedule with Edited Normal appointment saved
-{:.caption }
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img8.png" Caption="schedule with Edited Normal appointment saved."%}
 
 **Using quick appointment window**
 
@@ -191,63 +131,27 @@ Figure 62: schedule with Edited Normal appointment saved
 
 The following screenshot displays the **Schedule** control with the quick appointment window with edit options when you click on a particular appointment.
 
-
-
-![](Appointment_images/Appointment_img9.png)
-{:.image }
-
-Figure 63: schedule with editing appointment using quick appointment window.
-{:.caption }
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img9.png" Caption="schedule with editing appointment using quick appointment window."%}
 
 
 * Click on the **Edit Appointment** option to open the edit appointment window as follows.
 
-
-![](Appointment_images/Appointment_img10.png)
-{:.image }
-
-Figure 64: schedule with open the editing appointment window
-{:.caption }
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img10.png" Caption="schedule with open editing appointment window."%}
 
 
 * In the above screenshot, the end-time is changed to 8.00 AM from 7.00 AM. Once it is saved, the above appointment is displayed in the Schedule as displayed in the following screenshot.
 
-
-
-![](Appointment_images/Appointment_img11.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _65__:____schedule with_ _open the editing appointment window_
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img11.png" Caption="schedule with open  editing appointment window."%}
 
 **Using Context menu**
 
 * To edit the appointments using context menu option, right-click on the appointment to be edited and then select **Open Appointment** option from the context menu that pops up as displayed in the following screenshot.
 
-![](Appointment_images/Appointment_img12.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _66__:___ _schedule with_ _open appointment using context menu._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img12.png" Caption="schedule with open appointment using context menu."%}
 
 * The following screenshot displays the **Edit Appointment** window that opens when you click **Open****Appointment** option.
 
-
-
-![](Appointment_images/Appointment_img13.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _67__:____schedule with_ _display the edit appointment window._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img13.png" Caption="schedule with display the edit appointment window."%}
 
 * Click **Done** button to save the updated values.
 
@@ -259,46 +163,18 @@ _Figure_ _67__:____schedule with_ _display the edit appointment window._
 
 * The delete option is available in the quick appointment window which will be opened when you single-click the appointments. To delete an appointment, click on the required appointment and then click the delete icon present in the quick appointment window as follows.
 
-
-
-![](Appointment_images/Appointment_img14.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _69__:____schedule with_ _Appointment deletion._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img14.png" Caption="schedule with Appointment deletion."%}
 
 * When you click the delete icon, the appointment is deleted as displayed in the following screenshot.
 
 
-
-![](Appointment_images/Appointment_img15.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _70__:____schedule with_ _after the appointment deletion._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img15.png" Caption="schedule with after the appointment deletion."%}
 
 **Using Context menu**
 
 * To delete the appointments using **Context menu** option, select the **Delete Appointment** from the context menu that pops up when you right-click the appointment to be deleted. It is displayed in the following screenshot.
 
-
-
-![](Appointment_images/Appointment_img16.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _71__:____schedule with_ _appointment deletion using context menu._
-
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img16.png" Caption="schedule with appointment deletion using context menu."%}
 
 ## All-day Appointments
 
@@ -306,25 +182,11 @@ _Figure_ _71__:____schedule with_ _appointment deletion using context menu._
 
 * The **All-day** appointments denotes that it is scheduled for the entire day and normally rendered in the allday row that is present above all the workcells.Check the “**All-day**” checkbox in the appointment window as follows.
 
-
-
-![](Appointment_images/Appointment_img17.png)
-{:.image }
-
-Figure 55: schedule with All day Appointment creation.
-{:.caption }
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img17.png" Caption="schedule with All day Appointment creation."%}
 
 * Save the appointment so that the All-day appointment will be displayed in the **All-day** row as follows.
 
-![](Appointment_images/Appointment_img18.png)
-{:.image }
-
-  Figure 56: schedule with All day Appointment saved in the cell.
-{:.caption }
-
-
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img18.png" Caption="schedule with All day Appointment saved in the cell."%}
 
 ## Appointment Resizing
 
@@ -337,33 +199,34 @@ Figure 55: schedule with All day Appointment creation.
 The following code explains how the appointment resizing option is enabled for the **Schedule** control.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="Schedule1"> </div>
-<script>
 $(function () {
-var dManager =   
-            ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        var dManager =   
+                    ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
         $("#Schedule1").ejSchedule({
-                    width: "100%",
-                    height: "525px",
+            width: "100%",
+            height: "525px",
                     **enableAppointmentResize: true,**
-                    appointmentSettings: {
-                        dataSource: dManager,
-                        id: "Id",
-                        subject: "Subject",
-                        startTime: "StartTime",
-                        endTime: "EndTime",
-                        allDay: "AllDay",
-                        recurrence: "Recurrence",
-                        recurrenceRule: "RecurrenceRule"
-                    }
-                });
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
     });
-</script>
 
 
 {% endhighlight %}
@@ -372,30 +235,12 @@ var dManager =
 
 * In the following screenshot of the **Schedule** control, the appointment with the Subject **Daily Planet** is hovered for resizing.And you can see the resizing handle at both the ends of the appointment.
 
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img19.png" Caption="schedule with appointment resize."%}
 
-
-![](Appointment_images/Appointment_img19.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _75__:____schedule with_ _appointment resize._
 
 * Once the resizing is stopped, the resized appointment with its new start time is displayed as follows.
 
-
-
-![](Appointment_images/Appointment_img20.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _76__:____schedule with_ _after the appointment resized._
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img20.png" Caption="schedule with after the appointment resized."%}
 
 
 ## Appointment Search
@@ -422,52 +267,53 @@ Use the following code example to search the appointment on the schedule datasou
 
 
 
-{% highlight js %}
-
+{% highlight html %}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Refer the necessary scripts here-->
+    <!-- Refer the necessary scripts here-->
 </head>
 <body>
-<input id="txtSearch" type="text" />
-<input id="btnSearch" class="searchApp" type="button" value="Search" />
-<div style="float: left" id="Schedule1">
-<div id="grid1">
-</div>
-<div id="Schedule1"> </div>
-<script type="text/javascript">
-$(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-// Add the necessary schedule properties here
-});
-// To bind the click event to the button
-$('.searchApp').bind("click", function () {
-var _searchString = $("#txtSearch").val();
-var schObj = $("#Schedule1").data("ejSchedule");
-// method to retrieve the appointment based on search string
-var result = **schObj.searchAppointments(_searchString);**
-showResult(result, _searchString);
-});
-});
-// method to show the result in a grid
-function showResult(list, _searchString) {
-if (!ej.isNullOrUndefined(list) && list.length != 0 && _searchString != "") {
-$("#grid1").show();
-$("#grid1").data("ejGrid") && $("#grid1").ejGrid("destroy");
-$("#grid1").ejGrid({
-allowScrolling: true,
-dataSource: list,
-allowPaging: true
-});
-}
-}
-</script>
+    <input id="txtSearch" type="text" />
+    <input id="btnSearch" class="searchApp" type="button" value="Search" />
+    <div style="float: left" id="Div1">
+        <div id="grid1">
+        </div>
+        <div id="Schedule1"></div>
 </body>
 </html>
+{% endhighlight %}
 
+{% highlight js %}
+
+
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            // Add the necessary schedule properties here
+        });
+        // To bind the click event to the button
+        $('.searchApp').bind("click", function () {
+            var _searchString = $("#txtSearch").val();
+            var schObj = $("#Schedule1").data("ejSchedule");
+            // method to retrieve the appointment based on search string
+            var result = schObj.searchAppointments(_searchString);
+            showResult(result, _searchString);
+        });
+    });
+    // method to show the result in a grid
+    function showResult(list, _searchString) {
+        if (!ej.isNullOrUndefined(list) && list.length != 0 && _searchString != "") {
+            $("#grid1").show();
+            $("#grid1").data("ejGrid") && $("#grid1").ejGrid("destroy");
+            $("#grid1").ejGrid({
+                allowScrolling: true,
+                dataSource: list,
+                allowPaging: true
+            });
+        }
+    }
 
 
 {% endhighlight %}
@@ -476,29 +322,12 @@ allowPaging: true
 
 Execute the above code to render the following output.
 
-![](Appointment_images/Appointment_img21.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _125__: Schedule with appointment search_
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img21.png" Caption="schedule with appointment search."%}
 
 
 * After placing the cursor in search box, type the text that you want to search (for example here it is typed as “what”) in the schedule datasource, the grid renders with search result as follows.
 
-
-
-![](Appointment_images/Appointment_img22.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _126__: Grid with appointment search result_
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img22.png" Caption="schedule with appointment search result."%}
 
 **Using Filters**
 
@@ -508,61 +337,61 @@ _Figure_ _126__: Grid with appointment search result_
 
 
 
-{% highlight js %}
-
+{% highlight html %}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Refer the necessary scripts here-->
+    <!-- Refer the necessary scripts here-->
 </head>
 <body>
-<input id="btnSearch" class="searchApp" type="button" value="Search" />
-<div style="float: left" id="Schedule1">
-<div id="grid1">
-</div>
-<div id="Schedule1"> </div>
-<script type="text/javascript">
-$(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-// Add the necessary schedule properties here
-});
-// Method to bind the button click event
-$('.searchApp').bind("click", function () {
-// Add the filter data as like in the below format
-var filter=[{
-field: "Subject",
-operator: "contains",
-value: "gold",
-predicate: "or"
-},{field: "Subject",
-operator: "contains",
-value: "what",
-predicate: "or"
-}];
-var schObj = $("#Schedule1").data("ejSchedule");
-// Method to get the Filtered appointment
-var result = **schObj.filterAppointments(filter);**
-showResult(result);
-});
-});
-// method to show the result in a grid
-function showResult(list) {
-if (!ej.isNullOrUndefined(list) && list.length != 0) {
-$("#grid1").show();
-$("#grid1").data("ejGrid") && $("#grid1").ejGrid("destroy");
-$("#grid1").ejGrid({
-dataSource: list,
-allowPaging: true,
-});
-}
-}
-</script>
+    <input id="btnSearch" class="searchApp" type="button" value="Search" />
+    <div style="float: left" id="Div1">
+        <div id="grid1">
+        </div>
+        <div id="Div2"></div>
 </body>
 </html>
 
+{% endhighlight %}
 
+{% highlight js %}
+
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            // Add the necessary schedule properties here
+        });
+        // Method to bind the button click event
+        $('.searchApp').bind("click", function () {
+            // Add the filter data as like in the below format
+            var filter=[{
+                field: "Subject",
+                operator: "contains",
+                value: "gold",
+                predicate: "or"
+            },{field: "Subject",
+                operator: "contains",
+                value: "what",
+                predicate: "or"
+            }];
+            var schObj = $("#Schedule1").data("ejSchedule");
+            // Method to get the Filtered appointment
+            var result = schObj.filterAppointments(filter);
+            showResult(result);
+        });
+    });
+    // method to show the result in a grid
+    function showResult(list) {
+        if (!ej.isNullOrUndefined(list) && list.length != 0) {
+            $("#grid1").show();
+            $("#grid1").data("ejGrid") && $("#grid1").ejGrid("destroy");
+            $("#grid1").ejGrid({
+                dataSource: list,
+                allowPaging: true,
+            });
+        }
+    }
 
 {% endhighlight %}
 
@@ -570,65 +399,50 @@ allowPaging: true,
 
 Execute the above code to render the following output.
 
-![](Appointment_images/Appointment_img23.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _127__: Schedule with search appointment filters_
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img23.png" Caption="schedule with search appointment filters."%}
 
 * Click the search button to enable the filter option.
 
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img24.png" Caption="schedule with appointment search result."%}
 
-
-![](Appointment_images/Appointment_img24.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _128__: Grid with appointment search result_
 
 ## Drag and Drop
-
-
 
 * You can enable/disable the drag and drop functionality by setting ‘true’ or ‘false’ for the **allowDragDrop** property. By default it is set to ‘**true’**. 
 
 * When you drag and drop the appointment to the new location, the starttime and endtime of the appointment gets changed automatically.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
 
 {% highlight js %}
 
-
-<div id="Schedule1"> </div>
-<script>
 $(function () {
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-**allowDragDrop: true,**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-currentDate: new Date (2014,4,5),
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            allowDragDrop: true,
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                currentDate: new Date (2014,4,5),
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 {% endhighlight %}
@@ -637,42 +451,16 @@ recurrenceRule: "RecurrenceRule"
 
 * In the following screenshot, the **Schedule** control is displayed with the appointments in an order before the drag and drop action takes place.
 
-
-
-![](Appointment_images/Appointment_img25.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _72__:____schedule with_ _appointment drag and drop._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img25.png" Caption="schedule with appointment drag and drop."%}
 
 * When the appointment with the Subject “**Daily Planet**” is being dragged from its original location, it looks as the one following screenshot with the shadow of the appointment casting behind it.
 
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img26.png" Caption="schedule with appointment while dragging in the cell."%}
 
-
-![](Appointment_images/Appointment_img26.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _73__:____schedule with_ _appointment while dragging in the cell._
 
 * The following screenshot displays the appointment with the subject “**Daily Planet**” in the timeline 1.00 AM – 2.00 AM (02 May, 2014) is dropped to the new location to the date 29th April, 2014 in the timeline between 3.00 AM – 4.00 AM.
 
-
-
-![](Appointment_images/Appointment_img27.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _74__:___ _schedule with_ _appointment dropped in the cell._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img27.png" Caption="schedule with appointment dropped in the cell."%}
 
 
 
@@ -688,64 +476,24 @@ _Figure_ _74__:___ _schedule with_ _appointment dropped in the cell._
 
 * To create a recurrence appointment, you can select (check) the **repeat** option in the normal appointment window else you can select the **New Recurring Appointment** option from the **Context****menu** that pops up when you right-click on the **Schedule** cells as follows.
 
-![](Appointment_images/Appointment_img28.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _77__:____schedule with_ _new recurrence appointment._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img28.png" Caption="schedule with new recurrence appointment."%}
 
 * On clicking the **New Recurring Appointment** option opens the recurrence appointment window as displayed in the following screenshot.
 
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img29.png" Caption="schedule with creating the new recurrence."%}
 
-
-![](Appointment_images/Appointment_img29.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _78__:____schedule with_ _creating the new recurrence._
 
 * Once the required options are selected in the recurrence window click the **Done** button.It navigates you to its parent window with the appointment details. Fill-in those required details and click **Done** to save it.
 
 
-
-![](Appointment_images/Appointment_img30.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _79__:____schedule with_ _after created the new recurrence._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img30.png" Caption="schedule with after created the new recurrence."%}
 
 * The recurrence appointment after getting saved to the Schedule is displayed as follows.
 
-![](Appointment_images/Appointment_img31.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _80__:____schedule with_ _after created the new recurrence appointment in week view._
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img31.png" Caption="schedule with after created the new recurrence appointment in week view."%}
 
 * Since, you have chosen the option to end the recurrence after 10 occurrences on daily basis, the appointments repeat for continuous 10 days and then end. 
 
 * This is viewed clearly by navigating to the month view, where the appointment with subject **Automated testing** saved for 10 days from 12 Aug 2014 to 21 Aug 2014.
 
-
-
-![](Appointment_images/Appointment_img32.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _81__:  schedule with created recurrence appointment in month view._
-
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img32.png" Caption="schedule with created recurrence appointment in month view."%}

@@ -101,15 +101,7 @@ documentation: ug
 
 * The output for the above code is as follows that displays the appointment with the template defined for it.
 
-![](Template_images/Template_img1.png)
-{:.image }
-
-
-{:.caption }
-
-
-___Figure_ _82__:____schedule with_ _template._
-
+{% include image.html url="/js/Schedule/Template_images/Template_img1.png" Caption="schedule with template."%}
 
 
 ## Resource Header Template
@@ -223,24 +215,16 @@ ___Figure_ _82__:____schedule with_ _template._
 
 {% endhighlight %}
 
-{% highlight text %}
+
 
 > _**Important: The above used images should be present in a separate images folder, so that it will be referred properly.The images name should be saved with id as same as given in the resourceSettings inorder to set unqiue images to all resources.**_
-
-
-{% endhighlight %}
-
 
 
 * The output for the above code which displays the resource with the template defined for it is given below.
 
 
+{% include image.html url="/js/Schedule/Template_images/Template_img2.png" Caption="schedule with Resources header template."%}
 
-![C:/Users/karthigeyan/Desktop/a.png](Template_images/Template_img2.png)
-{:.image }
-
-
-{:.caption }
 
 
 

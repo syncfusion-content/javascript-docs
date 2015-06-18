@@ -17,24 +17,24 @@ documentation: ug
 
 **ej-DigitalGauge** is the control tag, where ej is tag prefix and **DigitalGauge** is the control name.**Digital Gauge** is rendered with the following code example.
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Digital gauge-->
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-<!—Refer the necessary script here-->
+    <!—Refer the necessary script here-->
 </head>
 <body ng-controller="DigitalGauge">
-<ej-DigitalGauge id="digitalCore" e-height="500" e-load="loadGaugeTheme">
-</ej-DigitalGauge>
-<script type="text/javascript">
-<!—binding the value to the scope variables in application controller-->
-angular.module('syncApp', ['ejangular'])
-.controller('DigitalGauge', function ($scope) {
-$scope.nvalue = “text”;
-});
-</script>
+    <ej-digitalgauge id="digitalCore" e-height="500" e-load="loadGaugeTheme">
+</ej-digitalgauge>
+    <script type="text/javascript">
+        <!—binding the value to the scope variables in application controller-->
+        angular.module('syncApp', ['ejangular'])
+        .controller('DigitalGauge', function ($scope) {
+            $scope.nvalue = “text”;
+        });
+    </script>
 
 </body>
 </html>
@@ -54,10 +54,10 @@ Execute the above code to render the following output.
 
 **Example**: e-position-x. 
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Digital gauge-->
-<ej-DigitalGauge id="digitalCore">
+<ej-digitalgauge id="digitalCore">
 <!--Adding Item collection to the digital gauge-->
 <e-items>
 <e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
@@ -65,7 +65,7 @@ e-value="Syncfusion" e-characterSetting-opacity="0.8"
 e-position-x="52" e-position-y="52">
 </e-item>
 </e-items>
-</ej-DigitalGauge>
+</ej-digitalgauge>
 
 
 {% endhighlight %}
@@ -78,35 +78,35 @@ Finally while running the above codes, the following output will be rendered.
 
 **Digital Gauge** supports the two way biding for the property **value** as mentioned earlier. Following code example explains how to achieve the two way binding to the **Digital Gauge**.
 
-{% highlight js %}
+{% highlight html %}
 
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-<meta charset="utf-8">
-<!—Refer the necessary script here-->
+    <meta charset="utf-8">
+    <!—Refer the necessary script here-->
 </head>
 <body ng-controller="DigitalGauge">
 
-Type here <input type="text" id="txtValue" **ng-model="nvalue"** Style="width:110px"/>
+    Type here <input type="text" id="txtValue" **ng-model="nvalue"** Style="width:110px"/>
 
-<ej-DigitalGauge id="digitalCore" e-height="200" e-load="loadGaugeTheme">
+    <ej-digitalgauge id="digitalCore" e-height="200" e-load="loadGaugeTheme">
 <e-items>
 <e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
 e-characterSetting-opacity="0.8" e-position-x="52"
 e-value="nvalue" e-position-y="52">
 </e-item>
 </e-items>
-</ej-DigitalGauge>
-<script type="text/javascript">
+</ej-digitalgauge>
+    <script type="text/javascript">
 
-<!—binding the value to the scope variables in application controller-->
+        <!--binding the value to the scope variables in application controller-->
 
-angular.module('syncApp', ['ejangular'])
-.controller('DigitalGauge', function ($scope) {
-$scope.nvalue = "Syncfusion";
-});
-</script>
+        angular.module('syncApp', ['ejangular'])
+        .controller('DigitalGauge', function ($scope) {
+            $scope.nvalue = "Syncfusion";
+        });
+    </script>
 </body>
 </html>
 
@@ -133,27 +133,28 @@ Execute the above code to render the following output.
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Essential JavaScript for Knockout</title>
+    <title>Essential JavaScript for Knockout</title>
 </head>
 <body>
-<div id="digitalCore" style="width:100%" data-bind="ejDigitalGauge:({load:'loadGaugeTheme',value:samplevalue,height:305,items:[{position: { x: 52, y: 52 }}]})"></div>
-<script type="text/javascript">
-$(function () {
-window.viewModel = {
-**value: ko.observable(“SyncFusion”),**
+    <div id="digitalCore" style="width: 100%" data-bind="ejDigitalGauge:({load:'loadGaugeTheme',value:samplevalue,height:305,items:[{position: { x: 52, y: 52 }}]})"></div>
+    <script type="text/javascript">
+        $(function () {
+            window.viewModel = {
+            **value: ko.observable(“SyncFusion”),**
 };
-$(function () {
-ko.applyBindings(viewModel);
-});
-});
-</script>
-</body></html>
+            $(function () {
+                ko.applyBindings(viewModel);
+            });
+        });
+    </script>
+</body>
+</html>
 
 
 {% endhighlight %}
