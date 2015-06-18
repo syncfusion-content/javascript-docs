@@ -47,14 +47,7 @@ To use only a single theme related stuffs in your application, it is not necessa
 
 For example – Here, we are showing you how to refer only the **flat-saffron** theme to be applied to the **EJ** components in your application. Likewise, you can choose whatever themes you want. The **common-images** folder and **ej.widgets.core.min.css** file are mandatory for any application and is commonly applicable for whatever theme selected. 
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img1.png)
-{:.image }
-
-    Files to be chosen for referring only single theme in your application
-{:.caption }
-
-
-
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img1.png" Caption="Files to be chosen for referring only single theme in your application"%}
 
 
 > _**Note: The common-images folder is needed to be copied into your application mandatorily for any of the theme selection, as it includes all the common font icons and other images required for the control to render.**_
@@ -63,11 +56,7 @@ For example – Here, we are showing you how to refer only the **flat-saffron** 
 
 The below image depicts the files that are copied into the **Content** folder of your JS application,
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img2.png)
-{:.image }
-
-    Folder structure depicting the copied theme files in the application
-{:.caption }
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img2.png" Caption="Folder structure depicting the copied theme files in the application"%}
 
 
 In the above image, **flat-saffron** folder is added to include the theme and styling related to it. If in case, you need to refer the **flat-lime** theme in your application, then you can replace the flat-saffron folder with flat-lime (copying it from the above specified location) - keeping the **common-images** folder and **ej.widgets.core.min.css** file as it is.
@@ -104,17 +93,10 @@ Once the required theme folders are copied into your application, it is necessar
 
 
 
-> _**Note: The **ej.web.all.min.css** file is available separately for all the 13 available themes in their respective theme folders.**_
+> _**Note: The ej.web.all.min.css file is available separately for all the 13 available themes in their respective theme folders.**_
 > _**It is the combination of two files namely, **ej.theme.min.css** file (available separately within each of the theme folders) and **ej.widgets.core.min.css** – which is shown in the below image,**_
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img3.png)
-{:.image }
-
-
-{:.caption }
-
-
-
+> {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img3.png" %}
 
 
 Since, ej.web.all.min.css file is a combination of two files (**ej.theme.min.css & ej.widgets.core.min.css**), therefore it is also possible to refer these two files directly in the place of its reference as shown below, 
@@ -169,11 +151,7 @@ There are two possible ways to customize the theming of the component either by 
 
 By default, the header element of the DatePicker control which displays the Month name and year (outlined with blue line border in the below image) is defined by the class name **e-header** as depicted in the below image,
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img4.png)
-{:.image }
-
-    DatePicker control with header color displayed based on the theme applied.
-{:.caption }
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img4.png" Caption="DatePicker control with header color displayed based on the theme applied."%}
 
 
 To change the background-color of the above header element of the DatePicker, you need to perform the following steps,
@@ -233,13 +211,7 @@ To change the background-color of the above header element of the DatePicker, yo
 
 * When you run the above code, the background color for the header element (**e-header**) of the DatePicker component will be customized with its background color changed to **yellowgreen** as shown below,
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img5.png)
-{:.image }
-
-    DatePicker control with customized header color & **customStyles** class added to the root element
-{:.caption }
- 
-
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img5.png" Caption="DatePicker control with customized header color & customStyles class added to the root element"%}
 
 
 Likewise, you can customize any of the specific child elements present within the component by using its class name preceded with the user-defined Custom CSS class name. The user-defined Custom CSS class name will be added to the root element of the Syncfusion widget (for the purpose of overwriting the default styles present in the theme initially applied to the widget) which can be seen in the above highlighted image.
@@ -256,13 +228,7 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 
 * Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the non-minified version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (non-minified) file present within the **flat-saffron** theme folder in our application)
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img6.png)
-{:.image }
-
-
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img6.png" %}
 
 
 {% highlight html %}
@@ -301,21 +267,10 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 
 * Now, to make particular changes in that file, you can directly open it and start making modifications. For example, The DatePicker control has its default root class name as **e-datepicker**. You can change it manually with the user-specified root class name such as **e-cutomdatepicker** in the css file as shown below,
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img7.png)
-{:.image }
-
-    CSS file with default root e-datepicker name
-{:.caption }
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img7.png" Caption="CSS file with default root e-datepicker name"%}
 
 
-
-
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img8.png)
-{:.image }
-
-    CSS file with Customized root class name
-{:.caption }
-
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img8.png" Caption="CSS file with Customized root class name"%}
 
 
 
@@ -325,37 +280,17 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 
   * **e-header** element with newly customized background-color
 
-
-
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img9.png)
-{:.image }
-
-
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img9.png" %}
 
 
   * **current-month** element with newly customized background-color
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img10.png)
-{:.image }
-
-
-{:.caption }
-
-
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img10.png" %}
 
 
   * **other-month** element with newly customized text color
 
-
-
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img11.png)
-{:.image }
-
-
-{:.caption }
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img11.png" %}
 
 
 * Save the changes made in the css file and then set the user-specified custom css class name(**e-customdatepicker**) to the **cssClass** property of the datepicker widget as shown below,
@@ -395,11 +330,7 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 
 * Run the above code, you can see the datepicker widget with one or more customized child-elements according to the changes done in the css files as shown below,
 
-![](Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img12.png)
-{:.image }
-
-    DatePicker control with customized elements
-{:.caption }
+{% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img12.png" Caption="DatePicker control with customized elements" %}
 
 
 Thus, the **cssClass** property of the EJ components can be used as per the user convenient to customize the widget style to improve its look and feel while using it within the application.
