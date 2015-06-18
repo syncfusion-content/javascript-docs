@@ -35,7 +35,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays a **Bullet Graph** with start range 0, end range 10 and interval 1 with 4 minor ticks per interval
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img1.png" Caption="Bullet Graph quantitative scale with customized range"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img1.png" Caption="Bullet Graph quantitative scale with customized range"%}
 
 ## Quantitative scale location
 
@@ -56,7 +56,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with Quantitative scale at 20 pixels from left and 20 pixels from top
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img2.png" Caption="Bullet Graph quantitative scale in a specified location"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img2.png" Caption="Bullet Graph quantitative scale in a specified location"%}
 
 ## Major ticks
 
@@ -83,7 +83,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Major ticks** in **gray** color with a width of 3 pixels and height 15 pixels.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img3.png" Caption="Bullet Graph quantitative scale with customized major ticks"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img3.png" Caption="Bullet Graph quantitative scale with customized major ticks"%}
 
 ## Minor ticks
 
@@ -110,7 +110,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with customized **Minor ticks** in quantitative scale
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img4.png" Caption="Bullet Graph quantitative scale with customized minor ticks"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img4.png" Caption="Bullet Graph quantitative scale with customized minor ticks"%}
 
 ## Tick position
 
@@ -133,7 +133,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with ticks positioned above quantitative scale
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img5.png" Caption="Bullet Graph quantitative scale with ticks positioned above"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img5.png" Caption="Bullet Graph quantitative scale with ticks positioned above"%}
 
 ## Tick Placement
 
@@ -170,7 +170,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** ticks inside **Quantitative Scale**
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img6.png" Caption="Bullet Graph with ticks inside quantitative scale "%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img6.png" Caption="Bullet Graph with ticks inside quantitative scale "%}
 
 ## Quantitative scale labels
 
@@ -206,7 +206,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** labels in blue color
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img7.png" Caption="Bullet Graph quantitative scale with customized labels"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img7.png" Caption="Bullet Graph quantitative scale with customized labels"%}
 
 ## Label Placement
 
@@ -243,7 +243,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** labels inside **Quantitative Scale.**
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img8.png" Caption="Bullet Graph with labels inside quantitative scale "%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img8.png" Caption="Bullet Graph with labels inside quantitative scale "%}
 
 ## Performance measure bar
 
@@ -270,7 +270,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with customized **Performance measure bar**.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img9.png" Caption="Bullet Graph quantitative scale with customized performance measure bar"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img9.png" Caption="Bullet Graph quantitative scale with customized performance measure bar"%}
 
 ## Comparative measure symbol
 
@@ -297,7 +297,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with customized **Comparative measure value**.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img10.png" Caption="Bullet Graph with customized comparative symbol"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img10.png" Caption="Bullet Graph with customized comparative symbol"%}
 
 ## Multiple performance measures comparison
 
@@ -326,5 +326,5 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** that compares 3 related performance measures.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Quantitative-Scale_images/Quantitative-Scale_img11.png" Caption="Bullet Graph with multiple performance measures"%}
+{% include image.html url="/js/BulletGraph/Quantitative-Scale_images/Quantitative-Scale_img11.png" Caption="Bullet Graph with multiple performance measures"%}
 

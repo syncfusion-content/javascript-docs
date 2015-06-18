@@ -53,7 +53,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays a **Bullet Graph** with customized caption using the above code.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img1.png" Caption="Bullet Graph with title"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img1.png" Caption="Bullet Graph with title"%}
 
 ## Subtitle
 
@@ -88,7 +88,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with a subtitle
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img2.png" Caption="Bullet Graph with subtitle"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img2.png" Caption="Bullet Graph with subtitle"%}
 
 ## Indicator
 
@@ -140,7 +140,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays a bullet graph with indicator.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img3.png" Caption="Bullet Graph with indicator"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img3.png" Caption="Bullet Graph with indicator"%}
 
 ## Trim
 
@@ -165,7 +165,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays the BulletGraph with Trim.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img4.png" Caption="Bulletgrpah with trim"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img4.png" Caption="Bulletgrpah with trim"%}
 
 ## Text Placement
 
@@ -203,7 +203,7 @@ The property, textPosition, is used to position the text at the top, bottom, lef
 
 The following screenshot displays the Bullet Graph with the title positioned above.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img5.png" Caption="Bullet Graph with title automatically positioned above the scale"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img5.png" Caption="Bullet Graph with title automatically positioned above the scale"%}
 
 ### Text Alignment
 
@@ -248,7 +248,7 @@ Alignment of text at different positions with respect to scale can be customized
 
 The following screenshot displays the Bullet Graph with the title and subtitle at different alignments.
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img6.png" Caption="Bullet graph with the title aligned at near and sub title aligned at center positions"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img6.png" Caption="Bullet graph with the title aligned at near and sub title aligned at center positions"%}
 
 ### Text Anchor
 
@@ -291,7 +291,7 @@ Text elements aligned at the same position are anchored by using the textAnchor 
 
 
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img7.png" Caption="Bullet Graph with title text anchored at the center with respect to subtitle text"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img7.png" Caption="Bullet Graph with title text anchored at the center with respect to subtitle text"%}
 
 ### Padding
 
@@ -325,5 +325,5 @@ $("#BulletGraph1").ejBulletGraph({
 
 
 
-{% include image.html url="/js/BulletGraph/Concepts-and-Features/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img8.png" Caption="Bullet graph with 10 pixel padding between the title text and quantitative scale"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img8.png" Caption="Bullet graph with 10 pixel padding between the title text and quantitative scale"%}
 
