@@ -146,7 +146,7 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% endhighlight %}
 
-4. Initialize the **ejGantt** with data source created in the last step.
+4.Initialize the **ejGantt** with data source created in the last step.
 
 {% highlight js %}
 
