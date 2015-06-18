@@ -208,7 +208,7 @@ js/ej.widgets.all.min.js"></script>
             $("#mapContainer").ejMap({
                 layers: [
                 {
-                    **shapeData: usMap**
+                    shapeData: usMap
                 }]
             });
 	    }); 

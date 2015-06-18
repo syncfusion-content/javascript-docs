@@ -42,10 +42,10 @@ You can customize the labels of the **legend****item** using **legendLabel** pro
                 itemsLayoutMode:"Squarified",
                 weightValuePath: "Population",
                 rangeColorMapping: [
-                { color: "#77D8D8", from: "0", to: "1" ,**legendLabel**:"Range1"},
-                { color: "#AED960", from: "0", to: "2",**legendLabel**:"Range2" },
-                { color: "#FFAF51", from: "0", to: "3", **legendLabel**: "Range3" },
-                { color: "#F3D240", from: "0", to: "4", **legendLabel**: "Range4" }
+                { color: "#77D8D8", from: "0", to: "1" ,legendLabel:"Range1"},
+                { color: "#AED960", from: "0", to: "2",legendLabel:"Range2" },
+                { color: "#FFAF51", from: "0", to: "3", legendLabel: "Range3" },
+                { color: "#F3D240", from: "0", to: "4", legendLabel: "Range4" }
                 ],                   
                 levels: [
                   { groupPath: "Continent", groupGap: 5 }
@@ -74,7 +74,7 @@ You can set headers for each level by setting the **showHeader** propery of the 
             $("#treemapContainer").ejTreeMap({
                 // ...             
                 levels: [
-                  {groupPath: "Continent", groupGap: 2, **headerHeight: 20,  headerTemplate: 'headertemplate'** }
+                  {groupPath: "Continent", groupGap: 2, headerHeight: 20,  headerTemplate: 'headertemplate' }
                         ],
                 // ...             
             });
@@ -83,7 +83,7 @@ You can set headers for each level by setting the **showHeader** propery of the 
 
 <script  id="headertemplate" type="application/jsrender">
     <div style="background-color: white; margin:5px">
-        <label style="color:black;font-size:medium;" >**{{:**header**}}**</label><br />            
+        <label style="color:black;font-size:medium;" >{{:header}}</label><br />            
     </div>                        
 </script>                      
 
@@ -117,12 +117,12 @@ You can also set labels for the leaf nodes by setting the **showLabels** propert
 
     <script  id="headertemplate" type="application/jsrender">
         <div style="background-color: white; margin:5px">
-            <label style="color:black;font-size:medium;" >**{{:**header**}}**</label><br />            
+            <label style="color:black;font-size:medium;" >{{:header}}</label><br />            
         </div>                        
     </script>      
     <script  id="labeltemplate" type="application/jsrender">
         <div style="background-color: transparent;">
-            <label style="color:white;font-size:small;margin:5px;" >**{{:**label**}}**</label><br />            
+            <label style="color:white;font-size:small;margin:5px;" >{{:label}}</label><br />            
         </div>                        
     </script>      
 
