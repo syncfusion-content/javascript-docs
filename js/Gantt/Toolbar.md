@@ -13,7 +13,6 @@ documentation: ug
 
 {% highlight js %}
 
-
     $("#GanttContainer").ejGantt({
         //...
         toolbarSettings: { 
@@ -36,8 +35,6 @@ documentation: ug
 
 
 {% endhighlight %}
-
-
 
 The following screenshot shows the toolbar option in Gantt control.
 
