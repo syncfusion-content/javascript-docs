@@ -7,11 +7,11 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-### Layout 
+## Layout 
 
 The **OLAP Gauge** control provides support to display multiple gauges in a structured layout. You can customize the layout using the **ColumnsCount** and **RowsCount** properties. These properties are used to specify the number of columns and rows for displaying controls.
 
-#### Supported Layouts
+### Supported Layouts
 
     1. Wrap Layout: Based on the available space, gauges are aligned and displayed automatically.
 
@@ -19,7 +19,7 @@ The **OLAP Gauge** control provides support to display multiple gauges in a stru
 
     3. Column count: Specifies the number of gauge controls to be displayed column-wise.
 
-#### Layout Customization 
+### Layout Customization 
 
 You can customize/limit the number of gauges to be displayed in the table with the help of the **rowsCount** and **columnsCount** properties.
 
@@ -94,11 +94,7 @@ $(function () {
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Layout_images/Layout_img1.png" Caption="Row Count"%}
-
-<br/>
 
 #### Column Count
 
@@ -170,8 +166,6 @@ $(function () {
 
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Layout_images/Layout_img2.png" Caption="Column Count"%}
 

@@ -7,11 +7,11 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-### Pointers
+## Pointers
 
 **Pointers** are used to indicate the range on scale area based on the values passed for the range values.
 
-#### Types of Pointers
+### Types of Pointers
 
 Two different types of pointer available in **OlapGuage** are:
 
@@ -19,7 +19,7 @@ Two different types of pointer available in **OlapGuage** are:
 
    2. Marker
 
-#### Changing Pointer Types
+### Changing Pointer Types
 
 You can set the **pointer** to Needle type by setting “**pointerType**”  property to “**Needle**” and the pointer to Marker type by setting the “**pointerType**" properties to  “**Marker**”.
 
@@ -91,13 +91,9 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img1.png" Caption="Pointer Type – Needle & Marker"%}
 
-<br/>
-
-#### Length and Width Customization
+### Length and Width Customization
 
 You can customize the **Pointer** length and width using the “**pointerLength**” and “**pointerWidth**” property.
 
@@ -169,13 +165,9 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img2.png" Caption="Length and Width Customization"%}
 
-<br/>
-
-#### Background Customization 
+### Background Customization 
 
 You can customize the **Pointer background** color using “**backgroundcolor**” property.
 
@@ -248,13 +240,9 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img3.png" Caption="Background Color Customization"%}
 
-<br/>
-
-#### Shapes Customization
+### Shapes Customization
 
 You can customize **Pointer shapes** using the “**needlestyle**” property. 
 
@@ -326,8 +314,6 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img4.png" Caption="Shape Customization"%}
 

@@ -7,23 +7,23 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Getting Started 
+##Getting Started 
 
 This section explains briefly about how to create an **OLAP Gauge** in your application with **JavaScript.**
 
-**Control structure**
+###Control structure
 
 The following screen shot shows the structure of an **OLAP Gauge** control.
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Gauge Control for JavaScript"%}
 
-**Syncfusion OLAP Controls – Architecture**
+###Syncfusion OLAP Controls – Architecture
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img2.png" Caption="Architecture of OLAP controls"%}
 
 As shown in an above architecture, control rendering takes place at client-side and all other analytical operations on each action takes place at server-side.
 
-**Service for OLAP Controls**
+###Service for OLAP Controls
 
 The primary reasons for using service in an **OLAP** processing are as follows:
 
@@ -50,7 +50,7 @@ is included and excluded.
 
 As the **OlapControl** is the key for each and every operation, initially you need to serialize the **OlapReport** and send to client-side in a form of string. When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OlapReport** from the client-side to the service in a de-serialized and updated format. Further operations are carried with updated **OlapReports** only and you can send the updated **OlapReport** back to client-side with **JSON** data in a serialized format again. This process has the **OlapReport** always updated. You cannot operate serialized **OlapReport** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
 
-**Create an application**
+###Create an application
 
 This section encompasses on how to configure the **OLAP Gauge** control in applications. You can also learn how to pass the required data to **OLAP Gauge** and to customize its various options according to your requirements.
 
@@ -62,7 +62,7 @@ Open Visual Studio and create a new project by clicking **New Project**. Select 
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img4.png" Caption="New Project Wizard"%}
 
-**Create HTML page**
+###Create HTML page
 
 To create a new web form in the application, right-click on the project and select Add.
 
@@ -70,9 +70,9 @@ To create a new web form in the application, right-click on the project and sele
 
 Click on New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
 
-**Add References, Scripts, Styles and Control in HTML page**
+###Add References, Scripts, Styles and Control in HTML page
 
-**Add References**
+####Add References
 
 * In the Solution Explorer, right-click the References folder, and then click Add Reference.
 
@@ -96,7 +96,7 @@ Click on New Item and select HTML Page from the listed templates. Name the page 
 
 * Click OK
 
-**Add Scripts and Styles**
+####Add Scripts and Styles
 
 Add the script files and CSS files in the title tag of the default.html page.
 
@@ -111,9 +111,9 @@ Add the script files and CSS files in the title tag of the default.html page.
 
 {% endhighlight %}
 
-**Add Control in HTML page**
+####Add Control in HTML page
 
-Add the following code inside the **&lt;Body&gt;** tag in the **default.html** page.
+Add the following code inside the **&lt;body&gt;** tag in the **default.html** page.
 
 {% highlight html %}
 
@@ -191,9 +191,9 @@ Add the following code inside the **&lt;Body&gt;** tag in the **default.html** p
 
 {% endhighlight %}
 
-**Add WCF Service for OLAP Gauge**
+###Add WCF Service for OLAP Gauge
 
-**Create WCF Services**
+####Create WCF Services
 
 1.Right-click the project and select Add > New Folder.  Name the folder as WCF.
 
@@ -204,7 +204,7 @@ Add the following code inside the **&lt;Body&gt;** tag in the **default.html** p
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png" Caption="Creating WCF Service"%}
 
-**Add service methods inside Interface**
+####Add service methods inside Interface
 
 Add the following code inside the IOlapGaugeService interface available in the IOlapGaugeService.cs file.
 
@@ -220,7 +220,7 @@ Add the following code inside the IOlapGaugeService interface available in the I
 
 {% endhighlight %}
 
-**Add Namespaces**
+####Add Namespaces
 
 Add necessary namespaces required to implement the service methods.
 
@@ -241,7 +241,7 @@ using Syncfusion.Olap.Reports;
 
 {% endhighlight %}
 
-**Create Class in Service file**
+####Create Class in Service file
 
 Create the **OlapGaugeService** class to implement the service methods. Inherit the class from the **IOlapGaugeService** interface created automatically when any new service is added.
 
@@ -258,7 +258,7 @@ namespace WebApplication2
 
 {% endhighlight %}
 
-**Implement Service Methods**
+####Implement Service Methods
 
 Add the following methods to the service invoked for any server-side operations performed in **OlapGauge**.
 
@@ -323,7 +323,7 @@ Add the following methods to the service invoked for any server-side operations 
 
 {% endhighlight %}
 
-**Configure Web.Config** 
+####Configure Web.Config 
 
 * You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is **"WebApplication2.OlapGuageService"** where **"OlapGuageService"** is the service class name and **“WebApplication2"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
