@@ -36,10 +36,7 @@ The following code example shows you how to enable cellEditing in Gantt control.
         }
     });
 
-
 {% endhighlight %}
-
-
 
 The output of Gantt with cellEditing is as follows.
 
@@ -53,7 +50,6 @@ The following code example shows you how to enable normal editing in **Gantt** c
 
 {% highlight js %}
 
-
     $("#GanttContainer").ejGantt({
         //...
         editSettings: {
@@ -62,10 +58,7 @@ The following code example shows you how to enable normal editing in **Gantt** c
      }
     });
 
-
 {% endhighlight %}
-
-
 
 The following screenshot shows the output of normal editing.
 
@@ -77,12 +70,10 @@ Update the task details by interactions such as resizing and dragging the taskba
 
 {% highlight js %}
 
-
     $("#GanttContainer").ejGantt({
         //...
         allowGanttChartEditing:true
     });
-
 
 {% endhighlight %}
 
@@ -92,7 +83,6 @@ Update the predecessor details of a task using mouse interactions. The following
 
 {% highlight js %}
 
-
           $("#GanttContainer").ejGantt({
                 //...
                 dataSource: data,
@@ -100,10 +90,7 @@ Update the predecessor details of a task using mouse interactions. The following
                 predecessorMapping: "predecessor",
               });
 
-
 {% endhighlight %}
-
-
 
 The following screen shot shows the predecessor editing in **Gantt** control.
 
