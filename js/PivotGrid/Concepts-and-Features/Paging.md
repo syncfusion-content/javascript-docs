@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-### Paging
+## Paging
 
 >_**Note: This feature is applicable only for OLAP datasource.**_
 
-**Pager**
+###Pager
 
 The **PivotGrid** is viewed page-by-page through **Pager** option. The **Pager** is set to **PivotGrid** using following code example.
 
@@ -38,7 +38,7 @@ The page size for categorical and series axes are set in the **OlapReport**. **P
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Paging_images/Paging_img1.png" Caption="PivotGrid in paging mode"%}
 
-**Virtual Scrolling**
+###Virtual Scrolling
 
 The large **PivotGrid** data content is viewed page-by-page using **Virtual Scrolling** . The page size for categorical and series axes are set in **OlapReport**. By enabling **Virtual Scrolling** , the number of rows and columns for the **PivotGrid** are set as entered in the **OlapReport**. By scrolling the horizontal and vertical scrollbars, the categorical and series page numbers are obtained and **PivotGrid** contents are refreshed accordingly.
 
@@ -55,7 +55,7 @@ The large **PivotGrid** data content is viewed page-by-page using **Virtual Scro
 
 {% include image.html url="/js/PivotGrid/Concepts-and-Features/Paging_images/Paging_img3.png" Caption="Page indication while scrolling"%}
 
-**OLAP Report for Paging and Virtual Scrolling**
+###OLAP Report for Paging and Virtual Scrolling
 
 {% highlight c# %}
 
@@ -64,7 +64,6 @@ olapReport.CurrentCubeName = "Adventure Works";
 olapReport.Name = "Default Report";
 
 //NOTE: Below code enables the paging option and also sets the page size.
-
 olapReport.EnablePaging = true;
 olapReport.PagerOptions.SeriesPageSize = 5;
 olapReport.PagerOptions.CategorialPageSize = 4;

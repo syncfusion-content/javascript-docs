@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-### Context Menu
+## Context Menu
 
 **Cell Context** support in **PivotGrid** allows you to choose the right-click event to access each cell for any desired operation. **Cell Context** is enabled by setting the **enableCellContext** property to ‘**True**’. The name of the event to trigger on right-clicking is stored in the **cellContextEvent** property. After enabling **Cell Context** on right-clicking a cell, the event triggers. The information about the cell is carried through a parameter.
 
