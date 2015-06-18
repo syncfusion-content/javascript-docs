@@ -16,39 +16,42 @@ documentation: ug
 You can add Bar Pointer collection directly to the scale object. Refer the following code example.
 
 
-{% highlight js %}
-
+{% highlight html %}
 
 <div id="LinearGauge1"></div>
-<script type="text/javascript">
-$(function () {
-// For Rendering Linear gauge
-$("#LinearGauge1").ejLinearGauge({
-//For Adding frame
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl:"../images/gauge/Gauge_linear_light.png"
-},value:78,
 
-//For Adding Scale collection
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,
+{% endhighlight %}
 
-//For Adding bar pointer collection
-**barPointers: [{** width: 5, backgroundColor: "Grey"**}],**
 
-//For Adding tick collection
-ticks: [{ type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } },
-{ type: "minorinterval", width: 1,height:6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } }]
-}]
-});
+{% highlight js %}
+
+$ (function () {
+      // For Rendering Linear gauge
+      $("#LinearGauge1").ejLinearGauge({
+          //For Adding frame
+          frame: {
+              innerWidth: 8,
+              outerWidth: 10,
+              backgroundImageUrl:"../images/gauge/Gauge_linear_light.png"
+          },value:78,
+
+          //For Adding Scale collection
+          scales: [{
+              backgroundColor: "transparent",
+              border: { color: "transparent", width: 0 },
+              showMarkerPointers: false, showBarPointers: true,
+
+              //For Adding bar pointer collection
+          barPointers: [{ width: 5, backgroundColor: "Grey"}],
+
+              //For Adding tick collection
+              ticks: [{ type: "majorinterval", width: 2,
+                  color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } },
+              { type: "minorinterval", width: 1,height:6,
+                  color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } }]
+          }]
+      });
 )};
-</script>
 
 
 {% endhighlight %}
@@ -68,46 +71,49 @@ Bar pointer value is also important element in the **Linear Gauge** as it indica
 
 
 
-{% highlight js %}
-
+{% highlight html %}
 
 <div id="LinearGauge1"></div>
-<script type="text/javascript">
-$(function () {
-// For Rendering Linear gauge
-$("#LinearGauge1").ejLinearGauge({enableAnimation:false,
-//For Adding frame
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
-},
-//For Adding Scales
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,
 
-//For Adding bar pointer collection
-barPointers: [{
-width: 5,
-backgroundColor: "Grey",
-**value:91**
-}],
+{% endhighlight %}
 
-//For Adding tick collection
-ticks: [{
-type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-},
-{
-type: "minorinterval", width: 1, height: 6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-}]
-}]
-});
-});
-</script>
+
+{% highlight js %}
+
+ $(function () {
+        // For Rendering Linear gauge
+        $("#LinearGauge1").ejLinearGauge({enableAnimation:false,
+            //For Adding frame
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
+            },
+            //For Adding Scales
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true,
+
+                //For Adding bar pointer collection
+                barPointers: [{
+                    width: 5,
+                    backgroundColor: "Grey",
+                value:91
+                }],
+
+                //For Adding tick collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }]
+            }]
+        });
+    });
 
 
 {% endhighlight %}
@@ -127,50 +133,52 @@ Execute the above code to render the following output.
 * The marker pointer border is modified with the object **border**. It has two border property, **color** and **width** which are used to customize the border color of the scale and border width of the marker pointer. The background color can be customized with attribute **backgroundColor**.
 
 
+{% highlight html %}
+
+<div id="LinearGauge1"></div>
+
+{% endhighlight %}
+
 
 {% highlight js %}
 
 
-<div id="LinearGauge1"></div>
-<script type="text/javascript">
-$(function () {
-// For Rendering Linear gauge
-$("#LinearGauge1").ejLinearGauge({enableAnimation:false,
-// Adding Frame object
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
-},
+    $(function () {
+        // For Rendering Linear gauge
+        $("#LinearGauge1").ejLinearGauge({enableAnimation:false,
+            // Adding Frame object
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
+            },
 
-// Adding Scale collection
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,
+            // Adding Scale collection
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true,
 
-// Adding bar pointer collection
-barPointers: [{
-**width: 10,**
-**backgroundColor: "Red",**
-**border: { color: "#860201", width: 2 },**
-**opacity:0.7,**
-value: 91 }],
+                // Adding bar pointer collection
+                barPointers: [{
+                width: 10,
+                backgroundColor: "Red",
+                border: { color: "#860201", width: 2 },
+                opacity:0.7,
+                    value: 91 }],
 
-// Adding tick collection
-ticks: [{
-type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-},
-{
-type: "minorinterval", width: 1, height: 6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-}]
-}]
-});
-});
-</script>
-
+                // Adding tick collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }]
+            }]
+        });
+    });
 
 {% endhighlight %}
 
@@ -189,52 +197,51 @@ Execute the above code to render the following output.
 * The **placement** property is used to locate the pointer with respect to scale either inside or outside the scale or along the scale. It is an enumerable data type.
 
 
+{% highlight html %}
+
+<div id="LinearGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="LinearGauge1"></div>
-<script type="text/javascript">
 $(function () {
-// For Rendering Linear gauge
-$("#LinearGauge1").ejLinearGauge({enableAnimation:false,
-//Adding frame object
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
-},
+        // For Rendering Linear gauge
+        $("#LinearGauge1").ejLinearGauge({enableAnimation:false,
+            //Adding frame object
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
+            },
 
-//Adding Scale collection
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,
+            //Adding Scale collection
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true,
 
-//Adding bar pointer collection
-barPointers: [{
-width: 10,
-backgroundColor: "#8BABFF",
-value: 91,
-**placement: "near",**
-**distanceFromScale: 20**
-}],
+                //Adding bar pointer collection
+                barPointers: [{
+                    width: 10,
+                    backgroundColor: "#8BABFF",
+                    value: 91,
+                placement: "near",
+                distanceFromScale: 20
+                }],
 
-//Adding tick collection
-ticks: [{
-type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-},
-{
-type: "minorinterval", width: 1, height: 6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-}]
-}]
-});
-});
-</script>
-
-
+                //Adding tick collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }]
+            }]
+        });
+    });
 {% endhighlight %}
 
 
@@ -248,69 +255,75 @@ Execute the above code to render the following output.
 
 **Linear Gauge** can contain multiple bar pointers on it. You can use any combination and any number of pointers in a gauge. That is, a Gauge can contain any number of marker pointer and any number of bar pointers. Refer the following code example containing multiple bar pointers.
 
+% highlight html %}
+
+<div id="LinearGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
+ $(function () {
+        // For Rendering Linear gauge
+        $("#LinearGauge1").ejLinearGauge({
+            enableAnimation: false, height: 500,
+            width: 300, labelColor: "Grey",
+            //Adding frame object
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl: "../images/gauge/Gauge_linear_dark1.png"
+            },
 
-<div id="LinearGauge1"></div>
-<script type="text/javascript">
-$(function () {
-// For Rendering Linear gauge
-$("#LinearGauge1").ejLinearGauge({enableAnimation:false,height:500,
-width:300,labelColor:"Grey",
-//Adding frame object
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl: "../images/gauge/Gauge_linear_dark1.png"
-},
+            //Adding scale collection
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true, showCustomLabels: true,
 
-//Adding scale collection
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,showCustomLabels:true,
+                //Adding bar pointer collection
+                barPointers: [
+                //Adding bar pointer 1
+                {
+                    width: 10, backgroundColor: "#8BABFF",
+                    value: 91, placement: "near", distanceFromScale: 60
+                },
 
-//Adding bar pointer collection
-barPointers: [
-//Adding bar pointer 1
-{ width: 10, backgroundColor: "#8BABFF",
-value: 91, placement: "near", distanceFromScale: 60
-},
+                //Adding bar pointer 2
+                {
+                    width: 10, backgroundColor: "#FDB761", value: 51,
+                    placement: "near", distanceFromScale: 20
+                },
 
-//Adding bar pointer 2
-{ width: 10, backgroundColor: "#FDB761", value: 51,
-placement: "near", distanceFromScale: 20
-},
+                //Adding bar pointer 3
+                {
+                    width: 10, backgroundColor: "Red", value: 88,
+                    placement: "near", distanceFromScale: 100
+                }
+                ],
 
-//Adding bar pointer 3
-{ width: 10, backgroundColor: "Red", value: 88,
-placement: "near", distanceFromScale: 100
-}
-],
+                //Adding tick collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }],
 
-//Adding tick collection
-ticks: [{
-type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-},
-{
-type: "minorinterval", width: 1, height: 6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-}],
-
-//Adding custom label collection
-customLabels: [
-{ value: "Mathematics Mark Comparision",
-position: { x: 55, y: 97 } },
-{ value: "Halfyearly", position: { x: 72, y: 87 }, textAngle: 90 },
-{ value: "Quaterly", position: { x: 56, y: 87 }, textAngle: 90 },
-{ value: "Annual", position: { x: 87, y: 87 }, textAngle: 90 }]
-}]
-});
-});
-</script>
-
+                //Adding custom label collection
+                customLabels: [
+                {
+                    value: "Mathematics Mark Comparision",
+                    position: { x: 55, y: 97 }
+                },
+                { value: "Halfyearly", position: { x: 72, y: 87 }, textAngle: 90 },
+                { value: "Quaterly", position: { x: 56, y: 87 }, textAngle: 90 },
+                { value: "Annual", position: { x: 87, y: 87 }, textAngle: 90 }]
+            }]
+        });
+    });
 
 {% endhighlight %}
 
