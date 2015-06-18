@@ -18,32 +18,35 @@ documentation: ug
 The following code example explains how to set the value for **enableAppointmentNavigation** property.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+ $(function () {
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-**enableAppointmentNavigation: true,**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            enableAppointmentNavigation: true,
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 
@@ -180,35 +183,35 @@ Once the required cells are selected, then a new appointment can be created for 
 
 
 
+{% highlight html %}
 
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-
 $(function () {
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-// Enable the keyboard navigation
-**allowKeyboardNavigation: true,**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            // Enable the keyboard navigation
+            allowKeyboardNavigation: true,
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 
