@@ -7,11 +7,11 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Series
+# Series
 
 **Series** is a collection of series items that contain the actual data points to be displayed on the chart. Series type allows you to customize the chart type whose appearance/style is customized.
 
-###Series Type Customization
+##Series Type Customization
 
 A combination Chart combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
 
@@ -42,7 +42,7 @@ function onSeriesRenders(args) {
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Series_images/Series_img1.png" Caption="Combination Chart"%}
 
-###Series Points Customization
+##Series Points Customization
 
 **OlapChart** series is customized using fill, border width and border color. The stroke-width of the line, spline series is customized using **width** property of series.  The series color is customized using **fill** property of series. The border color and width of the column/bar is customized using **border** property of series. And the column/bar chart are customized using the ‘**fill’** and ‘**border’** property of each point.
 

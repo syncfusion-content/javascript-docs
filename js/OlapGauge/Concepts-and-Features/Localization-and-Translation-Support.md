@@ -7,7 +7,7 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Localization and Translation Support
+# Localization and Translation Support
 
 **Localization** is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, you can display the data in a specific language and culture, of a particular country or region. The **JavaScript OlapGauge** control provides inherent support to localize its UI.
 
@@ -146,7 +146,7 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
     2. OLAP Cube
 
-###Localizing Control Information
+##Localizing Control Information
 
 To apply control side localization, refer the following code example:
 
@@ -158,7 +158,7 @@ ej.olap.OlapGauge.locale["zh-CN"] = {
 
 {% endhighlight %}
 
-###Localizing Cube Information
+##Localizing Cube Information
 
 To render the localized Cube information, set **"Locale Identifier"** in the connection string.
 

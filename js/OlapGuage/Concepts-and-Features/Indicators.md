@@ -7,11 +7,11 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Indicators
+# Indicators
 
 **KPIs** are displayed with **Trend and Status visualizations** that supports Traffic Light, Road Signs and Standard Arrow .Status and Trend values are highlighted through user friendly images within the **OlapGauge** that is known as **indicators**.
 
-### Hiding Indicators
+## Hiding Indicators
 
 You can hide the **Indicator** by changing the “**showIndicator**” property to “**false**”.
 

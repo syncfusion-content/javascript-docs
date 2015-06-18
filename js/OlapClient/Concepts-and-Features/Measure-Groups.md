@@ -7,7 +7,7 @@ control: OLAP Client
 documentation: ug
 ---
 
-## Measure Groups 
+# Measure Groups 
 
 In Cube Dimension Browser tree-view can be viewed in a filtered manner through the **Measure Groups** option. This feature allows you to view the list of measure groups and dimensions associated with the selected measure group from the cube.
 

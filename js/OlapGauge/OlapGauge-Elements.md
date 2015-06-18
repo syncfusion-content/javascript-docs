@@ -7,7 +7,7 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## OlapGauge Elements
+# OlapGauge Elements
 
 {% include image.html url="/js/OlapGauge/OlapGauge-Elements_images/OlapGauge-Elements_img1.png" Caption="OlapGauge"%}
 

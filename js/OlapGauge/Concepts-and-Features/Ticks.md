@@ -7,7 +7,7 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Ticks
+# Ticks
 
 **Ticks** indicate values that are present in the scale area. The different types of ticks available are:
 
@@ -78,7 +78,7 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Ticks_images/Ticks_img1.png" Caption="Ticks Customization"%}
 
-### Customizing the distance from Scale
+## Customizing the distance from Scale
 
 You can change the distance from the scale and the **Ticks** using “**distanceFromScale**” property.
 
@@ -152,7 +152,7 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Ticks_images/Ticks_img2.png" Caption="Adjusting distance between Scale and Ticks"%}
 
-### Height and Width Customization
+## Height and Width Customization
 
 You can set the height and width of the **Ticks** using the “**tickWidth**” and “**tickHeight**” property.
 
@@ -226,7 +226,7 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Ticks_images/Ticks_img3.png" Caption="Ticks height and width customization"%}
 
-### Hiding Ticks
+## Hiding Ticks
 
 You can hide the **Ticks** that indicate the range values using “**showTicks**” property.
 
