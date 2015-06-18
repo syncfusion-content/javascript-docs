@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Knockout Binding
+# Knockout Binding
 
 >_**Note: This feature is applicable only for OLAP datasource.**_
 

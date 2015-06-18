@@ -7,7 +7,7 @@ control: OLAP Client
 documentation: ug
 ---
 
-## Localization 
+# Localization 
 
 Localization is the**process of customizing the UI** (User Interface) as locale-specific, in order to display regional data. Using this feature, data can be displayed in a specific language and culture, of a particular country or region. The **JavaScript OLAP Client** control provides inherent support to localize its **UI**.
 
@@ -284,7 +284,7 @@ Exit:"Quitter"
 
 > _**Note: In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube**_
 
-###Localizing Control Information
+##Localizing Control Information
 
 To apply control side localization, use the following code example.
 
@@ -297,7 +297,7 @@ ej.olap.OlapClient.locale["zh-CN"]={
 
 {% endhighlight %}
 
-###Localizing Cube Information
+##Localizing Cube Information
 
 To get the localized Cube information,set **Locale Identifier** in the connection string.
 

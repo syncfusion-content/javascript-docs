@@ -7,13 +7,13 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Custom Label
+# Custom Label
 
 **Custom label** provides information about the members associated behind each **OlapGauge**. You can define multiple labels for **OlapGauge** and it can be positioned along X and Y co-ordinates based on location settings.
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Custom-Label_images/Custom-Label_img1.png" Caption="Custom Label"%}
 
-### Positioning the Custom Label
+## Positioning the Custom Label
 
 You can set the location of the **custom label** in circular gauge using “**location**” property. Refer the following code example.
 
@@ -84,7 +84,7 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 
 {% include image.html url="/js/OlapGauge/Concepts-and-Features/Custom-Label_images/Custom-Label_img2.png" Caption="Positioning Custom Label"%}
 
-### Font and Style Customization of Custom Label
+## Font and Style Customization of Custom Label
 
 You can customize the **custom label** font with font style, font family, and size properties.
 

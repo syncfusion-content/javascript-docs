@@ -7,12 +7,12 @@ control: OLAP Chart
 documentation: ug
 ---
 
-##Title
+#Title
 
 **Title** is the area on top of the Chart control that displays the text explaining the **OlapChart** data. Title text is displayed in a customizable format. 
 
 
-###Setting Value To Chart Title
+##Setting Value To Chart Title
 
 Title property allows you to set the default title for a Chart as follows. 
 
@@ -29,7 +29,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% include image.html url="/js/OlapChart/Concepts-and-Features/Title_images/Title_img1.png" Caption="OLAP Chart Title"%}
 
-###Title Text Customization
+##Title Text Customization
 
 You can customize the title text font using **title.font** property.
 

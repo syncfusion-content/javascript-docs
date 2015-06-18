@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 >_**Note: This feature is currently not applicable for PivotTable Field List.**_
 
@@ -90,7 +90,7 @@ url: "../wcf/PivotGridService.svc", locale**: "fr-FR",** enableVirtualScrolling:
 
 2. _**OLAP Cube**_
 
-###Localizing Control Information:
+##Localizing Control Information:
 
 To apply control side **Localization**, you can refer the following code example.
 
@@ -104,7 +104,7 @@ ej.PivotGrid.locale["zh-CN"] = {
 
 {% endhighlight %}
 
-###Localizing Cube Information
+##Localizing Cube Information
 
 To get the **Localized Cube Information** ,  ** “Locale Identifier"** is set in the connection string
 

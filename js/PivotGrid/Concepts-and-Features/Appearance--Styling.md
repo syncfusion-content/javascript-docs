@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Appearance & Styling
+# Appearance & Styling
 
 **PivotGrid** control customizes its appearance using user-defined CSS. The custom CSS is applied to the control by referring the **custom theme CSS** next to **ej.widgets.all.min.css** in the view page.
 

@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-##Knockout Binding
+#Knockout Binding
 
 Knockout Binding allows you to bind HTML elements against any data model. It uses a Model-View-ViewModel(MVVM) design pattern, where the Model is your stored data, View is the visual representation of that data (UI), and ViewModel acts as the intermediary between Model and View.
 
