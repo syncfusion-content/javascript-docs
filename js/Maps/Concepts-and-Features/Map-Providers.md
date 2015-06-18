@@ -52,6 +52,7 @@ You can enable this feature by defining the LayerType as “bing”.
 $("#map").ejMap({
        layers: [{
             layerType: ‘bing’,
+            bingMapType:"AerialWithLabel",
             key:'// …bingMapKey'
             }]
         });   

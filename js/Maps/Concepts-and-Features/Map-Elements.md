@@ -48,10 +48,8 @@ var markers = [
 
 <div  id="template" style="display: none;">
     <div>
-        <svg height="100" width="100">
-<circle cx="20" cy="20" r="10" stroke="black" stroke-width="1"
-           fill="red" />
-</svg>
+        <div  style="background-image:url(http://js.syncfusion.com/demos/web/Images/map/pin.png);margin-left:3px;height:40px;width:25px;margin-top:-15px;">
+		</div>
     </div>
 </div>  
 
@@ -76,29 +74,32 @@ Without datasource, n number of markers can be added to shape layers with **mark
 
 {% highlight html %}
 
-jQuery(function ($) {
-     $("#mapContainer").ejMap({
-     layers: [
-          {
-             shapeData: usMap,
-             enableMouseHover: true,
-             ShapeSettings: {
-                 fill: "#9CBF4E",
-                 strokeThickness: "0.5",
-                 stroke: "White",
-                 highlightStroke: "White",
-                 highlightColor: "#BC5353",
-                 highlightBorderWidth: "1"
-                },
-        markers: [
-          { latitude: 37.0000, longitude: -120.0000, label: "California" },
-          { latitude: 40.7127, longitude: -74.0059, label: "New York" },
-          { latitude: 42, longitude: -93, label: "Iowa" }
-       ]
-     }                                            
-   ]
- });
-}); 
+var markers = [
+            { latitude: 37.0000, longitude: -120.0000, city: "California" },
+            { latitude: 40.7127, longitude: -74.0059, city: "New York" },
+            { latitude: 42, longitude: -93, city: "Iowa" }            
+        ];
+
+        jQuery(function ($) {
+            $("#mapContainer").ejMap({
+                layers: [ 
+                   {
+                                                // ...                        
+                        markers: markers,
+                        markerTemplate: 'template'
+
+                    }                         
+                ]
+            });
+        });
+
+<div  id="template" style="display: none;">
+    <div>
+       <div style="margin-left:8px;height:45px;width:120px;margin-top:-23px;">					
+	       <label class="label1" style="color:black;margin-left:15px;font-weight:normal">{{:city}}</label>				 			 
+	   </div>
+    </div>
+</div>  
 
 
 {% endhighlight %}
@@ -180,14 +181,14 @@ jQuery(function ($) {
                     {
                         shapeData: usMap,
                         shapeDataPath: "name",
-                        shapeIdTableField: "name",
+                        shapePropertyPath: "name",
                         dataSource: [
                             { name: "California", population: "38332521" },
                             { name: "New York", population: "19651127" },
                             { name: "Iowa", population: "3090416" }
                         ],
                         enableMouseHover: true,
-                        ShapeSettings: {
+                        shapeSettings: {
                             fill: "#9CBF4E",
                             strokeThickness: "0.5",
                             stroke: "White"

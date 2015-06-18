@@ -44,7 +44,7 @@ The above properties of **shapeSettings** are applied only when **autoFill** pro
 {% highlight html %}
 
 jQuery(function ($) {
-           $("#mapContainer").ejMap({
+   $("#mapContainer").ejMap({
                layers: [
                    {
                        shapeData: usMap,
@@ -205,7 +205,7 @@ Here USA election data is considered as input datasource and stored in “electi
 <table>
 <tr>
 <td>
-<b>[electionData.js]</b>
+[electionData.js]
 var electionData = [
     { State: "Alabama", Candidate: "Romney", Electors: 9 }, 
     { State: "Alaska", Candidate: "Romney", Electors: 3 }, 
@@ -262,7 +262,7 @@ var electionData = [
 </tr>
 <tr>
 <td>
-<b>[HTML]</b>
+[HTML]
 jQuery(function($) {            
     $("#mapContainer").ejMap({                
         layers: [
@@ -353,8 +353,7 @@ layers: [
                         customPalette: ["#E51400", "#A4C400", "#730202",
                           "#008B00", "#EF6535",
                           "#1BA0E2", "#C63477", "#0050EF",
-                          "#BF004D", "#AA00FF"]
-]                                 
+                          "#BF004D", "#AA00FF"]                              
 
                             // ...
                         }
@@ -429,7 +428,7 @@ layers: [
  </script>
      <div  id="myTooltip" style="display: none;">
          <div >
-             <div style="height:40px;width:78px;background:#4586a0;border-radius:3px;">
+            <div style="height:60px;width:120px;background:#4586a0;border-radius:3px;">
                  <div style="margin-top:-20px;margin-left:9px;padding-top:3px">
                      <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:name}}</label>
                  </div>
