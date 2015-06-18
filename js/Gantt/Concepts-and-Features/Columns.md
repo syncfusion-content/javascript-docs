@@ -37,7 +37,7 @@ The following code example shows you how to display the icon in the **TreeGrid**
 {% highlight html %}
 
         <script type="text/x-jsrender" id="columnTemplate">        
-                 <div  style='height:20px;width:20px;margin:auto;background-image:url("./images/{{:~className()}}")'/>              
+                 <div  style='height:20px;width:20px;margin:auto;background-image:url(".../images/\{\{:\~className\(\)\}\}")'/>              
         </script>
 
 {% endhighlight %}
