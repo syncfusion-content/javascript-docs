@@ -70,97 +70,99 @@ _allowMultiple_
 The following code example explains how to render the multiple resources on the **Schedule** control,
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-var dManager = ej.DataManager(window.ResourcesData).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-currentView: ej.Schedule.CurrentView.Workweek,
-// Groups the resources listed out in the below collection
-**group: {**
-**resources: ["Rooms"]**
-**},**
-// resource data collection
-**resources: [**
-**{**
-**field: "roomId",**
-**title: "Room",**
-**name: "Rooms",**
-// disables the multiple selection of resources in the appointment window.
-**allowMultiple: false,**
-**resourceSettings: { dataSource: [**
-**{ text: "Room1", id: 1, color: "#f8a398" },**
-**{ text: "Room2", id: 2, color: "#56ca85"}],**
-**text: "text", id: "id", color: "color"**
-**}**
-**}],**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule",
-// bind the resource id fields collection of each level
-**resourceFields: "roomId"**
+  $(function () {
+        var dManager = ej.DataManager(window.ResourcesData).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentView: ej.Schedule.CurrentView.Workweek,
+            // Groups the resources listed out in the below collection
+          group: {
+          resources: ["Rooms"]
+          },
+            // resource data collection
+          resources: [
+          {
+          field: "roomId",
+          title: "Room",
+          name: "Rooms",
+            // disables the multiple selection of resources in the appointment window.
+          allowMultiple: false,
+          resourceSettings: { dataSource: [
+          { text: "Room1", id: 1, color: "#f8a398" },
+          { text: "Room2", id: 2, color: "#56ca85"}],
+          text: "text", id: "id", color: "color"
+          }
+          }],
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule",
+                // bind the resource id fields collection of each level
+                resourceFields: "roomId"
 
-}
-});
-});
+            }
+        });
+    });
 
-// The appointment data along with resource data to be passed to the dataSource are as follows,
+    // The appointment data along with resource data to be passed to the dataSource are as follows,
 
-window.ResourcesData = [{
-Id: 100,
-Subject: "Bering Sea Gold",
-StartTime: new Date().setHours(9, 0),
-EndTime: new Date().setHours(10, 30),
-AllDay: false,
-Recurrence: true,
-RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
-roomId: 2
-}, {
-Id: 101,
-Subject: "Hello Sea Gold",
-StartTime: new Date().setHours(4, 0),
-EndTime: new Date().setHours(5, 0),
-AllDay: false,
-Recurrence: false,
-roomId: 2
-}, {
-Id: 105,
-Subject: "Daily Planet",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(1, 0),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(2, 0),
-AllDay: false,
-Recurrence: false,
-roomId: 1
-}, {
-Id: 106,
-Subject: "Alaska: The Last Frontier",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(4, 0),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * 2).setHours(5, 0),
-AllDay: false,
-Recurrence: false,
-roomId: 1
-}, {
-Id: 109,
-Subject: "MayDay",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 * -2).setHours(6, 30),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * -2).setHours(7, 30),
-AllDay: false,
-Recurrence: false,
-roomId: 2
-}];
+    window.ResourcesData = [{
+        Id: 100,
+        Subject: "Bering Sea Gold",
+        StartTime: new Date().setHours(9, 0),
+        EndTime: new Date().setHours(10, 30),
+        AllDay: false,
+        Recurrence: true,
+        RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
+        roomId: 2
+    }, {
+        Id: 101,
+        Subject: "Hello Sea Gold",
+        StartTime: new Date().setHours(4, 0),
+        EndTime: new Date().setHours(5, 0),
+        AllDay: false,
+        Recurrence: false,
+        roomId: 2
+    }, {
+        Id: 105,
+        Subject: "Daily Planet",
+        StartTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(1, 0),
+        EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(2, 0),
+        AllDay: false,
+        Recurrence: false,
+        roomId: 1
+    }, {
+        Id: 106,
+        Subject: "Alaska: The Last Frontier",
+        StartTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(4, 0),
+        EndTime: new Date(new Date().getTime() + 86400 * 1000 * 2).setHours(5, 0),
+        AllDay: false,
+        Recurrence: false,
+        roomId: 1
+    }, {
+        Id: 109,
+        Subject: "MayDay",
+        StartTime: new Date(new Date().getTime() + 86400 * 1000 * -2).setHours(6, 30),
+        EndTime: new Date(new Date().getTime() + 86400 * 1000 * -2).setHours(7, 30),
+        AllDay: false,
+        Recurrence: false,
+        roomId: 2
+    }];
 
-</script>
 
 
 
@@ -190,56 +192,60 @@ The following steps defines the way to start with rendering multiple resources o
 * Define the appointment data with required resource-related information fields as follows.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
+
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-window.ResourcesData = [{
-Id: 100,
-Subject: "Bering Sea Gold",
-StartTime: new Date().setHours(8, 0),
-EndTime: new Date().setHours(10, 0),
-AllDay: false,
-Recurrence: true,
-RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
-**roomId: 1, ownerId: 1**
-}, {
-Id: 101,
-Subject: "Hello Sea Gold",
-StartTime: new Date().setHours(4, 0),
-EndTime: new Date().setHours(5, 0),
-AllDay: false,
-Recurrence: false,
-**roomId: 2, ownerId: 3**
-}, {
-Id: 105,
-Subject: "Daily Planet",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(1, 0),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(2, 0),
-AllDay: false,
-Recurrence: false,
-**roomId: 1, ownerId: 1**
-}, {
-Id: 106,
-Subject: "Alaska: The Last Frontier",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(4, 0),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(5, 0),
-AllDay: false,
-Recurrence: false,
-**roomId: 1, ownerId: 5**
-}, {
-Id: 109,
-Subject: "MayDay",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 * 2).setHours(6, 30),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * 2).setHours(7, 30),
-AllDay: false,
-Recurrence: false,
-**roomId: 2, ownerId: 3**
-}];
-});
-</script>
+ $(function () {
+        window.ResourcesData = [{
+            Id: 100,
+            Subject: "Bering Sea Gold",
+            StartTime: new Date().setHours(8, 0),
+            EndTime: new Date().setHours(10, 0),
+            AllDay: false,
+            Recurrence: true,
+            RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
+            roomId: 1, ownerId: 1
+        }, {
+            Id: 101,
+            Subject: "Hello Sea Gold",
+            StartTime: new Date().setHours(4, 0),
+            EndTime: new Date().setHours(5, 0),
+            AllDay: false,
+            Recurrence: false,
+            roomId: 2, ownerId: 3
+        }, {
+            Id: 105,
+            Subject: "Daily Planet",
+            StartTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(1, 0),
+            EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(2, 0),
+            AllDay: false,
+            Recurrence: false,
+            roomId: 1, ownerId: 1
+        }, {
+            Id: 106,
+            Subject: "Alaska: The Last Frontier",
+            StartTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(4, 0),
+            EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(5, 0),
+            AllDay: false,
+            Recurrence: false,
+            roomId: 1, ownerId: 5
+        }, {
+            Id: 109,
+            Subject: "MayDay",
+            StartTime: new Date(new Date().getTime() + 86400 * 1000 * 2).setHours(6, 30),
+            EndTime: new Date(new Date().getTime() + 86400 * 1000 * 2).setHours(7, 30),
+            AllDay: false,
+            Recurrence: false,
+            roomId: 2, ownerId: 3
+        }];
+    });
 
 
 
@@ -261,72 +267,75 @@ Recurrence: false,
 
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-// retrieve the appointment data through query
-var dManager = ej.DataManager(**window.ResourcesData**).executeLocal(ej.Query().take(10));
 
-$("#Schedule1").ejSchedule({
-width: "990px",
-height: "525px",
-currentView: ej.Schedule.CurrentView.Workweek,
+ $(function () {
+        // retrieve the appointment data through query
+        var dManager = ej.DataManager(window.ResourcesData).executeLocal(ej.Query().take(10));
 
-// define the resource collection as below
-**resources: [**
-**{ field: "roomId", // bind field name**
+        $("#Schedule1").ejSchedule({
+            width: "990px",
+            height: "525px",
+            currentView: ej.Schedule.CurrentView.Workweek,
 
-**// title display for resources in the appointment window**
-**title: "Room",**
+            // define the resource collection as below
+          resources: [
+          { field: "roomId", // bind field name
 
-**// for unique identification of resource levels**
-**name: "Rooms",**
+          // title display for resources in the appointment window
+          title: "Room",
 
-**// enable/disable the multiple selection of resources**
-**allowMultiple: false,**
+          // for unique identification of resource levels
+          name: "Rooms",
 
-**resourceSettings: { dataSource: [**
-**{ text: "Room1", id: 1, color: "#f8a398" },**
-**{ text: "Room2", id: 2, color: "#51a0ed" }],**
-**text: "text", id: "id", color: "color"**
-**}**
-**},**
-**{**
-**field: "ownerId",**
-**title: "Owner",**
-**name: "Owners", allowMultiple: true,**
-**resourceSettings: { dataSource: [**
-**{ text: "Andrew", id: 1, groupId: 1, color: "#f8a398" },**
-**{ text: "Cruise", id: 3, groupId: 2, color: "#56ca85" },**
-**{ text: "Jerry", id: 5, groupId: 1, color: "#51a0ed" }],**
-**text: "text", id: "id", groupId: "groupId", color: "color"**
-**}**
-**}],**
+          // enable/disable the multiple selection of resources
+          allowMultiple: false,
 
-**group: {**
-**// unique names of the resources to be grouped**
-**resources: ["Rooms", "Owners"]**
-**},**
+          resourceSettings: { dataSource: [
+          { text: "Room1", id: 1, color: "#f8a398" },
+          { text: "Room2", id: 2, color: "#51a0ed" }],
+          text: "text", id: "id", color: "color"
+          }
+          },
+          {
+          field: "ownerId",
+          title: "Owner",
+          name: "Owners", allowMultiple: true,
+          resourceSettings: { dataSource: [
+          { text: "Andrew", id: 1, groupId: 1, color: "#f8a398" },
+          { text: "Cruise", id: 3, groupId: 2, color: "#56ca85" },
+          { text: "Jerry", id: 5, groupId: 1, color: "#51a0ed" }],
+          text: "text", id: "id", groupId: "groupId", color: "color"
+          }
+          }],
 
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule",
-// bind the resource id fields collection of each level
-**resourceFields: "roomId,ownerId"**
-}
-});
-});
-</script>
+          group: {
+          // unique names of the resources to be grouped
+          resources: ["Rooms", "Owners"]
+          },
+
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule",
+                // bind the resource id fields collection of each level
+                resourceFields: "roomId,ownerId"
+            }
+        });
+    });
 
 
 
@@ -351,50 +360,51 @@ ___Figure_ _88__:___ _schedule with_ _resource grouping._
 
 * When this property is set to true, the resource related fields in the appointment window allows you to select multiple resources. Refer the following code example.
 
+{% highlight html %}
 
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-// retrieve the appointment data through query
-var dManager = ej.DataManager(window.ResourcesData).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-showCurrentTimeIndicator: false,
-currentDate: new Date (2014,4,5),
-currentView: ej.Schedule.CurrentView.Workweek,
-**resources: [{**
-**field: "ownerId",**
-**title: "Owner",**
-**name: "Owners",**
-// enables the multiple selection of resources in the appointment window.
-**allowMultiple: true,**
-**resourceSettings: { dataSource: [**
-**{ text: "Andrew", id: 1, color: "#f8a398" },**
-**{ text: "Cruise", id: 3, color: "#56ca85" },**
-**{ text: "Jerry", id: 5, color: "#51a0ed" }],**
-**text: "text", id: "id", color: "color"**
-**}**
-**}],**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule",
-// bind the resource id fields collection of each level
-**resourceFields: "ownerId"**
+ $(function () {
+        // retrieve the appointment data through query
+        var dManager = ej.DataManager(window.ResourcesData).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            showCurrentTimeIndicator: false,
+            currentDate: new Date (2014,4,5),
+            currentView: ej.Schedule.CurrentView.Workweek,
+          resources: [{
+          field: "ownerId",
+          title: "Owner",
+          name: "Owners",
+            // enables the multiple selection of resources in the appointment window.
+          allowMultiple: true,
+          resourceSettings: { dataSource: [
+          { text: "Andrew", id: 1, color: "#f8a398" },
+          { text: "Cruise", id: 3, color: "#56ca85" },
+          { text: "Jerry", id: 5, color: "#51a0ed" }],
+          text: "text", id: "id", color: "color"
+          }
+          }],
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule",
+                // bind the resource id fields collection of each level
+                resourceFields: "ownerId"
 
-}
-});
-});
-</script>
+            }
+        });
+    });
 
 
 {% endhighlight %}
