@@ -24,19 +24,22 @@ documentation: ug
 * You can set the **Schedule** control to horizontal mode using the following code example.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-//Set Orientation as Horizontal mode
-**orientation: ej.Schedule.Orientation.Horizontal**
-});
-});
-</script>
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            //Set Orientation as Horizontal mode
+            orientation: ej.Schedule.Orientation.Horizontal
+        });
+    });
 
 
 {% endhighlight %}
@@ -46,40 +49,40 @@ $("#Schedule1").ejSchedule({
 Execute the above code to render the following output.
 
 
-
-![](Horizontal-View_images/Horizontal-View_img1.png)
-{:.image }
-
-Figure 93: Schedule with horizontal view
-{:.caption }
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img1.png" Caption="schedule with horizontal view."%}
 
 
 The above example illustrates the horizontal view of **Schedule** control. Similarly you can also set the mode of the **Schedule** as “vertical”.
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+
 <div class="content-container-fluid">
-<div class="row">
-<div class="cols-sample-area">
-<div style="float: left" id="Schedule1">
+    <div class="row">
+        <div class="cols-sample-area">
+            <div style="float: left" id="Div1">
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-</div>
-<div id="Schedule1"> </div>
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
 $(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-//Setting Orientation as Vertical mode
-**orientation: ej.Schedule.Orientation.Vertical,**
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            //Setting Orientation as Vertical mode
+         orientation: ej.Schedule.Orientation.Vertical,
 
 });
 
-});
+    });
 
 
 {% endhighlight %}
@@ -88,11 +91,7 @@ $("#Schedule1").ejSchedule({
 
 Execute the above code to render the following output.
 
-![](Horizontal-View_images/Horizontal-View_img2.png)
-{:.image }
-
-Figure 94: Schedule with vertical view
-{:.caption }
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img2.png" Caption="schedule with vertical view."%}
 
 
 **Resources**
@@ -105,65 +104,62 @@ Figure 94: Schedule with vertical view
 
 * Horizontal view contains another property as **resourceHeaderTemplateId.** It allows you to render the resource header of the **Schedule**. When the orientation is in horizontal mode, **resourceHeaderTemplateId** can be applied.
 
+{% highlight html %}
 
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-var dManager = ej.DataManager(window.HorizontalResourcesData).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-currentDate: new Date (2014,4,5),
-currentView:”month”,
-//Setting Orientation as Horizontal mode
-**orientation: ej.Schedule.Orientation.Horizontal**,
-group: {
-resources: ["Owners"]
-},
-//Setting multiple resources
-**resources: [**
-**{**
-**field: "ownerId",**
-**title: "Owner",**
-**name: "Owners", allowMultiple: true,**
-**resourceSettings: {**
-**dataSource: [**
-**{ text: "Nancy", id: 1, groupId: 1, color: "#f8a398" },**
-**{ text: "Steven", id: 3, groupId: 2, color: "#56ca85" },**
-**{ text: "Michael", id: 5, groupId: 1, color: "#51a0ed" }**
-**],**
-**text: "text", id: "id", groupId: "groupId", color: "color"**
-**}**
-**}],**
-//Setting Appointments
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule",
-resourceFields: "ownerId"
+ $(function () {
+        var dManager = ej.DataManager(window.HorizontalResourcesData).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            currentDate: new Date (2014,4,5),
+            currentView:”month”,
+            //Setting Orientation as Horizontal mode
+          orientation: ej.Schedule.Orientation.Horizontal,
+            group: {
+                resources: ["Owners"]
+            },
+            //Setting multiple resources
+          resources: [
+          {
+          field: "ownerId",
+          title: "Owner",
+          name: "Owners", allowMultiple: true,
+          resourceSettings: {
+          dataSource: [
+          { text: "Nancy", id: 1, groupId: 1, color: "#f8a398" },
+          { text: "Steven", id: 3, groupId: 2, color: "#56ca85" },
+          { text: "Michael", id: 5, groupId: 1, color: "#51a0ed" }
+          ],
+          text: "text", id: "id", groupId: "groupId", color: "color"
+          }
+          }],
+            //Setting Appointments
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule",
+                resourceFields: "ownerId"
 
-}
-});
-});
-</script>
+            }
+        });
+    });
 
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
-![](Horizontal-View_images/Horizontal-View_img3.png)
-{:.image }
-
-Figure 95: Schedule with horizontal multiple resources
-{:.caption }
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img3.png" Caption="Schedule with horizontal multiple resources."%}
 
 
 **Horizontal Resource Grouping**
@@ -173,68 +169,70 @@ Figure 95: Schedule with horizontal multiple resources
 * It is possible to change the **orientation** in horizontal resource grouping. Horizontal view has another one property as **resourceHeaderTemplateId.** It allows to render the resource header of the schedule. When the orientation is in horizontal mode, **resourceHeaderTemplateId** can be applied.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
 $(function () {
-width: "100%",
-currentDate: new Date (2014,4,5),
-currentView: "week",
+        width: "100%",
+        currentDate: new Date (2014,4,5),
+        currentView: "week",
 
-var dManager = ej.DataManager(window.HorizontalResourcesData).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-//Setting orientation as horizontal mode
-**orientation: ej.Schedule.Orientation.Horizontal**,
-//Grouping resources
-**group: {**
-**resources: ["Rooms", "Owners"]**
-**}**,
-//Setting resources
-**resources: [**
-**{**
-**field: "roomId",**
-**title: "Room",**
-**name: "Rooms", allowMultiple: false,**
-**resourceSettings: {**
-**dataSource: [**
-**{ text: "Room1", id: 1, groupId: 1, color: "#cb6bb2" },**
-**{ text: "Room2", id: 2, groupId: 1, color: "#56ca85" }],**
-**text: "text", id: "id", groupId: "groupId", color: "color"**
-**}**
-**}, {**
-**field: "ownerId",**
-**title: "Owner",**
-**name: "Owners", allowMultiple: true,**
-**resourceSettings: {**
-**dataSource: [**
-**{ text: "Nancy", id: 1, groupId: 1, color: "#ffaa00" },**
-**{ text: "Steven", id: 3, groupId: 2, color: "#f8a398" },**
-**{ text: "Michael", id: 5, groupId: 1, color: "#51a0ed" },**
-**{ text: "Laura", id: 7, groupId: 2, color: "#ffaa00" },**
-**{ text: "Robert", id: 8, groupId: 1, color: "#f8a398" },**
-**{ text: "Janet", id: 4, groupId: 2, color: "#51a0ed" }**
-**],**
-**text: "text", id: "id", groupId: "groupId", color: "color"**
-**}**
-**}],**
-//Setting appointments
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule",
-resourceFields: "roomId,ownerId"
+        var dManager = ej.DataManager(window.HorizontalResourcesData).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            //Setting orientation as horizontal mode
+          orientation: ej.Schedule.Orientation.Horizontal,
+            //Grouping resources
+          group: {
+          resources: ["Rooms", "Owners"]
+          },
+            //Setting resources
+          resources: [
+          {
+          field: "roomId",
+          title: "Room",
+          name: "Rooms", allowMultiple: false,
+          resourceSettings: {
+          dataSource: [
+          { text: "Room1", id: 1, groupId: 1, color: "#cb6bb2" },
+          { text: "Room2", id: 2, groupId: 1, color: "#56ca85" }],
+          text: "text", id: "id", groupId: "groupId", color: "color"
+          }
+          }, {
+          field: "ownerId",
+          title: "Owner",
+          name: "Owners", allowMultiple: true,
+          resourceSettings: {
+          dataSource: [
+          { text: "Nancy", id: 1, groupId: 1, color: "#ffaa00" },
+          { text: "Steven", id: 3, groupId: 2, color: "#f8a398" },
+          { text: "Michael", id: 5, groupId: 1, color: "#51a0ed" },
+          { text: "Laura", id: 7, groupId: 2, color: "#ffaa00" },
+          { text: "Robert", id: 8, groupId: 1, color: "#f8a398" },
+          { text: "Janet", id: 4, groupId: 2, color: "#51a0ed" }
+          ],
+          text: "text", id: "id", groupId: "groupId", color: "color"
+          }
+          }],
+            //Setting appointments
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule",
+                resourceFields: "roomId,ownerId"
 
-}
-});
-});
-</script>
+            }
+        });
+    });
 
 
 {% endhighlight %}
@@ -243,12 +241,4 @@ resourceFields: "roomId,ownerId"
 
 Execute the above code to render the following output.
 
-
-
-![](Horizontal-View_images/Horizontal-View_img4.png)
-{:.image }
-
-Figure 96: Schedule with horizontal resource grouping
-{:.caption }
-
-
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img4.png" Caption="Schedule with horizontal resource grouping."%}

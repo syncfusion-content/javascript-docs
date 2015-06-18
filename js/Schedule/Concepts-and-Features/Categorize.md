@@ -13,34 +13,30 @@ documentation: ug
 
 You can use the following code example to include the categorize option.
 
+{% highlight html %}
 
-
-{% highlight js %}
-
-
-<div id="Schedule1"> </div>
-<script>
-$(function () {
-$("#Schedule1").ejSchedule({
-**categorizeSettings:{**
-**enable:true,**
-**allowMultiple:true,**
-**dataSource: [**
-**{ text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },**
-**{ text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },**
-**{ text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }**
-**],**
-**text: "text", id: "id", color: "color",fontColor: "fontColor"**
-**},**
-});
-});
-</script>
-
+<div id="Schedule1"></div>
 
 {% endhighlight %}
 
+{% highlight js %}
+$(function () {
+        $("#Schedule1").ejSchedule({
+          categorizeSettings:{
+          enable:true,
+          allowMultiple:true,
+          dataSource: [
+          { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },
+          { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
+          { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
+          ],
+          text: "text", id: "id", color: "color",fontColor: "fontColor"
+          },
+});
+    });
 
 
+{% endhighlight %}
 
 
 **Categorize Settings**
@@ -80,66 +76,63 @@ The following are the sub-properties used within the categorizeSettings.
 The following code example illustrates on how to render categorize feature in the **Schedule** control.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
+ var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(2));
+        $("#Schedule1").ejSchedule({
+            // categorize data collection
+          categorizeSettings:{
+          enable:true,
+          dataSource: [
+          { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },
+          { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
+          { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
+          ],
+          text: "text", id: "id", color: "color",fontColor: "fontColor"
+          },
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule",
 
+                // bind the resource id fields collection of each level
+                categorize:"Categorize"
+            }
+        });
 
-
-<div id="Schedule1"> </div>
-<script>
-
-$(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(2));
-$("#Schedule1").ejSchedule({
-// categorize data collection
-**categorizeSettings:{**
-**enable:true,**
-**dataSource: [**
-**{ text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },**
-**{ text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },**
-**{ text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }**
-**],**
-**text: "text", id: "id", color: "color",fontColor: "fontColor"**
-**},**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule",
-
-// bind the resource id fields collection of each level
-**categorize:"Categorize"**
-}
-});
-
-});
-// The appointment data along with categorize data to be passed to the dataSource are as follows,
-window.Default = [{
-Id: 100,
-Subject: "Bering Sea Gold",
-StartTime: new Date(new Date().setMinutes(new Date().getMinutes() + 6)),
-EndTime: new Date(new Date().setHours(new Date().getHours() + 2)),
-AllDay: false,
-Recurrence: true,
-RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
-// single value for the categorize
-**Categorize:"3"**
-}, {
-Id: 101,
-Subject: "Bering Sea Gold",
-StartTime:new Date().setHours(4, 0),
-EndTime: new Date().setHours(5, 0),
-AllDay: false,
-Recurrence: false,
-// two values to separate using the comma separate.
-**Categorize: "1,3"**
-}
-];
-</script>
+    });
+    // The appointment data along with categorize data to be passed to the dataSource are as follows,
+    window.Default = [{
+        Id: 100,
+        Subject: "Bering Sea Gold",
+        StartTime: new Date(new Date().setMinutes(new Date().getMinutes() + 6)),
+        EndTime: new Date(new Date().setHours(new Date().getHours() + 2)),
+        AllDay: false,
+        Recurrence: true,
+        RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
+        // single value for the categorize
+        Categorize:"3"
+    }, {
+        Id: 101,
+        Subject: "Bering Sea Gold",
+        StartTime:new Date().setHours(4, 0),
+        EndTime: new Date().setHours(5, 0),
+        AllDay: false,
+        Recurrence: false,
+        // two values to separate using the comma separate.
+        Categorize: "1,3"
+    }
+    ];
 
 
 
@@ -149,10 +142,4 @@ Recurrence: false,
 
 The output of the above code is illustrated as follows.
 
-![C:/Users/hariprasanths/Desktop/imagess/123/Capture1.PNG](Categorize_images/Categorize_img1.png)
-{:.image }
-
-Figure 97: Schedule for the categorize option
-{:.caption }
-
-
+{% include image.html url="/js/Schedule/Categorize_images/Categorize_img1.png" Caption="Schedule for the categorize option."%}

@@ -19,13 +19,8 @@ documentation: ug
 
 The following screenshot displays the **Schedule** control with daily important activities
 
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img1.png" Caption="Schedule Control with Daily Important Activities."%}
 
-
-![](Getting-started_images/Getting-started_img1.png)
-{:.image }
-
-Figure 2: Schedule Control with Daily Important Activities
-{:.caption }
 
 
 **Create a Schedule**
@@ -38,21 +33,21 @@ Figure 2: Schedule Control with Daily Important Activities
 
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta charset="utf-8" />
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
 
-<script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
 
 </head>
 
@@ -68,12 +63,10 @@ Figure 2: Schedule Control with Daily Important Activities
 
 {% highlight html %}
 
-
-
 	<body>
 		<div id="Schedule1"></div>
 	</body>
-  
+	</html>
 
 
 {% endhighlight %}
@@ -99,13 +92,7 @@ $(function () {
 
 * You can run the above code example and an empty **Scheduler** is displayed without appointments. In order, to display the appointments in the **Schedule**, you need to pass data to it. 
 
-
-
-![](Getting-started_images/Getting-started_img2.png)
-{:.image }
-
-Figure 3: Empty Scheduler without Appointments
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img2.png" Caption="Empty Scheduler without Appointments."%}
 
 
 **Pass data to Schedule control**
@@ -118,23 +105,21 @@ Figure 3: Empty Scheduler without Appointments
 
 {% highlight js %}
 
+  var dManager = ej.DataManager({
+        url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
+    });    // DataManager creation
 
 
-var dManager = ej.DataManager({
-url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
-});    // DataManager creation
+    var queryString = ej.Query().from("Events").take(10);   // Query creation
 
 
-var queryString = ej.Query().from("Events").take(10);   // Query creation
-
-
-$(function () {
-$("#Schedule1").ejSchedule({
-appointmentSettings: {
-dataSource: dManager, query: queryString
-}
-});
-});
+    $(function () {
+        $("#Schedule1").ejSchedule({
+            appointmentSettings: {
+                dataSource: dManager, query: queryString
+            }
+        });
+    });
 
 
 {% endhighlight %}
@@ -150,21 +135,22 @@ dataSource: dManager, query: queryString
 {% highlight js %}
 
 
-$(function () {
-$("#Schedule1").ejSchedule({ currentDate: new Date(2014,4,5),
-appointmentSettings: {
-dataSource: dManager,
-query: queryString,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
+ $(function () {
+        $("#Schedule1").ejSchedule({
+            currentDate: new Date(2014, 4, 5),
+            appointmentSettings: {
+                dataSource: dManager,
+                query: queryString,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 {% endhighlight %}
@@ -173,13 +159,7 @@ recurrenceRule: "RecurrenceRule"
 
 The following screenshot displays a **Schedule** control with the appointments in a normal style.
 
-
-
-![](Getting-started_images/Getting-started_img3.png)
-{:.image }
-
-Figure 4: Schedule Control with Appoinments in Simple Style
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img3.png" Caption="Schedule Control with Appoinments in Simple Style."%}
 
 
 You can also customize the appointments within the **Scheduler** using the **template** support discussed in the following sections.
@@ -196,67 +176,67 @@ You can also customize the appointments within the **Scheduler** using the **tem
 
 
 $(function () {
-$("#Schedule1").ejSchedule({
-appointmentTemplateId: "#apptemplate",
-width: "100%", height: "550px",
-currentDate: new Date(2014,4,5),
-appointmentSettings: {
-dataSource: dManager,
-query: queryString,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
+        $("#Schedule1").ejSchedule({
+            appointmentTemplateId: "#apptemplate",
+            width: "100%", height: "550px",
+            currentDate: new Date(2014, 4, 5),
+            appointmentSettings: {
+                dataSource: dManager,
+                query: queryString,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
-$.views.helpers({ format: _getImages });
-function _getImages(date) {     // Method to choose images for the appointments
-switch (new Date(date).getDay()) {
-case 0:
-return "<img src='Images/cake.png'/>"
-break;
-case 1:
-return "<img src='Images/basketball.png'/>"
-break;
-case 2:
-return "<img src='Images/rugby.png'/>"
-break;
-case 3:
-return "<img src='Images/guitar.png'/>"
-break;
-case 4:
-return "<img src='Images/music.png'/>"
-break;
-case 5:
-return "<img src='Images/doctor.png'/>"
-break;
-case 6:
-return "<img src='Images/beach.png'/>"
-break;
-}
-}
+    $.views.helpers({ format: _getImages });
+    function _getImages(date) {     // Method to choose images for the appointments
+        switch (new Date(date).getDay()) {
+            case 0:
+                return "<img src='Images/cake.png'/>"
+                break;
+            case 1:
+                return "<img src='Images/basketball.png'/>"
+                break;
+            case 2:
+                return "<img src='Images/rugby.png'/>"
+                break;
+            case 3:
+                return "<img src='Images/guitar.png'/>"
+                break;
+            case 4:
+                return "<img src='Images/music.png'/>"
+                break;
+            case 5:
+                return "<img src='Images/doctor.png'/>"
+                break;
+            case 6:
+                return "<img src='Images/beach.png'/>"
+                break;
+        }
+    }
+	
 
-<script id="apptemplate" type="text/x-jsrender">
+	{% endhighlight %}
+	
+{% highlight html %}
 
-<div style="height:100%">
-<div style='float:left; width:50px;'>
-{{:~format(StartTime)}}
+<div style="height: 100%">
+    <div style='float: left; width: 50px;'>
+        {{:~format(StartTime)}}
+    </div>
+    <div>
+        <div>{{:Subject}}</div>
+    </div>
 </div>
-<div>
-<div>{{:Subject}}</div>
-</div>
-</div>
-</script>
-
 
 {% endhighlight %}
-
 
 
 > _**Important: The images in the above code snippet are taken from the installation location of the Essential JavaScript Studio in your machine,**_
@@ -267,13 +247,8 @@ break;
 
 * Once you set the template for the appointments, the **Scheduler** is displayed with the customized appointments as shown in the following screenshot.
 
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img4.png" Caption="Scheduler with Customized Appointments."%}
 
-
-![](Getting-started_images/Getting-started_img4.png)
-{:.image }
-
-Figure 5: Scheduler with Customized Appointments
-{:.caption }
 
 
 **Change the Schedule View**
@@ -285,72 +260,71 @@ Figure 5: Scheduler with Customized Appointments
 {% highlight js %}
 
 
+ $(function () {
+        // DataManager creation
+        var dManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
+        });
+        // Query creation
+        var queryString = ej.Query().from("Events").take(10);
+        $("#Schedule1").ejSchedule({
+            appointmentTemplateId: "#apptemplate",
+            width: "100%", height: "550px", currentView: "month",
+            currentDate: new Date(2014, 4, 5),
+            appointmentSettings: {
+                dataSource: dManager,
+                query: queryString,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
-$(function () {
-// DataManager creation
-var dManager = ej.DataManager({
-url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
-});
-// Query creation
-var queryString = ej.Query().from("Events").take(10);
-$("#Schedule1").ejSchedule({
-appointmentTemplateId: "#apptemplate",
-width: "100%", height: "550px", currentView: "month",
-currentDate: new Date(2014,4,5),
-appointmentSettings: {
-dataSource: dManager,
-query: queryString,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
+    $.views.helpers({ format: _getImages });
+    function _getImages(date) {    // method to choose images for the appointments
+        switch (new Date(date).getDay()) {
+            case 0:
+                return "<img src='Images/cake.png'/>"
+                break;
+            case 1:
+                return "<img src='Images/basketball.png'/>"
+                break;
+            case 2:
+                return "<img src='Images/rugby.png'/>"
+                break;
+            case 3:
+                return "<img src='Images/guitar.png'/>"
+                break;
+            case 4:
+                return "<img src='Images/music.png'/>"
+                break;
+            case 5:
+                return "<img src='Images/doctor.png'/>"
+                break;
+            case 6:
+                return "<img src='Images/beach.png'/>"
+                break;
+        }
+    }
 
-$.views.helpers({ format: _getImages });
-function _getImages(date) {    // method to choose images for the appointments
-switch (new Date(date).getDay()) {
-case 0:
-return "<img src='Images/cake.png'/>"
-break;
-case 1:
-return "<img src='Images/basketball.png'/>"
-break;
-case 2:
-return "<img src='Images/rugby.png'/>"
-break;
-case 3:
-return "<img src='Images/guitar.png'/>"
-break;
-case 4:
-return "<img src='Images/music.png'/>"
-break;
-case 5:
-return "<img src='Images/doctor.png'/>"
-break;
-case 6:
-return "<img src='Images/beach.png'/>"
-break;
-}
-}
+{% endhighlight %}
+
+{% highlight html %}
 
 
-
-<script id="apptemplate" type="text/x-jsrender">
-<div style="height:100%">
-<div style='float:left; width:50px;'>
-{{:~format(StartTime)}}
+<div style="height: 100%">
+    <div style='float: left; width: 50px;'>
+        {{:~format(StartTime)}}
+    </div>
+    <div>
+        <div>{{:Subject}}</div>
+    </div>
 </div>
-<div>
-<div>{{:Subject}}</div>
-</div>
-</div>
-</script>
-
 
 {% endhighlight %}
 
@@ -358,13 +332,8 @@ break;
 
 * When you execute the above code example, a **Scheduler** is displayed as follows with the fixed appointment height in a **month** view. 
 
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img5.png" Caption="Scheduler with the fixed appointment height in a month view."%}
 
-
-![](Getting-started_images/Getting-started_img5.png)
-{:.image }
-
-Figure 6: Scheduler with the fixed appointment height in a “month” view.
-{:.caption }
 
 
 **Change the appointment height through CSS**
@@ -375,14 +344,10 @@ Figure 6: Scheduler with the fixed appointment height in a “month” view.
 
 {% highlight css %}
 
-
-
 .e-monthappointment
 {
 	height:auto !important;
 }
-
-
 
 {% endhighlight %}
 
@@ -392,74 +357,72 @@ Figure 6: Scheduler with the fixed appointment height in a “month” view.
 {% highlight js %}
 
 
+ $(function () {
 
-$(function () {
+        // DataManager creation
+        var dManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
+        });
+        // Query creation
+        var queryString = ej.Query().from("Events").take(10);
 
-// DataManager creation
-var dManager = ej.DataManager({
-url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
-});
-// Query creation
-var queryString = ej.Query().from("Events").take(10);
+        $("#Schedule1").ejSchedule({
+            appointmentTemplateId: "#apptemplate",
+            width: "100%", height: "550px", currentView: "month",
+            currentDate: new Date(2014, 4, 5),
+            appointmentSettings: {
+                dataSource: dManager,
+                query: queryString,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
-$("#Schedule1").ejSchedule({
-appointmentTemplateId: "#apptemplate",
-width: "100%", height: "550px", currentView: "month",
-currentDate: new Date(2014,4,5),
-appointmentSettings: {
-dataSource: dManager,
-query: queryString,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
+    $.views.helpers({ format: _getImages });
+    function _getImages(date) {    // Method to choose images for the appointments
+        switch (new Date(date).getDay()) {
+            case 0:
+                return "<img src='Images/cake.png'/>"
+                break;
+            case 1:
+                return "<img src='Images/basketball.png'/>"
+                break;
+            case 2:
+                return "<img src='Images/rugby.png'/>"
+                break;
+            case 3:
+                return "<img src='Images/guitar.png'/>"
+                break;
+            case 4:
+                return "<img src='Images/music.png'/>"
+                break;
+            case 5:
+                return "<img src='Images/doctor.png'/>"
+                break;
+            case 6:
+                return "<img src='Images/beach.png'/>"
+                break;
+        }
+    }
 
-$.views.helpers({ format: _getImages });
-function _getImages(date) {    // Method to choose images for the appointments
-switch (new Date(date).getDay()) {
-case 0:
-return "<img src='Images/cake.png'/>"
-break;
-case 1:
-return "<img src='Images/basketball.png'/>"
-break;
-case 2:
-return "<img src='Images/rugby.png'/>"
-break;
-case 3:
-return "<img src='Images/guitar.png'/>"
-break;
-case 4:
-return "<img src='Images/music.png'/>"
-break;
-case 5:
-return "<img src='Images/doctor.png'/>"
-break;
-case 6:
-return "<img src='Images/beach.png'/>"
-break;
-}
-}
+{% endhighlight %}
 
+{% highlight html %}
 
-
-<script id="apptemplate" type="text/x-jsrender">
-<div style="height:100%">
-<div style='float:left; width:50px;'>
-{{:~format(StartTime)}}
+<div style="height: 100%">
+    <div style='float: left; width: 50px;'>
+        {{:~format(StartTime)}}
+    </div>
+    <div>
+        <div>{{:Subject}}</div>
+    </div>
 </div>
-<div>
-<div>{{:Subject}}</div>
-</div>
-</div>
-</script>
-
 
 {% endhighlight %}
 
@@ -469,13 +432,7 @@ break;
 
 After setting the height for appointments in **month** view, the **Schedule** control is rendered as follows,
 
-
-
-![](Getting-started_images/Getting-started_img6.png)
-{:.image }
-
-Figure 7: Scheduler with appointments in “month" view
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img6.png" Caption="Scheduler with appointments in month view."%}
 
 
 **Manipulate the Appointments**
@@ -488,44 +445,22 @@ Figure 7: Scheduler with appointments in “month" view
 
 
 
-
 > _**Important: While adding new appointments to the Schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.**_
-
-
-
-
 
 
 
 The following screenshot displays an appointment window pop- up that appears when you double-click on the **Schedule** cells.
 
 
-
-![](Getting-started_images/Getting-started_img7.png)
-{:.image }
-
-Figure 8: Appointment with Pop-up Dialog
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img7.png" Caption="Appointment with Pop-up Dialog."%}
 
 
 The following screenshot illustrates a quick appointment pop-up window.
 
-
-
-![](Getting-started_images/Getting-started_img8.png)
-{:.image }
-
-Figure 9: Quick Appointment Pop-up Window
-{:.caption }
-
-
-
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img8.png" Caption="Quick Appointment Pop-up Window."%}
 
 
 > _**Important: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.**_
-
-
-
 
 
 * The event named **appointmentSaved** is triggered while saving a new appointment to the **Schedule** control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 
@@ -537,23 +472,12 @@ Figure 9: Quick Appointment Pop-up Window
 * In order to edit the appointments, double-click the desired appointment, and then edit the required fields in the appointment pop-up as shown in the following screenshot.
 
 
-
-![](Getting-started_images/Getting-started_img9.png)
-{:.image }
-
-Figure 10: Edit Appointments Pop-up
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img9.png" Caption="Edit Appointments Pop-up."%}
 
 
 * To delete an appointment, click the appointment, and then click **delete** icon in the quick appointment pop-up as shown in the following screenshot.
 
-
-
-![](Getting-started_images/Getting-started_img10.png)
-{:.image }
-
-Figure 11: Delete Appointments Pop-up Window
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img10.png" Caption="Delete Appointments Pop-up Window."%}
 
 
 * You can also delete the appointment by selecting the required appointment in the **Schedule** control and click the delete key option. This works only when you set “**allowKeyboardNavigation**” option to **“True”**.
@@ -564,46 +488,23 @@ Figure 11: Delete Appointments Pop-up Window
 
 * To add **recurrence** appointments, you need to check the “**repeat**” option in the appointment window as shown in the following screenshot.
 
-
-
-![](Getting-started_images/Getting-started_img11.png)
-{:.image }
-
-Figure 12: Repeat Appointments
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img11.png" Caption="Repeat Appointments."%}
 
 
 * When you check the **repeat** option, the sub-options available in the recurrence category are shown in the appointment pop-up as follows.
 
 
-
-![](Getting-started_images/Getting-started_img12.png)
-{:.image }
-
-Figure 13: Options in Recurrence Dialog
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img12.png" Caption="Options in Recurrence Dialog."%}
 
 
 * You can choose the required recurrence pattern from the available options and then click **Done**. The main appointment pop-up appears as shown in the following screenshot.
 
-
-
-![](Getting-started_images/Getting-started_img13.png)
-{:.image }
-
-Figure 14: Main Appointment Dialog
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img13.png" Caption="Main Appointment Dialog."%}
 
 
 * Click **Done**. The recurrence appointment with daily pattern is created for every two days that ends after 10 occurrences.
 
-
-
-![](Getting-started_images/Getting-started_img14.png)
-{:.image }
-
-Figure 15: recurrence appointment with daily pattern
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img14.png" Caption="recurrence appointment with daily pattern."%}
 
 
 * You can store the chosen recurrence options usually in a **RecurrenceRule** field in a string format.  Also, the **Recurrence** field indicates whether the appointments created are normal or recurrence type. You can create appointments in a **recurrence** type by setting **Boolean** type to **“True”**.
@@ -615,23 +516,13 @@ Figure 15: recurrence appointment with daily pattern
 * When you double-click the **recurrence** appointment a pop-up window appears as shown in the following screenshot. 
 
 
-
-![](Getting-started_images/Getting-started_img15.png)
-{:.image }
-
-Figure 16: Double-Click the Recurrence Appointment
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img15.png" Caption="Double-Click the Recurrence Appointment."%}
 
 
 * When you click the recurrence appointment, a quick appointment window opens with the following options: **Edit Appointment** and **Edit Series** for editing the appointments - **delete** icon for deleting the appointments.
 
 
-
-![](Getting-started_images/Getting-started_img16.png)
-{:.image }
-
-Figure 17: Quick Appointment Window
-{:.caption }
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img16.png" Caption="Quick Appointment Window."%}
 
 
 **Behaviour Customization using the events**
@@ -646,33 +537,29 @@ Figure 17: Quick Appointment Window
 
 {% highlight js %}
 
-
 $(function () {
-$("#Schedule1").ejSchedule({
-appointmentTemplateId: "#apptemplate",
-width: "100%", height: "550px",
-currentDate: new Date(2014,4,5),
-appointmentSettings: {
-dataSource: dManager,
-query: queryString,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-},
-appointmentWindowOpen: "onAppointmentBeforeOpen"
-});
-});
-function onAppointmentBeforeOpen(args) {
-if (new Date(args.startTime).getDay() == 0 || new Date(args.startTime).getDay() == 6)
-args.cancel = true; // prevents display of appointment pop-up
-}
-
+        $("#Schedule1").ejSchedule({
+            appointmentTemplateId: "#apptemplate",
+            width: "100%", height: "550px",
+            currentDate: new Date(2014, 4, 5),
+            appointmentSettings: {
+                dataSource: dManager,
+                query: queryString,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            },
+            appointmentWindowOpen: "onAppointmentBeforeOpen"
+        });
+    });
+    function onAppointmentBeforeOpen(args) {
+        if (new Date(args.startTime).getDay() == 0 || new Date(args.startTime).getDay() == 6)
+            args.cancel = true; // prevents display of appointment pop-up
+    }
 
 {% endhighlight %}
-
-
 

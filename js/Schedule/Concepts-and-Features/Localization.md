@@ -355,100 +355,90 @@ _Table_ _2__: List of keys and string values_
 
 * To learn about localizing in the **Schedule** control on your required culture, refer the following code example.
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
 $(function () {
 
-// Define the localized words for **fr-FR** culture as below,(Only some of the words are given below)
-ej.Schedule.Locale["fr-FR"] = {
-CreateAppointmentTitle: "créer un rendez-",
-AppointmentSubject: "sujet",
-StartTime: "Heure de début",
-EndTime: "Heure de fin",
-AllDay: "toute la journée",
-Today: "aujourd'hui",
-Recurrence: "répétition",
-Done: "Terminé",
-Cancel: "annuler",
-Day: "jour",
-Week: "semaine",
-WorkWeek: "Semaine de travail",
-Month: "mois",
-Detailed: "détaillé",
-CreateEvent: "créer un rendez-",
-EventBeginsin: "Nomination commence dans",
-Editevent: "Modifier nomination",
-Editseries: "Modifier série",
-Eventwas: "rendez-vous était",
-Hours: "hrs",
-Minutes: "minutes",
-Overdue: "en retard",
-Days: "jour (s)",
-Event: "sujet",
-Close: "proche",
-Delete: "effacer",
-……
-……
-};
+        // Define the localized words for fr-FR culture as below,(Only some of the words are given below)
+        ej.Schedule.Locale["fr-FR"] = {
+            CreateAppointmentTitle: "créer un rendez-",
+            AppointmentSubject: "sujet",
+            StartTime: "Heure de début",
+            EndTime: "Heure de fin",
+            AllDay: "toute la journée",
+            Today: "aujourd'hui",
+            Recurrence: "répétition",
+            Done: "Terminé",
+            Cancel: "annuler",
+            Day: "jour",
+            Week: "semaine",
+            WorkWeek: "Semaine de travail",
+            Month: "mois",
+            Detailed: "détaillé",
+            CreateEvent: "créer un rendez-",
+            EventBeginsin: "Nomination commence dans",
+            Editevent: "Modifier nomination",
+            Editseries: "Modifier série",
+            Eventwas: "rendez-vous était",
+            Hours: "hrs",
+            Minutes: "minutes",
+            Overdue: "en retard",
+            Days: "jour (s)",
+            Event: "sujet",
+            Close: "proche",
+            Delete: "effacer",
+        ……
+        ……
+        };
 
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-},
-// Specify the required culture
-**locale: "fr-FR"**
-});
-});
-</script>
-
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            },
+            // Specify the required culture
+            locale: "fr-FR"
+        });
+    });
 
 
 {% endhighlight %}
 
-
-
-
-
-
-
-
-
-{% highlight text %}
 
 > _**Important: An important note while making use of localization in the schedule control, it is necessary to refer the required culture script file (globalize.culture.xx-XX.min.js) in the script reference section of the sample as follows.**_
 
 
-{% endhighlight %}
 
-
-
-{% highlight js %}
+{% highlight html %}
 
 <head>
 
-<link href="themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" />
-<script src="scripts/jquery-1.10.2.min.js"></script>
-<script src="scripts/jquery.easing.1.3.min.js"></script>
-<script src="scripts/jquery.globalize.min.js"></script>
-<script src="scripts/jsondata.min.js"></script>
-<script src="scripts/jsrender.min.js"></script>
-//To use the **fr-FR** culture in the schedule control, refer the below script file
-**<script src="scripts/cultures/globalize.culture.fr-FR.min.js"></script>**
+    <link href="themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" />
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/jquery.easing.1.3.min.js"></script>
+    <script src="scripts/jquery.globalize.min.js"></script>
+    <script src="scripts/jsondata.min.js"></script>
+    <script src="scripts/jsrender.min.js"></script>
+    //To use the **fr-FR** culture in the schedule control, refer the below script file
+    <script src="scripts/cultures/globalize.culture.fr-FR.min.js"></script>
 
-<script src="scripts/ej.web.all.min.js" type="text/javascript"></script>
+    <script src="scripts/ej.web.all.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -459,16 +449,8 @@ recurrenceRule: "RecurrenceRule"
 
 * Once the **fr-Fr** culture is set to the **Schedule** control, the **Schedule** control with localization applied is displayed as follows.
 
+{% include image.html url="/js/Schedule/Localization_images/Localization_img1.png" Caption="schedule with localization."%}
 
-
-![](Localization_images/Localization_img1.png)
-{:.image }
-
-
-{:.caption }
-
-
-___Figure_ _104__:___ _schedule with_ _localization._
 
 **RTL**
 
@@ -477,33 +459,35 @@ ___Figure_ _104__:___ _schedule with_ _localization._
 The following code example explains how to enable the **rtl** property of the **Schedule** control.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
 
 {% highlight js %}
 
-<div id="Schedule1"> </div>
-<script>
-
 $(function () {
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-**enableRTL: true,**
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            enableRTL: true,
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 
@@ -513,12 +497,5 @@ recurrenceRule: "RecurrenceRule"
 
 * When the **rtl** is set to ‘true’, the **Schedule** control is displayed as follows.
 
-![](Localization_images/Localization_img2.png)
-{:.image }
-
-
-{:.caption }
-
-
-___Figure_ _105__:___ _schedule with_ _RTL._
+{% include image.html url="/js/Schedule/Localization_images/Localization_img2.png" Caption="schedule with RTL."%}
 

@@ -25,32 +25,31 @@ You can render the **Schedule** by using the following code example. Object in t
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Schedule-->
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-<!—Refer the necessary script here-->
+    <!—Refer the necessary script here-->
 </head>
 <body ng-controller="Schedule">
-<ej-Schedule style="float: left" id="Schedule1"
-e-appointmentSettings-datasource="appointments"
-e-appointmentSettings-id="Id"
-e-appointmentSettings-subject="Subject"
-e-appointmentSettings-startTime="StartTime"
-e-appointmentSettings-endTime="EndTime"
-e-appointmentSettings-description="Description"
-e-appointmentSettings-allDay="AllDay"
-e-appointmentSettings-recurrence="Recurrence"
-e-appointmentSettings-recurrenceRule="RecurrenceRule"
-e-width="100%" e-height="525px" e-currentview="setView"
-e-currentdate="setDate" e-contextMenuSettings-enable="true">
+    <ej-schedule style="float: left" id="Ej-Schedule1"
+        e-appointmentsettings-datasource="appointments"
+        e-appointmentsettings-id="Id"
+        e-appointmentsettings-subject="Subject"
+        e-appointmentsettings-starttime="StartTime"
+        e-appointmentsettings-endtime="EndTime"
+        e-appointmentsettings-description="Description"
+        e-appointmentsettings-allday="AllDay"
+        e-appointmentsettings-recurrence="Recurrence"
+        e-appointmentsettings-recurrencerule="RecurrenceRule"
+        e-width="100%" e-height="525px" e-currentview="setView"
+        e-currentdate="setDate" e-contextmenusettings-enable="true">
 
-</ej-Schedule>
+</ej-schedule>
 </body>
 </html>
-
 
 
 
@@ -64,35 +63,35 @@ e-currentdate="setDate" e-contextMenuSettings-enable="true">
 
 * **Menu item** has two types of array objects for cells and appointment respectively.
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Schedule-->
 
-<ej-Schedule style="float: left" id="Schedule1">
+    <ej-schedule style="float: left" id="Ej-Schedule1">
 
-<!--Adding content menu item for appointment -->
+    <!--Adding content menu item for appointment -->
 
-<e-contextMenuSettings-menuItems-appointment>
-< e-appointment e-id="open" e-text="Open Appointment"></ e-appointment>
-< e-appointment e-id="delete" e-text="Delete Appointment"></ e-appointment>
-< e-appointment e-id="categorize" e-text="Delete Appointment">
-</ e-appointment>
-</e-contextMenuSettings-menuItems-appointment>
+    <e-contextMenuSettings-menuItems-appointment>
+    < e-appointment e-id="open" e-text="Open Appointment"></ e-appointment>
+    < e-appointment e-id="delete" e-text="Delete Appointment"></ e-appointment>
+    < e-appointment e-id="categorize" e-text="Delete Appointment">
+    </ e-appointment>
+    </e-contextMenuSettings-menuItems-appointment>
 
-<!--Adding content menu item for cells -->
+    <!--Adding content menu item for cells -->
 
-<e-contextMenuSettings-menuItems-cells>
-<e-contextMenuSettings-menuItems-cell
-e-id="new" e-text="Create New Appointment">
-</e-contextMenuSettings-menuItems-cell>
+    <e-contextMenuSettings-menuItems-cells>
+    <e-contextMenuSettings-menuItems-cell
+    e-id="new" e-text="Create New Appointment">
+    </e-contextMenuSettings-menuItems-cell>
 
-<e-contextMenuSettings-menuItems-cell
-e-id="recurrence" e-text="Create recurrence Appointment">
-</e-contextMenuSettings-menuItems-cell>
+    <e-contextMenuSettings-menuItems-cell
+    e-id="recurrence" e-text="Create recurrence Appointment">
+    </e-contextMenuSettings-menuItems-cell>
 
-</e-contextMenuSettings-menuItems-cells>
+    </e-contextMenuSettings-menuItems-cells>
 
-</ej-Schedule>
+    </ej-schedule>
 
 
 
@@ -106,14 +105,14 @@ e-id="recurrence" e-text="Create recurrence Appointment">
 
 * **Menu item** has two types of array objects for cells and appointment respectively.
 
-{% highlight js %}
+{% highlight html %}
 
-<!--To Render the Schedule-->
+!--To Render the Schedule-->
 
-<ej-Schedule style="float: left" id="Schedule1" e-categorizesetting-enable="true"
-e-categorizesetting-allowMultiple="true" e-categorizesetting-text="text"
-e-categorizesetting-color="color"
-e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
+<ej-schedule style="float: left" id="Ej-Schedule1" e-categorizesetting-enable="true"
+    e-categorizesetting-allowmultiple="true" e-categorizesetting-text="text"
+    e-categorizesetting-color="color"
+    e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
 
 <!--Adding content menu item for appointment -->
 <e-contextMenuSettings-menuItems-appointment>
@@ -144,8 +143,7 @@ fontcolor="Red" id="4">
 
 </e-categorizesetting-datasource>
 
-</ej-Schedule>
-
+</ej-schedule>
 
 
 {% endhighlight %}
@@ -154,11 +152,7 @@ fontcolor="Red" id="4">
 
 Execute the above codes to render the Resultant schedule as follows.
 
-![](MVVM_images/MVVM_img1.png)
-{:.image }
-
-Figure 132: Schedule Rendered in Angular JS
-{:.caption }
+{% include image.html url="/js/Schedule/MVVM_images/MVVM_img1.png" Caption="Schedule Rendered in Angular JS."%}
 
 
 **Two Way Binding** 
@@ -169,33 +163,33 @@ Figure 132: Schedule Rendered in Angular JS
 
 * The following code example explains how to achieve the two way binding to the **Schedule** control.
 
-{% highlight js %}
+{% highlight html %}
 
 <!DOCTYPE html>
 <html ng-app="syncApp" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
-<!—Refer the necessary script here-->
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
+    <!—Refer the necessary script here-->
 </head>
-<body ng-controller="ScheduleCtrl" style="width:50%">
-Current View
-<input id="ddlView" ej-dropdownlist e-datasource="dataList" e-value="drpvalue" e-width="107px" />
-Current Date
-<input id="datepick1" ej-datepicker e-value="setDate" e-width="107px" />
-<ej-Schedule style="float: left" width="400" id="Schedule1"
-e-appointmentSettings-datasource="appointments"
-e-appointmentSettings-id="Id" e-appointmentSettings-subject="Subject"
-e-appointmentSettings-startTime="StartTime"
-e-appointmentSettings-endTime="EndTime"
-e-appointmentSettings-description="Description"
-e-appointmentSettings-allDay="AllDay"
-e-appointmentSettings-recurrence="Recurrence"
-e-appointmentSettings-recurrenceRule="RecurrenceRule"
-e-width="100%" e-height="525px" e-currentview="setView"
-e-currentdate="setDate" e-contextMenuSettings-enable="true"
-e-categorizesetting-enable="true" e-categorizesetting-allowMultiple="true"
-e-categorizesetting-text="text" e-categorizesetting-color="color"
-e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
+<body ng-controller="ScheduleCtrl" style="width: 50%">
+    Current View
+    <input id="ddlView" ej-dropdownlist e-datasource="dataList" e-value="drpvalue" e-width="107px" />
+    Current Date
+    <input id="datepick1" ej-datepicker e-value="setDate" e-width="107px" />
+    <ej-schedule style="float: left" width="400" id="Ej-Schedule1"
+        e-appointmentsettings-datasource="appointments"
+        e-appointmentsettings-id="Id" e-appointmentsettings-subject="Subject"
+        e-appointmentsettings-starttime="StartTime"
+        e-appointmentsettings-endtime="EndTime"
+        e-appointmentsettings-description="Description"
+        e-appointmentsettings-allday="AllDay"
+        e-appointmentsettings-recurrence="Recurrence"
+        e-appointmentsettings-recurrencerule="RecurrenceRule"
+        e-width="100%" e-height="525px" e-currentview="setView"
+        e-currentdate="setDate" e-contextmenusettings-enable="true"
+        e-categorizesetting-enable="true" e-categorizesetting-allowmultiple="true"
+        e-categorizesetting-text="text" e-categorizesetting-color="color"
+        e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
 <e-categorizesetting-datasource>
 <e-categorizesetting-datasource text="Blue category" color="Blue" fontcolor="Red" id="1"></e-categorizesetting-datasource>
 <e-categorizesetting-datasource text="yellow category" color="yellow" fontcolor="Red" id="2"></e-categorizesetting-datasource>
@@ -220,24 +214,23 @@ e-id="today" e-text="Today">
 e-id="gotodate" -text="Go to date">
 </e-contextMenuSettings-menuItems-cell>
 </e-contextMenuSettings-menuItems-cells>
-</ej-Schedule>
+</ej-schedule>
 
 
-<script>
+    <script>
 
-<!—binding the value to the scope variables in application controller-->
+        <!—binding the value to the scope variables in application controller-->
 
-angular.module('syncApp', ['ejangular'])
-.controller('ScheduleCtrl', function ($scope) {
-$scope.appointments = window.Localization;
-$scope.setView = "week";
-$scope.setDate = new Date();
-});
-$("#sampleProperties").ejPropertiesPanel();
-</script>
+        angular.module('syncApp', ['ejangular'])
+        .controller('ScheduleCtrl', function ($scope) {
+            $scope.appointments = window.Localization;
+            $scope.setView = "week";
+            $scope.setDate = new Date();
+        });
+        $("#sampleProperties").ejPropertiesPanel();
+    </script>
 </body>
 </html>
-
 
 
 {% endhighlight %}
@@ -246,11 +239,7 @@ $("#sampleProperties").ejPropertiesPanel();
 
 Execute the above code to render the following output.
 
-![](MVVM_images/MVVM_img2.png)
-{:.image }
-
-Figure 133: ScheduleControl with two way binding in Angular JS
-{:.caption }
+{% include image.html url="/js/Schedule/MVVM_images/MVVM_img2.png" Caption=" ScheduleControl with two way binding in Angular JS."%}
 
 
 **Knockout binding**
@@ -265,20 +254,16 @@ Figure 133: ScheduleControl with two way binding in Angular JS
 
 * [Click here](http://js.syncfusion.com/demos/web/) to see how Konckout binding works with schedule.
 
-
-
-
-
-{% highlight js %}
+{% highlight html %}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Essential JavaScript for Knockout</title>
+    <title>Essential JavaScript for Knockout</title>
 </head>
 <body>
-<div id="Schedule1"
-data-bind="ejSchedule: {
+    <div id="Div1"
+        data-bind="ejSchedule: {
 width: '100%',
 appointmentSettings: {
 dataSource: appointments,
@@ -287,19 +272,19 @@ description: 'Description', startTime: 'StartTime',
 endTime: 'EndTime', allDay: 'AllDay', recurrence: 'Recurrence',
 recurrenceRule: 'RecurrenceRule' },
 currentView: view, currentDate: date }">
-</div>
-<script type="text/javascript">
-$(function () {
-window.viewModel = {
-appointments: ko.observable(window.API),
-view: ko.observable("week"),
-date: ko.observable(new Date())
-};
-$(function () {
-ko.applyBindings(viewModel);
-});
-});
-</script>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            window.viewModel = {
+                appointments: ko.observable(window.API),
+                view: ko.observable("week"),
+                date: ko.observable(new Date())
+            };
+            $(function () {
+                ko.applyBindings(viewModel);
+            });
+        });
+    </script>
 </body>
 </html>
 
@@ -310,14 +295,5 @@ ko.applyBindings(viewModel);
 
 Output of the above code example is as follows.
 
-![](MVVM_images/MVVM_img3.png)
-{:.image }
-
-Figure 134: Schedule with Knockout Binding
-{:.caption }
-
-
-
-
-
+{% include image.html url="/js/Schedule/MVVM_images/MVVM_img3.png" Caption=" Schedule with Knockout Binding."%}
 
