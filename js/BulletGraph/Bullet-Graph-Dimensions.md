@@ -91,7 +91,7 @@ $("#bullet1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with **flatdark** theme
 
-{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img4.png" Caption="Figure 12: Bullet Graph with theme"%}
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img4.png" Caption="Bullet Graph with theme"%}
 
 ## Orientation
 

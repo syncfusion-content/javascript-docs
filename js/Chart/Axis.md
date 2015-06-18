@@ -532,7 +532,7 @@ The axis labels are present along the axis **showing** the value of the data it 
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img18.png" Caption="Figure 1: "%}
+{% include image.html url="/js/Chart/Axis_images/axis_img18.png" Caption="Chart with Axis Labels"%}
 
 **LabelPlacement:**
 
