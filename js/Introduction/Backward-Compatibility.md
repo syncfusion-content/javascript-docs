@@ -96,9 +96,9 @@ ejRotator</td><td>
 ejTreeMap</td></tr>
 <tr>
 <td>
-ejCircularGauge</td><td>
+[ejCircularGauge](#circularAnchor)</td><td>
 ejMenu</td><td>
-[ejSchedule](#ejschedule)</td><td>
+[ejSchedule](#scheduleAnchor)</td><td>
 ejTreeView</td></tr>
 <tr>
 <td>
@@ -391,6 +391,7 @@ symbologyType</td><td>
 SymbologyType</td><td>
  </td></tr>
 </table>
+
 **ejBulletGraph**
 
 <table>
@@ -1004,7 +1005,8 @@ enableRTL</td><td>
  </td></tr>
 </table>
 
-**ejCircularGauge**
+<a name="circularAnchor"></a>
+#### ejCircularGauge
 
 <table>
 <tr>
@@ -4521,6 +4523,7 @@ args.activeItemIndex</td><td>
  </td></tr>
 </table>
 
+<a name="scheduleAnchor"></a>
 #### ejSchedule
 
 <table>
