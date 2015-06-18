@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you briefly on how to create a **Barcode** in your application with **JavaScript**.
 
-**Control** **Structure**
+##Control Structure
 
 {% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img1.png" Caption="Control structure"%}
 
