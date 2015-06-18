@@ -33,17 +33,15 @@ If you want **Toolbar** items other than the above items, you can make it using 
 
 {% highlight html %}
 
-**[JS]**
+<div id="Grid"></div>
 
- <div id="Grid"></div>
-
- <script id="Refresh" type="text/x-jsrender">
-    <select id="products">
-        <option value="">All</option>
-        <option value="2">Drinks</option>
-        <option value="4">Dairy Products</option>
-        <option value="3">Packages</option>
-    </select>    
+    <script id="Refresh" type="text/x-jsrender">
+        <select id="products">
+            <option value="">All</option>
+            <option value="2">Drinks</option>
+            <option value="4">Dairy Products</option>
+            <option value="3">Packages</option>
+        </select>
     </script>
     <script type="text/javascript">
         $(function () {// Document is ready.
@@ -52,8 +50,8 @@ If you want **Toolbar** items other than the above items, you can make it using 
             });
             var gridObj = $("#Grid").ejGrid({
                 dataSource: dataManager,
-              **toolbarSettings: { showToolbar: true, customToolbarItems: [{ templateID: "#Refresh" }] },**
-                scrollSettings: { height: 300,width: "auto" },
+                toolbarSettings: { showToolbar: true, customToolbarItems: [{ templateID: "#Refresh" }] },
+                scrollSettings: { height: 300, width: "auto" },
                 allowScrolling: true,
                 columns: [
                     { field: "ProductID", headerText: "Product ID", textAlign: "right", width: 100 },
@@ -65,13 +63,13 @@ If you want **Toolbar** items other than the above items, you can make it using 
             }).data("ejGrid");
             $("#products").ejDropDownList({
                 selectedItemIndex: 0,
-   **change: function(args) {**
-                    **if (this.getSelectedValue() != "")**
-                        **$("#Grid").ejGrid("model.query", new ej.Query().where("CategoryID", ej.FilterOperators.equal, parseInt(this.getSelectedValue(), 10)));**
-                    **else**
-                        **$("#Grid").ejGrid("model.query", new ej.Query());**
-                    **gridObj.refreshContent(true);**
-                **}**
+                change: function (args) {
+                    if (this.getSelectedValue() != "")
+                        $("#Grid").ejGrid("model.query", new ej.Query().where("CategoryID", ej.FilterOperators.equal, parseInt(this.getSelectedValue(), 10)));
+                    else
+                        $("#Grid").ejGrid("model.query", new ej.Query());
+                    gridObj.refreshContent(true);
+                }
             });
         });
 

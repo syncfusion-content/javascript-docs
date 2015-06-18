@@ -11,7 +11,7 @@ documentation: ug
 
 After **Grid** initialization, **Grid** object is stored in a container element of **Grid**. To access **Grid** object, you can use the following code example.
 
-{% highlight html %}
+{% highlight js %}
 
 var gridObject = $("#Grid").ejGrid("instance");
 

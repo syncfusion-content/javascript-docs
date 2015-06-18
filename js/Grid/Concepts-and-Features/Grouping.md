@@ -17,21 +17,21 @@ In **ejGrid**, there is an option to group columns at **Grid Initialize** that i
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    //window.gridData is refered from jsondata.min.js
-                    dataSource: window.gridData,
-                  **groupSettings: { groupedColumns :["ShipCity"] },**
-                  **allowGrouping**: true,
-                    allowPaging: true,
 
-                });
+  <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                //window.gridData is refered from jsondata.min.js
+                dataSource: window.gridData,
+                groupSettings: { groupedColumns: ["ShipCity"] },
+                allowGrouping: true,
+                allowPaging: true,
+
             });
-        </script>
+        });
+    </script>
 
 
 {% endhighlight %}
@@ -48,22 +48,22 @@ Group buttons is one of the features under Grouping. It is helpful to do Groupin
 
 {% highlight html %}
 
-******[JS]**
-****
-<div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    //window.gridData is refered from jsondata.min.js
-                    dataSource: window.gridData,
-                    allowGrouping: true,
-                  **groupSettings: { showToggleButton: true,** groupedColumns: ["ShipCity"] **},**
-                    allowPaging: true,
 
-                });
+
+    <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                //window.gridData is refered from jsondata.min.js
+                dataSource: window.gridData,
+                allowGrouping: true,
+                groupSettings: { showToggleButton: true, groupedColumns: ["ShipCity"] },
+                allowPaging: true,
+
             });
+        });
 
-        </script>
+    </script>
 
 
 {% endhighlight %}
@@ -76,26 +76,25 @@ The following output is displayed as a result of the above code example.
 
 ## Hide Ungroup Button
 
-In **GroupDropArea**, grouped columns have an option to ungroup a column using **Group****Button**. It is easier than using Drag and Drop to ungroup columns.  By default this **Ungroup****Button** is visible. If you want to hide this button, you can use **showUngroupButton** property to hide columns.
+In **GroupDropArea**, grouped columns have an option to ungroup a column using **GroupButton**. It is easier than using Drag and Drop to ungroup columns.  By default this **UngroupButton** is visible. If you want to hide this button, you can use **showUngroupButton** property to hide columns.
 
 {% include image.html url="/js/Grid/Concepts-and-Features/Grouping_images/Grouping_img3.png" Caption="Ungroup Button"%}
 
 {% highlight html %}
 
-**[JS]**
 
-<div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    //window.gridData is refered from jsondata.min.js
-                    dataSource: window.gridData,
-                  **groupSettings: { showUngroupButton: false ,** groupedColumns: ["ShipCity"] **},**
-                    allowGrouping: true,
-                    allowPaging: true,
-                });
+ <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                //window.gridData is refered from jsondata.min.js
+                dataSource: window.gridData,
+                groupSettings: { showUngroupButton: false, groupedColumns: ["ShipCity"] },
+                allowGrouping: true,
+                allowPaging: true,
             });
-        </script>
+        });
+    </script>
 
 
 {% endhighlight %}
@@ -112,19 +111,19 @@ If you drag any header to Group column in Grid, it expands smoothly its Group Dr
 
 {% highlight html %}
 
-    **[JS]**
-<div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    //window.gridData is refered from jsondata.min.js
-                    dataSource: window.gridData,
-                  **groupSettings: { enableDropAreaAutoSizing: false },**
-                    allowGrouping: true,
-                    allowPaging: true,
-                });
+    
+  <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                //window.gridData is refered from jsondata.min.js
+                dataSource: window.gridData,
+                groupSettings: { enableDropAreaAutoSizing: false },
+                allowGrouping: true,
+                allowPaging: true,
             });
-        </script>
+        });
+    </script>
 
 
 
@@ -144,19 +143,19 @@ When the **showDropArea** property is set to **false**, the **groupDropArea** is
 
 {% highlight html %}
 
-**[JS]**
-<div id="Grid"></div>
-<script type="text/javascript">
+
+ <div id="Grid"></div>
+    <script type="text/javascript">
         $(function () {
-          $("#Grid").ejGrid({
+            $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
                 allowPaging: true,
                 allowGrouping: true,
-              **groupSettings**: { groupedColumns: ["ShipCountry"],**showDropArea**: false }                
+                groupSettings: { groupedColumns: ["ShipCountry"],showDropArea: false }
             });
         });
-</script>
+    </script>
 
 
 {% endhighlight %}

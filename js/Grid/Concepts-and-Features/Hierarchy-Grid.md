@@ -13,20 +13,11 @@ documentation: ug
 
 {% highlight html %}
 
-**[JS]**
-
-  <div class="content-container-fluid">
-        <div class="row">
-            <div class="cols-sample-area">
-                <div id="Grid"></div>
-            </div>
-        </div>
-    </div>
-
+   <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {
-          var data = ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9));
-          var dataManger = ej.DataManager({
+            var data = ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9));
+            var dataManger = ej.DataManager({
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
             });
 
@@ -38,20 +29,20 @@ documentation: ug
                 dataSource: data,
                 allowPaging: true,
                 allowSorting: true,
-                columns: ["EmployeeID", "FirstName", "Title", "City", "Country”],
-                **childGrid: {**
-                    **dataSource: dataManger,**
-                    **queryString: "EmployeeID",**
-                    **allowPaging: true,**
-                    **columns: [ "OrderID”, "ShipCity", "Freight", "ShipName"],**
-                    **childGrid: {**
-                        **dataSource: dataManger2,**
-                        **queryString: "CustomerID",**
-                        **columns: ["CustomerID", "Phone", "Address", "Country"],**
-****
-                    **},**
+                columns: ["EmployeeID", "FirstName", "Title", "City", "Country"],
+                childGrid: {
+                    dataSource: dataManger,
+                    queryString: "EmployeeID",
+                    allowPaging: true,
+                    columns: ["OrderID", "ShipCity", "Freight", "ShipName"],
+                    childGrid: {
+                        dataSource: dataManger2,
+                        queryString: "CustomerID",
+                        columns: ["CustomerID", "Phone", "Address", "Country"],
 
-                **},**
+                    },
+
+                },
 
             });
         });

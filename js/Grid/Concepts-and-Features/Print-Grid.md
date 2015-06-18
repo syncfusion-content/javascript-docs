@@ -13,19 +13,17 @@ Printing is easy with **Grid** control by using **Print Grid** feature. Toolbar 
 
 {% highlight html %}
 
-**[JS]**
-<div id="Grid"></div>
-<script type="text/javascript">
-         $(function () {
+ <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,  				     
-                toolbarSettings:{showToolbar:true,toolbarItems: [**ej.Grid.ToolBarItems.PrintGrid**]},
-                columns: ["OrderID "," CustomerID "," EmployeeID "," Freight”
-                        ," ShipCity” ," Verified”]]
+                dataSource: window.gridData,
+                toolbarSettings:{showToolbar:true,toolbarItems: [ej.Grid.ToolBarItems.PrintGrid]},
+                columns: ["OrderID "," CustomerID "," EmployeeID "," Freight"," ShipCity" ," Verified"]
             });
         });
-    </script>    
+    </script>  
 
 
 {% endhighlight %}

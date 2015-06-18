@@ -19,16 +19,16 @@ Also since JS Grid is a Client-side, it does not have **mapper** property for cu
 
 {% highlight html %}
 
-**[JS]**
-<div id="Grid"></div>
-<script type="text/javascript">
+
+    <div id="Grid"></div>
+    <script type="text/javascript">
         $(function () {
             $("#Grid").ejGrid({
                 dataSource: ej.DataManager({ url: "/api/Orders/", offline: true ,adaptor:”WebApiAdaptor”}),
                 allowPaging: true,
                 allowSorting: true,
-                 toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport, 
-                      ej.Grid.ToolBarItems.PdfExport] },
+                toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport,
+                     ej.Grid.ToolBarItems.PdfExport] },
 
                 columns: [
                         { field: "OrderID", headerText: "Order ID", width: 75 , textAlign: ej.TextAlign.Right },
@@ -38,21 +38,21 @@ Also since JS Grid is a Client-side, it does not have **mapper** property for cu
                         { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
                         { field: "ShipCity", headerText: "Ship City", width: 110 }
                 ],
-toolbarClick: function (e) {
-                   this.exportGrid = **this["export"]**;
-                   if (e.itemName == "Excel Export") {
-                       this.**exportGrid**(‘/api/Orders/ExcelExport')
-                       e.cancel = true;
-                   }
-                   else if (e.itemName == "Word Export") {
-                       this.**exportGrid**('/api/Orders/WordExport')
-                       e.cancel = true;
-                   }
-                   else if (e.itemName == "PDF Export") {
-                       this.**exportGrid**('/api/Orders/PdfExport')
-                       e.cancel = true;
-                   }
-               },
+                toolbarClick: function (e) {
+                    this.exportGrid = this["export"];
+                    if (e.itemName == "Excel Export") {
+                        this.exportGrid('/api/Orders/ExcelExport')
+                        e.cancel = true;
+                    }
+                    else if (e.itemName == "Word Export") {
+                        this.exportGrid('/api/Orders/WordExport')
+                        e.cancel = true;
+                    }
+                    else if (e.itemName == "PDF Export") {
+                        this.exportGrid('/api/Orders/PdfExport')
+                        e.cancel = true;
+                    }
+                },
             });
         });
     </script>

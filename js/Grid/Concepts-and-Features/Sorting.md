@@ -15,18 +15,16 @@ Sorting is a basic technique in **ejGrid**. It helps you view **Grid** records i
 
 {% highlight html %}
 
-**[JS]**
-
-<div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    dataSource: window.gridData,
-                    allowSorting: true,
-                    allowPaging: true,
-                });
+ <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowSorting: true,
+                allowPaging: true,
             });
-        </script>
+        });
+    </script>
 
 
 {% endhighlight %}
@@ -37,7 +35,7 @@ The following output is displayed as a result of the above code example.
 
 {% include image.html url="/js/Grid/Concepts-and-Features/Sorting_images/Sorting_img1.png" Caption="Sorting"%}
 
-> _**Note: EJGrid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use allowMultiSorting in Grid.**_
+> _**Note**: EJGrid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use allowMultiSorting in Grid._
 
 ## External Sorting
 
@@ -45,40 +43,38 @@ In **ejGrid**, you have an **API** to sort a column dynamically. The following c
 
 {% highlight html %}
 
-**[JS]**
 
-<select id="columns">
-            <option value="OrderID">Order ID</option>
-            <option value="CustomerID">Customer ID</option>
-            <option value="EmployeeID">Employee ID</option>
-            <option value="ShipCity">Ship City</option>
-        </select>
-        <br/>
-        <select id="direction">
-            <option>Ascending</option>
-            <option>Descending</option>
-        </select>     
-        <br/>
-        <input type="button" value="sort" id="sort"/>
-        <br/>
-        <div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {// Document is ready.
-                $("#Grid").ejGrid({
-                    dataSource: window.gridData,
-                  **allowSorting: true,**
-                    **allowMultiSorting: true,**
-                    allowPaging: true,
-                });
-                $("#columns,#direction").ejDropDownList();
-                $("#sort").ejButton({
-                    click: function(args) {
-                        $("#Grid").ejGrid("sortColumn", $("#columns").ejDropDownList("getSelectedValue"), ej.sortOrder[$("#direction").ejDropDownList("getSelectedValue")]);
-                    }
-                });
+ <select id="columns">
+        <option value="OrderID">Order ID</option>
+        <option value="CustomerID">Customer ID</option>
+        <option value="EmployeeID">Employee ID</option>
+        <option value="ShipCity">Ship City</option>
+    </select>
+    <br />
+    <select id="direction">
+        <option>Ascending</option>
+        <option>Descending</option>
+    </select>
+    <br />
+    <input type="button" value="sort" id="sort" />
+    <br />
+    <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowSorting: true,
+                allowMultiSorting: true,
+                allowPaging: true,
             });
-        </script>
-
+            $("#columns,#direction").ejDropDownList();
+            $("#sort").ejButton({
+                click: function (args) {
+                    $("#Grid").ejGrid("sortColumn", $("#columns").ejDropDownList("getSelectedValue"), ej.sortOrder[$("#direction").ejDropDownList("getSelectedValue")]);
+                }
+            });
+        });
+    </script>
 
 {% endhighlight %}
 

@@ -13,7 +13,7 @@ documentation: ug
 
 {% highlight html %}
 
-**[JS]**
+
 <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {
@@ -24,7 +24,7 @@ documentation: ug
                 allowSorting: true,
                 allowGrouping: true,
                 enableAltRow: true,
-              **enablePersistence: true,**
+                enablePersistence: true,
                 columns: [
                        { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 65 },
                        { field: "CustomerID", headerText: "Customer ID", width: 90 },

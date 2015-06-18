@@ -13,7 +13,7 @@ Paging is a powerful technique in **Grid** that is used to navigate from one pag
 
 ## Default Paging
 
-When the **allowPaging** property is set as **True**, the properties in the page****settings take the following default values.
+When the **allowPaging** property is set as **True**, the properties in the **pagesettings** take the following default values.
 
 * pageSize-12
 
@@ -25,14 +25,14 @@ The following code example is for the **Grid** with default options.
 
 {% highlight html %}
 
-**[JS]**
-<div id="Grid"></div>
-<script type="text/javascript">
+
+ <div id="Grid"></div>
+    <script type="text/javascript">
         $(function () {
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
-              **allowPaging: true,**
+                allowPaging: true,
 
             });
         });
@@ -53,8 +53,8 @@ In this section, you can see how to use external paging. The following code exam
 
 {% highlight html %}
 
-**[JS]**
-    <div id="Grid"></div><br />
+
+   <div id="Grid"></div><br />
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-1">
@@ -76,7 +76,7 @@ In this section, you can see how to use external paging. The following code exam
         });
         function onChange(args) {
             var gridobj = $("#Grid").data("ejGrid");
-            gridobj.**goToPage**(args.value);
+            gridobj.goToPage(args.value);
         }
     </script>
 
@@ -95,25 +95,24 @@ The following output is displayed as a result of the above code example.
 
 {% highlight html %}
 
-**[JS]**
 <div id="Grid"></div>
-<script type="text/javascript">
-         $(function () {
+    <script type="text/javascript">
+        $(function () {
             var data = ej.DataManager(window.gridData).executeLocal(ej.Query().take(50));
             $("#Grid").ejGrid({
                 dataSource: data,
-                pageSettings: { **enableTemplates: true, template: "#template", showDefaults: false** },
-                columns: ["OrderID "," CustomerID "," EmployeeID "," Freight ","       
-                         OrderDate"]
+                pageSettings: { enableTemplates: true, template: "#template", showDefaults: false },
+                columns: ["OrderID ", " CustomerID ", " EmployeeID ", " Freight ", " OrderDate"]
             });
         });
-    </script> 
+    </script>
     <script type="text/x-jsrender" id="template">
         <a id="prev" value="Prev">Prev</a>
-        <input type="text"/>
-        <input type="button" value="Go"/>
+        <input type="text" />
+        <input type="button" value="Go" />
         <a>Next</a>
-    </script>   
+    </script>
+
 
 
 {% endhighlight %}
@@ -136,10 +135,8 @@ In this section, you can see how to use paging methods in **Grid** control. The 
 
 {% highlight html %}
 
-**[JS]**
-
-  <div id="Grid"></div><br />
-    <div class="row">
+   <div id="Grid"></div><br />
+   <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-1">
             goto
@@ -166,7 +163,7 @@ In this section, you can see how to use paging methods in **Grid** control. The 
             $("#Grid").ejGrid({
                 // the datasource "window.gridData" is referred from jsondata.min.js
                 dataSource: window.gridData,
-              **allowPaging: true,**
+                allowPaging: true,
                 pageSettings: { pageSize: 5 },
 
             });
@@ -175,7 +172,7 @@ In this section, you can see how to use paging methods in **Grid** control. The 
             $("#PageSize").ejNumericTextbox({ value: 12, minValue: 1, maxValue: 10, change: "pageSizeChange" });
         });
         function pageChange(args) {
-            $("#Grid").ejGrid("getPager").ejPager("**goToPage**", args.value);
+            $("#Grid").ejGrid("getPager").ejPager("goToPage", args.value);
         }
         function pageCountChange(args) {
             $("#Grid").ejGrid({ "pageSettings": { pageCount: parseInt(args.value) } });
@@ -200,7 +197,7 @@ Localization is the process of customizing the user interface (**UI**) as locale
 
 The following **UIs** are provided to localize based on culture. The default English localization **UIs** are as follows.
 
-{% highlight html %}
+{% highlight js %}
 
 pagerInfo: "{0} of {1} pages ({2} items)",
 firstPageTooltip: "Go to first page",
@@ -219,10 +216,10 @@ In this section, you can see how to use Globilzation in Grid pager. The followin
 
 {% highlight html %}
 
-**[JS]**
+
 
   <div id="Grid"></div>
-    <div>
+   <div>
         <select id="language">
             <option value="en-US">English</option>
             <option value="de-DE">German</option>
@@ -265,7 +262,7 @@ In this section, you can see how to use Globilzation in Grid pager. The followin
                 pageSettings: { pageSize: 6 },
                 locale: $("#lan").val(),
             });
-            $("#language").ejDropDownList({ width: "120px", "change": "onChange" , selectedItemIndex: 1 })
+            $("#language").ejDropDownList({ width: "120px", "change": "onChange", selectedItemIndex: 1 })
         });
         function onChange(args) {
             $("#Grid").ejGrid("model.locale", args.value);

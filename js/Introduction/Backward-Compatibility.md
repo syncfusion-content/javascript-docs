@@ -24,27 +24,29 @@ List of **common changes** made for all the components are as follows,
 <tr>
 <td>
 <b>Enum</b></td><td>
-ej.textAlign = {   <br/><br/>
-    &nbsp; Center: 'center',<br/>
-    &nbsp;Justify: 'justify',<br/>
-    &nbsp; Left: 'left',<br/>
-    &nbsp; Right: 'right'<br/>
-     };</td><td>
-ej.TextAlign = {    <br/><br/>
-    &nbsp;Center: 'center',  <br/>
-    &nbsp;Justify: 'justify', <br/>
-    &nbsp;Left: 'left',  <br/>
-    &nbsp;Right: 'right'<br/>
-     };</td></tr>
+ej.textAlign = {   <br/>
+&nbsp; Center: 'center',<br/>
+&nbsp; Justify: 'justify',<br/>
+&nbsp; Left: 'left',<br/>
+&nbsp; Right: 'right'<br/>
+};</td><td>
+ej.TextAlign = {    <br/>
+&nbsp;Center: 'center',  <br/>
+&nbsp;Justify: 'justify', <br/>
+&nbsp;Left: 'left',  <br/>
+&nbsp;Right: 'right'<br/>
+};</td></tr>
 <tr>
 <td>
  </td><td>
-ej.orientation = {   <br/><br/>
+ej.orientation = {   <br/>
    &nbsp;Horizontal: "horizontal",<br/>
-   &nbsp;Vertical: "vertical" <br/>}; </td><td>
-ej.Orientation = {    <br/><br/>
+   &nbsp;Vertical: "vertical" <br/>
+}; </td><td>
+ej.Orientation = {    <br/>
   &nbsp;Horizontal: "horizontal",<br/>
-  &nbsp;Vertical:"vertical"<br/> }; </td></tr>
+  &nbsp;Vertical:"vertical"<br/> 
+}; </td></tr>
 </table>
 
 
@@ -2410,11 +2412,11 @@ batchDelete</td><td>
 <tr>
 <td>
 rowSelecting<br/>
-&nbsp;&nbsp;- ;&nbsp;   args.currentRowIndex<br/>
+&nbsp;&nbsp;- &nbsp;   args.currentRowIndex<br/>
 &nbsp;&nbsp;- &nbsp;   args.currrentRow <br/>
 &nbsp;&nbsp;- &nbsp;   args.currentData </td><td>
 rowSelecting<br/>
-&nbsp;&nbsp;- &nbsp  args. rowIndex<br/>
+&nbsp;&nbsp;- &nbsp;  args. rowIndex<br/>
 &nbsp;&nbsp;- &nbsp;  args. row <br/>
 &nbsp;&nbsp;- &nbsp;  args. data </td><td>
  </td></tr>
