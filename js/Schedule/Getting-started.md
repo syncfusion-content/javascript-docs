@@ -13,7 +13,7 @@ documentation: ug
 
 * This section encompasses on how to configure the **Schedule** control for your business requirements. You can pass any data that are bound to the **Schedule** control through various API’s available within it.
 
-*  The most important data used in the **Schedule** control is the appointment data that is bound to it through the “**appointmentSettings**” and “**DataSource**” property. The appointment data can either be passed locally or remotely to the **Schedule** control.
+*  The most important data used in the **Schedule** control is the appointment data that is bound to it through the **appointmentSettings** and **DataSource** property. The appointment data can either be passed locally or remotely to the **Schedule** control.
 
 * In addition, there are several options available in the **Schedule** control to customize the appearance and behaviour of it. In this example, you can see how to add a **Schedule** control to an application to manage some of the important activities in a worksheet.  
 
@@ -34,7 +34,7 @@ Figure 2: Schedule Control with Daily Important Activities
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 
 <!DOCTYPE html>
@@ -62,40 +62,35 @@ Figure 2: Schedule Control with Daily Important Activities
 
 
 
-* Now, add a &lt;div&gt; element that acts as a container for **ejSchedule** widget.
+* Now, add a &lt;div&gt; element within the **body** section which will act as a container for **ejSchedule** widget.
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 
 
-<body>
-<div id="Schedule1"></div>
-</body>
-</html>
+	<body>
+		<div id="Schedule1"></div>
+	</body>
+  
 
 
 {% endhighlight %}
 
 
 
-* Once the container is added, create the **ejSchedule** widget as follows,
+* Once the container is added, create the **ejSchedule** widget within the **script** section as follows,
 
 
 
 {% highlight js %}
 
 
-
-<head>
-<!-- ... -->
-<script type="text/javascript">
 $(function () {
-$("#Schedule1").ejSchedule();
+	$("#Schedule1").ejSchedule();
 });
-</script>
-</head>
+
 
 
 {% endhighlight %}
@@ -125,19 +120,19 @@ Figure 3: Empty Scheduler without Appointments
 
 
 
-**var dManager = ej.DataManager({**
-**url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"**
-**});**    **// DataManager creation**
+var dManager = ej.DataManager({
+url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
+});    // DataManager creation
 
 
-**var queryString = ej.Query().from("Events").take(10);**   **// Query creation**
+var queryString = ej.Query().from("Events").take(10);   // Query creation
 
 
 $(function () {
 $("#Schedule1").ejSchedule({
-**appointmentSettings: {**
-**dataSource: dManager, query: queryString**
-**}**
+appointmentSettings: {
+dataSource: dManager, query: queryString
+}
 });
 });
 
@@ -157,17 +152,17 @@ $("#Schedule1").ejSchedule({
 
 $(function () {
 $("#Schedule1").ejSchedule({ currentDate: new Date(2014,4,5),
-**appointmentSettings: {**
-**dataSource: dManager,**
-**query: queryString,**
-**id: "Id",**
-**subject: "Subject",**
-**startTime: "StartTime",**
-**endTime: "EndTime",**
-**allDay: "AllDay",**
-**recurrence: "Recurrence",**
-**recurrenceRule: "RecurrenceRule"**
-**}**
+appointmentSettings: {
+dataSource: dManager,
+query: queryString,
+id: "Id",
+subject: "Subject",
+startTime: "StartTime",
+endTime: "EndTime",
+allDay: "AllDay",
+recurrence: "Recurrence",
+recurrenceRule: "RecurrenceRule"
+}
 });
 });
 
@@ -202,20 +197,20 @@ You can also customize the appointments within the **Scheduler** using the **tem
 
 $(function () {
 $("#Schedule1").ejSchedule({
-**appointmentTemplateId: "#apptemplate",**
-**width: "100%", height: "550px",**
-**currentDate: new Date(2014,4,5),**
-**appointmentSettings: {**
-**dataSource: dManager,**
-**query: queryString,**
-**id: "Id",**
-**subject: "Subject",**
-**startTime: "StartTime",**
-**endTime: "EndTime",**
-**allDay: "AllDay",**
-**recurrence: "Recurrence",**
-**recurrenceRule: "RecurrenceRule"**
-**}**
+appointmentTemplateId: "#apptemplate",
+width: "100%", height: "550px",
+currentDate: new Date(2014,4,5),
+appointmentSettings: {
+dataSource: dManager,
+query: queryString,
+id: "Id",
+subject: "Subject",
+startTime: "StartTime",
+endTime: "EndTime",
+allDay: "AllDay",
+recurrence: "Recurrence",
+recurrenceRule: "RecurrenceRule"
+}
 });
 });
 
@@ -247,7 +242,7 @@ break;
 }
 }
 
-<script id="**apptemplate**" type="text/x-jsrender">
+<script id="apptemplate" type="text/x-jsrender">
 
 <div style="height:100%">
 <div style='float:left; width:50px;'>
@@ -264,16 +259,11 @@ break;
 
 
 
-
-
-{% highlight text %}
-
 > _**Important: The images in the above code snippet are taken from the installation location of the Essential JavaScript Studio in your machine,**_
-> _For example: $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.43\JavaScript\samples\web\images\schedule__**.**_
+> _For example: $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.43\JavaScript\samples\web\images\schedule_
 > _**You can create a folder named “Images” in the same location as your newly created HTML file and then move all the images from the installation folder to the newly created “Images” folder. This helps you in referring appointments appropriately within the Schedule control.**_
 
 
-{% endhighlight %}
 
 * Once you set the template for the appointments, the **Scheduler** is displayed with the customized appointments as shown in the following screenshot.
 
@@ -288,7 +278,7 @@ Figure 5: Scheduler with Customized Appointments
 
 **Change the Schedule View**
 
-* You can change the view of the **Schedule** from “**week**” to “**month**” by using the **currentView** property. By default, the **Schedule** control is displayed in a **“week”** view.
+* You can change the view of the **Schedule** from **week** to **month** by using the **currentView** property. By default, the **Schedule** control is displayed in a **“week”** view.
 
 
 
@@ -305,7 +295,7 @@ url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
 var queryString = ej.Query().from("Events").take(10);
 $("#Schedule1").ejSchedule({
 appointmentTemplateId: "#apptemplate",
-width: "100%", height: "550px", **currentView: "month",**
+width: "100%", height: "550px", currentView: "month",
 currentDate: new Date(2014,4,5),
 appointmentSettings: {
 dataSource: dManager,
@@ -350,7 +340,7 @@ break;
 
 
 
-<script id="**apptemplate**" type="text/x-jsrender">
+<script id="apptemplate" type="text/x-jsrender">
 <div style="height:100%">
 <div style='float:left; width:50px;'>
 {{:~format(StartTime)}}
@@ -366,7 +356,7 @@ break;
 
 
 
-* When you execute the above code example, a **Scheduler** is displayed as follows with the fixed appointment height in a **“month”** view. 
+* When you execute the above code example, a **Scheduler** is displayed as follows with the fixed appointment height in a **month** view. 
 
 
 
@@ -379,25 +369,22 @@ Figure 6: Scheduler with the fixed appointment height in a “month” view.
 
 **Change the appointment height through CSS**
 
-* The default height of an appointment is always suitable for the text.  In order to display an image and text in the appointment, you can change the height of the appointments in a **“month”** view, through **css** styles manually as shown in the following code example.  You can set the appointment height to **auto** to display the images within it.
+* The default height of an appointment is always suitable for the text.  In order to display an image and text in the appointment, you can change the height of the appointments in a **month** view, through **css** styles manually as shown in the following code example.  You can set the appointment height to **auto** to display the images within it.
 
 
 
 {% highlight css %}
 
 
-<style>
-**.e-monthappointment**
-**{**
-**height:auto !important;**
-**}**
-</style>
+
+.e-monthappointment
+{
+	height:auto !important;
+}
+
 
 
 {% endhighlight %}
-
-
-
 
 
 
@@ -417,7 +404,7 @@ var queryString = ej.Query().from("Events").take(10);
 
 $("#Schedule1").ejSchedule({
 appointmentTemplateId: "#apptemplate",
-width: "100%", height: "550px", **currentView: "month",**
+width: "100%", height: "550px", currentView: "month",
 currentDate: new Date(2014,4,5),
 appointmentSettings: {
 dataSource: dManager,
@@ -462,7 +449,7 @@ break;
 
 
 
-<script id="**apptemplate**" type="text/x-jsrender">
+<script id="apptemplate" type="text/x-jsrender">
 <div style="height:100%">
 <div style='float:left; width:50px;'>
 {{:~format(StartTime)}}
@@ -480,7 +467,7 @@ break;
 
 
 
-After setting the height for appointments in **“month"** view, the **Schedule** control is rendered as follows,
+After setting the height for appointments in **month** view, the **Schedule** control is rendered as follows,
 
 
 
@@ -501,12 +488,10 @@ Figure 7: Scheduler with appointments in “month" view
 
 
 
-{% highlight text %}
 
 > _**Important: While adding new appointments to the Schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.**_
 
 
-{% endhighlight %}
 
 
 
@@ -536,17 +521,14 @@ Figure 9: Quick Appointment Pop-up Window
 
 
 
-{% highlight text %}
 
 > _**Important: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.**_
 
 
-{% endhighlight %}
 
 
 
-
-* The event named “appointmentSaved” is triggered while saving a new appointment to the **Schedule** control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 
+* The event named **appointmentSaved** is triggered while saving a new appointment to the **Schedule** control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 
 
 **Edit/Delete Appointments**
 
@@ -591,7 +573,7 @@ Figure 12: Repeat Appointments
 {:.caption }
 
 
-* When you check the **“repeat”** option, the sub-options available in the recurrence category are shown in the appointment pop-up as follows.
+* When you check the **repeat** option, the sub-options available in the recurrence category are shown in the appointment pop-up as follows.
 
 
 
@@ -602,7 +584,7 @@ Figure 13: Options in Recurrence Dialog
 {:.caption }
 
 
-* You can choose the required recurrence pattern from the available options and then click **“Done”**.**** The main appointment pop-up appears as shown in the following screenshot.
+* You can choose the required recurrence pattern from the available options and then click **Done**. The main appointment pop-up appears as shown in the following screenshot.
 
 
 
@@ -613,7 +595,7 @@ Figure 14: Main Appointment Dialog
 {:.caption }
 
 
-* Click **“Done”.** The recurrence appointment with daily pattern is created for every two days that ends after 10 occurrences.
+* Click **Done**. The recurrence appointment with daily pattern is created for every two days that ends after 10 occurrences.
 
 
 
@@ -641,7 +623,7 @@ Figure 16: Double-Click the Recurrence Appointment
 {:.caption }
 
 
-* When you click the recurrence appointment, a quick appointment window opens with the following options: “Edit Appointment”, “Edit Series” and “**delete”** icon for deleting the appointments.
+* When you click the recurrence appointment, a quick appointment window opens with the following options: **Edit Appointment** and **Edit Series** for editing the appointments - **delete** icon for deleting the appointments.
 
 
 
@@ -656,7 +638,7 @@ Figure 17: Quick Appointment Window
 
 **Restrict the display of appointment window**
 
-* You can restrict creation of the appointments during weekends in **Schedule****JS** using the events and validating its arguments such as **starttime** and **endtime**.
+* You can restrict creation of the appointments during weekends in **Schedule** **JS** using the events and validating its arguments such as **starttime** and **endtime**.
 
 * For example, you can block the appointment pop-up on all the weekends (Default week start date is Monday) using the following code sample with **appointmentWindowOpen** event. 
 
@@ -681,10 +663,10 @@ allDay: "AllDay",
 recurrence: "Recurrence",
 recurrenceRule: "RecurrenceRule"
 },
-**appointmentWindowOpen: "onAppointmentBeforeOpen"**
+appointmentWindowOpen: "onAppointmentBeforeOpen"
 });
 });
-function **onAppointmentBeforeOpen**(args) {
+function onAppointmentBeforeOpen(args) {
 if (new Date(args.startTime).getDay() == 0 || new Date(args.startTime).getDay() == 6)
 args.cancel = true; // prevents display of appointment pop-up
 }
