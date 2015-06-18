@@ -57,8 +57,22 @@ baselineEndDate: "Baseline End Date"
 </td></tr>
 <tr>
 <td>
-Edit Dialog Texts:addFormTitleeditFormTitlesaveButtoncancelButton</td><td>
-editDialogTexts: {     addFormTitle: "New Task",     editFormTitle: "Edit Task",     saveButton: "Save",     cancelButton: "Cancel" },</td></tr>
+<b>Edit Dialog Texts:</b><br>
+addFormTitle<br/>
+editFormTitle<br/>
+saveButton<br/>
+cancelButton<br/>
+</td><td>
+{% highlight js %}
+editDialogTexts: 
+{
+addFormTitle: "New Task",
+editFormTitle: "Edit Task",
+saveButton: "Save",
+cancelButton: "Cancel"
+}
+{% endhighlight %}
+</td></tr>
 <tr>
 <td>
 Date Format</td><td>
