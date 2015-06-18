@@ -34,5 +34,5 @@ The data that is passed to the Chart can have null or undefined values that are 
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Empty-Points_images/Empty-Points_img1.png" Caption="Chart with Empty Points"%}
+{% include image.html url="/js/Chart/Empty-Points_images/Empty-Points_img1.png" Caption="Chart with Empty Points"%}
 

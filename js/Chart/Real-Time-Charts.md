@@ -52,5 +52,5 @@ documentation: ug
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Real-Time-Charts_images/Real-Time-Charts_img1.png" Caption="Real-Time Chart"%}
+{% include image.html url="/js/Chart/Real-Time-Charts_images/Real-Time-Charts_img1.png" Caption="Real-Time Chart"%}
 

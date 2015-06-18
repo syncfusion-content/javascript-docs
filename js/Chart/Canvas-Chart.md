@@ -27,7 +27,7 @@ documentation: ug
 
 The following screenshot illustrates the canvas chart
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Canvas-Chart_images/Canvas-Chart_img1.png" Caption=""%}
+{% include image.html url="/js/Chart/Canvas-Chart_images/Canvas-Chart_img1.png" Caption=""%}
 
 _Canvas Chart_
 

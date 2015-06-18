@@ -36,7 +36,7 @@ You can acquire the information related to a particular data point of series by 
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Behaviour-Customization_images/Behaviour-Customization_img1.png" Caption="Chart with PointRegionMouseMovement"%}
+{% include image.html url="/js/Chart/Behaviour-Customization_images/Behaviour-Customization_img1.png" Caption="Chart with PointRegionMouseMovement"%}
 
 ## Handle Events
 

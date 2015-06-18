@@ -44,7 +44,7 @@ You can plot **multiple****series** on the same Chart. Series are defined by add
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Series_images/Series_img1.png" Caption="Chart with Multiple Series"%}
+{% include image.html url="/js/Chart/Series_images/Series_img1.png" Caption="Chart with Multiple Series"%}
 
 ### CommonSeriesOptions
 
@@ -85,7 +85,7 @@ You can specify the properties common to all series of the Chart in **commonSeri
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Series_images/Series_img2.png" Caption="Chart with CommonSeriesOptions"%}
+{% include image.html url="/js/Chart/Series_images/Series_img2.png" Caption="Chart with CommonSeriesOptions"%}
 
 ## Combination Series
 
@@ -147,7 +147,7 @@ A combination Chart combines two or more Charts types in single Charts. For exam
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Series_images/Series_img3.png" Caption="Combination Chart"%}
+{% include image.html url="/js/Chart/Series_images/Series_img3.png" Caption="Combination Chart"%}
 
 ## Customize Series
 
@@ -176,7 +176,7 @@ You can customize the Chart series using fill, border width and border color. Yo
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Series_images/Series_img4.png" Caption="Customized Chart"%}
+{% include image.html url="/js/Chart/Series_images/Series_img4.png" Caption="Customized Chart"%}
 
 ## Data Labels
 
@@ -222,7 +222,7 @@ Data labels refer to the y values of data points that appear on each point. You 
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Series_images/Series_img5.png" Caption="Chart with Data Labels"%}
+{% include image.html url="/js/Chart/Series_images/Series_img5.png" Caption="Chart with Data Labels"%}
 
 ### ConnectorLine
 
@@ -258,13 +258,13 @@ Data labels refer to the y values of data points that appear on each point. You 
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Series_images/Series_img6.png" Caption="Chart with ConnectorLine"%}
+{% include image.html url="/js/Chart/Series_images/Series_img6.png" Caption="Chart with ConnectorLine"%}
 
 ### Data labels Rotation
 
 Data labels refer to the y values of data points, which appear on each point. You can rotate data labels with positive and negative angles using angle property.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Series_images/Series_img7.png" Caption="Rotated Data Labels"%}
+{% include image.html url="/js/Chart/Series_images/Series_img7.png" Caption="Rotated Data Labels"%}
 
 {% highlight js %}
 

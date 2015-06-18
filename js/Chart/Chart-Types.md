@@ -64,7 +64,7 @@ In multiple series case, you can use **commonSeriesOptions** property to specify
 
 You can configure the appearance of the lines and the points with options **fill** used and **width** of line.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img1.png" Caption="Line Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img1.png" Caption="Line Chart"%}
 
 {% highlight js %}
 
@@ -88,7 +88,7 @@ You can configure the appearance of the lines and the points with options **fill
 
 **Step Line Charts** use horizontal and vertical lines to connect data points resulting in a step like progression. You can configure the appearance of line using **fill** and **width** property in series.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img2.png" Caption="Step Line Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img2.png" Caption="Step Line Chart"%}
 
 {% highlight js %}
 
@@ -112,7 +112,7 @@ You can configure the appearance of the lines and the points with options **fill
 
 **Area Chart** is rendered using a collection of line segments connected to form a closed-loop area filled with a specified color.You can plot multiple series on the same Chart. You can use **Fill** in series to customize the series color and the **border** to customize the series border color and width.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img3.png" Caption="Area Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img3.png" Caption="Area Chart"%}
 
 {% highlight js %}
 
@@ -147,7 +147,7 @@ You can configure the appearance of the lines and the points with options **fill
 
 **Range Area Charts** are similar to regular area Charts except that, each area is rendered over a range.  Specify the y-axis high and low values for each point for the **Range Area Chart.** You can customize the series color and border **using** **fill** and **border** properties in series.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img4.png" Caption="Range Area Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img4.png" Caption="Range Area Chart"%}
 
 
 
@@ -189,7 +189,7 @@ You can configure the appearance of the lines and the points with options **fill
 
 **Step Area Charts** are similar to regular area Charts except that, instead of a straight line tracing the shortest path between points, the values are connected by continuous vertical and horizontal lines forming a step like progression. You can use the **fill** and **border** properties in series to customize the series color and border.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img5.png" Caption="Step Area Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img5.png" Caption="Step Area Chart"%}
 
 {% highlight js %}
 
@@ -218,7 +218,7 @@ You can configure the appearance of the lines and the points with options **fill
 
 **Spline Area Chart** is similar to an **Area Chart** except the difference in the way the points of a series are connected. It connects each series of points by a smooth spline curve. You can plot multiple series on the same Chart. To customize the series color and border, use the **fill** and **border** properties in series.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img6.png" Caption="Spline Area Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img6.png" Caption="Spline Area Chart"%}
 
 {% highlight js %}
 
@@ -254,7 +254,7 @@ You can configure the appearance of the lines and the points with options **fill
 
 **Stacking Area Charts** are similar to regular area Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole. You can customize the series color and border using **fill** and **border** properties in series.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img7.png" Caption="Stacking Area Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img7.png" Caption="Stacking Area Chart"%}
 
 {% highlight js %}
 
@@ -323,13 +323,13 @@ You can configure the appearance of the lines and the points with options **fill
 
 The following screenshot displays the **100% Stacking area chart.**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img8.png" Caption="100% Stacking area chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img8.png" Caption="100% Stacking area chart"%}
 
 ## Column Chart
 
 **Column Charts** are among the most common Chart types that are used. It uses vertical bars (columns) to display different values of one or more items. It is similar to a bar Chart except that the bars are vertical and not horizontal as in bar Chart. Points from adjacent series are drawn as bars next to each other. You can customize the series color and border **using** **fill** and **border** properties in series and each segment of series using **fill** and **border** properties in point.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img9.png" Caption="Column Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img9.png" Caption="Column Chart"%}
 
 {% highlight js %}
 
@@ -370,7 +370,7 @@ The following screenshot displays the **100% Stacking area chart.**
 
 **RangeColumn Chart** is similar to the **Column Chart** except that each column is rendered over a range. Specify the y-axis Starting and Ending values for each point for the **RangeColumn Chart**. You can customize the series color and border **using** **fill** and **border** properties in series and each segment of series using **fill** and **border** properties in point.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img10.png" Caption="RangeColumn Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img10.png" Caption="RangeColumn Chart"%}
 
 {% highlight js %}
 
@@ -404,7 +404,7 @@ The following screenshot displays the **100% Stacking area chart.**
 
 **Stacking Column Charts** are similar to regular column Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole.You can customize the series color and border **using** **fill** and **border** properties in series and each segment of series using **fill** and **border** properties in point.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img11.png" Caption="Stacking Column Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img11.png" Caption="Stacking Column Chart"%}
 
 {% highlight js %}
 
@@ -479,13 +479,13 @@ The following screenshot displays the **100% Stacking area chart.**
 
 The following screenshot displays the **100% Stacking column chat**.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img12.png" Caption="100% Stacking column chat."%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img12.png" Caption="100% Stacking column chat."%}
 
 ## Bar Chart
 
 **Bar Chart** is the simplest and most versatile of statistical diagrams. It displays horizontal bars for each point in the series and points from adjacent series are drawn as bars next to each other. Bar Charts are used to compare values across categories, to display variations in the value of an item over time or to display the values of several items at a single point in time.You can customize the series color and border **using** **fill** and **border** properties in series and each segment of series using **fill** and **border** properties in point.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img13.png" Caption="Bar Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img13.png" Caption="Bar Chart"%}
 
 {% highlight js %}
 
@@ -523,7 +523,7 @@ The following screenshot displays the **100% Stacking column chat**.
 
 **Stacking Bar Charts** are similar to regular bar Charts except that the Y values stack on top of each other in the specified series order. This enables you to visualize the relationship of parts to the whole. You can customize the series color and border **using** **fill** and **border** properties in series and each segment of series using **fill** and **border** properties in point.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img14.png" Caption="Stacking Bar Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img14.png" Caption="Stacking Bar Chart"%}
 
 {% highlight js %}
 
@@ -593,13 +593,13 @@ The following screenshot displays the **100% Stacking column chat**.
 
 The following screenshot displays the **100% Stackingbar chart.**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img15.png" Caption="100% Stackingbar chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img15.png" Caption="100% Stackingbar chart"%}
 
 ## Spline Chart
 
 **Spline Chart** is similar to a **Line Chart** except that it connects the different data points using splines instead of straight lines. You can configure the appearance of the lines and the points with options **fill** used and the **width** of lines.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img16.png" Caption="Spline Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img16.png" Caption="Spline Chart"%}
 
 {% highlight js %}
 
@@ -637,7 +637,7 @@ The following screenshot displays the **100% Stackingbar chart.**
 
 A **Pie Chart** renders y values as slices in a pie. The slices are rendered in proportion to the whole that is the sum of all the y values in the series. Consequently, **Pie Charts** are used to visualize the proportional contribution in terms of percentage or fraction of categories of data to the whole data set. The x values in the data series are treated only as nominal in categorical, qualitative data. The **Pie Chart** displays only one Data Series at a time. You can customize the series color and border **using** **fill** and **border** properties in series and each slice of series using **fill** and **border** properties in point.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img17.png" Caption="Pie Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img17.png" Caption="Pie Chart"%}
 
 {% highlight js %}
 
@@ -684,7 +684,7 @@ A **Pie Chart** renders y values as slices in a pie. The slices are rendered in 
 
 **Doughnut Charts** are pie Charts with a hole, whose value is specified as the doughnut coefficient. The **Doughnut Chart** is best suited for presenting data in proportions. You can customize the series color and border **using** **fill** and **border** properties in series and each slice of series using **fill** and **border** properties in point.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img18.png" Caption="Doughnut Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img18.png" Caption="Doughnut Chart"%}
 
 {% highlight js %}
 
@@ -762,15 +762,15 @@ The semi pie and doughnut chart is a semicircular chart. Data are represented in
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img19.jpeg" Caption="Semi Doughnut Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img19.jpeg" Caption="Semi Doughnut Chart"%}
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img20.jpeg" Caption="Semi Pie Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img20.jpeg" Caption="Semi Pie Chart"%}
 
 ## Pyramid Chart
 
 The **Pyramid Chart** type displays the data that when totalled renders 100%. This type of Chart is a single series Chart representing the data as portions of 100%, and this Chart does not use any axes. You can customize the series color and border **using** **fill** and **border** properties in series and each slice of series using **fill** and **border** properties in point.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img21.png" Caption="Pyramid Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img21.png" Caption="Pyramid Chart"%}
 
 {% highlight js %}
 
@@ -808,7 +808,7 @@ The **Pyramid Chart** type displays the data that when totalled renders 100%. Th
 
 The **Funnel** chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Funnel charts are often used to represent stages in a sales process and expresses the amount of potential revenue for each stage. This type of chart can also be useful in identifying potential problem area in an organization’s sales process. You can customize the funnel width and height using **funnelWidth** and **funnelHeight** properties.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img22.png" Caption="Funnel Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img22.png" Caption="Funnel Chart"%}
 
 {% highlight js %}
 
@@ -844,7 +844,7 @@ The **Funnel** chart is a single series chart representing the data as portions 
 
 **Bubble Chart** is an extension of the **Scatter Chart** (or XY-Chart) where each data marker is represented by a circle whose dimension forms a third variable. Consequently, bubble Charts allow three-variable comparisons allowing for easy visualization of complex interdependencies that are not apparent in two-variable Charts. Bubble Charts are frequently used in market and product comparison studies.
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img23.png" Caption="Bubble Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img23.png" Caption="Bubble Chart"%}
 
 {% highlight js %}
 
@@ -911,7 +911,7 @@ The following code example is used to create a simple **scatter series**.
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img24.png" Caption="Scatter Series"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img24.png" Caption="Scatter Series"%}
 
 ## HiLoOpenCloseSeries 
 
@@ -949,7 +949,7 @@ Represents the close values</td></tr>
 </table>
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img25.png" Caption="HiLoOpenCloseSeries"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img25.png" Caption="HiLoOpenCloseSeries"%}
 
 **bullFillColor**
 
@@ -1027,7 +1027,7 @@ Represents the close values</td></tr>
 </table>
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img26.png" Caption="CandleSeries"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img26.png" Caption="CandleSeries"%}
 
 **bullFillColor**
 
@@ -1086,7 +1086,7 @@ Represents the low values</td></tr>
 </table>
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img27.png" Caption="HiLoSeries"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img27.png" Caption="HiLoSeries"%}
 
 To create a simple **Hilo series** use the following code example.
 
@@ -1113,15 +1113,15 @@ A **Polar Chart** is a circular graph on which data is displayed in terms of val
 
 **LineType**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img28.png" Caption="Line Polar Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img28.png" Caption="Line Polar Chart"%}
 
 **Area Type**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img29.png" Caption="Area Polar Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img29.png" Caption="Area Polar Chart"%}
 
 **Column Type**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img30.png" Caption="Column Polar Chart"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img30.png" Caption="Column Polar Chart"%}
 
 To create a simple **Polar series** use the following code example.
 
@@ -1150,15 +1150,15 @@ To create a simple **Polar series** use the following code example.
 
 **Area Type**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img31.png" Caption="Area RadarSeries"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img31.png" Caption="Area RadarSeries"%}
 
 **Line type**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img32.png" Caption="Line RadarSeries"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img32.png" Caption="Line RadarSeries"%}
 
 **Column type**
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Chart-Types_images/Chart-Types_img33.png" Caption="Column RadarSeries"%}
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img33.png" Caption="Column RadarSeries"%}
 
 To create simple **RadarSeries** use the following code example.
 

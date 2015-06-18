@@ -48,7 +48,7 @@ Chart gets data either locally or remotely. To populate the Chart with data, you
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Working-with-Data_images/Working-with-Data_img1.png" Caption="Chart with local data"%}
+{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img1.png" Caption="Chart with local data"%}
 
 ## Remote Data
 
@@ -88,5 +88,5 @@ The following code example illustrates binding **ejChart** to oData service.
 
 
 
-{% include image.html url="/js/Chart/Concepts-and-Features/Working-with-Data_images/Working-with-Data_img2.png" Caption="Chart with Remote data"%}
+{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img2.png" Caption="Chart with Remote data"%}
 
