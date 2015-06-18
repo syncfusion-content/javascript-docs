@@ -209,10 +209,18 @@ showAccordion</td><td>
 We have removed this method. Already we have <b>show method</b> to achieve this behaviour</td></tr>
 <tr>
 <td>
- <b>Enum</b></td><td>
- ej.Accordion.heightFormat = { Content: "content", Auto: "auto", Fill: "fill" }; </td><td>
- ej.Accordion.HeightAdjustMode = { Content: "content", Auto: "auto", Fill: "fill" };</td><td>
- </td></tr>
+ <b>Enum</b></td> <td>
+ ej.Accordion.heightFormat = { <br><br>
+    &nbsp;Content: "content",<br>
+    &nbsp;Auto: "auto",<br>
+    &nbsp;Fill: "fill"<br>
+    }; </td> <td>
+ ej.Accordion.HeightAdjustMode ={<br><br>
+    &nbsp;Content: "content",<br>
+    &nbsp;Auto: "auto",<br>
+    &nbsp;Fill: "fill"<br> 
+    };</td><td>
+ </td></tr>
 <tr>
 <td>
 <b>Event Name</b></td><td>
@@ -340,15 +348,29 @@ popupWidth</td><td>
  </td></tr>
 <tr>
 <td rowspan = "2">
- <b>Enum</b></td><td>
- ej.sortingOrder = { Ascending:"ascending", Descending: "descending" }; </td><td>
- ej.SortOrder = { Ascending: "ascending", Descending: "descending" };</td><td>
- </td></tr>
+ <b>Enum</b></td><td>
+ ej.sortingOrder = { <br> 
+       &nbsp;&nbsp;Ascending: "ascending",<br>
+       &nbsp;&nbsp;Descending: "descending"<br>
+       }; </td><td>
+ ej.SortOrder = { <br>
+       &nbsp;&nbsp;Ascending: "ascending",<br>
+       &nbsp;&nbsp;Descending: "descending" <br>
+       };</td><td>
+</td></tr>
 <tr>
 <td>
- ej.multiSelectMode = { None: "none", Delimiter: "delimiter", VisualMode: "visualmode" } </td><td>
- ej.MultiSelectMode = { None: "none", Delimiter: "delimiter", VisualMode: "visualmode" }</td><td>
- </td></tr>
+ ej.multiSelectMode = {<br>
+    &nbsp;&nbsp;None: "none",<br>
+    &nbsp;&nbsp;Delimiter: "delimiter",<br>
+    &nbsp;&nbsp;VisualMode: "visualmode"<br>
+    } </td><td>
+ ej.MultiSelectMode = { <br>
+    &nbsp;&nbsp;None: "none",<br>
+    &nbsp;&nbsp;Delimiter: "delimiter",<br> 
+   &nbsp;&nbsp;VisualMode: "visualmode"<br>
+    }</td><td>
+ </td></tr>
 <tr>
 <td>
 <b>Event Name</b></td><td>
@@ -592,20 +614,54 @@ type</td><td colspan = "2">
 Added</td></tr>
 <tr>
 <td rowspan = "3">
- <b>Enum</b></td><td>
- ej.contents = { textOnly:"textonly",imageOnly: "imageonly",imageBoth: "imageboth", textAndImage: "textandimage", imageTextImage:"imagetextimage"}; </td><td colspan = "2">
- ej.ContentType = {TextOnly:"textonly",ImageOnly: "imageonly",ImageBoth: "imageboth",   TextAndImage:"textandimage",ImageTextImage:"imagetextimage"}; </td><td>
- </td></tr>
+ <b>Enum</b></td><td>
+ ej.contents = {<br>
+       &nbsp; &nbsp;textOnly:"textonly",<br>
+       &nbsp; &nbsp;imageOnly: "imageonly",<br>
+       &nbsp; &nbsp;imageBoth: "imageboth",<br>
+       &nbsp; &nbsp;textAndImage: "textandimage",<br>
+       &nbsp; &nbsp;imageTextImage:"imagetextimage"<br>
+       }; </td>
+ <td colspan = "2">
+ ej.ContentType = {<br>
+      &nbsp;&nbsp;TextOnly:"textonly",<br>
+      &nbsp;&nbsp;ImageOnly: "imageonly",<br>
+      &nbsp;&nbsp;ImageBoth: "imageboth",<br>
+      &nbsp;&nbsp;TextAndImage:"textandimage",<br>
+      &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br>
+     }; </td>
+     <td>
+ </td></tr>
 <tr>
 <td>
- ej.imagePositions = {imageRight:"imageright",imageLeft: "imageleft"}; </td><td colspan = "2">
- ej.ImagePosition = { ImageRight:"imageright",ImageLeft: "imageleft"}; </td><td>
- </td></tr>
+ ej.imagePositions = {<br>
+      &nbsp;&nbsp;imageRight:"imageright",<br>
+      &nbsp;&nbsp;imageLeft: "imageleft"<br>
+    }; </td>
+<td colspan = "2">
+ ej.ImagePosition = { <br>
+      &nbsp;&nbsp;ImageRight:"imageright",<br>
+      &nbsp;&nbsp;ImageLeft: "imageleft"<br>
+    }; </td>
+    <td>
+ </td></tr>
 <tr>
-<td>
- ej.buttonSize = {                                                            normal : "normal",                      mini: "mini",              small: "small",               medium:"medium",                    large: "large"}; </td><td colspan = "2">
- ej.ButtonSize = {Normal : "normal",         Mini: "mini",Small:"small",Medium:"medium",Large: "large"}; </td><td>
- </td></tr>
+<td> ej.buttonSize ={<br>
+      &nbsp;&nbsp;normal : "normal",<br>
+      &nbsp;&nbsp;mini: "mini",<br>
+      &nbsp;&nbsp;small: "small",<br>
+      &nbsp;&nbsp;medium:"medium",<br>
+      &nbsp;&nbsp;large: "large"<br>
+    }; </td>
+  <td colspan = "2">
+ ej.ButtonSize = {<br>
+      &nbsp;&nbsp;Normal : "normal",<br>
+      &nbsp;&nbsp;Mini: "mini",<br>
+      &nbsp;&nbsp;Small:"small",<br>
+      &nbsp;&nbsp;Medium:"medium",<br>
+      &nbsp;&nbsp;Large: "large"<br>
+      }; </td><td>
+ </td></tr>
 </table>
 
 **ejChart**
@@ -993,15 +1049,29 @@ enableRTL</td><td>
  </td></tr>
 <tr>
 <td rowspan = "2">
- Enum</td><td>
- ej.checkboxSize = {        small: "small",        medium: "medium"    }; </td><td>
- ej.CheckboxSize = {        Small: "small",        Medium: "medium"    }; </td><td>
- </td></tr>
+ <b>Enum</b></td><td>
+ ej.checkboxSize = {<br>
+       &nbsp;&nbsp;small: "small",<br>
+       &nbsp;&nbsp;medium: "medium"<br>
+       }; </td><td>
+ ej.CheckboxSize = {<br>
+       &nbsp;&nbsp;Small: "small",<br>
+       &nbsp;&nbsp;Medium: "medium"<br>
+       }; </td><td>
+ </td></tr>
 <tr>
 <td>
- ej.checkboxState = {        check: "check",        uncheck: "uncheck",        indeterminate:"indeterminate"    };</td><td>
- ej.CheckState = {        Check: "check",        UnCheck: "uncheck",        Indeterminate:"indeterminate"    };</td><td>
- </td></tr>
+ ej.checkboxState = {<br>
+    &nbsp;&nbsp;check: "check",<br>
+    &nbsp;&nbsp;uncheck: "uncheck",<br>
+    &nbsp;&nbsp;indeterminate:"indeterminate"<br>
+    };</td><td>
+ ej.CheckState = {<br>
+    &nbsp;&nbsp;Check: "check",<br>
+    &nbsp;&nbsp;UnCheck: "uncheck",<br>
+    &nbsp;&nbsp;Indeterminate:"indeterminate"<br>
+    };</td><td>
+ </td></tr>
 </table>
 
 **ejCircularGauge**
@@ -1452,23 +1522,49 @@ highLightWeekend</td><td>
 highlightWeekend</td><td>
  </td></tr>
 <tr>
-<td>
-<b>Enum</b></td><td>
-  ej.DatePicker.Header = { ShowHeaderNone:"ShowHeaderNone",ShowHeaderShort:"ShowHeaderShort",ShowHeaderMin: "ShowHeaderMin",ShowHeaderLong:"ShowHeaderLong"    };</td><td>
-  ej.DatePicker.Header = { ShowHeaderNone:"showheadernone",ShowHeaderShort:"showheadershort",ShowHeaderMin: "showheadermin",ShowHeaderLong: "showheaderlong"    }; </td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
- ej.DatePicker.highlightSection = {         Month: "Month",     Week: "Week",     WorkDays: "WorkDays",     None: "None" }; </td><td>
- ej.DatePicker.HighlightSection = {         Month: "month",     Week: "week",     WorkDays: "workdays",     None: "none" }; </td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
- ej.DatePicker.Level = {        Month: "Month",        Year: "Year",        Decade: "Decade",        Century: "Century"    }; </td><td>
- ej.DatePicker.Level = {        Month: "month",        Year: "year",        Decade: "decade",        Century: "century"    }; </td><td>
- </td></tr>
+<td rowspan = "3">
+<b>Enum</b></td> <td>
+  ej.DatePicker.Header = {<br>
+        &nbsp;&nbsp;ShowHeaderNone:"ShowHeaderNone",<br>
+        &nbsp;&nbsp;ShowHeaderShort:"ShowHeaderShort",<br>
+        &nbsp;&nbsp;ShowHeaderMin: "ShowHeaderMin",<br>
+        &nbsp;&nbsp;ShowHeaderLong:"ShowHeaderLong"<br>
+        };</td> <td>
+  ej.DatePicker.Header = { <br>
+        &nbsp;&nbsp;ShowHeaderNone:"showheadernone",<br>
+        &nbsp;&nbsp;ShowHeaderShort:"showheadershort",<br>
+        &nbsp;&nbsp;ShowHeaderMin: "showheadermin",<br>
+        &nbsp;&nbsp;ShowHeaderLong: "showheaderlong"<br>
+        }; </td> <td>
+ </td></tr>
+<tr><td>
+ ej.DatePicker.highlightSection = {<br>
+    &nbsp;&nbsp;Month: "Month",<br>
+    &nbsp;&nbsp;Week: "Week",<br>
+    &nbsp;&nbsp;WorkDays: "WorkDays",<br>
+    &nbsp;&nbsp;None: "None"<br>
+    }; </td> <td>
+ ej.DatePicker.HighlightSection = {<br>
+    &nbsp;&nbsp;Month: "month",<br>
+    &nbsp;&nbsp;Week: "week",<br>
+    &nbsp;&nbsp;WorkDays: "workdays",<br>
+    &nbsp;&nbsp;None: "none"<br>
+    }; </td> <td>
+ </td></tr>
+<tr><td>
+ ej.DatePicker.Level = {<br>
+    &nbsp;&nbsp;Month: "Month",<br>
+    &nbsp;&nbsp;Year: "Year",<br>
+    &nbsp;&nbsp;Decade: "Decade",<br>
+    &nbsp;&nbsp;Century: "Century"<br>
+    }; </td> <td>
+ ej.DatePicker.Level = {<br>
+    &nbsp;&nbsp;Month: "month",<br>
+    &nbsp;&nbsp;Year: "year",<br>
+    &nbsp;&nbsp;Decade: "decade",<br>
+    &nbsp;&nbsp;Century: "century"<br>
+    }; </td> <td>
+ </td></tr>
 </table>
 
 **Event arguments**
@@ -2023,7 +2119,7 @@ selectItemByValue</td><td>
 <b>New Event Args</b></td><td>
 <b>Comments</b></td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 popupHide</td><td>
  </td><td>
 args.text</td><td>
@@ -2031,11 +2127,10 @@ New Event argument</td></tr>
 <tr>
 <td>
  </td><td>
- </td><td>
 args.value</td><td>
 New Event argument</td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 popupShown</td><td>
  </td><td>
 args.text</td><td>
@@ -2043,18 +2138,16 @@ New Event argument</td></tr>
 <tr>
 <td>
  </td><td>
- </td><td>
 args.value</td><td>
 New Event argument</td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 beforePopupShown</td><td>
  </td><td>
 args.text</td><td>
 New Event argument</td></tr>
 <tr>
 <td>
- </td><td>
  </td><td>
 args.value</td><td>
 New Event argument</td></tr>
@@ -3420,15 +3513,21 @@ keydown</td><td>
  </td></tr>
 <tr>
 <td>
-keyUp</td><td>
+KeyUp</td><td>
 keyup</td><td>
  </td></tr>
 <tr>
 <td>
-<b>Enum</b></td><td>
- ej.inputMode = { Password: "password",Text: "text"                                };  </td><td>
- ej.InputMode = { Password: "password",Text: "text"                                };  </td><td>
- </td></tr>
+<b>Enum</b></td> <td>
+ ej.inputMode = {<br>
+        &nbsp;&nbsp;Password: "password",<br>
+        &nbsp;&nbsp;Text: "text"<br>
+        };  </td> <td>
+ ej.InputMode = {<br>
+        &nbsp;&nbsp;Password: "password",<br>
+        &nbsp;&nbsp;Text: "text"<br>
+        };  </td> <td>
+ </td> </tr>
 </table>
 
 **Event arguments**
@@ -3598,21 +3697,41 @@ showContextMenu</td><td colspan = "2">
  show</td><td colspan = "2">
  </td></tr>
 <tr>
-<td colspan = "2" rowspan = "3">
-<b>Enum</b></td><td colspan = "2">
- ej.menuType = {        NormalMenu:"NormalMenu",        ContextMenu:"ContextMenu"    }; </td><td colspan = "2">
- ej.MenuType = {        NormalMenu:"normalmenu",        ContextMenu:"contextmenu"    }; </td><td colspan = "2">
- </td></tr>
+<td rowspan = "3">
+<b>Enum</b></td><td >
+ ej.menuType = {<br>
+       &nbsp;&nbsp;NormalMenu:"NormalMenu",<br>
+       &nbsp;&nbsp;ContextMenu:"ContextMenu"<br>
+       }; </td>
+       <td>
+ ej.MenuType = {<br>
+           &nbsp;&nbsp;NormalMenu:"normalmenu",<br>
+           &nbsp;&nbsp;ContextMenu:"contextmenu"<br>
+           }; </td>
+           <td>
+ </td></tr>
+ <tr>
+<td >
+ ej.direction = {<br>
+       &nbsp;&nbsp;Left: "Left",<br>
+       &nbsp;&nbsp;Right: "Right"<br>
+    }; </td> <td>
+ ej.Direction = {<br>
+    &nbsp;&nbsp;Left: "left",<br>
+    &nbsp;&nbsp;Right: "right"<br>
+    }; </td> <td>
+ </td></tr>
 <tr>
-<td colspan = "2">
- ej.direction = {        Left: "Left",        Right: "Right"    }; </td><td colspan = "2">
- ej.Direction = {        Left: "left",        Right: "right"    }; </td><td colspan = "2">
- </td></tr>
-<tr>
-<td colspan = "2">
- ej.animationType = {        None: "none",        Default: "default"    }; </td><td colspan = "2">
- ej.AnimationType = {        None: "none",        Default: "default"    }; </td><td colspan = "2">
- </td></tr>
+<td>
+ ej.animationType = {<br>
+    &nbsp;&nbsp;None: "none",<br>
+    &nbsp;&nbsp;Default: "default"<br>
+    }; </td> <td >
+ ej.AnimationType = {<br>
+    &nbsp;&nbsp;None: "none",<br>
+    &nbsp;&nbsp;Default: "default"<br>
+    }; </td> <td>
+ </td></tr>
 </table>
 
 **Event arguments**
@@ -4028,9 +4147,15 @@ enableRTL   </td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.radiobuttonSize = {            small: "small",            medium:"medium"            }; </td><td>
- ej.RadioButtonSize = {            Small: "small",            Medium:"medium"            }; </td><td>
- </td></tr>
+ ej.radiobuttonSize = {<br>
+       &nbsp;&nbsp;small: "small",<br>
+       &nbsp;&nbsp;medium:"medium"<br>
+       }; </td> <td>
+ ej.RadioButtonSize = {<br>
+       &nbsp;&nbsp;Small: "small",<br>
+       &nbsp;&nbsp;Medium:"medium"<br>
+       }; </td><td>
+ </td></tr>
 </table>
 
 **ejRangeNavigator**
@@ -4245,17 +4370,29 @@ hideRating</td><td>
  </td><td>
 We have removed this method. use <b>hide method </b> to achieve this behaviour</td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 <b>Enum</b></td><td>
- ej.Rating.Orientation = {        Horizontal:"Horizontal",        Vertical: "vertical"    } </td><td>
- ej.Rating.Orientation = {        Horizontal:"horizontal",        Vertical: "vertical"    }</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
-ej.Rating.precisions = {        Full: "full",        Half: "half",        Exact: "exact"    }</td><td>
-ej.Rating.Precision = {        Full: "full",        Half: "half",        Exact: "exact"    }</td><td>
- </td></tr>
+ ej.Rating.Orientation = {<br>
+       &nbsp;&nbsp;Horizontal:"Horizontal",<br>
+       &nbsp;&nbsp;Vertical: "vertical"<br>
+       }; </td> <td>
+ ej.Rating.Orientation = {<br>
+       &nbsp;&nbsp;Horizontal:"horizontal",<br>
+       &nbsp;&nbsp;Vertical: "vertical"<br>
+       };</td> <td>
+ </td></tr>
+<tr><td>
+ej.Rating.precisions = {<br>
+    &nbsp;&nbsp;Full: "full",<br>
+    &nbsp;&nbsp;Half: "half",<br>
+    &nbsp;&nbsp;Exact: "exact"<br>
+    };</td><td>
+ej.Rating.Precision = {<br>
+    &nbsp;&nbsp;Full: "full",<br>
+    &nbsp;&nbsp;Half: "half",<br>
+    &nbsp;&nbsp;Exact: "exact"<br>
+    };</td><td>
+ </td></tr>
 </table>
 
 **Event arguments**
@@ -4431,23 +4568,36 @@ thumbClick</td><td>
 thumbItemClick</td><td>
  </td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 <b>Methods</b></td><td>
 previousSlide</td><td>
  slidePrevious</td><td>
  </td></tr>
 <tr>
 <td>
- </td><td>
 nextSlide</td><td>
  slideNext</td><td>
  </td></tr>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.Rotator.pagerPosition = {    TopLeft: "topleft",    TopRight: "topright",    BottomLeft: "bottomleft",    BottomRight: "bottomright",    TopCenter: "topCenter",    Outside: "outside"    }; </td><td>
- ej.Rotator.PagerPosition = {    TopLeft: "topleft",    TopRight: "topright",    BottomLeft: "bottomleft",    BottomRight: "bottomright",    TopCenter: "topCenter",    Outside: "outside"    }; </td><td>
- </td></tr>
+ ej.Rotator.pagerPosition = {<br>
+       &nbsp;&nbsp;TopLeft: "topleft",<br>
+       &nbsp;&nbsp;TopRight: "topright",<br>
+       &nbsp;&nbsp;BottomLeft: "bottomleft",<br>
+       &nbsp;&nbsp;BottomRight: "bottomright",<br>
+       &nbsp;&nbsp;TopCenter: "topCenter",<br>
+       &nbsp;&nbsp;Outside: "outside"<br>
+       }; </td> <td>
+ ej.Rotator.PagerPosition = {<br>
+       &nbsp;&nbsp;TopLeft: "topleft",<br>
+       &nbsp;&nbsp;TopRight: "topright",<br>
+       &nbsp;&nbsp;BottomLeft: "bottomleft",<br>
+       &nbsp;&nbsp;BottomRight: "bottomright",<br>
+       &nbsp;&nbsp;TopCenter: "topCenter",<br>
+       &nbsp;&nbsp;Outside: "outside"<br>
+       }; </td><td>
+ </td></tr>
 </table>
 
 **Event arguments**
@@ -4460,62 +4610,57 @@ nextSlide</td><td>
 <b>New Event Args</b></td><td>
 <b>Comments</b></td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 change</td><td>
 args.id</td><td>
 args.itemID</td><td>
  </td></tr>
 <tr>
 <td>
- </td><td>
 args.index</td><td>
 args.activeItemIndex</td><td>
  </td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 pagerClick</td><td>
 args.id</td><td>
 args.itemID</td><td>
  </td></tr>
 <tr>
 <td>
- </td><td>
 args.index</td><td>
 args.activeItemIndex</td><td>
  </td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 start</td><td>
 args.id</td><td>
 args.itemID</td><td>
  </td></tr>
 <tr>
 <td>
- </td><td>
 args.index</td><td>
 args.activeItemIndex</td><td>
  </td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 stop</td><td>
 args.id</td><td>
 args.itemID</td><td>
  </td></tr>
 <tr>
 <td>
- </td><td>
 args.index</td><td>
 args.activeItemIndex</td><td>
  </td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 thumbItemClick</td><td>
 args.id</td><td>
 args.itemID</td><td>
  </td></tr>
 <tr>
 <td>
- </td><td>
 args.index</td><td>
 args.activeItemIndex</td><td>
  </td></tr>
@@ -4691,9 +4836,16 @@ incrementStep</td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.sliderType = {        Default: "default",        MinRange: "minrange",        Range: "range"    }; </td><td>
- ej.SliderType = {        Default: "default",        MinRange: "minrange",        Range: "range"    }; </td><td>
- </td></tr>
+ ej.sliderType = {<br>
+       &nbsp;&nbsp;Default: "default",<br>
+       &nbsp;&nbsp;MinRange: "minrange",<br>
+       &nbsp;&nbsp;Range: "range"<br>
+       }; </td> <td>
+ ej.SliderType = {<br>
+       &nbsp;&nbsp;Default: "default",<br>
+       &nbsp;&nbsp;MinRange: "minrange",<br>
+       &nbsp;&nbsp;Range: "range"<br>
+       }; </td><td>
 </table>
 
 **Event arguments**
@@ -4757,22 +4909,50 @@ targetId</td><td>
 targetID</td><td>
  </td></tr>
 <tr>
-<td rowspan = "2">
+<td rowspan = "3">
 <b>Enum</b></td><td>
- ej.contents = { textOnly:"textonly",      imageOnly:"imageonly",  imageBoth: "imageboth",  textAndImage: "textandimage",  imageTextImage: "imagetextimage"                                    }; </td><td>
- ej.Contents = {TextOnly:"textonly",ImageOnly: "imageonly",ImageBoth: "imageboth",TextAndImage:"textandimage", ImageTextImage:"imagetextimage"                                    }; </td><td>
- </td></tr>
+ ej.contents = {<br>
+      &nbsp;&nbsp;textOnly:"textonly",<br>
+      &nbsp;&nbsp;imageOnly:"imageonly",<br>
+      &nbsp;&nbsp;imageBoth: "imageboth",<br>
+      &nbsp;&nbsp;textAndImage: "textandimage",<br>
+      &nbsp;&nbsp;imageTextImage: "imagetextimage"<br>
+      }; </td> <td>
+ ej.Contents = {<br>
+      &nbsp;&nbsp;TextOnly:"textonly",<br>
+      &nbsp;&nbsp;ImageOnly: "imageonly",<br>
+      &nbsp;&nbsp;ImageBoth: "imageboth",<br>
+      &nbsp;&nbsp;TextAndImage:"textandimage",<br>
+      &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br>
+      }; </td><td>
+ </td></tr>
 <tr>
 <td>
- ej.imagePositions = {                imageRight: "imageright",            imageLeft: "imageleft"}; </td><td>
- ej.ImagePositions = { ImageRight:"imageright",ImageLeft: "imageleft"}; </td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
- ej.buttonSize = {                                                            normal : "normal",                      mini:"mini",               small: "small",             medium:"medium",                    large:"large"}; </td><td>
- ej.ButtonSize = {                                                Normal : "normal",            Mini:"mini",              Small: "small",                          Medium:"medium",                        Large: "large"}; </td><td>
- </td></tr>
+ ej.imagePositions = {<br>
+    &nbsp;&nbsp;imageRight: "imageright",<br>
+    &nbsp;&nbsp;imageLeft: "imageleft"<br>
+    }; </td><td>
+ ej.ImagePositions = {<br>
+    &nbsp;&nbsp;ImageRight:"imageright",<br>
+    &nbsp;&nbsp;ImageLeft: "imageleft"<br>
+    }; </td><td>
+ </td></tr>
+<tr><td>
+ ej.buttonSize = {<br>
+    &nbsp;&nbsp;normal : "normal",<br>
+    &nbsp;&nbsp;mini:"mini",<br>
+    &nbsp;&nbsp;small: "small",<br>
+    &nbsp;&nbsp;medium:"medium",<br>
+    &nbsp;&nbsp;large:"large"<br>
+    }; </td><td>
+ ej.ButtonSize = {<br>
+    &nbsp;&nbsp;Normal : "normal",<br>
+    &nbsp;&nbsp;Mini:"mini",<br>
+    &nbsp;&nbsp;Small: "small",<br>
+    &nbsp;&nbsp;Medium:"medium",<br>
+    &nbsp;&nbsp;Large: "large"<br>
+    }; </td><td>
+ </td></tr>
 </table>
 
 **Event arguments**
@@ -4892,131 +5072,95 @@ removeItem</td><td>
 <b>New Event Args</b></td><td>
 <b>Comments</b></td></tr>
 <tr>
-<td>
+<td rowspan = "7">
 beforeExpandCollapse</td><td>
 args.SplitterId</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.collapsed.paneIndex</td><td>
 args.collapsed.index</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.collapsed.paneObj</td><td>
 args.collapsed.item</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.collapsed.prevSize</td><td>
 args.collapsed.size</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.expanded.paneIndex</td><td>
 args.expanded.index</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.expanded.paneObj</td><td>
 args.expanded.item</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.expanded.prevSize</td><td>
 args.expanded.size</td><td>
- </td></tr>
+ </td></tr>
 <tr>
-<td>
+<td rowspan = "7">
 expandCollapse</td><td>
 args.SplitterId</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.collapsed.paneIndex</td><td>
 args.collapsed.index</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.collapsed.paneObj</td><td>
 args.collapsed.item</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.collapsed.prevSize</td><td>
 args.collapsed.size</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.expanded.paneIndex</td><td>
 args.expanded.index</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.expanded.paneObj</td><td>
 args.expanded.item</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.expanded.prevSize</td><td>
 args.expanded.size</td><td>
- </td></tr>
+ </td></tr>
 <tr>
-<td>
+<td rowspan = "7">
 resize</td><td>
 args.SplitterId</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.prevPane.paneIndex</td><td>
 args.prevPane.index</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.prevPane.paneObj</td><td>
 args.prevPane.item</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.prevPane.paneSize</td><td>
 args.prevPane.size</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.nextPane.paneIndex</td><td>
 args.nextPane.index</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.nextPane.paneObj</td><td>
 args.nextPane.item</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.nextPane.paneSize</td><td>
 args.nextPane.size</td><td>
- </td></tr>
+ </td></tr>
 </table>
 
 **ejTab**
@@ -5071,41 +5215,41 @@ active</td><td>
 itemActive</td><td>
  </td></tr>
 <tr>
-<td>
+<td rowspan ="5">
 <b>Methods</b></td><td>
 add</td><td>
 addItem</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 disableItems</td><td>
- </td><td>
-We have remove this method. use <b>disabledItemIndex property </b>to achieve this behaviour</td></tr>
-<tr>
-<td>
- </td><td>
+ </td><td>
+We have remove this method. use <b>disabledItemIndex property </b>to achieve this behaviour</td></tr>
+<tr><td>
 enableItems</td><td>
- </td><td>
-We have remove this method. Use <b>enabledItemIndex property </b>to achieve this behaviour</td></tr>
-<tr>
-<td>
- </td><td>
+ </td><td>
+We have remove this method. Use <b>enabledItemIndex property </b>to achieve this behaviour</td></tr>
+<tr><td>
 remove</td><td>
 removeItem</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 tabCount</td><td>
 getItemsCount</td><td>
- </td></tr>
-<tr>
+    </td></tr>
+     <tr>
 <td>
 <b>Enum</b></td><td>
- ej.Tab.heightFormat = {        Content: "content",        Auto: "auto",        Fill: "fill"    }; </td><td>
- ej.Tab.HeightAdjustMode = {        Content: "content",        Auto: "auto",        Fill: "fill"    }; </td><td>
- </td></tr>
+ ej.Tab.heightFormat = {<br>
+         &nbsp;&nbsp;Content: "content",<br>
+         &nbsp;&nbsp;Auto: "auto",<br>
+         &nbsp;&nbsp;Fill: "fill"<br>
+         }; </td> <td>
+ ej.Tab.HeightAdjustMode = {<br>
+         &nbsp;&nbsp;Content: "content",<br>
+         &nbsp;&nbsp;Auto: "auto",<br>
+         &nbsp;&nbsp;Fill: "fill"<br>
+         }; </td><td>
+ </td></tr>
 </table>
 
 **Event arguments**
@@ -5113,256 +5257,200 @@ getItemsCount</td><td>
 <table>
 <tr>
 <td>
-<b>Event Name</b></td><td>
+    <b>Event Name</b></td><td>
 <b>Old Event Args</b></td><td>
 <b>New Event Args</b></td><td>
 <b>Comments</b></td></tr>
 <tr>
-<td>
+<td rowspan = "7">
 ajaxBeforeLoad</td><td>
- </td><td>
+ </td><td>
 args.url</td><td>
 New event arguments</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.newContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.newSelectedIndex</td><td>
 args.activeIndex</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.newTab</td><td>
 args.activeHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.oldTab</td><td>
 args.prevActiveHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.oldContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.oldSelectedIndex</td><td>
 args.prevActiveIndex</td><td>
- </td></tr>
+ </td></tr>
 <tr>
-<td>
+<td rowspan = "7">
 ajaxLoad</td><td>
- </td><td>
+ </td><td>
 args.url</td><td>
 New event arguments</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.newContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.newSelectedIndex</td><td>
 args.activeIndex</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.newTab</td><td>
 args.activeHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.oldTab</td><td>
 args.prevActiveHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.oldContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.oldSelectedIndex</td><td>
 args.prevActiveIndex</td><td>
- </td></tr>
+ </td></tr>
 <tr>
-<td>
+<td rowspan = "6">
 beforeActive</td><td>
 args.newContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.newSelectedIndex</td><td>
 args.activeIndex</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.newTab</td><td>
 args.activeHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.oldTab</td><td>
 args.prevActiveHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.oldContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr>><td>
 args.oldSelectedIndex</td><td>
 args.prevActiveIndex</td><td>
- </td></tr>
+ </td></tr>
 <tr>
-<td>
+<td rowspan = "6">
 itemActive</td><td>
 args.newContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.newSelectedIndex</td><td>
 args.activeIndex</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.newTab</td><td>
 args.activeHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.oldTab</td><td>
 args.prevActiveHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.oldContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
-<tr>
-<td>
- </td><td>
+<tr><td>
 args.oldSelectedIndex</td><td>
 args.prevActiveIndex</td><td>
- </td></tr>
+ </td></tr>
 <tr>
 <td>
 itemRemove</td><td>
 args.removeContentPanel</td><td>
- </td><td>
+ </td><td>
 Removed event argument</td></tr>
 <tr>
 <td>
 beforeItemRemove</td><td>
 args.deleteIndex</td><td>
 args.index</td><td>
- </td></tr>
+ </td></tr>
 <tr>
-<td>
+<td rowspan = "2">
 itemAdd</td><td>
 args.addTab</td><td>
 args.tabHeader</td><td>
- </td></tr>
-<tr>
-<td>
- </td><td>
+ </td></tr>
+<tr><td>
 args.addContentPanel</td><td>
 args.tabContent</td><td>
- </td></tr>
+ </td></tr>
 <tr>
-<td>
+<td rowspan = "6">
 ajaxSuccess</td><td>
- </td><td>
+ </td><td>
 args.url</td><td>
 New Event</td></tr>
-<tr>
-<td>
- </td><td>
- </td><td>
+<tr><td>
+ </td><td>
 args.type</td><td>
- </td></tr>
+ </td></tr>
 <tr>
 <td>
- </td><td>
- </td><td>
+ </td><td>
 args.model</td><td>
- </td></tr>
+ </td></tr>
 <tr>
 <td>
- </td><td>
- </td><td>
+ </td><td>
 args.cancel</td><td>
- </td></tr>
+ </td></tr>
 <tr>
 <td>
- </td><td>
- </td><td>
+ </td><td>
 args.data</td><td>
- </td></tr>
+ </td></tr>
 <tr>
 <td>
- </td><td>
- </td><td>
+ </td><td>
 args.content</td><td>
- </td></tr>
+ </td></tr>
 <tr>
-<td>
+<td rowspan = "5">
 ajaxError</td><td>
- </td><td>
+ </td><td>
 args.url</td><td>
 New Event</td></tr>
 <tr>
 <td>
- </td><td>
- </td><td>
+ </td><td>
 args.type</td><td>
- </td></tr>
+ </td></tr>
 <tr>
 <td>
- </td><td>
- </td><td>
+ </td><td>
 args.model</td><td>
- </td></tr>
+ </td></tr>
 <tr>
 <td>
- </td><td>
- </td><td>
+ </td><td>
 args.cancel</td><td>
- </td></tr>
+ </td></tr>
 <tr>
 <td>
- </td><td>
- </td><td>
+ </td><td>
 args.data</td><td>
- </td></tr>
+ </td></tr>
 </table>
 
 **ejTagCloud**
@@ -5388,9 +5476,15 @@ title</td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.format = {        Cloud: "cloud",        List: "list"    }; </td><td>
- ej.Format = {        Cloud: "cloud",        List: "list"    }; </td><td>
- </td></tr>
+ ej.format = {<br>
+        &nbsp;&nbsp;Cloud: "cloud",<br>
+        &nbsp;&nbsp;List: "list"<br>
+        }; </td><td>
+ ej.Format = {<br>
+        &nbsp;&nbsp;Cloud: "cloud",<br>
+        &nbsp;&nbsp;List: "list"<br>
+        }; </td><td>
+ </td></tr>
 </table>
 
 **ejTextBoxes**
@@ -5654,10 +5748,22 @@ enableRTL   </td><td>
  </td></tr>
 <tr>
 <td>
-Enum</td><td>
- ej.contents = {textOnly:"textonly",imageOnly: "imageonly",imageBoth: "imageboth",textAndImage:"textandimage",imageTextImage:"imagetextimage"}; </td><td>
- ej.Contents = {TextOnly:"textonly",ImageOnly: "imageonly",ImageBoth: "imageboth",TextAndImage: "textandimage",ImageTextImage:"imagetextimage"}; </td><td>
- </td></tr>
+<b>Enum</b></td><td>
+ ej.contents = {<br>
+        &nbsp;&nbsp;textOnly:"textonly",<br>
+        &nbsp;&nbsp;imageOnly: "imageonly",<br>
+        &nbsp;&nbsp;imageBoth: "imageboth",<br>
+        &nbsp;&nbsp;textAndImage:"textandimage",<br>
+        &nbsp;&nbsp;imageTextImage:"imagetextimage"<br>
+        }; </td><td>
+ ej.Contents = {<br>
+        &nbsp;&nbsp;TextOnly:"textonly",<br>
+        &nbsp;&nbsp;ImageOnly: "imageonly",<br>
+        &nbsp;&nbsp;ImageBoth: "imageboth",<br>
+        &nbsp;&nbsp;TextAndImage: "textandimage",<br>
+        &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br>
+        }; </td><td>
+ </td></tr>
 </table>
 
 **ejToolbar**
