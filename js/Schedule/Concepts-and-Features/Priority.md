@@ -117,30 +117,7 @@ The following code example illustrates on how to render priority feature in the�
 
   On executing the above specified code the Priority field will be added in the create appointment window as follows:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![C:/Users/karthigeyan/Desktop/p1.png](Priority_images/Priority_img1.png)
-{:.image }
-
-
-{:.caption }
-
-
-
-
-
+ {% include image.html url="/js/Schedule/Priority_images/Priority_img1.png" Caption="schedule with priority."%}
 
 
 
@@ -216,7 +193,7 @@ The following code example illustrates how to define the css style while using t
 
 // Her we are defining the style of the “custom priority icon”
 
-<style>
+
     .critical,
     .ultracritical,
     .none {
@@ -238,7 +215,7 @@ The following code example illustrates how to define the css style while using t
         background-color: red;
         background-position: 2px;
     }
-</style>
+
 
 
 {% endhighlight %}
@@ -298,29 +275,8 @@ The following code example illustrates how to define the css style while using t
 
 On excuting the above mentioned codes will render the same output as follows.
 
+ {% include image.html url="/js/Schedule/Priority_images/Priority_img2.png" Caption=""%}
 
 
-
-
-![](Priority_images/Priority_img2.png)
-{:.image }
-
-
-{:.caption }
-
-
-
-
-
-
-
-
-![](Priority_images/Priority_img3.png)
-{:.image }
-
-
-{:.caption }
-
-
-
+{% include image.html url="/js/Schedule/Priority_images/Priority_img3.png" Caption="schedule with customised priority."%}
 

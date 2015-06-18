@@ -180,16 +180,8 @@ The following code example explains how to get the reminder list and display it 
 
 Execute the above code to render the following output.
 
+ {% include image.html url="/js/Schedule/Reminder_images/Reminder_img1.png" Caption="schedule with Reminder."%}
 
-
-![](Reminder_images/Reminder_img1.png)
-{:.image }
-
-
-{:.caption }
-
-
-___Figure_ _106__:___ _schedule with_ _Reminder._
 
 
 

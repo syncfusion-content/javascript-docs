@@ -78,59 +78,62 @@ The entire records that are initially assigned through dataSource is taken into 
 * You can use the following code example to include the “location field” in schedule control.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
+
 
 {% highlight js %}
 
-
-<div id="Schedule1"> </div>
-<script>
 $(function () {
-var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-currentDate: new Date(2014, 4, 5),
-**showLocationField: true,**       // To display the Location field in the appointment Window need to enable this property
-appointmentSettings: {
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-description:"Description",
-allDay: "AllDay",
-**location:"Location",**           // To display the Location value need to bind the property like this
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentDate: new Date(2014, 4, 5),
+            showLocationField: true,       // To display the Location field in the appointment Window need to enable this property
+            appointmentSettings: {
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                description:"Description",
+                allDay: "AllDay",
+                location:"Location",           // To display the Location value need to bind the property like this
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
-// The appointment data along with location data to be passed to the dataSource are as follows,
-window.Default = [{
-Id: 100,
-Subject: "Meeting",
-StartTime: new Date(2014,4,2,06,00),
-EndTime:new Date(2014,4,2,08,00),
-Description: "",
-**Location: "office",**  // Passing string value to the Location field
-AllDay: false,
-Recurrence: true,
-RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10"
-},
-{
-Id: 101,
-Subject: "Testing",
-StartTime: new Date(2014,3,30,06,30),
-EndTime: new Date(2014,3,30,07,30),
-Description: "",
-**Location: "Hospital",** // Passing string value to the Location field
-AllDay: false,
-Recurrence: false
+    // The appointment data along with location data to be passed to the dataSource are as follows,
+    window.Default = [{
+        Id: 100,
+        Subject: "Meeting",
+        StartTime: new Date(2014,4,2,06,00),
+        EndTime:new Date(2014,4,2,08,00),
+        Description: "",
+        Location: "office",  // Passing string value to the Location field
+        AllDay: false,
+        Recurrence: true,
+        RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10"
+    },
+    {
+        Id: 101,
+        Subject: "Testing",
+        StartTime: new Date(2014,3,30,06,30),
+        EndTime: new Date(2014,3,30,07,30),
+        Description: "",
+        Location: "Hospital", // Passing string value to the Location field
+        AllDay: false,
+        Recurrence: false
 
-}
-];
-</script>
+    }
+    ];
 
 
 {% endhighlight %}
@@ -139,11 +142,7 @@ Recurrence: false
 
 On executing the above specified code the **Location** field will be added in the create appointment window as follows:
 
-![C:/Users/karthigeyan/Desktop/a.png](Data-binding_images/Data-binding_img1.png)
-{:.image }
-
-
-{:.caption }
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img1.png" Caption="schedule with location field."%}
 
 
 **priority**
@@ -157,108 +156,90 @@ On executing the above specified code the **Location** field will be added in th
 * Specify the valid array of appointment objects to the dataSource property of the **Schedule** control as shown in the below code.
 
 
+{% highlight html %}
 
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 
 {% highlight js %}
 
+ window.Default = [{
+        Id: 100,
+        Subject: "Bering Sea Gold",
+        StartTime: new Date().setHours(9, 0),
+        EndTime: new Date().setHours(10, 30),
+        AllDay: false,
+        Recurrence: true,
+        RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10"
+    }, {
+        Id: 101,
+        Subject: "Bering Sea Gold",
+        StartTime: new Date().setHours(4, 0),
+        EndTime: new Date().setHours(5, 0),
+        AllDay: false,
+        Recurrence: false
+    }, {
+        Id: 105,
+        Subject: "Daily Planet",
+        StartTime: new Date(new Date().getTime() + 86400 * 1000 *
+        1).setHours(1, 0),
+        EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(2,
+        0),
+        AllDay: false,
+        Recurrence: false
+    }, {
+        Id: 106,
+        Subject: "Alaska: The Last Frontier",
+        StartTime: new Date(new Date().getTime() + 86400 * 1000 *
+        1).setHours(4, 0),
+        EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(5,
+        0),
+        AllDay: false,
+        Recurrence: false
+    }, {
+        Id: 109,
+        Subject: "MayDay",
+        StartTime: new Date(new Date().getTime() + 86400 * 1000 * -
+        2).setHours(6, 30),
+        EndTime: new Date(new Date().getTime() + 86400 * 1000 * -2).setHours(7,
+        30),
+        AllDay: false,
+        Recurrence: false
+    }];
 
-<div id="Schedule1"> </div>
-<script>
+    $(function () {
 
-window.Default = [{
-Id: 100,
-Subject: "Bering Sea Gold",
-StartTime:new Date().setHours(9, 0),
-EndTime: new Date().setHours(10, 30),
-AllDay: false,
-Recurrence: true,
-RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10"
-}, {
-Id: 101,
-Subject: "Bering Sea Gold",
-StartTime:new Date().setHours(4, 0),
-EndTime: new Date().setHours(5, 0),
-AllDay: false,
-Recurrence: false
-}, {
-Id: 105,
-Subject: "Daily Planet",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 *
-1).setHours(1, 0),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(2,
-0),
-AllDay: false,
-Recurrence: false
-}, {
-Id: 106,
-Subject: "Alaska: The Last Frontier",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 *
-1).setHours(4,0),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * 1).setHours(5,
-0),
-AllDay: false,
-Recurrence: false
-}, {
-Id: 109,
-Subject: "MayDay",
-StartTime: new Date(new Date().getTime() + 86400 * 1000 * -
-2).setHours(6, 30),
-EndTime: new Date(new Date().getTime() + 86400 * 1000 * -2).setHours(7,
-30),
-AllDay: false,
-Recurrence: false
-}];
+        var dManager =
+        ej.DataManager(window.Default).executeLocal(ej.Query().take(5));
 
-$(function () {
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            appointmentSettings: {
+                // the dManager collections
+                dataSource: dManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
 
-var dManager =
-ej.DataManager(window.Default).executeLocal(ej.Query().take(5));
-
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-appointmentSettings: {
-// the dManager collections
-dataSource: dManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-
-});
-</script>
+    });
 
 
 {% endhighlight %}
 
 
 
-
-
-
-
 On executing the above specified code the **Scheduler** displays the appointments across the specific timeslots as follows:
 
-
-
-![](Data-binding_images/Data-binding_img2.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _50__:_ _schedule____with Local Data Binding_
-
-
-
-
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img2.png" Caption="schedule with Local Data Binding."%}
 
 
 
@@ -269,40 +250,40 @@ _Figure_ _50__:_ _schedule____with Local Data Binding_
 * Inorder to avail that option refer the following steps:
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="Schedule1"> </div>
-<script>
-
 $(function () {
-var **dManager** = ej.DataManager({
-// referring data from remote service (url binding)
-**url:** **"**[http://mvc.syncfusion.com/OdataServices/Northwnd.svc/](http://mvc.syncfusion.com/OdataServices/Northwnd.svc/)**"**
-});
-// query to fetch the records from the specified table “Events”
-**var queryString = ej.Query().from("Events").take(10);**
+        var dManager = ej.DataManager({
+            // referring data from remote service (url binding)
+           url:"[http://mvc.syncfusion.com/OdataServices/Northwnd.svc/](http://mvc.syncfusion.com/OdataServices/Northwnd.svc/)"
+        });
+        // query to fetch the records from the specified table “Events”
+          var queryString = ej.Query().from("Events").take(10);
 
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-currentDate: new Date(2014,4,5),
-appointmentSettings: {
-// the dManager collections
-dataSource: dManager,
-query: queryString,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            currentDate: new Date(2014,4,5),
+            appointmentSettings: {
+                // the dManager collections
+                dataSource: dManager,
+                query: queryString,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 
@@ -312,15 +293,7 @@ recurrenceRule: "RecurrenceRule"
 
 The following screenshot displays the remote data bound to the **Schedule** control.
 
-
-![](Data-binding_images/Data-binding_img3.png)
-{:.image }
-
-
-{:.caption }
-
-
-Figure 51:Schedulewith Remote Data Binding
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img3.png" Caption="schedule with Remote Data Binding."%}
 
 **Load On Demand**
 
@@ -330,83 +303,60 @@ Figure 51:Schedulewith Remote Data Binding
 
 * If you have developer tools, you can capture the network transfer to check the consumed data of the Schedule. The following screnshot shows the data being loaded in **Schedule**.
 
-
-
-![C:/Users/maheshp/Pictures/a2.PNG](Data-binding_images/Data-binding_img4.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure 3: Schedule Demanded data_
-
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img4.png" Caption="schedule with Schedule Demanded data."%}
 
 
 The following code example shows you how **load on demand** works with **Schedule**.
 
 
+{% highlight html %}
+
+<div id="Schedule1"></div>
+
+{% endhighlight %}
+
 
 {% highlight js %}
-
-
-
-<div id="Schedule1"> </div>
-
-<script>
-	// In this example **oData****service** is used
-$(function () {
-// DataManager creation
-var dataManager = ej.DataManager({
-// To get the required appointments from service
-url: "http://mvc.syncfusion.com/OdataServices/api/ScheduleData/",
-crossDomain: true
-});
-$("#Schedule1").ejSchedule({
-width: "100%",
-height: "525px",
-// Enable Load on demand
-**enableLoadOnDemand: true,**
-currentDate: new Date(2014, 04, 05),
-timeZone: "UTC -5:30",
-enableAppointmentResize: false,
-allowDragDrop: false,
-readOnly: true,
-appointmentSettings: {
-dataSource: dataManager,
-id: "Id",
-subject: "Subject",
-startTime: "StartTime",
-description: "Description",
-endTime: "EndTime",
-allDay: "AllDay",
-recurrence: "Recurrence",
-recurrenceRule: "RecurrenceRule"
-}
-});
-});
-</script>
+	
+ $(function () {
+        // DataManager creation
+        var dataManager = ej.DataManager({
+            // To get the required appointments from service
+            url: "http://mvc.syncfusion.com/OdataServices/api/ScheduleData/",
+            crossDomain: true
+        });
+        $("#Schedule1").ejSchedule({
+            width: "100%",
+            height: "525px",
+            // Enable Load on demand
+            enableLoadOnDemand: true,
+            currentDate: new Date(2014, 04, 05),
+            timeZone: "UTC -5:30",
+            enableAppointmentResize: false,
+            allowDragDrop: false,
+            readOnly: true,
+            appointmentSettings: {
+                dataSource: dataManager,
+                id: "Id",
+                subject: "Subject",
+                startTime: "StartTime",
+                description: "Description",
+                endTime: "EndTime",
+                allDay: "AllDay",
+                recurrence: "Recurrence",
+                recurrenceRule: "RecurrenceRule"
+            }
+        });
+    });
 
 
 {% endhighlight %}
 
 
 
-
-
-
-
 The following screenshot is the result of the above code example.
 
-![C:/Users/maheshp/Pictures/s1.PNG](Data-binding_images/Data-binding_img5.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure 4: Schedule with load on demand_
-
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img5.png" Caption="Schedule with load on demand."%}
 
 
 * [Click here](http://js.syncfusion.com/demos/web/) to see how **load on demand** works with **Schedule****.**

@@ -17,35 +17,34 @@ Circular Gauge contains angular support. You can add object as well as array obj
 
 **ej-CircularGauge** is the control tag in which **ej** is tag prefix and **CircularGauge** is the control name.The following code example helps you to render **Circular Gauge**.
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Circular gauge-->
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-<!—Refer the necessary script here-->
+    <!—Refer the necessary script here-->
 </head>
 <body ng-controller="CircularGauge">
-<ej-CircularGauge id="CircularGauge1" e-backgroundColor="transparent" e-value="50"
-e-width="500" e-readOnly="false" e-load= "loadGaugeTheme"
-e-enableAnimation="false">
-</ej-CircularGauge>
-<script type="text/javascript">
+    <ej-circulargauge id="CircularGauge1" e-backgroundcolor="transparent" e-value="50"
+        e-width="500" e-readonly="false" e-load="loadGaugeTheme"
+        e-enableanimation="false">
+</ej-circulargauge>
+    <script type="text/javascript">
 
-<!—binding the value to the scope variables in application controller-->
+        <!--binding the value to the scope variables in application controller-->
 
-angular.module('syncApp', ['ejangular'])
-.controller('CircularGauge', function ($scope) {
-$scope.nvalue = 50;
-$scope.nminimum = 0;
-$scope.nmaximum = 120;
+        angular.module('syncApp', ['ejangular'])
+        .controller('CircularGauge', function ($scope) {
+            $scope.nvalue = 50;
+            $scope.nminimum = 0;
+            $scope.nmaximum = 120;
 
-});
-</script>
+        });
+    </script>
 
 </body>
 </html>
-
 
 
 {% endhighlight %}
@@ -62,7 +61,7 @@ Execute the above code to render the output as follows.
 
 **Example**: e-border-width and e-border-color. 
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Circular gauge-->
 
@@ -95,7 +94,7 @@ Execute the above code to render the following output.
 
 **Example**: e-pointerCap-radius. 
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Circular gauge-->
 
@@ -133,7 +132,7 @@ Execute the above code to render the output as follows.
 
 **Label** is also an array object. You can use the inner tag for it. 
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Circular gauge-->
 
@@ -171,7 +170,7 @@ Execute the above code to render the following output.
 
 **Tick** is an array object. You can use the inner tag for it. 
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Circular gauge-->
 
@@ -217,7 +216,7 @@ Execute the above code to render the following output.
 
 **Example**: e-border-color. 
 
-{% highlight js %}
+{% highlight html %}
 
 <!--To Render the Circular gauge-->
 
@@ -267,16 +266,16 @@ Execute the above code to render the following output.
 
 **Circular Gauge** support the two way binding for the property **value, minimum and maximum** as mentioned earlier. The following code example explains how to achieve the two way binding in **Circular Gauge**.
 
-{% highlight js %}
+{% highlight html %}
 
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-<!—Refer the necessary script here-->
+    <!—Refer the necessary script here-->
 </head>
 <body ng-controller="CircularGauge">
-<div id="linearframe">
-<ej-CircularGauge id="CircularGauge1" e-backgroundColor="transparent" e-value="nvalue" e-width="500" e-readOnly="false" e-load= "loadGaugeTheme" e-enableAnimation="false">
+    <div id="linearframe">
+        <ej-circulargauge id="CircularGauge1" e-backgroundcolor="transparent" e-value="nvalue" e-width="500" e-readonly="false" e-load="loadGaugeTheme" e-enableanimation="false">
 <e-scales>
 <e-scale e-showRanges="true" e-startAngle="122" e-sweepAngle="296"
 e-radius="130" e-showScaleBar="true" e-size="1"
@@ -319,24 +318,21 @@ e-border-color="#f5b43f">
 </e-ranges>
 </e-scale>
 </e-scales>
-</ej-CircularGauge>
-</div>
+</ej-circulargauge>
+    </div>
 <input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox **ng-model="nvalue"**  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
+    <script type="text/javascript">
 
+        <!—binding the value to the scope variables in application controller-->
 
+        angular.module('syncApp', ['ejangular'])
+        .controller('CircularGauge', function ($scope) {
+            $scope.nvalue = 50;
+            $scope.nminimum = 0;
+            $scope.nmaximum = 120;
 
-<script type="text/javascript">
-
-<!—binding the value to the scope variables in application controller-->
-
-angular.module('syncApp', ['ejangular'])
-.controller('CircularGauge', function ($scope) {
-$scope.nvalue = 50;
-$scope.nminimum = 0;
-$scope.nmaximum = 120;
-
-});
-</script>
+        });
+    </script>
 </body>
 </html>
 
@@ -369,33 +365,33 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
 
 
 
-{% highlight js %}
+{% highlight html %}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Essential JavaScript for Knockout</title>
+    <title>Essential JavaScript for Knockout</title>
 </head>
 <body>
-<div id="CircularGauge1"
-data-bind="ejCircularGauge: {
+    <div id="CircularGauge1"
+        data-bind="ejCircularGauge: {
 **value: samplevalue,**
 **minimum: minimumValue,**
 **maximum: maximumValue**
 }">
-</div>
-<script type="text/javascript">
-$(function () {
-window.viewModel = {
-**value: ko.observable(50),**
-**minimum: ko.observable(0),**
-**maximum: ko.observable(150)**
-};
-$(function () {
-ko.applyBindings(viewModel);
-});
-});
-</script>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            window.viewModel = {
+            **value: ko.observable(50),**
+            **minimum: ko.observable(0),**
+            **maximum: ko.observable(150)**
+            };
+            $(function () {
+                ko.applyBindings(viewModel);
+            });
+        });
+    </script>
 </body>
 </html>
 

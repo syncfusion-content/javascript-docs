@@ -56,14 +56,7 @@ The following code example explains how to set the value for **enableAppointment
 
 * The **Schedule** control with the appointment navigation tabs (marked with a box) enabled looks like the following screenshot.
 
-![](Navigation_images/Navigation_img1.png)
-{:.image }
-
-
-{:.caption }
-
-
-_Figure_ _101__:___ _schedule with_ _Appointment Navigation._
+ {% include image.html url="/js/Schedule/Navigation_images/Navigation_img1.png" Caption="schedule with Appointment Navigation."%}
 
 **Calendar Navigation**
 
@@ -73,16 +66,8 @@ _Figure_ _101__:___ _schedule with_ _Appointment Navigation._
 
 The following screenshot displays the calendar that pops down on clicking the date headerbar (marked with a box),
 
+{% include image.html url="/js/Schedule/Navigation_images/Navigation_img2.png" Caption="schedule with Calendar Navigation."%}
 
-
-![](Navigation_images/Navigation_img2.png)
-{:.image }
-
-
-{:.caption }
-
-
-___Figure_ _102__:___ _schedule with_ _Calendar Navigation._
 
 
 
@@ -170,14 +155,14 @@ Traverse backward through the appointments.</td></tr>
 
 
 
-{% highlight text %}
+
 
 > _**Important: Apart from the cell selection through keyboard shortcuts (shift + arrow keys), the selection of cells can also be done through mouse by any of the following ways,**_
 > _**i. Click on any of the cell to start selection and by holding the left click, hover the mouse across the cells to be selected and then release the left mouse button, once the selection is over.**_
 > _**ii. Make initial selection at any of the cell. Now by pressing and holding the Shift key, click on any of the other desired cell to end the selection. The cells that lies within the initial and end selection gets selected entirely.**_
 
 
-{% endhighlight %}
+
 
 Once the required cells are selected, then a new appointment can be created for a selected time range either by pressing (ALT + N) key combination or by simply pressing Enter key to create appointments through quick window.
 
@@ -221,14 +206,4 @@ $(function () {
 
 * Since the keyboard navigation functionality is enabled by default, the **Schedule** control below indicates the multiple cell selection through the **shift + right arrow key** combination as follows.
 
-
-
-![](Navigation_images/Navigation_img3.png)
-{:.image }
-
-
-{:.caption }
-
-
-___Figure_ _103__:___ _schedule with_ _keyboard Navigation._
-
+{% include image.html url="/js/Schedule/Navigation_images/Navigation_img3.png" Caption="schedule with keyboard Navigation."%}
