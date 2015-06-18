@@ -54,79 +54,80 @@ The other changes based on each components are as follows,
 <table>
 <tr>
 <td>
-[ejAccordion](#ejAccordion)</td><td>
-[ejDigitalGauge](#ejDigitalGauge)</td><td>
-[ejOlapPager](#olappager)</td><td>
-[ejTab](#ejTab)</td></tr>
+<a href="#ejAccordion">ejAccordion</a></td><td>
+<a href="#ejDigitalGauge">ejDigitalGauge</a></td><td>
+<a href="#ejOlapPager">ejOlapPager</a></td><td>
+<a href="#ejTab">ejTab</a></td></tr>
 <tr>
 <td>
-ejAutoComplete</td><td>
-ejDropDownList</td><td>
-ejProgressbar</td><td>
-ejTagCloud</td></tr>
+<a href="#ejAutoComplete">ejAutoComplete</a></td><td>
+<a href="#ejDropDownList">ejDropDownList</a></td><td>
+<a href="#ejProgressbar">ejProgressbar</a></td><td>
+<a href="#ejTagCloud">ejTagCloud</a></td></tr>
 <tr>
 <td>
-ejBarcode</td><td>
-ejGantt</td><td>
-ejRadioButton</td><td>
-ejTextBoxes</td></tr>
+<a href="#ejBarcode">ejBarcode</a></td><td>
+<a href="#ejGantt">ejGantt</a></td><td>
+<a href="#ejRadioButton">ejRadioButton</a></td><td>
+<a href="#ejTextBoxes">ejTextBoxes</a></td></tr>
 <tr>
 <td>
-ejBulletGraph</td><td>
-ejGrid</td><td>
-ejRangeNavigator</td><td>
-ejTimePicker</td></tr>
+<a href="#ejBulletGraph">ejBulletGraph</a></td><td>
+<a href="#ejGrid">ejGrid</a></td><td>
+<a href="#ejRangeNavigator">ejRangeNavigator</a></td><td>
+<a href="#ejTimePicker">ejTimePicker</a></td></tr>
 <tr>
 <td>
-ejButton</td><td>
-ejLinearGauge</td><td>
-ejRating</td><td>
-ejToggle Button</td></tr>
+<a href="#ejButton">ejButton</a></td><td>
+<a href="#ejLinearGauge">ejLinearGauge</a></td><td>
+<a href="#ejRating">ejRating</a></td><td>
+<a href="#ejToggleButton">ejToggleButton</a></td></tr>
 <tr>
 <td>
-ejChart</td><td>
-ejMaps</td><td>
-ejRichTextEditor</td><td>
-ejToolbar</td></tr>
+<a href="#ejChart">ejChart</a></td><td>
+<a href="#ejMaps">ejMaps</a></td><td>
+<a href="#ejRichTextEditor">ejRichTextEditor</a></td><td>
+<a href="#ejToolbar">ejToolbar</a></td></tr>
 <tr>
 <td>
-ejCheckbox</td><td>
-ejMaskEdit</td><td>
-ejRotator</td><td>
-ejTreeMap</td></tr>
+<a href="#ejCheckbox">ejCheckbox</a></td><td>
+<a href="#ejMaskEdit">ejMaskEdit</a></td><td>
+<a href="#ejRotator">ejRotator</a></td><td>
+<a href="#ejTreeMap">ejTreeMap</a></td></tr>
 <tr>
 <td>
-[ejCircularGauge](#circularAnchor)</td><td>
-ejMenu</td><td>
-[ejSchedule](#scheduleAnchor)</td><td>
-ejTreeView</td></tr>
+<a href="#ejCircularGauge">ejCircularGauge</a></td><td>
+<a href="#ejMenu">ejMenu</a></td><td>
+<a href="#ejSchedule">ejSchedule</a></td><td>
+<a href="#ejTreeView">ejTreeView</a></td></tr>
 <tr>
 <td>
-ejDatePicker</td><td>
-ejOlapChart</td><td>
-ejScroller</td><td>
-ejUploadBox</td></tr>
+<a href="#ejDatePicker">ejDatePicker</a></td><td>
+<a href="#ejOlapChart">ejOlapChart</a></td><td>
+<a href="#ejScroller">ejScroller</a></td><td>
+<a href="#ejUploadBox">ejUploadBox</a></td></tr>
 <tr>
 <td>
-ejDateTimePicker</td><td>
-ejOlapClient</td><td>
-ejSlider</td><td>
+<a href="#ejDateTimePicker">ejDateTimePicker</a></td><td>
+<a href="#ejOlapClient">ejOlapClient</a></td><td>
+<a href="#ejSlider">ejSlider</a></td><td>
 </td></tr>
 <tr>
 <td>
-ejDiagram</td><td>
-ejOlapGauge</td><td>
-ejSplitButton</td><td>
+<a href="#ejDiagram">ejDiagram</a></td><td>
+<a href="#ejOlapGauge">ejOlapGauge</a></td><td>
+<a href="#ejSplitButton">ejSplitButton</a></td><td>
 </td></tr>
 <tr>
 <td>
-ejDialog</td><td>
-ejOlapGrid</td><td>
-ejSplitter</td><td>
+<a href="#ejDialog">ejDialog</a></td><td>
+<a href="#ejOlapGrid">ejOlapGrid</a></td><td>
+<a href="#ejSplitter">ejSplitter</a></td><td>
 </td></tr>
 </table>
 
-### ejAccordion
+<a name="ejAccordion"></a>
+#### ejAccordion
 
 <table>
 <tr>
@@ -233,7 +234,8 @@ args.activePanel</td><td>
 Removed event argument</td></tr>
 </table>
 
-**ejAutoComplete**
+<a name="ejAutoComplete"></a>
+#### ejAutoComplete
 
 <table>
 <tr>
@@ -375,7 +377,8 @@ args.text</td><td>
  </td></tr>
 </table>
 
-**ejBarcode**
+<a name="ejBarcode"></a>
+#### ejBarcode
 
 <table>
 <tr>
@@ -392,7 +395,8 @@ SymbologyType</td><td>
  </td></tr>
 </table>
 
-**ejBulletGraph**
+<a name="ejBulletGraph"></a>
+#### ejBulletGraph
 
 <table>
 <tr>
@@ -566,7 +570,8 @@ drawComparativeMeasureSymbol</td><td>
 Modified the args.Object and args.Value</td></tr>
 </table>
 
-**ejButton**
+<a name="ejButton"></a>
+#### ejButton
 
 <table>
 <tr>
@@ -609,7 +614,8 @@ Added</td></tr>
  </td></tr>
 </table>
 
-**ejChart**
+<a name="ejChart"></a>
+#### ejChart
 
 <table>
 <tr>
@@ -952,7 +958,8 @@ args:{cancel<b>data={model}</b>modeltype} </td><td colspan = "3">
  Modified the args.Dataargs.Cancel removed</td></tr>
 </table>
 
-**ejCheckbox**
+<a name="ejCheckbox"></a>
+#### ejCheckbox
 
 <table>
 <tr>
@@ -1005,7 +1012,7 @@ enableRTL</td><td>
  </td></tr>
 </table>
 
-<a name="circularAnchor"></a>
+<a name="ejCircularGauge"></a>
 #### ejCircularGauge
 
 <table>
@@ -1393,7 +1400,8 @@ args.pointer{angleelement<br/>valueIndex}</td><td>
 arguments moved to Object type</td></tr>
 </table>
 
-**ejDatePicker**
+<a name="ejDatePicker"></a>
+#### ejDatePicker
 
 <table>
 <tr>
@@ -1473,7 +1481,7 @@ highlightWeekend</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -1508,7 +1516,8 @@ args.prevDate</td><td>
  </td></tr>
 </table>
 
-**ejDateTimePicker**
+<a name="ejDateTimePicker"></a>
+#### ejDateTimePicker
 
 <table>
 <tr>
@@ -1561,7 +1570,7 @@ setCurrentDateTime</td><td colspan = "2">
  </td></tr>
 </table>
 
-**Event Arguments**
+##### Event Arguments
 
 <table>
 <tr>
@@ -1605,7 +1614,8 @@ args.prevDateTime</td><td>
  </td></tr>
 </table>
 
-**ejDiagram**
+<a name="ejDiagram"></a>
+#### ejDiagram
 
 <table>
 <tr>
@@ -1736,7 +1746,8 @@ nodeRotationChanged </td><td>
 rotationChange</td></tr>
 </table>
 
-**ejDialog**
+<a name="ejDialog"></a>
+#### ejDialog
 
 <table>
 <tr>
@@ -1829,7 +1840,8 @@ contentLoad</td><td>
  </td></tr>
 </table>
 
-### ejDigitalGauge
+<a name="ejDigitalGauge"></a>
+#### ejDigitalGauge
 
 <table>
 <tr>
@@ -1892,7 +1904,8 @@ ej.FontStyle = { Normal: "normal", <br/>Bold: "bold", Italic: "italic", Under
  </td></tr>
 </table>
 
-**ejDropDownList**
+<a name="ejDropDownList"></a>
+#### ejDropDownList
 
 <table>
 <tr>
@@ -2015,7 +2028,7 @@ selectItemByValue</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -2062,7 +2075,8 @@ args.value</td><td>
 New Event argument</td></tr>
 </table>
 
-**ejGantt**
+<a name="ejGantt"></a>
+#### ejGantt
 
 <table>
 <tr>
@@ -2165,7 +2179,8 @@ ej.Gantt.EditMode</td><td>
  </td></tr>
 </table>
 
-**ejGrid**
+<a name="ejGrid"></a>
+#### ejGrid
 
 <table>
 <tr>
@@ -2715,7 +2730,8 @@ ej.Grid.editEvent</td><td>
 Removed</td></tr>
 </table>
 
-**ejLinearGauge**
+<a name="ejLinearGauge"></a>
+#### ejLinearGauge
 
 <table>
 <tr>
@@ -3079,7 +3095,8 @@ args.pointerValue</td></tr>
 args.pointerAngle</td></tr>
 </table>
 
-**ejMaps**
+<a name="ejMaps"></a>
+#### ejMaps
 
 <table>
 <tr>
@@ -3364,7 +3381,8 @@ LayerType = {Geometry: "geometry",        OSM: "osm",        Bing:
  </td></tr>
 </table>
 
-**ejMaskEdit**
+<a name="ejMaskEdit"></a>
+#### ejMaskEdit
 
 <table>
 <tr>
@@ -3433,7 +3451,7 @@ keyup</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -3492,7 +3510,8 @@ args.unmaskedValue</td><td>
  </td></tr>
 </table>
 
-**ejMenu**
+<a name="ejMenu"></a>
+#### ejMenu
 
 <table>
 <tr>
@@ -3617,7 +3636,7 @@ showContextMenu</td><td colspan = "2">
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -3692,7 +3711,8 @@ args.events.text</td><td>
  </td></tr>
 </table>
 
-**ejOlapChart**
+<a name="ejOlapChart"></a>
+#### ejOlapChart
 
 <table>
 <tr>
@@ -3714,7 +3734,8 @@ serviceMethodSettings</td><td colspan = "2">
  </td></tr>
 </table>
 
-**ejOlapClient**
+<a name="ejOlapClient"></a>
+#### ejOlapClient
 
 <table>
 <tr>
@@ -3818,7 +3839,8 @@ renderSuccess</td><td>
  </td></tr>
 </table>
 
-**ejOlapGauge**
+<a name="ejOlapGauge"></a>
+#### ejOlapGauge
 
 <table>
 <tr>
@@ -3866,7 +3888,8 @@ renderSuccess</td><td>
  </td></tr>
 </table>
 
-**ejOlapGrid**
+<a name="ejOlapGrid"></a>
+#### ejOlapGrid
 
 <table>
 <tr>
@@ -3931,7 +3954,8 @@ Layout</td><td>
  </td></tr>
 </table>
 
-### olappager
+<a name="ejOlapPager"></a>
+#### ejOlapPager
 
 <table>
 <tr>
@@ -3964,7 +3988,8 @@ Mode</td><td>
  </td></tr>
 </table>
 
-**ejProgressbar**
+<a name="ejProgressbar"></a>
+#### ejProgressbar
 
 <table>
 <tr>
@@ -4002,7 +4027,8 @@ getPercentage</td><td>
  </td></tr>
 </table>
 
-**ejRadioButton**
+<a name="ejRadioButton"></a>
+#### ejRadioButton
 
 <table>
 <tr>
@@ -4035,7 +4061,8 @@ enableRTL   </td><td>
  </td></tr>
 </table>
 
-**ejRangeNavigator**
+<a name="ejRangeNavigator"></a>
+#### ejRangeNavigator
 
 <table>
 <tr>
@@ -4179,7 +4206,8 @@ args:{cancelCancel<b>data={model}</b>modeltype}</td><td>
 Modified args.DataRemoved args.Cancel</td></tr>
 </table>
 
-**ejRating**
+<a name="ejRating"></a>
+#### ejRating
 
 <table>
 <tr>
@@ -4260,7 +4288,7 @@ ej.Rating.Precision = {        Full: "full",        Half: "half",�
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -4283,7 +4311,8 @@ args.value</td><td>
  </td></tr>
 </table>
 
-**ejRichTextEditor**
+<a name="ejRichTextEditor"></a>
+#### ejRichTextEditor
 
 <table>
 <tr>
@@ -4351,7 +4380,8 @@ getSelectedHtml</td><td>
  </td></tr>
 </table>
 
-**ejRotator**
+<a name="ejRotator"></a>
+#### ejRotator
 
 <table>
 <tr>
@@ -4452,7 +4482,7 @@ nextSlide</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -4523,7 +4553,7 @@ args.activeItemIndex</td><td>
  </td></tr>
 </table>
 
-<a name="scheduleAnchor"></a>
+<a name="ejSchedule"></a>
 #### ejSchedule
 
 <table>
@@ -4604,13 +4634,13 @@ allDay</td><td>
 <b>Events</b></td><td>
 args.appObj  & args.data </td><td>
 args.appointment</td><td>
-In “appointmentSaved” event we have changed the arguments name.</td></tr>
+In <b>appointmentSaved</b> event we have changed the arguments name.</td></tr>
 <tr>
 <td>
 <b>Events</b></td><td>
 args.newViewargs.oldViewargs.newDate</td><td>
 args.currentViewargs.prevViewargs.currentDate</td><td>
-In “navigation” event we have changed the arguments name.</td></tr>
+In <b>navigation</b> event we have changed the arguments name.</td></tr>
 <tr>
 <td>
 <b>Enum</b></td><td>
@@ -4619,7 +4649,8 @@ ej.Schedule.Actions</td><td>
  </td></tr>
 </table>
 
-**ejScroller**
+<a name="ejScroller"></a>
+#### ejScroller
 
 <table>
 <tr>
@@ -4646,7 +4677,8 @@ enableRTL</td><td>
  </td></tr>
 </table>
 
-**ejSlider**
+<a name="ejSlider"></a>
+#### ejSlider
 
 <table>
 <tr>
@@ -4699,7 +4731,7 @@ incrementStep</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -4734,7 +4766,8 @@ args.sliderIndex</td><td>
  </td></tr>
 </table>
 
-**ejSplitButton**
+<a name="ejSplitButton"></a>
+#### ejSplitButton
 
 <table>
 <tr>
@@ -4778,7 +4811,7 @@ targetID</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -4852,7 +4885,8 @@ args.events.selectedItem</td><td>
 Removed event argument</td></tr>
 </table>
 
-**ejSplitter**
+<a name="ejSplitter"></a>
+#### ejSplitter
 
 <table>
 <tr>
@@ -4885,7 +4919,7 @@ removeItem</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -5022,7 +5056,8 @@ args.nextPane.size</td><td>
  </td></tr>
 </table>
 
-**ejTab**
+<a name="ejTab"></a>
+#### ejTab
 
 <table>
 <tr>
@@ -5111,7 +5146,7 @@ getItemsCount</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -5368,7 +5403,8 @@ args.data</td><td>
  </td></tr>
 </table>
 
-**ejTagCloud**
+<a name="ejTagCloud"></a>
+#### ejTagCloud
 
 <table>
 <tr>
@@ -5396,7 +5432,8 @@ title</td><td>
  </td></tr>
 </table>
 
-**ejTextBoxes**
+<a name="ejTextBoxes"></a>
+#### ejTextBoxes
 
 <table>
 <tr>
@@ -5443,7 +5480,7 @@ watermarkText</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -5466,7 +5503,8 @@ args.value</td><td>
 New Event argument</td></tr>
 </table>
 
-**ejTimePicker**
+<a name="ejTimePicker"></a>
+#### ejTimePicker
 
 <table>
 <tr>
@@ -5524,7 +5562,7 @@ setCurrentTime</td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -5625,7 +5663,8 @@ args.prevTime</td><td>
  </td></tr>
 </table>
 
-**ejToggle Button**
+<a name="ejToggleButton"></a>
+#### ejToggleButton
 
 <table>
 <tr>
@@ -5663,7 +5702,8 @@ Enum</td><td>
  </td></tr>
 </table>
 
-**ejToolbar**
+<a name="ejToolbar"></a>
+#### ejToolbar
 
 <table>
 <tr>
@@ -5736,7 +5776,8 @@ removeItemByID</td><td>
  </td></tr>
 </table>
 
-**ejTreeMap**
+<a name="ejTreeMap"></a>
+#### ejTreeMap
 
 <table>
 <tr>
@@ -5793,7 +5834,8 @@ itemTemplate</td><td>
 This API comes under leafItemSettings. You can  use this template to customize the item with label.</td></tr>
 </table>
 
-**ejTreeView**
+<a name="ejTreeView"></a>
+#### ejTreeView
 
 <table>
 <tr>
@@ -5917,7 +5959,7 @@ isNodeExpanded</td><td>
 We have removed this method. Use <b>isExpanded method</b> to achieve  this behaviour </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
@@ -5973,7 +6015,8 @@ args.UpdateChanges</td><td>
 Removed Event argument</td></tr>
 </table>
 
-**ejUploadBox**
+<a name="ejUploadBox"></a>
+#### ejUploadBox
 
 <table>
 <tr>
@@ -6005,7 +6048,7 @@ enableRTL   </td><td>
  </td></tr>
 </table>
 
-**Event arguments**
+##### Event arguments
 
 <table>
 <tr>
