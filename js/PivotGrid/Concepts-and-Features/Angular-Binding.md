@@ -9,6 +9,8 @@ documentation: ug
 
 ### Angular Binding
 
+>_**Note: This feature is applicable only for OLAP datasource.**_
+
 AngularJS is a JavaScript framework added to a HTML page with a script tag. It extends HTML attributes with directives and binds data to HTML with expressions. AngularJS directives allow you to specify custom and reusable HTML tags that moderate the behavior of certain elements. Angular binding uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in HTML attributes.
 
 In order to achieve **Angular Binding,** refer the following script files.
