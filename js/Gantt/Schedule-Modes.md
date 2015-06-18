@@ -41,10 +41,7 @@ In the Week schedule mode, the upper part of the schedule header displays the **
                 },             
        });
 
-
 {% endhighlight %}
-
-
 
 The following screenshot illustrates the **Week Schedule** in **Gantt** control.
 
@@ -69,8 +66,6 @@ In the Week schedule mode, the upper part of the schedule header displays the **
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates the **Month Schedule** in **Gantt** control.
 
 {% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img2.png" Caption="Month Schedule in Gantt control"%}
@@ -94,7 +89,6 @@ In the Week schedule mode, the upper schedule header displays the **Years** wher
 
 {% endhighlight %}
 
-
 The following screen shot shows the **Year Schedule** in **Gantt** control.
 
 {% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img3.png" Caption="Year Schedule in Gantt control"%}
@@ -104,7 +98,6 @@ The following screen shot shows the **Year Schedule** in **Gantt** control.
 In the Week schedule mode, the upper part of the header displays the **Days** whereas the bottom schedule header displays its corresponding **Hours.** Refer the following code example.
 
 {% highlight js %}
-
 
         $("#GanttContainer").ejGantt({
                 //...
@@ -117,8 +110,6 @@ In the Week schedule mode, the upper part of the header displays the **Days** wh
 
 
 {% endhighlight %}
-
-
 
 The following screenshot illustrates the **Day Schedule** in **Gantt** control.
 
@@ -138,8 +129,6 @@ An **Hour-Minute Schedule Mode** tracks the tasks in minutes scale. In this mode
 
 * thirtyMinutes
 
-
-
 The value, **auto,** automatically calculates the interval depending upon the **scheduleStartDate** and 
 
 **scheduleEndDate**, whereas the other enumeration values splits up accordingly.
@@ -147,7 +136,6 @@ The value, **auto,** automatically calculates the interval depending upon the **
 The **Hour Schedule Mode** supports both the **minute** and h**our** duration units.
 
 {% highlight js %}
-
 
        $("#GanttContainer").ejGantt({
                // ... 
@@ -160,11 +148,7 @@ The **Hour Schedule Mode** supports both the **minute** and h**our** duration un
                // ...
       });
 
-
-
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img5.png" Caption="Hour-Minute schedule mode in Gantt control"%}
 
