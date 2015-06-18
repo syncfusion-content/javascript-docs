@@ -16,54 +16,56 @@ Custom labels are the text that can paste in any location of the **Linear Gauge*
 Custom labels collection can be directly added to the scale object. Refer the following code to add custom labels collection in a **Linear Gauge** control.
 
 
+{% highlight html %}
+
+<div id="LinearGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="LinearGauge1"></div>
-<script type="text/javascript">
 $(function () {
 
-// For Linear Gauge rendering
-$("#LinearGauge1").ejLinearGauge({
-enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
-//Adding frame object
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
-},
+        // For Linear Gauge rendering
+        $("#LinearGauge1").ejLinearGauge({
+            enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
+            //Adding frame object
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
+            },
 
-//Adding scale collection
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,
-showCustomLabels: true,
+            //Adding scale collection
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true,
+                showCustomLabels: true,
 
-//Adding bar pointer collection
-barPointers: [{
-width: 10, backgroundColor: "#8BABFF",
-value: 91, placement: "near", distanceFromScale: 30
-}],
+                //Adding bar pointer collection
+                barPointers: [{
+                    width: 10, backgroundColor: "#8BABFF",
+                    value: 91, placement: "near", distanceFromScale: 30
+                }],
 
-//Adding tick collection
-ticks: [{
-type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-},
-{
-type: "minorinterval", width: 1, height: 6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-}],
+                //Adding tick collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }],
 
-//Adding custom label collection
-customLabels: [{
-value: "Mathematics Mark", position: { x: 55, y: 97 }
-}]
-}]
-});
-});</script>
+                //Adding custom label collection
+                customLabels: [{
+                    value: "Mathematics Mark", position: { x: 55, y: 97 }
+                }]
+            }]
+        });
+    });
 
 
 {% endhighlight %}
@@ -83,60 +85,61 @@ Execute the above code to render the following output.
 * To display the custom labels, set **showCustomLabels** as ‘true’. Font option is also available on the custom labels. The basic three properties of fonts such as size, family and style can be achieved by **size**, **fontStyle** and **fontFamily**. You can adjust the opacity of the label with the property **opacity** and the value of opacity lies between 0 and 1.
 
 
+{% highlight html %}
+
+<div id="LinearGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
+ $(function () {
+        // For Linear Gauge rendering
+        $("#LinearGauge1").ejLinearGauge({
+            enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
+            //Adding frame collection
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
+            },
 
-<div id="LinearGauge1"></div>
-<script type="text/javascript">
-$(function () {
-// For Linear Gauge rendering
-$("#LinearGauge1").ejLinearGauge({
-enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
-//Adding frame collection
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
-},
+            //Adding scale collection
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true,
+                showCustomLabels: true,
 
-//Adding scale collection
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,
-showCustomLabels: true,
+                //Adding bar pointer collection
+                barPointers: [
+                {
+                    width: 10, backgroundColor: "#8BABFF",
+                    value: 91, placement: "near", distanceFromScale: 30
+                }
+                ],
 
-//Adding bar pointer collection
-barPointers: [
-{
-width: 10, backgroundColor: "#8BABFF",
-value: 91, placement: "near", distanceFromScale: 30
-}
-],
+                //Adding tick collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }],
 
-//Adding tick collection
-ticks: [{
-type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-},
-{
-type: "minorinterval", width: 1, height: 6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-}],
-
-//Adding custom labels
-customLabels: [{
-position: { x: 55, y: 87 },
-**value: "Mathematics Mark",**
-**color:"Red",**
-**textAngle:30,**
-**opacity:0.5**
-}]
-}]
-});
-});
-</script>
+                //Adding custom labels
+                customLabels: [{
+                    position: { x: 55, y: 87 },
+                value: "Mathematics Mark",
+                color:"Red",
+                textAngle:30,
+                opacity:0.5
+                }]
+            }]
+        });
+    });
 
 
 {% endhighlight %}
@@ -152,57 +155,57 @@ Execute the above code to render the following output.
 To set the location of the custom label in **Linear Gauge**, **position** property is used. You can position the custom labels in horizontal and vertical axis using **X** and **Y** axis respectively.
 
 
+{% highlight html %}
+
+<div id="LinearGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
+ $(function () {
+        //For rendering Liner gauge
+        $("#LinearGauge1").ejLinearGauge({
+            enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
 
-<div id="LinearGauge1"></div>
-<script type="text/javascript">
-$(function () {
-//For rendering Liner gauge
-$("#LinearGauge1").ejLinearGauge({
-enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
+            //Adding frame object
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
+            },
 
-//Adding frame object
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
-},
+            //Adding scale collection
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true,
+                showCustomLabels: true,
 
-//Adding scale collection
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,
-showCustomLabels: true,
+                //Adding bar pointer collection
+                barPointers: [
+                {
+                    width: 10, backgroundColor: "#8BABFF",
+                    value: 91, placement: "near", distanceFromScale: 30
+                }
+                ],
 
-//Adding bar pointer collection
-barPointers: [
-{
-width: 10, backgroundColor: "#8BABFF",
-value: 91, placement: "near", distanceFromScale: 30
-}
-],
+                //Adding ticks collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }],
 
-//Adding ticks collection
-ticks: [{
-type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-},
-{
-type: "minorinterval", width: 1, height: 6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-}],
-
-//Adding custom label collection
-customLabels: [
-{ value: "Mathematics Mark", position: { x: 55, y: 87 }}]
-}]
-});
-});
-</script>
-
+                //Adding custom label collection
+                customLabels: [
+                { value: "Mathematics Mark", position: { x: 55, y: 87 } }]
+            }]
+        });
+    });
 
 {% endhighlight %}
 
@@ -215,61 +218,64 @@ Execute the above code to render the following output.
 
 You can set multiple custom labels in a single **Linear Gauge** by adding an array of custom label objects. Refer the following code example for multiple custom label functionality.
 
+{% highlight html %}
+
+<div id="LinearGauge1"></div>
+
+{% endhighlight %}
 
 {% highlight js %}
 
-
-<div id="LinearGauge1"></div>
-<script type="text/javascript">
 $(function () {
 
-// For Linear Gauge rendering
-$("#LinearGauge1").ejLinearGauge({
-enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
-//Adding frame object
-frame: {
-innerWidth: 8,
-outerWidth: 10,
-backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
-},
-//Adding scale collection
-scales: [{
-backgroundColor: "transparent",
-border: { color: "transparent", width: 0 },
-showMarkerPointers: false, showBarPointers: true,
-showCustomLabels: true,
+        // For Linear Gauge rendering
+        $("#LinearGauge1").ejLinearGauge({
+            enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
+            //Adding frame object
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
+            },
+            //Adding scale collection
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true,
+                showCustomLabels: true,
 
-//Adding bar pointer collection
-barPointers: [
-{
-width: 10, backgroundColor: "#8BABFF",
-value: 91, placement: "near", distanceFromScale: 30
-}
-],
+                //Adding bar pointer collection
+                barPointers: [
+                {
+                    width: 10, backgroundColor: "#8BABFF",
+                    value: 91, placement: "near", distanceFromScale: 30
+                }
+                ],
 
-//Adding ticks collection
-ticks: [{
-type: "majorinterval", width: 2,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-},
-{
-type: "minorinterval", width: 1, height: 6,
-color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-}],
+                //Adding ticks collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }],
 
-//Adding custom label collection
-customLabels: [
-{ value: "Mathematics Mark", position: { x: 55, y: 87 },
-color: "Red"
-},
-{ value: "Marks in %", position: { x: 15, y: 57 },
-color: "Red" ,textAngle:90
-}]
-}]
-});
-});
+                //Adding custom label collection
+                customLabels: [
+                {
+                    value: "Mathematics Mark", position: { x: 55, y: 87 },
+                    color: "Red"
+                },
+                {
+                    value: "Marks in %", position: { x: 15, y: 57 },
+                    color: "Red", textAngle: 90
+                }]
+            }]
+        });
+    });
 
-</script>
 
 
 {% endhighlight %}
