@@ -33,9 +33,9 @@ You can use **groupGap** property to separate the items from every flat level a
                 dataSource: population_data,
                 colorValuePath: "Growth",
                 weightValuePath: "Population",
-                **levels: [**
-                     **{ groupPath: "Continent", groupGap: 5}**              
-                **]**
+                levels: [
+                     { groupPath: "Continent", groupGap: 5}              
+                ]
 
             });
         });
@@ -62,7 +62,7 @@ You can use **groupGap** property to separate the items from every flat level a
             });
         });
 
-        **var population_data =**  [
+        var population_data =  [
             {Asia:[
             {Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
             {Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },

@@ -279,14 +279,14 @@ jQuery(function ($) {
 layers: [
                     {
                                               // ...
-**legendSettings:{**
-                          **showLegend:true,**
-                          **positionX: 70,**
-                          **height: 20,**
-                          **width: 20,**
-                          **positionY: 60**
-                    **},**
-****// ...                        
+legendSettings:{
+                          showLegend:true,
+                          positionX: 70,
+                          height: 20,
+                          width: 20,
+                          positionY: 60
+                    },
+// ...                        
                     }
                 ]
             });

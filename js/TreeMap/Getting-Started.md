@@ -143,7 +143,7 @@ ej.widgets.all.min.js"></script>
     <!-- TreeMapData -->
     <script type="text/javascript">
 
-    **var population_data = [**
+    var population_data = [
                    { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
                    { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
                    { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
@@ -207,9 +207,9 @@ jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({
                dataSource: population_data,
                weightValuePath: "Population",
-               **levels: [**
-                     **{ groupPath: "Continent", groupGap: 5}**
-                   **]**
+               levels: [
+                     { groupPath: "Continent", groupGap: 5}
+                   ]
             });
         });
 </script>
@@ -244,13 +244,13 @@ The following code sample explains how to customize TreeMap appearance using Ran
                    levels: [
                          { groupPath: "Continent", groupGap: 5 }
                    ],
-                   **colorValuePath: "Growth",**
-                   **rangeColorMapping: [**
-                      **{ color: "#DC562D", from: "0", to: "1" },**
-                      **{ color: "#FED124", from: "1", to: "1.5" },**
-                      **{ color: "#487FC1", from: "1.5", to: "2" },**
-                      **{ color: "#0E9F49", from: "2", to: "3" }**
-                   **]**
+                   colorValuePath: "Growth",
+                   rangeColorMapping: [
+                      { color: "#DC562D", from: "0", to: "1" },
+                      { color: "#FED124", from: "1", to: "1.5" },
+                      { color: "#487FC1", from: "1.5", to: "2" },
+                      { color: "#0E9F49", from: "2", to: "3" }
+                   ]
                });
            });
 </script>
@@ -289,8 +289,8 @@ You can customize the Leaf level TreeMap items using leafItemSettings. The Label
                       { color: "#487FC1", from: "1.5", to: "2" },
                       { color: "#0E9F49", from: "2", to: "3" }
                 ],
-**showTooltip:true,**
-                **leafItemSettings: { labelPath: "Region" }**
+                showTooltip:true,
+                leafItemSettings: { labelPath: "Region" }
             });
         });
 
@@ -332,7 +332,7 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
                 ],
                 showTooltip:true,
                 leafItemSettings: { labelPath: "Region" },
-**showLegend: true**
+                showLegend: true
             });
         });
 </script>
