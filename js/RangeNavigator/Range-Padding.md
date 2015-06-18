@@ -36,7 +36,7 @@ The following screenshot illustrates a **RangeNavigator** with **rangePadding** 
 
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Range-Padding_images/Range-Padding_img1.png" Caption="RangeNavigator with rangePadding set to none"%}
+{% include image.html url="/js/RangeNavigator/Range-Padding_images/Range-Padding_img1.png" Caption="RangeNavigator with rangePadding set to none"%}
 
 ##### Additional
 
@@ -46,7 +46,7 @@ The following screenshot illustrates a **RangeNavigator** with **rangePadding** 
 
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Range-Padding_images/Range-Padding_img2.png" Caption="RangeNavigator with rangePadding set to additional"%}
+{% include image.html url="/js/RangeNavigator/Range-Padding_images/Range-Padding_img2.png" Caption="RangeNavigator with rangePadding set to additional"%}
 
 ##### Normal
 
@@ -54,7 +54,7 @@ In normal **rangePadding**, automatic range calculation differs based on the dat
 
 The following screenshot illustrates **RangeNavigator** with **rangePadding** set to normal
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Range-Padding_images/Range-Padding_img3.png" Caption="RangeNavigator with rangePadding set to normal"%}
+{% include image.html url="/js/RangeNavigator/Range-Padding_images/Range-Padding_img3.png" Caption="RangeNavigator with rangePadding set to normal"%}
 
 ##### Round
 
@@ -62,7 +62,7 @@ Round **rangePadding** for a numerical range rounds the range of the control to 
 
 The following screenshot illustrates a **RangeNavigator** with **rangePadding** set to **Round**.
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Range-Padding_images/Range-Padding_img4.png" Caption="RangeNavigator with rangePadding set to Round"%}
+{% include image.html url="/js/RangeNavigator/Range-Padding_images/Range-Padding_img4.png" Caption="RangeNavigator with rangePadding set to Round"%}
 
 #### DateTime
 
@@ -86,7 +86,7 @@ By default, the **rangePadding** for **DateTime** range is none. The range is ca
 
 The following screenshot illustrates a **RangeNavigator** with **rangePadding** set to none.
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Range-Padding_images/Range-Padding_img5.png" Caption="RangeNavigator with rangePadding set to none"%}
+{% include image.html url="/js/RangeNavigator/Range-Padding_images/Range-Padding_img5.png" Caption="RangeNavigator with rangePadding set to none"%}
 
 ##### Round
 
@@ -94,7 +94,7 @@ Round **rangePadding** for a **DateTime** range rounds the range of the control 
 
 The following screenshot illustrates a **RangeNavigator** with **rangePadding** set to Round.
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Range-Padding_images/Range-Padding_img6.png" Caption="RangeNavigator with rangePadding set to Round"%}
+{% include image.html url="/js/RangeNavigator/Range-Padding_images/Range-Padding_img6.png" Caption="RangeNavigator with rangePadding set to Round"%}
 
 ### Customize axis range of navigator
 
@@ -117,4 +117,4 @@ $("#rangecontainer").ejRangeNavigator({
 {% endhighlight %}
 
 
-{% include image.html url="/js/RangeNavigator/Concepts-and-Features/Range-Padding_images/Range-Padding_img7.png" Caption="RangeNavigator"%}
+{% include image.html url="/js/RangeNavigator/Range-Padding_images/Range-Padding_img7.png" Caption="RangeNavigator"%}
