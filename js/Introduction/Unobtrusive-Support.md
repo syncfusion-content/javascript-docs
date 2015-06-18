@@ -87,15 +87,9 @@ The demonstration of such **data-role** declaration with a simple **DatePicker**
 
 
 
-
 The output of the above code will look as the one shown below with the value set to the given date,
 
-![](Unobtrusive-Support_images/Unobtrusive-Support_img1.png)
-{:.image }
-
-
-{:.caption }
-
+{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img1.png" %}
 
 ### EJ role
 
@@ -117,7 +111,7 @@ An important thing to be noted while using EJ role is that, you need to add the 
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
 </head>
-<body **data-ejrole**> 
+<body data-ejrole> 
 
 <!--DatePicker Control creation with ej-role-->
 <input id="myDatePicker" type="text" ej-datepicker ej-value= "01/01/2013" />
@@ -140,11 +134,7 @@ An important thing to be noted while using EJ role is that, you need to add the 
 
 The output of the above code will look as the one shown below with the value set to the given date,
 
-![](Unobtrusive-Support_images/Unobtrusive-Support_img2.png)
-{:.image }
-
-
-{:.caption }
+{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img2.png" %}
 
 
 ### Directives
@@ -189,11 +179,7 @@ While making use of directives, you need to add the **data-directive** attribute
 
 The output of the above code will look as the one shown below with the value set to the given date,
 
-![](Unobtrusive-Support_images/Unobtrusive-Support_img3.png)
-{:.image }
-
-
-{:.caption }
+{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img3.png" %}
 
 
 The unobtrusive support can be easily achieved with the above specified 3 types of control initialization methods and all the options (properties) available within the Syncfusion controls can be easily assigned with its required values in an unobtrusive way. Thus, the control creation can be entirely coded in plain HTML with this unobtrusive support, by maintaining the scripts and css references separately.
