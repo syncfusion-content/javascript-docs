@@ -57,26 +57,28 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
     <head>
 
-     <title>Getting Started with Gantt Control for JavaScript</title>
+        <title>Getting Started with Gantt Control for JavaScript</title>
 
-     <!-- style sheet for default theme(flat azure) -->
-     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-     
-     <!--scripts-->   
-     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <!-- style sheet for default theme(flat azure) -->
+        <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-     <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
+        <!--scripts-->
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-     <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js"></script>
+        <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 
-     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js"></script>
 
-     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
-      
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+        <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js "></script>
+
     </head>
+
     <body>
-    <!--Add  Gantt control here-->
+        <!--Add  Gantt control here-->
     </body>
+
     </html>
 
 
@@ -88,12 +90,9 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% highlight html %}
 
-    <body>
-    
-        <!--Add  Gantt control here-->
-    
-        <div id="GanttContainer"></div>
-    
+    <body>    
+        <!--Add  Gantt control here-->    
+        <div id="GanttContainer"></div>    
     </body>
 
 {% endhighlight %}
@@ -158,21 +157,19 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% highlight js %}
 
-       $(function () {
-            $("#GanttContainer").ejGantt({
-                dataSource: data, //Provides data source for Gantt
-                taskIdMapping: "taskID",//Provide name of the property which contains task id in the data source
-                taskNameMapping: "taskName",//Provide name of the property which contains task name in the data source
-                scheduleStartDate: "02/01/2014",//Provide schedule header start date
-
-                scheduleEndDate: "03/14/2014",//Provide schedule header end date
-                startDateMapping: "startDate",//Provide name of the property which contains start date of the task in the data source
-
-                durationMapping: "duration",//Provide name of the property which contains duration of the task in the data source
-                progressMapping: "progress",//Provide name of the property which contains progress of the task in the data source
-                childMapping: "subtasks",//Provide name of the property which contains subtask of the task in the data source
-            });
+    $(function() {
+        $("#GanttContainer").ejGantt({
+            dataSource: data, //Provides data source for Gantt
+            taskIdMapping: "taskID", //Provide name of the property which contains task id in the data source
+            taskNameMapping: "taskName", //Provide name of the property which contains task name in the data source
+            scheduleStartDate: "02/01/2014", //Provide schedule header start date
+            scheduleEndDate: "03/14/2014", //Provide schedule header end date
+            startDateMapping: "startDate", //Provide name of the property which contains start date of the task in the data source
+            durationMapping: "duration", //Provide name of the property which contains duration of the task in the data source
+            progressMapping: "progress", //Provide name of the property which contains progress of the task in the data source
+            childMapping: "subtasks", //Provide name of the property which contains subtask of the task in the data source
         });
+    });
 
 {% endhighlight %}
 
@@ -213,7 +210,7 @@ The following screen shot displays a Tool bar in Gantt chart control:
 
 {% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img6.png" Caption="Figure 6:Toolbar in Gantt Chart"%}
 
-> _**Note: Add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete properties in the edit Options.**_
+> **Note:** Add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete properties in the edit Options.
 
 ### Enable Sorting
 
@@ -277,7 +274,7 @@ The following screen shot displays a Gantt chart control with Enable Editing opt
 
 {% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img7.png" Caption="Figure 7: Gantt chart control with Enable Editing options"%}
 
-> _**Note: Both cellEditing and  normal  editing operations are performed through double-click action.**_
+> **Note:** Both cellEditing and  normal  editing operations are performed through double-click action.
 
 ### Enable Context Menu
 
@@ -337,12 +334,19 @@ In **ejGantt** control, you can display and assign the resource for each task. C
 
 {% highlight js %}
 
-    var projectResources = [
-        { resourceId: 1, resourceName: "Project Manager" },
-        { resourceId: 2, resourceName: "Software Analyst" },
-        { resourceId: 3, resourceName: "Developer" },
-        { resourceId: 4, resourceName: "Testing Engineer" }
-        ];
+    var projectResources =[{
+        resourceId: 1,
+        resourceName: "Project Manager"
+    },{
+        resourceId: 2,
+        resourceName: "Software Analyst"
+    },{
+        resourceId: 3,
+        resourceName: "Developer"
+    },{
+        resourceId: 4,
+        resourceName: "Testing Engineer"
+    }];
 
 {% endhighlight %}
 
