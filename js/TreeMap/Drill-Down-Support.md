@@ -43,9 +43,8 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
 
 {% highlight js %}
 
-
-<div  id="treemap" style="width: 700px;height:400px;"></div>
-
+    <div  id="treemap" style="width: 700px;height:400px;"></div>
+    
     <script type="text/javascript">
         jQuery(function ($) {
             $("#treemap").ejTreeMap({
@@ -64,7 +63,6 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
             });
         });
     </script>
-
 
 {% endhighlight %}
 

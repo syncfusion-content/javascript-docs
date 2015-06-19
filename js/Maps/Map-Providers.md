@@ -21,15 +21,12 @@ You can enable this feature by setting the **layerType** property value as "OSM"
 
 {% highlight html %}
 
-
-$("#map").ejMap({
-layers: [{
-             layerType: 'osm',
-
-urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
-}]
-}); 
-
+        $("#map").ejMap({
+                layers: [{
+                        layerType: 'osm',
+                        urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
+                }]
+        }); 
 
 {% endhighlight %}
 
@@ -49,11 +46,11 @@ You can enable this feature by defining the LayerType as “bing”.
 
 {% highlight html %}
 
-$("#map").ejMap({
-       layers: [{
-            layerType: ‘bing’,
-            bingMapType:"AerialWithLabel",
-            key:'// …bingMapKey'
+        $("#map").ejMap({
+            layers: [{
+                layerType: ‘bing’,
+                bingMapType:"AerialWithLabel",
+                key:'// …bingMapKey'
             }]
         });   
 

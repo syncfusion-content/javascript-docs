@@ -71,24 +71,25 @@ You can set headers for each level by setting the **showHeader** propery of the 
 
 {% highlight js %}
 
-<div  id="treemap" style="width: 950px; height: 500px; "></div>
+    <div  id="treemap" style="width: 950px; height: 500px; "></div>
+    
     <script type="text/javascript">
         jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({
                 // ...             
                 levels: [
-                  {groupPath: "Continent", groupGap: 2, headerHeight: 25,  headerTemplate: 'headertemplate' }
-                        ],
+                    {groupPath: "Continent", groupGap: 2, headerHeight: 25,  headerTemplate: 'headertemplate' }
+                ],
                 // ...             
             });
         }); 
     </script>     
 
-<script  id="headertemplate" type="application/jsrender">
-    <div style="background-color: white; margin:5px">
-        <label style="color:black;font-size:large;" >{{:header}}</label><br />            
-    </div>                        
-</script>                      
+    <script  id="headertemplate" type="application/jsrender">
+        <div style="background-color: white; margin:5px">
+            <label style="color:black;font-size:large;" >{{:header}}</label><br />            
+        </div>                        
+    </script>                      
 
 
 {% endhighlight %}

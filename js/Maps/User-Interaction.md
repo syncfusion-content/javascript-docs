@@ -21,7 +21,7 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 {% highlight html %}
 
-jQuery(function($) {
+        jQuery(function($) {
             $("#mapContainer").ejMap({
                 layers: [
                     {
@@ -35,7 +35,6 @@ jQuery(function($) {
                             selectionColor: "#BC5353"
                         },
                         enableSelection: true
-
                     }
                 ]
             });
@@ -85,7 +84,7 @@ The **maxValue** property is used to set the maximum zoom level of the map.
 {% highlight html %}
 
 
-jQuery(function($) {
+        jQuery(function($) {
             $("#mapContainer").ejMap({
                 layers: [
                     {
@@ -124,12 +123,10 @@ You can zoom the Maps using **zoom** method. The zoom method contains parameter 
 
 {% highlight html %}
  
-   $("#map").ejMap("zoom", 2);
+        $("#map").ejMap("zoom", 2);
 
 
 {% endhighlight %}
-
-
 
 **Using mouse scroll**
 
@@ -151,17 +148,16 @@ When **enableZoomOnSelection** property is set to true, then, zoom on double cli
 
 {% highlight html %}
 
-jQuery(function($) {
+        jQuery(function($) {
             $("#mapContainer").ejMap({
-                                // ...
-                                zoomSettings:
-{
-enableZoomOnSelection: true
-},
-                              // ...          
+                // ...
+                zoomSettings:
+                {
+                     enableZoomOnSelection: true
+                },
+                // ...          
             });
         }); 
-
 
 {% endhighlight %}
 
@@ -199,14 +195,11 @@ Zoom level of the map</td></tr>
 
 {% highlight html %}
 
-
-<script type="text/javascript">
-function buttonClick() {
- $("#map").ejMap("navigateTo", 13, 80, 5);
-}
-
-</script> 
-
+    <script type="text/javascript">
+        function buttonClick() {
+            $("#map").ejMap("navigateTo", 13, 80, 5);
+        }
+    </script> 
 
 {% endhighlight %}
 
@@ -216,14 +209,13 @@ The panning feature enables map navigation. The **enablePan** property is used t
 
 {% highlight html %}
 
-jQuery(function($) {
+        jQuery(function($) {
             $("#mapContainer").ejMap({
-                                // ...
+                // ...
                 enablePan: true
-                              // ...          
+                // ...          
             });
         }); 	
-
 
 {% endhighlight %}
 
@@ -239,11 +231,11 @@ jQuery(function($) {
 
 {% highlight html %}
 
-jQuery(function($) {
+        jQuery(function($) {
             $("#mapContainer").ejMap({
-                                // ...
+                // ...
                 navigationControl:{enableNavigation:true},
-                            // ...          
+                // ...          
             });
         });	
 
@@ -300,11 +292,11 @@ You can set this option by using **dockPosition** property in **navigationContro
 
 {% highlight html %}
 
-jQuery(function($) {
+        jQuery(function($) {
             $("#mapContainer").ejMap({
-                                // ...
+                // ...
                 navigationControl:{enableNavigation:true,orientation:'vertical',absolutePosition:{x:5,y:16},dockPosition:'none'},
-                            // ...          
+                // ...          
             });
         }); 	
 

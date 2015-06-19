@@ -37,39 +37,37 @@ You can assign the complete contents in “**WorldMap.json**” file to new **JS
 
 {% highlight js %}
 
-var world_map = //Paste all the content copied from the JSON file// 
+    var world_map = //Paste all the content copied from the JSON file// 
 
 {% endhighlight %}
 
 {% highlight js %}
 
-jQuery(function ($) {
-            $("#mapContainer").ejMap({
-                layers: [
-                    {
-                        shapeData: world_map,
-                        shapeSettings: {
-                            fill: "#9CBF4E",
-                            strokeThickness: "0.5",
-                            stroke: "White"
-                        },
-                        subLayers: [{
-                            shapeData: usMap,
-                            shapeSettings: {
-                                fill: "orange",
-                                strokeThickness: "1",
-                                stroke: "White"
-                            }
-                        }]
-                    }                
-                ]
-            });
-        }); 
+    jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                shapeData: world_map,
+                shapeSettings: {
+                    fill: "#9CBF4E",
+                    strokeThickness: "0.5",
+                    stroke: "White"
+                },
+                subLayers: [{
+                    shapeData: usMap,
+                    shapeSettings: {
+                        fill: "orange",
+                        strokeThickness: "1",
+                        stroke: "White"
+                    }
+                }]
+            }]
+        });
+    }); 
 
 
 {% endhighlight %}
 
-****
 
 {% include image.html url="/js/Maps/Layers_images/Layers_img1.png" Caption="Map with layers"%}
 
