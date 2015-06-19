@@ -32,14 +32,14 @@ You can find the common **angular.min.js** from the following installed location
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external
 </td>
 </tr>
 <tr>
 <td> 
 <b>For example</b>, If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external
 </td>
 </tr>
 </table>
@@ -50,14 +50,14 @@ The **ej.widget.angular.min.js** file can be copied from the below specified loc
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common 
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common 
 </td>
 </tr>
 <tr>
 <td>
 <b>For example</b>, If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common
 </td>
 </tr>
 </table>

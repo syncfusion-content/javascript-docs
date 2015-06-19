@@ -18,14 +18,14 @@ The installed location on your machine where you can be availed with **ej.widget
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\typescript
 </td>
 </tr>
 <tr>
 <td>
 <b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\typescript
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\typescript
 </td>
 </tr>
 </table>
@@ -44,17 +44,17 @@ To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below men
 
 ### Getting Started
 
-* Start Visual Studio 2013 and Create a new TypeScript Application from **File** -> **New** -> **Project** and save it with a meaningful name as shown below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
+Start Visual Studio 2013 and Create a new TypeScript Application from **File** -> **New** -> **Project** and save it with a meaningful name as shown below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
 
 {% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img1.png" Caption="Visual Studio New Project Pop-up" %}
 
 
-* Now, you need to add the required Scripts and Stylesheets into your Project, as shown below – Copy the required Scripts and themes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the manual reference section of the Getting Started topic),
+Now, you need to add the required Scripts and Stylesheets into your Project, as shown below – Copy the required Scripts and themes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the manual reference section of the Getting Started topic),
 
 {% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img2.png" Caption="Scripts & themes folder copied into current project" %}
 
 
-* Add the **ej.widgets.all.d.ts** and **jquery.d.ts** type-definition files in your project and refer it in the **app.ts** file of your project as shown below,
+Add the **ej.widgets.all.d.ts** and **jquery.d.ts** type-definition files in your project and refer it in the **app.ts** file of your project as shown below,
 
 {% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img3.png" Caption="ej.widgets.all.d.ts & jquery.d.ts files added to the project" %}
 
@@ -64,12 +64,12 @@ Now, refer these two files within the **app.ts** file (before referring these fi
 {% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img4.png" Caption="Reference of ej.widgets.all.d.ts & jquery.d.ts files in app.ts" %}
 
 
-* Within the **Index.html** page, define the container name for the specific Syncfusion widget to be used and also make the other Script and css references in this page as shown below,
+Within the **Index.html** page, define the container name for the specific Syncfusion widget to be used and also make the other Script and css references in this page as shown below,
 
 {% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img5.png" Caption="Script & StyleSheet reference, Container declaration in index.html page" %}
 
 
-* Now build your application, so that the **app.js** file is automatically generated and got added to your project (User have nothing to do with this file). Now, whatever code changes that you make in **app.ts** file will be reflected in app.js file automatically. 
+Now build your application, so that the **app.js** file is automatically generated and got added to your project (User have nothing to do with this file). Now, whatever code changes that you make in **app.ts** file will be reflected in app.js file automatically. 
 
 Usually, the Syncfusion widget initialization is done within this **app.ts** file using either of the following two ways.
 

@@ -112,8 +112,8 @@ You can customize the **Leaf level TreeMap****items** using **leafItemsSetting**
 
 {% highlight js %}
 
-<script type="text/javascript">
- jQuery(function ($) {
+    <script type="text/javascript">
+        jQuery(function ($) {
             $( "#treemapContainer").ejTreeMap({
                 dataSource: population_data,
                 colorValuePath: "Growth",
@@ -133,21 +133,21 @@ You can customize the **Leaf level TreeMap****items** using **leafItemsSetting**
                 tooltipTemplate:'template' 
             });
         });
-
-</script>
-<script  id="template" type="application/jsrender">
-    <div  style="margin-left:17px;margin-top:-45px;">      
-        <div style="height:auto;width:auto;background:black;border-radius:3px;opacity:0.6">
-            <div style="margin-top:-20px;margin-left:9px;padding-top:3px;margin-right:9px;">
-                <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:Region}}</label>
+    </script>
+    
+    <script  id="template" type="application/jsrender">
+        <div  style="margin-left:17px;margin-top:-45px;">      
+            <div style="height:auto;width:auto;background:black;border-radius:3px;opacity:0.6">
+                <div style="margin-top:-20px;margin-left:9px;padding-top:3px;margin-right:9px;">
+                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:Region}}</label>
+                </div>
+                <div style="height:10px;"></div>
+                <div style="margin-top:-10px;margin-left:9px;margin-right:9px;padding-bottom:3px;">
+                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:Population}}</label>
+                </div>
             </div>
-            <div style="height:10px;"></div>
-            <div style="margin-top:-10px;margin-left:9px;margin-right:9px;padding-bottom:3px;">
-                <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:Population}}</label>
-            </div>
-        </div>
-    </div>            
-</script>
+        </div>            
+    </script>
 
 
 {% endhighlight %}

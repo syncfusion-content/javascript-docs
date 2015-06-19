@@ -27,32 +27,29 @@ The **markers** property has a list of objects that contains the data for Annota
 
 {% highlight html %}
 
-var markers = [
-            { latitude: 37.0000, longitude: -120.0000, city: "California" },
-            { latitude: 40.7127, longitude: -74.0059, city: "New York" },
-            { latitude: 42, longitude: -93, city: "Iowa" }            
-        ];
-
-        jQuery(function ($) {
-            $("#mapContainer").ejMap({
-                layers: [ 
-                   {
-                                                // ...                        
-                        markers: markers,
-                        markerTemplate: 'template'
-
-                    }                         
-                ]
-            });
+    var markers = [
+        { latitude: 37.0000, longitude: -120.0000, city: "California" },
+        { latitude: 40.7127, longitude: -74.0059, city: "New York" },
+        { latitude: 42, longitude: -93, city: "Iowa" }            
+    ];
+      
+    jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [ 
+            {
+                // ...                        
+                markers: markers,
+                markerTemplate: 'template'
+            }]
         });
+    });
 
-<div  id="template" style="display: none;">
-    <div>
-        <div  style="background-image:url(http://js.syncfusion.com/demos/web/Images/map/pin.png);margin-left:3px;height:40px;width:25px;margin-top:-15px;">
-		</div>
-    </div>
-</div>  
-
+    <div  id="template" style="display: none;">
+        <div>
+            <div  style="background-image:url(http://js.syncfusion.com/demos/web/Images/map/pin.png);margin-left:3px;height:40px;width:25px;margin-top:-15px;">
+	   	   </div>
+        </div>
+    </div>  
 
 {% endhighlight %}
 
@@ -74,32 +71,30 @@ Without datasource, n number of markers can be added to shape layers with **mark
 
 {% highlight html %}
 
-var markers = [
-            { latitude: 37.0000, longitude: -120.0000, city: "California" },
-            { latitude: 40.7127, longitude: -74.0059, city: "New York" },
-            { latitude: 42, longitude: -93, city: "Iowa" }            
-        ];
+    var markers = [
+        { latitude: 37.0000, longitude: -120.0000, city: "California" },
+        { latitude: 40.7127, longitude: -74.0059, city: "New York" },
+        { latitude: 42, longitude: -93, city: "Iowa" }            
+    ];
 
-        jQuery(function ($) {
-            $("#mapContainer").ejMap({
-                layers: [ 
-                   {
-                                                // ...                        
-                        markers: markers,
-                        markerTemplate: 'template'
-
-                    }                         
-                ]
-            });
+    jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [ 
+            {
+                // ...                        
+                markers: markers,
+                markerTemplate: 'template'
+            }]
         });
+    });
 
-<div  id="template" style="display: none;">
-    <div>
-       <div style="margin-left:8px;height:45px;width:120px;margin-top:-23px;">					
-	       <label class="label1" style="color:black;margin-left:15px;font-weight:normal">{{:city}}</label>				 			 
-	   </div>
-    </div>
-</div>  
+    <div  id="template" style="display: none;">
+        <div>
+            <div style="margin-left:8px;height:45px;width:120px;margin-top:-23px;">					
+	           <label class="label1" style="color:black;margin-left:15px;font-weight:normal">{{:city}}</label>				 			 
+	        </div>
+        </div>
+    </div>  
 
 
 {% endhighlight %}
@@ -175,36 +170,34 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 {% highlight html %}
 
-jQuery(function ($) {
-            $("#mapContainer").ejMap({
-                layers: [
-                    {
-                        shapeData: usMap,
-                        shapeDataPath: "name",
-                        shapePropertyPath: "name",
-                        dataSource: [
-                            { name: "California", population: "38332521" },
-                            { name: "New York", population: "19651127" },
-                            { name: "Iowa", population: "3090416" }
-                        ],
-                        enableMouseHover: true,
-                        shapeSettings: {
-                            fill: "#9CBF4E",
-                            strokeThickness: "0.5",
-                            stroke: "White"
-                        },
-                        bubbleSettings: {
-                            showBubble:true,
-                            minValue: "20",
-                            maxValue: "40",
-                            color: "#C99639",
-                            valuePath: "population"
-                        }
-                    }                                                               
-                ]
-            });
+    jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                shapeData: usMap,
+                shapeDataPath: "name",
+                shapePropertyPath: "name",
+                dataSource: [
+                    { name: "California", population: "38332521" },
+                    { name: "New York", population: "19651127" },
+                    { name: "Iowa", population: "3090416" }
+                ],
+                enableMouseHover: true,
+                shapeSettings: {
+                    fill: "#9CBF4E",
+                    strokeThickness: "0.5",
+                    stroke: "White"
+                },
+                bubbleSettings: {
+                    showBubble:true,
+                    minValue: "20",
+                    maxValue: "40",
+                    color: "#C99639",
+                    valuePath: "population"
+                }
+            }]
         });
-
+    });
 
 {% endhighlight %}
 
@@ -274,24 +267,21 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 {% highlight html %}
 
-
-jQuery(function ($) {
-             $("#mapContainer").ejMap({
-layers: [
-                    {
-                                              // ...
-legendSettings:{
-                          showLegend:true,
-                          position:"bottomleft",
-                          height: 30,
-                          width: 70,
-                         
-                    },
-// ...                        
-                    }
-                ]
-            });
-
+    jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                // ...
+                legendSettings:{
+                    showLegend:true,
+                    position:"bottomleft",
+                    height: 30,
+                    width: 70,                         
+                },
+                // ...                        
+            }]
+        });
+    });
 
 {% endhighlight %}
 
@@ -317,27 +307,26 @@ You can provide the left and right labels to interactive legend by using **leftL
 
 {% highlight html %}
 
-jQuery(function ($) {
-             $("#mapContainer").ejMap({
-layers: [
-                    {
-                                              // ...
-                      legendSettings: {
-                            showLegend: true,
-                            dockOnMap:true,
-                            height: 15,
-                            width: 150,
-                            position: "topleft",
-                            mode: "interactive",
-                            title: "Population",
-                            leftLabel: "0.5M",
-                            rightLabel: "40M"
-                        },
-                        // ...                        
-                    }
-                ]
-            }); 
-
+    jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                // ...
+                legendSettings: {
+                    showLegend: true,
+                    dockOnMap:true,
+                    height: 15,
+                    width: 150,
+                    position: "topleft",
+                    mode: "interactive",
+                    title: "Population",
+                    leftLabel: "0.5M",
+                    rightLabel: "40M"
+                },
+                // ...                        
+            }]
+        }); 
+    });
 
 {% endhighlight %}
 
@@ -351,62 +340,51 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 {% highlight html %}
 
-
-
-jQuery(function ($) {
-            $("#map").ejMap({
-
-                layers: [
+    jQuery(function ($) {
+        $("#map").ejMap({
+            layers: [
+            {
+                legendSettings: {
+                    // ...
+                    type: "bubbles",                            
+                    // ...
+                },
+                
+                bubbleSettings: {
+                    showBubble:true,
+                    valuePath: "population",
+                    minValue: 20,
+                    maxValue: 40,	
+                    colorMappings:
                     {
-                     legendSettings: {
-
-                               // ...
-
-                            type: "bubbles",                            
-
-                           // ...
-                        },
-
-                        bubbleSettings: {
-                                showBubble:true,
-                                valuePath: "population",
-                                minValue: 20,
-                                maxValue: 40,	
-                                colorMappings:
-                                    {
-
-                                        rangeColorMapping:
-
-                                     [
-                                {
-                                    from: 500000,
-                                    to: 1000000,
-                                    color: "#9CBF4E",
-                                    range: 10688
-                                },
-                                   {
-                                       from: 1000001,
-                                       to: 5000000,
-                                       color: "#45D6BD",
-                                       range: 19390
-
-
-                                   },
-                                   {
-                                       from: 5000001,
-                                       to: 10000000,
-                                       color: "#FF567C",
-                                       range: 18718
-
-                                   },
-                                   {
-                                       from: 10000001,
-                                       to: 40000000,
-                                       color: "#470F52",
-                                       range: 30716
-
-                                   }],
-                                }                                
+                        rangeColorMapping:
+                        [
+                            {
+                                from: 500000,
+                                to: 1000000,
+                                color: "#9CBF4E",
+                                range: 10688
+                            },
+                            {
+                                from: 1000001,
+                                to: 5000000,
+                                color: "#45D6BD",
+                                range: 19390
+                            },
+                            {
+                                from: 5000001,
+                                to: 10000000,
+                                color: "#FF567C",
+                                range: 18718
+                            },
+                            {
+                                from: 10000001,
+                                to: 40000000,
+                                color: "#470F52",
+                                range: 30716
+                            }
+                        ],
+                    }                                
                 },
                 shapeData: usMap
                 }
