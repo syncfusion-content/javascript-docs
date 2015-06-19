@@ -27,7 +27,7 @@ diagram.exportDiagram();
 
 {% endhighlight %}
 
-### Exporting options
+## Exporting options
 
 Diagram provides support to export the desired region of the diagram to desired formats. The following code example illustrates how to export and download the positive region of diagram to JPEG image format.
 
@@ -55,11 +55,11 @@ diagram.exportDiagram(options);
 
 {% endhighlight %}
 
-#### File Name
+### File Name
 
 Name of the file to be downloaded. By default, the file name is set as “Diagram”.
 
-#### Mode
+### Mode
 
 Diagram provides support to export and download diagram as files. You can also export Diagram as data of ImageURL/SVG formats. Mode is to specify whether to export diagram as downloadable files or as data. Following table illustrates the possible mode options.
 
@@ -80,7 +80,7 @@ Exports diagram as data of formats ImageURL/SVG.</td></tr>
 
 _Exporting modes_
 
-#### Region
+### Region
 
 You can export any particular region of the **Diagram**. The region to be exported is based on the region and bounds properties. Following table illustrates provided diagram regions.
 
@@ -101,7 +101,7 @@ Export diagram is based on page setting (page size, multiple page, page margin, 
 
 _Diagram Region_
 
-#### Format
+### Format
 
 Format is to specify the type/format of the exported file. It includes jpg, png, bmp and svg.
 

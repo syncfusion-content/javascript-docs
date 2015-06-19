@@ -317,7 +317,7 @@ Connector is connected to the bounds of the node and at a specific point on the 
 
 {% highlight js %}
 
-//for node creation refer the link [Node creation](http://help.syncfusion.com/ug/js/documents/createyourfirstdiagr.htm)
+//for node creation refer the link Node creation
 //create a connection between headNode/tailNode using connector
 
 var connector = [{
@@ -334,7 +334,7 @@ The point of connection is changed optimally at runtime while performing operati
 
 ## Connecting Ports
 
-**Port** establishes the connection with nodes at a specific point. For creating specific port connection, refer the link [Port to Port Connection.](http://help.syncfusion.com/ug/js/default.htm)
+**Port** establishes the connection with nodes at a specific point. For creating specific port connection, refer the link [Port to Port Connection.](/js/Diagram/Port)
 
 ## Appearance
 
@@ -543,4 +543,4 @@ connector.constraints = connector.Constraints &~ (ej.datavisualization.Diagram.C
 
 {% endhighlight %}
 
-> _**Note:**_ Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm). 
+> _**Note:**_ Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations). 

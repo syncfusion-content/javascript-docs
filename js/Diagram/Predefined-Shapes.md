@@ -55,9 +55,7 @@ The list of flow shapes are as follows.
 
 ## BPMN Shape
 
-BPMN shapes are used to represent internal business procedure in graphical notation and enables you to communicate the procedures in a standard manner.
-
-The BPMN shapes are categorized as follow.
+BPMN shapes are used to represent internal business procedure in graphical notation and enables you to communicate the procedures in a standard manner. The BPMN shapes are categorized as follow.
 
 1. Event
 2. Gateway
@@ -321,9 +319,7 @@ The different activities in the BPMN shape are listed as follows.
 
 ### Data
 
-Data object is used to represent “how data is produced by activities in process”.
-
-DataSource is used to read and write data.
+Data object is used to represent “how data is produced by activities in process”. DataSource is used to read and write data.
 
 ### DataObject & Datasource
 

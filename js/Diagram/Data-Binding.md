@@ -13,7 +13,7 @@ documentation: ug
 
 You can populate **Diagram** elements using data binding support such as **JSON** and **OData** services.
 
-### DataSource Settings
+#### DataSource Settings
 
 The **DataSourceSettings** property of **Diagram** includes the required data source fields and it can be set with appropriate values as follows.
 

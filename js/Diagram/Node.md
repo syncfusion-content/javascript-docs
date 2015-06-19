@@ -177,9 +177,9 @@ var node = {
 
 **Diagram** supports to add **SVG** content as shape content. It is achieved by setting node’s type as **ej.datavisualization.Diagram.Shapes.Native** and assigns the template id to the **templateId** property. The **templateId** property receives **id svg** template. The following code illustrates how a **Native node** is created.
 
-{% highlight js %}
+{% highlight html %}
 
-//dependency scripts
+<!-- dependency scripts -->
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 
 <script id="svgTemplate" type="text/x-jsrender">
@@ -204,9 +204,9 @@ var node = {
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img8.png" Caption="Native Shape"%}
 
-> _**Note:**_
-* Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
-* Note that fill color is applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
+> _**Note:**_ Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
+
+> Note that fill color is applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
 
 {% highlight html %}
 
@@ -439,4 +439,4 @@ node.constraints = node.constraints &~(ej.datavisualization.Diagram.NodeConstrai
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img14.jpeg" Caption="Rotate Constraints-disabled"%}
 
-> _**Note:**_ Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm).
+> _**Note:**_ Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](js/Diagram/How-To/Bitwise-Operations).

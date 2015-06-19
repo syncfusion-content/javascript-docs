@@ -288,9 +288,7 @@ diagram.moveForward();
 
 ### sendBackward Commands
 
-The **sendBackward** command decreases the z-index value of the selected element by 1.
-
-The following code illustrates how to execute **sendBackward** command.
+The **sendBackward** command decreases the z-index value of the selected element by 1. The following code illustrates how to execute **sendBackward** command.
 
 {% highlight js %}
 
@@ -303,9 +301,7 @@ diagram.sendBackward();
 
 ## Zoom Commands
 
-**Zoom** feature is used to zoom-in and zoom-out the Diagram view and the zooming performed based on the center of current Diagram view. 
-
-The following code illustrates how to zoom-in the Diagram.
+**Zoom** feature is used to zoom-in and zoom-out the Diagram view and the zooming performed based on the center of current Diagram view. The following code illustrates how to zoom-in the Diagram.
 
 {% highlight js %}
 
@@ -454,4 +450,4 @@ _Diagram Region_
 
 ## Undo/Redo
 
-Refer the Link for [Undo/Redo Commands](http://help.syncfusion.com/ug/js/documents/undoandredo.htm).
+Refer the Link for [Undo/Redo Commands](/js/Diagram/Undo-and-Redo).
