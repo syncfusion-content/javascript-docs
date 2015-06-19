@@ -40,8 +40,6 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% endhighlight %}
 
-
-
 2.Add **&lt;div&gt;** element with in the **&lt;Body&gt;** tag.
 
 {% highlight html %}
@@ -52,8 +50,6 @@ This section explains how to create a **TreeGrid** control in your application w
     </body>
 
 {% endhighlight %}
-
-
 
 3.Create the **ejTreeGrid** with the empty data source.
 
@@ -74,8 +70,6 @@ This section explains how to create a **TreeGrid** control in your application w
 
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img2.png" Caption="TreeGrid with empty datasource "%}
 
@@ -174,8 +168,6 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% endhighlight %}
 
-
-
 5.Initialize the **ejTreeGrid** with data source created in last step.
 
 {% highlight js %}
@@ -197,8 +189,6 @@ This section explains how to create a **TreeGrid** control in your application w
      });
 
 {% endhighlight %}
-
-
 
 A **TreeGrid** is displayed as the output in the following screenshot.
 
@@ -222,8 +212,6 @@ Enable the multicolumn sorting in **ejTreeGrid** by setting **allowMultiSorting*
 
 {% endhighlight %}
 
-
-
 {% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img4.png" Caption="TreeGrid enabled with sorting "%}
 
 ### Enable Editing
@@ -241,8 +229,6 @@ You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows
     });
 
 {% endhighlight %}
-
-
 
 And also, the following editors are provided for support in **ejTreeGrid** control.
 
@@ -262,7 +248,6 @@ You can set the editor type for a particular column as follows.
 
 {% highlight js %}
 
-
     $("#TreeGridContainer").ejTreeGrid({
         //...
         columns: [
@@ -273,8 +258,6 @@ You can set the editor type for a particular column as follows.
     })
 
 {% endhighlight %}
-
-
 
 The output of the **DateTimePicker** editor in **TreeGrid** control is as follows.
 
