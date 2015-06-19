@@ -19,30 +19,100 @@ The following code illustrates how to create a port and add it to nodes port arr
 
 //create a port and it to node’s ports array. 
 var node = {
-    ports: [{
-        name: "port1", offset: { x: 0, y: 0.5 }, fillColor: "yellow",
-        visibility: ej.datavisualization.Diagram.PortVisibility.Visible }]
+   ports: [{
+      name: "port1",
+      offset: {
+         x: 0,
+         y: 0.5
+      },
+      fillColor: "yellow",
+      visibility: ej.datavisualization.Diagram.PortVisibility.Visible
+   }]
 };
-
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Port_images/Port_img1.png" Caption="Port"%}
 
 ## Connecting Ports
 
-The connection between specific ports on the node is established by assigning the name of the node’s port to connector’s target port/source port. The following code illustrates how to establish a port connection:
+The connection between specific ports on the node is established by assigning the name of the node’s port to connector’s target port/source port.
+
+The following code illustrates how to establish a port connection:
 
 {% highlight js %}
 
 //create nodes with ports
-var nodes = [
-    { name: "node1", offsetX: 300, offsetY: 300, width: 100, height: 100,   ports: [ { name: "port1", offset: { x: 0, y: 0.5 } }, { name: "port2", offset: { x: 0.5, y: 0 } }, { name: "port3", offset: { x: 1, y: 0.5 } }, { name: "port4", offset: { x: 0.5, y: 1 }}]},
-    { name: "node2", offsetX: 450, offsetY: 500, width: 100, height: 100, ports: [ { name: "port1", offset: { x: 0, y: 0.5 } }, { name: "port2", offset: { x: 0.5, y: 0 } }, { name: "port3", offset: { x: 1, y: 0.5 } }, { name: "port4", offset: { x: 0.5, y: 1 }}]}
-];
-
+var nodes = [{
+   name: "node1",
+   offsetX: 300,
+   offsetY: 300,
+   width: 100,
+   height: 100,
+   ports: [{
+      name: "port1",
+      offset: {
+         x: 0,
+         y: 0.5
+      }
+   }, {
+      name: "port2",
+      offset: {
+         x: 0.5,
+         y: 0
+      }
+   }, {
+      name: "port3",
+      offset: {
+         x: 1,
+         y: 0.5
+      }
+   }, {
+      name: "port4",
+      offset: {
+         x: 0.5,
+         y: 1
+      }
+   }]
+}, {
+   name: "node2",
+   offsetX: 450,
+   offsetY: 500,
+   width: 100,
+   height: 100,
+   ports: [{
+      name: "port1",
+      offset: {
+         x: 0,
+         y: 0.5
+      }
+   }, {
+      name: "port2",
+      offset: {
+         x: 0.5,
+         y: 0
+      }
+   }, {
+      name: "port3",
+      offset: {
+         x: 1,
+         y: 0.5
+      }
+   }, {
+      name: "port4",
+      offset: {
+         x: 0.5,
+         y: 1
+      }
+   }]
+}];
 //create connector and connect ports
-var connector = [{ name: "connector", sourceNode: "node1", targetNode: "node2", sourcePort: "port4", targetPort: "port1" }];
-
+var connector = {
+   name: "connector",
+   sourceNode: "node1",
+   targetNode: "node2",
+   sourcePort: "port4",
+   targetPort: "port1"
+};
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Port_images/Port_img2.png" Caption="Port to Port Connection"%}
@@ -101,13 +171,23 @@ The following code illustrates how to customize the port.
 {% highlight js %}
 
 //set various appearance properties to port
-var port = { visibility: true, fillColor: "yellow", shape:{type: "circle"}, size: 12, borderColor: "black", borderWidth:2 };
-
+var port = {
+   visibility: true,
+   fillColor: "yellow",
+   shape: {
+      type: "circle"
+   },
+   size: 12,
+   borderColor: "black",
+   borderWidth: 2
+};
 {% endhighlight %}
 
 ## Constraints
 
 You can enable or disable certain behaviors of Port using Port’s **constraints** property. 
+
+_Constraints_
 
 <table>
 <tr>
@@ -124,15 +204,15 @@ Connect</td><td>
 Enables connections with connector</td></tr>
 </table>
 
-_Constraints_
 
 The following code illustrates how to set port constraints.
 
 {% highlight js %}
 
 //set port’s "Connect" constraint
-var port = { constraints: ej.datavisualization.Diagram.PortConstraints.Connect };
-
+var port = {
+   constraints: ej.datavisualization.Diagram.PortConstraints.Connect
+};
 {% endhighlight %}
 
 > _**Note:**_ Port’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
