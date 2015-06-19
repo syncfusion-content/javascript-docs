@@ -15,17 +15,12 @@ Connectors are objects used to create a link between two nodes. A connector is a
 
 ## Create Connector
 
-**Connector** is created from JSON data and added to the Diagram model using Diagram Model’s **connectors** property. The connector’s name must be unique. 
-
-By default, the connector type is “straight”.
-
-The following code illustrates how to create a Connector and add it to **Diagram**.
+**Connector** is created from JSON data and added to the Diagram model using Diagram Model’s **connectors** property. The connector’s name must be unique. By default, the connector type is “straight”. The following code illustrates how to create a Connector and add it to **Diagram**.
 
 {% highlight js %}
 
 //create a connector 
-var connectors = [
-{ 
+var connectors = [{ 
   name: "connector", 
   lineWidth: 2, 
   sourcePoint: { x: 300, y: 40 }, 
@@ -34,7 +29,7 @@ var connectors = [
 ];
 //add connectors to diagram
 $("#Diagram").ejDiagram({
-   connectors: connectors
+  connectors: connectors
 });
 
 {% endhighlight %}
@@ -46,12 +41,10 @@ $("#Diagram").ejDiagram({
 The connector has three types of segments.
 
 * Orthogonal Segments
-
 * Straight Segments
-
 * Bezier Segments
 
-**Orthogonal Segments**
+### Orthogonal Segments
 
 Orthogonal segments are visually represented based on the specified length and direction values. The following code example illustrates how to add a **Connector** with an **Orthogonal Segment.**
 
@@ -69,11 +62,11 @@ var connectors = [{
   lineWidth: 2, 
   segments: segments, 
   sourcePoint: { x: 300, y: 40 }, 
-  targetPoint: { x: 400, y: 150 }}];
+  targetPoint: { x: 400, y: 150 } }];
 
 //add connectors to diagram model
 $("#Diagram").ejDiagram({
-  connectors: connectors
+    connectors: connectors
 });
 
 {% endhighlight %}
@@ -104,11 +97,9 @@ $("#Diagram").ejDiagram({
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img4.png" Caption="Orthogonal Segment"%}
 
-**Straight Segment**
+### Straight Segment
 
-The straight segments can be added by specifying points as to where the line has to be drawn. The segment end point links the source point and target point of the connector. 
-
-The following code example illustrates how to add **Straight Segment** through code.
+The straight segments can be added by specifying points as to where the line has to be drawn. The segment end point links the source point and target point of the connector. The following code example illustrates how to add **Straight Segment** through code.
 
 {% highlight js %}
 
@@ -116,7 +107,7 @@ The following code example illustrates how to add **Straight Segment** through c
 var segments = [
   { type: "straight", point: { x: 400, y: 150 } }, 
   { type: "straight", point: { x: 300, y: 10 } }];
-var connector =[{ segments: segments, targetPoint: { x: 300, y: 150 }, sourcePoint: { x: 300, y: 150 }}];
+var connector = [{ segments: segments, targetPoint: { x: 300, y: 150 }, sourcePoint: { x: 300, y: 150 }}];
 
 {% endhighlight %}
 
@@ -124,9 +115,9 @@ var connector =[{ segments: segments, targetPoint: { x: 300, y: 150 }, sourcePoi
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img6.png" Caption="Single Line"%}
 
-The control points can be added or deleted at runtime with shortcut key combination **ctrl + shift +click** on the control point.
+The control points can be added or deleted at runtime with shortcut key combination **ctrl + shift + click** on the control point.
 
-**Bezier Segment**
+### Bezier Segment
 
 Bezier segments can be added through points or vector.
 
@@ -172,7 +163,7 @@ var connectors =[{
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img8.png" Caption="Bezier segment with vectors"%}
 
-**Editing Segments**
+### Editing Segments
 
 The segments can be edited during runtime by dragging control thumbs. Segments can be updated when neighboring segments are adjusted.
 
@@ -182,11 +173,9 @@ The segments can be edited during runtime by dragging control thumbs. Segments c
 
 **Connector Padding** allows you to adjust the space between connector’s end point and the object to which it is connected (Node, Group, or Port). 
 
-**Endpoint adjustment specific to connector ends**
+### Endpoint adjustment specific to connector ends
 
-Padding distance between source or target end with its connected end (Node, Group, or Port) can be adjusted by using **sourcePadding** and **targetPadding,** respectively.
-
-The following code examples illustrate how to adjust the distance by using **padding** property.
+Padding distance between source or target end with its connected end (Node, Group, or Port) can be adjusted by using **sourcePadding** and **targetPadding,** respectively. The following code examples illustrate how to adjust the distance by using **padding** property.
 
 {% highlight js %}
 
@@ -197,11 +186,9 @@ var connector = [{sourcePadding: 15, targetPadding:20}];
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img10.png" Caption="Endpoint’s adjustment specific to connector’s ends"%}
 
-**Endpoint adjustment specific to nodes**
+### Endpoint adjustment specific to nodes
 
-**ConnectorPadding** property of a node is used to specify the amount of space needed in pixels between a node and all its connected edges.
-
-The following code examples illustrate how to pad edges connected to a node.
+**ConnectorPadding** property of a node is used to specify the amount of space needed in pixels between a node and all its connected edges. The following code examples illustrate how to pad edges connected to a node.
 
 {% highlight js %}
 
@@ -212,11 +199,9 @@ var node = [{connectorPadding: 20}];
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img11.png" Caption="Endpoint’s adjustment specific to nodes"%}
 
-**Endpoint adjustment specific to ports**
+### Endpoint adjustment specific to ports
 
-**ConnectorPadding** property of a port is used to specify the amount of space needed in pixels between a port and all its connected edges.
-
-The following code examples illustrate how to pad edges connected to a port.
+**ConnectorPadding** property of a port is used to specify the amount of space needed in pixels between a port and all its connected edges. The following code examples illustrate how to pad edges connected to a port.
 
 {% highlight js %}
 
@@ -229,27 +214,18 @@ var port = [{connectorPadding: 20}];
 
 ## Line Bridging
 
-**Line Bridging** creates a bridge for lines to smartly cross over other lines, at points of intersection. When two line connectors meet each other, the line with the higher z-order draws an arc over the line with lower z-order.
-
-Only straight and orthogonal connectors support line bridging.
-
-Line bridging is disabled by default, you can enable it by adding **ConnectorConstraints.Bridging** in constraints.
-
-The following code illustrates how to enable line bridging.
+**Line Bridging** creates a bridge for lines to smartly cross over other lines, at points of intersection. When two line connectors meet each other, the line with the higher z-order draws an arc over the line with lower z-order. Only straight and orthogonal connectors support line bridging. Line bridging is disabled by default, you can enable it by adding **ConnectorConstraints.Bridging** in constraints. The following code illustrates how to enable line bridging.
 
 {% highlight js %}
 
 //Enable Line Bridging for a single connector
 var constraints = ej.datavisualization.Diagram.ConnectorConstraints;
-
 var constraint = constraints.Bridging | constraints.Default;
 var connector = [{constraints:constraint}];
 
 //Enable Line Bridging for all connectors added to diagram model
 var constraints = ej.datavisualization.Diagram.DiagramConstraints;
-
 var constraint = constraints1.Bridging | constraints1.Default;
-
 //Initialize the diagram
 $("#diagram").ejDiagram({
   constraints:  constraint
@@ -259,15 +235,11 @@ $("#diagram").ejDiagram({
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img13.png" Caption="Line Bridging"%}
 
-When the connector constraint is set as **ConnectorConstraints.InheritBridging,** bridging is based on **DiagramConstraints**.
+When the connector constraint is set as **ConnectorConstraints.InheritBridging**, bridging is based on **DiagramConstraints**.
 
-**Line Bridging Direction**
+### Line Bridging Direction
 
-Direction of the Line Bridge can be customized using the **BridgeDirection** property. This property decides the intersecting segment that shows a bridge based on your preferred direction. 
-
-The default value for the Diagram model’s **BridgeDirection** property is **ej.datavisualization.Diagram.BridgeDirection.Top**.
-
-_BridgeDirection Property_
+Direction of the Line Bridge can be customized using the **BridgeDirection** property. This property decides the intersecting segment that shows a bridge based on your preferred direction. The default value for the Diagram model’s **BridgeDirection** property is **ej.datavisualization.Diagram.BridgeDirection.Top**.
 
 <table>
 <tr>
@@ -279,8 +251,11 @@ _BridgeDirection Property_
 <td>
 bridgeDirection</td><td>
 Gets or sets the BridgeDirection for horizontal and vertical lines.</td><td>
-EnumBridgeDirection.LeftBridgeDirection.RightBridgeDirection.TopBridgeDirection.Bottom</td></tr>
+Enum<br/>
+BridgeDirection.Left<br/>BridgeDirection.Right<br/>BridgeDirection.Top<br/>BridgeDirection.Bottom</td></tr>
 </table>
+
+_BridgeDirection Property_
 
 The following code example is used to set Bridge Direction.
 
@@ -323,9 +298,7 @@ diagram.update({ bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.T
 
 ## Corner Radius
 
-**Corner Radius** support enables you to create connectors with rounded corners. 
-
-The following code example illustrates how to set corner radius for connectors.
+**Corner Radius** support enables you to create connectors with rounded corners. The following code example illustrates how to set corner radius for connectors.
 
 {% highlight js %}
 
@@ -340,7 +313,7 @@ var connector = { cornerRadius: 20 };
 
 ## Connecting Nodes
 
-Connector is connected to the bounds of the node and at a specific point on the node .You are required to assign the source node name to connector’s **sourceNode** property and target node name to connector’s **targetNode** property, in order to establish the connection. The port to port connection between specific points on node is established by assigning the name of the node’s port to connector’s **targetPort /sourcePort**. At runtime, you can change the point of connection while dragging or rotating node.
+Connector is connected to the bounds of the node and at a specific point on the node. You are required to assign the source node name to connector’s **sourceNode** property and target node name to connector’s **targetNode** property, in order to establish the connection. The port to port connection between specific points on node is established by assigning the name of the node’s port to connector’s **targetPort /sourcePort**. At runtime, you can change the point of connection while dragging or rotating node.
 
 {% highlight js %}
 
@@ -348,7 +321,8 @@ Connector is connected to the bounds of the node and at a specific point on the 
 //create a connection between headNode/tailNode using connector
 
 var connector = [{
-  segment:type: ej.datavisualization.Diagram.Segment.Orthogonal},sourceNode: "headNode", //set name of sourceNode
+  segment: { type: ej.datavisualization.Diagram.Segment.Orthogonal },
+  sourceNode: "headNode", //set name of sourceNode
   targetNode: "tailNode" //set name of targetNode
 }];
 
@@ -360,13 +334,11 @@ The point of connection is changed optimally at runtime while performing operati
 
 ## Connecting Ports
 
-**Port** establishes the connection with nodes at a specific point.For creating specific port connection, refer the link [Port to Port Connection.](http://help.syncfusion.com/ug/js/default.htm)
+**Port** establishes the connection with nodes at a specific point. For creating specific port connection, refer the link [Port to Port Connection.](http://help.syncfusion.com/ug/js/default.htm)
 
 ## Appearance
 
 You can customize the appearance of the connector by setting a desired value to the appropriate appearance properties. The following code illustrates how to customize the appearance of connector.
-
-_Appearance_
 
 <table>
 <tr>
@@ -396,6 +368,8 @@ number</td><td>
 Gets or sets the opacity of the connector</td></tr>
 </table>
 
+_Appearance_
+
 {% highlight js %}
 
 //set various appearance properties to connector
@@ -407,7 +381,7 @@ connectors = [{
   segments: segments,
   sourcePoint: { x: 210, y: 40 },
   targetPoint: { x: 450, y: 150 },
-  lineColor: "black"}];
+  lineColor: "black" }];
 
 {% endhighlight %}
 
@@ -433,11 +407,9 @@ var connector = [{
 
 {% endhighlight %}
 
-**Decorator Appearance**
+### Decorator Appearance
 
 Decorator appearance is customized by setting desired value to the appropriate appearance properties.
-
-_Decorator Appearance_
 
 <table>
 <tr>
@@ -477,6 +449,8 @@ string</td><td>
 Gets or sets the path data of the decorator.</td></tr>
 </table>
 
+_Decorator Appearance_
+
 The following code illustrates how to customize Decorator Shape.
 
 {% highlight js %} 
@@ -501,11 +475,7 @@ var connector = [{
 
 ## Constraints
 
-**Connector Constraints**
-
 You can enable or disable certain behaviors of Connectors using the **constraints** property.
-
-_Constraints_
 
 <table>
 <tr>
@@ -558,6 +528,8 @@ Default</td><td>
 Enables all constraints.</td></tr>
 </table>
 
+_Constraints_
+
 The default value for the connector constraints property is ej.datavisualization.Diagram.ConnectorConstraints.Default.
 
 **Example**
@@ -567,31 +539,8 @@ The following code illustrates how to disable select constraints of connector. D
 {% highlight js %}
 
 //disable select constraint
-connector.constraints = connector.Constraints &~(ej.datavisualization.Diagram.ConnectorConstraints.Select);
+connector.constraints = connector.Constraints &~ (ej.datavisualization.Diagram.ConnectorConstraints.Select);
 
 {% endhighlight %}
 
-> _**Note: Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see**_ [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm)_**.**_ 
-
-## Events
-
-_Events_
-
-<table>
-<tr>
-<td>
-<b>Events</b></td><td>
-<b>Arguments</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-connectionChange</td><td>
-{cancel, connection, element, model, port, type}<br/>
-cancel- boolean<br/>
-element- object(node/connector)<br/>
-connection- object(target/source node to be changed)<br/>
-port- object(source/target port to be changed)<br/>
-model- object (diagram’s model)<br/>
-type-string(event name “connectionChange”)</td><td>
-This event is raised when you change connection from one node to another node/connect to node/disconnect from node during runtime.</td></tr>
-</table>
+> _**Note:**_ Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm). 

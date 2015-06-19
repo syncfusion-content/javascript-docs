@@ -85,7 +85,7 @@ You can customize the **Label appearance** and position using its properties.
 {% highlight js %}
 
 //set various appearance properties to label
-var label = { "text": "Label Text", fontSize": 12, "fontFamily": "TimesNewRoman", italic: true, "fontColor": "black", "fillColor": "White", "borderColor": "black", "borderWidth": 1, wrapText: true, textDecoration: ej.datavisualization.Diagram.TextDecorations.LineThrough };
+var label = { "text": "Label Text", "fontSize": 12, "fontFamily": "TimesNewRoman", italic: true, "fontColor": "black", "fillColor": "White", "borderColor": "black", "borderWidth": 1, wrapText: true, textDecoration: ej.datavisualization.Diagram.TextDecorations.LineThrough };
 
 {% endhighlight %}
 
@@ -125,8 +125,6 @@ diagram.updateLabel(node.name, node.labels[0], label);
 
 You can align the Label using its alignment properties.
 
-_Label Alignment_
-
 <table>
 <tr>
 <td>
@@ -160,14 +158,17 @@ ej.datavisualization.Diagram.Point</td><td>
 Gets or sets the position for the label.</td></tr>
 </table>
 
+_Label Alignment_
+
 {% highlight js %}
 
 //align label and its text
-var label = { text: "Label", offset: { x: 0, y: 0.5 }, verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top, horizontalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center ,textAlign: ej.datavisualization.Diagram.TextAlign.Center };                   
+var label = { text: "Label", offset: { x: 0, y: 0.5 },
+              verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
+              horizontalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center,
+              textAlign: ej.datavisualization.Diagram.TextAlign.Center };                   
 
 {% endhighlight %}
-
-_Alignment_
 
 <table>
 <tr>
@@ -196,6 +197,8 @@ Bottom</td><td>
 <img src="/js/Diagram/Concepts-and-Features/Label_images/Label_img9.png" alt="" width="68pt" height="58pt"/></td></tr>
 </table>
 
+_Alignment_
+
 {% include image.html url="/js/Diagram/Concepts-and-Features/Label_images/Label_img10.png" Caption="Left align"%}
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Label_images/Label_img11.png" Caption="Label Alignment"%}
@@ -214,8 +217,6 @@ var label = {wrapping: ej.datavisualization.Diagram.Wrapping.Wrap };
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Label_images/Label_img12.png" Caption="Text Wrapping"%}
-
-_Text Wrapping_
 
 <table>
 <tr>
@@ -240,11 +241,11 @@ Text-wrapping occurs when the text overflows beyond the available node width. Ho
 <img src="/js/Diagram/Concepts-and-Features/Label_images/Label_img15.png" alt="" width="122pt" height="57pt"/></td></tr>
 </table>
 
-**Width**
+_Text Wrapping_
 
-By default, label wraps the text based on its parent element’s size (node/group/connector). You can override this by using **width** property. When the label width is set, label acts like a container and wraps the label based on width specified.
+### Width
 
-The following code example illustrates how to set the label width.
+By default, label wraps the text based on its parent element’s size (node/group/connector). You can override this by using **width** property. When the label width is set, label acts like a container and wraps the label based on width specified. The following code example illustrates how to set the label width.
 
 {% highlight js %}
 
@@ -269,25 +270,3 @@ var node = { labels:[ { text: "Left", offset: { x: 0.1, y: 0.1 }},
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Label_images/Label_img16.png" Caption="Multiple Label and Alignment"%}
-
-## Events
-
-_Events_
-
-<table>
-<tr>
-<td>
-<b>Events</b></td><td>
-<b>Arguments</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-textChange</td><td>
-{cancel, element, model, type value}<br/>
-cancel: boolean<br/>
-element: object(node/connectors)<br/>
-model: object(diagram’s model)<br/>
-type: string(event name “textChange”)<br/>
-value: string(text of label)</td><td>
-This event is raised when text of the Label gets changed during runtime.</td></tr>
-</table>

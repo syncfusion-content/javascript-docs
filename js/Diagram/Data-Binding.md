@@ -13,11 +13,9 @@ documentation: ug
 
 You can populate **Diagram** elements using data binding support such as **JSON** and **OData** services.
 
-**DataSource Settings**
+### DataSource Settings
 
 The **DataSourceSettings** property of **Diagram** includes the required data source fields and it can be set with appropriate values as follows.
-
-_Field properties_
 
 <table>
 <tr>
@@ -32,7 +30,7 @@ datasource receives <b>Essential DataManager</b> object and <b>JSON</b> object.<
 <td>
 query</td><td>
 It receives query to retrieve data from the table (query is same as SQL).<br/>
-Example:  ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);</td></tr>
+Example: ej.Query().from("Categories").select("CategoryID, CategoryName").take(3);</td></tr>
 <tr>
 <td>
 tableName</td><td>
@@ -47,11 +45,11 @@ parent</td><td>
 Specifies the parent id of the data source items.</td></tr>
 </table>
 
+_Field properties_
+
 ## Local Data
 
-To bind the **Local Data** to the Diagram control, map the user-defined **JSON** data names with its appropriate data source field. You can bind data to the **Diagram** by mapping fields such as **dataSource, id** and **parent.**
-
-The following code example illustrates how to bind local data to the **Diagram.**
+To bind the **Local Data** to the Diagram control, map the user-defined **JSON** data names with its appropriate data source field. You can bind data to the **Diagram** by mapping fields such as **dataSource, id** and **parent.** The following code example illustrates how to bind local data to the **Diagram.**
 
 {% highlight js %}
 
@@ -78,21 +76,21 @@ $("#diagram").ejDiagram ({
     defaultSettings: {
         //set the default properties of the node.
         node: { 
-                  width: 100, height: 40, fillColor:"darkcyan",          
-                  labels: [{name: "label1", bold: true }] 
+            width: 100, height: 40, fillColor:"darkcyan",          
+            labels: [{name: "label1", bold: true }] 
         },
         //set the default properties of the connector.         
         connector: { 
-                      segments: [{ "type": "orthogonal" }], 
-                       targetDecorator: {shape: "none"} 
+            segments: [{ "type": "orthogonal" }], 
+            targetDecorator: {shape: "none"} 
         }
     },
     //initialize the node template.
     nodeTemplate: nodeTemplate,
     //configure data source for diagram
     dataSourceSettings: {
-        id: "Name", parent: "ReportingPerson", //specifies the dataSource
-        dataSource: data
+        id: "Name", parent: "ReportingPerson",
+        dataSource: data //specifies the dataSource
     } 
 });               
 
@@ -102,9 +100,7 @@ $("#diagram").ejDiagram ({
 
 ## Remote Data
 
-You can bind the **Diagram** to Remote Data using **dataManager** and the query in fields is used to retrieve the data. dataManager supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes; ej.DataManager for processing, and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. The following link explains in detail on how to create dataManager.
-
-[http://help.syncfusion.com/ug/js/default.htm#!Documents/createyourdatamanage.htm](http://help.syncfusion.com/ug/js/default.htm)
+You can bind the **Diagram** to Remote Data using **dataManager** and the query in fields is used to retrieve the data. **dataManager** supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. The following link explains in detail on how to create dataManager. [http://help.syncfusion.com/ug/js/default.htm#!Documents/createyourdatamanage.htm](http://help.syncfusion.com/ug/js/default.htm)
 
 The following code illustrates how to bind remote data to the **Diagram**.
 
@@ -130,9 +126,8 @@ $("#diagram").ejDiagram({
     
     //Configure data source
     dataSourceSettings: {
-        dataSource: ej.DataManager({ url:   
-        [http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/)});,
-        query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"), 
+        dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
+        query: ej.Query().from("Employees").select("EmployeeID, ReportsTo, FirstName"), 
         tableName: "Employees",
         id: "EmployeeID", parent: "ReportsTo"
     }
@@ -142,11 +137,9 @@ $("#diagram").ejDiagram({
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="Remote data binding"%}
 
-**Root**
+### Root
 
-During automatic layout, node without parent is treated as root of the layout. You can specify this root by using the data source settings.
-
-The following code example illustrates how to specify the root object for the Diagram.
+During automatic layout, node without parent is treated as root of the layout. You can specify this root by using the data source settings. The following code example illustrates how to specify the root object for the Diagram.
 
 {% highlight js %}
 
@@ -167,13 +160,11 @@ dataSourceSettings: {
 
 ## HTML Binding
 
-The Diagram provides support to form diagram from the **HTML table**. It is flexible to convert **HTML** table to diagram using **Data Manager**.
-
-The following code example illustrates how to convert **HTML** table to diagram.
+The Diagram provides support to form diagram from the **HTML table**. It is flexible to convert **HTML** table to diagram using **Data Manager**. The following code example illustrates how to convert **HTML** table to diagram.
 
 {% highlight html %}
 
-//HTML Table
+<!-- HTML Table -->
 <table id="Table1">
      <thead>
          <tr>
@@ -243,12 +234,13 @@ The following code example illustrates how to convert **HTML** table to diagram.
 {% endhighlight %}
 
 {% highlight js %}
-    //configure data source for diagram	
-    dataSourceSettings: {
-        id: "Id", parent: "ReportingPerson",
-        //specifies the table name 
-        dataSource: ej.DataManager($("#Table1"))
-    }
+
+//configure data source for diagram	
+dataSourceSettings: {
+    id: "Id", parent: "ReportingPerson",
+    //specifies the table name 
+    dataSource: ej.DataManager($("#Table1"))
+}
 
 {% endhighlight %}
 

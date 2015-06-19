@@ -11,7 +11,7 @@ documentation: ug
 
 **Bitwise Operations** are used to manipulate the flagged enumerations \[enum\]. In this section, Bitwise Operations are illustrated using Graph Constraints. The same is applicable while working with Node Constraints, Connector Constraints or Port Constraints.
 
-**Add Operation**
+## Add Operation
 
 You can **add** or **enable** multiple values at a time by using **Bitwise** ‘\|’ (OR) **operator**.
 
@@ -23,9 +23,9 @@ node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.data
 
 In the above example, you can do both selection and rotation.
 
-**Remove Operation**
+## Remove Operation
 
-You can **remove** or **disable** values by using **Bitwise** ‘&\~’ (XOR) **operator**.
+You can **remove** or **disable** values by using **Bitwise** ‘&&#x007E;’ (XOR) **operator**.
 
 {% highlight js %}
 
@@ -35,7 +35,7 @@ node.constraints = node.constraints &~ (ej.datavisualization.Diagram.NodeConstra
 
 In the above example, **Rotation** is disabled but other constraints are enabled.
 
-**Check Operation** 
+## Check Operation 
 
 You can check any values using **Bitwise** ‘&’ (AND) **operator**.
 

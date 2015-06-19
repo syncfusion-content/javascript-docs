@@ -43,27 +43,21 @@ $("#Diagram").ejDiagram({
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img2.png" Caption="Node"%}
 
-List of preloaded nodes from symbol palette are added to the **Diagram** by clicking on the palette nodes or by dragging a node and dropping on the **Diagram**.The method to add node/connector to palette and drag and drop on **Diagram** is explained in palettesection
+List of preloaded nodes from symbol palette are added to the **Diagram** by clicking on the palette nodes or by dragging a node and dropping on the **Diagram**. The method to add node/connector to palette and drag and drop on **Diagram** is explained in palettesection
 
 ## Node Shapes
 
 **Diagram** has a collection of predefined shapes. The shape to be drawn can be set by using a set of shape specific properties. The most commonly used shapes are:
 
 * Rectangle (A type of basic shape)
-
 * Ellipse (A type of basic shape)
-
 * Html
-
 * Text
-
 * Native
-
 * Path (A type of basic shape)
-
 * Polygon (A type of basic shape)
 
-**Rectangle**
+### Rectangle
 
 You can create a rectangle shape by setting the type of node’s type as **ej.datavisualization.Diagram.Shapes.Basic** and node’s shape as **ej.datavisualization.Diagram.BasicShapes.Rectangle**. The following code illustrates how a rectangle node is created.
 
@@ -84,13 +78,13 @@ node = { type: Diagram.Shapes.Basic, shape: Diagram.BasicShapes.Ellipse };
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img3.png" Caption="Built-in Shapes"%}
 
-**Html**
+### Html
 
 **Html** elements are embedded in diagram through **Html shape node**. The following code illustrates how an **Html** node is created.
 
 {% highlight html %}
 
-//dependency scripts
+<!-- dependency scripts -->
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 
 <script id="htmlTemplate" type="text/x-jsrender">
@@ -98,20 +92,22 @@ node = { type: Diagram.Shapes.Basic, shape: Diagram.BasicShapes.Ellipse };
         <input type="button" value="{{:value}}" />
     </div>
 </script>
- 
+
+<script type="text/javascript">
 var node = {
     type: ej.datavisualization.Diagram.Shapes.Html,
     templateId: "htmlTemplate",
     value: "button"
 }
+</script>
 
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img4.png" Caption="Html Shape"%}
 
-**Text Node**
+### Text Node
 
-You can add Text to the **Diagram** using **Text shape node**. The text shape has **textblock** that contains text, font style and align properties .The following code illustrates how to create a **Text** node.
+You can add Text to the **Diagram** using **Text shape node**. The text shape has **textblock** that contains text, font style and align properties. The following code illustrates how to create a **Text** node.
 
 {% highlight js %}
 
@@ -130,7 +126,7 @@ var node = {
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img5.png" Caption="Text Shape"%}
 
-**Path**
+### Path
 
 You can create complex shapes using **Path shape node**. It is achieved by assigning path string to shape’s **pathData**. The following code illustrates how a **Path node** is created.
 
@@ -149,11 +145,9 @@ var node = {
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img6.png" Caption="Path Shape"%}
 
-**Polygon**
+### Polygon
 
-You can create **Polygon** shape by setting node’s type as **ej.datavisualization.Diagram.Shapes.Polygon** and assigns the desired points to the node’s **point** property.
-
-The following code illustrates how to create a **Polygon node**. 
+You can create **Polygon** shape by setting node’s type as **ej.datavisualization.Diagram.Shapes.Polygon** and assigns the desired points to the node’s **point** property. The following code illustrates how to create a **Polygon node**. 
 
 {% highlight js %}
 
@@ -179,7 +173,7 @@ var node = {
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img7.png" Caption="Polygon Shape"%}
 
-**Native** 
+### Native 
 
 **Diagram** supports to add **SVG** content as shape content. It is achieved by setting node’s type as **ej.datavisualization.Diagram.Shapes.Native** and assigns the template id to the **templateId** property. The **templateId** property receives **id svg** template. The following code illustrates how a **Native node** is created.
 
@@ -189,30 +183,30 @@ var node = {
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 
 <script id="svgTemplate" type="text/x-jsrender">
-    <g id="\{\{\:text\}\}">
+    <g id="{{:text}}">
         <path d="M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z 
          M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S    
          29.867 34.87 29.353 34.425 L 1 9.826V 60 H 61 V 9.826 L   
          32.644 34.425Z"></path>
-         <text x="20" y="45">\{\{\:text\}\}</text>
+         <text x="20" y="45">{{:text}}</text>
     </g>
 </script> 
 
+<script type="text/javascript">
 var node = {
     type: ej.datavisualization.Diagram.Shapes.Native,
     templateId: "svgTemplate",
     text:"Mail"
 }
+</script>
 
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img8.png" Caption="Native Shape"%}
 
-> _**Note:**_ 
-
-> _**Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.**_ 
-
-> _**Note that fill color is applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.**_
+> _**Note:**_
+* Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
+* Note that fill color is applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
 
 {% highlight html %}
 
@@ -225,14 +219,14 @@ var node = {
 
 {% endhighlight %}
 
-**Image**
+### Image
 
 You can add **Image** as a node to the **Diagram** by setting node’s type as **ej.datavisualization.Diagram.Shapes.Image** and set the image **URL** to **source** property of shape. The following code illustrates how an **Image** node is created.
 
 {% highlight js %}
 
 //create a node with image
-var node = { type: ej.datavisualization.Diagram.Shapes.Image**,** source: "sample/Syncfusion.PNG"};
+var node = { type: ej.datavisualization.Diagram.Shapes.Image**,** source: "sample/Syncfusion.png"};
 
 {% endhighlight %}
 
@@ -256,7 +250,7 @@ var node = { constraints: node.Constraints & ~ ej.datavisualization.Diagram.Node
 
 {% endhighlight %}
 
-**Customizing Shadow**
+### Customizing Shadow
 
 Position and opacity of the **shadow** can be customized by using opacity, angle, and distance of the **shadow**. The following code example illustrates how to customize the **shadow.**
 
@@ -272,8 +266,6 @@ var node = { shadow: { opacity: 0.8, distance: 9, angle: 50 } };
 ## Appearance
 
 You can customize the appearance of the shapes by using **node customization** properties.
-
-_Appearance_
 
 <table>
 <tr>
@@ -318,13 +310,15 @@ number</td><td>
 Gets or sets the width of node border.</td></tr>
 </table>
 
+_Appearance_
+
 {% highlight js %}
 
 //create linear gradient
 var linearGradient = { type: "linear", x1: 0, x2: 50, y1:0, y2: 50, stops:[{ color: "white", offset:0 },{color: "darkCyan", offset: 100 }]};
 
 //set various appearance properties to node
-var node = { visible: true, "borderColor": "black", "borderWidth": 2,opacity : 1,gradient : linearGradient, borderDashArray : "5 5"};
+var node = { visible: true, "borderColor": "black", "borderWidth": 2, opacity: 1, gradient: linearGradient, borderDashArray: "5 5"};
 
 {% endhighlight %}
 
@@ -332,11 +326,7 @@ var node = { visible: true, "borderColor": "black", "borderWidth": 2,opacity : 1
 
 ## Constraints
 
-**Node Constraints**
-
 You can enable or disable certain behaviors of **Nodes** by using Node’s **constraints** property.
-
-_Constraints_
 
 <table>
 <tr>
@@ -425,6 +415,8 @@ None</td><td>
 Disables all the constraints.</td></tr>
 </table>
 
+_Constraints_
+
 The Default value for the node constraints property is **ej.datavisualization.Diagram.NodeConstraints.Default.** The following code illustrates how to enable rotate, select constraints, and disable other constraints.
 
 {% highlight js %}
@@ -447,45 +439,4 @@ node.constraints = node.constraints &~(ej.datavisualization.Diagram.NodeConstrai
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img14.jpeg" Caption="Rotate Constraints-disabled"%}
 
-> _**Note: Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see**_ [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm)_**.**_
-
-## Events
-
-_Events_
-
-<table>
-<tr>
-<td>
-<b>Events</b></td><td>
-<b>Arguments</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-drag</td><td>
-{cancel, element, offset, model, type }<br/>
-cancel : boolean<br/>
-element : object(node/connector)<br/>
-offset : object ({x , y})<br/>
-model: object (diagram’s model)<br/>
-type: string (event name “drag”)</td><td>
-This event is raised when you drag node/Connector during runtime. </td></tr>
-<tr>
-<td>
-sizeChange</td><td>
-{cancel, element, offset, model, type}<br/>
-cancel: boolean<br/>
-element: object(node/connector)<br/>
-offset : object ({height, width})<br/>
-model: object (diagram model’s)<br/>
-type: string (event name “sizeChange”)</td><td>
-This event is raised when you resizes the node/group during runtime. </td></tr>
-<tr>
-<td>
-rotationChange</td><td>
-{ cancel, element, model, type}<br/>
-cancel: boolean<br/>
-element: object(node/connector)<br/>
-model: object (diagram model’s)<br/>
-type: string (event name “rotationChange”)</td><td>
-This event is raised when you rotate the selected object during runtime. </td></tr>
-</table>
+> _**Note:**_ Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm).

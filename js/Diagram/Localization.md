@@ -9,17 +9,12 @@ documentation: ug
 
 # Localization 
 
-Localization is the process of providing controls in different cultures, to help you set your own culture easily.
-
-Diagram provides localization support for **Context Menu** items.
-
-The following code illustrates how to provide localization support for **Context Menu** items.
+Localization is the process of providing controls in different cultures, to help you set your own culture easily. Diagram provides localization support for **Context Menu** items. The following code illustrates how to provide localization support for **Context Menu** items.
 
 {% highlight js %}
 
 $("#DiagramContent").ejDiagram({            
     locale:"es-ES",
-    contextMenu: contextmenu
 });
 ej.datavisualization.Diagram.Locale["es-ES"] = {
     cut: "Corte",
