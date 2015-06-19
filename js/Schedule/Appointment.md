@@ -72,7 +72,7 @@ The following screenshot displays the appointment window filled with the specifi
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img2.png" Caption="schedule with Appointment creation."%}
 
-* When you fill the other details like Subject, Description and the recurrence details manually as per your requirements click **Done** to save the appointment details. The **Schedule** control is displayed as follows.
+When you fill the other details like Subject, Description and the recurrence details manually as per your requirements click **Done** to save the appointment details. The **Schedule** control is displayed as follows.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img3.png" Caption="schedule with Appointment saved in the cell."%}
 
@@ -86,12 +86,12 @@ The following screenshot displays the appointment window filled with the specifi
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img4.png" Caption="schedule with appointment creation using quick appointment window ."%}
 
 
-* When the appointment is saved, the **Schedule** control displays the created appointment as follows,
+When the appointment is saved, the **Schedule** control displays the created appointment as follows,
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img5.png" Caption="schedule with appointment saved using quick appointment window."%}
 
 
-> _**Important: We have a property named showQuickWindow that accepts Boolean value and set as true by default. When this property is set to false, it prevents the display of quick appointment window while single clicking on the Schedule cells or appointments. Thus the functionality of showing/hiding this quick window from the user depends on the value of this particular property.**_
+> Important: We have a property named showQuickWindow that accepts Boolean value and set as true by default. When this property is set to false, it prevents the display of quick appointment window while single clicking on the Schedule cells or appointments. Thus the functionality of showing/hiding this quick window from the user depends on the value of this particular property.
 
 
 
@@ -119,7 +119,7 @@ The following screenshot depicts the edit appointment window with its filled-in 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img7.png" Caption="schedule with Normal appointment Editing."%}
 
 
-* In the above image, the end time has been changed from 8.00 AM to 7.00 AM, and once the changes are done, click the **Done** button. The appointment duration is changed and looks as follows.
+In the above image, the end time has been changed from 8.00 AM to 7.00 AM, and once the changes are done, click the **Done** button. The appointment duration is changed and looks as follows.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img8.png" Caption="schedule with Edited Normal appointment saved."%}
 
@@ -134,14 +134,15 @@ The following screenshot displays the **Schedule** control with the quick appoin
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img9.png" Caption="schedule with editing appointment using quick appointment window."%}
 
 
-* Click on the **Edit Appointment** option to open the edit appointment window as follows.
+Click on the **Edit Appointment** option to open the edit appointment window as follows.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img10.png" Caption="schedule with open editing appointment window."%}
 
 
-* In the above screenshot, the end-time is changed to 8.00 AM from 7.00 AM. Once it is saved, the above appointment is displayed in the Schedule as displayed in the following screenshot.
+In the above screenshot, the end-time is changed to 8.00 AM from 7.00 AM. Once it is saved, the above appointment is displayed in the Schedule as displayed in the following screenshot.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img11.png" Caption="schedule with open  editing appointment window."%}
+
 
 **Using Context menu**
 
@@ -149,7 +150,7 @@ The following screenshot displays the **Schedule** control with the quick appoin
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img12.png" Caption="schedule with open appointment using context menu."%}
 
-* The following screenshot displays the **Edit Appointment** window that opens when you click **Open****Appointment** option.
+The following screenshot displays the **Edit Appointment** window that opens when you click **Open****Appointment** option.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img13.png" Caption="schedule with display the edit appointment window."%}
 
@@ -165,7 +166,7 @@ The following screenshot displays the **Schedule** control with the quick appoin
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img14.png" Caption="schedule with Appointment deletion."%}
 
-* When you click the delete icon, the appointment is deleted as displayed in the following screenshot.
+When you click the delete icon, the appointment is deleted as displayed in the following screenshot.
 
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img15.png" Caption="schedule with after the appointment deletion."%}
@@ -184,7 +185,7 @@ The following screenshot displays the **Schedule** control with the quick appoin
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img17.png" Caption="schedule with All day Appointment creation."%}
 
-* Save the appointment so that the All-day appointment will be displayed in the **All-day** row as follows.
+Save the appointment so that the All-day appointment will be displayed in the **All-day** row as follows.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img18.png" Caption="schedule with All day Appointment saved in the cell."%}
 
@@ -238,7 +239,7 @@ $(function () {
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img19.png" Caption="schedule with appointment resize."%}
 
 
-* Once the resizing is stopped, the resized appointment with its new start time is displayed as follows.
+Once the resizing is stopped, the resized appointment with its new start time is displayed as follows.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img20.png" Caption="schedule with after the appointment resized."%}
 
@@ -325,7 +326,7 @@ Execute the above code to render the following output.
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img21.png" Caption="schedule with appointment search."%}
 
 
-* After placing the cursor in search box, type the text that you want to search (for example here it is typed as “what”) in the schedule datasource, the grid renders with search result as follows.
+After placing the cursor in search box, type the text that you want to search (for example here it is typed as “what”) in the schedule datasource, the grid renders with search result as follows.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img22.png" Caption="schedule with appointment search result."%}
 
@@ -401,7 +402,7 @@ Execute the above code to render the following output.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img23.png" Caption="schedule with search appointment filters."%}
 
-* Click the search button to enable the filter option.
+Click the search button to enable the filter option.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img24.png" Caption="schedule with appointment search result."%}
 
@@ -453,12 +454,11 @@ $(function () {
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img25.png" Caption="schedule with appointment drag and drop."%}
 
-* When the appointment with the Subject “**Daily Planet**” is being dragged from its original location, it looks as the one following screenshot with the shadow of the appointment casting behind it.
+When the appointment with the Subject “**Daily Planet**” is being dragged from its original location, it looks as the one following screenshot with the shadow of the appointment casting behind it.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img26.png" Caption="schedule with appointment while dragging in the cell."%}
 
-
-* The following screenshot displays the appointment with the subject “**Daily Planet**” in the timeline 1.00 AM – 2.00 AM (02 May, 2014) is dropped to the new location to the date 29th April, 2014 in the timeline between 3.00 AM – 4.00 AM.
+The following screenshot displays the appointment with the subject “**Daily Planet**” in the timeline 1.00 AM – 2.00 AM (02 May, 2014) is dropped to the new location to the date 29th April, 2014 in the timeline between 3.00 AM – 4.00 AM.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img27.png" Caption="schedule with appointment dropped in the cell."%}
 
@@ -478,22 +478,20 @@ $(function () {
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img28.png" Caption="schedule with new recurrence appointment."%}
 
-* On clicking the **New Recurring Appointment** option opens the recurrence appointment window as displayed in the following screenshot.
+On clicking the **New Recurring Appointment** option opens the recurrence appointment window as displayed in the following screenshot.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img29.png" Caption="schedule with creating the new recurrence."%}
 
 
-* Once the required options are selected in the recurrence window click the **Done** button.It navigates you to its parent window with the appointment details. Fill-in those required details and click **Done** to save it.
+Once the required options are selected in the recurrence window click the **Done** button.It navigates you to its parent window with the appointment details. Fill-in those required details and click **Done** to save it.
 
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img30.png" Caption="schedule with after created the new recurrence."%}
 
-* The recurrence appointment after getting saved to the Schedule is displayed as follows.
+The recurrence appointment after getting saved to the Schedule is displayed as follows.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img31.png" Caption="schedule with after created the new recurrence appointment in week view."%}
 
-* Since, you have chosen the option to end the recurrence after 10 occurrences on daily basis, the appointments repeat for continuous 10 days and then end. 
-
-* This is viewed clearly by navigating to the month view, where the appointment with subject **Automated testing** saved for 10 days from 12 Aug 2014 to 21 Aug 2014.
+Since, you have chosen the option to end the recurrence after 10 occurrences on daily basis, the appointments repeat for continuous 10 days and then end. This is viewed clearly by navigating to the month view, where the appointment with subject **Automated testing** saved for 10 days from 12 Aug 2014 to 21 Aug 2014.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img32.png" Caption="schedule with created recurrence appointment in month view."%}

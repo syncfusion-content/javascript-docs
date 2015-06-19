@@ -53,8 +53,7 @@ The following code example explains how to set the value for **enableAppointment
 {% endhighlight %}
 
 
-
-* The **Schedule** control with the appointment navigation tabs (marked with a box) enabled looks like the following screenshot.
+The **Schedule** control with the appointment navigation tabs (marked with a box) enabled looks like the following screenshot.
 
  {% include image.html url="/js/Schedule/Navigation_images/Navigation_img1.png" Caption="schedule with Appointment Navigation."%}
 
@@ -157,9 +156,9 @@ Traverse backward through the appointments.</td></tr>
 
 
 
-> _**Important: Apart from the cell selection through keyboard shortcuts (shift + arrow keys), the selection of cells can also be done through mouse by any of the following ways,**_
-> _**i. Click on any of the cell to start selection and by holding the left click, hover the mouse across the cells to be selected and then release the left mouse button, once the selection is over.**_
-> _**ii. Make initial selection at any of the cell. Now by pressing and holding the Shift key, click on any of the other desired cell to end the selection. The cells that lies within the initial and end selection gets selected entirely.**_
+> Important: Apart from the cell selection through keyboard shortcuts (shift + arrow keys), the selection of cells can also be done through mouse by any of the following ways,
+> i. Click on any of the cell to start selection and by holding the left click, hover the mouse across the cells to be selected and then release the left mouse button, once the selection is over.
+> ii. Make initial selection at any of the cell. Now by pressing and holding the Shift key, click on any of the other desired cell to end the selection. The cells that lies within the initial and end selection gets selected entirely.
 
 
 
@@ -203,7 +202,6 @@ $(function () {
 {% endhighlight %}
 
 
-
-* Since the keyboard navigation functionality is enabled by default, the **Schedule** control below indicates the multiple cell selection through the **shift + right arrow key** combination as follows.
+Since the keyboard navigation functionality is enabled by default, the **Schedule** control below indicates the multiple cell selection through the **shift + right arrow key** combination as follows.
 
 {% include image.html url="/js/Schedule/Navigation_images/Navigation_img3.png" Caption="schedule with keyboard Navigation."%}

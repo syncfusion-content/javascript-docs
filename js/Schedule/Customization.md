@@ -26,8 +26,6 @@ This example explains you on how to add the customized appointment window using 
 <head>
     <title>Schedule JS Default Functionalities</title>
     //Refer the required script files here
-
-
 </head>
 
 <body>
@@ -556,9 +554,7 @@ $(function () {
 
 
 
-
-
-* Only the bolded texts in the above code examples are added to open the custom appointment window when you double-click the appointments. Execute the above code and then double-click on the appointment, the custom appointment window is displayed as follows.
+Only the bolded texts in the above code examples are added to open the custom appointment window when you double-click the appointments. Execute the above code and then double-click on the appointment, the custom appointment window is displayed as follows.
 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img2.png" Caption="schedule with appointment using customized appointment window."%}
 
@@ -623,10 +619,6 @@ Execute the above code to render the output as follows with the **Schedule** con
 **businessEndHour**
 
 * It allows you to specify the end time to indicate the business end hour.
-
-
-
-
 
 * To enable the **highlightBusinessHours** and to customize the business start and end hours, refer the following code example.
 
@@ -901,8 +893,7 @@ You can set the timezone to the **Schedule** control as follows.
 {% endhighlight %}
 
 
-
-* Add new appointments to the **Schedule** control. The appointments are rendered based on the time difference that tends to the timezone set to it.
+Add new appointments to the **Schedule** control. The appointments are rendered based on the time difference that tends to the timezone set to it.
 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img9.png" Caption="schedule with timezone."%}
 
@@ -956,8 +947,7 @@ The following code example explains how to disable the current time indicator fr
 {% endhighlight %}
 
 
-
-* After setting **showCurrentTimeIndicator** property to ‘false’, the **Schedule** control is displayed without the current time indicator as follows.
+After setting **showCurrentTimeIndicator** property to ‘false’, the **Schedule** control is displayed without the current time indicator as follows.
 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img11.png" Caption="schedule with show current time indicator."%}
 

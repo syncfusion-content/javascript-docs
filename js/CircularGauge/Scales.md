@@ -53,7 +53,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Scales_images/Scales_img1.png" Caption="Circular Gauge with scale radius."%}
+{% include image.html url="/js/CircularGauge/Scales_images/Scales_img1.png" Caption="Circular Gauge with scale radius."%}
 
 ## Scale Cutomization
 
@@ -96,7 +96,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Scales_images/Scales_img2.png" Caption="Circular Gauge with customized scale border"%}
+{% include image.html url="/js/CircularGauge/Scales_images/Scales_img2.png" Caption="Circular Gauge with customized scale border"%}
 
 **Pointer Cap**
 
@@ -136,7 +136,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Scales_images/Scales_img3.png" Caption="Circular Gauge with customized pointer cap"%}
+{% include image.html url="/js/CircularGauge/Scales_images/Scales_img3.png" Caption="Circular Gauge with customized pointer cap"%}
 
 **Appearance**
 
@@ -189,7 +189,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Scales_images/Scales_img4.png" Caption="Circular Gauge with customized scale values"%}
+{% include image.html url="/js/CircularGauge/Scales_images/Scales_img4.png" Caption="Circular Gauge with customized scale values"%}
 
 **Enable/Disable properties**
 
@@ -252,5 +252,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Scales_images/Scales_img5.png" Caption="Circular Gauge with multiples scales"%}
+{% include image.html url="/js/CircularGauge/Scales_images/Scales_img5.png" Caption="Circular Gauge with multiples scales"%}
 

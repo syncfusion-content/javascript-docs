@@ -84,7 +84,7 @@ The API **size** is used to specify the width of the ranges.  The major attribut
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Ranges-and-Frames_images/Ranges-and-Frames_img1.png" Caption="Circular Gauge with customized ranges with startValues and endValues"%}
+{% include image.html url="/js/CircularGauge/Ranges-and-Frames_images/Ranges-and-Frames_img1.png" Caption="Circular Gauge with customized ranges with startValues and endValues"%}
 
 ## Colors and Border
 
@@ -129,7 +129,7 @@ You can set the background color to improve the look and feel of the **Circular 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Ranges-and-Frames_images/Ranges-and-Frames_img2.png" Caption="Circular Gauge with customized range colors and borders"%}
+{% include image.html url="/js/CircularGauge/Ranges-and-Frames_images/Ranges-and-Frames_img2.png" Caption="Circular Gauge with customized range colors and borders"%}
 
 ## Positioning the ranges
 
@@ -176,7 +176,7 @@ You can position ranges using two properties such as **distanceFromScale** and *
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Ranges-and-Frames_images/Ranges-and-Frames_img3.png" Caption="Circular Gauge with customized ranges"%}
+{% include image.html url="/js/CircularGauge/Ranges-and-Frames_images/Ranges-and-Frames_img3.png" Caption="Circular Gauge with customized ranges"%}
 
 ## Multiple Ranges
 
@@ -234,7 +234,7 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Ranges-and-Frames_images/Ranges-and-Frames_img4.png" Caption="Circular Gauge with multiple ranges"%}
+{% include image.html url="/js/CircularGauge/Ranges-and-Frames_images/Ranges-and-Frames_img4.png" Caption="Circular Gauge with multiple ranges"%}
 
 ## Frames
 
@@ -280,5 +280,5 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Ranges-and-Frames_images/Ranges-and-Frames_img5.png" Caption="Circular Gauge with multiple ranges"%}
+{% include image.html url="/js/CircularGauge/Ranges-and-Frames_images/Ranges-and-Frames_img5.png" Caption="Circular Gauge with multiple ranges"%}
 

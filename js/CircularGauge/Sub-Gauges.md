@@ -82,7 +82,7 @@ subGauges:[{
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Sub-Gauges_images/Sub-Gauges_img1.png" Caption="Circular Gauge with sub gauge"%}
+{% include image.html url="/js/CircularGauge/Sub-Gauges_images/Sub-Gauges_img1.png" Caption="Circular Gauge with sub gauge"%}
 
 ## Multiple SubGauges
 
@@ -140,5 +140,5 @@ position: { x: 50, y: 200 }
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Sub-Gauges_images/Sub-Gauges_img2.png" Caption="Circular Gauge with multiple sub gauges"%}
+{% include image.html url="/js/CircularGauge/Sub-Gauges_images/Sub-Gauges_img2.png" Caption="Circular Gauge with multiple sub gauges"%}
 

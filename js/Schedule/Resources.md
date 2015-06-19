@@ -243,8 +243,7 @@ The following steps defines the way to start with rendering multiple resources o
 
 {% endhighlight %}
 
-
-* The above specified resource related fields are require to  bound to the resource dataSource and the following code defines the way to provide data to the resources and group collection. This step helps you to render multiple resources on the **Schedule** control,
+The above specified resource related fields are require to  bound to the resource dataSource and the following code defines the way to provide data to the resources and group collection. This step helps you to render multiple resources on the **Schedule** control,
 
 
 {% highlight html %}
@@ -322,8 +321,7 @@ The following steps defines the way to start with rendering multiple resources o
 {% endhighlight %}
 
 
-
-* Execute the above code to render the output as follows.
+Execute the above code to render the output as follows.
 
 {% include image.html url="/js/Schedule/Resources_images/Resources_img2.png" Caption="schedule with resource grouping."%}
 
@@ -383,25 +381,21 @@ The following steps defines the way to start with rendering multiple resources o
 
 {% endhighlight %}
 
-
-* Execute the above code to display the **Schedule** control with appointments saved for multiple resources differentiated with its specific colors.
+Execute the above code to display the **Schedule** control with appointments saved for multiple resources differentiated with its specific colors.
 
 {% include image.html url="/js/Schedule/Resources_images/Resources_img3.png" Caption="schedule with multiple resource creation."%}
 
-
-* To save the same appointment for multiple resources, refer the following steps,
-
-* Double-click on the required work cell, the appointment window pops up as shown in the following image with an individual autocomplete field for selecting the available resources.
+To save the same appointment for multiple resources, refer the following steps.Double-click on the required work cell, the appointment window pops up as shown in the following image with an individual autocomplete field for selecting the available resources.
 
 {% include image.html url="/js/Schedule/Resources_images/Resources_img4.png" Caption="schedule with multiple appointment window."%}
 
 
-* Since the **allowMultiple** property is set to ‘true’ for this resource object, so you can select any number of available resources in it as follows.
+Since the **allowMultiple** property is set to ‘true’ for this resource object, so you can select any number of available resources in it as follows.
 
 {% include image.html url="/js/Schedule/Resources_images/Resources_img5.png" Caption="schedule with multiple appointment window with different type owner."%}
 
 
-* The same appointment with the subject **Test Ride** is created for each resource individually as follows when you click the **Done** button.
+The same appointment with the subject **Test Ride** is created for each resource individually as follows when you click the **Done** button.
 
 {% include image.html url="/js/Schedule/Resources_images/Resources_img6.png" Caption="schedule with saved multiple appointments with different type owner."%}
 

@@ -11,10 +11,6 @@ documentation: ug
 
 Indicators simply indicates the current status of the pointer. Indicators are in several formats such as in shape format, textual format and image format.
 
-
-
-
-
 ## Adding Indicator Collection 
 
 Indicators collection is directly added to the scale object. Refer the following code to add indicator collection in a **Gauge** control.
@@ -54,7 +50,7 @@ Indicators collection is directly added to the scale object. Refer the following
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Indicators_images/Indicators_img1.png" Caption="Circular Gauge with indicator collection."%}
+{% include image.html url="/js/CircularGauge/Indicators_images/Indicators_img1.png" Caption="Circular Gauge with indicator collection."%}
 
 ## Basic Customization
 
@@ -110,7 +106,7 @@ Indicators are of several types such as, circle, rectangle, rounded rectangle, t
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Indicators_images/Indicators_img2.png" Caption="Circular Gauge with customized indicator with basic properties"%}
+{% include image.html url="/js/CircularGauge/Indicators_images/Indicators_img2.png" Caption="Circular Gauge with customized indicator with basic properties"%}
 
 ## State Ranges
 
@@ -181,7 +177,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Indicators_images/Indicators_img3.png" Caption="Circular Gauge with customized indicator"%}
+{% include image.html url="/js/CircularGauge/Indicators_images/Indicators_img3.png" Caption="Circular Gauge with customized indicator"%}
 
 ## Multiple Indicators
 
@@ -271,5 +267,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Indicators_images/Indicators_img4.png" Caption="Circular Gauge with multiple indicators"%}
+{% include image.html url="/js/CircularGauge/Indicators_images/Indicators_img4.png" Caption="Circular Gauge with multiple indicators"%}
 

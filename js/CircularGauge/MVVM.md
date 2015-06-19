@@ -53,7 +53,7 @@ Circular Gauge contains angular support. You can add object as well as array obj
 
 Execute the above code to render the output as follows.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/MVVM_images/MVVM_img1.png" Caption="Default Circular gauge in Angular JS"%}
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img1.png" Caption="Default Circular gauge in Angular JS"%}
 
 ## Adding Scale Collection
 
@@ -86,7 +86,7 @@ e-border-width="0.5">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/MVVM_images/MVVM_img2.png" Caption="Circular gauge with scale customization in Angular JS"%}
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img2.png" Caption="Circular gauge with scale customization in Angular JS"%}
 
 ## Adding Pointer Collection
 
@@ -126,7 +126,7 @@ e-pointerCap-radius="12">
 
 Execute the above code to render the output as follows.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/MVVM_images/MVVM_img3.png" Caption="Circular gauge with pointer customization in Angular JS"%}
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img3.png" Caption="Circular gauge with pointer customization in Angular JS"%}
 
 ## Adding Label Collection
 
@@ -164,7 +164,7 @@ Execute the above code to render the output as follows.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/MVVM_images/MVVM_img4.png" Caption="Circular gauge with label customization in Angular JS"%}
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img4.png" Caption="Circular gauge with label customization in Angular JS"%}
 
 ## Adding Tick Collection
 
@@ -208,7 +208,7 @@ e-width="1" e-color="#8c8c8c">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/MVVM_images/MVVM_img5.png" Caption="Circular gauge with ticks customization in Angular JS"%}
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img5.png" Caption="Circular gauge with ticks customization in Angular JS"%}
 
 ## Adding Range Collection
 
@@ -260,7 +260,7 @@ e-border-color="#f5b43f">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/MVVM_images/MVVM_img6.png" Caption="Circular gauge Rendered in Angular JS"%}
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img6.png" Caption="Circular gauge Rendered in Angular JS"%}
 
 ## Two Way Binding 
 
@@ -343,7 +343,7 @@ e-border-color="#f5b43f">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/MVVM_images/MVVM_img7.png" Caption="Circular gauge with two way binding in Angular JS"%}
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img7.png" Caption="Circular gauge with two way binding in Angular JS"%}
 
 ## Knockout JS
 
@@ -402,5 +402,5 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/MVVM_images/MVVM_img8.png" Caption="Circular Gauge with Knockout binding"%}
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img8.png" Caption="Circular Gauge with Knockout binding"%}
 

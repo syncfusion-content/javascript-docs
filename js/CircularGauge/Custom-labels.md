@@ -94,7 +94,7 @@ Font option is also available on  Customlabels. The basic three properties of fo
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Custom-labels_images/Custom-labels_img1.png" Caption="Circular Gauge with customized custom label"%}
+{% include image.html url="/js/CircularGauge/Custom-labels_images/Custom-labels_img1.png" Caption="Circular Gauge with customized custom label"%}
 
 ## Multiple Custom Labels
 
@@ -159,7 +159,7 @@ You can set multiple custom labels in a single **Circular Gauge** by adding an a
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Custom-labels_images/Custom-labels_img2.png" Caption="Circular Gauge with multiple custom labels"%}
+{% include image.html url="/js/CircularGauge/Custom-labels_images/Custom-labels_img2.png" Caption="Circular Gauge with multiple custom labels"%}
 
 ## Outer Custom Label
 
@@ -236,5 +236,5 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Custom-labels_images/Custom-labels_img3.png" Caption="Circular gauge with outer custom label."%}
+{% include image.html url="/js/CircularGauge/Custom-labels_images/Custom-labels_img3.png" Caption="Circular gauge with outer custom label."%}
 

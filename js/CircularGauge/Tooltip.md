@@ -70,7 +70,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Tooltip_images/Tooltip_img1.png" Caption="Gauge with Default ToolTip"%}
+{% include image.html url="/js/CircularGauge/Tooltip_images/Tooltip_img1.png" Caption="Gauge with Default ToolTip"%}
 
 ## Tooltip Template
 
@@ -156,5 +156,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Tooltip_images/Tooltip_img2.png" Caption="Circular gauge with tooltip template"%}
+{% include image.html url="/js/CircularGauge/Tooltip_images/Tooltip_img2.png" Caption="Circular gauge with tooltip template"%}
 

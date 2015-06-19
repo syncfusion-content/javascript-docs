@@ -42,7 +42,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img1.png" Caption="Circular Gauge with  pointer collection"%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img1.png" Caption="Circular Gauge with  pointer collection"%}
 
 ## Adding Pointer Value
 
@@ -81,7 +81,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img2.png" Caption="Circular Gauge with customized pointer value"%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img2.png" Caption="Circular Gauge with customized pointer value"%}
 
 ## Pointer Styles
 
@@ -131,7 +131,7 @@ The Pointers border is modified with the object called **border** as in scales. 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img3.png" Caption="Circular Gauge with customized pointer colors and borders"%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img3.png" Caption="Circular Gauge with customized pointer colors and borders"%}
 
 **Appearance**
 
@@ -180,7 +180,7 @@ Based on the value, the****pointer point out the label value. You can set the po
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img4.png" Caption="Circular Gauge with customized pointer styles"%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img4.png" Caption="Circular Gauge with customized pointer styles"%}
 
 **Position the pointer**
 
@@ -228,7 +228,7 @@ Pointer can be positioned with the help of two properties such as **distanceFrom
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img5.png" Caption="Circular Gauge with customized pointer type as marker"%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img5.png" Caption="Circular Gauge with customized pointer type as marker"%}
 
 **Types**
 
@@ -325,7 +325,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img6.png" Caption="Circular Gauge with multiple pointers"%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img6.png" Caption="Circular Gauge with multiple pointers"%}
 
 ## Pointer Value Text
 
@@ -387,7 +387,7 @@ You can position the **Circular Gauge** pointer value with the gauge as center b
 
 Run the above code to render the output as follows.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img7.png" Caption="Circular Gauge with pointer value text."%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img7.png" Caption="Circular Gauge with pointer value text."%}
 
 ## Appearance
 
@@ -461,7 +461,7 @@ Appearance of the **Circular Gauge****pointer value text** is adjusted by using 
 
 Run the above code to render the output as follows.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img8.png" Caption="Circular Gauge with customized pointer value text."%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img8.png" Caption="Circular Gauge with customized pointer value text."%}
 
 ## Font Options
 
@@ -526,5 +526,5 @@ Similar to other collection, font option is also available in this pointer value
 
 Run the above code to render the output as follows.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Pointers_images/Pointers_img9.png" Caption="Circular Gauge with customized font option in pointer value text."%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img9.png" Caption="Circular Gauge with customized font option in pointer value text."%}
 
