@@ -30,32 +30,30 @@ There are some default summary types available for basic summary formula. The fo
 {% highlight html %}
 
 
-
- 
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                /// the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                showSummary: true,
-                pageSettings: { pageSize: 5 },
-                summaryRows: [
-                     { title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
-                     { title: "Average", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
-                ],
-                columns: [
-                           { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
-                           { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 80 },
-                           { field: "ShipCity", headerText: "Ship City", width: 90 },
-                           { field: "ShipName", headerText: "Ship Name", width: 110 },
-                           { field: "ShipCountry", headerText: "Ship Country", width: 100 },
-                           { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          /// the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          showSummary: true,
+          pageSettings: { pageSize: 5 },
+          summaryRows: [
+               { title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
+               { title: "Average", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
+          ],
+          columns: [
+                     { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+                     { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 80 },
+                     { field: "ShipCity", headerText: "Ship City", width: 90 },
+                     { field: "ShipName", headerText: "Ship Name", width: 110 },
+                     { field: "ShipCountry", headerText: "Ship Country", width: 100 },
+                     { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -73,34 +71,33 @@ This property helps you to create custom summary formula for summary. The follow
 {% highlight html %}
 
 
- <div id="Grid"></div>
-    <script type="text/javascript">
-
-        $(function () {
-
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                showSummary: true,
-                pageSettings: { pageSize: 5 },
-                summaryRows: [{ title: "Currency", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, customSummaryValue: currency(), displayColumn: "Freight", format: "{0:C2}" }] }
-                ],
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 70 },
-                     { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 70 },
-                     { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 70 },
-                     { field: "ShipCity", headerText: "Ship City", textAlign: ej.TextAlign.Left, width: 70 },
-                     { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 70, format: "{0:C2}" }
-                ],
-            });
-            function currency() {
-                var rs = 100000;
-                var dol = 0.017
-                return (rs * dol);
-            }
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+  
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          showSummary: true,
+          pageSettings: { pageSize: 5 },
+          summaryRows: [{ title: "Currency", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, customSummaryValue: currency(), displayColumn: "Freight", format: "{0:C2}" }] }
+          ],
+          columns: [
+              { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 70 },
+               { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 70 },
+               { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 70 },
+               { field: "ShipCity", headerText: "Ship City", textAlign: ej.TextAlign.Left, width: 70 },
+               { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 70, format: "{0:C2}" }
+          ],
+      });
+      function currency() {
+          var rs = 100000;
+          var dol = 0.017
+          return (rs * dol);
+      }
+  });
+</script>
 
 
 {% endhighlight %}
@@ -163,34 +160,32 @@ This property helps you to enable the group summary column in **Grid**. The foll
 {% highlight html %}
 
 
-
 <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            // the datasource "window.gridData" is referred from jsondata.min.js
-            var data = window.gridData;
-            $("#Grid").ejGrid({
-                dataSource: data,
-                allowPaging: true,
-
-                allowGrouping: true,
-                showSummary: true,
-                pageSettings: { pageSize: 8 },
-                summaryRows: [
-                    { summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}", prefix: "Sum = " }], showTotalSummary: false }
-                ],
-                groupSettings: { groupedColumns: ["CustomerID"] },
-                columns: [
-                          { field: "OrderID", headerText: "Order ID", width: 80, isPrimaryKey: true, textAlign: ej.TextAlign.Right,  },
-                          { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 75 },
-                          { field: "ShipCity", headerText: 'Ship City', textAlign: ej.TextAlign.Left, width: 150 },
-                          { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-                          { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
-                ]
-            });
-        });
-    </script>
+<script type="text/javascript">
+  $(function () {
+      // the datasource "window.gridData" is referred from jsondata.min.js
+      var data = window.gridData;
+      $("#Grid").ejGrid({
+          dataSource: data,
+          allowPaging: true,
+  
+          allowGrouping: true,
+          showSummary: true,
+          pageSettings: { pageSize: 8 },
+          summaryRows: [
+              { summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}", prefix: "Sum = " }], showTotalSummary: false }
+          ],
+          groupSettings: { groupedColumns: ["CustomerID"] },
+          columns: [
+                    { field: "OrderID", headerText: "Order ID", width: 80, isPrimaryKey: true, textAlign: ej.TextAlign.Right,  },
+                    { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 75 },
+                    { field: "ShipCity", headerText: 'Ship City', textAlign: ej.TextAlign.Left, width: 150 },
+                    { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -208,31 +203,28 @@ This property is used to create Caption Summary column in **Grid**. **showCaptio
 {% highlight html %}
 
 
-
- <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            // the datasource "window.gridData" is referred from jsondata.min.js
-
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowGrouping: true,
-                showSummary: true,
-                pageSettings: { pageSize: 10 },
-                summaryRows: [{ showCaptionSummary: true, summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}", prefix: "Average = " }], showTotalSummary: false }],
-                groupSettings: { groupedColumns: ["CustomerID"] },
-                columns: [
-                          { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 80, isPrimaryKey: true },
-                          { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 75 },
-                          { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-                          { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
-                ]
-            });
-        });
-    </script>
-
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      // the datasource "window.gridData" is referred from jsondata.min.js
+  
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowGrouping: true,
+          showSummary: true,
+          pageSettings: { pageSize: 10 },
+          summaryRows: [{ showCaptionSummary: true, summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}", prefix: "Average = " }], showTotalSummary: false }],
+          groupSettings: { groupedColumns: ["CustomerID"] },
+          columns: [
+                    { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 80, isPrimaryKey: true },
+                    { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 75 },
+                    { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
+          ]
+      });
+  });
+</script>
 
 {% endhighlight %}
 

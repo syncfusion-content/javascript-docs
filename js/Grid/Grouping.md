@@ -17,21 +17,19 @@ In **ejGrid**, there is an option to group columns at **Grid Initialize** that i
 
 {% highlight html %}
 
-
-
-  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                //window.gridData is refered from jsondata.min.js
-                dataSource: window.gridData,
-                groupSettings: { groupedColumns: ["ShipCity"] },
-                allowGrouping: true,
-                allowPaging: true,
-
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          //window.gridData is refered from jsondata.min.js
+          dataSource: window.gridData,
+          groupSettings: { groupedColumns: ["ShipCity"] },
+          allowGrouping: true,
+          allowPaging: true,
+  
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -48,22 +46,20 @@ Group buttons is one of the features under Grouping. It is helpful to do Groupin
 
 {% highlight html %}
 
-
-
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                //window.gridData is refered from jsondata.min.js
-                dataSource: window.gridData,
-                allowGrouping: true,
-                groupSettings: { showToggleButton: true, groupedColumns: ["ShipCity"] },
-                allowPaging: true,
-
-            });
-        });
-
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          //window.gridData is refered from jsondata.min.js
+          dataSource: window.gridData,
+          allowGrouping: true,
+          groupSettings: { showToggleButton: true, groupedColumns: ["ShipCity"] },
+          allowPaging: true,
+  
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -83,18 +79,18 @@ In **GroupDropArea**, grouped columns have an option to ungroup a column using *
 {% highlight html %}
 
 
- <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                //window.gridData is refered from jsondata.min.js
-                dataSource: window.gridData,
-                groupSettings: { showUngroupButton: false, groupedColumns: ["ShipCity"] },
-                allowGrouping: true,
-                allowPaging: true,
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          //window.gridData is refered from jsondata.min.js
+          dataSource: window.gridData,
+          groupSettings: { showUngroupButton: false, groupedColumns: ["ShipCity"] },
+          allowGrouping: true,
+          allowPaging: true,
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -112,18 +108,18 @@ If you drag any header to Group column in Grid, it expands smoothly its Group Dr
 {% highlight html %}
 
     
-  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                //window.gridData is refered from jsondata.min.js
-                dataSource: window.gridData,
-                groupSettings: { enableDropAreaAutoSizing: false },
-                allowGrouping: true,
-                allowPaging: true,
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          //window.gridData is refered from jsondata.min.js
+          dataSource: window.gridData,
+          groupSettings: { enableDropAreaAutoSizing: false },
+          allowGrouping: true,
+          allowPaging: true,
+      });
+  });
+</script>
 
 
 
@@ -144,18 +140,18 @@ When the **showDropArea** property is set to **false**, the **groupDropArea** is
 {% highlight html %}
 
 
- <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowGrouping: true,
-                groupSettings: { groupedColumns: ["ShipCountry"],showDropArea: false }
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowGrouping: true,
+          groupSettings: { groupedColumns: ["ShipCountry"],showDropArea: false }
+      });
+  });
+</script>
 
 
 {% endhighlight %}

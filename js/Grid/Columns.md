@@ -18,25 +18,25 @@ Columns are a key feature in **Grid** to define schema in a control based on a d
 {% highlight html %}
 
  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            window.data = [];
-            for (i = 1; i < 6; i++) {
-                window.data.push({ Number: 100 / i, Currency: 100 / i, Date: new Date() });
-            }
-            $("#Grid").ejGrid({
-                // the datasource gets data
-                dataSource: window.data,
-                columns: [
-                        // the formatting columns
-                    { field: "Number", headerText: "Number", textAlign: ej.TextAlign.Right, format: "{0:n2}", width: 70 },
-                    { field: "Currency", headerText: "Currency", textAlign: ej.TextAlign.Right, format: "{0:c2}", width: 70 },
-                    { field: "Date", headerText: "Date", textAlign: ej.TextAlign.Right, format: "{0:MM/dd/yyyy}", width: 70 }
-                ],
-            });
-
-        });
-    </script>
+ <script type="text/javascript">
+  $(function () {// Document is ready.
+      window.data = [];
+      for (i = 1; i < 6; i++) {
+          window.data.push({ Number: 100 / i, Currency: 100 / i, Date: new Date() });
+      }
+      $("#Grid").ejGrid({
+          // the datasource gets data
+          dataSource: window.data,
+          columns: [
+                  // the formatting columns
+              { field: "Number", headerText: "Number", textAlign: ej.TextAlign.Right, format: "{0:n2}", width: 70 },
+              { field: "Currency", headerText: "Currency", textAlign: ej.TextAlign.Right, format: "{0:c2}", width: 70 },
+              { field: "Date", headerText: "Date", textAlign: ej.TextAlign.Right, format: "{0:MM/dd/yyyy}", width: 70 }
+          ],
+      });
+  
+  });
+</script>
 
 
 {% endhighlight %}
@@ -54,29 +54,27 @@ A **template** is used to render a specific template to a particular column usin
 {% highlight html %}
 
 
- <div id="Grid"></div>
-    <script type="text/x-jsrender" id="columnTemplate">
-        <!--jsrender script-->
-        <img style="width:130px;height:100px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{:EmployeeID}}.png" alt="{{:EmployeeID}}" />
-    </script>
-    <script type="text/javascript">
-        $(function () {//Document is ready
-            $("#Grid").ejGrid({
-                // the datasource "window.employeeView" is referred from jsondata.min.js
-                dataSource: window.employeeView,
-                allowPaging: true,
-                pageSettings: { pageSize: 4 },
-                columns: [
-                //to enable the Template and templateId loads own template
-                { headerText: "EmployeePhoto", template: true, templateID: "#columnTemplate", width: 25, textAlign: ej.TextAlign.Center },
-                { field: "EmployeeID", headerText: "EmployeeID", textAlign: ej.TextAlign.Right, width: 20 },
-                { field: "FirstName", headerText: "FirstName", textAlign: ej.TextAlign.Left, width: 30 },
-                { field: "BirthDate", headerText: "BirthDate", textAlign: ej.TextAlign.Right, width: 30, format: "{0:dd/MM/yy}" }
-                ],
-            });
-        });
-    </script>
-
+<script type="text/x-jsrender" id="columnTemplate">
+  <!--jsrender script-->
+  <img style="width:130px;height:100px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{:EmployeeID}}.png" alt="{{:EmployeeID}}" />
+</script>
+<script type="text/javascript">
+  $(function () {//Document is ready
+      $("#Grid").ejGrid({
+          // the datasource "window.employeeView" is referred from jsondata.min.js
+          dataSource: window.employeeView,
+          allowPaging: true,
+          pageSettings: { pageSize: 4 },
+          columns: [
+          //to enable the Template and templateId loads own template
+          { headerText: "EmployeePhoto", template: true, templateID: "#columnTemplate", width: 25, textAlign: ej.TextAlign.Center },
+          { field: "EmployeeID", headerText: "EmployeeID", textAlign: ej.TextAlign.Right, width: 20 },
+          { field: "FirstName", headerText: "FirstName", textAlign: ej.TextAlign.Left, width: 30 },
+          { field: "BirthDate", headerText: "BirthDate", textAlign: ej.TextAlign.Right, width: 30, format: "{0:dd/MM/yy}" }
+          ],
+      });
+  });
+</script>
 
 {% endhighlight %}
 
@@ -93,28 +91,28 @@ The following output is displayed as a result of the above code example.
 {% highlight html %}
 
 <style>
-        .e-rowcell[employeeid = "5"] {
-            color: red;
-        }
-    </style>
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {   // Document is ready.
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                pageSettings: { pageSize: 7 },
-                columns: [
-                              { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 75 },
-                              { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 90, },
-                              { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 90, customAttributes: { "employeeid": "{{:EmployeeID}}" } }, // jsrender syntax usage in custom Attribute
-                              { field: "OrderDate", headerText: "Order Date", textAlign: ej.TextAlign.Right, width: 100, format: "{0:MM/dd/yyyy}" },
-                              { field: "ShipCountry", headerText: "Ship Country", textAlign: ej.TextAlign.Left, width: 110 }
-                ],
-            });
-        });
-    </script>
+  .e-rowcell[employeeid = "5"] {
+  color: red;
+  }
+</style>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {   // Document is ready.
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          pageSettings: { pageSize: 7 },
+          columns: [
+                        { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 75 },
+                        { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 90, },
+                        { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 90, customAttributes: { "employeeid": "{{:EmployeeID}}" } }, // jsrender syntax usage in custom Attribute
+                        { field: "OrderDate", headerText: "Order Date", textAlign: ej.TextAlign.Right, width: 100, format: "{0:MM/dd/yyyy}" },
+                        { field: "ShipCountry", headerText: "Ship Country", textAlign: ej.TextAlign.Left, width: 110 }
+          ],
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -131,26 +129,26 @@ The following output is displayed as a result of the above code example.
 
 {% highlight html %}
 
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {   // Document is ready.
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                pageSettings: { pageSize: 5 },
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-                columns:
-                    [
-                        { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 60 },
-                // column read only at while editing
-                        { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 80, allowEditing: false },
-                        { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 60 },
-                        { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 60 }
-                    ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {   // Document is ready.
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          pageSettings: { pageSize: 5 },
+          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+          columns:
+              [
+                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 60 },
+          // column read only at while editing
+                  { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 80, allowEditing: false },
+                  { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 60 },
+                  { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 60 }
+              ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -167,30 +165,29 @@ In **ejGrid**, you can control **Grid** actions through **allowSorting, allowGro
 
 {% highlight html %}
 
- <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {  // Document is ready.
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                pageSettings: { pageSize: 5 },
-                allowSorting: true,
-                allowMultiSorting: true,
-                allowFiltering: true,
-                allowGrouping: true,
-                groupSettings: { groupedColumns: ["OrderID"] },
-                columns:
-            [
-                { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 60 },
-                { field: "CustomerID", headerText: "Customer ID", allowGrouping: false, textAlign: ej.TextAlign.Left, width: 80 },
-                { field: "EmployeeID", headerText: "Employee ID", allowFiltering: false, textAlign: ej.TextAlign.Right, width: 60 },
-                { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Left, allowSorting: false, width: 60 }
-            ],
-
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {  // Document is ready.
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          pageSettings: { pageSize: 5 },
+          allowSorting: true,
+          allowMultiSorting: true,
+          allowFiltering: true,
+          allowGrouping: true,
+          groupSettings: { groupedColumns: ["OrderID"] },
+          columns:
+      [
+          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 60 },
+          { field: "CustomerID", headerText: "Customer ID", allowGrouping: false, textAlign: ej.TextAlign.Left, width: 80 },
+          { field: "EmployeeID", headerText: "Employee ID", allowFiltering: false, textAlign: ej.TextAlign.Right, width: 60 },
+          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Left, allowSorting: false, width: 60 }
+      ],
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -208,18 +205,17 @@ The columns are automatically generated from the datasource and you do not need 
 {% highlight html %}
 
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                pageSettings: { pageSize: 5 },
-
-            });
-        });
-    </script>
-
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          pageSettings: { pageSize: 5 },
+  
+      });
+  });
+</script>
 
 {% endhighlight %}
 
@@ -236,25 +232,24 @@ Foreign key is a field in relational table. It matches the specific key columns 
 {% highlight html %}
 
 
-
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            // the datasource "window.gridData" is referred from jsondata.min.js
-            var data = window.gridData;
-            $("#Grid").ejGrid({
-                dataSource: data,
-                allowPaging: true,
-                columns: [
-                        { field: "OrderID", width: 80, isPrimaryKey: true, textAlign:ej.TextAlign.Right,  },
-                        { field: "EmployeeID", foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: window.employeeView, width: 75, headerText: "First Name" ,textAlign:ej.TextAlign.Left} ,
-                        { field: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 75 ,  textAlign:ej.TextAlign.Left}
-
-                ],
-            });
-        });
-    </script>
+<script type="text/javascript">
+  $(function () {
+      // the datasource "window.gridData" is referred from jsondata.min.js
+      var data = window.gridData;
+      $("#Grid").ejGrid({
+          dataSource: data,
+          allowPaging: true,
+          columns: [
+                  { field: "OrderID", width: 80, isPrimaryKey: true, textAlign:ej.TextAlign.Right,  },
+                  { field: "EmployeeID", foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: window.employeeView, width: 75, headerText: "First Name" ,textAlign:ej.TextAlign.Left} ,
+                  { field: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 75 ,  textAlign:ej.TextAlign.Left}
+  
+          ],
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -273,31 +268,30 @@ Cell merging feature enables to merge cells based on your requirement. The follo
 
 
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            // Data for grid.
-            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
-            $("#Grid").ejGrid({
-                dataSource:dataManager,
-                allowPaging: true,
-                allowScrolling: true,
-                allowCellMerging: true,
-                columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ],
-                mergeCellInfo: function (args) {
-                    if (args.column.field == "EmployeeID" && args.data.OrderID == 10248) {
-                       args.rowMerge(3);
-                   }
-                   else if (args.column.field == "ShipCity" && args.data.OrderID == 10252) {
-                       args.colMerge(3);
-                   }
-                   else if (args.column.field == "ShipCity" && args.data.OrderID == 10255) {
-                       args.merge(0, 3);
-                   }
-               },
-            });
-        });
-    </script>
-
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      // Data for grid.
+      var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
+      $("#Grid").ejGrid({
+          dataSource:dataManager,
+          allowPaging: true,
+          allowScrolling: true,
+          allowCellMerging: true,
+          columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ],
+          mergeCellInfo: function (args) {
+              if (args.column.field == "EmployeeID" && args.data.OrderID == 10248) {
+                 args.rowMerge(3);
+             }
+             else if (args.column.field == "ShipCity" && args.data.OrderID == 10252) {
+                 args.colMerge(3);
+             }
+             else if (args.column.field == "ShipCity" && args.data.OrderID == 10255) {
+                 args.merge(0, 3);
+             }
+         },
+      });
+  });
+</script>
 
 {% endhighlight %}
 
@@ -316,21 +310,20 @@ AutoWrap feature allows you to wrap cell content to next line when the content e
 {% highlight html %}
 
 
-
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            // Data for grid.
-           var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
-                $("#Grid").ejGrid({
-                dataSource:dataManager,
-                allowPaging: true,
-                allowScrolling: true,
-                allowTextWrap: true,
-                columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ]
-            });
-        });
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      // Data for grid.
+     var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
+          $("#Grid").ejGrid({
+          dataSource:dataManager,
+          allowPaging: true,
+          allowScrolling: true,
+          allowTextWrap: true,
+          columns: [ "OrderID", "EmployeeID", "ShipCity", "ShipName", "Freight" ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -347,17 +340,15 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
-
-
-  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {   
-            $("#Grid").ejGrid({
-               showColumnChooser: true,
-               columns: [ "OrderID","CustomerID", "EmployeeID","Freight","OrderDate" ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {   
+      $("#Grid").ejGrid({
+         showColumnChooser: true,
+         columns: [ "OrderID","CustomerID", "EmployeeID","Freight","OrderDate" ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -376,23 +367,23 @@ The following code example shows you how to set **disableHtmlEncode**:
 
 {% highlight html %}
 
-  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowSorting: true,
-                allowPaging: true,
-                columns: [
-                   {field:"OrderID", isPrimarykey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right },
-                   {field:"CustomerID", headerText: "<div>Customer ID</div>", disableHtmlEncode: true },
-                   {field:"EmployeeID",headerText:"<div>Employee ID</div>" ,textAlign:ej.TextAlign.Right,disableHtmlEncode:true},
-                   {field:"Freight",headerText:"Freight", textAlign:ej.TextAlign.Right },
-                   {field:"ShipCountry", headerText: "Ship Country" },
-                ]
-            });
-        });
-    </script>
+ <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          allowSorting: true,
+          allowPaging: true,
+          columns: [
+             {field:"OrderID", isPrimarykey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right },
+             {field:"CustomerID", headerText: "<div>Customer ID</div>", disableHtmlEncode: true },
+             {field:"EmployeeID",headerText:"<div>Employee ID</div>" ,textAlign:ej.TextAlign.Right,disableHtmlEncode:true},
+             {field:"Freight",headerText:"Freight", textAlign:ej.TextAlign.Right },
+             {field:"ShipCountry", headerText: "Ship Country" },
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -409,24 +400,24 @@ The **Stacked Header** feature allows additional header rows that span across th
 
 {% highlight html %}
 
-   <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            var data = ej.DataManager(window.gridData).executeLocal(ej.Query().take(50));
-            $("#Grid").ejGrid({
-                dataSource: data,
-                showStackedHeader: true,
-                stackedHeaderRows: [
-                   {
-                       stackedHeaderColumn: [{ stackedHeaderText: "Order Details", column: "OrderID,OrderDate,Freight" },
-                           { stackedHeaderText: "Ship Details", column: "ShipName,ShipCity,ShipCountry" }
-                       ]
-                   },
-                ],
-                columns: ["OrderID ", "OrderDate", "Freight", "ShipCity", "ShipCountry"]
-            });
-        });
-    </script>
+ <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      var data = ej.DataManager(window.gridData).executeLocal(ej.Query().take(50));
+      $("#Grid").ejGrid({
+          dataSource: data,
+          showStackedHeader: true,
+          stackedHeaderRows: [
+             {
+                 stackedHeaderColumn: [{ stackedHeaderText: "Order Details", column: "OrderID,OrderDate,Freight" },
+                     { stackedHeaderText: "Ship Details", column: "ShipName,ShipCity,ShipCountry" }
+                 ]
+             },
+          ],
+          columns: ["OrderID ", "OrderDate", "Freight", "ShipCity", "ShipCountry"]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
