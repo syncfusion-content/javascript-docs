@@ -53,7 +53,7 @@ You can apply the theme (Gradient lime) to the **TreeGrid** control by using t
 
 	<!-- style sheet for default theme(gradient lime) -->
 
-	<link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet">
+	<link href=" http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet">
 
 	//...
 	
