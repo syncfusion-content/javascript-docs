@@ -282,7 +282,7 @@ Exit:"Quitter"
 
 {% endhighlight %}
 
-> _**Note: In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube**_
+> _**Note:** In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube_
 
 ##Localizing Control Information
 

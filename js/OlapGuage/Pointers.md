@@ -13,7 +13,7 @@ documentation: ug
 
 ## Types of Pointers
 
-Two different types of pointer available in **OlapGuage** are:
+Two different types of pointer available in **OlapGauge** are:
 
    1. Needle
 

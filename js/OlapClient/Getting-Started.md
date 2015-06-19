@@ -94,7 +94,7 @@ Click New Item and select HTML Page from the listed templates. Name the page as 
 
 Add the script files and CSS files in the &lt;title&gt; tag of the default.html page.
 
-> _**Note: Use the following code sample while adding scripts and styles.**_
+> _**Note:** Use the following code sample while adding scripts and styles._
 
 {% highlight html %}
 
@@ -537,7 +537,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 
 {% endhighlight %}
 
-> _**Note: In this example, “WebApplication2” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created.**_
+> _**Note:** In this example, “WebApplication2” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created._
 
 
 

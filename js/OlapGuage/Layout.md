@@ -13,11 +13,11 @@ The **OLAP Gauge** control provides support to display multiple gauges in a stru
 
 ## Supported Layouts
 
-    1. Wrap Layout: Based on the available space, gauges are aligned and displayed automatically.
+   1. Wrap Layout: Based on the available space, gauges are aligned and displayed automatically.
 
-    2. Row count: Specifies the number of gauge controls to be displayed row-wise.
+   2. Row count: Specifies the number of gauge controls to be displayed row-wise.
 
-    3. Column count: Specifies the number of gauge controls to be displayed column-wise.
+   3. Column count: Specifies the number of gauge controls to be displayed column-wise.
 
 ## Layout Customization 
 

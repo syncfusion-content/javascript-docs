@@ -58,7 +58,7 @@ RenderingFailed</td><td>
 "Rendant pas"</td></tr>
 </table>
 
-The following code example illustrates you on how to localize **OlapGuage’s** User Interface (UI) based on “French” culture.
+The following code example illustrates you on how to localize **OlapGauge’s** User Interface (UI) based on “French” culture.
 
 {% highlight js %}
 
@@ -140,11 +140,11 @@ $("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip
 {% endhighlight %}
 
 
-> _**Note: In order to render the localized OLAP Gauge, You are required to reset the content available in both**_
+> _**Note:** In order to render the localized OLAP Gauge, You are required to reset the content available in both_
 
-    1. OLAP Gauge Control
+   1. OLAP Gauge Control
 
-    2. OLAP Cube
+   2. OLAP Cube
 
 ##Localizing Control Information
 
@@ -174,6 +174,6 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The following screenshot displays the **OlapGauge** with French localization.
 
-{% include image.html url="/js/OlapGauge/Concepts-and-Features/Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.png" Caption="Localized OlapGuage"%}
+{% include image.html url="/js/OlapGauge/Concepts-and-Features/Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.png" Caption="Localized OlapGauge"%}
 
 

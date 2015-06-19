@@ -100,7 +100,7 @@ Click on New Item and select HTML Page from the listed templates. Name the page 
 
 Add the script files and CSS files in the title tag of the default.html page.
 
-> _**Note: Please follow the given order while adding scripts and styles.**_
+> _**Note:** Please follow the given order while adding scripts and styles._
 
 {% highlight html %}
 
@@ -325,7 +325,7 @@ Add the following methods to the service invoked for any server-side operations 
 
 ###Configure Web.Config 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is **"WebApplication2.OlapGuageService"** where **"OlapGuageService"** is the service class name and **“WebApplication2"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is **"WebApplication2.OlapGaugeService"** where **"OlapGaugeService"** is the service class name and **“WebApplication2"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
    1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapGaugeService** contract and hence it is "**WebApplication2.IOlapGaugeService**".
 
@@ -357,7 +357,7 @@ Add the following methods to the service invoked for any server-side operations 
 
 {% endhighlight %} 
 
-> _**Note: In this example, “WebApplication2” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created.**_
+> _**Note:** In this example, “WebApplication2” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created._
 
 
 

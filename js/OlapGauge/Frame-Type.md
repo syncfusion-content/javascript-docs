@@ -11,9 +11,9 @@ documentation: ug
 
 **OLAP Gauge** supports built-in frame types to provide effective rim styles. The **frameType** property is used to set the frame type of the **OlapGauge** control. The supported frame types are:
 
-    1. Full Circle - displays full view of the OlapGauge.
+   1. Full Circle - displays full view of the OlapGauge.
 
-    2. Half Circle - displays half view of the OlapGauge.
+   2. Half Circle - displays half view of the OlapGauge.
 
 ## Full Circle
 
