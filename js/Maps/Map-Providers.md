@@ -37,7 +37,7 @@ urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
 
 The **urlTemplate** property determines the format of tile map. You can specify the template for the tile layer. 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Map-Providers_images/Map-Providers_img1.png" Caption="Open street Map"%}
+{% include image.html url="/js/Maps/Map-Providers_images/Map-Providers_img1.png" Caption="Open street Map"%}
 
 **Bing Map**
 
@@ -64,5 +64,5 @@ $("#map").ejMap({
 
 The bing **Map** key is provided as input to this key property. The Bing Map key can be obtained from [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Map-Providers_images/Map-Providers_img2.png" Caption="Bing map"%}
+{% include image.html url="/js/Maps/Map-Providers_images/Map-Providers_img2.png" Caption="Bing map"%}
 

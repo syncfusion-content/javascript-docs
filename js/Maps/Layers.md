@@ -71,5 +71,5 @@ jQuery(function ($) {
 
 ****
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Layers_images/Layers_img1.png" Caption="Map with layers"%}
+{% include image.html url="/js/Maps/Layers_images/Layers_img1.png" Caption="Map with layers"%}
 

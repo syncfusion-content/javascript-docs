@@ -46,7 +46,7 @@ jQuery(function($) {
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/User-Interaction_images/User-Interaction_img1.png" Caption="Map with enable selection property"%}
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img1.png" Caption="Map with enable selection property"%}
 
 **Zooming**
 
@@ -139,7 +139,7 @@ You can zoom the map with mouse events using mouse scroll. When the mouse is scr
 
 When the map is double-tapped using mouse, the zoom in operation is performed. 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/User-Interaction_images/User-Interaction_img2.png" Caption="Map with zoom"%}
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img2.png" Caption="Map with zoom"%}
 
 **Using Shape Selection**
 
@@ -233,7 +233,7 @@ jQuery(function($) {
 
 **Structure of Navigation Control**
 
-{% include image.html url="/js/Maps/Concepts-and-Features/User-Interaction_images/User-Interaction_img3.png" Caption="Structure of Navigation Control"%}
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img3.png" Caption="Structure of Navigation Control"%}
 
 
 

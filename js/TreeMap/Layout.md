@@ -45,7 +45,7 @@ There are four different **TreeMap** layouts such as
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Layout_images/Layout_img1.png" Caption="Squarified Layout"%}
+{% include image.html url="/js/TreeMap/Layout_images/Layout_img1.png" Caption="Squarified Layout"%}
 
 **SliceAndDiceAuto Layout**
 
@@ -68,7 +68,7 @@ There are four different **TreeMap** layouts such as
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Layout_images/Layout_img2.png" Caption="SliceAndDiceAuto Layout"%}
+{% include image.html url="/js/TreeMap/Layout_images/Layout_img2.png" Caption="SliceAndDiceAuto Layout"%}
 
 **SliceAndDiceHorizontal Layout**
 
@@ -91,7 +91,7 @@ There are four different **TreeMap** layouts such as
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Layout_images/Layout_img3.png" Caption="SliceAndDiceHorizontal Layout"%}
+{% include image.html url="/js/TreeMap/Layout_images/Layout_img3.png" Caption="SliceAndDiceHorizontal Layout"%}
 
 **SliceAndDiceVertical Layout**
 
@@ -114,5 +114,5 @@ There are four different **TreeMap** layouts such as
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Layout_images/Layout_img4.png" Caption="SliceAndDiceVertical Layout"%}
+{% include image.html url="/js/TreeMap/Layout_images/Layout_img4.png" Caption="SliceAndDiceVertical Layout"%}
 

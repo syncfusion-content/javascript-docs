@@ -16,46 +16,47 @@ Apply the plugin and property assigning the Map element through the directive 
 
 {% highlight html %}
 
-//References to be added for angular support.
+    //References to be added for angular support.
+        
+        <script src=" https:/ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+        
+        <script src=" http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"></script>
 
-    <script src=" https:/ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js">
-    </script>
-
-    <script src=" http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"></script>
-
-//Initializes controller
-<body ng-controller="Map">
+    //Initializes controller
+    
+        <body ng-controller="Map">
 
     //Initializes Map
-    <div id="map" style="height: inherit; min-height: 356px;" ej-map e-zoomsettings- enablezoom="nenablezoom">
-        <div e-layers>
-           <div e-layer e-shapedata="nshapedata" e-shapesettings-fill="nfill" e-shapesettings-strokeThickness="nstrokeThickness" e-shapesettings-stroke="nstroke">                                   
-           </div>
+    
+        <div id="map" style="height: inherit; min-height: 356px;" ej-map e-zoomsettings- enablezoom="nenablezoom">
+            <div e-layers>
+                <div e-layer e-shapedata="nshapedata" e-shapesettings-fill="nfill" e-shapesettings-strokeThickness="nstrokeThickness" e-shapesettings-stroke="nstroke">                                   
+                </div>
+            </div>
         </div>
-     </div> 
+         
     //Renders a textbox to change the color value
+    
     <div>
         Shape Color:  <input type="text" id="Text11" ng-model="nfill" style="width: 110px">
     </div> 
 
     <script>
-       angular.module('syncApp', ['ejangular'])
+        angular.module('syncApp', ['ejangular'])
         .controller('Map', function ($scope) {                       
             $scope.nenablezoom = true,
             $scope.nshapedata = usMap;                    
             $scope.nfill = "#9CBF4E"; 
             $scope.nstrokeThickness ="0.5";
-$scope.nstroke = "White";
-});
-    </script> 
-</body>
-
+            $scope.nstroke = "White";
+        });
+    </script>     
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/AngularJS-Support_images/AngularJS-Support_img1.png" Caption="Angular Support Map"%}
+{% include image.html url="/js/Maps/AngularJS-Support_images/AngularJS-Support_img1.png" Caption="Angular Support Map"%}
 
 
 

@@ -63,7 +63,7 @@ You can customize the labels of the **legend****item** using **legendLabel** pro
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/TreeMap-Elements_images/TreeMap-Elements_img1.png" Caption="Treemap with legend"%}
+{% include image.html url="/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img1.png" Caption="Treemap with legend"%}
 
 **Header**
 
@@ -95,7 +95,7 @@ You can set headers for each level by setting the **showHeader** propery of the 
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/TreeMap-Elements_images/TreeMap-Elements_img2.png" Caption="Treemap with header"%}
+{% include image.html url="/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img2.png" Caption="Treemap with header"%}
 
 **Label**
 
@@ -131,5 +131,5 @@ You can also set labels for the leaf nodes by setting the **showLabels** propert
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/TreeMap-Elements_images/TreeMap-Elements_img3.png" Caption="Treemap with label"%}
+{% include image.html url="/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img3.png" Caption="Treemap with label"%}
 

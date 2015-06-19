@@ -97,7 +97,7 @@ Apply the plugin and property assigning the **Treemap** element through the di
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Angular-Support_images/Angular-Support_img1.png" Caption="Angular treemap"%}
+{% include image.html url="/js/TreeMap/Angular-Support_images/Angular-Support_img1.png" Caption="Angular treemap"%}
 
 
 

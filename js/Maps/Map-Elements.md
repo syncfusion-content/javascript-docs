@@ -58,7 +58,7 @@ var markers = [
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Map-Elements_images/Map-Elements_img1.png" Caption="Map with markers"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img1.png" Caption="Map with markers"%}
 
 **Adding Marker objects to map**
 
@@ -106,7 +106,7 @@ var markers = [
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Map-Elements_images/Map-Elements_img2.png" Caption="Map with label"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img2.png" Caption="Map with label"%}
 
 **Bubbles** 
 
@@ -210,7 +210,7 @@ jQuery(function ($) {
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Map-Elements_images/Map-Elements_img3.png" Caption="Map with bubbles"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img3.png" Caption="Map with bubbles"%}
 
 **Legend**
 
@@ -297,7 +297,7 @@ legendSettings:{
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Map-Elements_images/Map-Elements_img4.png" Caption="Map with legend"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img4.png" Caption="Map with legend"%}
 
 **Interactive Legend**
 
@@ -343,7 +343,7 @@ layers: [
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Map-Elements_images/Map-Elements_img5.png" Caption="Map with interactive legend"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img5.png" Caption="Map with interactive legend"%}
 
 **Bubble Legend**
 
@@ -419,5 +419,5 @@ jQuery(function ($) {
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Map-Elements_images/Map-Elements_img6.png" Caption="Bubble Legend"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img6.png" Caption="Bubble Legend"%}
 

@@ -43,24 +43,23 @@ The above properties of **shapeSettings** are applied only when **autoFill** pro
 
 {% highlight html %}
 
-jQuery(function ($) {
-   $("#mapContainer").ejMap({
-               layers: [
-                   {
-                       shapeData: usMap,
-                       enableMouseHover:true,
-                       shapeSettings: {
-                           fill: "#9CBF4E",
-                           strokeThickness: "0.5",
-                           stroke: "White",
-                           highlightStroke: "White",
-                           highlightColor: "#BC5353",
-                           highlightBorderWidth: "1"
-                       }
-                   }                         
-               ]
-           });
-       });  
+    jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                shapeData: usMap,
+                enableMouseHover:true,
+                shapeSettings: {
+                    fill: "#9CBF4E",
+                    strokeThickness: "0.5",
+                    stroke: "White",
+                    highlightStroke: "White",
+                    highlightColor: "#BC5353",
+                    highlightBorderWidth: "1"
+                }
+            }]
+        });
+     });  
 
 
 {% endhighlight %}
@@ -71,7 +70,7 @@ jQuery(function ($) {
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Customization_images/Customization_img1.png" Caption="Map"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img1.png" Caption="Map"%}
 
 **Color Mapping**
 
@@ -173,7 +172,7 @@ When the underlying object value is 700000, then the fill color of the correspon
 
 When the underlying value is below any of the given sorted range or above the sorted range, then the fill is set from fill.
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Customization_images/Customization_img2.png" Caption="Map with fill"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img2.png" Caption="Map with fill"%}
 
 * **equalColorMapping** - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
 
@@ -296,7 +295,7 @@ jQuery(function($) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Customization_images/Customization_img3.png" Caption="Map with fill color"%}****
+{% include image.html url="/js/Maps/Customization_images/Customization_img3.png" Caption="Map with fill color"%}****
 
 **Color Palette**
 
@@ -330,7 +329,7 @@ jQuery(function($) {
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Customization_images/Customization_img4.png" Caption="Map with color palette property"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img4.png" Caption="Map with color palette property"%}
 
 **Custom Palette**
 
@@ -367,7 +366,7 @@ layers: [
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Customization_images/Customization_img5.png" Caption="Map with custom palette"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img5.png" Caption="Map with custom palette"%}
 
 **Tooltip**
 
@@ -398,7 +397,7 @@ layers: [
 
 
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Customization_images/Customization_img6.png" Caption="Map with Tooltip"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img6.png" Caption="Map with Tooltip"%}
 
 **Tooltip Template**
 
@@ -445,5 +444,5 @@ layers: [
 
 The following screenshot illustrates a map control displaying a Tooltip with template.
 
-{% include image.html url="/js/Maps/Concepts-and-Features/Customization_images/Customization_img7.png" Caption="Map with tooltip template"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img7.png" Caption="Map with tooltip template"%}
 
