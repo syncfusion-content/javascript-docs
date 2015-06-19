@@ -373,7 +373,7 @@ The corresponding arrow keys are used to move the selected elements to up, down,
 
 ## FitToPage commands
 
-FitToPage command helps to fit the Diagram content into the view with respect to either width, height or at the whole.
+**FitToPage** command helps to fit the Diagram content into the view with respect to either width, height or at the whole.
 
 <table>
 <tr>
@@ -408,7 +408,7 @@ diagram.fitToPage("page", "content", { "left": 25, "top": 25, "right": 25, "bott
 
 ### FitToMode
 
-Mode is to specify whether the **Diagram** content can be fit into view with respect to width, height or entire bounds of diagram.
+**Mode** is to specify whether the Diagram content can be fit into view with respect to width, height or entire bounds of diagram.
 
 <table>
 <tr>
@@ -433,7 +433,7 @@ _Fit To Modes_
 
 ### Region
 
-Region is to specify the region/bounds of **Diagram** content to fit into view.
+Region is to specify the region/bounds of Diagram content to fit into view.
 
 <table>
 <tr>
