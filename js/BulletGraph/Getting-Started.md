@@ -33,7 +33,7 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
     <!--  jquery localization dependency  -->
     <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
     <!-- Essential JS UI widget -->
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 <body>
 </body>
