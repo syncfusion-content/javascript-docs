@@ -29,82 +29,97 @@ documentation: ug
        </ul>
        <script type="text/javascript">
           $(function () {
-               $("#defaultRibbon").ejRibbon({
-                   width: "70%",
-                   allowResizing: true, 
-                   applicationTab: {
-                       Type: "ApplicationMenu", itemID: "ribbonmenu"
-                   },
-                   
-                   tabs: [{
-                       id: "home", text: "HOME", groups: [{
-                           text: "Clipboard", alignType: ej.Ribbon.alignType.rows, content: [
-                           {
-                               groups: [{
-                                   id: "cut",
-                                   text: "Cut"
-                               },
-                               {
-                                   id: "copy",
-                                   text: "Copy"
-                               }
-                               ]
-                           }]
-                       },
-                       
-                       {
-                           text: "Font", alignType: "rows", content: [
-                           {
-                               groups: [{
-                                   id: "bold",
-                                   text: "Bold",
-                               },
-                                  {
-                                      id: "italic",
-                                      text: "Italic"
-          
-                                  },
-                                  {
-                                      id: "underline",
-                                      text: "Underline"
-          
-                                  },
-                                  {
-                                      id: "strikethrough",
-                                      text: "Strikethrough"
-                                  }
-                               ],
-                               defaults: {
-                                   height: 70
-                               }
-                           }]
-                       },
-                       
-                       {
-                       text: "New", alignType: ej.Ribbon.alignType.rows, content: [{
-                       groups: [{
-                       id: "new",
-                       text: "New",
-                       }
-                       ],
-                       }]
-                       },
-                       {
-                       text: "Actions", alignType: ej.Ribbon.alignType.rows, content: [{
-                       groups: [{
-                       id: "undo",
-                       text: "Undo"
-                       },
-                       {
-                       id: "redo",
-                       text: "Redo"
-                       }
-                       ],
-                       }]
-                       }]
-                   }]
-               });
-           });
+                $("#defaultRibbon").ejRibbon({
+                    width: "70%",
+                    allowResizing: true, 
+                    applicationTab: {
+                        Type: "ApplicationMenu", itemID: "ribbonmenu"
+                    },
+                    
+                    tabs: [{
+                        id: "home", text: "HOME", groups: [{
+                            text: "Clipboard", alignType: ej.Ribbon.alignType.rows, content: [
+                            {
+                                groups: [{
+                                    id: "cut",
+                                    text: "Cut"
+                                },
+                                {
+                                    id: "copy",
+                                    text: "Copy"
+                                }
+                                ]
+                            }]
+                        },
+                        
+                        {
+                            text: "Font", alignType: "rows", content: [
+                            {
+                                groups: [{
+                                    id: "bold",
+                                    text: "Bold",
+                                },
+                                   {
+                                       id: "italic",
+                                       text: "Italic"
+           
+                                   },
+                                   {
+                                       id: "underline",
+                                       text: "Underline"
+           
+                                   },
+                                   {
+                                       id: "strikethrough",
+                                       text: "Strikethrough"
+                                   }
+                                ],
+                                defaults: {
+                                    height: 70
+                                }
+                            }]
+                        },
+                        
+                        {
+                        text: "New", alignType: ej.Ribbon.alignType.rows, content: [{
+                        groups: [{
+                        id: "new",
+                        text: "New",
+                        }
+                        ],
+                        }]
+                        },
+                        {
+                        text: "Actions", alignType: ej.Ribbon.alignType.rows, content: [{
+                        groups: [{
+                        id: "undo",
+                        text: "Undo",
+          buttonSettings: {
+           contentType: ej.ContentType.TextAndImage,
+           imagePosition: ej.ImagePosition.ImageTop,
+           prefixIcon: "e-ribbon e-undo"
+           }
+                        },
+                        {
+                        id: "redo",
+                        text: "Redo",
+          buttonSettings: {
+          contentType: ej.ContentType.TextAndImage,
+          imagePosition: ej.ImagePosition.ImageTop,
+          prefixIcon: "e-ribbon e-redo"
+          }
+                        }
+                        ],
+              defaults: {
+                  type: "button",
+                  width: 40,
+                  height: 70
+              }
+                        }]
+                        }]
+                    }]
+                });
+            });
        </script>
        <style>
           .e-ribbon .e-Clipboard:before {
@@ -117,7 +132,7 @@ documentation: ug
           }
           .e-ribbon .e-Actions:before {
           content: "\e736";
-          font-size: 28px;
+          font-size: 27px;
           position: relative;
           left: -2px;
           line-height: 1;
