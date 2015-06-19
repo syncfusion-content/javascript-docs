@@ -76,7 +76,7 @@ var connector ={ labels: [{ text: "Label", rotateAngle: 45    }]};
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Label_images/Label_img4.png" Caption="Rotated Label"%}
 
-> _**Note: No built-in support is added to rotate labels interactively.**_
+> _**Note:**_ No built-in support is added to rotate labels interactively.
 
 ## Appearance 
 
@@ -85,7 +85,12 @@ You can customize the **Label appearance** and position using its properties.
 {% highlight js %}
 
 //set various appearance properties to label
-var label = { "text": "Label Text", "fontSize": 12, "fontFamily": "TimesNewRoman", italic: true, "fontColor": "black", "fillColor": "White", "borderColor": "black", "borderWidth": 1, wrapText: true, textDecoration: ej.datavisualization.Diagram.TextDecorations.LineThrough };
+var label = {
+        "text": "Label Text", "fontSize": 12, "fontFamily": "TimesNewRoman",
+        italic: true, "fontColor": "black", "fillColor": "White",
+        "borderColor": "black", "borderWidth": 1, wrapText: true,
+        textDecoration: ej.datavisualization.Diagram.TextDecorations.LineThrough
+    };
 
 {% endhighlight %}
 

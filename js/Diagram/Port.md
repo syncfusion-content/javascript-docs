@@ -135,4 +135,4 @@ var port = { constraints: ej.datavisualization.Diagram.PortConstraints.Connect }
 
 {% endhighlight %}
 
-> _**Note:**_ Port’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm).
+> _**Note:**_ Port’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).

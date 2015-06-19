@@ -68,7 +68,6 @@ diagram.deactivateTool();
 **Selection** feature allows you to select single or multiple Nodes/Connectors.
 
 * Single selection
-
 * Multiple selection
 
 ### Single selection
@@ -76,7 +75,6 @@ diagram.deactivateTool();
 The Nodes/Connectors in Diagram surface is selected when the **Select** constraint is enabled. **Selection** is done through the following two ways. 
 
 * Mouse Click
-
 * addSelection method.
 
 #### Mouse Click
@@ -265,7 +263,6 @@ $("#Diagram").ejDiagram(selectedItems: { userHandles: userHandles } );
 The Diagram is zoomed in and out. **Zooming** is achieved in the following two ways.
 
 * Using the zoom commands.
-
 * Using the mouse wheel.
 
 ### MouseWheel

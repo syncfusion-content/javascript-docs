@@ -12,7 +12,6 @@ documentation: ug
 Diagram provides support to enable or disable certain diagram behaviors.
 
 <table>
-<caption text-align ="left">_Constraints_</caption>
 <tr>
 <td>
 <b>Constraints</b></td><td>
@@ -54,6 +53,8 @@ Enables or Disables undo actions.</td></tr>
 Default</td><td>
 Enables all the constraints.</td></tr>
 </table>
+
+_Constraints_
 
 Default value for the diagram constraints property is ej.datavisualization.Diagram.DiagramConstraints.Default.
 

@@ -25,7 +25,7 @@ In the above example, you can do both selection and rotation.
 
 ## Remove Operation
 
-You can **remove** or **disable** values by using **Bitwise** ‘&&#x007E;’ (XOR) **operator**.
+You can **remove** or **disable** values by using **Bitwise** ‘&#x0026;&#x007E;’ (XOR) **operator**.
 
 {% highlight js %}
 
