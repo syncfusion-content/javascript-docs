@@ -17,7 +17,6 @@ The **Ribbon** can be easily configured to the DOM element such as **&lt;div&g
 
 {% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img1.png" Caption="Ribbon control with tabs and contextual tab"%}
 
-### Create Ribbon Control
 
 Create a HTML file and add the following references to the required libraries.
 
@@ -113,7 +112,7 @@ The following screenshot illustrates the **Ribbon** control.
 
 {% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img2.png" Caption="Simple ribbon control with tabs and contextual tab"%}
 
-### Add Controls
+## Add Controls
 
 Add controls to each **Ribbon** tab by using the property content. You can also add custom controls by using the property **contentID**.The property **alignType** is used to align the groups in row or column order. Syncfusion has provided Button, Split button, DropdownList, Toggle button, Gallery, and Custom controls support in your Ribbon control. 
 
@@ -248,7 +247,7 @@ The following screenshot illustrates **Ribbon** with controls.
 
 {% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img3.png" Caption="Ribbon control with default ribbon controls and custom button control"%}
 
-### Expand/Collapse
+## Expand/Collapse
 
 The **Ribbon** has **expand/collapse** support. The following screenshot illustrates **Ribbon** in the expanded state,
 
@@ -258,7 +257,7 @@ The following screenshot illustrates **Ribbon** in the collapsed state.
 
 {% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img5.png" Caption="Ribbon control in the collapsed state"%}
 
-### Separator for Controls
+## Separator for Controls
 
 The **Ribbon** control has control separator support. Set enableSeparator value to true to enable the separator after a control. **Control separator** supports only row type group.
 
