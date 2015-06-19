@@ -9,7 +9,7 @@ documentation: ug
 
 # Group
 
-**Diagram** provides support to **Group** and **Ungroup** nodes. **Group** is a composite node that has a set of child nodes/connector and it is a container for its children. All the operations performed on a **Group** also affect the individual child in that particular **Group**. You can edit any node/connector in the group individually. On **Ungrouping**, the children in the group is a individual node/connector of the Diagram model. 
+**Diagram** provides support to **Group** and **Ungroup** nodes. **Group** is a composite node that has a set of child nodes/connector and it is a container for its children. All the operations performed on a Group also affect the individual child in that particular Group. You can edit any node/connector in the group individually. On **Ungrouping**, the children in the group is a individual node/connector of the Diagram model. 
 
 ## Create Group
 
@@ -180,7 +180,7 @@ $("#diagram").ejDiagram({
 
 ### Stack panel
 
-Stack panel is used to arrange its “children” in a single line or stack order, either vertically or horizontally. It controls spacing by setting **margin** properties of **child** and **padding** properties of **group**. By default, a **Stack Panel’s** orientation is **vertical**. The following code illustrates how to add stack panel.
+Stack panel is used to arrange its childre in a single line or stack order, either vertically or horizontally. It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s orientation is vertical. The following code illustrates how to add stack panel.
 
 {% highlight js %}
 
