@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-**Diagram** can be populated with the node and connector based on information from an external data source using data binding. **Diagram** supports binding data sources containing hierarchical data and supports both local data and remote data, for retrieving data from a specified data source. Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
+**Diagram** can be populated with the node and connector based on information from an external data source using data binding. Diagram supports binding data sources containing hierarchical data and supports both local data and remote data, for retrieving data from a specified data source. Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
 You can populate **Diagram** elements using data binding support such as **JSON** and **OData** services.
 

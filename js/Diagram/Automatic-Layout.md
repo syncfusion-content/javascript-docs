@@ -16,7 +16,7 @@ Diagram automatically provides support to layout nodes. It includes the followin
 
 ## Hierarchical Layout
 
-The **Hierarchical Tree Layout** arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root. The following code illustrates how to arrange the nodes in a hierarchical structure.
+The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root. The following code illustrates how to arrange the nodes in a hierarchical structure.
 
 {% highlight js %}
 
@@ -61,7 +61,7 @@ $("#diagram").ejDiagram ({
 
 ### Spacing
 
-The following example illustrates the horizontal and vertical spacing of **Hierarchical Layout.**
+The following example illustrates the horizontal and vertical spacing of Hierarchical Layout.
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img1.png" Caption="Hierarchical Layout"%}
 
@@ -154,7 +154,7 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 You can set Chart orientations, chart types and offset to be left between parent and child nodes by overriding the method **diagram.model.layout.getLayoutInfo.**
 
-### Arguments
+#### Arguments
 
 The **getLayoutInfo** method is called to configure every subtree of the organizational chart. And it takes the following arguments.
 
@@ -304,7 +304,7 @@ function getLayoutInfo(diagram, node, options) {
 
 ### Assistant Support
 
-**Diagram** provides support to layout assistant nodes. You can add assistants at runtime by using the **getLayoutInfo** method. The **assistants** property of the “options” argument is an empty array by default. When any of the child nodes are to be set as Assistant, move those nodes to options.assistants from options.children. The following code example illustrates how to add assistants to layout.
+Diagram provides support to layout assistant nodes. You can add assistants at runtime by using the **getLayoutInfo** method. The **assistants** property of the “options” argument is an empty array by default. When any of the child nodes are to be set as Assistant, move those nodes to options.assistants from options.children. The following code example illustrates how to add assistants to layout.
 
 {% highlight js %}
 
