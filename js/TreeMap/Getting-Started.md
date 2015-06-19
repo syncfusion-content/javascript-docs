@@ -332,7 +332,12 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
                 ],
                 showTooltip:true,
                 leafItemSettings: { labelPath: "Region" },
-                showLegend: true
+                showLegend: true,
+                legendSettings: {
+                  showLegend:true,                                                                      
+                  height:38,
+                  width:690,
+                },
             });
         });
 </script>

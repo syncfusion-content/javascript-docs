@@ -50,7 +50,10 @@ You can customize the labels of the **legend****item** using **legendLabel** pro
                 levels: [
                   { groupPath: "Continent", groupGap: 5 }
                 ],
-                treeMapLegend:{ iconHeight:20,iconWidth:20}
+                legendSettings:{					
+					height:40,
+					width:700
+				}
             });
         });
 
@@ -74,7 +77,7 @@ You can set headers for each level by setting the **showHeader** propery of the 
             $("#treemapContainer").ejTreeMap({
                 // ...             
                 levels: [
-                  {groupPath: "Continent", groupGap: 2, headerHeight: 20,  headerTemplate: 'headertemplate' }
+                  {groupPath: "Continent", groupGap: 2, headerHeight: 25,  headerTemplate: 'headertemplate' }
                         ],
                 // ...             
             });
@@ -83,7 +86,7 @@ You can set headers for each level by setting the **showHeader** propery of the 
 
 <script  id="headertemplate" type="application/jsrender">
     <div style="background-color: white; margin:5px">
-        <label style="color:black;font-size:medium;" >{{:header}}</label><br />            
+        <label style="color:black;font-size:large;" >{{:header}}</label><br />            
     </div>                        
 </script>                      
 
@@ -107,7 +110,12 @@ You can also set labels for the leaf nodes by setting the **showLabels** propert
                 // ...                 
                 levels: [
                   {groupPath: "Continent", showLabels: true, groupGap: 2, headerHeight: 20,  headerTemplate: 'headertemplate', labelPosition:"topleft", }
-                ],               
+                ],  
+                leafItemSettings: { labelPath: "Region", showLabels: true},
+                legendSettings:{					
+				    height:40,
+					width:700
+			    }             
             });
         }); 
     </script>     
@@ -116,13 +124,7 @@ You can also set labels for the leaf nodes by setting the **showLabels** propert
         <div style="background-color: white; margin:5px">
             <label style="color:black;font-size:medium;" >{{:header}}</label><br />            
         </div>                        
-    </script>      
-    <script  id="labeltemplate" type="application/jsrender">
-        <div style="background-color: transparent;">
-            <label style="color:white;font-size:small;margin:5px;" >{{:label}}</label><br />            
-        </div>                        
-    </script>      
-
+    </script>             
 
 
 {% endhighlight %}
