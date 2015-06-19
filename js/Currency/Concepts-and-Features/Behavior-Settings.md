@@ -20,22 +20,15 @@ The following steps explain the implementation of **decimalPlaces** in **Currenc
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 555,
-            decimalPlaces: 4
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>                   &lt;input id="currency" type="text" /&gt;                    </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>decimalPlaces</b> value in the <b>CurrencyTextBox </b>control    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 555,<b>            decimalPlaces: 4</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** with **decimalPlaces** is as follows.
@@ -55,22 +48,16 @@ The following steps explain the implementation of **enablePersistence** in **Cur
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control.
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;input id="currency" type="text" /&gt;                    </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enablePersistence </b>property<b> </b>as<b> “True</b>” to the <b>CurrencyTextBox </b>controls. The default value for <b>enablePersistence </b>is “<b>False</b>”    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 33,<b>            enablePersistence: true</b>        });            &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 33,
-            enablePersistence: true
-        });        
-</script>
-
-{% endhighlight %}
 
 The output for **CurrencyTextBox** with **enablePersistence** is as follows. You can change the value of **CurrencyTextBox** and reload the web page.
 
@@ -82,7 +69,7 @@ The output for **CurrencyTextBox** with **enablePersistence** is as follows. You
 
 ## Strict Mode Support
 
-The **CurrencyTextBox** widget allows you to use the strict mode option by setting the **enableStrictMode** property. You can set the **minValue** and **maxValue** to the controls to enable strict mode functionality. When the CurrencyTextBox** **value exceeds the **maxValue**, it restricts the exceeded value and returns the **maxValue**. Likewise when the CurrencyTextBox **value goes below **minValue**, it restricts the new value and returns the **minValue.
+The **CurrencyTextBox** widget allows you to use the strict mode option by setting the **enableStrictMode** property. You can set the **minValue** and **maxValue** to the controls to enable strict mode functionality. When the CurrencyTextBox****value exceeds the **maxValue**, it restricts the exceeded value and returns the **maxValue**. Likewise when the CurrencyTextBox****value goes below **minValue**, it restricts the new value and returns the **minValue**.
 
 ### Configure Strict Mode Support 
 
@@ -91,24 +78,15 @@ The following steps explain the implementation of **enableStrictMode** in **Curr
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 10, //value(10) exceeds maxValue(8), so it will returns 8.
-            minValue: -1,
-            maxValue: 8,
-            enableStrictMode: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>      &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enableStrictMode </b>property<b> </b>as<b> “True</b>” to the <b>CurrencyTextBox </b>controls. The default value for <b>enableStrictMode </b>is “<b>False</b>”    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 10, //value(10) exceeds maxValue(8), so it will returns 8.<b>            minValue: -1,</b><b>            maxValue: 8,</b><b>            enableStrictMode: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** when **enableStrictMode** is **“True”** is as follows**.**
@@ -119,7 +97,7 @@ The output for **CurrencyTextBox** when **enableStrictMode** is **“True”** i
 
 ## Enabled or Disabled
 
-The CurrencyTextBox **control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the CurrencyTextBox** control.
+The CurrencyTextBox****control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the CurrencyTextBox****control.
 
 ### Configure Enabled or Disabled 
 
@@ -128,22 +106,15 @@ The following steps explains the implementation of **enabled** in **CurrencyText
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 3,
-            enabled: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enabled </b>property<b> </b>as<b> “True</b>” to the <b>CurrencyTextBox </b>controls. The default value for <b>enabled</b> is true    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 3,            <b>enabled: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** when **enabled** is **“True”** and when **enabled** is “**False**”**.**
@@ -167,22 +138,15 @@ The following steps explain the implementation of **height** and **width** in **
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 1,
-            width: 100, height: 50
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>height </b>and<b> width </b>property<b> </b>to the <b>CurrencyTextBox </b>controls. The default value of <b>height</b> and <b>width</b> is empty string (“”)    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({<b>            </b>value: 1,<b>            width: 100, height: 50</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** after setting “**height**” and “**width**” is as follows**.**
@@ -202,22 +166,15 @@ The following steps explain the implementation of **incrementStep** in **Currenc
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control.
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value:5,
-           incrementStep: 4
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>      &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>incrementStep </b>property<b> </b>to the <b>CurrencyTextBox </b>controls. The default value of <b>incrementStep </b>is 1    &lt;script type="text/javascript"&gt;                /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value:5,<b>           incrementStep: 4</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** with **incrementStep** is as follows**.**
@@ -241,21 +198,15 @@ The following steps explain the implementation of **name** in **CurrencyTextBox*
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control.
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            name: "currency"            
-        });    
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>name </b>property<b> </b>to the <b>CurrencyTextBox </b>controls    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            <b>name: "currency"            </b>        });         &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** with the **name** property is as follows**.**
@@ -275,21 +226,15 @@ The following steps explain the implementation of **value** in **CurrencyTextBox
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-  <input id="currency" type="text" />
-      
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 33              
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>  &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>value </b>property<b> </b>to the <b>CurrencyTextBox </b>controls    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            <b>value: 33              </b>        });     &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** with the **value** property is as follows**.**
@@ -313,23 +258,15 @@ The following steps explain the implementation of **maxValue** and **minValue** 
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control.
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            maxValue: 4,
-            minValue: -3,
-            value:4
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>maxValue, </b>and<b> minValue </b>properties<b> </b>to the <b>CurrencyTextBox </b>controls    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({<b>            maxValue: 4,</b><b>            minValue: -3,</b>            value:4        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** with basic properties is as follows**.**
@@ -353,22 +290,15 @@ The following steps explain the implementation of **readOnly** in **CurrencyText
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 3,
-            readOnly: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>   &lt;input id="currency" type="text" /&gt;                    </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>readOnly </b>property as “<b>True” </b>to the <b>CurrencyTextBox </b>controls. The default value of <b>readOnly</b> property is false    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 3,<b>            readOnly: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** when **readOnly** is “**True**” is as follows**.** The **CurrencyTextBox** values cannot be edited or changed.
@@ -420,27 +350,20 @@ The following steps explain the implementation of **cssClass** in **CurrencyText
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 3,
-            cssClass: "customCss"
-        });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>cssClass </b>property as custom CSS class name<b> </b>to the <b>CurrencyTextBox </b>controls. The default value of <b>cssClass</b> property is empty string (“”)    &lt;script type="text/javascript"&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 3,            <b>cssClass: "customCss"</b>        });    &lt;/script&gt;</td></tr>
+</table>
 * Customize the CSS properties in custom CSS class.
 
 {% highlight css %}
 
+**[CSS]**
 
     <style>
         .customCss .e-box {
@@ -478,22 +401,16 @@ The following steps explain the implementation of **showRoundedCorner** in **Cur
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** controls. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>showRoundedCorner</b> property as “<b>True”</b> in the <b>CurrencyTextBox </b>controls. The default value for <b>showRoundedCorner</b> property is false in <b>CurrencyTextBox</b>    &lt;script&gt;        /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 3,            <b>showRoundedCorner: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 3,
-            showRoundedCorner: true
-        });
-</script>
-
-{% endhighlight %}
 
 The output for **CurrencyTextBox** when **showRoundedCorner** is “**True**”.
 
@@ -512,22 +429,15 @@ The following steps explain the implementation of **showSpinButton** in **Curren
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({
-            value: 3,
-            showSpinButton: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;input id="currency" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>showSpinButton</b> property as “<b>True”</b> in the <b>CurrencyTextBox </b>controls. The default value for <b>showSpinButton</b> property is true in <b>CurrencyTextBox</b>    &lt;script&gt;               /* Currency Textbox */        $("#currency").ejCurrencyTextbox({            value: 3,            <b>showSpinButton: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** when **showSpinButton** is “**True**”.
@@ -549,21 +459,15 @@ The following steps explain the implementation of **watermarkText** in **Currenc
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="currency" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#currency").ejCurrencyTextbox({           
-            watermarkText: "Currency"
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input id="currency" type="text" /&gt;                    </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>watermarkText</b> in the <b>Textbox</b> controls. The default value for <b>watermarkText</b> property is empty string (“”) in <b>Textboxes</b>    &lt;script&gt;              /* Currency Textbox */        $("#currency").ejCurrencyTextbox({                       <b>watermarkText: "Currency"</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **CurrencyTextBox** after applying **watermarkText** is as follows.

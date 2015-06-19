@@ -23,5 +23,3 @@ The **Split Button** allows you to perform an action by clicking the button and 
 
 * **Easy Customization:** The customization of **Split Button** control to any form is made simple
 
-
-

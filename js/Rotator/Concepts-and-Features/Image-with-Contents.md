@@ -11,116 +11,19 @@ documentation: ug
 
 This feature allows you to add text along with the **image** in **Rotator** control. This is achieved by splitting the content into two panels. In the following code example, image is given in the left panel and text is given in the right panel.
 
-  {% highlight html %}
-
-  
-  	<div class="cols-sample-area">
-	    <ul id="slidercontent">
-	        <li>
-	            <div class="leftPanel">
-	                <img src="../images/rotator/tablet.jpg" />
-	            </div>
-	            <div class="rightPanel blck">
-	                <div class="contentPanel">Tablet </div>
-	                <ul>
-	                    <li>A tablet computer, or simply tablet, is a mobile computer with display, circuitry and battery in a single unit.</li>
-	                    <li>
-	                    Tablets are equipped with sensors, including cameras, microphone, accelerometer and touchscreen,
-	                </ul>
-	            </div>
-	        </li>
-	        <li>
-	            <div class="leftPanel">
-	                <img src="../images/rotator/nature.jpg" />
-	            </div>
-	            <div class="rightPanel">
-	                <div class="contentPanel">Nature </div>
-	                <ul>
-	                    <li>The health of the natural environment is critical to the long-term future of the planet</li>
-	                    <li>Nature, in the broadest sense, is equivalent to the natural, physical, or material world or universe.</li>
-	
-	                </ul>
-	            </div>
-	        </li>
-	        <li>
-	            <div class="leftPanel">
-	                <img src="../images/rotator/card.jpg" />
-	            </div>
-	            <div class="rightPanel credit">
-	                <div class="contentPanel">Credit card </div>
-	                <ul>
-	                    <li>A credit card is a payment card issued to users as a system of payment</li>
-	                    <li>It allows the cardholder to pay for goods and services based on the holder's promise to pay for them</li>
-	
-	                </ul>
-	            </div>
-	        </li>
-	        <li>
-	            <div class="leftPanel">
-	                <img src="../images/rotator/rose.jpg" />
-	            </div>
-	            <div class="rightPanel">
-	                <div class="contentPanel">Rose </div>
-	                <ul>
-	                    <li>A rose is a woody perennial of the genus Rosa, within the family Rosaceae</li>
-	                    <li>Flowers vary in size and shape and are usually large and showy,
-	                    There are over 100 species
-	                    </li>
-	                </ul>
-	            </div>
-	        </li>
-	        <li>
-	            <div class="leftPanel">
-	                <img src="../images/rotator/snowfall.jpg" />
-	            </div>
-	            <div class="rightPanel rightSide">
-	                <div class="contentPanel">Snowfall </div>
-	                <ul>
-	                    <li>Mt. Baker ski area in Washington State has the world record for snowfall at 1,140 inches of snow in the 1998/1999 winter season</li>
-	                    <li>Mt. Baker ski area is located near but not on the real 10,781 Mount Baker</li>
-	                </ul>
-	            </div>
-	        </li>
-	
-	    </ul>
-	
-	</div>
-
-
-  {% endhighlight %}
-
-
-  {% highlight js %}
-
-  
-  	<script type="text/javascript">
-	    $(function () {
-	        // declaration    
-	        $("#slidercontent").ejRotator({
-	            slideWidth: "600px",
-	            displayItemsCount: "1",
-	            slideHeight: "300px",
-	            navigateSteps: "1",
-	            enableResize: true,
-	            pagerPosition: ej.Rotator.PagerPosition.Outside,
-	            orientation: ej.Orientation.Horizontal,
-	            showPager: true,
-	            enabled: true,
-	            showCaption: false,
-	            allowKeyboardNavigation: true,
-	            showPlayButton: true,
-	            animationType: "slide",
-	            enableRTL: true
-	        });
-	    });
-	</script>
-
-
-  {% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]           </b>&lt;div class="cols-sample-area"&gt;    &lt;ul id="slidercontent"&gt;        &lt;li&gt;            &lt;div class="leftPanel"&gt;                &lt;img src="../images/rotator/tablet.jpg" /&gt;            &lt;/div&gt;            &lt;div class="rightPanel blck"&gt;                <div class="contentPanel">Tablet &lt;/div&gt;                &lt;ul&gt;                    <li>A tablet computer, or simply tablet, is a mobile computer with display, circuitry and battery in a single unit.&lt;/li&gt;                    &lt;li&gt;                    Tablets are equipped with sensors, including cameras, microphone, accelerometer and touchscreen,                &lt;/ul&gt;            &lt;/div&gt;        &lt;/li&gt;        &lt;li&gt;            &lt;div class="leftPanel"&gt;                &lt;img src="../images/rotator/nature.jpg" /&gt;            &lt;/div&gt;            &lt;div class="rightPanel"&gt;                <div class="contentPanel">Nature &lt;/div&gt;                &lt;ul&gt;                    <li>The health of the natural environment is critical to the long-term future of the planet</li>                    <li>Nature, in the broadest sense, is equivalent to the natural, physical, or material world or universe.&lt;/li&gt;                &lt;/ul&gt;            &lt;/div&gt;        &lt;/li&gt;        &lt;li&gt;            &lt;div class="leftPanel"&gt;                &lt;img src="../images/rotator/card.jpg" /&gt;            &lt;/div&gt;            &lt;div class="rightPanel credit"&gt;                <div class="contentPanel">Credit card &lt;/div&gt;                &lt;ul&gt;                    <li>A credit card is a payment card issued to users as a system of payment</li>                    <li>It allows the cardholder to pay for goods and services based on the holder's promise to pay for them</li>                &lt;/ul&gt;            &lt;/div&gt;        &lt;/li&gt;        &lt;li&gt;            &lt;div class="leftPanel"&gt;                &lt;img src="../images/rotator/rose.jpg" /&gt;            &lt;/div&gt;            &lt;div class="rightPanel"&gt;                <div class="contentPanel">Rose &lt;/div&gt;                &lt;ul&gt;                    <li>A rose is a woody perennial of the genus Rosa, within the family Rosaceae</li>                    <li>Flowers vary in size and shape and are usually large and showy,                    There are over 100 species                    &lt;/li&gt;                &lt;/ul&gt;            &lt;/div&gt;        &lt;/li&gt;        &lt;li&gt;            &lt;div class="leftPanel"&gt;                &lt;img src="../images/rotator/snowfall.jpg" /&gt;            &lt;/div&gt;            &lt;div class="rightPanel rightSide"&gt;                <div class="contentPanel">Snowfall &lt;/div&gt;                &lt;ul&gt;                    <li>Mt. Baker ski area in Washington State has the world record for snowfall at 1,140 inches of snow in the 1998/1999 winter season</li>                    <li>Mt. Baker ski area is located near but not on the real 10,781 Mount Baker</li>                &lt;/ul&gt;            &lt;/div&gt;        &lt;/li&gt;    &lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration            $("#slidercontent").ejRotator({            slideWidth: "600px",            displayItemsCount: "1",            slideHeight: "300px",            navigateSteps: "1",            enableResize: true,            pagerPosition: ej.Rotator.PagerPosition.Outside,            orientation: ej.Orientation.Horizontal,            showPager: true,            enabled: true,            showCaption: false,            allowKeyboardNavigation: true,            showPlayButton: true,            animationType: "slide",            enableRTL: true,        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 {% highlight css %}
 
+**[CSS]**
 <style type="text/css" class="cssStyles">
     #slidercontent > li {
         background-color: #9ee8d8;
@@ -209,8 +112,9 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 
 
 
-{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img1.png" Caption="Rotator control with image and text"%}
 
+
+{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img1.png" Caption="Figure 12: Rotator control with image and text"%}
 
 ## Display items
 
@@ -220,20 +124,16 @@ This property specifies the number of **Rotator** Items to be displayed. The def
 
 {% highlight js %}
 
+**[JS]**
 <script type="text/javascript">
     $(function () {
        // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "200px", displayItemsCount: 3,
+        $("#slidercontent").ejRotator({ slideWidth: "200px", **displayItemsCount: 3**,
 slideHeight: "165px"
         });
     });
 </script>
-
-{% endhighlight %}
-
-
-{% highlight css %}
-
+**[CSS]**
 <style type="text/css" class="cssStyles">
     #slidercontent > li .image {
         width:200px;
@@ -241,12 +141,12 @@ slideHeight: "165px"
     }
 </style>
 
+
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img2.png" Caption="Rotator control with display item count"%}
-
+{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img2.png" Caption="Figure 13: Rotator control with display item count"%}
 
 ### Navigate steps
 
@@ -261,13 +161,6 @@ This property specifies the number of **Rotator** Items to **navigate** on a sin
         $("#slidercontent").ejRotator({ slideWidth: 200, slideHeight: 165, displayItemsCount: 2, **navigateSteps: 2** });
     });
 </script>
-
-
-{% endhighlight %}
-
-
-{% highlight css %}
-
 **[CSS]**
 <style type="text/css" class="cssStyles">
     #slidercontent > li .image {
@@ -276,11 +169,12 @@ This property specifies the number of **Rotator** Items to **navigate** on a sin
     }
 </style>
 
+
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img3.png" Caption="Rotator control with navigate steps"%}
+{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img3.png" Caption="Figure 14: Rotator control with navigate steps"%}
 
 ### Start index
 
@@ -292,7 +186,7 @@ This property sets the **index** of the slide that is displayed first. The defau
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: 500, startIndex: 4 });
+        $("#slidercontent").ejRotator({ slideWidth: 500, **startIndex: 4** });
     });
 </script>
 
@@ -301,7 +195,7 @@ This property sets the **index** of the slide that is displayed first. The defau
 
 
 
-{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img4.png" Caption="Rotator control with start index	"%}
+{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img4.png" Caption="Figure 15: Rotator control with start index	"%}
 
 ### Frame space
 
@@ -313,7 +207,7 @@ This property sets the space between the **Rotator** Items. The value set to thi
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", slideHeight: "300px", displayItemsCount: 2, frameSpace: "30px" });
+        $("#slidercontent").ejRotator({ slideWidth: "500px", slideHeight: "300px", displayItemsCount: 2, **frameSpace: "30px"** });
     });
 </script>
 
@@ -330,7 +224,7 @@ This property sets the space between the **Rotator** Items. The value set to thi
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", animationType: "slowSlide" });
+        $("#slidercontent").ejRotator({ slideWidth: "500px", **animationType: "slowSlide"** });
     });
 </script>
 
@@ -347,7 +241,7 @@ This property sets the **speed** of slide transition. The default value is ‘**
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", animationSpeed: 3000 });
+        $("#slidercontent").ejRotator({ slideWidth: "500px", **animationSpeed: 3000** });
     });
 </script>
 
@@ -364,7 +258,7 @@ This property sets the **delay** between the **Rotator** Items to move after the
 <script type="text/javascript">
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", delay: 5000 });
+        $("#slidercontent").ejRotator({ slideWidth: "500px", **delay: 5000** });
     });
 </script>
 
@@ -373,7 +267,7 @@ This property sets the **delay** between the **Rotator** Items to move after the
 
 ## Theme
 
-**Rotator** control’s style and appearance are controlled based on **CSS** **classes**. In order to apply styles to the **Rotator** control, you can refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. When the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.widgets.all.min.css** is the combination of these both. 
+**Rotator** control’s style and appearance are controlled based on **CSS****classes**. In order to apply styles to the **Rotator** control, you can refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. When the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.widgets.all.min.css** is the combination of these both. 
 
 By default, there are 12 themes support available for **Rotator** control as follows,
 
@@ -403,7 +297,7 @@ By default, there are 12 themes support available for **Rotator** control as fol
 
 ### Css class
 
-This property is used to set **root** **class** for **Rotator** control theme. The value set to this property is **string** type.
+This property is used to set **root****class** for **Rotator** control theme. The value set to this property is **string** type.
 
 {% highlight js %}
 
@@ -417,8 +311,6 @@ This property is used to set **root** **class** for **Rotator** control theme. T
 
 
 {% endhighlight %}
-
-
 
 Add the following code in your **Css**.
 
@@ -436,5 +328,7 @@ Add the following code in your **Css**.
 
 
 
-{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img5.png" Caption="Rotator control with cssClass"%}
+
+
+{% include image.html url="/js/Rotator/Concepts-and-Features/Image-with-Contents_images/Image-with-Contents_img5.png" Caption="Figure 16: Rotator control with cssClass"%}
 

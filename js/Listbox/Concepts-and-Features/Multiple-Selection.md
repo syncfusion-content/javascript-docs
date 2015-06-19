@@ -17,45 +17,19 @@ documentation: ug
 
 The following steps explain you the configuration of the **allowMultiSelection** for a **ListBox**.
 
-* In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
 
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Configure allowMultiSelection option for ListBox control as follows
-<script type="text/javascript">
-    $(function () {
-        // JSON data declaration
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        //Render ListBox by mapping fields with JSON data
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, allowMultiSelection: true
-        });
-    });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Configure allowMultiSelection option for ListBox control as follows&lt;script type="text/javascript"&gt;    $(function () {        // JSON data declaration        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        //Render ListBox by mapping fields with JSON data        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, allowMultiSelection: true        });    });&lt;/script&gt;</td></tr>
+</table>
 Output for **ListBox** control that provides multiple selection is as follows.
 
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Multiple-Selection_images/Multiple-Selection_img1.png" Caption="Figure 14: ListBox with Multiple Selection"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Multiple-Selection_images/Multiple-Selection_img1.png" Caption="ListBox with Multiple Selection"%}
 
 **Multiple selection through index** 
 
@@ -63,47 +37,19 @@ You can select the list of items from the **ListBox** using **selectedItemlist**
 
 The following steps explains you the configuration of **selectedItemlist** property in **ListBox**
 
-* In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget
+In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Initialize the control in JavaScript
-
-<script type="text/javascript">
-    $(function () {
-        // JSON data declaration
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        //Render ListBox by mapping fields with JSON data
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, selectedItemlist: [0, 3], allowMultiSelection: true
-        });
-    });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]  </b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    $(function () {        // JSON data declaration        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        //Render ListBox by mapping fields with JSON data        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, selectedItemlist: [0, 3], allowMultiSelection: true        });    });&lt;/script&gt;</td></tr>
+</table>
 Output of the above steps.
 
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Multiple-Selection_images/Multiple-Selection_img2.png" Caption="Figure 15: ListBox with selectedItemlist property"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Multiple-Selection_images/Multiple-Selection_img2.png" Caption="ListBox with selectedItemlist property"%}
 
 **Checkbox Support**
 
@@ -115,47 +61,19 @@ You can enable the checkbox in the **ListBox** with this property. The data type
 
 The following steps explains you the configuration of checkbox options in **ListBox**.
 
-* In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Initialize the control in JavaScript
-
-<script type="text/javascript">
-    $(function () {
-        // JSON data declaration
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        //Render ListBox by mapping fields with JSON data
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, showCheckbox: true
-        });
-    });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    $(function () {        // JSON data declaration        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        //Render ListBox by mapping fields with JSON data        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, showCheckbox: true        });    });&lt;/script&gt;</td></tr>
+</table>
 Output of the above steps.
 
-
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Multiple-Selection_images/Multiple-Selection_img3.png" Caption="Figure 16: ListBox with checkbox "%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Multiple-Selection_images/Multiple-Selection_img3.png" Caption="ListBox with checkbox "%}
 
 **Check All** 
 
@@ -163,49 +81,19 @@ You can check all the check box in the list by using this property. The data typ
 
 The following steps explains you the configuration of checkbox options in **ListBox.**
 
-* In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Initialize the control in JavaScript
-
-<script type="text/javascript">
-    $(function () {
-        // JSON data declaration
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        //Render ListBox by mapping fields with JSON data
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, showCheckbox: true,
-            checkAll: true
-        });
-    });
-</script>
-
-{% endhighlight %}
-
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    $(function () {        // JSON data declaration        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        //Render ListBox by mapping fields with JSON data        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, showCheckbox: true,            checkAll: true        });    });&lt;/script&gt;</td></tr>
+</table>
 Output of the above steps.
 
-
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Multiple-Selection_images/Multiple-Selection_img4.png" Caption="Figure 17: ListBox with checkbox property"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Multiple-Selection_images/Multiple-Selection_img4.png" Caption="ListBox with checkbox property"%}
 
 **Uncheck All**
 

@@ -17,23 +17,17 @@ The **showPreview** property is Boolean type and its default value is true.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
-{% highlight html %}
 
 
-     <input type="text" id="colorPicker" />    
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
+<tr>
+<td>
+<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({ value: "#278787", showPreview: true });      });&lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight js %}
-
- 
-<script>
-    jQuery(function ($) {
-        $("#colorPicker").ejColorPicker({ value: "#278787", showPreview: true });
-      });
-</script>
-
-{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
@@ -47,23 +41,16 @@ The **showRecentColors** property is Boolean type and its default value is false
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
-{% highlight html %}
 
 
-     <input type="text" id="colorPicker" />    
-
-{% endhighlight %}
-
-{% highlight js %}
-
- 
-<script>
-    jQuery(function ($) {
-        $("#colorPicker").ejColorPicker({ value: "#278787", showRecentColors: true });
-      });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
+<tr>
+<td>
+<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({ value: "#278787", showRecentColors: true });      });&lt;/script&gt;</td></tr>
+</table>
 
 
 The following screenshot displays the output of the above code example.
@@ -78,23 +65,16 @@ The **enableOpacity** property is Boolean type and its default value is true.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
-{% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
-
-{% endhighlight %}
-
-{% highlight js %}
-
- 
-<script>
-    jQuery(function ($) {
-        $("#colorPicker").ejColorPicker({ value: "#278787", enableOpacity: false });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
+<tr>
+<td>
+<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({ value: "#278787", enableOpacity: false });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 The following screenshot displays the output of the above code example.
@@ -109,23 +89,16 @@ The **columns** property is Number type and its default value is 10.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
-{% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
-
-{% endhighlight %}
-
-{% highlight js %}
-
- 
-<script>
-    jQuery(function ($) {
-        $("#colorPicker").ejColorPicker({ value: "#278787", columns: 9 });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
+<tr>
+<td>
+<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({ value: "#278787", columns: 9 });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 The following screenshot displays the output of the above code example.

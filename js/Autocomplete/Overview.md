@@ -37,5 +37,3 @@ The **AutoComplete** control is a textbox control that provides a list of sugges
 
 * **Themes**: The **AutoComplete** control features 12 built-in themes (six flat and six with gradient effects), and also supports custom skin options for user defined themes.
 
-
-

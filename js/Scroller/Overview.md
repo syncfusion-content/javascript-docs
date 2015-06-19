@@ -13,19 +13,19 @@ The **Essential JavaScript Scroller** control has a sliding document whose posit
 
 **Key Features**
 
-* **Height and Width** - Set the height and width of the scroll panel.
+* **Height and Width**—Set the height and width of the scroll panel.
 
-* **Button Size** - Customize the width and height of the buttons (UP, DOWN, RIGHT and LEFT).
+* **Button Size**—Customize the width and height of the buttons (UP, DOWN, RIGHT and LEFT).
 
-* **Scroller Size** - Customize the scrollbar width and height.
+* **Scroller Size**—Customize the scrollbar width and height.
 
-* **Step Increment** - Set the number of pixels to be moved on pressing the ARROW key.
+* **Step Increment**—Set the number of pixels to be moved on pressing the ARROW key.
 
-* **RTL Support** - Sets the alignment of the horizontal Scroller to the right, the reading order to right-to-left and the layout of the control to flow from right to left.
+* **RTL Support**—Sets the alignment of the horizontal Scroller to the right, the reading order to right-to-left and the layout of the control to flow from right to left.
 
-* **Theme** - Essential JavaScript controls consists of 12 built in themes ( 6 – flat and 6 – gradient effects), and also supports custom skins to set user-defined themes.
+* **Theme**—Essential JavaScript controls consists of 12 built in themes ( 6 – flat and 6 – gradient effects), and also supports custom skins to set user-defined themes.
 
 ## Control Structure
 
-{% include image.html url="/js/Scroller/Overview_images/Overview_img1.png" Caption="Essential JavaScript Scroller"%}
+{% include image.html url="/js/Scroller/Overview_images/Overview_img1.png" Caption="Figure 1: Essential JavaScript Scroller"%}
 

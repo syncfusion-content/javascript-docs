@@ -19,50 +19,16 @@ The following steps explain the implementation of **AutoResize** option in the *
 
 * In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer and inner splitter control. 
 
-{% highlight html %}
 
-    <div id="outersplitter">
-            <div>
-                <div style="padding: 0px 15px;">
-                    <h3 class="h3">ASP.NET MVC </h3>
-                </div>
-            </div>
-            <div id="innersplitter">
-                <div>
-                    <div style="padding: 0px 15px;">
-                        <h3 class="h3">Tools </h3>
-                        Essential Tools is an collection of user interface components used to create interactive
-                                    ASP.NET MVC applications.
-                    </div>
-                </div>
-                <div>
-                    <div style="padding: 0px 15px;">
-                        <h3 class="h3">Grid </h3>
-                        Essential Mvc Grid offers full featured a Grid control with extensive support for
-                                    Grouping and the display of hierarchical data.
-                    </div>
-                </div>
-            </div>
-        </div>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#outersplitter").ejSplitter({
-            height: 280, width: "100%",
-            orientation: ej.Orientation.Vertical,
-            properties: [{ paneSize: 60 }],
-            enableAutoResize: true,
-        });
-
-        $("#innersplitter").ejSplitter({           
-            enableAutoResize: true           
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;div id="outersplitter"&gt;            &lt;div&gt;                &lt;div style="padding: 0px 15px;"&gt;                    <h3 class="h3">ASP.NET MVC &lt;/h3&gt;                &lt;/div&gt;            &lt;/div&gt;            &lt;div id="innersplitter"&gt;                &lt;div&gt;                    &lt;div style="padding: 0px 15px;"&gt;                        <h3 class="h3">Tools &lt;/h3&gt;                        Essential Tools is an collection of user interface components used to create interactive                                    ASP.NET MVC applications.                    &lt;/div&gt;                &lt;/div&gt;                &lt;div&gt;                    &lt;div style="padding: 0px 15px;"&gt;                        <h3 class="h3">Grid &lt;/h3&gt;                        Essential Mvc Grid offers full featured a Grid control with extensive support for                                    Grouping and the display of hierarchical data.                    &lt;/div&gt;                &lt;/div&gt;            &lt;/div&gt;        &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Set the <b>width</b> value as <b>100%</b> and <b>enableAutoResize</b> as “<b>True</b>” in <b>Splitter</b> function.    &lt;script type="text/javascript"&gt;        $("#outersplitter").ejSplitter({            height: 280, <b>width: "100%",</b>            orientation: ej.Orientation.Vertical,            properties: [{ paneSize: 60 }],            <b>enableAutoResize: true,</b>        });        $("#innersplitter").ejSplitter({                       <b>enableAutoResize: true           </b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **Splitter** when **enableAutoResize** is “**True**”.
@@ -85,28 +51,17 @@ The following steps explain the implementation of **enableAnimation** option in 
 
 * In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering **Splitter** control. 
 
-{% highlight html %}
-    <div id="splitter">
-            <div>
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
-            </div>
-            <div>
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-            </div>
-        </div>
-{% endhighlight %}
 
-{% highlight js %}
 
-<script type="text/javascript">
-            $("#splitter").ejSplitter({
-            height: 200, width: 200,
-            enableAnimation: true,
-            animationSpeed: 300           
-        });   
-</script>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;div id="splitter"&gt;            &lt;div&gt;                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>            &lt;/div&gt;            &lt;div&gt;                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>            &lt;/div&gt;        &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Set the <b>enableAnimation </b>property as “<b>True</b>” and set the <b>animationSpeed</b> property with some milliseconds value in the <b>ejSplitter</b> function. The default values for <b>enableAnimation</b> is “<b>True”</b> and <b>animationSpeed</b> is <b>300</b>.    &lt;script type="text/javascript"&gt;        $("#splitter").ejSplitter({            height: 200, width: 200,<b>            enableAnimation: true,</b><b>            animationSpeed: 300           </b>        });       &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
 
 The output for **Splitter** when **enableAnimation** is “**True**”. Expanding or collapsing the outer pane in the **Splitter** produces the animation effect with the animation speed.
 
@@ -146,29 +101,16 @@ The following steps explain the implementation of **Splitter** properties.
 
 * In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** widget.
 
-{% highlight html %}
 
-        <div id="splitter">
-            <div>
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
-            </div>
-            <div>
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-            </div>
-        </div> 
 
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-    $("#splitter").ejSplitter({
-            height:200, width:200,
-            properties: [{}, { collapsible: true, minSize: 10, maxSize: 40, paneSize: 80, resizable: true }]
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;div id="splitter"&gt;            &lt;div&gt;                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>            &lt;/div&gt;            &lt;div&gt;                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>            &lt;/div&gt;        &lt;/div&gt; </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set properties to the pane in the <b>ejSplitter</b> function.  The default values of the properties are <b>{ collapsible : true, minSize: true, maxSize: null, paneSize: 0, resizable: true }</b>.    &lt;script type="text/javascript"&gt;        $("#splitter").ejSplitter({<b>            height:200, width:200,</b><b>            properties: [{}, { collapsible: true, minSize: 10, maxSize: 40, paneSize: 80, resizable: true }]</b><b>        });</b>    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **Splitter** after adding the properties.
@@ -227,29 +169,16 @@ The CSS properties can be customized by using **cssClass** in the **Splitter** w
 
 * In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering **Splitter** control. 
 
-{% highlight html %}
 
-        <div id="splitter">
-            <div>
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
-            </div>
-            <div>
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-            </div>
-        </div> 
 
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#splitter").ejSplitter({
-            height: 200, width: 200,
-            cssClass: "customCSS"
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;div id="splitter"&gt;            &lt;div&gt;                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>            &lt;/div&gt;            &lt;div&gt;                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>            &lt;/div&gt;        &lt;/div&gt; </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>cssClass </b>property in the <b>ejSplitter</b> function. The default value for the <b>cssClass</b> property is empty string (“ ”).    &lt;script type="text/javascript"&gt;        $("#splitter").ejSplitter({            height: 200, width: 200,            <b>cssClass: "customCSS"</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 * Customize the **CSS** class by setting **CSS** properties. 
@@ -258,6 +187,7 @@ The CSS properties can be customized by using **cssClass** in the **Splitter** w
 
 {% highlight css %}
 
+**[CSS]**
 
     <style>
         .customCSS {            

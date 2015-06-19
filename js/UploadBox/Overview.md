@@ -23,5 +23,3 @@ The **Essential JavaScript Uploadbox** control supports uploading files into the
 
 * Multiple files: Supports uploading multiple files.
 
-
-

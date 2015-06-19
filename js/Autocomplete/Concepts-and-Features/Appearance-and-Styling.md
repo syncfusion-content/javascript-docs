@@ -17,10 +17,13 @@ documentation: ug
 
 The following steps explain the **dimensional** properties of an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+****
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -28,25 +31,33 @@ The following steps explain the **dimensional** properties of an **AutoComplete*
 
 
 
-2. Configure dimensions for **AutoComplete** control as follows.
+* Configure dimensions for **AutoComplete** control as follows.
+
+****
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
     $('#autocomplete').ejAutocomplete({
-                height: "50px",
-                width: "250px",
+**height: "50px",**
+                **width: "250px",**
                 multiSelectMode: ej.MultiSelectMode.Delimiter,
                 dataSource: carList            });	 
-</script>
+
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for **AutoComplete** textbox with customized dimensions.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="AutoComplete with Customized dimensions"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption=""%}
+
+_Figure 23: AutoComplete with Customized dimensions_
 
 ## Rounded corner
 
@@ -56,10 +67,13 @@ By enabling the **showRoundedCorner** property, you can customize the shape of t
 
 The following steps explain enabling the **showRoundedCorner** property for an **AutoComplete**.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+****
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -67,26 +81,34 @@ The following steps explain enabling the **showRoundedCorner** property for an *
 
 
 
-2. Enable **showRoundedCorner** for **AutoComplete** control as follows.
+* Enable **showRoundedCorner** for **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-                showRoundedCorner:true
+**showRoundedCorner**: **true**
             });
-</script>
+
 
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for **AutoComplete** when **showRoundedCorner** is set to “**True**”.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="AutoComplete with Rounded corners"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption=""%}
+
+_Figure 24: AutoComplete with Rounded corners_
 
 ## Watermark text
 
@@ -96,10 +118,13 @@ The following image is the output for **AutoComplete** when **showRoundedCorner*
 
 The following steps explain you how to configure **watermarkText** property for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -107,26 +132,34 @@ The following steps explain you how to configure **watermarkText** property for 
 
 
 
-2. Enable **watermark** text for **AutoComplete** control as follows.****
+* Enable **watermark** text for **AutoComplete** control as follows.
+
+****
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
 $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-                watermarkText:"Select an item"
+**watermarkText:"Select an item"**
             });
-</script>
+
 
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for **AutoComplete** when **watermarkText** is defined.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="AutoComplete loaded with watermark text"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption=""%}
+
+_Figure 25: AutoComplete loaded with watermark text_
 
 ## Adjusting Suggestion list size
 
@@ -136,10 +169,13 @@ The following image is the output for **AutoComplete** when **watermarkText** is
 
 The following steps help you set height and width of the popup panel of an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -147,28 +183,36 @@ The following steps help you set height and width of the popup panel of an **Aut
 
 
 
-2. Configure dimensions for popup panel in **AutoComplete** control as follows.
+* Configure dimensions for popup panel in **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 filterType: "startswith",
-                popupHeight:"80px",
-                popupWidth:"350px"
+**popupHeight:"80px",**
+                **popupWidth:"350px"**
             });
-</script>
+
 
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for **AutoComplete,** after configuring the height and width of the popup panel.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="AutoComplete PopUp panel with configured dimensions"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption=""%}
+
+_Figure 26: AutoComplete PopUp panel with configured dimensions_
 
 ## PopUp Time Delay
 
@@ -178,10 +222,13 @@ The following image is the output for **AutoComplete,** after configuring the he
 
 The following steps are used to set the time delay to load the popup panel of an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -189,18 +236,20 @@ The following steps are used to set the time delay to load the popup panel of an
 
 
 
-2. Configure the delay time for popup panel in **AutoComplete** control as follows.
+* Configure the delay time for popup panel in **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 filterType: "startswith",
-                delaySuggestionTimeout:1000
+**delaySuggestionTimeout:1000**
             });
-</script>
+
 
 
 {% endhighlight %}
@@ -247,10 +296,13 @@ By default, there are 12 theme supports available for **AutoComplete** control n
 
 The following steps allow you to configure **CSS****class** for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -258,10 +310,13 @@ The following steps allow you to configure **CSS****class** for an **AutoComplet
 
 
 
-2. Define **CSS****class** to customize the **AutoComplete** widget.
+* Define **CSS****class** to customize the **AutoComplete** widget.
+
+****
 
 {% highlight css %}
 
+**[CSS]**
 <style type="text/css" class="cssStyles">
         /* Customize the PopUp panel */
         .customCss
@@ -285,24 +340,32 @@ The following steps allow you to configure **CSS****class** for an **AutoComplet
 
 
 
-3. Add the **cssClass** property to **AutoComplete** textbox.****
+* Add the **cssClass** property to **AutoComplete** textbox.
+
+****
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
           $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 cssClass:"customCss"
             });
-</script>
+
 
 
 {% endhighlight %}
 
 
 
+
+
+
+
 The following image is of an **AutoComplete** textbox configured based on CSS class.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="AutoComplete widget configured with CSS class"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption=""%}
+
+_Figure 27: AutoComplete widget configured with CSS class_
 

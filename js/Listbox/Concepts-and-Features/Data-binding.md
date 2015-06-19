@@ -15,7 +15,7 @@ The **ListBox** is populated with the node information taken from a data source.
 
 The following sub-properties provides you a way to bind either the local or remote data to the **ListBox** control.
 
-_Table_ _1__: Property Table_ _for JavaScript ListBox_
+_Property Table for JavaScript ListBox_
 
 <table>
 <tr>
@@ -79,7 +79,6 @@ It specifies the category of the tag</td></tr>
 tableName</td><td>
 It defines the table name for tag value or display text while render with remote data</td></tr>
 </table>
-
 **Local data**
 
 **ListBox** provides data binding support. Thus, you can bind the data from **JSON** Data source. To achieve this, map the corresponding fields with their column names.
@@ -88,48 +87,21 @@ And also, provide support to add and customize the list item by using appropriat
 
 The following steps explains you the details of data binding with **ListBox**. 
 
-* In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Initialize the control in JavaScript
-<script type="text/javascript">
-    jQuery(function ($) {
-        // JSON data declaration
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        //Render ListBox by mapping fields with JSON data
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }
-        });
-    });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    jQuery(function ($) {        // JSON data declaration        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        //Render ListBox by mapping fields with JSON data        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }        });    });&lt;/script&gt;</td></tr>
+</table>
 Output of the above steps
 
+{% include image.html url="/js/ListBox/Concepts-and-Features/Data-binding_images/Data-binding_img1.png" Caption=""%}
 
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Data-binding_images/Data-binding_img1.png" Caption="Figure 7: ListBox with local Data binding"%}
-
-
+_ListBox with local Data binding_
 
 **Remote data** 
 
@@ -137,47 +109,21 @@ You can bind the data for the **ListBox** from remote that can fetch the data fr
 
 The following steps explains you the details of data binding from remote. 
 
-* In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget
+In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    $(function () {        // DataManager creation        var dataManger = ej.DataManager({            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"        });        // Query creation        var query = ej.Query()               .from("Customers").take(6);        $('#listboxSample').ejListBox({            dataSource: dataManger,            fields: { text: "CustomerID" },            query: query,        });    });&lt;/script&gt;</td></tr>
+</table>
+ Output of the above steps.
 
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
+{% include image.html url="/js/ListBox/Concepts-and-Features/Data-binding_images/Data-binding_img2.png" Caption=""%}
 
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Initialize the control in JavaScript
-<script type="text/javascript">
-    $(function () {
-        // DataManager creation
-        var dataManger = ej.DataManager({
-            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-        });
-        // Query creation
-        var query = ej.Query()
-               .from("Customers").take(6);
-
-        $('#listboxSample').ejListBox({
-            dataSource: dataManger,
-            fields: { text: "CustomerID" },
-            query: query,
-        });
-    });
-</script>
-
-{% endhighlight %}
-
-
-Output of the above steps.
-
-
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Data-binding_images/Data-binding_img2.png" Caption="Figure 8: ListBox with remote Data binding"%}
+_ListBox with remote Data binding_
 
 **Angular binding** 
 
@@ -197,15 +143,17 @@ To know more detail about the Angular binding, you can refer the following link 
 
 The following example depicts the way to bind data to the **ListBox** widget through angular support.
 
-> {% include image.html url="/js/Listbox/Concepts-and-Features/Data-binding_images/Data-binding_img3.png" Caption=""%} _**Note: You can include the “ej.widget.angular.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself as like data role behaviour.**_
+
+
+> _**Note: You can include the “ej.widget.angular.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself as like data role behaviour.**_
 
 
 
-* In the **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
-
-
+In the HTML page, add a &lt;ul&gt; element to configure ListBox widget.
 
 {% highlight html %}
+
+**[HTML]** 
 
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="ListCtrl">
@@ -238,16 +186,10 @@ The following example depicts the way to bind data to the **ListBox** widget thr
             </tr>
         </table>
     </div>
-</body>
-</html>
 
-{% endhighlight %}
 
-{% highlight js %}
-
-   <script type="text/javascript">
-        
-**//** Initialize the control and bind the data in **JavaScript**
+    <script type="text/javascript">
+// Initialize the control and bind the data in JavaScript
         var list = [
                     { empid: "cr1", text: "Dodge Avenger" },
                     { empid: "cr2", text: "Chrysler 200" },
@@ -269,28 +211,25 @@ The following example depicts the way to bind data to the **ListBox** widget thr
            });
     </script>
 
-{% endhighlight %}
-
-{% highlight css %}
-   
-   <style>
+    <style>
         #binding {
             width: 100px;
             padding-bottom: 216px;
             padding-left: 100px;
         }
     </style>
-
+</body>
+</html>
 
 
 
 {% endhighlight %}
 
+Output of the above steps.
 
+{% include image.html url="/js/ListBox/Concepts-and-Features/Data-binding_images/Data-binding_img3.png" Caption=""%}
 
-Output of the above steps
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Data-binding_images/Data-binding_img4.png" Caption="Figure 9: ListBox with angular two-way Data binding"%}
+_ListBox with angular two-way Data binding_
 
 **Knockout binding**
 
@@ -298,9 +237,9 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
 
 Two types of knockout binding is supported,
 
-* One-way binding
+* One way binding
 
-* Two-way binding
+* Two way binding 
 
 One way binding refers to the process of applying observable values to all the available properties of the **ListBox** widget, but the changes made in the widget does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the ListBox widget.
 
@@ -313,11 +252,11 @@ For more information about the knockout binding, refer the following online docu
 The following example depicts the way to bind data to the **ListBox** widget through the knockout support that enables and populates data to a **ListBox** widget based on the value set to the other **ListBox** widget.
 
 
-> {% include image.html url="/js/Listbox/Concepts-and-Features/Data-binding_images/Data-binding_img5.png" Caption=""%}_**Note: You caninclude the “ej.widget.knockout.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself as like data role behaviour.**_
 
-* In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
+> _**Note: You can include the “ej.widget. knockout.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself as like data role behaviour.**_
 
 
+In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
 {% highlight html %}
 
@@ -351,15 +290,8 @@ The following example depicts the way to bind data to the **ListBox** widget thr
             </tr>
         </table>
     </div>
-</body>
-</html>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-
-   <script type="text/javascript">
+    <script type="text/javascript">
         $(function () {
             var carList = [
                 { empid: "cr1", text: "Accordion" },
@@ -382,13 +314,7 @@ The following example depicts the way to bind data to the **ListBox** widget thr
             ko.applyBindings(viewModel);
         });
     </script>
-  
-{% endhighlight %}
-
-{% highlight CSS %}
- 
-  
-   <style type="text/css">
+    <style type="text/css">
         .ejinputtext {
             background-color: #fff;
             border: 1px solid #bbbcbb;
@@ -403,16 +329,16 @@ The following example depicts the way to bind data to the **ListBox** widget thr
             padding-left: 100px;
         }
     </style>
+</body>
+</html>
 
 
 
 {% endhighlight %}
 
-
-
 Output of the above steps.
 
+{% include image.html url="/js/ListBox/Concepts-and-Features/Data-binding_images/Data-binding_img4.png" Caption=""%}
 
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Data-binding_images/Data-binding_img6.png" Caption="Figure 10: ListBox with KO Data binding"%}
+_ListBox with KO Data binding_
 

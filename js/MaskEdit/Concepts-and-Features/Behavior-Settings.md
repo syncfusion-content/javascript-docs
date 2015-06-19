@@ -17,27 +17,14 @@ The following steps explain the **State Maintenance** in the **MaskEdit** contro
 
  In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** widget. 
 
-{% highlight html %}
-
-<input id="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            enablePersistence: true,
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to enable the enablePersistence property of the MaskEdit control.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            <b>enablePersistence: true,</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 Output of MaskEdit with **enablePersistence** is as follows. 
@@ -58,27 +45,14 @@ The following steps explain the **enabled** property in the **MaskEdit** control
 
 
 
-{% highlight html %}
-
-<input id="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            enabled: false,
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to enable the enabled property of the MaskEdit control.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            <b>enabled: false,</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 Output when **enabled** is **“false”** and when **enabled** is “**true**”**.**
@@ -96,28 +70,15 @@ The following steps explain the **width** and **height** property in the **MaskE
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** widget. 
 
 
-{% highlight html %}
 
-<input id="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            width: 150,
-            height: 50
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to customize the MaskEdit control with height and width property.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            <b>width: 150,</b><b>            height: 50</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 
@@ -137,27 +98,15 @@ The following steps explain the **value** property in the **MaskEdit** control.
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** widget. 
 
 
-{% highlight html %}
 
-<input id="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            value: "1234567890",
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to customize the MaskEdit control with value property.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            <b>value: "1234567890",</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 
@@ -177,30 +126,15 @@ The following steps explain the **readOnly** property in the **MaskEdit** contro
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** widget. 
 
 
-{% highlight html %}
 
-<input i="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            value: "123456",
-            readOnly: true
-        });
-    });
-</script>
-
-{% endhighlight %}
-
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;nput i="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to customize the MaskEdit control with readOnly property.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            value: "123456",            <b>readOnly: true</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 ****Output of **MaskEdit** when r**eadOnly** is “**true**” is as follows**.** MaskEdit values cannot be edited or changed.
 
 
@@ -216,28 +150,15 @@ The following steps explain the **showError** property in the **MaskEdit** contr
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** widget. 
 
 
-{% highlight html %}
 
-<input id="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            value: "123456",
-            showError: true
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to enable the showError property of the MaskEdit control.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            value: "123456",            <b>showError: true</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 

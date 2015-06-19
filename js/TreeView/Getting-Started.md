@@ -19,11 +19,13 @@ The **Essential JavaScript TreeView** property represents hierarchical data in a
 
 In the above screenshot, you can select the mailbox items. You can write the functions of the corresponding selected item.You can also Drag and Drop the item from one group to another with the help of **Drag and Drop** feature. You can use **splitter** control to split the mail options and its corresponding functions.
 
-**Create the Splitter** 
+### Create the Splitter 
 
 The **Essential JavaScript****Splitter** property is a **layout** control that allows you to divide a web page into distinct areas by using resizable panes. Many **Splitter** panes are created and placed inside the **Splitter** control where the split bars are inserted automatically in between the adjacent panes. For more information about the **Splitter** refer the following link: [http://help.syncfusion.com/ug/js/default.htm#!Documents/gettingstarted30.htm](http://help.syncfusion.com/ug/js/default.htm)
 
-1. Create an HTML file and add the following template in your application.
+* Create an **HTML** file and add the following template in your application.
+
+
 
 {% highlight html %}
 
@@ -32,7 +34,7 @@ The **Essential JavaScript****Splitter** property is a **layout** control that a
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- style sheet for default theme(flat azure) -->
-<link href=" http://cdn.syncfusion.com/js/web/flat-azure/ej.web.all-latest.min.css"rel="stylesheet"/>
+<linkhref=" http://cdn.syncfusion.com/js/web/flat-azure/ej.web.all-latest.min.css"rel="stylesheet"/>
     <!--scripts-->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
@@ -51,7 +53,9 @@ The **Essential JavaScript****Splitter** property is a **layout** control that a
 
 
 
-2. Add &lt;div&gt; element to render Splitter.
+* Add &lt;div&gt; element to render **Splitter**.
+
+
 
 {% highlight html %}
 
@@ -71,7 +75,9 @@ The **Essential JavaScript****Splitter** property is a **layout** control that a
 
 
 
-3. Initialize Splitter element in &lt;script&gt; tag.
+* Initialize **Splitter** element in **&lt;script&gt;** tag.
+
+
 
 {% highlight js %}
 
@@ -101,15 +107,19 @@ $(function () {
 
 
 
-4. Execute the code example to render the following output.
+* Execute the code example to render the following output.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img2.png" Caption="Splitter"%}
 
-**Configure TreeView inside the Splitter widget** 
+
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: Splitter"%}
+
+### Configure TreeView inside the Splitter widget 
 
 **Essential JavaScript****TreeView** widget renders built-in features like keyboard navigation, month navigation, animations and flexible API’s. **Essential JavaScript****TreeView** can be generated from UL LI elements, JSON data source or using OData service.
 
 You can style the right pane and render **TreeView** by adding **&lt;div&gt;** element in the splitter **&lt;div&gt;** elements for the Mailbox application.
+
+
 
 {% highlight html %}
 
@@ -139,6 +149,8 @@ You can style the right pane and render **TreeView** by adding **&lt;div&gt;** e
 
 You can style the **Splitter** content using styles given in the following code example.
 
+
+
 {% highlight css %}
 
 
@@ -165,6 +177,8 @@ You can style the **Splitter** content using styles given in the following code 
 
 Add the **TreeView** initialization script inside the script section.
 
+
+
 {% highlight js %}
 
 
@@ -183,10 +197,11 @@ $(function () {
                 properties: [{}, { paneSize: 300 }]
                 });
 // simple TreeView creation
-$("#mailboxTree").ejTreeView();
+**$("#mailboxTree").ejTreeView();**
 });
 
 </script>
+
 
 
 {% endhighlight %}
@@ -195,11 +210,15 @@ $("#mailboxTree").ejTreeView();
 
 Execute the code example to render the following output.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img3.png" Caption="Splitter with TreeView"%}
 
-**Configure Data Source**
+
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 3: Splitter with TreeView"%}
+
+### Configure Data Source
 
 Create a **JSON** Data Source for **TreeView** and initialize as follows.
+
+
 
 {% highlight js %}
 
@@ -250,19 +269,29 @@ $("#mailboxTree").ejTreeView(
 
 Execute this code example to render **TreeView** with **JSON** Data Source.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img4.png" Caption="TreeView"%}
 
-**Configure TreeView with Sprite Icons**
+
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 4: TreeView"%}
+
+### Configure TreeView with Sprite Icons
 
 You can design **TreeView to** look like the Mail options application. Create the Sprite **CSS** styles for using mail Icons from the following image source. The source image is taken from the following installed location. 
 
 _**[Installed Drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\XX.X.X.XX\JavaScript\samples\web\images\mail\ mailicons.png**_
 
-> _**Note: XX.X.X.XX represents the Essential Studio version number that you are using currently.**_
+> {% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img5.jpeg" Caption=""%}_**Note: XX.X.X.XX represents the Essential Studio version number that you are using currently.**_
+
+
 
 Copy the “**mailicons.png**” from the above location and paste it in the folder location of the **HTML** sample page. 
 
+
+
+
+
 You can show the sprite image icons in **TreeView** loaded inside the **&lt;styles&gt;** tag, using the styles shown in the following code example.
+
+
 
 {% highlight css %}
 
@@ -337,6 +366,8 @@ You can show the sprite image icons in **TreeView** loaded inside the **&lt;styl
 
 Create a **JSON** Data Source for **TreeView** and initialize as follows.
 
+
+
 {% highlight js %}
 
 
@@ -382,11 +413,15 @@ $("#mailboxTree").ejTreeView(
 
 Execute the code example to render **TreeView** with Mail Icons.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img5.png" Caption="TreeView with mail icons"%}
 
-**Set the Node Editing Option**
+
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img6.png" Caption="Figure 6: TreeView with mail icons"%}
+
+### Set the Node Editing Option 	
 
 To rename the mail folders, set **allowEdit** property to **“True”**. You can also use F2 key or double-click the node to rename the node.
+
+
 
 {% highlight js %}
 
@@ -418,7 +453,7 @@ $(function () {
                     fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: outlookicons, expanded: "expanded" },
 
                     // Setting TreeNode Editing option to true
-               allowEditing : true
+**allowEditing**: true
 
                 });
 
@@ -432,17 +467,21 @@ $(function () {
 
 
 
-> _**Note: Refer to the previous example for datasource.**_
+> {% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img7.jpeg" Caption=""%}_**Note : Refer to the previous example for datasource.**_
+
+
 
 Execute this code example to render node editing.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img6.png" Caption="TreeView with Node Editing"%}
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img8.png" Caption="Figure 7: TreeView with Node Editing"%}
 
-**Set the Drag and Drop Option** 
+### Set the Drag and Drop Option 
 
 You can **Drag and Drop** the folders anywhere inside the mailbox by setting the **allowDragAndDrop** to **true**. 
 
 Execute this code example to **Drag and Drop** the nodes anywhere within the **TreeView**.
+
+
 
 {% highlight js %}
 
@@ -459,7 +498,7 @@ $(function () {
                     allowEditing: true,
 
                     // Setting TreeView Drag and Drop option to true
-                   allowDragAndDrop: true
+**allowDragAndDrop**: true
 
                 });      });
     </script>
@@ -467,13 +506,13 @@ $(function () {
 
 {% endhighlight %}
 
-> 
-
-> _**Note: Refer to the previous example for datasource.**_
+> {% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img9.jpeg" Caption=""%}_**Note : Refer to the previous example for datasource.**_
 
 ### Configure Events for the TreeView
 
 When you click on the Mailbox folder item, the corresponding navigation action is performed in the **select** event that is achieved by declaring the **select** event with the corresponding call back function.  You can rename the folder names and it is not renamed as empty. This validation process is done manually in the **inlineEditValidation** event.
+
+
 
 {% highlight js %}
 
@@ -492,7 +531,7 @@ $(function () {
                    // Setting TreeView with the select event for node selection
                    nodeSelect: "setAction",
                    // Setting TreeView inline edit validation event for node editing
-                   inlineEditValidation: "validateFolder"
+**inlineEditValidation**: "validateFolder",
                 });      });
         function validateFolder(args) {
             //write your code here for other folder creation process.
@@ -516,19 +555,25 @@ $(function () {
 
 
 
-> _**Note: Refer to the previous example for datasource.**_ 
+> {% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img10.jpeg" Caption=""%}_**Note: Refer to the previous example for datasource.**_ 
+
+
 
 Execute the code example to render **TreeView**. When you select the mail folder in the **TreeView,** the corresponding action takes place by raising the **select** event. 
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img7.png" Caption="TreeView with Select Event"%}
 
-> _**Note: The inline edit validation is done on the rising of “inlineEditValidation” event as in the screenshot as follows. The “inlineEditValidation” event rises only when the “allowEdit” property is set to True.**_
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img8.png" Caption="TreeView with Inline Validation Event"%}
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img11.png" Caption="Figure 8: TreeView with Select Event"%}
+
+> {% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img12.jpeg" Caption=""%}_**Note: The inline edit validation is done on the rising of “inlineEditValidation” event as in the screenshot as follows. The “inlineEditValidation” event rises only when the “allowEdit” property is set to True.**_
+
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img13.png" Caption="Figure 9: TreeView with Inline Validation Event"%}
 
 ### Add or Delete the Folders using Context Menu 
 
 You can add or remove the nodes dynamically during runtime. It is achieved by adding the **Context Menu** option to the **TreeView**. In the **Context Menu**, you can configure add or remove the node functions to the **TreeView**. The following code example illustrates how to configure the **Context Menu** elements for the **TreeView.**
+
+
 
 {% highlight html %}
 
@@ -547,6 +592,8 @@ You can add or remove the nodes dynamically during runtime. It is achieved by ad
 
 
 Initialize the **Context Menu** in the script section. 
+
+
 
 {% highlight js %}
 
@@ -609,21 +656,29 @@ $(function () {
 
 
 
-> _**Note: Refer to the previous example for datasource.**_ 
+> {% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img14.jpeg" Caption=""%}_**Note: Refer to the previous example for datasource.**_ 
 
 The following screenshot displays adding a new folder in the **TreeView** using the **Context Menu**. You can right-click on the **TreeView** Node and select the new folder option in the **Context Menu** for the selected folder. A new folder is added as the child of the **Drafts** folder.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img9.png" Caption="TreeView with context menu"%}
+
+
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img15.png" Caption="Figure 10: TreeView with context menu"%}
 
 The following screenshot illustrates adding a new folder under the **Drafts** folder. 
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img10.png" Caption="TreeView with new folder"%}
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img16.png" Caption="Figure 11: TreeView with new folder"%}
+
+
 
 The following screenshot illustrates the deleting of new folder that is created as a child of the Forums folder. You can right-click on the **New Folder1** and select the **Delete Folder** option in the **Context Menu**.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img11.png" Caption="TreeView before deleting a folder"%}
+
+
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img17.png" Caption="Figure 12: TreeView before deleting a folder"%}
+
+
 
 The following screenshot displays the **TreeView** after deleting the folder that is created.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img12.png" Caption="TreeView after deleting the New Folder1"%}
+{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img18.png" Caption="Figure 13: TreeView after deleting the New Folder1"%}
 

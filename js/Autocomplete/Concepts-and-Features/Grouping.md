@@ -15,10 +15,13 @@ documentation: ug
 
 The following steps explain you how to configure **Grouping** for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -26,11 +29,13 @@ The following steps explain you how to configure **Grouping** for an **AutoCompl
 
 
 
-2. Define **dataSource** elements with category field to group them. The category field in **dataSource** is used for **Grouping** conditions.
+* Define **dataSource** elements with category field to group them. The category field in **dataSource** is used for **Grouping** conditions.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
  var countries = [
    { text: "Austria", category: "A" },
    { text: "Australia", category: "A" }, { text: "Lebanon", category: "L" },
@@ -45,17 +50,21 @@ The following steps explain you how to configure **Grouping** for an **AutoCompl
    {text:"Vatican City",category: "V" },{text: "Western Sahara",category: "W" },
    { text: "Yemen", category: "Y" }, { text: "Zimbabwe", category: "Z" }
  ];
-</script>
+
+
+
 
 {% endhighlight %}
 
 
 
-3. Configure **Grouping** for **AutoComplete** control as follows.
+* Configure **Grouping** for **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
 $('#autocomplete').ejAutocomplete({
                 dataSource: countries,
                 filterType: ej.filterType.Contains,
@@ -65,13 +74,15 @@ $('#autocomplete').ejAutocomplete({
                 highlightSearch: true,
                 popupHeight: "200px"
             });
-</script>
+
 
 {% endhighlight %}
 
 
 
-The following image is the output for AutoComplete control that provides Grouping.
+The following image is the output for **AutoComplete** control that provides **Grouping**.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Grouping_images/Grouping_img1.png" Caption="AutoComplete popup panel with grouping"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Grouping_images/Grouping_img1.png" Caption=""%}
+
+_Figure 20: AutoComplete popup panel with grouping_
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The **Essential JavaScript** **Button** control allows you to perform an action by clicking on it. The **Essential JavaScript** **Button** control has the feature of displaying both text and images. When the **Button** is clicked, it looks as if it is being pushed in and released. The **Text** property is used to display the Text content in **Button**. The **Button** control displays images using the sprite CSS and Image Position properties. The **Essential JavaScript** **Buttons** control has theme support. While using input type submit, reset and button to be render as button, has text only support.
+The **Button** control allows you to perform an action by clicking on it. The **Button** control has the feature of displaying both text and images. When the **Button** is clicked, it looks as if it is being pushed in and released. The **Text** property is used to display the Text content in **Button**. The **Button** control displays images using the sprite CSS and Image Position properties. The **Buttons** control has theme support. While using input type submit, reset and button to be render as button, has text only support.
 
 **Key Features**
 
@@ -24,6 +24,4 @@ The **Essential JavaScript** **Button** control allows you to perform an action 
 * **Built-in Icon:**Supports the built-in icon libraries
 
 * **Easy Customization:** The customization of **Button** control to any form is made simple
-
-
 

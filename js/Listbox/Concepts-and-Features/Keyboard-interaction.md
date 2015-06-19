@@ -11,7 +11,7 @@ documentation: ug
 
 You can use **Keyboard** shortcut keys as an alternative to the mouse on using **ListBox** widget. **ListBox** Widget allows you to perform all kind of actions using keyboard shortcuts.
 
-_Table_ _4__: Keyboard shortcut keys_
+_Keyboard shortcut keys_
 
 <table>
 <tr>
@@ -20,7 +20,7 @@ _Table_ _4__: Keyboard shortcut keys_
 <b>Description</b></td></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a> + j	</td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j	</td><td>
 Focuses into the ListBox text box</td></tr>
 <tr>
 <td>
@@ -51,57 +51,27 @@ Navigates to the starting item </td></tr>
 End</td><td>
 Navigates to the end item </td></tr>
 </table>
-
 **Configure keyboard interaction**
 
 The following steps explains you to enable keyboard interaction for a **ListBox**.
 
-* In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget and enable keyboard interaction by setting the **accesskey** property.
+In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget and enable keyboard interaction by setting the **accesskey** property.
 
-
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-
-{% highlight js %}
-
-
-// Render Listbox control
-<script type="text/javascript">
-    $(function () {
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }
-        });
-        $(document).on("keydown", function (e) {
-            if (e.altKey && e.keyCode === 74) { // j- key code.
-                var target = $('#listboxSample').data("ejListBox");
-                target.selectItemByIndex(1);
-                $("#listboxSample_container").focus();
-            }
-        });
-    });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Render Listbox control&lt;script type="text/javascript"&gt;    $(function () {        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }        });        $(document).on("keydown", function (e) {            if (e.altKey && e.keyCode === 74) { // j- key code.                var target = $('#listboxSample').data("ejListBox");                target.selectItemByIndex(1);                $("#listboxSample_container").focus();            }        });    });&lt;/script&gt;</td></tr>
+</table>
 Run the sample, press Alt + J to focus in the **ListBox** widget that enables it and you can navigate using arrow keys.
 
+{% include image.html url="/js/ListBox/Concepts-and-Features/Keyboard-interaction_images/Keyboard-interaction_img1.png" Caption=""%}
 
-{% include image.html url="/js/Listbox/Concepts-and-Features/Keyboard-interaction_images/Keyboard-interaction_img1.png" Caption="Figure 29: ListBox focused and moved with Keyboard shortcut"%}
+_ListBox focused and moved with Keyboard shortcut_
+
+
 
 
 

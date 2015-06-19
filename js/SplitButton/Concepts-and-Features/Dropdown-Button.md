@@ -13,20 +13,21 @@ You can change the **Split Button** as **Dropdown Button** that consists of a si
 
 The following steps explain how to change the **Split Button** as **Dropdown Button.**
 
-1. In the **HTML** page, add the following button elements to configure **Button** widget.
+* In the **HTML** page, add the following button elements to configure **Button** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <button id="dropdownbtn">login</button>
 <ul id="menu">
     <li><span>User</span></li>
     <li><span>Guest</span></li>
     <li><span>Admin</span></li>
 </ul>
-{% endhighlight %}
 
-{% highlight js %}
-
+**[JavaScript]**
 // Initialize the control in JavaScript
 
 <script type="text/javascript">
@@ -45,7 +46,9 @@ The following steps explain how to change the **Split Button** as **Dropdown Bu
 
 
 
-2. Execute the above code to render the following output.
+Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Dropdown-Button_images/Dropdown-Button_img1.png" Caption="Dropdown Button with content"%}
+
+
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Dropdown-Button_images/Dropdown-Button_img1.png" Caption="Figure 8: Dropdown Button with content"%}
 

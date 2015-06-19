@@ -15,25 +15,15 @@ The following steps explain you on how to enable the **enablePersistence** prope
 
 * In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** widget.
 
-{% highlight html %}
 
 
-    <div id="ejSlider"></div>
+<table>
+<tr>
+<td>
+[<b>HTML</b>]&lt;div id="ejSlider"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+[<b>JavaScript</b>]// When initializing the Slider widget, enable the enablePersistence property as follows.    &lt;script&gt;        $("#ejSlider").ejSlider({            height: "15",            width: "500",<b>            enablePersistence:true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
-
-
-{% highlight js %}
-
-
-// When initializing the Slider widget, enable the enablePersistence property as follows.
-    <script>
-        $("#ejSlider").ejSlider({
-            height: "15",
-            width: "500",
-            enablePersistence:true
-        });
-    </script>
-
-{% endhighlight %}
 

@@ -17,40 +17,17 @@ The following code example is used to render the **Tab** widget with **Close****
 
 * Add the following **HTML** for simple **Tab** creation with **Close****Button**.
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+[JS]//Add the following script for Tab Render with Close Button.&lt;script type="text/javascript"&gt;        $(function () {            $("#dishtype").ejTab({ showCloseButton: true });        });    &lt;/script&gt;</td></tr>
+</table>
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-    </div>
 
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-    
-    //Add the following script for Tab Render with Close Button.
-    <script type="text/javascript">
-            $(function () {
-                $("#dishtype").ejTab({ showCloseButton: true });
-            });
-        </script>
-
-
-{% endhighlight %}
 
 * The following screenshot illustrates the **Tab** with **Close****Button**. 
 
@@ -64,38 +41,14 @@ The following code example is used to render the sub **Tab** widget in the verti
 
 * Add the following **HTML** for **Tab** orientation.
 
-{% highlight html %}
-
- 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-    </div>
-
-
-{% endhighlight %}
-
-{% highlight js %}
-
-    // Add the following script for Tab render with customized orientation.
-    <script type="text/javascript">
-            $(function () {         
-                 $("#dishtype").ejTab({ headerPosition: "left", height: "220px" });                                          
-            });
-    </script>
-
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+[JS]// Add the following script for Tab render with customized orientation.&lt;script type="text/javascript"&gt;        $(function () {                      $("#dishtype").ejTab({ headerPosition: "left", height: "220px" });                                                  });&lt;/script&gt;</td></tr>
+</table>
 
 
 * The following screenshot illustrates the sub **Tab** with vertical orientation. 
@@ -110,37 +63,14 @@ The following code example is used to render the **Tab** widget with state maint
 
 * Add the following **HTML** for **Tab****state****maintenance**.
 
-{% highlight html %}
-
-
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-    </div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-   
-    // Add the following script for Tab state maintenance.
-    <script type="text/javascript">
-            $(function () {         
-                 $("#dishtype").ejTab({ enablePersistence: true });     
-            });
-    </script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[HTML]&lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        &lt;!--Food item description--&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        &lt;!--dish description--&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+[JS]// Add the following script for Tab state maintenance.&lt;script type="text/javascript"&gt;        $(function () {                      $("#dishtype").ejTab({ enablePersistence: true });             });&lt;/script&gt;</td></tr>
+</table>
 
 
 * The following screenshot illustrates the **Tab** with **State****maintenance**.

@@ -17,23 +17,17 @@ The **opacityValue** property is Number type and its default value is 10.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
-{% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
+<table>
+<tr>
+<td>
+<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
+<tr>
+<td>
+<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({ value: "#278787", opacityValue: 40 });    });&lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight js %}
-
- 
-<script>
-    jQuery(function ($) {
-        $("#colorPicker").ejColorPicker({ value: "#278787", opacityValue: 40 });
-    });
-</script>
-
-{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
@@ -63,7 +57,6 @@ Apply</td></tr>
 cancel</td><td>
 Cancel</td></tr>
 </table>
-
 ### tooltipText
 
 The **ColorPicker** control consists of more number of sub controls and elements. To provide some information about each element and sub control, you can use the tooltip concept and you can achieve this by using **tooltipText** property.
@@ -148,28 +141,16 @@ When it is necessary to set the button text and tooltipText values in **Spanish*
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget.
 
-{% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
-
-{% endhighlight %}
-
-{% highlight js %}
-
- 
-<script>
-    jQuery(function ($) {
-        $("#colorPicker").ejColorPicker({
-             value: "#278787",
-             //spanish culture values
-             buttonText: { apply: "aplicar ", cancel: "cancelar" }, tooltipText: { sandy: "arenoso" }
-        });
-
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b> &lt;input type="text" id="colorPicker" /&gt;    </td></tr>
+<tr>
+<td>
+<b>[JAVASCRIPT]</b> &lt;script&gt;    jQuery(function ($) {        $("#colorPicker").ejColorPicker({             value: "#278787",             //spanish culture values             buttonText: { apply: "aplicar ", cancel: "cancelar" }, tooltipText: { sandy: "arenoso" }        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 The following screenshot displays the output of the above code example.

@@ -38,7 +38,7 @@ Set prefix id for **Checkbox** control as follows.
 
 <script type="text/javascript">
         $(function () {
-            $("#check1").ejCheckBox({ idPrefix: "JS" });
+            $("#check1").ejCheckBox({**idPrefix**: "JS" });
         });
 </script>
 
@@ -61,7 +61,7 @@ You can set name and value for **Checkbox** control as follows.
 
 <script type="text/javascript">
     $(function () {
-        $("#check1").ejCheckBox({ name: "Conformation", value :"received" });
+        $("#check1").ejCheckBox({**name: "Conformation", value :"received"** });
     });
 </script>
 

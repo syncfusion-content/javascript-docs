@@ -15,113 +15,83 @@ The **Value** property sets the display value of the **Rating**. For example, wh
 
 The following code example is used to render the **Rating** control with customized value.
 
-1. Add the following HTML to render Rating with customized value.
+* Add the following **HTML** to render **Rating** with customized value.
 
-{% highlight html %}
 
-    <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-                </td>
-            </tr>
-        </table>
-    </div>
 
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;div id="container" style="border: 1px solid black; width: 300px; padding: 2px"&gt;        &lt;table&gt;            &lt;tr&gt;                <td valign="top">Rating:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="rating" type="text" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JS]</b><b>// Add the following script to render Rating with customized value.</b>    &lt;script type="text/javascript"&gt;        $("#rating").ejRating({ value: 4 });    &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
 
-// Add the following script to render Rating with customized value.
-    <script type="text/javascript">
-        $("#rating").ejRating({ value: 4 });
-    </script>
 
-{% endhighlight %}
+
+
 
 The following screenshot illustrates the **Rating** with custom defined value.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img1.png" Caption="Rating with Value"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img1.png" Caption="Figure 7: Rating with Value"%}
 
 ### Min Value
 
-**EJ Rating** control provides support for setting **minimum** **value**. This is achieved by adding **minValue** property. When the **minValue** property is set, the **Rating** value starts with **minValue**+1.
+**EJ Rating** control provides support for setting **minimum****value**. This is achieved by adding **minValue** property. When the **minValue** property is set, the **Rating** value starts with **minValue**+1.
 
-The following code example is used to render the **Rating** control with **minimum** **rating**.
+The following code example is used to render the **Rating** control with **minimum****rating**.
 
-1. Add the following HTML to render Rating with minimum value.
-
-{% highlight html %}
-
-    <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-                </td>
-            </tr>
-        </table>
-    </div>
-
-{% endhighlight %}
-
-{% highlight js %}
+* Add the following **HTML** to render **Rating** with **minimum****value**.
 
 
-// Add the following script to render Rating with minimum value.
 
-<script type="text/javascript">
-        $("#rating").ejRating({ minValue: 3});
-    </script>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;div id="container" style="border: 1px solid black; width: 300px; padding: 2px"&gt;        &lt;table&gt;            &lt;tr&gt;                <td valign="top">Rating:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="rating" type="text" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JS]</b><b>// Add the following script to render Rating with minimum value.</b>&lt;script type="text/javascript"&gt;        $("#rating").ejRating({ minValue: 3});    &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
 
-The following screenshot illustrates **Rating** with **minimum** **value**.         
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img2.png" Caption="Rating with minimum value"%}
+
+The following screenshot illustrates **Rating** with **minimum****value**.
+
+****
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img2.png" Caption="Figure 8: Rating with minimum value"%}
 
 ### Max Value
 
-**EJ** **Rating** **control** provides support for setting **maximum** **value**. This is achieved by adding the **maxValue** property**.** By default, **maxValue** is **five**.
+**EJ****Rating** control****provides support for setting **maximum****value**. This is achieved by adding the **maxValue** property**.** By default, **maxValue** is **five**.
 
-The following code example is used to render the **Rating** control with **maximum** **rating**.
+The following code example is used to render the **Rating** control with **maximum****rating**.
 
-1. Add the following HTML to render Rating with maximum value.
+* Add the following **HTML** to render **Rating** with **maximum****value**.
 
-{% highlight html %}
 
-    <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-                </td>
-            </tr>
-        </table>
-    </div>
 
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;div id="container" style="border: 1px solid black; width: 300px; padding: 2px"&gt;        &lt;table&gt;            &lt;tr&gt;                <td valign="top">Rating:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="rating" type="text" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JS]</b><b>// Add the following script to render Rating with maximum value.</b>&lt;script type="text/javascript"&gt;       $("#rating").ejRating({ maxValue: 10 });    &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
 
-// Add the following script to render Rating with minimum value.
+The following screenshot illustrates the **Rating** with **maximum****value**.
 
-<script type="text/javascript">
-        $("#rating").ejRating({ maxValue: 10});
-    </script>
 
-{% endhighlight %}
 
-The following screenshot illustrates the **Rating** with **maximum** **value**.
-
-{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img3.png" Caption="Rating with maximum value"%}
+{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img3.png" Caption="Figure 9: Rating with maximum value"%}
 
 ## Set Precision
 
@@ -129,55 +99,25 @@ In a real-time movie **Rating** scenario, you can set **Precision** between tw
 
 The following code example is used to render the **Rating** control with **Precision**.
 
-1. Add the following HTML to render Rating with Precision.
-{% highlight html %}
+* Add the following **HTML** to render **Rating** with **Precision**.
 
-<div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Full Precision:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-                   
-                </td>
-            </tr>   
-            <tr>
-                <td valign="top">Half Precision:
-                </td>
-                <td>
-                    <input id="halfRating" type="text" />
-                   
-                </td>
-            </tr>  
-            <tr>
-                <td valign="top">Exact Precision:
-                </td>
-                <td>
-                    <input id="exactRating" type="text" />
-                   
-                </td>
-            </tr>         
-        </table>
-    </div>
-    
-{% endhighlight %}
 
-{% highlight js %}
 
-// Add the following script to render Rating with Precision.
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="container" style="border: 1px solid black; width: 300px; padding: 2px"&gt;        &lt;table&gt;            &lt;tr&gt;                <td valign="top">Full Precision:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="rating" type="text" /&gt;                                   &lt;/td&gt;            &lt;/tr&gt;               &lt;tr&gt;                <td valign="top">Half Precision:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="halfRating" type="text" /&gt;                                   &lt;/td&gt;            &lt;/tr&gt;              &lt;tr&gt;                <td valign="top">Exact Precision:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="exactRating" type="text" /&gt;                                   &lt;/td&gt;            &lt;/tr&gt;                 &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JS]</b><b>// Add the following script to render Rating with Precision.</b>&lt;script type="text/javascript"&gt;                $("#rating").ejRating({ value: 4 });        $("#halfRating").ejRating({ precision: ej.Rating.Precision.Half, value: 3.5 });        $("#exactRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 3.7 });    &lt;/script&gt;</td></tr>
+</table>
 
-<script type="text/javascript">        
-        $("#rating").ejRating({ value: 4 });
-        $("#halfRating").ejRating({ precision: ej.Rating.Precision.Half, value: 3.5 });
-        $("#exactRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 3.7 });
-    </script>
-
-{% endhighlight %}
 
 The following screenshot illustrates the **Rating** with **Precision**.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img4.png" Caption="Rating with Precision"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img4.png" Caption="Figure 10: Rating with Precision"%}
 
 ## Increment Step
 
@@ -185,37 +125,25 @@ The following screenshot illustrates the **Rating** with **Precision**.
 
 The following code example is used to render the **Rating** control with customized **increment**.
 
-1. Add the following HTML to render Rating with customized increment.
+* Add the following **HTML** to render **Rating** with customized **increment**.
 
-{% highlight html %}
 
-    <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-                </td>
-            </tr>
-        </table>
-    </div>
 
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;div id="container" style="border: 1px solid black; width: 300px; padding: 2px"&gt;        &lt;table&gt;            &lt;tr&gt;                <td valign="top">Rating:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="rating" type="text" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JS]</b><b>// Add the following script to render Rating with customized increment.</b>&lt;script type="text/javascript"&gt;       $("#rating").ejRating({ incrementStep: 2, maxValue: 10});   &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-// Add the following script to render Rating with customized increment.
-
-<script type="text/javascript">
-       $("#rating").ejRating({ incrementStep: 2, maxValue: 10});
-   </script>
-
-{% endhighlight %}
 
 The following screenshot illustrates the **Rating** with customized increment.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img5.png" Caption="Rating with customized increment"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img5.png" Caption="Figure 11: Rating with customized increment"%}
 
 ## Resetting values
 
@@ -223,47 +151,25 @@ The following screenshot illustrates the **Rating** with customized increment.
 
 The following code example is used to render the **Rating** control with **allowReset**.
 
-1. Add the following HTML to render Rating with allowReset.
-
-{% highlight js %}
-
-<div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-                   
-                </td>
-            </tr>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                     <input id="rest" type="text" />                    
-                </td>
-            </tr>
-        </table>
-    </div>
-
-{% endhighlight %}
-
-{% highlight js %}
+* Add the following **HTML** to render **Rating** with **allowReset**.
 
 
-// Add the following script to render Rating with allowReset.
 
-<script type="text/javascript">
-       $("#rating").ejRating({ allowReset: true });
-        $("#rest").ejRating({ allowReset: false });
-   </script>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="container" style="border: 1px solid black; width: 300px; padding: 2px"&gt;        &lt;table&gt;            &lt;tr&gt;                <td valign="top">Rating:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="rating" type="text" /&gt;                                   &lt;/td&gt;            &lt;/tr&gt;            &lt;tr&gt;                <td valign="top">Rating:                &lt;/td&gt;                &lt;td&gt;                     &lt;input id="rest" type="text" /&gt;                                    &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JS]</b><b>// Add the following script to render Rating with allowReset.</b>&lt;script type="text/javascript"&gt;       $("#rating").ejRating({ allowReset: true });        $("#rest").ejRating({ allowReset: false });   &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
 
 The following screenshot illustrates the **Rating** with **allowReset**.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img6.png" Caption="Rating with allowReset"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img6.png" Caption="Figure 12: Rating with allowReset"%}
 
 ## Read only
 
@@ -271,10 +177,13 @@ The following screenshot illustrates the **Rating** with **allowReset**.
 
 The following code example is used to render the **Rating** control with **readOnly**.
 
-1. Add the following HTML to render Rating with readOnly.
+* Add the following **HTML** to render **Rating** with **readOnly**.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -287,8 +196,8 @@ The following code example is used to render the **Rating** control with **readO
         </table>
     </div>
 
-[JS]
-// Add the following script to render Rating with readOnly .
+**[JS]**
+**// Add the following script to render Rating with readOnly .**
 
 <script type="text/javascript">
      $("#rating").ejRating({ readOnly: true });
@@ -301,7 +210,9 @@ The following code example is used to render the **Rating** control with **readO
 
 The following screenshot illustrates the **Rating** with **readOnly.**
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img7.png" Caption="Rating with readOnly"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img7.png" Caption="Figure 13: Rating with readOnly"%}
 
 ## Enable or Disable
 
@@ -309,10 +220,13 @@ The following screenshot illustrates the **Rating** with **readOnly.**
 
 The following code example is used to render the **Rating** control with **enable** or **disable** support.
 
-1. Add the following HTML to render Rating with enable or disable support.
+* Add the following **HTML** to render **Rating** with **enable** or **disable** support.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -324,11 +238,9 @@ The following code example is used to render the **Rating** control with **enabl
             </tr>
         </table>
     </div>
-    
-{% endhighlight %}
 
-{% highlight js %}
-// Add the following script to render Rating in disabled form.
+**[JS]**
+**// Add the following script to render Rating in disabled form.**
 
 <script type="text/javascript">
      $("#rating").ejRating({ enabled: false });
@@ -339,7 +251,13 @@ The following code example is used to render the **Rating** control with **enabl
 
 
 
+
+
+
+
 The following screenshot illustrates the **Rating** in **disabled** form.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img8.png" Caption="Rating in disabled form"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Rating-Customization_images/Rating-Customization_img8.png" Caption="Figure 14: Rating in disabled form"%}
 

@@ -21,6 +21,8 @@ In **Knockout binding** by using **ko.observableArray**, you can hold the data o
 
 The following example depicts the way to bind data to the **TreeView** control through **Knockout Support**.
 
+
+
 {% highlight html %}
 
 <!DOCTYPE html>
@@ -29,9 +31,9 @@ The following example depicts the way to bind data to the **TreeView** control t
     <title>Knockout support in Treeview Essential JS</title>
     <!--To add the following script in html page for knockout support-->
     <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>    
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)"></script>
 </head>
 <body data-autoinit="false">
        <div style="width: 250px">
@@ -62,9 +64,9 @@ The following example depicts the way to bind data to the **TreeView** control t
 
         ];
             window.employeeView = {
-                dataSource: ko.observableArray(tview),
+                dataSource: **ko.observableArray**(tview),
             };
-ko.applyBindings(employeeView);
+**ko.applyBindings**(employeeView);
         });
 
     </script>
@@ -78,5 +80,29 @@ ko.applyBindings(employeeView);
 
 The following screenshot displays the output of the above code.
 
-{% include image.html url="/js/TreeView/Concepts-and-Features/Knockout-Binding_images/Knockout-Binding_img1.png" Caption="TreeView with Knockout Binding"%}
+{% include image.html url="/js/TreeView/Concepts-and-Features/Knockout-Binding_images/Knockout-Binding_img1.png" Caption=""%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_Figure_ _24__: TreeView with Knockout Binding_
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Theme
 
-**DatePicker** control’s style and appearance are controlled based on **CSS** **classes**. In order to apply **Theme** to the **DatePicker** widget, you can refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. When the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project, as **ej.widgets.all.min.css** is the combination of these both. 
+**DatePicker** control’s style and appearance are controlled based on **CSS****classes**. In order to apply **Theme** to the **DatePicker** widget, you can refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. When the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project, as **ej.widgets.all.min.css** is the combination of these both. 
 
 By default, there are 12 themes support available for **DatePicker** widget namely,
 
@@ -41,38 +41,22 @@ By default, there are 12 themes support available for **DatePicker** widget name
 
 ## Custom CSS
 
-To apply custom styles to your **DatePicker** widget, you can specify **CssClass** property. The specified **CSS** name is added in the root of the **DatePicker** widget.
-
-The following code example is used to render the **DatePicker** widget with customized style.
+To apply custom styles to your **DatePicker** widget, you can specify **CssClass** property. The specified **CSS** name is added in the root of the **DatePicker** widget. The following code example is used to render the **DatePicker** widget with customized style.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-
-
- {% highlight html %}
-  
-  
-      <input id="datepicker" type="text" />
-      
-  {% endhighlight %}
-  
-  {% highlight js %}
-
-
-<script type="text/javascript">
-    $(function () {
-        // declaration
-        $("#datepicker").ejDatePicker({
-            cssClass: "custom"
-        });
-    });
-    </script>
-
-  {% endhighlight %}
-
-
-
-*  Add the following styles to render **DatePicker** with customized style.
+<table>
+<tr>
+<td>
+<b>[HTML]</b>  &lt;input id="datepicker" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the class for DatePicker widget&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#datepicker").ejDatePicker({            cssClass: "custom"        });    });    &lt;/script&gt;</td></tr>
+<tr>
+<td>
+</td></tr>
+</table>
+* Add the following styles to render **DatePicker** with customized style.
 
 {% highlight css %}
 
@@ -86,23 +70,21 @@ The following code example is used to render the **DatePicker** widget with cust
 
 {% endhighlight %}
 
-
-
-* The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Figure 24: Custom Css in DatePicker"%}
+{% include image.html url="/js/DatePicker/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Custom Css in DatePicker"%}
 
 ## Keyboard Navigation
 
 
 
-With the **Keyboard Navigation** **enabled** in the **DatePicker** widget, it is possible to widget the actions of the **DatePicker** with the provided shortcut keys. Almost all the **DatePicker** actions that are done through mouse are controlled with shortcut keys. By default, the **keyboard navigation** is set to ‘**true**’ for the widget and it is controlled with the property “**allowKeyboardNavigation**”.
+With the **Keyboard Navigation****enabled** in the **DatePicker** widget, it is possible to widget the actions of the **DatePicker** with the provided shortcut keys. Almost all the **DatePicker** actions that are done through mouse are controlled with shortcut keys. By default, the **keyboard navigation** is set to ‘**true**’ for the widget and it is controlled with the property “**allowKeyboardNavigation**”.
 
 The various keyboard shortcuts available within the **DatePicker** widget are discussed in the following table.
 
-_Table_ _5__: Keyboard navigation_
+_Keyboard navigation_
 
 <table>
 <tr>
@@ -111,7 +93,7 @@ _Table_ _5__: Keyboard navigation_
 <b>Function</b></td></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> </b><b>+j</b></td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a><b> </b><b>+j</b></td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -154,35 +136,19 @@ Navigates to previous month</td></tr>
 <b>Ctrl + Right</b></td><td>
 Navigates to next month</td></tr>
 </table>
-
-
 The following steps explain you to enable keyboard interaction for **DatePicker** widget
 
 * In the **HTML** page, add a **&lt;input&gt;** element to configure **DatePicker** widget and enable keyboard interaction by setting the **accesskey** property
 
-
- {% highlight html %}
-
-  
-      <input id="datepicker" type="text" />
-      
-  {% endhighlight %}
-  
-  {% highlight js %}
-
-
-   <script type="text/javascript">
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker();
-        });
-    </script>
-
-  {% endhighlight %}
-
-
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="datepicker" type="text" accesskey="j" /&gt;</td></tr>
+<tr>
+<td>
+// Render DatePicker widget    &lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker();        });    &lt;/script&gt;</td></tr>
+</table>
 * Run the sample, press **Alt + J** to focus in the **DatePicker** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 
-{% include image.html url="/js/DatePicker/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Figure 25: DatePicker focused with Keyboard shortcut                                            "%}
+{% include image.html url="/js/DatePicker/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="DatePicker focused with Keyboard shortcut                                            "%}
 

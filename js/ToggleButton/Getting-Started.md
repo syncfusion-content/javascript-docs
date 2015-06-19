@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Toggle** **Button** in your application with **JavaScript.**
+This section explains briefly about how to create a **Toggle****Button** in your application with **JavaScript.**
 
 ## Create your first Toggle Button in JavaScript
 
@@ -38,12 +38,12 @@ The html checkbox element can be easily configured as **Essential JavaScript Tog
 <head>
 <title>Getting Started Essential JS</title> 
     <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body><!--add Toggle Button element here--></body>
@@ -68,9 +68,7 @@ The html checkbox element can be easily configured as **Essential JavaScript Tog
 
 
 
-{% include image.html url="/js/ToggleButton/Getting-Started_images/Getting-Started_img3.jpeg" Caption=""%}
-
-_**Note**: The advantages of using checkbox element and label element for the rendering of Toggle Button are as follows.**_
+{% include image.html url="/js/ToggleButton/Getting-Started_images/Getting-Started_img3.jpeg" Caption=""%}_**Note: The advantages of using checkbox element and label element for the rendering of Toggle Button are as follows.**_
 
 
 
@@ -89,8 +87,6 @@ A label element has to be explicitly associate a form control. A label is atta
 
 
 {% highlight js %}
-
-
 
 <script>
         $(function () {

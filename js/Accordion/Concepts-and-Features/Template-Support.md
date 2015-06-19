@@ -13,52 +13,55 @@ In **JavaScript**, you can load the contents or **HTML** elements directly insid
 
 {% highlight html %}
 
-   
-    <div id="pizzaMenu" style="width: 500px">
-        <h3>
-            <a href="#">GARDEN FRESH (Veg)</a>
-    </h3>
-        <div>
-            <img src="~/Content/accordion/garden-veggie.png" alt="garden-fresh" />
-            <div class="ingredients">
-                Rate    : $50
-                <br />
-                Ingredients : cheese, onions, green capsicums & tomatoes.
-            </div>
-        </div>
-        <h3>
-            <a href="#">CORN & SPINACH (Veg)</a>
-        </h3>
-        <div>
-            <img src="~/Content/accordion/corn-and-spinach-05.png" alt="garden-fresh" />
-            <div class="ingredients">
-                Rate    : $70
-                <br />
-                Ingredients : cheese, sweet corn & green capsicums.
-            </div>
-        </div>
-        <h3>
-            <a href="#">CHICKEN DELITE (Non-veg)</a>
-        </h3>
-        <div>
-            <img src="~/Content/accordion/chicken-delite.png" alt="garden-fresh" />
-            <div class="ingredients">
-                Rate    : $100
-                <br />
-                Ingredients : cheese, chicken chunks, onions & pineapple chunks.
-            </div>
+[HTML]
+<div id="pizzaMenu" style="width: 500px">
+    <h3>
+        <a href="#">GARDEN FRESH (Veg)</a>
+</h3>
+    <div>
+        <img src="~/Content/accordion/garden-veggie.png" alt="garden-fresh" />
+        <div class="ingredients">
+            Rate    : $50
+            <br />
+            Ingredients : cheese, onions, green capsicums & tomatoes.
         </div>
     </div>
+    <h3>
+        <a href="#">CORN & SPINACH (Veg)</a>
+    </h3>
+    <div>
+        <img src="~/Content/accordion/corn-and-spinach-05.png" alt="garden-fresh" />
+        <div class="ingredients">
+            Rate    : $70
+            <br />
+            Ingredients : cheese, sweet corn & green capsicums.
+        </div>
+    </div>
+    <h3>
+        <a href="#">CHICKEN DELITE (Non-veg)</a>
+    </h3>
+    <div>
+        <img src="~/Content/accordion/chicken-delite.png" alt="garden-fresh" />
+        <div class="ingredients">
+            Rate    : $100
+            <br />
+            Ingredients : cheese, chicken chunks, onions & pineapple chunks.
+        </div>
+    </div>
+</div>
+
+
 
 {% endhighlight %}
 
+
+
 {% highlight js %}
 
-<script>
-    
-        $("#pizzaMenu").ejAccordion({ enableMultipleOpen: true });
-        
-</script>
+**[SCRIPT]**
+$("#pizzaMenu").ejAccordion({ enableMultipleOpen: true });
+
+
 
 {% endhighlight %}
 

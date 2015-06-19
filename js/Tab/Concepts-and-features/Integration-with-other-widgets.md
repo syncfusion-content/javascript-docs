@@ -19,45 +19,15 @@ The following code example explains you the **rating** control creation. The inp
 
 * Add the following **HTML** to render **Tab** with other widget.
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+[HTML]   &lt;div id="dishtype" style="width: 650px"&gt;    &lt;ul&gt;        &lt;li&gt;<a href="#pizza">Pizza Menu</a>&lt;/li&gt;        &lt;li&gt;<a href="#sandwich">Sandwich Menu</a>&lt;/li&gt;    &lt;/ul&gt;    &lt;div id="pizza" style="background-color: #F5F5F5"&gt;        <p>Rating:&lt;/p&gt;        &lt;div class="dishRating"&gt;            &lt;input id="pizzarating" type="text" class="rating" /&gt;&lt;br /&gt;        &lt;/div&gt;        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;    &lt;div id="sandwich" style="background-color: #F5F5F5"&gt;        <p>Rating:&lt;/p&gt;        &lt;div class="dishRating"&gt;            &lt;input id="sandwichrating" type="text" class="rating" /&gt;        &lt;/div&gt;        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.&lt;/p&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+[JS]// Add the following script to render Tab with other widget.&lt;script type="text/javascript"&gt;$(function () {            $("#dishtype").ejTab();            $("#pizzarating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.8 });            $("#snadwichrating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.8 });});&lt;/script&gt;</td></tr>
+</table>
 
-
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <p>Rating:</p>
-            <div class="dishRating">
-                <input id="pizzarating" type="text" class="rating" /><br />
-            </div>
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <p>Rating:</p>
-            <div class="dishRating">
-                <input id="sandwichrating" type="text" class="rating" />
-            </div>
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-    </div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-    // Add the following script to render Tab with other widget.
-    
-    <script type="text/javascript">
-    $(function () {
-                $("#dishtype").ejTab();
-                $("#pizzarating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.8 });
-                $("#snadwichrating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.8 });
-    });
-</script>
-
-{% endhighlight %}
 
 To render the **rating** controls in the first **Tab** element refer the styles mentioned in the following code example. 
 
@@ -65,13 +35,13 @@ To render the **rating** controls in the first **Tab** element refer the styles 
 
 {% highlight css %}
 
-    
-    <style type="text/css" class="cssStyles">
-            .dishRating {
-                position: absolute;
-                margin: -31px 0px 0px 80px;
-            }       
-        </style>
+[CSS]
+<style type="text/css" class="cssStyles">
+        .dishRating {
+            position: absolute;
+            margin: -31px 0px 0px 80px;
+        }       
+    </style>
 
 
 {% endhighlight %}

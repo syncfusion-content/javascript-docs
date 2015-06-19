@@ -17,37 +17,18 @@ The following steps explain you on how to set the **value** for the **ProgressBa
 
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar** widget.
 
-{% highlight html %}
 
 
-            <div class="control">
-            <div id="progressbar"></div>
-            </div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Add the following code example to set the value for the ProgressBar widget.
-<script type="text/javascript">
-    $(function () {
-//Declaration.
-        $("#progressbar").ejProgressBar({
-            minValue: 40,
-            maxValue: 80,
-            value: 60,
-            height: 20,
-            width: 500
-        });
-        var progress = $("#progressbar").data("ejProgressBar");
-        progress.setModel({ text: progress.getValue()});
-
-    });
-</script>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="control"&gt;            &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to set the value for the ProgressBar widget.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({            minValue: 40,            maxValue: 80,<b>            value: 60,</b>            height: 20,            width: 500        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue()});    });&lt;/script&gt;</td></tr>
+</table>
 
 
-{% endhighlight %}
 
 
 * The following screenshot displays the output for the above code.
@@ -66,34 +47,15 @@ The following steps explain you on how to set the value in **percentage** for th
 
 
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="control"&gt;            &lt;div id="progressbar"&gt;&lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to set the value in percentage for the ProgressBar widget.&lt;script type="text/javascript"&gt;    $(function () {//Declaration.        $("#progressbar").ejProgressBar({           <b>percentage: 60,</b>           width: 500,           height: 20        });        var progress = $("#progressbar").data("ejProgressBar");        progress.setModel({ text: progress.getValue() + " %" });    });&lt;/script&gt;</td></tr>
+</table>
 
-
-            <div class="control">
-            <div id="progressbar"></div>
-            </div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Add the following code example to set the value in percentage for the ProgressBar widget.
-<script type="text/javascript">
-    $(function () {
-//Declaration.
-        $("#progressbar").ejProgressBar({
-           percentage: 60,
-           width: 500,
-           height: 20
-        });
-        var progress = $("#progressbar").data("ejProgressBar");
-        progress.setModel({ text: progress.getValue() + " %" });
-
-    });
-</script>
-
-{% endhighlight %}
 
 * The following screenshot displays the output.
 

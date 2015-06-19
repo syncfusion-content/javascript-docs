@@ -17,21 +17,17 @@ Here you can learn how to customize **ListBox** in Contact Selection tool. This 
 
 The following screenshot demonstrates the functionality of **ListBox** with **Multi-Selection** and **Drag and Drop** features.
 
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
 
-
-{% include image.html url="/js/Listbox/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
-
-_Figure_ _1__: Group creation tool Simulator using ListBox_
+_Group creation tool Simulator using ListBox_
 
 In the above screenshot, you can select a list item from the first **ListBox** widget. After you select the item, you can move the selected item to the second **ListBox** widget. 
 
 **Create a ListBox Widget**
 
-**Essential** **JavaScript**  **ListBox** widget renders with built-in features.
+**Essential****JavaScript****ListBox** widget renders with built-in features.
 
-* You can create an **HTML** file and add the following code example to it. 
-
-
+You can create an **HTML** file and add the following code example to it. 
 
 {% highlight html %}
 
@@ -56,16 +52,12 @@ In the above screenshot, you can select a list item from the first **ListBox** w
 
 {% endhighlight %}
 
-
-
-* Add the **&lt;ul&gt;** element to render **ListBox** widgets.
-
-
+Add the **&lt;ul&gt;** element to render **ListBox** widgets.
 
 {% highlight html %}
 
 
-   <div id="sample">
+<div id="sample">
     <h5><b>Add people</b></h5>
     <h5>Choose a contact and click move button to add in group </h5>
     <div id="control">
@@ -94,11 +86,7 @@ In the above screenshot, you can select a list item from the first **ListBox** w
 
 {% endhighlight %}
 
-
-
-* Add the following style section for the **ListBox** widgets alignment. 
-
-
+Add the following style section for the **ListBox** widgets alignment. 
 
 {% highlight css %}
 
@@ -145,13 +133,10 @@ In the above screenshot, you can select a list item from the first **ListBox** w
 
 {% endhighlight %}
 
-
-
-* Initialize the **ListBox** and other widgets using the following code sample.
-
-
+Initialize the **ListBox** and other widgets using the following code sample.
 
 {% highlight js %}
+
 
 <script type="text/javascript">
     jQuery(function ($) {
@@ -178,21 +163,15 @@ In the above screenshot, you can select a list item from the first **ListBox** w
 
 {% endhighlight %}
 
+Run this code to render the resultant output of the above steps.
 
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
-* Run this code to render the resultant output of the above steps.
-
-
-
-{% include image.html url="/js/Listbox/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
-
-_Figure_ _2__: Render ListBox with &lt;ul&gt;&lt;/ul&gt; element_
+_Render ListBox with &lt;ul&gt;&lt;/ul&gt; element_
 
 **Configure ListBox with Items**
 
 To populate items inside **ListBox**, you have to add list items inside **&lt;ul&gt;** as **&lt;li&gt;&lt;/li&gt;** elements. Include the following **&lt;li&gt;** elements in your sample.
-
-
 
 {% highlight html %}
 
@@ -273,21 +252,15 @@ To populate items inside **ListBox**, you have to add list items inside **&lt;ul
 
 {% endhighlight %}
 
-
-
 Run the above code to render **ListBox** with list items rendered inside **ListBox. ListBox** with Contact list items is shown as follows.
 
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
-
-{% include image.html url="/js/Listbox/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
-
-_Figure_ _3__: ListBox with Contact list items_
+_ListBox with Contact list items_
 
 **Enable Drag and Drop** 
 
 You can drag an item from a **ListBox** and drop it in a droppable element.To drag and drop a list item across control or within the control, you have to set **allowDragAndDrop** property as **“True”.**
-
-
 
 {% highlight js %}
 
@@ -314,21 +287,15 @@ You can drag an item from a **ListBox** and drop it in a droppable element.To dr
 
 {% endhighlight %}
 
-
-
 Run the above code example to render the following **ListBox** with **Drag and Drop** feature. **ListBox** with Drag and Drop list items across control is displayed in the following image. 
 
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
 
-
-{% include image.html url="/js/Listbox/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
-
-_Figure_ _4__: ListBox with Drag and Drop list items_
+_ListBox with Drag and Drop list items_
 
 **Enable Multiple Selection** 
 
 You can select multiple list items simultaneously in **ListBox** control, and move the multiple selected items to selection listbox. To select multiple items in a **ListBox**, set **allowMultiSelection** property for the **ListBox** as **“True”**.
-
-
 
 {% highlight js %}
 
@@ -356,23 +323,15 @@ You can select multiple list items simultaneously in **ListBox** control, and mo
 
 {% endhighlight %}
 
-
-
 Run the above code example to render the following **ListBox** with **Multi-Selection** feature. **ListBox** control with **Multi-Selection** of list items is displayed as follows.
 
-
-
-{% include image.html url="/js/Listbox/Getting-Started_images/Getting-Started_img5.png" Caption=""%}
-
-_Figure_ _5__: ListBox  with Multiple Selection of list items_
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img5.png" Caption="ListBox  with Multiple Selection of list items"%}
 
 **Adding items to a Second ListBox**
 
 You have to move the selected list item to the second **ListBox** using **addItem(value)** method. And remove existing item in the first **ListBox** using **removeItem()** method.
 
 The following code sample explains how to add to an item to second **ListBox.**
-
-
 
 {% highlight js %}
 
@@ -421,13 +380,11 @@ The following code sample explains how to add to an item to second **ListBox.**
 
 {% endhighlight %}
 
-
-
 Run this code and you can see the output. Selected items from the first **ListBox** has been moved to Second **ListBox** using **addItem()** and **removeItem()** method and it is shown in the following figure.
 
 
 
-{% include image.html url="/js/Listbox/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
 
-_Figure_ _6__: ListBox Selection moved to Second ListBox_
+_ListBox Selection moved to Second ListBox_
 

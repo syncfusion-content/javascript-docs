@@ -45,18 +45,18 @@ This allows you to map the **CSS** styles or classes to the corresponding data f
 
 The following steps explain local data binding to an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
-<input type="text" id="autocomplete" />
-    
-{% endhighlight %}
+**[HTML]**
+         **<input type="text" id="autocomplete" />**
 
-{% highlight js %}
-
-<script type="text/javascript">
-    var states = [
+**[JavaScript]**
+**\\** Define local dataSource elements using the **key** and **text** fields.
+var states = [
  { index: "s1", countryName: "Alabama" }, { index: "s2", countryName: "Alaska" },
  { index: "s3", countryName: "Arizona" }, { index: "s4", countryName: "Arkansas" },
  { index: "s5", countryName: "California" },{index: "s6",countryName: "Colorado" },
@@ -73,22 +73,33 @@ The following steps explain local data binding to an **AutoComplete** textbox.
  { index: "s27", countryName: "Nevada" }, {index: "s28",countryName: "New Jersey" }                 
 ];
 
+**[JavaScript]**
 \\ Map local dataSource to corresponding fields in AutoComplete.
 
     $('#autocomplete').ejAutocomplete({
-                dataSource: states,
+**dataSource: states,**
                 fields: { key: "index", text: "countryName" },
                 width: 205
             });
-</script>
+
+
+
 
 {% endhighlight %}
 
 
 
+
+
+
+
 The following image is the output for **AutoComplete** control with local data binding.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="AutoComplete with local data-binding"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption=""%}
+
+_Figure 6: AutoComplete with local data-binding_
 
 ## Remote data
 
@@ -100,10 +111,13 @@ The following image is the output for **AutoComplete** control with local data b
 
 The following steps explain the remote data binding to an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -111,29 +125,33 @@ The following steps explain the remote data binding to an **AutoComplete** textb
 
 
 
-2. Define **DataManager** and assign remote data source to it. Initialize query for binding data to **AutoComplete** text. Here **DataManager** gets the remote web service and filters the data using **Query**. The **select** property of **ejQuery** is used to retrieve the specified columns from the dataSource.
+* Define **DataManager** and assign remote data source to it. Initialize query for binding data to **AutoComplete** text. Here **DataManager** gets the remote web service and filters the data using **Query**. The **select** property of **ejQuery** is used to retrieve the specified columns from the dataSource.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
 var dataManger = **ej.DataManager**({
             // Web service host
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
             });
             // Query creation
 var query = **ej.Query().**from("Suppliers").select("SupplierID", "ContactName");
-</script>
+
 
 
 {% endhighlight %}
 
 ****
 
-3. Assign **dataSource** and **Query** property values to bind the remote data. Map the corresponding fields for **text** and **key** value in **AutoComplete** control as follows.
+* Assign **dataSource** and **Query** property values to bind the remote data. Map the corresponding fields for **text** and **key** value in **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
     $('#autocomplete').ejAutocomplete({
 **dataSource: dataManger,**
                 **query: query,**
@@ -141,7 +159,7 @@ var query = **ej.Query().**from("Suppliers").select("SupplierID", "ContactName")
                 filterType: ej.filterType.StartsWith,
                 width: 205
             });
-</script>
+
 
 
 {% endhighlight %}
@@ -150,5 +168,7 @@ var query = **ej.Query().**from("Suppliers").select("SupplierID", "ContactName")
 
 The following image is the output for **AutoComplete** control with remote data binding.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="AutoComplete with remote data binding"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption=""%}
+
+_Figure 7: AutoComplete with remote data binding_
 

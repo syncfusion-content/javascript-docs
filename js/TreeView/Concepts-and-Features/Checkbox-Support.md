@@ -13,87 +13,41 @@ documentation: ug
 
 The following steps explain how you can enable the **showCheckbox** property for **TreeView**.
 
-1. In the HTML page, add &lt;ul&gt; and &lt;li&gt; elements to configure **TreeView**.
-
-{% highlight html %}
+* In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configure **TreeView.**
 
 
 
-<ul id="treeView">
-        <li class="expanded">
-            Favorites
-            <ul>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;ul id="treeView"&gt;        &lt;li class="expanded"&gt;            Favorites            &lt;ul&gt;                <li>Desktop</li>                <li>Downloads</li>                <li>Recent places</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li class="expanded"&gt;            Libraries            &lt;ul&gt;                &lt;li&gt;                    Documents                    &lt;ul&gt;                        <li>My Documents</li>                        <li>Public Documents</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Pictures                    &lt;ul&gt;                        <li>My Pictures</li>                        <li>Public Pictures</li>                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                    Music                    &lt;ul&gt;                        <li>My Music</li>                        <li>Public Music</li>                    &lt;/ul&gt;                &lt;/li&gt;                <li>Subversion</li>            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;            Computer            &lt;ul&gt;                <li>Folder(C)&lt;/li&gt;                <li>Folder(D)&lt;/li&gt;                <li>Folder(F)&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;    &lt;/ul&gt;</td></tr>
+<tr>
+<td>
+            <b>[JavaScript]</b><b>// Enable showCheckbox for TreeView control as follows.</b>        $("#treeView").ejTreeView({<b>showCheckbox</b>: true });</td></tr>
+</table>
 
-                <li>Desktop</li>
-                <li>Downloads</li>
-                <li>Recent places</li>
-            </ul>
-        </li>
-        <li class="expanded">
-            Libraries
-            <ul>
-                <li>
-                    Documents
-                    <ul>
-                        <li>My Documents</li>
-                        <li>Public Documents</li>
-                    </ul>
-                </li>
-                <li>
-                    Pictures
-                    <ul>
-                        <li>My Pictures</li>
-                        <li>Public Pictures</li>
-                    </ul>
-                </li>
-                <li>
-                    Music
-                    <ul>
-                        <li>My Music</li>
-                        <li>Public Music</li>
-                    </ul>
-                </li>
-                <li>Subversion</li>
-            </ul>
-        </li>
-        <li>
-            Computer
-            <ul>
-                <li>Folder(C)</li>
-                <li>Folder(D)</li>
-                <li>Folder(F)</li>
-            </ul>
-        </li>
-    </ul>
 
-{% endhighlight %}
-
-{% highlight js %}
+The following image is the output for **TreeView** when **showCheckbox** is set to “**True**”.
 
 
 
-// Enable showCheckbox for TreeView control as follows.
-<script type="text/javascript">
-    $("#treeView").ejTreeView({showCheckbox: true });
-</script>
+{% include image.html url="/js/TreeView/Concepts-and-Features/Checkbox-Support_images/Checkbox-Support_img1.png" Caption=""%}
 
-{% endhighlight %}
-
-
-The following image is the output for TreeView when showCheckbox is set to “True”.
-
-{% include image.html url="/js/TreeView/Concepts-and-Features/Checkbox-Support_images/Checkbox-Support_img1.png" Caption="TreeView with checkbox"%}
+_Figure_ _16__:_ _TreeView with checkbox_
 
 ### Auto Check Parent Node
 
 To overcome the default functionality of **TreeView**, when you don’t want the parent node check state being moved to indeterminate state and when you check the corresponding child node, you can enable the property **autoCheckParentNode**. By using this functionality, you can check the single parent node as well as the corresponding child nodes. You can specify the property **autoCheckParentNode** in **TreeView** as follows.
 
+
+
 {% highlight js %}
 
+**[JavaScript]**
 
-<script type="text/javascript">
-    $("#treeView").ejTreeView({ autoCheckParentNode: false,showCheckbox: true});
-</script>
+    $("#treeView").ejTreeView({ **autoCheckParentNode**: false,showCheckbox: true});
+
+
 
 {% endhighlight %}
 
@@ -101,12 +55,14 @@ To overcome the default functionality of **TreeView**, when you don’t want the
 
 You can specify the **Checked Nodes** in **TreeView** initially by using the property **checkedNodes**. **Checked Nodes** index collection is given to the integer array. You can specify the property **checkedNodes** in **TreeView** control in the script as follows.
 
+
+
 {% highlight js %}
 
+**[JavaScript]**
+    $("#treeView").ejTreeView({ showCheckbox: true, **checkedNodes**: [1, 2] });
 
-<script type="text/javascript">
-    $("#treeView").ejTreeView({ showCheckbox: true, checkedNodes: [1, 2] });
-</script>
+
 
 {% endhighlight %}
 

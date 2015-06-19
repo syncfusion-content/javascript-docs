@@ -23,7 +23,9 @@ You can also use the “**Create custom table**” link below the grid. This lin
 
 This popup window contains options to change the width and height of cells, cells spacing, cells padding, and many more.
 
-{% include image.html url="/js/RichTextEditor/Concepts-and-Features/Insert-Table_images/Insert-Table_img1.png" Caption="Create custom table"%}
+{% include image.html url="/js/RichTextEditor/Concepts-and-Features/Insert-Table_images/Insert-Table_img1.png" Caption=""%}
+
+_Figure_ _20__: Create custom table_
 
 ### Table Manipulation
 
@@ -43,7 +45,7 @@ You can modify the existing information or add new information in a table using 
 
 * Delete table
 
+{% include image.html url="/js/RichTextEditor/Concepts-and-Features/Insert-Table_images/Insert-Table_img2.png" Caption=""%}
 
-
-{% include image.html url="/js/RichTextEditor/Concepts-and-Features/Insert-Table_images/Insert-Table_img2.png" Caption="Creating table using grid or custom table option"%}
+_Figure 21: Creating table using grid or custom table option_
 

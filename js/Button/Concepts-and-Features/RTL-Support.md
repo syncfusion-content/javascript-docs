@@ -13,34 +13,24 @@ In some cases you can use right to left alignment. Here, RTL support is provided
 
 The following steps explains the details about rendering the button with Right to left alignment support.
 
-1. In the **HTML** page, add the following button elements to configure button widget.
-
-{% highlight html %}
+* In the **HTML** page, add the following button elements to configure button widget.
 
 
-    <button id="button_rtl">button</button>
 
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b><button id="button_rtl">button</button></td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>     &lt;script type="text/javascript"&gt;        $(function () {            $("#button_rtl").ejButton({                size: "large", contentType: ej.ContentType.TextAndImage,                showRoundedCorner: true,                prefixIcon: "e-uiLight e-login",                //used to enable or disable RTL support for button<b>                enableRTL: true</b>            });        });    &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-   <script type="text/javascript">
-        $(function () {
-            $("#button_rtl").ejButton({
-                size: "large", contentType: ej.ContentType.TextAndImage,
-                showRoundedCorner: true,
-                prefixIcon: "e-uiLight e-login",
-                //used to enable or disable RTL support for button
-                enableRTL: true
-            });
-        });
-    </script>
-
-{% endhighlight %}
-
-In above mentioned code example prefixIcon property is used and the icon that is to be on left side, (before text) is rendered on right side as enableRTL property is used with prefixIcon.  Consequently, the alignment is changed in right to left order.
+In above mentioned code example **prefixIcon** property is used and the icon that is to be on left side, (before text) is rendered on right side as **enableRTL** property is used with **prefixIcon.**  Consequently, the alignment is changed in right to left order.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="Button in Right to left format"%}
+{% include image.html url="/js/Button/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption=""%}
+
+_Figure 11: Button in Right to left format_
 

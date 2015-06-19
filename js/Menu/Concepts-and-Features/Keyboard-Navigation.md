@@ -49,91 +49,22 @@ Navigates to next group.</td></tr>
 
 * Add the following code for Keyboard navigation in your **Menu** control.
 
-{% highlight html %}
 
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div&gt;    &lt;div&gt;        &lt;ul id="menucontrol"&gt;            &lt;li id="home"&gt;                <a href="#">Home</a>                &lt;ul&gt;                    &lt;li&gt;<a>Foundation</a>&lt;/li&gt;                    &lt;li&gt;<a>Launch</a>&lt;/li&gt;                    &lt;li&gt;                        <a>About</a>                        &lt;ul&gt;                            &lt;li&gt;<a>Company</a>&lt;/li&gt;                            &lt;li&gt;<a>Location</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="Services"&gt;                <a>Services</a>                &lt;ul&gt;                    &lt;li&gt;<a>Consulting</a>&lt;/li&gt;                    &lt;li&gt;<a>Outsourcing</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="About"&gt;<a>About</a>&lt;/li&gt;            &lt;li id="Contact"&gt;                <a>Contact us</a>                &lt;ul&gt;                    &lt;li&gt;<a>Contact number</a>&lt;/li&gt;                    &lt;li&gt;<a>E-mail</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;            &lt;li id="Careers"&gt;                <a>Careers</a>                &lt;ul&gt;                    &lt;li&gt;                        <a>Position</a>                        &lt;ul&gt;                            &lt;li&gt;<a>Developer</a>&lt;/li&gt;                            &lt;li&gt;<a>Manager</a>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/li&gt;                    &lt;li&gt;<a>Apply online</a>&lt;/li&gt;                &lt;/ul&gt;            &lt;/li&gt;        &lt;/ul&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>// Add the following code in your &lt;script&gt; section.</b>&lt;script type="text/javascript"&gt;        jQuery(function ($) {            $("#menucontrol").ejMenu();            //Control focus key            $(document).on("keydown", function (e) {                if (e.altKey && e.keyCode === 74) { // j- key code.                    $("#menucontrol").focus();                }            });        });&lt;/script&gt;</td></tr>
+</table>
 
-<div>
-    <div>
-        <ul id="menucontrol">
-            <li id="home">
-                <a href="#">Home</a>
-                <ul>
-                    <li><a>Foundation</a></li>
-                    <li><a>Launch</a></li>
-                    <li>
-                        <a>About</a>
-                        <ul>
-                            <li><a>Company</a></li>
-                            <li><a>Location</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-
-            <li id="Services">
-                <a>Services</a>
-                <ul>
-                    <li><a>Consulting</a></li>
-                    <li><a>Outsourcing</a></li>
-                </ul>
-            </li>
-
-            <li id="About"><a>About</a></li>
-
-            <li id="Contact">
-                <a>Contact us</a>
-                <ul>
-                    <li><a>Contact number</a></li>
-                    <li><a>E-mail</a></li>
-                </ul>
-            </li>
-
-            <li id="Careers">
-                <a>Careers</a>
-                <ul>
-                    <li>
-                        <a>Position</a>
-                        <ul>
-                            <li><a>Developer</a></li>
-                            <li><a>Manager</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Apply online</a></li>
-                </ul>
-            </li>
-
-        </ul>
-
-    </div>
-
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Add the following code in your script section.
-
-<script type="text/javascript">
-        jQuery(function ($) {
-            $("#menucontrol").ejMenu();
-            //Control focus key
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { // j- key code.
-                    $("#menucontrol").focus();
-                }
-            });
-        });
-</script>
-
-{% endhighlight %}
 
 * Add the following code in your style section.
 
 {% highlight css %}
 
-
+**[CSS]**
 <style type="text/css">
     #keyboard {
         margin-left: 50px;

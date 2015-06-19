@@ -29,6 +29,8 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
 
 {% highlight html %}
 
+**[HTML]**
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

@@ -15,13 +15,11 @@ This section explains briefly about how to create a **TagCloud** in your applica
 
 The **TagCloud** can be easily configured to the div element in which the tags are placed. The following screenshot illustrates the functionality of a **TagCloud** widget with a list of the topmost search engines. 
 
-
-
-{% include image.html url="/js/TagCloud/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: TagCloud Widget"%}
+{% include image.html url="/js/TagCloud/Getting-Started_images/Getting-Started_img1.png" Caption="TagCloud Widget"%}
 
 ### Create TagCloud widget
 
-* Create an **HTML** file and add the following template to the **HTML** file.
+1. Create an **HTML** file and add the following template to the **HTML** file.
 
 {% highlight html %}
 
@@ -29,7 +27,7 @@ The **TagCloud** can be easily configured to the div element in which the tags a
 <html>
 <head> 
     <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -38,7 +36,7 @@ The **TagCloud** can be easily configured to the div element in which the tags a
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -50,11 +48,7 @@ The **TagCloud** can be easily configured to the div element in which the tags a
 
 {% endhighlight %}
 
-
-
-Add necessary **HTML** elements.
-
-
+2. Add necessary **HTML** elements.
 
 {% highlight html %}
 
@@ -65,11 +59,7 @@ Add necessary **HTML** elements.
 
 {% endhighlight %}
 
-
-
-Add the following code example before **&lt;/body&gt;** tag to add list of items to the **TagCloud** and initialize the **TagCloud** widget.
-
-
+3. Add the following code example before &lt;/body&gt; tag to add list of items to the TagCloud and initialize the TagCloud widget.
 
 {% highlight js %}
 
@@ -103,13 +93,9 @@ Add the following code example before **&lt;/body&gt;** tag to add list of items
 
 {% endhighlight %}
 
-
-
 The following screenshot displays the output of the above code example.
 
-
-
-{% include image.html url="/js/TagCloud/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: TagCloud with Min/Max Fonts"%}
+{% include image.html url="/js/TagCloud/Getting-Started_images/Getting-Started_img2.png" Caption="TagCloud with Min/Max Fonts"%}
 
 ### Set Min and Max Font Size
 
@@ -147,15 +133,11 @@ In the above code example, the **frequency** properties are used to set the min 
 
 {% endhighlight %}
 
-
-
 In the above code, the min font size is 3 and max font size is 24.
 
 ### Set event to perform an operation
 
 Here, you can set the **TagCloud** events such as create, mouseover, mouseout, click.
-
-
 
 {% highlight js %}
 
@@ -205,8 +187,6 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
 
 
 {% endhighlight %}
-
-
 
 In the above code example, the **alert()** function is used  to show the events that happened.
 

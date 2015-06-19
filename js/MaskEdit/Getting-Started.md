@@ -166,13 +166,13 @@ In the above screenshot, you can type only numbers and it does not allow text fo
 
 <script type="text/javascript">
     $(function () {
-$("#maskedit").ejMaskEdit(
-                                {
-                                    name: "mask",
-                                    inputMode: ej.InputMode.Text,
-                                    //mask value for mobile no
-                                    maskFormat: "99-999-99999"
-                                });
+**$("#maskedit").ejMaskEdit(**
+                                **{**
+                                    **name: "mask",**
+                                    **inputMode: ej.InputMode.Text,**
+                                    **//mask value for mobile no**
+                                    **maskFormat: "99-999-99999"**
+                                **});**
         $("#numeric").ejNumericTextbox(
                                 {
                                     name: "numeric",

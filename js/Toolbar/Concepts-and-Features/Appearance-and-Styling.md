@@ -15,44 +15,33 @@ documentation: ug
 
 The **height** property is used to set height of the **Toolbar**. Set the value to this property as **number** or **string** type.
 
-{% highlight html %}
-
-
-<script type="text/javascript">
-    $(function () {
-        // declaration
-        $("#toolbarcontent").ejToolbar({ height: 300 });
-    });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ height: 300 });    });&lt;/script&gt;</td></tr>
+<tr>
+<td>
+                                OR<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ height: "300px" });    });&lt;/script&gt;</td></tr>
+</table>
 ### Width
 
 The **width** property is used to set width of the **Toolbar**. Set the value to this property as **number** or **string** type.
 
-{% highlight html %}
-
-
-
-<script type="text/javascript">
-    $(function () {
-        // declaration
-        $("#toolbarcontent").ejToolbar({ height: "300px" });
-    });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ width: 300 });    });&lt;/script&gt;</td></tr>
+<tr>
+<td>
+                             OR<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ width: "300px" });    });&lt;/script&gt;</td></tr>
+</table>
 ## Enabling Rounded Corner 
 
 The **showRoundedCorner** property is used to enable rounded corner for **Toolbar**. Set the value to this property as **Boolean** type.
 
-
 {% highlight js %}
 
-
-
+**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -65,23 +54,15 @@ The **showRoundedCorner** property is used to enable rounded corner for **Toolba
 
 
 
-
-
-
-{% include image.html url="/js/Toolbar/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption=""%}
-
-_Figure 12: ToolBar control with rounded corner_
+{% include image.html url="/js/Toolbar/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="ToolBar control with rounded corner"%}
 
 ## Enabling Separator 
 
 The **enableSeparator** property is used to set separator between **Toolbar** items. It separates one or more list items. When you want to separate two set of items, then define them in two separate ‘**ul’** tags and set the value to this property as **Boolean** type.
 
-
-
 {% highlight js %}
 
-
-
+**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -94,15 +75,13 @@ The **enableSeparator** property is used to set separator between **Toolbar** it
 
 
 
-{% include image.html url="/js/Toolbar/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption=""%}
-
-_Figure 13: ToolBar control with item separator_
+{% include image.html url="/js/Toolbar/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="ToolBar control with item separator"%}
 
 ## Themes
 
 You can control the****style and appearance of the **Toolbar** based on **CSS** classes. In order to apply styles to the Toolbar control, you can refer two files - **ej.widgets.core.min.css** and **ej.theme.min.css**. When you refer **ej.widgets.all.min.css** file, it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.widgets.all.min.css** is the combination of these two. 
 
-By default, there are 12 themes support available for **Toolbar** control namely
+By default, there are 12 themes support available for **Toolbar** control namely.
 
 * default-theme
 
@@ -132,12 +111,9 @@ By default, there are 12 themes support available for **Toolbar** control namely
 
 The **cssClass** property is used to set root class for **Toolbar** control theme. Set the value to this property as **string** type.
 
-
-
 {% highlight js %}
 
-
-
+**[JS]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -152,8 +128,7 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
 {% highlight css %}
 
-
-
+**[CSS]**    
 <style>
     .gradient-lime {
         background-color: yellowgreen;
@@ -165,7 +140,5 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
 
 
-{% include image.html url="/js/Toolbar/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption=""%}
-
-_Figure 14: ToolBar control with cssClass_
+{% include image.html url="/js/Toolbar/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="ToolBar control with cssClass"%}
 

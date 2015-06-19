@@ -21,9 +21,9 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 
 * Color palette: 
 
-* Fore-color: To change the color of text in editing area
+  * Fore-color: To change the color of text in editing area
 
-* Back-color: To change the background color of editing area
+  * Back-color: To change the background color of editing area
 
 * Bulleting: Ordered and un-ordered list
 
@@ -35,9 +35,9 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 
 * Font options
 
-* [Font Name](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font) – Typeface that is applied to the document text.
+  * [Font Name](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font) – Typeface that is applied to the document text.
 
-* [Font Size](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size) – Determines how big or small the text will be.
+  * [Font Size](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size) – Determines how big or small the text will be.
 
 * Format
 
@@ -46,8 +46,6 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 * Upper & lower case conversion
 
 * Indent
-
-
 
 ### Undo and Redo
 
@@ -63,7 +61,7 @@ Most used clipboard actions are cut, copy, and paste. These tools are used to re
 
 {% highlight html %}
 
-
+**[HTML]**
     <div>
         <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
         </textarea>
@@ -78,12 +76,11 @@ Most used clipboard actions are cut, copy, and paste. These tools are used to re
 
 {% highlight js %}
 
-<script>
-    $(function(){
+**[JavaScript]**
             $("#rteSample").ejRTE({
                 width: "850px",
                 showFooter: true,
-                **tools**: {
+**tools**: {
                     font: ["fontName", "fontSize", "fontColor", "backgrounColor"],
                     style: ["bold", "italic", "underline", "strikethrough"],
                     alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
@@ -99,19 +96,23 @@ Most used clipboard actions are cut, copy, and paste. These tools are used to re
                     paragraph: ["paragraph"]
                 }
             });
-    });
-</script>
+
+
 {% endhighlight %}
 
 
 
 
 
-{% include image.html url="/js/RichTextEditor/Concepts-and-Features/Toolbar-Support_images/Toolbar-Support_img1.png" Caption="List of Toolbar items"%}
+{% include image.html url="/js/RichTextEditor/Concepts-and-Features/Toolbar-Support_images/Toolbar-Support_img1.png" Caption=""%}
+
+_Figure_ _8__: List of Toolbar items_
 
 The following image consists of formatted content by using the available toolbar items in **RTE** control.
 
 
 
-{% include image.html url="/js/RichTextEditor/Concepts-and-Features/Toolbar-Support_images/Toolbar-Support_img2.png" Caption="Formatted content"%}
+{% include image.html url="/js/RichTextEditor/Concepts-and-Features/Toolbar-Support_images/Toolbar-Support_img2.png" Caption=""%}
+
+_Figure_ _9__: Formatted content_
 

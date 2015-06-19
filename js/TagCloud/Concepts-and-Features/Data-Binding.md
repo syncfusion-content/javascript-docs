@@ -41,65 +41,33 @@ Local databinding allows you to map **JSON** data to **TagCloud**, that the corr
 
 The following steps explains you the local data binding to **TagCloud** widget,
 
-* In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
+1. In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
-{% highlight html %}
-
-
-         <div id="techweblist"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Define local data source elements with text, url and frequency fields.
-<script>
-    var websiteCollection = [
-    { text: "Google", url: "http://www.google.com", frequency: 12 },
-    { text: "All Things Digital", url: "http://allthingsd.com/", frequency: 3 },
-    { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-    { text: "Business Week", url: "http://www.businessweek.com/", frequency: 2 },
-    { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
-    { text: "Center Networks",url: "http://www.centernetworks.com/", frequency: 5 },
-    { text: "Crave", url: "http://news.cnet.com/crave/", frequency: 8 },
-    { text: "Crunch Gear", url: "http://techcrunch.com/gadgets/", frequency: 20 },
-    { text: "Daily Tech", url: "http://www.dailytech.com/", frequency: 1 },
-    { text: "Electronista", url: "http://www.electronista.com/", frequency: 3 },
-    { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },
-    { text: "Gearlog", url: "http://www.gearlog.com/", frequency: 9 },
-    { text: "Information Week",url:"http://www.informationweek.com/",frequency: 0 },
-    { text: "PCWorld", url: "http://www.pcworld.com/", frequency: 11 },
-    { text: "Tech Republic", url: "http://techrepublic.com/", frequency: 3 },
-    { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
-    { text: "Rediff", url: "http://in.rediff.com/", frequency: 9 },
-    { text: "WebProNews", url: "http://www.webpronews.com/", frequency: 2 }
-     ];
- </script>
- 
-{% endhighlight %}
-
-Map Local datasource to corresponding fields in **TagCloud** control as follows,
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>         &lt;div id="techweblist"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+[JavaScript]// Define local data source elements with text, url and frequency fields.var websiteCollection = [    { text: "Google", url: "http://www.google.com", frequency: 12 },    { text: "All Things Digital", url: "http://allthingsd.com/", frequency: 3 },    { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },    { text: "Business Week", url: "http://www.businessweek.com/", frequency: 2 },    { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },    { text: "Center Networks",url: "http://www.centernetworks.com/", frequency: 5 },    { text: "Crave", url: "http://news.cnet.com/crave/", frequency: 8 },    { text: "Crunch Gear", url: "http://techcrunch.com/gadgets/", frequency: 20 },    { text: "Daily Tech", url: "http://www.dailytech.com/", frequency: 1 },    { text: "Electronista", url: "http://www.electronista.com/", frequency: 3 },    { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },    { text: "Gearlog", url: "http://www.gearlog.com/", frequency: 9 },    { text: "Information Week",url:"http://www.informationweek.com/",frequency: 0 },    { text: "PCWorld", url: "http://www.pcworld.com/", frequency: 11 },    { text: "Tech Republic", url: "http://techrepublic.com/", frequency: 3 },    { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },    { text: "Rediff", url: "http://in.rediff.com/", frequency: 9 },    { text: "WebProNews", url: "http://www.webpronews.com/", frequency: 2 }];</td></tr>
+</table>
+2. Map Local datasource to corresponding fields in **TagCloud** control as follows,
 
 {% highlight js %}
 
-
-<script>
-   $("#techweblist").ejTagCloud({
-    **dataSource: websiteCollection**
+**[JavaScript]**
+    $("#techweblist").ejTagCloud({
+                dataSource: websiteCollection
             });
-</script>
+
 
 {% endhighlight %}
-
-
 
 The following screenshot displays the **TagCloud** control with local data binding.
 
 {% include image.html url="/js/TagCloud/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption=""%}
 
-_Figure 3: TagCloud with Local databinding_
+_TagCloud with Local databinding_
 
 ## Remote Binding
 
@@ -111,64 +79,49 @@ DataManager is used to manage relational data in **JavaScript**. It supports 
 
 The following steps explains you the local data binding to **TagCloud** widget.
 
-* In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
-
-
+1. In the HTML page, add a &lt;div&gt; element to configure TagCloud widget.
 
 {% highlight html %}
 
+**[HTML]**
          <div id="techweblist"></div>
 
 
 {% endhighlight %}
 
-
-
-Define DataManager and assign remote data source to it. Initialize query for binding data to **TagCloud** text. Here DataManager renders the remote web service and filters the data by using Query. The **select** property of **ejQuery**, is used to retrieve the specified columns from the data source.
-
-
+2. Define DataManager and assign remote data source to it. Initialize query for binding data to **TagCloud** text. Here DataManager renders the remote web service and filters the data by using Query. The **select** property of **ejQuery**, is used to retrieve the specified columns from the data source.
 
 {% highlight js %}
 
-
-<script>
-    var dataManager = **ej.DataManager**({
+**[JavaScript]**
+var dataManager = ej.DataManager({
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
             });
             // Query creation
-            var query = **ej.Query().**from("Orders").take(10);
-</script>
+            var query = ej.Query().from("Orders").take(10);
+
 
 {% endhighlight %}
 
-
-
-Assign datasource and query property values to bind the remote data. Map the corresponding fields to **TagCloud** control as follows:
-
-
+3. Assign datasource and query property values to bind the remote data. Map the corresponding fields to **TagCloud** control as follows:
 
 {% highlight js %}
 
-
- <script>
-   $("#techweblist").ejTagCloud({
-    **dataSource: dataManager,**
-                **query: query,**
-                **fields: { text: "CustomerID", frequency: "EmployeeID" }**
+**[JavaScript]**
+$("#techweblist").ejTagCloud({
+                dataSource: dataManager,
+                query: query,
+                fields: { text: "CustomerID", frequency: "EmployeeID" }
             });
-</script>
+
 
 {% endhighlight %}
 
-
-
 The following screenshot displays a **TagCloud** control with remote data binding.
-
-
 
 {% include image.html url="/js/TagCloud/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption=""%}
 
-_Figure 4: TagCloud with Remote databinding_
+_TagCloud with Remote databinding_
 
 ## Knockout binding
 
@@ -190,22 +143,23 @@ The following code example depicts you the way to bind data to the **TagCloud** 
 
 {% highlight html %}
 
+**[HTML]**
 <!doctype html>
 <html>
 <head>
     <title>Essential Studio for JavaScript :  KO Support for Tagcloud</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-<script src="[http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)"></script>
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)"></script>
 
 </head>
 <body>
@@ -251,21 +205,19 @@ var tagview = [
 
 {% endhighlight %}
 
-
-
 Execute the above code to render the following output.
 
 {% include image.html url="/js/TagCloud/Concepts-and-Features/Data-Binding_images/Data-Binding_img3.png" Caption=""%}
 
-_Figure_ _5__: TagCloud with Knockout binding_
+_TagCloud with Knockout binding_
 
 ## Angular binding
 
 **TagCloud** widget is availed with two types of angular JS support namely, 
 
-* One way binding
+* One-way binding
 
-* Two way binding 
+* Two-way binding
 
 One-way binding refers to the process of applying scope values to all available properties of the TagCloud widget, but the changes made in **TagCloud** widget is not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **TagCloud** widget.
 
@@ -281,22 +233,23 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 {% highlight html %}
 
+**[HTML]**
 <!doctype html>
 <html lang="en" ng-app="tagApp">
 <head>
     <title>Essential Studio for JavaScript : Angular JS Support for Tagcloud </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-     <script src="[http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)">  </script>
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"> </script>
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"></script>
+     <scriptsrc="[http://cdn.syncfusion.com/js/assets/external/angular.min.js](http://cdn.syncfusion.com/js/assets/external/angular.min.js)">  </script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"> </script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"></script>
 
 </head>
 <body ng-controller="TagCtrl">
@@ -333,11 +286,9 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates a **TagCloud** control using Angular databinding,
 
 {% include image.html url="/js/TagCloud/Concepts-and-Features/Data-Binding_images/Data-Binding_img4.png" Caption=""%}
 
-_Figure_ _6__: TagCloud with Angular binding_
+_TagCloud with Angular binding_
 

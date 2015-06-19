@@ -9,7 +9,7 @@ documentation: ug
 
 # Easy customization
 
-**Split Button** is used in many applications. **Split Button** Size, Content and content location is varied according to each application. The following sections describes you some customizable options for Sp**lit Button** that can perform easily.
+**Split Button** is used in many applications. **Split Button** Size, Content and content location is varied according to each application. The following sections describes you some customizable options for Sp**lit Button** that can perform easily. 
 
 ## Content for Split button
 
@@ -17,49 +17,33 @@ The **targetID** is a mandatory one, without this field it acts as normal button
 
 The following steps explains you the details about rendering the **Split Button** with content.
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
-
-{% highlight html %}
-
-  <div class="spltspan">
-        <button id="spltbutton">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-    </div>
+* In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
 
-// Initialize the control in JavaScript
 
-   <script type="text/javascript">
-        $(function () {
-            $("#spltbutton").ejSplitButton({
-                size: "small",
-                contentType: "textandimage",
-                showRoundedCorner: true,
-                //targetID used to specify vertical menu content
-                targetID: "Ul11",
-                prefixIcon: "e-uiLight e-login"
-            });
-        });
-    </script>
-
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>  &lt;div class="spltspan"&gt;        <button id="spltbutton">login</button>        &lt;ul id="Ul11"&gt;            &lt;li&gt;<span>User</span>&lt;/li&gt;            &lt;li&gt;<span>Guest</span>&lt;/li&gt;            &lt;li&gt;<span>Admin</span>&lt;/li&gt;        &lt;/ul&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            $("#spltbutton").ejSplitButton({                size: "small",                contentType: "textandimage",                showRoundedCorner: true,                //targetID used to specify vertical menu content<b>                targetID: "Ul11",</b>                prefixIcon: "e-uiLight e-login"            });        });    &lt;/script&gt;</td></tr>
+<tr>
+<td>
+{% highlight html %}<br><br><b>[HTML]</b>  <div class="spltspan">        <button id="spltbutton">login</button>        <ul id="Ul11">            <li><span>User</span></li>            <li><span>Guest</span></li>            <li><span>Admin</span></li>        </ul>    </div><br><br>{% endhighlight %}<br><br></td></tr>
+</table>
+****
 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img1.png" Caption="Split button with content"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img1.png" Caption="Figure 3: Split button with content"%}
 
 ## Button Size
 
 You can render the **Split Button** in different sizes. The following table contains some predefined size option for rendering a **Split Button** in easiest way. Each size option has different height and width. Mainly it avoids the complexity in rendering **Split Button** with complex **CSS** class. 
 
-_List of Button size_
+_Table_ _1__: List of Button size_
 
 <table>
 <tr>
@@ -89,141 +73,27 @@ Apart from the above mentioned predefined size option, you can set your own widt
 
 The following steps explains you the details about rendering the **Split Button** with above mentioned size options.
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
-
-{% highlight html %}
-
-<div class="align">
-        <table>
-            <tr>                
-                <td class="btnsht">
-                    <div class="spltspan">
-                        <button id="spltbutton_normal">login</button>
-                        <ul id="Ul11">
-                            <li><span>User</span></li>
-                            <li><span>Guest</span></li>
-                            <li><span>Admin</span></li>
-                        </ul>
-                    </div>
-                </td>
-             
-                <td>
-                    <button id="spltbutton_mini">login</button>
-                    <ul id="Ul21">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-                   
-                <td class="btnsht">
-                    <button id="spltbutton_small">login</button>
-                    <ul id="Ul31">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-                 
-                <td class="btnsht">
-                    <button id="spltbutton_medium">login</button>
-                    <ul id="Ul41">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-       
-                <td class="btnsht">
-                    <button id="spltbutton_large">login</button>
-                    <ul id="Ul51">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-                 <td class="btnsht">
-                    <button id="spltbutton_customsize">login</button>
-                    <ul id="Ul61">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-{% endhighlight %}
-
-{% highlight js %}
+* In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
 
-// Initialize the control in JavaScript
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="align"&gt;        &lt;table&gt;            &lt;tr&gt;                                &lt;td class="btnsht"&gt;                    &lt;div class="spltspan"&gt;                        <button id="spltbutton_normal">login</button>                        &lt;ul id="Ul11"&gt;                            &lt;li&gt;<span>User</span>&lt;/li&gt;                            &lt;li&gt;<span>Guest</span>&lt;/li&gt;                            &lt;li&gt;<span>Admin</span>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/div&gt;                &lt;/td&gt;                             &lt;td&gt;                    <button id="spltbutton_mini">login</button>                    &lt;ul id="Ul21"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;                                   &lt;td class="btnsht"&gt;                    <button id="spltbutton_small">login</button>                    &lt;ul id="Ul31"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;                                 &lt;td class="btnsht"&gt;                    <button id="spltbutton_medium">login</button>                    &lt;ul id="Ul41"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;                       &lt;td class="btnsht"&gt;                    <button id="spltbutton_large">login</button>                    &lt;ul id="Ul51"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;                 &lt;td class="btnsht"&gt;                    <button id="spltbutton_customsize">login</button>                    &lt;ul id="Ul61"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            //Here we used size property to render the split button in different sizes            $("#spltbutton_normal").ejSplitButton({                //normal size type is used<b>                size: "normal",</b>                showRoundedCorner: true,                contentType: "imageonly",                targetID: "Ul11",                prefixIcon: "e-uiLight e-login"            });            $("#spltbutton_mini").ejSplitButton({                //mini size type is used<b>                size: "mini",</b>                showRoundedCorner: true,                targetID: "Ul21",            });            $("#spltbutton_small").ejSplitButton({                //small size type is used<b>                size: "small",</b>                showRoundedCorner: true,                targetID: "Ul31",            });            $("#spltbutton_medium").ejSplitButton({                //medium size type is used<b>                size: "medium",</b>                showRoundedCorner: true,                targetID: "Ul41",            });            $("#spltbutton_large").ejSplitButton({                //large size type is used<b>                size: "large",</b>                showRoundedCorner: true,                targetID: "Ul51",                contentType: "textandimage",                prefixIcon: "e-login e-uiLight",            });            $("#spltbutton_customsize").ejSplitButton({                //user given height and width<b>                height: 50,</b><b>                width: 150,</b>                showRoundedCorner: true,                targetID: "Ul61",                contentType: "textandimage",                prefixIcon: "e-login e-uiLight",            });        });    &lt;/script&gt;</td></tr>
+</table>
 
-<script type="text/javascript">
-        $(function () {
-            //Here we used size property to render the split button in different sizes
-            $("#spltbutton_normal").ejSplitButton({
-                //normal size type is used
-                size: "normal",
-                showRoundedCorner: true,
-                contentType: "imageonly",
-                targetID: "Ul11",
-                prefixIcon: "e-uiLight e-login"
-            });
 
-            $("#spltbutton_mini").ejSplitButton({
-                //mini size type is used
-                size: "mini",
-                showRoundedCorner: true,
-                targetID: "Ul21",
-            });
+Configure the styles
 
-            $("#spltbutton_small").ejSplitButton({
-                //small size type is used
-                size: "small",
-                showRoundedCorner: true,
-                targetID: "Ul31",
-            });
 
-            $("#spltbutton_medium").ejSplitButton({
-                //medium size type is used
-                size: "medium",
-                showRoundedCorner: true,
-                targetID: "Ul41",
-            });
-
-            $("#spltbutton_large").ejSplitButton({
-                //large size type is used
-                size: "large",
-                showRoundedCorner: true,
-                targetID: "Ul51",
-                contentType: "textandimage",
-                prefixIcon: "e-login e-uiLight",
-            });
-
-            $("#spltbutton_customsize").ejSplitButton({
-                //user given height and width
-                height: 50,
-                width: 150,
-                showRoundedCorner: true,
-                targetID: "Ul61",
-                contentType: "textandimage",
-                prefixIcon: "e-login e-uiLight",
-            });
-
-        });
-    </script>
-
-{% endhighlight %}
-
-2. Configure the styles.
 
 {% highlight css %}
-  
- <style>
-.control {
+
+[CSS]    <style>
+        .control {
             width: 500px;
         }
     </style>
@@ -234,13 +104,13 @@ The following steps explains you the details about rendering the **Split Button*
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img2.png" Caption="Split button with different sizes"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img2.png" Caption="Figure 4: Split button with different sizes"%}
 
 ## Content Type
 
 The content of the **Split Button** is mainly rendered as text and images. Instead of using complex **CSS** classes to render **Split Button** with different content types, you can use some predefined content type options listed in the following table. Using this content types you can easily add different types of content for **Split Button**. Split Button supports the following content types.
 
-_List of content types_
+_Table_ _2__: List of content types_
 
 <table>
 <tr>
@@ -264,7 +134,6 @@ Supports image with the text content.</td></tr>
 <b>imagetextimage</b></td><td>
 Supports image with both ends and middle in text.</td></tr>
 </table>
-
 ### Prefix and Suffix icons
 
 Icons inside the **Split Button** is added easily using **prefixIcon and suffixIcon** property. Location of the icon in **Split Button** is a necessary thing. You can customize the location of Icon easily using the following mentioned options.
@@ -289,133 +158,37 @@ For example the following build-in CSS class are used to display the font icons 
 
 * e-mediaplay
 
-**Prefix Icon**
+#### Prefix Icon
 
 It inserts the icon at the starting position of **Split Button**. After this prefix icon, you can use text or suffix icon.
 
-**Suffix Icon**
+#### Suffix Icon
 
 It inserts the icon at the ending position of **Split Button**. Before this suffix icon, you can use text or prefix icon.
 
 The following steps explains you the details on rendering the **Split Button** with above mentioned **content type**, **prefix** and **suffix icon** options
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
+* In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
-{% highlight html %}
 
 
 <table>
-        <tr>
-            <td class="btnsht">
-                <button id="spltbutton_imageonly">login</button>
-                <ul id="Ul11">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td>
-                <button id="spltbutton_textonly">login</button>
-                <ul id="Ul21">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_imageboth">login</button>
-                <ul id="Ul31">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_textandimage">login</button>
-                <ul id="Ul41">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_imagetextimage">login</button>
-                <ul id="Ul51">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;table&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imageonly">login</button>                &lt;ul id="Ul11"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td&gt;                <button id="spltbutton_textonly">login</button>                &lt;ul id="Ul21"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imageboth">login</button>                &lt;ul id="Ul31"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_textandimage">login</button>                &lt;ul id="Ul41"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imagetextimage">login</button>                &lt;ul id="Ul51"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;        &lt;/tr&gt;    &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript] </b><b>//</b> Initialize the control in <b>JavaScript</b><b>    </b>&lt;script type="text/javascript"&gt;     // Here we used contentType property to render the split button with different contents     $(function () {         $("#spltbutton_imageonly").ejSplitButton({             size: "medium",             //only image is used as content<b>             contentType: "imageonly",</b>             showRoundedCorner: true,             prefixIcon: "e-uiLight e-handup",             targetID: "Ul11",         });         $("#spltbutton_textonly").ejSplitButton({             size: "medium",             //only text is used as content<b>             contentType: "textonly",</b>             showRoundedCorner: true,             targetID: "Ul21",         });         $("#spltbutton_imageboth").ejSplitButton({             size: "medium",             //only images in both end is used as content<b>             contentType: "imageboth",</b>             showRoundedCorner: true,             //e-handup is a build in class, which specify font icon             prefixIcon: "e-uiLight e-handup",             //e-palette is a build in class, which specify font icon             suffixIcon: "e-uiLight e-palette",             targetID: "Ul31",         });         $("#spltbutton_textandimage").ejSplitButton({             size: "medium",             //text and image is used as content<b>             contentType: "textandimage",</b>             showRoundedCorner: true,             prefixIcon: "e-uiLight e-handup",             targetID: "Ul41",         });         $("#spltbutton_imagetextimage").ejSplitButton({             size: "medium",             //images in both end and text in center is used as content<b>             contentType: "imagetextimage",</b>             showRoundedCorner: true,             //It specifies the image in prefix location             prefixIcon: "e-uiLight e-handup",             //It specifies the image in suffix location             suffixIcon: "e-uiLight e-palette",             targetID: "Ul51",         });     });    &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
 
-{% highlight js %}
+Configure the styles 
 
- 
-// Initialize the control in JavaScript
-    
-<script type="text/javascript">
-     // Here we used contentType property to render the split button with different contents
 
-     $(function () {
-         $("#spltbutton_imageonly").ejSplitButton({
-             size: "medium",
-             //only image is used as content
-             contentType: "imageonly",
-             showRoundedCorner: true,
-             prefixIcon: "e-uiLight e-handup",
-             targetID: "Ul11",
-         });
-         $("#spltbutton_textonly").ejSplitButton({
-             size: "medium",
-             //only text is used as content
-             contentType: "textonly",
-             showRoundedCorner: true,
-             targetID: "Ul21",
-         });
-         $("#spltbutton_imageboth").ejSplitButton({
-             size: "medium",
-             //only images in both end is used as content
-             contentType: "imageboth",
-             showRoundedCorner: true,
-             //e-handup is a build in class, which specify font icon
-             prefixIcon: "e-uiLight e-handup",
-             //e-palette is a build in class, which specify font icon
-             suffixIcon: "e-uiLight e-palette",
-             targetID: "Ul31",
-         });
-         $("#spltbutton_textandimage").ejSplitButton({
-             size: "medium",
-             //text and image is used as content
-             contentType: "textandimage",
-             showRoundedCorner: true,
-             prefixIcon: "e-uiLight e-handup",
-             targetID: "Ul41",
-         });
-         $("#spltbutton_imagetextimage").ejSplitButton({
-             size: "medium",
-             //images in both end and text in center is used as content
-             contentType: "imagetextimage",
-             showRoundedCorner: true,
-             //It specifies the image in prefix location
-             prefixIcon: "e-uiLight e-handup",
-             //It specifies the image in suffix location
-             suffixIcon: "e-uiLight e-palette",
-             targetID: "Ul51",
-         });
-     });
-    </script>
-
-{% endhighlight %}
-
-2. Configure the styles.
 
 {% highlight css %}
- 
 
-  <style>
+**[CSS]**    <style>
         .control {
             width: 500px;
         }
@@ -427,13 +200,12 @@ The following steps explains you the details on rendering the **Split Button** w
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img3.png" Caption="Split button with different content types"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img3.png" Caption="Figure 5: Split button with different content types"%}
 
 ## Image Position
 
 To provide the best look and feel for **Split Button**, position of images in **Split Button** is important. Using **imagePosition** property, you can easily customize the position of images inside **Split Button** without using any complex CSS. **imagePosition** property is applicable only with the **textandimage** content type property. This property represent the position of images with respect to text.
 
-_Property Table_
 
 <table>
 <tr>
@@ -456,203 +228,27 @@ Support for aligning text in top and image in bottom.</td></tr>
 
 The following steps explains you the details on rendering the **Split Button** with above mentioned image position options.
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
+* In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
-{% highlight html %}
 
 
 <table>
-        <tr>
-            <td class="btnsht">
-                <button id="spltbutton_imageleft_normal">login</button>
-                <ul id="Ul11">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td>
-                <button id="spltbutton_imageleft_small">login</button>
-                <ul id="Ul21">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_imageleft_medium">login</button>
-                <ul id="Ul31">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_imageleft_large">login</button>
-                <ul id="Ul41">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-           
-        </tr>
-      <tr>
-            <td class="btnsht">
-                <button id="spltbutton_imageright_normal">login</button>
-                <ul id="Ul1">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td>
-                <button id="spltbutton_imageright_small">login</button>
-                <ul id="Ul2">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_imageright_medium">login</button>
-                <ul id="Ul3">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_imageright_large">login</button>
-                <ul id="Ul4">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-           
-        </tr>
-        <tr>
-            <td class="btnsht">
-                <button id="spltbutton_imagetop">login</button>
-                <ul id="Ul5">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td>
-                <button id="spltbutton_imagebottom">login</button>
-                <ul id="Ul6">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>                    
-        </tr>
-    </table>
-
-{% endhighlight %}
-
-{% highlight js %}
+<tr>
+<td>
+<b>[HTML]</b>&lt;table&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imageleft_normal">login</button>                &lt;ul id="Ul11"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td&gt;                <button id="spltbutton_imageleft_small">login</button>                &lt;ul id="Ul21"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imageleft_medium">login</button>                &lt;ul id="Ul31"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imageleft_large">login</button>                &lt;ul id="Ul41"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;                   &lt;/tr&gt;      &lt;tr&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imageright_normal">login</button>                &lt;ul id="Ul1"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td&gt;                <button id="spltbutton_imageright_small">login</button>                &lt;ul id="Ul2"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imageright_medium">login</button>                &lt;ul id="Ul3"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imageright_large">login</button>                &lt;ul id="Ul4"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;                   &lt;/tr&gt;        &lt;tr&gt;            &lt;td class="btnsht"&gt;                <button id="spltbutton_imagetop">login</button>                &lt;ul id="Ul5"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;            &lt;td&gt;                <button id="spltbutton_imagebottom">login</button>                &lt;ul id="Ul6"&gt;                    &lt;li&gt;<span>User</span>&lt;/li&gt;                    &lt;li&gt;<span>Guest</span>&lt;/li&gt;                    &lt;li&gt;<span>Admin</span>&lt;/li&gt;                &lt;/ul&gt;            &lt;/td&gt;                            &lt;/tr&gt;    &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    //Using imagePosition property we can render the split button images with different position    $(function () {        $("#spltbutton_imageleft_normal").ejSplitButton({<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul11",        });        $("#spltbutton_imageleft_small").ejSplitButton({            size: "small",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul21",        });        $("#spltbutton_imageleft_medium").ejSplitButton({            size: "medium",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul31",        });        $("#spltbutton_imageleft_large").ejSplitButton({            size: "large",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul1",        });        $("#spltbutton_imageright_normal").ejSplitButton({            <b>imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul2",        });        $("#spltbutton_imageright_small").ejSplitButton({            size: "small",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul3",        });        $("#spltbutton_imageright_medium").ejSplitButton({            size: "medium",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul4",        });        $("#spltbutton_imageright_large").ejSplitButton({            size: "large",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul41",        });        $("#spltbutton_imagetop").ejSplitButton({<b>            imagePosition: "imagetop",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul5",            height: 60        });        $("#spltbutton_imagebottom").ejSplitButton({            <b>imagePosition: "imagebottom",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            targetID: "Ul6",            height: 60        });    });    &lt;/script&gt;</td></tr>
+</table>
 
 
-// Initialize the control in JavaScript
-
-<script type="text/javascript">
-    //Using imagePosition property we can render the split button images with different position
-    $(function () {
-        $("#spltbutton_imageleft_normal").ejSplitButton({
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul11",
-        });
-        $("#spltbutton_imageleft_small").ejSplitButton({
-            size: "small",
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul21",
-        });
-        $("#spltbutton_imageleft_medium").ejSplitButton({
-            size: "medium",
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul31",
-        });
-        $("#spltbutton_imageleft_large").ejSplitButton({
-            size: "large",
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul1",
-        });
-
-        $("#spltbutton_imageright_normal").ejSplitButton({
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul2",
-        });
-        $("#spltbutton_imageright_small").ejSplitButton({
-            size: "small",
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul3",
-        });
-        $("#spltbutton_imageright_medium").ejSplitButton({
-            size: "medium",
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul4",
-        });
-        $("#spltbutton_imageright_large").ejSplitButton({
-            size: "large",
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul41",
-        });
-        $("#spltbutton_imagetop").ejSplitButton({
-            imagePosition: "imagetop",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul5",
-            height: 60
-        });
-        $("#spltbutton_imagebottom").ejSplitButton({
-            imagePosition: "imagebottom",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            targetID: "Ul6",
-            height: 60
-        });
-
-    });
-    </script>
-
-{% endhighlight %}
+Configure the styles 
 
 
-2. Configure the styles.
 
 {% highlight css %}
 
-
+[CSS]
     <style>
         .control {
             width: 420px;
@@ -666,7 +262,7 @@ The following steps explains you the details on rendering the **Split Button** w
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img4.png" Caption="Split button with different image positions"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img4.png" Caption="Figure 6: Split button with different image positions"%}
 
 ## Theme support
 
@@ -702,130 +298,29 @@ By default, there are 12 themes support available for **Split Button** control n
 
 You can use the **CSS** class to customize the **Split Button** control appearance. Define a **CSS** class as per requirement and assign the class name to **cssClass** property.
 
-The following steps explains you the details about rendering the **Split Button** with custom **CSS**.
+The following steps explains you the details about rendering the **Split Button** with custom CSS.
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
-
-{% highlight css %}
-
-<div class="align">
-        <table>
-            <tr>
-                <td class="btnsht">
-                    <div class="spltspan">
-                        <button id="spltbutton_customCss1">login</button>
-                        <ul id="Ul11">
-                            <li><span>User</span></li>
-                            <li><span>Guest</span></li>
-                            <li><span>Admin</span></li>
-                        </ul>
-                    </div>
-                </td>
-
-                <td>
-                    <button id="spltbutton_customCss2">login</button>
-                    <ul id="Ul21">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-
-                <td class="btnsht">
-                    <button id="spltbutton_customCss3">login</button>
-                    <ul id="Ul31">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-
-                <td class="btnsht">
-                    <button id="spltbutton_customCss4">login</button>
-                    <ul id="Ul41">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-
-                <td class="btnsht">
-                    <button id="spltbutton_customCss5">login</button>
-                    <ul id="Ul51">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
-    
-{% endhighlight %}
-
-{% highlight js %}
+* In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
 
-// Initialize the control in JavaScript
 
-<script type="text/javascript">
-        $(function () {
-            //implement custom CSS for each split button
-            $("#spltbutton_customCss1").ejSplitButton({
-                cssClass: "customCss1",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup",
-                targetID: "Ul11",
-            });
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="align"&gt;        &lt;table&gt;            &lt;tr&gt;                &lt;td class="btnsht"&gt;                    &lt;div class="spltspan"&gt;                        <button id="spltbutton_customCss1">login</button>                        &lt;ul id="Ul11"&gt;                            &lt;li&gt;<span>User</span>&lt;/li&gt;                            &lt;li&gt;<span>Guest</span>&lt;/li&gt;                            &lt;li&gt;<span>Admin</span>&lt;/li&gt;                        &lt;/ul&gt;                    &lt;/div&gt;                &lt;/td&gt;                &lt;td&gt;                    <button id="spltbutton_customCss2">login</button>                    &lt;ul id="Ul21"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;                &lt;td class="btnsht"&gt;                    <button id="spltbutton_customCss3">login</button>                    &lt;ul id="Ul31"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;                &lt;td class="btnsht"&gt;                    <button id="spltbutton_customCss4">login</button>                    &lt;ul id="Ul41"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;                &lt;td class="btnsht"&gt;                    <button id="spltbutton_customCss5">login</button>                    &lt;ul id="Ul51"&gt;                        &lt;li&gt;<span>User</span>&lt;/li&gt;                        &lt;li&gt;<span>Guest</span>&lt;/li&gt;                        &lt;li&gt;<span>Admin</span>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        $(function () {            //implement custom CSS for each split button            $("#spltbutton_customCss1").ejSplitButton({<b>                cssClass: "customCss1",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup",                targetID: "Ul11"            });            $("#spltbutton_customCss2").ejSplitButton({<b>                cssClass: "customCss2",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup",                targetID: "Ul21"            });            $("#spltbutton_customCss3").ejSplitButton({<b>                cssClass: "customCss3",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup",                targetID: "Ul31"            });            $("#spltbutton_customCss4").ejSplitButton({                <b>cssClass: "customCss4",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup",                targetID: "Ul41"            });            $("#spltbutton_customCss5").ejSplitButton({                <b>cssClass: "customCss5",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup",                targetID: "Ul51"            });        });    &lt;/script&gt;</td></tr>
+</table>
 
-            $("#spltbutton_customCss2").ejSplitButton({
-                cssClass: "customCss2",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup",
-                targetID: "Ul21",
-            });
 
-            $("#spltbutton_customCss3").ejSplitButton({
-                cssClass: "customCss3",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup",
-                targetID: "Ul31",
-            });
+Configure the CSS styles to apply on buttons
 
-            $("#spltbutton_customCss4").ejSplitButton({
-                cssClass: "customCss4",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup",
-                targetID: "Ul41",
-            });
 
-            $("#spltbutton_customCss5").ejSplitButton({
-                cssClass: "customCss5",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup",
-                targetID: "Ul51",
-            });
-
-        });
-    </script>
-
-{% endhighlight %}
-
-2. Configure the **CSS** styles to apply on buttons.
 
 {% highlight css %}
 
-
+**[CSS]**
 <style type="text/css">
         /* Customize the button background */
        .e-split .customCss1 {
@@ -865,5 +360,5 @@ The following steps explains you the details about rendering the **Split Button*
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img5.png" Caption="Split button with Custom CSS"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Easy-customization_images/Easy-customization_img5.png" Caption="Figure 7: Split button with Custom CSS"%}
 

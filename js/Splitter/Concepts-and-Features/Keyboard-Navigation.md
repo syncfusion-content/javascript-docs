@@ -13,7 +13,7 @@ With the keyboard navigation enabled in the **Splitter** control, it is possible
 
 The various keyboard shortcuts available within the **Splitter** control are discussed in the following table.
 
-_Table_ _1: Keyboard Shortcuts_
+_Table_ _1__: Keyboard Shortcuts_
 
 <table>
 <tr>
@@ -61,43 +61,23 @@ Resize the pane to the current Splitbar position.</td></tr>
 Esc</td><td>
 Focuses out from the Splitbar.</td></tr>
 </table>
-
 ## Configuring Keyboard Navigation
 
 The following steps explain to enable keyboard interaction for **Splitter** widget.
 
 * In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering **Splitter** control. 
 
-{% highlight html %}
 
-        <div id="spliter">
-            <div>
-                <div class="cont">Pane 1 </div>
-            </div>
-            <div>
-                <div class="cont">Pane 2 </div>
-            </div>
-        </div>
 
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;div id="spliter"&gt;            &lt;div&gt;                <div class="cont">Pane 1 &lt;/div&gt;            &lt;/div&gt;            &lt;div&gt;                <div class="cont">Pane 2 &lt;/div&gt;            &lt;/div&gt;        &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>Splitter</b> properties and focus key function in the script.    &lt;script type="text/javascript"&gt;            $("#spliter").ejSplitter({                height: 250, width: 400,                properties: [{}, { paneSize: 80 }]            });        <b>//Control focus key</b>        $(document).on("keydown", function (e) {            if (e.altKey && e.keyCode === 74) { // j- key code.                $("#spliter .e-splitbar")[0].focus();            }        });    &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-<script type="text/javascript">
-	            $("#spliter").ejSplitter({
-                height: 250, width: 400,
-                properties: [{}, { paneSize: 80 }]
-            });
-
-        //Control focus key
-        $(document).on("keydown", function (e) {
-            if (e.altKey && e.keyCode === 74) { // j- key code.
-                $("#spliter .e-splitbar")[0].focus();
-            }
-        });
-</script>
-
-{% endhighlight %}
 
 * Run the sample and press **Alt + J** to focus the **Splitter** widget. Perform provided functionality by using keyboard shortcuts.
 

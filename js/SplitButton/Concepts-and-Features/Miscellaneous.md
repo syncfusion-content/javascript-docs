@@ -15,46 +15,29 @@ It is necessary to display the user defined text for **Split Button**. Using **t
 
 The following steps explains you the details about rendering the **Split Button** with specified text.
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
-
-
-{% highlight html %}
+* In the **HTML** page, add the following button elements to configure **Split Button** widget
 
 
 
-   <div class="spltspan">
-        <button id="spltbutton_text">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="spltspan"&gt;        <button id="spltbutton_text">login</button>        &lt;ul id="Ul11"&gt;            &lt;li&gt;<span>User</span>&lt;/li&gt;            &lt;li&gt;<span>Guest</span>&lt;/li&gt;            &lt;li&gt;<span>Admin</span>&lt;/li&gt;        &lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            $("#spltbutton_text").ejSplitButton({                //used to set the text content for split button<b>                text: "signin",</b>                size: "small",                                                targetID: "Ul11"                        });        });    &lt;/script&gt;</td></tr>
+</table>
 
 
-// Initialize the control in JavaScript
-    <script type="text/javascript">
-        $(function () {
-            $("#spltbutton_text").ejSplitButton({
-                //used to set the text content for split button
-                text: "signin",
-                size: "small",                                
-                targetID: "Ul11"            
-            });
-        });
-    </script>
-
-{% endhighlight %}
 
 
-2. Configure the styles.
+Configure the styles 
+
+
 
 {% highlight css %}
 
+[CSS]
     <style>
         .spltspan {
             margin-left: 120px;
@@ -67,7 +50,7 @@ The following steps explains you the details about rendering the **Split Button*
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Miscellaneous_images/Miscellaneous_img1.png" Caption="Split button with new text"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Miscellaneous_images/Miscellaneous_img1.png" Caption="Figure 11: Split button with new text"%}
 
 In output “login” text in **Split Button** is replaced by text property value.
 
@@ -77,48 +60,27 @@ Specifies the corner of **Split Button** in rounded shape. By default, the edges
 
 The following steps explains you the details about rendering the **Split Button** with rounded corner.
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
-
-{% highlight html %}
-
-
-<div class="spltspan">
-        <button id="spltbutton_roundedCorner">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-</div>
-
-
-{% endhighlight %}
-
-{% highlight js %}
+* In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
 
 
-// Initialize the control in JavaScript
-    <script type="text/javascript">
-        $(function () {
-            $("#spltbutton_roundedCorner").ejSplitButton({               
-                size: "small",    
-                //Enable or disable the rounded corner for split button            
-                showRoundedCorner: true,
-                targetID: "Ul11"            
-            });
-        });
-    </script>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="spltspan"&gt;        <button id="spltbutton_roundedCorner">login</button>        &lt;ul id="Ul11"&gt;            &lt;li&gt;<span>User</span>&lt;/li&gt;            &lt;li&gt;<span>Guest</span>&lt;/li&gt;            &lt;li&gt;<span>Admin</span>&lt;/li&gt;        &lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>    &lt;script type="text/javascript"&gt;        $(function () {            $("#spltbutton_roundedCorner").ejSplitButton({                               size: "small",                    //Enable or disable the rounded corner for split button            <b>                showRoundedCorner: true,</b>                targetID: "Ul11"                        });        });    &lt;/script&gt;</td></tr>
+</table>
 
 
-{% endhighlight %}
+Configure the styles 
 
 
-2. Configure the styles.
 
 {% highlight css %}
 
-
+[CSS]
     <style>
         .spltspan {
             margin-left: 120px;
@@ -132,5 +94,7 @@ The following steps explains you the details about rendering the **Split Button*
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Miscellaneous_images/Miscellaneous_img2.png" Caption="Split button with rounded corner"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Miscellaneous_images/Miscellaneous_img2.png" Caption="Figure 12: Split button with rounded corner"%}
+
+
 

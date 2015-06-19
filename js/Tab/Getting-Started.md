@@ -31,27 +31,27 @@ The following steps describe the creation of **Tab** control.
 
 {% highlight html %}
 
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-            <!-- Style sheet for default theme (flat azure) -->
-        <linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
-        
-            <!--Scripts-->
-            <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-        
-            <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-        
-            <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-        
-        <scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
-            <!--Add custom scripts here -->
-        </head>
-        <body>
-            <!--add tab element here-->
-        </body>
-        </html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+    <!-- Style sheet for default theme (flat azure) -->
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+
+    <!--Scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+    <!--Add custom scripts here -->
+</head>
+<body>
+    <!--add tab element here-->
+</body>
+</html>
 
 
 {% endhighlight %}
@@ -65,13 +65,13 @@ The following steps describe the creation of **Tab** control.
 {% highlight html %}
 
 
-    <div id="dishType" style="width: 550px">
-      <ul>
-         <li><a href="#pizza">Pizza Menu</a></li>
-         <li><a href="#sandwich">Sandwich Menu</a></li>
-         <li><a href="#pasta">Pasta Menu</a></li>
-      </ul>
-    </div>
+<div id="dishType" style="width: 550px">
+  <ul>
+     <li><a href="#pizza">Pizza Menu</a></li>
+     <li><a href="#sandwich">Sandwich Menu</a></li>
+     <li><a href="#pasta">Pasta Menu</a></li>
+  </ul>
+</div>
 
 
 {% endhighlight %}
@@ -85,13 +85,13 @@ The following steps describe the creation of **Tab** control.
 {% highlight js %}
 
 
-    <script type="text/javascript">
-    $(function () {
-    // document ready
-    // simple Tab header creation
-    	$("#dishType").ejTab();       
-    });
-    </script>
+<script type="text/javascript">
+$(function () {
+// document ready
+// simple Tab header creation
+	$("#dishType").ejTab();       
+});
+</script>
 
 
 {% endhighlight %}
@@ -113,10 +113,10 @@ In this application a detailed description is provided to each item. You can spe
 {% highlight html %}
 
 
-    <div id="pizza" style="background-color: #F5F5F5">
-    <!—Food item description-->
-             <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-    </div>
+<div id="pizza" style="background-color: #F5F5F5">
+<!—Food item description-->
+         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+</div>
 
 
 
@@ -139,15 +139,15 @@ The following code example explains you the **rating** control creation. The inp
 {% highlight html %}
 
 
-    <div id="pizza" style="background-color: #F5F5F5">
-             <p>Rating:</p>
-             <!--Rating control declaration-->
-    **<div class="dishRating">**
-                   **<input id="pizzaRating" type="text" class="rating" />**
-             **</div>**
-              <!--Food item description-->
-             <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-    </div>
+<div id="pizza" style="background-color: #F5F5F5">
+         <p>Rating:</p>
+         <!--Rating control declaration-->
+**<div class="dishRating">**
+               **<input id="pizzaRating" type="text" class="rating" />**
+         **</div>**
+          <!--Food item description-->
+         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+</div>
 
 
 {% endhighlight %}
@@ -161,12 +161,12 @@ To render the **rating** controls in the first **Tab** element refer the styles 
 {% highlight css %}
 
 
-    <style type="text/css" class="cssStyles">
-            .dishRating {
-                position: absolute;
-                margin: -31px 0px 0px 80px;
-            }        
-        </style>
+<style type="text/css" class="cssStyles">
+        .dishRating {
+            position: absolute;
+            margin: -31px 0px 0px 80px;
+        }        
+    </style>
 
 
 {% endhighlight %}
@@ -180,12 +180,12 @@ The following code example is used for rendering the content with **rating** con
 {% highlight js %}
 
 
-    <script type="text/javascript">
-    $(function () {
-    	$("#dishType").ejTab();       
-           $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });
-    });
-    </script>
+<script type="text/javascript">
+$(function () {
+	$("#dishType").ejTab();       
+       $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });
+});
+</script>
 
 
 {% endhighlight %}
@@ -216,15 +216,15 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight html %}
 
-    <!--sub Tab control, the contents loaded with load on demand-->
-    <div id="pizzaType">
-       <ul>
-                    <li><span class="cornSpinach"></span>
-    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/cornSpainach.html">Corn & Spinach </a></li>
-           <li><span class="chickenDelite"></span>
-    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/ChickenDelite.html">Chicken Delite </a></li>   
-                </ul>
-    </div>
+<!--sub Tab control, the contents loaded with load on demand-->
+<div id="pizzaType">
+   <ul>
+                <li><span class="cornSpinach"></span>
+<a href="http://js.syncfusion.com/UG/Web/Tab-Content/cornSpainach.html">Corn & Spinach </a></li>
+       <li><span class="chickenDelite"></span>
+<a href="http://js.syncfusion.com/UG/Web/Tab-Content/ChickenDelite.html">Chicken Delite </a></li>   
+            </ul>
+</div>
 
 
 {% endhighlight %}
@@ -237,18 +237,18 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight html %}
 
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <body>
-        <div class="e-content">
-            <img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
-            <div class="ingredients">
-                Rate    : $70<br/> Ingredients : cheese, sweet corn &amp; green capsicums. 
-                <br /> 
-                Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                    </div>
-        </div>    
-    </body>
-    </html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+    <div class="e-content">
+        <img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
+        <div class="ingredients">
+            Rate    : $70<br/> Ingredients : cheese, sweet corn &amp; green capsicums. 
+            <br /> 
+            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                    </div>
+    </div>    
+</body>
+</html>
 
 
 {% endhighlight %}
@@ -261,18 +261,18 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight html %}
 
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <body>
-        <div class="e-content">
-            <img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite">
-            <div class="ingredients">
-                Rate    : $100<br /> Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.   <br />  
-                 Description: This is a tasty, elegant chicken dish that is easy to prepare. 
-            </div>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+    <div class="e-content">
+        <img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite">
+        <div class="ingredients">
+            Rate    : $100<br /> Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.   <br />  
+             Description: This is a tasty, elegant chicken dish that is easy to prepare. 
         </div>
-    </body>
-    </html>
+    </div>
+</body>
+</html>
 
 
 {% endhighlight %}
@@ -289,17 +289,17 @@ The following code example is used to position the image and content in Load On 
 
 {% highlight css %}
 
-    <style type="text/css" class="cssStyles">
-           /*reuse the previous rating control style section code*/                
-           .ingredients {
-                height: 180px;
-                margin-top: 8px;
-            }
-            img {           
-                float: left;        
-                margin: 10px 26px 5px 1px;
-            }
-        </style>
+<style type="text/css" class="cssStyles">
+       /*reuse the previous rating control style section code*/                
+       .ingredients {
+            height: 180px;
+            margin-top: 8px;
+        }
+        img {           
+            float: left;        
+            margin: 10px 26px 5px 1px;
+        }
+    </style>
 
 
 {% endhighlight %}
@@ -313,12 +313,12 @@ The sub **Tab** control rendering script is represented in the following code ex
 {% highlight js %}
 
 
-    <script type="text/javascript">
-       $(function () {
-            // To reuse the previous script section to render first tab with contents
-            $("#pizzaType").ejTab();
-    });
-    </script>
+<script type="text/javascript">
+   $(function () {
+        // To reuse the previous script section to render first tab with contents
+        $("#pizzaType").ejTab();
+});
+</script>
 
 
 
@@ -351,18 +351,18 @@ The following code example is used to render the sub **Tab** element in the vert
 {% highlight js %}
 
 
-    <script type="text/javascript">
-            $(function () {          
-                 $("#dishType").ejTab();       
-                 $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });
-                 // set the orientation on sub tab element.       
-                 $("#pizzaType").ejTab({
-    **headerPosition**: "left",
-                    height: "221px"
-                });                                                  
-            });
-    </script>
-    
+<script type="text/javascript">
+        $(function () {          
+             $("#dishType").ejTab();       
+             $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });
+             // set the orientation on sub tab element.       
+             $("#pizzaType").ejTab({
+**headerPosition**: "left",
+                height: "221px"
+            });                                                  
+        });
+</script>
+
 
 {% endhighlight %}
 
@@ -385,19 +385,19 @@ The following code example is used for customizing the header image.
 {% highlight css %}
 
 
-    <style type="text/css" class="cssStyles">
-            .dish {
-                display: inline-block;
-                vertical-align: middle;
-                margin: 0px -9px 0px 9px;            
-            }
-            .pizzaImg {
-                background: url("http://js.syncfusion.com/UG/Web/Content/rsz_chicken-delite.png") no-repeat;
-                height: 25px;
-                width: 25px;
-            }
-            /*reuse the previous header orientation code*/                
-    </style>
+<style type="text/css" class="cssStyles">
+        .dish {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px -9px 0px 9px;            
+        }
+        .pizzaImg {
+            background: url("http://js.syncfusion.com/UG/Web/Content/rsz_chicken-delite.png") no-repeat;
+            height: 25px;
+            width: 25px;
+        }
+        /*reuse the previous header orientation code*/                
+</style>
 
 
 
@@ -412,13 +412,13 @@ The following code example is used to add the header image for the root **Tab** 
 {% highlight html %}
 
 
-    <div id="dishType" style="width: 550px">
-          <ul>
-             <li><span class="dish pizzaImg"></span><a href="#pizza">Pizza Menu</a></li>  
-             <!—- reuse the remaining tab header -->       
-           </ul>
-           <!—- reuse the previously defined first tab html content section-->
-    </div>
+<div id="dishType" style="width: 550px">
+      <ul>
+         <li><span class="dish pizzaImg"></span><a href="#pizza">Pizza Menu</a></li>  
+         <!—- reuse the remaining tab header -->       
+       </ul>
+       <!—- reuse the previously defined first tab html content section-->
+</div>
 
 
 
@@ -459,26 +459,26 @@ Add the second **Tab** contents in &lt;div&gt; element during initialization.
 {% highlight html %}
 
 
-         <div id="sandwich" style="background-color: #F5F5F5">
-              <p>Rating:</p>
-              <!--Rating control declaration-->
-              <div class="dishRating">
-                    <input id="sandwichRating" type="text" class="rating" />
-              </div>
-             <!--dish description-->
-              <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-              <!--sub Tab control, the contents loaded with load on demand-->
-              <div id="sandwichType">
-                  <ul>
-                      <li>
-    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/gardenVeggie.html"> Garden Veggie </a></li>
-                       <li>
-    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/chickenTikka.html"> Chicken Tikka </a></li>
-                       <li>
-    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/paneerTikka.html"> Paneer Tikka </a></li>             
-                  </ul>
-               </div>
-         </div>
+     <div id="sandwich" style="background-color: #F5F5F5">
+          <p>Rating:</p>
+          <!--Rating control declaration-->
+          <div class="dishRating">
+                <input id="sandwichRating" type="text" class="rating" />
+          </div>
+         <!--dish description-->
+          <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+          <!--sub Tab control, the contents loaded with load on demand-->
+          <div id="sandwichType">
+              <ul>
+                  <li>
+<a href="http://js.syncfusion.com/UG/Web/Tab-Content/gardenVeggie.html"> Garden Veggie </a></li>
+                   <li>
+<a href="http://js.syncfusion.com/UG/Web/Tab-Content/chickenTikka.html"> Chicken Tikka </a></li>
+                   <li>
+<a href="http://js.syncfusion.com/UG/Web/Tab-Content/paneerTikka.html"> Paneer Tikka </a></li>             
+              </ul>
+           </div>
+     </div>
 
 
 {% endhighlight %}
@@ -492,27 +492,27 @@ Add third **Tab** contents in &lt;div&gt; element during initialization.
 {% highlight html %}
 
 
-          <div id="pasta" style="background-color: #F5F5F5">
-              <p>Rating:</p>
-              <!--Rating control declaration-->
-              <div class="dishRating">
-                  <input id="pastaRating" type="text" class="rating" />
-              </div>
-              <!--dish description-->
-              <p>Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-               <!--sub Tab control, the contents loaded with load on demand-->
-               <div id="pastaType">
-                   <ul>
-                       <li>
-    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/khemmaPasta.html">Kheema Pasta </a></li>
-                       <li>
-    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/tunaPasta.html">Tuna Pasta</a></li>
-                       <li>
-    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/channaPasta.html">Channa Pasta
-    </a></li>                
-                   </ul>
-                </div>
-           </div>
+      <div id="pasta" style="background-color: #F5F5F5">
+          <p>Rating:</p>
+          <!--Rating control declaration-->
+          <div class="dishRating">
+              <input id="pastaRating" type="text" class="rating" />
+          </div>
+          <!--dish description-->
+          <p>Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+           <!--sub Tab control, the contents loaded with load on demand-->
+           <div id="pastaType">
+               <ul>
+                   <li>
+<a href="http://js.syncfusion.com/UG/Web/Tab-Content/khemmaPasta.html">Kheema Pasta </a></li>
+                   <li>
+<a href="http://js.syncfusion.com/UG/Web/Tab-Content/tunaPasta.html">Tuna Pasta</a></li>
+                   <li>
+<a href="http://js.syncfusion.com/UG/Web/Tab-Content/channaPasta.html">Channa Pasta
+</a></li>                
+               </ul>
+            </div>
+       </div>
 
 
 {% endhighlight %}
@@ -525,19 +525,19 @@ Apply the following styles to the **Tab**.
 
 {% highlight css %}
 
-    <style type="text/css" class="cssStyles">
-            /*to reuse the previous style section code and following css*/        
-           .sandwichImg, .pastaImg {
-                height: 25px;
-                width: 25px;
-            }
-            .sandwichImg {
-                background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-fresh.png") no-repeat;                       
-            }
-            .pastaImg {
-                background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-veggie.png") no-repeat;                 
-            }  
-    </style>
+<style type="text/css" class="cssStyles">
+        /*to reuse the previous style section code and following css*/        
+       .sandwichImg, .pastaImg {
+            height: 25px;
+            width: 25px;
+        }
+        .sandwichImg {
+            background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-fresh.png") no-repeat;                       
+        }
+        .pastaImg {
+            background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-veggie.png") no-repeat;                 
+        }  
+</style>
 
 
 {% endhighlight %}
@@ -551,27 +551,27 @@ After the content declaration of all the **Tab** control, render the final outpu
 {% highlight js %}
 
 
-    <script type="text/javascript">
-            $(function () {
-                // declaration       
-                $("#dishType").ejTab();        // Overall Tab Container   
-                $("#pizzaType").ejTab({        // First sub child Tab Container  
-                    headerPosition: "left",
-                    height: "221px"
-                });                                                  
-                $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });  
-                $("#sandwichType").ejTab({     // Second sub child Tab Container   
-                    headerPosition: "left",
-                    height: "221px"
-                });                                                                              
-                $("#sandwichRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 3.9 });    
-                $("#pastaType").ejTab({       // Third sub child Tab Container  
-                    headerPosition: "left",
-                    height: "221px"
-                });                                                                
-                $("#pastaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.5 }); 
-            });
-        </script>                 
+<script type="text/javascript">
+        $(function () {
+            // declaration       
+            $("#dishType").ejTab();        // Overall Tab Container   
+            $("#pizzaType").ejTab({        // First sub child Tab Container  
+                headerPosition: "left",
+                height: "221px"
+            });                                                  
+            $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });  
+            $("#sandwichType").ejTab({     // Second sub child Tab Container   
+                headerPosition: "left",
+                height: "221px"
+            });                                                                              
+            $("#sandwichRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 3.9 });    
+            $("#pastaType").ejTab({       // Third sub child Tab Container  
+                headerPosition: "left",
+                height: "221px"
+            });                                                                
+            $("#pastaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.5 }); 
+        });
+    </script>                 
 
 
 {% endhighlight %}

@@ -15,7 +15,7 @@ Button is used in all applications. Button size, content and content location is
 
 You can render the button in different sizes. Here, you have some predefined size options for rendering a button with different sizes in easiest way. Each size option has different height and width. Mainly it avoids the complexity in rendering button with complex **CSS** class. 
 
-_List of predefined button size_
+_Table_ _1__: List of predefined button size_
 
 <table>
 <tr>
@@ -45,77 +45,32 @@ Apart from the above mentioned predefined size option, you can set your own widt
 
 The following steps explains you the details about rendering the button with different size options.
 
-1. In the **HTML** page, add the following button elements to configure button widget.
+* In the **HTML** page, add the following button elements to configure button widget.
 
-{% highlight html %}
 
-    <button id="button_normal">login</button>
-    <button id="button_mini">login</button>
-    <button id="button_small">login</button>
-    <button id="button_medium">login</button>
-    <button id="button_large">login</button>
-    <button id="button_custom">login</button>
-    
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML] </b>    <button id="button_normal">login</button>    <button id="button_mini">login</button>    <button id="button_small">login</button>    <button id="button_medium">login</button>    <button id="button_large">login</button>    <button id="button_custom">login</button></td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>//Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    //Here size property is used to render the button in different sizes    $(function () {        $("#button_normal").ejButton({            //normal size type is used<b>            size: "normal",</b>            showRoundedCorner: true,            contentType: "imageonly",            prefixIcon: "e-uiLight e-handup"        });        $("#button_mini").ejButton({            showRoundedCorner: true,            //mini size type is used<b>            size: "mini"</b>        });        $("#button_small").ejButton({            showRoundedCorner: true,            //small size type is used            <b>size: "small"</b>        });        $("#button_medium").ejButton({            showRoundedCorner: true,            //medium size type is used            <b>size: "medium"</b>        });        $("#button_large").ejButton({            //large size type is used<b>            size: "large",</b>            showRoundedCorner: true,            contentType: "textandimage",            prefixIcon: "e-uiLight e-handup"        });        $("#button_custom").ejButton({            //button with user given height and width<b>            height: 50,</b><b>            width: 130,</b>            showRoundedCorner: true,            contentType: "textandimage",            prefixIcon: "e-uiLight e-handup"        });    });    &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
 
-<script type="text/javascript">
-    //Here size property is used to render the button in different sizes
-    $(function () {
-        $("#button_normal").ejButton({
-            //normal size type is used
-            size: "normal",
-            showRoundedCorner: true,
-            contentType: "imageonly",
-            prefixIcon: "e-uiLight e-handup"
-        });
-        $("#button_mini").ejButton({
-            showRoundedCorner: true,
-            //mini size type is used
-            size: "mini"
-        });
-        $("#button_small").ejButton({
-            showRoundedCorner: true,
-            //small size type is used
-            size: "small"
-        });
-        $("#button_medium").ejButton({
-            showRoundedCorner: true,
-            //medium size type is used
-            size: "medium"
-        });
-        $("#button_large").ejButton({
-            //large size type is used
-            size: "large",
-            showRoundedCorner: true,
-            contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup"
-        });
-        $("#button_custom").ejButton({
-            //button with user given height and width
-            height: 50,
-            width: 130,
-            showRoundedCorner: true,
-            contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup"
-        });
-    });
-    </script>
 
-{% endhighlight %}
 
 Execute the above code to render the following output.
 
 {% include image.html url="/js/Button/Concepts-and-Features/Easy-Customization_images/Easy-Customization_img1.png" Caption=""%}
 
-_Button with different sizes_
+_Figure 5: Button with different sizes_
 
 ## Content Type
 
 The content of the **Button** is mainly text and images. Instead of using complex **CSS** classes to render **Button** with different content types, you can use some predefined content type options provided for button control. Using this content types you can easily add different types of content for button. **Button** supports the following content types.
 
-_List of content types for button_
+_Table_ _2__: List of content types for button_
 
 <table>
 <tr>
@@ -139,7 +94,6 @@ Supports image with the text content.</td></tr>
 <b>imagetextimage</b></td><td>
 Supports image with both ends and middle in text.</td></tr>
 </table>
-
 ## Prefix and Suffix icons
 
 Icons inside the **Button** is added easily using **prefixIcon and suffixIcon** property. Location of the icon in button is a necessary thing and you can easily customize it using the following mentioned options.
@@ -148,21 +102,21 @@ Icons inside the **Button** is added easily using **prefixIcon and suffixIcon** 
 
 For example the following mentioned build-in **CSS** class are used to show the font icons that is used by media player.
 
-* e-mediaback
+e-mediaback
 
-* e-mediaforward
+e-mediaforward
 
-* e-medianext
+e-medianext
 
-* e-mediaprev
+e-mediaprev
 
-* e-mediaeject
+e-mediaeject
 
-* e-mediaclose
+e-mediaclose
 
-* e-mediapause
+e-mediapause
 
-* e-mediaplay
+e-mediaplay
 
 ### Prefix Icon
 
@@ -174,120 +128,31 @@ It inserts the icon at the ending position of button. Before this suffix icon, y
 
 The following steps explains you the details about rendering the **Button** with above mentioned **content type**, **prefix** and **suffix icon** options
 
-1. In the **HTML** page, add the following button elements to configure **Button** widget.
-
-{% highlight html %}
-
-  
-    <button id="button_imageonly">login</button>
-    <button id="button_textonly">login</button>
-    <button id="button_imageboth">login</button>
-    <button id="button_textandimage">login</button>
-    <button id="button_imagetextimage">login</button>
-    <br />
-    <br />
-    <button id="button_imageonly_small">login</button>
-    <button id="button_textonly_small">login</button>
-    <button id="button_imageboth_small">login</button>
-    <button id="button_textandimage_small">login</button>
-    <button id="button_imagetextimage_small">login</button>
+* In the **HTML** page, add the following button elements to configure **Button** widget.
 
 
-{% endhighlight %}
 
-{% highlight js %}
+<table>
+<tr>
+<td>
+<b>[HTML]    </b>    <button id="button_imageonly">login</button>    <button id="button_textonly">login</button>    <button id="button_imageboth">login</button>    <button id="button_textandimage">login</button>    <button id="button_imagetextimage">login</button>    &lt;br /&gt;    &lt;br /&gt;    <button id="button_imageonly_small">login</button>    <button id="button_textonly_small">login</button>    <button id="button_imageboth_small">login</button>    <button id="button_textandimage_small">login</button>    <button id="button_imagetextimage_small">login</button></td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        // Here use contentType property to render the button with different contents        $(function () {            $("#button_imageonly").ejButton({                //only image is used as content<b>                contentType: "imageonly",</b>                showRoundedCorner: true,                prefixIcon: "e-uiLight e-handup"            });            $("#button_textonly").ejButton({                //only text is used as content<b>                contentType: "textonly",</b>                showRoundedCorner: true,            });            $("#button_imageboth").ejButton({                //only images in both end is used as content<b>                contentType: "imageboth",</b>                showRoundedCorner: true,                prefixIcon: "e-uiLight e-handup",                suffixIcon: "e-uiLight e-palette"            });            $("#button_textandimage").ejButton({                //text and image is used as content<b>                contentType: "textandimage",</b>                showRoundedCorner: true,                prefixIcon: "e-uiLight e-handup"            });            $("#button_imagetextimage").ejButton({                //images in both end and text in center is used as content<b>                contentType: "imagetextimage",</b>                showRoundedCorner: true,                prefixIcon: "e-uiLight e-handup",                suffixIcon: "e-uiLight e-palette"            });            $("#button_imageonly_small").ejButton({                size: "small",                //only image is used as content<b>                contentType: "imageonly",</b>                showRoundedCorner: true,                prefixIcon: "e-uiLight e-handup"            });            $("#button_textonly_small").ejButton({                size: "small",                //only text is used as content<b>                contentType: "textonly",</b>                showRoundedCorner: true,            });            $("#button_imageboth_small").ejButton({                size: "small",                //only images in both end is used as content                <b>contentType: "imageboth",</b>                showRoundedCorner: true,                //It specifies the image in prefix location                prefixIcon: "e-uiLight e-handup",                //It specifies the image in suffix location                suffixIcon: "e-uiLight e-palette"            });            $("#button_textandimage_small").ejButton({                size: "small",                //text and image is used as content                <b>contentType: "textandimage",</b>                showRoundedCorner: true,                prefixIcon: "e-uiLight e-handup"            });            $("#button_imagetextimage_small").ejButton({                size: "small",                //images in both end and text in center is used as content<b>                contentType: "imagetextimage",</b>                showRoundedCorner: true,                prefixIcon: "e-uiLight e-handup",                suffixIcon: "e-uiLight e-palette"            });        });    &lt;/script&gt;</td></tr>
+</table>
 
-
-<script type="text/javascript">
-        // Here use contentType property to render the button with different contents
-        $(function () {
-            $("#button_imageonly").ejButton({
-                //only image is used as content
-                contentType: "imageonly",
-                showRoundedCorner: true,
-                prefixIcon: "e-uiLight e-handup"
-            });
-            $("#button_textonly").ejButton({
-                //only text is used as content
-                contentType: "textonly",
-                showRoundedCorner: true,
-            });
-            $("#button_imageboth").ejButton({
-                //only images in both end is used as content
-                contentType: "imageboth",
-                showRoundedCorner: true,
-                prefixIcon: "e-uiLight e-handup",
-                suffixIcon: "e-uiLight e-palette"
-            });
-            $("#button_textandimage").ejButton({
-                //text and image is used as content
-                contentType: "textandimage",
-                showRoundedCorner: true,
-                prefixIcon: "e-uiLight e-handup"
-            });
-            $("#button_imagetextimage").ejButton({
-                //images in both end and text in center is used as content
-                contentType: "imagetextimage",
-                showRoundedCorner: true,
-                prefixIcon: "e-uiLight e-handup",
-                suffixIcon: "e-uiLight e-palette"
-            });
-
-            $("#button_imageonly_small").ejButton({
-                size: "small",
-                //only image is used as content
-                contentType: "imageonly",
-                showRoundedCorner: true,
-                prefixIcon: "e-uiLight e-handup"
-            });
-            $("#button_textonly_small").ejButton({
-                size: "small",
-                //only text is used as content
-                contentType: "textonly",
-                showRoundedCorner: true,
-            });
-            $("#button_imageboth_small").ejButton({
-                size: "small",
-                //only images in both end is used as content
-                contentType: "imageboth",
-                showRoundedCorner: true,
-                //It specifies the image in prefix location
-                prefixIcon: "e-uiLight e-handup",
-                //It specifies the image in suffix location
-                suffixIcon: "e-uiLight e-palette"
-            });
-            $("#button_textandimage_small").ejButton({
-                size: "small",
-                //text and image is used as content
-                contentType: "textandimage",
-                showRoundedCorner: true,
-                prefixIcon: "e-uiLight e-handup"
-            });
-            $("#button_imagetextimage_small").ejButton({
-                size: "small",
-                //images in both end and text in center is used as content
-                contentType: "imagetextimage",
-                showRoundedCorner: true,
-                prefixIcon: "e-uiLight e-handup",
-                suffixIcon: "e-uiLight e-palette"
-            });
-        });
-    </script>
-
-
-{% endhighlight %}
 
 Execute the above code to render the following output.
 
 {% include image.html url="/js/Button/Concepts-and-Features/Easy-Customization_images/Easy-Customization_img2.png" Caption=""%}
 
-_Button with different content types_
+_Figure 6: Button with different content types_
 
 ## Image Position
 
-To provide the best look and feel for **Button**, position of button images is an important customizable option. With **imagePosition** property you can easily customize the position of images inside button without using any complex **CSS**. **imagePosition** property is applicable only with the **textandimage** **contentType** property. This property supports the following values.
+To provide the best look and feel for **Button**, position of button images is an important customizable option. With **imagePosition** property you can easily customize the position of images inside button without using any complex **CSS**. **imagePosition** property is applicable only with the **textandimage****contentType** property. This property supports the following values.
 
-_List of values supported by contentType property_
+_Table_ _3__: List of values supported by contentType property_
 
 <table>
 <tr>
@@ -311,130 +176,25 @@ Support for aligning text in top and image in bottom.</td></tr>
 
 The following steps explains you the details about rendering the **Button** with the above mentioned image Position options.
 
-1. In the **HTML** page, add the following button elements to configure **Button** widget.
-
-{% highlight html %}
+* In the **HTML** page, add the following button elements to configure **Button** widget.
 
 
-    <button id="button_imageleft_normal">login</button>
-    <button id="button_imageleft_mini">login</button>
-    <button id="button_imageleft_small">login</button>
-    <button id="button_imageleft_medium">login</button>
-    <button id="button_imageleft_large">login</button>
-    <br />
-    <br />
-    <button id="button_imageright_normal">login</button>
-    <button id="button_imageright_mini">login</button>
-    <button id="button_imageright_small">login</button>
-    <button id="button_imageright_medium">login</button>
-    <button id="button_imageright_large">login</button>
-    <br />
-    <br />
-    <button id="button_imagetop">login</button>
-    <button id="button_imagebottom">login</button>
 
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    <button id="button_imageleft_normal">login</button>    <button id="button_imageleft_mini">login</button>    <button id="button_imageleft_small">login</button>    <button id="button_imageleft_medium">login</button>    <button id="button_imageleft_large">login</button>    &lt;br /&gt;    &lt;br /&gt;    <button id="button_imageright_normal">login</button>    <button id="button_imageright_mini">login</button>    <button id="button_imageright_small">login</button>    <button id="button_imageright_medium">login</button>    <button id="button_imageright_large">login</button>    &lt;br /&gt;    &lt;br /&gt;    <button id="button_imagetop">login</button>    <button id="button_imagebottom">login</button></td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    //Using imagePosition property you can render the button images with different position    $(function () {        $("#button_imageleft_normal").ejButton({            size: "normal",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageleft_mini").ejButton({            size: "mini",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageleft_small").ejButton({            size: "small",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageleft_medium").ejButton({            size: "medium",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageleft_large").ejButton({            size: "large",<b>            imagePosition: "imageleft",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageright_normal").ejButton({            size: "normal",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageright_mini").ejButton({            size: "mini",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageright_small").ejButton({            size: "small",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageright_medium").ejButton({            size: "medium",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imageright_large").ejButton({            size: "large",<b>            imagePosition: "imageright",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",        });        $("#button_imagetop").ejButton({<b>            imagePosition: "imagetop",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            width: 60        });        $("#button_imagebottom").ejButton({<b>            imagePosition: "imagebottom",</b>            contentType: "textandimage",            showRoundedCorner: true,            prefixIcon: "e-uiLight e-handup",            width: 60        });    });    &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-    //Using imagePosition property you can render the button images with different position
-    $(function () {
-        $("#button_imageleft_normal").ejButton({
-            size: "normal",
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageleft_mini").ejButton({
-            size: "mini",
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageleft_small").ejButton({
-            size: "small",
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageleft_medium").ejButton({
-            size: "medium",
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageleft_large").ejButton({
-            size: "large",
-            imagePosition: "imageleft",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageright_normal").ejButton({
-            size: "normal",
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageright_mini").ejButton({
-            size: "mini",
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageright_small").ejButton({
-            size: "small",
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageright_medium").ejButton({
-            size: "medium",
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imageright_large").ejButton({
-            size: "large",
-            imagePosition: "imageright",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-        });
-        $("#button_imagetop").ejButton({
-            imagePosition: "imagetop",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            width: 60
-        });
-        $("#button_imagebottom").ejButton({
-            imagePosition: "imagebottom",
-            contentType: "textandimage",
-            showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            width: 60
-        });
-    });
-    </script>
-    
-{% endhighlight %}
 
 Execute the above code to render the following output.
 
 {% include image.html url="/js/Button/Concepts-and-Features/Easy-Customization_images/Easy-Customization_img3.png" Caption=""%}
 
-_Button with different image positions_
+_Figure 7: Button with different image positions_
 
 ## Theme support
 
@@ -472,69 +232,27 @@ You can customize the appearance of **Button** control using **CSS** class. Defi
 
 The following steps explains you the details about rendering the **Button** with custom **CSS.**
 
-1. In the **HTML** page, add the following button elements to configure **Button** widget.
-
-{% highlight html %}
+* In the **HTML** page, add the following button elements to configure **Button** widget.
 
 
-    <button id="button_customCss1">login</button>
-    <button id="button_customCss2">login</button>
-    <button id="button_customCss3">login</button>
-    <button id="button_customCss4">login</button>
-    <button id="button_customCss5">login</button>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        //implement custom CSS for each button
-        $(function () {
-            $("#button_customCss1").ejButton({
-                cssClass: "customCss1",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup",
-            });
-            $("#button_customCss2").ejButton({
-                cssClass: "customCss2",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup"
-            });
-            $("#button_customCss3").ejButton({
-                cssClass: "customCss3",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup"
-            });
-            $("#button_customCss4").ejButton({
-                cssClass: "customCss4",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup"
-            });
-            $("#button_customCss5").ejButton({
-                cssClass: "customCss5",
-                size: "small",
-                showRoundedCorner: true,
-                contentType: "textandimage",
-                prefixIcon: "e-uiLight e-handup"
-            });
-        });
-    </script>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    <button id="button_customCss1">login</button>    <button id="button_customCss2">login</button>    <button id="button_customCss3">login</button>    <button id="button_customCss4">login</button>    <button id="button_customCss5">login</button></td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;        //implement custom CSS for each button        $(function () {            $("#button_customCss1").ejButton({<b>                cssClass: "customCss1",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup",            });            $("#button_customCss2").ejButton({<b>                cssClass: "customCss2",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup"            });            $("#button_customCss3").ejButton({<b>                cssClass: "customCss3",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup"            });            $("#button_customCss4").ejButton({<b>                cssClass: "customCss4",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup"            });            $("#button_customCss5").ejButton({<b>                cssClass: "customCss5",</b>                size: "small",                showRoundedCorner: true,                contentType: "textandimage",                prefixIcon: "e-uiLight e-handup"            });        });    &lt;/script&gt;</td></tr>
+</table>
 
 
-{% endhighlight %}
+* Configure the **CSS** styles to apply on buttons.
 
-2. Configure the **CSS** styles to apply on buttons.
+
 
 {% highlight css %}
 
+**[CSS]**
 <style type="text/css" class="cssStyles">
         /* Customize the button background */
         .e-button.customCss1 {
@@ -575,5 +293,5 @@ Execute the above code to render the following output.
 
 {% include image.html url="/js/Button/Concepts-and-Features/Easy-Customization_images/Easy-Customization_img4.png" Caption=""%}
 
-_Button with Custom CSS_
+_Figure 8: Button with Custom CSS_
 

@@ -11,7 +11,7 @@ documentation: ug
 
 You can use **keyboard** shortcut keys as an alternative to the mouse while using the **AutoComplete** widget. The **AutoComplete** widget allows you to perform all kinds of actions using **keyboard** shortcuts.
 
-_Keyboard shortcut keys_
+_Table_ _1__: Keyboard shortcut keys_
 
 <table>
 <tr>
@@ -20,8 +20,8 @@ _Keyboard shortcut keys_
 <b>Description</b></td></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a> + j	</td><td>
-Focuses into the AutoComplete text box</td></tr>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j	</td><td>
+Focuses into the <b>AutoComplete</b> text box</td></tr>
 <tr>
 <td>
 Up</td><td>
@@ -40,15 +40,19 @@ Esc</td><td>
 Closes the popup</td></tr>
 </table>
 
+
 ## Configure Keyboard Interaction
 
 The following steps explain how you can enable **keyboard** interaction for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget and enable keyboard interaction by the **accesskey** property.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget and enable keyboard interaction by the **accesskey** property.
+
+
 
 {% highlight html %}
 
-           <input type="text" id="autocomplete" accesskey="j" />
+**[HTML]**
+           <input type="text" id="autocomplete" **accesskey="j"**/>
 
 
 
@@ -56,27 +60,35 @@ The following steps explain how you can enable **keyboard** interaction for an *
 
 
 
-2. Render **AutoComplete** control.
+* Render **AutoComplete** control.
+
+****
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
     $('#autocomplete').ejAutocomplete({
                 width: 200,
                 dataSource: carList
             });
-</script>
+
 
 
 {% endhighlight %}
 
 
 
-3. Provide **Keyboard** navigation access to **AutoComplete**.
+
+
+* Provide **Keyboard** navigation access to **AutoComplete**.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
+
+    <script type="text/javascript">
     $(function () {
         $(document).on("keydown", function (e) {
             if (e.altKey && e.keyCode === 74) { // j- key code.
@@ -91,9 +103,13 @@ The following steps explain how you can enable **keyboard** interaction for an *
 
 
 
-4. Run the sample, press **AccessKey + J** to focus in the **AutoComplete** widget and you can navigate using the arrow keys. Use the **Escape** key to close the popup.
+
+
+* Run the sample, press **AccessKey + J** to focus in the **AutoComplete** widget and you can navigate using the arrow keys. Use the **Escape** key to close the popup.
+
+
 
 {% include image.html url="/js/Autocomplete/Concepts-and-Features/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption=""%}
 
-_AutoComplete focused with keyboard shortcut_
+_Figure 29: AutoComplete focused with keyboard shortcut_
 

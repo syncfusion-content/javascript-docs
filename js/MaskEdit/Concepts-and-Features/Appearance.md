@@ -49,27 +49,14 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget.
 
 
 
-{% highlight html %}
-
-<input id="maskedit" type="text" /> 
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-    $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            cssClass: "customCss"
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;<b> </b></td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to render the MaskEdit control.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            <b>cssClass: "customCss"</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 * Customize the CSS properties in custom CSS class.
@@ -78,6 +65,7 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget.
 
 {% highlight css %}
 
+**[CSS]**
 
     <style>
         .customCss .e-box {
@@ -113,28 +101,15 @@ The following steps explain the implementation of MaskEdit with **showRoundedCor
 In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget. 
 
 
-{% highlight html %}
 
-<input id="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            showRoundedCorner: true,
-            value: "123456"
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to render the MaskEdit control.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            <b>showRoundedCorner: true,</b>            value: "123456"        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 Output of MaskEdit when **showRoundedCorner** is “**true**”.
@@ -152,32 +127,20 @@ The following steps explain the implementation of MaskEdit with **watermarkText*
 In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget.
 
 
-{% highlight html %}
 
-<input id="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            watermarkText: "Enter the Mask"
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to render the MaskEdit control.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            <b>watermarkText: "Enter the Mask"</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 
 
-Output of MaskEdit when **waterMarkText** is “**true**”.
+Output of MaskEdit when **showRoundedCorner** is “**true**”.
 
 
 
@@ -192,27 +155,15 @@ The following steps explain the implementation of MaskEdit with **textAlign** pr
 * In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget
 
 
-{% highlight html %}
 
-<input id="maskedit" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-99999",
-            textAlign: ej.TextAlign.Right
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to render the MaskEdit control.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-99999",            <b>textAlign: ej.TextAlign.Right</b>        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 

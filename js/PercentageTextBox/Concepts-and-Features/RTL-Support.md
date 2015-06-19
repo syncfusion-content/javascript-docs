@@ -19,33 +19,14 @@ The following steps explain the implementation of **enableRTL** in **PercentageT
 
 
 
-{% highlight html %}
-
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-	        $("#percent").ejPercentageTextbox({
-            value: 22,
-            enableRTL: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enableRTL </b>property<b> </b>as<b> “true”</b> to the <b>PercentageTextBox </b>controls. The default value for <b>enableRTL </b>is false    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 22,            <b>enableRTL: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** when **enableRTL** is **“true”** is as follows. 

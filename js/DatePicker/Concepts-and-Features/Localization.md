@@ -11,7 +11,7 @@ documentation: ug
 
 **Localization** is language support based on the culture in **DatePicker**. You can achieve the **Localization** using “**locale”** property in **DatePicker**.
 
-In order to enable [localization](http://help.syncfusion.com/ug/js/default.htm) refer the following scripts: **globalize.cultures.js** **and globalize.js.** The “**globalize.cultures.js**” includes different language support for **JavaScript** controls and the “**globalize.js**” is a simple **JavaScript** library that allows you to format and dates based on the specified culture.
+In order to enable [localization](http://help.syncfusion.com/ug/js/default.htm) refer the following scripts: **globalize.cultures.js** **and globalize.js.** The “**globalize.cultures.js**” includes different language support for **JavaScript** controls and the “**g****lobalize.js**” is a simple **JavaScript** library that allows you to format and dates based on the specified culture.
 
 You can refer the following online link reference for **globalize.js**
 
@@ -27,34 +27,15 @@ The following steps explain you how to get the **Localization**.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="datepicker" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the code to render the Localization&lt;script type="text/javascript"&gt;        $(function () {            $("#datepicker").ejDatePicker({                locale: "fr-FR",                buttonText: "aujourd'hui"            });        });    &lt;/script&gt;</td></tr>
+</table>
+The following screenshot displays the output for the above code.
 
-  {% highlight html %}
-
-      <input id="datepicker" type="text" />
-      
-  {% endhighlight %}
-  
-  {% highlight js %}
-
-<script type="text/javascript">
-  // Add the code to render the Localization
-        $(function () {
-            $("#datepicker").ejDatePicker({
-                locale: "fr-FR",
-                buttonText: "aujourd'hui"
-            });
-
-        });
-    </script>
-
-
-  {% endhighlight %}
-
-
-
-*  The following screenshot displays the output for the above code.
-
-
-
-{% include image.html url="/js/DatePicker/Concepts-and-Features/Localization_images/Localization_img1.png" Caption="Figure 14: Localization Support in DatePicker"%}
+{% include image.html url="/js/DatePicker/Concepts-and-Features/Localization_images/Localization_img1.png" Caption="Localization Support in DatePicker"%}
 

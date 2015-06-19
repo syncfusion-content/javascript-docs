@@ -17,15 +17,13 @@ This section explains briefly about how to create a **Toolbar** in your applicat
 
 **Toolbar** control supports displaying a list of tools in a Web page. This control is capable of customizing toolbar items with any functionality by using enriched **client-side** methods. This control consists of a collection of **unordered****lists** contains text and images into a **&lt;div&gt;.** From the following section, you can learn how to customize **toolbar** control for a **PDF reader** scenario. The following screen shot shows the appearance of **toolbar** in **PDF reader** simulator application.
 
-{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: PDF Reader"%}
+{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img1.png" Caption="PDF Reader"%}
 
 #### Create a Toolbar
 
 The **Essential JavaScript Toolbar** control can be easily configured with **HTML &lt;DIV&gt;** and **&lt;UL&gt;&lt;LI&gt;** elements. The basic rendering of **Essential JS Toolbar** is achieved by the default functionality.
 
-* Create an HTML file and add the following template into the **HTML** file for **Toolbar** creation.
-
-
+1. Create an HTML file and add the following template into the **HTML** file for **Toolbar** creation.
 
 {% highlight html %}
 
@@ -34,7 +32,7 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -43,7 +41,7 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -55,11 +53,7 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
 
 {% endhighlight %}
 
-
-
-* Add div or span element for **Toolbar** rendering.
-
-
+2. Add div or span element for **Toolbar** rendering.
 
 {% highlight html %}
 
@@ -70,11 +64,7 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
 
 {% endhighlight %}
 
-
-
-* Initialize the **Toolbar** in script
-
-
+3. Initialize the **Toolbar** in script
 
 {% highlight js %}
 
@@ -95,17 +85,9 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
 
 {% endhighlight %}
 
+Output of the above steps.
 
-
-* Output of the above steps
-
-
-
-{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
-
-
-
-_Figure_ _2__: Toolbar without toolbar items_
+{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img2.png" Caption="Toolbar without toolbar items"%}
 
 #### Initialize Toolbar Items
 
@@ -115,9 +97,8 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 {% highlight html %}
 
-
-
-    <div class="control">
+**[HTML]**
+<div class="control">
 
         <div id="ToolbarItem">
 
@@ -151,8 +132,6 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 
 {% endhighlight %}
-
-
 
 Apply the given styles in the code table to show the **toolbar items** as follows. You can refer images from any location. In the following code sample, the images are referred from the given location.
 
@@ -200,11 +179,7 @@ Apply the given styles in the code table to show the **toolbar items** as follow
 
 {% endhighlight %}
 
-
-
-After updating the **Toolbar** **items** with their **CSS** styles, you can render the toolbar inside **&lt;script&gt;** tag.
-
-
+After updating the **Toolbar****items** with their **CSS** styles, you can render the toolbar inside **&lt;script&gt;** tag.
 
 {% highlight js %}
 
@@ -228,17 +203,13 @@ After updating the **Toolbar** **items** with their **CSS** styles, you can rend
 
 {% endhighlight %}
 
-
-
 Execute the code to render a toolbar with a list of **toolbar items**.
-
-
 
 {% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
 
 
-_Figure_ _3__: Toolbar with list of toolbar items_
+_Toolbar with list of toolbar items_
 
 #### Render remaining Toolbar items
 
@@ -248,7 +219,7 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 {% highlight html %}
 
-
+**[HTML]**
 <div id="ToolbarItem">
 
         <!--Initializes toolbar items from above code example -->
@@ -305,15 +276,13 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 {% endhighlight %}
 
-
-
 Add the following styles in the code table to display the toolbar items as follows. 
 
 
 
-{% highlight css %}
+    /*Additional style for Remaining toolbar items*/
 
-<style>
+
 
        .PdfDocument.e-icon.previous {
 
@@ -321,11 +290,15 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
+
+
         .PdfDocument.e-icon.next {
 
             background-position: -439px 0px;
 
         }
+
+
 
         .PdfDocument.e-icon.zoomIn {
 
@@ -333,11 +306,15 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
+
+
         .PdfDocument.e-icon.zoomOut {
 
             background-position: -219px 0px;
 
         }
+
+
 
         .PdfDocument.e-icon.fitOne {
 
@@ -345,11 +322,15 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
+
+
         .PdfDocument.e-icon.sticky {
 
             background-position: -131px -1px;
 
         }
+
+
 
         .PdfDocument.e-icon.readMode {
 
@@ -357,11 +338,15 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
+
+
         .PdfDocument.e-icon.print {
 
             background-position: -43px 0px;
 
         }
+
+
 
         #ZoomValue .PdfDocument {
 
@@ -399,16 +384,13 @@ Add the following styles in the code table to display the toolbar items as follo
 
         }
 
- </style>
- 
-{% endhighlight %}
 
 
 After updating the Toolbar items with their **CSS** styles, you can render the toolbar inside the **&lt;script&gt;** tag and also need to render the drop down list control for **select zoom value**. Basically, dropdown list control is rendered with input element. **Set Zoom value** is one of the items in the toolbar. The following code example shows how to render and initialize **drop down control** with list of **zoom values**.
 
 {% highlight js %}
 
-
+**[JavaScript]**
   <script type="text/javascript">
 
         $(function () {
@@ -440,22 +422,17 @@ After updating the Toolbar items with their **CSS** styles, you can render the t
 
 {% endhighlight %}
 
-
-
 Execute the code to render a **toolbar items** with separator.
 
-
-
-{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
-
-_Figure_ _4__: Toolbar items with separator_
+{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img4.png" Caption="Toolbar items with separator"%}
 
 #### Add Actions to Toolbar Items
 
 Now the **toolbar** is rendered so you need to render the header and content area to create a **PDF reader**. From the following section, you can learn how to render the **header** (Toolbar), **content****section** (PDF viewer area) and how to set the action to toolbar items.
 
-> {% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img5.jpeg" Caption=""%}
-_**Note: You are not going to deal with PDF reading or rendering task here. You will only simulate the PDF Reader app to demonstrate the Toolbar control usage and will completely ignore the PDF rendering area.**_
+
+
+> _**Note: You are not going to deal with PDF reading or rendering task here. You will only simulate the PDF Reader app to demonstrate the Toolbar control usage and will completely ignore the PDF rendering area.**_
 
 
 
@@ -487,11 +464,7 @@ Initialize the content area and header as specified in the code table.
 
 {% endhighlight %}
 
-
-
 You can apply the following styles with the above styles to design the **PDF header** and **content area**. The desired output is shown as follows.
-
-
 
 {% highlight css %}
 
@@ -511,7 +484,7 @@ You can apply the following styles with the above styles to design the **PDF hea
         }
 
         .ctrllabel {
-            background-image: url("http://js.syncfusion.com/UG/Web/Content/pdf-header.png");
+            background-image: url('http://js.syncfusion.com/UG/Web/Content/pdf-header.png');
             background-repeat: no-repeat;
             width: 634px;
             height: 32px;
@@ -523,21 +496,15 @@ You can apply the following styles with the above styles to design the **PDF hea
 
 {% endhighlight %}
 
-
-
 Execute the given code to render a **PDF reader** as follows.
 
-
-
-{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img6.png" Caption="Figure 5: PDF Reader Appearance"%}
-
-
+{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img5.png" Caption="PDF Reader Appearance"%}
 
 So far, you have added the required toolbar items and configured its appearance. When you click on **toolbar items**, the operation is performed through **client slide click event**. The following code example explains how to perform operations when you click on the **toolbar items**.
 
 {% highlight js %}
 
-
+**[JavaScript]**
 <script type="text/javascript">
 
         $(function () {// document ready
@@ -597,8 +564,6 @@ So far, you have added the required toolbar items and configured its appearance.
 
 
 {% endhighlight %}
-
-
 
 
 

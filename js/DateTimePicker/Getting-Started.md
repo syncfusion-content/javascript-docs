@@ -13,19 +13,19 @@ This section explains briefly about how to create a **DateTimePicker** in your a
 
 ## Create your first DateTimePicker in JavaScript	
 
-**Essential JavaScript** **DateTimePicker** provides support to display a calendar within a webpage and allows you to pick a date and time from the calendar. In this example, you can learn how to customize **DateTimePicker** in a real-time application for an appointment and to choose current time for one week. 
+**Essential JavaScript****DateTimePicker** provides support to display a calendar within a webpage and allows you to pick a date and time from the calendar. In this example, you can learn how to customize **DateTimePicker** in a real-time application for an appointment and to choose current time for one week. 
 
 The following screenshot illustrates the functionality of a **DateTimePicker** with date range of maximum one week.
 
 
 
-{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img1.png" Caption="DateTimePicker	"%}
+{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: DateTimePicker	"%}
 
 ### Create DateTimePicker 
 
 **The DateTimePicker** widget has built-in features such as keyboard navigation, other navigation with animations and flexible APIs. You can easily create the **DateTimePicker** widget by using simple input **&lt;textbox&gt;** element as follows.
 
-1. Create an **HTML** file and add the following template to the **HTML** file.
+* Create an **HTML** file and add the following template to the **HTML** file.
 
 
 
@@ -36,7 +36,7 @@ The following screenshot illustrates the functionality of a **DateTimePicker** w
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
       <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
  <script 
@@ -46,7 +46,7 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -60,7 +60,7 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
 
 
 
-2. Add **&lt;input&gt;** element to render a **DateTimePicker**.
+Add **&lt;input&gt;** element to render a **DateTimePicker**.
 
 
 
@@ -70,7 +70,7 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
   <div class="content-container-fluid">      
             <div class="row">                
                 <div class="cols-sample-area">                                  
-                    <div class="frame">
+<div class="frame">
                         <div class="control">
                             <input type="text" id="dateTime" />
                         </div>
@@ -84,7 +84,7 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
 
 
 
-3. Add the following styles to show the **DateTimePicker** control in the horizontal order.
+Add the following styles to show the **DateTimePicker** control in the horizontal order.
 
 
 
@@ -102,7 +102,7 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
 
 
 
-4. Initialize **DateTimePicker** in the script.
+Initialize **DateTimePicker** in the script.
 
 
 
@@ -121,19 +121,23 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
 
 The following screenshot displays a **DateTimePicker** control.
 
-{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img2.png" Caption="DateTimePicker"%}
+
+
+{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: DateTimePicker"%}
 
 ### Set the Min and Max Date with Time Interval
 
 In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by using the properties **min** and **max** that enables the specified date range in the **DateTimePicker** control.
 
+
+
 {% highlight js %}
 
-<script type="text/javascript">
-    $(function () {
-        $('#dateTime').ejDateTimePicker({ width: '180px', value: new Date(), minDateTime: "05/23/2014 09:00 AM", maxDateTime: "05/29/2014 09:00 PM" });
-    });
-</script> 
+    <script type="text/javascript">
+        $(function () {
+            $('#dateTime').ejDateTimePicker({ width: '180px', value: new Date(), minDateTime: "05/23/2014 09:00 AM", maxDateTime: "05/29/2014 09:00 PM" });
+        });
+    </script> 
 
 
 {% endhighlight %}
@@ -142,5 +146,7 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 
 The following screenshot shows the output for the above code example.
 
-{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img3.png" Caption="DateTimePickers with Min/Max Date with Time Intervals"%}
+
+
+{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 3: DateTimePickers with Min/Max Date with Time Intervals"%}
 

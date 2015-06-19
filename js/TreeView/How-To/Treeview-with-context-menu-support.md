@@ -21,9 +21,13 @@ And each functionality in the context menu option is done by specific methods. F
 
 The following steps explain how you can enable the **showCheckbox** property for **TreeView**.
 
-1. In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
+* In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configure **TreeView.**
+
+****
 
 {% highlight html %}
+
+**[HTML]**
 
 <ul id="treeView">
         <li class="expanded">
@@ -86,12 +90,13 @@ The following steps explain how you can enable the **showCheckbox** property for
 
 
 
-2. Add ContextMenu for TreeView control as follows.
+* Add **ContextMenu** for **TreeView** control as follows.
+
+****
 
 {% highlight js %}
 
-
-<script type="text/javascript">
+**[JavaScript]**
 var tabIndex = 1;
 $("#treeView").ejTreeView();
         $("#treeviewMenu").ejMenu({
@@ -103,17 +108,18 @@ $("#treeView").ejTreeView();
             beforeOpen: "beforeOpen"
         });
         treeviewObj = $("#treeView").data("ejTreeView");
-</script>
+
 
 {% endhighlight %}
 
 
 
-3. Define the events in the script as follows.
+* Define the events in the script as follows.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
 function beforeOpen(args) {
         if (!$(args.target).hasClass("e-text"))
             args.cancel = true;
@@ -138,11 +144,41 @@ function beforeOpen(args) {
         }
     }
 
-</script>
+
 
 {% endhighlight %}
 
+
+
+{% include image.html url="/js/TreeView/How-To/Treeview-with-context-menu-support_images/Treeview-with-context-menu-support_img1.png" Caption=""%}
+
 The output for the context menu for **TreeView** control is as follows.
 
-{% include image.html url="/js/TreeView/How-To/Treeview-with-context-menu-support_images/Treeview-with-context-menu-support_img1.png" Caption="Context Menu for TreeView"%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_Figure_ _2__9__: Context M__enu for TreeView_
+
+
 

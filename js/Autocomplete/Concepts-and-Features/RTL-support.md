@@ -15,10 +15,13 @@ This feature allows you to change the alignment of the **AutoComplete** textbox 
 
 The following steps explain how you can enable the **right-to-left** property for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -26,27 +29,35 @@ The following steps explain how you can enable the **right-to-left** property fo
 
 
 
-2. Enable **RTL** for **AutoComplete** control as follows.****
+* Enable **RTL** for **AutoComplete** control as follows.
+
+****
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
     $('#autocomplete').ejAutocomplete({
                 dataSource: countries,
                 width: 205,
                 popupHeight: "80px",
-                enableRTL: true,
+**enableRTL: true,**
                 template: '<div class="flag ${sprite}"> </div>' +
                         '<div class="txt"> ${text} </div>'
             });
-</script>
+
 
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for AutoComplete when **enableRTL** is set to “**True”**.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/RTL-support_images/RTL-support_img1.png" Caption="AutoComplete template with RTL support"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/RTL-support_images/RTL-support_img1.png" Caption=""%}
+
+_Figure 28: AutoComplete template with RTL support_
 

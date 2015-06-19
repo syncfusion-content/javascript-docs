@@ -11,7 +11,7 @@ documentation: ug
 
 The entire **Toolbar** commands can be accessed through the keyboard by specifying the **Keyboard Shortcut** listed in the following table.
 
-_Table_ _4__: List of keyboard shortcuts_
+_List of keyboard shortcuts_
 
 <table>
 <tr>
@@ -51,23 +51,13 @@ Navigates to the ending item.</td></tr>
 Enter</td><td>
 Selects the focused item</td></tr>
 </table>
-
-
 The following code example illustrates shortcuts associated with the **Toolbar** items.
-
-
-
-{% highlight html %}
-
-
-<!-- Refer Local Data section for style and data bound for toolbar item -->
-
-{% endhighlight %}
 
 {% highlight js %}
 
-
-
+**[HTML]**
+<!-- Refer Local Data section for style and data bound for toolbar item -->
+[JS]
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -86,9 +76,7 @@ The following code example illustrates shortcuts associated with the **Toolbar**
 
 
 
-
-
 {% include image.html url="/js/Toolbar/Concepts-and-Features/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" Caption=""%}
 
-_Figure 17: ToolBar control with Keyboard shortcuts_
+_ToolBar control with Keyboard shortcuts_
 

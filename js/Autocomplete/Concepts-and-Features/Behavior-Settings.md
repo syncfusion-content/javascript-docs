@@ -17,10 +17,13 @@ documentation: ug
 
 The following steps explain the configuration of the filtering conditions for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -28,9 +31,13 @@ The following steps explain the configuration of the filtering conditions for an
 
 
 
-2. Configure filter type for **AutoComplete** control as follows.
+* Configure filter type for **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
+
+**[JavaScript]**
 
     <script type="text/javascript">
        // Define the local JSON data
@@ -70,9 +77,13 @@ The following steps explain the configuration of the filtering conditions for an
 
 
 
+
+
 The following image is the output for **AutoComplete** control that filters list items based on the **endswith** option.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="AutoComplete using endswith filterType"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img1.png" Caption=""%}
+
+_Figure 10: AutoComplete using "endswith" filterType_
 
 ## AutoFill
 
@@ -84,10 +95,13 @@ This feature reduces the need to type the entire text and makes the search box m
 
 The following steps explain how to enable the **AutoFill** property for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -95,10 +109,13 @@ The following steps explain how to enable the **AutoFill** property for an **Aut
 
 
 
-2. Enable **AutoFill** for AutoComplete control as follows.
+* Enable **AutoFill** for AutoComplete control as follows.
+
+
 
 {% highlight js %}
 
+**[JavaScript]**
 
    // Here define CarList local data as per the previous the code block.
 
@@ -106,7 +123,7 @@ The following steps explain how to enable the **AutoFill** property for an **Aut
                 width: 205,
                 dataSource: carList,
                 filterType: "startswith",
-                enableAutoFill: true
+**enableAutoFill**: **true**
             });
 
 
@@ -117,7 +134,9 @@ The following steps explain how to enable the **AutoFill** property for an **Aut
 
 The following image is the output for **AutoComplete** when **enableAutoFill** is set to ‘**True**’.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img2.png" Caption="AutoComplete with AutoFill"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img2.png" Caption=""%}
+
+_Figure 11: AutoComplete with AutoFill_
 
 ## Sorting Items
 
@@ -127,10 +146,13 @@ The following image is the output for **AutoComplete** when **enableAutoFill** i
 
 The following steps explain how to enable the **sorting** property for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -138,30 +160,39 @@ The following steps explain how to enable the **sorting** property for an **Auto
 
 
 
-2. Configure the **Sorting** property for **AutoComplete** control as follows.
+* Configure the **Sorting** property for **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
+**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-<script type="text/javascript">
+
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
                 filterType: "startswith",
-                allowSorting:true,
-                sortOrder: "descending",
+**allowSorting:true,**
+                **sortOrder: "descending",**
             });
-</script>
+
 
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for **AutoComplete** when “**sortOrder**” is configured.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="AutoComplete PopUp sorted in descending order"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img3.png" Caption=""%}
+
+_Figure 12: AutoComplete PopUp sorted in descending order_
 
 ## Distinct List items
 
@@ -171,10 +202,13 @@ The following image is the output for **AutoComplete** when “**sortOrder**” 
 
 The following steps explain you how to enable the **distinct** property for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <div style="margin-right: 20px;">
     <div class="txt">Distinct disabled</div>
     <input type="text" id="autocomplete">
@@ -185,13 +219,18 @@ The following steps explain you how to enable the **distinct** property for an *
  </div>
 
 
+
 {% endhighlight %}
 
 
 
-2. Configure the Distinct property for **AutoComplete** control as follows,
+* Configure the Distinct property for **AutoComplete** control as follows,
+
+
 
 {% highlight js %}
+
+**[JavaScript]**
 
      <script type="text/javascript">
         var carList = [
@@ -234,9 +273,15 @@ The following steps explain you how to enable the **distinct** property for an *
 
 
 
+
+
 The following images are the outputs for **AutoComplete** when **enableDistinct** is set to “**True”** and “**False**”.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="AutoComplete PopUp items with Distinct property disabled and enabled"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img4.png" Caption=""%}
+
+_Figure 13: AutoComplete PopUp items with Distinct property disabled and enabled_
 
 ## Show Popup button
 
@@ -246,10 +291,13 @@ The following images are the outputs for **AutoComplete** when **enableDistinct*
 
 The following steps explains you how to configure the **Popup****button** for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -257,28 +305,35 @@ The following steps explains you how to configure the **Popup****button** for an
 
 
 
-2. Enable **showPopupButton** for **AutoComplete** control as follows.
+* Enable **showPopupButton** for **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
+**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-<script type="text/javascript">
+
 $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-                showPopupButton:true,
+**showPopupButton:true,**
             });
 
-</script>
+
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for **AutoComplete** when **showPopupButton** is enabled.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img5.png" Caption="AutoComplete with popup icon"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img5.png" Caption=""%}
+
+_Figure 14: AutoComplete with popup icon_
 
 ## Restrict editing
 
@@ -288,10 +343,13 @@ The following image is the output for **AutoComplete** when **showPopupButton** 
 
 The following steps help you to disable editing in an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -299,29 +357,37 @@ The following steps help you to disable editing in an **AutoComplete** textbox.
 
 
 
-2. Configure **readOnly** property in **AutoComplete** control as follows.
+* Configure **readOnly** property in **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
+**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-<script type="text/javascript">
+
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-                readOnly:true,
+**readOnly:true,**
                 showPopupButton:true,
                 value:"BMW 7"
             });
-</script>
+
+
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for the **AutoComplete** textbox configured to restrict editing.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img6.png" Caption="AutoComplete with readOnly property"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img6.png" Caption=""%}
+
+_Figure 15: AutoComplete with readOnly property_
 
 ## Empty Result settings
 
@@ -331,10 +397,13 @@ The **AutoComplete** widget allows you to configure the display message when the
 
 The following steps allow you to set text for **empty****results** of an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -342,20 +411,24 @@ The following steps allow you to set text for **empty****results** of an **AutoC
 
 
 
-2. Set text to **emptyResultText** property in **AutoComplete** control as follows.
+* Set text to **emptyResultText** property in **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
+**[JavaScript]**
 
 // Here define CarList local data as per the previous the code block.
-<script type="text/javascript">
+
     $('#autocomplete').ejAutocomplete({
                 width: 310,
                 dataSource: carList,
 **showEmptyResultText: true,**
                 **emptyResultText:"Item not found in list"**
             });
-</script>
+
+
 
 {% endhighlight %}
 
@@ -365,5 +438,7 @@ The following steps allow you to set text for **empty****results** of an **AutoC
 
 The following image is the output of the **AutoComplete** textbox when the list doesn’t return any value.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img7.png" Caption="AutoComplete with customized emptyResultText"%}
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Behavior-Settings_images/Behavior-Settings_img7.png" Caption=""%}
+
+_Figure 16: AutoComplete with customized emptyResultText_
 

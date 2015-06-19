@@ -19,28 +19,15 @@ The following steps explain you how to get the current month date alone
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-  {% highlight html %}
-  
-      <input id="datepicker" type="text" />
-      
-  {% endhighlight %}
-  
-  {% highlight js %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the code to get the current month date&lt;script type="text/javascript"&gt;        $(function () {            // declaration             $("#datepicker").ejDatePicker({                showOtherMonths: false            });        }); &lt;/script&gt;</td></tr>
+</table>
+The following screenshot displays the output for the above code.
 
-<script type="text/javascript">
-  // Add the code to get the current month date
-        $(function () {
-            // declaration
-             $("#datepicker").ejDatePicker({
-                showOtherMonths: false
-            });
-        });
- </script>
-
-  {% endhighlight %}
-
-
-*  The following screenshot displays the output for the above code.
-
-{% include image.html url="/js/DatePicker/Concepts-and-Features/Dates-in-Other-Month_images/Dates-in-Other-Month_img1.png" Caption="Figure 17: Current month date in DatePicker	 "%}
+{% include image.html url="/js/DatePicker/Concepts-and-Features/Dates-in-Other-Month_images/Dates-in-Other-Month_img1.png" Caption="Current month date in DatePicker	 "%}
 

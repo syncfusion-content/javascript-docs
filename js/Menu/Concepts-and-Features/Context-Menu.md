@@ -17,56 +17,23 @@ In the following example, a context menu for the division containing text is cre
 
 * Add the following code in your **HTML** page.
 
-{% highlight html %}
 
-   <div>
-        <div id="target" class="textarea">
-            HTML is written in the form of HTML elements consisting of tags enclosed in angle
-            brackets (like
-            &lt;html&gt;
-            ),within the web page content. HTML tags most commonly come in pairs like and ,although
-            some tags, known as empty elements, are unpaired, for example
-            &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into
-            visible or audible web pages. The browser does not display the HTML tags, but uses
-            the tags to interpret the content of the page.
-        </div>
-        <ul id="contextMenu">
-            <li><a>Open</a></li>
-            <li><a>Edit</a></li>
-            <li><a>Save</a></li>
-            <li class="separator"></li>
-            <li><a>Save as</a></li>
-            <li><a>Print</a></li>
-            <li><a>Properties</a></li>
-        </ul>
-    </div>
 
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;div&gt;        &lt;div id="target" class="textarea"&gt;            HTML is written in the form of HTML elements consisting of tags enclosed in angle            brackets (like            &lt;html&gt;            ),within the web page content. HTML tags most commonly come in pairs like and ,although            some tags, known as empty elements, are unpaired, for example            &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into            visible or audible web pages. The browser does not display the HTML tags, but uses            the tags to interpret the content of the page.        &lt;/div&gt;        &lt;ul id="contextMenu"&gt;            &lt;li&gt;<a>Open</a>&lt;/li&gt;            &lt;li&gt;<a>Edit</a>&lt;/li&gt;            &lt;li&gt;<a>Save</a>&lt;/li&gt;            &lt;li class="separator"&gt;&lt;/li&gt;            &lt;li&gt;<a>Save as</a>&lt;/li&gt;            &lt;li&gt;<a>Print</a>&lt;/li&gt;            &lt;li&gt;<a>Properties</a>&lt;/li&gt;        &lt;/ul&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[Javascript]   </b><b>// Add the following code in your &lt;script&gt; section.</b>&lt;script type="text/javascript"&gt;    jQuery(function ($) {        $("#contextMenu").ejMenu(            {                menuType: ej.MenuType.ContextMenu,                openOnClick: false,                contextMenuTarget: "#target"            });    });    &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-   
-// Add the following code in your script section.
-
-<script type="text/javascript">
-    jQuery(function ($) {
-        $("#contextMenu").ejMenu(
-            {
-                menuType: ej.MenuType.ContextMenu,
-                openOnClick: false,
-                contextMenuTarget: "#target"
-            });
-    });
-    </script>
-
-{% endhighlight %}
 
 Add the following code in your style section.
 
-{% highlight css %}
+**[CSS]**
 
-
-<style type="text/css">
+&lt;style type="text/css"&gt;
 
     .textarea {
 
@@ -86,9 +53,9 @@ Add the following code in your style section.
 
     }
 
-</style>
+&lt;/style&gt;
 
-{% endhighlight %}
+
 
 The following screen shot displays the output of the above code.
 
@@ -104,10 +71,10 @@ You can hide and show the context menu using the following methods.
 
 Hides the context menu control. Add the following script code in the sample in order to hide the context menu.
 
-{% highlight js %}
 
+**[Javascript]**
 
-<script type="text/javascript">
+&lt;script type="text/javascript"&gt;
 
     jQuery(function ($) {
 
@@ -135,19 +102,16 @@ Hides the context menu control. Add the following script code in the sample in o
 
     });
 
-</script>
-
-{% endhighlight %}
-
+&lt;/script&gt;
 
 **ShowContextMenu**
 
 Shows the context menu control. Add the following script code in the sample in order to show the context menu.
 
-{% highlight js %}
 
+**[Javascript]**
 
-<script type="text/javascript">
+&lt;script type="text/javascript"&gt;
 
     jQuery(function ($) {
 
@@ -174,9 +138,8 @@ Shows the context menu control. Add the following script code in the sample in o
         menuObj.**show**();
 
     });
-</script>
 
-{% endhighlight %}
+&lt;/script&gt;
 
 
 

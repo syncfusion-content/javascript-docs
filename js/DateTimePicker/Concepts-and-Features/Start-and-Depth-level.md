@@ -13,7 +13,7 @@ documentation: ug
 
 **DateTimePicker** allows you to change the starting level view of Calendar inside the **DateTimePicker** popup. Consider you are creating a login form for your blog. If the “Birth date” field in the form starts from year, it is easy to select date from year, month and date. By default, the Start Level of **DateTimePicker** is “Month” level view. Refer the following table to know the different types of start level.
 
-_Start Level_
+_Table_ _3__: Start Level_
 
 <table>
 <tr>
@@ -46,33 +46,23 @@ Starts from century level view.</td></tr>
 
 In the following example **DateTimePicker** popup start level view is set to “century level” when you drop down the **DateTimePicker** popup.
 
-Add the following code in your **HTML** page.
-
-{% highlight html %}
-
-  
-  	<div class="control">
-	        <input type="text" id="dateTime" />
-	    </div>
-
-  {% endhighlight %}
 
 
-  {% highlight js %}
-  
-<script>
-  
-  // Add the code in your script section with start level as century in DateTimePicker popup
-	        $('#dateTime').ejDateTimePicker({
-	            startLevel: "century",
-	        });
-</script>
+* Add the following code in your **HTML** page.
 
-  {% endhighlight %}
 
-{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Start-and-Depth-level_images/Start-and-Depth-level_img1.png" Caption=""%}
 
-_Showcase for DateTimePicker with century level in DateTimePicker popup_
+<table>
+<tr>
+<td>
+<b>[HTML]    </b>&lt;div class="control"&gt;        &lt;input type="text" id="dateTime" /&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>// </b>Add the code in your script section with start level as century in <b>DateTimePicker</b> popup        $('#dateTime').ejDateTimePicker({            <b>startLevel: "century",</b>        });</td></tr>
+</table>
+
+
+{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Start-and-Depth-level_images/Start-and-Depth-level_img1.png" Caption="Figure 7: Showcase for DateTimePicker with century level in DateTimePicker popup"%}
 
 ## Depth Level
 
@@ -86,20 +76,17 @@ The following code snippet is set to depth level in **DateTimePicker.**
 
 {% highlight js %}
 
-<script>
-
+**[JavaScript]**
                $('#dateTime').ejDateTimePicker({  
                    startLevel:"century",
                    depthLevel:"year",
                    width: '200px', 
                });       
-</script>
+
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Start-and-Depth-level_images/Start-and-Depth-level_img2.png" Caption=""%}
-
-_Showcase of DateTimePicker with Depth level “year”_
+{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Start-and-Depth-level_images/Start-and-Depth-level_img2.png" Caption="Figure 8: Showcase of DateTimePicker with Depth level “year”"%}
 

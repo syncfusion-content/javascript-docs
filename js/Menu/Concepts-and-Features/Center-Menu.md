@@ -13,72 +13,14 @@ You can align the **Menu** items to center by setting “enableCenterAlign” pr
 
 * Add the following code in your **&lt;script&gt;** section.
 
-{% highlight html %}
-
-    
-<div>
-    <ul id="menucontrol">
-        <li id="home">
-            <a href="#">Home</a>
-            <ul>
-                <li><a>Foundation</a></li>
-                <li><a>Launch</a></li>
-                <li>
-                    <a>About</a>
-                    <ul>
-                        <li><a>Company</a></li>
-                        <li><a>Location</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li id="Services">
-            <a>Services</a>
-            <ul>
-                <li><a>Consulting</a></li>
-                <li><a>Outsourcing</a></li>
-            </ul>
-        </li>
-        <li id="About"><a>About</a></li>
-        <li id="Contact">
-            <a>Contact us</a>
-            <ul>
-                <li><a>Contact number</a></li>
-                <li><a>E-mail</a></li>
-            </ul>
-        </li>
-        <li id="Careers">
-            <a>Careers</a>
-            <ul>
-                <li>
-                    <a>Position</a>
-                    <ul>
-                        <li><a>Developer</a></li>
-                        <li><a>Manager</a></li>
-                    </ul>
-                </li>
-                <li><a>Apply online</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-   
-<script type="text/javascript">
-    jQuery(function ($) {
-        $("#menucontrol").ejMenu(
-            {
-                width:500,
-                enableCenterAlign: true
-            });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]    </b>&lt;div&gt;    &lt;ul id="menucontrol"&gt;        &lt;li id="home"&gt;            <a href="#">Home</a>            &lt;ul&gt;                &lt;li&gt;<a>Foundation</a>&lt;/li&gt;                &lt;li&gt;<a>Launch</a>&lt;/li&gt;                &lt;li&gt;                    <a>About</a>                    &lt;ul&gt;                        &lt;li&gt;<a>Company</a>&lt;/li&gt;                        &lt;li&gt;<a>Location</a>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li id="Services"&gt;            <a>Services</a>            &lt;ul&gt;                &lt;li&gt;<a>Consulting</a>&lt;/li&gt;                &lt;li&gt;<a>Outsourcing</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li id="About"&gt;<a>About</a>&lt;/li&gt;        &lt;li id="Contact"&gt;            <a>Contact us</a>            &lt;ul&gt;                &lt;li&gt;<a>Contact number</a>&lt;/li&gt;                &lt;li&gt;<a>E-mail</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li id="Careers"&gt;            <a>Careers</a>            &lt;ul&gt;                &lt;li&gt;                    <a>Position</a>                    &lt;ul&gt;                        &lt;li&gt;<a>Developer</a>&lt;/li&gt;                        &lt;li&gt;<a>Manager</a>&lt;/li&gt;                    &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;<a>Apply online</a>&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;    &lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[Javascript]   </b>&lt;script type="text/javascript"&gt;    jQuery(function ($) {        $("#menucontrol").ejMenu(            {                width:500,                <b>enableCenterAlign: true</b>            });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 The following screenshot displays the output of the above code.

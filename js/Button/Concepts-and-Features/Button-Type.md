@@ -11,12 +11,12 @@ documentation: ug
 
 **Button** is used as normal clickable button, submitting form data, resetting the form data to its initial value. According to the usage of button, you can render the button in three types. Using the **type** property, you can easily render the button in following types.
 
-_List of Button types_
+_Table_ _4__: List of Button types_
 
 <table>
 <tr>
 <td>
-<b>button</b></td><td>
+<b>Button</b></td><td>
 The button is a clickable button </td></tr>
 <tr>
 <td>
@@ -31,53 +31,24 @@ The button is a reset button (resets the form-data to its initial values)</td></
 
 The following steps explains you the details about rendering the **Button** with above mentioned button types.
 
-1. In the **HTML** page, add the following button elements to configure **Button** widget.
-
-{% highlight html %}
+* In the **HTML** page, add the following button elements to configure **Button** widget.
 
 
-    <button id="buttonType_button">button</button>
-    <br />
-    <br />
-    <button id="buttonType_submit">submit</button>
-    <br />
-    <br />
-    <button id="buttonType_reset">reset</button>
-	
-{% endhighlight %}
 
-{% highlight js %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    <button id="buttonType_button">button</button>    &lt;br /&gt;    &lt;br /&gt;    <button id="buttonType_submit">submit</button>    &lt;br /&gt;    &lt;br /&gt;    <button id="buttonType_reset">reset</button></td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>&lt;script type="text/javascript"&gt;    //type property is used to render different type of buttons    $(function () {        $("#buttonType_button").ejButton({            size: "mini",            //this type specifes the normal clickable button<b>            type: "button",</b>            showRoundedCorner: true        });        $("#buttonType_submit").ejButton({            size: "mini",            //this button is used to submit form data<b>            type: "submit",</b>            showRoundedCorner: true        });        $("#buttonType_reset").ejButton({            size: "mini",            //this button is used to reset the form data to its initial value<b>            type: "reset",</b>            showRoundedCorner: true        });    });    &lt;/script&gt;</td></tr>
+</table>
 
-<script type="text/javascript">
-    // Initialize the control in JavaScript
-    //type property is used to render different type of buttons
-    $(function () {
-        $("#buttonType_button").ejButton({
-            size: "mini",
-            //this type specifes the normal clickable button
-            type: "button",
-            showRoundedCorner: true
-        });
-        $("#buttonType_submit").ejButton({
-            size: "mini",
-            //this button is used to submit form data
-            type: "submit",
-            showRoundedCorner: true
-        });
-        $("#buttonType_reset").ejButton({
-            size: "mini",
-            //this button is used to reset the form data to its initial value
-            type: "reset",
-            showRoundedCorner: true
-        });
-    });
-    </script>
 
-{% endhighlight %}
 
 Execute the above code to render the following output.
 
 {% include image.html url="/js/Button/Concepts-and-Features/Button-Type_images/Button-Type_img1.png" Caption=""%}
 
-_Different button types_
+_Figure 9: Different button types_
 

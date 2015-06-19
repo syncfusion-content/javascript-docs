@@ -17,13 +17,11 @@ This section explains briefly about how to create an **Uploadbox** in your appli
 
 The following screenshot demonstrates the functionality of **Uploadbox** with the file extension.
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img1.png" Caption="Uploadbox Control with File restriction"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: Uploadbox Control with File restriction"%}
 
 In the above screenshot, you can upload a resume that restricts **.html** and **.txt** files and allows **.png** file extension. This helps you to avoid unsupported resume formats getting uploaded in a server.
 
-> _**Note: To get upload the file, you should either run this sample in Visual Studio IDE or host in local IIS.**_
-
-
+> {% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img2.jpeg" Caption=""%}_**Note: To get upload the file, you should either run this sample in Visual Studio IDE or host in local IIS.**_
 
 ### Create Uploadbox widgets
 
@@ -38,7 +36,7 @@ In the above screenshot, you can upload a resume that restricts **.html** and **
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -47,7 +45,7 @@ In the above screenshot, you can upload a resume that restricts **.html** and **
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -104,8 +102,7 @@ In the above screenshot, you can upload a resume that restricts **.html** and **
 {% highlight c# %}
 
 **#SaveFiles.ashx**
-
-    public void ProcessRequest(HttpContext context)
+public void ProcessRequest(HttpContext context)
     {
         string targetFolder = HttpContext.Current.Server.MapPath("uploadfiles");
         if (!Directory.Exists(targetFolder))
@@ -144,8 +141,7 @@ In the above screenshot, you can upload a resume that restricts **.html** and **
 {% highlight c# %}
 
 **#removeFiles.ashx**
-
-    public void ProcessRequest(HttpContext context)
+public void ProcessRequest(HttpContext context)
     {
         System.Collections.Specialized.NameValueCollection s = context.Request.Params;
         string fileName = s["fileNames"];
@@ -171,7 +167,7 @@ In the above screenshot, you can upload a resume that restricts **.html** and **
 
 {% highlight js %}
 
-
+**[Script]**
 <script type="text/javascript">
     $(function () {
         // declaration
@@ -185,31 +181,33 @@ In the above screenshot, you can upload a resume that restricts **.html** and **
 
 {% endhighlight %}
 
+
+
 The following screenshot displays an **Uploadbox** control.
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img2.png" Caption="Create an Uploadbox Control"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 2: Create an Uploadbox Control"%}
 
 
 
 * After you upload the files, the following screen shot is displayed. 
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img3.png" Caption="Upload a file in Uploadbox control"%}
 
-> _**Note: The above screenshot displays the Uploadbox control that shows the files are uploaded successfully.**_
+
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 3: Upload a file in Uploadbox control"%}
+
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img5.jpeg" Caption=""%}_**Note: The above screen shot displays the Uploadbox control that shows the files are uploaded successfully.**_
 
 ### Set Restriction for File Extension
 
 In a real-time scenario, some file extensions are restricted. You can allow files and restrict files by using the following two properties **extensionsAllow** and **extensionsDeny** enabled in **Uploadbox**. 
 
-> _**Note: The SaveUrl and RemoveUrl are the same as above (see step 4)**_
-
-
+> {% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img6.jpeg" Caption=""%}_**Note: The SaveUrl and RemoveUrl are the same as above (see step 4)**_
 
 * Add input elements to create elements for file extension.
 
 
 
-> _**Note: Add the following input elements and two button elements to give file extensions that should support uploading.**_ 
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img7.jpeg" Caption=""%}_**Note: Add the following input elements and two button elements to give file extensions that should support uploading.**_ 
 
 
 
@@ -245,6 +243,8 @@ In a real-time scenario, some file extensions are restricted. You can allow file
 
 
 {% endhighlight %}
+
+
 
 * Add the following code example in script section.
 
@@ -312,17 +312,15 @@ In a real-time scenario, some file extensions are restricted. You can allow file
 
 {% endhighlight %}
 
-> 
-
-> _**Note: You can restrict one or more files at a time by giving it as .html,.txt**_
-
-> 
+> {% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img8.jpeg" Caption=""%}_**Note: You can restrict one or more files at a time by giving it as .html,.txt**_
 
 The following screenshot displays an **Uploadbox** control with the file extension.
 
 
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img4.png" Caption="Uploadbox with setting restrictions"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img9.png" Caption=""%}
+
+_Figure_ _4__:_ _Uploadbox_ _with setting restrictions_
 
 The above screenshot shows the **Uploadbox** that allows “.**png**” files and restricts “**.txt”** and “**.html”** file formats. You can give the number file formats in both allow and deny textbox elements.
 
@@ -332,5 +330,7 @@ You can click the **Browse** button and select the file to upload multiple files
 
 The following screenshot displays an **Uploadbox** control with multiple files.
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img5.png" Caption="Upload multiple files"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img10.png" Caption=""%}
+
+_Figure_ _5__: Upload multiple files_
 

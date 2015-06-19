@@ -13,18 +13,19 @@ This section explains briefly about how to create a **Split Button** in your app
 
 ## Create your first Split Button in JavaScript
 
-The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily configured as **Essential JavaScript Split Button** control.  The basic rendering of **Essential JavaScript Split** **Button** is achieved by using default functionality. Initially the **targetID** is a mandatory one, without this field it does not act as normal button on two sides.
+The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily configured as **Essential JavaScript Split Button** control.  The basic rendering of **Essential JavaScript Split****Button** is achieved by using default functionality. Initially the **targetID** is a mandatory one, without this field it does not act as normal button on two sides.
 
-**Control structure**
+### Control structure
 
-{% include image.html url="/js/SplitButton/Getting-Started_images/Getting-Started_img1.png" Caption="Essential JavaScript Split Button"%}
 
-**Split Button Creation**
 
-1. Create an **HTML** file and add the following template to **HTML** file for **Split Button** creation.
+{% include image.html url="/js/SplitButton/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: Essential JavaScript Split Button"%}
+
+### Split Button Creation
+
+* Create an **HTML** file and add the following template to **HTML** file for **Split Button** creation.
 
 {% highlight html %}
-
 
 
 <!doctype html>
@@ -32,7 +33,7 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 <head>
 <title>Getting Started Essential JS</title> 
       <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -41,7 +42,7 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body><!--add button element here--></body>
@@ -52,10 +53,11 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
 
 
-2. Adding button element and **&lt;UL&gt;, &lt;LI&gt;** element for **Split** **Button** rendering.
+* Adding button element and **&lt;UL&gt;, &lt;LI&gt;** element for **Split****Button** rendering.
+
+
 
 {% highlight html %}
-
 
 <button id="sbutton">Save</button>
 <ul id="target">
@@ -69,7 +71,9 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
 
 
-3. Initialization of **ejSplitButton** in script
+* Initialization of **ejSplitButton** in script
+
+
 
 {% highlight js %}
 
@@ -90,7 +94,11 @@ The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily config
 
 
 
-4. Output of above steps
+* Output of above steps
 
-{% include image.html url="/js/SplitButton/Getting-Started_images/Getting-Started_img2.png" Caption="Split Button"%}
+
+
+{% include image.html url="/js/SplitButton/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: Split Button"%}
+
+
 

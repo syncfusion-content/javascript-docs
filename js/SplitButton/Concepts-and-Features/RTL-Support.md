@@ -13,46 +13,27 @@ In some cases it is necessary to use right to left alignment. **RTL** support is
 
 The following steps explains you the details about rendering the button with Right to left alignment support
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
-
-{% highlight html %}
-
-<div class="spltspan">
-        <button id="spltbutton_rtl">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
- </div>
-
-{% endhighlight %}
+* In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
 
-{% highlight js %}
 
-// Initialize the control in JavaScript
-     <script type="text/javascript">
-            $(function () {
-                $("#spltbutton_rtl").ejSplitButton({
-                    //used to enable or disable RTL support for split button
-                    enableRTL: true,
-                    size: "small",
-                    contentType: "textandimage",
-                    showRoundedCorner: true,
-                    targetID: "Ul11",
-                    prefixIcon: "e-uiLight e-login"
-                });
-            });
-    </script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="spltspan"&gt;        <button id="spltbutton_rtl">login</button>        &lt;ul id="Ul11"&gt;            &lt;li&gt;<span>User</span>&lt;/li&gt;            &lt;li&gt;<span>Guest</span>&lt;/li&gt;            &lt;li&gt;<span>Admin</span>&lt;/li&gt;        &lt;/ul&gt; &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>//</b> Initialize the control in <b>JavaScript</b>     &lt;script type="text/javascript"&gt;            $(function () {                $("#spltbutton_rtl").ejSplitButton({                    //used to enable or disable RTL support for split button<b>                    enableRTL: true,</b>                    size: "small",                    contentType: "textandimage",                    showRoundedCorner: true,                    targetID: "Ul11",                    prefixIcon: "e-uiLight e-login"                });            });    &lt;/script&gt;</td></tr>
+</table>
 
 
-2. Configure the styles 
+Configure the styles 
+
+
 
 {% highlight css %}
 
+[CSS]
    <style>
         .spltspan {
             margin-left: 120px;
@@ -66,5 +47,5 @@ The following steps explains you the details about rendering the button with Rig
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="Split button in RTL alignment"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="Figure 10: Split button in RTL alignment"%}
 

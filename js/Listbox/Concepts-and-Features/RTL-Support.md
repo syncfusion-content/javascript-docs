@@ -15,42 +15,17 @@ This feature supports to change the left-to-right alignment of the **ListBox** w
 
 The following steps explains you the configuration of **enableRTL** properties in **ListBox.**
 
-* In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
 
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-  
-// Initialize the control in JavaScript
-
-<script type="text/javascript">
-    $(function () {
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, enableRTL: true
-        });
-    });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]  </b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    $(function () {        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, enableRTL: true        });    });&lt;/script&gt;</td></tr>
+</table>
 Output of the above steps.
 
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="Figure 28: ListBox with RTL"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="ListBox with RTL"%}
 

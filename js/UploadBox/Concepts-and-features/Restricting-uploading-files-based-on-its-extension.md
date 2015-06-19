@@ -13,7 +13,7 @@ documentation: ug
 
 Files are filtered before they are uploaded. You can select the files to be filtered by using **browse** button. The **extensionsAllow** property allows upload of the selected extensions only. You can give multiple extensions by using comma (,).  The data type is **string**.
 
-> _**Note: Prepend dot (.) symbol with extension like “.pdf”.**_
+{% include image.html url="/js/UploadBox/Concepts-and-features/Restricting-uploading-files-based-on-its-extension_images/Restricting-uploading-files-based-on-its-extension_img1.jpeg" Caption=""%}_**Note: Prepend dot (.) symbol with extension like “.pdf”.**_
 
 
 
@@ -21,30 +21,15 @@ The following steps explain the configuration of **extensionsAllow** property in
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="Uploadbox"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>  <b>// Initialize the control in JavaScript.</b>  $(function () {//Declaration.            $("#Uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                removeUrl: "removeFiles.ashx",<b>                extensionsAllow: ".docx, .pdf"</b>            });         });</td></tr>
+</table>
 
-
-      <div id="Uploadbox"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-
-  // Initialize the control in JavaScript.
-  <script>
-  $(function () {
-//Declaration.
-            $("#Uploadbox").ejUploadbox({
-                saveUrl: "saveFiles.ashx",
-                removeUrl: "removeFiles.ashx",
-                extensionsAllow: ".docx, .pdf"
-            }); 	
-        });
-</script>
-
-{% endhighlight %}
 
 * For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as mentioned in the Save file action and Remove file action respectively. 
 
@@ -52,35 +37,25 @@ The following steps explain the configuration of **extensionsAllow** property in
 
 Files are filtered before they are uploaded. You can select the files to be filtered by using **browse** button. The **extensionsDeny** property denies upload of the selected extensions. You can give multiple extensions by using comma (,).  The data type is **string**.
 
-> _**Note: Prepend dot (.) symbol with extension like “.pdf”.**_
+{% include image.html url="/js/UploadBox/Concepts-and-features/Restricting-uploading-files-based-on-its-extension_images/Restricting-uploading-files-based-on-its-extension_img2.jpeg" Caption=""%}_**Note: Prepend dot (.) symbol with extension like “.pdf”.**_
+
+
 
 The following steps explain the configuration of **extensionsDeny** property in **Uploadbox**
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
-{% highlight html %}
 
 
-      <div id="Uploadbox"></div>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="Uploadbox"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript] </b><b> // Initialize the control in JavaScript.</b>  $(function () {//Declaration.            $("#Uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                removeUrl: "removeFiles.ashx",<b>                extensionsDeny: ".docx, .pdf"</b>            });         });</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-
- // Initialize the control in JavaScript.
- <script>
-  $(function () {
-//Declaration.
-            $("#Uploadbox").ejUploadbox({
-                saveUrl: "saveFiles.ashx",
-                removeUrl: "removeFiles.ashx",
-                extensionsDeny: ".docx, .pdf"
-            }); 
-        });
-</script>
-
-{% endhighlight %}
 
 * For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as mentioned in the Save file action and Remove file action respectively. 
 

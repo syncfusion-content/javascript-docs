@@ -13,7 +13,7 @@ documentation: ug
 
 It specifies the **Start Level** view in **DatePicker** calendar. By default “**startLevel”** property is set to **ej.DatePicker.Level.Month.**
 
-_Table_ _3__: Start level_
+_Start level_
 
 <table>
 <tr>
@@ -37,36 +37,23 @@ Starts from decade level view.</td></tr>
 century</td><td>
 Starts from century level view.</td></tr>
 </table>
-
-
 The following steps explain you how to specify the **Start Level** view in **DatePicker** widget.
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the code to specify the Start Level view in DatePicker widget&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({                startLevel: ej.DatePicker.Level.Century            });        });    &lt;/script&gt;</td></tr>
+</table>
+The following screenshot displays the output for the above code.
 
-      <input id="datepicker" type="text" />
-      
-  {% endhighlight %}
-  
-  {% highlight js %}
+{% include image.html url="/js/DatePicker/Concepts-and-Features/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png" Caption=""%}
 
-<script type="text/javascript">
-  // Add the code to specify the Start Level view in DatePicker widget
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                startLevel: ej.DatePicker.Level.Century
-            });
-        });
-
-    </script>
-
-  {% endhighlight %}
-
-* The following screenshot displays the output for the above code.
-
-{% include image.html url="/js/DatePicker/Concepts-and-Features/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png" Caption="Figure 19:Start level view in DatePicker               "%}
+_Start level view in DatePicker_               
 
 ## Depth Level
 
@@ -74,7 +61,7 @@ It specifies the drill down level of **DatePicker**. You can restrict the drill 
 
 It accepts the following values. 
 
-_Table_ _4__: Depth level_
+_Depth level_
 
 <table>
 <tr>
@@ -98,35 +85,21 @@ Starts from year decade level view.</td></tr>
 century</td><td>
 Starts from century level view. </td></tr>
 </table>
-
-
 The following steps explain you how to get the **Depth Level.**
 
 * In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;input id="datepicker" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the code to render the Depth Level&lt;script type="text/javascript"&gt;        $(function () {            // declaration            $("#datepicker").ejDatePicker({            startLevel:ej.DatePicker.Level.Century,             depthLevel: ej.DatePicker.Level.Year            });        });  &lt;/script&gt;</td></tr>
+</table>
+The following screenshot displays the output for the above code.
 
-      <input id="datepicker" type="text" />
-      
-  {% endhighlight %}
-  
-  {% highlight js %}
+{% include image.html url="/js/DatePicker/Concepts-and-Features/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png" Caption=""%}
 
-<script type="text/javascript">
-  // Add the code to render the Depth Level
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-            startLevel:ej.DatePicker.Level.Century,
-             depthLevel: ej.DatePicker.Level.Year
-            });
-        });
-  </script>
-
-  {% endhighlight %}
-
-
-* The following screenshot displays the output for the above code.
-
-{% include image.html url="/js/DatePicker/Concepts-and-Features/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png" Caption="Figure 20: Depth Level in DatePicker"%}
+_Depth Level in DatePicker_
 

@@ -21,33 +21,14 @@ The following steps explain the implementation of **decimalPlaces** in **Percent
 
 
 
-{% highlight html %}
-
-    <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: 22,
-            decimalPlaces: 2
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>decimalPlaces</b> value in the <b>PercentageTextBox </b>control    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 22,<b>            decimalPlaces: 2</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** with **decimalPlaces** is as follows.
@@ -67,33 +48,15 @@ The following steps explain the implementation of **enablePersistence** in **Per
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control.
 
 
-{% highlight html %}
 
-    <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: 22,
-            enablePersistence: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enablePersistence </b>property<b> </b>as<b> “true</b>” to the <b>PercentageTextBox </b>controls. The default value for <b>enablePersistence </b>is “<b>false</b>”    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 22,<b>            enablePersistence: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** with **enablePersistence** is as follows. You can change the value of **PercentageTextBox** and reload the web page.
@@ -119,36 +82,15 @@ The following steps explain the implementation of **enableStrictMode** in **Perc
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. 
 
 
-{% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: -10,//value(-10) is under minValue(-5),so Error class will be added.
-            minValue: -5,
-            maxValue: 3,
-            enableStrictMode: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enableStrictMode </b>property<b> </b>as<b> “true</b>” to the <b>PercentageTextBox </b>controls. The default value for <b>enableStrictMode </b>is “<b>false</b>”    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: -10,//value(-10) is under minValue(-5),so Error class will be added.<b>            minValue: -5,</b><b>            maxValue: 3,</b><b>            enableStrictMode: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** when **enableStrictMode** is **“true”** is as follows**.**
@@ -168,33 +110,15 @@ The following steps explains the implementation of **enabled** in **PercentageTe
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. 
 
 
-{% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: 2,
-            enabled: false
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enabled </b>property<b> </b>as<b> “false</b>” to the <b>PercentageTextBox</b> control. The default value for <b>enabled</b> is true    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 2,<b>            enabled: false</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** when **enabled** is **“true”** and when **enabled** is “**false**”**.**
@@ -216,34 +140,15 @@ The following steps explain the implementation of **height** and **width** in **
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. 
 
 
-{% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $("#percent").ejPercentageTextbox({
-        value: 2,
-        width: 100,
-        height: 40
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>height </b>and<b> width </b>property<b> </b>to the <b>PercentageTextBox </b>controls. The default value of <b>height</b> and <b>width</b> is empty string (“”)&lt;script type="text/javascript"&gt;    /* Percent Textbox */    $("#percent").ejPercentageTextbox({        value: 2,        <b>width: 100,</b><b>        height: 40</b>    });&lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** after setting “**height**” and “**width**” is as follows**.**
@@ -263,33 +168,15 @@ The following steps explain the implementation of **incrementStep** in **Percent
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control.
 
 
-{% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value:1,
-            incrementStep: 3
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>incrementStep </b>property<b> </b>to the <b>PercentageTextBox </b>controls. The default value of <b>incrementStep </b>is 1    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value:1,            <b>incrementStep: 3</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** with **incrementStep** is as follows**.**
@@ -313,32 +200,15 @@ The following steps explain the implementation of **name** in **PercentageTextBo
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control.
 
 
-{% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            name: "percent"         
-        }); 
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>name </b>property<b> </b>to the <b>PercentageTextBox </b>controls    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            <b>name: "percent"         </b>        });      &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** with the **name** property is as follows**.**
@@ -358,32 +228,15 @@ The following steps explain the implementation of **value** in **PercentageTextB
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. 
 
 
-{% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>   
-            </tbody>
-        </table>
-        
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: 21               
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;               &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>value </b>property<b> </b>to the <b>PercentageTextBox </b>controls    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            <b>value: 21               </b>        });     &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** with the **value** property is as follows**.**
@@ -408,34 +261,14 @@ The following steps explain the implementation of **maxValue** and **minValue** 
 
 
 
-{% highlight html %}
-
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-    $("#percent").ejPercentageTextbox({
-            maxValue: 3,
-            minValue: -2,
-            value:3
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>maxValue, </b>and<b> minValue </b>properties<b> </b>to the <b>PercentageTextBox </b>control    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({<b>            maxValue: 3,</b><b>            minValue: -2,</b>            value:3        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** with basic properties is as follows**.**
@@ -460,33 +293,14 @@ The following steps explain the implementation of **readOnly** in **PercentageTe
 
 
 
-{% highlight html %}
-
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: 3,
-            readOnly: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>readOnly </b>property as “<b>True” </b>to the <b>PercentageTextBox </b>controls. The default value of <b>readOnly</b> property is false    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 3,           <b> readOnly: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** when **readOnly** is “**True**” is as follows**.** The **PercentageTextBox** values cannot be edited or changed.
@@ -539,41 +353,21 @@ The following steps explain the implementation of **cssClass** in **PercentageTe
 
 
 
-{% highlight html %}
-
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: 2,
-            cssClass: "customCss"
-        });
-</script>
-
-{% endhighlight %}
-
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>cssClass </b>property as custom CSS class name<b> </b>to the <b>PercentageTextBox </b>control. The default value of <b>cssClass</b> property is empty string (“”)    &lt;script type="text/javascript"&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 2,            <b>cssClass: "customCss"</b>        });    &lt;/script&gt;</td></tr>
+</table>
 * Customize the CSS properties in custom CSS class.
 
 
 
 {% highlight css %}
 
+**[CSS]**
 
     <style>
         .customCss .e-box {
@@ -612,33 +406,14 @@ The following steps explain the implementation of **showRoundedCorner** in **Per
 
 
 
-{% highlight html %}
-
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: 2,
-            showRoundedCorner: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>showRoundedCorner</b> property as “<b>true”</b> in the <b>PercentageTextBox </b>controls. The default value for <b>showRoundedCorner</b> property is false in <b>PercentageTextBox</b>    &lt;script&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 2,            <b>showRoundedCorner: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** when **showRoundedCorner** is “**true**”.
@@ -658,33 +433,15 @@ The following steps explain the implementation of **showSpinButton** in **Percen
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. 
 
 
-{% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({
-            value: 2,
-            showSpinButton: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>showSpinButton</b> property as “<b>True”</b> in the <b>Textbox</b> controls. The default value for <b>showSpinButton</b> property is true in <b>Textboxes</b>    &lt;script&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({            value: 2,            <b>showSpinButton: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** when **showSpinButton** is “**True**”.
@@ -706,32 +463,15 @@ The following steps explain the implementation of **watermarkText** in **Percent
 * In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** controls. 
 
 
-{% highlight html %}
 
-<table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#percent").ejPercentageTextbox({           
-            watermarkText: "Percentage"
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;table cellpadding="10"&gt;            &lt;tbody&gt;                &lt;tr&gt;                    &lt;td&gt;                        <label for="percent">Percent</label>                    &lt;/td&gt;                    &lt;td&gt;                        &lt;input id="percent" type="text" /&gt;                    &lt;/td&gt;                &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>watermarkText</b> in the <b>PercentageTextBox </b>controls. The default value for <b>watermarkText</b> property is empty string (“”) in <b>PercentageTextBox</b>    &lt;script&gt;        /* Percent Textbox */        $("#percent").ejPercentageTextbox({                       <b>watermarkText: "Percentage"</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **PercentageTextBox** after applying **watermarkText** is as follows.

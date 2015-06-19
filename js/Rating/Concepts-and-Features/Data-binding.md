@@ -11,7 +11,9 @@ documentation: ug
 
 ## Knockout Binding
 
-**Knockout** support allows you to bind the **HTML** elements with any of the available data models. For **Knockout** **Binding**, you can include the files **knockout-min.js** and **ej.widget.ko.min**.
+**Knockout** support allows you to bind the **HTML** elements with any of the available data models.
+
+For **Knockout****Binding**, you can include the files **knockout-min.js** and **ej.widget.ko.min**.
 
 **Knockout Binding** is of two types:
 
@@ -27,10 +29,11 @@ Apply the plugin and the property assigning the **Rating** element through the d
 
 The following example depicts the way to bind data to the **Rating** control through K**nockout** support.
 
-1. Add the following HTML to render rating with Knockout support.
+* Add the following **HTML** to render rating with **Knockout** support.
 
 {% highlight html %}
 
+**[HTML]**
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -85,13 +88,19 @@ The following example depicts the way to bind data to the **Rating** control thr
 
 
 
+
+
 The following screenshot illustrates **Rating** with **Knockout** support.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Data-binding_images/Data-binding_img1.png" Caption="Rating-Knockout Binding"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Data-binding_images/Data-binding_img1.png" Caption="Figure 5: Rating-Knockout Binding"%}
 
 ## Angular Binding
 
-For Angular Binding, you can include angular.min.js, ej.unobtrusive.min.js, and ej.widget.angular.min.js files. Rating control is availed with two types of angular JS support namely, 
+For **Angular Binding**, you can include **angular.min.js, ej.unobtrusive.min.js,** and **ej.widget.angular.min.js** files**.**
+
+**Rating** control is availed with two types of **angular JS** support namely, 
 
 * One-way binding
 
@@ -105,10 +114,11 @@ Apply the plugin and property assigning the **Rating** element through the direc
 
 The following example depicts the way to bind data to the **Rating** control by **angular** support.
 
-1. Add the following HTML to render Rating with angular support.
+* Add the following **HTML** to render **Rating** with **angular** support.
 
 {% highlight html %}
 
+**[HTML]**
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="syncApp">
 <head>
@@ -170,7 +180,13 @@ The following example depicts the way to bind data to the **Rating** control by 
 
 
 
+
+
+
+
 The following screenshot displays the output of **Rating** with **Angular** support.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Data-binding_images/Data-binding_img2.png" Caption="Rating-Angular Binding "%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Data-binding_images/Data-binding_img2.png" Caption="Figure 6: Rating-Angular Binding "%}
 

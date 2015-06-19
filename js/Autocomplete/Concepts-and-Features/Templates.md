@@ -15,10 +15,13 @@ You can provide a **Template** for customizing the appearance of the **AutoCompl
 
 The following steps explain you how to define a **Template** to display a text and image for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="selectCountry" />
 
 
@@ -26,12 +29,15 @@ The following steps explain you how to define a **Template** to display a text a
 
 
 
-2. Define the **CSS** classes for the sprite images. You can find the images in the following location:
+* Define the **CSS** classes for the sprite images. You can find the images in the following location:
 
 **[Installed Drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JS \Samples\ web \images\autocomplete\flags.png**
 
+
+
 {% highlight css %}
 
+**[Style]**
 <style type="text/css" class="cssStyles">
         /* Sprite css for country flags */
         .flag
@@ -93,11 +99,13 @@ The following steps explain you how to define a **Template** to display a text a
 
 
 
-3. Define **dataSource** elements with required **template** fields using the **Sprite CSS** class names,
+* Define **dataSource** elements with required **template** fields using the **Sprite CSS** class names,
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
 var countries = [
   { text: "Algeria", sprite: "flag-dz" }, { text: "Argentina", sprite: "flag-ar" },
   { text: "Armenia", sprite: "flag-am" }, { text: "Brazil", sprite: "flag-br" },
@@ -118,32 +126,43 @@ var countries = [
   { text: "Uruguay", sprite: "flag-uy" }, { text: "Viet Nam", sprite: "flag-vn" },
   { text: "Yemen", sprite: "flag-ye" }	
 ];
-</script>
+
+
+
 
 {% endhighlight %}
 
 
 
-4. Configure the **template** structure for **AutoComplete** control by including a **&lt;div&gt;** element with an image and text in every row of the popup panel. Assign the corresponding variable name within **${**&lt;field name&gt;**}** to map them into the list.
+* Configure the **template** structure for **AutoComplete** control by including a **&lt;div&gt;** element with an image and text in every row of the popup panel. Assign the corresponding variable name within **${**&lt;field name&gt;**}** to map them into the list.
 
 
-{% highlight js %}
 
-<script type="text/javascript">
-        $('#selectCountry').ejAutocomplete({
+**[JavaScript]**
+
+$('#selectCountry').ejAutocomplete({
+
                 dataSource: countries,
-                width: 205,
-                template: '&lt;div class="flag ${sprite}"&gt; &lt;/div&gt;' +
-                        '&lt;div class="txt"&gt; ${text} &lt;/div&gt;'
-            });
-</script>
 
-{% endhighlight %}
+                width: 205,
+
+**template: '&lt;div class="flag ${sprite}"&gt; &lt;/div&gt;' +**
+
+                        **'&lt;div class="txt"&gt; ${text} &lt;/div&gt;'**
+
+            });
+
+
+
 
 
 
 
 The following image is the output for **AutoComplete** widget with **Template** support.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/Templates_images/Templates_img1.png" Caption="AutoComplete with Custom template"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/Templates_images/Templates_img1.png" Caption=""%}
+
+_Figure 22: AutoComplete with Custom template_
 

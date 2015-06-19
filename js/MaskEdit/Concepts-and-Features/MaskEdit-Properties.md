@@ -32,28 +32,15 @@ The following steps explain the implementation of **MaskEdit Properties**.
 * In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** widget. 
 
 
-{% highlight html %}
 
-<input id="maskedit" type="text" />
-	
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-	    $(function () {
-        $("#maskedit").ejMaskEdit(
-        {
-            name: "mask",
-            inputMode: ej.InputMode.Text,
-            maskFormat: "99-999-CCCC",
-            customCharacter: "r",
-            hidePromptOnLeave: true,
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;input id="maskedit" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the following code example to render the MaskEdit control.&lt;script type="text/javascript"&gt;    $(function () {        $("#maskedit").ejMaskEdit(        {            name: "mask",            inputMode: ej.InputMode.Text,            maskFormat: "99-999-CCCC",            customCharacter: "r",            hidePromptOnLeave: true,        });    });&lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **MaskEdit** with its properties is as follows.

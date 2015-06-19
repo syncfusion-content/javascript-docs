@@ -11,7 +11,7 @@ documentation: ug
 
 To provide a good look and feel for **Split Button**, position of arrow in **Split Button** is important. Using **arrowPosition** property, you can easily customize the position of arrow inside **Split Button** without using any complex CSS. **arrowPosition** property is applicable for both **Split Button** and **Dropdown Button**. This property represent the position of arrow with menu content.
 
-_List of arrow position_
+_Table_ _3__: List of arrow position_
 
 <table>
 <tr>
@@ -31,14 +31,15 @@ Support for arrow in top. </td></tr>
 <b>bottom</b></td><td>
 Support for arrow in bottom.</td></tr>
 </table>
-
-
 The following steps explain you the details on rendering the **Split Button** with above mentioned arrow position options.
 
-1. In the **HTML** page, add the following button elements to configure **Split Button** widget.
+* In the **HTML** page, add the following button elements to configure **Split Button** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <div class="control">
     <button id="spltbutton11">login</button>
     <ul id="Ul11">
@@ -65,12 +66,7 @@ The following steps explain you the details on rendering the **Split Button** 
         <li><span>Admin</span></li>
     </ul>
 </div>
-{% endhighlight %}
-
-{% highlight js %}
-
-
- // Initialize the control in JavaScript
+[JavaScript] // Initialize the control in JavaScript
 <script type="text/javascript">
     $(function () {
         $("#spltbutton11").ejSplitButton({
@@ -102,13 +98,14 @@ The following steps explain you the details on rendering the **Split Button** 
     });
 </script>
 
+
 {% endhighlight %}
 
 
 
-2. Execute the above code to render the following output.
+Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Arrow-Position_images/Arrow-Position_img1.png" Caption=""%}
 
-_Split button with arrowPosition_
+
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Arrow-Position_images/Arrow-Position_img1.png" Caption="Figure 9: Split button with arrowPosition"%}
 

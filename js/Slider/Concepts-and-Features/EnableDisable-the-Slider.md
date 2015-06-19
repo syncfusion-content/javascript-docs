@@ -21,29 +21,15 @@ The following steps explains you on how to disable the **Slider**.
 
 
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// During initialization disable the Slider by setting value for enabled property as false.    &lt;script&gt;        $("#defaultSlider").ejSlider({            value: 60,            width: "500",<b>            enabled:false</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
-
-       <div class="txt">Default Slider</div>
-        <div id="defaultSlider"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// During initialization disable the Slider by setting value for enabled property as false.
-
-   <script>
-        $("#defaultSlider").ejSlider({
-            value: 60,
-            width: "500",
-            enabled:false
-        });
-    </script>
-
-
-{% endhighlight %}
 
 Execute the above code example to render the following output.
 

@@ -39,9 +39,9 @@ By default, there are 12 themes support available for **ListBox** control namely
 
 The following screenshot illustrates the **ListBox** with Flat-lime and Flat-Saffron built-in themes.
 
-{% include image.html url="/js/Listbox/Concepts-and-Features/Theme_images/Theme_img1.png" Caption="Figure 20: ListBox with Flat-lime Theme"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Theme_images/Theme_img1.png" Caption="ListBox with Flat-lime Theme"%}
 
-{% include image.html url="/js/Listbox/Concepts-and-Features/Theme_images/Theme_img2.png" Caption="Figure 21: ListBox with Flat-Saffron Theme"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Theme_images/Theme_img2.png" Caption="ListBox with Flat-Saffron Theme"%}
 
 **Custom class with ListBox** 
 
@@ -51,49 +51,21 @@ The following screenshot illustrates the **ListBox** with Flat-lime and Flat-Saf
 
 The following steps explains you the configuration of **cssClass** properties in **ListBox**.
 
-* In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
 
-
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-  
-// Initialize the control in JavaScript
-
-<script type="text/javascript">
-    $(function () {
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, cssClass: "customclass"
-        });
-    });
-</script>
-
-{% endhighlight %}
-
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]  </b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    $(function () {        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, cssClass: "customclass"        });    });&lt;/script&gt;</td></tr>
+</table>
 Configure the **CSS** styles to apply on **ListBox**.
-
-
 
 {% highlight css %}
 
-  
+**[CSS]**  
 <style>
     .customclass {
         background-color: #FFFFCC;
@@ -105,10 +77,7 @@ Configure the **CSS** styles to apply on **ListBox**.
 
 {% endhighlight %}
 
-
-
 Output of the above steps.
 
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Theme_images/Theme_img3.png" Caption="Figure 22: ListBox with cssClass property"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Theme_images/Theme_img3.png" Caption="ListBox with cssClass property"%}
 

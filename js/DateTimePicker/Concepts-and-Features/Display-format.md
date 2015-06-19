@@ -15,13 +15,13 @@ documentation: ug
 
 If your company’s website is going to be used all over the world, following the **UTC** time is better. Main benefit of UTC Time is that the time is always guaranteed to be _consistent_. In other words, whenever the time zone of customer is changed you don't have to go back or forth in time from the logging time of the customer to your time zone.
 
-_DateTime format_
+_Table_ _1__: DateTime format_
 
 <table>
 <tr>
 <td>
-<b>Format</b></td><td>
-<b>Display in DateTimePicker</b></td></tr>
+Format</td><td>
+Display in DateTimePicker</td></tr>
 <tr>
 <td>
 Short Date and Time– d/M/yy h:mm tt</td><td>
@@ -71,56 +71,35 @@ You can also customize the format. Refer the following list to create your custo
 
 * tt - The AM/PM designator.
 
-
-
 In the following example, set **dateTimeFormat** to **fulldatetime** format.
 
 * Add the following code in your **HTML** page.
 
 
 
-{% highlight html %}
-  
-    <div class="control">
-	        <input type="text" id="dateTime" />
-	    </div>
-
-  {% endhighlight %}
-
-
-  {% highlight js %}
-
-<script>
-  
-  // Add the code in your script section to render the DateTimePicker 
-  
-	$('#dateTime').ejDateTimePicker({
-	            dateTimeFormat: "dddd, MMMM dd, yyyy hh:mm:ss tt",
-	            timePopupWidth: "150px",
-	            timeDisplayFormat: "hh:mm:ss tt",
-	            width: '300px'
-	});
-
-</script>
-
-  {% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]  </b>&lt;div class="control"&gt;        &lt;input type="text" id="dateTime" /&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]    </b><b>// </b>Add the code in your script section to render the <b>DateTimePicker </b>$('#dateTime').ejDateTimePicker({<b>            dateTimeFormat: "dddd, MMMM dd, yyyy hh:mm:ss tt",</b>            timePopupWidth: "150px",<b>            timeDisplayFormat: "hh:mm:ss tt",</b>            width: '300px',});</td></tr>
+</table>
 
 
-{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Display-format_images/Display-format_img1.png" Caption=""%}
-
-_Showcase of DateTimePicker with UTC time format_
+{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Display-format_images/Display-format_img1.png" Caption="Figure 4: Showcase of DateTimePicker with UTC time format"%}
 
 ## Day Header format
 
 You can change the format for the days of the week names using **Day Header format** property. By default in our **DateTimePicker** day of the week format in **showHeaderMin** format. For example, **Sun** for **Sunday**. To know the different types of day format refer the following table.
 
-_showHeaderMin_
+_Table_ _2__:_ _showHeaderMin_
 
 <table>
 <tr>
 <td>
-<b>Header Format types</b></td><td>
-<b>Description</b></td></tr>
+Header Format types</td><td>
+Description</td></tr>
 <tr>
 <td>
 showHeaderNone</td><td>
@@ -142,34 +121,21 @@ Shows the day header format in long like Sunday, Monday, Tuesday …</td></tr>
 
 You can also customize the format according to your needs. This is achieved by changing the day names information in the culture script file. This is explained later under the Localization section of this document. In the following sample is displayed, the short name of the day of the week, by setting day header format as **showHeaderShort**.
 
-Add the following code in your **HTML** page.
+* Add the following code in your **HTML** page.
 
 
 
-{% highlight html %}
-  
-  	<div class="control">
-	        <input type="text" id="dateTime" />
-	 </div>
+<table>
+<tr>
+<td>
+<b>[HTML]    </b>&lt;div class="control"&gt;        &lt;input type="text" id="dateTime" /&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]   </b><b>// </b>Add the code in your script section to render the <b>DateTimePicker</b> with short header<b>        </b> $('#dateTime').ejDateTimePicker({                <b>dayHeaderFormat: "showHeaderShort</b>",                width: '200px',            });</td></tr>
+</table>
 
-  {% endhighlight %}
 
 
-  {% highlight js %}
 
-<script>
-  
-  // Add the code in your script section to render the DateTimePicker with short header        
-	 $('#dateTime').ejDateTimePicker({
-	                dayHeaderFormat: "showHeaderShort",
-	                width: '200px',
-	            });
-</script>
-
-  {% endhighlight %}
-  
-
-{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Display-format_images/Display-format_img2.png" Caption=""%}
-
-_Showcase of DateTimePicker with short name of day of the week_
+{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Display-format_images/Display-format_img2.png" Caption="Figure 5: Showcase of DateTimePicker with short name of day of the week"%}
 

@@ -17,28 +17,19 @@ The following steps explain enabling the right-to-left property for **Dialog** c
 
 1. In the **HTML** page set a **&lt;div&gt;** element with dialog content for rendering the **Dialog** control. 
 
-{% highlight html %}
 
-        <div id="rtlDialog" title="WinRT">
-        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications <span>including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more.</span>
-        It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
-        </div>
 
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;div id="rtlDialog" title="WinRT"&gt;        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications <span>including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more.&lt;/span&gt;        It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.        &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Enable <b>RTL</b> to the <b>Dialog</b> control by setting <b>enableRTL</b> property as true    &lt;script type="text/javascript"&gt;        $("#rtlDialog").ejDialog({            <b>enableRTL: true,</b>            width: 550                    });     &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-<script type="text/javascript">
-// Enable RTL to the Dialog control by setting enableRTL property as true
-    $("#rtlDialog").ejDialog({
-        enableRTL: true,
-        width: 550            
-    });
- </script>
-
-{% endhighlight %}
 
 2. The output for **Dialog** when **enabelRTL** is “**True**” is as follows.
 
-{% include image.html url="/js/Dialog/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="Dialog with enableRTL"%}
+{% include image.html url="/js/Dialog/Concepts-and-Features/RTL-Support_images/RTL-Support_img1.png" Caption="Dialog with “enableRTL "%}
 

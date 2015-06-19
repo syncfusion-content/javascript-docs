@@ -13,11 +13,17 @@ This section explains briefly about how to create a **TimePicker** in your appli
 
 ## Create your first TimePicker in JavaScript
 
-The **Essential JavaScript** **TimePicker** provides support to display a **TimePicker** in your webpage and allows you to pick a time from the given **TimePicker**. Here, you can learn how to customize two dates and **TimePickers** in a real-time hotel table booking application. 
+The **Essential JavaScript****TimePicker** provides support to display a **TimePicker** in your webpage and allows you to pick a time from the given **TimePicker**. Here, you can learn how to customize two dates and **TimePickers** in a real-time hotel table booking application. 
 
 The following screenshot illustrates the functionality of a **TimePicker** with a time range of morning to evening. You can select a time to book a table, from a period of 9.00 AM to 6.00 PM for the current day. This avoids selecting a time prior to the morning.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img1.png" Caption="TimePicker"%}
+
+
+{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
+
+_Figure_ _1__:_ _TimePicker_
+
+
 
 **Create a TimePicker** 
 
@@ -32,7 +38,7 @@ The following screenshot illustrates the functionality of a **TimePicker** with 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -41,7 +47,7 @@ The following screenshot illustrates the functionality of a **TimePicker** with 
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -146,13 +152,19 @@ $(function () {
 
 
 
-The following screenshot displays a **TimePicker** control.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img2.png" Caption="TimePicker with booking"%}
+
+* The following screenshot displays a **TimePicker** control.
+
+
+
+{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: TimePicker with booking"%}
 
 ### Set the Min and Max Values
 
 In a real-time hotel table booking scenario, the booking is open only for a limited time and limited number of days. You have to select a time and date from the given range. This is achieved by using the properties **minTime** and **maxTime**, **minDate** and **maxDate**. By this way, only times ranging between **minTime** and **maxTime**, **minDate** and **maxDate** are enabled in the **TimePicker**.
+
+
 
 {% highlight js %}
 
@@ -183,7 +195,7 @@ var rangeDate=new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDat
 
 The above code example displays the following output.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img3.png" Caption="TimePickers with Min/Max Date and Time"%}__
+{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img3.png" Caption=""%}_Figure_ _3__:_ _TimePicker__s with Min/Max Date and Time_
 
 ### Set Time Interval
 
@@ -191,7 +203,10 @@ You can select the **Time** in **TimePicker** with the interval of one hour. You
 
 The following code example shows how to set **Time****interval**.
 
+
+
 {% highlight js %}
+
 
 <script type="text/javascript">
         var curdate = new Date();// mentions the current date.
@@ -218,17 +233,25 @@ var rangeDate=new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDat
 
 {% endhighlight %}
 
+
+
 Execute the above code to achieve the desired result. You can select the date and time in **TimePicker** within the given range of one hour interval. This scenario is illustrated in the following screenshot.
 
 
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img4.png" Caption="TimePicker with a one hour interval"%}
+{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
+
+
+
+_Figure_ _4__:_ _TimePicker_ _with a_ _one hour interval_
 
 ### Display the Acknowledgement Message
 
-The **acknowledgement** **message** is displayed when you click the ‘**Book’** button.
+The **acknowledgement****message** is displayed when you click the ‘**Book’** button.
 
-The following code example shows how to display the **acknowledgement** **message**.
+The following code example shows how to display the **acknowledgement****message**.
+
+
 
 {% highlight js %}
 
@@ -264,13 +287,13 @@ _});_
 
 {% endhighlight %}
 
-The following screenshot displays the **acknowledgement** **message**.
+The following screenshot displays the **acknowledgement****message**.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img5.png" Caption="Acknowledgement Message"%}
+{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img5.png" Caption="Figure 5: Acknowledgement Message"%}
 
 ### Create Two TimePickers
 
-You can select the **Start** **time** in the first **TimePicker** and then the **End** **time** in the second **TimePicker**. The validation process is done after the selection of **Start** **time** and the changes are reflected in the **End** **time** selection **TimePicker**. You can manipulate this process in the **Select** event of **Start Time** selection **TimePicker**. 
+You can select the **Start****time** in the first **TimePicker** and then the **End****time** in the second **TimePicker**. The validation process is done after the selection of **Start****time** and the changes are reflected in the **End****time** selection **TimePicker**. You can manipulate this process in the **Select** event of **Start Time** selection **TimePicker**. 
 
 * Add input element to render **Two TimePickers**.
 
@@ -327,6 +350,8 @@ You can select the **Start** **time** in the first **TimePicker** and then the *
 
 * Initialize **Two TimePickers** using the following code example.
 
+
+
 {% highlight js %}
 
 
@@ -375,11 +400,15 @@ alert("You are booked the table with date "+a+" time "+b+ " Party_size is "+c);
 
 {% endhighlight %}
 
+
+
 Execute the above code to achieve the desired result. By selecting the **Start Time** in the first **TimePicker**, you can select the End Time within the given range. This restricts you from selecting false time. This scenario is illustrated in the following screenshot.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img6.png" Caption="Two TimePickers"%}
+{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img6.png" Caption="Figure 6: Two TimePickers"%}
 
 
 
 You can also add additional functionalities such as localization and time formats to the **TimePicker**. 
+
+
 

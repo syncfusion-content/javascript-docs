@@ -22,7 +22,7 @@ _Keyboard Shortcuts_
 <b>Description</b></td></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> + j</b></td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a><b> + j</b></td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -37,7 +37,6 @@ Decrements the value</td></tr>
 Tab</td><td>
 Focus the next element</td></tr>
 </table>
-
 ## Configuring Keyboard Navigation
 
 The following steps explain the implementation of keyboard interaction in **NumericTextBox** .
@@ -45,21 +44,16 @@ The following steps explain the implementation of keyboard interaction in **Nume
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox controls. Set the accesskey property to the NumericTextBox control for focusing the control while key is pressed.
 
 
-{% highlight html %}
 
-<input id="numeric" type="text" accesskey="j"/>
-	
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>      &lt;input id="numeric" type="text" accesskey="j"/&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>&lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 11                    });    &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-<script type="text/javascript">
-	        $("#numeric").ejNumericTextbox({
-            value: 11            
-        });
-</script>
-
-{% endhighlight %}
 
 2. Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access_key) **+ j** key to focus the **NumericTextBox**widget. Perform provided functionality by using keyboard shortcuts.
 

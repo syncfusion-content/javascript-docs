@@ -19,11 +19,11 @@ This section explains briefly about how to create a **Checkbox** in your applica
 
 {% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: Checkbox Control"%}
 
-In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App using **Checkbox**, **Tri-state** **Checkbox** and perform the action to render the checked values when the button is clicked.
+In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App using **Checkbox**, **Tri-state****Checkbox** and perform the action to render the checked values when the button is clicked.
 
 ### Create a Checkbox 
 
-**Essential JavaScript** **Checkbox** widget has built-in features like intermediate selections. You can easily create the **Checkbox** widget by using a simple input **Checkbox** element as follows.
+**Essential JavaScript****Checkbox** widget has built-in features like intermediate selections. You can easily create the **Checkbox** widget by using a simple input **Checkbox** element as follows.
 
 * Create an **HTML** file and add the following template to the **HTML** file.
 
@@ -37,14 +37,14 @@ In the above screenshot, you can select Hobbies, Interests list and Social netwo
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
 <title>Getting Started Essential JS</title>
     <!-- Style sheet for default theme (flat azure) -->
-<lin khref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -271,7 +271,7 @@ You can get the file type of Media player applications such as video, audio and 
 <script type="text/javascript">
     $(function () {
                $("#Checkbox1").ejCheckBox();
-               $("#Checkbox2").ejCheckBox();
+$("#Checkbox2").ejCheckBox();
                $("#Checkbox3").ejCheckBox();
                $("#Checkbox4").ejCheckBox();
                $("#Checkbox5").ejCheckBox();
@@ -279,18 +279,25 @@ You can get the file type of Media player applications such as video, audio and 
 
 $("#button11").ejButton({
                 size: "normal",
-                width:"60px",
+width:"60px",
                 showRoundedCorner: true,
                });
 });
 $(document).ready(function () {
-                    $("button").click(function () {
+
+$("button").click(function () {
+
 					var checkeditem = []; 
-                    $("input[type=checkbox]").each(function () {
-                         if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
-                         checkeditem.push($(this).val());
+                                                            $("input[type=checkbox]").each(function () {
+
+           if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
+
+                   checkeditem.push($(this).val());
+
                    });
-                  alert(checkeditem);
+
+alert(checkeditem);
+
 });
 
 });

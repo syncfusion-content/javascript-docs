@@ -9,45 +9,45 @@ documentation: ug
 
 # Overview
 
-The **Essential JavaScript RichTextEditor (RTE)** control enables you to visually edit HTML content. It enables you to edit the contents with insert table and images, and can get the HTML content for the displayed content. A **RichTextEditor** control provides a toolbar that helps to apply rich text formats to the text entered in the text area.  
+**RichTextEditor (RTE)** control enables you to visually edit HTML content. It enables you to edit the contents with insert table and images, and can get the HTML content for the displayed content. A **RichTextEditor** control provides a toolbar that helps to apply rich text formats to the text entered in the text area.  
 
-**Control structure**
+## Control structure
 
-{% include image.html url="/js/RichTextEditor/Overview_images/Overview_img1.png" Caption="RichTextEditor"%}
+{% include image.html url="/js/RichTextEditor/Overview_images/Overview_img1.png" Caption="Figure 1: RichTextEditor"%}
 
 **Key Feature**
 
 * **ToolBar Support**:-Provides the tool bar support, it’s also customizable.
 
-* Formatting Tool – Left, right, center, and justify
+   1. Formatting Tool – Left, right, center, and justify
 
-* Undo & Redo
+   2. Undo & Redo
 
-* Clipboard action
+   3. Clipboard action
 
-* Color palette – Fore and back color
+   4. Color palette – Fore and back color
 
-* Bullet List – ordered and un-ordered
+   5. Bullet List – ordered and un-ordered
 
-* Style – Bold, Italic, Underline
+   6. Style – Bold, Italic, Underline
 
-* Subscript and Superscript 
+   7. Subscript and Superscript 
 
-* Upper & lower case conversion
+   8. Upper & lower case conversion
 
-* Indent
+   9. Indent
 
-* Font options
+   10. Font options
 
-* Hyperlink options
+   11. Hyperlink options
 
-* Table - insert, delete row, column and table.
+   12. Table - insert, delete row, column and table.
 
-* Images insert form web URL.
+   13. Images insert form web URL.
 
-* Embed Video insert.
+   14. Embed Video insert.
 
-* Format option.
+   15. Format option.
 
 * **Source code view:** Options to get the HTML elements with styles.
 
@@ -64,6 +64,4 @@ The **Essential JavaScript RichTextEditor (RTE)** control enables you to visuall
 * **Methods / Events:** Provide efficient public methods and client side events.
 
 * **Keyboard navigation:** Keyboard navigation support.
-
-
 

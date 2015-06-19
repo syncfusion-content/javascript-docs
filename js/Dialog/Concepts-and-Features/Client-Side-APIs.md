@@ -35,56 +35,23 @@ This method will check whether the Dialog widget is in open state or not and ret
 destroy</td><td>
 This method destroy the Dialog widget</td></tr>
 </table>
-
 ## Open and Close
 
 To open or close the **Dialog** widget by using client side API:
 
 1. In the **HTML** page set a **&lt;div&gt;** element with dialog content for rendering the **Dialog** control. Render input button controls for performing open and close actions.
 
-{% highlight html %}
 
 
-     <div id="dialogAPI" title="Essential Grid">
-        <p>
-            Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
-        </p>
-        <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
-        <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
-        <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
-    </div>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;div id="dialogAPI" title="Essential Grid"&gt;        &lt;p&gt;            Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.        &lt;/p&gt;        <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.&lt;/span&gt; &lt;/p&gt;        <p>Essential Grid is designed for performance and can easily handle millions of records. &lt;/p&gt;        <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.&lt;/p&gt;    &lt;/div&gt;    &lt;input type="button" id="btnDialogOpen" class="e-btn" value="Dialog Open" /&gt;    &lt;input type="button" id="btnDialogClose" class="e-btn" value="Dialog Close" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the width and height to the <b>Dialog</b> function and get the <b>Dialog</b> object. Call the open and close methods in the corresponding input button’s click event    &lt;script type="text/javascript"&gt;        $("#dialogAPI").ejDialog({            width: 500,            height: 300        });        <b>eDialog = $("#dialogAPI").data("ejDialog");</b> /* getting ejDialog object */        $("#btnDialogOpen").ejButton({ "click": "onOpen", width: "95px" });        $("#btnDialogClose").ejButton({ "click": "onClose", width: "95px" });        function onOpen() {            if (eDialog.model) <b>                eDialog.open(); </b>/* open the ejDialog widget */<b>                       </b>        }        function onClose() {            <b>eDialog.close(); </b>/* close the ejDialog widget */        }        &lt;/script&gt;</td></tr>
+</table>
 
-    <input type="button" id="btnDialogOpen" class="e-btn" value="Dialog Open" />
-    <input type="button" id="btnDialogClose" class="e-btn" value="Dialog Close" />
-
-
-{% endhighlight %}
-
-{% highlight js %}
-   
-   <script type="text/javascript">
-       // Set the width and height to the Dialog function and get the Dialog object. Call the open and close methods in the corresponding input button’s click event
-        $("#dialogAPI").ejDialog({
-            width: 500,
-            height: 300
-        });
-
-        eDialog = $("#dialogAPI").data("ejDialog"); /* getting ejDialog object */
-
-        $("#btnDialogOpen").ejButton({ "click": "onOpen", width: "95px" });
-        $("#btnDialogClose").ejButton({ "click": "onClose", width: "95px" });
-
-        function onOpen() {
-            if (eDialog.model) 
-                eDialog.open(); /* open the ejDialog widget */                       
-        }
-
-        function onClose() {
-            eDialog.close(); /* close the ejDialog widget */
-        }   
-     </script>
-
-{% endhighlight %}
 
 2. The output of **Dialog** open is as follows.
 
@@ -107,6 +74,8 @@ To check the **Dialog** widget state by using client side API:
 
 
 {% highlight html %}
+
+**[HTML]**
 
     <div id="dialogAPI" title="Essential Grid">
         <p>
@@ -134,13 +103,15 @@ To check the **Dialog** widget state by using client side API:
 
 {% highlight js %}
 
-   <script type="text/javascript">
+**[JavaScript]**
+
+    <script type="text/javascript">
         $("#dialogAPI").ejDialog({
             width: 500,
             height: 300
         });
 
-        eDialog = $("#dialogAPI").data("ejDialog"); /* getting ejDialog object */
+**eDialog = $("#dialogAPI").data("ejDialog");** /* getting ejDialog object */
 
         $("#btnDialogOpen").ejButton({ "click": "onOpen", width: "95px" });
         $("#btnDialogClose").ejButton({ "click": "onClose", width: "95px" });
@@ -150,16 +121,16 @@ To check the **Dialog** widget state by using client side API:
 
        function onOpen() {
             if (eDialog.model) 
-                eDialog.open(); /* open the ejDialog widget */                       
+                **eDialog.open();** /* open the ejDialog widget */****
         }
 
         function onClose() {
-            eDialog.close(); /* close the ejDialog widget */
+**eDialog.close();** /* close the ejDialog widget */
         }   
 
         function onIsOpen() {
             if (eDialog.model) {
-                var _isopen = eDialog.isOpened(); /* checking the state of ejDialog widget */ 
+**var _isopen = eDialog.isOpened();** /* checking the state of ejDialog widget */ 
                 if (_isopen)
                     alert("Dialog Open");
                 else
@@ -170,7 +141,7 @@ To check the **Dialog** widget state by using client side API:
         }
 
         function onDestroy() {
-            eDialog.destroy(); /* destroy the ejDialog widget */
+            **eDialog.destroy();** /* destroy the ejDialog widget */
         }
 
         function onRestore() {
@@ -181,6 +152,7 @@ To check the **Dialog** widget state by using client side API:
             eDialog = $("#dialogAPI").data("ejDialog");            
         }
      </script>
+
 
 
 {% endhighlight %}

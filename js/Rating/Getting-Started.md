@@ -11,19 +11,21 @@ documentation: ug
 
 This section explains briefly about how to create a **Rating** control in your application with **JavaScript**. 
 
-## Create your first Rating widget in JavaScript
+## Create your first Rating Widget in JavaScript
 
-**Essential JavaScript** **Rating** helps to select the number of stars that represent **Rating**. Here, you can learn how to create **Rating** control in a real-time movie download application and also learn how to rate the application.
+**Essential JavaScript****Rating** helps to select the number of stars that represent **Rating**. Here, you can learn how to create **Rating** control in a real-time movie download application and also learn how to rate the application.
 
 The following screenshot illustrates the functionality of a **Rating** widget with a Rating range of 0 to 5. 
 
-{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img1.png" Caption="Rating"%}
 
-**Create a Rating** **Widget**
+
+{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: Rating"%}
+
+### Create a Rating Widget
 
 **Essential JavaScript Rating** widget is provided with built-in features such as precision, orientation and flexible API’s. You can create the **Rating** widget by using input textbox element as follows:
 
-1. Create an HTML file and add the following template to the HTML file.
+* Create an **HTML** file and add the following template to the **HTML** file.
 
 {% highlight html %}
 
@@ -32,7 +34,7 @@ The following screenshot illustrates the functionality of a **Rating** widget wi
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"charset="utf-8"  />
       <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -41,7 +43,7 @@ The following screenshot illustrates the functionality of a **Rating** widget wi
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -54,7 +56,11 @@ The following screenshot illustrates the functionality of a **Rating** widget wi
 
 
 
-2. Add movies list in the table to render Rating control. Here, you can add corresponding images in the images folder and give the accurate image path.
+
+
+Add movies list in the table to render **Rating** control. Here, you can add corresponding images in the images folder and give the accurate image path.
+
+
 
 {% highlight html %}
 
@@ -144,7 +150,9 @@ The following screenshot illustrates the functionality of a **Rating** widget wi
 
 
 
-3. Initialize Rating in script.
+Initialize **Rating** in script.
+
+
 
 {% highlight js %}
 
@@ -162,7 +170,9 @@ The following screenshot illustrates the functionality of a **Rating** widget wi
 
 
 
-4. Apply the following styles to show the Rating widget in the horizontal order.
+Apply the following styles to show the **Rating** widget in the horizontal order.
+
+
 
 {% highlight css %}
 
@@ -184,13 +194,16 @@ The following screenshot illustrates the functionality of a **Rating** widget wi
 
 
 
-5. The following screenshot displays a Rating widget.
+The following screenshot displays a **Rating** widget.
 
-{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img2.png" Caption="Rating"%}
 
-**Set the Min and Max Value**
+
+{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: Rating"%}
+
+### Set the Min and Max Value
 
 In a real-time scenario, you can extend the range by using the properties **minValue** and **maxValue** in the **Rating** widget. 
+
 
 {% highlight html %}
 
@@ -232,11 +245,13 @@ In a real-time scenario, you can extend the range by using the properties **minV
 
 The above code example displays the following output.
 
-{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img3.png" Caption="Setting Min and Max Values	"%}
+{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 3: Setting Min and Max Values	"%}
 
-**Set Precision**
+### Set Precision
 
 In a real-time movie **Rating** scenario, you can set precision in between two whole numbers, such as 2.5 or 3.7 and it is done using the property **precision** by changing the value to **ej.Rating.Precision.Half** or **ej.Rating.Precision.Exact.**
+
+
 
 {% highlight html %}
 
@@ -295,7 +310,13 @@ In a real-time movie **Rating** scenario, you can set precision in between two w
 
 The above code example displays the following output.
 
-{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img4.jpeg" Caption="Rating with accurate values"%}
+
+
+{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img4.jpeg" Caption=""%}
+
+
+
+_Figure_ _4__: Rating with accurate values_
 
 You can also add additional functionalities such as orientation, event tracer and API’s to the **Rating**. 
 

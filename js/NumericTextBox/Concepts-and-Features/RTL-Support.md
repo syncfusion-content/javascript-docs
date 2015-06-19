@@ -17,22 +17,16 @@ The following steps explain the implementation of **enableRTL** in **NumericText
 
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control.
 
-{% highlight html %}
+2. 
 
-<input id="numeric" type="text" />
-	
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-	        $("#numeric").ejNumericTextbox({
-            value: 11,
-            enableRTL: true
-        });        
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enableRTL </b>property<b> </b>as<b> “True”</b> to the <b>NumericTextBox </b>controls. The default value for <b>enableRTL </b>is false    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 11,            <b>enableRTL: true</b>        });            &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **NumericTextBox** when **enableRTL** is **“True”** is as follows. 

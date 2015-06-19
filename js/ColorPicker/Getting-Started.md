@@ -13,7 +13,7 @@ This section explains briefly about how to create a **ColorPicker** in your appl
 
 ## Create your first ColorPicker in JavaScript
 
-The **Essential JavaScript** **ColorPicker** control provides you support for selecting the colors in different sources such as palettes, picker or custom palettes. You can also render the color value from control in three formats such as RGB, HSV and HEXCODE. 
+The **Essential JavaScript****ColorPicker** control provides you support for selecting the colors in different sources such as palettes, picker or custom palettes. You can also render the color value from control in three formats such as RGB, HSV and HEXCODE. 
 
 * In this example, you can learn how to customize **ColorPicker** control in a category Application. 
 
@@ -51,7 +51,7 @@ rel="stylesheet" />
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -65,6 +65,7 @@ rel="stylesheet" />
 
 
 
+
 * Add the input element to render **&lt;ColorPicker&gt;** control.
 
 
@@ -72,7 +73,7 @@ rel="stylesheet" />
 {% highlight html %}
 
 
-    <input type="text" id="CategoryColor" />
+<input type="text" id="CategoryColor" />
 
 
 

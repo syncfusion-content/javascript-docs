@@ -19,43 +19,17 @@ The following steps explains you the configuration of **showScale** property.
 
 * In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Default Slider” and “Range Slider”.
 
-{% highlight html %}
 
 
-    <div class="txt">Default Slider</div>
-        <div id="defaultSlider"></div>
-        <br />
-        <br />
-        <div class="txt">Range Slider</div>
-        <div id="rangeSlider"></div> 
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;        &lt;br /&gt;        &lt;br /&gt;        <div class="txt">Range Slider</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt; </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// In JavaScript, configure the showScale property as follows.    &lt;script&gt;        $("#defaultSlider").ejSlider({            sliderType: ej.SliderType.Default,            value: 60,            width: "500",            minValue: 40,            maxValue: 80,<b>            showScale: true</b>        });        $("#rangeSlider").ejSlider({            sliderType: ej.SliderType.Range,            values: [10,90],            width: "500",            <b>showScale: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// In JavaScript, configure the showScale property as follows.
-
-   <script>
-        $("#defaultSlider").ejSlider({
-            sliderType: ej.SliderType.Default,
-            value: 60,
-            width: "500",
-            minValue: 40,
-            maxValue: 80,
-            showScale: true
-        });
-
-        $("#rangeSlider").ejSlider({
-            sliderType: ej.SliderType.Range,
-            values: [10,90],
-            width: "500",
-            showScale: true
-        });
-    </script>
-
-
-{% endhighlight %}
 
 Execute the above code example to render the following output.
 
@@ -69,45 +43,17 @@ The following steps explains you on how to disable the small ticks in **Slider**
 
 * In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Default Slider” and “Range Slider”.
 
-{% highlight html %}
 
 
-    <div class="txt">Default Slider</div>
-        <div id="defaultSlider"></div>
-        <br />
-        <br />
-        <div class="txt">Range Slider</div>
-        <div id="rangeSlider"></div> 
+<table>
+<tr>
+<td>
+[<b>HTML</b>]        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;        &lt;br /&gt;        &lt;br /&gt;        <div class="txt">Range Slider</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt; </td></tr>
+<tr>
+<td>
+[<b>JavaScript</b>]// In JavaScript, set the value of showSmallTicks property as “false”.<br>    &lt;script&gt;        $("#defaultSlider").ejSlider({            sliderType: ej.SliderType.Default,            value: 60,            width: "500",            minValue: 40,            maxValue: 80,            showScale: true,<b>            showSmallTicks: false</b>        });        $("#rangeSlider").ejSlider({            sliderType: ej.SliderType.Range,            values: [10,90],            width: "500",            showScale: true,<b>            showSmallTicks:false</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// In JavaScript, set the value of showSmallTicks property as “false”.
-
-   <script>
-        $("#defaultSlider").ejSlider({
-            sliderType: ej.SliderType.Default,
-            value: 60,
-            width: "500",
-            minValue: 40,
-            maxValue: 80,
-            showScale: true,
-            showSmallTicks: false
-        });	
-        $("#rangeSlider").ejSlider({
-            sliderType: ej.SliderType.Range,
-            values: [10,90],
-            width: "500",
-            showScale: true,
-            showSmallTicks:false
-        });
-    </script>
-
-
-{% endhighlight %}
 
 Execute the above code example to render the following output.
 
@@ -126,47 +72,17 @@ The following steps explains you on how to configure the smallStep and largeStep
 
 * In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Default Slider” and “Range Slider”
 
-{% highlight html %}
 
 
-            <div class="txt">Default Slider</div>
-        <div id="defaultSlider"></div>
-        <br />
-        <br />
-        <div class="txt">Range Slider</div>
-        <div id="rangeSlider"></div> 
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;        &lt;br /&gt;        &lt;br /&gt;        <div class="txt">Range Slider</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt; </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// In JavaScript, specify the value for smallStep and largeStep properties.    &lt;script&gt;        $("#defaultSlider").ejSlider({            sliderType: ej.SliderType.Default,            value: 60,            width: "500",            minValue: 40,            maxValue: 80,            showScale: true,<b>            smallStep: 5,</b><b>            largeStep: 20</b>        });        $("#rangeSlider").ejSlider({            sliderType: ej.SliderType.Range,            values: [25,75],            width: "500",            showScale: true,<b>            smallStep: 5,</b><b>            largeStep:25</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// In JavaScript, specify the value for smallStep and largeStep properties.
-
-   <script>
-        $("#defaultSlider").ejSlider({
-            sliderType: ej.SliderType.Default,
-            value: 60,
-            width: "500",
-            minValue: 40,
-            maxValue: 80,
-            showScale: true,
-            smallStep: 5,
-            largeStep: 20
-        });
-
-        $("#rangeSlider").ejSlider({
-            sliderType: ej.SliderType.Range,
-            values: [25,75],
-            width: "500",
-            showScale: true,
-            smallStep: 5,
-            largeStep:25
-        });
-    </script>
-
-
-{% endhighlight %}
 
 Execute the above code example to render the following output.
 

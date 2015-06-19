@@ -23,45 +23,19 @@ documentation: ug
 
 The following steps explains you the configuration of **height** & **width** properties in **ListBox**.
 
-* In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Initialize the control in JavaScript &lt;script type="text/javascript"&gt;    $(function () {        // JSON data declaration        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        //Render ListBox by mapping fields with JSON data        $("#listboxSample").ejListBox({            width: "240", height: "302", dataSource: skillset,            fields: { text: "skill" }        });    });&lt;/script&gt;</td></tr>
+</table>
+Output of the above steps.
 
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Initialize the control in JavaScript 
-<script type="text/javascript">
-    $(function () {
-        // JSON data declaration
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        //Render ListBox by mapping fields with JSON data
-        $("#listboxSample").ejListBox({
-            width: "240", height: "302", dataSource: skillset,
-            fields: { text: "skill" }
-        });
-    });
-</script>
-
-{% endhighlight %}
-
-Output of the above steps
-
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Figure 18: ListBox with specified width and height"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="ListBox with specified width and height"%}
 
 **Enabling Rounded corner**
 
@@ -69,40 +43,17 @@ Output of the above steps
 
 The following steps explains you the configuration of Rounded corner of the **ListBox**.
 
-* In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
 
-{% highlight html %}
-
-
-<div id="control">
-    <h5 class="ctrllabel">Select a skill</h5>
-    <ul id="listboxSample"></ul>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Initialize the control in JavaScript
-<script type="text/javascript">
-    $(function () {
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, showRoundedCorner: true
-        });
-    });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="control"&gt;    <h5 class="ctrllabel">Select a skill</h5>    &lt;ul id="listboxSample"&gt;&lt;/ul&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    $(function () {        var skillset = [        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, showRoundedCorner: true        });    });&lt;/script&gt;</td></tr>
+</table>
 Output of the above steps.
 
-
-{% include image.html url="/js/Listbox/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Figure 19: ListBox with Rounded corner"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="ListBox with Rounded corner"%}
 

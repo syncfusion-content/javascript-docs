@@ -13,11 +13,13 @@ The **TreeView** control permits you to edit a node and also allows you to cut, 
 
 The following steps explain how to enable the **allowEditing** property for **TreeView**.
 
-1. In the HTML page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
+* In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configure **TreeView.**
+
+****
 
 {% highlight html %}
 
-
+**[HTML]**
 <ul id="treeView">
         <li class="expanded">
             Favorites
@@ -65,20 +67,24 @@ The following steps explain how to enable the **allowEditing** property for **Tr
         </li>
     </ul>
 
-{% endhighlight %}
+**[JavaScript]**
+**// Enable allowEditing for TreeView control as follows.**
 
-{% highlight js %}
+            $("#treeView").ejTreeView({ **allowEditing**: true });
 
 
-// Enable allowEditing for TreeView control as follows.
-<script type="text/javascript">
-            $("#treeView").ejTreeView({ allowEditing: true });
-</script>
 
 {% endhighlight %}
 
 
-2. The following screenshot displays the appearance of Editing-cut-copy-paste the node in TreeView component.
 
-{% include image.html url="/js/TreeView/Concepts-and-Features/Hierarchical-data-with-Editing-cut-copy-paste_images/Hierarchical-data-with-Editing-cut-copy-paste_img1.png" Caption="Node Editing-cut-copy-paste"%}
+
+
+* The following screenshot displays the appearance of Editing-cut-copy-paste the node in **TreeView** component.
+
+
+
+{% include image.html url="/js/TreeView/Concepts-and-Features/Hierarchical-data-with-Editing-cut-copy-paste_images/Hierarchical-data-with-Editing-cut-copy-paste_img1.png" Caption=""%}
+
+_Figure_ _1__4__:_ _Node Editing-cut-copy-paste_
 

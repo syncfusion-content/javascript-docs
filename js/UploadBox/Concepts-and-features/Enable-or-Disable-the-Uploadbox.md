@@ -15,37 +15,21 @@ The following steps explain the configuration of **enabled** property in **Uploa
 
 * In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 
-{% highlight html %}
 
 
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="Uploadbox"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>  <b>// Initialize the control in JavaScript.</b>&lt;script type="text/javascript"&gt;        $(function () {//Declaration.            $("#Uploadbox").ejUploadbox({                saveUrl: "saveFiles.ashx",                removeUrl: "removeFiles.ashx",                enabled :false            });         });    &lt;/script&gt;</td></tr>
+</table>
 
-     <div id="Uploadbox"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-
-  // Initialize the control in JavaScript.
-<script type="text/javascript">
-        $(function () {
-//Declaration.
-            $("#Uploadbox").ejUploadbox({
-                saveUrl: "saveFiles.ashx",
-                removeUrl: "removeFiles.ashx",
-                enabled :false
-            }); 
-        });
-    </script>
-
-{% endhighlight %}
 
 * For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as mentioned in the Save file action and Remove file action respectively.
 
 * The following screenshot displays the output.
 
-
-
-{% include image.html url="/js/UploadBox/Concepts-and-features/Enable-or-Disable-the-Uploadbox_images/Enable-or-Disable-the-Uploadbox_img1.png" Caption="Uploadbox with enabled property"%}
+{% include image.html url="/js/UploadBox/Concepts-and-features/Enable-or-Disable-the-Uploadbox_images/Enable-or-Disable-the-Uploadbox_img1.png" Caption="Figure 14: Uploadbox with enabled property"%}
 

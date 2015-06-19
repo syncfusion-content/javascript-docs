@@ -25,13 +25,13 @@ To know more detail about the **Angular binding**, you can refer the following l
 
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
-> {% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img1.jpeg" Caption=""%}
 
-_**Note: Add the following script files as given in the following example to access angular binding. They have JS library for angular binding.**_
 
-* angular-min.js
+> _**Note: Add the following script files as given in the following example to access Angular binding. They have JS library for angular binding.**_
 
-* ej.widget.angular.min.js
+* _**angular-min.js**_
+
+* _**ej.widget.angular-latest.min.js**_
 
 The following example depicts the way to bind data to the **DatePicker** widget through **angular support**.
 
@@ -86,39 +86,39 @@ The following example depicts the way to bind data to the **DatePicker** widget 
 
 
 
-{% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img2.png" Caption="Figure 22: Angular Support in DatePicker"%}
-
-## Knockout Binding
+{% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img1.png" Caption="Knockout Binding"%}
 
 **Knockout** support allows you to bind the **HTML** elements against any of the available data models.
 
 Two types of **Knockout** binding are supported,
 
-* One-way binding
+* One way binding
 
-* Two-way binding
+* Two way binding 
 
 **One way binding** refers to the process of applying observable values to all the available properties of the **DatePicker** widget. But the changes made in **DatePicker** widget are not reflected and triggered in turn to the observable collection. This kind of binding is applied to all the properties of the **DatePicker** widget.
 
 **Two-way binding** supports both the processes – it applies the observable values to the **DatePicker** widget properties as well as the changes made in the **DatePicker** widget are also reflected back and triggered within the observable collections. 
 
-For more information about the **Knockout** **binding**, you can refer the following online documentation in the following link location,
+For more information about the **Knockout****binding**, you can refer the following online documentation in the following link location,
 
 [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
-> {% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img3.jpeg" Caption=""%}
 
-_**Note: Add the following script files along with the given code to access knockout binding. They have JS library for knockout binding.**_
 
-* knockout-min.js
+> _**Note: Add the following script files as given in the following example to access knockout binding. They have JS library for angular binding.**_
 
-* ej.widget.ko.min.js
+* _**knockout-min.js**_
+
+* _**ej.widget.ko-latest.min.js**_
+
+
 
 The link for those script files are as follows:
 
-[http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
+[http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js](http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js)
 
-[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)
+[http://cdn.syncfusion.com/js/web/ej.widget.ko-latest.min.js](http://cdn.syncfusion.com/js/web/ej.widget.ko-latest.min.js)
 
 The following example depicts the way to bind data to the **DatePicker** widget through the **Knockout** support that enables and populate data to a **DatePicker** widget based on the value set to the other **DatePicker** widget.
 
@@ -161,11 +161,11 @@ The following example depicts the way to bind data to the **DatePicker** widget 
 </body>
 </html>
 
+
+
 {% endhighlight %}
 
 
 
-
-
-{% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img4.png" Caption="Figure 23: Knockout Support in DatePicker"%}
+{% include image.html url="/js/DatePicker/Concepts-and-Features/Integration_images/Integration_img2.png" Caption="Knockout Support in DatePicker"%}
 

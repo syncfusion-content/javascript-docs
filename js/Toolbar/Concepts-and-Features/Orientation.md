@@ -23,84 +23,45 @@ This property sets the **Toolbar** in **horizontal** orientation. You can refer 
 
 1. In View, create ul-li list of toolbar items and invoke the toolbar helper.
 
-Add the following script in your **HTML** page.
-
-{% highlight js %}
+2. Add the following script in your **HTML** page.
 
 
-<script type="text/javascript">
-    $(function () {
-        // declaration
-        $("#toolbarcontent").ejToolbar({ width: "290px", orientation: ej.Orientation.Horizontal });
-    });
-</script>
 
-{% endhighlight %}
-
-OR
-
-{% highlight js %}
-
-
-<script type="text/javascript">
-    $(function () {
-        // declaration            
-        $("#toolbarcontent").ejToolbar({ width: "290px", orientation: "Horizontal" });
-    });
-</script>
-
-{% endhighlight %}
-
-Build and run the application.
+<table>
+<tr>
+<td>
+<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ width: "290px", orientation: ej.Orientation.Horizontal });    });&lt;/script&gt;</td></tr>
+<tr>
+<td>
+OR<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration                    $("#toolbarcontent").ejToolbar({ width: "290px", orientation: "Horizontal" });    });&lt;/script&gt;</td></tr>
+</table>
+3. Build and run the application.
 
 The following screenshot illustrates a **Toolbar** with horizontal orientation.
 
-{% include image.html url="/js/Toolbar/Concepts-and-Features/Orientation_images/Orientation_img1.png" Caption=""%}
-
-_Figure 10: Toolbar with Horizontal Orientation_
+{% include image.html url="/js/Toolbar/Concepts-and-Features/Orientation_images/Orientation_img1.png" Caption="Toolbar with Horizontal Orientation"%}
 
 ## Vertical
 
 This property sets the **Toolbar** in **vertical** orientation. You can refer the following steps to set vertical orientation for **Toolbar** control.
 
-* Create ul-li list of toolbar items and invoke the toolbar helper.
+1. Create ul-li list of toolbar items and invoke the toolbar helper.
 
-Add the following script in your **HTML** page.
-
-
-{% highlight js %}
+2. Add the following script in your **HTML** page.
 
 
-<script type="text/javascript">
-    $(function () {
-        // declaration
-        $("#toolbarcontent").ejToolbar({ orientation: ej.Orientation.Vertical });
-    });
-</script>
 
-
-{% endhighlight %}
-
-OR
-
-{% highlight js %}
-
-
-<script type="text/javascript">
-    $(function () {
-        // declaration
-        $("#toolbarcontent").ejToolbar({ orientation: "Vertical" });
-    });
-</script>
-
-{% endhighlight %}
-
-
-Build and run the application.
+<table>
+<tr>
+<td>
+<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ orientation: ej.Orientation.Vertical });    });&lt;/script&gt;</td></tr>
+<tr>
+<td>
+OR<b>[JS]</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#toolbarcontent").ejToolbar({ orientation: "Vertical" });    });&lt;/script&gt;</td></tr>
+</table>
+3. Build and run the application.
 
 The following screenshot illustrates a **Toolbar** with vertical orientation.
 
-{% include image.html url="/js/Toolbar/Concepts-and-Features/Orientation_images/Orientation_img2.png" Caption=""%}
-
-_Figure 11: Toolbar with Vertical Orientation_
+{% include image.html url="/js/Toolbar/Concepts-and-Features/Orientation_images/Orientation_img2.png" Caption="Toolbar with Vertical Orientation"%}
 

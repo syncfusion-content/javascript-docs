@@ -13,17 +13,19 @@ This section explains you briefly on how to create a **Button** in your applicat
 
 ## Create your first Button in JavaScript
 
-Essential JavaScript Button helps to display a Button widget within a webpage and allows you to Click, Toggle Click, Reset, and Submit. The following example illustrates how to customize Button control in a Media Player and Office Ribbon Application. 
+**Essential JavaScript****Button** helps to display a **Button** widget within a webpage and allows you to Click, Toggle Click, Reset, and Submit. The following example illustrates how to customize **Button** control in a Media Player and Office Ribbon Application. 
 
-The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
+The following screenshot illustrates the functionality of a **Button** control in Media Player and Office Ribbon Application.
 
-{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img1.png" Caption="Button Controls"%}
 
-**Create Button** **Widget**
 
-Essential JavaScript Button control has different functionalities such as Display as Only Image Content or Image Content with Text.
+{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: Button Controls"%}
 
-1. Create an HTML file and add the following code template to the HTML file.
+### Create Button Widget
+
+**Essential JavaScript****Button** control has different functionalities such as Display as Only Image Content or Image Content with Text.
+
+* Create an **HTML** file and add the following code template to the **HTML** file.
 
 {% highlight html %}
 
@@ -33,14 +35,14 @@ Essential JavaScript Button control has different functionalities such as Displa
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- Style sheet for default theme (flat azure) -->
 
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css)"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -53,7 +55,9 @@ Essential JavaScript Button control has different functionalities such as Displa
 
 
 
-2. Add &lt;Button&gt; element to create a Button control.
+* Add **&lt;Button&gt;** element to create a **Button** control.
+
+
 
 {% highlight html %}
 
@@ -89,7 +93,9 @@ Essential JavaScript Button control has different functionalities such as Displa
 
 
 
-3. Initialize Button in the script with properties.
+* Initialize **Button** in the script with properties.
+
+
 
 {% highlight js %}
 
@@ -142,7 +148,9 @@ Essential JavaScript Button control has different functionalities such as Displa
 
 
 
-4. Add the following styles to show the Button control in the center of a webpage.
+* Add the following styles to show the **Button** control in the center of a webpage.
+
+
 
 {% highlight css %}
 
@@ -175,9 +183,9 @@ Essential JavaScript Button control has different functionalities such as Displa
 
 {% endhighlight %}
 
-**Create Multimedia Player**
+### Create Multimedia Player
 
-1. Add the following code inside the **&lt;body&gt;** tag.
+* Add the following code inside the **&lt;body&gt;** tag.
 
 {% highlight html %}
 
@@ -187,7 +195,6 @@ Essential JavaScript Button control has different functionalities such as Displa
             <source src="song.mp3" type="audio/mpeg">
         </audio>
     </div>
-    
 <div class="case1">
         <table>
             <tr>
@@ -221,7 +228,9 @@ Essential JavaScript Button control has different functionalities such as Displa
 
 
 
-2. Add the following code in the **&lt;script&gt;** tag.
+* Add the following code in the **&lt;script&gt;** tag.
+
+
 
 {% highlight js %}
 
@@ -272,45 +281,41 @@ Essential JavaScript Button control has different functionalities such as Displa
 
 </script>
 
-{% endhighlight %}
-
-3. Add the following function in **&lt;script&gt;** tag.
-
-{% highlight js %}
-
-<script>
-function start(e)
-{
-    v.play();// play the current song
-}
-function stop(e)
-{
-    v.pause();// pause the current song
-}
-function playpause(e) {
-    if (e.isChecked) {
-       v.play();
-    }
-    else {
-       v.pause();
-    }
-}
-</script>
 
 {% endhighlight %}
+
+
+
+* Add the following function in **&lt;script&gt;** tag.
+
+
+
+<table>
+<tr>
+<td>
+function start(e){v.play();// play the current song}function stop(e){v.pause();// pause the current song}</td></tr>
+<tr>
+<td>
+function playpause(e) {           if (e.isChecked) {               v.play();            }           else {                v.pause();            }        }</td></tr>
+</table>
 
 
 The following screenshot displays the output.
 
-{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img2.png" Caption="Button Controls"%}
 
-**Create Office Ribbon** **Control**
+
+{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: Button Controls"%}
+
+### Create Office Ribbon Control
 
 In a real-time scenario, MS Office Bold and Italic options work as **Toggle Button** and Underline option works as a **Split Button**. Here, you can learn how to use **Button** control feature using Office Ribbon options.
 
-1. Add **&lt;Button&gt;** element using the following code example.
+* Add **&lt;Button&gt;** element using the following code example.
+
+
 
 {% highlight html %}
+
 
 <div class="case1">
             <table>
@@ -338,7 +343,9 @@ In a real-time scenario, MS Office Bold and Italic options work as **Toggle Butt
 
 
 
-2. Initialize &lt;Button&gt; script with required properties.
+* Initialize **&lt;Button&gt;** script with required properties.
+
+
 
 {% highlight js %}
 
@@ -375,12 +382,13 @@ In a real-time scenario, MS Office Bold and Italic options work as **Toggle Butt
 
 
 
-3. Add Function Definition from click event to Button function.
+* Add Function Definition from click event to **Button** function.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
-        function boldsetunset(e) {
+function boldsetunset(e) {
             if (e.isChecked) {
                 $(".sample span").wrap("<b></b>");// add the bold tag to span
             }
@@ -403,7 +411,7 @@ In a real-time scenario, MS Office Bold and Italic options work as **Toggle Butt
                 $(".sample span").wrap("<u></u>");// remove the italic tag to span 
             }
         }
-</script>
+
 
 {% endhighlight %}
 
@@ -411,9 +419,13 @@ In a real-time scenario, MS Office Bold and Italic options work as **Toggle Butt
 
 The following screenshot displays Office Ribbon Application.
 
-{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img3.png" Caption="Office Ribbon"%}
 
-The following screenshot displays **Office Ribbon** **Bold** Option.	
 
-{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img4.png" Caption="Office Ribbon with Bold option"%}
+{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 3: Office Ribbon"%}
+
+The following screenshot displays **Office Ribbon****Bold** Option.	
+
+
+
+{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 4: Office Ribbon with Bold option"%}
 

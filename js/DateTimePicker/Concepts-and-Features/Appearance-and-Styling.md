@@ -43,9 +43,7 @@ The following list is of the twelve themes supported by **DateTimePicker**:
 
 * gradient-saffron-dark
 
-
-
-Add the following code in your **HTML** page.
+* Add the following code in your **HTML** page.
 
 
 
@@ -82,7 +80,7 @@ Add the following code in your **HTML** page.
 
 
 
-{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Showcase of DateTimePicker with gradient line dark theme"%}
+{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Figure 15: Showcase of DateTimePicker with gradient line dark theme"%}
 
 ## Css Class
 
@@ -90,10 +88,13 @@ Add the following code in your **HTML** page.
 
 Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “**Purple-dark**”. **Purple-dark** is added as root class to **DateTimePicker** control at the runtime. From this root class you can customize the **DateTimePicker** control theme.
 
-Add the following code in your **HTML** page to render the DateTimePicker.
+* Add the following code in your **HTML** page to render the DateTimePicker.
+
+
 
 {% highlight html %}
-   
+
+**[HTML]**    
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -129,11 +130,13 @@ Add the following code in your **HTML** page to render the DateTimePicker.
 
 In the following style sheet the exiting theme style sheet file has been over-ridden using root class “**Purple-dark**”. 
 
-Add the following code in your style section.
+* Add the following code in your style section.
+
+
 
 {% highlight css %}
 
-<style>
+**[Style]**
 
 .Purple-dark .e-week-header {
         color: #EBADD6;
@@ -185,11 +188,17 @@ Add the following code in your style section.
             background: #FF1975;
 
         }
-</style>
+
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Showcase for DateTimePicker with cssClass “Purple-dark”"%}
+{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Figure 16: Showcase for DateTimePicker with cssClass “Purple-dark”"%}
+
+
+
+
+
+
 

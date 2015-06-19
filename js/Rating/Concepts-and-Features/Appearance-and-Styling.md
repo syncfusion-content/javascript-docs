@@ -11,14 +11,17 @@ documentation: ug
 
 ## Show ToolTip
 
-**Rating** control provides support for **Tooltip** values. This is achieved by enabling the **showTooltip** property to be **‘True’.** When you move the mouse over the **Rating** control it displays the **Tooltip** value as **rating** **value**. By default this property value is set to **‘True’**.
+**Rating** control provides support for **Tooltip** values. This is achieved by enabling the **showTooltip** property to be **‘True’.** When you move the mouse over the **Rating** control it displays the **Tooltip** value as **rating****value**. By default this property value is set to **‘True’**.
 
 The following code example is used to render the **Rating** control without **tooltip**.
 
-1. Add the following HTML to render Rating with Tooltip.
+* Add the following **HTML** to render **Rating** with **Tooltip**.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -30,12 +33,9 @@ The following code example is used to render the **Rating** control without **to
             </tr>
         </table>
     </div>
-    
-{% endhighlight %}
 
-// Add the following script to render Rating without Tooltip.
-
-{% highlight js %}
+**[JS]**
+**// Add the following script to render Rating without Tooltip.**
 
 <script type="text/javascript">
      $("#rating").ejRating({ showTooltip:false });
@@ -46,9 +46,15 @@ The following code example is used to render the **Rating** control without **to
 
 
 
+
+
+
+
 The following screenshot illustrates **Rating** without **Tooltip**.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Rating without Tooltip"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Figure 15: Rating without Tooltip"%}
 
 ## Adjusting Rating Size
 
@@ -58,19 +64,20 @@ You can customize the width and height of the **Rating** by **shapeWidth** and *
 
 The following code example is used to render the **Rating** control with customized **shapeWidth** and **shapeHeight**.
 
-1. Add the following HTML to render Rating with customized shapeWidth and shapeHeight.
+* Add the following **HTML** to render **Rating** with customized **shapeWidth** and **shapeHeight**.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <div style="margin-top: 0px;">
         <h4>Rating:</h4>
         <input id="rating" type="text" class="rating" />
  </div>
- 
- {% endhighlight %}
- 
-{% highlight js %}
-// Add the following script to render Rating with customized shapeWidth and shapeHeight.
+
+**[JS]**
+**// Add the following script to render Rating with customized shapeWidth and shapeHeight.**
 
 <script type="text/javascript">
       $("#rating").ejRating({ value: 4, shapeWidth: 29, shapeHeight: 29 });   </script>
@@ -80,10 +87,13 @@ The following code example is used to render the **Rating** control with customi
 
 
 
-2. Add the following styles.
+Add the following styles.
+
+
 
 {% highlight css %}
 
+**[CSS]**
 <style type="text/css">
         .e-rating
 {
@@ -129,7 +139,9 @@ margin-left: 2px;
 
 The following screenshot illustrates **Rating** with customized **shapeWidth** and **shapeHeight**.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Rating with customized shapeWidth and shapeHeight"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Figure 16: Rating with customized shapeWidth and shapeHeight"%}
 
 ## Theme
 
@@ -165,42 +177,29 @@ By default, there are 12 themes support available for **Rating** control namely:
 
 The style of the **Rating** control is customized by **cssClass** property. 
 
-The following code example is used to render the **Rating** control with **customized** **style**.
+The following code example is used to render the **Rating** control with **customized****style**.
 
-1. Add the following HTML to render Rating with customized style.
-
-{% highlight html %}
-
-<div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-
-                </td>
-            </tr>
-        </table>
-    </div>
-
-{% endhighlight %}
-
-{% highlight js %}
+* Add the following **HTML** to render **Rating** with **customized****style**.
 
 
-// Add the following script to render Rating with customized style.
 
-<script type="text/javascript">
-        $("#rating").ejRating({ cssClass: "custom" });
-    </script>
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div id="container" style="border: 1px solid black; width: 300px; padding: 2px"&gt;        &lt;table&gt;            &lt;tr&gt;                <td valign="top">Rating:                &lt;/td&gt;                &lt;td&gt;                    &lt;input id="rating" type="text" /&gt;                &lt;/td&gt;            &lt;/tr&gt;        &lt;/table&gt;    &lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b> [JS]</b><b>// Add the following script to render Rating with customized style.</b>&lt;script type="text/javascript"&gt;        $("#rating").ejRating({ cssClass: "custom" });    &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
 
-2. Add the following styles.
+* Add the following styles.
+
+
 
 {% highlight css %}
 
+**[CSS]**
 <style type="text/css">
         .custom {
             background-color: greenyellow;
@@ -212,7 +211,11 @@ The following code example is used to render the **Rating** control with **custo
 
 
 
+
+
 The following screenshot illustrates the **Rating** with customized style.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Rating with customized style"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Figure 17: Rating with customized style"%}
 

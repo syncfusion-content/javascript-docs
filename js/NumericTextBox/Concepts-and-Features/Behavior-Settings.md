@@ -19,22 +19,16 @@ The following steps explain the implementation of **decimalPlaces** in **Numeric
 
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control. 
 
-{% highlight html %}
 
-<input id="numeric" type="text" />
-    
-{% endhighlight %}
 
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value: 333,
-            decimalPlaces: 3
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>decimalPlaces</b> value in the Numeric Textbox control    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 333,<b>            decimalPlaces: 3</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **NumericTextBox** with **decimalPlaces** is as follows.
@@ -52,22 +46,15 @@ The following steps explain the implementation of **enablePersistence** in **Num
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control.
 
 
-{% highlight html %}
 
-<input id="numeric" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value: 11,
-            enablePersistence: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input id="numeric" type="text" /&gt;                  </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enablePersistence </b>property<b> </b>as<b> “True</b>” to the <b>NumericTextBox </b>controls. The default value for <b>enablePersistence </b>is “<b>False</b>”    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 11,            <b>enablePersistence: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **NumericTextBox** with **enablePersistence** is as follows. You can change the value of **NumericTextBox** and reload the web page.
@@ -89,24 +76,15 @@ The following steps explain the implementation of **enableStrictMode** in **Nume
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control. 
 
 
-{% highlight html %}
 
-<input id="numeric" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value: 10, //value(10) exceeds maxValue(5), so it will returns 5.
-            minValue: -3,
-            maxValue:5,
-            enableStrictMode: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;input id="numeric" type="text" /&gt;                    </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enableStrictMode </b>property<b> </b>as<b> “True</b>” to the <b>NumericTextBox </b>controls. The default value for <b>enableStrictMode </b>is “<b>False</b>”    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 10, //value(10) exceeds maxValue(5), so it will returns 5.<b>            minValue: -3,</b><b>            maxValue:5,</b><b>            enableStrictMode: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for NumericTextBox when enableStrictMode is “True” is as follows.
@@ -126,23 +104,15 @@ The following steps explains the implementation of **enabled** in **NumericTextB
 1. In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **NumericTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="numeric" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value: 1,
-            enabled: true
-           
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>   &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>enabled </b>property<b> </b>as<b> “True</b>” to the <b>NumericTextBox </b>controls. The default value for <b>enabled</b> is true    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 1,<b>            enabled: true</b>                   });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for NumericTextBox when enabled is “True” and when enabled is “False”.
@@ -164,21 +134,15 @@ The following steps explain the implementation of **height** and **width** in Nu
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control. 
 
 
-{% highlight html %}
 
-  <input id="numeric" type="text" />
-      
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({            
-            width: 100, height: 50,value:1           
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>    &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>height </b>and<b> width </b>property<b> </b>to the NumericTextBox controls. The default value of <b>height</b> and <b>width</b> is empty string (“”)    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            <b>            width: 100, height: 50,value:1           </b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for NumericTextBox after setting “**height**” and “**width**” is as follows**.**
@@ -197,22 +161,16 @@ The following steps explain the implementation of **incrementStep** in NumericTe
 
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control.
 
-{% highlight html %}
+2. 
 
-         <input id="numeric" type="text" />
-         
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value:1,
-           incrementStep: 2       
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>                &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>incrementStep </b>property<b> </b>to the <b>NumericTextBox </b>controls. The default value of <b>incrementStep </b>is 1    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value:1,<b>           incrementStep: 2       </b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 Output of Numeric textbox with **incrementStep** is as follows**.**
@@ -235,21 +193,16 @@ The following steps explain the implementation of **name** in **NumericTextBox**
 
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control.
 
-{% highlight html %}
+2. 
 
-<input id="numeric" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value:12,name: "numeric"       
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>     &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>name </b>property<b> </b>to the <b>NumericTextBox </b>controls    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value:12,<b>name: "numeric"       </b>        });     &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **NumericTextBox** with the **name** property is as follows**.**
@@ -269,21 +222,15 @@ The following steps explain the implementation of **value** in **NumericTextBox*
 1. In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **NumericTextBox** control. 
 
 
-{% highlight html %}
 
-       <input id="numeric" type="text" />
-       
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value: 12                 
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>value </b>property<b> </b>to the <b>NumericTextBox </b>controls    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            <b>value: 12                 </b>        });     &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **NumericTextBox** with the **value** property is as follows**.**
@@ -306,23 +253,16 @@ The following steps explain the implementation of **maxValue** and **minValue** 
 
 1. In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **NumericTextBox** control.
 
-{% highlight html %}
+2. 
 
-       <input id="numeric" type="text" />
-       
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            maxValue: 2,
-            minValue: -1,
-            value:2
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>maxValue, </b>and<b> minValue </b>properties<b> </b>to the <b>NumericTextBox </b>controls    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({<b>            maxValue: 2,</b><b>            minValue: -1,</b>            value:2        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for **NumericTextBox** with basic properties is as follows**.**
@@ -344,22 +284,16 @@ The following steps explain the implementation of **readOnly** in **NumericTextB
 1. In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **NumericTextBox** control. 
 
 
-{% highlight html %}
 
-<input id="numeric" type="text" />
-    
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;input id="numeric" type="text" /&gt;                   </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>readOnly </b>property as “<b>True” </b>to the <b>NumericTextBox </b>controls. The default value of <b>readOnly</b> property is false    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({                       value: 1,<b>            readOnly: true</b>        });            &lt;/script&gt;</td></tr>
+</table>
 
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({           
-            value: 1,
-            readOnly: true
-        });
-</script>
-
-{% endhighlight %}
 
 The output for NumericTextBox when **readOnly** is “**True**” is as follows**.** The NumericTextBox value cannot be edited or changed.
 
@@ -410,26 +344,20 @@ The following steps explain the implementation of **cssClass** in NumericTextBox
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox controls. 
 
 
-{% highlight html %}
 
-         <input id="numeric" type="text" />
-         
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-        $("#numeric").ejNumericTextbox({
-            value: 1,
-            cssClass: "customCss"
-        });
-</script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>         &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>cssClass </b>property as custom CSS class name<b> </b>to the <b>NumericTextBox </b>controls. The default value of <b>cssClass</b> property is empty string (“”)    &lt;script type="text/javascript"&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 1,            <b>cssClass: "customCss"</b>        });    &lt;/script&gt;</td></tr>
+</table>
 2. Customize the CSS properties in custom CSS class.
 
 {% highlight css %}
+
+**[CSS]**
 
     <style>
         .customCss .e-box {
@@ -466,22 +394,16 @@ The following steps explain the implementation of **showRoundedCorner** in **Num
 
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control. 
 
-{% highlight html %}
 
-  <input id="numeric" type="text" />
-      
-{% endhighlight %}
 
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value: 1,
-            showRoundedCorner: true
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>      &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>showRoundedCorner</b> property as “<b>True”</b> in the <b>NumericTextBox </b>controls. The default value for <b>showRoundedCorner</b> property is false in <b>NumericTextBox</b>    &lt;script&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 1,            <b>showRoundedCorner: true</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for NumericTextBox when **showRoundedCorner** is “**True**”.
@@ -501,22 +423,15 @@ The following steps explain the implementation of **showSpinButton** in **Numeri
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox controls. 
 
 
-{% highlight html %}
 
-<input id="numeric" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({
-            value: 1,
-            showSpinButton: false
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>showSpinButton</b> property as “<b>True”</b> in the <b>NumericTextBox </b>controls. The default value for <b>showSpinButton</b> property is true in <b>NumericTextBox</b>    &lt;script&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({            value: 1,            <b>showSpinButton: false</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for NumericTextBox when showSpinButton is “False”.
@@ -536,21 +451,15 @@ The following steps explain the implementation of **watermarkText** in **Numeric
 1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control. 
 
 
-{% highlight html %}
 
-<input id="numeric" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-
-<script type="text/javascript">
-            $("#numeric").ejNumericTextbox({            
-            watermarkText: "Numeric"
-        });
-</script>
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>         &lt;input id="numeric" type="text" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Set the <b>watermarkText</b> in the <b>NumericTextBox </b>controls. The default value for <b>watermarkText</b> property is empty string (“”) in <b>NumericTextBox</b>    &lt;script&gt;        /* Numeric Textbox */        $("#numeric").ejNumericTextbox({                        <b>watermarkText: "Numeric"</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
 
 The output for NumericTextBox after applying **watermarkText** is as follows.

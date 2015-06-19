@@ -11,12 +11,15 @@ documentation: ug
 
 **Rating** provides support for **vertical** orientation. By default **Rating** renders with **horizontal** orientation. You can the change the orientation by the ‘**orientation**’ property.
 
-The following code example is used to render the **Rating** control with **vertical** **orientation**.
+The following code example is used to render the **Rating** control with **vertical****orientation**.
 
-1. Add the following HTML to render Rating with customized orientation.
+* Add the following **HTML** to render **Rating** with **customized****orientation**.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
             <tr>
@@ -28,11 +31,9 @@ The following code example is used to render the **Rating** control with **verti
             </tr>
         </table>
     </div>
-    
- {% endhighlight %}
 
-{% highlight js %}
-// Add the following script to render Rating with customized orientation.
+**[JS]**
+**// Add the following script to render Rating with customized orientation.**
 
 <script type="text/javascript">
      $("#rating").ejRating({ orientation: "vertical" });
@@ -45,5 +46,15 @@ The following code example is used to render the **Rating** control with **verti
 
 The following screenshot illustrates the **Rating** with **vertical orientation**.
 
-{% include image.html url="/js/Rating/Concepts-and-Features/Orientation_images/Orientation_img1.png" Caption="Rating with vertical orientation"%}
+
+
+{% include image.html url="/js/Rating/Concepts-and-Features/Orientation_images/Orientation_img1.png" Caption="Figure 18: Rating with vertical orientation"%}
+
+
+
+
+
+
+
+
 

@@ -17,8 +17,6 @@ Two types of knockout binding supported,
 
 * Two-way binding
 
-
-
 One way binding refers to the process of applying observable values to all the available properties of the **TimePicker** widget, where the changes made in the widget is not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the **TimePicker** widget.
 
 Two-way binding supports both the processes – it applies the observable values to the **TimePicker** widget properties as well as the changes made in the **TimePicker** widget is also reflected back and triggered within the observable collections. 
@@ -31,13 +29,14 @@ The following example depicts the way to bind data to the **TimePicker** widget 
 
 {% highlight html %}
 
+**[HTML]**
 
 <html>
 <head>
     <title>Essential Studio for JavaScript : Timepicker KnockOut</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
 <!-- Style sheet for default theme (flat azure) -->
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
@@ -46,11 +45,11 @@ The following example depicts the way to bind data to the **TimePicker** widget 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>    
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)"></script>
 </head>
     <!--Add custom scripts here -->
 </head>
@@ -116,5 +115,7 @@ window.viewModel = {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/TimePicker/Concepts-and-Features/Knockout-Support_images/Knockout-Support_img1.png" Caption="TimePicker with Knockout Support"%}
+{% include image.html url="/js/TimePicker/Concepts-and-Features/Knockout-Support_images/Knockout-Support_img1.png" Caption=""%}
+
+_Figure_ _9__: TimePicker with Knockout Support_
 

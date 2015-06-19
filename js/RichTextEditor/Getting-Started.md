@@ -15,7 +15,9 @@ This section briefly describes how to create and use **RichTextEditor** control 
 
 The **Essential JavaScript RichTextEditor (RTE)** control allows easily to edit contents, insert tables, images and to get the **HTML** content. In this section, you can learn how to use **RichTextEditor** for getting Feedback from the user. The following screenshot demonstrates how the **RTE** control is used in Feedback form.
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img1.png" Caption="RTE support with Feedback Form functionality"%}
+
+
+{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 2: RTE support with Feedback Form functionality"%}
 
 In the above screenshot , the **RTE** consists of content editable area with feedback title when you click the Post Feedback toolbar item to send the feedback information.
 
@@ -51,6 +53,8 @@ In the above screenshot , the **RTE** consists of content editable area with fee
 
 
 {% endhighlight %}
+
+
 
 
 
@@ -91,7 +95,9 @@ $(function () {
 
 The following **RTE** screenshot is the output of above steps.
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img2.png" Caption="Empty RTE control"%}
+
+
+{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 3: Empty RTE control"%}
 
 ### Configure the Toolbar
 
@@ -105,7 +111,7 @@ The following code example is used to render the additional in-built toolbar ite
 
 {% highlight js %}
 
-   <script type="text/javascript">
+    <script type="text/javascript">
 
         $(function () {
 
@@ -134,13 +140,17 @@ The following code example is used to render the additional in-built toolbar ite
 
 The following screenshot is the output of above steps:
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img3.png" Caption="RTE with adding inbuilt toolbar item"%}
+
+
+{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 4: RTE with adding inbuilt toolbar item"%}
 
 #### Removing the ToolbarItem
 
 You can remove the particular toolbar item using **remove ToolbarItem** method. 
 
 Consider that the **“create table”** toolbar item is not necessary for the feedback scenario. To easily remove the **“create table”** toolbar item the following code example is used to remove the in-built toolbar items from **RTE** toolbar list.
+
+
 
 {% highlight js %}
 
@@ -158,13 +168,19 @@ Consider that the **“create table”** toolbar item is not necessary for the f
 
 {% endhighlight %}
 
+
+
 The following screenshot is the output of above steps:
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img4.png" Caption="RTE support for removing toolbar item"%}
+
+
+{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 5: RTE support for removing toolbar item"%}
 
 #### Configure Custom Toolbar item
 
 To post the feedback directly you need additional toolbar item. The **RTE** control provides support to create the custom toolbar item for custom action. The following code example demonstrates the custom **toolbar** item creation in the **RTE** control.
+
+
 
 {% highlight js %}
 
@@ -193,7 +209,9 @@ To post the feedback directly you need additional toolbar item. The **RTE** cont
 
 The following screenshot is the output of above steps:
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img5.png" Caption="RTE with Custom toolbar item"%}
+
+
+{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img5.png" Caption="Figure 6: RTE with Custom toolbar item"%}
 
 ### Validate the Content
 
@@ -201,9 +219,11 @@ To send the feedback form without contents you need to validate them before subm
 
 When the content area is empty, you set the notification message displayed in the &lt;div&gt; element area in order to alert the user. The following **HTML** code example is used to create the feedback form editor with support of **RTE** control.
 
+
+
 {% highlight html %}
 
-     <div class="commentSection">
+<div class="commentSection">
         <div class="titleSection">
             <label>Title:</label>
             <input type="text" class="input ejinput"/>
@@ -213,10 +233,12 @@ When the content area is empty, you set the notification message displayed in th
         </textarea>
         <!-- validation message display area-->
         <div class="output"></div>
-     </div>
+</div>
 
 
 {% endhighlight %}
+
+
 
 When feedback is sent, you can validate whether the content area is empty or not. To achieve this validation use **RTE** client side events. In this **RTE**, it provides the “action” function for performing the client side events to custom tool.
 
@@ -224,7 +246,6 @@ You can specify the custom tool as previous script section with validation opera
 
 {% highlight js %}
 
-<script>
         $(function () {
             $("#feedBackEditor").ejRTE({
 
@@ -268,13 +289,15 @@ You can specify the custom tool as previous script section with validation opera
 
             });
         });
-</script>
+
 
 {% endhighlight %}
 
 
 
 The following styles are used to achieve the feedback form editor application.
+
+
 
 {% highlight css %}
 
@@ -319,5 +342,7 @@ The following styles are used to achieve the feedback form editor application.
 
 The output of the above steps is to send the feedback without content.
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img6.png" Caption="RTE content validation"%}
+
+
+{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img6.png" Caption="Figure 7: RTE content validation"%}
 

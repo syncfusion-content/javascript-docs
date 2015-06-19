@@ -19,10 +19,13 @@ documentation: ug
 
 The following steps explain the configuration of the **multiSelectMode** for an **AutoComplete** textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
 <div style="margin-right: 20px;">
     <span class="txt">Using Delimiter</span>
     <input type="text" id="delimit" />
@@ -44,34 +47,45 @@ The following steps explain the configuration of the **multiSelectMode** for an 
 
 
 
-2. Configure **multiSelectMode** type for **AutoComplete** control as follows.
+* Configure **multiSelectMode** type for **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
- <script type="text/javascript">
+**[JavaScript]**
+
+// Here define CarList local data as per the previous the code block.
+
     $("#delimit").ejAutocomplete({
                 width: 225,
-                multiSelectMode: ej.MultiSelectMode.Delimiter,
-                delimiterChar:";",
+**multiSelectMode: ej.MultiSelectMode.Delimiter,**
+                **delimiterChar:";",**
                 dataSource: carList
             });
             $("#none").ejAutocomplete({
                 width: 225,
-                multiSelectMode: ej.MultiSelectMode.None,
+**multiSelectMode: ej.MultiSelectMode.None,**
                 dataSource: carList
             });
             $("#visualmode").ejAutocomplete({
                 width: 225,
-                multiSelectMode: ej.MultiSelectMode.VisualMode,
+**multiSelectMode: ej.MultiSelectMode.VisualMode,**
                 dataSource: carList
             }); 
-</script>
+
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for **AutoComplete** control with configured multiple selection.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/MultiSelection-modes_images/MultiSelection-modes_img1.png" Caption="AutoComplete with MultiSelection"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/MultiSelection-modes_images/MultiSelection-modes_img1.png" Caption=""%}
+
+_Figure 19: AutoComplete with MultiSelection_
 

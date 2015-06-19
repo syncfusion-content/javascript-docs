@@ -25,39 +25,15 @@ The following steps explains you the configuration of “value” and “values�
 
 
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;        &lt;br /&gt;        &lt;br /&gt;        <div class="txt">Range Slider</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt; </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// When initializing Slider widget, configure the “value” and “values” property as follows.    &lt;script&gt;        $("#defaultSlider").ejSlider({            sliderType: ej.SliderType.Default,<b>            value: 50,</b>            width: "500"        });        $("#rangeSlider").ejSlider({            sliderType: ej.SliderType.Range,<b>            values: [20,80],</b>            width: "500"        });    &lt;/script&gt; </td></tr>
+</table>
 
-
-    <div class="txt">Default Slider</div>
-        <div id="defaultSlider"></div>
-        <br />
-        <br />
-        <div class="txt">Range Slider</div>
-        <div id="rangeSlider"></div> 
-
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// When initializing Slider widget, configure the “value” and “values” property as follows.
-	    
- <script type="text/javascript">
-        $("#defaultSlider").ejSlider({
-            sliderType: ej.SliderType.Default,
-            value: 50,
-            width: "500"
-        });
-
-        $("#rangeSlider").ejSlider({
-            sliderType: ej.SliderType.Range,
-            values: [20,80],
-            width: "500"
-        });
-    </script> 
-
-{% endhighlight %}
 
 Execute the above code example to render the following output.
 
@@ -76,42 +52,17 @@ The following steps explains you on how to configure minValue and maxValue prope
 
 * In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Default Slider** and **Range Slider**.
 
-{% highlight html %}
 
 
-    <div class="txt">Default Slider</div>
-        <div id="defaultSlider"></div>
-        <br />
-        <br />
-        <div class="txt">Range Slider</div>
-        <div id="rangeSlider"></div> 
+<table>
+<tr>
+<td>
+[<b>HTML</b>]        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;        &lt;br /&gt;        &lt;br /&gt;        <div class="txt">Range Slider</div>        &lt;div id="rangeSlider"&gt;&lt;/div&gt; </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// When initializing Slider widget, configure the minValue and maxValue properties as follows.    &lt;script&gt;        $("#defaultSlider").ejSlider({            sliderType: ej.SliderType.Default,            value: 60,            width: "500",<b>            minValue: 40,</b><b>            maxValue:80</b>        });        $("#rangeSlider").ejSlider({            sliderType: ej.SliderType.Range,            values: [10,90],            width: "500",<b>            minValue: 10,</b><b>            maxValue:90</b>        });    &lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// When initializing Slider widget, configure the minValue and maxValue properties as follows.
-   
-   <script>
-        $("#defaultSlider").ejSlider({
-            sliderType: ej.SliderType.Default,
-            value: 60,
-            width: "500",
-            minValue: 40,
-            maxValue:80
-        });
-
-        $("#rangeSlider").ejSlider({
-            sliderType: ej.SliderType.Range,
-            values: [10,90],
-            width: "500",
-            minValue: 10,
-            maxValue:90
-        });
-    </script>
-
-{% endhighlight %}
 
 Execute the above code example to render the following output.
 

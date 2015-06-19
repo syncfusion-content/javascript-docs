@@ -17,35 +17,23 @@ The following steps explains you the configuration of the custom text for **Wait
 
 1. In the **HTML** page, add a **&lt;div&gt;** element to render **WaitingPopup** widget.
 
-{% highlight html %}
 
 
-      <div class="control">               
-      <div id="waitingPopUp"></div>            
-     </div>  
+<table>
+<tr>
+<td>
+<b>[HTML]</b>&lt;div class="control"&gt;                   &lt;div id="waitingPopUp"&gt;&lt;/div&gt;            &lt;/div&gt;  </td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>// Add Custom Text for WaitingPopup control as follows.</b>&lt;script type="text/javascript"&gt;    $(function () {        // declaration        $("#waitingPopUp").ejWaitingPopup({            showOnInit: true,            <b>text</b>: "Loading... Please wait..."        });    });&lt;/script&gt;</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Add Custom Text for WaitingPopup control as follows.
-     <script type="text/javascript">
-      $(function () {
-        // declaration
-        $("#waitingPopUp").ejWaitingPopup({
-            showOnInit: true,
-            text: "Loading... Please wait..."
-        });
-    });
-    </script>
-
-{% endhighlight %}
 
 2. Add the following styles to render **WaitingPopup** widget.
 
 {% highlight css %}
 
+**[css]**
 
 <style type="text/css" class="cssStyles">
     #waitingPopUp {
@@ -77,9 +65,10 @@ The following steps explains you on how to define template to display a text and
 
 {% highlight html %}
 
-    <div class="control">               
+**[HTML]**
+<div class="control">               
     <div id="waitingPopUp"></div>            
-     </div>  
+</div>  
 
 
 {% endhighlight %}
@@ -92,8 +81,8 @@ The following steps explains you on how to define template to display a text and
 
 {% highlight html %}
 
-       <div id="content">
-       <div class="block">
+<div id="content">
+    <div class="block">
         <div class="logo"></div>
         <div class="txt">
             <p>Create cutting edge </p>
@@ -102,7 +91,8 @@ The following steps explains you on how to define template to display a text and
         </div>
     </div>
     <div class="loader"></div>
-    </div>
+</div>
+
 
 {% endhighlight %}
 
@@ -114,15 +104,16 @@ The following steps explains you on how to define template to display a text and
 
 {% highlight js %}
 
-     <script type="text/javascript">
-       $(function () {
+**[Javascript]**
+<script type="text/javascript">
+    $(function () {
         // declaration
         $("#waitingPopUp").ejWaitingPopup({
             showOnInit: true, 
             template: $("#content")
         });
     });
-     </script>
+</script>
 
 
 {% endhighlight %}
@@ -140,6 +131,7 @@ The following steps explains you on how to define template to display a text and
 
 {% highlight css %}
 
+**[Stylesheet]**
 <style type="text/css" class="cssStyles">
     #waitingPopUp {
         height: 320px;
@@ -199,28 +191,23 @@ The following steps allows you to configure **CSS** class for an auto-complete t
 
 {% highlight html %}
 
-
-    <div class="control">               
+**[HTML]**
+<div class="control">               
     <div id="waitingPopUp"></div>            
-    </div>  
+</div>  
+**[JavaScript]**
+**// Add the cssClass property to WaitingPopup widget as follows.**
 
-{% endhighlight %}
-
-{% highlight js %}
-
-
-
-// Add the cssClass property to WaitingPopup widget as follows.
-     <script type="text/javascript">
-      $(function () {
+<script type="text/javascript">
+    $(function () {
         // declaration
         $("#waitingPopUp").ejWaitingPopup({
             showOnInit: true,
-      cssClass: "customStyle",
+**cssClass: "customStyle",**
             text: "Loading.. Please wait..."
         });
     });
-    </script>
+</script>
 
 
 {% endhighlight %}
@@ -233,6 +220,8 @@ The following steps allows you to configure **CSS** class for an auto-complete t
 
 {% highlight css %}
 
+
+**[CSS]**
 <style type="text/css" class="cssStyles">
     /*Customize the panel property*/
     #waitingPopUp {
@@ -241,7 +230,7 @@ The following steps allows you to configure **CSS** class for an auto-complete t
         margin: 0 auto;
     }
     /* Customize the WaitingPopup */
-    .customStyle{
+    .**customStyle**{
         background-color:darkred;
         font-style:italic;
         font-weight:bolder;

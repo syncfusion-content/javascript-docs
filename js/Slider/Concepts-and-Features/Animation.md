@@ -21,29 +21,14 @@ The following steps explains you on how to disable the animation effect in **Sli
 
 
 
-{% highlight html %}
-
-
-        <div class="txt">Default Slider</div>
-        <div id="defaultSlider"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// In JavaScript, during initialization disable the enableAnimation property.
-
-   <script>
-        $("#defaultSlider").ejSlider({
-            value: 60,
-            width: "500",
-            enableAnimation:false
-        });
-    </script>
-
-{% endhighlight %}
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// In JavaScript, during initialization disable the enableAnimation property.    &lt;script&gt;        $("#defaultSlider").ejSlider({            value: 60,            width: "500",<b>            enableAnimation:false</b>        });    &lt;/script&gt;</td></tr>
+</table>
 ### Customizing Animation speed
 
 Animation speed of the **Slider** indicates the speed at which the slider handle can be moved. Higher the value specified for this property decreases the rate of speed at which the **Slider** handle can be moved. You can customize the animation speed of the **Slider** using the **animationSpeed** property. Default value of this property is “500”. 
@@ -54,27 +39,13 @@ The following steps explains you on how to customize the animation speed.
 
 
 
-{% highlight html %}
+<table>
+<tr>
+<td>
+[<b>HTML</b>]        <div class="txt">Default Slider</div>        &lt;div id="defaultSlider"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+[<b>JavaScript</b>]// In <b>JavaScript</b>, during initialization specify the value for <b>animationSpeed</b> property.    &lt;script&gt;        $("#defaultSlider").ejSlider({            value: 60,            width: "500",            <b>animationSpeed</b>: 600        });    &lt;/script&gt;</td></tr>
+</table>
 
 
-        <div class="txt">Default Slider</div>
-        <div id="defaultSlider"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-
-// In JavaScript, during initialization specify the value for animationSpeed property.
-
-   <script>
-        $("#defaultSlider").ejSlider({
-            value: 60,
-            width: "500",
-            animationSpeed: 600
-        });
-    </script>
-
-
-{% endhighlight %}

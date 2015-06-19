@@ -15,10 +15,13 @@ documentation: ug
 
 The following steps explain you how to enable state maintenance for **AutoComplete**.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+* In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+
+
 
 {% highlight html %}
 
+**[HTML]**
          <input type="text" id="autocomplete" />
 
 
@@ -26,23 +29,35 @@ The following steps explain you how to enable state maintenance for **AutoComple
 
 
 
-2. Set **enablePersistence** to '**True**’ for **AutoComplete** control as follows.
+* Set **enablePersistence** to '**True**’ for **AutoComplete** control as follows.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
+
+// Here define CarList local data as per the previous the code block
+
     $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
-                enablePersistence:true
+                **enablePersistence:true**
             });
-</script>
+
+
 
 {% endhighlight %}
 
 
 
+
+
 The following image is the output for **AutoComplete** when **enablePersistence** is set to ‘**True**’.
 
-{% include image.html url="/js/Autocomplete/Concepts-and-Features/State-Persistence_images/State-Persistence_img1.png" Caption="AutoComplete with State maintenance"%}
+
+
+{% include image.html url="/js/Autocomplete/Concepts-and-Features/State-Persistence_images/State-Persistence_img1.png" Caption=""%}
+
+_Figure 21: AutoComplete with State maintenance_
 

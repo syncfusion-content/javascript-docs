@@ -15,8 +15,6 @@ documentation: ug
 
 * Two way binding 
 
-
-
 One way binding refers to the process of applying scope values to all the available properties of the **TimePicker** widget where the changes made in the widget is not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **TimePicker** widget.
 
 Two-way binding supports both the processes – it applies the scope values to the **TimePicker** properties as well as the changes made in the widget is also reflected back and triggered within the angular scope change function.
@@ -32,12 +30,13 @@ The following code example depicts you the way to bind data to the **TimePicker*
 
 {% highlight html %}
 
+**[HTML]**
 
 <html ng-app="TimeCtrl">
 <head>
     <title>Essential Studio for JavaScript : Timepicker angular</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
@@ -47,10 +46,10 @@ The following code example depicts you the way to bind data to the **TimePicker*
 
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
 
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"> </script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js)"></script>
+<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"> </script>
 </head>
 <body ng-controller="TimePickerCtrl">
     <div class="content-container-fluid">
@@ -93,9 +92,13 @@ The following code example depicts you the way to bind data to the **TimePicker*
 
 {% endhighlight %}
 
+
+
 Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/TimePicker/Concepts-and-Features/Angular-Support_images/Angular-Support_img1.png" Caption="TimePicker with Angular Support"%}
+{% include image.html url="/js/TimePicker/Concepts-and-Features/Angular-Support_images/Angular-Support_img1.png" Caption=""%}
+
+_Figure_ _10__:_ _TimePicker_ _with Angular Support_
 

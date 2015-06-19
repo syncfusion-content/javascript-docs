@@ -17,7 +17,7 @@ You can populate **TreeView** items using data binding support such as **JSON** 
 
 The **fields** property in **TreeView** includes the data source fields and it can be set with appropriate values as follows.
 
-_JS Field properties_
+_Table_ _1__:_ _JS_ _Field_ _properties_
 
 <table>
 <tr>
@@ -93,64 +93,36 @@ When it’s true the Checkbox node is checked.</td></tr>
 Value</td><td>
 Specifies the value of the <b>TreeView</b> node items.</td></tr>
 </table>
-
 ## Local Data
 
 To bind the **Local Data** to the **TreeView** control, map the user-defined **json** data names with its appropriate data source field. You can bind data to **TreeView** by mapping fields such as **dataSource,id, parentId, text, hasChild** and **expanded**. 
 
 The following steps explain how you can bind local data to **TreeView**.
 
-1. In the HTML page, add a &lt;div&gt; element to configure TreeView.
+* In the **HTML** page, add a **&lt;div&gt;** element to configure **TreeView.**
 
-{% highlight html %}
+****
 
+<table>
+<tr>
+<td>
+<b>[HTML]</b>      &lt;div id="treeView"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>// Define local data source elements with fields.</b>               var localData = [                   { id: 1, name: "Favorites", hasChild: true },                   { id: 2, pid: 1, name: "Desktop" },                   { id: 3, pid: 1, name: "Downloads" },                   { id: 4, pid: 1, name: "Recent places" },                   { id: 5, name: "libraries", hasChild: true },                   { id: 6, pid: 5, name: "Documents", hasChild: true },                   { id: 7, pid: 6, name: "My Documents" },                   { id: 8, pid: 6, name: "Public Documents" },                   { id: 9, pid: 5, name: "Pictures", hasChild: true },                   { id: 10, pid: 9, name: "My Pictures" },                   { id: 11, pid: 9, name: "Public Pictures" },                   { id: 12, pid: 5, name: "Music", hasChild: true },                   { id: 13, pid: 9, name: "My Music" },                   { id: 14, pid: 9, name: "Public Music" },                   { id: 15, pid: 5, name: "Subversion" },                   { id: 16, name: "Computer", hasChild: true },                   { id: 17, pid: 16, name: "Folder(C)" },                   { id: 18, pid: 16, name: "Folder(D)" },                   { id: 19, pid: 16, name: "Folder(F)" },                  ];</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>      $("#treeView"). ejTreeView ({            // mapping JSON Data Source with the fields property of TreeView                fields: { dataSource: localData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }                          });</td></tr>
+</table>
 
-
-<div id="treeView"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-
-// Define local data source elements with fields.
-
-<script type="text/javascript">
-    var localData = [
-                   { id: 1, name: "Favorites", hasChild: true },
-                   { id: 2, pid: 1, name: "Desktop" },
-                   { id: 3, pid: 1, name: "Downloads" },
-                   { id: 4, pid: 1, name: "Recent places" },
-                   { id: 5, name: "libraries", hasChild: true },
-                   { id: 6, pid: 5, name: "Documents", hasChild: true },
-                   { id: 7, pid: 6, name: "My Documents" },
-                   { id: 8, pid: 6, name: "Public Documents" },
-                   { id: 9, pid: 5, name: "Pictures", hasChild: true },
-                   { id: 10, pid: 9, name: "My Pictures" },
-                   { id: 11, pid: 9, name: "Public Pictures" },
-                   { id: 12, pid: 5, name: "Music", hasChild: true },
-                   { id: 13, pid: 9, name: "My Music" },
-                   { id: 14, pid: 9, name: "Public Music" },
-                   { id: 15, pid: 5, name: "Subversion" },
-                   { id: 16, name: "Computer", hasChild: true },
-                   { id: 17, pid: 16, name: "Folder(C)" },
-                   { id: 18, pid: 16, name: "Folder(D)" },
-                   { id: 19, pid: 16, name: "Folder(F)" },
-                  ];
-    $("#treeView"). ejTreeView ({
-            // mapping JSON Data Source with the fields property of TreeView
-                fields: { dataSource: localData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }            
-              });
-</script>
-
-{% endhighlight %}
 
 The output for **TreeView** control with **Local Data** binding is as follows.
 
+
+
 {% include image.html url="/js/TreeView/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption=""%}
 
-_TreeView with local data-binding_
+_Figure_ _17__: TreeView with_ _local data-bin__ding_
 
 ## Remote Data
 
@@ -160,22 +132,30 @@ You can bind **TreeView** to **Remote Data** using **dataManager** and the query
 
 The following steps explain how you can bind remote data to **TreeView** control.
 
-1. In the HTML page, add a &lt;div&gt; element to configure TreeView.
+1. In the **HTML** page, add a **&lt;div&gt;** element to configure **TreeView.**
+
+****
 
 {% highlight html %}
 
+**[HTML]**
 
       <div id="treeView"></div>
+
+
 
 {% endhighlight %}
 
 
 
-2. Define dataManager and assign remote data source to it. Here dataManager gets the remote web service and filters the data using Query. The select property of ejQuery is used to retrieve the specified columns from the data source.
+2. Define **dataManager** and assign remote data source to it. Here **dataManager** gets the remote web service and filters the data using **Query**. The **select** property of **ejQuery** is used to retrieve the specified columns from the data source.
+
+****
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
+
       // DataMangaer creation
         var dataManager = ej.DataManager ({
             url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
@@ -183,16 +163,19 @@ The following steps explain how you can bind remote data to **TreeView** control
         // query creation
         var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 
-</script>
+
 
 {% endhighlight %}
 
+****
 
-3. Assign dataSource and query property values to bind the remote data. Map the corresponding fields in TreeView control as follows.
+3. Assign **dataSource** and **query** property values to bind the remote data. Map the corresponding fields in **TreeView** control as follows.
+
+
 
 {% highlight js %}
 
-<script type="text/javascript">
+**[JavaScript]**
         $("#treeView").ejTreeView(
        {
            width: 300,
@@ -203,7 +186,7 @@ The following steps explain how you can bind remote data to **TreeView** control
            }
        }
    );
-</script>
+
 
 {% endhighlight %}
 
@@ -211,7 +194,7 @@ The following steps explain how you can bind remote data to **TreeView** control
 
 The output for **TreeView** control with **Remote Data** binding is as follows.
 
-{% include image.html url="/js/TreeView/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption=""%}
 
-_TreeView with remote data binding_
+
+{% include image.html url="/js/TreeView/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="Figure 18: TreeView with remote data binding"%}
 

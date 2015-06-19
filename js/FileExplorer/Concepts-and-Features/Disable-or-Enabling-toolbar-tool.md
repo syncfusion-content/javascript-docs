@@ -17,6 +17,7 @@ In Toolbar, you can disable or enable the tools as per your requirement. For exa
 
 {% highlight html %}
 
+**[HTML]**
 <div id="fileExplorer"></div>
 
 
@@ -31,31 +32,33 @@ Add the following code in your script section.
 {% highlight js %}
 
 
-<script type="text/javascript">
-$(function () {
-    var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
-    $("#fileExplorer").ejFileExplorer({
-        fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
-        layout: "list",
-        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        ajaxAction: localServ,
-        ajaxSettings: {
-            upload: {
-                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-            },
-            download: {
-                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-            }
-        }
-    });
+**[JavaScript]**
 
-    // create the object for the file explorer.
-    obj = $("#fileExplorer").data("ejFileExplorer");
-    // Disable the toolbar items.
-    obj.disableToolbarItem("fileExplorerNewFolder");
+    <script type="text/javascript">
+        $(function () {
+            var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            $("#fileExplorer").ejFileExplorer({
+                fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
+                layout: "list",
+                path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+                ajaxAction: localServ,
+                ajaxSettings: {
+                    upload: {
+                        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
+                    },
+                    download: {
+                        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
+                    }
+                }
+            });
 
-});
-</script>
+            // create the object for the file explorer.
+            obj = $("#fileExplorer").data("ejFileExplorer");
+            // Disable the toolbar items.
+            obj.disableToolbarItem("fileExplorerNewFolder");
+
+        });
+    </script>
 
 
 {% endhighlight %}

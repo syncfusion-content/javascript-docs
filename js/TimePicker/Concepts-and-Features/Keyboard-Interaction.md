@@ -11,16 +11,16 @@ documentation: ug
 
 You can use **Keyboard** shortcut keys as an alternative to the mouse on using **TimePicker** widget. **TimePicker** widget allows you to perform all kinds of actions using keyboard shortcuts.
 
-_List of keyboard shortcuts_
+_Table_ _1__: List of keyboard shortcuts_
 
 <table>
 <tr>
 <td>
-<b>Shortcut Key</b></td><td>
-<b>Description</b></td></tr>
+Shortcut Key</td><td>
+Description</td></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a> + j</td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j</td><td>
 Focuses into Timepicker widget</td></tr>
 <tr>
 <td>
@@ -43,13 +43,13 @@ Decrements the value</td></tr>
 
 **When popup is open**
 
-_List of keyboard shortcuts_
+_Table_ _2__: List of keyboard shortcuts_
 
 <table>
 <tr>
 <td>
-<b>Shortcut Key</b></td><td>
-<b>Description</b></td></tr>
+Shortcut Key</td><td>
+Description</td></tr>
 <tr>
 <td>
 Up</td><td>
@@ -71,32 +71,31 @@ Closes the popup</td></tr>
 
 The following steps explains you on how to enable keyboard interaction for the **TimePicker** widget.
 
-In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget and enable keyboard interaction by setting the **access key** property.
-
-{% highlight html %}
+* In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget and enable keyboard interaction by setting the **access key** property.
 
 
-        <input type="text" id="time" accesskey="j"/>
-
-{% endhighlight %}
-
-{% highlight js %}
 
 
-// You can render the TimePicker control using the following code.
-   <script type="text/javascript">
-    $(function () {
-         $('#time').ejTimePicker();
-        });
-    </script>
 
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>        &lt;input type="text" id="time" accesskey="j"/&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>// You can render the TimePicker control using the following code.</b>   &lt;script type="text/javascript"&gt;    $(function () {         $('#time').ejTimePicker();        });    &lt;/script&gt;</td></tr>
+</table>
 
-Run the code sample, press [Access key](http://en.wikipedia.org/wiki/Access_key)** ** **+ J** to focus in the **TimePicker** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
+
+Run the code sample, press [Access key](http://en.wikipedia.org/wiki/Access_key) **+ J** to focus in the **TimePicker** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 
 
 
 {% include image.html url="/js/TimePicker/Concepts-and-Features/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption=""%}
 
-_TimePicker focused with keyboard shortcut_
+_Figure_ _22__: TimePicker focused with keyboard shortcut_
+
+
+
+
 

@@ -15,25 +15,17 @@ The **TimePicker** provides support to display a **TimePicker** in your webpage 
 
 The following steps explains you to create a **TimePicker** widget.
 
-In an **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
-
-{% highlight html %}
+* In an **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 
 
-       <input type="text" id="time" />
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// You can render TimePicker control as follows.
-<script>
-$(function () {
-      $('#time').ejTimePicker();
- });
-</script>
-{% endhighlight %}
+<table>
+<tr>
+<td>
+<b>[HTML]</b>       &lt;input type="text" id="time" /&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b><b>// You can render TimePicker control as follows.</b>$(function () {           $('#time').ejTimePicker(); });</td></tr>
+</table>
 
 
 The following screenshot illustrates you a default **TimePicker**.
@@ -42,5 +34,5 @@ The following screenshot illustrates you a default **TimePicker**.
 
 {% include image.html url="/js/TimePicker/Concepts-and-Features/TimePicker-Customization_images/TimePicker-Customization_img1.png" Caption=""%}
 
-_TimePicker Control_
+_Figure_ _7__:_ _TimePicker Control_
 

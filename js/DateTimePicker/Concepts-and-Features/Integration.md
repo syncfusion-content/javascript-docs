@@ -19,12 +19,13 @@ Sometimes you need to use **DateTimePicker** value for sorting and retrieving th
 
 In the following example the **DateTimePicker** value is bound with simple textbox. The textbox values are updated while updating the values in **DateTimePicker** control. And also changing the date and time information from textbox is reflected in **DateTimePicker** control.
 
-Add the following code in your **HTML** page.
+* Add the following code in your **HTML** page.
 
 
 
 {% highlight html %}
-  
+
+**[HTML]**    
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateTimeCtrl">
 <head>
@@ -78,11 +79,11 @@ $scope.value = "9/17/2014 2:47 AM";
 
 
 
-{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Integration_images/Integration_img1.png" Caption="Showcase of DateTimePicker with Angular Binding"%}
+{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Integration_images/Integration_img1.png" Caption="Figure 12: Showcase of DateTimePicker with Angular Binding"%}
 
 ## Knockout Support
 
-**KnockoutJS** is a **MVVM** library that allows the separation of concerns. **Essential** **JavaScript** has full support for **KnockoutJS**. **Knockout support** is achieved by an integrated **JS** library file. Add the following code for **Knockout Binding** menu rendering.
+**KnockoutJS** is a **MVVM** library that allows the separation of concerns. **Essential JavaScript** has full support for **KnockoutJS**. **Knockout support** is achieved by an integrated **JS** library file. Add the following code for **Knockout Binding** menu rendering.
 
 If you use **KO** with your applications, you can get following benefits:
 
@@ -92,14 +93,13 @@ If you use **KO** with your applications, you can get following benefits:
 
 * Automatically update UI when data model is changed. When UI is changed data model is changed automatically. 
 
-
-
-Add the following code in your **HTML** page.
+* Add the following code in your **HTML** page.
 
 
 
 {% highlight html %}
-   
+
+**[HTML]**    
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -156,5 +156,5 @@ Add the following code in your **HTML** page.
 
 
 
-{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Integration_images/Integration_img2.png" Caption="Showcase of DateTimePicker with Knockout binding"%}
+{% include image.html url="/js/DateTimePicker/Concepts-and-Features/Integration_images/Integration_img2.png" Caption="Figure 13: Showcase of DateTimePicker with Knockout binding"%}
 

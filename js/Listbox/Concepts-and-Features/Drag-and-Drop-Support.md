@@ -13,54 +13,21 @@ documentation: ug
 
 The following steps explains you the behaviour of template support with **ListBox**.
 
-* In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widget.
+In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widget.
 
-{% highlight html %}
-
-   
-<div class="control">
-    <div class="ctrllabel">Drag and drop skills</div>
-    <div class="control1" style="float: left;">
-        <ul id="listboxSample">
-        </ul>
-    </div>
-    <div class="control2">
-        <ul id="dragsample">
-        </ul>
-    </div>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-  
-// Initialize the control in JavaScript
-<script type="text/javascript">
-    $(function () {
-        var skillset = [
-    { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-    { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-    { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-    { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, allowDragAndDrop: true
-        });
-        $("#dragsample").ejListBox({ allowDragAndDrop: true });
-    });
-</script>
-
-{% endhighlight %}
-
-
+<table>
+<tr>
+<td>
+<br><b>[HTML]   </b>&lt;div class="control"&gt;    <div class="ctrllabel">Drag and drop skills</div>    &lt;div class="control1" style="float: left;"&gt;        &lt;ul id="listboxSample"&gt;        &lt;/ul&gt;    &lt;/div&gt;    &lt;div class="control2"&gt;        &lt;ul id="dragsample"&gt;        &lt;/ul&gt;    &lt;/div&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]  </b>// Initialize the control in JavaScript&lt;script type="text/javascript"&gt;    $(function () {        var skillset = [    { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },    { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },    { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },    { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }        ];        $("#listboxSample").ejListBox({            width: "240", dataSource: skillset,            fields: { text: "skill" }, allowDragAndDrop: true        });        $("#dragsample").ejListBox({ allowDragAndDrop: true });    });&lt;/script&gt;</td></tr>
+</table>
 Add the following class in CSS. 
-
 
 {% highlight css %}
 
-  
+**[CSS]**  
 <style type="text/css" class="cssStyles">
     .control {
         margin-left: 20px;
@@ -79,9 +46,7 @@ Add the following class in CSS.
 
 {% endhighlight %}
 
-
-
 Output of the above steps.
 
-{% include image.html url="/js/Listbox/Concepts-and-Features/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png" Caption="Figure 26: ListBox with Drag and Drop support"%}
+{% include image.html url="/js/ListBox/Concepts-and-Features/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png" Caption="ListBox with Drag and Drop support"%}
 

@@ -17,33 +17,21 @@ The **TagCloud** content are set to different font sizes from minimum to maximum
 
 The following steps explains you on how to configure font sizes for a **TagCloud**.
 
-* In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
+1. In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
-{% highlight html %}
-
-                 <div id="techweblist"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-// Assign the values for minFontSize  and maxFontSize properties below.
-<script>
-        $("#techweblist").ejTagCloud({
-                minFontSize: "20px",
-                maxFontSize: "50px",
-                titleText: "Tech Sites",
-                dataSource: websiteCollection
-           });
- </script>
-{% endhighlight %}
-
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>         &lt;div id="techweblist"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Assign the values for minFontSize  and maxFontSize properties as follows.    $("#techweblist").ejTagCloud({                minFontSize: "20px",                maxFontSize: "50px",                titleText: "Tech Sites",                dataSource: websiteCollection           });</td></tr>
+</table>
 The following screenshot illustrates the **TagCloud** control with customized font sizes.
 
 {% include image.html url="/js/TagCloud/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption=""%}
 
-_Figure_ _1__0__: TagCloud with customized font sizes_
+_TagCloud with customized font sizes_
 
 ## Tag format
 
@@ -53,51 +41,21 @@ You can set the **TagCloud** content display format using **format** property. B
 
 The following steps explains you to configure format for a **TagCloud**.
 
-* In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
+1. In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
-{% highlight html %}
-
-
- 
-   <table>
-    <tr>
-        <td>
-            <span>Tag format cloud</span>
-            <div id="techwebcloud"></div>
-        </td>
-        <td>
-            <span>Tag format list</span>
-            <div id="techweblist"></div>
-        </td>
-    </tr>
+<table>
+<tr>
+<td>
+<b>[HTML]</b> &lt;table&gt;    &lt;tr&gt;        &lt;td&gt;            <span>Tag format cloud</span>            &lt;div id="techwebcloud"&gt;&lt;/div&gt;        &lt;/td&gt;        &lt;td&gt;            <span>Tag format list</span>            &lt;div id="techweblist"&gt;&lt;/div&gt;        &lt;/td&gt;    &lt;/tr&gt;&lt;/table&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Assign the values for format property in TagCloud.      $("#techweblist").ejTagCloud({                format:"list",                titleText: "Tech Sites List",                dataSource: websiteCollection            });            $("#techwebcloud").ejTagCloud({                format: "cloud",                titleText: "Tech Sites Cloud",                dataSource: websiteCollection            });</td></tr>
 </table>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-
-// Assign the values for format property in TagCloud.
-<script>
-    $("#techweblist").ejTagCloud({
-                format:"list",
-                titleText: "Tech Sites List",
-                dataSource: websiteCollection
-            });
-            $("#techwebcloud").ejTagCloud({
-                format: "cloud",
-                titleText: "Tech Sites Cloud",
-                dataSource: websiteCollection
-            });
-</script>
-{% endhighlight %}
-
 The following screenshot illustrates the **TagCloud** control with customized formats.
 
 {% include image.html url="/js/TagCloud/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption=""%}
 
-_Figure 11: TagCloud using cloud and list formats_
+_TagCloud using cloud and list formats_
 
 ## Theme
 
@@ -129,6 +87,8 @@ By default, there are 12 themes support available for **TagCloud** control namel
 
 * gradient-saffron-dark
 
+
+
 ## Css Class
 
 You can use the CSS class to customize the **TagCloud** appearance. Any of the CSS properties can be used to modify look and feel of tag cloud based on the requirement. Define a **CSS** class as per requirement and assign the class name to **cssClass** property.
@@ -137,34 +97,21 @@ You can use the CSS class to customize the **TagCloud** appearance. Any of the C
 
 The following steps allows you to configure **CSS** class for **TagCloud**.
 
-* In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
+1. In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 
-
-{% highlight html %}
-
-         <div id="techweblist"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-// Add the cssClass property to TagCloud.
-   <script>   
-             $("#techweblist").ejTagCloud({
-                titleText: "Tech Sites",
-                dataSource: websiteCollection,
-                cssClass:"CustomCss"
-            });
-   </script>
-{% endhighlight %}
-
-Define CSS class for customizing the **TagCloud** widget.
-
-
+<table>
+<tr>
+<td>
+<b>[HTML]</b>         &lt;div id="techweblist"&gt;&lt;/div&gt;</td></tr>
+<tr>
+<td>
+<b>[JavaScript]</b>// Add the cssClass property to TagCloud.          $("#techweblist").ejTagCloud({                titleText: "Tech Sites",                dataSource: websiteCollection,                cssClass:"CustomCss"            });</td></tr>
+</table>
+2. Define CSS class for customizing the **TagCloud** widget.
 
 {% highlight css %}
 
+**[CSS]**
 <style type="text/css" class="cssStyles">
         /* Customize the TagCloud div element */
         .CustomCss
@@ -182,11 +129,9 @@ Define CSS class for customizing the **TagCloud** widget.
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates the **TagCloud** with customized CSS class,
 
 {% include image.html url="/js/TagCloud/Concepts-and-Features/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption=""%}
 
-_Figure_ _1__2__: TagCloud with Custom CSS_
+_TagCloud with Custom CSS_
 
