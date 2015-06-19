@@ -79,9 +79,7 @@ Click the print button to render the following output.
 {% highlight js %}
 
  $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             // To Add the Context menu settings
             contextMenuSettings: {

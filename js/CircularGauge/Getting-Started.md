@@ -55,13 +55,9 @@ Create the **ejCircularGauge** widget as follows,
 
 {% highlight js %}
 
-
-$(function () {
-$("#CircularGauge1").ejCircularGauge();
-});
-
-
-
+ $(function () {
+        $("#CircularGauge1").ejCircularGauge();
+    });
 
 {% endhighlight %}
 
@@ -77,10 +73,10 @@ Pointers have different height and range. You can set the height and width of th
 
 {% highlight js %}
 
-$("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-});
+ $("#CircularGauge1").ejCircularGauge({
+        width: 500,
+        height: 500,
+    });
 
 
 {% endhighlight %}
@@ -98,11 +94,11 @@ You can draw the speedometer with dark background and to vary the speed of the p
 {% highlight js %}
 
 $("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-backgroundColor: "#3D3F3D",
-readOnly: false,
-});
+        width: 500,
+        height: 500,
+        backgroundColor: "#3D3F3D",
+        readOnly: false,
+    });
 
 
 {% endhighlight %}
@@ -123,32 +119,31 @@ Major Ticks and Minor Ticks have the interval values 20 and 5 respectively. Show
 
 {% highlight js %}
 
-$("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-backgroundColor: "#3D3F3D",
-readOnly: false,
-
-scales: [{
-showRanges: true,
-showIndicators: true,
-pointerCap: {
-radius: 15,
-borderWidth: 0,
-backgroundColor: "#797C79",
-borderColor: "#797C79"
-},
-maximum: 200,
-majorIntervalValue: 20,
-minorIntervalValue: 5,
-//Add the labels customization code here
-//Add the pointers customization code here
-//Add the ticks customization code here
-//Add the ranges customization code here
-//Add the indicators customization code here
-//Add the Custom labels customization code here
-}]
-});
+ $("#CircularGauge1").ejCircularGauge({
+        width: 500,
+        height: 500,
+        backgroundColor: "#3D3F3D",
+        readOnly: false,
+        scales: [{
+            showRanges: true,
+            showIndicators: true,
+            pointerCap: {
+                radius: 15,
+                borderWidth: 0,
+                backgroundColor: "#797C79",
+                borderColor: "#797C79"
+            },
+            maximum: 200,
+            majorIntervalValue: 20,
+            minorIntervalValue: 5,
+            //Add the labels customization code here
+            //Add the pointers customization code here
+            //Add the ticks customization code here
+            //Add the ranges customization code here
+            //Add the indicators customization code here
+            //Add the Custom labels customization code here
+        }]
+    });
 
 
 {% endhighlight %}
@@ -165,25 +160,23 @@ To display the values in the **Gauge,** scale labels are used. You can customize
 
 {% highlight js %}
 
-$("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-backgroundColor: "#3D3F3D",
-readOnly: false,
-scales: [{
-//Add the labels customization code here
-
-labels: [{
-color: "#ffffff"
-}],
-//Add the pointers customization code here
-//Add the ticks customization code here
-//Add the ranges customization code here
-//Add the indicators customization code here
-//Add the Custom labels customization code here
-
-}]
-});
+ $("#CircularGauge1").ejCircularGauge({
+        width: 500,
+        height: 500,
+        backgroundColor: "#3D3F3D",
+        readOnly: false,
+        scales: [{
+            //Add the labels customization code here
+            labels: [{
+                color: "#ffffff"
+            }],
+            //Add the pointers customization code here
+            //Add the ticks customization code here
+            //Add the ranges customization code here
+            //Add the indicators customization code here
+            //Add the Custom labels customization code here
+        }]
+    });
 
 
 
@@ -202,58 +195,55 @@ You can use three pointers that denote kilometer value, rotation per minute valu
 {% highlight js %}
 
 $("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-backgroundColor: "#3D3F3D",
-readOnly: false,
-
-scales: [{
-//Add the labels customization code here
-//Add the pointers customization code here
-
-pointers: [{
-value: 140,
-distanceFromScale: 60,
-showBackNeedle: false,
-length: 20,
-type: "marker",
-markerType: "triangle",
-width: 10,
-radius: 10,
-backgroundColor: "#FF940A",
-border: {
-color: "#FF940A"
-},
-},
-{
-value: 110,
-showBackNeedle: false,
-length: 150,
-width: 2,
-radius: 10,
-needleType: "rectangle",
-backgroundColor: "#05AFFF",
-border: {
-color: "#05AFFF"
-},                }, {
-value: 67,
-showBackNeedle: false,
-length: 100,
-width: 15,
-radius: 10,
-backgroundColor: "#FC5D07",
-border: {
-color: "#FC5D07"
-},
-
-}],
-//Add the ticks customization code here
-//Add the ranges customization code here
-//Add the indicators customization code here
-//Add the Custom labels customization code here
-
-}]
-});
+        width: 500,
+        height: 500,
+        backgroundColor: "#3D3F3D",
+        readOnly: false,
+        scales: [{
+            //Add the labels customization code here
+            //Add the pointers customization code here
+            pointers: [{
+                value: 140,
+                distanceFromScale: 60,
+                showBackNeedle: false,
+                length: 20,
+                type: "marker",
+                markerType: "triangle",
+                width: 10,
+                radius: 10,
+                backgroundColor: "#FF940A",
+                border: {
+                    color: "#FF940A"
+                },
+            },
+            {
+                value: 110,
+                showBackNeedle: false,
+                length: 150,
+                width: 2,
+                radius: 10,
+                needleType: "rectangle",
+                backgroundColor: "#05AFFF",
+                border: {
+                    color: "#05AFFF"
+                },
+            }, {
+                value: 67,
+                showBackNeedle: false,
+                length: 100,
+                width: 15,
+                radius: 10,
+                backgroundColor: "#FC5D07",
+                border: {
+                    color: "#FC5D07"
+                },
+            }],
+            //Add the ticks customization code here
+            //Add the ranges customization code here
+            //Add the indicators customization code here
+            //Add the Custom labels customization code here
+        }]
+    });
 
 
 {% endhighlight %}
@@ -271,35 +261,32 @@ You can display the tick value with customization as given in the following code
 {% highlight js %}
 
 $("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-backgroundColor: "#3D3F3D",
-readOnly: false,
-scales: [{
-//Add the labels customization code here
-//Add the pointers customization code here
-//Add the ticks customization code here
-
-ticks: [{
-type: "major",
-distanceFromScale: 70,
-height: 20,
-width: 3,
-color: "#ffffff"
-}, {
-type: "minor",
-height: 12,
-width: 1,
-distanceFromScale: 70,
-color: "#ffffff"
-}],
-//Add the ranges customization code here
-//Add the indicators customization code here
-//Add the Custom labels customization code here
-
-}]
-});
-
+        width: 500,
+        height: 500,
+        backgroundColor: "#3D3F3D",
+        readOnly: false,
+        scales: [{
+            //Add the labels customization code here
+            //Add the pointers customization code here
+            //Add the ticks customization code here
+            ticks: [{
+                type: "major",
+                distanceFromScale: 70,
+                height: 20,
+                width: 3,
+                color: "#ffffff"
+            }, {
+                type: "minor",
+                height: 12,
+                width: 1,
+                distanceFromScale: 70,
+                color: "#ffffff"
+            }],
+            //Add the ranges customization code here
+            //Add the indicators customization code here
+            //Add the Custom labels customization code here
+        }]
+    });
 
 
 
@@ -317,48 +304,46 @@ Ranges denote the property of scale value in the speedometer. The color values o
 
 {% highlight js %}
 
-$("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-backgroundColor: "#3D3F3D",
-readOnly: false,
-
-scales: [{
-//Add the labels customization code here
-//Add the pointers customization code here
-//Add the ticks customization code here
-//Add the ranges customization code here
-
-ranges: [{
-distanceFromScale: 30,
-startValue: 0,
-endValue: 70,
-backgroundColor: "#5DF243",
-border: {
-color: "#FFFFFF"
-},
-}, {
-distanceFromScale: 30,
-startValue: 70,
-endValue: 140,
-backgroundColor: "#F6FF0A",
-border: {
-color: "#FFFFFF"
-},                },
-{
-distanceFromScale: 30,
-startValue: 140,
-endValue: 200,
-backgroundColor: "#FF1807",
-border: {
-color: "#FFFFFF"
-},
-}],
-//Add the indicators customization code here
-//Add the Custom labels customization code here
-
-}]
-});
+ $("#CircularGauge1").ejCircularGauge({
+        width: 500,
+        height: 500,
+        backgroundColor: "#3D3F3D",
+        readOnly: false,
+        scales: [{
+            //Add the labels customization code here
+            //Add the pointers customization code here
+            //Add the ticks customization code here
+            //Add the ranges customization code here
+            ranges: [{
+                distanceFromScale: 30,
+                startValue: 0,
+                endValue: 70,
+                backgroundColor: "#5DF243",
+                border: {
+                    color: "#FFFFFF"
+                },
+            }, {
+                distanceFromScale: 30,
+                startValue: 70,
+                endValue: 140,
+                backgroundColor: "#F6FF0A",
+                border: {
+                    color: "#FFFFFF"
+                },
+            },
+            {
+                distanceFromScale: 30,
+                startValue: 140,
+                endValue: 200,
+                backgroundColor: "#FF1807",
+                border: {
+                    color: "#FFFFFF"
+                },
+            }],
+            //Add the indicators customization code here
+            //Add the Custom labels customization code here
+        }]
+    });
 
 
 {% endhighlight %}
@@ -376,88 +361,85 @@ Indicators denote whether the pointer values are placed in their respective zone
 {% highlight js %}
 
 $("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-backgroundColor: "#3D3F3D",
-readOnly: false,
-
-scales: [{
-//Add the labels customization code here
-//Add the pointers customization code here
-//Add the ticks customization code here
-//Add the ranges customization code here
-//Add the indicators customization code here
-
-indicators: [
-{
-height: 10,
-width: 10,
-type: "circle",
-position: { x: 210, y: 300 },
-stateRanges: [{
-endValue: 70,
-startValue: 0,
-backgroundColor: "#5DF243",
-borderColor: "#5DF243",
-text: "",
-textColor: "#870505"
-}, {
-endValue: 200,
-startValue: 70,
-backgroundColor: "#145608",
-borderColor: "#145608",
-text: "",
-textColor: "#870505"
-}]
-},
-{
-height: 10,
-width: 10,
-type: "circle",
-position: { x: 255, y: 200 },
-stateRanges: [{
-endValue: 140,
-startValue: 70,
-backgroundColor: "#F6FF0A",
-borderColor: "#F6FF0A",
-text: "",
-}, {
-endValue: 70,
-startValue: 0,
-backgroundColor: "#969B0C",
-borderColor: "#969B0C",
-text: "",
-}, {
-endValue: 200,
-startValue: 140,
-backgroundColor: "#969B0C",
-borderColor: "#969B0C",
-text: "",
-}]
-}, {
-height: 10,
-width: 10,
-type: "circle",
-position: { x: 300, y: 300 },
-stateRanges: [{
-endValue: 140,
-startValue: 0,
-backgroundColor: "#890F06",
-borderColor: "#890F06",
-text: "",
-},
-{
-endValue: 200,
-startValue: 140,
-backgroundColor: "#FF1807",
-borderColor: "#FF1807",
-text: "",
-}]
-}],
-//Add the Custom labels customization code here
-
-}]});
-
+        width: 500,
+        height: 500,
+        backgroundColor: "#3D3F3D",
+        readOnly: false,
+        scales: [{
+            //Add the labels customization code here
+            //Add the pointers customization code here
+            //Add the ticks customization code here
+            //Add the ranges customization code here
+            //Add the indicators customization code here
+            indicators: [
+            {
+                height: 10,
+                width: 10,
+                type: "circle",
+                position: { x: 210, y: 300 },
+                stateRanges: [{
+                    endValue: 70,
+                    startValue: 0,
+                    backgroundColor: "#5DF243",
+                    borderColor: "#5DF243",
+                    text: "",
+                    textColor: "#870505"
+                }, {
+                    endValue: 200,
+                    startValue: 70,
+                    backgroundColor: "#145608",
+                    borderColor: "#145608",
+                    text: "",
+                    textColor: "#870505"
+                }]
+            },
+            {
+                height: 10,
+                width: 10,
+                type: "circle",
+                position: { x: 255, y: 200 },
+                stateRanges: [{
+                    endValue: 140,
+                    startValue: 70,
+                    backgroundColor: "#F6FF0A",
+                    borderColor: "#F6FF0A",
+                    text: "",
+                }, {
+                    endValue: 70,
+                    startValue: 0,
+                    backgroundColor: "#969B0C",
+                    borderColor: "#969B0C",
+                    text: "",
+                }, {
+                    endValue: 200,
+                    startValue: 140,
+                    backgroundColor: "#969B0C",
+                    borderColor: "#969B0C",
+                    text: "",
+                }]
+            }, {
+                height: 10,
+                width: 10,
+                type: "circle",
+                position: { x: 300, y: 300 },
+                stateRanges: [{
+                    endValue: 140,
+                    startValue: 0,
+                    backgroundColor: "#890F06",
+                    borderColor: "#890F06",
+                    text: "",
+                },
+                {
+                    endValue: 200,
+                    startValue: 140,
+                    backgroundColor: "#FF1807",
+                    borderColor: "#FF1807",
+                    text: "",
+                }]
+            }],
+            //Add the Custom labels customization code here
+        }]
+    });
 
 {% endhighlight %}
 
@@ -474,51 +456,51 @@ You can specify the text in the **Gauge** using **Custom labels** and you can cu
 {% highlight js %}
 
 
-$("#CircularGauge1").ejCircularGauge({
-width: 500,
-height: 500,
-backgroundColor: "#3D3F3D",
-readOnly: false,
-
-scales: [{
-//Add the labels customization code here
-//Add the pointers customization code here
-//Add the ticks customization code here
-//Add the ranges customization code here
-//Add the indicators customization code here
-//Add the Custom labels customization code here
-
-customLabels: [{
-value: "Safe",
-position: { x: 200, y: 280 },
-color: "#5DF243",
-font:
-{
-size: "12px",
-fontFamily: "Arial",
-fontStyle: "Bold"
-}
-}, {
-value: "Caution",
-position: { x: 253, y: 212 },
-color: "#F6FF0A",
-font:
-{
-size: "12px",
-fontFamily: "Arial",
-fontStyle: "Bold"
-}
-}, {
-value: "Danger",
-position: { x: 290, y: 280 },
-color: "#FF1807",
-font:
-{
-size: "12px",
-fontFamily: "Arial",
-fontStyle: "Bold"
-}
-}]}]});
+ $("#CircularGauge1").ejCircularGauge({
+        width: 500,
+        height: 500,
+        backgroundColor: "#3D3F3D",
+        readOnly: false,
+        scales: [{
+            //Add the labels customization code here
+            //Add the pointers customization code here
+            //Add the ticks customization code here
+            //Add the ranges customization code here
+            //Add the indicators customization code here
+            //Add the Custom labels customization code here
+            customLabels: [{
+                value: "Safe",
+                position: { x: 200, y: 280 },
+                color: "#5DF243",
+                font:
+                {
+                    size: "12px",
+                    fontFamily: "Arial",
+                    fontStyle: "Bold"
+                }
+            }, {
+                value: "Caution",
+                position: { x: 253, y: 212 },
+                color: "#F6FF0A",
+                font:
+                {
+                    size: "12px",
+                    fontFamily: "Arial",
+                    fontStyle: "Bold"
+                }
+            }, {
+                value: "Danger",
+                position: { x: 290, y: 280 },
+                color: "#FF1807",
+                font:
+                {
+                    size: "12px",
+                    fontFamily: "Arial",
+                    fontStyle: "Bold"
+                }
+            }]
+        }]
+    });
 
 
 {% endhighlight %}

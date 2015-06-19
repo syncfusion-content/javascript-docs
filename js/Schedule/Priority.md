@@ -81,9 +81,7 @@ The following code example illustrates on how to render priority feature in the�
                 recurrenceRule: "RecurrenceRule"
             }
         });
-
     });
-
     // The appointment data along with priority data to be passed to the dataSource are as follows,
     window.Default = [{
         Id: 100,
@@ -146,31 +144,30 @@ The following code example illustrates on how to render priority feature with us
             width: "100%",
             height: "525px",
             currentDate: new Date(2014, 4, 5),
-          prioritySettings: {
-          enable: true,
-          template: "<div class='${value}'></div>",  // To display the Priority option in the appointment window while passing custom datasource we need to mention the template like this
-          dataSource:  // We can pass the custom datasource (priority option) for the schedule control like the following
-          [
-          { text: "None", id: 1, value: "none" },
-          { text: "Critical", id: 2, value: "critical" },
-          { text: "UltraCritical", id: 3, value: "ultracritical" }
-          ],
-          },
-            categorizeSettings:{enable:true},
+            prioritySettings: {
+                enable: true,
+                template: "<div class='${value}'></div>",  // To display the Priority option in the appointment window while passing custom datasource we need to mention the template like this
+                dataSource:  // We can pass the custom datasource (priority option) for the schedule control like the following
+                [
+                { text: "None", id: 1, value: "none" },
+                { text: "Critical", id: 2, value: "critical" },
+                { text: "UltraCritical", id: 3, value: "ultracritical" }
+                ],
+            },
+            categorizeSettings: { enable: true },
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
                 subject: "Subject",
                 startTime: "StartTime",
                 endTime: "EndTime",
-                description:"Description",
+                description: "Description",
                 allDay: "AllDay",
-                priority:"Priority",
+                priority: "Priority",
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             }
         });
-
     });
 
 
@@ -188,8 +185,7 @@ The following code example illustrates how to define the css style while using t
 
 {% highlight css %}
 
-// Her we are defining the style of the “custom priority icon”
-
+// Her we are defining the style of the "custom priority icon"
 
     .critical,
     .ultracritical,
@@ -200,13 +196,11 @@ The following code example illustrates how to define the css style while using t
         background-repeat: no-repeat;
         padding: 1px;
     }
-
     .critical {
         background-image: url('../themes/images/arrowup.png');
         background-color: orange;
         background-position: 2px;
     }
-
     .ultracritical {
         background-image: url('../themes/images/arrowup.png');
         background-color: red;
@@ -246,22 +240,21 @@ Similarly you can use the image tag directly in the template. Following code sni
                 { text: "UltraCritical", id: 3, value: "ultracritical" }
                 ],
             },
-            categorizeSettings:{enable:true},
+            categorizeSettings: { enable: true },
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
                 subject: "Subject",
                 startTime: "StartTime",
                 endTime: "EndTime",
-                description:"Description",
+                description: "Description",
                 allDay: "AllDay",
-                priority:"Priority",
+                priority: "Priority",
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             }
         });
     });
-
 
 {% endhighlight %}
 

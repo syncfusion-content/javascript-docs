@@ -38,17 +38,11 @@ The following screenshot displays the **Schedule** control with daily important 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-
 </head>
 
 
@@ -78,8 +72,8 @@ Once the container is added, create the **ejSchedule** widget within the **scrip
 
 
 $(function () {
-	$("#Schedule1").ejSchedule();
-});
+        $("#Schedule1").ejSchedule();
+    });
 
 
 
@@ -104,11 +98,7 @@ You can run the above code example and an empty **Scheduler** is displayed witho
   var dManager = ej.DataManager({
         url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
     });    // DataManager creation
-
-
     var queryString = ej.Query().from("Events").take(10);   // Query creation
-
-
     $(function () {
         $("#Schedule1").ejSchedule({
             appointmentSettings: {
@@ -186,8 +176,6 @@ $(function () {
             }
         });
     });
-
-
     $.views.helpers({ format: _getImages });
     function _getImages(date) {     // Method to choose images for the appointments
         switch (new Date(date).getDay()) {
@@ -275,7 +263,6 @@ Once you set the template for the appointments, the **Scheduler** is displayed w
             }
         });
     });
-
     $.views.helpers({ format: _getImages });
     function _getImages(date) {    // method to choose images for the appointments
         switch (new Date(date).getDay()) {
@@ -355,7 +342,6 @@ When you execute the above code example, a **Scheduler** is displayed as follows
         });
         // Query creation
         var queryString = ej.Query().from("Events").take(10);
-
         $("#Schedule1").ejSchedule({
             appointmentTemplateId: "#apptemplate",
             width: "100%", height: "550px", currentView: "month",
@@ -373,7 +359,6 @@ When you execute the above code example, a **Scheduler** is displayed as follows
             }
         });
     });
-
     $.views.helpers({ format: _getImages });
     function _getImages(date) {    // Method to choose images for the appointments
         switch (new Date(date).getDay()) {

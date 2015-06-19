@@ -81,7 +81,6 @@ $(function () {
          orientation: ej.Schedule.Orientation.Vertical,
 
 });
-
     });
 
 
@@ -149,7 +148,6 @@ Execute the above code to render the following output.
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule",
                 resourceFields: "ownerId"
-
             }
         });
     });
@@ -181,7 +179,6 @@ $(function () {
         width: "100%",
         currentDate: new Date (2014,4,5),
         currentView: "week",
-
         var dManager = ej.DataManager(window.HorizontalResourcesData).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             //Setting orientation as horizontal mode
@@ -229,7 +226,6 @@ $(function () {
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule",
                 resourceFields: "roomId,ownerId"
-
             }
         });
     });

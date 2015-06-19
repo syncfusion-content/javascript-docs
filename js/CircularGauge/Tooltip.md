@@ -27,22 +27,17 @@ documentation: ug
 
  $(function () {
         $(“#tooltipGauge”).ejCircularGauge({
-
             //Defines the tooltip object.
             tooltip: {
-
                 //Enables the label tooltip.
                 showLabelTooltip: true,
-
                 //Enables the custom label tooltip.
                 showCustomLabelTooltip: true,
             },
-
             //Customizes the scale options.
             scales: [{
                 showLabels: true,
                 radius: 130,
-
                 //Customizes the custom label options.
                 customLabels: [{
                     value: "095345",
@@ -51,10 +46,8 @@ documentation: ug
                         fontFamily: "Arial",
                         fontStyle: "bold"
                     },
-
                     position: { x: 180, y: 220 }
                 }],
-
                 //Customizes the pointers options.
                 pointers: [{
                     value: 60,
@@ -79,14 +72,14 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
 {% highlight html %}
 
 <div id=”Tooltip” style=”height: 60px; display: none;”>
-<div id=”icon”>
-<div id=”eficon”></div>
-</div>
-<div id=”value”>
-<div>
-<label id=”efpercentage”>&nbsp;#label#</label>
-</div>
-</div>
+    <div id="”icon”">
+        <div id="”eficon”"></div>
+    </div>
+    <div id="”value”">
+        <div>
+            <label id="”efpercentage”">&nbsp;#label#</label>
+        </div>
+    </div>
 </div>
 <div id="tooltipGauge"></div>
 
@@ -97,25 +90,19 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
 
 $(function () {
         $(“#tooltipGauge”).ejCircularGauge({
-
             //Defines the tooltip object.
             tooltip: {
-
                 // Enables the label tooltip.
                 showLabelTooltip: true,
-
                 // Enables the custom label tooltip.
                 showCustomLabelTooltip: true,
-
                 // Adds tooltip template.
                 templateID: “Tooltip”
             },
-
             // Customizes the scale options.
             scales: [{
                 showLabels: true,
                 radius: 130,
-
                 // Customizes the custom label options.
                 customLabels: [{
                     value: “0 9 5 3 4 5”,
@@ -124,10 +111,8 @@ $(function () {
             fontFamily: "Arial",
             fontStyle: "bold"
                     },
-
         position: { x: 180, y: 220 }
     }],
-
     // Customizes the pointers options.
     pointers: [{
         value: 60,

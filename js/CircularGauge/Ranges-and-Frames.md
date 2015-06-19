@@ -24,7 +24,6 @@ Range collection is directly added to the scale object. Refer the following code
 {% highlight js %}
 
  $(function () {
-
         //For circular gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -58,7 +57,6 @@ The API **size** is used to specify the width of the ranges.  The major attribut
 {% highlight js %}
 
  $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -73,7 +71,6 @@ The API **size** is used to specify the width of the ranges.  The major attribut
                     //For setting range background color
                     backgroundColor: "Green",
                 }]
-
                 }]
         });});
 
@@ -100,8 +97,8 @@ You can set the background color to improve the look and feel of the **Circular 
 
 
 {% highlight js %}
- $(function () {
 
+  $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -118,10 +115,8 @@ You can set the background color to improve the look and feel of the **Circular 
                     //For setting range border
                     border:{color:"green",width:2},
                 }]
-
-                }]
+            }]
         });});
-
 
 {% endhighlight %}
 
@@ -143,8 +138,7 @@ You can position ranges using two properties such as **distanceFromScale** and *
 
 {% highlight js %}
 
- $(function () {
-
+  $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -159,14 +153,13 @@ You can position ranges using two properties such as **distanceFromScale** and *
                     //For setting range background color
                     backgroundColor: "Green",
                     //For setting range placement
-                placement: "far",
+                    placement: "far",
                     //For setting distance between scale and ranges
-                distanceFromScale: -30,
+                    distanceFromScale: -30,
                     //For setting range border
                     border:{color:"Black",width:2},
                 }]
-
-                }]
+            }]
         });});
 
 
@@ -191,7 +184,6 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
 {% highlight js %}
 
   $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -222,7 +214,6 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
                     backgroundColor: "red",
                     placement: "far", distanceFromScale: -30
                 }]
-
             }]
         });
     });
@@ -252,26 +243,25 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
 
  
     $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             frame: {
                 //For setting type
-            frameType: "halfcircle",
+                frameType: "halfcircle",
                 //For setting half circle frame start angle
-            halfCircleFrameStartAngle: 205,
+                halfCircleFrameStartAngle: 205,
                 //For setting half circle frame end angle
-            halfCircleFrameEndAngle: 335,
-},pointerCap:{radius:50},
-                backgroundColor: "#FFCCCC",
-                scales: [{
-                    startAngle: 180, sweepAngle: 180,
-                    pointers: [{
-                        needleType: "rectangle",
-                        width: 1, length: 120, value: 40
-                    }]
+                halfCircleFrameEndAngle: 335,
+            },pointerCap:{radius:50},
+            backgroundColor: "#FFCCCC",
+            scales: [{
+                startAngle: 180, sweepAngle: 180,
+                pointers: [{
+                    needleType: "rectangle",
+                    width: 1, length: 120, value: 40
                 }]
-            });});
+            }]
+        });});
 
 
 {% endhighlight %}

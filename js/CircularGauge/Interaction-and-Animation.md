@@ -22,36 +22,24 @@ documentation: ug
 <head>
     <title>Circular Gauge JS Default Functionalities</title>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js "></script>
-
     <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
-
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js">
-    </script>
-
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>    
 </head>
-
 <body>
     <div id="CircularGauge1">
     </div>
-
-
     <script type="text/javascript">
         $(function () {
-
             // For Circular Gauge rendering
             $("#CircularGauge1").ejCircularGauge({
                 // For User interaction
-            readOnly: false,
-})
+                readOnly: false,
+            })
         });
     </script>
 </body>
 </html>
-
-
-
 
 
 {% endhighlight %}

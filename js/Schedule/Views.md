@@ -25,10 +25,8 @@ The following code example describes how to customize the display of view option
 
 {% highlight js %}
 
-$(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -36,7 +34,7 @@ $(function () {
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
-                currentDate: new Date (2014,4,5),
+                currentDate: new Date(2014, 4, 5),
                 subject: "Subject",
                 startTime: "StartTime",
                 endTime: "EndTime",
@@ -76,10 +74,8 @@ The following code example explains how to change the current view of the **Sche
 
 {% highlight js %}
 
-$(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -87,7 +83,7 @@ $(function () {
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
-                currentDate: new Date (2014,4,5),
+                currentDate: new Date(2014, 4, 5),
                 subject: "Subject",
                 startTime: "StartTime",
                 endTime: "EndTime",
@@ -121,19 +117,17 @@ Execute the above code to render the following screenshot that displays **day** 
 
 {% highlight js %}
 
- $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+  $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
             currentView: ej.Schedule.CurrentView.CustomView,
             views: ["Day", "Week", "WorkWeek", "Month", "CustomView"],
             renderDates: {
-               start: new Date(2014, 11, 7),
-               end: new Date(2014, 12, 10)
-        },
+                start: new Date(2014, 11, 7),
+                end: new Date(2014, 12, 10)
+            },
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
@@ -146,7 +140,6 @@ Execute the above code to render the following screenshot that displays **day** 
             }
         });
     });
-
 
 
 {% endhighlight %}

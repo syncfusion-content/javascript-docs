@@ -209,13 +209,11 @@ The following code explains how the appointment resizing option is enabled for t
 {% highlight js %}
 
 $(function () {
-        var dManager =   
-                    ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
-                    **enableAppointmentResize: true,**
+            enableAppointmentResize: true,
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
@@ -278,16 +276,16 @@ Use the following code example to search the appointment on the schedule datasou
 <body>
     <input id="txtSearch" type="text" />
     <input id="btnSearch" class="searchApp" type="button" value="Search" />
-    <div style="float: left" id="Div1">
+    <div style="float: left" id="Schedule1">
         <div id="grid1">
         </div>
         <div id="Schedule1"></div>
+    <div>   
 </body>
 </html>
 {% endhighlight %}
 
 {% highlight js %}
-
 
  $(function () {
         var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
@@ -347,10 +345,11 @@ After placing the cursor in search box, type the text that you want to search (f
 </head>
 <body>
     <input id="btnSearch" class="searchApp" type="button" value="Search" />
-    <div style="float: left" id="Div1">
+    <div style="float: left" id="Schedule1">
         <div id="grid1">
         </div>
-        <div id="Div2"></div>
+        <div id="Schedule1"></div>
+    <div>
 </body>
 </html>
 
@@ -358,7 +357,7 @@ After placing the cursor in search box, type the text that you want to search (f
 
 {% highlight js %}
 
- $(function () {
+  $(function () {
         var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             // Add the necessary schedule properties here
@@ -366,12 +365,13 @@ After placing the cursor in search box, type the text that you want to search (f
         // Method to bind the button click event
         $('.searchApp').bind("click", function () {
             // Add the filter data as like in the below format
-            var filter=[{
+            var filter = [{
                 field: "Subject",
                 operator: "contains",
                 value: "gold",
                 predicate: "or"
-            },{field: "Subject",
+            }, {
+                field: "Subject",
                 operator: "contains",
                 value: "what",
                 predicate: "or"
@@ -423,10 +423,8 @@ Click the search button to enable the filter option.
 
 {% highlight js %}
 
-$(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -434,7 +432,7 @@ $(function () {
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
-                currentDate: new Date (2014,4,5),
+                currentDate: new Date(2014, 4, 5),
                 subject: "Subject",
                 startTime: "StartTime",
                 endTime: "EndTime",

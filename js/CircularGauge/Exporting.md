@@ -27,7 +27,7 @@ documentation: ug
 
 {% highlight js %}
 
- $(function () {
+$(function () {
         $("#circulargauge").ejCircularGauge();
         $("#btnExportImage").ejButton({ width: "100px", click: "buttonclickevent", });
     });

@@ -70,8 +70,8 @@ The Scale border is modified with the object called **border**. It has two borde
 
 
 {% highlight js %}
-$(function () {
 
+$(function () {
         //For circular gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -113,7 +113,6 @@ Execute the above code to render the following output.
 {% highlight js %}
 
   $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{ pointerCap: {
@@ -153,34 +152,32 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
- $(function () {
-
+  $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
                 // For setting scale bar size
-            size: 30,
+                size: 30,
                 // For setting scale radius
-            scaleRadius: 130,
+                scaleRadius: 130,
                 // For setting scale minimum value
-            minimum: 20,
+                minimum: 20,
                 // For setting scale maximum value
-            maximum: 120,
+                maximum: 120,
                 // For setting scale major interval value
-            majorIntervalValue: 20,
+                majorIntervalValue: 20,
                 // For setting scale minor interval
-            minorIntervalValue: 5,
+                minorIntervalValue: 5,
                 // For setting scale direction
-            direction:ej.datavisualization.CircularGauge.Directions.CounterClockwise,**
+                direction:ej.datavisualization.CircularGauge.Directions.CounterClockwise,**
                 // For setting scale background color
-            backgroundColor:"red",
+                backgroundColor:"red",
                 // For setting scale bar opacity
-            opcity:0.5,
+                opcity:0.5,
                 // For setting scale bar shadow offset
-            shadowOffset: 20
+                shadowOffset: 20
             }]
         });
-
     });
 
 {% endhighlight %}
@@ -208,9 +205,7 @@ You can set **Multiple scales** for a single **Circular Gauge** control by using
 {% endhighlight %}
 
 {% highlight js %}
-
 $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [
@@ -242,9 +237,7 @@ $(function () {
 
             }]
         });
-
     });
-
 
 {% endhighlight %}
 

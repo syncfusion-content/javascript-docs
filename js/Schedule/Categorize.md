@@ -20,21 +20,21 @@ You can use the following code example to include the categorize option.
 {% endhighlight %}
 
 {% highlight js %}
+
 $(function () {
         $("#Schedule1").ejSchedule({
-          categorizeSettings:{
-          enable:true,
-          allowMultiple:true,
-          dataSource: [
-          { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },
-          { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
-          { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
-          ],
-          text: "text", id: "id", color: "color",fontColor: "fontColor"
-          },
-});
+            categorizeSettings: {
+                enable: true,
+                allowMultiple: true,
+                dataSource: [
+                { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },
+                { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
+                { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
+                ],
+                text: "text", id: "id", color: "color", fontColor: "fontColor"
+            },
+        });
     });
-
 
 {% endhighlight %}
 
@@ -83,18 +83,19 @@ The following code example illustrates on how to render categorize feature in th
 {% endhighlight %}
 
 {% highlight js %}
- var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(2));
+  $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(2));
         $("#Schedule1").ejSchedule({
             // categorize data collection
-          categorizeSettings:{
-          enable:true,
-          dataSource: [
-          { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },
-          { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
-          { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
-          ],
-          text: "text", id: "id", color: "color",fontColor: "fontColor"
-          },
+            categorizeSettings: {
+                enable: true,
+                dataSource: [
+                { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },
+                { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
+                { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
+                ],
+                text: "text", id: "id", color: "color", fontColor: "fontColor"
+            },
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
@@ -104,12 +105,10 @@ The following code example illustrates on how to render categorize feature in th
                 allDay: "AllDay",
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule",
-
                 // bind the resource id fields collection of each level
-                categorize:"Categorize"
+                categorize: "Categorize"
             }
         });
-
     });
     // The appointment data along with categorize data to be passed to the dataSource are as follows,
     window.Default = [{
@@ -121,11 +120,11 @@ The following code example illustrates on how to render categorize feature in th
         Recurrence: true,
         RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
         // single value for the categorize
-        Categorize:"3"
+        Categorize: "3"
     }, {
         Id: 101,
         Subject: "Bering Sea Gold",
-        StartTime:new Date().setHours(4, 0),
+        StartTime: new Date().setHours(4, 0),
         EndTime: new Date().setHours(5, 0),
         AllDay: false,
         Recurrence: false,
