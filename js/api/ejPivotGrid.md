@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Pivot Grid control.
+Custom Design for PivotGrid control.
 
 
 
@@ -37,7 +37,7 @@ Custom Design for Pivot Grid control.
 &lt;div id="PivotGrid"&gt; &lt;/div&gt; 
  
 &lt;script&gt;
-// Create Pivot Grid
+// Create PivotGrid
 $("#PivotGrid").ejPivotGrid(...);       
 &lt;/script&gt;</code>
 </pre>
@@ -127,10 +127,10 @@ $("#PivotGrid").ejPivotGrid({cssClass: "gradient-lime"});       </code>
 <pre class="prettyprint">
 <code> 
 //Get or set css class for initialization:
-        // Gets the css name.           
-        $("#PivotGrid").ejPivotGrid("option", "cssClass");                      
-        // Sets the rounded corner to button
-        $("#PivotGrid").ejPivotGrid("option", "cssClass",  "gradient-lime" );           </code>
+// Gets the css name.           
+$("#PivotGrid").ejPivotGrid("option", "cssClass");                      
+// Sets the rounded corner to button
+$("#PivotGrid").ejPivotGrid("option", "cssClass",  "gradient-lime" );           </code>
 </pre>
 
 
@@ -214,11 +214,11 @@ Default Value:
 <pre class="prettyprint">
 <code> 
 //Get or set the custom object API, after initialization:
-        //Gets the custom object value  
-        $("#PivotGrid").ejPivotGrid("option","customObject");
+//Gets the custom object value  
+$("#PivotGrid").ejPivotGrid("option","customObject");
                        
-        //Sets the custom object value 
-        $("#PivotGrid").ejPivotGrid("option","customObject", {Language: "en-US"} );             </code>
+//Sets the custom object value 
+$("#PivotGrid").ejPivotGrid("option","customObject", {Language: "en-US"} );             </code>
 </pre>
 
 
@@ -266,11 +266,11 @@ $("#PivotGrid").ejPivotGrid({enableCellContext: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the cell context, after initialization:
-        //Gets the cell context state
-        $("#PivotGrid").ejPivotGrid("option", "enableCellContext");
+//Gets the cell context state
+$("#PivotGrid").ejPivotGrid("option", "enableCellContext");
                  
-        //Sets the cell context value
-        $("#PivotGrid").ejPivotGrid("option", "enableCellContext","true");                      *               </code>
+//Sets the cell context value
+$("#PivotGrid").ejPivotGrid("option", "enableCellContext","true");                                     </code>
 </pre>
 
 
@@ -318,11 +318,11 @@ $("#PivotGrid").ejPivotGrid({enableJSONRendering: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the JSON Rendering, after initialization:
-        //Gets the JSON rendering state
-        $("#PivotGrid").ejPivotGrid("option", "enableJSONRendering");
+//Gets the JSON rendering state
+$("#PivotGrid").ejPivotGrid("option", "enableJSONRendering");
                
-        //Sets the JSON rendering 
-        $("#PivotGrid").ejPivotGrid("option", "enableJSONRendering","true");                    *               </code>
+//Sets the JSON rendering 
+$("#PivotGrid").ejPivotGrid("option", "enableJSONRendering","true");                                   </code>
 </pre>
 
 
@@ -370,11 +370,11 @@ $("#PivotGrid").ejPivotGrid({enableRTL: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the enableRTL, after initialization:
-        //Gets the enableRTL values state
-        $("#PivotGrid").ejPivotGrid("option", "enableRTL");
+//Gets the enableRTL values state
+$("#PivotGrid").ejPivotGrid("option", "enableRTL");
                  
-        //Sets the cell context value
-        $("#PivotGrid").ejPivotGrid("option", "enableRTL","true");                      *               </code>
+//Sets the cell context value
+$("#PivotGrid").ejPivotGrid("option", "enableRTL","true");                                     </code>
 </pre>
 
 
@@ -422,11 +422,11 @@ $("#PivotGrid").ejPivotGrid({enableToolTip: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the enableToolTip, after initialization:
-        //Gets the enableToolTip values state
-        $("#PivotGrid").ejPivotGrid("option", "enableToolTip");
+//Gets the enableToolTip values state
+$("#PivotGrid").ejPivotGrid("option", "enableToolTip");
                      
-        //Sets the cell context value
-        $("#PivotGrid").ejPivotGrid("option", "enableToolTip","true");                  *               </code>
+//Sets the cell context value
+$("#PivotGrid").ejPivotGrid("option", "enableToolTip","true");                                 </code>
 </pre>
 
 
@@ -474,11 +474,11 @@ $("#PivotGrid").ejPivotGrid({enableVirtualScrolling: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the virtual scrolling, after initialization:
-        //Gets the virtual calling state
-        $("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling");
+//Gets the virtual calling state
+$("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling");
             
-        //Sets the virtual scrolling 
-        $("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling","true");                 *               </code>
+//Sets the virtual scrolling 
+$("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling","true");                                </code>
 </pre>
 
 
@@ -495,7 +495,7 @@ $("#PivotGrid").ejPivotGrid({enableVirtualScrolling: true});</code>
 
 
 
-Allows the user to configure hyperlink settings to Pivot Grid control.
+Allows the user to configure hyperlink settings to PivotGrid control.
 
 
 
@@ -520,17 +520,17 @@ Default Value:
 
 <pre class="prettyprint">
 <code> 
-//To configure the hyperlink settings to Pivot Grid during initialization  
+//To configure the hyperlink settings to PivotGrid during initialization  
 $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true, enableRowHeaderHyperlink: true}});</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the hyperlink settings, after initialization:
-        //Gets the hyperlink settings
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the hyperlink settings
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                  
-        //Sets the hyperlink settings to Pivot Grid
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings", {enableValueCellHyperlink: true, enableRowHeaderHyperlink: true});                   *               </code>
+//Sets the hyperlink settings to PivotGrid
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings", {enableValueCellHyperlink: true, enableRowHeaderHyperlink: true});                                 </code>
 </pre>
 
 
@@ -578,11 +578,11 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableColumnHeaderHyperlink: tru
 <pre class="prettyprint">
 <code> 
 //Get or set the hyper link for column header, after initialization:
-        //Gets the hyper link state
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the hyper link state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                                  
-        //Sets the column header hyper link state
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableColumnHeaderHyperlink","true");                  *               </code>
+//Sets the column header hyper link state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableColumnHeaderHyperlink","true");                                 </code>
 </pre>
 
 
@@ -634,7 +634,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableRowHeaderHyperlink: true}}
         $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
          
         //Sets the row header hyperlink
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableRowHeaderHyperlink","true");                     *               </code>
+        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableRowHeaderHyperlink","true");                                    </code>
 </pre>
 
 
@@ -682,11 +682,11 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableSummaryCellHyperlink: true
 <pre class="prettyprint">
 <code> 
 //Get or set the hyper link for summary cell, after initialization:
-        //Gets the summary cell hyperlink state
-  $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the summary cell hyperlink state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                
-        //Sets the summary cell hyperlink 
-  $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableSummaryCellHyperlink","true");                 *               </code>
+//Sets the summary cell hyperlink 
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableSummaryCellHyperlink","true");                                </code>
 </pre>
 
 
@@ -734,11 +734,11 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true}}
 <pre class="prettyprint">
 <code> 
 //Get or set the hyper link for cell, after initialization:
-        //Gets the hyper link state
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the hyper link state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                  
-        //Sets the cell hyperlink value
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableValueCellHyperlink","true");                     *               </code>
+//Sets the cell hyperlink value
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableValueCellHyperlink","true");                                    </code>
 </pre>
 
 
@@ -786,11 +786,11 @@ $("#PivotGrid").ejPivotGrid({isResponsive: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the isResponsive, after initialization:
-        //Gets the isResponsive values state
-        $("#PivotGrid").ejPivotGrid("option", "isResponsive");
+//Gets the isResponsive values state
+$("#PivotGrid").ejPivotGrid("option", "isResponsive");
                       
-        //Sets the reponsive layout
-        $("#PivotGrid").ejPivotGrid("option", "isResponsive","true");                   *               </code>
+//Sets the reponsive layout
+$("#PivotGrid").ejPivotGrid("option", "isResponsive","true");                                </code>
 </pre>
 
 
@@ -843,7 +843,7 @@ Default Value:
 
 
 
-Allows the user access the different layouts for Pivot Grid.
+Allows the user access the different layouts for PivotGrid.
 
 
 
@@ -874,11 +874,11 @@ $("#PivotGrid").ejPivotGrid({layout: ej.PivotGrid.Layout.NoSummaries});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the grid layout, after initialization:
-        //Gets the layout value
-        $("#PivotGrid").ejPivotGrid("option", "layout");
+//Gets the layout value
+$("#PivotGrid").ejPivotGrid("option", "layout");
                     
-        //Sets the grid layout
-        $("#PivotGrid").ejPivotGrid("option", "layout",ej.PivotGrid.Layout.Normal);                     *               </code>
+//Sets the grid layout
+$("#PivotGrid").ejPivotGrid("option", "layout",ej.PivotGrid.Layout.Normal);                                   </code>
 </pre>
 
 
@@ -926,11 +926,11 @@ Default Value:
 <pre class="prettyprint">
 <code> 
 //Get or set the size API, after initialization:
-        //Gets the localization value  
-        $("#PivotGrid").ejPivotGrid("option","locale");
+//Gets the localization value  
+$("#PivotGrid").ejPivotGrid("option","locale");
                      
-        //Sets the localization value 
-        $("#PivotGrid").ejPivotGrid("option","locale", "en-US" );               </code>
+//Sets the localization value 
+$("#PivotGrid").ejPivotGrid("option","locale", "en-US" );               </code>
 </pre>
 
 
@@ -999,7 +999,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings",  {initialize: "In
 
 
 
-Allows the user to set the custom name for the service method that&#65533;s responsible for drilling up/down operation in Pivot Grid.
+Allows the user to set the custom name for the service method that's responsible for drilling up/down operation in PivotGrid.
 
 
 
@@ -1024,12 +1024,12 @@ Default Value:
 
 <pre class="prettyprint">
 <code> 
-//To set drillDown API value, to invoke the corresponding service method for performing server-side operation while drilling up/down in Pivot Grid.   
+//To set drillDown API value, to invoke the corresponding service method for performing server-side operation while drilling up/down in PivotGrid.   
 $("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { drillDown: "DrillGridMyMethod" } });</code>
 </pre>
 <pre class="prettyprint">
 <code> 
-//Get or set the drillDown API, to invoke the corresponding service method for performing server-side operation while drilling up/down in Pivot Grid:
+//Get or set the drillDown API, to invoke the corresponding service method for performing server-side operation while drilling up/down in PivotGrid:
 //Gets the drillDown value   
 $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
                                              
@@ -1051,7 +1051,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.drillDown", "DrillG
 
 
 
-Allows the user to set the custom name for the service method that&#65533;s responsible for performing exporting operation in Pivot Grid.
+Allows the user to set the custom name for the service method that's responsible for performing exporting operation in PivotGrid.
 
 
 
@@ -1103,7 +1103,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.exportOptions", "Ex
 
 
 
-Allows the user to set the custom name for the service method that&#65533;s responsible for initializing Pivot Grid.
+Allows the user to set the custom name for the service method that's responsible for initializing PivotGrid.
 
 
 
@@ -1128,12 +1128,12 @@ Default Value:
 
 <pre class="prettyprint">
 <code> 
-//To set initialize API value, to invoke the corresponding service method for Pivot Grid initialization.
+//To set initialize API value, to invoke the corresponding service method for PivotGrid initialization.
 $("#PivotGrid").ejPivotGrid({ servieMethods",  {initialize: "InitializeGrid"} ); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
-//Gets or sets the initialize API, to invoke the corresponding service method for Pivot Grid initialization:
+//Gets or sets the initialize API, to invoke the corresponding service method for PivotGrid initialization:
 //Gets the initialize value   
 $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
                                              
@@ -1155,7 +1155,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.initialize", "Initi
 
 
 
-Allows the user to set the custom name for the service method that&#65533;s responsible for performing paging operation in Pivot Grid.
+Allows the user to set the custom name for the service method that's responsible for performing paging operation in PivotGrid.
 
 
 
@@ -1180,12 +1180,12 @@ Default Value:
 
 <pre class="prettyprint">
 <code> 
-//To set paging API value, to invoke the corresponding service method for performing server-side operation during paging in Pivot Grid.  
+//To set paging API value, to invoke the corresponding service method for performing server-side operation during paging in PivotGrid.  
 $("#PivotGrid").ejPivotGrid({ serviceMethodSettings: { paging: "PagingMyMethod" } });</code>
 </pre>
 <pre class="prettyprint">
 <code> 
-//Gets or sets the paging API, to invoke the corresponding service method for performing server-side operation during paging in Pivot Grid:
+//Gets or sets the paging API, to invoke the corresponding service method for performing server-side operation during paging in PivotGrid:
 //Gets the paging value   
 $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings");
                                              
@@ -1279,7 +1279,7 @@ Perform an asynchronous HTTP (Ajax) request.
 &lt;div id="PivotGrid"&gt;&lt;/div&gt; 
  
 &lt;script&gt;
-// Create Pivot Grid
+// Create PivotGrid
 $('#PivotGrid').ejPivotGrid({
       url: "PivotGridService.svc",
   });
@@ -1340,7 +1340,7 @@ gridObj.doPostBack("/PivotGridService.svc/Initialize", {"key", "Hello World"});
 
 
 
-This function re-renders the Pivot Grid on clicking the navigating buttons on Pivot Pager.
+This function re-renders the PivotGrid on clicking the navigating buttons on Pivot Pager.
 
 
 
@@ -1353,7 +1353,7 @@ This function re-renders the Pivot Grid on clicking the navigating buttons on Pi
 &lt;div id="PivotGrid"&gt;&lt;/div&gt; 
  
 &lt;script&gt;
-// Refreshing Pivot Grid while perform paging.
+// Refreshing PivotGrid while perform paging.
 $('#PivotGrid').ejPivotGrid({
       url: "PivotGridService.svc",
   });
@@ -1377,7 +1377,7 @@ gridObj.refreshPagedPivotGrid("series", 2);
 
 
 
-This function receives the JSON formatted datasource to render the Pivot Grid control.
+This function receives the JSON formatted datasource to render the PivotGrid control.
 
 
 
@@ -1390,13 +1390,13 @@ This function receives the JSON formatted datasource to render the Pivot Grid co
 &lt;div id="PivotGrid"&gt;&lt;/div&gt; 
  
 &lt;script&gt;
-// Rendering Pivot Grid from given JSON formatted data.
+// Rendering PivotGrid from given JSON formatted data.
 $('#PivotGrid').ejPivotGrid({
       url: "PivotGridService.svc",
   });
 var gridObj = $("#PivotGrid").data("ejPivotGrid");
 gridObj.renderControlFromJSON({this.getJSONRecords()});
-// Rendering Pivot Grid.
+// Rendering PivotGrid.
 &lt;/script&gt;</code>
 </pre>
 
@@ -1435,7 +1435,7 @@ Fires after the service is invoked.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid
+<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -1448,27 +1448,27 @@ Fires after the service is invoked.
 <tr>
 <td class="name"><code>action</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the current action of Pivot Grid control.</td>
+<td class="description last">return the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>customObject</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">return the custom object bounds with Pivot Grid control.</td>
+<td class="description last">return the custom object bounds with PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>element</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the outer HTML of Pivot Grid control.</td>
+<td class="description last">return the outer HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Pivot Grid model</td>
+<td class="description last">returns the PivotGrid model</td>
 </tr>
 <tr>
 <td class="name"><code>type</code></td>
@@ -1489,7 +1489,7 @@ Fires after the service is invoked.
 
 <pre class="prettyprint">
 <code> 
-//afterServiceInvoke event for Pivot Grid
+//afterServiceInvoke event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    afterServiceInvoke: function (args) {}
 });      </code>
@@ -1523,7 +1523,7 @@ Fires before service invoked.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid
+<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -1536,27 +1536,27 @@ Fires before service invoked.
 <tr>
 <td class="name"><code>action</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the current action of Pivot Grid control.</td>
+<td class="description last">return the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>customObject</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">return the custom object bounds with Pivot Grid control.</td>
+<td class="description last">return the custom object bounds with PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>element</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the outer HTML of Pivot Grid control.</td>
+<td class="description last">return the outer HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Pivot Grid model</td>
+<td class="description last">returns the PivotGrid model</td>
 </tr>
 <tr>
 <td class="name"><code>type</code></td>
@@ -1577,7 +1577,7 @@ Fires before service invoked.
 
 <pre class="prettyprint">
 <code> 
-//beforeServiceInvoke event for Pivot Grid
+//beforeServiceInvoke event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    beforeServiceInvoke: function (args) {}
 });      </code>
@@ -1611,7 +1611,7 @@ Fires when the cell is right clicked.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1660,7 +1660,7 @@ Fires when the cell is right clicked.
 
 <pre class="prettyprint">
 <code> 
-//cellContext event for Pivot Grid
+//cellContext event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    cellContext: function (args) {}
 });      </code>
@@ -1680,7 +1680,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-Fires when the column header cell is clicked once if Pivot Grid enabled with hyperlink.
+Fires when the column header cell is clicked once if PivotGrid enabled with hyperlink.
 
 <table class="params">
 <thead>
@@ -1694,7 +1694,7 @@ Fires when the column header cell is clicked once if Pivot Grid enabled with hyp
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1743,7 +1743,7 @@ Fires when the column header cell is clicked once if Pivot Grid enabled with hyp
 
 <pre class="prettyprint">
 <code> 
-//columnHeaderHyperlinkClick event for Pivot Grid
+//columnHeaderHyperlinkClick event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    columnHeaderHyperlinkClick: function (args) {}
 });      </code>
@@ -1763,7 +1763,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-Fires after drill down of Pivot Grid.
+Fires after drill down of PivotGrid.
 
 <table class="params">
 <thead>
@@ -1777,7 +1777,7 @@ Fires after drill down of Pivot Grid.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid
+<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -1790,12 +1790,12 @@ Fires after drill down of Pivot Grid.
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Pivot Grid model</td>
+<td class="description last">returns the PivotGrid model</td>
 </tr>
 <tr>
 <td class="name"><code>type</code></td>
@@ -1816,7 +1816,7 @@ Fires after drill down of Pivot Grid.
 
 <pre class="prettyprint">
 <code> 
-//drillSuccess event for Pivot Grid
+//drillSuccess event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    drillSuccess: function (args) {}
 });      </code>
@@ -1836,7 +1836,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-Fires when Pivot Grid Start loading.
+Fires when PivotGrid Start loading.
 
 <table class="params">
 <thead>
@@ -1850,7 +1850,7 @@ Fires when Pivot Grid Start loading.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1868,7 +1868,7 @@ Fires when Pivot Grid Start loading.
 <tr>
 <td class="name"><code>action</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current action of Pivot Grid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>customObject</code></td>
@@ -1878,17 +1878,17 @@ Fires when Pivot Grid Start loading.
 <tr>
 <td class="name"><code>element</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the HTML of Pivot Grid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Pivot Grid model.</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
 <td class="name"><code>type</code></td>
@@ -1909,7 +1909,7 @@ Fires when Pivot Grid Start loading.
 
 <pre class="prettyprint">
 <code> 
-//load event for Pivot Grid
+//load event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    load: function (args) {}
 });      </code>
@@ -1929,7 +1929,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-Fires when Pivot Grid completely finished its rendering.
+Fires when PivotGrid completely finished its rendering.
 
 <table class="params">
 <thead>
@@ -1943,7 +1943,7 @@ Fires when Pivot Grid completely finished its rendering.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1961,7 +1961,7 @@ Fires when Pivot Grid completely finished its rendering.
 <tr>
 <td class="name"><code>action</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current action of Pivot Grid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>customObject</code></td>
@@ -1971,17 +1971,17 @@ Fires when Pivot Grid completely finished its rendering.
 <tr>
 <td class="name"><code>element</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the HTML of Pivot Grid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Pivot Grid model.</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
 <td class="name"><code>type</code></td>
@@ -2002,7 +2002,7 @@ Fires when Pivot Grid completely finished its rendering.
 
 <pre class="prettyprint">
 <code> 
-//renderComplete event for Pivot Grid
+//renderComplete event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    renderComplete: function (args) {}
 });      </code>
@@ -2036,7 +2036,7 @@ Fires while any discrepancies occurs during the rendering time.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2054,7 +2054,7 @@ Fires while any discrepancies occurs during the rendering time.
 <tr>
 <td class="name"><code>action</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current action of Pivot Grid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>customObject</code></td>
@@ -2064,7 +2064,7 @@ Fires while any discrepancies occurs during the rendering time.
 <tr>
 <td class="name"><code>element</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the HTML of Pivot Grid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>message</code></td>
@@ -2074,12 +2074,12 @@ Fires while any discrepancies occurs during the rendering time.
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Pivot Grid model.</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
 <td class="name"><code>type</code></td>
@@ -2100,7 +2100,7 @@ Fires while any discrepancies occurs during the rendering time.
 
 <pre class="prettyprint">
 <code> 
-//renderFailure event for Pivot Grid
+//renderFailure event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    renderFailure: function (args) {}
 });      </code>
@@ -2120,7 +2120,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-Fires when Pivot Grid successfully finished its rendering.
+Fires when PivotGrid successfully finished its rendering.
 
 <table class="params">
 <thead>
@@ -2134,7 +2134,7 @@ Fires when Pivot Grid successfully finished its rendering.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2152,7 +2152,7 @@ Fires when Pivot Grid successfully finished its rendering.
 <tr>
 <td class="name"><code>action</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current action of Pivot Grid control.</td>
+<td class="description last">returns the current action of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>customObject</code></td>
@@ -2162,17 +2162,17 @@ Fires when Pivot Grid successfully finished its rendering.
 <tr>
 <td class="name"><code>element</code></td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the HTML of Pivot Grid control.</td>
+<td class="description last">returns the HTML of PivotGrid control.</td>
 </tr>
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Pivot Grid model.</td>
+<td class="description last">returns the PivotGrid model.</td>
 </tr>
 <tr>
 <td class="name"><code>type</code></td>
@@ -2193,7 +2193,7 @@ Fires when Pivot Grid successfully finished its rendering.
 
 <pre class="prettyprint">
 <code> 
-//renderSuccess event for Pivot Grid
+//renderSuccess event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    renderSuccess: function (args) {}
 });      </code>
@@ -2213,7 +2213,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-Fires when the row header cell is clicked once if Pivot Grid enabled with hyperlink.
+Fires when the row header cell is clicked once if PivotGrid enabled with hyperlink.
 
 <table class="params">
 <thead>
@@ -2227,7 +2227,7 @@ Fires when the row header cell is clicked once if Pivot Grid enabled with hyperl
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2276,7 +2276,7 @@ Fires when the row header cell is clicked once if Pivot Grid enabled with hyperl
 
 <pre class="prettyprint">
 <code> 
-//rowHeaderHyperlinkClick event for Pivot Grid
+//rowHeaderHyperlinkClick event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    rowHeaderHyperlinkClick: function (args) {}
 });      </code>
@@ -2310,7 +2310,7 @@ Fires when the summary cell is clicked.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2359,7 +2359,7 @@ Fires when the summary cell is clicked.
 
 <pre class="prettyprint">
 <code> 
-//summaryCellHyperlinkClick event for Pivot Grid
+//summaryCellHyperlinkClick event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    summaryCellHyperlinkClick: function (args) {}
 });      </code>
@@ -2379,7 +2379,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-Fires when the value cell is clicked once if Pivot Grid enabled with hyperlink.
+Fires when the value cell is clicked once if PivotGrid enabled with hyperlink.
 
 <table class="params">
 <thead>
@@ -2393,7 +2393,7 @@ Fires when the value cell is clicked once if Pivot Grid enabled with hyperlink.
 <tr>
 <td class="name"><code>argument</code></td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Pivot Grid.
+<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2442,7 +2442,7 @@ Fires when the value cell is clicked once if Pivot Grid enabled with hyperlink.
 
 <pre class="prettyprint">
 <code> 
-//valueCellHyperlinkClick event for Pivot Grid
+//valueCellHyperlinkClick event for PivotGrid
 $("#PivotGrid").ejPivotGrid({
    valueCellHyperlinkClick: function (args) {}
 });      </code>
