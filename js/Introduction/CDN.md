@@ -12,7 +12,7 @@ documentation: ug
 The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the Scripts and Stylesheets, so that the users can have easier access to the Syncfusion JavaScript components. 
 
 
-> _**Note: All the provided cdn links can be accessed either through** http_ _**or**_ _https_**.**
+>   Note: All the provided cdn links can be accessed either through http or https.
 
 
 ### CDN Script links
@@ -108,8 +108,8 @@ http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>fileName</b>]
 <tr>
 <td>
 </br>
-For example, to access the <b>ej.web.all.min.js</b> file in <b>13.1.0.21</b> version – 
- http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js
+For example, to access the <b>ej.web.all.min.js</b> file in <b>{{ site.releaseversion }}</b> version – 
+ http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js
 </td>
 </tr>
 </table>
@@ -124,27 +124,27 @@ For example, to access the <b>ej.web.all.min.js</b> file in <b>13.1.0.21</b> ver
 <td>
 ej.web.all.min</td><td>
 Combined script file which includes the script of all the Syncfusion UI web widgets. </td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js">http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js</a> </td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js</a> </td></tr>
 <tr>
 <td>
 ej.webform.min</td><td>
 supports server-side event functionalities in ASP.NET controls</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.webform.min.js">http://cdn.syncfusion.com/13.1.0.21/js/web/ej.webform.min.js</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.webform.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.webform.min.js</a></td></tr>
 <tr>
 <td>
 ej.unobtrusive.min</td><td>
 Supports Syncfusion widgets to render in HTML5 format.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js">http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js</a>  </td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js</a>  </td></tr>
 <tr>
 <td>
 ej.widget.angular.min</td><td>
 Provides complete support for Angular JS </td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js">http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js</a></td></tr>
 <tr>
 <td>
 ej.widget.ko.min</td><td>
 Provides complete support for Knockout JS</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js">http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js</a></td></tr>
 </table>
 
 
@@ -159,8 +159,8 @@ http://cdn.syncfusion.com/[<b>version</b>]/js/[<b>fileName</b>]
 <tr>
 <td>
 <br/>
-For example, to access the <b>ej.widget.angular.min.js</b> file in <b>13.1.0.21</b> version – 
- http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js
+For example, to access the <b>ej.widget.angular.min.js</b> file in <b>{{ site.releaseversion }}</b> version – 
+ http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js
 </td>
 </tr>
 </table>
@@ -195,72 +195,72 @@ http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>theme-name</b>]/[<b>fileNa
 <td>
 Flat-Azure (default theme)</td><td>
 Includes the css properties defined for all the widgets in flat-azure theme. (Default-theme)</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Azure Dark</td><td>
 Includes the css properties defined for all the widgets in flat-azure dark theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure-dark/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure-dark/ej.web.all.min.css</a>  </td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css</a>  </td></tr>
 <tr>
 <td>
 Flat-lime</td><td>
 Includes the css properties defined for all the widgets in flat-lime theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-lime Dark</td><td>
 Includes the css properties defined for all the widgets in flat-lime dark theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Saffron</td><td>
 Includes the css properties defined for all the widgets in flat-saffron theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-saffron/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/flat-saffron/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Saffron Dark</td><td>
 Includes the css properties defined for all the widgets in flat-saffron dark theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-saffron-dark/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/flat-saffron-dark/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Azure</td><td>
 Includes the css properties defined for all the widgets in gradient-azure theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-azure/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-azure/ej.web.all.min.css</a>  </td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure/ej.web.all.min.css</a>  </td></tr>
 <tr>
 <td>
 Gradient-Azure Dark</td><td>
 Includes the css properties defined for all the widgets in gradient-azure dark theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-azure-dark/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-azure-dark/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-lime</td><td>
 Includes the css properties defined for all the widgets in gradient-lime theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-lime/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-lime/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-lime Dark</td><td>
 Includes the css properties defined for all the widgets in gradient-lime dark theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-lime-dark/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-lime-dark/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Saffron</td><td>
 Includes the css properties defined for all the widgets in gradient-saffron theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Saffron Dark</td><td>
 Includes the css properties defined for all the widgets in gradient-saffron dark theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Bootstrap-theme</td><td>
 Includes the css properties defined for all the widgets in bootstrap theme.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/bootstrap-theme/ej.web.all.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/bootstrap-theme/ej.web.all.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 ej.responsive.css</td><td>
 To make the widget responsive, it is necessary to refer this css file.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/responsive-css/ej.responsive.css">http://cdn.syncfusion.com/13.1.0.21/js/web/responsive-css/ej.responsive.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css</a></td></tr>
 </table>
 
 
@@ -278,12 +278,12 @@ Here – For example, we have depicted another way of theme reference for the **
 <td>
 Flat-Azure</td><td>
 Here, the widget core file (<b>ej.widget.core.min.css</b>) is common and the theme file <b>ej.theme.min.css</b> is uniquely available under the <b>flat-azure</b> theme folder.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/ej.widgets.core.min.css</a><br/><a href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.theme.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.theme.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Azure Dark</td><td>
 Here, the widget core file (<b>ej.widget.core.min.css</b>) is common and the theme file <b>ej.theme.min.css</b> is uniquely available under the <b>flat-azure-dark</b> theme folder.</td><td>
-<a href="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/ej.widgets.core.min.css</a><br/><a href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure-dark/ej.theme.min.css">http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure-dark/ej.theme.min.css</a>  </td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css</a>  </td></tr>
 </table>
 
 
@@ -299,7 +299,7 @@ One of the major risk with CDN links is that – sometimes it may go down due to
     <title>My first HTML page</title>
 
     // CDN LINK references
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
@@ -309,7 +309,7 @@ One of the major risk with CDN links is that – sometimes it may go down due to
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 
     <script type="text/javascript">
 

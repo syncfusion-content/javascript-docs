@@ -50,7 +50,7 @@ For example – Here, we are showing you how to refer only the **flat-saffron** 
 {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img1.png" Caption="Files to be chosen for referring only single theme in your application"%}
 
 
-> _**Note: The common-images folder is needed to be copied into your application mandatorily for any of the theme selection, as it includes all the common font icons and other images required for the control to render.**_
+>   Note: The common-images folder is needed to be copied into your application mandatorily for any of the theme selection, as it includes all the common font icons and other images required for the control to render.
 
 
 
@@ -93,8 +93,8 @@ Once the required theme folders are copied into your application, it is necessar
 
 
 
-> _**Note: The ej.web.all.min.css file is available separately for all the 13 available themes in their respective theme folders.**_
-> _**It is the combination of two files namely, **ej.theme.min.css** file (available separately within each of the theme folders) and **ej.widgets.core.min.css** – which is shown in the below image,**_
+>   Note: The ej.web.all.min.css file is available separately for all the 13 available themes in their respective theme folders.
+>   It is the combination of two files namely, **ej.theme.min.css** file (available separately within each of the theme folders) and **ej.widgets.core.min.css** – which is shown in the below image,
 
 > {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img3.png" %}
 
@@ -156,7 +156,7 @@ By default, the header element of the DatePicker control which displays the Mont
 
 To change the background-color of the above header element of the DatePicker, you need to perform the following steps,
 
-* Define the customized css styles to be applied for the header element (**e-header**) of the DatePicker within the Style section of the HTML page as shown below, 
+Define the customized css styles to be applied for the header element (**e-header**) of the DatePicker within the Style section of the HTML page as shown below, 
 
 {% highlight css %}
 
@@ -171,7 +171,7 @@ To change the background-color of the above header element of the DatePicker, yo
 
 
 
-* Now you need to assign the user-defined CSS class name to the DatePicker component’s property **cssClass** as depicted below,
+Now you need to assign the user-defined CSS class name to the DatePicker component’s property **cssClass** as depicted below,
 
 {% highlight html %}
 
@@ -209,7 +209,7 @@ To change the background-color of the above header element of the DatePicker, yo
 
 {% endhighlight %}
 
-* When you run the above code, the background color for the header element (**e-header**) of the DatePicker component will be customized with its background color changed to **yellowgreen** as shown below,
+When you run the above code, the background color for the header element (**e-header**) of the DatePicker component will be customized with its background color changed to **yellowgreen** as shown below,
 
 {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img5.png" Caption="DatePicker control with customized header color & customStyles class added to the root element"%}
 
@@ -222,11 +222,11 @@ Also, refer the required css file (**ej.web.all.min.css**) in your application a
 
 To replace the entire css file with your own customized CSS class name, you need to copy the non-minified version (Src->**assets-src** folder) of the required theme file into your application and then modify it as per your needs. Also, make sure that the reference to it has been made in the HTML page and also the Customized class name set to the **cssClass** property of the EJ components. 
 
-The non-minified version of the css files are present within the assets-src folder, as mentioned earlier in this section. 
+The non-minified version of the css files are present within the **assets-src** folder, as mentioned earlier in this section. 
 
-Follow the below steps to customize the entire css file and refer it in your HTML page,
+To customize the entire css file and refer it in your HTML page,
 
-* Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the non-minified version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (non-minified) file present within the **flat-saffron** theme folder in our application)
+Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the non-minified version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (non-minified) file present within the **flat-saffron** theme folder in our application)
 
 {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img6.png" %}
 
@@ -265,7 +265,7 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 
 
 
-* Now, to make particular changes in that file, you can directly open it and start making modifications. For example, The DatePicker control has its default root class name as **e-datepicker**. You can change it manually with the user-specified root class name such as **e-cutomdatepicker** in the css file as shown below,
+Now, to make particular changes in that file, you can directly open it and start making modifications. For example, The DatePicker control has its default root class name as **e-datepicker**. You can change it manually with the user-specified root class name such as **e-cutomdatepicker** in the css file as shown below,
 
 {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img7.png" Caption="CSS file with default root e-datepicker name"%}
 
@@ -274,26 +274,26 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 
 
 
-* To change/customize further the styles of the other child elements of the datepicker widget like header (**e-header** class), current-month and other-month, you need to modify the appropriate css properties within the **ej.theme.css** file as shown below,
+To change/customize further the styles of the other child elements of the datepicker widget like header (**e-header** class), current-month and other-month, you need to modify the appropriate css properties within the **ej.theme.css** file as shown below,
 
 
 
-  * **e-header** element with newly customized background-color
+**e-header** element with newly customized background-color
 
 {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img9.png" %}
 
 
-  * **current-month** element with newly customized background-color
+**current-month** element with newly customized background-color
 
 {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img10.png" %}
 
 
-  * **other-month** element with newly customized text color
+**other-month** element with newly customized text color
 
 {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img11.png" %}
 
 
-* Save the changes made in the css file and then set the user-specified custom css class name(**e-customdatepicker**) to the **cssClass** property of the datepicker widget as shown below,
+Save the changes made in the css file and then set the user-specified custom css class name(**e-customdatepicker**) to the **cssClass** property of the datepicker widget as shown below,
 
 {% highlight html %}
 
@@ -328,7 +328,7 @@ Follow the below steps to customize the entire css file and refer it in your HTM
 
 
 
-* Run the above code, you can see the datepicker widget with one or more customized child-elements according to the changes done in the css files as shown below,
+Run the above code, you can see the datepicker widget with one or more customized child-elements according to the changes done in the css files as shown below,
 
 {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img12.png" Caption="DatePicker control with customized elements" %}
 
