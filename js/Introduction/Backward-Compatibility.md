@@ -58,7 +58,7 @@ The other changes based on each components are as follows,
 <td>
 <a href="#ejAccordion">ejAccordion</a></td><td>
 <a href="#ejDigitalGauge">ejDigitalGauge</a></td><td>
-<a href="#ejOlapPager">ejOlapPager</a></td><td>
+<a href="#ejPivotPager">ejPivotPager</a></td><td>
 <a href="#ejTab">ejTab</a></td></tr>
 <tr>
 <td>
@@ -123,7 +123,7 @@ The other changes based on each components are as follows,
 <tr>
 <td>
 <a href="#ejDialog">ejDialog</a></td><td>
-<a href="#ejOlapGrid">ejOlapGrid</a></td><td>
+<a href="#ejPivotGrid">ejPivotGrid</a></td><td>
 <a href="#ejSplitter">ejSplitter</a></td><td>
 </td></tr>
 </table>
@@ -4009,8 +4009,8 @@ renderSuccess</td><td>
  </td></tr>
 </table>
 
-<a name="ejOlapGrid"></a>
-#### ejOlapGrid
+<a name="ejPivotGrid"></a>
+#### ejPivotGrid
 
 <table>
 <tr>
@@ -4075,8 +4075,8 @@ Layout</td><td>
  </td></tr>
 </table>
 
-<a name="ejOlapPager"></a>
-#### ejOlapPager
+<a name="ejPivotPager"></a>
+#### ejPivotPager
 
 <table>
 <tr>
