@@ -11,7 +11,6 @@ documentation: ug
 
 **Title** is the area on top of the Chart control that displays the text explaining the **OlapChart** data. Title text is displayed in a customizable format. 
 
-
 ##Setting Value To Chart Title
 
 Title property allows you to set the default title for a Chart as follows. 

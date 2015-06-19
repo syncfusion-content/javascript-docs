@@ -9,7 +9,7 @@ documentation: ug
 
 # Knockout Binding
 
->_**Note: This feature is applicable only for OLAP datasource.**_
+>_**Note:** This feature is applicable only for OLAP datasource._
 
 Knockout Binding allows you to bind HTML elements against any data model. It uses a Model-View-ViewModel(MVVM) design pattern, where the Model is your stored data, View is the visual representation of that data (UI), and ViewModel acts as the intermediary between Model and View.
 
@@ -37,7 +37,7 @@ $(function () {
 <div id="PivotGrid" data-bind="ejPivotGrid: { url: url, layout: gridLayout}" />
 
 <div>
-     <input type="text" id="gLayout" name="name" data-bind="ejDropDownList: {dataSource: layout, value: gridLayout, width: width}" />
+     <input type="text" id="gLayout" name="name" data-bind="ejDropDownList: {dataSource: layout, value: gridLayout, width: width}"/>
 </div>
 											
 {% endhighlight %}

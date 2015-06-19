@@ -97,11 +97,11 @@ Members of a dimension in a hierarchical structure.</td></tr>
 
 Attribute hierarchy contains the following levels:
 
-	* A leaf level contains each distinct attribute member called leaf member with each member of the leaf level.
+* A leaf level contains each distinct attribute member called leaf member with each member of the leaf level.
 
-	* Intermediate levels if the attribute hierarchy is a parent-child hierarchy.
+* Intermediate levels if the attribute hierarchy is a parent-child hierarchy.
 
-	* An optional (All) level (IsAggregatable=True) containing the aggregated value of the attribute hierarchy's leaf members, with the member of the (All) level also known as the (All) member.
+* An optional (All) level (IsAggregatable=True) containing the aggregated value of the attribute hierarchy's leaf members, with the member of the (All) level also known as the (All) member.
 
 ### User-Defined Hierarchy
 
@@ -359,19 +359,11 @@ Report List will hold all the reports of the current session of the **OLAP Clien
 
 When a change is made in the report, **OLAP** visualization controls and Axis Element Builder get re-populated with the data contained in the selected report.
 
-## OLAP Grid
+## PivotGrid
 
-The **OLAP Grid** control for **JavaScript** is easily configurable, presentation-quality business control that reads **OLAP** data from a **Microsoft SQL Server Analysis Services** database, an **offline cube** or **XMLA**. The **OLAP** data is displayed with drill-up and drill-down capabilities
-
-and features exceptional performance.
-
-For further information please refer the following link. [http://help.syncfusion.com/ug/js/default.htm#!Documents/overview25.htm](http://help.syncfusion.com/ug/js/default.htm)
+The **PivotGrid** control for **JavaScript** is easily configurable, presentation-quality business control that reads **OLAP** data from a **Microsoft SQL Server Analysis Services** database, an **offline cube** or **XMLA**. The **OLAP** data is displayed with drill-up and drill-down capabilities and features exceptional performance.
 
 ## OLAP Chart
 
-The **OLAP Chart** control for **JavaScript** is a lightweight control that reads **OLAP** information and visualizes it in graphical format with the ability to drill up and down. 
-
-For further information please refer the following link.
-
-[http://help.syncfusion.com/ug/js/default.htm#!Documents/overview22.htm](http://help.syncfusion.com/ug/js/default.htm)
+The **OLAP Chart** control for **JavaScript** is a lightweight control that reads **OLAP** information and visualizes it in graphical format with the ability to drill up and down.
 

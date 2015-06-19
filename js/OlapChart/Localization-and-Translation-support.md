@@ -104,7 +104,7 @@ The following code example shows how to localize **OlapChart’s User Interface*
 
 {% endhighlight %}
 
-> _**Note: In order to render the localized OLAP Chart, you are required to reset the content available in both**_
+> _**Note:** In order to render the localized OLAP Chart, you are required to reset the content available in both_
 
    1. _**OLAP Chart Control**_
 

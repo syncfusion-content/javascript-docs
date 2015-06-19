@@ -11,9 +11,9 @@ documentation: ug
 
 **Ticks** indicate values that are present in the scale area. The different types of ticks available are:
 
-    1. Major Ticks contains the range interval values.
+   1. Major Ticks contains the range interval values.
 
-    2. Minor Ticks contains only intervals between the major.
+   2. Minor Ticks contains only intervals between the major.
 
 You can further customize **Ticks** by setting color, width and height.
 

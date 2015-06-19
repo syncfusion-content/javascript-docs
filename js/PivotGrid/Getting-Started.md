@@ -9,16 +9,16 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **PivotGrid** in your application with **JavaScript.**
+This section explains briefly about how to create a **PivotGrid** in your application with **JavaScript.** First section of the document covers on creating an application with PivotGrid using OLAP datasource and later using Relational datasource briefly.
 
 #OLAP
 
-##Control structure
+##Control structure of PivotGrid using OLAP datasource
 
 The following screenshot displays the **PivotGrid** control.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img1.png" Caption="PivotGrid Control"%}
- 
+
 ##Create an application
 
 This section encompasses how to configure the **PivotGrid** component in an application. You can also pass the required data to **PivotGrid** and customize it according to your requirements.
@@ -60,7 +60,7 @@ After clicking **OK**, the referred assemblies look as follows.
 
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
-> _**Note: Use the following code example when adding scripts and styles.**_
+> _**Note:** Use the following code example when adding scripts and styles._
 
 
 {% highlight html %}
@@ -349,7 +349,7 @@ You can add the following methods to the service that are invoked for any server
 
 {% endhighlight %} 
 
-> _**Note: In this example, “WebApplication2” indicates the name of the project and “PivotGridService”     indicates the name of the WCF service created.**_
+> _**Note:** In this example, “WebApplication2” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created._
 
 #Relational
 
@@ -359,7 +359,7 @@ The following screen shot displays the **PivotGrid** Control.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img11.png" Caption="PivotGrid Control"%}
 
-##Create an application
+##Control structure of PivotGrid using Relational datasource
 
 This section encompasses how to configure the **PivotGrid** component in an application. You can also pass the required data to **PivotGrid** and customize it according to your requirements.
 
@@ -400,7 +400,7 @@ After clicking OK, the referred assemblies look as follows.
 
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
-> _**Note: Use the following code sample when adding scripts and styles.**_
+> _**Note:** Use the following code sample when adding scripts and styles._
 
 {% highlight html %}
 
@@ -742,4 +742,4 @@ binding="webHttpBinding" contract="**WebApplication2.IPivotGridService**" />
 
 {% endhighlight %}
 
-> _**Note: In this example, “WebApplication2” indicates the name of the project and “PivotGridService”     indicates the name of the WCF service created.**_
+> _**Note:** In this example, “WebApplication2” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created._
