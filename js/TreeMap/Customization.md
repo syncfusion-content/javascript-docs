@@ -46,7 +46,7 @@ You can color, all the leaf nodes with the same color by setting the **color** v
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Customization_images/Customization_img1.png" Caption="Treemap with Uni Color Mapping"%}
+{% include image.html url="/js/TreeMap/Customization_images/Customization_img1.png" Caption="Treemap with Uni Color Mapping"%}
 
 **Range Color Mapping**
 
@@ -74,7 +74,7 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Customization_images/Customization_img2.png" Caption="Treemap with Range Color Mapping"%}
+{% include image.html url="/js/TreeMap/Customization_images/Customization_img2.png" Caption="Treemap with Range Color Mapping"%}
 
 **Desaturation Color Mapping**
 
@@ -100,7 +100,7 @@ You can differentiate all the leaf nodes using the **desaturationColorMapping** 
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Customization_images/Customization_img3.png" Caption="Treemap with Desaturation Color Mapping"%}
+{% include image.html url="/js/TreeMap/Customization_images/Customization_img3.png" Caption="Treemap with Desaturation Color Mapping"%}
 
 **Tooltip**
 
@@ -154,5 +154,5 @@ You can customize the **Leaf level TreeMap****items** using **leafItemsSetting**
 
 
 
-{% include image.html url="/js/TreeMap/Concepts-and-Features/Customization_images/Customization_img4.png" Caption="Customized Treemap"%}
+{% include image.html url="/js/TreeMap/Customization_images/Customization_img4.png" Caption="Customized Treemap"%}
 
