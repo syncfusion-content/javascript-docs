@@ -15,16 +15,15 @@ The **Code 39** character set includes the digits 0-9, the letters A-Z (upper ca
 
 Here is the code example to create Code 39 barcode:
 
-
-
 {% highlight js %}
-
-            $("#barcode").ejBarcode({ text: "SYNCFUSION", 
-symbologyType: "code39", 
-displayText: true, 
-quietZone: {all:30} });
-
-
+$("#barcode").ejBarcode({
+   text: "SYNCFUSION",
+   symbologyType: "code39",
+   displayText: true,
+   quietZone: {
+      all: 30
+   }
+});
 {% endhighlight %}
 
 ##Code 39 Extended
@@ -48,9 +47,7 @@ The characters, A, B, C and D are used as start and stop characters. **Codabar**
 It is mainly used for coding pharmaceuticals, cosmetics and dietetics. **Code 32** is often used to encode Italian Pharmacode that has the following structure:
 
 * 'A' character (ASCII 65), that is not really encoded
-
 * 8 digits for Pharmacode (It generally begins with / and prefixed with 0)
-
 * 1 digit for Checksum module 10, that is automatically calculated by **Barcode**
 
 The value to be encoded must be8 digits Pharmacode (prefix it with '0' if necessary) and the 9th digit (the checksum) is automatically calculated by **Barcode**.
@@ -70,12 +67,9 @@ The **Code 93 Extended Barcode** symbology is continuous, variable length, and s
 ###Code 128 Code Sets
 
 * Code Set A (or Chars Set A) includes all of the standard upper case U.S. alphanumeric keyboard characters and punctuation characters along with the control characters, (namely, characters with ASCII values from 0 to 95 inclusive), and seven special characters.
-
 * Code Set B (or Chars Set B) includes all of the standard upper case alphanumeric keyboard characters and punctuation characters along with the lower case alphabetic characters (namely, characters with ASCII values from 32 to 127 inclusive), and seven special characters.
-
 * Code Set C (or Chars Set C) includes the set of 100 digit pairs from 00 to 99 inclusive along with three special characters. This allows numeric data to be encoded as two data digits per symbol character, at effectively twice the density of standard data.
 
 ###Code 128 Special characters
 
 The last seven characters of Code Sets A and B (character values 96 - 102) and the last three characters of Code Set C (character values 100 - 102) are special non-data characters with no ASCII character equivalents that have a particular significance to the **Barcode** reading device.
-

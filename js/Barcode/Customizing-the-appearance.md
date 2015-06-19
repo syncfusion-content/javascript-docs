@@ -14,14 +14,15 @@ A page or printed media with **Barcode** often appears colorful in the backgroun
 >   **Note:** This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
 
 {% highlight js %}
-
-            $("#barcode").ejBarcode({ text: "B5330E8278BC4C797C49DD3ED5AD9715", 
-symbologyType: "code39", 
-displayText: true, 
-darkBarColor:"blue",
-            quietZone: {all:30} });
-
-
+$("#barcode").ejBarcode({
+   text: "B5330E8278BC4C797C49DD3ED5AD9715",
+   symbologyType: "code39",
+   displayText: true,
+   darkBarColor: "blue",
+   quietZone: {
+      all: 30
+   }
+});
 {% endhighlight %}
 
 Execute the above code to render the following output.
@@ -31,21 +32,18 @@ Execute the above code to render the following output.
 The height of the barcode can be changed using the **BarHeight** property. The equivalent property to change the block size for two dimensional barcode is **XDimension**.
 
 {% highlight js %}
-
-            $("#barcode").ejBarcode({ text: "B5330E8278BC4C797C49DD3ED5AD9715", 
-symbologyType: "code39", 
-            displayText: true, 
-            darkBarColor:"#990099",
-            barHeight:45,
-            quietZone: {all:30} });
-
-
+$("#barcode").ejBarcode({
+   text: "B5330E8278BC4C797C49DD3ED5AD9715",
+   symbologyType: "code39",
+   displayText: true,
+   darkBarColor: "#990099",
+   barHeight: 45,
+   quietZone: {
+      all: 30
+   }
+});
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
 {% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img3.png" Caption="Barcode with customized height"%}
-
-
-
-
