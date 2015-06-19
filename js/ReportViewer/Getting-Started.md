@@ -13,13 +13,13 @@ This section explains briefly about how to create a **ReportViewer** in your we
 
 ## Create your first ReportViewer in JavaScript
 
-**Control Structure**
+###Control Structure
 
 The following screenshot displays the control structure of **ReportViewer**.
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img1.png" Caption="ReportViewer Structure"%}
 
-**Create an Application**
+###Create an Application
 
 This section explains how to configure a **ReportViewer** component in web application. As **ReportViewer** uses **WebApi** to process the report file, you can also learn how to create **WebApi** Service to process the report for **ReportViewer**. In the following example, the **ReportViewer** component displays the Sales Dashboard Report.    
 
@@ -27,7 +27,7 @@ Open **Visual Studio** and create a new project by clicking **New Project**. Sel
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img2.png" Caption="Project Creation Wizard"%}
 
-**Create HTML Page**
+###Create HTML Page
 
 To create a new web form in the application
 
@@ -47,9 +47,9 @@ To create a new web form in the application
 
 
 
-**Add References, Scripts, Styles and Control in HTML Page**
+###Add References, Scripts, Styles and Control in HTML Page
 
-**Add References**
+###Add References
 
 1\. In the **Solution Explorer**, right-click the **References** folder and then click **Add Reference**
 
@@ -105,7 +105,7 @@ To create a new web form in the application
 
 
 
-**Add Scripts and Styles**
+###Add Scripts and Styles
 
 Add the script files and CSS files in the **&lt;title&gt;** tag of the **default.html** page.
 
@@ -126,7 +126,7 @@ Add the script files and CSS files in the **&lt;title&gt;** tag of the **defa
 
 
 
-**Add Control in HTML Page**
+###Add Control in HTML Page
 
 Add the following code example in the **&lt;body&gt;** tag in the **Default.html** page. Set the desired **ReportPath** and **ReportServiceUrl** to **ReportViewer**.
 
@@ -158,13 +158,13 @@ $("#viewer").ejReportViewer(
 
 
 
-**Add WebAPI controller for ReportViewer**
+###Add WebAPI controller for ReportViewer
 
 The **JavaScript ReportViewer** uses **WebApi** services to process the report file and process the request from control.
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img6.png" Caption="Adding WebApi Controller"%}
 
-**Inherit IReportController**
+####Inherit IReportController
 
 The **ApiController** inherits the **IReportController** and you can add the following code example to its methods definition in order to process the report file. The interface **IReportController** contains the required actions and helper methods declaration to process the report. The **ReportHelper** class contains helper methods that helps to process Post/Get request from control and return the response to control.
 
@@ -199,13 +199,13 @@ namespace ReportViewerDemo.Api
 
         //Method will be called when initialize the report options before start processing the report        public void OnInitReportOptions(ReportViewerOptions reportOption)
         {
-//You can update report options here
+           //You can update report options here
         }
 
         //Method will be called when reported is loaded
         public void OnReportLoaded(ReportViewerOptions reportOption)
         {
-//You can update report options here
+           //You can update report options here
         }   
     }
 }
@@ -215,7 +215,7 @@ namespace ReportViewerDemo.Api
 
 
 
-**WebAPI Routing**
+###WebAPI Routing
 
 1\. Right-Click the **Project**, select **Add >** and select **Global.asax** file from the listed templates.
 
@@ -253,13 +253,13 @@ namespace ReportViewerDemo
 
 
 
-**Run the Application**
+###Run the Application
 
 Run the sample application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img8.png" Caption="ReportViewer with Sales Dashboard Report"%}
 
-**Load SSRS Server Reports**
+###Load SSRS Server Reports
 
 **ReportViewer** supports to load RDL/RDLC files from SSRS Server. The following steps help you to load reports from SSRS Server.
 
@@ -295,7 +295,7 @@ $("#viewer").ejReportViewer(
 
         public void OnInitReportOptions(ReportViewerOptions reportOption)
         {
-//Add SSRS Server and database credentials here
+            //Add SSRS Server and database credentials here
             reportOption.ReportModel.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
             reportOption.ReportModel.DataSourceCredentials.Add(new DataSourceCredentials("AdventureWorks", "ssrs1", "RDLReport1"));
         }
@@ -309,7 +309,7 @@ $("#viewer").ejReportViewer(
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img9.png" Caption="Report from SSRS"%}
 
-**Load RDLC Reports**
+###Load RDLC Reports
 
 The **ReportViewer** has data binding support to visualize the **RDLC** reports. The following code example helps you to bind data to **ReportViewer**.
 

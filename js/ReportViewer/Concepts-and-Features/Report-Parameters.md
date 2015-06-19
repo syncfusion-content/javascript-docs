@@ -36,7 +36,7 @@ The following code example illustrates how to add **ReportParameter** in **Web A
 
 
 
-public class ReportsController : ApiController, IReportController
+    public class ReportsController : ApiController, IReportController
     {
         /// <summary>
         /// Report Initialization method that is triggered when report begins to be processed.
