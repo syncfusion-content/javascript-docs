@@ -284,7 +284,7 @@ ejOlapGauge</td><td>
 rowsCount<br/>columnsCount<br/>showHeaderLabel<br/>locale<br/>radius<br/>frameType </td></tr>
 <tr>
 <td>
-ejOlapGrid</td><td>
+ejPivotGrid</td><td>
 Layout<br/>enableCellContext<br/>hyperlinkSettings.enableValueCellHyperlink<br/>hyperlinkSettings.enableRowHeaderHyperlink<br/>hyperlinkSettings.enableColumnHeaderHyperlink<br/>hyperlinkSettings.enableSummaryCellHyperlink </td></tr>
 <tr>
 <td>
