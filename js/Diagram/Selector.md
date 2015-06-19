@@ -9,11 +9,7 @@ documentation: ug
 
 # Selector
 
-Selector behaves like a container for the selected elements and enables you to update the size, position and rotation angle of the selected elements.
-
-The properties of Selector are listed as follows.
-
-_Selector Properties_
+Selector behaves like a container for the selected elements and enables you to update the size, position and rotation angle of the selected elements. The properties of Selector are listed as follows.
 
 <table>
 <tr>
@@ -63,11 +59,13 @@ collection</td><td>
 Gets or sets the value that is used to draw the custom handles on the selected elements.</td></tr>
 </table>
 
-**Move, Resize or Rotate selected items**
+_Selector Properties_
+
+### Move, Resize or Rotate selected items
 
 The following code example is used to update the size and position of the selected elements.
 
-{% highlight js %}s
+{% highlight js %}
 
 var diagram = $("#diagram").ejDiagram("instance");
 
@@ -76,7 +74,7 @@ diagram.updateSelector({ offsetX: 100, offsetY: 100, width: 100, height: 100 });
 
 {% endhighlight %}
 
-**Iterate though selected items**
+### Iterate though selected items
 
 The following code example is used to get the selected elements.
 
@@ -91,7 +89,7 @@ for(var i=0; i< diagram.model.selectedItems.children.length; i++)
 
 {% endhighlight %}
 
-**User Handles**
+### User Handles
 
 The following code example is used to draw custom handles on the selected elements.
 

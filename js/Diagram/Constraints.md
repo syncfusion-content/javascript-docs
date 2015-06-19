@@ -11,9 +11,8 @@ documentation: ug
 
 Diagram provides support to enable or disable certain diagram behaviors.
 
-_Constraints_
-
 <table>
+<caption text-align ="left">_Constraints_</caption>
 <tr>
 <td>
 <b>Constraints</b></td><td>
@@ -60,9 +59,10 @@ Default value for the diagram constraints property is ej.datavisualization.Diagr
 
 {% highlight js %}
 
+var diagramConstraints = ej.datavisualization.Diagram.DiagramConstraints; 
 //Disable PageEditing 
 $("#diagram").ejDiagram({
-  constraints: ej.datavisualization.Diagram.DiagramConstraints.Default &~ ej.datavisualization.Diagram.DiagramConstraints.PageEditable 
+    constraints: diagramConstraints.Default &~ diagramConstraints.PageEditable 
 });
 
 {% endhighlight %}

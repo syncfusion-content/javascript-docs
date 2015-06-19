@@ -17,8 +17,6 @@ documentation: ug
 
 The Diagram model’s **snapSettings.SnapContraints** property is used to control snap to grid behavior and visibility of gridlines. 
 
-_SnapConstraints_
-
 <table>
 <tr>
 <td>
@@ -58,27 +56,23 @@ None</td><td>
 Disable all the constraints</td></tr>
 </table>
 
+_SnapConstraints_
+
 The following code illustrates how to show or hide gridlines using constraints
 
 {% highlight js %}
 
 //show horizontal gridlines
-var snapSettings = {
- "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
-};
+var snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines };
 
 //show vertical gridlines
- snapSettings = {
-"snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines }
-};
+snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines };
 
 //show both horizontal and vertical gridlines
- snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowLines }
-};
+snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowLines };
 
 //hide both horizontal and vertical gridlines
- snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.None }
-};
+snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.None };
 
 $("#Diagram").ejDiagram({ snapSettings: snapSettings });
 
@@ -87,8 +81,6 @@ $("#Diagram").ejDiagram({ snapSettings: snapSettings });
 ## Appearance
 
 You can customize the **Appearance** of the gridlines using following properties.
-
-_Appearance_
 
 <table>
 <tr>
@@ -118,12 +110,14 @@ string</td><td>
 Gets or sets the line color of the gridlines</td></tr>
 </table>
 
+_Appearance_
+
 The following code illustrates how to customize the **Gridline appearance**.
 
 {% highlight js %}
 
 //set various appearance properties to gridlines
-var snapSettings = { horizontalGridlines: { linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15], lineColor: "blue", lineDashArray: "2  2" }};    
+var snapSettings = { horizontalGridlines: { linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15], lineColor: "blue", lineDashArray: "2  2" } };    
 $("#Diagram").ejDiagram({ snapSettings: snapSettings });
 
 {% endhighlight %}

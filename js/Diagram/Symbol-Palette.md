@@ -15,9 +15,7 @@ The **SymbolPalette** displays a collection of palettes. The **Palette** shows n
 
 ## Create and Add Symbols in the Palette
 
-Node and Connector are added to the Palette as Palette Items.
-
-The following code example illustrates how to create and add symbols in Palette.
+Node and Connector are added to the Palette as Palette Items. The following code example illustrates how to create and add symbols in Palette.
 
 {% highlight js %}
 
@@ -28,18 +26,18 @@ var connectors = { "name": "Connectors" };
 
 //add node/connector to palette
 basiShapes.Add(createNode(name, offsetX, offsety, height, width));
-connectors.Add(createConnector(name,segments,decorator));
+connectors.Add(createConnector(name, segments, decorator));
 
 //add palette to palette array
 paletteCollection.Add(basiShapes);
 paletteCollection.Add(connectors);
 
 //create node
-function createNode(name,offsetX,offsety,height,width) {
+function createNode(name, offsetX, offsety, height, width) {
 //note: for creating node refer the link Node creation
 }
 //create connector
-function createConnector(name,segments,decorator) {
+function createConnector(name, segments, decorator) {
 //note: for creating connector refer the link Connector creation    
 }
 
@@ -56,8 +54,6 @@ The **Diagram** provides support for adding nodes and connectors through the **S
 ## Appearance
 
 The following properties are used to customize the appearance of **Symbol Palette**.
-
-_Appearance_
 
 <table>
 <tr>
@@ -117,6 +113,8 @@ string</td><td>
 Gets or sets the name of the selected item in the palette</td></tr>
 </table>
 
+_Appearance_
+
 The following code illustrates how to customize the **Appearance** of the **Palette.**
 
 {% highlight js %}
@@ -145,8 +143,6 @@ Diagram provides preview support for **Palette item** during drag and drop. When
 
 You can customize the preview size and position using the following properties.
 
-_Preview Appearance_
-
 <table>
 <tr>
 <td>
@@ -170,6 +166,8 @@ object</td><td>
 Gets or sets the preview x and y value of palette item.</td></tr>
 </table>
 
+_Preview Appearance_
+
 The following code example illustrates how to customize **Preview Content**.
 
 {% highlight js %}
@@ -180,24 +178,3 @@ The following code example illustrates how to customize **Preview Content**.
   previewOffset: { x: 102, y: 102 }
 
 {% endhighlight %}
-
-## Events
-
-_Events_
-
-<table>
-<tr>
-<td>
-<b>Events</b></td><td>
-<b>Arguments</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-drop</td><td>
-{ cancel, element, model, type}<br/>
-cancel: boolean<br/>
-element: object(node/connector)<br/>
-model: object (diagram model’s)<br/>
-type: string (event name “drop”)</td><td>
-This event is raised when you drag and drop a node or a connector from the palette.</td></tr>
-</table>

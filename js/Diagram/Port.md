@@ -18,7 +18,11 @@ The following code illustrates how to create a port and add it to nodes port arr
 {% highlight js %}
 
 //create a port and it to node’s ports array. 
-var node = { ports: [ { name: "port1", offset: { x: 0, y: 0.5 }, fillColor:       "yellow", visibility: ej.datavisualization.Diagram.PortVisibility.Visible }] };
+var node = {
+    ports: [{
+        name: "port1", offset: { x: 0, y: 0.5 }, fillColor: "yellow",
+        visibility: ej.datavisualization.Diagram.PortVisibility.Visible }]
+};
 
 {% endhighlight %}
 
@@ -26,9 +30,7 @@ var node = { ports: [ { name: "port1", offset: { x: 0, y: 0.5 }, fillColor:     
 
 ## Connecting Ports
 
-The connection between specific ports on the node is established by assigning the name of the node’s port to connector’s target port/source port.
-
-The following code illustrates how to establish a port connection:
+The connection between specific ports on the node is established by assigning the name of the node’s port to connector’s target port/source port. The following code illustrates how to establish a port connection:
 
 {% highlight js %}
 
@@ -48,8 +50,6 @@ var connector = [{ name: "connector", sourceNode: "node1", targetNode: "node2", 
 ## Appearance
 
 You can customize the Port appearance by setting desired values to the appropriate **appearance** property.
-
-_Properties_
 
 <table>
 <tr>
@@ -94,20 +94,20 @@ string</td><td>
 Gets or sets the path data of the port</td></tr>
 </table>
 
+_Properties_
+
 The following code illustrates how to customize the port.
 
 {% highlight js %}
 
 //set various appearance properties to port
-var port = { visibility: true, fillColor: "yellow", shape:{type: "circle"}, size : 12, borderColor: "black", borderWidth:2 };
+var port = { visibility: true, fillColor: "yellow", shape:{type: "circle"}, size: 12, borderColor: "black", borderWidth:2 };
 
 {% endhighlight %}
 
 ## Constraints
 
 You can enable or disable certain behaviors of Port using Port’s **constraints** property. 
-
-_Constraints_
 
 <table>
 <tr>
@@ -124,6 +124,8 @@ Connect</td><td>
 Enables connections with connector</td></tr>
 </table>
 
+_Constraints_
+
 The following code illustrates how to set port constraints.
 
 {% highlight js %}
@@ -133,4 +135,4 @@ var port = { constraints: ej.datavisualization.Diagram.PortConstraints.Connect }
 
 {% endhighlight %}
 
-> _**Note: Port’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see**_ [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm)_**.**_
+> _**Note:**_ Port’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](http://help.syncfusion.com/ug/js/documents/bitwiseoperations.htm).

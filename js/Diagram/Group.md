@@ -13,7 +13,7 @@ documentation: ug
 
 ## Create Group
 
-You can create **Group** like node and add it to the Diagram model using diagram model’s **nodes** property. You can set **isGroup** property as **true** to differentiate the group from node.You can set the array of children (nodes/connectors) names to **children** property. The group’s children nodes/connectors are added to the node array before adding the group to nodes array. 
+You can create **Group** like node and add it to the Diagram model using diagram model’s **nodes** property. You can set **isGroup** property as **true** to differentiate the group from node. You can set the array of children (nodes/connectors) names to **children** property. The group’s children nodes/connectors are added to the node array before adding the group to nodes array. 
 
 The following code illustrates how a group node is created and added in the nodes array.
 
@@ -24,7 +24,7 @@ var nodes = [
 //Group node.
     { name: "group", type: "group",
       children: [
-            { name: "node1", parent: "group"} ,
+            { name: "node1", parent: "group"},
             { name: "node2", parent: "group"}
          ] 
     }
@@ -54,11 +54,7 @@ The following steps illustrate how to select an object that has two groups.
 
 ## Editing a Group
 
-To edit a group, select the corresponding group. You can apply the following features on Group for editing.
-
-For example, resizing a group, automatically resizes its child objects to fit the selection area.
-
-_Editing a Group_
+To edit a group, select the corresponding group. You can apply the following features on Group for editing. For example, resizing a group, automatically resizes its child objects to fit the selection area.
 
 <table>
 <tr>
@@ -78,19 +74,16 @@ Rotate</td><td>
 <img src="/js/Diagram/Concepts-and-Features/Group_images/Group_img8.png" alt="" width="190pt" height="188pt"/></td></tr>
 </table>
 
+_Editing a Group_
+
 ## Layout Panel
 
-The **Container** property of **Group** can be set to any of the available **‘layout panel’**. It is used to control the size and position of Group’s children.
-
-There are two types of layout panels.
+The **Container** property of **Group** can be set to any of the available **‘layout panel’**. It is used to control the size and position of Group’s children. There are two types of layout panels.
 
 * Canvas panel 
-
 * Stack panel
 
 The following properties are used to align the child element on the Group, this property is applicable for all panel.
-
-_Group properties_
 
 <table>
 <tr>
@@ -150,6 +143,8 @@ number</td><td>
 Gets or sets the right padding value of the group.</td></tr>
 </table>
 
+_Group properties_
+
 ### Canvas Panel
 
 The Canvas panel supports absolute positioning and provides the least layout functionality to its contained diagram elements. Canvas allows you to position contained elements at an offset and also elements can be arranged with either horizontally or vertically.
@@ -185,24 +180,22 @@ $("#diagram").ejDiagram({
 
 ### Stack panel
 
-Stack panel is used to arrange its “children” in a single line or stack order, either vertically or horizontally. It controls spacing by setting **margin** properties of **child** and **padding** properties of **group**. By default, a **Stack Panel’s** orientation is **vertical**.
-
-The following code illustrates how to add stack panel.
+Stack panel is used to arrange its “children” in a single line or stack order, either vertically or horizontally. It controls spacing by setting **margin** properties of **child** and **padding** properties of **group**. By default, a **Stack Panel’s** orientation is **vertical**. The following code illustrates how to add stack panel.
 
 {% highlight js %}
 
-var nodes = [
-   { type: "group", name: "Stack", offsetX: 200, offsetY: 400,
-       children: [
-           { type: "node", name: "cnode1", fillColor: "darkCyan", horizontalAlign: "left" },
-           { type: "node", name: "cnode2", fillColor: "darkCyan", horizontalAlign: "right" },
-           { type: "node", name: "cnode3", fillColor: "darkCyan", horizontalAlign: "stretch" },
-       ],
-       // Stack panel.
-       container: { type: "stack" },
-       fillColor: "#E7EBF4", borderColor: "black",
-       minHeight: 300, minWidth: 300
-   }];
+var nodes = [{
+    type: "group", name: "Stack", offsetX: 200, offsetY: 400,
+    children: [
+       { type: "node", name: "cnode1", fillColor: "darkCyan", horizontalAlign: "left" },
+       { type: "node", name: "cnode2", fillColor: "darkCyan", horizontalAlign: "right" },
+       { type: "node", name: "cnode3", fillColor: "darkCyan", horizontalAlign: "stretch" },
+    ],
+    // Stack panel.
+    container: { type: "stack" },
+    fillColor: "#E7EBF4", borderColor: "black",
+    minHeight: 300, minWidth: 300
+}];
 $("#diagram").ejDiagram({
     nodes: nodes,
     defaultSettings: {

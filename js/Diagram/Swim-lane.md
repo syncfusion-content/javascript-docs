@@ -15,8 +15,6 @@ A swim lane is a visual element used in process flow diagrams or flowcharts. A t
 
 **Swim lane** shape contains the following properties.
 
-_Swim lane Properties_
-
 <table>
 <tr>
 <td>
@@ -75,11 +73,11 @@ array</td><td>
 Gets or sets the phases as collection.</td></tr>
 </table>
 
+_Swim lane Properties_
+
 ## Lane
 
 The lane is an object that controls the diagram elements in the swim lane. Lane has the following properties.
-
-_Lane Properties_
 
 <table>
 <tr>
@@ -109,11 +107,11 @@ string</td><td>
 Gets or sets the orientation of the swim lane.</td></tr>
 </table>
 
+_Lane Properties_
+
 ## Header
 
 This is used to define header for a swim lane. It has the following properties.
-
-_Header Properties_
 
 <table>
 <tr>
@@ -133,11 +131,11 @@ string</td><td>
 Gets or sets the text value for the header.</td></tr>
 </table>
 
+_Header Properties_
+
 ## Phase
 
 A Phase is a line that separates the swim lane. Phase has following properties.
-
-_Phase Properties_
 
 <table>
 <tr>
@@ -176,6 +174,8 @@ parent</td><td>
 string</td><td>
 Gets or sets the parent of the phase</td></tr>
 </table>
+
+_Phase Properties_
 
 The following code illustrates how to create a simple **swim lane**.
 
@@ -227,7 +227,8 @@ var node =
              	marginLeft: 250,
              	marginTop: 10,
             }]
-        }]
+        }],
+        phases: [], phaseSize: 20,
 }
 
 nodes.push(node);   

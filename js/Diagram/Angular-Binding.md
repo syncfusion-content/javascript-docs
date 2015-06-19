@@ -16,9 +16,9 @@ Apply the plugin and property assigning the **Diagram** element through the dire
 {% highlight html %}
 
 //References to be added for angular support.
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/web/ej.unobtrusive-latest.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/web/ej.unobtrusive-latest.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"></script>
 
 //Initializes diagram.
 <div id="diagramCore" 
@@ -29,14 +29,14 @@ Apply the plugin and property assigning the **Diagram** element through the dire
        e-pagesettings-pagewidth="pageSettings.pageWidth">
 </div>
 <div>
-//Renders a dropdown box to display a list of colors
- <input ej-dropdownlist e-datasource="pageColor"   
-  value="pageSettings.pageBackgroundColor" 
-  e-width="100px" />
+    //Renders a dropdown box to display a list of colors
+    <input ej-dropdownlist e-datasource="pageColor" value="pageSettings.pageBackgroundColor" e-width="100px" />
 </div>
+
 {% endhighlight %}
 
 {% highlight js %}
+
 angular.module('syncApp', ['ejangular'])
     .controller('diagram', 
         function ($scope) {
