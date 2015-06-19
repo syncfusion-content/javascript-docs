@@ -236,6 +236,7 @@ The following output is displayed as a result of the above code example.
        <style type="text/css">
           .e-ribbon .e-ribbonpaste:before {
           content: "\e645";
+          font-family:"ej-webfont";
           font-size: 36px;
           position: relative;
           left: -9px;
@@ -245,21 +246,6 @@ The following output is displayed as a result of the above code example.
     </body>
     <!-- ... -->
         
-{% endhighlight %}
-
-{% highlight css %}
-
-    <style type="text/css">
-       .e-ribbon .e-ribbonpaste:before {
-       content: "\e645";
-       font-family:"ej-webfont";
-       font-size: 36px;
-       position: relative;
-       left: -9px;
-       top: -4px;
-       }
-    </style>
-
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.

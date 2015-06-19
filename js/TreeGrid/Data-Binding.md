@@ -73,8 +73,6 @@ The following code example shows you how to bind the **Hierarchical** local data
 
 {% endhighlight %}
 
-
-
 The output of the above steps is as follows:
 
 {% include image.html url="/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png" Caption="Hierarchy Datasource Binding"%}
@@ -86,8 +84,6 @@ The output of the above steps is as follows:
 * **ID Field**- This field contains unique values used to identify nodes. Its name is assigned to the **idMapping** property.
 
 * **Parent ID Field**- This field contains values that indicate parent nodes. Its name is assigned to the **parentIdMapping** property.
-
-
 
 {% highlight js %}
 
@@ -134,8 +130,6 @@ The output of the above steps is as follows:
 
 
 {% endhighlight %}
-
-
 
 The following screenshot shows the output of the above steps,
 

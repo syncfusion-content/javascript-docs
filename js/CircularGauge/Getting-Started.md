@@ -15,7 +15,7 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img1.png" Caption="Speedometer Gauge"%}
 
-* First create an **HTML** file and add references to the required libraries.
+First create an **HTML** file and add references to the required libraries.
 
 {% highlight html %}
 
@@ -36,8 +36,7 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 {% endhighlight %}
 
 
-
-* Add a div element that acts as a container for **ejCircularGauge** widget.
+Add a div element that acts as a container for **ejCircularGauge** widget.
 
 {% highlight html %}
 
@@ -52,7 +51,7 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 
 
 
-* Create the **ejCircularGauge** widget as follows,
+Create the **ejCircularGauge** widget as follows,
 
 {% highlight js %}
 
