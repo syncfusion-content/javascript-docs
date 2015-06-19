@@ -21,14 +21,14 @@ The below specified root location is the place from where all the Syncfusion ass
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\
 </td>
 </tr>
 <tr>
 <td>
 <b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\
 </td>
 </tr>
 </table>
@@ -46,14 +46,14 @@ The location mentioned below is the root **JavaScript** folder which contains tw
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\ JavaScript\
 </td>
 </tr>
 <tr>
 <td>
 <b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\
 </td>
 </tr>
 </table>
@@ -73,19 +73,19 @@ The **assets** folder comprises of all the minified versions of the external and
 
 
 
-* The stylesheets required for supporting the theming and styling of the Syncfusion components (both mobile and web) are available in a minified format within the **css** folder. The **css** folder is again sub-categorized into mobile and web where all the mobile related css files are present within the **mobile** folder and all those related to web components are availed within the **web** folder. 
+The Stylesheets required for supporting the theming and styling of the Syncfusion components (both mobile and web) are available in a minified format within the **css** folder. The **css** folder is again sub-categorized into mobile and web where all the mobile related css files are present within the **mobile** folder and all those related to web components are availed within the **web** folder. 
 
 
 
-* The **external** folder contains the external dependency files such as jquery, jquery.easing, jsrender, Culture files and other third-party script files.
+The **external** folder contains the external dependency files such as jquery, jquery.easing, jsrender, Culture files and other third-party script files.
 
 
 
-* The **scripts** folder includes all the Syncfusion components UI scripts in the minified format for both web and mobile components. 
+The **scripts** folder includes all the Syncfusion components UI scripts in the minified format for both web and mobile components. 
 
 
 
-* The **TypeScript** folder includes the default type-definition file (**ej.widgets.all.d.ts**) for the purpose of supporting classes, modules, strong-type checking during compile time itself and also provides IntelliSense support within the JavaScript environment.
+The **TypeScript** folder includes the default type-definition file (**ej.widgets.all.d.ts**) for the purpose of supporting classes, modules, strong-type checking during compile time itself and also provides IntelliSense support within the JavaScript environment.
 
 ###### Src
 
@@ -102,14 +102,14 @@ The location under where these non-minified files are available are as follows,
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\ JavaScript\Src\assets-src
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\ JavaScript\Src\assets-src
 </td>
 </tr>
 <tr>
 <td>
 <b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\Src\assets-src
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\Src\assets-src
 </td>
 </tr>
 </table>
@@ -127,37 +127,37 @@ For **MAC OS** and **Linux** users, we are providing a zip folder instead of .ex
 It also includes other folders namely Release Notes, License Agreement and Read Me. The control creation will be same as described in the Getting Started section (Here, the scripts and StyleSheets are needed to be referred from the **Assets** folder into their respective HTML pages).
 
 
-> _**Note: The MAC and Linux users cannot be able to make use of the Reporting and Business Intelligence controls, as it needs assembly reference to be included in the application. Due to the installation of .exe is not supported in those two OS (the assembly libraries required for the Reporting & BI controls are not available in the system), we provide only the zip folder containing the JavaScript related Scripts, Stylesheets and Samples.**_ 
-> _**Also, the exporting functionality available in some of the JavaScript widgets will not work here, due to the assembly dependency.**_ 
+>  Note: The MAC and Linux users cannot be able to make use of the Reporting and Business Intelligence controls, as it needs assembly reference to be included in the application. Due to the installation of .exe is not supported in those two OS (the assembly libraries required for the Reporting & BI controls are not available in the system), we provide only the zip folder containing the JavaScript related Scripts, Stylesheets and Samples. 
+>  Also, the exporting functionality available in some of the JavaScript widgets will not work here, due to the assembly dependency.
 
 
 ### Configuring Syncfusion Nuget Packages
 
 The steps to download and configure the Syncfusion Nuget Packages in Visual Studio are as follows,
 
-* Download the Syncfusion Nuget Packages for **JavaScript** from [here](http://nuget.syncfusion.com/login) and save it in your system. The downloaded file is a zip formatted file, therefore unzip the folder and copy the **SyncfusionJavaScript.13.1.0.21.nupkg** package in it. Create a new folder namely **Nuget Packages** in any of the particular location in your system and place the copied file into it.
+Download the Syncfusion Nuget Packages for **JavaScript** from [here](http://nuget.syncfusion.com/login) and save it in your system. The downloaded file is a zip formatted file, therefore unzip the folder and copy the **SyncfusionJavaScript.13.1.0.21.nupkg** package in it. Create a new folder namely **Nuget Packages** in any of the particular location in your system and place the copied file into it.
 
 
 
-* In Visual Studio, navigate to **Tools** -> **Library Package Manager** -> **Package Manager Settings**, the **Options** pop-up will appear on the screen as below,
+In Visual Studio, navigate to **Tools** -> **Library Package Manager** -> **Package Manager Settings**, the **Options** pop-up will appear on the screen as below,
 
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img1.png" Caption="Package Manager Settings pop-up"%}
 
 
-* Select **Package Manager** -> **Package Sources** in the above pop-up and click on the 
+Select **Package Manager** -> **Package Sources** in the above pop-up and click on the 
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img2.png" %} button to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
 
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img3.png" Caption="Package Manager Settings pop-up with selected Nuget Package"%}
 
 
 
-> _**Note: The Source textbox in the above image denotes the location of the nuget packages in your machine and the Name section, allows you to provide a unique name which we will refer in the package installation section later.**_ 
+>  Note: The Source textbox in the above image denotes the location of the nuget packages in your machine and the Name section, allows you to provide a unique name which we will refer in the package installation section later.
 
 
 
 
 
-* Now click the **Add** button and the package name will be listed in the **Available package sources** list as shown below and then Click **OK**.
+Now click the **Add** button and the package name will be listed in the **Available package sources** list as shown below and then Click **OK**.
 
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img4.png" Caption="Package Manager Settings pop-up with new Nuget Package added"%}
 
