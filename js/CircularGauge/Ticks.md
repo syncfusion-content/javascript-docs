@@ -25,7 +25,6 @@ Tick collection is directly added to the scale object. Refer the following code 
 
 
     $(function () {
-
         //For circular gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -59,8 +58,8 @@ Major type ticks are for major interval values and minor type ticks are for mino
 
 {% highlight js %}
 
- $(function () {
-
+ 
+    $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1"). ejCircularGauge ({
             scales: [{
@@ -70,16 +69,15 @@ Major type ticks are for major interval values and minor type ticks are for mino
                 // For setting tick2
                 {
                     // For setting tick type
-                type:"minor",
+                    type:"minor",
                     // For setting tick color
-                color:"yellow",
+                    color:"yellow",
                     // For setting tick height
-                height:8,
+                    height:8,
                     // For setting tick placement
-                placement: "near",
+                    placement: "near",
                     // For setting tick distance from scale
-                distanceFromScale:5}]
-
+                    distanceFromScale:5}]
             }]
         });
     });

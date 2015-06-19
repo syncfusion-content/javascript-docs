@@ -25,11 +25,8 @@ documentation: ug
 
  $(function () {
         var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
         // the below function selects the images to be displayed on the appointments based on the day of the appointment’s startTime.
-
         // Note: The below used images should be present in a separate images folder, so that it will be referred properly.
-
         function _getImages(date) {
             switch (new Date(date).getDay()) {
                 case 0:
@@ -56,12 +53,10 @@ documentation: ug
             }
         }
         $.views.helpers({ format: _getImages });
-
-
         $("#Schedule1").ejSchedule({
             // specify the template id
             appointmentTemplateId: "#apptemplate",
-            currentDate: new Date (2014,4,5),
+            currentDate: new Date(2014, 4, 5),
             width: "100%",
             height: "550px",
             appointmentSettings: {
@@ -82,7 +77,6 @@ documentation: ug
 {% endhighlight %}
 
 {% highlight html %}
-
 
 // appointment template definition
 <script id="apptemplate" type="text/x-jsrender">
@@ -158,7 +152,6 @@ The output for the above code is as follows that displays the appointment with t
         });
     });
     // The appointment data along with resource data to be passed to the dataSource are as follows,
-
     window.ResourcesData = [{
         Id: 100,
         Subject: "Bering Sea Gold",

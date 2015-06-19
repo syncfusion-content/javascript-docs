@@ -27,12 +27,10 @@ This example explains you on how to add the customized appointment window using 
     <title>Schedule JS Default Functionalities</title>
     //Refer the required script files here
 </head>
-
 <body>
     <!-- Schedule div-->
     <div id="Div1">
     </div>
-
     <!-- div For Customized appointment window dialog-->
     <div id="**customWindow**" style="display: none">
         <form id="custom">
@@ -129,8 +127,7 @@ background-color: #FF8A8A;
 
 {% highlight js %}
 
- $(function () {
-
+  $(function () {
         // For schedule control
         var dManager = window.Startend;
         $("#Schedule1").ejSchedule({
@@ -146,13 +143,11 @@ background-color: #FF8A8A;
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             },
-           appointmentWindowOpen: "onAppointmentWindowOpen"
+            appointmentWindowOpen: "onAppointmentWindowOpen"
         });
-
         // For sub-controls used within the custom appointment window
         $("#StartTime").ejDateTimePicker({ width: "150px" });
         $("#EndTime").ejDateTimePicker({ width: "150px" });
-
         // For dialog control which is to be used as customized appointment window
         $("#customWindow").ejDialog({
             width: 600,
@@ -165,27 +160,22 @@ background-color: #FF8A8A;
             allowKeyboardNavigation: false,
             close: "clearFields"
         });
-
     });
-
     // this method called before the default appointment window gets opened.
     function onAppointmentWindowOpen(args) {
-
         // setting true for args.cancel will prevent the opening of default appointment window
         args.cancel = true;
-
         var quickobj = $("#Schedule1AppointmentQuickWindow").data("ejDialog");
         quickobj.close();
         $("#StartTime").ejDateTimePicker({ value: args.startTime });
         $("#EndTime").ejDateTimePicker({ value: args.endTime });
-        if(!ej.isNullOrUndefined(args.target)){
+        if (!ej.isNullOrUndefined(args.target)) {
             if ($(args.target.currentTarget).hasClass("e-alldaycells"))
                 $("#allday").prop("checked", true);
         }
         // To open the custom appointment window
         $("#customWindow").ejDialog("open");
     }
-
     // Function called while clicking the submit button on the appointment window
     function save() {
         if ($("#subject").val().trim() == "") {
@@ -236,7 +226,6 @@ background-color: #FF8A8A;
         object.saveAppointment(obj);
         clearFields();
     }
-
     function clearFields() {
         $("#customId").val("");
         $("#subject").val("");
@@ -246,27 +235,23 @@ background-color: #FF8A8A;
         document.getElementById("rType").selectedIndex = "0";
         $("tr.recurrence").css("display", "none");
     }
-
     function recurCheck() {
         if ($("#recurrence").get(0).checked == true)
             $("tr.recurrence").css("display", "table-row");
         else
             $("tr.recurrence").css("display", "none");
     }
-
     function alldayCheck() {
         $("#StartTime,#EndTime").ejDateTimePicker({ enabled: ($("#allday").prop("checked")) ? false : true });
     }
-
     function temp() {
         $("#subject").removeClass("error");
     }
-
     function cancel() {
         clearFields();
         $("#customWindow").ejDialog("close");
     }
-
+    
 {% endhighlight %}
 
 Execute the above code and then double-click on the required **Schedule** cells. The customized appointment window is opened instead of the default appointment window as follows.
@@ -292,14 +277,11 @@ The following code example is added to the previous code example of appointment 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Schedule JS Default Functionalities</title>
-
 </head>
-
 <body>
     <!-- Schedule div-->
     <div id="Div1">
     </div>
-
     <!-- div For Customized appointment window dialog-->
     <div id="**customWindow**" style="display: none">
         <form id="custom">
@@ -394,8 +376,7 @@ background-color: #FF8A8A;
 
 {% highlight js %}
 
-$(function () {
-
+ $(function () {
         // For schedule control
         var dManager = window.Startend;
         $("#Schedule1").ejSchedule({
@@ -412,13 +393,11 @@ $(function () {
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             },
-        **appointmentWindowOpen: "onAppointmentWindowOpen"**
-        });
-
+            appointmentWindowOpen: "onAppointmentWindowOpen"*
+            });
         // For sub-controls used within the custom appointment window
         $("#StartTime").ejDateTimePicker({ width: "150px" });
         $("#EndTime").ejDateTimePicker({ width: "150px" });
-
         // For dialog control which is to be used as customized appointment window
         $("#customWindow").ejDialog({
             width: 600,
@@ -433,13 +412,10 @@ $(function () {
         });
 
     });
-
     // this method called before the default appointment window gets opened.
     function onAppointmentWindowOpen(args) {
-
         // setting true for args.cancel will prevent the opening of default appointment window
         args.cancel = true;
-
         var quickobj = $("#Schedule1AppointmentQuickWindow").data("ejDialog");
         quickobj.close();
         $("#StartTime").ejDateTimePicker({ value: args.startTime });
@@ -448,26 +424,24 @@ $(function () {
             if ($(args.target.currentTarget).hasClass("e-alldaycells"))
                 $("#allday").prop("checked", true);
         }
-
         if (!ej.isNullOrUndefined(args.appointment)) {
             // Opens the custom appointment window with filled-in details, when double-clicked on the appointments
-              $("#customId").val(args.appointment.Id);
-              $("#subject").val(args.appointment.Subject);
-              $("#customdescription").val(args.appointment.Description);
-              $("#StartTime").ejDateTimePicker({ value: new Date(args.appointment.StartTime) });
-              $("#EndTime").ejDateTimePicker({ value: new Date(args.appointment.EndTime) });
-              $("#allday").prop("checked", args.appointment.AllDay);
-              $("#recurrence").prop("checked", args.appointment.Recurrence);
-              if(args.appointment.Recurrence){
-              $("#rType").val(args.appointment.RecurrenceRule.split(";")[0].split("=")[1].toLowerCase());
-              $("tr.recurrence").css("display", "table-row");
-              }
-              $("#customWindow").ejDialog("open");
+            $("#customId").val(args.appointment.Id);
+            $("#subject").val(args.appointment.Subject);
+            $("#customdescription").val(args.appointment.Description);
+            $("#StartTime").ejDateTimePicker({ value: new Date(args.appointment.StartTime) });
+            $("#EndTime").ejDateTimePicker({ value: new Date(args.appointment.EndTime) });
+            $("#allday").prop("checked", args.appointment.AllDay);
+            $("#recurrence").prop("checked", args.appointment.Recurrence);
+            if(args.appointment.Recurrence){
+                $("#rType").val(args.appointment.RecurrenceRule.split(";")[0].split("=")[1].toLowerCase());
+                $("tr.recurrence").css("display", "table-row");
             }
+            $("#customWindow").ejDialog("open");
+        }
         else // Opens the custom appointment window when double clicked on the schedule cells.
             $("#customWindow").ejDialog("open");
     }
-
     // Function called while clicking the submit button on the appointment window
     function save() {
         if ($("#subject").val().trim() == "") {
@@ -518,7 +492,6 @@ $(function () {
         object.saveAppointment(obj);
         clearFields();
     }
-
     function clearFields() {
         $("#customId").val("");
         $("#subject").val("");
@@ -528,22 +501,18 @@ $(function () {
         document.getElementById("rType").selectedIndex = "0";
         $("tr.recurrence").css("display", "none");
     }
-
     function recurCheck() {
         if ($("#recurrence").get(0).checked == true)
             $("tr.recurrence").css("display", "table-row");
         else
             $("tr.recurrence").css("display", "none");
     }
-
     function alldayCheck() {
         $("#StartTime,#EndTime").ejDateTimePicker({ enabled: ($("#allday").prop("checked")) ? false : true });
     }
-
     function temp() {
         $("#subject").removeClass("error");
     }
-
     function cancel() {
         clearFields();
         $("#customWindow").ejDialog("close");
@@ -591,10 +560,11 @@ You can customize the appearance of the **Schedule** control by setting the spec
             width: "100%",
             height: "525px",
             // setting the schedule start and end hour
-          startHour: 8,
-          endHour: 18
+            startHour: 8,
+            endHour: 18
         });
     });
+
 
 
 {% endhighlight %}
@@ -632,9 +602,7 @@ Execute the above code to render the output as follows with the **Schedule** con
 {% highlight js %}
 
 $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -648,10 +616,10 @@ $(function () {
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             },
-          highlightBusinessHours: true,
+            highlightBusinessHours: true,
             // setting the business start and end hour to be highlighted in the schedule.
-          BusinessStartHour: 10,
-          BusinessEndHour: 3
+            BusinessStartHour: 10,
+            BusinessEndHour: 3
         });
     });
 
@@ -682,14 +650,13 @@ The following code example explains how to change the current date of the **Sche
 
 
 {% highlight js %}
- $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
 
+ $(function () {
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
-            currentDate: new Date(2014,04,05),
+            currentDate: new Date(2014, 04, 05),
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
@@ -730,15 +697,14 @@ The following code example explains how to change the **dateFormat** of the **Sc
 
 
 {% highlight js %}
-$(function () {
+
+ $(function () {
         var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
-
             // Setting the dateFormat to the schedule
-
-            dateFormat:"dd-MM-yyyy",
+            dateFormat: "dd-MM-yyyy",
             currentDate: "19-11-2014",
             appointmentSettings: {
                 dataSource: dManager,
@@ -781,14 +747,15 @@ The following code example explains how to set the minimum and maximum date of t
 {% endhighlight %}
 
 {% highlight js %}
-$(function () {
+
+ $(function () {
         var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
             // Sets minimum and maximum date to the schedule.
-            minDate:new Date("11/25/2014"),
-            maxDate:new Date("12/4/2014"),
+            minDate: new Date("11/25/2014"),
+            maxDate: new Date("12/4/2014"),
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",

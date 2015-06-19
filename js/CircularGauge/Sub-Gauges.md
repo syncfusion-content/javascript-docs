@@ -15,25 +15,26 @@ A **Circular Gauge** containing another circular gauge is said to be **Sub Gauge
 
 Sub gauge collection is directly added to the scale object. Refer the following code example to add custom sub gauge collection in a **Gauge** control.
 
-{% highlight js %}
-
-
+{% highlight html %}
 
 <div id="CircularGauge1"></div>
 
-<script type="text/javascript">
-$(function () {
+{% endhighlight %}
 
-//For circular gauge rendering
-$("#CircularGauge1").ejCircularGauge({
-scales: [{ showSubGauges: true
-subGauges:[{
-gaugeID: "Gauge1"
-}]
-}]
-})
-});
-</script>
+
+{% highlight js %}
+
+
+ $(function () {
+        //For circular gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+            scales: [{ showSubGauges: true,
+                subGauges:[{
+                    gaugeID: "Gauge1"
+                }]
+    }]
+    })
+    });
 
 
 {% endhighlight %}
@@ -42,38 +43,39 @@ gaugeID: "Gauge1"
 
 Basic attributes such as **height** and **width** property are used to set height and width of the sub gauge. You can easily position the gauge in another gauge using the **position** object and by giving the **X** and **Y** Coordinates value. **controlID** attribute is used to specify the sub gauge ID.
 
-{% highlight js %}
 
+
+{% highlight html %}
 
 <div id=" SubGauge1"></div>
 <div id="CircularGauge1"> </div>
 
+{% endhighlight %}
 
-<script type="text/javascript">
+{% highlight js %}
 
-$(function () {
-$("#SubGauge1").ejCircularGauge({
-backgroundColor: "Blue",value:50, radius: 110,
-scales: [{
-radius: 110,
-}]
-});
-
-$("#CircularGauge1").ejCircularGauge({
-height: 500,value:50, width: 500,
-scales: [{radius:190,
-subGauges:[{
-//For setting sub gauge control ID
-**controlID: "SubGauge1",**
-//For setting sub gauge height
-**height:250,**
-//For setting sub gauge width
-**width: 250,**
-//For setting sub gauge position
-**position: { x: 150, y: 100 }**
-}]
-}]
-});    });
+ $(function () {
+        $("#SubGauge1").ejCircularGauge({
+            backgroundColor: "Blue",value:50, radius: 110,
+            scales: [{
+                radius: 110,
+            }]
+        });
+        $("#CircularGauge1").ejCircularGauge({
+            height: 500,value:50, width: 500,
+            scales: [{radius:190,
+                subGauges:[{
+                    //For setting sub gauge control ID
+                    controlID: "SubGauge1",
+                    //For setting sub gauge height
+                    height:250,
+                    //For setting sub gauge width
+                    width: 250,
+                    //For setting sub gauge position
+                    position: { x: 150, y: 100 }
+                }]
+            }]
+        });    });
 
 
 {% endhighlight %}
@@ -88,50 +90,53 @@ Execute the above code to render the following output.
 
 You can set multiple sub gauges in a single **Circular Gauge** by adding an array of sub gauge objects. Refer the following code example for multiple sub gauges functionality.
 
-{% highlight js %}
 
+{% highlight html %}
 
 <div id="CircularGauge1"></div>
 <div id=" SubGauge1"> </div>
 <div id=" SubGauge2"> </div
 
-$(function () {
-$("#SubGauge1").ejCircularGauge({
-backgroundColor: "#f5b43f",
-scales: [{
-radius: 150
-}]
-});
-$("#SubGauge2").ejCircularGauge({
-backgroundColor: "#f5b43f",
-scales: [{
-radius: 150
-}]
-});
+{% endhighlight %}
 
-$("#CircularGauge1").ejCircularGauge({
-height: 500,
-width: 500,
-scales: [{
-radius:250,
-subGauges:[
-//Sub gauge1
-{
-controlID: "SubGauge1",
-height:200,
-width: 200,
-position: { x: 200, y: 150 }
-},
-//Sub gauge2
-{
-controlID: "SubGauge2",
-height: 200,
-width: 200,
-position: { x: 50, y: 200 }
-}]
-}]
-});    });
 
+{% highlight js %}
+
+ $(function () {
+        $("#SubGauge1").ejCircularGauge({
+            backgroundColor: "#f5b43f",
+            scales: [{
+                radius: 150
+            }]
+        });
+        $("#SubGauge2").ejCircularGauge({
+            backgroundColor: "#f5b43f",
+            scales: [{
+                radius: 150
+            }]
+        });
+        $("#CircularGauge1").ejCircularGauge({
+            height: 500,
+            width: 500,
+            scales: [{
+                radius:250,
+                subGauges:[
+                //Sub gauge1
+                {
+                    controlID: "SubGauge1",
+                    height:200,
+                    width: 200,
+                    position: { x: 200, y: 150 }
+                },
+                //Sub gauge2
+                {
+                    controlID: "SubGauge2",
+                    height: 200,
+                    width: 200,
+                    position: { x: 50, y: 200 }
+                }]
+            }]
+        });    });
 
 
 {% endhighlight %}

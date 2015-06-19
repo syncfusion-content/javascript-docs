@@ -126,9 +126,7 @@ The following code eample explains how to change the height of the Schedule cont
 {% highlight js %}
 
  $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "500px",
@@ -172,9 +170,7 @@ The following code example explains how to change the width of the **Schedule** 
 
 {% highlight js %}
 $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "600px",
             height: "500px",

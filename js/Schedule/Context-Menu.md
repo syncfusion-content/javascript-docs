@@ -51,18 +51,18 @@ documentation: ug
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
-          contextMenuSettings: {
-          enable: true,
-          menuItems: {
-          appointment: [
-          { id: "open", text: "Open Appointment" },
-          { id: "delete", text: "Delete Appointment" },
-        // Custom context menu items
-          { id: "customMenu3", text: "Menu Item 3" },
-          { id: "customMenu4", text: "Menu Item 4" }
-          ]
-          }
-          },
+            contextMenuSettings: {
+                enable: true,
+                menuItems: {
+                    appointment: [
+                    { id: "open", text: "Open Appointment" },
+                    { id: "delete", text: "Delete Appointment" },
+                  // Custom context menu items
+                    { id: "customMenu3", text: "Menu Item 3" },
+                    { id: "customMenu4", text: "Menu Item 4" }
+                    ]
+                }
+            },
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
@@ -116,17 +116,17 @@ You can refer the following code example to render the categorize options in the
                     ]
                 }
             },
-          // categorize data collection
-          categorizeSettings:
-          {
-          enable:true,
-          dataSource: [
-          { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },
-          { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
-          { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
-          ],
-          text: "text", id: "id", color: "color",fontColor: "fontColor"**
-          },
+            // categorize data collection
+            categorizeSettings:
+            {
+                enable:true,
+                dataSource: [
+                { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "red" },
+                { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
+                { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
+                ],
+                text: "text", id: "id", color: "color",fontColor: "fontColor"**
+                },
 
             appointmentSettings: {
                 dataSource: dManager,
@@ -140,11 +140,10 @@ You can refer the following code example to render the categorize options in the
                 recurrenceRule: "RecurrenceRule",
 
                 // bind the resource id fields collection of each level
-              categorize:"Categorize"
+                categorize:"Categorize"
             }
         });
     });
-
 
 
 {% endhighlight %}
@@ -175,31 +174,31 @@ $(function () {
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
-            currentDate: new Date (2014,4,5),
+            currentDate: new Date(2014, 4, 5),
             contextMenuSettings: {
-            enable: true,
-            menuItems: {
-            cells: [
-          { id: "new", text: "New Appointment" },
-          { id: "recurrence", text: "New Recurring Appointment" },
-          { id: "today", text: "Today" },
-          { id: "gotodate", text: "Go to date" },
-          { id: "settings", text: "Settings" },
-          { id: "view", text: "View", parentId: "settings" },
-          { id: "timemode", text: "TimeMode", parentId: "settings" },
-          { id: "view_Day", text: "Day", parentId: "view" },
-          { id: "view_Week", text: "Week", parentId: "view" },
-          { id: "view_Workweek", text: "Workweek", parentId: "view" },
-          { id: "view_Month", text: "Month", parentId: "view" },
-          { id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
-          { id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
-          { id: "businesshours", text: "Business Hours", parentId: "settings" },
-        // Custom context menu items
-          { id: "customMenu1", text: "Menu Item 1" },
-          { id: "customMenu2", text: "Menu Item 2" }
-          ]
-          }
-          },
+                enable: true,
+                menuItems: {
+                    cells: [
+                  { id: "new", text: "New Appointment" },
+                  { id: "recurrence", text: "New Recurring Appointment" },
+                  { id: "today", text: "Today" },
+                  { id: "gotodate", text: "Go to date" },
+                  { id: "settings", text: "Settings" },
+                  { id: "view", text: "View", parentId: "settings" },
+                  { id: "timemode", text: "TimeMode", parentId: "settings" },
+                  { id: "view_Day", text: "Day", parentId: "view" },
+                  { id: "view_Week", text: "Week", parentId: "view" },
+                  { id: "view_Workweek", text: "Workweek", parentId: "view" },
+                  { id: "view_Month", text: "Month", parentId: "view" },
+                  { id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
+                  { id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
+                  { id: "businesshours", text: "Business Hours", parentId: "settings" },
+                // Custom context menu items
+                  { id: "customMenu1", text: "Menu Item 1" },
+                  { id: "customMenu2", text: "Menu Item 2" }
+                    ]
+                }
+            },
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
