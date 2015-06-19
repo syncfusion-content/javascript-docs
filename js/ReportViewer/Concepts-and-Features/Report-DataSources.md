@@ -22,8 +22,8 @@ $("#viewer").ejReportViewer(
                       reportServiceUrl: "/api/ReportApi",
                       processingMode: ej.ReportViewer.ProcessingMode.Local,
                       reportPath: 'Product List.rdlc',
-                           dataSources: [{
-                value: [
+                      dataSources: [{
+                       value: [
                            {
                                ProductName: "Baked Chicken and Cheese", OrderId: "323B60", Price: 55, Category: "Non-Veg", Ingredients: "Grilled chicken, Corn and Olives.", ProductImage: ""
                            },
@@ -33,10 +33,10 @@ $("#viewer").ejReportViewer(
                            {
                                ProductName: "Chicken Tikka", OrderId: "323B62", Price: 64, Category: "Non-Veg", Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.", ProductImage: ""
                            }
-               ],
-                name: "list"
-            }]
-                    });		        
+                           ],
+                              name: "list"
+                                }]
+                   });		        
 
 
 {% endhighlight %}
@@ -98,7 +98,7 @@ The **DataSource** credentials can be given at **Web API** Controller to connect
 
 
 
-                   /// <summary>
+        /// <summary>
         /// Report Initialization method that is triggered when report begins to process.
         /// </summary>
         /// <param name="reportOptions">The ReportViewer options.</param>
