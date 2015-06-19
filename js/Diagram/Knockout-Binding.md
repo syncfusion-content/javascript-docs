@@ -51,4 +51,4 @@ $(function () {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Knockout-Binding_images/Knockout-Binding_img1.png" Caption="Page Background through knockout"%}
+{% include image.html url="/js/Diagram/Knockout-Binding_images/Knockout-Binding_img1.png" Caption="Page Background through knockout"%}

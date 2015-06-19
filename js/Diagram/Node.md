@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical object that represents visual data to be placed on the page.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img1.png" Caption="Node"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img1.png" Caption="Node"%}
 
 ## Create Node
 
@@ -41,7 +41,7 @@ $("#Diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img2.png" Caption="Node"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img2.png" Caption="Node"%}
 
 List of preloaded nodes from symbol palette are added to the **Diagram** by clicking on the palette nodes or by dragging a node and dropping on the **Diagram**. The method to add node/connector to palette and drag and drop on **Diagram** is explained in palettesection
 
@@ -76,7 +76,7 @@ node = { type: Diagram.Shapes.Basic, shape: Diagram.BasicShapes.Ellipse };
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img3.png" Caption="Built-in Shapes"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img3.png" Caption="Built-in Shapes"%}
 
 ### Html
 
@@ -103,7 +103,7 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img4.png" Caption="Html Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img4.png" Caption="Html Shape"%}
 
 ### Text Node
 
@@ -124,7 +124,7 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img5.png" Caption="Text Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img5.png" Caption="Text Shape"%}
 
 ### Path
 
@@ -143,7 +143,7 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img6.png" Caption="Path Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img6.png" Caption="Path Shape"%}
 
 ### Polygon
 
@@ -171,7 +171,7 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img7.png" Caption="Polygon Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img7.png" Caption="Polygon Shape"%}
 
 ### Native 
 
@@ -202,7 +202,7 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img8.png" Caption="Native Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img8.png" Caption="Native Shape"%}
 
 > _**Note:**_ Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
 
@@ -230,13 +230,13 @@ var node = { type: ej.datavisualization.Diagram.Shapes.Image**,** source: "sampl
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img9.png" Caption="Image Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img9.png" Caption="Image Shape"%}
 
 ## Shadow
 
 **Drop shadow effect** for a **node** can be enabled or disabled by using the **NodeConstraints.Shadow**. The following image represents the **drop shadow effect** for a **Node**.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img10.png" Caption="Shadow"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img10.png" Caption="Shadow"%}
 
 The following code example illustrates how to enable or disable the **shadow**.
 
@@ -261,7 +261,7 @@ var node = { shadow: { opacity: 0.8, distance: 9, angle: 50 } };
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img11.png" Caption="Shadow Customization"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img11.png" Caption="Shadow Customization"%}
 
 ## Appearance
 
@@ -322,7 +322,7 @@ var node = { visible: true, "borderColor": "black", "borderWidth": 2, opacity: 1
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img12.png" Caption="Customized Node"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img12.png" Caption="Customized Node"%}
 
 ## Constraints
 
@@ -426,7 +426,7 @@ node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.data
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img13.jpeg" Caption="Rotator Constraints–Enabled"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img13.jpeg" Caption="Rotator Constraints–Enabled"%}
 
 The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
 
@@ -437,6 +437,6 @@ node.constraints = node.constraints &~(ej.datavisualization.Diagram.NodeConstrai
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Node_images/Node_img14.jpeg" Caption="Rotate Constraints-disabled"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img14.jpeg" Caption="Rotate Constraints-disabled"%}
 
-> _**Note:**_ Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](js/Diagram/How-To/Bitwise-Operations).
+> _**Note:**_ Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).

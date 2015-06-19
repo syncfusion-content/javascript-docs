@@ -11,7 +11,7 @@ documentation: ug
 
 A swim lane is a visual element used in process flow diagrams or flowcharts. A typical swim lane contains a header, and a collection of lanes that can be arranged horizontally or vertically.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Swim-lane_images/Swim-lane_img1.png" Caption="Swim lane Diagram"%}
+{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img1.png" Caption="Swim lane Diagram"%}
 
 **Swim lane** shape contains the following properties.
 

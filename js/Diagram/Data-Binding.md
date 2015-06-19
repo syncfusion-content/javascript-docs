@@ -96,7 +96,7 @@ $("#diagram").ejDiagram ({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="Local Data binding"%}
+{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img1.png" Caption="Local Data binding"%}
 
 ## Remote Data
 
@@ -135,7 +135,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="Remote data binding"%}
+{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img2.png" Caption="Remote data binding"%}
 
 ### Root
 
@@ -156,7 +156,7 @@ dataSourceSettings: {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Data-Binding_images/Data-Binding_img3.png" Caption="DataSource with Root"%}
+{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img3.png" Caption="DataSource with Root"%}
 
 ## HTML Binding
 
@@ -244,4 +244,4 @@ dataSourceSettings: {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Data-Binding_images/Data-Binding_img4.png" Caption="HTML Data Binding"%}
+{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img4.png" Caption="HTML Data Binding"%}

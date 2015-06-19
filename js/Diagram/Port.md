@@ -26,7 +26,7 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Port_images/Port_img1.png" Caption="Port"%}
+{% include image.html url="/js/Diagram/Port_images/Port_img1.png" Caption="Port"%}
 
 ## Connecting Ports
 
@@ -45,7 +45,7 @@ var connector = [{ name: "connector", sourceNode: "node1", targetNode: "node2", 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Port_images/Port_img2.png" Caption="Port to Port Connection"%}
+{% include image.html url="/js/Diagram/Port_images/Port_img2.png" Caption="Port to Port Connection"%}
 
 ## Appearance
 

@@ -63,7 +63,7 @@ $("#diagram").ejDiagram ({
 
 The following example illustrates the horizontal and vertical spacing of **Hierarchical Layout.**
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img1.png" Caption="Hierarchical Layout"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png" Caption="Hierarchical Layout"%}
 
 ### Orientation
 
@@ -79,7 +79,7 @@ The **Orientation** property, **ej.datavisualization.Diagram.LayoutOrientations*
 
 The following image displays “Bottom to Top” orientation of layout.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img2.png" Caption="BottomToTop"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png" Caption="BottomToTop"%}
 
 ## Organizational Chart
 
@@ -144,7 +144,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img3.png" Caption="Organizational chart"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png" Caption="Organizational chart"%}
 
 ### Customizing the organizational chart
 
@@ -255,33 +255,33 @@ Following table illustrates the different chart orientations and chart types.
 Horizontal</td><td>
 Left</td><td>
 Arranges the child nodes horizontally at the left side of parent.</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img4.png" alt="" width="224pt" height="79pt"/></td></tr>
+<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img4.png" alt="" width="224pt" height="79pt"/></td></tr>
 <tr>
 <td>
 Right</td><td>
 Arranges the child nodes horizontally at the right side of parent.</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img5.png" alt="" width="214pt" height="85pt"/></td></tr>
+<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img5.png" alt="" width="214pt" height="85pt"/></td></tr>
 <tr>
 <td>
 Center</td><td>
 Arranges the children at the bottom/left/right/top center of parent based on layout orientation.</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img6.png" alt="" width="220pt" height="85pt"/></td></tr>
+<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img6.png" alt="" width="220pt" height="85pt"/></td></tr>
 <tr>
 <td rowspan = "3">
 Vertical</td><td>
 Left</td><td>
 Vertically arranges the children at the left side of parent</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img7.png" alt="" width="109pt" height="125pt"/></td></tr>
+<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img7.png" alt="" width="109pt" height="125pt"/></td></tr>
 <tr>
 <td>
 Right</td><td>
 Vertically arranges the children at the right side of parent</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img8.png" alt="" width="110pt" height="132pt"/></td></tr>
+<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img8.png" alt="" width="110pt" height="132pt"/></td></tr>
 <tr>
 <td>
 Alternate</td><td>
 Vertically arranges the children at both left and right sides of parent</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img9.png" alt="" width="151pt" height="103pt"/></td></tr>
+<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png" alt="" width="151pt" height="103pt"/></td></tr>
 </table>
 
 _Chart Orientations and Chart Types_
@@ -300,7 +300,7 @@ function getLayoutInfo(diagram, node, options) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img10.png" Caption="Horizontal left arranged leaf level trees"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png" Caption="Horizontal left arranged leaf level trees"%}
 
 ### Assistant Support
 
@@ -321,4 +321,4 @@ function getLayoutInfo(diagram, node, options) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Automatic-Layout_images/Automatic-Layout_img11.png" Caption="Vertical left arrangement with assistant"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png" Caption="Vertical left arrangement with assistant"%}

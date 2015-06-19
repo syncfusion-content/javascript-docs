@@ -107,7 +107,7 @@ diagram.update({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Tools_images/Tools_img1.png" Caption="Rectangle"%}
+{% include image.html url="/js/Diagram/Tools_images/Tools_img1.png" Caption="Rectangle"%}
 
 Similarly you can draw any node using drawing tool, by assigning the required node to diagram.model.drawType property.
 
@@ -135,4 +135,4 @@ diagram.update({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Tools_images/Tools_img2.jpeg" Caption="Straight Connector"%}
+{% include image.html url="/js/Diagram/Tools_images/Tools_img2.jpeg" Caption="Straight Connector"%}

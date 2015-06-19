@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create a link between two nodes. A connector is a line that has connection points at the ends of the line and stays connected to the elements that you attach it to.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img1.jpeg" Caption="Connector"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img1.jpeg" Caption="Connector"%}
 
 ## Create Connector
 
@@ -34,7 +34,7 @@ $("#Diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img2.png" Caption="Connector"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img2.png" Caption="Connector"%}
 
 ## Segments
 
@@ -71,7 +71,7 @@ $("#Diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img3.png" Caption="Orthogonal Segment"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img3.png" Caption="Orthogonal Segment"%}
 
 The following code illustrates how to customize **Orthogonal Segment**.
 
@@ -95,7 +95,7 @@ $("#Diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img4.png" Caption="Orthogonal Segment"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img4.png" Caption="Orthogonal Segment"%}
 
 ### Straight Segment
 
@@ -111,9 +111,9 @@ var connector = [{ segments: segments, targetPoint: { x: 300, y: 150 }, sourcePo
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img5.png" Caption="Polyline"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img5.png" Caption="Polyline"%}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img6.png" Caption="Single Line"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img6.png" Caption="Single Line"%}
 
 The control points can be added or deleted at runtime with shortcut key combination **ctrl + shift + click** on the control point.
 
@@ -139,7 +139,7 @@ var connector =[{
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img7.png" Caption="Bezier Segments"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img7.png" Caption="Bezier Segments"%}
 
 The following code example illustrates how to add vector point for Bezier segments.
 
@@ -161,13 +161,13 @@ var connectors =[{
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img8.png" Caption="Bezier segment with vectors"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img8.png" Caption="Bezier segment with vectors"%}
 
 ### Editing Segments
 
 The segments can be edited during runtime by dragging control thumbs. Segments can be updated when neighboring segments are adjusted.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img9.png" Caption="Segment Editing"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img9.png" Caption="Segment Editing"%}
 
 ## Connector Padding
 
@@ -184,7 +184,7 @@ var connector = [{sourcePadding: 15, targetPadding:20}];
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img10.png" Caption="Endpoint’s adjustment specific to connector’s ends"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img10.png" Caption="Endpoint’s adjustment specific to connector’s ends"%}
 
 ### Endpoint adjustment specific to nodes
 
@@ -197,7 +197,7 @@ var node = [{connectorPadding: 20}];
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img11.png" Caption="Endpoint’s adjustment specific to nodes"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img11.png" Caption="Endpoint’s adjustment specific to nodes"%}
 
 ### Endpoint adjustment specific to ports
 
@@ -210,7 +210,7 @@ var port = [{connectorPadding: 20}];
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img12.png" Caption="Endpoint’s adjustment with specific to ports"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img12.png" Caption="Endpoint’s adjustment with specific to ports"%}
 
 ## Line Bridging
 
@@ -233,7 +233,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img13.png" Caption="Line Bridging"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img13.png" Caption="Line Bridging"%}
 
 When the connector constraint is set as **ConnectorConstraints.InheritBridging**, bridging is based on **DiagramConstraints**.
 
@@ -270,7 +270,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img14.png" Caption="BridgeDirection.Top"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img14.png" Caption="BridgeDirection.Top"%}
 
 **Example 2:** Bridge for Vertical Connector, with BridgeDirection as Left.
 
@@ -283,7 +283,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img15.png" Caption="BridgeDirection.Left"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img15.png" Caption="BridgeDirection.Left"%}
 
 The following API method is used to change the BridgeDirection at runtime.                                                                                                
 
@@ -309,7 +309,7 @@ var connector = { cornerRadius: 20 };
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img16.png" Caption="Corner Radius"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img16.png" Caption="Corner Radius"%}
 
 ## Connecting Nodes
 
@@ -328,7 +328,7 @@ var connector = [{
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img17.jpeg" Caption="Node to Node Connection"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img17.jpeg" Caption="Node to Node Connection"%}
 
 The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on **Source/Target Node** of Connector. In case of static or specific point connection at runtime, the **Port** assists to maintain specific point connection between Nodes.
 
@@ -471,7 +471,7 @@ var connector = [{
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Connector_images/Connector_img18.jpeg" Caption="Decorator Shape"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img18.jpeg" Caption="Decorator Shape"%}
 
 ## Constraints
 

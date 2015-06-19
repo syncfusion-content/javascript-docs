@@ -23,4 +23,4 @@ $("#Diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Model_images/Model_img1.png" Caption="Model"%}
+{% include image.html url="/js/Diagram/Model_images/Model_img1.png" Caption="Model"%}

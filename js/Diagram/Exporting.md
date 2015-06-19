@@ -105,4 +105,4 @@ _Diagram Region_
 
 Format is to specify the type/format of the exported file. It includes jpg, png, bmp and svg.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Exporting_images/Exporting_img1.png" Caption="Exported diagram"%}
+{% include image.html url="/js/Diagram/Exporting_images/Exporting_img1.png" Caption="Exported diagram"%}
