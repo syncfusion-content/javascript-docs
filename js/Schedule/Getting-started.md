@@ -55,9 +55,7 @@ The following screenshot displays the **Schedule** control with daily important 
 
 {% endhighlight %}
 
-
-
-* Now, add a &lt;div&gt; element within the **body** section which will act as a container for **ejSchedule** widget.
+ Now, add a &lt;div&gt; element within the **body** section which will act as a container for **ejSchedule** widget.
 
 
 
@@ -72,8 +70,7 @@ The following screenshot displays the **Schedule** control with daily important 
 {% endhighlight %}
 
 
-
-* Once the container is added, create the **ejSchedule** widget within the **script** section as follows,
+Once the container is added, create the **ejSchedule** widget within the **script** section as follows,
 
 
 
@@ -89,8 +86,7 @@ $(function () {
 {% endhighlight %}
 
 
-
-* You can run the above code example and an empty **Scheduler** is displayed without appointments. In order, to display the appointments in the **Schedule**, you need to pass data to it. 
+You can run the above code example and an empty **Scheduler** is displayed without appointments. In order, to display the appointments in the **Schedule**, you need to pass data to it. 
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img2.png" Caption="Empty Scheduler without Appointments."%}
 
@@ -125,10 +121,7 @@ $(function () {
 {% endhighlight %}
 
 
-
-* When the **DataSource** property is assigned with the specific service **URL**, assign the **queryString** to the **query** property, which specifies the table from where the records should be retrieved. 
-
-* You can also bind the field names used in the referred table “**Events**” with the corresponding **appointmentSettings** property of the **Scheduler** as shown in the following code example.
+When the **DataSource** property is assigned with the specific service **URL**, assign the **queryString** to the **query** property, which specifies the table from where the records should be retrieved.You can also bind the field names used in the referred table “**Events**” with the corresponding **appointmentSettings** property of the **Scheduler** as shown in the following code example.
 
 
 
@@ -239,13 +232,11 @@ $(function () {
 {% endhighlight %}
 
 
-> _**Important: The images in the above code snippet are taken from the installation location of the Essential JavaScript Studio in your machine,**_
-> _For example: $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.43\JavaScript\samples\web\images\schedule_
-> _**You can create a folder named “Images” in the same location as your newly created HTML file and then move all the images from the installation folder to the newly created “Images” folder. This helps you in referring appointments appropriately within the Schedule control.**_
+> Important: The images in the above code snippet are taken from the installation location of the Essential JavaScript Studio in your machine,
+> For example: $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.43\JavaScript\samples\web\images\schedule
+> You can create a folder named “Images” in the same location as your newly created HTML file and then move all the images from the installation folder to the newly created “Images” folder. This helps you in referring appointments appropriately within the Schedule control.
 
-
-
-* Once you set the template for the appointments, the **Scheduler** is displayed with the customized appointments as shown in the following screenshot.
+Once you set the template for the appointments, the **Scheduler** is displayed with the customized appointments as shown in the following screenshot.
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img4.png" Caption="Scheduler with Customized Appointments."%}
 
@@ -329,8 +320,7 @@ $(function () {
 {% endhighlight %}
 
 
-
-* When you execute the above code example, a **Scheduler** is displayed as follows with the fixed appointment height in a **month** view. 
+When you execute the above code example, a **Scheduler** is displayed as follows with the fixed appointment height in a **month** view. 
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img5.png" Caption="Scheduler with the fixed appointment height in a month view."%}
 
@@ -428,8 +418,6 @@ $(function () {
 
 
 
-
-
 After setting the height for appointments in **month** view, the **Schedule** control is rendered as follows,
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img6.png" Caption="Scheduler with appointments in month view."%}
@@ -445,7 +433,7 @@ After setting the height for appointments in **month** view, the **Schedule** co
 
 
 
-> _**Important: While adding new appointments to the Schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.**_
+> Important: While adding new appointments to the Schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.
 
 
 
@@ -460,7 +448,7 @@ The following screenshot illustrates a quick appointment pop-up window.
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img8.png" Caption="Quick Appointment Pop-up Window."%}
 
 
-> _**Important: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.**_
+> Important: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.
 
 
 * The event named **appointmentSaved** is triggered while saving a new appointment to the **Schedule** control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 
@@ -475,7 +463,7 @@ The following screenshot illustrates a quick appointment pop-up window.
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img9.png" Caption="Edit Appointments Pop-up."%}
 
 
-* To delete an appointment, click the appointment, and then click **delete** icon in the quick appointment pop-up as shown in the following screenshot.
+To delete an appointment, click the appointment, and then click **delete** icon in the quick appointment pop-up as shown in the following screenshot.
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img10.png" Caption="Delete Appointments Pop-up Window."%}
 
@@ -491,18 +479,18 @@ The following screenshot illustrates a quick appointment pop-up window.
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img11.png" Caption="Repeat Appointments."%}
 
 
-* When you check the **repeat** option, the sub-options available in the recurrence category are shown in the appointment pop-up as follows.
+When you check the **repeat** option, the sub-options available in the recurrence category are shown in the appointment pop-up as follows.
 
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img12.png" Caption="Options in Recurrence Dialog."%}
 
 
-* You can choose the required recurrence pattern from the available options and then click **Done**. The main appointment pop-up appears as shown in the following screenshot.
+You can choose the required recurrence pattern from the available options and then click **Done**. The main appointment pop-up appears as shown in the following screenshot.
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img13.png" Caption="Main Appointment Dialog."%}
 
 
-* Click **Done**. The recurrence appointment with daily pattern is created for every two days that ends after 10 occurrences.
+Click **Done**. The recurrence appointment with daily pattern is created for every two days that ends after 10 occurrences.
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img14.png" Caption="recurrence appointment with daily pattern."%}
 
@@ -519,7 +507,7 @@ The following screenshot illustrates a quick appointment pop-up window.
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img15.png" Caption="Double-Click the Recurrence Appointment."%}
 
 
-* When you click the recurrence appointment, a quick appointment window opens with the following options: **Edit Appointment** and **Edit Series** for editing the appointments - **delete** icon for deleting the appointments.
+When you click the recurrence appointment, a quick appointment window opens with the following options: **Edit Appointment** and **Edit Series** for editing the appointments - **delete** icon for deleting the appointments.
 
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img16.png" Caption="Quick Appointment Window."%}

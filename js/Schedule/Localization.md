@@ -353,7 +353,7 @@ _Table_ _2__: List of keys and string values_
 </table>
 
 
-* To learn about localizing in the **Schedule** control on your required culture, refer the following code example.
+To learn about localizing in the **Schedule** control on your required culture, refer the following code example.
 
 {% highlight html %}
 
@@ -421,7 +421,7 @@ $(function () {
 {% endhighlight %}
 
 
-> _**Important: An important note while making use of localization in the schedule control, it is necessary to refer the required culture script file (globalize.culture.xx-XX.min.js) in the script reference section of the sample as follows.**_
+> Important: An important note while making use of localization in the schedule control, it is necessary to refer the required culture script file (globalize.culture.xx-XX.min.js) in the script reference section of the sample as follows.
 
 
 
@@ -446,8 +446,7 @@ $(function () {
 {% endhighlight %}
 
 
-
-* Once the **fr-Fr** culture is set to the **Schedule** control, the **Schedule** control with localization applied is displayed as follows.
+Once the **fr-Fr** culture is set to the **Schedule** control, the **Schedule** control with localization applied is displayed as follows.
 
 {% include image.html url="/js/Schedule/Localization_images/Localization_img1.png" Caption="schedule with localization."%}
 
@@ -494,8 +493,7 @@ $(function () {
 {% endhighlight %}
 
 
-
-* When the **rtl** is set to ‘true’, the **Schedule** control is displayed as follows.
+When the **rtl** is set to ‘true’, the **Schedule** control is displayed as follows.
 
 {% include image.html url="/js/Schedule/Localization_images/Localization_img2.png" Caption="schedule with RTL."%}
 

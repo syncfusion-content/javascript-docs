@@ -16,12 +16,7 @@ documentation: ug
 * The drag and drop functionality available within the Schedule control for the appointments will allow the end users to efficiently manage the events/appointments in the different available views (day, week, workweek, month).
 
 
-
-![](Overview_images/Overview_img1.png)
-{:.image }
-
-Figure 1: Schedule
-{:.caption }
+{% include image.html url="/js/Schedule/Overview_images/Overview_img1.png" Caption="Schedule."%}
 
 
 **Key Features**

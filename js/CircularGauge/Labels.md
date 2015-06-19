@@ -42,7 +42,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Labels_images/Labels_img1.png" Caption="Circular Gauge with  label collection"%}
+{% include image.html url="/js/CircularGauge/Labels_images/Labels_img1.png" Caption="Circular Gauge with  label collection"%}
 
 ## Label Customization
 
@@ -102,7 +102,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Labels_images/Labels_img2.png" Caption="Circular Gauge with customized label"%}
+{% include image.html url="/js/CircularGauge/Labels_images/Labels_img2.png" Caption="Circular Gauge with customized label"%}
 
 **Unit text and Position**
 
@@ -151,7 +151,7 @@ Labels can be positioned with the help of two properties such as **distanceFromS
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Labels_images/Labels_img3.png" Caption="Circular Gauge with unit text"%}
+{% include image.html url="/js/CircularGauge/Labels_images/Labels_img3.png" Caption="Circular Gauge with unit text"%}
 
 ## Multiple Labels
 
@@ -198,5 +198,5 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Concepts-and-Features/Labels_images/Labels_img4.png" Caption="Circular Gauge with multiple labels"%}
+{% include image.html url="/js/CircularGauge/Labels_images/Labels_img4.png" Caption="Circular Gauge with multiple labels"%}
 

@@ -49,10 +49,6 @@ $(function () {
             });
     });
 
-</script>
-
-
-
 
 {% endhighlight %}
 
@@ -110,13 +106,11 @@ Click the print button to render the following output.
 {% endhighlight %}
 
 
-
-* Right click on the appointment and select print appointment in the context menu as follows.
-
+Right click on the appointment and select print appointment in the context menu as follows.
 
 {% include image.html url="/js/Schedule/Print_images/Print_img3.png" Caption="schedule with Print option in Context Menu."%}
 
-* Now, the widow is promoted to new document with appointment details and print window opens.
+ Now, the widow is promoted to new document with appointment details and print window opens.
 
 {% include image.html url="/js/Schedule/Print_images/Print_img4.png" Caption="schedule with Appointment Print."%}
 
