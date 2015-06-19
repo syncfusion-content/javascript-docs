@@ -26,12 +26,12 @@ This section explains how to create a **TreeGrid** control in your application w
         <head>
             <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
             <meta charset="utf-8" />
-            <link href=" http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+            <link href=" http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
             <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
             <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
             <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
-            <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
+            <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
         </head>
         <body>
         <!--Add TreeGrid control here -->
