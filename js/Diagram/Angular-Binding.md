@@ -14,12 +14,11 @@ AngularJS is a JavaScript framework added to a HTML page with a &lt;script&gt; t
 Apply the plugin and property assigning the Diagram element through the directive that starts with the letter **“e-”.**  The following code illustrates how to bind data to the Diagram component through Angular support.
 
 {% highlight html %}
-
-//References to be added for angular support.
+<!-- References to be added for angular support. -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
 <script src="http://cdn.syncfusion.com/js/web/ej.unobtrusive-latest.min.js"></script>
 <script src="http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"></script>
-//Initializes diagram.
+ <!-- Initializes diagram. -->
 <div id="diagramCore" 
    ej-diagram e-height="500px" 
    e-width="700px" 
@@ -27,7 +26,7 @@ Apply the plugin and property assigning the Diagram element through the directiv
    e-pagesettings-pageheight="pageSettings.pageHeight"
    e-pagesettings-pagewidth="pageSettings.pageWidth"></div>
 <div>
-   //Renders a dropdown box to display a list of colors
+   <!-- Renders a dropdown box to display a list of colors -->
    <input ej-dropdownlist e-datasource="pageColor" value="pageSettings.pageBackgroundColor" e-width="100px"/>
 </div>
 
