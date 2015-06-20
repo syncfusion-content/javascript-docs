@@ -64,14 +64,12 @@ You can create a rectangle shape by setting the type of node’s type as **ej.da
 var Diagram = ej.datavisualization.Diagram;
 
 //create a node with rectangle shape
-
 var node = {
    type: Diagram.Shapes.Basic,
    shape: Diagram.BasicShapes.Rectangle
 };
 
 //create a node with rounded rectangle shape
-
 node = {
    type: Diagram.Shapes.Basic,
    shape: Diagram.BasicShapes.Rectangle,
@@ -79,7 +77,6 @@ node = {
 };
 
 //create a node with ellipse shape
-
 node = {
    type: Diagram.Shapes.Basic,
    shape: Diagram.BasicShapes.Ellipse
@@ -192,11 +189,11 @@ type = "text/x-jsrender">
    <path d = "M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z 
 M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S
 29.867 34.87 29.353 34.425 L 1 9.826 V 60 H 61 V 9.826 L
-32.644 34.425 Z "></path> <text x = "20"
-y = "45"> {
-   {:  text 
-   }
-} </text> </g> </script> 
+32.644 34.425 Z "></path> < text x = "
+20 " y = "
+45 " > { {: text
+}
+} < /text> < /g > < /script>
 
 
 var node = {
@@ -208,9 +205,9 @@ var node = {
 
 {% include image.html url="/js/Diagram/Node_images/Node_img8.png" Caption="Native Shape"%}
 
-> _**Note:**_ Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
+> **Note:** Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
 
-> _**Note:**_ Fill color will be applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
+> **Note:** Fill color will be applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
 
 {% highlight html %}
 <svg>
@@ -230,7 +227,7 @@ You can add **Image** as a node to the **Diagram** by setting node’s type as *
 //create a node with image
 var node = {
    type: ej.datavisualization.Diagram.Shapes.Image,
-   source: "sample/Syncfusion.PNG"
+    source: "sample/Syncfusion.PNG"
 };
 {% endhighlight %}
 
@@ -452,8 +449,8 @@ The Default value for the node constraints property is **ej.datavisualization.Di
 
 {% highlight js %}
  
- //Applies selection and rotation constraints only.
- node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
+//Applies selection and rotation constraints only.
+node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Node_images/Node_img13.jpeg" Caption="Rotator Constraints–Enabled"%}
@@ -468,4 +465,4 @@ node.constraints = node.constraints & ~(ej.datavisualization.Diagram.NodeConstra
 
 {% include image.html url="/js/Diagram/Node_images/Node_img14.jpeg" Caption="Rotate Constraints-disabled"%}
 
-> _**Note:**_ Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
+> **Note:** Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).

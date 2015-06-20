@@ -25,21 +25,15 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 
 {% highlight html %}
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-   <title>Getting Started With Diagram Control For Javascript</title>
-
-   <!-- jQuery Script -->
-   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-   <!--script to create Diagram-->
-   <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-</head>
-
-<body>
-</body>
-
+   <head>
+      <title>Getting Started With Diagram Control For Javascript</title>
+      <!-- jQuery Script -->
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <!--script to create Diagram-->
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+   </head>
+   <body></body>
 </html>
 {% endhighlight %}
 
@@ -65,10 +59,10 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 <body>
    <div id="DiagramContent"></div>
    <script type="text/javascript">
-   $("#DiagramContent").ejDiagram({
-      width: "100%",
-      height: "600px",
-   });
+      $("#DiagramContent").ejDiagram({
+         width: "100%",
+         height: "600px",
+      });
    </script>
 </body>
 {% endhighlight %}
@@ -148,53 +142,53 @@ Following code examples indicate how to define the default appearance of node an
 
 {% highlight html %}
 <script type="text/javascript">
-// To Customize node before rendering
-function nodeTemplate(diagram, node) {
-   node.labels[0].text = node.name;
-}
+   // To Customize node before rendering
+   function nodeTemplate(diagram, node) {
+      node.labels[0].text = node.name;
+   }
 
-//Initialize data source...
-$("#DiagramContent").ejDiagram({
-   defaultSettings: {
-      //Set the default properties of nodes.
-      node: {
-         width: 70,
-         height: 30,
-         shape: {
-            type: "rectangle",
-            "cornerRadius": 5
+   //Initialize data source...
+   $("#DiagramContent").ejDiagram({
+      defaultSettings: {
+         //Set the default properties of nodes.
+         node: {
+            width: 70,
+            height: 30,
+            shape: {
+               type: "rectangle",
+               "cornerRadius": 5
+            },
+            labels: [{
+               name: "label1",
+               fontSize: 11,
+               bold: true,
+               fontFamily: "Segoe UI",
+               fontColor: "white"
+            }]
          },
-         labels: [{
-            name: "label1",
-            fontSize: 11,
-            bold: true,
-            fontFamily: "Segoe UI",
-            fontColor: "white"
-         }]
+
+         //Set the default properties of connectors.
+         connector: {
+            segments: [{
+               "type": "orthogonal"
+            }],
+            targetDecorator: {
+               shape: "arrow"
+            }
+         }
       },
 
-      //Set the default properties of connectors.
-      connector: {
-         segments: [{
-            "type": "orthogonal"
-         }],
-         targetDecorator: {
-            shape: "arrow"
-         }
+      //Initialize the node template.
+      nodeTemplate: nodeTemplate,
+
+      //Configure data source for diagram
+      dataSourceSettings: {
+         id: "name",
+         parent: "ReportingPerson",
+         //Specifies the dataSource
+         dataSource: data
       }
-   },
-
-   //Initialize the node template.
-   nodeTemplate: nodeTemplate,
-
-   //Configure data source for diagram
-   dataSourceSettings: {
-      id: "name",
-      parent: "ReportingPerson",
-      //Specifies the dataSource
-      dataSource: data
-   }
-});
+   });
 </script>
 {% endhighlight %}
 
@@ -236,95 +230,95 @@ $("#DiagramContent").ejDiagram({
 <body>
    <div id="DiagramContent"></div>
    <script type="text/javascript">
-   //Initialize data source
-   var data = [{
-      "name": "Elizabeth",
-      "fillColor": "rgb(0, 139,139)"
-   }, {
-      "name": "Christina",
-      "fillColor": "rgb(30, 30,113)",
-      "ReportingPerson": "Elizabeth"
-   }, {
-      "name": "Yoshi",
-      "fillColor": "rgb(0, 100, 0)",
-      "ReportingPerson": "Christina"
-   }, {
-      "name": "Philip",
-      "fillColor": "rgb(0, 100,  0)",
-      "ReportingPerson": "Christina"
-   }, {
-      "name": "Yang",
-      "fillColor": "rgb(30, 30,  113)",
-      "ReportingPerson": "Elizabeth"
-   }, {
-      "name": "Roland",
-      "fillColor": "rgb(0, 100, 0)",
-      "ReportingPerson": "Yang"
-   }, {
-      "name": "Yvonne",
-      "fillColor": "rgb(0, 100,0)",
-      "ReportingPerson": "Yang"
-   }];
+      //Initialize data source
+      var data = [{
+         "name": "Elizabeth",
+         "fillColor": "rgb(0, 139,139)"
+      }, {
+         "name": "Christina",
+         "fillColor": "rgb(30, 30,113)",
+         "ReportingPerson": "Elizabeth"
+      }, {
+         "name": "Yoshi",
+         "fillColor": "rgb(0, 100, 0)",
+         "ReportingPerson": "Christina"
+      }, {
+         "name": "Philip",
+         "fillColor": "rgb(0, 100,  0)",
+         "ReportingPerson": "Christina"
+      }, {
+         "name": "Yang",
+         "fillColor": "rgb(30, 30,  113)",
+         "ReportingPerson": "Elizabeth"
+      }, {
+         "name": "Roland",
+         "fillColor": "rgb(0, 100, 0)",
+         "ReportingPerson": "Yang"
+      }, {
+         "name": "Yvonne",
+         "fillColor": "rgb(0, 100,0)",
+         "ReportingPerson": "Yang"
+      }];
 
-   // To Customize node before rendering
-   function nodeTemplate(diagram, node) {
-      node.labels[0].text = node.name;
-   }
+      // To Customize node before rendering
+      function nodeTemplate(diagram, node) {
+         node.labels[0].text = node.name;
+      }
 
-   $("#DiagramContent").ejDiagram({
+      $("#DiagramContent").ejDiagram({
 
-      //Use automatic layout to arrange elements on the page
-      layout: {
-         type: ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart,
-         marginX: 10,
-         marginY: 50,
-         horizontalSpacing: 50,
-         verticalSpacing: 50,
-         orientation: ej.datavisualization.Diagram.
-         LayoutOrientations.TopToBottom
-      },
-
-      defaultSettings: {
-
-         //Set the default properties of nodes.
-         node: {
-            width: 70,
-            height: 30,
-            shape: {
-               type: "rectangle",
-               "cornerRadius": 5
-            },
-            labels: [{
-               name: "label1",
-               fontSize: 11,
-               bold: true,
-               fontFamily: "Segoe UI",
-               fontColor: "white"
-            }]
+         //Use automatic layout to arrange elements on the page
+         layout: {
+            type: ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart,
+            marginX: 10,
+            marginY: 50,
+            horizontalSpacing: 50,
+            verticalSpacing: 50,
+            orientation: ej.datavisualization.Diagram.
+            LayoutOrientations.TopToBottom
          },
 
-         //Set the default properties of connectors.
-         connector: {
-            segments: [{
-               "type": "orthogonal"
-            }],
-            targetDecorator: {
-               shape: "arrow"
+         defaultSettings: {
+
+            //Set the default properties of nodes.
+            node: {
+               width: 70,
+               height: 30,
+               shape: {
+                  type: "rectangle",
+                  "cornerRadius": 5
+               },
+               labels: [{
+                  name: "label1",
+                  fontSize: 11,
+                  bold: true,
+                  fontFamily: "Segoe UI",
+                  fontColor: "white"
+               }]
+            },
+
+            //Set the default properties of connectors.
+            connector: {
+               segments: [{
+                  "type": "orthogonal"
+               }],
+               targetDecorator: {
+                  shape: "arrow"
+               }
             }
+         },
+
+         //Initialize the node template.
+         nodeTemplate: nodeTemplate,
+
+         //Configure data source for diagram
+         dataSourceSettings: {
+            id: "name",
+            parent: "ReportingPerson",
+            //Specifies the dataSource
+            dataSource: data
          }
-      },
-
-      //Initialize the node template.
-      nodeTemplate: nodeTemplate,
-
-      //Configure data source for diagram
-      dataSourceSettings: {
-         id: "name",
-         parent: "ReportingPerson",
-         //Specifies the dataSource
-         dataSource: data
-      }
-   });
+      });
    </script>
 </body>
 

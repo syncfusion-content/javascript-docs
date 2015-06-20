@@ -41,14 +41,19 @@ The following code example illustrates how to bind data to the diagram through K
 
 {% highlight js %}
 //Initializes source for page background color.
-var pageColor = [{ text: "Black" },{ text: "White" } ];
-window.viewModel = { pageBackgroundColor: ko.observable("White")                 };
+var pageColor = [{
+   text: "Black"
+}, {
+   text: "White"
+}];
+window.viewModel = {
+   pageBackgroundColor: ko.observable("White")
+};
 
 //Applies knockout binding.
-$(function () {
-    ko.applyBindings(viewModel);
+$(function() {
+   ko.applyBindings(viewModel);
 });
-
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Knockout-Binding_images/Knockout-Binding_img1.png" Caption="Page Background through knockout"%}
