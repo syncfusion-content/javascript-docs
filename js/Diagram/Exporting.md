@@ -83,7 +83,6 @@ Data</td><td>
 Exports diagram as data of formats ImageURL/SVG.</td></tr>
 </table>
 
-_Exporting modes_
 
 ### Region
 
@@ -104,7 +103,6 @@ PageSettings</td><td>
 Export diagram is based on page setting (page size, multiple page, page margin, etc.)</td></tr>
 </table>
 
-_Diagram Region_
 
 ### Format
 

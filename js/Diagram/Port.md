@@ -160,8 +160,6 @@ string</td><td>
 Gets or sets the path data of the port</td></tr>
 </table>
 
-_Properties_
-
 The following code illustrates how to customize the port.
 
 {% highlight js %}
@@ -196,7 +194,6 @@ Disable all constraints</td></tr>
 Connect</td><td>
 Enables connections with connector</td></tr>
 </table>
-_Constraints_
 
 The following code illustrates how to set port constraints.
 

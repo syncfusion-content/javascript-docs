@@ -59,7 +59,6 @@ collection</td><td>
 Gets or sets the value that is used to draw the custom handles on the selected elements.</td></tr>
 </table>
 
-_Selector Properties_
 
 ### Move, Resize or Rotate selected items
 

@@ -332,7 +332,6 @@ Enum<br/>
 BridgeDirection.Left<br/>BridgeDirection.Right<br/>BridgeDirection.Top<br/>BridgeDirection.Bottom</td></tr>
 </table>
 
-_BridgeDirection Property_
 
 The following code example is used to set Bridge Direction.
 
@@ -530,7 +529,6 @@ Gets or sets the shape of the decorator.</td></tr>
 Gets or sets the path data of the decorator.</td></tr>
 </table>
 
-_Decorator Appearance_
 
 The following code illustrates how to customize Decorator Shape.
 
@@ -609,7 +607,6 @@ Default</td><td>
 Enables all constraints.</td></tr>
 </table>
 
-_Constraints_
 
 The default value for the connector constraints property is ej.datavisualization.Diagram.ConnectorConstraints.Default.
 

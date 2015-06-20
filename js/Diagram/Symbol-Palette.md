@@ -117,8 +117,6 @@ string</td><td>
 Gets or sets the name of the selected item in the palette</td></tr>
 </table>
 
-_Appearance_
-
 The following code illustrates how to customize the **Appearance** of the **Palette.**
 
 {% highlight js %}
@@ -167,8 +165,6 @@ previewOffset</td><td>
 object</td><td>
 Gets or sets the preview x and y value of palette item.</td></tr>
 </table>
-
-_Preview Appearance_
 
 The following code example illustrates how to customize **Preview Content**.
 

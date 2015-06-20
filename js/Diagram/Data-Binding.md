@@ -45,7 +45,6 @@ parent</td><td>
 Specifies the parent id of the data source items.</td></tr>
 </table>
 
-_Field properties_
 
 ## Local Data
 

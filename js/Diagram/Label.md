@@ -206,8 +206,6 @@ ej.datavisualization.Diagram.Point</td><td>
 Gets or sets the position for the label.</td></tr>
 </table>
 
-_Label Alignment_
-
 {% highlight js %}
 
 //align label and its text
@@ -251,8 +249,6 @@ Bottom</td><td>
 <img src="/js/Diagram/Label_images/Label_img9.png" alt="" width="68pt" height="58pt"/></td></tr>
 </table>
 
-_Alignment_
-
 {% include image.html url="/js/Diagram/Label_images/Label_img10.png" Caption="Left align"%}
 
 {% include image.html url="/js/Diagram/Label_images/Label_img11.png" Caption="Label Alignment"%}
@@ -295,8 +291,6 @@ WrapWithOverflow</td><td>
 Text-wrapping occurs when the text overflows beyond the available node width. However, a text may overflow beyond the node width in the case of a very long word.</td><td>
 <img src="/js/Diagram/Label_images/Label_img15.png" alt="" width="122pt" height="57pt"/></td></tr>
 </table>
-
-_Text Wrapping_
 
 ### Width
 
