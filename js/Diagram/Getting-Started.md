@@ -75,8 +75,8 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 
 Define “Employee Information” as JSON data. The following code example shows a list of employees whose ‘Name’ value is used as a unique identifier and the ‘ReportingPerson’ value is used to identify the person to whom they report to in the organization.
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
+//Include the script in the <Script> tag.
 //Initialize data source...
 var data = [{
    "name": "Elizabeth",
@@ -117,8 +117,7 @@ $("#DiagramContent").ejDiagram({
 
 Then, you can configure this “Employee Information” with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how **dataSourceSetting** is used to map ‘id’ and ‘parent’ with property name identifiers for employee information.
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
 //Initialize data source...
 $("#DiagramContent").ejDiagram({
 
@@ -131,7 +130,7 @@ $("#DiagramContent").ejDiagram({
       dataSource: data
    }
 });
-</script>
+
 {% endhighlight %}
 
 Based on datasource and its settings, nodes and connector are automatically generated, and so you need to give appearance of nodes that represents the employee and use inbuilt layout manager to automatically place nodes in an organizational chart structure.
@@ -140,8 +139,8 @@ Based on datasource and its settings, nodes and connector are automatically gene
 
 Following code examples indicate how to define the default appearance of node and connector using defaultSetting. The NodeTemplate is used to update each node based on employee data. 
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
+
    // To Customize node before rendering
    function nodeTemplate(diagram, node) {
       node.labels[0].text = node.name;
@@ -189,7 +188,7 @@ Following code examples indicate how to define the default appearance of node an
          dataSource: data
       }
    });
-</script>
+
 {% endhighlight %}
 
 **Apply Organizational Chart Layout**
@@ -222,7 +221,6 @@ $("#DiagramContent").ejDiagram({
    <!-- jQuery Script -->
    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
    <!--script to create Diagram-->
    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
 </head>
