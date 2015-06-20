@@ -81,13 +81,13 @@ $("#Diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img1.png" Caption="Page Appearance-PageSettings based"%}
+{% include image.html url="/js/Diagram/Page-Settings_images/Page-Settings_img1.png" Caption="Page Appearance-PageSettings based"%}
 
 ## MultiplePage and PageBreaks
 
 When **multiplePage** is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. **PageBreaks** is used as a visual guide to see how pages are split into multiple pages.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img2.png" Caption="Multiple Page and Page Breaks"%}
+{% include image.html url="/js/Diagram/Page-Settings_images/Page-Settings_img2.png" Caption="Multiple Page and Page Breaks"%}
 
 ## AutoScroll
 
@@ -176,4 +176,4 @@ pageSettings:
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Page-Settings_images/Page-Settings_img3.png" Caption="AutoScroll Border"%}
+{% include image.html url="/js/Diagram/Page-Settings_images/Page-Settings_img3.png" Caption="AutoScroll Border"%}

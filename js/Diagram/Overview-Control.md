@@ -39,4 +39,4 @@ $("#overview").ejOverview({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Overview-Control_images/Overview-Control_img1.png" Caption="Overview"%}
+{% include image.html url="/js/Diagram/Overview-Control_images/Overview-Control_img1.png" Caption="Overview"%}

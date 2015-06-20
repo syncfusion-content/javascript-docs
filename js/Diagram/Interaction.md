@@ -94,7 +94,7 @@ diagram.addSelection(node);
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img1.png" Caption="Single selection"%}
+{% include image.html url="/js/Diagram/Interaction_images/Interaction_img1.png" Caption="Single selection"%}
 
 ### Multiple Selections
 
@@ -104,7 +104,7 @@ diagram.addSelection(node);
 
 **Rubber band selection** is done by clicking and dragging mouse pointer on Diagram canvas and rectangle helper appears during **Rubber band selection**. The diagram Nodes/Connectors that intersect in the selection rectangle bounds are added to the selection list.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img2.png" Caption="Multiple Selections"%}
+{% include image.html url="/js/Diagram/Interaction_images/Interaction_img2.png" Caption="Multiple Selections"%}
 
 ## User Handle
 
@@ -256,7 +256,7 @@ $("#Diagram").ejDiagram(selectedItems: { userHandles: userHandles } );
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img3.png" Caption="Delete-User Handle"%}
+{% include image.html url="/js/Diagram/Interaction_images/Interaction_img3.png" Caption="Delete-User Handle"%}
 
 ## Zoom 
 
@@ -438,7 +438,7 @@ $("#Diagram").ejDiagram({ snapSettings: snapSettings});
 
 The **snap-to-object** feature provides visual cues to assist with aligning and spacing diagram nodes. You can snap a node with its neighboring objects based on its size and position. Such alignments are visually represented as guidelines.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img4.png" Caption="Snap to Object"%}
+{% include image.html url="/js/Diagram/Interaction_images/Interaction_img4.png" Caption="Snap to Object"%}
 
 ### Enabling and Disabling snapping to objects
 

@@ -23,4 +23,4 @@ documentation: ug
 
 * **Layout:** Arranges nodes in a tree-like structure based on relationship between the Nodes.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Diagram-Elements_images/Diagram-Elements_img1.png" Caption="Diagram-elements"%}
+{% include image.html url="/js/Diagram/Diagram-Elements_images/Diagram-Elements_img1.png" Caption="Diagram-elements"%}

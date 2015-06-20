@@ -32,7 +32,7 @@ var node = {
 
 The list of basic shapes are as follows.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img1.png" Caption="Basic Shapes"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img1.png" Caption="Basic Shapes"%}
 
 ## Flow Shape
 
@@ -51,7 +51,7 @@ var node = {
 
 The list of flow shapes are as follows.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img2.png" Caption="Flow Shapes"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img2.png" Caption="Flow Shapes"%}
 
 ## BPMN Shape
 
@@ -66,7 +66,7 @@ BPMN shapes are used to represent internal business procedure in graphical notat
 
 The shapes are listed as follows.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img3.png" Caption="BPMN Shapes"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img3.png" Caption="BPMN Shapes"%}
 
 The BPMN shapes and its types are explained as follows.
 
@@ -123,23 +123,23 @@ _Events_
 <tr>
 <td>
 Start –Interrupting</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img4.png" alt="" width="69pt" height="62pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img4.png" alt="" width="69pt" height="62pt"/></td></tr>
 <tr>
 <td>
 Start Non Interrupting</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img5.png" alt="" width="68pt" height="63pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img5.png" alt="" width="68pt" height="63pt"/></td></tr>
 <tr>
 <td>
 Intermediate Interrupting</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img6.png" alt="" width="66pt" height="62pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img6.png" alt="" width="66pt" height="62pt"/></td></tr>
 <tr>
 <td>
 Intermediate Non-Interrupting</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img7.png" alt="" width="63pt" height="62pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img7.png" alt="" width="63pt" height="62pt"/></td></tr>
 <tr>
 <td>
 End</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img8.png" alt="" width="63pt" height="62pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img8.png" alt="" width="63pt" height="62pt"/></td></tr>
 </table>
 
 _Representation of different BPMN events_
@@ -152,39 +152,39 @@ _Representation of different BPMN events_
 <tr>
 <td>
 Message</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img9.png" alt="" width="44pt" height="44pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img9.png" alt="" width="44pt" height="44pt"/></td></tr>
 <tr>
 <td>
 Timer</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img10.png" alt="" width="55pt" height="52pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img10.png" alt="" width="55pt" height="52pt"/></td></tr>
 <tr>
 <td>
 Escalation</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img11.png" alt="" width="57pt" height="56pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img11.png" alt="" width="57pt" height="56pt"/></td></tr>
 <tr>
 <td>
 Link </td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img12.png" alt="" width="56pt" height="50pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img12.png" alt="" width="56pt" height="50pt"/></td></tr>
 <tr>
 <td>
 Error</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img13.png" alt="" width="64pt" height="53pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img13.png" alt="" width="64pt" height="53pt"/></td></tr>
 <tr>
 <td>
 Compensation</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img14.png" alt="" width="58pt" height="50pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img14.png" alt="" width="58pt" height="50pt"/></td></tr>
 <tr>
 <td>
 Signal</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img15.png" alt="" width="52pt" height="56pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img15.png" alt="" width="52pt" height="56pt"/></td></tr>
 <tr>
 <td>
 Multiple</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img16.png" alt="" width="55pt" height="57pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img16.png" alt="" width="55pt" height="57pt"/></td></tr>
 <tr>
 <td>
 Parallel</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img17.png" alt="" width="58pt" height="54pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img17.png" alt="" width="58pt" height="54pt"/></td></tr>
 </table>
 
 _Representation of event trigger states_
@@ -218,23 +218,23 @@ var node = { type: "bpmn", shape:diagram.BPMNShapes.Gateway };
 <tr>
 <td>
 Exclusive Gateway</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img18.png" alt="" width="77pt" height="74pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img18.png" alt="" width="77pt" height="74pt"/></td></tr>
 <tr>
 <td>
 Parallel Gateway</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img19.png" alt="" width="70pt" height="68pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img19.png" alt="" width="70pt" height="68pt"/></td></tr>
 <tr>
 <td>
 Inclusive Gateway</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img20.png" alt="" width="68pt" height="71pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img20.png" alt="" width="68pt" height="71pt"/></td></tr>
 <tr>
 <td>
 Complex Gateway</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img21.png" alt="" width="67pt" height="70pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img21.png" alt="" width="67pt" height="70pt"/></td></tr>
 <tr>
 <td>
 Event Based</td><td>
-<img src="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img22.png" alt="" width="68pt" height="68pt"/></td></tr>
+<img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img22.png" alt="" width="68pt" height="68pt"/></td></tr>
 </table>
 
 _Types of Gateway_
@@ -295,27 +295,27 @@ The different activities in the BPMN shape are listed as follows.
 
 * Loop: The task that is internally being looped
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img23.png" Caption="Loop"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img23.png" Caption="Loop"%}
 
 * Tasks: The task for sending, receiving, user based task etc…
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img24.png" Caption="Tasks"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img24.png" Caption="Tasks"%}
 
 * Compensation: Compensation triggered when operation is partially failed.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img25.png" Caption="Compensation"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img25.png" Caption="Compensation"%}
 
 * Call
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img26.png" Caption="Call"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img26.png" Caption="Call"%}
 
 * Ad-Hoc
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img27.png" Caption="Ad-Hoc"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img27.png" Caption="Ad-Hoc"%}
 
 * Boundary: Boundary represents the type of task that is being processed
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img28.png" Caption="Boundary"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img28.png" Caption="Boundary"%}
 
 ### Data
 
@@ -339,4 +339,4 @@ node = { type: "bpmn", shape: diagram.BPMNShapes.DataObject };
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Predefined-Shapes_images/Predefined-Shapes_img29.png" Caption="Data"%}
+{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img29.png" Caption="Data"%}
