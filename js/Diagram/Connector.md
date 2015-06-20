@@ -32,6 +32,7 @@ var connectors = [{
       y: 150
    }
 }];
+
 //add connectors to diagram
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -56,6 +57,7 @@ Orthogonal segments are visually represented based on the specified length and d
 
 //initializing model.connectors
 var connectors = [];
+
 //Default Orthogonal Segment
 var segments = [{ type: "orthogonal"}];
 
@@ -73,6 +75,7 @@ var connectors = [{
       y: 150
    }
 }];
+
 //add connectors to diagram model
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -91,6 +94,7 @@ var segments = [{
    direction: "bottom",
    length: 90
 }];
+
 //create a connector 
 var connectors = [{
    name: "connector",
@@ -105,6 +109,7 @@ var connectors = [{
       y: 150
    }
 }];
+
 //add connectors to diagram model
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -133,6 +138,7 @@ var segments = [{
       y: 10
    }
 }];
+
 var connector = [{
    segments: segments,
    targetPoint: {
@@ -176,6 +182,7 @@ var segments = [{
       y: 72
    }
 }];
+
 var connector = [{
    segments: segments,
    sourcePoint: {
@@ -202,12 +209,14 @@ var segments = [{ type: "bezier",
       angle: 180,
       distance: 120
    },
+   
    //Length and angle between target point and control point 2
    vector2: {
       angle: 10,
       distance: 140
    }
 }];
+
 var connectors = [{
    segments: segments,
    sourcePoint: {
@@ -290,7 +299,6 @@ var connector = [{
    constraints: constraint
 }];
 
-
 //Enable Line Bridging for all connectors added to diagram model
 var constraints = ej.datavisualization.Diagram.DiagramConstraints;
 
@@ -298,8 +306,7 @@ var constraint = constraints1.Bridging | constraints1.Default;
 
 //Initialize the diagram
 $("#diagram").ejDiagram({
-constraints: constraint;
-});
+      constraints: constraint;
 });
 {% endhighlight %}
 
@@ -358,12 +365,11 @@ $("#diagram").ejDiagram({
 The following API method is used to change the BridgeDirection at runtime.                                                                                                
 
 {% highlight js %}
-
 var diagram = $("#diagram").ejDiagram("instance");
 //update the Bridge Direction at runtime.
 diagram.update({
-         bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.Top
-      });
+    bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.Top
+});
 {% endhighlight %}
 
 ## Corner Radius
@@ -391,9 +397,9 @@ Connector is connected to the bounds of the node and at a specific point on the 
 //create a connection between headNode/tailNode using connector
 
 var connector = [{
-   segment: type: ej.datavisualization.Diagram.Segment.Orthogonal
-}, sourceNode: "headNode", //set name of sourceNode
-targetNode: "tailNode" //set name of targetNode
+    segment: type: ej.datavisualization.Diagram.Segment.Orthogonal
+    sourceNode: "headNode", //set name of sourceNode
+    targetNode: "tailNode" //set name of targetNode
 }];
 {% endhighlight %}
 
@@ -546,7 +552,7 @@ var connector = [{
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img18.jpeg" Caption="Decorator Shape"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img18.png" Caption="Decorator Shape"%}
 
 ## Constraints
 
