@@ -193,10 +193,10 @@ type = "text/x-jsrender" >
 M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S
 29.867 34.87 29.353 34.425 L 1 9.826 V 60 H 61 V 9.826 L
 32.644 34.425 Z "></path> < text x = "20"
-y = "45" > * * {
-   {: * * text * *
+y = "45" > {
+   {:  text 
    }
-} * * < /text> < /g> < /script> 
+} < /text> < /g> < /script> 
 
 
 var node = {
@@ -226,12 +226,11 @@ var node = {
 You can add **Image** as a node to the **Diagram** by setting node’s type as **ej.datavisualization.Diagram.Shapes.Image** and set the image **URL** to **source** property of shape. The following code illustrates how an **Image** node is created.
 
 {% highlight js %}
-* * [JS] * *
 
 //create a node with image
 var node = {
-   type: ej.datavisualization.Diagram.Shapes.Image * * ,
-   * * source: "sample/Syncfusion.PNG"
+   type: ej.datavisualization.Diagram.Shapes.Image,
+   source: "sample/Syncfusion.PNG"
 };
 {% endhighlight %}
 
@@ -239,7 +238,7 @@ var node = {
 
 ## Shadow
 
-**Drop****shadow****effect** for a **node** can be enabled or disabled by using the **NodeConstraints.Shadow**. The following image represents the **drop shadow effect** for a **Node**.
+**Drop shadow effect** for a **node** can be enabled or disabled by using the **NodeConstraints.Shadow**. The following image represents the **drop shadow effect** for a **Node**.
 
 {% include image.html url="/js/Diagram/Node_images/Node_img10.png" Caption="Shadow"%}
 
