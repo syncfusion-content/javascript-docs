@@ -16,7 +16,6 @@ documentation: ug
 The following code illustrates how to create a port and add it to nodes port array.
 
 {% highlight js %}
-
 //create a port and it to node’s ports array. 
 var node = {
    ports: [{
@@ -31,16 +30,13 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Port_images/Port_img1.png" Caption="Port"%}
+{% include image.html url="/js/Diagram/Port_images/Port_img1.png" Caption="Port"%}
 
 ## Connecting Ports
 
-The connection between specific ports on the node is established by assigning the name of the node’s port to connector’s target port/source port.
-
-The following code illustrates how to establish a port connection:
+The connection between specific ports on the node is established by assigning the name of the node’s port to connector’s target port/source port. The following code illustrates how to establish a port connection:
 
 {% highlight js %}
-
 //create nodes with ports
 var nodes = [{
    name: "node1",
@@ -115,7 +111,7 @@ var connector = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Port_images/Port_img2.png" Caption="Port to Port Connection"%}
+{% include image.html url="/js/Diagram/Port_images/Port_img2.png" Caption="Port to Port Connection"%}
 
 ## Appearance
 
@@ -169,7 +165,6 @@ _Properties_
 The following code illustrates how to customize the port.
 
 {% highlight js %}
-
 //set various appearance properties to port
 var port = {
    visibility: true,
@@ -187,8 +182,6 @@ var port = {
 
 You can enable or disable certain behaviors of Port using Port’s **constraints** property. 
 
-_Constraints_
-
 <table>
 <tr>
 <td>
@@ -203,7 +196,7 @@ Disable all constraints</td></tr>
 Connect</td><td>
 Enables connections with connector</td></tr>
 </table>
-
+_Constraints_
 
 The following code illustrates how to set port constraints.
 
@@ -215,4 +208,4 @@ var port = {
 };
 {% endhighlight %}
 
-> _**Note:**_ Port’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
+> **Note:** Port’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).

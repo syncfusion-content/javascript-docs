@@ -58,7 +58,7 @@ diagram.align("center");
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img1.png" Caption="Vertical Alignment"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img1.png" Caption="Vertical Alignment"%}
 
 ### Horizontal Alignment commands
 
@@ -77,7 +77,7 @@ diagram.align("middle");
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img2.png" Caption="Horizontal alignment"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img2.png" Caption="Horizontal alignment"%}
 
 ## Spacing Command
 
@@ -111,7 +111,7 @@ diagram.spaceAcross();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img3.png" Caption="Space Across"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img3.png" Caption="Space Across"%}
 
 ### spaceDown Command
 
@@ -124,7 +124,7 @@ diagram.spaceDown();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img4.png" Caption="Space Down"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img4.png" Caption="Space Down"%}
 
 ## Sizing Command
 
@@ -166,7 +166,7 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img5.png" Caption="Sizing Commands"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img5.png" Caption="Sizing Commands"%}
 
 ## Clipboard commands 
 
@@ -209,7 +209,7 @@ diagram.paste();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img6.png" Caption="Paste"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img6.png" Caption="Paste"%}
 
 ## Grouping Commands
 
@@ -258,7 +258,7 @@ diagram.bringToFront();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img7.png" Caption="Bring To Front"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img7.png" Caption="Bring To Front"%}
 
 ### sendToBack Commands
 
@@ -271,7 +271,7 @@ diagram.sendToBack();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img8.png" Caption="Send To Back"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img8.png" Caption="Send To Back"%}
 
 ### moveForward Commands
 
@@ -284,7 +284,7 @@ diagram.moveForward();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img9.png" Caption="Move Forward"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img9.png" Caption="Move Forward"%}
 
 ### sendBackward Commands
 
@@ -297,7 +297,7 @@ diagram.sendBackward();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img10.png" Caption="Send Backward"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img10.png" Caption="Send Backward"%}
 
 ## Zoom Commands
 
@@ -306,12 +306,14 @@ diagram.sendBackward();
 {% highlight js %}
 
 //ZoomIn
-function ZoomIn() 
-{
-	var diagram = $("#diagram").ejDiagram("instance");
-	var zoom = { zoomFactor: 0.2, zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn };
-	diagram.zoomTo(zoom);    
-}     
+function ZoomIn() {
+   var diagram = $("#diagram").ejDiagram("instance");
+   var zoom = {
+      zoomFactor: 0.2,
+      zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn
+   };
+   diagram.zoomTo(zoom);
+}  
 
 {% endhighlight %}
 
@@ -320,13 +322,14 @@ The following code illustrates how to zoom-out the Diagram.
 {% highlight js %}
 
 //ZoomOut       
-function ZoomOut() 
-{
-	var diagram = $("#diagram").ejDiagram("instance");
-	var zoom = { zoomFactor: 0.2, zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut };
-	diagram.zoomTo(zoom);
+function ZoomOut() {
+   var diagram = $("#diagram").ejDiagram("instance");
+   var zoom = {
+      zoomFactor: 0.2,
+      zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut
+   };
+   diagram.zoomTo(zoom);
 }
-
 {% endhighlight %}
 
 ## Nudge Commands
@@ -363,7 +366,7 @@ diagram.nudge("up", 5);
 
 The corresponding arrow keys are used to move the selected elements to up, down, left or right by 1 pixel.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Commands_images/Commands_img11.png" Caption="Keyboard-Arrow Keys"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img11.png" Caption="Keyboard-Arrow Keys"%}
 
 **Nudge** commands are particularly useful for accurate placement of **Diagram** elements on the **Diagram** as it allows you to move by 1 pixel each time.
 
@@ -398,8 +401,12 @@ The following code illustrates how to execute **FitToPage** command.
 {% highlight js %}
 
 //fit to page – fit diagram based on elements
-diagram.fitToPage("page", "content", { "left": 25, "top": 25, "right": 25, "bottom": 25 });
-
+diagram.fitToPage("page", "content", {
+   "left": 25,
+   "top": 25,
+   "right": 25,
+   "bottom": 25
+});
 {% endhighlight %}
 
 ### FitToMode

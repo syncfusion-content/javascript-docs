@@ -34,28 +34,26 @@ By default, the selection mode of the grid is “**Row**”. This enables you to
 {% highlight html %}
 
 
-    <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSelection: true,
-                selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                        { field: "Freight", width: 75, format: "{0:C}" },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ]
-            });
-        });
-    </script>
-
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSelection: true,
+          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
+                  { field: "Freight", width: 75, format: "{0:C}" },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -73,28 +71,26 @@ Cell selection can be enabled using the **selectionMode** property. This enables
 {% highlight html %}
 
 
-  <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSelection: true,
-                selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                        { field: "Freight", width: 75, format: "{0:C}" },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ]
-            });
-        });
-    </script>
-
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSelection: true,
+          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
+                  { field: "Freight", width: 75, format: "{0:C}" },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -112,28 +108,26 @@ Column selection can be enabled using the **selectionMode** property. This enabl
 {% highlight html %}
 
 
- <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSelection: true,
-                selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                        { field: "Freight", width: 75, format: "{0:C}" },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ]
-            });
-        });
-    </script>
-
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSelection: true,
+          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
+                  { field: "Freight", width: 75, format: "{0:C}" },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -157,29 +151,28 @@ By default, the selection mode of the grid is “**Row**”. This enable you to 
 {% highlight html %}
 
 
- <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSelection: true,
-                //select the multiple records in the grid.
-                selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
-                selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                        { field: "Freight", width: 75, format: "{0:C}" },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSelection: true,
+          //select the multiple records in the grid.
+          selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
+          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
+                  { field: "Freight", width: 75, format: "{0:C}" },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ]
+      });
+  });
+</script>
 
 
 
@@ -198,29 +191,28 @@ Cell selection can be enabled using the **selectionMode** property. This enables
 {% highlight html %}
 
 
-   <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSelection: true,
-                //select the multiple records in the grid.
-                selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
-                selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                        { field: "Freight", width: 75, format: "{0:C}" },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSelection: true,
+          //select the multiple records in the grid.
+          selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
+          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
+                  { field: "Freight", width: 75, format: "{0:C}" },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ]
+      });
+  });
+</script>
 
 
 
@@ -239,29 +231,28 @@ Column selection can be enabled using the selectionMode property. This enables y
 {% highlight html %}
 
 
-  <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSelection: true,
-                //select the multiple records in the grid.
-                selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
-                selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                        { field: "Freight", width: 75, format: "{0:C}" },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSelection: true,
+          //select the multiple records in the grid.
+          selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
+          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
+                  { field: "Freight", width: 75, format: "{0:C}" },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ]
+      });
+  });
+</script>
 
 
 
@@ -279,27 +270,26 @@ You can also enable all the three modes of selection using **selectionMode** pro
 
 {% highlight html %}
 
-  <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSelection: true,
-                selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row, ej.Grid.SelectionMode.Cell, ej.Grid.SelectionMode.Column] },
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                        { field: "Freight", width: 75, format: "{0:C}" },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSelection: true,
+          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row, ej.Grid.SelectionMode.Cell, ej.Grid.SelectionMode.Column] },
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
+                  { field: "Freight", width: 75, format: "{0:C}" },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ]
+      });
+  });
+</script>
 
 
 
@@ -318,27 +308,26 @@ You can toggle the selection using the **enableToggle** property. This provides 
 {% highlight html %}
 
 
- <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSelection: true,
-                selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row], enableToggle: true },
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                        { field: "Freight", width: 75, format: "{0:C}" },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSelection: true,
+          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row], enableToggle: true },
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
+                  { field: "Freight", width: 75, format: "{0:C}" },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ]
+      });
+  });
+</script>
 
 {% endhighlight %}
 
@@ -357,27 +346,27 @@ In this section, you can learn how to customize or override selection background
 {% highlight html %}
 
 <head>
-   <style type="text/css">
-            .e-grid td.e-active {
-                background-color: lightseagreen !important;
-            }
-        </style>
-    </head>
-   <body>
-        <div id="Grid"></div>
-        <script type="text/javascript">
-            $(function () {
-                $("#Grid").ejGrid({
-                    // the datasource "window.gridData" is referred from jsondata.min.js
-                    dataSource: window.gridData,
-                    //select the multiple records in the grid.
-                    selectionType: "multiple",  // you can also enable to select single
-                    allowPaging: true,
-                    pageSettings: { pageSize: 8 }
-                });
-            });
-        </script>
-    </body>
+  <style type="text/css">
+    .e-grid td.e-active {
+    background-color: lightseagreen !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="Grid"></div>
+  <script type="text/javascript">
+    $(function () {
+        $("#Grid").ejGrid({
+            // the datasource "window.gridData" is referred from jsondata.min.js
+            dataSource: window.gridData,
+            //select the multiple records in the grid.
+            selectionType: "multiple",  // you can also enable to select single
+            allowPaging: true,
+            pageSettings: { pageSize: 8 }
+        });
+    });
+  </script>
+</body>
 
 
 {% endhighlight %}
@@ -395,35 +384,34 @@ In this section, you can learn how to get selected records from one **Grid** and
 {% highlight html %}
 
 
-
-   <div class="label1">Master Grid </div>
-   <div id="MasterGrid"></div>
-   <div class="label1">Detail Grid</div>
-   <div id="DetailGrid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#MasterGrid").ejGrid({
-                // the datasource "window.employeeData" is referred from templatelocaldata.js
-                dataSource: ej.DataManager(window.employeeData).executeLocal(ej.Query().take(5)),
-                rowSelected: function (args) {
-                    var employeeID = args.currentData.EmployeeID;
-                    var detaildata = ej.DataManager(window.gridData).executeLocal(ej.Query().where("EmployeeID", ej.FilterOperators.equal, employeeID, false).take(10));
-                    var gridObj = $("#DetailGrid").ejGrid("instance");
-                    gridObj.model.dataSource = ej.DataManager(detaildata.slice(0, 5));
-                    $("#DetailGrid").ejGrid("refreshContent");
-                },
-            });
-
-            $("#DetailGrid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
-                allowPaging: false
-            });
-
-            $("#MasterGrid").ejGrid("selectRows", 0);
-
-        });
-    </script>
+  <div class="label1">Master Grid </div>
+<div id="MasterGrid"></div>
+<div class="label1">Detail Grid</div>
+<div id="DetailGrid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#MasterGrid").ejGrid({
+          // the datasource "window.employeeData" is referred from templatelocaldata.js
+          dataSource: ej.DataManager(window.employeeData).executeLocal(ej.Query().take(5)),
+          rowSelected: function (args) {
+              var employeeID = args.currentData.EmployeeID;
+              var detaildata = ej.DataManager(window.gridData).executeLocal(ej.Query().where("EmployeeID", ej.FilterOperators.equal, employeeID, false).take(10));
+              var gridObj = $("#DetailGrid").ejGrid("instance");
+              gridObj.model.dataSource = ej.DataManager(detaildata.slice(0, 5));
+              $("#DetailGrid").ejGrid("refreshContent");
+          },
+      });
+  
+      $("#DetailGrid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
+          allowPaging: false
+      });
+  
+      $("#MasterGrid").ejGrid("selectRows", 0);
+  
+  });
+</script>
 
 
 {% endhighlight %}

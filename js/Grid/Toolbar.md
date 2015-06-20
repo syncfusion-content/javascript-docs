@@ -34,46 +34,45 @@ If you want **Toolbar** items other than the above items, you can make it using 
 {% highlight html %}
 
 <div id="Grid"></div>
-
-    <script id="Refresh" type="text/x-jsrender">
-        <select id="products">
-            <option value="">All</option>
-            <option value="2">Drinks</option>
-            <option value="4">Dairy Products</option>
-            <option value="3">Packages</option>
-        </select>
-    </script>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            var dataManager = ej.DataManager({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products"
-            });
-            var gridObj = $("#Grid").ejGrid({
-                dataSource: dataManager,
-                toolbarSettings: { showToolbar: true, customToolbarItems: [{ templateID: "#Refresh" }] },
-                scrollSettings: { height: 300, width: "auto" },
-                allowScrolling: true,
-                columns: [
-                    { field: "ProductID", headerText: "Product ID", textAlign: "right", width: 100 },
-                    { field: "ProductName", headerText: "Product Name", width: 200 },
-                    { field: "QuantityPerUnit", headerText: "Quantity", textAlign: "right", width: 100 },
-                    { field: "UnitsOnOrder", headerText: "UnitsOnOrder", textAlign: "right", width: 100 }
-                ]
-
-            }).data("ejGrid");
-            $("#products").ejDropDownList({
-                selectedItemIndex: 0,
-                change: function (args) {
-                    if (this.getSelectedValue() != "")
-                        $("#Grid").ejGrid("model.query", new ej.Query().where("CategoryID", ej.FilterOperators.equal, parseInt(this.getSelectedValue(), 10)));
-                    else
-                        $("#Grid").ejGrid("model.query", new ej.Query());
-                    gridObj.refreshContent(true);
-                }
-            });
-        });
-
-    </script>
+<script id="Refresh" type="text/x-jsrender">
+  <select id="products">
+      <option value="">All</option>
+      <option value="2">Drinks</option>
+      <option value="4">Dairy Products</option>
+      <option value="3">Packages</option>
+  </select>
+</script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      var dataManager = ej.DataManager({
+          url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products"
+      });
+      var gridObj = $("#Grid").ejGrid({
+          dataSource: dataManager,
+          toolbarSettings: { showToolbar: true, customToolbarItems: [{ templateID: "#Refresh" }] },
+          scrollSettings: { height: 300, width: "auto" },
+          allowScrolling: true,
+          columns: [
+              { field: "ProductID", headerText: "Product ID", textAlign: "right", width: 100 },
+              { field: "ProductName", headerText: "Product Name", width: 200 },
+              { field: "QuantityPerUnit", headerText: "Quantity", textAlign: "right", width: 100 },
+              { field: "UnitsOnOrder", headerText: "UnitsOnOrder", textAlign: "right", width: 100 }
+          ]
+  
+      }).data("ejGrid");
+      $("#products").ejDropDownList({
+          selectedItemIndex: 0,
+          change: function (args) {
+              if (this.getSelectedValue() != "")
+                  $("#Grid").ejGrid("model.query", new ej.Query().where("CategoryID", ej.FilterOperators.equal, parseInt(this.getSelectedValue(), 10)));
+              else
+                  $("#Grid").ejGrid("model.query", new ej.Query());
+              gridObj.refreshContent(true);
+          }
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}

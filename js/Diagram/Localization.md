@@ -35,4 +35,4 @@ ej.datavisualization.Diagram.Locale["es-ES"] = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Localization_images/Localization_img1.png" Caption="Localization"%}
+{% include image.html url="/js/Diagram/Localization_images/Localization_img1.png" Caption="Localization"%}

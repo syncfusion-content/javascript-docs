@@ -27,16 +27,16 @@ Overview control solves these problems by showing you a preview, that is, an ove
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-        width: "1020px",
-        height: "600px"
+   width: "1020px",
+   height: "600px"
 });
 
 $("#overview").ejOverview({
-       sourceID: "diagram", 
-       width: "100%", 
-       height: "100%" 
+   sourceID: "diagram",
+   width: "100%",
+   height: "100%"
 });
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Overview-Control_images/Overview-Control_img1.png" Caption="Overview"%}
+{% include image.html url="/js/Diagram/Overview-Control_images/Overview-Control_img1.png" Caption="Overview"%}

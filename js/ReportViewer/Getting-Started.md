@@ -11,15 +11,13 @@ documentation: ug
 
 This section explains briefly about how to create a **ReportViewer** in your web application with **JavaScript**.
 
-## Create your first ReportViewer in JavaScript
-
-###Control Structure
+##Control Structure
 
 The following screenshot displays the control structure of **ReportViewer**.
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img1.png" Caption="ReportViewer Structure"%}
 
-###Create an Application
+##Create your first ReportViewer in JavaScript
 
 This section explains how to configure a **ReportViewer** component in web application. As **ReportViewer** uses **WebApi** to process the report file, you can also learn how to create **WebApi** Service to process the report for **ReportViewer**. In the following example, the **ReportViewer** component displays the Sales Dashboard Report.    
 

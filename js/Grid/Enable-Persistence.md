@@ -15,27 +15,27 @@ documentation: ug
 
 
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                allowSorting: true,
-                allowGrouping: true,
-                enableAltRow: true,
-                enablePersistence: true,
-                columns: [
-                       { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 65 },
-                       { field: "CustomerID", headerText: "Customer ID", width: 90 },
-                       { field: "ShipCity", headerText: "Ship City", width: 90 },
-                       { field: "Freight", headerText: "Freight", width: 90, textAlign: ej.TextAlign.Right, format: "{0:C}" },
-                       { field: "ShipCountry", headerText: "Ship Country", width: 90 },
-                       { field: "EmployeeID", headerText: "Employee ID", width: 90, textAlign: ej.TextAlign.Right }
-                ]
-            });
-        });
-    </script>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          allowSorting: true,
+          allowGrouping: true,
+          enableAltRow: true,
+          enablePersistence: true,
+          columns: [
+                 { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 65 },
+                 { field: "CustomerID", headerText: "Customer ID", width: 90 },
+                 { field: "ShipCity", headerText: "Ship City", width: 90 },
+                 { field: "Freight", headerText: "Freight", width: 90, textAlign: ej.TextAlign.Right, format: "{0:C}" },
+                 { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+                 { field: "EmployeeID", headerText: "Employee ID", width: 90, textAlign: ej.TextAlign.Right }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}

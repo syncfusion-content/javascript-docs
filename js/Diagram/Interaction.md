@@ -94,7 +94,7 @@ diagram.addSelection(node);
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img1.png" Caption="Single selection"%}
+{% include image.html url="/js/Diagram/Interaction_images/Interaction_img1.png" Caption="Single selection"%}
 
 ### Multiple Selections
 
@@ -104,7 +104,7 @@ diagram.addSelection(node);
 
 **Rubber band selection** is done by clicking and dragging mouse pointer on Diagram canvas and rectangle helper appears during **Rubber band selection**. The diagram Nodes/Connectors that intersect in the selection rectangle bounds are added to the selection list.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img2.png" Caption="Multiple Selections"%}
+{% include image.html url="/js/Diagram/Interaction_images/Interaction_img2.png" Caption="Multiple Selections"%}
 
 ## User Handle
 
@@ -190,11 +190,12 @@ The following code illustrates how to create **Delete User handle**
 //Create handle
 var userHandles = [];
 var deleteHandle = {
-    name: "deleteHandle",
-    position: ej.datavisualization.Diagram.UserHandlePositions.BottomRight,
-    showOnMultipleSelection: false,
-    size:30, backgoundColor: "#4D4D4D",
-    pathData: "M33.977998,27.684L33.977998,58.102997" + "41.373998,58.102997 41.373998,27.684z M14.841999,27.684L14.841999,58.102997 22.237998,58.102997" + "22.237998,27.684z M4.0319996,22.433001L52.183,22.433001 52.183,63.999001 4.0319996,63.999001z" + "M15.974,0L40.195001,0 40.195001,7.7260003 56.167001,7.7260003 56.167001,16.000999 0,16.000999" + "0,7.7260003 15.974,7.7260003z"
+   name: "deleteHandle",
+   position: ej.datavisualization.Diagram.UserHandlePositions.BottomRight,
+   showOnMultipleSelection: false,
+   size: 30,
+   backgoundColor: "#4D4D4D",
+   pathData: "M33.977998,27.684L33.977998,58.102997" + "41.373998,58.102997 41.373998,27.684z M14.841999,27.684L14.841999,58.102997 22.237998,58.102997" + "22.237998,27.684z M4.0319996,22.433001L52.183,22.433001 52.183,63.999001 4.0319996,63.999001z" + "M15.974,0L40.195001,0 40.195001,7.7260003 56.167001,7.7260003 56.167001,16.000999 0,16.000999" + "0,7.7260003 15.974,7.7260003z"
 };
 deleteHandle.tool = new DeleteTool(deleteHandle.name);
 userHandles.push(deleteHandle);
@@ -208,38 +209,39 @@ The following code illustrates how to create tool for **Delete User handle.**
 {% highlight js %}
 
 //create tool for delete handle
-var DeleteTool = (function (base) {
-    ej.datavisualization.Diagram.extend(DeleteTool, base);
-    function DeleteTool(name) {
-        base.call(this, name);
-        this.singleAction = true;
-        this.selectedObject = null;
-        this.inAction = false;
-    }
+var DeleteTool = (function(base) {
+   ej.datavisualization.Diagram.extend(DeleteTool, base);
 
-    //mouse down for delete tool
-    DeleteTool.prototype.mousedown = function (evt) {
-        base.prototype.mousedown.call(this, evt);
-        this.inAction = true;
-        this.selectedObject = this.diagram.selectionList[0];
-    };
+   function DeleteTool(name) {
+      base.call(this, name);
+      this.singleAction = true;
+      this.selectedObject = null;
+      this.inAction = false;
+   }
 
-    //mouse move for delete tool
-    DeleteTool.prototype.mousemove = function (evt) {
-        base.prototype.mousemove.call(this, evt);
-    };
+   //mouse down for delete tool
+   DeleteTool.prototype.mousedown = function(evt) {
+      base.prototype.mousedown.call(this, evt);
+      this.inAction = true;
+      this.selectedObject = this.diagram.selectionList[0];
+   };
 
-    //mouse up for delete tool
-    DeleteTool.prototype.mouseup = function (evt) {
-        var diagram = $("#diagram").ejDiagram("instance");
-        if (this.inAction) {
-            this.inAction = false;
-            diagram.remove(this.selectedObject);
-        }
-        base.prototype.mouseup.call(this, evt);
-    };
+   //mouse move for delete tool
+   DeleteTool.prototype.mousemove = function(evt) {
+      base.prototype.mousemove.call(this, evt);
+   };
 
-    return DeleteTool;
+   //mouse up for delete tool
+   DeleteTool.prototype.mouseup = function(evt) {
+      var diagram = $("#diagram").ejDiagram("instance");
+      if (this.inAction) {
+         this.inAction = false;
+         diagram.remove(this.selectedObject);
+      }
+      base.prototype.mouseup.call(this, evt);
+   };
+
+   return DeleteTool;
 })(ej.datavisualization.Diagram.ToolBase);
 
 {% endhighlight %}
@@ -256,7 +258,7 @@ $("#Diagram").ejDiagram(selectedItems: { userHandles: userHandles } );
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img3.png" Caption="Delete-User Handle"%}
+{% include image.html url="/js/Diagram/Interaction_images/Interaction_img3.png" Caption="Delete-User Handle"%}
 
 ## Zoom 
 
@@ -412,15 +414,23 @@ Snapping to gridlines is enabled or disabled by changing the value of snap Setti
 {% highlight js %}
 
 //enable snap to horizontal gridlines constraint
-var snapSettings = { snapConstraints : ej.datavisualization.Diagram.SnapConstraints.SnapToHorizontalLines };
+var snapSettings = {
+   snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToHorizontalLines
+};
 
 //enable snap to vertical gridlines constraint
-snapSettings = { snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToVerticalLines };
+snapSettings = {
+   snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToVerticalLines
+};
 
 //enable snap to both horizontal and vertical gridlines constraint
-snapSettings = { snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToLines}
+snapSettings = {
+   snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToLines
+}
 
-$("#Diagram").ejDiagram({ snapSettings: snapSettings}); 
+$("#Diagram").ejDiagram({
+   snapSettings: snapSettings
+});
 {% endhighlight %}
 
 ### SnapInterval
@@ -428,17 +438,25 @@ $("#Diagram").ejDiagram({ snapSettings: snapSettings});
 You can customize the position to which a diagram object snaps by changing the value of the **snapInterval** property of grid lines. **snapInterval** is a double collection that determines the space between patterns of gridlines.
 
 {% highlight js %}
-
 //set snap interval
-var snapSettings = { horizontalGridlines: { snapInterval: [20] }, verticalGridlines: { snapInterval: [20] } };
-$("#Diagram").ejDiagram({ snapSettings: snapSettings});
+var snapSettings = {
+   horizontalGridlines: {
+      snapInterval: [20]
+   },
+   verticalGridlines: {
+      snapInterval: [20]
+   }
+};
+$("#Diagram").ejDiagram({
+   snapSettings: snapSettings
+});
 {% endhighlight %}
 
 ### SnapToObject
 
 The **snap-to-object** feature provides visual cues to assist with aligning and spacing diagram nodes. You can snap a node with its neighboring objects based on its size and position. Such alignments are visually represented as guidelines.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Interaction_images/Interaction_img4.png" Caption="Snap to Object"%}
+{% include image.html url="/js/Diagram/Interaction_images/Interaction_img4.png" Caption="Snap to Object"%}
 
 ### Enabling and Disabling snapping to objects
 
@@ -447,7 +465,11 @@ The **snap-to-object** feature provides visual cues to assist with aligning and 
 {% highlight js %}
 
 //enable snap to object behavior
-$("#Diagram").ejDiagram({ snapSettings: { enableSnapToObject: true }});
+$("#Diagram").ejDiagram({
+   snapSettings: {
+      enableSnapToObject: true
+   }
+});
 
 {% endhighlight %}
 
@@ -458,6 +480,10 @@ You can rotate the Node with multiples of **snapAngle**.
 {% highlight js %}
 
 //set snap angle
-$("#Diagram").ejDiagram({ snapSettings: { snapAngle: 5 }});
+$("#Diagram").ejDiagram({
+   snapSettings: {
+      snapAngle: 5
+   }
+});
 
 {% endhighlight %}

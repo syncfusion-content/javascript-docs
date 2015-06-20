@@ -11,7 +11,7 @@ documentation: ug
 
 **Gridlines** are horizontal and vertical lines behind the Diagram elements. They provide visual guidance when dragging or arranging objects on the Diagram surface.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Gridlines_images/Gridlines_img1.png" Caption="Gridlines"%}
+{% include image.html url="/js/Diagram/Gridlines_images/Gridlines_img1.png" Caption="Gridlines"%}
 
 ## SnapConstraints
 
@@ -63,18 +63,28 @@ The following code illustrates how to show or hide gridlines using constraints
 {% highlight js %}
 
 //show horizontal gridlines
-var snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines };
+var snapSettings = {
+   "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
+};
 
 //show vertical gridlines
-snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines };
+snapSettings = {
+   "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines
+};
 
 //show both horizontal and vertical gridlines
-snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowLines };
+snapSettings = {
+   "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowLines
+};
 
 //hide both horizontal and vertical gridlines
-snapSettings = { "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.None };
+snapSettings = {
+   "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.None
+};
 
-$("#Diagram").ejDiagram({ snapSettings: snapSettings });
+$("#Diagram").ejDiagram({
+   snapSettings: snapSettings
+});
 
 {% endhighlight %}
 
@@ -117,9 +127,17 @@ The following code illustrates how to customize the **Gridline appearance**.
 {% highlight js %}
 
 //set various appearance properties to gridlines
-var snapSettings = { horizontalGridlines: { linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15], lineColor: "blue", lineDashArray: "2  2" } };    
-$("#Diagram").ejDiagram({ snapSettings: snapSettings });
+var snapSettings = {
+   horizontalGridlines: {
+      linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
+      lineColor: "blue",
+      lineDashArray: "2  2"
+   }
+};
+$("#Diagram").ejDiagram({
+   snapSettings: snapSettings
+});
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Gridlines_images/Gridlines_img2.png" Caption="Customized Gridlines"%}
+{% include image.html url="/js/Diagram/Gridlines_images/Gridlines_img2.png" Caption="Customized Gridlines"%}

@@ -11,18 +11,21 @@ documentation: ug
 
 The **SymbolPalette** displays a collection of palettes. The Palette shows nodes and connectors. It allows you to drag and drop the nodes and connectors on the Diagram. The Palette has a header that displays the name and also has an option that allows you to expand or collapse its items. Each node or connector in the palette is called a Palette Item.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Symbol-Palette_images/Symbol-Palette_img1.jpeg" Caption="SymbolPalette"%}
+{% include image.html url="/js/Diagram/Symbol-Palette_images/Symbol-Palette_img1.jpg" Caption="SymbolPalette"%}
 
 ## Create and Add Symbols in the Palette
 
 Node and Connector are added to the Palette as Palette Items. The following code example illustrates how to create and add symbols in Palette.
 
 {% highlight js %}
-
 // palette array
 var paletteCollection = [];
-var basiShapes = { "name": "Basic Shapes" };
-var connectors = { "name": "Connectors" };
+var basiShapes = {
+   "name": "Basic Shapes"
+};
+var connectors = {
+   "name": "Connectors"
+};
 
 //add node/connector to palette
 basiShapes.Add(createNode(name, offsetX, offsety, height, width));
@@ -34,22 +37,23 @@ paletteCollection.Add(connectors);
 
 //create node
 function createNode(name, offsetX, offsety, height, width) {
-//note: for creating node refer the link Node creation
+   //note: for creating node refer the link Node creation
 }
 //create connector
 function createConnector(name, segments, decorator) {
-//note: for creating connector refer the link Connector creation    
+   //note: for creating connector refer the link Connector creation    
 }
 
-$("#palette").ejSymbolPalette({ palettes: paletteCollection });
-
+$("#palette").ejSymbolPalette({
+   palettes: paletteCollection
+});
 {% endhighlight %}
 
 ## Adding Node and Connector
 
 The Diagram provides support for adding nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer. The desired palette item that is clicked, is added to the Diagram when you set the desired Diagram id to the Symbol Palette’s diagramId.
 
-{% include image.html url="/js/Diagram/Concepts-and-Features/Symbol-Palette_images/Symbol-Palette_img2.png" Caption="Adding Nodes and Connectors through Symbol Palette"%}
+{% include image.html url="/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png" Caption="Adding Nodes and Connectors through Symbol Palette"%}
 
 ## Appearance
 
@@ -118,21 +122,19 @@ _Appearance_
 The following code illustrates how to customize the **Appearance** of the **Palette.**
 
 {% highlight js %}
-
 // properties to symbol palette
-$("#palette").ejSymbolPalette({ 
-       palettes: collection,
-       diagramId: "DiagramContent",
-       height: "100%",
-       width: "100%",
-       paletteItemWidth: 45,
-       paletteItemHeight: 45,
-       showPaletteItemText: true,
-       headerHeight: 30,
-       allowDrag: true,
-       selectedPaletteName: "Basic Shapes"
-}); 
-
+$("#palette").ejSymbolPalette({
+   palettes: collection,
+   diagramId: "DiagramContent",
+   height: "100%",
+   width: "100%",
+   paletteItemWidth: 45,
+   paletteItemHeight: 45,
+   showPaletteItemText: true,
+   headerHeight: 30,
+   allowDrag: true,
+   selectedPaletteName: "Basic Shapes"
+});
 {% endhighlight %}
 
 ## Preview for Drag and Drop
@@ -171,10 +173,11 @@ _Preview Appearance_
 The following code example illustrates how to customize **Preview Content**.
 
 {% highlight js %}
-
   //set properties to symbol palette preview
-  previewWidth: 100,
-  previewHeight: 100,
-  previewOffset: { x: 102, y: 102 }
-
+ previewWidth: 100,
+    previewHeight: 100,
+    previewOffset: {
+       x: 102,
+       y: 102
+    }
 {% endhighlight %}

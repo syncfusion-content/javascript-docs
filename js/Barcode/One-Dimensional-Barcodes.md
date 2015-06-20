@@ -38,7 +38,7 @@ $("#barcode").ejBarcode({
 
 **Codabar** is a variable length symbol that encodes the following 20 characters:
 
-           0123456789-$:/.+ABCD
+ 0123456789-$:/.+ABCD
 
 The characters, A, B, C and D are used as start and stop characters. **Codabar** is used in libraries, blood banks, the package delivery industry and a variety of other information processing applications.
 

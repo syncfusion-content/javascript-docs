@@ -172,11 +172,11 @@ $("#OlapClient").ejOlapClient({ chartType: ej.olap.OlapChart.ChartTypes.Spline }
 <pre class="prettyprint">
 <code> 
 //Get or set the chartType API, after initialization:
-//Gets the chartType value  
-$("#OlapClient").ejOlapClient("option","chartType");
+        //Gets the chartType value  
+        $("#OlapClient").ejOlapClient("option","chartType");
                         
-//Sets the chartType value 
-$("#OlapClient").ejOlapClient("option","chartType", ej.olap.OlapChart.ChartTypes.Area); </code>
+        //Sets the chartType value 
+        $("#OlapClient").ejOlapClient("option","chartType", ej.olap.OlapChart.ChartTypes.Area); </code>
 </pre>
 
 
@@ -224,11 +224,11 @@ $("#OlapClient").ejOlapClient({ cssClass: "Olive" });</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the cssClass API, after initialization:
-//Gets the cssClass value  
-$("#OlapClient").ejOlapClient("option","cssClass");
+        //Gets the cssClass value  
+        $("#OlapClient").ejOlapClient("option","cssClass");
                  
-//Sets the cssClass value 
-$("#OlapClient").ejOlapClient("option","cssClass", "Olive" ); </code>
+        //Sets the cssClass value 
+        $("#OlapClient").ejOlapClient("option","cssClass", "Olive" ); </code>
 </pre>
 
 
@@ -257,7 +257,7 @@ Default Value:
 
 
 
-* null
+* {}
 
 
 
@@ -276,11 +276,11 @@ $("#OlapClient").ejOlapClient({ customObject: {"MyObject": "Hi Syncfusion!!"} })
 <pre class="prettyprint">
 <code> 
 //Get or set the customObject API, after initialization:
-//Gets the customObject value  
-$("#OlapClient").ejOlapClient("option","customObject");
+        //Gets the customObject value  
+        $("#OlapClient").ejOlapClient("option","customObject");
                      
-//Sets the customObject value 
-$("#OlapClient").ejOlapClient("option","customObject", {"MyObject": "Hello World!!"} ); </code>
+        //Sets the customObject value 
+        $("#OlapClient").ejOlapClient("option","customObject", {"MyObject": "Hello World!!"} ); </code>
 </pre>
 
 
@@ -349,7 +349,7 @@ $("#OlapClient").ejOlapClient("option", "displaySettings", {mode: "chartandgrid"
 
 
 
-Lets the user to customize the display of OLAP Chart and PivotGrid controls inside the OLAP Client component.
+Lets the user to customize the display of OLAP Chart and OLAP Grid controls inside the OLAP Client component.
 
 
 
@@ -380,11 +380,11 @@ $("#OlapClient").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.Olap
 <pre class="prettyprint">
 <code> 
 //Get or set the controlPlacement API, after initialization:
-//Gets the controlPlacement value  
-$("#OlapClient").ejOlapClient("option","displaySettings.controlPlacement");
+        //Gets the controlPlacement value  
+        $("#OlapClient").ejOlapClient("option","displaySettings.controlPlacement");
                  
-//Sets the controlPlacement value 
-$("#OlapClient").ejOlapClient("option","displaySettings.controlPlacement", ej.olap.OlapClient.ControlPlacement.Tile ); </code>
+        //Sets the controlPlacement value 
+        $("#OlapClient").ejOlapClient("option","displaySettings.controlPlacement", ej.olap.OlapClient.ControlPlacement.Tile ); </code>
 </pre>
 
 
@@ -432,11 +432,11 @@ $("#OlapClient").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClien
 <pre class="prettyprint">
 <code> 
 //Get or set the defaultView API, after initialization:
-//Gets the defaultView value  
-$("#OlapClient").ejOlapClient("option","displaySettings.defaultView");
+        //Gets the defaultView value  
+        $("#OlapClient").ejOlapClient("option","displaySettings.defaultView");
                       
-//Sets the defaultView value 
-$("#OlapClient").ejOlapClient("option","displaySettings.defaultView", ej.olap.OlapClient.DefaultView.Chart ); </code>
+        //Sets the defaultView value 
+        $("#OlapClient").ejOlapClient("option","displaySettings.defaultView", ej.olap.OlapClient.DefaultView.Chart ); </code>
 </pre>
 
 
@@ -453,7 +453,7 @@ $("#OlapClient").ejOlapClient("option","displaySettings.defaultView", ej.olap.Ol
 
 
 
-Enables/ disables the full screen view of the OLAP components(OLAP Chart, PivotGrid) in OLAP Client.
+Enables/ disables the full screen view of the OLAP components(OLAP Chart, OLAP Grid) in OLAP Client.
 
 
 
@@ -484,11 +484,11 @@ $("#OlapClient").ejOlapClient({ displaySettings.enableFullScreen: true });</code
 <pre class="prettyprint">
 <code> 
 //Get or set the enableFullScreen API, after initialization:
-//Gets the enableFullScreen value  
-$("#OlapClient").ejOlapClient("option","displaySettings.enableFullScreen");
+        //Gets the enableFullScreen value  
+        $("#OlapClient").ejOlapClient("option","displaySettings.enableFullScreen");
                  
-//Sets the enableFullScreen value 
-$("#OlapClient").ejOlapClient("option","displaySettings.enableFullScreen", true ); </code>
+        //Sets the enableFullScreen value 
+        $("#OlapClient").ejOlapClient("option","displaySettings.enableFullScreen", true ); </code>
 </pre>
 
 
@@ -536,11 +536,11 @@ $("#OlapClient").ejOlapClient({ displaySettings.enableTogglePanel: true });</cod
 <pre class="prettyprint">
 <code> 
 //Get or set the enableTogglePanel API, after initialization:
-//Gets the enableTogglePanel value  
-$("#OlapClient").ejOlapClient("option","displaySettings.enableTogglePanel");
+        //Gets the enableTogglePanel value  
+        $("#OlapClient").ejOlapClient("option","displaySettings.enableTogglePanel");
                         
-//Sets the enableTogglePanel value 
-$("#OlapClient").ejOlapClient("option","displaySettings.enableTogglePanel", true ); </code>
+        //Sets the enableTogglePanel value 
+        $("#OlapClient").ejOlapClient("option","displaySettings.enableTogglePanel", true ); </code>
 </pre>
 
 
@@ -588,11 +588,11 @@ $("#OlapClient").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.Disp
 <pre class="prettyprint">
 <code> 
 //Get or set the mode API, after initialization:
-//Gets the mode value  
-$("#OlapClient").ejOlapClient("option","displaySettings.mode");
+        //Gets the mode value  
+        $("#OlapClient").ejOlapClient("option","displaySettings.mode");
                      
-//Sets the mode value 
-$("#OlapClient").ejOlapClient("option","displaySettings.mode", ej.olap.OlapClient.DisplayMode.ChartOnly ); </code>
+        //Sets the mode value 
+        $("#OlapClient").ejOlapClient("option","displaySettings.mode", ej.olap.OlapClient.DisplayMode.ChartOnly ); </code>
 </pre>
 
 
@@ -640,11 +640,11 @@ $("#OlapClient").ejOlapClient({ enableMeasureGroups : true });</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the enableMeasureGroups API, after initialization:
-//Gets the enableMeasureGroups value  
-$("#OlapClient").ejOlapClient("option","enableMeasureGroups");
+        //Gets the enableMeasureGroups value  
+        $("#OlapClient").ejOlapClient("option","enableMeasureGroups");
                       
-//Sets the enableMeasureGroups value 
-$("#OlapClient").ejOlapClient("option","enableMeasureGroups", true ); </code>
+        //Sets the enableMeasureGroups value 
+        $("#OlapClient").ejOlapClient("option","enableMeasureGroups", true ); </code>
 </pre>
 
 
@@ -661,7 +661,7 @@ $("#OlapClient").ejOlapClient("option","enableMeasureGroups", true ); </code>
 
 
 
-Sets the layout for PivotGrid component inside OLAP Client.
+Sets the layout for OLAP Grid component inside OLAP Client.
 
 
 
@@ -692,11 +692,11 @@ $("#OlapClient").ejOlapClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });<
 <pre class="prettyprint">
 <code> 
 //Get or set the gridLayout API, after initialization:
-//Gets the gridLayout value  
-$("#OlapClient").ejOlapClient("option","gridLayout");
+        //Gets the gridLayout value  
+        $("#OlapClient").ejOlapClient("option","gridLayout");
                        
-//Sets the gridLayout value 
-$("#OlapClient").ejOlapClient("option","gridLayout", ej.PivotGrid.Layout.NormalTopSummary); </code>
+        //Sets the gridLayout value 
+        $("#OlapClient").ejOlapClient("option","gridLayout", ej.PivotGrid.Layout.NormalTopSummary); </code>
 </pre>
 
 
@@ -744,11 +744,11 @@ $("#OlapClient1").ejOlapClient({isResponsive: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the isResponsive, after initialization:
-//Gets the isResponsive values state
-$("#OlapClient").ejOlapClient("option", "isResponsive");
+        //Gets the isResponsive values state
+        $("#OlapClient").ejOlapClient("option", "isResponsive");
                     
-//Sets the reponsive layout
-$("#OlapClient").ejOlapClient("option", "isResponsive","true");                                </code>
+        //Sets the reponsive layout
+        $("#OlapClient").ejOlapClient("option", "isResponsive","true");                 *               </code>
 </pre>
 
 
@@ -796,11 +796,11 @@ $("#OlapClient").ejOlapClient({ locale: "en-US" });</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the locale API, after initialization:
-//Gets the locale value  
-$("#OlapClient").ejOlapClient("option","locale");
+        //Gets the locale value  
+        $("#OlapClient").ejOlapClient("option","locale");
                    
-//Sets the locale value 
-$("#OlapClient").ejOlapClient("option","locale", "fr-FR" ); </code>
+        //Sets the locale value 
+        $("#OlapClient").ejOlapClient("option","locale", "fr-FR" ); </code>
 </pre>
 
 
@@ -1576,11 +1576,11 @@ $("#OlapClient").ejOlapClient({ title: "Olap Browser" });</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the title API, after initialization:
-//Gets the title value  
-$("#OlapClient").ejOlapClient("option","title");
+        //Gets the title value  
+        $("#OlapClient").ejOlapClient("option","title");
                     
-//Sets the title value 
-$("#OlapClient").ejOlapClient("option","title", "Olap Browser" ); </code>
+        //Sets the title value 
+        $("#OlapClient").ejOlapClient("option","title", "Olap Browser" ); </code>
 </pre>
 
 
@@ -1628,11 +1628,11 @@ $("#OlapClient").ejOlapClient({ url: "/wcf/OlapClientService.svc" });</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the url, after initialization:
-//Gets the url value  
-$("#OlapClient").ejOlapClient("option","url");
+        //Gets the url value  
+        $("#OlapClient").ejOlapClient("option","url");
                       
-//Sets the url value 
-$("#OlapClient").ejOlapClient("option","url", "/wcf/OlapClientService.svc" ); </code>
+        //Sets the url value 
+        $("#OlapClient").ejOlapClient("option","url", "/wcf/OlapClientService.svc" ); </code>
 </pre>
 
 
@@ -1656,7 +1656,7 @@ $("#OlapClient").ejOlapClient("option","url", "/wcf/OlapClientService.svc" ); </
 
 
 
-This function is used to drill down the PivotGrid widget once OLAP Chart drill down.
+This function is used to drill down the OLAP Grid widget once OLAP Chart drill down.
 
 
 
@@ -1804,7 +1804,7 @@ clientObj.getAxisPosition(eve);
 
 
 
-This function is used to drill down the OLAP Chart widget once PivotGrid component drill down.
+This function is used to drill down the OLAP Chart widget once OLAP Grid component drill down.
 
 
 
@@ -1823,7 +1823,7 @@ $('#OlapClient').ejOlapClient({
   });
 var clientObj = $("#OlapClient").data("ejOlapClient");
 clientObj.gridDrillSuccess(ej.proxy(function(){}, this));
-// raised after PivotGrid drill down
+// raised after OLAP Grid drill down
 &lt;/script&gt;</code>
 </pre>
 
@@ -2075,7 +2075,7 @@ Fires after the service is invoked.
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
@@ -2163,7 +2163,7 @@ Fires when the summary cell is clicked.
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
@@ -2251,7 +2251,7 @@ Fires before rendering the chart
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
@@ -2329,7 +2329,7 @@ Fires on loading the control
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
@@ -2412,7 +2412,7 @@ Fires on completion of rendering control
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
@@ -2500,7 +2500,7 @@ Fires when error occured in rendering the control
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
@@ -2583,7 +2583,7 @@ Fires when the control is rendered success
 <tr>
 <td class="name"><code>cancel</code></td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name"><code>model</code></td>
