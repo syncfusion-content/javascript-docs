@@ -103,7 +103,7 @@ The **maxValue** property is used to set the maximum zoom level of the map.
 
 {% endhighlight %}
 
-##Additional Options to Zoom the Map
+###Additional Options to Zoom the Map
 
 Maps can be zoomed using the following options also,
 

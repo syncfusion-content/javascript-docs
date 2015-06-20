@@ -160,6 +160,7 @@ tooltipTemplate</td><td>
 String</td><td>
 Gets or sets the tooltip template for bubbles.</td></tr>
 </table>
+
 ###Adding Bubbles to a Map
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the **maxValue**, **minValue**, and **valuePath** properties as illustrated in the following code sample.

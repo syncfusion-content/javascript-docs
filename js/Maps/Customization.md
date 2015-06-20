@@ -11,16 +11,6 @@ documentation: ug
 
 **Maps** control supports color customization to determine the exact combination of colors for shapes displayed in Maps and tooltip support to display additional information of shape data.
 
-##Shapes Color Customization
-
-The Map control highly supports the customization of the shape’s color. The shape’s color can be customized using the following ways:
-
-1. Using the fill, stroke and stroke thickness properties.
-
-2. Color Mapping support.
-
-3. Color Palette support.
-
 ##Shape Settings
 
 The **shapeSettings** defines the basic customization settings of shapes in the map. 
@@ -289,15 +279,9 @@ Here USA election data is considered as input datasource and stored in “electi
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img3.png" Caption="Map with fill color"%}****
 
-## autoFil
+## autoFill
 
 When **autoFill** property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
-
-##colorPalette
-
-The **colorPalette** property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
-
-The **colorPalette** property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
 
 {% highlight html %}
 
@@ -322,7 +306,11 @@ The **colorPalette** property can be set with palette1, palette2, palette3 and c
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img4.png" Caption="Map with color palette property"%}
 
-##Custom Palette
+##colorPalette
+
+The **colorPalette** property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
+
+The **colorPalette** property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
 
 The **customPalette** property is used to set an array of colors to be auto filled in shapes.
 

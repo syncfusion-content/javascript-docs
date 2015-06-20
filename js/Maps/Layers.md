@@ -13,13 +13,13 @@ Map is maintained through Layers and it can accommodate one or more layers.
 
 ##Multilayers
 
-The Multilayer support allows you to load multiple shape files in a single container, enabling maps to display more information.****
+The Multilayer support allows you to load multiple shape files in a single container, enabling maps to display more information.
 
-##Loading Multiple Shape files in a Single Container
+###Loading Multiple Shape files in a Single Container
 
 This feature allows the map to load multiple types of shape files in a single container.
 
-##Adding Multiple Layers in the Map
+###Adding Multiple Layers in the Map
 
 The shape layers is the core layer of the map. The multiple layers can be added in the shape Layers as **subShapeFileLayers** within the shape Layers.
 
