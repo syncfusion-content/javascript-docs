@@ -39,7 +39,6 @@ Values accepted-(“left”/“right”/“center”/“top”/“bottom”/“m
 Align all the nodes/connectors in the selection list to the left/right/center/top/bottom/middle of the selection boundary</td></tr>
 </table>
 
-_Alignment Command_
 
 ### Vertical Alignment commands
 
@@ -98,7 +97,6 @@ spaceDown</td><td>
 Align the nodes/connectors in the selection list with equal vertical distance between them.</td></tr>
 </table>
 
-_Spacing Command_
 
 ### spaceAcross Command
 
@@ -149,7 +147,6 @@ sameWidth</td><td>
 Width of the nodes in the selection list is resized to width of first node in the selection list.</td></tr>
 </table>
 
-_Sizing Command_
 
 The following code illustrate how to execute **Sizing commands**
 
@@ -351,7 +348,6 @@ delta(integer)</td><td>
 Nudge command moves the selected elements towards up/ down/ left/ right by the number of pixels specified by the parameter delta. When delta is not specified, by default it is considered as 1 pixel.</td></tr>
 </table>
 
-_Nudge Commands_
 
 The following code illustrates how to execute **Nudge** command.
 
@@ -394,7 +390,6 @@ Value accepted-ej.datavisualization.Diagram.Region<br/><br/>
 <b>margin</b> – Space that is to be left in between the content and viewport.</td></tr>
 </table>
 
-_fitToPage Commands_
 
 The following code illustrates how to execute **FitToPage** command.
 
@@ -432,7 +427,6 @@ Height</td><td>
 Fits the height of <b>Diagram</b> content into view</td></tr>
 </table>
 
-_Fit To Modes_
 
 ### Region
 
@@ -453,7 +447,6 @@ PageSettings</td><td>
 Specifies the region based on page settings</td></tr>
 </table>
 
-_Diagram Region_
 
 ## Undo/Redo
 
