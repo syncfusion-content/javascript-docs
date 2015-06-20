@@ -189,13 +189,11 @@ type = "text/x-jsrender">
    <path d = "M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z 
 M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S
 29.867 34.87 29.353 34.425 L 1 9.826 V 60 H 61 V 9.826 L
-32.644 34.425 Z "></path> < text x = "
-20 " y = "
-45 " > { {: text
-}
-} < /text> < /g > < /script>
+32.644 34.425 Z "></path> 
+< text x = "20" y = "45" > { {: text } } < /text> < /g > < /script>
+{% endhighlight %}
 
-
+{% highlight js %}
 var node = {
    type: ej.datavisualization.Diagram.Shapes.Native,
    templateId: "svgTemplate",
