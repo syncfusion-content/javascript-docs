@@ -279,7 +279,9 @@ Here USA election data is considered as input datasource and stored in “electi
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img3.png" Caption="Map with fill color"%}****
 
-## autoFill
+##Color Palette
+
+### autoFill
 
 When **autoFill** property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
 
@@ -303,10 +305,9 @@ When **autoFill** property is set to true, shapes are filled with default colors
 {% endhighlight %}
 
 
-
 {% include image.html url="/js/Maps/Customization_images/Customization_img4.png" Caption="Map with color palette property"%}
 
-##colorPalette
+###colorPalette
 
 The **colorPalette** property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
@@ -371,7 +372,7 @@ The tooltip is displayed only when you set showTooltip to “True” in the shap
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img6.png" Caption="Map with Tooltip"%}
 
-##Tooltip Template
+###Tooltip Template
 
 The tooltipTemplate property is used for customizing the template for tooltip.
 
