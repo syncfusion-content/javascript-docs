@@ -306,12 +306,14 @@ diagram.sendBackward();
 {% highlight js %}
 
 //ZoomIn
-function ZoomIn() 
-{
-	var diagram = $("#diagram").ejDiagram("instance");
-	var zoom = { zoomFactor: 0.2, zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn };
-	diagram.zoomTo(zoom);    
-}     
+function ZoomIn() {
+   var diagram = $("#diagram").ejDiagram("instance");
+   var zoom = {
+      zoomFactor: 0.2,
+      zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn
+   };
+   diagram.zoomTo(zoom);
+}  
 
 {% endhighlight %}
 
@@ -320,13 +322,14 @@ The following code illustrates how to zoom-out the Diagram.
 {% highlight js %}
 
 //ZoomOut       
-function ZoomOut() 
-{
-	var diagram = $("#diagram").ejDiagram("instance");
-	var zoom = { zoomFactor: 0.2, zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut };
-	diagram.zoomTo(zoom);
+function ZoomOut() {
+   var diagram = $("#diagram").ejDiagram("instance");
+   var zoom = {
+      zoomFactor: 0.2,
+      zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut
+   };
+   diagram.zoomTo(zoom);
 }
-
 {% endhighlight %}
 
 ## Nudge Commands
@@ -398,8 +401,12 @@ The following code illustrates how to execute **FitToPage** command.
 {% highlight js %}
 
 //fit to page – fit diagram based on elements
-diagram.fitToPage("page", "content", { "left": 25, "top": 25, "right": 25, "bottom": 25 });
-
+diagram.fitToPage("page", "content", {
+   "left": 25,
+   "top": 25,
+   "right": 25,
+   "bottom": 25
+});
 {% endhighlight %}
 
 ### FitToMode
