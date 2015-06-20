@@ -72,11 +72,17 @@ The following code illustrates how to customize **Page Settings**
 
 //set page setting properties
 $("#Diagram").ejDiagram({
-    pageSettings: {
-        pageHeight: 300, pageWidth: 450, pageBorderWidth: 4, pageBackgroundColor: "lightblue",
-        pageBorderColor: "black", pageMargin: 35, showPageBreaks: true, multiplePage: true,
-        pageOrientation: ej.datavisualization.Diagram.Orientation.Portrait
-    }
+   pageSettings: {
+      pageHeight: 300,
+      pageWidth: 450,
+      pageBorderWidth: 4,
+      pageBackgroundColor: "lightblue",
+      pageBorderColor: "black",
+      pageMargin: 35,
+      showPageBreaks: true,
+      multiplePage: true,
+      pageOrientation: ej.datavisualization.Diagram.Orientation.Portrait
+   }
 });
 
 {% endhighlight %}
@@ -143,18 +149,16 @@ pageSettings:
 The scroll limit allows you to scroll the diagram page along X and Y axis based on the options specified. 
 
 * By default the value is set as infinity (can scroll in all directions, without any restrictions). 
-
 * When scroll limit is set as diagram, you are restricted to scroll the page beyond the diagram content. 
-
 * By specifying the value as limited you can set the limit of the scrollable area through scrollable area property. 
 
-> _**Note:**_ Refer to the scrollable area for more details.
+> **Note:** Refer to the scrollable area for more details.
 
 The following code example illustrates how to specify scroll limit. 
 
 {% highlight js %}
 
-//Scrolllimit for diagram by default
+//Scroll limit for diagram by default
 pageSettings: { scrollLimit:"infinity" }
 
 {% endhighlight %}
@@ -165,14 +169,18 @@ You can restrict scrolling beyond a particular rectangular area and the rectangu
 
 {% highlight js %}
 
-pageSettings: 
-    { 
-        //Scrolllimit for diagram as limited
-        scrollLimit:"limited",
-        
-        //Set limit of the scrollable area
-        scrollableArea: { x: 0, y: 0, width: 5000, height: 5000}
-    }
+pageSettings: {
+   //Scrolllimit for diagram as limited
+   scrollLimit: "limited",
+
+   //Set limit of the scrollable area
+   scrollableArea: {
+      x: 0,
+      y: 0,
+      width: 5000,
+      height: 5000
+   }
+}
 
 {% endhighlight %}
 
