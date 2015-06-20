@@ -74,11 +74,13 @@ $("#diagram").ejDiagram ({
     //use automatic layout to arranging elements on the page        
     layout: { type: "hierarchicaltree"},          
     defaultSettings: {
+    
         //set the default properties of the node.
         node: { 
             width: 100, height: 40, fillColor:"darkcyan",          
             labels: [{name: "label1", bold: true }] 
         },
+        
         //set the default properties of the connector.         
         connector: { 
             segments: [{ "type": "orthogonal" }], 
@@ -87,6 +89,7 @@ $("#diagram").ejDiagram ({
     },
     //initialize the node template.
     nodeTemplate: nodeTemplate,
+    
     //configure data source for diagram
     dataSourceSettings: {
         id: "Name", parent: "ReportingPerson",
@@ -238,6 +241,7 @@ The Diagram provides support to form diagram from the **HTML table**. It is flex
 //configure data source for diagram	
 dataSourceSettings: {
     id: "Id", parent: "ReportingPerson",
+    
     //specifies the table name 
     dataSource: ej.DataManager($("#Table1"))
 }

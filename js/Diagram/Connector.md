@@ -32,6 +32,7 @@ var connectors = [{
       y: 150
    }
 }];
+
 //add connectors to diagram
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -73,6 +74,7 @@ var connectors = [{
       y: 150
    }
 }];
+
 //add connectors to diagram model
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -91,6 +93,7 @@ var segments = [{
    direction: "bottom",
    length: 90
 }];
+
 //create a connector 
 var connectors = [{
    name: "connector",
@@ -105,6 +108,7 @@ var connectors = [{
       y: 150
    }
 }];
+
 //add connectors to diagram model
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -176,6 +180,7 @@ var segments = [{
       y: 72
    }
 }];
+
 var connector = [{
    segments: segments,
    sourcePoint: {
@@ -202,12 +207,14 @@ var segments = [{ type: "bezier",
       angle: 180,
       distance: 120
    },
+   
    //Length and angle between target point and control point 2
    vector2: {
       angle: 10,
       distance: 140
    }
 }];
+
 var connectors = [{
    segments: segments,
    sourcePoint: {
@@ -436,7 +443,6 @@ opacity</td><td>
 number</td><td>
 Gets or sets the opacity of the connector</td></tr>
 </table>
-
 
 {% highlight js %}
 //set various appearance properties to connector

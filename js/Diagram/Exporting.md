@@ -38,14 +38,19 @@ var diagram = $("#DiagramContent").ejDiagram("instance");
 var options = {
     //Name of the exported file
     fileName: "diagram", 
+    
     //Specifies whether to export as files/data
     mode: "download", 
+    
     //Specifies the region to be exported
     region: "pageSettings", 
+    
     //Format of the exported file
     format: "jpg",
+    
     //Can be set as a rectangle {x,y width, height}
     bounds: { x: 0, y: 0 }, 
+    
     //margin to the exported file/data
     margin: { left: 30 }
 };
