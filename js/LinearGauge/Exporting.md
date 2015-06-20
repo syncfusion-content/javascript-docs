@@ -16,11 +16,11 @@ documentation: ug
 
 <div id="LinearGauge1"></div>
 <button id="btnSubmit">Export</button>
-<div id=" fileName "> FileName </div>
-<div id=" fileFormat "> FileFormat </div>
+<div id=" fileName ">FileName </div>
+<div id=" fileFormat ">FileFormat </div>
 <select id="fileFormat">
-<option value="JPEG">JPEG</option>
-<option value="PNG">PNG</option>
+    <option value="JPEG">JPEG</option>
+    <option value="PNG">PNG</option>
 </select>
 
 {% endhighlight %}
@@ -34,20 +34,16 @@ $(function () {
         //For rendering linear gauge
         $("#LinearGauge1").ejLinearGauge({
             labelColor: "#8c8c8c", width: 450, load: "loadGaugeTheme",
-
             //Adding scale collection
             scales: [{
                 width: 4, border: { color: "transparent", width: 0 }, showBarPointers: false, showRanges: true, length: 310,
                 position: { x: 52, y: 50 }, markerPointers: [{
                     value: 50, length: 10, width: 10, backgroundColor: "#4D4D4D", border: { color: "#4D4D4D" }
                 }],
-
                 //Adding label collection
                 labels: [{ font: { size: "11px", fontFamily: "Segoe UI", fontStyle: "bold" }, distanceFromScale: { x: -13 } }],
-
                 //Adding tick collection
                 ticks: [{ type: "majorinterval", width: 1, color: "#8c8c8c" }],
-
                 //Adding range collection
                 ranges: [{
                     endValue: 60,
@@ -63,8 +59,6 @@ $(function () {
             }]
         });
     });
-
-
     function buttonclickevent() {
         var FileName = $("#fileName").val();
         var FileFormat = $("#fileFormat").ejDropDownList("option", "value");
@@ -78,5 +72,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Exporting_images/Exporting_img1.png" Caption="LinearGauge control with Export Functionality"%}
+{% include image.html url="/js/LinearGauge/Exporting_images/Exporting_img1.png" Caption="LinearGauge control with Export Functionality"%}
 

@@ -452,11 +452,11 @@ Click the search button to enable the filter option.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img25.png" Caption="schedule with appointment drag and drop."%}
 
-When the appointment with the Subject “**Daily Planet**” is being dragged from its original location, it looks as the one following screenshot with the shadow of the appointment casting behind it.
+When the appointment with the Subject **Daily Planet** is being dragged from its original location, it looks as the one following screenshot with the shadow of the appointment casting behind it.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img26.png" Caption="schedule with appointment while dragging in the cell."%}
 
-The following screenshot displays the appointment with the subject “**Daily Planet**” in the timeline 1.00 AM – 2.00 AM (02 May, 2014) is dropped to the new location to the date 29th April, 2014 in the timeline between 3.00 AM – 4.00 AM.
+The following screenshot displays the appointment with the subject **Daily Planet** in the timeline 1.00 AM – 2.00 AM (02 May, 2014) is dropped to the new location to the date 29th April, 2014 in the timeline between 3.00 AM – 4.00 AM.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img27.png" Caption="schedule with appointment dropped in the cell."%}
 

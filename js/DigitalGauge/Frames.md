@@ -20,18 +20,19 @@ documentation: ug
 {% endhighlight %}
 
 {% highlight js %}
+
  $(function () {
         // For Digital Gauge rendering
         $("#DigitalGauge1").ejDigitalGauge({
             // For setting text
             value: "WELCOME",
-        frame: {
-            // For setting inner width
-            innerWidth: 6,
-            // For setting outer width
-            outerWidth: 10,
+            frame: {
+                // For setting inner width
+                innerWidth: 6,
+                // For setting outer width
+                outerWidth: 10,
             },
-            })
+        })
     });
 
 
@@ -41,7 +42,7 @@ documentation: ug
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Frames_images/Frames_img1.png" Caption="Digital Gauge control with frame inner and outer width"%}
+{% include image.html url="/js/DigitalGauge/Frames_images/Frames_img1.png" Caption="Digital Gauge control with frame inner and outer width"%}
 
 
 
@@ -62,18 +63,18 @@ For a better appearance, you can set the **background****image** for the **Digit
         $("#DigitalGauge1").ejDigitalGauge({
             // For setting text
             value: "RADAR",
-        frame: {
-            // For setting backgroung image
-            backgroundImageUrl: "board3.jpg",
+            frame: {
+                // For setting backgroung image
+                backgroundImageUrl: "board3.jpg",
             },
-        items:[{
-            position:{
-                x:80,
-                y:10
-            }
-        }]
+            items: [{
+                position: {
+                    x: 80,
+                    y: 10
+                }
+            }]
 
-    })
+        })
     });
 
 {% endhighlight %}
@@ -82,5 +83,5 @@ For a better appearance, you can set the **background****image** for the **Digit
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Frames_images/Frames_img2.png" Caption="Digital Gauge control with frame background image"%}
+{% include image.html url="/js/DigitalGauge/Frames_images/Frames_img2.png" Caption="Digital Gauge control with frame background image"%}
 

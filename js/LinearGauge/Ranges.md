@@ -23,7 +23,7 @@ Range collection can be directly added to the scale object. Refer the following 
 
 {% highlight js %}
 
- $(function () {
+  $(function () {
         //For Linear gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
@@ -39,17 +39,14 @@ Range collection can be directly added to the scale object. Refer the following 
                 direction: ej.datavisualization.LinearGauge.Directions.Clockwise,
                 border: { width: 0, color: "transparent" }, minimum: -20, maximum: 60,
                 showBarPointers: false, showRanges: true,
-
                 //Adding marker pointers collection
                 markerPointers: [{
                     width: 3, length: 30, backgroundColor: "#FE5C09", type: "star",
                     distanceFromScale: 20, placement: "near",
                     value: 55
                 }],
-
                 //Adding label collection
                 labels: [{ angle: 90, distanceFromScale: { x: 0, y: 50 } }],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -59,7 +56,6 @@ Range collection can be directly added to the scale object. Refer the following 
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 0, y: 25 }
                 }],
-
                 //Adding range collection
                 ranges: [{
                     startValue: -20, endValue: 60,
@@ -78,7 +74,7 @@ Range collection can be directly added to the scale object. Refer the following 
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Ranges_images/Ranges_img1.png" Caption="Linear Gauge with range"%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img1.png" Caption="Linear Gauge with range"%}
 
 ## Range Customization
 
@@ -97,40 +93,42 @@ The major attributes for ranges are **startValue** and **endValue**. The **start
 {% highlight js %}
 
 
-    $(function () {
+   $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             labelColor: "#8c8c8c", width: 500, load: "loadGaugeTheme",
-
             //Adding scale collection
-            scales: [{position: { x: 50, y: 50 },
-
-                width: 4, backgroundColor: "#10ADF5", border: { color:
-                "transparent", width: 0 }, showRanges: true,showScaleBar:true,
+            scales: [{
+                position: { x: 50, y: 50 },
+                width: 4, backgroundColor: "#10ADF5", border: {
+                    color:
+                    "transparent", width: 0
+                }, showRanges: true, showScaleBar: true,
                 showMarkerPointers: false, length: 310,
-
                 //Adding label collection
-                labels: [{ font: { size: "11px", fontFamily: "Segoe UI", fontStyle:
-                "bold" }, distanceFromScale: { x: -12 } }],
-
+                labels: [{
+                    font: {
+                        size: "11px", fontFamily: "Segoe UI", fontStyle:
+                        "bold"
+                    }, distanceFromScale: { x: -12 }
+                }],
                 //Adding ticks collection
                 ticks: [{ type: "majorinterval", width: 1, color: "#8c8c8c" }],
-
                 //Adding ranges collection
                 ranges: [
                 {
-                endValue : 50,  // For setting range end value
-                startValue: 0,  //For setting range start value
-                startWidth:8,
-                endWidth:8,
+                    endValue: 50,  // For setting range end value
+                    startValue: 0,  //For setting range start value
+                    startWidth: 8,
+                    endWidth: 8,
                     backgroundColor: "#F6B53F",
                     distanceFromScale: 5
                 },
                 {
-                endValue:100,
-                startValue:70,
-                startWidth:8,
-                endWidth:8,
+                    endValue: 100,
+                    startValue: 70,
+                    startWidth: 8,
+                    endWidth: 8,
                     distanceFromScale: 5,
                     backgroundColor: "#E94649" //For setting range background color
                 }]
@@ -147,13 +145,13 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Ranges_images/Ranges_img2.png" Caption="Linear Gauge with customized ranges with startValues and endValues"%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img2.png" Caption="Linear Gauge with customized ranges with startValues and endValues"%}
 
 ## Colors and Border
 
 * You can customize the ranges to improve the appearance of the **Gauge**. The range border is modified with the object called **border**. It has two border property such as **color** and **width** which are used to customize the border color of the ranges and border width of the ranges. 
 
-* You can set the background color to improve the look and feel of the **Linear Gauge**. For customizing the background color of the ranges, **backgroundColor** is used.****You can add the gradient effects to the ranges by using **gradient** object.
+* You can set the background color to improve the look and feel of the **Linear Gauge**. For customizing the background color of the ranges, **backgroundColor** is used.You can add the gradient effects to the ranges by using **gradient** object.
 
 
 {% highlight html %}
@@ -169,36 +167,38 @@ Execute the above code to render the following output.
         // For Linear gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             labelColor: "#8c8c8c", width: 500, load: "loadGaugeTheme",
-
             //Adding scale collection
-            scales: [{position: { x: 50, y: 50 },
-
+            scales: [{
+                position: { x: 50, y: 50 },
                 //Adding label collection
-                labels: [{ font: { size: "11px", fontFamily: "Segoe UI", fontStyle:
-                "bold" }, distanceFromScale: { x: -12 } }],
-
+                labels: [{
+                    font: {
+                        size: "11px", fontFamily: "Segoe UI", fontStyle:
+                        "bold"
+                    }, distanceFromScale: { x: -12 }
+                }],
                 //Adding ticks collection
                 ticks: [{ type: "majorinterval", width: 1, color: "#8c8c8c" }],
-
-                width: 4, backgroundColor: "transparent", border: { color:
-                "transparent", width: 0 }, showRanges: true,showScaleBar:true,
+                width: 4, backgroundColor: "transparent", border: {
+                    color:
+                    "transparent", width: 0
+                }, showRanges: true, showScaleBar: true,
                 showMarkerPointers: false, length: 310,
-
                 //Adding ranges collection
-                ranges:[{
-                    endValue : 50,  // For setting range end value
+                ranges: [{
+                    endValue: 50,  // For setting range end value
                     startValue: 0,  // For setting renge start value
-                backgroundColor:"#F6B53F",
-                border: { color: "black" },
+                    backgroundColor: "#F6B53F",
+                    border: { color: "black" },
                     startWidth: 3,
                     endWidth: 18,
                     distanceFromScale: 10
                 }
-                ,{
-                    endValue:100,
-                    startValue:70,
-                backgroundColor:"#E94649",
-                border: { color: "black" },
+                , {
+                    endValue: 100,
+                    startValue: 70,
+                    backgroundColor: "#E94649",
+                    border: { color: "black" },
                     startWidth: 18,
                     endWidth: 3,
                     distanceFromScale: 10
@@ -214,7 +214,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Ranges_images/Ranges_img3.png" Caption="Linear Gauge with customized range colors and borders"%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img3.png" Caption="Linear Gauge with customized range colors and borders"%}
 
 ## Positioning the ranges
 
@@ -233,15 +233,13 @@ Execute the above code to render the following output.
 {% highlight js %}
 
 
-  $(function () {
+ $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             labelColor: "#8c8c8c", width: 500, load: "loadGaugeTheme",
-
             //Adding scale position
             scales: [{
                 position: { x: 50, y: 50 },
-
                 //Adding label collection
                 labels: [{
                     font: {
@@ -249,16 +247,13 @@ Execute the above code to render the following output.
                         "bold"
                     }, distanceFromScale: { x: -12 }
                 }],
-
                 //Adding ticks collection
                 ticks: [{ type: "majorinterval", width: 1, color: "#8c8c8c" }],
-
                 width: 4, backgroundColor: "transparent", border: {
                     color:
                     "transparent", width: 0
                 }, showRanges: true, showScaleBar: true,
                 showMarkerPointers: false, length: 310,
-
                 //Adding ranges collection
                 ranges: [{
                     endValue: 50,  // For setting range end value
@@ -267,8 +262,8 @@ Execute the above code to render the following output.
                     border: { color: "black" },
                     startWidth: 3,
                     endWidth: 18,
-                distanceFromScale: -30,
-                placement:"near"
+                    distanceFromScale: -30,
+                    placement: "near"
                 }
                 , {
                     endValue: 100,
@@ -277,12 +272,13 @@ Execute the above code to render the following output.
                     border: { color: "black" },
                     startWidth: 18,
                     endWidth: 3,
-                distanceFromScale: -30,
-                placement: "near"
+                    distanceFromScale: -30,
+                    placement: "near"
                 }]
             }]
         });
     });
+
 
 {% endhighlight %}
 
@@ -290,7 +286,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Ranges_images/Ranges_img4.png" Caption="Linear Gauge with customized range positions"%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img4.png" Caption="Linear Gauge with customized range positions"%}
 
 ## Multiple Ranges
 
@@ -304,7 +300,8 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
 
 {% highlight js %}
 
- $(function () {
+ 
+    $(function () {
         // For rendering Linear gauge
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
@@ -313,7 +310,6 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
             orientation: "Horizontal",
             labelColor: "Black",
             enableResize: true,
-
             //Adding scale collection
             scales: [{
                 width: 0,
@@ -321,17 +317,14 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
                 direction: ej.datavisualization.LinearGauge.Directions.Clockwise,
                 border: { width: 0, color: "transparent" }, minimum: -20, maximum: 60,
                 showBarPointers: false, showRanges: true,
-
                 //Adding marker pointer collection
                 markerPointers: [{
                     width: 3, length: 30, backgroundColor: "#FE5C09", type: "star",
                     distanceFromScale: 20, placement: "near",
                     value: 55
                 }],
-
                 //Adding label collection
                 labels: [{ angle: 90, distanceFromScale: { x: 0, y: 50 } }],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -341,7 +334,6 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 20, y: -1 }
                 }],
-
                 //Adding ranges collection
                 ranges: [
                 //Adding range 1
@@ -351,7 +343,6 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
                     startValue: -20, endValue: 0, startWidth: 5, endWidth: 10,
                     backgroundColor: "#2788B1", border: { color: "#2788B1" }
                 },
-
                 //Adding range 2
                 {
                     placement: "near",
@@ -359,7 +350,6 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
                     startValue: 0, endValue: 20, startWidth: 10, endWidth: 15,
                     backgroundColor: "#A5BA28", border: { color: "#A5BA28" }
                 },
-
                 //Adding range 3
                 {
                     placement: "near",
@@ -367,7 +357,6 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
                     startValue: 20, endValue: 40, startWidth: 15, endWidth: 20,
                     backgroundColor: "#FEBE48", border: { color: "#FEBE48" }
                 },
-
                 //Adding range 4
                 {
                     placement: "near",
@@ -383,9 +372,8 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
 
 {% endhighlight %}
 
-****
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Ranges_images/Ranges_img5.png" Caption="Linear Gauge with multiple ranges "%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img5.png" Caption="Linear Gauge with multiple ranges "%}
 

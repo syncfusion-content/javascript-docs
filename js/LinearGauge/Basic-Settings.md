@@ -24,32 +24,36 @@ documentation: ug
 
 {% highlight js %}
 
-  $(function () {
+   $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             // For setting linear gauge width
-        width: 300,
+            width: 300,
             // For setting linear gauge height
-        height:500,
+            height: 500,
             // For setting linear gauge minimum value
-        minimum:10,
+            minimum: 10,
             // For setting linear gauge maximum value
-        maximum:110,
+            maximum: 110,
             // For setting linear gauge pointer value
-        value:78,
+            value: 78,
             // Adding scale collection
             scales: [{
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
                 // Adding bar pointer collection
-                barPointers: [{ width: 5, backgroundColor: "Grey"}],
+                barPointers: [{ width: 5, backgroundColor: "Grey" }],
                 // Adding ticks collection
-                ticks: [{ type: "majorinterval", width: 2, 
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } },
-                { type: "minorinterval", width: 1,height:6, 
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } }]
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }]
             }]
-        });       
+        });
     });
 
 
@@ -61,9 +65,9 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Basic-Settings_images/Basic-Settings_img1.png" Caption=""%}
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img1.png" Caption="Linear Gauge with basic attributes"%}
 
-_Linear Gauge with basic attributes_
+
 
 ## Adding frame
 
@@ -80,32 +84,36 @@ _Linear Gauge with basic attributes_
 
 {% highlight js %}
 
-  $(function () {
+ $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
-            value:80,
-        *frame: { 
-            // For setting frame inner width
-        innerWidth: 8,
-            // For setting frame outer width
-        outerWidth: 10,
-            // For setting back ground Image URL
-        backgroundImageUrl:"../images/gauge/Gauge_linear_light.png"
-          },
+            value: 80,
+            frame: {
+                // For setting frame inner width
+                innerWidth: 8,
+                // For setting frame outer width
+                outerWidth: 10,
+                // For setting back ground Image URL
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
+            },
             // Adding scale collection               
             scales: [{
                 backgroundColor: "transparent",
-                border: { color: "transparent", width: 0 },              
+                border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
                 // Adding bar pointer collection
-                barPointers: [{ width: 5, backgroundColor: "Grey"}],
+                barPointers: [{ width: 5, backgroundColor: "Grey" }],
                 // Adding ticks collection
-                ticks: [{ type: "majorinterval", width: 2, 
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } },
-                { type: "minorinterval", width: 1,height:6, 
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } }]
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+                }]
             }]
-        });       
+        });
     });
 
 
@@ -117,9 +125,9 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Basic-Settings_images/Basic-Settings_img2.png" Caption=""%}
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img2.png" Caption="Linear Gauge with frame"%}
 
-_Linear Gauge with frame_
+
 
 ## Appearance
 
@@ -127,9 +135,9 @@ _Linear Gauge with frame_
 
 * Theme is the basic property of any control. It is used to set the theme for Linear Gauge. There are two types of themes used for Linear Gauge such as
 
-* flatlight
+ * flatlight
 
-* flatdark
+ * flatdark
 
 
 {% highlight html %}
@@ -141,40 +149,44 @@ _Linear Gauge with frame_
 {% highlight js %}
 
  
-    $(function () {
+     $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
             width: 400,
             height: 100,
-            value:80,
+            value: 80,
             // For setting theme
-        theme: "flatlight",
+            theme: "flatlight",
             // For setting Orientation
-        orientation: "Horizontal",
+            orientation: "Horizontal",
             // For setting label color
-        labelColor: "Black",
+            labelColor: "Black",
             //For Adding Frame
-            frame: { 
-                backgroundImageUrl:"../images/gauge/Gauge_linear_light1.png"
-            },  
+            frame: {
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light1.png"
+            },
             //For Adding Scales              
             scales: [{
                 backgroundColor: "transparent",
-                direction:ej.datavisualization.LinearGauge.Directions.Clockwise,
+                direction: ej.datavisualization.LinearGauge.Directions.Clockwise,
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
                 //For Adding bar pointers
-                barPointers: [{ width: 5, backgroundColor: "Grey"}],
+                barPointers: [{ width: 5, backgroundColor: "Grey" }],
                 //For Adding label pointers
-                labels: [{ angle: 90, distanceFromScale: {x:5,y:-5}}],
+                labels: [{ angle: 90, distanceFromScale: { x: 5, y: -5 } }],
                 //For Adding ticks
-                ticks: [{ type: "majorinterval", width: 2, 
-                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 0 } },
-                { type: "minorinterval", width: 1,height:6, 
-                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 0 } }]
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 0 }
+                }]
             }]
-        });       
+        });
     });
 
 
@@ -184,9 +196,9 @@ _Linear Gauge with frame_
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Basic-Settings_images/Basic-Settings_img3.png" Caption=""%}
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img3.png" Caption="Linear Gauge with themes and colors"%}
 
-_Linear Gauge with themes and colors_
+
 
 ## Responsive 
 
@@ -209,31 +221,36 @@ _Linear Gauge with themes and colors_
             enableAnimation: false,
             width: 400,
             height: 100,
-            value:80,
-        orientation: "Horizontal",
+            value: 80,
+            orientation: "Horizontal",
             labelColor: "Black",
             //For enabling responsible layout
-        enableResize: true,
+            enableResize: true,
             //For Adding Frame
-            frame: {              backgroundImageUrl:"../images/gauge/Gauge_linear_light1.png"
-            },   
+            frame: {
+                backgroundImageUrl: "../images/gauge/Gauge_linear_light1.png"
+            },
             //For Adding Scale             
             scales: [{
                 backgroundColor: "transparent",
-                direction:ej.datavisualization.LinearGauge.Directions.Clockwise,
+                direction: ej.datavisualization.LinearGauge.Directions.Clockwise,
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
                 //For Adding bar pointer collection             
-                barPointers: [{ width: 5, backgroundColor: "Grey"}],
+                barPointers: [{ width: 5, backgroundColor: "Grey" }],
                 //For Adding label collection             
-                labels: [{ angle: 90, distanceFromScale: {x:5,y:-5}}],
+                labels: [{ angle: 90, distanceFromScale: { x: 5, y: -5 } }],
                 //For Adding tick collection             
-                ticks: [{ type: "majorinterval", width: 2, 
-                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 0 } },
-               { type: "minorinterval", width: 1,height:6, 
-                   color: "#8c8c8c", distanceFromScale: { x: 0, y: 0 } }]
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 0 }
+                },
+               {
+                   type: "minorinterval", width: 1, height: 6,
+                   color: "#8c8c8c", distanceFromScale: { x: 0, y: 0 }
+               }]
             }]
-        });       
+        });
     });
 
 
@@ -244,7 +261,7 @@ _Linear Gauge with themes and colors_
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Basic-Settings_images/Basic-Settings_img4.png" Caption=""%}
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img4.png" Caption="Linear Gauge with responsive layout"%}
 
-_Linear Gauge with responsive layout_
+
 

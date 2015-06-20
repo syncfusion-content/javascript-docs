@@ -28,8 +28,7 @@ The following code example explains how to set the value for **enableAppointment
 {% highlight js %}
 
  $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -79,7 +78,7 @@ The various keyboard shortcuts available within the **Schedule** control are as 
 
 
 
-_Table_ _1__: List of keys and its usage_
+Table 1: List of keys and its usage
 
 <table>
 <tr>

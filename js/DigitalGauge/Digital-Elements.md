@@ -28,21 +28,22 @@ documentation: ug
 
 {% highlight js %}
 
- $(function () {
+  $(function () {
         // For Digital Gauge rendering
         $("#DigitalGauge1").ejDigitalGauge({
-            items:[{
+            items: [{
                 // For setting alingment
                 textAlign: "right",
                 // For setting text
                 value: "STOP",
-                }]
-    })
+            }]
+        })
     });
+
 
 {% endhighlight %}
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Digital-Elements_images/Digital-Elements_img1.png" Caption="Digital Gauge control with text customization"%}
+{% include image.html url="/js/DigitalGauge/Digital-Elements_images/Digital-Elements_img1.png" Caption="Digital Gauge control with text customization"%}
 

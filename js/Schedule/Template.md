@@ -78,7 +78,7 @@ documentation: ug
 
 {% highlight html %}
 
-// appointment template definition
+<!-- appointment template definition -->
 <script id="apptemplate" type="text/x-jsrender">
     <div style="height:100%">
     <div style='float:left; width:50px;'>
@@ -200,7 +200,7 @@ The output for the above code is as follows that displays the appointment with t
 
 {% highlight html %}
 
-// resourceheader template definition
+ <!-- resourceheader template definition -->
 <script type="text/x-jsrender" id="resourceHeaderTemplateId">
     <img style="width: 40px; height: 40px" src=".../images/schedule/{{:id}}.png" alt="{{:id}}" />  
 </script>

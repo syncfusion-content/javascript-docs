@@ -56,7 +56,7 @@ The API **size** is used to specify the width of the ranges.  The major attribut
 
 {% highlight js %}
 
- $(function () {
+  $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -71,8 +71,9 @@ The API **size** is used to specify the width of the ranges.  The major attribut
                     //For setting range background color
                     backgroundColor: "Green",
                 }]
-                }]
-        });});
+            }]
+        });
+    });
 
 
 {% endhighlight %}
@@ -98,7 +99,7 @@ You can set the background color to improve the look and feel of the **Circular 
 
 {% highlight js %}
 
-  $(function () {
+      $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -113,10 +114,11 @@ You can set the background color to improve the look and feel of the **Circular 
                     //For setting range background color
                     backgroundColor: "yellow",
                     //For setting range border
-                    border:{color:"green",width:2},
+                    border: { color: "green", width: 2 },
                 }]
             }]
-        });});
+        });
+    });
 
 {% endhighlight %}
 
@@ -157,10 +159,11 @@ You can position ranges using two properties such as **distanceFromScale** and *
                     //For setting distance between scale and ranges
                     distanceFromScale: -30,
                     //For setting range border
-                    border:{color:"Black",width:2},
+                    border: { color: "Black", width: 2 },
                 }]
             }]
-        });});
+        });
+    });
 
 
 {% endhighlight %}
@@ -242,7 +245,7 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
 {% highlight js %}
 
  
-    $(function () {
+   $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             frame: {
@@ -252,7 +255,7 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
                 halfCircleFrameStartAngle: 205,
                 //For setting half circle frame end angle
                 halfCircleFrameEndAngle: 335,
-            },pointerCap:{radius:50},
+            }, pointerCap: { radius: 50 },
             backgroundColor: "#FFCCCC",
             scales: [{
                 startAngle: 180, sweepAngle: 180,
@@ -261,7 +264,8 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
                     width: 1, length: 120, value: 40
                 }]
             }]
-        });});
+        });
+    });
 
 
 {% endhighlight %}

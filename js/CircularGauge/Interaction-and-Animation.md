@@ -29,22 +29,22 @@ documentation: ug
 <body>
     <div id="CircularGauge1">
     </div>
-    <script type="text/javascript">
-        $(function () {
-            // For Circular Gauge rendering
-            $("#CircularGauge1").ejCircularGauge({
-                // For User interaction
-                readOnly: false,
-            })
-        });
-    </script>
 </body>
 </html>
 
-
 {% endhighlight %}
 
+{% highlight js %}
 
+$(function () {
+        // For Circular Gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+            // For User interaction
+            readOnly: false,
+        })
+    });
+   
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

@@ -23,23 +23,23 @@ documentation: ug
 
 {% highlight js %}
 
- $(function () {
+  $(function () {
         // For Digital Gauge rendering
         $("#DigitalGauge1").ejDigitalGauge({
-            width:800,
-            items:[{
+            width: 800,
+            items: [{
                 // For setting text
                 value: "GO AHEAD",
-        segmentSettings:{
-            // For setting segment color
-            color: "Green",
-            // For setting segment opacity
-            opacity:0.1,
-            // For setting segment spacing
-            spacing:4,
-            }
-    }]
-    })
+                segmentSettings: {
+                    // For setting segment color
+                    color: "Green",
+                    // For setting segment opacity
+                    opacity: 0.1,
+                    // For setting segment spacing
+                    spacing: 4,
+                }
+            }]
+        })
     });
 
 
@@ -47,7 +47,7 @@ documentation: ug
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Segment-Settings_images/Segment-Settings_img1.png" Caption="Digital Gauge control with segment settings"%}
+{% include image.html url="/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img1.png" Caption="Digital Gauge control with segment settings"%}
 
 ## Dimension Modification
 
@@ -67,18 +67,18 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
  $(function () {
         // For Digital Gauge rendering
         $("#DigitalGauge1").ejDigitalGauge({
-            width:800,
-            items:[{
+            width: 800,
+            items: [{
                 // For setting text
                 value: "WELCOME",
-        segmentSettings:{
-            // For setting segment length
-            length:3,
-            // For setting segment width
-            width:3
-        }
-    }]
-    })
+                segmentSettings: {
+                    // For setting segment length
+                    length: 3,
+                    // For setting segment width
+                    width: 3
+                }
+            }]
+        })
     });
 
 
@@ -88,5 +88,5 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Segment-Settings_images/Segment-Settings_img2.png" Caption="Digital Gauge control with segment dimension"%}
+{% include image.html url="/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img2.png" Caption="Digital Gauge control with segment dimension"%}
 

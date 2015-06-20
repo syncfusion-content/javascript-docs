@@ -56,7 +56,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
- $(function () {
+  $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -69,9 +69,11 @@ Execute the above code to render the following output.
                     backgroundColor: "Green",
                 }],
                 pointers: [{
-                value:30
+                    value: 30
                 }]
-            }] }); });
+            }]
+        });
+    });
 
 
 {% endhighlight %}
@@ -227,43 +229,43 @@ Execute the above code to render the following output.
 
 * Circular gauge pointer has two types such as,
 
-* Needle
+ * Needle
 
-* Marker
+ * Marker
 
 * Needle type pointers are the default pointers that cannot be positioned and that is located at the center of the gauge. There are four different shapes of needle pointers such as 
 
-* Rectangle
+ * Rectangle
 
-* Triangle
+ * Triangle
 
-* Trapezoid 
+ * Trapezoid 
 
-* Arrow
+ * Arrow
 
 * For marker pointer, the available dimensions are 
 
-* Rectangle
+ * Rectangle
 
-* Triangle
+ * Triangle
 
-* Ellipse
+ * Ellipse
 
-* Diamond
+ * Diamond
 
-* Pentagon
+ * Pentagon
 
-* Circle 
+ * Circle 
 
-* Slider
+ * Slider
 
-* Pointer
+ * Pointer
 
-* Wedge
+ * Wedge
 
-* Trapezoid
+ * Trapezoid
 
-* Rounded Rectangle
+ * Rounded Rectangle
 
 ## Multiple Pointers
 

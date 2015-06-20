@@ -291,7 +291,7 @@ The following screenshot displays the remote data bound to the **Schedule** cont
 
 * **Load on demand** is a powerful technique that is used to reduce the bandwidth size of consuming data. L**oad on demand** support has been added in our Schedule control, so that, it retrieves only the required appointment data from service/database during loading time, and that too for the current view. 
 
-* The__**enableLoadOnDemand**  property is used to enable or disable the load on demand functionality of the schedule.
+* The **enableLoadOnDemand**  property is used to enable or disable the load on demand functionality of the schedule.
 
 * If you have developer tools, you can capture the network transfer to check the consumed data of the Schedule. The following screnshot shows the data being loaded in **Schedule**.
 

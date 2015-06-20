@@ -85,23 +85,24 @@ The following code example explains how to render the multiple resources on the 
             height: "525px",
             currentView: ej.Schedule.CurrentView.Workweek,
             // Groups the resources listed out in the below collection
-          group: {
-          resources: ["Rooms"]
-          },
+            group: {
+                resources: ["Rooms"]
+            },
             // resource data collection
-          resources: [
-          {
-          field: "roomId",
-          title: "Room",
-          name: "Rooms",
-            // disables the multiple selection of resources in the appointment window.
-          allowMultiple: false,
-          resourceSettings: { dataSource: [
-          { text: "Room1", id: 1, color: "#f8a398" },
-          { text: "Room2", id: 2, color: "#56ca85"}],
-          text: "text", id: "id", color: "color"
-          }
-          }],
+            resources: [
+            {
+                field: "roomId",
+                title: "Room",
+                name: "Rooms",
+                // disables the multiple selection of resources in the appointment window.
+                allowMultiple: false,
+                resourceSettings: {
+                    dataSource: [
+                    { text: "Room1", id: 1, color: "#f8a398" },
+                    { text: "Room2", id: 2, color: "#56ca85" }],
+                    text: "text", id: "id", color: "color"
+                }
+            }],
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
@@ -160,7 +161,6 @@ The following code example explains how to render the multiple resources on the 
         Recurrence: false,
         roomId: 2
     }];
-
 
 
 
@@ -254,7 +254,7 @@ The above specified resource related fields are require to  bound to the resourc
 {% highlight js %}
 
 
- $(function () {
+(function () {
         // retrieve the appointment data through query
         var dManager = ej.DataManager(window.ResourcesData).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
@@ -308,7 +308,6 @@ The above specified resource related fields are require to  bound to the resourc
             }
         });
     });
-
 
 
 {% endhighlight %}
@@ -367,7 +366,6 @@ $(function () {
                 recurrenceRule: "RecurrenceRule",
                 // bind the resource id fields collection of each level
                 resourceFields: "ownerId"
-
             }
         });
     });

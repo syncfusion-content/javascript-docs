@@ -27,23 +27,19 @@ documentation: ug
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-    <!—Refer the necessary script here-->
+    <!--Refer the necessary script here-->
 </head>
 <body ng-controller="LinearGauge">
     <ej-lineargauge id="linearCore" e-readonly="false" e-load="loadGaugeTheme"
         e-enableanimation="false" e-labelcolor="#8c8c8c">
 </ej-lineargauge>
-
     <script type="text/javascript">
-
         <!--binding the value to the scope variables in application controller-->
-
         angular.module('syncApp', ['ejangular'])
         .controller('LinearGauge', function ($scope) {
             $scope.nvalue = 0;
         });
     </script>
-
 </body>
 </html>
 
@@ -54,12 +50,8 @@ documentation: ug
 Execute the above code to render the following output.
 
 
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img1.png" Caption="Default Linear gauge in Angular JS"%}
 
-
-
-
-
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/MVVM_images/MVVM_img1.png" Caption="Default Linear gauge in Angular JS"%}
 
 ## Adding Scale collection
 
@@ -70,9 +62,7 @@ Scale is an array object and the inner tag is used for it. You can extend the Ob
 {% highlight html %}
 
 <!--To Render the Linear gauge-->
-
-<ej-LinearGauge id="linearCore">
-
+<ej-lineargauge id="linearCore">
 <!--Adding Scale collection to the Linear gauge-->
 <e-scales>
 <e-scale e-width="4" e-border-color="transparent" e-border-width="0"
@@ -80,7 +70,7 @@ e-showBarPointers="false" e-showRanges="true" e-length="310"
 e-position-x="52" e-position-y="50" e-maximum="120">
 </e-scale>
 </e-scales>
-</ej-LinearGauge>
+</ej-lineargauge>
 
 
 
@@ -90,7 +80,7 @@ e-position-x="52" e-position-y="50" e-maximum="120">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/MVVM_images/MVVM_img2.png" Caption="Linear Gauge with scale customization in Angular JS"%}
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img2.png" Caption="Linear Gauge with scale customization in Angular JS"%}
 
 ## Adding Marker Pointer collection
 
@@ -101,15 +91,11 @@ Marker Pointer is an array object and the inner tag is used for it. You can exte
 {% highlight html %}
 
 <!--To Render the Linear gauge-->
-
-<ej-LinearGauge id="linearCore">
-
+<ej-lineargauge id="linearCore">
 <!--Adding Scale collection to the Linear gauge-->
-
 <e-scales>
 <e-scale>
 <!--Adding marker pointer collection to the Scale collection-->
-
 <e-markerPointers>
 <e-markerPointer e-length="10" e-width="10" e-value="50"
 e-backgrouundColor="#4D4D4D"
@@ -118,7 +104,7 @@ e-border-color="#4D4D4D">
 </e-markerPointers>
 </e-scale>
 </e-scales>
-</ej-LinearGauge>
+</ej-lineargauge>
 
 
 {% endhighlight %}
@@ -127,7 +113,7 @@ e-border-color="#4D4D4D">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/MVVM_images/MVVM_img3.png" Caption="Linear Gauge with pointer customization in Angular JS"%}
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img3.png" Caption="Linear Gauge with pointer customization in Angular JS"%}
 
 ## Adding label collection
 
@@ -138,19 +124,13 @@ Label is also an array object and the inner tag is used for it. You can extend t
 {% highlight html %}
 
 <!--To Render the Linear gauge-->
-
-<ej-LinearGauge id="linearCore">
-
+<ej-lineargauge id="linearCore">
 <!--Adding Scale collection to the Linear gauge-->
-
 <e-scales>
 <e-scale>
-
 <!--Adding marker pointer collection to the Scale collection-->
 <e-markerPointers>…</e-markerPointers>
-
 <!--Adding label collection to the Scale collection-->
-
 <e-labels>
 <e-label  e-distanceFromScale-x="-10" e-distanceFromScale-y="0"
 e-font-fontFamily="Segoe UI" e-font-fontStyle="bold"
@@ -159,7 +139,7 @@ e-font-size="11px">
 </e-labels>
 </e-scale>
 </e-scales>
-</ej-LinearGauge>
+</ej-lineargauge>
 
 
 {% endhighlight %}
@@ -168,7 +148,7 @@ e-font-size="11px">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/MVVM_images/MVVM_img4.png" Caption="Linear Gauge with label customization in Angular JS"%}
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img4.png" Caption="Linear Gauge with label customization in Angular JS"%}
 
 ## Adding Tick collection
 
@@ -177,29 +157,22 @@ Tick is an array object and the inner tag is used for it.
 {% highlight html %}
 
 <!--To Render the Linear gauge-->
-
-<ej-LinearGauge id="linearCore">
-
+<ej-lineargauge id="linearCore">
 <!--Adding Scale collection to the Linear gauge-->
-
 <e-scales>
 <e-scale>
-
 <!--Adding marker pointer collection to the Scale collection-->
 <e-markerPointers>…</e-markerPointers>
-
 <!--Adding label collection to the Scale collection-->
 <e-labels>…</e-labels>
-
 <!--Adding tick collection to the Scale collection-->
-
 <e-ticks>
 <e-tick e-type="majorinterval" e-width="2" e-color="#8c8c8c">
 </e-tick>
 </e-ticks>
 </e-scale>
 </e-scales>
-</ej-LinearGauge>
+</ej-lineargauge>
 
 
 
@@ -209,7 +182,7 @@ Tick is an array object and the inner tag is used for it.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/MVVM_images/MVVM_img5.png" Caption="Linear Gauge with ticks customization in Angular JS"%}
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img5.png" Caption="Linear Gauge with ticks customization in Angular JS"%}
 
 ## Adding Range collection
 
@@ -220,25 +193,17 @@ Range is an array object and the inner tag is used for it. You can extend the Ob
 {% highlight html %}
 
 <!--To Render the Linear gauge-->
-
-<ej-LinearGauge id="linearCore">
-
+<ej-lineargauge id="linearCore">
 <!--Adding Scale collection to the Linear gauge-->
-
 <e-scales>
 <e-scale>
-
 <!--Adding marker pointer collection to the Scale collection-->
 <e-markerPointers>…</e-markerPointers>
-
 <!--Adding label collection to the Scale collection-->
 <e-labels>…</e-labels>
-
 <!--Adding tick collection to the Scale collection-->
 <e-ticks>…</e-ticks>
-
 <!--Adding range collection to the Scale collection-->
-
 <e-ranges>
 <e-range e-startValue="0" e-endValue="60" e-startWidth="4"
 e-endWidth="4" e-backgroundColor="#F6B53F"
@@ -251,7 +216,7 @@ e-border-color="#E94649">
 </e-ranges>
 </e-scale>
 </e-scales>
-</ej-LinearGauge>
+</ej-lineargauge>
 
 
 {% endhighlight %}
@@ -260,7 +225,7 @@ e-border-color="#E94649">
 
 Finally while running the above codes, the resultant gauge appears as follows.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/MVVM_images/MVVM_img6.png" Caption="Linear Gauge Rendered in Angular JS"%}
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img6.png" Caption="Linear Gauge Rendered in Angular JS"%}
 
 ## Two Way Binding
 
@@ -271,16 +236,16 @@ Finally while running the above codes, the resultant gauge appears as follows.
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-    <!—Refer the necessary script here-->
+    <!--Refer the necessary script here-->
 </head>
 <body ng-controller="LinearGauge">
     <div id="linearframe">
         <ej-lineargauge id="linearCore" e-value="nvalue" e-readonly="false" e-load="loadGaugeTheme" e-enableanimation="false" e-labelcolor="#8c8c8c">
-</ej-lineargauge>
+        </ej-lineargauge>
     </div>
     <input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue" e-decimalplaces="2" e-showspinbutton="false" style="width: 110px" />
     <script type="text/javascript">
-        <!—binding the value to the scope variables in application controller-->
+        <!--binding the value to the scope variables in application controller-->
         angular.module('syncApp', ['ejangular'])
         .controller('LinearGauge', function ($scope) {
             $scope.nvalue = 50;
@@ -297,7 +262,7 @@ Finally while running the above codes, the resultant gauge appears as follows.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/MVVM_images/MVVM_img7.png" Caption="Linear Gauge with two way binding in Angular JS"%}
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img7.png" Caption="Linear Gauge with two way binding in Angular JS"%}
 
 
 
@@ -305,19 +270,19 @@ Execute the above code to render the following output.
 
 * Knockout support allows you to bind the html elements against any of the available data models.Two types of knockout binding is supported as of angular,
 
-* one-way binding
+ * one-way binding
 
-* two-way binding
+ * two-way binding
 
 * **One way binding** refers to the process of applying observable values to all the available properties of the **Linear Gauge** control, but the changes made in it does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the **Linear Gauge** control.
 
 * **Two-way binding** supports both the processes – it applies the observable values to the **Linear Gauge** properties as well as the changes made in it is also reflected back and triggered within the observable collections. Only few of the schedule properties support two-way binding and they are as follows
 
-* value
+ * value
 
-* maximum 
+ * maximum 
 
-* minimum
+ * minimum
 
 
 
@@ -340,9 +305,9 @@ Execute the above code to render the following output.
     <script type="text/javascript">
         $(function () {
             window.viewModel = {
-              value: ko.observable(50),
-              minimum: ko.observable(0),
-              maximum: ko.observable(150)
+                value: ko.observable(50),
+                minimum: ko.observable(0),
+                maximum: ko.observable(150)
             };
             $(function () {
                 ko.applyBindings(viewModel);
@@ -355,10 +320,7 @@ Execute the above code to render the following output.
 {% endhighlight %}
 
 
-
-
-
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/MVVM_images/MVVM_img8.png" Caption="Linear Gauge with Knockout binding"%}
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img8.png" Caption="Linear Gauge with Knockout binding"%}
 

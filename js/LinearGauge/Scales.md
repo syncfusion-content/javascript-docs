@@ -44,29 +44,30 @@ documentation: ug
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
-            frame: { backgroundImageUrl:"../images/gauge/Gauge_linear_light.png"},
+            frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
             // For Adding Scale collection
-        scales: [{
-            width:8,
-            position:{x:20,y:50},
-            backgroundColor: "Grey",
-            border: { color: "Grey", width: 1 },
-            showMarkerPointers: true, showBarPointers: false,
-            // For Adding label collection
-            labels: [{ distanceFromScale: { x: 50, y: 0 } }],
-            // For Adding marker pointer collection
-            markerPointers: [{ type: "pentagon", placement: "near", 
-                length: 10, width: 20, distanceFromScale: 20, backgroundColor: "#FE8282" 
-            }],
-            // For Adding tick collection
-            ticks: [{
-                type: "majorinterval", width: 2,
-                color: "#8c8c8c", distanceFromScale: { x: 30, y: 0 }
-            },
-            {
-                type: "minorinterval", width: 1, height: 6,
-                color: "#8c8c8c", distanceFromScale: { x: 30, y: 0 }
-            }]
+            scales: [{
+                width: 8,
+                position: { x: 20, y: 50 },
+                backgroundColor: "Grey",
+                border: { color: "Grey", width: 1 },
+                showMarkerPointers: true, showBarPointers: false,
+                // For Adding label collection
+                labels: [{ distanceFromScale: { x: 50, y: 0 } }],
+                // For Adding marker pointer collection
+                markerPointers: [{
+                    type: "pentagon", placement: "near",
+                    length: 10, width: 20, distanceFromScale: 20, backgroundColor: "#FE8282"
+                }],
+                // For Adding tick collection
+                ticks: [{
+                    type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 30, y: 0 }
+                },
+                {
+                    type: "minorinterval", width: 1, height: 6,
+                    color: "#8c8c8c", distanceFromScale: { x: 30, y: 0 }
+                }]
             }]
         });
     });
@@ -78,9 +79,9 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Scales_images/Scales_img1.png" Caption=""%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img1.png" Caption="Linear Gauge with scales"%}
 
-_Linear Gauge with scales_
+
 
 ## Scale Customization
 
@@ -144,9 +145,9 @@ _Linear Gauge with scales_
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Scales_images/Scales_img2.png" Caption=""%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img2.png" Caption="Linear Gauge with customized scale border"%}
 
-_Linear Gauge with customized scale border_
+
 
 ## Appearance 
 
@@ -185,17 +186,14 @@ _Linear Gauge with customized scale border_
                 backgroundColor: "Grey",
                 border: { color: "Grey", width: 1 },
                 showMarkerPointers: true, showBarPointers: false,
-
                 //Adding label collection
                 labels: [{ distanceFromScale: { x: 50, y: 0 } }],
-
                 //Adding marker pointer collection
                 markerPointers: [{
                     type: "pentagon", placement: "near",
                     length: 10, width: 20, distanceFromScale: 20,
                     backgroundColor: "#FE8282"
                 }],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -216,9 +214,9 @@ _Linear Gauge with customized scale border_
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Scales_images/Scales_img3.png" Caption=""%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img3.png" Caption="Linear Gauge with customized scale values"%}
 
-_Linear Gauge with customized scale values_
+
 
 ## Scale Types
 
@@ -247,18 +245,15 @@ $(function () {
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
-
             //For Adding Scale collection
             scales: [{
                 width: 18, length: 300,
                 position: { x: 54, y: 50 },
-
                 //For Adding Scale type as rectangle
-            type: "rectangle",
+                type: "rectangle",
                 backgroundColor: "#C0B08E",
                 border: { color: "#C0B08E", width: 1 },
                 showMarkerPointers: false, showBarPointers: false,
-
                 //For Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -281,9 +276,9 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Scales_images/Scales_img4.png" Caption=""%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img4.png" Caption="Linear Gauge with scale type as Rectangle"%}
 
-_Linear Gauge with scale type as Rectangle_
+
 
 **Rounded Rectangle**
 
@@ -299,26 +294,21 @@ For rounded rectangular scale type, the scale renders as rectangular structure b
 {% highlight js %}
 
  $(function () {
-        // For Linear Gauge ren**d**ering
+        // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
-
             //For Adding Scales
             scales: [{
                 width: 8,
                 direction: ej.datavisualization.LinearGauge.Directions.Clockwise,
                 position: { x: 60, y: 50 },
-
                 //Adding scale type as rounded rectangle
-            type: "roundedrectangle",
-
+                type: "roundedrectangle",
                 backgroundColor: "#206BA4",
                 border: { color: "#206BA4", width: 1 },
-
                 //Adding label collection
                 labels: [{ distanceFromScale: {x:-20,y:0}}],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -341,7 +331,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Scales_images/Scales_img5.png" Caption="Linear Gauge with scale type as Rounded Rectangle"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img5.png" Caption="Linear Gauge with scale type as Rounded Rectangle"%}
 
 **Thermometer**
 
@@ -357,7 +347,7 @@ For thermometer scale type, the scale renders as thermometer structure with roun
 {% highlight js %}
 
 $(function () {
-        // For Linear Gauge ren**d**ering
+        // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
@@ -369,7 +359,6 @@ $(function () {
                 backgroundColor: "#C0B08E",
                 border: { color: "#C0B08E", width: 1 },
                 showMarkerPointers: false, showBarPointers: false,
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -391,7 +380,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Scales_images/Scales_img6.png" Caption="Linear Gauge with scale type as Thermometer"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img6.png" Caption="Linear Gauge with scale type as Thermometer"%}
 
 ## Adding multiple scales
 
@@ -408,7 +397,7 @@ You can set multiple scales for a single **Linear Gauge** control by using an ar
 {% highlight js %}
 
 $(function () {
-        // For Linear Gauge ren**d**ering
+        // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
@@ -421,17 +410,14 @@ $(function () {
                 backgroundColor: "Grey",
                 border: { color: "Grey", width: 1 },
                 showMarkerPointers: true, showBarPointers: false,
-
                 //Adding label collection
                 labels: [{ distanceFromScale: { x: 50, y: 0 } }],
-
                 //Adding marker pointer collection
                 markerPointers: [{
                     type: "pentagon", placement: "near",
                     length: 10, width: 20, distanceFromScale: 20,
                     backgroundColor: "#FE8282"
                 }],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -478,5 +464,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Scales_images/Scales_img7.png" Caption="Figure Linear Gauge with multiple scales"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img7.png" Caption="Figure Linear Gauge with multiple scales"%}
 
