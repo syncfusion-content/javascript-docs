@@ -30,7 +30,7 @@ Apply the plugin and property assigning the Diagram element through the directiv
 </div>
 <div>
     //Renders a dropdown box to display a list of colors
-    <input ej-dropdownlist e-datasource="pageColor" value="pageSettings.pageBackgroundColor" e-width="100px" />
+    <input ej-dropdownlist e-datasource="pageColor" value="pageSettings.pageBackgroundColor" e-width="100px"/>
 </div>
 
 {% endhighlight %}

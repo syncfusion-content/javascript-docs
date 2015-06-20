@@ -233,7 +233,7 @@ var label = {wrapping: ej.datavisualization.Diagram.Wrapping.Wrap };
 <td>
 NoWrap</td><td>
 Text is not wrapped.</td><td>
-<img src="/js/Diagram/Label_images/Label_img13.png" alt="" width="158pt" height="55pt" /></td></tr>
+<img src="/js/Diagram/Label_images/Label_img13.png" alt="" width="158pt" height="55pt"/></td></tr>
 <tr>
 <td>
 Wrap (Default)</td><td>
