@@ -617,4 +617,4 @@ The following code illustrates how to disable select constraints of connector. D
 connector.constraints = connector.Constraints & ~(ej.datavisualization.Diagram.ConnectorConstraints.Select);
 {% endhighlight %}
 
-> **Note:** Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see**_ [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations)_**. 
+> **Note:** Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations). 
