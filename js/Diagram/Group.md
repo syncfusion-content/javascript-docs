@@ -61,10 +61,10 @@ To edit a group, select the corresponding group. You can apply the following fea
 
 <table>
 <tr>
-<td>
-<b>Editing Options</b></td><td>
-<b>Before </b></td><td>
-<b>After</b></td></tr>
+<th>
+Editing Options</th><th>
+Before </th><th>
+After</th></tr>
 <tr>
 <td>
 Resize</td><td>
@@ -89,10 +89,10 @@ The following properties are used to align the child element on the Group, this 
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Data type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Data type</th><th>
+Description</th></tr>
 <tr>
 <td>
 marginLeft</td><td>
