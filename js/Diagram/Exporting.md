@@ -36,23 +36,29 @@ Diagram provides support to export the desired region of the diagram to desired 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 
 var options = {
-   //Name of the exported file
-   fileName: "diagram",
-   //Specifies whether to export as files/data
-   mode: "download",
-   //Specifies the region to be exported
-   region: "pageSettings",
-   //Format of the exported file
-   format: "jpg",
-   //Can be set as a rectangle {x,y width, height}
-   bounds: {
-      x: 0,
-      y: 0
-   },
-   //margin to the exported file/data
-   margin: {
-      left: 30
-   }
+
+    //Name of the exported file
+    fileName: "diagram",
+
+    //Specifies whether to export as files/data
+    mode: "download",
+
+    //Specifies the region to be exported
+    region: "pageSettings",
+
+    //Format of the exported file
+    format: "jpg",
+
+    //Can be set as a rectangle {x,y width, height}
+    bounds: {
+        x: 0,
+        y: 0
+    },
+
+    //margin to the exported file/data
+    margin: {
+        left: 30
+    }
 };
 
 //Exports the positivie region of diagram as an image of JPEG format.
@@ -108,4 +114,4 @@ Export diagram is based on page setting (page size, multiple page, page margin, 
 
 Format is to specify the type/format of the exported file. It includes jpg, png, bmp and svg.
 
-{% include image.html url="/js/Diagram/Exporting_images/Exporting_img1.png" Caption="Exported diagram"%}
+{% include image.html url="/js/Diagram/Exporting_images/Exporting_img1.png" %}

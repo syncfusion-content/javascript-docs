@@ -11,7 +11,7 @@ documentation: ug
 
 The **SymbolPalette** displays a collection of palettes. The Palette shows nodes and connectors. It allows you to drag and drop the nodes and connectors on the Diagram. The Palette has a header that displays the name and also has an option that allows you to expand or collapse its items. Each node or connector in the palette is called a Palette Item.
 
-{% include image.html url="/js/Diagram/Symbol-Palette_images/Symbol-Palette_img1.jpg" Caption="SymbolPalette"%}
+{% include image.html url="/js/Diagram/Symbol-Palette_images/Symbol-Palette_img1.jpg" %}
 
 ## Create and Add Symbols in the Palette
 
@@ -39,6 +39,7 @@ paletteCollection.Add(connectors);
 function createNode(name, offsetX, offsety, height, width) {
    //note: for creating node refer the link Node creation
 }
+
 //create connector
 function createConnector(name, segments, decorator) {
    //note: for creating connector refer the link Connector creation    
@@ -53,7 +54,7 @@ $("#palette").ejSymbolPalette({
 
 The Diagram provides support for adding nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer. The desired palette item that is clicked, is added to the Diagram when you set the desired Diagram id to the Symbol Palette’s diagramId.
 
-{% include image.html url="/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png" Caption="Adding Nodes and Connectors through Symbol Palette"%}
+{% include image.html url="/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png" %}
 
 ## Appearance
 
@@ -169,11 +170,11 @@ Gets or sets the preview x and y value of palette item.</td></tr>
 The following code example illustrates how to customize **Preview Content**.
 
 {% highlight js %}
-  //set properties to symbol palette preview
- previewWidth: 100,
+//set properties to symbol palette preview
+previewWidth: 100,
     previewHeight: 100,
     previewOffset: {
-       x: 102,
-       y: 102
+        x: 102,
+        y: 102
     }
 {% endhighlight %}

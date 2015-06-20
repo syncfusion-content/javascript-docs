@@ -35,8 +35,8 @@ There are several commands available in diagram. They are listed as follows.
 <td>
 align</td><td>
 <b>direction</b> (string)<br/>
-Values accepted-(“left”/“right”/“center”/“top”/“bottom”/“middle”)</td><td>
-Align all the nodes/connectors in the selection list to the left/right/center/top/bottom/middle of the selection boundary</td></tr>
+Values accepted-(“left”, “right”, “center”, “top”, “bottom” or “middle”)</td><td>
+Align all the nodes/connectors in the selection list to the left, right, center, top, bottom, middle of the selection boundary</td></tr>
 </table>
 
 
@@ -57,7 +57,7 @@ diagram.align("center");
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img1.png" Caption="Vertical Alignment"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img1.png" %}
 
 ### Horizontal Alignment commands
 
@@ -76,7 +76,7 @@ diagram.align("middle");
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img2.png" Caption="Horizontal alignment"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img2.png" %}
 
 ## Spacing Command
 
@@ -109,7 +109,7 @@ diagram.spaceAcross();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img3.png" Caption="Space Across"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img3.png" %}
 
 ### spaceDown Command
 
@@ -122,7 +122,7 @@ diagram.spaceDown();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img4.png" Caption="Space Down"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img4.png" %}
 
 ## Sizing Command
 
@@ -163,7 +163,7 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img5.png" Caption="Sizing Commands"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img5.png" %}
 
 ## Clipboard commands 
 
@@ -206,7 +206,7 @@ diagram.paste();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img6.png" Caption="Paste"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img6.png"%}
 
 ## Grouping Commands
 
@@ -255,7 +255,7 @@ diagram.bringToFront();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img7.png" Caption="Bring To Front"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img7.png" %}
 
 ### sendToBack Commands
 
@@ -268,7 +268,7 @@ diagram.sendToBack();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img8.png" Caption="Send To Back"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img8.png" %}
 
 ### moveForward Commands
 
@@ -281,7 +281,7 @@ diagram.moveForward();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img9.png" Caption="Move Forward"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img9.png" %}
 
 ### sendBackward Commands
 
@@ -294,7 +294,7 @@ diagram.sendBackward();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img10.png" Caption="Send Backward"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img10.png" %}
 
 ## Zoom Commands
 
@@ -362,7 +362,7 @@ diagram.nudge("up", 5);
 
 The corresponding arrow keys are used to move the selected elements to up, down, left or right by 1 pixel.
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img11.png" Caption="Keyboard-Arrow Keys"%}
+{% include image.html url="/js/Diagram/Commands_images/Commands_img11.png" %}
 
 **Nudge** commands are particularly useful for accurate placement of **Diagram** elements on the **Diagram** as it allows you to move by 1 pixel each time.
 

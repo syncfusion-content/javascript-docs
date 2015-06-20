@@ -17,9 +17,10 @@ Overview control solves these problems by showing you a preview, that is, an ove
 
 {% highlight html %}
 
-//Initialize overview
+<!-- Initialize overview -->
 <div id="Overview"></div>
-//Initialize diagram
+
+<!-- Initialize diagram -->
 <div id="diagram"></div>
 
 {% endhighlight %}
@@ -39,4 +40,4 @@ $("#overview").ejOverview({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Overview-Control_images/Overview-Control_img1.png" Caption="Overview"%}
+{% include image.html url="/js/Diagram/Overview-Control_images/Overview-Control_img1.jpg" %}

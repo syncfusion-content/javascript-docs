@@ -82,11 +82,14 @@ function nodeTemplate(diagram, node) {
 
 //To Initialize diagram
 $("#diagram").ejDiagram({
+
    //use automatic layout to arranging elements on the page        
    layout: {
       type: "hierarchicaltree"
    },
+   
    defaultSettings: {
+   
       //set the default properties of the node.
       node: {
          width: 100,
@@ -97,6 +100,7 @@ $("#diagram").ejDiagram({
             bold: true
          }]
       },
+      
       //set the default properties of the connector.         
       connector: {
          segments: [{
@@ -107,19 +111,23 @@ $("#diagram").ejDiagram({
          }
       }
    },
+   
    //initialize the node template.
    nodeTemplate: nodeTemplate,
+   
    //configure data source for diagram
    dataSourceSettings: {
       id: "Name",
       parent: "ReportingPerson",
-      dataSource: data //specifies the dataSource
+      
+      //specifies the dataSource
+      dataSource: data 
    }
 });         
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img1.png" Caption="Local Data binding"%}
+{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img1.png" %}
 
 ## Remote Data
 
@@ -131,6 +139,7 @@ The following code illustrates how to bind remote data to the **Diagram**.
 
 //Initialize Diagram Model
 $("#diagram").ejDiagram({
+
    //To customize node before rendering
    nodeTemplate: nodeTemplate,
 
@@ -139,6 +148,7 @@ $("#diagram").ejDiagram({
       type: "hierarchicaltree"
    },
    defaultSettings: {
+   
       //set the default properties of the nodes
       node: {
          width: 100,
@@ -174,7 +184,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img2.png" Caption="Remote data binding"%}
+{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img2.png" %}
 
 ### Root
 
@@ -196,7 +206,7 @@ dataSourceSettings: {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img3.png" Caption="DataSource with Root"%}
+{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img3.png" %}
 
 ## HTML Binding
 
@@ -279,10 +289,11 @@ The Diagram provides support to form diagram from the **HTML table**. It is flex
 dataSourceSettings: {
    id: "Id",
    parent: "ReportingPerson",
+   
    //specifies the table name 
    dataSource: ej.DataManager($("#Table1"))
 }
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img4.png" Caption="HTML Data Binding"%}
+{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img4.png" %}

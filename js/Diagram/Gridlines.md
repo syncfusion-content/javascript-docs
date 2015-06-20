@@ -11,7 +11,7 @@ documentation: ug
 
 **Gridlines** are horizontal and vertical lines behind the Diagram elements. They provide visual guidance when dragging or arranging objects on the Diagram surface.
 
-{% include image.html url="/js/Diagram/Gridlines_images/Gridlines_img1.png" Caption="Gridlines"%}
+{% include image.html url="/js/Diagram/Gridlines_images/Gridlines_img1.png" %}
 
 ## SnapConstraints
 
@@ -138,4 +138,4 @@ $("#Diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Gridlines_images/Gridlines_img2.png" Caption="Customized Gridlines"%}
+{% include image.html url="/js/Diagram/Gridlines_images/Gridlines_img2.png" %}

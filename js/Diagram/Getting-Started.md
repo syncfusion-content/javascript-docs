@@ -11,12 +11,6 @@ documentation: ug
 
 This section explains briefly about how to create a **Diagram** in your application with **JavaScript**.
 
-**Control Structure**
-
-The following screen shot illustrates the structure of **Diagram control.**
-
-{% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img1.png" Caption="Diagram"%}
-
 **Create your first Diagram in JavaScript**
 
 Getting started with your **Essential JavaScript Diagram** is easy. You can start by creating a simple **Organizational Chart**.
@@ -37,23 +31,7 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 </html>
 {% endhighlight %}
 
-* Add the &lt;div&gt; element in the body tag to render the Diagram.
-
-{% highlight html %}
-<html>
-
-<head>
-   <!-- header -->
-</head>
-
-<body>
-   <div id="DiagramContent"></div>
-</body>
-
-</html>
-{% endhighlight %}
-
-* Initialize the Diagram widget as follows.
+* Add the &lt;div&gt; element in the body tag to render the Diagram and initialize the Diagram widget as follows.
 
 {% highlight html %}
 <body>
@@ -69,7 +47,7 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 
 * This creates an empty diagram. In the following section, you can learn how to add “Employee Details” in the Diagram.
 
-{% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img2.png" Caption="Empty Diagram"%}
+{% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img2.png" %}
 
 **Define Employee Information**
 
@@ -325,4 +303,4 @@ $("#DiagramContent").ejDiagram({
 
 The Employee details are displayed in the Diagram as follows.
 
-{% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img3.png" Caption="Employee Details"%}
+{% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img3.png" %}

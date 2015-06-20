@@ -16,6 +16,7 @@ Localization is the process of providing controls in different cultures, to help
 $("#DiagramContent").ejDiagram({            
     locale:"es-ES",
 });
+
 ej.datavisualization.Diagram.Locale["es-ES"] = {
     cut: "Corte",
     copy: "Copia",
@@ -35,4 +36,4 @@ ej.datavisualization.Diagram.Locale["es-ES"] = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Localization_images/Localization_img1.png" Caption="Localization"%}
+{% include image.html url="/js/Diagram/Localization_images/Localization_img1.png" %}

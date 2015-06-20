@@ -70,7 +70,6 @@ $("#diagram").ejDiagram({
 tool: ej.datavisualization.Diagram.Tool.SingleSelect |
    ej.datavisualization.Diagram.Tool.ZoomPan
 });
-});
 {% endhighlight %}
 
 ## Drawing Tools
@@ -102,7 +101,7 @@ diagram.update({
 })
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Tools_images/Tools_img1.png" Caption="Rectangle"%}
+{% include image.html url="/js/Diagram/Tools_images/Tools_img1.png" %}
 
 Similarly you can draw any node using drawing tool, by assigning the required node to diagram.model.drawType property.
 
@@ -128,4 +127,4 @@ diagram.update({
 });
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Tools_images/Tools_img2.jpg" Caption="Straight Connector"%}
+{% include image.html url="/js/Diagram/Tools_images/Tools_img2.jpg" %}

@@ -17,12 +17,12 @@ The following code example illustrates how to bind data to the diagram through K
 
 {% highlight html %}
 
-//References to be added for knockout support.
+<!-- References to be added for knockout support. -->
 <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
 <script src="http://cdn.syncfusion.com/js/web/ej.unobtrusive-latest.min.js"></script>
 <script src="http://cdn.syncfusion.com/js/ej.widget.ko-latest.min.js"></script>
 
-//Initializes diagram.
+<!-- Initializes diagram. -->
 <div id="diagram" data-bind="ejDiagram: ({
     height: '500px', width: '700px',
     backgroundColor: 'whitesmoke',
@@ -32,8 +32,9 @@ The following code example illustrates how to bind data to the diagram through K
         pageHeight: 500
     }})">
 </div>
+
 <div>
-    //Renders a dropdown box.
+    <!-- Renders a dropdown box. -->
     <input id="Text1" data-bind="ejDropDownList:{ dataSource: pageColor, value: pageBackgroundColor, width: '100px'}">
 </div>
 
@@ -42,18 +43,19 @@ The following code example illustrates how to bind data to the diagram through K
 {% highlight js %}
 //Initializes source for page background color.
 var pageColor = [{
-   text: "Black"
+    text: "Black"
 }, {
-   text: "White"
+    text: "White"
 }];
+
 window.viewModel = {
-   pageBackgroundColor: ko.observable("White")
+    pageBackgroundColor: ko.observable("White")
 };
 
 //Applies knockout binding.
 $(function() {
-   ko.applyBindings(viewModel);
+    ko.applyBindings(viewModel);
 });
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Knockout-Binding_images/Knockout-Binding_img1.png" Caption="Page Background through knockout"%}
+{% include image.html url="/js/Diagram/Knockout-Binding_images/Knockout-Binding_img1.png" %}

@@ -49,11 +49,14 @@ function nodeTemplate(diagram, node) {
 }
 
 $("#diagram").ejDiagram({
+
    //use automatic layout to arranging elements on the page          
    layout: {
       type: "hierarchicaltree"
    },
+   
    defaultSettings: {
+   
       //set the default properties of the node.
       node: {
          width: 100,
@@ -65,6 +68,7 @@ $("#diagram").ejDiagram({
             fontColor: "white"
          }]
       },
+      
       //set the default properties of the connector.    
       connector: {
          segments: [{
@@ -75,12 +79,15 @@ $("#diagram").ejDiagram({
          }
       }
    },
+   
    //initialize the node template.
    nodeTemplate: nodeTemplate,
+   
    //configure data source for diagram
    dataSourceSettings: {
       id: "Name",
       parent: "ReportingPerson",
+      
       //specifies the dataSource
       dataSource: data
    }
@@ -92,7 +99,7 @@ $("#diagram").ejDiagram({
 
 The following example illustrates the horizontal and vertical spacing of Hierarchical Layout.
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png" Caption="Hierarchical Layout"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png" %}
 
 ### Orientation
 
@@ -105,7 +112,7 @@ The **Orientation** property, **ej.datavisualization.Diagram.LayoutOrientations*
 
 The following image displays “Bottom to Top” orientation of layout.
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png" Caption="BottomToTop"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png"%}
 
 ## Organizational Chart
 
@@ -222,6 +229,7 @@ function nodeTemplate(diagram, node) {
 
 //Initialize diagram
 $("#diagram").ejDiagram({
+
    //Define default layout as organizational chart
    layout: {
       type: "organizationalchart"
@@ -230,8 +238,10 @@ $("#diagram").ejDiagram({
       //set the default properties of the nodes.
       //set the default properties of the connectors. 
    },
+   
    //initialize the node template.
    nodeTemplate: nodeTemplate,
+   
    //configure data source for diagram
    dataSourceSettings: {
       id: "Id",
@@ -242,7 +252,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png" Caption="Organizational chart"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png" %}
 
 ### Customizing the organizational chart
 
@@ -273,6 +283,7 @@ function getLayoutInfo(diagram, node, options) {
 
 //Initialize diagram
 $("#diagram").ejDiagram({
+
    //use automatic layout to arrange elements
    layout: {
       type: "organizationalchart",
@@ -399,7 +410,7 @@ function getLayoutInfo(diagram, node, options) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png" Caption="Horizontal left arranged leaf level trees"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png" %}
 
 ### Assistant Support
 
@@ -420,4 +431,4 @@ function getLayoutInfo(diagram, node, options) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png" Caption="Vertical left arrangement with assistant"%}
+{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png" %}

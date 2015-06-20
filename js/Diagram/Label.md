@@ -32,7 +32,7 @@ var connector = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img1.png" Caption="Label"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img1.png" %}
 
 ## Displacement
 
@@ -56,7 +56,7 @@ var connector = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img2.png" Caption="Label Dragging"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img2.png" %}
 
 The following code illustrates how to displace labels through API.
 
@@ -83,7 +83,7 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img3.png" Caption="Label Displacement through margin"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img3.png" %}
 
 ## Label Rotation
 
@@ -107,7 +107,7 @@ var connector = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img4.png" Caption="Rotated Label"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img4.png" %}
 
 > **Note:** No built-in support is added to rotate labels interactively.
 
@@ -133,7 +133,7 @@ var label = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img5.png" Caption="Customized Label"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img5.png" %}
 
 ## Label Editing
 
@@ -151,7 +151,7 @@ diagram.updateLabel(node.name, node.labels[0], label);
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img6.png" Caption="Label Mode"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img6.png" %}
 
 ## Read-only Label
 
@@ -249,9 +249,9 @@ Bottom</td><td>
 <img src="/js/Diagram/Label_images/Label_img9.png" alt="" width="68pt" height="58pt"/></td></tr>
 </table>
 
-{% include image.html url="/js/Diagram/Label_images/Label_img10.png" Caption="Left align"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img10.png" %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img11.png" Caption="Label Alignment"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img11.png" %}
 
 ## Text Wrapping
 
@@ -267,7 +267,7 @@ var label = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img12.png" Caption="Text Wrapping"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img12.png" %}
 
 <table>
 <tr>
@@ -336,4 +336,4 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img16.png" Caption="Multiple Label and Alignment"%}
+{% include image.html url="/js/Diagram/Label_images/Label_img16.png" %}

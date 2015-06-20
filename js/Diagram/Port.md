@@ -30,7 +30,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Port_images/Port_img1.png" Caption="Port"%}
+{% include image.html url="/js/Diagram/Port_images/Port_img1.png" %}
 
 ## Connecting Ports
 
@@ -46,28 +46,16 @@ var nodes = [{
    height: 100,
    ports: [{
       name: "port1",
-      offset: {
-         x: 0,
-         y: 0.5
-      }
+      offset: { x: 0, y: 0.5 }
    }, {
       name: "port2",
-      offset: {
-         x: 0.5,
-         y: 0
-      }
+      offset: { x: 0.5, y: 0 }
    }, {
       name: "port3",
-      offset: {
-         x: 1,
-         y: 0.5
-      }
+      offset: { x: 1, y: 0.5 }
    }, {
       name: "port4",
-      offset: {
-         x: 0.5,
-         y: 1
-      }
+      offset: { x: 0.5, y: 1 }
    }]
 }, {
    name: "node2",
@@ -77,30 +65,19 @@ var nodes = [{
    height: 100,
    ports: [{
       name: "port1",
-      offset: {
-         x: 0,
-         y: 0.5
-      }
+      offset: { x: 0, y: 0.5 }
    }, {
       name: "port2",
-      offset: {
-         x: 0.5,
-         y: 0
-      }
+      offset: { x: 0.5, y: 0 }
    }, {
       name: "port3",
-      offset: {
-         x: 1,
-         y: 0.5
-      }
+      offset: { x: 1, y: 0.5 }
    }, {
       name: "port4",
-      offset: {
-         x: 0.5,
-         y: 1
-      }
+      offset: { x: 0.5, y: 1 }
    }]
 }];
+
 //create connector and connect ports
 var connector = {
    name: "connector",
@@ -111,7 +88,7 @@ var connector = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Port_images/Port_img2.png" Caption="Port to Port Connection"%}
+{% include image.html url="/js/Diagram/Port_images/Port_img2.png" %}
 
 ## Appearance
 

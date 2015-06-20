@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical object that represents visual data to be placed on the page.
 
-{% include image.html url="/js/Diagram/Node_images/Node_img1.png" Caption="Node"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img1.jpg" %}
 
 ## Create Node
 
@@ -40,7 +40,7 @@ $("#Diagram").ejDiagram({
 });
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img2.png" Caption="Node"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img2.png" %}
 
 List of preloaded nodes from symbol palette are added to the **Diagram** by clicking on the palette nodes or by dragging a node and dropping on the **Diagram**. The method to add node/connector to palette and drag and drop on **Diagram** is explained in palettesection
 
@@ -83,9 +83,9 @@ node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img3.png" Caption="Built-in Shapes"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img3.jpg" %}
 
-**Html**
+### Html
 
 **Html** elements are embedded in diagram through **Html shape node**. The following code illustrates how an **Html** node is created.
 
@@ -108,9 +108,9 @@ var node = {
 }
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img4.png" Caption="Html Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img4.png" %}
 
-**Text Node**
+### Text Node
 
 You can add Text to the **Diagram** using **Text shape node**. The text shape has **textblock** that contains text, font style and align properties. The following code illustrates how to create a **Text** node.
 
@@ -128,9 +128,9 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img5.png" Caption="Text Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img5.png" %}
 
-**Path**
+### Path
 
 You can create complex shapes using **Path shape node**. It is achieved by assigning path string to shape’s **pathData**. The following code illustrates how a **Path node** is created.
 
@@ -146,9 +146,9 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img6.png" Caption="Path Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img6.jpg" %}
 
-**Polygon**
+### Polygon
 
 You can create **Polygon** shape by setting node’s type as **ej.datavisualization.Diagram.Shapes.Polygon** and assigns the desired points to the node’s **point** property.
 
@@ -174,7 +174,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img7.png" Caption="Polygon Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img7.png" %}
 
 ### Native 
 
@@ -202,7 +202,7 @@ var node = {
 }
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img8.png" Caption="Native Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img8.png" %}
 
 > **Note:** Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
 
@@ -217,7 +217,7 @@ var node = {
 </svg>
 {% endhighlight %}
 
-**Image**
+### Image
 
 You can add **Image** as a node to the **Diagram** by setting node’s type as **ej.datavisualization.Diagram.Shapes.Image** and set the image **URL** to **source** property of shape. The following code illustrates how an **Image** node is created.
 
@@ -230,13 +230,13 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img9.png" Caption="Image Shape"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img9.png" %}
 
 ## Shadow
 
 **Drop shadow effect** for a **node** can be enabled or disabled by using the **NodeConstraints.Shadow**. The following image represents the **drop shadow effect** for a **Node**.
 
-{% include image.html url="/js/Diagram/Node_images/Node_img10.png" Caption="Shadow"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img10.jpg" %}
 
 The following code example illustrates how to enable or disable the **shadow**.
 
@@ -268,7 +268,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img11.png" Caption="Shadow Customization"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img11.jpg" %}
 
 ## Appearance
 
@@ -346,7 +346,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img12.png" Caption="Customized Node"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img12.jpg" %}
 
 ## Constraints
 
@@ -449,7 +449,7 @@ The Default value for the node constraints property is **ej.datavisualization.Di
 node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img13.jpeg" Caption="Rotator Constraints–Enabled"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img13.jpg" %}
 
 The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
 
@@ -459,6 +459,6 @@ The following code illustrates how to disable rotate constraints. Disabling rota
 node.constraints = node.constraints & ~(ej.datavisualization.Diagram.NodeConstraints.Rotate);
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img14.jpeg" Caption="Rotate Constraints-disabled"%}
+{% include image.html url="/js/Diagram/Node_images/Node_img14.jpg" %}
 
 > **Note:** Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
