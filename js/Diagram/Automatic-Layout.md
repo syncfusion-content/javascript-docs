@@ -21,41 +21,70 @@ The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the 
 {% highlight js %}
 
 //Initialize data source
-var data = [
-    {"Name": "Steve-Ceo"},
-    {"Name": "Kevin-Manager","ReportingPerson":"Steve-Ceo"},
-    {"Name": "Peter-Manager","ReportingPerson":"Steve-Ceo"},
-    {"Name": "John- Manager","ReportingPerson":"Peter-Manager"},
-    {"Name": "Mary-CSE ","ReportingPerson":"Peter-Manager"},
-    {"Name": "Jim-CSE ", "ReportingPerson":"Kevin-Manager"},
-    {"Name": "Martin-CSE", "ReportingPerson":"Kevin-Manager"}
-];
+var data = [{
+   "Name": "Steve-Ceo"
+}, {
+   "Name": "Kevin-Manager",
+   "ReportingPerson": "Steve-Ceo"
+}, {
+   "Name": "Peter-Manager",
+   "ReportingPerson": "Steve-Ceo"
+}, {
+   "Name": "John- Manager",
+   "ReportingPerson": "Peter-Manager"
+}, {
+   "Name": "Mary-CSE ",
+   "ReportingPerson": "Peter-Manager"
+}, {
+   "Name": "Jim-CSE ",
+   "ReportingPerson": "Kevin-Manager"
+}, {
+   "Name": "Martin-CSE",
+   "ReportingPerson": "Kevin-Manager"
+}];
 
 //Customize nodes before rendering
 function nodeTemplate(diagram, node) {
-    node.labels[0].text = node.Name;
-} 
+   node.labels[0].text = node.Name;
+}
 
-$("#diagram").ejDiagram ({ 
-    //use automatic layout to arranging elements on the page          
-    layout: { type: "hierarchicaltree"},      
-    defaultSettings: {
-        //set the default properties of the node.
-        node: { width: 100, height: 40, fillColor: "darkcyan", 
-                labels: [{ name: "label1", bold: true, fontColor: "white"}]
-        },
-        //set the default properties of the connector.    
-        connector: { segments: [{ "type": "orthogonal"}], targetDecorator: {shape: "none"} } 
-    },       
-    //initialize the node template.
-    nodeTemplate: nodeTemplate,
-    //configure data source for diagram
-    dataSourceSettings: {
-        id: "Name", parent: "ReportingPerson",             
-        //specifies the dataSource
-        dataSource: data
-    }
-}); 
+$("#diagram").ejDiagram({
+   //use automatic layout to arranging elements on the page          
+   layout: {
+      type: "hierarchicaltree"
+   },
+   defaultSettings: {
+      //set the default properties of the node.
+      node: {
+         width: 100,
+         height: 40,
+         fillColor: "darkcyan",
+         labels: [{
+            name: "label1",
+            bold: true,
+            fontColor: "white"
+         }]
+      },
+      //set the default properties of the connector.    
+      connector: {
+         segments: [{
+            "type": "orthogonal"
+         }],
+         targetDecorator: {
+            shape: "none"
+         }
+      }
+   },
+   //initialize the node template.
+   nodeTemplate: nodeTemplate,
+   //configure data source for diagram
+   dataSourceSettings: {
+      id: "Name",
+      parent: "ReportingPerson",
+      //specifies the dataSource
+      dataSource: data
+   }
+});
 
 {% endhighlight %}
 
@@ -70,11 +99,8 @@ The following example illustrates the horizontal and vertical spacing of Hierarc
 The **Orientation** property, **ej.datavisualization.Diagram.LayoutOrientations**, of layout is used to specify the tree orientation.
 
 * **TopToBottom**- Places the root node at the top and the child nodes are arranged below the root node.
-
 * **BottomToTop**- Places the root node at the bottom and the child nodes are arranged above the root node.
-
 * **LeftToRight**- Places the root node at the left and the child nodes are arranged on the right side of the root node.
-
 * **RightToLeft**- Places the root node at the right and the child nodes are arranged on the left side of the root node.
 
 The following image displays “Bottom to Top” orientation of layout.
@@ -92,54 +118,126 @@ The following code example illustrates how to create an organizational chart.
 {% highlight js %}
 
 //Data source
-var data = [
-    { "Id": "parent", "Role": "Project Management" },
-    { "Id": 1, "Role": "R&D Team", "Team": "parent" },
-    { "Id": 3, "Role": "Philosophy", "Team": "1" },
-    { "Id": 4, "Role": " Organization", "Team": "1" },
-    { "Id": 5, "Role": "Technology", "Team": "1" },
-    { "Id": 7, "Role": " Funding", "Team": "1" },
-    { "Id": 8, "Role": "Resource Allocation", "Team": "1" },
-    { "Id": 9, "Role": "Targeting", "Team": "1" },
-    { "Id": 11, "Role": "Evaluation", "Team": "1" },
-    { "Id": 156, "Role": "HR Team", "Team": "parent" },
-    { "Id": 13, "Role": "Recruitment", "Team": "156" },
-    { "Id": 113, "Role": "Training", "Team": "12" },
-    { "Id": 112, "Role": "Employee Relation", "Team": "156" },
-    { "Id": 14, "Role": "Record Keeping", "Team": "12" },
-    { "Id": 15, "Role": "Compensations & Benefits", "Team": "12" },
-    { "Id": 16, "Role": "Compliances", "Team": "12" },
-    { "Id": 17, "Role": "Production & Sales Team", "Team": "parent" },
-    { "Id": 119, "Role": "Design", "Team": "17" },
-    { "Id": 19, "Role": "Operation", "Team": "17" },
-    { "Id": 20, "Role": "Support", "Team": "17" },
-    { "Id": 21, "Role": "Quality Assurance", "Team": "17" },
-    { "Id": 23, "Role": "Customer Interaction", "Team": "17" },
-    { "Id": 24, "Role": "Support and Maintenance", "Team": "17" },
-    { "Id": 25, "Role": "Task Coordination", "Team": "17" },
-];
+var data = [{
+   "Id": "parent",
+   "Role": "Project Management"
+}, {
+   "Id": 1,
+   "Role": "R&D Team",
+   "Team": "parent"
+}, {
+   "Id": 3,
+   "Role": "Philosophy",
+   "Team": "1"
+}, {
+   "Id": 4,
+   "Role": " Organization",
+   "Team": "1"
+}, {
+   "Id": 5,
+   "Role": "Technology",
+   "Team": "1"
+}, {
+   "Id": 7,
+   "Role": " Funding",
+   "Team": "1"
+}, {
+   "Id": 8,
+   "Role": "Resource Allocation",
+   "Team": "1"
+}, {
+   "Id": 9,
+   "Role": "Targeting",
+   "Team": "1"
+}, {
+   "Id": 11,
+   "Role": "Evaluation",
+   "Team": "1"
+}, {
+   "Id": 156,
+   "Role": "HR Team",
+   "Team": "parent"
+}, {
+   "Id": 13,
+   "Role": "Recruitment",
+   "Team": "156"
+}, {
+   "Id": 113,
+   "Role": "Training",
+   "Team": "12"
+}, {
+   "Id": 112,
+   "Role": "Employee Relation",
+   "Team": "156"
+}, {
+   "Id": 14,
+   "Role": "Record Keeping",
+   "Team": "12"
+}, {
+   "Id": 15,
+   "Role": "Compensations & Benefits",
+   "Team": "12"
+}, {
+   "Id": 16,
+   "Role": "Compliances",
+   "Team": "12"
+}, {
+   "Id": 17,
+   "Role": "Production & Sales Team",
+   "Team": "parent"
+}, {
+   "Id": 119,
+   "Role": "Design",
+   "Team": "17"
+}, {
+   "Id": 19,
+   "Role": "Operation",
+   "Team": "17"
+}, {
+   "Id": 20,
+   "Role": "Support",
+   "Team": "17"
+}, {
+   "Id": 21,
+   "Role": "Quality Assurance",
+   "Team": "17"
+}, {
+   "Id": 23,
+   "Role": "Customer Interaction",
+   "Team": "17"
+}, {
+   "Id": 24,
+   "Role": "Support and Maintenance",
+   "Team": "17"
+}, {
+   "Id": 25,
+   "Role": "Task Coordination",
+   "Team": "17"
+}, ];
 
 //creating the node template
 function nodeTemplate(diagram, node) {
-    node.labels[0].text = node.Role;
+   node.labels[0].text = node.Role;
 }
 
 //Initialize diagram
 $("#diagram").ejDiagram({
-    //Define default layout as organizational chart
-    layout: { type: "organizationalchart" },
-    defaultSettings: {
-        //set the default properties of the nodes.
-        //set the default properties of the connectors. 
-    },
-    //initialize the node template.
-    nodeTemplate: nodeTemplate,
-    //configure data source for diagram
-    dataSourceSettings: {
-        id: "Id", 
-        parent: "Team",
-        dataSource: data
-    }
+   //Define default layout as organizational chart
+   layout: {
+      type: "organizationalchart"
+   },
+   defaultSettings: {
+      //set the default properties of the nodes.
+      //set the default properties of the connectors. 
+   },
+   //initialize the node template.
+   nodeTemplate: nodeTemplate,
+   //configure data source for diagram
+   dataSourceSettings: {
+      id: "Id",
+      parent: "Team",
+      dataSource: data
+   }
 });
 
 {% endhighlight %}
@@ -168,15 +266,18 @@ The following code example illustrates how to define the method getLayoutInfo.
 
 //Defining getLayoutInfo
 function getLayoutInfo(diagram, node, options) {
-    options.orientation = "vertical"; 
-    options.type = "right";
-    options.offset = 10;
+   options.orientation = "vertical";
+   options.type = "right";
+   options.offset = 10;
 }
 
 //Initialize diagram
 $("#diagram").ejDiagram({
-    //use automatic layout to arrange elements
-    layout: { type: "organizationalchart", getLayoutInfo: getLayoutInfo }
+   //use automatic layout to arrange elements
+   layout: {
+      type: "organizationalchart",
+      getLayoutInfo: getLayoutInfo
+   }
 });
 
 {% endhighlight %}
@@ -292,10 +393,10 @@ Following code example illustrates how to set the horizontal right arrangement t
 
 //Horizontal right layout arrangement
 function getLayoutInfo(diagram, node, options) {
-    if (!options.hasSubTree) {
-        options.type = "left";
-        options.orientation = "horizontal";
-    }
+   if (!options.hasSubTree) {
+      options.type = "left";
+      options.orientation = "horizontal";
+   }
 }
 
 {% endhighlight %}
@@ -310,13 +411,13 @@ Diagram provides support to layout assistant nodes. You can add assistants at ru
 
 //Defining getLayoutInfo
 function getLayoutInfo(diagram, node, options) {
-    if (node.hasAssistant) {
-        options.assistants.push(options.children[0]);
-        options.children.splice(0, 1);
-    }
-    options.orientation = "vertical"; 
-    options.type = "left"
-    options.offset = -60;
+   if (node.hasAssistant) {
+      options.assistants.push(options.children[0]);
+      options.children.splice(0, 1);
+   }
+   options.orientation = "vertical";
+   options.type = "left"
+   options.offset = -60;
 }
 
 {% endhighlight %}
