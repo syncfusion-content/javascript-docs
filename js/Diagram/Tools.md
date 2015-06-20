@@ -130,4 +130,4 @@ diagram.update({
 });
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Tools_images/Tools_img2.jpeg" Caption="Straight Connector"%}
+{% include image.html url="/js/Diagram/Tools_images/Tools_img2.jpg" Caption="Straight Connector"%}

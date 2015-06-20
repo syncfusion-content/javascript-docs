@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create a link between two nodes. A connector is a line that has connection points at the ends of the line and stays connected to the elements that you attach it to.
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img1.jpeg" Caption="Connector"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img1.jpg" Caption="Connector"%}
 
 ## Create Connector
 
