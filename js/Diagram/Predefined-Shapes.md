@@ -20,14 +20,12 @@ documentation: ug
 The Basic shapes are common shapes used to represent geometrical information visually. The following code example illustrates how to create a basic shape.
 
 {% highlight js %}
-
 var diagram = ej.datavisualization.Diagram;
 //Create a basic shape
-var node = { 
-	type: "basic", 
-	shape:Diagram.BasicShapes.Plus  
+var node = {
+   type: "basic",
+   shape: Diagram.BasicShapes.Plus
 };
-
 {% endhighlight %}
 
 The list of basic shapes are as follows.
@@ -39,14 +37,12 @@ The list of basic shapes are as follows.
 The flow shapes are used to represent the process flow. It is used for analyzing, designing, managing or for documentation process. The following code example illustrates how to create a flow shape. 
 
 {% highlight js %}
-
 var diagram = ej.datavisualization.Diagram;
 //Create a flow shape
-var node = { 
-	type: "flow", 
-	shape: diagram.FlowShapes.Document 
+var node = {
+   type: "flow",
+   shape: diagram.FlowShapes.Document
 };
-
 {% endhighlight %}
 
 The list of flow shapes are as follows.
@@ -75,15 +71,14 @@ The BPMN shapes and its types are explained as follows.
 An event is represented with a circle and it denote something that happens. Icons within the circle denote the type of event. For example, an envelope representing a message, or a clock representing time. The following code example illustrate how to create an event in BPMN shape.
 
 {% highlight js %}
-
 var diagram = ej.datavisualization.Diagram;
 //Create an event shape in BPMN 
-var node = { 
-	type: "bpmn", 
-	shape: diagram.BPMNShapes.Event, event:diagram.BPMNEvents.Start,
-	trigger:diagram.BPMNTriggers.None 
+var node = {
+   type: "bpmn",
+   shape: diagram.BPMNShapes.Event,
+   event: diagram.BPMNEvents.Start,
+   trigger: diagram.BPMNTriggers.None
 };
-
 {% endhighlight %}
 
 <table>
@@ -203,11 +198,12 @@ Gateway is used to control the flow of a process. It is represented as a diamond
 The following code example illustrates how to create a gateway in BPMN shape.
 
 {% highlight js %}
-
 var diagram = ej.datavisualization.Diagram;
 //Create a gateway shape in BPMN 
-var node = { type: "bpmn", shape:diagram.BPMNShapes.Gateway };
-
+var node = {
+   type: "bpmn",
+   shape: diagram.BPMNShapes.Gateway
+};
 {% endhighlight %}
 
 <table>
@@ -246,7 +242,6 @@ The activity is the task that is performed in a process. It is represented by ro
 There are two types in activity. They are listed as follows.
 
 1. Task: Occurs within a process and it is not broken down to finer level of detail.
-
 2. Subprocess: Occurs within a process broken down to finer level of detail.
 
 <table>
@@ -284,37 +279,28 @@ _Activity Type_
 The following code example illustrate how to create activity in BPMN shape.
 
 {% highlight js %}
-
 var diagram = ej.datavisualization.Diagram;
 //Create an activity shape in BPMN
-var node = { type: "bpmn", shape: diagram.BPMNShapes.Activity, activity: diagram.BPMNActivity.Task };
-
+var node = {
+   type: "bpmn",
+   shape: diagram.BPMNShapes.Activity,
+   activity: diagram.BPMNActivity.Task
+};
 {% endhighlight %}
 
 The different activities in the BPMN shape are listed as follows.
 
 * Loop: The task that is internally being looped
-
 {% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img23.png" Caption="Loop"%}
-
 * Tasks: The task for sending, receiving, user based task etc…
-
 {% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img24.png" Caption="Tasks"%}
-
 * Compensation: Compensation triggered when operation is partially failed.
-
 {% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img25.png" Caption="Compensation"%}
-
 * Call
-
 {% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img26.png" Caption="Call"%}
-
 * Ad-Hoc
-
 {% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img27.png" Caption="Ad-Hoc"%}
-
 * Boundary: Boundary represents the type of task that is being processed
-
 {% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img28.png" Caption="Boundary"%}
 
 ### Data
@@ -326,17 +312,18 @@ Data object is used to represent “how data is produced by activities in proces
 The following code example illustrate how to create connecting objects in BPMN shape.
 
 {% highlight js %}
-
-var node =[];
+var node = [];
 var diagram = ej.datavisualization.Diagram;
 //Create a DataObject shape in BPMN
 node = {
-	type: "bpmn", 
-	shape: diagram.BPMNShapes.DataObject
+   type: "bpmn",
+   shape: diagram.BPMNShapes.DataObject
 };
 //Create a DataSource shape in BPMN
-node = { type: "bpmn", shape: diagram.BPMNShapes.DataObject };
-
+node = {
+   type: "bpmn",
+   shape: diagram.BPMNShapes.DataObject
+};
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img29.png" Caption="Data"%}
