@@ -316,8 +316,6 @@ number</td><td>
 Gets or sets the width of node border.</td></tr>
 </table>
 
-_Appearance_
-
 {% highlight js %}
 
 //create linear gradient
@@ -441,7 +439,6 @@ Enables all the constraints.</td></tr>
 None</td><td>
 Disables all the constraints.</td></tr>
 </table>
-_Constraints_
 
 The Default value for the node constraints property is **ej.datavisualization.Diagram.NodeConstraints.Default.** The following code illustrates how to enable rotate, select constraints, and disable other constraints.
 
