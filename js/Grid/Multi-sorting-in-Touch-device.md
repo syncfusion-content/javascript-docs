@@ -28,24 +28,24 @@ In **ejGrid**, you have an **API** to clear sorted columns. Through this **API**
 {% highlight html %}
 
 <input type="button" id="clearsorting" name="sorting" value="clear sorting" />
-  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowSorting: true,
-                allowMultiSorting: true,
-                sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }, { field: "EmployeeID", direction: ej.sortOrder.Ascending }] },
-                allowPaging: true
-            });
-            $("#clearsorting").ejButton({
-                click: function (args) {
-                    $("#Grid").ejGrid("clearSorting");
-                }
-            });
-        });
-
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          allowSorting: true,
+          allowMultiSorting: true,
+          sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }, { field: "EmployeeID", direction: ej.sortOrder.Ascending }] },
+          allowPaging: true
+      });
+      $("#clearsorting").ejButton({
+          click: function (args) {
+              $("#Grid").ejGrid("clearSorting");
+          }
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -64,50 +64,50 @@ In the normal way of sorting, first preference is given to capital letters and t
 
 {% highlight html %}
 
- <!--Sorting with Merge Sort-->
+<!--Sorting with Merge Sort-->
 
-   <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            ej.support.enableLocalizedSort = true
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowSorting: true,
-                sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }]},
-                allowPaging: true,
-                columns: [
-                      { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 100 },
-                      { field: "CustomerID", headerText: "Customer ID", width: 130 },
-                      { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
-                      { field: "ShipCountry", headerText: "ShipCountry", width: 100 }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      ej.support.enableLocalizedSort = true
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          allowSorting: true,
+          sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }]},
+          allowPaging: true,
+          columns: [
+                { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 100 },
+                { field: "CustomerID", headerText: "Customer ID", width: 130 },
+                { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
+                { field: "ShipCountry", headerText: "ShipCountry", width: 100 }
+          ]
+      });
+  });
+</script>
 
-    
-    <!--MultiSorting with Merge Sort-->
 
-   <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            ej.support.enableLocalizedSort = true
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowSorting: true,
-                allowMultiSorting: true,
-                sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }] },
-                allowPaging: true,
-                columns: [
-                      { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 100 },
-                      { field: "CustomerID", headerText: "Customer ID", width: 130 },
-                      { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
-                      { field: "ShipCountry", headerText: "ShipCountry", width: 100 }
-                ]
-            });
-        });
+<!--MultiSorting with Merge Sort-->
 
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      ej.support.enableLocalizedSort = true
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          allowSorting: true,
+          allowMultiSorting: true,
+          sortSettings: { sortedColumns: [{ field: "CustomerID", direction: ej.sortOrder.Ascending }] },
+          allowPaging: true,
+          columns: [
+                { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 100 },
+                { field: "CustomerID", headerText: "Customer ID", width: 130 },
+                { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
+                { field: "ShipCountry", headerText: "ShipCountry", width: 100 }
+          ]
+      });
+  });
+  
+</script>
 
 {% endhighlight %}
 

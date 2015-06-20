@@ -31,33 +31,33 @@ documentation: ug
 
 
 
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-                allowPaging: true,
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID" },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right" },
-                    { field: "ShipCity", headerText: "Ship City" },
-                    { field: "Verified", headerText: "Verified" }
-                ]
-
-            });
-        });
-
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+          allowPaging: true,
+          columns: [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID" },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right" },
+              { field: "ShipCity", headerText: "Ship City" },
+              { field: "Verified", headerText: "Verified" }
+          ]
+  
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -89,35 +89,33 @@ The edit type of every column can be customized using the **editType** property.
 {% highlight html %}
 
 
-
-  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-                allowPaging: true,
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", IsPrimaryKey: true, textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID", **editType: ej.Grid.EditingType.String** },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right",**editType: ej.Grid.EditingType.Numeric** },
-                    { field: "ShipCity", headerText: "Ship City", **editType: ej.Grid.EditingType.Dropdown** },
-                    { field: "OrderDate", headerText: "Order Date", **editType: ej.Grid.EditingType.DatePicker**, format: "{0:MM/dd/yyyy}" },
-                    { field: "Verified", headerText: "Verified", **editType: ej.Grid.EditingType.Boolean** }
-                ]
-            });
-        });
-
-    </script>
-
+ <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+          allowPaging: true,
+          columns: [
+              { field: "OrderID", headerText: "Order ID", IsPrimaryKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right",editType: ej.Grid.EditingType.Numeric },
+              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
+              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
+              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
+          ]
+      });
+  });
+  
+</script>
 
 {% endhighlight %}
 
@@ -136,33 +134,32 @@ By default, the datasource for Dropdown Edit Column is set by Grid Control from 
 
 {% highlight html %}
 
-
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-                allowPaging: true,
-                columns: [
-                    { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
-                    { field: "CustomerID", headerText: 'Customer ID', width: 90 },
-                    { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 80 },
-                    { field: "Freight", headerText: 'Freight', width: 80 },
-                    { field: "ShipCountry", headerText: 'Ship Country', width: 90, editType: ej.Grid.EditingType.Dropdown, dataSource: countries }
-                ]
-            });
-        });
-
-    </script>
+  <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+          allowPaging: true,
+          columns: [
+              { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
+              { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+              { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 80 },
+              { field: "Freight", headerText: 'Freight', width: 80 },
+              { field: "ShipCountry", headerText: 'Ship Country', width: 90, editType: ej.Grid.EditingType.Dropdown, dataSource: countries }
+          ]
+      });
+  });
+  
+</script>
 {% endhighlight %}
 
 
@@ -183,42 +180,39 @@ The following code example is for **Edit Template.**
 
 {% highlight html %}
 
-
-  <div id="Grid"></div>
-      <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
-                toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-                columns: [
-                        { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
-                        { field: "CustomerID", headerText: 'Customer ID', width: 90 },
-                        {
-                            field: "EmployeeID", headerText: 'Employee ID',
-                            editTemplate: {
-                                create: function () {
-                                    return "<input>";
-                                },
-                                read: function (args) {
-                                    return args.ejMaskEdit("get_StrippedValue");
-                                },
-                                write: function (args) {
-                                    args.element.ejMaskEdit({ width: "100%", maskFormat: "9", value: args.rowdata !== undefined ? args.rowdata["EmployeeID"] : "" });
-                                    }
-                            }, textAlign: ej.TextAlign.Right, width: 80,
-                        },
-                        { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, width: 80, format: "{0:C0}" },
-                        { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                        { field: "ShipCountry", headerText: 'Ship Country', editType: ej.Grid.EditingType.Dropdown, width: 90, }
-                ]
-            });
-        });
-    </script>
-
-
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          // the datasource "window.gridData" is referred from jsondata.min.js
+          dataSource: window.gridData,
+          allowPaging: true,
+          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
+          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+          columns: [
+                  { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
+                  { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+                  {
+                      field: "EmployeeID", headerText: 'Employee ID',
+                      editTemplate: {
+                          create: function () {
+                              return "<input>";
+                          },
+                          read: function (args) {
+                              return args.ejMaskEdit("get_StrippedValue");
+                          },
+                          write: function (args) {
+                              args.element.ejMaskEdit({ width: "100%", maskFormat: "9", value: args.rowdata !== undefined ? args.rowdata["EmployeeID"] : "" });
+                              }
+                      }, textAlign: ej.TextAlign.Right, width: 80,
+                  },
+                  { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, width: 80, format: "{0:C0}" },
+                  { field: "ShipName", headerText: 'Ship Name', width: 150 },
+                  { field: "ShipCountry", headerText: 'Ship Country', editType: ej.Grid.EditingType.Dropdown, width: 90, }
+          ]
+      });
+  });
+</script>
 
 {% endhighlight %}
 
@@ -254,38 +248,36 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 {% highlight html %}
 
-
-
  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.Normal
-                },
-                allowPaging: true,
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", isPrimarKey: true, textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-                    { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-                    { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
-                ]
-            });
-        });
-
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true,
+              editMode: ej.Grid.EditMode.Normal
+          },
+          allowPaging: true,
+          columns: [
+              { field: "OrderID", headerText: "Order ID", isPrimarKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
+              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
+              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
+          ]
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -302,37 +294,36 @@ The **Dialog Edit** feature allows you to edit data, using a dialog box that has
 
 {% highlight html %}
 
-
-   <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.Dialog
-                },
-                allowPaging: true,
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-                    { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-                    { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
-                ]
-            });
-        });
-
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true,
+              editMode: ej.Grid.EditMode.Dialog
+          },
+          allowPaging: true,
+          columns: [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
+              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
+              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
+          ]
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -349,39 +340,37 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 {% highlight html %}
 
-
-     <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.InlineForm
-                },
-                allowPaging: true,
-                pageSettings: { pageSize: 8 },
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-                    { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-                    { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
-                ]
-            });
-        });
-
-    </script>
-
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true,
+              editMode: ej.Grid.EditMode.InlineForm
+          },
+          allowPaging: true,
+          pageSettings: { pageSize: 8 },
+          columns: [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
+              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
+              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
+          ]
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -402,40 +391,38 @@ You can position the edit form either in the top-right corner or the bottom-left
 
 {% highlight html %}
 
-
-
  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.ExternalForm,
-                    formPosition: ej.Grid.FormPosition.BottomLeft
-                },
-                allowPaging: true,
-                pageSettings: { pageSize: 8 },
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-                    { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-                    { field: "Verified", headerText: "Verified", editType: ej.Grid.editingType.Boolean }
-                ]
-            });
-        });
-
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true,
+              editMode: ej.Grid.EditMode.ExternalForm,
+              formPosition: ej.Grid.FormPosition.BottomLeft
+          },
+          allowPaging: true,
+          pageSettings: { pageSize: 8 },
+          columns: [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
+              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
+              { field: "Verified", headerText: "Verified", editType: ej.Grid.editingType.Boolean }
+          ]
+      });
+  });
+  
+</script>
 
 {% endhighlight %}
 
@@ -463,146 +450,121 @@ In Inline Template, you can specify the template inside the script tag and selec
 
 {% highlight html %}
 
-  <script id="template" type="text/template">
-        <table cellspacing="10">
-            <tr>
-                <td style="text-align: right;">
-                    Order ID
-                </td>
-                <td style="text-align: left">
-                    <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
-                </td>
-                <td style="text-align: right;">
-                    Customer ID
-                </td>
-                <td style="text-align: left">
-                    <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: right;">
-                    Employee ID
-                </td>
-                <td style="text-align: left">
-                    <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
-                </td>
-                <td style="text-align: right;">
-                    Ship City
-                </td>
-                <td style="text-align: left">
-                    <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: right;">
-                    Freight
-                </td>
-                <td style="text-align: left">
-                    <input id="Freight" name="Freight" value="{{: Freight}}" />
-                </td>
-            </tr>
-        </table>
-    </script>
+<script id="template" type="text/template">
+  <table cellspacing="10">
+      <tr>
+          <td style="text-align: right;">
+              Order ID
+          </td>
+          <td style="text-align: left">
+              <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
+          </td>
+          <td style="text-align: right;">
+              Customer ID
+          </td>
+          <td style="text-align: left">
+              <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
+          </td>
+      </tr>
+      <tr>
+          <td style="text-align: right;">
+              Employee ID
+          </td>
+          <td style="text-align: left">
+              <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+          </td>
+          <td style="text-align: right;">
+              Ship City
+          </td>
+          <td style="text-align: left">
+              <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
+          </td>
+      </tr>
+      <tr>
+          <td style="text-align: right;">
+              Freight
+          </td>
+          <td style="text-align: left">
+              <input id="Freight" name="Freight" value="{{: Freight}}" />
+          </td>
+      </tr>
+  </table>
+</script>
 
-    <!-- Now you can assign the template id to the InlineFormTemplateId property of edit.-->
+   <!-- Now you can assign the template id to the InlineFormTemplateId property of edit.-->
 
-    <div id="Grid"></div>
-
-    <script id="template" type="text/template">
-
-        <table cellspacing="10">
-            <tr>
-                <td style="text-align: right;">
-                    Order ID
-                </td>
-                <td style="text-align: left">
-                    <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
-                </td>
-                <td style="text-align: right;">
-                    Customer ID
-                </td>
-                <td style="text-align: left">
-                    <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: right;">
-                    Employee ID
-                </td>
-                <td style="text-align: left">
-                    <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
-                </td>
-                <td style="text-align: right;">
-                    Ship City
-                </td>
-                <td style="text-align: left">
-                    <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: right;">
-                    Freight
-                </td>
-                <td style="text-align: left">
-                    <input id="Freight" name="Freight" value="{{: Freight}}" />
-                </td>
-            </tr>
-        </table>
-    </script>
-
-    <script type="text/javascript">
-
-        $(function () {// Document is ready.
-
-            $("#Grid").ejGrid({
-
-                dataSource: window.gridData,
-
-                toolbarSettings: {
-
-                    showToolbar: true,
-
-                    toolbarItems: [
-
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-
-                       ej.Grid.ToolBarItems.Cancel
-
-                    ]
-
-                },
-
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-
-                    editMode: ej.Grid.EditMode.InlineTemplateForm,
-
-                    inlineFormTemplateID: "#template"
-                },
-
-                allowPaging: true,
-
-                pageSettings: { pageSize: 6 },
-
-                columns: [
-
-                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-
-                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-
-                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-
-                ]
-
-            });
-
-        });
-
-    </script>
+<div id="Grid"></div>
+<script id="template" type="text/template">
+  <table cellspacing="10">
+      <tr>
+          <td style="text-align: right;">
+              Order ID
+          </td>
+          <td style="text-align: left">
+              <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
+          </td>
+          <td style="text-align: right;">
+              Customer ID
+          </td>
+          <td style="text-align: left">
+              <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
+          </td>
+      </tr>
+      <tr>
+          <td style="text-align: right;">
+              Employee ID
+          </td>
+          <td style="text-align: left">
+              <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+          </td>
+          <td style="text-align: right;">
+              Ship City
+          </td>
+          <td style="text-align: left">
+              <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
+          </td>
+      </tr>
+      <tr>
+          <td style="text-align: right;">
+              Freight
+          </td>
+          <td style="text-align: left">
+              <input id="Freight" name="Freight" value="{{: Freight}}" />
+          </td>
+      </tr>
+  </table>
+</script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+  
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true,
+  
+              editMode: ej.Grid.EditMode.InlineTemplateForm,
+  
+              inlineFormTemplateID: "#template"
+          },
+          allowPaging: true,
+          pageSettings: { pageSize: 6 },
+          columns: [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
+          ]
+      });
+  });
+</script>
 
 {% endhighlight %}
 
@@ -618,24 +580,22 @@ Through the **actionComplete** **Grid** event, you can achieve this.
 
 {% highlight html %}
 
-
-
-   <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-
-                //. . . .
-           actionComplete: "complete",
-                //. . . .
-
-            });
-        });
-        function complete(args) {
-            $("#EmployeeID").ejNumericTextbox();
-            $("#Freight").ejNumericTextbox();
-            $("#ShipCity").ejDropDownList();
-        }
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+  
+          //. . . .
+     actionComplete: "complete",
+          //. . . .
+  
+      });
+  });
+  function complete(args) {
+      $("#EmployeeID").ejNumericTextbox();
+      $("#Freight").ejNumericTextbox();
+      $("#ShipCity").ejDropDownList();
+  }
+</script>
 
 
 {% endhighlight %}
@@ -648,82 +608,82 @@ Now, the elements defined in the templates, are changed to JavaScript controls. 
 
 
  <div id="Grid"></div>
-    <script id="template" type="text/template">
-        <table cellspacing="10">
-            <tr>
-                <td style="text-align: right;">
-                    Order ID
-                </td>
-                <td style="text-align: left">
-                    <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
-                </td>
-                <td style="text-align: right;">
-                    Customer ID
-                </td>
-                <td style="text-align: left">
-                    <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: right;">
-                    Employee ID
-                </td>
-                <td style="text-align: left">
-                    <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
-                </td>
-                <td style="text-align: right;">
-                    Ship City
-                </td>
-                <td style="text-align: left">
-                    <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
-                </td>
-
-            </tr>
-            <tr>
-                <td style="text-align: right;">
-                    Freight
-                </td>
-                <td style="text-align: left">
-                    <input id="Freight" name="Freight" value="{{: Freight}}" />
-                </td>
-
-            </tr>
-        </table>
-    </script>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.InlineTemplateForm,
-                    inlineFormTemplateID: "#template"
-                },
-                allowPaging: true,
-                pageSettings: { pageSize: 6 },
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-                ],
-                actionComplete: "complete"
-            });
-        });
-        function complete(args) {
-            $("#EmployeeID").ejNumericTextbox();
-            $("#Freight").ejNumericTextbox();
-            $("#ShipCity").ejDropDownList();
-        }
-    </script>
+<script id="template" type="text/template">
+  <table cellspacing="10">
+      <tr>
+          <td style="text-align: right;">
+              Order ID
+          </td>
+          <td style="text-align: left">
+              <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
+          </td>
+          <td style="text-align: right;">
+              Customer ID
+          </td>
+          <td style="text-align: left">
+              <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
+          </td>
+      </tr>
+      <tr>
+          <td style="text-align: right;">
+              Employee ID
+          </td>
+          <td style="text-align: left">
+              <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+          </td>
+          <td style="text-align: right;">
+              Ship City
+          </td>
+          <td style="text-align: left">
+              <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
+          </td>
+  
+      </tr>
+      <tr>
+          <td style="text-align: right;">
+              Freight
+          </td>
+          <td style="text-align: left">
+              <input id="Freight" name="Freight" value="{{: Freight}}" />
+          </td>
+  
+      </tr>
+  </table>
+</script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true,
+              editMode: ej.Grid.EditMode.InlineTemplateForm,
+              inlineFormTemplateID: "#template"
+          },
+          allowPaging: true,
+          pageSettings: { pageSize: 6 },
+          columns: [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
+          ],
+          actionComplete: "complete"
+      });
+  });
+  function complete(args) {
+      $("#EmployeeID").ejNumericTextbox();
+      $("#Freight").ejNumericTextbox();
+      $("#ShipCity").ejDropDownList();
+  }
+</script>
     
 {% endhighlight %}
 
@@ -740,17 +700,19 @@ The above mentioned procedure applies to **ExternalTemplate** editing feature al
 {% highlight js %}
 
  
- $(function () {// Document is ready.
-        $("#Grid").ejGrid({
-    //. . . .
-            editSettings: {
-                allowEditing: true, allowAdding: true, allowDeleting: true,
-                editMode: ej.Grid.editMode.ExternalFormTemplate,
-                externalFormTemplateID: "#template"
-            },
-            //. . . .
-        });
-    });
+ $(function() { // Document is ready.
+     $("#Grid").ejGrid({
+         //. . . .
+         editSettings: {
+             allowEditing: true,
+             allowAdding: true,
+             allowDeleting: true,
+             editMode: ej.Grid.editMode.ExternalFormTemplate,
+             externalFormTemplateID: "#template"
+         },
+         //. . . .
+     });
+ });
 
 
 
@@ -768,19 +730,19 @@ The above mentioned procedure applies to **DialogTemplate** editing feature also
 
 {% highlight js %}
 
-
-
-$(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                //. . . .
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.DialogTemplate,
-                    dialogEditorTemplateID: "#template"
-                    },
-                //. . . .
-            });
-        });
+$(function() { // Document is ready.
+    $("#Grid").ejGrid({
+        //. . . .
+        editSettings: {
+            allowEditing: true,
+            allowAdding: true,
+            allowDeleting: true,
+            editMode: ej.Grid.EditMode.DialogTemplate,
+            dialogEditorTemplateID: "#template"
+        },
+        //. . . .
+    });
+});
 
 
 {% endhighlight %}
@@ -801,34 +763,34 @@ These markers are not shown after the updated data is rendered. The following co
 {% highlight html %}
 
 
-   <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true,
-                    editMode: ej.Grid.EditMode.Batch
-                },
-                allowPaging: true,
-                pageSettings: { pageSize: 6 },
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                    { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-                ]
-            });
-        });
-    </script>
+  <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true,
+              editMode: ej.Grid.EditMode.Batch
+          },
+          allowPaging: true,
+          pageSettings: { pageSize: 6 },
+          columns: [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -938,35 +900,34 @@ equalTo</td><td>
 The following code example shows you how to include the jquery validation support for **Grid** while editing the records. We can set validation rules using **validationRules** property.
 
 {% highlight html %}
-
-  
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true
-                },
-                allowPaging: true,
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", validationRules: { required: true } },
-                        { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                        { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                        { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric, validationRules: { range: [0, 1000] } },
-                        { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-                ]
-            });
-        });
-    </script>
+ 
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true
+          },
+          allowPaging: true,
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", validationRules: { required: true } },
+                  { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
+                  { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+                  { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric, validationRules: { range: [0, 1000] } },
+                  { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -983,45 +944,43 @@ In addition to jquery validation methods, you can also add your own custom valid
 
 {% highlight html %}
 
-
-
-  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $.validator.addMethod("customCompare", function (value, element, params) {
-                return element.value > params[0] && element.value < params[1]
-            }, "Freight value must be between 1 and 9");
-
-            $.validator.addMethod("customRegex", function (value, element, params) {
-                if (element.value.length == params)
-                    return true;
-                return false;
-            }, "Customer ID must be 5 characters");
-
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true
-                },
-                allowPaging: true,
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", validationRules: { required: true } },
-                        { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String, validationRules: { customRegex: 5 } },
-                        { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                        { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric, validationRules: { customCompare: [1, 9] } },
-                        { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-                ]
-            });
-        });
-    </script>
+ <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $.validator.addMethod("customCompare", function (value, element, params) {
+          return element.value > params[0] && element.value < params[1]
+      }, "Freight value must be between 1 and 9");
+  
+      $.validator.addMethod("customRegex", function (value, element, params) {
+          if (element.value.length == params)
+              return true;
+          return false;
+      }, "Customer ID must be 5 characters");
+  
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true
+          },
+          allowPaging: true,
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", validationRules: { required: true } },
+                  { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String, validationRules: { customRegex: 5 } },
+                  { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
+                  { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric, validationRules: { customCompare: [1, 9] } },
+                  { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -1068,7 +1027,9 @@ public ActionResult Remove(int key){}</td></tr>
 Batch Add</td><td>
 added</td><td>
 public ActionResult BatchUpdate(List<Orders> changed, List<Orders> added, List<Orders> deleted){}</td></tr>
-</table>
+    </table>
+    <br/><br/>
+
 
 
 
@@ -1081,26 +1042,25 @@ Also when you use **UrlAdaptor**, you need to return the data as **JSON** and th
 
 {% highlight html %}
 
-
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                dataSource: ej.DataManager({ url: "Home/DataSource", updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: “UrlAdaptor” }),
-                allowPaging: true,
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-                toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-                columns: [
-                        { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
-                        { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
-                        { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true } },
-                        { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
-                        { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                        { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          dataSource: ej.DataManager({ url: "Home/DataSource", updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: “UrlAdaptor” }),
+          allowPaging: true,
+          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+          columns: [
+                  { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
+                  { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
+                  { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true } },
+                  { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
+                  { field: "ShipName", headerText: 'Ship Name', width: 150 },
+                  { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -1114,25 +1074,25 @@ When you use **remoteSaveAdaptor**, server-side post back occurs only for **CRUD
 {% highlight html %}
 
 
-   <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                dataSource: ej.DataManager({ json: window.gridData, updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: "remoteSaveAdaptor" }),
-                allowPaging: true,
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-                toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-                columns: [
-                        { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
-                        { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
-                        { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true } },
-                        { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
-                        { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                        { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
-                ]
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          dataSource: ej.DataManager({ json: window.gridData, updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: "remoteSaveAdaptor" }),
+          allowPaging: true,
+          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+          columns: [
+                  { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
+                  { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
+                  { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true } },
+                  { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
+                  { field: "ShipName", headerText: 'Ship Name', width: 150 },
+                  { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
+          ]
+      });
+  });
+</script>
 
 {% endhighlight %}
 
@@ -1253,36 +1213,36 @@ var dataManger = ej.DataManager({
 
 
 
-   <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            var dataManger = ej.DataManager({
-                url: "/model/Northwnd.svc/Orders"
-            });
-            $("#Grid").ejGrid({
-                dataSource: dataManger,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [
-                       ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                       ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                       ej.Grid.ToolBarItems.Cancel
-                    ]
-                },
-                editSettings: {
-                    allowEditing: true, allowAdding: true, allowDeleting: true
-                },
-                allowPaging: true,
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-                        { field: "CustomerID", headerText: "Customer ID" },
-                        { field: "ShipCity", headerText: "Ship City " },
-                        { field: "Freight", textAlign: "right" },
-                        { field: "ShipCountry", headerText: "Ship Country" },
-                ]
-            });
-        });
-    </script>
+  <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      var dataManger = ej.DataManager({
+          url: "/model/Northwnd.svc/Orders"
+      });
+      $("#Grid").ejGrid({
+          dataSource: dataManger,
+          toolbarSettings: {
+              showToolbar: true,
+              toolbarItems: [
+                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
+                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
+                 ej.Grid.ToolBarItems.Cancel
+              ]
+          },
+          editSettings: {
+              allowEditing: true, allowAdding: true, allowDeleting: true
+          },
+          allowPaging: true,
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
+                  { field: "CustomerID", headerText: "Customer ID" },
+                  { field: "ShipCity", headerText: "Ship City " },
+                  { field: "Freight", textAlign: "right" },
+                  { field: "ShipCountry", headerText: "Ship Country" },
+          ]
+      });
+  });
+</script>
 
 
 
@@ -1309,25 +1269,25 @@ The following code example illustrates you how to set rowPosition.
 {% highlight html %}
 
 
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            // the datasource "window.gridData" is referred from jsondata.min.js
-            $("#Grid").ejGrid({
-                dataSource: windows.gridData,
-                allowPaging: true,
-                scrollSettings: { width: 500, height: 300 },
-                editSettings: { allowAdding: true, rowPosition: "bottom", allowEditing: true, allowDeleting: true },
-                allowScrolling: true,
-                columns: [
-                            { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right },
-                            { field: "CustomerID", headerText: "Employee ID" },
-                            { field: " EmployeeID ", headerText: "Frieght", textAlign: ej.TextAlign.Right },
-                            { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-                ]
-            });
-        });
-    </script>
+  <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      // the datasource "window.gridData" is referred from jsondata.min.js
+      $("#Grid").ejGrid({
+          dataSource: windows.gridData,
+          allowPaging: true,
+          scrollSettings: { width: 500, height: 300 },
+          editSettings: { allowAdding: true, rowPosition: "bottom", allowEditing: true, allowDeleting: true },
+          allowScrolling: true,
+          columns: [
+                      { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right },
+                      { field: "CustomerID", headerText: "Employee ID" },
+                      { field: " EmployeeID ", headerText: "Frieght", textAlign: ej.TextAlign.Right },
+                      { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
+          ]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -1348,26 +1308,24 @@ This property helps you to add a new row dynamically and save the record either 
 
 {% highlight html %}
 
-
-
- <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
-                editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, rowPosition: "bottom", showAddNewRow: true },
-                toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-                columns: [
-                       { field: "OrderID", isPrimaryKey: true, headerText: "Order ID" },
-                       { field: "CustomerID", headerText: 'Customer ID' },
-                       { field: "EmployeeID", headerText: 'Employee ID' },
-                       { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                       { field: "ShipCountry", headerText: 'Ship Country', editType: ej.Grid.EditingType.Dropdown },
-
-                ],
-            });
-        });
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
+          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, rowPosition: "bottom", showAddNewRow: true },
+          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+          columns: [
+                 { field: "OrderID", isPrimaryKey: true, headerText: "Order ID" },
+                 { field: "CustomerID", headerText: 'Customer ID' },
+                 { field: "EmployeeID", headerText: 'Employee ID' },
+                 { field: "ShipName", headerText: 'Ship Name', width: 150 },
+                 { field: "ShipCountry", headerText: 'Ship Country', editType: ej.Grid.EditingType.Dropdown },
+  
+          ],
+      });
+  });
+</script>
 
 
 {% endhighlight %}

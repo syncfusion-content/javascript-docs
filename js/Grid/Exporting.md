@@ -11,7 +11,6 @@ documentation: ug
 
 **Exporting** feature provides support to export **Grid** data into excel, word and pdf files. The tool bar has **ExcelExport, WordExport, PdfExport** icons that are used to perform **exporting**. When you click the toolbar **exporting** icon, it internally invokes the **export() public** method of **Grid** object to make export. You can also invoke **export()** method manually to make export.
 
-## JS
 
 **Exporting** is a server-side operation and JS Grid is a Client-side operation. So it is not feasible to export in pure Javascript platform. For **HTTP** Content read and write, you need server-side control. You can use **REST** service like **WebApi** to achieve server-side support while exporting in **JS Grid**.
 
@@ -20,42 +19,42 @@ Also since JS Grid is a Client-side, it does not have **mapper** property for cu
 {% highlight html %}
 
 
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                dataSource: ej.DataManager({ url: "/api/Orders/", offline: true ,adaptor:”WebApiAdaptor”}),
-                allowPaging: true,
-                allowSorting: true,
-                toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport,
-                     ej.Grid.ToolBarItems.PdfExport] },
+   <div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      $("#Grid").ejGrid({
+          dataSource: ej.DataManager({ url: "/api/Orders/", offline: true ,adaptor:”WebApiAdaptor”}),
+          allowPaging: true,
+          allowSorting: true,
+          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport,
+               ej.Grid.ToolBarItems.PdfExport] },
 
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75 , textAlign: ej.TextAlign.Right },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-                        { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
-                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
-                        { field: "ShipCity", headerText: "Ship City", width: 110 }
-                ],
-                toolbarClick: function (e) {
-                    this.exportGrid = this["export"];
-                    if (e.itemName == "Excel Export") {
-                        this.exportGrid('/api/Orders/ExcelExport')
-                        e.cancel = true;
-                    }
-                    else if (e.itemName == "Word Export") {
-                        this.exportGrid('/api/Orders/WordExport')
-                        e.cancel = true;
-                    }
-                    else if (e.itemName == "PDF Export") {
-                        this.exportGrid('/api/Orders/PdfExport')
-                        e.cancel = true;
-                    }
-                },
-            });
-        });
-    </script>
+          columns: [
+                  { field: "OrderID", headerText: "Order ID", width: 75 , textAlign: ej.TextAlign.Right },
+                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                  { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+                  { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
+                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
+                  { field: "ShipCity", headerText: "Ship City", width: 110 }
+          ],
+          toolbarClick: function (e) {
+              this.exportGrid = this["export"];
+              if (e.itemName == "Excel Export") {
+                  this.exportGrid('/api/Orders/ExcelExport')
+                  e.cancel = true;
+              }
+              else if (e.itemName == "Word Export") {
+                  this.exportGrid('/api/Orders/WordExport')
+                  e.cancel = true;
+              }
+              else if (e.itemName == "PDF Export") {
+                  this.exportGrid('/api/Orders/PdfExport')
+                  e.cancel = true;
+              }
+          },
+      });
+  });
+</script>
 
 public class OrdersController : ApiController
     {

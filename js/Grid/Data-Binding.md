@@ -19,23 +19,23 @@ documentation: ug
 
 <div id="Grid"></div>
 <script type="text/javascript">
-    $(function () {// Document is ready.
-        // Data for grid.
-        window.gridData = [
-          { firstName: "John", lastName: "Beckett", email: "john@syncfusion.com" },
-          { firstName: "Ben", lastName: "Beckett", email: "ben@syncfusion.com" },
-          { firstName: "Andrew", lastName: "Beckett", email: "andrew@syncfusion.com" }
-        ];
-        $("#Grid").ejGrid({
-            dataSource:window.gridData,
-            columns: [
-                     { field: "firstName",headerText:"First Name" },
-                     { field: "lastName", headerText: "Last Name" },
-                     { field: "email", headerText: "Email" }
-            ]
-        });
-    });
-
+  $(function () {// Document is ready.
+      // Data for grid.
+      window.gridData = [
+        { firstName: "John", lastName: "Beckett", email: "john@syncfusion.com" },
+        { firstName: "Ben", lastName: "Beckett", email: "ben@syncfusion.com" },
+        { firstName: "Andrew", lastName: "Beckett", email: "andrew@syncfusion.com" }
+      ];
+      $("#Grid").ejGrid({
+          dataSource:window.gridData,
+          columns: [
+                   { field: "firstName",headerText:"First Name" },
+                   { field: "lastName", headerText: "Last Name" },
+                   { field: "email", headerText: "Email" }
+          ]
+      });
+  });
+  
 </script>
 
 
@@ -46,7 +46,7 @@ documentation: ug
 
 Result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="Figure 8: Binding Grid to JSON data"%}
+{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="Binding Grid to JSON data"%}
 
 ## Remote data
 
@@ -57,17 +57,17 @@ Result of the above code example.
 {% highlight html %}
 
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            //oData Adaptor with DataManager
-            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
-
-            $("#Grid").ejGrid({
-                dataSource: dataManager,
-                columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
-            });
-        });
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      //oData Adaptor with DataManager
+      var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
+  
+      $("#Grid").ejGrid({
+          dataSource: dataManager,
+          columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -88,23 +88,22 @@ Through this **load at once** technique, you can load all remote data from the s
 
 
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            //oData Adaptor with DataManager
-            var dataManager = ej.DataManager({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products",
-                offline: true
-            });
-
-            $("#Grid").ejGrid({
-                dataSource: dataManager,
-                allowPaging: true,
-                columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
-            });
-        });
-
-    </script>
-
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      //oData Adaptor with DataManager
+      var dataManager = ej.DataManager({
+          url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products",
+          offline: true
+      });
+  
+      $("#Grid").ejGrid({
+          dataSource: dataManager,
+          allowPaging: true,
+          columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
+      });
+  });
+  
+</script>
 
 {% endhighlight %}
 
@@ -120,21 +119,19 @@ The following output is the result of the above code example.
 
 {% highlight html %}
 
-
-
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            //oData Adaptor with DataManager
-            var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
-
-            $("#Grid").ejGrid({
-                dataSource: dataManager,
-                allowPaging: true,
-                columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
-            });
-        });
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      //oData Adaptor with DataManager
+      var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
+  
+      $("#Grid").ejGrid({
+          dataSource: dataManager,
+          allowPaging: true,
+          columns: ["ProductID", "ProductName", "SupplierID", "UnitPrice"]
+      });
+  });
+</script>
 
 
 {% endhighlight %}
@@ -156,22 +153,22 @@ ejGrid can use cross domain data service with the help of DataManager. The given
 {% highlight html %}
 
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            //DataManger
-            var dataManager = ej.DataManager({
-                url: "http://mvc.syncfusion.com/UGService/api/Orders",
-                crossDomain: true,
-                offline: true
-            });
-            $("#Grid").ejGrid({
-                allowPaging: true,
-                dataSource: dataManager,
-                columns: ["OrderID", "CustomerID", "EmployeeID", "ShipCity"]
-            });
-        });
-
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      //DataManger
+      var dataManager = ej.DataManager({
+          url: "http://mvc.syncfusion.com/UGService/api/Orders",
+          crossDomain: true,
+          offline: true
+      });
+      $("#Grid").ejGrid({
+          allowPaging: true,
+          dataSource: dataManager,
+          columns: ["OrderID", "CustomerID", "EmployeeID", "ShipCity"]
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -188,25 +185,23 @@ In this section, you can learn how to customize or add an extra parameter for **
 
 {% highlight html %}
 
-
-
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            //oData Adaptor with DataManager
-            var dataManager = ej.DataManager({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products"
-            });
-
-            $("#Grid").ejGrid({
-                dataSource: dataManager,
-                allowPaging: true,
-                query: new ej.Query().addParams("$filter", "ProductID gt 50"), //extra parameter
-                columns: ["ProductID", "ProductName", "SupplierID", "CategoryID"]
-            });
-        });
-
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      //oData Adaptor with DataManager
+      var dataManager = ej.DataManager({
+          url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products"
+      });
+  
+      $("#Grid").ejGrid({
+          dataSource: dataManager,
+          allowPaging: true,
+          query: new ej.Query().addParams("$filter", "ProductID gt 50"), //extra parameter
+          columns: ["ProductID", "ProductName", "SupplierID", "CategoryID"]
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -224,18 +219,18 @@ The following screenshot is the result of the above code example.
 {% highlight html %}
 
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                columns: [
-                         { field: "firstName", type: "string" },
-                         { field: "lastName", type: "string" },
-                         { field: "email" }
-                ]
-            });
-        });
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          columns: [
+                   { field: "firstName", type: "string" },
+                   { field: "lastName", type: "string" },
+                   { field: "email" }
+          ]
+      });
+  });
+</script>
 
 
 
@@ -248,89 +243,88 @@ The following screenshot is the result of the above code example.
 {% highlight html %}
 
 
- <div id="Grid"></div>
-    <table id="Table1">
-        <thead>
-            <tr>
-                <th>
-                    Laptop
-                </th>
-                <th>
-                    Model
-                </th>
-                <th>
-                    Price
-                </th>
-                <th>
-                    OS
-                </th>
-                <th>
-                    RAM
-                </th>
-                <th>
-                    ScreenSize
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Dell Vostro</td>
-                <td>2520</td>
-                <td>39990</td>
-                <td>Windows 8</td>
-                <td>4GB</td>
-                <td>15.6</td>
-            </tr>
-            <tr>
-                <td>HP Pavilion Sleekbook</td>
-                <td>14-B104AU</td>
-                <td>22800</td>
-                <td>Windows 8</td>
-                <td>2GB</td>
-                <td>14</td>
-            </tr>
-            <tr>
-                <td>Sony Vaio</td>
-                <td>E14A15</td>
-                <td>42500</td>
-                <td>Windows 7 Home Premium</td>
-                <td>4GB DDR3 RAM</td>
-                <td>14</td>
-            </tr>
-            <tr>
-                <td>Lenovo</td>
-                <td>Yoga 13</td>
-                <td>57000</td>
-                <td>Windows 8 RT</td>
-                <td>2GB DDR3 RAM</td>
-                <td>11.6</td>
-            </tr>
-            <tr>
-                <td>Toshiba</td>
-                <td>L850-Y3110</td>
-                <td>57700</td>
-                <td>Windows 8 SL</td>
-                <td>8GB DDR3 RAM</td>
-                <td>15.6</td>
-            </tr>
-        </tbody>
-    </table>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-              dataSource: ej.DataManager($("#Table1")), // binds table to grid
-                columns: [
-                         { field: "Laptop", headerText: "Laptop Brands"},
-                         { field: "Model", headerText: "Model" },
-                         { field: "Price", headerText: "Price", width: 90, textAlign: ej.TextAlign.Right, format: " ${0:c}" },
-                         { field: "OS", headerText: "Operating System" },
-                         { field: "RAM", headerText: "RAM", width: 120, textAlign: ej.TextAlign.Right },
-                         { field: "ScreenSize", headerText: "Screen Size", textAlign: ej.TextAlign.Right, width: 100, format: "{0:N1} inch" }
-                ]
-            });
-        });
-    </script>
-
+<div id="Grid"></div>
+<table id="Table1">
+  <thead>
+    <tr>
+      <th>
+        Laptop
+      </th>
+      <th>
+        Model
+      </th>
+      <th>
+        Price
+      </th>
+      <th>
+        OS
+      </th>
+      <th>
+        RAM
+      </th>
+      <th>
+        ScreenSize
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dell Vostro</td>
+      <td>2520</td>
+      <td>39990</td>
+      <td>Windows 8</td>
+      <td>4GB</td>
+      <td>15.6</td>
+    </tr>
+    <tr>
+      <td>HP Pavilion Sleekbook</td>
+      <td>14-B104AU</td>
+      <td>22800</td>
+      <td>Windows 8</td>
+      <td>2GB</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Sony Vaio</td>
+      <td>E14A15</td>
+      <td>42500</td>
+      <td>Windows 7 Home Premium</td>
+      <td>4GB DDR3 RAM</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Lenovo</td>
+      <td>Yoga 13</td>
+      <td>57000</td>
+      <td>Windows 8 RT</td>
+      <td>2GB DDR3 RAM</td>
+      <td>11.6</td>
+    </tr>
+    <tr>
+      <td>Toshiba</td>
+      <td>L850-Y3110</td>
+      <td>57700</td>
+      <td>Windows 8 SL</td>
+      <td>8GB DDR3 RAM</td>
+      <td>15.6</td>
+    </tr>
+  </tbody>
+</table>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+        dataSource: ej.DataManager($("#Table1")), // binds table to grid
+          columns: [
+                   { field: "Laptop", headerText: "Laptop Brands"},
+                   { field: "Model", headerText: "Model" },
+                   { field: "Price", headerText: "Price", width: 90, textAlign: ej.TextAlign.Right, format: " ${0:c}" },
+                   { field: "OS", headerText: "Operating System" },
+                   { field: "RAM", headerText: "RAM", width: 120, textAlign: ej.TextAlign.Right },
+                   { field: "ScreenSize", headerText: "Screen Size", textAlign: ej.TextAlign.Right, width: 100, format: "{0:N1} inch" }
+          ]
+      });
+  });
+</script>
 
 {% endhighlight %}
 
