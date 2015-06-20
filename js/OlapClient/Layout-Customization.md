@@ -11,15 +11,15 @@ documentation: ug
 
 **OLAP Client UI** comes with options to customize the **Grid** and **Chart** layout, such as:
 
-    1. Default View - Sets the start-up control. 
+   * **Default View** - Sets the start-up control. 
 
-    2. Tab/Tile View – Tab or Tile view to visualize the controls separately or in the same layout. 
+   * **Tab/Tile View** – Tab or Tile view to visualize the controls separately or in the same layout. 
 
-    3. Hide Grid/Chart - Hides any one of the control by default. 
+   * **Hide Grid/Chart** - Hides any one of the control by default. 
 
-    4. Toggle Panel – Turns On/Off the visibility of Cube Browser and Axis Element Builder panels.  
+   * **Toggle Panel** – Turns On/Off the visibility of Cube Browser and Axis Element Builder panels.  
 
-    5. Maximized/Fullscreen view of the control(s) providing a precise view.
+   * **Maximized/Fullscreen** view of the control(s) providing a precise view.
 
 ## Display View
 

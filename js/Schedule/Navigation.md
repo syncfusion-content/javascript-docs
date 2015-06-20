@@ -30,7 +30,6 @@ The following code example explains how to set the value for **enableAppointment
  $(function () {
         var dManager =
         ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -152,15 +151,9 @@ Traverse backward through the appointments.</td></tr>
 
 
 
-
-
-
-
 > Important: Apart from the cell selection through keyboard shortcuts (shift + arrow keys), the selection of cells can also be done through mouse by any of the following ways,
 > i. Click on any of the cell to start selection and by holding the left click, hover the mouse across the cells to be selected and then release the left mouse button, once the selection is over.
 > ii. Make initial selection at any of the cell. Now by pressing and holding the Shift key, click on any of the other desired cell to end the selection. The cells that lies within the initial and end selection gets selected entirely.
-
-
 
 
 Once the required cells are selected, then a new appointment can be created for a selected time range either by pressing (ALT + N) key combination or by simply pressing Enter key to create appointments through quick window.
@@ -176,9 +169,7 @@ Once the required cells are selected, then a new appointment can be created for 
 {% highlight js %}
 
 $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",

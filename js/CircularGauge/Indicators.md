@@ -22,26 +22,27 @@ Indicators collection is directly added to the scale object. Refer the following
 {% endhighlight %}
 
 {% highlight js %}
-
-  //For circular gauge rendering
+  
+     $(function () {
+        //For circular gauge rendering
         $("#CircularGauge1").ejCircularGauge({
-            scales: [{ showIndicators: true
-                indicators:[{
+            scales: [{
+                showIndicators: true,
+                indicators: [{
                     // For setting indicator height
-                height: 10,
+                    height: 10,
                     // For setting indicator width
-                width: 10,
+                    width: 10,
                     // For setting indicator type
-                type: "circle",
+                    type: "circle",
                     // For setting indicator value
-                value: 0,
+                    value: 0,
                     // For setting indicator position
-                position: { x: 185, y: 300 },
-}]
-    }]
-    })
+                    position: { x: 185, y: 300 },
+                }]
+            }]
+        });
     });
-
 
 
 {% endhighlight %}
@@ -68,36 +69,34 @@ Indicators are of several types such as, circle, rectangle, rounded rectangle, t
 {% highlight js %}
 
 
- $(function () {
-
-            // For Circular Gauge rendering
-            $("#CircularGauge1").ejCircularGauge({
-                scales: [{
+$(function () {
+        // For Circular Gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+            scales: [{
                 showIndicators: true, minorIntervalValue: 5,
+                backgroundColor: "#5DF243",
+                border: { width: 1.5, color: "black" },
+                showScaleBar: true, radius: 120, size: 5,
+                pointers: [{
                     backgroundColor: "#5DF243",
                     border: { width: 1.5, color: "black" },
-                    showScaleBar: true, radius: 120, size: 5,
-                    pointers: [{
-                        backgroundColor: "#5DF243",
-                        border: { width: 1.5, color: "black" },
-                        length: 110
-                    }],
-                    indicators: [{
-                        // For setting indicator height
+                    length: 110
+                }],
+                indicators: [{
+                    // For setting indicator height
                     height: 10,
-                        // For setting indicator width
+                    // For setting indicator width
                     width: 10,
-                        // For setting indicator type
+                    // For setting indicator type
                     type: "circle",
-                        // For setting indicator value
+                    // For setting indicator value
                     value: 0,
-                        // For setting indicator position
+                    // For setting indicator position
                     position: { x: 185, y: 300 },
-
-}],
-                }]
-            });
+                }],
+            }]
         });
+    });
 
 
 {% endhighlight %}
@@ -126,50 +125,48 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
 
 $(function () {
-
-            // For Circular Gauge rendering
-            $("#CircularGauge1").ejCircularGauge({
-                scales: [{
-                    showIndicators: true, minorIntervalValue: 5,
+        // For Circular Gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+            scales: [{
+                showIndicators: true, minorIntervalValue: 5,
+                backgroundColor: "#5DF243",
+                border: { width: 1.5, color: "black" },
+                showScaleBar: true, radius: 150, size: 5,
+                pointers: [{
                     backgroundColor: "#5DF243",
                     border: { width: 1.5, color: "black" },
-                    showScaleBar: true, radius: 150, size: 5,
-                    pointers: [{
-                        backgroundColor: "#5DF243",
-                        border: { width: 1.5, color: "black" },
-                        length: 110
-                    }],
-                    indicators: [{
-                        // For setting indicator height
-                        height: 10,
-                        // For setting indicator width
-                        width: 10,
-                        // For setting indicator type
-                        type: "circle",
-                        // For setting indicator value
-                        value: 0,
-                        // For setting indicator position
-                        position: { x: 185, y: 300 },
-                        // For setting indicator state range collection
+                    length: 110
+                }],
+                indicators: [{
+                    // For setting indicator height
+                    height: 10,
+                    // For setting indicator width
+                    width: 10,
+                    // For setting indicator type
+                    type: "circle",
+                    // For setting indicator value
+                    value: 0,
+                    // For setting indicator position
+                    position: { x: 185, y: 300 },
+                    // For setting indicator state range collection
                     stateRanges: [{
                         // For setting state range end value height
-                    endValue: 100,
+                        endValue: 100,
                         // For setting state range start value
-                    startValue: 0,
+                        startValue: 0,
                         // For setting indicator background color
-                    backgroundColor: "#5DF243",
+                        backgroundColor: "#5DF243",
                         // For setting indicator border color
-                    borderColor: "Black",
+                        borderColor: "Black",
                         // For setting indicator text
-                    text: "",
+                        text: "",
                         // For setting indicator text color
-                    textColor: "#870505"
+                        textColor: "#870505"
                     }]
-
-                    }],
-                }]
-            });
+                }],
+            }]
         });
+    });
 
 {% endhighlight %}
 
@@ -193,7 +190,6 @@ You can use multiple indicators for a single **Gauge**. Each indicator have a li
 {% highlight js %}
 
 $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -214,7 +210,6 @@ $(function () {
                     backgroundColor: "red",
                     placement: "far", distanceFromScale: -30
                 }],
-
                 indicators: [
                 //Indicator1
                 {
@@ -234,7 +229,6 @@ $(function () {
                         backgroundColor: "#322C04",
                         borderColor: "Black"
                     }]
-
                 },
                 //Indicator2
                 {
@@ -254,7 +248,6 @@ $(function () {
                         backgroundColor: "#FF4F2A",
                         borderColor: "Black"
                     }]
-
                 }],
             }]
         });

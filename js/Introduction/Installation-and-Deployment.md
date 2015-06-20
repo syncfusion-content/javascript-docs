@@ -144,8 +144,7 @@ In Visual Studio, navigate to **Tools** -> **Library Package Manager** -> **Pack
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img1.png" Caption="Package Manager Settings pop-up"%}
 
 
-Select **Package Manager** -> **Package Sources** in the above pop-up and click on the 
-{% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img2.png" %} button to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
+Select **Package Manager** -> **Package Sources** in the above pop-up and click on the {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img2.png" %} button to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
 
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img3.png" Caption="Package Manager Settings pop-up with selected Nuget Package"%}
 

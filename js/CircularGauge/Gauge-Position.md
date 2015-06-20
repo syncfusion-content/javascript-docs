@@ -37,38 +37,31 @@ The possible enum values for the gaugePosition are as follows:
 
 {% highlight html %}
 
-<div style=”float: left” id=”gauge1”></div>
-<div id=" CoreCircularGaugehalfright "> </div>
+<div style="float: left" id="gauge1"></div>
+<div id=" CoreCircularGaugehalfright "></div>
 
 {% endhighlight %}
 
 
 {% highlight js %}
 
-
  $(function () {
         $("#CoreCircularGaugehalfright").ejCircularGauge({
             backgroundColor: "transparent",
-
             // To set dimension of the canvas.
             width: 500, height: 500,
-
             // To set the value and radius of the canvas frame.
             radius: 100, value: 60,
-
             // To set the gauge position.
             gaugePosition: "topleft",
-
             // To set the distance from the corner.
             distanceFromCorner: 25,
-
             // To set the semicircle frame specifications.
             frame: {
                 frameType: 'halfcircle',
                 halfCircleFrameStartAngle: 270,
                 halfCircleFrameEndAngle: 90
             },
-
             // To set the scale specification.
             scales: [{
                 startAngle: 270,

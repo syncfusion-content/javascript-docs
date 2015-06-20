@@ -9,7 +9,7 @@ documentation: ug
 
 # Symbol Palette
 
-The **SymbolPalette** displays a collection of palettes. The **Palette** shows nodes and connectors. It allows you to drag and drop the nodes and connectors on the **Diagram**. The **Palette** has a header that displays the name and also has an option that allows you to expand or collapse its items. Each node or connector in the palette is called a **Palette Item**.
+The **SymbolPalette** displays a collection of palettes. The Palette shows nodes and connectors. It allows you to drag and drop the nodes and connectors on the Diagram. The Palette has a header that displays the name and also has an option that allows you to expand or collapse its items. Each node or connector in the palette is called a Palette Item.
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Symbol-Palette_images/Symbol-Palette_img1.jpeg" Caption="SymbolPalette"%}
 
@@ -47,7 +47,7 @@ $("#palette").ejSymbolPalette({ palettes: paletteCollection });
 
 ## Adding Node and Connector
 
-The **Diagram** provides support for adding nodes and connectors through the **Symbol Palette**. To add a **node** to the **Diagram**, drag the desired symbol from the **SymbolPalette** to the drawing area and release the pointer. The desired palette item that is clicked, is added to the **Diagram** when you set the desired **Diagram** id to the Symbol Palette’s **diagramId**.
+The Diagram provides support for adding nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer. The desired palette item that is clicked, is added to the Diagram when you set the desired Diagram id to the Symbol Palette’s diagramId.
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Symbol-Palette_images/Symbol-Palette_img2.png" Caption="Adding Nodes and Connectors through Symbol Palette"%}
 

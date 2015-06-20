@@ -24,8 +24,7 @@ documentation: ug
 
 {% highlight js %}
 
- $(function () {
-
+  $(function () {
         //For circular gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -62,38 +61,41 @@ Font option is also available on the labels. The basic three properties of fonts
 
 {% highlight js %}
 
-$(function () {
-
-    // For Circular Gauge rendering
-    $("#CircularGauge1").ejCircularGauge({
-        scales: [{
-            showScaleBar: true,
-            backgroundColor: "#FAF4B5",
-            border: { width: 2, color: "Yellow" },
-            width: 10, radius: 110,
-            pointers: [{
-                border: { color: "Yellow", width: 2 },
+ $(function () {
+        // For Circular Gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+            scales: [{
+                showScaleBar: true,
                 backgroundColor: "#FAF4B5",
-                value: 40, length: 80,
-                width: 16,
-                opacity: 0.6
-            }],
-            labels: [{
-                // For setting label angle
-            angle:10,
-                // For setting label opacity
-            opacity:0.8,
-                // For disable the include first value prperty
-            includeFistValue: false,
-                // For setting label color
-            color: "Yellow",
-                // For setting label font
-            font:{size: "15px",
-            fontFamily: "Arial",
-            fontStyle: "bold"}
+                border: { width: 2, color: "Yellow" },
+                width: 10, radius: 110,
+                pointers: [{
+                    border: { color: "Yellow", width: 2 },
+                    backgroundColor: "#FAF4B5",
+                    value: 40, length: 80,
+                    width: 16,
+                    opacity: 0.6
+                }],
+                labels: [{
+                    // For setting label angle
+                    angle: 10,
+                    // For setting label opacity
+                    opacity: 0.8,
+                    // For disable the include first value prperty
+                    includeFistValue: false,
+                    // For setting label color
+                    color: "Yellow",
+                    // For setting label font
+                    font: {
+                        size: "15px",
+                        fontFamily: "Arial",
+                        fontStyle: "bold"
+                    }
+                }]
             }]
-        }]
-    });});
+        });
+    });
+
 
 
 {% endhighlight %}
@@ -120,12 +122,12 @@ Labels can be positioned with the help of two properties such as **distanceFromS
 {% highlight js %}
 
  $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
-            scales: [{showRanges: true,
+            scales: [{
+                showRanges: true,
                 showScaleBar: true,
-                radius: 150,size:2,
+                radius: 150, size: 2,
                 pointers: [{
                     value: 40,
                     showBackNeedle: true,
@@ -133,16 +135,16 @@ Labels can be positioned with the help of two properties such as **distanceFromS
                 }],
                 labels: [{
                     // For setting unit text
-                unitText: "kmpH",
+                    unitText: "kmpH",
                     // For setting unit text position
-                unitTextPosition: "back"
+                    unitTextPosition: "back"
                 }],
-                ranges: [{ startValue: 0, endValue: 50, backgroundColor: "Green",placement:"far",distanceFromScale:-30 },
+                ranges: [{ startValue: 0, endValue: 50, backgroundColor: "Green", placement: "far", distanceFromScale: -30 },
                 { startValue: 50, endValue: 80, backgroundColor: "yellow", placement: "far", distanceFromScale: -30 },
                 { startValue: 80, endValue: 100, backgroundColor: "red", placement: "far", distanceFromScale: -30 }]
-
             }]
-        });});
+        });
+    });
 
 
 {% endhighlight %}
@@ -164,8 +166,8 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
 {% endhighlight %}
 
 {% highlight js %}
- $(function () {
 
+  $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -190,7 +192,6 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
             }]
         });
     });
-
 
 {% endhighlight %}
 

@@ -24,7 +24,6 @@ documentation: ug
 {% highlight js %}
 
  $(function () {
-
         //For circular gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -56,8 +55,8 @@ Execute the above code to render the following output.
 {% endhighlight %}
 
 {% highlight js %}
- $(function () {
 
+ $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -99,7 +98,6 @@ The Pointers border is modified with the object called **border** as in scales. 
 {% highlight js %}
 
  $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -107,9 +105,9 @@ The Pointers border is modified with the object called **border** as in scales. 
                 width: 10, radius: 110,
                 pointers: [{
                     // For setting pointer border
-                border: { color: "green", width: 2 },
+                    border: { color: "green", width: 2 },
                     // For setting pointer background
-                backgroundColor: "yellow",
+                    backgroundColor: "yellow",
                     // For setting pointer value
                     value: 45,
                     // For setting pointer length
@@ -121,7 +119,6 @@ The Pointers border is modified with the object called **border** as in scales. 
                 }]
             }]
         });
-
     });
 
 
@@ -145,8 +142,7 @@ Based on the value, the****pointer point out the label value. You can set the po
 
 {% highlight js %}
 
- $(function () {
-
+  $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -162,15 +158,14 @@ Based on the value, the****pointer point out the label value. You can set the po
                     // For setting pointer value
                     value: 45,
                     // For setting pointer length
-                length: 80,
+                    length: 80,
                     // For setting pointer width
-                width: 16,
+                    width: 16,
                     // For setting pointer opacity
-                opacity: 0.6
+                    opacity: 0.6
                 }]
             }]
         });
-
     });
 
 
@@ -195,28 +190,26 @@ Pointer can be positioned with the help of two properties such as **distanceFrom
 {% highlight js %}
 
  $(function () {
-
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
-                showScaleBar: true, border: {color: "Blue",width:2},
-                backgroundColor: "#DCEBF9",
-                size: 10,
-                radius: 110,
+                showScaleBar: true,
+                backgroundColor: "orange",
+                border: { width: 2, color: "Red" },
+                width: 10, radius: 110,
                 pointers: [{
-                    // For setting distance between scale and pointer
-                distancFromScale: 20,
-                    // For setting pointer placement
-                placement: "near",
-                    // For setting pointer type
-                type: "marker",
-                    // For setting marker type
-                markerType:"triangle",
-                    length: 20,
-                    width: 20,
-                    value: 40,
-                    backgroundColor: "#DCEBF9",
-                    border: { color: "Blue", width: 2 },
+                    // For setting pointer border
+                    border: { color: "red", width: 2 },
+                    // For setting pointer background
+                    backgroundColor: "orange",
+                    // For setting pointer value
+                    value: 45,
+                    // For setting pointer length
+                    length: 80,
+                    // For setting pointer width
+                    width: 16,
+                    // For setting pointer opacity
+                    opacity: 0.6
                 }]
             }]
         });
@@ -285,7 +278,8 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
- // For Circular Gauge rendering
+  $(function () {
+        // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
                 showScaleBar: true,
@@ -318,7 +312,6 @@ Execute the above code to render the following output.
         });
     });
 
-
 {% endhighlight %}
 
 
@@ -344,42 +337,32 @@ You can position the **Circular Gauge** pointer value with the gauge as center b
 {% highlight js %}
 
  $(function () {
-            $("#CircularGauge1").ejCircularGauge({
-
-                // Setting basic properties
-                radius: 100, value: 55, backgroundColor: "transparent",
-
-                // Setting scale values
-                scales: [{
-                    showRanges: true,
-
-                    // Setting tick properties
-                    ticks: [{ height: 0, width: 0 }],
-
-                    // Setting range properties
-                    ranges: [
-                    { size: 40, startValue: 0, endValue: 50, backgroundColor: "#1B4279", border: { color: "#1B4279" } },
-                    { size: 40, startValue: 50, endValue: 100, backgroundColor: "#91B8F3", border: { color: "#91B8F3" } }
-                    ],
-
-                    // Setting pointer properties
-                    pointers: [{
-
-                        // Setting pointer value text properties
-                        pointerValueText: {
-
-                            // enable showValue property
-                            showValue: true,
-
-                            // setting distance property
-                            distance: 0,
-
-                            color: "#8c8c8c" }
-                    }],
+        $("#CircularGauge1").ejCircularGauge({
+            // Setting basic properties
+            radius: 100, value: 55, backgroundColor: "transparent",
+            // Setting scale values
+            scales: [{
+                showRanges: true,
+                // Setting tick properties
+                ticks: [{ height: 0, width: 0 }],
+                // Setting range properties
+                ranges: [
+                { size: 40, startValue: 0, endValue: 50, backgroundColor: "#1B4279", border: { color: "#1B4279" } },
+                { size: 40, startValue: 50, endValue: 100, backgroundColor: "#91B8F3", border: { color: "#91B8F3" } }
+                ],
+                // Setting pointer properties
+                pointers: [{
+                    // Setting pointer value text properties
+                    pointerValueText: {
+                        // enable showValue property
+                        showValue: true,
+                        // setting distance property
+                        distance: 0,
+                        color: "#8c8c8c" }
                 }],
-
-            });
+            }],
         });
+    });
 
 {% endhighlight %}
 
@@ -414,43 +397,33 @@ Appearance of the **Circular Gauge****pointer value text** is adjusted by using 
 
  $(function () {
         $("#CircularGauge1").ejCircularGauge({
-
             // Setting basic properties
             radius: 100, value: 55, backgroundColor: "transparent",
-
             // Setting scale values
             scales: [{
                 showRanges: true,
-
                 // Setting tick properties
                 ticks: [{ height: 0, width: 0 }],
-
                 // Setting range properties
                 ranges: [
                 { size: 40, startValue: 0, endValue: 50, backgroundColor: "#1B4279", border: { color: "#1B4279" } },
                 { size: 40, startValue: 50, endValue: 100, backgroundColor: "#91B8F3", border: { color: "#91B8F3" } }
                 ],
-
                 // Setting pointer properties
                 pointers: [{
-
                     // Setting pointer value text properties
                     pointerValueText: {
                         showValue: true,
                         distance: 0,
-
                         // Setting color property
                         color: "Red",
-
                         // Setting opacity property
                         opacity: 0.7,
-
                         // Setting angle property
                         angle: 20
                     }
                 }],
             }],
-
         });
     });
 
@@ -476,28 +449,22 @@ Similar to other collection, font option is also available in this pointer value
 
 {% highlight js %}
 
-  $(function () {
+   $(function () {
         $("#CircularGauge1").ejCircularGauge({
-
             // Setting basic properties
             radius: 100, value: 55, backgroundColor: "transparent",
-
             // Setting scale values
             scales: [{
                 showRanges: true,
-
                 // Setting tick properties
                 ticks: [{ height: 0, width: 0 }],
-
                 // Setting range properties
                 ranges: [
                 { size: 40, startValue: 0, endValue: 50, backgroundColor: "#1B4279", border: { color: "#1B4279" } },
                 { size: 40, startValue: 50, endValue: 100, backgroundColor: "#91B8F3", border: { color: "#91B8F3" } }
                 ],
-
                 // Setting pointer properties
                 pointers: [{
-
                     // Setting pointer value text properties
                     pointerValueText: {
                         showValue: true,
@@ -510,12 +477,10 @@ Similar to other collection, font option is also available in this pointer value
                             size: "15px",
                             fontStyle: "Normal",
                             fontFamily: "Arial",
-
                         }
                     }
                 }],
             }],
-
         });
     });
 

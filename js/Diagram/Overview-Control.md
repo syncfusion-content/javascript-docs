@@ -13,7 +13,7 @@ documentation: ug
 
 When you work on a very large diagram, you may not know the part you are actually working on, or navigation from one part to another, might be difficult. One solution for navigation is to zoom out of the entire diagram and find where you are. Then you can zoom in on to a particular area where you want to be. This solution is not suitable when you need some frequent navigation.
 
-**Overview** control solves these problems by showing you a preview, that is, an overall view of the entire diagram. A rectangle indicates viewport of the diagram. Navigation becomes easy by dragging this rectangle. The following code illustrates how to create **overview** control.
+Overview control solves these problems by showing you a preview, that is, an overall view of the entire diagram. A rectangle indicates viewport of the diagram. Navigation becomes easy by dragging this rectangle. The following code illustrates how to create overview control.
 
 {% highlight html %}
 

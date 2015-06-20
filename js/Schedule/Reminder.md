@@ -34,10 +34,8 @@ The following code example explains how to get the reminder list and display it 
             <span id="reminderCount" class="badge badge-success pull-right">0</span>
         </a>
     </div>
-
     <!-- Notification div element-->
     <div class='notifications top-right'></div>
-
     <!-- Schedule div element-->
     <div style="float: left" id="Div1">
     </div>
@@ -58,14 +56,12 @@ The following code example explains how to get the reminder list and display it 
         left: 10px;
         background-color: #FF0000;
     }
-
     #reminder {
         width: 50px;
         height: 40px;
         margin-top: 1px;
         float: right;
     }
-
     .reminder-icon {
         background: url("../images/schedule/bell.png") no-repeat scroll 8px 6px rgba(0, 0, 0, 0);
         border: 1px solid #BBBCBB;
@@ -73,24 +69,20 @@ The following code example explains how to get the reminder list and display it 
         width: 28px;
         border-radius: 6px;
     }
-
     .popover.bottom .arrow {
         margin-top: 0px;
     }
-
     .popover {
         width: 300px;
     }
-
     .outerDiv {
         border-bottom: 1px solid #BBBCBB;
         padding-bottom: 5px;
     }
-
     .notifications.top-right {
         top: 25% !important;
     }
-</style>
+
 
 {% endhighlight %}
 
@@ -116,13 +108,10 @@ The following code example explains how to get the reminder list and display it 
                 recurrenceRule: "RecurrenceRule"
             }
         });
-
         //Append the reminder list to the Schedule header
         $("#Schedule1").find("tr.e-scheduleheader td").first().append($("#reminder"));
-
         // Reminder list load to the popover control
         $("#reminder").popover({ placement: 'bottom' });
-
         //popover content has been updated
         $('#reminder').on('shown.bs.popover', function () {
             if (parseInt($("#reminderCount").text()) == 0)
@@ -142,7 +131,6 @@ The following code example explains how to get the reminder list and display it 
             });
         });
     });
-
     function checkList() {
         if (parseInt($("#reminderCount").text()) == 0)
             $("#reminderCount").hide();
@@ -150,7 +138,6 @@ The following code example explains how to get the reminder list and display it 
             $("#reminderCount").show();
     }
     var $_remList = "";
-
     function ongetReminderList(args) {
         $("#reminderCount").html(parseInt($("#reminderCount").text()) + 1);
         checkList();
@@ -160,7 +147,6 @@ The following code example explains how to get the reminder list and display it 
         var notifiList = "<div><span class='e-quicksubject'>" + args.reminderAppointment.Subject +
         "</span><div class='e-quickstartendtime'>" + args.reminderAppointment.StartTime +
         "</div></div>";
-
         // Show the notification div
         $('.top-right').notify({
             message: { html: notifiList },

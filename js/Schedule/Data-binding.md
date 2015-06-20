@@ -88,7 +88,7 @@ The entire records that are initially assigned through dataSource is taken into 
 
 {% highlight js %}
 
-$(function () {
+ $(function () {
         var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
@@ -101,21 +101,20 @@ $(function () {
                 subject: "Subject",
                 startTime: "StartTime",
                 endTime: "EndTime",
-                description:"Description",
+                description: "Description",
                 allDay: "AllDay",
-                location:"Location",           // To display the Location value need to bind the property like this
+                location: "Location",           // To display the Location value need to bind the property like this
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             }
         });
     });
-
     // The appointment data along with location data to be passed to the dataSource are as follows,
     window.Default = [{
         Id: 100,
         Subject: "Meeting",
-        StartTime: new Date(2014,4,2,06,00),
-        EndTime:new Date(2014,4,2,08,00),
+        StartTime: new Date(2014, 4, 2, 06, 00),
+        EndTime: new Date(2014, 4, 2, 08, 00),
         Description: "",
         Location: "office",  // Passing string value to the Location field
         AllDay: false,
@@ -125,16 +124,14 @@ $(function () {
     {
         Id: 101,
         Subject: "Testing",
-        StartTime: new Date(2014,3,30,06,30),
-        EndTime: new Date(2014,3,30,07,30),
+        StartTime: new Date(2014, 3, 30, 06, 30),
+        EndTime: new Date(2014, 3, 30, 07, 30),
         Description: "",
         Location: "Hospital", // Passing string value to the Location field
         AllDay: false,
         Recurrence: false
-
     }
     ];
-
 
 {% endhighlight %}
 
@@ -208,12 +205,8 @@ On executing the above specified code the **Location** field will be added in th
         AllDay: false,
         Recurrence: false
     }];
-
     $(function () {
-
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(5));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(5));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -261,15 +254,14 @@ On executing the above specified code the **Scheduler** displays the appointment
 $(function () {
         var dManager = ej.DataManager({
             // referring data from remote service (url binding)
-           url:"[http://mvc.syncfusion.com/OdataServices/Northwnd.svc/](http://mvc.syncfusion.com/OdataServices/Northwnd.svc/)"
+            url: "[http://mvc.syncfusion.com/OdataServices/Northwnd.svc/](http://mvc.syncfusion.com/OdataServices/Northwnd.svc/)"
         });
         // query to fetch the records from the specified table “Events”
-          var queryString = ej.Query().from("Events").take(10);
-
+        var queryString = ej.Query().from("Events").take(10);
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
-            currentDate: new Date(2014,4,5),
+            currentDate: new Date(2014, 4, 5),
             appointmentSettings: {
                 // the dManager collections
                 dataSource: dManager,

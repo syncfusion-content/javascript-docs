@@ -15,12 +15,14 @@ The **Diagram** model represents data for rendering the Diagram and manipulating
 
 //create diagram
 $("#Diagram").ejDiagram({
-  //set diagram model properties
-  width: "100%",
-  height: "100%",
-  pageSettings: { pageWidth: 2000, pageHeight: 2000 }
+   //set diagram model properties
+   width: "100%",
+   height: "100%",
+   pageSettings: {
+      pageWidth: 2000,
+      pageHeight: 2000
+   }
 });
-
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Concepts-and-Features/Model_images/Model_img1.png" Caption="Model"%}

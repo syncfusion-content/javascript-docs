@@ -364,7 +364,6 @@ To learn about localizing in the **Schedule** control on your required culture, 
 {% highlight js %}
 
 $(function () {
-
         // Define the localized words for fr-FR culture as below,(Only some of the words are given below)
         ej.Schedule.Locale["fr-FR"] = {
             CreateAppointmentTitle: "créer un rendez-",
@@ -396,7 +395,6 @@ $(function () {
         ……
         ……
         };
-
         var dManager =
         ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
@@ -428,7 +426,6 @@ $(function () {
 {% highlight html %}
 
 <head>
-
     <link href="themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" />
     <script src="scripts/jquery-1.10.2.min.js"></script>
     <script src="scripts/jquery.easing.1.3.min.js"></script>
@@ -437,9 +434,7 @@ $(function () {
     <script src="scripts/jsrender.min.js"></script>
     //To use the **fr-FR** culture in the schedule control, refer the below script file
     <script src="scripts/cultures/globalize.culture.fr-FR.min.js"></script>
-
     <script src="scripts/ej.web.all.min.js" type="text/javascript"></script>
-
 </head>
 
 
@@ -468,9 +463,7 @@ The following code example explains how to enable the **rtl** property of the **
 {% highlight js %}
 
 $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",

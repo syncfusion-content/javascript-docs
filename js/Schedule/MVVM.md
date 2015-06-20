@@ -46,8 +46,7 @@ You can render the **Schedule** by using the following code example. Object in t
         e-appointmentsettings-recurrencerule="RecurrenceRule"
         e-width="100%" e-height="525px" e-currentview="setView"
         e-currentdate="setDate" e-contextmenusettings-enable="true">
-
-</ej-schedule>
+    </ej-schedule>
 </body>
 </html>
 
@@ -65,32 +64,24 @@ You can render the **Schedule** by using the following code example. Object in t
 
 {% highlight html %}
 
-<!--To Render the Schedule-->
-
+    <!--To Render the Schedule-->
     <ej-schedule style="float: left" id="Ej-Schedule1">
-
     <!--Adding content menu item for appointment -->
-
     <e-contextMenuSettings-menuItems-appointment>
     < e-appointment e-id="open" e-text="Open Appointment"></ e-appointment>
     < e-appointment e-id="delete" e-text="Delete Appointment"></ e-appointment>
     < e-appointment e-id="categorize" e-text="Delete Appointment">
     </ e-appointment>
     </e-contextMenuSettings-menuItems-appointment>
-
     <!--Adding content menu item for cells -->
-
     <e-contextMenuSettings-menuItems-cells>
     <e-contextMenuSettings-menuItems-cell
     e-id="new" e-text="Create New Appointment">
     </e-contextMenuSettings-menuItems-cell>
-
     <e-contextMenuSettings-menuItems-cell
     e-id="recurrence" e-text="Create recurrence Appointment">
     </e-contextMenuSettings-menuItems-cell>
-
     </e-contextMenuSettings-menuItems-cells>
-
     </ej-schedule>
 
 
@@ -109,42 +100,31 @@ You can render the **Schedule** by using the following code example. Object in t
 
 !--To Render the Schedule-->
 
-<ej-schedule style="float: left" id="Ej-Schedule1" e-categorizesetting-enable="true"
+    <ej-schedule style="float: left" id="Ej-Schedule1" e-categorizesetting-enable="true"
     e-categorizesetting-allowmultiple="true" e-categorizesetting-text="text"
     e-categorizesetting-color="color"
     e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
-
-<!--Adding content menu item for appointment -->
-<e-contextMenuSettings-menuItems-appointment>
-</e-contextMenuSettings-menuItems-appointment>
-
-<!--Adding content menu item for cells -->
-
-<e-contextMenuSettings-menuItems-cells>
-</e-contextMenuSettings-menuItems-cells>
-
-<e-categorizesetting-datasource>
-
-<e-categorizesetting-datasource text="Blue category"
-color="Blue" fontcolor="Red" id="1">
-</e-categorizesetting-datasource>
-
-<e-categorizesetting-datasource text="yellow category"
-color="yellow" fontcolor="Red" id="2">
-</e-categorizesetting-datasource>
-
-<e-categorizesetting-datasource text="red category" color="red"
-fontcolor="Red" id="3">
-</e-categorizesetting-datasource>
-
-<e-categorizesetting-datasource text="orange category" color="orange"
-fontcolor="Red" id="4">
-</e-categorizesetting-datasource>
-
-</e-categorizesetting-datasource>
-
-</ej-schedule>
-
+    <!--Adding content menu item for appointment -->
+    <e-contextMenuSettings-menuItems-appointment>
+    </e-contextMenuSettings-menuItems-appointment>
+    <!--Adding content menu item for cells -->
+    <e-contextMenuSettings-menuItems-cells>
+    </e-contextMenuSettings-menuItems-cells>
+    <e-categorizesetting-datasource>
+    <e-categorizesetting-datasource text="Blue category"
+    color="Blue" fontcolor="Red" id="1">
+    </e-categorizesetting-datasource>
+    <e-categorizesetting-datasource text="yellow category"
+    color="yellow" fontcolor="Red" id="2">
+    </e-categorizesetting-datasource>
+    <e-categorizesetting-datasource text="red category" color="red"
+    fontcolor="Red" id="3">
+    </e-categorizesetting-datasource>
+    <e-categorizesetting-datasource text="orange category" color="orange"
+    fontcolor="Red" id="4">
+    </e-categorizesetting-datasource>
+    </e-categorizesetting-datasource>
+    </ej-schedule>
 
 {% endhighlight %}
 
@@ -215,19 +195,15 @@ e-id="gotodate" -text="Go to date">
 </e-contextMenuSettings-menuItems-cell>
 </e-contextMenuSettings-menuItems-cells>
 </ej-schedule>
-
-
     <script>
-
-        <!—binding the value to the scope variables in application controller-->
-
-        angular.module('syncApp', ['ejangular'])
-        .controller('ScheduleCtrl', function ($scope) {
-            $scope.appointments = window.Localization;
-            $scope.setView = "week";
-            $scope.setDate = new Date();
-        });
-        $("#sampleProperties").ejPropertiesPanel();
+        <!--binding the value to the scope variables in application controller-->
+    angular.module('syncApp', ['ejangular'])
+    .controller('ScheduleCtrl', function ($scope) {
+        $scope.appointments = window.Localization;
+        $scope.setView = "week";
+        $scope.setDate = new Date();
+    });
+    $("#sampleProperties").ejPropertiesPanel();
     </script>
 </body>
 </html>

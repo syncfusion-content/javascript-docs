@@ -18,14 +18,14 @@ The **ej.unobtrusive.min.js** file can be accessed from the following location, 
 <table>
 <tr>
 <td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common
 </td>
 </tr>
 <tr>
 <td>
 <b>For example,</b> If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
 <br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common
+<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common
 </td>
 </tr>
 </table>
@@ -49,7 +49,7 @@ The **data-role** type is enabled by default. Therefore, while making use of the
 
 The demonstration of such **data-role** declaration with a simple **DatePicker** control creation is shown below,
 
-* Refer the **ej.unobtrusive.min.js** file in your application along with the other script and css reference section and add the code for defining the **DatePicker** control with the basic HTML mark-up tags along with its attributes defined with **data-ej** keyword prepended as shown below, 
+Refer the **ej.unobtrusive.min.js** file in your application along with the other script and css reference section and add the code for defining the **DatePicker** control with the basic HTML mark-up tags along with its attributes defined with **data-ej** keyword prepended as shown below, 
 
 {% highlight html %}
 
@@ -81,8 +81,8 @@ The demonstration of such **data-role** declaration with a simple **DatePicker**
 
 
 
-> _**Note: In the above code, value is one of the DatePicker property to set the date value for the control, which is defined here with **data-ej** keyword prepended to it.**_
-> _**The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.**_
+>   Note: In the above code, value is one of the DatePicker property to set the date value for the control, which is defined here with **data-ej** keyword prepended to it.
+>   The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.
 
 
 
@@ -125,8 +125,8 @@ An important thing to be noted while using EJ role is that, you need to add the 
 
 
 
-> _**Note: In the above code, value is one of the DatePicker property to set the date value for the control, which is defined here with **ej-** keyword prepended to it.**_ 
-> _**Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)**_
+>   Note: In the above code, value is one of the DatePicker property to set the date value for the control, which is defined here with **ej-** keyword prepended to it. 
+>   Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)
 
 
 
@@ -171,8 +171,8 @@ While making use of directives, you need to add the **data-directive** attribute
 
 
 
-> _**Note: In the above code, value is one of the available DatePicker property to set the value for the control, which is defined here with **ej-** keyword prepended to it.**_ 
-> _**Also, you can notice here that the HTML tag name is replaced by the control name to be created.**_
+>   Note: In the above code, value is one of the available DatePicker property to set the value for the control, which is defined here with **ej-** keyword prepended to it. 
+>   Also, you can notice here that the HTML tag name is replaced by the control name to be created.
 
 
 

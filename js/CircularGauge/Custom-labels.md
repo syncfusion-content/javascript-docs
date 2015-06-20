@@ -25,7 +25,6 @@ Custom labels collection is directly added to the scale object. Refer the follow
 {% highlight js %}
 
  $(function () {
-
         //For circular gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -56,9 +55,7 @@ Font option is also available on  Customlabels. The basic three properties of fo
 
 {% highlight js %}
 
-
-  $(function () {
-
+ $(function () {
         // For Circular Gauge rendering
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
@@ -87,7 +84,6 @@ Font option is also available on  Customlabels. The basic three properties of fo
         });
     });
 
-
 {% endhighlight %}
 
 
@@ -108,9 +104,7 @@ You can set multiple custom labels in a single **Circular Gauge** by adding an a
 
 {% highlight js %}
 
-
- $(function () {
-
+$(function () {
           // For Circular Gauge rendering
           $("#CircularGauge1").ejCircularGauge({
               scales: [{
@@ -145,8 +139,6 @@ You can set multiple custom labels in a single **Circular Gauge** by adding an a
                       },
                       position: { x: 180, y: 250 }
                   }]
-
-
               }]
           });
       });
@@ -185,25 +177,19 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
 
 {% highlight js %}
 
-
  $(function () {
           $("#CircularGauge1").ejCircularGauge({
-
               // Sets outer custom label position.
               outerCustomLabelPosition: "right",
-
               //Defines the tooltip object.
               tooltip: {
-
                   // Enables the custom label tooltip.
                   showCustomLabelTooltip: true,
               },
-
               // Customizes the scale options.
               scales: [{
                   showLabels: true,
                   radius: 130,
-
                   // Customizes the custom label options.
                   customLabels: [{
                       value: "Average Speed",
@@ -214,10 +200,8 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
                           fontFamily: "Arial",
                           fontStyle: "bold"
                       },
-
                       positionType: "outer",
                   }],
-
                   // Customizes the pointers options.
                   pointers: [{
                       value: 60,

@@ -15,16 +15,14 @@ A **QR Code** is a two-dimensional **Barcode** that consists of a grid of dark a
 
 Here is the code snippet to create a QR Barcode:
 
-
 {% highlight js %}
-
-
-$("#barcode").ej.Barcode({ text:"B5330E8278BC4C797C49DD3ED5AD9715", symbologyType: "qrbarcode", xDimension: 8});
-
-
+$("#barcode").ej.Barcode({
+   text: "B5330E8278BC4C797C49DD3ED5AD9715",
+   symbologyType: "qrbarcode",
+   xDimension: 8
+});
 {% endhighlight %}
 
 ##DataMatrix
 
 **DataMatrix Barcode** is a two dimensional **Barcode** that consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the **Barcode** can either be numbers or alphanumeric. They are widely used in printed media such as labels and letters. You can read it easily with the help of a **Barcode** reader and mobile phones.
-

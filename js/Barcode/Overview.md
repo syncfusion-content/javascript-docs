@@ -14,6 +14,4 @@ The **Barcode** control enables rendering of one dimension and two dimension **B
 **Key Features**
 
 * Supports 10 one-dimensional **Barcodes** including **Code 39** and **Code 32** barcodes.
-
 * Supports 2 two-dimensional **Barcodes** such as **QR** and **DataMatrix** barcodes.
-

@@ -27,47 +27,45 @@ Create an **HTML** file using the following code example for **ejBarcode** creat
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>Getting Started Essential JS</title>
-<!-- Style sheet for default theme (flat azure)-->
-<link href ="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.widgets.all.min.css" rel ="stylesheet" />
-<!--scripts-->
-<script src ="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src ="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
-<!--Add custom scripts here -->
-</head>
-<body>
-<!-- Add Barcode element here. -->
-</body>
-</html>
 
+<head>
+   <title>Getting Started Essential JS</title>
+   <!-- Style sheet for default theme (flat azure)-->
+   <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.widgets.all.min.css" rel="stylesheet" />
+   <!--scripts-->
+   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+   <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
+   <!--Add custom scripts here -->
+</head>
+
+<body>
+   <!-- Add Barcode element here. -->
+</body>
+
+</html>
 {% endhighlight %}
 
 Add element for **Barcode** rendering.
 
 {% highlight html %}
-
 <div id="barcode"></div>
-
 {% endhighlight %}
 
 Add the following script in the **HTML** file to initialize **ejBarcode**.
 
 {% highlight js %}
-
 <script type="text/javascript">
-
-$(function (){
-// document ready
-// simple control creation
-$("#barcode").ejBarcode({ text:"http://www.syncfusion.com", symbologyType: "qrbarcode"});
-});
-
+   $(function() {
+      // document ready
+      // simple control creation
+      $("#barcode").ejBarcode({
+         text: "http://www.syncfusion.com",
+         symbologyType: "qrbarcode"
+      });
+   });
 </script>
-
 {% endhighlight %}
 
 The above code gives the output displayed in following screenshot.
 
 {% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img2.png" Caption="QR Code"%}
-
