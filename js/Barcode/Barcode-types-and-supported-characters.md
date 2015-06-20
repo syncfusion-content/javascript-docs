@@ -91,5 +91,3 @@ Code128C</td><td>
 0 1 2 3 4 5 6 7 8 9</td><td>
 variable</td></tr>
 </table>
-
-_Table of Barcode types and supported character_
