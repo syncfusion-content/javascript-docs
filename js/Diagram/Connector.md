@@ -32,7 +32,6 @@ var connectors = [{
       y: 150
    }
 }];
-
 //add connectors to diagram
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -74,7 +73,6 @@ var connectors = [{
       y: 150
    }
 }];
-
 //add connectors to diagram model
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -93,7 +91,6 @@ var segments = [{
    direction: "bottom",
    length: 90
 }];
-
 //create a connector 
 var connectors = [{
    name: "connector",
@@ -108,7 +105,6 @@ var connectors = [{
       y: 150
    }
 }];
-
 //add connectors to diagram model
 $("#Diagram").ejDiagram({
    connectors: connectors
@@ -180,7 +176,6 @@ var segments = [{
       y: 72
    }
 }];
-
 var connector = [{
    segments: segments,
    sourcePoint: {
@@ -207,14 +202,12 @@ var segments = [{ type: "bezier",
       angle: 180,
       distance: 120
    },
-   
    //Length and angle between target point and control point 2
    vector2: {
       angle: 10,
       distance: 140
    }
 }];
-
 var connectors = [{
    segments: segments,
    sourcePoint: {
@@ -444,6 +437,7 @@ number</td><td>
 Gets or sets the opacity of the connector</td></tr>
 </table>
 
+
 {% highlight js %}
 //set various appearance properties to connector
 var segments = [{
@@ -623,4 +617,4 @@ The following code illustrates how to disable select constraints of connector. D
 connector.constraints = connector.Constraints & ~(ej.datavisualization.Diagram.ConnectorConstraints.Select);
 {% endhighlight %}
 
-> _**Note:**_ Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see**_ [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations)_**. 
+> **Note:** Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see**_ [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations)_**. 
