@@ -49,8 +49,6 @@ None</td><td>
 Disables all tools</td></tr>
 </table>
 
-_Tools_
-
 ### Single Tool Selection
 
 The following code illustrates how to enable SingleSelect tool.

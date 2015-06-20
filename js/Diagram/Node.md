@@ -93,17 +93,19 @@ node = {
 //dependency scripts
 <script src = "http://borismoore.github.io/jsrender/jsrender.min.js"> </script>
 
-<script id = "htmlTemplate"
-type = "text/x-jsrender">
-   <div>
-   <input type = "button"
-value = "{{:value}}"/>
-   </div> </script>
-   var node = {
-      type: ej.datavisualization.Diagram.Shapes.Html,
-      templateId: "htmlTemplate",
-      value: "button"
-   }
+<script id="htmlTemplate" type="text/x-jsrender">
+    <div>
+        <input type="button" value="{{:value}}" />
+    </div>
+</script>
+{% endhighlight %}
+
+{% highlight js %}
+var node = {
+    type: ej.datavisualization.Diagram.Shapes.Html,
+    templateId: "htmlTemplate",
+    value: "button"
+}
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Node_images/Node_img4.png" Caption="Html Shape"%}
@@ -179,18 +181,17 @@ var node = {
 **Diagram** supports to add **SVG** content as shape content. It is achieved by setting node’s type as **ej.datavisualization.Diagram.Shapes.Native** and assigns the template id to the **templateId** property. The **templateId** property receives **id svg** template. The following code illustrates how a **Native node** is created.
 
 {% highlight html %}
-
 <!-- dependency scripts -->
 <script src = "http://borismoore.github.io/jsrender/jsrender.min.js"> </script>
 
-<script id = "svgTemplate"
-type = "text/x-jsrender">
-   <g id = "{{:text}}">
-   <path d = "M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z 
-M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S
-29.867 34.87 29.353 34.425 L 1 9.826 V 60 H 61 V 9.826 L
-32.644 34.425 Z "></path> 
-< text x = "20" y = "45" > { {: text } } < /text> < /g > < /script>
+<script id="svgTemplate" type="text/x-jsrender">
+    <g id="">
+        <path d="M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S 29.867 34.87 29.353 34.425 L 1 9.826 V 60 H 61 V 9.826 L 32.644 34.425 Z ">
+        </path>
+        <text x="20" y="45"> { {: text } }
+        </text>
+    </g>
+</script>
 {% endhighlight %}
 
 {% highlight js %}
@@ -316,8 +317,6 @@ number</td><td>
 Gets or sets the width of node border.</td></tr>
 </table>
 
-_Appearance_
-
 {% highlight js %}
 
 //create linear gradient
@@ -441,7 +440,6 @@ Enables all the constraints.</td></tr>
 None</td><td>
 Disables all the constraints.</td></tr>
 </table>
-_Constraints_
 
 The Default value for the node constraints property is **ej.datavisualization.Diagram.NodeConstraints.Default.** The following code illustrates how to enable rotate, select constraints, and disable other constraints.
 

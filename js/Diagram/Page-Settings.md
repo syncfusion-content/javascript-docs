@@ -64,8 +64,6 @@ ej.datavisualization.Diagram.PageOrientations</td><td>
 Gets or sets the orientation of the page</td></tr>
 </table>
 
-_Page settings_
-
 The following code illustrates how to customize **Page Settings**
 
 {% highlight js %}

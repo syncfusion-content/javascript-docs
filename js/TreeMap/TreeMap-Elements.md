@@ -104,7 +104,8 @@ You can also set labels for the leaf nodes by setting the **showLabels** propert
 
 {% highlight js %}
 
-<div  id="treemap" style="width: 1100px; height: 550px; "></div>
+    <div  id="treemap" style="width: 1100px; height: 550px; "></div>
+    
     <script type="text/javascript">
         jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({

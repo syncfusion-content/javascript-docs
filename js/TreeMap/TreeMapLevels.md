@@ -48,7 +48,7 @@ You can use **groupGap** property to separate the items from every flat level a
 
 {% include image.html url="/js/TreeMap/TreeMapLevels_images/TreeMapLevels_img1.png" Caption="Flat Level Treemap"%}
 
-###Hierarchical Level
+##Hierarchical Level
 
 **TreeMap** Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data.
 
