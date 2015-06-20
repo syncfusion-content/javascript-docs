@@ -18,11 +18,14 @@ The **SymbolPalette** displays a collection of palettes. The Palette shows nodes
 Node and Connector are added to the Palette as Palette Items. The following code example illustrates how to create and add symbols in Palette.
 
 {% highlight js %}
-
 // palette array
 var paletteCollection = [];
-var basiShapes = { "name": "Basic Shapes" };
-var connectors = { "name": "Connectors" };
+var basiShapes = {
+   "name": "Basic Shapes"
+};
+var connectors = {
+   "name": "Connectors"
+};
 
 //add node/connector to palette
 basiShapes.Add(createNode(name, offsetX, offsety, height, width));
@@ -34,15 +37,16 @@ paletteCollection.Add(connectors);
 
 //create node
 function createNode(name, offsetX, offsety, height, width) {
-//note: for creating node refer the link Node creation
+   //note: for creating node refer the link Node creation
 }
 //create connector
 function createConnector(name, segments, decorator) {
-//note: for creating connector refer the link Connector creation    
+   //note: for creating connector refer the link Connector creation    
 }
 
-$("#palette").ejSymbolPalette({ palettes: paletteCollection });
-
+$("#palette").ejSymbolPalette({
+   palettes: paletteCollection
+});
 {% endhighlight %}
 
 ## Adding Node and Connector
@@ -118,21 +122,19 @@ _Appearance_
 The following code illustrates how to customize the **Appearance** of the **Palette.**
 
 {% highlight js %}
-
 // properties to symbol palette
-$("#palette").ejSymbolPalette({ 
-       palettes: collection,
-       diagramId: "DiagramContent",
-       height: "100%",
-       width: "100%",
-       paletteItemWidth: 45,
-       paletteItemHeight: 45,
-       showPaletteItemText: true,
-       headerHeight: 30,
-       allowDrag: true,
-       selectedPaletteName: "Basic Shapes"
-}); 
-
+$("#palette").ejSymbolPalette({
+   palettes: collection,
+   diagramId: "DiagramContent",
+   height: "100%",
+   width: "100%",
+   paletteItemWidth: 45,
+   paletteItemHeight: 45,
+   showPaletteItemText: true,
+   headerHeight: 30,
+   allowDrag: true,
+   selectedPaletteName: "Basic Shapes"
+});
 {% endhighlight %}
 
 ## Preview for Drag and Drop
@@ -171,10 +173,11 @@ _Preview Appearance_
 The following code example illustrates how to customize **Preview Content**.
 
 {% highlight js %}
-
   //set properties to symbol palette preview
-  previewWidth: 100,
-  previewHeight: 100,
-  previewOffset: { x: 102, y: 102 }
-
+ previewWidth: 100,
+    previewHeight: 100,
+    previewOffset: {
+       x: 102,
+       y: 102
+    }
 {% endhighlight %}

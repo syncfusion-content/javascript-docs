@@ -19,13 +19,11 @@ documentation: ug
 The Diagram is serialized as JSON data while saving and Diagram is loaded from the Serialized JSON data. The following code illustrates how to save and load diagram.
 
 {% highlight js %}
-
 var diagram = $("#Diagram").ejDiagram("instance");
 
 //returns diagram model’s json data
-var json= diagram.save();
+var json = diagram.save();
 
 //load the diagram using saved json data 
 diagram.load(json);
-
 {% endhighlight %}
