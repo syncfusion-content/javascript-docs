@@ -11,7 +11,7 @@ documentation: ug
 
 A **Map** is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. Using pan and zoom, the maps can be navigated. Maps supports enhanced data visualization with bubbles and labels using data bound to the map.
 
-**Use Case Scenarios**
+##Use Case Scenarios
 
 Some of the **Maps** control use case scenarios:
 
@@ -25,7 +25,7 @@ Some of the **Maps** control use case scenarios:
 
 5. To visualize the layout of a building.
 
-**Key Features**
+##Key Features
 
 * **Layers** - Map is maintained through Layers and it can accommodate one or more layers.
 

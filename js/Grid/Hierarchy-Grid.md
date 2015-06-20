@@ -13,41 +13,38 @@ documentation: ug
 
 {% highlight html %}
 
-   <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            var data = ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9));
-            var dataManger = ej.DataManager({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
-            });
-
-            var dataManger2 = ej.DataManager({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Customers/"
-            });
-
-            $("#Grid").ejGrid({
-                dataSource: data,
-                allowPaging: true,
-                allowSorting: true,
-                columns: ["EmployeeID", "FirstName", "Title", "City", "Country"],
-                childGrid: {
-                    dataSource: dataManger,
-                    queryString: "EmployeeID",
-                    allowPaging: true,
-                    columns: ["OrderID", "ShipCity", "Freight", "ShipName"],
-                    childGrid: {
-                        dataSource: dataManger2,
-                        queryString: "CustomerID",
-                        columns: ["CustomerID", "Phone", "Address", "Country"],
-
-                    },
-
-                },
-
-            });
-        });
-
-    </script>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {
+      var data = ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9));
+      var dataManger = ej.DataManager({
+          url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
+      });
+  
+      var dataManger2 = ej.DataManager({
+          url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Customers/"
+      });
+  
+      $("#Grid").ejGrid({
+          dataSource: data,
+          allowPaging: true,
+          allowSorting: true,
+          columns: ["EmployeeID", "FirstName", "Title", "City", "Country"],
+          childGrid: {
+              dataSource: dataManger,
+              queryString: "EmployeeID",
+              allowPaging: true,
+              columns: ["OrderID", "ShipCity", "Freight", "ShipName"],
+              childGrid: {
+                  dataSource: dataManger2,
+                  queryString: "CustomerID",
+                  columns: ["CustomerID", "Phone", "Address", "Country"],
+              },
+          },
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}

@@ -25,18 +25,21 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta charset="utf-8" />
-      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.js"></script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
 </head>
+
 <body>
 </body>
+
 </html>
 
 
@@ -49,12 +52,9 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 {% highlight html %}
 
 
-<!-- ... -->
 <body>
     <div id="Grid"></div>   
 </body>
-<!-- ... -->
-
 
 
 {% endhighlight %}
@@ -66,10 +66,8 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 {% highlight html %}
 
 
-<!-- ... -->
 <head>
-<!-- ... -->
-<script type="text/javascript">
+  <script type="text/javascript">
     $(function () {
         $("#Grid").ejGrid({            
             columns: [
@@ -81,9 +79,8 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
             ]
         });
     });
-</script>
+  </script>
 </head>
-<!-- ... -->
 
 
 
@@ -101,34 +98,28 @@ You can pass the data to the **Grid**  either  locally or remotly. Assign the we
 
 {% highlight html %}
 
-
-<!-- ... -->
-   <head>
-        <!-- ... -->
-        <script type="text/javascript">
-            $(function () {
-                window.dataManager = ej.DataManager({
-                url: "http://mvc.syncfusion.com/UGService/api/Orders",
-                crossDomain: true,
-                offline:true
-            });
-
-            $("#Grid").ejGrid({
-              dataSource: window.dataManager,
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "ShipName", headerText: "Ship Name", width: 100 },
-                        { field: "ShipCity", headerText: "Ship City", width: 100 },
-                        { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
-                ]
-            });
-            });
-        </script>
-    </head>
-<!-- ... -->
-
-
+<head>
+  <script type="text/javascript">
+    $(function () {
+        window.dataManager = ej.DataManager({
+        url: "http://mvc.syncfusion.com/UGService/api/Orders",
+        crossDomain: true,
+        offline:true
+    });
+    
+    $("#Grid").ejGrid({
+      dataSource: window.dataManager,
+        columns: [
+                { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                { field: "ShipName", headerText: "Ship Name", width: 100 },
+                { field: "ShipCity", headerText: "Ship City", width: 100 },
+                { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
+        ]
+    });
+    });
+  </script>
+</head>
 
 {% endhighlight %}
 
@@ -145,34 +136,29 @@ The following screenshot illustrates a **Grid** with sales data.
 {% highlight html %}
 
 
-<!-- ... -->
 <head>
-<!-- ... -->
-<script type="text/javascript">
-$(function () {
-    window.dataManager = ej.DataManager({
-        url: "http://mvc.syncfusion.com/UGService/api/Orders",
-        crossDomain: true,
-        offline:true
-    }); 
-
-    $("#Grid").ejGrid({
-        dataSource: window.dataManager,
-        allowPaging: true,
-        columns: [
-                { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
-                { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                { field: "ShipName", headerText: "Ship Name", width: 100 },
-                { field: "ShipCity", headerText: "Ship City", width: 100 },
-                { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
-       ]
+  <script type="text/javascript">
+    $(function () {
+        window.dataManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/UGService/api/Orders",
+            crossDomain: true,
+            offline:true
+        }); 
+    
+        $("#Grid").ejGrid({
+            dataSource: window.dataManager,
+            allowPaging: true,
+            columns: [
+                    { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                    { field: "ShipName", headerText: "Ship Name", width: 100 },
+                    { field: "ShipCity", headerText: "Ship City", width: 100 },
+                    { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
+           ]
+        });
     });
-});
-</script>
+  </script>
 </head>
-<!-- ... -->
-
-
 
 {% endhighlight %}
 
@@ -190,36 +176,30 @@ To enable filtering, use **allowFiltering** property of **Grid** as follows.
 
 {% highlight html %}
 
-
-<!-- ... -->
 <head>
-<!-- ... -->
-<script type="text/javascript">
-$(function () {
-    window.dataManager = ej.DataManager({
-        url: "http://mvc.syncfusion.com/UGService/api/Orders",
-        crossDomain: true,
-        offline:true
-    }); 
-
-    $("#Grid").ejGrid({
-        dataSource: window.dataManager,
-        allowPaging: true,
-        allowFiltering: true,
-        columns: [
-                { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
-                { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                { field: "ShipName", headerText: "Ship Name", width: 100 },
-                { field: "ShipCity", headerText: "Ship City", width: 100 },
-                { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
-       ]
+  <script type="text/javascript">
+    $(function () {
+        window.dataManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/UGService/api/Orders",
+            crossDomain: true,
+            offline:true
+        }); 
+    
+        $("#Grid").ejGrid({
+            dataSource: window.dataManager,
+            allowPaging: true,
+            allowFiltering: true,
+            columns: [
+                    { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                    { field: "ShipName", headerText: "Ship Name", width: 100 },
+                    { field: "ShipCity", headerText: "Ship City", width: 100 },
+                    { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
+           ]
+        });
     });
-});
-</script>
+  </script>
 </head>
-<!-- ... -->
-
-
 
 {% endhighlight %}
 
@@ -237,10 +217,7 @@ To enable grouping, use **allowGrouping** property of **Grid** as follows.
 
 {% highlight html %}
 
-
-<!-- ... -->
 <head>
-<!-- ... -->
 <script type="text/javascript">
 $(function () {
     window.dataManager = ej.DataManager({
@@ -266,9 +243,6 @@ $(function () {
 });
 </script>
 </head>
-<!-- ... -->
-
-
 
 {% endhighlight %}
 
@@ -286,49 +260,44 @@ The following code example shows the option to enable group summary.
 
 {% highlight html %}
 
-
-<!-- ... -->
 <head>
-<!-- ... -->
- <script type="text/javascript">
-        $(function () {
-            window.dataManager = ej.DataManager({
-                url: "http://mvc.syncfusion.com/UGService/api/Orders",
-                crossDomain: true,
-                offline: true
-            });
-
-            $("#Grid").ejGrid({
-                dataSource: window.dataManager,
-                allowPaging: true,
-                allowFiltering: true,
-                allowGrouping: true,
-                groupSettings: { groupedColumns: ["ShipName"] },
-                showSummary: true,
-                columns: [
-                        { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
-                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                        { field: "ShipName", headerText: "Ship Name", width: 100 },
-                        { field: "ShipCity", headerText: "Ship City", width: 100 },
-                        { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
-                ],
-                summaryRows: [{
-                    showTotalSummary: false,
-                    summaryColumns: [{
-                        summaryType: ej.Grid.SummaryType.Sum,
-                        displayColumn: "Freight",
-                        prefix: "Sum =",
-                        dataMember: "Freight",
-                        format: "{0:C3}"
-                    }]
-                }]
-            });
+<head>
+  <script type="text/javascript">
+    $(function () {
+        window.dataManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/UGService/api/Orders",
+            crossDomain: true,
+            offline: true
         });
-    </script>
+    
+        $("#Grid").ejGrid({
+            dataSource: window.dataManager,
+            allowPaging: true,
+            allowFiltering: true,
+            allowGrouping: true,
+            groupSettings: { groupedColumns: ["ShipName"] },
+            showSummary: true,
+            columns: [
+                    { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                    { field: "ShipName", headerText: "Ship Name", width: 100 },
+                    { field: "ShipCity", headerText: "Ship City", width: 100 },
+                    { field: "Freight", width: 80, format: "{0:C3}", textAlign: ej.TextAlign.Right }
+            ],
+            summaryRows: [{
+                showTotalSummary: false,
+                summaryColumns: [{
+                    summaryType: ej.Grid.SummaryType.Sum,
+                    displayColumn: "Freight",
+                    prefix: "Sum =",
+                    dataMember: "Freight",
+                    format: "{0:C3}"
+                }]
+            }]
+        });
+    });
+  </script>
 </head>
-<!-- ... -->
-
-
 
 {% endhighlight %}
 

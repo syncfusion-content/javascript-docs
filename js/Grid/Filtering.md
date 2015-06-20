@@ -36,19 +36,18 @@ Filter menus are a good **UI** based filtering option. It visibly denotes filter
 {% highlight html %}
 
 
-  <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowFiltering: true,
-                filterSettings: { filterType: "menu" },
-                allowPaging: true,
-            });
-        });
-
-    </script>
-
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          allowFiltering: true,
+          filterSettings: { filterType: "menu" },
+          allowPaging: true,
+      });
+  });
+  
+</script>
 
 {% endhighlight %}
 
@@ -99,20 +98,18 @@ Boolean filter bar works with either <b>true</b> or <b>false</b>.</td></tr>
 
 {% highlight javascript %}
 
-
-
 <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowFiltering: true,
-                filterSettings: { filterType: ej.Grid.FilterType.FilterBar },
-                allowPaging: true,
-            });
-        });
-
-    </script>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          allowFiltering: true,
+          filterSettings: { filterType: ej.Grid.FilterType.FilterBar },
+          allowPaging: true,
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}
@@ -154,27 +151,26 @@ The ourput of the custom filter menu was showed in below screenshot.
 
 
 
-  <div id="Filtering"></div>
-
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Filtering").ejGrid({
-                dataSource: window.gridData,
-                allowSorting: true,
-                allowFiltering: true,
-                filterSettings: { filterType: "excel", maxFilterChoices:100,enableCaseSensitivity:false },
-                allowPaging: true,
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", textAlign: "right" },
-                    { field: "CustomerID", headerText: "Customer ID" },
-                    { field: "OrderDate", headerText: "Order Date", format: "{0:MM/dd/yy}" },
-                    { field: "EmployeeID", headerText: "Employee ID", textAlign: "right" },
-                    { field: "ShipCity", headerText: "Ship City" },
-                    { field: "Verified", headerText: "Verified" }
-                ]
-            });
-        });
-    </script>
+<div id="Filtering"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Filtering").ejGrid({
+          dataSource: window.gridData,
+          allowSorting: true,
+          allowFiltering: true,
+          filterSettings: { filterType: "excel", maxFilterChoices:100,enableCaseSensitivity:false },
+          allowPaging: true,
+          columns: [
+              { field: "OrderID", headerText: "Order ID", textAlign: "right" },
+              { field: "CustomerID", headerText: "Customer ID" },
+              { field: "OrderDate", headerText: "Order Date", format: "{0:MM/dd/yy}" },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right" },
+              { field: "ShipCity", headerText: "Ship City" },
+              { field: "Verified", headerText: "Verified" }
+          ]
+      });
+  });
+</script>
 
 
 
@@ -194,19 +190,32 @@ _List of Column type and Filter operators_
 <tr>
 <td>
 Number</td><td>
-ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOperators.lessThanej.FilterOperators.lessThanOrEqualej.FilterOperators.equal</td></tr>
+ej.FilterOperators.greaterThan<br/>
+ej.FilterOperators.greaterThanOrEqual<br/>
+ej.FilterOperators.lessThan<br/>
+ej.FilterOperators.lessThanOrEqual<br/>
+ej.FilterOperators.equal</td></tr>
 <tr>
 <td>
 String</td><td>
-ej.FilterOperators.startsWithej.FilterOperators.endsWithej.FilterOperators.containsej.FilterOperators.equalej.FilterOperators.notEqual</td></tr>
+ej.FilterOperators.startsWith<br/>
+ej.FilterOperators.endsWith<br/>
+ej.FilterOperators.contains<br/>
+ej.FilterOperators.equal<br/>
+ej.FilterOperators.notEqual</td></tr>
 <tr>
 <td>
 Boolean</td><td>
-ej.FilterOperators.equalej.FilterOperators.notEqual</td></tr>
+ej.FilterOperators.equal<br/>
+ej.FilterOperators.notEqual</td></tr>
 <tr>
 <td>
 Date</td><td>
-ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOperators.lessThanej.FilterOperators.lessThanOrEqualej.FilterOperators.equal</td></tr>
+ej.FilterOperators.greaterThan<br/>
+ej.FilterOperators.greaterThanOrEqual<br/>
+ej.FilterOperators.lessThan<br/>
+ej.FilterOperators.lessThanOrEqual<br/>
+ej.FilterOperators.equal</td></tr>
 </table>
 ## External Filtering
 
@@ -217,73 +226,73 @@ ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOper
 
 
 <div>
-        <div class="row">
-            <div class="col-md-1">
-                Columns
-            </div>
-            <div class="col-md-1">
-                <select id="columns">
-                    <option value="OrderID">Order ID</option>
-                    <option value="CustomerID">Customer ID</option>
-                    <option value="EmployeeID">Employee ID</option>
-                    <option value="ShipCity">Ship City</option>
-                    <option value="Verified">Verified</option>
-                </select>
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-md-1">
-                Operator
-            </div>
-            <div class="col-md-1">
-                <select id="operator">
-                    <option value="contains">Contains</option>
-                    <option value="endswith">Endswith</option>
-                    <option value="equal">Equal</option>
-                    <option value="greaterthan">Greaterthan</option>
-                    <option value="greaterthanorequal">GreaterThanOrEqual</option>
-                    <option value="lessthan">LessThan</option>
-                    <option value="lessthanorequal">LessThanOrEqual</option>
-                    <option value="notequal">NotEqual</option>
-                    <option value="startswith">StartsWith</option>
-                </select>
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-md-1">
-                Value
-            </div>
-            <div class="col-md-1">
-                <input type="text" class="e-ejinputtext" id="value" style="width: 143px;height:26px" />
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-md-2">
-                <input type="button" id="filter" value="filter" />
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-md-1">
+      Columns
     </div>
-    <div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {// Document is ready.
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowFiltering: true,
-                filterSettings: { filterType: ej.Grid.FilterType.Menu },
-                allowPaging: true,                                     
-            });
-            $("#columns,#operator").ejDropDownList();
-            $("#filter").ejButton({
-                click: function (args) {
-                    $("#Grid").ejGrid("filterColumn", $("#columns").ejDropDownList("getSelectedValue"), $("#operator").ejDropDownList("getSelectedValue"), $("#value").val(),"and");
-                }
-            });
-        });
-
-    </script>
+    <div class="col-md-1">
+      <select id="columns">
+        <option value="OrderID">Order ID</option>
+        <option value="CustomerID">Customer ID</option>
+        <option value="EmployeeID">Employee ID</option>
+        <option value="ShipCity">Ship City</option>
+        <option value="Verified">Verified</option>
+      </select>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-1">
+      Operator
+    </div>
+    <div class="col-md-1">
+      <select id="operator">
+        <option value="contains">Contains</option>
+        <option value="endswith">Endswith</option>
+        <option value="equal">Equal</option>
+        <option value="greaterthan">Greaterthan</option>
+        <option value="greaterthanorequal">GreaterThanOrEqual</option>
+        <option value="lessthan">LessThan</option>
+        <option value="lessthanorequal">LessThanOrEqual</option>
+        <option value="notequal">NotEqual</option>
+        <option value="startswith">StartsWith</option>
+      </select>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-1">
+      Value
+    </div>
+    <div class="col-md-1">
+      <input type="text" class="e-ejinputtext" id="value" style="width: 143px;height:26px" />
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-2">
+      <input type="button" id="filter" value="filter" />
+    </div>
+  </div>
+</div>
+<div id="Grid"></div>
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+          dataSource: window.gridData,
+          allowFiltering: true,
+          filterSettings: { filterType: ej.Grid.FilterType.Menu },
+          allowPaging: true,                                     
+      });
+      $("#columns,#operator").ejDropDownList();
+      $("#filter").ejButton({
+          click: function (args) {
+              $("#Grid").ejGrid("filterColumn", $("#columns").ejDropDownList("getSelectedValue"), $("#operator").ejDropDownList("getSelectedValue"), $("#value").val(),"and");
+          }
+      });
+  });
+  
+</script>
 
 
 {% endhighlight %}

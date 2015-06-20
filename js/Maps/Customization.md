@@ -11,7 +11,7 @@ documentation: ug
 
 **Maps** control supports color customization to determine the exact combination of colors for shapes displayed in Maps and tooltip support to display additional information of shape data.
 
-**Shapes Color Customization**
+##Shapes Color Customization
 
 The Map control highly supports the customization of the shape’s color. The shape’s color can be customized using the following ways:
 
@@ -21,7 +21,7 @@ The Map control highly supports the customization of the shape’s color. The sh
 
 3. Color Palette support.
 
-**Shape Settings** 
+##Shape Settings
 
 The **shapeSettings** defines the basic customization settings of shapes in the map. 
 
@@ -72,7 +72,7 @@ The above properties of **shapeSettings** are applied only when **autoFill** pro
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img1.png" Caption="Map"%}
 
-**Color Mapping**
+##Color Mapping
 
 The **Color Mapping** support enables the customization of shape colors based on the underlying value of shape received from bounded data.
 
@@ -289,11 +289,11 @@ Here USA election data is considered as input datasource and stored in “electi
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img3.png" Caption="Map with fill color"%}****
 
-**Color Palette**
+## autoFil
 
 When **autoFill** property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
 
-**colorPalette**
+##colorPalette
 
 The **colorPalette** property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
@@ -322,7 +322,7 @@ The **colorPalette** property can be set with palette1, palette2, palette3 and c
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img4.png" Caption="Map with color palette property"%}
 
-**Custom Palette**
+##Custom Palette
 
 The **customPalette** property is used to set an array of colors to be auto filled in shapes.
 
@@ -355,7 +355,7 @@ This property is enabled only when **colorPalette** property value is set to “
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img5.png" Caption="Map with custom palette"%}
 
-**Tooltip**
+##Tooltip
 
 The tooltip is displayed only when you set showTooltip to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the valuePath and displays its content on hovering the corresponding shape. 
 
@@ -383,7 +383,7 @@ The tooltip is displayed only when you set showTooltip to “True” in the shap
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img6.png" Caption="Map with Tooltip"%}
 
-**Tooltip Template**
+##Tooltip Template
 
 The tooltipTemplate property is used for customizing the template for tooltip.
 
