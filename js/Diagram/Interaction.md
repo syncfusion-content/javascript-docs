@@ -48,8 +48,6 @@ rotateTool</td><td>
 Allow you to rotate nodes</td></tr>
 </table>
 
-_Tool_
-
 The following code illustrates how to activate and deactivate the desired tool
 
 {% highlight js %}
@@ -172,8 +170,6 @@ enableMultipleSelection</td><td>
 boolean</td><td>
 Gets or sets whether the User handle is enabled for  multiple selection </td></tr>
 </table>
-
-_User Handle_
 
 The following example describes how to create **delete user handle** in diagram.
 
@@ -348,8 +344,6 @@ Ctrl+MouseScroll</td><td>
 Zoom(Zoom in/Zoom out the diagram)</td></tr>
 </table>
 
-_Keyboard_
-
 ## Touch
 
 **Touch** support for Diagram view has the following features:
@@ -404,8 +398,6 @@ snapConstraints</td><td>
 ej.datavisualization.Diagram.SnapConstraints</td><td>
 Gets or sets whether snapping to gridlines option is enabled or not</td></tr>
 </table>
-
-_SnapToGrid_
 
 ### Enable snapping 
 
