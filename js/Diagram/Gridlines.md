@@ -56,7 +56,6 @@ None</td><td>
 Disable all the constraints</td></tr>
 </table>
 
-_SnapConstraints_
 
 The following code illustrates how to show or hide gridlines using constraints
 
@@ -120,7 +119,6 @@ string</td><td>
 Gets or sets the line color of the gridlines</td></tr>
 </table>
 
-_Appearance_
 
 The following code illustrates how to customize the **Gridline appearance**.
 

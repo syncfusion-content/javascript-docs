@@ -333,7 +333,6 @@ By default, Connections are routed based on the chart type and orientations. Thi
 true</td></tr>
 </table>
 
-_Properties of argument "option"_
 
 ### Orientations
 
@@ -385,7 +384,6 @@ Vertically arranges the children at both left and right sides of parent</td><td>
 <img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png" alt="" width="151pt" height="103pt"/></td></tr>
 </table>
 
-_Chart Orientations and Chart Types_
 
 Following code example illustrates how to set the horizontal right arrangement to the leaf level trees.
 

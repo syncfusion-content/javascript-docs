@@ -108,8 +108,7 @@ End Event</td><td>
 -----</td></tr>
 </table>
 
-_Events_
-
+**Representation of different BPMN events**
 <table>
 <tr>
 <td>
@@ -137,8 +136,7 @@ End</td><td>
 <img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img8.png" alt="" width="63pt" height="62pt"/></td></tr>
 </table>
 
-_Representation of different BPMN events_
-
+**Representation of event trigger states**
 <table>
 <tr>
 <td>
@@ -182,8 +180,6 @@ Parallel</td><td>
 <img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img17.png" alt="" width="58pt" height="54pt"/></td></tr>
 </table>
 
-_Representation of event trigger states_
-
 ### Gateway
 
 Gateway is used to control the flow of a process. It is represented as a diamond shape. There are several types in Gateway. They are listed as follows.
@@ -206,6 +202,7 @@ var node = {
 };
 {% endhighlight %}
 
+**Types of Gateway**
 <table>
 <tr>
 <td>
@@ -232,8 +229,6 @@ Complex Gateway</td><td>
 Event Based</td><td>
 <img src="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img22.png" alt="" width="68pt" height="68pt"/></td></tr>
 </table>
-
-_Types of Gateway_
 
 ### Activity
 
@@ -273,8 +268,6 @@ There are two types in activity. They are listed as follows.
 <b>&#10003;</b></td><td>
 <b>&#10003;</b></td></tr>
 </table>
-
-_Activity Type_
 
 The following code example illustrate how to create activity in BPMN shape.
 
