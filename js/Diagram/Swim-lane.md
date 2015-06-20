@@ -73,8 +73,6 @@ array</td><td>
 Gets or sets the phases as collection.</td></tr>
 </table>
 
-_Swim lane Properties_
-
 ## Lane
 
 The lane is an object that controls the diagram elements in the swim lane. Lane has the following properties.
@@ -107,8 +105,6 @@ string</td><td>
 Gets or sets the orientation of the swim lane.</td></tr>
 </table>
 
-_Lane Properties_
-
 ## Header
 
 This is used to define header for a swim lane. It has the following properties.
@@ -130,8 +126,6 @@ text</td><td>
 string</td><td>
 Gets or sets the text value for the header.</td></tr>
 </table>
-
-_Header Properties_
 
 ## Phase
 
@@ -174,8 +168,6 @@ parent</td><td>
 string</td><td>
 Gets or sets the parent of the phase</td></tr>
 </table>
-
-_Phase Properties_
 
 The following code illustrates how to create a simple **swim lane**.
 
