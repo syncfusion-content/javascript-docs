@@ -77,7 +77,6 @@ Rotate</td><td>
 <img src="/js/Diagram/Group_images/Group_img8.png" alt="" width="190pt" height="188pt"/></td></tr>
 </table>
 
-_Editing a Group_
 
 ## Layout Panel
 
@@ -146,7 +145,6 @@ number</td><td>
 Gets or sets the right padding value of the group.</td></tr>
 </table>
 
-_Group properties_
 
 ### Canvas Panel
 
