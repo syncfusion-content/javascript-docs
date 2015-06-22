@@ -178,6 +178,7 @@ var node =
    {
       type: "swimlane",
       name: "swimlane",
+      
       //initialize swimlane header
       header: {
          text: "HEADER",
@@ -185,49 +186,42 @@ var node =
          fillColor: "#C7D4DF",
          fontSize: 11
       },
+      
       fillColor: "#f5f5f5",
       orientation: "horizontal",
       offsetX: 350,
       offsetY: 290,
       height: 100,
       width: 450,
+      
       //add lanes
       lanes: [{
          name: "stackCanvas1",
+         fillColor: "#f5f5f5",
+         height: 120,
+         
          header: {
             text: "HEADER",
             width: 50,
             fillColor: "#C7D4DF",
             fontSize: 11
-         },
-         fillColor: "#f5f5f5",
-         height: 120,
+         },         
+         
          children: [{
-            shape: {
-               type: "path",
-               pathData: pathData
-            },
+            shape: { type: "path", pathData: pathData },
             name: "Node1",
-            labels: [{
-               text: "Node1",
-               fontSize: 11
-            }],
+            labels: [{ text: "Node1", fontSize: 11 }],
             marginLeft: 100,
             marginTop: 10,
          }, {
-            shape: {
-               type: "path",
-               pathData: pathData
-            },
+            shape: { type: "path", pathData: pathData },
             name: "Node2",
-            labels: [{
-               text: "Node2",
-               fontSize: 11
-            }],
+            labels: [{ text: "Node2", fontSize: 11 }],
             marginLeft: 250,
             marginTop: 10,
          }]
       }],
+      
       phases: [],
       phaseSize: 20,
    }

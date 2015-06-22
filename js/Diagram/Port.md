@@ -38,45 +38,35 @@ The connection between specific ports on the node is established by assigning th
 
 {% highlight js %}
 //create nodes with ports
-var nodes = [{
-   name: "node1",
-   offsetX: 300,
-   offsetY: 300,
-   width: 100,
-   height: 100,
-   ports: [{
-      name: "port1",
-      offset: { x: 0, y: 0.5 }
-   }, {
-      name: "port2",
-      offset: { x: 0.5, y: 0 }
-   }, {
-      name: "port3",
-      offset: { x: 1, y: 0.5 }
-   }, {
-      name: "port4",
-      offset: { x: 0.5, y: 1 }
-   }]
-}, {
-   name: "node2",
-   offsetX: 450,
-   offsetY: 500,
-   width: 100,
-   height: 100,
-   ports: [{
-      name: "port1",
-      offset: { x: 0, y: 0.5 }
-   }, {
-      name: "port2",
-      offset: { x: 0.5, y: 0 }
-   }, {
-      name: "port3",
-      offset: { x: 1, y: 0.5 }
-   }, {
-      name: "port4",
-      offset: { x: 0.5, y: 1 }
-   }]
-}];
+var nodes = [
+    {
+        name: "node1",
+        offsetX: 300,
+        offsetY: 300,
+        width: 100,
+        height: 100,
+        ports: [
+            { name: "port1", offset: { x: 0, y: 0.5 } },
+            { name: "port2", offset: { x: 0.5, y: 0 } },
+            { name: "port3", offset: { x: 1, y: 0.5 } },
+            { name: "port4", offset: { x: 0.5, y: 1 } }
+        ]
+    },
+    {
+        name: "node2",
+        offsetX: 450,
+        offsetY: 500,
+        width: 100,
+        height: 100,
+        ports: [
+            { name: "port1", offset: { x: 0, y: 0.5 } },
+            { name: "port2", offset: { x: 0.5, y: 0 } },
+            { name: "port3", offset: { x: 1, y: 0.5 } },
+            { name: "port4", offset: { x: 0.5, y: 1 } }
+        ]
+    }
+];
+
 
 //create connector and connect ports
 var connector = {
