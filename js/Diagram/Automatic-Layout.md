@@ -209,10 +209,10 @@ Following table illustrates the properties that “options” argument takes.
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Description</b></td><td>
-<b>Default Value</b></td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 options.children</td><td>
@@ -268,11 +268,11 @@ Following table illustrates the different chart orientations and chart types.
 
 <table>
 <tr>
-<td>
-<b>Orientation</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td><td>
-<b>Example</b></td></tr>
+<th>
+Orientation</th><th>
+Type</th><th>
+Description</th><th>
+Example</th></tr>
 <tr>
 <td rowspan = "3">
 Horizontal</td><td>

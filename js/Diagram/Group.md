@@ -57,7 +57,7 @@ To edit a group, select the corresponding group. You can apply the following fea
 <tr>
 <th>
 Editing Options</th><th>
-Before </th><th>
+Before</th><th>
 After</th></tr>
 <tr>
 <td>

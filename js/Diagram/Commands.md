@@ -28,7 +28,7 @@ There are several commands available in diagram. They are listed as follows.
 
 <table>
 <tr>
-<td>
+<th>
 Command</th><th>
 Parameter</th><th>
 Description</th></tr>
@@ -85,7 +85,7 @@ diagram.align("middle");
 
 <table>
 <tr>
-<td>
+<th>
 Command</th><th>
 Description</th></tr>
 <tr>
@@ -131,7 +131,7 @@ diagram.spaceDown();
 
 <table>
 <tr>
-<td>
+<th>
 Command</th><th>
 Description</th></tr>
 <tr>
@@ -336,7 +336,7 @@ function ZoomOut() {
 
 <table>
 <tr>
-<td>
+<th>
 Command</th><th>
 Parameter</th><th>
 Description</th></tr>
@@ -373,7 +373,7 @@ The corresponding arrow keys are used to move the selected elements to up, down,
 
 <table>
 <tr>
-<td>
+<th>
 Command</th><th>
 Parameter</th><th>
 Description</th></tr>
@@ -411,7 +411,7 @@ diagram.fitToPage("page", "content", {
 
 <table>
 <tr>
-<td>
+<th>
 Mode</th><th>
 Description</th></tr>
 <tr>

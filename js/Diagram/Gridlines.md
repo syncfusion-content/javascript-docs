@@ -93,10 +93,10 @@ You can customize the **Appearance** of the gridlines using following properties
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 lineInterval</td><td>

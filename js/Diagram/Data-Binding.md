@@ -19,9 +19,9 @@ The **DataSourceSettings** property of **Diagram** includes the required data so
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 dataSource</td><td>

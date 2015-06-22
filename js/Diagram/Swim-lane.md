@@ -9,226 +9,127 @@ documentation: ug
 
 # Swim lane 
 
-A swim lane is a visual element used in process flow diagrams or flowcharts. A typical swim lane contains a header, and a collection of lanes that can be arranged horizontally or vertically.
+Swim-lane diagrams are typically used to visualize a relationship between a business process and the department responsible for it by focusing on the logical relationships between activities. Swim lanes may be arranged either horizontally or vertically.
 
 {% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img1.png" %}
 
-**Swim lane** shape contains the following properties.
+The following steps illustrates how to create a simple **swim lane**.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Data type</th><th>
-Description</th></tr>
-<tr>
-<td>
-header</td><td>
-object</td><td>
-Gets or sets the header value of the swim lane.</td></tr>
-<tr>
-<td>
-orientation</td><td>
-string</td><td>
-Gets or sets the orientation of the swim lane.</td></tr>
-<tr>
-<td>
-offset</td><td>
-number</td><td>
-Gets or sets the offsetX value of the swim lane.</td></tr>
-<tr>
-<td>
-offset</td><td>
-number</td><td>
-Gets or sets the offsetY value of the swim lane.</td></tr>
-<tr>
-<td>
-minHeight</td><td>
-number</td><td>
-Gets or sets the minHeight value of the swim lane.</td></tr>
-<tr>
-<td>
-minWidth</td><td>
-number</td><td>
-Gets or sets the minWidth value of the swim lane.</td></tr>
-<tr>
-<td>
-maxHeight</td><td>
-number</td><td>
-Gets or sets the maxHeight value of the swim lane.</td></tr>
-<tr>
-<td>
-maxWidth</td><td>
-number</td><td>
-Gets or sets the maxWidth value of the swim lane.</td></tr>
-<tr>
-<td>
-lanes</td><td>
-array</td><td>
-Gets or sets the lanes as collection.</td></tr>
-<tr>
-<td>
-phases</td><td>
-array</td><td>
-Gets or sets the phases as collection.</td></tr>
-</table>
-
-## Lane
-
-The lane is an object that controls the diagram elements in the swim lane. Lane has the following properties.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Data type</th><th>
-Description</th><th></tr>
-<tr>
-<td>
-header</td><td>
-object</td><td>
-Gets or sets the lane header.</td></tr>
-<tr>
-<td>
-name</td><td>
-string</td><td>
-Gets or sets the name of the header.</td></tr>
-<tr>
-<td>
-children</td><td>
-array</td><td>
-Gets or set the child nodes as collection.</td></tr>
-<tr>
-<td>
-orientation</td><td>
-string</td><td>
-Gets or sets the orientation of the swim lane.</td></tr>
-</table>
-
-## Header
-
-This is used to define header for a swim lane. It has the following properties.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Data type</th><th>
-Description</th></tr>
-<tr>
-<td>
-width</td><td>
-number</td><td>
-Gets or sets the width of the header.</td></tr>
-<tr>
-<td>
-text</td><td>
-string</td><td>
-Gets or sets the text value for the header.</td></tr>
-</table>
-
-## Phase
-
-A Phase is a line that separates the swim lane. Phase has following properties.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Data type</th><th>
-Description</th></tr>
-<tr>
-<td>
-name</td><td>
-string</td><td>
-Gets or set the name of the phase.</td></tr>
-<tr>
-<td>
-offset</td><td>
-number</td><td>
-Gets or set the offset value of the phase.</td></tr>
-<tr>
-<td>
-lineWidth</td><td>
-number</td><td>
-Gets or set the stroke width of the phase.</td></tr>
-<tr>
-<td>
-lineDashArray</td><td>
-string</td><td>
-Gets or set the stroke dash array of the phase.</td></tr>
-<tr>
-<td>
-lineColor</td><td>
-string</td><td>
-Gets or set the stroke colour of the phase.</td></tr>
-<tr>
-<td>
-parent</td><td>
-string</td><td>
-Gets or sets the parent of the phase</td></tr>
-</table>
-
-The following code illustrates how to create a simple **swim lane**.
-
+## Creating a Swim Lane 
+Creating a swim lane is as simple as adding a node with some nested properties. Just add an object in the node’s collection with the type as swimlane and specify its name, orientation, size, and position. The swim lane cannot be blank; therefore, lanes and phases have to be added.
 {% highlight js %}
-var nodes = [];
-var node =
-   //creating the swimlane and set its type as swimlane
-   {
+var swimlane = {
+      
+      // Type is used to identify which kind of node is added in the model.
       type: "swimlane",
-      name: "swimlane",
       
-      //initialize swimlane header
-      header: {
-         text: "HEADER",
-         height: 50,
-         fillColor: "#C7D4DF",
-         fontSize: 11
-      },
+      // Name is used as a unique identifier of the object.
+      name: "swimlaneNode",
       
-      fillColor: "#f5f5f5",
+      // Orientation is used to set the orientation.
       orientation: "horizontal",
-      offsetX: 350,
-      offsetY: 290,
-      height: 100,
-      width: 450,
       
-      //add lanes
-      lanes: [{
-         name: "stackCanvas1",
-         fillColor: "#f5f5f5",
-         height: 120,
-         
-         header: {
-            text: "HEADER",
+      // These specify the swim lane’s dimensions.
+      offsetX: 400,
+      offsetY: 200,
+      height: 100,
+      width: 700,
+}
+{% endhighlight %}
+## Adding Lanes 
+Any number of lanes can be added by using the lanes collection, as shown in the following code. To visualize the lanes, each lane’s size and color have to be specified.
+{% highlight js %}
+var swimlane = {
+    type: "swimlane",
+    //...
+
+    // Adds lanes by using the lanes collection.
+    lanes: [{
+        name: "lane1",
+        fillColor: "#f5f5f5",
+        height: 120
+    }]
+}
+{% endhighlight %}
+## Adding Phases 
+Any number of phases can be added by using the phases collection, as shown in the following code. Offset is used to define the phase’s distance from the left side of the lane or from the previous phase.
+{% highlight js %}
+var swimlane = {
+    type: "swimlane",
+    //...
+
+    // Adds phases by using the phases collection.
+    phases: [{
+        name: "phase1",
+        offset: 300,
+    }]
+}
+{% endhighlight %}
+## Specifying headers 
+By using the header property, headers can be added to lanes and phases of the swim lane.
+{% highlight js %}
+var swimlane = {
+    type: "swimlane",
+    name: "swimlaneNode",
+    orientation: "horizontal",
+    offsetX: 400,
+    offsetY: 200,
+    height: 100,
+    width: 700,
+
+    //Initializes swim-lane header.
+    header: {
+        text: "Swimlane",
+        height: 50,
+        fillColor: "#C7D4DF",
+        fontSize: 11
+    },
+
+    lanes: [{
+        name: "lane1",
+        fillColor: "#f5f5f5",
+        height: 120,
+
+        //Initializes lane header.
+        header: {
+            text: "Lane",
             width: 50,
             fillColor: "#C7D4DF",
             fontSize: 11
-         },         
-         
-         children: [{
-            shape: { type: "path", pathData: pathData },
-            name: "Node1",
-            labels: [{ text: "Node1", fontSize: 11 }],
-            marginLeft: 100,
-            marginTop: 10,
-         }, {
-            shape: { type: "path", pathData: pathData },
-            name: "Node2",
-            labels: [{ text: "Node2", fontSize: 11 }],
-            marginLeft: 250,
-            marginTop: 10,
-         }]
-      }],
-      
-      phases: [],
-      phaseSize: 20,
-   }
+        }
+    }],
 
-nodes.push(node);
-//add nodes to Diagram
-$("#Diagram").ejDiagram({
-   nodes: nodes
-});
+    phases: [{
+        name: "Phase1",
+        offset: 300,
+        //Initializes labels for phases.
+        label: { text: "Phase1" }
+    }, {
+        name: "Phase2",
+        label: { text: "Phase2" }
+    }]
+}
 {% endhighlight %}
+The following screenshot is the swim lane generated from the example code.
+{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img2.png" %}
+## Adding Nodes into the Lane 
+Now that the overall swim-lane skeleton is ready, add a node into the lane programmatically.
+{% highlight js %}
+var swimlane = {
+    type: "swimlane",
+    //...
+    lanes: [{
+        //... 
+        // Adds a node into a lane.
+        children: [{
+            name: "node1",
+            labels: [{ text: "Node", fontSize: 11 }],
+            marginLeft: 70,
+            marginTop: 1,
+        }],
+    }]
+}
+{% endhighlight %}
+After adding a node into a lane, the swim lane will display as follows.
+{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img3.png" %}
+Nodes can also be added into the lanes interactively by dropping nodes onto the palette. Similarly connectors can also be added lane's children or from palette.
