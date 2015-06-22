@@ -27,6 +27,7 @@ Apply the plugin and property assigning the Diagram element through the directiv
    e-pagesettings-pageheight="pageSettings.pageHeight"
    e-pagesettings-pagewidth="pageSettings.pageWidth"></div>
 <div>
+      
    <!-- Renders a dropdown box to display a list of colors -->
    <input ej-dropdownlist e-datasource="pageColor" value="pageSettings.pageBackgroundColor" e-width="100px"/>
 </div>
@@ -44,13 +45,11 @@ angular.module('syncApp', ['ejangular'])
          };
          $scope.pvalue = 400;
          $scope.nodes = [];
-         $scope.pageColor = [{
-            text: "Black"
-         }, {
-            text: "White"
-         }, {
-            text: "Goldenrod"
-         }];
+         $scope.pageColor = [
+           { text: "Black" }, 
+           { text: "White" },
+           { text: "Goldenrod" }
+         ];
       });
 {% endhighlight %}
 
