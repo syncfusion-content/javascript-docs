@@ -23,8 +23,6 @@ Digital Gauge for Essential Studio encompasses the visualization of the segmente
 
 
 
-{% include image.html url="/js/DigitalGauge/Overview_images/Overview_img1.png" Caption="Digital Gauge"%}
-
 There are several other properties available in Digital Gauge which enable you to peform various customizations such as changing the space between the characters, segment width, segment length, spacing between the segments, and other customizations.
 
  **Key Features**
@@ -34,6 +32,4 @@ There are several other properties available in Digital Gauge which enable you t
 * **Background Image** - Provide support to add images as the background for the Digital Gauge.
 
 * **Custom Font** - Provide support to enable the custom font for text within the Digital Gauge.
-
-
 

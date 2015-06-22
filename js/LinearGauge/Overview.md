@@ -23,8 +23,6 @@ The Gauge control for Essential Studio displays numerical information in the for
 
 
 
-{% include image.html url="/js/LinearGauge/Overview_images/Overview_img1.png" Caption="Linear Gauge"%}
-
 Three basic scale designs available are : rectangle, rounded rectangle, and thermometer.
 
 **Key Features**

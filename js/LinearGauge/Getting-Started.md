@@ -17,7 +17,7 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img1.png" Caption="Thermometer"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
 
 **Create a Linear Gauge**
 
@@ -32,11 +32,11 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta charset="utf-8" />
-      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js"></script>
-  <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+  <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -71,7 +71,7 @@ $(function () {
 On executing the above code sample renders a default **Linear Gauge** with default values as follows.
 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img2.png" Caption="Default Linear Gauge"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
 **Set Height and Width values**
 
@@ -96,7 +96,7 @@ On executing the above code sample renders a default **Linear Gauge** with defau
 On executing the above code sample renders a default **Linear Gauge** with height and width.
 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img3.png" Caption="Default Linear Gauge with height and width"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
 **Set animate option and Label Color**
 
@@ -124,7 +124,7 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 On executing the above code sample renders a customized **Linear Gauge** as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img4.png" Caption="Customized Linear Gauge"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
 
 **Provide scale values**
 
@@ -174,7 +174,7 @@ $(function () {
 
 On executing the above code sample renders a customized gauge with ranges as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img5.png" Caption="Customized Gauge with ranges"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img5.png" Caption=""%}
 
 **Add pointers data**
 
@@ -217,7 +217,7 @@ In **Linear gauge** there are two types of pointers available such as marker poi
 
 On executing the above code sample renders a **Linear Gauge** with bar marker as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img6.png" Caption="Linear Gauge with bar marker"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
 
 **Add Label Customization**
 
@@ -261,7 +261,7 @@ On executing the above code sample renders a **Linear Gauge** with bar marker as
 
 On executing the above code sample renders a customized **Linear Gauge** as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img7.png" Caption="Customized Linear Gauge"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img7.png" Caption=""%}
 
 **Add Ticks Details**
 
@@ -321,7 +321,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 On executing the above code sample renders a **Linear Gauge** with custom labels as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img8.png" Caption="Figure 9: Linear Gauge with custom labels"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img8.png" Caption=""%}
 
 **Add Custom Label Details**
 
@@ -371,7 +371,7 @@ The following code example illustrates how to use custom texts.
 
 On executing the above code sample renders a customized **Linear Gauge** as follows. 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img9.png" Caption="Customized Linear Gauge"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img9.png" Caption=""%}
 
 **Change scale Degree to Fahrenheit**
 
@@ -407,7 +407,7 @@ On executing the above code sample renders a **Linear Gauge** with values in Deg
 
 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img10.png" Caption="Linear Gauge with values"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img10.png" Caption=""%}
 
 **Add Custom label for Current Value**
 
@@ -469,5 +469,5 @@ You can add the function that displays the current temperature value in the cust
 
 The following screen shot displays a linear gauge with all the customizations discussed earlier.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img11.png" Caption="Customized Linear Gauge"%}
+{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img11.png" Caption=""%}
 

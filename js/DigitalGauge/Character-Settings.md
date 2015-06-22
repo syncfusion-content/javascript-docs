@@ -41,7 +41,7 @@ The opacity of the character is adjustable with the help of **opacity** property
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Character-Settings_images/Character-Settings_img1.png" Caption="Digital Gauge control with character setting"%}
+{% include image.html url="/js/DigitalGauge/Character-Settings_images/Character-Settings_img1.png" Caption=""%}
 
 ## Count and Type
 
@@ -97,7 +97,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Character-Settings_images/Character-Settings_img2.png" Caption="Digital Gauge control with character type as seven segment"%}
+{% include image.html url="/js/DigitalGauge/Character-Settings_images/Character-Settings_img2.png" Caption=""%}
 
 ## Text Positioning
 
@@ -140,8 +140,7 @@ The text in the **Digital****Gauge** is positioned with position object. This ob
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
 
-
-{% include image.html url="/js/DigitalGauge/Character-Settings_images/Character-Settings_img3.png" Caption="Digital Gauge control with position text based on the background image"%}
+{% include image.html url="/js/DigitalGauge/Character-Settings_images/Character-Settings_img3.png" Caption=""%}
 
 ## Shadow Effects
 
@@ -183,5 +182,5 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Character-Settings_images/Character-Settings_img4.png" Caption="Digital Gauge control with shadow option"%}
+{% include image.html url="/js/DigitalGauge/Character-Settings_images/Character-Settings_img4.png" Caption=""%}
 

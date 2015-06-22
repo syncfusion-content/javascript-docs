@@ -65,7 +65,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img1.png" Caption="Linear Gauge with basic attributes"%}
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img1.png" Caption=""%}
 
 
 
@@ -125,7 +125,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img2.png" Caption="Linear Gauge with frame"%}
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img2.png" Caption=""%}
 
 
 
@@ -196,7 +196,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img3.png" Caption="Linear Gauge with themes and colors"%}
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img3.png" Caption=""%}
 
 
 
@@ -261,7 +261,7 @@ Execute the above code to render the following output.
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img4.png" Caption="Linear Gauge with responsive layout"%}
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img4.png" Caption=""%}
 
 
 
