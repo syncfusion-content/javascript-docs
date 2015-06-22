@@ -65,7 +65,7 @@ Create the **ejCircularGauge** widget as follows,
 
 On executing the above code, sample renders a default **Circular Gauge** with default values as follows.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img2.png" Caption="Circular Gauge"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
 **Set Height and Width values**
 
@@ -85,7 +85,7 @@ Pointers have different height and range. You can set the height and width of th
 
 The following screenshot displays a **Gauge** in which height and width are set.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img3.png" Caption="Circular Gauge"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
 **Set Background Color**
 
@@ -104,10 +104,9 @@ $("#CircularGauge1").ejCircularGauge({
 {% endhighlight %}
 
 
-
 The above code example renders a **Gauge** as shown in the following screen shot.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img4.png" Caption="Circular Gauge with background color"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
 
 **Provide scale values**
 
@@ -152,7 +151,7 @@ The above code example renders a **Gauge** as shown in the following screen shot
 
 On executing the above code, sample renders a **Circular Gauge** with customized labels as follows.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img5.png" Caption="Circular Gauge with scale values"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img5.png" Caption=""%}
 
 **Add Label Customization**
 
@@ -186,7 +185,7 @@ To display the values in the **Gauge,** scale labels are used. You can customize
 
 On executing the above code, sample renders a default **Circular Gauge** with customized labels as follows.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img6.png" Caption="Circular Gauge with Labels"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
 
 **Add pointer data**
 
@@ -252,7 +251,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 On executing the above code, sample renders a customized **Circular Gauge** as follows.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img7.png" Caption="Circular Gauge with Pointer"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img7.png" Caption=""%}
 
 **Add Tick Details**
 
@@ -296,7 +295,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 On executing the above code, sample renders a **Circular Gauge** with customized labels as follows.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img8.png" Caption="Circular Gauge with Tick details"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img8.png" Caption=""%}
 
 **Add Range Values**
 
@@ -352,7 +351,7 @@ Ranges denote the property of scale value in the speedometer. The color values o
 
 On executing the above code, sample renders a **Circular Gauge** with customized range as follows.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img9.png" Caption="Circular Gauge with range values"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img9.png" Caption=""%}
 
 **Add Indicator Details**
 
@@ -447,7 +446,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 On executing the above code, sample renders a **Circular Gauge** with customized indicators as follows.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img10.png" Caption="Circular Gauge with Customized Indicators"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img10.png" Caption=""%}
 
 **Add Custom Label Details**
 
@@ -509,5 +508,5 @@ You can specify the text in the **Gauge** using **Custom labels** and you can cu
 
 The following screenshot displays a **Circular Gauge** control with all customization properties.
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img11.png" Caption="Circular Gauge with Custom Label details"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img11.png" Caption=""%}
 

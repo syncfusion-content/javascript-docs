@@ -51,7 +51,7 @@ The following code example explains how to enable **ReadOnly** property in the S
 
 The following screenshot displays the **Schedule** control with ReadOnly property set to true,
 
-{% include image.html url="/js/Schedule/Appointment_images/Appointment_img1.png" Caption="schedule with Read Only property."%}
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img1.png" Caption=""%}
 
 
 
@@ -91,7 +91,7 @@ When the appointment is saved, the **Schedule** control displays the created app
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img5.png" Caption="schedule with appointment saved using quick appointment window."%}
 
 
-> Important: We have a property named showQuickWindow that accepts Boolean value and set as true by default. When this property is set to false, it prevents the display of quick appointment window while single clicking on the Schedule cells or appointments. Thus the functionality of showing/hiding this quick window from the user depends on the value of this particular property.
+> **Important**: We have a property named showQuickWindow that accepts Boolean value and set as true by default. When this property is set to false, it prevents the display of quick appointment window while single clicking on the Schedule cells or appointments. Thus the functionality of showing/hiding this quick window from the user depends on the value of this particular property.
 
 
 
@@ -105,7 +105,7 @@ When the appointment is saved, the **Schedule** control displays the created app
 The following screenshot displays the **Context****menu** with a “**New Appointment**” option that is opened when you right-click on the cells.
 
 
-{% include image.html url="/js/Schedule/Appointment_images/Appointment_img6.png" Caption="schedule with new appointment using context menu."%}
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img6.png" Caption=""%}
 
 
 ## Appointment Editing
@@ -152,7 +152,7 @@ In the above screenshot, the end-time is changed to 8.00 AM from 7.00 AM. Once i
 
 The following screenshot displays the **Edit Appointment** window that opens when you click **Open****Appointment** option.
 
-{% include image.html url="/js/Schedule/Appointment_images/Appointment_img13.png" Caption="schedule with display the edit appointment window."%}
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img13.png" Caption=""%}
 
 * Click **Done** button to save the updated values.
 

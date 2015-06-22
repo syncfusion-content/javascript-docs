@@ -48,7 +48,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img1.png" Caption="Circular Gauge with basic interaction property"%}
+{% include image.html url="/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img1.png" Caption=""%}
 
 **Animations**
 
@@ -78,5 +78,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img2.png" Caption="Circular Gauge with basic Animation property"%}
+{% include image.html url="/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img2.png" Caption=""%}
 

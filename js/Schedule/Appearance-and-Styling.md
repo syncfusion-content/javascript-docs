@@ -104,7 +104,7 @@ For **Adaptive Schedule**, you can refer to the following **css** file in the ap
 
 The following screenshot displays the **Schedule** control with all-day row hidden,
 
-{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Schedule with disabled all day row."%}
+{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption=""%}
 
 
 **Adjust Schedule Size**
@@ -150,7 +150,7 @@ The following code eample explains how to change the height of the Schedule cont
 The following screenshot displays the **Schedule** control with the height set to “500px”. 
 
 
-{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="Adjusting schedule size height."%}
+{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption=""%}
 
 **width**
 
@@ -195,7 +195,7 @@ $(function () {
 The following screenshot displays the **Schedule** control with the width set to “600px”.
 
 
-{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="Adjusting schedule size width."%}
+{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption=""%}
 
 **Adjust Cell Size**
 
@@ -252,7 +252,7 @@ The following code example explains how to change the cell height and width of t
 
 The following screenshot displays the **Schedule** control with the cell width set to “160px” and cell height set to “60px”.
 
-{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="Schedule with modified cellHeight and cellWidth."%}
+{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption=""%}
 
 
 
@@ -306,4 +306,4 @@ Replace the following code in Create Schedule Step1 to apply different theme to 
 
 The schedule control will render as follows
 
-{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption="Schedule with applied theme."%}
+{% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption=""%}

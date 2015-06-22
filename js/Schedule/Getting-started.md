@@ -19,7 +19,7 @@ documentation: ug
 
 The following screenshot displays the **Schedule** control with daily important activities
 
-{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img1.png" Caption="Schedule Control with Daily Important Activities."%}
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img1.png" Caption=""%}
 
 
 
@@ -82,7 +82,7 @@ $(function () {
 
 You can run the above code example and an empty **Scheduler** is displayed without appointments. In order, to display the appointments in the **Schedule**, you need to pass data to it. 
 
-{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img2.png" Caption="Empty Scheduler without Appointments."%}
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img2.png" Caption=""%}
 
 
 **Pass data to Schedule control**
@@ -142,7 +142,7 @@ When the **DataSource** property is assigned with the specific service **URL**, 
 
 The following screenshot displays a **Schedule** control with the appointments in a normal style.
 
-{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img3.png" Caption="Schedule Control with Appoinments in Simple Style."%}
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img3.png" Caption=""%}
 
 
 You can also customize the appointments within the **Scheduler** using the **template** support discussed in the following sections.
@@ -220,13 +220,13 @@ $(function () {
 {% endhighlight %}
 
 
-> Important: The images in the above code snippet are taken from the installation location of the Essential JavaScript Studio in your machine,
+> **Important**: The images in the above code snippet are taken from the installation location of the Essential JavaScript Studio in your machine,
 > For example: $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.43\JavaScript\samples\web\images\schedule
-> You can create a folder named “Images” in the same location as your newly created HTML file and then move all the images from the installation folder to the newly created “Images” folder. This helps you in referring appointments appropriately within the Schedule control.
+> You can create a folder named "Images" in the same location as your newly created HTML file and then move all the images from the installation folder to the newly created “Images” folder. This helps you in referring appointments appropriately within the Schedule control.
 
 Once you set the template for the appointments, the **Scheduler** is displayed with the customized appointments as shown in the following screenshot.
 
-{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img4.png" Caption="Scheduler with Customized Appointments."%}
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img4.png" Caption=""%}
 
 
 
@@ -309,7 +309,7 @@ Once you set the template for the appointments, the **Scheduler** is displayed w
 
 When you execute the above code example, a **Scheduler** is displayed as follows with the fixed appointment height in a **month** view. 
 
-{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img5.png" Caption="Scheduler with the fixed appointment height in a month view."%}
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img5.png" Caption=""%}
 
 
 
@@ -405,7 +405,7 @@ When you execute the above code example, a **Scheduler** is displayed as follows
 
 After setting the height for appointments in **month** view, the **Schedule** control is rendered as follows,
 
-{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img6.png" Caption="Scheduler with appointments in month view."%}
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img6.png" Caption=""%}
 
 
 **Manipulate the Appointments**
@@ -418,7 +418,7 @@ After setting the height for appointments in **month** view, the **Schedule** co
 
 
 
-> Important: While adding new appointments to the Schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.
+> **Important**: While adding new appointments to the Schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.
 
 
 
@@ -433,7 +433,7 @@ The following screenshot illustrates a quick appointment pop-up window.
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img8.png" Caption="Quick Appointment Pop-up Window."%}
 
 
-> Important: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.
+> **Important**: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.
 
 
 * The event named **appointmentSaved** is triggered while saving a new appointment to the **Schedule** control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 
@@ -480,7 +480,7 @@ Click **Done**. The recurrence appointment with daily pattern is created for eve
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img14.png" Caption="recurrence appointment with daily pattern."%}
 
 
-* You can store the chosen recurrence options usually in a **RecurrenceRule** field in a string format.  Also, the **Recurrence** field indicates whether the appointments created are normal or recurrence type. You can create appointments in a **recurrence** type by setting **Boolean** type to **“True”**.
+* You can store the chosen recurrence options usually in a **RecurrenceRule** field in a string format.  Also, the **Recurrence** field indicates whether the appointments created are normal or recurrence type. You can create appointments in a **recurrence** type by setting **Boolean** type to **True**.
 
 **Edit/Delete Recurrence Appointment**
 

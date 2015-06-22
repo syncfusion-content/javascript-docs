@@ -114,7 +114,7 @@ The following code example illustrates on how to render priority feature in theÂ
 
 On executing the above specified code the Priority field will be added in the create appointment window as follows:
 
- {% include image.html url="/js/Schedule/Priority_images/Priority_img1.png" Caption="schedule with priority."%}
+ {% include image.html url="/js/Schedule/Priority_images/Priority_img1.png" Caption=""%}
 
 
 
@@ -262,7 +262,7 @@ Similarly you can use the image tag directly in the template. Following code sni
 
 On excuting the above mentioned codes will render the same output as follows.
 
- {% include image.html url="/js/Schedule/Priority_images/Priority_img2.png" Caption=""%}
+ {% include image.html url="/js/Schedule/Priority_images/Priority_img2.png" Caption="Pop-up dialog with list of priorities available"%}
 
 
 {% include image.html url="/js/Schedule/Priority_images/Priority_img3.png" Caption="schedule with customised priority."%}

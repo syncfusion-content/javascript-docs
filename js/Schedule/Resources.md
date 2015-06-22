@@ -170,7 +170,7 @@ The following code example explains how to render the multiple resources on the 
 
 The output of the above code looks as follows.
 
- {% include image.html url="/js/Schedule/Resources_images/Resources_img1.png" Caption="schedule with multiple resource."%}
+ {% include image.html url="/js/Schedule/Resources_images/Resources_img1.png" Caption=""%}
 
 
 **Resource Grouping**
@@ -315,12 +315,12 @@ The above specified resource related fields are require to  bound to the resourc
 
 Execute the above code to render the output as follows.
 
-{% include image.html url="/js/Schedule/Resources_images/Resources_img2.png" Caption="schedule with resource grouping."%}
+{% include image.html url="/js/Schedule/Resources_images/Resources_img2.png" Caption=""%}
 
 
 **Multiple Appointment Creation**
 
-* The “**allowMultiple**” option available for each resource object within the resource collection enables/disables the functionality of saving same appointment for multiple resources. 
+* The **allowMultiple** option available for each resource object within the resource collection enables/disables the functionality of saving same appointment for multiple resources. 
 
 * When this property is set to true, the resource related fields in the appointment window allows you to select multiple resources. Refer the following code example.
 

@@ -157,7 +157,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img3.png" Caption="Schedule with horizontal multiple resources."%}
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img3.png" Caption=""%}
 
 
 **Horizontal Resource Grouping**
@@ -237,4 +237,4 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img4.png" Caption="Schedule with horizontal resource grouping."%}
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img4.png" Caption=""%}
