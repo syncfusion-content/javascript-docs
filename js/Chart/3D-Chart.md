@@ -11,37 +11,14 @@ documentation: ug
 
 Now **EJChart** allows you to create stunning **3D Charts** for Bar, Column, StackingBar, StackingColumn, Pie and Doughnut series. The representation of data in **3D Chart** is very clear and easy to understand when compared to 2D charts. Three dimensions of the series are seen by rotating them. The following properties enhance the perception of **3D Charts**.
 
-**enable3D**
-
-The property **enable3D** renders **3D Charts** and accepts only the **Boolean** values.
-
-**wallSize**
-
-In **3D**, Cartesian axes lines are represented as walls. The property **wallSize** defines the width of the wall. The **wallSize** property does not support for **3D** Pie or Doughnut series because they do not have Cartesian axes lines. 
-
-**depth**
-
-The **depth** property defines the depth of the **3D Chart** from front view of the series to wall.
-
-**tilt**
-
-The **tilt** property defines the angle of the slope of **3D Chart**. The positive and negative values declare the side where the slope is present.
-
-**rotation**
-
-The **rotation** property is used to spin the **3D chart**. The direction of the spin depends upon the positive and negative values of **rotation** property.
-
-**enableRotation**
-
-The **enableRotation** property allows rotation of **the 3D Chart** dynamically by dragging the mouse on **3D Chart**. Accepting value of this property is **Boolean**.
-
-**perspectiveAngle**
-
-The **perspectiveAngle** declares the appearance of the height, width, depth and wall of the **3D Chart**. When the **perspectiveAngle** is decreased, the **3D** object appears closer to viewer. But when it is increased, the **3D** object appears far away from the viewer.
-
-**sideBySideSeriesPlacement**
-
-The **sideBySideSeriesPlacement** property defines the appearance of the different sets of data on **3D Chart.** When it is set to **true**, the data is displayed side by side, otherwise it is displayed one by one.
+* **enable3D**-The property **enable3D** renders **3D Charts** and accepts only the **Boolean** values.
+* **wallSize**-In **3D**, Cartesian axes lines are represented as walls. The property **wallSize** defines the width of the wall. The **wallSize** property does not support for **3D** Pie or Doughnut series because they do not have Cartesian axes lines.
+* **depth**-The **depth** property defines the depth of the **3D Chart** from front view of the series to wall.
+* **tilt**-The **tilt** property defines the angle of the slope of **3D Chart**. The positive and negative values declare the side where the slope is present.
+* **rotation**-The **rotation** property is used to spin the **3D chart**. The direction of the spin depends upon the positive and negative values of **rotation** property.
+* **enableRotation**-The **enableRotation** property allows rotation of **the 3D Chart** dynamically by dragging the mouse on **3D Chart**. Accepting value of this property is **Boolean**.
+* **perspectiveAngle**-The **perspectiveAngle** declares the appearance of the height, width, depth and wall of the **3D Chart**. When the **perspectiveAngle** is decreased, the **3D** object appears closer to viewer. But when it is increased, the **3D** object appears far away from the viewer.
+* **sideBySideSeriesPlacement**-The **sideBySideSeriesPlacement** property defines the appearance of the different sets of data on **3D Chart.** When it is set to **true**, the data is displayed side by side, otherwise it is displayed one by one.
 
 ## 3D Series Types
 

@@ -16,10 +16,7 @@ documentation: ug
 The **RangeNavigator** is composed of the following features: 
 
 * **Higher level label:** Contains a time span format one level higher than the lower level **DateTime** values. For example, if the higher level label contains the year format (yyyy), the lower level label contains the Quarter format.
-
 * **Lower level label:** Contains a time span format one level lower than the higher level **DateTime** values. For example, if the lower level label contains the Quarter format, the higher level label contains the year format (yyyy).
-
 * **Chart:** To represent the data in RangeNavigator.
-
 * **Slider:** To handle the selected data in RangeNavigator.
 

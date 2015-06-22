@@ -17,7 +17,7 @@ This section encompasses on how to configure the **Charts** for your business re
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img1.png" Caption="Chart"%}
 
-**Create a Chart**
+### Create a Chart
 
 Getting started with your **Essential JavaScript Chart** is very easy. You can start by creating a simple line **Chart**.
 
@@ -216,11 +216,8 @@ The following screenshot displays the Chart when **JSON** data is added.
 In the **Chart** when **JSON** is added, the axes are provided explicitly and **ejChart** initializes the right-axis based on the data type. You can also specify the axis type of your choice using **ValueType** option and customize the options available in the axes. The following axes types are supported:
 
 * **Category -**   String data can be plotted using **category** axis. Category axis can be initialized only as x-axis.
-
 * **Double -**   Numeric values can be plotted using **double** axis.
-
 * **Datetime -  DateTime** can be plotted using **datetime** axis. This type of axis can be initialized only as x-axis.
-
 * **logarithmic -**  Numeric values can be plotted using **logarithm** axis.
 
 You can use **primaryXAxis** and **primaryYAxis** options to initialize the axes. As the data contains string values along x-axis, you can set **valueType** as **category** for **primaryXAxis** and **double** for **primaryYAxis**. 

@@ -55,9 +55,7 @@ Chart gets data either locally or remotely. To populate the Chart with data, you
 You can bind the **ejChart** to remote data using **DataManager** and the **query** in series that is used to retrieve the data by creating queries. Data manager supports the following types of data binding.
 
 1. JSON
-
 2. Web Services
-
 3. oData
 
 The following code example illustrates binding **ejChart** to oData service.   

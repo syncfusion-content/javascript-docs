@@ -14,11 +14,8 @@ documentation: ug
 Chart Axis supports the following types:
 
 * Double
-
 * DateTime
-
 * Category
-
 * Logarithmic
 
 You can choose any of the Chart axis type using the” **valueType**” property in axis. Axis calculates the range and interval automatically based on the series data points.
@@ -120,17 +117,11 @@ The following screenshot illustrates a Chart’s x-axis with **rangePadding** se
 The **DateTime** Axis has a property **IntervalType** that sets the **DateTime** interval to one of the following:
 
 * Days
-
 * Hours
-
 * Milliseconds
-
-* Minutes 
-
+* Minutes
 * Months
-
 * Seconds
-
 * Years
 
 The **Interval** property of **DateTime** Axis can be any double value based on the **IntervalType**.
@@ -534,16 +525,14 @@ The axis labels are present along the axis **showing** the value of the data it 
 
 {% include image.html url="/js/Chart/Axis_images/axis_img18.png" Caption="Chart with Axis Labels"%}
 
-**LabelPlacement:**
+### LabelPlacement
 
 The category axis includes the **labelPlacement** property that is used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the **labelPlacement** value for the category axis is BetweenTicks.
 
 There are two types of **LabelPlacement**:
 
 * BetweenTicks
-
 * OnTicks
-
 
 
 {% highlight js %}
@@ -569,7 +558,7 @@ $("#chartcontainer").ejChart({
 
 {% include image.html url="/js/Chart/Axis_images/axis_img20.png" Caption="Chart with LabelPlacement BetweenTicks"%}
 
-**Label Position**
+### Label Position
 
 Axis labels can further be customized to render inside the chart area using the property **labelPosition**. By default, it is set as outside. This helps to display labels in a proper manner while multiple axes are used in the chart.
 
@@ -593,7 +582,7 @@ Axis labels can further be customized to render inside the chart area using the 
 
 {% include image.html url="/js/Chart/Axis_images/axis_img21.png" Caption="Label inside Chart"%}
 
-**Axis label trimming** 
+### Axis label trimming
 
 **Chart** provides support for trimming y axis labels and x axis labels by using the properties **enableTrim** and **maximumLabelWidth.** These are used to show the lengthy labels in a shorter form. On mouse hover, it shows the full label in the tooltip.
 
@@ -628,11 +617,11 @@ The following screenshot displays the **Chart Axis** with **trimming**.
 
 Tick lines are displayed horizontally and vertically in Chart axis based on the orientation of the axis.
 
-**Major Tick Lines**
+### Major Tick Lines
 
 It is rendered in Chart axis for each interval of axis range. By default, it is visible. You can collapse it by setting ‘**visible’** as **false**. You can customize the major tick lines width, opacity, and color.
 
-**Minor Tick Lines**
+### Minor Tick Lines
 
 It is rendered between the major tick lines of Chart axis. To display **minorTickLines** in Chart axis enable visible property of “**minorTickLines**” and set values to “**minorTicksPerInterval**” in the respective axis. By default, it is invisible. You can customize the minor tick lines width, and color.
 
@@ -670,7 +659,7 @@ It is rendered between the major tick lines of Chart axis. To display **minorTic
 
 {% include image.html url="/js/Chart/Axis_images/axis_img23.png" Caption="Chart with Tick lines"%}
 
-**Tick lines placement**
+### Tick lines placement
 
 You can customize tick lines and render them inside the chart area using the property **tickLinesPosition**. By default, it is set as outside. This property will be used when labels are inside.
 
@@ -696,11 +685,11 @@ You can customize tick lines and render them inside the chart area using the pro
 
 **Grid lines** are displayed in horizontal and vertical position in **Chart** area based on the intervals.
 
-**Major Grid Lines**
+### Major Grid Lines
 
 It is rendered in Chart area for each interval of axis range. By default, it is visible. You can collapse it by setting **‘visible’** property to **false**. You can customize the **major gridlines** width, opacity, and dashArray of gridline.
 
-**Minor Grid Lines**
+### Minor Grid Lines
 
 It is rendered between the **major gridlines** of Chart area.To display **minor grid lines** in Chart area enable visible property of “**minorGridLines**” and set values to “**minorTicksPerInterval**” in the respective axis. By default, ‘**visibile’** property is set to “**false**”. You can customize the **minor grid lines** width, and dashArray of gridline.
 
@@ -742,15 +731,15 @@ It is rendered between the **major gridlines** of Chart area.To display **minor 
 
 {% include image.html url="/js/Chart/Axis_images/axis_img25.png" Caption="Chart with Grid lines"%}
 
-**Alternate Grid Band**
+### Alternate Grid Band
 
 Grid Band is the distance between two adjacent major grid lines which are displayed in horizontal and vertical position.
 
-**Even Grid Band**
+### Even Grid Band
 
 Even Grid Band are counted from axes lines, i.e the band which is immediate adjacent for axes lines. By default, the even grid band color is transparent. You can highlight the even grid band by setting **fill** property of **even**. You can customize the **opacity** of the even grid band color.
 
-**Odd Grid Band**
+### Odd Grid Band
 
 Immediate adjacent band of every even grid bands are Odd Grid Bands**.** You can discriminate the odd grid band from even by setting **fill** property of **odd**. You can customize the **opacity** of the odd grid band color.
 
@@ -834,18 +823,11 @@ By default, the x-axis is arranged horizontally at the bottom of the Chart and t
 Sometimes the Chart dimensions could cause the labels to intersect. You can avoid overlapping labels using “**labelIntersectAction**” property of char axis. The Chart by default renders the texts one over the other. But, it also has some built-in capabilities to work around this overlap and lets you dictate the technique to follow. Refer to the following properties.
 
 * rotate45 – Rotate the labels to 45 degree.
-
-* rotate90 – Rotate the labels to 90 degree
-
+* rotate90 – Rotate the labels to 90 degree.
 * trim – Intersecting labels will be trim and mouse over the labels, it displays the trimmed text like tooltip.
-
-* multiplerows – Split the intersecting labels in to multiple rows and display on the axis
-
-* wrap – Wrap the intersecting text and display
-
+* multiplerows – Split the intersecting labels in to multiple rows and display on the axis.
+* wrap – Wrap the intersecting text and display.
 * hide – It doesn’t display the intersecting label texts on the axis.
-
-
 
 {% highlight js %}
 
@@ -863,8 +845,6 @@ Sometimes the Chart dimensions could cause the labels to intersect. You can avoi
 
 
 {% endhighlight %}
-
-
 
 {% include image.html url="/js/Chart/Axis_images/axis_img29.png" Caption="Chart with Smart Axis Labels"%}
 

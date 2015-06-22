@@ -43,7 +43,6 @@ You can plot **multiple****series** on the same Chart. Series are defined by add
 {% endhighlight %}
 
 
-
 {% include image.html url="/js/Chart/Series_images/Series_img1.png" Caption="Chart with Multiple Series"%}
 
 ### CommonSeriesOptions
@@ -91,11 +90,8 @@ You can specify the properties common to all series of the Chart in **commonSeri
 
 A combination Chart combines two or more Charts types in single Charts. For example, column series with line/spline series. There are some limitations in the combination series.
 
-1. You cannot combine Column and Bar series
-
+1. You cannot combine Column and Bar series.
 2. Pie, Doughnut Series cannot be used with other series types.
-
-
 
 {% highlight js %}
 

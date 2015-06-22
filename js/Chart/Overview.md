@@ -16,13 +16,9 @@ documentation: ug
 Some important features of **Chart** for Essential JavaScript are as follows:
 
 * **Chart Customization**—Easy customization options for each and every unit of **Chart** such as Chart area, Chart series and Chart legend.
-
 * **Chart Data Source**—Populate the **Chart** with any kind of data source.
-
 * **Chart Axis**—Supports multiple axes and datetime axis.
-
 * **Chart Series**—Highly customizable and interactive Chart series can be added to **Chart**.
-
 * **Advanced User Interactions**—Supports tooltip, zooming and panning, crosshair, and trackball.
 
 
