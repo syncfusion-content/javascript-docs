@@ -85,7 +85,7 @@ $("#Diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Page-Settings_images/Page-Settings_img1.jpg" %}
+{% include image.html url="/js/Diagram/Page-Settings_images/Page-Settings_img1.png" %}
 
 ## MultiplePage and PageBreaks
 

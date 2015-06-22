@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create a link between two nodes. A connector is a line that has connection points at the ends of the line and stays connected to the elements that you attach it to.
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img1.jpg"%}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img1.png"%}
 
 ## Create Connector
 
@@ -402,7 +402,7 @@ var connector = [{
 }];
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img17.jpeg" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img17.png" %}
 
 The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on **Source/Target Node** of Connector. In case of static or specific point connection at runtime, the **Port** assists to maintain specific point connection between Nodes.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical object that represents visual data to be placed on the page.
 
-{% include image.html url="/js/Diagram/Node_images/Node_img1.jpg" %}
+{% include image.html url="/js/Diagram/Node_images/Node_img1.png" %}
 
 ## Create Node
 
@@ -83,7 +83,7 @@ node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img3.jpg" %}
+{% include image.html url="/js/Diagram/Node_images/Node_img3.png" %}
 
 ### Html
 
@@ -146,7 +146,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img6.jpg" %}
+{% include image.html url="/js/Diagram/Node_images/Node_img6.png" %}
 
 ### Polygon
 
@@ -236,7 +236,7 @@ var node = {
 
 **Drop shadow effect** for a **node** can be enabled or disabled by using the **NodeConstraints.Shadow**. The following image represents the **drop shadow effect** for a **Node**.
 
-{% include image.html url="/js/Diagram/Node_images/Node_img10.jpg" %}
+{% include image.html url="/js/Diagram/Node_images/Node_img10.png" %}
 
 The following code example illustrates how to enable or disable the **shadow**.
 
@@ -268,7 +268,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img11.jpg" %}
+{% include image.html url="/js/Diagram/Node_images/Node_img11.png" %}
 
 ## Appearance
 
@@ -346,7 +346,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img12.jpg" %}
+{% include image.html url="/js/Diagram/Node_images/Node_img12.png" %}
 
 ## Constraints
 
@@ -449,7 +449,7 @@ The Default value for the node constraints property is **ej.datavisualization.Di
 node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img13.jpg" %}
+{% include image.html url="/js/Diagram/Node_images/Node_img13.png" %}
 
 The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
 
@@ -459,6 +459,6 @@ The following code illustrates how to disable rotate constraints. Disabling rota
 node.constraints = node.constraints & ~(ej.datavisualization.Diagram.NodeConstraints.Rotate);
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img14.jpg" %}
+{% include image.html url="/js/Diagram/Node_images/Node_img14.png" %}
 
 > **Note:** Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
