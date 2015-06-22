@@ -63,5 +63,5 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 Execute the above code example to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Multiple-Items_images/Multiple-Items_img1.png" Caption="Digital Gauge control with multiple items"%}
+{% include image.html url="/js/DigitalGauge/Multiple-Items_images/Multiple-Items_img1.png" Caption="Digital Gauge control with multiple items"%}
 

@@ -26,7 +26,7 @@ documentation: ug
 {% highlight js %}
 
  $(function () {
-        $(“#tooltipGauge”).ejCircularGauge({
+        $("#tooltipGauge").ejCircularGauge({
             //Defines the tooltip object.
             tooltip: {
                 //Enables the label tooltip.
@@ -71,13 +71,13 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
 
 {% highlight html %}
 
-<div id=”Tooltip” style=”height: 60px; display: none;”>
-    <div id="”icon”">
-        <div id="”eficon”"></div>
+<div id="Tooltip" style="height: 60px; display: none;">
+    <div id="icon">
+        <div id="eficon"></div>
     </div>
-    <div id="”value”">
+    <div id="value">
         <div>
-            <label id="”efpercentage”">&nbsp;#label#</label>
+            <label id="efpercentage">&nbsp;#label#</label>
         </div>
     </div>
 </div>
@@ -89,7 +89,7 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
 {% highlight js %}
 
 $(function () {
-        $(“#tooltipGauge”).ejCircularGauge({
+        $("#tooltipGauge").ejCircularGauge({
             //Defines the tooltip object.
             tooltip: {
                 // Enables the label tooltip.
@@ -105,7 +105,7 @@ $(function () {
                 radius: 130,
                 // Customizes the custom label options.
                 customLabels: [{
-                    value: “0 9 5 3 4 5”,
+                    value: "0 9 5 3 4 5",
                     font: {
             size: "18px",
             fontFamily: "Arial",
@@ -126,9 +126,9 @@ $(function () {
 
 {% highlight html %}
 
-<style type=”text/css”>
+<style type="text/css">
 
-// Adds the necessary styles here.
+<!-- Adds the necessary styles here. -->.
 
 </style>
 

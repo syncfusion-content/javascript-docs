@@ -19,7 +19,7 @@ documentation: ug
 
 
 
-_Table_ _2__: List of keys and string values_
+Table 2 : List of keys and string values
 
 <table>
 <tr>
@@ -60,7 +60,7 @@ _Table_ _2__: List of keys and string values_
    Next Appointment</td></tr>
 <tr>
 <td>
-    AppointmentSubject            </td><td>
+    AppointmentSubject</td><td>
    Subject</td></tr>
 <tr>
 <td>
@@ -363,7 +363,7 @@ To learn about localizing in the **Schedule** control on your required culture, 
 
 {% highlight js %}
 
-$(function () {
+ $(function () {
         // Define the localized words for fr-FR culture as below,(Only some of the words are given below)
         ej.Schedule.Locale["fr-FR"] = {
             CreateAppointmentTitle: "créer un rendez-",
@@ -392,11 +392,8 @@ $(function () {
             Event: "sujet",
             Close: "proche",
             Delete: "effacer",
-        ……
-        ……
         };
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -432,7 +429,7 @@ $(function () {
     <script src="scripts/jquery.globalize.min.js"></script>
     <script src="scripts/jsondata.min.js"></script>
     <script src="scripts/jsrender.min.js"></script>
-    //To use the **fr-FR** culture in the schedule control, refer the below script file
+   <!-- To use the fr-FR culture in the schedule control, refer the below script file -->
     <script src="scripts/cultures/globalize.culture.fr-FR.min.js"></script>
     <script src="scripts/ej.web.all.min.js" type="text/javascript"></script>
 </head>
@@ -486,7 +483,7 @@ $(function () {
 {% endhighlight %}
 
 
-When the **rtl** is set to ‘true’, the **Schedule** control is displayed as follows.
+When the **rtl** is set to "true", the **Schedule** control is displayed as follows.
 
 {% include image.html url="/js/Schedule/Localization_images/Localization_img2.png" Caption="schedule with RTL."%}
 

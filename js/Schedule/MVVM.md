@@ -31,7 +31,7 @@ You can render the **Schedule** by using the following code example. Object in t
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-    <!—Refer the necessary script here-->
+    <!--Refer the necessary script here-->
 </head>
 <body ng-controller="Schedule">
     <ej-schedule style="float: left" id="Ej-Schedule1"
@@ -98,7 +98,7 @@ You can render the **Schedule** by using the following code example. Object in t
 
 {% highlight html %}
 
-!--To Render the Schedule-->
+<!--To Render the Schedule-->
 
     <ej-schedule style="float: left" id="Ej-Schedule1" e-categorizesetting-enable="true"
     e-categorizesetting-allowmultiple="true" e-categorizesetting-text="text"

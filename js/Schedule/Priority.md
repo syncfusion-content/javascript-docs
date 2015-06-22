@@ -175,7 +175,7 @@ The following code example illustrates on how to render priority feature with us
 
 
 
-And then need to define the styles to display the “priority icon/images (you can use your desired images)” with the priority options. The class name (while defining styles) should be the field name in template. For example if you define the template (ex: Template ("&lt;div class='${value}'&gt;&lt;/div&gt;")) then you need to define class with “**value** field and its value should be a class name (ex: critical)”. 
+And then need to define the styles to display the "priority icon/images (you can use your desired images)" with the priority options. The class name (while defining styles) should be the field name in template. For example if you define the template (ex: Template ("&lt;div class='${value}'&gt;&lt;/div&gt;")) then you need to define class with **value** field and its value should be a class name (ex: critical). 
 
 
 
@@ -185,7 +185,7 @@ The following code example illustrates how to define the css style while using t
 
 {% highlight css %}
 
-// Her we are defining the style of the "custom priority icon"
+<!--  Her we are defining the style of the "custom priority icon" -->
 
     .critical,
     .ultracritical,

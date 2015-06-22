@@ -27,7 +27,7 @@ documentation: ug
 </head>
 <body ng-controller="DigitalGauge">
     <ej-digitalgauge id="digitalCore" e-height="500" e-load="loadGaugeTheme">
-</ej-digitalgauge>
+    </ej-digitalgauge>
     <script type="text/javascript">
         <!—binding the value to the scope variables in application controller-->
         angular.module('syncApp', ['ejangular'])
@@ -35,7 +35,6 @@ documentation: ug
             $scope.nvalue = “text”;
         });
     </script>
-
 </body>
 </html>
 
@@ -46,7 +45,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/MVVM_images/MVVM_img1.png" Caption="Default Digital Gauge in Angular JS"%}
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img1.png" Caption="Default Digital Gauge in Angular JS"%}
 
 ## Adding the Digital Gauge Items
 
@@ -72,7 +71,7 @@ e-position-x="52" e-position-y="52">
 
 Finally while running the above codes, the following output will be rendered.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/MVVM_images/MVVM_img2.png" Caption="Digital Gauge Rendered in Angular JS"%}
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img2.png" Caption="Digital Gauge Rendered in Angular JS"%}
 
 ## Two Way Binding
 
@@ -87,9 +86,7 @@ Finally while running the above codes, the following output will be rendered.
     <!—Refer the necessary script here-->
 </head>
 <body ng-controller="DigitalGauge">
-
     Type here <input type="text" id="txtValue" **ng-model="nvalue"** Style="width:110px"/>
-
     <ej-digitalgauge id="digitalCore" e-height="200" e-load="loadGaugeTheme">
 <e-items>
 <e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
@@ -99,9 +96,7 @@ e-value="nvalue" e-position-y="52">
 </e-items>
 </ej-digitalgauge>
     <script type="text/javascript">
-
         <!--binding the value to the scope variables in application controller-->
-
         angular.module('syncApp', ['ejangular'])
         .controller('DigitalGauge', function ($scope) {
             $scope.nvalue = "Syncfusion";
@@ -115,7 +110,7 @@ e-value="nvalue" e-position-y="52">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/MVVM_images/MVVM_img3.png" Caption="Digital Gauge with two way binding in Angular JS"%}
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img3.png" Caption="Digital Gauge with two way binding in Angular JS"%}
 
 
 
@@ -146,8 +141,8 @@ Execute the above code to render the following output.
     <script type="text/javascript">
         $(function () {
             window.viewModel = {
-            **value: ko.observable(“SyncFusion”),**
-};
+                value: ko.observable("SyncFusion"),
+            };
             $(function () {
                 ko.applyBindings(viewModel);
             });
@@ -161,5 +156,5 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/MVVM_images/MVVM_img4.png" Caption="Digital Gauge with Knockout binding"%}
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img4.png" Caption="Digital Gauge with Knockout binding"%}
 

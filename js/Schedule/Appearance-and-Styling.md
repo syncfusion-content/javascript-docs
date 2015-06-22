@@ -60,7 +60,7 @@ For **Adaptive Schedule**, you can refer to the following **css** file in the ap
 {% include image.html url="/js/Schedule/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Schedule displaying multiple resources in mobile mode."%}
 
 
-* [Click here](http://js.syncfusion.com/demos/web/) to see the__working of__**Adaptive Schedule****.**
+* [Click here](http://js.syncfusion.com/demos/web/#!/azure/schedule/adaptive) to see the working of **Adaptive Schedule****.**
 
 
 
@@ -260,7 +260,7 @@ The following screenshot displays the **Schedule** control with the cell width s
 
 * **Schedule** control’s style and appearance is controlled based on CSS classes. In order to apply styles to the **Schedule** control, you are required to refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. 
 
-* When the **ej.widgets.all.min.css** file****is referred, it is not necessary to include the **ej.widgets.core.min.css** and **ej.theme.min.css** files in your project as **ej.widgets.all.min.css** is the combination of these two files. 
+* When the **ej.widgets.all.min.css** file is referred, it is not necessary to include the **ej.widgets.core.min.css** and **ej.theme.min.css** files in your project as **ej.widgets.all.min.css** is the combination of these two files. 
 
 * By default, there are 12 theme support available for **Schedule** control namely,
 

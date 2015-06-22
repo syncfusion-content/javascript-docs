@@ -15,18 +15,18 @@ documentation: ug
 
 <div id="DigitalGauge1"></div>
 <button id="btnSubmit">Export</button>
-<div id=" fileName "> FileName </div>
-<div id=" fileFormat "> FileFormat </div>
+<div id=" fileName ">FileName </div>
+<div id=" fileFormat ">FileFormat </div>
 <select id="fileFormat">
-<option value="JPEG">JPEG</option>
-<option value="PNG">PNG</option>
+    <option value="JPEG">JPEG</option>
+    <option value="PNG">PNG</option>
 </select>
+
 {% endhighlight %}
 
 {% highlight js %}
 
-
-    $(function () {
+     $(function () {
         $("#btnSubmit").ejButton({ width: "50px", text: "Export", click: "buttonclickevent", });
         $("#fileFormat").ejDropDownList({ selectedItemIndex: 0, width: "115px" });
         $("# DigitalGauge1").ejDigitalgauge({ value: "Syncfusion" });
@@ -41,36 +41,9 @@ documentation: ug
     }
 
 
-
 {% endhighlight %}
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Exporting-the-Digital-Gauge_images/Exporting-the-Digital-Gauge_img1.png" Caption="Digital Gauge control with Export functionality"%}
+{% include image.html url="/js/DigitalGauge/Exporting-the-Digital-Gauge_images/Exporting-the-Digital-Gauge_img1.png" Caption="Digital Gauge control with Export functionality"%}
 

@@ -232,8 +232,8 @@ $(function () {
                 opcity:0.5,
                 shadowOffset: 5,
                 pointers:[{value:40,length:50}],
-                ticks:[{color:”red”,distanceFromScale:80}],
-                labels:[{ distanceFromScale:40,color:”red”}]
+                ticks:[{color:"red",distanceFromScale:80}],
+                labels:[{ distanceFromScale:40,color:"red"}]
 
             }]
         });

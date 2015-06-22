@@ -45,14 +45,14 @@ documentation: ug
 
 
 
-* Now add a **&lt;div&gt;** element that acts as a container for **ejDigitalGauge** widget.
+Now add a **&lt;div&gt;** element that acts as a container for **ejDigitalGauge** widget.
 
 
 
 {% highlight html %}
 
 <body>
-<div id="DigitalGauge1"></div>
+    <div id="DigitalGauge1"></div>
 </body>
 </html>
 
@@ -61,7 +61,7 @@ documentation: ug
 
 
 
-* Once the container is added, create the **ejDigitalGauge** widget as follows,
+Once the container is added, create the **ejDigitalGauge** widget as follows,
 
 
 
@@ -154,8 +154,8 @@ You can add a **&lt;div&gt;** element to set the background for the **Digital Ga
 {% highlight html %}
 
 <div id="frameDiv">
-<div id="DigitalGauge1" style="width:100%">
-</div>
+    <div id="DigitalGauge1" style="width: 100%">
+    </div>
 </div>
 
 {% endhighlight %}
@@ -163,14 +163,14 @@ You can add a **&lt;div&gt;** element to set the background for the **Digital Ga
 {% highlight css %}
 
 
-#frameDiv {
-align : center;
-position : relative;
-margin : 0px auto;
-display :table;
-background-image :url("script/frame.png");
-background-repeat :no-repeat;
-}
+ #frameDiv {
+        align: center;
+        position: relative;
+        margin: 0px auto;
+        display: table;
+        background-image: url("script/frame.png");
+        background-repeat: no-repeat;
+    }
 
 
 {% endhighlight %}

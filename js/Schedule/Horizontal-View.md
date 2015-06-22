@@ -17,7 +17,7 @@ documentation: ug
 
 **Orientation**
 
-* It defines the orientation type of the **Schedule** control. It renders the **Schedule** either in horizontal mode or vertical mode. By default, orientation property is set as “**Vertica**l”. 
+* It defines the orientation type of the **Schedule** control. It renders the **Schedule** either in horizontal mode or vertical mode. By default, orientation property is set as **Vertical**. 
 
 * **ej.Schedule.Orientation.Vertical, ej.Schedule.Orientation.Horizontal** are the valid enum values that are accepted by **orientation** property.
 

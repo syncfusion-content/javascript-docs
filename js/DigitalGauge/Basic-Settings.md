@@ -41,7 +41,7 @@ The basic customization for any control is to set the dimension. Here dimension 
 
 Execute the above code examples to render the **Digital****Gauge** as follows. 
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Basic-Settings_images/Basic-Settings_img1.png" Caption="Digital Gauge control with height and width values"%}
+{% include image.html url="/js/DigitalGauge/Basic-Settings_images/Basic-Settings_img1.png" Caption="Digital Gauge control with height and width values"%}
 
 
 
@@ -77,7 +77,7 @@ $(function () {
 
 Execute the above code examples to render the **Digital****Gauge** as follows. 
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Basic-Settings_images/Basic-Settings_img2.png" Caption="Digital Gauge control with Responsible layout"%}
+{% include image.html url="/js/DigitalGauge/Basic-Settings_images/Basic-Settings_img2.png" Caption="Digital Gauge control with Responsible layout"%}
 
 
 
@@ -120,7 +120,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 Execute the above code examples to render the **Digital****Gauge** as follows. 
 
-{% include image.html url="/js/DigitalGauge/Concepts-and-Features/Basic-Settings_images/Basic-Settings_img3.png" Caption="Digital Gauge control with flatdark theme"%}
+{% include image.html url="/js/DigitalGauge/Basic-Settings_images/Basic-Settings_img3.png" Caption="Digital Gauge control with flatdark theme"%}
 
 
 

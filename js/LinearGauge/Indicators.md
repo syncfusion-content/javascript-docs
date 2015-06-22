@@ -27,30 +27,27 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 {% highlight js %}
 
  $(function () {
-
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
             //Adding frame object
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
             value: 78,
-
             //Adding scale collection
-            scales: [{width:0,
+            scales: [{
+                width: 0,
                 border: { color: "transparent", width: 0 },
                 minimum: 0,
                 maximum: 300,
                 minorIntervalValue: 5,
                 majorIntervalValue: 30,
                 showBarPointers: false,
-                showIndicators:true,
-
+                showIndicators: true,
                 //Adding marker pointer collection
                 markerPointers: [{
                     width: 10, length: 10,
                     backgroundColor: "Grey", distanceFromScale: 12
                 }],
-
                 //Adding ticks collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -62,10 +59,10 @@ Indicators simply indicates the current status of the pointer. Indicators are in
                 }],
                 //Adding indicator collection
                 indicators: [{
-                height: 10,
-                width: 10,
-                type: "circle",
-                position: {x:50,y:100}
+                    height: 10,
+                    width: 10,
+                    type: "circle",
+                    position: { x: 50, y: 100 }
                 }]
             }]
         });
@@ -78,7 +75,7 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Indicators_images/Indicators_img1.png" Caption="Linear Gauge with indicator"%}
+{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img1.png" Caption="Linear Gauge with indicator"%}
 
 ## State Ranges
 
@@ -99,7 +96,6 @@ State ranges are used to specify the indicator behavior in the certain region. *
             //Adding frame object
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
             value: 78,
-
             //Adding scale object
             scales: [{
                 width: 0,
@@ -111,13 +107,11 @@ State ranges are used to specify the indicator behavior in the certain region. *
                 showRanges: true,
                 showBarPointers: false,
                 showIndicators: true,
-
                 //Adding marker pointer collection
                 markerPointers: [{
                     width: 10, length: 10, backgroundColor: "Grey",
                     distanceFromScale: 12
                 }],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -127,7 +121,6 @@ State ranges are used to specify the indicator behavior in the certain region. *
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding range collection
                 ranges: [
                 {
@@ -149,7 +142,6 @@ State ranges are used to specify the indicator behavior in the certain region. *
                     }
                 }
                 ],
-
                 //Adding indicator collection
                 indicators: [
                 {
@@ -169,7 +161,6 @@ State ranges are used to specify the indicator behavior in the certain region. *
                 }]
             }]
         });
-
     });
 
 {% endhighlight %}
@@ -178,7 +169,7 @@ State ranges are used to specify the indicator behavior in the certain region. *
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Indicators_images/Indicators_img2.png" Caption="Linear Gauge with indicator state ranges"%}
+{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img2.png" Caption="Linear Gauge with indicator state ranges"%}
 
 ## Color and Appearance
 
@@ -193,31 +184,28 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 {% highlight js %}
 
 
-    $(function () {
-
+     $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false,
             //Adding frame object
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
             value: 78,
-
             //Adding scale object
-            scales: [{width:0,
+            scales: [{
+                width: 0,
                 border: { color: "transparent", width: 0 },
                 minimum: 0,
                 maximum: 300,
                 minorIntervalValue: 5,
                 majorIntervalValue: 30,
                 showBarPointers: false,
-                showIndicators:true,
-
+                showIndicators: true,
                 //Adding marker pointer collection
                 markerPointers: [{
                     width: 10, length: 10,
                     backgroundColor: "Grey", distanceFromScale: 12
                 }],
-
                 //Adding ticks collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -227,13 +215,13 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding indicator collection
                 indicators: [{
                     height: 10, width: 10, type: "circle", position: { x: 50, y: 100 },
-                    stateRanges: [{ backgroundColor: "#91B64E", endValue: 300,
+                    stateRanges: [{
+                        backgroundColor: "#91B64E", endValue: 300,
                         startValue: 0, borderColor: "#91B64E"
-                        }]
+                    }]
                 }]
             }]
         });
@@ -247,7 +235,7 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Indicators_images/Indicators_img3.png" Caption="Linear Gauge with customized indicator appearance"%}
+{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img3.png" Caption="Linear Gauge with customized indicator appearance"%}
 
 ## Font optoins
 
@@ -261,32 +249,29 @@ The basic font options available for the textual type indicators in the **Linear
 
 {% highlight js %}
 
-  $(function () {
-
+   $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
-            enableAnimation: false,readOnly:false,
+            enableAnimation: false, readOnly: false,
             //Adding frame object
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
             value: 78,
-
             //Adding scale collection
-            scales: [{width:0,
+            scales: [{
+                width: 0,
                 border: { color: "transparent", width: 0 },
                 minimum: 0,
                 maximum: 300,
                 minorIntervalValue: 5,
                 majorIntervalValue: 30,
-                showRanges:true,
+                showRanges: true,
                 showBarPointers: false,
-                showIndicators:true,
-
+                showIndicators: true,
                 //Adding marker pointer collection
                 markerPointers: [{
                     width: 10, length: 10,
                     backgroundColor: "Grey", distanceFromScale: 12
                 }],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -296,39 +281,51 @@ The basic font options available for the textual type indicators in the **Linear
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding range collection
                 ranges: [
-                { startWidth: 5, endWidth: 5 ,startValue: 0, endValue: 200,
-                    backgroundColor: "#94C361", border: { color: "#94C361", width: 1
-                    } },
-                { startWidth: 5, endWidth: 5, startValue: 200, endValue: 250,
-                    backgroundColor: "#F9CF67", border: { color: "#F9CF67", width: 1
-                    } },
-                { startWidth: 5, endWidth: 5, startValue: 250, endValue: 300,
-                    backgroundColor: "#F89B83", border: { color: "#F89B83", width: 1
-                    } }
+                {
+                    startWidth: 5, endWidth: 5, startValue: 0, endValue: 200,
+                    backgroundColor: "#94C361", border: {
+                        color: "#94C361", width: 1
+                    }
+                },
+                {
+                    startWidth: 5, endWidth: 5, startValue: 200, endValue: 250,
+                    backgroundColor: "#F9CF67", border: {
+                        color: "#F9CF67", width: 1
+                    }
+                },
+                {
+                    startWidth: 5, endWidth: 5, startValue: 250, endValue: 300,
+                    backgroundColor: "#F89B83", border: {
+                        color: "#F89B83", width: 1
+                    }
+                }
                 ],
-
                 //Adding indicator collection
                 indicators: [
                 {
                     type: "text", textLocation: { x: 50, y: 100 },
                     //Adding font option
-                font: { size: "12px", fontFamily: "Arial", fontType: "Bold" },
+                    font: { size: "12px", fontFamily: "Arial", fontType: "Bold" },
 
                     //Adding state ranges collection
-                    stateRanges: [{ startValue: 0, endValue: 200,
-                        text: "Safe", textColor: "#94C361" },
-                    { startValue: 200, endValue: 250,
-                        text: "Caution", textColor: "#F9CF67" },
-                    { startValue: 250, endValue: 300,
-                        text: "Danger", textColor: "#F89B83" }
+                    stateRanges: [{
+                        startValue: 0, endValue: 200,
+                        text: "Safe", textColor: "#94C361"
+                    },
+                    {
+                        startValue: 200, endValue: 250,
+                        text: "Caution", textColor: "#F9CF67"
+                    },
+                    {
+                        startValue: 250, endValue: 300,
+                        text: "Danger", textColor: "#F89B83"
+                    }
                     ]
                 }]
             }]
         });
-
     });
 
 
@@ -338,7 +335,7 @@ The basic font options available for the textual type indicators in the **Linear
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Indicators_images/Indicators_img4.png" Caption="Linear Gauge with text type indicator"%}
+{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img4.png" Caption="Linear Gauge with text type indicator"%}
 
 ## Multiple Indicator
 
@@ -355,14 +352,12 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
 {% highlight js %}
 
  $(function () {
-
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false, readOnly: false,
             //Adding frame object
             frame: { backgroundImageUrl: "../images/gauge/Gauge_linear_light.png" },
             value: 78,
-
             //Adding scale collection
             scales: [{
                 width: 0,
@@ -374,13 +369,11 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
                 showRanges: true,
                 showBarPointers: false,
                 showIndicators: true,
-
                 //Adding marker pointer collection
                 markerPointers: [{
                     width: 10, length: 10, backgroundColor: "Grey",
                     distanceFromScale: 12
                 }],
-
                 //Adding ticks collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -390,7 +383,6 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding ranges collection
                 ranges: [
                 {
@@ -412,7 +404,6 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
                     }
                 }
                 ],
-
                 //Adding indicator collection
                 indicators: [
                 //Adding indicator 1
@@ -453,5 +444,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Indicators_images/Indicators_img5.png" Caption="Linear Gauge with multiple indicators"%}
+{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img5.png" Caption="Linear Gauge with multiple indicators"%}
 

@@ -49,7 +49,7 @@ The following screenshot displays the **Schedule** control with daily important 
 
 {% endhighlight %}
 
- Now, add a &lt;div&gt; element within the **body** section which will act as a container for **ejSchedule** widget.
+Now, add a &lt;div&gt; element within the **body** section which will act as a container for **ejSchedule** widget.
 
 
 
@@ -296,7 +296,7 @@ Once you set the template for the appointments, the **Scheduler** is displayed w
 
 
 <div style="height: 100%">
-    <div style='float: left; width: 50px;'>
+    <div style="float: left; width: 50px;">
         {{:~format(StartTime)}}
     </div>
     <div>

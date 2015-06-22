@@ -25,14 +25,14 @@ This example explains you on how to add the customized appointment window using 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Schedule JS Default Functionalities</title>
-    //Refer the required script files here
+    <!-- Refer the required script files here -->
 </head>
 <body>
     <!-- Schedule div-->
     <div id="Div1">
     </div>
     <!-- div For Customized appointment window dialog-->
-    <div id="**customWindow**" style="display: none">
+    <div id="customWindow" style="display: none">
         <form id="custom">
             <table width="100%" cellpadding="5">
                 <tbody>
@@ -112,7 +112,7 @@ This example explains you on how to add the customized appointment window using 
 
 {% highlight css %}
 
-// Styles to be used for the control within the custom appointment window
+<!-- Styles to be used for the control within the custom appointment window -->
 
 .customcheck {
 float: left;
@@ -283,7 +283,7 @@ The following code example is added to the previous code example of appointment 
     <div id="Div1">
     </div>
     <!-- div For Customized appointment window dialog-->
-    <div id="**customWindow**" style="display: none">
+    <div id="customWindow" style="display: none">
         <form id="custom">
             <table width="100%" cellpadding="5">
                 <tbody>
@@ -799,11 +799,12 @@ The following screenshot displays the **Schedule** control with **MinDate** and 
 
 
 {% highlight js %}
+
  $(function () {
         $("#Schedule1").ejSchedule({
             // setting the 24 hour mode for the schedule
-         timeMode: ej.Schedule.TimeMode.Hour24,
-});
+            timeMode: ej.Schedule.TimeMode.Hour24,
+        });
     });
 
 {% endhighlight %}
@@ -835,8 +836,7 @@ You can set the timezone to the **Schedule** control as follows.
 {% highlight js %}
 
  $(function () {
-            var dManager =
-            ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
+            var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
             $("#Schedule1").ejSchedule({
                 width: "100%",
                 height: "525px",
@@ -890,9 +890,7 @@ The following code example explains how to disable the current time indicator fr
 {% highlight js %}
 
  $(function () {
-        var dManager =
-        ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
-
+        var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             width: "100%",
             height: "525px",
@@ -914,7 +912,7 @@ The following code example explains how to disable the current time indicator fr
 {% endhighlight %}
 
 
-After setting **showCurrentTimeIndicator** property to ‘false’, the **Schedule** control is displayed without the current time indicator as follows.
+After setting **showCurrentTimeIndicator** property to "false", the **Schedule** control is displayed without the current time indicator as follows.
 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img11.png" Caption="schedule with show current time indicator."%}
 

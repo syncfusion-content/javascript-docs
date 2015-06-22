@@ -26,32 +26,30 @@ You can add Bar Pointer collection directly to the scale object. Refer the follo
 {% highlight js %}
 
 $ (function () {
-      // For Rendering Linear gauge
-      $("#LinearGauge1").ejLinearGauge({
-          //For Adding frame
-          frame: {
-              innerWidth: 8,
-              outerWidth: 10,
-              backgroundImageUrl:"../images/gauge/Gauge_linear_light.png"
-          },value:78,
-
-          //For Adding Scale collection
-          scales: [{
-              backgroundColor: "transparent",
-              border: { color: "transparent", width: 0 },
-              showMarkerPointers: false, showBarPointers: true,
-
-              //For Adding bar pointer collection
-          barPointers: [{ width: 5, backgroundColor: "Grey"}],
-
-              //For Adding tick collection
-              ticks: [{ type: "majorinterval", width: 2,
-                  color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } },
-              { type: "minorinterval", width: 1,height:6,
-                  color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } }]
-          }]
-      });
-)};
+        // For Rendering Linear gauge
+        $("#LinearGauge1").ejLinearGauge({
+            //For Adding frame
+            frame: {
+                innerWidth: 8,
+                outerWidth: 10,
+                backgroundImageUrl:"../images/gauge/Gauge_linear_light.png"
+            },
+            value:78,
+            //For Adding Scale collection
+            scales: [{
+                backgroundColor: "transparent",
+                border: { color: "transparent", width: 0 },
+                showMarkerPointers: false, showBarPointers: true,
+                //For Adding bar pointer collection
+                barPointers: [{ width: 5, backgroundColor: "Grey"}],
+                //For Adding tick collection
+                ticks: [{ type: "majorinterval", width: 2,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } },
+                { type: "minorinterval", width: 1,height:6,
+                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 } }]
+            }]
+        });
+});
 
 
 {% endhighlight %}
@@ -61,7 +59,7 @@ $ (function () {
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Bar-Pointers_images/Bar-Pointers_img1.png" Caption="Linear Gauge with bar pointer"%}
+{% include image.html url="/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img1.png" Caption="Linear Gauge with bar pointer"%}
 
 
 
@@ -94,14 +92,12 @@ Bar pointer value is also important element in the **Linear Gauge** as it indica
                 backgroundColor: "transparent",
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
-
                 //For Adding bar pointer collection
                 barPointers: [{
                     width: 5,
                     backgroundColor: "Grey",
                 value:91
                 }],
-
                 //For Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -122,7 +118,7 @@ Bar pointer value is also important element in the **Linear Gauge** as it indica
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Bar-Pointers_images/Bar-Pointers_img2.png" Caption="Linear Gauge with customized bar pointer value"%}
+{% include image.html url="/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img2.png" Caption="Linear Gauge with customized bar pointer value"%}
 
 ## Pointer Styles
 
@@ -152,13 +148,11 @@ Execute the above code to render the following output.
                 outerWidth: 10,
                 backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
             },
-
             // Adding Scale collection
             scales: [{
                 backgroundColor: "transparent",
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
-
                 // Adding bar pointer collection
                 barPointers: [{
                 width: 10,
@@ -166,7 +160,6 @@ Execute the above code to render the following output.
                 border: { color: "#860201", width: 2 },
                 opacity:0.7,
                     value: 91 }],
-
                 // Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -188,7 +181,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Bar-Pointers_images/Bar-Pointers_img3.png" Caption="Linear Gauge with customized bar pointer"%}
+{% include image.html url="/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img3.png" Caption="Linear Gauge with customized bar pointer"%}
 
 ## Positioning the pointer	
 
@@ -214,13 +207,11 @@ $(function () {
                 outerWidth: 10,
                 backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
             },
-
             //Adding Scale collection
             scales: [{
                 backgroundColor: "transparent",
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
-
                 //Adding bar pointer collection
                 barPointers: [{
                     width: 10,
@@ -229,7 +220,6 @@ $(function () {
                 placement: "near",
                 distanceFromScale: 20
                 }],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -249,7 +239,7 @@ $(function () {
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Bar-Pointers_images/Bar-Pointers_img4.png" Caption="Linear Gauge with pointer position attribute"%}
+{% include image.html url="/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img4.png" Caption="Linear Gauge with pointer position attribute"%}
 
 ## Multiple Bar Pointers
 
@@ -274,13 +264,11 @@ Execute the above code to render the following output.
                 outerWidth: 10,
                 backgroundImageUrl: "../images/gauge/Gauge_linear_dark1.png"
             },
-
             //Adding scale collection
             scales: [{
                 backgroundColor: "transparent",
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true, showCustomLabels: true,
-
                 //Adding bar pointer collection
                 barPointers: [
                 //Adding bar pointer 1
@@ -288,20 +276,17 @@ Execute the above code to render the following output.
                     width: 10, backgroundColor: "#8BABFF",
                     value: 91, placement: "near", distanceFromScale: 60
                 },
-
                 //Adding bar pointer 2
                 {
                     width: 10, backgroundColor: "#FDB761", value: 51,
                     placement: "near", distanceFromScale: 20
                 },
-
                 //Adding bar pointer 3
                 {
                     width: 10, backgroundColor: "Red", value: 88,
                     placement: "near", distanceFromScale: 100
                 }
                 ],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -311,7 +296,6 @@ Execute the above code to render the following output.
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding custom label collection
                 customLabels: [
                 {
@@ -332,6 +316,5 @@ Execute the above code to render the following output.
 Execute the above code to render the following output.
 
 
-
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Bar-Pointers_images/Bar-Pointers_img5.png" Caption="Linear Gauge with multiple bar pointers"%}
+{% include image.html url="/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img5.png" Caption="Linear Gauge with multiple bar pointers"%}
 

@@ -23,7 +23,7 @@ Circular Gauge contains angular support. You can add object as well as array obj
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-    <!—Refer the necessary script here-->
+    <!--Refer the necessary script here-->
 </head>
 <body ng-controller="CircularGauge">
     <ej-circulargauge id="CircularGauge1" e-backgroundcolor="transparent" e-value="50"
@@ -235,7 +235,7 @@ Execute the above code to render the following output.
 <!doctype html>
 <html ng-app="syncApp">
 <head>
-    <!—Refer the necessary script here-->
+    <!--Refer the necessary script here-->
 </head>
 <body ng-controller="CircularGauge">
     <div id="linearframe">
@@ -243,16 +243,16 @@ Execute the above code to render the following output.
 <e-scales>
 <e-scale e-showRanges="true" e-startAngle="122" e-sweepAngle="296"
 e-radius="130" e-showScaleBar="true" e-size="1"
-<!—binding maximum value using angular JS -->
+<!--binding maximum value using angular JS -->
 e-maximum="nmaximum"
-<!—binding minimum value using angular JS -->
+<!--binding minimum value using angular JS -->
 e-minimum="nminimum"
 e-majorIntervalValue="20"
 e-minorIntervalValue="10" e-border-width="0.5">
 <e-pointers>
 <e-pointer e-showBackNeedle="true" e-backNeedleLength="20"
 e-length="95" e-width="7"
-<!—binding pointer value using angular JS -->
+<!--binding pointer value using angular JS -->
 e-value="nvalue"
 e-pointerCap-radius="12">
 </e-pointer>

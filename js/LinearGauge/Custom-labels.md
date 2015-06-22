@@ -24,8 +24,7 @@ Custom labels collection can be directly added to the scale object. Refer the fo
 
 {% highlight js %}
 
-$(function () {
-
+ $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
@@ -35,20 +34,17 @@ $(function () {
                 outerWidth: 10,
                 backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
             },
-
             //Adding scale collection
             scales: [{
                 backgroundColor: "transparent",
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
                 showCustomLabels: true,
-
                 //Adding bar pointer collection
                 barPointers: [{
                     width: 10, backgroundColor: "#8BABFF",
                     value: 91, placement: "near", distanceFromScale: 30
                 }],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -58,7 +54,6 @@ $(function () {
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding custom label collection
                 customLabels: [{
                     value: "Mathematics Mark", position: { x: 55, y: 97 }
@@ -74,7 +69,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Custom-labels_images/Custom-labels_img1.png" Caption="Linear Gauge with custom labels"%}
+{% include image.html url="/js/LinearGauge/Custom-labels_images/Custom-labels_img1.png" Caption="Linear Gauge with custom labels"%}
 
 ## Basic Customization
 
@@ -93,7 +88,7 @@ Execute the above code to render the following output.
 
 {% highlight js %}
 
- $(function () {
+   $(function () {
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
@@ -103,14 +98,12 @@ Execute the above code to render the following output.
                 outerWidth: 10,
                 backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
             },
-
             //Adding scale collection
             scales: [{
                 backgroundColor: "transparent",
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
                 showCustomLabels: true,
-
                 //Adding bar pointer collection
                 barPointers: [
                 {
@@ -118,7 +111,6 @@ Execute the above code to render the following output.
                     value: 91, placement: "near", distanceFromScale: 30
                 }
                 ],
-
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -128,14 +120,13 @@ Execute the above code to render the following output.
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding custom labels
                 customLabels: [{
                     position: { x: 55, y: 87 },
-                value: "Mathematics Mark",
-                color:"Red",
-                textAngle:30,
-                opacity:0.5
+                    value: "Mathematics Mark",
+                    color: "Red",
+                    textAngle: 30,
+                    opacity: 0.5
                 }]
             }]
         });
@@ -148,7 +139,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Custom-labels_images/Custom-labels_img2.png" Caption="Linear Gauge with customized custom labels"%}
+{% include image.html url="/js/LinearGauge/Custom-labels_images/Custom-labels_img2.png" Caption="Linear Gauge with customized custom labels"%}
 
 ## Locating the CustomLabels
 
@@ -167,21 +158,18 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
         //For rendering Liner gauge
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
-
             //Adding frame object
             frame: {
                 innerWidth: 8,
                 outerWidth: 10,
                 backgroundImageUrl: "../images/gauge/Gauge_linear_light.png"
             },
-
             //Adding scale collection
             scales: [{
                 backgroundColor: "transparent",
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
                 showCustomLabels: true,
-
                 //Adding bar pointer collection
                 barPointers: [
                 {
@@ -189,7 +177,6 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
                     value: 91, placement: "near", distanceFromScale: 30
                 }
                 ],
-
                 //Adding ticks collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -199,7 +186,6 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding custom label collection
                 customLabels: [
                 { value: "Mathematics Mark", position: { x: 55, y: 87 } }]
@@ -212,7 +198,7 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Custom-labels_images/Custom-labels_img3.png" Caption="Linear Gauge with customized custom label position"%}
+{% include image.html url="/js/LinearGauge/Custom-labels_images/Custom-labels_img3.png" Caption="Linear Gauge with customized custom label position"%}
 
 ## Multiple Custom Labels
 
@@ -227,7 +213,6 @@ You can set multiple custom labels in a single **Linear Gauge** by adding an arr
 {% highlight js %}
 
 $(function () {
-
         // For Linear Gauge rendering
         $("#LinearGauge1").ejLinearGauge({
             enableAnimation: false, height: 500, width: 200, labelColor: "Grey",
@@ -243,7 +228,6 @@ $(function () {
                 border: { color: "transparent", width: 0 },
                 showMarkerPointers: false, showBarPointers: true,
                 showCustomLabels: true,
-
                 //Adding bar pointer collection
                 barPointers: [
                 {
@@ -251,7 +235,6 @@ $(function () {
                     value: 91, placement: "near", distanceFromScale: 30
                 }
                 ],
-
                 //Adding ticks collection
                 ticks: [{
                     type: "majorinterval", width: 2,
@@ -261,7 +244,6 @@ $(function () {
                     type: "minorinterval", width: 1, height: 6,
                     color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
                 }],
-
                 //Adding custom label collection
                 customLabels: [
                 {
@@ -283,5 +265,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Concepts-and-Features/Custom-labels_images/Custom-labels_img4.png" Caption="Linear Gauge with multiple custom labels"%}
+{% include image.html url="/js/LinearGauge/Custom-labels_images/Custom-labels_img4.png" Caption="Linear Gauge with multiple custom labels"%}
 

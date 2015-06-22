@@ -73,7 +73,7 @@ Pointers have different height and range. You can set the height and width of th
 
 {% highlight js %}
 
- $("#CircularGauge1").ejCircularGauge({
+  $("#CircularGauge1").ejCircularGauge({
         width: 500,
         height: 500,
     });
@@ -111,11 +111,11 @@ The above code example renders a **Gauge** as shown in the following screen shot
 
 **Provide scale values**
 
-You can customize the pointer cap using the following options- Cap radius, Cap border color, cap background color, pointer cap border width. 
+* You can customize the pointer cap using the following options- Cap radius, Cap border color, cap background color, pointer cap border width. 
 
-Set the maximum speed limit in the **Gauge** as 200KmpH.
+* Set the maximum speed limit in the **Gauge** as 200KmpH.
 
-Major Ticks and Minor Ticks have the interval values 20 and 5 respectively. Show ranges and show indicators are used to display the ranges and indicators in their respective positions.
+* Major Ticks and Minor Ticks have the interval values 20 and 5 respectively. Show ranges and show indicators are used to display the ranges and indicators in their respective positions.
 
 {% highlight js %}
 
