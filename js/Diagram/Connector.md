@@ -23,13 +23,8 @@ Connectors are objects used to create a link between two nodes. A connector is a
 var connectors = [{
    name: "connector",
    lineWidth: 2,
-   sourcePoint: {
-      x: 300,
-      y: 40
-   },
-   targetPoint: {
-      x: 400,
-      y: 150
+   sourcePoint: { x: 300, y: 40 },
+   targetPoint: { x: 400, y: 150
    }
 }];
 
@@ -66,14 +61,8 @@ var connectors = [{
    name: "connector",
    lineWidth: 2,
    segments: segments,
-   sourcePoint: {
-      x: 300,
-      y: 40
-   },
-   targetPoint: {
-      x: 400,
-      y: 150
-   }
+   sourcePoint: { x: 300, y: 40 },
+   targetPoint: { x: 400, y: 150 }
 }];
 
 //add connectors to diagram model
@@ -100,14 +89,8 @@ var connectors = [{
    name: "connector",
    lineWidth: 2,
    segments: segments,
-   sourcePoint: {
-      x: 300,
-      y: 40
-   },
-   targetPoint: {
-      x: 400,
-      y: 150
-   }
+   sourcePoint: { x: 300, y: 40 },
+   targetPoint: { x: 400, y: 150}
 }];
 
 //add connectors to diagram model
@@ -123,33 +106,19 @@ $("#Diagram").ejDiagram({
 The straight segments can be added by specifying points as to where the line has to be drawn. The segment end point links the source point and target point of the connector. The following code example illustrates how to add **Straight Segment** through code.
 
 {% highlight js %}
-
 //Adding straight segments
-var segments = [{
-   type: "straight",
-   point: {
-      x: 400,
-      y: 150
-   }
-}, {
-   type: "straight",
-   point: {
-      x: 300,
-      y: 10
-   }
-}];
+var segments = [
+    { type: "straight", point: { x: 400, y: 150 } },
+    { type: "straight", point: { x: 300, y: 10 } }
+]; 
 
-var connector = [{
-   segments: segments,
-   targetPoint: {
-      x: 300,
-      y: 150
-   },
-   sourcePoint: {
-      x: 300,
-      y: 150
-   }
-}];
+var connector = [
+    {
+        segments: segments,
+        targetPoint: { x: 300, y: 150 },
+        sourcePoint: { x: 300, y: 150 }
+    }
+];
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Connector_images/Connector_img5.png" %}
@@ -168,31 +137,17 @@ Bezier segments can be added through points or vector.
 The following code example illustrates how to add Bezier segments.
 
 {% highlight js %}
-
-//Adding segments with control points
 //Adding Control Points
 var segments = [{
-   type: "bezier",
-   point1: {
-      x: 40,
-      y: 80
-   },
-   point2: {
-      x: 40,
-      y: 72
-   }
+    type: "bezier",
+    point1: { x: 40, y: 80 },
+    point2: { x: 40, y: 72 }
 }];
 
 var connector = [{
-   segments: segments,
-   sourcePoint: {
-      x: 290,
-      y: 150
-   },
-   targetPoint: {
-      x: 210,
-      y: 40
-   }
+    segments: segments,
+    sourcePoint: { x: 290, y: 150 },
+    targetPoint: { x: 210, y: 40 }
 }];
 {% endhighlight %}
 
@@ -202,31 +157,18 @@ The following code example illustrates how to add vector point for Bezier segmen
 
 {% highlight js %}
 //Adding Bezier through vectors
-var segments = [{ type: "bezier", 
+var segments = [{
+    type: "bezier",
 
-   //Length and angle between source point and control point 1
-   vector1: {
-      angle: 180,
-      distance: 120
-   },
-   
-   //Length and angle between target point and control point 2
-   vector2: {
-      angle: 10,
-      distance: 140
-   }
+    //Length and angle between source point and (control point 1 or control point 2)
+    vector1: { angle: 180, distance: 120 },
+    vector2: { angle: 10, distance: 140 }
 }];
 
 var connectors = [{
-   segments: segments,
-   sourcePoint: {
-      x: 310,
-      y: 180
-   },
-   targetPoint: {
-      x: 190,
-      y: 40
-   }
+    segments: segments,
+    sourcePoint: { x: 310, y: 180 },
+    targetPoint: { x: 190, y: 40 }
 }];
 {% endhighlight %}
 
@@ -444,24 +386,18 @@ Gets or sets the opacity of the connector</td></tr>
 
 
 {% highlight js %}
-//set various appearance properties to connector
 var segments = [{
-   type: "orthogonal"
+    type: "orthogonal"
 }];
 
+//set various appearance properties to connector
 connectors = [{
-   name: "connector1",
-   lineWidth: 2,
-   segments: segments,
-   sourcePoint: {
-      x: 210,
-      y: 40
-   },
-   targetPoint: {
-      x: 450,
-      y: 150
-   },
-   lineColor: "black"
+    name: "connector1",
+    lineWidth: 2,
+    segments: segments,
+    lineColor: "black",
+    sourcePoint: { x: 210, y: 40 },
+    targetPoint: { x: 450, y: 150 }
 }];
 {% endhighlight %}
 

@@ -16,19 +16,15 @@ documentation: ug
 Node’s/Connector’s **labels** property holds an array of **Label** objects. The following code illustrates how to create a **Label**.
 
 {% highlight js %}
-
 //create a label 
 var node = {
    name: "node",
-   labels: [{
-      "text": "Label"
-   }]
+   labels: [{ "text": "Label" }]
 };
+
 var connector = {
    name: "connector",
-   labels: [{
-      "text": "Label"
-   }]
+   labels: [{ "text": "Label" }]
 };
 {% endhighlight %}
 
@@ -68,14 +64,8 @@ var node = {
    height: 60,
    labels: [{
       "text": "Progress",
-      margin: {
-         "left": 100,
-         "top": 100
-      },
-      offset: {
-         x: 0,
-         y: 0
-      },
+      margin: { "left": 100, "top": 100 },
+      offset: { x: 0, y: 0 },
       horizontalAlignment: "left",
       verticalAlignment: "top"
    }]
@@ -158,15 +148,14 @@ diagram.updateLabel(node.name, node.labels[0], label);
 To prevent label editing, set Label’s **readOnly** property as **“True”.** After setting the **Label** to **readOnly** mode, when you double clicking on the Label, it is not moved to **Edit** mode. However, even after **readOnly** is set as true, you can programmatically move the label to edit mode.
 
 {% highlight js %}
-
 //label readOnly mode
 var label = {
    readOnly: true
 };
+
 var diagram = $("#Diagram").ejDiagram("instance");
 var node = diagram.model.selectedItems.children[0];
 diagram.updateLabel(node.name, node.labels[0], label);
-
 {% endhighlight %}
 
 ## Label Alignment
@@ -211,10 +200,7 @@ Gets or sets the position for the label.</td></tr>
 //align label and its text
 var label = {
    text: "Label",
-   offset: {
-      x: 0,
-      y: 0.5
-   },
+   offset: { x: 0, y: 0.5 },
    verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
    horizontalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center,
    textAlign: ej.datavisualization.Diagram.TextAlign.Center
@@ -310,30 +296,23 @@ You can add **Multiple Labels** to the node /connector.
 The following code illustrates how to create multiple labels to node 
 
 {% highlight js %}
-
 //add multiple labels to node
 var node = {
-   labels: [{
-      text: "Left",
-      offset: {
-         x: 0.1,
-         y: 0.1
-      }
-   }, {
-      text: "Right",
-      offset: {
-         x: 0.9,
-         y: 1
-      }
-   }, {
-      text: "Center",
-      offset: {
-         x: 0.5,
-         y: 0.5
-      }
-   }]
+    labels: [
+        {
+            text: "Left",
+            offset: { x: 0.1, y: 0.1 }
+        },
+        {
+            text: "Right",
+            offset: { x: 0.9, y: 1 }
+        },
+        {
+            text: "Center",
+            offset: { x: 0.5, y: 0.5 }
+        }
+    ]
 };
-
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Label_images/Label_img16.png" %}

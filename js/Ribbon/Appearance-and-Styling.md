@@ -14,8 +14,8 @@ documentation: ug
 Specifies the index of the **Ribbon tab** to select the given index tab item in the **Ribbon** control.
 
 {% highlight html %}
-
-     <!-- ... -->
+        
+    <!-- ... -->
     <head>
     </head>
     <!-- ... -->
@@ -67,39 +67,32 @@ Specifies the index of the **Ribbon tab** to select the given index tab item in 
           ribbonObj = $("#Ribbon").data("ejRibbon");
           ribbonObj.option({selectedItemIndex:2});
           });
-       </script>
+       </script>       
+       <style type="text/css">
+          .e-ribbon .e-ribbonpaste:before {
+          content: "\e645";
+          font-family:"ej-webfont";
+          font-size: 36px;
+          position: relative;
+          left: -9px;
+          top: -4px;
+          }
+       </style>
     </body>
     <!-- ... -->
-
-{% endhighlight %}
-
-
-{% highlight css %}
-
-    <style type="text/css">
-       .e-ribbon .e-ribbonpaste:before {
-       content: "\e645";
-       font-family:"ej-webfont";
-       font-size: 36px;
-       position: relative;
-       left: -9px;
-       top: -4px;
-       }
-    </style>
-
+    
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Selected tab item in the Ribbon control"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
 
 ## DisabledItemIndex
 
 Specifies the index or indexes to disable the corresponding tabs in the **Ribbon** control.
 
 {% highlight html %}
-         
-    
+       
     <!-- ... -->
     <head>
     </head>
@@ -171,7 +164,7 @@ Specifies the index or indexes to disable the corresponding tabs in the **Ribbon
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Ribbon control with the disabled tabs"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
 
 ## EnableItemIndex
 
@@ -250,14 +243,14 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Ribbon control with the enabled INSERT tab and disabled HOME tab"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img3.png"%}
 
 ## HideTab
 
 This method is used to hide the given text tab in the **Ribbon** control.
 
 {% highlight html %}
- 
+
     <!-- ... -->
     <head>
     </head>
@@ -312,36 +305,31 @@ This method is used to hide the given text tab in the **Ribbon** control.
           ribbonObj.hideTab("HOME");
           });
        </script>
+       <style type="text/css">
+          .e-ribbon .e-ribbonpaste:before {
+          content: "\e645";
+          font-family:"ej-webfont";
+          font-size: 36px;
+          position: relative;
+          left: -9px;
+          top: -4px;
+          }
+       </style>
     </body>
     <!-- ... -->
 
 {% endhighlight %}
 
-{% highlight css %}
-  
-    <style type="text/css">
-       .e-ribbon .e-ribbonpaste:before {
-       content: "\e645";
-       font-family:"ej-webfont";
-       font-size: 36px;
-       position: relative;
-       left: -9px;
-       top: -4px;
-       }
-    </style>
-
-{% endhighlight %}
-
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="Ribbon control hide tab functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img4.png"%}
 
 ## ShowTab
 
 This method is used to show the given text tab in the **Ribbon** control.
 
 {% highlight html %}
-  
+   
     <!-- ... -->
     <head>
     </head>
@@ -396,30 +384,25 @@ This method is used to show the given text tab in the **Ribbon** control.
           ribbonObj.hideTab("HOME");
           ribbonObj.showTab("HOME");
           });
-       </script>
+       </script>        
+       <style type="text/css">
+          .e-ribbon .e-ribbonpaste:before {
+          content: "\e645";
+          font-family:"ej-webfont";
+          font-size: 36px;
+          position: relative;
+          left: -9px;
+          top: -4px;
+          }
+       </style>
     </body>
     <!-- ... -->
   
 {% endhighlight %}
   
-{% highlight css %}
-    
-    <style type="text/css">
-       .e-ribbon .e-ribbonpaste:before {
-       content: "\e645";
-       font-family:"ej-webfont";
-       font-size: 36px;
-       position: relative;
-       left: -9px;
-       top: -4px;
-       }
-    </style>
-
-{% endhighlight %}
-
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="Ribbon control show tab functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img5.png"%}
 
 ## RemoveTab
 
@@ -481,36 +464,31 @@ This method is used to remove the given index tab item from the **Ribbon** contr
           ribbonObj.removeTab(2);
           });
        </script>
+       <style type="text/css">
+          .e-ribbon .e-ribbonpaste:before {
+          content: "\e645";
+          font-family:"ej-webfont";
+          font-size: 36px;
+          position: relative;
+          left: -9px;
+          top: -4px;
+          }
+       </style>
     </body>
     <!-- ... -->
         
 {% endhighlight %}
 
-{% highlight css %}
-       
-    <style type="text/css">
-       .e-ribbon .e-ribbonpaste:before {
-       content: "\e645";
-       font-family:"ej-webfont";
-       font-size: 36px;
-       position: relative;
-       left: -9px;
-       top: -4px;
-       }
-    </style>
-
-{% endhighlight %}
-
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="Ribbon control remove tab functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img6.png"%}
 
 ## Width
 
 Specifies the **width** to the **Ribbon** control.
 
 {% highlight html %}
-         
+    
     <!-- ... -->
     <head>
     </head>
@@ -526,73 +504,67 @@ Specifies the **width** to the **Ribbon** control.
           </li>
        </ul>
        <div id="content">Home control</div>
-       <script type="text/javascript">                                                                                             $(function () {
-          $("#Ribbon").ejRibbon({
-          width: 800,
-          applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
-          tabs: [
-          {
-          id: "insert", text: "INSERT", groups: [{
-          text: "Clipboard", alignType: ej.Ribbon.alignType.columns, content: [{
-          groups: [{
-          id: "paste",
-          text: "paste",
-          toolTip: "Paste",
-          buttonSettings: {
-          contentType: ej.ContentType.ImageOnly,
-          prefixIcon: "e-ribbon e-ribbonpaste"
-          }
-          }],
-          defaults: {
-          type: ej.Ribbon.type.button,
-          isBig: true,
-          width: 50,
-          height: 70
-          }
-          }]
-          }]
-          },
-          {
-          id: "home", text: "HOME", groups: [{
-          text: "New", alignType: ej.Ribbon.alignType.rows, type: "custom", contentID: "content"
-          }]
-          }
-          ]
-          });
-          });
+       <script type="text/javascript">                                                                                             
+          $(function () {
+             $("#Ribbon").ejRibbon({
+             width: 800,
+             applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+             tabs: [
+             {
+             id: "insert", text: "INSERT", groups: [{
+             text: "Clipboard", alignType: ej.Ribbon.alignType.columns, content: [{
+             groups: [{
+             id: "paste",
+             text: "paste",
+             toolTip: "Paste",
+             buttonSettings: {
+             contentType: ej.ContentType.ImageOnly,
+             prefixIcon: "e-ribbon e-ribbonpaste"
+             }
+             }],
+             defaults: {
+             type: ej.Ribbon.type.button,
+             isBig: true,
+             width: 50,
+             height: 70
+             }
+             }]
+             }]
+             },
+             {
+             id: "home", text: "HOME", groups: [{
+             text: "New", alignType: ej.Ribbon.alignType.rows, type: "custom", contentID: "content"
+             }]
+             }
+             ]
+             });
+             });
        </script>
+       <style type="text/css">
+          .e-ribbon .e-ribbonpaste:before {
+          content: "\e645";
+          font-family:"ej-webfont";
+          font-size: 36px;
+          position: relative;
+          left: -9px;
+          top: -4px;
+          }
+       </style>
     </body>
     <!-- ... -->
         
 {% endhighlight %}
 
-{% highlight css %}
-    
-    <style type="text/css">
-       .e-ribbon .e-ribbonpaste:before {
-       content: "\e645";
-       font-family:"ej-webfont";
-       font-size: 36px;
-       position: relative;
-       left: -9px;
-       top: -4px;
-       }
-    </style>
-        
-{% endhighlight %}
-
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption="Ribbon with customized width"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img7.png"%}
 
 ## Add Tab Groups
 
 This method is used to add Ribbon Group dynamically in the Ribbon control. This method needs three arguments **addTabGroup(Tab index, Groupcollection, Group index).**
 
 * **Tab index**: Index of tab, where the group is to be added.
-
 * **TabGroup collection**: Collection of the groups that group needs to add.
-
 * **Group Index**: Index of ribbon group, where the group is to be added. It is optional argument, when this argument is not given, group is added at last position by default.
 
 {% highlight html %}
@@ -655,20 +627,16 @@ This method is used to add Ribbon Group dynamically in the Ribbon control. This 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img8.png" Caption="Ribbon Add Tab Group functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img8.png"%}
 
 ## Add Tab Group Content
 
 This method is used to add group content dynamically in the ribbon. This method contains five arguments **addTabGroupContent(Tab index, Group index, Subgroup index, Content, Content index).**
 
 * **Tab index**: Ribbon Tab index.
-
 * **Group index**: Ribbon group index.
-
 * **Subgroup Index**: Sub group index. Content to be added belongs to this sub group index.
-
 * **Content**: Collection of the group content that is added as Ribbon group content. 
-
 * **Content Index**: Ribbon content index, this is optional argument. When this argument is not given, the Group content is added at last position by default.
 
 {% highlight html %}
@@ -714,8 +682,7 @@ This method is used to add group content dynamically in the ribbon. This method 
                   //initialize the Ribbon object
                   var ribbonObj = $("#Ribbon").data("ejRibbon");
                   // Add new ribbon content with given list
-                  ribbonObj.addTabGroupContent(1, 0, 0, content, 2);
-              
+                  ribbonObj.addTabGroupContent(1, 0, 0, content, 2);              
                   });                  
        </script>
     </body>
@@ -725,7 +692,7 @@ This method is used to add group content dynamically in the ribbon. This method 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img9.png" Caption="Ribbon Add Group Content functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img9.png"%}
 
 ## Collapse and Expand
 
@@ -768,7 +735,7 @@ The following output is displayed as a result of the above code example.
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img10.png" Caption="Ribbon control collapse functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img10.png"%}
 
 ### Expand
 
@@ -809,16 +776,14 @@ The following screenshot displays the output of the above code example.
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img11.png" Caption="Ribbon control Expand functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img11.png"%}
 
 ## AddTab
 
 This method is used to add tab dynamically in the Ribbon control. This method requires three arguments **addTab(Tabname,TabGroupcollection,index).**
 
 * **Tabname**: Name of the tab.
-
 * **TabGroupcollection**: Collection of the tab groups that tab needs to add.
-
 * **Index**: Index in which the tab is to be added.It is an optional argument. When this argument is not given, by default the tab is added at the last position.
 
 {% highlight html %}
@@ -862,16 +827,14 @@ This method is used to add tab dynamically in the Ribbon control. This method re
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img12.png" Caption="Ribbon AddTab functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img12.png"%}
 
 ## AddContextualTabs
 
 This method is used to add contextual tabs dynamically.This method has two arguments **addContextualTabs(Contextualtabs,index).**
 
 * **Contextualtabs**: Collection of the contextual tabs that contextual tab needs to add.
-
 * **Index**: Index in which the tab is to be added.It is optional argument. When this argument is not given, by default the tab is added at the last position.
-
 
 {% highlight html %}
   
@@ -920,5 +883,5 @@ This method is used to add contextual tabs dynamically.This method has two argum
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img13.png" Caption="Ribbon AddContextualTabs functionality"%}
+{% include image.html url="/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img13.png"%}
 

@@ -9,6 +9,8 @@ documentation: ug
 
 # Customizing the appearance
 
+##Customizing the Barcode color
+
 A page or printed media with **Barcode** often appears colorful in the background and surrounding region with other contents. In such cases the **Barcode** can also be customized to suit the needs. You can achieve this by changing the **darkBarColor** property.
 
 >   **Note:** This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
@@ -27,8 +29,9 @@ $("#barcode").ejBarcode({
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img2.png" Caption="Customized Barcode"%}
+{% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img2.png" Caption=""%}
 
+##Customizing the Barcode height
 The height of the barcode can be changed using the **BarHeight** property. The equivalent property to change the block size for two dimensional barcode is **XDimension**.
 
 {% highlight js %}
@@ -46,4 +49,4 @@ $("#barcode").ejBarcode({
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img3.png" Caption="Barcode with customized height"%}
+{% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img3.png" Caption=""%}

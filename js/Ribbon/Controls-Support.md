@@ -12,15 +12,10 @@ documentation: ug
 In **Ribbon** control, Button,SplitButton,DropDownList Toggle button,Custom controls provide support to the groups.
 
 * **type** property is used to define the controls.
-
 * **ej.Ribbon.type.splitButton**-to add Split button control.
-
 * **ej.Ribbon.type.button**-to add Button control.
-
 * **ej.Ribbon.type.dropDownList**-to add Dropdown List control.
-
 * **ej.Ribbon.type.toggleButton**-to add Toggle button control.
-
 * **ej.Ribbon.type.custom**-to add custom controls.
 
 The default type is **button**.
@@ -72,8 +67,7 @@ The default type is **button**.
 	      type: ej.Ribbon.type.splitButton,
 	      width: 50,
 	      height: 70
-	      }
-	      
+	      }	      
 	      }]
 	      },
 	      {
@@ -182,10 +176,10 @@ The default type is **button**.
 	   </style>
 	</body>
 	<!-- ... -->
-
+	
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Controls-Support_images/Controls-Support_img1.png" Caption="Ribbon control with the default split button,button,dropdown list controls"%}
+{% include image.html url="/js/Ribbon/Controls-Support_images/Controls-Support_img1.png"%}
 

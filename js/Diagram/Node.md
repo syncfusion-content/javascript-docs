@@ -18,25 +18,24 @@ Nodes are graphical object that represents visual data to be placed on the page.
 Node is created from JSON data and added to the **Diagram** model using diagram model’s **node** property. The node’s name must be unique. The following code illustrates how to create a node and add it to the **Diagram.**
 
 {% highlight js %}
+//create a node with default shape (Rectangle)
+var node = {
+    name: "Rect1",
+    width: 100,
+    height: 100,
+    offsetX: 400,
+    offsetY: 60,
+    fillColor: "darkCyan",
+    borderWidth: 2
+};
 
 //node array
 var nodes = [];
-var node =
-   //create a node with default shape (Rectangle)
-   {
-      name: "Rect1",
-      width: 100,
-      height: 100,
-      offsetX: 400,
-      offsetY: 60,
-      fillColor: "darkCyan",
-      borderWidth: 2
-   };
 nodes.push(node);
 
 //add nodes to Diagram
 $("#Diagram").ejDiagram({
-   nodes: nodes
+    nodes: nodes
 });
 {% endhighlight %}
 
@@ -95,7 +94,7 @@ node = {
 
 <script id="htmlTemplate" type="text/x-jsrender">
     <div>
-        <input type="button" value="{{:value}}" />
+        <input type="button" value="{ {: value } }" />
     </div>
 </script>
 {% endhighlight %}

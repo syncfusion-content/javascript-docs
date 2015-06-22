@@ -9,7 +9,7 @@ documentation: ug
 
 # Contextual Tab and Tab Set
 
-You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In **contextualTabs** definition, use tabs property to add contextual tabs and contextual tab set. In tabs definition, use **backgroundColor** property to apply background color to the **Contextual Tabs** and **Tab Set**. Use **borderColor** property to apply border color to the **Contextual Tabs** and **Tab Set**.
+You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In contextualTabs definition, use tabs property to add contextual tabs and contextual tab set. In tabs definition, use **backgroundColor** property to apply background color to the **Contextual Tabs** and **Tab Set**. Use **borderColor** property to apply border color to the **Contextual Tabs** and **Tab Set**.
 
 {% highlight html %}
 
@@ -81,7 +81,7 @@ You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In **cont
 
 {% endhighlight %}
 
-The following screenshot illustrates **Ribbon** with **Contextual Tabs** and **Tab Set**.
+The following screenshot illustrates Ribbon with **Contextual Tabs** and **Tab Set**.
 
 {% include image.html url="/js/Ribbon/Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png" Caption="Ribbon control with the contextual tab and tab set"%}
 

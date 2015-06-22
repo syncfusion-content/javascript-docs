@@ -15,7 +15,7 @@ In this section you can learn how to change the **Chart****dimensions**. You can
 
 You can specify the width and height in pixels to change the dimension of the Chart. 
 
-**Setting size**
+### Setting size
 
 {% highlight js %}
 
@@ -38,7 +38,7 @@ In the above code, the width is set as 800px and height as 600px that displays t
 
 You can also set the width and height of the **Chart** in percentage. The Chart gets its dimension with respect to its container size.
 
-**Setting size in percentage**
+### Setting size in percentage
 
 {% highlight html %}
 
@@ -53,9 +53,7 @@ You can also set the width and height of the **Chart** in percentage. The Chart 
             size: { width: "80%", height: "90%" },
         });
         
-{% endhighlight %}      
-
-
+{% endhighlight %}  
 
 {% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" Caption="Chart with dimension"%}
 

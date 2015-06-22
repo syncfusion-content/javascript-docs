@@ -14,30 +14,16 @@ documentation: ug
 By default, there are 12 theme supports available for Ribbon control namely,   
 
 * Default-theme
-
 * Flat-azure-dark
-
 * Flat-lime
-
 * Flat-lime-dark
-
 * Flat-saffron
-
 * Flat-saffron-dark
-
 * Gradient-azure
-
 * Gradient-azure-dark
-
 * Gradient-lime
-
 * Gradient-lime-dark
-
 * Gradient-saffron
-
 * Gradient-saffron-dark
-
 * Bootstrap theme.
-
-
 

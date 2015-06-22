@@ -18,23 +18,17 @@ You can create **Group** like node and add it to the Diagram model using diagram
 The following code illustrates how a group node is created and added in the nodes array.
 
 {% highlight js %}
-
 //Creates a group node.
-var nodes = [
-   //Group node.
-   {
-      name: "group",
-      type: "group",
-      children: [{
-         name: "node1",
-         parent: "group"
-      }, {
-         name: "node2",
-         parent: "group"
-      }]
-   }
+var nodes = [ //Group node.
+    {
+        name: "group",
+        type: "group",
+        children: [
+            { name: "node1", parent: "group" },
+            { name: "node2", parent: "group" }
+        ]
+    }
 ];
-
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Group_images/Group_img1.png" %}
@@ -152,44 +146,32 @@ The Canvas panel supports absolute positioning and provides the least layout fun
 
 {% highlight js %}
 
-var nodes = [{
-   name: "Canvas",
-   offsetX: 400,
-   offsetY: 400,
-   children: [{
-      type: "node",
-      name: "snode1",
-      fillColor: "darkCyan"
-   }, {
-      type: "node",
-      name: "snode2",
-      marginTop: 30,
-      marginLeft: 30,
-      fillColor: "white"
-   }, {
-      type: "node",
-      name: "snode3",
-      marginTop: 60,
-      marginLeft: 60,
-      fillColor: "darkCyan"
-   }, {
-      type: "node",
-      name: "snode4",
-      marginTop: 90,
-      marginLeft: 90,
-      fillColor: "white"
-   }],
-   //Canvas Panel.
-   container: {
-      type: "canvas"
-   },
-   fillColor: "#E7EBF4",
-   borderColor: "black",
-   paddingLeft: 30,
-   paddingTop: 30,
-   paddingRight: 30,
-   paddingBottom: 30
-}];
+var nodes = [
+    {
+        name: "Canvas",
+        offsetX: 400,
+        offsetY: 400,
+        children: [
+            { type: "node", name: "snode1", fillColor: "darkCyan" },
+            { type: "node", name: "snode2", marginTop: 30, marginLeft: 30, fillColor: "white" },
+            { type: "node", name: "snode3", marginTop: 60, marginLeft: 60, fillColor: "darkCyan" },
+            { type: "node", name: "snode4", marginTop: 90, marginLeft: 90, fillColor: "white" }
+        ],
+
+        //Canvas Panel.
+        container: {
+            type: "canvas"
+        },
+
+        fillColor: "#E7EBF4",
+        borderColor: "black",
+        paddingLeft: 30,
+        paddingTop: 30,
+        paddingRight: 30,
+        paddingBottom: 30
+    }
+];
+
 
 $("#diagram").ejDiagram({
    nodes: nodes,
@@ -212,36 +194,30 @@ Stack panel is used to arrange its childre in a single line or stack order, eith
 
 {% highlight js %}
 
-var nodes = [{
-   type: "group",
-   name: "Stack",
-   offsetX: 200,
-   offsetY: 400,
-   children: [{
-      type: "node",
-      name: "cnode1",
-      fillColor: "darkCyan",
-      horizontalAlign: "left"
-   }, {
-      type: "node",
-      name: "cnode2",
-      fillColor: "darkCyan",
-      horizontalAlign: "right"
-   }, {
-      type: "node",
-      name: "cnode3",
-      fillColor: "darkCyan",
-      horizontalAlign: "stretch"
-   }, ],
-   // Stack panel.
-   container: {
-      type: "stack"
-   },
-   fillColor: "#E7EBF4",
-   borderColor: "black",
-   minHeight: 300,
-   minWidth: 300
-}];
+var nodes = [
+    {
+        type: "group",
+        name: "Stack",
+        offsetX: 200,
+        offsetY: 400,
+        fillColor: "#E7EBF4",
+        borderColor: "black",
+        minHeight: 300,
+        minWidth: 300,
+
+        children: [
+            { type: "node", name: "cnode1", fillColor: "darkCyan", horizontalAlign: "left" },
+            { type: "node", name: "cnode2", fillColor: "darkCyan", horizontalAlign: "right" },
+            { type: "node", name: "cnode3", fillColor: "darkCyan", horizontalAlign: "stretch" }
+        ],
+
+        // Stack panel.
+        container: {
+            type: "stack"
+        }
+    }
+];
+
 $("#diagram").ejDiagram({
    nodes: nodes,
    defaultSettings: {

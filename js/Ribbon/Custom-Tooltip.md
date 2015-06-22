@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Tooltip
 
-The **Ribbon** control has Custom Tooltip support that is displayed when you move the mouse over the control elements. You can define the **CustomTooltip** under the **groups**, **galleryItems**, and **customGalleryItems** etc... **CustomTooltip** contains **title**, **content**, **prefixIcon** properties that are used to set Title, Content and placing the icon into this.
+The **Ribbon** control has Custom Tooltip support that is displayed when you move the mouse over the control elements. You can define the CustomTooltip under the **groups**, **galleryItems**, and **customGalleryItems** etc... CustomTooltip contains **title**, **content**, **prefixIcon** properties that are used to set Title, Content and placing the icon into this.
 
 {% highlight html %}
   
@@ -47,8 +47,8 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
                                  buttonSettings: {
                                      contentType: ej.ContentType.ImageOnly,
                                      prefixIcon: "e-ribbon e-ribbonpaste",
-          height:75,
-          width:70
+                                     height:75,
+                                     width:70
                                  }
                              }
                              ]
@@ -65,5 +65,5 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Custom-Tooltip_images/Custom-Tooltip_img1.png" Caption="Ribbon control with the CustomToolTip."%}
+{% include image.html url="/js/Ribbon/Custom-Tooltip_images/Custom-Tooltip_img1.png"%}
 
