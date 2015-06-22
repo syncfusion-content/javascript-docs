@@ -400,21 +400,22 @@ The **Stacked Header** feature allows additional header rows that span across th
 
 {% highlight html %}
 
- <div id="Grid"></div>
 <script type="text/javascript">
   $(function () {
       var data = ej.DataManager(window.gridData).executeLocal(ej.Query().take(50));
       $("#Grid").ejGrid({
           dataSource: data,
+          allowPaging: true,
           showStackedHeader: true,
-          stackedHeaderRows: [
-             {
-                 stackedHeaderColumn: [{ stackedHeaderText: "Order Details", column: "OrderID,OrderDate,Freight" },
-                     { stackedHeaderText: "Ship Details", column: "ShipName,ShipCity,ShipCountry" }
-                 ]
-             },
+          allowReordering: true,
+          allowResizing: true,
+          stackedHeaderRows: [{
+              stackedHeaderColumns: [{ headerText: "Order Details", column: "OrderID,OrderDate,Freight" }
+              , { headerText: "Ship Details", column: "ShipCity,ShipCountry" }
+              ]
+          }
           ],
-          columns: ["OrderID ", "OrderDate", "Freight", "ShipCity", "ShipCountry"]
+          columns: ["OrderID", "OrderDate", "Freight", "ShipCity", "ShipCountry"]
       });
   });
 </script>

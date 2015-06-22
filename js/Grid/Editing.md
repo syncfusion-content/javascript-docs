@@ -1004,32 +1004,64 @@ The **Server-Side** function is declared with the following parameters for each 
 _Parameters Table_
 
 <table>
-<tr>
-<td>
-<b>Action</b></td><td>
-<b>Parameter Name</b></td><td>
-<b>Example</b></td></tr>
-<tr>
-<td rowspan = "2">
-Update, Insert</td><td rowspan = "2">
-value</td><td>
-public ActionResult Update(EditableOrder value){}</td></tr>
-<tr>
-<td>
-public ActionResult Insert(EditableOrder value){}</td></tr>
-<tr>
-<td>
-Remove</td><td>
-key</td><td>
-public ActionResult Remove(int key){}</td></tr>
-<tr>
-<td>
-Batch Add</td><td>
-added</td><td>
-public ActionResult BatchUpdate(List<Orders> changed, List<Orders> added, List<Orders> deleted){}</td></tr>
-    </table>
-    <br/><br/>
-
+   <tr>
+      <td>
+         <b>Action</b>
+      </td>
+      <td>
+         <b>Parameter Name</b>
+      </td>
+      <td>
+         <b>Example</b>
+      </td>
+   </tr>
+   <tr>
+      <td rowspan = "2">
+         Update, Insert
+      </td>
+      <td rowspan = "2">
+         value
+      </td>
+      <td>
+         public ActionResult Update(EditableOrder value){}
+      </td>
+   </tr>
+   <tr>
+      <td>
+         public ActionResult Insert(EditableOrder value){}
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Remove
+      </td>
+      <td>
+         key
+      </td>
+      <td>
+         public ActionResult Remove(int key){}
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Batch Add
+      </td>
+      <td>
+         added
+      </td>
+      <td rowspan = "3">
+         public ActionResult Remove(int key){}
+      </td>
+   </tr>
+   <tr>
+      <td>Batch Update</td>
+      <td> changed </td>
+   </tr>
+   <tr>
+      <td>Batch Delete</td>
+      <td> deleted</td>
+   </tr>
+</table>
 
 
 
