@@ -62,10 +62,10 @@ The following properties are used to customize the appearance of **Symbol Palett
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th><th></tr>
 <tr>
 <td>
 width</td><td>
@@ -146,10 +146,10 @@ You can customize the preview size and position using the following properties.
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 previewWidth</td><td>

@@ -83,10 +83,10 @@ var node = {
 
 <table>
 <tr>
-<td>
-<b>Event </b></td><td>
-<b>Type</b></td><td>
-<b>Trigger Result</b></td></tr>
+<th>
+Event</th><th>
+Type</th><th>
+Trigger Result</th></tr>
 <tr>
 <td rowspan = "2">
 Start Event</td><td>
@@ -111,9 +111,9 @@ End Event</td><td>
 **Representation of different BPMN events**
 <table>
 <tr>
-<td>
-<b>Event</b></td><td>
-<b>Image</b></td></tr>
+<rh>
+Event</th><th>
+Image</th></tr>
 <tr>
 <td>
 Start –Interrupting</td><td>
@@ -139,9 +139,9 @@ End</td><td>
 **Representation of event trigger states**
 <table>
 <tr>
-<td>
-<b>Trigger Result</b></td><td>
-<b>Image</b></td></tr>
+<th>
+Trigger Result</th><th>
+Image</th></tr>
 <tr>
 <td>
 Message</td><td>
@@ -205,9 +205,9 @@ var node = {
 **Types of Gateway**
 <table>
 <tr>
-<td>
-<b>Gateway Type</b></td><td>
-<b>Image</b></td></tr>
+<th>
+Gateway Type</th><th>
+Image</th></tr>
 <tr>
 <td>
 Exclusive Gateway</td><td>
@@ -241,14 +241,14 @@ There are two types in activity. They are listed as follows.
 
 <table>
 <tr>
-<td>
-<b>Activity </b></td><td>
-<b>Loop</b></td><td>
-<b>Tasks</b></td><td>
-<b>Compensation</b></td><td>
-<b>Call</b></td><td>
-<b>Ad-Hoc</b></td><td>
-<b>Boundary</b></td></tr>
+<th>
+Activity</th><th>
+Loop</th><th>
+Tasks</th><th>
+Compensation</th><th>
+Call</th><th>
+Ad-Hoc</th><th>
+Boundary</th></tr>
 <tr>
 <td>
 <b>Task</b></td><td>

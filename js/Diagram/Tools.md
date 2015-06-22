@@ -13,10 +13,10 @@ When interacting on a diagram’s surface, the Tool property decides the action 
 
 <table>
 <tr>
-<td>
-<b>Precedence</b></td><td>
-<b>Tools</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Precedence</th><th>
+Tools</th><th>
+Description</th></tr>
 <tr>
 <td>
 1st </td><td>

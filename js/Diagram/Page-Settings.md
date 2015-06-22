@@ -13,10 +13,10 @@ documentation: ug
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 pageWidth</td><td>
@@ -105,10 +105,10 @@ Autoscroll feature automatically scrolls the Diagram whenever the node or connec
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 scrollLimit</td><td>

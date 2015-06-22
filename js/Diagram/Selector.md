@@ -13,10 +13,10 @@ Selector behaves like a container for the selected elements and enables you to u
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Type </b></td><td>
-<b>Description.</b></td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 offset</td><td>

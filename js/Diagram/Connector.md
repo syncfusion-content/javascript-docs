@@ -262,10 +262,10 @@ Direction of the Line Bridge can be customized using the **BridgeDirection** pro
 
 <table>
 <tr>
-<td>
-<b> Properties</b></td><td>
-<b>Description</b></td><td>
-<b>Value</b></td></tr>
+<th>
+Properties</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 bridgeDirection</td><td>
@@ -358,10 +358,10 @@ You can customize the appearance of the connector by setting a desired value to 
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 linewidth</td><td>
@@ -429,10 +429,10 @@ Decorator appearance is customized by setting desired value to the appropriate a
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
  width</td><td>
@@ -494,9 +494,9 @@ You can enable or disable certain behaviors of Connectors using the **constraint
 
 <table>
 <tr>
-<td>
-<b>Constraints</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>

@@ -59,9 +59,9 @@ Diagram provides support to export and download diagram as files. You can also e
 
 <table>
 <tr>
-<td>
-<b>Modes</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Modes</th><th>
+Description</th></tr>
 <tr>
 <td>
 Download</td><td>
@@ -79,9 +79,9 @@ You can export any particular region of the **Diagram**. The region to be export
 
 <table>
 <tr>
-<td>
-<b>Region</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Region</th><th>
+Description</th></tr>
 <tr>
 <td>
 Content</td><td>

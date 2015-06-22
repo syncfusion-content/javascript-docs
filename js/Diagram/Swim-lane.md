@@ -17,10 +17,10 @@ A swim lane is a visual element used in process flow diagrams or flowcharts. A t
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Data type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Data type</th><th>
+Description</th></tr>
 <tr>
 <td>
 header</td><td>
@@ -79,10 +79,10 @@ The lane is an object that controls the diagram elements in the swim lane. Lane 
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Data type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Data type</th><th>
+Description</th><th></tr>
 <tr>
 <td>
 header</td><td>
@@ -111,10 +111,10 @@ This is used to define header for a swim lane. It has the following properties.
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Data type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Data type</th><th>
+Description</th></tr>
 <tr>
 <td>
 width</td><td>
@@ -133,10 +133,10 @@ A Phase is a line that separates the swim lane. Phase has following properties.
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Data type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Data type</th><th>
+Description</th></tr>
 <tr>
 <td>
 name</td><td>

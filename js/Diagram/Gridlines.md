@@ -19,9 +19,9 @@ The Diagram model’s **snapSettings.SnapContraints** property is used to contro
 
 <table>
 <tr>
-<td>
-<b>Constraints</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 SnapToHorizontalLines</td><td>

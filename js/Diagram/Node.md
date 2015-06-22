@@ -245,6 +245,7 @@ The following code example illustrates how to enable or disable the **shadow**.
 var node = {
    constraints: ej.datavisualization.Diagram.NodeConstraints.Default | ej.datavisualization.Diagram.NodeConstraints.Shadow
 };
+
 //Disables shadow for the node.
 var node = {
    constraints: node.Constraints & ~ej.datavisualization.Diagram.NodeConstraints.Shadow
@@ -275,10 +276,10 @@ You can customize the appearance of the shapes by using following properties.
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 visible</td><td>
@@ -355,9 +356,9 @@ You can enable or disable certain behaviors of **Nodes** by using Node’s **con
 
 <table>
 <tr>
-<td>
-<b>Constraints</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 Select</td><td>

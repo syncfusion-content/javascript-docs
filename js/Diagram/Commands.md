@@ -29,9 +29,9 @@ There are several commands available in diagram. They are listed as follows.
 <table>
 <tr>
 <td>
-<b>Command</b></td><td>
-<b>Parameter</b></td><td>
-<b>Description</b></td></tr>
+Command</th><th>
+Parameter</th><th>
+Description</th></tr>
 <tr>
 <td>
 align</td><td>
@@ -86,8 +86,8 @@ diagram.align("middle");
 <table>
 <tr>
 <td>
-<b>Command</b></td><td>
-<b>Description</b></td></tr>
+Command</th><th>
+Description</th></tr>
 <tr>
 <td>
 spaceAcross</td><td>
@@ -132,8 +132,8 @@ diagram.spaceDown();
 <table>
 <tr>
 <td>
-<b>Command</b></td><td>
-<b>Description</b></td></tr>
+Command</th><th>
+Description</th></tr>
 <tr>
 <td>
 sameSize</td><td>
@@ -337,9 +337,9 @@ function ZoomOut() {
 <table>
 <tr>
 <td>
-<b>Command</b></td><td>
-<b>Parameter</b></td><td>
-<b>Description</b></td></tr>
+Command</th><th>
+Parameter</th><th>
+Description</th></tr>
 <tr>
 <td>
 nudge</td><td>
@@ -374,9 +374,9 @@ The corresponding arrow keys are used to move the selected elements to up, down,
 <table>
 <tr>
 <td>
-<b>Command</b></td><td>
-<b>Parameter</b></td><td>
-<b>Description</b></td></tr>
+Command</th><th>
+Parameter</th><th>
+Description</th></tr>
 <tr>
 <td>
 fitToPage</td><td>
@@ -412,8 +412,8 @@ diagram.fitToPage("page", "content", {
 <table>
 <tr>
 <td>
-<b>Mode</b></td><td>
-<b>Description</b></td></tr>
+Mode</th><th>
+Description</th></tr>
 <tr>
 <td>
 Page</td><td>
@@ -435,9 +435,9 @@ Region is to specify the region/bounds of Diagram content to fit into view.
 
 <table>
 <tr>
-<td>
-<b>Region</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Region</th><th>
+Description</th></tr>
 <tr>
 <td>
 Content</td><td>

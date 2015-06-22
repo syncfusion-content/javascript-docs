@@ -86,10 +86,10 @@ You can customize the Port appearance by setting desired values to the appropria
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description </b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 visibility</td><td>
@@ -149,9 +149,9 @@ You can enable or disable certain behaviors of Port using Port’s **constraints
 
 <table>
 <tr>
-<td>
-<b>Constraints</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>

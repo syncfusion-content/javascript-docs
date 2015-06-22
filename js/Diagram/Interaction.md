@@ -15,9 +15,9 @@ There are many interactive features over Diagram surface. A collection of predef
 
 <table>
 <tr>
-<td>
-<b>Tool name</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Tool name</th><th>
+Description</th></tr>
 <tr>
 <td>
 panTool</td><td>
@@ -110,10 +110,10 @@ Diagram has an option to create additional selection handles around the selector
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 name</td><td>
@@ -287,9 +287,9 @@ Diagram has several keyboard functions support and they are listed as follows.
 
 <table>
 <tr>
-<td>
-<b>Shortcut Key</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 Ctrl + A</td><td>
@@ -368,10 +368,10 @@ The **snap-to-grid** feature allows diagram objects to snap the nearest intersec
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Data Type</b></td><td>
-<b>Descriptions</b></td></tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Descriptions</th></tr>
 <tr>
 <td>
 horizontalGridLines</td><td>

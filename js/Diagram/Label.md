@@ -164,10 +164,10 @@ You can align the Label using its alignment properties.
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 textAlign</td><td>
@@ -210,11 +210,11 @@ var label = {
 
 <table>
 <tr>
-<td>
-<b>Horizontal Alignment</b></td><td>
-<b>Vertical Alignment</b></td><td>
-<b>Offset</b></td><td>
-<b>Image</b></td></tr>
+<th>
+Horizontal Alignment</th><th>
+Vertical Alignment</th><th>
+Offset</th><th>
+Image</th></tr>
 <tr>
 <td>
 Center</td><td>
@@ -257,10 +257,10 @@ var label = {
 
 <table>
 <tr>
-<td>
-<b>Values</b></td><td>
-<b>Description</b></td><td>
-<b>Image</b></td></tr>
+<th>
+Values</th><th>
+Description</th><th>
+Image</th></tr>
 <tr>
 <td>
 NoWrap</td><td>

@@ -13,9 +13,9 @@ Diagram provides support to enable or disable certain diagram behaviors.
 
 <table>
 <tr>
-<td>
-<b>Constraints</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>
