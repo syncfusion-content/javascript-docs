@@ -17,9 +17,9 @@ It includes more than **80+** components (web and mobile) for both web and mobil
 
 <table>
 <tr>
-<td>
-<b>Categories</b></td><td colspan = "3">
-<b>Components</b></td></tr>
+<th>
+Categories</th><th colspan = "3">
+Components</th></tr>
 <tr>
 <td rowspan = "2">
 Grid</td><td colspan = "3">
@@ -49,9 +49,8 @@ DataVisualization</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview5.htm">Barcode</a></td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview53.htm">TagCloud</a></td></tr>
 <tr><td>
-Schedule</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview47.htm">Schedule</a></td><td colspan = "2">
-</td></tr>
+Schedule</td><td colspan = "3">
+<a href="http://help.syncfusion.com/ug/js/Documents/overview47.htm">Schedule</a></td></tr>
 <tr>
 <td rowspan = "2">
 Layout</td><td>
@@ -123,7 +122,7 @@ Navigation</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview48.htm">Scrollbar</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview31.htm">NavigationDrawer</a></td><td>
+<a href="http://help.syncfusion.com/ug/js/Documents/overview31.htm">NavigationDrawer</a></td><td colspan = "2">
 <a href="http://help.syncfusion.com/ug/js/Documents/overview57.htm">Toolbar</a></td><td>
 </td></tr>
 <tr>
@@ -142,40 +141,25 @@ Business Intelligence</td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview34.htm">OlapGauge</a></td></tr>
 <tr>
 <td>
-Reporting</td><td>
+Reporting</td><td colspan = "3">
 <a href="http://help.syncfusion.com/ug/js/Documents/overview43.htm">ReportViewer</a></td></tr>
 <tr>
 <td>
 Others</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/gettingstarted5.htm">Calculate</a></td><td>
+<a href="http://help.syncfusion.com/ug/js/Documents/gettingstarted5.htm">Calculate</a></td><td colspan = "2">
 <a href="http://help.syncfusion.com/ug/js/index.html">DataManager</a></td></tr>
 </table>
 
 All our web UI widgets supports the below listed major **key features** – which are more essential in building the web application in recent days.
 
-
-
-<table>
-<tr>
-<td>
-                      Built-in themes</td><td>
-          AngularJS</td></tr>
-<tr>
-<td>
-                      KnockoutJS</td><td>
-          Localization</td></tr>
-<tr>
-<td>
-                      Accessibility</td><td>
-          TypeScript</td></tr>
-<tr>
-<td>
-                      Unobtrusive</td><td>
-          RequireJS</td></tr>
-<tr>
-<td>
-                      <a href="http://help.syncfusion.com/ug/js/Documents/overview13.htm">Data-binding</a></td><td>
-</td></tr>
-</table>
+* Built-in themes
+* AngularJS
+* KnockoutJS
+* Localization
+* Accessibility
+* TypeScript
+* Unobtrusive
+* RequireJS
+* Data-binding
 
 
