@@ -7,14 +7,13 @@ control: Introduction
 documentation: ug
 ---
 
-## Wiring Events
+# Wiring Events
 
 Whenever the control undergoes some changes or action, it should be notified to the users properly. To notify such actions, the appropriate events are needed to be bind to the control. Events are wired the same way as jQuery events are bound, either **during or after control initialization**.
 
-#### During Initialization
+## During Initialization
 
 {% highlight js %}
-
 
       $("jquery-selector").ej-plugin-name({ eventName : "eventhandler" });
    //Example
@@ -25,8 +24,7 @@ Whenever the control undergoes some changes or action, it should be notified to 
    
 {% endhighlight %}
 
-#### After initialization
-
+## After initialization
 
 {% highlight js %}
 
@@ -44,9 +42,6 @@ Whenever the control undergoes some changes or action, it should be notified to 
          // event handler
    }); 
 
-
 {% endhighlight %}
-
-
 
 
