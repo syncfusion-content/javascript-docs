@@ -24,8 +24,7 @@ var connectors = [{
    name: "connector",
    lineWidth: 2,
    sourcePoint: { x: 300, y: 40 },
-   targetPoint: { x: 400, y: 150
-   }
+   targetPoint: { x: 400, y: 150 }
 }];
 
 //add connectors to diagram
@@ -35,6 +34,79 @@ $("#Diagram").ejDiagram({
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Connector_images/Connector_img2.png" %}
+
+## Connecting Nodes
+
+Connector is connected to the bounds of the node and at a specific point on the node .You are required to assign the source node name to connector’s **sourceNode** property and target node name to connector’s **targetNode** property, in order to establish the connection. The port to port connection between specific points on node is established by assigning the name of the node’s port to connector’s **targetPort /sourcePort**. At runtime, you can change the point of connection while dragging or rotating node.
+
+{% highlight js %}
+
+//for node creation refer the link Node creation
+//create a connection between headNode/tailNode using connector
+
+var connector = [{
+    segment: type: ej.datavisualization.Diagram.Segment.Orthogonal
+    sourceNode: "headNode", //set name of sourceNode
+    targetNode: "tailNode" //set name of targetNode
+}];
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img17.png" %}
+
+The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on **Source/Target Node** of Connector. In case of static or specific point connection at runtime, the **Port** assists to maintain specific point connection between Nodes.
+
+## Connecting Ports
+
+**Port** establishes the connection with nodes at a specific point. For creating specific port connection, refer the link [Port to Port Connection.](/js/Diagram/Port)
+
+## Appearance
+
+You can customize the appearance of the connector by setting a desired value to the appropriate appearance properties. The following code illustrates how to customize the appearance of connector.
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Data Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+linewidth</td><td>
+number</td><td>
+Gets or sets the width of the line</td></tr>
+<tr>
+<td>
+lineDashArray</td><td>
+string</td><td>
+Gets or sets the pattern of dashes and gaps used to stroke connector border.</td></tr>
+<tr>
+<td>
+lineColor</td><td>
+String</td><td>
+Gets or sets the line color of the connector</td></tr>
+<tr>
+<td>
+opacity</td><td>
+number</td><td>
+Gets or sets the opacity of the connector</td></tr>
+</table>
+
+
+{% highlight js %}
+var segments = [{
+    type: "orthogonal"
+}];
+
+//set various appearance properties to connector
+connectors = [{
+    name: "connector1",
+    lineWidth: 2,
+    segments: segments,
+    lineColor: "black",
+    sourcePoint: { x: 210, y: 40 },
+    targetPoint: { x: 450, y: 150 }
+}];
+{% endhighlight %}
 
 ## Segments
 
@@ -327,79 +399,6 @@ var connector = {
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Connector_images/Connector_img16.png" %}
-
-## Connecting Nodes
-
-Connector is connected to the bounds of the node and at a specific point on the node .You are required to assign the source node name to connector’s **sourceNode** property and target node name to connector’s **targetNode** property, in order to establish the connection. The port to port connection between specific points on node is established by assigning the name of the node’s port to connector’s **targetPort /sourcePort**. At runtime, you can change the point of connection while dragging or rotating node.
-
-{% highlight js %}
-
-//for node creation refer the link Node creation
-//create a connection between headNode/tailNode using connector
-
-var connector = [{
-    segment: type: ej.datavisualization.Diagram.Segment.Orthogonal
-    sourceNode: "headNode", //set name of sourceNode
-    targetNode: "tailNode" //set name of targetNode
-}];
-{% endhighlight %}
-
-{% include image.html url="/js/Diagram/Connector_images/Connector_img17.png" %}
-
-The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on **Source/Target Node** of Connector. In case of static or specific point connection at runtime, the **Port** assists to maintain specific point connection between Nodes.
-
-## Connecting Ports
-
-**Port** establishes the connection with nodes at a specific point. For creating specific port connection, refer the link [Port to Port Connection.](/js/Diagram/Port)
-
-## Appearance
-
-You can customize the appearance of the connector by setting a desired value to the appropriate appearance properties. The following code illustrates how to customize the appearance of connector.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-linewidth</td><td>
-number</td><td>
-Gets or sets the width of the line</td></tr>
-<tr>
-<td>
-lineDashArray</td><td>
-string</td><td>
-Gets or sets the pattern of dashes and gaps used to stroke connector border.</td></tr>
-<tr>
-<td>
-lineColor</td><td>
-String</td><td>
-Gets or sets the line color of the connector</td></tr>
-<tr>
-<td>
-opacity</td><td>
-number</td><td>
-Gets or sets the opacity of the connector</td></tr>
-</table>
-
-
-{% highlight js %}
-var segments = [{
-    type: "orthogonal"
-}];
-
-//set various appearance properties to connector
-connectors = [{
-    name: "connector1",
-    lineWidth: 2,
-    segments: segments,
-    lineColor: "black",
-    sourcePoint: { x: 210, y: 40 },
-    targetPoint: { x: 450, y: 150 }
-}];
-{% endhighlight %}
 
 ## Decorator
 
