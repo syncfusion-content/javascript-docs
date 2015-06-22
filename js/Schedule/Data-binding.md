@@ -67,7 +67,7 @@ The entire records that are initially assigned through dataSource is taken into 
 
 
 
-**appointment settings:**
+**Appointment settings:**
 
 **location**
 
@@ -139,7 +139,7 @@ The entire records that are initially assigned through dataSource is taken into 
 
 On executing the above specified code the **Location** field will be added in the create appointment window as follows:
 
-{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img1.png" Caption="schedule with location field."%}
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img1.png" Caption=""%}
 
 
 **priority**
@@ -232,7 +232,7 @@ On executing the above specified code the **Location** field will be added in th
 
 On executing the above specified code the **Scheduler** displays the appointments across the specific timeslots as follows:
 
-{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img2.png" Caption="schedule with Local Data Binding."%}
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img2.png" Caption=""%}
 
 
 
@@ -285,7 +285,7 @@ $(function () {
 
 The following screenshot displays the remote data bound to the **Schedule** control.
 
-{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img3.png" Caption="schedule with Remote Data Binding."%}
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img3.png" Caption=""%}
 
 **Load On Demand**
 
@@ -351,7 +351,7 @@ The following screenshot is the result of the above code example.
 {% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img5.png" Caption="Schedule with load on demand."%}
 
 
-* [Click here](http://js.syncfusion.com/demos/web/) to see how **load on demand** works with **Schedule****.**
+* [Click here](http://js.syncfusion.com/demos/web/#!/azure/schedule/databinding/loaddataondemand) to see how **load on demand** works with **Schedule**.
 
 
 

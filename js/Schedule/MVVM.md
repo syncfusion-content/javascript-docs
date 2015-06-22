@@ -64,26 +64,25 @@ You can render the **Schedule** by using the following code example. Object in t
 
 {% highlight html %}
 
-    <!--To Render the Schedule-->
-    <ej-schedule style="float: left" id="Ej-Schedule1">
-    <!--Adding content menu item for appointment -->
-    <e-contextMenuSettings-menuItems-appointment>
-    < e-appointment e-id="open" e-text="Open Appointment"></ e-appointment>
-    < e-appointment e-id="delete" e-text="Delete Appointment"></ e-appointment>
-    < e-appointment e-id="categorize" e-text="Delete Appointment">
-    </ e-appointment>
-    </e-contextMenuSettings-menuItems-appointment>
-    <!--Adding content menu item for cells -->
-    <e-contextMenuSettings-menuItems-cells>
-    <e-contextMenuSettings-menuItems-cell
-    e-id="new" e-text="Create New Appointment">
-    </e-contextMenuSettings-menuItems-cell>
-    <e-contextMenuSettings-menuItems-cell
-    e-id="recurrence" e-text="Create recurrence Appointment">
-    </e-contextMenuSettings-menuItems-cell>
-    </e-contextMenuSettings-menuItems-cells>
-    </ej-schedule>
-
+   <!--To Render the Schedule-->
+<ej-schedule style="float: left" id="Ej-Schedule1">
+   <!--Adding content menu item for appointment -->
+   <e-contextMenuSettings-menuItems-appointment>
+      < e-appointment e-id="open" e-text="Open Appointment"></ e-appointment>
+      < e-appointment e-id="delete" e-text="Delete Appointment"></ e-appointment>
+      < e-appointment e-id="categorize" e-text="Delete Appointment">
+      </ e-appointment>
+   </e-contextMenuSettings-menuItems-appointment>
+   <!--Adding content menu item for cells -->
+   <e-contextMenuSettings-menuItems-cells>
+      <e-contextMenuSettings-menuItems-cell
+         e-id="new" e-text="Create New Appointment">
+      </e-contextMenuSettings-menuItems-cell>
+      <e-contextMenuSettings-menuItems-cell
+         e-id="recurrence" e-text="Create recurrence Appointment">
+      </e-contextMenuSettings-menuItems-cell>
+   </e-contextMenuSettings-menuItems-cells>
+</ej-schedule>
 
 
 {% endhighlight %}
@@ -99,32 +98,31 @@ You can render the **Schedule** by using the following code example. Object in t
 {% highlight html %}
 
 <!--To Render the Schedule-->
-
-    <ej-schedule style="float: left" id="Ej-Schedule1" e-categorizesetting-enable="true"
-    e-categorizesetting-allowmultiple="true" e-categorizesetting-text="text"
-    e-categorizesetting-color="color"
-    e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
-    <!--Adding content menu item for appointment -->
-    <e-contextMenuSettings-menuItems-appointment>
-    </e-contextMenuSettings-menuItems-appointment>
-    <!--Adding content menu item for cells -->
-    <e-contextMenuSettings-menuItems-cells>
-    </e-contextMenuSettings-menuItems-cells>
-    <e-categorizesetting-datasource>
-    <e-categorizesetting-datasource text="Blue category"
-    color="Blue" fontcolor="Red" id="1">
-    </e-categorizesetting-datasource>
-    <e-categorizesetting-datasource text="yellow category"
-    color="yellow" fontcolor="Red" id="2">
-    </e-categorizesetting-datasource>
-    <e-categorizesetting-datasource text="red category" color="red"
-    fontcolor="Red" id="3">
-    </e-categorizesetting-datasource>
-    <e-categorizesetting-datasource text="orange category" color="orange"
-    fontcolor="Red" id="4">
-    </e-categorizesetting-datasource>
-    </e-categorizesetting-datasource>
-    </ej-schedule>
+<ej-schedule style="float: left" id="Ej-Schedule1" e-categorizesetting-enable="true"
+   e-categorizesetting-allowmultiple="true" e-categorizesetting-text="text"
+   e-categorizesetting-color="color"
+   e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
+   <!--Adding content menu item for appointment -->
+   <e-contextMenuSettings-menuItems-appointment>
+   </e-contextMenuSettings-menuItems-appointment>
+   <!--Adding content menu item for cells -->
+   <e-contextMenuSettings-menuItems-cells>
+   </e-contextMenuSettings-menuItems-cells>
+   <e-categorizesetting-datasource>
+      <e-categorizesetting-datasource text="Blue category"
+         color="Blue" fontcolor="Red" id="1">
+      </e-categorizesetting-datasource>
+      <e-categorizesetting-datasource text="yellow category"
+         color="yellow" fontcolor="Red" id="2">
+      </e-categorizesetting-datasource>
+      <e-categorizesetting-datasource text="red category" color="red"
+         fontcolor="Red" id="3">
+      </e-categorizesetting-datasource>
+      <e-categorizesetting-datasource text="orange category" color="orange"
+         fontcolor="Red" id="4">
+      </e-categorizesetting-datasource>
+   </e-categorizesetting-datasource>
+</ej-schedule>
 
 {% endhighlight %}
 
@@ -132,7 +130,7 @@ You can render the **Schedule** by using the following code example. Object in t
 
 Execute the above codes to render the Resultant schedule as follows.
 
-{% include image.html url="/js/Schedule/MVVM_images/MVVM_img1.png" Caption="Schedule Rendered in Angular JS."%}
+{% include image.html url="/js/Schedule/MVVM_images/MVVM_img1.png" Caption=""%}
 
 
 **Two Way Binding** 
@@ -147,65 +145,61 @@ Execute the above codes to render the Resultant schedule as follows.
 
 <!DOCTYPE html>
 <html ng-app="syncApp" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
-    <!—Refer the necessary script here-->
-</head>
-<body ng-controller="ScheduleCtrl" style="width: 50%">
-    Current View
-    <input id="ddlView" ej-dropdownlist e-datasource="dataList" e-value="drpvalue" e-width="107px" />
-    Current Date
-    <input id="datepick1" ej-datepicker e-value="setDate" e-width="107px" />
-    <ej-schedule style="float: left" width="400" id="Ej-Schedule1"
-        e-appointmentsettings-datasource="appointments"
-        e-appointmentsettings-id="Id" e-appointmentsettings-subject="Subject"
-        e-appointmentsettings-starttime="StartTime"
-        e-appointmentsettings-endtime="EndTime"
-        e-appointmentsettings-description="Description"
-        e-appointmentsettings-allday="AllDay"
-        e-appointmentsettings-recurrence="Recurrence"
-        e-appointmentsettings-recurrencerule="RecurrenceRule"
-        e-width="100%" e-height="525px" e-currentview="setView"
-        e-currentdate="setDate" e-contextmenusettings-enable="true"
-        e-categorizesetting-enable="true" e-categorizesetting-allowmultiple="true"
-        e-categorizesetting-text="text" e-categorizesetting-color="color"
-        e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
-<e-categorizesetting-datasource>
-<e-categorizesetting-datasource text="Blue category" color="Blue" fontcolor="Red" id="1"></e-categorizesetting-datasource>
-<e-categorizesetting-datasource text="yellow category" color="yellow" fontcolor="Red" id="2"></e-categorizesetting-datasource>
-<e-categorizesetting-datasource text="red category" color="red" fontcolor="Red" id="3"></e-categorizesetting-datasource>
-<e-categorizesetting-datasource text="orange category" color="orange" fontcolor="Red" id="4"></e-categorizesetting-datasource>
-</e-categorizesetting-datasource>
-<e-contextMenuSettings-menuItems-appointment>
-<appointment e-id="open" e-text="Open Appointment"></appointment>
-<appointment e-id="delete" e-text="Delete Appointment"></appointment>
-</e-contextMenuSettings-menuItems-appointment>
-<e-contextMenuSettings-menuItems-cells>
-<e-contextMenuSettings-menuItems-cell
-e-id="new" e-text="Create New Appointment">
-</e-contextMenuSettings-menuItems-cell>
-<e-contextMenuSettings-menuItems-cell
-e-id="recurrence" e-text="Create recurrence Appointment">
-</e-contextMenuSettings-menuItems-cell>
-<e-contextMenuSettings-menuItems-cell
-e-id="today" e-text="Today">
-</e-contextMenuSettings-menuItems-cell>
-<e-contextMenuSettings-menuItems-cell
-e-id="gotodate" -text="Go to date">
-</e-contextMenuSettings-menuItems-cell>
-</e-contextMenuSettings-menuItems-cells>
-</ej-schedule>
-    <script>
-        <!--binding the value to the scope variables in application controller-->
-    angular.module('syncApp', ['ejangular'])
-    .controller('ScheduleCtrl', function ($scope) {
-        $scope.appointments = window.Localization;
-        $scope.setView = "week";
-        $scope.setDate = new Date();
-    });
-    $("#sampleProperties").ejPropertiesPanel();
-    </script>
-</body>
+   <head>
+      <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
+      <!—Refer the necessary script here-->
+   </head>
+   <body ng-controller="ScheduleCtrl" style="width: 50%">
+      Current View
+      <input id="ddlView" ej-dropdownlist e-datasource="dataList" e-value="drpvalue" e-width="107px" />
+      Current Date
+      <input id="datepick1" ej-datepicker e-value="setDate" e-width="107px" />
+      <ej-schedule style="float: left" width="400" id="Ej-Schedule1"
+         e-appointmentsettings-datasource="appointments"
+         e-appointmentsettings-id="Id" e-appointmentsettings-subject="Subject"
+         e-appointmentsettings-starttime="StartTime"
+         e-appointmentsettings-endtime="EndTime"
+         e-appointmentsettings-description="Description"
+         e-appointmentsettings-allday="AllDay"
+         e-appointmentsettings-recurrence="Recurrence"
+         e-appointmentsettings-recurrencerule="RecurrenceRule"
+         e-width="100%" e-height="525px" e-currentview="setView"
+         e-currentdate="setDate" e-contextmenusettings-enable="true"
+         e-categorizesetting-enable="true" e-categorizesetting-allowmultiple="true"
+         e-categorizesetting-text="text" e-categorizesetting-color="color"
+         e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
+         <e-categorizesetting-datasource>
+            <e-categorizesetting-datasource text="Blue category" color="Blue" fontcolor="Red" id="1"></e-categorizesetting-datasource>
+            <e-categorizesetting-datasource text="yellow category" color="yellow" fontcolor="Red" id="2"></e-categorizesetting-datasource>
+            <e-categorizesetting-datasource text="red category" color="red" fontcolor="Red" id="3"></e-categorizesetting-datasource>
+            <e-categorizesetting-datasource text="orange category" color="orange" fontcolor="Red" id="4"></e-categorizesetting-datasource>
+         </e-categorizesetting-datasource>
+         <e-contextMenuSettings-menuItems-appointment>
+            <appointment e-id="open" e-text="Open Appointment"></appointment>
+            <appointment e-id="delete" e-text="Delete Appointment"></appointment>
+         </e-contextMenuSettings-menuItems-appointment>
+         <e-contextMenuSettings-menuItems-cells>
+            <e-contextMenuSettings-menuItems-cell
+               e-id="new" e-text="Create New Appointment"></e-contextMenuSettings-menuItems-cell>
+            <e-contextMenuSettings-menuItems-cell
+               e-id="recurrence" e-text="Create recurrence Appointment"></e-contextMenuSettings-menuItems-cell>
+            <e-contextMenuSettings-menuItems-cell
+               e-id="today" e-text="Today"></e-contextMenuSettings-menuItems-cell>
+            <e-contextMenuSettings-menuItems-cell
+               e-id="gotodate" -text="Go to date"></e-contextMenuSettings-menuItems-cell>
+         </e-contextMenuSettings-menuItems-cells>
+      </ej-schedule>
+      <script>
+         <!--binding the value to the scope variables in application controller-->
+         angular.module('syncApp', ['ejangular'])
+         .controller('ScheduleCtrl', function ($scope) {
+         $scope.appointments = window.Localization;
+         $scope.setView = "week";
+         $scope.setDate = new Date();
+         });
+         $("#sampleProperties").ejPropertiesPanel();
+      </script>
+   </body>
 </html>
 
 
@@ -215,7 +209,7 @@ e-id="gotodate" -text="Go to date">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Schedule/MVVM_images/MVVM_img2.png" Caption=" ScheduleControl with two way binding in Angular JS."%}
+{% include image.html url="/js/Schedule/MVVM_images/MVVM_img2.png" Caption=""%}
 
 
 **Knockout binding**
@@ -234,34 +228,34 @@ Execute the above code to render the following output.
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Essential JavaScript for Knockout</title>
-</head>
-<body>
-    <div id="Div1"
-        data-bind="ejSchedule: {
-width: '100%',
-appointmentSettings: {
-dataSource: appointments,
-id: 'Id', subject: 'Subject', location: 'Location',
-description: 'Description', startTime: 'StartTime',
-endTime: 'EndTime', allDay: 'AllDay', recurrence: 'Recurrence',
-recurrenceRule: 'RecurrenceRule' },
-currentView: view, currentDate: date }">
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            window.viewModel = {
-                appointments: ko.observable(window.API),
-                view: ko.observable("week"),
-                date: ko.observable(new Date())
-            };
-            $(function () {
-                ko.applyBindings(viewModel);
-            });
-        });
-    </script>
-</body>
+   <head>
+      <title>Essential JavaScript for Knockout</title>
+   </head>
+   <body>
+      <div id="Div1"
+         data-bind="ejSchedule: {
+         width: '100%',
+         appointmentSettings: {
+         dataSource: appointments,
+         id: 'Id', subject: 'Subject', location: 'Location',
+         description: 'Description', startTime: 'StartTime',
+         endTime: 'EndTime', allDay: 'AllDay', recurrence: 'Recurrence',
+         recurrenceRule: 'RecurrenceRule' },
+         currentView: view, currentDate: date }">
+      </div>
+      <script type="text/javascript">
+         $(function () {
+             window.viewModel = {
+                 appointments: ko.observable(window.API),
+                 view: ko.observable("week"),
+                 date: ko.observable(new Date())
+             };
+             $(function () {
+                 ko.applyBindings(viewModel);
+             });
+         });
+      </script>
+   </body>
 </html>
 
 
@@ -271,5 +265,5 @@ currentView: view, currentDate: date }">
 
 Output of the above code example is as follows.
 
-{% include image.html url="/js/Schedule/MVVM_images/MVVM_img3.png" Caption=" Schedule with Knockout Binding."%}
+{% include image.html url="/js/Schedule/MVVM_images/MVVM_img3.png" Caption=""%}
 

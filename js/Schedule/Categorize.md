@@ -141,4 +141,4 @@ The following code example illustrates on how to render categorize feature in th
 
 The output of the above code is illustrated as follows.
 
-{% include image.html url="/js/Schedule/Categorize_images/Categorize_img1.png" Caption="Schedule for the categorize option."%}
+{% include image.html url="/js/Schedule/Categorize_images/Categorize_img1.png" Caption=""%}

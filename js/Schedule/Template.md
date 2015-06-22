@@ -80,21 +80,21 @@ documentation: ug
 
 <!-- appointment template definition -->
 <script id="apptemplate" type="text/x-jsrender">
-    <div style="height:100%">
-    <div style='float:left; width:50px;'>
-    {{:~format(StartTime)}}
-</div>
-<div>
-<div>{{:Subject}}</div>
-</div>
-</div>
+   <div style="height:100%">
+   <div style='float:left; width:50px;'>
+   {{:~format(StartTime)}}
+   </div>
+   <div>
+   <div>{{:Subject}}</div>
+   </div>
+   </div>
 </script>
 
 {% endhighlight %}
 
 The output for the above code is as follows that displays the appointment with the template defined for it.
 
-{% include image.html url="/js/Schedule/Template_images/Template_img1.png" Caption="schedule with template."%}
+{% include image.html url="/js/Schedule/Template_images/Template_img1.png" Caption=""%}
 
 
 ## Resource Header Template
@@ -209,13 +209,13 @@ The output for the above code is as follows that displays the appointment with t
 
 
 
-> Important: The above used images should be present in a separate images folder, so that it will be referred properly.The images name should be saved with id as same as given in the resourceSettings inorder to set unqiue images to all resources.
+> **Important**: The above used images should be present in a separate images folder, so that it will be referred properly.The images name should be saved with id as same as given in the resourceSettings inorder to set unqiue images to all resources.
 
 
 The output for the above code which displays the resource with the template defined for it is given below.
 
 
-{% include image.html url="/js/Schedule/Template_images/Template_img2.png" Caption="schedule with Resources header template."%}
+{% include image.html url="/js/Schedule/Template_images/Template_img2.png" Caption=""%}
 
 
 

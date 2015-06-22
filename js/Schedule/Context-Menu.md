@@ -83,7 +83,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Schedule/Context-Menu_images/Context-Menu_img1.png" Caption="schedule with appointment menu items."%}
+{% include image.html url="/js/Schedule/Context-Menu_images/Context-Menu_img1.png" Caption=""%}
 
 
 **Categorize** 
@@ -152,7 +152,7 @@ You can refer the following code example to render the categorize options in the
 
 * Execute the above code to render the following output with categorized appointments. Also when you right click “Appointment”, the context menu with categorize option is displayed as follows.
 
-{% include image.html url="/js/Schedule/Context-Menu_images/Context-Menu_img2.png" Caption="Schedule for the categorize menu item in context menu."%}
+{% include image.html url="/js/Schedule/Context-Menu_images/Context-Menu_img2.png" Caption=""%}
 
 **Cells** 
 
@@ -218,4 +218,4 @@ $(function () {
 
 Execute the above code to render the following output when you right-click on the cells.
 
-{% include image.html url="/js/Schedule/Context-Menu_images/Context-Menu_img3.png" Caption="schedule with cells."%}
+{% include image.html url="/js/Schedule/Context-Menu_images/Context-Menu_img3.png" Caption=""%}

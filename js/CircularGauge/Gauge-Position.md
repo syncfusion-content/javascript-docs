@@ -85,5 +85,5 @@ The possible enum values for the gaugePosition are as follows:
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Gauge-Position_images/Gauge-Position_img1.png" Caption="Semi-circular Gauge with Default topleft position"%}
+{% include image.html url="/js/CircularGauge/Gauge-Position_images/Gauge-Position_img1.png" Caption=""%}
 

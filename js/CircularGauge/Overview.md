@@ -24,10 +24,7 @@ The **Circular****Gauge** control visualizes the numerical values of scales in a
 * Indicators
 
 
-
-{% include image.html url="/js/CircularGauge/Overview_images/Overview_img1.png" Caption="Circular Gauge Control Structure"%}
-
-The gauge display can also be customized either as a full circle or a half circle based on individual requirements. Among other helpful features, the **Circular****Gauge** control also includes advanced user interactivity.
+The gauge display can also be customized either as a full circle or a half circle based on individual requirements. Among other helpful features, the **Circular** **Gauge** control also includes advanced user interactivity.
 
 **Key Features**
 
