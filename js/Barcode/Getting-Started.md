@@ -11,10 +11,6 @@ documentation: ug
 
 This section explains you briefly on how to create a **Barcode** in your application with **JavaScript**.
 
-##Control Structure
-
-{% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img1.png" Caption="Control structure"%}
-
 ## Create your first Barcode in JavaScript
 
 You can easily configure the **Barcode** to any **DOM** element such as div or span. It takes text and symbol as input and renders the encoded text as **Barcode**.
@@ -64,5 +60,4 @@ Add the following script in the **HTML** file to initialize **ejBarcode**.
 {% endhighlight %}
 
 The above code gives the output displayed in following screenshot.
-
-{% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img2.png" Caption="QR Code"%}
+{% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
