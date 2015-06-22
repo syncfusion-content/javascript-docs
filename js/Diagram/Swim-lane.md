@@ -132,4 +132,4 @@ var swimlane = {
 {% endhighlight %}
 After adding a node into a lane, the swim lane will display as follows.
 {% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img3.png" %}
-Nodes can also be added into the lanes interactively by dropping nodes onto the palette. Similarly connectors can also be added lane's children or from palette.
+Nodes can also be added into the lanes interactively by dropping nodes from the palette. Similarly connectors can also be added using lane's children or from palette.

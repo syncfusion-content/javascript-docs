@@ -172,9 +172,9 @@ The following code example illustrates how to customize **Preview Content**.
 {% highlight js %}
 //set properties to symbol palette preview
 previewWidth: 100,
-    previewHeight: 100,
-    previewOffset: {
-        x: 102,
-        y: 102
-    }
+previewHeight: 100,
+previewOffset: {
+    x: 102,
+    y: 102
+}
 {% endhighlight %}

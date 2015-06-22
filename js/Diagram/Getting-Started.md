@@ -15,7 +15,7 @@ This section explains briefly about how to create a **Diagram** in your applicat
 
 Getting started with your **Essential JavaScript Diagram** is easy. You can start by creating a simple **Organizational Chart**.
 
-1. Create an HTML file and add the necessary script and CSS files in the Head tag as shown in the following code example.
+1\. Create an HTML file and add the necessary script and CSS files in the Head tag as shown in the following code example.
 
 {% highlight html %}
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -31,7 +31,7 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 </html>
 {% endhighlight %}
 
-2. Add the &lt;div&gt; element in the body tag to render the Diagram and initialize the Diagram widget as follows.
+2\. Add the &lt;div&gt; element in the body tag to render the Diagram and initialize the Diagram widget as follows.
 
 {% highlight html %}
 <body>
@@ -45,7 +45,7 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 </body>
 {% endhighlight %}
 
-3. This creates an empty diagram. In the following section, you can learn how to add “Employee Details” in the Diagram.
+3\. This creates an empty diagram. In the following section, you can learn how to add “Employee Details” in the Diagram.
 
 {% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img2.png" %}
 
@@ -54,7 +54,7 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 Define “Employee Information” as JSON data. The following code example shows a list of employees whose ‘Name’ value is used as a unique identifier and the ‘ReportingPerson’ value is used to identify the person to whom they report to in the organization.
 
 {% highlight js %}
-//Include the script in the <Script> tag.
+//Include the script in the <Script> </Script> tag.
 //Initialize data source...
 var data = [
     { "name": "Elizabeth", "fillColor": "rgb(0, 139,139)" },
@@ -173,7 +173,6 @@ $("#DiagramContent").ejDiagram({
    <title>
       Getting Started With Diagram Control For Javascript
    </title>
-
    <!-- jQuery Script -->
    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
