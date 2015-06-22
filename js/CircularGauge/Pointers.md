@@ -134,7 +134,7 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-Based on the value, the****pointer point out the label value. You can set the pointer length and width using **length** and **width** property respectively. And you can also adjust the opacity of the pointer using the property **opacity** which holds the value between 0 and 1. You can add the gradient effects to the pointer using **gradient** object.
+Based on the value, the**pointer** point out the label value. You can set the pointer length and width using **length** and **width** property respectively. And you can also adjust the opacity of the pointer using the property **opacity** which holds the value between 0 and 1. You can add the gradient effects to the pointer using **gradient** object.
 
 {% highlight html %}
 

@@ -74,7 +74,7 @@ Range collection can be directly added to the scale object. Refer the following 
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img1.png" Caption="Linear Gauge with range"%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img1.png" Caption=""%}
 
 ## Range Customization
 
@@ -145,7 +145,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img2.png" Caption="Linear Gauge with customized ranges with startValues and endValues"%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img2.png" Caption=""%}
 
 ## Colors and Border
 
@@ -214,7 +214,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img3.png" Caption="Linear Gauge with customized range colors and borders"%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img3.png" Caption=""%}
 
 ## Positioning the ranges
 
@@ -286,7 +286,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img4.png" Caption="Linear Gauge with customized range positions"%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img4.png" Caption=""%}
 
 ## Multiple Ranges
 
@@ -375,5 +375,5 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img5.png" Caption="Linear Gauge with multiple ranges "%}
+{% include image.html url="/js/LinearGauge/Ranges_images/Ranges_img5.png" Caption=""%}
 

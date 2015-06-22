@@ -69,7 +69,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Ticks_images/Ticks_img1.png" Caption="Linear Gauge with tick types"%}
+{% include image.html url="/js/LinearGauge/Ticks_images/Ticks_img1.png" Caption=""%}
 
 
 
@@ -140,7 +140,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Ticks_images/Ticks_img2.png" Caption="Linear Gauge with customized ticks"%}
+{% include image.html url="/js/LinearGauge/Ticks_images/Ticks_img2.png" Caption=""%}
 
 ## Types
 
@@ -199,7 +199,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Ticks_images/Ticks_img3.png" Caption="Linear Gauge with two tick types"%}
+{% include image.html url="/js/LinearGauge/Ticks_images/Ticks_img3.png" Caption=""%}
 
 ## Postioning the ticks
 
@@ -259,5 +259,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Ticks_images/Ticks_img4.png" Caption="Linear Gauge with customized tick position"%}
+{% include image.html url="/js/LinearGauge/Ticks_images/Ticks_img4.png" Caption=""%}
 

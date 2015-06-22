@@ -79,7 +79,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Scales_images/Scales_img1.png" Caption="Linear Gauge with scales"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img1.png" Caption=""%}
 
 
 
@@ -145,7 +145,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Scales_images/Scales_img2.png" Caption="Linear Gauge with customized scale border"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img2.png" Caption=""%}
 
 
 
@@ -214,7 +214,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Scales_images/Scales_img3.png" Caption="Linear Gauge with customized scale values"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img3.png" Caption=""%}
 
 
 
@@ -276,7 +276,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Scales_images/Scales_img4.png" Caption="Linear Gauge with scale type as Rectangle"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img4.png" Caption=""%}
 
 
 
@@ -331,7 +331,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Scales_images/Scales_img5.png" Caption="Linear Gauge with scale type as Rounded Rectangle"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img5.png" Caption=""%}
 
 **Thermometer**
 
@@ -380,7 +380,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Scales_images/Scales_img6.png" Caption="Linear Gauge with scale type as Thermometer"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img6.png" Caption=""%}
 
 ## Adding multiple scales
 
@@ -464,5 +464,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Scales_images/Scales_img7.png" Caption="Figure Linear Gauge with multiple scales"%}
+{% include image.html url="/js/LinearGauge/Scales_images/Scales_img7.png" Caption=""%}
 

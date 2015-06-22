@@ -42,7 +42,7 @@ documentation: ug
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Frames_images/Frames_img1.png" Caption="Digital Gauge control with frame inner and outer width"%}
+{% include image.html url="/js/DigitalGauge/Frames_images/Frames_img1.png" Caption=""%}
 
 
 
@@ -73,7 +73,6 @@ For a better appearance, you can set the **background****image** for the **Digit
                     y: 10
                 }
             }]
-
         })
     });
 
@@ -83,5 +82,5 @@ For a better appearance, you can set the **background****image** for the **Digit
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Frames_images/Frames_img2.png" Caption="Digital Gauge control with frame background image"%}
+{% include image.html url="/js/DigitalGauge/Frames_images/Frames_img2.png" Caption=""%}
 

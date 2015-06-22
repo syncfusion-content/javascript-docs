@@ -16,10 +16,7 @@ documentation: ug
 * **Digital gauge** is used in advertisement, decorative purpose, displaying share details in share market, game score boards, token systems, etc.
 
 
-
-
-
-{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img1.png" Caption="Digital Thermometer"%}
+{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
 
 **Create a Digital Gauge**
 
@@ -32,11 +29,11 @@ documentation: ug
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
 </head>
 
 
@@ -80,7 +77,7 @@ Once the container is added, create the **ejDigitalGauge** widget as follows,
 
 On executing the above code, sample renders a default **Digital Gauge** with default values as follows.
 
-{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img2.png" Caption="Digital Gauge"%}
+{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
 **Set Height and Width values**
 
@@ -102,7 +99,7 @@ Basic attributes of each canvas elements are height and width. You can set the h
 
 On executing the above code, sample renders a default **Digital Gauge** with the specified height and width values.
 
-{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img3.png" Caption="Digital Gauge with height and width set"%}
+{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
 **Set Items Property**
 
@@ -145,7 +142,7 @@ $(function () {
 
 On executing the above code, sample renders a **Digital Gauge** with default values as follows.
 
-{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img4.png" Caption="Digital Gauge"%}
+{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
 
 **Add Background Image**
 
@@ -178,7 +175,7 @@ You can add a **&lt;div&gt;** element to set the background for the **Digital Ga
 
 On executing the above code, sample renders a default **Digital Gauge** as follows.           
 
-{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img5.png" Caption="Digital Gauge with backgound"%}
+{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img5.png" Caption=""%}
 
 **Add Location**
 
@@ -202,13 +199,10 @@ $(function () {
 
 {% endhighlight %}
 
-
-
 On executing the above code, sample renders a default **Digital Gauge** as follows.
 
 
-
-{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img6.png" Caption="Digital Gauge with positioned value"%}
+{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
 
 **Add Items collection** 
 
@@ -271,5 +265,5 @@ You can add **Items****collection** to display the temperature value as used in 
 
 The following screenshot displays a **Digital Gauge** with all the customizations discussed earlier.
 
-{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img7.png" Caption="Customized Digital Gauge"%}
+{% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img7.png" Caption=""%}
 

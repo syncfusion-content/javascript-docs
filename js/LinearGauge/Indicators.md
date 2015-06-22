@@ -444,5 +444,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img5.png" Caption="Linear Gauge with multiple indicators"%}
+{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img5.png" Caption=""%}
 

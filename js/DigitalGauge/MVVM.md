@@ -22,21 +22,22 @@ documentation: ug
 <!--To Render the Digital gauge-->
 <!doctype html>
 <html ng-app="syncApp">
-<head>
-    <!—Refer the necessary script here-->
-</head>
-<body ng-controller="DigitalGauge">
-    <ej-digitalgauge id="digitalCore" e-height="500" e-load="loadGaugeTheme">
-    </ej-digitalgauge>
-    <script type="text/javascript">
-        <!—binding the value to the scope variables in application controller-->
-        angular.module('syncApp', ['ejangular'])
-        .controller('DigitalGauge', function ($scope) {
-            $scope.nvalue = “text”;
-        });
-    </script>
-</body>
+   <head>
+      <!—Refer the necessary script here-->
+   </head>
+   <body ng-controller="DigitalGauge">
+      <ej-digitalgauge id="digitalCore" e-height="500" e-load="loadGaugeTheme">
+      </ej-digitalgauge>
+      <script type="text/javascript">
+         <!—binding the value to the scope variables in application controller-->
+         angular.module('syncApp', ['ejangular'])
+         .controller('DigitalGauge', function ($scope) {
+             $scope.nvalue = “text”;
+         });
+      </script>
+   </body>
 </html>
+
 
 
 {% endhighlight %}
@@ -45,7 +46,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img1.png" Caption="Default Digital Gauge in Angular JS"%}
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img1.png" Caption=""%}
 
 ## Adding the Digital Gauge Items
 
@@ -57,21 +58,21 @@ Execute the above code to render the following output.
 
 <!--To Render the Digital gauge-->
 <ej-digitalgauge id="digitalCore">
-<!--Adding Item collection to the digital gauge-->
-<e-items>
-<e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
-e-value="Syncfusion" e-characterSetting-opacity="0.8"
-e-position-x="52" e-position-y="52">
-</e-item>
-</e-items>
+   <!--Adding Item collection to the digital gauge-->
+   <e-items>
+      <e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
+         e-value="Syncfusion" e-characterSetting-opacity="0.8"
+         e-position-x="52" e-position-y="52"></e-item>
+   </e-items>
 </ej-digitalgauge>
+
 
 
 {% endhighlight %}
 
 Finally while running the above codes, the following output will be rendered.
 
-{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img2.png" Caption="Digital Gauge Rendered in Angular JS"%}
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img2.png" Caption=""%}
 
 ## Two Way Binding
 
@@ -81,28 +82,27 @@ Finally while running the above codes, the following output will be rendered.
 
 <!doctype html>
 <html ng-app="syncApp">
-<head>
-    <meta charset="utf-8">
-    <!—Refer the necessary script here-->
-</head>
-<body ng-controller="DigitalGauge">
-    Type here <input type="text" id="txtValue" **ng-model="nvalue"** Style="width:110px"/>
-    <ej-digitalgauge id="digitalCore" e-height="200" e-load="loadGaugeTheme">
-<e-items>
-<e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
-e-characterSetting-opacity="0.8" e-position-x="52"
-e-value="nvalue" e-position-y="52">
-</e-item>
-</e-items>
-</ej-digitalgauge>
-    <script type="text/javascript">
-        <!--binding the value to the scope variables in application controller-->
-        angular.module('syncApp', ['ejangular'])
-        .controller('DigitalGauge', function ($scope) {
-            $scope.nvalue = "Syncfusion";
-        });
-    </script>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <!—Refer the necessary script here-->
+   </head>
+   <body ng-controller="DigitalGauge">
+      Type here <input type="text" id="txtValue" **ng-model="nvalue"** Style="width:110px"/>
+      <ej-digitalgauge id="digitalCore" e-height="200" e-load="loadGaugeTheme">
+         <e-items>
+            <e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
+               e-characterSetting-opacity="0.8" e-position-x="52"
+               e-value="nvalue" e-position-y="52"></e-item>
+         </e-items>
+      </ej-digitalgauge>
+      <script type="text/javascript">
+         <!--binding the value to the scope variables in application controller-->
+         angular.module('syncApp', ['ejangular'])
+         .controller('DigitalGauge', function ($scope) {
+             $scope.nvalue = "Syncfusion";
+         });
+      </script>
+   </body>
 </html>
 
 
@@ -110,7 +110,7 @@ e-value="nvalue" e-position-y="52">
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img3.png" Caption="Digital Gauge with two way binding in Angular JS"%}
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img3.png" Caption=""%}
 
 
 
@@ -133,22 +133,22 @@ Execute the above code to render the following output.
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Essential JavaScript for Knockout</title>
-</head>
-<body>
-    <div id="digitalCore" style="width: 100%" data-bind="ejDigitalGauge:({load:'loadGaugeTheme',value:samplevalue,height:305,items:[{position: { x: 52, y: 52 }}]})"></div>
-    <script type="text/javascript">
-        $(function () {
-            window.viewModel = {
-                value: ko.observable("SyncFusion"),
-            };
-            $(function () {
-                ko.applyBindings(viewModel);
-            });
-        });
-    </script>
-</body>
+   <head>
+      <title>Essential JavaScript for Knockout</title>
+   </head>
+   <body>
+      <div id="digitalCore" style="width: 100%" data-bind="ejDigitalGauge:({load:'loadGaugeTheme',value:samplevalue,height:305,items:[{position: { x: 52, y: 52 }}]})"></div>
+      <script type="text/javascript">
+         $(function () {
+             window.viewModel = {
+                 value: ko.observable("SyncFusion"),
+             };
+             $(function () {
+                 ko.applyBindings(viewModel);
+             });
+         });
+      </script>
+   </body>
 </html>
 
 
@@ -156,5 +156,5 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img4.png" Caption="Digital Gauge with Knockout binding"%}
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img4.png" Caption=""%}
 

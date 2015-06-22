@@ -73,7 +73,7 @@ Labels are units that are used to display the values in the scales. You can cust
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/LinearGauge/Labels_images/Labels_img1.png" Caption="Linear Gauge with customized label"%}
+{% include image.html url="/js/LinearGauge/Labels_images/Labels_img1.png" Caption=""%}
 
 ## Unit text and Positioning
 
@@ -144,7 +144,7 @@ $ (function () {
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/LinearGauge/Labels_images/Labels_img2.png" Caption="Linear Gauge with unit text"%}
+{% include image.html url="/js/LinearGauge/Labels_images/Labels_img2.png" Caption=""%}
 
 
 
