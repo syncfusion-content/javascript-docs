@@ -19,7 +19,7 @@ documentation: ug
 
 * **Step Value**—Enables you to increment or decrement the current value by step value.
 
-* **Localization**—Essential JavaScript Text Boxes provide localization support. These controls****use Globalize.js, a simple JavaScript library that enables you to globalize and localize the format, and parse numbers and dates according to theculture. For more information on Glibalize.js, see[GitHub Here](https://github.com/jquery/globalize).
+* **Localization**—Essential JavaScript Text Boxes provide localization support. These controls use **Globalize.js**, a simple JavaScript library that enables you to globalize and localize the format, and parse numbers and dates according to theculture. For more information on Glibalize.js, see [GitHub Here](https://github.com/jquery/globalize).
 
 * **Keyboard Navigation**—You can interact with Text Boxes by using keyboard.
 

@@ -1,0 +1,199 @@
+---
+layout: post
+title: Behavior-settings
+description: behavior settings
+platform: js
+control: Rotator
+documentation: ug
+---
+
+# Behavior settings
+
+## Enabling rotator
+
+The **“enabled”** property enables or disables the **Rotator** control. The default value is ‘**true**’. The value set to this property is **Boolean** type. You can refer the following code example to set this property.
+
+  {% highlight html %}
+
+  
+   <div class="cols-sample-area">
+	    <ul id="slidercontent" accesskey="e">
+	        <li>
+	            <img class="image" src="../images/rotator/nature.jpg" title="Nature" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/bird.jpg" title="Beautiful Bird" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/seaview.jpg" title="Sea-View" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/snowfall.jpg" title="Snow Fall" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/card.jpg" title="Credit Card" /></li>
+	        <li>
+	            <img class="image" src="../images/rotator/night.jpg" title="Colorful Night" /></li>
+	    </ul>
+	</div>
+
+
+  {% endhighlight %}
+
+
+  {% highlight js %}
+
+	    $(function () {
+	        // declaration
+	        $("#slidercontent").ejRotator({ enabled: true });
+	    });
+
+  {% endhighlight %}
+  
+## Responsive rotator
+
+The “isResponsive” property resizes the Rotator when the browser window is resized. The default value is ‘false’. The value set to this property is Boolean. 
+
+{% highlight js %}
+
+
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ isResponsive : true });
+    });
+
+{% endhighlight %}
+
+## Auto Play
+
+The **Rotator** Items continuously rotate without user interference by enable the **enableAutoPlay** property. The default value is ‘**false’**. The value set to this property is **Boolean**. 
+
+{% highlight js %}
+
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ enableAutoPlay: true });
+    });
+
+{% endhighlight %}
+
+## Stop on hover
+
+The **stopOnHover** property pauses the **auto play** while hover on the **Rotator** content. The default value is ‘**false**’. The value set to this property is **Boolean**. 
+
+{% highlight js %}
+
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ enableAutoPlay: true, stopOnHover: true });
+    });
+
+
+{% endhighlight %}
+
+## Pager settings
+
+### Pager position
+
+This property specifies the position of the **showPager** in the **Rotator** Item. The default value is ‘**outside**’. The value set to this property is **string** or **enum**. 
+
+* ej.Rotator.PagerPosition.BottomLeft
+
+* ej.Rotator.PagerPosition.BottomRight
+
+* ej.Rotator.PagerPosition.Outside
+
+* ej.Rotator.PagerPosition.TopCentre
+
+* ej.Rotator.PagerPosition.TopLeft
+
+* ej.Rotator.PagerPosition.TopRight
+
+
+
+{% highlight js %}
+
+
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({
+            pagerPosition: ej.Rotator.PagerPosition.BottomLeft,
+            slideWidth: "630px",
+            slideHeight: "350px"
+        });
+    });
+
+{% endhighlight %}
+
+
+
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img1.png" Caption="Rotator control with pager position"%}
+
+### Show pager
+
+The **“showPager”** property turns on or off the **pager** support in the **Rotator** control. The **Pager** is used to navigate the **Rotator** Items. The default value is ‘**true**’. The value set to this property is **Boolean**. 
+
+{% highlight js %}
+
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ showPager: false });
+    });
+
+{% endhighlight %}
+
+
+
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img2.png" Caption="Rotator control with no pager"%}
+
+## Show options
+
+### Show play button
+
+The “**showPlayButton**” property enables play / pause button on **Rotator**. The default value is ‘**false**’. The value set to this property is **Boolean**.
+
+{% highlight js %}
+
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: "600px", showPlayButton: true });
+    });
+
+{% endhighlight %}
+
+
+
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img3.png" Caption="Rotator control with play button"%}
+
+### Show navigate button
+
+The “**showNavigateButton**” property turns on or off the slide buttons (next and previous) in the **Rotator** Items. Slide buttons are used to navigate the **Rotator** Items. The default value is ‘**false**’. The value set to this property is **Boolean**. 
+
+{% highlight js %}
+
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: "500px", showNavigateButton: true });
+    });
+
+{% endhighlight %}
+
+
+
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img4.png" Caption="Rotator control with navigate button"%}
+
+### Show caption
+
+When the **Rotator** Item is an image, you can specify a caption for the **Rotator** Item. The caption text for each **Rotator** Item is set by using the title attribute of the respective **&lt;image&gt;** tag. The caption cannot be displayed when multiple **Rotator** Items are present. The default value is ‘**false**’. The value set to this property is **Boolean**. 
+
+{% highlight js %}
+
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: "500px", showCaption: true });
+    });
+
+{% endhighlight %}
+
+
+
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img5.png" Caption="Rotator control with caption"%}
+

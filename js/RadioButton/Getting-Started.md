@@ -13,7 +13,7 @@ This section briefly describes you on how to create a QuizApp and RegistrationAp
 
 ## Create your first RadioButton in JavaScript
 
-**Essential JavaScript****RadioButton** supports RTL, custom skins and events to display customized **RadioButtons**. In this example, you can learn how to use **RadioButton** in a Quiz application. The following guidelines show you how to use the **RadioButton** to select the answers in the application and get the selected items. The following screenshot displays a sample Quiz application.
+**Essential JavaScript** **RadioButton** supports RTL, custom skins and events to display customized RadioButtons. In this example, you can learn how to use RadioButtons in a Quiz application. The following guidelines show you how to use the **RadioButton** to select the answers in the application and get the selected items. The following screenshot displays a sample Quiz application.
 
 
 {% include image.html url="/js/RadioButton/Getting-Started_images/Getting-Started_img1.png" Caption="Quiz application"%}
@@ -22,26 +22,20 @@ This section briefly describes you on how to create a QuizApp and RegistrationAp
 
 **Essential JavaScript RadioButton** is created by using a simple input textbox element as follows.
 
-1. Create an HTML file and add the following template to the HTML file to create RadioButton.
+Create an HTML file and add the following template to the HTML file to create RadioButton.
 
 {% highlight html %}
 
-<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
       <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
-
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)">
-</script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -49,19 +43,13 @@ This section briefly describes you on how to create a QuizApp and RegistrationAp
 </body>
 </html>
 
-
-
 {% endhighlight %}
 
-
-
-2. Add input element to render a **RadioButton**.
-
+Add input element to render a **RadioButton**.
 
 
 {% highlight html %}
-
-  <div>
+   <div>
         1. What is the Expansion for MVC ? <br />
         <table>
             <tr>
@@ -98,23 +86,20 @@ This section briefly describes you on how to create a QuizApp and RegistrationAp
             </tr>
         </table>
         <br><br><br>
-
-        <button id="submitid" onclick="button()">Submit</button>
-
-    </div>
-
-
+       <button id="submitid" onclick="button()">Submit</button>
+   </div>
+   
 {% endhighlight %}
 
 
 
-3. Initialize RadioButton in script.
+Initialize RadioButton in script.
 
 
 
 {% highlight js %}
 
-<script type="text/javascript">
+
         $(function () {
             // declaration
             $("#Radio1").ejRadioButton({ size: "medium" });
@@ -145,8 +130,7 @@ This section briefly describes you on how to create a QuizApp and RegistrationAp
 
 
 
-4. Add the following styles.
-
+4. Add the following styles
 
 
 {% highlight css %}

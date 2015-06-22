@@ -21,17 +21,14 @@ And each functionality in the context menu option is done by specific methods. F
 
 The following steps explain how you can enable the **showCheckbox** property for **TreeView**.
 
-* In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configure **TreeView.**
+In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configure **TreeView.**
 
-****
 
 {% highlight html %}
 
-**[HTML]**
 
-<ul id="treeView">
-        <li class="expanded">
-            Favorites
+    <ul id="treeView">
+        <li class="expanded">Favorites
             <ul>
 
                 <li>Desktop</li>
@@ -39,25 +36,21 @@ The following steps explain how you can enable the **showCheckbox** property for
                 <li>Recent places</li>
             </ul>
         </li>
-        <li class="expanded">
-            Libraries
+        <li class="expanded">Libraries
             <ul>
-                <li>
-                    Documents
+                <li>Documents
                     <ul>
                         <li>My Documents</li>
                         <li>Public Documents</li>
                     </ul>
                 </li>
-                <li>
-                    Pictures
+                <li>Pictures
                     <ul>
                         <li>My Pictures</li>
                         <li>Public Pictures</li>
                     </ul>
                 </li>
-                <li>
-                    Music
+                <li>Music
                     <ul>
                         <li>My Music</li>
                         <li>Public Music</li>
@@ -66,8 +59,7 @@ The following steps explain how you can enable the **showCheckbox** property for
                 <li>Subversion</li>
             </ul>
         </li>
-        <li>
-            Computer
+        <li>Computer
             <ul>
                 <li>Folder(C)</li>
                 <li>Folder(D)</li>
@@ -75,7 +67,7 @@ The following steps explain how you can enable the **showCheckbox** property for
             </ul>
         </li>
     </ul>
-<div>
+    <div>
         <ul id="treeviewMenu">
             <li><a href="#">Add New Item</a></li>
             <li><a href="#">Remove Item</a></li>
@@ -90,15 +82,13 @@ The following steps explain how you can enable the **showCheckbox** property for
 
 
 
-* Add **ContextMenu** for **TreeView** control as follows.
+Add **ContextMenu** for **TreeView** control as follows.
 
-****
 
 {% highlight js %}
 
-**[JavaScript]**
-var tabIndex = 1;
-$("#treeView").ejTreeView();
+        var tabIndex = 1;
+        $("#treeView").ejTreeView();
         $("#treeviewMenu").ejMenu({
             menuType: ej.MenuType.ContextMenu,
             openOnClick: false,
@@ -109,40 +99,39 @@ $("#treeView").ejTreeView();
         });
         treeviewObj = $("#treeView").data("ejTreeView");
 
-
 {% endhighlight %}
 
 
 
-* Define the events in the script as follows.
+Define the events in the script as follows.
 
 
 
 {% highlight js %}
 
-function beforeOpen(args) {
-        if (!$(args.target).hasClass("e-text"))
-            args.cancel = true;
-        else {
-            selectedNode = args.target;
-            treeviewObj.selectNode(selectedNode);
+        function beforeOpen(args) {
+            if (!$(args.target).hasClass("e-text"))
+                args.cancel = true;
+            else {
+                selectedNode = args.target;
+                treeviewObj.selectNode(selectedNode);
+            }
         }
-    }
-    function menuclick(args) {
-        if (args.events.text == "Add New Item") {
-            treeviewObj.addNode("Item" + tabIndex, selectedNode);
-            tabIndex++;
+        function menuclick(args) {
+            if (args.events.text == "Add New Item") {
+                treeviewObj.addNode("Item" + tabIndex, selectedNode);
+                tabIndex++;
+            }
+            else if (args.events.text == "Remove Item") {
+                treeviewObj.removeNode(selectedNode);
+            }
+            else if (args.events.text == "Disable Item") {
+                treeviewObj.disableNode(selectedNode)
+            }
+            else if (args.events.text == "Enable Item") {
+                treeviewObj.enableNode(selectedNode)
+            }
         }
-        else if (args.events.text == "Remove Item") {
-            treeviewObj.removeNode(selectedNode);
-        }
-        else if (args.events.text == "Disable Item") {
-            treeviewObj.disableNode(selectedNode)
-        }
-        else if (args.events.text == "Enable Item") {
-            treeviewObj.enableNode(selectedNode)
-        }
-    }
 
 
 

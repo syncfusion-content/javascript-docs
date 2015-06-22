@@ -17,17 +17,17 @@ TreeMap contains various elements such as,
 
 * Labels
 
-##Legend
+**Legend**
 
 You can set the color value of **leaf nodes** using **treeMapLegend**. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using **rangeColorMapping**.
 
 You can set **showLegend** propery value to **“True”** to enable or disable legend visibility.
 
-###TreeMap Legend
+**TreeMap Legend**
 
 You can decide the size of the legend icons by setting **iconWidth** and **iconHeight** properties of the **treeMapLegend** property avail in **TreeMap.**
 
-###Label for Legend
+**Label for Legend**
 
 You can customize the labels of the **legend****item** using **legendLabel** property of r**angeColorMapping**. 
 
@@ -65,7 +65,7 @@ You can customize the labels of the **legend****item** using **legendLabel** pro
 
 {% include image.html url="/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img1.png" Caption="Treemap with legend"%}
 
-##Header
+**Header**
 
 You can set headers for each level by setting the **showHeader** propery of the each **TreeMap** levels. The **headerHeight** property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the **headerTemplate** of the **TreeMap** levels.
 
@@ -98,14 +98,13 @@ You can set headers for each level by setting the **showHeader** propery of the 
 
 {% include image.html url="/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img2.png" Caption="Treemap with header"%}
 
-##Label
+**Label**
 
 You can also set labels for the leaf nodes by setting the **showLabels** property as true. Group path value is displayed as a label for leaf nodes. You can customize the default label appearance by setting the **labelTemplate** of the **TreeMap** levels.
 
 {% highlight js %}
 
-    <div  id="treemap" style="width: 1100px; height: 550px; "></div>
-    
+<div  id="treemap" style="width: 1100px; height: 550px; "></div>
     <script type="text/javascript">
         jQuery(function ($) {
             $("#treemapContainer").ejTreeMap({

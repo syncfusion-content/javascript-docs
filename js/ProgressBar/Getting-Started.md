@@ -13,12 +13,12 @@ This section briefly describes how to create a **ProgressBar** control using **J
 
 ## Create your first ProgressBar in JavaScript
 
-**Essential JavaScript****ProgressBar** displays a **ProgressBar** within a webpage that allows you to show the progress of an event. Here, you can learn how to customize the progress and color of the **ProgressBar** in a real-time application to indicate the strength of the password, where the progress changes with respect to the change in length of the password. This helps you to validate the password is typed. 
+**Essential JavaScript** **ProgressBar** displays a **ProgressBar** within a webpage that allows you to show the progress of an event. Here, you can learn how to customize the progress and color of the **ProgressBar** in a real-time application to indicate the strength of the password, where the progress changes with respect to the change in length of the password. This helps you to validate the password is typed. 
 
 The following screenshot shows the **ProgressBar.**
 
 
-{% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: ProgressBar"%}
+{% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img1.png" Caption="ProgressBar"%}
 
 ### Create a ProgressBar
 
@@ -26,31 +26,32 @@ The following screenshot shows the **ProgressBar.**
 
 You can create the **ProgressBar** widget by using a simple input **&lt;div&gt;** element as follows:
 
-* Create an **HTML** file and add the following template to the **HTML** file to create your **ProgressBar.** It also includes the necessary****scripts and styles.
+* Create an **HTML** file and add the following template to the **HTML** file to create your ProgressBar. It also includes the necessary scripts and styles.
 
 
 
 {% highlight html %}
 
+<html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
           <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
 
-    <!--Scripts-->
-    <script 
-src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
+        <!--Scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
+    <!--Initialize the ProgressBar -->
 </body>
-
+</html>
 
 
 {% endhighlight %}
@@ -63,22 +64,21 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
 
 {% highlight html %}
 
-
-<div style="content-container-fluid">
+  <div style="content-container-fluid">
         <div class="row">
             <div class="cols-sample-area">
                   <div class="frame">
-                  <div class="wrap_up"> <!--Initializing password field*-->
+                        <div class="wrap_up"> <!--Initializing password field*-->
                                 <label for="startButton">Password</label>
                                 <input type="password" id="password" style="border-radius:10px"/>
-                                   </div>
-                           <div class="control"> <!--initializing ProgressBar control-->
+                        </div>
+                        <div class="control"> <!--initializing ProgressBar control-->
                                 <div id="progressBar"></div>
-                            </div>                            
+                        </div>                            
                    </div>                 
             </div>          
         </div>
-    </div>
+   </div>
 
 
 {% endhighlight %}
@@ -87,25 +87,24 @@ src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </scrip
 
 It also includes a Password field and through that the progress of the **ProgressBar** can be controlled
 
-* Initialize **ProgressBar** in script.
+Initialize **ProgressBar** in script.
 
 
 
 {% highlight js %}
 
-<script type="text/javascript">
-  $(function () {   
-             $("#progressBar").ejProgressBar({ 
+        $(function () {   
+            $("#progressBar").ejProgressBar({ 
                 height: 20,    
                 value: 30,  /*Specify the initial value of the progress in percentage*/  
                 width: 200,
-                            });
+            });
             progresObj = $("#progressBar").data("ejProgressBar");
             progresObj.option("text", "weak");
             $(".e-progress").css({ "background-color": "#DE0909", "border-radius":"10px" });          
             $(".e-progressbar").css({ "border-radius": "10px", "border": "1px solid black" });
-});
-</script>
+        });
+
 
 
 {% endhighlight %}
@@ -120,7 +119,7 @@ The following screenshot displays a **ProgressBar** control.
 
 {% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: ProgressBar"%}
 
-* Include the following code within the **&lt;head&gt;** tag to change the page layout.
+Include the following code within the **&lt;head&gt;** tag to change the page layout.
 
 
 
@@ -159,48 +158,42 @@ The following screenshot displays a **ProgressBar** control.
 
 In real-time scenario, the progress of **ProgressBar** is changed according to the length of text in the password field by binding the change in the properties of control and checking the length of the password field.
 
-* Add the following code example inside the **&lt;script&gt;** tag of your **HTML** file.
+Add the following code example inside the **&lt;script&gt;** tag of your **HTML** file.
 
 
 
 {% highlight js %}
 
-var progresObj, buttonObj, k = 10, timer = window.clearInterval(timer), i = 0, obj;
-        $(document).keypress(function () { /*To capture the keypress inside the document*/            i = $("#password").val().length;
-            if (i < 5) {
+        var progresObj, buttonObj, k = 10, timer = window.clearInterval(timer), i = 0, obj;
+        $(document).keypress(function () {    //To capture the keypress inside the document           
+            i = $("#password").val().length;
+            if (i < 5) 
                 weak();
-            }
-            else if (i > 5 && i < 7) {
+            else if (i > 5 && i < 7) 
                 Strong();
-            }
-            else if(i>7) {
+            else if(i>7) 
             var pwd = $("#password").val();
             if(/^[a-zA-Z0-9- ]*$/.test(pwd) == false);
-
-            {
                 very_strong();
-            }
-
-        } 
-  });
-            function Strong() { /*Change the width and text of the progress ... called when the length is greater than 5*/
+        });
+        function Strong() {     //Change the width and text of the progress ... called when the length is greater than 5
             progresObj.option("text", "strong");
             progresObj.option("percentage", k + 50);
-           $(".e-progress").css("background-color", "#0055FF");
+            $(".e-progress").css("background-color", "#0055FF");
             $(".e-progressbar").css("color", "#000000");       
- }
-function very_strong() {/*Change the width and text of the progress ... called when the length is greater than 7*/
+        }
+        function very_strong() {     //Change the width and text of the progress ... called when the length is greater than 7
             progresObj.option("text", "Very strong");
             progresObj.option("percentage", k + 90);
-$(".e-progress").css("background-color", "Green");
+            $(".e-progress").css("background-color", "Green");
             $(".e-progressbar").css("color", "#000000");   
-     }
-function weak() {/*Change the width and text of the progress... called when the length is less than 5*/
+        }
+        function weak() {     //Change the width and text of the progress... called when the length is less than 5
             progresObj.option("text", "Weak");
             progresObj.option("percentage", k+20 );
             $(".e-progress").css("background-color", "#DE0909");
             $(".e-progressbar").css("border-radius", "10px");      
-  }
+        }
 
 
 {% endhighlight %}
@@ -209,25 +202,22 @@ function weak() {/*Change the width and text of the progress... called when the 
 
 You can calculate length of the password and call the appropriate function that changes the percentage property of **ProgressBar**.
 
-* The **weak()** function changes the text inside the **ProgressBar** to **Weak** and percentage to 30, that is invoked when the length of the text is less than 5.
+* The **weak()** function changes the text inside the ProgressBar to **Weak** and percentage to 30, that is invoked when the length of the text is less than 5.
 
-* The **strong()** function changes the text inside the **ProgressBar** to **Strong** and percentage to 60, that is invoked when the length of the text exceeds 5.
+* The **strong()** function changes the text inside the ProgressBar to **Strong** and percentage to 60, that is invoked when the length of the text exceeds 5.
 
-* The **very_strong()** function changes the text inside the **ProgressBar** to **Very****Strong** and percentage to 100, that is invoked when the length of the text exceeds 7 and the text contains a symbol in it.
+* The **very_strong()** function changes the text inside the ProgressBar to **Very****Strong** and percentage to 100, that is invoked when the length of the text exceeds 7 and the text contains a symbol in it.
 
-You can change themes or appearance of the **ProgressBar** as required.
+You can change themes or appearance of the ProgressBar as required.
 
 The final output is displayed as follows.
 
 
+{% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img3.png" Caption="For password length less than 5"%}
 
-{% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 3: For password length less than 5"%}
+{% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img4.png" Caption="For password length less than 7"%}
 
-{% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 4: For password length less than 7"%}
+{% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img5.png" Caption="For password length greater than 7"%}
 
-
-
-{% include image.html url="/js/ProgressBar/Getting-Started_images/Getting-Started_img5.png" Caption="Figure 5: For password length greater than 7"%}
-
-You can also bind an event at the start and finish of a **ProgressBar** by using the start, complete and change properties of the **ProgressBar**.
+You can also bind an event at the start and finish of a ProgressBar by using the start, complete and change properties of the ProgressBar.
 

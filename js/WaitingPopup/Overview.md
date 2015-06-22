@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The **WaitingPopup control****for JavaScript** is a visual element that provides support for displaying a pop-up indicator over a target area and preventing the end user's interaction with the target area while loading. 
+The **WaitingPopup control for JavaScript** is a visual element that provides support for displaying a pop-up indicator over a target area and preventing the end user's interaction with the target area while loading. 
 
 **Key Features**
 
