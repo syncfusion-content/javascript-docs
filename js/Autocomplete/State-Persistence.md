@@ -15,7 +15,7 @@ documentation: ug
 
 The following steps explain you how to enable state maintenance for AutoComplete.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete widget.
+In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete widget.
 
 {% highlight html %}
 

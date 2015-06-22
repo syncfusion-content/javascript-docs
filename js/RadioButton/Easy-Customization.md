@@ -153,9 +153,7 @@ Size
 
 <table>
 <tr>
-<td>
-<b>Property	</b></td><td>
-<b>Description</b></td></tr>
+<th>Property</th><th>Description</th></tr>
 <tr>
 <td>
 small</td><td>

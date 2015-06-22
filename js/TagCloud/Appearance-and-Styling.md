@@ -106,27 +106,16 @@ You can control the style and appearance of **TagCloud** based on CSS classes. T
 By default, there are 12 themes support available for **TagCloud** control namely,
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ## Css Class

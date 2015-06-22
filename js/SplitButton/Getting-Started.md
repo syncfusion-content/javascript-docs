@@ -15,7 +15,6 @@ This section explains briefly about how to create a **Split Button** in your app
 
 The **HTML** button element and the **&lt;UL&gt;, &lt;LI&gt;** are easily configured as **Essential JavaScript Split Button** control.  The basic rendering of **Essential JavaScript Split** **Button** is achieved by using default functionality. Initially the **targetID** is a mandatory one, without this field it does not act as normal button on two sides.
 
-**Control structure**
 
 {% include image.html url="/js/SplitButton/Getting-Started_images/Getting-Started_img1.png" Caption="Essential JavaScript Split Button"%}
 

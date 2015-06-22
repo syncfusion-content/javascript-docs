@@ -11,13 +11,12 @@ documentation: ug
 
 The **Dialog** provides you to interact with the keyboard actions instead of mouse actions. All the **Dialog** actions can be achieved by using **Keyboard** shortcuts.
 
-_Key shortcuts for Dialog_
+Key shortcuts for Dialog
 
 <table>
 <tr>
-<td>
-<b>Shortcut Key</b></td><td>
-<b>Description</b></td></tr>
+<th>Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 Alt + j	</td><td>

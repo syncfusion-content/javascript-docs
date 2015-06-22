@@ -19,8 +19,14 @@ List of predefined button size
 
 <table>
     <tr>
+        <th>
+            Button Types</th>
+        <th>
+            Description</th>
+    </tr>
+    <tr>
         <td>
-            <b>normal</b>
+           Normal
         </td>
         <td>
             Creates button with content size.
@@ -28,7 +34,7 @@ List of predefined button size
     </tr>
     <tr>
         <td>
-            <b>mini</b>
+            Mini
         </td>
         <td>
             Creates button with inbuilt mini size height, width specified.
@@ -36,7 +42,7 @@ List of predefined button size
     </tr>
     <tr>
         <td>
-            <b>small</b>
+            Small
         </td>
         <td>
             Creates button with inbuilt small size height, width specified.
@@ -44,7 +50,7 @@ List of predefined button size
     </tr>
     <tr>
         <td>
-            <b>medium</b>
+            Medium
         </td>
         <td>
             Creates button with inbuilt medium size height, width specified.
@@ -52,7 +58,7 @@ List of predefined button size
     </tr>
     <tr>
         <td>
-            <b>large</b>
+            Large
         </td>
         <td>
             Creates button with inbuilt large size height, width specified.
@@ -136,8 +142,14 @@ List of content types for button
 
 <table>
     <tr>
+        <th>
+            Content Types</th>
+        <th>
+            Description</th>
+    </tr>
+    <tr>
         <td>
-            <b>textonly</b>
+            TextOnly
         </td>
         <td>
             Supports only for text content only.
@@ -145,7 +157,7 @@ List of content types for button
     </tr>
     <tr>
         <td>
-            <b>imageonly</b>
+            ImageOnly
         </td>
         <td>
             Supports only for image content only
@@ -153,7 +165,7 @@ List of content types for button
     </tr>
     <tr>
         <td>
-            <b>imageboth</b>
+            ImageBoth
         </td>
         <td>
             Supports image for both ends of the button.
@@ -161,7 +173,7 @@ List of content types for button
     </tr>
     <tr>
         <td>
-            <b>textandimage</b>
+            TextAndImage
         </td>
         <td>
             Supports image with the text content.
@@ -169,7 +181,7 @@ List of content types for button
     </tr>
     <tr>
         <td>
-            <b>imagetextimage</b>
+            ImageTextImage
         </td>
         <td>
             Supports image with both ends and middle in text.
@@ -186,19 +198,12 @@ Icons inside the **Button** is added easily using **prefixIcon and suffixIcon** 
 For example the following mentioned build-in **CSS** class are used to show the font icons that is used by media player.
 
 * e-mediaback
-
 * e-mediaforward
-
 * e-medianext
-
 * e-mediaprev
-
 * e-mediaeject
-
 * e-mediaclose
-
 * e-mediapause
-
 * e-mediaplay
 
 ### Prefix Icon
@@ -321,12 +326,18 @@ Execute the above code to render the following output.
 
 To provide the best look and feel for **Button**, position of button images is an important customizable option. With **imagePosition** property you can easily customize the position of images inside button without using any complex **CSS**. **imagePosition** property is applicable only with the **textandimage** of **contentType** property. This property supports the following values.
 
-List of values supported by contentType property
+List of values supported by ImagePosition property
 
 <table>
     <tr>
+        <th>
+            ImagePosition</th>
+        <th>
+            Description</th>
+    </tr>
+    <tr>
         <td>
-            <b>imageleft</b>
+            ImageLeft
         </td>
         <td>
             Support for aligning text in right and image in left.
@@ -334,7 +345,7 @@ List of values supported by contentType property
     </tr>
     <tr>
         <td>
-            <b>imageright</b>
+            ImageRight
         </td>
         <td>
             Support for aligning text in left and image in right.
@@ -342,7 +353,7 @@ List of values supported by contentType property
     </tr>
     <tr>
         <td>
-            <b>imagetop</b>
+            ImageTop
         </td>
         <td>
             Support for aligning text in bottom and image in top.
@@ -350,7 +361,7 @@ List of values supported by contentType property
     </tr>
     <tr>
         <td>
-            <b>imagebottom</b>
+            ImageBottom
         </td>
         <td>
             Support for aligning text in top and image in bottom.
@@ -490,27 +501,16 @@ You can control the style and appearance of **Button** control based on **CSS** 
 By default, there are 12 themes support available for **Button** control.
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ## Custom CSS
@@ -522,7 +522,6 @@ The following steps explains you the details about rendering the **Button** with
 In the **HTML** page, add the following button elements to configure **Button** widget.
 
 {% highlight html %}
-
 
     <button id="button_customCss1">login</button>
     <button id="button_customCss2">login</button>

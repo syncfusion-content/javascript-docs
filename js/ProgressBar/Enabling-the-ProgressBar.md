@@ -29,7 +29,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
      // Add the ‘enabled’ property as follows.
      $(function () {
          //Declaration.
-         $("#Progrssbar").ejProgressBar({
+         $("#progressbar").ejProgressBar({
              enabled: false,
              value: 40,
              width: 500,
@@ -37,7 +37,6 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
          });
          var progress = $("#progressbar").data("ejProgressBar");
          progress.setModel({ text: progress.getValue() + " %" });
-
      });
 
 {% endhighlight %}

@@ -25,7 +25,6 @@ The following steps explain you how to configure **Grouping** for an AutoComplet
 {% endhighlight %}
 
 
-
  Define **dataSource** elements with category field to group them. The category field in dataSource is used for Grouping conditions.
 
 {% highlight js %}

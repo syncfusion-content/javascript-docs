@@ -93,7 +93,6 @@ This property retrieves data from remote data. This property is applicable only 
 Two types of **Knockout** binding are supported,
 
 * One-way binding
-
 * Two-way binding
 
 **One way binding** refers to the process of applying observable values to all the available properties of the **Rotator**. But the changes made in **Rotator** widget are not reflected and triggered in turn to the observable collection. This kind of binding is applied to all the properties of the **Rotator**.
@@ -104,12 +103,11 @@ For more information about the **Knockout** binding, you can refer the online do
 
 http://help.syncfusion.com/ug/js/documents/knockoutjs.htm
 
-**Note: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding.**
+**Note**: Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding.
 
  
 
 * knockout-min.js
-
 * ej.widget.ko.min.js
 
 The link for those script files are as follows:
@@ -163,7 +161,6 @@ The following code example depicts the way to bind data to the **Rotator** throu
 Rotator is availed with two types of angular JS support namely, 
 
 * One way binding
-
 * Two way binding 
 
 **One way binding** refers to the process of applying scope values to all the available properties of the Rotator. But the changes made in **Rotator** widget are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the **Rotator**.
@@ -174,12 +171,11 @@ To know more details about the **Angular** **binding**, you can refer the follow
 
 http://help.syncfusion.com/ug/js/documents/angularjs.htm
 
-**Note: Add the following script files as given in the following example to access Angular binding. They have JS library for angular binding.**
+**Note**: Add the following script files as given in the following example to access Angular binding. They have JS library for angular binding.
 
 
 
 * angular-min.js
-
 * ej.widget.angular.min.js
 
 The following code example depicts the way to bind data to the **Rotator** widget through **angular** support.

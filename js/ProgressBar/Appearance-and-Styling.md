@@ -77,7 +77,9 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 {% endhighlight %}
 
-The following screenshot displays the output.       {% include image.html url="/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="    Figure 10: Custom Text in ProgressBar"%}
+The following screenshot displays the output.      
+
+ {% include image.html url="/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="    Figure 10: Custom Text in ProgressBar"%}
 
 ## Theme
 
@@ -86,27 +88,16 @@ The ProgressBar widget style and appearance are controlled based on **CSS** clas
 By default, there are 12 themes’ support available for the **ProgressBar** widget namely,
 
 * Default-theme
-
 * Flat-azure-dark
-
 * Fat-lime
-
 * Flat-lime-dark
-
 * Flat-saffron
-
 * Flat-saffron-dark
-
 * Gradient-azure
-
 * Gradient-azure-dark
-
 * Gradient-lime
-
 * Gradient-lime-dark
-
 * Gradient-saffron
-
 * Gradient-saffron-dark
 
 ## CSS class

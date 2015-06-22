@@ -14,13 +14,9 @@ The **Essential JavaScript Uploadbox** control supports uploading files into the
 **Key Features**
 
 * Modern look: Rich appearance with theme support.
-
 * RTL: Supports right-to-left alignment.
-
 * Auto Upload: Support for manual and automatic uploading of files is included.
-
 * Sync/Async Upload: Supports synchronous and asynchronous uploading of files.
-
 * Multiple files: Supports uploading multiple files.
 
 

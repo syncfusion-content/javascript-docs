@@ -15,7 +15,7 @@ You can provide a **Template** for customizing the appearance of the AutoComplet
 
 The following steps explain you how to define a **Template** to display a text and image for an AutoComplete textbox.
 
-1. In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete widget.
+In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete widget.
 
 {% highlight html %}
 
@@ -128,7 +128,7 @@ The following steps explain you how to define a **Template** to display a text a
 {% highlight js %}
 
 
-        $('#selectCountry').ejAutocomplete({
+            $('#selectCountry').ejAutocomplete({
                 dataSource: countries,
                 width: 205,
                 template: '&lt;div class="flag ${sprite}"&gt; &lt;/div&gt;' +

@@ -14,13 +14,9 @@ The **Toggle Button** allows you to perform the toggle option by using checked a
 **Key Features**
 
 * **Trendy Look :** Rich Appearance with Theme Support
-
 * **RTL :** Supports for Right to Left alignment
-
 * **Text and Image :** Supports both text and image as Toggle Button content in both On/Off state
-
 * **Built-in Icon :** Supports the built-in icon libraries
-
 * **Easy Customization :** The customization of button control to any form is made simple
 
 

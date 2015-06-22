@@ -218,34 +218,22 @@ The following code sample sets value for **expandSpeed** and **collapseSpeed** p
 
 **Theme**
 
-You can control the style and appearance of **Accordion** control based on **CSS** classes. In order to apply styles to the **Accordion** widget, you can refer two files, **ej.widgets.core.min.css** and **ej.theme.min.css**. When you refer **ej.widgets.all.min.css** file, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.widgets.all.min.css** is the combination of these two. 
+You can control the style and appearance of Accordion control based on **CSS** classes. In order to apply styles to the Accordion widget, you can refer two files, **ej.widgets.core.min.css** and **ej.theme.min.css**. When you refer **ej.widgets.all.min.css** file, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two. 
 
 By default, there are 12 themes support available for **Accordion** control namely
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
-
 
 
 **CSS class**

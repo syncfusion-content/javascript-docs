@@ -13,13 +13,11 @@ documentation: ug
 
 The following sub-properties provides you a way to bind either the local or remote data to the **Dropdown** control.
 
-Table 1:Properties of JavaScript
+Properties of JavaScript
 
 <table>
 <tr>
-<td>
-<b>Properties</b></td><td>
-<b>Description</b></td></tr>
+<th>Properties</th><th>Description</th></tr>
 <tr>
 <td>
 dataSource</td><td>
@@ -74,7 +72,7 @@ tableName</td><td>
 It defines the table name for the tag value or displays text while rendering remote data.</td></tr>
 </table>
 
-_**Local data**_
+**Local data**
 
 **Dropdown** provides data binding support for **DropdownList**. Thus you can bind the data from **JSON** Data. To achieve this, you need to map the corresponding file with their column names
 
@@ -161,7 +159,6 @@ Output of the above steps
 **DropdownList** widget contains two types of angular **JS** support namely, 
 
 * One way binding
-
 * Two way binding 
 
 One way binding refers to the process of applying scope values to all the available properties of the **Dropdown list** widget, but the changes made in **DropdownList** widget does not reflect or trigger in turn to the scope collection. This kind of binding applies to all the properties of the **DropdownList** widget.
@@ -170,7 +167,7 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 To know more detail about the Angular binding, you can refer the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+http://help.syncfusion.com/ug/js/documents/angularjs.htm
 
 The following example depicts the way to bind data to the **DropdownList** widget through angular support
 
@@ -273,7 +270,6 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
 Two types of knockout binding is supported,
 
 * One-way binding
-
 * Two-way binding
 
 One way binding refers to the process of applying observable values to all the available properties of the **DropdownList**  widget, but the changes made in the widget does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the dropdown list widget.
@@ -282,14 +278,14 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the knockout binding, refer the following online documentation in the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+http://help.syncfusion.com/ug/js/documents/knockoutjs.htm
 
 The following example depicts the way to bind data to the **DropdownList** widget through the knockout support that enables and populates data to a **DropdownList** widget based on the value set to the other dropdown widget.
 
 
 > {% include image.html url="/js/DropDownList/Data-binding_images/Data-binding_img5.png" Caption=""%}
 
-Note: You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.
+**Note:** You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.
 
 In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 

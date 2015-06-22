@@ -16,27 +16,16 @@ documentation: ug
 By default, there are 12 themes support available for **DatePicker** widget namely,
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ## Custom CSS
@@ -103,59 +92,56 @@ Keyboard navigation
 
 <table>
 <tr>
-<td>
-<b>Keys</b></td><td>
-<b>Function</b></td></tr>
+<th>Keys</th><th>Function</th></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> </b><b>+j</b></td><td>
+<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> </b>+j</td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
-<b>Alt + Down</b></td><td>
+Alt + Down</td><td>
 Opens the popup</td></tr>
 <tr>
-<td>
-<b>Left</b><b>Right</b></td><td>
+<td>LeftRight</td><td>
 Moves to previous dateMoves to next date</td></tr>
 <tr>
 <td>
-<b>Up</b></td><td>
+Up</td><td>
 Moves one week upward</td></tr>
 <tr>
 <td>
-<b>Down</b></td><td>
+Down</td><td>
 Moves one week downward</td></tr>
 <tr>
 <td>
-<b>Enter</b></td><td>
+Enter</td><td>
 Selects the focused date</td></tr>
 <tr>
 <td>
-<b>Esc</b></td><td>
+Esc</td><td>
 Closes the popup</td></tr>
 <tr>
 <td>
-<b>Ctrl + Up</b></td><td>
+Ctrl + Up</td><td>
 Navigates to top view</td></tr>
 <tr>
 <td>
-<b>Ctrl + Down</b></td><td>
+Ctrl + Down</td><td>
 Navigates to lower view</td></tr>
 <tr>
 <td>
-<b>Ctrl + Left</b></td><td>
+Ctrl + Left</td><td>
 Navigates to previous month</td></tr>
 <tr>
 <td>
-<b>Ctrl + Right</b></td><td>
+Ctrl + Right</td><td>
 Navigates to next month</td></tr>
 </table>
 
 
 The following steps explain you to enable keyboard interaction for **DatePicker** widget
 
-* In the **HTML** page, add a **&lt;input&gt;** element to configure **DatePicker** widget and enable keyboard interaction by setting the **accesskey** property
+In the **HTML** page, add a **&lt;input&gt;** element to configure **DatePicker** widget and enable keyboard interaction by setting the **accesskey** property
 
 
  {% highlight html %}

@@ -13,22 +13,25 @@ To provide a good look and feel for **Split Button**, position of arrow in **S
 
 List of arrow position
 
-<table>
+<table><tr>
+<th>
+Arrow Position</th><th>Description</th></tr>
+<tr>
 <tr>
 <td>
-<b>left</b></td><td>
+left</td><td>
 Support for arrow in left.</td></tr>
 <tr>
 <td>
-<b>right</b></td><td>
+right</td><td>
 Support for arrow in right. </td></tr>
 <tr>
 <td>
-<b>top</b></td><td>
+top</td><td>
 Support for arrow in top. </td></tr>
 <tr>
 <td>
-<b>bottom</b></td><td>
+bottom</td><td>
 Support for arrow in bottom.</td></tr>
 </table>
 

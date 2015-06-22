@@ -19,10 +19,10 @@ Property Table of JavaScript Toolbar control
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Syntax</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Syntax</th><th>
+Description</b></th></tr>
 <tr>
 <td>
 dataSource</td><td>
@@ -194,7 +194,6 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
 Two types of knockout binding is supported,
 
 * One-way binding
-
 * Two-way binding
 
 One-way binding refers to the process of applying observable values to all the available properties of the **Toolbar**, where the changes made in **Toolbar** widget is not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the **Toolbar**.
@@ -211,7 +210,6 @@ For more information about the knockout binding, refer the following link locati
 Note: Add the following script files along with the specified code to access knockout binding. It contains JS library for knockout binding.
 
 * Knockout.min.js
-
 * ej.widget.ko.min.js
 
 The link for the script file is as follows:
@@ -252,7 +250,6 @@ The following code example depicts you the way to bind data to the **Toolbar** t
 **Toolbar** is availed with two types of **angular JS** support namely, 
 
 * One way binding
-
 * Two way binding 
 
 One-way binding refers to the process of applying scope values to all the available properties of the Toolbar, where the changes made in **Toolbar** widget is not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **Toolbar**.
@@ -269,7 +266,6 @@ To know more detail about the Angular binding, refer the following link location
 Note: Add the following script files as given in the below example to access knockout binding. It contains JS library for angular binding.**_
 
 * Angular.min.js
-
 * ej.widget.angular.min.js
 
 The following code example depicts you the way to bind data to the **Toolbar** widget through angular support,

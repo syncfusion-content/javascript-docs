@@ -17,9 +17,9 @@ Keyboard Shortcuts
 
 <table>
 <tr>
-<td>
-<b>Shortcut Key</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Shortcut Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 <a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> + j</b></td><td>
@@ -38,7 +38,7 @@ Decrements the value</td></tr>
 
 The following steps explain the implementation of keyboard interaction in **PercentageTextBox** .
 
-* In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. Set the **accesskey** property to the **PercentageTextBox** control for focusing the control while key is pressed.
+In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **PercentageTextBox** control. Set the **accesskey** property to the **PercentageTextBox** control for focusing the control while key is pressed.
 
 
 

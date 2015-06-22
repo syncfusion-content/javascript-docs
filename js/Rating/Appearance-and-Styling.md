@@ -138,27 +138,16 @@ The following screenshot illustrates **Rating** with customized **shapeWidth** a
 By default, there are 12 themes support available for **Rating** control namely:
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ## Custom styles

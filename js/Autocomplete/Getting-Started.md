@@ -25,31 +25,27 @@ The following screenshot illustrates the **AutoComplete** control that searches 
 
 {% highlight html %}
 
-<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"  charset="utf-8"/>
-    <!-- Style sheet for default theme (flat azure) -->
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
-    <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script></script>
-    <!--Add custom scripts here -->
-</head>
-<body>
-<!—Add autocomplete element here -->
-</body>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"  charset="utf-8"/>
+      <!-- Style sheet for default theme (flat azure) -->
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <!--Scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script></script>
+      <!--Add custom scripts here -->
+   </head>
+   <body>
+      <!-- Add autocomplete element here -->
+   </body>
 </html>
 
 {% endhighlight %}
 
 
 
- Add a &lt;div&gt; element that acts as a container for AutoComplete widget.
+ Add a **&lt;div&gt;** element that acts as a container for AutoComplete widget.
 
 {% highlight html %}
 
@@ -180,7 +176,7 @@ To enable the **Popup** button, you can set **showPopupButton** property to **�
 
 [Installed Drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JS \Samples\ web\themes\images\icon-down.png 
 
- **Note: X.X.X.X represents the Essential Studio version number that you are using currently.**
+ **Note:** X.X.X.X represents the Essential Studio version number that you are using currently.
 
 Copy the “**icon-down.png**” from the above mentioned location and paste it in the folder location of your **HTML** sample page.
 

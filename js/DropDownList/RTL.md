@@ -13,7 +13,7 @@ This feature supports to change the left-to-right alignment of the **Dropdown** 
 
 **Defining the RTL property**
 
-The following steps explains you the configuration of **enableRTL** properties in **DropdownList****.
+The following steps explains you the configuration of **enableRTL** properties in **DropdownList**.
 
 In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 

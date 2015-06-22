@@ -138,7 +138,8 @@ In a real time ticket booking scenario, the booking is open only for a limited n
 
 {% highlight js %}
 
-        var curdate = new Date();// mentions the current date.
+        var curdate = new Date();
+        // mentions the current date.
         // the following code sets the date range to 60 days from the current date.
         var rangeDate = new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDate() + 60);
         $(function () {
@@ -153,7 +154,7 @@ In a real time ticket booking scenario, the booking is open only for a limited n
                 minDate: curdate, // Default date as mindate.
                 maxDate: rangeDate // 60 –days of interval from min date.
             });
-        });
+         });
 
 
 {% endhighlight %}

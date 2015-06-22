@@ -17,15 +17,13 @@ Start Level
 
 <table>
     <tr>
-        <td>
-            <b>Start Level</b>
-        </td>
-        <td>
-            <b>Syntax</b>
-        </td>
-        <td>
-            <b>Description</b>
-        </td>
+        <th>
+            Start Level </th>
+        <th>
+            Syntax</th>
+        <th>
+            Description
+        </th>
     </tr>
     <tr>
         <td>

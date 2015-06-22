@@ -130,7 +130,7 @@ Initialize RadioButton in script.
 
 
 
-4. Add the following styles
+ Add the following styles
 
 
 {% highlight css %}

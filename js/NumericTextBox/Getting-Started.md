@@ -29,7 +29,6 @@ Create an **HTML** file and add the following template to the html file for Text
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <!-- style sheet for default theme(flat azure) -->
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
@@ -191,7 +190,7 @@ You can add the following location in the **URL** path for the background image 
 
 
 
-5. The following screenshot displays the output when the above code is executed. 
+The following screenshot displays the output when the above code is executed. 
 
 {% include image.html url="/js/NumericTextBox/Getting-Started_images/Getting-Started_img2.png" Caption="Textboxes with watermark text"%}
 

@@ -14,7 +14,6 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
 Two types of knockout binding supported,
 
 * One-way binding
-
 * Two-way binding
 
 

@@ -14,7 +14,6 @@ documentation: ug
 Two types of knockout binding is supported,
 
 * One-way binding
-
 * Two-way binding
 
 **One-way binding** refers to the process of applying observable values to all the available properties of the **ColorPicker** widget. The changes made in **ColorPicker** widget are not reflected and triggered in turn to the observable collection. This kind of binding is applied to all the properties of the **ColorPicker** widget.
@@ -38,7 +37,6 @@ The following example depicts how you can bind data to the **ColorPicker** widge
     <title>Essential Studio for JavaScript : ColorPicker - KnockOut</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"   />
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
@@ -53,7 +51,7 @@ The following example depicts how you can bind data to the **ColorPicker** widge
                 <div class="frame" style="width: 420px">
                     <div id="control" style="float: left; width: 70%; margin-left: 10px">
                         <input id="colorpick" data-bind="ejColorPicker: { value: value, modelType: palette }" />
-                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way Knockout Support</span></h6>
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">
                     </div>
                     <div id="binding" style="float: left; width: 23%">
                         <input id="colorpick1" data-bind="ejColorPicker: { value: value, modelType: picker }" />

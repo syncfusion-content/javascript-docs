@@ -14,11 +14,11 @@ Using **cascade** option, you can create a behaviour of cascade between dropdown
 
 > {% include image.html url="/js/DropDownList/Cascading-Support_images/Cascading-Support_img1.png" Caption="DropDown with cascadding support"%}
 
-Note: In case the second dropdown is to disabled, until the first one is selected, you need to set enable property as false in second dropdown, which enables automatically once the value is selected in first one. 
+**Note:** In case the second dropdown is to disabled, until the first one is selected, you need to set enable property as false in second dropdown, which enables automatically once the value is selected in first one. 
 
 The following steps explains you the behaviour of cascade dropdown. 
 
- In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
+ In an HTML page, add a **&lt;input&gt;** element to configure DropdownList widget
 
 {% highlight html %}
 
@@ -86,7 +86,7 @@ Using multi cascade option, you can create a behavior of cascade between dropdow
 
 > {% include image.html url="/js/DropDownList/Cascading-Support_images/Cascading-Support_img3.png" Caption="Multiple cascadding"%}
 
-Note: In case, when you want to show the cascading dropdowns in disabled state initially, then set the value of enable property as “false” in each cascading dropdowns. It is then enabled automatically once a value is selected in parent (first) dropdown list.
+**Note:** In case, when you want to show the cascading dropdowns in disabled state initially, then set the value of enable property as “false” in each cascading dropdowns. It is then enabled automatically once a value is selected in parent (first) dropdown list.
 
 The following steps explains you the behavior of multiple cascade dropdown.
 

@@ -29,21 +29,21 @@ The **TagCloud** can be easily configured to the div element in which the tags a
 <html>
 <head> 
     <!-- Style sheet for default theme (flat azure) -->
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
-
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+    
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
+    
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
+    
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
       <!--Add necessary HTML elements-->
-       <!--Apply Scripts-->
+      <!--Apply Scripts-->
 </body>
 </html>
 
@@ -75,23 +75,23 @@ Add the following code example before **&lt;/body&gt;** tag to add list of items
 
 
    
-            $("document").ready(function (event) {
-              var websiteCollection = [
-              { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
-         { text: "DuckDuckGo", url: "https://duckduckgo.com/", frequency: 5 },
-         { text: "Bing", url: "http://www.bing.com/", frequency: 23 },
-         { text: "Blekko", url: "http://blekko.com/", frequency: 4 },  
-         { text: "Alhea", url: "http://www.alhea.com/", frequency: 3 },
-         { text: "MyWebSearch", url: "http://home.mywebsearch.com/index.jhtml", frequency: 10 },
-         { text: "Infospace", url: "http://infospace.com/", frequency: 8 },
-         { text: "Google", url: "https://www.google.co.in/", frequency: 24 },
-         { text: "Dogpile", url: "http://www.dogpile.com/", frequency: 4 },
-
-         { text: "Wow", url: "http://www.wow.com/", frequency: 14 },
-         { text: "Info", url: "http://www.info.com/", frequency: 6 },
-         { text: "WebCrawler", url: "http://www.webcrawler.com/", frequency: 12 },
-         { text: "Contenko", url: "http://www.contenko.com/", frequency: 3 },
-         { text: "Aol Search", url: "http://search.aol.com", frequency: 16 },
+        $("document").ready(function (event) {
+             var websiteCollection = [
+                 { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
+                 { text: "DuckDuckGo", url: "https://duckduckgo.com/", frequency: 5 },
+                 { text: "Bing", url: "http://www.bing.com/", frequency: 23 },
+                 { text: "Blekko", url: "http://blekko.com/", frequency: 4 },  
+                 { text: "Alhea", url: "http://www.alhea.com/", frequency: 3 },
+                 { text: "MyWebSearch", url: "http://home.mywebsearch.com/index.jhtml", frequency: 10 },
+                 { text: "Infospace", url: "http://infospace.com/", frequency: 8 },
+                 { text: "Google", url: "https://www.google.co.in/", frequency: 24 },
+                 { text: "Dogpile", url: "http://www.dogpile.com/", frequency: 4 },
+        
+                 { text: "Wow", url: "http://www.wow.com/", frequency: 14 },
+                 { text: "Info", url: "http://www.info.com/", frequency: 6 },
+                 { text: "WebCrawler", url: "http://www.webcrawler.com/", frequency: 12 },
+                 { text: "Contenko", url: "http://www.contenko.com/", frequency: 3 },
+                 { text: "Aol Search", url: "http://search.aol.com", frequency: 16 },
             ];
             $("#tagcloud").ejTagCloud({
                 dataSource: websiteCollection,
@@ -119,23 +119,23 @@ In the above code example, the **frequency** properties are used to set the min 
 
 
    
-            $("document").ready(function (event) {
-              var websiteCollection = [
-              { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
-         { text: "DuckDuckGo", url: "https://duckduckgo.com/", frequency: 5 },
-         { text: "Bing", url: "http://www.bing.com/", frequency: 23 },
-         { text: "Blekko", url: "http://blekko.com/", frequency: 4 },  
-         { text: "Alhea", url: "http://www.alhea.com/", frequency: 3 },
-         { text: "MyWebSearch", url: "http://home.mywebsearch.com/index.jhtml", frequency: 10 },
-         { text: "Infospace", url: "http://infospace.com/", frequency: 8 },
-         { text: "Google", url: "https://www.google.co.in/", frequency: 24 },
-         { text: "Dogpile", url: "http://www.dogpile.com/", frequency: 4 },
-
-         { text: "Wow", url: "http://www.wow.com/", frequency: 14 },
-         { text: "Info", url: "http://www.info.com/", frequency: 6 },
-         { text: "WebCrawler", url: "http://www.webcrawler.com/", frequency: 12 },
-         { text: "Contenko", url: "http://www.contenko.com/", frequency: 3 },
-         { text: "Aol Search", url: "http://search.aol.com", frequency: 16 },
+        $("document").ready(function (event) {
+             var websiteCollection = [
+                 { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
+                 { text: "DuckDuckGo", url: "https://duckduckgo.com/", frequency: 5 },
+                 { text: "Bing", url: "http://www.bing.com/", frequency: 23 },
+                 { text: "Blekko", url: "http://blekko.com/", frequency: 4 },  
+                 { text: "Alhea", url: "http://www.alhea.com/", frequency: 3 },
+                 { text: "MyWebSearch", url: "http://home.mywebsearch.com/index.jhtml", frequency: 10 },
+                 { text: "Infospace", url: "http://infospace.com/", frequency: 8 },
+                 { text: "Google", url: "https://www.google.co.in/", frequency: 24 },
+                 { text: "Dogpile", url: "http://www.dogpile.com/", frequency: 4 },
+        
+                 { text: "Wow", url: "http://www.wow.com/", frequency: 14 },
+                 { text: "Info", url: "http://www.info.com/", frequency: 6 },
+                 { text: "WebCrawler", url: "http://www.webcrawler.com/", frequency: 12 },
+                 { text: "Contenko", url: "http://www.contenko.com/", frequency: 3 },
+                 { text: "Aol Search", url: "http://search.aol.com", frequency: 16 },
             ];
             $("#tagcloud").ejTagCloud({         
                 dataSource: websiteCollection,
@@ -163,31 +163,31 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
     
     $("document").ready(function (event) {
               var websiteCollection = [
-              { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
-         { text: "DuckDuckGo", url: "https://duckduckgo.com/", frequency: 5 },
-         { text: "Bing", url: "http://www.bing.com/", frequency: 23 },
-         { text: "Blekko", url: "http://blekko.com/", frequency: 4 },  
-         { text: "Alhea", url: "http://www.alhea.com/", frequency: 3 },
-         { text: "MyWebSearch", url: "http://home.mywebsearch.com/index.jhtml", frequency: 10 },
-         { text: "Infospace", url: "http://infospace.com/", frequency: 8 },
-         { text: "Google", url: "https://www.google.co.in/", frequency: 24 },
-         { text: "Dogpile", url: "http://www.dogpile.com/", frequency: 4 },
-
-         { text: "Wow", url: "http://www.wow.com/", frequency: 14 },
-         { text: "Info", url: "http://www.info.com/", frequency: 6 },
-         { text: "WebCrawler", url: "http://www.webcrawler.com/", frequency: 12 },
-         { text: "Contenko", url: "http://www.contenko.com/", frequency: 3 },
-         { text: "Aol Search", url: "http://search.aol.com", frequency: 16 },
+                 { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
+                 { text: "DuckDuckGo", url: "https://duckduckgo.com/", frequency: 5 },
+                 { text: "Bing", url: "http://www.bing.com/", frequency: 23 },
+                 { text: "Blekko", url: "http://blekko.com/", frequency: 4 },  
+                 { text: "Alhea", url: "http://www.alhea.com/", frequency: 3 },
+                 { text: "MyWebSearch", url: "http://home.mywebsearch.com/index.jhtml", frequency: 10 },
+                 { text: "Infospace", url: "http://infospace.com/", frequency: 8 },
+                 { text: "Google", url: "https://www.google.co.in/", frequency: 24 },
+                 { text: "Dogpile", url: "http://www.dogpile.com/", frequency: 4 },
+        
+                 { text: "Wow", url: "http://www.wow.com/", frequency: 14 },
+                 { text: "Info", url: "http://www.info.com/", frequency: 6 },
+                 { text: "WebCrawler", url: "http://www.webcrawler.com/", frequency: 12 },
+                 { text: "Contenko", url: "http://www.contenko.com/", frequency: 3 },
+                 { text: "Aol Search", url: "http://search.aol.com", frequency: 16 },
             ];
-        $("#tagcloud").ejTagCloud({
-            dataSource: websiteCollection,
-            titleText: "Tech Sites",
-            create: "oncreate",
-            mouseover: "onmouseover",
-            mouseout: "onmouseout",
-            click: "onclick",
-            width: "auto"
-        });
+            $("#tagcloud").ejTagCloud({
+                dataSource: websiteCollection,
+                titleText: "Tech Sites",
+                create: "oncreate",
+                mouseover: "onmouseover",
+                mouseout: "onmouseout",
+                click: "onclick",
+                width: "auto"
+            });
     });
     function oncreate(args) {
         alert();

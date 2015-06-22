@@ -29,23 +29,19 @@ Create an HTML file and add the following code template to the HTML file.
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <!-- Style sheet for default theme (flat azure) -->
-
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css" rel="stylesheet" />
-
-    <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-    <!--Add custom scripts here -->
-</head>
-<body>
-    <!--- Add button element Here  --->
-</body>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+      <!-- Style sheet for default theme (flat azure) -->
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-saffron-dark/ej.web.all.min.css" rel="stylesheet" />
+      <!--Scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <!--Add custom scripts here -->
+   </head>
+   <body>
+      <!--- Add button element Here  --->
+   </body>
 </html>
 
 

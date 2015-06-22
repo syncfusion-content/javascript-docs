@@ -57,15 +57,15 @@ Configure the **DataSource** and initialize the **DropDownList** widget in the S
 
 
 
-3. The above code example illustrates the following output.
+The above code example illustrates the following output.
 
-{% include image.html url="/js/DropDownList/Grouping-Support_images/Grouping-Support_img1.png" Caption="Figure 29: Grouping support by using DateaSource"%}
+{% include image.html url="/js/DropDownList/Grouping-Support_images/Grouping-Support_img1.png" Caption="Grouping support by using DateaSource"%}
 
 **Grouping Support using UL and LI structure**
 
 Another way to group **DropDownList** is by using **UL** and **LI structure**. Here, you have to specify the group category in the **&lt;span&gt;** tag. The ID of the **&lt;div&gt;** tag should be given as the **targetId** for the **DropDownList** control. The following code example illustrates how to achieve Grouping in DropDownList control by using **UL and LI structure**.
 
-1. Add the input element and the UL and LI structures to group the **DropDownList** control.
+Add the input element and the UL and LI structures to group the **DropDownList** control.
 
 {% highlight html %}
 
@@ -102,5 +102,5 @@ Another way to group **DropDownList** is by using **UL** and **LI structure**. H
 
 {% endhighlight %}
 
-{% include image.html url="/js/DropDownList/Grouping-Support_images/Grouping-Support_img2.png" Caption="Figure 30: Grouping in Dropdownlist by using UL and LI structure "%}
+{% include image.html url="/js/DropDownList/Grouping-Support_images/Grouping-Support_img2.png" Caption="Grouping in Dropdownlist by using UL and LI structure "%}
 

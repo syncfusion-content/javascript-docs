@@ -145,11 +145,10 @@ Special dates fields
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td><td>
-Default value</td><td>
-Data type</td></tr>
+<th>Name</th><th>
+Description</th><th>
+Default value</th><th>
+Data type</th></tr>
 <tr>
 <td>
 date</td><td>
@@ -165,7 +164,7 @@ String </td></tr>
 <tr>
 <td>
 icon </td><td>
-you can set the customized css with this property. > <img src="Behavior-Settings_images\Behavior-Settings_img2.jpeg" alt="" width="18pt" height="18pt"<i><b>Note: You need to set the image as background url and its styles within this class</b></i></td><td>
+you can set the customized css with this property. <img src="Behavior-Settings_images\Behavior-Settings_img2.jpeg" alt="" width="18pt" height="18pt"<i> **Note:** You need to set the image as background url and its styles within this class</i></td><td>
 Null </td><td>
 String</td></tr>
 </table>

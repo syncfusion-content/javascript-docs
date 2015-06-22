@@ -29,8 +29,7 @@ Create an **HTML** file and add the following template to the html file for Text
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- style sheet for default theme(flat azure) -->
 <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
-
- <!--scripts-->
+    <!--scripts-->
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
@@ -198,9 +197,8 @@ http://js.syncfusion.com/UG/Web/Content/electricity.png
 
 The following screenshot displays the output when the above code is executed. 
 
-{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
+{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img2.png" Caption="Textboxes with watermark text"%}
 
- Textboxes with watermark text
 
 ### Set the MinValue, MaxValue and Value in Textboxes
 
@@ -259,9 +257,8 @@ The following screenshot illustrates the output of the above code examples.
 
 
 
-{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
-
- Textboxes with value.
+{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img3.png" Caption="Textboxes with value"%}
+ 
 
 ### Set the Strict Mode Option
 
@@ -343,7 +340,7 @@ You can use events to calculate the total and display the value. You can achieve
             amuntperkm = $("#amountperum").data("ejCurrencyTextbox"); // Object of Currency
             cusmob = $("#mobiNo").data("ejMaskEdit"); // Object of MaskEdit
           });
-        // Simple Bill amount calculation.
+          // Simple Bill amount calculation.
           function calculateBill() {
             // This is used to calculate the Net amount
             var netamunt = umcalc.model.value * amuntperkm.model.value;
@@ -360,5 +357,5 @@ You can use events to calculate the total and display the value. You can achieve
 
 Run the above code example, fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator. 
 
-{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 4: Electricity bill calculator with alert"%}
+{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img4.png" Caption="Electricity bill calculator with alert"%}
 

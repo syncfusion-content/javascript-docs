@@ -17,7 +17,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% highlight html %}
 
-
     <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
@@ -81,6 +80,3 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
     });
 
 {% endhighlight %}
-
-
-

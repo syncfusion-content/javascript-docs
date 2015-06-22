@@ -23,7 +23,6 @@ If you want to use any cultures, add the script files of those corresponding cul
 You can also customize the culture to your own, using the following steps.
 
 * Open the **Culture** script file, included in your project.
-
 * Replace existing calendar locale information by your own culture information or to your customized format.
 
 Refer this section for more details: [localization](http://help.syncfusion.com/ug/js/default.htm)

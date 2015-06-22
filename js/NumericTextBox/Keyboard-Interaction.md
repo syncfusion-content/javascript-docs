@@ -17,9 +17,7 @@ Keyboard Shortcuts
 
 <table>
 <tr>
-<td>
-<b>Shortcut Key</b></td><td>
-<b>Description</b></td></tr>
+<th>Shortcut Key</th><th>Description</th></tr>
 <tr>
 <td>
 <a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> + j</b></td><td>
@@ -61,7 +59,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% endhighlight %}
 
-Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access_key) **+ j** key to focus the **NumericTextBox**widget. Perform provided functionality by using keyboard shortcuts.
+Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access_key) **+ j** key to focus the **NumericTextBox** widget. Perform provided functionality by using keyboard shortcuts.
 
 
 

@@ -21,7 +21,7 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
   {% highlight html %}
 
 
-   <div class="align">
+    <div class="align">
         <input type="checkbox" class="nodetext" id="checkbox_nonchecked" />
         <label for="checkbox_nonchecked" class="clslab">Music</label>
         <br />
@@ -64,7 +64,7 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 
   {% highlight html %}
  
-   <div class="align">
+    <div class="align">
         <input type="checkbox" class="nodetext" id="checkbox_nonTriState" />
         <label for="checkbox_nonTriState" class="clslab">Music</label>
         <br />
@@ -100,18 +100,38 @@ You require an option to set indeterminate state for Checkbox. By using Checkbox
 List of check states
 
 <table>
-<tr>
-<td>
-check</td><td>
-Check box will be in checked state</td></tr>
-<tr>
-<td>
-uncheck</td><td>
-Check box will be in un-checked state</td></tr>
-<tr>
-<td>
-indeterminate</td><td>
-Check box will be in indeterminate state</td></tr>
+   <tr>
+      <th>
+         Check States
+      </th>
+      <th>
+         Description
+      </th>
+   </tr>
+   <tr>
+      <td>
+         check
+      </td>
+      <td>
+         Check box will be in checked state
+      </td>
+   </tr>
+   <tr>
+      <td>
+         uncheck
+      </td>
+      <td>
+         Check box will be in un-checked state
+      </td>
+   </tr>
+   <tr>
+      <td>
+         indeterminate
+      </td>
+      <td>
+         Check box will be in indeterminate state
+      </td>
+   </tr>
 </table>
 
 
@@ -123,7 +143,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% highlight html %}
 
   
-   <div class="align">
+    <div class="align">
         <input type="checkbox" class="nodetext" id="check" />
         <label for="check" class="clslab">Checked state</label>
         <br />
@@ -166,13 +186,15 @@ You can render **Checkbox** in different sizes. The following table contains som
 List of checkbox size:
 
 <table>
+    <tr>
+<th>CheckBox size</th><th>Description</th></tr>
 <tr>
-<td>
-<b>small</b></td><td>
+<tr>
+<td>small</td><td>
 Creates checkbox with inbuilt small size height, width specified.</td></tr>
 <tr>
 <td>
-<b>medium</b></td><td>
+medium</td><td>
 Creates checkbox with inbuilt medium size height, width specified.</td></tr>
 </table>
 

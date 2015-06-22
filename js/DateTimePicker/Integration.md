@@ -87,15 +87,11 @@ Add the following code in your **HTML** page.
 If you use **KO** with your applications, you can get following benefits:
 
 * You can connect UI elements with data model anytime. 
-
 * Easily create complex dynamic data model.  
-
 * Automatically update UI when data model is changed. When UI is changed data model is changed automatically. 
 
 
-
 Add the following code in your **HTML** page.
-
 
 
 {% highlight html %}

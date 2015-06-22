@@ -15,9 +15,7 @@ Client side API for Dialog Table
 
 <table>
 <tr>
-<td>
-<b>Methods</b></td><td>
-<b>Description</b></td></tr>
+<th>Methods</th><th>Description</th></tr>
 <tr>
 <td>
 open</td><td>

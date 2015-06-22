@@ -17,9 +17,7 @@ Start level
 
 <table>
 <tr>
-<td>
-<b>Name </b></td><td>
-<b>Description</b></td></tr>
+<th>Name</th><th>Description</th></tr>
 <tr>
 <td>
 month</td><td>
@@ -76,9 +74,7 @@ Depth level
 
 <table>
 <tr>
-<td>
-<b>Value</b></td><td>
-<b>Description</b></td></tr>
+<th>Value</th><th>Description</th></tr>
 <tr>
 <td>
 month</td><td>

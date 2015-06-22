@@ -15,9 +15,7 @@ Keyboard Shortcut Keys
 
 <table>
 <tr>
-<td>
-<b>Shortcut Key</b></td><td>
-<b>Description</b></td></tr>
+<th>Shortcut Key</th><th>Description</th></tr>
 <tr>
 <td>
 <a href=http://en.wikipedia.org/wiki/Access_key>Access key</a> + j	</td><td>

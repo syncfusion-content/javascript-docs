@@ -12,7 +12,6 @@ documentation: ug
 The **Toolbar** control supports both vertical and horizontal orientations, allowing it to fit into any scenario. The **orientation** property **of Toolbar** defines the orientation in which the control is rendered. Set the value to this property as **enum or string** type. It accepts the following values.
 
 * ej.Orientation.Horizontal or “Horizontal”
-
 * ej.Orientation.Vertical  or “Vertical”
 
 The following section explains you on how to set orientation for the toolbar.

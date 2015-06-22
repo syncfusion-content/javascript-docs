@@ -15,9 +15,7 @@ Events of Dialog
 
 <table>
 <tr>
-<td>
-<b>Event</b></td><td>
-<b>Description</b></td></tr>
+<th>Event</th><th>Description</th></tr>
 <tr>
 <td>
 beforeClose</td><td>
@@ -205,10 +203,12 @@ Output of **Dialog** widget when the events trigger is as follows.
 
 
 <table>
-<tr>
-<td>
-<img src="Events_images\Events_img1.png" alt="C:\Users\ApoorvahR\Desktop\1.png" width="223pt" height="150pt"</td><td>
-<img src="Events_images\Events_img2.png" alt="C:\Users\ApoorvahR\Desktop\2.png" width="214pt" height="141pt"</td></tr>
+     <tr>
+        <td>
+            <img src="Events_images\Events_img1.png" alt="C:\Users\ApoorvahR\Desktop\1.png" width="223pt" height="150pt"/></td>
+        <td>
+            <img src="Events_images\Events_img2.png" alt="C:\Users\ApoorvahR\Desktop\2.png" width="214pt" height="141pt"/></td>
+     </tr>
 </table>
 
 _Dialog triggered create and beforeOpen event_               

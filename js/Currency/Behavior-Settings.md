@@ -22,7 +22,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -82,6 +82,7 @@ The output for **CurrencyTextBox** with **enablePersistence** is as follows. You
 {% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="CurrencyTextBox after changing the value and a page load "%}
 
 ## Strict Mode Support
+
 The CurrencyTextBox widget allows you to use the strict mode option by setting the **enableStrictMode** property. You can set the **minValue** and **maxValue** to the controls to enable strict mode functionality. When the CurrencyTextBox value exceeds the maxValue, it restricts the exceeded value and returns the **maxValue**. Likewise when the CurrencyTextBox value goes below **minValue**, it restricts the new value and returns the minValue.
 
 ### Configure Strict Mode Support 
@@ -93,7 +94,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -129,7 +130,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -167,7 +168,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -238,7 +239,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -307,7 +308,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -376,27 +377,16 @@ The **CurrencyTextBox** control’s style and appearance can be controlled based
 By default, there are 12 themes support available for **CurrencyTextBox** control namely:
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ### CSS Class
@@ -412,7 +402,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -468,7 +458,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -495,12 +485,12 @@ The **CurrencyTextBox** provides you the option as to whether to display the spl
 
 The following steps explain the implementation of **showSpinButton** in **CurrencyTextBox** .
 
-* In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
+In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -520,7 +510,7 @@ The output for **CurrencyTextBox** when **showSpinButton** is “**True**”.
 
 {% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img17.png" Caption="CurrencyTextBox with showSpinButton is True"%}
 
-__{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img18.png" Caption="CurrencyTextBox with showSpinButton is False"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img18.png" Caption="CurrencyTextBox with showSpinButton is False"%}
 
 ## Water Mark Text Support
 
@@ -530,12 +520,12 @@ The **CurrencyTextBox** provide water mark text support. You can display the ini
 
 The following steps explain the implementation of **watermarkText** in **CurrencyTextBox** .
 
-* In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
+In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering **CurrencyTextBox** control. 
 
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+    <input id="currency" type="text" />
     
 {% endhighlight %}
 

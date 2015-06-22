@@ -12,7 +12,6 @@ documentation: ug
 **Knockout support** allows you to bind the **HTML** elements against any of the available data models. It is of two types**.**
 
 * One-way binding
-
 * Two-way binding
 
 **One-way binding** refers to the process of applying observable values to all the available properties of the **PercentageTextBox** widget, but the changes made in **PercentageTextBox** widget are not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the **PercentageTextBox** widget.

@@ -18,33 +18,19 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 ### List of Toolbar Items
 
 * Alignment Formatting Tools: Left, right, center, and justify.
-
-* Color palette: 
-
+* Color palette
 * Fore-color: To change the color of text in editing area
-
 * Back-color: To change the background color of editing area
-
 * Bulleting: Ordered and un-ordered list
-
 * Style: Bold, Italic, Underline, and Strikethrough
-
 * Subscript and Superscript 
-
 * Text with subscript and superscript placed after or before the baseline respectively.
-
 * Font options
-
-* [Font Name](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font) – Typeface that is applied to the document text.
-
-* [Font Size](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size) – Determines how big or small the text will be.
-
+* Font Name http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font – Typeface that is applied to the document text.
+* Font Size http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size – Determines how big or small the text will be.
 * Format
-
 * Predefined sets of formatting features that can be applied to block and to make elements of the document inline.
-
 * Upper & lower case conversion
-
 * Indent
 
 
