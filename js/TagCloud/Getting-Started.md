@@ -15,11 +15,13 @@ This section explains briefly about how to create a **TagCloud** in your applica
 
 The **TagCloud** can be easily configured to the div element in which the tags are placed. The following screenshot illustrates the functionality of a **TagCloud** widget with a list of the topmost search engines. 
 
+
+
 {% include image.html url="/js/TagCloud/Getting-Started_images/Getting-Started_img1.png" Caption="TagCloud Widget"%}
 
 ### Create TagCloud widget
 
-1. Create an **HTML** file and add the following template to the **HTML** file.
+ Create an **HTML** file and add the following template to the **HTML** file.
 
 {% highlight html %}
 
@@ -27,7 +29,7 @@ The **TagCloud** can be easily configured to the div element in which the tags a
 <html>
 <head> 
     <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -36,7 +38,7 @@ The **TagCloud** can be easily configured to the div element in which the tags a
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -48,7 +50,11 @@ The **TagCloud** can be easily configured to the div element in which the tags a
 
 {% endhighlight %}
 
-2. Add necessary **HTML** elements.
+
+
+Add necessary **HTML** elements.
+
+
 
 {% highlight html %}
 
@@ -59,12 +65,16 @@ The **TagCloud** can be easily configured to the div element in which the tags a
 
 {% endhighlight %}
 
-3. Add the following code example before &lt;/body&gt; tag to add list of items to the TagCloud and initialize the TagCloud widget.
+
+
+Add the following code example before **&lt;/body&gt;** tag to add list of items to the **TagCloud** and initialize the **TagCloud** widget.
+
+
 
 {% highlight js %}
 
 
-      <script>
+   
             $("document").ready(function (event) {
               var websiteCollection = [
               { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
@@ -88,12 +98,16 @@ The **TagCloud** can be easily configured to the div element in which the tags a
                 titleText: "Tech Sites"
             });
         });
-    </script>
+  
 
 
 {% endhighlight %}
 
+
+
 The following screenshot displays the output of the above code example.
+
+
 
 {% include image.html url="/js/TagCloud/Getting-Started_images/Getting-Started_img2.png" Caption="TagCloud with Min/Max Fonts"%}
 
@@ -104,7 +118,7 @@ In the above code example, the **frequency** properties are used to set the min 
 {% highlight js %}
 
 
-      <script>
+   
             $("document").ready(function (event) {
               var websiteCollection = [
               { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
@@ -128,10 +142,12 @@ In the above code example, the **frequency** properties are used to set the min 
                 titleText: "Tech Sites"
             });
         });
-    </script>
+   
 
 
 {% endhighlight %}
+
+
 
 In the above code, the min font size is 3 and max font size is 24.
 
@@ -139,10 +155,12 @@ In the above code, the min font size is 3 and max font size is 24.
 
 Here, you can set the **TagCloud** events such as create, mouseover, mouseout, click.
 
+
+
 {% highlight js %}
 
 
-      <script>
+    
     $("document").ready(function (event) {
               var websiteCollection = [
               { text: "Yahoo!", url: "http://search.yahoo.com/", frequency: 20 },
@@ -183,10 +201,12 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
     function onclick(args) {
         alert();
     }
-</script>
+
 
 
 {% endhighlight %}
+
+
 
 In the above code example, the **alert()** function is used  to show the events that happened.
 

@@ -21,7 +21,7 @@ The **DatePicker** control for **JavaScript** provides support for displaying a 
 
 * **Start and depth level**: This feature allows the control to display the calendar to starting from days, months, years, or decades. It can also restrict the drill-down depth. 
 
-* **Date Format and Localization**: The **DatePicker** control uses Globalize.js, a simple **JavaScript** library that allows users to globalize and localize the format and dates in a culture-specific fashion. This Globalize.js can be found on [GitHub](https://github.com/jquery/globalize).
+* **Date Format and Localization**: The **DatePicker** control uses Globalize.js, a simple **JavaScript** library that allows users to globalize and localize the format and dates in a culture-specific fashion. This Globalize.js can be found on [GitHub](https://github.com/jquery/globalize). 
 
 * **Keyboard Navigation**: Users can interact with the **DatePicker** control by using the keyboard. 
 
@@ -30,6 +30,4 @@ The **DatePicker** control for **JavaScript** provides support for displaying a 
 * **DisplayInline**: This feature allows the **DatePicker** control to function as a calendar control.
 
 * **Theme: Essential JavaScript** controls feature 12 built-in themes: 6 that are flat and 6 with gradient effects. They also support custom skin options to set user-defined themes.
-
-
 

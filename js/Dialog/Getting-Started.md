@@ -16,15 +16,13 @@ This section explains briefly about how to create a **Dialog** in your applicati
 The **Essential JavaScript Dialog** control displays a **Dialog** window within the web page. The **Dialog** control enables you to display a message in the supplementary content like images, text and interactive content such as forms. The **Dialog** control displays the content on **modal dialog**, in which you cannot interact with other items on the page. You can drag and resize the **Dialog**. This section explains you how to customize a **Dialog** for a real time login form scenario. The following screen shot illustrates the appearance of the **Dialog**.
 
 
-
 {% include image.html url="/js/Dialog/Getting-Started_images/Getting-Started_img1.png" Caption="Sign Up Form Appearance"%}
 
 ### Create a Dialog
 
 **Essential JavaScript Dialog** control is an interface for hosting a page inside a window. **Dialog** content can be text, graphics or **HTML**. It shows the model popup window as model form. You can create a **Dialog** control by using simple **&lt;div&gt;** tag element as follows.
 
-1. Create an HTML file and add the following template in the HTML file. 
-
+Create an HTML file and add the following template in the HTML file. 
 
 
 {% highlight html %}
@@ -32,9 +30,9 @@ The **Essential JavaScript Dialog** control displays a **Dialog** window within 
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-         <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <!-- Style sheet for default theme (flat azure) -->
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -43,7 +41,7 @@ The **Essential JavaScript Dialog** control displays a **Dialog** window within 
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -57,7 +55,7 @@ The **Essential JavaScript Dialog** control displays a **Dialog** window within 
 
 
 
-2. Add &lt;div&gt; or span elements in &lt;body&gt; tag to render Dialog control.  
+Add &lt;div&gt; or span elements in &lt;body&gt; tag to render Dialog control.  
 
 
 
@@ -72,27 +70,25 @@ The **Essential JavaScript Dialog** control displays a **Dialog** window within 
 
 
 
-3. Initialize the Dialog control in &lt;script&gt; tag.
+Initialize the Dialog control in &lt;script&gt; tag.
 
 
 
 {% highlight js %}
 
 
-    <script type="text/javascript">
-        $(function () {
-            // document ready
-            // Initialize Dialog control creation
-            $("#loginForm").ejDialog();
-        });
-                   </script> 
+    $(function () {
+        // document ready
+        // Initialize Dialog control creation
+        $("#loginForm").ejDialog();
+    });
 
 
 {% endhighlight %}
 
 
 
-4. Execute the above code to render the following output.
+Execute the above code to render the following output.
 
 
 
@@ -114,13 +110,9 @@ The following code example illustrates how to set the content in **Dialog** cont
   <!-- Dialog control element -->
 
     <div id="loginForm" title="Sign Up">
-
         <form method="get" name="signup" id="signup_form">
-
             <!--title attribute value used to set the title to dialog control header -->
-
             <!-- Sign up form elements -->
-
             <div class="heading">
                 <div class="text-center">Sign Up</div>
                 <div class="text-center content">It's free and always will be</div>
@@ -170,12 +162,10 @@ You can use the following styles to customize the styles of sign up form. You ca
 {% highlight css %}
 
 
-  <style class="cssStyles">
-
+   <style class="cssStyles">
         #loginForm {
-        background: linear-gradient(#FFFFFF, #D3D8E8) repeat scroll 0 0 rgba(0, 0, 0, 0);
-
-      }
+            background: linear-gradient(#FFFFFF, #D3D8E8) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        }
 
         .content {
             color: #999999;
@@ -199,7 +189,7 @@ You can use the following styles to customize the styles of sign up form. You ca
 
         .heading div.content {
             font-size: 15px;
-         }
+        }
 
         .information {
             padding: 5px 20px;
@@ -218,15 +208,14 @@ You can use the following styles to customize the styles of sign up form. You ca
             width: 47%;
         }
 
-       .info.last {
-           float: right;
+        .info.last {
+            float: right;
         }
 
         .signupbtn .btn {
             width: 100%;
         }
     </style>
-
 
 
 {% endhighlight %}
@@ -240,11 +229,10 @@ Render the dialog inside **&lt;script&gt;** tag after updating the dialog conten
 {% highlight js %}
 
 
-$(function () {
+        $(function () {
             // declaration
             $("#loginForm").ejDialog();
         });
-
 
 
 {% endhighlight %}
@@ -263,29 +251,26 @@ This process enables you to render the **Dialog** control with sign up form elem
 
 To remove the header and resizable options from dialog use the **enableResize** and **showHeader** properties. By default the width of the **Dialog** control is based on the content inside it. You can also set the width of the **Dialog** control using **width** property. To render the appearance of sign up control, you can set the width of **Dialog** control.
 
-1. Initialize the **Dialog** control using following code example.
+Initialize the **Dialog** control using following code example.
 
 
 
 {% highlight js %}
 
-
-$(function () {
+        $(function () {
             // declaration
             $("#loginForm").ejDialog({
-width:"330px", // To set the width to Dialog control.
-                    showHeader:false, // To remove Dialog Header from dialog
-enableResize:false // To remove Resizable option from dialog
+                width: "330px", // To set the width to Dialog control.
+                showHeader: false, // To remove Dialog Header from dialog
+                enableResize: false // To remove Resizable option from dialog
             });
         });
-
-
 
 {% endhighlight %}
 
 
 
-2. Execute the code to render the following output_._
+Execute the code to render the following output.
 
 
 
@@ -297,16 +282,17 @@ This section explains you to set the validation to each form elements inside the
 
 When the validation fails, set args.cancel value as ‘true’. This prevents the Dialog from closing.
 
-1. You can add an HTML element in the form to display the error message in Dialog.
+You can add an HTML element in the form to display the error message in Dialog.
 
 
 
 {% highlight html %}
 
 
-            <!-- element for error message -->
+    <!-- element for error message -->
 
-                  <div class="errormsg"></div>  <!-- insert the element at the end of the Sign up form -->
+    <div class="errormsg"></div>
+    <!-- insert the element at the end of the Sign up form -->
 
 
 
@@ -316,14 +302,12 @@ When the validation fails, set args.cancel value as ‘true’. This prevents th
 
 
 
-2. Add the following code example in &lt;script&gt; tag to add validation to form elements.
+Add the following code example in &lt;script&gt; tag to add validation to form elements.
 
 
 
 {% highlight js %}
 
-
-    <script type="text/javascript">
         $(function () {
             // declaration
             $("#loginForm").ejDialog({
@@ -339,7 +323,7 @@ When the validation fails, set args.cancel value as ‘true’. This prevents th
 
         function onSignUp() {
             var obj = $("#loginForm").data("ejDialog");
-            obj.close(); 
+            obj.close();
         }
 
         // onValidation function trigger before close the dialog.
@@ -386,21 +370,18 @@ When the validation fails, set args.cancel value as ‘true’. This prevents th
             (error.length != 0) ? ($(".errormsg").html(ulTag), args.cancel = true) // set args.cancel = true prevent dialog close
             : alert("Sign Up Successfully Completed");
         }
-    </script>
-
-
 
 {% endhighlight %}
 
 
 
-3. Add the following styles to customize the styles of error message.
+Add the following styles to customize the styles of error message.
 
 
 
 {% highlight css %}
 
-
+    <style>
         .errormsg li {
             list-style: none outside none;
         }
@@ -412,14 +393,14 @@ When the validation fails, set args.cancel value as ‘true’. This prevents th
             margin: 2px 0;
             font-weight: normal;
         }
-
+    </style>
 
 
 {% endhighlight %}
 
 
 
-4. Execute the code to render the following output.
+Execute the code to render the following output.
 
 {% include image.html url="/js/Dialog/Getting-Started_images/Getting-Started_img5.png" Caption="Sign Up form with validation"%}
 

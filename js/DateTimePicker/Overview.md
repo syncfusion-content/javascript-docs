@@ -24,5 +24,8 @@ The **Essential JavaScript DateTimePicker** control is used to input the date an
 * **Themes**: **Essential JavaScript** controls consist of 12 built-in themes (6 – flat and 6 – gradient effects), and also support custom skin options to set user-defined themes.
 
 
-> {% include image.html url="/js/DateTimePicker/Overview_images/Overview_img1.jpeg" Caption=""%}_**Note: As the DateTimePicker inherits the functionalities of the DatePicker and TimePicker controls, it supports the basic functionalities of both controls.**_
+
+>**Note**: As the DateTimePicker inherits the functionalities of the DatePicker and TimePicker controls, it supports the basic functionalities of both controls.
+
+
 

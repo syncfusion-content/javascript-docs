@@ -25,5 +25,3 @@ The JavaScript TagCloud control allows the user to display a list of links or ta
 
 * **Themes**: JavaScript controls include 12 built-in themes (6 flat and 6 gradient effects) and also support a custom skin option to set user defined themes.
 
-
-

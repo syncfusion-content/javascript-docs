@@ -17,15 +17,14 @@ Here you can learn how to customize **ListBox** in Contact Selection tool. This 
 
 The following screenshot demonstrates the functionality of **ListBox** with **Multi-Selection** and **Drag and Drop** features.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img1.png" Caption="Group creation tool Simulator using ListBox"%}
 
-_Group creation tool Simulator using ListBox_
 
 In the above screenshot, you can select a list item from the first **ListBox** widget. After you select the item, you can move the selected item to the second **ListBox** widget. 
 
 **Create a ListBox Widget**
 
-**Essential****JavaScript****ListBox** widget renders with built-in features.
+**Essential JavaScript ListBox** widget renders with built-in features.
 
 You can create an **HTML** file and add the following code example to it. 
 
@@ -57,31 +56,31 @@ Add the **&lt;ul&gt;** element to render **ListBox** widgets.
 {% highlight html %}
 
 
-<div id="sample">
-    <h5><b>Add people</b></h5>
-    <h5>Choose a contact and click move button to add in group </h5>
-    <div id="control">
+    <div id="sample">
+        <h5><b>Add people</b></h5>
+        <h5>Choose a contact and click move button to add in group </h5>
+        <div id="control">
 
-        <div id="container1">
-            Contacts List
+            <div id="container1">
+                Contacts List
             <ul id="select">
             </ul>
-        </div>
+            </div>
 
-        <div class="middlebuttons">
-            <button id="Add">>></button>
-            <br />
-            <br />
-            <button id="Remove"><<</button>
-        </div>
+            <div class="middlebuttons">
+                <button id="Add">>></button>
+                <br />
+                <br />
+                <button id="Remove"><<</button>
+            </div>
 
-        <div id="container2">
-            People in this group
+            <div id="container2">
+                People in this group
             <ul id="selecteditems">
             </ul>
+            </div>
         </div>
     </div>
-</div>
 
 
 {% endhighlight %}
@@ -138,7 +137,7 @@ Initialize the **ListBox** and other widgets using the following code sample.
 {% highlight js %}
 
 
-<script type="text/javascript">
+
     jQuery(function ($) {
         // document ready
         // simple ListBox creation 
@@ -157,7 +156,7 @@ Initialize the **ListBox** and other widgets using the following code sample.
             showRoundedCorner: true,
         });
     });
-</script>
+
 
 
 
@@ -165,9 +164,8 @@ Initialize the **ListBox** and other widgets using the following code sample.
 
 Run this code to render the resultant output of the above steps.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img2.png" Caption="Render ListBox with ul element"%}
 
-_Render ListBox with &lt;ul&gt;&lt;/ul&gt; element_
 
 **Configure ListBox with Items**
 
@@ -254,9 +252,8 @@ To populate items inside **ListBox**, you have to add list items inside **&lt;ul
 
 Run the above code to render **ListBox** with list items rendered inside **ListBox. ListBox** with Contact list items is shown as follows.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img3.png" Caption="ListBox with Contact list items"%}
 
-_ListBox with Contact list items_
 
 **Enable Drag and Drop** 
 
@@ -264,7 +261,7 @@ You can drag an item from a **ListBox** and drop it in a droppable element.To dr
 
 {% highlight js %}
 
-<script type="text/javascript">
+
     jQuery(function ($) {
         $("#select").ejListBox({
             allowDragAndDrop: true
@@ -282,16 +279,15 @@ You can drag an item from a **ListBox** and drop it in a droppable element.To dr
             showRoundedCorner: true,
         });
     });
-</script>
+
 
 
 {% endhighlight %}
 
 Run the above code example to render the following **ListBox** with **Drag and Drop** feature. **ListBox** with Drag and Drop list items across control is displayed in the following image. 
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img4.png" Caption="ListBox with Drag and Drop list items"%}
 
-_ListBox with Drag and Drop list items_
 
 **Enable Multiple Selection** 
 
@@ -299,11 +295,11 @@ You can select multiple list items simultaneously in **ListBox** control, and mo
 
 {% highlight js %}
 
-<script type="text/javascript">
+
     jQuery(function ($) {
 
         $("#select").ejListBox({
-**allowDragAndDrop: true, allowMultiSelection: true**
+           allowDragAndDrop: true, allowMultiSelection: true
         });
         $("#selecteditems").ejListBox({ allowDragAndDrop: true, });
         // simple Button creation 
@@ -318,7 +314,7 @@ You can select multiple list items simultaneously in **ListBox** control, and mo
             showRoundedCorner: true,
         });
     });
-</script>
+
 
 
 {% endhighlight %}
@@ -336,7 +332,7 @@ The following code sample explains how to add to an item to second **ListBox.**
 {% highlight js %}
 
 
-<script type="text/javascript">
+
     jQuery(function ($) {
         $("#select").ejListBox();
         $("#selecteditems").ejListBox();
@@ -375,7 +371,7 @@ The following code sample explains how to add to an item to second **ListBox.**
             target.addItem(value);
         }
     }
-</script>
+
 
 
 {% endhighlight %}
@@ -384,7 +380,6 @@ Run this code and you can see the output. Selected items from the first **ListBo
 
 
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img6.png" Caption="ListBox Selection moved to Second ListBox"%}
 
-_ListBox Selection moved to Second ListBox_
 

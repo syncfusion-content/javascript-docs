@@ -21,9 +21,9 @@ There are four different **TreeMap** layouts such as
 
 * SliceAndDiceVertical Layout
 
-##Squarified Layout
+**Squarified Layout**
 
-**Squarified** layout creates rectangles with best aspect ratio.
+**Squarified****layout** creates rectangles with best aspect ratio.
 
 {% highlight js %}
 
@@ -47,7 +47,7 @@ There are four different **TreeMap** layouts such as
 
 {% include image.html url="/js/TreeMap/Layout_images/Layout_img1.png" Caption="Squarified Layout"%}
 
-##SliceAndDiceAuto Layout
+**SliceAndDiceAuto Layout**
 
 **SliceAndDiceAuto layout** creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
 
@@ -70,7 +70,7 @@ There are four different **TreeMap** layouts such as
 
 {% include image.html url="/js/TreeMap/Layout_images/Layout_img2.png" Caption="SliceAndDiceAuto Layout"%}
 
-##SliceAndDiceHorizontal Layout
+**SliceAndDiceHorizontal Layout**
 
 **SliceAndDiceHorizontal layout** creates rectangles with high aspect ratio and displays them sorted horizontally.
 
@@ -93,7 +93,7 @@ There are four different **TreeMap** layouts such as
 
 {% include image.html url="/js/TreeMap/Layout_images/Layout_img3.png" Caption="SliceAndDiceHorizontal Layout"%}
 
-##SliceAndDiceVertical Layout
+**SliceAndDiceVertical Layout**
 
 **SliceAndDiceVertical layout** creates rectangles with high aspect ratio and displays them sorted vertical.
 

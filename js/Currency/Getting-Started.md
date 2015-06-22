@@ -15,11 +15,11 @@ This section explains briefly about how to create a **CurrencyTextBox** control 
 
 From the following steps you can learn how to create and use **CurrencyTextBox** in your application. Here we have showcased, a small Electric bill calculator application using **Essential JavaScript CurrencyTextBox** widget.You will learn how to use our Essential JavaScript **CurrencyTextBox** widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
 
-{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: Electricity Bill Calculator"%}
+{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img1.png" Caption="Electricity Bill Calculator"%}
 
 ### Create Textboxes Widgets
 
-* Create an **HTML** file and add the following template to the html file for Textbox widget creation.
+Create an **HTML** file and add the following template to the html file for Textbox widget creation.
 
 {% highlight html %}
 
@@ -28,13 +28,13 @@ From the following steps you can learn how to create and use **CurrencyTextBox**
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
     <!-- style sheet for default theme(flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
 
  <!--scripts-->
-<scriptsrc="[http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js](http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"> </script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
 </head>
 <body>
     <!--adds Textboxes elements here -->
@@ -44,7 +44,7 @@ From the following steps you can learn how to create and use **CurrencyTextBox**
 
 {% endhighlight %}
 
-* Add necessary input elements to render **Textboxes widget**.
+Add necessary input elements to render **Textboxes widget**.
 
 
 
@@ -100,18 +100,18 @@ From the following steps you can learn how to create and use **CurrencyTextBox**
 
 
 
-*  Initialize the **Textboxes widget** as shown in the following section.
+Initialize the **Textboxes widget** as shown in the following section.
 
 {% highlight js %}
 
 
-<script type="text/javascript">
 
 // Declares Necessary variable creation 
+
           var kmcalc, servtax, amuntperkm;
           $(function () {
               // document ready
-       // simple Numeric creation
+              // simple Numeric creation
               $("#unitmcalc").ejNumericTextbox({
                 watermarkText: "Units" // set watermark in numeric
                });
@@ -136,16 +136,16 @@ From the following steps you can learn how to create and use **CurrencyTextBox**
                 prefixIcon: "e-calender"
             });
           });
-    </script>
+
 
 
 {% endhighlight %}
 
 
 
-* You can add the following location in the **URL** path for the background image and to apply styling. 
+You can add the following location in the **URL** path for the background image and to apply styling. 
 
-[http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
+http://js.syncfusion.com/UG/Web/Content/electricity.png
 
 
 
@@ -157,7 +157,7 @@ From the following steps you can learn how to create and use **CurrencyTextBox**
          .ele-icon
         {
             display: inline-block;
-background-image:     url([http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png));
+            background-image:url([http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png));
             background-repeat: no-repeat;
             background-size: contain;
             height: 50px;
@@ -196,49 +196,49 @@ background-image:     url([http://js.syncfusion.com/UG/Web/Content/electricity.p
 
 
 
-* The following screenshot displays the output when the above code is executed. 
+The following screenshot displays the output when the above code is executed. 
 
 {% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
-_Figure_ _2__: Textboxes with watermark text_
+ Textboxes with watermark text
 
 ### Set the MinValue, MaxValue and Value in Textboxes
 
-You can set the **“minValue”,****“maxValue”** and **“value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **Maskedit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
+You can set the **“minValue”,** **“maxValue”** and **“value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **Maskedit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
 
 {% highlight js %}
 
 
-<script type="text/javascript">
+
       // Declares the Necessary variable creation 
           var kmcalc, servtax, amuntperkm;
           $(function () {
               // document ready
-       // simple Numeric creation
-              $("#unitmcalc").ejNumericTextbox({
+              // simple Numeric creation
+             $("#unitmcalc").ejNumericTextbox({
                 watermarkText: "Units", // sets watermark in numeric
-**value: 35,** // sets value in the numeric
-**minValue: 1,** // sets min value for range 
-                **maxValue: 10000** // sets max value for range
+                value: 35, // sets value in the numeric
+                minValue: 1, // sets min value for range 
+                maxValue: 10000// sets max value for range
             });
               // simple Percentage creation
               $("#servTax").ejPercentageTextbox({
                 watermarkText: " Service Tax", // sets watermark in percentage
-**value: 3,** // sets value by default 
-**minValue: 5,** // sets min value for calculation
-**maxValue: 100**// sets max value for calculation
+                value: 3, // sets value by default 
+                minValue: 5, // sets min value for calculation
+                maxValue: 100// sets max value for calculation
             });
               // simple Currency creation
               $("#amountperum").ejCurrencyTextbox({
                 watermarkText: " Amount per unit", //sets watermark in currency
-**value: 55,** // sets value by default
-**minValue: 5,** // sets min value for amount
-**maxValue: 55**// sets max value for amount
+                value: 55, // sets value by default
+                minValue: 5, // sets min value for amount
+                maxValue: 55// sets max value for amount
             });
               // simple MaskEdit creation
               $("#mobiNo").ejMaskEdit({
                  watermarkText: "Mobile No", // sets watermark in maskedit
-**maskFormat: "99-999-99999"**// sets the mask format in maskedit
+                 maskFormat: "99-999-99999"// sets the mask format in maskedit
             });
               // simple Button creation
               $("#cbill").ejButton({
@@ -248,7 +248,7 @@ You can set the **“minValue”,****“maxValue”** and **“value”** in Num
                 prefixIcon: "e-calender"
             });
           });
-    </script>
+ 
 
 
 {% endhighlight %}
@@ -261,7 +261,7 @@ The following screenshot illustrates the output of the above code examples.
 
 {% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
-_Figure_ _3__: Textboxes with_ _value_
+ Textboxes with value.
 
 ### Set the Strict Mode Option
 
@@ -269,19 +269,19 @@ You can set the “**StrictMode” option** to restrict entering values defined 
 
 {% highlight js %}
 
-**[JS]**
 
-<script type="text/javascript">
-   // Declares Necessary variable creation 
+
+   // Declares Necessary variable creation
+    
           var kmcalc, servtax, amuntperkm;
           $(function () {
-       // simple Numeric creation
+              // simple Numeric creation
               $("#unitmcalc").ejNumericTextbox({
                 watermarkText: "Units", // sets watermark in numeric
                 value: 35, // sets value in the numeric
                 minValue: 1, // sets min value for range 
                 maxValue: 10000, // sets max value for range
-**enableStrictMode:true** // sets strict mode to True will set the value 
+                enableStrictMode:true // sets strict mode to True will set the value 
             });
               // simple Percentage creation
               $("#servTax").ejPercentageTextbox({
@@ -310,7 +310,7 @@ You can set the “**StrictMode” option** to restrict entering values defined 
                 prefixIcon: "e-calender"
             });
           });
-</script>
+
 
 
 {% endhighlight %}
@@ -325,17 +325,15 @@ You can use events to calculate the total and display the value. You can achieve
 
 {% highlight js %}
 
-**[JS]**
-
-<script type="text/javascript">
    // Declares Necessary variable creation 
+   
           var kmcalc, servtax, amuntperkm;
           $(function () {
                // Refers to the Textboxes customization section
               // Simple Button creation
               $("#cbill").ejButton({
-**click: "calculateBill",**
-****width: "100px",
+                click: "calculateBill",
+                width: "100px",
                 height: "30px",
                 contentType: "textandimage",
                 prefixIcon: "e-calender"
@@ -346,15 +344,15 @@ You can use events to calculate the total and display the value. You can achieve
             cusmob = $("#mobiNo").data("ejMaskEdit"); // Object of MaskEdit
           });
         // Simple Bill amount calculation.
-        function calculateBill() {
+          function calculateBill() {
             // This is used to calculate the Net amount
             var netamunt = umcalc.model.value * amuntperkm.model.value;
             // This is used to calculate the service tax amount
             var sTax = (netamunt * servtax.model.value) / 100;
             // This shows the calculated amount for the units
             alert("The amount $" + (netamunt + sTax) + " has been sent as message to " + cusmob.model.value + ".");
-        }
-</script>
+          }
+
 
 
 

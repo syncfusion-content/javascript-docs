@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The **Essential JavaScript****RadioButton** control allows you to choose an option to perform an action. This control allows you to select true/false. These **RadioButtons** are supported with themes. The HTML **RadioButton** control is rendered as **Essential JavaScript****RadioButton**.
+The **Essential JavaScript** **RadioButton** control allows you to choose an option to perform an action. This control allows you to select true/false. These **RadioButtons** are supported with themes. The HTML **RadioButton** control is rendered as **Essential JavaScript** **RadioButton**.
 
 **Key Features**
 

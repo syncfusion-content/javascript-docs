@@ -13,19 +13,19 @@ This section explains briefly about how to create a **Checkbox** in your applica
 
 ## Create your first Checkbox in JavaScript
 
-**Essential JavaScript Checkbox** provides support for multiple selections, within your webpage and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App using **Checkbox**. The following screenshot demonstrates the functionality with **Checkbox** button action.
+**Essential JavaScript Checkbox** provides support for multiple selections, within your webpage and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App using **Checkbox**. The following screenshot demonstrates the functionality with Checkbox button action.
 
 
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: Checkbox Control"%}
+{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img1.png" Caption="Checkbox Control"%}
 
-In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App using **Checkbox**, **Tri-state****Checkbox** and perform the action to render the checked values when the button is clicked.
+In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App using Checkbox, **Tri-state** **Checkbox** and perform the action to render the checked values when the button is clicked.
 
 ### Create a Checkbox 
 
-**Essential JavaScript****Checkbox** widget has built-in features like intermediate selections. You can easily create the **Checkbox** widget by using a simple input **Checkbox** element as follows.
+**Essential JavaScript** **Checkbox** widget has built-in features like intermediate selections. You can easily create the Checkbox widget by using a simple input Checkbox element as follows.
 
-* Create an **HTML** file and add the following template to the **HTML** file.
+Create an **HTML** file and add the following template to the **HTML** file.
 
 
 
@@ -37,14 +37,14 @@ In the above screenshot, you can select Hobbies, Interests list and Social netwo
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
 <title>Getting Started Essential JS</title>
     <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+    <lin khref="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -52,10 +52,7 @@ In the above screenshot, you can select Hobbies, Interests list and Social netwo
 </body>
 </html>
 
-
 {% endhighlight %}
-
-
 
 Add input element to render the **Checkbox.**
 
@@ -63,59 +60,58 @@ Add input element to render the **Checkbox.**
 
 {% highlight html %}
 
-<div class="frame">           
-
-     Hobbies <br /><br />
-     <table>
-     <tr>
-         <td class="chkrad">
-             <input type="checkbox"  id="check1" value="Music" />
-             <label for="check1"  >Music</label></td>
-         <td class="chkrad">
-             <input type="checkbox"  id="Checkbox3"value= "Sports" />
-             <label for="Checkbox3"  >Sports</label></td>
-         <td class="chkrad">
-             <input type="checkbox"  id="Checkbox4" value="Bike riding" />
-             <label for="Checkbox4"  class="clslab">Bike Riding</label></td>
-     </tr>
-     </table><br /><br />
-     Favorite Search Engines<br /><br />
-     <table>
-     <tr>
-        <td class="chkrad">
-             <input type="checkbox" id="Checkbox1" value="playing Games" />
-             <label for="Checkbox1"  >Playing Games</label>
-        </td>
-        <td class="chkrad">
-             <input type="checkbox" id="Checkbox5" value="Hearing Songs" />
-             <label for="Checkbox5"  >Hearing Songs</label>
-        </td>
-        <td class="chkrad">
-             <input type="checkbox" id="Checkbox6" value="Watching tv"/>
-             <label  for="Checkbox6" >Watching Tv</label>
-</td>
-          </tr>
-        </table><br /><br />
-        Media Player<br /><br />
-        <table>
+<div class="frame">
+    Hobbies <br /><br />
+    <table>
         <tr>
-        <td class="chkrad">
-              <input type="checkbox" id="Checkbox2" value="Video" />
-              <label for="Checkbox2" >Video</label>
-        </td>
-        <td class="chkrad">
-              <input type="checkbox" id="Checkbox7" value="Audio" />
-              <label for="Checkbox7" >Audio</label>
-          </td>
-          <td class="chkrad">
-              <input type="checkbox" id="Checkbox8" value="Picture" />
-              <label for="Checkbox8">Picture</label>
-          </td>
-           </tr>
-            </table><br />
-<td class="btnsht">
-<button id="button11">SUBMIT</button>
-</td>
+            <td class="chkrad">
+                <input type="checkbox" id="check1" value="Music" />
+                <label for="check1">Music</label>
+            </td>
+            <td class="chkrad">
+                <input type="checkbox" id="Checkbox3" value="Sports" />
+                <label for="Checkbox3">Sports</label>
+            </td>
+            <td class="chkrad">
+                <input type="checkbox" id="Checkbox4" value="Bike riding" />
+                <label for="Checkbox4" class="clslab">Bike Riding</label>
+            </td>
+        </tr>
+    </table><br /><br />
+    Favorite Search Engines<br /><br />
+    <table>
+        <tr>
+            <td class="chkrad">
+                <input type="checkbox" id="Checkbox1" value="playing Games" />
+                <label for="Checkbox1">Playing Games</label>
+            </td>
+            <td class="chkrad">
+                <input type="checkbox" id="Checkbox5" value="Hearing Songs" />
+                <label for="Checkbox5">Hearing Songs</label>
+            </td>
+            <td class="chkrad">
+                <input type="checkbox" id="Checkbox6" value="Watching tv" />
+                <label for="Checkbox6">Watching Tv</label>
+            </td>
+        </tr>
+    </table><br /><br />
+    Media Player<br /><br />
+    <table>
+        <tr>
+            <td class="chkrad">
+                <input type="checkbox" id="Checkbox2" value="Video" />
+                <label for="Checkbox2">Video</label>
+            </td>
+            <td class="chkrad">
+                <input type="checkbox" id="Checkbox7" value="Audio" />
+                <label for="Checkbox7">Audio</label>
+            </td>
+            <td class="chkrad">
+                <input type="checkbox" id="Checkbox8" value="Picture" />
+                <label for="Checkbox8">Picture</label>
+            </td>
+        </tr>
+    </table>
 </div>
 
 
@@ -153,44 +149,35 @@ Initialize **Checkbox** in script.
 
 {% highlight js %}
 
-<script type="text/javascript">
-   $(function () {
-       // declaration
-       // simple checkbox creation
-       $("#check1").ejCheckBox({ checked:true });
-       $("#Checkbox3").ejCheckBox();
-       $("#Checkbox4").ejCheckBox();
-       $("#Checkbox3").ejCheckBox();
-       $("#Checkbox1").ejCheckBox({ size: "medium", checked: true });
-       $("#Checkbox5").ejCheckBox({ size: "medium" });
-       $("#Checkbox6").ejCheckBox({ size: "medium" });
-       $("#Checkbox2").ejCheckBox({ size: "medium", enableTriState: true, checkState:"indeterminate" });
-       $("#Checkbox7").ejCheckBox({ size: "medium", enableTriState: true, checkState:"indeterminate"  });
-       $("#Checkbox8").ejCheckBox({ size: "medium", enableTriState: true });
 
-       $("#button11").ejButton({
-           size: "normal",
-           width:"60px",
-           showRoundedCorner: true,
-
-       });
-   });
-$(document).ready(function () {      //Document ready
-    $("button").click(function () {      
-
-         var checkeditem = [];    
-
-           $("input[type=checkbox]").each(function () {
-
-               if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
-
-                   checkeditem.push($(this).val());
+        $(function () {
+             // declaration
+            // simple checkbox creation
+            $("#check1").ejCheckBox({ checked:true });
+            $("#Checkbox3").ejCheckBox();
+            $("#Checkbox4").ejCheckBox();
+            $("#Checkbox3").ejCheckBox();
+            $("#Checkbox1").ejCheckBox({ size: "medium", checked: true });
+            $("#Checkbox5").ejCheckBox({ size: "medium" });
+            $("#Checkbox6").ejCheckBox({ size: "medium" });
+            $("#Checkbox2").ejCheckBox({ size: "medium", enableTriState: true, checkState:"indeterminate" });
+            $("#Checkbox7").ejCheckBox({ size: "medium", enableTriState: true, checkState:"indeterminate"  });
+            $("#Checkbox8").ejCheckBox({ size: "medium", enableTriState: true });
+            $("#button11").ejButton({
+                size: "normal",
+                width:"60px",
+                showRoundedCorner: true,
         });
-
-        alert(checkeditem);
-});
-});
-</script>
+        $(document).ready(function () {      //Document ready
+            $("button").click(function () {
+                 var checkeditem = [];               
+                 $("input[type=checkbox]").each(function () {
+                     if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
+                        checkeditem.push($(this).val());
+                  });
+                  alert(checkeditem);
+             });
+         });
 
 
 {% endhighlight %}
@@ -199,7 +186,6 @@ $(document).ready(function () {      //Document ready
 
 The following screenshot displays a **Checkbox** control.
 
-.
 
 {% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 2: Checkbox Creation"%}
 
@@ -207,56 +193,56 @@ The following screenshot displays a **Checkbox** control.
 
 You can get the file type of Media player applications such as video, audio and picture using **Checkbox.** Follow the given steps to get media player file types.
 
-* Add the following code in the **&lt;body&gt;** element of the corresponding view page.
+Add the following code in the **&lt;body&gt;** element of the corresponding view page.
 
 
 
 {% highlight html %}
 
-<div class="frame">
+   <div class="frame">
         Audio <br /><br />
-        <table>
-            <tr>
+            <table>
+                <tr>
+                    <td >
+                        <input type="checkbox"  id="Checkbox1" value="Mp3" />
+                        <label for="Checkbox1"  >*.Mp3</label></td>
+                    <td >
+                        <input type="checkbox"  id="Checkbox2"value= "Wav" />
+                        <label for="Checkbox2"  >*.Wav</label></td>
+                </tr>
+            </table>
+            <br /><br />
+            Video<br /><br />
+            <table>
+                <tr>
+                    <td >
+                        <input type="checkbox" id="Checkbox3" value="Avi" />
+                        <label for="Checkbox3"  >*.Avi</label>
+                    </td>
+                    <td >
+                        <input type="checkbox" id="Checkbox4" value="MP4" />
+                        <label for="Checkbox4"  >*.MP4</label>
+                    </td>
+                </tr>
+            </table><br /><br />
+            Picture<br /><br />
+            <table>
+                <tr>
                 <td >
-                    <input type="checkbox"  id="Checkbox1" value="Mp3" />
-                    <label for="Checkbox1"  >*.Mp3</label></td>
-                <td >
-                    <input type="checkbox"  id="Checkbox2"value= "Wav" />
-                    <label for="Checkbox2"  >*.Wav</label></td>
-            </tr>
-        </table>
-        <br /><br />
-        Video<br /><br />
-        <table>
-            <tr>
-                <td >
-                    <input type="checkbox" id="Checkbox3" value="Avi" />
-                    <label for="Checkbox3"  >*.Avi</label>
+                    <input type="checkbox" id="Checkbox5" value="PNG" />
+                    <label for="Checkbox5" >*.PNG</label>
                 </td>
                 <td >
-                    <input type="checkbox" id="Checkbox4" value="MP4" />
-                    <label for="Checkbox4"  >*.MP4</label>
+                    <input type="checkbox" id="Checkbox6" value="JPG" />
+                    <label for="Checkbox6" >*.JPG</label>
                 </td>
-            </tr>
-        </table><br /><br />
-        Picture<br /><br />
-        <table>
-            <tr>
-            <td >
-                <input type="checkbox" id="Checkbox5" value="PNG" />
-                <label for="Checkbox5" >*.PNG</label>
-            </td>
-            <td >
-                <input type="checkbox" id="Checkbox6" value="JPG" />
-                <label for="Checkbox6" >*.JPG</label>
-            </td>
-        </table>
-        <br />
-        <td>
-            <button id="button11">SUBMIT</button>
-        </td>
+            </table>
+            <br />
+           <div>
+                <button id="button11">SUBMIT</button>
+           </div>
     </div>
-
+</html>
 
 {% endhighlight %}
 
@@ -268,47 +254,36 @@ You can get the file type of Media player applications such as video, audio and 
 
 {% highlight js %}
 
-<script type="text/javascript">
-    $(function () {
+
+          $(function () {
                $("#Checkbox1").ejCheckBox();
-$("#Checkbox2").ejCheckBox();
+               $("#Checkbox2").ejCheckBox();
                $("#Checkbox3").ejCheckBox();
                $("#Checkbox4").ejCheckBox();
                $("#Checkbox5").ejCheckBox();
                $("#Checkbox6").ejCheckBox();
-
-$("#button11").ejButton({
-                size: "normal",
-width:"60px",
-                showRoundedCorner: true,
+               $("#button11").ejButton({
+                   size: "normal",
+                   width:"60px",
+                   showRoundedCorner: true,
                });
-});
-$(document).ready(function () {
-
-$("button").click(function () {
-
-					var checkeditem = []; 
-                                                            $("input[type=checkbox]").each(function () {
-
-           if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
-
-                   checkeditem.push($(this).val());
-
-                   });
-
-alert(checkeditem);
-
-});
-
-});
-    </script>
+          });
+          $(document).ready(function () {
+               $("button").click(function () {
+				    var checkeditem = []; 
+                    $("input[type=checkbox]").each(function () {
+                         if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
+                            checkeditem.push($(this).val());
+                     });
+                     alert(checkeditem);
+               });
+           });
 
 
 {% endhighlight %}
 
 
-
 Execute the code to render the resultant output.
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img4.png" Caption="Figure 3: File selection in Media player"%}
+{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img4.png" Caption="File selection in Media player"%}
 

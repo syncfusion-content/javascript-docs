@@ -25,145 +25,138 @@ The usage of **Accordion** control is described in the following sections.
 
 **Create a Simple Accordion**
 
-1. Create an HTML file and add the following references to the required libraries.
+Create an HTML file and add the following references to the required libraries.
 
 {% highlight html %}
 
-**[HTML]**
-<html>
-<head>
-    <title>Essential Studio for JavaScript : Default Functionalities</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <!-- Style sheet for default theme (flat azure) -->
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
-    <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-    <!--Add custom scripts here -->
-</head>
-<body>
-    <!-- Add Accordion element here. -->
-</body>
-</html>
-
+    <html>
+    <head>
+        <title>Essential Studio for JavaScript : Default Functionalities</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+        <!-- Style sheet for default theme (flat azure) -->
+        <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    
+        <!--Scripts-->
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+    
+        <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+        <!--Add custom scripts here -->
+    </head>
+    <body>
+        <!-- Add Accordion element here. -->
+    </body>
+    </html>
+    
 
 {% endhighlight %}
 
 
 
-2. Add a &lt;div&gt; element. It is a container for Accordion control.
+Add a &lt;div&gt; element. It is a container for Accordion control.
 
 
 
 {% highlight html %}
 
-**[HTML]**
 
-<body>
-<div id="accordion" style="width: 400px">
-<h3>
-<a href="#">Essential Studio ASP.NET</a></h3>
-<div><!-- add accordion contents here to load contents under this header -->
-<ul>
-<li>
-<h4>DocIO</h4>
-</li>
-<li>
-<h4>Pdf  </h4>
-</li>
-<li>
-<h4>Gauge  </h4>
-</li>
-<li>
-<h4>Schedule  </h4>
-</li>
-<li>
-<h4>Diagram  </h4>
-</li>
-<li>
-<h4>Tools </h4>
-</li>
-</ul>
 
-</div>
-<h3>
-<a href="#">Essential Studio ASP.NET MVC</a></h3>
-<div><!-- add accordion contents here to load contents under this header -->
-<ul>
-<li>
-<h4>Chart </h4>
-</li>
-<li>
-<h4>Grid  </h4>
-</li>
-<li>
-<h4>Gantt  </h4>
-</li>
-<li>
-<h4>Schedule  </h4>
-</li>
-<li>
-<h4>Diagram  </h4>
-</li>
-</ul>
-</div>
-<h3>
-<a href="#">Essential Studio Javascript</a></h3>
-<div><!-- add accordion contents here to load contents under this header -->
-<ul>
-<li>
-<h4>Chart </h4>
-</li>
-<li>
-<h4>Grid  </h4>
-</li>
-<li>
-<h4>Gantt  </h4>
-</li>
-<li>
-<h4>Schedule  </h4>
-</li>
-<li>
-<h4>Diagram  </h4>
-</li>
-</ul>
-</div>
-</div>
-</body>
 
+    <div id="accordion" style="width: 400px">
+        <h3>
+            <a href="#">Essential Studio ASP.NET</a>
+        </h3>
+        <div>
+            <!-- add accordion contents here to load contents under this header -->
+            <ul>
+                <li>
+                    <h4>DocIO</h4>
+                </li>
+                <li>
+                    <h4>Pdf  </h4>
+                </li>
+                <li>
+                    <h4>Gauge  </h4>
+                </li>
+                <li>
+                    <h4>Schedule  </h4>
+                </li>
+                <li>
+                    <h4>Diagram  </h4>
+                </li>
+                <li>
+                    <h4>Tools </h4>
+                </li>
+            </ul>
+        </div>
+        <h3>
+            <a href="#">Essential Studio ASP.NET MVC</a>
+        </h3>
+        <div>
+            <!-- add accordion contents here to load contents under this header -->
+            <ul>
+                <li>
+                    <h4>Chart </h4>
+                </li>
+                <li>
+                    <h4>Grid  </h4>
+                </li>
+                <li>
+                    <h4>Gantt  </h4>
+                </li>
+                <li>
+                    <h4>Schedule  </h4>
+                </li>
+                <li>
+                    <h4>Diagram  </h4>
+                </li>
+            </ul>
+        </div>
+        <h3>
+            <a href="#">Essential Studio Javascript</a>
+        </h3>
+        <div>
+            <!-- add accordion contents here to load contents under this header -->
+            <ul>
+                <li>
+                    <h4>Chart </h4>
+                </li>
+                <li>
+                    <h4>Grid  </h4>
+                </li>
+                <li>
+                    <h4>Gantt  </h4>
+                </li>
+                <li>
+                    <h4>Schedule  </h4>
+                </li>
+                <li>
+                    <h4>Diagram  </h4>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 
 {% endhighlight %}
 
 
-
-3. Create the Accordion control as follows.
-
-
+Create the Accordion control as follows.
 
 {% highlight js %}
-
-**[JavaScript]**
-  <script type="text/javascript">
+  
         $(function () {
             // document ready
             // Initialize Accordion control creation.
             $("#accordion").ejAccordion();
         });
-    </script>
-
 
 {% endhighlight %}
 
-
-
-4. You can execute the above code example to display the Accordion control with simple control list.
+You can execute the above code example to display the Accordion control with simple control list.
 
 
 
@@ -173,23 +166,20 @@ You can customize the Accordion control using various properties. The Accordion 
 
 **Configure Multiple Open**
 
-You can have multiple **Accordion** tabs opened to view all products at a time. To achieve this set the **enableMultipleOpen**property of the **Accordion** control to true.
+You can have multiple **Accordion** tabs opened to view all products at a time. To achieve this set the **enableMultipleOpen** property of the **Accordion** control to true.
 
-> _**Note: enableMultipleOpenproperty is false by default.**_ 
+> **Note**: enableMultipleOpen property is false by default.
 
 You can also open all the panels during initialization using the **selectedItems** property of the **Accordion** control. The following code sample illustrates the opening of multiple tabs by passing the tab index values of tab.
 
 {% highlight js %}
 
-**[JavaScript]**
-    <script type="text/javascript">
         $(function () {
             $("#accordion").ejAccordion({
                 enableMultipleOpen: true, /* To set the multiple content panels  active at a time   */
-                selectedItems: [0, 1, 2] /* To set the selected panels  active at a time   */
+                selectedItems: [0, 1, 2]  /* To set the selected panels  active at a time   */
             });
-        });
-    </script>
+        });   
 
 
 {% endhighlight %}
@@ -204,23 +194,19 @@ You can also open all the panels during initialization using the **selectedItems
 
 **Accordion** control, by default, is rendered in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the **showRoundedCorner** property to **True**.
 
-> _**Note: showRoundedCornerproperty is False by default.**_
+> **Note**: showRoundedCorner property is False by default.
 
 
 
 {% highlight js %}
 
-**[JavaScript]**
-    <script type="text/javascript">
         $(function () {
             $("#accordion").ejAccordion({
                 enableMultipleOpen: true,
                 selectedItems: [0, 1, 2],
-                showRoundedCorner: true/* To set rounded corner for the accordion headers   */
+                showRoundedCorner: true /* To set rounded corner for the accordion headers   */
             });
-        });
-    </script>
-
+        });       
 
 {% endhighlight %}
 
@@ -232,7 +218,7 @@ The following screenshot illustrates the **Accordion** control with rounded corn
 
 You can customize the **Header** icon using **customIcon** property. This property has two features such as **header** and **selectedHeade**r. By default, the classes of **header** and **selectedHeader** are **e-collapse** and **e-expand** respectively**.**
 
-You can change the + and- symbols in the **Accordion**header, that are the default icons with Up or Down arrow icons. 
+You can change the + and - symbols in the **Accordion** header, that are the default icons with Up or Down arrow icons. 
 
 Up or Down arrow icons are available in **e-arrowheadup** and **e- arrowheaddown** classes respectively in the ej.widjets.core.min.css stylesheets from the sample. 
 
@@ -240,8 +226,7 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
 
 {% highlight js %}
 
-**[JavaScript]**
-    <script type="text/javascript">
+  
         $(function () {
             $("#accordion").ejAccordion({
                 enableMultipleOpen: true,
@@ -249,11 +234,11 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
                 showRoundedCorner: true,
                 customIcon: {
                     header: "e-arrowheaddown", /*  To set icon for the collapsed accordion headers  */
-                    selectedHeader: "e-arrowheadup"/*  To set icon for the selected accordion headers  */
+                    selectedHeader: "e-arrowheadup" /*  To set icon for the selected accordion headers  */
                 }
             });
         });
-    </script>
+  
 
 
 {% endhighlight %}

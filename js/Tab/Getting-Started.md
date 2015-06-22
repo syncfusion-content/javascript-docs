@@ -17,9 +17,8 @@ The **Essential JavaScript Tab** control is an interface that displays the conte
 
 
 
-{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img1.png" Caption="Tab control with Hotel Menu items"%}
 
-_Figure_ _1__:_ _Tab_ _control with Hotel Menu items_
 
 **Create Tab Control**
 
@@ -27,16 +26,16 @@ _Figure_ _1__:_ _Tab_ _control with Hotel Menu items_
 
 The following steps describe the creation of **Tab** control.  
 
-* Create an **HTML** file and add the following template in the HTML file for creating **Tab** control.
+Create an **HTML** file and add the following template in the HTML file for creating **Tab** control.
 
 {% highlight html %}
 
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <!-- Style sheet for default theme (flat azure) -->
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -45,7 +44,7 @@ The following steps describe the creation of **Tab** control.
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
@@ -54,44 +53,44 @@ The following steps describe the creation of **Tab** control.
 </html>
 
 
+
 {% endhighlight %}
 
 
 
-* Add **Tab** header within &lt;body&gt; tag.
+Add **Tab** header within &lt;body&gt; tag.
 
 
 
 {% highlight html %}
 
 
-<div id="dishType" style="width: 550px">
-  <ul>
-     <li><a href="#pizza">Pizza Menu</a></li>
-     <li><a href="#sandwich">Sandwich Menu</a></li>
-     <li><a href="#pasta">Pasta Menu</a></li>
-  </ul>
-</div>
+    <div id="dishType" style="width: 550px">
+      <ul>
+         <li><a href="#pizza">Pizza Menu</a></li>
+         <li><a href="#sandwich">Sandwich Menu</a></li>
+         <li><a href="#pasta">Pasta Menu</a></li>
+      </ul>
+    </div>
 
 
 {% endhighlight %}
 
 
 
-* Initialize **Tab** in &lt;script&gt; tag.
+Initialize **Tab** in &lt;script&gt; tag.
 
 
 
 {% highlight js %}
 
 
-<script type="text/javascript">
-$(function () {
-// document ready
-// simple Tab header creation
-	$("#dishType").ejTab();       
-});
-</script>
+    $(function () {
+        // document ready
+        // simple Tab header creation
+    	$("#dishType").ejTab();       
+    });
+
 
 
 {% endhighlight %}
@@ -102,7 +101,7 @@ The following screen shot illustrates the **Tab** control with Header.
 
 
 
-{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img2.png" Caption="Figure 2: Tab control with Header"%}
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img2.png" Caption="Tab control with Header"%}
 
 **Configure Content**
 
@@ -113,10 +112,10 @@ In this application a detailed description is provided to each item. You can spe
 {% highlight html %}
 
 
-<div id="pizza" style="background-color: #F5F5F5">
-<!—Food item description-->
+    <div id="pizza" style="background-color: #F5F5F5">
+         <!—Food item description-->
          <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-</div>
+    </div>
 
 
 
@@ -139,15 +138,15 @@ The following code example explains you the **rating** control creation. The inp
 {% highlight html %}
 
 
-<div id="pizza" style="background-color: #F5F5F5">
+    <div id="pizza" style="background-color: #F5F5F5">
          <p>Rating:</p>
          <!--Rating control declaration-->
-**<div class="dishRating">**
-               **<input id="pizzaRating" type="text" class="rating" />**
-         **</div>**
+         <div class="dishRating">
+            <input id="pizzaRating" type="text" class="rating" />
+         </div>
           <!--Food item description-->
          <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-</div>
+    </div>
 
 
 {% endhighlight %}
@@ -161,11 +160,11 @@ To render the **rating** controls in the first **Tab** element refer the styles 
 {% highlight css %}
 
 
-<style type="text/css" class="cssStyles">
-        .dishRating {
-            position: absolute;
-            margin: -31px 0px 0px 80px;
-        }        
+    <style type="text/css" class="cssStyles">
+            .dishRating {
+                position: absolute;
+                margin: -31px 0px 0px 80px;
+            }        
     </style>
 
 
@@ -180,12 +179,12 @@ The following code example is used for rendering the content with **rating** con
 {% highlight js %}
 
 
-<script type="text/javascript">
-$(function () {
-	$("#dishType").ejTab();       
-       $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });
-});
-</script>
+
+    $(function () {
+    	$("#dishType").ejTab();       
+        $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });
+    });
+
 
 
 {% endhighlight %}
@@ -196,9 +195,9 @@ The following screenshot illustrates the **Tab** content with rating control.
 
 
 
-{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img3.png" Caption="First Tab content section with Rating Control"%}
 
-_Figure_ _3__:_ _First Tab content section with Rating Control_
+
 
 **Ajax Content Load (Load On Demand)** 
 
@@ -216,23 +215,22 @@ The following code example illustrates to create the **Tab** control within the 
 
 {% highlight html %}
 
-<!--sub Tab control, the contents loaded with load on demand-->
-<div id="pizzaType">
-   <ul>
-                <li><span class="cornSpinach"></span>
-<a href="http://js.syncfusion.com/UG/Web/Tab-Content/cornSpainach.html">Corn & Spinach </a></li>
-       <li><span class="chickenDelite"></span>
-<a href="http://js.syncfusion.com/UG/Web/Tab-Content/ChickenDelite.html">Chicken Delite </a></li>   
-            </ul>
-</div>
+    <!--sub Tab control, the contents loaded with load on demand-->
+    <div id="pizzaType">
+        <ul>
+            <li><span class="cornSpinach"></span>
+                <a href="http://js.syncfusion.com/UG/Web/Tab-Content/cornSpainach.html">Corn & Spinach </a></li>
+            <li><span class="chickenDelite"></span>
+                <a href="http://js.syncfusion.com/UG/Web/Tab-Content/ChickenDelite.html">Chicken Delite </a></li>
+        </ul>
+    </div>
 
 
 {% endhighlight %}
 
 
 
-* The Load On-Demand supported **HTML** file content (cornSpinach.html)
-
+The Load On-Demand supported **HTML** file content (cornSpinach.html)
 
 
 {% highlight html %}
@@ -243,19 +241,20 @@ The following code example illustrates to create the **Tab** control within the 
     <div class="e-content">
         <img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
         <div class="ingredients">
-            Rate    : $70<br/> Ingredients : cheese, sweet corn &amp; green capsicums. 
-            <br /> 
-            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                    </div>
-    </div>    
+            Rate    : $70<br />
+            Ingredients : cheese, sweet corn &amp; green capsicums. 
+                <br />
+            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
+        </div>
+    </div>
 </body>
 </html>
-
 
 {% endhighlight %}
 
 
 
-* The Load On Demand supported html file content (chickenDelite.html)
+The Load On Demand supported html file content (chickenDelite.html)
 
 
 
@@ -267,17 +266,18 @@ The following code example illustrates to create the **Tab** control within the 
     <div class="e-content">
         <img src="http://js.syncfusion.com/demos/web/images/accordion/chicken-delite.png" alt="chicken-delite">
         <div class="ingredients">
-            Rate    : $100<br /> Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.   <br />  
-             Description: This is a tasty, elegant chicken dish that is easy to prepare. 
+            Rate    : $100<br />
+            Ingredients : cheese, chicken chunks, onions &amp; pineapple chunks.  
+            <br />
+            Description: This is a tasty, elegant chicken dish that is easy to prepare. 
         </div>
     </div>
 </body>
 </html>
 
-
 {% endhighlight %}
 
-> {% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img4.jpeg" Caption=""%}_**Note: In Load On Demand, when the external files are referred from local the following error occurs.**_
+> {% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img4.jpeg" Caption=""%}**Note**: In Load On Demand, when the external files are referred from local the following error occurs.
 
 XMLHttpRequest cannot load [http://js.syncfusion.com/UG/Web/Tab-Content/cornSpainach.html?_=1399883825133](http://js.syncfusion.com/UG/Web/Tab-Content/cornSpainach.html?_=1399883825133). No 'Access-Control-Allow-Origin' header is present on the requested resource. 
 
@@ -289,17 +289,17 @@ The following code example is used to position the image and content in Load On 
 
 {% highlight css %}
 
-<style type="text/css" class="cssStyles">
-       /*reuse the previous rating control style section code*/                
-       .ingredients {
-            height: 180px;
-            margin-top: 8px;
-        }
-        img {           
-            float: left;        
-            margin: 10px 26px 5px 1px;
-        }
-    </style>
+    <style type="text/css" class="cssStyles">
+           /*reuse the previous rating control style section code*/                
+           .ingredients {
+                height: 180px;
+                margin-top: 8px;
+            }
+            img {           
+                float: left;        
+                margin: 10px 26px 5px 1px;
+            }
+        </style>
 
 
 {% endhighlight %}
@@ -313,13 +313,10 @@ The sub **Tab** control rendering script is represented in the following code ex
 {% highlight js %}
 
 
-<script type="text/javascript">
-   $(function () {
-        // To reuse the previous script section to render first tab with contents
-        $("#pizzaType").ejTab();
-});
-</script>
-
+       $(function () {
+            // To reuse the previous script section to render first tab with contents
+            $("#pizzaType").ejTab();
+       });    
 
 
 {% endhighlight %}
@@ -330,7 +327,7 @@ At the time of Ajax call, the content fetched from external file referenced loca
 
 
 
-{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img5.png" Caption="Figure 4: Ajax Call"%}
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img5.png" Caption="Ajax Call"%}
 
 
 
@@ -338,7 +335,7 @@ The following screenshot illustrates the First **Tab** with the sub **Tab** cont
 
 
 
-{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img6.png" Caption="Figure 5: first Tab section with sub Tab control using Load on Demand."%}
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img6.png" Caption="First Tab section with sub Tab control using Load on Demand."%}
 
 **Orientation Change**
 
@@ -351,18 +348,17 @@ The following code example is used to render the sub **Tab** element in the vert
 {% highlight js %}
 
 
-<script type="text/javascript">
         $(function () {          
              $("#dishType").ejTab();       
              $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });
              // set the orientation on sub tab element.       
              $("#pizzaType").ejTab({
-**headerPosition**: "left",
+                headerPosition*: "left",
                 height: "221px"
             });                                                  
         });
-</script>
 
+    
 
 {% endhighlight %}
 
@@ -372,7 +368,7 @@ The following screenshot illustrates the sub **Tab** with vertical orientation.
 
 
 
-{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img7.png" Caption="Figure 6: Sub Tab customized orientation"%}
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img7.png" Caption="Sub Tab customized orientation"%}
 
 **Header Image Customization**
 
@@ -385,7 +381,7 @@ The following code example is used for customizing the header image.
 {% highlight css %}
 
 
-<style type="text/css" class="cssStyles">
+    <style type="text/css" class="cssStyles">
         .dish {
             display: inline-block;
             vertical-align: middle;
@@ -397,7 +393,7 @@ The following code example is used for customizing the header image.
             width: 25px;
         }
         /*reuse the previous header orientation code*/                
-</style>
+    </style>
 
 
 
@@ -412,13 +408,13 @@ The following code example is used to add the header image for the root **Tab** 
 {% highlight html %}
 
 
-<div id="dishType" style="width: 550px">
+    <div id="dishType" style="width: 550px">
       <ul>
          <li><span class="dish pizzaImg"></span><a href="#pizza">Pizza Menu</a></li>  
          <!—- reuse the remaining tab header -->       
        </ul>
        <!—- reuse the previously defined first tab html content section-->
-</div>
+    </div>
 
 
 
@@ -430,7 +426,7 @@ The following screenshot illustrates the **Tab** with the customized header imag
 
 
 
-{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img8.png" Caption="Figure 7: Header Image Customization"%}
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img8.png" Caption="Header Image Customization"%}
 
 **Configuring Contents to remaining Tab items**
 
@@ -443,7 +439,7 @@ The following code example can be placed within the previous image customization
 {% highlight html %}
 
 
-           <!—reuse the first tab header defined in previous image customization -->
+     !—reuse the first tab header defined in previous image customization -->
      <li><span class="dish sandwichImg"></span><a href="#sandwich">Sandwich Menu</a></li>
      <li><span class="dish pastaImg"></span><a href="#pasta">Pasta Menu</a></li>
 
@@ -458,27 +454,26 @@ Add the second **Tab** contents in &lt;div&gt; element during initialization.
 
 {% highlight html %}
 
-
-     <div id="sandwich" style="background-color: #F5F5F5">
-          <p>Rating:</p>
-          <!--Rating control declaration-->
-          <div class="dishRating">
-                <input id="sandwichRating" type="text" class="rating" />
-          </div>
-         <!--dish description-->
-          <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-          <!--sub Tab control, the contents loaded with load on demand-->
-          <div id="sandwichType">
-              <ul>
-                  <li>
-<a href="http://js.syncfusion.com/UG/Web/Tab-Content/gardenVeggie.html"> Garden Veggie </a></li>
-                   <li>
-<a href="http://js.syncfusion.com/UG/Web/Tab-Content/chickenTikka.html"> Chicken Tikka </a></li>
-                   <li>
-<a href="http://js.syncfusion.com/UG/Web/Tab-Content/paneerTikka.html"> Paneer Tikka </a></li>             
-              </ul>
-           </div>
-     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <p>Rating:</p>
+        <!--Rating control declaration-->
+        <div class="dishRating">
+            <input id="sandwichRating" type="text" class="rating" />
+        </div>
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        <!--sub Tab control, the contents loaded with load on demand-->
+        <div id="sandwichType">
+            <ul>
+                <li>
+                    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/gardenVeggie.html">Garden Veggie </a></li>
+                <li>
+                    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/chickenTikka.html">Chicken Tikka </a></li>
+                <li>
+                    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/paneerTikka.html">Paneer Tikka </a></li>
+            </ul>
+        </div>
+    </div>
 
 
 {% endhighlight %}
@@ -491,28 +486,27 @@ Add third **Tab** contents in &lt;div&gt; element during initialization.
 
 {% highlight html %}
 
-
-      <div id="pasta" style="background-color: #F5F5F5">
-          <p>Rating:</p>
-          <!--Rating control declaration-->
-          <div class="dishRating">
-              <input id="pastaRating" type="text" class="rating" />
-          </div>
-          <!--dish description-->
-          <p>Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-           <!--sub Tab control, the contents loaded with load on demand-->
-           <div id="pastaType">
-               <ul>
-                   <li>
-<a href="http://js.syncfusion.com/UG/Web/Tab-Content/khemmaPasta.html">Kheema Pasta </a></li>
-                   <li>
-<a href="http://js.syncfusion.com/UG/Web/Tab-Content/tunaPasta.html">Tuna Pasta</a></li>
-                   <li>
-<a href="http://js.syncfusion.com/UG/Web/Tab-Content/channaPasta.html">Channa Pasta
-</a></li>                
-               </ul>
-            </div>
-       </div>
+    <div id="pasta" style="background-color: #F5F5F5">
+        <p>Rating:</p>
+        <!--Rating control declaration-->
+        <div class="dishRating">
+            <input id="pastaRating" type="text" class="rating" />
+        </div>
+        <!--dish description-->
+        <p>Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+        <!--sub Tab control, the contents loaded with load on demand-->
+        <div id="pastaType">
+            <ul>
+                <li>
+                    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/khemmaPasta.html">Kheema Pasta </a></li>
+                <li>
+                    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/tunaPasta.html">Tuna Pasta</a></li>
+                <li>
+                    <a href="http://js.syncfusion.com/UG/Web/Tab-Content/channaPasta.html">Channa Pasta
+                    </a></li>
+            </ul>
+        </div>
+    </div>
 
 
 {% endhighlight %}
@@ -525,7 +519,7 @@ Apply the following styles to the **Tab**.
 
 {% highlight css %}
 
-<style type="text/css" class="cssStyles">
+    <style type="text/css" class="cssStyles">
         /*to reuse the previous style section code and following css*/        
        .sandwichImg, .pastaImg {
             height: 25px;
@@ -537,7 +531,7 @@ Apply the following styles to the **Tab**.
         .pastaImg {
             background: url("http://js.syncfusion.com/UG/Web/Content/rsz_garden-veggie.png") no-repeat;                 
         }  
-</style>
+    </style>
 
 
 {% endhighlight %}
@@ -551,7 +545,6 @@ After the content declaration of all the **Tab** control, render the final outpu
 {% highlight js %}
 
 
-<script type="text/javascript">
         $(function () {
             // declaration       
             $("#dishType").ejTab();        // Overall Tab Container   
@@ -571,7 +564,7 @@ After the content declaration of all the **Tab** control, render the final outpu
             });                                                                
             $("#pastaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.5 }); 
         });
-    </script>                 
+               
 
 
 {% endhighlight %}
@@ -582,7 +575,7 @@ The following screenshot illustrates you the second **Tab** contents in **Tab** 
 
 
 
-{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img9.png" Caption="Figure 8: Tab represents different items with load on demand support"%}
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img9.png" Caption="Tab represents different items with load on demand support"%}
 
 
 

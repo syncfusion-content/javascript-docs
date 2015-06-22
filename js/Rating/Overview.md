@@ -15,15 +15,17 @@ Essential **JavaScript****Rating** control provides an intuitive **Rating** expe
 
 Some important features of Chart for Essential **JavaScript** are as follows:
 
-* **Precision support**— You can set the three different precisions like full, half, and exact.
+* **Precision support** - You can set the three different precisions like full, half, and exact.
 
-* **Orientation support**—Rating control can be displayed in horizontal or vertical direction.
+* **Orientation support** - Rating control can be displayed in horizontal or vertical direction.
 
-* **Read-only mode**—Rating control can be rendered in the read-only mode to enable or disable user interaction.
+* **Read-only mode** - Rating control can be rendered in the read-only mode to enable or disable user interaction.
 
-* **Reset**—You can reset the Rating value by using the Reset button.
+* **Reset** - You can reset the Rating value by using the Reset button.
 
-* **Tooltip**—You can set a tooltip for displaying the currently selected Rating value.
+* **Tooltip -** You can set a tooltip for displaying the currently selected Rating value.
 
-* **Theme**—Rating control consists of 12 built-in themes ( 6 – metro and 6 – gradient effects), and also supports custom skins to set user-defined themes.
+* **Theme** - Rating control consists of 12 built-in themes ( 6 – metro and 6 – gradient effects), and also supports custom skins to set user-defined themes.
+
+
 

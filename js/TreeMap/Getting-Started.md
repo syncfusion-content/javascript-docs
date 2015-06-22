@@ -11,13 +11,13 @@ documentation: ug
 
 This section explains briefly about how to create a **TreeMap** in your application with **JavaScript**.
 
-##Configure a TreeMap
+**Configure a TreeMap**
 
 You can configure an **Essential JavaScript TreeMap** in simple steps. In this section, you can learn how to configure a TreeMap control in a real-time scenario where it is used to visually represent the percentage of growth in population in each continent. It also provides a walk-through on some of the customization features available in TreeMap control. 
 
 {% include image.html url="/js/TreeMap/Getting-Started_images/Getting-Started_img1.png" Caption="TreeMap representing  population growth percentage in each continent"%}
 
-##Add Libraries
+**Add Libraries**
 
 To add a **TreeMap** control in your application, refer the following libraries in an **HTML** page. 
 
@@ -44,7 +44,7 @@ The following code sample explains how to link these libraries from a [Content D
 
 {% endhighlight %}
 
-##Initialize TreeMap
+**Initialize TreeMap**
 
 Create a **&lt;div&gt;** tag with a specific id and set the height and width to determine the **TreeMap** size to be rendered.
 
@@ -56,11 +56,11 @@ Create a **&lt;div&gt;** tag with a specific id and set the height and width to 
 
 {% endhighlight %}
 
-###Populate DataSource
+**Populate DataSource**
 
 The dataSource property accepts the collection values as input. For example, you can provide the list of objects as input.
 
-###Weight Value Path
+**Weight Value Path** 
 
 You can calculate the size of the object using weightValuePath of **TreeMap**.
 
@@ -182,15 +182,15 @@ The following screenshot displays a TreeMap control that is rendered after execu
 
 {% include image.html url="/js/TreeMap/Getting-Started_images/Getting-Started_img2.png" Caption="TreeMap with default properties"%}
 
-##Grouping of TreeMap Items using Levels
+**Grouping of TreeMap Items using Levels**
 
 You can group TreeMap items using the levels in it.
 
-###Group Path
+**Group Path**
 
 You can use groupPath property for every flat level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. You can group the data based on the groupPath in the TreeMap control. When the groupPath is not specified, then the items are not grouped and the data is displayed in the order specified in the dataSource.
 
-###Group Gap
+**Group Gap**
 
 You can use groupGap property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
 
@@ -219,11 +219,11 @@ The following screenshot displays grouping of **TreeMap****Items** using **Level
 
 {% include image.html url="/js/TreeMap/Getting-Started_images/Getting-Started_img3.png" Caption="TreeMap Items using Levels"%}
 
-##Customize TreeMap Appearance by Range
+**Customize TreeMap Appearance by Range**
 
 You can differentiate the nodes based on its value and color ranges using Range color. You can also define the color value range using from and to properties. 
 
-###Color Value Path
+**Color Value Path**
 
 The colorValuePath of TreeMap is a path to a field on the source object. You can determine the color for the object using colorValuePath of TreeMap.
 
@@ -259,11 +259,11 @@ The following screenshot displays a customized **TreeMap** control.
 
 {% include image.html url="/js/TreeMap/Getting-Started_images/Getting-Started_img4.png" Caption="TreeMap with customizations"%}
 
-##Enable Tooltip
+**Enable Tooltip**
 
 You can enable the tooltip by setting showTooltip property to “True”. By default, it takes the property of the bound object that is referred in the weightValuePath and displays its content when the corresponding node is hovered. You can customize the template for tooltip using tooltipTemplate property.
 
-##Leaf ItemSettings
+**Leaf ItemSettings**
 
 You can customize the Leaf level TreeMap items using leafItemSettings. The Label and tooltip values take the property of bound object that is referred in the labelPath when defined. The following code sample displays how the tooltip is enabled.
 
@@ -298,11 +298,11 @@ The following screenshot displays a ToolTip in a **TreeMap** control.
 
 {% include image.html url="/js/TreeMap/Getting-Started_images/Getting-Started_img5.png" Caption="TreeMap with Tooltip option"%}
 
-##Enable Legend
+**Enable Legend**
 
 You can set the color value of leaf nodes using TreeMap Legend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using rangeColorMapping. You can set showLegend property value to “True” to make a legend visible.
 
-###Label for Legend
+**Label for Legend**
 
 You can customize the labels of the legend item using **legendlabel** property of **rangeColorMapping**. 
 
