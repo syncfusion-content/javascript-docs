@@ -7,21 +7,19 @@ control: Introduction
 documentation: ug
 ---
 
-## Control Initialization
+# Control Initialization
 
 The Syncfusion controls can be initialized by using either of the following ways,
 
 * Manual reference of Scripts and Stylesheets in a HTML page.
-
 * Using Syncfusion Nuget Package in Visual Studio for Scripts and Stylesheet reference.
-
 * Using CDN link for Script and Stylesheet reference.
 
-### Manual reference of Scripts and Stylesheets in a HTML page
+## Manual reference of Scripts and Stylesheets in a HTML page
 
 While using the manual reference method, the user needs to maintain their HTML page (where we usually place our control definition code) and also the required scripts & stylesheets in a common folder structure.
 
-#### HTML file creation
+### HTML file creation
 
 Create a basic HTML file as shown below and place it in a separate folder in any of your System location.
 
@@ -40,11 +38,9 @@ Create a basic HTML file as shown below and place it in a separate folder in any
 {% endhighlight %}
 
 For example, if you have created a folder named **JS_Sample** and placed the above HTML file into it, then create two new folders **Scripts** and **Content** under that root folder **JS_Sample** to maintain the scripts and stylesheets respectively as shown below,
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img1.png" %}
 
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img1.png" Caption="Sample folder containing the Scripts & Content folder"%}
-
-
-#### Adding the required Stylesheets into Content folder
+### Adding the required Stylesheets into Content folder
 
 Navigating to the below specified location, you can find all the required web related theme folders – which you need to copy entirely to the **Content** folder of your application – so as to render the Syncfusion controls properly with its unique style and theme,
 
@@ -67,12 +63,9 @@ Navigating to the below specified location, you can find all the required web re
 
 
 Create a first level sub-folder named **ej** within the **Content** folder. Now again create another sub-folder namely **web** within the **ej** folder and place all the copied files into it as shown below,
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img2.png" %}
 
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img2.png" Caption="Stylesheet files copied into the Content folder of the Sample Project"%}
-
-
->   Note: The common-images folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.
-
+>   **Note**: The **common-images** folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.
 
 Now, Include the specific theme reference to your HTML file by referring the appropriate **ej.web.all.min.css** file from a particular theme folder (here, we have referred the **default-theme**), within the head section as shown below,
 
@@ -82,33 +75,27 @@ Now, Include the specific theme reference to your HTML file by referring the app
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>My first HTML page</title>
-
         <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
-
     </head>
-
-    <body>    
+    <body>   
+         
     </body>
-
 </html>
 
 
 {% endhighlight %}
 
 
->   Note: In the above css reference code section, you can simply use any of the 13 available themes.
+>   **Note**: In the above css reference code section, you can simply use any of the **13** available themes.
 
 
-#### Adding the required JavaScript files
+### Adding the required JavaScript files
 
 Adding and referring the required JavaScript files into your HTML file plays an important role, without which the Syncfusion controls cannot be created. It requires the following mandatory common script files,
 
 * jquery-1.10.2.min.js 
-
 * jquery.easing.1.3.min.js
-
 * jquery.globalize.min.js
-
 * jsrender.min.js
 
 Navigating to the below specified location, you can find the above specified 4 dependency external script files which you need to copy and paste it into the **Scripts** folder of your application,
@@ -152,7 +139,6 @@ Navigate to the below specified location and copy the **ej.web.all.min.js** file
 
 {% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img3.png" Caption="Script files copied into the Sample Project"%}
 
-
 Now, include the reference to it in your HTML page within the head section as shown below,
 
 {% highlight html %}
@@ -177,11 +163,10 @@ Now, include the reference to it in your HTML page within the head section as sh
 
 
 
->   Note: The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.
+>   **Note**: The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.
 
 
-
-#### Adding Syncfusion Widget into your HTML page
+### Adding Syncfusion Widget into your HTML page
 
 To add any of our Syncfusion JavaScript widgets into your HTML page, 
 
@@ -220,40 +205,31 @@ Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which act
 
 
 Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img4.png"%}
 
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img4.png" Caption="DatePicker widget displayed on the web browser"%}
-
-
-### Using Syncfusion Nuget Package in Visual Studio for Scripts and Stylesheet reference
+## Using Syncfusion Nuget Package in Visual Studio for Scripts and Stylesheet reference
 
 Using the Nuget Package method in Visual Studio automates the process of copying the required Script files and Stylesheets directly into your application.
 
-Start the Visual Studio. Create a new ASP.NET Empty Web Application or ASP.NET Empty Website from **File** -> **New** -> **Project/Website** and save it with a meaningful name****as below (we have used the ASP.NET Empty Web application here),
+Start the Visual Studio. Create a new ASP.NET Empty Web Application or ASP.NET Empty Website from **File** -> **New** -> **Project/Website** and save it with a meaningful name as below (we have used the ASP.NET Empty Web application here),
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img5.png" %}
 
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img5.png" Caption="Visual Studio -> New Project Window"%}
-
-
-#### Configuring and Installing Nuget into your project
+### Configuring and Installing Nuget into your project
 
 To add the required scripts and css files automatically into your Project (Configure the **Syncfusion Nuget Package for JavaScript** in Visual Studio initially, before proceeding with the following installation procedure).
 
 Right click on your project in the Solution explorer and select **Manage Nuget Packages** options from the sub-menu that pop-up on the screen. In the **Manage Nuget Packages** dialog, select the **Syncfusion Nuget Packages** within the **Online** tab, which will display the list of available packages in it, as shown below.
-
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img6.png" Caption="Manage Nuget Packages pop-up"%}
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img6.png" %}
 
 You need to install the **SyncfusionJavaScript** package shown in the above image just by clicking the **install** button. The below image depicts that the Nuget Packages for **JavaScript** has been successfully installed into your project.
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img7.png" %}
 
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img7.png" Caption="Manage Nuget Packages pop-up"%}
-
-
-#### Adding HTML page in your application
+### Adding HTML page in your application
 
 Right click on your Project in Solution Explorer. Select **Add** -> **New Item** -> **HTML Page** and add it to your application. The blank HTML page will get added to your application.
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img8.png" %}
 
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img8.png" Caption="Add New Item pop-up"%}
-
-
-#### Adding reference to the required Stylesheets
+### Adding reference to the required Stylesheets
 
 Since the stylesheets are automatically loaded into the **Content** folder of your application, include the specific theme reference to the newly created HTML file by referring the appropriate **ej.web.all.min.css** file from a particular theme folder (here, we have referred the **default-theme** and you can use whatever theme you need in the below highlighted code), within the head section as shown below,
 
@@ -272,9 +248,7 @@ Since the stylesheets are automatically loaded into the **Content** folder of yo
 
 {% endhighlight %}
 
-
-
-#### Adding reference to the required JavaScript files
+### Adding reference to the required JavaScript files
 
 It is mandatory to include the reference to the required JavaScript files in your HTML page, so as to render the Syncfusion controls properly as shown below,
 
@@ -298,25 +272,19 @@ It is mandatory to include the reference to the required JavaScript files in you
 
 {% endhighlight %}
 
+>   **Note**: The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.
 
-
->   Note: The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.
-
-
-
-#### Adding Syncfusion Widget into your HTML page
+### Adding Syncfusion Widget into your HTML page
 
 Finally, to add the Syncfusion datepicker widget into the HTML page, refer the same steps mentioned here in the manual method. 
 
-
-### Using CDN link for Script and Stylesheet reference 
+## Using CDN link for Script and Stylesheet reference 
 
 With this method, you can skip the process of copying and pasting the required Script and StyleSheets into your application and can directly provide the cdn link references for it.
 
-#### HTML file creation
+### HTML file creation
 
 Create a basic HTML file and directly refer all the required cdn links for the Script and Stylesheets within the &lt;head&gt; section as shown below, - For other cdn links, refer the CDN section in the introduction part.
-
 
 Here, we have referred the cdn link of **default-theme**. Likewise, any of the 13 available themes can be referred in the below highlighted code, as per the user needs.
 
@@ -341,7 +309,7 @@ Here, we have referred the cdn link of **default-theme**. Likewise, any of the 1
 
 {% endhighlight %}
 
-#### Adding Syncfusion Widget into your HTML page
+### Adding Syncfusion Widget into your HTML page
 
 Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which acts as a container for **ejDatePicker** widget to render and then initialize the **ejDatePicker** widget within the script section as shown below,
 
@@ -376,9 +344,7 @@ Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which act
 {% endhighlight %}
 
 Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
-
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img9.png" Caption="DatePicker widget displayed on the web browser"%}
-
+{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img9.png" %}
 
 The **DatePicker** control is rendered with its default appearance now. You can then use its various available properties to set its value and also make use of its available events to trigger when necessary.
 

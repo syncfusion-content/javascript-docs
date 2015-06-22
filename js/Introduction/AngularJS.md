@@ -7,24 +7,20 @@ control: Introduction
 documentation: ug
 ---
 
-## AngularJS
+# AngularJS
 
 **Essential JavaScript** has a complete support for [AngularJS](https://docs.angularjs.org/tutorial/step_02) by integrating a required angular JS library file. It lets you use HTML as your template language and lets you extend the HTML's syntax to express the application's components clearly. This support mainly covers the following topics, 
 
 * Module
-
 * Directives
-
 * Controller
-
 * Data Binding
 
-### Required JavaScript libraries
+## Required JavaScript libraries
 
 The following two JavaScript libraries are necessary to create AngularJS applications,
 
 * angular.min.js
-
 * ej.widget.angular.min.js
 
 You can find the common **angular.min.js** from the following installed location of your machine,
@@ -63,7 +59,7 @@ The **ej.widget.angular.min.js** file can be copied from the below specified loc
 </table>
 
 
-### Directives
+## Directives
 
 In general, AngularJS directives are extended HTML attributes with the prefix **ng-**. The **ng-app** directive is a common directive that normally initializes the AngularJS applications. To do so, we need to define it in the &lt;html&gt; tag as depicted below,
 
@@ -76,14 +72,9 @@ In general, AngularJS directives are extended HTML attributes with the prefix **
   </head>
   …
   …
-
 </html>
 
-
-
 {% endhighlight %}
-
-
 
 All the Syncfusion widget’s **control directives** are prefixed with **ej-** to avoid conflict with other library directives and its properties are defined using **e-** prefix followed by the property name. The code example for defining controls in **AngularJS** is as follows,
 
@@ -94,49 +85,33 @@ All the Syncfusion widget’s **control directives** are prefixed with **ej-** t
   <head>
     <title>Essential Studio for JavaScript : DatePicker - Angular</title>
   </head>
-
   <body ng-controller="DatePickerCtrl">
     <input id="datepick" ej-datepicker e-value="dateValue" e-enableStrictMode="true" />
-
   </body>
-
 </html>
-
-
 
 {% endhighlight %}
 
-
-
 In the above code snippet, **ej-datepicker** denotes the control directive for the Syncfusion’s datepicker widget and all its properties are prefixed with the letter **e-** (For example, **e-value**).
 
-### Controller
+## Controller
 
 AngularJS applications are controlled by the Controllers, which maintains the entire data of the application. Usually, it is defined by the keyword **ng-controller** within the &lt;body&gt; tag as shown below,
 
 {% highlight html %}
 
-
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
   <head>
     <title>Essential Studio for JavaScript : DatePicker - Angular</title>
   </head>
-
   <body ng-controller="DatePickerCtrl">
-
     <input id="datepick" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
-
   </body>
-
 </html>
-
-
 
 {% endhighlight %}
 
-
-
-### Module
+## Module
 
 A **Module** is a container for the various parts of an application that we create and it mainly defines an application. All the controllers within an application should belong to this module.
 
@@ -145,51 +120,42 @@ To use our Syncfusion widgets in AngularJS applications, all the EJ directives a
 {% highlight js %}
 
 
-        angular.module('DateCtrl', ['ejangular'])
+                angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl', function ($scope) {
                $scope.dateValue = "2/3/2013";
         });
 
-
-
 {% endhighlight %}
 
-
-
-### Data binding
+## Data binding
 
 Data-binding can be defined as an automatic synchronization of data between model and View components. Our Syncfusion widgets supports both one-way and two-way (**ng-model**) binding.
 
-#### One way binding
+### One way binding
 
 It is said one-way binding because the model values are directly bound to the widget’s properties and the changes in the property’s value won’t reflect in the model in any way. **All the properties of Syncfusion widgets support one-way binding**. The below code defines the one-way binding depicted in the DatePicker widget,
 
 {% highlight html %}
 
-
     <input id="datepick" ej-datepicker  e-value="01/01/2015" e-enableStrictMode="true" />
-
-
 
 {% endhighlight %}
 
-
-
 Here, in the above code, the value property of the DatePicker widget is assigned with the direct value **01/01/2015**. Therefore, whenever we change the value of the DatePicker dynamically, the changes won’t get reflected in the value property.
 
-#### Two way binding
+### Two way binding
 
 A two-way data binding can be defined as, when a model variable is bound to the widget’s properties instead of direct values, it can both change and display the value of the variable. In general, we could have more than one property bound to the same variable. 
 
-##### Two way binding properties
+#### Two way binding properties
 
 The below table depicts the properties of all the Syncfusion widgets that supports two-way data-binding - 
 
 <table>
 <tr>
-<td>
-<b>Control</b></td><td>
-<b>Supported Two way binding properties</b></td></tr>
+<th>
+Control</th><th>
+Supported Two way binding properties</th></tr>
 <tr>
 <td>
 ejAccordion</td><td>
@@ -387,29 +353,19 @@ The two-way data binding has been demonstrated in the below code,
     <title>Essential Studio for JavaScript : DatePicker - Angular</title>
     <!-- SCRIPT & CSS REFERENCE SECTION -->
   </head>
-
   <body ng-controller="DatePickerCtrl">
-
     <input id="mydatepicker1" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
-
     <input id="mydatepicker2" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
-
     <script type="text/javascript">
         angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl', function ($scope) {
                $scope.dateValue = "01/01/2015";
-           });
+        });
     </script>
-
   </body>
-
 </html>
 
-
-
 {% endhighlight %}
-
-
 
 Here, just for the demonstration purpose, we are using two DatePicker controls (with id **mydatepicker1** and **mydatepicker2**), both of its value property is bound to the scope variable **dateValue**. Initially, both the DatePickers will be displayed with the value **01/01/2015** and whenever any of the DatePicker’s value is changed dynamically, it gets simultaneously reflected in another DatePicker too, as both of them shared the same scope variable.
 

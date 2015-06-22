@@ -7,17 +7,17 @@ control: Introduction
 documentation: ug
 ---
 
-## CDN
+# CDN
 
 The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the Scripts and Stylesheets, so that the users can have easier access to the Syncfusion JavaScript components. 
 
 
->   Note: All the provided cdn links can be accessed either through http or https.
+>   **Note**: All the provided cdn links can be accessed either through **http** or **https**.
 
 
-### CDN Script links
+## CDN Script links
 
-#### External dependency libraries
+### External dependency libraries
 
 The first four common script libraries listed in the below table are more essential and mandatory to render any of the Syncfusion widgets on the application module.
 
@@ -39,10 +39,10 @@ http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Details</b></td><td>
-<b>CDN link</b></td></tr>
+<th>
+Name</th><th>
+Details</th><th>
+CDN link</th></tr>
 <tr>
 <td>
 jquery 1.10.2</td><td>
@@ -95,7 +95,7 @@ To enable unobtrusive validation options in <b>data-*</b> attributes</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.validate.unobtrusive.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.validate.unobtrusive.min.js</a></td></tr>
 </table>
 
-#### Syncfusion Dependency Libraries - Based on latest build version
+### Syncfusion Dependency Libraries - Based on latest build version
 
 The **CDN** script files are maintained for each version of the **Essential Studio** individually. Refer the following syntax:
 
@@ -116,10 +116,10 @@ For example, to access the <b>ej.web.all.min.js</b> file in <b>{{ site.releaseve
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Details</b></td><td>
-<b>CDN link</b></td></tr>
+<th>
+Name</th><th>
+Details</th><th>
+CDN link</th></tr>
 <tr>
 <td>
 ej.web.all.min</td><td>
@@ -148,7 +148,7 @@ Provides complete support for Knockout JS</td><td>
 </table>
 
 
-The Knockout and angular dependencies can be accessed through the following syntax,
+The **Knockout** and **angular** dependencies can be accessed through the following syntax,
 
 <table>
 <tr>
@@ -166,7 +166,7 @@ For example, to access the <b>ej.widget.angular.min.js</b> file in <b>{{ site.re
 </table>
 
 
-### CDN StyleSheet links
+## CDN StyleSheet links
 
 The CDN links for all the css files (both core & theme related) are depicted together in the below table. Refer the following syntax:
 
@@ -187,10 +187,10 @@ http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>theme-name</b>]/[<b>fileNa
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Details</b></td><td>
-<b>CDN link</b></td></tr>
+<th>
+Name</th><th>
+Details</th><th>
+CDN link</th></tr>
 <tr>
 <td>
 Flat-Azure (default theme)</td><td>
@@ -270,24 +270,24 @@ Here – For example, we have depicted another way of theme reference for the **
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Details</b></td><td>
-<b>CDN link</b></td></tr>
+<th>
+Name</th><th>
+Details</th><th>
+CDN link</th></tr>
 <tr>
 <td>
 Flat-Azure</td><td>
 Here, the widget core file (<b>ej.widget.core.min.css</b>) is common and the theme file <b>ej.theme.min.css</b> is uniquely available under the <b>flat-azure</b> theme folder.</td><td>
-<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css</a><br/></td></tr>
 <tr>
 <td>
 Flat-Azure Dark</td><td>
 Here, the widget core file (<b>ej.widget.core.min.css</b>) is common and the theme file <b>ej.theme.min.css</b> is uniquely available under the <b>flat-azure-dark</b> theme folder.</td><td>
-<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css</a>  </td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css</a><br/></td></tr>
 </table>
 
 
-### Referring local Scripts and CSS, when CDN fails
+## Referring local Scripts and CSS, when CDN fails
 
 One of the major risk with CDN links is that – sometimes it may go down due to the network or connection problems which is so annoying. On such scenarios, we can refer the local scripts and css files dynamically in the application by checking if the scripts and css files loaded through CDN returns **undefined** (if it returns undefined, the local scripts will get referred. Otherwise, the cdn links will work fine) as depicted below,
 

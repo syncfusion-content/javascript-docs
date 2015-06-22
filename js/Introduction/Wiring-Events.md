@@ -13,34 +13,29 @@ Whenever the control undergoes some changes or action, it should be notified to 
 
 #### During Initialization
 
-
 {% highlight js %}
 
 
-   $("jquery-selector").ej-plugin-name({ eventName : "eventhandler" });
+      $("jquery-selector").ej-plugin-name({ eventName : "eventhandler" });
    //Example
    $("#myDate").ejDatePicker({ select: function () { 
-                                  // event handler 
-                               }  
-                            });
+               // event handler 
+      }  
+   });
    
-
 {% endhighlight %}
-
-
 
 #### After initialization
 
 
 {% highlight js %}
 
-   // First way
+      // First way
    $("jquery-selector").ej-plugin-name("model.eventName", "eventhandler");
    //Example
    $("#myDate").ejDatePicker("model.destroy" , function () {
           // event handler
    });
-
 
    // Second way
    $("jquery-selector").on("ej-plugin-nameEventName", "eventhandler");
@@ -48,7 +43,6 @@ Whenever the control undergoes some changes or action, it should be notified to 
    $("#myDate").on("ejDatePickerdestroy", function () {
          // event handler
    }); 
-
 
 
 {% endhighlight %}
