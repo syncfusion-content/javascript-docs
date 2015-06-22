@@ -133,17 +133,13 @@ The steps to download and configure the Syncfusion Nuget Packages in Visual Stud
 
 Download the Syncfusion Nuget Packages for **JavaScript** from [here](http://nuget.syncfusion.com/login) and save it in your system. The downloaded file is a zip formatted file, therefore unzip the folder and copy the **SyncfusionJavaScript.{{ site.releaseversion }}.nupkg** package in it. Create a new folder namely **Nuget Packages** in any of the particular location in your system and place the copied file into it.
 
-
-
 In Visual Studio, navigate to **Tools** -> **Library Package Manager** -> **Package Manager Settings**, the **Options** pop-up will appear on the screen as below,
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img1.png" %}
 
-Select **Package Manager** -> **Package Sources** in the above pop-up and click on the {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img2.png" %} button to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
+Select **Package Manager** -> **Package Sources** in the above pop-up and click on the **Browse** button(preceding the **Add** button) to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img3.png" %}
 
 >  **Note**: The **Source** textbox in the above image denotes the location of the nuget packages in your machine and the **Name** section, allows you to provide a unique name which we will refer in the package installation section later.
-
-
 
 Now click the **Add** button and the package name will be listed in the **Available package sources** list as shown below and then Click **OK**.
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img4.png" %}
