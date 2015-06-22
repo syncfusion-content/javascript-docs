@@ -14,21 +14,13 @@ The **Ribbon** control has gallery support. By using the Gallery in Ribbon, item
 To use the gallery feature, include the following properties under **tabgroups**.
 
 * **id** –defines the id of the gallery.
-
 * **type**- defines the type of the item and it must be of type ej.Ribbon.type.gallery.
-
 * **columns** –defines the number of columns to be displayed in a row at intial without gallery expand operation.
-
 * **expandedColumns**-defines the number of columns to be displayed in a row at gallery expand operation.
-
 * **itemHeight** –defines the height of the  contents.
-
 * **itemWidth** –defines the width of contents.
-
 * **galleryItems** –defines the collection of the items to be included in the gallery.
-
 * **customGalleryItems**- defines the additional items to be  displayed at gallery expand operation. It can be of customItemType  ej.Ribbon. customItemType.button or ej.Ribbon. customItemType.menu. By default value it is ej.Ribbon. customItemType.button.
-
 
 {% highlight html %}
      
@@ -91,8 +83,7 @@ To use the gallery feature, include the following properties under **tabgroups**
           text: "Content5",
           toolTip: "Content5"
           }
-          ],
-          
+          ],          
           customGalleryItems: [
           {
           text: "Save Selection as new quick style",

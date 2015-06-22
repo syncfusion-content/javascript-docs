@@ -16,19 +16,12 @@ The **Ribbon** control for JavaScript provides ribbons with rich customizable us
 Some of the important features of the **Ribbon** control for **JavaScript** are:
 
 * **Application Tab**-Supports Application tab with ej menu and ej menu settings.
-
 * **Contextual tabs and Tab set**-Supports the display of Contextual Tab and Tab Set.
-
 * **Controls’ support**-Supports Button, Split button and DropdownList, Toggle button, and custom controls in the ribbon groups.
-
 * **Group Expander**-Supports Group expander for each group.
-
 * **Control Separator**-Supports control separator for each control in the row type group.
-
 * **Expand and Collapse**-Supports Expand and Collapse button.  The ribbon can be expanded and collapsed.
-
 * **Screen-Tip**-Supports HTML tooltips for default Button, Split button, and DropdownList controls in the ribbon groups.
-
 * **Theme-Essential JavaScript** controls feature 12 built-in themes--six flat themes and six with gradient effects. It also supports bootstrap theme.
 
 

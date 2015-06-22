@@ -9,7 +9,7 @@ documentation: ug
 
 # Application Tab
 
-The **application menu** support is provided in the Ribbon control application tab. Use **applicationTab** property to define the application tab with menu. In **applicationTab** definition, Type property defines the application menu and the value is **ApplicationMenu**, **itemID** property to specify ID of UL list for application menu and **menuSettings** property to specify all the members and events of the menu.
+The **application menu** support is provided in the Ribbon control application tab. Use **applicationTab** property to define the application tab with menu. In applicationTab definition, Type property defines the application menu and the value is **ApplicationMenu**, **itemID** property to specify ID of UL list for application menu and **menuSettings** property to specify all the members and events of the menu.
 
 {% highlight html %}
 
@@ -48,7 +48,7 @@ The **application menu** support is provided in the Ribbon control application t
 
 {% endhighlight %}
 
-The following screenshot illustrates **Ribbon** with application menu.
+The following screenshot illustrates Ribbon with application menu.
 
-{% include image.html url="/js/Ribbon/Application-Tab_images/Application-Tab_img1.png" Caption="Ribbon control with the application tab menu."%}
+{% include image.html url="/js/Ribbon/Application-Tab_images/Application-Tab_img1.png"%}
 
