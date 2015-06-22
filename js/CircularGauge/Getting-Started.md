@@ -13,7 +13,7 @@ This section encompasses how to configure **Circular Gauge**. You can provide da
 
 The following screen shot displays a **Circular Gauge**, which visually represents the functions of an Automobile speedometer with RPM (Rotation per Minute), KmpH (Kilometer per hour) and it denotes the speed level indicators (Safe, Caution and Danger). 
 
-{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img1.png" Caption="Speedometer Gauge"%}
+{% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
 
 First create an **HTML** file and add references to the required libraries.
 
