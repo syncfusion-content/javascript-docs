@@ -35,7 +35,7 @@ The following code example illustrates how to bind data to the diagram through K
 
 <div>
     <!-- Renders a dropdown box. -->
-    <input id="Text1" data-bind="ejDropDownList:{ dataSource: pageColor, value: pageBackgroundColor, width: '100px'}">
+    <input id="Text1" data-bind="ejDropDownList:{ dataSource: pageColor, value: pageBackgroundColor, width: '100px'}"/>
 </div>
 
 {% endhighlight %}

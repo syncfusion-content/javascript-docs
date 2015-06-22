@@ -90,7 +90,7 @@ node = {
 **Html** elements are embedded in diagram through **Html shape node**. The following code illustrates how an **Html** node is created.
 
 {% highlight html %}
-//dependency scripts
+<!-- dependency scripts -->
 <script src = "http://borismoore.github.io/jsrender/jsrender.min.js"> </script>
 
 <script id="htmlTemplate" type="text/x-jsrender">

@@ -18,7 +18,8 @@ Apply the plugin and property assigning the Diagram element through the directiv
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
 <script src="http://cdn.syncfusion.com/js/web/ej.unobtrusive-latest.min.js"></script>
 <script src="http://cdn.syncfusion.com/js/ej.widget.angular-latest.min.js"></script>
- <!-- Initializes diagram. -->
+
+<!-- Initializes diagram. -->
 <div id="diagramCore" 
    ej-diagram e-height="500px" 
    e-width="700px" 
@@ -29,11 +30,9 @@ Apply the plugin and property assigning the Diagram element through the directiv
    <!-- Renders a dropdown box to display a list of colors -->
    <input ej-dropdownlist e-datasource="pageColor" value="pageSettings.pageBackgroundColor" e-width="100px"/>
 </div>
-
 {% endhighlight %}
 
 {% highlight js %}
-
 angular.module('syncApp', ['ejangular'])
    .controller('diagram',
       function($scope) {
@@ -53,7 +52,6 @@ angular.module('syncApp', ['ejangular'])
             text: "Goldenrod"
          }];
       });
-
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Angular-Binding_images/Angular-Binding_img1.png" %}
