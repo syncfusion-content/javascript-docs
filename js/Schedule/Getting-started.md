@@ -25,7 +25,7 @@ The following screenshot displays the **Schedule** control with daily important 
 
 **Create a Schedule**
 
-* Create an **HTML** file and then add the following references to the required libraries.
+Create an **HTML** file and then add the following references to the required libraries.
 
 
 
