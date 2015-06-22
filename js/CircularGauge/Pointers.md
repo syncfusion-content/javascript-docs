@@ -242,6 +242,8 @@ Execute the above code to render the following output.
  * Trapezoid 
 
  * Arrow
+ 
+ * Image
 
 * For marker pointer, the available dimensions are 
 
@@ -266,6 +268,233 @@ Execute the above code to render the following output.
  * Trapezoid
 
  * Rounded Rectangle
+ 
+ * Image
+ 
+## Pointer Images
+
+In JavaScript circular gauge, it is possible to replace the pointer with images. We can use image instead of rendering the pointer.
+
+**Image with URL**
+
+* To implement the pointer image we need to give the API called ImageUrl. It is a string datatype. 
+* Image type pointer is applicable for both marker as well as needle type pointers and it is possible with combine the normal marker pointer type wit image type. The three possibilities are
+ 
+ * Needle Image
+ 
+ * Marker Image
+ 
+ * Marker pointer with Image
+ 
+**Needle Image**
+
+In this type, needle pointer is completely replaced by image. We can implement it with the help of following snippet. 
+ 
+{% highlight html %}
+
+<div id="CoreCircularGauge"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+ $(function() {
+        $("#CoreCircularGauge").ejCircularGauge({
+            // To set frame type as half circle
+            frame: {
+                frameType: "halfcircle"
+            },
+            // To set scale options
+            scales: [{
+                // set basic appearance
+                showRanges: true,
+                showLabels: false,
+                startAngle: 180,
+                sweepAngle: 180,
+                radius: 130,
+                showScaleBar: false,
+                // To set pointer option
+                pointers: [{
+                    // To set pointer type as needle
+                    type: "needle",
+                    // To set needle type as image
+                    needleType: "image",
+                    // To set image url for pointer image
+                    ImageUrl: "nib.png",
+                    // To set pointer value
+                    value: 60,
+                    // To set pointer dimension
+                    length: 30,
+                    width: 100,
+                }],
+                // To set tick options
+                ticks: [{
+                    height: 0,
+                    width: 0
+                }],
+                // To set range options
+                ranges: [{
+                    distanceFromScale: -30,
+                    startValue: 0,
+                    endValue: 70,
+                    size: 40,
+                }, {
+                    distanceFromScale: -30,
+                    startValue: 70,
+                    endValue: 110,
+                    backgroundColor: "#fc0606",
+                    border: {
+                        color: "#fc0606"
+                    },
+                    size: 40,
+                }]
+            }]
+        }); 
+    });
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img10.png" Caption=""%}
+
+
+**Marker Image**
+
+In this type, marker pointer is completely replaced by image. We can implement it with the help of following snippet.
+
+{% highlight html %}
+
+<div id="CoreCircularGauge"></div>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+ $(function () {
+        $("#CoreCircularGauge").ejCircularGauge({
+            // To set frame type as half circle
+            frame: {
+                frameType: "halfcircle"
+            },
+            // To set scale options
+            scales: [{
+                // set basic apperance
+                showRanges: true,
+                showLabels: false,
+                startAngle: 180,
+                sweepAngle: 180,
+                radius: 130,
+                showScaleBar: false,
+                // To set pointer option
+                pointers: [{
+                    // To set pointer type as marker
+                    type: "marker",
+                    // To set needle type as image
+                    markerType: "image",
+                    // To set image url for pointer image
+                    ImageUrl: "ball.png",
+                    // To set pointer value 
+                    value: 60,
+                    // To set pointer dimension
+                    length: 30,
+                    width: 100,
+                }],
+                // To set tick options
+                ticks: [{
+                    height: 0,
+                    width: 0
+                }],
+                // To set range options
+                ranges: [{
+                    distanceFromScale: -30,
+                    startValue: 0,
+                    endValue: 70,
+                    size: 40,
+                }, {
+                    distanceFromScale: -30,
+                    startValue: 70,
+                    endValue: 110,
+                    backgroundColor: "#fc0606",
+                    border: {
+                        color: "#fc0606"
+                    },
+                    size: 40,
+                }]
+            }]
+        });
+    });
+    
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img11.png" Caption=""%}
+
+
+**Marker Pointer with Image**
+
+In this type, marker pointer is drawn first and then image also loaded. We can implement it with the help of following snippet.
+
+{% highlight html %}
+
+<div id="CoreCircularGauge"></div>
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+$(function () {
+        $("#CoreCircularGauge").ejCircularGauge({
+            // To set frame type as half circle
+            frame: { frameType: "halfcircle" },
+            // To set scale options
+            scales: [{
+                // set basic apperance
+                showRanges: true, showLabels: false,
+                startAngle: 180, sweepAngle: 180, radius: 130,
+                showScaleBar: false,
+                // To set pointer option
+                pointers: [{
+                    // To set pointer type as marker
+                    type: "marker",
+                    // To set needle type as rectangle
+                    markerType: "rectangle",
+                    // To set image url for pointer image
+                    ImageUrl: "ball.png",
+                    // To set pointer value 
+                    value: 50,
+                    // To set pointer dimension
+                    length: 30,
+                    width: 100,
+                    border: { color: "Black", width: 3 }
+                }],
+                // To set tick options
+                ticks: [{ height: 0, width: 0 }],
+                // To set range options
+                ranges: [{
+                    distanceFromScale: -30,
+                    startValue: 0,
+                    endValue: 70, size: 40,
+                }, {
+                    distanceFromScale: -30,
+                    startValue: 70,
+                    endValue: 110,
+                    backgroundColor: "#fc0606",
+                    border: { color: "#fc0606" }, size: 40,
+                }]
+            }]
+        });
+    });
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img12.png" Caption=""%}
+
 
 ## Multiple Pointers
 
