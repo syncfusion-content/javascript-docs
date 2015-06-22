@@ -7,13 +7,11 @@ control: Introduction
 documentation: ug
 ---
 
-## Invoking Methods
+# Invoking Methods
 
 The functions can be invoked the same way the properties are accessed. The following syntaxes defines the ways to invoke the public methods of the widgets.
 
-
 {% highlight js %}
-
 
       // First way
    var obj = $("jquery-selector").data("ej-plugin-name"); // [RECOMMENDED METHOD]
@@ -32,10 +30,6 @@ The functions can be invoked the same way the properties are accessed. The follo
    //Example
    $("#gauge").ejCircularGauge("setPointerValue", "0", "0", "30");
 
-
 {% endhighlight %}
-
-
-
 
 
