@@ -123,8 +123,7 @@ Navigation</td><td>
 <tr>
 <td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview31.htm">NavigationDrawer</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview57.htm">Toolbar</a></td><td>
-</td></tr>
+<a href="http://help.syncfusion.com/ug/js/Documents/overview57.htm">Toolbar</a></td></tr>
 <tr>
 <td>
 Notification</td><td>
