@@ -14,7 +14,7 @@ All our Syncfusion Components has been provided with the built-in [Localization]
 To localize any of our Syncfusion components into a particular culture, it is necessary to refer the below specified scripts in your application,
 
 * **jquery.globalize.min.js** (Mandatory for processing specific source-side actions globally)
-* Other culture-specific script files, to which specific culture you need to adapt any of our Syncfusion control. **[**_**Refer the below note]**_
+* Other culture-specific script files, to which specific culture you need to adapt any of our Syncfusion control.
 
 
 >   **Note**: All the culture-specific script files are available within the below specified location once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.

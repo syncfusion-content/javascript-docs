@@ -22,7 +22,8 @@ Select the required version from the **Version** list and also select the output
 Once the Generate button is clicked, the combining process of selected scripts is executed and this will take several minutes. When the process is done, the **Download** button will become available through which you can download the requested files combined and make use of it in your application as per your needs.
 {% include image.html url="/js/Introduction/Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img3.png" %}
 
->	**Note**: It is not necessary to sit idle for a long time, you can simply close the above information and proceed with your work, as an e-mail alert with the Custom script downloadable link will be sent to you automatically. 
+
+>   **Note**: It is not necessary to sit idle for a long time, you can simply close the above information and proceed with your work, as an e-mail alert with the Custom script downloadable link will be sent to you automatically.
 
 
 ## Settings Customization
