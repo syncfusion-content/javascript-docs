@@ -89,8 +89,7 @@ Editors</td><td>
 <td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview49.htm">Slider</a></td><td colspan = "2">
 <a href="http://help.syncfusion.com/ug/js/Documents/overview7.htm">Button</a></td></tr>
-<tr>
-<td></td>
+<tr><td></td>
 <td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview61.htm">UploadBox</a></td><td colspan = "2">
 <a href="http://help.syncfusion.com/ug/js/Documents/overview29.htm">MaskEdit</a></td></tr>

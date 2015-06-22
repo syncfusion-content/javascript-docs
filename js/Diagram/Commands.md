@@ -19,16 +19,17 @@ There are several commands available in diagram. They are listed as follows.
 * Z-Order
 * Zoom
 * Nudge
+* FitToPage
 * Undo/Redo
 
 ## Alignment Command
 
-**Alignment commands** are used to align selected nodes/connectors on the Diagram page. The alignment is based on the selection boundary. The alignment command is as follows.
+**Alignment command** are used to align selected nodes/connectors on the Diagram page. The alignment is based on the selection boundary. The alignment command is as follows.
 
 <table>
 <tr>
 <td>
-<b>Commands</b></td><td>
+<b>Command</b></td><td>
 <b>Parameter</b></td><td>
 <b>Description</b></td></tr>
 <tr>
@@ -40,9 +41,9 @@ Align all the nodes/connectors in the selection list to the left, right, center,
 </table>
 
 
-### Vertical Alignment commands
+### Vertical Alignment command
 
-The node is aligned vertically to left, right and center using alignment commands. The following code illustrates how to execute the vertical alignment command.
+The node is aligned vertically to left, right and center using alignment command. The following code illustrates how to execute the vertical alignment command.
 
 {% highlight js %}
 
@@ -59,7 +60,7 @@ diagram.align("center");
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img1.png" %}
 
-### Horizontal Alignment commands
+### Horizontal Alignment command
 
 The node is aligned horizontally to top, bottom, and middle using alignment commands. The following code illustrates how to execute the horizontal alignment command.
 
@@ -80,12 +81,12 @@ diagram.align("middle");
 
 ## Spacing Command
 
-**Spacing commands** are used to place selected nodes on the diagram at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
+**Spacing command** are used to place selected nodes on the diagram at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
 
 <table>
 <tr>
 <td>
-<b>Commands</b></td><td>
+<b>Command</b></td><td>
 <b>Description</b></td></tr>
 <tr>
 <td>
@@ -126,12 +127,12 @@ diagram.spaceDown();
 
 ## Sizing Command
 
-**Sizing commands** are used to size the selected nodes on the Diagram. The following are the sizing commands.
+**Sizing command** are used to size the selected nodes on the Diagram. The following are the sizing commands.
 
 <table>
 <tr>
 <td>
-<b>Commands</b></td><td>
+<b>Command</b></td><td>
 <b>Description</b></td></tr>
 <tr>
 <td>
@@ -148,7 +149,7 @@ Width of the nodes in the selection list is resized to width of first node in th
 </table>
 
 
-The following code illustrate how to execute **Sizing commands**
+The following code illustrate how to execute **Sizing command**
 
 {% highlight js %}
 
@@ -165,9 +166,9 @@ diagram.sameWidth();
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img5.png" %}
 
-## Clipboard commands 
+## Clipboard command
 
-**Clipboard commands** are used to cut, copy, and paste the selected elements on Diagram. The following are the **Clipboard commands**.
+**Clipboard command** are used to cut, copy, and paste the selected elements on Diagram. The following are the **Clipboard command**.
 
 * cut
 * copy
@@ -208,9 +209,9 @@ diagram.paste();
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img6.png"%}
 
-## Grouping Commands
+## Grouping Command
 
-**Grouping commands** are used to group/ungroup the selected elements on Diagram.
+**Grouping command** are used to group/ungroup the selected elements on Diagram.
 
 ### Group
 
@@ -234,9 +235,9 @@ diagram.ungroup();
 
 {% endhighlight %}
 
-## Z-Order Commands
+## Z-Order Command
 
-**Z-order commands** are used to move the selected elements to the front of other elements. To send it back of other elements, move it one step (z-index) forward and move it one step (z-index) backward.
+**Z-order command** are used to move the selected elements to the front of other elements. To send it back of other elements, move it one step (z-index) forward and move it one step (z-index) backward.
 These commands provide support to control overlapping objects.
 
 * bringToFront
@@ -244,7 +245,7 @@ These commands provide support to control overlapping objects.
 * moveForward
 * sendBackward
 
-### bringToFront Commands
+### bringToFront Command
 
 The **bringToFront** command moves the selected element over other elements by increasing the selected element’s z-index to Diagram element’s maximum value. The following code illustrates how to execute the **BringToFront** command.
 
@@ -257,7 +258,7 @@ diagram.bringToFront();
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img7.png" %}
 
-### sendToBack Commands
+### sendToBack Command
 
 The **sendToBack** command moves the selected element behind all other elements by setting the selected element’s z-index to zero. The following code illustrates how to execute **sendToBack** command.
 
@@ -270,7 +271,7 @@ diagram.sendToBack();
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img8.png" %}
 
-### moveForward Commands
+### moveForward Command
 
 The **moveForward** command increases the z-index value of the selected element by 1. The following code illustrates how to execute **moveForward** Command.
 
@@ -283,7 +284,7 @@ diagram.moveForward();
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img9.png" %}
 
-### sendBackward Commands
+### sendBackward Command
 
 The **sendBackward** command decreases the z-index value of the selected element by 1. The following code illustrates how to execute **sendBackward** command.
 
@@ -296,7 +297,7 @@ diagram.sendBackward();
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img10.png" %}
 
-## Zoom Commands
+## Zoom Command
 
 **Zoom** feature is used to zoom-in and zoom-out the Diagram view and the zooming performed based on the center of current Diagram view. The following code illustrates how to zoom-in the Diagram.
 
@@ -329,14 +330,14 @@ function ZoomOut() {
 }
 {% endhighlight %}
 
-## Nudge Commands
+## Nudge Command
 
-**Nudge** commands move selected elements on the Diagram toward up, down, left or right by 1 pixel. The **Nudge** command is as follows.
+**Nudge** command move selected elements on the Diagram toward up, down, left or right by 1 pixel. The **Nudge** command is as follows.
 
 <table>
 <tr>
 <td>
-<b>Commands</b></td><td>
+<b>Command</b></td><td>
 <b>Parameter</b></td><td>
 <b>Description</b></td></tr>
 <tr>
@@ -364,16 +365,16 @@ The corresponding arrow keys are used to move the selected elements to up, down,
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img11.png" %}
 
-**Nudge** commands are particularly useful for accurate placement of **Diagram** elements on the **Diagram** as it allows you to move by 1 pixel each time.
+**Nudge** command are particularly useful for accurate placement of **Diagram** elements on the **Diagram** as it allows you to move by 1 pixel each time.
 
-## FitToPage commands
+## FitToPage command
 
 **FitToPage** command helps to fit the Diagram content into the view with respect to either width, height or at the whole.
 
 <table>
 <tr>
 <td>
-<b>Commands</b></td><td>
+<b>Command</b></td><td>
 <b>Parameter</b></td><td>
 <b>Description</b></td></tr>
 <tr>
@@ -448,6 +449,6 @@ Specifies the region based on page settings</td></tr>
 </table>
 
 
-## Undo/Redo
+## Undo/Redo Command
 
 Refer the Link for [Undo/Redo Commands](/js/Diagram/Undo-and-Redo).
