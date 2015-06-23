@@ -83,5 +83,5 @@ You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In contex
 
 The following screenshot illustrates Ribbon with **Contextual Tabs** and **Tab Set**.
 
-{% include image.html url="/js/Ribbon/Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png" Caption="Ribbon control with the contextual tab and tab set"%}
+{% include image.html url="/js/Ribbon/Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png"%}
 
