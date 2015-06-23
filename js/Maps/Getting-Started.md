@@ -15,16 +15,14 @@ This section explains briefly about how to create **Maps** in your application w
 
 You can configure an **Essential JavaScript** Map in simple steps. In this example, you can learn how to configure USA population map with customized appearance and tooltip.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img1.png" Caption="Simple Map"%}
+{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img1.png"%}
 
 ##Add Libraries
 
 To use ejMap, refer the following libraries in **HTML** page. 
 
 * [jQuery](http://jquery.com/) version  1.10.1 and above,
-
 * ej.widgets.all  
-
 * jsrender
 
 You can link these libraries from a [Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
@@ -215,16 +213,14 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 The above code renders a map, with default properties and shape input provided through data in layers.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img2.png" Caption="Map"%}
+{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img2.png"%}
 
 ##Data Binding in Map
 
 The following properties in shape layers are used for binding data in **Map** control.
 
 * dataSource
-
 * shapeDataPath
-
 * shapePropertyPath
 
 ###DataSource
@@ -294,13 +290,13 @@ You can customize the shape’s color by using **fill**, **stroke** and **stroke
 
 
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img3.png" Caption="Customized Map"%}
+{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img3.png"%}
 
 ###Customize Map Appearance by Range
 
 The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The **from** and **to** properties defines the value ranges and the **gradientColors** property defines the equivalent color ranges respective to their value ranges.
 
-> _**Note:**_ The enableGradient property value should be true to apply gradient colors for maps.
+> _**Note:**_ The enableGradient property value should be true to apply gradient colors for maps
 
 
 
@@ -362,7 +358,7 @@ The Range color mapping is used to differentiate the shape’s fill based on its
 
 The following screenshot illustrates a map with gradient color property enable.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img4.png" Caption="Map with gradient color property"%}
+{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img4.png"%}
 
 ##Enable Tooltip
 
@@ -392,7 +388,7 @@ The tooltip is displayed only when **showTooltip** is set to “**True**” in t
 
 The following screenshot illustrates a map control displaying a Tooltip.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img5.png" Caption="Map control with Tooltip"%}
+{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img5.png"%}
 
 ##Legend
 
@@ -402,11 +398,11 @@ A Legend can be made visible by setting the **showLegend** property in legendSet
 
 The legends can be made interactive with an arrow mark indicating the exact range color in the legend, when the mouse hovers on the corresponding shape. You can enable this option by setting **mode** property in **legendSettings** value as _‘_**Interactive’**. The default value of **mode** property is ‘**Default’** to enable the normal legend.
 
-####Title for Interactive Legend
+####Title
 
 Use the **title** property to provide title for interactive legend.
 
-####Label for Interactive Legend
+####Label
 
 You can use **leftLabel** and **rightLabel** property to provide left and right labels for interactive legend.
 
@@ -477,7 +473,7 @@ You can use **leftLabel** and **rightLabel** property to provide left and right 
 
 The following screenshot illustrates a map displaying an interactive legend.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img6.png" Caption="Map with an interactive legend"%}
+{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img6.png"%}
 
 The complete code sample can be found [here](http://www.syncfusion.com/uploads/user/directTrac/General/Getting_Started1888184355.zip).
 

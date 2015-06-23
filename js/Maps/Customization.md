@@ -18,15 +18,10 @@ The **shapeSettings** defines the basic customization settings of shapes in the 
 The important property that makes an impact on shape colors is **autoFill**. This **autoFill** property is available in the **shapeSettings**. 
 
 * **fill** - It is used to set the fill color of the shapes in the map.
-
 * **stroke** - It is used to set the border color of the shape in the map.
-
 * **strokeThickness** - It is used to set the border thickness of the shape in the map.
-
 * **highlightColor** - It is used to set the mouse hover color for shapes in the map.
-
 * **highlightBorderWidth** - It is used to set the mouse hover border width for shapes in the map.
-
 * **selectionColor** - It is used to set the selection color for shapes in the map.
 
 The above properties of **shapeSettings** are applied only when **autoFill** property value is false. By map, **autoFill** property value is false.
@@ -60,26 +55,22 @@ The above properties of **shapeSettings** are applied only when **autoFill** pro
 
 
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img1.png" Caption="Map"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img1.png"%}
 
 ##Color Mapping
 
 The **Color Mapping** support enables the customization of shape colors based on the underlying value of shape received from bounded data.
 
 * **colorValuePath** - It renders the field value that is to be fetched from data for each shape used for determining the shape color.
-
 * **valuePath** - It renders the field value that is to be fetched from data for each shape. This support also provides a tree map-like impact on the map UI. The various types of Color Mapping supported in maps are listed as follows.
-
 * **rangeColorMapping** - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
-
-_Property Table_
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 from</td><td>
@@ -160,18 +151,16 @@ When the underlying object value is 700000, then the fill color of the correspon
 
 When the underlying value is below any of the given sorted range or above the sorted range, then the fill is set from fill.
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img2.png" Caption="Map with fill"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img2.png"%}
 
 * **equalColorMapping** - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
 
-_Property Table_
-
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 value</td><td>
@@ -277,11 +266,11 @@ Here USA election data is considered as input datasource and stored in “electi
 
 {% endhighlight %}
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img3.png" Caption="Map with fill color"%}****
+{% include image.html url="/js/Maps/Customization_images/Customization_img3.png" %}
 
 ##Color Palette
 
-### autoFill
+### AutoFill
 
 When **autoFill** property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
 
@@ -305,9 +294,9 @@ When **autoFill** property is set to true, shapes are filled with default colors
 {% endhighlight %}
 
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img4.png" Caption="Map with color palette property"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img4.png"%}
 
-###colorPalette
+###Color Palette
 
 The **colorPalette** property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
@@ -342,7 +331,7 @@ This property is enabled only when **colorPalette** property value is set to “
 
 
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img5.png" Caption="Map with custom palette"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img5.png"%}
 
 ##Tooltip
 
@@ -370,7 +359,7 @@ The tooltip is displayed only when you set showTooltip to “True” in the shap
 
 
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img6.png" Caption="Map with Tooltip"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img6.png"%}
 
 ###Tooltip Template
 
@@ -415,5 +404,5 @@ The tooltipTemplate property is used for customizing the template for tooltip.
 
 The following screenshot illustrates a map control displaying a Tooltip with template.
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img7.png" Caption="Map with tooltip template"%}
+{% include image.html url="/js/Maps/Customization_images/Customization_img7.png"%}
 

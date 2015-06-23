@@ -19,7 +19,7 @@ In this example, USA shape is used as shape data by utilizing the “United Stat
 
 ..\ Maps_GeoJSON\All Countries with States
 
-You can assign the complete contents in “United States of America.json” file to new **JSON** object. For better understanding, a JS file “**usa.js”** is already created to store **JSON** data in **JSON** object “usMap”.****
+You can assign the complete contents in “United States of America.json” file to new **JSON** object. For better understanding, a JS file “**usa.js”** is already created to store **JSON** data in **JSON** object “usMap”.
 
 **[usa.js]**
 
@@ -33,14 +33,12 @@ You can assign the complete contents in “United States of America.json” file
 
 The **Maps** control supports data binding with the DataSource property in the shape layers. 
 
-###Properties required
+###Properties
 
 The following properties in shape layers is be used for binding datas in **Maps** control,
 
 * dataSource
-
 * shapeDataPath
-
 * shapePropertyPath
 
 ###Data Source
@@ -57,7 +55,7 @@ The **shapePropertyPath** property is similar to the **shapeDataPath** that refe
 
 The datasource is populated with **JSON** data relative to shape data and stored in **JSON** object. The USA population as datasource is used for better understanding. 
 
-The “populationData.js”****file is used to store **JSON** data in **JSON** object “populationData”. 
+The “populationData.js” file is used to store **JSON** data in **JSON** object “populationData”. 
 
 Refer both shape data and datasource as illustrated in the following code example.
 
