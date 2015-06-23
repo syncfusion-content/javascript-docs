@@ -36,7 +36,7 @@ The following screenshot displays the **RangeNavigator** with numeric data.
 
 
 
-{% include image.html url="/js/RangeNavigator/Range-Types_images/Range-Types_img1.png" Caption="RangeNavigator with numeric data."%}
+{% include image.html url="/js/RangeNavigator/Range-Types_images/Range-Types_img1.png" %}
 
 ## DateTime
 
@@ -56,7 +56,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/Range-Types_images/Range-Types_img2.png" Caption="RangeNavigator with DateTime values"%}
+{% include image.html url="/js/RangeNavigator/Range-Types_images/Range-Types_img2.png" %}
 
 ## DateTime Intervals
 
@@ -103,4 +103,4 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/Range-Types_images/Range-Types_img3.png" Caption="Date Time property"%}
+{% include image.html url="/js/RangeNavigator/Range-Types_images/Range-Types_img3.png" %}

@@ -29,7 +29,7 @@ $("#rangecontainer").ejRangeNavigator(
 {% endhighlight %}
 
 
-{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img1.png" Caption="Deferred update"%}
+{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img1.png" %}
 
 
 #### Handle Events
@@ -106,7 +106,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 
 
-{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img2.png/js/RangeNavigator_images_img13.png" Caption="Use of ZoomCoordinates"%}
+{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img2.png/js/RangeNavigator_images_img13.png" %}
 
 #### Thumb Template
 
@@ -145,4 +145,4 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
 
 The following screenshot displays the **RangeNavigator** using thumb template.
 
-{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img3.png" Caption="Thumb template"%}
+{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img3.png" %}
