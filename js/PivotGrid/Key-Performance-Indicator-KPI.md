@@ -23,7 +23,7 @@ The different types of available indicators are as follows:
 
   * KPI Value
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.jpeg" Caption="KPI in OlapGrid"%}
+{% include image.html url="/js/PivotGrid/Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.jpeg" Caption=""%}
 
 The following code example illustrates how to initialize **KPI** element within the **OLAP** Report:
 

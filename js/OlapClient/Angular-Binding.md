@@ -22,15 +22,16 @@ Apply the plugin and property assigning the OlapClient element through the direc
 {% highlight js %}
 
 angular.module('clientCtrl', ['ejangular'])
-            .controller('OlapClientCtrl', function ($scope) {
-                $scope.url = "../wcf/OlapClientService.svc";
-                $scope.title = "OLAP Browser";
-                $scope.gridLayout =  ej.PivotGrid.Layout.NoSummaries;
-                $scope.displaySettings = { mode: ej.olap.OlapClient.DisplayMode.ChartAndGrid,
-                    defaultView: ej.olap.OlapClient.DefaultView.Grid
-                };
-                $scope.layout = ["normal", "noSummaries", "normalTopSummary", "excelLikeLayout"];
-            });
+    .controller('OlapClientCtrl', function($scope) {
+        $scope.url = "../wcf/OlapClientService.svc";
+        $scope.title = "OLAP Browser";
+        $scope.gridLayout = ej.PivotGrid.Layout.NoSummaries;
+        $scope.displaySettings = {
+            mode: ej.olap.OlapClient.DisplayMode.ChartAndGrid,
+            defaultView: ej.olap.OlapClient.DefaultView.Grid
+        };
+        $scope.layout = ["normal", "noSummaries", "normalTopSummary", "excelLikeLayout"];
+    });
 
 {% endhighlight %}
 

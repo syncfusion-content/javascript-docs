@@ -22,10 +22,15 @@ A combination Chart combines two or more series types in a single Chart. But the
 
 {% highlight js %}
 
-$(function () {
+$(function() {
     $("#OlapChart1").ejOlapChart({
-        url: "../wcf/OlapChartService.svc", animation: true, commonSeriesOptions: {
-            type: ej.olap.OlapChart.ChartTypes.Column, tooltip: { visible: true }
+        url: "../wcf/OlapChartService.svc",
+        animation: true,
+        commonSeriesOptions: {
+            type: ej.olap.OlapChart.ChartTypes.Column,
+            tooltip: {
+                visible: true
+            }
         },
         seriesRendering: "onSeriesRenders"
     });
@@ -36,11 +41,10 @@ function onSeriesRenders(args) {
     this.model.series[5].marker.visible = true;
 }
 
-
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Series_images/Series_img1.png" Caption="Combination Chart"%}
+{% include image.html url="/js/OlapChart/Series_images/Series_img1.png" Caption="Combination Chart"%}
 
 ##Series Points Customization
 
@@ -48,19 +52,23 @@ function onSeriesRenders(args) {
 
 {% highlight js %}
  
-$(function () {
+$(function() {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
-        commonSeriesOptions: { type: ej.olap.OlapChart.chartTypes.Column },
+        commonSeriesOptions: {
+            type: ej.olap.OlapChart.chartTypes.Column
+        },
         seriesRendering: "onSeriesRenders"
     });
 });
 
 function onSeriesRenders(args) {
     this.model.series[0].points[0].fill = "aqua";
-    this.model.series[0].points[0].border = { color: "black", width: 2 };
+    this.model.series[0].points[0].border = {
+        color: "black",
+        width: 2
+    };
 }
-
 
 {% endhighlight %}
 

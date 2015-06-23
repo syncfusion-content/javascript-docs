@@ -11,12 +11,6 @@ documentation: ug
 
 This section explains briefly about how to create an **OLAP Chart** in your application with **JavaScript.**
 
-##Control Structure
-
-The following screen shot shows the **OLAP Chart** for **JavaScript**.
-
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Chart"%}
-
 ##Syncfusion OLAP Controls – Architecture
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img2.png" Caption="OLAP Controls Architecture"%}
@@ -43,9 +37,9 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
    * Localized information is also available in cube schema.  
 
-3. **MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap**.**Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
+3.**MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap**.**Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
-4. **OLAP Report:** The **OLAP Report** class in the **Syncfusion.Olap.Base** holds the complete information of each axes such as column, row and slicer. Using **OLAP Report** class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
+4.**OLAP Report:** The **OLAP Report** class in the **Syncfusion.Olap.Base** holds the complete information of each axes such as column, row and slicer. Using **OLAP Report** class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
 
 As the **OLAP Control** is the key for each and every operation, initially you need to serialize the **OLAP Report** and send to client-side in a form of string.
 When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OLAP Report** from the client-side to the service in a de-serialized and updated format.
@@ -106,11 +100,11 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 {% highlight html %}
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
 
 {% endhighlight %}
 
@@ -167,7 +161,7 @@ Add the following code sample inside the **IOlapChartService** interface availab
         
         [OperationContract]
 
-        Dictionary<string, object> **DrillChart**(string action, string drilledSeries, string olapReport, string customObject);
+        Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject);
 
     }
 {% endhighlight %}
@@ -209,7 +203,7 @@ Create the **OlapChartService** class to implement the service methods. Inherit 
 
 {% highlight c# %}
 
-namespace **WebApplication2**
+namespace WebApplication2
 
 {
 
@@ -229,7 +223,7 @@ namespace **WebApplication2**
 
 Add the following methods to the service, which is invoked during any server-side operations performed in **OLAP Chart**.
 
-* Initialize the **OLAP Charts** helper class and **OLAP DataManager** with appropriate connection string. 
+Initialize the **OLAP Charts** helper class and **OLAP DataManager** with appropriate connection string. 
 
 {% highlight c# %}
 
@@ -243,7 +237,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-* Initialize the following service methods.
+Initialize the following service methods.
 
 {% highlight c# %}
 
@@ -267,7 +261,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 //This method provides the required information from the server side while drill up/down operation is performed in OlapChart.
 
-        public Dictionary<string, object> **DrillChart**(string action, string drilledSeries, string olapReport, string customObject)
+        public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject)
 
         {
 
@@ -338,9 +332,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% highlight xml %}
 
 <services>
-      <service name="**WebApplication2.OlapChartService**">
-        <endpoint address="" behaviorConfiguration="**WebApplication2.OlapChartServiceAspNetAjaxBehavior**"
-          binding="webHttpBinding" contract="**WebApplication2.IOlapChartService**" />
+      <service name="WebApplication2.OlapChartService">
+        <endpoint address="" behaviorConfiguration="WebApplication2.OlapChartServiceAspNetAjaxBehavior"
+          binding="webHttpBinding" contract="WebApplication2.IOlapChartService" />
       </service>
 </services>
 
@@ -352,7 +346,7 @@ the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is th
 {% highlight xml %}
 
 <endpointBehaviors>
-        <behavior name="**WebApplication2.OlapChartServiceAspNetAjaxBehavior**">
+        <behavior name="WebApplication2.OlapChartServiceAspNetAjaxBehavior">
           <enableWebScript />
         </behavior>
 </endpointBehaviors>

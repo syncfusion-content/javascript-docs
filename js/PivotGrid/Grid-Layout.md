@@ -27,7 +27,7 @@ The four kinds of Layouts supported by the **PivotGrid** are as follows:
 
 The **Normal** layout is the default Layout of the **PivotGrid** where the summary cells are positioned at the bottom of each parent member and child members appear next to their parent.
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Grid-Layout_images/Grid-Layout_img1.png" Caption="PivotGrid in Normal Layout"%}
+{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img1.png" Caption=""%}
 
 {% highlight js %}
 
@@ -36,12 +36,11 @@ layout: ej.PivotGrid.Layout.Normal });
 
 {% endhighlight %}
 
-
 ##Excel-like Layout
 
 In the **Excel-like** layout, the summary cells are positioned at the bottom of the **Grid** and the child members appear under their parent member with a small indent.
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Grid-Layout_images/Grid-Layout_img2.png" Caption="PivotGrid in Excel-Like Layout"%}
+{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img2.png" Caption=""%}
 
 {% highlight js %}
 
@@ -55,7 +54,7 @@ layout: ej.PivotGrid.Layout.ExcelLikeLayout });
 
 In the **Normal Top Summary** Layout, the summary cells are positioned at the top of each parent member and the child member appears next to their parent.
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Grid-Layout_images/Grid-Layout_img3.png" Caption="PivotGrid in Normal Top Summary Layout"%}
+{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img3.png" Caption=""%}
 
 {% highlight js %}
 
@@ -69,12 +68,14 @@ layout: ej.PivotGrid.Layout.NormalTopSummary });
 
 In **No Summaries** Layout, the summary cells are hidden and the child members appear next to their parent member.
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Grid-Layout_images/Grid-Layout_img4.png" Caption="PivotGrid in No Summaries Layout"%}
+{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img4.png" Caption=""%}
 
 {% highlight js %}
 
-$("#PivotGrid1").ejPivotGrid({ url: "../wcf/PivotGridService.svc", 
-layout: ej.PivotGrid.Layout.NoSummaries });
+$("#PivotGrid1").ejPivotGrid({
+    url: "../wcf/PivotGridService.svc",
+    layout: ej.PivotGrid.Layout.NoSummaries
+});
 
 {% endhighlight %}
 

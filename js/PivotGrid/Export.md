@@ -28,22 +28,29 @@ pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(),
 {% highlight html %}
 
 <button id="Button1">Export Grid</button>
-<div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"> </div> 
+<div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"> </div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-$(function () {
-     $("#PivotGrid1").ejPivotGrid({ url: "../wcf/PivotGridService.svc"});
-     $("#Button1").ejButton({size: "normal",roundedCorner: true,click: "btnClick"});
+$(function() {
+    $("#PivotGrid1").ejPivotGrid({
+        url: "../wcf/PivotGridService.svc"
+    });
+    $("#Button1").ejButton({
+        size: "normal",
+        roundedCorner: true,
+        click: "btnClick"
+    });
 });
+
 function btnClick(e) {
-      pivotGridObj = $('#PivotGrid').data("ejPivotGrid");
-      pivotGridObj.exportToExcel();
+    pivotGridObj = $('#PivotGrid').data("ejPivotGrid");
+    pivotGridObj.exportToExcel();
 }
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Export_images/Export_img1.png" Caption="Exported Excel Worksheet"%}
+{% include image.html url="/js/PivotGrid/Export_images/Export_img1.png" Caption=""%}
 

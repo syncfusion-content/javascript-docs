@@ -17,9 +17,9 @@ The following table lists the default English **localization User Interface** ba
 
 <table>
 <tr>
-<td>
-<b>Keywords</b></td><td>
-<b>Values</b></td></tr>
+<th>
+Keywords</th><th>
+Values</th></tr>
 <tr>
 <td>
 Measure</td><td>
@@ -78,29 +78,36 @@ The following code example shows how to localize **OlapChart’s User Interface*
 
 {% highlight js %}
  
-    ej.olap.OlapChart.locale["fr-FR"] = {
-        Measure: "Mesurer ",
-        Row: "Rangée",
-        Column: "Colonne",
-        Value: "Valeur",
-        Expand: "Développer",
-        Collapse: "Effondrement",
-        Exit: "Quitter",
-        MDXqueryExecutionFailed: "L'exécution de la requête MDX pas",
-        PreparingAndExecutingMDXquery: "La préparation et l'exécution de la requête MDX",
-        MDXqueryExecutedSuccessfully: "MDX requête exécutée avec succès",
-        RenderingStarted: "Rendu commencé",
-        RenderingSucceeded: "Rendu réussi",
-        RenderingFailed: "Rendant pas"
-    };
-    $(function () {
-        $("#OlapChart1").ejOlapChart({
-            url: "../wcf/OlapChartService.svc",
-            commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Column },
-            showTooltip: true, animation: true,
-            locale: "fr-FR", legend: { visible: true, rowCount: 3 }
-        });
+ej.olap.OlapChart.locale["fr-FR"] = {
+    Measure: "Mesurer ",
+    Row: "Rangée",
+    Column: "Colonne",
+    Value: "Valeur",
+    Expand: "Développer",
+    Collapse: "Effondrement",
+    Exit: "Quitter",
+    MDXqueryExecutionFailed: "L'exécution de la requête MDX pas",
+    PreparingAndExecutingMDXquery: "La préparation et l'exécution de la requête MDX",
+    MDXqueryExecutedSuccessfully: "MDX requête exécutée avec succès",
+    RenderingStarted: "Rendu commencé",
+    RenderingSucceeded: "Rendu réussi",
+    RenderingFailed: "Rendant pas"
+};
+$(function() {
+    $("#OlapChart1").ejOlapChart({
+        url: "../wcf/OlapChartService.svc",
+        commonSeriesOptions: {
+            type: ej.olap.OlapChart.ChartTypes.Column
+        },
+        showTooltip: true,
+        animation: true,
+        locale: "fr-FR",
+        legend: {
+            visible: true,
+            rowCount: 3
+        }
     });
+});
 
 {% endhighlight %}
 
@@ -117,7 +124,7 @@ To apply control side localization, refer the following code example:
 {% highlight html %}
 
 ej.olap.OlapChart.locale["zh-CN"] = {
-//Corresponding keyword values needs to be set here.
+    //Corresponding keyword values needs to be set here.
 }
 
 
@@ -140,5 +147,5 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The output for the **Localized OlapChart** is as follows:
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png" Caption="Localized OlapChart"%}
+{% include image.html url="/js/OlapChart/Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png" Caption="Localized OlapChart"%}
 

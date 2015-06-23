@@ -22,25 +22,40 @@ Apply the plugin and property assigning the OlapChart element through the direct
 {% highlight js %}
 
 angular.module('chartCtrl', ['ejangular'])
-            .controller('OlapChartCtrl', function ($scope) {
-                $scope.url = "../wcf/OlapChartService.svc";
-                $scope.title = "OLAP Chart in Essential JS";
-                $scope.isResponsive = true;
-                $scope.ctype = ej.olap.OlapChart.ChartTypes.Column;
-                $scope.showTooltip = true;
-                $scope.size = { height: "460px", width: "650px" };
-                $scope.primaryXAxis = { title: { text: "Fiscal Year" }, labelRotation: 0 };
-                $scope.primaryYAxis = { title: { text: "Customer Count"} };
-                $scope.legend = { visible: true, rowCount: 2 };
-                $scope.list = ["column", "line", "spline", "area", "bar", "pie", "pyramid", "stepline", "splinearea", "steparea",
-                "stackingarea", "stackingcolumn", "stackingbar", "funnel"];
-            });
-
+    .controller('OlapChartCtrl', function($scope) {
+        $scope.url = "../wcf/OlapChartService.svc";
+        $scope.title = "OLAP Chart in Essential JS";
+        $scope.isResponsive = true;
+        $scope.ctype = ej.olap.OlapChart.ChartTypes.Column;
+        $scope.showTooltip = true;
+        $scope.size = {
+            height: "460px",
+            width: "650px"
+        };
+        $scope.primaryXAxis = {
+            title: {
+                text: "Fiscal Year"
+            },
+            labelRotation: 0
+        };
+        $scope.primaryYAxis = {
+            title: {
+                text: "Customer Count"
+            }
+        };
+        $scope.legend = {
+            visible: true,
+            rowCount: 2
+        };
+        $scope.list = ["column", "line", "spline", "area", "bar", "pie", "pyramid", "stepline", "splinearea", "steparea",
+            "stackingarea", "stackingcolumn", "stackingbar", "funnel"
+        ];
+    });
 {% endhighlight %}
 
 {% highlight html %}
 
-<div id="OlapChart" ej-olapchart e-url="url" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive ="isResponsive" e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip" e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme' />
+<div id="OlapChart" ej-olapchart e-url="url" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive="isResponsive" e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip" e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme' />
 
 {% endhighlight %}
 

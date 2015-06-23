@@ -17,7 +17,19 @@ The following code example illustrates how to bind data to the OlapClient throug
 
 {% highlight js %}
 
-var layouts = [{ text: "Normal", value: "normal" }, { text: "NoSummaries", value: "nosummaries" }, { text: "NormalTopSummary", value: "normaltopsummary" }, { text: "ExcelLikeLayout", value: "excelLikeLayout" }];
+var layouts = [{
+    text: "Normal",
+    value: "normal"
+}, {
+    text: "NoSummaries",
+    value: "nosummaries"
+}, {
+    text: "NormalTopSummary",
+    value: "normaltopsummary"
+}, {
+    text: "ExcelLikeLayout",
+    value: "excelLikeLayout"
+}];
 var dispOptions = {
     mode: ej.olap.OlapClient.DisplayMode.ChartAndGrid,
     defaultView: ej.olap.OlapClient.DefaultView.Grid
@@ -30,8 +42,8 @@ window.viewModel = {
     layout: ko.observable(layouts),
     width: ko.observable("100px")
 };
-$(function () {
-    ko.applyBindings(viewModel);            
+$(function() {
+    ko.applyBindings(viewModel);
 });
 
 {% endhighlight %}
@@ -39,13 +51,13 @@ $(function () {
 {% highlight html %}
 
 <div id="OlapClient" data-bind="ejOlapClient: { url: url, title: title, gridLayout: gridLayout, displaySettings: displaySettings, chartLoad: 'setChartProperties' }" />
-    
+
 <div>
-     <input type="text" id="gLayout" name="name" data-bind="ejDropDownList: {dataSource: layout, value: gridLayout, width: width}" />
+    <input type="text" id="gLayout" name="name" data-bind="ejDropDownList: {dataSource: layout, value: gridLayout, width: width}" />
 </div>
 
 <div>
-     <textarea type="text" name="slide" value="" data-bind="value: title"></textarea>
+    <textarea type="text" name="slide" value="" data-bind="value: title"></textarea>
 </div>
 
 {% endhighlight %}

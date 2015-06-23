@@ -21,9 +21,9 @@ _Table: Components Table_
 
 <table>
 <tr>
-<td>
-<b>Component</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Component</th><th>
+Description</th></tr>
 <tr>
 <td>
 Report List</td><td>
@@ -60,9 +60,9 @@ _Table: List of nodes_
 
 <table>
 <tr>
-<td>
-<b>Type Of Nodes</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Type Of Nodes</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cube</td><td>
@@ -131,8 +131,8 @@ _Table: Symbolic Representation of the Nodes inside Cube Dimension Browser_
 <table>
 <tr>
 <th>
-<b>Icon</b></th><th>
-<b>Name</b></th></tr>
+Icon</th><th>
+Name</th></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img4.png" alt="" width="25pt" height="25pt" Caption=""%}</td><td>
@@ -301,8 +301,8 @@ _Table: Options Table_
 <table>
 <tr>
 <th>
-<b>Option</b></th><th>
-<b>Description</b></th></tr>
+Option</th><th>
+Description</th></tr>
 <tr>
 <td>
 New Report</td><td>

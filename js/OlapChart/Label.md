@@ -18,16 +18,31 @@ Font style and color of the label text is customized with the help of **font** a
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-        url: "../wcf/OlapChartService.svc",
-        primaryXAxis: { font: { fontFamily: "Algerian", fontWeight: "lighter", fontStyle: "Italic", size: "14px", color: "red" } },
-        primaryYAxis: {font: { fontFamily: "Algerian", fontWeight: "lighter", fontStyle: "Italic", size: "14px", color: "red" },
+    url: "../wcf/OlapChartService.svc",
+    primaryXAxis: {
+        font: {
+            fontFamily: "Algerian",
+            fontWeight: "lighter",
+            fontStyle: "Italic",
+            size: "14px",
+            color: "red"
+        }
+    },
+    primaryYAxis: {
+        font: {
+            fontFamily: "Algerian",
+            fontWeight: "lighter",
+            fontStyle: "Italic",
+            size: "14px",
+            color: "red"
         },
- });
+    },
+});
 
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Label_images/Label_img1.png" Caption="Label Text Customization "%}
+{% include image.html url="/js/OlapChart/Label_images/Label_img1.png" Caption="Label Text Customization "%}
 
 ##Rotating Axis Labels
 
@@ -35,13 +50,16 @@ You can rotate the labels to desired angle. The axis labels are rendered in the 
 
 {% highlight js %}
 
-$("#OlapChart1").ejOlapChart({ url: "../wcf/OlapChartService.svc", 
-primaryXAxis: { labelRotation: 45 }
+$("#OlapChart1").ejOlapChart({
+    url: "../wcf/OlapChartService.svc",
+    primaryXAxis: {
+        labelRotation: 45
+    }
 });
 
 
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Label_images/Label_img2.png" Caption="Label Rotation"%}
+{% include image.html url="/js/OlapChart/Label_images/Label_img2.png" Caption="Label Rotation"%}
 

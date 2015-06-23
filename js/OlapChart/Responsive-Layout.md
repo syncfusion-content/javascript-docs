@@ -13,18 +13,31 @@ documentation: ug
 
 {% highlight js %}
 
-$(function () {
-        $("#OlapChart").ejOlapChart({ url: "../wcf/OlapChartService.svc",
-        animation: true, **isResponsive:true**, type:ej.olap.OlapChart.ChartTypes.Column, commonSeriesOptions: {  tooltip: { visible: true} }, size: { height: "460px", width: "100%" },load: "loadTheme"
-        });
+$(function() {
+            $("#OlapChart").ejOlapChart({
+                url: "../wcf/OlapChartService.svc",
+                animation: true,
+                isResponsive: true,
+                type: ej.olap.OlapChart.ChartTypes.Column,
+                commonSeriesOptions: {
+                    tooltip: {
+                        visible: true
+                    }
+                },
+                size: {
+                    height: "460px",
+                    width: "100%"
+                },
+                load: "loadTheme"
+            });
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View"%}
+{% include image.html url="/js/OlapChart/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View"%}
 
 <br/>
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View"%}
+{% include image.html url="/js/OlapChart/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View"%}
 
 
 

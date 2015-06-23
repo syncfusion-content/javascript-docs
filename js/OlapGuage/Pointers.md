@@ -25,73 +25,101 @@ You can set the **pointer** to Needle type by setting “**pointerType**”  pro
 
 {% highlight js %}
 
-$(function () {
-$("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
-                            backgroundColor: "transparent", 
-                            scales: [{
-                                showRanges: true, 
-                                radius: 150, showScaleBar: true, size: 1,
-                                border: {
-                                    width: 0.5
-                                },
-                                showIndicators: true, showLabels: true,
-                                pointers: [{
-                                    **type: "needle",**
-                                    showBackNeedle: true,
-                                    backNeedleLength: 20,
-                                    length: 120,
-                                    width: 7
-                                },
-                        {
-**type: "marker",**
-                            markerType: "diamond",
-                            distanceFromScale: 5,
-                            placement: "center",
-                            backgroundColor: "#29A4D9",
-                            length: 25,
-                            width: 15
-                        }],
-                                ticks: [{
-                                    type: "major",
-                                    distanceFromScale: 2,
-                                    height: 16,
-                                    width: 1, color: "#8c8c8c"
-                                },
-                                {
-                                    type: "minor",
-                                    height: 6,
-                                    width: 1,
-                                    distanceFromScale: 2,
-                                    color: "#8c8c8c"
-                                }],
-                                labels: [{
-                                    color: "#8c8c8c"
-                                }],
-                                ranges: [{
-                                    distanceFromScale: -5,
-                                    backgroundColor: "#fc0606",
-                                    border: { color: "#fc0606" }
-                                }, {
-                                    distanceFromScale: -5
-                                }],
-                                customLabels: [{
-                                    position: { x: 180, y: 290 },
-                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }, {
-                                    position: { x: 180, y: 320 },
-                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }, {
-                                    position: { x: 180, y: 150 },
-                                    font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }]
-                            }]
-                        });
-                    });
+$(function() {
+    $("#OlapGauge1").ejOlapGauge({
+        url: "../wcf/OlapGaugeService.svc",
+        enableTooltip: true,
+        backgroundColor: "transparent",
+        scales: [{
+            showRanges: true,
+            radius: 150,
+            showScaleBar: true,
+            size: 1,
+            border: {
+                width: 0.5
+            },
+            showIndicators: true,
+            showLabels: true,
+            pointers: [{ ** type: "needle", **
+                    showBackNeedle: true,
+                    backNeedleLength: 20,
+                    length: 120,
+                    width: 7
+            }, { ** type: "marker", **
+                    markerType: "diamond",
+                    distanceFromScale: 5,
+                    placement: "center",
+                    backgroundColor: "#29A4D9",
+                    length: 25,
+                    width: 15
+            }],
+            ticks: [{
+                type: "major",
+                distanceFromScale: 2,
+                height: 16,
+                width: 1,
+                color: "#8c8c8c"
+            }, {
+                type: "minor",
+                height: 6,
+                width: 1,
+                distanceFromScale: 2,
+                color: "#8c8c8c"
+            }],
+            labels: [{
+                color: "#8c8c8c"
+            }],
+            ranges: [{
+                distanceFromScale: -5,
+                backgroundColor: "#fc0606",
+                border: {
+                    color: "#fc0606"
+                }
+            }, {
+                distanceFromScale: -5
+            }],
+            customLabels: [{
+                position: {
+                    x: 180,
+                    y: 290
+                },
+                font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }, {
+                position: {
+                    x: 180,
+                    y: 320
+                },
+                font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }, {
+                position: {
+                    x: 180,
+                    y: 150
+                },
+                font: {
+                    size: "12px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }]
+        }]
+    });
+});
 
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img1.png" Caption="Pointer Type – Needle & Marker"%}
+{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img1.png" Caption="Pointer Type – Needle & Marker"%}
 
 ## Length and Width Customization
 
@@ -99,73 +127,102 @@ You can customize the **Pointer** length and width using the “**pointerLength*
 
 {% highlight js %}
 
-$(function () {
-$("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
-                            backgroundColor: "transparent", 
-                            scales: [{
-                                showRanges: true, 
-                                radius: 150, showScaleBar: true, size: 1,
-                                border: {
-                                    width: 0.5
-                                },
-                                showIndicators: true, showLabels: true,
-                                pointers: [{
-                                    type: "needle",
-                                    showBackNeedle: true,
-                                    backNeedleLength: 20,
-**length: 60,**
-                                    **width: 9**
-                                },
-                        {
-                            type: "marker",
-                            markerType: "diamond",
-                            distanceFromScale: 5,
-                            placement: "center",
-                            backgroundColor: "#29A4D9",
-                            length: 25,
-                            width: 15
-                        }],
-                                ticks: [{
-                                    type: "major",
-                                    distanceFromScale: 2,
-                                    height: 16,
-                                    width: 1, color: "#8c8c8c"
-                                },
-                                {
-                                    type: "minor",
-                                    height: 6,
-                                    width: 1,
-                                    distanceFromScale: 2,
-                                    color: "#8c8c8c"
-                                }],
-                                labels: [{
-                                    color: "#8c8c8c"
-                                }],
-                                ranges: [{
-                                    distanceFromScale: -5,
-                                    backgroundColor: "#fc0606",
-                                    border: { color: "#fc0606" }
-                                }, {
-                                    distanceFromScale: -5
-                                }],
-                                customLabels: [{
-                                    position: { x: 180, y: 290 },
-                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }, {
-                                    position: { x: 180, y: 320 },
-                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }, {
-                                    position: { x: 180, y: 150 },
-                                    font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }]
-                            }]
-                        });
-                    });
-
+$(function() {
+    $("#OlapGauge1").ejOlapGauge({
+        url: "../wcf/OlapGaugeService.svc",
+        enableTooltip: true,
+        backgroundColor: "transparent",
+        scales: [{
+            showRanges: true,
+            radius: 150,
+            showScaleBar: true,
+            size: 1,
+            border: {
+                width: 0.5
+            },
+            showIndicators: true,
+            showLabels: true,
+            pointers: [{
+                type: "needle",
+                showBackNeedle: true,
+                backNeedleLength: 20,
+                ** length: 60,**
+                ** width: 9 **
+            }, {
+                type: "marker",
+                markerType: "diamond",
+                distanceFromScale: 5,
+                placement: "center",
+                backgroundColor: "#29A4D9",
+                length: 25,
+                width: 15
+            }],
+            ticks: [{
+                type: "major",
+                distanceFromScale: 2,
+                height: 16,
+                width: 1,
+                color: "#8c8c8c"
+            }, {
+                type: "minor",
+                height: 6,
+                width: 1,
+                distanceFromScale: 2,
+                color: "#8c8c8c"
+            }],
+            labels: [{
+                color: "#8c8c8c"
+            }],
+            ranges: [{
+                distanceFromScale: -5,
+                backgroundColor: "#fc0606",
+                border: {
+                    color: "#fc0606"
+                }
+            }, {
+                distanceFromScale: -5
+            }],
+            customLabels: [{
+                position: {
+                    x: 180,
+                    y: 290
+                },
+                font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }, {
+                position: {
+                    x: 180,
+                    y: 320
+                },
+                font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }, {
+                position: {
+                    x: 180,
+                    y: 150
+                },
+                font: {
+                    size: "12px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }]
+        }]
+    });
+});
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img2.png" Caption="Length and Width Customization"%}
+{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img2.png" Caption="Length and Width Customization"%}
 
 ## Background Customization 
 
@@ -173,74 +230,103 @@ You can customize the **Pointer background** color using “**backgroundcolor**�
 
 {% highlight js %}
 
-$(function () {
-$("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
-         backgroundColor: "transparent", 
-         scales: [{
-             showRanges: true, 
-             radius: 150, showScaleBar: true, size: 1,
-             border: {
-                 width: 0.5
-             },
-             showIndicators: true, showLabels: true,
-             pointers: [{
-                 type: "needle",
-                 showBackNeedle: true,
-                 backNeedleLength: 20,
-**backgroundColor:"red",**
-                 length: 120,
-                 width: 9
-             },
-     {
-         type: "marker",
-         markerType: "diamond",
-         distanceFromScale: 5,
-         placement: "center",
-         backgroundColor: "#29A4D9",
-         length: 25,
-         width: 15
-     }],
-             ticks: [{
-                 type: "major",
-                 distanceFromScale: 2,
-                 height: 16,
-                 width: 1, color: "#8c8c8c"
-             },
-             {
-                 type: "minor",
-                 height: 6,
-                 width: 1,
-                 distanceFromScale: 2,
-                 color: "#8c8c8c"
-             }],
-             labels: [{
-                 color: "#8c8c8c"
-             }],
-             ranges: [{
-                 distanceFromScale: -5,
-                 backgroundColor: "#fc0606",
-                 border: { color: "#fc0606" }
-             }, {
-                 distanceFromScale: -5
-             }],
-             customLabels: [{
-                 position: { x: 180, y: 290 },
-                 font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-             }, {
-                 position: { x: 180, y: 320 },
-                 font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-             }, {
-                 position: { x: 180, y: 150 },
-                 font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-             }]
-         }]
-     });
- });
-
+$(function() {
+    $("#OlapGauge1").ejOlapGauge({
+        url: "../wcf/OlapGaugeService.svc",
+        enableTooltip: true,
+        backgroundColor: "transparent",
+        scales: [{
+            showRanges: true,
+            radius: 150,
+            showScaleBar: true,
+            size: 1,
+            border: {
+                width: 0.5
+            },
+            showIndicators: true,
+            showLabels: true,
+            pointers: [{
+                type: "needle",
+                showBackNeedle: true,
+                backNeedleLength: 20,
+                ** backgroundColor: "red",**
+                length: 120,
+                width: 9
+            }, {
+                type: "marker",
+                markerType: "diamond",
+                distanceFromScale: 5,
+                placement: "center",
+                backgroundColor: "#29A4D9",
+                length: 25,
+                width: 15
+            }],
+            ticks: [{
+                type: "major",
+                distanceFromScale: 2,
+                height: 16,
+                width: 1,
+                color: "#8c8c8c"
+            }, {
+                type: "minor",
+                height: 6,
+                width: 1,
+                distanceFromScale: 2,
+                color: "#8c8c8c"
+            }],
+            labels: [{
+                color: "#8c8c8c"
+            }],
+            ranges: [{
+                distanceFromScale: -5,
+                backgroundColor: "#fc0606",
+                border: {
+                    color: "#fc0606"
+                }
+            }, {
+                distanceFromScale: -5
+            }],
+            customLabels: [{
+                position: {
+                    x: 180,
+                    y: 290
+                },
+                font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }, {
+                position: {
+                    x: 180,
+                    y: 320
+                },
+                font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }, {
+                position: {
+                    x: 180,
+                    y: 150
+                },
+                font: {
+                    size: "12px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }]
+        }]
+    });
+});
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img3.png" Caption="Background Color Customization"%}
+{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img3.png" Caption="Background Color Customization"%}
 
 ## Shapes Customization
 
@@ -248,72 +334,101 @@ You can customize **Pointer shapes** using the “**needlestyle**” property.
 
 {% highlight js %}
 
-$(function () {
-$("#OlapGauge1").ejOlapGauge({ url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
-                            backgroundColor: "transparent", 
-                            scales: [{
-                                showRanges: true, 
-                                radius: 150, showScaleBar: true, size: 1,
-                                border: {
-                                    width: 0.5
-                                },
-                                showIndicators: true, showLabels: true,
-                                pointers: [{
-                                    type: "needle",
-                                    showBackNeedle: true,
-                                    backNeedleLength: 20,
-**needleType: "rectangle",**
-                                    length: 120,
-                                    width: 9
-                                },
-                        {
-                            type: "marker",
-                            markerType: "diamond",
-                            distanceFromScale: 5,
-                            placement: "center",
-                            backgroundColor: "#29A4D9",
-                            length: 25,
-                            width: 15
-                        }],
-                                ticks: [{
-                                    type: "major",
-                                    distanceFromScale: 2,
-                                    height: 16,
-                                    width: 1, color: "#8c8c8c"
-                                },
-                                {
-                                    type: "minor",
-                                    height: 6,
-                                    width: 1,
-                                    distanceFromScale: 2,
-                                    color: "#8c8c8c"
-                                }],
-                                labels: [{
-                                    color: "#8c8c8c"
-                                }],
-                                ranges: [{
-                                    distanceFromScale: -5,
-                                    backgroundColor: "#fc0606",
-                                    border: { color: "#fc0606" }
-                                }, {
-                                    distanceFromScale: -5
-                                }],
-                                customLabels: [{
-                                    position: { x: 180, y: 290 },
-                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }, {
-                                    position: { x: 180, y: 320 },
-                                    font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }, {
-                                    position: { x: 180, y: 150 },
-                                    font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                                }]
-                            }]
-                        });
-                    });
-
+$(function() {
+    $("#OlapGauge1").ejOlapGauge({
+        url: "../wcf/OlapGaugeService.svc",
+        enableTooltip: true,
+        backgroundColor: "transparent",
+        scales: [{
+            showRanges: true,
+            radius: 150,
+            showScaleBar: true,
+            size: 1,
+            border: {
+                width: 0.5
+            },
+            showIndicators: true,
+            showLabels: true,
+            pointers: [{
+                type: "needle",
+                showBackNeedle: true,
+                backNeedleLength: 20,
+                needleType: "rectangle",
+                length: 120,
+                width: 9
+            }, {
+                type: "marker",
+                markerType: "diamond",
+                distanceFromScale: 5,
+                placement: "center",
+                backgroundColor: "#29A4D9",
+                length: 25,
+                width: 15
+            }],
+            ticks: [{
+                type: "major",
+                distanceFromScale: 2,
+                height: 16,
+                width: 1,
+                color: "#8c8c8c"
+            }, {
+                type: "minor",
+                height: 6,
+                width: 1,
+                distanceFromScale: 2,
+                color: "#8c8c8c"
+            }],
+            labels: [{
+                color: "#8c8c8c"
+            }],
+            ranges: [{
+                distanceFromScale: -5,
+                backgroundColor: "#fc0606",
+                border: {
+                    color: "#fc0606"
+                }
+            }, {
+                distanceFromScale: -5
+            }],
+            customLabels: [{
+                position: {
+                    x: 180,
+                    y: 290
+                },
+                font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }, {
+                position: {
+                    x: 180,
+                    y: 320
+                },
+                font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }, {
+                position: {
+                    x: 180,
+                    y: 150
+                },
+                font: {
+                    size: "12px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                },
+                color: "#666666"
+            }]
+        }]
+    });
+});
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Concepts-and-Features/Pointers_images/Pointers_img4.png" Caption="Shape Customization"%}
+{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img4.png" Caption="Shape Customization"%}
 
