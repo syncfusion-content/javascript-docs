@@ -44,5 +44,5 @@ documentation: ug
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Enable-Persistence_images/Enable-Persistence_img1.png" Caption="EnablePersistence."%}
+{% include image.html url="/js/Grid/Enable-Persistence_images/Enable-Persistence_img1.png"%}
 

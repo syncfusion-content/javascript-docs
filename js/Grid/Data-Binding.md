@@ -46,7 +46,7 @@ documentation: ug
 
 Result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="Binding Grid to JSON data"%}
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img1.png"%}
 
 ## Remote data
 
@@ -76,7 +76,7 @@ Result of the above code example.
 
 The following output is the result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption="OData binding"%}
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img2.png"%}
 
 > _**Note**: For information about DataManager with Grid check DataAdaptors concept._
 
@@ -111,7 +111,7 @@ Through this **load at once** technique, you can load all remote data from the s
 
 The following output is the result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img3.png" Caption="Load at once"%}
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img3.png"%}
 
 ### Load on demand
 
@@ -140,11 +140,11 @@ The following output is the result of the above code example.
 
 The following screenshot is the result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img4.png" Caption="Load on demand	"%}
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img4.png"%}
 
 If you have developer tools, you can capture network transfer to check **Grid** consumed data. The following screenshot shows demanded data being loaded in **Grid**.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img5.png" Caption="Demanded data"%}
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img5.png"%}
 
 ### Cross domain
 
@@ -177,7 +177,7 @@ ejGrid can use cross domain data service with the help of DataManager. The given
 
 The following screenshot is the result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img6.png" Caption="Cross domain"%}
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img6.png"%}
 
 ### HTTP additional parameters
 
@@ -210,7 +210,7 @@ In this section, you can learn how to customize or add an extra parameter for **
 
 The following screenshot is the result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img7.png" Caption="HTTP parameter"%}
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img7.png"%}
 
 ### Supported DataTypes
 
@@ -332,5 +332,5 @@ The following screenshot is the result of the above code example.
 
 The following screenshot is the result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Data-Binding_images/Data-Binding_img8.png" Caption="HTML binding"%}
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img8.png"%}
 

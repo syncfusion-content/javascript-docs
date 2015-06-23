@@ -51,5 +51,5 @@ documentation: ug
 
 
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Hierarchy-Grid_images/Hierarchy-Grid_img1.png" Caption="Hierarchy Grid"%}
+{% include image.html url="/js/Grid/Hierarchy-Grid_images/Hierarchy-Grid_img1.png"%}
 

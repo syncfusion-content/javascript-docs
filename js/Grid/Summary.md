@@ -62,7 +62,7 @@ There are some default summary types available for basic summary formula. The fo
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img1.png" Caption="Summary"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img1.png"%}
 
 ## Custom Summary by String
 
@@ -106,7 +106,7 @@ This property helps you to create custom summary formula for summary. The follow
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img2.png" Caption="Custom Summary"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img2.png"%}
 
 ## Custom Summary by Function
 
@@ -151,7 +151,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img3.png" Caption="Custom Summary by Function"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img3.png" Caption="Custom Summary by Function"%}
 
 ## Group Summary
 
@@ -194,7 +194,7 @@ This property helps you to enable the group summary column in **Grid**. The foll
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img4.png" Caption="Group Summary"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img4.png"%}
 
 ## Caption Summary
 
@@ -232,5 +232,5 @@ This property is used to create Caption Summary column in **Grid**. **showCaptio
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img5.png" Caption="Caption Summary"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img5.png"%}
 

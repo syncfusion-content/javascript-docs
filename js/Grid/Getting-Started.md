@@ -11,11 +11,11 @@ documentation: ug
 
 This section explains briefly about how to create a **Grid** in your application with **JavaScript**.
 
-## Create your first Grid in JavaScript
+## Initializing Grid
 
 The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. You can create a **Grid** with a highly customizable look and feel. You can use the **Grid control** to generate complex **Grid** based reports with rich formatting. In the following example, you can take a look at how the transaction of a product is managed, analysis of a particular sale using filtering and grouping feature. This section explains you about adding group, filter and paging of sales products.
 
-{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img1.png" Caption="Managed sales data"%}
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img1.png"%}
 
 
    Create an **HTML** file and add the following references to the required libraries.
@@ -90,9 +90,9 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
  You can execute the above code example to render an empty **ejGrid** with specified column headers, where the data is specified.
 
-{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img2.png" Caption="Empty grid                        "%}
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img2.png"%}
 
-**Set Sales Data**
+##Set Sales Data
 
 You can pass the data to the **Grid**  either  locally or remotly. Assign the web service **URL** link to the **url** property of the **ejDataManager.** The **crossDomain** property **is enabled to retrieve data from another domain** and **offline** property allows you to load data on time from server.
 
@@ -127,9 +127,9 @@ You can pass the data to the **Grid**  either  locally or remotly. Assign the we
 
 The following screenshot illustrates a **Grid** with sales data.
 
-{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img3.png" Caption="Management of sales data                     "%}
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img3.png"%}
 
-**Enable Paging**
+##Enable Paging
 
 **Paging** feature in **Grid** provides complete navigation support to easily switch between the pages, using the page bar available at the bottom of the **Grid** control. To enable **paging**, use **allowPaging** property of **Grid** as follows.
 
@@ -166,9 +166,9 @@ The following screenshot illustrates a **Grid** with sales data.
 
 Use **allowPaging** to switch between pages.
 
-{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img4.png" Caption="Sales data with paging"%}
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img4.png"%}
 
-**Enable Filtering**
+##Enable Filtering
 
 **Filtering** feature in **Grid** is used**to facilitate the extraction of a subset of records that meets certain criteria**. You can apply **Filter** to one or more columns. This feature is used to filter particular sales data to review details.
 
@@ -207,9 +207,9 @@ To enable filtering, use **allowFiltering** property of **Grid** as follows.
 
 The following screenshot illustrates how to filter the sales data.
 
-{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img5.png" Caption="Filtered sales data"%}
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img5.png"%}
 
-**Enable Grouping**
+##Enable Grouping
 
 The **Grouping** feature in **Grid** is used to consolidate **Grid** data into groups. **Grouping** allows the categorization of records based on specified columns. You can easily group a particular column by simply dragging the column to the upper portion of the **Grid**. The **Grid** data is automatically grouped when you drop a particular column.  In this example, **Grouping** feature is used to analyze the shipment details of products.
 
@@ -250,9 +250,9 @@ $(function () {
 
 The following screenshot shows the analysis of sales data by grouping unit stock.
 
-{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img6.png" Caption="Grouped by ShipName"%}
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img6.png"%}
 
-**Enable Group Summary**
+##Enable Group Summary
 
 **Enable Group Summary** property allows you to summarize the **Grid** data into groups. **Grouping** allows the categorization of records based on specified columns. **Group summary** summarizes the data present in the group. In this example, Group summary is used to summarize freight data of grouped ship name category.
 
@@ -305,5 +305,5 @@ The following code example shows the option to enable group summary.
 
 The following screenshot shows the group summary.
 
-{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img7.png" Caption="Group summary"%}
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img7.png"%}
 

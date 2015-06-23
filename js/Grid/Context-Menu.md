@@ -76,19 +76,19 @@ The following output is displayed as a result of the above code example.
 
 **Content**
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Context-Menu_images/Context-Menu_img1.png" Caption=""%}
+{% include image.html url="/js/Grid/Context-Menu_images/Context-Menu_img1.png" Caption=""%}
 
 _Context Menu in content_
 
 **Header**
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Context-Menu_images/Context-Menu_img2.png" Caption=""%}
+{% include image.html url="/js/Grid/Context-Menu_images/Context-Menu_img2.png" Caption=""%}
 
 _Context Menu in Header_
 
 **Footer**
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Context-Menu_images/Context-Menu_img3.png" Caption=""%}
+{% include image.html url="/js/Grid/Context-Menu_images/Context-Menu_img3.png" Caption=""%}
 
 _Context Menu in Footer_
 

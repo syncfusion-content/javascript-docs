@@ -55,7 +55,7 @@ Filter menus are a good **UI** based filtering option. It visibly denotes filter
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img1.png" Caption="Filter menu"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img1.png"%}
 
 ## Filter Bar
 
@@ -118,7 +118,7 @@ Boolean filter bar works with either <b>true</b> or <b>false</b>.</td></tr>
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img2.png" Caption="Filter Bar"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img2.png"%}
 
 ## Excel styled menu
 
@@ -132,7 +132,7 @@ The Checkbox list is available in the menu that contains the possible filter val
 
 The output of the excel like filterin as shown as below.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img3.png" Caption="Checkbox list"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img3.png"%}
 
 A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the **maxFilterChoices** property of the **filterSettings**. 
 
@@ -142,9 +142,9 @@ The Submenu items in the filter menu provide the advanced filtering options for 
 
 The ourput of the custom filter menu was showed in below screenshot.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img4.png" Caption="Advanced Filter"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img4.png"%}
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img5.png" Caption="Custom Filter"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img5.png"%}
 
 {% highlight html %}
 
@@ -301,5 +301,5 @@ ej.FilterOperators.equal</td></tr>
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img6.png" Caption="Dynamic Filtering"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img6.png"%}
 

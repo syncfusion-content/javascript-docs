@@ -88,7 +88,7 @@ The **ejGrid** and **ejPager** has its own locale labels for applying the inform
 
 The output for the above code example is displayed as the following screenshot.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Localization_images/Localization_img1.png" Caption="Localization"%}
+{% include image.html url="/js/Grid/Localization_images/Localization_img1.png"%}
 
 The default values of locale labels in **ejGrid** and **ejPager** are listed out in the following code example. You can change the label values based on the cultures with its corresponding meaning of words.
 
