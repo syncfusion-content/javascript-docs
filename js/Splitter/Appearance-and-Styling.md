@@ -21,34 +21,33 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% highlight html %}
 
-    <div id="outersplitter">
+<div id="outersplitter">
+    <div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">JavaScript </h3>
+        </div>
+    </div>
+    <div id="innersplitter">
         <div>
             <div style="padding: 0px 15px;">
-                <h3 class="h3">ASP.NET MVC </h3>
+                <h3 class="h3">Tools </h3>
+                Essential Tools is an collection of user interface components used to create interactive
+                            JavaScript applications.
             </div>
         </div>
-        <div id="innersplitter">
-            <div>
-                <div style="padding: 0px 15px;">
-                    <h3 class="h3">Tools </h3>
-                    Essential Tools is an collection of user interface components used to create interactive
-                                ASP.NET MVC applications.
-                </div>
-            </div>
-            <div>
-                <div style="padding: 0px 15px;">
-                    <h3 class="h3">Grid </h3>
-                    Essential Mvc Grid offers full featured a Grid control with extensive support for
-                                Grouping and the display of hierarchical data.
-                </div>
+        <div>
+            <div style="padding: 0px 15px;">
+                <h3 class="h3">Grid </h3>
+                Essential JavaScript Grid offers full featured a Grid control with extensive support for
+                            Grouping and the display of hierarchical data.
             </div>
         </div>
     </div>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
-
 
     $("#outersplitter").ejSplitter({
         height: 280, width: "100%",
@@ -56,24 +55,18 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
         properties: [{ paneSize: 60 }],
         enableAutoResize: true,
     });
-
+    
     $("#innersplitter").ejSplitter({           
         enableAutoResize: true           
     });
 
-
 {% endhighlight %}
-
 
 The output for **Splitter** when **enableAutoResize** is “**True**”.
 
+{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Splitter initially" %}
 
-
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Splitter initially"%}
-
-
-
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Automatically resized pane after window resizing"%}
+{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Automatically resized pane after window resizing" %}
 
 ## Animation Support
 
@@ -87,20 +80,19 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% highlight html %}
 
-    <div id="splitter">
-        <div>
-            <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
-        </div>
-        <div>
-            <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-        </div>
-    </div> 
+<div id="splitter">
+    <div>
+        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
+    </div>
+    <div>
+        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
+    </div>
+</div> 
 
 {% endhighlight %}
 
 
 {% highlight js %}
-
 
     $("#splitter").ejSplitter({
         height: 200, width: 200,
@@ -108,16 +100,11 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
         animationSpeed: 300           
     });   
 
-
 {% endhighlight %}
 
 The output for **Splitter** when **enableAnimation** is “**True**”. Expanding or collapsing the outer pane in the **Splitter** produces the animation effect with the animation speed.
 
-
-
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Splitter with enableAnimation"%}
-
-
+{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
 
 ## Adjusting Splitter Size
 
@@ -151,44 +138,33 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 {% highlight html %}
 
-    <div id="splitter">
-        <div>
-            <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
-        </div>
-        <div>
-            <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-        </div>
-    </div> 
+<div id="splitter">
+    <div>
+        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
+    </div>
+    <div>
+        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
+    </div>
+</div> 
 
 {% endhighlight %}
 
 {% highlight js %}
-
 
     $("#splitter").ejSplitter({
         height:200, width:200,
         properties: [{}, { collapsible: true, minSize: 10, maxSize: 40, paneSize: 80, resizable: true }]
     });
 
-
 {% endhighlight %}
-
 
 The output for **Splitter** after adding the properties.
 
-
-
 {% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="Splitter at initial"%}
-
-
 
 {% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="Splitter after collapsing"%}
 
-
-
 {% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="Splitter with minSize"%}
-
-
 
 {% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption="Splitter with maxSize"%}
 
@@ -211,8 +187,6 @@ By default, there are 12 themes support available for Autocomplete control namel
 * gradient-saffron
 * gradient-saffron-dark
 
-
-
 ### CSS Class
 
 The CSS properties can be customized by using **cssClass** in the **Splitter** widget. The following steps explain the implementation of **cssClass** option in the **Splitter** widget.
@@ -221,62 +195,50 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% highlight html %}
 
-    <div id="splitter">
-        <div>
-            <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
-        </div>
-        <div>
-            <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-        </div>
-    </div> 
+<div id="splitter">
+    <div>
+        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
+    </div>
+    <div>
+        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
+    </div>
+</div> 
 
 {% endhighlight %}
 
 {% highlight js %}
-
 
     $("#splitter").ejSplitter({
         height: 200, width: 200,
         cssClass: "customCSS"
     });
 
-
 {% endhighlight %}
-
 
 Customize the **CSS** class by setting **CSS** properties. 
 
-
-
 {% highlight css %}
 
+<style>
+    .customCSS {            
+        border-color: #661e19;
+    }
 
-    <style>
-        .customCSS {            
-            border-color: #661e19;
-        }
+    /*Customize Splitbar*/
+    .customCSS .e-splitbar {
+        background-color: #f9c89f;
+    }
 
-        /*Customize Splitbar*/
-        .customCSS .e-splitbar {
-            background-color: #f9c89f;
-        }
-
-        /*Customize Splitter pane*/
-        .customCSS .e-pane {
-            color: #b21010;
-            background-color: #f6e492;
-        }     
-    </style>
-
-
+    /*Customize Splitter pane*/
+    .customCSS .e-pane {
+        color: #b21010;
+        background-color: #f6e492;
+    }     
+</style>
 
 {% endhighlight %}
 
-
-
 The output for **Splitter** after customizing the CSS class.
 
-
-
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img8.png" Caption="Splitter with cssClass"%}
+{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img8.png" %}
 

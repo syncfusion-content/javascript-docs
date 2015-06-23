@@ -11,11 +11,11 @@ documentation: ug
 
 The **Essential JavaScript RichTextEditor (RTE)** control enables you to visually edit HTML content. It enables you to edit the contents with insert table and images, and can get the HTML content for the displayed content. A **RichTextEditor** control provides a toolbar that helps to apply rich text formats to the text entered in the text area.  
 
-**Control structure**
+## Control structure
 
-{% include image.html url="/js/RichTextEditor/Overview_images/Overview_img1.png" Caption="RichTextEditor"%}
+{% include image.html url="/js/RichTextEditor/Overview_images/Overview_img1.png" %}
 
-**Key Feature**
+## Key Feature
 
 * **ToolBar Support**:-Provides the tool bar support, it’s also customizable.
 * Formatting Tool – Left, right, center, and justify

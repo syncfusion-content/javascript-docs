@@ -43,6 +43,8 @@ Slider handle moves to the end value</td></tr>
 Esc</td><td>
 Focuses out from the Slider handle</td></tr>
 </table>
+
+
 ## Configure keyboard interaction
 
 The following steps explains you on how to enable keyboard support in **Slider**.
@@ -67,7 +69,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Range 
             width: "500",
             enableRTL:true
         });
-
+        
         $(document).on("keydown", function (e) {
             if (e.altKey && e.keyCode === 74) { // j- key code.
                $("#rangeSlider a")[0].focus();

@@ -22,7 +22,7 @@ Apply the plugin and property assigning to the AutoComplete widget element throu
 
 To know more about the **Angular** binding, you can refer the online documentation in the following link location,
 
-http://help.syncfusion.com/ug/js/documents/angularjs.htm
+[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
 The following code example depicts the way to bind data to the **AutoComplete** widget through **angular** support.
 
@@ -91,13 +91,13 @@ The following code example depicts the way to bind data to the **AutoComplete** 
       </script>
       <style type="text/css">
          .control {
-         margin-top: 10px;
+               margin-top: 10px;
          }
          .input
          {
-         height:27px;
-         text-indent: 10px;
-         width:81%;
+               height:27px;
+               text-indent: 10px;
+               width:81%;
          }
       </style>
    </body>
@@ -109,5 +109,5 @@ The following code example depicts the way to bind data to the **AutoComplete** 
 
 The following is the output of **AutoComplete** control with two way **angular binding**.
 
-{% include image.html url="/js/Autocomplete/Angular-binding_images/Angular-binding_img1.png" Caption="AutoComplete with two way angular binding"%}
+{% include image.html url="/js/Autocomplete/Angular-binding_images/Angular-binding_img1.png"%}
 

@@ -78,5 +78,5 @@ The following code example illustrates shortcuts associated with the **Toolbar**
 
 {% endhighlight %}
 
-{% include image.html url="/js/Toolbar/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" Caption="ToolBar control with Keyboard shortcuts"%}
+{% include image.html url="/js/Toolbar/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" %}
 

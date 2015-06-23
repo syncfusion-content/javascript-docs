@@ -18,7 +18,7 @@ Keyboard Shortcut Keys
 <th>Shortcut Key</th><th>Description</th></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a> + j	</td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j	</td><td>
 Focuses into the Dropdown text box</td></tr>
 <tr>
 <td>
@@ -62,7 +62,7 @@ Alt +down </td><td>
 Opens the popup window </td></tr>
 </table>
 
-**Configure Keyboard Interaction**
+## Configure Keyboard Interaction
 
 The following steps explains you to enable keyboard interaction for a dropdown textbox.
 
@@ -70,17 +70,17 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 
 {% highlight html %}
 
-       <input type="text" id="dropdowmlist" accesskey="j"/>
-       <div id="list">
-           <ul>
-             <li>Art</li>
-             <li>Architecture</li>
-             <li>Biography</li>
-             <li>comics</li>
-             <li>Sports</li>
-             <li>Science</li>
-           </ul>
-       </div>
+<input type="text" id="dropdowmlist" accesskey="j"/>
+<div id="list">
+   <ul>
+     <li>Art</li>
+     <li>Architecture</li>
+     <li>Biography</li>
+     <li>comics</li>
+     <li>Sports</li>
+     <li>Science</li>
+   </ul>
+</div>
 
 {% endhighlight %}
 
@@ -96,4 +96,4 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 
 Run the sample, press Alt + J to focus in the **DropdownList** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 
-{% include image.html url="/js/DropDownList/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption="DropdownList focused and moved with Keyboard shortcut"%}
+{% include image.html url="/js/DropDownList/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}

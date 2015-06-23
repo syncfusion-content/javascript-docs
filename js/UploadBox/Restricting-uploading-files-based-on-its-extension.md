@@ -23,7 +23,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight html %}
 
-      <div id="Uploadbox"></div>
+<div id="Uploadbox"></div>
 
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight html %}
 
-      <div id="Uploadbox"></div>
+<div id="Uploadbox"></div>
 
 {% endhighlight %}
 

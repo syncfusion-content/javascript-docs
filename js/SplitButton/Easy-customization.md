@@ -21,14 +21,14 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% highlight html %}
 
-    <div class="spltspan">
-        <button id="spltbutton">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-    </div>
+<div class="spltspan">
+    <button id="spltbutton">login</button>
+    <ul id="Ul11">
+        <li><span>User</span></li>
+        <li><span>Guest</span></li>
+        <li><span>Admin</span></li>
+    </ul>
+</div>
     
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img1.png" Caption="Split button with content"%}
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img1.png" %}
 
 ## Button Size
 
@@ -94,66 +94,66 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% highlight html %}
 
-    <div class="align">
-        <table>
-            <tr>                
-                <td class="btnsht">
-                    <div class="spltspan">
-                        <button id="spltbutton_normal">login</button>
-                        <ul id="Ul11">
-                            <li><span>User</span></li>
-                            <li><span>Guest</span></li>
-                            <li><span>Admin</span></li>
-                        </ul>
-                    </div>
-                </td>
+<div class="align">
+    <table>
+        <tr>                
+            <td class="btnsht">
+                <div class="spltspan">
+                    <button id="spltbutton_normal">login</button>
+                    <ul id="Ul11">
+                        <li><span>User</span></li>
+                        <li><span>Guest</span></li>
+                        <li><span>Admin</span></li>
+                    </ul>
+                </div>
+            </td>
+         
+            <td>
+                <button id="spltbutton_mini">login</button>
+                <ul id="Ul21">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
+               
+            <td class="btnsht">
+                <button id="spltbutton_small">login</button>
+                <ul id="Ul31">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
              
-                <td>
-                    <button id="spltbutton_mini">login</button>
-                    <ul id="Ul21">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-                   
-                <td class="btnsht">
-                    <button id="spltbutton_small">login</button>
-                    <ul id="Ul31">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-                 
-                <td class="btnsht">
-                    <button id="spltbutton_medium">login</button>
-                    <ul id="Ul41">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-       
-                <td class="btnsht">
-                    <button id="spltbutton_large">login</button>
-                    <ul id="Ul51">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-                 <td class="btnsht">
-                    <button id="spltbutton_customsize">login</button>
-                    <ul id="Ul61">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
+            <td class="btnsht">
+                <button id="spltbutton_medium">login</button>
+                <ul id="Ul41">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
+   
+            <td class="btnsht">
+                <button id="spltbutton_large">login</button>
+                <ul id="Ul51">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
+             <td class="btnsht">
+                <button id="spltbutton_customsize">login</button>
+                <ul id="Ul61">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
 
 {% endhighlight %}
 
@@ -221,11 +221,11 @@ Configure the styles.
 
 {% highlight css %}
   
-    <style>
-        .control {
-            width: 500px;
-        }
-    </style>
+<style>
+    .control {
+        width: 500px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -233,7 +233,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img2.png" Caption="Split button with different sizes"%}
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img2.png" %}
 
 ## Content Type
 
@@ -297,50 +297,50 @@ In the **HTML** page, add the following button elements to configure **Split But
 {% highlight html %}
 
 
-    <table>
-        <tr>
-            <td class="btnsht">
-                <button id="spltbutton_imageonly">login</button>
-                <ul id="Ul11">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td>
-                <button id="spltbutton_textonly">login</button>
-                <ul id="Ul21">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_imageboth">login</button>
-                <ul id="Ul31">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_textandimage">login</button>
-                <ul id="Ul41">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-            <td class="btnsht">
-                <button id="spltbutton_imagetextimage">login</button>
-                <ul id="Ul51">
-                    <li><span>User</span></li>
-                    <li><span>Guest</span></li>
-                    <li><span>Admin</span></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <td class="btnsht">
+            <button id="spltbutton_imageonly">login</button>
+            <ul id="Ul11">
+                <li><span>User</span></li>
+                <li><span>Guest</span></li>
+                <li><span>Admin</span></li>
+            </ul>
+        </td>
+        <td>
+            <button id="spltbutton_textonly">login</button>
+            <ul id="Ul21">
+                <li><span>User</span></li>
+                <li><span>Guest</span></li>
+                <li><span>Admin</span></li>
+            </ul>
+        </td>
+        <td class="btnsht">
+            <button id="spltbutton_imageboth">login</button>
+            <ul id="Ul31">
+                <li><span>User</span></li>
+                <li><span>Guest</span></li>
+                <li><span>Admin</span></li>
+            </ul>
+        </td>
+        <td class="btnsht">
+            <button id="spltbutton_textandimage">login</button>
+            <ul id="Ul41">
+                <li><span>User</span></li>
+                <li><span>Guest</span></li>
+                <li><span>Admin</span></li>
+            </ul>
+        </td>
+        <td class="btnsht">
+            <button id="spltbutton_imagetextimage">login</button>
+            <ul id="Ul51">
+                <li><span>User</span></li>
+                <li><span>Guest</span></li>
+                <li><span>Admin</span></li>
+            </ul>
+        </td>
+    </tr>
+</table>
 
 {% endhighlight %}
 
@@ -405,11 +405,11 @@ Configure the styles.
 {% highlight css %}
  
 
-    <style>
-        .control {
-            width: 500px;
-        }
-    </style>
+<style>
+    .control {
+        width: 500px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -417,7 +417,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img3.png" Caption="Split button with different content types"%}
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img3.png" %}
 
 ## Image Position
 
@@ -452,95 +452,95 @@ In the **HTML** page, add the following button elements to configure **Split But
 {% highlight html %}
 
 
-    <table>
-    <tr>
-        <td class="btnsht">
-            <button id="spltbutton_imageleft_normal">login</button>
-            <ul id="Ul11">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-        <td>
-            <button id="spltbutton_imageleft_small">login</button>
-            <ul id="Ul21">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-        <td class="btnsht">
-            <button id="spltbutton_imageleft_medium">login</button>
-            <ul id="Ul31">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-        <td class="btnsht">
-            <button id="spltbutton_imageleft_large">login</button>
-            <ul id="Ul41">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td class="btnsht">
-            <button id="spltbutton_imageright_normal">login</button>
-            <ul id="Ul1">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-        <td>
-            <button id="spltbutton_imageright_small">login</button>
-            <ul id="Ul2">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-        <td class="btnsht">
-            <button id="spltbutton_imageright_medium">login</button>
-            <ul id="Ul3">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-        <td class="btnsht">
-            <button id="spltbutton_imageright_large">login</button>
-            <ul id="Ul4">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
+<table>
+<tr>
+    <td class="btnsht">
+        <button id="spltbutton_imageleft_normal">login</button>
+        <ul id="Ul11">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+    <td>
+        <button id="spltbutton_imageleft_small">login</button>
+        <ul id="Ul21">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+    <td class="btnsht">
+        <button id="spltbutton_imageleft_medium">login</button>
+        <ul id="Ul31">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+    <td class="btnsht">
+        <button id="spltbutton_imageleft_large">login</button>
+        <ul id="Ul41">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td class="btnsht">
+        <button id="spltbutton_imageright_normal">login</button>
+        <ul id="Ul1">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+    <td>
+        <button id="spltbutton_imageright_small">login</button>
+        <ul id="Ul2">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+    <td class="btnsht">
+        <button id="spltbutton_imageright_medium">login</button>
+        <ul id="Ul3">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+    <td class="btnsht">
+        <button id="spltbutton_imageright_large">login</button>
+        <ul id="Ul4">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
 
-    </tr>
-    <tr>
-        <td class="btnsht">
-            <button id="spltbutton_imagetop">login</button>
-            <ul id="Ul5">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-        <td>
-            <button id="spltbutton_imagebottom">login</button>
-            <ul id="Ul6">
-                <li><span>User</span></li>
-                <li><span>Guest</span></li>
-                <li><span>Admin</span></li>
-            </ul>
-        </td>
-    </tr>
-    </table>
+</tr>
+<tr>
+    <td class="btnsht">
+        <button id="spltbutton_imagetop">login</button>
+        <ul id="Ul5">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+    <td>
+        <button id="spltbutton_imagebottom">login</button>
+        <ul id="Ul6">
+            <li><span>User</span></li>
+            <li><span>Guest</span></li>
+            <li><span>Admin</span></li>
+        </ul>
+    </td>
+</tr>
+</table>
 
 {% endhighlight %}
 
@@ -641,11 +641,11 @@ Configure the styles.
 {% highlight css %}
 
 
-    <style>
-        .control {
-            width: 420px;
-        }
-    </style>
+<style>
+    .control {
+        width: 420px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -654,7 +654,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img4.png" Caption="Split button with different image positions"%}
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img4.png" %}
 
 ## Theme support
 
@@ -685,58 +685,58 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% highlight css %}
 
-    <div class="align">
-        <table>
-            <tr>
-                <td class="btnsht">
-                    <div class="spltspan">
-                        <button id="spltbutton_customCss1">login</button>
-                        <ul id="Ul11">
-                            <li><span>User</span></li>
-                            <li><span>Guest</span></li>
-                            <li><span>Admin</span></li>
-                        </ul>
-                    </div>
-                </td>
-
-                <td>
-                    <button id="spltbutton_customCss2">login</button>
-                    <ul id="Ul21">
+<div class="align">
+    <table>
+        <tr>
+            <td class="btnsht">
+                <div class="spltspan">
+                    <button id="spltbutton_customCss1">login</button>
+                    <ul id="Ul11">
                         <li><span>User</span></li>
                         <li><span>Guest</span></li>
                         <li><span>Admin</span></li>
                     </ul>
-                </td>
+                </div>
+            </td>
 
-                <td class="btnsht">
-                    <button id="spltbutton_customCss3">login</button>
-                    <ul id="Ul31">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
+            <td>
+                <button id="spltbutton_customCss2">login</button>
+                <ul id="Ul21">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
 
-                <td class="btnsht">
-                    <button id="spltbutton_customCss4">login</button>
-                    <ul id="Ul41">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
+            <td class="btnsht">
+                <button id="spltbutton_customCss3">login</button>
+                <ul id="Ul31">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
 
-                <td class="btnsht">
-                    <button id="spltbutton_customCss5">login</button>
-                    <ul id="Ul51">
-                        <li><span>User</span></li>
-                        <li><span>Guest</span></li>
-                        <li><span>Admin</span></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
+            <td class="btnsht">
+                <button id="spltbutton_customCss4">login</button>
+                <ul id="Ul41">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
+
+            <td class="btnsht">
+                <button id="spltbutton_customCss5">login</button>
+                <ul id="Ul51">
+                    <li><span>User</span></li>
+                    <li><span>Guest</span></li>
+                    <li><span>Admin</span></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
     
 {% endhighlight %}
 
@@ -801,37 +801,37 @@ Configure the **CSS** styles to apply on buttons.
 {% highlight css %}
 
 
-    <style type="text/css">
-        /* Customize the button background */
-       .e-split .customCss1 {
-            background-color: #121111;
-        }
-        .e-split .customCss2 {
-            background-color: #94bbd5;
-        }
-        .e-split .customCss3 {
-            background-color: #f3533c;
-        }
-        .e-split .customCss4 {
-            background-color: #d1eeed;
-        }
-        .e-split .customCss5 {
-            background-color: #deb66e;
-        }
-         /* Customize the button image & text color */
-        .e-split .customCss1.e-btn.e-select .e-icon, .e-split .customCss1.e-btn.e-select .e-btntxt {
-            color: #94bbd5;
-        }
-        .e-split .customCss2.e-btn.e-select .e-icon, .e-split .customCss2.e-btn.e-select .e-btntxt {
-            color: #121111;
-        }
-        .e-split .customCss3.e-btn.e-select .e-icon, .e-split .customCss3.e-btn.e-select .e-btntxt {
-            color: #cef6f7;
-        }
-        .e-split .customCss5.e-btn.e-select .e-icon, .e-split .customCss5.e-btn.e-select .e-btntxt {
-            color: #534f4f;
-        }
-    </style>
+<style type="text/css">
+    /* Customize the button background */
+   .e-split .customCss1 {
+        background-color: #121111;
+    }
+    .e-split .customCss2 {
+        background-color: #94bbd5;
+    }
+    .e-split .customCss3 {
+        background-color: #f3533c;
+    }
+    .e-split .customCss4 {
+        background-color: #d1eeed;
+    }
+    .e-split .customCss5 {
+        background-color: #deb66e;
+    }
+     /* Customize the button image & text color */
+    .e-split .customCss1.e-btn.e-select .e-icon, .e-split .customCss1.e-btn.e-select .e-btntxt {
+        color: #94bbd5;
+    }
+    .e-split .customCss2.e-btn.e-select .e-icon, .e-split .customCss2.e-btn.e-select .e-btntxt {
+        color: #121111;
+    }
+    .e-split .customCss3.e-btn.e-select .e-icon, .e-split .customCss3.e-btn.e-select .e-btntxt {
+        color: #cef6f7;
+    }
+    .e-split .customCss5.e-btn.e-select .e-icon, .e-split .customCss5.e-btn.e-select .e-btntxt {
+        color: #534f4f;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -840,5 +840,5 @@ Configure the **CSS** styles to apply on buttons.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img5.png" Caption="Split button with Custom CSS"%}
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img5.png" %}
 

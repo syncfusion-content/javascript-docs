@@ -9,17 +9,17 @@ documentation: ug
 
 # Appearance and Styling
 
-**Popup Customization**  
+## Popup Customization  
 
-**Popup Height**
+### Popup Height
 
 **DropdownList** widget provides you support to customize the dimensions of the dropdown popup. By using **popupHeight** property, you can set the height of the popup list. Its data type is string. 
 
-**Popup Width**
+### Popup Width
 
 Dropdown list widget provides you support to customize the dimensions of the dropdown popup. By using **popupWidth** property, you can set the width of the popup list. Its data type is string. 
 
-**Defining the popup customizing properties**
+### Defining the popup customizing properties
 
 The following steps explains you the configuration of **popupHeight** & **popupWidth** properties in **DropdownList**
 
@@ -27,19 +27,18 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 {% highlight html %}
 
-    <input type="text" id="dropdownlist" />
+<input type="text" id="dropdownlist" />
 
-        <div id="list">
-            <ul>
-                <li>Art</li>
-                <li>Architecture</li>
-                <li>Biography</li>
-                <li>comics</li>
-                <li>Sports</li>
-                <li>Science</li>
-            </ul>
-
-      </div>
+<div id="list">
+    <ul>
+        <li>Art</li>
+        <li>Architecture</li>
+        <li>Biography</li>
+        <li>comics</li>
+        <li>Sports</li>
+        <li>Science</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
@@ -51,7 +50,6 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
                 targetID: "list",
                 popupWidth: "250px",
                 popupHeight: "100px"              
-
             });
         });
 
@@ -59,19 +57,19 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
  Output of the above steps
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Dropdown with popup customization property"%}
+{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
 
-**Adjusting Dropdown size**
+## Adjusting Dropdown size
 
-**Width**
+### Width
 
 DropdownList widget provides you support to customize the dimensions of the dropdown textbox. By using **width** property you can set the width of the dropdown textbox. Its data type is string.
 
-**Height**
+### Height
 
 DropdownList widget provides you support to customize the dimensions of the dropdown textbox. By using **height** property, you can set the height of the dropdown textbox. Its data type is string.
 
-**Defining the dropdown size properties**
+### Defining the dropdown size properties
 
 The following steps explains you the configuration of **height** & **width** properties in **DropdownList**
 
@@ -79,46 +77,44 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 {% highlight html %}
 
-    <input type="text" id="dropdownlist" />
+<input type="text" id="dropdownlist" />
 
-        <div id="list">
-            <ul>
-                <li>Art</li>
-                <li>Architecture</li>
-                <li>Biography</li>
-                <li>comics</li>
-                <li>Sports</li>
-                <li>Science</li>
-            </ul>
-
-        </div>
+<div id="list">
+    <ul>
+        <li>Art</li>
+        <li>Architecture</li>
+        <li>Biography</li>
+        <li>comics</li>
+        <li>Sports</li>
+        <li>Science</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
  
-        // Initialize the control in JavaScript
-        $(function () {
-            $('#dropdownlist').ejDropDownList({
-                targetID: "list",
-                width: "250px",
-                height: "50px"              
-
-            });
+    // Initialize the control in JavaScript
+    $(function () {
+        $('#dropdownlist').ejDropDownList({
+            targetID: "list",
+            width: "250px",
+            height: "50px"                 
         });
+    });
 
 {% endhighlight %}
 
 Output of the above steps
 
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Dropdown with dropdown textbox customization property"%}  
+{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}  
 
-**Water Mark** 
+## Water Mark
 
 **DropdownList** widget provides the support to water mark of the dropdown textbox. The **watermarkText** defines the text that display on page load. Its data type is string.
 
-**Defining the Water Mark property**
+### Defining the Water Mark property
 
 The following steps explains the configuration of **watermarkText** properties in DropdownList.
 
@@ -126,19 +122,18 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 {% highlight html %}
 
-    <input type="text" id="dropdownlist" />
+<input type="text" id="dropdownlist" />
 
-        <div id="list">
-            <ul>
-                <li>Art</li>
-                <li>Architecture</li>
-                <li>Biography</li>
-                <li>comics</li>
-                <li>Sports</li>
-                <li>Science</li>
-            </ul>
-
-      </div>
+<div id="list">
+    <ul>
+        <li>Art</li>
+        <li>Architecture</li>
+        <li>Biography</li>
+        <li>comics</li>
+        <li>Sports</li>
+        <li>Science</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
@@ -146,20 +141,20 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
   
     // Initialize the control in JavaScript
     $(function () {
-            $('#dropdownlist').ejDropDownList({
-                targetID: "list",
-                watermarkText: "Select"
-            });
-        }); 
+        $('#dropdownlist').ejDropDownList({
+            targetID: "list",
+            watermarkText: "Select"
+        });
+    }); 
 
 {% endhighlight %}
 
 Output of the above steps
 
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Dropdown with WaterMark property"%}  
+{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}  
 
-**Enabling Rounded corner**
+## Enabling Rounded corner
 
 **DropdownList** widget provides you support to change the appearance of dropdown textbox. By using **showRoundedCorner** you can create a rounded corner on the dropdown textbox. Its data type is Boolean.
 
@@ -169,93 +164,91 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget.
 
 {% highlight html %}
 
-    <input type="text" id="dropdownlist" />
+<input type="text" id="dropdownlist" />
 
-        <div id="list">
-            <ul>
-                <li>Art</li>
-                <li>Architecture</li>
-                <li>Biography</li>
-                <li>comics</li>
-                <li>Sports</li>
-                <li>Science</li>
-            </ul>
-
-      </div>
+<div id="list">
+    <ul>
+        <li>Art</li>
+        <li>Architecture</li>
+        <li>Biography</li>
+        <li>comics</li>
+        <li>Sports</li>
+        <li>Science</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-        // Initialize the control in JavaScript      
-        $(function () {
-            $('#dropdownlist').ejDropDownList({
-                targetID: "list",
-                showRoundedCorner:true
-            });
-        });	
-
+    // Initialize the control in JavaScript      
+    $(function () {
+        $('#dropdownlist').ejDropDownList({
+            targetID: "list",
+            showRoundedCorner:true
+        });
+    });	
 
 {% endhighlight %}
 
 Output of the above steps
  
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="Dropdown with Rounded corner property"%}  
+{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" %}  
 
-**Icons Support** 
+## Icons Support
 
 You can add the icons or images with list items in dropdown popup by using sprite **CSS** class. The following steps explains you the configuration about the icons support with **DropdownList**
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="Dropdown with icons"%}
+{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" %}
 
-Note: Images for this sample are available in ‘installed location /themes/images’ and you need to define images in mentioned CSS. Henceforth the images display. 
+> **Note:** Images for this sample are available in ‘installed location /themes/images’ and you need to define images in mentioned CSS. Henceforth the images display. 
 
 In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 {% highlight html %}
 
-    <input type="text" id="dropdownlist" />
+<input type="text" id="dropdownlist" />
 
-        <div id="mailtoolslist">
-            <ul>
-                <li>
-                    <div class="mailtools categorize"></div>
-                    Categorize and Move</li>
-                <li>
-                    <div class="mailtools done"></div>
-                    Done</li>
-                <li>
-                    <div class="mailtools flag"></div>
-                    Flag & Move</li>
-                <li>
-                    <div class="mailtools forward"></div>
-                    Forward</li>
-                <li>
-                    <div class="mailtools movetofolder"></div>
-                    Move to Folder</li>
-                <li>
-                    <div class="mailtools newmail"></div>
-                    New E-mail</li>
-                <li>
-                    <div class="mailtools meeting"></div>
-                    New Meeting</li>
-                <li>
-                    <div class="mailtools reply"></div>
-                    Reply & Delete</li>
-            </ul>
-     </div>
+<div id="mailtoolslist">
+    <ul>
+        <li>
+            <div class="mailtools categorize"></div>
+            Categorize and Move</li>
+        <li>
+            <div class="mailtools done"></div>
+            Done</li>
+        <li>
+            <div class="mailtools flag"></div>
+            Flag & Move</li>
+        <li>
+            <div class="mailtools forward"></div>
+            Forward</li>
+        <li>
+            <div class="mailtools movetofolder"></div>
+            Move to Folder</li>
+        <li>
+            <div class="mailtools newmail"></div>
+            New E-mail</li>
+        <li>
+            <div class="mailtools meeting"></div>
+            New Meeting</li>
+        <li>
+            <div class="mailtools reply"></div>
+            Reply & Delete</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-        // Initialize the control in JavaScript
-        var target;
-        $(function () {
-            $('#dropdownlist').ejDropDownList({
-                targetID: "mailtoolslist"
-            });
-        });	
+    // Initialize the control in JavaScript
+    var target;
+    $(function () {
+        $('#dropdownlist').ejDropDownList({
+            targetID: "mailtoolslist"
+        });
+    });	
 
 {% endhighlight %}
 
@@ -264,107 +257,104 @@ Configure sprite **CSS** styles to **DropdownList**
 {% highlight css %}
 
 <style type="text/css" class="cssStyles">
-        /*controls*/
-        .mailtools {
-            display: block;
-            background-image: url('../images/iconsapps.png');
-            height: 25px;
-            width: 25px;
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
+    /*controls*/
+    .mailtools {
+        display: block;
+        background-image: url('../images/iconsapps.png');
+        height: 25px;
+        width: 25px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 
-        .mailtools.done {
-            background-position: 0 0;
-        }
+    .mailtools.done {
+        background-position: 0 0;
+    }
 
-        .mailtools.movetofolder {
-            background-position: 0 -22px;
-        }
+    .mailtools.movetofolder {
+        background-position: 0 -22px;
+    }
 
-        .mailtools.categorize {
-            background-position: 0 -46px;
-        }
+    .mailtools.categorize {
+        background-position: 0 -46px;
+    }
 
-        .mailtools.flag {
-            background-position: 0 -70px;
-        }
+    .mailtools.flag {
+        background-position: 0 -70px;
+    }
 
-        .mailtools.forward {
-            background-position: 0 -94px;
-        }
+    .mailtools.forward {
+        background-position: 0 -94px;
+    }
 
-        .mailtools.newmail {
-            background-position: 0 -116px;
-        }
+    .mailtools.newmail {
+        background-position: 0 -116px;
+    }
 
-        .mailtools.reply {
-            background-position: 0 -140px;
-        }
+    .mailtools.reply {
+        background-position: 0 -140px;
+    }
 
-        .mailtools.meeting {
-            background-position: 0 -164px;
-        }
+    .mailtools.meeting {
+        background-position: 0 -164px;
+    }
 
-        .control {
-            margin-left: 20px;
-        }
+    .control {
+        margin-left: 20px;
+    }
 
-        .ctrllabel {
-            padding-bottom: 3px;
-        }
-   </style>
-
+    .ctrllabel {
+        padding-bottom: 3px;
+    }
+</style>
 
 {% endhighlight %}
 
 
-
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="Dropdown with Icons property"%}  
+{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" %}  
 
-**Animation with Dropdown list** 
+## Animation with Dropdown list
 
 This feature adds some animation effect to dropdown widget when show /hide the popup list. This is achieved by setting Boolean value to **enableAnimation** property**.**
 
-**Defining the Animation property**
+### Defining the Animation property
 
 The following steps explains you the configuration of **enableAnimation** properties in **DropdownList**
 
- In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
+In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 {% highlight html %}
 
-    <input type="text" id="dropdownlist" />
+<input type="text" id="dropdownlist" />
 
-        <div id="list">
-            <ul>
-                <li>Art</li>
-                <li>Architecture</li>
-                <li>Biography</li>
-                <li>comics</li>
-                <li>Sports</li>
-                <li>Science</li>
-            </ul>
-
-        </div>
+<div id="list">
+    <ul>
+        <li>Art</li>
+        <li>Architecture</li>
+        <li>Biography</li>
+        <li>comics</li>
+        <li>Sports</li>
+        <li>Science</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-       // Initialize the control in JavaScript
-       $(function () {
-            $('#dropdownlist').ejDropDownList({
-                targetID: "list",
-                enableAnimation : true
-            });
-        }); 
+    // Initialize the control in JavaScript
+    $(function () {
+        $('#dropdownlist').ejDropDownList({
+            targetID: "list",
+            enableAnimation : true
+        });
+    }); 
 
 {% endhighlight %}
 
-**Theme**
+## Theme
 
 **DropdownList** control’s style and appearance can be controlled based on **CSS** classes. In order to apply styles to the **DropdownList** control, you need to refer two files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. If the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.widgets.all.min.css** is the combination of these two. 
 
@@ -384,11 +374,11 @@ By default, there are 12 themes support available for **DropdownList** control n
 * gradient-saffron
 * gradient-saffron-dark
 
-**Custom class with dropdown** 
+## Custom class with dropdown 
 
 **CSS** class can be used to customize the **Dropdown** control appearance. Define a **CSS** class as per your requirement and assign the class name to **cssClass** property. The data type of **cssClass** property is string. 
 
-**Configuring the Custom CSS property**
+### Configuring the Custom CSS property
 
 The following steps explains you the configuration of **cssClass** properties in **DropdownList**
 
@@ -396,50 +386,48 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 {% highlight html %}
 
-    <input type="text" id="dropdownlist" />
+<input type="text" id="dropdownlist" />
 
-        <div id="list">
-            <ul>
-                <li>Art</li>
-                <li>Architecture</li>
-                <li>Biography</li>
-                <li>comics</li>
-                <li>Sports</li>
-                <li>Science</li>
-            </ul>
-
-       </div>
+<div id="list">
+    <ul>
+        <li>Art</li>
+        <li>Architecture</li>
+        <li>Biography</li>
+        <li>comics</li>
+        <li>Sports</li>
+        <li>Science</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
  
-     // Initialize the control in JavaScript
-     $(function () {
-            $('#dropdownlist').ejDropDownList({
-                targetID: "list",
-                cssClass: "customclass"
-            });
+    // Initialize the control in JavaScript
+    $(function () {
+        $('#dropdownlist').ejDropDownList({
+            targetID: "list",
+            cssClass: "customclass"
         });
+    });
 
 {% endhighlight %}
 
- Configure the **CSS** styles to apply on **DropdownList**
+Configure the **CSS** styles to apply on **DropdownList**
 
 {% highlight css %}
   
-  <style type="text/css">
-        .customclass {
-            background-color: #FFFFCC;
-            font-weight: bold;
-            font-family: sans-serif;
-        }
-    </style>
-
+<style type="text/css">
+    .customclass {
+        background-color: #FFFFCC;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+</style>
 
 {% endhighlight %}
 
- Output of the above steps
+Output of the above steps
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption="Dropdown with cssClass property"%} 
+{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" %} 
 

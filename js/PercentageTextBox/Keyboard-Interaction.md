@@ -22,7 +22,7 @@ Shortcut Key</th><th>
 Description</th></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> + j</b></td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a><b> + j</b></td><td>
 Focuses the PercentageTextBox<b> </b>control</td></tr>
 <tr>
 <td>
@@ -44,18 +44,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" accesskey="j" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" accesskey="j" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access
 
 
 
-{% include image.html url="/js/PercentageTextBox/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption="PercentageTextBox focused with keyboard shortcut"%}
+{% include image.html url="/js/PercentageTextBox/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
 
 
 

@@ -39,9 +39,9 @@ Add the following code in your **HTML** page to initialize the **RTE** with grad
 
 {% highlight html %}
 
-    <div class="rte">
-        <textarea id="rteSample"></textarea>
-    </div>
+<div class="rte">
+    <textarea id="rteSample"></textarea>
+</div>
 
 {% endhighlight %}
 
@@ -54,22 +54,22 @@ Add the following code in your **HTML** page to initialize the **RTE** with grad
  
 {% endhighlight %}
 
-{% include image.html url="/js/RichTextEditor/Look-and-Feel_images/Look-and-Feel_img1.png" Caption="Showcase of RTE with Gradient-azure-dark theme"%}
+{% include image.html url="/js/RichTextEditor/Look-and-Feel_images/Look-and-Feel_img1.png" %}
 
-### Css Class
+## Css Class
 
 **RTE** control also allows you to customize its appearance by using user-defined CSS and custom skin options for colors and backgrounds. To apply custom themes, use this property called **cssClass**. **cssClass** property sets the root class for **RTE** theme.
 
-You can override the existing styles under the theme style sheet by using this property. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “light-Pink”. ” light-Pink http://www.w3schools.com/tags/ref_color_tryit.asp?color=DeepPink” is added as the root class to **RTE** control at runtime. From this root class, you can customize the **RTE** control theme.
+You can override the existing styles under the theme style sheet by using this property. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “light-Pink”. ” light-Pink [http://www.w3schools.com/tags/ref_color_tryit.asp?color=DeepPink](http://www.w3schools.com/tags/ref_color_tryit.asp?color=DeepPink)” is added as the root class to **RTE** control at runtime. From this root class, you can customize the **RTE** control theme.
 
  Add the following code in your **HTML** page.
 
 
 {% highlight html %}
 
-    <div class="rte">
-        <textarea id="rteSample"></textarea>
-    </div>
+<div class="rte">
+    <textarea id="rteSample"></textarea>
+</div>
 
 {% endhighlight %}
 
@@ -103,9 +103,10 @@ Add the following styles in your styles section.
         background-color: pink;
     }
 </style>
+
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/RichTextEditor/Look-and-Feel_images/Look-and-Feel_img2.png" Caption="Showcase of RTE with light-pink theme."%}
+{% include image.html url="/js/RichTextEditor/Look-and-Feel_images/Look-and-Feel_img2.png" %}
 

@@ -16,24 +16,42 @@ It specifies the **Start Level** view in **DatePicker** calendar. By default “
 Start level
 
 <table>
-<tr>
-<th>Name</th><th>Description</th></tr>
-<tr>
-<td>
-month</td><td>
-Starts from month level view.</td></tr>
-<tr>
-<td>
-year</td><td>
-Starts from year level view.</td></tr>
-<tr>
-<td>
-decade</td><td>
-Starts from decade level view.</td></tr>
-<tr>
-<td>
-century</td><td>
-Starts from century level view.</td></tr>
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>
+         month
+      </td>
+      <td>
+         Starts from month level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         year
+      </td>
+      <td>
+         Starts from year level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         decade
+      </td>
+      <td>
+         Starts from decade level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         century
+      </td>
+      <td>
+         Starts from century level view.
+      </td>
+   </tr>
 </table>
 
 
@@ -43,26 +61,25 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 {% highlight html %}
 
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
-        // Add the code to specify the Start Level view in DatePicker widget
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                startLevel: ej.DatePicker.Level.Century
-            });
-        });
+    // Add the code to specify the Start Level view in DatePicker widget
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker({
+          startLevel: ej.DatePicker.Level.Century
+       });
+    });
 
-
-  {% endhighlight %}
+{% endhighlight %}
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/DatePicker/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png" Caption="Start level view in DatePicker               "%}
+{% include image.html url="/js/DatePicker/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png"%}
 
 ## Depth Level
 
@@ -73,24 +90,42 @@ It accepts the following values.
 Depth level
 
 <table>
-<tr>
-<th>Value</th><th>Description</th></tr>
-<tr>
-<td>
-month</td><td>
-Starts from month level view.</td></tr>
-<tr>
-<td>
-year</td><td>
-Starts from year level view.</td></tr>
-<tr>
-<td>
-decade</td><td>
-Starts from year decade level view.</td></tr>
-<tr>
-<td>
-century</td><td>
-Starts from century level view. </td></tr>
+   <tr>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>
+         month
+      </td>
+      <td>
+         Starts from month level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         year
+      </td>
+      <td>
+         Starts from year level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         decade
+      </td>
+      <td>
+         Starts from year decade level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         century
+      </td>
+      <td>
+         Starts from century level view. 
+      </td>
+   </tr>
 </table>
 
 
@@ -100,24 +135,24 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 {% highlight html %}
 
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
-        // Add the code to render the Depth Level
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                  startLevel:ej.DatePicker.Level.Century,
-                  depthLevel: ej.DatePicker.Level.Year
-            });
-        });
+    // Add the code to render the Depth Level
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker({
+          startLevel: ej.DatePicker.Level.Century,
+          depthLevel: ej.DatePicker.Level.Year
+       });
+    });
 
-  {% endhighlight %}
+{% endhighlight %}
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/DatePicker/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png" Caption="Depth Level in DatePicker"%}
+{% include image.html url="/js/DatePicker/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png"%}
 

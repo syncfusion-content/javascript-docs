@@ -24,9 +24,9 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-    <input type="checkbox" id="toggle_default" />    
-    <br />
-    <input type="checkbox" id="toggle_active" />
+<input type="checkbox" id="toggle_default" />    
+<br />
+<input type="checkbox" id="toggle_active" />
 
 	
 {% endhighlight %}
@@ -64,7 +64,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img1.png" Caption="Toggle button with two different toggle states"%}
+{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img1.png" %}
 
 
 
@@ -102,7 +102,7 @@ You can also set icon in different location (prefix, suffix) and in different st
 Property Table
 
 <table>
-<tr><th>Proeprty Type</th>
+<tr><th>Property Type</th>
     <th>Description</th></tr>
 <tr>
 <td>
@@ -140,8 +140,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-    <input type="checkbox" id="toggle_content" />
-    <label for="toggle_content">Toggle</label>
+<input type="checkbox" id="toggle_content" />
+<label for="toggle_content">Toggle</label>
 	
 {% endhighlight %}
 
@@ -172,11 +172,11 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img2.png" Caption="Before clicking the toggle button"%}
+{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img2.png" %}
 
 
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img3.png" Caption="After clicking the toggle button"%}
+{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img3.png" %}
 
 
 
@@ -220,44 +220,44 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-    <table>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_normal" />
-                <label for="toggle_normal">Toggle</label>
-            </td>
-        </tr>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_mini" />
-                <label for="toggle_mini">Toggle</label>
-            </td>
-        </tr>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_small" />
-                <label for="toggle_small">Toggle</label>
-            </td>
-        </tr>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_medium" />
-                <label for="toggle_medium">Toggle</label>
-            </td>
-        </tr>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_large" />
-                <label for="toggle_large">Toggle</label>
-            </td>
-        </tr>
-      <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_customSize" />
-                <label for="toggle_customSize">Toggle</label>
-            </td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_normal" />
+            <label for="toggle_normal">Toggle</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_mini" />
+            <label for="toggle_mini">Toggle</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_small" />
+            <label for="toggle_small">Toggle</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_medium" />
+            <label for="toggle_medium">Toggle</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_large" />
+            <label for="toggle_large">Toggle</label>
+        </td>
+    </tr>
+  <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_customSize" />
+            <label for="toggle_customSize">Toggle</label>
+        </td>
+    </tr>
+</table>
 
 	
 {% endhighlight %}
@@ -332,11 +332,11 @@ Configure the styles
 
 {% highlight css %}
 
-    <style>
-        .control {
-            width: 600px;
-        }
-    </style>
+<style>
+    .control {
+        width: 600px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -347,7 +347,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img4.png" Caption="Toggle button in different sizes"%}
+{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img4.png" %}
 
 
 
@@ -389,56 +389,56 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-    <table>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageonly" />
-                <label for="toggle_imageonly">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_textonly" />
-                <label for="toggle_textonly">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageboth" />
-                <label for="toggle_imageboth">Toggle</label>
-            </td>       
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_textandimage" />
-                <label for="toggle_textandimage">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imagetextimage" />
-                <label for="toggle_imagetextimage">Toggle</label>
-            </td>
-        </tr>
-         </table>
-    <br/>
-    <br/>
-     <table>
-          <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageonly_small" />
-                <label for="toggle_imageonly_small">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_textonly_small" />
-                <label for="toggle_textonly_small">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageboth_small" />
-                <label for="toggle_imageboth_small">Toggle</label>
-            </td>       
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_textandimage_small" />
-                <label for="toggle_textandimage_small">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imagetextimage_small" />
-                <label for="toggle_imagetextimage_small">Toggle</label>
-            </td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageonly" />
+            <label for="toggle_imageonly">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_textonly" />
+            <label for="toggle_textonly">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageboth" />
+            <label for="toggle_imageboth">Toggle</label>
+        </td>       
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_textandimage" />
+            <label for="toggle_textandimage">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imagetextimage" />
+            <label for="toggle_imagetextimage">Toggle</label>
+        </td>
+    </tr>
+     </table>
+<br/>
+<br/>
+ <table>
+      <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageonly_small" />
+            <label for="toggle_imageonly_small">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_textonly_small" />
+            <label for="toggle_textonly_small">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageboth_small" />
+            <label for="toggle_imageboth_small">Toggle</label>
+        </td>       
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_textandimage_small" />
+            <label for="toggle_textandimage_small">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imagetextimage_small" />
+            <label for="toggle_imagetextimage_small">Toggle</label>
+        </td>
+    </tr>
+</table>
 
 	
 {% endhighlight %}
@@ -547,15 +547,15 @@ Configure the styles
 
 {% highlight css %}
 
-    <style>
-        .normal {
-            width: 300px;
-        }
+<style>
+    .normal {
+        width: 300px;
+    }
 
-        .small {
-            width: 450px;
-        }
-    </style>
+    .small {
+        width: 450px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -564,7 +564,7 @@ Configure the styles
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img5.png" Caption="Toggle button with different content types"%}
+{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img5.png" %}
 
 
 
@@ -602,70 +602,70 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-     <table>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageleft_normal" />
-                <label for="toggle_imageleft_normal">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageleft_mini" />
-                <label for="toggle_imageleft_mini">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageleft_small" />
-                <label for="toggle_imageleft_small">Toggle</label>
-            </td>       
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageleft_medium" />
-                <label for="toggle_imageleft_medium">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageleft_large" />
-                <label for="toggle_imageleft_large">Toggle</label>
-            </td>
-        </tr>
-         </table>
-    <br />
-    <br />
-     <table>
-          <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageright_normal" />
-                <label for="toggle_imageright_normal">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageright_mini" />
-                <label for="toggle_imageright_mini">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageright_small" />
-                <label for="toggle_imageright_small">Toggle</label>
-            </td>       
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageright_medium" />
-                <label for="toggle_imageright_medium">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imageright_large" />
-                <label for="toggle_imageright_large">Toggle</label>
-            </td>
-        </tr>
-    </table>
-     <br />
-    <br />
-     <table>
-          <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imagetop" />
-                <label for="toggle_imagetop">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_imagebottom" />
-                <label for="toggle_imagebottom">Toggle</label>
-            </td>               
-        </tr>
-    </table>
+ <table>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageleft_normal" />
+            <label for="toggle_imageleft_normal">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageleft_mini" />
+            <label for="toggle_imageleft_mini">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageleft_small" />
+            <label for="toggle_imageleft_small">Toggle</label>
+        </td>       
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageleft_medium" />
+            <label for="toggle_imageleft_medium">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageleft_large" />
+            <label for="toggle_imageleft_large">Toggle</label>
+        </td>
+    </tr>
+     </table>
+<br />
+<br />
+ <table>
+      <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageright_normal" />
+            <label for="toggle_imageright_normal">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageright_mini" />
+            <label for="toggle_imageright_mini">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageright_small" />
+            <label for="toggle_imageright_small">Toggle</label>
+        </td>       
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageright_medium" />
+            <label for="toggle_imageright_medium">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imageright_large" />
+            <label for="toggle_imageright_large">Toggle</label>
+        </td>
+    </tr>
+</table>
+ <br />
+<br />
+ <table>
+      <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imagetop" />
+            <label for="toggle_imagetop">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_imagebottom" />
+            <label for="toggle_imagebottom">Toggle</label>
+        </td>               
+    </tr>
+</table>
 
 {% endhighlight %}
 
@@ -806,15 +806,15 @@ Configure the styles
 {% highlight css %}
 
 
-    <style>
-        .one {
-            width: 450px;
-        }
+<style>
+    .one {
+        width: 450px;
+    }
 
-        .two{
-            width: 115px;
-        }
-    </style>
+    .two{
+        width: 115px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -823,7 +823,7 @@ Configure the styles
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img6.png" Caption="Toggle button with different type of image position"%}
+{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img6.png" %}
 
 
 
@@ -857,30 +857,30 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-    <table>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_customCss1" />
-                <label for="toggle_customCss1">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_customCss2" />
-                <label for="toggle_customCss2">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_customCss3" />
-                <label for="toggle_customCss3">Toggle</label>
-            </td>       
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_customCss4" />
-                <label for="toggle_customCss4">Toggle</label>
-            </td>     
-            <td class="btnsht">
-                <input type="checkbox" id="toggle_customCss5" />
-                <label for="toggle_customCss5">Toggle</label>
-            </td>
-        </tr>
-         </table>
+<table>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_customCss1" />
+            <label for="toggle_customCss1">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_customCss2" />
+            <label for="toggle_customCss2">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_customCss3" />
+            <label for="toggle_customCss3">Toggle</label>
+        </td>       
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_customCss4" />
+            <label for="toggle_customCss4">Toggle</label>
+        </td>     
+        <td class="btnsht">
+            <input type="checkbox" id="toggle_customCss5" />
+            <label for="toggle_customCss5">Toggle</label>
+        </td>
+    </tr>
+     </table>
 
 {% endhighlight %}
 
@@ -948,42 +948,43 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
     
 
 {% endhighlight %}
+
 Configure the CSS styles to apply on buttons.
 
 
 {% highlight css %}
 
-    <style type="text/css" class="cssStyles">
-        /* Customize the button background */
-        .e-togglebutton.customCss1 {
-            background-color: #121111;
-        }
-        .e-togglebutton.customCss2 {
-            background-color: #94bbd5;
-        }
-        .e-togglebutton.customCss3 {
-            background-color: #f3533c;
-        }
-        .e-togglebutton.customCss4 {
-            background-color: #d1eeed;
-        }
-        .e-togglebutton.customCss5 {
-            background-color: #deb66e;
-        }
-         /* Customize the button image & text color */
-        .e-togglebutton.customCss1.e-btn.e-select .e-icon, .e-togglebutton.customCss1.e-btn.e-select .e-btntxt {
-            color: #94bbd5;
-        }
-        .e-togglebutton.customCss2.e-btn.e-select .e-icon, .e-togglebutton.customCss2.e-btn.e-select .e-btntxt {
-            color: #121111;
-        }
-        .e-togglebutton.customCss3.e-btn.e-select .e-icon, .e-togglebutton.customCss3.e-btn.e-select .e-btntxt {
-            color: #cef6f7;
-        }
-        .e-togglebutton.customCss5.e-btn.e-select .e-icon, .e-togglebutton.customCss5.e-btn.e-select .e-btntxt {
-            color: #534f4f;
-        }
-    </style>
+<style type="text/css" class="cssStyles">
+    /* Customize the button background */
+    .e-togglebutton.customCss1 {
+        background-color: #121111;
+    }
+    .e-togglebutton.customCss2 {
+        background-color: #94bbd5;
+    }
+    .e-togglebutton.customCss3 {
+        background-color: #f3533c;
+    }
+    .e-togglebutton.customCss4 {
+        background-color: #d1eeed;
+    }
+    .e-togglebutton.customCss5 {
+        background-color: #deb66e;
+    }
+     /* Customize the button image & text color */
+    .e-togglebutton.customCss1.e-btn.e-select .e-icon, .e-togglebutton.customCss1.e-btn.e-select .e-btntxt {
+        color: #94bbd5;
+    }
+    .e-togglebutton.customCss2.e-btn.e-select .e-icon, .e-togglebutton.customCss2.e-btn.e-select .e-btntxt {
+        color: #121111;
+    }
+    .e-togglebutton.customCss3.e-btn.e-select .e-icon, .e-togglebutton.customCss3.e-btn.e-select .e-btntxt {
+        color: #cef6f7;
+    }
+    .e-togglebutton.customCss5.e-btn.e-select .e-icon, .e-togglebutton.customCss5.e-btn.e-select .e-btntxt {
+        color: #534f4f;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -992,7 +993,7 @@ Configure the CSS styles to apply on buttons.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img7.png" Caption="Toggle button with Custom CSS"%}
+{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img7.png" %}
 
 
 

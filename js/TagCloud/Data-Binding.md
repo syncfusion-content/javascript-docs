@@ -45,8 +45,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
-
-         <div id="techweblist"></div>
+<div id="techweblist"></div>
 
 {% endhighlight %}
 
@@ -84,11 +83,9 @@ Map Local datasource to corresponding fields in **TagCloud** control as follows,
 
 {% highlight js %}
 
-
-
     $("#techweblist").ejTagCloud({
-    dataSource: websiteCollection
-            });
+        dataSource: websiteCollection
+    });
 
 
 {% endhighlight %}
@@ -97,7 +94,7 @@ Map Local datasource to corresponding fields in **TagCloud** control as follows,
 
 The following screenshot displays the **TagCloud** control with local data binding.
 
-{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img1.png" Caption="TagCloud with Local databinding"%}
+{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img1.png"%}
 
 
 
@@ -117,7 +114,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
-         <div id="techweblist"></div>
+ <div id="techweblist"></div>
 
 
 {% endhighlight %}
@@ -132,11 +129,11 @@ Define DataManager and assign remote data source to it. Initialize query for bin
 
 
 
-           var dataManager = **ej.DataManager**({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-            });
-            // Query creation
-            var query = **ej.Query().**from("Orders").take(10);
+    var dataManager = ej.DataManager({
+        url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+    });
+    // Query creation
+    var query = ej.Query().from("Orders").take(10);
 
 
 {% endhighlight %}
@@ -151,11 +148,11 @@ Assign datasource and query property values to bind the remote data. Map the cor
 
 
  
-         $("#techweblist").ejTagCloud({
-                dataSource: dataManager,
-                query: query,
-                fields: { text: "CustomerID", frequency: "EmployeeID" }
-            });
+    $("#techweblist").ejTagCloud({
+        dataSource: dataManager,
+        query: query,
+        fields: { text: "CustomerID", frequency: "EmployeeID" }
+    });
 
 
 {% endhighlight %}
@@ -166,7 +163,7 @@ The following screenshot displays a **TagCloud** control with remote data bindin
 
 
 
-{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img2.png" Caption="TagCloud with Remote databinding"%}
+{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img2.png" %}
 
 
 
@@ -183,7 +180,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the knockout binding, refer the following link location,
 
-http://help.syncfusion.com/ug/js/documents/knockoutjs.htm
+[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
 The following code example depicts you the way to bind data to the **TagCloud** widget using knockout support,
 
@@ -191,60 +188,55 @@ The following code example depicts you the way to bind data to the **TagCloud** 
 
 <!doctype html>
 <html>
-<head>
-    <title>Essential Studio for JavaScript :  KO Support for Tagcloud</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
-    <!--scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-<script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
-
-</head>
-<body>
-    <div class="content-container-fluid">
-            <div class="row">
-<div id="techweblist" data-bind="ejTagCloud: { dataSource: dataList, titleText: title }">
-</div>
-            </div>
-    </div>
-     <script>
-	 $(function () { 
-var tagview = [
-{ text: "Google", url: "http://www.google.com", frequency: 12 },
-        { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
-        { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-        { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
-        { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
-        { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
-        { text: "Crave", url: "http://news.cnet.com/crave/", frequency: 8 },
-        { text: "Wikipedia", url: "http://www.wikipedia.org/", frequency: 20 },
-        { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
-        { text: "Electronista", url: "http://www.electronista.com/", frequency: 3 },
-        { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },
-        { text: "LinkedIn", url: "http://www.linkedIn.com/", frequency: 9 },
-        { text: "Information Week",url:"http://www.informationweek.com/",frequency:0 },
-        { text: "Menucool", url: "http://www.menucool.com", frequency: 11 },
-        { text: "Tech Republic", url: "http://techrepublic.com/", frequency: 3 },
-        { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
-        { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
-        { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
-    ];	
-			window.viewModel = { 
-                dataList: ko.observableArray(tagview),
-                title: ko.observable("Popular Sites"),
-            };	        		
-            ko.applyBindings(viewModel);
-         });
-
-    </script>
-</body>
+   <head>
+      <title>Essential Studio for JavaScript :  KO Support for Tagcloud</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+      <!--scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+   </head>
+   <body>
+      <div class="content-container-fluid">
+         <div class="row">
+            <div id="techweblist" data-bind="ejTagCloud: { dataSource: dataList, titleText: title }"></div>
+         </div>
+      </div>
+      <script>
+         $(function () { 
+         var tagview = [
+         { text: "Google", url: "http://www.google.com", frequency: 12 },
+               { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
+               { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
+               { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+               { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
+               { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
+               { text: "Crave", url: "http://news.cnet.com/crave/", frequency: 8 },
+               { text: "Wikipedia", url: "http://www.wikipedia.org/", frequency: 20 },
+               { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
+               { text: "Electronista", url: "http://www.electronista.com/", frequency: 3 },
+               { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },
+               { text: "LinkedIn", url: "http://www.linkedIn.com/", frequency: 9 },
+               { text: "Information Week",url:"http://www.informationweek.com/",frequency:0 },
+               { text: "Menucool", url: "http://www.menucool.com", frequency: 11 },
+               { text: "Tech Republic", url: "http://techrepublic.com/", frequency: 3 },
+               { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
+               { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
+               { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
+           ];	
+         	window.viewModel = { 
+                       dataList: ko.observableArray(tagview),
+                       title: ko.observable("Popular Sites"),
+                   };	        		
+                   ko.applyBindings(viewModel);
+                });
+      </script>
+   </body>
 </html>
 
 
@@ -254,7 +246,7 @@ var tagview = [
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img3.png" Caption="TagCloud with Knockout binding"%}
+{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img3.png"%}
 
 
 
@@ -273,7 +265,7 @@ Apply the plugin and property assigning to the **TagCloud** widget element throu
 
 To know more detail about the Angular binding, refer the following link location,
 
-http://help.syncfusion.com/ug/js/documents/angularjs.htm
+[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
 The following example depicts you the way to bind data to the **TagCloud** widget using angular support,
 
@@ -281,51 +273,48 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 <!doctype html>
 <html lang="en" ng-app="tagApp">
-<head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Tagcloud </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
-    <!--scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js">  </script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
-
-</head>
-<body ng-controller="TagCtrl">
-    <div id="techweblist" ej-tagcloud e-datasource="dataList" e-title="popular sites" />
-    <script>
-    var list = [
-{ text: "Google", url: "http://www.google.co.in", frequency: 12 },
-        { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
-        { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-        { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
-        { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
-        { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
-        { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
-        { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
-        { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
-        { text: "MSN", url: "http://www.msn.com/", frequency: 3 },
-        { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },
-        { text: "LinkedIn", url: "http://www.linkedIn.com/", frequency: 9 },
-        { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
-        { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
-        { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
-        { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
-        { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
-        { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
-    ];
-        angular.module('tagApp', ['ejangular'])
-        .controller('TagCtrl', function ($scope) {
-            $scope.dataList = list;
-        });
-    </script>
-</body>
+   <head>
+      <title>Essential Studio for JavaScript : Angular JS Support for Tagcloud </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+      <!--scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js">  </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
+   </head>
+   <body ng-controller="TagCtrl">
+      <div id="techweblist" ej-tagcloud e-datasource="dataList" e-title="popular sites" />
+      <script>
+         var list = [
+         { text: "Google", url: "http://www.google.co.in", frequency: 12 },
+             { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
+             { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
+             { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+             { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
+             { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
+             { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
+             { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
+             { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
+             { text: "MSN", url: "http://www.msn.com/", frequency: 3 },
+             { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },
+             { text: "LinkedIn", url: "http://www.linkedIn.com/", frequency: 9 },
+             { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
+             { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
+             { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
+             { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
+             { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
+             { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
+         ];
+             angular.module('tagApp', ['ejangular'])
+             .controller('TagCtrl', function ($scope) {
+                 $scope.dataList = list;
+             });
+      </script>
+   </body>
 </html>
 
 
@@ -335,7 +324,7 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 The following screenshot illustrates a **TagCloud** control using Angular databinding,
 
-{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img4.png" Caption="TagCloud with Angular binding"%}
+{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img4.png"%}
 
 
 

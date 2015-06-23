@@ -76,7 +76,7 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
 
 The output of **PercentageTextBox** controls with **two-way angular binding** is as follows.
 
-{% include image.html url="/js/PercentageTextBox/Angular-Support_images/Angular-Support_img1.png" Caption="PercentageTextBox at initial load"%}
+{% include image.html url="/js/PercentageTextBox/Angular-Support_images/Angular-Support_img1.png" %}
 
-{% include image.html url="/js/PercentageTextBox/Angular-Support_images/Angular-Support_img2.png" Caption="PercentageTextBox with Angular Binding"%}
+{% include image.html url="/js/PercentageTextBox/Angular-Support_images/Angular-Support_img2.png" %}
 

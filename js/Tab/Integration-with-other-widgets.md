@@ -22,26 +22,26 @@ Add the following **HTML** to render **Tab** with other widget.
 {% highlight html %}
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <p>Rating:</p>
-            <div class="dishRating">
-                <input id="pizzarating" type="text" class="rating" /><br />
-            </div>
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <p>Rating:</p>
+        <div class="dishRating">
+            <input id="pizzarating" type="text" class="rating" /><br />
         </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <p>Rating:</p>
-            <div class="dishRating">
-                <input id="sandwichrating" type="text" class="rating" />
-            </div>
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <p>Rating:</p>
+        <div class="dishRating">
+            <input id="sandwichrating" type="text" class="rating" />
+        </div>
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -64,12 +64,12 @@ Add the following styles to render **Tab**.
 {% highlight css %}
 
     
-    <style type="text/css" class="cssStyles">
-        .dishRating {
-            position: absolute;
-            margin: -31px 0px 0px 80px;
-        }       
-    </style>
+<style type="text/css" class="cssStyles">
+    .dishRating {
+        position: absolute;
+        margin: -31px 0px 0px 80px;
+    }       
+</style>
 
 
 {% endhighlight %}
@@ -78,7 +78,7 @@ Add the following styles to render **Tab**.
 
 The following screenshot illustrates the **Tab** content with rating control. 
 
-{% include image.html url="/js/Tab/Integration-with-other-widgets_images/Integration-with-other-widgets_img1.png" Caption="Tab content section with Rating Control"%}
+{% include image.html url="/js/Tab/Integration-with-other-widgets_images/Integration-with-other-widgets_img1.png" %}
 
 
 

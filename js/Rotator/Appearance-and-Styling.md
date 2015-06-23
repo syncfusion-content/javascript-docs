@@ -18,20 +18,20 @@ This property sets the **width** of a **Rotator** Item. The value set to this pr
 
   {% highlight js %}
   
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ slideWidth: "500px" });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: "500px" });
+    });
 
   {% endhighlight %}
   
   
   {% highlight js %}
 
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ slideWidth: 500 });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: 500 });
+    });
 
   {% endhighlight %}
 
@@ -43,20 +43,20 @@ This property sets the **height** of a **Rotator** Item. The value set to this p
 
   {% highlight js %}
 
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ slideHeight: "500px" });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideHeight: "500px" });
+    });
 
   {% endhighlight %}
   
   
   {% highlight js %}
   	
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ slideHeight: 500 });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideHeight: 500 });
+    });
 
 
   {% endhighlight %}

@@ -19,26 +19,26 @@ In the **HTML** page set a **&lt;div&gt;** element with dialog content for rende
 
 {% highlight html %}
 
-      <div id="rtlDialog" title="WinRT">
-        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications <span>including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more.</span>
-        It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
-      </div>
+<div id="rtlDialog" title="WinRT">
+   Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications <span>including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more.</span>
+   It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-
-    // Enable RTL to the Dialog control by setting enableRTL property as true
-    $("#rtlDialog").ejDialog({
-        enableRTL: true,
-        width: 550            
-    });
+    
+      // Enable RTL to the Dialog control by setting enableRTL property as true
+     $("#rtlDialog").ejDialog({
+         enableRTL: true,
+         width: 550
+     });
 
 
 {% endhighlight %}
 
 The output for **Dialog** when **enabelRTL** is “**True**” is as follows.
 
-{% include image.html url="/js/Dialog/RTL-Support_images/RTL-Support_img1.png" Caption="Dialog with enableRTL"%}
+{% include image.html url="/js/Dialog/RTL-Support_images/RTL-Support_img1.png" %}
 

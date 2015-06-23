@@ -17,38 +17,38 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 
 {% highlight html %}
 
-      <div class="cols-sample-area">
-        <div id="toolbarcontent">
-            <ul>
-                <li id="Left" title="Left">
-                    <div class="ToolbarItems LeftAlign_tool"></div>
-                </li>
-                <li id="Center" title="Center">
-                    <div class="ToolbarItems CenterAlign_tool"></div>
-                </li>
-                <li id="Right" title="Right">
-                    <div class="ToolbarItems RightAlign_tool"></div>
-                </li>
-                <li id="Justify" title="Justify">
-                    <div class="ToolbarItems Justify_tool"></div>
-                </li>
-            </ul>
-            <ul>
-                <li id="Bold" title="Bold">
-                    <div class="ToolbarItems Bold_tool"></div>
-                </li>
-                <li id="Italic" title="Italic">
-                    <div class="ToolbarItems Italic_tool"></div>
-                </li>
-                <li id="StrikeThrough" title="Strike Through">
-                    <div class="ToolbarItems StrikeThrough_tool"></div>
-                </li>
-                <li id="UndeLine" title="UnderLine">
-                    <div class="ToolbarItems Underline_tool"></div>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="cols-sample-area">
+   <div id="toolbarcontent">
+      <ul>
+         <li id="Left" title="Left">
+            <div class="ToolbarItems LeftAlign_tool"></div>
+         </li>
+         <li id="Center" title="Center">
+            <div class="ToolbarItems CenterAlign_tool"></div>
+         </li>
+         <li id="Right" title="Right">
+            <div class="ToolbarItems RightAlign_tool"></div>
+         </li>
+         <li id="Justify" title="Justify">
+            <div class="ToolbarItems Justify_tool"></div>
+         </li>
+      </ul>
+      <ul>
+         <li id="Bold" title="Bold">
+            <div class="ToolbarItems Bold_tool"></div>
+         </li>
+         <li id="Italic" title="Italic">
+            <div class="ToolbarItems Italic_tool"></div>
+         </li>
+         <li id="StrikeThrough" title="Strike Through">
+            <div class="ToolbarItems StrikeThrough_tool"></div>
+         </li>
+         <li id="UndeLine" title="UnderLine">
+            <div class="ToolbarItems Underline_tool"></div>
+         </li>
+      </ul>
+   </div>
+</div>
 
 {% endhighlight %}
 
@@ -128,6 +128,3 @@ The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set t
     });
 
 {% endhighlight %}
-
-
-

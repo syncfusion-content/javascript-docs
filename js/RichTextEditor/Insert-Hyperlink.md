@@ -19,9 +19,9 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 
 {% highlight html %}
 
-    <div class="rte">
-        <textarea id="rteSample"></textarea>
-    </div>
+<div class="rte">
+    <textarea id="rteSample"></textarea>
+</div>
 
 {% endhighlight %}
 
@@ -36,5 +36,5 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/Insert-Hyperlink_images/Insert-Hyperlink_img1.png" Caption="Show case for inserting hyperlink in RTE content area"%}
+{% include image.html url="/js/RichTextEditor/Insert-Hyperlink_images/Insert-Hyperlink_img1.png" %}
 

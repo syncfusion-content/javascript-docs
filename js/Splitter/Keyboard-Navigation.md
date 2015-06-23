@@ -70,14 +70,14 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% highlight html %}
 
-        <div id="spliter">
-            <div>
-                <div class="cont">Pane 1 </div>
-            </div>
-            <div>
-                <div class="cont">Pane 2 </div>
-            </div>
-        </div>
+<div id="spliter">
+    <div>
+        <div class="cont">Pane 1 </div>
+    </div>
+    <div>
+        <div class="cont">Pane 2 </div>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -88,7 +88,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
         height: 250, width: 400,
         properties: [{}, { paneSize: 80 }]
     });
-
+    
     //Control focus key
     $(document).on("keydown", function (e) {
         if (e.altKey && e.keyCode === 74) { // j- key code.
@@ -101,7 +101,5 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 Run the sample and press **Alt + J** to focus the **Splitter** widget. Perform provided functionality by using keyboard shortcuts.
 
-
-
-{% include image.html url="/js/Splitter/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" Caption="Splitter focused with keyboard shortcut"%}
+{% include image.html url="/js/Splitter/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" %}
 

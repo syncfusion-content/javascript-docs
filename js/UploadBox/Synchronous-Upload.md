@@ -21,12 +21,12 @@ In the **HTML** page, create a form with action and post method and then add the
 
 {% highlight html %}
 
-    <div class="control">
-       <form id="upload" method="post" action="saveFiles.ashx">
+<div class="control">
+    <form id="upload" method="post" action="saveFiles.ashx">
          <div id="Uploadbox"></div>
          <input type="submit" value="submit" />
-     </form>
-  </div>
+    </form>
+</div>
 
 {% endhighlight %}
 
@@ -51,5 +51,5 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Synchronous-Upload_images/Synchronous-Upload_img1.png" Caption="Uploadbox with synchronous option"%}
+{% include image.html url="/js/UploadBox/Synchronous-Upload_images/Synchronous-Upload_img1.png" %}
 

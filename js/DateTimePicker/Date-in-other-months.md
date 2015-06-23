@@ -17,25 +17,23 @@ Add the following code in your **HTML** page.
 
 
 {% highlight html %}
-
   
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
+<div class="control">
+   <input type="text" id="dateTime" />
+</div>
+
+{% endhighlight %}
 
 
-  {% endhighlight %}
-
-
-  {% highlight js %}
+{% highlight js %}
 
     //  Add the code in your script section to render DateTimePicker without displaying other month dates in current month
     $('#dateTime').ejDateTimePicker({
-        showOtherMonths: false,
-        width: '200px',
+       showOtherMonths: false,
+       width: '200px',
     });
 
-  {% endhighlight %}
+{% endhighlight %}
   
-{% include image.html url="/js/DateTimePicker/Date-in-other-months_images/Date-in-other-months_img1.png" Caption="Showcase for DateTimePicker without other month dates"%}
+{% include image.html url="/js/DateTimePicker/Date-in-other-months_images/Date-in-other-months_img1.png"%}
 

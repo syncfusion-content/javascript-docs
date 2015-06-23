@@ -9,7 +9,7 @@ documentation: ug
 
 # Integration
 
-**Angular binding**
+##Angular binding
 
 AngularJS is an open-source web application framework. AngularJS extends **HTML** with new attributes. AngularJS is a **JavaScript** framework. You can add it to an **HTML** page with a **&lt;script&gt;** tag. AngularJS extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in the following link location. 
 
@@ -154,7 +154,7 @@ Add the following code in your style section.
 
 The following screenshot displays the output of the above code example.       
 
-{% include image.html url="/js/Menu/Integration_images/Integration_img1.png" Caption="Angular binding of Menu Control"%}
+{% include image.html url="/js/Menu/Integration_images/Integration_img1.png" %}
 
 
 ##Knockout binding
@@ -256,6 +256,6 @@ Add the following code in your style section.
 
 The following screenshot displays the output of the above code.              
 
-{% include image.html url="/js/Menu/Integration_images/Integration_img2.png" Caption="Knockout binding of Menu Control"%}
+{% include image.html url="/js/Menu/Integration_images/Integration_img2.png" %}
 
 

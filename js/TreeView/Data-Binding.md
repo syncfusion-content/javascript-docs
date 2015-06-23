@@ -104,7 +104,7 @@ In the HTML page, add a &lt;div&gt; element to configure TreeView.
 
 {% highlight html %}
 
-    <div id="treeView"></div>
+<div id="treeView"></div>
 
 {% endhighlight %}
 
@@ -131,16 +131,23 @@ In the HTML page, add a &lt;div&gt; element to configure TreeView.
                    { id: 18, pid: 16, name: "Folder(D)" },
                    { id: 19, pid: 16, name: "Folder(F)" },
                   ];
-    $("#treeView"). ejTreeView ({
-            // mapping JSON Data Source with the fields property of TreeView
-            fields: { dataSource: localData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }            
-     });
+    $("#treeView").ejTreeView({
+        // mapping JSON Data Source with the fields property of TreeView
+        fields: {
+            dataSource: localData,
+            id: "id",
+            parentId: "pid",
+            text: "name",
+            hasChild: "hasChild",
+            expanded: "expanded"
+        }
+    });
 
 {% endhighlight %}
 
 The output for **TreeView** control with **Local Data** binding is as follows.
 
-{% include image.html url="/js/TreeView/Data-Binding_images/Data-Binding_img1.png" Caption="TreeView with local data-binding"%}
+{% include image.html url="/js/TreeView/Data-Binding_images/Data-Binding_img1.png"%}
 
 ## Remote Data
 
@@ -155,7 +162,7 @@ In the HTML page, add a &lt;div&gt; element to configure TreeView.
 {% highlight html %}
 
 
-      <div id="treeView"></div>
+<div id="treeView"></div>
 
 {% endhighlight %}
 
@@ -166,11 +173,11 @@ Define dataManager and assign remote data source to it. Here dataManager gets th
 {% highlight js %}
 
       // DataMangaer creation
-        var dataManager = ej.DataManager ({
-            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-        });
-        // query creation
-        var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
+      var dataManager = ej.DataManager({
+          url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+      });
+      // query creation
+      var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 
 
 {% endhighlight %}
@@ -180,20 +187,28 @@ Assign dataSource and query property values to bind the remote data. Map the cor
 
 {% highlight js %}
 
-
-        $("#treeView").ejTreeView({       
-           width: 300,
-           height:300,
-           fields: {
-               dataSource: dataManager, query: query, id: "CategoryID", text: "CategoryName",
-               child: { dataSource: dataManager, tableName: "Products", id: "ProductID", parentId: "CategoryID", text: "ProductName" }
-           }
-       });
+    $("#treeView").ejTreeView({
+        width: 300,
+        height: 300,
+        fields: {
+            dataSource: dataManager,
+            query: query,
+            id: "CategoryID",
+            text: "CategoryName",
+            child: {
+                dataSource: dataManager,
+                tableName: "Products",
+                id: "ProductID",
+                parentId: "CategoryID",
+                text: "ProductName"
+            }
+        }
+    });
 
 
 {% endhighlight %}
 
 The output for **TreeView** control with **Remote Data** binding is as follows.
 
-{% include image.html url="/js/TreeView/Data-Binding_images/Data-Binding_img2.png" Caption="TreeView with remote data binding"%}
+{% include image.html url="/js/TreeView/Data-Binding_images/Data-Binding_img2.png"%}
 

@@ -19,46 +19,46 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 {% highlight html %}
 
-    <ul id="treeView">
-        <li class="expanded">Favorites
-                <ul>
+<ul id="treeView">
+    <li class="expanded">Favorites
+            <ul>
 
-                    <li>Desktop</li>
-                    <li>Downloads</li>
-                    <li>Recent places</li>
-                </ul>
-        </li>
-        <li class="expanded">Libraries
-                <ul>
-                    <li>Documents
-                        <ul>
-                            <li>My Documents</li>
-                            <li>Public Documents</li>
-                        </ul>
-                    </li>
-                    <li>Pictures
-                        <ul>
-                            <li>My Pictures</li>
-                            <li>Public Pictures</li>
-                        </ul>
-                    </li>
-                    <li>Music
-                        <ul>
-                            <li>My Music</li>
-                            <li>Public Music</li>
-                        </ul>
-                    </li>
-                    <li>Subversion</li>
-                </ul>
-        </li>
-        <li>Computer
-                <ul>
-                    <li>Folder(C)</li>
-                    <li>Folder(D)</li>
-                    <li>Folder(F)</li>
-                </ul>
-        </li>
-    </ul>
+                <li>Desktop</li>
+                <li>Downloads</li>
+                <li>Recent places</li>
+            </ul>
+    </li>
+    <li class="expanded">Libraries
+            <ul>
+                <li>Documents
+                    <ul>
+                        <li>My Documents</li>
+                        <li>Public Documents</li>
+                    </ul>
+                </li>
+                <li>Pictures
+                    <ul>
+                        <li>My Pictures</li>
+                        <li>Public Pictures</li>
+                    </ul>
+                </li>
+                <li>Music
+                    <ul>
+                        <li>My Music</li>
+                        <li>Public Music</li>
+                    </ul>
+                </li>
+                <li>Subversion</li>
+            </ul>
+    </li>
+    <li>Computer
+            <ul>
+                <li>Folder(C)</li>
+                <li>Folder(D)</li>
+                <li>Folder(F)</li>
+            </ul>
+    </li>
+</ul>
 
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ Add the **cssClass** property to TreeView.
 
 The following screenshot displays the **TreeView** component, configured based on CSS class.
 
-{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="TreeView based on CSS class"%}
+{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
 
 ## Adjusting TreeView Size
 
@@ -110,16 +110,79 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 {% highlight html %}
 
-    <ul id="treeView">
-        <li class="expanded">Favorites
+<ul id="treeView">
+    <li class="expanded">Favorites
+        <ul>
+
+            <li>Desktop</li>
+            <li>Downloads</li>
+            <li>Recent places</li>
+        </ul>
+    </li>
+    <li class="expanded">Libraries
+        <ul>
+            <li>Documents
+                <ul>
+                    <li>My Documents</li>
+                    <li>Public Documents</li>
+                </ul>
+            </li>
+            <li>Pictures
+                <ul>
+                    <li>My Pictures</li>
+                    <li>Public Pictures</li>
+                </ul>
+            </li>
+            <li>Music
+                <ul>
+                    <li>My Music</li>
+                    <li>Public Music</li>
+                </ul>
+            </li>
+            <li>Subversion</li>
+        </ul>
+    </li>
+    <li>Computer
+        <ul>
+            <li>Folder(C)</li>
+            <li>Folder(D)</li>
+            <li>Folder(F)</li>
+        </ul>
+    </li>
+</ul>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    $("#treeView").ejTreeView({ height: "75px" });
+
+{% endhighlight %}
+
+The following screenshot displays the appearance of **height** of the **TreeView** component.
+
+{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
+
+### Width
+
+You can customize the **width** of the **TreeView** control by using the **width** property. By specifying the **width** property, you can change the **width** value in the document.
+
+The following steps explain how to use the **width** property for **TreeView**.
+
+In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
+
+{% highlight html %}
+
+<ul id="treeView">
+    <li class="expanded">Favorites
             <ul>
 
                 <li>Desktop</li>
                 <li>Downloads</li>
                 <li>Recent places</li>
             </ul>
-        </li>
-        <li class="expanded">Libraries
+    </li>
+    <li class="expanded">Libraries
             <ul>
                 <li>Documents
                     <ul>
@@ -141,78 +204,15 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
                 </li>
                 <li>Subversion</li>
             </ul>
-        </li>
-        <li>Computer
+    </li>
+    <li>Computer
             <ul>
                 <li>Folder(C)</li>
                 <li>Folder(D)</li>
                 <li>Folder(F)</li>
             </ul>
-        </li>
-    </ul>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-    $("#treeView").ejTreeView({ height: "75px" });
-
-{% endhighlight %}
-
-The following screenshot displays the appearance of **height** of the **TreeView** component.
-
-{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="TreeView with height property"%}
-
-### Width
-
-You can customize the **width** of the **TreeView** control by using the **width** property. By specifying the **width** property, you can change the **width** value in the document.
-
-The following steps explain how to use the **width** property for **TreeView**.
-
-In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
-
-{% highlight html %}
-
-    <ul id="treeView">
-        <li class="expanded">Favorites
-                <ul>
-
-                    <li>Desktop</li>
-                    <li>Downloads</li>
-                    <li>Recent places</li>
-                </ul>
-        </li>
-        <li class="expanded">Libraries
-                <ul>
-                    <li>Documents
-                        <ul>
-                            <li>My Documents</li>
-                            <li>Public Documents</li>
-                        </ul>
-                    </li>
-                    <li>Pictures
-                        <ul>
-                            <li>My Pictures</li>
-                            <li>Public Pictures</li>
-                        </ul>
-                    </li>
-                    <li>Music
-                        <ul>
-                            <li>My Music</li>
-                            <li>Public Music</li>
-                        </ul>
-                    </li>
-                    <li>Subversion</li>
-                </ul>
-        </li>
-        <li>Computer
-                <ul>
-                    <li>Folder(C)</li>
-                    <li>Folder(D)</li>
-                    <li>Folder(F)</li>
-                </ul>
-        </li>
-    </ul>
+    </li>
+</ul>
 
 {% endhighlight %}
 
@@ -225,5 +225,5 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 The following screenshot displays the appearance of width of the **TreeView** component.
 
-{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="TreeView with width property"%}
+{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img3.png"%}
 

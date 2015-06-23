@@ -147,7 +147,7 @@ And also you can add image, image styles, sprite css class, query and html attri
 
 {% endhighlight %}
 
-{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img1.png" Caption="ToolBar control bounded to Local Data"%}
+{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img1.png" %}
 
 
 ## Remote data
@@ -158,7 +158,7 @@ To bind Remote data to **Toolbar**, use the following code example.
 
 {% highlight html %}
 
-    <div id="toolbarcontent"></div>
+<div id="toolbarcontent"></div>
 
 {% endhighlight %}
 
@@ -185,7 +185,7 @@ To bind Remote data to **Toolbar**, use the following code example.
 {% endhighlight %}
 
 
-{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img2.png" Caption="ToolBar control bounded to Remote Data"%}
+{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img2.png" %}
 
 ## Knockout binding
 
@@ -205,7 +205,7 @@ For more information about the knockout binding, refer the following link locati
 [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
 
-> {% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img3.png" Caption="knockout binding"%}
+> {% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img3.png"%}
 
 Note: Add the following script files along with the specified code to access knockout binding. It contains JS library for knockout binding.
 
@@ -222,27 +222,28 @@ The following code example depicts you the way to bind data to the **Toolbar** t
 {% highlight html %}
 
 
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
-        <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-        <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
-    </head>
-    <body>
-        <div class="cols-sample-area">
-            <div id="toolbarcontent" data-bind="ejToolbar:{ dataSource:dataList, fields:{ id:'iconid', spriteCssClass:'spriteCss', text:'text'}, width:width }"></div>
-        </div>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+   </head>
+   <body>
+      <div class="cols-sample-area">
+         <div id="toolbarcontent" data-bind="ejToolbar:{ dataSource:dataList, fields:{ id:'iconid', spriteCssClass:'spriteCss', text:'text'}, width:width }"></div>
+      </div>
+   </body>
+</html>
+
     
  {% endhighlight %}
     
- {% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img4.png" Caption="Toolbar with Knockout support"%}
+ {% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img4.png"%}
     
 
 ## Angular binding
@@ -261,9 +262,7 @@ To know more detail about the Angular binding, refer the following link location
 [http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
 
-> {% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img5.png" Caption=""%}
-
-Note: Add the following script files as given in the below example to access knockout binding. It contains JS library for angular binding.**_
+**Note**: Add the following script files as given in the below example to access knockout binding. It contains JS library for angular binding.
 
 * Angular.min.js
 * ej.widget.angular.min.js
@@ -272,37 +271,30 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% highlight html %}
     
-    
-    <!DOCTYPE html>
-    <html lang="en" ng-app="toolApp">
-    <head>
-    <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
-    <!--scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-    
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-    
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"> </script>
-    </head>
-    <body ng-controller="ToolCtrl">
-    
-        <div class="cols-sample-area">
-            <div id="toolbarcontent" ej-toolbar e-datasource="dataList" e-width="230px"
-                e-fields-id="iconid" e-fields-spritecssclass="spriteCss">
-            </div>
-        </div>
-    
-    </body>
-    </html>
+   
+<!DOCTYPE html>
+<html lang="en" ng-app="toolApp">
+   <head>
+      <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
+      <!--scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"> </script>
+   </head>
+   <body ng-controller="ToolCtrl">
+      <div class="cols-sample-area">
+         <div id="toolbarcontent" ej-toolbar e-datasource="dataList" e-width="230px"
+            e-fields-id="iconid" e-fields-spritecssclass="spriteCss">
+         </div>
+      </div>
+   </body>
+</html>
 
 {% endhighlight %}
 
@@ -403,5 +395,5 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% endhighlight %}
 
-{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img6.png" Caption="Toolbar with Angular support"%}
+{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img6.png"%}
 

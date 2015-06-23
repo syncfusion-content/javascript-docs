@@ -9,16 +9,12 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes you on how to create a QuizApp and RegistrationApp using Essential JavaScript RadioButton control and use the features available in it.
-
-## Create your first RadioButton in JavaScript
-
-**Essential JavaScript** **RadioButton** supports RTL, custom skins and events to display customized RadioButtons. In this example, you can learn how to use RadioButtons in a Quiz application. The following guidelines show you how to use the **RadioButton** to select the answers in the application and get the selected items. The following screenshot displays a sample Quiz application.
+This section briefly describes you on how to create a QuizApp and RegistrationApp using Essential JavaScript RadioButton control and use the features available in it.**Essential JavaScript** **RadioButton** supports RTL, custom skins and events to display customized RadioButtons. In this example, you can learn how to use RadioButtons in a Quiz application. The following guidelines show you how to use the **RadioButton** to select the answers in the application and get the selected items. The following screenshot displays a sample Quiz application.
 
 
-{% include image.html url="/js/RadioButton/Getting-Started_images/Getting-Started_img1.png" Caption="Quiz application"%}
+{% include image.html url="/js/RadioButton/Getting-Started_images/Getting-Started_img1.png" %}
 
-### Create a RadioButton in a Quiz Application
+## Create a RadioButton in a Quiz Application
 
 **Essential JavaScript RadioButton** is created by using a simple input textbox element as follows.
 
@@ -49,6 +45,7 @@ Add input element to render a **RadioButton**.
 
 
 {% highlight html %}
+
    <div>
         1. What is the Expansion for MVC ? <br />
         <table>
@@ -61,7 +58,7 @@ Add input element to render a **RadioButton**.
                     <input type="radio" name="small1" id="Radio3" /><label for="Radio3" >Model Visual Controller</label></td>
             </tr>
         </table>
-        <br><br><br>
+        <br/><br/><br/>
         2.  What is the Expanson for USB ?<br />
         <table>
             <tr>
@@ -73,7 +70,7 @@ Add input element to render a **RadioButton**.
                     <input type="radio" name="small2" id="Radio6" /><label for="Radio6" >Universal Serial Bus</label></td>
             </tr>
         </table>
-        <br><br><br>
+        <br/><br/><br/>
         3.   What is the Expanson for HTML ?<br />
         <table>
             <tr>
@@ -85,7 +82,7 @@ Add input element to render a **RadioButton**.
                     <input type="radio" name="small3" id="Radio9" /><label for="Radio9" >Hyper Text Makeup Loader</label></td>
             </tr>
         </table>
-        <br><br><br>
+        <br/><br/><br/>
        <button id="submitid" onclick="button()">Submit</button>
    </div>
    
@@ -154,5 +151,5 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/RadioButton/Getting-Started_images/Getting-Started_img2.png" Caption="Quiz application"%}
+{% include image.html url="/js/RadioButton/Getting-Started_images/Getting-Started_img2.png" %}
 

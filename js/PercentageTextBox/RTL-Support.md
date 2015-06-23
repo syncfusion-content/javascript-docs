@@ -21,18 +21,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -50,5 +50,5 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **PercentageTextBox** when **enableRTL** is **“true”** is as follows. 
 
-{% include image.html url="/js/PercentageTextBox/RTL-Support_images/RTL-Support_img1.png" Caption="PercentageTextBox with enableRTL"%}
+{% include image.html url="/js/PercentageTextBox/RTL-Support_images/RTL-Support_img1.png" %}
 

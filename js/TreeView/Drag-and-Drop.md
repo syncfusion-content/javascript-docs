@@ -20,64 +20,66 @@ In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configur
 {% highlight html %}
 
 
-    <ul id="treeView">
-        <li class="expanded">Favorites
-                <ul>
-
-                    <li>Desktop</li>
-                    <li>Downloads</li>
-                    <li>Recent places</li>
-                </ul>
-        </li>
-        <li class="expanded">Libraries
-                <ul>
-                    <li>Documents
-                        <ul>
-                            <li>My Documents</li>
-                            <li>Public Documents</li>
-                        </ul>
-                    </li>
-                    <li>Pictures
-                        <ul>
-                            <li>My Pictures</li>
-                            <li>Public Pictures</li>
-                        </ul>
-                    </li>
-                    <li>Music
-                        <ul>
-                            <li>My Music</li>
-                            <li>Public Music</li>
-                        </ul>
-                    </li>
-                    <li>Subversion</li>
-                </ul>
-        </li>
-        <li>Computer
-                <ul>
-                    <li>Folder(C)</li>
-                    <li>Folder(D)</li>
-                    <li>Folder(F)</li>
-                </ul>
-        </li>
-    </ul>
+<ul id="treeView">
+   <li class="expanded">
+      Favorites
+      <ul>
+         <li>Desktop</li>
+         <li>Downloads</li>
+         <li>Recent places</li>
+      </ul>
+   </li>
+   <li class="expanded">
+      Libraries
+      <ul>
+         <li>
+            Documents
+            <ul>
+               <li>My Documents</li>
+               <li>Public Documents</li>
+            </ul>
+         </li>
+         <li>
+            Pictures
+            <ul>
+               <li>My Pictures</li>
+               <li>Public Pictures</li>
+            </ul>
+         </li>
+         <li>
+            Music
+            <ul>
+               <li>My Music</li>
+               <li>Public Music</li>
+            </ul>
+         </li>
+         <li>Subversion</li>
+      </ul>
+   </li>
+   <li>
+      Computer
+      <ul>
+         <li>Folder(C)</li>
+         <li>Folder(D)</li>
+         <li>Folder(F)</li>
+      </ul>
+   </li>
+</ul>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-
         // Enable allowDragAndDrop for TreeView control as follows.
-
-        $("#treeView").ejTreeView({              
-              allowDragAndDrop: true,              
+        $("#treeView").ejTreeView({
+            allowDragAndDrop: true,
         });
-
 
 {% endhighlight %}
 
 The output for **TreeView** when **allowDragAndDrop** is set to **True**.
 
-{% include image.html url="/js/TreeView/Concepts-and-Features/Drag-and-Drop_images/Drag-and-Drop_img1.png" Caption="Drag And Drop TreeView"%}
+{% include image.html url="/js/TreeView/Concepts-and-Features/Drag-and-Drop_images/Drag-and-Drop_img1.png"%}
 
 ## Allow Drop Child
 
@@ -97,7 +99,6 @@ You can drag the root node and drop it into the same level of node that is a sib
 {% highlight js %}
 
     $("#treeView").ejTreeView({ allowDropSibling: true });
-
 
 {% endhighlight %}
 

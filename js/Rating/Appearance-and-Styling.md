@@ -19,17 +19,17 @@ The following code example is used to render the **Rating** control without **to
 
 {% highlight html %}
 
-   <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-                </td>
-            </tr>
-        </table>
-    </div>
+<div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
+   <table>
+      <tr>
+         <td valign="top">Rating:
+         </td>
+         <td>
+            <input id="rating" type="text" />
+         </td>
+      </tr>
+   </table>
+</div>
     
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ The following code example is used to render the **Rating** control without **to
 
 {% highlight js %}
 
-     $("#rating").ejRating({ showTooltip:false });
+ $("#rating").ejRating({ showTooltip:false });
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ The following code example is used to render the **Rating** control without **to
 
 The following screenshot illustrates **Rating** without **Tooltip**.
 
-{% include image.html url="/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Rating without Tooltip"%}
+{% include image.html url="/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
 
 ## Adjusting Rating Size
 
@@ -59,18 +59,18 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight html %}
 
-    <div style="margin-top: 0px;">
-        <h4>Rating:</h4>
-        <input id="rating" type="text" class="rating" />
-    </div>
+<div style="margin-top: 0px;">
+   <h4>Rating:</h4>
+   <input id="rating" type="text" class="rating" />
+</div>
  
  {% endhighlight %}
  
 {% highlight js %}
 
-      // Add the following script to render Rating with customized shapeWidth and shapeHeight.
+  // Add the following script to render Rating with customized shapeWidth and shapeHeight.
 
-      $("#rating").ejRating({ value: 4, shapeWidth: 29, shapeHeight: 29 });  
+$("#rating").ejRating({ value: 4, shapeWidth: 29, shapeHeight: 29 });  
 
 {% endhighlight %}
 
@@ -129,7 +129,7 @@ The following code example is used to render the **Rating** control with customi
 
 The following screenshot illustrates **Rating** with customized **shapeWidth** and **shapeHeight**.
 
-{% include image.html url="/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Rating with customized shapeWidth and shapeHeight"%}
+{% include image.html url="/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
 
 ## Theme
 
@@ -160,27 +160,26 @@ The following code example is used to render the **Rating** control with **custo
 
 {% highlight html %}
 
-   <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-
-                </td>
-            </tr>
-        </table>
-    </div>
+<div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
+   <table>
+      <tr>
+         <td valign="top">Rating:
+         </td>
+         <td>
+            <input id="rating" type="text" />
+         </td>
+      </tr>
+   </table>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
 
-        // Add the following script to render Rating with customized style.
-        
-        $("#rating").ejRating({ cssClass: "custom" });
+// Add the following script to render Rating with customized style.
+
+$("#rating").ejRating({ cssClass: "custom" });
    
 
 {% endhighlight %}
@@ -190,10 +189,10 @@ The following code example is used to render the **Rating** control with **custo
 {% highlight css %}
 
 <style type="text/css">
-        .custom {
-            background-color: greenyellow;
-        }
-    </style>
+   .custom {
+       background-color: greenyellow;
+   }
+</style>
 
 
 {% endhighlight %}
@@ -202,5 +201,5 @@ The following code example is used to render the **Rating** control with **custo
 
 The following screenshot illustrates the **Rating** with customized style.
 
-{% include image.html url="/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Rating with customized style"%}
+{% include image.html url="/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img3.png"%}
 

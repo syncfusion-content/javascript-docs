@@ -11,7 +11,7 @@ documentation: ug
 
 **TimePicker** widget provides you an option to change the time format.
 
-### Steps to change Time Format of TimePicker widget
+## Steps to change Time Format of TimePicker widget
 
 The following steps explains you to change the time format for the **TimePicker**.
 
@@ -19,7 +19,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-    <input type="text" id="time" />
+<input type="text" id="time" />
 
 {% endhighlight %}
 
@@ -39,5 +39,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/TimePicker/Time-Format_images/Time-Format_img1.png" Caption="TimePicker with time format."%}
+{% include image.html url="/js/TimePicker/Time-Format_images/Time-Format_img1.png" %}
 

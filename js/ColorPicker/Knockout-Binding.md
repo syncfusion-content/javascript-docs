@@ -22,7 +22,7 @@ Two types of knockout binding is supported,
 
 For more information about **Knockout** binding, you can refer to the online documentation in the following link location,
 
-http://help.syncfusion.com/ug/js/documents/knockoutjs.htm
+[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
 The following example depicts how you can bind data to the **ColorPicker** widget through **knockout** support that enables and populates data to a **ColorPicker** widget based on the value set to the other **ColorPicker** widget.
 
@@ -51,7 +51,7 @@ The following example depicts how you can bind data to the **ColorPicker** widge
                 <div class="frame" style="width: 420px">
                     <div id="control" style="float: left; width: 70%; margin-left: 10px">
                         <input id="colorpick" data-bind="ejColorPicker: { value: value, modelType: palette }" />
-                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;"/></h6>
                     </div>
                     <div id="binding" style="float: left; width: 23%">
                         <input id="colorpick1" data-bind="ejColorPicker: { value: value, modelType: picker }" />
@@ -96,5 +96,5 @@ The following screenshot displays the output of the above code example.
 
 
 
-{% include image.html url="/js/ColorPicker/Knockout-Binding_images/Knockout-Binding_img1.png" Caption="ColorPicker with KnockOut Support"%}
+{% include image.html url="/js/ColorPicker/Knockout-Binding_images/Knockout-Binding_img1.png" %}
 
