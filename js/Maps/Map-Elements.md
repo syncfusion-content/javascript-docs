@@ -17,7 +17,7 @@ Markers are notes that is used to leave some message on the map.
 
 There are two ways to set marker for map.
 
-1. Using markers and marker template
+1. Marker and marker template
 
 2. Adding marker objects to map.
 
@@ -25,7 +25,7 @@ There are two ways to set marker for map.
 
 The **markers** property has a list of objects that contains the data for Annotation. You can visualize these data by using **markerTemplate** property.
 
-{% highlight html %}
+{% highlight js %}
 
     var markers = [
         { latitude: 37.0000, longitude: -120.0000, city: "California" },
@@ -162,11 +162,11 @@ Gets or sets the tooltip template for bubbles.</td></tr>
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the **maxValue**, **minValue**, and **valuePath** properties as illustrated in the following code sample.
 
-> _**Note:**_ Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section.
+>**Note**_: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section._
 
 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -259,11 +259,11 @@ The map legend size can be modified using **height** and **width** properties in
 
 The Layer shape type legends can be generated for each color mappings in shape settings. 
 
-> _**Note:**_ Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred.
+>**Note**_: Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred._
 
 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -299,11 +299,11 @@ You can provide the title for interactive legend by using **title** property in 
 
 You can provide the left and right labels to interactive legend by using **leftLabel** and **rightLabel** properties in **legendSettings**. 
 
-> _**Note:**_ Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
+>**Note**_: Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred._
 
 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -336,7 +336,7 @@ You can provide the left and right labels to interactive legend by using **leftL
 
 A bubble legend feature is used to provide the key (legend) for another map element bubble. You can activate the Bubble legend by setting the enum “type” in legendSettings as “bubble” and this enables you to easily identify what value a particular bubble is representing.
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#map").ejMap({

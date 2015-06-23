@@ -111,7 +111,7 @@ Populate the TreeMap data in JSON object. For example, you can use population da
 
 
 
-> _**Note:**_ Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population)
+>**Note**_: Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population)._
 
 The final **HTML** file is illustrated in the following code sample.
 
@@ -285,6 +285,7 @@ You can customize the Leaf level TreeMap items using leafItemSettings. The Label
                 leafItemSettings: { labelPath: "Region" }
             });
         });
+    </script>
 
 
 {% endhighlight %}
@@ -343,7 +344,7 @@ The following screenshot displays labels in a **TreeMap** control.
 
 {% include image.html url="/js/TreeMap/Getting-Started_images/Getting-Started_img6.png"%}
 
-> _**Note:**_ Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population)
+>**Note**_: Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population)._
 
 
 

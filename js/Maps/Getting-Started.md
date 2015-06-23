@@ -296,7 +296,7 @@ You can customize the shape’s color by using **fill**, **stroke** and **stroke
 
 The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The **from** and **to** properties defines the value ranges and the **gradientColors** property defines the equivalent color ranges respective to their value ranges.
 
-> _**Note:**_ The enableGradient property value should be true to apply gradient colors for maps
+>**Note**_: The enableGradient property value should be true to apply gradient colors for maps._
 
 
 

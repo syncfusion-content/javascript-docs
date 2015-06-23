@@ -19,7 +19,7 @@ The **selectionColor** property is used to get or set the selected shape color. 
 
 You can select the shape by tapping on the shape. The Single selection is enabled by the **enableSelection** property of shape layer. When **enableSelection** is set to false, the shapes cannot be selected. 
 
-{% highlight html %}
+{% highlight js %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -67,7 +67,7 @@ The following properties are related to the zooming feature of the **Maps** cont
 
 The **level** property determines the map’s scale size when zooming. The default value of **level** is 1. 
 
-> _**Note:**_ level cannot be less than 1
+>**Note**_: level cannot be less than 1_
 
 ###EnableZoom
 
@@ -81,7 +81,7 @@ The **minValue** property is used to set the minimum zoom level of the map.
 
 The **maxValue** property is used to set the maximum zoom level of the map.
 
-{% highlight html %}
+{% highlight js %}
 
 
         jQuery(function($) {
@@ -117,7 +117,7 @@ Maps can be zoomed using the following options also,
 
 You can zoom the Maps using **zoom** method. The zoom method contains parameter zoom value. The map can be zoomed or scaled based on zoom value parameter.
 
-{% highlight html %}
+{% highlight js %}
  
         $("#map").ejMap("zoom", 2);
 
@@ -142,7 +142,7 @@ You can enable this feature by setting **enableZoomOnSelection** property value 
 
 When **enableZoomOnSelection** property is set to true, then, zoom on double click is muted.
 
-{% highlight html %}
+{% highlight js %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -201,7 +201,7 @@ Zoom level of the map</td></tr>
 
 The panning feature enables map navigation. The **enablePan** property is used to enable or disable the panning support.
 
-{% highlight html %}
+{% highlight js %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -222,7 +222,7 @@ The panning feature enables map navigation. The **enablePan** property is used t
 
 
 
-{% highlight html %}
+{% highlight js %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
@@ -264,7 +264,7 @@ The navigation control can be positioned in following locations within the conta
 
 You can set this option by using **dockPosition** property in **navigationControl**.
 
-{% highlight html %}
+{% highlight js %}
 
         jQuery(function($) {
             $("#mapContainer").ejMap({
