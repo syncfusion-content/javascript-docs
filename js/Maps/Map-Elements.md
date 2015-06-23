@@ -21,7 +21,7 @@ There are two ways to set marker for map.
 
 2. Adding marker objects to map.
 
-###Using markers and marker template 
+###Marker and Marker Template 
 
 The **markers** property has a list of objects that contains the data for Annotation. You can visualize these data by using **markerTemplate** property.
 
@@ -55,16 +55,14 @@ The **markers** property has a list of objects that contains the data for Annota
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img1.png" Caption="Map with markers"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img1.png"%}
 
 ###Adding Marker objects to map
 
 Without datasource, n number of markers can be added to shape layers with **markers** property. Each marker object contains the following list of properties.
 
 * **label** - Text that displays some information about the annotation in text format.
-
 * **latitude** - Latitude point determine the Y-axis position of annotation.
-
 * **longitude** - Longitude point determine the X-axis position of annotation.
 
 
@@ -101,7 +99,7 @@ Without datasource, n number of markers can be added to shape layers with **mark
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img2.png" Caption="Map with label"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img2.png"%}
 
 ##Bubbles
 
@@ -109,16 +107,15 @@ Bubbles in the **Maps** control represent the underlying data values of the map.
 
 Bubbles are included when data binding and the **bubbleSettings** is set to the shape layers. 
 
-###Properties available in bubble setting
+###Properties
 
-_Property table_
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 maxValue</td><td>
@@ -204,13 +201,13 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img3.png" Caption="Map with bubbles"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img3.png"%}
 
 ##Legend
 
 A legend is a key used on a map, contains swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying you, and can be represented in various colors, shapes or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
 
-###Visibility of Legend
+###Visibility
 
 The Legends can be made visible by setting the **showLegend** property of legendSettings. 
 
@@ -252,7 +249,7 @@ The map legends can be positioned in following locations within the container.
 
 11. none
 
-You can set this option by using **position** property in **legendSettings**.****
+You can set this option by using **position** property in **legendSettings**.
 
 ###Legend Size
 
@@ -288,7 +285,7 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img4.png" Caption="Map with legend"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img4.png"%}
 
 ###Interactive Legend
 
@@ -333,7 +330,7 @@ You can provide the left and right labels to interactive legend by using **leftL
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img5.png" Caption="Map with interactive legend"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img5.png"%}
 
 ###Bubble Legend
 
@@ -398,5 +395,5 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img6.png" Caption="Bubble Legend"%}
+{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img6.png"%}
 
