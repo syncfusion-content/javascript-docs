@@ -15,13 +15,13 @@ The **ReportViewer** has support to load RDL/RDLC reports from SSRS server. You 
 
 
 
-$("#viewer").ejReportViewer(
-                {
-                    reportServiceUrl: "/api/SSRSReport",
-                    processingMode: ej.ReportViewer.ProcessingMode.Remote,
-                    reportPath: "/SSRSSamples2/Territory Sales new",
-                    reportServerUrl: "http://mvc.syncfusion.com/reportserver"                    
-                });
+$("#viewer")
+    .ejReportViewer({
+        reportServiceUrl: "/api/SSRSReport",
+        processingMode: ej.ReportViewer.ProcessingMode.Remote,
+        reportPath: "/SSRSSamples2/Territory Sales new",
+        reportServerUrl: "http://mvc.syncfusion.com/reportserver"
+    });
 
 
 {% endhighlight %}
