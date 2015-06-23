@@ -18,7 +18,6 @@ In **Local Data Binding**, datasource for rendering the **TreeGrid** control is 
 Two types of **Data Binding** are possible with **TreeGrid** control, 
 
 * Hierarchical Datasource Binding
-
 * Self-Referential Data Binding (Flat Data)
 
 ### Hierarchy Datasource Binding
@@ -75,39 +74,68 @@ The following code example shows you how to bind the **Hierarchical** local data
 
 The output of the above steps is as follows:
 
-{% include image.html url="/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png" Caption="Hierarchy Datasource Binding"%}
+{% include image.html url="/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png"%}
 
 ###Self-Referential Data Binding (Flat Data)
 
-**TreeGrid** is rendered from **Self-Referential** data structures by providing two fields: **ID** field and **parent ID** field.
+**TreeGrid** is rendered from **Self-Referential** data structures by providing two fields: `**ID**` field and `**parent ID**` field.
 
-* **ID Field**- This field contains unique values used to identify nodes. Its name is assigned to the **idMapping** property.
-
-* **Parent ID Field**- This field contains values that indicate parent nodes. Its name is assigned to the **parentIdMapping** property.
+* `**ID Field**`- This field contains unique values used to identify nodes. Its name is assigned to the `**idMapping**` property.
+* `**Parent ID Field**`- This field contains values that indicate parent nodes. Its name is assigned to the `**parentIdMapping**` property.
 
 {% highlight js %}
 
-            var projectData1 = [
+     var projectData1 = [
 
-                         { taskID: 1, taskName: "Task 1", startDate: "02/03/2014", endDate: "03/07/2014", duration: 5},
+         {
+             taskID: 1,
+             taskName: "Task 1",
+             startDate: "02/03/2014",
+             endDate: "03/07/2014",
+             duration: 5
+         },
 
-                        { taskID: 2, pId: 1, taskName: "Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
+         {
+             taskID: 2,
+             pId: 1,
+             taskName: "Child Task 1",
+             startDate: "02/03/2014",
+             endDate: "02/07/2014",
+             duration: 5
+         },
 
-                        { taskID: 3, pId: 1, taskName: "Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
+         {
+             taskID: 3,
+             pId: 1,
+             taskName: "Child Task 2",
+             startDate: "02/03/2014",
+             endDate: "02/07/2014",
+             duration: 5,
+             progress: "100"
+         },
 
-                        { taskID: 22, pId: 2, taskName: "Sub Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5 },
+         {
+             taskID: 22,
+             pId: 2,
+             taskName: "Sub Child Task 1",
+             startDate: "02/03/2014",
+             endDate: "02/07/2014",
+             duration: 5
+         },
 
-                        { taskID: 23, pId: 2, taskName: "Sub Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100" },
+         {
+             taskID: 23,
+             pId: 2,
+             taskName: "Sub Child Task 2",
+             startDate: "02/03/2014",
+             endDate: "02/07/2014",
+             duration: 5,
+             progress: "100"
+         },
+    
+         //...
 
-                        { taskID: 12, pId: 22, taskName: "Inner Child Task 1", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5},
-
-                        { taskID: 13, pId: 22, taskName: "Inner Child Task 2", startDate: "02/03/2014", endDate: "02/07/2014", duration: 5, progress: "100"}, 
-
-                        //...
-
-                        //...
-
-                    ];
+     ];
 
      $(function () {
 
@@ -133,5 +161,5 @@ The output of the above steps is as follows:
 
 The following screenshot shows the output of the above steps,
 
-{% include image.html url="/js/TreeGrid/Data-Binding_images/Data-Binding_img2.png" Caption="Self-Referential DataBinding"%}
+{% include image.html url="/js/TreeGrid/Data-Binding_images/Data-Binding_img2.png"%}
 
