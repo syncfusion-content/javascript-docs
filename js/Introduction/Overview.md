@@ -23,129 +23,129 @@ Components</th></tr>
 <tr>
 <td rowspan = "2">
 Grid</td><td colspan = "3">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview24.htm">Grid</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/grid/overview">Grid</a></td></tr>
 <tr>
 <td colspan = "3">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview58.htm">TreeGrid</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/treegrid/overview">TreeGrid</a></td></tr>
 <tr>
 <td rowspan = "4">
 DataVisualization</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview9.htm">Chart</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview23.htm">Gantt</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview16.htm">Diagram</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/chart/overview">Chart</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/gantt/overview">Gantt</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/diagram/overview">Diagram</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview28.htm">Maps</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview59.htm">TreeMap</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview6.htm">BulletGraph</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/maps/overview">Maps</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/treemap/overview">TreeMap</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/bulletgraph/overview">BulletGraph</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview11.htm">Radial Gauge</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview25.htm">Linear Gauge</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview18.htm">Digital Gauge</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/radialgauge/overview">Radial Gauge</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/lineargauge/overview">Linear Gauge</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/digitalgauge/overview">Digital Gauge</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview41.htm">RangeNavigator</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview5.htm">Barcode</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview53.htm">TagCloud</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/rangenavigator/overview">RangeNavigator</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/barcode/overview">Barcode</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/tagcloud/overview">TagCloud</a></td></tr>
 <tr><td>
 Schedule</td><td colspan = "3">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview47.htm">Schedule</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/schedule/overview">Schedule</a></td></tr>
 <tr>
 <td rowspan = "2">
 Layout</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview51.htm">Splitter</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview17.htm">Dialog</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/splitter/overview">Splitter</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/dialog/overview">Dialog</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview27.htm">ListView</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview54.htm">TileView</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/listview/overview">ListView</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/tileview/overview">TileView</a></td></tr>
 <tr>
 <td rowspan = "7">
 Editors</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview45.htm">RichTextEditor</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview12.htm">ColorPicker</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/richtexteditor/overview">RichTextEditor</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/colorpicker/overview">ColorPicker</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview14.htm">DatePicker</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview55.htm">TimePicker</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/datepicker/overview">DatePicker</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/timepicker/overview">TimePicker</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview15.htm">DateTimePicker</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">NumericTextbox </a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/datetimepicker/overview">DateTimePicker</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/numerictextbox/overview">NumericTextbox </a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">PercentageTextBox</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview21.htm">CurrencyTextBox</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/percentagetextbox/overview">PercentageTextBox</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/currency/overview">CurrencyTextBox</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview4.htm">AutoComplete</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview42.htm">Rating</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/autocomplete/overview">AutoComplete</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/rating/overview">Rating</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview20.htm">Dropdownlist</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview26.htm">Listbox</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/dropdownlist/overview">Dropdownlist</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/listbox/overview">Listbox</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview49.htm">Slider</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview7.htm">Button</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/slider/overview">Slider</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/button/overview">Button</a></td></tr>
 <tr><td></td>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview61.htm">UploadBox</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview29.htm">MaskEdit</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/uploadbox/overview">UploadBox</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/maskedit/overview">MaskEdit</a></td></tr>
 <tr><td></td>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview50.htm">Splitbutton</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview56.htm">Togglebutton</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/splitbutton/overview">Splitbutton</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/togglebutton/overview">Togglebutton</a></td></tr>
 <tr><td></td>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview8.htm">Captcha</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/index.html">Radiobutton</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/index.html">Checkbox</a></td></tr>
+Captcha</td><td>
+<a href="http://helpjs.syncfusion.com/js/radiobutton/overview">Radiobutton</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/checkbox/overview">Checkbox</a></td></tr>
 
 <tr>
 <td rowspan = "4">
 Navigation</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview44.htm">Ribbon</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/ribbon/overview">Ribbon</a></td><td>
 <a href="http://help.syncfusion.com/ug/js/Documents/overview39.htm">RadialMenu</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview46.htm">Rotator</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/rotator/overview">Rotator</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview22.htm">FileExplorer</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview60.htm">TreeView</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview52.htm">Tab</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/fileexplorer/overview">FileExplorer</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/treeview/overview">TreeView</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/tab/overview">Tab</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview30.htm">Menu</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview3.htm">Accordion</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview48.htm">Scrollbar</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/menu/overview">Menu</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/accordion/overview">Accordion</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/scroller/overview">Scrollbar</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview31.htm">NavigationDrawer</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview57.htm">Toolbar</a></td></tr>
+NavigationDrawer</td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/toolbar/overview">Toolbar</a></td></tr>
 <tr>
 <td>
 Notification</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview38.htm">Progressbar</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview62.htm">WaitingPopup</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/progressbar/overview">Progressbar</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/waitingpopup/overview">WaitingPopup</a></td></tr>
 <tr>
 <td rowspan = "2">
 Business Intelligence</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview33.htm">OlapClient</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview35.htm">PivotGrid</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/olapclient/overview">OlapClient</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/pivotgrid/overview">PivotGrid</a></td></tr>
 <tr>
 <td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview32.htm">OlapChart</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview34.htm">OlapGauge</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/olapchart/overview">OlapChart</a></td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/olapgauge/overview">OlapGauge</a></td></tr>
 <tr>
 <td>
 Reporting</td><td colspan = "3">
-<a href="http://help.syncfusion.com/ug/js/Documents/overview43.htm">ReportViewer</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/reportviewer/overview">ReportViewer</a></td></tr>
 <tr>
 <td>
 Others</td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/gettingstarted5.htm">Calculate</a></td><td colspan = "2">
-<a href="http://help.syncfusion.com/ug/js/index.html">DataManager</a></td></tr>
+<a href="http://helpjs.syncfusion.com/js/calculate/overview">Calculate</a></td><td colspan = "2">
+DataManager</td></tr>
 </table>
 
 All our web UI widgets supports the below listed major **key features** – which are more essential in building the web application in recent days.
