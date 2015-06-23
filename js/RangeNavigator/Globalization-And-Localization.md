@@ -49,7 +49,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/Globalization-And-Localization_images/Globalization-And-Localization_img1.png" Caption="Locialization"%}
+{% include image.html url="/js/RangeNavigator/Globalization-And-Localization_images/Globalization-And-Localization_img1.png" %}
 
 #### RTL
 
@@ -70,7 +70,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/Globalization-And-Localization_images/Globalization-And-Localization_img2.png" Caption="RTL"%}
+{% include image.html url="/js/RangeNavigator/Globalization-And-Localization_images/Globalization-And-Localization_img2.png" %}
 
 
 

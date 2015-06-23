@@ -63,7 +63,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 {% endhighlight %}
 
-{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img1.png" Caption="Customize labels"%}
+{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img1.png" %}
 
 
 ##### Label Placement
@@ -102,7 +102,7 @@ The following screenshot illustrates a **RangeNavigator** with labels inside the
 
 
 
-{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img2.png" Caption="RangeNavigator with labels inside the control"%}
+{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img2.png" %}
 
 #### Customize RangeNavigator
 
@@ -159,7 +159,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 
 
-{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img3.png" Caption="Customize RangeNavigator"%}
+{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img3.png" %}
 
 #### Themes
 
@@ -213,4 +213,4 @@ $("#rangecontainer").ejRangeNavigator(
 
 
 
-{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img4.png" Caption="Themes"%}
+{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img4.png" %}
