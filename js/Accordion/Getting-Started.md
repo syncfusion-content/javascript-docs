@@ -19,7 +19,7 @@ This section encompasses the details on how you can configure the **Accordion** 
 
 The following screenshot illustrates you the usage of **Accordion** control in listing the controls under the Essential Studio products. 
 
-{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img1.png" Caption="Accordion control used to list controls under Essential Studio products"%}
+{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img1.png" %}
 
 The usage of **Accordion** control is described in the following sections.
 
@@ -160,7 +160,7 @@ You can execute the above code example to display the Accordion control with sim
 
 
 
-{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img2.png" Caption="Simple Accordion content"%}
+{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img2.png" %}
 
 You can customize the Accordion control using various properties. The Accordion control properties and its default values are described in the following section.
 
@@ -188,7 +188,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 **Accordion** control with **enableMultipleOpen** property is illustrated in the following screen shot.
 
-{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img3.png" Caption="Accordion control with multiple open"%}
+{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img3.png" %}
 
 **Setting rounded corner**
 
@@ -212,7 +212,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 The following screenshot illustrates the **Accordion** control with rounded corners.
 
-{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img4.png" Caption="Accordion with rounded corner"%}
+{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img4.png" %}
 
 **Customize Icon**
 
@@ -247,5 +247,5 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
 
 The following screenshot illustrates the customization of **selectedHeader** and **header** of the **Accordion** control.
 
-{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img5.png" Caption="Accordion with customized icon style"%}
+{% include image.html url="/js/Accordion/Getting-Started_images/Getting-Started_img5.png" %}
 
