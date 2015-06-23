@@ -379,15 +379,19 @@ The **Ribbon** control has control separator support. Set enableSeparator value 
 	      position: relative;
 	      left: -12px;
 	      top: -4px;
+		  font-family: "ej-webfont";
 	      }
 	      .e-ribbon .e-ribbonitalic:before {
 	      content: "\e635";
+		  font-family: "ej-webfont";
 	      }
 	      .e-ribbon .bold:before {
 	      content: "\e636";
+		  font-family: "ej-webfont";
 	      }
 	      .e-ribbon .e-ribbonunderline:before {
 	      content: "\e634";
+		  font-family: "ej-webfont";
 	      }
 	   </style>
 	</body>
