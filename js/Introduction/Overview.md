@@ -40,7 +40,7 @@ DataVisualization</td><td>
 <a href="http://helpjs.syncfusion.com/js/bulletgraph/overview">BulletGraph</a></td></tr>
 <tr>
 <td>
-<a href="http://helpjs.syncfusion.com/js/radialgauge/overview">Radial Gauge</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/circulargauge/overview">Radial Gauge</a></td><td>
 <a href="http://helpjs.syncfusion.com/js/lineargauge/overview">Linear Gauge</a></td><td>
 <a href="http://helpjs.syncfusion.com/js/digitalgauge/overview">Digital Gauge</a></td></tr>
 <tr>
