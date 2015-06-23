@@ -62,7 +62,8 @@ Context menu can be customized by adding a new custom menu item to it. In **ejTr
       function customMenu( args )
       {
          args.contextMenuItems.push({
-         headerText: "customMenu",
+         headerText: "Custom Menu",
+         menuId: "customMenu",
          iconPath: "url(.../images/custommenu.png)",
          eventHandler: customMenuClick,
          });
