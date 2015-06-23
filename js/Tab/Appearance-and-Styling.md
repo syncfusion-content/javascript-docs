@@ -356,29 +356,17 @@ The following screenshot illustrates the **Tab** with customized width.
 By default, there are 13 themes support available for **Tab** control namely
 
 * default-theme
-
 * bootstrap-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 **Custom styles**

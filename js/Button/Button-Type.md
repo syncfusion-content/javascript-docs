@@ -14,30 +14,33 @@ documentation: ug
 List of Button types
 
 <table>
-    <tr>
-        <td>
-            <b>button</b>
-        </td>
-        <td>
-            The button is a clickable button
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>submit</b>
-        </td>
-        <td>
-            The button is a submit button (submits form-data)
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>reset    </b>
-        </td>
-        <td>
-            The button is a reset button (resets the form-data to its initial values)
-        </td>
-    </tr>
+   <tr>
+      <th>Button Types</th>
+      <th>Description</th>
+   <tr>
+      <td>
+         button
+      </td>
+      <td>
+         The button is a clickable button
+      </td>
+   </tr>
+   <tr>
+      <td>
+         submit
+      </td>
+      <td>
+         The button is a submit button (submits form-data)
+      </td>
+   </tr>
+   <tr>
+      <td>
+         reset    
+      </td>
+      <td>
+         The button is a reset button (resets the form-data to its initial values)
+      </td>
+   </tr>
 </table>
 
 

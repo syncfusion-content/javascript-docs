@@ -29,7 +29,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
     // Add the following script to enable State Maintenance.
     $(function () {
         //Declaration.
-        $("#progressBar").ejProgressBar({
+        $("#progressbar").ejProgressBar({
             enablePersistence: true,
             value: 40,
             width: 500,

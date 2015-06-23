@@ -15,12 +15,12 @@ List of keyboard shortcuts
 
 <table>
     <tr>
-        <td>
-            <b>Shortcut Key</b>
-        </td>
-        <td>
-            <b>Description</b>
-        </td>
+        <th>
+            Shortcut Key
+        </th>
+        <th>
+            Description
+        </th>
     </tr>
     <tr>
         <td>
@@ -65,18 +65,16 @@ List of keyboard shortcuts
 </table>
 
 
-**When popup is open**
-
-List of keyboard shortcuts
+List of keyboard shortcuts, When popup is open
 
 <table>
     <tr>
-        <td>
-            <b>Shortcut Key</b>
-        </td>
-        <td>
-            <b>Description</b>
-        </td>
+        <th>
+            Shortcut Key
+        </th>
+        <th>
+            Description
+        </th>
     </tr>
     <tr>
         <td>

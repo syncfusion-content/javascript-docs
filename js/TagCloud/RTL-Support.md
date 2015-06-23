@@ -26,8 +26,7 @@ The following steps explains you the enabling of right-to-left property in **Tag
 {% highlight js %}
 
 
-    // Enable RTL property for TagCloud.
-   
+         // Enable RTL property for TagCloud.  
 		 $("#techweblist").ejTagCloud({
                enableRTL:true,
                 titleText: "Tech Sites",

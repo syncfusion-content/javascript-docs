@@ -17,13 +17,13 @@ This section explains briefly about how to create a **Toolbar** in your applicat
 
 **Toolbar** control supports displaying a list of tools in a Web page. This control is capable of customizing toolbar items with any functionality by using enriched **client-side** methods. This control consists of a collection of **unordered lists** contains text and images into a **&lt;div&gt;.** From the following section, you can learn how to customize **toolbar** control for a **PDF reader** scenario. The following screen shot shows the appearance of **toolbar** in **PDF reader** simulator application.
 
-{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img1.png" Caption="Figure 1: PDF Reader"%}
+{% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img1.png" Caption="PDF Reader"%}
 
 #### Create a Toolbar
 
 The **Essential JavaScript Toolbar** control can be easily configured with **HTML &lt;DIV&gt;** and **&lt;UL&gt;&lt;LI&gt;** elements. The basic rendering of **Essential JS Toolbar** is achieved by the default functionality.
 
-* Create an HTML file and add the following template into the **HTML** file for **Toolbar** creation.
+Create an HTML file and add the following template into the **HTML** file for **Toolbar** creation.
 
 
 
@@ -32,18 +32,18 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
     <!DOCTYPE html>
     <html>
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
         <!-- Style sheet for default theme (flat azure) -->
-    <link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
-    
+        <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+        
         <!--Scripts-->
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    
+        
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    
+        
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    
-    <script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+        
+        <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
         <!--Add custom scripts here -->
     </head>
     <body>
@@ -57,7 +57,7 @@ The **Essential JavaScript Toolbar** control can be easily configured with **HTM
 
 
 
-* Add div or span element for **Toolbar** rendering.
+ Add div or span element for **Toolbar** rendering.
 
 
 
@@ -147,7 +147,7 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 Apply the given styles in the code table to show the **toolbar items** as follows. You can refer images from any location. In the following code sample, the images are referred from the given location.
 
-[http://js.syncfusion.com/UG/Web/Content/](http://js.syncfusion.com/UG/Web/Content/)
+http://js.syncfusion.com/UG/Web/Content/
 
 {% highlight css %}
 
@@ -238,56 +238,56 @@ Initialize the Toolbar items with **UL LI** template as follows.
     
     <div id="ToolbarItem">
     
-            <!--Initializes toolbar items from above code example -->
-           <!-- Separator is added at the end of each ul inside the toolbar element-->
-            <!-- list of Remaining toolbar items with item separator -->
+        <!--Initializes toolbar items from above code example -->
+        <!-- Separator is added at the end of each ul inside the toolbar element-->
+        <!-- list of Remaining toolbar items with item separator -->
+
+        <ul>
+            <li id="Previous" title="Show previous page ( Left Arrow )">
+                <div class=" PdfDocument e-icon previous "></div>
+            </li>
+            <li id="Next" title="Show next page ( Right Arrow )">
+                <div class="PdfDocument e-icon next "></div>
+            </li>
+            <li id="page">
+                <div class="PdfDocument">
+                    <input type="text" value="1" />
+                </div>
+            </li>
+            <li id="count">
+                <span>/ 1</span>
+            </li>
+        </ul>
     
-            <ul>
-                <li id="Previous" title="Show previous page ( Left Arrow )">
-                    <div class=" PdfDocument e-icon previous "></div>
-                </li>
-                <li id="Next" title="Show next page ( Right Arrow )">
-                    <div class="PdfDocument e-icon next "></div>
-                </li>
-                <li id="page">
-                    <div class="PdfDocument">
-                        <input type="text" value="1" />
-                    </div>
-                </li>
-                <li id="count">
-                    <span>/ 1</span>
-                </li>
-            </ul>
+        <ul>
+            <li id="ZoomOut" title="Zoom Out">
+                <div class=" PdfDocument e-icon zoomOut "></div>
+            </li>
+            <li id="ZoomIn" title="Zoom In">
+                <div class=" PdfDocument e-icon zoomIn "></div>
+            </li>
+            <li id="ZoomValue">
+                <div class=" PdfDocument">
+                    <!-- input element for rendering Zoom value dropdown  -->
+                    <input type="text" id="selectPercent" />
+                </div>
+            </li>
+        </ul>
     
-            <ul>
-                <li id="ZoomOut" title="Zoom Out">
-                    <div class=" PdfDocument e-icon zoomOut "></div>
-                </li>
-                <li id="ZoomIn" title="Zoom In">
-                    <div class=" PdfDocument e-icon zoomIn "></div>
-                </li>
-                <li id="ZoomValue">
-                    <div class=" PdfDocument">
-                        <!-- input element for rendering Zoom value dropdown  -->
-                        <input type="text" id="selectPercent" />
-                    </div>
-                </li>
-            </ul>
+        <ul>
+            <li id="FitFull" title="Fit one full page to window">
+                <div class=" PdfDocument e-icon fitOne "></div>
+            </li>
+
+            <li id="StickyNote" title="Add stick note ( Ctrl+6 ) ">
+                <div class=" PdfDocument e-icon sticky "></div>
+            </li>
+            <li id="ReadMode" title="View File in Read Mode">
+                <div class=" PdfDocument e-icon readMode "></div>
+            </li>
+        </ul>
     
-            <ul>
-                <li id="FitFull" title="Fit one full page to window">
-                    <div class=" PdfDocument e-icon fitOne "></div>
-                </li>
-    
-                <li id="StickyNote" title="Add stick note ( Ctrl+6 ) ">
-                    <div class=" PdfDocument e-icon sticky "></div>
-                </li>
-                <li id="ReadMode" title="View File in Read Mode">
-                    <div class=" PdfDocument e-icon readMode "></div>
-                </li>
-            </ul>
-    
-        </div>
+    </div>
 
 
 {% endhighlight %}
@@ -435,8 +435,9 @@ Execute the code to render a **toolbar items** with separator.
 
 Now the **toolbar** is rendered so you need to render the header and content area to create a **PDF reader**. From the following section, you can learn how to render the **header** (Toolbar), **content****section** (PDF viewer area) and how to set the action to toolbar items.
 
-> {% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img5.jpeg" Caption="actions - toolbar items"%}
-Note: You are not going to deal with PDF reading or rendering task here. You will only simulate the PDF Reader app to demonstrate the Toolbar control usage and will completely ignore the PDF rendering area.
+ {% include image.html url="/js/Toolbar/Getting-Started_images/Getting-Started_img5.jpeg" Caption="actions - toolbar items"%}
+ 
+**Note**: You are not going to deal with PDF reading or rendering task here. You will only simulate the PDF Reader app to demonstrate the Toolbar control usage and will completely ignore the PDF rendering area.
 
 Initialize the content area and header as specified in the code table.
 
@@ -444,21 +445,17 @@ Initialize the content area and header as specified in the code table.
 
     
     <!-- control class used for aligns the pdf reader in center of a page. -->
-    <div class="control">  
-    
-    <div class="ctrllabel"></div>
-    
-    <!-- Here Initialize the Toolbar items as like above code sample -->
-    
+    <div class="control">     
+        <div class="ctrllabel"></div>    
+        <!-- Here Initialize the Toolbar items as like above code sample -->    
        <div id="contentSection">
-                <textarea id="content" rows="10" cols="30"> 
-       Description:
-       Toolbar control supports displaying a list of tools within a Web page.This control is capable of 
-       customizing toolbar items with any functionality by using enriched client-side methods.This control 
-       is composed of collection of unordered lists containing text and images contained into a div.
-    </textarea>
-            </div>
-    
+            <textarea id="content" rows="10" cols="30"> 
+               Description:
+               Toolbar control supports displaying a list of tools within a Web page.This control is capable of 
+               customizing toolbar items with any functionality by using enriched client-side methods.This control 
+               is composed of collection of unordered lists containing text and images contained into a div.
+            </textarea>
+        </div>    
     </div>
 
 

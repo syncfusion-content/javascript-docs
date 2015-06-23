@@ -96,15 +96,10 @@ The **stopOnHover** property pauses the **auto play** while hover on the **Rotat
 This property specifies the position of the **showPager** in the **Rotator** Item. The default value is ‘**outside**’. The value set to this property is **string** or **enum**. 
 
 * ej.Rotator.PagerPosition.BottomLeft
-
 * ej.Rotator.PagerPosition.BottomRight
-
 * ej.Rotator.PagerPosition.Outside
-
 * ej.Rotator.PagerPosition.TopCentre
-
 * ej.Rotator.PagerPosition.TopLeft
-
 * ej.Rotator.PagerPosition.TopRight
 
 

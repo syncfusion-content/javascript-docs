@@ -15,7 +15,7 @@ The value for the ProgressBar is set by using **‘value’** property. The valu
 
 The following steps explain you on how to set the **value** for the ProgressBar widget.
 
-* In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar widget.
+ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar widget.
 
 {% highlight html %}
 
@@ -49,7 +49,7 @@ The following steps explain you on how to set the **value** for the ProgressBar 
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/ProgressBar/Define-value_images/Define-value_img1.png" Caption="Figure 6: Assigning value to ProgressBar"%}
+{% include image.html url="/js/ProgressBar/Define-value_images/Define-value_img1.png" Caption="Assigning value to ProgressBar"%}
 
 
 

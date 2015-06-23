@@ -33,23 +33,20 @@ Create an **HTML** file and add the following template to the **HTML** file.
 
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-<title>Getting Started Essential JS</title>
-    <!-- Style sheet for default theme (flat azure) -->
-    <lin khref="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
-
-    <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-    <!--Add custom scripts here -->
-</head>
-<body>
-    <!-- Add checkbox element here -->
-</body>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+      <title>Getting Started Essential JS</title>
+      <!-- Style sheet for default theme (flat azure) -->
+      <lin khref="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
+      <!--Scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <!--Add custom scripts here -->
+   </head>
+   <body>
+      <!-- Add checkbox element here -->
+   </body>
 </html>
 
 {% endhighlight %}
@@ -151,7 +148,7 @@ Initialize **Checkbox** in script.
 
 
         $(function () {
-             // declaration
+            // declaration
             // simple checkbox creation
             $("#check1").ejCheckBox({ checked:true });
             $("#Checkbox3").ejCheckBox();
@@ -199,49 +196,52 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
 
 {% highlight html %}
 
-   <div class="frame">
-        Audio <br /><br />
-            <table>
-                <tr>
-                    <td >
-                        <input type="checkbox"  id="Checkbox1" value="Mp3" />
-                        <label for="Checkbox1"  >*.Mp3</label></td>
-                    <td >
-                        <input type="checkbox"  id="Checkbox2"value= "Wav" />
-                        <label for="Checkbox2"  >*.Wav</label></td>
-                </tr>
-            </table>
-            <br /><br />
-            Video<br /><br />
-            <table>
-                <tr>
-                    <td >
-                        <input type="checkbox" id="Checkbox3" value="Avi" />
-                        <label for="Checkbox3"  >*.Avi</label>
-                    </td>
-                    <td >
-                        <input type="checkbox" id="Checkbox4" value="MP4" />
-                        <label for="Checkbox4"  >*.MP4</label>
-                    </td>
-                </tr>
-            </table><br /><br />
-            Picture<br /><br />
-            <table>
-                <tr>
-                <td >
-                    <input type="checkbox" id="Checkbox5" value="PNG" />
-                    <label for="Checkbox5" >*.PNG</label>
-                </td>
-                <td >
-                    <input type="checkbox" id="Checkbox6" value="JPG" />
-                    <label for="Checkbox6" >*.JPG</label>
-                </td>
-            </table>
-            <br />
-           <div>
-                <button id="button11">SUBMIT</button>
-           </div>
-    </div>
+  <div class="frame">
+   Audio <br /><br />
+   <table>
+      <tr>
+         <td >
+            <input type="checkbox"  id="Checkbox1" value="Mp3" />
+            <label for="Checkbox1"  >*.Mp3</label>
+         </td>
+         <td >
+            <input type="checkbox"  id="Checkbox2"value= "Wav" />
+            <label for="Checkbox2"  >*.Wav</label>
+         </td>
+      </tr>
+   </table>
+   <br /><br />
+   Video<br /><br />
+   <table>
+      <tr>
+         <td >
+            <input type="checkbox" id="Checkbox3" value="Avi" />
+            <label for="Checkbox3"  >*.Avi</label>
+         </td>
+         <td >
+            <input type="checkbox" id="Checkbox4" value="MP4" />
+            <label for="Checkbox4"  >*.MP4</label>
+         </td>
+      </tr>
+   </table>
+   <br /><br />
+   Picture<br /><br />
+   <table>
+      <tr>
+         <td >
+            <input type="checkbox" id="Checkbox5" value="PNG" />
+            <label for="Checkbox5" >*.PNG</label>
+         </td>
+         <td >
+            <input type="checkbox" id="Checkbox6" value="JPG" />
+            <label for="Checkbox6" >*.JPG</label>
+         </td>
+   </table>
+   <br />
+   <div>
+      <button id="button11">SUBMIT</button>
+   </div>
+</div>
 </html>
 
 {% endhighlight %}

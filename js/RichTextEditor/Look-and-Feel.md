@@ -18,27 +18,16 @@ The core style sheet applies styles related to positioning and size, but are not
 The following is the list of the twelve themes supported by **RTE**. 
 
 * default-theme
-
 * flat-azure-dark
-
 * flat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 
@@ -71,7 +60,7 @@ Add the following code in your **HTML** page to initialize the **RTE** with grad
 
 **RTE** control also allows you to customize its appearance by using user-defined CSS and custom skin options for colors and backgrounds. To apply custom themes, use this property called **cssClass**. **cssClass** property sets the root class for **RTE** theme.
 
-You can override the existing styles under the theme style sheet by using this property. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “light-Pink”. ”[light-Pink](http://www.w3schools.com/tags/ref_color_tryit.asp?color=DeepPink)” is added as the root class to **RTE** control at runtime. From this root class, you can customize the **RTE** control theme.
+You can override the existing styles under the theme style sheet by using this property. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “light-Pink”. ” light-Pink http://www.w3schools.com/tags/ref_color_tryit.asp?color=DeepPink” is added as the root class to **RTE** control at runtime. From this root class, you can customize the **RTE** control theme.
 
  Add the following code in your **HTML** page.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The **Uploadbox** widget provides support to upload multiple files spontaneously. The **multipleFilesSelection** property enables you to select multiple files while browsing.  To achieve this, set the **multipleFilesSelection** property to ‘**true**’. The data type is **Boolean**.
 
-> Note: The Multiple file selection supports all the latest versions of browser except Internet Explorer 9 and its previous versions.
+> **Note**: The Multiple file selection supports all the latest versions of browser except Internet Explorer 9 and its previous versions.
 
 
 

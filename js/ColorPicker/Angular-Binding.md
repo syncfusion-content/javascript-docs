@@ -12,7 +12,6 @@ documentation: ug
 The **ColorPicker** widget is availed with two types of **angular JS** support namely, 
 
 * One-way binding
-
 * Two-way binding 
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the **ColorPicker** widget. The changes made in **ColorPicker** widget are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the **ColorPicker** widget.
@@ -40,15 +39,11 @@ The following code example depicts the way to bind data to the **ColorPicker** w
     <link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
-    <script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)">
-    </script>
-    <script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)">
-    </script>
+    <script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+    <script src="[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js)"></script>
 </head>
 <body ng-controller="ColorPickerCtrl">
     <div class="content-container-fluid">

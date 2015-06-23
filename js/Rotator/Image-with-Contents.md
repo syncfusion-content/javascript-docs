@@ -366,27 +366,16 @@ This property sets the **delay** between the **Rotator** Items to move after the
 By default, there are 12 themes support available for **Rotator** control as follows,
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ### Css class

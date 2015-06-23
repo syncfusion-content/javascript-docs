@@ -16,7 +16,6 @@ documentation: ug
 **Knockout Binding** is of two types:
 
 * One-way binding
-
 * Two-way binding
 
 **One-way binding** refers to the process of applying observable values to all the available properties of the Rating control. But the changes made in Rating control are not reflected and triggered in the observable collection. This kind of binding is applied to all the properties of the Rating control.
@@ -90,7 +89,6 @@ The following screenshot illustrates **Rating** with **Knockout** support.
 For Angular Binding, you can include angular.min.js, ej.unobtrusive.min.js, and ej.widget.angular.min.js files. Rating control is availed with two types of angular JS support namely, 
 
 * One-way binding
-
 * Two-way binding 
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the Rating control. But the changes made in Rating control are not reflected or triggered in the scope collection. This kind of binding is applied to all the properties of the Rating control.

@@ -81,19 +81,12 @@ You can add icons in prefix and suffix position of **Toggle Button**. Location o
 For example the following mentioned build-in CSS class are used to show the font icons that are used by media player.
 
 * e-mediaback
-
 * e-mediaforward
-
 * e-medianext
-
 * e-mediaprev
-
 * e-mediaeject
-
 * e-mediaclose
-
 * e-mediapause
-
 * e-mediaplay
 
 ### Prefix Icon
@@ -109,29 +102,31 @@ You can also set icon in different location (prefix, suffix) and in different st
 Property Table
 
 <table>
+<tr><th>Proeprty Type</th>
+    <th>Description</th></tr>
 <tr>
 <td>
-<b>activeText</b></td><td>
+activeText</td><td>
 Specifies the text of toggle button in active state</td></tr>
 <tr>
 <td>
-<b>activePrefixIcon</b></td><td>
+    activePrefixIcon</td><td>
 Specifies the prefix icon of toggle button in active state</td></tr>
 <tr>
 <td>
-<b>activeSuffixIcon</b></td><td>
+activeSuffixIcon</td><td>
 Specifies the suffix icon of toggle button in active state</td></tr>
 <tr>
 <td>
-<b>defaultText</b></td><td>
+defaultText</td><td>
 Specifies the text of toggle button in default state.</td></tr>
 <tr>
 <td>
-<b>defaultPrefixIcon</b></td><td>
+defaultPrefixIcon</td><td>
 Specifies the prefix icon of toggle button in default state</td></tr>
 <tr>
 <td>
-<b>defaultSuffixIcon</b></td><td>
+defaultSuffixIcon</td><td>
 Specifies the suffix icon of toggle button in default state</td></tr>
 </table>
 
@@ -192,25 +187,26 @@ You can render the **Toggle Button** in different sizes. You can use some predef
 Predefined Toggle Button size
 
 <table>
+<tr><th>Button Size</th><th>Description</th></tr>
 <tr>
 <td>
-<b>normal</b></td><td>
+normal</td><td>
 Creates toggle button with content size.</td></tr>
 <tr>
 <td>
-<b>mini</b></td><td>
+mini</td><td>
 Creates toggle button with inbuilt mini size height, width specified.</td></tr>
 <tr>
 <td>
-<b>small</b></td><td>
+small</td><td>
 Creates toggle button with inbuilt small size height, width specified.</td></tr>
 <tr>
 <td>
-<b>medium</b></td><td>
+medium</td><td>
 Creates toggle button with inbuilt medium size height, width specified.</td></tr>
 <tr>
 <td>
-<b>large</b></td><td>
+large</td><td>
 Creates toggle button with inbuilt large size height, width specified.</td></tr>
 </table>
 
@@ -362,25 +358,26 @@ The content of the **Toggle Button** is mainly text and images. Instead of using
 List of Content types
 
 <table>
+<tr><th>Content Type</th><th>Description</th></tr>
 <tr>
 <td>
-<b>textonly</b></td><td>
+textonly</td><td>
 Supports only for text content only.</td></tr>
 <tr>
 <td>
-<b>imageonly</b></td><td>
+imageonly</td><td>
 Supports only for image content only</td></tr>
 <tr>
 <td>
-<b>imageboth</b></td><td>
+imageboth</td><td>
 Supports image for both ends of the toggle button.</td></tr>
 <tr>
 <td>
-<b>textandimage</b></td><td>
+textandimage</td><td>
 Supports image with the text content.</td></tr>
 <tr>
 <td>
-<b>imagetextimage</b></td><td>
+imagetextimage</td><td>
 Supports image with both ends and middle in text.</td></tr>
 </table>
 
@@ -578,21 +575,22 @@ To provide the best look and feel for **Toggle Button**, position of images in t
 Property Table
 
 <table>
+<tr><th>Image Position</th><th>Description</th></tr>
 <tr>
 <td>
-<b>imageleft</b></td><td>
+imageleft</td><td>
 Support for aligning text in right and image in left.</td></tr>
 <tr>
 <td>
-<b>imageright</b></td><td>
+imageright</td><td>
 Support for aligning text in left and image in right.</td></tr>
 <tr>
 <td>
-<b>imagetop</b></td><td>
+imagetop</td><td>
 Support for aligning text in bottom and image in top.</td></tr>
 <tr>
 <td>
-<b>imagebottom</b></td><td>
+imagebottom</td><td>
 Support for aligning text in top and image in bottom.</td></tr>
 </table>
 
@@ -836,27 +834,16 @@ You can control the style and appearance of **Toggle Button** based on CSS class
 By default, there are 12 themes support available for **Toggle Button** control namely,
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ## Custom CSS

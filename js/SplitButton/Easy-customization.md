@@ -29,7 +29,10 @@ In the **HTML** page, add the following button elements to configure **Split But
             <li><span>Admin</span></li>
         </ul>
     </div>
+    
+{% endhighlight %}
 
+{% highlight js %}
 
         // Initialize the control in JavaScript   
         $(function () {
@@ -43,7 +46,6 @@ In the **HTML** page, add the following button elements to configure **Split But
             });
         });
     
-
 
 {% endhighlight %}
 
@@ -60,25 +62,26 @@ You can render the **Split Button** in different sizes. The following table cont
 List of Button size
 
 <table>
+<tr><th>Button Size</th><th>Description</th></tr>
 <tr>
 <td>
-<b>normal</b></td><td>
+normal</td><td>
 Creates split button with content size.</td></tr>
 <tr>
 <td>
-<b>mini</b></td><td>
+mini</td><td>
 Creates split button with inbuilt mini size height, width specified.</td></tr>
 <tr>
 <td>
-<b>small</b></td><td>
+small</td><td>
 Creates split button with inbuilt small size height, width specified.</td></tr>
 <tr>
 <td>
-<b>medium</b></td><td>
+medium</td><td>
 Creates split button with inbuilt medium size height, width specified.</td></tr>
 <tr>
 <td>
-<b>Large</b></td><td>
+Large</td><td>
 Creates split button with inbuilt large size height, width specified.</td></tr>
 </table>
 
@@ -239,25 +242,26 @@ The content of the **Split Button** is mainly rendered as text and images. Inste
 List of content types
 
 <table>
+<tr><th>Content Type</th><th>Description</th></tr>
 <tr>
 <td>
-<b>textonly</b></td><td>
+textonly</td><td>
 Supports only for text content only.</td></tr>
 <tr>
 <td>
-<b>imageonly</b></td><td>
+imageonly</td><td>
 Supports only for image content only</td></tr>
 <tr>
 <td>
-<b>imageboth</b></td><td>
+imageboth</td><td>
 Supports image for both ends of the button.</td></tr>
 <tr>
 <td>
-<b>textandimage</b></td><td>
+textandimage</td><td>
 Supports image with the text content.</td></tr>
 <tr>
 <td>
-<b>imagetextimage</b></td><td>
+imagetextimage</td><td>
 Supports image with both ends and middle in text.</td></tr>
 </table>
 
@@ -270,19 +274,12 @@ Icons inside the **Split Button** is added easily using **prefixIcon and suffixI
 For example the following build-in CSS class are used to display the font icons that is used by media player.
 
 * e-mediaback
-
 * e-mediaforward
-
 * e-medianext
-
 * e-mediaprev
-
 * e-mediaeject
-
 * e-mediaclose
-
 * e-mediapause
-
 * e-mediaplay
 
 **Prefix Icon**
@@ -429,21 +426,22 @@ To provide the best look and feel for **Split Button**, position of images in **
 Property Table
 
 <table>
+<tr><th>Image Position</th><th>Description</th></tr>
 <tr>
 <td>
-<b>imageleft</b></td><td>
+imageleft</td><td>
 Support for aligning text in right and image in left.</td></tr>
 <tr>
 <td>
-<b>imageright</b></td><td>
+imageright</td><td>
 Support for aligning text in left and image in right.</td></tr>
 <tr>
 <td>
-<b>imagetop</b></td><td>
+imagetop</td><td>
 Support for aligning text in bottom and image in top.</td></tr>
 <tr>
 <td>
-<b>imagebottom</b></td><td>
+imagebottom</td><td>
 Support for aligning text in top and image in bottom.</td></tr>
 </table>
 
@@ -665,27 +663,16 @@ You can control the style and appearance of **Split Button** based on **CSS** cl
 By default, there are 12 themes support available for **Split Button** control namely
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ## Custom CSS

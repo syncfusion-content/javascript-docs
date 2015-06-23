@@ -19,12 +19,10 @@ DateTime format
 
 <table>
     <tr>
-        <td>
-            <b>Format</b>
-        </td>
-        <td>
-            <b>Display in DateTimePicker</b>
-        </td>
+        <th>
+            Format</th>
+        <th>
+            Display in DateTimePicker</th>
     </tr>
     <tr>
         <td>
@@ -72,29 +70,17 @@ DateTime format
 You can also customize the format. Refer the following list to create your custom format for **DateTimePicker**.
 
 * d - Day of the month.
-
 * ddd - Short name of day of the week.
-
 * dddd - Full name of day of the week.
-
 * M – The month, from 1 through 12.
-
 * MMM- Short name of Month.
-
 * MMMM- Long name of the Month.
-
 * yy - Last two digit if year.
-
 * yyyy - Full Year.
-
 * hh – Hour.
-
 * mm – Minutes.
-
 * ss – Seconds.
-
 * tt - The AM/PM designator.
-
 
 
 In the following example, set **dateTimeFormat** to **fulldatetime** format.
@@ -137,12 +123,10 @@ showHeaderMin
 
 <table>
     <tr>
-        <td>
-            <b>Header Format types</b>
-        </td>
-        <td>
-            <b>Description</b>
-        </td>
+        <th>
+            Header Format types </th>
+        <th>
+            Description</th>
     </tr>
     <tr>
         <td>

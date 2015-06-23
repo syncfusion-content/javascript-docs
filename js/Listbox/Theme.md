@@ -14,27 +14,16 @@ documentation: ug
 By default, there are 12 themes support available for **ListBox** control namely,
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 The following screenshot illustrates the **ListBox** with Flat-lime and Flat-Saffron built-in themes.

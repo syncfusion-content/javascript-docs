@@ -11,7 +11,7 @@ documentation: ug
 
 **Angular binding**
 
-AngularJS is an open-source web application framework. AngularJS extends **HTML** with new attributes. AngularJS is a **JavaScript** framework. You can add it to an **HTML** page with a **&lt;script&gt;** tag. AngularJS extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions**.** The support is achieved by an integration JS library file. You can know more about the Angular support in the following link location. 
+AngularJS is an open-source web application framework. AngularJS extends **HTML** with new attributes. AngularJS is a **JavaScript** framework. You can add it to an **HTML** page with a **&lt;script&gt;** tag. AngularJS extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in the following link location. 
 
 [http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/default.htm)
 
@@ -162,11 +162,8 @@ The following screenshot displays the output of the above code example.
 **KnockoutJS** is a MVVM library that allows the separation of concerns. **Essential JavaScript** provides full support for KnockoutJS. The Knockout support is achieved by an integration JS library file. Add the following code for knockout binding **Menu** rendering.
 
 * When you use KO with your applications, you can get the following benefits. 
-
 * You can connect **UI** elements with data model anytime. 
-
 * You can easily create complex dynamic data model.  
-
 * You can automatically update **UI** when Data Model is changed and when UI is changed,Data Model is changed automatically. 
 
 In the following example, select Sign Up menu, the requested menu value is send to the server and you can render response from the server with Sign Up page. Here sign up and sign in page **UI** layout is totally different, and the data model is automatically changed.

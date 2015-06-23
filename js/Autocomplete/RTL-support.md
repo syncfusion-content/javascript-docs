@@ -29,7 +29,7 @@ The following steps explain how you can enable the **right-to-left** property fo
 {% highlight js %}
 
 
-        $('#autocomplete').ejAutocomplete({
+            $('#autocomplete').ejAutocomplete({
                 dataSource: countries,
                 width: 205,
                 popupHeight: "80px",

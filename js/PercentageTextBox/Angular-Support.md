@@ -12,7 +12,6 @@ documentation: ug
 The **PercentageTextBox** widget supports two types of **Angular JS support** namely, 
 
 * One-way binding
-
 * Two-way binding 
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the **PercentageTextBox** widget, but the changes made in **PercentageTextBox** widget are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the **PercentageTextBox** widget.

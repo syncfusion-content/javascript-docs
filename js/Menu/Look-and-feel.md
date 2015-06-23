@@ -14,27 +14,16 @@ documentation: ug
 12 themes support available for **Menu** control namely,
 
 * default-theme
-
 * flat-azure-dark
-
 * flat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ##Cssclass

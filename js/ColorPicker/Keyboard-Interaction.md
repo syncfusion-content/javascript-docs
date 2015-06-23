@@ -13,14 +13,13 @@ You can use **keyboard** shortcut keys as an alternative to the mouse while us
 
 Keyboard shortcut keys
 
-<table>
+  <table>
     <tr>
-        <td>
-            <b>Shortcut Key</b>
-        </td>
-        <td>
-            <b>Description</b>
-        </td>
+        <th>
+            Shortcut Key</th>
+        <th>
+            Description</h>
+        </th>
     </tr>
     <tr>
         <td>

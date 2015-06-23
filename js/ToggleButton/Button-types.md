@@ -15,16 +15,16 @@ Toggle Button Types
 
 <table>
 <tr>
-<td>
-<b>button</b></td><td>
+<th>Button Type</th><th>Description</th></tr><tr><td>
+button</td><td>
 The button is a clickable button </td></tr>
 <tr>
 <td>
-<b>submit</b></td><td>
+submit</td><td>
 The button is a submit button (submits form-data)</td></tr>
 <tr>
 <td>
-<b>reset    </b></td><td>
+reset</td><td>
 The button is a reset button (resets the form-data to its initial values)</td></tr>
 </table>
 

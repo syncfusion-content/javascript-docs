@@ -12,7 +12,6 @@ documentation: ug
 **TimePicker** widget is availed with two types of **angular JS** support namely, 
 
 * One way binding
-
 * Two way binding 
 
 

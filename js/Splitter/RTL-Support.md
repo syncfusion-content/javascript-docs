@@ -82,5 +82,5 @@ The output for **Splitter** when **enableRTL** is “**true**”.
 
 
 
-__
+
 

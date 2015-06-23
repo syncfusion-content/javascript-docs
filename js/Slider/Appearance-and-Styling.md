@@ -12,27 +12,16 @@ documentation: ug
 **Slider** widget looks sleek and enriched with good UI appearance. It is included with both metro (flat) theme and gradient theme support. Totally twelve inbuilt themes are provided including six flat themes and six gradient themes. The themes include three colour variations such as “Azure”, “Lime” and “Saffron”. The themes supported by the **Slider** widgets are as follows,
 
 * default-theme
-
 * flat-azure-dark
-
 * flat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 

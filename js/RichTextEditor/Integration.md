@@ -13,13 +13,13 @@ documentation: ug
 
 **Angular Support** is a two-way data binding, connecting **HTML** to **JavaScript** objects seamlessly. It reduces the amount of code from page. **Angular JS** adds more functionality and creates powerful dynamic template. **Angular JS** extends **HTML** with new directives. 
 
-**Angular JS** is an open-source web application framework. **Angular JS** extends **HTML** with new attribute. It can be added to **HTML** page with **&lt;script&gt;** tag. The library reads in **HTML** that contains additional custom tag attributes. **Angular JS** extends **HTML** attribute with **Directives** and binds data to **HTML** with **Expressions**. 
+Angular JS is an open-source web application framework. Angular JS extends **HTML** with new attribute. It can be added to **HTML** page with **&lt;script&gt;** tag. The library reads in **HTML** that contains additional custom tag attributes. **Angular JS** extends **HTML** attribute with **Directives** and binds data to **HTML** with **Expressions**. 
 
 Using this, you can view the equivalent **XHTML** code of the content in the editing area while you type.
 
 To know more details about the **Angular binding**, refer to the following link location,
 
-[http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/default.htm%23!documents/angularjs.htm)
+http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm
 
 You can bind data to the **RTE** control through **angular support**.
 

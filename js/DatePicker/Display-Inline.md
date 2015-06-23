@@ -9,7 +9,7 @@ documentation: ug
 
 # Display Inline
 
-**Display****Inline** allows you to make **DatePicker** widget similar to a **Calendar date**. Also associate **DatePicker** with **&lt;div&gt; element instead of input. Default value for **displayInline** property is set as '**false**' 
+**Display** **Inline** allows you to make **DatePicker** widget similar to a **Calendar date**. Also associate **DatePicker** with **&lt;div&gt;** element instead of input. Default value for displayInline property is set as '**false**' 
 
 The following steps explain you how to get the **Calendar** control using **DatePicker**.
 

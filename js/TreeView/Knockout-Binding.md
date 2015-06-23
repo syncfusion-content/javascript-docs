@@ -11,7 +11,7 @@ documentation: ug
 
 **KnockoutJS** is a **JavaScript** library that allows you to bind **HTML** elements against any data model.
 
-It uses a **Model-View-ViewModel** (MVVM) design pattern, where the **Model** is your stored data, **View** is the visual representation of that data (**UI**) and **ViewModel** acts as the intermediary between the **Model** and the **View**. For more information about the **Knockout****binding**, refer the online documentation in the following link,
+It uses a **Model-View-ViewModel** (MVVM) design pattern, where the **Model** is your stored data, **View** is the visual representation of that data (**UI**) and **ViewModel** acts as the intermediary between the **Model** and the **View**. For more information about the **Knockout** **binding**, refer the online documentation in the following link,
 
 [http://help.syncfusion.com/ug/js/default.htm#!documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/default.htm)
 

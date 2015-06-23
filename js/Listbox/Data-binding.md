@@ -19,9 +19,7 @@ Property Table for JavaScript ListBox
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Description</b></td></tr>
+<th>Name</th><th>Description</th></tr>
 <tr>
 <td>
 dataSource</td><td>
@@ -79,6 +77,7 @@ It specifies the category of the tag</td></tr>
 tableName</td><td>
 It defines the table name for tag value or display text while render with remote data</td></tr>
 </table>
+
 **Local data**
 
 **ListBox** provides data binding support. Thus, you can bind the data from **JSON** Data source. To achieve this, map the corresponding fields with their column names.
@@ -173,7 +172,6 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 **ListBox** widget contains two types of angular **JS** support namely, 
 
 * One way binding
-
 * Two way binding 
 
 One way binding refers to the process of applying scope values to all the available properties of the **ListBox** widget, but the changes made in **ListBox** widget does not reflect or trigger in turn to the scope collection. This kind of binding applies to all the properties of the **ListBox** widget.
@@ -182,7 +180,7 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 To know more detail about the Angular binding, you can refer the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+http://help.syncfusion.com/ug/js/documents/angularjs.htm
 
 The following example depicts the way to bind data to the **ListBox** widget through angular support.
 
@@ -280,7 +278,6 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
 Two types of knockout binding is supported,
 
 * One way binding
-
 * Two way binding 
 
 One way binding refers to the process of applying observable values to all the available properties of the **ListBox** widget, but the changes made in the widget does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the ListBox widget.

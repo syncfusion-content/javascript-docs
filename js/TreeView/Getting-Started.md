@@ -195,17 +195,17 @@ Create a **JSON** Data Source for **TreeView** and initialize as follows.
             ];
     // document ready
     $(function () {        
-            // simple Splitter creation
-             $("#innerSpliter").ejSplitter({    
-                height: 250,        // setting height for the Splitter widget    
-                width: 601,         // setting width for the Splitter widget    
-                properties: [{}, { paneSize: 300 }]         // simple Pane Size creation
-             });
-             // simple TreeView creation
-             $("#mailboxTree").ejTreeView({                    
-                // mapping JSON Data Source with the fields property of TreeView 
-                fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: outlookicons, expanded: "expanded" }
-             });
+        // simple Splitter creation
+         $("#innerSpliter").ejSplitter({    
+            height: 250,        // setting height for the Splitter widget    
+            width: 601,         // setting width for the Splitter widget    
+            properties: [{}, { paneSize: 300 }]         // simple Pane Size creation
+         });
+         // simple TreeView creation
+         $("#mailboxTree").ejTreeView({                    
+            // mapping JSON Data Source with the fields property of TreeView 
+            fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: outlookicons, expanded: "expanded" }
+         });
     });
     
 
@@ -377,7 +377,7 @@ To rename the mail folders, set **allowEdit** property to **“True”**. You ca
 
 
 
-Note: Refer to the previous example for datasource
+**Note**: Refer to the previous example for datasource
 
 Execute this code example to render node editing.
 
@@ -405,7 +405,7 @@ Execute this code example to **Drag and Drop** the nodes anywhere within the **T
 
 {% endhighlight %}
 
-> Note: Refer to the previous example for datasource
+> **Note**: Refer to the previous example for datasource
 
 ### Configure Events for the TreeView
 
@@ -446,7 +446,7 @@ When you click on the Mailbox folder item, the corresponding navigation action i
 {% endhighlight %}
 
 
-Note: Refer to the previous example for datasource 
+**Note**: Refer to the previous example for datasource 
 
 Execute the code example to render **TreeView**. When you select the mail folder in the **TreeView,** the corresponding action takes place by raising the **select** event. 
 
@@ -536,7 +536,7 @@ Initialize the **Context Menu** in the script section.
 
 
 
-Note: Refer to the previous example for datasource. 
+**Note**: Refer to the previous example for datasource. 
 
 The following screenshot displays adding a new folder in the **TreeView** using the **Context Menu**. You can right-click on the **TreeView** Node and select the new folder option in the **Context Menu** for the selected folder. A new folder is added as the child of the **Drafts** folder.
 

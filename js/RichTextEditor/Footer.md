@@ -12,17 +12,11 @@ documentation: ug
 **RTE** has **footer** option with some most frequently used tool items. To enable the footer you can set “**showFooter**” property as “**True**”. The following features have been added in footer:
 
 * Get HTML
-
 * Characters count
-
 * HTML Tag information
-
 * Clear formatting 
-
 * Remove contents
-
 * Resizing
-
 
 
 Refer to the following code snippet to enable the footer in **RTE**.

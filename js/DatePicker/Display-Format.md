@@ -19,9 +19,7 @@ Date format
 
 <table>
 <tr>
-<td>
-<b>Format Name</b></td><td>
-<b>   Formats</b></td></tr>
+<th>Format Name</th><th>Formats</th></tr>
 <tr>
 <td>
 Default</td><td>
@@ -86,9 +84,7 @@ Enum for DatePicker day header format
 
 <table>
 <tr>
-<td>
-<b>Day header</b></td><td>
-<b>Description</b></td></tr>
+<th>Day header</th><th>Description</th></tr>
 <tr>
 <td>
 ShowHeaderShort</td><td>

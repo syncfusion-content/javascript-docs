@@ -15,7 +15,7 @@ The **NumericTextBox** provides **RTL** (**Right-To-Left**) support. The alignme
 
 The following steps explain the implementation of **enableRTL** in **NumericTextBox** .
 
-1. In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control.
+In the HTML page set the corresponding &lt;input&gt; elements for rendering NumericTextBox control.
 
 {% highlight html %}
 

@@ -13,7 +13,7 @@ documentation: ug
 
 **RadioButton id** is not shown in the user interface. Here id denotes the id attribute of the root element of **RadioButton** control. This id value is unique. You can give id through **element** and through the **id property**. When you use two id for a single radio button at initialization, the **element id** is considered.
 
-Set **id** for **RadioButton** control as follows.
+Set **id** for RadioButton control as follows.
 
 
 {% highlight js %}

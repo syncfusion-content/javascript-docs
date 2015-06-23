@@ -17,9 +17,7 @@ List of keyboard shortcut keys
 
 <table>
 <tr>
-<td>
-<b>Keys</b></td><td>
-<b>Usage</b></td></tr>
+<th>Keys</th><th>Usage</th></tr>
 <tr>
 <td>
 Esc</td><td>

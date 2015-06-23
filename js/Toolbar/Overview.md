@@ -14,17 +14,11 @@ The Toolbar control supports displaying a list of tools within a web page. This 
 **Key Features**
 
 * **Modern look**: Rich appearance with theme support.
-
 * **RTL**: Supports right-to-left alignment.
-
 * **Text and Image**: Supports both text and images as toolbar content.
-
 * **Easy Customization**: The customization of toolbar control to any form is made simple.
-
 * **Data binding**: Supports for data binding with local data and remote data.
-
 * **Template**: Supports for Customizing toolbar with user needed tools.
-
 * **Keyboard navigation**: Support for navigation through keyboard.
 
 

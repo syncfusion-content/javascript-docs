@@ -82,6 +82,3 @@ Add the following code in your **&lt;script&gt;** section.
 The following screenshot displays the output of the above code.
 
 {% include image.html url="/js/Menu/Center-Menu_images/Center-Menu_img1.png" Caption="Center Menu"%}
-
-
-

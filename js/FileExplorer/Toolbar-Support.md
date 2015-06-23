@@ -18,19 +18,12 @@ All the managing tools allow you to manage the file system easily. Using these t
 ### List of Toolbar Items
 
 * Add & open: Add a new folder, open folder and files.
-
 * Address bar: Used to point the current viewing folder and provide navigation support with options for editing.
-
 * Refreshing: Used to refresh the current viewing folder. 
-
 * Upload: Provides the built-in Upload box control using which you can upload files easily.
-
 * Deletion: You can delete the files and folders from the file system.
-
 * Rename: It is used to rename file and folders easily.
-
 * Download: Provides support for downloading files.
-
 * Search bar: You can search for the files you require, easily with the customizable search option.
 
 ### Backward and Forward

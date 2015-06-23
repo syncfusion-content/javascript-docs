@@ -371,29 +371,17 @@ The following steps explains you the configuration of **enableAnimation** proper
 By default, there are 12 themes support available for **DropdownList** control namely
 
 * bootstrap-theme
-
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 **Custom class with dropdown** 

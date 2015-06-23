@@ -17,9 +17,7 @@ Table 1: Keyboard Shortcuts
 
 <table>
 <tr>
-<td>
-<b>Shortcut Key</b></td><td>
-<b>Description</b></td></tr>
+<th>Shortcut Key</th><th>Description</th></tr>
 <tr>
 <td>
 <a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> + j</b></td><td>
@@ -47,7 +45,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" />
+	<input id="currency" type="text" />
 	
 {% endhighlight %}
 

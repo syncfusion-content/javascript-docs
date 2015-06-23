@@ -15,9 +15,9 @@ Following table illustrates the accessible key and their usage
 
 <table>
 <tr>
-<td>
-<b>Keys</b></td><td>
-<b>Behavior</b></td></tr>
+<th>
+Keys</th><th>
+Behavior</th></tr>
 <tr>
 <td>
 Up</td><td>

@@ -12,7 +12,6 @@ documentation: ug
 **Knockout support** allows you to bind the **HTML** elements against any of the available data models. It is of two types**.**
 
 * One-way binding
-
 * Two-way binding
 
 

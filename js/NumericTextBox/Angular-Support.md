@@ -12,7 +12,6 @@ documentation: ug
 The **NumericTextBox** widget supports two types of **Angular JS support** namely, 
 
 * One-way binding
-
 * Two-way binding 
 
 

@@ -19,15 +19,12 @@ List of modelType
 
 <table>
     <tr>
-        <td>
-            <b>ModelType</b>
-        </td>
-        <td>
-            <b>Syntax</b>
-        </td>
-        <td>
-            <b>Description</b>
-        </td>
+        <th>
+            ModelType</th>
+        <th>
+            Syntax</th>
+        <th>
+            Description</th>
     </tr>
     <tr>
         <td>
@@ -97,15 +94,12 @@ List of palette
 
 <table>
     <tr>
-        <td>
-            <b>Palette</b>
-        </td>
-        <td>
-            <b>Syntax</b>
-        </td>
-        <td>
-            <b>Description</b>
-        </td>
+        <th>
+            Palette</th>
+        <th>
+            Syntax</th>
+        <th>
+            Description</th>
         <td>
             <b>Dependent Property</b>
         </td>
@@ -151,15 +145,12 @@ Property Table
 
 <table>
     <tr>
-        <td>
-            <b>PresetType</b>
-        </td>
-        <td>
-            <b>Syntax</b>
-        </td>
-        <td>
-            <b>Dependent Property</b>
-        </td>
+        <th>
+            PresetType</th>
+        <th>
+            Syntax</th>
+        <th>
+            Dependent Property</th>
     </tr>
     <tr>
         <td>
@@ -358,29 +349,17 @@ The core style sheet applies styles related to positioning and size, but are not
 The following list is the twelve themes supported by ColorPicker:
 
 * default-theme
-
 * flat-azure-dark
-
 * flat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
-
 
 
 In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget.
@@ -429,7 +408,7 @@ The **ColorPicker** control also allows you to customize its appearance using us
 
 Using this property you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as **Light-Blue**. **Light-Blue** is added as root class to **ColorPicker** control at the runtime. From this root class you can customize the **ColorPicker** control theme.
 
-* In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
 
 {% highlight html %}
 

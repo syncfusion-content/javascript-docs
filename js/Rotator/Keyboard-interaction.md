@@ -17,9 +17,9 @@ Keyboard shortcuts
 
 <table>
 <tr>
-<td>
-<b>KeyboardShortcut	</b></td><td>
-<b>Function</b></td></tr>
+<th>
+KeyboardShortcut	</th><th>
+Function</th></tr>
 <tr>
 <td>
 Alt + j</td><td>

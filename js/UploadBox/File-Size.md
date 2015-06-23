@@ -81,11 +81,11 @@ Property
 
 <table>
 <tr>
-<td>
-<b>Use-Case Description</b></td><td>
-<b>Type</b></td><td>
-<b>Maximum request size</b></td><td>
-<b>Details</b></td></tr>
+<th>
+Use-Case Description</th><th>
+Type</th><th>
+Maximum request size</th><th>
+Details</th></tr>
 <tr>
 <td>
 <a href=https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx>maxRequestLength</a></td><td>
@@ -111,11 +111,11 @@ Add the following code to your **web.config** file.
 
 
 
-> Note:  maxRequestLength is measured in kilobytes.
+> **Note**:  maxRequestLength is measured in kilobytes.
 
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img3.png" Caption="Maximum file upload using maxRequestLength		"%}
+{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img3.png" Caption="Maximum file upload using maxRequestLength"%}
 
 ### How to upload the files above 28.6 MB?
 
@@ -125,11 +125,11 @@ Property
 
 <table>
 <tr>
-<td>
-<b>Use-Case Description</b></td><td>
-<b>Type</b></td><td>
-<b>Default value</b></td><td>
-<b>Details</b></td></tr>
+<th>
+Use-Case Description</th><th>
+Type</th><th>
+Default value</th><th>
+Details</th></tr>
 <tr>
 <td>
 <a href=https://msdn.microsoft.com/en-us/library/ms689462(v=vs.90).aspx>maxAllowedContentLength</a></td><td>
@@ -157,18 +157,15 @@ You can add the following code to your **web.config** file in order to set that 
 
 
 
-> Note: maxAllowedContentLength is measured in bytes.
+> **Note**: maxAllowedContentLength is measured in bytes.
 
 
 {% include image.html url="/js/UploadBox/File-Size_images/File-Size_img4.png" Caption="Maximum file upload using maxAllowedContentLength"%}
                        
 
 > * When you configure both maxAllowedContentLength, maxRequestLength attributes, then maxAllowedContentLength is considered for execution.
-
 > * When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
-
 > * When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
-
 > * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
 
 

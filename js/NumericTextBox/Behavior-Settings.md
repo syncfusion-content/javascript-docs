@@ -117,7 +117,7 @@ The output for NumericTextBox when enableStrictMode is “True” is as follows.
 
 ## Enabled or Disabled
 
-The NumericTextBox **control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the NumericTextBox** control.
+The **NumericTextBox** control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the NumericTextBox control.
 
 ### Configure Enabled or Disabled 
 
@@ -376,27 +376,16 @@ The NumericTextBox control style and appearance can be controlled based on CSS c
 By default, there are 12 themes support available for **Textbox** control namely:
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ### CSS Class

@@ -14,7 +14,6 @@ You can insert all types of images from a defined path in **RichTextEditor** con
 ### Steps to Insert the Image
 
 * Specify the **URL** of the image.
-
 * Description of the images is mandatory.
 
 

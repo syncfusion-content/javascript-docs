@@ -52,9 +52,9 @@ The following example explains you the binding of **value** property using the A
 {% highlight html %}
 
 
- // Add this code in your html page
+<!-- Add this code in your html page -->
 
-<body ng-app="syncApp" **ng-controller="SliderCtrl"**>
+<body ng-app="syncApp" ng-controller="SliderCtrl">
     <div class="frame">
         <div id="sliderContainer" class="control">
             <div id="rangeSlider" ej-slider e-width="width" e-value="sliderValue"></div>
@@ -97,11 +97,11 @@ Execute the above code example to render the following output.
 
 KnockOutJS is a **JavaScript** library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer the following link to know more about KnockOutJS.
 
-[http://knockoutjs.com/documentation/introduction.html](http://knockoutjs.com/documentation/introduction.html)
+http://knockoutjs.com/documentation/introduction.html
 
 **Slider** widget includes support to use it with KnockOutJS. The support is achieved by integration of the JS library **ej.widget.ko.min.js file.** Refer the following link to know more about the KnockOutJS support
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+http://help.syncfusion.com/ug/js/documents/knockoutjs.htm
 
 The binding handler name for **Slider** component is **Slider**. Both one way binding and two way binding support is included. All properties of the **Slider** component supports one way binding. In the **HTML** markup, specify the property using the binding handler. 
 

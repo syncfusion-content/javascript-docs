@@ -26,7 +26,7 @@ The following screenshot shows the **ProgressBar.**
 
 You can create the **ProgressBar** widget by using a simple input **&lt;div&gt;** element as follows:
 
-* Create an **HTML** file and add the following template to the **HTML** file to create your ProgressBar. It also includes the necessary scripts and styles.
+ Create an **HTML** file and add the following template to the **HTML** file to create your ProgressBar. It also includes the necessary scripts and styles.
 
 
 
@@ -58,7 +58,7 @@ You can create the **ProgressBar** widget by using a simple input **&lt;div&gt;*
 
 
 
-* Add **&lt;input&gt;** element inside the **&lt;body&gt;** tag of your file to create a **ProgressBar.**
+ Add **&lt;input&gt;** element inside the **&lt;body&gt;** tag of your file to create a **ProgressBar.**
 
 
 
@@ -203,10 +203,8 @@ Add the following code example inside the **&lt;script&gt;** tag of your **HTML*
 You can calculate length of the password and call the appropriate function that changes the percentage property of **ProgressBar**.
 
 * The **weak()** function changes the text inside the ProgressBar to **Weak** and percentage to 30, that is invoked when the length of the text is less than 5.
-
 * The **strong()** function changes the text inside the ProgressBar to **Strong** and percentage to 60, that is invoked when the length of the text exceeds 5.
-
-* The **very_strong()** function changes the text inside the ProgressBar to **Very****Strong** and percentage to 100, that is invoked when the length of the text exceeds 7 and the text contains a symbol in it.
+* The **very_strong()** function changes the text inside the ProgressBar to Very **Strong** and percentage to 100, that is invoked when the length of the text exceeds 7 and the text contains a symbol in it.
 
 You can change themes or appearance of the ProgressBar as required.
 

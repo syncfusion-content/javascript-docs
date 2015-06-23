@@ -119,38 +119,21 @@ Add the following script in the **HTML** file.
     $(function () {
 
         // declaration
-
-
         $("#sliderContent").ejRotator({
-
             slideWidth: "600px",
-
             frameSpace: "0px",
-
             displayItemsCount: "1",
-
             slideHeight: "350px",
-
             navigateSteps: "1",
-
             enableResize: true,
-
             pagerPosition: ej.Rotator.PagerPosition.Outside,
-
             orientation: ej.Orientation.Horizontal,
-
             showPager: true,
-
             enabled: true,
-
             showCaption: true,
-
             allowKeyboardNavigation: true,
-
             showPlayButton: true,
-
             enableRTL: true,
-
             animationType: "slide"
         });
     });

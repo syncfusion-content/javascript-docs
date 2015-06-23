@@ -13,9 +13,8 @@ documentation: ug
 
 **Populate accordion with AJAX content**
 
-1. Create HTML files with required content to be loaded for Accordion panel and save it in your drive location.
-
-2. In the HTML page, define a div element that is a container for Accordion widget and add the contents URL location in the &lt;a&gt; tag accordingly.
+* Create HTML files with required content to be loaded for Accordion panel and save it in your drive location.
+* In the HTML page, define a div element that is a container for Accordion widget and add the contents URL location in the &lt;a&gt; tag accordingly.
 
 {% highlight html %}
 

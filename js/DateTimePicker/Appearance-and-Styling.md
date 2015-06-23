@@ -20,29 +20,17 @@ The core style sheet applies styles related to positioning and size, but are not
 The following list is of the twelve themes supported by **DateTimePicker**:
 
 * default-theme
-
 * flat-azure-dark
-
 * flat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
-
 
 
 Add the following code in your **HTML** page.

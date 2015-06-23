@@ -14,7 +14,6 @@ documentation: ug
 **DatePicker** widget is availed with two types of **angular JS** support namely, 
 
 * One way binding
-
 * Two way binding 
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the **DatePicker** widget. But the changes made in **DatePicker** widget are not reflected or triggered in turn to the scope collection. This kind of binding is applied to all the properties of the **DatePicker** widget.
@@ -30,7 +29,6 @@ To know more detail about the **Angular binding**, you can refer the following l
 **Note**: Add the following script files as given in the following example to access angular binding. They have JS library for angular binding.
 
 * angular-min.js
-
 * ej.widget.angular.min.js
 
 The following example depicts the way to bind data to the **DatePicker** widget through **angular support**.
@@ -95,7 +93,6 @@ The following example depicts the way to bind data to the **DatePicker** widget 
 Two types of **Knockout** binding are supported,
 
 * One-way binding
-
 * Two-way binding
 
 **One way binding** refers to the process of applying observable values to all the available properties of the **DatePicker** widget. But the changes made in **DatePicker** widget are not reflected and triggered in turn to the observable collection. This kind of binding is applied to all the properties of the **DatePicker** widget.
@@ -109,14 +106,13 @@ For more information about the **Knockout** **binding**, you can refer the follo
 > {% include image.html url="/js/DatePicker/Integration_images/Integration_img3.jpeg" Caption=""%}**Note**: Add the following script files along with the given code to access knockout binding. They have JS library for knockout binding.
 
 * knockout-min.js
-
 * ej.widget.ko.min.js
 
 The link for those script files are as follows:
 
-[http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
+http://cdn.syncfusion.com/js/assets/external/knockout.min.js
 
-[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)
+http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js
 
 The following example depicts the way to bind data to the **DatePicker** widget through the **Knockout** support that enables and populate data to a **DatePicker** widget based on the value set to the other **DatePicker** widget.
 

@@ -17,19 +17,19 @@ Property Table for JavaScript
 
 <table>
 <tr>
-<td>
-<b>Property</b></td><td>
-<b>Allowed values</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Property</th><th>
+Allowed values</th><th>
+Description</th></tr>
 <tr>
 <td rowspan = "2">
 orientation</td><td>
 ej.Orientation.Vertical</td><td>
-Displays the <b>Slider</b> in vertical direction</td></tr>
+Displays the Slider in vertical direction</td></tr>
 <tr>
 <td>
 ej.Orientation.Horizontal (default value)</td><td>
-Displays the <b>Slider</b> in horizontal direction</td></tr>
+Displays the Slider in horizontal direction</td></tr>
 </table>
 
 

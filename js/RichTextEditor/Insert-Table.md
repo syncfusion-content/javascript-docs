@@ -30,17 +30,11 @@ This popup window contains options to change the width and height of cells, cell
 You can modify the existing information or add new information in a table using the following options.
 
 * Add row below
-
 * Add row above
-
 * Add column to the left
-
 * Add column to the right
-
 * Delete row
-
 * Delete column
-
 * Delete table
 
 

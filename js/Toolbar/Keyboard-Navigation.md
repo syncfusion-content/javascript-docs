@@ -15,9 +15,9 @@ List of keyboard shortcuts
 
 <table>
 <tr>
-<td>
-<b>Keyboard Shortcut</b></td><td>
-<b>Function</b></td></tr>
+<th>
+Keyboard Shortcut</th><th>
+Function</th></tr>
 <tr>
 <td>
 Alt + j</td><td>

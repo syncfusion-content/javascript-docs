@@ -51,7 +51,7 @@ By enabling the **showRoundedCorner** property, you can customize the shape of t
 
 The following steps explain enabling the **showRoundedCorner** property for an AutoComplete.
 
- In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
 
 {% highlight html %}
 
@@ -88,7 +88,7 @@ The following image is the output for AutoComplete when **showRoundedCorner** is
 
 The following steps explain you how to configure **watermarkText** property for an AutoComplete textbox.
 
- In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
 
 {% highlight html %}
 
@@ -136,7 +136,7 @@ The following steps help you set height and width of the popup panel of an **Aut
 
 
 
-2. Configure dimensions for popup panel in **AutoComplete** control as follows.
+Configure dimensions for popup panel in **AutoComplete** control as follows.
 
 {% highlight js %}
 
@@ -174,7 +174,7 @@ The following steps are used to set the time delay to load the popup panel of an
 
 
 
-2. Configure the delay time for popup panel in **AutoComplete** control as follows.
+Configure the delay time for popup panel in **AutoComplete** control as follows.
 
 {% highlight js %}
 
@@ -197,27 +197,16 @@ AutoComplete control’s style and appearance are controlled based on CSS classe
 By default, there are 12 theme supports available for AutoComplete control namely:
 
 * default-theme
-
 * flat-azure-dark
-
 * fat-lime
-
 * flat-lime-dark
-
 * flat-saffron
-
 * flat-saffron-dark
-
 * gradient-azure
-
 * gradient-azure-dark
-
 * gradient-lime
-
 * gradient-lime-dark
-
 * gradient-saffron
-
 * gradient-saffron-dark
 
 ### CSS Class
@@ -266,7 +255,7 @@ The following steps allow you to configure **CSS** class** for an AutoComplete t
 
 
 
-3. Add the **cssClass** property to **AutoComplete** textbox.****
+Add the **cssClass** property to **AutoComplete** textbox.
 
 {% highlight js %}
 

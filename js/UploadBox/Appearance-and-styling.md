@@ -183,27 +183,16 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 By default, there are 12-theme support available for **Uploadbox** control namely,
 
 * Default-theme
-
 * Flat-azure-dark
-
 * Fat-lime
-
 * Flat-lime-dark
-
 * Flat-saffron
-
 * Flat-saffron-dark
-
 * Gradient-azure
-
 * Gradient-azure-dark
-
 * Gradient-lime
-
 * Gradient-lime-dark
-
 * Gradient-saffron
-
 * Gradient-saffron-dark
 
 

@@ -32,6 +32,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
                 $("#progressbar").ejProgressBar({
                     enableRTL: true,
                     value: 80,
+                    text: 80,
                     height: 20,
                     width: 500
                 });

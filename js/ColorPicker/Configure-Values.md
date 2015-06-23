@@ -49,12 +49,10 @@ List of Button elements
 
 <table>
     <tr>
-        <td>
-            <b>Element</b>
-        </td>
-        <td>
-            <b>Default value</b>
-        </td>
+        <th>
+            Element</th>
+        <th>
+            Default value</th>
     </tr>
     <tr>
         <td>
@@ -84,12 +82,10 @@ List of Tooltip elements
 
 <table>
     <tr>
-        <td>
-            <b>Element</b>
-        </td>
-        <td>
-            <b>Default value</b>
-        </td>
+        <th>
+            Element</th>
+        <th>
+            Default value</th>
     </tr>
     <tr>
         <td>

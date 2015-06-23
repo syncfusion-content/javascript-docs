@@ -47,7 +47,7 @@ The following steps explain the configuration of the **multiSelectMode** for an 
 {% highlight js %}
 
 
-        $("#delimit").ejAutocomplete({
+           $("#delimit").ejAutocomplete({
                 width: 225,
                 multiSelectMode: ej.MultiSelectMode.Delimiter,
                 delimiterChar:";",
