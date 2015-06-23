@@ -12,13 +12,9 @@ documentation: ug
 **OLAP Client UI** comes with options to customize the **Grid** and **Chart** layout, such as:
 
    * **Default View** - Sets the start-up control. 
-
    * **Tab/Tile View** – Tab or Tile view to visualize the controls separately or in the same layout. 
-
    * **Hide Grid/Chart** - Hides any one of the control by default. 
-
    * **Toggle Panel** – Turns On/Off the visibility of Cube Browser and Axis Element Builder panels.  
-
    * **Maximized/Fullscreen** view of the control(s) providing a precise view.
 
 ## Display View
@@ -39,7 +35,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img1.png" Caption="Tile View"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img1.png" %}
 
 ### Tab View
 
@@ -58,7 +54,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img2.png" Caption="Tab View"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img2.png" %}
 
 ## Default View
 
@@ -81,7 +77,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img3.png" Caption="Default Chart View"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img3.png" %}
 
 ### Grid View
 
@@ -100,7 +96,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img4.png" Caption="Default Grid View"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img4.png" %}
 
 ## Hide Grid/Chart
 
@@ -121,7 +117,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img5.png" Caption="Grid Only Mode"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img5.png" %}
 
 ###Chart Only
 
@@ -140,7 +136,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img6.png" Caption="Chart Only Mode"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img6.png" %}
 
 ###Both Grid and Chart
 
@@ -159,7 +155,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img7.png" Caption="Grid and Chart Mode"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img7.png" %}
 
 ## Toggle Panel
 
@@ -178,13 +174,13 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img8.png" Caption="OLAP Client in Toggled View"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img8.png" %}
 
 ## Maximized/Full Screen View
 
 You can maximize **OLAP Grid** and **OLAP Chart** to full screen mode inside **OLAP Client** for a precise view. By selecting Full Screen icon in the toolbar, **OLAP Grid** and **OLAP Chart** are maximized depending on the current tab. You can also perform drilldown action in both **OLAP Grid** and **OLAP Chart** in the maximized view.
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img9.png" Caption="Full screen view icon"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img9.png" %}
 
 {% highlight js %}
 
@@ -200,5 +196,5 @@ $("#OlapClient1").ejOlapClient({
 
 The following screenshot shows the maximized view of **OLAP Grid** and **OLAP Chart.**
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img10.png" Caption="Maximized View for OLAP Chart and OLAP Grid"%}
+{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img10.png" %}
 

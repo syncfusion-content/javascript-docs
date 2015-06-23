@@ -12,31 +12,18 @@ documentation: ug
 Essential **OLAP Chart JS** supports 14 different types of chart as follows:
 
    * Column
-
    * Stacking Column
-
    * Bar
-
    * Stacking Bar
-
    * Pie
-
    * Pyramid
-   
    * Funnel
-
    * Line
-
    * Step Line
-
    * Spline
-
    * Area
-
    * Step Area
-
    * Spline Area
-
    * Stacking Area
 
 ## Column Chart
@@ -59,7 +46,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Column Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img1.png" Caption="Column chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img1.png" %}
 
 ## Stacking Column Chart
 
@@ -82,7 +69,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **stacking Column Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img2.png" Caption="Stacking Column Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img2.png" %}
 
 ## Bar Chart
 
@@ -106,7 +93,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Bar Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img3.png" Caption="Bar Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img3.png" %}
 
 ## Stacking Bar Chart
 
@@ -129,7 +116,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Stacking Bar Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img4.png" Caption="Stacking Bar Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img4.png" %}
 
 ## Pie Chart
 
@@ -153,7 +140,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Pie Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img5.png" Caption="Pie Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img5.png" %}
 
 ## Pyramid Chart
 
@@ -176,7 +163,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screen shot displays the **Pyramid Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img6.png" Caption="Pyramid Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img6.png" %}
 
 ## Funnel Chart
 
@@ -199,7 +186,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screen shot displays the **Funnel Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img14.png" Caption="Funnel Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img14.png" %}
 
 ## Line Chart
 
@@ -220,10 +207,9 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-
 The following screenshot displays the **Line Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img7.png" Caption="Line Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img7.png" %}
 
 ## Step Line Chart
 
@@ -247,7 +233,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Step Line Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img8.png" Caption="Step Line Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img8.png" %}
 
 ## Spline Chart
 
@@ -270,7 +256,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Spline Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img9.png" Caption="Spline Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img9.png" %}
 
 ## Area Chart
 
@@ -294,7 +280,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Area Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img10.png" Caption="Area Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img10.png" %}
 
 ## Step Area Chart
 
@@ -317,7 +303,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Step Area Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img11.png" Caption="Step Area Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img11.png" %}
 
 ## Spline Area Chart
 
@@ -341,7 +327,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following Screenshot displays a **Spline Area Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img12.png" Caption="Spline Area Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img12.png" %}
 
 ## Stacking Area Chart
 
@@ -365,5 +351,5 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Stacking Area Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img13.png" Caption="Stacking Area Chart"%}
+{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img13.png" %}
 

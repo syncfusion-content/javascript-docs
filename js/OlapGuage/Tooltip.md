@@ -99,5 +99,5 @@ You can customize the **Tooltip** by overriding the existing style attributes an
 }
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Tooltip_images/Tooltip_img1.png" Caption="Tooltip Customization"%}
+{% include image.html url="/js/OlapGauge/Tooltip_images/Tooltip_img1.png" %}
 

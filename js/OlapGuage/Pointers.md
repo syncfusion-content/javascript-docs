@@ -16,7 +16,6 @@ documentation: ug
 Two different types of pointer available in **OlapGauge** are:
 
    1. Needle
-
    2. Marker
 
 ## Changing Pointer Types
@@ -119,7 +118,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img1.png" Caption="Pointer Type – Needle & Marker"%}
+{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img1.png" %}
 
 ## Length and Width Customization
 
@@ -222,7 +221,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img2.png" Caption="Length and Width Customization"%}
+{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img2.png" %}
 
 ## Background Customization 
 
@@ -326,7 +325,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img3.png" Caption="Background Color Customization"%}
+{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img3.png" %}
 
 ## Shapes Customization
 
@@ -430,5 +429,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img4.png" Caption="Shape Customization"%}
+{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img4.png" %}
 

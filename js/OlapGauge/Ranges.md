@@ -211,7 +211,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Ranges_images/Ranges_img1.png" Caption="Range style customization"%}
+{% include image.html url="/js/OlapGauge/Ranges_images/Ranges_img1.png" %}
 
 ## Size Setting
 
@@ -316,5 +316,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Ranges_images/Ranges_img2.png" Caption="Range Size Setting"%}
+{% include image.html url="/js/OlapGauge/Ranges_images/Ranges_img2.png" %}
 

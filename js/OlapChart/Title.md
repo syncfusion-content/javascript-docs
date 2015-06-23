@@ -28,7 +28,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Title_images/Title_img1.png" Caption="OLAP Chart Title"%}
+{% include image.html url="/js/OlapChart/Title_images/Title_img1.png" %}
 
 ##Title Text Customization
 
@@ -54,5 +54,5 @@ function load(args) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Title_images/Title_img2.png" Caption="Customizing Chart Title"%}
+{% include image.html url="/js/OlapChart/Title_images/Title_img2.png" %}
 

@@ -13,7 +13,7 @@ This section explains briefly about how to create an **OLAP Gauge** in your appl
 
 ##Syncfusion OLAP Controls – Architecture
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img2.png" Caption="Architecture of OLAP controls"%}
+{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img2.png" %}
 
 As shown in an above architecture, control rendering takes place at client-side and all other analytical operations on each action takes place at server-side.
 
@@ -24,17 +24,13 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 1.**DataSource Connectivity:** You can establish a connection between different cube data sources such as
 
    * Offline Cube
-    
    * Online Cube (XML/A)
-    
    * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than <b>Online Cube</b> (XML/A) option. Using service, you can connect any cube data source without any limitation.
     
 2.**Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
 
    * Availability of cubes.
-    
    * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
-    
    * Localized information is also available in cube schema.
 
 3.**MDX Generator:** You can frame the MDX query using an MDX generator in **Syncfusion.Olap.Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
@@ -50,17 +46,17 @@ This section encompasses on how to configure the **OLAP Gauge** control in appli
 
 In the following example, **OLAP gauge** is used to visualize the Revenue for Reseller over a Fiscal Year 2004 on the product category - Accessories.
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img3.png" Caption="Revenue for Reseller – FY 2004 – Accessories"%}
+{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img3.png" %}
 
 Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screen shot displays the Project Creation Wizard:
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img4.png" Caption="New Project Wizard"%}
+{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img4.png" %}
 
 ##Create HTML page
 
-To create a new web form in the application, right-click on the project and select Add.
+To create a new web form in the application, right-click on the project and select Add. The following screen shot shows the Add New Item Wizard.
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img5.png" Caption="Add New Item Wizard"%}
+{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img5.png" %}
 
 Click on New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
 
@@ -69,25 +65,16 @@ Click on New Item and select HTML Page from the listed templates. Name the page 
 ###Add References
 
 * In the Solution Explorer, right-click the References folder, and then click Add Reference.
-
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img6.png" Caption="Adding Reference"%}
-
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img7.png" Caption="Referencing Syncfusion.Olap.Base"%}
-
+{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img6.png" %}
+{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img7.png" %}
 * Select the following assemblies: 
 
    1. Microsoft.AnalysisServices.AdomdClient.dll
-
    2. Syncfusion.Core.dll, 
-
    3. Syncfusion.Linq.Base.dll 
-
    4. Syncfusion.Olap.Base.dll, 
-
    5. Syncfusion.EJ.dll  
-
    6. Syncfusion.EJ.Olap.dll.
-
 * Click OK
 
 ###Add Scripts and Styles
@@ -115,13 +102,11 @@ Add the following code inside the **&lt;body&gt;** tag in the **default.html** p
 {% highlight html %}
 
 //Creating a div tag, which will act as a container for ejOlapGauge widget.
-< div id = "OlapGauge"
-style = "height: 350px; width: 100%; position:relative" >
-    < /div>
+<div id = "OlapGauge" style = "height: 350px; width: 100%; position:relative">
+</div>
 
 //Setting properties and initializing ejOlapGauge widget.
-
-< script type = "text/javascript" >
+<script type = "text/javascript">
     $(function() {
         $("#OlapGauge").ejOlapGauge({
             url: "../wcf/OlapGaugeService.svc",
@@ -213,7 +198,8 @@ style = "height: 350px; width: 100%; position:relative" >
                 }]
             }]
         });
-    }); < /script>
+    }); 
+</script>
     
 {% endhighlight %}
 
@@ -222,13 +208,9 @@ style = "height: 350px; width: 100%; position:relative" >
 ###Create WCF Services
 
 1.Right-click the project and select Add > New Folder.  Name the folder as WCF.
-
 2.Right-click the WCF folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapGaugeService.svc
-
 3.Click Add.
-
-
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png" Caption="Creating WCF Service"%}
+{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png" %}
 
 ###Add service methods inside Interface
 
@@ -236,13 +218,12 @@ Add the following code inside the IOlapGaugeService interface available in the I
 
 {% highlight c# %}
 
-    [ServiceContract]
-    public interface IOlapGaugeService
-    {
-       [OperationContract]
-        Dictionary<string, object> InitializeGauge(string action,string customObject);                
-    }
-
+[ServiceContract]
+public interface IOlapGaugeService
+{
+   [OperationContract]
+   Dictionary<string, object> InitializeGauge(string action,string customObject);                
+}
 
 {% endhighlight %}
 
@@ -292,9 +273,9 @@ Initialize the **OlapGauges helper class**.
 
 {% highlight c# %}
 
-        OlapGauge htmlHelper = new OlapGauge();       
-        static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-        JavaScriptSerializer serializer = new JavaScriptSerializer();
+OlapGauge htmlHelper = new OlapGauge();       
+static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+JavaScriptSerializer serializer = new JavaScriptSerializer();
 
 {% endhighlight %}
 
@@ -302,50 +283,51 @@ Initialize the following relevant **service** methods to be added.
 
 {% highlight c# %}
 
-         //This method provides the required information from the server side for initializing the OlapGauge.
-          public Dictionary<string, object> InitializeGauge(string action,string customObject)
-        {
-            OlapDataManager DataManager = null;
-            dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
-            DataManager = new OlapDataManager(connectionString);                         
-            DataManager.SetCurrentReport(CreateOlapReport());
-            return htmlHelper.GetJsonData(action, DataManager);
-        }        
-        //This method carries the information about the default report which would be rendered within OlapGauge initially. 
-        private OlapReport CreateOlapReport()
-        {
-            OlapReport report = new OlapReport();
-            report.CurrentCubeName = "Adventure Works";
+//This method provides the required information from the server side for initializing the OlapGauge.
+public Dictionary<string, object> InitializeGauge(string action,string customObject)
+{
+   OlapDataManager DataManager = null;
+   dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
+   DataManager = new OlapDataManager(connectionString);                         
+   DataManager.SetCurrentReport(CreateOlapReport());
+   return htmlHelper.GetJsonData(action, DataManager);
+}  
+      
+//This method carries the information about the default report which would be rendered within OlapGauge initially. 
+private OlapReport CreateOlapReport()
+{
+   OlapReport report = new OlapReport();
+   report.CurrentCubeName = "Adventure Works";
 
-            KpiElements kpiElement = new KpiElements();
-            kpiElement.Elements.Add(new KpiElement { Name = "Revenue", ShowKPIGoal = true, ShowKPIStatus = true, ShowKPIValue = true, ShowKPITrend = true });
+   KpiElements kpiElement = new KpiElements();
+   kpiElement.Elements.Add(new KpiElement { Name = "Revenue", ShowKPIGoal = true, ShowKPIStatus = true, ShowKPIValue = true, ShowKPITrend = true });
 
-            DimensionElement dimensionElement1 = new DimensionElement();
-            DimensionElement dimensionElement2 = new DimensionElement();
-            DimensionElement dimensionElement3 = new DimensionElement();
+   DimensionElement dimensionElement1 = new DimensionElement();
+   DimensionElement dimensionElement2 = new DimensionElement();
+   DimensionElement dimensionElement3 = new DimensionElement();
 
-            MeasureElements measureElement = new MeasureElements();
-            measureElement.Elements.Add(new MeasureElement { UniqueName = "[Measures].[Customer Count]" });
+   MeasureElements measureElement = new MeasureElements();
+   measureElement.Elements.Add(new MeasureElement { UniqueName = "[Measures].[Customer Count]" });
 
-            dimensionElement1.Name = "Date";
-            dimensionElement1.AddLevel("Fiscal Year", "Fiscal Year");
-            dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].Add("FY 2004");
-            dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].IncludeAvailableMembers = true;
+   dimensionElement1.Name = "Date";
+   dimensionElement1.AddLevel("Fiscal Year", "Fiscal Year");
+   dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].Add("FY 2004");
+   dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].IncludeAvailableMembers = true;
 
-            dimensionElement2.Name = "Sales Channel";
-            dimensionElement2.AddLevel("Sales Channel", "Sales Channel");
-            dimensionElement2.Hierarchy.LevelElements["Sales Channel"].Add("Reseller");
-            dimensionElement2.Hierarchy.LevelElements["Sales Channel"].IncludeAvailableMembers = true;
+   dimensionElement2.Name = "Sales Channel";
+   dimensionElement2.AddLevel("Sales Channel", "Sales Channel");
+   dimensionElement2.Hierarchy.LevelElements["Sales Channel"].Add("Reseller");
+   dimensionElement2.Hierarchy.LevelElements["Sales Channel"].IncludeAvailableMembers = true;
 
-            dimensionElement3.Name = "Product";
-            dimensionElement3.AddLevel("Product Model Lines", "Product Line");
+   dimensionElement3.Name = "Product";
+   dimensionElement3.AddLevel("Product Model Lines", "Product Line");
 
-            report.CategoricalElements.Add(new Item { ElementValue = dimensionElement2 });
-            report.CategoricalElements.Add(new Item { ElementValue = dimensionElement1 });
-            report.CategoricalElements.Add(new Item { ElementValue = kpiElement });
-            report.SeriesElements.Add(new Item { ElementValue = dimensionElement3 });
-            return report;
-        }
+   report.CategoricalElements.Add(new Item { ElementValue = dimensionElement2 });
+   report.CategoricalElements.Add(new Item { ElementValue = dimensionElement1 });
+   report.CategoricalElements.Add(new Item { ElementValue = kpiElement });
+   report.SeriesElements.Add(new Item { ElementValue = dimensionElement3 });
+   return report;
+}
 
 {% endhighlight %}
 
@@ -354,9 +336,7 @@ Initialize the following relevant **service** methods to be added.
 * You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is **"WebApplication2.OlapGaugeService"** where **"OlapGaugeService"** is the service class name and **“WebApplication2"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
    1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapGaugeService** contract and hence it is "**WebApplication2.IOlapGaugeService**".
-
    2. **Binding:** In your application, you can use **webHttpBinding** to post and receive the requests and responses between client-end and service-end.
-
    3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
 
 {% highlight xml %}

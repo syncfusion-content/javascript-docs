@@ -304,7 +304,7 @@ To get the localized Cube information,set **Locale Identifier** in the connectio
 {% highlight c# %}
 
 //1036 refers to“fr-FR” culture.
-String connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
+string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);
 DataManager.Culture = new System.Globalization.CultureInfo(1036);
 DataManager.OverrideDefaultFormatStrings = true;
@@ -314,6 +314,6 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The following screenshot shows the OLAP Client with French localization.
 
-{% include image.html url="/js/OlapClient/Concepts-and-Features/Localization_images/Localization_img1.png" Caption="Localized OLAP Client"%}
+{% include image.html url="/js/OlapClient/Concepts-and-Features/Localization_images/Localization_img1.png" %}
 
 

@@ -112,5 +112,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Scales_images/Scales_img1.png" Caption="Scale Bar – Style Customization"%}
+{% include image.html url="/js/OlapGauge/Scales_images/Scales_img1.png" %}
 

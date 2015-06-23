@@ -16,18 +16,15 @@ documentation: ug
 The four kinds of Layouts supported by the **PivotGrid** are as follows:
 
  * Normal
-
  * Excel-like
-
  * Normal top summary
-
  * No summaries
 
 ##Normal
 
 The **Normal** layout is the default Layout of the **PivotGrid** where the summary cells are positioned at the bottom of each parent member and child members appear next to their parent.
 
-{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img1.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img1.png" %}
 
 {% highlight js %}
 
@@ -40,7 +37,7 @@ layout: ej.PivotGrid.Layout.Normal });
 
 In the **Excel-like** layout, the summary cells are positioned at the bottom of the **Grid** and the child members appear under their parent member with a small indent.
 
-{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img2.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img2.png" %}
 
 {% highlight js %}
 
@@ -54,7 +51,7 @@ layout: ej.PivotGrid.Layout.ExcelLikeLayout });
 
 In the **Normal Top Summary** Layout, the summary cells are positioned at the top of each parent member and the child member appears next to their parent.
 
-{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img3.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img3.png" %}
 
 {% highlight js %}
 
@@ -68,7 +65,7 @@ layout: ej.PivotGrid.Layout.NormalTopSummary });
 
 In **No Summaries** Layout, the summary cells are hidden and the child members appear next to their parent member.
 
-{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img4.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Grid-Layout_images/Grid-Layout_img4.png" %}
 
 {% highlight js %}
 

@@ -77,7 +77,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img1.png" Caption="Primary Axis - Title Customization"%}
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img1.png" %}
 
 ##Axis Line
 
@@ -116,7 +116,7 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img2.png" Caption="Axis Line Customization"%}
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img2.png" %}
 
 ##Position Opposed
 
@@ -142,16 +142,14 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img3.png" Caption="Position Opposed"%}
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img3.png" %}
 
 ##Appearance Customization 
 
 Background, border color and outer width of the Chart Area is customized with the help of following properties.
 
 * **Background –** sets the background color for Chart Area.
-
 * **Color –** sets the color for the border.
-
 * **Width** – sets the width for the border.
 
 
@@ -175,5 +173,5 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img4.png" Caption="Chart Area Customization"%}
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img4.png" %}
 

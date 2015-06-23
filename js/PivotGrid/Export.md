@@ -52,5 +52,5 @@ function btnClick(e) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Export_images/Export_img1.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Export_images/Export_img1.png" %}
 

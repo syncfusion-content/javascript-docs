@@ -16,7 +16,6 @@ documentation: ug
 A combination Chart combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
 
    1. Can’t combine Column and Bar series.
-
    2. Pie Chart can’t be used with other series types.
 
 
@@ -44,7 +43,7 @@ function onSeriesRenders(args) {
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Series_images/Series_img1.png" Caption="Combination Chart"%}
+{% include image.html url="/js/OlapChart/Series_images/Series_img1.png" %}
 
 ##Series Points Customization
 

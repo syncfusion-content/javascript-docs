@@ -14,9 +14,7 @@ The **OLAP Gauge** control provides support to display multiple gauges in a stru
 ## Supported Layouts
 
    1. Wrap Layout: Based on the available space, gauges are aligned and displayed automatically.
-
    2. Row count: Specifies the number of gauge controls to be displayed row-wise.
-
    3. Column count: Specifies the number of gauge controls to be displayed column-wise.
 
 ## Layout Customization 
@@ -125,7 +123,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Layout_images/Layout_img1.png" Caption="Row Count"%}
+{% include image.html url="/js/OlapGauge/Layout_images/Layout_img1.png" %}
 
 ### Column Count
 
@@ -229,5 +227,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Layout_images/Layout_img2.png" Caption="Column Count"%}
+{% include image.html url="/js/OlapGauge/Layout_images/Layout_img2.png" %}
 
