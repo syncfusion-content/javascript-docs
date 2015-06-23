@@ -56,88 +56,89 @@ The other changes based on each components are as follows,
 <table>
 <tr>
 <td>
-<a href="#ejaccordion">ejAccordion</a></td><td>
-<a href="#ejdigitalgauge">ejDigitalGauge</a></td><td>
-<a href="#ejpivotpager">ejPivotPager</a></td><td>
-<a href="#ejtab">ejTab</a></td></tr>
+<a href="#ejAccordion">ejAccordion</a></td><td>
+<a href="#ejDiagram">ejDiagram</a></td><td>
+<a href="#ejOlapClient">ejOlapClient</a></td><td>
+<a href="#ejScroller">ejScroller</a></td></tr>
 <tr>
 <td>
-<a href="#ejautocomplete">ejAutoComplete</a></td><td>
-<a href="#ejdropdownlist">ejDropDownList</a></td><td>
-<a href="#ejprogressbar">ejProgressbar</a></td><td>
-<a href="#ejtagcloud">ejTagCloud</a></td></tr>
+<a href="#ejAutoComplete">ejAutoComplete</a></td><td>
+<a href="#ejDialog">ejDialog</a></td><td>
+<a href="#ejOlapGauge">ejOlapGauge</a></td><td>
+<a href="#ejSlider">ejSlider</a></td></tr>
 <tr>
 <td>
-<a href="#ejbarcode">ejBarcode</a></td><td>
-<a href="#ejgantt">ejGantt</a></td><td>
-<a href="#ejradiobutton">ejRadioButton</a></td><td>
-<a href="#ejtextboxes">ejTextBoxes</a></td></tr>
+<a href="#ejBarcode">ejBarcode</a></td><td>
+<a href="#ejDigitalGauge">ejDigitalGauge</a></td><td>
+<a href="#ejOlapGauge">ejOlapGrid</a></td><td>
+<a href="#ejSplitButton">ejSplitButton</a></td></tr>
 <tr>
 <td>
-<a href="#ejbulletgraph">ejBulletGraph</a></td><td>
-<a href="#ejgrid">ejGrid</a></td><td>
-<a href="#ejrangenavigator">ejRangeNavigator</a></td><td>
-<a href="#ejtimepicker">ejTimePicker</a></td></tr>
+<a href="#ejBulletGraph">ejBulletGraph</a></td><td>
+<a href="#ejDropDownList">ejDropDownList</a></td><td>
+<a href="#ejTextBoxes">ejPercentageTextbox</a></td><td>
+<a href="#ejSplitter">ejSplitter</a></td></tr>
 <tr>
 <td>
-<a href="#ejbutton">ejButton</a></td><td>
-<a href="#ejlineargauge">ejLinearGauge</a></td><td>
-<a href="#ejrating">ejRating</a></td><td>
-<a href="#ejtogglebutton">ejToggleButton</a></td></tr>
+<a href="#ejButton">ejButton</a></td><td>
+<a href="#ejGantt">ejGantt</a></td><td>
+<a href="#ejPivotPager">ejPivotPager</a></td><td>
+<a href="#ejTab">ejTab</a></td></tr>
 <tr>
 <td>
-<a href="#ejchart">ejChart</a></td><td>
-<a href="#ejmaps">ejMaps</a></td><td>
-<a href="#ejrichtexteditor">ejRichTextEditor</a></td><td>
-<a href="#ejtoolbar">ejToolbar</a></td></tr>
+<a href="#ejChart">ejChart</a></td><td>
+<a href="#ejGrid">ejGrid</a></td><td>
+<a href="#ejProgressbar">ejProgressbar</a></td><td>
+<a href="#ejTagCloud">ejTagCloud</a></td></tr>
 <tr>
 <td>
-<a href="#ejcheckbox">ejCheckbox</a></td><td>
-<a href="#ejmaskedit">ejMaskEdit</a></td><td>
-<a href="#ejrotator">ejRotator</a></td><td>
-<a href="#ejtreemap">ejTreeMap</a></td></tr>
+<a href="#ejCheckbox">ejCheckbox</a></td><td>
+<a href="#ejLinearGauge">ejLinearGauge</a></td><td>
+<a href="#ejRadioButton">ejRadioButton</a></td><td>
+<a href="#ejTimePicker">ejTimePicker</a></td></tr>
 <tr>
 <td>
-<a href="#ejcirculargauge">ejCircularGauge</a></td><td>
-<a href="#ejmenu">ejMenu</a></td><td>
-<a href="#ejschedule">ejSchedule</a></td><td>
-<a href="#ejtreeview">ejTreeView</a></td></tr>
+<a href="#ejCircularGauge">ejCircularGauge</a></td><td>
+<a href="#ejMaps">ejMaps</a></td><td>
+<a href="#ejRangeNavigator">ejRangeNavigator</a></td><td>
+<a href="#ejToolbar">ejToolbar</a></td></tr>
+<tr>
+<td><a href="#ejColorPicker">ejColorPicker</a></td><td>
+<a href="#ejMaskEdit">ejMaskEdit</a></td><td>
+<a href="#ejRating">ejRating</a></td><td>
+<a href="#ejToggleButton">ejToggleButton</a></td></tr>
 <tr>
 <td>
-<a href="#ejdatepicker">ejDatePicker</a></td><td>
-<a href="#ejolapchart">ejOlapChart</a></td><td>
-<a href="#ejscroller">ejScroller</a></td><td>
-<a href="#ejuploadbox">ejUploadBox</a></td></tr>
+<a href="#ejTextBoxes">ejCurrencyTextbox</a></td><td>
+<a href="#ejMenu">ejMenu</a></td><td>
+<a href="#ejRichTextEditor">ejRichTextEditor</a></td><td>
+<a href="#ejTreeView">ejTreeView</a></td></tr>
 <tr>
 <td>
-<a href="#ejdatetimepicker">ejDateTimePicker</a></td><td>
-<a href="#ejolapclient">ejOlapClient</a></td><td>
-<a href="#ejslider">ejSlider</a></td><td>
-</td></tr>
+<a href="#ejDatePicker">ejDatePicker</a></td><td>
+<a href="#ejTextBoxes">ejNumericTextbox</a></td><td>
+<a href="#ejRotator">ejRotator</a></td><td>
+<a href="#ejTreeMap">ejTreeMap</a></td></tr>
 <tr>
 <td>
-<a href="#ejdiagram">ejDiagram</a></td><td>
-<a href="#ejolapgauge">ejOlapGauge</a></td><td>
-<a href="#ejsplitbutton">ejSplitButton</a></td><td>
-</td></tr>
-<tr>
-<td>
-<a href="#ejdialog">ejDialog</a></td><td>
-<a href="#ejpivotgrid">ejPivotGrid</a></td><td>
-<a href="#ejsplitter">ejSplitter</a></td><td>
-</td></tr>
+<a href="#ejDateTimePicker">ejDateTimePicker</a></td><td>
+<a href="#ejOlapChart">ejOlapChart</a></td><td>
+<a href="#ejSchedule">ejSchedule</a></td><td>
+<a href="#ejUploadBox">ejUploadBox</a></td>
+</tr>
 </table>
 
 <a name="ejaccordion"></a>
+
 ### ejAccordion
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API  Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>
+Member Type</th><th>
+Old API Name</th><th>
+New API  Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "7">
    <b>Properties</b></td><td>
@@ -179,22 +180,22 @@ enablePersistence </td><td>
    Methods</td><td>
 disableAll</td><td>
  </td><td>
-We have removed this method. Use <b>disable method</b> to achieve this behavior</td></tr>
+We have removed this method. Use <b>disable method</b> to achieve this behaviour</td></tr>
 <tr>
 <td>
 disableItemByIndex</td><td>
  </td><td>
-We removed this method. Use <b>disableItems method </b> to achieve this behavior</td></tr>
+We removed this method. Use <b>disableItems method </b> to achieve this behaviour</td></tr>
 <tr>
 <td>
 enableAll</td><td>
  </td><td>
-We have removed this method. Use <b>enable method</b> to achieve this behavior</td></tr>
+We have removed this method. Use <b>enable method</b> to achieve this behaviour</td></tr>
 <tr>
 <td>
 hideAccordion</td><td>
  </td><td>
-We have removed this method. Already we have <b>hide </b>method to achieve this behavior</td></tr>
+We have removed this method. Already we have <b>hide </b>method to achieve this behaviour</td></tr>
 <tr>
 <td>
 panelCount</td><td>
@@ -209,27 +210,27 @@ We have removed this method. We can achieve this scenario through <b>selectedIte
 <td>
 showAccordion</td><td>
  </td><td>
-We have removed this method. Already we have <b>show method</b> to achieve this behavior</td></tr>
+We have removed this method. Already we have <b>show method</b> to achieve this behaviour</td></tr>
 <tr>
 <td>
  <b>Enum</b></td> <td>
- ej.Accordion.heightFormat = { <br><br>
-    &nbsp;Content: "content",<br>
-    &nbsp;Auto: "auto",<br>
-    &nbsp;Fill: "fill"<br>
+ ej.Accordion.heightFormat = { <br/>
+    &nbsp;Content: "content",<br/>
+    &nbsp;Auto: "auto",<br/>
+    &nbsp;Fill: "fill"<br/>
     }; </td> <td>
- ej.Accordion.HeightAdjustMode ={<br><br>
-    &nbsp;Content: "content",<br>
-    &nbsp;Auto: "auto",<br>
-    &nbsp;Fill: "fill"<br> 
+ ej.Accordion.HeightAdjustMode ={<br/>
+    &nbsp;Content: "content",<br/>
+    &nbsp;Auto: "auto",<br/>
+    &nbsp;Fill: "fill"<br/> 
     };</td><td>
  </td></tr>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event args</b></td><td>
-<b>New Event args</b></td><td>
-<b>comments</b></td></tr>
+<th>
+Event Name</th><th>
+Old Event args</th><th>
+New Event args</th><th>
+comments</th></tr>
 <tr>
 <td>
 ajaxLoad</td><td>
@@ -245,15 +246,16 @@ Removed event argument</td></tr>
 </table>
 
 <a name="ejautocomplete"></a>
+
 ### ejAutoComplete
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>comments</b></td></tr>
+<th>
+Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+comments</th></tr>
 <tr>
 <td rowspan = "19">
   <b>Properties</b></td><td>
@@ -353,34 +355,34 @@ popupWidth</td><td>
 <tr>
 <td rowspan = "2">
  <b>Enum</b></td><td>
- ej.sortingOrder = { <br> 
-       &nbsp;&nbsp;Ascending: "ascending",<br>
-       &nbsp;&nbsp;Descending: "descending"<br>
+ ej.sortingOrder = { <br/> 
+       &nbsp;&nbsp;Ascending: "ascending",<br/>
+       &nbsp;&nbsp;Descending: "descending"<br/>
        }; </td><td>
- ej.SortOrder = { <br>
-       &nbsp;&nbsp;Ascending: "ascending",<br>
-       &nbsp;&nbsp;Descending: "descending" <br>
+ ej.SortOrder = { <br/>
+       &nbsp;&nbsp;Ascending: "ascending",<br/>
+       &nbsp;&nbsp;Descending: "descending" <br/>
        };</td><td>
 </td></tr>
 <tr>
 <td>
- ej.multiSelectMode = {<br>
-    &nbsp;&nbsp;None: "none",<br>
-    &nbsp;&nbsp;Delimiter: "delimiter",<br>
-    &nbsp;&nbsp;VisualMode: "visualmode"<br>
+ ej.multiSelectMode = {<br/>
+    &nbsp;&nbsp;None: "none",<br/>
+    &nbsp;&nbsp;Delimiter: "delimiter",<br/>
+    &nbsp;&nbsp;VisualMode: "visualmode"<br/>
     } </td><td>
- ej.MultiSelectMode = { <br>
-    &nbsp;&nbsp;None: "none",<br>
-    &nbsp;&nbsp;Delimiter: "delimiter",<br> 
-   &nbsp;&nbsp;VisualMode: "visualmode"<br>
+ ej.MultiSelectMode = { <br/>
+    &nbsp;&nbsp;None: "none",<br/>
+    &nbsp;&nbsp;Delimiter: "delimiter",<br/> 
+   &nbsp;&nbsp;VisualMode: "visualmode"<br/>
     }</td><td>
  </td></tr>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event args</b></td><td>
-<b>New Event args</b></td><td>
-<b>comments</b></td></tr>
+<th>
+Event Name</th><th>
+Old Event args</th><th>
+New Event args</th><th>
+comments</th></tr>
 <tr>
 <td>
 focusIn</td><td>
@@ -595,80 +597,94 @@ Modified the args.Object and args.Value</td></tr>
 </table>
 
 <a name="ejbutton"></a>
+
 ### ejButton
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td colspan = "2">
-<b>Comments</b></td></tr>
+<th>
+Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th colspan = "2">
+Comments</th></tr>
 <tr>
-<td rowspan = "3">
+<td rowspan = "4">
  <b>Properties</b></td><td>
 roundedCorner</td><td colspan = "2">
-<b>showRoundedCorner </b></td><td>
+showRoundedCorner </td><td>
  </td></tr>
 <tr>
 <td>
 rtl</td><td colspan = "2">
-<b>enableRTL</b></td><td>
+enableRTL</td><td>
  </td></tr>
 <tr>
 <td>
 type</td><td colspan = "2">
  </td><td>
-Added</td></tr>
+Newly added</td></tr>
 <tr>
-<td rowspan = "3">
+<td></td><td colspan = "2">htmlAttributes
+ </td><td>
+Newly added</td></tr>
+<tr>
+<td rowspan = "4">
  <b>Enum</b></td><td>
- ej.contents = {<br>
-       &nbsp; &nbsp;textOnly:"textonly",<br>
-       &nbsp; &nbsp;imageOnly: "imageonly",<br>
-       &nbsp; &nbsp;imageBoth: "imageboth",<br>
-       &nbsp; &nbsp;textAndImage: "textandimage",<br>
-       &nbsp; &nbsp;imageTextImage:"imagetextimage"<br>
+ ej.contents = {<br/>
+       &nbsp; &nbsp;textOnly:"textonly",<br/>
+       &nbsp; &nbsp;imageOnly: "imageonly",<br/>
+       &nbsp; &nbsp;imageBoth: "imageboth",<br/>
+       &nbsp; &nbsp;textAndImage: "textandimage",<br/>
+       &nbsp; &nbsp;imageTextImage:"imagetextimage"<br/>
        }; </td>
  <td colspan = "2">
- ej.ContentType = {<br>
-      &nbsp;&nbsp;TextOnly:"textonly",<br>
-      &nbsp;&nbsp;ImageOnly: "imageonly",<br>
-      &nbsp;&nbsp;ImageBoth: "imageboth",<br>
-      &nbsp;&nbsp;TextAndImage:"textandimage",<br>
-      &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br>
+ ej.ContentType = {<br/>
+      &nbsp;&nbsp;TextOnly:"textonly",<br/>
+      &nbsp;&nbsp;ImageOnly: "imageonly",<br/>
+      &nbsp;&nbsp;ImageBoth: "imageboth",<br/>
+      &nbsp;&nbsp;TextAndImage:"textandimage",<br/>
+      &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br/>
      }; </td>
      <td>
  </td></tr>
 <tr>
 <td>
- ej.imagePositions = {<br>
-      &nbsp;&nbsp;imageRight:"imageright",<br>
-      &nbsp;&nbsp;imageLeft: "imageleft"<br>
+ ej.imagePositions = {<br/>
+      &nbsp;&nbsp;imageRight:"imageright",<br/>
+      &nbsp;&nbsp;imageLeft: "imageleft"<br/>
     }; </td>
 <td colspan = "2">
- ej.ImagePosition = { <br>
-      &nbsp;&nbsp;ImageRight:"imageright",<br>
-      &nbsp;&nbsp;ImageLeft: "imageleft"<br>
+ ej.ImagePosition = { <br/>
+      &nbsp;&nbsp;ImageRight:"imageright",<br/>
+      &nbsp;&nbsp;ImageLeft: "imageleft"<br/>
     }; </td>
     <td>
  </td></tr>
 <tr>
-<td> ej.buttonSize ={<br>
-      &nbsp;&nbsp;normal : "normal",<br>
-      &nbsp;&nbsp;mini: "mini",<br>
-      &nbsp;&nbsp;small: "small",<br>
-      &nbsp;&nbsp;medium:"medium",<br>
-      &nbsp;&nbsp;large: "large"<br>
+<td> ej.buttonSize ={<br/>
+      &nbsp;&nbsp;normal : "normal",<br/>
+      &nbsp;&nbsp;mini: "mini",<br/>
+      &nbsp;&nbsp;small: "small",<br/>
+      &nbsp;&nbsp;medium:"medium",<br/>
+      &nbsp;&nbsp;large: "large"<br/>
     }; </td>
   <td colspan = "2">
- ej.ButtonSize = {<br>
-      &nbsp;&nbsp;Normal : "normal",<br>
-      &nbsp;&nbsp;Mini: "mini",<br>
-      &nbsp;&nbsp;Small:"small",<br>
-      &nbsp;&nbsp;Medium:"medium",<br>
-      &nbsp;&nbsp;Large: "large"<br>
+ ej.ButtonSize = {<br/>
+      &nbsp;&nbsp;Normal : "normal",<br/>
+      &nbsp;&nbsp;Mini: "mini",<br/>
+      &nbsp;&nbsp;Small:"small",<br/>
+      &nbsp;&nbsp;Medium:"medium",<br/>
+      &nbsp;&nbsp;Large: "large"<br/>
       }; </td><td>
+ </td></tr>
+ <tr>
+<td> </td>
+  <td colspan = "2">
+ ej.ButtonType = {<br/>
+      &nbsp;&nbsp;Button : "button",<br/>
+      &nbsp;&nbsp;Reset: "reeset",<br/>
+      &nbsp;&nbsp;Submit:"submit",<br/>
+      }; </td><td> Newly added
  </td></tr>
 </table>
 
@@ -1017,18 +1033,18 @@ args:{cancel<b>data={model}</b>modeltype} </td><td colspan = "3">
 </table>
 
 <a name="ejcheckbox"></a>
+
 ### ejCheckbox
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "6">
- Properties</td><td>
+<td rowspan = "9">
+ <b>Properties</b></td><td>
 check</td><td>
 checked</td><td>
  </td></tr>
@@ -1058,28 +1074,41 @@ rtl</td><td>
 enableRTL</td><td>
  </td></tr>
 <tr>
+<td></td><td>
+htmlAttributes</td><td>Newly added
+ </td></tr>
+<tr>
+<td>
+</td><td>
+validationMessage</td><td>Newly added
+ </td></tr>
+<tr>
+<td></td><td>
+validationRules</td><td>
+ Newly added</td></tr>
+<tr>
 <td rowspan = "2">
  <b>Enum</b></td><td>
- ej.checkboxSize = {<br>
-       &nbsp;&nbsp;small: "small",<br>
-       &nbsp;&nbsp;medium: "medium"<br>
+ ej.checkboxSize = {<br/>
+       &nbsp;&nbsp;small: "small",<br/>
+       &nbsp;&nbsp;medium: "medium"<br/>
        }; </td><td>
- ej.CheckboxSize = {<br>
-       &nbsp;&nbsp;Small: "small",<br>
-       &nbsp;&nbsp;Medium: "medium"<br>
+ ej.CheckboxSize = {<br/>
+       &nbsp;&nbsp;Small: "small",<br/>
+       &nbsp;&nbsp;Medium: "medium"<br/>
        }; </td><td>
  </td></tr>
 <tr>
 <td>
- ej.checkboxState = {<br>
-    &nbsp;&nbsp;check: "check",<br>
-    &nbsp;&nbsp;uncheck: "uncheck",<br>
-    &nbsp;&nbsp;indeterminate:"indeterminate"<br>
+ ej.checkboxState = {<br/>
+    &nbsp;&nbsp;check: "check",<br/>
+    &nbsp;&nbsp;uncheck: "uncheck",<br/>
+    &nbsp;&nbsp;indeterminate:"indeterminate"<br/>
     };</td><td>
- ej.CheckState = {<br>
-    &nbsp;&nbsp;Check: "check",<br>
-    &nbsp;&nbsp;UnCheck: "uncheck",<br>
-    &nbsp;&nbsp;Indeterminate:"indeterminate"<br>
+ ej.CheckState = {<br/>
+    &nbsp;&nbsp;Check: "check",<br/>
+    &nbsp;&nbsp;UnCheck: "uncheck",<br/>
+    &nbsp;&nbsp;Indeterminate:"indeterminate"<br/>
     };</td><td>
  </td></tr>
 </table>
@@ -1472,18 +1501,49 @@ args.pointer{angleelement<br/>valueIndex}</td><td>
 arguments moved to Object type</td></tr>
 </table>
 
+<a name="ejColorPicker"></a>
+
+#### ejColorPicker
+
+<table>
+  <tr>
+<th>
+Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
+<tr>
+<td rowspan = "2">
+  <b>Properties</b></td><td></td><td>
+buttonMode</td><td> Newly added
+ </td></tr>
+<tr>
+<td></td><td>
+htmlAttributes</td><td> Newly added
+ </td></tr>
+<tr>
+  <td> <b> Enum </b> </td>
+<td></td><td>
+ ej.ColorPicker.ButtonMode = {<br/>
+      &nbsp;&nbsp;Default:"dropdown",<br/>
+      &nbsp;&nbsp;Split: "split"<br/>
+    }; </td>
+<td>  Newly added </td></tr>
+</table>
+
 <a name="ejdatepicker"></a>
+
 ### ejDatePicker
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>
+Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "10">
+<td rowspan = "11">
   <b>Properties</b></td><td>
 showDateIcon</td><td>
 showPopupButton</td><td>
@@ -1514,6 +1574,10 @@ rtl</td><td>
 enableRTL   </td><td>
  </td></tr>
 <tr>
+<td></td><td>
+htmlAttributes</td><td> Newly added
+ </td></tr>
+<tr>
 <td>
 roundedCorner</td><td>
 showRoundedCorner</td><td>
@@ -1536,45 +1600,45 @@ highlightWeekend</td><td>
 <tr>
 <td rowspan = "3">
 <b>Enum</b></td> <td>
-  ej.DatePicker.Header = {<br>
-        &nbsp;&nbsp;ShowHeaderNone:"ShowHeaderNone",<br>
-        &nbsp;&nbsp;ShowHeaderShort:"ShowHeaderShort",<br>
-        &nbsp;&nbsp;ShowHeaderMin: "ShowHeaderMin",<br>
-        &nbsp;&nbsp;ShowHeaderLong:"ShowHeaderLong"<br>
+  ej.DatePicker.Header = {<br/>
+        &nbsp;&nbsp;ShowHeaderNone:"ShowHeaderNone",<br/>
+        &nbsp;&nbsp;ShowHeaderShort:"ShowHeaderShort",<br/>
+        &nbsp;&nbsp;ShowHeaderMin: "ShowHeaderMin",<br/>
+        &nbsp;&nbsp;ShowHeaderLong:"ShowHeaderLong"<br/>
         };</td> <td>
-  ej.DatePicker.Header = { <br>
-        &nbsp;&nbsp;ShowHeaderNone:"showheadernone",<br>
-        &nbsp;&nbsp;ShowHeaderShort:"showheadershort",<br>
-        &nbsp;&nbsp;ShowHeaderMin: "showheadermin",<br>
-        &nbsp;&nbsp;ShowHeaderLong: "showheaderlong"<br>
+  ej.DatePicker.Header = { <br/>
+        &nbsp;&nbsp;ShowHeaderNone:"showheadernone",<br/>
+        &nbsp;&nbsp;ShowHeaderShort:"showheadershort",<br/>
+        &nbsp;&nbsp;ShowHeaderMin: "showheadermin",<br/>
+        &nbsp;&nbsp;ShowHeaderLong: "showheaderlong"<br/>
         }; </td> <td>
  </td></tr>
 <tr><td>
- ej.DatePicker.highlightSection = {<br>
-    &nbsp;&nbsp;Month: "Month",<br>
-    &nbsp;&nbsp;Week: "Week",<br>
-    &nbsp;&nbsp;WorkDays: "WorkDays",<br>
-    &nbsp;&nbsp;None: "None"<br>
+ ej.DatePicker.highlightSection = {<br/>
+    &nbsp;&nbsp;Month: "Month",<br/>
+    &nbsp;&nbsp;Week: "Week",<br/>
+    &nbsp;&nbsp;WorkDays: "WorkDays",<br/>
+    &nbsp;&nbsp;None: "None"<br/>
     }; </td> <td>
- ej.DatePicker.HighlightSection = {<br>
-    &nbsp;&nbsp;Month: "month",<br>
-    &nbsp;&nbsp;Week: "week",<br>
-    &nbsp;&nbsp;WorkDays: "workdays",<br>
-    &nbsp;&nbsp;None: "none"<br>
+ ej.DatePicker.HighlightSection = {<br/>
+    &nbsp;&nbsp;Month: "month",<br/>
+    &nbsp;&nbsp;Week: "week",<br/>
+    &nbsp;&nbsp;WorkDays: "workdays",<br/>
+    &nbsp;&nbsp;None: "none"<br/>
     }; </td> <td>
  </td></tr>
 <tr><td>
- ej.DatePicker.Level = {<br>
-    &nbsp;&nbsp;Month: "Month",<br>
-    &nbsp;&nbsp;Year: "Year",<br>
-    &nbsp;&nbsp;Decade: "Decade",<br>
-    &nbsp;&nbsp;Century: "Century"<br>
+ ej.DatePicker.Level = {<br/>
+    &nbsp;&nbsp;Month: "Month",<br/>
+    &nbsp;&nbsp;Year: "Year",<br/>
+    &nbsp;&nbsp;Decade: "Decade",<br/>
+    &nbsp;&nbsp;Century: "Century"<br/>
     }; </td> <td>
- ej.DatePicker.Level = {<br>
-    &nbsp;&nbsp;Month: "month",<br>
-    &nbsp;&nbsp;Year: "year",<br>
-    &nbsp;&nbsp;Decade: "decade",<br>
-    &nbsp;&nbsp;Century: "century"<br>
+ ej.DatePicker.Level = {<br/>
+    &nbsp;&nbsp;Month: "month",<br/>
+    &nbsp;&nbsp;Year: "year",<br/>
+    &nbsp;&nbsp;Decade: "decade",<br/>
+    &nbsp;&nbsp;Century: "century"<br/>
     }; </td> <td>
  </td></tr>
 </table>
@@ -1583,11 +1647,10 @@ highlightWeekend</td><td>
 
 <table>
 <tr>
-<td>
-<b>EventName                 </b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>EventName</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td>
 Open</td><td>
@@ -1615,18 +1678,18 @@ args.prevDate</td><td>
 </table>
 
 <a name="ejdatetimepicker"></a>
+
 ### ejDateTimePicker
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td colspan = "2">
-<b>New API Name</b></td><td colspan = "2">
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th colspan = "2">
+New API Name</th><th colspan = "2">
+Comments</th></tr>
 <tr>
-<td rowspan = "7">
-  Properties</td><td>
+<td rowspan = "8">
+  <b>Properties</b></td><td>
 localize</td><td>
 locale</td><td colspan = "2">
  </td></tr>
@@ -1639,6 +1702,10 @@ showRoundedCorner </td><td colspan = "2">
 <td>
 rtl</td><td>
 enableRTL   </td><td colspan = "2">
+ </td></tr>
+<tr>
+<td></td><td>
+htmlAttributes</td><td colspan = "2"> Newly added
  </td></tr>
 <tr>
 <td>
@@ -1661,8 +1728,8 @@ persist</td><td>
 enablePersistence  </td><td colspan = "2">
  </td></tr>
 <tr>
-<td>
-Method</td><td>
+<td><b>
+Method</b></td><td>
 dateTimeNow</td><td>
 setCurrentDateTime</td><td colspan = "2">
  </td></tr>
@@ -1672,11 +1739,10 @@ setCurrentDateTime</td><td colspan = "2">
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td colspan = "2">
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th colspan = "2">
+Comments</th></tr>
 <tr>
 <td rowspan = "2">
 Open</td><td>
@@ -1713,6 +1779,7 @@ args.prevDateTime</td><td>
 </table>
 
 <a name="ejdiagram"></a>
+
 ### ejDiagram
 
 <table>
@@ -1845,17 +1912,17 @@ rotationChange</td></tr>
 </table>
 
 <a name="ejdialog"></a>
+
 ### ejDialog
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "15">
+<td rowspan = "16">
  <b>Properties</b></td><td>
 autoOpen</td><td>
 showOnInit</td><td>
@@ -1879,6 +1946,10 @@ enableModal</td><td>
 <td>
 Resizable</td><td>
 enableResize</td><td>
+ </td></tr>
+<tr>
+<td></td><td>
+htmlAttributes</td><td> Newly added
  </td></tr>
 <tr>
 <td>
@@ -2003,17 +2074,17 @@ ej.FontStyle = { Normal: "normal", <br/>Bold: "bold", Italic: "italic", Under
 </table>
 
 <a name="ejdropdownlist"></a>
+
 ### ejDropDownList
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "15">
+<td rowspan = "17">
  <b>Properties</b></td><td>
 listSize</td><td>
 ltemsCount</td><td>
@@ -2052,6 +2123,16 @@ selectedItemIndex</td><td>
 <td>
 multiSelectedItemsIndex</td><td>
 selectedItems</td><td>
+ </td></tr>
+<tr>
+<td>
+</td><td>
+validationRules</td><td>Newly added
+ </td></tr>
+<tr>
+<td>
+</td><td>
+validationMessage</td><td>Newly added
  </td></tr>
 <tr>
 <td>
@@ -2130,11 +2211,10 @@ selectItemByValue</td><td>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "2">
 popupHide</td><td>
@@ -2171,6 +2251,7 @@ New Event argument</td></tr>
 </table>
 
 <a name="ejgantt"></a>
+
 ### ejGantt
 
 <table>
@@ -3477,15 +3558,15 @@ LayerType = {Geometry: "geometry",        OSM: "osm",        Bing:
 </table>
 
 <a name="ejmaskedit"></a>
+
 ### ejMaskEdit
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "6">
  <b>Properties</b></td><td>
@@ -3541,13 +3622,13 @@ keyup</td><td>
 <tr>
 <td>
 <b>Enum</b></td> <td>
- ej.inputMode = {<br>
-        &nbsp;&nbsp;Password: "password",<br>
-        &nbsp;&nbsp;Text: "text"<br>
+ ej.inputMode = {<br/>
+        &nbsp;&nbsp;Password: "password",<br/>
+        &nbsp;&nbsp;Text: "text"<br/>
         };  </td> <td>
- ej.InputMode = {<br>
-        &nbsp;&nbsp;Password: "password",<br>
-        &nbsp;&nbsp;Text: "text"<br>
+ ej.InputMode = {<br/>
+        &nbsp;&nbsp;Password: "password",<br/>
+        &nbsp;&nbsp;Text: "text"<br/>
         };  </td> <td>
  </td> </tr>
 </table>
@@ -3556,11 +3637,10 @@ keyup</td><td>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td>
 change</td><td>
@@ -3612,15 +3692,16 @@ args.unmaskedValue</td><td>
 </table>
 
 <a name="ejmenu"></a>
+
 ### ejMenu
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td colspan = "2">
-<b>Old API Name</b></td><td colspan = "2">
-<b>New API Name</b></td><td colspan = "2">
-<b>Comments</b></td></tr>
+<th>
+Member Type</th><th colspan = "2">
+Old API Name</th><th colspan = "2">
+New API Name</th><th colspan = "2">
+Comments</th></tr>
 <tr>
 <td colspan = "2" rowspan = "7">
  <b>Properties</b></td><td colspan = "2">
@@ -3721,38 +3802,38 @@ showContextMenu</td><td colspan = "2">
  </td></tr>
 <tr>
 <td rowspan = "3">
-<b>Enum</b></td><td >
- ej.menuType = {<br>
-       &nbsp;&nbsp;NormalMenu:"NormalMenu",<br>
-       &nbsp;&nbsp;ContextMenu:"ContextMenu"<br>
+<b>Enum</b></td><td colspan = "2" >
+ ej.menuType = {<br/>
+       &nbsp;&nbsp;NormalMenu:"NormalMenu",<br/>
+       &nbsp;&nbsp;ContextMenu:"ContextMenu"<br/>
        }; </td>
        <td>
- ej.MenuType = {<br>
-           &nbsp;&nbsp;NormalMenu:"normalmenu",<br>
-           &nbsp;&nbsp;ContextMenu:"contextmenu"<br>
+ ej.MenuType = {<br/>
+           &nbsp;&nbsp;NormalMenu:"normalmenu",<br/>
+           &nbsp;&nbsp;ContextMenu:"contextmenu"<br/>
            }; </td>
            <td>
  </td></tr>
  <tr>
-<td >
- ej.direction = {<br>
-       &nbsp;&nbsp;Left: "Left",<br>
-       &nbsp;&nbsp;Right: "Right"<br>
+<td colspan = "2">
+ ej.direction = {<br/>
+       &nbsp;&nbsp;Left: "Left",<br/>
+       &nbsp;&nbsp;Right: "Right"<br/>
     }; </td> <td>
- ej.Direction = {<br>
-    &nbsp;&nbsp;Left: "left",<br>
-    &nbsp;&nbsp;Right: "right"<br>
+ ej.Direction = {<br/>
+    &nbsp;&nbsp;Left: "left",<br/>
+    &nbsp;&nbsp;Right: "right"<br/>
     }; </td> <td>
  </td></tr>
 <tr>
-<td>
- ej.animationType = {<br>
-    &nbsp;&nbsp;None: "none",<br>
-    &nbsp;&nbsp;Default: "default"<br>
+<td colspan = "2">
+ ej.animationType = {<br/>
+    &nbsp;&nbsp;None: "none",<br/>
+    &nbsp;&nbsp;Default: "default"<br/>
     }; </td> <td >
- ej.AnimationType = {<br>
-    &nbsp;&nbsp;None: "none",<br>
-    &nbsp;&nbsp;Default: "default"<br>
+ ej.AnimationType = {<br/>
+    &nbsp;&nbsp;None: "none",<br/>
+    &nbsp;&nbsp;Default: "default"<br/>
     }; </td> <td>
  </td></tr>
 </table>
@@ -4110,15 +4191,15 @@ Mode</td><td>
 </table>
 
 <a name="ejprogressbar"></a>
+
 ### ejProgressbar
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "4">
  <b>Properties</b></td><td>
@@ -4149,15 +4230,15 @@ getPercentage</td><td>
 </table>
 
 <a name="ejradiobutton"></a>
+
 ### ejRadioButton
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "3">
  <b>Properties</b></td><td>
@@ -4177,13 +4258,13 @@ enableRTL   </td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.radiobuttonSize = {<br>
-       &nbsp;&nbsp;small: "small",<br>
-       &nbsp;&nbsp;medium:"medium"<br>
+ ej.radiobuttonSize = {<br/>
+       &nbsp;&nbsp;small: "small",<br/>
+       &nbsp;&nbsp;medium:"medium"<br/>
        }; </td> <td>
- ej.RadioButtonSize = {<br>
-       &nbsp;&nbsp;Small: "small",<br>
-       &nbsp;&nbsp;Medium:"medium"<br>
+ ej.RadioButtonSize = {<br/>
+       &nbsp;&nbsp;Small: "small",<br/>
+       &nbsp;&nbsp;Medium:"medium"<br/>
        }; </td><td>
  </td></tr>
 </table>
@@ -4334,17 +4415,17 @@ Modified args.DataRemoved args.Cancel</td></tr>
 </table>
 
 <a name="ejrating"></a>
+
 ### ejRating
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "2">
+<td rowspan = "3">
 <b>Properties</b></td><td>
 currentValue</td><td>
 value</td><td>
@@ -4353,6 +4434,10 @@ value</td><td>
 <td>
 persist</td><td>
 enablePersistence    </td><td>
+ </td></tr>
+<tr>
+<td> </td><td>
+htmlAttributes</td><td>Newly added
  </td></tr>
 <tr>
 <td rowspan = "3">
@@ -4380,7 +4465,7 @@ getCurrentValue</td><td>
 <td>
 hideResetButton</td><td>
  </td><td>
-We have removed this method. use <b>allowReset  property </b>to achieve this behavior</td></tr>
+We have removed this method. use <b>allowReset  property </b>to achieve this behaviour</td></tr>
 <tr>
 <td>
 setCurrentValue</td><td>
@@ -4390,39 +4475,39 @@ setCurrentValue</td><td>
 <td>
 showResetButton</td><td>
  </td><td>
-We have removed this method. use <b>allowReset  property </b>to achieve this behavior</td></tr>
+We have removed this method. use <b>allowReset  property </b>to achieve this behaviour</td></tr>
 <tr>
 <td>
 showRating</td><td>
  </td><td>
-We have removed this method. use <b>show method </b> to achieve this behavior</td></tr>
+We have removed this method. use <b>show method </b> to achieve this behaviour</td></tr>
 <tr>
 <td>
 hideRating</td><td>
  </td><td>
-We have removed this method. use <b>hide method </b> to achieve this behavior</td></tr>
+We have removed this method. use <b>hide method </b> to achieve this behaviour</td></tr>
 <tr>
 <td rowspan = "2">
 <b>Enum</b></td><td>
- ej.Rating.Orientation = {<br>
-       &nbsp;&nbsp;Horizontal:"Horizontal",<br>
-       &nbsp;&nbsp;Vertical: "vertical"<br>
+ ej.Rating.Orientation = {<br/>
+       &nbsp;&nbsp;Horizontal:"Horizontal",<br/>
+       &nbsp;&nbsp;Vertical: "vertical"<br/>
        }; </td> <td>
- ej.Rating.Orientation = {<br>
-       &nbsp;&nbsp;Horizontal:"horizontal",<br>
-       &nbsp;&nbsp;Vertical: "vertical"<br>
+ ej.Rating.Orientation = {<br/>
+       &nbsp;&nbsp;Horizontal:"horizontal",<br/>
+       &nbsp;&nbsp;Vertical: "vertical"<br/>
        };</td> <td>
  </td></tr>
 <tr><td>
-ej.Rating.precisions = {<br>
-    &nbsp;&nbsp;Full: "full",<br>
-    &nbsp;&nbsp;Half: "half",<br>
-    &nbsp;&nbsp;Exact: "exact"<br>
+ej.Rating.precisions = {<br/>
+    &nbsp;&nbsp;Full: "full",<br/>
+    &nbsp;&nbsp;Half: "half",<br/>
+    &nbsp;&nbsp;Exact: "exact"<br/>
     };</td><td>
-ej.Rating.Precision = {<br>
-    &nbsp;&nbsp;Full: "full",<br>
-    &nbsp;&nbsp;Half: "half",<br>
-    &nbsp;&nbsp;Exact: "exact"<br>
+ej.Rating.Precision = {<br/>
+    &nbsp;&nbsp;Full: "full",<br/>
+    &nbsp;&nbsp;Half: "half",<br/>
+    &nbsp;&nbsp;Exact: "exact"<br/>
     };</td><td>
  </td></tr>
 </table>
@@ -4431,11 +4516,10 @@ ej.Rating.Precision = {<br>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td>
 <b>click</b></td><td>
@@ -4451,17 +4535,17 @@ args.value</td><td>
 </table>
 
 <a name="ejrichtexteditor"></a>
+
 ### ejRichTextEditor
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "7">
+<td rowspan = "8">
 <b>Properties</b></td><td>
 allowEdit</td><td>
 allowEditing</td><td>
@@ -4485,6 +4569,10 @@ enableResize</td><td>
 <td>
 rtl</td><td>
 enableRTL   </td><td>
+ </td></tr>
+<tr>
+<td> </td><td>
+htmlAttributes</td><td> Newly added
  </td></tr>
 <tr>
 <td>
@@ -4520,17 +4608,17 @@ getSelectedHtml</td><td>
 </table>
 
 <a name="ejrotator"></a>
+
 ### ejRotator
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "13">
+<td rowspan = "14">
  <b>Properties</b></td><td>
 allowResize</td><td>
 enableResize</td><td>
@@ -4554,6 +4642,11 @@ showCaption</td><td>
 <td>
 enablePlaybtn</td><td>
 showPlayButton</td><td>
+ </td></tr>
+<tr>
+<td>
+</td><td>
+htmlAttributes</td><td> Newly added
  </td></tr>
 <tr>
 <td>
@@ -4615,21 +4708,21 @@ nextSlide</td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.Rotator.pagerPosition = {<br>
-       &nbsp;&nbsp;TopLeft: "topleft",<br>
-       &nbsp;&nbsp;TopRight: "topright",<br>
-       &nbsp;&nbsp;BottomLeft: "bottomleft",<br>
-       &nbsp;&nbsp;BottomRight: "bottomright",<br>
-       &nbsp;&nbsp;TopCenter: "topCenter",<br>
-       &nbsp;&nbsp;Outside: "outside"<br>
+ ej.Rotator.pagerPosition = {<br/>
+       &nbsp;&nbsp;TopLeft: "topleft",<br/>
+       &nbsp;&nbsp;TopRight: "topright",<br/>
+       &nbsp;&nbsp;BottomLeft: "bottomleft",<br/>
+       &nbsp;&nbsp;BottomRight: "bottomright",<br/>
+       &nbsp;&nbsp;TopCenter: "topCenter",<br/>
+       &nbsp;&nbsp;Outside: "outside"<br/>
        }; </td> <td>
- ej.Rotator.PagerPosition = {<br>
-       &nbsp;&nbsp;TopLeft: "topleft",<br>
-       &nbsp;&nbsp;TopRight: "topright",<br>
-       &nbsp;&nbsp;BottomLeft: "bottomleft",<br>
-       &nbsp;&nbsp;BottomRight: "bottomright",<br>
-       &nbsp;&nbsp;TopCenter: "topCenter",<br>
-       &nbsp;&nbsp;Outside: "outside"<br>
+ ej.Rotator.PagerPosition = {<br/>
+       &nbsp;&nbsp;TopLeft: "topleft",<br/>
+       &nbsp;&nbsp;TopRight: "topright",<br/>
+       &nbsp;&nbsp;BottomLeft: "bottomleft",<br/>
+       &nbsp;&nbsp;BottomRight: "bottomright",<br/>
+       &nbsp;&nbsp;TopCenter: "topCenter",<br/>
+       &nbsp;&nbsp;Outside: "outside"<br/>
        }; </td><td>
  </td></tr>
 </table>
@@ -4638,11 +4731,10 @@ nextSlide</td><td>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "2">
 change</td><td>
@@ -4797,15 +4889,15 @@ ej.Schedule.Actions</td><td>
 </table>
 
 <a name="ejscroller"></a>
+
 ### ejScroller
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "3">
 <b>Properties</b></td><td>
@@ -4825,15 +4917,15 @@ enableRTL</td><td>
 </table>
 
 <a name="ejslider"></a>
+
 ### ejSlider
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "7">
 <b>Properties</b></td><td>
@@ -4873,27 +4965,27 @@ incrementStep</td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.sliderType = {<br>
-       &nbsp;&nbsp;Default: "default",<br>
-       &nbsp;&nbsp;MinRange: "minrange",<br>
-       &nbsp;&nbsp;Range: "range"<br>
+ ej.sliderType = {<br/>
+       &nbsp;&nbsp;Default: "default",<br/>
+       &nbsp;&nbsp;MinRange: "minrange",<br/>
+       &nbsp;&nbsp;Range: "range"<br/>
        }; </td> <td>
- ej.SliderType = {<br>
-       &nbsp;&nbsp;Default: "default",<br>
-       &nbsp;&nbsp;MinRange: "minrange",<br>
-       &nbsp;&nbsp;Range: "range"<br>
-       }; </td><td>
+ ej.SliderType = {<br/>
+       &nbsp;&nbsp;Default: "default",<br/>
+       &nbsp;&nbsp;MinRange: "minrange",<br/>
+       &nbsp;&nbsp;Range: "range"<br/>
+       }; </td><td></td>
+         </tr>
 </table>
 
 #### Event arguments
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td>
 change</td><td>
@@ -4921,15 +5013,15 @@ args.sliderIndex</td><td>
 </table>
 
 <a name="ejsplitbutton"></a>
+
 ### ejSplitButton
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "3">
 <b>Properties</b></td><td>
@@ -4949,46 +5041,46 @@ targetID</td><td>
 <tr>
 <td rowspan = "3">
 <b>Enum</b></td><td>
- ej.contents = {<br>
-      &nbsp;&nbsp;textOnly:"textonly",<br>
-      &nbsp;&nbsp;imageOnly:"imageonly",<br>
-      &nbsp;&nbsp;imageBoth: "imageboth",<br>
-      &nbsp;&nbsp;textAndImage: "textandimage",<br>
-      &nbsp;&nbsp;imageTextImage: "imagetextimage"<br>
+ ej.contents = {<br/>
+      &nbsp;&nbsp;textOnly:"textonly",<br/>
+      &nbsp;&nbsp;imageOnly:"imageonly",<br/>
+      &nbsp;&nbsp;imageBoth: "imageboth",<br/>
+      &nbsp;&nbsp;textAndImage: "textandimage",<br/>
+      &nbsp;&nbsp;imageTextImage: "imagetextimage"<br/>
       }; </td> <td>
- ej.Contents = {<br>
-      &nbsp;&nbsp;TextOnly:"textonly",<br>
-      &nbsp;&nbsp;ImageOnly: "imageonly",<br>
-      &nbsp;&nbsp;ImageBoth: "imageboth",<br>
-      &nbsp;&nbsp;TextAndImage:"textandimage",<br>
-      &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br>
+ ej.Contents = {<br/>
+      &nbsp;&nbsp;TextOnly:"textonly",<br/>
+      &nbsp;&nbsp;ImageOnly: "imageonly",<br/>
+      &nbsp;&nbsp;ImageBoth: "imageboth",<br/>
+      &nbsp;&nbsp;TextAndImage:"textandimage",<br/>
+      &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br/>
       }; </td><td>
  </td></tr>
 <tr>
 <td>
- ej.imagePositions = {<br>
-    &nbsp;&nbsp;imageRight: "imageright",<br>
-    &nbsp;&nbsp;imageLeft: "imageleft"<br>
+ ej.imagePositions = {<br/>
+    &nbsp;&nbsp;imageRight: "imageright",<br/>
+    &nbsp;&nbsp;imageLeft: "imageleft"<br/>
     }; </td><td>
- ej.ImagePositions = {<br>
-    &nbsp;&nbsp;ImageRight:"imageright",<br>
-    &nbsp;&nbsp;ImageLeft: "imageleft"<br>
+ ej.ImagePositions = {<br/>
+    &nbsp;&nbsp;ImageRight:"imageright",<br/>
+    &nbsp;&nbsp;ImageLeft: "imageleft"<br/>
     }; </td><td>
  </td></tr>
 <tr><td>
- ej.buttonSize = {<br>
-    &nbsp;&nbsp;normal : "normal",<br>
-    &nbsp;&nbsp;mini:"mini",<br>
-    &nbsp;&nbsp;small: "small",<br>
-    &nbsp;&nbsp;medium:"medium",<br>
-    &nbsp;&nbsp;large:"large"<br>
+ ej.buttonSize = {<br/>
+    &nbsp;&nbsp;normal : "normal",<br/>
+    &nbsp;&nbsp;mini:"mini",<br/>
+    &nbsp;&nbsp;small: "small",<br/>
+    &nbsp;&nbsp;medium:"medium",<br/>
+    &nbsp;&nbsp;large:"large"<br/>
     }; </td><td>
- ej.ButtonSize = {<br>
-    &nbsp;&nbsp;Normal : "normal",<br>
-    &nbsp;&nbsp;Mini:"mini",<br>
-    &nbsp;&nbsp;Small: "small",<br>
-    &nbsp;&nbsp;Medium:"medium",<br>
-    &nbsp;&nbsp;Large: "large"<br>
+ ej.ButtonSize = {<br/>
+    &nbsp;&nbsp;Normal : "normal",<br/>
+    &nbsp;&nbsp;Mini:"mini",<br/>
+    &nbsp;&nbsp;Small: "small",<br/>
+    &nbsp;&nbsp;Medium:"medium",<br/>
+    &nbsp;&nbsp;Large: "large"<br/>
     }; </td><td>
  </td></tr>
 </table>
@@ -4997,11 +5089,10 @@ targetID</td><td>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "4">
 itemMouseOut</td><td>
@@ -5068,15 +5159,15 @@ Removed event argument</td></tr>
 </table>
 
 <a name="ejsplitter"></a>
+
 ### ejSplitter
 
 <table>
 <tr>
-<td>
-<b>MemberType</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "2">
 <b>Properties</b></td><td>
@@ -5105,11 +5196,10 @@ removeItem</td><td>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "7">
 beforeExpandCollapse</td><td>
@@ -5203,17 +5293,17 @@ args.nextPane.size</td><td>
 </table>
 
 <a name="ejtab"></a>
+
 ### ejTab
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "7">
+<td rowspan = "8">
 <b>Properties</b></td><td>
 ajaxOptions</td><td>
 ajaxSettings</td><td>
@@ -5227,6 +5317,11 @@ disabledItemIndex</td><td>
 <td>
 heightStyle</td><td>
 heightAdjustMode</td><td>
+ </td></tr>
+<tr>
+<td>
+</td><td>
+htmlAttributes</td><td> Newly added
  </td></tr>
 <tr>
 <td>
@@ -5263,11 +5358,11 @@ addItem</td><td>
 <tr><td>
 disableItems</td><td>
  </td><td>
-We have remove this method. use <b>disabledItemIndex property </b>to achieve this behavior</td></tr>
+We have remove this method. use <b>disabledItemIndex property </b>to achieve this behaviour</td></tr>
 <tr><td>
 enableItems</td><td>
  </td><td>
-We have remove this method. Use <b>enabledItemIndex property </b>to achieve this behavior</td></tr>
+We have remove this method. Use <b>enabledItemIndex property </b>to achieve this behaviour</td></tr>
 <tr><td>
 remove</td><td>
 removeItem</td><td>
@@ -5279,15 +5374,15 @@ getItemsCount</td><td>
      <tr>
 <td>
 <b>Enum</b></td><td>
- ej.Tab.heightFormat = {<br>
-         &nbsp;&nbsp;Content: "content",<br>
-         &nbsp;&nbsp;Auto: "auto",<br>
-         &nbsp;&nbsp;Fill: "fill"<br>
+ ej.Tab.heightFormat = {<br/>
+         &nbsp;&nbsp;Content: "content",<br/>
+         &nbsp;&nbsp;Auto: "auto",<br/>
+         &nbsp;&nbsp;Fill: "fill"<br/>
          }; </td> <td>
- ej.Tab.HeightAdjustMode = {<br>
-         &nbsp;&nbsp;Content: "content",<br>
-         &nbsp;&nbsp;Auto: "auto",<br>
-         &nbsp;&nbsp;Fill: "fill"<br>
+ ej.Tab.HeightAdjustMode = {<br/>
+         &nbsp;&nbsp;Content: "content",<br/>
+         &nbsp;&nbsp;Auto: "auto",<br/>
+         &nbsp;&nbsp;Fill: "fill"<br/>
          }; </td><td>
  </td></tr>
 </table>
@@ -5296,11 +5391,10 @@ getItemsCount</td><td>
 
 <table>
 <tr>
-<td>
-    <b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "7">
 ajaxBeforeLoad</td><td>
@@ -5494,20 +5588,25 @@ args.data</td><td>
 </table>
 
 <a name="ejtagcloud"></a>
+
 ### ejTagCloud
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "2">
+<td rowspan = "3">
 <b>Properties</b></td><td>
 rtl</td><td>
 <b>enableRTL   </b></td><td>
+ </td></tr>
+<tr>
+<td>
+</td><td>
+htmlAttributes</td><td> Newly added
  </td></tr>
 <tr>
 <td>
@@ -5517,32 +5616,37 @@ title</td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.format = {<br>
-        &nbsp;&nbsp;Cloud: "cloud",<br>
-        &nbsp;&nbsp;List: "list"<br>
+ ej.format = {<br/>
+        &nbsp;&nbsp;Cloud: "cloud",<br/>
+        &nbsp;&nbsp;List: "list"<br/>
         }; </td><td>
- ej.Format = {<br>
-        &nbsp;&nbsp;Cloud: "cloud",<br>
-        &nbsp;&nbsp;List: "list"<br>
+ ej.Format = {<br/>
+        &nbsp;&nbsp;Cloud: "cloud",<br/>
+        &nbsp;&nbsp;List: "list"<br/>
         }; </td><td>
  </td></tr>
 </table>
 
 <a name="ejtextboxes"></a>
+
 ### ejTextBoxes
 
 <table>
 <tr>
-<td>
-<b>MemberType</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "7">
+<td rowspan = "11">
  <b>Properties</b></td><td>
 Decimals</td><td>
 decimalPlaces</td><td>
+ </td></tr>
+<tr>
+<td>
+</td><td>
+htmlAttributes</td><td> Newly added
  </td></tr>
 <tr>
 <td>
@@ -5568,6 +5672,20 @@ enableRTL   </td><td>
 <td>
 strictMode</td><td>
 enableStrictMode</td><td>
+ </td></tr><tr>
+<td>
+</td><td>
+validationMessage</td><td> Newly added
+ </td></tr>
+<tr>
+<td>
+</td><td>
+validationOnType</td><td> Newly added
+ </td></tr>
+<tr>
+<td>
+</td><td>
+validationRules</td><td> Newly added
  </td></tr>
 <tr>
 <td>
@@ -5580,11 +5698,11 @@ watermarkText</td><td>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>
+Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><td>
+Comments</th></tr>
 <tr>
 <td>
 focusIn</td><td>
@@ -5600,17 +5718,17 @@ New Event argument</td></tr>
 </table>
 
 <a name="ejtimepicker"></a>
+
 ### ejTimePicker
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
-<td rowspan = "7">
+<td rowspan = "8">
 Properties</td><td>
 localize</td><td>
 locale </td><td>
@@ -5625,6 +5743,10 @@ minutesInterval</td><td>
 persist</td><td>
 enablePersistence    </td><td>
  </td></tr>
+<tr>
+<td></td><td>
+htmlAttributes </td><td>
+Newly added </td></tr>
 <tr>
 <td>
 roundedCorner</td><td>
@@ -5662,11 +5784,11 @@ setCurrentTime</td><td>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>
+Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><td>
+Comments</th></tr>
 <tr>
 <td>
 change</td><td>
@@ -5760,15 +5882,15 @@ args.prevTime</td><td>
 </table>
 
 <a name="ejtogglebutton"></a>
+
 ### ejToggleButton
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "4">
 Properties</td><td>
@@ -5793,33 +5915,33 @@ enableRTL   </td><td>
 <tr>
 <td>
 <b>Enum</b></td><td>
- ej.contents = {<br>
-        &nbsp;&nbsp;textOnly:"textonly",<br>
-        &nbsp;&nbsp;imageOnly: "imageonly",<br>
-        &nbsp;&nbsp;imageBoth: "imageboth",<br>
-        &nbsp;&nbsp;textAndImage:"textandimage",<br>
-        &nbsp;&nbsp;imageTextImage:"imagetextimage"<br>
+ ej.contents = {<br/>
+        &nbsp;&nbsp;textOnly:"textonly",<br/>
+        &nbsp;&nbsp;imageOnly: "imageonly",<br/>
+        &nbsp;&nbsp;imageBoth: "imageboth",<br/>
+        &nbsp;&nbsp;textAndImage:"textandimage",<br/>
+        &nbsp;&nbsp;imageTextImage:"imagetextimage"<br/>
         }; </td><td>
- ej.Contents = {<br>
-        &nbsp;&nbsp;TextOnly:"textonly",<br>
-        &nbsp;&nbsp;ImageOnly: "imageonly",<br>
-        &nbsp;&nbsp;ImageBoth: "imageboth",<br>
-        &nbsp;&nbsp;TextAndImage: "textandimage",<br>
-        &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br>
+ ej.Contents = {<br/>
+        &nbsp;&nbsp;TextOnly:"textonly",<br/>
+        &nbsp;&nbsp;ImageOnly: "imageonly",<br/>
+        &nbsp;&nbsp;ImageBoth: "imageboth",<br/>
+        &nbsp;&nbsp;TextAndImage: "textandimage",<br/>
+        &nbsp;&nbsp;ImageTextImage:"imagetextimage"<br/>
         }; </td><td>
  </td></tr>
 </table>
 
 <a name="ejtoolbar"></a>
+
 ### ejToolbar
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "4">
 Properties</td><td>
@@ -5943,15 +6065,15 @@ This API comes under leafItemSettings. You can  use this template to customize 
 </table>
 
 <a name="ejtreeview"></a>
+
 ### ejTreeView
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API  Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "8">
 Properties</td><td>
@@ -6071,11 +6193,10 @@ We have removed this method. Use <b>isExpanded method</b> to achieve  this beh
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td>
 beforeEdit</td><td>
@@ -6124,15 +6245,15 @@ Removed Event argument</td></tr>
 </table>
 
 <a name="ejuploadbox"></a>
+
 ### ejUploadBox
 
 <table>
 <tr>
-<td>
-<b>Member Type</b></td><td>
-<b>Old API Name</b></td><td>
-<b>New API Name</b></td><td>
-<b>Comments</b></td></tr>
+<th>Member Type</th><th>
+Old API Name</th><th>
+New API Name</th><th>
+Comments</th></tr>
 <tr>
 <td rowspan = "4">
 Properties</td><td>
@@ -6160,11 +6281,10 @@ enableRTL   </td><td>
 
 <table>
 <tr>
-<td>
-<b>Event Name</b></td><td>
-<b>Old Event Args</b></td><td>
-<b>New Event Args</b></td><td>
-<b>Comments</b></td></tr>
+<th>Event Name</th><th>
+Old Event Args</th><th>
+New Event Args</th><th>
+Comments</th></tr>
 <tr>
 <td>
 remove</td><td>
@@ -6172,5 +6292,3 @@ args.fileStatus</td><td>
 args.status</td><td>
  </td></tr>
 </table>
-
-
