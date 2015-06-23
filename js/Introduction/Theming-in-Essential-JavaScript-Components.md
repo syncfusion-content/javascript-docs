@@ -71,8 +71,9 @@ Once the required theme folders are copied into your application, it is necessar
 
 >   **Note**: The **ej.web.all.min.css** file is available separately for all the **13** available themes in their respective theme folders.
 >   It is the combination of two files namely, **ej.theme.min.css** file (available separately within each of the theme folders) and **ej.widgets.core.min.css** – which is shown in the below image,   
-> {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img3.png" %}    
->   Since, ej.web.all.min.css file is a combination of two files (**ej.theme.min.css & ej.widgets.core.min.css**), therefore it is also possible to refer these two files directly in the place of its reference as shown below, 
+>   {% include image.html url="/js/Introduction/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img3.png" %}
+
+Since, **ej.web.all.min.css** file is a combination of two files (**ej.theme.min.css & ej.widgets.core.min.css**), therefore it is also possible to refer these two files directly in the place of its reference as shown below, 
 
 {% highlight html %}
 
