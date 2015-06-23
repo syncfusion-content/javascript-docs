@@ -61,40 +61,54 @@ You can refer the following code example for **keyboard** navigation.
   {% highlight html %}
 
   
-  	<div class="cols-sample-area">
-	    <ul id="slidercontent" accesskey="e">
-	        <li>
-	            <img class="image" src="../images/rotator/nature.jpg" title="Nature" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/bird.jpg" title="Beautiful Bird" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/seaview.jpg" title="Sea-View" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/snowfall.jpg" title="Snow Fall" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/card.jpg" title="Credit Card" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/night.jpg" title="Colorful Night" /></li>
-	    </ul>
-	    <ul id="slide" style="display: none">
-	        <li>
-	            <img src="../images/rotator/nature.jpg" title="Nature" /></li>
-	        <li>
-	            <img src="../images/rotator/bird.jpg" title="Beautiful Bird" /></li>
-	        <li>
-	            <img src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" /></li>
-	        <li>
-	            <img src="../images/rotator/seaview.jpg" title="Sea-View" /></li>
-	        <li>
-	            <img src="../images/rotator/snowfall.jpg" title="Snow Fall" /></li>
-	        <li>
-	            <img src="../images/rotator/card.jpg" title="Credit Card" /></li>
-	        <li>
-	            <img src="../images/rotator/night.jpg" title="Colorful Night" /></li>
-	    </ul>
-	</div> 
+<div class="cols-sample-area">
+   <ul id="slidercontent" accesskey="e">
+      <li>
+         <img class="image" src="../images/rotator/nature.jpg" title="Nature" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/bird.jpg" title="Beautiful Bird" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/seaview.jpg" title="Sea-View" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/snowfall.jpg" title="Snow Fall" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/card.jpg" title="Credit Card" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/night.jpg" title="Colorful Night" />
+      </li>
+   </ul>
+   <ul id="slide" style="display: none">
+      <li>
+         <img src="../images/rotator/nature.jpg" title="Nature" />
+      </li>
+      <li>
+         <img src="../images/rotator/bird.jpg" title="Beautiful Bird" />
+      </li>
+      <li>
+         <img src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" />
+      </li>
+      <li>
+         <img src="../images/rotator/seaview.jpg" title="Sea-View" />
+      </li>
+      <li>
+         <img src="../images/rotator/snowfall.jpg" title="Snow Fall" />
+      </li>
+      <li>
+         <img src="../images/rotator/card.jpg" title="Credit Card" />
+      </li>
+      <li>
+         <img src="../images/rotator/night.jpg" title="Colorful Night" />
+      </li>
+   </ul>
+</div> 
   
 
   {% endhighlight %}
@@ -104,28 +118,28 @@ You can refer the following code example for **keyboard** navigation.
 
   
   	
-	       $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({
-	            slideWidth: "550px",
-	            frameSpace: "0px",
-	            displayItemsCount: "1",
-	            slideHeight: "350px",
-	            navigateSteps: "1",
-	            enableResize: true,
-	            pagerPosition: ej.Rotator.PagerPosition.Outside,
-	            showThumbnail: true,
-	            thumbnailSourceID: "slide",
-	            orientation: ej.Orientation.Horizontal,
-	            enableRTL: true,
-	            showPager: false,
-	            enabled: true,
-	            showCaption: false,
-	            allowKeyboardNavigation: true,
-	            showPlayButton: true,
-	            animationType: "slide",
-	        });	      
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({
+            slideWidth: "550px",
+            frameSpace: "0px",
+            displayItemsCount: "1",
+            slideHeight: "350px",
+            navigateSteps: "1",
+            enableResize: true,
+            pagerPosition: ej.Rotator.PagerPosition.Outside,
+            showThumbnail: true,
+            thumbnailSourceID: "slide",
+            orientation: ej.Orientation.Horizontal,
+            enableRTL: true,
+            showPager: false,
+            enabled: true,
+            showCaption: false,
+            allowKeyboardNavigation: true,
+            showPlayButton: true,
+            animationType: "slide",
+        });	      
+    });
 
 
 
@@ -137,12 +151,12 @@ Add the following code in your **JavaScript** to focus the control.
   {% highlight js %}
 
   
-            //Control focus key
-	        $(document).on("keydown", function (e) {
-	            if (e.altKey && e.keyCode === 74) { // j- key code.
-	                $("#slidercontent")[0].focus();
-	            }
-	        });
+    //Control focus key
+    $(document).on("keydown", function (e) {
+        if (e.altKey && e.keyCode === 74) { // j- key code.
+            $("#slidercontent")[0].focus();
+        }
+    });
 
   {% endhighlight %}
   
@@ -161,7 +175,7 @@ Add the following code in your **JavaScript** to focus the control.
 
 
 
-{% include image.html url="/js/Rotator/Keyboard-interaction_images/Keyboard-interaction_img1.png" Caption="Rotator control with keyboard shortcuts"%}
+{% include image.html url="/js/Rotator/Keyboard-interaction_images/Keyboard-interaction_img1.png" %}
 
 
 

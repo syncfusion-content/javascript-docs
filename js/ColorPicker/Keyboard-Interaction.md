@@ -18,8 +18,7 @@ Keyboard shortcut keys
         <th>
             Shortcut Key</th>
         <th>
-            Description</h>
-        </th>
+            Description</th>        
     </tr>
     <tr>
         <td>
@@ -111,7 +110,7 @@ Keyboard shortcut keys
     </tr>
 </table>
 
-**Configure Keyboard Interaction**
+## Configure Keyboard Interaction
 
 The following steps explain how you can enable **keyboard** interaction for **ColorPicker** textbox.
 
@@ -120,7 +119,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure the **ColorP
 {% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
+<input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -142,5 +141,5 @@ The following screenshot displays the output of the above code example.
 
 
 
-{% include image.html url="/js/ColorPicker/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption="ColorPicker with Keyboard Navigation"%}
+{% include image.html url="/js/ColorPicker/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
 

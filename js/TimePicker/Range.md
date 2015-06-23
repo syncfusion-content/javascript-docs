@@ -19,7 +19,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-    <input type="text" id="time" />
+<input type="text" id="time" />
 
 {% endhighlight %}
 
@@ -40,5 +40,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/TimePicker/Range_images/Range_img1.png" Caption="Range for TimePicker widget"%}
+{% include image.html url="/js/TimePicker/Range_images/Range_img1.png" %}
 

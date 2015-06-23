@@ -28,12 +28,12 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Range
 {% highlight html %}
 
 
-   <div class="txt">Default Slider</div>
-   <div id="defaultSlider"></div>
-   <br />
-   <br />
-   <div class="txt">Range Slider</div>
-   <div id="rangeSlider"></div> 
+<div class="txt">Default Slider</div>
+<div id="defaultSlider"></div>
+<br />
+<br />
+<div class="txt">Range Slider</div>
+<div id="rangeSlider"></div>
 
 
 {% endhighlight %}
@@ -46,7 +46,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Range
             value: 50,
             width: "500"
         });
-
+        
         $("#rangeSlider").ejSlider({
             sliderType: ej.SliderType.Range,
             values: [20,80],
@@ -58,7 +58,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Range
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/Updating-slider-value_images/Updating-slider-value_img1.png" Caption="Exhibits “value” and “values” property in Default and Range Sliders."%}
+{% include image.html url="/js/Slider/Updating-slider-value_images/Updating-slider-value_img1.png" %}
 
 ## MinValue
 
@@ -94,7 +94,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Defaul
             minValue: 40,
             maxValue:80
         });
-
+        
         $("#rangeSlider").ejSlider({
             sliderType: ej.SliderType.Range,
             values: [10,90],
@@ -107,7 +107,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Defaul
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Updating-slider-value_images/Updating-slider-value_img2.png" Caption="Exhibits “minValue” and “maxValue” properties in Default and Range Sliders."%}
+{% include image.html url="/js/Slider/Updating-slider-value_images/Updating-slider-value_img2.png" %}
 
 In the above example, for **Default Slider** the slider value starts from “40” (min value) and ends in “80” (max value), so the slider handle is placed at the center of the Slider while specifying the value as “60”.
 

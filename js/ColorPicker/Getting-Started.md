@@ -9,11 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **ColorPicker** in your application with **JavaScript**.
-
-## Create your first ColorPicker in JavaScript
-
-The **Essential JavaScript ColorPicker** control provides you support for selecting the colors in different sources such as palettes, picker or custom palettes. You can also render the color value from control in three formats such as RGB, HSV and HEXCODE. 
+This section explains briefly about how to create a **ColorPicker** in your application with **JavaScript**. The **Essential JavaScript ColorPicker** control provides you support for selecting the colors in different sources such as palettes, picker or custom palettes. You can also render the color value from control in three formats such as RGB, HSV and HEXCODE. 
 
 In this example, you can learn how to customize **ColorPicker** control in a category Application. 
 
@@ -25,7 +21,7 @@ In the following sections you can learn, How to:
 * Initialize the other widgets
 * Add Value to ListBox Control
 
-### Create ColorPicker Control
+## Create ColorPicker Control
 
 Use the following steps to create the **ColorPicker** control.
 
@@ -60,7 +56,7 @@ Add the input element to render **ColorPicker** control.
 
 {% highlight html %}
 
-    <input type="text" id="CategoryColor" />
+<input type="text" id="CategoryColor" />
 
 {% endhighlight %}
 
@@ -81,14 +77,14 @@ Initialize **ColorPicker** element in **&lt;script&gt;** tag.
 
 Run the above code to render the following output.
 
-{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img2.png" Caption="Default Colorpicker Control"%}
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img2.png" %}
 
-### Initialize the other widgets
+## Initialize the other widgets
 
 To add the priority value to the **ListBox**, the text value is received from the input element and color for each priority is received by the **ColorPicker** control. To add each new priority value to the **ListBox** control click the **Add** button.
 
 You can refer the following link for more information on creation of **ListBox**.
-http://help.syncfusion.com
+[http://help.syncfusion.com](http://help.syncfusion.com)
 
 The following code example is used to create the Priority form using **ListBox** control and **ColorPicker** control.
 
@@ -232,9 +228,9 @@ Add the following style section to align form fields.
 
 Run the above code to render the following output.
 
-{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img3.png" Caption="Color Picker control"%}
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img3.png" %}
 
-### Add value with Selected Color 
+## Add value with Selected Color 
 
 You can add the value to **ListBox** with selected color by performing the button click event. The following script section defines the click event for the button element.
 
@@ -265,5 +261,5 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
 
 The following screenshot illustrates the resultant output after you click **Add** button.
 
-{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img4.png" Caption="Value from Color Picker control"%}
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img4.png" %}
 

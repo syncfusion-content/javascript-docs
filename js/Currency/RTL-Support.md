@@ -20,7 +20,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-	<input id="currency" type="text" />
+<input id="currency" type="text" />
 	
 {% endhighlight %}
 
@@ -37,5 +37,5 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for CurrencyTextBox when **enableRTL** is **“True”** is as follows. 
 
-{% include image.html url="/js/Currency/RTL-Support_images/RTL-Support_img1.png" Caption="CurrencyTextBox with enableRTL"%}
+{% include image.html url="/js/Currency/RTL-Support_images/RTL-Support_img1.png" %}
 

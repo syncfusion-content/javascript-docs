@@ -17,9 +17,9 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 {% highlight html %}
 
-   <div class="control">
-        <div id="progressbar"></div>
-   </div>
+<div class="control">
+    <div id="progressbar"></div>
+</div>
 
 {% endhighlight %}
 
@@ -43,5 +43,5 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/ProgressBar/Enabling-the-ProgressBar_images/Enabling-the-ProgressBar_img1.png" Caption="Disabled ProgressBar"%}
+{% include image.html url="/js/ProgressBar/Enabling-the-ProgressBar_images/Enabling-the-ProgressBar_img1.png" %}
 

@@ -23,18 +23,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <table cellpadding="10">
-        <tbody>
-            <tr>
-                <td>
-                    <label for="percent">Percent</label>
-                </td>
-                <td>
-                    <input id="percent" type="text" />
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -54,7 +54,7 @@ The output for **PercentageTextBox** with **decimalPlaces** is as follows.
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="PercentageTextBox with decimalPlaces"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img1.png" %}
 
 ## Persistence Support
 
@@ -69,18 +69,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-        <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -121,18 +121,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
 {% endhighlight %}
@@ -155,7 +155,7 @@ The output for **PercentageTextBox** when **enableStrictMode** is **“true”**
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="PercentageTextBox with enableStrictMode"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img4.png" %}
 
 ## Enabled or Disabled
 
@@ -170,18 +170,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -218,18 +218,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -250,7 +250,7 @@ The output for **PercentageTextBox** after setting “**height**” and “**wid
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img7.png" Caption="PercentageTextBox with height and width                          		"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img7.png" %}
 
 ## Increment Step
 
@@ -265,18 +265,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -315,18 +315,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -345,7 +345,7 @@ The output for **PercentageTextBox** with the **name** property is as follows**.
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img10.png" Caption="PercentageTextBox with name"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img10.png" %}
 
 ## Define Value
 
@@ -360,18 +360,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>   
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>   
+    </tbody>
+</table>
         
 {% endhighlight %}
 
@@ -388,7 +388,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **PercentageTextBox** with the **value** property is as follows**.**
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img11.png" Caption="PercentageTextBox with value"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img11.png" %}
 
 ## Define maxValue and minValue
 
@@ -410,18 +410,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -462,18 +462,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -493,7 +493,7 @@ The output for **PercentageTextBox** when **readOnly** is “**True**” is as f
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img14.png" Caption="PercentageTextBox with readOnly		"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img14.png" %}
 
 ## Appearance
 
@@ -530,18 +530,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -564,18 +564,18 @@ Customize the CSS properties in custom CSS class.
 {% highlight css %}
 
 
-    <style>
-        .customCss .e-box {
-            border-color: #9d241b;
-        }
-        .customCss .e-input {
-            background-color: #f6db8d;            
-        }
-        .customCss .e-select {
-            background-color: #ecf6ac;
-            border-color: #3c36e7;
-        }
-    </style>
+<style>
+    .customCss .e-box {
+        border-color: #9d241b;
+    }
+    .customCss .e-input {
+        background-color: #f6db8d;            
+    }
+    .customCss .e-select {
+        background-color: #ecf6ac;
+        border-color: #3c36e7;
+    }
+</style>
 
 
 
@@ -587,7 +587,7 @@ The output for **PercentageTextBox** after applying **cssClass** is as follows.
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img15.png" Caption="PercentageTextBox with cssClass"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img15.png" %}
 
 ## Rounded Corner Support
 
@@ -603,18 +603,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -634,7 +634,7 @@ The output for **PercentageTextBox** when **showRoundedCorner** is “**true**�
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img16.png" Caption="PercentageTextBox with showRoundedCorner"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img16.png" %}
 
 ## Spin Button Support
 
@@ -649,18 +649,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -697,18 +697,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 
@@ -727,5 +727,5 @@ The output for **PercentageTextBox** after applying **watermarkText** is as foll
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img19.png" Caption="PercentageTextBox with watermark text"%}
+{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img19.png" %}
 

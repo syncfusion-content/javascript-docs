@@ -24,7 +24,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the knockout binding, refer the following link location,
 
-http://help.syncfusion.com/ug/js/documents/knockoutjs.htm
+[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
 The following example depicts the way to bind data to the **TimePicker** widget through the knockout support that enables and populate data to **TimePicker** widget based on the value set to another **TimePicker** widget.
 
@@ -38,16 +38,11 @@ The following example depicts the way to bind data to the **TimePicker** widget 
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
     <!--Add custom scripts here -->
 </head>
@@ -114,5 +109,5 @@ The following example depicts the way to bind data to the **TimePicker** widget 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/TimePicker/Knockout-Support_images/Knockout-Support_img1.png" Caption="TimePicker with Knockout Support"%}
+{% include image.html url="/js/TimePicker/Knockout-Support_images/Knockout-Support_img1.png" %}
 

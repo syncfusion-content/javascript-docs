@@ -32,11 +32,11 @@ The following screenshot illustrates the **ListBox** with Flat-lime and Flat-Saf
 
 {% include image.html url="/js/ListBox/Theme_images/Theme_img2.png" Caption="ListBox with Flat-Saffron Theme"%}
 
-**Custom class with ListBox** 
+## Custom class with ListBox
 
 **CSS** class can be used to customize the **ListBox** control appearance. Define a **CSS** class as per your requirement and assign the class name to **cssClass** property. The data type of **cssClass** property is string. 
 
-**Configuring the Custom CSS property**
+### Configuring the Custom CSS property
 
 The following steps explains you the configuration of **cssClass** properties in **ListBox**.
 
@@ -44,29 +44,56 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 {% highlight html %}
 
-    <div id="control">
-        <h5 class="ctrllabel">Select a skill</h5>
-        <ul id="listboxSample"></ul>
-    </div>
+<div id="control">
+   <h5 class="ctrllabel">Select a skill</h5>
+   <ul id="listboxSample"></ul>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-
-    $(function () {
-        var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
-        ];
-        $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
-            fields: { text: "skill" }, cssClass: "customclass"
-        });
+    $(function() {
+       var skillset = [{
+          skill: "ASP.NET"
+       }, {
+          skill: "ActionScript"
+       }, {
+          skill: "Basic"
+       }, {
+          skill: "C++"
+       }, {
+          skill: "C#"
+       }, {
+          skill: "dBase"
+       }, {
+          skill: "Delphi"
+       }, {
+          skill: "ESPOL"
+       }, {
+          skill: "F#"
+       }, {
+          skill: "FoxPro"
+       }, {
+          skill: "Java"
+       }, {
+          skill: "J#"
+       }, {
+          skill: "Lisp"
+       }, {
+          skill: "Logo"
+       }, {
+          skill: "PHP"
+       }];
+       $("#listboxSample").ejListBox({
+          width: "240",
+          dataSource: skillset,
+          fields: {
+             text: "skill"
+          },
+          cssClass: "customclass"
+       });
     });
-
 
 {% endhighlight %}
 
@@ -77,11 +104,11 @@ Configure the **CSS** styles to apply on **ListBox**.
 
  
 <style>
-    .customclass {
-        background-color: #FFFFCC;
-        font-weight: bold;
-        font-family: sans-serif;
-    }
+   .customclass {
+       background-color: #FFFFCC;
+       font-weight: bold;
+       font-family: sans-serif;
+   }
 </style>
 
 
@@ -89,5 +116,5 @@ Configure the **CSS** styles to apply on **ListBox**.
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Theme_images/Theme_img3.png" Caption="ListBox with cssClass property"%}
+{% include image.html url="/js/ListBox/Theme_images/Theme_img3.png"%}
 

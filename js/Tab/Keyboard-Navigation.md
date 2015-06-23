@@ -51,20 +51,20 @@ Add the following **HTML** to render **Tab** with **keyboard** navigation.
 
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -90,5 +90,5 @@ Add the following **HTML** to render **Tab** with **keyboard** navigation.
 
 The following screenshot illustrates the **Tab** with **keyboard** navigation.
 
-{% include image.html url="/js/Tab/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" Caption="Tab with keyboard navigation"%}
+{% include image.html url="/js/Tab/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" %}
 

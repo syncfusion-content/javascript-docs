@@ -15,7 +15,7 @@ The **RichTextEditor** control provides a number of tool items that provide a ri
 
 All the formatting tools allow you to change the appearance of text. Formatted text is visually interesting and easy for the visitor to read. Formatting tags provide emphasis or act as markers to help the visitor, find information. Some text styling options are also available as a drop-down list. Upon clicking them, the list opens and you can select a styling option.
 
-### List of Toolbar Items
+## List of Toolbar Items
 
 * Alignment Formatting Tools: Left, right, center, and justify.
 * Color palette
@@ -26,8 +26,8 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 * Subscript and Superscript 
 * Text with subscript and superscript placed after or before the baseline respectively.
 * Font options
-* Font Name http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font – Typeface that is applied to the document text.
-* Font Size http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size – Determines how big or small the text will be.
+* Font Name [http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font –](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font –) Typeface that is applied to the document text.
+* Font Size [http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size –](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size –) Determines how big or small the text will be.
 * Format
 * Predefined sets of formatting features that can be applied to block and to make elements of the document inline.
 * Upper & lower case conversion

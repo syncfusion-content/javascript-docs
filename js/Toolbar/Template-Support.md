@@ -15,27 +15,27 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 {% highlight html %}
 
-    <div id="toolbarcontent">
-        <ul>
-            <li>
-                <div>
-                    <input type="radio" name="small" id="Radio1" />
-                </div>
-                option
-            </li>
-            <li id="Dropdown" title="Dropdown Control">
-                <input id="selectcar" type="text" />
-                <div id="cars">
-                    <ul>
-                        <li>Audi A4</li>
-                        <li>Audi A5</li>
-                        <li>Audi A6</li>
-                        <li>Audi A7</li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
+<div id="toolbarcontent">
+   <ul>
+      <li>
+         <div>
+            <input type="radio" name="small" id="Radio1" />
+         </div>
+         option
+      </li>
+      <li id="Dropdown" title="Dropdown Control">
+         <input id="selectcar" type="text" />
+         <div id="cars">
+            <ul>
+               <li>Audi A4</li>
+               <li>Audi A5</li>
+               <li>Audi A6</li>
+               <li>Audi A7</li>
+            </ul>
+         </div>
+      </li>
+   </ul>
+</div>
 
 {% endhighlight %}
 
@@ -54,4 +54,4 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 The following screenshot displays a Toolbar with embedded controls.
 
-{% include image.html url="/js/Toolbar/Template-Support_images/Template-Support_img1.png" Caption="Toolbar with Template"%}
+{% include image.html url="/js/Toolbar/Template-Support_images/Template-Support_img1.png"%}

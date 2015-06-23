@@ -22,9 +22,9 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight html %}
 
-    <div class="control">
-        <div id="Uploadbox"></div>
-    </div>
+<div class="control">
+    <div id="Uploadbox"></div>
+</div>
 
 {% endhighlight %}
 

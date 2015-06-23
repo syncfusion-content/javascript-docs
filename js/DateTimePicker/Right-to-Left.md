@@ -13,27 +13,24 @@ RTL control supports right-to-left functionality and features for languages that
 
 Add the following code in your **HTML** page.
 
-  {% highlight html %}
-
+{% highlight html %}
   
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
+<div class="control">
+   <input type="text" id="dateTime" />
+</div>
+
+{% endhighlight %}
 
 
-  {% endhighlight %}
-
-
-  {% highlight js %}
+{% highlight js %}
 
     // Add the code in your script section to render DateTimePicker with right to left appearance
-
     $('#dateTime').ejDateTimePicker({
-        width: 200,
-        enableRTL: true
+       width: 200,
+       enableRTL: true
     });
 
-  {% endhighlight %}
+{% endhighlight %}
   
-{% include image.html url="/js/DateTimePicker/Right-to-Left_images/Right-to-Left_img1.png" Caption="Showcase of DateTimePicker with Right to Left appearance"%}
+{% include image.html url="/js/DateTimePicker/Right-to-Left_images/Right-to-Left_img1.png"%}
 

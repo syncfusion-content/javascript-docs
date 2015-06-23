@@ -13,14 +13,14 @@ With the keyboard navigation enabled in the **CurrencyTextBox** control, it is p
 
 The various keyboard shortcuts available within the **CurrencyTextBox** control are discussed in the following table. 
 
-Table 1: Keyboard Shortcuts
+Keyboard Shortcuts
 
 <table>
 <tr>
 <th>Shortcut Key</th><th>Description</th></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> + j</b></td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a><b> + j</b></td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -45,7 +45,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-	<input id="currency" type="text" />
+<input id="currency" type="text" />
 	
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access
 
 
 
-{% include image.html url="/js/Currency/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption="CurrencyTextBox focused with keyboard shortcut"%}
+{% include image.html url="/js/Currency/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
 
 
 

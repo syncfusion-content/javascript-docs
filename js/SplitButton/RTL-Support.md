@@ -17,14 +17,14 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% highlight html %}
 
-    <div class="spltspan">
-        <button id="spltbutton_rtl">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-    </div>
+<div class="spltspan">
+    <button id="spltbutton_rtl">login</button>
+    <ul id="Ul11">
+        <li><span>User</span></li>
+        <li><span>Guest</span></li>
+        <li><span>Admin</span></li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
@@ -53,11 +53,11 @@ Configure the styles
 
 {% highlight css %}
 
-    <style>
-        .spltspan {
-            margin-left: 120px;
-        }
-    </style>
+<style>
+    .spltspan {
+        margin-left: 120px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -66,5 +66,5 @@ Configure the styles
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/RTL-Support_images/RTL-Support_img1.png" Caption="Split button in RTL alignment"%}
+{% include image.html url="/js/SplitButton/RTL-Support_images/RTL-Support_img1.png" %}
 

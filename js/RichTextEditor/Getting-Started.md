@@ -9,17 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to create and use **RichTextEditor** control using **Javascript** in your application.
+This section briefly describes how to create and use **RichTextEditor** control using **Javascript** in your application. The **Essential JavaScript RichTextEditor (RTE)** control allows easily to edit contents, insert tables, images and to get the **HTML** content. In this section, you can learn how to use **RichTextEditor** for getting Feedback from the user. The following screenshot demonstrates how the **RTE** control is used in Feedback form.
 
-## Create your first RichTextEditor in JavaScript
-
-The **Essential JavaScript RichTextEditor (RTE)** control allows easily to edit contents, insert tables, images and to get the **HTML** content. In this section, you can learn how to use **RichTextEditor** for getting Feedback from the user. The following screenshot demonstrates how the **RTE** control is used in Feedback form.
-
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img1.png" Caption="RTE support with Feedback Form functionality"%}
+{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img1.png" %}
 
 In the above screenshot , the **RTE** consists of content editable area with feedback title when you click the Post Feedback toolbar item to send the feedback information.
 
-### Create a RichTextEditor
+## Create a RichTextEditor
 
 **Essential JavaScript RTE** widget basically renders by using simple text area element. The following steps describe the creation of **RTE** control.  
 
@@ -33,14 +29,10 @@ Create an **HTML** file and add the following template to it for **RTE** creatio
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
@@ -60,9 +52,9 @@ Create an **HTML** file and add the following template to it for **RTE** creatio
 
 {% highlight html %}
 
-    <div>
-       <textarea id="feedBackEditor"></textarea>
-    </div>
+<div>
+   <textarea id="feedBackEditor"></textarea>
+</div>
 
 
 {% endhighlight %}
@@ -90,11 +82,11 @@ The following **RTE** screenshot is the output of above steps.
 
 {% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img2.png" Caption="Empty RTE control"%}
 
-### Configure the Toolbar
+## Configure the Toolbar
 
 The **RichTextEditor** is used to configure the toolbar items to provide editing and styling functionality. In this scenario, use the default **RTE** toolbar item to provide feedback form. 
 
-#### Add the Toolbar Item
+### Add the Toolbar Item
 
 The additional functionality toolbar item is necessary to perform the required operation. The **RTE** provides some additional toolbar items that are already predefined, but not rendered in without specifying the toolbar items. 
 
@@ -103,21 +95,13 @@ The following code example is used to render the additional in-built toolbar ite
 {% highlight js %}
 
     $(function () {
-
         $("#feedBackEditor").ejRTE({
-
             width: "100%",
-
             tools: {
-
                 //specify the font type, size, color and background color option for text
-
                 font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
-
             }
-
         });
-
     });
 
 {% endhighlight %}
@@ -128,7 +112,7 @@ The following screenshot is the output of above steps:
 
 {% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img3.png" Caption="RTE with adding inbuilt toolbar item"%}
 
-#### Removing the ToolbarItem
+### Removing the ToolbarItem
 
 You can remove the particular toolbar item using **remove ToolbarItem** method. 
 
@@ -152,7 +136,7 @@ The following screenshot is the output of above steps:
 
 {% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img4.png" Caption="RTE support for removing toolbar item"%}
 
-#### Configure Custom Toolbar item
+## Configure Custom Toolbar item
 
 To post the feedback directly you need additional toolbar item. The **RTE** control provides support to create the custom toolbar item for custom action. The following code example demonstrates the custom **toolbar** item creation in the **RTE** control.
 
@@ -185,7 +169,7 @@ The following screenshot is the output of above steps:
 
 {% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img5.png" Caption="RTE with Custom toolbar item"%}
 
-### Validate the Content
+## Validate the Content
 
 To send the feedback form without contents you need to validate them before submitting the contents. To achieve this validation use **getText()** method in **RTE** control.
 
@@ -215,45 +199,26 @@ You can specify the custom tool as previous script section with validation opera
 
     $(function () {
         $("#feedBackEditor").ejRTE({
-
             width: "98%",
-
             tools: {
-
                 customTool: [{
-
                     name: "PostFeedBack", //Id for the newly added tool
-
                     tooltip: "submit the feedback",// Shows the tooltip for the custom tool
-
                     css: "FeedBack",    // Css class for custom tool design purpose
-
                     action: function () {
-                        var editorObj = $("#feedBackEditor").data("ejRTE");
+                        var editorObj = $("#feedBackEditor").data("ejRTE");                                                
                         //support the client side validation for content present in the area or not
-
                         if (($.trim(editorObj.getText()).length < 1)) {
-
                             //the content area is empty
-
                             $(".output").html("The feedback content is empty");
-
                         } else {   //the content area contains information
-
                             $(".output").html("");
-
                             //custom code to send the feedback form contents
-
                             alert("The feedback content has been saved");
-
                         }
-
                     }
-
                 }]
-
             }
-
         });
     });
 
@@ -306,5 +271,5 @@ The following styles are used to achieve the feedback form editor application.
 
 The output of the above steps is to send the feedback without content.
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img6.png" Caption="RTE content validation"%}
+{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img6.png" %}
 

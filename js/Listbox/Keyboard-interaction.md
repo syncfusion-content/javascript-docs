@@ -50,7 +50,7 @@ End</td><td>
 Navigates to the end item </td></tr>
 </table>
 
-**Configure keyboard interaction**
+## Configure keyboard interaction
 
 The following steps explains you to enable keyboard interaction for a **ListBox**.
 
@@ -58,10 +58,10 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 {% highlight html %}
 
-	<div id="control">
-	    <h5 class="ctrllabel">Select a skill</h5>
-	    <ul id="listboxSample"></ul>
-	</div>
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxSample"></ul>
+</div>
 
 {% endhighlight %}
 
@@ -93,7 +93,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 Run the sample, press Alt + J to focus in the **ListBox** widget that enables it and you can navigate using arrow keys.
 
-{% include image.html url="/js/ListBox/Keyboard-interaction_images/Keyboard-interaction_img1.png" Caption="ListBox focused and moved with Keyboard shortcut"%}
+{% include image.html url="/js/ListBox/Keyboard-interaction_images/Keyboard-interaction_img1.png" %}
 
 
 

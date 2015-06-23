@@ -40,7 +40,7 @@ To render **FileExplorer** with the above toolbar options, include the followi
 
 {% highlight html %}
 
-    <div id="fileExplorer"></div>
+<div id="fileExplorer"></div>
 
 {% endhighlight %}
 
@@ -53,36 +53,34 @@ Add the following code in your script section.
 {% highlight js %}
 
 
-        $(function () {
-            var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
-            $("#fileExplorer").ejFileExplorer({
-                fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
-                layout: "list",
-                path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-                ajaxAction: localServ,
-                ajaxSettings: {
-                    upload: {
-                        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-                    },
-                    download: {
-                        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-                    }
-                }
-            });
-        });
-    
+    $(function() {
+       var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+       $("#fileExplorer").ejFileExplorer({
+          fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
+          layout: "list",
+          path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+          ajaxAction: localServ,
+          ajaxSettings: {
+             upload: {
+                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
+             },
+             download: {
+                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
+             }
+          }
+       });
+    });
 
-      //here tools API contains following default values, so toolbar render with below tools
-                //tools: {
-                //    creation: ["NewFolder", "Open"],
-                //    navigation: ["Back", "Forward"],
-                //    addressBar: ["Addressbar"],
-                //    editing: ["Refresh", "Upload", "Delete", "Rename", "Download"],
-                //    copyPaste: ["Cut", "Copy", "Paste"],
-                //    getProperties: ["Details"],
-                //    searchBar: ["Searchbar"]
-                //},
-
+    //here tools API contains following default values, so toolbar render with below tools
+    //tools: {
+    //    creation: ["NewFolder", "Open"],
+    //    navigation: ["Back", "Forward"],
+    //    addressBar: ["Addressbar"],
+    //    editing: ["Refresh", "Upload", "Delete", "Rename", "Download"],
+    //    copyPaste: ["Cut", "Copy", "Paste"],
+    //    getProperties: ["Details"],
+    //    searchBar: ["Searchbar"]
+    //},
 
 
 {% endhighlight %}
@@ -91,5 +89,5 @@ Add the following code in your script section.
 
 
 
-{% include image.html url="/js/FileExplorer/Toolbar-Support_images/Toolbar-Support_img1.png" Caption="FileExplorer with a list of toolbar items"%}
+{% include image.html url="/js/FileExplorer/Toolbar-Support_images/Toolbar-Support_img1.png"%}
 

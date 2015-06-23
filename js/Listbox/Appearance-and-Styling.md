@@ -9,17 +9,17 @@ documentation: ug
 
 # Appearance and Styling
 
-**Adjusting ListBox size**
+## Adjusting ListBox size
 
-**Width**
+### Width
 
 **ListBox** widget provides you support to customize the dimensions of the **ListBox**. By using **width** property you can set the width of the **ListBox**. Its data type is string.
 
-**Height**
+### Height
 
 **ListBox** widget provides you support to customize the dimensions of the **ListBox**. By using **height** property, you can set the height of the **ListBox**. Its data type is string.
 
-**Defining the ListBox size properties**
+### Defining the ListBox size properties
 
 The following steps explains you the configuration of **height** & **width** properties in **ListBox**.
 
@@ -27,11 +27,10 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 {% highlight html %}
 
-	<div id="control">
-	    <h5 class="ctrllabel">Select a skill</h5>
-	    <ul id="listboxSample"></ul>
-	</div>
-
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxSample"></ul>
+</div>
 
 {% endhighlight %}
 
@@ -53,15 +52,13 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
         });
     });
 
-
 {% endhighlight %}
-
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="ListBox with specified width and height"%}
+{% include image.html url="/js/ListBox/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
 
-**Enabling Rounded corner**
+## Enabling Rounded corner
 
 **ListBox** widget provides you support to change the appearance of **ListBox**. By using **showRoundedCorner** you can create a rounded corner on the **ListBox**. Its data type is Boolean.
 
@@ -71,16 +68,16 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 {% highlight html %}
 
-	<div id="control">
-	    <h5 class="ctrllabel">Select a skill</h5>
-	    <ul id="listboxSample"></ul>
-	</div>
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxSample"></ul>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-	// Initialize the control in JavaScript
+    // Initialize the control in JavaScript
     $(function () {
         var skillset = [
         { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
@@ -96,8 +93,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 {% endhighlight %}
 
-
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="ListBox with Rounded corner"%}
+{% include image.html url="/js/ListBox/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
 

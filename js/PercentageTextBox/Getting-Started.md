@@ -9,15 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Editors** control in your application with **JavaScript**.
+This section explains briefly about how to create a **Editors** control in your application with **JavaScript**. From the following steps you can learn how to create and use **PercentageTextBox** in your application. Here we have showcased, a small Electric bill calculator application using **Editors** widgets. The **Essential JavaScript Editors** control includes numeric, percentage and currency textbox controls. You will learn how to use our JS textboxes widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
 
-## Create your first PercentageTextBox in JavaScript
+{% include image.html url="/js/PercentageTextBox/Getting-Started_images/Getting-Started_img1.png" %}
 
-From the following steps you can learn how to create and use **PercentageTextBox** in your application. Here we have showcased, a small Electric bill calculator application using **Editors** widgets. The **Essential JavaScript Editors** control includes numeric, percentage and currency textbox controls. You will learn how to use our JS textboxes widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
-
-{% include image.html url="/js/PercentageTextBox/Getting-Started_images/Getting-Started_img1.png" Caption="Electricity Bill Calculator"%}
-
-### Create Textboxes Widgets
+## Create Textboxes Widgets
 
 Create an **HTML** file and add the following template to the html file for Textbox widget creation.
 
@@ -52,48 +48,48 @@ Add necessary input elements to render **Textbox widget**.
 {% highlight html %}
 
 
-    <div class="ele-icon"></div>
-    <div class="ele-txt" style="">Electricity Bill Calculator</div>
-    <br />
-    <table class="editors">
-        <tbody>
-            <tr>
-                <td>
-                    <label>Unit meters</label>
-                </td>
-                <td>
-                    <input id="unitmcalc" type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Service Tax</label>
-                </td>
-                <td>
-                    <input id="servTax" type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Fare</label>
-                </td>
-                <td>
-                    <input id="amountperum" type="text" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Mobile No</label>
-                </td>
-                <td>
-                    <input id="mobiNo" type="text" />
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="paybill">
-        <button class="e-btn" id="cbill">Calculate</button>
-    </div>
+<div class="ele-icon"></div>
+<div class="ele-txt" style="">Electricity Bill Calculator</div>
+<br />
+<table class="editors">
+    <tbody>
+        <tr>
+            <td>
+                <label>Unit meters</label>
+            </td>
+            <td>
+                <input id="unitmcalc" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Service Tax</label>
+            </td>
+            <td>
+                <input id="servTax" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Fare</label>
+            </td>
+            <td>
+                <input id="amountperum" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Mobile No</label>
+            </td>
+            <td>
+                <input id="mobiNo" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="paybill">
+    <button class="e-btn" id="cbill">Calculate</button>
+</div>
 
 
 {% endhighlight %}
@@ -195,10 +191,10 @@ You can add the following location in the **URL** path for the background image 
 
 The following screenshot displays the output when the above code is executed. 
 
-{% include image.html url="/js/PercentageTextBox/Getting-Started_images/Getting-Started_img2.png" Caption="Textboxes with watermark text"%}
+{% include image.html url="/js/PercentageTextBox/Getting-Started_images/Getting-Started_img2.png" %}
 
 
-### Set the MinValue, MaxValue and value in Textboxes
+## Set the MinValue, MaxValue and value in Textboxes
 
 You can set the **“MinValue”,** **“MaxValue”** and **“Value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **Maskedit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
 
@@ -253,10 +249,10 @@ The following screenshot illustrates the output of the above code examples.
 
 
 
-{% include image.html url="/js/PercentageTextBox/Getting-Started_images/Getting-Started_img3.png" Caption="Textboxes with value"%}
+{% include image.html url="/js/PercentageTextBox/Getting-Started_images/Getting-Started_img3.png" %}
 
 
-### Set the Strict Mode Option
+## Set the Strict Mode Option
 
 You can set the “**enableStrictMode” option** to restrict entering values defined outside the range. The following code example illustrates how to set **enableStrictMode** option. 
 
@@ -308,7 +304,7 @@ You can set the “**enableStrictMode” option** to restrict entering values de
 
 Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** range mentioned in the numeric textbox. 
 
-### Set Calculation process with Textboxes Widgets
+## Set Calculation process with Textboxes Widgets
 
 You can use events to calculate the total and display the value. You can achieve this with the help of “click” event in the button widget. The calculation steps have to be written in the call back function of button’s “click” event.
 
@@ -349,5 +345,5 @@ You can use events to calculate the total and display the value. You can achieve
 
 Run the above code example, fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator. 
 
-{% include image.html url="/js/PercentageTextBox/Getting-Started_images/Getting-Started_img4.png" Caption="Electricity bill calculator with alert"%}
+{% include image.html url="/js/PercentageTextBox/Getting-Started_images/Getting-Started_img4.png" %}
 

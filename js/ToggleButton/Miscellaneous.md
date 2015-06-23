@@ -20,7 +20,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-    <input type="checkbox" id="toggle_roundedCorenr" />  
+<input type="checkbox" id="toggle_roundedCorenr" />  
 
 {% endhighlight %}
 
@@ -46,11 +46,11 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Miscellaneous_images/Miscellaneous_img1.png" Caption="Toggle button with Rounder corner"%}
+{% include image.html url="/js/ToggleButton/Miscellaneous_images/Miscellaneous_img1.png" %}
 
 
 
-**Prevent Toggle**
+## Prevent Toggle
 
 This property is used to prevent the state change of **Toggle Button** when it is clicked. When you set **preventToggle** **property** as true, then the state of the **Toggle Button** is not changed even though it is clicked.
 
@@ -62,7 +62,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-    <input type="checkbox" id="toggle_prevent" />
+<input type="checkbox" id="toggle_prevent" />
 
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/ToggleButton/Miscellaneous_images/Miscellaneous_img2.png" Caption="Toggle button with prevent_Toggle"%}
+{% include image.html url="/js/ToggleButton/Miscellaneous_images/Miscellaneous_img2.png" %}
 
 
 

@@ -18,7 +18,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% highlight html %}
 
-    <div class="control">    
+   <div class="control">    
         <div class="align">                        
             <button id="button_repeat">Click
                 </button>                       
@@ -56,7 +56,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 Configure the **CSS** styles to apply on button
 
 {% highlight css %}
-
+    
 <style>
     .align {
         display: table-cell;
@@ -70,5 +70,5 @@ Configure the **CSS** styles to apply on button
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Repeat-Button_images/Repeat-Button_img1.png" Caption="Output for repeat button"%}
+{% include image.html url="/js/Button/Repeat-Button_images/Repeat-Button_img1.png" %}
 

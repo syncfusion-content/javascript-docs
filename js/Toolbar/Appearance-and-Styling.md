@@ -51,7 +51,7 @@ The **showRoundedCorner** property is used to enable rounded corner for **Toolba
 
 {% endhighlight %}
 
-{% include image.html url="/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="ToolBar control with rounded corner"%}
+{% include image.html url="/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
 
 
 ## Enabling Separator 
@@ -71,7 +71,7 @@ The **enableSeparator** property is used to set separator between **Toolbar** it
 
 
 
-{% include image.html url="/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="ToolBar control with item separator"%}
+{% include image.html url="/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
 
 ## Themes
 
@@ -122,5 +122,5 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
 
 
-{% include image.html url="/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="ToolBar control with cssClass"%}
+{% include image.html url="/js/Toolbar/Appearance-and-Styling_images/Appearance-and-Styling_img3.png"%}
 

@@ -21,29 +21,29 @@ In an HTML page set a &lt;div&gt; element with dialog content for rendering the 
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
-
-    // Enable resize in the Dialog function by setting enableResize property as true. By default, value for enableResize is true
-    $(function () {
-        // declaration
-        $("#Dialog").ejDialog({
-            height: 200,
-            width: 300,
-            enableResize: true
+    
+        // Enable resize in the Dialog function by setting enableResize property as true. By default, value for enableResize is true
+        $(function() {
+            // declaration
+            $("#Dialog").ejDialog({
+                height: 200,
+                width: 300,
+                enableResize: true
+            });
         });
-    });
 
 {% endhighlight %}
 
 The output for Dialog control when “enableResize” is “true” is as follows.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="Dialog with enableResize"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img1.png" %}
 
 ## Drag Support
 
@@ -58,9 +58,9 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 {% highlight html %}
 
 
-     <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 	
 {% endhighlight %}
 
@@ -73,12 +73,11 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
         allowDraggable: true
     });
 
-
 {% endhighlight %}
 
 The output for Dialog control when “allowDraggable” is “true” is as follows.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img2.png" Caption="Dialog with allowDraggable"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img2.png" %}
 
 ## Close Icon ToolTip Support
 
@@ -92,9 +91,9 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 
 {% endhighlight %}
 
@@ -111,7 +110,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when “closeIconTooltip” is “close” is as follows.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="Dialog with closeIconTooltip"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img3.png" %}
 
 ## Persistence Support
 
@@ -125,9 +124,9 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 
 {% endhighlight %}
 
@@ -145,7 +144,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 Make resize and reload the web page. The state is maintained in the **Dialog** control. The output for **Dialog** control when “**enablePersistence**” is “**true**” is as follows. 
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="Dialog with enablePersistence"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img4.png" %}
 
 ## Enabled or Disabled
 
@@ -159,9 +158,9 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 
 {% endhighlight %}
 
@@ -178,7 +177,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when “enabled” is “true” is as follows.          
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img5.png" Caption="Dialog with enabled as true"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img5.png" %}
 
 ## Disable Dialog Control
 
@@ -188,9 +187,9 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 
 {% endhighlight %}
 
@@ -207,7 +206,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when enabled is “false” is as follows.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img6.png" Caption="Dialog with enabled as false"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img6.png" %}
 
 ## Dialog Position
 
@@ -217,12 +216,12 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.<br />
-        Position <br />
-        X-Axis : 20 <br />
-        Y-Axis : 26
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.<br />
+   Position <br />
+   X-Axis : 20 <br />
+   Y-Axis : 26
+</div>
 
 {% endhighlight %}
 
@@ -232,28 +231,31 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
     $("#Dialog").ejDialog({
         height: 200,
         width: 300,
-        position: { X: 20, Y: 26 }
+        position: {
+            X: 20,
+            Y: 26
+        }
     });
 
 {% endhighlight %}
 
 The output for Dialog control after setting X-axis and Y-axis value.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img7.png" Caption="Dialog with Position"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img7.png" %}
 
 ## Header Option
 
 You can show or hide the **Dialog** header by setting **showHeader** property. The following steps explains you the implementation of **Dialog** header option.
 
-**Show Header**
+### Show Header
 
 In the HTML page set a &lt;div&gt; element with the dialog content for rendering the Dialog control. 
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 
 {% endhighlight %}
 
@@ -267,27 +269,26 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
         showHeader: true
     });
 
-
 {% endhighlight %}
 
 The output for Dialog control when showHeader is “true” is as follows.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="Dialog with showHeader as true"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img8.png" %}
 
-## Hide Header
+### Hide Header
 
 In the HTML page set a &lt;div&gt; element with the dialog content for rendering the Dialog control. 
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
-
+    
     // Set the showHeader property as false in the Dialog function
     $("#Dialog").ejDialog({
         height: 200,
@@ -299,7 +300,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when showHeader is “false” is as follows.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="Dialog with showHeader as false"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img9.png" %}
 
 ## Show at Initial
 
@@ -309,27 +310,27 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
-
+    
     // Set the showOnInit property as true in the Dialog function
     $("#Dialog").ejDialog({
         height: 200,
         width: 300,
-        showOnInit: true /* false hides the dialog at initialization */  
-     });                       
+        showOnInit: true /* false hides the dialog at initialization */
+    });                 
 
 	
 {% endhighlight %}
 
 The output for Dialog control when showOnInit is “true” is as follows.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img10.png" Caption="Dialog with showOnInit"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img10.png" %}
 
 ## Rounded Corner Support
 
@@ -339,9 +340,9 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 {% highlight html %}
 
-    <div id="Dialog" title="Syncfusion Dialog">
-        The Syncfusion Dialog control is rendered.
-    </div>
+<div id="Dialog" title="Syncfusion Dialog">
+   The Syncfusion Dialog control is rendered.
+</div>
 	
 {% endhighlight %}
 
@@ -352,7 +353,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
     $("#Dialog").ejDialog({
         height: 200,
         width: 300,
-        showRoundedCorner: true 
+        showRoundedCorner: true
     });
 
 
@@ -360,5 +361,5 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for **Dialog** control when **showRoundedCorner** is “**true**” is as follows.
 
-{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img11.png" Caption="Dialog with showRoundedCorner"%}
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img11.png" %}
 

@@ -16,59 +16,61 @@ documentation: ug
 Start Level
 
 <table>
-    <tr>
-        <th>
-            Start Level </th>
-        <th>
-            Syntax</th>
-        <th>
-            Description
-        </th>
-    </tr>
-    <tr>
-        <td>
-            month
-        </td>
-        <td>
-            startLevel: “month”
-        </td>
-        <td>
-            Starts from month level view.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            year
-        </td>
-        <td>
-            startLevel: “year”
-        </td>
-        <td>
-            Starts from year level view.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            decade
-        </td>
-        <td>
-            startLevel: “decade”
-        </td>
-        <td>
-            Starts from year decade level view.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            century
-        </td>
-        <td>
-            startLevel: “century”
-        </td>
-        <td>
-            Starts from century level view.
-        </td>
-    </tr>
+   <tr>
+      <th>
+         Start Level 
+      </th>
+      <th>
+         Syntax
+      </th>
+      <th>
+         Description
+      </th>
+   </tr>
+   <tr>
+      <td>
+         month
+      </td>
+      <td>
+         startLevel: “month”
+      </td>
+      <td>
+         Starts from month level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         year
+      </td>
+      <td>
+         startLevel: “year”
+      </td>
+      <td>
+         Starts from year level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         decade
+      </td>
+      <td>
+         startLevel: “decade”
+      </td>
+      <td>
+         Starts from year decade level view.
+      </td>
+   </tr>
+   <tr>
+      <td>
+         century
+      </td>
+      <td>
+         startLevel: “century”
+      </td>
+      <td>
+         Starts from century level view.
+      </td>
+   </tr>
 </table>
 
 
@@ -77,25 +79,25 @@ In the following example **DateTimePicker** popup start level view is set to “
 Add the following code in your **HTML** page.
 
 {% highlight html %}
-
   
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
+<div class="control">
+   <input type="text" id="dateTime" />
+</div>
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
-  {% highlight js %}
+{% highlight js %}
   
     // Add the code in your script section with start level as century in DateTimePicker popup
     $('#dateTime').ejDateTimePicker({
-        startLevel: "century",
+       startLevel: "century",
+       width: '200px',
     });
 
-  {% endhighlight %}
+{% endhighlight %}
 
-{% include image.html url="/js/DateTimePicker/Start-and-Depth-level_images/Start-and-Depth-level_img1.png" Caption="Showcase for DateTimePicker with century level in DateTimePicker popup"%}
+{% include image.html url="/js/DateTimePicker/Start-and-Depth-level_images/Start-and-Depth-level_img1.png"%}
 
 
 ## Depth Level
@@ -111,15 +113,15 @@ The following code snippet is set to depth level in **DateTimePicker.**
 {% highlight js %}
 
     $('#dateTime').ejDateTimePicker({
-        startLevel: "century",
-        depthLevel: "year",
-        width: '200px',
+       startLevel: "century",
+       depthLevel: "year",
+       width: '200px',
     });
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/DateTimePicker/Start-and-Depth-level_images/Start-and-Depth-level_img2.png" Caption="Showcase of DateTimePicker with Depth level “year”"%}
+{% include image.html url="/js/DateTimePicker/Start-and-Depth-level_images/Start-and-Depth-level_img2.png"%}
 
 

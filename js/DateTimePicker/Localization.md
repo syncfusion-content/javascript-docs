@@ -13,7 +13,7 @@ You can globalize your **DateTimePicker** control. People of different culture c
 
 **Globalize.js** is a simple JavaScript library that allows you to format and parse numbers and dates in a culture-specific fashion. The globalize cultures is the open source and you can get all the culture files online. Refer the online link given,
 
-http://cdnjs.com/libraries/globalize/
+[http://cdnjs.com/libraries/globalize/](http://cdnjs.com/libraries/globalize/)
 
 You can get the script file of various cultures from the following path also:
 **"&lt;Installed Location&gt;\Syncfusion\Essential Studio\&lt;version&gt;\JavaScript\assets\external\cultures**"
@@ -34,31 +34,35 @@ The following code example is used to know Spanish calendar locale information.
 {% highlight js %}
 
     calendars: {
-            standard: {
-                firstDay: 1,
-                days: {
-                    names: ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],
-                    namesAbbr: ["do.","lu.","ma.","mi.","ju.","vi.","sá."],
-                    namesShort: ["D","L","M","X","J","V","S"]
-                },
-                months: {
-                        names: ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre",""],
-                        namesAbbr: ["ene.","feb.","mar.","abr.","may.","jun.","jul.","ago.","sep.","oct.","nov.","dic.",""]
-                },
-                AM: null,
-                PM: null,
-                eras: [{"name":"d. C.","start":null,"offset":0}],
-                patterns: {
-                    d: "dd/MM/yyyy",
-                    D: "dddd, d' de 'MMMM' de 'yyyy",
-                    t: "H:mm",
-                    T: "H:mm:ss",
-                    f: "dddd, d' de 'MMMM' de 'yyyy H:mm",
-                    F: "dddd, d' de 'MMMM' de 'yyyy H:mm:ss",
-                    M: "d' de 'MMMM",
-                    Y: "MMMM' de 'yyyy"
-                }
-            }
+       standard: {
+          firstDay: 1,
+          days: {
+             names: ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"],
+             namesAbbr: ["do.", "lu.", "ma.", "mi.", "ju.", "vi.", "sá."],
+             namesShort: ["D", "L", "M", "X", "J", "V", "S"]
+          },
+          months: {
+             names: ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", ""],
+             namesAbbr: ["ene.", "feb.", "mar.", "abr.", "may.", "jun.", "jul.", "ago.", "sep.", "oct.", "nov.", "dic.", ""]
+          },
+          AM: null,
+          PM: null,
+          eras: [{
+             "name": "d. C.",
+             "start": null,
+             "offset": 0
+          }],
+          patterns: {
+             d: "dd/MM/yyyy",
+             D: "dddd, d' de 'MMMM' de 'yyyy",
+             t: "H:mm",
+             T: "H:mm:ss",
+             f: "dddd, d' de 'MMMM' de 'yyyy H:mm",
+             F: "dddd, d' de 'MMMM' de 'yyyy H:mm:ss",
+             M: "d' de 'MMMM",
+             Y: "MMMM' de 'yyyy"
+          }
+       }
     }
 
 {% endhighlight %}
@@ -70,26 +74,24 @@ The following code example can be used to get Spanish culture in **DateTimePicke
 Add the following code in your **HTML** page.
 
 
-  {% highlight html %}
-
+{% highlight html %}
   
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
+<div class="control">
+   <input type="text" id="dateTime" />
+</div>
+
+{% endhighlight %}
 
 
-  {% endhighlight %}
-
-
-  {% highlight js %}
+{% highlight js %}
 
     // Add the code in your script section to render the DateTimePicker with Spanish culture
-
     $("#dateTime").ejDateTimePicker({
-        locale: "es-ES"
+       locale: "es-ES",
+       buttonText: { today: "hoy", now: "ahora", done: "hecho", timeTitle: "tiempo" },
     });
 
-  {% endhighlight %}
+{% endhighlight %}
 
-{% include image.html url="/js/DateTimePicker/Localization_images/Localization_img1.png" Caption="Showcase for DateTimePicker with Spanish culture"%}
+{% include image.html url="/js/DateTimePicker/Localization_images/Localization_img1.png"%}
 

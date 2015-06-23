@@ -19,9 +19,9 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar*
 
 {% highlight html %}
 
-   <div class="control">
-       <div id="progressbar"></div>
-   </div>
+<div class="control">
+   <div id="progressbar"></div>
+</div>
 
 {% endhighlight %}
 
@@ -42,7 +42,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar*
 
 The following screenshot displays the output.
 
-{% include image.html url="/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Adjusting ProgressBar size"%}
+{% include image.html url="/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
 
 ## Custom text
 
@@ -55,16 +55,16 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 {% highlight html %}
 
 
-   <div class="control">
-       <div id="progressbar"></div>
-   </div>
+<div class="control">
+   <div id="progressbar"></div>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-     // Add Custom Text for the ProgressBar widget.
-
+      // Add Custom Text for the ProgressBar widget.
+    
       $(function () {
          //Declaration.
           $("#progressbar").ejProgressBar({
@@ -79,7 +79,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 The following screenshot displays the output.      
 
- {% include image.html url="/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="    Figure 10: Custom Text in ProgressBar"%}
+ {% include image.html url="/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
 
 ## Theme
 
@@ -112,9 +112,9 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 {% highlight html %}
 
-   <div class="control">
-        <div id="progressbar"></div>
-   </div>
+<div class="control">
+    <div id="progressbar"></div>
+</div>
 
 {% endhighlight %}
 
@@ -122,7 +122,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 
         // Add the class for the ProgressBar Widget.
-
+    
         $(function () {
             //Declaration.
             $("#progressbar").ejProgressBar({
@@ -143,10 +143,9 @@ Add the following styles to render the ProgressBar with customized style.
 
 
 <style type="text/css">
-    .custom .e-progress {
-      background-color:gray;
-    }
-
+   .custom .e-progress {
+       background-color:gray;
+   }
 </style>
 
 
@@ -156,5 +155,5 @@ Add the following styles to render the ProgressBar with customized style.
 
 The following screenshot displays the output.
 
-{% include image.html url="/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Appearance and styling in ProgressBar"%}
+{% include image.html url="/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
 

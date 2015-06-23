@@ -11,7 +11,7 @@ documentation: ug
 
 The **Essential JavaScript Scroller** control has a sliding document whose position corresponds to a value. The document has text, HTML content or images. You can also customize the Scroller control by resizing the scrolling bar and changing the theme.
 
-**Key Features**
+## Key Features
 
 * **Height and Width** - Set the height and width of the scroll panel.
 * **Button Size** - Customize the width and height of the buttons (UP, DOWN, RIGHT and LEFT).
@@ -22,5 +22,5 @@ The **Essential JavaScript Scroller** control has a sliding document whose posit
 
 ## Control Structure
 
-{% include image.html url="/js/Scroller/Overview_images/Overview_img1.png" Caption="Essential JavaScript Scroller"%}
+{% include image.html url="/js/Scroller/Overview_images/Overview_img1.png"%}
 

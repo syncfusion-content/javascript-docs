@@ -24,7 +24,7 @@ List of keyboard shortcuts
     </tr>
     <tr>
         <td>
-            <a href=http://en.wikipedia.org/wiki/Access_key>Access key</a> + j
+            <a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j
         </td>
         <td>
             Focuses into Timepicker widget
@@ -110,7 +110,7 @@ List of keyboard shortcuts, When popup is open
     </tr>
 </table>
 
-### Configure Keyboard Interaction
+## Configure Keyboard Interaction
 
 The following steps explains you on how to enable keyboard interaction for the **TimePicker** widget.
 
@@ -118,7 +118,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-    <input type="text" id="time" accesskey="j"/>
+<input type="text" id="time" accesskey="j"/>
 
 {% endhighlight %}
 
@@ -135,5 +135,5 @@ Run the code sample, press **[Access key](http://en.wikipedia.org/wiki/Access_ke
 
 
 
-{% include image.html url="/js/TimePicker/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption="TimePicker focused with keyboard shortcut"%}
+{% include image.html url="/js/TimePicker/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
 

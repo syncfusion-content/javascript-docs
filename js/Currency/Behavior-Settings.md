@@ -22,7 +22,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -42,8 +42,7 @@ The output for CurrencyTextBox with decimalPlaces is as follows.
 
 
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="
- CurrencyTextBox with decimalPlaces"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img1.png" %}
 
 ## Persistence Support
 
@@ -58,7 +57,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -94,7 +93,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -115,7 +114,7 @@ The output for **CurrencyTextBox** when **enableStrictMode** is **“True”** i
 
 
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="CurrencyTextBox with enableStrictMode"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img4.png" %}
 
 ## Enabled or Disabled
 
@@ -130,7 +129,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -168,7 +167,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -187,7 +186,7 @@ The output for CurrencyTextBox after setting “**height**” and “**width**�
 
 
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img7.png" Caption="CurrencyTextBox with height and width                          		"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img7.png" %}
 
 ## Increment Step
 
@@ -239,7 +238,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -256,7 +255,7 @@ The output for **CurrencyTextBox** with the **name** property is as follows**.**
 
 
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img10.png" Caption="CurrencyTextBox with name"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img10.png" %}
 
 ## Define Value
 
@@ -271,7 +270,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-  <input id="currency" type="text" />
+<input id="currency" type="text" />
       
 {% endhighlight %}
 
@@ -287,7 +286,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **CurrencyTextBox** with the **value** property is as follows**.**
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img11.png" Caption="CurrencyTextBox with value"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img11.png" %}
 
 ## Define maxValue and minValue
 
@@ -308,7 +307,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -366,7 +365,7 @@ The output for CurrencyTextBox when **readOnly** is “**True**” is as follows
 
 
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img14.png" Caption="CurrencyTextBox with readOnly"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img14.png" %}
 
 ## Appearance
 
@@ -402,7 +401,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -443,7 +442,7 @@ The output for CurrencyTextBox after applying **cssClass** is as follows.
 
 
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img15.png" Caption="CurrencyTextBox with cssClass"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img15.png" %}
 
 ## Rounded Corner Support
 
@@ -458,7 +457,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -475,7 +474,7 @@ The output for CurrencyTextBox when **showRoundedCorner** is “**True**”.
 
 
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img16.png" Caption="CurrencyTextBox with showRoundedCorner"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img16.png" %}
 
 ## Spin Button Support
 
@@ -490,7 +489,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -525,7 +524,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-    <input id="currency" type="text" />
+<input id="currency" type="text" />
     
 {% endhighlight %}
 
@@ -542,5 +541,5 @@ The output for CurrencyTextBox after applying **watermarkText** is as follows.
 
 
 
-{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img19.png" Caption="CurrencyTextBox with watermark text"%}
+{% include image.html url="/js/Currency/Behavior-Settings_images/Behavior-Settings_img19.png" %}
 

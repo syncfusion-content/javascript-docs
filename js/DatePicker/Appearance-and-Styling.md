@@ -38,23 +38,22 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 
 
- {% highlight html %}
+{% highlight html %}
     
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker({
+          cssClass: "custom"
+       });
+    });
 
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                cssClass: "custom"
-            });
-        });
-
-  {% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -63,10 +62,9 @@ Add the following styles to render **DatePicker** with customized style.
 {% highlight css %}
 
 <style type="text/css">
-    .custom .e-header {
+   .custom .e-header {
       background-color:blue;
-    }
-
+   }
 </style>
 
 
@@ -78,7 +76,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Custom Css in DatePicker"%}
+{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
 
 ## Keyboard Navigation
 
@@ -91,52 +89,98 @@ The various keyboard shortcuts available within the **DatePicker** widget are di
 Keyboard navigation
 
 <table>
-<tr>
-<th>Keys</th><th>Function</th></tr>
-<tr>
-<td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> </b>+j</td><td>
-Focuses the control</td></tr>
-<tr>
-<td>
-Alt + Down</td><td>
-Opens the popup</td></tr>
-<tr>
-<td>LeftRight</td><td>
-Moves to previous dateMoves to next date</td></tr>
-<tr>
-<td>
-Up</td><td>
-Moves one week upward</td></tr>
-<tr>
-<td>
-Down</td><td>
-Moves one week downward</td></tr>
-<tr>
-<td>
-Enter</td><td>
-Selects the focused date</td></tr>
-<tr>
-<td>
-Esc</td><td>
-Closes the popup</td></tr>
-<tr>
-<td>
-Ctrl + Up</td><td>
-Navigates to top view</td></tr>
-<tr>
-<td>
-Ctrl + Down</td><td>
-Navigates to lower view</td></tr>
-<tr>
-<td>
-Ctrl + Left</td><td>
-Navigates to previous month</td></tr>
-<tr>
-<td>
-Ctrl + Right</td><td>
-Navigates to next month</td></tr>
+   <tr>
+      <th>Keys</th>
+      <th>Function</th>
+   </tr>
+   <tr>
+      <td>
+         [Access key](http://en.wikipedia.org/wiki/Access_key) + j
+      </td>
+      <td>
+         Focuses the control
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Alt + Down
+      </td>
+      <td>
+         Opens the popup
+      </td>
+   </tr>
+   <tr>
+      <td>LeftRight</td>
+      <td>
+         Moves to previous dateMoves to next date
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Up
+      </td>
+      <td>
+         Moves one week upward
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Down
+      </td>
+      <td>
+         Moves one week downward
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Enter
+      </td>
+      <td>
+         Selects the focused date
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Esc
+      </td>
+      <td>
+         Closes the popup
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Ctrl + Up
+      </td>
+      <td>
+         Navigates to top view
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Ctrl + Down
+      </td>
+      <td>
+         Navigates to lower view
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Ctrl + Left
+      </td>
+      <td>
+         Navigates to previous month
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Ctrl + Right
+      </td>
+      <td>
+         Navigates to next month
+      </td>
+   </tr>
 </table>
+
 
 
 The following steps explain you to enable keyboard interaction for **DatePicker** widget
@@ -144,27 +188,24 @@ The following steps explain you to enable keyboard interaction for **DatePicker*
 In the **HTML** page, add a **&lt;input&gt;** element to configure **DatePicker** widget and enable keyboard interaction by setting the **accesskey** property
 
 
- {% highlight html %}
-
+{% highlight html %}
   
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker();
+    });
 
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker();
-        });
-
-
-  {% endhighlight %}
+{% endhighlight %}
 
 
 
-Run the sample, press **Alt + J** to focus in the **DatePicker** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
+Run the sample, press **[Access key](http://en.wikipedia.org/wiki/Access_key) + J** to focus in the **DatePicker** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 
-{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="DatePicker focused with Keyboard shortcut                                            "%}
+{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
 

@@ -27,54 +27,54 @@ In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configur
 {% highlight html %}
 
 
-    <ul id="treeView">
-        <li class="expanded">Favorites
-            <ul>
+<ul id="treeView">
+    <li class="expanded">Favorites
+        <ul>
 
-                <li>Desktop</li>
-                <li>Downloads</li>
-                <li>Recent places</li>
-            </ul>
-        </li>
-        <li class="expanded">Libraries
-            <ul>
-                <li>Documents
-                    <ul>
-                        <li>My Documents</li>
-                        <li>Public Documents</li>
-                    </ul>
-                </li>
-                <li>Pictures
-                    <ul>
-                        <li>My Pictures</li>
-                        <li>Public Pictures</li>
-                    </ul>
-                </li>
-                <li>Music
-                    <ul>
-                        <li>My Music</li>
-                        <li>Public Music</li>
-                    </ul>
-                </li>
-                <li>Subversion</li>
-            </ul>
-        </li>
-        <li>Computer
-            <ul>
-                <li>Folder(C)</li>
-                <li>Folder(D)</li>
-                <li>Folder(F)</li>
-            </ul>
-        </li>
-    </ul>
-    <div>
-        <ul id="treeviewMenu">
-            <li><a href="#">Add New Item</a></li>
-            <li><a href="#">Remove Item</a></li>
-            <li><a href="#">Disable Item</a></li>
-            <li><a href="#">Enable Item</a></li>
+            <li>Desktop</li>
+            <li>Downloads</li>
+            <li>Recent places</li>
         </ul>
-    </div>
+    </li>
+    <li class="expanded">Libraries
+        <ul>
+            <li>Documents
+                <ul>
+                    <li>My Documents</li>
+                    <li>Public Documents</li>
+                </ul>
+            </li>
+            <li>Pictures
+                <ul>
+                    <li>My Pictures</li>
+                    <li>Public Pictures</li>
+                </ul>
+            </li>
+            <li>Music
+                <ul>
+                    <li>My Music</li>
+                    <li>Public Music</li>
+                </ul>
+            </li>
+            <li>Subversion</li>
+        </ul>
+    </li>
+    <li>Computer
+        <ul>
+            <li>Folder(C)</li>
+            <li>Folder(D)</li>
+            <li>Folder(F)</li>
+        </ul>
+    </li>
+</ul>
+<div>
+    <ul id="treeviewMenu">
+        <li><a href="#">Add New Item</a></li>
+        <li><a href="#">Remove Item</a></li>
+        <li><a href="#">Disable Item</a></li>
+        <li><a href="#">Enable Item</a></li>
+    </ul>
+</div>
 
 
 
@@ -139,35 +139,8 @@ Define the events in the script as follows.
 
 
 
-{% include image.html url="/js/TreeView/How-To/Treeview-with-context-menu-support_images/Treeview-with-context-menu-support_img1.png" Caption=""%}
+{% include image.html url="/js/TreeView/How-To/Treeview-with-context-menu_images/Treeview-with-context-menu_img1.png"%}
 
-The output for the context menu for **TreeView** control is as follows.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-_Figure_ _2__9__: Context M__enu for TreeView_
 
 
 

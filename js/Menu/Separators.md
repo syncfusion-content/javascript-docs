@@ -18,7 +18,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 The following screenshot displays the output for the above code sample.
 
-{% include image.html url="/js/Menu/Separators_images/Separators_img1.png" Caption="Menu with Separators"%}
+{% include image.html url="/js/Menu/Separators_images/Separators_img1.png" %}
 
 
 Add the following **&lt;script&gt;** in the above code sample to display the **Menu** control without separator by setting **enableSeparator** as **false**.
@@ -93,6 +93,6 @@ Add the following **&lt;script&gt;** in the above code sample to display the **M
 
 The following screenshot displays the output for the above code. 
 
-{% include image.html url="/js/Menu/Separators_images/Separators_img2.png" Caption="Menu without Separators"%}
+{% include image.html url="/js/Menu/Separators_images/Separators_img2.png" %}
 
 

@@ -45,5 +45,5 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Range 
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/RTL-support_images/RTL-support_img1.png" Caption="Slider with RTL support enabled"%}
+{% include image.html url="/js/Slider/RTL-support_images/RTL-support_img1.png" %}
 

@@ -18,25 +18,25 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 {% highlight html %}
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#corn">Corn & Spinach </a></li>
-            <li><a href="#chicken">Chicken Delite</a></li>
-        </ul>
-        <div id="corn" style="background-color: #F5F5F5">
-            <div class="e-content">
-                <img src="http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
-                <div class="ingredients">
-                    Rate    : $70<br /> Ingredients : cheese, sweet corn &amp; green capsicums.
-                    <br />
-                    Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.
-                </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#corn">Corn & Spinach </a></li>
+        <li><a href="#chicken">Chicken Delite</a></li>
+    </ul>
+    <div id="corn" style="background-color: #F5F5F5">
+        <div class="e-content">
+            <img src="http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach"/>
+            <div class="ingredients">
+                Rate    : $70<br /> Ingredients : cheese, sweet corn &amp; green capsicums.
+                <br />
+                Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.
             </div>
         </div>
-        <div id="chicken" style="background-color: #F5F5F5">
-            <!--Content for Chicken Delite-->
-        </div>
     </div>
+    <div id="chicken" style="background-color: #F5F5F5">
+        <!--Content for Chicken Delite-->
+    </div>
+</div>
 
 
 {% endhighlight %}
@@ -60,5 +60,5 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 
 **Output:**
 
-{% include image.html url="/js/Tab/Template-Support_images/Template-Support_img1.png" Caption="Template Support"%}
+{% include image.html url="/js/Tab/Template-Support_images/Template-Support_img1.png" %}
 

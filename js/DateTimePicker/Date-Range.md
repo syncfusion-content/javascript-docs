@@ -29,26 +29,24 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
 
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
+<div class="control">
+   <input type="text" id="dateTime" />
+</div>
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
-  {% highlight js %}
+{% highlight js %}
 
     // Add the code in your script section to render the DateTimePicker with fixed minimum and maximum date and time
-
     $('#dateTime').ejDateTimePicker({
-        width: 200,
-        minDateTime: "9/10/2014 2:00 PM",
-        maxDateTime: "9/21/2014 2:00 PM",
-
+       width: 200,
+       minDateTime: "9/10/2014 2:00 PM",
+       maxDateTime: "9/21/2014 2:00 PM",
     });
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
-{% include image.html url="/js/DateTimePicker/Date-Range_images/Date-Range_img1.png" Caption="Showcase of disabled dates in DateTimePicker"%}
+{% include image.html url="/js/DateTimePicker/Date-Range_images/Date-Range_img1.png"%}
 

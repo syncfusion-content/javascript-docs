@@ -17,7 +17,6 @@ List of arrow position
 <th>
 Arrow Position</th><th>Description</th></tr>
 <tr>
-<tr>
 <td>
 left</td><td>
 Support for arrow in left.</td></tr>
@@ -42,39 +41,39 @@ In the **HTML** page, add the following button elements to configure **Split 
 
 {% highlight html %}
 
-    <div class="control">
-        <button id="spltbutton11">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-        <button id="spltbutton21">login</button>
-        <ul id="Ul21">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-        <button id="spltbutton31">login</button>
-        <ul id="Ul31">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-        <button id="spltbutton41">login</button>
-        <ul id="Ul41">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-    </div>
+<div class="control">
+    <button id="spltbutton11">login</button>
+    <ul id="Ul11">
+        <li><span>User</span></li>
+        <li><span>Guest</span></li>
+        <li><span>Admin</span></li>
+    </ul>
+    <button id="spltbutton21">login</button>
+    <ul id="Ul21">
+        <li><span>User</span></li>
+        <li><span>Guest</span></li>
+        <li><span>Admin</span></li>
+    </ul>
+    <button id="spltbutton31">login</button>
+    <ul id="Ul31">
+        <li><span>User</span></li>
+        <li><span>Guest</span></li>
+        <li><span>Admin</span></li>
+    </ul>
+    <button id="spltbutton41">login</button>
+    <ul id="Ul41">
+        <li><span>User</span></li>
+        <li><span>Guest</span></li>
+        <li><span>Admin</span></li>
+    </ul>
+</div>
+
 {% endhighlight %}
 
 {% highlight js %}
 
 
- // Initialize the control in JavaScript
-
+    // Initialize the control in JavaScript
     $(function () {
         $("#spltbutton11").ejSplitButton({
             size: "large",
@@ -111,7 +110,7 @@ In the **HTML** page, add the following button elements to configure **Split 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Arrow-Position_images/Arrow-Position_img1.png" Caption="Split button with arrowPosition"%}
+{% include image.html url="/js/SplitButton/Arrow-Position_images/Arrow-Position_img1.png" %}
 
 
 
