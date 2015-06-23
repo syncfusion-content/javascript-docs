@@ -7,11 +7,11 @@ control: Calculate
 documentation: ug
 ---
 
-## Remove and Replace Function
+# Remove and Replace Function
 
 This section discusses the **Remove and Replace** function available for the **CalcEngine**.
 
-### Remove Function
+## Remove Function
 
 **Remove function** removes unused functions from the Function Library, reduces the memory usage, and speeds up parsing as well. When you use only a few Library functions, you may want to remove the unused ones. This is achieved by using the following method.
 
@@ -31,11 +31,11 @@ This section discusses the **Remove and Replace** function available for the **C
 
 {% endhighlight %}
 
-### Replace Function
+## Replace Function
 
 To replace a function with another implementation, remove the original name and add the same name again with a different method name.
 
-### Supported Formulas
+## Supported Formulas
 
 **Ej.calculate.js** supports more than 200 formulas in many sections.
 

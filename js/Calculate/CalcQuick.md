@@ -21,7 +21,6 @@ Create a new **HTML** Page and add the following script to perform the script-re
 
 {% highlight js %}
 
-
     <script src="../scripts/jquery-1.10.2.min.js"></script>
     <script src="../scripts/jquery.easing.1.3.min.js"></script>
     <script src="../scripts/jquery.globalize.min.js"></script>
@@ -33,8 +32,6 @@ Create a new **HTML** Page and add the following script to perform the script-re
     </script>
     <script src="../scripts/properties.js" type="text/javascript"></script>
 
-
-
 {% endhighlight %}
 
 
@@ -45,15 +42,12 @@ Add the Text boxes in the body of the HTML page for calculation. You need to add
 
 {% highlight html %}
 
-
   <div class="col-md-3">
     A
  </div>
  <div class="col-md-3">
      <input type="text" id="txtBoxA" />
  </div>        
-
-
 
 {% endhighlight %}
 
@@ -75,8 +69,6 @@ Now, register these elements as keys in the CalcQuick. The **setKeyValue** metho
       // .. other codes.
  </script>
 
-
-
 {% endhighlight %}
 
 
@@ -96,9 +88,8 @@ After registering the keys, you have to assign the formulas and values for the k
      document.getElementById("txtBoxA").value = "12";
      document.getElementById("txtBoxB").value = "3";
      document.getElementById("txtBoxC").value = "= [A] + 2 * [B]";
-****// codes
-**</script>**
-
+    // codes
+</script>
 
 {% endhighlight %}
 
@@ -106,7 +97,7 @@ After registering the keys, you have to assign the formulas and values for the k
 
 Now, the HTML page is displayed like the following image.
 
-{% include image.html url="/js/Calculate/Concepts-and-Features/CalcQuick_images/CalcQuick_img1.png" Caption="The HTML page after assigning the formulas and values for the keys"%}
+{% include image.html url="/js/Calculate/Concepts-and-Features/CalcQuick_images/CalcQuick_img1.png" Caption=""%}
 
 ### Manual Calculation
 
@@ -129,15 +120,14 @@ Click the **calculate** button to perform the calculation of the key elements. O
      document.getElementById("txtBoxB").value = calculator.getKeyValue("B");
      document.getElementById("txtBoxC").value = calculator.getKeyValue("C");
      document.getElementById("txtBoxD").value = calculator.getKeyValue("D");
-
-     // Codes.
+     
     </script>
 
 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Calculate/Concepts-and-Features/CalcQuick_images/CalcQuick_img2.png" Caption="Compute Formula of elements manually"%}
+{% include image.html url="/js/Calculate/Concepts-and-Features/CalcQuick_images/CalcQuick_img2.png" Caption=""%}
 
 ### Auto Calculation
 
@@ -182,7 +172,7 @@ function valueSet(event, data) {
 
 
 
-{% include image.html url="/js/Calculate/Concepts-and-Features/CalcQuick_images/CalcQuick_img3.png" Caption="Auto Calculation by using the ValueSet event"%}
+{% include image.html url="/js/Calculate/Concepts-and-Features/CalcQuick_images/CalcQuick_img3.png" Caption=""%}
 
 ### Show Formula
 
@@ -206,9 +196,7 @@ You can view the formula of elements by using the method, showFomula of the calc
       // Codes.
     </script>
 
-
-
 {% endhighlight %}
 
-{% include image.html url="/js/Calculate/Concepts-and-Features/CalcQuick_images/CalcQuick_img4.png" Caption="Manual calculation"%}
+{% include image.html url="/js/Calculate/Concepts-and-Features/CalcQuick_images/CalcQuick_img4.png" Caption=""%}
 
