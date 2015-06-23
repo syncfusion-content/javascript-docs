@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Barcode-types-and-supported-characters
-description: barcode types and supported characters
+title: Supported-Barcode-types
+description: supported barcode types
 platform: js
 control: Barcode
 documentation: ug
