@@ -483,7 +483,7 @@ You can store the chosen recurrence options usually in a **RecurrenceRule** fiel
 
 **Edit/Delete Recurrence Appointment**
 
-* You can follow the same procedure of normal appointments for editing/deleting recurrence appointments too. But in **recurrence****appointment**, you can either edit/delete the single occurrence of the appointment or the entire series in an intermediate confirmation pop-up.
+* You can follow the same procedure of normal appointments for editing/deleting recurrence appointments too. But in **recurrence** **appointment**, you can either edit/delete the single occurrence of the appointment or the entire series in an intermediate confirmation pop-up.
 
 * When you double-click the **recurrence** appointment a pop-up window appears as shown in the following screenshot. 
 
@@ -497,7 +497,7 @@ When you click the recurrence appointment, a quick appointment window opens with
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img16.png" Caption="Quick Appointment Window."%}
 
 
-## Behaviour Customization using the events
+## Behavior Customization using the events
 
 **Restrict the display of appointment window**
 
