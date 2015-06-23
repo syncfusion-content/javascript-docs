@@ -9,6 +9,8 @@ documentation: ug
 
 # Dependencies
 
+## Common Libraries
+
 **Essential JavaScript** components mainly relies on the following 4 common libraries –
 
 * jQuery 1.7.1 and later versions
@@ -24,9 +26,10 @@ As of now, all our Syncfusion components supports the latest version of jQuery (
 
 **jQuery.Globalize** script file is to support the globalization concept.
 
+## Server-side Libraries
+
 Apart from the above specified common JavaScript libraries, there are some other JavaScript UI web widgets like Grid and Schedule that supports **Export** functionality, which requires the additional assemblies to be referred in the application. If you have installed **Essential Studio package** in your machine, then the following assemblies are available by default in your machine which needs to be referred in the application to avail with the **Exporting** support,
 
-* Syncfusion.Core
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.EJ.Export
@@ -35,7 +38,7 @@ Apart from the above specified common JavaScript libraries, there are some other
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
 
-If the user wants to use the **Reporting** controls, then the following System assemblies and other Syncfusion assemblies listed below are needed to be referred mandatorily in the application. 
+If the user wants to use the **Reporting** controls (ReportViewer), then the following System and other Syncfusion assemblies listed below are needed to be referred mandatorily in the application. 
 
 * System.Web.Routing  
 * System.Web.Http
@@ -43,7 +46,6 @@ If the user wants to use the **Reporting** controls, then the following System a
 * System.Net.Http
 * System.Net.Http.WebRequest
 * System.Net.Http.Formatting
-* Syncfusion.Core
 * Syncfusion.Linq.Base
 * Syncfusion.EJ.ReportViewer
 * Syncfusion.ReportControls.Wpf
@@ -58,7 +60,6 @@ If the user wants to use the **Reporting** controls, then the following System a
 
 The dependency files required for making use of **Business Intelligence Components** (PivotGrid, Olap Client, Olap Chart and Olap Gauge) in **JavaScript** platform are listed below -  
 
-* Syncfusion.Core 
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.EJ
@@ -66,8 +67,29 @@ The dependency files required for making use of **Business Intelligence Componen
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
 * Syncfusion.XlsIO.Base
+* Syncfusion.Pdf.Base
+* Syncfusion.DocIO.Base
 * Microsoft.AnalysisServices.AdomdClient
-* System.Data.SqlServerCe.dll (Version: 4.0.0.0).
+* System.Data.SqlServerCe (Version: 4.0.0.0).
+
+The dependent assemblies required to use the **IO (File Format)** products (XlsIO, DocIO, PDF and Presentation) are as follows -  
+
+* Syncfusion.Compression.Base
+* Syncfusion.XlsIO.Base
+* Syncfusion.ExcelToPDFConverter.Base
+* Syncfusion.ExcelChartToImageConverter.WPF
+* Syncfusion.OfficeChart.Base
+* Syncfusion.DocIO.Base
+* Syncfusion.DocToPDFConverter.Base
+* Syncfusion.Pdf.Base
+* Syncfusion.HtmlConverter.Base
+* Syncfusion.GeckoHtmlRenderer.Base
+* Syncfusion.OCRProcessor.Base
+* Syncfusion.Presentation.Base
+* Syncfusion.PresentationToPdfConverter.Base
+* Syncfusion.OfficeChartToImageConverter.WPF
+* Syncfusion.SfChart.WPF
+* Syncfusion.Shared.WPF
 
 All the above specified Syncfusion assemblies are available separately for the .NET framerworks **4.0**, **4.5** and **4.5.1**.
 
