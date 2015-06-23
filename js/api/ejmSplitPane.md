@@ -67,6 +67,7 @@ Specifies whether to allow scrolling for leftpane content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -90,6 +91,7 @@ Specifies whether to allow scrolling for rightpane content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -125,6 +127,7 @@ Specifies whether to show the toolbar when the control is rendered in android mo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -148,6 +151,7 @@ Sets the root class for SplitPane theme. This cssClass API helps to use custom s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -171,6 +175,7 @@ Saves current model value to browser cookies for state maintains. While refreshi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -194,6 +199,7 @@ Enable or Disable the swiping behavior to the content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -229,6 +235,7 @@ Specifies whether to show the left header .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -252,6 +259,7 @@ Specifies whether to show the right header .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -287,6 +295,7 @@ Specifies whether to show the left header .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -310,6 +319,7 @@ Specifies whether to show the right header .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -333,6 +343,7 @@ Section for set the header functionalities to the left header of the Split Pane 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -356,6 +367,7 @@ Section for scroll panel specific functionalities appear to the left pane conten
 
 
 Default Value:
+{:.param}
 
 
 
@@ -379,6 +391,7 @@ Specifies the direction to slide the overlay leftpane
 
 
 Default Value:
+{:.param}
 
 
 
@@ -402,6 +415,7 @@ specifies whether to overlay the leftpane content on lower resolutions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -425,6 +439,7 @@ Changes the rendering mode of the SplitPane. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -448,6 +463,7 @@ Section for set the header functionalities to the right header of the Split Pane
 
 
 Default Value:
+{:.param}
 
 
 
@@ -471,6 +487,7 @@ Section for scroll panel specific functionalities appear to the right pane conte
 
 
 Default Value:
+{:.param}
 
 
 
@@ -494,6 +511,7 @@ Changes the theme of the SplitPane. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -517,6 +535,7 @@ Section for specifies toolbar functionalities when the control is rendered.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -552,6 +571,7 @@ Specifies whether to show the left header .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -575,6 +595,7 @@ Specifies whether to show the right header .
 
 
 Default Value:
+{:.param}
 
 
 

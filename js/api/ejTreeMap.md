@@ -53,6 +53,7 @@ Specifies the border brush color of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -77,6 +78,7 @@ Specifies the border thickness of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -101,6 +103,7 @@ Specifies the uniform color mapping of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -125,6 +128,7 @@ Specifies the color for desaturationColorMapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -149,6 +153,7 @@ Specifies the color for desaturationColorMapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -173,6 +178,7 @@ Specifies the uniform color mapping of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -197,6 +203,7 @@ Specifies the colors of the paletteColorMapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -221,6 +228,7 @@ Specifies the colors of the paletteColorMapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -245,6 +253,7 @@ Specifies the color valuepath of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -269,6 +278,7 @@ Specifies the datasource of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -305,6 +315,7 @@ Specifies the dockPosition for legend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -329,6 +340,7 @@ specifies the drillDown header color
 
 
 Default Value:
+{:.param}
 
 
 
@@ -353,6 +365,7 @@ specifies the drillDown selection color
 
 
 Default Value:
+{:.param}
 
 
 
@@ -377,6 +390,7 @@ Enable/Disable the drillDown for treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -401,6 +415,7 @@ Specifies whether treemap need to resize when container is resized
 
 
 Default Value:
+{:.param}
 
 
 
@@ -425,6 +440,7 @@ Specifies the from value for desaturation color mapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -449,6 +465,7 @@ Specifies the from value for desaturation color mapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -473,6 +490,7 @@ Specifies the group color mapping of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -497,6 +515,7 @@ Specifies the height for legend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -521,6 +540,7 @@ Specifies the highlight border brush of treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -545,6 +565,7 @@ Specifies the border thickness when treemap items is highlighted in the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -569,6 +590,7 @@ Specifies the highlight border brush of treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -593,6 +615,7 @@ Specifies the border thickness when treemap items is highlighted in the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -617,6 +640,7 @@ Specifies whether treemap item need to highlighted on selection
 
 
 Default Value:
+{:.param}
 
 
 
@@ -641,6 +665,7 @@ Specifies whether treemap item need to highlighted on selection
 
 
 Default Value:
+{:.param}
 
 
 
@@ -665,6 +690,7 @@ Specifies the iconHeight for legend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -689,6 +715,7 @@ Specifies the iconWidth for legend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -713,6 +740,7 @@ Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -749,6 +777,7 @@ Specifies the border bruch color of the leaf item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -773,6 +802,7 @@ Specifies the border thickness of the leaf item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -797,6 +827,7 @@ Specifies the label template of the leaf item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -821,6 +852,7 @@ Specifies the label path of the leaf item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -845,6 +877,7 @@ Specifies the position of the leaf labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -869,6 +902,7 @@ Specifies the mode of label visibility
 
 
 Default Value:
+{:.param}
 
 
 
@@ -893,6 +927,7 @@ Shows or hides the label of the leaf item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -929,6 +964,7 @@ Specify levels of treemap for grouped visualization of datas
 
 
 Default Value:
+{:.param}
 
 
 
@@ -980,6 +1016,7 @@ Specifies the rangeMaximum value for desaturation color mapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1004,6 +1041,7 @@ Specifies the rangeMaximum value for desaturation color mapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1028,6 +1066,7 @@ Specifies the rangeMinimum value for desaturation color mapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1052,6 +1091,7 @@ Specifies the rangeMinimum value for desaturation color mapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1076,6 +1116,7 @@ Specifies the selection mode of the treemap. Accepted selection mode values are 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1099,6 +1140,7 @@ Specifies the legend visibility status of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1123,6 +1165,7 @@ Specifies whether treemap tooltip need to be visible
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1147,6 +1190,7 @@ Specifies the template for legendSettings
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1171,6 +1215,7 @@ Specifies the to value for desaturation color mapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1195,6 +1240,7 @@ Specifies the to value for desaturation color mapping
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1219,6 +1265,7 @@ Specifies the tooltip template of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1243,6 +1290,7 @@ Specifies the groupID for GroupColorMapping.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1266,6 +1314,7 @@ Hold the treeMapItems to be displayed in treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1302,6 +1351,7 @@ specifies the group background
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1325,6 +1375,7 @@ Specifies the group border color for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1348,6 +1399,7 @@ Specifies the group border thickness for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1371,6 +1423,7 @@ Specifies the group gap for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1394,6 +1447,7 @@ Specifies the group padding for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1432,6 +1486,7 @@ Specifies the header height for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1455,6 +1510,7 @@ Specifies the header template for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1478,6 +1534,7 @@ Specifies the mode of header visibility
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1502,6 +1559,7 @@ Specifies the position of the labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1526,6 +1584,7 @@ Specifies the label template for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1549,6 +1608,7 @@ Specifies the mode of label visibility
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1573,6 +1633,7 @@ Shows or hides the header for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1596,6 +1657,7 @@ Shows or hides the labels for tree map level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1619,6 +1681,7 @@ Specifies the color value for rangeColorMapping.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1642,6 +1705,7 @@ Specifies the from value for rangeColorMapping.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1665,6 +1729,7 @@ Specifies the legendlabel value for rangeColorMapping.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1688,6 +1753,7 @@ Specifies the to value for rangeColorMapping.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1723,6 +1789,7 @@ Specifies the weight valuepath of the treemap
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1747,6 +1814,7 @@ Specifies the width for legend
 
 
 Default Value:
+{:.param}
 
 
 

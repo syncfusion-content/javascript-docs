@@ -117,6 +117,7 @@ Sets the root class for TimePicker theme. This cssClass API helps to use custom 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -180,6 +181,7 @@ Specifies whether to enable the control on initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -243,6 +245,7 @@ Current model value to browser cookies for state maintains. While refresh the pa
 
 
 Default Value:
+{:.param}
 
 
 
@@ -306,6 +309,7 @@ Specifies the hour format See <a href="global.html#HourFormat">HourFormat</a>.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -390,6 +394,7 @@ Specifies whether to use ios7 native timepicker or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -452,6 +457,7 @@ Changes the rendering mode. See <a href="global.html#RenderMode">RenderMode</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -515,6 +521,7 @@ Changes the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -578,6 +585,7 @@ Specifies the time format.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -641,6 +649,7 @@ Specifies the value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -725,6 +734,7 @@ Specifies whether to render the control based on the windowsphone's current them
 
 
 Default Value:
+{:.param}
 
 
 

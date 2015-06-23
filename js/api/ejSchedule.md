@@ -134,6 +134,7 @@ Enables or disables the appointment drag and drop behavior of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -192,6 +193,7 @@ Enables or disables the keyboard interaction of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -238,6 +240,7 @@ This property is used to bind the appointmentSettings data fields to the schedul
 
 
 Default Value:
+{:.param}
 
 
 
@@ -295,6 +298,7 @@ Bind string value to allday field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -352,6 +356,7 @@ Bind string value to categorize field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -410,6 +415,7 @@ Render the appointments within the Schedule control based on the specified dataS
 
 
 Default Value:
+{:.param}
 
 
 
@@ -467,6 +473,7 @@ Bind string value to description field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -524,6 +531,7 @@ Bind string value to endTime field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -581,6 +589,7 @@ Bind string value to id field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -638,6 +647,7 @@ Bind string value to location field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -697,6 +707,7 @@ Bind string value to priority field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -757,6 +768,7 @@ Query the data records from the table for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -814,6 +826,7 @@ Bind string value to recurrence field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -871,6 +884,7 @@ Bind string value to recurrenceRule field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -928,6 +942,7 @@ Binds the resource related fields to the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -996,6 +1011,7 @@ Bind string value to startTime field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1053,6 +1069,7 @@ Bind string value to subject field of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1110,6 +1127,7 @@ Specify the tablename to retrive the data for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1168,6 +1186,7 @@ Specifies an element&rsquo;s id which can be used for appointment template rende
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1214,6 +1233,7 @@ Apply the business end hour of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1260,6 +1280,7 @@ Apply the business start hour of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1306,6 +1327,7 @@ This property is used to bind the Categorize items of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1356,6 +1378,7 @@ allowMultiple option enables/disables the multiple selection of categories for t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1402,6 +1425,7 @@ Bind string value to color field of categorize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1466,6 +1490,7 @@ Defines the Categorize data collection for the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1521,6 +1546,7 @@ Enables or disables the Categorize option for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1567,6 +1593,7 @@ Bind string value to fontColor field of categorize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1631,6 +1658,7 @@ Bind string value to id field of categorize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1695,6 +1723,7 @@ Bind string value to text field of categorize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1759,6 +1788,7 @@ Defines the Cell height of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1805,6 +1835,7 @@ Defines the Cell Width of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1851,6 +1882,7 @@ This property is used to bind the contextmenu items of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1901,6 +1933,7 @@ Enables or disables the context menu option for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1947,6 +1980,7 @@ Context menu collection for appointment and cells of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2015,6 +2049,7 @@ Specify the CSS class for schedule to achieve the custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2061,6 +2096,7 @@ Apply the current date to the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2107,6 +2143,7 @@ Specifies the current view of the schedule; See <a href="global.html#CurrentView
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2152,6 +2189,7 @@ Defines the date format of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2197,6 +2235,7 @@ Enables or disables the previous/next appointment navigation of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2256,6 +2295,7 @@ Enables or disables the appointment resize behavior of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2314,6 +2354,7 @@ Enables/disables the load on demand option for schedule appointment data.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2360,6 +2401,7 @@ Saves the current model value to the browser cookies for state maintanence. When
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2406,6 +2448,7 @@ Enables or disables the resize behavior of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2452,6 +2495,7 @@ Enables or disables the rtl direction for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2498,6 +2542,7 @@ Apply the end hour to the work area of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2544,6 +2589,7 @@ Groups the specified resources in the schedule control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2623,6 +2669,7 @@ Defines the height of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2669,6 +2716,7 @@ Enable or disable the business-hour highlighting behavior for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2715,6 +2763,7 @@ Enables or disables the adaptive of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2761,6 +2810,7 @@ Defines the locale for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2807,6 +2857,7 @@ Defines the Maximum date of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2853,6 +2904,7 @@ Defines the Minimum date of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2899,6 +2951,7 @@ Defines the orientation type of the schedule; Renders the schedule either in ver
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2944,6 +2997,7 @@ Defines the Priority data collection for the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2992,7 +3046,8 @@ Default Value:
 
 
 
-<code>Default Value:</code>
+<code>Default Value:
+{:.param}</code>
 
 
 
@@ -3039,6 +3094,7 @@ Bind string/int value to id field of priority.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3105,7 +3161,8 @@ $("#Schedule").ejSchedule({
 
 
 
-<code>Default Value:</code>
+<code>Default Value:
+{:.param}</code>
 
 
 
@@ -3154,7 +3211,8 @@ $("#Schedule").ejSchedule({
 
 
 
-<code>Default Value:</code>
+<code>Default Value:
+{:.param}</code>
 
 
 
@@ -3221,7 +3279,8 @@ $("#Schedule").ejSchedule({
 
 
 
-<code>Default Value:</code>
+<code>Default Value:
+{:.param}</code>
 
 
 
@@ -3288,7 +3347,8 @@ $("#Schedule").ejSchedule({
 
 
 
-<code>Default Value:</code>
+<code>Default Value:
+{:.param}</code>
 
 
 
@@ -3335,6 +3395,7 @@ This property is used to set the reminder options of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3385,6 +3446,7 @@ Set the alert timing in reminder settings option of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3431,6 +3493,7 @@ Enables or disables the reminder settings option for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3477,6 +3540,7 @@ Defines the specific start and end dates to be rendered in the schedule control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3529,6 +3593,7 @@ Specifies an element&rsquo;s id which can be used for resource header template r
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3575,6 +3640,7 @@ Binds the resource collection to the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3643,6 +3709,7 @@ Show/hide the allday row cells of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3689,6 +3756,7 @@ Enables or disables the display of current time indicator on the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3735,6 +3803,7 @@ Enable or disable the location field display behavior for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3780,6 +3849,7 @@ Enable or disable the quick window open behavior for schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3825,6 +3895,7 @@ Apply the start hour to the work area of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3871,6 +3942,7 @@ Defines the time mode of the schedule; To know more on timemodes of the schedule
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3916,6 +3988,7 @@ Defines the timeZone of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3962,6 +4035,7 @@ This property is used to bind the timezoneCollection items of schedule.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4011,6 +4085,7 @@ Binds the timezone collection values specified in the dataSource to the Schedule
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4067,6 +4142,7 @@ Binds the id field name to the id property of the timezoneCollection dataSource.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4127,6 +4203,7 @@ Binds the text field name to the text property of the timezoneCollection dataSou
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4187,6 +4264,7 @@ Binds the value field name to the value property of the timezoneCollection dataS
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4247,6 +4325,7 @@ Defines the collection of views to be displayed in the schedule control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4292,6 +4371,7 @@ Defines the width of the schedule.
 
 
 Default Value:
+{:.param}
 
 
 

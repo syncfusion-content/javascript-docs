@@ -103,6 +103,7 @@ Specifies whether to accept custom text or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -166,6 +167,7 @@ Specifies whether the control is enabled or disabled.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -229,6 +231,7 @@ Saves current model value to browser cookies for state maintainance. While refre
 
 
 Default Value:
+{:.param}
 
 
 
@@ -292,6 +295,7 @@ Specifies the Height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -354,6 +358,7 @@ Specifies the value to be added in each step of increment.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -415,6 +420,7 @@ Specifies the maximum value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -477,6 +483,7 @@ specifies the minimum value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -539,6 +546,7 @@ Specifies the orientation whether it is horizontal or vertical. See <a href="glo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -602,6 +610,7 @@ Specifies the initial value in percentage.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -664,6 +673,7 @@ Changes the rendering mode. See <a href="global.html#RenderMode">RenderMode</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -730,6 +740,7 @@ Applies custom text to notify it's current actions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -793,6 +804,7 @@ Specifies the theme.See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -858,6 +870,7 @@ Specifies the initial value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -920,6 +933,7 @@ Specifies the width.
 
 
 Default Value:
+{:.param}
 
 
 

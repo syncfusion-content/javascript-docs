@@ -65,6 +65,7 @@ Specifies whether to be allow the scrolling in suggestion list.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -90,6 +91,7 @@ Specifies the whether allowSorting to be allowed or not in suggestion list on in
 
 
 Default Value:
+{:.param}
 
 
 
@@ -115,6 +117,7 @@ Specifies whether to search key is case sensitive or not on initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -140,6 +143,7 @@ Sets the root class for AutoComplete theme. This cssClass API helps to use custo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -165,6 +169,7 @@ Specifies the datasource for items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -190,6 +195,7 @@ Specifies the delimiterChar string for Multivalue mode that separates two items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -215,6 +221,7 @@ Specifies the text that to be displayed while there is no suggestion for AutoCom
 
 
 Default Value:
+{:.param}
 
 
 
@@ -240,6 +247,7 @@ Specifies whether to auto fill option by which we can select and show up the fir
 
 
 Default Value:
+{:.param}
 
 
 
@@ -265,6 +273,7 @@ Specifies whether to show checkbox in suggestion item list in Multivalue mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -290,6 +299,7 @@ Specifies whether to enable the autoComplete on initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -315,6 +325,7 @@ Specifies whether the duplicate results to be shown or not in search results
 
 
 Default Value:
+{:.param}
 
 
 
@@ -340,6 +351,7 @@ Specifies whether to accept multiple values or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -365,6 +377,7 @@ Current model value to browser cookies for state maintains. While refresh the Au
 
 
 Default Value:
+{:.param}
 
 
 
@@ -390,6 +403,7 @@ Specifies the datasource text field that to be queried by search key on initiali
 
 
 Default Value:
+{:.param}
 
 
 
@@ -415,6 +429,7 @@ Specifies the type of the filter by which the filtering occurs.See <a href="glob
 
 
 Default Value:
+{:.param}
 
 
 
@@ -440,6 +455,7 @@ Specifies the autocomplete image field of the datasource as Class
 
 
 Default Value:
+{:.param}
 
 
 
@@ -465,6 +481,7 @@ Specifies the datasource image field as URL.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -490,6 +507,7 @@ Specifies the number of items shown in the suggestion list.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -515,6 +533,7 @@ Specifies the remote url that to be used as a datasource for autocomplete
 
 
 Default Value:
+{:.param}
 
 
 
@@ -540,6 +559,7 @@ Specifies the minimum search key length after which only autocomplete querying t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -565,6 +585,7 @@ Specifies the AutoComplete mode. See <a href="global.html#Mode">Mode</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -590,6 +611,7 @@ Changes the rendering mode of the autocomplete . See <a href="global.html#Render
 
 
 Default Value:
+{:.param}
 
 
 
@@ -615,6 +637,7 @@ Specifies the search result to be shown or not while there is no suggestion for 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -640,6 +663,7 @@ Specifies the suggestion list sorting order. See <a href="global.html#SortOrder"
 
 
 Default Value:
+{:.param}
 
 
 
@@ -665,6 +689,7 @@ Specifies the template id for items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -690,6 +715,7 @@ Changes the theme of the autocomplete . See <a href="global.html#Theme">Theme</a
 
 
 Default Value:
+{:.param}
 
 
 
@@ -715,6 +741,7 @@ Specifies the textbox value on initialization
 
 
 Default Value:
+{:.param}
 
 
 
@@ -740,6 +767,7 @@ Specifies the autocomplete watermark text that to be shown on autocomplete text 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -777,6 +805,7 @@ Specifies whether to render the autocomplete based on the windowsphone's current
 
 
 Default Value:
+{:.param}
 
 
 

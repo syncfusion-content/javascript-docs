@@ -148,6 +148,7 @@ Specifies whether to enable the filtering for the columns . It helps to filter t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -200,6 +201,7 @@ Specifies whether to enable the Grid pager feature
 
 
 Default Value:
+{:.param}
 
 
 
@@ -252,6 +254,7 @@ Specifies whether to enable the scrolling feature in Grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -304,6 +307,7 @@ Specifies whether to enable the grid row selection.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -393,6 +397,7 @@ Set the caption for the grid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -445,6 +450,7 @@ It is used to define which columns can be bound to grid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -496,6 +502,7 @@ Specifies the CSS class to grid to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -548,6 +555,7 @@ Specifies the data source for the grid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -600,6 +608,7 @@ Specifies whether to enable the state maintenance in grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -673,6 +682,7 @@ Set the filter bar mode option in the grid. Accepted filterBarModes are "immedia
 
 
 Default Value:
+{:.param}
 
 
 
@@ -727,6 +737,7 @@ Get filtered columns details programmatically after filtering.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -781,6 +792,7 @@ Specifies the filter interval (in milliseconds) when filterbar mode is set to Im
 
 
 Default Value:
+{:.param}
 
 
 
@@ -856,6 +868,7 @@ This is used to define which page to display currently.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -910,6 +923,7 @@ Used to define the pager position which can be fixed or normal. See <a href="glo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -964,6 +978,7 @@ This is used to define the number of records displayed per page.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1018,6 +1033,7 @@ It holds the total records count available in the grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1070,6 +1086,7 @@ Used to define the pager type which can be scrollable or normal. See <a href="gl
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1124,6 +1141,7 @@ Changes the rendering mode of the grid. It can be auto, ios7, android, windows o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1197,6 +1215,7 @@ Used to enable or disable column scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1251,6 +1270,7 @@ Used to enable or disable native scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1305,6 +1325,7 @@ Used to enable or disable row scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1359,6 +1380,7 @@ Specifies the height for the Grid content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1413,6 +1435,7 @@ Specifies the width for the Grid content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1467,6 +1490,7 @@ To apply row selection based on your row index value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1542,6 +1566,7 @@ Enable or disable the multi sorting behavior of grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1596,6 +1621,7 @@ To define which column can be sorted and also to define the sort direction
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1650,6 +1676,7 @@ Specifies the theme of the Grid. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1702,6 +1729,7 @@ Specifies the transition type when navigation happens while interacting with gri
 
 
 Default Value:
+{:.param}
 
 
 

@@ -60,6 +60,7 @@ Sets the number of colunsCount in OLAP Gauges for its arrangement.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -84,6 +85,7 @@ Specify the CSS class to OLAP Gauge to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -107,6 +109,7 @@ Custom object to pass additional information between client-end and service-end.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -131,6 +134,7 @@ Enables/disables tooltip in OLAP Gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -155,6 +159,7 @@ Allows the user to enable Responsive layout support.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -179,6 +184,7 @@ Number format allows you to change the format of label values in OLAP Gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -203,6 +209,7 @@ Sets the localized language for the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -227,6 +234,7 @@ Sets the number of rows in OLAP Gauges for its arrangement.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -251,6 +259,7 @@ Sets the scale values such as pointers, indicators, etc... for OLAP Gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -275,6 +284,7 @@ Allows the user to set custom name for the methods at service-end invoked on AJA
 
 
 Default Value:
+{:.param}
 
 
 
@@ -299,6 +309,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -323,6 +334,7 @@ Enables/disables the header labels in OLAP Gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -347,6 +359,7 @@ Connects the service using the specified URL for any server updates.
 
 
 Default Value:
+{:.param}
 
 
 

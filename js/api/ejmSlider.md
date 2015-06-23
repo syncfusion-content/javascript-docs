@@ -103,6 +103,7 @@ Specifies the animation speed when animation is enabled.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -166,6 +167,7 @@ Specifies whether to enable animation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -229,6 +231,7 @@ Specifies whether to enable or disable the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -292,6 +295,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -355,6 +359,7 @@ Specifies whether to enable range slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -418,6 +423,7 @@ Specifies the step value for incrementation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -502,6 +508,7 @@ Specifies the thumb style in ios7 mode. See <a href="global.html#ThumbStyle">Thu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -564,6 +571,7 @@ Specifies the maximum value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -627,6 +635,7 @@ Specifies the minimum value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -690,6 +699,7 @@ Specifies whether the orientation is horizontal or vertical. See <a href="global
 
 
 Default Value:
+{:.param}
 
 
 
@@ -753,6 +763,7 @@ Specifies whether the control is read only.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -816,6 +827,7 @@ Specifies the rendering mode of the control. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -880,6 +892,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -945,6 +958,7 @@ Specifies the current value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1008,6 +1022,7 @@ Specifies the values when range slider is enabled.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1094,6 +1109,7 @@ Specifies whether to render control based on the windowsphone's current accent c
 
 
 Default Value:
+{:.param}
 
 
 

@@ -118,6 +118,7 @@ The colorpicker control allows to define the customized text to displayed in but
 
 
 Default Value:
+{:.param}
 
 
 
@@ -165,6 +166,7 @@ Specifies the number of columns to be displayed color palette model.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -212,6 +214,7 @@ This property allows you to customize its appearance using user-defined CSS and 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -259,6 +262,7 @@ This property allows to define the custom colors in the palette model.Custom pal
 
 
 Default Value:
+{:.param}
 
 
 
@@ -306,6 +310,7 @@ This property allows to embed the popup in the order of DOM element flow . When 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -353,6 +358,7 @@ This property allows to change the control in enabled or disabled state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -400,6 +406,7 @@ This property allows to enable or disable the opacity slider in the color picker
 
 
 Default Value:
+{:.param}
 
 
 
@@ -447,6 +454,7 @@ Specifies the model type to be rendered initially in the colorpicker control. Th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -494,6 +502,7 @@ This property allows to change the opacity value .The selected color opacity wil
 
 
 Default Value:
+{:.param}
 
 
 
@@ -541,6 +550,7 @@ Specifies the palette type to be displayed at initial time in palette model.Ther
 
 
 Default Value:
+{:.param}
 
 
 
@@ -588,6 +598,7 @@ This property allows to define the preset model to be rendered initially in pale
 
 
 Default Value:
+{:.param}
 
 
 
@@ -635,6 +646,7 @@ This property allows to provides live preview support for current cursor selecti
 
 
 Default Value:
+{:.param}
 
 
 
@@ -682,6 +694,7 @@ This property allows to store the color values in custom list.The colorpicker wi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -729,6 +742,7 @@ This property allows to shows tooltip to notify the slider value in colorpicker 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -776,6 +790,7 @@ Specifies the toolIcon to be disaplyed in dropdown control color area.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -832,6 +847,7 @@ This property allows to define the customized text or content to displayed when 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -879,6 +895,7 @@ Specifies the color value for colorpicker control, the value is in hexadecimal f
 
 
 Default Value:
+{:.param}
 
 
 

@@ -120,6 +120,7 @@ Displays the custom text for the buttons inside the DateTimePicker popup. when t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -290,6 +291,7 @@ Set the root class for DateTimePicker theme. This cssClass API helps to use cust
 
 
 Default Value:
+{:.param}
 
 
 
@@ -335,6 +337,7 @@ Defines the datetime format displayed in the DateTimePicker. The value should be
 
 
 Default Value:
+{:.param}
 
 
 
@@ -381,6 +384,7 @@ Specifies the header format of the datepicker inside the DateTimePicker popup. S
 
 
 Default Value:
+{:.param}
 
 
 
@@ -427,6 +431,7 @@ Specifies the drill down level in datepicker inside the DateTimePicker popup. Se
 
 
 Default Value:
+{:.param}
 
 
 
@@ -473,6 +478,7 @@ Enable or disable the animation effect in DateTimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -520,6 +526,7 @@ When this property is set to false, it disables the DateTimePicker control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -566,6 +573,7 @@ Enables or disables the state maintenance of DateTimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -612,6 +620,7 @@ Sets the DateTimePicker direction as right to left alignment.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -658,6 +667,7 @@ When enableStrictMode true it allows the value outside of the range also, otherw
 
 
 Default Value:
+{:.param}
 
 
 
@@ -704,6 +714,7 @@ Specifies the header format to be displayed in the DatePicker calendar inside th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -750,6 +761,7 @@ Defines the height of the DateTimePicker textbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -796,6 +808,7 @@ Specifies the HTML Attributes of the ejDateTimePicker
 
 
 Default Value:
+{:.param}
 
 
 
@@ -842,6 +855,7 @@ Sets the time interval between the two adjacent time values in the time popup.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -888,6 +902,7 @@ Defines the localization culture for DateTimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -934,6 +949,7 @@ Sets the maximum value to the DateTimePicker. Beyond the maximum value an error 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -980,6 +996,7 @@ Sets the minimum value to the DateTimePicker. Behind the minimum value an error 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1026,6 +1043,7 @@ Indicates that the DateTimePicker value can only be read and can&rsquo;t change.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1072,6 +1090,7 @@ It allows showing days in other months of DatePicker calendar inside the DateTim
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1118,6 +1137,7 @@ Shows or hides the arrow button from the DateTimePicker textbox. When the button
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1164,6 +1184,7 @@ Changes the sharped edges into rounded corner for the DateTimePicker textbox and
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1210,6 +1231,7 @@ Specifies the start day of the week in datepicker inside the DateTimePicker popu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1256,6 +1278,7 @@ Specifies the start level view in datepicker inside the DateTimePicker popup. Se
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1302,6 +1325,7 @@ Specifies the number of months to navigate at one click of next and previous but
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1348,6 +1372,7 @@ Defines the time format displayed in the time dropdown inside the DateTimePicker
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1394,6 +1419,7 @@ Defines the width of the time dropdown inside the DateTimePicker popup.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1440,6 +1466,7 @@ Set the jquery validation error message in datetimepicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1493,6 +1520,7 @@ Set the jquery validation rules in datetimepicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1543,6 +1571,7 @@ Sets the DateTime value to the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1589,6 +1618,7 @@ Defines the width of the DateTimePicker textbox.
 
 
 Default Value:
+{:.param}
 
 
 

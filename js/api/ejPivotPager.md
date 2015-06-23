@@ -60,6 +60,7 @@ Contains the current page number in categorical axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -84,6 +85,7 @@ Contains the total page count in categorical axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -108,6 +110,7 @@ Sets the localized language for the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -132,6 +135,7 @@ Sets the pager mode for the Pivot pager.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -156,6 +160,7 @@ Contains the current page number in series axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -180,6 +185,7 @@ Contains the total page count in series axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -204,6 +210,7 @@ Contains the id of the target element for which paging is enabled.
 
 
 Default Value:
+{:.param}
 
 
 

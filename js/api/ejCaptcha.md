@@ -106,6 +106,7 @@ Specifies the character set of the Captcha that will be used to generate captcha
 
 
 Default Value:
+{:.param}
 
 
 
@@ -153,6 +154,7 @@ Specifies the error message to be displayed when the Captcha mismatch.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -200,6 +202,7 @@ Set the Captcha validation automatically.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -247,6 +250,7 @@ Specifies the case sensitivity for the characters typed in the Captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -294,6 +298,7 @@ Specifies the background patterns for the Captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -341,6 +346,7 @@ Sets the Captcha direction as right to left alignment.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -388,6 +394,7 @@ Specifies the background apperance for the captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -435,6 +442,7 @@ Specifies the height of the Captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -482,6 +490,7 @@ Specifies the method with values to be mapped in the Captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -529,6 +538,7 @@ Specifies the maximum number of characters used in the Captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -576,6 +586,7 @@ Specifies the minimum number of characters used in the Captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -623,6 +634,7 @@ Specifies the method to map values to Captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -670,6 +682,7 @@ Sets the Captcha with audio support, that enables to dictate the captcha text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -717,6 +730,7 @@ Sets the Captcha with a refresh button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -764,6 +778,7 @@ Specifies the target button of the Captcha to validate the entered text and capt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -812,6 +827,7 @@ Specifies the target input element that will verify the Captcha.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -859,6 +875,7 @@ Specifies the width of the Captcha.
 
 
 Default Value:
+{:.param}
 
 
 

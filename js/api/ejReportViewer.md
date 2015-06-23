@@ -149,6 +149,7 @@ Gets or sets the list of data sources for the RDLC report.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -200,6 +201,7 @@ Gets or sets the name of the data source.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -250,6 +252,7 @@ Gets or sets the values of data source.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -321,6 +324,7 @@ Specifies the excel export format.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -369,6 +373,7 @@ Specifies the export formats.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -417,6 +422,7 @@ Specifies the word export format.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -465,6 +471,7 @@ Specifies the locale for report viewer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -534,6 +541,7 @@ Specifies the print layout orientation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -582,6 +590,7 @@ Specifies the paper size of print layout.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -630,6 +639,7 @@ Gets or sets the list of parameters associated with the report.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -681,6 +691,7 @@ Gets or sets the parameter labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -731,6 +742,7 @@ Gets or sets the name of the parameter.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -781,6 +793,7 @@ Gets or sets whether the parameter allows nullable value or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -831,6 +844,7 @@ Gets or sets the prompt message associated with the specified parameter.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -881,6 +895,7 @@ Gets or sets the parameter values.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -931,6 +946,7 @@ Enables and disables the print mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -979,6 +995,7 @@ Specifies the processing mode of the report.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1024,6 +1041,7 @@ Specifies the render layout.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1069,6 +1087,7 @@ Gets or sets the path of the report file.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1113,6 +1132,7 @@ Gets or sets the reports server url.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1158,6 +1178,7 @@ Specifies the report Web API service url.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1223,6 +1244,7 @@ Fires when user click on toolbar item in the toolbar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1271,6 +1293,7 @@ Specifies the toolbar items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1319,6 +1342,7 @@ Shows or hides the toolbar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1367,6 +1391,7 @@ Shows or hides the tooltip of toolbar items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1415,6 +1440,7 @@ Specifies the toolbar template ID..
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1463,6 +1489,7 @@ Gets or sets the zoom factor for report viewer.
 
 
 Default Value:
+{:.param}
 
 
 

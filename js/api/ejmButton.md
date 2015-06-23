@@ -71,6 +71,7 @@ Specifies the style of the control in android mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -96,6 +97,7 @@ Specifies the type of the content. See <a href="global.html#ContentType">Content
 
 
 Default Value:
+{:.param}
 
 
 
@@ -121,6 +123,7 @@ Sets the root class for Button theme. This cssClass API helps to use custom skin
 
 
 Default Value:
+{:.param}
 
 
 
@@ -146,6 +149,7 @@ Specifies whether to enable or disable the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -171,6 +175,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -208,6 +213,7 @@ Specifies the style of the control in flat mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -232,6 +238,7 @@ Specifies the css class of image.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -257,6 +264,7 @@ Specifies the position of image. See <a href="global.html#ImagePosition">ImagePo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -282,6 +290,7 @@ Specifies the button is inline or not
 
 
 Default Value:
+{:.param}
 
 
 
@@ -319,6 +328,7 @@ Specifies the color of the control in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -343,6 +353,7 @@ Specifies the style of the control in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -367,6 +378,7 @@ Specifies the rendering mode of the control.See <a href="global.html#RenderMode"
 
 
 Default Value:
+{:.param}
 
 
 
@@ -392,6 +404,7 @@ Specifies the text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -417,6 +430,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -454,6 +468,7 @@ Specifies whether to render control based on the windowsphone's current accent c
 
 
 Default Value:
+{:.param}
 
 
 
@@ -478,6 +493,7 @@ Specifies the style of the control in windows mode.
 
 
 Default Value:
+{:.param}
 
 
 

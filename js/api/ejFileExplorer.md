@@ -177,6 +177,7 @@ Sets the Url of server side ajax handling method, which on going to handle file 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -235,6 +236,7 @@ Using ajaxSettings property, we can customize the ajax settings. Normally we can
 
 
 Default Value:
+{:.param}
 
 
 
@@ -293,6 +295,7 @@ Sets the root class for File explorer theme. This cssClass API helps to use cust
 
 
 Default Value:
+{:.param}
 
 
 
@@ -352,6 +355,7 @@ Enables/Disables the resize of file explorer, while window resizing
 
 
 Default Value:
+{:.param}
 
 
 
@@ -411,6 +415,7 @@ Enables/Disables the Right to Left alignment support in file explorer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -470,6 +475,7 @@ Allows specified type of files only to display in file explorer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -550,6 +556,7 @@ Gets or sets a value that indicates to perform the filter operation with case se
 
 
 Default Value:
+{:.param}
 
 
 
@@ -609,6 +616,7 @@ Sets the search filter type. There are several filter types are available such a
 
 
 Default Value:
+{:.param}
 
 
 
@@ -689,6 +697,7 @@ Gets or sets a value that indicates whether to enable dynamic searching behavior
 
 
 Default Value:
+{:.param}
 
 
 
@@ -748,6 +757,7 @@ Gets or sets a value that indicates whether to enable the dynamic sorting behavi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -807,6 +817,7 @@ Gets or sets an object that indicates to render the grid with specified columns,
 
 
 Default Value:
+{:.param}
 
 
 
@@ -866,6 +877,7 @@ Specifies the height of file explorer control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -925,6 +937,7 @@ Enables/Disables the responsive support for FileExplorer control during the wind
 
 
 Default Value:
+{:.param}
 
 
 
@@ -984,6 +997,7 @@ Sets the file view type. There are two view types are available such as &#65533;
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1043,6 +1057,7 @@ Sets the culture in FileExplorer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1102,6 +1117,7 @@ Specifies the folder path to display in file Explorer,specified path will be con
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1161,6 +1177,7 @@ Enables/Disable the context menu option in file explorer control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1220,6 +1237,7 @@ Enables/Disable the file insert option in file explorer control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1279,6 +1297,7 @@ Enables/Disable the file view in file explorer control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1338,6 +1357,7 @@ Shows/Disable the toolbar in file explorer control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1397,6 +1417,7 @@ Enables/Disable the tree view in file explorer control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1456,6 +1477,7 @@ Sets the tools in File Explorer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1523,6 +1545,7 @@ Sets the toolsList in File Explorer. It mapped with tool types, which is availab
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1603,6 +1626,7 @@ Specifies the file size in bytes for uploading the file. This could be mentioned
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1662,6 +1686,7 @@ Enables/Disables the Multiple file selection, while uploading files in FileExplo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1721,6 +1746,7 @@ Specifies the width of file explorer control
 
 
 Default Value:
+{:.param}
 
 
 

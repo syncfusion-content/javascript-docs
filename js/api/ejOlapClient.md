@@ -147,6 +147,7 @@ Sets the type for OLAP Chart component inside OLAP Client.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -199,6 +200,7 @@ Sets the CSS name for custom operation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -251,6 +253,7 @@ Custom object to pass additional information between client-end and service-end.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -303,6 +306,7 @@ Allows the user to customize the control layout and appearance.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -355,6 +359,7 @@ Lets the user to customize the display of OLAP Chart and OLAP Grid controls insi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -407,6 +412,7 @@ Lets the user to set Chart or Grid tab as default.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -459,6 +465,7 @@ Enables/ disables the full screen view of the OLAP components(OLAP Chart, OLAP G
 
 
 Default Value:
+{:.param}
 
 
 
@@ -511,6 +518,7 @@ Sets the Toggle Panel visibility mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -563,6 +571,7 @@ Sets the display mode (Only Chart/Only Grid/Both Chart And Grid) of OLAP Client.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -615,6 +624,7 @@ Enables/ disables the visibility of measure group selector drop down in Cube bro
 
 
 Default Value:
+{:.param}
 
 
 
@@ -667,6 +677,7 @@ Sets the layout for OLAP Grid component inside OLAP Client.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -719,6 +730,7 @@ Allows the user to enable Responsive layout support.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -771,6 +783,7 @@ Sets the localized language for the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -823,6 +836,7 @@ Allows the user to set custom name for the methods at service-end invoked on AJA
 
 
 Default Value:
+{:.param}
 
 
 
@@ -875,6 +889,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -927,6 +942,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -979,6 +995,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1031,6 +1048,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1083,6 +1101,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1135,6 +1154,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1187,6 +1207,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1239,6 +1260,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1291,6 +1313,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1343,6 +1366,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1395,6 +1419,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1447,6 +1472,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1499,6 +1525,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1551,6 +1578,7 @@ Sets the title for OLAP Client.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1603,6 +1631,7 @@ Connects the service using the specified URL for any server updates.
 
 
 Default Value:
+{:.param}
 
 
 

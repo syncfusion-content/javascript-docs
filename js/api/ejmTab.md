@@ -146,6 +146,7 @@ Specifies the tab ajaxOptions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -221,6 +222,7 @@ Specifies the tab ajaxOptions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -296,6 +298,7 @@ Specifies the tab ajaxOptions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -371,6 +374,7 @@ Specifies the tab ajaxOptions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -446,6 +450,7 @@ Specifies the tab ajaxOptions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -521,6 +526,7 @@ Specifies the tab ajaxOptions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -595,6 +601,7 @@ Specifies the tab ajaxOptions.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -670,6 +677,7 @@ Specifies whether enable tab content's scrolling or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -789,6 +797,7 @@ Specifies android tab content type tab content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -887,6 +896,7 @@ Specifies class name for image to display in android mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -948,6 +958,7 @@ Specifies whether to position the tabs in fixed or relative position in the page
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1067,6 +1078,7 @@ Specifies whether to enable Badge or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1165,6 +1177,7 @@ Specifies the maximum value allowed for a badge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1263,6 +1276,7 @@ Specifies the minimum value allowed for a badge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1361,6 +1375,7 @@ Specifies the badge Value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1458,6 +1473,7 @@ Sets the root class for Tab theme. This cssClass API helps to use custom skinnin
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1544,6 +1560,7 @@ Specifies whether Ajax content will be used to load the tab contents.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1627,6 +1644,7 @@ Specifies whether to enable Caching or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1713,6 +1731,7 @@ Specifies whether enable native scrolling or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1811,6 +1830,7 @@ Saves current model value to browser cookies for state maintains. While refreshi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1929,6 +1949,7 @@ Specifies whether to position the tabs in fixed or relative position in the page
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2048,6 +2069,7 @@ Specifies the class for image to display in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2130,6 +2152,7 @@ Specifies whether to enable badge for overflow tab or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2228,6 +2251,7 @@ Specifies the maximum value for overflow batch in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2326,6 +2350,7 @@ Specifies the minimum value for overflow batch in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2424,6 +2449,7 @@ Specifies the value for overflow badge in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2522,6 +2548,7 @@ Specifies whether need to prefetch the ajax content or not
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2608,6 +2635,7 @@ Changes the rendering mode. See <a href="global.html#RenderMode">RenderMode</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2705,6 +2733,7 @@ Specifies the Item Index which is selected.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2802,6 +2831,7 @@ Specifies whether show waiting popup in Ajax content loading or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2888,6 +2918,7 @@ Specifies whether show the scrollbars or not
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2986,6 +3017,7 @@ Changes the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3106,6 +3138,7 @@ Specifies whether to enable custom text for windows mode or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3204,6 +3237,7 @@ Specifies whether enable to move the content while swipe move.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3302,6 +3336,7 @@ Specifies whether to position the tabs in fixed or relative position in the page
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3400,6 +3435,7 @@ Specifies whether to prevent swiping geture or not in windows mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3498,6 +3534,7 @@ Specifies whether to render based on the windowsphone's current accent color and
 
 
 Default Value:
+{:.param}
 
 
 

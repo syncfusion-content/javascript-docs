@@ -97,6 +97,7 @@ Specify the CSS class to button to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -144,6 +145,7 @@ The dataSource contains the list of data to display in a cloud format. Each data
 
 
 Default Value:
+{:.param}
 
 
 
@@ -191,6 +193,7 @@ Sets the TagCloud and tag items direction as right to left alignment.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -238,6 +241,7 @@ Defines the mapping fields for the data items of the TagCloud.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -375,6 +379,7 @@ Defines the format for the TagCloud to display the tag items.See <a href="global
 
 
 Default Value:
+{:.param}
 
 
 
@@ -422,6 +427,7 @@ Sets the maximum font size value for the tag items. The font size for the tag it
 
 
 Default Value:
+{:.param}
 
 
 
@@ -469,6 +475,7 @@ Sets the minimum font size value for the tag items. The font size for the tag it
 
 
 Default Value:
+{:.param}
 
 
 
@@ -516,6 +523,7 @@ Define the query to retrieve the data from online server. The query is used only
 
 
 Default Value:
+{:.param}
 
 
 
@@ -572,6 +580,7 @@ Shows or hides the TagCloud title. When this set to false, it hides the TagCloud
 
 
 Default Value:
+{:.param}
 
 
 
@@ -619,6 +628,7 @@ Sets the title image for the TagCloud. To show the title image, the showTitle pr
 
 
 Default Value:
+{:.param}
 
 
 
@@ -666,6 +676,7 @@ Sets the title text for the TagCloud. To show the title text, the showTitle prop
 
 
 Default Value:
+{:.param}
 
 
 

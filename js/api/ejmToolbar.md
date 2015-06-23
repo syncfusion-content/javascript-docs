@@ -75,6 +75,7 @@ Specifies the android mode split View mode is enabled or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -97,6 +98,7 @@ Specifies the android mode position.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -119,6 +121,7 @@ Specifies the android mode Back icon is shown or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -141,6 +144,7 @@ Specifies the android mode Ellipsis icon is shown or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -163,6 +167,7 @@ Specifies the android mode Title Icon will be shown or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -185,6 +190,7 @@ Specifies the android mode toolbar's title.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -207,6 +213,7 @@ Specifies the android mode title icon path or location.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -229,6 +236,7 @@ Sets the root class for Toolbar theme. This cssClass API helps to use custom ski
 
 
 Default Value:
+{:.param}
 
 
 
@@ -251,6 +259,7 @@ Specifies whether the control is enabled or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -273,6 +282,7 @@ Current model value to browser cookies for state maintains. While refresh the He
 
 
 Default Value:
+{:.param}
 
 
 
@@ -307,6 +317,7 @@ Specifies the flat mode position.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -329,6 +340,7 @@ Specifies whether the control is in hidden state or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -363,6 +375,7 @@ Specifies the ios7 mode position.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -385,6 +398,7 @@ Specifies position whether it is in fixed or relative to the page. See <a href="
 
 
 Default Value:
+{:.param}
 
 
 
@@ -407,6 +421,7 @@ Changes the rendering mode. See <a href="global.html#RenderMode">RenderMode</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -429,6 +444,7 @@ Specifies the Toolbar template Id.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -451,6 +467,7 @@ Changes the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -485,6 +502,7 @@ Specifies the Windows mode position.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -507,6 +525,7 @@ Specifies whether to render the toolbar based on the windowsphone's current acce
 
 
 Default Value:
+{:.param}
 
 
 

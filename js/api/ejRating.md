@@ -55,6 +55,7 @@ Enables the rating control with reset button.It can be used to reset the rating 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -78,6 +79,7 @@ Specify the CSS class to rating to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -101,6 +103,7 @@ When this property is set to false, it disables the rating control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -124,6 +127,7 @@ Save current model value to browser cookies for state maintanence. While refresh
 
 
 Default Value:
+{:.param}
 
 
 
@@ -147,6 +151,7 @@ Specifies the height of the Rating control wrapper.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -170,6 +175,7 @@ Specifies the value to be increased while navigating between shapes(stars) in Ra
 
 
 Default Value:
+{:.param}
 
 
 
@@ -193,6 +199,7 @@ Allow to render the maximum number of Rating shape(star).
 
 
 Default Value:
+{:.param}
 
 
 
@@ -216,6 +223,7 @@ Allow to render the minimum number of Rating shape(star).
 
 
 Default Value:
+{:.param}
 
 
 
@@ -239,6 +247,7 @@ Specifies the orientation of Rating control. See <a href="global.html#Orientatio
 
 
 Default Value:
+{:.param}
 
 
 
@@ -262,6 +271,7 @@ Helps to provide more precise ratings.Rating control supports three precision mo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -285,6 +295,7 @@ Interaction with Rating control can be prevented by enabling this API.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -308,6 +319,7 @@ To specify the height of each shape in Rating control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -331,6 +343,7 @@ To specify the width of each shape in Rating control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -354,6 +367,7 @@ Enables the tooltip option.Currently selected value value will be displayed in t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -377,6 +391,7 @@ To specify the number of stars to be selected while rendering.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -400,6 +415,7 @@ Specifies the width of the Rating control wrapper.
 
 
 Default Value:
+{:.param}
 
 
 

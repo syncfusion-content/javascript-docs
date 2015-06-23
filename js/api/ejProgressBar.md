@@ -87,6 +87,7 @@ Sets the root class for ProgressBar theme. This cssClass API helps to use custom
 
 
 Default Value:
+{:.param}
 
 
 
@@ -133,6 +134,7 @@ When this property sets to false, it disables the ProgressBar control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -178,6 +180,7 @@ Save current model value to browser cookies for state maintains. While refresh t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -224,6 +227,7 @@ Sets the ProgressBar direction as right to left alignment.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -269,6 +273,7 @@ Defines the height of the ProgressBar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -315,6 +320,7 @@ Sets the maximum value of the ProgressBar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -361,6 +367,7 @@ Sets the minimum value of the ProgressBar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -406,6 +413,7 @@ Sets the ProgressBar value in percentage. The value should be in between 0 to 10
 
 
 Default Value:
+{:.param}
 
 
 
@@ -451,6 +459,7 @@ Sets the custom text for the ProgressBar. The text placed in the middle of the P
 
 
 Default Value:
+{:.param}
 
 
 
@@ -497,6 +506,7 @@ Sets the ProgressBar value. The value should be in between min and max values.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -542,6 +552,7 @@ Defines the width of the ProgressBar.
 
 
 Default Value:
+{:.param}
 
 
 

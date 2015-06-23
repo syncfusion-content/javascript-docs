@@ -99,6 +99,7 @@ Specifies the background color for map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -150,6 +151,7 @@ Specifies the base map-index of the map to determine the shapelayer to be displa
 
 
 Default Value:
+{:.param}
 
 
 
@@ -201,6 +203,7 @@ Specify the center position where map should be displayed
 
 
 Default Value:
+{:.param}
 
 
 
@@ -252,6 +255,7 @@ Enables or Disables the map animation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -304,6 +308,7 @@ Enables or Disables the animation for layer change in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -356,6 +361,7 @@ Enables or Disables the map panning
 
 
 Default Value:
+{:.param}
 
 
 
@@ -408,6 +414,7 @@ Determines whether map need to resize when container is resized
 
 
 Default Value:
+{:.param}
 
 
 
@@ -460,6 +467,7 @@ Enables or Disables the zooming of map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -512,6 +520,7 @@ Enables or Disables the zoom on selecting the map shape
 
 
 Default Value:
+{:.param}
 
 
 
@@ -564,6 +573,7 @@ Specifies the zoom factor for map zoom value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -615,6 +625,7 @@ Hold the shapelayers to be displayed in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -666,6 +677,7 @@ Specifies the zoom level value for which map to be zoomed
 
 
 Default Value:
+{:.param}
 
 
 
@@ -717,6 +729,7 @@ Specifies the maximum zoom level of the map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -768,6 +781,7 @@ Specifies the minimum zoomSettings level of the map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -819,6 +833,7 @@ Set the absolutePosition for navigation control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -870,6 +885,7 @@ Specifies the navigation control template for map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -920,6 +936,7 @@ Set the dockPosition value for navigation control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -971,6 +988,7 @@ Enables or Disables the Navigation for handling zooming map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1022,6 +1040,7 @@ Set the orientation value for navigation control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1115,6 +1134,7 @@ to get the type of bing map.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1202,6 +1222,7 @@ Specifies the bubble Opacity value of bubbles for shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1254,6 +1275,7 @@ Specifies the mouse hover color of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1306,6 +1328,7 @@ Specifies the colorMappings of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1358,6 +1381,7 @@ Specifies the bubble color valuePath of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1410,6 +1434,7 @@ Specifies the maximum size value of bubbles for shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1462,6 +1487,7 @@ Specifies the minimum size value of bubbles for shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1514,6 +1540,7 @@ Specifies the showBubble visibility status map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1566,6 +1593,7 @@ Specifies the tooltip visibility status of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1618,6 +1646,7 @@ Specifies the bubble tooltip template of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1670,6 +1699,7 @@ Specifies the bubble valuePath of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1757,6 +1787,7 @@ Enables or disables the animation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1808,6 +1839,7 @@ Enables or disables the shape mouse hover
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1859,6 +1891,7 @@ Enables or disables the shape selection
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1910,6 +1943,7 @@ to get the key of bing map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1982,6 +2016,7 @@ enable or disable the enableSmartLabel property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2032,6 +2067,7 @@ set the labelLength property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2082,6 +2118,7 @@ set the labelPath property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2132,6 +2169,7 @@ enable or disable the showlabel property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2182,6 +2220,7 @@ set the smartLabelSize property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2232,6 +2271,7 @@ Specifies the map type.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2304,6 +2344,7 @@ Determines whether the legend should be placed outside or inside the map bounds
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2355,6 +2396,7 @@ Determines the legend placement and it is valid only when dockOnMap is true
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2406,6 +2448,7 @@ height value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2457,6 +2500,7 @@ to get icon value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2508,6 +2552,7 @@ icon height value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2559,6 +2604,7 @@ icon Width value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2610,6 +2656,7 @@ set the orientation of legend labels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2661,6 +2708,7 @@ to get leftLabel value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2712,6 +2760,7 @@ to get mode of legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2763,6 +2812,7 @@ set the position of legend settings
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2814,6 +2864,7 @@ x position value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2865,6 +2916,7 @@ y position value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2916,6 +2968,7 @@ to get rightLabel value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2967,6 +3020,7 @@ Enables or Disables the showLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3018,6 +3072,7 @@ Enables or Disables the showLegend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3069,6 +3124,7 @@ to get title of legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3120,6 +3176,7 @@ to get type of legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3171,6 +3228,7 @@ width value for legend setting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3257,6 +3315,7 @@ Specify markers for shape layer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3308,6 +3367,7 @@ Specifies the map marker template for map layer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3358,6 +3418,7 @@ Specify selectedMapShapes for shape layer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3401,6 +3462,7 @@ Specifies the selection mode of the map. Accepted selection mode values are Defa
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3522,6 +3584,7 @@ Enables or Disables the auto fill colors for shape layer in map. When this prope
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3574,6 +3637,7 @@ Specifies the colorMappings of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3626,6 +3690,7 @@ Specifies the shape color palette value of the shape layer in map. Accepted colo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3678,6 +3743,7 @@ Specifies the shape color valuePath of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3730,6 +3796,7 @@ Enables or Disables the gradient colors for map shapes.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3782,6 +3849,7 @@ Specifies the shape fill color of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3834,6 +3902,7 @@ Specifies the mouse over width of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3886,6 +3955,7 @@ Specifies the mouse hover color of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3938,6 +4008,7 @@ Specifies the mouse over stroke color of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3990,6 +4061,7 @@ Specifies the shape selection color of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4042,6 +4114,7 @@ Specifies the shape selection stroke color of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4094,6 +4167,7 @@ Specifies the shape selection stroke width of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4146,6 +4220,7 @@ Specifies the shape stroke color of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4198,6 +4273,7 @@ Specifies the shape stroke thickness value of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4250,6 +4326,7 @@ Specifies the shape valuePath of the shape layer in map
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4302,6 +4379,7 @@ Shows or hides the map items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4353,6 +4431,7 @@ Shows or hides the tooltip for shapes
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4404,6 +4483,7 @@ Specifies the sub shape layers
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4490,6 +4570,7 @@ Specifies the url template for the OSM type map.
 
 
 Default Value:
+{:.param}
 
 
 

@@ -104,6 +104,7 @@ Specifies whether to check the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -165,6 +166,7 @@ Specifies the check CheckState of the control. See <a href="global.html#CheckSta
 
 
 Default Value:
+{:.param}
 
 
 
@@ -226,6 +228,7 @@ Sets the root class for checkbox theme. This cssClass API helps to use custom sk
 
 
 Default Value:
+{:.param}
 
 
 
@@ -286,6 +289,7 @@ Specifies whether to enable or disable the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -347,6 +351,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -407,6 +412,7 @@ Specifies whether to render the control with tri state behavior.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -468,6 +474,7 @@ Specifies whether to prevent default actions in the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -529,6 +536,7 @@ Specifies the rendering mode of the control.See <a href="global.html#RenderMode"
 
 
 Default Value:
+{:.param}
 
 
 
@@ -589,6 +597,7 @@ Specifies the text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -649,6 +658,7 @@ Specifies the theme.See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -731,6 +741,7 @@ Specifies whether to render control based on the windowsphone's current accent c
 
 
 Default Value:
+{:.param}
 
 
 

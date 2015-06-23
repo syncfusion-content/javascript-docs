@@ -166,6 +166,7 @@ Sets the root class for GroupButton theme. This cssClass API helps to use custom
 
 
 Default Value:
+{:.param}
 
 
 
@@ -241,6 +242,7 @@ Current model value to browser cookies for state maintenance. While refreshing t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -316,6 +318,7 @@ Specifies the groupbutton imageclass.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -366,6 +369,7 @@ Specifies the groupbutton imageurl.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -416,6 +420,7 @@ Specifies the groupbutton items in angular JS.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -463,6 +468,7 @@ Changes the rendering mode of the groupbutton. See <a href="global.html#RenderMo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -540,6 +546,7 @@ Specifies the item which one is to be selected initially.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -607,6 +614,7 @@ Changes the theme of the groupbutton. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -705,6 +713,7 @@ Specifies whether to render the groupbutton based on the windowsphone's current 
 
 
 Default Value:
+{:.param}
 
 
 

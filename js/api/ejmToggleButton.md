@@ -103,6 +103,7 @@ Specifies the transition effect for state change.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -166,6 +167,7 @@ Sets the root class for ToggleButton theme. This cssClass API helps to use custo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -229,6 +231,7 @@ Specifies whether to enable or disable the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -292,6 +295,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -355,6 +359,7 @@ Specifies the rendering mode of the control. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -420,6 +425,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -485,6 +491,7 @@ Specifies whether state is on or off.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -569,6 +576,7 @@ Specifies whether to render control based on the windowsphone's current accent c
 
 
 Default Value:
+{:.param}
 
 
 

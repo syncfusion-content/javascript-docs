@@ -84,6 +84,7 @@ Specifies the distance between the bar and text in the Barcode. Applicable only 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -135,6 +136,7 @@ Specifies the height of bars in the Barcode. Applicable only for One dimensional
 
 
 Default Value:
+{:.param}
 
 
 
@@ -186,6 +188,7 @@ Specifies the dark bar color of the Barcode. Applicable only for One dimensional
 
 
 Default Value:
+{:.param}
 
 
 
@@ -237,6 +240,7 @@ Specifies whether to display original text. Applicable only for One dimensional 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -288,6 +292,7 @@ Specifies whether the control is enabled.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -339,6 +344,7 @@ Specifies whether to encode start and stop symbol in the Barcode. Applicable onl
 
 
 Default Value:
+{:.param}
 
 
 
@@ -390,6 +396,7 @@ Specifies the light bar color of the Barcode. Applicable only for One dimensiona
 
 
 Default Value:
+{:.param}
 
 
 
@@ -441,6 +448,7 @@ Specifies the width of narrow bar in the Barcode. Applicable only for One dimens
 
 
 Default Value:
+{:.param}
 
 
 
@@ -513,6 +521,7 @@ Specifies the quiet zone around the Barcode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -565,6 +574,7 @@ Specifies the bottom quiet zone of the Barcode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -617,6 +627,7 @@ Specifies the left quiet zone of the Barcode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -669,6 +680,7 @@ Specifies the right quiet zone of the Barcode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -721,6 +733,7 @@ Specifies the top quiet zone of the Barcode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -773,6 +786,7 @@ Specifies the symbology type of the Barcode. See <a href="global.html#SymbologyT
 
 
 Default Value:
+{:.param}
 
 
 
@@ -825,6 +839,7 @@ Specifies the text to encode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -876,6 +891,7 @@ Specifies the display text color of the Barcode. Applicable only for One dimensi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -927,6 +943,7 @@ Specifies the width of wide bar in the Barcode. Applicable only for One dimensio
 
 
 Default Value:
+{:.param}
 
 
 
@@ -978,6 +995,7 @@ Specifies the size of each block in the Barcode. Applicable only for Two dimensi
 
 
 Default Value:
+{:.param}
 
 
 

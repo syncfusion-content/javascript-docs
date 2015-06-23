@@ -116,6 +116,7 @@ Specifies whether to enable badge or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -172,6 +173,7 @@ Specifies maximum value for tile badge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -228,6 +230,7 @@ Specifies minimum value for tile badge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -284,6 +287,7 @@ Specifies text instead of number for tile badge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -340,6 +344,7 @@ Sets value for tile badge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -396,6 +401,7 @@ Specifies the tile caption in outside template content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -454,6 +460,7 @@ Sets the root class for Tile theme. This cssClass API helps to use custom skinni
 
 
 Default Value:
+{:.param}
 
 
 
@@ -510,6 +517,7 @@ Saves current model value to browser cookies for state maintains. While refreshi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -566,6 +574,7 @@ Customize the tile size height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -622,6 +631,7 @@ Specifies Tile imageclass, using this property we can give images for each tile 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -684,6 +694,7 @@ Specifies the position of tile image.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -740,6 +751,7 @@ Specifies the tile image in outside template content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -798,6 +810,7 @@ Specifies the file name of tile image.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -875,6 +888,7 @@ Specifies whether to enable livetile or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -931,6 +945,7 @@ Specifies liveTile images in css classes.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1001,6 +1016,7 @@ Specifies liveTile images in templates.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1063,6 +1079,7 @@ Specifies liveTile images in css classes.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1119,6 +1136,7 @@ Specifies liveTile type for Tile. i.e flip, slide or carousel
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1175,6 +1193,7 @@ Specifies time interval between two successive livetile animation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1231,6 +1250,7 @@ Specifies whether the tile text to be shown or hidden.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1287,6 +1307,7 @@ Changes the text of a tile.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1343,6 +1364,7 @@ Aligns the text of a tile. i.e left, right or center.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1399,6 +1421,7 @@ Specifies the size of a tile. i.e small, medium, large or wide.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1455,6 +1478,7 @@ Customize the tile size width.
 
 
 Default Value:
+{:.param}
 
 
 

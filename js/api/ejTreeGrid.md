@@ -93,6 +93,7 @@ Enables or disables the ability to resize column.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -138,6 +139,7 @@ To enable drag and drop the records.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -184,6 +186,7 @@ Enables or disables Filtering fields column wise.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -230,6 +233,7 @@ Enables or Disables Keyboard navigation in treegrid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -275,6 +279,7 @@ Specifies enabling or disabling multiple sorting for tree grid columns
 
 
 Default Value:
+{:.param}
 
 
 
@@ -320,6 +325,7 @@ Enables or disables the interactive selection of a row.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -365,6 +371,7 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 
 
 Default Value:
+{:.param}
 
 
 
@@ -411,6 +418,7 @@ Specifies the alternate row template for each alternate TreeGrid row
 
 
 Default Value:
+{:.param}
 
 
 
@@ -494,6 +502,7 @@ Enables or disables Filtering field for particular column.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -540,6 +549,7 @@ Enables or disables sorting for a particular column.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -586,6 +596,7 @@ Specify edit type of the column.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -631,6 +642,7 @@ Specify column field value from the data source.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -676,6 +688,7 @@ Specify filter edit type of the column.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -721,6 +734,7 @@ Specify column Header Text value to be displayed in each column.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -766,6 +780,7 @@ Specify column field visiblity.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -832,6 +847,7 @@ Specifies the list of context menu items to rendered in context menu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -877,6 +893,7 @@ Specifies the state of enabling or disabling context menu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -922,6 +939,7 @@ Specify the CSS class to achieve tree grid custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -967,6 +985,7 @@ Collection of data or hierarchical data to represent in TreeGrid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1036,6 +1055,7 @@ Specifies whether to show tooltip while draggging a row
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1081,6 +1101,7 @@ Specifies the list of tooltip items to rendered in tooltip
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1126,6 +1147,7 @@ Specifies the template for tooltip on mouseaction on row drag and drop
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1192,6 +1214,7 @@ Enables or Disables add row icon in treegrid toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1237,6 +1260,7 @@ Enables or disables delete row icon in toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1282,6 +1306,7 @@ Specifies the option for enabling / disablig editing in treegrid part
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1327,6 +1352,7 @@ specifies the editmode in treegrid , "cellEditing" is for cell type editing and 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1372,6 +1398,7 @@ Specifies the position where have to add new row.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1417,6 +1444,7 @@ Enables or Disables enableAltRow row effect in TreeGrid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1462,6 +1490,7 @@ Enables or disables the collapse all menus for tree grid , when enabled all sub 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1510,6 +1539,7 @@ Specify the enableResize to tree grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1555,6 +1585,7 @@ Enables or Disables virtualization for rendering TreeGrid items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1600,6 +1631,7 @@ To change filterBarMode either immediate or onEnter.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1646,6 +1678,7 @@ Specifies the mapping property path for child Id in self reference datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1691,6 +1724,7 @@ Specifies the mapping property path for parent Id in self reference datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1736,6 +1770,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1783,6 +1818,7 @@ Specifies the height of a single row in treegrid. Also, we need to set same heig
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1830,6 +1866,7 @@ Specifies the row template for each TreeGrid row
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1878,6 +1915,7 @@ Specifies the selected row index.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1923,6 +1961,7 @@ Specifies the selected row Index in Treegrid , the row with given index is highl
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1971,6 +2010,7 @@ Specifes the single or multiple row selection
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2016,6 +2056,7 @@ Enables or disables the column chooser.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2061,6 +2102,7 @@ Specifies whether to show grid cell tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2107,6 +2149,7 @@ Specifies whether to show grid cell tooltip over expander cell alone.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2174,6 +2217,7 @@ Specify the height to tree grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2219,6 +2263,7 @@ Specify the width to tree grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2285,6 +2330,7 @@ Specifes the sorted columns for Tree grid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2351,6 +2397,7 @@ Specifies the state of enabling or disabling toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2396,6 +2443,7 @@ Specifies the list of toolbar items to rendered in toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2441,6 +2489,7 @@ Specifies the tree expander column index in tree grid
 
 
 Default Value:
+{:.param}
 
 
 

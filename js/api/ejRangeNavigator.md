@@ -117,6 +117,7 @@ Toggles the placement of slider exactly on the place it left or on the nearest i
 
 
 Default Value:
+{:.param}
 
 
 
@@ -194,6 +195,7 @@ Sets a value whether to make the range navigator responsive on resize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -241,6 +243,7 @@ Toggles the redrawing of chart on moving the sliders.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -288,6 +291,7 @@ Toggles the direction of rendering the range navigator control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -398,6 +402,7 @@ Specifies the border color of grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -445,6 +450,7 @@ Specifies the border width of grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -492,6 +498,7 @@ Specifies the fill color of higher level labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -560,6 +567,7 @@ Specifies the color of grid lines in higher level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -606,6 +614,7 @@ Specifies the dashArray of grid lines in higher level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -653,6 +662,7 @@ Specifies the width of grid lines in higher level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -700,6 +710,7 @@ Specifies the intervalType for higher level labels. See <a href="global.html#Int
 
 
 Default Value:
+{:.param}
 
 
 
@@ -747,6 +758,7 @@ Specifies the position of the labels to render either inside or outside of plot 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -794,6 +806,7 @@ Specifies the position of the labels in higher level.See <a href="global.html#Po
 
 
 Default Value:
+{:.param}
 
 
 
@@ -883,6 +896,7 @@ Specifies the label font color. Labels render with the specified font color.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -930,6 +944,7 @@ Specifies the label font family. Labels render with the specified font family.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -977,6 +992,7 @@ Specifies the label font style. Labels render with the specified font style.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1024,6 +1040,7 @@ Specifies the label font weight. Labels render with the specified font weight.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1071,6 +1088,7 @@ Specifies the label opacity. Labels render with the specified opacity.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1118,6 +1136,7 @@ Specifies the label font size. Labels render with the specified font size.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1165,6 +1184,7 @@ Specifies the horizontal text alignment of the text in label.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1212,6 +1232,7 @@ Toggles the visibility of higher level labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1301,6 +1322,7 @@ Specifies the border color of grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1348,6 +1370,7 @@ Specifies the border width of grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1395,6 +1418,7 @@ Specifies the fill color of labels in lower level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1463,6 +1487,7 @@ Specifies the color of grid lines in lower level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1510,6 +1535,7 @@ Specifies the dashArray of gridLines in lowerLevel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1557,6 +1583,7 @@ Specifies the width of grid lines in lower level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1604,6 +1631,7 @@ Specifies the intervalType of the labels in lower level.See <a href="global.html
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1651,6 +1679,7 @@ Specifies the position of the labels to render either inside or outside of plot 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1698,6 +1727,7 @@ Specifies the position of the labels in lower level.See <a href="global.html#Pos
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1787,6 +1817,7 @@ Specifies the color of labels. Label text render in this specified color.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1834,6 +1865,7 @@ Specifies the font family of labels. Label text render in this specified font fa
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1881,6 +1913,7 @@ Specifies the font style of labels. Label text render in this specified font sty
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1928,6 +1961,7 @@ Specifies the font weight of labels. Label text render in this specified font we
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1975,6 +2009,7 @@ Specifies the opacity of labels. Label text render in this specified opacity.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2022,6 +2057,7 @@ Specifies the size of labels. Label text render in this specified size.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2069,6 +2105,7 @@ Specifies the horizontal text alignment of the text in label.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2116,6 +2153,7 @@ Toggles the visibility of labels in lower level.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2205,6 +2243,7 @@ Specifies the label color. This color is applied to the labels in range navigato
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2252,6 +2291,7 @@ Specifies the label font family. Labels render with the specified font family.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2299,6 +2339,7 @@ Specifies the label font opacity. Labels render with the specified font opacity.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2346,6 +2387,7 @@ Specifies the label font size. Labels render with the specified font size.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2393,6 +2435,7 @@ Specifies the label font style. Labels render with the specified font style..See
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2440,6 +2483,7 @@ Specifies the label font weight. Labels render with the specified font weight. S
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2487,6 +2531,7 @@ Specifies the horizontalAlignment of the label in RangeNavigator. See <a href="g
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2534,6 +2579,7 @@ This property is to specify the localization of range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2602,6 +2648,7 @@ Specifies the background color of RangeNavigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2670,6 +2717,7 @@ Specifies the border color of range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2717,6 +2765,7 @@ Specifies the dash array of range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2764,6 +2813,7 @@ Specifies the border width of range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2811,6 +2861,7 @@ Specifies the left side thumb template in range navigator we can give either div
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2879,6 +2930,7 @@ Specifies the color of major grid lines in RangeNavigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2926,6 +2978,7 @@ Toggles the visibility of major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2994,6 +3047,7 @@ Specifies the color of minor grid lines in RangeNavigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3040,6 +3094,7 @@ Toggles the visibility of minor grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3087,6 +3142,7 @@ Specifies the opacity of RangeNavigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3134,6 +3190,7 @@ Specifies the right side thumb template in range navigator we can give either di
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3181,6 +3238,7 @@ Specifies the color of the selected region in range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3228,6 +3286,7 @@ Specifies the opacity of Selected Region.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3275,6 +3334,7 @@ Specifies the color of the thumb in range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3322,6 +3382,7 @@ Specifies the radius of the thumb in range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3369,6 +3430,7 @@ Specifies the stroke color of the thumb in range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3416,6 +3478,7 @@ Specifies the color of the unselected region in range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3463,6 +3526,7 @@ Specifies the opacity of Unselected Region.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3510,6 +3574,7 @@ Padding specifies the gap between the container and the range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3557,6 +3622,7 @@ If the range is not given explicitly, range will be calculated automatically. Yo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3625,6 +3691,7 @@ Specifies the ending range of range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3672,6 +3739,7 @@ Specifies the starting range of range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3760,6 +3828,7 @@ Specifies the ending range of range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3807,6 +3876,7 @@ Specifies the starting range of range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3875,6 +3945,7 @@ Specifies height of the range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3922,6 +3993,7 @@ Specifies width of the range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3969,6 +4041,7 @@ By specifying this property the user can change the theme of the range navigator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4044,6 +4117,7 @@ Specifies the background color of tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4112,6 +4186,7 @@ Specifies the color of text in tooltip. Tooltip text render in the specified col
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4159,6 +4234,7 @@ Specifies the font family of text in tooltip. Tooltip text render in the specifi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4206,6 +4282,7 @@ Specifies the font style of text in tooltip. Tooltip text render in the specifie
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4253,6 +4330,7 @@ Specifies the opacity of text in tooltip. Tooltip text render in the specified o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4300,6 +4378,7 @@ Specifies the size of text in tooltip. Tooltip text render in the specified size
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4347,6 +4426,7 @@ Specifies the weight of text in tooltip. Tooltip text render in the specified we
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4394,6 +4474,7 @@ Specifies the format of text to be displayed in tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4441,6 +4522,7 @@ Specifies the mode of displaying the tooltip. Neither to display the tooltip alw
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4488,6 +4570,7 @@ Toggles the visibility of tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4577,6 +4660,7 @@ Toggles the visibility of axis line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4645,6 +4729,7 @@ Text in axis render with the specified size.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4713,6 +4798,7 @@ Toggles the visibility of major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4781,6 +4867,7 @@ Specifies the size of the majorTickLines in RangeNavigator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4828,6 +4915,7 @@ Toggles the visibility of major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4875,6 +4963,7 @@ Specifies width of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4922,6 +5011,7 @@ If the range is not given explicitly, range will be calculated automatically. Yo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4969,6 +5059,7 @@ Toggles the visibility of axis in range navigator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5016,6 +5107,7 @@ You can plot data of type date time or numeric. This property determines the typ
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5127,6 +5219,7 @@ This property determines the factor by which the axis is scaled. Value must be s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5174,6 +5267,7 @@ This property determines the starting position of the zoomed axis. Value must be
 
 
 Default Value:
+{:.param}
 
 
 

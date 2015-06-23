@@ -154,6 +154,7 @@ Gets or sets a value that indicates whether to customizing cell based on our nee
 
 
 Default Value:
+{:.param}
 
 
 
@@ -201,6 +202,7 @@ Gets or sets a value that indicates whether to enable dynamic grouping behavior.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -249,6 +251,7 @@ Gets or sets a value that indicates whether to enable keyboard support for perfo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -297,6 +300,7 @@ Gets or sets a value that indicates whether to enable dynamic filtering behavior
 
 
 Default Value:
+{:.param}
 
 
 
@@ -345,6 +349,7 @@ Gets or sets a value that indicates whether to enable multi columns sorting beha
 
 
 Default Value:
+{:.param}
 
 
 
@@ -394,6 +399,7 @@ This specifies the grid to show the paginated data. Also enables pager control a
 
 
 Default Value:
+{:.param}
 
 
 
@@ -442,6 +448,7 @@ Gets or sets a value that indicates whether to enable the columns reordering beh
 
 
 Default Value:
+{:.param}
 
 
 
@@ -490,6 +497,7 @@ Gets or sets a value that indicates whether the column is non resizeable. Column
 
 
 Default Value:
+{:.param}
 
 
 
@@ -538,6 +546,7 @@ Gets or sets a value that indicates whether to enable dynamic resizabiliy of col
 
 
 Default Value:
+{:.param}
 
 
 
@@ -588,6 +597,7 @@ Gets or sets a value that indicates whether to enable the scrollbar in the grid 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -636,6 +646,7 @@ Gets or sets a value that indicates whether to enable dynamic searching behavior
 
 
 Default Value:
+{:.param}
 
 
 
@@ -685,6 +696,7 @@ Gets or sets a value that indicates whether user can select rows on grid. On ena
 
 
 Default Value:
+{:.param}
 
 
 
@@ -733,6 +745,7 @@ Gets or sets a value that indicates whether to enable the dynamic sorting behavi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -781,6 +794,7 @@ Gets or sets a value that indicates whether the Content will wrap to the next li
 
 
 Default Value:
+{:.param}
 
 
 
@@ -829,6 +843,7 @@ This specifies the grid to add the grid control inside the grid row of the paren
 
 
 Default Value:
+{:.param}
 
 
 
@@ -880,6 +895,7 @@ Gets or sets an object that indicates to render the grid with specified columns
 
 
 Default Value:
+{:.param}
 
 
 
@@ -928,6 +944,7 @@ Gets or sets a value that indicates whether to enable editing behavior for parti
 
 
 Default Value:
+{:.param}
 
 
 
@@ -976,6 +993,7 @@ Gets or sets a value that indicates whether to enable dynamic filtering behavior
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1024,6 +1042,7 @@ Gets or sets a value that indicates whether to enable dynamic grouping behavior 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1072,6 +1091,7 @@ Gets or sets a value that indicates whether to enable dynamic sorting behavior f
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1120,6 +1140,7 @@ Gets or sets an object that indicates to define a command column in the grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1182,6 +1203,7 @@ Gets or sets an object that indicates to define all the button options which are
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1243,6 +1265,7 @@ Gets or sets a value that indicates to add the command column button. See unboun
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1304,6 +1327,7 @@ Gets or sets a value that indicates to provide custom css for an individual colu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1355,6 +1379,7 @@ Gets or sets a value that indicates the attribute values to the td element of a 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1402,6 +1427,7 @@ Gets or sets a value that indicates to bind the external datasource to the parti
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1449,6 +1475,7 @@ Gets or sets a value that indicates to display the specified default value while
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1498,6 +1525,7 @@ Gets or sets a value that indicates to render the grid content and header with a
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1545,6 +1573,7 @@ Gets or sets a value that indicates to customize ejNumericTextbox of an editable
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1593,6 +1622,7 @@ Gets or sets a template that displays a custom editor used to edit column values
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1642,6 +1672,7 @@ Gets or sets a value that indicates to render the element(based on edit type) fo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1690,6 +1721,7 @@ Gets or sets a value that indicates to display the columns in the grid mapping w
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1737,6 +1769,7 @@ Gets or sets a value that indicates to define foreign key field name of the grid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1784,6 +1817,7 @@ Gets or sets a value that indicates to bind the field which is in foreign column
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1831,6 +1865,7 @@ Gets or sets a value that indicates the format for the text applied on the colum
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1878,6 +1913,7 @@ Gets or sets a value that indicates to add the template within the header elemen
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1929,6 +1965,7 @@ Gets or sets a value that indicates to display the title of that particular colu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1976,6 +2013,7 @@ This defines the text alignment of a particular column header cell value. See he
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2023,6 +2061,7 @@ You can use this property to freeze selected columns in grid at the time of scro
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2072,6 +2111,7 @@ Gets or sets a value that indicates thecolumn has an identity in the database.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2119,6 +2159,7 @@ Gets or sets a value that indicates the column is act as a primary key(read-only
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2167,6 +2208,7 @@ Gets or sets a value that indicates whether to bind the column which are not in 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2214,6 +2256,7 @@ Gets or sets a value that indicates whether to enables column template for a par
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2264,6 +2307,7 @@ Gets or sets a value that indicates to add the template as a particular column d
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2314,6 +2358,7 @@ Gets or sets a value that indicates to align the text within the column. See tex
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2361,6 +2406,7 @@ Gets or sets a value that indicates to specify the datatype of the specified col
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2441,6 +2487,7 @@ Gets or sets a value that indicates whether this column is visible in the grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2488,6 +2535,7 @@ Gets or sets a value that indicates to define the width for a particular column 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2556,6 +2604,7 @@ Gets or sets a value that indicates whether to add the default context menu acti
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2608,6 +2657,7 @@ Gets or sets a value that indicates whether to add custom contextMenu items with
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2657,6 +2707,7 @@ Gets or sets a value that indicates whether to enable the context menu action in
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2709,6 +2760,7 @@ Gets or sets a value that indicates to render the grid with custom theme. allowS
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2765,6 +2817,7 @@ Gets or sets the data to render the grid with records
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2812,6 +2865,7 @@ This specifies the grid to add the details row for the corresponding master row
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2890,6 +2944,7 @@ Gets or sets a value that indicates whether to enable insert action in the editi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2939,6 +2994,7 @@ Gets or sets a value that indicates whether to enable the delete action in the e
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2988,6 +3044,7 @@ Gets or sets a value that indicates whether to enable the edit action in the edi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3037,6 +3094,7 @@ Gets or sets a value that indicates whether to enable the editing action while d
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3087,6 +3145,7 @@ This specifies the id of the template. This template can be used to display the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3156,6 +3215,7 @@ Gets or sets a value that indicates whether to define the mode of editing See ed
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3205,6 +3265,7 @@ $("#Grid").ejGrid({
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3274,6 +3335,7 @@ This specifies to set the position of an External edit form either in the top-ri
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3323,6 +3385,7 @@ This specifies the id of the template. This template can be used to display the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3392,6 +3455,7 @@ This specifies to set the position of an adding new row either in the top or bot
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3441,6 +3505,7 @@ Gets or sets a value that indicates whether the confirm dialog has to be shown w
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3490,6 +3555,7 @@ Gets or sets a value that indicates whether the confirm dialog has to be shown w
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3539,6 +3605,7 @@ Gets or sets a value that indicates whether to enable the alternative rows diffe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3586,6 +3653,7 @@ Gets or sets a value that indicates whether to enable the save action in the gri
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3637,6 +3705,7 @@ Gets or sets a value that indicates whether to enable mouse over effect on the c
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3685,6 +3754,7 @@ Gets or sets a value that indicates whether to persist the grid model state in p
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3734,6 +3804,7 @@ Gets or sets a value that indicates whether the grid rows has to be rendered as 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3784,6 +3855,7 @@ Gets or sets a value that indicates whether to enable mouse over effect on corre
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3832,6 +3904,7 @@ Align content in the grid control from right to left by setting the property as 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3879,6 +3952,7 @@ To Disable the mouse swipe property as false.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3948,6 +4022,7 @@ Gets or sets a value that indicates to perform the filter operation with case se
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3996,6 +4071,7 @@ This specifies the grid to starts the filter action while typing in the filterBa
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4044,6 +4120,7 @@ Gets or sets a value that indicates whether to define the filtered columns detai
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4080,6 +4157,7 @@ This specifies the grid to show the filterBar or filterMenu to the grid records.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4128,6 +4206,7 @@ Gets or sets a value that indicates the maximum number of filter choices that ca
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4176,6 +4255,7 @@ This specifies the grid to show the filter text within the grid pager itself.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4224,6 +4304,7 @@ Gets or sets a value that indicates whether to enable the predicate options in t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4293,6 +4374,7 @@ Gets or sets a value that customize the group caption format.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4341,6 +4423,7 @@ Gets or sets a value that indicates whether to enable the animation effects to t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4389,6 +4472,7 @@ Gets or sets a value that indicates whether to enable animation button option in
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4437,6 +4521,7 @@ Gets or sets a value that indicates whether to add grouped columns programmatica
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4485,6 +4570,7 @@ Gets or sets a value that indicates whether to show the group droparea just abov
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4534,6 +4620,7 @@ Gets or sets a value that indicates whether to hide the grouped columns from the
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4582,6 +4669,7 @@ $("#Grid").ejGrid({
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4630,6 +4718,7 @@ Gets or sets a value that indicates whether to enable the close button in the gr
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4678,6 +4767,7 @@ Gets or sets a value that indicates whether the grid design has be to made respo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4727,6 +4817,7 @@ This specifies to change the key in keyboard interaction to grid control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4778,6 +4869,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4830,6 +4922,7 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4899,6 +4992,7 @@ Gets or sets a value that indicates whether to define which page to display curr
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4947,6 +5041,7 @@ Gets or sets a value that indicates whether to pass the current page information
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4995,6 +5090,7 @@ Gets or sets a value that indicates whether to enables pager template for the gr
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5046,6 +5142,7 @@ Gets or sets a value that indicates whether to define the number of pages displa
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5094,6 +5191,7 @@ Gets or sets a value that indicates whether to define the number of records disp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5142,6 +5240,7 @@ Gets or sets a value that indicates whether to enables default pager for the gri
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5193,6 +5292,7 @@ Gets or sets a value that indicates to add the template as a pager template for 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5244,6 +5344,7 @@ Get the value of total number of pages in the grid. The totalPages value is calc
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5294,6 +5395,7 @@ Get the value of total number of records which is bound to the grid. The totalRe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5344,6 +5446,7 @@ Query the dataSource from the table for Grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5394,6 +5497,7 @@ Gets or sets a value that indicates to render the grid with template rows. The t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5473,6 +5577,7 @@ This specify the grid to to view data that you require without buffering the ent
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5521,6 +5626,7 @@ This specify the grid to enable/disable touch control for scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5569,6 +5675,7 @@ This specify the grid to freeze particular columns at the time of scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5617,6 +5724,7 @@ This specify the grid to freeze particular rows at the time of scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5665,6 +5773,7 @@ This specify the grid to show the vertical scroll bar, to scroll and view the gr
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5713,6 +5822,7 @@ This is used to define the mode of virtual scrolling in grid. See virtualScrollM
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5761,6 +5871,7 @@ This specify the grid to show the horizontal scroll bar, to scroll and view the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5809,6 +5920,7 @@ Gets a value that indicates whether the grid model to hold multiple selected rec
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5860,6 +5972,7 @@ Gets or sets a value that indicates to select the row while initializing the gri
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5929,6 +6042,7 @@ Gets or sets a value that indicates whether to enable the toggle selction behavi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5977,6 +6091,7 @@ Gets or sets a value that indicates whether to add the default selection actions
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6025,6 +6140,7 @@ The row selection behavior of grid. Accepting types are "single" and "multiple".
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6073,6 +6189,7 @@ This specifies to add new editable row dynamically at the either top or bottom o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6122,6 +6239,7 @@ This specifies to add new editable row dynamically at the top or bottom of the g
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6171,6 +6289,7 @@ Gets or sets a value that indicates whether to enable column chooser on grid. On
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6219,6 +6338,7 @@ Gets or sets a value that indicates stacked header should be shown on grid layou
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6280,6 +6400,7 @@ Gets or sets a value that indicates summary rows should be shown on grid layout 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6351,6 +6472,7 @@ Gets or sets a value that indicates whether to define the direction to sort the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6399,6 +6521,7 @@ Gets or sets a value that indicates whether to define the field name of the colu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6447,6 +6570,7 @@ Gets or sets an object that indicates to managing the collection of stacked head
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6508,6 +6632,7 @@ Gets or sets a value that indicates whether to add stacked header columns into t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6569,6 +6694,7 @@ Gets or sets a value that indicates the header text for the particular stacked h
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6630,6 +6756,7 @@ Gets or sets a value that indicates class to the corresponding stackedHeaderColu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6695,6 +6822,7 @@ Gets or sets a value that indicates the header text for the particular stacked h
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6756,6 +6884,7 @@ Gets or sets a value that indicates the text alignment of the corresponding head
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6817,6 +6946,7 @@ Gets or sets an object that indicates to managing the collection of summary rows
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6873,6 +7003,7 @@ Gets or sets a value that indicates whether to show the summary value within the
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6931,6 +7062,7 @@ Gets or sets a value that indicates whether to show the total summary value the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6988,6 +7120,7 @@ Gets or sets a value that indicates whether to add summary columns into the summ
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7044,6 +7177,7 @@ Gets or sets a value that indicates the text displayed in the summary column as 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7101,6 +7235,7 @@ This specifies summary column used to perform the summary calculation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7157,6 +7292,7 @@ Gets or sets a value that indicates to define the target column at which to disp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7213,6 +7349,7 @@ Gets or sets a value that indicates the format for the text applied on the colum
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7270,6 +7407,7 @@ Gets or sets a value that indicates the text displayed before the summary column
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7326,6 +7464,7 @@ Gets or sets a value that indicates the text displayed after the summary column 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7383,6 +7522,7 @@ Gets or sets a value that indicates the type of calculations to be performed for
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7439,6 +7579,7 @@ This specifies the grid to show the title for the summary rows.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7516,6 +7657,7 @@ Gets or sets a value that indicates whether to add custom toolbar items within t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7569,6 +7711,7 @@ Gets or sets a value that indicates whether to enable toolbar in the grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7618,6 +7761,7 @@ Gets or sets a value that indicates whether to add the default editing actions a
 
 
 Default Value:
+{:.param}
 
 
 

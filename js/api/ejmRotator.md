@@ -137,6 +137,7 @@ Calculates the windows inner height for the Rotator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -229,6 +230,7 @@ Sets the root class for Rotator theme. This cssClass API helps to use custom ski
 
 
 Default Value:
+{:.param}
 
 
 
@@ -321,6 +323,7 @@ Specifies the currentItemIndex for select the particular item based on the speci
 
 
 Default Value:
+{:.param}
 
 
 
@@ -413,6 +416,7 @@ Specifies whether to enable dataBinding for the items on initilization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -505,6 +509,7 @@ Specifies the dataSource for items .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -579,6 +584,7 @@ Current model value to browser cookies for state maintains. While refresh the Ro
 
 
 Default Value:
+{:.param}
 
 
 
@@ -671,6 +677,7 @@ Specifies the headerTitle on initialization .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -763,6 +770,7 @@ Specifies the rotator orientation to the horizontal or vertical. See <a href="gl
 
 
 Default Value:
+{:.param}
 
 
 
@@ -878,6 +886,7 @@ Specifies the PagerPosition Horizontal to the top or bottom position. See <a hre
 
 
 Default Value:
+{:.param}
 
 
 
@@ -972,6 +981,7 @@ Specifies the PagerPosition Vertical to the top or bottom position. See <a href=
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1066,6 +1076,7 @@ Changes the rendering mode for rotator. See <a href="global.html#RenderMode">Ren
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1160,6 +1171,7 @@ Specifies whether to enable the header on initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1252,6 +1264,7 @@ Specifies whether to show the Pager on initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1344,6 +1357,7 @@ Specifies the targetHeight on initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1436,6 +1450,7 @@ Specifies the targetId to the content .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1527,6 +1542,7 @@ Specifies the targetWidth on initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1619,6 +1635,7 @@ Changes the theme of the Rotator. See<a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1734,6 +1751,7 @@ Specifies whether to render the rotator based on the windowsphone's current acce
 
 
 Default Value:
+{:.param}
 
 
 

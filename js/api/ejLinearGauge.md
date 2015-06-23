@@ -102,6 +102,7 @@ Specifies the animationSpeed
 
 
 Default Value:
+{:.param}
 
 
 
@@ -148,6 +149,7 @@ Specifies the backgroundColor for Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -194,6 +196,7 @@ Specifies the borderColor for Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -240,6 +243,7 @@ Specifies the animate state
 
 
 Default Value:
+{:.param}
 
 
 
@@ -286,6 +290,7 @@ Specifies the animate state for marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -332,6 +337,7 @@ Specifies the can resize state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -378,6 +384,7 @@ Specify frame of linear gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -425,6 +432,7 @@ Specifies the frame backgroundimageurl of linear gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -471,6 +479,7 @@ Specifies the frame InnerWidth
 
 
 Default Value:
+{:.param}
 
 
 
@@ -517,6 +526,7 @@ Specifies the frame OuterWidth
 
 
 Default Value:
+{:.param}
 
 
 
@@ -563,6 +573,7 @@ Specifies the height of Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -609,6 +620,7 @@ Specifies the labelColor for Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -655,6 +667,7 @@ Specifies the maximum value of Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -701,6 +714,7 @@ Specifies the minimum value of Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -747,6 +761,7 @@ Specifies the orientation for Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -793,6 +808,7 @@ Specify enableResize value of Linear gauge See <a href="global.html#OuterCustomL
 
 
 Default Value:
+{:.param}
 
 
 
@@ -840,6 +856,7 @@ Specifies the pointerGradient1 for Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -886,6 +903,7 @@ Specifies the pointerGradient2 for Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -932,6 +950,7 @@ Specifies the read only state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -978,6 +997,7 @@ Specifies the scales
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1024,6 +1044,7 @@ Specifies the backgroundColor of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1070,6 +1091,7 @@ Specifies the scaleBar Gradient of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1116,6 +1138,7 @@ Specifies the backgroundColor of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1162,6 +1185,7 @@ Specifies the border of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1208,6 +1232,7 @@ Specifies the border Color of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1254,6 +1279,7 @@ Specifies the border Width of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1300,6 +1326,7 @@ Specifies the distanceFromScale of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1346,6 +1373,7 @@ Specifies the scaleBar Gradient of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1392,6 +1420,7 @@ Specifies the opacity of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1438,6 +1467,7 @@ Specifies the value of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1484,6 +1514,7 @@ Specifies the pointer Width of bar pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1530,6 +1561,7 @@ Specifies the border of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1576,6 +1608,7 @@ Specifies the border color of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1622,6 +1655,7 @@ Specifies the border width of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1668,6 +1702,7 @@ Specifies the customLabel
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1714,6 +1749,7 @@ Specifies the label Color in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1760,6 +1796,7 @@ Specifies the font in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1806,6 +1843,7 @@ Specifies the fontFamily in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1852,6 +1890,7 @@ Specifies the fontStyle in customLabels. See <a href="global.html#FontStyle">Fon
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1898,6 +1937,7 @@ Specifies the font size in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1944,6 +1984,7 @@ Specifies the opacity in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1990,6 +2031,7 @@ Specifies the position in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2036,6 +2078,7 @@ Specifies the position x in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2082,6 +2125,7 @@ Specifies the y in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2128,6 +2172,7 @@ Specifies the positionType in customLabels.See <a href="global.html#CustomLabelP
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2174,6 +2219,7 @@ Specifies the textAngle in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2220,6 +2266,7 @@ Specifies the label Value in customLabels
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2266,6 +2313,7 @@ Specifies the scale Direction of the Scale. See <a href="global.html#Directions"
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2312,6 +2360,7 @@ Specifies the indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2362,6 +2411,7 @@ Specifies the backgroundColor in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2413,6 +2463,7 @@ Specifies the border in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2464,6 +2515,7 @@ Specifies the border Color in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2515,6 +2567,7 @@ Specifies the border Width in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2566,6 +2619,7 @@ Specifies the font of bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2616,6 +2670,7 @@ Specifies the fontFamily of font in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2666,6 +2721,7 @@ Specifies the fontStyle of font in bar indicators. See <a href="global.html#Font
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2716,6 +2772,7 @@ Specifies the size of font in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2766,6 +2823,7 @@ Specifies the indicator Height of bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2817,6 +2875,7 @@ Specifies the opacity in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2866,6 +2925,7 @@ Specifies the position in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2917,6 +2977,7 @@ Specifies the x position in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2968,6 +3029,7 @@ Specifies the y position in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3019,6 +3081,7 @@ Specifies the state ranges in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3069,6 +3132,7 @@ Specifies the backgroundColor in bar indicators state ranges
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3120,6 +3184,7 @@ Specifies the borderColor in bar indicators state ranges
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3171,6 +3236,7 @@ Specifies the endValue in bar indicators state ranges
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3221,6 +3287,7 @@ Specifies the startValue in bar indicators state ranges
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3271,6 +3338,7 @@ Specifies the text in bar indicators state ranges
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3321,6 +3389,7 @@ Specifies the textColor in bar indicators state ranges
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3371,6 +3440,7 @@ Specifies the textLocation in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3421,6 +3491,7 @@ Specifies the textLocation position in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3471,6 +3542,7 @@ Specifies the Y position in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3521,6 +3593,7 @@ Specifies the indicator Style of font in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3572,6 +3645,7 @@ Specifies the indicator Width in bar indicators
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3623,6 +3697,7 @@ Specifies the labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3669,6 +3744,7 @@ Specifies the angle of labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3715,6 +3791,7 @@ Specifies the DistanceFromScale of labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3761,6 +3838,7 @@ Specifies the xDistanceFromScale of labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3807,6 +3885,7 @@ Specifies the yDistanceFromScale of labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3853,6 +3932,7 @@ Specifies the font of labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3899,6 +3979,7 @@ Specifies the fontFamily of font.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3945,6 +4026,7 @@ Specifies the fontStyle of font.See <a href="global.html#FontStyle">FontStyle</a
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3991,6 +4073,7 @@ Specifies the size of font.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4037,6 +4120,7 @@ need to includeFirstValue.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4083,6 +4167,7 @@ Specifies the opacity of label.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4129,6 +4214,7 @@ Specifies the label Placement of label. See <a href="global.html#LabelPlacement"
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4175,6 +4261,7 @@ Specifies the textColor of font.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4221,6 +4308,7 @@ Specifies the label Style of label. See <a href="global.html#LabelType">LabelTyp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4267,6 +4355,7 @@ Specifies the unitText of label.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4313,6 +4402,7 @@ Specifies the unitText Position of label.See <a href="global.html#UnitTextPlacem
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4359,6 +4449,7 @@ Specifies the scaleBar Length.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4405,6 +4496,7 @@ Specifies the majorIntervalValue of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4451,6 +4543,7 @@ Specifies the markerPointers
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4497,6 +4590,7 @@ Specifies the backgroundColor of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4543,6 +4637,7 @@ Specifies the border of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4589,6 +4684,7 @@ Specifies the border color of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4635,6 +4731,7 @@ Specifies the border of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4681,6 +4778,7 @@ Specifies the distanceFromScale of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4727,6 +4825,7 @@ Specifies the pointer Gradient of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4773,6 +4872,7 @@ Specifies the pointer Length of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4819,6 +4919,7 @@ Specifies the opacity of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4865,6 +4966,7 @@ Specifies the pointer Placement of marker pointer See <a href="global.html#Point
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4911,6 +5013,7 @@ Specifies the marker Style of marker pointerSee <a href="global.html#MarkerType"
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4957,6 +5060,7 @@ Specifies the value of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5003,6 +5107,7 @@ Specifies the pointer Width of marker pointer
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5049,6 +5154,7 @@ Specifies the maximum of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5095,6 +5201,7 @@ Specifies the minimum of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5141,6 +5248,7 @@ Specifies the minorIntervalValue of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5187,6 +5295,7 @@ Specifies the opacity of the Scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5233,6 +5342,7 @@ Specifies the position
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5279,6 +5389,7 @@ Specifies the Horizontal position
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5325,6 +5436,7 @@ Specifies the vertical position
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5371,6 +5483,7 @@ Specifies the ranges in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5417,6 +5530,7 @@ Specifies the backgroundColor in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5463,6 +5577,7 @@ Specifies the border in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5509,6 +5624,7 @@ Specifies the border color in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5555,6 +5671,7 @@ Specifies the border width in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5601,6 +5718,7 @@ Specifies the distanceFromScale in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5647,6 +5765,7 @@ Specifies the endValue in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5693,6 +5812,7 @@ Specifies the endWidth in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5739,6 +5859,7 @@ Specifies the range Gradient in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5785,6 +5906,7 @@ Specifies the opacity in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5831,6 +5953,7 @@ Specifies the range Position in the ranges. See <a href="global.html#RangePlacem
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5877,6 +6000,7 @@ Specifies the startValue in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5923,6 +6047,7 @@ Specifies the startWidth in the ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5969,6 +6094,7 @@ Specifies the shadowOffset.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6015,6 +6141,7 @@ Specifies the showBarPointers state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6061,6 +6188,7 @@ Specifies the showCustomLabels state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6107,6 +6235,7 @@ Specifies the showIndicators state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6153,6 +6282,7 @@ Specifies the showLabels state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6199,6 +6329,7 @@ Specifies the showMarkerPointers state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6245,6 +6376,7 @@ Specifies the showRanges state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6291,6 +6423,7 @@ Specifies the showTicks state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6337,6 +6470,7 @@ Specifies the ticks in the scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6383,6 +6517,7 @@ Specifies the angle in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6429,6 +6564,7 @@ Specifies the tick Color in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6475,6 +6611,7 @@ Specifies the DistanceFromScale in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6521,6 +6658,7 @@ Specifies the xDistanceFromScale in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6567,6 +6705,7 @@ Specifies the yDistanceFromScale in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6613,6 +6752,7 @@ Specifies the tick Height in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6659,6 +6799,7 @@ Specifies the opacity in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6705,6 +6846,7 @@ Specifies the tick Placement in the tick. See <a href="global.html#TickPlacement
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6751,6 +6893,7 @@ Specifies the tick Style in the tick. See <a href="global.html#TickType">TickTyp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6797,6 +6940,7 @@ Specifies the tick Width in the tick.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6843,6 +6987,7 @@ Specifies the scaleBar type .See <a href="global.html#ScaleType">ScaleType</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6889,6 +7034,7 @@ Specifies the scaleBar width.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6935,6 +7081,7 @@ Specifies the theme for Linear gauge. See LinearGauge.Themes
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6981,6 +7128,7 @@ Specifies the tick Color for Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7027,6 +7175,7 @@ Specify tooltip options of linear gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7074,6 +7223,7 @@ Specify showCustomLabelTooltip value of linear gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7121,6 +7271,7 @@ Specify showLabelTooltip value of linear gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7168,6 +7319,7 @@ Specify templateID value of linear gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7215,6 +7367,7 @@ Specifies the value of the Gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7261,6 +7414,7 @@ Specifies the width of Linear gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9522,6 +9676,7 @@ Specifies the scales.
 
 
 Default Value:
+{:.param}
 
 
 

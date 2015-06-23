@@ -57,6 +57,7 @@ Renders the back button Image for Radial using class.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -79,6 +80,7 @@ Sets the root class for RadialMenu theme. This cssClass API helps to use custom 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -101,6 +103,7 @@ To enable Animation for Radial Menu.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -123,6 +126,7 @@ Renders the image for Radial using Class.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -145,6 +149,7 @@ Changes the Position of the control.See <a href="global.html#Position">Position<
 
 
 Default Value:
+{:.param}
 
 
 
@@ -167,6 +172,7 @@ Specifies the radius of the radialmenu control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -189,6 +195,7 @@ Changes the rendering mode. See <a href="global.html#RenderMode">RenderMode</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -211,6 +218,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -245,6 +253,7 @@ Specifies whether to render the Radial Menu based on the windowsphone's current 
 
 
 Default Value:
+{:.param}
 
 
 

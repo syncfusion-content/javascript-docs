@@ -73,6 +73,7 @@ Specifies the class name in which URL for the back button image will be set.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -96,6 +97,7 @@ Specifies the style for the left button i.e. back button or normal button button
 
 
 Default Value:
+{:.param}
 
 
 
@@ -121,6 +123,7 @@ Specifies the style for the right button i.e. back button or normal button. See 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -146,6 +149,7 @@ Specifies whether to show the android left button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -171,6 +175,7 @@ Specifies whether to show the android right button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -196,6 +201,7 @@ Sets the root class for Header theme. This cssClass API helps to use custom skin
 
 
 Default Value:
+{:.param}
 
 
 
@@ -221,6 +227,7 @@ Current model value to browser cookies for state maintenance. While refreshing t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -258,6 +265,7 @@ Specifies the style for the flat left button i.e. back button or normal button o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -283,6 +291,7 @@ Specifies the flat style for the right button i.e. back button or normal button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -308,6 +317,7 @@ Specifies whether to show the flat left button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -333,6 +343,7 @@ Specifies whether to show the flat right button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -358,6 +369,7 @@ If this property is set to true, header will be visible for iOS7 rendermode alon
 
 
 Default Value:
+{:.param}
 
 
 
@@ -395,6 +407,7 @@ Specifies the style for the ios7 left button i.e. back button or normal button o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -420,6 +433,7 @@ Specifies the ios7 style for the right button i.e. back button or normal button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -445,6 +459,7 @@ Specifies whether to show the ios7 left button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -470,6 +485,7 @@ Specifies whether to show the ios7 right button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -495,6 +511,7 @@ Specifies the caption of the left button. <a href="ejmHeader.html#showLeftButton
 
 
 Default Value:
+{:.param}
 
 
 
@@ -520,6 +537,7 @@ Specifies the navigation url, which the page should go while clicking the left b
 
 
 Default Value:
+{:.param}
 
 
 
@@ -545,6 +563,7 @@ Specifies the style for the left button i.e. back button or normal button or hea
 
 
 Default Value:
+{:.param}
 
 
 
@@ -570,6 +589,7 @@ Specifies whether to keep the header in fixed position. i.e. top or in relative 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -595,6 +615,7 @@ Changes the rendering mode of the header.See <a href="global.html#RenderMode">Re
 
 
 Default Value:
+{:.param}
 
 
 
@@ -620,6 +641,7 @@ Specifies the caption of the right button. <a href="ejmHeader.html#showRightButt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -645,6 +667,7 @@ Specifies the navigation url, which the page should go while clicking the right 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -687,6 +710,7 @@ Specifies whether to show the left button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -712,6 +736,7 @@ Specifies whether to show the right button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -737,6 +762,7 @@ Specifies whether to show the title or not. if this property is set to false, ti
 
 
 Default Value:
+{:.param}
 
 
 
@@ -762,6 +788,7 @@ Specifies the id of the element which is to be given as template.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -785,6 +812,7 @@ Changes the theme of the header. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -810,6 +838,7 @@ Specifies the title's text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -847,6 +876,7 @@ By default windows title's text will be in small case. To override this behavior
 
 
 Default Value:
+{:.param}
 
 
 
@@ -870,6 +900,7 @@ Specifies the style for the windows left button i.e. back button or normal butto
 
 
 Default Value:
+{:.param}
 
 
 
@@ -895,6 +926,7 @@ Specifies whether to render the header based on the windowsphone's current theme
 
 
 Default Value:
+{:.param}
 
 
 
@@ -918,6 +950,7 @@ Specifies the windows style for the right button i.e. back button or normal butt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -943,6 +976,7 @@ Specifies whether to show the windows left button or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -968,6 +1002,7 @@ Specifies whether to show the windows right button or not.
 
 
 Default Value:
+{:.param}
 
 
 

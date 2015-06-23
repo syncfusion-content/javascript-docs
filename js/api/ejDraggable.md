@@ -84,6 +84,7 @@ If clone is specified.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -134,6 +135,7 @@ Sets the offset of the dragging helper relative to the mouse cursor.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -184,6 +186,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
 
 
 Default Value:
+{:.param}
 
 
 
@@ -234,6 +237,7 @@ If Drag area is specified.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -284,6 +288,7 @@ If specified, restricts drag start click to the specified element(s).
 
 
 Default Value:
+{:.param}
 
 
 
@@ -334,6 +339,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
 
 
 Default Value:
+{:.param}
 
 
 

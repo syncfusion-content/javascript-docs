@@ -56,6 +56,7 @@ Allows new text to be added to in the popup of the autocomplete when there are n
 
 
 Default Value:
+{:.param}
 
 
 
@@ -79,6 +80,7 @@ Specifies new values can be added to the autocomplete input other than the value
 
 
 Default Value:
+{:.param}
 
 
 
@@ -102,6 +104,7 @@ Groups the search result based on the category value and displays the items in s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -125,6 +128,7 @@ Sorts the lists value in ascending order if set to true and enables sorting.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -148,6 +152,7 @@ This property enables to active the first element in the popup. It will automati
 
 
 Default Value:
+{:.param}
 
 
 
@@ -171,6 +176,7 @@ Sets the case sensitivity of the search operation..
 
 
 Default Value:
+{:.param}
 
 
 
@@ -194,6 +200,7 @@ Sets the root class for Autocomplete theme. This cssClass API helps to use custo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -217,6 +224,7 @@ Specifies the Data Source of the AutoComplete.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -240,6 +248,7 @@ The delaySuggestionTimeout used to set the milliseconds time between a keypress 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -263,6 +272,7 @@ Sets the separator to allow multiple word searches. While typing the texts in th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -286,6 +296,7 @@ Sets the emptyResultText message text. When there is no suggestions are availabl
 
 
 Default Value:
+{:.param}
 
 
 
@@ -309,6 +320,7 @@ Automatically fills the first item from the suggestion list in an AutoComplete t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -332,6 +344,7 @@ When this property sets to false, it disables the Autocomplete control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -355,6 +368,7 @@ Prevents the duplicate names presents in the search result.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -378,6 +392,7 @@ Save current model value to browser cookies for state maintains. While refresh t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -401,6 +416,7 @@ Sets the Autocomplete textbox direction as right to left alignment.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -424,6 +440,7 @@ Specifies mapping fields for the data items of the Autocomplete textbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -495,6 +512,7 @@ Sets the search filter type. There are several filter types are available such a
 
 
 Default Value:
+{:.param}
 
 
 
@@ -518,6 +536,7 @@ Defines the height of the Autocomplete textbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -541,6 +560,7 @@ Enables the highlight search option. When the highlightSearch option set to true
 
 
 Default Value:
+{:.param}
 
 
 
@@ -564,6 +584,7 @@ Count of the item that gets displayed in the popup
 
 
 Default Value:
+{:.param}
 
 
 
@@ -587,6 +608,7 @@ Minimum character that the autocomplete popup gets opened.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -610,6 +632,7 @@ Allows to select multiple values from the suggestion list. Multiple values can b
 
 
 Default Value:
+{:.param}
 
 
 
@@ -633,6 +656,7 @@ Defines the popupHeight of the suggestion box.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -656,6 +680,7 @@ Defines the popupWidth of the suggestion box.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -679,6 +704,7 @@ Specifies the query to retrieve the data from online server.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -702,6 +728,7 @@ Indicates that the autocomplete textbox values can only be read.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -740,6 +767,7 @@ Sets whether the noResults message will be shown or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -763,6 +791,7 @@ Enables the loading icon to intimate the searching operation. The loading icon i
 
 
 Default Value:
+{:.param}
 
 
 
@@ -786,6 +815,7 @@ Enables the showPopup button. When the Showpopup button clicks, it displays the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -809,6 +839,7 @@ Autocomplete textbox to be displayed with rounded corner style.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -832,6 +863,7 @@ Sort order specifies whether the suggestion list values has to display in ascend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -855,6 +887,7 @@ Specifies the template for Autocomplete.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -878,6 +911,7 @@ Set the jquery validation error message in Autocomplete.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -901,6 +935,7 @@ Set the jquery validation rules in Autocomplete.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -924,6 +959,7 @@ Defines the default value to be displayed in the autocomplete textbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -947,6 +983,7 @@ Specifies the to show or hide.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -970,6 +1007,7 @@ Sets the watermarkText text. When the textbox is empty the watermarkText text is
 
 
 Default Value:
+{:.param}
 
 
 
@@ -993,6 +1031,7 @@ Defines the width of the Autocomplete textbox.
 
 
 Default Value:
+{:.param}
 
 
 

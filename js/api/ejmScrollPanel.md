@@ -59,6 +59,7 @@ Specifies whether need to adjust the scrolling content height for fixed position
 
 
 Default Value:
+{:.param}
 
 
 
@@ -82,6 +83,7 @@ Specifies whether need to calculate the scroll content height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -105,6 +107,7 @@ Specifies the bouncing time when bouncing behavior is enabled.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -128,6 +131,7 @@ Specifies whether need to refresh scrollpanel when elements are added dynamicall
 
 
 Default Value:
+{:.param}
 
 
 
@@ -151,6 +155,7 @@ Specifies the value for direction lock threshold.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -174,6 +179,7 @@ Specifies whether to disable mouse.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -197,6 +203,7 @@ Specifies whether to disable pointer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -220,6 +227,7 @@ Specifies whether to disable touch.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -243,6 +251,7 @@ Specifies whether to enable bouncing behavior.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -267,6 +276,7 @@ Specifies whether to enable or disable the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -290,6 +300,7 @@ Specifies whether need to fade the scrollbars.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -313,6 +324,7 @@ Specifies whether need to enable the horizontal scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -337,6 +349,7 @@ Specifies whether need to enable the interactive scrollbars.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -360,6 +373,7 @@ Specifies whether to enable keys.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -383,6 +397,7 @@ Specifies whether to enable mouse wheel scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -406,6 +421,7 @@ Specifies whether to enable device's native scroll behavior.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -430,6 +446,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -453,6 +470,7 @@ Specifies whether need to resize the scrollbar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -476,6 +494,7 @@ Specifies whether need to shrink the scrollbars.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -499,6 +518,7 @@ Specifies whether to enable transform style for the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -522,6 +542,7 @@ Specifies whether to enable transition effect for the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -545,6 +566,7 @@ Specifies whether need to enable the vertical scrolling.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -568,6 +590,7 @@ Specifies whether to enable zooming.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -591,6 +614,7 @@ Specifies whether to enable invert wheel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -614,6 +638,7 @@ Specifies whether need to style the target element with relative position.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -637,6 +662,7 @@ Specifies whether to prevent default events.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -660,6 +686,7 @@ Specifies the rendering mode of the control. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -683,6 +710,7 @@ Specifies the scroll height of the content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -706,6 +734,7 @@ Specifies the scroll width of the content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -729,6 +758,7 @@ Specifies whether need to show the scroll bars.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -752,6 +782,7 @@ Specifies the x position on intialize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -775,6 +806,7 @@ Specifies the y position on intialize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -798,6 +830,7 @@ Specifies the initial zooming value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -821,6 +854,7 @@ Specifies the target element.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -844,6 +878,7 @@ Specifies the target element height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -867,6 +902,7 @@ Specifies the target element width.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -890,6 +926,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -913,6 +950,7 @@ Specifies the wheel speed.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -936,6 +974,7 @@ Specifies the maximum zoom value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -959,6 +998,7 @@ Specifies the minimum zoom value.
 
 
 Default Value:
+{:.param}
 
 
 

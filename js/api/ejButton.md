@@ -50,6 +50,7 @@ Specifies the contentType of the Button. See <a href="global.html#ContentType">C
 
 
 Default Value:
+{:.param}
 
 
 
@@ -73,6 +74,7 @@ Specify the cssClass to button to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -96,6 +98,7 @@ Specifies the button control state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -119,6 +122,7 @@ Specify the Right to Left direction to button
 
 
 Default Value:
+{:.param}
 
 
 
@@ -142,6 +146,7 @@ Specifies the height of the Button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -165,6 +170,7 @@ Specifies the HTML Attributes of the ejButton
 
 
 Default Value:
+{:.param}
 
 
 
@@ -188,6 +194,7 @@ Specifies the image position of the Button. This image position is applicable on
 
 
 Default Value:
+{:.param}
 
 
 
@@ -211,6 +218,7 @@ Specifies the primary icon for Button. This is applicable for the content type&r
 
 
 Default Value:
+{:.param}
 
 
 
@@ -234,6 +242,7 @@ Convert the button as repeat button. It raises the 'Click' event repeattedly fro
 
 
 Default Value:
+{:.param}
 
 
 
@@ -257,6 +266,7 @@ Specify the rounded corner to button
 
 
 Default Value:
+{:.param}
 
 
 
@@ -280,6 +290,7 @@ Specifies the size of the Button. See <a href="global.html#ButtonSize">ButtonSiz
 
 
 Default Value:
+{:.param}
 
 
 
@@ -303,6 +314,7 @@ Specifies the secondary icon for Button. This is applicable for the content type
 
 
 Default Value:
+{:.param}
 
 
 
@@ -326,6 +338,7 @@ Specifies the text content for Button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -349,6 +362,7 @@ Specified the timeInterval between two 'click' events while button in repeat but
 
 
 Default Value:
+{:.param}
 
 
 
@@ -372,6 +386,7 @@ Specifies the Type of the Button. See <a href="global.html#ButtonType">ButtonTyp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -395,6 +410,7 @@ Specifies the width of the Button.
 
 
 Default Value:
+{:.param}
 
 
 

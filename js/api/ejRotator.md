@@ -101,6 +101,7 @@ Turns on keyboard interaction with the Rotator items. You must set this property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -153,6 +154,7 @@ Sets the animationSpeed of slide transition.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -205,6 +207,7 @@ Specifies the animationType type for the Rotator Item. animationType options inc
 
 
 Default Value:
+{:.param}
 
 
 
@@ -257,6 +260,7 @@ Enables the circular mode item rotation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -309,6 +313,7 @@ Specify the CSS class to Rotator to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -361,6 +366,7 @@ Specify the list of data which contains a set of data fields. Each data value is
 
 
 Default Value:
+{:.param}
 
 
 
@@ -408,6 +414,7 @@ Sets the delay between the Rotator Items move after the slide transition.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -460,6 +467,7 @@ Specifies the number of Rotator Items to be displayed.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -512,6 +520,7 @@ Rotates the Rotator Items continuously without user interference.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -564,6 +573,7 @@ Enables or disables the Rotator control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -616,6 +626,7 @@ Specifies right to left transition of slides.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -668,6 +679,7 @@ Defines mapping fields for the data items of the Rotator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -841,6 +853,7 @@ Sets the space between the Rotator Items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -893,6 +906,7 @@ Resizes the Rotator when the browser is resized.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -945,6 +959,7 @@ Specifies the number of Rotator Items to navigate on a single click (next/previo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -997,6 +1012,7 @@ Specifies the orientation for the Rotator control, that is, whether it must be r
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1049,6 +1065,7 @@ Specifies the position of the showPager in the Rotator Item. See <a href="global
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1101,6 +1118,7 @@ Retrieves data from remote data. This property is applicable only when a remote 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1137,6 +1155,7 @@ If the Rotator Item is an image, you can specify a caption for the Rotator Item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1189,6 +1208,7 @@ Turns on or off the slide buttons (next and previous) in the Rotator Items. Slid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1241,6 +1261,7 @@ Turns on or off the pager support in the Rotator control. The Pager is used to n
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1293,6 +1314,7 @@ Enable play / pause button on rotator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1345,6 +1367,7 @@ Turns on or off thumbnail support in the Rotator control. Thumbnail is used to n
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1405,6 +1428,7 @@ Sets the height of a Rotator Item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1457,6 +1481,7 @@ Sets the width of a Rotator Item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1509,6 +1534,7 @@ Sets the index of the slide that must be displayed first.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1561,6 +1587,7 @@ Pause the auto play while hover on the rotator content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1613,6 +1640,7 @@ Specifies the source for thumbnail elements.
 
 
 Default Value:
+{:.param}
 
 
 

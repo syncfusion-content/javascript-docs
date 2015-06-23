@@ -112,6 +112,7 @@ Specify animation speed for the Splitter pane movement while collapsing and expa
 
 
 Default Value:
+{:.param}
 
 
 
@@ -165,6 +166,7 @@ Specify the CSS class to splitter control to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -217,6 +219,7 @@ Specifies the animation behavior of the splitter.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -270,6 +273,7 @@ Specify window resizing behavior for splitter control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -322,6 +326,7 @@ Specify Right to Left Direction for splitter control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -374,6 +379,7 @@ Specify height for splitter control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -427,6 +433,7 @@ Specify the orientation for spliter control.See orientation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -479,6 +486,7 @@ Specify properties for each pane.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -532,6 +540,7 @@ Specify width for splitter control.
 
 
 Default Value:
+{:.param}
 
 
 

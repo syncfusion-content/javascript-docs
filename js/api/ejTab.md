@@ -51,6 +51,7 @@ Specifies the ajaxSettings option to load the content to the Tab control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -145,6 +146,7 @@ Tab items interaction with keyboard keys, like headers active navigation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -167,6 +169,7 @@ Allow to collapsing the active item, while click on the active header.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -189,6 +192,7 @@ Set the root class for Tab theme. This cssClass API helps to use custom skinning
 
 
 Default Value:
+{:.param}
 
 
 
@@ -211,6 +215,7 @@ Disables the given tab headers and content panels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -233,6 +238,7 @@ Specifies the animation behavior of the tab.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -255,6 +261,7 @@ When this property is set to false, it disables the tab control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -277,6 +284,7 @@ Enables the given tab headers and content panels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -299,6 +307,7 @@ Save current model value to browser cookies for state maintains. While refresh t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -321,6 +330,7 @@ Display Right to Left direction for headers and panels text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -343,6 +353,7 @@ Specify to enable scrolling for Tab header.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -365,6 +376,7 @@ The event API to bind the action for active the tab items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -387,6 +399,7 @@ Tab header display top,bottom,left or right .See <a href="global.html#Position">
 
 
 Default Value:
+{:.param}
 
 
 
@@ -409,6 +422,7 @@ Set the height of the tab header element. Default this property value is null, s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -431,6 +445,7 @@ Height set the outer panel element. Default this property value is null, so heig
 
 
 Default Value:
+{:.param}
 
 
 
@@ -453,6 +468,7 @@ Adjust the content panel height for given option (content, auto and fill), by de
 
 
 Default Value:
+{:.param}
 
 
 
@@ -475,6 +491,7 @@ The idPrefix property appends the give string on runtime added tab item id&rsquo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -497,6 +514,7 @@ Tab header to active for given index value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -519,6 +537,7 @@ Display the close button for each tab items. While click on the close icon parti
 
 
 Default Value:
+{:.param}
 
 
 
@@ -541,6 +560,7 @@ Display the Reload button for each tab items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -563,6 +583,7 @@ Tab panels and headers to display the rounded corner style.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -585,6 +606,7 @@ Set the width for outer panel element, if not it&rsquo;s take parent width.
 
 
 Default Value:
+{:.param}
 
 
 

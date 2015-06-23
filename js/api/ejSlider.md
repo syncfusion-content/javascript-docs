@@ -91,6 +91,7 @@ Specifies the animationSpeed of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -137,6 +138,7 @@ Specify the CSS class to slider to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -183,6 +185,7 @@ Specifies the animation behavior of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -229,6 +232,7 @@ Specifies the state of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -274,6 +278,7 @@ Specify the enablePersistence to slider to save current model value to browser c
 
 
 Default Value:
+{:.param}
 
 
 
@@ -319,6 +324,7 @@ Specifies the Right to Left Direction of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -367,6 +373,7 @@ Specifies the height of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -412,6 +419,7 @@ Specifies the incremental step value of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -459,6 +467,7 @@ Specifies the distance between two major (large) ticks from the scale of the sli
 
 
 Default Value:
+{:.param}
 
 
 
@@ -506,6 +515,7 @@ Specifies the ending value of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -553,6 +563,7 @@ Specifies the starting value of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -601,6 +612,7 @@ Specifies the orientation of the slider.See orientation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -646,6 +658,7 @@ Specifies the readOnly of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -691,6 +704,7 @@ Specifies the rounded corner behavior for slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -736,6 +750,7 @@ Specifies the major (large) and minor (small) ticks of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -783,6 +798,7 @@ Specifies the showSmallTicks of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -830,6 +846,7 @@ Specifies the showTooltip to shows the current Slider value, while moving the Sl
 
 
 Default Value:
+{:.param}
 
 
 
@@ -878,6 +895,7 @@ Specifies the sliderType of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -924,6 +942,7 @@ Specifies the distance between two minor (small) ticks from the scale of the sli
 
 
 Default Value:
+{:.param}
 
 
 
@@ -971,6 +990,7 @@ Specifies the value of the slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1018,6 +1038,7 @@ Specifies the values of the range slider.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1065,6 +1086,7 @@ Specifies the width of the slider.
 
 
 Default Value:
+{:.param}
 
 
 

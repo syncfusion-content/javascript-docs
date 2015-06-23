@@ -65,6 +65,7 @@ Specifies whether to allow scrolling behavior for the contents.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -103,6 +104,7 @@ Specifies android mode menu type.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -128,6 +130,7 @@ Sets the root class for Menu theme. This cssClass API helps to use custom skinni
 
 
 Default Value:
+{:.param}
 
 
 
@@ -153,6 +156,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -207,6 +211,7 @@ Specifies cancel button color in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -232,6 +237,7 @@ Specifies cancel button text in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -257,6 +263,7 @@ Specifies whether to show cancel button in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -282,6 +289,7 @@ Specifies whether to show title in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -307,6 +315,7 @@ Specifies title text in ios7 mode.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -332,6 +341,7 @@ Specifies ios7 mode menu type.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -357,6 +367,7 @@ Specifies the rendering mode of the control. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -382,6 +393,7 @@ Specifies whether need to render the control with the template contents.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -407,6 +419,7 @@ Specifies in which action need to show the menu. See <a href="global.html#ShowOn
 
 
 Default Value:
+{:.param}
 
 
 
@@ -432,6 +445,7 @@ Specifies whether need to show the scroll bars when scrolling is allowed.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -474,6 +488,7 @@ Specifies ID of the element contains template contents.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -499,6 +514,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -553,6 +569,7 @@ Specifies whether to render control based on the windowsphone's current accent c
 
 
 Default Value:
+{:.param}
 
 
 
@@ -578,6 +595,7 @@ Specifies windows mode menu type.
 
 
 Default Value:
+{:.param}
 
 
 

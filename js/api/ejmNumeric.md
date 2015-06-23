@@ -104,6 +104,7 @@ Sets the root class for Editor theme. This cssClass API helps to use custom skin
 
 
 Default Value:
+{:.param}
 
 
 
@@ -169,6 +170,7 @@ Specifies the decimal places to set the decimal(floating point) numbers.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -235,6 +237,7 @@ Specifies whether to enable or disable the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -300,6 +303,7 @@ Specifies whether to restrict entering the values outside the defined range.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -366,6 +370,7 @@ Specifies the step value for incrementation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -431,6 +436,7 @@ Specify the maximum value of the editor.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -496,6 +502,7 @@ Specify the minimum value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -561,6 +568,7 @@ Specifies the name of the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -626,6 +634,7 @@ Specifies whether the control is read only to disable typing the value manually 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -691,6 +700,7 @@ Specifies the rendering mode of the control. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -756,6 +766,7 @@ Specifies whether to show the border in the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -822,6 +833,7 @@ Specifies whether to show the spin button for incremention and decremention of t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -888,6 +900,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -953,6 +966,7 @@ Specifies the value of the editor.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1018,6 +1032,7 @@ Specifies the watermark text of the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1104,6 +1119,7 @@ Specifies whether to render control based on the windowsphone's current accent c
 
 
 Default Value:
+{:.param}
 
 
 

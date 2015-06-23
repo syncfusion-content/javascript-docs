@@ -98,6 +98,7 @@ Specify the CSS class to timepicker to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -145,6 +146,7 @@ Specifies the animation behavior in timepicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -192,6 +194,7 @@ When this property is set to false, it disables the timepicker control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -239,6 +242,7 @@ Enables or disables the state maintenance of TimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -286,6 +290,7 @@ Sets the TimePicker direction as right to left alignment.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -333,6 +338,7 @@ When enableStrictMode true it allows the value outside of the range also, otherw
 
 
 Default Value:
+{:.param}
 
 
 
@@ -379,6 +385,7 @@ Defines the height of the TimePicker textbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -426,6 +433,7 @@ Sets the step value for increment an hour value through arrow keys or mouse scro
 
 
 Default Value:
+{:.param}
 
 
 
@@ -473,6 +481,7 @@ Specifies the HTML Attributes of the ejTimePicker
 
 
 Default Value:
+{:.param}
 
 
 
@@ -520,6 +529,7 @@ Sets the time interval between the two adjacent time values in the popup.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -567,6 +577,7 @@ Defines the localization locale for TimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -614,6 +625,7 @@ Sets the maximum time value to the TimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -661,6 +673,7 @@ Sets the minimum time value to the TimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -708,6 +721,7 @@ Sets the step value for increment the minute value through arrow keys or mouse s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -755,6 +769,7 @@ Defines the height of the TimePicker popup.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -802,6 +817,7 @@ Defines the width of the TimePicker popup.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -849,6 +865,7 @@ Indicates that the timepicker value can only be read.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -896,6 +913,7 @@ Sets the step value for increment the seconds value through arrow keys or mouse 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -943,6 +961,7 @@ Shows or hides the arrow button from the TimePicker textbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -990,6 +1009,7 @@ Changes the sharped edges into rounded corner for the TimePicker textbox and pop
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1037,6 +1057,7 @@ Defines the time format displayed in the TimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1084,6 +1105,7 @@ Sets a specified time value on the TimePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1131,6 +1153,7 @@ Defines the width of the TimePicker textbox.
 
 
 Default Value:
+{:.param}
 
 
 

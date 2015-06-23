@@ -90,6 +90,7 @@ Toggles the visibility of the range stroke color of the labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -137,6 +138,7 @@ Toggles the visibility of the range stroke color of the ticks.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -205,6 +207,7 @@ Specifies whether trim the labels will be true or false.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -273,6 +276,7 @@ Specifies the color of the text in caption.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -320,6 +324,7 @@ Specifies the fontFamily of caption. Caption text render with this fontFamily
 
 
 Default Value:
+{:.param}
 
 
 
@@ -367,6 +372,7 @@ Specifies the fontStyle of caption. Caption text render with this fontStyle. See
 
 
 Default Value:
+{:.param}
 
 
 
@@ -414,6 +420,7 @@ Specifies the fontWeight of caption. Caption text render with this fontWeight. S
 
 
 Default Value:
+{:.param}
 
 
 
@@ -461,6 +468,7 @@ Specifies the opacity of caption. Caption text render with this opacity.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -508,6 +516,7 @@ Specifies the size of caption. Caption text render with this size
 
 
 Default Value:
+{:.param}
 
 
 
@@ -597,6 +606,7 @@ Specifies the color of the indicator's text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -644,6 +654,7 @@ Specifies the fontFamily of indicator. Indicator text render with this fontFamil
 
 
 Default Value:
+{:.param}
 
 
 
@@ -691,6 +702,7 @@ Specifies the fontStyle of indicator. Indicator text render with this fontStyle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -738,6 +750,7 @@ Specifies the fontWeight of indicator. Indicator text render with this fontWeigh
 
 
 Default Value:
+{:.param}
 
 
 
@@ -785,6 +798,7 @@ Specifies the opacity of indicator text. Indicator text render with this Opacity
 
 
 Default Value:
+{:.param}
 
 
 
@@ -832,6 +846,7 @@ Specifies the size of indicator. Indicator text render with this size.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -900,6 +915,7 @@ Specifies the horizontal position of the indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -947,6 +963,7 @@ Specifies the vertical position of the indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -994,6 +1011,7 @@ Specifies the padding to be applied when text position is used.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1083,6 +1101,7 @@ Specifies the border color of indicator symbol.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1130,6 +1149,7 @@ Specifies the border width of indicator symbol.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1177,6 +1197,7 @@ Specifies the color of indicator symbol.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1224,6 +1245,7 @@ Specifies the url of image that represents indicator symbol.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1271,6 +1293,7 @@ Specifies the opacity of indicator symbol.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1318,6 +1341,7 @@ Specifies the shape of indicator symbol.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1386,6 +1410,7 @@ Specifies the height of indicator symbol.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1433,6 +1458,7 @@ Specifies the width of indicator symbol.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1480,6 +1506,7 @@ Specifies the text to be displayed as indicator text. By default difference betw
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1527,6 +1554,7 @@ Specifies the alignment of indicator with respect to scale based on text positio
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1574,6 +1602,7 @@ Specifies where indicator text should be anchored when indicator overlaps with o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1621,6 +1650,7 @@ indicator text render in the specified angle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1668,6 +1698,7 @@ Specifies where indicator should be placed.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1715,6 +1746,7 @@ Specifies the space between indicator symbol and text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1762,6 +1794,7 @@ Specifies whether indicator will be visible or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1830,6 +1863,7 @@ Specifies the position in horizontal direction
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1877,6 +1911,7 @@ Specifies the position in horizontal direction
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1924,6 +1959,7 @@ Specifies the padding to be applied when text position is used.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2013,6 +2049,7 @@ Specifies the color of the subtitle's text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2060,6 +2097,7 @@ Specifies the fontFamily of subtitle. Subtitle text render with this fontFamily.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2107,6 +2145,7 @@ Specifies the fontStyle of subtitle. Subtitle text render with this fontStyle. S
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2154,6 +2193,7 @@ Specifies the fontWeight of subtitle. Subtitle text render with this fontWeight.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2201,6 +2241,7 @@ Specifies the opacity of subtitle. Subtitle text render with this opacity.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2248,6 +2289,7 @@ Specifies the size of subtitle. Subtitle text render with this size.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2316,6 +2358,7 @@ Specifies the horizontal position of the subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2363,6 +2406,7 @@ Specifies the vertical position of the subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2410,6 +2454,7 @@ Specifies the padding to be applied when text position is used.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2457,6 +2502,7 @@ Specifies the text to be displayed as subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2504,6 +2550,7 @@ Specifies the alignment of sub title text with respect to scale. Alignment will 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2551,6 +2598,7 @@ Specifies where subtitle text should be anchored when sub title text overlaps wi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2598,6 +2646,7 @@ Subtitle render in the specified angle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2645,6 +2694,7 @@ Specifies where sub title text should be placed.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2692,6 +2742,7 @@ Specifies the text to be displayed on bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2739,6 +2790,7 @@ Specifies the alignment of caption text with respect to scale. This property wil
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2786,6 +2838,7 @@ Specifies caption text anchoring when caption text overlaps with other caption g
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2833,6 +2886,7 @@ Specifies the angel in which the caption is rendered.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2880,6 +2934,7 @@ Specifies how caption text should be placed.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2927,6 +2982,7 @@ Comparative measure bar in bullet graph render till the specified value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2974,6 +3030,7 @@ Toggles the animation of bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3021,6 +3078,7 @@ Sets a value whether to make the bullet graph responsive on resize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3068,6 +3126,7 @@ Specifies the direction of flow in bullet graph. Neither it may be backward nor 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3115,6 +3174,7 @@ Specifies the height of the bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3162,6 +3222,7 @@ Bullet graph will render in the specified orientation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3230,6 +3291,7 @@ Specifies the ending range to which the qualitative ranges will render.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3277,6 +3339,7 @@ Specifies the ending range to which the qualitative ranges will render.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3324,6 +3387,7 @@ Specifies the ending range to which the qualitative ranges will render.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3371,6 +3435,7 @@ Specifies the opacity for the qualitative ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3418,6 +3483,7 @@ Specifies the opacity for the qualitative ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3465,6 +3531,7 @@ Specifies the opacity for the qualitative ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3512,6 +3579,7 @@ Specifies the stroke for the qualitative ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3559,6 +3627,7 @@ Specifies the stroke for the qualitative ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3606,6 +3675,7 @@ Specifies the stroke for the qualitative ranges.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3653,6 +3723,7 @@ Size of the qualitative range depends up on the specified value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3700,6 +3771,7 @@ Length of the quantitative range depends up on the specified value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3789,6 +3861,7 @@ Specifies the stroke of the comparative measure.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3836,6 +3909,7 @@ Specifies the width of the comparative measure.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3904,6 +3978,7 @@ Specifies the Stroke of the featured measure in bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3951,6 +4026,7 @@ Specifies the width of the featured measure in bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4019,6 +4095,7 @@ Specifies the category of feature measure.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4066,6 +4143,7 @@ Comparative measure render till the specified value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4113,6 +4191,7 @@ Feature measure render till the specified value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4181,6 +4260,7 @@ Specifies the category of the bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4228,6 +4308,7 @@ Comparative measure render based on the values in the specified field.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4275,6 +4356,7 @@ Specifies the dataSource for the bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4357,6 +4439,7 @@ Feature measure render based on the values in the specified field.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4404,6 +4487,7 @@ Specifies the query for fetching the values form data source to render the bulle
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4440,6 +4524,7 @@ Specifies the name of the table.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4487,6 +4572,7 @@ Specifies the interval for the Graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4576,6 +4662,7 @@ Specifies the fontFamily of labels in bullet graph. Labels render with this font
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4623,6 +4710,7 @@ Specifies the fontStyle of labels in bullet graph. Labels render with this fontS
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4670,6 +4758,7 @@ Specifies the fontWeight of labels in bullet graph. Labels render with this font
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4717,6 +4806,7 @@ Specifies the opacity of labels in bullet graph. Labels render with this opacity
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4764,6 +4854,7 @@ Specifies the placement of labels in bullet graph scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4811,6 +4902,7 @@ Specifies the prefix to be added with labels in bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4858,6 +4950,7 @@ Specifies the suffix to be added after labels in bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4905,6 +4998,7 @@ Specifies the horizontal/vertical padding of labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4952,6 +5046,7 @@ Specifies the position of the labels to render either above or below the graph. 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4999,6 +5094,7 @@ Specifies the Size of the labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5046,6 +5142,7 @@ Specifies the stroke color of the labels in bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5114,6 +5211,7 @@ This property specifies the x position for rendering quantitative scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5161,6 +5259,7 @@ This property specifies the y position for rendering quantitative scale.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5229,6 +5328,7 @@ Specifies the size of the major ticks.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5276,6 +5376,7 @@ Specifies the stroke color of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5323,6 +5424,7 @@ Specifies the width of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5370,6 +5472,7 @@ Specifies the maximum value of the Graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5417,6 +5520,7 @@ Specifies the minimum value of the Graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5485,6 +5589,7 @@ Specifies the size of minor ticks.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5532,6 +5637,7 @@ Specifies the stroke color of minor ticks in bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5579,6 +5685,7 @@ Specifies the width of the minor ticks in bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5626,6 +5733,7 @@ The specified number of minor ticks will be rendered per interval.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5673,6 +5781,7 @@ Specifies the placement of ticks to render either inside or outside the scale. S
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5720,6 +5829,7 @@ Specifies the position of the ticks to render either above, below or inside the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5767,6 +5877,7 @@ By specifying this property the user can change the theme of the bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5835,6 +5946,7 @@ Specifies template for caption tooltip
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5882,6 +5994,7 @@ Toggles the visibility of caption tooltip
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5929,6 +6042,7 @@ Specifies the ID of a div, which is to be displayed as tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5976,6 +6090,7 @@ Toggles the visibility of tooltip
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6023,6 +6138,7 @@ Feature measure bar in bullet graph render till the specified value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6070,6 +6186,7 @@ Specifies the width of the bullet graph.
 
 
 Default Value:
+{:.param}
 
 
 

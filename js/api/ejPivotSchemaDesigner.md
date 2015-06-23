@@ -50,6 +50,7 @@ Sets the CSS name for custom operation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -73,6 +74,7 @@ Allows the user to set the filter list.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -97,6 +99,7 @@ Sets the height for PivotSchemaDesigner.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -120,6 +123,7 @@ Allows the user to set Pivot Calculation List.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -144,6 +148,7 @@ Allows the user to set the pivot column list.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -168,6 +173,7 @@ Sets the pivot control bounds with the Pivot Schema Designer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -192,6 +198,7 @@ Allows the user to set the pivot row list.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -216,6 +223,7 @@ Allows the user to Pivot Table Field List to Pivot Schema Designer.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -240,6 +248,7 @@ Connects the service using the specified URL for any server updates. See url
 
 
 Default Value:
+{:.param}
 
 
 
@@ -264,6 +273,7 @@ Sets the width for PivotSchemaDesigner.
 
 
 Default Value:
+{:.param}
 
 
 

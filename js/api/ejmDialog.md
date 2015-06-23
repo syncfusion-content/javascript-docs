@@ -65,6 +65,7 @@ Specifies whether to allow scrolling behavior for the contents.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -88,6 +89,7 @@ Specifies whether need to refresh scrollpanel rendered in the control when eleme
 
 
 Default Value:
+{:.param}
 
 
 
@@ -111,6 +113,7 @@ Sets the root class for Dialog theme. This cssClass API helps to use custom skin
 
 
 Default Value:
+{:.param}
 
 
 
@@ -134,6 +137,7 @@ Enables or Disables animation effect on opening or closing the dialog.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -157,6 +161,7 @@ Specifies whether to open the dialog on initial loading.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -180,6 +185,7 @@ Specifies whether to enable modal dialog.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -203,6 +209,7 @@ Specifies whether to enable device's native scroll behavior when scrolling is al
 
 
 Default Value:
+{:.param}
 
 
 
@@ -226,6 +233,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -249,6 +257,7 @@ Specifies the text of left button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -272,6 +281,7 @@ Specifies the dialog mode to render.See <a href="global.html#Mode">Mode</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -295,6 +305,7 @@ Specifies the rendering mode of the control. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -318,6 +329,7 @@ Specifies the text of right button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -341,6 +353,7 @@ Specifies whether to show the buttons in the dialog.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -364,6 +377,7 @@ Specifies the target height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -387,6 +401,7 @@ Specifies ID of the element contains template contents.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -410,6 +425,7 @@ Specifies the theme.See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -433,6 +449,7 @@ Specifies the title text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -468,6 +485,7 @@ Specifies whether to render control based on the windowsphone's current accent c
 
 
 Default Value:
+{:.param}
 
 
 

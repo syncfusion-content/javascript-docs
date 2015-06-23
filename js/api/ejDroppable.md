@@ -84,6 +84,7 @@ Used to accept the droppable items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -134,6 +135,7 @@ Used to group sets of droppable items, in addition to droppable's accept option.
 
 
 Default Value:
+{:.param}
 
 
 

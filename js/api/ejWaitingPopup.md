@@ -101,6 +101,7 @@ Sets the root class for the WaitingPopup control theme
 
 
 Default Value:
+{:.param}
 
 
 
@@ -159,6 +160,7 @@ Enables or disables the default loading icon.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -217,6 +219,7 @@ Enables the visibility of the WaitingPopup control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -275,6 +278,7 @@ Loads HTML content inside the popup panel instead of the default icon
 
 
 Default Value:
+{:.param}
 
 
 
@@ -372,6 +376,7 @@ Sets the custom text in the pop-up panel to notify the waiting process
 
 
 Default Value:
+{:.param}
 
 
 

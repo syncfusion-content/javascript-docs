@@ -53,6 +53,7 @@ To show the Radial in intial render.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -75,6 +76,7 @@ Renders the back button Image for Radial using class.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -97,6 +99,7 @@ Sets the root class for RadialMenu theme. This cssClass API helps to use custom 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -119,6 +122,7 @@ To enable Animation for Radial Menu.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -141,6 +145,7 @@ Renders the Image for Radial using Class.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -163,6 +168,7 @@ Specifies the radius of radial menu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -185,6 +191,7 @@ To show the Radial while clicking given target element.
 
 
 Default Value:
+{:.param}
 
 
 

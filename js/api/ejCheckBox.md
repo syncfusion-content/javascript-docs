@@ -87,6 +87,7 @@ Specifies whether chechbox has to be in checked or not. We can also specify arra
 
 
 Default Value:
+{:.param}
 
 
 
@@ -134,6 +135,7 @@ Specifies the State of ChecKBox.See <a href="global.html#CheckState">CheckState<
 
 
 Default Value:
+{:.param}
 
 
 
@@ -181,6 +183,7 @@ Specify the CSS class to CheckBox to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -227,6 +230,7 @@ Specifies the checkbox control state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -275,6 +279,7 @@ Specifies the persist property for Checkbox while initialization. The persist AP
 
 
 Default Value:
+{:.param}
 
 
 
@@ -322,6 +327,7 @@ Specify the Right to Left direction to CheckBox
 
 
 Default Value:
+{:.param}
 
 
 
@@ -369,6 +375,7 @@ Specifies the enable or disable Tri-State for checkbox control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -417,6 +424,7 @@ Specifies the HTML Attributes of the Checkbox
 
 
 Default Value:
+{:.param}
 
 
 
@@ -464,6 +472,7 @@ Specifies the HTML Attributes of the Checkbox
 
 
 Default Value:
+{:.param}
 
 
 
@@ -511,6 +520,7 @@ Specifies the id atribute of the Checkbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -558,6 +568,7 @@ Specify the idprefix value to be added before the current id of the checkbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -605,6 +616,7 @@ Specifies the name attribute of the Checkbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -652,6 +664,7 @@ Specify the rounded corner to checkbox
 
 
 Default Value:
+{:.param}
 
 
 
@@ -699,6 +712,7 @@ Specifies the size of the CheckBox.See <a href="global.html#CheckboxSize">Checkb
 
 
 Default Value:
+{:.param}
 
 
 
@@ -746,6 +760,7 @@ Specifies the text content for CheckBox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -792,6 +807,7 @@ Set the jquery validation error message in checkbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -846,6 +862,7 @@ Set the jquery validation rules in checkbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -897,6 +914,7 @@ Specifies the value attribute of the Checkbox.
 
 
 Default Value:
+{:.param}
 
 
 

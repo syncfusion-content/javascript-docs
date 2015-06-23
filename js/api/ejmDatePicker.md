@@ -119,6 +119,7 @@ Sets the root class for DatePicker theme. This cssClass API helps to use custom 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -183,6 +184,7 @@ Specifies the localization culture to be used.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -247,6 +249,7 @@ Specifies the date format.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -311,6 +314,7 @@ Specifies whether to enable or disbale the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -375,6 +379,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -460,6 +465,7 @@ Specifies whether to use ios7 native datepicker or not.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -522,6 +528,7 @@ Specifies the maximum selectable date.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -586,6 +593,7 @@ Specifies the minimum selectable date.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -650,6 +658,7 @@ Specifies the rendering mode of the control. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -714,6 +723,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -778,6 +788,7 @@ Specifies the value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -863,6 +874,7 @@ Specifies whether to render the DatePicker based on the windowsphone's current t
 
 
 Default Value:
+{:.param}
 
 
 

@@ -134,6 +134,7 @@ Property to enable the ribbon resize feature.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -259,6 +260,7 @@ Specify the application tab to contain application menu in the ribbon control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -325,6 +327,7 @@ Specify the ID of 'ul' list to create application menu in the ribbon control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -391,6 +394,7 @@ Specify the menu members,events using the menu settings for the menu in the appl
 
 
 Default Value:
+{:.param}
 
 
 
@@ -457,6 +461,7 @@ To specify the type of application tab item.Specify the type of application tab 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -523,6 +528,7 @@ Specify the contextual tabs and tabset to the ribbon control with the background
 
 
 Default Value:
+{:.param}
 
 
 
@@ -618,6 +624,7 @@ Specify the backgroundColor of the contextual tabs and tabset in the ribbon cont
 
 
 Default Value:
+{:.param}
 
 
 
@@ -713,6 +720,7 @@ Specify the borderColor of the contextual tabs and tabset in the ribbon control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -808,6 +816,7 @@ Specify the tabs to present in the contectual tabs and tab set.Please refer the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -903,6 +912,7 @@ Specify the index or indexes to disable the given index tab or indexes tabs in t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -977,6 +987,7 @@ Specify the index or indexes to enable the given index tab or indexes tabs in th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1054,6 +1065,7 @@ Specify the index of the ribbon tab to select the given index tab item in the ri
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1127,6 +1139,7 @@ Specify the tabs and its groups,controls to the ribbon control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1200,6 +1213,7 @@ Specify single group or multiple groups and its contents to each tab in the ribb
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1266,6 +1280,7 @@ Specify the alignment of controls in the groups in 'row' type or 'column' type.V
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1332,6 +1347,7 @@ Specify the syncfusion button,split button,dropdown list,toggle button,gallery,c
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1408,6 +1424,7 @@ Specify the height,width,type,isBig property to the controls in the group common
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1494,6 +1511,7 @@ Specify the controls such as syncfusion button,split button,dropdown list,toggle
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1570,6 +1588,7 @@ Specify the syncfusion button members,events using this buttonSettings.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1646,6 +1665,7 @@ It is used to set the count of gallery contents in a row.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1771,6 +1791,7 @@ Specify the custom items such as div,table,controls as custom controls with the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1860,6 +1881,7 @@ Specify the css class property to apply styles to the button,split,dropdown cont
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1942,6 +1964,7 @@ Specify the syncfusion button and menu as gallery extra items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2067,6 +2090,7 @@ Specify the syncfusion button members,events using buttonSettings.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2196,6 +2220,7 @@ Specify the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.bu
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2325,6 +2350,7 @@ Specify the custom tooltip for gallery extra item's button.Please refer ejRibbon
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2454,6 +2480,7 @@ Specify the UL list id to render menu as gallery extra item.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2583,6 +2610,7 @@ Specify the syncfusion menu members,events using menuSettings.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2712,6 +2740,7 @@ Specify the text for gallery extra item's button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2837,6 +2866,7 @@ Specify the tooltip for gallery extra item's button.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2962,6 +2992,7 @@ Provide custom tooltip for button,split button,dropdown list,toggle button,custo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3046,6 +3077,7 @@ It is used to set content to the custom tooltip.We have provided text and html s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3130,6 +3162,7 @@ It is used to set icon to the custom tooltip content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3214,6 +3247,7 @@ It is used to set title to the custom tooltip.We have provided text and html sup
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3298,6 +3332,7 @@ Specify the syncfusion dropdown list members,events using this dropdownSettings.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3380,6 +3415,7 @@ Specify the separator to the control which is in row type group.The separator se
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3467,6 +3503,7 @@ It is used to set the count of gallery contents in a row,when the gallery is in 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3592,6 +3629,7 @@ It is used to define each gallery content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3717,6 +3755,7 @@ Specify the syncfusion button members,events using buttonSettings.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3846,6 +3885,7 @@ It is used to specify the custom tooltip for gallery content.Please refer ejRibb
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3975,6 +4015,7 @@ It is used to set text for the gallery content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4100,6 +4141,7 @@ It is used to set tooltip for the gallery content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4225,6 +4267,7 @@ Specify the Id for button,split button,dropdown list,toggle button,gallery,custo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4301,6 +4344,7 @@ Specify the size for button,split button controls.set "true" for big size and "f
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4377,6 +4421,7 @@ It is used to set the height of each gallery content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4502,6 +4547,7 @@ It is used to set the width of each gallery content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4627,6 +4673,7 @@ Specify the syncfusion split button members,events using this splitButtonSetting
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4708,6 +4755,7 @@ Specify the text for button,split button,toggle button controls in the sub group
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4784,6 +4832,7 @@ Specify the syncfusion toggle button members,events using this toggleButtonSetti
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4860,6 +4909,7 @@ Specify the tooltip for button,split button,dropdown list,toggle button,custom c
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4936,6 +4986,7 @@ Specify the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or "
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5012,6 +5063,7 @@ Specify the ID of custom items to place into the groups.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5078,6 +5130,7 @@ Specify the HTML contents to place into the groups.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5142,6 +5195,7 @@ Specify the group expander for groups in the ribbon control.Set "true" to enable
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5208,6 +5262,7 @@ Specify the text to the groups in the ribbon control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5274,6 +5329,7 @@ Specify the custom items such as div,table,controls using the type "custom".
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5340,6 +5396,7 @@ Specify the ID for each tab's content panel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5406,6 +5463,7 @@ Specify the text of the tab in the ribbon control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5472,6 +5530,7 @@ Specify the width to the ribbon control.we can set width in string or number for
 
 
 Default Value:
+{:.param}
 
 
 

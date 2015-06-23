@@ -51,6 +51,7 @@ Sets the root class for Toolbar control theme
 
 
 Default Value:
+{:.param}
 
 
 
@@ -73,6 +74,7 @@ Specifies dataSource value for the Toolbar during initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -95,6 +97,7 @@ Specifies the Toolbar control state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -117,6 +120,7 @@ Specifies enableRTL property for the Toolbar during initialization.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -139,6 +143,7 @@ Specifies the to enableSeparator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -161,6 +166,7 @@ Specifies the mapping fields for the data items of the Toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -279,6 +285,7 @@ Specifies the height of the Toolbar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -301,6 +308,7 @@ Specifies the to show or hide.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -323,6 +331,7 @@ Enables/Disables the responsive support for RTE control toolbar items during the
 
 
 Default Value:
+{:.param}
 
 
 
@@ -345,6 +354,7 @@ Specifies the to toolbar orientation.See orientation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -367,6 +377,7 @@ Specifies Specifies the query to retrieve the data from the online server. The q
 
 
 Default Value:
+{:.param}
 
 
 
@@ -389,6 +400,7 @@ Specifies showRoundedCorner property for the Toolbar during initialization.
 
 
 Default Value:
+{:.param}
 
 
 

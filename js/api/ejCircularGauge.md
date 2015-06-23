@@ -50,6 +50,7 @@ Specifies animationSpeed of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -73,6 +74,7 @@ Specifies the backgroundcolor of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -96,6 +98,7 @@ Specify distanceFromCorner value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -119,6 +122,7 @@ Specify animate value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -142,6 +146,7 @@ Specify enableResize value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -165,6 +170,7 @@ Specify the frame of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -188,6 +194,7 @@ Specify the url of the frame background image for circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -211,6 +218,7 @@ Specifies the frameType of circular gauge. See <a href="global.html#Frame">Frame
 
 
 Default Value:
+{:.param}
 
 
 
@@ -234,6 +242,7 @@ Specifies the end angle for the half circular frame.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -257,6 +266,7 @@ Specifies the start angle for the half circular frame.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -280,6 +290,7 @@ Specify gaugePosition value of circular gauge See GaugePosition
 
 
 Default Value:
+{:.param}
 
 
 
@@ -303,6 +314,7 @@ Specifies the height of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -326,6 +338,7 @@ Specifies the interiorGradient of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -349,6 +362,7 @@ Specify isRadialGradient value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -372,6 +386,7 @@ Specifies the maximum value of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -395,6 +410,7 @@ Specifies the minimum value of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -418,6 +434,7 @@ Specify outerCustomLabelPosition value of circular gauge See <a href="global.htm
 
 
 Default Value:
+{:.param}
 
 
 
@@ -441,6 +458,7 @@ Specifies the radius of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -464,6 +482,7 @@ Specify readonly value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -487,6 +506,7 @@ Specify the pointers, ticks, labels, indicators, ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -510,6 +530,7 @@ Specify backgroundColor for the scale of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -533,6 +554,7 @@ Specify border for scales of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -556,6 +578,7 @@ Specify border color for scales of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -579,6 +602,7 @@ Specify border width of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -602,6 +626,7 @@ Specify scale direction of circular gauge. See <a href="global.html#Directions">
 
 
 Default Value:
+{:.param}
 
 
 
@@ -625,6 +650,7 @@ Specify representating state of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -648,6 +674,7 @@ Specify indicator height of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -671,6 +698,7 @@ Specify imageUrl of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -694,6 +722,7 @@ Specify position of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -717,6 +746,7 @@ Specify x-axis of position of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -740,6 +770,7 @@ Specify y-axis of position of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -763,6 +794,7 @@ Specify the various states of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -786,6 +818,7 @@ Specify backgroundColor for indicator of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -809,6 +842,7 @@ Specify borderColor for indicator of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -832,6 +866,7 @@ Specify end value for each specified state of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -855,6 +890,7 @@ Specify value of the font as the indicator when the indicator style is set with 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -878,6 +914,7 @@ Specify start value for each specified state of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -901,6 +938,7 @@ Specify value of the text as the indicator when the indicator style is set with 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -924,6 +962,7 @@ Specify value of the textColor as the indicator when the indicator style is set 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -947,6 +986,7 @@ Specify indicator style of circular gauge. See <a href="global.html#IndicatorTyp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -970,6 +1010,7 @@ Specify indicator width of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -993,6 +1034,7 @@ Specify the text values displayed in a meaningful manner alongside the ticks of 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1016,6 +1058,7 @@ Specify the angle for the labels of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1039,6 +1082,7 @@ Specify labels autoAngle value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1062,6 +1106,7 @@ Specify label color of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1085,6 +1130,7 @@ Specify distanceFromScale value for labels of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1108,6 +1154,7 @@ Specify font for labels of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1131,6 +1178,7 @@ Specify font fontFamily for labels of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1154,6 +1202,7 @@ Specify font Style for labels of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1177,6 +1226,7 @@ Specify font size for labels of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1200,6 +1250,7 @@ Specify includeFirstValue of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1223,6 +1274,7 @@ Specify opacity value for labels of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1246,6 +1298,7 @@ Specify label placement of circular gauge. See <a href="global.html#LabelPlaceme
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1269,6 +1322,7 @@ Specify label Style of circular gauge. See <a href="global.html#LabelType">Label
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1292,6 +1346,7 @@ Specify unitText of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1315,6 +1370,7 @@ Specify unitTextPosition of circular gauge. See UnitTextPosition
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1338,6 +1394,7 @@ Specify majorIntervalValue of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1361,6 +1418,7 @@ Specify maximum scale value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1384,6 +1442,7 @@ Specify minimum scale value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1407,6 +1466,7 @@ Specify minorIntervalValue of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1430,6 +1490,7 @@ Specify opacity value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1453,6 +1514,7 @@ Specify pointer cap of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1476,6 +1538,7 @@ Specify cap backgroundColor of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1499,6 +1562,7 @@ Specify cap borderColor of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1522,6 +1586,7 @@ Specify pointerCap borderWidth value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1545,6 +1610,7 @@ Specify cap interiorGradient value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1568,6 +1634,7 @@ Specify pointerCap Radius value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1591,6 +1658,7 @@ Specify pointers value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1614,6 +1682,7 @@ Specify backgroundColor for the pointer of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1637,6 +1706,7 @@ Specify backNeedleLength of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1660,6 +1730,7 @@ Specify the border for pointers of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1683,6 +1754,7 @@ Specify border color for pointer of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1706,6 +1778,7 @@ Specify border width for pointers of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1729,6 +1802,7 @@ Specify distanceFromScale value for pointers of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1752,6 +1826,7 @@ Specify pointer gradients of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1775,6 +1850,7 @@ Specify pointer length of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1798,6 +1874,7 @@ Specify marker Style value of circular gauge. See <a href="global.html#MarkerTyp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1821,6 +1898,7 @@ Specify needle Style value of circular gauge. See <a href="global.html#NeedleTyp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1844,6 +1922,7 @@ Specify opacity value for pointer of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1867,6 +1946,7 @@ Specify pointer Placement value of circular gauge. See <a href="global.html#Poin
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1890,6 +1970,7 @@ Specify pointer value text of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1913,6 +1994,7 @@ Specify pointer text angle of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1936,6 +2018,7 @@ Specify pointer text auto angle of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1959,6 +2042,7 @@ Specify pointer value text color of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1982,6 +2066,7 @@ Specify pointer value text distance from pointer of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2005,6 +2090,7 @@ Specify pointer value text font option of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2028,6 +2114,7 @@ Specify pointer value text font family of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2051,6 +2138,7 @@ Specify pointer value text font style of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2074,6 +2162,7 @@ Specify pointer value text size of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2097,6 +2186,7 @@ Specify pointer value text opacity of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2120,6 +2210,7 @@ enable pointer value text visibility of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2143,6 +2234,7 @@ Specify showBackNeedle value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2166,6 +2258,7 @@ Specify pointer type value of circular gauge. See <a href="global.html#PointerTy
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2189,6 +2282,7 @@ Specify value of the pointer of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2212,6 +2306,7 @@ Specify pointer width of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2235,6 +2330,7 @@ Specify scale radius of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2258,6 +2354,7 @@ Specify ranges value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2281,6 +2378,7 @@ Specify backgroundColor for the ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2304,6 +2402,7 @@ Specify border for ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2327,6 +2426,7 @@ Specify border color for ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2350,6 +2450,7 @@ Specify border width for ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2373,6 +2474,7 @@ Specify distanceFromScale value for ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2396,6 +2498,7 @@ Specify endValue for ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2419,6 +2522,7 @@ Specify endWidth for ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2442,6 +2546,7 @@ Specify range gradients of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2465,6 +2570,7 @@ Specify opacity value for ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2488,6 +2594,7 @@ Specify placement of circular gauge. See <a href="global.html#RangePlacement">Ra
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2511,6 +2618,7 @@ Specify size of the range value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2534,6 +2642,7 @@ Specify startValue for ranges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2557,6 +2666,7 @@ Specify startWidth of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2580,6 +2690,7 @@ Specify shadowOffset value of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2603,6 +2714,7 @@ Specify showIndicators of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2626,6 +2738,7 @@ Specify showLabels of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2649,6 +2762,7 @@ Specify showPointers of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2672,6 +2786,7 @@ Specify showRanges of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2695,6 +2810,7 @@ Specify showScaleBar of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2718,6 +2834,7 @@ Specify showTicks of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2741,6 +2858,7 @@ Specify scaleBar size of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2764,6 +2882,7 @@ Specify startAngle of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2787,6 +2906,7 @@ Specify subGauge of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2811,6 +2931,7 @@ Specify subGauge Height of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2835,6 +2956,7 @@ Specify position for sub-gauge of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2859,6 +2981,7 @@ Specify x-axis position for sub-gauge of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2883,6 +3006,7 @@ Specify y-axis position for sub-gauge of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2907,6 +3031,7 @@ Specify subGauge Width of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2931,6 +3056,7 @@ Specify sweepAngle of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2954,6 +3080,7 @@ Specify ticks of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2977,6 +3104,7 @@ Specify the angle for the ticks of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3000,6 +3128,7 @@ Specify tick color of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3023,6 +3152,7 @@ Specify distanceFromScale value for ticks of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3046,6 +3176,7 @@ Specify tick height of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3069,6 +3200,7 @@ Specify tick placement of circular gauge. See <a href="global.html#TickPlacement
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3092,6 +3224,7 @@ Specify tick Style of circular gauge. See <a href="global.html#TickType">TickTyp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3115,6 +3248,7 @@ Specify tick width of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3138,6 +3272,7 @@ Specify the theme of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3161,6 +3296,7 @@ Specify tooltip option of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3184,6 +3320,7 @@ enable showCustomLabelTooltip of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3207,6 +3344,7 @@ enable showLabelTooltip of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3230,6 +3368,7 @@ Specify tooltip templateID of circular gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3253,6 +3392,7 @@ Specifies the value of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3276,6 +3416,7 @@ Specifies the width of circular gauge.
 
 
 Default Value:
+{:.param}
 
 
 

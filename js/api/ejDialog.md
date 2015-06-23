@@ -55,6 +55,7 @@ Gives dialog window rounded corners.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -77,6 +78,7 @@ Specifies the ajaxSettings option to load the content to the dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -171,6 +173,7 @@ To enable the dialog window to dragged within the page.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -193,6 +196,7 @@ Enables users to navigate right, left, up, and down in the control with keyboard
 
 
 Default Value:
+{:.param}
 
 
 
@@ -215,6 +219,7 @@ Customizes the close button tooltip text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -237,6 +242,7 @@ Allows the Dialog window to be closed by pressing the Esc key.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -259,6 +265,7 @@ Places the dialog in the given container.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -281,6 +288,7 @@ To load the dialog content at run time, such as ajax, images, and iframe.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -303,6 +311,7 @@ Loads AJAX, image, and iframe content from a given location (URL).
 
 
 Default Value:
+{:.param}
 
 
 
@@ -325,6 +334,7 @@ Set the root class for the Dialog control theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -347,6 +357,7 @@ Specifies the animation behavior of the Dialog.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -369,6 +380,7 @@ Enables or disables the Dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -391,6 +403,7 @@ Allows the dialog window to be used as a modal form.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -413,6 +426,7 @@ Saves the current model value to browser cookies for maintaining state.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -435,6 +449,7 @@ Allows the dialog to be resized above the minimum height and minimum width value
 
 
 Default Value:
+{:.param}
 
 
 
@@ -457,6 +472,7 @@ Displays dialog content from right to left when enabled
 
 
 Default Value:
+{:.param}
 
 
 
@@ -479,6 +495,7 @@ Custom icons for custom actions can be provided by using a CSS class.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -501,6 +518,7 @@ Set the height for the dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -523,6 +541,7 @@ Enables the window resizing.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -545,6 +564,7 @@ Set the maximum height for the dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -567,6 +587,7 @@ Set the maximum width for the dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -589,6 +610,7 @@ Set the minimum height for the dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -611,6 +633,7 @@ Set the minimum width for the dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -633,6 +656,7 @@ Displays the dialog window at the given X and Y position. X: Dialog set the left
 
 
 Default Value:
+{:.param}
 
 
 
@@ -655,6 +679,7 @@ Shows or hides the dialog header element.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -677,6 +702,7 @@ Enables the Dialog window to open automatically.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -699,6 +725,7 @@ Gives dialog window rounded corners.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -721,6 +748,7 @@ Provides title text for the Dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -743,6 +771,7 @@ Sets the width of the Dialog control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -765,6 +794,7 @@ Sets the z-index value of the control for the Dialog control.
 
 
 Default Value:
+{:.param}
 
 
 

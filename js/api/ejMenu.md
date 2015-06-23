@@ -126,6 +126,7 @@ To enable or disable the Animation while hover or click an menu items..See <a hr
 
 
 Default Value:
+{:.param}
 
 
 
@@ -204,6 +205,7 @@ Specifies the target id of context menu. On right clicking the specified context
 
 
 Default Value:
+{:.param}
 
 
 
@@ -268,6 +270,7 @@ Specify the CSS class to Menu to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -345,6 +348,7 @@ Gets or sets a value that indicates whether to enable or disable the animation e
 
 
 Default Value:
+{:.param}
 
 
 
@@ -423,6 +427,7 @@ Specifies the root menu items to be aligned center in horizontal menu.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -501,6 +506,7 @@ Enable / Disable the Menu control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -579,6 +585,7 @@ Specifies the menu items to be displayed in right to left direction.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -657,6 +664,7 @@ Default Value:
 
 
 Default Value:
+{:.param}
 
 
 
@@ -735,6 +743,7 @@ Specifies the target which needs to be excluded. i.e., The context menu will not
 
 
 Default Value:
+{:.param}
 
 
 
@@ -802,6 +811,7 @@ Fields used to bind the data source and it includes following field members to m
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1123,6 +1133,7 @@ Specifies the height of the root menu.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1200,6 +1211,7 @@ Specifies the type of the menu. Essential JavaScript Menu consists of two type o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1278,6 +1290,7 @@ Specifies the sub menu items to be show or open only on click.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1356,6 +1369,7 @@ Specifies the orientation of normal menu. Normal menu can rendered in horizontal
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1434,6 +1448,7 @@ Specifies the main menu items arrows only to be shown if it contains child items
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1512,6 +1527,7 @@ Specifies the sub menu items arrows only to be shown if it contains child items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1590,6 +1606,7 @@ Specifies the sub menu popup direction.See <a href="global.html#Direction">Direc
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1668,6 +1685,7 @@ Specifies the title to responsive menu.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1746,6 +1764,7 @@ Specifies the width of the main menu.
 
 
 Default Value:
+{:.param}
 
 
 

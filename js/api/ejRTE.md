@@ -111,6 +111,7 @@ Enables/Disables the editing of the content.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -133,6 +134,7 @@ RTE control comments can access through keyboard shortcut keys.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -155,6 +157,7 @@ Sets the colorCode in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -177,6 +180,7 @@ Given number for columns render the color palete pop up.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -199,6 +203,7 @@ Given number for rows render the color palete pop up.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -221,6 +226,7 @@ Sets the root class for RTE theme. This cssClass API helps to use custom skinnin
 
 
 Default Value:
+{:.param}
 
 
 
@@ -243,6 +249,7 @@ Enable | Disable the RTE control accessible or interaction..
 
 
 Default Value:
+{:.param}
 
 
 
@@ -265,6 +272,7 @@ enablePersistence the values in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -287,6 +295,7 @@ Shows enableResize in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -309,6 +318,7 @@ shows enableRTL in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -331,6 +341,7 @@ Enable | Disable the RTE control exporting Xhtml
 
 
 Default Value:
+{:.param}
 
 
 
@@ -353,6 +364,7 @@ This API allows to enable the file browser support in RTE control to browse, cre
 
 
 Default Value:
+{:.param}
 
 
 
@@ -417,6 +429,7 @@ Sets the fontName in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -452,7 +465,8 @@ Default Value:
 <code>Sets the fontSize in RTE.</code>
 
 
-<code>Default Value:</code>
+<code>Default Value:
+{:.param}</code>
 
 
 
@@ -475,6 +489,7 @@ Sets the format in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -510,7 +525,8 @@ Default Value:
 <code>Defines the height of the RTE textbox.</code>
 
 
-<code>Default Value:</code>
+<code>Default Value:
+{:.param}</code>
 
 
 
@@ -533,6 +549,7 @@ Specifies the HTML Attributes of the ejRTE
 
 
 Default Value:
+{:.param}
 
 
 
@@ -555,6 +572,7 @@ Sets the iframe attribute in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -577,6 +595,7 @@ This API allows to enable the image browser support in RTE control to browse, cr
 
 
 Default Value:
+{:.param}
 
 
 
@@ -669,6 +688,7 @@ Enables/Disables the responsive support for RTE control toolbar items during the
 
 
 Default Value:
+{:.param}
 
 
 
@@ -691,6 +711,7 @@ Sets the culture in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -713,6 +734,7 @@ Set the maximum height for RTE outer wrapper element.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -735,6 +757,7 @@ Set the max Length for RTE text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -757,6 +780,7 @@ Set the maximum width for RTE outer wrapper element.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -779,6 +803,7 @@ Set the minimum height for RTE outer wrapper element.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -801,6 +826,7 @@ Set the minimum width for RTE outer wrapper element.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -823,6 +849,7 @@ Sets the name in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -859,6 +886,7 @@ Sets the iframe attribute in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -881,6 +909,7 @@ Shows CustomTable in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -903,6 +932,7 @@ Shows Dimensions in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -925,6 +955,7 @@ Shows FontOption in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -947,6 +978,7 @@ Shows footer in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -969,6 +1001,7 @@ Shows HtmlSource in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -991,6 +1024,7 @@ Shows HtmlTagInfo in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1013,6 +1047,7 @@ Shows toolbar in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1035,6 +1070,7 @@ Shows WordCount in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1057,6 +1093,7 @@ Given number for columns render the insert table pop.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1079,6 +1116,7 @@ Given number for rows render the insert table pop.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1101,6 +1139,7 @@ Sets the tools in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1249,6 +1288,7 @@ Sets the toolsList in RTE.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1271,6 +1311,7 @@ Undo operation provide the number of step limit.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1293,6 +1334,7 @@ Given string value to display in the editable area.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1315,6 +1357,7 @@ Defines the width of the RTE textbox.
 
 
 Default Value:
+{:.param}
 
 
 

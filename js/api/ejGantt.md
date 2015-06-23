@@ -93,6 +93,7 @@ Specifies the fields to be included in the add dialog in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -141,6 +142,7 @@ Enables or disables the ability to resize column.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -186,6 +188,7 @@ Enables or Disables gantt chart editing in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -234,6 +237,7 @@ Enables or Disables Keyboard navigation in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -279,6 +283,7 @@ Specifies enabling or disabling multiple soting for gantt columns
 
 
 Default Value:
+{:.param}
 
 
 
@@ -324,6 +329,7 @@ Enables or disables the interactive selection of a row.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -369,6 +375,7 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 
 
 Default Value:
+{:.param}
 
 
 
@@ -414,6 +421,7 @@ Specifies the baseline background color in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -462,6 +470,7 @@ Specifies the mapping property path for baseline end date in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -507,6 +516,7 @@ Specifies the mapping property path for baseline start date of a task in datasou
 
 
 Default Value:
+{:.param}
 
 
 
@@ -552,6 +562,7 @@ Specifies the mapping property path for sub tasks in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -597,6 +608,7 @@ Specifies the background of connector lines in Gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -643,6 +655,7 @@ Specifies the width of the connector lines in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -689,6 +702,7 @@ Specify the CSS class for gantt to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -734,6 +748,7 @@ Collection of data or hierarchical data to represent in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -782,6 +797,7 @@ Specifies the dateFormat for gantt , given format is displayed in tooltip , grid
 
 
 Default Value:
+{:.param}
 
 
 
@@ -830,6 +846,7 @@ Specifies the mapping property path for duration of a task in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -875,6 +892,7 @@ Specifies the duration unit for each tasks whether days or hours
 
 
 Default Value:
+{:.param}
 
 
 
@@ -921,6 +939,7 @@ Specifies the fields to be included in the edit dialog in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -990,6 +1009,7 @@ Enables or disables add record icon in gantt toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1035,6 +1055,7 @@ Enables or disables delete icon in gantt toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1080,6 +1101,7 @@ Specifies the option for enabling or disablig editing in gantt grid part
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1125,6 +1147,7 @@ Specifies the editmode in gantt , "normal" is for dialog editing ,"cellEditing" 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1170,6 +1193,7 @@ Enables or Disables enableAltRow row effect in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1215,6 +1239,7 @@ Enables or disables the collapse all records when loading the gantt.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1263,6 +1288,7 @@ Enables or disables the contextmenu for gantt , when enabled contextmenu appears
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1311,6 +1337,7 @@ Indicates whether we can edit the progress of a task interactively in gantt char
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1356,6 +1383,7 @@ Enables or disables the option for dynamically updating the Gantt size on window
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1404,6 +1432,7 @@ Enables or disables tooltip while editing (dragging/resizing) the taskbar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1450,6 +1479,7 @@ Enables or disables tooltip for taskbar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1495,6 +1525,7 @@ Enables/Disables virtualization for rendering gantt items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1540,6 +1571,7 @@ Specifies the mapping property path for end Date of a task in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1585,6 +1617,7 @@ Specifies whether to highlight the weekends in gantt .
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1630,6 +1663,7 @@ Collection of holidays with date, background and label information to be display
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1678,6 +1712,7 @@ Specifies whether to include weekends while calculating the duration of a task.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1723,6 +1758,7 @@ Specify the locale for gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1768,6 +1804,7 @@ Specifies the mapping property path for milestone in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1813,6 +1850,7 @@ Specifies the background of parent progressbar in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1859,6 +1897,7 @@ Specifies the background of parent taskbar in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1905,6 +1944,7 @@ Specifies the mapping property path for parent task Id in selfreference datasour
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1950,6 +1990,7 @@ Specifies the mapping property path for predecessors of a task in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1995,6 +2036,7 @@ Specifies the background of progressbar in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2041,6 +2083,7 @@ Specified the height of the progressbar in taskbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2087,6 +2130,7 @@ Specifies the template for tooltip on resizing progressbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2135,6 +2179,7 @@ Specifies the template ID for customized tooltip for progressbar editing in gant
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2183,6 +2228,7 @@ Specifies the mapping property path for progress percentage of a task in datasou
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2228,6 +2274,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2275,6 +2322,7 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2323,6 +2371,7 @@ Specifies the mapping property name for resource ID in resource Collection in ga
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2371,6 +2420,7 @@ Specifies the mapping property path for resources of a task in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2416,6 +2466,7 @@ Specifies the mapping property path for resource name of a task in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2464,6 +2515,7 @@ Collection of data regarding resources involved in entire project
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2512,6 +2564,7 @@ Specifies whether rounding off the day working time edits
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2558,6 +2611,7 @@ Specifies the height of a single row in gantt. Also, we need to set same height 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2605,6 +2659,7 @@ Specifies end date of the gantt schedule. By default, end date will be rounded t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2674,6 +2729,7 @@ Specified the format for day view in schedule header
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2721,6 +2777,7 @@ Specified the format for Hour view in schedule header
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2768,6 +2825,7 @@ Specifies the number of minutes per interval
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2814,6 +2872,7 @@ Specified the format for month view in schedule header
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2861,6 +2920,7 @@ Specifies the schedule mode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2908,6 +2968,7 @@ Specified the background for weekends in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2954,6 +3015,7 @@ Specified the format for week view in schedule header
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3001,6 +3063,7 @@ Specified the format for year view in schedule header
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3048,6 +3111,7 @@ Specifies start date of the gantt schedule. By default, start date will be round
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3096,6 +3160,7 @@ Specifies the selected row index in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3144,6 +3209,7 @@ Specifies the selected row Index in gantt , the row with given index will highli
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3192,6 +3258,7 @@ Enables or disables the column chooser.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3237,6 +3304,7 @@ Specifies whether to show grid cell tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3283,6 +3351,7 @@ Specifies whether to show grid cell tooltip over expander cell alone.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3329,6 +3398,7 @@ Specifies whether display task progress inside taskbar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3375,6 +3445,7 @@ Specifies whether to display resource names for a task beside taskbar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3421,6 +3492,7 @@ Specifies whether to display task name beside task bar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3488,6 +3560,7 @@ Specifies the height of gantt control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3536,6 +3609,7 @@ Specifies the width of gantt control
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3605,6 +3679,7 @@ Specifies the sorted columns for gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3650,6 +3725,7 @@ Specifies splitter position in gantt.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3695,6 +3771,7 @@ Specifies the mapping property path for start date of a task in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3740,6 +3817,7 @@ Specifies the options for striplines
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3793,6 +3871,7 @@ Specifies the background of the taskbar in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3839,6 +3918,7 @@ Specifies the template script for customized tooltip for taskbar editing in gant
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3887,6 +3967,7 @@ Specifies the template Id for customized tooltip for taskbar editing in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3935,6 +4016,7 @@ Specifies the template for tooltip on mouseaction on taskbars
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3983,6 +4065,7 @@ Specifies the template id for tooltip on mouseaction on taskbars
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4031,6 +4114,7 @@ Specifies the mapping property path for task Id in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4076,6 +4160,7 @@ Specifies the mapping property path for task name in datasource
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4142,6 +4227,7 @@ Specifies the state of enabling or disabling toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4187,6 +4273,7 @@ Specifies the list of toolbar items to rendered in toolbar
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4232,6 +4319,7 @@ Specifies the tree expander column in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4280,6 +4368,7 @@ Specifies the weekendBackground color in gantt
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4328,6 +4417,7 @@ Specifies the working time schedule of day
 
 
 Default Value:
+{:.param}
 
 
 

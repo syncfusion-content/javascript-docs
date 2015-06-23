@@ -51,6 +51,7 @@ Specifies the ajaxSettings option to load the content to the accordion control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -146,6 +147,7 @@ Accordion headers can be expanded and collapsed on keyboard action.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -168,6 +170,7 @@ To set the Accordion headers Collapse Speed.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -190,6 +193,7 @@ Specifies the collapsible state of accordion control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -212,6 +216,7 @@ Sets the root class for the Accordion theme. This cssClass API enables the use o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -234,6 +239,7 @@ The header icon can be customized using this API. It has two properties: header 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -256,6 +262,7 @@ To deactivate multiple headers for the accordion, give the index value for array
 
 
 Default Value:
+{:.param}
 
 
 
@@ -278,6 +285,7 @@ Specifies the animation behavior in accordion.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -301,6 +309,7 @@ With the Enabled property, you can enable or disable the Accordion.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -323,6 +332,7 @@ To activate multiple headers for the accordion, give the index value for array t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -345,6 +355,7 @@ Multiple content panels to activate at a time.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -367,6 +378,7 @@ Save current model value to browser cookies for maintaining states. When refresh
 
 
 Default Value:
+{:.param}
 
 
 
@@ -389,6 +401,7 @@ Display headers and panel text from right-to-left.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -411,6 +424,7 @@ The events API binds the action for activating the accordion header. Users can a
 
 
 Default Value:
+{:.param}
 
 
 
@@ -433,6 +447,7 @@ To set the Accordion headers Expand Speed.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -469,6 +484,7 @@ Adjusts the content panel height based on the given option (content, auto, or fi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -505,6 +521,7 @@ The given index header will activate (open). If collapsible is set to true, and 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -527,6 +544,7 @@ To activate multiple headers for the accordion, give the index value for array t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -549,6 +567,7 @@ Displays rounded corner borders on the Accordion control's panels and headers.
 
 
 Default Value:
+{:.param}
 
 
 

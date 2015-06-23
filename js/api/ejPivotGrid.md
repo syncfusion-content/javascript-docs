@@ -102,6 +102,7 @@ Sets the CSS name for custom operation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -153,6 +154,7 @@ Contains the serialized OlapReport at the instant.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -189,6 +191,7 @@ Custom object to pass additional information between client-end and service-end.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -241,6 +244,7 @@ Allows the user to access/operate each cell through a custom design on right cli
 
 
 Default Value:
+{:.param}
 
 
 
@@ -293,6 +297,7 @@ Allows the user to load PivotGrid using JSON data.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -345,6 +350,7 @@ Allows the user to enable RTL support.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -397,6 +403,7 @@ Allows the user to enable ToolTip support.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -449,6 +456,7 @@ Allows the user to load large amount of data into pages.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -501,6 +509,7 @@ Allows the user to configure hyperlink settings to Pivot Grid control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -553,6 +562,7 @@ Allows the user to enable/diable hyperlink for column header.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -605,6 +615,7 @@ Allows the user to enable/diable hyperlink for row header.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -657,6 +668,7 @@ Allows the user to enable/diable hyperlink for summary cells.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -709,6 +721,7 @@ Allows the user to enable/diable hyperlink for value cells.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -761,6 +774,7 @@ Allows the user to enable Responsive layout support.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -813,6 +827,7 @@ Contains the serialized JSON string which renders PivotGrid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -849,6 +864,7 @@ Allows the user access the different layouts for Pivot Grid.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -901,6 +917,7 @@ Sets the localized language for the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -953,6 +970,7 @@ Allows the user to set custom name for the methods at service-end invoked on AJA
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1005,6 +1023,7 @@ Allows the user to set the custom name for the service method that&#65533;s resp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1057,6 +1076,7 @@ Allows the user to set the custom name for the service method that&#65533;s resp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1109,6 +1129,7 @@ Allows the user to set the custom name for the service method that&#65533;s resp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1161,6 +1182,7 @@ Allows the user to set the custom name for the service method that&#65533;s resp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1213,6 +1235,7 @@ Connects the service using the specified URL for any server updates. See url
 
 
 Default Value:
+{:.param}
 
 
 

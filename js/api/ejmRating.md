@@ -59,6 +59,7 @@ Specifies whether to enable or disable the control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -83,6 +84,7 @@ Specifies to maintain the current model value to browser cookies for state maint
 
 
 Default Value:
+{:.param}
 
 
 
@@ -107,6 +109,7 @@ Specifies the step value for incrementation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -131,6 +134,7 @@ Specifies the maximum value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -155,6 +159,7 @@ Specifies the minimum value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -179,6 +184,7 @@ Specifies whether the orientation is horizontal or vertical. See <a href="global
 
 
 Default Value:
+{:.param}
 
 
 
@@ -203,6 +209,7 @@ Specifies the precision value. See <a href="global.html#Precision">Precision</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -227,6 +234,7 @@ Specifies whether the control is read only.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -251,6 +259,7 @@ Specifies the rendering mode of the control. See <a href="global.html#RenderMode
 
 
 Default Value:
+{:.param}
 
 
 
@@ -275,6 +284,7 @@ Specifies the shape. See <a href="global.html#Shape">Shape</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -299,6 +309,7 @@ Specifies the shape height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -323,6 +334,7 @@ Specifies the shape width.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -347,6 +359,7 @@ Specifies the space between shapes.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -371,6 +384,7 @@ Specifies the theme. See <a href="global.html#Theme">Theme</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -395,6 +409,7 @@ Specifies the current value.
 
 
 Default Value:
+{:.param}
 
 
 

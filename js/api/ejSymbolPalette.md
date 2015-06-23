@@ -101,6 +101,7 @@ Enable or disable the Drag function of items in the palette
 
 
 Default Value:
+{:.param}
 
 
 
@@ -145,6 +146,7 @@ Used to change the style of the node
 
 
 Default Value:
+{:.param}
 
 
 
@@ -189,6 +191,7 @@ The diagramId of the palette
 
 
 Default Value:
+{:.param}
 
 
 
@@ -233,6 +236,7 @@ Height of the palette header
 
 
 Default Value:
+{:.param}
 
 
 
@@ -277,6 +281,7 @@ The height of the palette
 
 
 Default Value:
+{:.param}
 
 
 
@@ -321,6 +326,7 @@ Height of the items in palette
 
 
 Default Value:
+{:.param}
 
 
 
@@ -365,6 +371,7 @@ Width of the palette item
 
 
 Default Value:
+{:.param}
 
 
 
@@ -409,6 +416,7 @@ Collection of palette items
 
 
 Default Value:
+{:.param}
 
 
 
@@ -453,6 +461,7 @@ Preview height of the palette items
 
 
 Default Value:
+{:.param}
 
 
 
@@ -497,6 +506,7 @@ The preview offset for the palette items
 
 
 Default Value:
+{:.param}
 
 
 
@@ -541,6 +551,7 @@ Preview width of the palette items
 
 
 Default Value:
+{:.param}
 
 
 
@@ -585,6 +596,7 @@ The selectedPaletteName of the symbol palette
 
 
 Default Value:
+{:.param}
 
 
 
@@ -629,6 +641,7 @@ Enable or disable the palette item text
 
 
 Default Value:
+{:.param}
 
 
 
@@ -673,6 +686,7 @@ The width of the palette
 
 
 Default Value:
+{:.param}
 
 
 

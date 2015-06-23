@@ -105,6 +105,7 @@ Specifies the resize option of the DigitalGauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -151,6 +152,7 @@ Specifies the frame of the Digital gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -197,6 +199,7 @@ Specifies the url of an image to be displayed as background of the Digital gauge
 
 
 Default Value:
+{:.param}
 
 
 
@@ -243,6 +246,7 @@ Specifies the inner width for the frame, when the background image has been set 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -289,6 +293,7 @@ Specifies the outer width of the frame, when the background image has been set f
 
 
 Default Value:
+{:.param}
 
 
 
@@ -335,6 +340,7 @@ Specifies the height of the DigitalGauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -381,6 +387,7 @@ Specifies the items for the DigitalGauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -427,6 +434,7 @@ Specifies the Character settings for the DigitalGauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -473,6 +481,7 @@ Specifies the CharacterCount value for the DigitalGauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -519,6 +528,7 @@ Specifies the opacity value for the DigitalGauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -565,6 +575,7 @@ Specifies the value for spacing between the characters
 
 
 Default Value:
+{:.param}
 
 
 
@@ -611,6 +622,7 @@ Specifies the character type for the text to be displayed. See <a href="global.h
 
 
 Default Value:
+{:.param}
 
 
 
@@ -658,6 +670,7 @@ Enable/Disable the custom font to be applied to the text in the gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -705,6 +718,7 @@ Set the specific font for the text, when the enableCustomFont is set to true
 
 
 Default Value:
+{:.param}
 
 
 
@@ -752,6 +766,7 @@ Set the font family value
 
 
 Default Value:
+{:.param}
 
 
 
@@ -799,6 +814,7 @@ Set the font style for the font. See <a href="global.html#FontStyle">FontStyle</
 
 
 Default Value:
+{:.param}
 
 
 
@@ -846,6 +862,7 @@ Set the font size value
 
 
 Default Value:
+{:.param}
 
 
 
@@ -893,6 +910,7 @@ Set the location for the text, where it needs to be placed within the gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -940,6 +958,7 @@ Set the horizontal location for the text, where it needs to be placed within the
 
 
 Default Value:
+{:.param}
 
 
 
@@ -987,6 +1006,7 @@ Set the vertical location for the text, where it needs to be placed within the g
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1034,6 +1054,7 @@ Set the segemnt settings for the digital gauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1081,6 +1102,7 @@ Set the color for the text segments.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1128,6 +1150,7 @@ Set the gradient for the text segments.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1175,6 +1198,7 @@ Set the length for the text segments.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1222,6 +1246,7 @@ Set the opacity for the text segments.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1269,6 +1294,7 @@ Set the spacing for the text segments.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1316,6 +1342,7 @@ Set the width for the text segments.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1363,6 +1390,7 @@ Set the value for enabling/disabling the blurring effect for the shadows of the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1409,6 +1437,7 @@ Specifies the color of the text shadow.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1456,6 +1485,7 @@ Set the x offset value for the shadow of the text, indicating the location where
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1503,6 +1533,7 @@ Set the y offset value for the shadow of the text, indicating the location where
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1549,6 +1580,7 @@ Set the alignment of the text that is displayed within the gauge.See <a href="gl
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1595,6 +1627,7 @@ Specifies the color of the text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1641,6 +1674,7 @@ Specifies the text value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1729,6 +1763,7 @@ Specifies the themes for the Digital gauge. See <a href="global.html#Themes">The
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1775,6 +1810,7 @@ Specifies the value to the DigitalGauge.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1821,6 +1857,7 @@ Specifies the width for the Digital gauge.
 
 
 Default Value:
+{:.param}
 
 
 

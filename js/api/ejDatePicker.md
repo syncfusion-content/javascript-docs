@@ -111,6 +111,7 @@ Set the text name for the today button in the datepicker popup.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -157,6 +158,7 @@ Set the root class for DatePicker theme. This cssClass API helps to use custom s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -203,6 +205,7 @@ Specifies the date format to be displayed in the input textbox of Datepicker. Th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -249,6 +252,7 @@ Specifies the header format of days in short, longer or min types. See <a href="
 
 
 Default Value:
+{:.param}
 
 
 
@@ -295,6 +299,7 @@ Specifies the start level view in DatePicker calendar. See <a href="global.html#
 
 
 Default Value:
+{:.param}
 
 
 
@@ -341,6 +346,7 @@ Allow to display default date value in input textbox.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -387,6 +393,7 @@ Allows to embed the DatePicker in the page. Also associate DatePicker with div e
 
 
 Default Value:
+{:.param}
 
 
 
@@ -433,6 +440,7 @@ Enable or disable the animation effect in datepicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -480,6 +488,7 @@ Enables or disables the datepicker control.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -526,6 +535,7 @@ Enables or disables the state maintenance of DatePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -572,6 +582,7 @@ Display Right to Left direction of DatePicker calendar and input box.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -618,6 +629,7 @@ When enableStrictMode true it allows the value outside of the range also, otherw
 
 
 Default Value:
+{:.param}
 
 
 
@@ -664,6 +676,7 @@ Specify the fields mapping in datepicker
 
 
 Default Value:
+{:.param}
 
 
 
@@ -775,6 +788,7 @@ Specifies the header format to be displayed in the pop up of Datepicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -821,6 +835,7 @@ Specifies the height of the datepicker input text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -867,6 +882,7 @@ HighlightSection used to highlight current month, week, workdays. See <a href="g
 
 
 Default Value:
+{:.param}
 
 
 
@@ -913,6 +929,7 @@ Week end will be displayed in bold, when this property is set to true.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -959,6 +976,7 @@ Specifies the HTML Attributes of the DatePicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1005,6 +1023,7 @@ Culture the language of DatePicker calendar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1051,6 +1070,7 @@ Specifies the maximum date range to be displayed in DatePicker calendar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1097,6 +1117,7 @@ Specifies the minimum date range to be displayed in DatePicker calendar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1143,6 +1164,7 @@ Indicates that the datepicker value can only be read.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1189,6 +1211,7 @@ It allows to show footer in DatePicker calendar to select today date.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1235,6 +1258,7 @@ It allows to show days in other months of DatePicker calendar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1281,6 +1305,7 @@ Shows the date icon button at right side of textbox and shows DatePicker popup o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1327,6 +1352,7 @@ DatePicker input will be displayed in rounded corner style, when this property i
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1373,6 +1399,7 @@ DatePicker Tooltip will be displayed, when this property is set to true.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1419,6 +1446,7 @@ Specify the special dates in datepicker
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1466,6 +1494,7 @@ Specifies the start day of the week in DatePicker calendar.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1512,6 +1541,7 @@ Specifies the start level view in DatePicker calendar. See <a href="global.html#
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1558,6 +1588,7 @@ Specifies the number of months to navigate at one click in next and previous but
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1604,6 +1635,7 @@ Set the jquery validation error message in datepicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1657,6 +1689,7 @@ Set the jquery validation rule in datepicker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1707,6 +1740,7 @@ Specifies the selected date value.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1753,6 +1787,7 @@ Specifies the water mark text to be display in input text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1799,6 +1834,7 @@ Specifies the width of the datepicker input text.
 
 
 Default Value:
+{:.param}
 
 
 

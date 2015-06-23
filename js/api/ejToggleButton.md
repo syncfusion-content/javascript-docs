@@ -56,6 +56,7 @@ Specify the activePrefixIcon to toggle button to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -80,6 +81,7 @@ Specify the activeSuffixIcon to toggle button to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -105,6 +107,7 @@ Specifies the activeText of the ToggleButton.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -130,6 +133,7 @@ Specifies the contentType of the ToggleButton. See <a href="global.html#ContentT
 
 
 Default Value:
+{:.param}
 
 
 
@@ -155,6 +159,7 @@ Specify the CSS class to toggle button to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -180,6 +185,7 @@ Specify the defaultPrefixIcon to toggle button to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -205,6 +211,7 @@ Specify the defaultSuffixIcon to toggle button to achieve custom theme.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -230,6 +237,7 @@ Specifies the defaultText of the ToggleButton.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -255,6 +263,7 @@ Specifies the state of the ToggleButton.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -280,6 +289,7 @@ Specify the enablePersistence to Togglebutton to save current model value to bro
 
 
 Default Value:
+{:.param}
 
 
 
@@ -305,6 +315,7 @@ Specify the Right to Left Direction to Togglebutton
 
 
 Default Value:
+{:.param}
 
 
 
@@ -330,6 +341,7 @@ Specifies the height of the ToggleButton.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -354,6 +366,7 @@ Specifies the HTML Attributes of the ToggleButton
 
 
 Default Value:
+{:.param}
 
 
 
@@ -379,6 +392,7 @@ Specifies the image position of the ToggleButton. This image position is applica
 
 
 Default Value:
+{:.param}
 
 
 
@@ -404,6 +418,7 @@ Specifies the preventToggle of the ToggleButton.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -429,6 +444,7 @@ Specify the rounded corner to Togglebutton
 
 
 Default Value:
+{:.param}
 
 
 
@@ -454,6 +470,7 @@ Specifies the size of the ToggleButton. See <a href="global.html#ButtonSize">But
 
 
 Default Value:
+{:.param}
 
 
 
@@ -479,6 +496,7 @@ Specifies the toggleState of the ToggleButton.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -504,6 +522,7 @@ Specifies the type of the ToggleButton. See <a href="global.html#ButtonType">But
 
 
 Default Value:
+{:.param}
 
 
 
@@ -529,6 +548,7 @@ Specifies the width of the ToggleButton.
 
 
 Default Value:
+{:.param}
 
 
 

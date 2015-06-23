@@ -66,6 +66,7 @@ Annotataion takes the specified value as angle for rotating it
 
 
 Default Value:
+{:.param}
 
 
 
@@ -88,6 +89,7 @@ Specifies the content /element which is to be displayed as annotation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -110,6 +112,7 @@ Specifies the option based on which annotation is placed on the chart
 
 
 Default Value:
+{:.param}
 
 
 
@@ -132,6 +135,7 @@ To position the annotation horizontally
 
 
 Default Value:
+{:.param}
 
 
 
@@ -166,6 +170,7 @@ Specifies the bottom margin value for annotation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -188,6 +193,7 @@ Specifies the left margin value for annotation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -210,6 +216,7 @@ Specifies the right margin value for annotation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -232,6 +239,7 @@ Specifies the top margin value for annotation
 
 
 Default Value:
+{:.param}
 
 
 
@@ -254,6 +262,7 @@ Annotataion takes the specified value as opacity
 
 
 Default Value:
+{:.param}
 
 
 
@@ -276,6 +285,7 @@ To place the annotation with respect to chart / series
 
 
 Default Value:
+{:.param}
 
 
 
@@ -298,6 +308,7 @@ To position the annotation vertically
 
 
 Default Value:
+{:.param}
 
 
 
@@ -320,6 +331,7 @@ Specifies the visibility of annotation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -342,6 +354,7 @@ Annotataion takes the specified x value
 
 
 Default Value:
+{:.param}
 
 
 
@@ -364,6 +377,7 @@ Binds annotation to the specified axis
 
 
 Default Value:
+{:.param}
 
 
 
@@ -386,6 +400,7 @@ Annotataion takes the specified y value
 
 
 Default Value:
+{:.param}
 
 
 
@@ -408,6 +423,7 @@ Binds annotation to the specified axis
 
 
 Default Value:
+{:.param}
 
 
 
@@ -430,6 +446,7 @@ Specifies the background image path to display the image, plotting in the chart 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -464,6 +481,7 @@ Specifies the border color of the chart.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -486,6 +504,7 @@ Specifies the border opacity of the chart
 
 
 Default Value:
+{:.param}
 
 
 
@@ -508,6 +527,7 @@ Specifies the border width of the chart.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -530,6 +550,7 @@ Sets a value whether to make the chart responsive on resize.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -564,6 +585,7 @@ Specifies the background for chart plotting area.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -598,6 +620,7 @@ Specifies the border color of chart plotting area.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -620,6 +643,7 @@ Specifies the border opacity of chart plotting area.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -642,6 +666,7 @@ Specifies the border width of chart plotting area.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -702,6 +727,7 @@ Specifies the border color of series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -724,6 +750,7 @@ Specifies the border width of series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -746,6 +773,7 @@ Controls the pattern of dashes and gaps used to stroke the line series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -768,6 +796,7 @@ Specifies the dataSource for series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -790,6 +819,7 @@ Sets the radius of the hole on the doughnut series with respect to plot area. Va
 
 
 Default Value:
+{:.param}
 
 
 
@@ -812,6 +842,7 @@ Sets the radius of the doughnut series with respect to plot area. Value ranges f
 
 
 Default Value:
+{:.param}
 
 
 
@@ -834,6 +865,7 @@ Specifies the type of series that can be drawn in a Radar or Polar series. It su
 
 
 Default Value:
+{:.param}
 
 
 
@@ -856,6 +888,7 @@ Specifies the series animation common to all series. By specifying this, we can 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -878,6 +911,7 @@ Enabling this property can avoid pie series data label overlap each other.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -900,6 +934,7 @@ Specifies the ending angle for rendering pie / doughnut series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -922,6 +957,7 @@ Explodes the pie slices on mouse move. (Also works for doughnut series)
 
 
 Default Value:
+{:.param}
 
 
 
@@ -944,6 +980,7 @@ Explodes all the pie slices. (Also works for doughnut series)
 
 
 Default Value:
+{:.param}
 
 
 
@@ -966,6 +1003,7 @@ Index of a slice to be exploded from the whole pie. (Also works for doughnut ser
 
 
 Default Value:
+{:.param}
 
 
 
@@ -988,6 +1026,7 @@ Represents the distance the slice has to be moved out when it is exploded.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1010,6 +1049,7 @@ Specifies the fill color of series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1044,6 +1084,7 @@ Specifies the color, that is common to all series. Text in the series, render wi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1066,6 +1107,7 @@ Specifies the fontFamily, that is common to all series. Text in the series, rend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1088,6 +1130,7 @@ Specifies the fontStyle, that is common to all series. Text in the series, rende
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1110,6 +1153,7 @@ Specifies the fontWeight, that is common to all series. Text in the series, rend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1132,6 +1176,7 @@ Specifies the opacity, that is common to all series. Text in the series, render 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1154,6 +1199,7 @@ Specifies the font size, that is common to all series. Text in the series, rende
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1176,6 +1222,7 @@ Sets the funnel height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1198,6 +1245,7 @@ Sets the funnel width.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1220,6 +1268,7 @@ Specifies the gap between each slice of a pyramid series in pixels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1242,6 +1291,7 @@ Used in Polar and Radar series to specify whether the line/area series has to be
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1264,6 +1314,7 @@ Used in Polar and Radar series to specify whether column type has to be rendered
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1286,6 +1337,7 @@ Specifies the position of the axis labels to render labels either inside or outs
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1308,6 +1360,7 @@ Specifies the style to draw the end point of a line like butt, round, square. Se
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1330,6 +1383,7 @@ Specifies the shape to use at the intersection of two lines drawn. See <a href="
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1376,6 +1430,7 @@ Specifies the border color of marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1398,6 +1453,7 @@ Specifies the border width of marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1432,6 +1488,7 @@ rotates dataLabel in the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1466,6 +1523,7 @@ Specifies the border color of datalabel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1488,6 +1546,7 @@ Specifies the border width of datalabel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1522,6 +1581,7 @@ Specifies whether to connect the point and data label using bezier curve or stra
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1544,6 +1604,7 @@ Specifies the width of the connector line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1566,6 +1627,7 @@ Specifies the fill color of datalabel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1600,6 +1662,7 @@ Specifies the fontFamily of dataLabel. Text in the data label render with the sp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1622,6 +1685,7 @@ Specifies the fontStyle of dataLabel. Text in the data label render with the spe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1644,6 +1708,7 @@ Specifies the fontWeight of dataLabel. Text in the data label render with the sp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1666,6 +1731,7 @@ Specifies the opacity of the text in dataLabel. Text in the data label render wi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1688,6 +1754,7 @@ Specifies the font size of dataLabel. Text in the data label render with the spe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1710,6 +1777,7 @@ This property is used to change the alignment of the data label horizontally.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1744,6 +1812,7 @@ Specifies the bottom margin value for dataLabel. By specifying this property, we
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1766,6 +1835,7 @@ Specifies the left margin value for dataLabel. By specifying this property, we c
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1788,6 +1858,7 @@ Specifies the right margin value for dataLabel. By specifying this property, we 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1810,6 +1881,7 @@ Specifies the top margin value for dataLabel. By specifying this property, we ca
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1832,6 +1904,7 @@ Specifies the opacity of dataLabel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1854,6 +1927,7 @@ Specifies the rendering shape of the marker. See <a href="global.html#Shape">Sha
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1876,6 +1950,7 @@ This property is used to change the position of the text in data label. See <a h
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1898,6 +1973,7 @@ This property is used to change the alignment of the data label vertically.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1920,6 +1996,7 @@ Toggles the visibility of dataLabel in the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1942,6 +2019,7 @@ Specifies the fill color of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1964,6 +2042,7 @@ Specifies the image url location of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -1986,6 +2065,7 @@ Specifies the opacity of the marker. Values ranges from 0 to 1.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2008,6 +2088,7 @@ Specifies the shape of the marker. See <a href="global.html#Shape">Shape</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2042,6 +2123,7 @@ Specifies the height of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2064,6 +2146,7 @@ Specifies the width of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2086,6 +2169,7 @@ Toggles the visibility of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2108,6 +2192,7 @@ Specifies the opacity of series. The value ranges form 0 to 1.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2130,6 +2215,7 @@ Sets the radius of the pie series with respect to plot area. Value ranges from 0
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2152,6 +2238,7 @@ Sets the rendering mode of the pyramid as linear or surface. See <a href="global
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2174,6 +2261,7 @@ Specifies the starting angle for rendering pie / doughnut series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2220,6 +2308,7 @@ Specifies the border color of tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2242,6 +2331,7 @@ Specifies the border width of tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2264,6 +2354,7 @@ Specifies the duration of the tooltip to stay awake.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2286,6 +2377,7 @@ Enabling this property animates the tooltip on moving the cursor from one point 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2308,6 +2400,7 @@ Specifies the fill color of the tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2330,6 +2423,7 @@ Formatting the values of point on a tooltip can be customized using this propert
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2352,6 +2446,7 @@ Specifies the opacity of the tooltip. Values ranges from 0 to 1.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2374,6 +2469,7 @@ Specify the template for tooltip
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2396,6 +2492,7 @@ tooltip visibility can be toggled using this property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2418,6 +2515,7 @@ Specifies the type of series to be rendered in chart. See <a href="global.html#T
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2440,6 +2538,7 @@ Specifies the name of the xAxis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2462,6 +2561,7 @@ Specifies the xName for dataSource in series. This is used to take the x values 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2484,6 +2584,7 @@ Specifies the name of the yAxis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2506,6 +2607,7 @@ Specifies the yName for dataSource in series. This is used to take the y values 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2564,6 +2666,7 @@ Specifies the border width of the marker in crosshair.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2586,6 +2689,7 @@ Specifies the opacity of the marker in crosshair.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2620,6 +2724,7 @@ Specifies the height of the marker in crosshair.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2642,6 +2747,7 @@ Specifies the width of the marker in crosshair.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2664,6 +2770,7 @@ Toggles the visibility of the marker in crosshair.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2686,6 +2793,7 @@ Specifies the type of the crosshair. It may be trackball or crosshair.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2708,6 +2816,7 @@ Toggles the visibility of the crosshair / trackball in the plot area
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2730,6 +2839,7 @@ The depth property defines the depth of the 3D chart from front view of the seri
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2752,6 +2862,7 @@ To enable the 3D view of chart control. 3D view is supported only for column, ba
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2774,6 +2885,7 @@ By enabling this property, the ejChart will render in Html5 canvas. This canvas 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2796,6 +2908,7 @@ Enables the 3D chart to perform rotation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2830,6 +2943,7 @@ Specifies the dperiod for the stochastic indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2852,6 +2966,7 @@ Specifies the animation of the indicator. ejChart supports animation for the ind
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2874,6 +2989,7 @@ Specifies the fill color of the indicator line
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2908,6 +3024,7 @@ Specifies the font color of the text in indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2930,6 +3047,7 @@ Specifies the font family of the text in indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2952,6 +3070,7 @@ Specifies the font style of the text in indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2974,6 +3093,7 @@ Specifies the font weight of the text in indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -2996,6 +3116,7 @@ Specifies the font opacity of the text in indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3018,6 +3139,7 @@ Specifies the size of the text in indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3064,6 +3186,7 @@ Specifies the border color of histogram rendered in macd indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3086,6 +3209,7 @@ Specifies the border width of histogram rendered in macd indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3108,6 +3232,7 @@ Specifies the fill color of histogram rendered in macd indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3130,6 +3255,7 @@ Specifies the opacity of histogram rendered in macd indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3152,6 +3278,7 @@ Specifies the kperiod for the stochastic indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3174,6 +3301,7 @@ Specifies the long period for macd indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3208,6 +3336,7 @@ Specifies the fill color of lower line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3230,6 +3359,7 @@ Specifies the width of lower line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3264,6 +3394,7 @@ Specifies the fill color of macd line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3286,6 +3417,7 @@ Specifies the width of macd line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3308,6 +3440,7 @@ Specifies the type of macd indicator. It can be a line or histogram or both.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3330,6 +3463,7 @@ Specifies the period of the indicator. Calculations are made based on this for i
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3364,6 +3498,7 @@ Specifies the fill color of period line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3386,6 +3521,7 @@ Specifies the width of period line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3408,6 +3544,7 @@ Specifies the series name of indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3430,6 +3567,7 @@ Specifies the short period for macd indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3452,6 +3590,7 @@ Specifies the standardDeviations for Bollingerband indicator.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3498,6 +3637,7 @@ Specifies the border color of indicator tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3520,6 +3660,7 @@ Specifies the border width of indicator tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3542,6 +3683,7 @@ Specifies the animation duration of indicator tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3564,6 +3706,7 @@ Specifies the animation of the indicator tooltip. ejChart supports animation for
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3586,6 +3729,7 @@ Specifies the format of indicator tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3608,6 +3752,7 @@ Specifies the fill color of indicator tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3630,6 +3775,7 @@ Specifies the opacity of indicator tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3652,6 +3798,7 @@ Specifies the visibility of indicator tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3674,6 +3821,7 @@ Specifies the trigger value for macd indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3696,6 +3844,7 @@ Specifies the visibility of indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3718,6 +3867,7 @@ Specifies the type of the indicator to render.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3752,6 +3902,7 @@ Specifies the fill color of upper line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3774,6 +3925,7 @@ Specifies the width of upper line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3796,6 +3948,7 @@ Specifies the width of the indicator line
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3818,6 +3971,7 @@ Specifies the xAxisName of the indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3840,6 +3994,7 @@ Specifies the yAxisName of the indicator
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3874,6 +4029,7 @@ This property is used to change the alignment of the legend horizontally.. See <
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3908,6 +4064,7 @@ Specifies the border color of legend.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3930,6 +4087,7 @@ Specifies the border width of legend.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3952,6 +4110,7 @@ This property specifies the number of columns for the legend items to arrange.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -3974,6 +4133,7 @@ Specifies the fill color of legend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4008,6 +4168,7 @@ Specifies the legend fontfamily color. Legend item text render with this specifi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4030,6 +4191,7 @@ Specifies the legend font style. Legend item text render with this specified fon
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4052,6 +4214,7 @@ Specifies the legend font weight. Legend item text render with this specified fo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4074,6 +4237,7 @@ Specifies the legend font size. Legend item text render with this specified size
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4096,6 +4260,7 @@ This is used to specify the gap/padding between the legend items.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4142,6 +4307,7 @@ Specifies the border color of legend.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4164,6 +4330,7 @@ Specifies the border width of legend.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4186,6 +4353,7 @@ Specifies the legend item height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4208,6 +4376,7 @@ Specifies the legend item width.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4242,6 +4411,7 @@ This property specifies the x position for rendering legend.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4264,6 +4434,7 @@ This property specifies the y position for rendering legend.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4286,6 +4457,7 @@ Specifies the opacity of legend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4308,6 +4480,7 @@ This property is used to change the alignment of the data label vertically. See 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4330,6 +4503,7 @@ This property specifies the number of rows for the legend items to arrange.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4352,6 +4526,7 @@ This property specifies the shape of the legend items. See <a href="global.html#
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4386,6 +4561,7 @@ Specifies the legend height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4408,6 +4584,7 @@ Specifies the legend width.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4454,6 +4631,7 @@ Specifies the font family of legend title text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4476,6 +4654,7 @@ Specifies the font style of legend title text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4498,6 +4677,7 @@ Specifies the font weight of legend title text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4520,6 +4700,7 @@ Specifies the size of legend title text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4542,6 +4723,7 @@ Specifies the text to be displayed as legend title.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4564,6 +4746,7 @@ Specifies the text alignment of legend title.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4586,6 +4769,7 @@ Toggles the legend visibility.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4608,6 +4792,7 @@ This property is to specify the localization of chart.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4630,6 +4815,7 @@ Enables the 3D chart to perform rotation.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4688,6 +4874,7 @@ Specifies the fill color of Even grid bands
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4710,6 +4897,7 @@ Specifies the opacity of the Even grid band.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4744,6 +4932,7 @@ Specifies the fill color of Odd grid bands
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4766,6 +4955,7 @@ Specifies the opacity of the Odd grid band.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4800,6 +4990,7 @@ Controls the pattern of dashes and gaps used to stroke the axis line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4822,6 +5013,7 @@ Specifies the horizontal/vertical padding of axis line. Normally, it is used alo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4844,6 +5036,7 @@ Specifies the visibility of axis line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4866,6 +5059,7 @@ Specifies the width of axisLine in primaryXAxis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4888,6 +5082,7 @@ Index of the column object in columnDefinitions array to which this axis is asso
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4910,6 +5105,7 @@ An axis can be spanned along multiple columns or plotting areas. This property s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4944,6 +5140,7 @@ Specifies the visibility of crosshair label.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4966,6 +5163,7 @@ Specifies the desired number of intervals for the range. With this setting, you 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -4988,6 +5186,7 @@ Determines how to position labels at the edge of the axis. See <a href="global.h
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5010,6 +5209,7 @@ Specifies the action to take when the axis labels are which is having more than 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5044,6 +5244,7 @@ Specifies the fontfamily of primaryXAxis. The axis labels render with this speci
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5066,6 +5267,7 @@ Specifies the fontStyle of primaryXAxis. The axis labels render with this specif
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5088,6 +5290,7 @@ Specifies the fontWeight of primaryXAxis. The axis labels render with this speci
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5110,6 +5313,7 @@ Specifies the title opacity of primaryXAxis. The axis labels render with this sp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5132,6 +5336,7 @@ Specifies the title size of primaryXAxis. The axis labels render with this speci
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5154,6 +5359,7 @@ Specifies whether the type of the interval calculated is in days, months, hours,
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5176,6 +5382,7 @@ Renders the axis in inversed position.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5198,6 +5405,7 @@ Provides the format for axis labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5220,6 +5428,7 @@ Specifies the action to take when the axis labels are overlapping with each othe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5242,6 +5451,7 @@ Specifies the position of the axis labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5264,6 +5474,7 @@ Rotates the axis labels by the specified angle. Angle must be given in degrees.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5286,6 +5497,7 @@ Specifies the logarithmic base value. This is applicable only when valueType is 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5320,6 +5532,7 @@ Controls the pattern of dashes and gaps used to stroke the major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5342,6 +5555,7 @@ Specifies the opacity of the major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5364,6 +5578,7 @@ Specifies the visibility of the major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5386,6 +5601,7 @@ Specifies the width of the major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5420,6 +5636,7 @@ Length of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5442,6 +5659,7 @@ Specifies the visibility of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5464,6 +5682,7 @@ Specifies the width of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5486,6 +5705,7 @@ Specifies the maximum number of labels to be displayed in 100 pixels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5508,6 +5728,7 @@ Specifies the width of label till how much width we have to trim.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5542,6 +5763,7 @@ Controls the pattern of dashes and gaps used to stroke the minor grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5564,6 +5786,7 @@ Specifies the visibility of the minorGridLines. The user can modify the visibili
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5586,6 +5809,7 @@ Specifies the width of the minorGridLines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5620,6 +5844,7 @@ Length of the minor tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5642,6 +5867,7 @@ Specifies the visibility of the minor tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5664,6 +5890,7 @@ Specifies the width of the minor tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5686,6 +5913,7 @@ Specifies the number of minor ticks to render per major tick/interval.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5708,6 +5936,7 @@ Unique name of the axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5730,6 +5959,7 @@ Specifies a value that indicates whether to position the axis opposite to its de
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5752,6 +5982,7 @@ Horizontal/vertical padding for the plotting area based on the orientation of th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5774,6 +6005,7 @@ If the range is not given explicitly, range will be calculated automatically. Yo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5796,6 +6028,7 @@ Rounds the axis labels to the specified number of decimals.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5818,6 +6051,7 @@ Options to configure stripLine&rsquo;s color, text, border etc.,
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5838,6 +6072,7 @@ Border color of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5860,6 +6095,7 @@ Background color of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5882,6 +6118,7 @@ Specifies the end value of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5916,6 +6153,7 @@ Specifies the color of stripLine in primaryXAxis. Stripline text render with thi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5938,6 +6176,7 @@ Specifies the fontFamily of stripLine in primaryXAxis. Stripline text render wit
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5960,6 +6199,7 @@ Specifies the fontStyle of stripLine in primaryXAxis. Stripline text render with
 
 
 Default Value:
+{:.param}
 
 
 
@@ -5982,6 +6222,7 @@ Specifies the fontWeight of stripLine in primaryXAxis. Stripline text render wit
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6004,6 +6245,7 @@ Specifies the opacity of stripLine in primaryXAxis. Stripline text render with t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6026,6 +6268,7 @@ Specifies the size of stripLine in primaryXAxis. Stripline text render with this
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6048,6 +6291,7 @@ Specifies the start value of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6070,6 +6314,7 @@ Indicates whether to render the stripLine from the minimum/start value of the ax
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6092,6 +6337,7 @@ Text to be displayed inside the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6114,6 +6360,7 @@ Alignment of the text displayed in stripLine. See <a href="global.html#TextAlign
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6136,6 +6383,7 @@ Specifies the visibility of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6158,6 +6406,7 @@ Stripline width to be calculated and displayed when enable startFromAxis or set 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6180,6 +6429,7 @@ Specifies the z order position of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6202,6 +6452,7 @@ Specifies the position of the axis tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6236,6 +6487,7 @@ Options to trim and wrap the chart axis title .See enableTrim for the availbale 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6270,6 +6522,7 @@ Specifies the title fontfamily of primaryXAxis. This fontFamily is applied to th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6292,6 +6545,7 @@ Specifies the title fontStyle of primaryXAxis. This fontStyle is applied to the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6314,6 +6568,7 @@ Specifies the title fontWeight of primaryXAxis. This fontWeight is applied to th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6336,6 +6591,7 @@ Specifies the title opacity of primaryXAxis. This opacity value is applied to th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6358,6 +6614,7 @@ Specifies the title size of primaryXAxis. This font size is applied to the title
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6380,6 +6637,7 @@ use the value for trim and wrap the chart axis title based on the customer input
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6402,6 +6660,7 @@ The value of the title of chart can be specified using this property.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6424,6 +6683,7 @@ You can plot any type of data like date time, double, string etc., This property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6446,6 +6706,7 @@ Specifies the visibility of the axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6468,6 +6729,7 @@ This property determines the factor by which the axis is scaled. Value must be s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6490,6 +6752,7 @@ This property determines the starting position of the zoomed axis. Value must be
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6548,6 +6811,7 @@ Specifies the fill color of Even grid bands
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6570,6 +6834,7 @@ Specifies the opacity of the Even grid band.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6604,6 +6869,7 @@ Specifies the fill color of Odd grid bands
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6626,6 +6892,7 @@ Specifies the opacity of the Odd grid band.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6660,6 +6927,7 @@ Controls the pattern of dashes and gaps used to stroke the axis line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6682,6 +6950,7 @@ Specifies the horizontal/vertical padding of axis line. Normally, it is used alo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6704,6 +6973,7 @@ Specifies the visibility of axis line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6726,6 +6996,7 @@ Specifies the width of axisLine in primaryYAxis. The user can change the width o
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6760,6 +7031,7 @@ Specifies the visibility of crosshairLabel. This is the property to change the v
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6782,6 +7054,7 @@ Specifies the desired number of intervals for the range. With this setting, you 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6804,6 +7077,7 @@ Determines how to position labels at the edge of the axis. See <a href="global.h
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6826,6 +7100,7 @@ Specifies the action to take when the axis labels are which is having more than 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6860,6 +7135,7 @@ Specifies the fontfamily of primaryYAxis. The axis labels render with this speci
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6882,6 +7158,7 @@ Specifies the fontStyle of primaryYAxis. The axis labels render with this specif
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6904,6 +7181,7 @@ Specifies the fontWeight of primaryYAxis. The axis labels render with this speci
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6926,6 +7204,7 @@ Specifies the title opacity of primaryYAxis. The axis labels render with this sp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6948,6 +7227,7 @@ Specifies the title size of primaryYAxis. The axis labels render with this speci
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6970,6 +7250,7 @@ Specifies whether the type of the interval calculated is in days, months, hours,
 
 
 Default Value:
+{:.param}
 
 
 
@@ -6992,6 +7273,7 @@ Renders the axis in inversed position.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7014,6 +7296,7 @@ Provides the format for axis labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7036,6 +7319,7 @@ Specifies the action to take when the axis labels are overlapping with each othe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7058,6 +7342,7 @@ Specifies the position of the axis labels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7080,6 +7365,7 @@ Specifies the logarithmic base value. This is applicable only when valueType is 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7114,6 +7400,7 @@ Controls the pattern of dashes and gaps used to stroke the major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7136,6 +7423,7 @@ Specifies the opacity of the major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7158,6 +7446,7 @@ Specifies the visibility of the major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7180,6 +7469,7 @@ Specifies the width of the major grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7214,6 +7504,7 @@ Length of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7236,6 +7527,7 @@ Specifies the visibility of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7258,6 +7550,7 @@ Specifies the width of the major tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7280,6 +7573,7 @@ Specifies the maximum number of labels to be displayed in 100 pixels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7302,6 +7596,7 @@ Specifies the width of label till how much width we have to trim.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7336,6 +7631,7 @@ Controls the pattern of dashes and gaps used to stroke the minor grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7358,6 +7654,7 @@ Specifies the visibility of the minorGridLines. The user can modify the visibili
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7380,6 +7677,7 @@ Specifies the width of the minor grid lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7414,6 +7712,7 @@ Length of the minor tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7436,6 +7735,7 @@ Specifies the visibility of the minor tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7458,6 +7758,7 @@ Specifies the width of the minor tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7480,6 +7781,7 @@ Specifies the number of minor ticks to render per major tick/interval.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7502,6 +7804,7 @@ Unique name of the axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7524,6 +7827,7 @@ Specifies a value that indicates whether to position the axis opposite to its de
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7546,6 +7850,7 @@ Horizontal/vertical padding for the plotting area based on the orientation of th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7568,6 +7873,7 @@ If the range is not given explicitly, range will be calculated automatically. Yo
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7590,6 +7896,7 @@ Rounds the axis labels to the specified number of decimals.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7612,6 +7919,7 @@ Index of the row object in rowDefinitions array to which this axis is associated
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7634,6 +7942,7 @@ An axis can be spanned along multiple rows or plotting areas. This property spec
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7656,6 +7965,7 @@ Options to configure stripLine&rsquo;s color, text, border etc.,
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7676,6 +7986,7 @@ Border color of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7698,6 +8009,7 @@ Background color of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7720,6 +8032,7 @@ Specifies the end value of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7754,6 +8067,7 @@ Specifies the color of stripLine in primaryYAxis. Stripline text render with thi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7776,6 +8090,7 @@ Specifies the fontFamily of stripLine in primaryYAxis. Stripline text render wit
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7798,6 +8113,7 @@ Specifies the fontStyle of stripLine in primaryYAxis. Stripline text render with
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7820,6 +8136,7 @@ Specifies the fontWeight of stripLine in primaryYAxis. Stripline text render wit
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7842,6 +8159,7 @@ Specifies the opacity of stripLine in primaryYAxis. Stripline text render with t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7864,6 +8182,7 @@ Specifies the size of stripLine in primaryYAxis. Stripline text render with this
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7886,6 +8205,7 @@ Specifies the start value of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7908,6 +8228,7 @@ Indicates whether to render the stripLine from the minimum/start value of the ax
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7930,6 +8251,7 @@ Text to be displayed inside the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7952,6 +8274,7 @@ Alignment of the text displayed in stripLine. See <a href="global.html#TextAlign
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7974,6 +8297,7 @@ Specifies the visibility of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -7996,6 +8320,7 @@ Stripline width to be calculated and displayed when enable startFromAxis or set 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8018,6 +8343,7 @@ Specifies the z order position of the stripLine.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8040,6 +8366,7 @@ Specifies the position of the axis tick lines.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8074,6 +8401,7 @@ Options to trim and wrap the chart axis title .See enableTrim for the availbale 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8108,6 +8436,7 @@ Specifies the title fontfamily of primaryYAxis. This fontFamily is applied to th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8130,6 +8459,7 @@ Specifies the title fontStyle of primaryYAxis. This fontStyle is applied to the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8152,6 +8482,7 @@ Specifies the title fontWeight of primaryYAxis. This fontWeight is applied to th
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8174,6 +8505,7 @@ Specifies the title opacity of primaryYAxis. This font size is applied to the ti
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8196,6 +8528,7 @@ Specifies the title size of primaryYAxis. This opacity value is applied to the t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8218,6 +8551,7 @@ use the value for trim and wrap the chart axis title based on the customer input
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8240,6 +8574,7 @@ Text to be displayed as a title for axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8262,6 +8597,7 @@ You can plot any type of data like date time, double, string etc., This property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8284,6 +8620,7 @@ Specifies the visibility of the axis.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8306,6 +8643,7 @@ This property determines the factor by which the axis is scaled. Value must be s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8328,6 +8666,7 @@ This property determines the starting position of the zoomed axis. Value must be
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8350,6 +8689,7 @@ The rotation property is used to spin the 3D chart.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8398,6 +8738,7 @@ Specifies the bearFillColor for series. This is used in hilo series types
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8432,6 +8773,7 @@ Specifies the border color of series. Series in chart render with this specified
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8454,6 +8796,7 @@ Specifies the border width of series.Series in chart render with this specified 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8476,6 +8819,7 @@ Specifies the bullFillColor for series. This is used in hilo series types
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8498,6 +8842,7 @@ Controls the pattern of dashes and gaps used to stroke the line series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8520,6 +8865,7 @@ Specifies the dataSource for series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8542,6 +8888,7 @@ Sets the radius of the hole on the doughnut series with respect to plot area. Va
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8564,6 +8911,7 @@ Sets the radius of the doughnut series with respect to plot area. Value ranges f
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8586,6 +8934,7 @@ Specifies the type of series that can be drawn in a Radar or Polar series. It su
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8608,6 +8957,7 @@ Specifies the animation of the series. ejChart supports animation for the series
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8630,6 +8980,7 @@ Enabling this property can avoid pie series data label overlap each other.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8652,6 +9003,7 @@ Specifies the ending angle for rendering pie / doughnut series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8674,6 +9026,7 @@ Explodes the pie slices on mouse move. (Also works for doughnut series)
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8696,6 +9049,7 @@ Explodes all the pie slices. (Also works for doughnut series)
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8718,6 +9072,7 @@ Index of a slice to be exploded from the whole pie. (Also works for doughnut ser
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8740,6 +9095,7 @@ Represents the distance the slice has to be moved out when it is exploded.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8762,6 +9118,7 @@ Specifies the fill color of series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8796,6 +9153,7 @@ Specifies the color, that is common to all series. Text in the series, render wi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8818,6 +9176,7 @@ Specifies the fontFamily, that is common to all series. Text in the series, rend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8840,6 +9199,7 @@ Specifies the fontStyle, that is common to all series. Text in the series, rende
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8862,6 +9222,7 @@ Specifies the fontWeight, that is common to all series. Text in the series, rend
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8884,6 +9245,7 @@ Specifies the opacity, that is common to all series. Text in the series, render 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8906,6 +9268,7 @@ Specifies the font size, that is common to all series. Text in the series, rende
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8928,6 +9291,7 @@ Sets the funnel height.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8950,6 +9314,7 @@ Sets the funnel width.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8972,6 +9337,7 @@ Specifies the gap between each slice of a pyramid series in pixels.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -8994,6 +9360,7 @@ Used in Polar and Radar series to specify whether the line/area series has to be
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9016,6 +9383,7 @@ Used in Polar and Radar series to specify whether column type has to be rendered
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9038,6 +9406,7 @@ Specifies the position of the axis labels to render labels either inside or outs
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9060,6 +9429,7 @@ Specifies the style to draw the end point of a line like butt, round, square. Se
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9082,6 +9452,7 @@ Specifies the shape to use at the intersection of two lines drawn. See <a href="
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9128,6 +9499,7 @@ Specifies the border color of marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9150,6 +9522,7 @@ Specifies the width of the marker
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9184,6 +9557,7 @@ Specifies the rotation angle of dataLabel in the marker. The user can change the
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9218,6 +9592,7 @@ Specifies the border color of datalabel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9240,6 +9615,7 @@ Specifies the border width of dataLabel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9274,6 +9650,7 @@ Specifies whether to connect the point and data label using bezier curve or stra
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9296,6 +9673,7 @@ Specifies the width of the connector line.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9318,6 +9696,7 @@ Specifies the fill color of dataLabel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9352,6 +9731,7 @@ Specifies the fontFamily of dataLabel. Text in the data label render with the sp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9374,6 +9754,7 @@ Specifies the fontStyle of dataLabel. Text in the data label render with the spe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9396,6 +9777,7 @@ Specifies the fontWeight of dataLabel. Text in the data label render with the sp
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9418,6 +9800,7 @@ Specifies the opacity of the text in dataLabel. Text in the data label render wi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9440,6 +9823,7 @@ Specifies the font size of dataLabel. Text in the data label render with the spe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9462,6 +9846,7 @@ This property is used to change the alignment of the data label horizontally.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9496,6 +9881,7 @@ Specifies the bottom margin value in dataLabel. By specifying this property, we 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9518,6 +9904,7 @@ Specifies the left margin value in dataLabel. By specifying this property, we ca
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9540,6 +9927,7 @@ Specifies the right margin value in dataLabel. By specifying this property, we c
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9562,6 +9950,7 @@ Specifies the top margin value in dataLabel. By specifying this property, we can
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9584,6 +9973,7 @@ Specifies the opacity of dataLabel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9606,6 +9996,7 @@ Specifies the rendering shape of the marker. See <a href="global.html#Shape">Sha
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9628,6 +10019,7 @@ This property is used to change the position of the text in data label. See <a h
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9650,6 +10042,7 @@ This property is used to change the alignment of the data label vertically.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9672,6 +10065,7 @@ Specifies the visibility of dataLabel in the marker. The user can change the vis
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9694,6 +10088,7 @@ Specifies the fill color of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9716,6 +10111,7 @@ Specifies the image url location of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9738,6 +10134,7 @@ Specifies the opacity of the marker. Values ranges from 0 to 1.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9760,6 +10157,7 @@ Specifies the shape of the marker. See <a href="global.html#Shape">Shape</a>
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9794,6 +10192,7 @@ Specifies the height of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9816,6 +10215,7 @@ Specifies the width of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9838,6 +10238,7 @@ Toggles the visibility of the marker.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9860,6 +10261,7 @@ Specifies the opacity of series. Series render with this specified opacity.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9882,6 +10284,7 @@ Sets the radius of the pie series with respect to plot area. Value ranges from 0
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9904,6 +10307,7 @@ Specifies the points of the series. This is to specify the point values for the 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9926,6 +10330,7 @@ Sets the rendering mode of the pyramid as linear or surface.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9948,6 +10353,7 @@ Specifies the query for dataSource in series. This is used to take the query fro
 
 
 Default Value:
+{:.param}
 
 
 
@@ -9970,6 +10376,7 @@ Specifies the starting angle for rendering pie / doughnut series.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10016,6 +10423,7 @@ Specifies the color of tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10038,6 +10446,7 @@ Specifies the width of tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10060,6 +10469,7 @@ Specifies the duration of the tooltip to stay awake.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10082,6 +10492,7 @@ Enabling this property animates the tooltip on moving the cursor from one point 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10104,6 +10515,7 @@ Specifies the fill color of the tooltip.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10126,6 +10538,7 @@ Formatting the values of point on a tooltip can be customized using this propert
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10148,6 +10561,7 @@ Specifies the opacity of the tooltip. Values ranges from 0 to 1.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10170,6 +10584,7 @@ Specify the template for tooltip
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10192,6 +10607,7 @@ tooltip visibility can be toggled using this property
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10214,6 +10630,7 @@ Specifies the type of series to be rendered in chart. see <a href="global.html#T
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10236,6 +10653,7 @@ Specifies the visibility for series. This is used to change the visibility of se
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10258,6 +10676,7 @@ Specifies the XAxisName for series. This is used to specify the name of the xAxi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10280,6 +10699,7 @@ Specifies the xName for dataSource in series. This is used to take the x values 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10302,6 +10722,7 @@ Specifies the yAxisName for series. This is used to specify the name of the yAxi
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10324,6 +10745,7 @@ Specifies the yName for dataSource in series. This is used to take the y values 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10346,6 +10768,7 @@ The sideBySideSeriesPlacement property defines the appearance of the different s
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10368,6 +10791,7 @@ By specifying this property the user can change the theme of the chart. See <a h
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10390,6 +10814,7 @@ The tilt property defines the angle of the slope of 3D chart.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10436,6 +10861,7 @@ Specifies the title fontfamily of primaryXAxis. Chart title render with this spe
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10458,6 +10884,7 @@ Specifies the title fontStyle of primaryXAxis. Chart title render with this spec
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10480,6 +10907,7 @@ Specifies the title fontWeight. Chart title render with this specified fontWeigh
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10502,6 +10930,7 @@ Specifies the title opacity. Chart title render with this specified font opacity
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10524,6 +10953,7 @@ Specifies the title size. Chart title render with this specified font size.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10570,6 +11000,7 @@ Specifies the font family of subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10592,6 +11023,7 @@ Specifies the font style of subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10614,6 +11046,7 @@ Specifies the font weight of subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10636,6 +11069,7 @@ Specifies the font opacity of subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10658,6 +11092,7 @@ Specifies the font size of subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10680,6 +11115,7 @@ Specifies the text to be displayed as subtitle.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10702,6 +11138,7 @@ Specifies the text alignment for subtitle text.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10724,6 +11161,7 @@ Specifies the text of the chart title. The text which is to be render as chart t
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10746,6 +11184,7 @@ This property is used to change the alignment of the title horizontally. See <a 
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10768,6 +11207,7 @@ In 3D, Cartesian axes lines are represented as wall. The property wallSize defin
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10802,6 +11242,7 @@ Enabling this property will allow zooming for chart plot area.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10824,6 +11265,7 @@ Enabling this property will allow user to pan the zoomed chart on mouse up.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10846,6 +11288,7 @@ Enabling this property will allow user to zoom plot are on rolling mouse wheel.
 
 
 Default Value:
+{:.param}
 
 
 
@@ -10868,6 +11311,7 @@ Specifies whether zooming has to be vertical or horizontal.
 
 
 Default Value:
+{:.param}
 
 
 
