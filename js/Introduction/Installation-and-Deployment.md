@@ -120,7 +120,7 @@ For **MAC OS** and **Linux** users, we are providing a zip folder instead of .ex
 
 **Samples** – This folder contains samples of all the Syncfusion JavaScript controls. The user can directly open the html sample page in any of the browser to view the output.
 
-It also includes other folders namely Release Notes, License Agreement and Read Me. The control creation will be same as described in the Getting Started section (Here, the scripts and StyleSheets are needed to be referred from the **Assets** folder into their respective HTML pages).
+It also includes other folders namely Release Notes, License Agreement and Read Me. The control creation will be same as described in the [Control Initialization](http://helpjs.syncfusion.com/js/introduction/control-initialization) section (Here, the scripts and StyleSheets are needed to be referred from the **Assets** folder into their respective HTML pages).
 
 
 >  **Note**: The **MAC** and **Linux** users cannot be able to make use of the **Reporting and Business Intelligence** controls, as it needs assembly reference to be included in the application. Due to the installation of .exe is not supported in those two OS (the assembly libraries required for the Reporting & BI controls are not available in the system), we provide only the zip folder containing the JavaScript related Scripts, Stylesheets and Samples. 
@@ -144,5 +144,5 @@ Select **Package Manager** -> **Package Sources** in the above pop-up and click 
 Now click the **Add** button and the package name will be listed in the **Available package sources** list as shown below and then Click **OK**.
 {% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img4.png" %}
 
-The configuration part of Syncfusion JavaScript Nuget packages ends here and now you can proceed with its installation part while using it in your application (which will be described in the Getting Started section).
+The configuration part of Syncfusion JavaScript Nuget packages ends here and now you can proceed with its installation part while using it in your application (which will be described in the [Control Initialization](http://helpjs.syncfusion.com/js/introduction/control-initialization#configuring-and-installing-nuget-into-your-project) section).
 

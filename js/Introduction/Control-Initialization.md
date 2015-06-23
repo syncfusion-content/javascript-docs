@@ -216,7 +216,7 @@ Start the Visual Studio. Create a new ASP.NET Empty Web Application or ASP.NET E
 
 ### Configuring and Installing Nuget into your project
 
-To add the required scripts and css files automatically into your Project (Configure the **Syncfusion Nuget Package for JavaScript** in Visual Studio initially, before proceeding with the following installation procedure).
+To add the required scripts and css files automatically into your Project ([Configure](http://helpjs.syncfusion.com/js/introduction/installation-and-deployment#configuring-syncfusion-nuget-packages) the **Syncfusion Nuget Package for JavaScript** in Visual Studio initially, before proceeding with the following installation procedure).
 
 Right click on your project in the Solution explorer and select **Manage Nuget Packages** options from the sub-menu that pop-up on the screen. In the **Manage Nuget Packages** dialog, select the **Syncfusion Nuget Packages** within the **Online** tab, which will display the list of available packages in it, as shown below.
 {% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img6.png" %}
@@ -276,7 +276,7 @@ It is mandatory to include the reference to the required JavaScript files in you
 
 ### Adding Syncfusion Widget into your HTML page
 
-Finally, to add the Syncfusion datepicker widget into the HTML page, refer the same steps mentioned here in the manual method. 
+Finally, to add the Syncfusion datepicker widget into the HTML page, refer the same steps mentioned here in the [manual method](http://helpjs.syncfusion.com/js/introduction/control-initialization#adding-syncfusion-widget-into-your-html-page). 
 
 ## Using CDN link for Script and Stylesheet reference 
 
@@ -284,7 +284,7 @@ With this method, you can skip the process of copying and pasting the required S
 
 ### HTML file creation
 
-Create a basic HTML file and directly refer all the required cdn links for the Script and Stylesheets within the &lt;head&gt; section as shown below, - For other cdn links, refer the CDN section in the introduction part.
+Create a basic HTML file and directly refer all the required cdn links for the [Scripts](http://helpjs.syncfusion.com/js/introduction/cdn#cdn-script-links) and [Stylesheets](http://helpjs.syncfusion.com/js/introduction/cdn#cdn-stylesheet-links) within the &lt;head&gt; section as shown below, - For other cdn links, refer the [CDN](http://helpjs.syncfusion.com/js/introduction/cdn) section in the introduction part.
 
 Here, we have referred the cdn link of **default-theme**. Likewise, any of the 13 available themes can be referred in the below highlighted code, as per the user needs.
 

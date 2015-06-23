@@ -43,7 +43,7 @@ To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below men
 Start Visual Studio 2013 and Create a new TypeScript Application from **File** -> **New** -> **Project** and save it with a meaningful name as shown below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
 {% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img1.png" %}
 
-Now, you need to add the required Scripts and Stylesheets into your Project, as shown below – Copy the required Scripts and themes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the manual reference section of the Getting Started topic),
+Now, you need to add the required Scripts and Stylesheets into your Project, as shown below – Copy the required Scripts and themes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the [manual reference](http://helpjs.syncfusion.com/js/introduction/control-initialization#manual-reference-of-scripts-and-stylesheets-in-a-html-page) section of the Control Initialization topic),
 {% include image.html url="/js/Introduction/TypeScript_images/TypeScript_img2.png" Caption="Scripts & themes folder copied into current project" %}
 
 Add the **ej.widgets.all.d.ts** and **jquery.d.ts** type-definition files in your project and refer it in the **app.ts** file of your project as shown below,
