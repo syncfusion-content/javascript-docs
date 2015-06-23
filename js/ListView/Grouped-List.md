@@ -17,7 +17,7 @@ Refer the following code example.
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 
     <div id="defaultlistbox" >
@@ -53,9 +53,8 @@ Refer the following code example.
 
 **Screenshot:**
 
-{% include image.html url="/js/ListView/Concepts-and-Features/Grouped-List_images/Grouped-List_img1.png" Caption=""%}
+{% include image.html url="/js/ListView/Grouped-List_images/Grouped-List_img1.png" %}
 
-_First Level Group List_
 
 **Nested Child Group List**
 
@@ -65,7 +64,7 @@ Refer the following code examples.
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 
     <div id="defaultlistbox" >
@@ -107,5 +106,5 @@ Refer the following code examples.
 
 **Screenshot:**
 
-{% include image.html url="/js/ListView/Concepts-and-Features/Grouped-List_images/Grouped-List_img2.png" Caption="Nested Child Group List"%}
+{% include image.html url="/js/ListViewGrouped-List_images/Grouped-List_img2.png" %}
 
