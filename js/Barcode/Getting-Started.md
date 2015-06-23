@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section explains you briefly on how to create a **Barcode** in your application with **JavaScript**.
+This section explains you briefly on how to create a barcode in your application with JavaScript.
 
 ## Create your first Barcode in JavaScript
 
-You can easily configure the **Barcode** to any **DOM** element such as div or span. It takes text and symbol as input and renders the encoded text as **Barcode**.
+You can easily configure the barcode to any DOM element such as div or span. It takes text and symbol as input and renders the encoded text as barcode.
 
 ###Add Barcode to JavaScript application
 
-Create an **HTML** file using the following code example for **ejBarcode** creation.
+Create an HTML file using the following code example for `ejBarcode` creation.
 
 {% highlight html %}
 
@@ -38,13 +38,13 @@ Create an **HTML** file using the following code example for **ejBarcode** creat
 </html>
 {% endhighlight %}
 
-Add element for **Barcode** rendering.
+Add element for barcode rendering.
 
 {% highlight html %}
 <div id="barcode"></div>
 {% endhighlight %}
 
-Add the following script in the **HTML** file to initialize **ejBarcode**.
+Add the following script in the HTML file to initialize `ejBarcode`.
 
 {% highlight js %}
 <script type="text/javascript">

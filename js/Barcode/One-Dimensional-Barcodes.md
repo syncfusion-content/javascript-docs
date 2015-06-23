@@ -11,7 +11,7 @@ documentation: ug
 
 ##Code 39
 
-The **Code 39** character set includes the digits 0-9, the letters A-Z (upper case only), and the following symbols: space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%). A special start / stop character is placed at the beginning and ending of each **Barcode**. The **Barcode** can be of any length; even more than 25 characters begin to push the bounds. **Code 39** is the only type of **Barcode** that does not require a checksum for common use.
+The **Code 39** character set includes the digits 0-9, the letters A-Z (upper case only), and the following symbols: space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%). A special start / stop character is placed at the beginning and ending of each barcode. The barcode can be of any length; even more than 25 characters begin to push the bounds.Code 39 is the only type of barcode that does not require a checksum for common use.
 
 Here is the code example to create Code 39 barcode:
 
@@ -40,25 +40,25 @@ $("#barcode").ejBarcode({
 
  0123456789-$:/.+ABCD
 
-The characters, A, B, C and D are used as start and stop characters. **Codabar** is used in libraries, blood banks, the package delivery industry and a variety of other information processing applications.
+The characters, A, B, C and D are used as start and stop characters.Codabar is used in libraries, blood banks, the package delivery industry and a variety of other information processing applications.
 
 ##Code 32
 
-It is mainly used for coding pharmaceuticals, cosmetics and dietetics. **Code 32** is often used to encode Italian Pharmacode that has the following structure:
+**Code 32** is mainly used for coding pharmaceuticals, cosmetics and dietetics.It is often used to encode Italian Pharmacode that has the following structure:
 
 * 'A' character (ASCII 65), that is not really encoded
 * 8 digits for Pharmacode (It generally begins with / and prefixed with 0)
-* 1 digit for Checksum module 10, that is automatically calculated by **Barcode**
+* 1 digit for Checksum module 10, that is automatically calculated by barcode
 
-The value to be encoded must be8 digits Pharmacode (prefix it with '0' if necessary) and the 9th digit (the checksum) is automatically calculated by **Barcode**.
+The value to be encoded must be8 digits Pharmacode (prefix it with '0' if necessary) and the 9th digit (the checksum) is automatically calculated by barcode.
 
 ##Code 93
 
-**Code 93** was designed to complement and improve upon **Code 39**. It can represent the entire **ASCII** character set by using combinations of 2 characters. **Code 93** is a continuous, variable-length symbology and produces denser code. The Standard Mode (default implementation) can encode uppercase letters (A-Z), digits (0-9), and special characters like *, -, $, %, (Space), ., /, and +.
+**Code 93** was designed to complement and improve upon **Code 39**. It can represent the entire **ASCII** character set by using combinations of 2 characters.Code 93 is a continuous, variable-length symbology and produces denser code. The Standard Mode (default implementation) can encode uppercase letters (A-Z), digits (0-9), and special characters like *, -, $, %, (Space), ., /, and +.
 
 ##Code 93 Extended
 
-The **Code 93 Extended Barcode** symbology is continuous, variable length, and self-checking. It is based on Code 93**Barcode**. The Extended Version can encode all 128 ASCII characters.
+The **Code 93 Extended Barcode** symbology is continuous, variable length, and self-checking. It is based on Code 93 Barcode. The Extended Version can encode all 128 ASCII characters.
 
 ##Code 128
 
