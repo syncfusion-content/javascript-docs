@@ -45,13 +45,13 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 
 
-{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img1.png" Caption="Map with enable selection property"%}
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img1.png"%}
 
 ##Zooming
 
 The zooming feature enables you to zoom in and out of the map to show in-depth information. It is controlled by the **level** property of the map. When the zoom level of the **Map** control is increased, the map is zoomed in. When the zoom level is decreased, then the map is zoomed out.
 
-###Properties Related to Zooming
+###Properties
 
 The following properties are related to the zooming feature of the **Maps** control:
 
@@ -63,21 +63,21 @@ The following properties are related to the zooming feature of the **Maps** cont
 
 4. maxValue
 
-###level
+###Level
 
 The **level** property determines the map’s scale size when zooming. The default value of **level** is 1. 
 
-> _**Note:**_ level cannot be less than 1.
+> _**Note:**_ level cannot be less than 1
 
-###enableZoom
+###EnableZoom
 
 The **enableZoom** property enables or disables the zooming feature. 
 
-###minValue
+###MinValue
 
 The **minValue** property is used to set the minimum zoom level of the map. 
 
-###maxValue
+###MaxValue
 
 The **maxValue** property is used to set the maximum zoom level of the map.
 
@@ -107,17 +107,13 @@ The **maxValue** property is used to set the maximum zoom level of the map.
 
 Maps can be zoomed using the following options also,
 
-* Using Zoom method.
+* Zoom method.
+* mouse scroll.
+* mouse double tap.
+* shape selection
+* Position
 
-* Using mouse scroll.
-
-* Using mouse double tap.
-
-* Using shape selection
-
-* Using Position
-
-###Using Zoom method
+###Zoom method
 
 You can zoom the Maps using **zoom** method. The zoom method contains parameter zoom value. The map can be zoomed or scaled based on zoom value parameter.
 
@@ -128,17 +124,17 @@ You can zoom the Maps using **zoom** method. The zoom method contains parameter 
 
 {% endhighlight %}
 
-###Using mouse scroll
+###Mouse scroll
 
 You can zoom the map with mouse events using mouse scroll. When the mouse is scrolled up, the map is zoomed in and when the mouse is scrolled down, the map is zoomed out.
 
-###Using mouse double tap
+###Mouse double tap
 
 When the map is double-tapped using mouse, the zoom in operation is performed. 
 
-{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img2.png" Caption="Map with zoom"%}
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img2.png"%}
 
-###Using Shape Selection
+###Shape Selection
 
 Map shape is zoomed to the whole map area, on the shape selected. Animation can be applied for that zooming, using the **enableAnimation** property as true. 
 
@@ -161,20 +157,18 @@ When **enableZoomOnSelection** property is set to true, then, zoom on double cli
 
 {% endhighlight %}
 
-###Using Position
+###Positioning
 
 Depending on the latitude and longitude, you can zoom the map to the exact position. All locations are considered as latitude and longitude values and the exact location is considered as map coordinates.
 
 The **navigateTo** is a method defined that allows you to zoom the map control to the given location. This method contains three attributes as follows.
 
-_Attribute Table_
-
 <table>
 <tr>
-<td>
-<b>Attribute</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Attribute</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Latitude</td><td>
@@ -203,7 +197,7 @@ Zoom level of the map</td></tr>
 
 {% endhighlight %}
 
- ##Panning
+##Panning
 
 The panning feature enables map navigation. The **enablePan** property is used to enable or disable the panning support.
 
@@ -223,9 +217,8 @@ The panning feature enables map navigation. The **enablePan** property is used t
 
 **Navigation** control is built-in with **Maps** control. With Navigation control, **Maps** can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by **enableNavigation** property.
 
-###Structure of Navigation Control
 
-{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img3.png" Caption="Structure of Navigation Control"%}
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img3.png"%}
 
 
 
@@ -242,20 +235,11 @@ The panning feature enables map navigation. The **enablePan** property is used t
 
 {% endhighlight %}
 
-###Zoom with Navigation Control
-
-With Navigation control, the **Maps** can be zoomed. When you click on the ZoomIn button the Map is zoomed in and when you click on the ZoomOut button the Map is zoomed out.
-
-###Panning with Navigation Control
-
-Maps can be panned with Pan buttons (TopPan button, RightPan button, BottomPan button and LeftPan button). When you click on a particular Pan button the **Map** is panned on the respective directions.
-
-###Navigation Control Positions
+###Positions
 
 The Navigation control can be positioned in two ways.
 
 * Absolute Position
-
 * Dock Position
 
 ####Absolute Position
@@ -267,28 +251,18 @@ Based on the margin values of X and Y-axes, the navigation control can be positi
 The navigation control can be positioned in following locations within the container.
 
 * topLeft
-
 * topCenter
-
 * topRight
-
 * centerLeft
-
 * center
-
 * centerRight
-
 * bottomLeft
-
 * bottomRight
-
 * bottomCenter
-
 * bottomRight
-
 * none
 
-You can set this option by using **dockPosition** property in **navigationControl**.****
+You can set this option by using **dockPosition** property in **navigationControl**.
 
 {% highlight html %}
 

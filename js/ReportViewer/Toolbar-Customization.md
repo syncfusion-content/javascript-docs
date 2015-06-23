@@ -14,13 +14,12 @@ The **ReportViewer** has an option to show or hide items in the **toolbar**. To 
 {% highlight js %}
 
 
-
-$("#viewer").ejReportViewer(
-                {
-                    toolbarSettings: {
-                        items: ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Parameters
-                    }                });
-
+$("#viewer")
+    .ejReportViewer({
+        toolbarSettings: {
+            items: ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Parameters
+        }
+    });
 
 {% endhighlight %}
 

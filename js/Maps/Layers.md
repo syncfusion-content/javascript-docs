@@ -15,10 +15,6 @@ Map is maintained through Layers and it can accommodate one or more layers.
 
 The Multilayer support allows you to load multiple shape files in a single container, enabling maps to display more information.
 
-###Loading Multiple Shape files in a Single Container
-
-This feature allows the map to load multiple types of shape files in a single container.
-
 ###Adding Multiple Layers in the Map
 
 The shape layers is the core layer of the map. The multiple layers can be added in the shape Layers as **subShapeFileLayers** within the shape Layers.
@@ -31,7 +27,7 @@ In this example, World Map shape is used as shape data by utilizing the “**Wor
 
 ..\ Maps_GeoJSON\
 
-You can assign the complete contents in “**WorldMap.json**” file to new **JSON** object. For better understanding, a JS file “**WorldMap.js”** is already created to store **JSON** data in **JSON** object “usMap”****
+You can assign the complete contents in “**WorldMap.json**” file to new **JSON** object. For better understanding, a JS file “**WorldMap.js”** is already created to store **JSON** data in **JSON** object “usMap”
 
 **[usa.js]**
 
@@ -69,5 +65,5 @@ You can assign the complete contents in “**WorldMap.json**” file to new **JS
 {% endhighlight %}
 
 
-{% include image.html url="/js/Maps/Layers_images/Layers_img1.png" Caption="Map with layers"%}
+{% include image.html url="/js/Maps/Layers_images/Layers_img1.png"%}
 
