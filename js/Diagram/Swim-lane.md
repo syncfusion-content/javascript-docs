@@ -112,6 +112,7 @@ var swimlane = {
 {% endhighlight %}
 The following screenshot is the swim lane generated from the example code.
 {% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img2.png" %}
+
 ## Adding Nodes into the Lane 
 Now that the overall swim-lane skeleton is ready, add a node into the lane programmatically.
 {% highlight js %}
