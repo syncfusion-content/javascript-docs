@@ -9,19 +9,21 @@ documentation: ug
 
 # LiveTile Configuration
 
-**Live Tiles** are used to display the current or up to date information like scores, stocks, weather, etc. You can enable **Live Tile** using “**data-ej-livetile-enabled”** attribute by setting it to **true**. The “**data-ej-livetile-type”** attribute allows you to specify the type of animation while updating the information in **Tile**. There are three types of **Tile** animation supported: Flip, Slide and Carousel.
+**Live Tiles** are used to display the current or up to date information like scores, stocks, weather, etc. You can enable **Live Tile** using “**data-ej-livetile-enabled”** attribute by setting it to **true**. The **"data-ej-livetile-type”** attribute allows you to specify the type of animation while updating the information in **Tile**. There are three types of **Tile** animation supported: Flip, Slide and Carousel.
 
-The****“**data-ej-livetile-imageurl”** attribute sets background image for **Live Tile**. This property accepts array values so you can specify the image **url’s** for all the **Tiles** that are used in single **Live Tile**. 
+The **“data-ej-livetile-imageurl”** attribute sets background image for **Live Tile**. This property accepts array values so you can specify the image **url’s** for all the **Tiles** that are used in single **Live Tile**. 
 
-You can specify time interval for each **Tile** update/animation using “**data-ej-livetile-updateinterval”** attribute. Time interval is given in milliseconds. The default value is 2000.
+You can specify time interval for each **Tile** update/animation using **"data-ej-livetile-updateinterval”** attribute. Time interval is given in milliseconds. The default value is 2000.
 
 Refer to the following code examples.
 
-{% highlight javascript %}
-
+{% highlight html %}
 
     <div id="tile"></div>
-    <script>
+
+{% endhighlight %}
+{% highlight js %}    
+   
         $("#tile").ejTile({
             tileSize: "medium", imagePosition: "fill",
             liveTile: {
@@ -30,21 +32,18 @@ Refer to the following code examples.
             },
             text: "Peoples"
         })
-    </script>
-
-
-
+ 
 {% endhighlight %}
 
 
 
-In “**data-ej-livetile-**i**magetemplateid”** attribute, you can give **Live Tile** images outside the **Tile** rendering. To achieve this, you are required to give image content inside the element where the path is specified by **templateid**. You can update the “**imageTemplateId”** dynamically through **updateTemplateID** public method**.**
+In **"data-ej-livetile-imagetemplateid”** attribute, you can give **Live Tile** images outside the **Tile** rendering. To achieve this, you are required to give image content inside the element where the path is specified by **templateid**. You can update the “**imageTemplateId”** dynamically through **updateTemplateID** public method**.**
 
 Refer to the following code examples. 
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 
     <div id="tile"></div>
@@ -54,7 +53,11 @@ Refer to the following code examples.
     <div id="temp2" style="background-image:
             url('http://js.syncfusion.com/UG/Web/Content/tile/people_2.png'); width: 100%; height: 100%;">
     </div>
-    <script>
+ 
+{% endhighlight %}  
+
+{% highlight js %}
+    
         $("#tile").ejTile({
             tileSize: "medium", imagePosition: "fill",
             liveTile: {
@@ -62,9 +65,7 @@ Refer to the following code examples.
                 imageTemplateId: ["temp1", "temp2"]
             },
             text: "Peoples"
-        })
-    </script> 
-
+        });
 
 {% endhighlight %}
 
@@ -76,10 +77,13 @@ Refer to the following code examples.
 
 
 
-{% highlight javascript %}
-
+{% highlight html %}
 
     <div id="tile"></div>
+{% endhighlight %}
+    
+{% highlight css %}
+    
     <style>
         .people1 {
             background-image: url('http://js.syncfusion.com/UG/Web/Content/tile/people_1.png');
@@ -92,7 +96,10 @@ Refer to the following code examples.
             height: 100%;
         }
     </style>
-    <script>
+ {% endhighlight %}
+    
+{% highlight js %}
+        
         $("#tile").ejTile({
             tileSize: "medium", imagePosition: "fill",
             liveTile: {
@@ -100,9 +107,7 @@ Refer to the following code examples.
                 imageClass: ["people1", "people2"]
             },
             text: "Peoples"
-        })
-    </script> 
-
+        });
 
 {% endhighlight %}
 

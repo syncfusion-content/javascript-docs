@@ -9,12 +9,11 @@ documentation: ug
 
 # Template Support
 
-The****“**data-ej-imagetemplateid”** attribute is used to customize the image of **Tile** with template feature by setting the **id**. The****“**data-ej-captiontemplateid”** attribute is used to customize the text of **Tile** with template feature by setting the **id**. 
+The **“data-ej-imagetemplateid”** attribute is used to customize the image of **Tile** with template feature by setting the **id**. The **“data-ej-captiontemplateid”** attribute is used to customize the text of **Tile** with template feature by setting the **id**. 
 
 Refer to the following code examples.
 
-{% highlight javascript %}
-
+{% highlight html %}
 
     <div id="tile"></div>
     <div id="imageTemplate">
@@ -27,11 +26,12 @@ Refer to the following code examples.
         </div>
     </div>
     <div id="captionTemplate" class="title">Windows Store</div>
-    <script>
-        $("#tile").ejTile({ tileSize: "wide", imageTemplateId: "imageTemplate", captionTemplateId: "captionTemplate" })
-    </script>
+    
+{% endhighlight %}
+    
+ {% highlight js %}   
 
-
+        $("#tile").ejTile({ tileSize: "wide", imageTemplateId: "imageTemplate", captionTemplateId: "captionTemplate" });
 
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ Refer to the following code examples.
 
 Add the following code example **JS** samples 
 
-{% highlight javascript %}
+{% highlight css %}
 
     <style>
         #appimage {
@@ -61,11 +61,9 @@ Add the following code example **JS** samples
         }
     </style>
 
-
-
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Tile/Concepts-and-features/Template-Support_images/Template-Support_img1.png" Caption="Tile - Template Support"%}
+{% include image.html url="/js/Tile/Template-Support_images/Template-Support_img1.png"%}
 
