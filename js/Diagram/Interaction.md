@@ -279,7 +279,7 @@ $("#Diagram").ejDiagram({ zoomFactor: 0.2 });
 
 ### ZoomCommands
 
-Refer the link ZoomCommand
+Refer the link [ZoomCommand](/js/Diagram/Commands#zoom-command)
 
 ## Keyboard
 

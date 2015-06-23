@@ -37,12 +37,12 @@ paletteCollection.Add(connectors);
 
 //create node
 function createNode(name, offsetX, offsety, height, width) {
-   //note: for creating node refer the link Node creation
+   //note: for creating node refer the link [Node creation](/js/Diagram/Node#create-node)
 }
 
 //create connector
 function createConnector(name, segments, decorator) {
-   //note: for creating connector refer the link Connector creation    
+   //note: for creating connector refer the link [Connector creation](/js/Diagram/Connector#create-connector)  
 }
 
 $("#palette").ejSymbolPalette({

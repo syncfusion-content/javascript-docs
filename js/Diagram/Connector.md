@@ -41,7 +41,7 @@ Connector is connected to the bounds of the node and at a specific point on the 
 
 {% highlight js %}
 
-//for node creation refer the link Node creation
+//for node creation refer the link [Node creation](/js/Diagram/Node#create-node)
 //create a connection between headNode/tailNode using connector
 
 var connector = [{
@@ -307,7 +307,6 @@ var port = [{
 
 //Enable Line Bridging for a single connector
 var constraints = ej.datavisualization.Diagram.ConnectorConstraints;
-
 var constraint = constraints.Bridging | constraints.Default;
 var connector = [{
    constraints: constraint
@@ -315,7 +314,6 @@ var connector = [{
 
 //Enable Line Bridging for all connectors added to diagram model
 var constraints = ej.datavisualization.Diagram.DiagramConstraints;
-
 var constraint = constraints1.Bridging | constraints1.Default;
 
 //Initialize the diagram
@@ -390,8 +388,8 @@ diagram.update({
 **Corner Radius** support enables you to create connectors with rounded corners. The following code example illustrates how to set corner radius for connectors.
 
 {% highlight js %}
-//For node creation refer the link Node Creation
-//For Creating connection refer the link Connecting nodes
+//For node creation refer the link [Node creation](/js/Diagram/Node#create-node)
+//For Creating connection refer the link [Connecting nodes](/js/Diagram/Connector#create-connector)
 //Adding corner radius for connector
 var connector = {
    cornerRadius: 20
