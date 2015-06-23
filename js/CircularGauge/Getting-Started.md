@@ -15,6 +15,8 @@ The following screen shot displays a **Circular Gauge**, which visually represen
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
 
+## Create a Circular Gauge
+
 First create an **HTML** file and add references to the required libraries.
 
 {% highlight html %}
@@ -67,7 +69,7 @@ On executing the above code, sample renders a default **Circular Gauge** with de
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
-**Set Height and Width values**
+## Set Height and Width values
 
 Pointers have different height and range. You can set the height and width of the gauge.
 
@@ -87,7 +89,7 @@ The following screenshot displays a **Gauge** in which height and width are set.
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
-**Set Background Color**
+## Set Background Color
 
 You can draw the speedometer with dark background and to vary the speed of the pointer, set the **readOnly** option as **False** for user interaction. 
 
@@ -108,7 +110,7 @@ The above code example renders a **Gauge** as shown in the following screen shot
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
 
-**Provide scale values**
+## Provide scale values
 
 * You can customize the pointer cap using the following options- Cap radius, Cap border color, cap background color, pointer cap border width. 
 
@@ -153,7 +155,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img5.png" Caption=""%}
 
-**Add Label Customization**
+## Add Label Customization
 
 To display the values in the **Gauge,** scale labels are used. You can customize the label color.  
 
@@ -187,7 +189,7 @@ On executing the above code, sample renders a default **Circular Gauge** with cu
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
 
-**Add pointer data**
+## Add pointer data
 
 You can use three pointers that denote kilometer value, rotation per minute value and torque value.The torque value pointer should not be similar to other two pointers. Set the torque pointer as marker pointer. You can set other attributes for pointer such as background color, border color, Length, width and distance from scale.
 
@@ -253,7 +255,7 @@ On executing the above code, sample renders a customized **Circular Gauge** as f
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img7.png" Caption=""%}
 
-**Add Tick Details**
+## Add Tick Details
 
 You can display the tick value with customization as given in the following code example. You can set width and height of the Major ticks greater than the Minor ticks. You can set dark background for tick Color to have a better visibility.
 
@@ -297,7 +299,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img8.png" Caption=""%}
 
-**Add Range Values**
+## Add Range Values
 
 Ranges denote the property of scale value in the speedometer. The color values of the ranges specify the speed variation. Set **showRanges** property to **“True”** to show the ranges in the **Circular Gauge**. Select safe zone for low speed, caution zone for moderate speed and high zone for high speed.You can customize the range with the properties such as start value, end value, start width, end width,  background color , border color, etc.,
 
@@ -353,7 +355,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img9.png" Caption=""%}
 
-**Add Indicator Details**
+## Add Indicator Details
 
 Indicators denote whether the pointer values are placed in their respective zones. You can position the indicator on the respective range value for the required changes. You can set the location of the indicator using **position** property. The **stateRanges** property defines how the indicator should behave when the pointer is in certain values. 
 
@@ -448,7 +450,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 {% include image.html url="/js/CircularGauge/Getting-Started_images/Getting-Started_img10.png" Caption=""%}
 
-**Add Custom Label Details**
+## Add Custom Label Details
 
 You can specify the text in the **Gauge** using **Custom labels** and you can customize it through various properties. You can use custom texts to display the three range description.
 

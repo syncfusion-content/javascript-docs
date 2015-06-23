@@ -18,7 +18,7 @@ documentation: ug
 
 {% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
 
-**Create a Digital Gauge**
+## Create a Digital Gauge
 
 First create an **HTML** file and then add references to the required libraries.
 
@@ -79,7 +79,7 @@ On executing the above code, sample renders a default **Digital Gauge** with def
 
 {% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
-**Set Height and Width values**
+## Set Height and Width values
 
 Basic attributes of each canvas elements are height and width. You can set the height and width of the gauge.
 
@@ -101,7 +101,7 @@ On executing the above code, sample renders a default **Digital Gauge** with the
 
 {% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
-**Set Items Property**
+## Set Items Property
 
 You can customize the **Digital Gauge** using different properties.
 
@@ -144,7 +144,7 @@ On executing the above code, sample renders a **Digital Gauge** with default val
 
 {% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
 
-**Add Background Image**
+## Add Background Image
 
 You can add a **&lt;div&gt;** element to set the background for the **Digital Gauge** and attach the styles to the **HTML** page such as height , width, background image **URL** ,background repeat property, etc.In the following code example, image used is a road in California. You can pass the text as **“WELCOME TO CALIFORNIA”**
 
@@ -177,7 +177,7 @@ On executing the above code, sample renders a default **Digital Gauge** as follo
 
 {% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img5.png" Caption=""%}
 
-**Add Location**
+## Add Location
 
 You can position the digital letters inside the canvas element using **location** property.
 
@@ -204,9 +204,9 @@ On executing the above code, sample renders a default **Digital Gauge** as follo
 
 {% include image.html url="/js/DigitalGauge/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
 
-**Add Items collection** 
+## Add Items collection
 
-You can add **Items****collection** to display the temperature value as used in the Digital thermometer.
+You can add **Items collection** to display the temperature value as used in the Digital thermometer.
 
 {% highlight js %}
 

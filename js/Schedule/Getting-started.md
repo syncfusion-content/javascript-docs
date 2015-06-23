@@ -9,7 +9,6 @@ documentation: ug
 
 # Getting started
 
-****
 
 * This section encompasses on how to configure the **Schedule** control for your business requirements. You can pass any data that are bound to the **Schedule** control through various API’s available within it.
 
@@ -23,7 +22,7 @@ The following screenshot displays the **Schedule** control with daily important 
 
 
 
-**Create a Schedule**
+## Create a Schedule
 
 Create an **HTML** file and then add the following references to the required libraries.
 
@@ -85,7 +84,7 @@ You can run the above code example and an empty **Scheduler** is displayed witho
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img2.png" Caption=""%}
 
 
-**Pass data to Schedule control**
+## Pass data to Schedule control
 
 * You can add appointment to the **Schedule** control by passing data to the **Schedule** control either locally or remotely. In the following code example, you can see how to bind the remote data to the **Schedule** control.
 
@@ -147,7 +146,7 @@ The following screenshot displays a **Schedule** control with the appointments i
 
 You can also customize the appointments within the **Scheduler** using the **template** support discussed in the following sections.
 
-**Add Templates to the appointments**
+## Add Templates to the appointments
 
 * You can change the appearance of the appointments and add images for visually appealing look-and-feel of the appointments. You can use the template concept to achieve this.
 
@@ -230,7 +229,7 @@ Once you set the template for the appointments, the **Scheduler** is displayed w
 
 
 
-**Change the Schedule View**
+## Change the Schedule View
 
 You can change the view of the **Schedule** from **week** to **month** by using the **currentView** property. By default, the **Schedule** control is displayed in a **“week”** view.
 
@@ -313,7 +312,7 @@ When you execute the above code example, a **Scheduler** is displayed as follows
 
 
 
-**Change the appointment height through CSS**
+## Change the appointment height through CSS
 
 The default height of an appointment is always suitable for the text.  In order to display an image and text in the appointment, you can change the height of the appointments in a **month** view, through **css** styles manually as shown in the following code example.  You can set the appointment height to **auto** to display the images within it.
 
@@ -408,7 +407,7 @@ After setting the height for appointments in **month** view, the **Schedule** co
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img6.png" Caption=""%}
 
 
-**Manipulate the Appointments**
+## Manipulate the Appointments
 
 **Appointment Creation**
 
@@ -455,7 +454,7 @@ To delete an appointment, click the appointment, and then click **delete** icon 
 
 You can also delete the appointment by selecting the required appointment in the **Schedule** control and click the delete key option. This works only when you set “**allowKeyboardNavigation**” option to **“True”**.
 
-**Manipulate Recurrence Appointments**
+## Manipulate Recurrence Appointments
 
 **Add Recurrence Appointment**
 
@@ -498,7 +497,7 @@ When you click the recurrence appointment, a quick appointment window opens with
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img16.png" Caption="Quick Appointment Window."%}
 
 
-**Behaviour Customization using the events**
+## Behaviour Customization using the events
 
 **Restrict the display of appointment window**
 
