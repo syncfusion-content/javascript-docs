@@ -19,14 +19,18 @@ The following code example illustrates how to add **ReportParameter** at control
 
 
 
-$("#viewer").ejReportViewer(
-                {
-                    reportServiceUrl: "/api/SSRSReport",
-                    processingMode: ej.ReportViewer.ProcessingMode.Remote,
-                    reportPath: "~/InvoiceTemplate", 
-                    parameters: [{ name: 'InvoiceID', labels: ['InvoiceID'], values: [10250], nullable: false }]
-                });
-
+$("#viewer")
+    .ejReportViewer({
+        reportServiceUrl: "/api/SSRSReport",
+        processingMode: ej.ReportViewer.ProcessingMode.Remote,
+        reportPath: "~/InvoiceTemplate",
+        parameters: [{
+            name: 'InvoiceID',
+            labels: ['InvoiceID'],
+            values: [10250],
+            nullable: false
+        }]
+    });
 
 {% endhighlight %}
 

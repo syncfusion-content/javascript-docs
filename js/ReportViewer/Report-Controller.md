@@ -15,14 +15,10 @@ The **ReportViewer** uses **Web API** services to process the report file, proce
 
 The interface **IReportController** has the declaration of action methods that is defined in **WebApi** Controller for processing the RDL/RDLC files and for processing request from **ReportViewer** control. The **IReportController** has the following action methods declaration. 
 
-
-
-_Report Controller methods_
-
 <table>
 <tr>
-<td>
-<b>Methods</b></td><td>
+<th>
+<b>Methods</b></th><td>
 <b>Description</b></td></tr>
 <tr>
 <td>
@@ -41,17 +37,16 @@ Report initialization method that is triggered when report begins to be processe
 OnReportLoaded</td><td>
 Report loaded method that is triggered when report and sub report begin loading.</td></tr>
 </table>
+
 **ReportHelper**
 
 The class **ReportHelper** contains helper methods that helps process Post/Get request from **ReportViewer** control and returns the response to **ReportViewer** control. The **ReportHelper** has the following methods. 
 
-_Report Helper methods_
-
 <table>
 <tr>
-<td>
-<b>Methods</b></td><td>
-<b>Description</b></td></tr>
+<th>
+<b>Methods</b></th><th>
+<b>Description</b></th></tr>
 <tr>
 <td>
 GetResource</td><td>

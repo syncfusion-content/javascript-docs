@@ -11,19 +11,13 @@ documentation: ug
 
 This section explains briefly about how to create a **ReportViewer** in your web application with **JavaScript**.
 
-##Control Structure
-
-The following screenshot displays the control structure of **ReportViewer**.
-
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img1.png" Caption="ReportViewer Structure"%}
-
 ##Create your first ReportViewer in JavaScript
 
 This section explains how to configure a **ReportViewer** component in web application. As **ReportViewer** uses **WebApi** to process the report file, you can also learn how to create **WebApi** Service to process the report for **ReportViewer**. In the following example, the **ReportViewer** component displays the Sales Dashboard Report.    
 
 Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET****Empty Web Application** template, and then click **OK**. The following screenshot displays the **Project Creation** Wizard.
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img2.png" Caption="Project Creation Wizard"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img2.png" %}
 
 ###Create HTML Page
 
@@ -31,13 +25,13 @@ To create a new web form in the application
 
 1\. Right-Click on the project and select **Add**
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img3.png" Caption="Add New Item Wizard"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img3.png" %}
 
 
 
 2\. Click **New Item** and select **HTML** Page from the listed templates
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img4.png" Caption="Adding HTML page"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img4.png" %}
 
 
 
@@ -53,42 +47,26 @@ To create a new web form in the application
 
 
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img5.png" Caption="Adding reference"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img5.png" %}
 
 2\. Add the following assemblies
 
 * System.Web.Routing,  
-
 * System.Web.Http,
-
 * System. Web.Http.WebHost,
-
 * System.Net.Http,
-
 * System.Net.Http.WebRequest,
-
 * System.Net.Http.Formatting,
-
 * Syncfusion.Linq.Base.dll,
-
 * Syncfusion.EJ.ReportViewer,
-
 * Syncfusion.ReportControls.Wpf
-
 * Syncfusion.ReportWriter.Base
-
 * Syncfusion.Pdf.Base,
-
 * Syncfusion.XlsIO.Base,
-
 * Syncfusion.DocIO.Base
-
 * Synfusion.Shared.Wpf
-
 * Syncfusion.Chart.Wpf
-
 * Syncfusion.Gauge.Wpf
-
 * Syncfusion.SfMaps.Wpf 
 
 
@@ -114,12 +92,10 @@ Add the script files and CSS files in the **&lt;title&gt;** tag of the **defa
 {% highlight html %}
 
   
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"> </script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"> </script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
-
-
+<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"> </script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"> </script>
+<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js" type="text/javascript"></script>
 {% endhighlight %}
 
 
@@ -132,19 +108,19 @@ Add the following code example in the **&lt;body&gt;** tag in the **Default.h
 
 
 <div>
-        <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
-        <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
-
-        <!-- Setting property and initializing ejReportViewer widget.-->
-<script type="text/javascript">
-$(function () {
-$("#viewer").ejReportViewer(
-                    {
-                        reportServiceUrl: "/api/ReportApi",
-                        reportPath: '~/App_Data/Sales Dashboard.rdl'
-                    });
-});
-        </script>
+   <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
+   <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
+   <!-- Setting property and initializing ejReportViewer widget.-->
+   <script type="text/javascript">
+      $(function () {
+      $("#viewer").ejReportViewer(
+                          {
+                              reportServiceUrl: "/api/ReportApi",
+                              reportPath: '~/App_Data/Sales Dashboard.rdl'
+                          });
+      });
+              
+   </script>
 </div>
 
 
@@ -160,7 +136,7 @@ $("#viewer").ejReportViewer(
 
 The **JavaScript ReportViewer** uses **WebApi** services to process the report file and process the request from control.
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img6.png" Caption="Adding WebApi Controller"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img6.png" %}
 
 ####Inherit IReportController
 
@@ -217,7 +193,7 @@ namespace ReportViewerDemo.Api
 
 1\. Right-Click the **Project**, select **Add >** and select **Global.asax** file from the listed templates.
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img7.png" Caption="Adding Global.asax"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img7.png" %}
 
 2\. You can route the **WebAPI** in **Application_Start** event into **Global.asax** file as follows.
 
@@ -255,7 +231,7 @@ namespace ReportViewerDemo
 
 Run the sample application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img8.png" Caption="ReportViewer with Sales Dashboard Report"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img8.png" %}
 
 ###Load SSRS Server Reports
 
@@ -267,22 +243,21 @@ Run the sample application and you can see the **ReportViewer** on the page as d
 
 
 <div>
-        <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
-        <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
-
-        <!-- Setting property and initializing ejReportViewer widget.-->
-<script type="text/javascript">
-$(function () {
-$("#viewer").ejReportViewer(
-                    {
-                      reportServiceUrl: "/api/ReportApi",
-                      reportPath: "/SSRSSamples2/Territory Sales",
-                      reportServerUrl: "http://76.74.153.81/ReportServer"
-                    });
-});
-        </script>
+   <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
+   <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
+   <!-- Setting property and initializing ejReportViewer widget.-->
+   <script type="text/javascript">
+      $(function () {
+      $("#viewer").ejReportViewer(
+                          {
+                            reportServiceUrl: "/api/ReportApi",
+                            reportPath: "/SSRSSamples2/Territory Sales",
+                            reportServerUrl: "http://76.74.153.81/ReportServer"
+                          });
+      });
+              
+   </script>
 </div>
-
 
 {% endhighlight %}
 
@@ -305,7 +280,7 @@ $("#viewer").ejReportViewer(
 
 3\. Run the application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img9.png" Caption="Report from SSRS"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img9.png" %}
 
 ###Load RDLC Reports
 
@@ -317,34 +292,34 @@ The **ReportViewer** has data binding support to visualize the **RDLC** reports.
 
 
 <div>
-        <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
-        <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
-
-        <!-- Setting property and initializing ejReportViewer widget.-->
-<script type="text/javascript">
-$(function () {
-$("#viewer").ejReportViewer(
-                    {
-                      reportServiceUrl: "/api/ReportApi",
-                      processingMode: ej.ReportViewer.ProcessingMode.Local,
-                      reportPath: 'Product List.rdlc',
-                           dataSources: [{
-                value: [
-                           {
-                               ProductName: "Baked Chicken and Cheese", OrderId: "323B60", Price: 55, Category: "Non-Veg", Ingredients: "Grilled chicken, Corn and Olives.", ProductImage: ""
-                           },
-                           {
-                               ProductName: "Chicken Delite", OrderId: "323B61", Price: 100, Category: "Non-Veg", Ingredients: "Cheese, Chicken chunks, Onions & Pineapple chunks.", ProductImage: ""
-                           },
-                           {
-                               ProductName: "Chicken Tikka", OrderId: "323B62", Price: 64, Category: "Non-Veg", Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.", ProductImage: ""
-                           }
-               ],
-                name: "list"
-            }]
-                    });
-});
-        </script>
+   <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
+   <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
+   <!-- Setting property and initializing ejReportViewer widget.-->
+   <script type="text/javascript">
+      $(function () {
+      $("#viewer").ejReportViewer(
+                          {
+                            reportServiceUrl: "/api/ReportApi",
+                            processingMode: ej.ReportViewer.ProcessingMode.Local,
+                            reportPath: 'Product List.rdlc',
+                            dataSources: [{
+                            value: [
+                                 {
+                                     ProductName: "Baked Chicken and Cheese", OrderId: "323B60", Price: 55, Category: "Non-Veg", Ingredients: "Grilled chicken, Corn and Olives.", ProductImage: ""
+                                 },
+                                 {
+                                     ProductName: "Chicken Delite", OrderId: "323B61", Price: 100, Category: "Non-Veg", Ingredients: "Cheese, Chicken chunks, Onions & Pineapple chunks.", ProductImage: ""
+                                 },
+                                 {
+                                     ProductName: "Chicken Tikka", OrderId: "323B62", Price: 64, Category: "Non-Veg", Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.", ProductImage: ""
+                                 }
+                            ],
+                            name: "list"
+                          }]
+                   });
+      });
+              
+   </script>
 </div>
 
 
@@ -352,5 +327,5 @@ $("#viewer").ejReportViewer(
 
 2\. Run the application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
-{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img10.png" Caption="Product List RDLC Report"%}
+{% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img10.png" %}
 

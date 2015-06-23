@@ -17,27 +17,41 @@ The following code example illustrates how to add **DataSource** at control crea
 
 
 
-$("#viewer").ejReportViewer(
-                    {
-                      reportServiceUrl: "/api/ReportApi",
-                      processingMode: ej.ReportViewer.ProcessingMode.Local,
-                      reportPath: 'Product List.rdlc',
-                      dataSources: [{
-                       value: [
-                           {
-                               ProductName: "Baked Chicken and Cheese", OrderId: "323B60", Price: 55, Category: "Non-Veg", Ingredients: "Grilled chicken, Corn and Olives.", ProductImage: ""
+$("#viewer")
+    .ejReportViewer({
+        reportServiceUrl: "/api/ReportApi",
+        processingMode: ej.ReportViewer.ProcessingMode.Local,
+        reportPath: 'Product List.rdlc',
+        dataSources: [{
+            value: [
+                {
+                    ProductName: "Baked Chicken and Cheese",
+                    OrderId: "323B60",
+                    Price: 55,
+                    Category: "Non-Veg",
+                    Ingredients: "Grilled chicken, Corn and Olives.",
+                    ProductImage: ""
                            },
-                           {
-                               ProductName: "Chicken Delite", OrderId: "323B61", Price: 100, Category: "Non-Veg", Ingredients: "Cheese, Chicken chunks, Onions & Pineapple chunks.", ProductImage: ""
+                {
+                    ProductName: "Chicken Delite",
+                    OrderId: "323B61",
+                    Price: 100,
+                    Category: "Non-Veg",
+                    Ingredients: "Cheese, Chicken chunks, Onions & Pineapple chunks.",
+                    ProductImage: ""
                            },
-                           {
-                               ProductName: "Chicken Tikka", OrderId: "323B62", Price: 64, Category: "Non-Veg", Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.", ProductImage: ""
+                {
+                    ProductName: "Chicken Tikka",
+                    OrderId: "323B62",
+                    Price: 64,
+                    Category: "Non-Veg",
+                    Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.",
+                    ProductImage: ""
                            }
                            ],
-                              name: "list"
+            name: "list"
                                 }]
-                   });		        
-
+    });
 
 {% endhighlight %}
 

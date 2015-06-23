@@ -15,9 +15,9 @@ _Client-Side events_
 
 <table>
 <tr>
-<td>
-<b>Events</b></td><td>
-<b>Description</b></td></tr>
+<th>
+<b>Events</b></th><th>
+<b>Description</b></th<b>Description</b></th></tr>
 <tr>
 <td>
 destroy</td><td>
@@ -54,7 +54,7 @@ $("#viewer").ejReportViewer(
                             reportServiceUrl: '/api/RDLCReport',
                             processingMode: ej.ReportViewer.ProcessingMode.Local,
                             reportPath: 'DatabindingRemote.rdlc'                          
-                            reportLoaded:   'reportLoaded'                          
+                            reportLoaded: 'reportLoaded'                          
                         });
         function reportLoaded(senderObj) {
             $.ajax({
