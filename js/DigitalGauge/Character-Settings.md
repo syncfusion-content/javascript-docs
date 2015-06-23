@@ -45,7 +45,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Count and Type
 
-* The number of text to be displayed can be limited by the attribute called **count**. In **Digital Gauge** five different types of characters are supported. They are as follows, 
+The number of text to be displayed can be limited by the attribute called **count**. In **Digital Gauge** five different types of characters are supported. They are as follows, 
 
   * EightCrossEightDotMatrix
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-* This section encompasses on how to configure **Digital****Gauge**. You can provide your own data for a **Digital****Gauge** and make them to display in a required way. 
+* This section encompasses on how to configure **Digital Gauge**. You can provide your own data for a **Digital Gauge** and make them to display in a required way. 
 
 * You can also customize the default **Digital Gauge** appearance. As a result, **Digital Gauge** looks like a Digital thermometer. 
 
@@ -20,7 +20,7 @@ documentation: ug
 
 **Create a Digital Gauge**
 
-* First create an **HTML** file and then add references to the required libraries.
+First create an **HTML** file and then add references to the required libraries.
 
 {% highlight html %}
 
@@ -111,15 +111,15 @@ You can customize the **Digital Gauge** using different properties.
 
 * **Character** type is used to define the Digital representation of the character. Thee five types of character representation are as follows:
 
-* EightCrossEightDotMatrix
+  * EightCrossEightDotMatrix
 
-* SevenSegment
+  * SevenSegment
 
-* FourteenSegment
+  * FourteenSegment
 
-* SixteenSegment 
+  * SixteenSegment 
 
-* EightCrossEightSquareMatrix.
+  * EightCrossEightSquareMatrix.
 
 
 

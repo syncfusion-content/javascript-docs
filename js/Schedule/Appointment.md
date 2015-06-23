@@ -114,7 +114,7 @@ The following screenshot displays the **Context****menu** with a “**New Appoin
 
 * To edit the appointments created in the above specified steps, double-click on the required appointment to open the edit appointment window. You can change the required values and then click **Done** button to update those new values.
 
-The following screenshot depicts the edit appointment window with its filled-in details.
+* The following screenshot depicts the edit appointment window with its filled-in details.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img7.png" Caption="schedule with Normal appointment Editing."%}
 
@@ -146,7 +146,7 @@ In the above screenshot, the end-time is changed to 8.00 AM from 7.00 AM. Once i
 
 **Using Context menu**
 
-* To edit the appointments using context menu option, right-click on the appointment to be edited and then select **Open Appointment** option from the context menu that pops up as displayed in the following screenshot.
+To edit the appointments using context menu option, right-click on the appointment to be edited and then select **Open Appointment** option from the context menu that pops up as displayed in the following screenshot.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img12.png" Caption="schedule with open appointment using context menu."%}
 
@@ -154,7 +154,7 @@ The following screenshot displays the **Edit Appointment** window that opens whe
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img13.png" Caption=""%}
 
-* Click **Done** button to save the updated values.
+Click **Done** button to save the updated values.
 
 
 
@@ -162,7 +162,7 @@ The following screenshot displays the **Edit Appointment** window that opens whe
 
 **Using quick appointment window**
 
-* The delete option is available in the quick appointment window which will be opened when you single-click the appointments. To delete an appointment, click on the required appointment and then click the delete icon present in the quick appointment window as follows.
+The delete option is available in the quick appointment window which will be opened when you single-click the appointments. To delete an appointment, click on the required appointment and then click the delete icon present in the quick appointment window as follows.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img14.png" Caption="schedule with Appointment deletion."%}
 
@@ -173,9 +173,9 @@ When you click the delete icon, the appointment is deleted as displayed in the f
 
 **Using Context menu**
 
-* To delete the appointments using **Context menu** option, select the **Delete Appointment** from the context menu that pops up when you right-click the appointment to be deleted. It is displayed in the following screenshot.
+To delete the appointments using **Context menu** option, select the **Delete Appointment** from the context menu that pops up when you right-click the appointment to be deleted. It is displayed in the following screenshot.
 
-{% include image.html url="/js/Schedule/Appointment_images/Appointment_img16.png" Caption="schedule with appointment deletion using context menu."%}
+{% include image.html url="/js/Schedule/Appointment_images/Appointment_img16.png" Caption=""%}
 
 ## All-day Appointments
 
@@ -232,7 +232,7 @@ $(function () {
 
 
 
-* In the following screenshot of the **Schedule** control, the appointment with the Subject **Daily Planet** is hovered for resizing.And you can see the resizing handle at both the ends of the appointment.
+In the following screenshot of the **Schedule** control, the appointment with the Subject **Daily Planet** is hovered for resizing.And you can see the resizing handle at both the ends of the appointment.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img19.png" Caption="schedule with appointment resize."%}
 
@@ -448,7 +448,7 @@ Click the search button to enable the filter option.
 
 
 
-* In the following screenshot, the **Schedule** control is displayed with the appointments in an order before the drag and drop action takes place.
+In the following screenshot, the **Schedule** control is displayed with the appointments in an order before the drag and drop action takes place.
 
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img25.png" Caption="schedule with appointment drag and drop."%}
 
@@ -469,8 +469,6 @@ The following screenshot displays the appointment with the subject **Daily Plane
 * This can be achieved with the help of in-built recurrence options available within the **Schedule** control that enforces the quicker creation of repeated appointments on the required days. 
 
 * The various built-in recurrence patterns available are **Daily,Weekly,Monthly,Yearly,Every weekday**
-
-
 
 * To create a recurrence appointment, you can select (check) the **repeat** option in the normal appointment window else you can select the **New Recurring Appointment** option from the **Context****menu** that pops up when you right-click on the **Schedule** cells as follows.
 

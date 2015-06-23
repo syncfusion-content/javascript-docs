@@ -11,7 +11,7 @@ documentation: ug
 
 **Adaptive Schedule**
 
-* The **Schedule** control has been provided with the built-in support for adaptive functionality. With this behavior enabled, the **Schedule** control can be accessed in any of the mobile devices as per the screen size. 
+* The **Schedule** control has been provided with the built-in support for adaptive functionality. With this behaviour enabled, the **Schedule** control can be accessed in any of the mobile devices as per the screen size. 
 
 * To enable the adaptive layout of the **Schedule** control, it is necessary to set the property **isResponsive** to **True.** By default, it is set to **false**. 
 

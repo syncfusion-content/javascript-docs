@@ -21,7 +21,7 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 **Create a Linear Gauge**
 
-* First create an HTML file, and then add references to the required libraries.
+First create an HTML file, and then add references to the required libraries.
 
 
 
