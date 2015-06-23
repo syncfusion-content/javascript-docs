@@ -32,7 +32,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img1.png" Caption="Legend Symbol"%}
+{% include image.html url="/js/OlapChart/Legend_images/Legend_img1.png" %}
 
 ##Legend Position
 
@@ -55,7 +55,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img2.png" Caption="Legend Position"%}
+{% include image.html url="/js/OlapChart/Legend_images/Legend_img2.png" %}
 
 ##Legend Arrangement
 
@@ -78,7 +78,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img3.png" Caption="Legend Arrangement"%}
+{% include image.html url="/js/OlapChart/Legend_images/Legend_img3.png" %}
 
 ##Legend Style
 
@@ -104,7 +104,7 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img4.png" Caption="Legend Style Customization"%}
+{% include image.html url="/js/OlapChart/Legend_images/Legend_img4.png" %}
 
 ##Legend Item
 
@@ -131,7 +131,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img5.png" Caption="Legend Item Customization"%}
+{% include image.html url="/js/OlapChart/Legend_images/Legend_img5.png" %}
 
 ##Legend Text
 
@@ -160,5 +160,5 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img6.png" Caption="Legend Text Customization "%}
+{% include image.html url="/js/OlapChart/Legend_images/Legend_img6.png" %}
 

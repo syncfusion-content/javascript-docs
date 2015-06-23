@@ -12,7 +12,6 @@ documentation: ug
 **Ticks** indicate values that are present in the scale area. The different types of ticks available are:
 
    1. Major Ticks contains the range interval values.
-
    2. Minor Ticks contains only intervals between the major.
 
 You can further customize **Ticks** by setting color, width and height.
@@ -105,7 +104,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Ticks_images/Ticks_img1.png" Caption="Ticks Customization"%}
+{% include image.html url="/js/OlapGauge/Ticks_images/Ticks_img1.png" %}
 
 ## Customizing the distance from Scale
 
@@ -208,7 +207,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Ticks_images/Ticks_img2.png" Caption="Adjusting distance between Scale and Ticks"%}
+{% include image.html url="/js/OlapGauge/Ticks_images/Ticks_img2.png" %}
 
 ## Height and Width Customization
 
@@ -311,7 +310,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Ticks_images/Ticks_img3.png" Caption="Ticks height and width customization"%}
+{% include image.html url="/js/OlapGauge/Ticks_images/Ticks_img3.png" %}
 
 ## Hiding Ticks
 
@@ -411,5 +410,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Ticks_images/Ticks_img4.png" Caption="Hiding Ticks"%}
+{% include image.html url="/js/OlapGauge/Ticks_images/Ticks_img4.png" %}
 

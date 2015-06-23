@@ -16,7 +16,6 @@ AngularJS is a JavaScript framework added to a HTML page with a script tag. It e
 In order to achieve **Angular Binding,** refer the following script files.
 
 * angular.min.js
-
 * ej.widget.angular.min.js
 
 Apply the plugin and property assigning the PivotGrid element through the directive that starts with the letter "e-". The following example depicts how to bind data to the PivotGrid control through Angular support.

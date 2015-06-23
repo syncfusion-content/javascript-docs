@@ -114,7 +114,6 @@ $(function() {
 > _**Note:** In order to render the localized OLAP Chart, you are required to reset the content available in both_
 
    1. _**OLAP Chart Control**_
-
    2. _**OLAP Cube**_
 
 ##Localizing Control Information
@@ -147,5 +146,5 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The output for the **Localized OlapChart** is as follows:
 
-{% include image.html url="/js/OlapChart/Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png" Caption="Localized OlapChart"%}
+{% include image.html url="/js/OlapChart/Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png" %}
 

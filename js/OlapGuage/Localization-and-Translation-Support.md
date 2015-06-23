@@ -175,7 +175,6 @@ $(function() {
 > _**Note:** In order to render the localized OLAP Gauge, You are required to reset the content available in both_
 
    1. OLAP Gauge Control
-
    2. OLAP Cube
 
 ##Localizing Control Information
@@ -206,6 +205,6 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The following screenshot displays the **OlapGauge** with French localization.
 
-{% include image.html url="/js/OlapGauge/Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.png" Caption="Localized OlapGauge"%}
+{% include image.html url="/js/OlapGauge/Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.png" %}
 
 

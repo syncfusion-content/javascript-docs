@@ -506,5 +506,5 @@ documentation: ug
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Appearance--Styling_images/Appearance--Styling_img1.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Appearance--Styling_images/Appearance--Styling_img1.png" %}
 

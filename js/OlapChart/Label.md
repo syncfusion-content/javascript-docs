@@ -42,7 +42,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Label_images/Label_img1.png" Caption="Label Text Customization "%}
+{% include image.html url="/js/OlapChart/Label_images/Label_img1.png" %}
 
 ##Rotating Axis Labels
 
@@ -61,5 +61,5 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Label_images/Label_img2.png" Caption="Label Rotation"%}
+{% include image.html url="/js/OlapChart/Label_images/Label_img2.png" %}
 

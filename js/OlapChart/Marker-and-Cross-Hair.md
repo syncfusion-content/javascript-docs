@@ -15,7 +15,7 @@ documentation: ug
 
 You can view the information while moving the mouse pointer over the Chart Area with the help of Cross Hair. For example, in a line chart you can get exact values of x and y axis while moving the mouse on Chart Area.
 
-{% include image.html url="/js/OlapChart/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img1.png" Caption="Real time use of Cross Hair"%}
+{% include image.html url="/js/OlapChart/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img1.png" %}
 
 ##Marker Shape Customization
 
@@ -41,7 +41,7 @@ function onSeriesRenders(args) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img2.png" Caption="Marker Shape Customization"%}
+{% include image.html url="/js/OlapChart/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img2.png" %}
 
 ##Cross Hair Customization
 
@@ -79,5 +79,5 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img3.png" Caption="Cross Hair Customization"%}
+{% include image.html url="/js/OlapChart/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img3.png" %}
 

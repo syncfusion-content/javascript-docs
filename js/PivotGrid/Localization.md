@@ -87,7 +87,6 @@ url: "../wcf/PivotGridService.svc", locale: "fr-FR", enableVirtualScrolling: tru
 > _**Note:** In order to render the localized PivotGrid, you can reset the content available in both_
 
 1. _**OLAP Grid Control**_
-
 2. _**OLAP Cube**_
 
 ##Localizing Control Information:
@@ -120,6 +119,6 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The following screenshot displays the **PivotGrid** with French localization:
 
-{% include image.html url="/js/PivotGrid/Localization_images/Localization_img1.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Localization_images/Localization_img1.png" %}
 
 

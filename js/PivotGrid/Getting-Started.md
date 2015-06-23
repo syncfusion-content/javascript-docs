@@ -19,35 +19,31 @@ This section encompasses how to configure the **PivotGrid** component in an appl
 
 This example illustrates how the **PivotGrid** component tabulates the Internet Sales Amount over a period of fiscal years across different customer geographic locations. 
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img2.png" Caption="PivotGrid"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img2.png" %}
                                                                                    
 Open Visual Studio and create a new project by clicking **New Project**. Select the **Web category**, and then select the **ASP.NET Empty Web Application template** and then click **OK**. The following screenshot displays the **Project Creation Wizard**:
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img3.png" Caption="Project Creation Wizard"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img3.png" %}
 
 ##Create HTML Page
 
 To create new web form in the application, right-click on the project and select Add.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img4.png" Caption="Creating New Web Form"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img4.png" %}
 
 Click **New Item** and select **HTML Page** from the listed templates. Name the page **default.html** and click **OK**.
 After clicking **OK**, the referred assemblies look as follows.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img5.png" Caption="References"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img5.png" %}
     
 ##Add References, Scripts, Styles and Control in HTML page
 
 ###Add References
 
 * In the **Solution Explorer**, right click the References folder and then click **Add Reference**.
-
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img6.png" Caption="Adding References"%}
-
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img7.png" Caption="Reference Manager Dialog"%}
-
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img6.png" %}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img7.png" %}
 * Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll, Syncfusion.XlsIO.Base.dll, Syncfusion.PivotAnalysis.Base.dll and Syncfusion.Olap.Base.dll.
-
 * Click OK.
 
 ###Add Scripts and Styles
@@ -94,15 +90,15 @@ Add the following code example inside the &lt;body&gt; tag in the default.html p
 
 Right-click the project and select Add > New Folder. Name the folder as WCF.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img8.png" Caption="Adding and Naming the WCF Folder"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img8.png" %}
 
 Now, right-click the WCF folder created and select Add > New Item.  
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img9.png" Caption="Adding New Item to Folder"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img9.png" %}
 
 In the **Add New Item** window, select **WCF Service** and name it as **PivotGridService.svc**. Click **Add**.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img10.png" Caption="Add New Item Dialog"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img10.png" %}
 
 ###Add service methods inside Interface
 
@@ -111,34 +107,32 @@ Add the following code example in the **IPivotGridService** interface available 
 {% highlight c# %}
 
 [ServiceContract(SessionMode = SessionMode.Allowed)]
-
 public interface IPivotGridService
-    {
-        [OperationContract]
-        Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject);
+{
+   [OperationContract]
+   Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject);
 
-        [OperationContract]
-        Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string gridLayout, object customObject);
+   [OperationContract]
+   Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string gridLayout, object customObject);
 
-        [OperationContract]
-        Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject);
+   [OperationContract]
+   Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject);
 
-        [OperationContract]
-        Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport);
+   [OperationContract]
+   Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport);
 
-        [OperationContract]
-        Dictionary<string, object> RemoveButton(string action, string headerInfo, string currentReport);
+   [OperationContract]
+   Dictionary<string, object> RemoveButton(string action, string headerInfo, string currentReport);
 
-        [OperationContract]
-        Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport);
+   [OperationContract]
+   Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport);
 
-        [OperationContract]
-        Dictionary<string, object> Filtering(string action, string filterParams, string currentReport);
+   [OperationContract]
+   Dictionary<string, object> Filtering(string action, string filterParams, string currentReport);
 
-        [OperationContract]
-        Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string cubeName, string currentReport);
-    }
-
+   [OperationContract]
+   Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string cubeName, string currentReport);
+}
 
 {% endhighlight %}
 
@@ -187,9 +181,9 @@ Initialize the **PivotGrid helper class**.
 
 {% highlight c# %}
 
-        PivotGrid htmlHelper = new PivotGrid();        
-        static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";   
-        JavaScriptSerializer serializer = new JavaScriptSerializer();
+PivotGrid htmlHelper = new PivotGrid();        
+static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";   
+JavaScriptSerializer serializer = new JavaScriptSerializer();
 
 {% endhighlight %}
 
@@ -198,108 +192,97 @@ Add the following relevant **service** methods.
 {% highlight c# %}
 
 //This method provides the required information from the server side when initializing the PivotGrid.
- 
-        public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
-        {
-            OlapDataManager DataManager = null;
-            dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
+public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
+{
+   OlapDataManager DataManager = null;
+   dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
+   DataManager = new OlapDataManager(connectionString);
+   DataManager.SetCurrentReport(CreateOlapReport());
+   return htmlHelper.GetJsonData(action, DataManager, gridLayout, enablePivotFieldList);
+}
 
-            DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(CreateOlapReport());
-            return htmlHelper.GetJsonData(action, DataManager, gridLayout, enablePivotFieldList);
-        }
-        
 //This method provides the required information from the server side when drill up/down operation is performed in PivotGrid.
+public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string layout, object customObject)
+{
+   dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
+   OlapDataManager DataManager = new OlapDataManager(connectionString);
+   DataManager = new OlapDataManager(connectionString);
+   DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+   return htmlHelper.GetJsonData(action, connectionString, DataManager, cellPosition, headerInfo, layout);
+}
 
-        public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string headerInfo, string layout, object customObject)
-        {
-            dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager = new OlapDataManager(connectionString);
-
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, connectionString, DataManager, cellPosition, headerInfo, layout);
-        }
-        
 //This method provides the required information from the server side when tree node is dropped in PivotTable Field List.
+public Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport)
+{
+   OlapDataManager DataManager = new OlapDataManager(connectionString);
+   DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+   return htmlHelper.GetJsonData(action, DataManager, dropType, nodeInfo, filterParams, true);
+}
 
-        public Dictionary<string, object> NodeDropped(string action, string dropType, string nodeInfo, string filterParams, string currentReport)
-        {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, dropType, nodeInfo, filterParams, true);
-        }
-        
 //This method provides the required information from the server side when filtering values in PivotTable Field List.
+public Dictionary<string, object> Filtering(string action, string filterParams, string currentReport)
+{
+   OlapDataManager DataManager = new OlapDataManager(connectionString);
+   DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+   return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
+}
 
-        public Dictionary<string, object> Filtering(string action, string filterParams, string currentReport)
-        {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
-        }
-        
 //This method provides the required information from the server side when opening the editor in PivotTable Field List.
+public Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport)
+{
+   OlapDataManager DataManager = new OlapDataManager(connectionString);
+   DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+   return htmlHelper.GetJsonData(action, DataManager, null, headerTag);
+}
 
-         public Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport)
-        {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, null, headerTag);
-        }
-        
 //This method provides the required information from the server side when paging is done in PivotGrid.
+public Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject)
+{
+   OlapDataManager DataManager = new OlapDataManager(connectionString);
+   DataManager.SetCurrentReport(htmlHelper.SetPaging(currentReport, pagingInfo));
+   return htmlHelper.GetJsonData(action, DataManager, gridLayout);
+}
 
-        public Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject)
-        {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(htmlHelper.SetPaging(currentReport, pagingInfo));
-            return htmlHelper.GetJsonData(action, DataManager, gridLayout);
-        }
-        
 //This method provides the required information from the server side when removing the split button from PivotTable Field List.
+public Dictionary<string, object> RemoveButton(string action, string headerInfo, string currentReport)
+{
+   OlapDataManager DataManager = new OlapDataManager(connectionString);
+   DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+   return htmlHelper.GetJsonData(action, DataManager, null, headerInfo);
+}
 
-        public Dictionary<string, object> RemoveButton(string action, string headerInfo, string currentReport)
-        {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, null, headerInfo);
-        }
-        
 //This method provides the required information from the server side when expanding member in member editor.
+public Dictionary<string, object> MemberExpanded(string action, bool     checkedStatus, string parentNode, string tag, string cubeName, string currentReport)
+{
+   OlapDataManager DataManager = new OlapDataManager(connectionString);
+   if (!string.IsNullOrEmpty(currentReport))
+      DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+   return htmlHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, cubeName);
+}
 
-        public Dictionary<string, object> MemberExpanded(string action, bool     checkedStatus, string parentNode, string tag, string cubeName, string currentReport)
-        {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            if (!string.IsNullOrEmpty(currentReport))
-                DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
-            return htmlHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, cubeName);
-        }
-        
 //This method carries the information about the default report which when be rendered within PivotGrid initially.
- 
-        private OlapReport CreateOlapReport()
-        {
-            OlapReport olapReport = new OlapReport();
-            olapReport.CurrentCubeName = "Adventure Works";
+private OlapReport CreateOlapReport()
+{
+   OlapReport olapReport = new OlapReport();
+   olapReport.CurrentCubeName = "Adventure Works";
 
-            MeasureElements measureElement = new MeasureElements();
-            measureElement.Elements.Add(new MeasureElement { UniqueName = "[Measures].[Internet Sales Amount]" });
+   MeasureElements measureElement = new MeasureElements();
+   measureElement.Elements.Add(new MeasureElement { UniqueName = "[Measures].[Internet Sales Amount]" });
 
-            DimensionElement dimensionElementRow = new DimensionElement();
-            dimensionElementRow.Name = "Date";
-            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+   DimensionElement dimensionElementRow = new DimensionElement();
+   dimensionElementRow.Name = "Date";
+   dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
 
-            DimensionElement dimensionElementColumn = new DimensionElement();
-            dimensionElementColumn.Name = "Customer";
-            dimensionElementColumn.AddLevel("Customer Geography", "Country");
+   DimensionElement dimensionElementColumn = new DimensionElement();
+   dimensionElementColumn.Name = "Customer";
+   dimensionElementColumn.AddLevel("Customer Geography", "Country");
 
-            olapReport.SeriesElements.Add(dimensionElementRow);
-            olapReport.CategoricalElements.Add(dimensionElementColumn);
-            olapReport.CategoricalElements.Add(measureElement);
+   olapReport.SeriesElements.Add(dimensionElementRow);
+   olapReport.CategoricalElements.Add(dimensionElementColumn);
+   olapReport.CategoricalElements.Add(measureElement);
 
-            return olapReport;
-        }    
+   return olapReport;
+}    
 
 {% endhighlight %}
 
@@ -308,23 +291,16 @@ Add the following relevant **service** methods.
 * You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service     class appears. The following are the properties that meet the appropriate endpoint.  
 
    1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is "**WebApplication2.IPivotGridService**".
-
    2. **Binding:** In your application, you use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
-
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows.
    
 {% highlight xml %}
 
 <services>
-
-      <service name="WebApplication2.PivotGridService">
-
-        <endpoint address="" behaviorConfiguration="WebApplication2.PivotGridServiceAspNetAjaxBehavior"
-
-          binding="webHttpBinding" contract="WebApplication2.IPivotGridService" />
-
-      </service>
-
+   <service name="WebApplication2.PivotGridService">
+      <endpoint address="" behaviorConfiguration="WebApplication2.PivotGridServiceAspNetAjaxBehavior"
+      binding="webHttpBinding" contract="WebApplication2.IPivotGridService" />
+   </service>
 </services>
 
 {% endhighlight %}
@@ -333,14 +309,10 @@ Add the following relevant **service** methods.
 
 {% highlight xml %}
 
-  <endpointBehaviors>
-
-       <behavior name="WebApplication2.PivotGridServiceAspNetAjaxBehavior">
-
-          <enableWebScript />
-
-        </behavior>
-
+<endpointBehaviors>
+   <behavior name="WebApplication2.PivotGridServiceAspNetAjaxBehavior">
+      <enableWebScript />
+   </behavior>
 </endpointBehaviors>
 
 {% endhighlight %} 
@@ -355,35 +327,31 @@ This section encompasses how to configure the **PivotGrid** component in an appl
 
 This example illustrates how the **PivotGrid** component tabulates the sales/revenue amount over a period of fiscal years across different geographic locations. 
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img12.png" Caption="PivotGrid"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img12.png" %}
 
 Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web category**, and then select the **ASP.NET Empty Web Application template** and then click **OK**.  The following screen shot displays the **Project Creation Wizard**:
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img13.png" Caption="Project Creation Wizard"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img13.png" %}
 
 ##Create HTML Page
 
 To create new web form in the application, right-click on the project and select Add.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img14.png" Caption="Creating New Web Form"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img14.png" %}
 
 Click New Item and select HTML Page from the listed templates. Name the page default.html and click OK.
 After clicking OK, the referred assemblies look as follows.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img15.png" Caption="References"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img15.png" %}
 
 ##Add References, Scripts, Styles and Control in HTML page
 
 ###Add References
 
 * In the Solution Explorer, right click the References folder and then click Add Reference.
-
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img16.png" Caption="Adding References"%}
-
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img17.png" Caption="Reference Manager Dialog"%}
-
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img16.png" %}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img17.png" %}
 * Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll, Syncfusion.XlsIO.Base.dll, Syncfusion.PivotAnalysis.Base.dll and Syncfusion.Olap.Base.dll.
-
 * Click OK.    
 
 ###Add Scripts and Styles
@@ -430,15 +398,15 @@ Add the following code sample inside the **&lt;body&gt;** tag in the **default.h
 
 Right-click the project and select Add > New Folder. Name the folder as WCF.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img18.png" Caption="Adding and Naming the WCF Folder"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img18.png" %}
 
 Now, right-click the WCF folder created and select Add > New Item.  
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img19.png" Caption="Adding New Item to Folder"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img19.png" %}
 
 In the Add New Item window, select WCF Service and name it as PivotGridService.svc. Click Add.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img20.png" Caption="Add New Item Dialog"%}
+{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img20.png" %}
 
 ###Add service methods inside Interface
 
@@ -447,20 +415,23 @@ Add the following code sample inside the **IPivotGridService** interface availab
 {% highlight c# %}
 
 [ServiceContract]
-
-    public interface IPivotGridService
-    {
-        [OperationContract]
-        Dictionary<string, object> InitializeGrid(string action);
-        [OperationContract]
-        Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport);
-        [OperationContract]
-        Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport);
-        [OperationContract]
-        Dictionary<string, object> NodeStateModified(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport);
-        [OperationContract]
-        Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport);
-    }
+public interface IPivotGridService
+{
+   [OperationContract]
+   Dictionary<string, object> InitializeGrid(string action);
+   
+   [OperationContract]
+   Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport);
+   
+   [OperationContract]
+   Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport);
+   
+   [OperationContract]
+   Dictionary<string, object> NodeStateModified(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport);
+   
+   [OperationContract]
+   Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport);
+}
 
 {% endhighlight %}
 
@@ -510,9 +481,7 @@ Initialize the **PivotGrid helper class**.
 {% highlight c# %}
 
 PivotGrid htmlHelper = new PivotGrid();
-
 JavaScriptSerializer serializer = new JavaScriptSerializer();
-  
 Dictionary<string, object> dict = new Dictionary<string, object>()>;
 
 {% endhighlight %}
@@ -521,61 +490,55 @@ Add the following relevant **service** methods.
 
 {% highlight c# %}
 
-       //This method provides the required information from the server side when initializing the PivotGrid.
- 
-        public Dictionary<string, object> InitializeGrid(string action)
-        {
-            htmlHelper.PivotReport = BindDefaultData();
-            dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData());
-            return dict;
-        }
-        
-        //This method provides the required information from the server side when node state is modified in PivotTable Field List.
-        
-        public Dictionary<string, object> NodeStateModified(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport)
-        {
-            htmlHelper.PopulateData(currentReport);
-            dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), headerTag, dropAxis, filterParams, sortedHeaders);
-            return dict;
-        }
-        
-        //This method provides the required information from the server side when tree node is dropped in PivotTable Field List.
+//This method provides the required information from the server side when initializing the PivotGrid.
+public Dictionary<string, object> InitializeGrid(string action)
+{
+   htmlHelper.PivotReport = BindDefaultData();
+   dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData());
+   return dict;
+}
 
-        public Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport)
-        {
-            htmlHelper.PopulateData(currentReport);
-            dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), dropAxis, headerTag, filterParams, sortedHeaders);
-            return dict;
-        }
-         
-        //This method provides the required information from the server side when filtering values in PivotTable Field List.
+//This method provides the required information from the server side when node state is modified in PivotTable Field List.
+public Dictionary<string, object> NodeStateModified(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport)
+{
+   htmlHelper.PopulateData(currentReport);
+   dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), headerTag, dropAxis, filterParams, sortedHeaders);
+   return dict;
+}
 
-        public Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport)
-        {
-            htmlHelper.PopulateData(currentReport);
-            dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), filterParams, sortedHeaders);
-            return dict;
-        }
-        
-       //This method provides the required information from the server side when opening the editor in PivotTable Field List.
+//This method provides the required information from the server side when tree node is dropped in PivotTable Field List.
+public Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport)
+{
+   htmlHelper.PopulateData(currentReport);
+   dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), dropAxis, headerTag, filterParams, sortedHeaders);
+   return dict;
+}
 
-        public Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport)
-        {
-            htmlHelper.PopulateData(currentReport);
-            dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), headerTag, sortedHeaders);
-            return dict;
-        }
-        
-       //This method carries the information about the default report that is rendered within PivotGrid initially.
- 
-       private PivotReport BindDefaultData()
-        {
-            PivotReport pivotSetting = new PivotReport();
-            pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Date", FieldHeader = "Date", TotalHeader = "Total" });
-            pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", ShowSubTotal = false });
-            pivotSetting.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
-            return pivotSetting;
-        }
+//This method provides the required information from the server side when filtering values in PivotTable Field List.
+public Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport)
+{
+   htmlHelper.PopulateData(currentReport);
+   dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), filterParams, sortedHeaders);
+   return dict;
+}
+
+//This method provides the required information from the server side when opening the editor in PivotTable Field List.
+public Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport)
+{
+   htmlHelper.PopulateData(currentReport);
+   dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), headerTag, sortedHeaders);
+   return dict;
+}
+
+//This method carries the information about the default report that is rendered within PivotGrid initially.
+private PivotReport BindDefaultData()
+{
+   PivotReport pivotSetting = new PivotReport();
+   pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Date", FieldHeader = "Date", TotalHeader = "Total" });
+   pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", ShowSubTotal = false });
+   pivotSetting.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
+   return pivotSetting;
+}
 
 {% endhighlight %}
 
@@ -588,22 +551,15 @@ namespace WebApplication2
    internal class ProductSales
     {
         public string Product { get; set; }
-
         public string Date { get; set; }
-
         public string Country { get; set; }
-
         public string State { get; set; }
-
         public int Quantity { get; set; }
-
         public double Amount { get; set; }
-
 
         public static ProductSalesCollection GetSalesData()
         {
             /// Geography
-            
             string[] countries = new string[] { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" };
             string[] ausStates = new string[] { "New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria" };
             string[] canadaStates = new string[] { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
@@ -613,11 +569,9 @@ namespace WebApplication2
             string[] ussStates = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
 
             /// Time
-            
             string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
 
             /// Products
-            
             string[] products = new string[] { "Bike", "Van", "Car" };
             Random r = new Random(123345345);
 
@@ -676,7 +630,6 @@ namespace WebApplication2
                 }
                 listOfProductSales.Add(sales);
             }
-
             return listOfProductSales;
         }
 
@@ -698,23 +651,16 @@ namespace WebApplication2
 * You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.  
 
    1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is "**WebApplication2.IPivotGridService**".
-
    2. **Binding:** In your application, use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
-
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows.
    
 {% highlight xml %}   
 
 <services>
-
-<service name="WebApplication2.PivotGridService">
-
-<endpoint address="" behaviorConfiguration="WebApplication2.PivotGridServiceAspNetAjaxBehavior"
-
-binding="webHttpBinding" contract="WebApplication2.IPivotGridService" />
-
-</service>
-
+   <service name="WebApplication2.PivotGridService">
+      <endpoint address="" behaviorConfiguration="WebApplication2.PivotGridServiceAspNetAjaxBehavior"
+      binding="webHttpBinding" contract="WebApplication2.IPivotGridService" />
+   </service>
 </services>
 
 {% endhighlight %}
@@ -724,13 +670,9 @@ binding="webHttpBinding" contract="WebApplication2.IPivotGridService" />
 {% highlight xml %}  
 
 <endpointBehaviors>
-        
-<behavior name="WebApplication2.PivotGridServiceAspNetAjaxBehavior">
-
-<enableWebScript />
-
-</behavior>
-
+   <behavior name="WebApplication2.PivotGridServiceAspNetAjaxBehavior">
+      <enableWebScript />
+   </behavior>
 </endpointBehaviors>
 
 {% endhighlight %}

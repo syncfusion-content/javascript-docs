@@ -37,5 +37,5 @@ $(function() {
 
 The output of the above code creates a **PivotGrid** with the **Hyperlink** option as shown in the following screenshot:
 
-{% include image.html url="/js/PivotGrid/Hyperlink_images/Hyperlink_img1.png" Caption=""%}
+{% include image.html url="/js/PivotGrid/Hyperlink_images/Hyperlink_img1.png" %}
 

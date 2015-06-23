@@ -31,5 +31,5 @@ function setChartProperties(args) {
 
 {% include image.html url="/js/OlapClient/Responsive-Layout_images/Responsive-Layout_img3.png" Caption="Responsive View"%}
 
-{% include image.html url="/js/OlapClient/Responsive-Layout_images/Responsive-Layout_img4.png" Caption="Responsive View"%}
+
 
