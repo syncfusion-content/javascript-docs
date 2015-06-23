@@ -401,7 +401,7 @@ Default Value:
 
 
 
-Specifies whether to render the control with tri state behaviour.
+Specifies whether to render the control with tri state behavior.
 
 
 

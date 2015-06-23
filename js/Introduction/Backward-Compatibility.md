@@ -179,22 +179,22 @@ enablePersistence </td><td>
    Methods</td><td>
 disableAll</td><td>
  </td><td>
-We have removed this method. Use <b>disable method</b> to achieve this behaviour</td></tr>
+We have removed this method. Use <b>disable method</b> to achieve this behavior</td></tr>
 <tr>
 <td>
 disableItemByIndex</td><td>
  </td><td>
-We removed this method. Use <b>disableItems method </b> to achieve this behaviour</td></tr>
+We removed this method. Use <b>disableItems method </b> to achieve this behavior</td></tr>
 <tr>
 <td>
 enableAll</td><td>
  </td><td>
-We have removed this method. Use <b>enable method</b> to achieve this behaviour</td></tr>
+We have removed this method. Use <b>enable method</b> to achieve this behavior</td></tr>
 <tr>
 <td>
 hideAccordion</td><td>
  </td><td>
-We have removed this method. Already we have <b>hide </b>method to achieve this behaviour</td></tr>
+We have removed this method. Already we have <b>hide </b>method to achieve this behavior</td></tr>
 <tr>
 <td>
 panelCount</td><td>
@@ -209,7 +209,7 @@ We have removed this method. We can achieve this scenario through <b>selectedIte
 <td>
 showAccordion</td><td>
  </td><td>
-We have removed this method. Already we have <b>show method</b> to achieve this behaviour</td></tr>
+We have removed this method. Already we have <b>show method</b> to achieve this behavior</td></tr>
 <tr>
 <td>
  <b>Enum</b></td> <td>
@@ -4380,7 +4380,7 @@ getCurrentValue</td><td>
 <td>
 hideResetButton</td><td>
  </td><td>
-We have removed this method. use <b>allowReset  property </b>to achieve this behaviour</td></tr>
+We have removed this method. use <b>allowReset  property </b>to achieve this behavior</td></tr>
 <tr>
 <td>
 setCurrentValue</td><td>
@@ -4390,17 +4390,17 @@ setCurrentValue</td><td>
 <td>
 showResetButton</td><td>
  </td><td>
-We have removed this method. use <b>allowReset  property </b>to achieve this behaviour</td></tr>
+We have removed this method. use <b>allowReset  property </b>to achieve this behavior</td></tr>
 <tr>
 <td>
 showRating</td><td>
  </td><td>
-We have removed this method. use <b>show method </b> to achieve this behaviour</td></tr>
+We have removed this method. use <b>show method </b> to achieve this behavior</td></tr>
 <tr>
 <td>
 hideRating</td><td>
  </td><td>
-We have removed this method. use <b>hide method </b> to achieve this behaviour</td></tr>
+We have removed this method. use <b>hide method </b> to achieve this behavior</td></tr>
 <tr>
 <td rowspan = "2">
 <b>Enum</b></td><td>
@@ -5263,11 +5263,11 @@ addItem</td><td>
 <tr><td>
 disableItems</td><td>
  </td><td>
-We have remove this method. use <b>disabledItemIndex property </b>to achieve this behaviour</td></tr>
+We have remove this method. use <b>disabledItemIndex property </b>to achieve this behavior</td></tr>
 <tr><td>
 enableItems</td><td>
  </td><td>
-We have remove this method. Use <b>enabledItemIndex property </b>to achieve this behaviour</td></tr>
+We have remove this method. Use <b>enabledItemIndex property </b>to achieve this behavior</td></tr>
 <tr><td>
 remove</td><td>
 removeItem</td><td>
@@ -6064,7 +6064,7 @@ unselectNode</td><td>
 <td>
 isNodeExpanded</td><td>
  </td><td>
-We have removed this method. Use <b>isExpanded method</b> to achieve  this behaviour </td></tr>
+We have removed this method. Use <b>isExpanded method</b> to achieve  this behavior </td></tr>
 </table>
 
 #### Event arguments

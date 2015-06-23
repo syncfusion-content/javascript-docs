@@ -300,7 +300,7 @@ $("#lb").ejmListView ("option", "ajaxSettings", { type: 'GET',cache: false,async
 
 
 
-Specifies whether to allow scrolling behaviour for the contents.
+Specifies whether to allow scrolling behavior for the contents.
 
 
 
@@ -1253,7 +1253,7 @@ $("#lb").ejmListView ("option", "enableGroupList", true);
 
 
 
-Specifies whether to enable device's native scroll behaviour when scrolling is allowed.
+Specifies whether to enable device's native scroll behavior when scrolling is allowed.
 
 
 
@@ -3130,7 +3130,7 @@ Section for windows mode specific functionalities.
 
 
 
-By default windows title's text will be in small case. To override this behaviour, set this property to true.
+By default windows title's text will be in small case. To override this behavior, set this property to true.
 
 
 
@@ -3219,7 +3219,7 @@ $("#lb").ejmListView ("option", "windows.enableHeaderCustomText", true);
 
 
 
-Specifies whether to prevent skewing behaviour in windows mode.
+Specifies whether to prevent skewing behavior in windows mode.
 
 
 

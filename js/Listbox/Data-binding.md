@@ -186,7 +186,7 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 
 
 
-> **Note**: You can include the “ej.widget.angular.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself as like data role behaviour.
+> **Note**: You can include the “ej.widget.angular.min.js” file library to achieve this behavior and you can pass the control properties as data attribute in ul tag itself as like data role behavior.
 
 
 
@@ -292,7 +292,7 @@ The following example depicts the way to bind data to the **ListBox** widget thr
 
 
 
-> **Note**: You can include the “ej.widget. knockout.min.js” file library to achieve this behaviour and you can pass the control properties as data attribute in ul tag itself as like data role behaviour.
+> **Note**: You can include the “ej.widget. knockout.min.js” file library to achieve this behavior and you can pass the control properties as data attribute in ul tag itself as like data role behavior.
 
 
 In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widget.

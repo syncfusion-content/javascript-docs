@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behaviour-Customization
-description: behaviour customization
+title: Behavior-Customization
+description: behavior customization
 platform: js
 control: Chart
 documentation: ug
 ---
 
-# Behaviour Customization
+# Behavior Customization
 
 Essential JavaScript Chart allows you to customize the Chart through events. For example, you can add custom marker for highest and lowest data point using the events.
 

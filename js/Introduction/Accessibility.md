@@ -24,7 +24,7 @@ With this support enabled for the widgets, the various elements present within t
 
 Such visual indications through keyboard navigation are very useful for the accessibility support, as it needs to be properly conveyed to the assistive technologies that the focus has been changed.
 
-Each and every widgets available within the **Syncfusion Essential JavaScript suite** has its unique behaviour and responds appropriately to the keyboard actions. As an example, we will look onto the below **3** **editors** placed on the same page and how to navigate between them through keyboard,
+Each and every widgets available within the **Syncfusion Essential JavaScript suite** has its unique behavior and responds appropriately to the keyboard actions. As an example, we will look onto the below **3** **editors** placed on the same page and how to navigate between them through keyboard,
 {% include image.html url="/js/Introduction/Accessibility_images/Accessibility_img1.png" %}
 
 Initially, the focus is on the first editor (numeric textbox) – which is indicated with the text selection and the border effect provided for the widget’s outline through css.

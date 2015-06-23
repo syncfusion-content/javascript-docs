@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Behaviour-Settings
-description: behaviour settings
+title: Behavior-Settings
+description: behavior settings
 platform: js
 control: ListBox
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
-The following are some miscellaneous properties that helps you to change the behaviour of **ListBox** control.
+The following are some miscellaneous properties that helps you to change the behavior of **ListBox** control.
 
 **Target ID**
 

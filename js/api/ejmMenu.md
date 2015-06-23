@@ -61,7 +61,7 @@ Custom Design for Html Menu control.
 
 
 
-Specifies whether to allow scrolling behaviour for the contents.
+Specifies whether to allow scrolling behavior for the contents.
 
 
 Default Value:

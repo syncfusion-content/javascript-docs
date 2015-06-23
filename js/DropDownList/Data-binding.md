@@ -173,7 +173,7 @@ The following example depicts the way to bind data to the **DropdownList** widge
 
 > {% include image.html url="/js/DropDownList/Data-binding_images/Data-binding_img3.png" Caption="DataBinding"%} 
 
-Note: You need to include “ej.widget.angular.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.
+Note: You need to include “ej.widget.angular.min.js” file library to achieve this behavior and you need to pass the control properties as data attribute in input tag itself as like data role behavior.
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList** widget
 
@@ -285,7 +285,7 @@ The following example depicts the way to bind data to the **DropdownList** widge
 
 > {% include image.html url="/js/DropDownList/Data-binding_images/Data-binding_img5.png" Caption=""%}
 
-**Note:** You need to include the “ej.widget.knockout.min.js” file library to achieve this behaviour and you need to pass the control properties as data attribute in input tag itself as like data role behaviour.
+**Note:** You need to include the “ej.widget.knockout.min.js” file library to achieve this behavior and you need to pass the control properties as data attribute in input tag itself as like data role behavior.
 
 In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 

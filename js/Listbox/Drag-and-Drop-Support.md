@@ -11,7 +11,7 @@ documentation: ug
 
 **ListBox** widget provides the Drag and Drop support. A list item can be dragged from a **ListBox** control and can be dropped in any droppable element. To enable Drag and Drop support, set the **allowDragAndDrop** property as true. In control, enable the **allowDragAndDrop** property where you want to drop list Item.
 
-The following steps explains you the behaviour of template support with **ListBox**.
+The following steps explains you the behavior of template support with **ListBox**.
 
 In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widget.
 

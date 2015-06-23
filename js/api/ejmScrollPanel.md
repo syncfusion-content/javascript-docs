@@ -101,7 +101,7 @@ Default Value:
 
 
 
-Specifies the bouncing time when bouncing behaviour is enabled.
+Specifies the bouncing time when bouncing behavior is enabled.
 
 
 Default Value:
@@ -239,7 +239,7 @@ Default Value:
 
 
 
-Specifies whether to enable bouncing behaviour.
+Specifies whether to enable bouncing behavior.
 
 
 Default Value:
@@ -402,7 +402,7 @@ Default Value:
 
 
 
-Specifies whether to enable device's native scroll behaviour.
+Specifies whether to enable device's native scroll behavior.
 
 
 Default Value:

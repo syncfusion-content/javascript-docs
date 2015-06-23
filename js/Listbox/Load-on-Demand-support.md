@@ -11,7 +11,7 @@ documentation: ug
 
 **ListBox** widget provides the Load-onDemand support, when binding the remote data for the **ListBox**. It loads partially, only a set of data from remote server loaded initially, and imports data further upon loading. To enable Load-onDemand support, set the **enableLoadOnDemand** property as true. You can set **itemsCount** that specifies number of items in the **ListBox**. You can load any number of items upon request with **itemRequest** ClientSide Event.
 
-The following steps explains you the behaviour of Load-onDemand support in **ListBox**.
+The following steps explains you the behavior of Load-onDemand support in **ListBox**.
 
 In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widget.
 

@@ -274,7 +274,7 @@ Default Value:
 
 
 
-Specifies the animation behaviour in accordion.
+Specifies the animation behavior in accordion.
 
 
 Default Value:

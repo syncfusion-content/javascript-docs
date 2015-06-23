@@ -61,7 +61,7 @@ Custom Design for Html Dialog control.
 
 
 
-Specifies whether to allow scrolling behaviour for the contents.
+Specifies whether to allow scrolling behavior for the contents.
 
 
 Default Value:
@@ -199,7 +199,7 @@ Default Value:
 
 
 
-Specifies whether to enable device's native scroll behaviour when scrolling is allowed.
+Specifies whether to enable device's native scroll behavior when scrolling is allowed.
 
 
 Default Value:

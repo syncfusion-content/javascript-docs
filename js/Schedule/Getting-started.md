@@ -15,7 +15,7 @@ documentation: ug
 
 *  The most important data used in the **Schedule** control is the appointment data that is bound to it through the **appointmentSettings** and **DataSource** property. The appointment data can either be passed locally or remotely to the **Schedule** control.
 
-* In addition, there are several options available in the **Schedule** control to customize the appearance and behaviour of it. In this example, you can see how to add a **Schedule** control to an application to manage some of the important activities in a worksheet.  
+* In addition, there are several options available in the **Schedule** control to customize the appearance and behavior of it. In this example, you can see how to add a **Schedule** control to an application to manage some of the important activities in a worksheet.  
 
 The following screenshot displays the **Schedule** control with daily important activities
 

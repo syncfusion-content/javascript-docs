@@ -384,7 +384,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-Enables or disables the behaviours of connector see<a href="global.html#ConnectorConstraints">ConnectorConstraints</a>
+Enables or disables the behaviors of connector see<a href="global.html#ConnectorConstraints">ConnectorConstraints</a>
 
 
 
@@ -3025,7 +3025,7 @@ $("#diagram").ejDiagram({ connectorTemplate:connectorTemplate});
 
 
 
-Sets the default behaviour of the diagram see <a href="global.html#DiagramConstraints">DiagramConstraints</a>
+Sets the default behavior of the diagram see <a href="global.html#DiagramConstraints">DiagramConstraints</a>
 
 
 
@@ -4740,7 +4740,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-To enable or disable the default behaviours of the node see<a href="global.html#NodeConstraints">NodeConstraints</a>
+To enable or disable the default behaviors of the node see<a href="global.html#NodeConstraints">NodeConstraints</a>
 
 
 
@@ -12251,7 +12251,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { snapInterval: [10
 
 
 
-Sets the default behaviour of the diagram see<a href="global.html#Tool">Tool</a>
+Sets the default behavior of the diagram see<a href="global.html#Tool">Tool</a>
 
 
 

@@ -139,7 +139,7 @@ Default Value:
 
 
 
-Specifies the animation behaviour in timepicker.
+Specifies the animation behavior in timepicker.
 
 
 

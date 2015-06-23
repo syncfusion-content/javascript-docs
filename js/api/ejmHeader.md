@@ -843,7 +843,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-By default windows title's text will be in small case. To override this behaviour, set this property to true.
+By default windows title's text will be in small case. To override this behavior, set this property to true.
 
 
 Default Value:

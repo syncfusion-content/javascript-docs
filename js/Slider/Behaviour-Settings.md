@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behaviour-Settings
-description: behaviour settings
+title: Behavior-Settings
+description: behavior settings
 platform: js
 control: Slider
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
 ## Height
 

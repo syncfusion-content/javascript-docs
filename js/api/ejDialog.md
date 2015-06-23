@@ -343,7 +343,7 @@ Default Value:
 
 
 
-Specifies the animation behaviour of the Dialog.
+Specifies the animation behavior of the Dialog.
 
 
 Default Value:

@@ -177,7 +177,7 @@ Default Value:
 
 
 
-Specifies the animation behaviour of the slider.
+Specifies the animation behavior of the slider.
 
 
 
@@ -685,7 +685,7 @@ Default Value:
 
 
 
-Specifies the rounded corner behaviour for slider.
+Specifies the rounded corner behavior for slider.
 
 
 

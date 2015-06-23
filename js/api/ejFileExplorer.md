@@ -523,7 +523,7 @@ ajaxSettings: {
 
 
 
-Gets or sets an object that indicates whether to customize the filtering behaviour of the file explorer
+Gets or sets an object that indicates whether to customize the filtering behavior of the file explorer
 
 
 
@@ -662,7 +662,7 @@ ajaxSettings: {
 
 
 
-Gets or sets an object that indicates whether to customize the grid behaviour in the file explorer
+Gets or sets an object that indicates whether to customize the grid behavior in the file explorer
 
 
 
@@ -683,7 +683,7 @@ Gets or sets an object that indicates whether to customize the grid behaviour in
 
 
 
-Gets or sets a value that indicates whether to enable dynamic searching behaviour in file explorer. Currently search box can be enabled through toolbar &#65533;tools&#65533;
+Gets or sets a value that indicates whether to enable dynamic searching behavior in file explorer. Currently search box can be enabled through toolbar &#65533;tools&#65533;
 
 
 
@@ -742,7 +742,7 @@ ajaxSettings: {
 
 
 
-Gets or sets a value that indicates whether to enable the dynamic sorting behaviour on grid data. Sorting can be done through clicking on particular column header.
+Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
 
 
 
@@ -1576,7 +1576,7 @@ ajaxSettings: {
 
 
 
-Gets or sets an object that indicates whether to customize the upload behaviour in the file explorer
+Gets or sets an object that indicates whether to customize the upload behavior in the file explorer
 
 
 

@@ -211,7 +211,7 @@ Default Value:
 
 
 
-Specifies the animation behaviour of the splitter.
+Specifies the animation behavior of the splitter.
 
 
 
@@ -264,7 +264,7 @@ Default Value:
 
 
 
-Specify window resizing behaviour for splitter control.
+Specify window resizing behavior for splitter control.
 
 
 

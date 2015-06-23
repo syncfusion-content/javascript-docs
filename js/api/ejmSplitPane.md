@@ -190,7 +190,7 @@ Default Value:
 
 
 
-Enable or Disable the swiping behaviour to the content.
+Enable or Disable the swiping behavior to the content.
 
 
 Default Value:

@@ -9,14 +9,14 @@ documentation: ug
 
 # Cascading Support 
 
-Using **cascade** option, you can create a behaviour of cascade between dropdown list controls. For this, you need to create database with single field as common between two dropdown data fields and then mention that column id in field. With this, you need to set second dropdown id in **cascadeTo** property in first one. 
+Using **cascade** option, you can create a behavior of cascade between dropdown list controls. For this, you need to create database with single field as common between two dropdown data fields and then mention that column id in field. With this, you need to set second dropdown id in **cascadeTo** property in first one. 
 
 
 > {% include image.html url="/js/DropDownList/Cascading-Support_images/Cascading-Support_img1.png" Caption="DropDown with cascadding support"%}
 
 **Note:** In case the second dropdown is to disabled, until the first one is selected, you need to set enable property as false in second dropdown, which enables automatically once the value is selected in first one. 
 
-The following steps explains you the behaviour of cascade dropdown. 
+The following steps explains you the behavior of cascade dropdown. 
 
  In an HTML page, add a **&lt;input&gt;** element to configure DropdownList widget
 

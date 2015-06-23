@@ -195,7 +195,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable dynamic grouping behaviour. Grouping can be done by drag on drop desired columns to grid&rsquo;s GroupDropArea. This can be further customized through &ldquo;groupSettings&rdquo; property.
+Gets or sets a value that indicates whether to enable dynamic grouping behavior. Grouping can be done by drag on drop desired columns to grid&rsquo;s GroupDropArea. This can be further customized through &ldquo;groupSettings&rdquo; property.
 
 
 
@@ -243,7 +243,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable keyboard support for performing grid actions. selectionType &ndash; Gets or sets a value that indicates whether to enable single row or multiple rows selection behaviour in grid. Multiple selection can be done through by holding CTRL and clicking the grid rows
+Gets or sets a value that indicates whether to enable keyboard support for performing grid actions. selectionType &ndash; Gets or sets a value that indicates whether to enable single row or multiple rows selection behavior in grid. Multiple selection can be done through by holding CTRL and clicking the grid rows
 
 
 
@@ -291,7 +291,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable dynamic filtering behaviour on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through &ldquo;filterSettings&rdquo; property
+Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through &ldquo;filterSettings&rdquo; property
 
 
 
@@ -339,7 +339,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable multi columns sorting behaviour in grid. Sort multiple columns by holding CTRL and click on the corresponding column header.
+Gets or sets a value that indicates whether to enable multi columns sorting behavior in grid. Sort multiple columns by holding CTRL and click on the corresponding column header.
 
 
 
@@ -436,7 +436,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable the columns reordering behaviour in the grid. Reordering can be done through by drag and drop the particular column from one index to another index within the grid.
+Gets or sets a value that indicates whether to enable the columns reordering behavior in the grid. Reordering can be done through by drag and drop the particular column from one index to another index within the grid.
 
 
 
@@ -630,7 +630,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable dynamic searching behaviour in grid. Currently search box can be enabled through &ldquo;toolbarSettings&rdquo;
+Gets or sets a value that indicates whether to enable dynamic searching behavior in grid. Currently search box can be enabled through &ldquo;toolbarSettings&rdquo;
 
 
 
@@ -727,7 +727,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable the dynamic sorting behaviour on grid data. Sorting can be done through clicking on particular column header.
+Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
 
 
 
@@ -922,7 +922,7 @@ var value = $("#Grid").ejGrid("option", "columns");
 
 
 
-Gets or sets a value that indicates whether to enable editing behaviour for particular column.
+Gets or sets a value that indicates whether to enable editing behavior for particular column.
 
 
 
@@ -970,7 +970,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable dynamic filtering behaviour for particular column.
+Gets or sets a value that indicates whether to enable dynamic filtering behavior for particular column.
 
 
 
@@ -1018,7 +1018,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable dynamic grouping behaviour for particular column.
+Gets or sets a value that indicates whether to enable dynamic grouping behavior for particular column.
 
 
 
@@ -1066,7 +1066,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to enable dynamic sorting behaviour for particular column.
+Gets or sets a value that indicates whether to enable dynamic sorting behavior for particular column.
 
 
 
@@ -2529,7 +2529,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets an object that indicates whether to customize the context menu behaviour of the grid.
+Gets or sets an object that indicates whether to customize the context menu behavior of the grid.
 
 
 
@@ -2863,7 +2863,7 @@ $("#Grid").ejGrid({
 
 
 
-Gest or sets an object that indicates whether to customize the editing behaviour of the grid.
+Gest or sets an object that indicates whether to customize the editing behavior of the grid.
 
 
 
@@ -3921,7 +3921,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets an object that indicates whether to customize the filtering behaviour of the grid
+Gets or sets an object that indicates whether to customize the filtering behavior of the grid
 
 
 
@@ -4266,7 +4266,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets an object that indicates whether to customize the grouping behaviour of the grid.
+Gets or sets an object that indicates whether to customize the grouping behavior of the grid.
 
 
 
@@ -5446,7 +5446,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets an object that indicates whether to customize the scrolling behaviour of the grid.
+Gets or sets an object that indicates whether to customize the scrolling behavior of the grid.
 
 
 
@@ -5902,7 +5902,7 @@ $("#Grid").ejGrid({
 
 
 
-This property is used to configure the selection behaviour of the grid.
+This property is used to configure the selection behavior of the grid.
 
 
 
@@ -5923,7 +5923,7 @@ This property is used to configure the selection behaviour of the grid.
 
 
 
-Gets or sets a value that indicates whether to enable the toggle selction behaviour for row, cell and column.
+Gets or sets a value that indicates whether to enable the toggle selction behavior for row, cell and column.
 
 
 
@@ -6324,7 +6324,7 @@ $("#Grid").ejGrid({
 
 
 
-Gets or sets a value that indicates whether to customize the sorting behaviour of the grid.
+Gets or sets a value that indicates whether to customize the sorting behavior of the grid.
 
 
 

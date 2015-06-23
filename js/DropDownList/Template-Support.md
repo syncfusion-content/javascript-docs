@@ -9,9 +9,9 @@ documentation: ug
 
 # Template Support
 
-**Dropdown** widget provides the template support for the **Dropdownlist**, when binding the data’s for the dropdown. For this behaviour you need to set the common syntax /element in template property. You can add any Html mark-up element inside of dropdown list using this property.
+**Dropdown** widget provides the template support for the **Dropdownlist**, when binding the data’s for the dropdown. For this behavior you need to set the common syntax /element in template property. You can add any Html mark-up element inside of dropdown list using this property.
 
-The following steps explains you the behaviour of template support with **Dropdownlist**
+The following steps explains you the behavior of template support with **Dropdownlist**
 
  In an **HTML** page, add a **&lt;input&gt;** element to configure **Dropdownlist** widget
 

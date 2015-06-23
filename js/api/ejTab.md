@@ -229,7 +229,7 @@ Default Value:
 
 
 
-Specifies the animation behaviour of the tab.
+Specifies the animation behavior of the tab.
 
 
 Default Value:

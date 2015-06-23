@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Behaviour-Settings
-description: behaviour settings
+title: Behavior-Settings
+description: behavior settings
 platform: js
 control: DropDownList
 documentation: ug
 ---
 
-# Behaviour Settings
+# Behavior Settings
 
-The following are some miscellaneous properties that helps you to change the behaviour of **DropdownList** control 
+The following are some miscellaneous properties that helps you to change the behavior of **DropdownList** control 
 
 **Target ID**
 
