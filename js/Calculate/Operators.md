@@ -51,7 +51,7 @@ All operations are subjected to the following hierarchy of operations. The level
 
 When you want to change the default operators precedence, then use parentheses to explicitly indicate the operation order.
 
-## Examples
+**Examples**
 
 <table>
 <tr>
@@ -127,7 +127,6 @@ Refer to the following screenshot to get more details on **addNamedRange** suppo
 
 {% include image.html url="/js/Calculate/Concepts-and-Features/Operators_images/Operators_img1.png" Caption=""%}
 
-_NamedRange support_
 
 
 
