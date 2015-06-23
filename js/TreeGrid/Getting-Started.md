@@ -17,7 +17,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img1.png" Caption="TreeGrid"%}
 
-1.Create an **HTML** file and add the following template to the **HTML** file.
+1.Create an HTML file and add the following template to the HTML file.
 
 {% highlight html %}
 
@@ -51,7 +51,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% endhighlight %}
 
-3.Create the **ejTreeGrid** with the empty data source.
+3.Create the `**ejTreeGrid**` with the empty data source.
 
 {% highlight js %}
 
@@ -73,7 +73,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img2.png" Caption="TreeGrid with empty datasource "%}
 
-4.Create data source for ejTreeGrid.
+4.Create data source for `ejTreeGrid`.
 
 {% highlight js %}
 
@@ -168,7 +168,7 @@ This section explains how to create a **TreeGrid** control in your application w
 
 {% endhighlight %}
 
-5.Initialize the **ejTreeGrid** with data source created in last step.
+5.Initialize the `**ejTreeGrid**` with data source created in last step.
 
 {% highlight js %}
 
@@ -192,15 +192,15 @@ This section explains how to create a **TreeGrid** control in your application w
 
 A **TreeGrid** is displayed as the output in the following screenshot.
 
-{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img3.png" Caption="TreeGrid with given datasource"%}
+{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img3.png"%}
 
 ### Enable Sorting
 
-The **ejTreeGrid** control has sorting functionality, to arrange the data in ascending or descending order based on a particular column.
+The `**ejTreeGrid**` control has sorting functionality, to arrange the data in ascending or descending order based on a particular column.
 
 #### Multicolumn Sorting
 
-Enable the multicolumn sorting in **ejTreeGrid** by setting **allowMultiSorting** as **True**. You can sort multiple columns in **ejTreeGrid,** by selecting the desired column header while holding the **CTRL** key.
+Enable the multicolumn sorting in `**ejTreeGrid**` by setting `**allowMultiSorting**` as `**True**`. You can sort multiple columns in `**ejTreeGrid**`, by selecting the desired column header while holding the **CTRL** key.
 
 {% highlight js %}
 
@@ -212,17 +212,17 @@ Enable the multicolumn sorting in **ejTreeGrid** by setting **allowMultiSorting*
 
 {% endhighlight %}
 
-{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img4.png" Caption="TreeGrid enabled with sorting "%}
+{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img4.png"%}
 
 ### Enable Editing
 
-You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows.
+You can enable Editing in `**ejTreeGrid**` by using the `**editSettings**` property as follows.
 
 {% highlight js %}
 
     $("#TreeGridContainer").ejTreeGrid({
         //...
-        edit: {
+        editSettings: {
             allowEditing: true,
             editMode: "cellEditing"
         }
@@ -230,18 +230,13 @@ You can enable Editing in **ejTreeGrid** by using the **Edit** option as follows
 
 {% endhighlight %}
 
-And also, the following editors are provided for support in **ejTreeGrid** control.
+And also, the following editors are provided for support in `**ejTreeGrid**` control.
 
 * stringedit
-
 * booleanedit
-
 * numericedit
-
 * dropdownedit
-
 * datepicker
-
 * datetimepicker
 
 You can set the editor type for a particular column as follows.
@@ -259,7 +254,7 @@ You can set the editor type for a particular column as follows.
 
 {% endhighlight %}
 
-The output of the **DateTimePicker** editor in **TreeGrid** control is as follows.
+The output of the `**DateTimePicker**` editor in **TreeGrid** control is as follows.
 
-{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img5.png" Caption="TreeGrid editing with DateTime Picker"%}
+{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img5.png"%}
 
