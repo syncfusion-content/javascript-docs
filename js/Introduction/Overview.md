@@ -98,7 +98,7 @@ Editors</td><td>
 <a href="http://helpjs.syncfusion.com/js/togglebutton/overview">Togglebutton</a></td></tr>
 <tr>
 <td>
-<a href="http://helpjs.syncfusion.com/js/radiobutton/overview">Radiobutton</a></td><td>
+<a href="http://helpjs.syncfusion.com/js/radiobutton/overview">Radiobutton</a></td><td colspan = "2">
 <a href="http://helpjs.syncfusion.com/js/checkbox/overview">Checkbox</a></td></tr>
 
 <tr>
