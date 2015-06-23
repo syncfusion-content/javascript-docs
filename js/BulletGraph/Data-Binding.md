@@ -51,7 +51,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with local data generated using Javascript
 
-{% include image.html url="/js/BulletGraph/Data-Binding_images/Data-Binding_img1.png" Caption="Bullet Graph bounded to JSON data"%}
+{% include image.html url="/js/BulletGraph/Data-Binding_images/Data-Binding_img1.png" %}
 
 ## Remote Data
 
@@ -101,5 +101,5 @@ The following screenshot displays **Bullet Graph** with local data generated usi
 
 The following screenshot displays a Bullet Graph bounded with data from a remote server
 
-{% include image.html url="/js/BulletGraph/Data-Binding_images/Data-Binding_img2.png" Caption="Bullet Graph bounded to data from server"%}
+{% include image.html url="/js/BulletGraph/Data-Binding_images/Data-Binding_img2.png" %}
 
