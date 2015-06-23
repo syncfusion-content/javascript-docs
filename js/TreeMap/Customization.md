@@ -11,7 +11,7 @@ documentation: ug
 
 **TreeMap** control supports color customization to determine the exact combination of colors for tree nodes displayed in **TreeMap** and tooltip support to display additional information of treemap data.
 
-## Color Customization
+## Color
 
 You can customize the colors of the leaf nodes of **TreeMap** using the ColorMapping support of the **TreeMap**. 
 

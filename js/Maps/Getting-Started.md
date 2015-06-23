@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about how to create **Maps** in your application with **JavaScript.**
 
-## Configure a Map
+## Create your first Map in JavaScript
 
 You can configure an **Essential JavaScript** Map in simple steps. In this example, you can learn how to configure USA population map with customized appearance and tooltip.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about how to create a **TreeMap** in your application with **JavaScript**.
 
-##Configure a TreeMap
+##Create your first TreeMap in JavaScript
 
 You can configure an **Essential JavaScript TreeMap** in simple steps. In this section, you can learn how to configure a TreeMap control in a real-time scenario where it is used to visually represent the percentage of growth in population in each continent. It also provides a walk-through on some of the customization features available in TreeMap control. 
 

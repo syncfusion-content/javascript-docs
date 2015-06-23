@@ -57,10 +57,9 @@ To create a new web form in the application
 * System.Net.Http,
 * System.Net.Http.WebRequest,
 * System.Net.Http.Formatting,
-* Syncfusion.Linq.Base.dll,
+* Syncfusion.Linq.Base,
+* Syncfusion.Compression.Base,
 * Syncfusion.EJ.ReportViewer,
-* Syncfusion.ReportControls.Wpf
-* Syncfusion.ReportWriter.Base
 * Syncfusion.Pdf.Base,
 * Syncfusion.XlsIO.Base,
 * Syncfusion.DocIO.Base
@@ -233,7 +232,7 @@ Run the sample application and you can see the **ReportViewer** on the page as d
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img8.png" %}
 
-###Load SSRS Server Reports
+##Load SSRS Server Reports
 
 **ReportViewer** supports to load RDL/RDLC files from SSRS Server. The following steps help you to load reports from SSRS Server.
 
@@ -251,8 +250,8 @@ Run the sample application and you can see the **ReportViewer** on the page as d
       $("#viewer").ejReportViewer(
                           {
                             reportServiceUrl: "/api/ReportApi",
-                            reportPath: "/SSRSSamples2/Territory Sales",
-                            reportServerUrl: "http://76.74.153.81/ReportServer"
+                            reportPath: "/SSRSSamples/Territory Sales",
+                            reportServerUrl: "http://mvc.syncfusion.com/reportserver"
                           });
       });
               
@@ -282,7 +281,7 @@ Run the sample application and you can see the **ReportViewer** on the page as d
 
 {% include image.html url="/js/ReportViewer/Getting-Started_images/Getting-Started_img9.png" %}
 
-###Load RDLC Reports
+##Load RDLC Reports
 
 The **ReportViewer** has data binding support to visualize the **RDLC** reports. The following code example helps you to bind data to **ReportViewer**.
 
@@ -313,10 +312,10 @@ The **ReportViewer** has data binding support to visualize the **RDLC** reports.
                                  {
                                      ProductName: "Chicken Tikka", OrderId: "323B62", Price: 64, Category: "Non-Veg", Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.", ProductImage: ""
                                  }
-                            ],
+                                   ],
                             name: "list"
-                          }]
-                   });
+                                        }]
+                          });
       });
               
    </script>
