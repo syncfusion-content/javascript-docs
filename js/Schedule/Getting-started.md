@@ -498,7 +498,7 @@ When you click the recurrence appointment, a quick appointment window opens with
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img16.png" Caption="Quick Appointment Window."%}
 
 
-**Behaviour Customization using the events**
+**Behavior Customization using the events**
 
 **Restrict the display of appointment window**
 
