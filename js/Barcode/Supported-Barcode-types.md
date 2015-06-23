@@ -20,7 +20,7 @@ The following table contains the supported types and associated valid characters
 </tr>
 <tr>
 <td>
-QR Barcode</td><td>
+QR Code</td><td>
 QRBarcode</td><td>
 0,1,2,3,4,5,6,7,8,90–9, A–Z (upper-case only), space, $, %, *, +, -,., /, :Shift JIS characters</td><td>
 variable</td></tr>
