@@ -15,15 +15,12 @@ documentation: ug
 {% highlight html %}
 
 <head>
-     <title>PivotGrid Custom theme</title>
-     <link href="../themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
-     <link href="custom-theme**/ej.custom-theme.css**" rel="stylesheet" type="text/css" />
-</head> 
-
+    <title>PivotGrid Custom theme</title>
+    <link href="../themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
+    <link href="custom-theme**/ej.custom-theme.css**" rel="stylesheet" type="text/css" />
+</head>
 
 {% endhighlight %}
-
-
 
 {% highlight css %}
 
@@ -509,5 +506,5 @@ documentation: ug
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Appearance--Styling_images/Appearance--Styling_img1.png" Caption="PivotGrid with Custom Theme"%}
+{% include image.html url="/js/PivotGrid/Appearance--Styling_images/Appearance--Styling_img1.png" Caption=""%}
 

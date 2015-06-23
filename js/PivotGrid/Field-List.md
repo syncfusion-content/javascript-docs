@@ -15,19 +15,23 @@ Field List (also known as Pivot Schema Designer) is powerful tool that allows yo
 
 {% highlight js %}
 
-  $(function () {
-                    $("#PivotGrid").ejPivotGrid({
-                            url: "/wcf/PivotGridService.svc", afterServiceInvoke: "onServiceInvokes"
-                        });
-                    });
-                    function onServiceInvokes(args) {
-                        if (args.action == "initialize")
-                            $("#PivotSchemaDesigner").ejPivotSchemaDesigner({ pivotControl: this, layout: ej.PivotSchemaDesigner.Layouts.Excel });
-                    }
+ $(function() {
+     $("#PivotGrid").ejPivotGrid({
+         url: "/wcf/PivotGridService.svc",
+         afterServiceInvoke: "onServiceInvokes"
+     });
+ });
 
+ function onServiceInvokes(args) {
+     if (args.action == "initialize")
+         $("#PivotSchemaDesigner").ejPivotSchemaDesigner({
+             pivotControl: this,
+             layout: ej.PivotSchemaDesigner.Layouts.Excel
+         });
+ }
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img1.png" Caption="Field List"%}
+{% include image.html url="/js/PivotGrid/Field-List_images/Field-List_img1.png" Caption=""%}
 
 ##Interactions
 
@@ -35,21 +39,21 @@ Field List (also known as Pivot Schema Designer) is powerful tool that allows yo
 
 You can change the report on the fly through simple drag-and-drop operation. You can drag from the filed list and drop them either into the column, row, value or filter section available at the bottom of the Field list. 
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img2.png" Caption="Drag and drop operation"%}
+{% include image.html url="/js/PivotGrid/Field-List_images/Field-List_img2.png" Caption=""%}
 
 ###Check and Uncheck
 
 You can alter the report on the fly through check and uncheck option (as an alternate). By default, fields are added to the row label when checked.
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img3.png" Caption="Check and Uncheck operation"%}
+{% include image.html url="/js/PivotGrid/Field-List_images/Field-List_img3.png" Caption=""%}
 
 ###Filtering 
 
 Filter pop-up window can be launched by clicking on the expander icon available at the right-hand corner of each field item. Values can be filtered by checking/unchecking the check box besides them in the filter pop-up window. As a result of the filtering operation, PivotGrid is refresh showing the updated values. 
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img4.png" Caption="Filter pop-up window - Open Indicator "%}
+{% include image.html url="/js/PivotGrid/Field-List_images/Field-List_img4.png" Caption="Filter pop-up window - Open Indicator "%}
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Field-List_images/Field-List_img5.png" Caption="Filter pop-up window"%}
+{% include image.html url="/js/PivotGrid/Field-List_images/Field-List_img5.png" Caption="Filter pop-up window"%}
 
 ##Layout Section
 

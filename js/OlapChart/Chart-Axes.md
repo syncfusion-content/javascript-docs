@@ -12,13 +12,19 @@ documentation: ug
 **OlapChart** typically have two axes that are used to measure and categorize data: a vertical Y-axis and a horizontal X-axis. By default vertical Y-axis and horizontal X-axis is added to the Chart with axis labels, gridlines, and tick lines. You can also customize this axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
 {% highlight js %}
-
 $("#OlapChart1").ejOlapChart({
-  url: "../wcf/OlapChartService.svc",
-  primaryXAxis: { majorTickLines: { visible: false } },
-  primaryYAxis: { majorTickLines: { visible: false } },
- });
-
+    url: "../wcf/OlapChartService.svc",
+    primaryXAxis: {
+        majorTickLines: {
+            visible: false
+        }
+    },
+    primaryYAxis: {
+        majorTickLines: {
+            visible: false
+        }
+    },
+})
 
 {% endhighlight %}
 
@@ -29,20 +35,49 @@ Primary axis title font appearance is further customized with the help of the fo
 
 {% highlight js %}
 
-$(function () {
+$(function() {
     $("#OlapChart1").ejOlapChart({
-        url: "../wcf/OlapChartService.svc", legend: { visible: true, rowCount: 3 },
-        commonSeriesOptions: { type: ej.olap.OlapChart.ChartTypes.Column },
-        primaryXAxis: { title: { text: "Primary X title customization", font: { color: 'red', fontFamily: 'Segoe UI', fontStyle: 'Italic', size: '18px', opacity: 1, fontWeight: 'lighter' } } },
-        primaryYAxis: { title: { text: "Primary Y title customization", font: { color: 'red', fontFamily: 'Segoe UI', fontStyle: 'Italic', size: '18px', opacity: 1, fontWeight: 'lighter' } } }
+        url: "../wcf/OlapChartService.svc",
+        legend: {
+            visible: true,
+            rowCount: 3
+        },
+        commonSeriesOptions: {
+            type: ej.olap.OlapChart.ChartTypes.Column
+        },
+        primaryXAxis: {
+            title: {
+                text: "Primary X title customization",
+                font: {
+                    color: 'red',
+                    fontFamily: 'Segoe UI',
+                    fontStyle: 'Italic',
+                    size: '18px',
+                    opacity: 1,
+                    fontWeight: 'lighter'
+                }
+            }
+        },
+        primaryYAxis: {
+            title: {
+                text: "Primary Y title customization",
+                font: {
+                    color: 'red',
+                    fontFamily: 'Segoe UI',
+                    fontStyle: 'Italic',
+                    size: '18px',
+                    opacity: 1,
+                    fontWeight: 'lighter'
+                }
+            }
+        }
     });
 });
 
 
-
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img1.png" Caption="Primary Axis - Title Customization"%}
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img1.png" Caption="Primary Axis - Title Customization"%}
 
 ##Axis Line
 
@@ -51,23 +86,37 @@ $(function () {
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },  
-legend: { visible: true, rowCount: 3 },
-                                primaryXAxis: {
-                                    axisLine: { visible: true },
-                                    axisLine: { offset: 1 },
-                                    axisLine: { width: 3.5 },
-                                },
-                                primaryYAxis: {
-                                    axisLine: { dashArray: "2,3" }
-                                }
+    url: "../wcf/OlapChartService.svc",
+    title: {
+        text: "OLAP Chart in Essential Studio"
+    },
+    legend: {
+        visible: true,
+        rowCount: 3
+    },
+    primaryXAxis: {
+        axisLine: {
+            visible: true
+        },
+        axisLine: {
+            offset: 1
+        },
+        axisLine: {
+            width: 3.5
+        },
+    },
+    primaryYAxis: {
+        axisLine: {
+            dashArray: "2,3"
+        }
+    }
 });
 
 
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img2.png" Caption="Axis Line Customization"%}
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img2.png" Caption="Axis Line Customization"%}
 
 ##Position Opposed
 
@@ -76,16 +125,24 @@ legend: { visible: true, rowCount: 3 },
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-        url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" },
-        primaryXAxis: {opposedPosition: true },primaryYAxis: {opposedPosition: true}
-        }
+    url: "../wcf/OlapChartService.svc",
+    title: {
+        text: "OLAP Chart in Essential Studio"
+    },
+    primaryXAxis: {
+        opposedPosition: true
+    },
+    primaryYAxis: {
+        opposedPosition: true
+    }
+}
 });
 
 
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img3.png" Caption="Position Opposed"%}
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img3.png" Caption="Position Opposed"%}
 
 ##Appearance Customization 
 
@@ -102,12 +159,21 @@ Background, border color and outer width of the Chart Area is customized with th
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({
-url: "../wcf/OlapChartService.svc", title: { text: "OLAP Chart in Essential Studio" }, chartArea: { border: { color: "gray", width: 4 }, background: "aqua" }
+    url: "../wcf/OlapChartService.svc",
+    title: {
+        text: "OLAP Chart in Essential Studio"
+    },
+    chartArea: {
+        border: {
+            color: "gray",
+            width: 4
+        },
+        background: "aqua"
+    }
 });
-
 
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Concepts-and-Features/Chart-Axes_images/Chart-Axes_img4.png" Caption="Chart Area Customization"%}
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img4.png" Caption="Chart Area Customization"%}
 

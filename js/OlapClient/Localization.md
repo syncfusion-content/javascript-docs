@@ -17,9 +17,9 @@ _Table: List of default English localization User Interface based on French cult
 
 <table>
 <tr>
-<td>
-<b>Keywords</b></td><td>
-<b>Values</b></td></tr>
+<th>
+Keywords</th><th>
+Values</th></tr>
 <tr>
 <td>
 Column</td><td>

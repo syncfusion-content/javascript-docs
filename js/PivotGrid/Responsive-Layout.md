@@ -13,15 +13,16 @@ Responsive layout is aimed at crafting sites to provide an optimal viewing exper
 
 {% highlight js %}
 
-$(function () {
-       $("#PivotGrid1").ejPivotGrid({
-             url: "../wcf/OLAPService.svc", **isResponsive: true**
-       });
+$(function() {
+    $("#PivotGrid1").ejPivotGrid({
+        url: "../wcf/OLAPService.svc",
+        isResponsive: true 
+    });
 });
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View"%}
+{% include image.html url="/js/PivotGrid/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View"%}
 
-{% include image.html url="/js/PivotGrid/Concepts-and-Features/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View"%}
+{% include image.html url="/js/PivotGrid/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View"%}
 

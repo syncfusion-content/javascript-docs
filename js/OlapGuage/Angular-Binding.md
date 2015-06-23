@@ -22,15 +22,15 @@ Apply the plugin and property assigning the OlapGauge element through the direct
 {% highlight js %}
 
 angular.module('gaugeCtrl', ['ejangular'])
-            .controller('OlapGaugeCtrl', function ($scope) {
-                $scope.url = "../wcf/OlapGaugeService.svc";
-                $scope.enableTooltip = true;
-                $scope.rowsCount = 2;
-                $scope.columnsCount = 3;
-                $scope.scales = scale;
-                $scope.backgroundColor = "transparent";
-            });
-
+    .controller('OlapGaugeCtrl', function($scope) {
+        $scope.url = "../wcf/OlapGaugeService.svc";
+        $scope.enableTooltip = true;
+        $scope.rowsCount = 2;
+        $scope.columnsCount = 3;
+        $scope.scales = scale;
+        $scope.backgroundColor = "transparent";
+    });
+    
 {% endhighlight %}
 
 {% highlight html %}

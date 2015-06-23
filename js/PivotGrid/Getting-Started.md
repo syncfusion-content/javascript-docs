@@ -13,13 +13,7 @@ This section explains briefly about how to create a **PivotGrid** in your applic
 
 #OLAP
 
-##Control structure of PivotGrid using OLAP datasource
-
-The following screenshot displays the **PivotGrid** control.
-
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img1.png" Caption="PivotGrid Control"%}
-
-##Create an application
+##Create an application with PivotGrid using OLAP datasource
 
 This section encompasses how to configure the **PivotGrid** component in an application. You can also pass the required data to **PivotGrid** and customize it according to your requirements.
 
@@ -65,10 +59,10 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 
 {% highlight html %}
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
 
 {% endhighlight %}
 
@@ -79,15 +73,17 @@ Add the following code example inside the &lt;body&gt; tag in the default.html p
 {% highlight html %}
 
 <div>
-     //Create a <div> tag which acts as a container for ejPivotGrid widget.
+    //Create a <div> tag which acts as a container for ejPivotGrid widget.
     <div id="PivotGrid" style="height: 350px; width: 100%; overflow: auto">
     </div>
     <script type="text/javascript">
-          //Set property and initializing ejPivotGrid widget.
-         $(function () {
-               $("#PivotGrid").ejPivotGrid({ url: "/wcf/PivotGridService.svc" });
-         });
-     </script>
+        //Set property and initializing ejPivotGrid widget.
+        $(function() {
+            $("#PivotGrid").ejPivotGrid({
+                url: "/wcf/PivotGridService.svc"
+            });
+        });
+    </script>
 </div>
 
 {% endhighlight %}
@@ -187,7 +183,7 @@ namespace WebApplication2
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in **PivotGrid**.
 
-* Initialize the **PivotGrid helper class**. 
+Initialize the **PivotGrid helper class**. 
 
 {% highlight c# %}
 
@@ -197,7 +193,7 @@ You can add the following methods to the service that are invoked for any server
 
 {% endhighlight %}
 
-* Add the following relevant **service** methods.
+Add the following relevant **service** methods.
 
 {% highlight c# %}
 
@@ -309,7 +305,7 @@ You can add the following methods to the service that are invoked for any server
 
 ###Configure Web.Config
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service     class appears. The following are the properties that meet the appropriate endpoint.  
 
    1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is "**WebApplication2.IPivotGridService**".
 
@@ -323,9 +319,9 @@ You can add the following methods to the service that are invoked for any server
 
       <service name="WebApplication2.PivotGridService">
 
-        <endpoint address="" behaviorConfiguration="**WebApplication2.PivotGridServiceAspNetAjaxBehavior**"
+        <endpoint address="" behaviorConfiguration="WebApplication2.PivotGridServiceAspNetAjaxBehavior"
 
-          binding="webHttpBinding" contract="**WebApplication2.IPivotGridService**" />
+          binding="webHttpBinding" contract="WebApplication2.IPivotGridService" />
 
       </service>
 
@@ -353,13 +349,7 @@ You can add the following methods to the service that are invoked for any server
 
 #Relational
 
-##Control structure
-
-The following screen shot displays the **PivotGrid** Control.
-
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img11.png" Caption="PivotGrid Control"%}
-
-##Control structure of PivotGrid using Relational datasource
+##Create an application with PivotGrid using Relational datasource
 
 This section encompasses how to configure the **PivotGrid** component in an application. You can also pass the required data to **PivotGrid** and customize it according to your requirements.
 
@@ -403,12 +393,13 @@ Add the script files and CSS files in the **title** tag of the **default.html** 
 > _**Note:** Use the following code sample when adding scripts and styles._
 
 {% highlight html %}
-
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js">
+</script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript">
+</script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js">
+</script>
 {% endhighlight %}
 
 ###Add Control in HTML page
@@ -418,15 +409,17 @@ Add the following code sample inside the **&lt;body&gt;** tag in the **default.h
 {% highlight html %}
 
 <div>
-     //Create a <div> tag which acts as a container for ejPivotGrid widget.
+    //Create a <div> tag which acts as a container for ejPivotGrid widget.
     <div id="PivotGrid" style="height: 350px; width: 100%; overflow: auto">
     </div>
     <script type="text/javascript">
-          //Set property and initializing ejPivotGrid widget.
-         $(function () {
-               $("#PivotGrid").ejPivotGrid({ url: "/wcf/PivotGridService.svc" });
-         });
-     </script>
+        //Set property and initializing ejPivotGrid widget.
+        $(function() {
+            $("#PivotGrid").ejPivotGrid({
+                url: "/wcf/PivotGridService.svc"
+            });
+        });
+    </script>
 </div>
 
 {% endhighlight %}
@@ -512,7 +505,7 @@ namespace WebApplication2
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in PivotGrid.
 
-* Initialize the PivotGrid helper class. 
+Initialize the **PivotGrid helper class**. 
 
 {% highlight c# %}
 
@@ -524,7 +517,7 @@ Dictionary<string, object> dict = new Dictionary<string, object>()>;
 
 {% endhighlight %}
 
-* Add the following relevant service methods.
+Add the following relevant **service** methods.
 
 {% highlight c# %}
 
@@ -716,9 +709,9 @@ namespace WebApplication2
 
 <service name="WebApplication2.PivotGridService">
 
-<endpoint address="" behaviorConfiguration="**WebApplication2.PivotGridServiceAspNetAjaxBehavior**"
+<endpoint address="" behaviorConfiguration="WebApplication2.PivotGridServiceAspNetAjaxBehavior"
 
-binding="webHttpBinding" contract="**WebApplication2.IPivotGridService**" />
+binding="webHttpBinding" contract="WebApplication2.IPivotGridService" />
 
 </service>
 

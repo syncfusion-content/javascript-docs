@@ -11,12 +11,6 @@ documentation: ug
 
 This section explains briefly about how to create an **OLAP Gauge** in your application with **JavaScript.**
 
-##Control structure
-
-The following screen shot shows the structure of an **OLAP Gauge** control.
-
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Gauge Control for JavaScript"%}
-
 ##Syncfusion OLAP Controls – Architecture
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img2.png" Caption="Architecture of OLAP controls"%}
@@ -45,7 +39,7 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
 3.**MDX Generator:** You can frame the MDX query using an MDX generator in **Syncfusion.Olap.Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
-4.OLAP Report: The OlapReport class in the Syncfusion.Olap.Base holds the complete information of each axes such as column, row and slicer. Using OlapReport class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that
+4.**OLAP Report:** The OlapReport class in the Syncfusion.Olap.Base holds the complete information of each axes such as column, row and slicer. Using OlapReport class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that
 is included and excluded.
 
 As the **OlapControl** is the key for each and every operation, initially you need to serialize the **OlapReport** and send to client-side in a form of string. When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OlapReport** from the client-side to the service in a de-serialized and updated format. Further operations are carried with updated **OlapReports** only and you can send the updated **OlapReport** back to client-side with **JSON** data in a serialized format again. This process has the **OlapReport** always updated. You cannot operate serialized **OlapReport** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
@@ -104,10 +98,13 @@ Add the script files and CSS files in the title tag of the default.html page.
 
 {% highlight html %}
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js">
+</script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript">
+</script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js">
+</script>
 
 {% endhighlight %}
 
@@ -118,77 +115,106 @@ Add the following code inside the **&lt;body&gt;** tag in the **default.html** p
 {% highlight html %}
 
 //Creating a div tag, which will act as a container for ejOlapGauge widget.
-
-<div id="OlapGauge" style="height: 350px; width: 100%; position:relative">
-    </div>
+< div id = "OlapGauge"
+style = "height: 350px; width: 100%; position:relative" >
+    < /div>
 
 //Setting properties and initializing ejOlapGauge widget.
 
-    <script type="text/javascript">
-        $(function () {
-            $("#OlapGauge").ejOlapGauge({
-                url: "../wcf/OlapGaugeService.svc", enableTooltip: true,
-                load: "loadGaugeTheme", backgroundColor: "transparent",
-                scales: [{
-                    showRanges: true,
-                    radius: 150, showScaleBar: true, size: 1,
+< script type = "text/javascript" >
+    $(function() {
+        $("#OlapGauge").ejOlapGauge({
+            url: "../wcf/OlapGaugeService.svc",
+            enableTooltip: true,
+            load: "loadGaugeTheme",
+            backgroundColor: "transparent",
+            scales: [{
+                showRanges: true,
+                radius: 150,
+                showScaleBar: true,
+                size: 1,
+                border: {
+                    width: 0.5
+                },
+                showIndicators: true,
+                showLabels: true,
+                pointers: [{
+                    showBackNeedle: true,
+                    backNeedleLength: 20,
+                    length: 120,
+                    width: 7
+                }, {
+                    type: "marker",
+                    markerType: "diamond",
+                    distanceFromScale: 5,
+                    placement: "center",
+                    backgroundColor: "#29A4D9",
+                    length: 25,
+                    width: 15
+                }],
+                ticks: [{
+                    type: "major",
+                    distanceFromScale: 2,
+                    height: 16,
+                    width: 1,
+                    color: "#8c8c8c"
+                }, {
+                    type: "minor",
+                    height: 6,
+                    width: 1,
+                    distanceFromScale: 2,
+                    color: "#8c8c8c"
+                }],
+                labels: [{
+                    color: "#8c8c8c"
+                }],
+                ranges: [{
+                    distanceFromScale: -5,
+                    backgroundColor: "#fc0606",
                     border: {
-                        width: 0.5
+                        color: "#fc0606"
+                    }
+                }, {
+                    distanceFromScale: -5
+                }],
+                customLabels: [{
+                    position: {
+                        x: 180,
+                        y: 290
                     },
-                    showIndicators: true, showLabels: true,
-                    pointers: [{
-                        showBackNeedle: true,
-                        backNeedleLength: 20,
-                        length: 120,
-                        width: 7
+                    font: {
+                        size: "10px",
+                        fontFamily: "Segoe UI",
+                        fontStyle: "Normal"
                     },
-            {
-                type: "marker",
-                markerType: "diamond",
-                distanceFromScale: 5,
-                placement: "center",
-                backgroundColor: "#29A4D9",
-                length: 25,
-                width: 15
-            }],
-                    ticks: [{
-                        type: "major",
-                        distanceFromScale: 2,
-                        height: 16,
-                        width: 1, color: "#8c8c8c"
+                    color: "#666666"
+                }, {
+                    position: {
+                        x: 180,
+                        y: 320
                     },
-                    {
-                        type: "minor",
-                        height: 6,
-                        width: 1,
-                        distanceFromScale: 2,
-                        color: "#8c8c8c"
-                    }],
-                    labels: [{
-                        color: "#8c8c8c"
-                    }],
-                    ranges: [{
-                        distanceFromScale: -5,
-                        backgroundColor: "#fc0606",
-                        border: { color: "#fc0606" }
-                    }, {
-                        distanceFromScale: -5
-                    }],
-                    customLabels: [{
-                        position: { x: 180, y: 290 },
-                        font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                    }, {
-                        position: { x: 180, y: 320 },
-                        font: { size: "10px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                    }, {
-                        position: { x: 180, y: 150 },
-                        font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "Normal" }, color: "#666666"
-                    }]
+                    font: {
+                        size: "10px",
+                        fontFamily: "Segoe UI",
+                        fontStyle: "Normal"
+                    },
+                    color: "#666666"
+                }, {
+                    position: {
+                        x: 180,
+                        y: 150
+                    },
+                    font: {
+                        size: "12px",
+                        fontFamily: "Segoe UI",
+                        fontStyle: "Normal"
+                    },
+                    color: "#666666"
                 }]
-            });
+            }]
         });
-    </script>
-
+    }); < /script>
+    
 {% endhighlight %}
 
 ##Add WCF Service for OLAP Gauge
@@ -262,7 +288,7 @@ namespace WebApplication2
 
 Add the following methods to the service invoked for any server-side operations performed in **OlapGauge**.
 
-* Initialize the OlapGauges helper class.
+Initialize the **OlapGauges helper class**.
 
 {% highlight c# %}
 
@@ -272,7 +298,7 @@ Add the following methods to the service invoked for any server-side operations 
 
 {% endhighlight %}
 
-* Initialize the following relevant service methods to be added.
+Initialize the following relevant **service** methods to be added.
 
 {% highlight c# %}
 
@@ -336,9 +362,9 @@ Add the following methods to the service invoked for any server-side operations 
 {% highlight xml %}
 
  <services>
-      <service name="**WebApplication2.OlapGaugeService**">
-        <endpoint address="" behaviorConfiguration="**WebApplication2.OlapGaugeServiceAspNetAjaxBehavior**"
-          binding="webHttpBinding" contract="**WebApplication2.IOlapGaugeService**" />
+      <service name="WebApplication2.OlapGaugeService">
+        <endpoint address="" behaviorConfiguration="WebApplication2.OlapGaugeServiceAspNetAjaxBehavior"
+          binding="webHttpBinding" contract="WebApplication2.IOlapGaugeService" />
       </service>
     </services>
 
@@ -349,7 +375,7 @@ Add the following methods to the service invoked for any server-side operations 
 {% highlight xml %}
 
    <endpointBehaviors>
-        <behavior name="**WebApplication2.OlapGaugeServiceAspNetAjaxBehavior**">
+        <behavior name="WebApplication2.OlapGaugeServiceAspNetAjaxBehavior">
           <enableWebScript />
         </behavior>
     </endpointBehaviors>

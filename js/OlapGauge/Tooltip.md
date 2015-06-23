@@ -13,52 +13,72 @@ documentation: ug
 
 {% highlight js %}
 
-$(function () {
-$("#OlapGauge1").ejOlapGauge({
-  url: "../wcf/OlapGaugeService.svc", **enableTooltip**: true, backgroundColor: "transparent",
-  scales: [{
-          showRanges: true,
-          scaleRadius: 150, showScaleBar: true, scaleBarSize: 1, scaleBorderWidth: 0.5,h
-                               showLabels: true,
-                                pointers: [{
-                                    showBackNeedle: true,
-                                    pointerType: "Needle",
-                                    backNeedleLength: 20,
-                                    pointerLength: 120,
-                                    pointerWidth: 9,
-                                    capBorderColor: "#f5b43f",
-                                    capBackgroundColor: "#f5b43f"
-                                },
-                        {
-                            pointerType: "Marker",
-                            backgroundColor: "#29A4D9",
-                            pointerLength: 25,
-                            pointerWidth: 15
-                        }],
-                                ticks: [{ tickStyle: "Major", tickHeight: 16, 
-                                          tickWidth: 1, tickColor: "red" },
-                                        { tickStyle: "Minor", tickHeight: 6,
-                                          tickWidth: 1, tickColor: "blue" }],
-                                labels: [{
-                                    labelColor: "#8c8c8c"
-                                }],
-                                ranges: [{
-                                    distanceFromScale: -10
-                                 },{
-                                     distanceFromScale: -10,
-                                     backgroundColor: "red"
-                                }],
-                                customLabel: [{
-                                    location: { x: 280, y: 290 },                                   
-                                }, {
-                                    location: { x: 180, y: 350 },
-                                }, {
-                                    location: { x: 180, y: 150 },
-                                }]
-                            }]
-                        });
-                    });
-
+$(function() {
+    $("#OlapGauge1").ejOlapGauge({
+        url: "../wcf/OlapGaugeService.svc",
+        **enableTooltip ** : true,
+        backgroundColor: "transparent",
+        scales: [{
+            showRanges: true,
+            scaleRadius: 150,
+            showScaleBar: true,
+            scaleBarSize: 1,
+            scaleBorderWidth: 0.5,
+            h
+            showLabels: true,
+            pointers: [{
+                showBackNeedle: true,
+                pointerType: "Needle",
+                backNeedleLength: 20,
+                pointerLength: 120,
+                pointerWidth: 9,
+                capBorderColor: "#f5b43f",
+                capBackgroundColor: "#f5b43f"
+            }, {
+                pointerType: "Marker",
+                backgroundColor: "#29A4D9",
+                pointerLength: 25,
+                pointerWidth: 15
+            }],
+            ticks: [{
+                tickStyle: "Major",
+                tickHeight: 16,
+                tickWidth: 1,
+                tickColor: "red"
+            }, {
+                tickStyle: "Minor",
+                tickHeight: 6,
+                tickWidth: 1,
+                tickColor: "blue"
+            }],
+            labels: [{
+                labelColor: "#8c8c8c"
+            }],
+            ranges: [{
+                distanceFromScale: -10
+            }, {
+                distanceFromScale: -10,
+                backgroundColor: "red"
+            }],
+            customLabel: [{
+                location: {
+                    x: 280,
+                    y: 290
+                },
+            }, {
+                location: {
+                    x: 180,
+                    y: 350
+                },
+            }, {
+                location: {
+                    x: 180,
+                    y: 150
+                },
+            }]
+        }]
+    });
+});
 {% endhighlight %}
 
 ## Customizing the tooltip using CSS
@@ -67,18 +87,17 @@ You can customize the **Tooltip** by overriding the existing style attributes an
 
 {% highlight css %}
 
-.e-olapgauge-tooltip {
-  background-color: aqua !important;
-  border: 2px solid red !important;
-  color: black !important;
-  border-radius: 18px!important;
-  margin-top: 20px;
-  text-align: left;
-  font: 12px Segoe UI;
-  line-height: 20px;
+.e - olapgauge - tooltip {
+    background - color: aqua!important;
+    border: 2 px solid red!important;
+    color: black!important;
+    border - radius: 18 px!important;
+    margin - top: 20 px;
+    text - align: left;
+    font: 12 px Segoe UI;
+    line - height: 20 px;
 }
-
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Concepts-and-Features/Tooltip_images/Tooltip_img1.png" Caption="Tooltip Customization"%}
+{% include image.html url="/js/OlapGauge/Tooltip_images/Tooltip_img1.png" Caption="Tooltip Customization"%}
 

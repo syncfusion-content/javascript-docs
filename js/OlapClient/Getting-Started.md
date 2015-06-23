@@ -11,12 +11,6 @@ documentation: ug
 
 This section explains briefly about how to create an **OLAP Client** in your application with **JavaScript**.
 
-##Control Structure
-
-The following screenshot shows the structure of an **OLAP Client** control.
-
-{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img1.png" Caption="OLAP Client Control for JavaScript"%}
-
 ##Syncfusion OLAP Controls – Architecture
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img2.png" Caption="Architecture of OLAP controls"%}
@@ -98,11 +92,14 @@ Add the script files and CSS files in the &lt;title&gt; tag of the default.html 
 
 {% highlight html %}
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"> </script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"> </script>
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript">
+</script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript">
+</script>
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-<script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js">
+</script>
 
 {% endhighlight %}
 
@@ -116,13 +113,14 @@ Add the following code sample in the **&lt;body&gt;** tag in the **default.html*
     //Creating a div tag, which will act as a container for ejOlapClient widget.
     <div id="OlapClient" style="height: 350px; width: 100%; overflow: auto">
     </div>
-         <script type="text/javascript">
-//Setting property and initializing ejOlapClient widget.
-            $(function () {
-                $("#OlapClient").ejOlapClient({ url: "../wcf/OlapClientService.svc”
-});
+    <script type="text/javascript">
+        //Setting property and initializing ejOlapClient widget.
+        $(function() {
+            $("#OlapClient").ejOlapClient({
+                url: "../wcf/OlapClientService.svc”
             });
-        </script>
+        });
+    </script>
 </div>
 
 {% endhighlight %}
@@ -265,7 +263,7 @@ namespace WebApplication2
 
 You can add the following methods to the service that are invoked for any server-side operations performed in **OLAP Client**.
 
-* Initialize the OLAP Client helper class.
+Initialize the OLAP Client helper class.
 
 {% highlight c# %}
 
@@ -277,7 +275,7 @@ You can add the following methods to the service that are invoked for any server
 
 {% endhighlight %}
 
-* Add the following relevant service methods.
+Add the following relevant service methods.
 
 {% highlight c# %}
 
@@ -481,7 +479,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
             olapGridHelper.ExportToExcel(DataManager, new StreamReader(stream).ReadToEnd(), "Sample.xls", HttpContext.Current.Response);
         }
         
-//This method carries the information about the default report which would be rendered within **OlapClient** initially.
+//This method carries the information about the default report which would be rendered within OlapClient initially.
 
         private OlapReport CreateOlapReport()
         {
@@ -516,9 +514,9 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 {% highlight xml %}
 
 <services>
-      <service name="**WebApplication2.OlapClientService**">
-        <endpoint address="" behaviorConfiguration="**WebApplication2.OlapClientServiceAspNetAjaxBehavior**"
-       binding="webHttpBinding" contract="**WebApplication2.IOlapClientService**" />
+      <service name="WebApplication2.OlapClientService">
+        <endpoint address="" behaviorConfiguration="WebApplication2.OlapClientServiceAspNetAjaxBehavior"
+       binding="webHttpBinding" contract="WebApplication2.IOlapClientService" />
       </service>
 </services>
 
@@ -530,7 +528,7 @@ DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport
 {% highlight xml %}
 
 <endpointBehaviors>
-        <behavior name="**WebApplication2.OlapClientServiceAspNetAjaxBehavior**">
+        <behavior name="WebApplication2.OlapClientServiceAspNetAjaxBehavior">
           <enableWebScript />
         </behavior>
 </endpointBehaviors>
