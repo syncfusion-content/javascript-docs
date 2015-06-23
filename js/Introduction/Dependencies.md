@@ -46,10 +46,9 @@ If the user wants to use the **Reporting** controls (ReportViewer), then the fol
 * System.Net.Http
 * System.Net.Http.WebRequest
 * System.Net.Http.Formatting
+* Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
 * Syncfusion.EJ.ReportViewer
-* Syncfusion.ReportControls.Wpf
-* Syncfusion.ReportWriter.Base
 * Syncfusion.Pdf.Base
 * Syncfusion.XlsIO.Base
 * Syncfusion.DocIO.Base
