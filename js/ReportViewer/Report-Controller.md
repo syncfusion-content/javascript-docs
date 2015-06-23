@@ -11,15 +11,15 @@ documentation: ug
 
 The **ReportViewer** uses **Web API** services to process the report file, process the request from control, and to return the processed data to control. The **Syncfusion.EJ.ReportViewer** assembly has helper APIs to define the service actions and process the service requests. 
 
-**IReportController**
+##IReportController##
 
 The interface **IReportController** has the declaration of action methods that is defined in **WebApi** Controller for processing the RDL/RDLC files and for processing request from **ReportViewer** control. The **IReportController** has the following action methods declaration. 
 
 <table>
 <tr>
 <th>
-<b>Methods</b></th><td>
-<b>Description</b></td></tr>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetResource</td><td>
@@ -38,15 +38,15 @@ OnReportLoaded</td><td>
 Report loaded method that is triggered when report and sub report begin loading.</td></tr>
 </table>
 
-**ReportHelper**
+##ReportHelper##
 
 The class **ReportHelper** contains helper methods that helps process Post/Get request from **ReportViewer** control and returns the response to **ReportViewer** control. The **ReportHelper** has the following methods. 
 
 <table>
 <tr>
 <th>
-<b>Methods</b></th><th>
-<b>Description</b></th></tr>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetResource</td><td>

@@ -13,12 +13,12 @@ You can decide on the visual representation of nodes belonging to all the treema
 
 There are four different **TreeMap** layouts such as
 
-* Squarified Layout
-* SliceAndDiceAuto Layout
-* SliceAndDiceHorizontal Layout
-* SliceAndDiceVertical Layout
+* Squarified
+* SliceAndDiceAuto
+* SliceAndDiceHorizontal
+* SliceAndDiceVertical
 
-##Squarified Layout
+##Squarified
 
 **Squarified layout** creates rectangles with best aspect ratio.
 
@@ -44,7 +44,7 @@ There are four different **TreeMap** layouts such as
 
 {% include image.html url="/js/TreeMap/Layout_images/Layout_img1.png"%}
 
-##SliceAndDiceAuto Layout
+##SliceAndDiceAuto
 
 **SliceAndDiceAuto layout** creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
 
@@ -67,7 +67,7 @@ There are four different **TreeMap** layouts such as
 
 {% include image.html url="/js/TreeMap/Layout_images/Layout_img2.png"%}
 
-##SliceAndDiceHorizontal Layout
+##SliceAndDiceHorizontal
 
 **SliceAndDiceHorizontal layout** creates rectangles with high aspect ratio and displays them sorted horizontally.
 
@@ -90,7 +90,7 @@ There are four different **TreeMap** layouts such as
 
 {% include image.html url="/js/TreeMap/Layout_images/Layout_img3.png"%}
 
-##SliceAndDiceVertical Layout
+##SliceAndDiceVertical
 
 **SliceAndDiceVertical layout** creates rectangles with high aspect ratio and displays them sorted vertical.
 

@@ -11,13 +11,13 @@ documentation: ug
 
 The **ReportViewer** has the following client-side events support to listen to the control action.
 
-_Client-Side events_
+
 
 <table>
 <tr>
 <th>
-<b>Events</b></th><th>
-<b>Description</b></th<b>Description</b></th></tr>
+Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 destroy</td><td>
