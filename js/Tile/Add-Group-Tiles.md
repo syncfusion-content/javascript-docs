@@ -33,16 +33,13 @@ To align the small size tiles</td></tr>
 
 To render group tile, refer to the following code example.
 
-{% highlight javascript %}
-
+{% highlight html %}
 
 <div class="**group**">
     <div class="**column**">
            <!— Add tile control here -->
     </div>
 </div>
-
-
 
 {% endhighlight %}
 
@@ -54,7 +51,7 @@ To render **small-col-2** grouped tile, you need to render the number of tiles i
 
  Refer the following code examples.
 
-{% highlight javascript %}
+{% highlight html %}
 
 
 <div class="group">
@@ -86,7 +83,8 @@ To render **small-col-2** grouped tile, you need to render the number of tiles i
         </div>
     </div>
 
-    <script>
+{% endhighlight %}
+{% highlight js %}  
         $("#tile1").ejTile({
             tileSize: "medium", 
             imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/alerts.png",
@@ -142,13 +140,10 @@ To render **small-col-2** grouped tile, you need to render the number of tiles i
             imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/music.png",
             text: "Music"
         });
-    </script>
-
-
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Tile/Concepts-and-features/Add-Group-Tiles_images/Add-Group-Tiles_img1.png" Caption="Tile - Group Tiles"%}
+{% include image.html url="/js/Tile/Add-Group-Tiles_images/Add-Group-Tiles_img1.png" Caption="Tile - Group Tiles"%}
 

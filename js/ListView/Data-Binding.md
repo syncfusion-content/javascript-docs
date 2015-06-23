@@ -11,13 +11,13 @@ documentation: ug
 
 **Local Data Binding**
 
-**Essential Studio Web****JS ListView** provides support for **Data Binding**. **Data Binding** provides a simple and consistent way for applications to present and interact with data. Elements can be bounded to data from a variety of data sources. In local data****binding, the data source is written inside the program. Then it is handled by the **ListView** control. **DataSource** is used to get the **data source** that holds the list items.
+**Essential Studio Web JS ListView** provides support for **Data Binding**. **Data Binding** provides a simple and consistent way for applications to present and interact with data. Elements can be bounded to data from a variety of data sources. In local data binding, the data source is written inside the program. Then it is handled by the **ListView** control. **DataSource** is used to get the **data source** that holds the list items.
 
 Please refer the following code examples.
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 
     <div id="defaultlistbox" ></div>
@@ -58,11 +58,11 @@ Please refer the following code examples.
 
 **Screenshot:**
 
-{% include image.html url="/js/ListView/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" Caption="Local Data Binding"%}
+{% include image.html url="/js/ListView/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" %}
 
 **FieldSettings**
 
-The******data-ej-fields****ettings**attribute is used to map the **DataSource** field with the list item fields. In addition to the list [item specific properties](http://help.syncfusion.com/ug/js/documents/groupedlist.htm), the following fields are available while mapping.
+The **data-ej-fieldsettings** attribute is used to map the **DataSource** field with the list item fields. In addition to the list [item specific properties](http://help.syncfusion.com/ug/js/documents/groupedlist.htm), the following fields are available while mapping.
 
 _FieldSettings_
 
@@ -82,7 +82,7 @@ In DB, you can define your desired class name or styles for the list item throug
 </table>
 Please refer the following code examples.
 
-{% highlight javascript %}
+{% highlight html %}
 
 
   <div id="defaultlistbox" ></div>       
@@ -132,13 +132,12 @@ Please refer the following code examples.
 
 **Screenshots:**
 
-{% include image.html url="/js/ListView/Concepts-and-Features/Data-Binding_images/Data-Binding_img2.png" Caption=""%}
+{% include image.html url="/js/ListView/Data-Binding_images/Data-Binding_img2.png" %}
 
-_Field Settings_
 
 When you click on the parent item, it navigates to its corresponding child list item as follows.
 
 
 
-{% include image.html url="/js/ListView/Concepts-and-Features/Data-Binding_images/Data-Binding_img3.png" Caption="Field Settings"%}
+{% include image.html url="/js/ListView/Data-Binding_images/Data-Binding_img3.png" %}
 
