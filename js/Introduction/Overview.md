@@ -9,10 +9,9 @@ documentation: ug
 
 # Overview
 
-**Syncfusion** **Essential Studio for JavaScript** has emerged as a combination of both **HTML** and **jQuery** based widget package, which provides several number of widgets very similar to the jQuery plug-in style, so that the same jQuery-like syntax can be followed in every actions. 
+**Syncfusion Essential Studio for JavaScript** (Essential JS) is a **HTML5** jQuery based control library for developing modern web applications. 
 
-
-It includes more than **80+** components (web and mobile) for both web and mobile application development which are categorized as follows,
+It includes **80+** controls for web and mobile application development which can be categorized as follows:
 
 
 <table>
@@ -61,7 +60,7 @@ Layout</td><td>
 <a href="http://helpjs.syncfusion.com/js/listview/overview">ListView</a></td><td colspan = "2">
 <a href="http://helpjs.syncfusion.com/js/tileview/overview">TileView</a></td></tr>
 <tr>
-<td rowspan = "7">
+<td rowspan = "10">
 Editors</td><td>
 <a href="http://helpjs.syncfusion.com/js/richtexteditor/overview">RichTextEditor</a></td><td colspan = "2">
 <a href="http://helpjs.syncfusion.com/js/colorpicker/overview">ColorPicker</a></td></tr>
@@ -89,17 +88,16 @@ Editors</td><td>
 <td>
 <a href="http://helpjs.syncfusion.com/js/slider/overview">Slider</a></td><td colspan = "2">
 <a href="http://helpjs.syncfusion.com/js/button/overview">Button</a></td></tr>
-<tr><td></td>
+<tr>
 <td>
 <a href="http://helpjs.syncfusion.com/js/uploadbox/overview">UploadBox</a></td><td colspan = "2">
 <a href="http://helpjs.syncfusion.com/js/maskedit/overview">MaskEdit</a></td></tr>
-<tr><td></td>
+<tr>
 <td>
 <a href="http://helpjs.syncfusion.com/js/splitbutton/overview">Splitbutton</a></td><td colspan = "2">
 <a href="http://helpjs.syncfusion.com/js/togglebutton/overview">Togglebutton</a></td></tr>
-<tr><td></td>
+<tr>
 <td>
-Captcha</td><td>
 <a href="http://helpjs.syncfusion.com/js/radiobutton/overview">Radiobutton</a></td><td>
 <a href="http://helpjs.syncfusion.com/js/checkbox/overview">Checkbox</a></td></tr>
 
@@ -148,16 +146,16 @@ Others</td><td>
 DataManager</td></tr>
 </table>
 
-All our web UI widgets supports the below listed major **key features** – which are more essential in building the web application in recent days.
+Essential JS UI controls have **inbuilt frameworks** for databinding, [theming](http://helpjs.syncfusion.com/js/introduction/theming-in-essential-javascript-components), [localization](helpjs.syncfusion.com/js/introduction/localization) and [accessibility](http://helpjs.syncfusion.com/js/introduction/accessibility). The components are also compatible with other popular frameworks such as [AngularJS](http://helpjs.syncfusion.com/js/introduction/angularjs), [KnockoutJS](http://helpjs.syncfusion.com/js/introduction/knockoutjs), [TypeScript](http://helpjs.syncfusion.com/js/introduction/typescript), and RequireJS.
 
-* Built-in themes
-* AngularJS
-* KnockoutJS
-* Localization
-* Accessibility
-* TypeScript
-* Unobtrusive
-* RequireJS
-* Data-binding
+Essential JS also includes the following **server side libraries** for .NET:
+
+* [XlsIO](http://help.syncfusion.com/ug/js/index.html#!Documents/xlsio.htm) (Microsoft Excel Library)
+* [DocIO](http://help.syncfusion.com/ug/js/index.html#!Documents/overview19.htm) (Microsoft Word Library)
+* [Presentation](http://help.syncfusion.com/ug/js/index.html#!Documents/overview37.htm) (Microsoft Powerpoint presentation Library)
+* [PDF](http://help.syncfusion.com/ug/js/index.html#!Documents/overview36.htm)
+* [ReportViewer](http://helpjs.syncfusion.com/js/reportviewer/overview)
+* [PMML Predictive Analysis](http://help.syncfusion.com/predictive-analytics)
+* OLAP based libraries ([PivotGrid](http://helpjs.syncfusion.com/js/pivotgrid/overview), [OLAP Client](http://helpjs.syncfusion.com/js/olapclient/overview), [OLAP Chart](http://helpjs.syncfusion.com/js/olapchart/overview), [OLAP Gauge](http://helpjs.syncfusion.com/js/olapgauge/overview))
 
 
