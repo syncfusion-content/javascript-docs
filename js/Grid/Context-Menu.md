@@ -41,7 +41,7 @@ documentation: ug
 
 ## Context Menu action
 
-To enable **Context Menu** in **Grid** use **enableContextMenu** property in **contextMenuSettings** at **Grid** initialize. The following code example illustrates you on how to set Context Menu.
+To enable **Context Menu** in **Grid** use `enableContextMenu` property in `contextMenuSettings` at **Grid** initialize. The following code example illustrates you on how to set Context Menu.
 
 {% highlight html %}
 

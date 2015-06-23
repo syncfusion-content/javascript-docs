@@ -25,7 +25,7 @@ documentation: ug
 
 ## Default Summary
 
-There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary rows using **showSummary** and **summaryRows** property in **ejGrid.**
+There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary rows using `showSummary` and `summaryRows` property in **ejGrid.**
 
 {% highlight html %}
 
@@ -66,7 +66,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Summary by String
 
-This property helps you to create custom summary formula for summary. The following code example is for custom summary using **Essential JavaScript**. Using **customSummaryValue** property to achieve custom summay for ejGrid.
+This property helps you to create custom summary formula for summary. The following code example is for custom summary using **Essential JavaScript**. Using `customSummaryValue` property to achieve custom summary for ejGrid.
 
 {% highlight html %}
 
@@ -198,7 +198,7 @@ The following output is displayed as a result of the above code example.
 
 ## Caption Summary
 
-This property is used to create Caption Summary column in **Grid**. **showCaptionSummary** property is used to show the caption summary in grid. The following code example is for Caption Summary.
+This property is used to create Caption Summary column in **Grid**. `showCaptionSummary` property is used to show the caption summary in grid. The following code example is for Caption Summary.
 
 {% highlight html %}
 

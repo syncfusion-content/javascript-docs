@@ -61,7 +61,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 
 
- Create the **ejGrid** widget as follows. In Columns definition, the **textAlign** property allows you to align text of the columns, the **width** property allows you to define the width of the columns and **format** property allows you to format the particular columns value.
+ Create the **ejGrid** widget as follows. In Columns definition, the `textAlign` property allows you to align text of the columns, the `width` property allows you to define the width of the columns and `format` property allows you to format the particular columns value.
 
 {% highlight html %}
 
@@ -94,7 +94,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 ##Set Sales Data
 
-You can pass the data to the **Grid**  either  locally or remotly. Assign the web service **URL** link to the **url** property of the **ejDataManager.** The **crossDomain** property **is enabled to retrieve data from another domain** and **offline** property allows you to load data on time from server.
+You can pass the data to the **Grid**  either  locally or remotly. Assign the web service **URL** link to the `url` property of the **ejDataManager.** The `crossDomain` property **is enabled to retrieve data from another domain** and `offline` property allows you to load data on time from server.
 
 {% highlight html %}
 
@@ -131,7 +131,7 @@ The following screenshot illustrates a **Grid** with sales data.
 
 ##Enable Paging
 
-**Paging** feature in **Grid** provides complete navigation support to easily switch between the pages, using the page bar available at the bottom of the **Grid** control. To enable **paging**, use **allowPaging** property of **Grid** as follows.
+**Paging** feature in **Grid** provides complete navigation support to easily switch between the pages, using the page bar available at the bottom of the **Grid** control. To enable **paging**, use `allowPaging` property of **Grid** as follows.
 
 {% highlight html %}
 
@@ -172,7 +172,7 @@ Use **allowPaging** to switch between pages.
 
 **Filtering** feature in **Grid** is used**to facilitate the extraction of a subset of records that meets certain criteria**. You can apply **Filter** to one or more columns. This feature is used to filter particular sales data to review details.
 
-To enable filtering, use **allowFiltering** property of **Grid** as follows.
+To enable filtering, use `allowFiltering` property of **Grid** as follows.
 
 {% highlight html %}
 
@@ -213,7 +213,7 @@ The following screenshot illustrates how to filter the sales data.
 
 The **Grouping** feature in **Grid** is used to consolidate **Grid** data into groups. **Grouping** allows the categorization of records based on specified columns. You can easily group a particular column by simply dragging the column to the upper portion of the **Grid**. The **Grid** data is automatically grouped when you drop a particular column.  In this example, **Grouping** feature is used to analyze the shipment details of products.
 
-To enable grouping, use **allowGrouping** property of **Grid** as follows.
+To enable grouping, use `allowGrouping` property of **Grid** as follows.
 
 {% highlight html %}
 
@@ -254,7 +254,7 @@ The following screenshot shows the analysis of sales data by grouping unit stock
 
 ##Enable Group Summary
 
-**Enable Group Summary** property allows you to summarize the **Grid** data into groups. **Grouping** allows the categorization of records based on specified columns. **Group summary** summarizes the data present in the group. In this example, Group summary is used to summarize freight data of grouped ship name category.
+`Enable Group Summary` property allows you to summarize the **Grid** data into groups. **Grouping** allows the categorization of records based on specified columns. **Group summary** summarizes the data present in the group. In this example, Group summary is used to summarize freight data of grouped ship name category.
 
 The following code example shows the option to enable group summary.
 

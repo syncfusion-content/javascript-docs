@@ -29,7 +29,7 @@ By default, the selection type is “**Single**”.
 
 **Row**
 
-By default, the selection mode of the grid is “**Row**”. This enables you to select the row in the grid. Refer to the following code example. Using **selectionMode** property in **selectionSettings** property to enable row selection.
+By default, the selection mode of the grid is “**Row**”. This enables you to select the row in the grid. Refer to the following code example. Using `selectionMode` property in `selectionSettings` property to enable row selection.
 
 {% highlight html %}
 
@@ -66,7 +66,7 @@ The following screenshot displays the result of the above code.
 
 **Cell**
 
-Cell selection can be enabled using the **selectionMode** property. This enables you to select a cell in the grid. Refer to the following code example.
+Cell selection can be enabled using the `selectionMode` property. This enables you to select a cell in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -103,7 +103,7 @@ The following screenshot displays the result of the above code.
 
 **Column**
 
-Column selection can be enabled using the **selectionMode** property. This enables you to select a particular column in the grid. Refer to the following code example.
+Column selection can be enabled using the `selectionMode` property. This enables you to select a particular column in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -140,7 +140,7 @@ The following screenshot displays the result of the above code.
 
 ### Multiple Selection
 
-Multiple selection can be enabled using **selectionType** property. This allows you to select more than one row, cell and column at a time.
+Multiple selection can be enabled using `selectionType` property. This allows you to select more than one row, cell and column at a time.
 
 #### Selection Modes
 
@@ -186,7 +186,7 @@ The following screenshot displays the result of the above code.
 
 **Cell**
 
-Cell selection can be enabled using the **selectionMode** property. This enables you to select a cell in the grid. Refer to the following code example.
+Cell selection can be enabled using the `selectionMode` property. This enables you to select a cell in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -226,7 +226,7 @@ The following screenshot displays the result of the above code.
 
 **Column**
 
-Column selection can be enabled using the selectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
+Column selection can be enabled using the `selectionMode` property. This enables you to select a particular column in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -266,7 +266,7 @@ The following screenshot displays the result of the above code.
 
 ## Enable All Modes of selection
 
-You can also enable all the three modes of selection using **selectionMode** property. Refer to the following code example.
+You can also enable all the three modes of selection using `selectionMode` property. Refer to the following code example.
 
 {% highlight html %}
 
@@ -303,7 +303,7 @@ The following screenshot displays the result of the above code.
 
 ## Enable toggle
 
-You can toggle the selection using the `enableToggle` property. This provides support to toggle selection based on the Boolean value specified to the property. By default the **enableToggle** property is set to disabled. Refer to the following code example.
+You can toggle the selection using the `enableToggle` property. This provides support to toggle selection based on the Boolean value specified to the property. By default the `enableToggle` property is set to disabled. Refer to the following code example.
 
 {% highlight html %}
 
@@ -394,7 +394,7 @@ In this section, you can learn how to get selected records from one **Grid** and
           // the datasource "window.employeeData" is referred from templatelocaldata.js
           dataSource: ej.DataManager(window.employeeData).executeLocal(ej.Query().take(5)),
           rowSelected: function (args) {
-              var employeeID = args.currentData.EmployeeID;
+              var employeeID = args.data.EmployeeID;
               var detaildata = ej.DataManager(window.gridData).executeLocal(ej.Query().where("EmployeeID", ej.FilterOperators.equal, employeeID, false).take(10));
               var gridObj = $("#DetailGrid").ejGrid("instance");
               gridObj.model.dataSource = ej.DataManager(detaildata.slice(0, 5));

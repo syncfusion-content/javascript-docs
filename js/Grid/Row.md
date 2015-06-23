@@ -11,7 +11,7 @@ documentation: ug
 
 ## Details Template
 
-**Details Template** feature provides a detailed view about additional information of each row. If you want to view the detailed information, you can expand a row.We are able to set the detail template content using **detailsTemplate** property.
+**Details Template** feature provides a detailed view about additional information of each row. If you want to view the detailed information, you can expand a row.We are able to set the detail template content using `detailsTemplate` property.
 
 {% highlight html %}
 
@@ -88,7 +88,7 @@ The following output is displayed as a result of the above code example.
 
 ## Row Template
 
-**Row template** is used to render your template in every row. It is used to place elements inside **Grid** rows. This feature makes it easier to customise **Grid** rows with **HTML** elements. We are able to set the detail template content using **rowTemplate** property.
+**Row template** is used to render your template in every row. It is used to place elements inside **Grid** rows. This feature makes it easier to customise **Grid** rows with **HTML** elements. We are able to set the detail template content using `rowTemplate` property.
 
 {% highlight html %}
 
@@ -166,7 +166,7 @@ The following output is displayed as a result of the above code example.
 
 ## Customize Hover and AltRow 
 
-**enableAltRow** and **enableRowHover** are graphical features in **Grid** that are used to enable alternate row color in **Grid** and enable hover effects while hovering over row cells. By default, these two features are enabled in **Grid**. In this section, you can learn how to cutomize alternative rows color and hover color in the **ejGrid** controls.
+`enableAltRow` and `enableRowHover` are graphical features in **Grid** that are used to enable alternate row color in **Grid** and enable hover effects while hovering over row cells. By default, these two features are enabled in **Grid**. In this section, you can learn how to cutomize alternative rows color and hover color in the **ejGrid** controls.
 
 {% highlight html %}
 

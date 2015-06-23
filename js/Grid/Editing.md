@@ -84,7 +84,7 @@ Essential Studio JavaScript Grid supports column edit type by using delegated co
 
 * **DropDownList** control for list of data.
 
-The edit type of every column can be customized using the **editType** property.
+The edit type of every column can be customized using the `editType` property.
 
 {% highlight html %}
 
@@ -168,7 +168,7 @@ By default, the datasource for Dropdown Edit Column is set by Grid Control from 
 
 ## Edit Template
 
-**Edit Template** feature is used to create a custom editor to edit column values. **Edit Template** has three functions. Using **ediTemplate** property we are able to achieve Edit Template feature.
+**Edit Template** feature is used to create a custom editor to edit column values. **Edit Template** has three functions. Using `ediTemplate` property we are able to achieve Edit Template feature.
 
 * **Create** – It is used to create the control at time of initialize
 
@@ -244,7 +244,7 @@ Essential Studio JavaScript Grid supports eight modes of editing feature in grid
 
 ### Normal Editing
 
-This feature allows you to edit various fields of a single record, simultaneously. The row goes to editable state. The following code example shows you how to set **editMode** as **Normal**.
+This feature allows you to edit various fields of a single record, simultaneously. The row goes to editable state. The following code example shows you how to set `editMode` as **Normal**.
 
 {% highlight html %}
 
@@ -387,7 +387,7 @@ The **External Form Edit Mode** helps you edit various data entries in the **Gri
 
 This is different from the **Dialog Editing** mode in that it allows you to see the other entries in the **Grid** while you are editing one.
 
-You can position the edit form either in the top-right corner or the bottom-left corner (by default) of the **Grid**. The following code example shows you how to set **editMode** as **External Form**.
+You can position the edit form either in the top-right corner or the bottom-left corner (by default) of the **Grid**. The following code example shows you how to set `editMode` as **External Form**.
 
 {% highlight html %}
 
@@ -446,7 +446,7 @@ You can also edit the fields that are not visible in the **Grid** using this tem
 
 #### Inline Template Form Editing
 
-In Inline Template, you can specify the template inside the script tag and select the type as text/template. Only then the HTML elements defined in the template will not be displayed in the browser. You can define the template as follows. Using inlineFormTemplateID we are able to set the form template for editing.
+In Inline Template, you can specify the template inside the script tag and select the type as text/template. Only then the HTML elements defined in the template will not be displayed in the browser. You can define the template as follows. Using `inlineFormTemplateID` we are able to set the form template for editing.
 
 {% highlight html %}
 
@@ -695,7 +695,7 @@ The following output is displayed as a result of the above code example.
 
 #### External Template Form Editing
 
-The above mentioned procedure applies to **ExternalTemplate** editing feature also. Use the given code example instead of setting inlineTemplateForm as editMode. Using **externalFormTemplateID** we are able to set external template for editing.
+The above mentioned procedure applies to **ExternalTemplate** editing feature also. Use the given code example instead of setting inlineTemplateForm as editMode. Using `externalFormTemplateID` we are able to set external template for editing.
 
 {% highlight js %}
 
@@ -726,7 +726,7 @@ The following screenshot shows External Template Form Editing.
 
 #### Dialog Template Editing
 
-The above mentioned procedure applies to **DialogTemplate** editing feature also. Use the given code example instead of setting for DialogTemplate as editMode. Using **dialogEditorTemplateID** property to set the dialog template for editing.
+The above mentioned procedure applies to **DialogTemplate** editing feature also. Use the given code example instead of setting for DialogTemplate as editMode. Using `dialogEditorTemplateID` property to set the dialog template for editing.
 
 {% highlight js %}
 
@@ -897,7 +897,7 @@ equalTo</td><td>
 </table>
 
 
-The following code example shows you how to include the jquery validation support for **Grid** while editing the records. We can set validation rules using **validationRules** property.
+The following code example shows you how to include the jquery validation support for **Grid** while editing the records. We can set validation rules using `validationRules` property.
 
 {% highlight html %}
  
@@ -1067,7 +1067,7 @@ _Parameters Table_
 
 ### URL Adaptor
 
-You can use the **UrlAdaptor** of ejDataManger when binding datasource from remote data. At initial load of **Grid**, using **URL** property of DataManager, data are fetched from remote data and binded to **Grid**. You can map **CRUD** operation in **Grid** to Server-Side Controller action using the properties “InsertURL”, “UpdateURL” and “RemoveURL”. We can set insert, update and remove url using ejDataManager properties **insertUrl,removeUrl** and **updateUrl.**
+You can use the **UrlAdaptor** of ejDataManger when binding datasource from remote data. At initial load of **Grid**, using **URL** property of DataManager, data are fetched from remote data and binded to **Grid**. You can map **CRUD** operation in **Grid** to Server-Side Controller action using the properties `InsertURL`, `UpdateURL` and `RemoveURL`. We can set insert, update and remove url using ejDataManager properties `insertUrl,removeUrl` and `updateUrl.`
 
 Also when you use **UrlAdaptor**, you need to return the data as **JSON** and the **JSON** object must contain field name as “result” with its value as dataSource and one more field name as “count” with its value as dataSource total records count.
 
@@ -1099,7 +1099,7 @@ Also when you use **UrlAdaptor**, you need to return the data as **JSON** and th
 
 ### remoteSave Adaptor
 
-The **remoteSaveAdaptor** of DataManager can be used when you bind local data to **Grid** datasource. **CRUD** operations in **Grid** local data can be mapped to server-side controller using **CRUD URL’s** “InsertUrl”, “UpdateUrl” and “RemoveUrl”. We can set insert, update and remove url using ejDataManager properties **insertUrl, removeUrl** and **updateUrl.**
+The **remoteSaveAdaptor** of DataManager can be used when you bind local data to **Grid** datasource. **CRUD** operations in **Grid** local data can be mapped to server-side controller using **CRUD URL’s** `InsertUrl`, `UpdateUrl` and `RemoveUrl`. We can set insert, update and remove url using ejDataManager properties `insertUrl, removeUrl` and `updateUrl.`
 
 When you use **remoteSaveAdaptor**, server-side post back occurs only for **CRUD** actions in **Grid**. Rest of the **Grid** actions (paging, sorting, filtering, etc.,) can be handled at client-side itself.
 
@@ -1290,7 +1290,7 @@ The output for the above Grid creation with editing options code example is as f
 
 Adding new row position allows you to add new row in the top or bottom position that depends upon the requirement. 
 
-ejGrid supports two types of rowposition. Using rowPosition property to assign row position for editing.They are
+ejGrid supports two types of rowposition. Using `rowPosition` property to assign row position for editing.They are
 
 * Top
 
@@ -1334,7 +1334,7 @@ _Adding new row position_
 
 ## Render grid with add new row
 
-In **ejGrid,** there is an option to show the newly add row at the bottom or top of the Grid content during **Grid Initialize** that is achieved by using **showAddNewRow** property of **editSettings** in **Grid**. The default value is **false**.
+In **ejGrid,** there is an option to show the newly add row at the bottom or top of the Grid content during **Grid Initialize** that is achieved by using `showAddNewRow` property of `editSettings` in **Grid**. The default value is **false**.
 
 This property helps you to add a new row dynamically and save the record either top or bottom of the **Grid**.
 

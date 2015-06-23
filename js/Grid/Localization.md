@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-The **Localization** concept in **ejGrid** supports switching the control language with various cultures. The **Locale** property in **ejGrid** is a string type used to define the culture code that has been declared by **JQuery globalize script** file. The default value for **Locale** in **ejGrid** is **en-US**.
+The **Localization** concept in **ejGrid** supports switching the control language with various cultures. The `Locale` property in **ejGrid** is a string type used to define the culture code that has been declared by **JQuery globalize script** file. The default value for **Locale** in **ejGrid** is **en-US**.
 
 The following two script files are necessary to perform **Localization** in **ejGrid**.
 

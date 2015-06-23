@@ -2543,7 +2543,7 @@ rowSelected<br/>
 &nbsp;&nbsp;- &nbsp; args.currentRowIndex<br/>
 &nbsp;&nbsp;- &nbsp; args.currrentRow<br/>
 &nbsp;&nbsp;- &nbsp; args.currentData </td><td>
-rowSelected<br>
+rowSelected<br/>
 &nbsp;&nbsp;- &nbsp; args. rowIndex<br/>
 &nbsp;&nbsp;- &nbsp; args. rowIndex<br/>
 &nbsp;&nbsp;- &nbsp; args. data </td><td>

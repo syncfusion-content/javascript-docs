@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering
 
-Filtering is used to filter particular or related records in **Grid** to review details of records. To enable filtering behavior in **Grid** you can add **allowFiltering** property at **Grid** initialize. There are three types of filtering features in grid. They are
+Filtering is used to filter particular or related records in **Grid** to review details of records. To enable filtering behavior in **Grid** you can add `allowFiltering` property at **Grid** initialize. There are three types of filtering features in grid. They are
 
 * Filter menu
 
@@ -122,7 +122,7 @@ The following output is displayed as a result of the above code example.
 
 ## Excel styled menu
 
-You can enable the Excel like filter menu by setting the **filterType** as “excel” of the **filterSettings** property. The filter menu is displayed after clicking the filter icon in the column headers. 
+You can enable the Excel like filter menu by setting the `filterType` as “excel” of the `filterSettings` property. The filter menu is displayed after clicking the filter icon in the column headers. 
 
 The filter menu contains options such as Sorting, Clear filter, submenu for the advanced filter options, 
 
@@ -134,7 +134,7 @@ The output of the excel like filterin as shown as below.
 
 {% include image.html url="/js/Grid/Filtering_images/Filtering_img3.png"%}
 
-A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the **maxFilterChoices** property of the **filterSettings**. 
+A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the `maxFilterChoices` property of the `filterSettings`. 
 
 ### Advanced Filter
 

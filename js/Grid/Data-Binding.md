@@ -82,7 +82,7 @@ The following output is the result of the above code example.
 
 ### Load at once
 
-Through this **load at once** technique, you can load all remote data from the server to the **Grid** and process records in client-side. The following code example shows **load at once** with **Grid.** Loaf at once feature was enabled by setting **offline** property as true in ejDataManager
+Through this **load at once** technique, you can load all remote data from the server to the **Grid** and process records in client-side. The following code example shows **load at once** with **Grid.** Loaf at once feature was enabled by setting `offline` property as true in ejDataManager
 
 {% highlight html %}
 
@@ -181,7 +181,7 @@ The following screenshot is the result of the above code example.
 
 ### HTTP additional parameters
 
-In this section, you can learn how to customize or add an extra parameter for **HTTP** request. You can add parameter to **oDataserviceURL** using the **Query** property in **Grid**. **DataManager** uses this **Query** internally in **Grid**.
+In this section, you can learn how to customize or add an extra parameter for **HTTP** request. You can add parameter to **oDataserviceURL** using the `Query` property in **Grid**. **DataManager** uses this `Query` internally in **Grid**.
 
 {% highlight html %}
 

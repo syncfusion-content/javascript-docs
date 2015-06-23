@@ -11,7 +11,7 @@ documentation: ug
 
 ## Default Sorting
 
-Sorting is a basic technique in **ejGrid**. It helps you view **Grid** records in ascending or descending, based on a particular column. If you want to enable sorting in **Grid** then use **allowSorting** property at **Grid** initialize. By default, sorting operation can be performed by **user interaction** (**UI**) on **Grid** header.
+Sorting is a basic technique in **ejGrid**. It helps you view **Grid** records in ascending or descending, based on a particular column. If you want to enable sorting in **Grid** then use `allowSorting` property at **Grid** initialize. By default, sorting operation can be performed by **user interaction** (**UI**) on **Grid** header.
 
 {% highlight html %}
 
@@ -35,7 +35,7 @@ The following output is displayed as a result of the above code example.
 
 {% include image.html url="/js/Grid/Sorting_images/Sorting_img1.png"%}
 
-> _**Note**: EJGrid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use allowMultiSorting in Grid._
+> _**Note**: EJGrid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use `allowMultiSorting` in Grid._
 
 ## External Sorting
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Paging
 
-Paging is a powerful technique in **Grid** that is used to navigate from one page to another. Using this pager, you can implement load on demand concept that loads only required data to **Grid**. To enable paging in **Grid** set **allowPaging** as **True** at **Grid Initialize**.
+Paging is a powerful technique in **Grid** that is used to navigate from one page to another. Using this pager, you can implement load on demand concept that loads only required data to **Grid**. To enable paging in **Grid** set `allowPaging` as **True** at **Grid Initialize**.
 
 ## Default Paging
 
-When the **allowPaging** property is set as **True**, the properties in the **pagesettings** take the following default values.
+When the `allowPaging` property is set as **True**, the properties in the `pagesettings` take the following default values.
 
 * pageSize-12
 
@@ -92,7 +92,7 @@ The following output is displayed as a result of the above code example.
 
 ## Pager Templates
 
-**Pager Templates** feature provide support to render a specific custom template to a **Grid pager** using **enableTemplates** and **template** properties of **pageSettings**. **showDefaults** property is used to show/hide default pager for **Grid**.
+**Pager Templates** feature provide support to render a specific custom template to a **Grid pager** using `enableTemplates` and `template` properties of `pageSettings`. `showDefaults` property is used to show/hide default pager for **Grid**.
 
 {% highlight html %}
 

@@ -132,7 +132,7 @@ The following screenshot is the result of the above code example.
 
 ## Cache Adaptor
 
-Cache Adaptor is a technique used to cache multiple page data by using the property enableCaching. You can provide the number of pages that is required to cache in single request using **cachingPageSize** property. It enables you to reduce multiple request to server. You can use any type of adaptor with multiple page caching by using cache adaptor. The following code illustrates how to create cache adaptor and use it with grid.
+Cache Adaptor is a technique used to cache multiple page data by using the property `enableCaching`. You can provide the number of pages that is required to cache in single request using `cachingPageSize` property. It enables you to reduce multiple request to server. You can use any type of adaptor with multiple page caching by using cache adaptor. The following code illustrates how to create cache adaptor and use it with grid.
 
 {% highlight html %}
 
