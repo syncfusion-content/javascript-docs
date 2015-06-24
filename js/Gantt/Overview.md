@@ -14,17 +14,11 @@ The Essential JavaScript Gantt control is designed to visualize and edit the pro
 **Key Features**
 
 * Sorting
-
 * Editing
-
 * Task relationship
-
 * Stripline
-
 * Baseline
-
 * Localization   
-
 * Resource display
 
 
