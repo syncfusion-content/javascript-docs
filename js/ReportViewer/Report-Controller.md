@@ -9,7 +9,7 @@ documentation: ug
 
 # Report Controller
 
-The **ReportViewer** uses **Web API** services to process the report file, process the request from control, and to return the processed data to control. The **Syncfusion.EJ.ReportViewer** assembly has helper APIs to define the service actions and process the service requests. 
+The **ReportViewer** uses **Web API** services to process the report file, process the request from control and to return the processed data to control. The **Syncfusion.EJ.ReportViewer** assembly has helper APIs to define the service actions and process the service requests. 
 
 ##IReportController##
 
@@ -63,7 +63,7 @@ Processes the report request and returns the result.</td></tr>
 
 
 public class ReportsController : ApiController, IReportController
-    {
+{
         /// <summary>
         /// Action (HttpGet) method for getting resource for report.
         /// </summary>
@@ -105,7 +105,7 @@ public class ReportsController : ApiController, IReportController
             //Processes the report request and returns the result.
             return ReportHelper.ProcessReport(jsonData, this);
         }
-    }
+}
 
 
 {% endhighlight %}

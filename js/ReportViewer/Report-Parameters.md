@@ -9,7 +9,7 @@ documentation: ug
 
 # Report Parameters
 
-The **ReportViewer** has support to add report parameters to **ReportViewer** at runtime. The **ReportViewer** has **Parameters** property that is the list of **ReportParameter** type to add collection of report parameters to it. You can add report parameters either through **ReportViewer** model when creating **ReportViewer** control or through **Web API**.
+The **ReportViewer** has support to add report parameters to **ReportViewer** at runtime. The **ReportViewer** has `Parameters` property that is the list of **ReportParameter** type to add collection of report parameters to it. You can add report parameters either through **ReportViewer** model when creating **ReportViewer** control or through **Web API**.
 
 The following code example illustrates how to add **ReportParameter** at control creation.
 
@@ -39,21 +39,20 @@ The following code example illustrates how to add **ReportParameter** in **Web A
 {% highlight c# %}
 
 
-
-    public class ReportsController : ApiController, IReportController
+public class ReportsController : ApiController, IReportController
+{
+    /// <summary>
+    /// Report Initialization method that is triggered when report begins to be processed.
+    /// </summary>
+    /// <param name="reportOptions">The ReportViewer options.</param>
+    public void OnInitReportOptions(ReportViewerOptions reportOptions)
     {
-        /// <summary>
-        /// Report Initialization method that is triggered when report begins to be processed.
-        /// </summary>
-        /// <param name="reportOptions">The ReportViewer options.</param>
-        public void OnInitReportOptions(ReportViewerOptions reportOptions)
-        {
-            List<ReportParameter> parameters = new List<ReportParameter>();
-            parameters.Add(new ReportParameter() { Name = "InvoiceID", Labels = new List<string>() { "InvoiceID" }, Values = new List<string>() { "10250" } });
-            reportOptions.ReportModel.Parameters = parameters;
-            throw new NotImplementedException();
-        }        
-    }
+        List<ReportParameter> parameters = new List<ReportParameter>();
+        parameters.Add(new ReportParameter() { Name = "InvoiceID", Labels = new List<string>() { "InvoiceID" }, Values = new List<string>() { "10250" } });
+        reportOptions.ReportModel.Parameters = parameters;
+        throw new NotImplementedException();
+    }        
+}
 
 
 {% endhighlight %}
