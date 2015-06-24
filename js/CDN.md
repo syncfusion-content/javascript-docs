@@ -297,20 +297,13 @@ One of the major risk with CDN links is that – sometimes it may go down due to
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
-
     // CDN LINK references
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-
     <script type="text/javascript">
 
         if (typeof jQuery == "undefined") { // If CDN fails, jQuery returns undefined
@@ -326,28 +319,22 @@ One of the major risk with CDN links is that – sometimes it may go down due to
 
             // StyleSheet reference from the local system path
             document.write(decodeURIComponent('%3Clink rel="stylesheet" href="Content/ej/web/default-theme/ej.web.all.min.css" %3C/%3E'));
-
             // Script reference from the local system path
             document.write(decodeURIComponent('%3Cscript src="Scripts/ej/ej.web.all.min.js" %3E%3C/script%3E'));
         }
-
     </script> 
 </head>
 <body> 
-
-<!--Container for ejDatePicker widget-->
-<input id="startDate" type="text" />
-
-<script type="text/javascript">
+    <!--Container for ejDatePicker widget-->
+    <input id="startDate" type="text" />
+    <script type="text/javascript">
         $(function () {
             // initialization
             $("#startDate").ejDatePicker();
         });
-</script>
+    </script>
 </body>
 </html>
-
-
 
 {% endhighlight %}
 

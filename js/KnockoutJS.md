@@ -83,9 +83,9 @@ Here, the below sample code defines how to define the **observable** variable wi
 
 {% highlight js %}
 
-                       window.viewModel = {
-            dateValue: ko.observable(new Date(2014, 05, 15))
-            };
+window.viewModel = {
+   dateValue: ko.observable(new Date(2014, 05, 15))
+};
 
 {% endhighlight %}
 
@@ -95,14 +95,14 @@ The **data-bind** attribute which we have defined in the previous section cannot
 
 {% highlight js %}
 
-                        window.viewModel = {
-                value: ko.observable(new Date(2014, 05, 15))
-            };
+window.viewModel = {
+    value: ko.observable(new Date(2014, 05, 15))
+};
             
-            $(function () {
-                // declaration
-                ko.applyBindings(viewModel);
-            });                        
+$(function () {
+    // declaration
+    ko.applyBindings(viewModel);
+});                        
 
 {% endhighlight %}
 
@@ -125,7 +125,7 @@ Here, in the above code, the **value** property of the DatePicker widget is assi
 
 ### Two way binding
 
-It links the data model to an UI, thus making a smooth synchronization between them. Here, the **ko.observable** variable defined in the script section is bound to the widget’s properties instead of direct values, so that both can have a good data synchronization. In general, we could have more than one property bound to the same variable. **The properties of all the Syncfusion widgets that supports two-way data-binding are depicted [here](http://helpjs.syncfusion.com/js/introduction/angularjs#two-way-binding-properties)**. 
+It links the data model to an UI, thus making a smooth synchronization between them. Here, the **ko.observable** variable defined in the script section is bound to the widget’s properties instead of direct values, so that both can have a good data synchronization. In general, we could have more than one property bound to the same variable. **The properties of all the Syncfusion widgets that supports two-way data-binding are depicted [here](http://helpjs.syncfusion.com/js/angularjs#two-way-binding-properties)**. 
 
 The two-way data binding has been demonstrated in the below code with two DatePicker controls sharing the same **ko.observable** variable,
 
