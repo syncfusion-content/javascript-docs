@@ -9,7 +9,7 @@ documentation: ug
 
 # SSRS Configuration
 
-The **ReportViewer** has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to **ReportViewer’s****reportServerUrl** property and set the relative path of RDL/RDLC file in SSRS to **ReportViewer’s****reportPath** property. 
+The **ReportViewer** has support to load RDL/RDLC reports from SSRS server. You have to set your SSRS server URL to **ReportViewer’s** `reportServerUrl` property and set the relative path of RDL/RDLC file in SSRS to **ReportViewer’s** `reportPath` property. 
 
 {% highlight js %}
 
@@ -35,17 +35,16 @@ The **Network credentials** can be given at **Web****API** Controller to connect
 {% highlight c# %}
 
 
-
-        /// <summary>
-        /// Report Initialization method that is triggered when report begins to process.
-        /// </summary>
-        /// <param name="reportOptions">The ReportViewer options.</param>
-        public void OnInitReportOptions(ReportViewerOptions reportOptions)
-        {
-           //Adds SSRS Server and Database Credentials here.
-            reportOptions.ReportModel.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
-            reportOptions.ReportModel.DataSourceCredentials.Add(new DataSourceCredentials("AdventureWorks", "ssrs1", "RDLReport1"));
-        }
+/// <summary>
+/// Report Initialization method that is triggered when report begins to process.
+/// </summary>
+/// <param name="reportOptions">The ReportViewer options.</param>
+public void OnInitReportOptions(ReportViewerOptions reportOptions)
+{
+    //Adds SSRS Server and Database Credentials here.
+    reportOptions.ReportModel.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
+    reportOptions.ReportModel.DataSourceCredentials.Add(new DataSourceCredentials("AdventureWorks", "ssrs1", "RDLReport1"));
+}
 
 
 {% endhighlight %}
