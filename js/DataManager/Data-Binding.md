@@ -119,13 +119,13 @@ The result of the above code example is illustrated as follows.
 
 The result of the above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img2.png" %}__
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img2.png" %}
 
 ##OData V4
 
 The OData v4 is an improved version of OData protocols and the **DataManager** can also retrieve and consume OData v4 services.  For more details on OData v4 Services, refer the [odata documentation](http://www.odata.org/documentation/odata-version-4-0/).
 
-You can refer to the following code example for consuming OData v4 services and bind the result to the simple **HTML** table. In the the following code, **crossDomain** is enabled to make cross domain request.
+You can refer to the following code example for consuming OData v4 services and bind the result to the simple **HTML** table. In the the following code, `crossDomain` is enabled to make cross domain request.
 
 {% highlight html %}
 
@@ -357,9 +357,9 @@ The result and the request-response to the controller is illustrated as follows.
 
 ##Offline Mode
 
-The offline mode is one of the useful feature of **DataManager** that can be enabled by setting **offline** property of the datamanager as **true.** With offline as true, the **DataManager** requests the server only once and further data manipulation operation can be done at client side itself.
+The offline mode is one of the useful feature of **DataManager** that can be enabled by setting `offline` property of the datamanager as **true.** With offline as true, the **DataManager** requests the server only once and further data manipulation operation can be done at client side itself.
 
-In the following code example, the offline property of the **DataManager** is set as true.
+In the following code example, the `offline` property of the **DataManager** is set as true.
 
 
 {% highlight html %}
@@ -510,7 +510,7 @@ The request and the response for the above code is send as follows.
 
 You can add custom request headers using **DataManager** and the headers can be added to the request headers in two ways that is illustrated in the following code example.
 
-You can add custom request headers to every request made by the **DataManager** using the **headers** property. Refer to the following code example for setting the custom request headers using the **headers** property.
+You can add custom request headers to every request made by the **DataManager** using the `headers` property. Refer to the following code example for setting the custom request headers using the `headers` property.
 
 
 
@@ -607,7 +607,7 @@ The above method generates the request header with custom header as follows.
 
 ##Cross domain & JSONP
 
-The **DataManager** contains support for creating cross domain request, you can achieve this by using **crossDomain** and **jsonp** property of the **DataManager**. The following code example illustrate on how to create cross domain request. 
+The **DataManager** contains support for creating cross domain request, you can achieve this by using `crossDomain` and `jsonp` property of the **DataManager**. The following code example illustrate on how to create cross domain request. 
 
 
 {% highlight html %}

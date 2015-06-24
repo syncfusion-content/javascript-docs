@@ -199,7 +199,7 @@ Result of above code example is illustrated as follows.
 
 ##Skip
 
-The skip query is used to skip some number of records.
+The `skip` query is used to skip some number of records.
 
 {% highlight html %}
 
@@ -256,7 +256,7 @@ Result of the above code example is illustrated as follows.
 
 ##Take
 
-The take query is used to get some certain number of records from the data source of the **DataManager**.
+The `take` query is used to get some certain number of records from the data source of the **DataManager**.
 
 {% highlight html %}
 
@@ -310,7 +310,7 @@ Result of the above code example is illustrated as follows.
 
 ##RequiresCount
 
-The **requiresCount** query is used to get the count of the total number of records in the data source of the **DataManager**.
+The `requiresCount` query is used to get the count of the total number of records in the data source of the **DataManager**.
 
 {% highlight html %}
 
@@ -368,7 +368,7 @@ Result of the above code example is illustrated as follows.
 
 ##Range
 
-The range query is used to get some particular range of records from the data source of the **DataManager**.
+The `range` query is used to get some particular range of records from the data source of the **DataManager**.
 
 {% highlight html %}
 

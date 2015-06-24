@@ -12,9 +12,7 @@ documentation: ug
 Filtering is used to filter particular or related records in **Grid** to review details of records. To enable filtering behavior in **Grid** you can add `allowFiltering` property at **Grid** initialize. There are three types of filtering features in grid. They are
 
 * Filter menu
-
 * Filter Bar
-
 * Excel styled menu
 
 ## Filter Menu 
@@ -24,11 +22,8 @@ After you enable **Filter Menu** in **Grid**, it shows filter menu to filter rec
 **Filter menu types**
 
 * String menu filtering 
-
 * Numeric menu filtering
-
 * Date menu filtering
-
 * Boolean menu filtering
 
 Filter menus are a good **UI** based filtering option. It visibly denotes filtering option and is flexible to filter records. In String menu filtering, **ejAutoComplete** is used as default control to filter; in Numeric menu filtering, **ejNumericTextbox** is used as default control to filter. In Date menu filtering, **ejDatePicker** control is used as default control to filter and in Boolean menu filtering, **ejCheckBox** is used for filtering. 
@@ -184,9 +179,9 @@ _List of Column type and Filter operators_
 
 <table>
 <tr>
-<td>
-<b>Column type</b></td><td>
-<b>Filter operators</b></td></tr>
+<th>
+<b>Column type</b></th><th>
+<b>Filter operators</b></th></tr>
 <tr>
 <td>
 Number</td><td>

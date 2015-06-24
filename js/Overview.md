@@ -143,7 +143,7 @@ Reporting</td><td colspan = "3">
 <td>
 Others</td><td>
 <a href="http://helpjs.syncfusion.com/js/calculate/overview">Calculate</a></td><td colspan = "2">
-DataManager</td></tr>
+<a href="http://helpjs.syncfusion.com/js/DataManager/overview">DataManager</td></tr>
 </table>
 
 Essential JS UI controls have **inbuilt frameworks** for databinding, [theming](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components), [localization](helpjs.syncfusion.com/js/localization) and [accessibility](http://helpjs.syncfusion.com/js/accessibility). The components are also compatible with other popular frameworks such as [AngularJS](http://helpjs.syncfusion.com/js/angularjs), [KnockoutJS](http://helpjs.syncfusion.com/js/knockoutjs), [TypeScript](http://helpjs.syncfusion.com/js/typescript), and RequireJS.

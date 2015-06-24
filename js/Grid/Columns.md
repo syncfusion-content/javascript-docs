@@ -305,7 +305,7 @@ _Cell Merging_
 
 ## AutoWrap Column Cells
 
-AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. `autoTextWrap` property allowed to enable auto wrap feature.
+AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. `allowTextWrap` property allowed to enable auto wrap feature.
 
 {% highlight html %}
 
@@ -427,7 +427,7 @@ The **Stacked Header** feature allows additional header rows that span across th
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img12.png"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img12.png" Caption="Stacked Header" % }
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img13.png"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img13.png" Caption="Stacked Header with Grouping support"%}
 

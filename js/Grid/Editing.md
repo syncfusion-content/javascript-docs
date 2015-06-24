@@ -16,13 +16,9 @@ documentation: ug
 **Essential Studio JavaScript Grid** provides toolbar support and it can be customized. It contains the following built-in toolbar items: 
 
 * Add
-
 * Edit
-
 * Delete
-
 * Update
-
 * Cancel
 
 
@@ -73,15 +69,10 @@ The following output is displayed as a result of the above code example.
 Essential Studio JavaScript Grid supports column edit type by using delegated controls for specific data types. They are:
 
 * **CheckBox** control for boolean data type.
-
 * **NumericTextBox** control for integers, double, and decimal types.
-
 * **InputTextBox** control for string data types.
-
 * **DatePicker** control for date data.
-
 * **DateTimePicker** control for date-time data.
-
 * **DropDownList** control for list of data.
 
 The edit type of every column can be customized using the `editType` property.
@@ -171,9 +162,7 @@ By default, the datasource for Dropdown Edit Column is set by Grid Control from 
 **Edit Template** feature is used to create a custom editor to edit column values. **Edit Template** has three functions. Using `ediTemplate` property we are able to achieve Edit Template feature.
 
 * **Create** – It is used to create the control at time of initialize
-
 * **Read** –  It is used to read the input value at time of save
-
 * **Write** – It is used to assign the value to control at time of editing
 
 The following code example is for **Edit Template.**
@@ -227,19 +216,12 @@ The forllowing screen shot showed the out put of the above code snippet.
 Essential Studio JavaScript Grid supports eight modes of editing feature in grid. They are:
 
 * Normal row editing
-
 * Inline form editing
-
 * Inline template form editing
-
 * Dialog editing
-
 * Dialog template form editing
-
 * External form editing
-
 * External template form editing
-
 * Batch editing
 
 ### Normal Editing
@@ -417,7 +399,7 @@ You can position the edit form either in the top-right corner or the bottom-left
               { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
               { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
               { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-              { field: "Verified", headerText: "Verified", editType: ej.Grid.editingType.Boolean }
+              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
           ]
       });
   });
@@ -439,9 +421,7 @@ You can edit any of the fields pertaining to a single record of data and apply i
 You can also edit the fields that are not visible in the **Grid** using this template. You are provided with three template editing support in **Grid**.
 
 * Inline template form editing
-
 * Dialog template form editing
-
 * External template form editing
 
 #### Inline Template Form Editing
@@ -827,9 +807,9 @@ _List of jquery validation methods_
 
 <table>
 <tr>
-<td>
-<b>Rules</b></td><td>
-<b>Description</b></td></tr>
+<th>
+<b>Rules</b></th><th>
+<b>Description</b></th></tr>
 <tr>
 <td>
 Required</td><td>
@@ -996,7 +976,6 @@ The following output is displayed as a result of the above code example.
 The **Server-Side CRUD** operation can be performed by using the following adaptor methods in **ejGrid**.
 
 1. Url Adaptor
-
 2. RemoteSaveAdaptor
 
 The **Server-Side** function is declared with the following parameters for each editing functionality.
@@ -1005,15 +984,15 @@ _Parameters Table_
 
 <table>
    <tr>
-      <td>
+      <th>
          <b>Action</b>
-      </td>
-      <td>
+      </th>
+      <th>
          <b>Parameter Name</b>
-      </td>
-      <td>
+      </th>
+      <th>
          <b>Example</b>
-      </td>
+      </th>
    </tr>
    <tr>
       <td rowspan = "2">
@@ -1211,15 +1190,15 @@ public class Northwnd : DataService<NORTHWNDEntities>
 
 {% highlight c# %}
 
-public static void InitializeService(DataServiceConfiguration config)
-        {
-            // TODO: Set rules to indicate which entity sets and service operations are visible, updatable, etc.
-            // Examples:
-            // config.SetEntitySetAccessRule("MyEntityset", EntitySetRights.AllRead);
-            // config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
-            config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
-            **config.SetEntitySetAccessRule("*", EntitySetRights.All);**
-        }
+public static void InitializeService(DataServiceConfiguration config) 
+    {
+	// TODO: Set rules to indicate which entity sets and service operations are visible, updatable, etc.
+	// Examples:
+	// config.SetEntitySetAccessRule("MyEntityset", EntitySetRights.AllRead);
+	// config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
+	config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
+	config.SetEntitySetAccessRule("*", EntitySetRights.All);
+}
 
 
 {% endhighlight %}
@@ -1293,7 +1272,6 @@ Adding new row position allows you to add new row in the top or bottom position 
 ejGrid supports two types of rowposition. Using `rowPosition` property to assign row position for editing.They are
 
 * Top
-
 * Bottom
 
 The following code example illustrates you how to set rowPosition.

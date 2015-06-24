@@ -108,7 +108,7 @@ Result of the above code example is illustrated as follows.
 
 ##Insert
 
-The insert method of the data manager is used to add a new record to the table. The **JSON** data passed as a parameter to the insert method that is inserted to the data source of the data manager.
+The `insert` method of the data manager is used to add a new record to the table. The **JSON** data passed as a parameter to the insert method that is inserted to the data source of the data manager.
 
 
 
@@ -162,7 +162,7 @@ Result of the above code example is illustrated as follows.
 
 ##Update
 
-The update method is used to update the modified changes made to a record in the data source of the **DataManager**.
+The `update` method is used to update the modified changes made to a record in the data source of the **DataManager**.
 
 {% highlight html %}
 
@@ -214,7 +214,7 @@ Result of the above code example is illustrated as follows.
 
 ##Remove
 
-The “remove” method is used to delete a record from the data source of the **DataManager**.
+The `remove` method is used to delete a record from the data source of the **DataManager**.
 
 {% highlight html %}
 

@@ -12,11 +12,8 @@ documentation: ug
 **DataManager** consists of three concepts, commonly called as **adaptors** that are used to manipulate data. There are four types of adaptors in **DataManager**. They are
 
 * **JSON Adaptor**
-
 * **OData Adaptor**
-
 * **Custom Adaptor**
-
 * **Cache Adaptor**
 
 ## JSON Adaptor
@@ -147,7 +144,7 @@ Cache Adaptor is a technique used to cache multiple page data by using the prope
       });
       $("#Grid").ejGrid({
           dataSource: dataManger,
-          columns: ["OrderID ", " CustomerID ", " EmployeeID ", " Freight", " ShipCity"]
+          columns: ["OrderID", "CustomerID", "EmployeeID", "Freight", "ShipCity"]
       });
   });
 </script>
@@ -161,5 +158,4 @@ The following screenshot is the result of the above code example.
 
 {% include image.html url="/js/Grid/Data-Adaptors_images/Data-Adaptors_img4.png"%}
 
-_Cache Adaptor_
 

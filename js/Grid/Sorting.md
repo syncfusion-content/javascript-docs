@@ -35,7 +35,7 @@ The following output is displayed as a result of the above code example.
 
 {% include image.html url="/js/Grid/Sorting_images/Sorting_img1.png"%}
 
-> _**Note**: EJGrid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use `allowMultiSorting` in Grid._
+> _**Note**: EJGrid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use allowMultiSorting in Grid._
 
 ## External Sorting
 

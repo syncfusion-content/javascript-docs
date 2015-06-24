@@ -13,7 +13,7 @@ documentation: ug
 
 ##Select
 
-The **“select”** query of the data manager is used to select only some particular fields or columns from the data source. The following code example illustrates on how to select only particular fields using the select query.
+The `select` query of the data manager is used to select only some particular fields or columns from the data source. The following code example illustrates on how to select only particular fields using the select query.
 
 
 {% highlight html %}
@@ -69,7 +69,7 @@ Result of the above code example is illustrated as follows.
 
 ##From
 
-The **“from”** query of the data manager is used to select the table from where the data is retrieved and bound to the table. The following code example illustrates on how to use the “**from**” query.
+The `from` query of the data manager is used to select the table from where the data is retrieved and bound to the table. The following code example illustrates on how to use the `from` query.
 
 
 
@@ -124,7 +124,7 @@ Result of the above code example is illustrated as follows.
 
 ##Clone
 
-The **“clone”** query of the data manager is used to duplicate the query. The following code example illustrates on how to clone a query.
+The `clone` query of the data manager is used to duplicate the query. The following code example illustrates on how to `clone` a query.
 
 
 
@@ -183,7 +183,7 @@ Result of the above code example is illustrated as follows.
 
 ##Expand
 
-The “expand” query of the data manager is used to perform complex data binding.
+The `expand` query of the data manager is used to perform complex data binding.
 
 
 {% highlight html %}
