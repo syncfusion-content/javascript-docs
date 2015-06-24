@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-# Unobtrusive Support
+# Unobtrusive
 
 Many uncertainties and difficulties are involved in a usual **JavaScript programming** environment like - some of the browsers may ignore the scripts completely or partially due to its complexity, the users might sometimes turn off the scripts in their browsers for security reasons and some may not understand it and so on. To overcome all such inconveniences, [Unobtrusive JavaScript](http://www.w3.org/wiki/The_principles_of_unobtrusive_JavaScript) support has been introduced in order to make it easier for the users to create all our Syncfusion components with basic level HTML tag-like structure. 
 
@@ -51,7 +51,7 @@ Refer the **ej.unobtrusive.min.js** file in your application along with the othe
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
@@ -60,14 +60,11 @@ Refer the **ej.unobtrusive.min.js** file in your application along with the othe
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
-</head>
-<body> 
-
-<!--DatePicker Control creation with data-role-->
-<input id="myDatePicker" data-role="ejdatepicker" data-ej-value="05/07/2015" />
-
-</body>
-
+  </head>
+  <body> 
+    <!--DatePicker Control creation with data-role-->
+    <input id="myDatePicker" data-role="ejdatepicker" data-ej-value="05/07/2015" />
+  </body>
 </html>    
 
 {% endhighlight %}
@@ -76,7 +73,7 @@ Refer the **ej.unobtrusive.min.js** file in your application along with the othe
 >   The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.
 
 The output of the above code will look as the one shown below with the value set to the given date,
-{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img1.png" %}
+{% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img1.png" %}
 
 ## EJ role
 
@@ -110,7 +107,7 @@ An important thing to be noted while using EJ role is that, you need to add the 
 >   Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)
 
 The output of the above code will look as the one shown below with the value set to the given date,
-{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img2.png" %}
+{% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img2.png" %}
 
 ## Directives
 
@@ -144,7 +141,7 @@ While making use of directives, you need to add the **data-directive** attribute
 >   Also, you can notice here that the HTML tag name is replaced by the control name to be created.
 
 The output of the above code will look as the one shown below with the value set to the given date,
-{% include image.html url="/js/Introduction/Unobtrusive-Support_images/Unobtrusive-Support_img3.png" %}
+{% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img3.png" %}
 
 The unobtrusive support can be easily achieved with the above specified 3 types of control initialization methods and all the options (properties) available within the Syncfusion controls can be easily assigned with its required values in an unobtrusive way. Thus, the control creation can be entirely coded in plain HTML with this unobtrusive support, by maintaining the scripts and css references separately.
 
