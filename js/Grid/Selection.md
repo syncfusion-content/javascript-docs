@@ -29,7 +29,7 @@ By default, the selection type is “**Single**”.
 
 **Row**
 
-By default, the selection mode of the grid is “**Row**”. This enables you to select the row in the grid. Refer to the following code example. Using **selectionMode** property in **selectionSettings** property to enable row selection.
+By default, the selection mode of the grid is “**Row**”. This enables you to select the row in the grid. Refer to the following code example. Using `selectionMode` property in `selectionSettings` property to enable row selection.
 
 {% highlight html %}
 
@@ -62,11 +62,11 @@ By default, the selection mode of the grid is “**Row**”. This enables you to
 
 The following screenshot displays the result of the above code.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img1.png" Caption="Row Selection - Single"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img1.png"%}
 
 **Cell**
 
-Cell selection can be enabled using the **selectionMode** property. This enables you to select a cell in the grid. Refer to the following code example.
+Cell selection can be enabled using the `selectionMode` property. This enables you to select a cell in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -99,11 +99,11 @@ Cell selection can be enabled using the **selectionMode** property. This enables
 
 The following screenshot displays the result of the above code.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img2.png" Caption="Cell Selection - Single"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img2.png"%}
 
 **Column**
 
-Column selection can be enabled using the **selectionMode** property. This enables you to select a particular column in the grid. Refer to the following code example.
+Column selection can be enabled using the `selectionMode` property. This enables you to select a particular column in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -136,11 +136,11 @@ Column selection can be enabled using the **selectionMode** property. This enabl
 
 The following screenshot displays the result of the above code.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img3.png" Caption="Column Selection - Single"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img3.png"%}
 
 ### Multiple Selection
 
-Multiple selection can be enabled using **selectionType** property. This allows you to select more than one row, cell and column at a time.
+Multiple selection can be enabled using `selectionType` property. This allows you to select more than one row, cell and column at a time.
 
 #### Selection Modes
 
@@ -182,11 +182,11 @@ By default, the selection mode of the grid is “**Row**”. This enable you to 
 
 The following screenshot displays the result of the above code.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img4.png" Caption="Row Selection - Multiple"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img4.png"%}
 
 **Cell**
 
-Cell selection can be enabled using the **selectionMode** property. This enables you to select a cell in the grid. Refer to the following code example.
+Cell selection can be enabled using the `selectionMode` property. This enables you to select a cell in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -222,11 +222,11 @@ Cell selection can be enabled using the **selectionMode** property. This enables
 
 The following screenshot displays the result of the above code.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img5.png" Caption="Cell Selection - Multiple"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img5.png"%}
 
 **Column**
 
-Column selection can be enabled using the selectionMode property. This enables you to select a particular column in the grid. Refer to the following code example.
+Column selection can be enabled using the `selectionMode` property. This enables you to select a particular column in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -262,11 +262,11 @@ Column selection can be enabled using the selectionMode property. This enables y
 
 The following screenshot displays the result of the above code.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img6.png" Caption="Column Selection - Multiple"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img6.png"%}
 
 ## Enable All Modes of selection
 
-You can also enable all the three modes of selection using **selectionMode** property. Refer to the following code example.
+You can also enable all the three modes of selection using `selectionMode` property. Refer to the following code example.
 
 {% highlight html %}
 
@@ -299,11 +299,11 @@ You can also enable all the three modes of selection using **selectionMode** pro
 
 The following screenshot displays the result of the above code.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img7.png" Caption="Enable all modes - Multiple"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img7.png"%}
 
 ## Enable toggle
 
-You can toggle the selection using the **enableToggle** property. This provides support to toggle selection based on the Boolean value specified to the property. By default the **enableToggle** property is set to disabled. Refer to the following code example.
+You can toggle the selection using the `enableToggle` property. This provides support to toggle selection based on the Boolean value specified to the property. By default the `enableToggle` property is set to disabled. Refer to the following code example.
 
 {% highlight html %}
 
@@ -335,9 +335,9 @@ You can toggle the selection using the **enableToggle** property. This provides 
 
 The following screenshot displays the result of the above code.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img8.png" Caption="Select Row"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img8.png"%}
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img9.png" Caption="Unselect row"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img9.png"%}
 
 ## Customize Selection Color
 
@@ -375,7 +375,7 @@ In this section, you can learn how to customize or override selection background
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img10.png" Caption="Selection color customization"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img10.png"%}
 
 ## Get selected record data
 
@@ -394,7 +394,7 @@ In this section, you can learn how to get selected records from one **Grid** and
           // the datasource "window.employeeData" is referred from templatelocaldata.js
           dataSource: ej.DataManager(window.employeeData).executeLocal(ej.Query().take(5)),
           rowSelected: function (args) {
-              var employeeID = args.currentData.EmployeeID;
+              var employeeID = args.data.EmployeeID;
               var detaildata = ej.DataManager(window.gridData).executeLocal(ej.Query().where("EmployeeID", ej.FilterOperators.equal, employeeID, false).take(10));
               var gridObj = $("#DetailGrid").ejGrid("instance");
               gridObj.model.dataSource = ej.DataManager(detaildata.slice(0, 5));
@@ -420,5 +420,5 @@ In this section, you can learn how to get selected records from one **Grid** and
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Selection_images/Selection_img11.png" Caption="Get selected record data"%}
+{% include image.html url="/js/Grid/Selection_images/Selection_img11.png"%}
 
