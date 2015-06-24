@@ -11,8 +11,7 @@ documentation: ug
 
 **RangeNavigator** control is designed to visualize large number of data and navigate to particular data from the large collection at ease. The data for the **RangeNavigator** is either numeric values or **DateTime** values and the **valueType** property in **RangeNavigator** indicates the type of the data that should be passed for the control. By default the **valueType** of **RangeNavigator** is **DateTime**
 
-* Numeric                   
-
+* Numeric                 
 * DateTime
 
 ## Numeric Type
@@ -63,18 +62,13 @@ $("#rangecontainer").ejRangeNavigator({
 The **DateTime** range type contains an **intervalType** property that sets the **DateTime** interval to one of the following:
 
 * Years
-
 * Quarters
-
 * Months
-
 * Weeks
-
 * Days 
-
 * Hours
 
-* By default **intervalType** for higher level labels are **years** and for lower level labels its **quarters.**
+By default **intervalType** for higher level labels are **years** and for lower level labels its **quarters.**
 
 
 {% highlight js %}
