@@ -58,14 +58,14 @@ The Diagram provides support for adding nodes and connectors through the Symbol 
 
 ## Appearance
 
-The following properties are used to customize the appearance of **Symbol Palette**.
+The following properties are used to customize the appearance of Symbol Palette.
 
 <table>
 <tr>
 <th>
 Properties</th><th>
 Data Type</th><th>
-Description</th><th></tr>
+Description</th></tr>
 <tr>
 <td>
 width</td><td>
@@ -118,7 +118,7 @@ string</td><td>
 Gets or sets the name of the selected item in the palette</td></tr>
 </table>
 
-The following code illustrates how to customize the **Appearance** of the **Palette.**
+The following code illustrates how to customize the Appearance of the Palette.
 
 {% highlight js %}
 // properties to symbol palette
@@ -138,7 +138,7 @@ $("#palette").ejSymbolPalette({
 
 ## Preview for Drag and Drop
 
-Diagram provides preview support for **Palette item** during drag and drop. When you drag an item from the palette to Diagram, a preview of the dragged item is displayed.
+Diagram provides preview support for Palette item during drag and drop. When you drag an item from the palette to Diagram, a preview of the dragged item is displayed.
 
 ### Preview Appearance
 

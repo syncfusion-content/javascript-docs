@@ -48,7 +48,7 @@ Specifies the parent id of the data source items.</td></tr>
 
 ## Local Data
 
-To bind the **Local Data** to the Diagram control, map the user-defined `JSON` data names with its appropriate data source field. You can bind data to the Diagram by mapping fields such as **dataSource, id** and **parent.** The following code example illustrates how to bind local data to the **Diagram.**
+To bind the **Local Data** to the Diagram control, map the user-defined `JSON` data names with its appropriate data source field. You can bind data to the Diagram by mapping fields such as `dataSource`, `id` and `parent`. The following code example illustrates how to bind local data to the Diagram.
 
 {% highlight js %}
 
@@ -119,8 +119,6 @@ $("#diagram").ejDiagram({
    dataSourceSettings: {
       id: "Name",
       parent: "ReportingPerson",
-      
-      //specifies the dataSource
       dataSource: data 
    }
 });         
@@ -210,7 +208,7 @@ dataSourceSettings: {
 
 ## HTML Binding
 
-The Diagram provides support to form diagram from the **HTML table**. It is flexible to convert **HTML** table to diagram using **Data Manager**. The following code example illustrates how to convert **HTML** table to diagram.
+The Diagram provides support to form diagram from the **HTML table**. It is flexible to convert HTML table to diagram using **Data Manager**. The following code example illustrates how to convert HTML table to diagram.
 
 {% highlight html %}
 

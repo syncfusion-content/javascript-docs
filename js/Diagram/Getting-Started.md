@@ -74,7 +74,7 @@ $("#DiagramContent").ejDiagram({
 
 ## Mapping Data Source
 
-Then, you can configure this “Employee Information” with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how **dataSourceSetting** is used to map ‘id’ and ‘parent’ with property name identifiers for employee information.
+Then, you can configure this “Employee Information” with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how `dataSourceSetting` is used to map `id` and `parent` with property name identifiers for employee information.
 
 {% highlight js %}
 //Initialize data source...

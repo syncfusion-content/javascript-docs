@@ -15,7 +15,7 @@ Connectors are objects used to create a link between two nodes. A connector is a
 
 ## Create Connector
 
-`Connector` is created from JSON data and added to the Diagram model using `Diagram Model`’s `connectors` property. The `connector`’s `name` must be unique. By default, the connector type is `straight`. The following code illustrates how to create a Connector and add it to Diagram.
+`Connector` is created from JSON data and added to the Diagram using `diagram`'s `connectors` property. The `connector`’s `name` must be unique. By default, the connector type is `straight`. The following code illustrates how to create a Connector and add it to Diagram.
 
 {% highlight js %}
 
@@ -541,11 +541,11 @@ Enables all constraints.</td></tr>
 </table>
 
 
-The default value for the connector constraints property is ej.datavisualization.Diagram.ConnectorConstraints.Default.
+The default value for the `connector`'s `constraints` property is `ej.datavisualization.Diagram.ConnectorConstraints.Default`.
 
 **Example**
 
-The following code illustrates how to disable select constraints of connector. Disabling select constraints does not allow you to select connector.
+The following code illustrates how to disable `select` constraints of `connector`. Disabling select constraints does not allow you to select connector.
 
 {% highlight js %}
 

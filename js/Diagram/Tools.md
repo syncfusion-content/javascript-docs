@@ -9,7 +9,7 @@ documentation: ug
 
 # Tools
 
-When interacting on a diagram’s surface, the Tool property decides the action to be performed. When more than one tool is applied, using bitwise OR, the necessary tool is picked based on the interaction gesture, the value of Tool property and precedence.
+When interacting on a diagram’s surface, the `tool` property decides the action to be performed. When more than one tool is applied, using bitwise OR, the necessary tool is picked based on the interaction gesture, the value of Tool property and precedence.
 
 <table>
 <tr>
@@ -74,7 +74,7 @@ tool: ej.datavisualization.Diagram.Tool.SingleSelect |
 
 ## Drawing Tools
 
-**Drawing tool** allows you to draw any node during runtime by clicking and dragging on diagram page. To draw a node using drawing tool, the required node is assigned to the **drawType** property.
+**Drawing tool** allows you to draw any node during runtime by clicking and dragging on diagram page. To draw a node using drawing tool, the required node is assigned to the `drawType` property.
 
 ### Rectangle Tool
 
@@ -107,7 +107,7 @@ Similarly you can draw any node using drawing tool, by assigning the required no
 
 ### Connector Tool
 
-To draw a connector, the required connector type is assigned to the drawType property.
+To draw a connector, the required connector type is assigned to the `drawType` property.
 
 ### StraightLine
 

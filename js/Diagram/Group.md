@@ -13,7 +13,7 @@ Diagram provides support to `Group` and `Ungroup` nodes. `Group` is a composite 
 
 ## Create Group
 
-You can create `Group` like node and add it to the Diagram model using `diagram model`’s `nodes` property. You can set `isGroup` property as `true` to differentiate the group from node. You can set the array of children (`nodes`/`connectors`) names to `children` property. The `group`’s `children` `nodes`/`connectors` are added to the node array before adding the group to nodes array. 
+You can create `Group` like node and add it to the Diagram model using `diagram`'s `nodes` property. You can set `isGroup` property as `true` to differentiate the group from node. You can set the array of children (`nodes`/`connectors`) names to `children` property. The `group`’s `children` `nodes`/`connectors` are added to the node array before adding the group to nodes array. 
 
 The following code illustrates how a group node is created and added in the nodes array.
 
