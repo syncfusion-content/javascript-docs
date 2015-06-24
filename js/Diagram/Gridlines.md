@@ -63,22 +63,22 @@ The following code illustrates how to show or hide gridlines using constraints
 
 //show horizontal gridlines
 var snapSettings = {
-   "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
+   snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
 };
 
 //show vertical gridlines
 snapSettings = {
-   "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines
+   snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines
 };
 
 //show both horizontal and vertical gridlines
 snapSettings = {
-   "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.ShowLines
+   snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines
 };
 
 //hide both horizontal and vertical gridlines
 snapSettings = {
-   "snapConstraints": ej.datavisualization.Diagram.SnapConstraints.None
+   snapConstraints: ej.datavisualization.Diagram.SnapConstraints.None
 };
 
 $("#Diagram").ejDiagram({

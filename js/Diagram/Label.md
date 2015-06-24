@@ -19,12 +19,12 @@ documentation: ug
 //create a label 
 var node = {
    name: "node",
-   labels: [{ "text": "Label" }]
+   labels: [{ text: "Label" }]
 };
 
 var connector = {
    name: "connector",
-   labels: [{ "text": "Label" }]
+   labels: [{ text: "Label" }]
 };
 {% endhighlight %}
 
@@ -63,8 +63,8 @@ var node = {
    width: 150,
    height: 60,
    labels: [{
-      "text": "Progress",
-      margin: { "left": 100, "top": 100 },
+      text: "Progress",
+      margin: { left: 100, top: 100 },
       offset: { x: 0, y: 0 },
       horizontalAlignment: "left",
       verticalAlignment: "top"
@@ -109,14 +109,14 @@ You can customize the **Label appearance** and position using its properties.
 
 //set various appearance properties to label
 var label = {
-   "text": "Label Text",
-   "fontSize": 12,
-   "fontFamily": "TimesNewRoman",
+   text: "Label Text",
+   fontSize: 12,
+   fontFamily: "TimesNewRoman",
    italic: true,
-   "fontColor": "black",
-   "fillColor": "White",
-   "borderColor": "black",
-   "borderWidth": 1,
+   fontColor: "black",
+   fillColor: "White",
+   borderColor: "black",
+   borderWidth: 1,
    wrapText: true,
    textDecoration: ej.datavisualization.Diagram.TextDecorations.LineThrough
 };
@@ -132,7 +132,7 @@ Label can be edited at runtime, programmatically or interactively. By default, l
 {% highlight js %}
 //label edit mode
 var label = {
-   "text": "Label",
+   text: "Label",
    mode: ej.datavisualization.Diagram.LabelEditMode.Edit
 };
 var diagram = $("#Diagram").ejDiagram("instance");

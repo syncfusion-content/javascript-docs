@@ -21,10 +21,10 @@ Node and Connector are added to the Palette as Palette Items. The following code
 // palette array
 var paletteCollection = [];
 var basiShapes = {
-   "name": "Basic Shapes"
+   name: "Basic Shapes"
 };
 var connectors = {
-   "name": "Connectors"
+   name: "Connectors"
 };
 
 //add node/connector to palette

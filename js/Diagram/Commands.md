@@ -398,10 +398,10 @@ The following code illustrates how to execute FitToPage command.
 
 //fit to page – fit diagram based on elements
 diagram.fitToPage("page", "content", {
-   "left": 25,
-   "top": 25,
-   "right": 25,
-   "bottom": 25
+   left: 25,
+   top: 25,
+   right: 25,
+   bottom: 25
 });
 {% endhighlight %}
 

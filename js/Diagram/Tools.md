@@ -90,7 +90,7 @@ diagram.model.drawType = {
    fillColor: "#fcbc7c",
    borderColor: "#f89b4c",
    labels: [{
-      "text": "Rectangle",
+      text: "Rectangle",
       fontColor: "white"
    }]
 };

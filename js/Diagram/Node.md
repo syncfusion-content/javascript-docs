@@ -73,7 +73,7 @@ var node = {
 node = {
    type: Diagram.Shapes.Basic,
    shape: Diagram.BasicShapes.Rectangle,
-   "cornerRadius": 5
+   cornerRadius: 5
 };
 
 //create a node with ellipse shape
@@ -121,7 +121,7 @@ var Diagram = ej.datavisualization.Diagram;
 var node = {
    type: Diagram.Shapes.Text,
    textBlock: {
-      "text": "TextNode",
+      text: "TextNode",
       textAlign: Diagram.TextAlign.Center
    }
 };
@@ -338,8 +338,8 @@ var linearGradient = {
 //set various appearance properties to node
 var node = {
    visible: true,
-   "borderColor": "black",
-   "borderWidth": 2,
+   borderColor: "black",
+   borderWidth: 2,
    opacity: 1,
    gradient: linearGradient,
    borderDashArray: "5 5"

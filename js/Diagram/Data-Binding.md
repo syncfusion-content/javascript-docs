@@ -104,7 +104,7 @@ $("#diagram").ejDiagram({
       //set the default properties of the connector.         
       connector: {
          segments: [{
-            "type": "orthogonal"
+            type: "orthogonal"
          }],
          targetDecorator: {
             shape: "none"

@@ -111,7 +111,7 @@ $("#DiagramContent").ejDiagram({
             height: 30,
             shape: {
                 type: "rectangle",
-                "cornerRadius": 5
+                cornerRadius: 5
             },
             labels: [{
                 name: "label1",
@@ -125,7 +125,7 @@ $("#DiagramContent").ejDiagram({
         //Set the default properties of connectors.
         connector: {
             segments: [{
-                "type": "orthogonal"
+               "type: "orthogonal"
             }],
             targetDecorator: {
                 shape: "arrow"
@@ -220,7 +220,7 @@ $("#DiagramContent").ejDiagram({
                     height: 30,
                     shape: {
                         type: "rectangle",
-                        "cornerRadius": 5
+                        cornerRadius: 5
                     },
                     labels: [{
                         name: "label1",
@@ -233,7 +233,7 @@ $("#DiagramContent").ejDiagram({
 
                 //Set the default properties of connectors.
                 connector: {
-                    segments: [{ "type": "orthogonal" }],
+                    segments: [{ type: "orthogonal" }],
                     targetDecorator: { shape: "arrow" }
                 }
             },
