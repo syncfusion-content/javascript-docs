@@ -30,18 +30,27 @@ The **application menu** support is provided in the Ribbon control application t
 	   </ul>
 	   <div id="Contents">Custom control</div>
 	   <script type="text/javascript">
-	      $(function () {
-	      $("#Ribbon").ejRibbon({
-	      width: "800px",
-	      applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
-	      tabs: [{
-	      id: "home", text: "HOME", groups: [
-	      {
-	      text: "CustomControls", type: "custom", contentID: "Contents"
-	      }]
-	      }]
-	      });
-	      });
+		$(function() {
+		    $("#Ribbon").ejRibbon({
+		        width: "800px",
+		        applicationTab: {
+		            Type: "ApplicationMenu",
+		            itemID: "menu",
+		            menuSettings: {
+		                openOnClick: false
+		            }
+		        },
+		        tabs: [{
+		            id: "home",
+		            text: "HOME",
+		            groups: [{
+		                text: "CustomControls",
+		                type: "custom",
+		                contentID: "Contents"
+		            }]
+		        }]
+		    });
+		});
 	   </script>
 	</body>
 	<!-- ... -->
