@@ -91,7 +91,7 @@ By default, line series is used. To create a **series**, you need to add the fol
 
 1. You need to add the name of the series displayed in Chart legend.
 
-2. Then, you need to specify the type of series you want to render using `[type](/js/api/ejchart#seriestypespan-classtype-signature-type-enumenumspan "series.type")` property.
+2. Then, you need to specify the type of series you want to render using [`type`](/js/api/ejchart#seriestypespan-classtype-signature-type-enumenumspan "series.type") property.
 
 3. You can add x and y `[points](/js/api/ejchart#seriespointsspan-classtype-signature-type-arrayarrayspan "points")` to the series as shown in the following code example.
 
