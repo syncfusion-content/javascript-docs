@@ -13,7 +13,7 @@ documentation: ug
 
 **Essential Studio Web JS ListView** provides support for **Data Binding**. **Data Binding** provides a simple and consistent way for applications to present and interact with data. Elements can be bounded to data from a variety of data sources. In local data binding, the data source is written inside the program. Then it is handled by the **ListView** control. **DataSource** is used to get the **data source** that holds the list items.
 
-Please refer the following code examples.
+Create div element to render the ListView sample.
 
 
 
@@ -21,7 +21,13 @@ Please refer the following code examples.
 
 
     <div id="defaultlistbox" ></div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         window.dbitem =
             [
                  { "text": "Hot Singles" },
@@ -43,11 +49,10 @@ Please refer the following code examples.
                  { "text": "Redeem a Gift Card" },
                  { "text": "Band T-Shirts" },
                  { "text": "Web MVC" }];
+                 
         $(function () {
             $("#defaultlistbox").ejListView({dataSource:window.dbitem, width:400});
         });
-    </script>
-
 
 
 {% endhighlight %}
@@ -56,9 +61,9 @@ Please refer the following code examples.
 
 
 
-**Screenshot:**
+Run the code to get the following output
 
-{% include image.html url="/js/ListView/Concepts-and-Features/Data-Binding_images/Data-Binding_img1.png" %}
+{% include image.html url="/js/ListView/Data-Binding_images/Data-Binding_img1.png" %}
 
 **FieldSettings**
 
@@ -80,13 +85,22 @@ In DB, you can relate any child item to some other item. Set here is ‘<b>Prima
 Attributes</td><td>
 In DB, you can define your desired class name or styles for the list item through the ‘<b>Attributes’</b> field.</td></tr>
 </table>
+
+
 Please refer the following code examples.
 
 {% highlight html %}
 
 
-  <div id="defaultlistbox" ></div>       
-    <script type="text/javascript">
+    <div id="defaultlistbox"></div> 
+
+  
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+ 
         window.dbitem =
             [{ "Texts": "Discover Music", "PrimaryKeys": "1", "Title": "Discover Music", "BackIconText": "back" },
                  { "Texts": "Hot Singles", "ParentPrimaryKeyss": "1" },
@@ -119,18 +133,17 @@ Please refer the following code examples.
             "childHeaderTitle": "Title",
             "childHeaderBackButtonText": "BackIconText"
         };
+        
         $(function () {
             $("#defaultlistbox").ejListView({ fieldSettings: window.musicFields, dataSource:window.dbitem, width: 400,showHeader:true,headerTitle:"ListView" });
         });
-    </script>
-
 
 
 {% endhighlight %}
 
 
 
-**Screenshots:**
+Run the code to get the following output
 
 {% include image.html url="/js/ListView/Data-Binding_images/Data-Binding_img2.png" %}
 
