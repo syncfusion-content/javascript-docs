@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change-the-default-type-of-the-series
-description: change the default type of the series
+title: Change-series-type
+description: change series type
 platform: js
 control: RangeNavigator
 documentation: ug
@@ -31,7 +31,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/How-to/Change-the-default-type-of-the-series_images/Change-the-default-type-of-the-series_img1.png" %}
+{% include image.html url="/js/RangeNavigator/How-to/Change-series-type_images/Change-series-type_img1.png" %}
 
 
 When using multiple series in **RangeNavigator**, **type** property in **seriesSettings** is used to set a type common for all the series.
@@ -54,6 +54,6 @@ $("#rangecontainer").ejRangeNavigator({
 
 {% endhighlight %}
 
-{% include image.html url="/js/RangeNavigator/How-to/Change-the-default-type-of-the-series_images/Change-the-default-type-of-the-series_img2.png" %}
+{% include image.html url="/js/RangeNavigator/How-to/Change-series-type_images/Change-series-type_img2.png" %}
 
 
