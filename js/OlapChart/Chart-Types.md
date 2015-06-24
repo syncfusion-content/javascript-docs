@@ -3,13 +3,13 @@ layout: post
 title: Chart-Types
 description: chart types
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
 # Chart Types
 
-Essential **OLAP Chart JS** supports 14 different types of chart as follows:
+Essential **OlapChart JS** supports 14 different types of chart as follows:
 
    * Column
    * Stacking Column

@@ -3,7 +3,7 @@ layout: post
 title: Angular-Binding
 description: angular binding
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
@@ -23,7 +23,7 @@ Apply the plugin and property assigning the OlapChart element through the direct
 angular.module('chartCtrl', ['ejangular'])
     .controller('OlapChartCtrl', function($scope) {
         $scope.url = "../wcf/OlapChartService.svc";
-        $scope.title = "OLAP Chart in Essential JS";
+        $scope.title = "OlapChart in Essential JS";
         $scope.isResponsive = true;
         $scope.ctype = ej.olap.OlapChart.ChartTypes.Column;
         $scope.showTooltip = true;

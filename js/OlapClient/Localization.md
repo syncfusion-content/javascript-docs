@@ -3,13 +3,13 @@ layout: post
 title: Localization
 description: localization 
 platform: js
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 
 # Localization 
 
-Localization is the**process of customizing the UI** (User Interface) as locale-specific, in order to display regional data. Using this feature, data can be displayed in a specific language and culture, of a particular country or region. The **JavaScript OLAP Client** control provides inherent support to localize its **UI**.
+Localization is the**process of customizing the UI** (User Interface) as locale-specific, in order to display regional data. Using this feature, data can be displayed in a specific language and culture, of a particular country or region. The **JavaScript OlapClient** control provides inherent support to localize its **UI**.
 
 The following table lists the default English localization User Interface based on French culture.
 
@@ -210,7 +210,7 @@ And</td><td>
 " et "</td></tr>
 </table>
 
-The following code example shows how to localize OLAP Client’s User Interface (UI) based on French culture.
+The following code example shows how to localize OlapClient’s User Interface (UI) based on French culture.
 
 {% highlight js %}
 
@@ -282,7 +282,7 @@ Exit:"Quitter"
 
 {% endhighlight %}
 
-> _**Note:** In order to render the localized OLAP Client, we need to reset the content available in both OLAP Client Control and OLAP Cube_
+> **Note:** In order to render the localized OlapClient, we need to reset the content available in both OlapClient Control and OLAP Cube
 
 ##Localizing Control Information
 
@@ -312,7 +312,7 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 {% endhighlight %}
 
-The following screenshot shows the OLAP Client with French localization.
+The following screenshot shows the OlapClient with French localization.
 
 {% include image.html url="/js/OlapClient/Concepts-and-Features/Localization_images/Localization_img1.png" %}
 

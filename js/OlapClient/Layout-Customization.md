@@ -3,13 +3,13 @@ layout: post
 title: Layout-Customization
 description: layout customization
 platform: js
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 
 # Layout Customization
 
-**OLAP Client UI** comes with options to customize the **Grid** and **Chart** layout, such as:
+**OlapClient UI** comes with options to customize the **Grid** and **Chart** layout, such as:
 
    * **Default View** - Sets the start-up control. 
    * **Tab/Tile View** – Tab or Tile view to visualize the controls separately or in the same layout. 
@@ -58,7 +58,7 @@ $("#OlapClient1").ejOlapClient({
 
 ## Default View
 
-After you set **defaultView** property either to **Chart** or **Grid**, the corresponding control is selected for initial view/visualization, within the layout when the **OLAP Client** control is loaded for the first time. 
+After you set **defaultView** property either to **Chart** or **Grid**, the corresponding control is selected for initial view/visualization, within the layout when the **OlapClient** control is loaded for the first time. 
 
 ### Chart View
 
@@ -159,7 +159,7 @@ $("#OlapClient1").ejOlapClient({
 
 ## Toggle Panel
 
-You are provided with an option to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in **OLAP Client**.
+You are provided with an option to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in **OlapClient**.
 
 {% highlight js %}
 
@@ -178,7 +178,7 @@ $("#OlapClient1").ejOlapClient({
 
 ## Maximized/Full Screen View
 
-You can maximize **OLAP Grid** and **OLAP Chart** to full screen mode inside **OLAP Client** for a precise view. By selecting Full Screen icon in the toolbar, **OLAP Grid** and **OLAP Chart** are maximized depending on the current tab. You can also perform drilldown action in both **OLAP Grid** and **OLAP Chart** in the maximized view.
+You can maximize **PivotGrid** and **OlapChart** to full screen mode inside **OlapClient** for a precise view. By selecting Full Screen icon in the toolbar, **PivotGrid** and **OlapChart** are maximized depending on the current tab. You can also perform drilldown action in both **PivotGrid** and **OlapChart** in the maximized view.
 
 {% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img9.png" %}
 
@@ -194,7 +194,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-The following screenshot shows the maximized view of **OLAP Grid** and **OLAP Chart.**
+The following screenshot shows the maximized view of **PivotGrid** and **OlapChart.**
 
 {% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img10.png" %}
 

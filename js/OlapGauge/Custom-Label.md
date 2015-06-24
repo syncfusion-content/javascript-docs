@@ -3,7 +3,7 @@ layout: post
 title: Custom-Label
 description: custom label
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 

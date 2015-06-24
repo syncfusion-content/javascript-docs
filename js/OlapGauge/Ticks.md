@@ -3,7 +3,7 @@ layout: post
 title: Ticks
 description: ticks
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 

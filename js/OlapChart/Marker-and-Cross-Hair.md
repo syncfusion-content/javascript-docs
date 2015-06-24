@@ -3,7 +3,7 @@ layout: post
 title: Marker-and-Cross-Hair
 description: marker and cross hair 
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 

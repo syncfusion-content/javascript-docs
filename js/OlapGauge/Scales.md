@@ -3,7 +3,7 @@ layout: post
 title: Scales
 description: scales
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Chart-Axes
 description: chart axes 
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 

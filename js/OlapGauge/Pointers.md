@@ -3,7 +3,7 @@ layout: post
 title: Pointers
 description: pointers
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 

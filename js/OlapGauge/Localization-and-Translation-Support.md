@@ -3,7 +3,7 @@ layout: post
 title: Localization-and-Translation-Support
 description: localization and translation support
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 
@@ -172,9 +172,9 @@ $(function() {
 {% endhighlight %}
 
 
-> _**Note:** In order to render the localized OLAP Gauge, You are required to reset the content available in both_
+> **Note:** In order to render the localized OlapGauge, You are required to reset the content available in both
 
-   1. OLAP Gauge Control
+   1. OlapGauge Control
    2. OLAP Cube
 
 ##Localizing Control Information

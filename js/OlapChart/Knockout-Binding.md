@@ -3,7 +3,7 @@ layout: post
 title: Knockout-Binding
 description: knockout binding
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
@@ -81,7 +81,7 @@ var chartTypes = [{
 }];
 window.viewModel = {
     url: ko.observable("../wcf/OlapChartService.svc"),
-    title: ko.observable("OLAP Chart in Essential JS"),
+    title: ko.observable("OlapChart in Essential JS"),
     type: ko.observable(ej.olap.OlapChart.ChartTypes.Column),
     showTooltip: ko.observable(true),
     animation: ko.observable(true),

@@ -3,7 +3,7 @@ layout: post
 title: Indicators
 description: indicators
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 
