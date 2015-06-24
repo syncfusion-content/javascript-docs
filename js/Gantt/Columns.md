@@ -182,7 +182,7 @@ Gantt supports enabling and disabling the visibility of the columns dynamically 
 
 {% include image.html url="/js/Gantt/Columns_images/Columns_img2.png"%}
 
-The column menu is enabled with the `showColumnChooser*` property, where the default value for this property is `false`.
+The column menu is enabled with the `showColumnChooser` property, where the default value for this property is `false`.
 
 The column menu provides the following options:
 
