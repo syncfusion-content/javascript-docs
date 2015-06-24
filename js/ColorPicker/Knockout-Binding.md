@@ -51,7 +51,7 @@ The following example depicts how you can bind data to the **ColorPicker** widge
                 <div class="frame" style="width: 420px">
                     <div id="control" style="float: left; width: 70%; margin-left: 10px">
                         <input id="colorpick" data-bind="ejColorPicker: { value: value, modelType: palette }" />
-                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;"/></h6>
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way Knockout Support</span></h6>
                     </div>
                     <div id="binding" style="float: left; width: 23%">
                         <input id="colorpick1" data-bind="ejColorPicker: { value: value, modelType: picker }" />

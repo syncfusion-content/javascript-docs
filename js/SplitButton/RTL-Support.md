@@ -37,7 +37,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         $("#spltbutton_rtl").ejSplitButton({
             //used to enable or disable RTL support for split button
             enableRTL: true,
-            size: "small",
+            size: "large",
             contentType: "textandimage",
             showRoundedCorner: true,
             targetID: "Ul11",
