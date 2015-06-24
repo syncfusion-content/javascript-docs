@@ -119,7 +119,7 @@ Navigation</td><td>
 <a href="http://helpjs.syncfusion.com/js/scroller/overview">Scrollbar</a></td></tr>
 <tr>
 <td>
-NavigationDrawer</td><td colspan = "2">
+<a href="http://helpjs.syncfusion.com/js/navigationdrawer/overview">NavigationDrawer</a></td><td colspan = "2">
 <a href="http://helpjs.syncfusion.com/js/toolbar/overview">Toolbar</a></td></tr>
 <tr>
 <td>
