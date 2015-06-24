@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-# Compatibility and System Requirements
+# Compatibility and Prerequisites
 
 ## Web browsers
 

@@ -38,7 +38,7 @@ Create a basic HTML file as shown below and place it in a separate folder in any
 {% endhighlight %}
 
 For example, if you have created a folder named **JS_Sample** and placed the above HTML file into it, then create two new folders **Scripts** and **Content** under that root folder **JS_Sample** to maintain the scripts and stylesheets respectively as shown below,
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img1.png" %}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img1.png" %}
 
 ### Adding the required Stylesheets into Content folder
 
@@ -63,7 +63,7 @@ Navigating to the below specified location, you can find all the required web re
 
 
 Create a first level sub-folder named **ej** within the **Content** folder. Now again create another sub-folder namely **web** within the **ej** folder and place all the copied files into it as shown below,
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img2.png" %}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img2.png" %}
 
 >   **Note**: The **common-images** folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.
 
@@ -137,7 +137,7 @@ Navigate to the below specified location and copy the **ej.web.all.min.js** file
 </tr>
 </table>
 
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img3.png" Caption="Script files copied into the Sample Project"%}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img3.png" Caption="Script files copied into the Sample Project"%}
 
 Now, include the reference to it in your HTML page within the head section as shown below,
 
@@ -205,29 +205,29 @@ Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which act
 
 
 Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img4.png"%}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img4.png"%}
 
 ## Using Syncfusion Nuget Package in Visual Studio for Scripts and Stylesheet reference
 
 Using the Nuget Package method in Visual Studio automates the process of copying the required Script files and Stylesheets directly into your application.
 
 Start the Visual Studio. Create a new ASP.NET Empty Web Application or ASP.NET Empty Website from **File** -> **New** -> **Project/Website** and save it with a meaningful name as below (we have used the ASP.NET Empty Web application here),
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img5.png" %}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img5.png" %}
 
 ### Configuring and Installing Nuget into your project
 
-To add the required scripts and css files automatically into your Project ([Configure](http://helpjs.syncfusion.com/js/introduction/installation-and-deployment#configuring-syncfusion-nuget-packages) the **Syncfusion Nuget Package for JavaScript** in Visual Studio initially, before proceeding with the following installation procedure).
+To add the required scripts and css files automatically into your Project ([Configure](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) the **Syncfusion Nuget Package for JavaScript** in Visual Studio initially, before proceeding with the following installation procedure).
 
 Right click on your project in the Solution explorer and select **Manage Nuget Packages** options from the sub-menu that pop-up on the screen. In the **Manage Nuget Packages** dialog, select the **Syncfusion Nuget Packages** within the **Online** tab, which will display the list of available packages in it, as shown below.
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img6.png" %}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img6.png" %}
 
 You need to install the **SyncfusionJavaScript** package shown in the above image just by clicking the **install** button. The below image depicts that the Nuget Packages for **JavaScript** has been successfully installed into your project.
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img7.png" %}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img7.png" %}
 
 ### Adding HTML page in your application
 
 Right click on your Project in Solution Explorer. Select **Add** -> **New Item** -> **HTML Page** and add it to your application. The blank HTML page will get added to your application.
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img8.png" %}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img8.png" %}
 
 ### Adding reference to the required Stylesheets
 
@@ -276,7 +276,7 @@ It is mandatory to include the reference to the required JavaScript files in you
 
 ### Adding Syncfusion Widget into your HTML page
 
-Finally, to add the Syncfusion datepicker widget into the HTML page, refer the same steps mentioned here in the [manual method](http://helpjs.syncfusion.com/js/introduction/control-initialization#adding-syncfusion-widget-into-your-html-page). 
+Finally, to add the Syncfusion datepicker widget into the HTML page, refer the same steps mentioned here in the [manual method](http://helpjs.syncfusion.com/js/control-initialization#adding-syncfusion-widget-into-your-html-page). 
 
 ## Using CDN link for Script and Stylesheet reference 
 
@@ -284,7 +284,7 @@ With this method, you can skip the process of copying and pasting the required S
 
 ### HTML file creation
 
-Create a basic HTML file and directly refer all the required cdn links for the [Scripts](http://helpjs.syncfusion.com/js/introduction/cdn#cdn-script-links) and [Stylesheets](http://helpjs.syncfusion.com/js/introduction/cdn#cdn-stylesheet-links) within the &lt;head&gt; section as shown below, - For other cdn links, refer the [CDN](http://helpjs.syncfusion.com/js/introduction/cdn) section in the introduction part.
+Create a basic HTML file and directly refer all the required cdn links for the [Scripts](http://helpjs.syncfusion.com/js/cdn#cdn-script-links) and [Stylesheets](http://helpjs.syncfusion.com/js/cdn#cdn-stylesheet-links) within the &lt;head&gt; section as shown below, - For other cdn links, refer the [CDN](http://helpjs.syncfusion.com/js/cdn) section in the introduction part.
 
 Here, we have referred the cdn link of **default-theme**. Likewise, any of the 13 available themes can be referred in the below highlighted code, as per the user needs.
 
@@ -344,7 +344,7 @@ Add the **&lt;input&gt;** element within the **&lt;body&gt;** section, which act
 {% endhighlight %}
 
 Open your HTML page in any of the web browser and the screen will display the DatePicker widget as shown below,
-{% include image.html url="/js/Introduction/Control-Initialization_images/Control-Initialization_img9.png" %}
+{% include image.html url="/js/Control-Initialization_images/Control-Initialization_img9.png" %}
 
 The **DatePicker** control is rendered with its default appearance now. You can then use its various available properties to set its value and also make use of its available events to trigger when necessary.
 

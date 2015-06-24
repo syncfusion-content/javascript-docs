@@ -120,7 +120,7 @@ For **MAC OS** and **Linux** users, we are providing a zip folder instead of .ex
 
 **Samples** – This folder contains samples of all the Syncfusion JavaScript controls. The user can directly open the html sample page in any of the browser to view the output.
 
-It also includes other folders namely Release Notes, License Agreement and Read Me. The control creation will be same as described in the [Control Initialization](http://helpjs.syncfusion.com/js/introduction/control-initialization) section (Here, the scripts and StyleSheets are needed to be referred from the **Assets** folder into their respective HTML pages).
+It also includes other folders namely Release Notes, License Agreement and Read Me. The control creation will be same as described in the [Control Initialization](http://helpjs.syncfusion.com/js/control-initialization) section (Here, the scripts and StyleSheets are needed to be referred from the **Assets** folder into their respective HTML pages).
 
 
 >  **Note**: The **MAC** and **Linux** users cannot be able to make use of the **Reporting and Business Intelligence** controls, as it needs assembly reference to be included in the application. Due to the installation of .exe is not supported in those two OS (the assembly libraries required for the Reporting & BI controls are not available in the system), we provide only the zip folder containing the JavaScript related Scripts, Stylesheets and Samples. 
@@ -134,15 +134,15 @@ The steps to download and configure the Syncfusion Nuget Packages in Visual Stud
 Download the Syncfusion Nuget Packages for **JavaScript** from [here](http://nuget.syncfusion.com/login) and save it in your system. The downloaded file is a zip formatted file, therefore unzip the folder and copy the **SyncfusionJavaScript.{{ site.releaseversion }}.nupkg** package in it. Create a new folder namely **Nuget Packages** in any of the particular location in your system and place the copied file into it.
 
 In Visual Studio, navigate to **Tools** -> **Library Package Manager** -> **Package Manager Settings**, the **Options** pop-up will appear on the screen as below,
-{% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img1.png" %}
+{% include image.html url="/js/Installation-and-Deployment_images/Installation-and-Deployment_img1.png" %}
 
 Select **Package Manager** -> **Package Sources** in the above pop-up and click on the **Browse** button(preceding the **Add** button) to navigate to the location where the above collection of nuget packages are located (namely, within the **Nuget Packages** folder) in your system.
-{% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img3.png" %}
+{% include image.html url="/js/Installation-and-Deployment_images/Installation-and-Deployment_img3.png" %}
 
 >  **Note**: The **Source** textbox in the above image denotes the location of the nuget packages in your machine and the **Name** section, allows you to provide a unique name which we will refer in the package installation section later.
 
 Now click the **Add** button and the package name will be listed in the **Available package sources** list as shown below and then Click **OK**.
-{% include image.html url="/js/Introduction/Installation-and-Deployment_images/Installation-and-Deployment_img4.png" %}
+{% include image.html url="/js/Installation-and-Deployment_images/Installation-and-Deployment_img4.png" %}
 
-The configuration part of Syncfusion JavaScript Nuget packages ends here and now you can proceed with its installation part while using it in your application (which will be described in the [Control Initialization](http://helpjs.syncfusion.com/js/introduction/control-initialization#configuring-and-installing-nuget-into-your-project) section).
+The configuration part of Syncfusion JavaScript Nuget packages ends here and now you can proceed with its installation part while using it in your application (which will be described in the [Control Initialization](http://helpjs.syncfusion.com/js/control-initialization#configuring-and-installing-nuget-into-your-project) section).
 

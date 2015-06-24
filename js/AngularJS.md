@@ -119,11 +119,10 @@ To use our Syncfusion widgets in AngularJS applications, all the EJ directives a
 
 {% highlight js %}
 
-
-                angular.module('DateCtrl', ['ejangular'])
-           .controller('DatePickerCtrl', function ($scope) {
-               $scope.dateValue = "2/3/2013";
-        });
+angular.module('DateCtrl', ['ejangular'])
+     .controller('DatePickerCtrl', function ($scope) {
+         $scope.dateValue = "2/3/2013";
+});
 
 {% endhighlight %}
 

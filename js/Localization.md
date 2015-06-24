@@ -43,12 +43,10 @@ Define the **locale** property which is applicable for all the Syncfusion compon
 
 {% highlight js %}
 
-
-            $("#MyDatePicker").ejDatePicker({
-              locale: "de-DE",
-              buttonText: "aujourd'hui"
-      });   
-
+$("#MyDatePicker").ejDatePicker({
+     locale: "de-DE",
+     buttonText: "aujourd'hui"
+});   
 
 {% endhighlight %}
 
@@ -60,18 +58,17 @@ The Syncfusion components can be localized on two basis,
 ### Use of Built-in localized words in the DatePicker control
 
 The date formats, day names and month names are automatically translated into the specific culture based on the culture-code assigned to the **locale** property, as these date related common conversions are processed as built-in within the source. Here, the above code will render the DatePicker control in **German** culture, as shown below,
-{% include image.html url="/js/Introduction/Localization_images/Localization_img1.png" %}
+{% include image.html url="/js/Localization_images/Localization_img1.png" %}
 
-      
 #### Example 1: Defining locale property in the DatePicker control using built-in localized texts - Static
 
-Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](http://helpjs.syncfusion.com/js/introduction/control-initialization). The very first requirement to localize the DatePicker control into **de-DE** culture is to refer the **globalize.culture.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
+Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](http://helpjs.syncfusion.com/js/control-initialization). The very first requirement to localize the DatePicker control into **de-DE** culture is to refer the **globalize.culture.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
 
 Copy the file **globalize.culture.de-DE.min.js** into the **Scripts** folder of your application and then refer it along with the other script and css reference in the head section. Also, define the **locale** property for the DatePicker control with the appropriate **culture-code [de-De]** as shown below,
 
 {% highlight html %}
 
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
@@ -84,11 +81,9 @@ Copy the file **globalize.culture.de-DE.min.js** into the **Scripts** folder of 
     <script src="Scripts/ej/ej.web.all.min.js"></script>
 </head>
 <body> 
-
     <!--Container for ejDatePicker widget-->
     <input id="startDate" type="text" /> 
-
-<script type="text/javascript">
+    <script type="text/javascript">
         $(function () {
             // declaration of ejDatePicker
             $("#startDate").ejDatePicker({
@@ -96,16 +91,14 @@ Copy the file **globalize.culture.de-DE.min.js** into the **Scripts** folder of 
                 buttonText: "heute"
             });
         });
-</script>
-
+    </script>
 </body>
 </html>    
-
 
 {% endhighlight %}
 
 Browse your HTML page in any of the web browser and now the screen will display the DatePicker widget with the localized texts as shown below,
-{% include image.html url="/js/Introduction/Localization_images/Localization_img2.png" %}
+{% include image.html url="/js/Localization_images/Localization_img2.png" %}
 
 #### To change the locale property dynamically in DatePicker control
 
@@ -130,22 +123,17 @@ Define a dropdownlist control additionally in your HTML page along with the Date
     <script src="Scripts/globalize.culture.fr-FR.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-
 </head>
 <body> 
-
     <!--Container for ejDatePicker widget-->
     <input id="startDate" type="text" /> 
-
     <!--Container for ejDropdown widget-->
     <select id="culture" class="e-ddl">
          <option>en-US</option>
          <option>vi-VN</option>
          <option>fr-FR</option>
      </select>
-
-
-<script type="text/javascript">
+     <script type="text/javascript">
         $(function () {
             // declaration of ejDatePicker
             $("#startDate").ejDatePicker({
@@ -178,11 +166,9 @@ Define a dropdownlist control additionally in your HTML page along with the Date
             // Setting the locale value dynamically for the datePicker
             datebject.setModel({ locale: args.value });
         }
-
-</script>
+     </script>
 </body>
 </html>  
-
 
 {% endhighlight %}
 
@@ -203,7 +189,7 @@ Refer the same steps mentioned in the previous example – as it is applicable f
 
 {% highlight html %}
 
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
@@ -216,26 +202,22 @@ Refer the same steps mentioned in the previous example – as it is applicable f
     <script src="Scripts/ej/ej.web.all.min.js"></script>
 </head>
 <body> 
-
     <!--Container for ejGrid widget-->
     <div id="Grid"></div>
-
-<script type="text/javascript">
+    <script type="text/javascript">
         $(function () {
             // declaration of ejGrid
             $("#Grid").ejGrid();
         });
-</script>
+    </script>
 </body>
 </html>   
-
 
 {% endhighlight %}
 
 Define the collection of custom localized-words for the **de-De** culture within the script section as shown below,
 
 {% highlight js %}
-
 
        //localized words defined for de-DE culture
         ej.Grid.locale["de-DE"] = {
@@ -250,15 +232,13 @@ Define the collection of custom localized-words for the **de-De** culture within
             UnGroup: "Klicken Sie hier, um die Gruppierung aufheben"
         };
 
-
-
 {% endhighlight %}
 
 Now define the **locale** property for the Grid control with the appropriate **culture-code [de-DE]** as shown below,
 
 {% highlight html %}
 
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
@@ -271,11 +251,9 @@ Now define the **locale** property for the Grid control with the appropriate **c
     <script src="Scripts/ej/ej.web.all.min.js"></script>
 </head>
 <body> 
-
     <!--Container for ejGrid widget-->
     <div id="Grid"></div>
-
-<script type="text/javascript">
+    <script type="text/javascript">
        //Collection of localized words defined for **de-DE** culture
         ej.Grid.locale["de-DE"] = {
             EmptyRecord: "Keine Aufzeichnungen angezeigt",
@@ -288,9 +266,7 @@ Now define the **locale** property for the Grid control with the appropriate **c
             GroupCaptionFormat: "{{:field}}: {{:key}} - {{:count}} {{if count == 1}}Beiträge{{else}}Beiträges{{/if}}",
             UnGroup: "Klicken Sie hier, um die Gruppierung aufheben"
         };
-
         $(function () {
-
             var localServ = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
             var dataManger = ej.DataManager({
                 url: localServ
@@ -304,10 +280,8 @@ Now define the **locale** property for the Grid control with the appropriate **c
                 allowGrouping: true,
                 editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.Dialog },
                 groupSettings:{enableDropAreaAnimation: false},
-
                 // de-DE localization defined for Grid control
                 locale: "de-DE",
-
                 columns: [
                               { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 75 },
                               { field: "CustomerID", headerText: "Customer ID", width: 90 },
@@ -316,16 +290,15 @@ Now define the **locale** property for the Grid control with the appropriate **c
                               { field: "ShipCity", headerText: "Ship City", width: 110 }
                 ]
             });
-
         });
-</script>
+    </script>
 </body>
 </html>    
 
 {% endhighlight %}
 
 Browse your HTML page in any of the web browser and now the screen will display the Grid control with the localized texts. Now double click on any of the row – the edit record dialog too pops-up with the localized words as shown below,
-{% include image.html url="/js/Introduction/Localization_images/Localization_img3.png" %}
+{% include image.html url="/js/Localization_images/Localization_img3.png" %}
 
 #### To change the locale property dynamically in Grid control
 
@@ -340,7 +313,6 @@ Define a dropdownlist control additionally in your HTML page along with the Grid
 <head>
     <title>My first HTML page</title>
     <!-- CSS and Script reference section -->
-
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery.easing.1.3.min.js"></script>
@@ -351,7 +323,6 @@ Define a dropdownlist control additionally in your HTML page along with the Grid
     <script src="Scripts/ej/ej.web.all.min.js"></script>
 </head>
 <body> 
-
     <!--Container for ejGrid widget-->
     <div id="Grid"></div>
 
@@ -363,7 +334,7 @@ Define a dropdownlist control additionally in your HTML page along with the Grid
     </select>
 
 
-<script type="text/javascript">
+    <script type="text/javascript">
        //Collection of localized words defined for de-DE & es-ES culture pre-defined
         ej.Grid.locale["es-ES"] = {
             EmptyRecord: "No hay registros que mostrar",
@@ -405,10 +376,8 @@ Define a dropdownlist control additionally in your HTML page along with the Grid
                 allowGrouping: true,
                 editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.Dialog },
                 groupSettings:{enableDropAreaAnimation: false},
-
                 // de-DE localization defined for Grid control
                 locale: "de-DE",
-
                 columns: [
                               { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 75 },
                               { field: "CustomerID", headerText: "Customer ID", width: 90 },
@@ -417,28 +386,20 @@ Define a dropdownlist control additionally in your HTML page along with the Grid
                               { field: "ShipCity", headerText: "Ship City", width: 110 }
                 ]
             });
-
            // declaration of ejDropDownList
             $("#language").ejDropDownList({ 
                    change: "onChange", // Event raised when the dropdown selection changes
                    selectedItemIndex: 1 
             });
-
-
         });
-
       // event handler – when the dropdown selection option changes
       function onChange(args) {
            // Setting the locale value dynamically for the Grid control
            $("#Grid").ejGrid("model.locale", args.value);
-
       }
-
-</script>
+    </script>
 </body>
 </html>    
-
-
 
 {% endhighlight %}
 
