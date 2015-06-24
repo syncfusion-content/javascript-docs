@@ -9,10 +9,9 @@ documentation: ug
 
 # Stripline
 
-**Stripline** in **Gantt** control is used to highlight the important event in **Gantt** chart part. By using this feature, you can add the **striplines** to highlight important days in your project. The following code example shows you how to add the **stripline** in **Gantt** control.
+Stripline in Gantt control is used to highlight the important event in Gantt chart part. By using this feature, you can add the striplines to highlight important days in your project. The following code example shows you how to add the stripline in Gantt control.
 
 {% highlight js %}
-
 
     $("#GanttContainer").ejGantt({
         //...
@@ -25,12 +24,8 @@ documentation: ug
         }]
     });
 
-
 {% endhighlight %}
 
+The following screenshot shows stripline in Gantt control.
 
-
-The following screenshot shows **stripline** in **Gantt** control.
-
-{% include image.html url="/js/Gantt/Stripline_images/Stripline_img1.png" Caption="Stripline"%}
-
+{% include image.html url="/js/Gantt/Stripline_images/Stripline_img1.png"%}
