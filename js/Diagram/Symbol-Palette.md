@@ -138,7 +138,7 @@ $("#palette").ejSymbolPalette({
 
 ## Preview for Drag and Drop
 
-Diagram provides preview support for **Palette item** during drag and drop. When you drag an item from the palette to **Diagram**, a preview of the dragged item is displayed.
+Diagram provides preview support for **Palette item** during drag and drop. When you drag an item from the palette to Diagram, a preview of the dragged item is displayed.
 
 ### Preview Appearance
 

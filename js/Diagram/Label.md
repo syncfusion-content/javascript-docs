@@ -77,7 +77,7 @@ var node = {
 
 ## Label Rotation
 
-**Diagram** provides support to rotate labels. You can rotate labels to some specified angles. The following code illustrates how to specify the rotation angle for labels.
+Diagram provides support to rotate labels. You can rotate labels to some specified angles. The following code illustrates how to specify the rotation angle for labels.
 
 {% highlight js %}
 

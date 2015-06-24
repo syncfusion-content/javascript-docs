@@ -9,11 +9,11 @@ documentation: ug
 
 # Group
 
-**Diagram** provides support to **Group** and **Ungroup** nodes. **Group** is a composite node that has a set of child nodes/connector and it is a container for its children. All the operations performed on a Group also affect the individual child in that particular Group. You can edit any node/connector in the group individually. On **Ungrouping**, the children in the group is a individual node/connector of the Diagram model. 
+Diagram provides support to `Group` and `Ungroup` nodes. `Group` is a composite node that has a set of child nodes/connector and it is a container for its children. All the operations performed on a Group also affect the individual child in that particular Group. You can edit any node/connector in the group individually. On Ungrouping, the children in the group is a individual node/connector of the Diagram model. 
 
 ## Create Group
 
-You can create **Group** like node and add it to the Diagram model using diagram model’s **nodes** property. You can set **isGroup** property as **true** to differentiate the group from node. You can set the array of children (nodes/connectors) names to **children** property. The group’s children nodes/connectors are added to the node array before adding the group to nodes array. 
+You can create `Group` like node and add it to the Diagram model using `diagram model`’s `nodes` property. You can set `isGroup` property as `true` to differentiate the group from node. You can set the array of children (`nodes`/`connectors`) names to `children` property. The `group`’s `children` `nodes`/`connectors` are added to the node array before adding the group to nodes array. 
 
 The following code illustrates how a group node is created and added in the nodes array.
 
@@ -74,7 +74,7 @@ Rotate</td><td>
 
 ## Layout Panel
 
-The **Container** property of **Group** can be set to any of the available **‘layout panel’**. It is used to control the size and position of Group’s children. There are two types of layout panels.
+The `container` property of `Group` can be set to any of the available `layout panel`. It is used to control the size and position of Group’s children. There are two types of layout panels.
 
 * Canvas panel 
 * Stack panel

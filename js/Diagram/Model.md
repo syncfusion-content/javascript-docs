@@ -9,7 +9,7 @@ documentation: ug
 
 # Model
 
-The **Diagram** model represents data for rendering the Diagram and manipulating the Diagram elements. The following code illustrates how to create a **Diagram** with some model properties.
+The Diagram model represents data for rendering the Diagram and manipulating the Diagram elements. The following code illustrates how to create a Diagram with some model properties.
 
 {% highlight js %}
 

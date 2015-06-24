@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Diagram** in your application with **JavaScript**.
+This section explains briefly about how to create a Diagram in your application with JavaScript.
 
 ## Create your first Diagram in JavaScript
 

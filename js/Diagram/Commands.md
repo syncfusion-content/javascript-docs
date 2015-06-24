@@ -101,7 +101,7 @@ Align the nodes/connectors in the selection list with equal vertical distance be
 
 ### spaceAcross Command
 
-The **spaceAcross command** spaces selected nodes with equal horizontal distance between them. The following code illustrates how to execute **spaceAcross command.**
+The `spaceAcross` command spaces selected nodes with equal horizontal distance between them. The following code illustrates how to execute spaceAcross command.
 
 {% highlight js %}
 
@@ -114,7 +114,7 @@ diagram.spaceAcross();
 
 ### spaceDown Command
 
-The **spaceDown command** spaces selected nodes with equal vertical distance between them. The following code illustrate how to execute **spaceDown command.**
+The `spaceDown` command spaces selected nodes with equal vertical distance between them. The following code illustrate how to execute spaceDown command.
 
 {% highlight js %}
 
@@ -149,7 +149,7 @@ Width of the nodes in the selection list is resized to width of first node in th
 </table>
 
 
-The following code illustrate how to execute **Sizing command**
+The following code illustrate how to execute Sizing command
 
 {% highlight js %}
 
@@ -168,7 +168,7 @@ diagram.sameWidth();
 
 ## Clipboard command
 
-**Clipboard command** are used to cut, copy, and paste the selected elements on Diagram. The following are the **Clipboard command**.
+**Clipboard command** are used to cut, copy, and paste the selected elements on Diagram. The following are the Clipboard command.
 
 * cut
 * copy
@@ -176,7 +176,7 @@ diagram.sameWidth();
 
 ### Cut
 
-**Cut** the selected elements from the Diagram to the Diagram’s clipboard. The following code illustrates how to execute **Cut command**.
+`cut` the selected elements from the Diagram to the Diagram’s clipboard. The following code illustrates how to execute Cut command.
 
 {% highlight js %}
 
@@ -187,7 +187,7 @@ diagram.cut();
 
 ### Copy
 
-**Copy** the selected elements from the Diagram to the Diagram’s clipboard. The following code illustrates how to execute **Copy command**.
+`copy` the selected elements from the Diagram to the Diagram’s clipboard. The following code illustrates how to execute Copy command.
 
 {% highlight js %}
 
@@ -198,7 +198,7 @@ diagram.copy();
 
 ### Paste
 
-**Paste** the Diagram’s clipboard data (nodes/connectors) into the Diagram. The following code illustrates how to execute **Paste command**.
+'paste` the Diagram’s clipboard data (nodes/connectors) into the Diagram. The following code illustrates how to execute Paste command.
 
 {% highlight js %}
 
@@ -215,7 +215,7 @@ diagram.paste();
 
 ### Group
 
-The following code illustrates how to **Group** the selected elements on Diagram.
+The following code illustrates how to Group the selected elements on Diagram.
 
 {% highlight js %}
 
@@ -226,7 +226,7 @@ diagram.group();
 
 ### Ungroup
 
-The following code illustrates how to **Ungroup** the selected group on diagram.
+The following code illustrates how to Ungroup the selected group on diagram.
 
 {% highlight js %}
 
@@ -247,7 +247,7 @@ These commands provide support to control overlapping objects.
 
 ### bringToFront Command
 
-The **bringToFront** command moves the selected element over other elements by increasing the selected element’s z-index to Diagram element’s maximum value. The following code illustrates how to execute the **BringToFront** command.
+The `bringToFront` command moves the selected element over other elements by increasing the selected element’s z-index to Diagram element’s maximum value. The following code illustrates how to execute the BringToFront command.
 
 {% highlight js %}
 
@@ -260,7 +260,7 @@ diagram.bringToFront();
 
 ### sendToBack Command
 
-The **sendToBack** command moves the selected element behind all other elements by setting the selected element’s z-index to zero. The following code illustrates how to execute **sendToBack** command.
+The `sendToBack` command moves the selected element behind all other elements by setting the selected element’s z-index to zero. The following code illustrates how to execute sendToBack command.
 
 {% highlight js %}
 
@@ -273,7 +273,7 @@ diagram.sendToBack();
 
 ### moveForward Command
 
-The **moveForward** command increases the z-index value of the selected element by 1. The following code illustrates how to execute **moveForward** Command.
+The `moveForward` command increases the z-index value of the selected element by 1. The following code illustrates how to execute moveForward Command.
 
 {% highlight js %}
 
@@ -286,7 +286,7 @@ diagram.moveForward();
 
 ### sendBackward Command
 
-The **sendBackward** command decreases the z-index value of the selected element by 1. The following code illustrates how to execute **sendBackward** command.
+The `sendBackward` command decreases the z-index value of the selected element by 1. The following code illustrates how to execute sendBackward command.
 
 {% highlight js %}
 
@@ -299,7 +299,7 @@ diagram.sendBackward();
 
 ## Zoom Command
 
-**Zoom** feature is used to zoom-in and zoom-out the Diagram view and the zooming performed based on the center of current Diagram view. The following code illustrates how to zoom-in the Diagram.
+Zoom feature is used to zoom-in and zoom-out the Diagram view and the zooming performed based on the center of current Diagram view. The following code illustrates how to zoom-in the Diagram.
 
 {% highlight js %}
 
@@ -332,7 +332,7 @@ function ZoomOut() {
 
 ## Nudge Command
 
-**Nudge** command move selected elements on the Diagram toward up, down, left or right by 1 pixel. The **Nudge** command is as follows.
+`nudge` command move selected elements on the Diagram toward up, down, left or right by 1 pixel. The Nudge command is as follows.
 
 <table>
 <tr>
@@ -350,7 +350,7 @@ Nudge command moves the selected elements towards up/ down/ left/ right by the n
 </table>
 
 
-The following code illustrates how to execute **Nudge** command.
+The following code illustrates how to execute Nudge command.
 
 {% highlight js %}
 
@@ -365,11 +365,11 @@ The corresponding arrow keys are used to move the selected elements to up, down,
 
 {% include image.html url="/js/Diagram/Commands_images/Commands_img11.png" %}
 
-**Nudge** command are particularly useful for accurate placement of **Diagram** elements on the **Diagram** as it allows you to move by 1 pixel each time.
+`nudge` command are particularly useful for accurate placement of elements on the Diagram as it allows you to move by 1 pixel each time.
 
 ## FitToPage command
 
-**FitToPage** command helps to fit the Diagram content into the view with respect to either width, height or at the whole.
+`fitToPage` command helps to fit the Diagram content into the view with respect to either width, height or at the whole.
 
 <table>
 <tr>
@@ -392,7 +392,7 @@ Value accepted-ej.datavisualization.Diagram.Region<br/><br/>
 </table>
 
 
-The following code illustrates how to execute **FitToPage** command.
+The following code illustrates how to execute FitToPage command.
 
 {% highlight js %}
 
@@ -407,7 +407,7 @@ diagram.fitToPage("page", "content", {
 
 ### FitToMode
 
-**Mode** is to specify whether the Diagram content can be fit into view with respect to width, height or entire bounds of diagram.
+`Mode` is to specify whether the Diagram content can be fit into view with respect to width, height or entire bounds of diagram.
 
 <table>
 <tr>
@@ -431,7 +431,7 @@ Fits the height of <b>Diagram</b> content into view</td></tr>
 
 ### Region
 
-Region is to specify the region/bounds of Diagram content to fit into view.
+`Region` is to specify the region/bounds of Diagram content to fit into view.
 
 <table>
 <tr>

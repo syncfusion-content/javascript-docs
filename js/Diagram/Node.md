@@ -15,7 +15,7 @@ Nodes are graphical object that represents visual data to be placed on the page.
 
 ## Create Node
 
-Node is created from JSON data and added to the **Diagram** model using diagram model’s **node** property. The node’s name must be unique. The following code illustrates how to create a node and add it to the **Diagram.**
+Node is created from JSON data and added to the Diagram model using diagram model’s `node` property. The `node`’s `name` must be unique. The following code illustrates how to create a node and add it to the Diagram.
 
 {% highlight js %}
 //create a node with default shape (Rectangle)
@@ -41,11 +41,11 @@ $("#Diagram").ejDiagram({
 
 {% include image.html url="/js/Diagram/Node_images/Node_img2.png" %}
 
-List of preloaded nodes from symbol palette are added to the **Diagram** by clicking on the palette nodes or by dragging a node and dropping on the **Diagram**. The method to add node/connector to palette and drag and drop on **Diagram** is explained in palettesection
+List of preloaded nodes from symbol palette are added to the Diagram by clicking on the palette nodes or by dragging a node and dropping on the Diagram. The method to add node/connector to palette and drag and drop on Diagram is explained in palettesection
 
 ## Node Shapes
 
-**Diagram** has a collection of predefined shapes. The shape to be drawn can be set by using a set of shape specific properties. The most commonly used shapes are:
+Diagram has a collection of predefined shapes. The shape to be drawn can be set by using a set of shape specific properties. The most commonly used shapes are:
 
 * Rectangle (A type of basic shape)
 * Ellipse (A type of basic shape)
@@ -54,9 +54,10 @@ List of preloaded nodes from symbol palette are added to the **Diagram** by clic
 * Native
 * Path (A type of basic shape)
 * Polygon (A type of basic shape)
-**Rectangle**
 
-You can create a rectangle shape by setting the type of node’s type as **ej.datavisualization.Diagram.Shapes.Basic** and node’s shape as **ej.datavisualization.Diagram.BasicShapes.Rectangle**. The following code illustrates how a rectangle node is created.
+### Rectangle
+
+You can create a rectangle shape by setting the type of `node`’s `type` as `ej.datavisualization.Diagram.Shapes.Basic` and `node`’s `shape` as `ej.datavisualization.Diagram.BasicShapes.Rectangle`. The following code illustrates how a rectangle node is created.
 
 {% highlight js %}
 
@@ -86,7 +87,7 @@ node = {
 
 ### Html
 
-**Html** elements are embedded in diagram through **Html shape node**. The following code illustrates how an **Html** node is created.
+**Html** elements are embedded in diagram through Html shape node. The following code illustrates how an Html node is created.
 
 {% highlight html %}
 <!-- dependency scripts -->
@@ -111,11 +112,10 @@ var node = {
 
 ### Text Node
 
-You can add Text to the **Diagram** using **Text shape node**. The text shape has **textblock** that contains text, font style and align properties. The following code illustrates how to create a **Text** node.
+You can add Text to the Diagram using **Text shape node**. The text shape has `textblock` that contains text, font style and align properties. The following code illustrates how to create a `Text` node.
 
 {% highlight js %}
 //create a node with text content
-
 var Diagram = ej.datavisualization.Diagram;
 
 var node = {
@@ -131,7 +131,7 @@ var node = {
 
 ### Path
 
-You can create complex shapes using **Path shape node**. It is achieved by assigning path string to shape’s **pathData**. The following code illustrates how a **Path node** is created.
+You can create complex shapes using **Path shape node**. It is achieved by assigning path string to `shape`’s `pathData`. The following code illustrates how a `Path` node is created.
 
 {% highlight js %}
 
@@ -149,7 +149,7 @@ var node = {
 
 ### Polygon
 
-You can create **Polygon** shape by setting node’s type as **ej.datavisualization.Diagram.Shapes.Polygon** and assigns the desired points to the node’s **point** property.
+You can create **Polygon** shape by setting `node`’s type as `ej.datavisualization.Diagram.Shapes.Polygon` and assigns the desired points to the `node`’s `point` property.
 
 {% highlight js %}
 
@@ -177,7 +177,7 @@ var node = {
 
 ### Native 
 
-**Diagram** supports to add **SVG** content as shape content. It is achieved by setting node’s type as **ej.datavisualization.Diagram.Shapes.Native** and assigns the template id to the **templateId** property. The **templateId** property receives **id svg** template. The following code illustrates how a **Native node** is created.
+Diagram supports to add **SVG** content as shape content. It is achieved by setting node’s type as `ej.datavisualization.Diagram.Shapes.Native` and assigns the template id to the `templateId` property. The `templateId` property receives id svg template. The following code illustrates how a Native node is created.
 
 {% highlight html %}
 <!-- dependency scripts -->
@@ -218,7 +218,7 @@ var node = {
 
 ### Image
 
-You can add **Image** as a node to the **Diagram** by setting node’s type as **ej.datavisualization.Diagram.Shapes.Image** and set the image **URL** to **source** property of shape. The following code illustrates how an **Image** node is created.
+You can add **Image** as a node to the Diagram by setting node’s type as `ej.datavisualization.Diagram.Shapes.Image` and set the image URL to `source` property of shape. The following code illustrates how an Image node is created.
 
 {% highlight js %}
 
@@ -233,11 +233,11 @@ var node = {
 
 ## Shadow
 
-**Drop shadow effect** for a **node** can be enabled or disabled by using the **NodeConstraints.Shadow**. The following image represents the **drop shadow effect** for a **Node**.
+**Drop shadow effect** for a node can be enabled or disabled by using the `NodeConstraints.Shadow`. The following image represents the drop shadow effect for a Node.
 
 {% include image.html url="/js/Diagram/Node_images/Node_img10.png" %}
 
-The following code example illustrates how to enable or disable the **shadow**.
+The following code example illustrates how to enable or disable the shadow.
 
 {% highlight js %}
 
@@ -254,7 +254,7 @@ var node = {
 
 **Customizing Shadow**
 
-Position and opacity of the **shadow** can be customized by using opacity, angle, and distance of the **shadow**. The following code example illustrates how to customize the **shadow.**
+Position and opacity of the `shadow` can be customized by using `opacity`, `angle`, and `distance` of the `shadow`. The following code example illustrates how to customize the `shadow`.
 
 {% highlight js %}
 
@@ -352,7 +352,7 @@ var node = {
 
 **Node Constraints**
 
-You can enable or disable certain behaviors of **Nodes** by using Node’s **constraints** property.
+You can enable or disable certain behaviors of Nodes by using `Node`’s `constraints` property.
 
 <table>
 <tr>
@@ -441,7 +441,7 @@ None</td><td>
 Disables all the constraints.</td></tr>
 </table>
 
-The Default value for the node constraints property is **ej.datavisualization.Diagram.NodeConstraints.Default.** The following code illustrates how to enable rotate, select constraints, and disable other constraints.
+The Default value for the node constraints property is `ej.datavisualization.Diagram.NodeConstraints.Default`. The following code illustrates how to enable rotate, select constraints, and disable other constraints.
 
 {% highlight js %}
  
