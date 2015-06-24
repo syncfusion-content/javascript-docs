@@ -17,7 +17,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight html %}
 
-     <div id="Uploadbox"></div>
+<div id="Uploadbox"></div>
 
 {% endhighlight %}
 
@@ -41,5 +41,5 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Enable-or-Disable-the-Uploadbox_images/Enable-or-Disable-the-Uploadbox_img1.png" Caption="Uploadbox with enabled property"%}
+{% include image.html url="/js/UploadBox/Enable-or-Disable-the-Uploadbox_images/Enable-or-Disable-the-Uploadbox_img1.png" %}
 

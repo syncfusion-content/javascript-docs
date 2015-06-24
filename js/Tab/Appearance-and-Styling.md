@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-**Header Image Customization**
+## Header Image Customization
 
 To set the **Tab** header image for each **Tab** item you can specify image in &lt;span&gt; tag element during the **Tab** header declaration time.
 
@@ -22,20 +22,20 @@ Add the following **HTML** to render **Tab** with header image.
 {% highlight html %}
 
 
-     <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><span class="dish pizzaImg"></span><a href="#pizza">Pizza Menu</a></li>
-            <li><span class="dish sandwichImg"></span><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+ <div id="dishtype" style="width: 650px">
+    <ul>
+        <li><span class="dish pizzaImg"></span><a href="#pizza">Pizza Menu</a></li>
+        <li><span class="dish sandwichImg"></span><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ The following screenshot illustrates the **Tab** with the customized header imag
 {% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Header Image Customization"%}
 
 
-**Rounded corner**
+## Rounded corner
 
 By enabling ‘**showRoundedCorner’** property, you can customize the shape of the **Tab** widget from regular rectangular shape to rounded rectangle shape that is set to ‘**false**’ by default. 
 
@@ -94,20 +94,20 @@ Add the following **HTML** to render **Tab** with rounder corner.
 {% highlight html %}
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -123,33 +123,34 @@ Add the following **HTML** to render **Tab** with rounder corner.
 
 The following screenshot illustrates the **Tab** with Rounded corner.
 
-{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Tab with rounded corner"%}
+{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
 
 
-**Enable/Disable**
+## Enable/Disable
 
 You can enable or disable the **Tab** widget by ‘**enabled’** property. By default, the property set to ‘**true**’**.**
 
 The following code example is used to render the **Tab** widget with enable/disable.
 
 Add the following **HTML** to render **Tab** with enable/disable.
+
 {% highlight html %}
 
-  
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -166,10 +167,10 @@ Add the following **HTML** to render **Tab** with enable/disable.
 
 The following screenshot illustrates the **Tab** with disabled format.
 
-{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Tab with disabled format"%}
+{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
 
 
- **Enabling Reload Icon**
+ ## Enabling Reload Icon
  
 Without refresh/reload the whole page, you can reload a particular **Tab** using **Reload** icon. The **Reload** icon is appeared at right corner of the **Tab** by enabling the property ‘**showReloadIcon**’ to ‘**true**’. When you move cursor over the **Tab** headers, the **Reload** icon is displayed. By default the property value is set to ‘**false**’.   
 
@@ -181,20 +182,20 @@ Add the following **HTML** to render **Tab** with **Reload** icon.
 {% highlight html %}
 
         
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -209,10 +210,10 @@ Add the following **HTML** to render **Tab** with **Reload** icon.
 
 The following screenshot illustrates the **Tab** with **Reload** icon.
 
-{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="Tab with reload icon"%}
+{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" %}
 
 
-**Collapsible Tabs**
+## Collapsible Tabs
 
 You can collapse the **Tab** content by enabling the ‘**collapsible’** property to ‘**true**’. When the property is set to ‘**true**’ then click the active **Tab** header, the **Tab** contents are hided. By default, the property value is set to ‘**false**’.
 
@@ -223,20 +224,20 @@ Add the following **HTML** to render **Tab** with customized collapsible mode.
 {% highlight html %}
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -253,12 +254,12 @@ Add the following **HTML** to render **Tab** with customized collapsible mode.
 
 The following screenshot illustrates the **Tab** with customized collapsible mode.
 
-{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="Tab with customized collapsible mode"%}
+{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" %}
 
 
-**Adjusting Tab Size**
+## Adjusting Tab Size
 
-**Height Adjust Mode and Height**
+### Height Adjust Mode and Height
 
 The height of the **Tab** widget is customized by ‘**height**’ property. The **Tab** widget height depends on ‘**heightAdjustMode**’ property. Using the **heightAdjustMode** property, you can adjust height by “**content**”, “**auto**”, “**fill**”. By default the **heightAdjustMode** is set as **content**.
 
@@ -269,20 +270,20 @@ Add the following **HTML** to render **Tab** with customized height and height a
 {% highlight html %}
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 
 {% endhighlight %}
@@ -300,12 +301,12 @@ Add the following **HTML** to render **Tab** with customized height and height a
 
 The following screenshot illustrates the **Tab** with customized height and height adjust mode.
 
-{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="Tab wit customized height and height adjust mode"%}
+{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" %}
 
 
 
 
-**Width**
+### Width
 
 The **width** of the **Tab** widget is customized by using ‘**width**’ property that accepts only the pixel values.
 
@@ -316,20 +317,20 @@ Add the following **HTML** to render **Tab** with customized width.
 {% highlight html %}
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 
 {% endhighlight %}
@@ -346,10 +347,10 @@ Add the following **HTML** to render **Tab** with customized width.
 
 The following screenshot illustrates the **Tab** with customized width.
 
-{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption="Tab with customized width"%}
+{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" %}
 
 
-**Theme**
+## Theme
 
 **Tab** control’s style and appearance are controlled based on **CSS** classes. In order to apply styles to the **Tab** control, you can refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. When the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.widgets.all.min.css** is the combination of these two. 
 
@@ -369,7 +370,7 @@ By default, there are 13 themes support available for **Tab** control namely
 * gradient-saffron
 * gradient-saffron-dark
 
-**Custom styles**
+## Custom styles
 
 The style of the **Tab** widget is customized by ‘**cssClass**’ property. 
 
@@ -380,20 +381,20 @@ Add the following **HTML** to render **Tab** with customized style.
 {% highlight html %}
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -411,18 +412,18 @@ Add the following styles
 
 {% highlight css %}
 
-    <style type="text/css">
-        .custom {
-            width:650px;
-        }
-    </style>
+<style type="text/css">
+    .custom {
+        width:650px;
+    }
+</style>
     
 
 {% endhighlight %}
 
 The following screenshot illustrates the **Tab** with customized style.
 
-{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img8.png" Caption="Tab with customized style"%}
+{% include image.html url="/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img8.png" %}
 
 
 

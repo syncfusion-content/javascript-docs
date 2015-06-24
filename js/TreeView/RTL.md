@@ -17,45 +17,45 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 {% highlight html %}
 
-    <ul id="treeView">
-        <li class="expanded">Favorites
-                <ul>
-                    <li>Desktop</li>
-                    <li>Downloads</li>
-                    <li>Recent places</li>
-                </ul>
-        </li>
-        <li class="expanded">Libraries
-                <ul>
-                    <li>Documents
-                        <ul>
-                            <li>My Documents</li>
-                            <li>Public Documents</li>
-                        </ul>
-                    </li>
-                    <li>Pictures
-                        <ul>
-                            <li>My Pictures</li>
-                            <li>Public Pictures</li>
-                        </ul>
-                    </li>
-                    <li>Music
-                        <ul>
-                            <li>My Music</li>
-                            <li>Public Music</li>
-                        </ul>
-                    </li>
-                    <li>Subversion</li>
-                </ul>
-        </li>
-        <li>Computer
-                <ul>
-                    <li>Folder(C)</li>
-                    <li>Folder(D)</li>
-                    <li>Folder(F)</li>
-                </ul>
-        </li>
-    </ul>
+<ul id="treeView">
+    <li class="expanded">Favorites
+            <ul>
+                <li>Desktop</li>
+                <li>Downloads</li>
+                <li>Recent places</li>
+            </ul>
+    </li>
+    <li class="expanded">Libraries
+            <ul>
+                <li>Documents
+                    <ul>
+                        <li>My Documents</li>
+                        <li>Public Documents</li>
+                    </ul>
+                </li>
+                <li>Pictures
+                    <ul>
+                        <li>My Pictures</li>
+                        <li>Public Pictures</li>
+                    </ul>
+                </li>
+                <li>Music
+                    <ul>
+                        <li>My Music</li>
+                        <li>Public Music</li>
+                    </ul>
+                </li>
+                <li>Subversion</li>
+            </ul>
+    </li>
+    <li>Computer
+            <ul>
+                <li>Folder(C)</li>
+                <li>Folder(D)</li>
+                <li>Folder(F)</li>
+            </ul>
+    </li>
+</ul>
 
 {% endhighlight %}
 
@@ -70,5 +70,5 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 The output for **TreeView** when **enableRTL** is set to “**True**” is as follows.
 
-{% include image.html url="/js/TreeView/RTL_images/RTL_img1.png" Caption="TreeView with enableRTL"%}
+{% include image.html url="/js/TreeView/RTL_images/RTL_img1.png"%}
 

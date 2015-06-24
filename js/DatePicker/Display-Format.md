@@ -18,28 +18,50 @@ The standard formats are listed as follows,
 Date format
 
 <table>
-<tr>
-<th>Format Name</th><th>Formats</th></tr>
-<tr>
-<td>
-Default</td><td>
-MM/dd/yyyy</td></tr>
-<tr>
-<td>
-Short</td><td>
- d M, y</td></tr>
-<tr>
-<td>
-Medium</td><td>
-d MM, y</td></tr>
-<tr>
-<td>
-Full</td><td>
-dddd,d MMMM,yy</td></tr>
-<tr>
-<td>
-UTC</td><td>
-yyyy-MM-dd</td></tr>
+   <tr>
+      <th>Format Name</th>
+      <th>Formats</th>
+   </tr>
+   <tr>
+      <td>
+         Default
+      </td>
+      <td>
+         MM/dd/yyyy
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Short
+      </td>
+      <td>
+         d M, y
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Medium
+      </td>
+      <td>
+         d MM, y
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Full
+      </td>
+      <td>
+         dddd,d MMMM,yy
+      </td>
+   </tr>
+   <tr>
+      <td>
+         UTC
+      </td>
+      <td>
+         yyyy-MM-dd
+      </td>
+   </tr>
 </table>
 
 
@@ -50,31 +72,30 @@ The following steps explain you how to set the date format as "**d MM, y**"
 In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
 
-  {% highlight html %}
+{% highlight html %}
   
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
-  
+{% highlight js %}
 
-        // Add the code to set the date format as "d MM, y" for DatePicker widget
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                dateFormat: "d MM, y"
-            });
-        });
+    // Add the code to set the date format as "d MM, y" for DatePicker widget
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker({
+          dateFormat: "d MM, y"
+       });
+    });
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
 The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img1.png" Caption="DateFormat in DatePicker"%}
+{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img1.png"%}
 
 ## Day header format
 
@@ -83,24 +104,42 @@ It specifies the **header format** of days in short, long or min types. You can 
 Enum for DatePicker day header format
 
 <table>
-<tr>
-<th>Day header</th><th>Description</th></tr>
-<tr>
-<td>
-ShowHeaderShort</td><td>
-It shows the day header format in short</td></tr>
-<tr>
-<td>
-ShowHeaderMin</td><td>
-It shows the header format in min</td></tr>
-<tr>
-<td>
-ShowHeaderLong</td><td>
-It shows the day header format in long</td></tr>
-<tr>
-<td>
-ShowHeaderNone</td><td>
-Removes the day header</td></tr>
+   <tr>
+      <th>Day header</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>
+         ShowHeaderShort
+      </td>
+      <td>
+         It shows the day header format in short
+      </td>
+   </tr>
+   <tr>
+      <td>
+         ShowHeaderMin
+      </td>
+      <td>
+         It shows the header format in min
+      </td>
+   </tr>
+   <tr>
+      <td>
+         ShowHeaderLong
+      </td>
+      <td>
+         It shows the day header format in long
+      </td>
+   </tr>
+   <tr>
+      <td>
+         ShowHeaderNone
+      </td>
+      <td>
+         Removes the day header
+      </td>
+   </tr>
 </table>
 
 
@@ -109,29 +148,28 @@ The following steps explain you how to get the **dayHeaderFormat** for **DatePic
 In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
 
-  {% highlight html %}
+{% highlight html %}
 
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
-       // Add the code to get the dayHeaderFormat of DatePicker widget
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                dayHeaderFormat: ej.DatePicker.Header.ShowHeaderLong
-            });
-        });
-
-
-  {% endhighlight %}
+    // Add the code to get the dayHeaderFormat of DatePicker widget
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker({
+          dayHeaderFormat: ej.DatePicker.Header.ShowHeaderLong
+       });
+    });
+    
+{% endhighlight %}
 
 The following screenshot displays the output for the above code.
 
 
-{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img2.png" Caption="Header Format in DatePicker"%}
+{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img2.png"%}
 
 ## Header format
 
@@ -141,29 +179,28 @@ The following steps explain you how to the header format to be displayed in the 
 
 In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
-  {% highlight html %}
+{% highlight html %}
   
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
-        // Add the code to set the header format to be displayed in the pop up of DatePicker widget
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                headerFormat: "MMMM/yy"
-            });
-        });
+    // Add the code to set the header format to be displayed in the pop up of DatePicker widget
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker({
+          headerFormat: "MMMM/yy"
+       });
+    });
 
-
-  {% endhighlight %}
+{% endhighlight %}
 
 
 The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img3.png" Caption="Header Format in DatePicker"%}
+{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img3.png"%}
 

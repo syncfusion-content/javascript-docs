@@ -19,46 +19,41 @@ In the **HTML** page set the **&lt;div&gt;** element to render **Splitter** cont
 
 {% highlight html %}
 
-     <div id="splitter">
-        <div>
-            <div style="padding: 0px 15px;">
-                <h3 class="h3">Tools </h3>
-                Essential Tools is an collection of user interface components used to create interactive
-                                ASP.NET MVC applications.
-            </div>
-        </div>
-        <div>
-            <div style="padding: 0px 15px;">
-                <h3 class="h3">Grid </h3>
-                Essential Mvc Grid offers full featured a Grid control with extensive support for
-                                Grouping and the display of hierarchical data.
-            </div>
+<div id="splitter">
+    <div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Tools </h3>
+            Essential Tools is an collection of user interface components used to create interactive
+                            JavaScript applications.
         </div>
     </div>
+    <div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Grid </h3>
+            Essential JavaScript Grid offers full featured a Grid control with extensive support for
+                            Grouping and the display of hierarchical data.
+        </div>
+    </div>
+</div>
         
 {% endhighlight %}
 
 {% highlight js %}
-
-
+  
     $("#splitter").ejSplitter({
        height: 280, width: 600,
        properties: [{collapsible: true}]
     });  
 
-
 {% endhighlight %}
-
 
 The output for **Splitter** when **collapsible** is set to “**True**” is as follows.
 
-
-
-{% include image.html url="/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img1.png" Caption="Splitter with collapsible as true"%}
+{% include image.html url="/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img1.png" %}
 
 The output for Splitter when **collapsible** is “**false**”.
 
-{% include image.html url="/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img2.png" Caption="Splitter with collapsible as false"%}
+{% include image.html url="/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img2.png" %}
 
 
 

@@ -19,7 +19,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% highlight html %}
 
-     <input type="text" id="colorPicker" />    
+ <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="ColorPicker with Show Preview option"%}
+{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img1.png" %}
 
 ## showRecentColors
 
@@ -47,7 +47,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% highlight html %}
 
 
-     <input type="text" id="colorPicker" />    
+ <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img2.png" Caption="ColorPicker with Recent Color Swatches"%}
+{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img2.png" %}
 
 ## enableOpacity
 
@@ -76,7 +76,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
+<input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="ColorPicker with Opacity Slider as disabled state"%}
+{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img3.png" %}
 
 ## columns
 
@@ -105,7 +105,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
+<input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -121,5 +121,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="ColorPicker with Columns"%}
+{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img4.png" %}
 

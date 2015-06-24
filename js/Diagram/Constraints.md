@@ -55,7 +55,7 @@ Enables all the constraints.</td></tr>
 </table>
 
 
-Default value for the diagram constraints property is ej.datavisualization.Diagram.DiagramConstraints.Default.
+Default value for the `diagram`'s `constraints` property is `ej.datavisualization.Diagram.DiagramConstraints.Default`.
 
 {% highlight js %}
 

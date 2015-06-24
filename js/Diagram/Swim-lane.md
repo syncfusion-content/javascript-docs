@@ -66,7 +66,7 @@ var swimlane = {
 }
 {% endhighlight %}
 ## Specifying headers 
-By using the header property, headers can be added to lanes and phases of the swim lane.
+By using the `header` property, headers can be added to `lanes` and `phases` of the swim lane.
 {% highlight js %}
 var swimlane = {
     type: "swimlane",
@@ -131,6 +131,6 @@ var swimlane = {
     }]
 }
 {% endhighlight %}
-After adding a node into a lane, the swim lane will display as follows.
+After adding a `node` into a `lane`, the swim lane will display as follows.
 {% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img3.png" %}
-Nodes can also be added into the lanes interactively by dropping nodes from the palette. Similarly connectors can also be added using lane's children or from palette.
+Nodes can also be added into the `lanes` interactively by dropping nodes from the palette. Similarly `connectors` can also be added using `lane`'s `children` or from palette.

@@ -10,18 +10,15 @@ documentation: ug
 # Getting Started 
 
 This section explains briefly about how to create a **Slider** in your application with **JavaScript**.
-
-## Create your first Slider in JavaScript
-
 **Essential JavaScript Slider** widget provides support to display a **Slider** within the webpage. Here, you can learn how to use **Sliders** in a real-time application. The example shows you how to use the **Slider** control to select mobile model within the specified price range in a Mobile Purchase Application.
 
 The following screenshot demonstrates the functionality of **Slider** control. By selecting mobile model in the dropdown, you can purchase a mobile at any rate specified in the **Mobile Price Slider**. In addition, you can also specify the number of mobiles you require by using the **Mobile** **Count** **Slider**. Simultaneously, you can observe the changes in the **Mobile Price** and **Count** using **Sliders**.
 
 
 
-{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img1.png" Caption="Mobile Purchase"%}
+{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img1.png" %}
 
-### Create a Slider
+## Create a Slider
 
 **Essential JavaScript Slider** widget allows you to switch between different ranges of input. The basic **Slider** is in horizontal position and has a single handle that is moved by the mouse or the arrow keys. 
 
@@ -61,46 +58,44 @@ Add input element to render a **Slider**.
 {% highlight html %}
 
 <div class="content-container-fluid">
-    <div class="row">
-        <div class="cols-sample-area">
-            <div class="frame">
-                <div id="priceheading">
-                    <h3>Mobile Purchase</h3>
-                    <input type="text" id="selectmobile" />
-                    <div id="mobileList">
-                        <ul>
-                            <li>Moto X</li>
-                            <li>Moto g</li>
-                            <li>Nexus</li>
-                            <li>Xperia</li>
-                            <li>Samsung</li>
-                        </ul>
-                    </div>
-                </div>
-                <span class="ColumnLeft">
-                    <span class="price">Price</span>
-                </span>
-                <span class="ColumnRight">
-                    <span id="pricetext"> </span>
-                    <span class="value"></span>
-                </span>
-                <div id="priceSlider">
-                </div>
-                <span class="ColumnLeft">
-                    <span class="price">Count</span>
-                </span>
-                <span class="ColumnRight">
-                    <span id="counttext"></span><span class="value"></span>
-                </span>
-                <div id="countSlider">
-                </div>
-                <div id="EventLog"></div>
+   <div class="row">
+      <div class="cols-sample-area">
+         <div class="frame">
+            <div id="priceheading">
+               <h3>Mobile Purchase</h3>
+               <input type="text" id="selectmobile" />
+               <div id="mobileList">
+                  <ul>
+                     <li>Moto X</li>
+                     <li>Moto g</li>
+                     <li>Nexus</li>
+                     <li>Xperia</li>
+                     <li>Samsung</li>
+                  </ul>
+               </div>
             </div>
-        </div>
-    </div>
+            <span class="ColumnLeft">
+            <span class="price">Price</span>
+            </span>
+            <span class="ColumnRight">
+            <span id="pricetext"> </span>
+            <span class="value"></span>
+            </span>
+            <div id="priceSlider">
+            </div>
+            <span class="ColumnLeft">
+            <span class="price">Count</span>
+            </span>
+            <span class="ColumnRight">
+            <span id="counttext"></span><span class="value"></span>
+            </span>
+            <div id="countSlider">
+            </div>
+            <div id="EventLog"></div>
+         </div>
+      </div>
+   </div>
 </div>
-
-
 
 {% endhighlight %}
 
@@ -114,9 +109,9 @@ Add the following styles to show the **Mobile Rate Slider** widget in horizontal
 
 <style type="text/css" class="cssStyles">
     .frame {
-            width: 230px;
-            padding: 50px;
-        }
+        width: 230px;
+        padding: 50px;
+    }
     .price, .count {
         margin-top: 5px;
         font-weight: 400;
@@ -175,60 +170,61 @@ Initialize **Slider** using the following code example.
 
 {% highlight js %}
 
-
- 
-    var priceObj, countObj, priceValue = 0, target;
-    $(function () {
-        $('#selectmobile').ejDropDownList({
-            targetID: "mobileList",
-            width: "150px"
+        var priceObj, countObj, priceValue = 0,target;                
+        $(function() {
+            $('#selectmobile').ejDropDownList({
+                targetID: "mobileList",
+                width: "150px"
+            });
+            var pricevalue = 25,
+                interestvalue = 4,
+                priceValue = 1;
+            $("#priceSlider").ejSlider({
+                height: 16,
+                value: pricevalue,
+                minValue: 10000,
+                maxValue: 50000,
+                incrementStep: 1,
+                change: "onchange",
+                slide: "onchange"
+            });
+            $("#countSlider").ejSlider({
+                height: 16,
+                value: priceValue,
+                minValue: 1,
+                maxValue: 20,
+                incrementStep: 1,
+                change: "onchange",
+                slide: "onchange"
+            });
+            mobObj = $("#selectmobile").data('ejDropDownList');
+            priceObj = $('#priceSlider').data('ejSlider');
+            countObj = $('#countSlider').data('ejSlider');
+            calculate();
         });
-        var pricevalue = 25, interestvalue = 4, priceValue = 1;
-        $("#priceSlider").ejSlider({
-            height: 16,
-            value: pricevalue,
-            minValue: 10000,
-            maxValue: 50000,
-            incrementStep: 1,
-            change: "onchange",
-            slide: "onchange"
-        });
-        $("#countSlider").ejSlider({
-            height: 16,
-            value: priceValue,
-            minValue: 1,
-            maxValue: 20,
-            incrementStep: 1,
-            change: "onchange",
-            slide: "onchange"
-        });
-        mobObj = $("#selectmobile").data('ejDropDownList');
-        priceObj = $('#priceSlider').data('ejSlider');
-        countObj = $('#countSlider').data('ejSlider');
-        calculate();
-    });
-   
-    function onchange(args) {
-        this.wrapper.prev().children('span.value').html(args.value);
-        calculate();
-    }
-    function calculate() {
-        var price = priceObj.getValue();
-        var mob = mobObj.getValue();
-        var count = countObj.getValue();
-        $('#EventLog').html("Mobile is " + mob + "  Price is  Rs" + price + "  Count is  " + count);
-    }
-
+    
+        function onchange(args) {
+            this.wrapper.prev().children('span.value').html(args.value);
+            calculate();
+        }
+    
+        function calculate() {
+            var price = priceObj.getValue();
+            var mob = mobObj.getValue();
+            var count = countObj.getValue();
+            $('#EventLog').html("Mobile is " + mob + "  Price is  Rs" + price + "  Count is  " + count);
+        }
+            
 {% endhighlight %}
 
 
 The following screenshot displays a **Mobile Purchase** using **Slider**.
 
-{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img2.png" Caption="Mobile Purchase"%}
+{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img2.png" %}
 
 
 
-### Create EMI Calculator
+## Create EMI Calculator
 
 Based on the loan amount, interest rate and tenure, you can calculate **EMI** amount using **Slider**.
 
@@ -356,11 +352,15 @@ Initialize **Slider** using the following code example.
 
 {% highlight js %}
 
-    var loanObj, interestObj, tenureObj, loanValue = 0, interestValue = 0, tenureValue = 0;
-    $(function () {
+    var loanObj, interestObj, tenureObj, loanValue = 0,
+    interestValue = 0,
+    tenureValue = 0;
+    $(function() {
 
-        var loanvalue = 25000, interestvalue = 4, tenurevalue = 3;
-
+        var loanvalue = 25000,
+            interestvalue = 4,
+            tenurevalue = 3;
+    
         $("#loanSlider").ejSlider({
             height: 16,
             value: loanvalue,
@@ -370,7 +370,7 @@ Initialize **Slider** using the following code example.
             change: "onchange",
             slide: "onchange"
         });
-
+    
         $("#interestSlider").ejSlider({
             height: 16,
             value: interestvalue,
@@ -379,7 +379,7 @@ Initialize **Slider** using the following code example.
             incrementStep: 1,
             change: "onchange",
             slide: "onchange"
-
+    
         });
         $("#tenureSlider").ejSlider({
             height: 16,
@@ -389,21 +389,25 @@ Initialize **Slider** using the following code example.
             incrementStep: 1,
             change: "onchange",
             slide: "onchange"
-
+    
         });
-
+    
         loanObj = $('#loanSlider').data('ejSlider');
         interestObj = $('#interestSlider').data('ejSlider');
         tenureObj = $('#tenureSlider').data('ejSlider');
         calculate();
     });
+
     function onchange(args) {
         this.wrapper.prev().children('span.value').html(args.value);
         calculate();
     }
+    
     function calculate() {
-        var loan = loanObj.getValue(), interest = interestObj.getValue(), tenure = tenureObj.getValue();
-
+        var loan = loanObj.getValue(),
+            interest = interestObj.getValue(),
+            tenure = tenureObj.getValue();
+    
         var P = loan;
         var y = interest / 1200;
         var tenureamt = tenure * 12;
@@ -413,10 +417,9 @@ Initialize **Slider** using the following code example.
         var ans = top / bottom;
         var final = P * ans;
         var z = Math.round(final);
-
+    
         $('#EventLog').html("Rs: " + z);
     }
-
 
 {% endhighlight %}
 
@@ -424,5 +427,5 @@ Initialize **Slider** using the following code example.
 
 The following screenshot displays a **EMI Calculation application** using **Slider.**
 
-{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img3.png" Caption="EMI Calculator"%}
+{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img3.png" %}
 

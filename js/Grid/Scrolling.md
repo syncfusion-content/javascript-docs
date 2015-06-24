@@ -11,9 +11,9 @@ documentation: ug
 
 ## Default Scrolling
 
-Scrolling is an important feature in **ejGrid**. It makes **Grid** more compatible with layout and design. The **allowScrolling** property is used to enable scrolling functionality to the **ejGrid**. The default value for **allowScrolling** is **false**.
+Scrolling is an important feature in **ejGrid**. It makes **Grid** more compatible with layout and design. The `allowScrolling` property is used to enable scrolling functionality to the **ejGrid**. The default value for `allowScrolling`is **false**.
 
-In this following code example, **scrollSettings** property is used to adjust the **Grid** width and height. 
+In this following code example, `scrollSettings` property is used to adjust the **Grid** width and height. 
 
 {% highlight html %}
 
@@ -50,17 +50,17 @@ In this following code example, **scrollSettings** property is used to adjust t
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Scrolling_images/Scrolling_img1.png" Caption="Scrolling"%}
+{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img1.png"%}
 
 ## Scroll Settings
 
-The **scrollSettings** contains the properties to enable scrolling related functionalities in the **ejGrid**.
+The `scrollSettings` contains the properties to enable scrolling related functionalities in the **ejGrid**.
 
 ### To Enable Vertical Scrolling
 
-The **height** property in the **scrollSettings** is used to enable the vertical scroll bar in the Grid. The scroll height should be less than the Grid content height. That is, total rows height for enabling vertical scroll bar.
+The `height` property in the `scrollSettings` is used to enable the vertical scroll bar in the Grid. The scroll height should be less than the Grid content height. That is, total rows height for enabling vertical scroll bar.
 
-The **height** property can support percentage, pixel and auto values in **scrollSettings**. The default value for height in **scrollSettings** is 0.
+The `height` property can support percentage, pixel and auto values in `scrollSettings`. The default value for height in `scrollSettings` is 0.
 
 The following code example illustrates how to enable vertical scrolling in the **Grid**. 
 
@@ -98,15 +98,15 @@ The following code example illustrates how to enable vertical scrolling in the *
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Scrolling_images/Scrolling_img2.png" Caption="Vertical scrolling Grid"%}
+{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img2.png"%}
 
 ### To Enable Horizontal Scrolling
 
-The **width** property in the **scrollSettings** is used to enable the horizontal scroll bar in the **Grid**. The scroll width should be less than the Grid content width. That is, total columns width for enabling horizontal scroll bar.
+The `width` property in the `scrollSettings` is used to enable the horizontal scroll bar in the **Grid**. The scroll width should be less than the Grid content width. That is, total columns width for enabling horizontal scroll bar.
 
-The **width** property can support percentage, pixel and auto values in **scrollSettings**. The default value for width in **scrollSettings** is **auto**. The default Grid content width is 100%, when you don’t specify the width to the columns it takes its width value from the Grid content.
+The `width` property can support percentage, pixel and auto values in `scrollSettings`. The default value for width in `scrollSettings` is **auto**. The default Grid content width is 100%, when you don’t specify the width to the columns it takes its width value from the Grid content.
 
-When you set **width** as **auto,** it renders **Grid** with browser calculate value.
+When you set `width` as **auto,** it renders **Grid** with browser calculate value.
 
 The following code example illustrates how to enable horizontal scrolling in the **Grid**. 
 
@@ -144,11 +144,11 @@ The following code example illustrates how to enable horizontal scrolling in the
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Scrolling_images/Scrolling_img3.png" Caption="Horizontal scrolling Grid"%}
+{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img3.png"%}
 
 ## Virtual scrolling on demand
 
-Virtual scrolling is powerful technique in **ejGrid**. It makes **Grid** more compatible with layout and its loading record performance is high. The **allowVirtualScrolling** property in **scrollSettings** is used to enable virtual scroll functionality in the **Grid**. The default value for **allowVirtualScrolling** is false.
+Virtual scrolling is powerful technique in **ejGrid**. It makes **Grid** more compatible with layout and its loading record performance is high. The `allowVirtualScrolling` property in `scrollSettings` is used to enable virtual scroll functionality in the **Grid**. The default value for `allowVirtualScrolling` is false.
 
 **Essential JavaScript Grid** supports two mode of virtualization. They are,
 
@@ -158,7 +158,7 @@ Virtual scrolling is powerful technique in **ejGrid**. It makes **Grid** more
 
 ### Normal Mode
 
-This feature allows you to load the **Grid** with data while scrolling. The following code example illustrates how to set **virtualScrollMode** as Normal.
+This feature allows you to load the **Grid** with data while scrolling. The following code example illustrates how to set `virtualScrollMode` as Normal.
 
 {% highlight html %}
 
@@ -189,15 +189,15 @@ This feature allows you to load the **Grid** with data while scrolling. The foll
 
 The following screenshot displays the Grid while scrolling. The request is sent to the server to fetch data.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Scrolling_images/Scrolling_img4.png" Caption="Normal mode virtual Scrolling"%}
+{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img4.png"%}
 
 The following screenshot displays the **Grid** after it is loaded with data.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Scrolling_images/Scrolling_img5.png" Caption="Grid after loaded with data"%}
+{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img5.png"%}
 
 ### Continuous Mode
 
-You can enable the continuous mode by setting the **virtualScrollMode** property as Continuous. In Continuous mode, the data is loaded in **Grid** when the scrollbar reaches the end. The following code example illustrates how to set the continuous mode in virtualization.
+You can enable the continuous mode by setting the `virtualScrollMode` property as Continuous. In Continuous mode, the data is loaded in **Grid** when the scrollbar reaches the end. The following code example illustrates how to set the continuous mode in virtualization.
 
 {% highlight html %}
 
@@ -229,9 +229,9 @@ You can enable the continuous mode by setting the **virtualScrollMode** proper
 
 The following screenshot illustrates the request made to fetch the data after the **Grid** scrollbar touches the end.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Scrolling_images/Scrolling_img6.png" Caption="Continuous mode virtual scrolling"%}
+{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img6.png"%}
 
 The following screenshot illustrates the **Grid** after the data is loaded.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Scrolling_images/Scrolling_img7.png" Caption="Grid after loaded with data"%}
+{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img7.png"%}
 

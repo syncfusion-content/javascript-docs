@@ -13,39 +13,34 @@ documentation: ug
 
 * You can also denote the priority of the appointments using this priority option and can specify your own user-defined priority collection.
 
-## Priority settings
+**Priority settings**
 
 * The **prioritySettings** is an object collection that holds the priority related information. 
 
 * For example **enable** property enables/disables the priority value to be displayed.
 
 
-
-
-
 The following are the sub-properties used within the prioritySettings.
 
 **enable**
 
-* This option accepts either true or false, denoting whether to enable/disable the priority option.
+This option accepts either true or false, denoting whether to enable/disable the priority option.
 
 **datasource** 
 
-* It either accepts the local JSON data or remote data for binding the priority related information.
+It either accepts the local JSON data or remote data for binding the priority related information.
 
 **text**
 
-* It holds****the binding name for text field in the priority dataSource.
+It holds the binding name for text field in the priority dataSource.
 
 **id**
 
-* It holds the binding name for id field in the priority dataSource.
-
-
+It holds the binding name for id field in the priority dataSource.
 
 **value**
 
-* It holds the binding name for value field in the priority dataSource.
+It holds the binding name for value field in the priority dataSource.
 
 The following code example illustrates on how to render priority feature in the **Schedule** control.
 

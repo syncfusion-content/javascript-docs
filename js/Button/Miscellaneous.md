@@ -19,7 +19,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% highlight html %}
 
-    <button id="button_text">button</button>
+   <button id="button_text">button</button>
 
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ In the above code, the content of button “button” is replaced by the text va
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Miscellaneous_images/Miscellaneous_img1.png" Caption="Button with new text"%}
+{% include image.html url="/js/Button/Miscellaneous_images/Miscellaneous_img1.png" %}
 
 ## Show Rounded Corner
 
@@ -51,7 +51,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% highlight html %}
 
-     <button id="button_roundedCorner">button</button>
+   <button id="button_roundedCorner">button</button>
 
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Miscellaneous_images/Miscellaneous_img2.png" Caption="Button with rounded corner"%}
+{% include image.html url="/js/Button/Miscellaneous_images/Miscellaneous_img2.png" %}
 
 
 

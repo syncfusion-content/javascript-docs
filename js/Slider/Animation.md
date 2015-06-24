@@ -24,8 +24,8 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 {% highlight html %}
 
 
-   <div class="txt">Default Slider</div>
-   <div id="defaultSlider"></div>
+<div class="txt">Default Slider</div>
+<div id="defaultSlider"></div>
 
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% endhighlight %}
 
-### Customizing Animation speed
+## Customizing Animation speed
 
 Animation speed of the **Slider** indicates the speed at which the slider handle can be moved. Higher the value specified for this property decreases the rate of speed at which the **Slider** handle can be moved. You can customize the animation speed of the **Slider** using the **animationSpeed** property. Default value of this property is “500”. 
 

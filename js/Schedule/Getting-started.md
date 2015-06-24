@@ -9,13 +9,12 @@ documentation: ug
 
 # Getting started
 
-****
 
 * This section encompasses on how to configure the **Schedule** control for your business requirements. You can pass any data that are bound to the **Schedule** control through various API’s available within it.
 
 *  The most important data used in the **Schedule** control is the appointment data that is bound to it through the **appointmentSettings** and **DataSource** property. The appointment data can either be passed locally or remotely to the **Schedule** control.
 
-* In addition, there are several options available in the **Schedule** control to customize the appearance and behavior of it. In this example, you can see how to add a **Schedule** control to an application to manage some of the important activities in a worksheet.  
+* In addition, there are several options available in the **Schedule** control to customize the appearance and behaviour of it. In this example, you can see how to add a **Schedule** control to an application to manage some of the important activities in a worksheet.  
 
 The following screenshot displays the **Schedule** control with daily important activities
 
@@ -23,7 +22,7 @@ The following screenshot displays the **Schedule** control with daily important 
 
 
 
-**Create a Schedule**
+## Create a Schedule
 
 Create an **HTML** file and then add the following references to the required libraries.
 
@@ -37,12 +36,12 @@ Create an **HTML** file and then add the following references to the required li
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
 </head>
 
 
@@ -85,7 +84,7 @@ You can run the above code example and an empty **Scheduler** is displayed witho
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img2.png" Caption=""%}
 
 
-**Pass data to Schedule control**
+## Pass data to Schedule control
 
 * You can add appointment to the **Schedule** control by passing data to the **Schedule** control either locally or remotely. In the following code example, you can see how to bind the remote data to the **Schedule** control.
 
@@ -147,7 +146,7 @@ The following screenshot displays a **Schedule** control with the appointments i
 
 You can also customize the appointments within the **Scheduler** using the **template** support discussed in the following sections.
 
-**Add Templates to the appointments**
+## Add Templates to the appointments
 
 * You can change the appearance of the appointments and add images for visually appealing look-and-feel of the appointments. You can use the template concept to achieve this.
 
@@ -230,9 +229,9 @@ Once you set the template for the appointments, the **Scheduler** is displayed w
 
 
 
-**Change the Schedule View**
+## Change the Schedule View
 
-* You can change the view of the **Schedule** from **week** to **month** by using the **currentView** property. By default, the **Schedule** control is displayed in a **“week”** view.
+You can change the view of the **Schedule** from **week** to **month** by using the **currentView** property. By default, the **Schedule** control is displayed in a **“week”** view.
 
 
 
@@ -313,9 +312,9 @@ When you execute the above code example, a **Scheduler** is displayed as follows
 
 
 
-**Change the appointment height through CSS**
+## Change the appointment height through CSS
 
-* The default height of an appointment is always suitable for the text.  In order to display an image and text in the appointment, you can change the height of the appointments in a **month** view, through **css** styles manually as shown in the following code example.  You can set the appointment height to **auto** to display the images within it.
+The default height of an appointment is always suitable for the text.  In order to display an image and text in the appointment, you can change the height of the appointments in a **month** view, through **css** styles manually as shown in the following code example.  You can set the appointment height to **auto** to display the images within it.
 
 
 
@@ -408,7 +407,7 @@ After setting the height for appointments in **month** view, the **Schedule** co
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img6.png" Caption=""%}
 
 
-**Manipulate the Appointments**
+## Manipulate the Appointments
 
 **Appointment Creation**
 
@@ -436,7 +435,7 @@ The following screenshot illustrates a quick appointment pop-up window.
 > **Important**: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.
 
 
-* The event named **appointmentSaved** is triggered while saving a new appointment to the **Schedule** control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 
+The event named **appointmentSaved** is triggered while saving a new appointment to the **Schedule** control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 
 
 **Edit/Delete Appointments**
 
@@ -453,13 +452,13 @@ To delete an appointment, click the appointment, and then click **delete** icon 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img10.png" Caption="Delete Appointments Pop-up Window."%}
 
 
-* You can also delete the appointment by selecting the required appointment in the **Schedule** control and click the delete key option. This works only when you set “**allowKeyboardNavigation**” option to **“True”**.
+You can also delete the appointment by selecting the required appointment in the **Schedule** control and click the delete key option. This works only when you set “**allowKeyboardNavigation**” option to **“True”**.
 
-**Manipulate Recurrence Appointments**
+## Manipulate Recurrence Appointments
 
 **Add Recurrence Appointment**
 
-* To add **recurrence** appointments, you need to check the “**repeat**” option in the appointment window as shown in the following screenshot.
+To add **recurrence** appointments, you need to check the “**repeat**” option in the appointment window as shown in the following screenshot.
 
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img11.png" Caption="Repeat Appointments."%}
 
@@ -480,11 +479,11 @@ Click **Done**. The recurrence appointment with daily pattern is created for eve
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img14.png" Caption="recurrence appointment with daily pattern."%}
 
 
-* You can store the chosen recurrence options usually in a **RecurrenceRule** field in a string format.  Also, the **Recurrence** field indicates whether the appointments created are normal or recurrence type. You can create appointments in a **recurrence** type by setting **Boolean** type to **True**.
+You can store the chosen recurrence options usually in a **RecurrenceRule** field in a string format.  Also, the **Recurrence** field indicates whether the appointments created are normal or recurrence type. You can create appointments in a **recurrence** type by setting **Boolean** type to **True**.
 
 **Edit/Delete Recurrence Appointment**
 
-* You can follow the same procedure of normal appointments for editing/deleting recurrence appointments too. But in **recurrence****appointment**, you can either edit/delete the single occurrence of the appointment or the entire series in an intermediate confirmation pop-up.
+* You can follow the same procedure of normal appointments for editing/deleting recurrence appointments too. But in **recurrence** **appointment**, you can either edit/delete the single occurrence of the appointment or the entire series in an intermediate confirmation pop-up.
 
 * When you double-click the **recurrence** appointment a pop-up window appears as shown in the following screenshot. 
 
@@ -498,7 +497,7 @@ When you click the recurrence appointment, a quick appointment window opens with
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img16.png" Caption="Quick Appointment Window."%}
 
 
-**Behavior Customization using the events**
+## Behavior Customization using the events
 
 **Restrict the display of appointment window**
 

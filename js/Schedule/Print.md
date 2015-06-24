@@ -66,7 +66,7 @@ Click the print button to render the following output.
 
 **Appointment Print**
 
-* In **Schedule** control, you can print the appointment alone by using context menu. Add print as menu item in the context menu settings as in the following code example.
+In **Schedule** control, you can print the appointment alone by using context menu. Add print as menu item in the context menu settings as in the following code example.
 
 
 {% highlight html %}

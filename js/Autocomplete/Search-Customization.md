@@ -21,7 +21,7 @@ The following steps explain how you can enable the **highlightSearch** property 
 
 {% highlight html %}
 
-         <input type="text" id="autocomplete" />
+<input type="text" id="autocomplete" />
 
 
 {% endhighlight %}
@@ -32,8 +32,8 @@ The following steps explain how you can enable the **highlightSearch** property 
 
 {% highlight js %}
 
-      // Here define CarList local data as per the previous the code block.
-
+        // Here define CarList local data as per the previous the code block.
+        
            $('#autocomplete').ejAutocomplete({
                 width: 205,
                 dataSource: carList,
@@ -47,7 +47,7 @@ The following steps explain how you can enable the **highlightSearch** property 
 
 The following image is the output for **AutoComplete** when **highlightSearch** is set to ‘**True**’.
 
-{% include image.html url="/js/Autocomplete/Search-Customization_images/Search-Customization_img1.png" Caption="AutoComplete with highlightSearch enabled"%}
+{% include image.html url="/js/Autocomplete/Search-Customization_images/Search-Customization_img1.png"%}
 
 ## Case-sensitive Search
 
@@ -61,7 +61,7 @@ The following steps explain you how to enable the **caseSensitiveSearch** proper
 
 {% highlight html %}
 
-         <input type="text" id="autocomplete" />
+<input type="text" id="autocomplete" />
 
 
 {% endhighlight %}
@@ -71,14 +71,13 @@ The following steps explain you how to enable the **caseSensitiveSearch** proper
 {% highlight js %}
 
 
-       // Here define CarList local data as per the previous the code block.
-
+        // Here define CarList local data as per the previous the code block.
         $('#autocomplete').ejAutocomplete({
-                width: 205,
-                dataSource: carList,
-                filterType: "startswith",
-                caseSensitiveSearch: true
-            });
+            width: 205,
+            dataSource: carList,
+            filterType: "startswith",
+            caseSensitiveSearch: true
+        });
 
 {% endhighlight %}
 
@@ -88,5 +87,5 @@ The following steps explain you how to enable the **caseSensitiveSearch** proper
 
 The following image is the output for **AutoComplete** when **caseSensitiveSearch** is set to ‘**True**’.
 
-{% include image.html url="/js/Autocomplete/Search-Customization_images/Search-Customization_img2.png" Caption="AutoComplete textbox with caseSensitiveSearch"%}
+{% include image.html url="/js/Autocomplete/Search-Customization_images/Search-Customization_img2.png"%}
 

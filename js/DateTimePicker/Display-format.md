@@ -18,52 +18,54 @@ If your company’s website is going to be used all over the world, following th
 DateTime format
 
 <table>
-    <tr>
-        <th>
-            Format</th>
-        <th>
-            Display in DateTimePicker</th>
-    </tr>
-    <tr>
-        <td>
-            Short Date and Time– d/M/yy h:mm tt
-        </td>
-        <td>
-            9/12/2014 2:04 PM
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Medium Date-d MMM yy h:mm tt
-        </td>
-        <td>
-            12 Sep 14 2:04: PM
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Full Date and short time - dddd, MMMM dd, yyyy HH:mm tt
-        </td>
-        <td>
-            Friday, September 12,2014 2:04 PM
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Full Date and Long Time - dddd, MMMM dd, yyyy HH:mm:ss tt
-        </td>
-        <td>
-            Friday, September 12,2014 2:04:00 PM
-        </td>
-    </tr>
-    <tr>
-        <td>
-            UTC - yyyy-MM-dThh:mm:ssz
-        </td>
-        <td>
-            2014-09-12T2:04:00+5
-        </td>
-    </tr>
+   <tr>
+      <th>
+         Format
+      </th>
+      <th>
+         Display in DateTimePicker
+      </th>
+   </tr>
+   <tr>
+      <td>
+         Short Date and Time– d/M/yy h:mm tt
+      </td>
+      <td>
+         9/12/2014 2:04 PM
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Medium Date-d MMM yy h:mm tt
+      </td>
+      <td>
+         12 Sep 14 2:04: PM
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Full Date and short time - dddd, MMMM dd, yyyy HH:mm tt
+      </td>
+      <td>
+         Friday, September 12,2014 2:04 PM
+      </td>
+   </tr>
+   <tr>
+      <td>
+         Full Date and Long Time - dddd, MMMM dd, yyyy HH:mm:ss tt
+      </td>
+      <td>
+         Friday, September 12,2014 2:04:00 PM
+      </td>
+   </tr>
+   <tr>
+      <td>
+         UTC - yyyy-MM-dThh:mm:ssz
+      </td>
+      <td>
+         2014-09-12T2:04:00+5
+      </td>
+   </tr>
 </table>
 
 
@@ -91,28 +93,27 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
   
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
+<div class="control">
+   <input type="text" id="dateTime" />
+</div>
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
-  {% highlight js %}
+{% highlight js %}
 
     // Add the code in your script section to render the DateTimePicker
-
     $('#dateTime').ejDateTimePicker({
-        dateTimeFormat: "dddd, MMMM dd, yyyy hh:mm:ss tt",
-        timePopupWidth: "150px",
-        timeDisplayFormat: "hh:mm:ss tt",
-        width: '300px'
+       dateTimeFormat: "dddd, MMMM dd, yyyy hh:mm:ss tt",
+       timePopupWidth: "150px",
+       timeDisplayFormat: "hh:mm:ss tt",
+       width: '300px'
     });
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
-{% include image.html url="/js/DateTimePicker/Display-format_images/Display-format_img1.png" Caption="Showcase of DateTimePicker with UTC time format"%}
+{% include image.html url="/js/DateTimePicker/Display-format_images/Display-format_img1.png"%}
 
 
 ## Day Header format
@@ -122,44 +123,46 @@ You can change the format for the days of the week names using **Day Header form
 showHeaderMin
 
 <table>
-    <tr>
-        <th>
-            Header Format types </th>
-        <th>
-            Description</th>
-    </tr>
-    <tr>
-        <td>
-            showHeaderNone
-        </td>
-        <td>
-            Removes the day header
-        </td>
-    </tr>
-    <tr>
-        <td>
-            showHeaderShort
-        </td>
-        <td>
-            Shows the day header format in min like Su, Mo, Tu …
-        </td>
-    </tr>
-    <tr>
-        <td>
-            showHeaderMin
-        </td>
-        <td>
-            Shows the day header format in short like Sun, Mon, Tue …
-        </td>
-    </tr>
-    <tr>
-        <td>
-            showHeaderLong
-        </td>
-        <td>
-            Shows the day header format in long like Sunday, Monday, Tuesday …
-        </td>
-    </tr>
+   <tr>
+      <th>
+         Header Format types 
+      </th>
+      <th>
+         Description
+      </th>
+   </tr>
+   <tr>
+      <td>
+         showHeaderNone
+      </td>
+      <td>
+         Removes the day header
+      </td>
+   </tr>
+   <tr>
+      <td>
+         showHeaderShort
+      </td>
+      <td>
+         Shows the day header format in min like Su, Mo, Tu …
+      </td>
+   </tr>
+   <tr>
+      <td>
+         showHeaderMin
+      </td>
+      <td>
+         Shows the day header format in short like Sun, Mon, Tue …
+      </td>
+   </tr>
+   <tr>
+      <td>
+         showHeaderLong
+      </td>
+      <td>
+         Shows the day header format in long like Sunday, Monday, Tuesday …
+      </td>
+   </tr>
 </table>
 
 
@@ -171,23 +174,23 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
   
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
+<div class="control">
+   <input type="text" id="dateTime" />
+</div>
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
-  {% highlight js %}
+{% highlight js %}
 
     // Add the code in your script section to render the DateTimePicker with short header
     $('#dateTime').ejDateTimePicker({
-        dayHeaderFormat: "showHeaderShort",
-        width: '200px',
+       dayHeaderFormat: "showHeaderShort",
+       width: '200px',
     });
 
-  {% endhighlight %}
+{% endhighlight %}
   
 
-{% include image.html url="/js/DateTimePicker/Display-format_images/Display-format_img2.png" Caption="Showcase of DateTimePicker with short name of day of the week"%}
+{% include image.html url="/js/DateTimePicker/Display-format_images/Display-format_img2.png"%}
 

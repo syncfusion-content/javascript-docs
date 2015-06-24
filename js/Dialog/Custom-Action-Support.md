@@ -19,20 +19,21 @@ In the **HTML** page set a **&lt;div&gt;** element with dialog content for rende
 
 {% highlight html %}
 
-     <div id="customAction" title="Audi-R8">
-        <img src="Content/images/r8-coupe.png" />
-        The Audi R8 was initially equipped with a 4.2 litre V8 engine. Specifically, it is an all-aluminum alloy 32-valve (four valves per cylinder) petrol engine, utilising Fuel Stratified Injection (FSI), and has a displacement of 4,163 cubic centimetres (254.0 cu in).
-    </div>
+<div id="customAction" title="Audi-R8">
+   <img src="Content/images/r8-coupe.png" />
+   The Audi R8 was initially equipped with a 4.2 litre V8 engine. Specifically, it is an all-aluminum alloy 32-valve (four valves per cylinder) petrol engine, utilising Fuel Stratified Injection (FSI), and has a displacement of 4,163 cubic centimetres (254.0 cu in).
+</div>
+
+
 
 {% endhighlight %}
 
 {% highlight js %}
 
-
     // Set the actionButtons property in the Dialog function. The default value of actionButtons is [“close”]
     $("#customAction").ejDialog({
         width: 300,
-        actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]                               
+        actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]
     });
 
 
@@ -40,5 +41,5 @@ In the **HTML** page set a **&lt;div&gt;** element with dialog content for rende
 
 The output of **actionButtons** in **Dialog** widget is as follows.
 
-{% include image.html url="/js/Dialog/Custom-Action-Support_images/Custom-Action-Support_img1.png" Caption="Dialog with “actionButtons                                                   "%}
+{% include image.html url="/js/Dialog/Custom-Action-Support_images/Custom-Action-Support_img1.png" %}
 

@@ -19,36 +19,40 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 {% highlight html %}
 
-        <div id="splitter">
-            <div>
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
-            </div>
-            <div>
-                <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
-            </div>
+<div id="splitter">
+    <div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Tools </h3>
+            Essential Tools is an collection of user interface components used to create interactive
+            ASP.NET MVC applications.
         </div>
+    </div>
+    <div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Grid </h3>
+            Essential Mvc Grid offers full featured a Grid control with extensive support for
+            Grouping and the display of hierarchical data.
+        </div>
+    </div>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-
         $("#splitter").ejSplitter({
-            height: 280, width: 400,
+            height: 280, width: 600,
             orientation: ej.Orientation.Vertical,
         });  
-
 
 {% endhighlight %}
 
 
 The output for **Splitter** with **ej.Orientation.Vertical**.
 
-{% include image.html url="/js/Splitter/Splitter-Orientation_images/Splitter-Orientation_img1.png" Caption="Splitter with vertical orientation "%}
+{% include image.html url="/js/Splitter/Splitter-Orientation_images/Splitter-Orientation_img1.png" %}
 
 The output for **Splitter** with **ej.Orientation.Horizontal**.
 
-
-
-{% include image.html url="/js/Splitter/Splitter-Orientation_images/Splitter-Orientation_img2.png" Caption="Splitter with horizontal orientation"%}
+{% include image.html url="/js/Splitter/Splitter-Orientation_images/Splitter-Orientation_img2.png" %}
 

@@ -22,14 +22,14 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 
 
-    <div class="spltspan">
-        <button id="spltbutton_text">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-    </div>
+<div class="spltspan">
+    <button id="spltbutton_text">login</button>
+    <ul id="Ul11">
+        <li><span>User</span></li>
+        <li><span>Guest</span></li>
+        <li><span>Admin</span></li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
@@ -55,11 +55,11 @@ Configure the styles.
 
 {% highlight css %}
 
-    <style>
-        .spltspan {
-            margin-left: 120px;
-        }
-    </style>
+<style>
+    .spltspan {
+        margin-left: 120px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -67,7 +67,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Miscellaneous_images/Miscellaneous_img1.png" Caption="Split button with new text"%}
+{% include image.html url="/js/SplitButton/Miscellaneous_images/Miscellaneous_img1.png" %}
 
 In output “login” text in **Split Button** is replaced by text property value.
 
@@ -82,14 +82,14 @@ In the **HTML** page, add the following button elements to configure **Split But
 {% highlight html %}
 
 
-    <div class="spltspan">
-        <button id="spltbutton_roundedCorner">login</button>
-        <ul id="Ul11">
-            <li><span>User</span></li>
-            <li><span>Guest</span></li>
-            <li><span>Admin</span></li>
-        </ul>
-    </div>
+<div class="spltspan">
+    <button id="spltbutton_roundedCorner">login</button>
+    <ul id="Ul11">
+        <li><span>User</span></li>
+        <li><span>Guest</span></li>
+        <li><span>Admin</span></li>
+    </ul>
+</div>
 
 
 {% endhighlight %}
@@ -97,19 +97,17 @@ In the **HTML** page, add the following button elements to configure **Split But
 {% highlight js %}
 
 
-
-        // Initialize the control in JavaScript
+    // Initialize the control in JavaScript
     
-        $(function () {
-            $("#spltbutton_roundedCorner").ejSplitButton({               
-                size: "small",    
-                //Enable or disable the rounded corner for split button            
-                showRoundedCorner: true,
-                targetID: "Ul11"            
-            });
+    $(function () {
+        $("#spltbutton_roundedCorner").ejSplitButton({               
+            size: "small",    
+            //Enable or disable the rounded corner for split button            
+            showRoundedCorner: true,
+            targetID: "Ul11"            
         });
+    });
     
-
 
 {% endhighlight %}
 
@@ -119,11 +117,11 @@ Configure the styles.
 {% highlight css %}
 
 
-    <style>
-        .spltspan {
-            margin-left: 120px;
-        }
-    </style>
+<style>
+    .spltspan {
+        margin-left: 120px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -132,5 +130,5 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Miscellaneous_images/Miscellaneous_img2.png" Caption="Split button with rounded corner"%}
+{% include image.html url="/js/SplitButton/Miscellaneous_images/Miscellaneous_img2.png" %}
 

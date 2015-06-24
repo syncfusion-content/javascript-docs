@@ -19,40 +19,39 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% highlight html %}
 
-	<div id="outersplitter">
+<div id="outersplitter">
+    <div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3"> JavaScript </h3>
+        </div>
+    </div>
+    <div id="innersplitter">
         <div>
             <div style="padding: 0px 15px;">
-                <h3 class="h3">ASP.NET MVC </h3>
+                <h3 class="h3">Tools </h3>
+                Essential Tools is an collection of user interface components used to create interactive
+                            JavaScript applications.
             </div>
         </div>
-        <div id="innersplitter">
-            <div>
-                <div style="padding: 0px 15px;">
-                    <h3 class="h3">Tools </h3>
-                    Essential Tools is an collection of user interface components used to create interactive
-                                ASP.NET MVC applications.
-                </div>
+        <div>
+            <div style="padding: 0px 15px;">
+                <h3 class="h3">Chart </h3>
+                Essential Chart is a business-oriented charting component.
             </div>
-            <div>
-                <div style="padding: 0px 15px;">
-                    <h3 class="h3">Chart </h3>
-                    Essential Chart is a business-oriented charting component.
-                </div>
-            </div>
-            <div>
-                <div style="padding: 0px 15px;">
-                    <h3 class="h3">Grid </h3>
-                    Essential Mvc Grid offers full featured a Grid control with extensive support for
-                                Grouping and the display of hierarchical data.
-                </div>
+        </div>
+        <div>
+            <div style="padding: 0px 15px;">
+                <h3 class="h3">Grid </h3>
+                Essential JavaScript Grid offers full featured a Grid control with extensive support for
+                            Grouping and the display of hierarchical data.
             </div>
         </div>
     </div>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
-
 
     $("#outersplitter").ejSplitter({
         height: 250, width: 600,
@@ -60,21 +59,17 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
         enableRTL: true,
         properties: [{ paneSize: 60 }]
     });
-
+    
     $("#innersplitter").ejSplitter({
         width: 600,
         properties: [{ paneSize: 200 }, { paneSize: 170 }]
     });
 
-
 {% endhighlight %}
-
 
 The output for **Splitter** when **enableRTL** is “**true**”.
 
-
-
-{% include image.html url="/js/Splitter/RTL-Support_images/RTL-Support_img1.png" Caption="Splitter with enableRTL "%}
+{% include image.html url="/js/Splitter/RTL-Support_images/RTL-Support_img1.png" %}
 
 
 

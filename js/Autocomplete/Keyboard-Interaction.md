@@ -18,7 +18,7 @@ Keyboard shortcut keys
 <th>Shortcut Key</th><th>Description</th></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a> + j	</td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a> + j	</td><td>
 Focuses into the AutoComplete text box</td></tr>
 <tr>
 <td>
@@ -46,7 +46,7 @@ The following steps explain how you can enable **keyboard** interaction for an *
 
 {% highlight html %}
 
-           <input type="text" id="autocomplete" accesskey="j" />
+<input type="text" id="autocomplete" accesskey="j" />
 
 {% endhighlight %}
 
@@ -56,10 +56,10 @@ The following steps explain how you can enable **keyboard** interaction for an *
 {% highlight js %}
 
 
-          $('#autocomplete').ejAutocomplete({
-                width: 200,
-                dataSource: carList
-            });
+    $('#autocomplete').ejAutocomplete({
+      width: 200,
+      dataSource: carList
+    });
 
 {% endhighlight %}
 
@@ -69,8 +69,8 @@ Provide Keyboard navigation access to AutoComplete.
 {% highlight js %}
 
 
-    $(function () {
-        $(document).on("keydown", function (e) {
+    $(function() {
+        $(document).on("keydown", function(e) {
             if (e.altKey && e.keyCode === 74) { // j- key code.
                 $("#autocomplete").focus();
             }
@@ -83,7 +83,7 @@ Provide Keyboard navigation access to AutoComplete.
 
  Run the sample, press **AccessKey + J** to focus in the AutoComplete widget and you can navigate using the arrow keys. Use the Escape key to close the popup.
 
-{% include image.html url="/js/Autocomplete/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption="AutoComplete focused with keyboard shortcut"%}
+{% include image.html url="/js/Autocomplete/Keyboard-Interaction_images/Keyboard-Interaction_img1.png"%}
 
 
 

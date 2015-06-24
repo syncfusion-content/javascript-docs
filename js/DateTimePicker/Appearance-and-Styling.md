@@ -39,38 +39,35 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
 
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-lime-dark/ej.web.all.min.css" rel="stylesheet" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-</head>
-<body>
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
-    <script>
-        $(function () {
-            // declaration
-            $('#dateTime').ejDateTimePicker({
-                width: '200px',
-            });
-        });
-    </script>
-</body>
+   <head>
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/gradient-lime-dark/ej.web.all.min.css" rel="stylesheet" />
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+   </head>
+   <body>
+      <div class="control">
+         <input type="text" id="dateTime" />
+      </div>
+      <script>
+         $(function () {
+             // declaration
+             $('#dateTime').ejDateTimePicker({
+                 width: '200px',
+             });
+         });
+      </script>
+   </body>
 </html>
-
-
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Showcase of DateTimePicker with gradient line dark theme"%}
+{% include image.html url="/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
 
 ## Css Class
 
@@ -84,30 +81,28 @@ Add the following code in your **HTML** page to render the DateTimePicker.
    
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure-dark/ej.web.all.min.css" rel="stylesheet" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-</head>
-<body>
-    <div class="control">
-        <input type="text" id="dateTime" />
-    </div>
-    <script>
-        $(function () {
-            // Add the code in your script section to render the DateTimePicker with cssClass property
-            $('#dateTime').ejDateTimePicker({
-                width: 200,
-                cssClass: "Purple-dark"
-            });
-        });
-    </script>
-</body>
+   <head>
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure-dark/ej.web.all.min.css" rel="stylesheet" />
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+   </head>
+   <body>
+      <div class="control">
+         <input type="text" id="dateTime" />
+      </div>
+      <script>
+         $(function () {
+             // Add the code in your script section to render the DateTimePicker with cssClass property
+             $('#dateTime').ejDateTimePicker({
+                 width: 200,
+                 cssClass: "Purple-dark"
+             });
+         });
+      </script>
+   </body>
 </html>
-
-
 
 {% endhighlight %}
 
@@ -120,61 +115,51 @@ Add the following code in your style section.
 {% highlight css %}
 
 <style>
-    .Purple-dark .e-week-header {
-        color: #EBADD6;
-    }
-
-    .Purple-dark .e-text {
-        color: black;
-    }
-
-    .Purple-dark .e-state-default {
-        color: pink;
-    }
-
-    .Purple-dark .e-active {
-        background-color: #FF1975;
-    }
-
-    .Purple-dark .e-state-default:hover {
-        color: #EBADD6;
-    }
-
-    .Purple-dark .e-dt-button {
-        color: black;
-        background-color: #E085C2;
-    }
-
-    .Purple-dark .e-header {
-        background-color: #E085C2;
-        color: black;
-    }
-
-    .Purple-dark .e-timecontainer .e-header {
-        background-color: #E085C2;
-        color: black;
-    }
-
-    .Purple-dark .e-datepicker table td:hover,
-    .Purple-dark .e-datepicker td.e-state-hover,
-    .Purple-dark .e-datepicker .current-month.e-state-default.e-special-day:hover {
-        background-color: #FF1975;
-    }
-
-    .Purple-dark .e-timewidget .e-select:hover,
-    .Purple-dark .e-time-popup.e-popup .e-hover {
-        background: #FF1975;
-        color: white;
-    }
-
-    .Purple-dark .e-datetime-wrap:hover {
-        background: #FF1975;
-    }
+   .Purple-dark .e-week-header {
+         color: #EBADD6;
+   }
+   .Purple-dark .e-text {
+         color: black;
+   }
+   .Purple-dark .e-state-default {
+         color: pink;
+   }
+   .Purple-dark .e-active {
+         background-color: #FF1975;
+   }
+   .Purple-dark .e-state-default:hover {
+         color: #EBADD6;
+   }
+   .Purple-dark .e-dt-button {
+         color: black;
+         background-color: #E085C2;
+   }
+   .Purple-dark .e-header {
+         background-color: #E085C2;
+         color: black;
+   }
+   .Purple-dark .e-timecontainer .e-header {
+         background-color: #E085C2;
+         color: black;
+   }
+   .Purple-dark .e-datepicker table td:hover,
+   .Purple-dark .e-datepicker td.e-state-hover,
+   .Purple-dark .e-datepicker .current-month.e-state-default.e-special-day:hover {
+         background-color: #FF1975;
+   }
+   .Purple-dark .e-timewidget .e-select:hover,
+   .Purple-dark .e-time-popup.e-popup .e-hover {
+         background: #FF1975;
+         color: white;
+   }
+   .Purple-dark .e-datetime-wrap:hover {
+         background: #FF1975;
+   }
 </style>
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Showcase for DateTimePicker with cssClass “Purple-dark”"%}
+{% include image.html url="/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
 

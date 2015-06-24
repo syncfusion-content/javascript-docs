@@ -9,22 +9,19 @@ documentation: ug
 
 # Columns
 
-The **TreeGrid** column displays the information from a bounded data source and it is editable to update the task details through **TreeGrid**.
+The TreeGrid column displays the information from a bounded data source and it is editable to update the task details through TreeGrid.
 
 ### Column Resizing
 
-You can change the width of the column in **TreeGrid** to show the entire text of the column by resizing the column. The following code example shows you how to enable the **Column Resize** feature at **Gantt** initialize.
+You can change the width of the column in TreeGrid to show the entire text of the column by resizing the column. The following code example shows you how to enable the **Column Resize** feature at **TreeGrid** initialize.
 
 {% highlight js %}
 
-
     $("#TreeGridContainer").ejTreeGrid({
 
-         //...
-         allowColumnResize: true,
+        //...
+        allowColumnResize: true,
     });
-
-
 
 {% endhighlight %}
 
@@ -32,7 +29,7 @@ You can change the width of the column in **TreeGrid** to show the entire text
 
 **Column Template** is used to customize the column’s look and feel based on requirement.
 
-The following code example shows you how to display the icon in the **TreeGrid** column.
+The following code example shows you how to display the icon in the TreeGrid column.
 
 Code snippet to create a custom template element to be rendered
 
@@ -102,91 +99,99 @@ Code snippet to render custom template in TreeGrid columns
 
 {% endhighlight %}
 
+The following screenshot displays the customized column in TreeGrid control.
 
-
-The following screenshot displays the customized column in **TreeGrid** control.
-
-{% include image.html url="/js/TreeGrid/Columns_images/Columns_img1.png" Caption="Customized Column"%}
+{% include image.html url="/js/TreeGrid/Columns_images/Columns_img1.png"%}
 
 ### Column Filtering
 
-Column Filtering in **TreeGrid** is used to filter the records by single or multiple column conditions. In **ejTreeGrid** control, column filtering can be enabled with **allowFiltering** property, by setting this property to ‘true’, a filter bar is rendered in all available columns, providing filtering support to every columns. You can also limit filtering to specific column by setting ‘false’ to **allowFiltering** property in each column object.
+Column Filtering in TreeGrid is used to filter the records by single or multiple column conditions. In TreeGrid control, column filtering can be enabled with `allowFiltering` property, by setting this property to `true`, a filter bar is rendered in all available columns, providing filtering support to every columns. You can also limit filtering to specific column by setting `false` to `allowFiltering` property in each column object.
 
-Filtering modes can be toggled between **immediate** and **onEnter** modes using **filterBarMode** property.
+Filtering modes can be toggled between `immediate` and `onEnter` modes using `filterBarMode` property.
 
-* immediate- In this mode, filtering starts with key press event.
+* `immediate` - In this mode, filtering starts with key press event.
+* `onEnter` - In this mode, filtering starts when enter key is pressed.
 
-* onEnter- In this mode, filtering starts when enter key is pressed.
+Filtering type can be defined by `filterEditType` property in each column object.
 
-Filtering type can be defined by **filterEditType** property in each column object.
-
-**filterEditType**
+The following are the types of column filtering types available in TreeGrid,
 
 * stringedit
-
 * numericedit
-
 * booleanedit
-
 * dropdownlist
-
 * datepicker
-
 * datetimepicker
-
-
 
 {% highlight js %}
 
+    $("#treegrid1").ejTreeGrid({
+        // ...     
+        filterBarMode: "immediate",
+        allowFiltering: true,
+        columns: [
 
-    $("#treegrid1").ejTreeGrid(
-        {   
-           // ...     
-            filterBarMode: "immediate",
-                allowFiltering: true,
-                columns: [
-
-                    { field: "taskID", headerText: "Task Id", width: "45", allowFiltering:false, editType: "numericedit" },
-                    { field: "taskName", headerText: "Task Name", editType: "stringedit", filterEditType: "stringedit" },
-                    { field: "startDate", headerText: "Start Date", editType: "datepicker", filterEditType: "datepicker" },
-                    { field: "endDate", headerText: "End Date", editType: "datepicker", filterEditType: "datepicker" },
-                    { field: "duration", headerText: "Duration", editType: "booleanedit", filterEditType: "numericedit" },
-                    { field: "progress", headerText: "Progress", editType: "booleanedit", filterEditType: "numericedit" }
-                ],
-            // ...             
-        });
-
+            {
+                field: "taskID",
+                headerText: "Task Id",
+                width: "45",
+                allowFiltering: false,
+                editType: "numericedit"
+            }, {
+                field: "taskName",
+                headerText: "Task Name",
+                editType: "stringedit",
+                filterEditType: "stringedit"
+            }, {
+                field: "startDate",
+                headerText: "Start Date",
+                editType: "datepicker",
+                filterEditType: "datepicker"
+            }, {
+                field: "endDate",
+                headerText: "End Date",
+                editType: "datepicker",
+                filterEditType: "datepicker"
+            }, {
+                field: "duration",
+                headerText: "Duration",
+                editType: "booleanedit",
+                filterEditType: "numericedit"
+            }, {
+                field: "progress",
+                headerText: "Progress",
+                editType: "booleanedit",
+                filterEditType: "numericedit"
+            }
+        ],
+        // ...             
+    });
 
 {% endhighlight %}
 
+The following screenshot displays the column filtering in TreeGrid control.
 
-
-The following screenshot displays the column filtering in **TreeGrid** control.
-
-{% include image.html url="/js/TreeGrid/Columns_images/Columns_img2.png" Caption="Column filtering in TreeGrid control"%}
+{% include image.html url="/js/TreeGrid/Columns_images/Columns_img2.png"%}
 
 ### Column Chooser
 
-**TreeGrid** supports enabling and disabling the visibility of the columns dynamically with the **showColumnChooser** property. By using this property, the visibility of the custom columns can also be toggled. The **Column chooser** option is rendered as sub menu item within column menu in the **TreeGrid** columns.
+TreeGrid supports enabling and disabling the visibility of the columns dynamically with the `showColumnChooser` property. By using this property, the visibility of the custom columns can also be toggled. The **Column chooser** option is rendered as sub menu item within column menu in the TreeGrid columns.
 
-{% include image.html url="/js/TreeGrid/Columns_images/Columns_img3.png" Caption="Column menu with column chooser                                                  "%}
+{% include image.html url="/js/TreeGrid/Columns_images/Columns_img3.png"%}
 
-The column menu is enabled with the **showColumnChooser** property and the default value for this property is **false**
+The column menu is enabled with the `showColumnChooser` property and the default value for this property is `false`
 
 The column menu provides the following options.
 
 * Sort Ascending
-
 * Sort Descending
-
 * Columns 
 
-The **Sort Ascending** and **Sort Descending** options are enabled or disabled by using the **allowSorting** property. With these options, single level sorting can be performed in the **TreeGrid** columns. To perform multilevel sorting, the **allowMultiSorting** property should be enabled. 
+The **Sort Ascending** and **Sort Descending** options are enabled or disabled by using the `allowSorting` property. With these options, single level sorting can be performed in the TreeGrid columns. To perform multilevel sorting, the `allowMultiSorting` property should be enabled. 
 
-You can also disable the visibility of the particular column in column collection manually by setting the **visible** property to **false**.
+You can also disable the visibility of the particular column in column collection manually by setting the `visible` property to `false`.
 
 {% highlight js %}
-
 
     $("#treegrid1").ejTreeGrid(
     {   
@@ -204,10 +209,7 @@ You can also disable the visibility of the particular column in column collectio
         // ...             
     });
 
-
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/TreeGrid/Columns_images/Columns_img4.png" Caption="TreeGrid with column chooser"%}
+{% include image.html url="/js/TreeGrid/Columns_images/Columns_img4.png"%}
 

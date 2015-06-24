@@ -17,11 +17,11 @@ In order to enable [localization](http://help.syncfusion.com/ug/js/default.htm)
 
 You can refer the following online link reference for **globalize.js**
 
-http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js
+[http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js](http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js)
 
 You can refer the following online link reference for **globalize.culture.js**
 
-http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js
+[http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js])http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/cultures/globalize.cultures.js)
 
 You can get the script file of various cultures from the following path also:
 
@@ -35,7 +35,7 @@ The following example describes the way to use localization for **CurrencyTextBo
 
 {% highlight html %}
 
-   <input id="currency" type="text" />
+<input id="currency" type="text" />
 
 {% endhighlight %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Page Settings
 
-**Page settings** enable you to customize the width and height of the Diagram page. The properties of **Page setting** are listed as follows.
+**Page settings** enable you to customize the width and height of the Diagram page. The properties of Page setting are listed as follows.
 
 <table>
 <tr>
@@ -64,7 +64,7 @@ ej.datavisualization.Diagram.PageOrientations</td><td>
 Gets or sets the orientation of the page</td></tr>
 </table>
 
-The following code illustrates how to customize **Page Settings**
+The following code illustrates how to customize Page Settings
 
 {% highlight js %}
 
@@ -89,7 +89,7 @@ $("#Diagram").ejDiagram({
 
 ## MultiplePage and PageBreaks
 
-When **multiplePage** is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. **PageBreaks** is used as a visual guide to see how pages are split into multiple pages.
+When `multiplePage` is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. `pageBreaks` is used as a visual guide to see how pages are split into multiple pages.
 
 {% include image.html url="/js/Diagram/Page-Settings_images/Page-Settings_img2.png" %}
 
@@ -145,9 +145,9 @@ pageSettings:
 
 The scroll limit allows you to scroll the diagram page along X and Y axis based on the options specified. 
 
-* By default the value is set as infinity (can scroll in all directions, without any restrictions). 
-* When scroll limit is set as diagram, you are restricted to scroll the page beyond the diagram content. 
-* By specifying the value as limited you can set the limit of the scrollable area through scrollable area property. 
+* By default the value is set as `infinity` (can scroll in all directions, without any restrictions). 
+* When `scrollLimit` is set as `diagram`, you are restricted to scroll the page beyond the diagram content. 
+* By specifying the value as `limited` you can set the limit of the scrollable area through `scrollableArea` property. 
 
 > **Note:** Refer to the [scrollable area](/js/Diagram/Page-Settings#scrollable-area) for more details.
 
@@ -162,7 +162,7 @@ pageSettings: { scrollLimit:"infinity" }
 
 ### Scrollable Area
 
-You can restrict scrolling beyond a particular rectangular area and the rectangular area is specified using **scrollableArea** property. This is applicable only when the scroll limit for the diagram is specified as **limited**. The following code example illustrates how to customize scrollable area of diagram.
+You can restrict scrolling beyond a particular rectangular area and the rectangular area is specified using `scrollableArea` property. This is applicable only when the `scrollLimit` for the diagram is specified as `limited`. The following code example illustrates how to customize scrollable area of diagram.
 
 {% highlight js %}
 

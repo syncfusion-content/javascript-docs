@@ -75,12 +75,12 @@ In the **HTML** page, add the following button elements to configure button widg
 
 {% highlight html %}
 
-    <button id="button_normal">login</button>
-    <button id="button_mini">login</button>
-    <button id="button_small">login</button>
-    <button id="button_medium">login</button>
-    <button id="button_large">login</button>
-    <button id="button_custom">login</button>
+<button id="button_normal">login</button>
+<button id="button_mini">login</button>
+<button id="button_small">login</button>
+<button id="button_medium">login</button>
+<button id="button_large">login</button>
+<button id="button_custom">login</button>
     
 {% endhighlight %}
 
@@ -131,7 +131,7 @@ In the **HTML** page, add the following button elements to configure button widg
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img1.png" Caption="Button with different sizes"%}
+{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img1.png"%}
 
 
 ## Content Type
@@ -221,18 +221,18 @@ In the **HTML** page, add the following button elements to configure **Button** 
 {% highlight html %}
 
   
-    <button id="button_imageonly">login</button>
-    <button id="button_textonly">login</button>
-    <button id="button_imageboth">login</button>
-    <button id="button_textandimage">login</button>
-    <button id="button_imagetextimage">login</button>
-    <br />
-    <br />
-    <button id="button_imageonly_small">login</button>
-    <button id="button_textonly_small">login</button>
-    <button id="button_imageboth_small">login</button>
-    <button id="button_textandimage_small">login</button>
-    <button id="button_imagetextimage_small">login</button>
+<button id="button_imageonly">login</button>
+<button id="button_textonly">login</button>
+<button id="button_imageboth">login</button>
+<button id="button_textandimage">login</button>
+<button id="button_imagetextimage">login</button>
+<br />
+<br />
+<button id="button_imageonly_small">login</button>
+<button id="button_textonly_small">login</button>
+<button id="button_imageboth_small">login</button>
+<button id="button_textandimage_small">login</button>
+<button id="button_imagetextimage_small">login</button>
 
 
 {% endhighlight %}
@@ -319,7 +319,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img2.png" Caption="Button with different content types"%}
+{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img2.png" %}
 
 
 ## Image Position
@@ -377,22 +377,22 @@ In the **HTML** page, add the following button elements to configure **Button** 
 {% highlight html %}
 
 
-    <button id="button_imageleft_normal">login</button>
-    <button id="button_imageleft_mini">login</button>
-    <button id="button_imageleft_small">login</button>
-    <button id="button_imageleft_medium">login</button>
-    <button id="button_imageleft_large">login</button>
-    <br />
-    <br />
-    <button id="button_imageright_normal">login</button>
-    <button id="button_imageright_mini">login</button>
-    <button id="button_imageright_small">login</button>
-    <button id="button_imageright_medium">login</button>
-    <button id="button_imageright_large">login</button>
-    <br />
-    <br />
-    <button id="button_imagetop">login</button>
-    <button id="button_imagebottom">login</button>
+<button id="button_imageleft_normal">login</button>
+<button id="button_imageleft_mini">login</button>
+<button id="button_imageleft_small">login</button>
+<button id="button_imageleft_medium">login</button>
+<button id="button_imageleft_large">login</button>
+<br />
+<br />
+<button id="button_imageright_normal">login</button>
+<button id="button_imageright_mini">login</button>
+<button id="button_imageright_small">login</button>
+<button id="button_imageright_medium">login</button>
+<button id="button_imageright_large">login</button>
+<br />
+<br />
+<button id="button_imagetop">login</button>
+<button id="button_imagebottom">login</button>
 
 
 {% endhighlight %}
@@ -491,7 +491,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img3.png" Caption="Button with different image positions"%}
+{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img3.png"%}
 
 
 ## Theme support
@@ -523,11 +523,11 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% highlight html %}
 
-    <button id="button_customCss1">login</button>
-    <button id="button_customCss2">login</button>
-    <button id="button_customCss3">login</button>
-    <button id="button_customCss4">login</button>
-    <button id="button_customCss5">login</button>
+<button id="button_customCss1">login</button>
+<button id="button_customCss2">login</button>
+<button id="button_customCss3">login</button>
+<button id="button_customCss4">login</button>
+<button id="button_customCss5">login</button>
 
 {% endhighlight %}
 
@@ -617,5 +617,5 @@ Configure the **CSS** styles to apply on buttons.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img4.png" Caption="Button with Custom CSS"%}
+{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img4.png"%}
 

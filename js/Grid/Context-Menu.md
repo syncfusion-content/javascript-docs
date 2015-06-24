@@ -41,7 +41,7 @@ documentation: ug
 
 ## Context Menu action
 
-To enable **Context Menu** in **Grid** use **enableContextMenu** property in **contextMenuSettings** at **Grid** initialize. The following code example illustrates you on how to set Context Menu.
+To enable **Context Menu** in **Grid** use `enableContextMenu` property in `contextMenuSettings` at **Grid** initialize. The following code example illustrates you on how to set Context Menu.
 
 {% highlight html %}
 
@@ -76,19 +76,19 @@ The following output is displayed as a result of the above code example.
 
 **Content**
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Context-Menu_images/Context-Menu_img1.png" Caption=""%}
+{% include image.html url="/js/Grid/Context-Menu_images/Context-Menu_img1.png" Caption=""%}
 
 _Context Menu in content_
 
 **Header**
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Context-Menu_images/Context-Menu_img2.png" Caption=""%}
+{% include image.html url="/js/Grid/Context-Menu_images/Context-Menu_img2.png" Caption=""%}
 
 _Context Menu in Header_
 
 **Footer**
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Context-Menu_images/Context-Menu_img3.png" Caption=""%}
+{% include image.html url="/js/Grid/Context-Menu_images/Context-Menu_img3.png" Caption=""%}
 
 _Context Menu in Footer_
 

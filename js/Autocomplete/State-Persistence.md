@@ -19,7 +19,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 
 {% highlight html %}
 
-         <input type="text" id="autocomplete" />
+<input type="text" id="autocomplete" />
 
 
 {% endhighlight %}
@@ -29,16 +29,16 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 
 {% highlight js %}
 
-         $('#autocomplete').ejAutocomplete({
-                width: 205,
-                dataSource: carList,
-                enablePersistence:true
-            });
+    $('#autocomplete').ejAutocomplete({
+        width: 205,
+        dataSource: carList,
+        enablePersistence: true
+    });
 
 {% endhighlight %}
 
 
 The following image is the output for **AutoComplete** when **enablePersistence** is set to ‘**True**’.
 
-{% include image.html url="/js/Autocomplete/State-Persistence_images/State-Persistence_img1.png" Caption="AutoComplete with State maintenance"%}
+{% include image.html url="/js/Autocomplete/State-Persistence_images/State-Persistence_img1.png"%}
 

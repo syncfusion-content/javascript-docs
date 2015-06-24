@@ -9,19 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Checkbox** in your application with **JavaScript**.
-
-## Create your first Checkbox in JavaScript
-
-**Essential JavaScript Checkbox** provides support for multiple selections, within your webpage and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App using **Checkbox**. The following screenshot demonstrates the functionality with Checkbox button action.
+This section explains briefly about how to create a **Checkbox** in your application with **JavaScript**.**Essential JavaScript Checkbox** provides support for multiple selections, within your webpage and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App using **Checkbox**. The following screenshot demonstrates the functionality with Checkbox button action.
 
 
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img1.png" Caption="Checkbox Control"%}
+{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img1.png" %}
 
 In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App using Checkbox, **Tri-state** **Checkbox** and perform the action to render the checked values when the button is clicked.
 
-### Create a Checkbox 
+## Create a Checkbox 
 
 **Essential JavaScript** **Checkbox** widget has built-in features like intermediate selections. You can easily create the Checkbox widget by using a simple input Checkbox element as follows.
 
@@ -126,11 +122,11 @@ Add the following styles to show the **Checkbox** control in an order.
 
   .frame
     {
-     width: 80%;
+        width: 80%;
     }
-.chkrad 
+    .chkrad 
     {
-     width: 150px;
+        width: 150px;
     }
 
 </style>
@@ -184,9 +180,9 @@ Initialize **Checkbox** in script.
 The following screenshot displays a **Checkbox** control.
 
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img3.png" Caption="Figure 2: Checkbox Creation"%}
+{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img3.png" %}
 
-### File Selection in Media Player
+## File Selection in Media Player
 
 You can get the file type of Media player applications such as video, audio and picture using **Checkbox.** Follow the given steps to get media player file types.
 
@@ -228,21 +224,22 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
    Picture<br /><br />
    <table>
       <tr>
-         <td >
+         <td>
             <input type="checkbox" id="Checkbox5" value="PNG" />
             <label for="Checkbox5" >*.PNG</label>
          </td>
-         <td >
+         <td>
             <input type="checkbox" id="Checkbox6" value="JPG" />
             <label for="Checkbox6" >*.JPG</label>
          </td>
+       </tr>
    </table>
    <br />
    <div>
       <button id="button11">SUBMIT</button>
    </div>
 </div>
-</html>
+
 
 {% endhighlight %}
 
@@ -285,5 +282,5 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
 
 Execute the code to render the resultant output.
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img4.png" Caption="File selection in Media player"%}
+{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img4.png"}
 

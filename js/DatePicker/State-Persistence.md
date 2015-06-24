@@ -15,23 +15,22 @@ The following steps explain you how to enable the **state maintenance** for **Da
 
 In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
- {% highlight html %}
+{% highlight html %}
  
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
-        // Add the code to enable the state maintenance for DatePicker widget
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                enablePersistence: true
-            });
-        });
+    // Add the code to enable the state maintenance for DatePicker widget
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker({
+          enablePersistence: true
+       });
+    });
 
-
-  {% endhighlight %}
+{% endhighlight %}
 
 

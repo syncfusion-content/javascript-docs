@@ -18,20 +18,20 @@ Add the following **HTML** to render **Tab** with **RTL** format.
 {% highlight html %}
 
 
-    <div id="dishtype" style="width: 650px">
-        <ul>
-            <li><a href="#pizza">Pizza Menu</a></li>
-            <li><a href="#sandwich">Sandwich Menu</a></li>
-        </ul>
-        <div id="pizza" style="background-color: #F5F5F5">
-            <!--Food item description-->
-            <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
-        <div id="sandwich" style="background-color: #F5F5F5">
-            <!--dish description-->
-            <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        </div>
+<div id="dishtype" style="width: 650px">
+    <ul>
+        <li><a href="#pizza">Pizza Menu</a></li>
+        <li><a href="#sandwich">Sandwich Menu</a></li>
+    </ul>
+    <div id="pizza" style="background-color: #F5F5F5">
+        <!--Food item description-->
+        <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
+    <div id="sandwich" style="background-color: #F5F5F5">
+        <!--dish description-->
+        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+    </div>
+</div>
     
 {% endhighlight %}
 
@@ -50,5 +50,5 @@ Add the following **HTML** to render **Tab** with **RTL** format.
 
 The following screenshot illustrates the **Tab** with **RTL** format.
 
-{% include image.html url="/js/Tab/RTL-Support_images/RTL-Support_img1.png" Caption="Tab with RTL format"%}
+{% include image.html url="/js/Tab/RTL-Support_images/RTL-Support_img1.png" %}
 

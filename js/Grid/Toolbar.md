@@ -29,7 +29,7 @@ If you want **Toolbar** items other than the above items, you can make it using 
 
 ## Custom Toolbar action
 
-**Custom Toolbar** is a key functionality, used to customize **Toolbar** elements. Here you can learn in detail about the **Toolbar** template and its actions in the **Custom Toolbar** category. In the following code example, **ejDropDownList** is used to filter records by category. Using **customToolBarItems** and **templateID** property to enable custom toolbar in grid.
+**Custom Toolbar** is a key functionality, used to customize **Toolbar** elements. Here you can learn in detail about the **Toolbar** template and its actions in the **Custom Toolbar** category. In the following code example, **ejDropDownList** is used to filter records by category. Using `customToolBarItems` and `templateID` property to enable custom toolbar in grid.
 
 {% highlight html %}
 
@@ -81,5 +81,5 @@ If you want **Toolbar** items other than the above items, you can make it using 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Toolbar_images/Toolbar_img1.png" Caption="Custom Toolbar"%}
+{% include image.html url="/js/Grid/Toolbar_images/Toolbar_img1.png"%}
 

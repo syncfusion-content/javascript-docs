@@ -66,7 +66,7 @@ documentation: ug
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img1.png" Caption="Toolbar with Edit Option"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img1.png"%}
 
 ## Cell edit type
 
@@ -84,7 +84,7 @@ Essential Studio JavaScript Grid supports column edit type by using delegated co
 
 * **DropDownList** control for list of data.
 
-The edit type of every column can be customized using the **editType** property.
+The edit type of every column can be customized using the `editType` property.
 
 {% highlight html %}
 
@@ -123,7 +123,7 @@ The edit type of every column can be customized using the **editType** property.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img2.png" Caption="Cell Edit Type"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img2.png"%}
 
 ### External DataSource for DropDown EditType Column
 
@@ -164,11 +164,11 @@ By default, the datasource for Dropdown Edit Column is set by Grid Control from 
 
 
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img3.png" Caption="Dropdown External DataSource"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img3.png"%}
 
 ## Edit Template
 
-**Edit Template** feature is used to create a custom editor to edit column values. **Edit Template** has three functions. Using **ediTemplate** property we are able to achieve Edit Template feature.
+**Edit Template** feature is used to create a custom editor to edit column values. **Edit Template** has three functions. Using `ediTemplate` property we are able to achieve Edit Template feature.
 
 * **Create** – It is used to create the control at time of initialize
 
@@ -220,7 +220,7 @@ The following code example is for **Edit Template.**
 
 The forllowing screen shot showed the out put of the above code snippet.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img4.png" Caption="Edit Template"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img4.png"%}
 
 ## Edit Mode
 
@@ -244,7 +244,7 @@ Essential Studio JavaScript Grid supports eight modes of editing feature in grid
 
 ### Normal Editing
 
-This feature allows you to edit various fields of a single record, simultaneously. The row goes to editable state. The following code example shows you how to set **editMode** as **Normal**.
+This feature allows you to edit various fields of a single record, simultaneously. The row goes to editable state. The following code example shows you how to set `editMode` as **Normal**.
 
 {% highlight html %}
 
@@ -286,7 +286,7 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img5.png" Caption="Normal Editing"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img5.png"%}
 
 ### Dialog Editing
 
@@ -332,7 +332,7 @@ The **Dialog Edit** feature allows you to edit data, using a dialog box that has
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img6.png" Caption="Dialog Editing"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img6.png"%}
 
 ### Inline Form Editing
 
@@ -379,7 +379,7 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img7.png" Caption="Inline Form Editing"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img7.png"%}
 
 ### External Form Editing
 
@@ -387,7 +387,7 @@ The **External Form Edit Mode** helps you edit various data entries in the **Gri
 
 This is different from the **Dialog Editing** mode in that it allows you to see the other entries in the **Grid** while you are editing one.
 
-You can position the edit form either in the top-right corner or the bottom-left corner (by default) of the **Grid**. The following code example shows you how to set **editMode** as **External Form**.
+You can position the edit form either in the top-right corner or the bottom-left corner (by default) of the **Grid**. The following code example shows you how to set `editMode` as **External Form**.
 
 {% highlight html %}
 
@@ -430,7 +430,7 @@ You can position the edit form either in the top-right corner or the bottom-left
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img8.png" Caption="External Form Editing"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img8.png"%}
 
 ### Template Form Editing
 
@@ -446,7 +446,7 @@ You can also edit the fields that are not visible in the **Grid** using this tem
 
 #### Inline Template Form Editing
 
-In Inline Template, you can specify the template inside the script tag and select the type as text/template. Only then the HTML elements defined in the template will not be displayed in the browser. You can define the template as follows. Using inlineFormTemplateID we are able to set the form template for editing.
+In Inline Template, you can specify the template inside the script tag and select the type as text/template. Only then the HTML elements defined in the template will not be displayed in the browser. You can define the template as follows. Using `inlineFormTemplateID` we are able to set the form template for editing.
 
 {% highlight html %}
 
@@ -570,7 +570,7 @@ In Inline Template, you can specify the template inside the script tag and selec
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img9.png" Caption="Inline Template Form Editing"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img9.png"%}
 
 In the above screenshot you can see that the elements are not rendered based on the type of the column. For example, in Freight column, the textbox is rendered instead of NumericTextBox.
 
@@ -691,11 +691,11 @@ Now, the elements defined in the templates, are changed to JavaScript controls. 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img10.png" Caption="Inline Template Form Editing with actionComplete events"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img10.png"%}
 
 #### External Template Form Editing
 
-The above mentioned procedure applies to **ExternalTemplate** editing feature also. Use the given code example instead of setting inlineTemplateForm as editMode. Using **externalFormTemplateID** we are able to set external template for editing.
+The above mentioned procedure applies to **ExternalTemplate** editing feature also. Use the given code example instead of setting inlineTemplateForm as editMode. Using `externalFormTemplateID` we are able to set external template for editing.
 
 {% highlight js %}
 
@@ -722,11 +722,11 @@ The above mentioned procedure applies to **ExternalTemplate** editing feature al
 
 The following screenshot shows External Template Form Editing.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img11.png" Caption="External Template Form Editing"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img11.png"%}
 
 #### Dialog Template Editing
 
-The above mentioned procedure applies to **DialogTemplate** editing feature also. Use the given code example instead of setting for DialogTemplate as editMode. Using **dialogEditorTemplateID** property to set the dialog template for editing.
+The above mentioned procedure applies to **DialogTemplate** editing feature also. Use the given code example instead of setting for DialogTemplate as editMode. Using `dialogEditorTemplateID` property to set the dialog template for editing.
 
 {% highlight js %}
 
@@ -751,7 +751,7 @@ $(function() { // Document is ready.
 
 The following screenshot shows Dialog Template Form Editing.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img12.png" Caption="Dialog Template Form Editing"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img12.png"%}
 
 ### Batch Editing
 
@@ -799,13 +799,13 @@ These markers are not shown after the updated data is rendered. The following co
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img13.png" Caption="Batch Editing"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img13.png"%}
 
 When the Save or Cancel button is clicked, or performing an action before you save the edited records, the Confirmation message is displayed. 
 
 The following screenshot shows the Confirmation Dialog box.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img14.png" Caption="Batch Editing with Confimation Dialog box"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img14.png"%}
 
 
 
@@ -897,7 +897,7 @@ equalTo</td><td>
 </table>
 
 
-The following code example shows you how to include the jquery validation support for **Grid** while editing the records. We can set validation rules using **validationRules** property.
+The following code example shows you how to include the jquery validation support for **Grid** while editing the records. We can set validation rules using `validationRules` property.
 
 {% highlight html %}
  
@@ -936,7 +936,7 @@ The following code example shows you how to include the jquery validation suppor
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img15.png" Caption="JQuery Validation Methods"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img15.png"%}
 
 ### Custom Validation
 
@@ -989,7 +989,7 @@ In addition to jquery validation methods, you can also add your own custom valid
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img16.png" Caption="Custom Validation Methods"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img16.png"%}
 
 ## CRUD Operation With Server-Side
 
@@ -1067,7 +1067,7 @@ _Parameters Table_
 
 ### URL Adaptor
 
-You can use the **UrlAdaptor** of ejDataManger when binding datasource from remote data. At initial load of **Grid**, using **URL** property of DataManager, data are fetched from remote data and binded to **Grid**. You can map **CRUD** operation in **Grid** to Server-Side Controller action using the properties “InsertURL”, “UpdateURL” and “RemoveURL”. We can set insert, update and remove url using ejDataManager properties **insertUrl,removeUrl** and **updateUrl.**
+You can use the **UrlAdaptor** of ejDataManger when binding datasource from remote data. At initial load of **Grid**, using **URL** property of DataManager, data are fetched from remote data and binded to **Grid**. You can map **CRUD** operation in **Grid** to Server-Side Controller action using the properties `InsertURL`, `UpdateURL` and `RemoveURL`. We can set insert, update and remove url using ejDataManager properties `insertUrl,removeUrl` and `updateUrl.`
 
 Also when you use **UrlAdaptor**, you need to return the data as **JSON** and the **JSON** object must contain field name as “result” with its value as dataSource and one more field name as “count” with its value as dataSource total records count.
 
@@ -1099,7 +1099,7 @@ Also when you use **UrlAdaptor**, you need to return the data as **JSON** and th
 
 ### remoteSave Adaptor
 
-The **remoteSaveAdaptor** of DataManager can be used when you bind local data to **Grid** datasource. **CRUD** operations in **Grid** local data can be mapped to server-side controller using **CRUD URL’s** “InsertUrl”, “UpdateUrl” and “RemoveUrl”. We can set insert, update and remove url using ejDataManager properties **insertUrl, removeUrl** and **updateUrl.**
+The **remoteSaveAdaptor** of DataManager can be used when you bind local data to **Grid** datasource. **CRUD** operations in **Grid** local data can be mapped to server-side controller using **CRUD URL’s** `InsertUrl`, `UpdateUrl` and `RemoveUrl`. We can set insert, update and remove url using ejDataManager properties `insertUrl, removeUrl` and `updateUrl.`
 
 When you use **remoteSaveAdaptor**, server-side post back occurs only for **CRUD** actions in **Grid**. Rest of the **Grid** actions (paging, sorting, filtering, etc.,) can be handled at client-side itself.
 
@@ -1132,13 +1132,13 @@ When you use **remoteSaveAdaptor**, server-side post back occurs only for **CRUD
 
 The output for the Server Binding of records is as follows:
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img17.png" Caption=""%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img17.png" Caption=""%}
 
 _Edit_
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img18.png" Caption="Server Bind"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img18.png" Caption="Server Bind"%}
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img19.png" Caption="Console Post"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img19.png" Caption="Console Post"%}
 
 ## Editing Remote Data
 
@@ -1150,7 +1150,7 @@ The **Grid** control for **JavaScript** allows you to bind and edit data from th
 
 1. Open Visual Studio 2012. In the File menu, click New and select Project. The New Project Dialog box is opened.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img20.png" Caption="WCF Dataservice"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img20.png" Caption="WCF Dataservice"%}
 
 2. Select ASP.NET Empty Web Application and click OK.
 
@@ -1166,7 +1166,7 @@ The **Grid** control for **JavaScript** allows you to bind and edit data from th
 
 
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img21.png" Caption="Creating a New Entity Data Model"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img21.png" Caption="Creating a New Entity Data Model"%}
 
 8. Select the ADO.NET Entity Data Model template, give the Entity Data Model the name Northwind.edmx, and click the Add button. Click Add to launch the Data Model Wizard. 
 
@@ -1174,25 +1174,25 @@ The **Grid** control for **JavaScript** allows you to bind and edit data from th
 
 
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img22.png" Caption="Entity Data Model Wizard"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img22.png" Caption="Entity Data Model Wizard"%}
 
 10. In the Choose Your Data Connection step, select the NORTHWND.MDF database connection, enter the entities connection settings name NORTHWNDEntities and click Next.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img23.png" Caption="Entity Data Model Wizard"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img23.png" Caption="Entity Data Model Wizard"%}
 
 11. In the **Choose Your Database Objects** step, select all the database tables and click **Finish**.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img24.png" Caption="Figure 70: Entity Data Model Wizard"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img24.png" Caption="Figure 70: Entity Data Model Wizard"%}
 
 When you are finished, you can see the following image.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img25.png" Caption="GridDemo"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img25.png" Caption="GridDemo"%}
 
 12. Right-click the Models folder in the Solution Explorer window and select the Menu option Add New Item.
 
 13. In the Add New Item dialog, in the Web category, select WCF Data Service, enter Northwnd.svc in the Name textbox and click Add. 
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img26.png" Caption="Add New Item- GridDemo"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img26.png" Caption="Add New Item- GridDemo"%}
 
 14. The WCF Data Service file is created. Open the Nothwnd.svs.cs file and set the NORTHWNDEntities as a class for the DataService.
 
@@ -1284,13 +1284,13 @@ var dataManger = ej.DataManager({
 
 The output for the above Grid creation with editing options code example is as follows.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img27.png" Caption="Editing Remote Data"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img27.png"%}
 
 ## Adding New Row Position
 
 Adding new row position allows you to add new row in the top or bottom position that depends upon the requirement. 
 
-ejGrid supports two types of rowposition. Using rowPosition property to assign row position for editing.They are
+ejGrid supports two types of rowposition. Using `rowPosition` property to assign row position for editing.They are
 
 * Top
 
@@ -1328,13 +1328,13 @@ The following code example illustrates you how to set rowPosition.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img28.png" Caption=""%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img28.png"%}
 
 _Adding new row position_
 
 ## Render grid with add new row
 
-In **ejGrid,** there is an option to show the newly add row at the bottom or top of the Grid content during **Grid Initialize** that is achieved by using **showAddNewRow** property of **editSettings** in **Grid**. The default value is **false**.
+In **ejGrid,** there is an option to show the newly add row at the bottom or top of the Grid content during **Grid Initialize** that is achieved by using `showAddNewRow` property of `editSettings` in **Grid**. The default value is **false**.
 
 This property helps you to add a new row dynamically and save the record either top or bottom of the **Grid**.
 
@@ -1366,5 +1366,5 @@ This property helps you to add a new row dynamically and save the record either 
 
 The following screenshot is the output of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Editing_images/Editing_img29.png" Caption="Grid with new row"%}
+{% include image.html url="/js/Grid/Editing_images/Editing_img29.png"%}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Appointment Template
 
-* The appointments are provided with rich template support, so that the customizations are done easily. You can add the appointment template to the **Schedule** control as follows.
+The appointments are provided with rich template support, so that the customizations are done easily. You can add the appointment template to the **Schedule** control as follows.
 
 
 {% highlight html %}
@@ -99,7 +99,7 @@ The output for the above code is as follows that displays the appointment with t
 
 ## Resource Header Template
 
-* The resources are provided with rich template support, so that the customizations are done easily. You can add the resource header template to the **Schedule** control as follows.
+The resources are provided with rich template support, so that the customizations are done easily. You can add the resource header template to the **Schedule** control as follows.
 
 
 {% highlight html %}

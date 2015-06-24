@@ -37,25 +37,24 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-    <table>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="type_button" />             
-            </td>
-        </tr>
-        <tr>
+<table>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="type_button" />             
+        </td>
+    </tr>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="type_submit" />                
+        </td>
+    </tr>
+    <tr>
+        <td class="btnsht">
+            <input type="checkbox" id="type_mini" />                
+        </td>
 
-            <td class="btnsht">
-                <input type="checkbox" id="type_submit" />                
-            </td>
-        </tr>
-        <tr>
-            <td class="btnsht">
-                <input type="checkbox" id="type_mini" />                
-            </td>
-
-        </tr>
-    </table>
+    </tr>
+</table>
 	
 {% endhighlight %}
 
@@ -67,7 +66,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
       $(function () {
           //type property is used to render different type of toggle buttons
           $("#type_button").ejToggleButton({
-              size: "mini",
+              size: "large",
               type: "button",
               showRoundedCorner: true,
               defaultText: "Play",
@@ -75,14 +74,14 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
           });
           $("#type_submit").ejToggleButton({
-              size: "mini",
+              size: "large",
               type: "submit",
               showRoundedCorner: true,
               defaultText: "submit",
               activeText: "submited",
           });
           $("#type_mini").ejToggleButton({
-              size: "mini",
+              size: "large",
               type: "reset",
               showRoundedCorner: true,
               defaultText: "reset",
@@ -96,6 +95,6 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Button-types_images/Button-types_img1.png" Caption="Types of Toggle button"%}
+{% include image.html url="/js/ToggleButton/Button-types_images/Button-types_img1.png" %}
 
 

@@ -82,7 +82,7 @@ var connector = {
 
 ## Appearance
 
-You can customize the Port appearance by setting desired values to the appropriate **appearance** property.
+You can customize the Port appearance by setting desired values to the appropriate appearance property.
 
 <table>
 <tr>
@@ -145,7 +145,7 @@ var port = {
 
 ## Constraints
 
-You can enable or disable certain behaviors of Port using Port’s **constraints** property. 
+You can enable or disable certain behaviors of Port using `Port`’s `constraints` property. 
 
 <table>
 <tr>

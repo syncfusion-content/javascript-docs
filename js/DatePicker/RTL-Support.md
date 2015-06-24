@@ -19,24 +19,24 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 {% highlight html %}
 
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
-        // Add the code to enable the RTL property of the DatePicker widget
-        $(function () {
-            // declaration
-            $("#datepicker").ejDatePicker({
-                enableRTL: true
-            });
-        });
+    // Add the code to enable the RTL property of the DatePicker widget
+    $(function() {
+       // declaration
+       $("#datepicker").ejDatePicker({
+          enableRTL: true
+       });
+    });
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/DatePicker/RTL-Support_images/RTL-Support_img1.png" Caption="RTL Support in DatePicker"%}
+{% include image.html url="/js/DatePicker/RTL-Support_images/RTL-Support_img1.png"%}
 

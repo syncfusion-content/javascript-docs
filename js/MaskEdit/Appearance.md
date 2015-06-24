@@ -40,7 +40,7 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget.
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" /> 
+<input id="maskedit" type="text" /> 
     
 {% endhighlight %}
 
@@ -66,18 +66,18 @@ Customize the CSS properties in custom CSS class.
 {% highlight css %}
 
 
-    <style>
-        .customCss .e-box {
-            border-color: #9d241b;
-        }
-        .customCss .e-input {
-            background-color: #f6db8d;            
-        }
-        .customCss .e-select {
-            background-color: #ecf6ac;
-            border-color: #3c36e7;
-        }
-    </style>
+<style>
+    .customCss .e-box {
+        border-color: #9d241b;
+    }
+    .customCss .e-input {
+        background-color: #f6db8d;            
+    }
+    .customCss .e-select {
+        background-color: #ecf6ac;
+        border-color: #3c36e7;
+    }
+</style>
 
 
 
@@ -89,7 +89,7 @@ The output for MaskEdit after applying **cssClass** is as follows.
 
 
 
-{% include image.html url="/js/MaskEdit/Appearance_images/Appearance_img1.png" Caption="MaskEdit with cssClass"%}
+{% include image.html url="/js/MaskEdit/Appearance_images/Appearance_img1.png"%}
 
 ## Rounded Corner Support
 
@@ -102,15 +102,14 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget.
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
 {% highlight js %}
 
-        $(function () {
-            $("#maskedit").ejMaskEdit(
-            {
+        $(function() {
+            $("#maskedit").ejMaskEdit({
                 name: "mask",
                 inputMode: ej.InputMode.Text,
                 maskFormat: "99-999-99999",
@@ -126,7 +125,7 @@ Output of MaskEdit when **showRoundedCorner** is “**true**”.
 
 
 
-{% include image.html url="/js/MaskEdit/Appearance_images/Appearance_img2.png" Caption="MaskEdit with showRoundedCorner"%}
+{% include image.html url="/js/MaskEdit/Appearance_images/Appearance_img2.png"%}
 
 ## WatermarkText Support
 
@@ -139,15 +138,14 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget.
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
 {% highlight js %}
 
-        $(function () {
-            $("#maskedit").ejMaskEdit(
-            {
+        $(function() {
+            $("#maskedit").ejMaskEdit({
                 name: "mask",
                 inputMode: ej.InputMode.Text,
                 maskFormat: "99-999-99999",
@@ -164,7 +162,7 @@ Output of MaskEdit when **waterMarkText** is “**true**”.
 
 
 
-{% include image.html url="/js/MaskEdit/Appearance_images/Appearance_img3.png" Caption="MaskEdit with watermark text"%}
+{% include image.html url="/js/MaskEdit/Appearance_images/Appearance_img3.png"%}
 
 ## Text Alignment Support
 
@@ -177,15 +175,14 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
 {% highlight js %}
 
-        $(function () {
-            $("#maskedit").ejMaskEdit(
-            {
+        $(function() {
+            $("#maskedit").ejMaskEdit({
                 name: "mask",
                 inputMode: ej.InputMode.Text,
                 maskFormat: "99-999-99999",
@@ -200,7 +197,7 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget
 
 The output for Textboxes when **textAlign** is set to **“right”**.
 
-{% include image.html url="/js/MaskEdit/Appearance_images/Appearance_img4.png" Caption="MaskEdit with textAlign"%}
+{% include image.html url="/js/MaskEdit/Appearance_images/Appearance_img4.png"%}
 
 
 

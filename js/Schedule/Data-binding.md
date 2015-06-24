@@ -9,65 +9,65 @@ documentation: ug
 
 # Data-binding
 
-* To render appointments to the **Schedule** control, you are required to bind the appointment data. The following sub-properties helps you to bind either the local/remote data to the **Schedule** control by binding the appropriate appointment data fields to the corresponding options.
+To render appointments to the **Schedule** control, you are required to bind the appointment data. The following sub-properties helps you to bind either the local/remote data to the **Schedule** control by binding the appropriate appointment data fields to the corresponding options.
+
+## Appointment settings
+
+The  Appointment settings is an object collection that holds the appointment related information such as the dataSource. It provides the collection of values that are to be used for appointments,id holds the binding name for Id field in the appointment dataSource and other mapper field names to bind the fields of the dataSource.
 
 **dataSource**
 
-* This property assigns the local json data or remote (url binding) data to the **Schedule** control.
+This property assigns the local json data or remote (url binding) data to the **Schedule** control.
 
 **query** 
 
-* It accepts the data of object type, which is usually the query string to fetch the required data from a specific table based on certain condition. As this property is optional, it is not specified. 
+It accepts the data of object type, which is usually the query string to fetch the required data from a specific table based on certain condition. As this property is optional, it is not specified. 
 
 The entire records that are initially assigned through dataSource is taken into consideration.
 
 **tableName**
 
-* It maps the corresponding name of the table from the location and the records are fetched to the **Schedule** control. As this property is optional, it is not specified. It takes the default dataSource into consideration. 
+It maps the corresponding name of the table from the location and the records are fetched to the **Schedule** control. As this property is optional, it is not specified. It takes the default dataSource into consideration. 
 
 **id**
 
-* It maps the corresponding id field name from the data table or json data that is assigned to the dataSource with the **id** property of the **Schedule** control. The **id** value that is fetched from the table is unique for each appointment.
+It maps the corresponding id field name from the data table or json data that is assigned to the dataSource with the **id** property of the **Schedule** control. The **id** value that is fetched from the table is unique for each appointment.
 
 **subject**
 
-* It maps the corresponding subject field name from the data table or json data that is assigned to the dataSource with the **subject** property of the **Schedule** control. The **Subject** field denotes the appointment subject and it accepts the value of string type.
+It maps the corresponding subject field name from the data table or json data that is assigned to the dataSource with the **subject** property of the **Schedule** control. The **Subject** field denotes the appointment subject and it accepts the value of string type.
 
 **description**
 
-* It maps the corresponding description field name from the data table or json data that is assigned to the dataSource with the **description** property of the **Schedule** control. The **description** field is used to save more information related to the appointments. It accepts the value of string type.
+It maps the corresponding description field name from the data table or json data that is assigned to the dataSource with the **description** property of the **Schedule** control. The **description** field is used to save more information related to the appointments. It accepts the value of string type.
 
 **startTime**
 
-* It maps the corresponding start time field name from the data table or json data that is assigned to the dataSource with the **startTime** property of the **Schedule** control. The **startTime** denotes the starting time of the appointment and it accepts the value of type dateTime.
+It maps the corresponding start time field name from the data table or json data that is assigned to the dataSource with the **startTime** property of the **Schedule** control. The **startTime** denotes the starting time of the appointment and it accepts the value of type dateTime.
 
 **endTime**
 
-* It maps the corresponding end time field name from the data table or json data that is assigned to the dataSource with the **endTime** property of the **Schedule** control. The **endTime** denotes the ending time of the appointment and it accepts the dateTime values from the database.
+It maps the corresponding end time field name from the data table or json data that is assigned to the dataSource with the **endTime** property of the **Schedule** control. The **endTime** denotes the ending time of the appointment and it accepts the dateTime values from the database.
 
 **recurrence**
 
-* It maps the corresponding recurrence field name from the data table or json data that is assigned to the dataSource with the **recurrence** property of the **Schedule** control. This field determines whether the appointment is  normal or recurrence type. It accepts the Boolean type value either true/false. 
+It maps the corresponding recurrence field name from the data table or json data that is assigned to the dataSource with the **recurrence** property of the **Schedule** control. This field determines whether the appointment is  normal or recurrence type. It accepts the Boolean type value either true/false. 
 
 **recurrenceRule**
 
-* It maps the corresponding recurrence rule field name from the data table or json data that is assigned to the dataSource with the **recurrenceRule** property of the **Schedule** control. This field defines the recurrence repeat string and accepts the string value.
+It maps the corresponding recurrence rule field name from the data table or json data that is assigned to the dataSource with the **recurrenceRule** property of the **Schedule** control. This field defines the recurrence repeat string and accepts the string value.
 
 **allDay**
 
-* It maps the corresponding all day field name from the data table or json data that is assigned to the dataSource with the **allDay** property of the **Schedule** control. This field determines whether the appointment is created for the whole day or not. It accepts the Boolean value and when it is true, the appointment is created as an **allday** appointment in the **Schedule** control.
+It maps the corresponding all day field name from the data table or json data that is assigned to the dataSource with the **allDay** property of the **Schedule** control. This field determines whether the appointment is created for the whole day or not. It accepts the Boolean value and when it is true, the appointment is created as an **allday** appointment in the **Schedule** control.
 
 **resourceFields**
 
-* It accepts the resource related field names as a string separated by a comma separator. When multiple resources are rendered on a **Schedule** control with multiple categories, then the name availed for each resource level is binded.
+It accepts the resource related field names as a string separated by a comma separator. When multiple resources are rendered on a **Schedule** control with multiple categories, then the name availed for each resource level is binded.
 
 **categorize**
 
-* It maps the corresponding categorize field name from the data table or JSON data, to the categorize property of the **Schedule** control.
-
-
-
-**Appointment settings:**
+It maps the corresponding categorize field name from the data table or JSON data, to the categorize property of the **Schedule** control.
 
 **location**
 
@@ -83,7 +83,6 @@ The entire records that are initially assigned through dataSource is taken into 
 <div id="Schedule1"></div>
 
 {% endhighlight %}
-
 
 
 {% highlight js %}
@@ -146,7 +145,7 @@ On executing the above specified code the **Location** field will be added in th
 
 * It maps the corresponding priority field name from the data table or JSON data, to the priority property of the **Schedule** control.
 
-**Local data**
+## Local data
 
 * You can locally assign the data to **Scheduler** control. Inorder to define the local data to the **Scheduler** control, map the user-defined json data names with its appropriate dataSource column names. 
 
@@ -236,7 +235,7 @@ On executing the above specified code the **Scheduler** displays the appointment
 
 
 
-**Remote data**
+## Remote data
 
 * Apart from assinging the local data you can bind the remote data to the **Schedule** control using service url.
 
@@ -287,7 +286,7 @@ The following screenshot displays the remote data bound to the **Schedule** cont
 
 {% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img3.png" Caption=""%}
 
-**Load On Demand**
+## Load On Demand
 
 * **Load on demand** is a powerful technique that is used to reduce the bandwidth size of consuming data. L**oad on demand** support has been added in our Schedule control, so that, it retrieves only the required appointment data from service/database during loading time, and that too for the current view. 
 
@@ -351,7 +350,7 @@ The following screenshot is the result of the above code example.
 {% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img5.png" Caption="Schedule with load on demand."%}
 
 
-* [Click here](http://js.syncfusion.com/demos/web/#!/azure/schedule/databinding/loaddataondemand) to see how **load on demand** works with **Schedule**.
+[Click here](http://js.syncfusion.com/demos/web/#!/azure/schedule/databinding/loaddataondemand) to see how **load on demand** works with **Schedule**.
 
 
 

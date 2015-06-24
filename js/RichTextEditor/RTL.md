@@ -15,9 +15,9 @@ Add the following code to the script section in your **HTML** page to initialize
 
 {% highlight html %}
 
-    <div class="rte">
-        <textarea id="RTL"></textarea>
-    </div>
+<div class="rte">
+    <textarea id="RTL"></textarea>
+</div>
 
 {% endhighlight %}
 
@@ -49,5 +49,5 @@ Add the following code to the script section in your **HTML** page to initialize
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/RTL_images/RTL_img1.png" Caption="Show case for RTE with right to left appearance"%}
+{% include image.html url="/js/RichTextEditor/RTL_images/RTL_img1.png" %}
 
