@@ -9,16 +9,16 @@ documentation: ug
 
 # Toolbar
 
-**TreeGrid** control contains toolbar options for adding, deleting and editing the records. You can customize the TreeGrid toolbar by using `**toolbarSettings**` API. 
+TreeGrid control contains toolbar options for adding, deleting and editing the records. You can customize the TreeGrid toolbar by using `toolbarSettings` API. 
 
-In **TreeGrid** by using `**rowPosition**` API, the index position for the newly added row can be provided. Default value of the `**rowPosition**` property is `**top**`. The enumeration values for `**rowPosition**` properties are,
+In TreeGrid by using `rowPosition` API, the index position for the newly added row can be provided. Default value of the `rowPosition` property is `top`. The enumeration values for `rowPosition` properties are,
 
 * top
 * bottom
 * aboveSelectedRow
 * belowSelectedRow
 
-You can enable toolbar for **TreeGrid**, using the following code example.
+You can enable toolbar for TreeGrid, using the following code example.
 
 {% highlight js %}
 
@@ -48,7 +48,7 @@ You can enable toolbar for **TreeGrid**, using the following code example.
 
 {% endhighlight %}
 
-The following screenshot displays the toolbar option in **TreeGrid** control.
+The following screenshot displays the toolbar option in TreeGrid control.
 
 {% include image.html url="/js/TreeGrid/Toolbar_images/Toolbar_img1.png"%}
 
