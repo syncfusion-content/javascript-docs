@@ -9,7 +9,7 @@ documentation: ug
 
 # Toolbar
 
-**Gantt** control contains toolbar options for editing, searching, expanding and collapsing all records, indent, out dent, delete and add task. You can enable toolbar using the following code example.
+Gantt control contains toolbar options for editing, searching, expanding and collapsing all records, indent, out dent, delete and add task. You can enable toolbar using the following code example.
 
 {% highlight js %}
 
@@ -38,5 +38,5 @@ documentation: ug
 
 The following screenshot shows the toolbar option in Gantt control.
 
-{% include image.html url="/js/Gantt/Toolbar_images/Toolbar_img1.png" Caption="Toolbar"%}
+{% include image.html url="/js/Gantt/Toolbar_images/Toolbar_img1.png"%}
 
