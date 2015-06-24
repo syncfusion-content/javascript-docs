@@ -156,9 +156,7 @@ When you set the **highlightSearch** property to **“True”**, the characters 
 
 To enable the **Popup** button, you can set **showPopupButton** property to **“True”** that displays the **DropDown** icon at the end of text box. By default, search icon replaces other icons and so you need to override the **CSS** classes as follows. The source image is taken from the installation location.
 
-**[Installed Drive]**:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JS \Samples\ web\themes\images\icon-down.png 
-
-> **Note:** X.X.X.X represents the Essential Studio version number that you are using currently.
+**[Installed Drive]**:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JS \Samples\ web\themes\images\icon-down.png 
 
 Copy the “**icon-down.png**” from the above mentioned location and paste it in the folder location of your **HTML** sample page.
 
