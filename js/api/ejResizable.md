@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for resizing HTML elements.
+# Custom Design for resizing HTML elements.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for resizing HTML elements.
 
 
 
-#### $(element).ejResizable<span class="signature">()</span>
+## $(element).ejResizable<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for resizing HTML elements.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $('#resizing').ejResizable();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -60,7 +61,7 @@ $('#resizing').ejResizable();
 
 
 
-### Members
+## Members
 
 
 
@@ -69,7 +70,7 @@ $('#resizing').ejResizable();
 
 
 
-#### cursorAt<span class="type-signature type object">object</span>
+### cursorAt<span class="type-signature type object">object</span>
 
 
 
@@ -100,7 +101,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -120,7 +122,7 @@ Default Value:
 
 
 
-#### distance<span class="type-signature type number">number</span>
+### distance<span class="type-signature type number">number</span>
 
 
 
@@ -151,7 +153,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -171,7 +174,7 @@ Default Value:
 
 
 
-#### handle<span class="type-signature type string">string</span>
+### handle<span class="type-signature type string">string</span>
 
 
 
@@ -202,7 +205,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -222,7 +226,7 @@ Default Value:
 
 
 
-#### maxHeight<span class="type-signature type number">number</span>
+### maxHeight<span class="type-signature type number">number</span>
 
 
 
@@ -253,7 +257,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -273,7 +278,7 @@ Default Value:
 
 
 
-#### maxWidth<span class="type-signature type number">number</span>
+### maxWidth<span class="type-signature type number">number</span>
 
 
 
@@ -304,7 +309,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -324,7 +330,7 @@ Default Value:
 
 
 
-#### minHeight<span class="type-signature type number">number</span>
+### minHeight<span class="type-signature type number">number</span>
 
 
 
@@ -355,7 +361,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -375,7 +382,7 @@ Default Value:
 
 
 
-#### minWidth<span class="type-signature type number">number</span>
+### minWidth<span class="type-signature type number">number</span>
 
 
 
@@ -406,7 +413,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -426,7 +434,7 @@ Default Value:
 
 
 
-#### scope<span class="type-signature type string">string</span>
+### scope<span class="type-signature type string">string</span>
 
 
 
@@ -457,7 +465,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -475,7 +484,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -484,7 +493,7 @@ Default Value:
 
 
 
-#### _destroy<span class="signature">()</span>
+### _destroy<span class="signature">()</span>
 
 
 
@@ -499,7 +508,8 @@ destroy in the Resizable.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -515,7 +525,7 @@ resizingObj.destroy();
 
 
 
-### Events
+## Events
 
 
 
@@ -524,7 +534,7 @@ resizingObj.destroy();
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -565,7 +575,8 @@ This event is triggered when the widget destroys.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -580,7 +591,7 @@ $("#resizing").ejResizable({
 
 
 
-#### helper
+### helper
 
 
 
@@ -621,7 +632,8 @@ This event is triggered when resized.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -643,7 +655,7 @@ $("#resizing").ejResizable({
 
 
 
-#### <code>resize</code>
+### <code>resize</code>
 
 
 
@@ -684,7 +696,8 @@ $("#resizing").ejResizable({
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -699,7 +712,7 @@ $("#resizing").ejResizable({
 
 
 
-#### resizeStart
+### resizeStart
 
 
 
@@ -740,7 +753,8 @@ This event is triggered when the resizing is start.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -755,7 +769,7 @@ $("#resizing").ejResizable({
 
 
 
-#### resizeStop
+### resizeStop
 
 
 
@@ -796,7 +810,8 @@ This event is triggered when the resizing is stop.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

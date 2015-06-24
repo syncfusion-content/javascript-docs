@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html DatePicker control.
+# Custom Design for Html DatePicker control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html DatePicker control.
 
 
 
-#### $(element).ejmDatePicker<span class="signature">()</span>
+## $(element).ejmDatePicker<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html DatePicker control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -46,7 +47,7 @@ $("#datepicker").ejmDatePicker();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -95,7 +96,7 @@ $("#datepicker").ejmDatePicker();
 
 
 
-### Members
+## Members
 
 
 
@@ -104,7 +105,7 @@ $("#datepicker").ejmDatePicker();
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -135,7 +136,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -169,7 +171,7 @@ $("#datepicker").ejmDatePicker("option", "cssClass", "customclass");            
 
 
 
-#### culture<span class="type-signature type string">string</span>
+### culture<span class="type-signature type string">string</span>
 
 
 
@@ -200,7 +202,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -234,7 +237,7 @@ $("#datepicker").ejmDatePicker("option", "culture", "en-US");            </code>
 
 
 
-#### dateFormat<span class="type-signature type string">string</span>
+### dateFormat<span class="type-signature type string">string</span>
 
 
 
@@ -265,7 +268,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -299,7 +303,7 @@ $("#datepicker").ejmDatePicker("option", "dateFormat", "MM/dd/yyyy");           
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -330,7 +334,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -364,7 +369,7 @@ $("#datepicker").ejmDatePicker("option", "enabled", false);            </code>
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -395,7 +400,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -429,7 +435,7 @@ $("#datepicker").ejmDatePicker("option", "enablePersistence", true);            
 
 
 
-#### ios7
+### ios7
 
 
 
@@ -450,7 +456,7 @@ Section for ios7 rendermode specific functionalities.
 
 
 
-#### ios7.renderDefault<span class="type-signature type boolean">boolean</span>
+### ios7.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -481,7 +487,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -513,7 +520,7 @@ $("#datepicker").ejmDatePicker("option", "ios7.renderDefault", true); </code>
 
 
 
-#### maxDate<span class="type-signature type string">string</span>
+### maxDate<span class="type-signature type string">string</span>
 
 
 
@@ -544,7 +551,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -578,7 +586,7 @@ $("#datepicker").ejmDatePicker("option", "maxDate", "31/12/2030");            </
 
 
 
-#### minDate<span class="type-signature type string">string</span>
+### minDate<span class="type-signature type string">string</span>
 
 
 
@@ -609,7 +617,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -643,7 +652,7 @@ $("#datepicker").ejmDatePicker("option", "minDate", "01/01/2000");            </
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -674,7 +683,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -708,7 +718,7 @@ $("#datepicker").ejmDatePicker("option", "renderMode", "android" );            <
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -739,7 +749,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -773,7 +784,7 @@ $("#datepicker").ejmDatePicker("option", "theme", "auto" );            </code>
 
 
 
-#### value<span class="type-signature type string">string</span>
+### value<span class="type-signature type string">string</span>
 
 
 
@@ -804,7 +815,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -838,7 +850,7 @@ $("#datepicker").ejmDatePicker("option", "value", "04/23/2010");            </co
 
 
 
-#### windows
+### windows
 
 
 
@@ -859,7 +871,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -890,7 +902,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -921,7 +934,7 @@ $("#datepicker").ejmDatePicker("option", "windows.renderDefault", true); </code>
 
 
 
-### Methods
+## Methods
 
 
 
@@ -930,7 +943,7 @@ $("#datepicker").ejmDatePicker("option", "windows.renderDefault", true); </code>
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -945,7 +958,8 @@ To disable the datpicker
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -974,7 +988,7 @@ $("#datepicker").ejmDatePicker("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -989,7 +1003,8 @@ To enable the datepicker
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1018,7 +1033,7 @@ $("#datepicker").ejmDatePicker("enable");
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -1033,7 +1048,8 @@ Get the current value.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1062,7 +1078,7 @@ $("#datepicker").ejmDatePicker("getValue");
 
 
 
-#### hide<span class="signature">()</span>
+### hide<span class="signature">()</span>
 
 
 
@@ -1077,7 +1093,8 @@ To hide the DatePicker control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1105,7 +1122,7 @@ $("#datepicker").ejmDatePicker("hide");
 
 
 
-#### setCurrentDate<span class="signature">()</span>
+### setCurrentDate<span class="signature">()</span>
 
 
 
@@ -1120,7 +1137,8 @@ Set the given date.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1149,7 +1167,7 @@ $("#datepicker").ejmDatePicker("setCurrentDate", "12/31/2000");
 
 
 
-#### show<span class="signature">()</span>
+### show<span class="signature">()</span>
 
 
 
@@ -1164,7 +1182,8 @@ To show the DatePicker control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1190,7 +1209,7 @@ $("#datepicker").ejmDatePicker("show");
 
 
 
-### Events
+## Events
 
 
 
@@ -1199,7 +1218,7 @@ $("#datepicker").ejmDatePicker("show");
 
 
 
-#### change
+### change
 
 
 
@@ -1262,7 +1281,8 @@ Event triggers when the value is changed while interaction.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1289,7 +1309,7 @@ $("#datepicker").ejmDatePicker({
 
 
 
-#### close
+### close
 
 
 
@@ -1352,7 +1372,8 @@ Event triggers when the control is closed after interaction.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1379,7 +1400,7 @@ $("#datepicker").ejmDatePicker({
 
 
 
-#### focusIn
+### focusIn
 
 
 
@@ -1442,7 +1463,8 @@ Event triggers when the input element is focused.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1469,7 +1491,7 @@ $("#datepicker").ejmDatePicker({
 
 
 
-#### focusOut
+### focusOut
 
 
 
@@ -1532,7 +1554,8 @@ Event triggers when the input element is focusedout or blurred.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1559,7 +1582,7 @@ $("#datepicker").ejmDatePicker({
 
 
 
-#### load
+### load
 
 
 
@@ -1622,7 +1645,8 @@ Event triggers when the control is loaded.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1649,7 +1673,7 @@ $("#datepicker").ejmDatePicker({
 
 
 
-#### open
+### open
 
 
 
@@ -1712,7 +1736,8 @@ Event triggers when the control is opened for selection.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1739,7 +1764,7 @@ $("#datepicker").ejmDatePicker({
 
 
 
-#### select
+### select
 
 
 
@@ -1802,7 +1827,8 @@ Event triggers when date value is selected.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

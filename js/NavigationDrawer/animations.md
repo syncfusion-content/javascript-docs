@@ -33,15 +33,14 @@ The default value is Overlay.
     </div>
  {% endhighlight %}
  
+ Add the following code in the **script** tag.
+ 
  {% highlight js %}
  
         $("#navpane").ejNavigationDrawer({ type: "slide", position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
         $("#drawerTarget").ejButton({ text: "OpenDrawer" });
   
 {% endhighlight %}
-
-
-
 
 
 The following screenshot illustrates the output.

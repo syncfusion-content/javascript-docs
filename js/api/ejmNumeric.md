@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Editor control.
+# Custom Design for Html Editor control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Editor control.
 
 
 
-#### $(element).ejmNumeric<span class="signature">()</span>
+## $(element).ejmNumeric<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Editor control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -52,7 +53,7 @@ $("#editor").ejmNumeric();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -80,7 +81,7 @@ $("#editor").ejmNumeric();
 
 
 
-### Members
+## Members
 
 
 
@@ -89,7 +90,7 @@ $("#editor").ejmNumeric();
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -120,7 +121,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -155,7 +157,7 @@ $("#editor").ejmNumeric ("option", "cssClass", "customclass");
 
 
 
-#### decimalPlaces<span class="type-signature type number">number</span>
+### decimalPlaces<span class="type-signature type number">number</span>
 
 
 
@@ -186,7 +188,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -222,7 +225,7 @@ $("#editor").ejmNumeric ("option", " ", 2);
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -253,7 +256,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -288,7 +292,7 @@ $("#editor").ejmNumeric ("option", "enabled", true);
 
 
 
-#### enableStrictMode<span class="type-signature type boolean">boolean</span>
+### enableStrictMode<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -319,7 +323,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -355,7 +360,7 @@ $("#editor").ejmNumeric ("option", "enableStrictMode", true);
 
 
 
-#### incrementStep<span class="type-signature type number">number</span>
+### incrementStep<span class="type-signature type number">number</span>
 
 
 
@@ -386,7 +391,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -421,7 +427,7 @@ $("#editor").ejmNumeric ("option", "incrementStep", 3);
 
 
 
-#### maxValue<span class="type-signature type number">number</span>
+### maxValue<span class="type-signature type number">number</span>
 
 
 
@@ -452,7 +458,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -487,7 +494,7 @@ $("#editor").ejmNumeric ("option", "maxValue", 500);
 
 
 
-#### minValue<span class="type-signature type number">number</span>
+### minValue<span class="type-signature type number">number</span>
 
 
 
@@ -518,7 +525,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -553,7 +561,7 @@ $("#editor").ejmNumeric ("option", "minValue", 50);
 
 
 
-#### name<span class="type-signature type string">string</span>
+### name<span class="type-signature type string">string</span>
 
 
 
@@ -584,7 +592,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -619,7 +628,7 @@ $("#editor").ejmNumeric ("option", "name", "numeric");
 
 
 
-#### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -650,7 +659,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -685,7 +695,7 @@ $("#editor").ejmNumeric ("option", "readOnly", true);
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -716,7 +726,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -751,7 +762,7 @@ $("#editor").ejmNumeric ("option", "renderMode", ej.mobile.RenderMode.Auto);
 
 
 
-#### showBorder<span class="type-signature type boolean">boolean</span>
+### showBorder<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -782,7 +793,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -818,7 +830,7 @@ $("#editor").ejmNumeric ("option", "showBorder", true);
 
 
 
-#### showSpinButton<span class="type-signature type boolean">boolean</span>
+### showSpinButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -849,7 +861,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -885,7 +898,7 @@ $("#editor").ejmNumeric ("option", "showSpinButton", true);
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -916,7 +929,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -951,7 +965,7 @@ $("#editor").ejmNumeric ("option", "theme", ej.mobile.Theme.Auto);
 
 
 
-#### value<span class="type-signature type number">number</span>
+### value<span class="type-signature type number">number</span>
 
 
 
@@ -982,7 +996,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1017,7 +1032,7 @@ $("#editor").ejmNumeric ("option", "value", 100);
 
 
 
-#### watermarkText<span class="type-signature type string">string</span>
+### watermarkText<span class="type-signature type string">string</span>
 
 
 
@@ -1048,7 +1063,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1083,7 +1099,7 @@ $("#editor").ejmNumeric ("option", "watermarkText", "Enter the age");
 
 
 
-#### windows
+### windows
 
 
 
@@ -1104,7 +1120,7 @@ Section for windows mode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1135,7 +1151,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1168,7 +1185,7 @@ $("#editor").ejmNumeric ("option", "windows.renderDefault", true);
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1177,7 +1194,7 @@ $("#editor").ejmNumeric ("option", "windows.renderDefault", true);
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -1192,7 +1209,8 @@ To disable the numeric textbox.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1220,7 +1238,7 @@ $("#editor").ejmNumeric("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -1235,7 +1253,8 @@ To enable the numeric textbox.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1263,7 +1282,7 @@ $("#editor").ejmNumeric("enable");
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -1278,7 +1297,8 @@ To get the current value of the textbox.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1297,7 +1317,7 @@ $("#editor").ejmNumeric("getValue");
 
 
 
-#### setValue<span class="signature">()</span>
+### setValue<span class="signature">()</span>
 
 
 
@@ -1312,7 +1332,8 @@ Set value of the editor control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1329,7 +1350,7 @@ $("#editor").ejmNumeric("setValue",50);
 
 
 
-### Events
+## Events
 
 
 
@@ -1338,7 +1359,7 @@ $("#editor").ejmNumeric("setValue",50);
 
 
 
-#### change
+### change
 
 
 
@@ -1401,7 +1422,8 @@ Event triggers after the control value gets changed.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1427,7 +1449,7 @@ change: function (args) { //handle the event
 
 
 
-#### focusIn
+### focusIn
 
 
 
@@ -1490,7 +1512,8 @@ Event triggers after the control gets focused.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1516,7 +1539,7 @@ focusIn: function (args) { //handle the event
 
 
 
-#### focusOut
+### focusOut
 
 
 
@@ -1579,7 +1602,8 @@ Event triggers after the control gets focus out.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

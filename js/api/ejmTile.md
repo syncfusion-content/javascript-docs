@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Tile control.
+# Custom Design for Html Tile control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Tile control.
 
 
 
-#### $(element).ejmTile<span class="signature">()</span>
+## $(element).ejmTile<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Tile control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -51,7 +52,7 @@ $("#tile").ejmTile({ imagePath: "themes/sample/tile", imageUrl: "people.png" });
 
 
 
-### Requires
+## Requires
 
 
 
@@ -82,7 +83,7 @@ $("#tile").ejmTile({ imagePath: "themes/sample/tile", imageUrl: "people.png" });
 
 
 
-### Members
+## Members
 
 
 
@@ -91,7 +92,7 @@ $("#tile").ejmTile({ imagePath: "themes/sample/tile", imageUrl: "people.png" });
 
 
 
-#### android
+### android
 
 
 
@@ -112,7 +113,7 @@ Section for android rendermode specific functionalities.
 
 
 
-#### android.textPosition<span class="type-signature type enum">enum</span>
+### android.textPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -143,7 +144,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -175,7 +177,7 @@ $("#tile").ejmTile("option", "android.textPosition", "outer");            </code
 
 
 
-#### backgroundColor<span class="type-signature type string">string</span>
+### backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -206,7 +208,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -238,7 +241,7 @@ $("#tile").ejmTile("option", "backgroundColor", "black");            </code>
 
 
 
-#### badge<span class="type-signature type object">object</span>
+### badge<span class="type-signature type object">object</span>
 
 
 
@@ -259,7 +262,7 @@ Section for badge specific functionalities.
 
 
 
-#### badge.enabled<span class="type-signature type boolean">boolean</span>
+### badge.enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -290,7 +293,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -322,7 +326,7 @@ $("#tile").ejmTile("option", "badge.enabled", true);            </code>
 
 
 
-#### badge.maxValue<span class="type-signature type number">number</span>
+### badge.maxValue<span class="type-signature type number">number</span>
 
 
 
@@ -353,7 +357,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -385,7 +390,7 @@ $("#tile").ejmTile("option", "badge.maxValue", 3);            </code>
 
 
 
-#### badge.minValue<span class="type-signature type number">number</span>
+### badge.minValue<span class="type-signature type number">number</span>
 
 
 
@@ -416,7 +421,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -448,7 +454,7 @@ $("#tile").ejmTile("option", "badge.minValue", 5);            </code>
 
 
 
-#### badge.text<span class="type-signature type string">string</span>
+### badge.text<span class="type-signature type string">string</span>
 
 
 
@@ -479,7 +485,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -511,7 +518,7 @@ $("#tile").ejmTile("option", "badge.text", "ten");            </code>
 
 
 
-#### badge.value<span class="type-signature type number">number</span>
+### badge.value<span class="type-signature type number">number</span>
 
 
 
@@ -542,7 +549,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -574,7 +582,7 @@ $("#tile").ejmTile("option", "badge.value", 5);            </code>
 
 
 
-#### captionTemplateId<span class="type-signature type string">string</span>
+### captionTemplateId<span class="type-signature type string">string</span>
 
 
 
@@ -605,7 +613,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -641,7 +650,7 @@ $("#tile").ejmTile("option", "captionTemplateId", "sample");            </code>
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -672,7 +681,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -704,7 +714,7 @@ $("#tile").ejmTile("option", "cssClass", "customclass");            </code>
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -735,7 +745,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -767,7 +778,7 @@ $("#tile").ejmTile("option", "enablePersistence", true);            </code>
 
 
 
-#### height<span class="type-signature type number">number</span>
+### height<span class="type-signature type number">number</span>
 
 
 
@@ -798,7 +809,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -830,7 +842,7 @@ $("#tile").ejmTile("option", "height", 300);            </code>
 
 
 
-#### imageClass<span class="type-signature type string">string</span>
+### imageClass<span class="type-signature type string">string</span>
 
 
 
@@ -861,7 +873,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -905,7 +918,7 @@ $("#tile").ejmTile("option", "imageClass", "sample");            </code>
 
 
 
-#### imagePath<span class="type-signature type string">string</span>
+### imagePath<span class="type-signature type string">string</span>
 
 
 
@@ -936,7 +949,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -968,7 +982,7 @@ $("#tile").ejmTile("option", "imagePath", "themes/sample/tile");            </co
 
 
 
-#### imagePosition<span class="type-signature type enum">enum</span>
+### imagePosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -999,7 +1013,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1031,7 +1046,7 @@ $("#tile").ejmTile("option", "imagePosition", "right");            </code>
 
 
 
-#### imageTemplateId<span class="type-signature type string">string</span>
+### imageTemplateId<span class="type-signature type string">string</span>
 
 
 
@@ -1062,7 +1077,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1098,7 +1114,7 @@ $("#tile").ejmTile("option", "imageTemplateId", "sample");            </code>
 
 
 
-#### imageUrl<span class="type-signature type string">string</span>
+### imageUrl<span class="type-signature type string">string</span>
 
 
 
@@ -1129,7 +1145,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1161,7 +1178,7 @@ $("#tile").ejmTile("option", "imageUrl", "people.png");            </code>
 
 
 
-#### ios7
+### ios7
 
 
 
@@ -1182,7 +1199,7 @@ Section for ios7 rendermode specific functionalities.
 
 
 
-#### ios7.textPosition<span class="type-signature type enum">enum</span>
+### ios7.textPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -1213,7 +1230,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1245,7 +1263,7 @@ $("#tile").ejmTile("option", "ios7.textPosition", "outer");            </code>
 
 
 
-#### livetile<span class="type-signature type object">object</span>
+### livetile<span class="type-signature type object">object</span>
 
 
 
@@ -1266,7 +1284,7 @@ Section for livetile specific functionalities.
 
 
 
-#### livetile.enabled<span class="type-signature type boolean">boolean</span>
+### livetile.enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1297,7 +1315,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1329,7 +1348,7 @@ $("#tile").ejmTile("option", "liveTile.enabled", true);            </code>
 
 
 
-#### livetile.imageClass<span class="type-signature type string">string</span>
+### livetile.imageClass<span class="type-signature type string">string</span>
 
 
 
@@ -1360,7 +1379,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1420,7 +1440,7 @@ $("#tile").ejmTile("option", "liveTile.imageClass", ['img1','img2','img3']);    
 
 
 
-#### livetile.imageTemplateId<span class="type-signature type string">string</span>
+### livetile.imageTemplateId<span class="type-signature type string">string</span>
 
 
 
@@ -1451,7 +1471,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1495,7 +1516,7 @@ $("#tile").ejmTile("option", "liveTile.imageTemplateId", ['img1','img2','img3'])
 
 
 
-#### livetile.imageUrl<span class="type-signature type string">string</span>
+### livetile.imageUrl<span class="type-signature type string">string</span>
 
 
 
@@ -1526,7 +1547,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1558,7 +1580,7 @@ $("#tile").ejmTile("option", "liveTile.imageUrl", ['people.png','sports.png','se
 
 
 
-#### livetile.type<span class="type-signature type enum">enum</span>
+### livetile.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -1589,7 +1611,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1621,7 +1644,7 @@ $("#tile").ejmTile("option", "liveTile.type", "carousel");            </code>
 
 
 
-#### livetile.updateInterval<span class="type-signature type number">number</span>
+### livetile.updateInterval<span class="type-signature type number">number</span>
 
 
 
@@ -1652,7 +1675,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1684,7 +1708,7 @@ $("#tile").ejmTile("option", "liveTile.updateInterval", 1000);            </code
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -1715,7 +1739,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1747,7 +1772,7 @@ $("#tile").ejmTile("option", "renderMode", "android");            </code>
 
 
 
-#### showText<span class="type-signature type boolean">boolean</span>
+### showText<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1778,7 +1803,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1810,7 +1836,7 @@ $("#tile").ejmTile("option", "showText", false);            </code>
 
 
 
-#### text<span class="type-signature type string">string</span>
+### text<span class="type-signature type string">string</span>
 
 
 
@@ -1841,7 +1867,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1873,7 +1900,7 @@ $("#tile").ejmTile("option", "text", "Settings");            </code>
 
 
 
-#### textAlignment<span class="type-signature type enum">enum</span>
+### textAlignment<span class="type-signature type enum">enum</span>
 
 
 
@@ -1904,7 +1931,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1936,7 +1964,7 @@ $("#tile").ejmTile("option", "textAlignment", "left");            </code>
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -1967,7 +1995,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1999,7 +2028,7 @@ $("#tile").ejmTile("option", "theme", "dark");            </code>
 
 
 
-#### tileSize<span class="type-signature type enum">enum</span>
+### tileSize<span class="type-signature type enum">enum</span>
 
 
 
@@ -2030,7 +2059,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2062,7 +2092,7 @@ $("#tile").ejmTile("option", "tileSize", "medium");            </code>
 
 
 
-#### width<span class="type-signature type number">number</span>
+### width<span class="type-signature type number">number</span>
 
 
 
@@ -2093,7 +2123,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2123,7 +2154,7 @@ $("#tile").ejmTile("option", "width", 300);            </code>
 
 
 
-### Methods
+## Methods
 
 
 
@@ -2132,7 +2163,7 @@ $("#tile").ejmTile("option", "width", 300);            </code>
 
 
 
-#### updateTemplate<span class="signature">()</span>
+### updateTemplate<span class="signature">()</span>
 
 
 
@@ -2147,7 +2178,8 @@ Update the image template to another one.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2168,7 +2200,7 @@ value.updateTemplate("sample2");
 
 
 
-### Events
+## Events
 
 
 
@@ -2177,7 +2209,7 @@ value.updateTemplate("sample2");
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -2240,7 +2272,8 @@ Event triggers when the touchend happens in the tile
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2274,7 +2307,7 @@ touchEnd: function (args) {
 
 
 
-#### touchStart
+### touchStart
 
 
 
@@ -2337,7 +2370,8 @@ Event triggers when the touchstart happens in the tile
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

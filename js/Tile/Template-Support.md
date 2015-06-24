@@ -28,16 +28,16 @@ Refer to the following code examples.
     <div id="captionTemplate" class="title">Windows Store</div>
     
 {% endhighlight %}
-    
- {% highlight js %}   
+
+Add the following code inside the **script** tag.
+
+{% highlight js %}   
 
         $("#tile").ejTile({ tileSize: "wide", imageTemplateId: "imageTemplate", captionTemplateId: "captionTemplate" });
 
 {% endhighlight %}
 
-
-
-Add the following code example **JS** samples 
+Add the following code into sample. 
 
 {% highlight css %}
 

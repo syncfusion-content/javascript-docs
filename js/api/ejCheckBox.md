@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html CheckBox Control.
+# Custom Design for Html CheckBox Control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html CheckBox Control.
 
 
 
-#### $(element).ejCheckBox<span class="signature">()</span>
+## $(element).ejCheckBox<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html CheckBox Control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $("#chkbox").ejCheckBox();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -63,7 +64,7 @@ $("#chkbox").ejCheckBox();
 
 
 
-### Members
+## Members
 
 
 
@@ -72,7 +73,7 @@ $("#chkbox").ejCheckBox();
 
 
 
-#### checked
+### checked
 
 
 
@@ -103,7 +104,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -120,7 +122,7 @@ $("#chkbox").ejCheckBox({ checked:  true });
 
 
 
-#### checkState<span class="type-signature type enum">enum</span>
+### checkState<span class="type-signature type enum">enum</span>
 
 
 
@@ -151,7 +153,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -168,7 +171,7 @@ $("#chkbox").ejCheckBox({ enableTriState: true , checkState:"indeterminate"});
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -199,7 +202,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;input type="checkbox" id="chkbox"/&gt;
@@ -215,7 +219,7 @@ $("#chkbox").ejCheckBox({cssClass: "gradient-lime"});
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -246,7 +250,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -264,7 +269,7 @@ $("#chkbox").ejCheckBox ({ enabled: true });
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -295,7 +300,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -312,7 +318,7 @@ $("#chkbox").ejCheckBox({ enablePersistence : false });
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -343,7 +349,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -360,7 +367,7 @@ $("#chkbox").ejCheckBox({  enableRTL : true });
 
 
 
-#### enableTriState<span class="type-signature type boolean">boolean</span>
+### enableTriState<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -391,7 +398,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -409,7 +417,7 @@ $("#chkbox").ejCheckBox({  enableTriState: true });
 
 
 
-#### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes<span class="type-signature type object">object</span>
 
 
 
@@ -440,7 +448,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -457,7 +466,7 @@ $("#chkbox").ejCheckBox({ htmlAttributes : {required:"required"}});
 
 
 
-#### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes<span class="type-signature type object">object</span>
 
 
 
@@ -488,7 +497,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -505,7 +515,7 @@ Default Value:
 
 
 
-#### id<span class="type-signature type string">String</span>
+### id<span class="type-signature type string">String</span>
 
 
 
@@ -536,7 +546,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -553,7 +564,7 @@ $("#chkbox").ejCheckBox({  id: "sync" });
 
 
 
-#### idPrefix<span class="type-signature type string">String</span>
+### idPrefix<span class="type-signature type string">String</span>
 
 
 
@@ -584,7 +595,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -601,7 +613,7 @@ $("#chkbox").ejCheckBox ({  idPrefix : "ej" });
 
 
 
-#### name<span class="type-signature type string">String</span>
+### name<span class="type-signature type string">String</span>
 
 
 
@@ -632,7 +644,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -649,7 +662,7 @@ $("#chkbox").ejCheckBox({  name: "sync" });
 
 
 
-#### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -680,7 +693,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -697,7 +711,7 @@ $("#chkbox").ejCheckBox({ showRoundedCorner: true });
 
 
 
-#### size<span class="type-signature type enum">enum</span>
+### size<span class="type-signature type enum">enum</span>
 
 
 
@@ -728,7 +742,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -745,7 +760,7 @@ $("#chkbox").ejCheckBox({  size: "medium"});
 
 
 
-#### text<span class="type-signature type string">string</span>
+### text<span class="type-signature type string">string</span>
 
 
 
@@ -776,7 +791,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -792,7 +808,7 @@ $("#chkbox").ejCheckBox({ text: "Hello World"});
 
 
 
-#### validationMessage<span class="type-signature type object">object</span>
+### validationMessage<span class="type-signature type object">object</span>
 
 
 
@@ -823,7 +839,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -847,7 +864,7 @@ Default Value:
 
 
 
-#### validationRules<span class="type-signature type object">object</span>
+### validationRules<span class="type-signature type object">object</span>
 
 
 
@@ -878,7 +895,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -899,7 +917,7 @@ Default Value:
 
 
 
-#### value<span class="type-signature type string">String</span>
+### value<span class="type-signature type string">String</span>
 
 
 
@@ -930,7 +948,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -945,7 +964,7 @@ $("#chkbox").ejCheckBox({ value: "Hello World"});
 
 
 
-### Methods
+## Methods
 
 
 
@@ -954,7 +973,7 @@ $("#chkbox").ejCheckBox({ value: "Hello World"});
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -969,7 +988,8 @@ destroy the CheckBox widget all events bound using this._on will be unbind autom
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -998,7 +1018,7 @@ $("#chkbox").ejCheckBox("destroy");
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -1013,7 +1033,8 @@ To disable the checkbox
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1042,7 +1063,7 @@ $("#chkbox").ejCheckBox("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -1057,7 +1078,8 @@ To enable the checkbox
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1086,7 +1108,7 @@ $("#chkbox").ejCheckBox("enable");
 
 
 
-#### isChecked<span class="signature">()</span>
+### isChecked<span class="signature">()</span>
 
 
 
@@ -1101,7 +1123,8 @@ To Check the status of checkbox
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1128,7 +1151,7 @@ $("#chkbox").ejCheckBox("isChecked");
 
 
 
-### Events
+## Events
 
 
 
@@ -1137,7 +1160,7 @@ $("#chkbox").ejCheckBox("isChecked");
 
 
 
-#### beforeChange
+### beforeChange
 
 
 
@@ -1205,7 +1228,8 @@ Fires before the Checkbox is going to changed its state successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1224,7 +1248,7 @@ beforeChange: function (args) {}
 
 
 
-#### change
+### change
 
 
 
@@ -1292,7 +1316,8 @@ Fires when the Checkbox state is changed successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;input type="checkbox" id="chkbox"/&gt;
@@ -1310,7 +1335,7 @@ change: function (args) {}
 
 
 
-#### create
+### create
 
 
 
@@ -1368,7 +1393,8 @@ Fires when the Checkbox state is created successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1387,7 +1413,7 @@ $("#chkbox").ejCheckBox({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1445,7 +1471,8 @@ Fires when the Checkbox state is destroyed successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

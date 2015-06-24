@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html splitter control.
+# Custom Design for Html splitter control.
 
 
 
@@ -19,7 +19,7 @@ Custom Design for Html splitter control.
 
 
 
-#### $(element).ejSplitter<span class="signature">(options)</span>
+## $(element).ejSplitter<span class="signature">(options)</span>
 
 
 
@@ -47,7 +47,8 @@ Custom Design for Html splitter control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="innerSplitter"&gt;
@@ -69,7 +70,7 @@ $('#innerSplitter').ejSplitter();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -88,7 +89,7 @@ $('#innerSplitter').ejSplitter();
 
 
 
-### Members
+## Members
 
 
 
@@ -97,7 +98,7 @@ $('#innerSplitter').ejSplitter();
 
 
 
-#### animationSpeed<span class="type-signature type number">number</span>
+### animationSpeed<span class="type-signature type number">number</span>
 
 
 
@@ -128,7 +129,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -151,7 +153,7 @@ $("#innerSplitter").ejSplitter({animationSpeed: 150 });
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -182,7 +184,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="innerSplitter"&gt;
@@ -204,7 +207,7 @@ Default Value:
 
 
 
-#### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -235,7 +238,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -258,7 +262,7 @@ Default Value:
 
 
 
-#### enableAutoResize<span class="type-signature type boolean">boolean</span>
+### enableAutoResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -289,7 +293,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="innerSplitter"&gt;
@@ -311,7 +316,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -342,7 +347,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="innerSplitter"&gt;
@@ -364,7 +370,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">string</span>
+### height<span class="type-signature type string">string</span>
 
 
 
@@ -395,7 +401,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -418,7 +425,7 @@ Default Value:
 
 
 
-#### orientation<span class="type-signature type enum">Enum</span>
+### orientation<span class="type-signature type enum">Enum</span>
 
 
 
@@ -449,7 +456,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="innerSplitter"&gt;
@@ -471,7 +479,7 @@ $("#innerSplitter").ejSplitter({ orientation: ej.Orientation.Horizontal });
 
 
 
-#### properties<span class="type-signature type array">array</span>
+### properties<span class="type-signature type array">array</span>
 
 
 
@@ -502,7 +510,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -525,7 +534,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">string</span>
+### width<span class="type-signature type string">string</span>
 
 
 
@@ -556,7 +565,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -577,7 +587,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -586,7 +596,7 @@ Default Value:
 
 
 
-#### addItem<span class="signature">(content, property, index)</span>
+### addItem<span class="signature">(content, property, index)</span>
 
 
 
@@ -627,7 +637,8 @@ To add the new pane to splitter control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -668,7 +679,7 @@ $("#innerSplitter").ejSplitter("addItem","New pane 0",{ paneSize:20, minSize:20,
 
 
 
-#### collapse<span class="signature">()</span>
+### collapse<span class="signature">()</span>
 
 
 
@@ -683,7 +694,8 @@ To collapse the splitter control pane.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -724,7 +736,7 @@ $("#innerSplitter").ejSplitter("collpase");
 
 
 
-#### expand<span class="signature">()</span>
+### expand<span class="signature">()</span>
 
 
 
@@ -739,7 +751,8 @@ To expand the splitter control pane.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -780,7 +793,7 @@ $("#innerSplitter").ejSplitter("expand");
 
 
 
-#### refresh<span class="signature">()</span>
+### refresh<span class="signature">()</span>
 
 
 
@@ -795,7 +808,8 @@ To refresh the splitter control pane resizing.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -836,7 +850,7 @@ $("#innerSplitter").ejSplitter("refresh");
 
 
 
-#### removeItem<span class="signature">(index)</span>
+### removeItem<span class="signature">(index)</span>
 
 
 
@@ -867,7 +881,8 @@ To remove the new pane from the splitter control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -906,7 +921,7 @@ $("#innerSplitter").ejSplitter("removeItem",0);
 
 
 
-### Events
+## Events
 
 
 
@@ -915,7 +930,7 @@ $("#innerSplitter").ejSplitter("removeItem",0);
 
 
 
-#### beforeExpandCollapse
+### beforeExpandCollapse
 
 
 
@@ -988,7 +1003,8 @@ Fires when before expand collapse in splitter control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1013,7 +1029,7 @@ $("#innerSplitter").ejSplitter({
 
 
 
-#### create
+### create
 
 
 
@@ -1071,7 +1087,8 @@ Fires when splitter control pane has been created.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="innerSplitter"&gt;
@@ -1095,7 +1112,7 @@ $("#innerSplitter").ejSplitter({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1153,7 +1170,8 @@ Fires when splitter control pane has been destroyed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="innerSplitter"&gt;
@@ -1177,7 +1195,7 @@ $("#innerSplitter").ejSplitter({
 
 
 
-#### expandCollapse
+### expandCollapse
 
 
 
@@ -1250,7 +1268,8 @@ Fires when expandCollapse in splitter control pane.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1275,7 +1294,7 @@ $("#innerSplitter").ejSplitter({
 
 
 
-#### resize
+### resize
 
 
 
@@ -1348,7 +1367,8 @@ Fires when resize in splitter control pane.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="innerSplitter"&gt;

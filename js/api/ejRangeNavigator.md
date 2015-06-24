@@ -18,7 +18,7 @@ The rangenavigator can be easily configured to the DOM element, such as div. you
 
 
 
-#### $(element).ejRangeNavigator<span class="signature">(options, options)</span>
+## $(element).ejRangeNavigator<span class="signature">(options, options)</span>
 
 
 
@@ -51,7 +51,8 @@ The rangenavigator can be easily configured to the DOM element, such as div. you
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -68,7 +69,7 @@ $('#container').RangeNavigator();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -93,7 +94,7 @@ $('#container').RangeNavigator();
 
 
 
-### Members
+## Members
 
 
 
@@ -102,7 +103,7 @@ $('#container').RangeNavigator();
 
 
 
-#### allowSnapping<span class="type-signature type boolean">boolean</span>
+### allowSnapping<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -133,7 +134,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -150,7 +152,7 @@ Default Value:
 
 
 
-#### dataSource<span class="type-signature type object">object</span>
+### dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -165,7 +167,8 @@ Specifies the data source for range navigator.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>     $("#container").ejRangeNavigator({
@@ -180,7 +183,7 @@ Specifies the data source for range navigator.
 
 
 
-#### enableAutoResizing<span class="type-signature type boolean">boolean</span>
+### enableAutoResizing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -211,7 +214,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -228,7 +232,7 @@ Default Value:
 
 
 
-#### enableDeferredUpdate<span class="type-signature type boolean">boolean</span>
+### enableDeferredUpdate<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -259,7 +263,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -276,7 +281,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -307,7 +312,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -324,7 +330,7 @@ Default Value:
 
 
 
-#### labelSettings<span class="type-signature type object">object</span>
+### labelSettings<span class="type-signature type object">object</span>
 
 
 
@@ -345,7 +351,7 @@ Options for customizing the labels colors, font, style, size, horizontalAlignmen
 
 
 
-#### labelSettings.higherLevel<span class="type-signature type object">object</span>
+### labelSettings.higherLevel<span class="type-signature type object">object</span>
 
 
 
@@ -366,7 +372,7 @@ Options for customizing the higher level labels in range navigator.
 
 
 
-#### labelSettings.higherLevel.border<span class="type-signature type object">object</span>
+### labelSettings.higherLevel.border<span class="type-signature type object">object</span>
 
 
 
@@ -387,7 +393,7 @@ Options for customizing the border of grid lines in higher level.
 
 
 
-#### labelSettings.higherLevel.border.color<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -418,7 +424,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -435,7 +442,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.border.width<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.border.width<span class="type-signature type string">string</span>
 
 
 
@@ -466,7 +473,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -483,7 +491,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.fill<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.fill<span class="type-signature type string">string</span>
 
 
 
@@ -514,7 +522,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -531,7 +540,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.gridLineStyle<span class="type-signature type object">object</span>
+### labelSettings.higherLevel.gridLineStyle<span class="type-signature type object">object</span>
 
 
 
@@ -552,7 +561,7 @@ Options for customizing the grid line colors, width, dashArray, border.
 
 
 
-#### labelSettings.higherLevel.gridLineStyle.color<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.gridLineStyle.color<span class="type-signature type string">string</span>
 
 
 
@@ -583,7 +592,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -599,7 +609,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.gridLineStyle.dashArray<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.gridLineStyle.dashArray<span class="type-signature type string">string</span>
 
 
 
@@ -630,7 +640,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -647,7 +658,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.gridLineStyle.width<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.gridLineStyle.width<span class="type-signature type string">string</span>
 
 
 
@@ -678,7 +689,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -695,7 +707,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.intervalType<span class="type-signature type enum">enum</span>
+### labelSettings.higherLevel.intervalType<span class="type-signature type enum">enum</span>
 
 
 
@@ -726,7 +738,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -743,7 +756,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.labelPlacement<span class="type-signature type enum">enum</span>
+### labelSettings.higherLevel.labelPlacement<span class="type-signature type enum">enum</span>
 
 
 
@@ -774,7 +787,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -791,7 +805,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.position<span class="type-signature type enum">enum</span>
+### labelSettings.higherLevel.position<span class="type-signature type enum">enum</span>
 
 
 
@@ -822,7 +836,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -839,7 +854,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.style<span class="type-signature type object">object</span>
+### labelSettings.higherLevel.style<span class="type-signature type object">object</span>
 
 
 
@@ -860,7 +875,7 @@ Options for customizing the style of higher level labels.
 
 
 
-#### labelSettings.higherLevel.style.font<span class="type-signature type object">object</span>
+### labelSettings.higherLevel.style.font<span class="type-signature type object">object</span>
 
 
 
@@ -881,7 +896,7 @@ Options for customizing the font properties.
 
 
 
-#### labelSettings.higherLevel.style.font.color<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.color<span class="type-signature type string">string</span>
 
 
 
@@ -912,7 +927,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -929,7 +945,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.style.font.fontFamily<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -960,7 +976,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -977,7 +994,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.style.font.fontStyle<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.fontStyle<span class="type-signature type string">string</span>
 
 
 
@@ -1008,7 +1025,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1025,7 +1043,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.style.font.fontWeight<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.fontWeight<span class="type-signature type string">string</span>
 
 
 
@@ -1056,7 +1074,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1073,7 +1092,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.style.font.opacity<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.opacity<span class="type-signature type string">string</span>
 
 
 
@@ -1104,7 +1123,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1121,7 +1141,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.style.font.size<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -1152,7 +1172,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1169,7 +1190,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.style.horizontalAlignment<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.horizontalAlignment<span class="type-signature type string">string</span>
 
 
 
@@ -1200,7 +1221,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1217,7 +1239,7 @@ Default Value:
 
 
 
-#### labelSettings.higherLevel.visible<span class="type-signature type boolean">boolean</span>
+### labelSettings.higherLevel.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1248,7 +1270,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1265,7 +1288,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel<span class="type-signature type object">object</span>
 
 
 
@@ -1286,7 +1309,7 @@ Options for customizing the labels in lower level.
 
 
 
-#### labelSettings.lowerLevel.border<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel.border<span class="type-signature type object">object</span>
 
 
 
@@ -1307,7 +1330,7 @@ Options for customizing the border of grid lines in lower level.
 
 
 
-#### labelSettings.lowerLevel.border.color<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -1338,7 +1361,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1355,7 +1379,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.border.width<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.border.width<span class="type-signature type string">string</span>
 
 
 
@@ -1386,7 +1410,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1403,7 +1428,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.fill<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.fill<span class="type-signature type string">string</span>
 
 
 
@@ -1434,7 +1459,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1451,7 +1477,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.gridLineStyle<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel.gridLineStyle<span class="type-signature type object">object</span>
 
 
 
@@ -1472,7 +1498,7 @@ Options for customizing the grid lines in lower level.
 
 
 
-#### labelSettings.lowerLevel.gridLineStyle.color<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.gridLineStyle.color<span class="type-signature type string">string</span>
 
 
 
@@ -1503,7 +1529,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1520,7 +1547,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.gridLineStyle.dashArray<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.gridLineStyle.dashArray<span class="type-signature type string">string</span>
 
 
 
@@ -1551,7 +1578,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1568,7 +1596,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.gridLineStyle.width<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.gridLineStyle.width<span class="type-signature type string">string</span>
 
 
 
@@ -1599,7 +1627,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1616,7 +1645,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.intervalTypes<span class="type-signature type enum">enum</span>
+### labelSettings.lowerLevel.intervalTypes<span class="type-signature type enum">enum</span>
 
 
 
@@ -1647,7 +1676,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1664,7 +1694,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.labelPlacement<span class="type-signature type enum">enum</span>
+### labelSettings.lowerLevel.labelPlacement<span class="type-signature type enum">enum</span>
 
 
 
@@ -1695,7 +1725,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1712,7 +1743,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.position<span class="type-signature type enum">enum</span>
+### labelSettings.lowerLevel.position<span class="type-signature type enum">enum</span>
 
 
 
@@ -1743,7 +1774,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1760,7 +1792,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.style<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel.style<span class="type-signature type object">object</span>
 
 
 
@@ -1781,7 +1813,7 @@ Options for customizing the style of labels.
 
 
 
-#### labelSettings.lowerLevel.style.font<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel.style.font<span class="type-signature type object">object</span>
 
 
 
@@ -1802,7 +1834,7 @@ Options for customizing the font of labels.
 
 
 
-#### labelSettings.lowerLevel.style.font.color<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.color<span class="type-signature type string">string</span>
 
 
 
@@ -1833,7 +1865,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1850,7 +1883,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.style.font.fontFamily<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -1881,7 +1914,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1898,7 +1932,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.style.font.fontStyle<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.fontStyle<span class="type-signature type string">string</span>
 
 
 
@@ -1929,7 +1963,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1946,7 +1981,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.style.font.fontWeight<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.fontWeight<span class="type-signature type string">string</span>
 
 
 
@@ -1977,7 +2012,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1994,7 +2030,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.style.font.opacity<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.opacity<span class="type-signature type string">string</span>
 
 
 
@@ -2025,7 +2061,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2042,7 +2079,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.style.font.size<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -2073,7 +2110,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2090,7 +2128,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.style.horizontalAlignment<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.horizontalAlignment<span class="type-signature type string">string</span>
 
 
 
@@ -2121,7 +2159,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2138,7 +2177,7 @@ Default Value:
 
 
 
-#### labelSettings.lowerLevel.visible<span class="type-signature type boolean">boolean</span>
+### labelSettings.lowerLevel.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2169,7 +2208,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2186,7 +2226,7 @@ Default Value:
 
 
 
-#### labelSettings.style<span class="type-signature type object">object</span>
+### labelSettings.style<span class="type-signature type object">object</span>
 
 
 
@@ -2207,7 +2247,7 @@ Options for customizing the style of labels in range navigator.
 
 
 
-#### labelSettings.style.font<span class="type-signature type object">object</span>
+### labelSettings.style.font<span class="type-signature type object">object</span>
 
 
 
@@ -2228,7 +2268,7 @@ Options for customizing the font of labels in range navigator.
 
 
 
-#### labelSettings.style.font.color<span class="type-signature type string">string</span>
+### labelSettings.style.font.color<span class="type-signature type string">string</span>
 
 
 
@@ -2259,7 +2299,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2276,7 +2317,7 @@ Default Value:
 
 
 
-#### labelSettings.style.font.family<span class="type-signature type string">string</span>
+### labelSettings.style.font.family<span class="type-signature type string">string</span>
 
 
 
@@ -2307,7 +2348,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2324,7 +2366,7 @@ Default Value:
 
 
 
-#### labelSettings.style.font.opacity<span class="type-signature type number">number</span>
+### labelSettings.style.font.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -2355,7 +2397,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2372,7 +2415,7 @@ Default Value:
 
 
 
-#### labelSettings.style.font.size<span class="type-signature type string">string</span>
+### labelSettings.style.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -2403,7 +2446,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2420,7 +2464,7 @@ Default Value:
 
 
 
-#### labelSettings.style.font.style<span class="type-signature type enum">enum</span>
+### labelSettings.style.font.style<span class="type-signature type enum">enum</span>
 
 
 
@@ -2451,7 +2495,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2468,7 +2513,7 @@ Default Value:
 
 
 
-#### labelSettings.style.font.weight<span class="type-signature type enum">enum</span>
+### labelSettings.style.font.weight<span class="type-signature type enum">enum</span>
 
 
 
@@ -2499,7 +2544,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2516,7 +2562,7 @@ Default Value:
 
 
 
-#### labelSettings.style.horizontalAlignment<span class="type-signature type enum">enum</span>
+### labelSettings.style.horizontalAlignment<span class="type-signature type enum">enum</span>
 
 
 
@@ -2547,7 +2593,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2564,7 +2611,7 @@ Default Value:
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -2595,7 +2642,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2612,7 +2660,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings<span class="type-signature type object">object</span>
+### navigatorStyleSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2633,7 +2681,7 @@ Options for customizing the range navigator.
 
 
 
-#### navigatorStyleSettings.background<span class="type-signature type string">string</span>
+### navigatorStyleSettings.background<span class="type-signature type string">string</span>
 
 
 
@@ -2664,7 +2712,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2681,7 +2730,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.border<span class="type-signature type object">object</span>
+### navigatorStyleSettings.border<span class="type-signature type object">object</span>
 
 
 
@@ -2702,7 +2751,7 @@ Options for customizing the border color and width of range navigator.
 
 
 
-#### navigatorStyleSettings.border.color<span class="type-signature type string">string</span>
+### navigatorStyleSettings.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -2733,7 +2782,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2750,7 +2800,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.border.dashArray<span class="type-signature type string">string</span>
+### navigatorStyleSettings.border.dashArray<span class="type-signature type string">string</span>
 
 
 
@@ -2781,7 +2831,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2798,7 +2849,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.border.width<span class="type-signature type number">number</span>
+### navigatorStyleSettings.border.width<span class="type-signature type number">number</span>
 
 
 
@@ -2829,7 +2880,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2846,7 +2898,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.leftThumbTemplate<span class="type-signature type string">string</span>
+### navigatorStyleSettings.leftThumbTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -2877,7 +2929,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2894,7 +2947,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.majorGridLineStyle<span class="type-signature type object">object</span>
+### navigatorStyleSettings.majorGridLineStyle<span class="type-signature type object">object</span>
 
 
 
@@ -2915,7 +2968,7 @@ Options for customizing the major grid lines.
 
 
 
-#### navigatorStyleSettings.majorGridLineStyle.color<span class="type-signature type string">string</span>
+### navigatorStyleSettings.majorGridLineStyle.color<span class="type-signature type string">string</span>
 
 
 
@@ -2946,7 +2999,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2963,7 +3017,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.majorGridLineStyle.visible<span class="type-signature type boolean">boolean</span>
+### navigatorStyleSettings.majorGridLineStyle.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2994,7 +3048,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3011,7 +3066,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.minorGridLineStyle<span class="type-signature type object">object</span>
+### navigatorStyleSettings.minorGridLineStyle<span class="type-signature type object">object</span>
 
 
 
@@ -3032,7 +3087,7 @@ Options for customizing the minor grid lines.
 
 
 
-#### navigatorStyleSettings.minorGridLineStyle.color<span class="type-signature type string">string</span>
+### navigatorStyleSettings.minorGridLineStyle.color<span class="type-signature type string">string</span>
 
 
 
@@ -3063,7 +3118,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3079,7 +3135,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.minorGridLineStyle.visible<span class="type-signature type boolean">boolean</span>
+### navigatorStyleSettings.minorGridLineStyle.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3110,7 +3166,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3127,7 +3184,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.opacity<span class="type-signature type number">number</span>
+### navigatorStyleSettings.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -3158,7 +3215,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3175,7 +3233,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.rightThumbTemplate<span class="type-signature type string">string</span>
+### navigatorStyleSettings.rightThumbTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -3206,7 +3264,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3223,7 +3282,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.selectedRegionColor<span class="type-signature type string">string</span>
+### navigatorStyleSettings.selectedRegionColor<span class="type-signature type string">string</span>
 
 
 
@@ -3254,7 +3313,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3271,7 +3331,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.selectedRegionOpacity<span class="type-signature type number">number</span>
+### navigatorStyleSettings.selectedRegionOpacity<span class="type-signature type number">number</span>
 
 
 
@@ -3302,7 +3362,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3319,7 +3380,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.thumbColor<span class="type-signature type string">string</span>
+### navigatorStyleSettings.thumbColor<span class="type-signature type string">string</span>
 
 
 
@@ -3350,7 +3411,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3367,7 +3429,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.thumbRadius<span class="type-signature type number">number</span>
+### navigatorStyleSettings.thumbRadius<span class="type-signature type number">number</span>
 
 
 
@@ -3398,7 +3460,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3415,7 +3478,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.thumbStroke<span class="type-signature type string">string</span>
+### navigatorStyleSettings.thumbStroke<span class="type-signature type string">string</span>
 
 
 
@@ -3446,7 +3509,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3463,7 +3527,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.unselectedRegionColor<span class="type-signature type string">string</span>
+### navigatorStyleSettings.unselectedRegionColor<span class="type-signature type string">string</span>
 
 
 
@@ -3494,7 +3558,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3511,7 +3576,7 @@ Default Value:
 
 
 
-#### navigatorStyleSettings.unselectedRegionOpacity<span class="type-signature type number">number</span>
+### navigatorStyleSettings.unselectedRegionOpacity<span class="type-signature type number">number</span>
 
 
 
@@ -3542,7 +3607,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3559,7 +3625,7 @@ Default Value:
 
 
 
-#### padding<span class="type-signature type string">string</span>
+### padding<span class="type-signature type string">string</span>
 
 
 
@@ -3590,7 +3656,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3607,7 +3674,7 @@ Default Value:
 
 
 
-#### rangePadding<span class="type-signature type enum">enum</span>
+### rangePadding<span class="type-signature type enum">enum</span>
 
 
 
@@ -3638,7 +3705,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3655,7 +3723,7 @@ Default Value:
 
 
 
-#### rangeSettings<span class="type-signature type object">object</span>
+### rangeSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3676,7 +3744,7 @@ Options for customizing the starting and ending ranges.
 
 
 
-#### rangeSettings.end<span class="type-signature type string">string</span>
+### rangeSettings.end<span class="type-signature type string">string</span>
 
 
 
@@ -3707,7 +3775,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3724,7 +3793,7 @@ Default Value:
 
 
 
-#### rangeSettings.start<span class="type-signature type string">string</span>
+### rangeSettings.start<span class="type-signature type string">string</span>
 
 
 
@@ -3755,7 +3824,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3771,7 +3841,7 @@ Default Value:
 
 
 
-#### selectedData
+### selectedData
 
 
 
@@ -3792,7 +3862,7 @@ selectedData is for getting the data when the "rangeChanged" event trigger from 
 
 
 
-#### selectedRangeSettings<span class="type-signature type object">object</span>
+### selectedRangeSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3813,7 +3883,7 @@ Options for customizing the start and end range values.
 
 
 
-#### selectedRangeSettings.end<span class="type-signature type string">string</span>
+### selectedRangeSettings.end<span class="type-signature type string">string</span>
 
 
 
@@ -3844,7 +3914,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3861,7 +3932,7 @@ Default Value:
 
 
 
-#### selectedRangeSettings.start<span class="type-signature type string">string</span>
+### selectedRangeSettings.start<span class="type-signature type string">string</span>
 
 
 
@@ -3892,7 +3963,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3909,7 +3981,7 @@ Default Value:
 
 
 
-#### sizeSettings<span class="type-signature type object">object</span>
+### sizeSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3930,7 +4002,7 @@ Contains property to customize the hight and width of range navigator.
 
 
 
-#### sizeSettings.height<span class="type-signature type string">string</span>
+### sizeSettings.height<span class="type-signature type string">string</span>
 
 
 
@@ -3961,7 +4033,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>                             
@@ -3978,7 +4051,7 @@ Default Value:
 
 
 
-#### sizeSettings.width<span class="type-signature type string">string</span>
+### sizeSettings.width<span class="type-signature type string">string</span>
 
 
 
@@ -4009,7 +4082,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4026,7 +4100,7 @@ Default Value:
 
 
 
-#### theme<span class="type-signature type string">string</span>
+### theme<span class="type-signature type string">string</span>
 
 
 
@@ -4057,7 +4131,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4074,7 +4149,7 @@ Default Value:
 
 
 
-#### tooltipSettings<span class="type-signature type object">object</span>
+### tooltipSettings<span class="type-signature type object">object</span>
 
 
 
@@ -4089,7 +4164,8 @@ Options for customizing the tooltip in range navigator.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>     $("#container").ejRangeNavigator({
@@ -4102,7 +4178,7 @@ Options for customizing the tooltip in range navigator.
 
 
 
-#### tooltipSettings.backgroundColor<span class="type-signature type string">string</span>
+### tooltipSettings.backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -4133,7 +4209,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4150,7 +4227,7 @@ Default Value:
 
 
 
-#### tooltipSettings.font<span class="type-signature type object">object</span>
+### tooltipSettings.font<span class="type-signature type object">object</span>
 
 
 
@@ -4171,7 +4248,7 @@ Options for customizing the font in tooltip.
 
 
 
-#### tooltipSettings.font.color<span class="type-signature type string">string</span>
+### tooltipSettings.font.color<span class="type-signature type string">string</span>
 
 
 
@@ -4202,7 +4279,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4219,7 +4297,7 @@ Default Value:
 
 
 
-#### tooltipSettings.font.family<span class="type-signature type string">string</span>
+### tooltipSettings.font.family<span class="type-signature type string">string</span>
 
 
 
@@ -4250,7 +4328,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4267,7 +4346,7 @@ Default Value:
 
 
 
-#### tooltipSettings.font.fontStyle<span class="type-signature type string">string</span>
+### tooltipSettings.font.fontStyle<span class="type-signature type string">string</span>
 
 
 
@@ -4298,7 +4377,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4315,7 +4395,7 @@ Default Value:
 
 
 
-#### tooltipSettings.font.opacity<span class="type-signature type number">number</span>
+### tooltipSettings.font.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -4346,7 +4426,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4363,7 +4444,7 @@ Default Value:
 
 
 
-#### tooltipSettings.font.size<span class="type-signature type string">string</span>
+### tooltipSettings.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -4394,7 +4475,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4411,7 +4493,7 @@ Default Value:
 
 
 
-#### tooltipSettings.font.weight<span class="type-signature type string">string</span>
+### tooltipSettings.font.weight<span class="type-signature type string">string</span>
 
 
 
@@ -4442,7 +4524,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4459,7 +4542,7 @@ Default Value:
 
 
 
-#### tooltipSettings.labelFormat<span class="type-signature type string">string</span>
+### tooltipSettings.labelFormat<span class="type-signature type string">string</span>
 
 
 
@@ -4490,7 +4573,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4507,7 +4591,7 @@ Default Value:
 
 
 
-#### tooltipSettings.tooltipDisplayMode<span class="type-signature type string">string</span>
+### tooltipSettings.tooltipDisplayMode<span class="type-signature type string">string</span>
 
 
 
@@ -4538,7 +4622,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4555,7 +4640,7 @@ Default Value:
 
 
 
-#### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
+### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4586,7 +4671,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4603,7 +4689,7 @@ Default Value:
 
 
 
-#### valueAxisSettings<span class="type-signature type object">object</span>
+### valueAxisSettings<span class="type-signature type object">object</span>
 
 
 
@@ -4624,7 +4710,7 @@ Options for configuring minor grid lines, major grid lines, axis line of axis.
 
 
 
-#### valueAxisSettings.axisLine<span class="type-signature type object">object</span>
+### valueAxisSettings.axisLine<span class="type-signature type object">object</span>
 
 
 
@@ -4645,7 +4731,7 @@ Options for customizing the axis line.
 
 
 
-#### valueAxisSettings.axisLine.visible<span class="type-signature type string">string</span>
+### valueAxisSettings.axisLine.visible<span class="type-signature type string">string</span>
 
 
 
@@ -4676,7 +4762,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4693,7 +4780,7 @@ Default Value:
 
 
 
-#### valueAxisSettings.font<span class="type-signature type object">object</span>
+### valueAxisSettings.font<span class="type-signature type object">object</span>
 
 
 
@@ -4714,7 +4801,7 @@ Options for customizing the font of the axis.
 
 
 
-#### valueAxisSettings.font.size<span class="type-signature type string">string</span>
+### valueAxisSettings.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -4745,7 +4832,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4762,7 +4850,7 @@ Default Value:
 
 
 
-#### valueAxisSettings.majorGridLines<span class="type-signature type object">object</span>
+### valueAxisSettings.majorGridLines<span class="type-signature type object">object</span>
 
 
 
@@ -4783,7 +4871,7 @@ Options for customizing the major grid lines.
 
 
 
-#### valueAxisSettings.majorGridLines.visible<span class="type-signature type boolean">boolean</span>
+### valueAxisSettings.majorGridLines.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4814,7 +4902,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4831,7 +4920,7 @@ Default Value:
 
 
 
-#### valueAxisSettings.majorTickLines<span class="type-signature type object">object</span>
+### valueAxisSettings.majorTickLines<span class="type-signature type object">object</span>
 
 
 
@@ -4852,7 +4941,7 @@ Options for customizing the major tick lines in axis.
 
 
 
-#### valueAxisSettings.majorTickLines.size<span class="type-signature type number">number</span>
+### valueAxisSettings.majorTickLines.size<span class="type-signature type number">number</span>
 
 
 
@@ -4883,7 +4972,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4900,7 +4990,7 @@ Default Value:
 
 
 
-#### valueAxisSettings.majorTickLines.visible<span class="type-signature type boolean">boolean</span>
+### valueAxisSettings.majorTickLines.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4931,7 +5021,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4948,7 +5039,7 @@ Default Value:
 
 
 
-#### valueAxisSettings.majorTickLines.width<span class="type-signature type number">number</span>
+### valueAxisSettings.majorTickLines.width<span class="type-signature type number">number</span>
 
 
 
@@ -4979,7 +5070,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4996,7 +5088,7 @@ Default Value:
 
 
 
-#### valueAxisSettings.rangePadding<span class="type-signature type string">string</span>
+### valueAxisSettings.rangePadding<span class="type-signature type string">string</span>
 
 
 
@@ -5027,7 +5119,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5044,7 +5137,7 @@ Default Value:
 
 
 
-#### valueAxisSettings.visible<span class="type-signature type boolean">boolean</span>
+### valueAxisSettings.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -5075,7 +5168,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5092,7 +5186,7 @@ Default Value:
 
 
 
-#### valueType<span class="type-signature type enum">enum</span>
+### valueType<span class="type-signature type enum">enum</span>
 
 
 
@@ -5123,7 +5217,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5140,7 +5235,7 @@ Default Value:
 
 
 
-#### xName<span class="type-signature type object">object</span>
+### xName<span class="type-signature type object">object</span>
 
 
 
@@ -5155,7 +5250,8 @@ Specifies the xName for dataSource. This is used to take the x values from dataS
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
@@ -5172,7 +5268,7 @@ Specifies the xName for dataSource. This is used to take the x values from dataS
 
 
 
-#### yName<span class="type-signature type object">object</span>
+### yName<span class="type-signature type object">object</span>
 
 
 
@@ -5187,7 +5283,8 @@ Specifies the yName for dataSource. This is used to take the y values from dataS
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
@@ -5204,7 +5301,7 @@ Specifies the yName for dataSource. This is used to take the y values from dataS
 
 
 
-#### zoomSettings.zoomFactor<span class="type-signature type string">string</span>
+### zoomSettings.zoomFactor<span class="type-signature type string">string</span>
 
 
 
@@ -5235,7 +5332,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5252,7 +5350,7 @@ Default Value:
 
 
 
-#### zoomSettings.zoomPosition<span class="type-signature type string">string</span>
+### zoomSettings.zoomPosition<span class="type-signature type string">string</span>
 
 
 
@@ -5283,7 +5381,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5298,7 +5397,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -5307,7 +5406,7 @@ Default Value:
 
 
 
-#### _destroy<span class="signature">()</span>
+### _destroy<span class="signature">()</span>
 
 
 
@@ -5322,7 +5421,8 @@ destroy the RangeNavigator widget
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5346,7 +5446,7 @@ $("#container").ejRangeNavigator("destroy");
 
 
 
-### Events
+## Events
 
 
 
@@ -5355,7 +5455,7 @@ $("#container").ejRangeNavigator("destroy");
 
 
 
-#### load
+### load
 
 
 
@@ -5401,7 +5501,8 @@ Fires on load of range navigator.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5416,7 +5517,7 @@ $("#container").ejRangeNavigator({
 
 
 
-#### loaded
+### loaded
 
 
 
@@ -5462,7 +5563,8 @@ Fires after range navigator is loaded.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5477,7 +5579,7 @@ $("#container").ejRangeNavigator({
 
 
 
-#### rangeChanged
+### rangeChanged
 
 
 
@@ -5523,7 +5625,8 @@ Fires on changing the range of range navigator.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

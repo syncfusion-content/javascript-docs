@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html color picker control.
+# Custom Design for Html color picker control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html color picker control.
 
 
 
-#### $(element).ejColorPicker<span class="signature">(options)</span>
+## $(element).ejColorPicker<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ Custom Design for Html color picker control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -63,7 +64,7 @@ $('#colorPick').ejColorPicker({ value: "#278787" });
 
 
 
-### Requires
+## Requires
 
 
 
@@ -94,7 +95,7 @@ $('#colorPick').ejColorPicker({ value: "#278787" });
 
 
 
-### Members
+## Members
 
 
 
@@ -103,7 +104,7 @@ $('#colorPick').ejColorPicker({ value: "#278787" });
 
 
 
-#### buttonText<span class="type-signature type string">string</span>
+### buttonText<span class="type-signature type string">string</span>
 
 
 
@@ -134,7 +135,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -151,7 +153,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {apply: "Set", c
 
 
 
-#### columns<span class="type-signature type number">number</span>
+### columns<span class="type-signature type number">number</span>
 
 
 
@@ -182,7 +184,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -199,7 +202,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", columns:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -230,7 +233,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -247,7 +251,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  cssClass : "gradient-lime"});
 
 
 
-#### custom<span class="type-signature type data">data</span>
+### custom<span class="type-signature type data">data</span>
 
 
 
@@ -278,7 +282,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -295,7 +300,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette:
 
 
 
-#### displayInline<span class="type-signature type boolean">boolean</span>
+### displayInline<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -326,7 +331,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -343,7 +349,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  displayInline: true});
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -374,7 +380,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -391,7 +398,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  enabled: false});
 
 
 
-#### enableOpacity<span class="type-signature type boolean">boolean</span>
+### enableOpacity<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -422,7 +429,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -439,7 +447,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", enableOpacity: false });
 
 
 
-#### modelType<span class="type-signature type enum">enum</span>
+### modelType<span class="type-signature type enum">enum</span>
 
 
 
@@ -470,7 +478,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -487,7 +496,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette"});
 
 
 
-#### opacityValue<span class="type-signature type number">number</span>
+### opacityValue<span class="type-signature type number">number</span>
 
 
 
@@ -518,7 +527,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -535,7 +545,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", opacityValue: 20 });
 
 
 
-#### palette<span class="type-signature type enum">enum</span>
+### palette<span class="type-signature type enum">enum</span>
 
 
 
@@ -566,7 +576,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -583,7 +594,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette:
 
 
 
-#### presetType<span class="type-signature type enum">enum</span>
+### presetType<span class="type-signature type enum">enum</span>
 
 
 
@@ -614,7 +625,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -631,7 +643,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", presetTy
 
 
 
-#### showPreview<span class="type-signature type boolean">boolean</span>
+### showPreview<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -662,7 +674,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -679,7 +692,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", showPreview: false});
 
 
 
-#### showRecentColors<span class="type-signature type boolean">boolean</span>
+### showRecentColors<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -710,7 +723,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -727,7 +741,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   showRecentColors: true});
 
 
 
-#### showTooltip<span class="type-signature type boolean">boolean</span>
+### showTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -758,7 +772,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -775,7 +790,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", showTooltip: true});
 
 
 
-#### toolIcon<span class="type-signature type string">string</span>
+### toolIcon<span class="type-signature type string">string</span>
 
 
 
@@ -806,7 +821,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -832,7 +848,7 @@ margin-left: 5px;
 
 
 
-#### tooltipText<span class="type-signature type object">object</span>
+### tooltipText<span class="type-signature type object">object</span>
 
 
 
@@ -863,7 +879,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -880,7 +897,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   tooltipText: { switcher: "Sw
 
 
 
-#### value<span class="type-signature type string">string</span>
+### value<span class="type-signature type string">string</span>
 
 
 
@@ -911,7 +928,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -926,7 +944,7 @@ $('#colorPick').ejColorPicker({ value: "#278787"});
 
 
 
-### Methods
+## Methods
 
 
 
@@ -935,7 +953,7 @@ $('#colorPick').ejColorPicker({ value: "#278787"});
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -950,7 +968,8 @@ Disables the color picker control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -981,7 +1000,7 @@ $("#colorPick").ejColorPicker("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -996,7 +1015,8 @@ Enable the color picker control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1027,7 +1047,7 @@ $("#colorPick").ejColorPicker("enable");
 
 
 
-#### getColor<span class="signature">()</span>
+### getColor<span class="signature">()</span>
 
 
 
@@ -1042,7 +1062,8 @@ Gets the selected color in RGB format
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1075,7 +1096,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -1090,7 +1111,8 @@ Gets the selected color value as string
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1121,7 +1143,7 @@ alert($("#colorPick").ejColorPicker("getValue"));
 
 
 
-#### hexCodeToRGB<span class="signature">()</span>
+### hexCodeToRGB<span class="signature">()</span>
 
 
 
@@ -1136,7 +1158,8 @@ To Convert color value from hexCode to RGB
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1169,7 +1192,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 
-#### hide<span class="signature">()</span>
+### hide<span class="signature">()</span>
 
 
 
@@ -1184,7 +1207,8 @@ Hides the colorpicker popup, if in opended state.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1215,7 +1239,7 @@ $("#colorPick").ejColorPicker("hide");
 
 
 
-#### HSVToRGB<span class="signature">()</span>
+### HSVToRGB<span class="signature">()</span>
 
 
 
@@ -1230,7 +1254,8 @@ Convert color value from HSV to RGB
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1263,7 +1288,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 
-#### RGBToHEX<span class="signature">()</span>
+### RGBToHEX<span class="signature">()</span>
 
 
 
@@ -1278,7 +1303,8 @@ Convert color value from RGB to HEX
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1311,7 +1337,7 @@ alert($("#colorPick").ejColorPicker("RGBToHEX",colorObj.getColor()));
 
 
 
-#### RGBToHSV<span class="signature">()</span>
+### RGBToHSV<span class="signature">()</span>
 
 
 
@@ -1326,7 +1352,8 @@ Convert color value from RGB to HSV
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1359,7 +1386,7 @@ alert("H="+color.r+", S="+color.g+", V="+color.b);
 
 
 
-#### show<span class="signature">()</span>
+### show<span class="signature">()</span>
 
 
 
@@ -1374,7 +1401,8 @@ Open the colorpicker popup.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1403,7 +1431,7 @@ $("#colorPick").ejColorPicker("show");
 
 
 
-### Events
+## Events
 
 
 
@@ -1412,7 +1440,7 @@ $("#colorPick").ejColorPicker("show");
 
 
 
-#### change
+### change
 
 
 
@@ -1475,7 +1503,8 @@ Fires after Color value has been changed sucessfully.If the user want to perform
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1497,7 +1526,7 @@ change: function (args) {
 
 
 
-#### close
+### close
 
 
 
@@ -1555,7 +1584,8 @@ Fires after closing the color picker popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1577,7 +1607,7 @@ close: function (args) {
 
 
 
-#### create
+### create
 
 
 
@@ -1635,7 +1665,8 @@ Fires after Color picker control is created. If the user want to perform any ope
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1657,7 +1688,7 @@ create: function (args) {
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1715,7 +1746,8 @@ Fires after Color picker control is destroyed. If the user want to perform any o
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1737,7 +1769,7 @@ destroy: function (args) {
 
 
 
-#### open
+### open
 
 
 
@@ -1795,7 +1827,8 @@ Fires after opening the color picker popup
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   
@@ -1817,7 +1850,7 @@ open: function (args) {
 
 
 
-#### select
+### select
 
 
 
@@ -1880,7 +1913,8 @@ Fires after Color value has been selected sucessfully. If the user want to perfo
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>   

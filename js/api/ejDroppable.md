@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for droping HTML elements.
+# Custom Design for droping HTML elements.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for droping HTML elements.
 
 
 
-#### $(element).ejDroppable<span class="signature">()</span>
+## $(element).ejDroppable<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for droping HTML elements.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $('#dropable').ejDroppable();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -60,7 +61,7 @@ $('#dropable').ejDroppable();
 
 
 
-### Members
+## Members
 
 
 
@@ -69,7 +70,7 @@ $('#dropable').ejDroppable();
 
 
 
-#### accept<span class="type-signature type object">object</span>
+### accept<span class="type-signature type object">object</span>
 
 
 
@@ -100,7 +101,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -120,7 +122,7 @@ Default Value:
 
 
 
-#### scope<span class="type-signature type string">string</span>
+### scope<span class="type-signature type string">string</span>
 
 
 
@@ -151,7 +153,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -169,7 +172,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -178,7 +181,7 @@ Default Value:
 
 
 
-#### _destroy<span class="signature">()</span>
+### _destroy<span class="signature">()</span>
 
 
 
@@ -193,7 +196,8 @@ destroy in the Droppable.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -209,7 +213,7 @@ droppabaleObj.destroy();
 
 
 
-### Events
+## Events
 
 
 
@@ -218,7 +222,7 @@ droppabaleObj.destroy();
 
 
 
-#### drop
+### drop
 
 
 
@@ -259,7 +263,8 @@ This event is triggered when the mouse up is moved during the dragging.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -274,7 +279,7 @@ $("#droppable").ejDroppable({
 
 
 
-#### out
+### out
 
 
 
@@ -315,7 +320,8 @@ This event is triggered when the mouse is moved out.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -330,7 +336,7 @@ $("#droppable").ejDroppable({
 
 
 
-#### over
+### over
 
 
 
@@ -371,7 +377,8 @@ This event is triggered when the mouse is moved over.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

@@ -34,19 +34,22 @@ Refer the following code examples.
             <li data-ej-text="School-age Crafts"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $("#defaultlistbox").ejListView({ enableCheckMark: true, width: 400 });
         });
-    </script>
-
-
 
 {% endhighlight %}
 
 
 
-**Screenshot:**
+Run the codes to get the following output
 
 {% include image.html url="/js/ListView/Selection_images/Selection_img1.png" %}
 
@@ -77,13 +80,16 @@ Refer the following code examples.
             <li data-ej-text="School-age Crafts"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $("#defaultlistbox").ejListView({ preventSelection: true, width: 400 });
         });
-    </script>
-
-
 
 {% endhighlight %}
 
@@ -114,19 +120,22 @@ Refer the following code examples.
             <li data-ej-text="School-age Crafts"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+    
         $(function () {
             $("#defaultlistbox").ejListView({ persistSelection: true, width: 400 });
         });
-    </script>
-
-
 
 {% endhighlight %}
 
 
 
-**Screenshot:**
+Run the codes to get the following output
 
 {% include image.html url="/js/ListView/Selection_images/Selection_img2.png" %}
 

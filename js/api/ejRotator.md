@@ -18,7 +18,7 @@ The Rotator control displays a set of slides. Each slide may contain images or i
 
 
 
-#### $(element).ejRotator<span class="signature">()</span>
+## $(element).ejRotator<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ The Rotator control displays a set of slides. Each slide may contain images or i
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;ul id="sliderContent"&gt;
@@ -55,7 +56,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -77,7 +78,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### Members
+## Members
 
 
 
@@ -86,7 +87,7 @@ $("#sliderContent").ejRotator();
 
 
 
-#### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -117,7 +118,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -139,7 +141,7 @@ Default Value:
 
 
 
-#### animationSpeed<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### animationSpeed<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -170,7 +172,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -192,7 +195,7 @@ Default Value:
 
 
 
-#### animationType<span class="type-signature type string">string</span>
+### animationType<span class="type-signature type string">string</span>
 
 
 
@@ -223,7 +226,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -245,7 +249,7 @@ Default Value:
 
 
 
-#### circularMode<span class="type-signature type boolean">boolean</span>
+### circularMode<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -276,7 +280,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -298,7 +303,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -329,7 +334,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -351,7 +357,7 @@ Default Value:
 
 
 
-#### dataSource<span class="type-signature type object">object</span>
+### dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -382,7 +388,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -399,7 +406,7 @@ Default Value:
 
 
 
-#### delay<span class="type-signature type number">number</span>
+### delay<span class="type-signature type number">number</span>
 
 
 
@@ -430,7 +437,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -452,7 +460,7 @@ Default Value:
 
 
 
-#### displayItemsCount<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### displayItemsCount<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -483,7 +491,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -505,7 +514,7 @@ Default Value:
 
 
 
-#### enableAutoPlay<span class="type-signature type boolean">boolean</span>
+### enableAutoPlay<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -536,7 +545,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -558,7 +568,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -589,7 +599,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -611,7 +622,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -642,7 +653,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -664,7 +676,7 @@ Default Value:
 
 
 
-#### fields<span class="type-signature type object">object</span>
+### fields<span class="type-signature type object">object</span>
 
 
 
@@ -695,7 +707,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -712,7 +725,7 @@ Default Value:
 
 
 
-#### fields.linkAttribute<span class="type-signature type string">String</span>
+### fields.linkAttribute<span class="type-signature type string">String</span>
 
 
 
@@ -733,7 +746,7 @@ Specifies a link for the image.
 
 
 
-#### fields.targetAttribute<span class="type-signature type string">String</span>
+### fields.targetAttribute<span class="type-signature type string">String</span>
 
 
 
@@ -754,7 +767,7 @@ Specifies where to open a given link.
 
 
 
-#### fields.text<span class="type-signature type string">String</span>
+### fields.text<span class="type-signature type string">String</span>
 
 
 
@@ -775,7 +788,7 @@ Specifies a caption for the image.
 
 
 
-#### fields.thumbnailText<span class="type-signature type string">String</span>
+### fields.thumbnailText<span class="type-signature type string">String</span>
 
 
 
@@ -796,7 +809,7 @@ Specifies a caption for the thumbnail image.
 
 
 
-#### fields.thumbnailUrl<span class="type-signature type string">String</span>
+### fields.thumbnailUrl<span class="type-signature type string">String</span>
 
 
 
@@ -817,7 +830,7 @@ Specifies the URL for an thumbnail image.
 
 
 
-#### fields.url<span class="type-signature type string">String</span>
+### fields.url<span class="type-signature type string">String</span>
 
 
 
@@ -838,7 +851,7 @@ Specifies the URL for an image.
 
 
 
-#### frameSpace<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### frameSpace<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -869,7 +882,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -891,7 +905,7 @@ Default Value:
 
 
 
-#### isResponsive<span class="type-signature type boolean">boolean</span>
+### isResponsive<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -922,7 +936,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -944,7 +959,7 @@ Default Value:
 
 
 
-#### navigateSteps<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### navigateSteps<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -975,7 +990,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -997,7 +1013,7 @@ Default Value:
 
 
 
-#### orientation<span class="type-signature type enum">enum</span>
+### orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -1028,7 +1044,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1050,7 +1067,7 @@ Default Value:
 
 
 
-#### pagerPosition<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
+### pagerPosition<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
 
 
 
@@ -1081,7 +1098,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1103,7 +1121,7 @@ Default Value:
 
 
 
-#### query<span class="type-signature type string">string</span>
+### query<span class="type-signature type string">string</span>
 
 
 
@@ -1140,7 +1158,7 @@ Default Value:
 
 
 
-#### showCaption<span class="type-signature type boolean">boolean</span>
+### showCaption<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1171,7 +1189,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1193,7 +1212,7 @@ Default Value:
 
 
 
-#### showNavigateButton<span class="type-signature type boolean">boolean</span>
+### showNavigateButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1224,7 +1243,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1246,7 +1266,7 @@ Default Value:
 
 
 
-#### showPager<span class="type-signature type boolean">boolean</span>
+### showPager<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1277,7 +1297,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1299,7 +1320,7 @@ Default Value:
 
 
 
-#### showPlayButton<span class="type-signature type boolean">boolean</span>
+### showPlayButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1330,7 +1351,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1352,7 +1374,7 @@ Default Value:
 
 
 
-#### showThumbnail<span class="type-signature type boolean">boolean</span>
+### showThumbnail<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1383,7 +1405,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1413,7 +1436,7 @@ Default Value:
 
 
 
-#### slideHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### slideHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -1444,7 +1467,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1466,7 +1490,7 @@ Default Value:
 
 
 
-#### slideWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### slideWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -1497,7 +1521,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1519,7 +1544,7 @@ Default Value:
 
 
 
-#### startIndex<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### startIndex<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -1550,7 +1575,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1572,7 +1598,7 @@ Default Value:
 
 
 
-#### stopOnHover<span class="type-signature type boolean">boolean</span>
+### stopOnHover<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1603,7 +1629,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1625,7 +1652,7 @@ Default Value:
 
 
 
-#### thumbnailSourceID<span class="type-signature type object">object</span>
+### thumbnailSourceID<span class="type-signature type object">object</span>
 
 
 
@@ -1656,7 +1683,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1683,7 +1711,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1692,7 +1720,7 @@ Default Value:
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -1707,7 +1735,8 @@ Disables the Rotator control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1747,7 +1776,7 @@ $("#sliderContent").ejRotator();
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -1762,7 +1791,8 @@ Enables the Rotator control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1801,7 +1831,7 @@ $("#sliderContent").ejRotator("enable");
 
 
 
-#### getIndex<span class="signature">()</span>
+### getIndex<span class="signature">()</span>
 
 
 
@@ -1816,7 +1846,8 @@ This method is used to get the current slide index.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1856,7 +1887,7 @@ $("#sliderContent").ejRotator();
 
 
 
-#### gotoIndex<span class="signature">(index)</span>
+### gotoIndex<span class="signature">(index)</span>
 
 
 
@@ -1887,7 +1918,8 @@ This method is used to move a slide to the specified index.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1928,7 +1960,7 @@ $("#sliderContent").ejRotator();
 
 
 
-#### pause<span class="signature">()</span>
+### pause<span class="signature">()</span>
 
 
 
@@ -1943,7 +1975,8 @@ This method is used to pause autoplay.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1983,7 +2016,7 @@ $("#sliderContent").ejRotator();
 
 
 
-#### play<span class="signature">()</span>
+### play<span class="signature">()</span>
 
 
 
@@ -1998,7 +2031,8 @@ This method is used to move slides continuously (or start autoplay) in the speci
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2038,7 +2072,7 @@ $("#sliderContent").ejRotator();
 
 
 
-#### slideNext<span class="signature">()</span>
+### slideNext<span class="signature">()</span>
 
 
 
@@ -2053,7 +2087,8 @@ This method is used to move to the next slide from the current slide. If the cur
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2093,7 +2128,7 @@ $("#sliderContent").ejRotator();
 
 
 
-#### slidePrevious<span class="signature">()</span>
+### slidePrevious<span class="signature">()</span>
 
 
 
@@ -2108,7 +2143,8 @@ This method is used to move to the previous slide from the current slide. If the
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2146,7 +2182,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### Events
+## Events
 
 
 
@@ -2155,7 +2191,7 @@ $("#sliderContent").ejRotator();
 
 
 
-#### change
+### change
 
 
 
@@ -2223,7 +2259,8 @@ This event is fired when the Rotator slides are changed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2246,7 +2283,7 @@ $("#sliderContent").ejRotator({
 
 
 
-#### create
+### create
 
 
 
@@ -2304,7 +2341,8 @@ This event is fired when the Rotator control is initialized.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2327,7 +2365,7 @@ $("#sliderContent").ejRotator({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -2385,7 +2423,8 @@ This event is fired when the Rotator control is destroyed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2408,7 +2447,7 @@ $("#sliderContent").ejRotator({
 
 
 
-#### pagerClick
+### pagerClick
 
 
 
@@ -2476,7 +2515,8 @@ This event is fired when a pager is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2499,7 +2539,7 @@ $("#sliderContent").ejRotator({
 
 
 
-#### start
+### start
 
 
 
@@ -2567,7 +2607,8 @@ This event is fired when enableAutoPlay is started.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2590,7 +2631,7 @@ $("#sliderContent").ejRotator({
 
 
 
-#### stop
+### stop
 
 
 
@@ -2658,7 +2699,8 @@ This event is fired when autoplay is stopped or paused.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2681,7 +2723,7 @@ $("#sliderContent").ejRotator({
 
 
 
-#### thumbItemClick
+### thumbItemClick
 
 
 
@@ -2749,7 +2791,8 @@ This event is fired when a thumbnail pager is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

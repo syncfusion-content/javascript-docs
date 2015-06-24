@@ -427,7 +427,7 @@ The **Stacked Header** feature allows additional header rows that span across th
 
 The following output is displayed as a result of the above code example.
 
-{%include image.html url="/js/Grid/Columns_images/Columns_img12.png" Caption="Stacked Header"% }
+{%include image.html url="/js/Grid/Columns_images/Columns_img12.png" Caption="Stacked Header"%}
 
 {%include image.html url="/js/Grid/Columns_images/Columns_img13.png" Caption="Stacked Header with Grouping support"%}
 

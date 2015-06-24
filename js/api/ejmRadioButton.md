@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html RadioButton control.
+# Custom Design for Html RadioButton control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html RadioButton control.
 
 
 
-#### $(element).ejmRadioButton<span class="signature">()</span>
+## $(element).ejmRadioButton<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html RadioButton control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -52,7 +53,7 @@ Custom Design for Html RadioButton control.
 
 
 
-### Requires
+## Requires
 
 
 
@@ -80,7 +81,7 @@ Custom Design for Html RadioButton control.
 
 
 
-### Members
+## Members
 
 
 
@@ -89,7 +90,7 @@ Custom Design for Html RadioButton control.
 
 
 
-#### checked<span class="type-signature type boolean">boolean</span>
+### checked<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -120,7 +121,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -151,7 +153,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -182,7 +184,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -215,7 +218,7 @@ $("#radbtn").ejmRadioButton ({ cssClass: "customclass" });
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -246,7 +249,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -277,7 +281,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -308,7 +312,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -338,7 +343,7 @@ Default Value:
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -369,7 +374,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -402,7 +408,7 @@ $("#radbtn").ejmRadioButton ({ renderMode: ej.mobile.RenderMode.Auto });
 
 
 
-#### text<span class="type-signature type string">string</span>
+### text<span class="type-signature type string">string</span>
 
 
 
@@ -433,7 +439,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -463,7 +470,7 @@ Default Value:
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -494,7 +501,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -525,7 +533,7 @@ $(function(){
 
 
 
-### Methods
+## Methods
 
 
 
@@ -534,7 +542,7 @@ $(function(){
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -549,7 +557,8 @@ To disable the radio button.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -564,7 +573,7 @@ To disable the radio button.
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -579,7 +588,8 @@ To enable the radio button
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -592,7 +602,7 @@ To enable the radio button
 
 
 
-### Events
+## Events
 
 
 
@@ -601,7 +611,7 @@ To enable the radio button
 
 
 
-#### change
+### change
 
 
 
@@ -669,7 +679,8 @@ Event triggers when the selection in radiobutton is changed.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -700,7 +711,7 @@ $("#radbtn").ejmRadioButton({
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -768,7 +779,8 @@ Event triggers when the touch end happens in the RadioButton.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -799,7 +811,7 @@ $("#radbtn").ejmRadioButton({
 
 
 
-#### touchStart
+### touchStart
 
 
 
@@ -867,7 +879,8 @@ event triggers when the touch start happens in the RadioButton.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

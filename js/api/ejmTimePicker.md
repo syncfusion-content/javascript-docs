@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html TimePicker control.
+# Custom Design for Html TimePicker control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html TimePicker control.
 
 
 
-#### $(element).ejmTimePicker<span class="signature">()</span>
+## $(element).ejmTimePicker<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html TimePicker control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $("#timepicker").ejmTimePicker();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -93,7 +94,7 @@ $("#timepicker").ejmTimePicker();
 
 
 
-### Members
+## Members
 
 
 
@@ -102,7 +103,7 @@ $("#timepicker").ejmTimePicker();
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -133,7 +134,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -166,7 +168,7 @@ $("#TimePicker").ejmTimePicker("option", "cssClass", "customclass");            
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -197,7 +199,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -230,7 +233,7 @@ $("#timepicker").ejmTimePicker("option", "enabled", true);            </code>
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -261,7 +264,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -294,7 +298,7 @@ $("#TimePicker").ejmTimePicker("option", "enablePersistence", true);            
 
 
 
-#### hourFormat<span class="type-signature type enum">enum</span>
+### hourFormat<span class="type-signature type enum">enum</span>
 
 
 
@@ -325,7 +329,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -358,7 +363,7 @@ $("#timepicker").ejmTimePicker("option", "hourFormat", "twentyfour");           
 
 
 
-#### ios7
+### ios7
 
 
 
@@ -379,7 +384,7 @@ Section for ios7 rendermode specific functionalities.
 
 
 
-#### ios7.renderDefault<span class="type-signature type boolean">boolean</span>
+### ios7.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -410,7 +415,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -442,7 +448,7 @@ $("#timepicker").ejmTimePicker("option", "ios7.renderDefault", false); </code>
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -473,7 +479,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -506,7 +513,7 @@ $("#timepicker").ejmTimePicker("option", "renderMode", "auto");            </cod
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -537,7 +544,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -570,7 +578,7 @@ $("#timepicker").ejmTimePicker("option", "theme", "auto");            </code>
 
 
 
-#### timeFormat<span class="type-signature type string">string</span>
+### timeFormat<span class="type-signature type string">string</span>
 
 
 
@@ -601,7 +609,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -634,7 +643,7 @@ $("#timepicker").ejmTimePicker("option", "timeFormat", "hh:mm tt");            <
 
 
 
-#### value<span class="type-signature type string">string</span>
+### value<span class="type-signature type string">string</span>
 
 
 
@@ -665,7 +674,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -698,7 +708,7 @@ $("#timepicker").ejmTimePicker("option", "value", "02:20 PM");            </code
 
 
 
-#### windows
+### windows
 
 
 
@@ -719,7 +729,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -750,7 +760,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -780,7 +791,7 @@ $("#timepicker").ejmTimePicker("option", "windows.renderDefault", false); </code
 
 
 
-### Methods
+## Methods
 
 
 
@@ -789,7 +800,7 @@ $("#timepicker").ejmTimePicker("option", "windows.renderDefault", false); </code
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -804,7 +815,8 @@ To handle the TimePicker control disabled state
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -823,7 +835,7 @@ tpObj.disable();
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -838,7 +850,8 @@ To handle the TimePicker control enabled state
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -857,7 +870,7 @@ tpObj.enable();
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -872,7 +885,8 @@ To change the TimePicker control to disabled state
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -891,7 +905,7 @@ dpObj.getValue();
 
 
 
-#### hide<span class="signature">()</span>
+### hide<span class="signature">()</span>
 
 
 
@@ -906,7 +920,8 @@ To hide the TimePicker control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -925,7 +940,7 @@ tpObj.hide();
 
 
 
-#### setCurrentTime<span class="signature">()</span>
+### setCurrentTime<span class="signature">()</span>
 
 
 
@@ -940,7 +955,8 @@ To change the TimePicker control to disabled state
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -959,7 +975,7 @@ dpObj.setCurrentTime("05:20");
 
 
 
-#### show<span class="signature">()</span>
+### show<span class="signature">()</span>
 
 
 
@@ -974,7 +990,8 @@ To show the TimePicker control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -991,7 +1008,7 @@ tpObj.show();
 
 
 
-### Events
+## Events
 
 
 
@@ -1000,7 +1017,7 @@ tpObj.show();
 
 
 
-#### change
+### change
 
 
 
@@ -1063,7 +1080,8 @@ Event triggers when the time is changed.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1090,7 +1108,7 @@ function Change(args) {}
 
 
 
-#### close
+### close
 
 
 
@@ -1153,7 +1171,8 @@ Event triggers when the control is closed.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1180,7 +1199,7 @@ function Close(args) {}
 
 
 
-#### focusIn
+### focusIn
 
 
 
@@ -1243,7 +1262,8 @@ Event triggers when the input element is focused.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1270,7 +1290,7 @@ function Focusin(args) {}
 
 
 
-#### focusOut
+### focusOut
 
 
 
@@ -1333,7 +1353,8 @@ Event triggers when the input element is blurred.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1360,7 +1381,7 @@ function focusout(args) {}
 
 
 
-#### load
+### load
 
 
 
@@ -1423,7 +1444,8 @@ Event triggers when the control is loaded.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1451,7 +1473,7 @@ function Load(args) {}
 
 
 
-#### open
+### open
 
 
 
@@ -1514,7 +1536,8 @@ Event triggers when the control is opened.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1541,7 +1564,7 @@ function Open(args) {}
 
 
 
-#### select
+### select
 
 
 
@@ -1604,7 +1627,8 @@ Event triggers when the time is selected.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

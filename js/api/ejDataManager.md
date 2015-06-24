@@ -18,7 +18,7 @@ Communicates with data source and returns the desired result based on the Query 
 
 
 
-#### $(element).ejDataManager<span class="signature">(datasource, query, adaptor)</span>
+## $(element).ejDataManager<span class="signature">(datasource, query, adaptor)</span>
 
 
 
@@ -56,7 +56,8 @@ Communicates with data source and returns the desired result based on the Query 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -76,7 +77,7 @@ for(var i=0;i&lt;5;i++){ row="dataManger.dataSource.json[0];;" tbody="" +="Strin
 
 
 
-### Methods
+## Methods
 
 
 
@@ -85,7 +86,7 @@ for(var i=0;i&lt;5;i++){ row="dataManger.dataSource.json[0];;" tbody="" +="Strin
 
 
 
-#### excuteLocal<span class="signature">(query)</span>
+### excuteLocal<span class="signature">(query)</span>
 
 
 
@@ -116,7 +117,8 @@ This method does not execute more than one operation at a time; it waits for one
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -136,7 +138,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### excuteQuery<span class="signature">(query)</span>
+### excuteQuery<span class="signature">(query)</span>
 
 
 
@@ -167,12 +169,13 @@ The executeQuery property is used to process the data based on the query on Url 
 
 
 
-##### Returns:
+#### Returns:
 
 result of each operation will be handled once the result is available.
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -188,7 +191,7 @@ promise.done(function(e){});
 
 
 
-#### insert<span class="signature">(data, tableName)</span>
+### insert<span class="signature">(data, tableName)</span>
 
 
 
@@ -224,7 +227,8 @@ It is a method used to inserts a new record in the table..
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="before"&gt;&lt;/div&gt;
@@ -251,7 +255,7 @@ for(var i=0;i&lt;3;i++){ var="" j="dm.dataSource.json[i];" tbody="" +="String.fo
 
 
 
-#### remove<span class="signature">(keyField, value, tableName)</span>
+### remove<span class="signature">(keyField, value, tableName)</span>
 
 
 
@@ -292,7 +296,8 @@ It is used to remove the data from the dataSource
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="before"&gt;&lt;/div&gt;
@@ -319,7 +324,7 @@ for(var i=0;i&lt;3;i++){ var="" j="dm.dataSource.json[i];" tbody="" +="String.fo
 
 
 
-#### saveChanges<span class="signature">(changes, key, tableName)</span>
+### saveChanges<span class="signature">(changes, key, tableName)</span>
 
 
 
@@ -360,7 +365,8 @@ This method is used to save the changes to the corresponding table. You can add 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -384,7 +390,7 @@ $(function (){});
 
 
 
-#### update<span class="signature">(keyField, value, tableName)</span>
+### update<span class="signature">(keyField, value, tableName)</span>
 
 
 
@@ -425,7 +431,8 @@ Updates existing record and saves the changes to the table.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;

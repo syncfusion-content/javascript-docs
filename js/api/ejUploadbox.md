@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Uploadbox control.
+# Custom Design for Html Uploadbox control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Uploadbox control.
 
 
 
-#### $(element).ejUploadbox<span class="signature">()</span>
+## $(element).ejUploadbox<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Uploadbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $('#uploadbox1').ejUploadbox();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -75,7 +76,7 @@ $('#uploadbox1').ejUploadbox();
 
 
 
-### Members
+## Members
 
 
 
@@ -84,7 +85,7 @@ $('#uploadbox1').ejUploadbox();
 
 
 
-#### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
+### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -115,7 +116,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -132,7 +134,7 @@ Default Value:
 
 
 
-#### asyncUpload<span class="type-signature type boolean">boolean</span>
+### asyncUpload<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -163,7 +165,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -180,7 +183,7 @@ Default Value:
 
 
 
-#### autoUpload<span class="type-signature type boolean">boolean</span>
+### autoUpload<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -211,7 +214,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -228,7 +232,7 @@ Default Value:
 
 
 
-#### buttonText<span class="type-signature type string">string</span>
+### buttonText<span class="type-signature type string">string</span>
 
 
 
@@ -259,7 +263,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -276,7 +281,7 @@ Default Value:
 
 
 
-#### buttonText.browse<span class="type-signature type string">String</span>
+### buttonText.browse<span class="type-signature type string">String</span>
 
 
 
@@ -291,7 +296,8 @@ Sets the text for the Browse button.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -308,7 +314,7 @@ Sets the text for the Browse button.
 
 
 
-#### buttonText.cancel<span class="type-signature type string">String</span>
+### buttonText.cancel<span class="type-signature type string">String</span>
 
 
 
@@ -323,7 +329,8 @@ Sets the text for the Cancel button inside the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -340,7 +347,7 @@ Sets the text for the Cancel button inside the dialog popup.
 
 
 
-#### buttonText.Close<span class="type-signature type string">String</span>
+### buttonText.Close<span class="type-signature type string">String</span>
 
 
 
@@ -355,7 +362,8 @@ Sets the text for the Close button inside the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -372,7 +380,7 @@ Sets the text for the Close button inside the dialog popup.
 
 
 
-#### buttonText.upload<span class="type-signature type string">String</span>
+### buttonText.upload<span class="type-signature type string">String</span>
 
 
 
@@ -387,7 +395,8 @@ Sets the text for the Upload button inside the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -404,7 +413,7 @@ Sets the text for the Upload button inside the dialog popup.
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -435,7 +444,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -452,7 +462,7 @@ Default Value:
 
 
 
-#### customFileDetails<span class="type-signature type object">object</span>
+### customFileDetails<span class="type-signature type object">object</span>
 
 
 
@@ -483,7 +493,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -500,7 +511,7 @@ Default Value:
 
 
 
-#### customFileDetails.action<span class="type-signature type boolean">boolean</span>
+### customFileDetails.action<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -515,7 +526,8 @@ Enable the remove/ cancel action in File details for the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -532,7 +544,7 @@ Enable the remove/ cancel action in File details for the dialog popup.
 
 
 
-#### customFileDetails.name<span class="type-signature type boolean">boolean</span>
+### customFileDetails.name<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -547,7 +559,8 @@ Enable the name in File details for the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -564,7 +577,7 @@ Enable the name in File details for the dialog popup.
 
 
 
-#### customFileDetails.size<span class="type-signature type boolean">boolean</span>
+### customFileDetails.size<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -579,7 +592,8 @@ Enable the size in File details for the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -596,7 +610,7 @@ Enable the size in File details for the dialog popup.
 
 
 
-#### customFileDetails.status<span class="type-signature type boolean">boolean</span>
+### customFileDetails.status<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -611,7 +625,8 @@ Enable the status in File details for the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -628,7 +643,7 @@ Enable the status in File details for the dialog popup.
 
 
 
-#### customFileDetails.title<span class="type-signature type boolean">boolean</span>
+### customFileDetails.title<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -643,7 +658,8 @@ Enable the title in File details for the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -660,7 +676,7 @@ Enable the title in File details for the dialog popup.
 
 
 
-#### dialogAction<span class="type-signature type object">object</span>
+### dialogAction<span class="type-signature type object">object</span>
 
 
 
@@ -691,7 +707,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -708,7 +725,7 @@ Default Value:
 
 
 
-#### dialogAction.closeOnComplete<span class="type-signature type boolean">boolean</span>
+### dialogAction.closeOnComplete<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -723,7 +740,8 @@ This will close the File details for the dialog popup once upload has performed 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -740,7 +758,7 @@ This will close the File details for the dialog popup once upload has performed 
 
 
 
-#### dialogAction.content<span class="type-signature type string">string</span>
+### dialogAction.content<span class="type-signature type string">string</span>
 
 
 
@@ -755,7 +773,8 @@ set the content Container option for File details of dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -772,7 +791,7 @@ set the content Container option for File details of dialog popup.
 
 
 
-#### dialogAction.drag<span class="type-signature type boolean">boolean</span>
+### dialogAction.drag<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -787,7 +806,8 @@ Enable the drag option for File details of dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -804,7 +824,7 @@ Enable the drag option for File details of dialog popup.
 
 
 
-#### dialogAction.modal<span class="type-signature type boolean">boolean</span>
+### dialogAction.modal<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -819,7 +839,8 @@ set the modal property for the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -836,7 +857,7 @@ set the modal property for the dialog popup.
 
 
 
-#### dialogPosition<span class="type-signature type jsonobject">JSONobject</span>
+### dialogPosition<span class="type-signature type jsonobject">JSONobject</span>
 
 
 
@@ -867,7 +888,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -884,7 +906,7 @@ Default Value:
 
 
 
-#### dialogText<span class="type-signature type string">string</span>
+### dialogText<span class="type-signature type string">string</span>
 
 
 
@@ -915,7 +937,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -932,7 +955,7 @@ Default Value:
 
 
 
-#### dialogText.name<span class="type-signature type string">String</span>
+### dialogText.name<span class="type-signature type string">String</span>
 
 
 
@@ -947,7 +970,8 @@ Sets the Name text for the dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -964,7 +988,7 @@ Sets the Name text for the dialog popup.
 
 
 
-#### dialogText.size<span class="type-signature type string">String</span>
+### dialogText.size<span class="type-signature type string">String</span>
 
 
 
@@ -979,7 +1003,8 @@ Sets the Size text for dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -996,7 +1021,7 @@ Sets the Size text for dialog popup.
 
 
 
-#### dialogText.status<span class="type-signature type string">String</span>
+### dialogText.status<span class="type-signature type string">String</span>
 
 
 
@@ -1011,7 +1036,8 @@ Sets the Status text for dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1028,7 +1054,7 @@ Sets the Status text for dialog popup.
 
 
 
-#### dialogText.title<span class="type-signature type string">String</span>
+### dialogText.title<span class="type-signature type string">String</span>
 
 
 
@@ -1043,7 +1069,8 @@ Sets the title text dialog popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1060,7 +1087,7 @@ Sets the title text dialog popup.
 
 
 
-#### dragAreaText<span class="type-signature type string">string</span>
+### dragAreaText<span class="type-signature type string">string</span>
 
 
 
@@ -1091,7 +1118,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1108,7 +1136,7 @@ Default Value:
 
 
 
-#### dropAreaHeight<span class="type-signature type number">number</span> <span class="type-signature type string">string</span>
+### dropAreaHeight<span class="type-signature type number">number</span> <span class="type-signature type string">string</span>
 
 
 
@@ -1139,7 +1167,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1156,7 +1185,7 @@ Default Value:
 
 
 
-#### dropAreaWidth<span class="type-signature type number">number</span> <span class="type-signature type string">string</span>
+### dropAreaWidth<span class="type-signature type number">number</span> <span class="type-signature type string">string</span>
 
 
 
@@ -1187,7 +1216,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1204,7 +1234,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1235,7 +1265,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1252,7 +1283,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1283,7 +1314,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1300,7 +1332,7 @@ Default Value:
 
 
 
-#### extensionsAllow<span class="type-signature type string">string</span>
+### extensionsAllow<span class="type-signature type string">string</span>
 
 
 
@@ -1331,7 +1363,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1348,7 +1381,7 @@ Default Value:
 
 
 
-#### extensionsDeny<span class="type-signature type string">string</span>
+### extensionsDeny<span class="type-signature type string">string</span>
 
 
 
@@ -1379,7 +1412,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1396,7 +1430,7 @@ Default Value:
 
 
 
-#### fileSize<span class="type-signature type number">number</span>
+### fileSize<span class="type-signature type number">number</span>
 
 
 
@@ -1427,7 +1461,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1444,7 +1479,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">string</span>
+### height<span class="type-signature type string">string</span>
 
 
 
@@ -1475,7 +1510,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1492,7 +1528,7 @@ Default Value:
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -1523,7 +1559,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1540,7 +1577,7 @@ Default Value:
 
 
 
-#### multipleFilesSelection<span class="type-signature type boolean">boolean</span>
+### multipleFilesSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1571,7 +1608,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1588,7 +1626,7 @@ Default Value:
 
 
 
-#### pushFile<span class="type-signature type data">data</span>
+### pushFile<span class="type-signature type data">data</span>
 
 
 
@@ -1619,7 +1657,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1636,7 +1675,7 @@ Default Value:
 
 
 
-#### removeUrl<span class="type-signature type string">string</span>
+### removeUrl<span class="type-signature type string">string</span>
 
 
 
@@ -1667,7 +1706,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1684,7 +1724,7 @@ Default Value:
 
 
 
-#### saveUrl<span class="type-signature type string">string</span>
+### saveUrl<span class="type-signature type string">string</span>
 
 
 
@@ -1715,7 +1755,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1732,7 +1773,7 @@ Default Value:
 
 
 
-#### showBrowseButton<span class="type-signature type boolean">boolean</span>
+### showBrowseButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1763,7 +1804,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1780,7 +1822,7 @@ Default Value:
 
 
 
-#### showFileDetails<span class="type-signature type boolean">boolean</span>
+### showFileDetails<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1811,7 +1853,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1828,7 +1871,7 @@ Default Value:
 
 
 
-#### uploadName<span class="type-signature type string">string</span>
+### uploadName<span class="type-signature type string">string</span>
 
 
 
@@ -1859,7 +1902,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1876,7 +1920,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">string</span>
+### width<span class="type-signature type string">string</span>
 
 
 
@@ -1907,7 +1951,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1922,7 +1967,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1931,7 +1976,7 @@ Default Value:
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -1946,7 +1991,8 @@ destroy the Upload control all events bound using this._on will be unbind automa
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1975,7 +2021,7 @@ $("#uploadbox1").ejUploadbox("destroy");
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -1990,7 +2036,8 @@ To disable the Uploadbox control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2019,7 +2066,7 @@ $("#uploadbox1").ejUploadbox("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -2034,7 +2081,8 @@ To enable the Uploadbox control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2061,7 +2109,7 @@ $("#uploadbox1").ejUploadbox("enable");
 
 
 
-### Events
+## Events
 
 
 
@@ -2070,7 +2118,7 @@ $("#uploadbox1").ejUploadbox("enable");
 
 
 
-#### begin
+### begin
 
 
 
@@ -2128,7 +2176,8 @@ Fires when the upload progress begins.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2147,7 +2196,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-#### cancel
+### cancel
 
 
 
@@ -2205,7 +2254,8 @@ Fires when the upload progress is cancelled.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2224,7 +2274,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-#### complete
+### complete
 
 
 
@@ -2287,7 +2337,8 @@ Fires when the file upload progress is completed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2306,7 +2357,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-#### create
+### create
 
 
 
@@ -2364,7 +2415,8 @@ Fires when Uploadbox control is created.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2383,7 +2435,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -2441,7 +2493,8 @@ Fires when Uploadbox control is destroyed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2460,7 +2513,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-#### error
+### error
 
 
 
@@ -2528,7 +2581,8 @@ Fires when the Upload process ends in Error.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2547,7 +2601,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-#### fileSelect
+### fileSelect
 
 
 
@@ -2605,7 +2659,8 @@ Fires when the file is selected for upload successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="uploadbox1"&gt;&lt;/div&gt; 
@@ -2623,7 +2678,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-#### remove
+### remove
 
 
 
@@ -2686,7 +2741,8 @@ Fires when the uploaded file is removed successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

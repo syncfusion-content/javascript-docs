@@ -334,9 +334,9 @@ You can toggle the selection using the `enableToggle` property. This provides su
 
 The following screenshot displays the result of the above code.
 
-{%include image.html url="/js/Grid/Selection_images/Selection_img8.png" Caption:"select Row"%}
+{%include image.html url="/js/Grid/Selection_images/Selection_img8.png" Caption="select Row"%}
 
-{%include image.html url="/js/Grid/Selection_images/Selection_img9.png" Caption:"Unselect Row"%}
+{%include image.html url="/js/Grid/Selection_images/Selection_img9.png" Caption="Unselect Row"%}
 
 ## Customize Selection Color
 

@@ -22,6 +22,9 @@ Refer to the following code examples.
     <div id="tile"></div>
 
 {% endhighlight %}
+
+Add the following code inside the **script** tag.
+
 {% highlight js %}    
    
         $("#tile").ejTile({
@@ -31,7 +34,7 @@ Refer to the following code examples.
                 imageUrl: ['http://js.syncfusion.com/UG/Web/Content/tile/people_1.png', 'http://js.syncfusion.com/UG/Web/Content/tile/people_2.png']
             },
             text: "Peoples"
-        })
+        });
  
 {% endhighlight %}
 
@@ -55,6 +58,8 @@ Refer to the following code examples.
     </div>
  
 {% endhighlight %}  
+
+Add the following code inside the **script** tag.
 
 {% highlight js %}
     
@@ -80,6 +85,7 @@ Refer to the following code examples.
 {% highlight html %}
 
     <div id="tile"></div>
+    
 {% endhighlight %}
     
 {% highlight css %}
@@ -96,7 +102,10 @@ Refer to the following code examples.
             height: 100%;
         }
     </style>
+    
  {% endhighlight %}
+
+Add the following code inside the **script** tag.
     
 {% highlight js %}
         

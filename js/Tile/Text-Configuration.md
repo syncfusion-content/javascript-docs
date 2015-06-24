@@ -24,6 +24,9 @@ Refer to the following code examples.
     <div id="tile"></div>
     
 {% endhighlight %}
+
+Add the following code inside the **script** tag.
+
 {% highlight js %}
 
     $("#tile").ejTile({ tileSize: "medium", imagePosition: "center", textAlignment: "center", imageUrl: "http://js.syncfusion.com/UG/web/Content/tile/camera.png", text: "Camera" });
@@ -32,5 +35,5 @@ Refer to the following code examples.
 
 
 
-{% include image.html url="/js/Tile/Text-Configuration_images/Text-Configuration_img1.png" Caption="Tile - Text Configuration"%}
+{% include image.html url="/js/Tile/Text-Configuration_images/Text-Configuration_img1.png"%}
 

@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Progressbar control.
+# Custom Design for Progressbar control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Progressbar control.
 
 
 
-#### $(element).ejProgressBar<span class="signature">()</span>
+## $(element).ejProgressBar<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Progressbar control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -44,7 +45,7 @@ $("#progress").ejProgressBar({value: 50});
 
 
 
-### Requires
+## Requires
 
 
 
@@ -63,7 +64,7 @@ $("#progress").ejProgressBar({value: 50});
 
 
 
-### Members
+## Members
 
 
 
@@ -72,7 +73,7 @@ $("#progress").ejProgressBar({value: 50});
 
 
 
-#### cssClass<span class="type-signature type string">String</span>
+### cssClass<span class="type-signature type string">String</span>
 
 
 
@@ -103,7 +104,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -119,7 +121,7 @@ $("#progress").ejProgressBar({ cssClass: 'gradient-lime ',value: 50  });
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -150,7 +152,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -165,7 +168,7 @@ $("#progress").ejProgressBar({ enabled: true,value: 50 });
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -196,7 +199,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -212,7 +216,7 @@ $("#progress").ejProgressBar({ enablePersistence: true,value: 50 });
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -243,7 +247,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -258,7 +263,7 @@ $("#progress").ejProgressBar({ enableRTL: true,value: 50 });
 
 
 
-#### height<span class="type-signature type number/string">Number/String</span>
+### height<span class="type-signature type number/string">Number/String</span>
 
 
 
@@ -289,7 +294,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -305,7 +311,7 @@ $("#progress").ejProgressBar({ height: 20,value: 50 });
 
 
 
-#### maxValue<span class="type-signature type number">Number</span>
+### maxValue<span class="type-signature type number">Number</span>
 
 
 
@@ -336,7 +342,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -352,7 +359,7 @@ $("#progress").ejProgressBar({ maxValue: 200 ,value: 200 });
 
 
 
-#### minValue<span class="type-signature type number">Number</span>
+### minValue<span class="type-signature type number">Number</span>
 
 
 
@@ -383,7 +390,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -398,7 +406,7 @@ $("#progress").ejProgressBar({ minValue: 50,value: 50});
 
 
 
-#### percentage<span class="type-signature type number">Number</span>
+### percentage<span class="type-signature type number">Number</span>
 
 
 
@@ -429,7 +437,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -444,7 +453,7 @@ $("#progress").ejProgressBar({ percentage : 35 });
 
 
 
-#### text<span class="type-signature type string">String</span>
+### text<span class="type-signature type string">String</span>
 
 
 
@@ -475,7 +484,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -491,7 +501,7 @@ $("#progress").ejProgressBar({ text: 'loading...',value: 50 });
 
 
 
-#### value<span class="type-signature type number">Number</span>
+### value<span class="type-signature type number">Number</span>
 
 
 
@@ -522,7 +532,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -537,7 +548,7 @@ $("#progress").ejProgressBar({ value: 70 });
 
 
 
-#### width<span class="type-signature type number/string">Number/String</span>
+### width<span class="type-signature type number/string">Number/String</span>
 
 
 
@@ -568,7 +579,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -582,7 +594,7 @@ $("#progress").ejProgressBar({ width: 200,value: 50});
 
 
 
-### Methods
+## Methods
 
 
 
@@ -591,7 +603,7 @@ $("#progress").ejProgressBar({ width: 200,value: 50});
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -606,7 +618,8 @@ Destroy the progressbar widget
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -632,7 +645,7 @@ $("#progress").ejProgressBar("destroy");
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -647,7 +660,8 @@ Disables the progressbar control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -673,7 +687,7 @@ $("#progress").ejProgressBar("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -688,7 +702,8 @@ Enables the progressbar control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -714,7 +729,7 @@ $("#progress").ejProgressBar("enable");
 
 
 
-#### getPercent<span class="signature">()</span>
+### getPercent<span class="signature">()</span>
 
 
 
@@ -729,7 +744,8 @@ Returns the current progress value in percent.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -755,7 +771,7 @@ $("#progress").ejProgressBar("getPercentage");
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -770,7 +786,8 @@ Returns the current progress value
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -794,7 +811,7 @@ $("#progress").ejProgressBar("getValue");
 
 
 
-### Events
+## Events
 
 
 
@@ -803,7 +820,7 @@ $("#progress").ejProgressBar("getValue");
 
 
 
-#### change
+### change
 
 
 
@@ -871,7 +888,8 @@ Event triggers when the progress value changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -889,7 +907,7 @@ $("#progress").ejProgressBar({
 
 
 
-#### complete
+### complete
 
 
 
@@ -957,7 +975,8 @@ Event triggers when the process completes (at 100%)
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;
@@ -975,7 +994,7 @@ $("#progress").ejProgressBar({
 
 
 
-#### create
+### create
 
 
 
@@ -1033,7 +1052,8 @@ Event triggers when the progressbar are created
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1053,7 +1073,7 @@ $("#progress").ejProgressBar({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1111,7 +1131,8 @@ Event triggers when the progressbar are destroyed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1131,7 +1152,7 @@ $("#progress").ejProgressBar({
 
 
 
-#### start
+### start
 
 
 
@@ -1199,7 +1220,8 @@ Event triggers when the process starts (from 0%)
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="progress"&gt;&lt;/div&gt;

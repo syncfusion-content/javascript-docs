@@ -18,7 +18,7 @@ The ribbon can be easily configured to the DOM element, such as div. you can cre
 
 
 
-#### $(element).ejRibbon<span class="signature">(options)</span>
+## $(element).ejRibbon<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ The ribbon can be easily configured to the DOM element, such as div. you can cre
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Ribbon"&gt;&lt;/div&gt; 
@@ -61,7 +62,7 @@ $('#Ribbon').ejRibbon();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -110,7 +111,7 @@ $('#Ribbon').ejRibbon();
 
 
 
-### Members
+## Members
 
 
 
@@ -119,7 +120,7 @@ $('#Ribbon').ejRibbon();
 
 
 
-#### allowResizing<span class="type-signature type boolean">boolean</span>
+### allowResizing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -150,7 +151,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -245,7 +247,7 @@ $(function () {
 
 
 
-#### applicationTab<span class="type-signature type object">object</span>
+### applicationTab<span class="type-signature type object">object</span>
 
 
 
@@ -276,7 +278,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -312,7 +315,7 @@ $(function () {
 
 
 
-#### applicationTab.itemID<span class="type-signature type string">string</span>
+### applicationTab.itemID<span class="type-signature type string">string</span>
 
 
 
@@ -343,7 +346,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -379,7 +383,7 @@ $(function () {
 
 
 
-#### applicationTab.menuSettings<span class="type-signature type object">object</span>
+### applicationTab.menuSettings<span class="type-signature type object">object</span>
 
 
 
@@ -410,7 +414,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -446,7 +451,7 @@ $(function () {
 
 
 
-#### applicationTab.Type<span class="type-signature type string">string</span>
+### applicationTab.Type<span class="type-signature type string">string</span>
 
 
 
@@ -477,7 +482,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -513,7 +519,7 @@ $(function () {
 
 
 
-#### contextualTabs<span class="type-signature type array">array</span>
+### contextualTabs<span class="type-signature type array">array</span>
 
 
 
@@ -544,7 +550,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -609,7 +616,7 @@ $(function () {
 
 
 
-#### contextualTabs.backgroundColor<span class="type-signature type string">string</span>
+### contextualTabs.backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -640,7 +647,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -705,7 +713,7 @@ $(function () {
 
 
 
-#### contextualTabs.borderColor<span class="type-signature type string">string</span>
+### contextualTabs.borderColor<span class="type-signature type string">string</span>
 
 
 
@@ -736,7 +744,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -801,7 +810,7 @@ $(function () {
 
 
 
-#### contextualTabs.tabs<span class="type-signature type array">array</span>
+### contextualTabs.tabs<span class="type-signature type array">array</span>
 
 
 
@@ -832,7 +841,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -897,7 +907,7 @@ $(function () {
 
 
 
-#### disabledItemIndex<span class="type-signature type array">array</span>
+### disabledItemIndex<span class="type-signature type array">array</span>
 
 
 
@@ -928,7 +938,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -972,7 +983,7 @@ $(function () {
 
 
 
-#### enabledItemIndex<span class="type-signature type array">array</span>
+### enabledItemIndex<span class="type-signature type array">array</span>
 
 
 
@@ -1003,7 +1014,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1050,7 +1062,7 @@ $(function () {
 
 
 
-#### selectedItemIndex<span class="type-signature type number">number</span>
+### selectedItemIndex<span class="type-signature type number">number</span>
 
 
 
@@ -1081,7 +1093,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1124,7 +1137,7 @@ $(function () {
 
 
 
-#### tabs<span class="type-signature type array">array</span>
+### tabs<span class="type-signature type array">array</span>
 
 
 
@@ -1155,7 +1168,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1198,7 +1212,7 @@ $(function () {
 
 
 
-#### tabs.groups<span class="type-signature type array">array</span>
+### tabs.groups<span class="type-signature type array">array</span>
 
 
 
@@ -1229,7 +1243,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1265,7 +1280,7 @@ $(function () {
 
 
 
-#### tabs.groups.alignType<span class="type-signature type enum">enum</span>
+### tabs.groups.alignType<span class="type-signature type enum">enum</span>
 
 
 
@@ -1296,7 +1311,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1332,7 +1348,7 @@ $(function () {
 
 
 
-#### tabs.groups.content<span class="type-signature type array">array</span>
+### tabs.groups.content<span class="type-signature type array">array</span>
 
 
 
@@ -1363,7 +1379,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1409,7 +1426,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.defaults<span class="type-signature type object">object</span>
+### tabs.groups.content.defaults<span class="type-signature type object">object</span>
 
 
 
@@ -1440,7 +1457,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1496,7 +1514,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups<span class="type-signature type array">array</span>
+### tabs.groups.content.groups<span class="type-signature type array">array</span>
 
 
 
@@ -1527,7 +1545,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1573,7 +1592,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.buttonSettings<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.buttonSettings<span class="type-signature type object">object</span>
 
 
 
@@ -1604,7 +1623,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1650,7 +1670,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.columns<span class="type-signature type number">number</span>
+### tabs.groups.content.groups.columns<span class="type-signature type number">number</span>
 
 
 
@@ -1681,7 +1701,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1776,7 +1797,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.contentID<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.contentID<span class="type-signature type string">string</span>
 
 
 
@@ -1807,7 +1828,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1866,7 +1888,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.cssClass<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -1897,7 +1919,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1949,7 +1972,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customGalleryItems<span class="type-signature type array">array</span>
+### tabs.groups.content.groups.customGalleryItems<span class="type-signature type array">array</span>
 
 
 
@@ -1980,7 +2003,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2075,7 +2099,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customGalleryItems.buttonSettings<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.customGalleryItems.buttonSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2106,7 +2130,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2205,7 +2230,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customGalleryItems.customItemType<span class="type-signature type enum">enum</span>
+### tabs.groups.content.groups.customGalleryItems.customItemType<span class="type-signature type enum">enum</span>
 
 
 
@@ -2236,7 +2261,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2335,7 +2361,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customGalleryItems.customToolTip<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.customGalleryItems.customToolTip<span class="type-signature type object">object</span>
 
 
 
@@ -2366,7 +2392,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2465,7 +2492,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customGalleryItems.menuId<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.customGalleryItems.menuId<span class="type-signature type string">string</span>
 
 
 
@@ -2496,7 +2523,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2595,7 +2623,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customGalleryItems.menuSettings<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.customGalleryItems.menuSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2626,7 +2654,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2725,7 +2754,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customGalleryItems.text<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.customGalleryItems.text<span class="type-signature type string">string</span>
 
 
 
@@ -2756,7 +2785,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2851,7 +2881,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customGalleryItems.toolTip<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.customGalleryItems.toolTip<span class="type-signature type string">string</span>
 
 
 
@@ -2882,7 +2912,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2977,7 +3008,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customToolTip<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.customToolTip<span class="type-signature type object">object</span>
 
 
 
@@ -3008,7 +3039,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3062,7 +3094,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customToolTip.content<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.customToolTip.content<span class="type-signature type string">string</span>
 
 
 
@@ -3093,7 +3125,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3147,7 +3180,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customToolTip.prefixIcon<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.customToolTip.prefixIcon<span class="type-signature type string">string</span>
 
 
 
@@ -3178,7 +3211,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3232,7 +3266,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.customToolTip.title<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.customToolTip.title<span class="type-signature type string">string</span>
 
 
 
@@ -3263,7 +3297,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3317,7 +3352,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.dropdownSettings<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.dropdownSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3348,7 +3383,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3400,7 +3436,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.enableSeparator<span class="type-signature type boolean">boolean</span>
+### tabs.groups.content.groups.enableSeparator<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3431,7 +3467,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3488,7 +3525,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.expandedColumns<span class="type-signature type number">number</span>
+### tabs.groups.content.groups.expandedColumns<span class="type-signature type number">number</span>
 
 
 
@@ -3519,7 +3556,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3614,7 +3652,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.galleryItems<span class="type-signature type array">array</span>
+### tabs.groups.content.groups.galleryItems<span class="type-signature type array">array</span>
 
 
 
@@ -3645,7 +3683,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3740,7 +3779,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.galleryItems.buttonSettings<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.galleryItems.buttonSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3771,7 +3810,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3870,7 +3910,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.galleryItems.customToolTip<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.galleryItems.customToolTip<span class="type-signature type object">object</span>
 
 
 
@@ -3901,7 +3941,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4000,7 +4041,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.galleryItems.text<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.galleryItems.text<span class="type-signature type string">string</span>
 
 
 
@@ -4031,7 +4072,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4126,7 +4168,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.galleryItems.toolTip<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.galleryItems.toolTip<span class="type-signature type string">string</span>
 
 
 
@@ -4157,7 +4199,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4252,7 +4295,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.id<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.id<span class="type-signature type string">string</span>
 
 
 
@@ -4283,7 +4326,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4329,7 +4373,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.isBig<span class="type-signature type boolean">boolean</span>
+### tabs.groups.content.groups.isBig<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4360,7 +4404,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4406,7 +4451,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.itemHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### tabs.groups.content.groups.itemHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -4437,7 +4482,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4532,7 +4578,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.itemWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### tabs.groups.content.groups.itemWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -4563,7 +4609,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4658,7 +4705,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.splitButtonSettings<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.splitButtonSettings<span class="type-signature type object">object</span>
 
 
 
@@ -4689,7 +4736,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4740,7 +4788,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.text<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.text<span class="type-signature type string">string</span>
 
 
 
@@ -4771,7 +4819,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4817,7 +4866,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.toggleButtonSettings<span class="type-signature type object">object</span>
+### tabs.groups.content.groups.toggleButtonSettings<span class="type-signature type object">object</span>
 
 
 
@@ -4848,7 +4897,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4894,7 +4944,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.toolTip<span class="type-signature type string">string</span>
+### tabs.groups.content.groups.toolTip<span class="type-signature type string">string</span>
 
 
 
@@ -4925,7 +4975,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4971,7 +5022,7 @@ $(function () {
 
 
 
-#### tabs.groups.content.groups.type<span class="type-signature type enum">enum</span>
+### tabs.groups.content.groups.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -5002,7 +5053,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5048,7 +5100,7 @@ $(function () {
 
 
 
-#### tabs.groups.contentID<span class="type-signature type string">string</span>
+### tabs.groups.contentID<span class="type-signature type string">string</span>
 
 
 
@@ -5079,7 +5131,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5115,7 +5168,7 @@ $(function () {
 
 
 
-#### tabs.groups.customContent<span class="type-signature type string">string</span>
+### tabs.groups.customContent<span class="type-signature type string">string</span>
 
 
 
@@ -5146,7 +5199,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5180,7 +5234,7 @@ $(function () {
 
 
 
-#### tabs.groups.enableGroupExpander<span class="type-signature type boolean">boolean</span>
+### tabs.groups.enableGroupExpander<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -5211,7 +5265,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5247,7 +5302,7 @@ $(function () {
 
 
 
-#### tabs.groups.text<span class="type-signature type string">string</span>
+### tabs.groups.text<span class="type-signature type string">string</span>
 
 
 
@@ -5278,7 +5333,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5314,7 +5370,7 @@ $(function () {
 
 
 
-#### tabs.groups.type<span class="type-signature type string">string</span>
+### tabs.groups.type<span class="type-signature type string">string</span>
 
 
 
@@ -5345,7 +5401,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5381,7 +5438,7 @@ $(function () {
 
 
 
-#### tabs.id<span class="type-signature type string">string</span>
+### tabs.id<span class="type-signature type string">string</span>
 
 
 
@@ -5412,7 +5469,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5448,7 +5506,7 @@ $(function () {
 
 
 
-#### tabs.text<span class="type-signature type string">string</span>
+### tabs.text<span class="type-signature type string">string</span>
 
 
 
@@ -5479,7 +5537,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5515,7 +5574,7 @@ $(function () {
 
 
 
-#### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -5546,7 +5605,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5580,7 +5640,7 @@ $(function () {
 
 
 
-### Methods
+## Methods
 
 
 
@@ -5589,7 +5649,7 @@ $(function () {
 
 
 
-#### addContextualTabs<span class="signature">(contextualTabSet, index)</span>
+### addContextualTabs<span class="signature">(contextualTabSet, index)</span>
 
 
 
@@ -5625,7 +5685,8 @@ It is used to add contextual tab or contextual tab set dynamically in the ribbon
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -5716,7 +5777,7 @@ $("#Ribbon").ejRibbon("addContextualTabs",cTab,2);
 
 
 
-#### addTab<span class="signature">(tabText, ribbonGroups, index)</span>
+### addTab<span class="signature">(tabText, ribbonGroups, index)</span>
 
 
 
@@ -5757,7 +5818,8 @@ It is used to add tab dynamically in the ribbon control with given name,tab grou
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -5856,7 +5918,7 @@ $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2);
 
 
 
-#### addTabGroup<span class="signature">(tabIndex, tabGroup, grpIndex)</span>
+### addTabGroup<span class="signature">(tabIndex, tabGroup, grpIndex)</span>
 
 
 
@@ -5897,7 +5959,8 @@ It is used to add tab group dynamically in the ribbon control with given tab ind
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6017,7 +6080,7 @@ $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2);
 
 
 
-#### addTabGroupContent<span class="signature">(tabIndex, grpIndex, subGrpIndex, content, contentIndex)</span>
+### addTabGroupContent<span class="signature">(tabIndex, grpIndex, subGrpIndex, content, contentIndex)</span>
 
 
 
@@ -6068,7 +6131,8 @@ It is used to add group content dynamically in the ribbon control with given tab
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6169,7 +6233,7 @@ $(function () {$("#Ribbon").ejRibbon({
 
 
 
-#### collapse<span class="signature">()</span>
+### collapse<span class="signature">()</span>
 
 
 
@@ -6184,7 +6248,8 @@ It is used to collapse the ribbon tab content.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6253,7 +6318,7 @@ $("#Ribbon").ejRibbon("collapse");
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -6268,7 +6333,8 @@ destroy the ribbon widget all events bound using this._on will be unbind automat
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6290,7 +6356,7 @@ $("#Ribbon").ejRibbon("destroy");
 
 
 
-#### expand<span class="signature">()</span>
+### expand<span class="signature">()</span>
 
 
 
@@ -6305,7 +6371,8 @@ It is used to expand the ribbon tab content.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6376,7 +6443,7 @@ $("#Ribbon").ejRibbon("expand");
 
 
 
-#### getTabText<span class="signature">(index)</span>
+### getTabText<span class="signature">(index)</span>
 
 
 
@@ -6407,12 +6474,13 @@ It is used to get text of the given index tab in the ribbon control.
 
 
 
-##### Returns:
+#### Returns:
 
 of the given index tab in the ribbon control.
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6481,7 +6549,7 @@ $("#Ribbon").ejRibbon("getTabText",1);
 
 
 
-#### hideTab<span class="signature">(string)</span>
+### hideTab<span class="signature">(string)</span>
 
 
 
@@ -6512,7 +6580,8 @@ It is used to hide the given text tab in the ribbon control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6581,7 +6650,7 @@ $("#Ribbon").ejRibbon("hideTab","HOME");
 
 
 
-#### isEnable<span class="signature">(string)</span>
+### isEnable<span class="signature">(string)</span>
 
 
 
@@ -6612,12 +6681,13 @@ It is used to check given text tab in the ribbon control is enabled or not.
 
 
 
-##### Returns:
+#### Returns:
 
 if it is in enabled state,false if it is in disabled state.
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6686,7 +6756,7 @@ $("#Ribbon").ejRibbon("isEnable","HOME");
 
 
 
-#### isVisible<span class="signature">(string)</span>
+### isVisible<span class="signature">(string)</span>
 
 
 
@@ -6717,12 +6787,13 @@ It is used to check given text tab in the ribbon control is visible or not.
 
 
 
-##### Returns:
+#### Returns:
 
 if it is visible,false if it is invisible
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6791,7 +6862,7 @@ $("#Ribbon").ejRibbon("isVisible","HOME");
 
 
 
-#### removeTab<span class="signature">(index)</span>
+### removeTab<span class="signature">(index)</span>
 
 
 
@@ -6822,7 +6893,8 @@ It is used to remove the given index tab item from the ribbon control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6891,7 +6963,7 @@ $("#Ribbon").ejRibbon("removeTab",1);
 
 
 
-#### setTabText<span class="signature">(string, string)</span>
+### setTabText<span class="signature">(string, string)</span>
 
 
 
@@ -6927,7 +6999,8 @@ It is used to set new text to the given text tab in the ribbon control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -6996,7 +7069,7 @@ $("#Ribbon").ejRibbon("setTabText","HOME","NEW");
 
 
 
-#### showTab<span class="signature">(string)</span>
+### showTab<span class="signature">(string)</span>
 
 
 
@@ -7027,7 +7100,8 @@ It is used to show the given text tab in the ribbon control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -7094,7 +7168,7 @@ $("#Ribbon").ejRibbon("showTab","HOME");
 
 
 
-### Events
+## Events
 
 
 
@@ -7103,7 +7177,7 @@ $("#Ribbon").ejRibbon("showTab","HOME");
 
 
 
-#### beforeTabRemove
+### beforeTabRemove
 
 
 
@@ -7166,7 +7240,8 @@ Triggered before the ribbon tab item remove.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7203,7 +7278,7 @@ $(function () {
 
 
 
-#### create
+### create
 
 
 
@@ -7261,7 +7336,8 @@ Triggered before the ribbon control create.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7298,7 +7374,7 @@ $(function () {
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -7361,7 +7437,8 @@ Triggered before the ribbon control destroy.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7398,7 +7475,7 @@ $(function () {
 
 
 
-#### groupClick
+### groupClick
 
 
 
@@ -7444,7 +7521,8 @@ Triggered when the control in the group is clicked successfully .
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7481,7 +7559,7 @@ $(function () {
 
 
 
-#### groupExpand
+### groupExpand
 
 
 
@@ -7527,7 +7605,8 @@ Triggered when the groupexpander in the group is clicked successfully .
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7564,7 +7643,7 @@ $(function () {
 
 
 
-#### onGalleryItemClick
+### onGalleryItemClick
 
 
 
@@ -7615,7 +7694,8 @@ Triggered when an item in the Gallery control is clicked successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7698,7 +7778,7 @@ $(function () {
 
 
 
-#### onTabAdd
+### onTabAdd
 
 
 
@@ -7766,7 +7846,8 @@ Triggered after the new ribbon tab item add.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7803,7 +7884,7 @@ $(function () {
 
 
 
-#### onTabClick
+### onTabClick
 
 
 
@@ -7881,7 +7962,8 @@ Triggered when tab is clicked successfully in the ribbon control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7918,7 +8000,7 @@ $(function () {
 
 
 
-#### onTabCreate
+### onTabCreate
 
 
 
@@ -7981,7 +8063,8 @@ Triggered before the ribbon tab create.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8018,7 +8101,7 @@ $(function () {
 
 
 
-#### onTabRemove
+### onTabRemove
 
 
 
@@ -8086,7 +8169,8 @@ Triggered after the tab item removed from the ribbon control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8123,7 +8207,7 @@ $(function () {
 
 
 
-#### onTabSelect
+### onTabSelect
 
 
 
@@ -8201,7 +8285,8 @@ Triggered after the ribbon tab item selected in the ribbon control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8238,7 +8323,7 @@ $(function () {
 
 
 
-#### onToggleButtonClick
+### onToggleButtonClick
 
 
 
@@ -8284,7 +8369,8 @@ Triggered when the expand/collapse button is clicked successfully .
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

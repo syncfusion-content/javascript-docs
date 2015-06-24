@@ -18,7 +18,7 @@ The diagram control provides 2D surface to visualize the data as shapes, lines, 
 
 
 
-#### $(element).ejDiagram<span class="signature">()</span>
+## $(element).ejDiagram<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ The diagram control provides 2D surface to visualize the data as shapes, lines, 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -46,7 +47,7 @@ The diagram control provides 2D surface to visualize the data as shapes, lines, 
 
 
 
-### Requires
+## Requires
 
 
 
@@ -95,7 +96,7 @@ The diagram control provides 2D surface to visualize the data as shapes, lines, 
 
 
 
-### Members
+## Members
 
 
 
@@ -104,7 +105,7 @@ The diagram control provides 2D surface to visualize the data as shapes, lines, 
 
 
 
-#### backgroundColor<span class="type-signature type string">String</span>
+### backgroundColor<span class="type-signature type string">String</span>
 
 
 
@@ -135,7 +136,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -149,7 +151,7 @@ $("#diagramcontent").ejDiagram({ backgroundColor: "red"});
 
 
 
-#### backgroundImage<span class="type-signature type string">String</span>
+### backgroundImage<span class="type-signature type string">String</span>
 
 
 
@@ -180,7 +182,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -194,7 +197,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png"});
 
 
 
-#### bridgeDirection<span class="type-signature type string">String</span>
+### bridgeDirection<span class="type-signature type string">String</span>
 
 
 
@@ -225,7 +228,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -240,7 +244,7 @@ $("#diagramContent").ejDiagram({bridgeDirection: "top"} });
 
 
 
-#### connectors<span class="type-signature type array">array</span>
+### connectors<span class="type-signature type array">array</span>
 
 
 
@@ -271,7 +275,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -286,7 +291,7 @@ $("#diagram").ejDiagram({ connectors:connectors });
 
 
 
-#### connectors.addInfo<span class="type-signature type object">Object</span>
+### connectors.addInfo<span class="type-signature type object">Object</span>
 
 
 
@@ -317,7 +322,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -334,7 +340,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.bridgeSpace<span class="type-signature type integer">Integer</span>
+### connectors.bridgeSpace<span class="type-signature type integer">Integer</span>
 
 
 
@@ -365,7 +371,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -381,7 +388,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.constraints<span class="type-signature type enum">enum</span>
+### connectors.constraints<span class="type-signature type enum">enum</span>
 
 
 
@@ -412,7 +419,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -428,7 +436,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.cornerRadius<span class="type-signature type integer">Integer</span>
+### connectors.cornerRadius<span class="type-signature type integer">Integer</span>
 
 
 
@@ -459,7 +467,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -475,7 +484,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.horizontalAlign<span class="type-signature type horizontalalignment"><a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
+### connectors.horizontalAlign<span class="type-signature type horizontalalignment"><a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
 
 
 
@@ -506,7 +515,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -522,7 +532,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.labels<span class="type-signature type array">Array</span>
+### connectors.labels<span class="type-signature type array">Array</span>
 
 
 
@@ -553,7 +563,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>Refer nodes label for label properties details 
@@ -570,7 +581,7 @@ $("#diagramcontent").ejDiagram({label:label});
 
 
 
-#### connectors.lineColor<span class="type-signature type string">String</span>
+### connectors.lineColor<span class="type-signature type string">String</span>
 
 
 
@@ -601,7 +612,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -617,7 +629,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.lineDashArray<span class="type-signature type string">String</span>
+### connectors.lineDashArray<span class="type-signature type string">String</span>
 
 
 
@@ -648,7 +660,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -664,7 +677,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.lineHitPadding<span class="type-signature type int">Int</span>
+### connectors.lineHitPadding<span class="type-signature type int">Int</span>
 
 
 
@@ -695,7 +708,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -711,7 +725,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.lineWidth<span class="type-signature type int">Int</span>
+### connectors.lineWidth<span class="type-signature type int">Int</span>
 
 
 
@@ -742,7 +756,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -758,7 +773,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.marginBottom<span class="type-signature type int">Int</span>
+### connectors.marginBottom<span class="type-signature type int">Int</span>
 
 
 
@@ -789,7 +804,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -805,7 +821,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.marginLeft<span class="type-signature type int">Int</span>
+### connectors.marginLeft<span class="type-signature type int">Int</span>
 
 
 
@@ -836,7 +852,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -852,7 +869,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.marginRight<span class="type-signature type int">Int</span>
+### connectors.marginRight<span class="type-signature type int">Int</span>
 
 
 
@@ -883,7 +900,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -899,7 +917,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.marginTop<span class="type-signature type int">Int</span>
+### connectors.marginTop<span class="type-signature type int">Int</span>
 
 
 
@@ -930,7 +948,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -946,7 +965,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.name<span class="type-signature type string">String</span>
+### connectors.name<span class="type-signature type string">String</span>
 
 
 
@@ -977,7 +996,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -993,7 +1013,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.opacity<span class="type-signature type int">Int</span>
+### connectors.opacity<span class="type-signature type int">Int</span>
 
 
 
@@ -1024,7 +1044,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1040,7 +1061,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.parent<span class="type-signature type string">String</span>
+### connectors.parent<span class="type-signature type string">String</span>
 
 
 
@@ -1071,7 +1092,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1085,7 +1107,7 @@ var connector = [ {name: "rect",parent:"group1"}];
 
 
 
-#### connectors.segments<span class="type-signature type array">Array</span>
+### connectors.segments<span class="type-signature type array">Array</span>
 
 
 
@@ -1116,7 +1138,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1133,7 +1156,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.segments.direction<span class="type-signature type string">String</span>
+### connectors.segments.direction<span class="type-signature type string">String</span>
 
 
 
@@ -1164,7 +1187,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1180,7 +1204,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.segments.length<span class="type-signature type number">Number</span>
+### connectors.segments.length<span class="type-signature type number">Number</span>
 
 
 
@@ -1211,7 +1235,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1227,7 +1252,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.segments.point<span class="type-signature type point">Point</span>
+### connectors.segments.point<span class="type-signature type point">Point</span>
 
 
 
@@ -1258,7 +1283,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1274,7 +1300,7 @@ $("#diagramcontent").ejDiagram({segments:segments});
 
 
 
-#### connectors.segments.point1<span class="type-signature type point">Point</span>
+### connectors.segments.point1<span class="type-signature type point">Point</span>
 
 
 
@@ -1305,7 +1331,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1322,7 +1349,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.segments.point2<span class="type-signature type point">Point</span>
+### connectors.segments.point2<span class="type-signature type point">Point</span>
 
 
 
@@ -1353,7 +1380,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1370,7 +1398,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.segments.type<span class="type-signature type enum">enum</span>
+### connectors.segments.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -1401,7 +1429,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1417,7 +1446,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.segments.vector1<span class="type-signature type point">Point</span>
+### connectors.segments.vector1<span class="type-signature type point">Point</span>
 
 
 
@@ -1448,7 +1477,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1465,7 +1495,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.segments.vector2<span class="type-signature type point">Point</span>
+### connectors.segments.vector2<span class="type-signature type point">Point</span>
 
 
 
@@ -1496,7 +1526,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1513,7 +1544,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.sourceDecorator<span class="type-signature type string">String</span>
+### connectors.sourceDecorator<span class="type-signature type string">String</span>
 
 
 
@@ -1544,7 +1575,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1561,7 +1593,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.sourceDecorator.borderColor<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.borderColor<span class="type-signature type string">String</span>
 
 
 
@@ -1592,7 +1624,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1608,7 +1641,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.borderColor<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.borderColor<span class="type-signature type string">String</span>
 
 
 
@@ -1639,7 +1672,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1655,7 +1689,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.borderWidth<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.borderWidth<span class="type-signature type number">Number</span>
 
 
 
@@ -1686,7 +1720,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1702,7 +1737,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.fillColor<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.fillColor<span class="type-signature type string">String</span>
 
 
 
@@ -1733,7 +1768,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1749,7 +1785,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.fillColor<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.fillColor<span class="type-signature type string">String</span>
 
 
 
@@ -1780,7 +1816,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1796,7 +1833,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.height<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.height<span class="type-signature type number">Number</span>
 
 
 
@@ -1827,7 +1864,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1843,7 +1881,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.height<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.height<span class="type-signature type number">Number</span>
 
 
 
@@ -1874,7 +1912,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1890,7 +1929,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.pathData<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.pathData<span class="type-signature type string">String</span>
 
 
 
@@ -1921,7 +1960,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1937,7 +1977,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.pathData<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.pathData<span class="type-signature type string">String</span>
 
 
 
@@ -1968,7 +2008,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -1984,7 +2025,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.shape<span class="type-signature type enum">enum</span>
+### connectors.sourceDecorator.shape<span class="type-signature type enum">enum</span>
 
 
 
@@ -2015,7 +2056,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2031,7 +2073,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.shape<span class="type-signature type enum">enum</span>
+### connectors.sourceDecorator.shape<span class="type-signature type enum">enum</span>
 
 
 
@@ -2062,7 +2104,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2078,7 +2121,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.width<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.width<span class="type-signature type number">Number</span>
 
 
 
@@ -2109,7 +2152,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2125,7 +2169,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceDecorator.width<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.width<span class="type-signature type number">Number</span>
 
 
 
@@ -2156,7 +2200,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2172,7 +2217,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.sourceNode<span class="type-signature type object">Object</span>
+### connectors.sourceNode<span class="type-signature type object">Object</span>
 
 
 
@@ -2203,7 +2248,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2221,7 +2267,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.sourcePadding<span class="type-signature type integer">Integer</span>
+### connectors.sourcePadding<span class="type-signature type integer">Integer</span>
 
 
 
@@ -2252,7 +2298,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2268,7 +2315,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.sourcePoint<span class="type-signature type point">Point</span>
+### connectors.sourcePoint<span class="type-signature type point">Point</span>
 
 
 
@@ -2299,7 +2346,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2316,7 +2364,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.sourcePort<span class="type-signature type object">Object</span>
+### connectors.sourcePort<span class="type-signature type object">Object</span>
 
 
 
@@ -2347,7 +2395,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2367,7 +2416,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.targetDecorator<span class="type-signature type string">String</span>
+### connectors.targetDecorator<span class="type-signature type string">String</span>
 
 
 
@@ -2398,7 +2447,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2415,7 +2465,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.targetDecorator.borderColor<span class="type-signature type string">String</span>
+### connectors.targetDecorator.borderColor<span class="type-signature type string">String</span>
 
 
 
@@ -2446,7 +2496,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2462,7 +2513,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.targetDecorator.fillColor<span class="type-signature type string">String</span>
+### connectors.targetDecorator.fillColor<span class="type-signature type string">String</span>
 
 
 
@@ -2493,7 +2544,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2509,7 +2561,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.targetDecorator.height<span class="type-signature type number">Number</span>
+### connectors.targetDecorator.height<span class="type-signature type number">Number</span>
 
 
 
@@ -2540,7 +2592,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2556,7 +2609,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.targetDecorator.pathData<span class="type-signature type string">String</span>
+### connectors.targetDecorator.pathData<span class="type-signature type string">String</span>
 
 
 
@@ -2587,7 +2640,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2603,7 +2657,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.targetDecorator.shape<span class="type-signature type enum">enum</span>
+### connectors.targetDecorator.shape<span class="type-signature type enum">enum</span>
 
 
 
@@ -2634,7 +2688,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2650,7 +2705,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.targetDecorator.width<span class="type-signature type number">Number</span>
+### connectors.targetDecorator.width<span class="type-signature type number">Number</span>
 
 
 
@@ -2681,7 +2736,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2697,7 +2753,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-#### connectors.targetNode<span class="type-signature type object">Object</span>
+### connectors.targetNode<span class="type-signature type object">Object</span>
 
 
 
@@ -2728,7 +2784,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2746,7 +2803,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.targetPadding<span class="type-signature type integer">Integer</span>
+### connectors.targetPadding<span class="type-signature type integer">Integer</span>
 
 
 
@@ -2777,7 +2834,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2793,7 +2851,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.targetPoint<span class="type-signature type point">Point</span>
+### connectors.targetPoint<span class="type-signature type point">Point</span>
 
 
 
@@ -2824,7 +2882,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2841,7 +2900,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.targetPort<span class="type-signature type object">Object</span>
+### connectors.targetPort<span class="type-signature type object">Object</span>
 
 
 
@@ -2872,7 +2931,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2892,7 +2952,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.verticalAlign<span class="type-signature type verticalalignment"><a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
+### connectors.verticalAlign<span class="type-signature type verticalalignment"><a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
 
 
 
@@ -2923,7 +2983,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2939,7 +3000,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.visible<span class="type-signature type boolean">Boolean</span>
+### connectors.visible<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -2970,7 +3031,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -2986,7 +3048,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectors.zOrder<span class="type-signature type int">Int</span>
+### connectors.zOrder<span class="type-signature type int">Int</span>
 
 
 
@@ -3017,7 +3079,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -3033,7 +3096,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-#### connectorTemplate<span class="type-signature type object">object</span>
+### connectorTemplate<span class="type-signature type object">object</span>
 
 
 
@@ -3064,7 +3127,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3079,7 +3143,7 @@ $("#diagram").ejDiagram({ connectorTemplate:connectorTemplate});
 
 
 
-#### constraints<span class="type-signature type enum">enum</span>
+### constraints<span class="type-signature type enum">enum</span>
 
 
 
@@ -3110,7 +3174,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3125,7 +3190,7 @@ $("#diagramContent").ejDiagram({constraints: ej.datavisualization.Diagram.Diagra
 
 
 
-#### contextMenu
+### contextMenu
 
 
 
@@ -3146,7 +3211,7 @@ Object to customize context menu behavior of diagram
 
 
 
-#### contextMenu.items<span class="type-signature type object">Object</span>
+### contextMenu.items<span class="type-signature type object">Object</span>
 
 
 
@@ -3177,7 +3242,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3195,7 +3261,7 @@ $("#diagramContent").ejDiagram({contextMenu: contextMenu});
 
 
 
-#### contextMenu.showCustomMenuItemsOnly<span class="type-signature type boolean">Boolean</span>
+### contextMenu.showCustomMenuItemsOnly<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -3226,7 +3292,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -3240,7 +3307,7 @@ $("#diagramcontent").ejDiagram({showCustomMenuItemsOnly: true});
 
 
 
-#### dataSourceSettings
+### dataSourceSettings
 
 
 
@@ -3261,7 +3328,7 @@ Object to set dataSource to diagram
 
 
 
-#### dataSourceSettings.dataSource<span class="type-signature type object">object</span>
+### dataSourceSettings.dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -3292,7 +3359,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3306,7 +3374,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: {dataSource: localData}});
 
 
 
-#### dataSourceSettings.id<span class="type-signature type string">String</span>
+### dataSourceSettings.id<span class="type-signature type string">String</span>
 
 
 
@@ -3337,7 +3405,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3351,7 +3420,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: {id: "CategoryID"}});
 
 
 
-#### dataSourceSettings.parent<span class="type-signature type string">String</span>
+### dataSourceSettings.parent<span class="type-signature type string">String</span>
 
 
 
@@ -3382,7 +3451,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3396,7 +3466,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: { parent: "reportingPerson"}});
 
 
 
-#### dataSourceSettings.query<span class="type-signature type object">object</span>
+### dataSourceSettings.query<span class="type-signature type object">object</span>
 
 
 
@@ -3427,7 +3497,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3441,7 +3512,7 @@ query: ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 
 
 
-#### dataSourceSettings.root<span class="type-signature type string">String</span>
+### dataSourceSettings.root<span class="type-signature type string">String</span>
 
 
 
@@ -3472,7 +3543,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3486,7 +3558,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: { root: "1"}});
 
 
 
-#### dataSourceSettings.tablename<span class="type-signature type string">String</span>
+### dataSourceSettings.tablename<span class="type-signature type string">String</span>
 
 
 
@@ -3517,7 +3589,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3531,7 +3604,7 @@ $("#diagram").ejDiagram({ dataSourceSettings:{tableName: "Categories"}});
 
 
 
-#### defaultSettings<span class="type-signature type object">object</span>
+### defaultSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3562,7 +3635,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3576,7 +3650,7 @@ $("#diagram").ejDiagram({ defaultSettings: { node:  {width: 110, height: 40, fil
 
 
 
-#### defaultSettings.connector<span class="type-signature type object">object</span>
+### defaultSettings.connector<span class="type-signature type object">object</span>
 
 
 
@@ -3607,7 +3681,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3621,7 +3696,7 @@ $("#diagram").ejDiagram({ defaultSettings:{ connector:{ lineColor: "gray", lineW
 
 
 
-#### defaultSettings.node<span class="type-signature type object">object</span>
+### defaultSettings.node<span class="type-signature type object">object</span>
 
 
 
@@ -3652,7 +3727,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3666,7 +3742,7 @@ $("#diagram").ejDiagram({ defaultSettings:{node: { fillColor: "#83A93F", borderC
 
 
 
-#### drawingTools<span class="type-signature type object">Object</span>
+### drawingTools<span class="type-signature type object">Object</span>
 
 
 
@@ -3697,7 +3773,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -3711,7 +3788,7 @@ $("#diagramcontent").ejDiagram({ drawingTools: {textTool: ej.datavisualization.D
 
 
 
-#### drawType<span class="type-signature type object">Object</span>
+### drawType<span class="type-signature type object">Object</span>
 
 
 
@@ -3742,7 +3819,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -3756,7 +3834,7 @@ $("#diagramcontent").ejDiagram({drawType:{type:"node"}});
 
 
 
-#### enableAutoScroll<span class="type-signature type boolean">Boolean</span>
+### enableAutoScroll<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -3787,7 +3865,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -3801,7 +3880,7 @@ $("#diagramcontent").ejDiagram({enableAutoScroll: true});
 
 
 
-#### enableContextMenu<span class="type-signature type boolean">Boolean</span>
+### enableContextMenu<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -3832,7 +3911,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -3846,7 +3926,7 @@ $("#diagramcontent").ejDiagram({enableContextMenu: true});
 
 
 
-#### height<span class="type-signature type string">string</span>
+### height<span class="type-signature type string">string</span>
 
 
 
@@ -3877,7 +3957,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -3891,7 +3972,7 @@ $("#diagram").ejDiagram({ height:"100%" });
 
 
 
-#### layout
+### layout
 
 
 
@@ -3912,7 +3993,7 @@ To arrange the diagram elements on page
 
 
 
-#### layout. fixedNode<span class="type-signature type string">String</span>
+### layout. fixedNode<span class="type-signature type string">String</span>
 
 
 
@@ -3943,7 +4024,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3956,7 +4038,7 @@ $("#diagramContent").ejDiagram({layout: { fixedNode: "nodename"}}); </code>
 
 
 
-#### layout. getLayoutInfo<span class="type-signature type object">object</span>
+### layout. getLayoutInfo<span class="type-signature type object">object</span>
 
 
 
@@ -3987,7 +4069,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -4002,7 +4085,7 @@ $("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 
 
-#### layout. marginY<span class="type-signature type number">Number</span>
+### layout. marginY<span class="type-signature type number">Number</span>
 
 
 
@@ -4033,7 +4116,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4046,7 +4130,7 @@ $("#diagramContent").ejDiagram({layout: { marginY: 0}}); </code>
 
 
 
-#### layout.horizontalSpacing<span class="type-signature type number">Number</span>
+### layout.horizontalSpacing<span class="type-signature type number">Number</span>
 
 
 
@@ -4077,7 +4161,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4090,7 +4175,7 @@ $("#diagramContent").ejDiagram({layout: {horizontalSpacing: 30}}); </code>
 
 
 
-#### layout.marginX<span class="type-signature type number">Number</span>
+### layout.marginX<span class="type-signature type number">Number</span>
 
 
 
@@ -4121,7 +4206,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4134,7 +4220,7 @@ $("#diagramContent").ejDiagram({layout: {marginX: 0}}); </code>
 
 
 
-#### layout.orientation<span class="type-signature type string">String</span>
+### layout.orientation<span class="type-signature type string">String</span>
 
 
 
@@ -4165,7 +4251,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4178,7 +4265,7 @@ $("#diagramContent").ejDiagram({layout: {orientation: "topToBottom"}}); </code>
 
 
 
-#### layout.type<span class="type-signature type string">String</span>
+### layout.type<span class="type-signature type string">String</span>
 
 
 
@@ -4209,7 +4296,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4222,7 +4310,7 @@ $("#diagramContent").ejDiagram({layout: {type: "none"}}); </code>
 
 
 
-#### layout.verticalSpacing<span class="type-signature type number">Number</span>
+### layout.verticalSpacing<span class="type-signature type number">Number</span>
 
 
 
@@ -4253,7 +4341,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4266,7 +4355,7 @@ $("#diagramContent").ejDiagram({layout: {verticalSpacing: 30}}); </code>
 
 
 
-#### locale<span class="type-signature type string">String</span>
+### locale<span class="type-signature type string">String</span>
 
 
 
@@ -4297,7 +4386,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4311,7 +4401,7 @@ $("#diagramcontent").ejDiagram({locale: "en-US"});
 
 
 
-#### nodes<span class="type-signature type array">array</span>
+### nodes<span class="type-signature type array">array</span>
 
 
 
@@ -4342,7 +4432,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -4357,7 +4448,7 @@ $("#diagram").ejDiagram({ nodes:nodes });
 
 
 
-#### nodes.activity<span class="type-signature type enum">enum</span>
+### nodes.activity<span class="type-signature type enum">enum</span>
 
 
 
@@ -4388,7 +4479,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4404,7 +4496,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.addInfo<span class="type-signature type object">Object</span>
+### nodes.addInfo<span class="type-signature type object">Object</span>
 
 
 
@@ -4435,7 +4527,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4453,7 +4546,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",{addInf
 
 
 
-#### nodes.allowDrop<span class="type-signature type boolean">Boolean</span>
+### nodes.allowDrop<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -4484,7 +4577,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4500,7 +4594,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.borderColor<span class="type-signature type string">String</span>
+### nodes.borderColor<span class="type-signature type string">String</span>
 
 
 
@@ -4531,7 +4625,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4547,7 +4642,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.borderDashArray<span class="type-signature type string">String</span>
+### nodes.borderDashArray<span class="type-signature type string">String</span>
 
 
 
@@ -4578,7 +4673,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4594,7 +4690,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.borderWidth<span class="type-signature type number">Number</span>
+### nodes.borderWidth<span class="type-signature type number">Number</span>
 
 
 
@@ -4625,7 +4721,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4641,7 +4738,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.canUngroup<span class="type-signature type boolean">Boolean</span>
+### nodes.canUngroup<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -4672,7 +4769,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4689,7 +4787,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.children<span class="type-signature type array">Array</span>
+### nodes.children<span class="type-signature type array">Array</span>
 
 
 
@@ -4720,7 +4818,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4737,7 +4836,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.collection<span class="type-signature type boolean">Boolean</span>
+### nodes.collection<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -4768,7 +4867,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4784,7 +4884,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.connectorPadding<span class="type-signature type int">Int</span>
+### nodes.connectorPadding<span class="type-signature type int">Int</span>
 
 
 
@@ -4815,7 +4915,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4831,7 +4932,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.constraints<span class="type-signature type enum">enum</span>
+### nodes.constraints<span class="type-signature type enum">enum</span>
 
 
 
@@ -4862,7 +4963,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4878,7 +4980,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.constraints<span class="type-signature type enum">enum</span>
+### nodes.constraints<span class="type-signature type enum">enum</span>
 
 
 
@@ -4893,7 +4995,8 @@ To set the constraints for the swimlane see <a href="global.html#NodeConstraints
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4909,7 +5012,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.container<span class="type-signature type obj">obj</span>
+### nodes.container<span class="type-signature type obj">obj</span>
 
 
 
@@ -4940,7 +5043,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -4956,7 +5060,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.container.orientation<span class="type-signature type string">string</span>
+### nodes.container.orientation<span class="type-signature type string">string</span>
 
 
 
@@ -4987,7 +5091,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5004,7 +5109,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.container.type<span class="type-signature type enum">enum</span>
+### nodes.container.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -5035,7 +5140,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5052,7 +5158,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.cornerRadius<span class="type-signature type integer">Integer</span>
+### nodes.cornerRadius<span class="type-signature type integer">Integer</span>
 
 
 
@@ -5083,7 +5189,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5099,7 +5206,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.event<span class="type-signature type enum">enum</span>
+### nodes.event<span class="type-signature type enum">enum</span>
 
 
 
@@ -5130,7 +5237,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5146,7 +5254,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.excludeFromLayout<span class="type-signature type boolean">Boolean</span>
+### nodes.excludeFromLayout<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -5177,7 +5285,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5193,7 +5302,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.expanded<span class="type-signature type boolean">Boolean</span>
+### nodes.expanded<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -5224,7 +5333,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5240,7 +5350,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.fillColor<span class="type-signature type string">String</span>
+### nodes.fillColor<span class="type-signature type string">String</span>
 
 
 
@@ -5271,7 +5381,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5287,7 +5398,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gateway<span class="type-signature type enum">enum</span>
+### nodes.gateway<span class="type-signature type enum">enum</span>
 
 
 
@@ -5318,7 +5429,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5334,7 +5446,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient
+### nodes.gradient
 
 
 
@@ -5355,7 +5467,7 @@ Smooth transition from one color to another color in node
 
 
 
-#### nodes.gradient.LinearGradient<span class="type-signature type object">object</span>
+### nodes.gradient.LinearGradient<span class="type-signature type object">object</span>
 
 
 
@@ -5376,7 +5488,7 @@ Paints an area with a linear gradient.
 
 
 
-#### nodes.gradient.LinearGradient.stops<span class="type-signature type array">Array</span>
+### nodes.gradient.LinearGradient.stops<span class="type-signature type array">Array</span>
 
 
 
@@ -5407,7 +5519,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5438,7 +5551,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.LinearGradient.x1<span class="type-signature type int">Int</span>
+### nodes.gradient.LinearGradient.x1<span class="type-signature type int">Int</span>
 
 
 
@@ -5469,7 +5582,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5490,7 +5604,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.LinearGradient.x2<span class="type-signature type int">Int</span>
+### nodes.gradient.LinearGradient.x2<span class="type-signature type int">Int</span>
 
 
 
@@ -5521,7 +5635,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5542,7 +5657,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.LinearGradient.y1<span class="type-signature type int">Int</span>
+### nodes.gradient.LinearGradient.y1<span class="type-signature type int">Int</span>
 
 
 
@@ -5573,7 +5688,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5594,7 +5710,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.LinearGradient.y2<span class="type-signature type int">Int</span>
+### nodes.gradient.LinearGradient.y2<span class="type-signature type int">Int</span>
 
 
 
@@ -5625,7 +5741,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5646,7 +5763,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.RadialGradient<span class="type-signature type object">object</span>
+### nodes.gradient.RadialGradient<span class="type-signature type object">object</span>
 
 
 
@@ -5667,7 +5784,7 @@ Paints an area with a radial gradient. A focal point defines the beginning of th
 
 
 
-#### nodes.gradient.RadialGradient.cx<span class="type-signature type int">Int</span>
+### nodes.gradient.RadialGradient.cx<span class="type-signature type int">Int</span>
 
 
 
@@ -5698,7 +5815,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5719,7 +5837,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.RadialGradient.cy<span class="type-signature type int">Int</span>
+### nodes.gradient.RadialGradient.cy<span class="type-signature type int">Int</span>
 
 
 
@@ -5750,7 +5868,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5771,7 +5890,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.RadialGradient.fx<span class="type-signature type int">Int</span>
+### nodes.gradient.RadialGradient.fx<span class="type-signature type int">Int</span>
 
 
 
@@ -5802,7 +5921,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5823,7 +5943,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.RadialGradient.fy<span class="type-signature type int">Int</span>
+### nodes.gradient.RadialGradient.fy<span class="type-signature type int">Int</span>
 
 
 
@@ -5854,7 +5974,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5875,7 +5996,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.RadialGradient.stops<span class="type-signature type array">Array</span>
+### nodes.gradient.RadialGradient.stops<span class="type-signature type array">Array</span>
 
 
 
@@ -5906,7 +6027,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -5937,7 +6059,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.Stop<span class="type-signature type object">object</span>
+### nodes.gradient.Stop<span class="type-signature type object">object</span>
 
 
 
@@ -5958,7 +6080,7 @@ Specifies the stops of the node gradients.
 
 
 
-#### nodes.gradient.Stop.color<span class="type-signature type string">String</span>
+### nodes.gradient.Stop.color<span class="type-signature type string">String</span>
 
 
 
@@ -5989,7 +6111,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6019,7 +6142,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.Stop.offset<span class="type-signature type int">Int</span>
+### nodes.gradient.Stop.offset<span class="type-signature type int">Int</span>
 
 
 
@@ -6050,7 +6173,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6080,7 +6204,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.gradient.Stop.opacity<span class="type-signature type int">Int</span>
+### nodes.gradient.Stop.opacity<span class="type-signature type int">Int</span>
 
 
 
@@ -6111,7 +6235,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6142,7 +6267,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.header<span class="type-signature type obj">obj</span>
+### nodes.header<span class="type-signature type obj">obj</span>
 
 
 
@@ -6173,7 +6298,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6187,7 +6313,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  heade
 
 
 
-#### nodes.height<span class="type-signature type int">Int</span>
+### nodes.height<span class="type-signature type int">Int</span>
 
 
 
@@ -6218,7 +6344,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6234,7 +6361,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.horizontalAlign<span class="type-signature type horizontalalignment"><a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
+### nodes.horizontalAlign<span class="type-signature type horizontalalignment"><a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
 
 
 
@@ -6265,7 +6392,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6280,7 +6408,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.inEdges<span class="type-signature type array">Array</span>
+### nodes.inEdges<span class="type-signature type array">Array</span>
 
 
 
@@ -6311,7 +6439,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6327,7 +6456,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.isSwimlane<span class="type-signature type boolean">Boolean</span>
+### nodes.isSwimlane<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -6358,7 +6487,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6372,7 +6502,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  isSwi
 
 
 
-#### nodes.labels<span class="type-signature type array">Array</span>
+### nodes.labels<span class="type-signature type array">Array</span>
 
 
 
@@ -6403,7 +6533,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6420,7 +6551,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.labels.bold<span class="type-signature type boolean">Boolean</span>
+### nodes.labels.bold<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -6451,7 +6582,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6467,7 +6599,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.borderColor<span class="type-signature type string">String</span>
+### nodes.labels.borderColor<span class="type-signature type string">String</span>
 
 
 
@@ -6498,7 +6630,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6514,7 +6647,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.borderWidth<span class="type-signature type number">Number</span>
+### nodes.labels.borderWidth<span class="type-signature type number">Number</span>
 
 
 
@@ -6545,7 +6678,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6561,7 +6695,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.fillColor<span class="type-signature type string">String</span>
+### nodes.labels.fillColor<span class="type-signature type string">String</span>
 
 
 
@@ -6592,7 +6726,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6608,7 +6743,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.fontColor<span class="type-signature type string">String</span>
+### nodes.labels.fontColor<span class="type-signature type string">String</span>
 
 
 
@@ -6639,7 +6774,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6655,7 +6791,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.fontFamily<span class="type-signature type string">String</span>
+### nodes.labels.fontFamily<span class="type-signature type string">String</span>
 
 
 
@@ -6686,7 +6822,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6702,7 +6839,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.fontSize<span class="type-signature type integer">Integer</span>
+### nodes.labels.fontSize<span class="type-signature type integer">Integer</span>
 
 
 
@@ -6733,7 +6870,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6749,7 +6887,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.horizontalAlignment<span class="type-signature type enum">Enum</span>
+### nodes.labels.horizontalAlignment<span class="type-signature type enum">Enum</span>
 
 
 
@@ -6780,7 +6918,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6796,7 +6935,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.italic<span class="type-signature type boolean">Boolean</span>
+### nodes.labels.italic<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -6827,7 +6966,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6843,7 +6983,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.margin<span class="type-signature type object">Object</span>
+### nodes.labels.margin<span class="type-signature type object">Object</span>
 
 
 
@@ -6874,7 +7014,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6890,7 +7031,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.mode<span class="type-signature type enum">Enum</span>
+### nodes.labels.mode<span class="type-signature type enum">Enum</span>
 
 
 
@@ -6921,7 +7062,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6937,7 +7079,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.name<span class="type-signature type string">String</span>
+### nodes.labels.name<span class="type-signature type string">String</span>
 
 
 
@@ -6968,7 +7110,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -6984,7 +7127,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.offset<span class="type-signature type point">Point</span>
+### nodes.labels.offset<span class="type-signature type point">Point</span>
 
 
 
@@ -7015,7 +7158,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7031,7 +7175,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.readOnly<span class="type-signature type boolean">Boolean</span>
+### nodes.labels.readOnly<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -7062,7 +7206,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7078,7 +7223,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.rotateAngle<span class="type-signature type number">Number</span>
+### nodes.labels.rotateAngle<span class="type-signature type number">Number</span>
 
 
 
@@ -7109,7 +7254,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7125,7 +7271,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.text<span class="type-signature type string">String</span>
+### nodes.labels.text<span class="type-signature type string">String</span>
 
 
 
@@ -7156,7 +7302,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7172,7 +7319,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.textAlign<span class="type-signature type enum">Enum</span>
+### nodes.labels.textAlign<span class="type-signature type enum">Enum</span>
 
 
 
@@ -7203,7 +7350,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7219,7 +7367,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.textDecoration<span class="type-signature type enum">Enum</span>
+### nodes.labels.textDecoration<span class="type-signature type enum">Enum</span>
 
 
 
@@ -7250,7 +7398,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7266,7 +7415,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.verticalAlignment<span class="type-signature type enum">Enum</span>
+### nodes.labels.verticalAlignment<span class="type-signature type enum">Enum</span>
 
 
 
@@ -7297,7 +7446,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7313,7 +7463,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.visible<span class="type-signature type boolean">Boolean</span>
+### nodes.labels.visible<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -7344,7 +7494,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7360,7 +7511,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.width<span class="type-signature type interger">Interger</span>
+### nodes.labels.width<span class="type-signature type interger">Interger</span>
 
 
 
@@ -7391,7 +7542,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7407,7 +7559,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.labels.wrapping<span class="type-signature type enum">Enum</span>
+### nodes.labels.wrapping<span class="type-signature type enum">Enum</span>
 
 
 
@@ -7438,7 +7590,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7454,7 +7607,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.lanes<span class="type-signature type array">Array</span>
+### nodes.lanes<span class="type-signature type array">Array</span>
 
 
 
@@ -7485,7 +7638,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7502,7 +7656,7 @@ var nodes = [ {type: "swimlane",name: "swimlane",lanes: []}
 
 
 
-#### nodes.lanes.addInfo<span class="type-signature type object">Object</span>
+### nodes.lanes.addInfo<span class="type-signature type object">Object</span>
 
 
 
@@ -7533,7 +7687,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7547,7 +7702,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "lane",name: "lane",{addInfo: addIn
 
 
 
-#### nodes.lanes.children<span class="type-signature type array">Array</span>
+### nodes.lanes.children<span class="type-signature type array">Array</span>
 
 
 
@@ -7578,7 +7733,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7592,7 +7748,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-#### nodes.lanes.fillColor<span class="type-signature type string">String</span>
+### nodes.lanes.fillColor<span class="type-signature type string">String</span>
 
 
 
@@ -7623,7 +7779,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7637,7 +7794,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-#### nodes.lanes.header<span class="type-signature type obj">obj</span>
+### nodes.lanes.header<span class="type-signature type obj">obj</span>
 
 
 
@@ -7668,7 +7825,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7682,7 +7840,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-#### nodes.lanes.isLane<span class="type-signature type boolean">Boolean</span>
+### nodes.lanes.isLane<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -7713,7 +7871,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7727,7 +7886,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-#### nodes.lanes.labels<span class="type-signature type string">String</span>
+### nodes.lanes.labels<span class="type-signature type string">String</span>
 
 
 
@@ -7758,7 +7917,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7772,7 +7932,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-#### nodes.lanes.name<span class="type-signature type string">String</span>
+### nodes.lanes.name<span class="type-signature type string">String</span>
 
 
 
@@ -7803,7 +7963,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7817,7 +7978,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-#### nodes.lanes.orientation<span class="type-signature type string">String</span>
+### nodes.lanes.orientation<span class="type-signature type string">String</span>
 
 
 
@@ -7848,7 +8009,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7862,7 +8024,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-#### nodes.marginBottom<span class="type-signature type int">Int</span>
+### nodes.marginBottom<span class="type-signature type int">Int</span>
 
 
 
@@ -7893,7 +8055,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7909,7 +8072,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.marginLeft<span class="type-signature type int">Int</span>
+### nodes.marginLeft<span class="type-signature type int">Int</span>
 
 
 
@@ -7940,7 +8103,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -7956,7 +8120,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.marginRight<span class="type-signature type int">Int</span>
+### nodes.marginRight<span class="type-signature type int">Int</span>
 
 
 
@@ -7987,7 +8151,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8003,7 +8168,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.marginTop<span class="type-signature type int">Int</span>
+### nodes.marginTop<span class="type-signature type int">Int</span>
 
 
 
@@ -8034,7 +8199,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8050,7 +8216,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.maxHeight<span class="type-signature type int">Int</span>
+### nodes.maxHeight<span class="type-signature type int">Int</span>
 
 
 
@@ -8081,7 +8247,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8097,7 +8264,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.maxWidth<span class="type-signature type int">Int</span>
+### nodes.maxWidth<span class="type-signature type int">Int</span>
 
 
 
@@ -8128,7 +8295,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8144,7 +8312,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.minHeight<span class="type-signature type int">Int</span>
+### nodes.minHeight<span class="type-signature type int">Int</span>
 
 
 
@@ -8175,7 +8343,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8191,7 +8360,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.minWidth<span class="type-signature type int">Int</span>
+### nodes.minWidth<span class="type-signature type int">Int</span>
 
 
 
@@ -8222,7 +8391,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8238,7 +8408,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.name<span class="type-signature type string">String</span>
+### nodes.name<span class="type-signature type string">String</span>
 
 
 
@@ -8269,7 +8439,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8285,7 +8456,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.offsetX<span class="type-signature type int">Int</span>
+### nodes.offsetX<span class="type-signature type int">Int</span>
 
 
 
@@ -8316,7 +8487,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8333,7 +8505,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetX
 
 
 
-#### nodes.offsetY<span class="type-signature type int">Int</span>
+### nodes.offsetY<span class="type-signature type int">Int</span>
 
 
 
@@ -8364,7 +8536,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8381,7 +8554,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetY
 
 
 
-#### nodes.opacity<span class="type-signature type number">Number</span>
+### nodes.opacity<span class="type-signature type number">Number</span>
 
 
 
@@ -8412,7 +8585,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8428,7 +8602,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.orientation<span class="type-signature type string">String</span>
+### nodes.orientation<span class="type-signature type string">String</span>
 
 
 
@@ -8459,7 +8633,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8473,7 +8648,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  orien
 
 
 
-#### nodes.outEdges<span class="type-signature type array">Array</span>
+### nodes.outEdges<span class="type-signature type array">Array</span>
 
 
 
@@ -8504,7 +8679,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8520,7 +8696,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.paddingBottom<span class="type-signature type int">Int</span>
+### nodes.paddingBottom<span class="type-signature type int">Int</span>
 
 
 
@@ -8551,7 +8727,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8567,7 +8744,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.paddingLeft<span class="type-signature type int">Int</span>
+### nodes.paddingLeft<span class="type-signature type int">Int</span>
 
 
 
@@ -8598,7 +8775,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8614,7 +8792,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.paddingRight<span class="type-signature type int">Int</span>
+### nodes.paddingRight<span class="type-signature type int">Int</span>
 
 
 
@@ -8645,7 +8823,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8661,7 +8840,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.paddingTop<span class="type-signature type int">Int</span>
+### nodes.paddingTop<span class="type-signature type int">Int</span>
 
 
 
@@ -8692,7 +8871,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8708,7 +8888,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.parent<span class="type-signature type string">String</span>
+### nodes.parent<span class="type-signature type string">String</span>
 
 
 
@@ -8739,7 +8919,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8753,7 +8934,7 @@ var node = [ {name: "rect",parent:"group1"}];
 
 
 
-#### nodes.pathData<span class="type-signature type string">String</span>
+### nodes.pathData<span class="type-signature type string">String</span>
 
 
 
@@ -8784,7 +8965,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8800,7 +8982,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.phases<span class="type-signature type array">Array</span>
+### nodes.phases<span class="type-signature type array">Array</span>
 
 
 
@@ -8831,7 +9013,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8848,7 +9031,7 @@ var nodes = [ {type: "swimlane",name: "swimlane",phases: []}
 
 
 
-#### nodes.phases.label<span class="type-signature type obj">obj</span>
+### nodes.phases.label<span class="type-signature type obj">obj</span>
 
 
 
@@ -8879,7 +9062,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8893,7 +9077,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phases.lineColor<span class="type-signature type string">String</span>
+### nodes.phases.lineColor<span class="type-signature type string">String</span>
 
 
 
@@ -8924,7 +9108,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8938,7 +9123,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phases.lineDashArray<span class="type-signature type string">String</span>
+### nodes.phases.lineDashArray<span class="type-signature type string">String</span>
 
 
 
@@ -8969,7 +9154,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -8983,7 +9169,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phases.lineWidth<span class="type-signature type int">Int</span>
+### nodes.phases.lineWidth<span class="type-signature type int">Int</span>
 
 
 
@@ -9014,7 +9200,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9028,7 +9215,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phases.name<span class="type-signature type string">String</span>
+### nodes.phases.name<span class="type-signature type string">String</span>
 
 
 
@@ -9059,7 +9246,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9073,7 +9261,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phases.offset<span class="type-signature type int">Int</span>
+### nodes.phases.offset<span class="type-signature type int">Int</span>
 
 
 
@@ -9104,7 +9292,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9118,7 +9307,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phases.orientation<span class="type-signature type string">String</span>
+### nodes.phases.orientation<span class="type-signature type string">String</span>
 
 
 
@@ -9149,7 +9338,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9163,7 +9353,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phases.parent<span class="type-signature type string">String</span>
+### nodes.phases.parent<span class="type-signature type string">String</span>
 
 
 
@@ -9194,7 +9384,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9208,7 +9399,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phases.type<span class="type-signature type string">String</span>
+### nodes.phases.type<span class="type-signature type string">String</span>
 
 
 
@@ -9239,7 +9430,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9253,7 +9445,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-#### nodes.phaseSize<span class="type-signature type int">Int</span>
+### nodes.phaseSize<span class="type-signature type int">Int</span>
 
 
 
@@ -9284,7 +9476,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9298,7 +9491,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",phaseSi
 
 
 
-#### nodes.pivot<span class="type-signature type point">Point</span>
+### nodes.pivot<span class="type-signature type point">Point</span>
 
 
 
@@ -9329,7 +9522,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9345,7 +9539,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.points<span class="type-signature type array">Array</span>
+### nodes.points<span class="type-signature type array">Array</span>
 
 
 
@@ -9376,7 +9570,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9392,7 +9587,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports<span class="type-signature type array">Array</span>
+### nodes.ports<span class="type-signature type array">Array</span>
 
 
 
@@ -9423,7 +9618,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9439,7 +9635,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.ports.borderColor<span class="type-signature type string">String</span>
+### nodes.ports.borderColor<span class="type-signature type string">String</span>
 
 
 
@@ -9470,7 +9666,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9486,7 +9683,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.borderWidth<span class="type-signature type number">Number</span>
+### nodes.ports.borderWidth<span class="type-signature type number">Number</span>
 
 
 
@@ -9517,7 +9714,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9533,7 +9731,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.connectorPadding<span class="type-signature type int">Int</span>
+### nodes.ports.connectorPadding<span class="type-signature type int">Int</span>
 
 
 
@@ -9564,7 +9762,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9579,7 +9778,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.constraints<span class="type-signature type enum">enum</span>
+### nodes.ports.constraints<span class="type-signature type enum">enum</span>
 
 
 
@@ -9610,7 +9809,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9626,7 +9826,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.fillColor<span class="type-signature type string">String</span>
+### nodes.ports.fillColor<span class="type-signature type string">String</span>
 
 
 
@@ -9657,7 +9857,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9673,7 +9874,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.name;<span class="type-signature type string">String</span>
+### nodes.ports.name;<span class="type-signature type string">String</span>
 
 
 
@@ -9704,7 +9905,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9720,7 +9922,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.offset<span class="type-signature type point">Point</span>
+### nodes.ports.offset<span class="type-signature type point">Point</span>
 
 
 
@@ -9751,7 +9953,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9767,7 +9970,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.pathData<span class="type-signature type string">String</span>
+### nodes.ports.pathData<span class="type-signature type string">String</span>
 
 
 
@@ -9798,7 +10001,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9814,7 +10018,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.shape<span class="type-signature type enum">enum</span>
+### nodes.ports.shape<span class="type-signature type enum">enum</span>
 
 
 
@@ -9845,7 +10049,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9861,7 +10066,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.size<span class="type-signature type number">Number</span>
+### nodes.ports.size<span class="type-signature type number">Number</span>
 
 
 
@@ -9892,7 +10097,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9908,7 +10114,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.ports.visibility<span class="type-signature type enum">enum</span>
+### nodes.ports.visibility<span class="type-signature type enum">enum</span>
 
 
 
@@ -9939,7 +10145,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -9955,7 +10162,7 @@ $("#diagramcontent").ejDiagram({nodes:port});
 
 
 
-#### nodes.rotateAngle<span class="type-signature type number">Number</span>
+### nodes.rotateAngle<span class="type-signature type number">Number</span>
 
 
 
@@ -9986,7 +10193,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10002,7 +10210,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.shadow<span class="type-signature type object">Object</span>
+### nodes.shadow<span class="type-signature type object">Object</span>
 
 
 
@@ -10033,7 +10241,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10049,7 +10258,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.shadow.angle<span class="type-signature type integer">Integer</span>
+### nodes.shadow.angle<span class="type-signature type integer">Integer</span>
 
 
 
@@ -10080,7 +10289,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10096,7 +10306,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.shadow.distance<span class="type-signature type integer">Integer</span>
+### nodes.shadow.distance<span class="type-signature type integer">Integer</span>
 
 
 
@@ -10127,7 +10337,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10143,7 +10354,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.shadow.opacity<span class="type-signature type float">float</span>
+### nodes.shadow.opacity<span class="type-signature type float">float</span>
 
 
 
@@ -10174,7 +10385,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10190,7 +10402,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.shape<span class="type-signature type enum">Enum</span>
+### nodes.shape<span class="type-signature type enum">Enum</span>
 
 
 
@@ -10221,7 +10433,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10237,7 +10450,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.source<span class="type-signature type string">String</span>
+### nodes.source<span class="type-signature type string">String</span>
 
 
 
@@ -10268,7 +10481,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10284,7 +10498,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.subProcess<span class="type-signature type object">object</span>
+### nodes.subProcess<span class="type-signature type object">object</span>
 
 
 
@@ -10315,7 +10529,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10331,7 +10546,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.subProcess.adhoc<span class="type-signature type boolean">Boolean</span>
+### nodes.subProcess.adhoc<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -10362,7 +10577,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10378,7 +10594,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.subProcess.boundary<span class="type-signature type enum">enum</span>
+### nodes.subProcess.boundary<span class="type-signature type enum">enum</span>
 
 
 
@@ -10409,7 +10625,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10425,7 +10642,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.subProcess.compensation<span class="type-signature type boolean">Boolean</span>
+### nodes.subProcess.compensation<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -10456,7 +10673,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10472,7 +10690,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.subProcess.loop<span class="type-signature type enum">enum</span>
+### nodes.subProcess.loop<span class="type-signature type enum">enum</span>
 
 
 
@@ -10503,7 +10721,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10519,7 +10738,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.task<span class="type-signature type object">object</span>
+### nodes.task<span class="type-signature type object">object</span>
 
 
 
@@ -10550,7 +10769,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10566,7 +10786,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.tasks.call<span class="type-signature type boolean">Boolean</span>
+### nodes.tasks.call<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -10597,7 +10817,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10613,7 +10834,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.tasks.compensation<span class="type-signature type boolean">Boolean</span>
+### nodes.tasks.compensation<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -10644,7 +10865,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10660,7 +10882,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.tasks.loop<span class="type-signature type enum">enum</span>
+### nodes.tasks.loop<span class="type-signature type enum">enum</span>
 
 
 
@@ -10691,7 +10913,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10707,7 +10930,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.tasks.type<span class="type-signature type enum">enum</span>
+### nodes.tasks.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -10738,7 +10961,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10754,7 +10978,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.templateId<span class="type-signature type string">string</span>
+### nodes.templateId<span class="type-signature type string">string</span>
 
 
 
@@ -10785,7 +11009,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10801,7 +11026,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.textBlock<span class="type-signature type integer">Integer</span>
+### nodes.textBlock<span class="type-signature type integer">Integer</span>
 
 
 
@@ -10832,7 +11057,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10850,7 +11076,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.trigger<span class="type-signature type enum">enum</span>
+### nodes.trigger<span class="type-signature type enum">enum</span>
 
 
 
@@ -10881,7 +11107,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10897,7 +11124,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.type<span class="type-signature type enum">enum</span>
+### nodes.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -10928,7 +11155,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10944,7 +11172,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-#### nodes.vertical Align<span class="type-signature type verticalalignment"><a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
+### nodes.vertical Align<span class="type-signature type verticalalignment"><a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
 
 
 
@@ -10975,7 +11203,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -10991,7 +11220,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-#### nodes.visible<span class="type-signature type boolean">Boolean</span>
+### nodes.visible<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -11022,7 +11251,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -11038,7 +11268,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.width<span class="type-signature type int">Int</span>
+### nodes.width<span class="type-signature type int">Int</span>
 
 
 
@@ -11069,7 +11299,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -11085,7 +11316,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodes.zOrder<span class="type-signature type int">Int</span>
+### nodes.zOrder<span class="type-signature type int">Int</span>
 
 
 
@@ -11116,7 +11347,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -11132,7 +11364,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-#### nodeTemplate<span class="type-signature type object">object</span>
+### nodeTemplate<span class="type-signature type object">object</span>
 
 
 
@@ -11163,7 +11395,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -11178,7 +11411,7 @@ $("#diagram").ejDiagram({ nodeTemplate:nodeTemplate});
 
 
 
-#### pageSettings
+### pageSettings
 
 
 
@@ -11199,7 +11432,7 @@ To define the page settings of diagram
 
 
 
-#### pageSettings.multiplePage<span class="type-signature type boolean">Boolean</span>
+### pageSettings.multiplePage<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -11230,7 +11463,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11243,7 +11477,7 @@ $("#diagramContent").ejDiagram({pageSettings: {multiplePage: false}}); </code>
 
 
 
-#### pageSettings.pageBackgroundColor<span class="type-signature type string">String</span>
+### pageSettings.pageBackgroundColor<span class="type-signature type string">String</span>
 
 
 
@@ -11274,7 +11508,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11287,7 +11522,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBackgroundColor: "#ffffff"}})
 
 
 
-#### pageSettings.pageBorderColor<span class="type-signature type string">String</span>
+### pageSettings.pageBorderColor<span class="type-signature type string">String</span>
 
 
 
@@ -11318,7 +11553,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11331,7 +11567,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBorderColor: "#565656"}}); </
 
 
 
-#### pageSettings.pageBorderWidth<span class="type-signature type number">Number</span>
+### pageSettings.pageBorderWidth<span class="type-signature type number">Number</span>
 
 
 
@@ -11362,7 +11598,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11375,7 +11612,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBorderWidth: 3}}); </code>
 
 
 
-#### pageSettings.pageHeight<span class="type-signature type number">Number</span>
+### pageSettings.pageHeight<span class="type-signature type number">Number</span>
 
 
 
@@ -11406,7 +11643,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11419,7 +11657,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageHeight: 4500}}); </code>
 
 
 
-#### pageSettings.pageMargin<span class="type-signature type number">Number</span>
+### pageSettings.pageMargin<span class="type-signature type number">Number</span>
 
 
 
@@ -11450,7 +11688,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11463,7 +11702,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageMargin: 24}}); </code>
 
 
 
-#### pageSettings.pageWidth<span class="type-signature type number">Number</span>
+### pageSettings.pageWidth<span class="type-signature type number">Number</span>
 
 
 
@@ -11494,7 +11733,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11507,7 +11747,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageWidth: 4500}}); </code>
 
 
 
-#### pageSettings.showPageBreak<span class="type-signature type boolean">Boolean</span>
+### pageSettings.showPageBreak<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -11538,7 +11778,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11551,7 +11792,7 @@ $("#diagramContent").ejDiagram({pageSettings: {showPageBreak: false}}); </code>
 
 
 
-#### selectedItems<span class="type-signature type object">object</span>
+### selectedItems<span class="type-signature type object">object</span>
 
 
 
@@ -11572,7 +11813,7 @@ The object to define the behavior of the selected items
 
 
 
-#### selectedItems.constraints<span class="type-signature type enum">enum</span>
+### selectedItems.constraints<span class="type-signature type enum">enum</span>
 
 
 
@@ -11603,7 +11844,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11618,7 +11860,7 @@ $("#diagramContent").ejDiagram({selectedItems:{constraints: ej.datavisualization
 
 
 
-#### selectedItems.height<span class="type-signature type number">Number</span>
+### selectedItems.height<span class="type-signature type number">Number</span>
 
 
 
@@ -11649,7 +11891,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11661,7 +11904,7 @@ $("#diagramContent").ejDiagram({selectedItems: {height: 50}}); </code>
 
 
 
-#### selectedItems.offsetX<span class="type-signature type number">Number</span>
+### selectedItems.offsetX<span class="type-signature type number">Number</span>
 
 
 
@@ -11692,7 +11935,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11704,7 +11948,7 @@ $("#diagramContent").ejDiagram({selectedItems: {offsetX: 50}}); </code>
 
 
 
-#### selectedItems.offsetY<span class="type-signature type number">Number</span>
+### selectedItems.offsetY<span class="type-signature type number">Number</span>
 
 
 
@@ -11735,7 +11979,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11747,7 +11992,7 @@ $("#diagramContent").ejDiagram({selectedItems: {offsetY: 50}}); </code>
 
 
 
-#### selectedItems.rotateAngle<span class="type-signature type number">Number</span>
+### selectedItems.rotateAngle<span class="type-signature type number">Number</span>
 
 
 
@@ -11778,7 +12023,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11790,7 +12036,7 @@ $("#diagramContent").ejDiagram({selectedItems: {rotateAngle: 50}}); </code>
 
 
 
-#### selectedItems.userHandles<span class="type-signature type array">array</span>
+### selectedItems.userHandles<span class="type-signature type array">array</span>
 
 
 
@@ -11821,7 +12067,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -11840,7 +12087,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 
 
-#### selectedItems.width<span class="type-signature type number">Number</span>
+### selectedItems.width<span class="type-signature type number">Number</span>
 
 
 
@@ -11871,7 +12118,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11883,7 +12131,7 @@ $("#diagramContent").ejDiagram({selectedItems: {width: 50}}); </code>
 
 
 
-#### showTooltip<span class="type-signature type boolean">Boolean</span>
+### showTooltip<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -11914,7 +12162,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -11928,7 +12177,7 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 
 
 
-#### snapSettings<span class="type-signature type object">object</span>
+### snapSettings<span class="type-signature type object">object</span>
 
 
 
@@ -11949,7 +12198,7 @@ Specifies the snap settings of the diagram.
 
 
 
-#### snapSettings.enableSnapToObject<span class="type-signature type boolean">Boolean</span>
+### snapSettings.enableSnapToObject<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -11980,7 +12229,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11994,7 +12244,7 @@ $("#diagramContent").ejDiagram({snapSettings: snap}); </code>
 
 
 
-#### snapSettings.horizontalGridLines<span class="type-signature type object">object</span>
+### snapSettings.horizontalGridLines<span class="type-signature type object">object</span>
 
 
 
@@ -12015,7 +12265,7 @@ Specifies the settings of horizontal grid lines.
 
 
 
-#### snapSettings.horizontalGridLines.lineColor<span class="type-signature type string">string</span>
+### snapSettings.horizontalGridLines.lineColor<span class="type-signature type string">string</span>
 
 
 
@@ -12046,7 +12296,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12063,7 +12314,7 @@ $("#diagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 
 
-#### snapSettings.horizontalGridLines.lineDashArray<span class="type-signature type string">string</span>
+### snapSettings.horizontalGridLines.lineDashArray<span class="type-signature type string">string</span>
 
 
 
@@ -12094,7 +12345,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12109,7 +12361,7 @@ $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { lineDashArray: 
 
 
 
-#### snapSettings.horizontalGridLines.linesInterval<span class="type-signature type array">array</span>
+### snapSettings.horizontalGridLines.linesInterval<span class="type-signature type array">array</span>
 
 
 
@@ -12140,7 +12392,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -12156,7 +12409,7 @@ $("#diagram").ejDiagram({ snapSettings: {
 
 
 
-#### snapSettings.horizontalGridLines.snapInterval<span class="type-signature type array">array</span>
+### snapSettings.horizontalGridLines.snapInterval<span class="type-signature type array">array</span>
 
 
 
@@ -12187,7 +12440,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12202,7 +12456,7 @@ $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { snapInterval: [
 
 
 
-#### snapSettings.snapAngle<span class="type-signature type number">Number</span>
+### snapSettings.snapAngle<span class="type-signature type number">Number</span>
 
 
 
@@ -12233,7 +12487,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12247,7 +12502,7 @@ $("#diagramContent").ejDiagram({snapSettings: snap}); </code>
 
 
 
-#### snapSettings.snapObjectDistance<span class="type-signature type number">Number</span>
+### snapSettings.snapObjectDistance<span class="type-signature type number">Number</span>
 
 
 
@@ -12278,7 +12533,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12292,7 +12548,7 @@ $("#diagramContent").ejDiagram({snapSettings: snap}); </code>
 
 
 
-#### snapSettings.verticalGridLines<span class="type-signature type object">object</span>
+### snapSettings.verticalGridLines<span class="type-signature type object">object</span>
 
 
 
@@ -12313,7 +12569,7 @@ Specifies the settings of vertical grid lines.
 
 
 
-#### snapSettings.verticalGridLines.lineColor<span class="type-signature type string">string</span>
+### snapSettings.verticalGridLines.lineColor<span class="type-signature type string">string</span>
 
 
 
@@ -12344,7 +12600,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12361,7 +12618,7 @@ $("#diagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 
 
-#### snapSettings.verticalGridLines.lineDashArray<span class="type-signature type string">string</span>
+### snapSettings.verticalGridLines.lineDashArray<span class="type-signature type string">string</span>
 
 
 
@@ -12392,7 +12649,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12407,7 +12665,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { lineDashArray: "2
 
 
 
-#### snapSettings.verticalGridLines.linesInterval<span class="type-signature type array">array</span>
+### snapSettings.verticalGridLines.linesInterval<span class="type-signature type array">array</span>
 
 
 
@@ -12438,7 +12696,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -12454,7 +12713,7 @@ $("#diagram").ejDiagram({ snapSettings: {
 
 
 
-#### snapSettings.verticalGridLines.snapInterval<span class="type-signature type array">array</span>
+### snapSettings.verticalGridLines.snapInterval<span class="type-signature type array">array</span>
 
 
 
@@ -12485,7 +12744,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12500,7 +12760,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { snapInterval: [10
 
 
 
-#### tool<span class="type-signature type enum">enum</span>
+### tool<span class="type-signature type enum">enum</span>
 
 
 
@@ -12531,7 +12791,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12546,7 +12807,7 @@ $("#diagramContent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.Default}
 
 
 
-#### tooltipTemplateId<span class="type-signature type string">String</span>
+### tooltipTemplateId<span class="type-signature type string">String</span>
 
 
 
@@ -12577,7 +12838,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>         
@@ -12596,7 +12858,7 @@ $("#diagramcontent").ejDiagram({ tooltipTemplateId: "toolTipId"});
 
 
 
-#### version<span class="type-signature type string">String</span>
+### version<span class="type-signature type string">String</span>
 
 
 
@@ -12627,7 +12889,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -12641,7 +12904,7 @@ $("#diagramcontent").ejDiagram("instance");
 
 
 
-#### width<span class="type-signature type string">string</span>
+### width<span class="type-signature type string">string</span>
 
 
 
@@ -12672,7 +12935,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagram"&gt;&lt;/div&gt;
@@ -12686,7 +12950,7 @@ $("#diagram").ejDiagram({ width:"100%" });
 
 
 
-#### zoomFactor<span class="type-signature type number">Number</span>
+### zoomFactor<span class="type-signature type number">Number</span>
 
 
 
@@ -12717,7 +12981,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12730,7 +12995,7 @@ $("#diagramContent").ejDiagram({zoomFactor: 1});
 
 
 
-### Methods
+## Methods
 
 
 
@@ -12739,7 +13004,7 @@ $("#diagramContent").ejDiagram({zoomFactor: 1});
 
 
 
-#### activateTool<span class="signature">(toolName, singleAction)</span>
+### activateTool<span class="signature">(toolName, singleAction)</span>
 
 
 
@@ -12775,7 +13040,8 @@ To activate the tool specified by toolName
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -12797,7 +13063,7 @@ diagram.activateTool("orthogonalTool",false);
 
 
 
-#### add<span class="signature">(node)</span>
+### add<span class="signature">(node)</span>
 
 
 
@@ -12828,7 +13094,8 @@ Add the specified node/connector to diagram
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -12845,7 +13112,7 @@ diagram.add(node);
 
 
 
-#### addPhase<span class="signature">(name, options)</span>
+### addPhase<span class="signature">(name, options)</span>
 
 
 
@@ -12881,7 +13148,8 @@ Add a phase to the group specified by name
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12897,7 +13165,7 @@ diagram.addPhase("swimlane", { name: "CustomPhase", offset: 600, label: { text: 
 
 
 
-#### addPorts<span class="signature">(name, ports)</span>
+### addPorts<span class="signature">(name, ports)</span>
 
 
 
@@ -12933,7 +13201,8 @@ Add the collection of ports to the node specified by name
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -12950,7 +13219,7 @@ diagram.addPorts("Rect1", port);
 
 
 
-#### addSelection<span class="signature">(node)</span>
+### addSelection<span class="signature">(node)</span>
 
 
 
@@ -12981,7 +13250,8 @@ Select the node specified in the argument
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -12997,7 +13267,7 @@ diagram.addSelection(node);
 
 
 
-#### align<span class="signature">(direction)</span>
+### align<span class="signature">(direction)</span>
 
 
 
@@ -13028,7 +13298,8 @@ Align selected objects based on reference object and direction
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13043,7 +13314,7 @@ diagram.align("left");
 
 
 
-#### bringIntoView<span class="signature">(bounds)</span>
+### bringIntoView<span class="signature">(bounds)</span>
 
 
 
@@ -13074,7 +13345,8 @@ To bring the specified portion of the diagram content to the diagram viewport
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13089,7 +13361,7 @@ diagram.bringIntoView(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
 
 
 
-#### bringToCenter<span class="signature">(rect)</span>
+### bringToCenter<span class="signature">(rect)</span>
 
 
 
@@ -13120,7 +13392,8 @@ To bring the specified portion of the diagram content to center of the diagram v
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13135,7 +13408,7 @@ diagram.bringToCenter(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
 
 
 
-#### bringToFront<span class="signature">()</span>
+### bringToFront<span class="signature">()</span>
 
 
 
@@ -13150,7 +13423,8 @@ Move the selected object over all other intersected objects
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13165,7 +13439,7 @@ diagram.bringToFront();
 
 
 
-#### clear<span class="signature">()</span>
+### clear<span class="signature">()</span>
 
 
 
@@ -13180,7 +13454,8 @@ Remove all the elements from diagram
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13195,7 +13470,7 @@ diagram.clear();
 
 
 
-#### copy<span class="signature">()</span>
+### copy<span class="signature">()</span>
 
 
 
@@ -13210,7 +13485,8 @@ Copy the selected object to internal clipboard
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13225,7 +13501,7 @@ diagram.copy();
 
 
 
-#### cut<span class="signature">()</span>
+### cut<span class="signature">()</span>
 
 
 
@@ -13240,7 +13516,8 @@ Cut the selected object from diagram to diagram internal clipboard
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13255,7 +13532,7 @@ diagram.cut();
 
 
 
-#### deactivateTool<span class="signature">()</span>
+### deactivateTool<span class="signature">()</span>
 
 
 
@@ -13270,7 +13547,8 @@ Deactivate the current activated tool
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13285,7 +13563,7 @@ diagram.deactivateTool();
 
 
 
-#### exportDiagram<span class="signature">(options)</span>
+### exportDiagram<span class="signature">(options)</span>
 
 
 
@@ -13358,7 +13636,8 @@ Export the diagram as downloadable files or as data
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -13377,7 +13656,7 @@ diagram.exportDiagram(options);
 
 
 
-#### fitToPage<span class="signature">(mode, region, margin)</span>
+### fitToPage<span class="signature">(mode, region, margin)</span>
 
 
 
@@ -13418,7 +13697,8 @@ Fit the diagram content into diagram viewport
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>         
@@ -13434,7 +13714,7 @@ diagram.fitToPage(mode,region,margin);
 
 
 
-#### group<span class="signature">()</span>
+### group<span class="signature">()</span>
 
 
 
@@ -13449,7 +13729,8 @@ Group the selected nodes and connectors
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13464,7 +13745,7 @@ diagram.group();
 
 
 
-#### layout<span class="signature">()</span>
+### layout<span class="signature">()</span>
 
 
 
@@ -13493,7 +13774,8 @@ Refresh the diagram with the specified layout
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13508,7 +13790,7 @@ diagram.layout();
 
 
 
-#### load<span class="signature">(data)</span>
+### load<span class="signature">(data)</span>
 
 
 
@@ -13539,7 +13821,8 @@ Load the diagram .
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13554,7 +13837,7 @@ diagram.load(data);
 
 
 
-#### moveForward<span class="signature">()</span>
+### moveForward<span class="signature">()</span>
 
 
 
@@ -13569,7 +13852,8 @@ Increase the Z-index value of selected object by 1
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13584,7 +13868,7 @@ diagram.moveForward();
 
 
 
-#### nudge<span class="signature">(direction, delta)</span>
+### nudge<span class="signature">(direction, delta)</span>
 
 
 
@@ -13620,7 +13904,8 @@ Executes nudge command to move selected node/connector by one pixel/specified pi
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13635,7 +13920,7 @@ diagram.nudge("direction", 5);
 
 
 
-#### paste<span class="signature">()</span>
+### paste<span class="signature">()</span>
 
 
 
@@ -13650,7 +13935,8 @@ Paste the selected object from internal clipboard to diagram
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13665,7 +13951,7 @@ diagram.paste();
 
 
 
-#### print<span class="signature">()</span>
+### print<span class="signature">()</span>
 
 
 
@@ -13680,7 +13966,8 @@ Print the diagram as image .
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -13696,7 +13983,7 @@ diagram.print();
 
 
 
-#### redo<span class="signature">()</span>
+### redo<span class="signature">()</span>
 
 
 
@@ -13711,7 +13998,8 @@ Restore the last action that was performed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13726,7 +14014,7 @@ diagram.redo();
 
 
 
-#### remove<span class="signature">(node)</span>
+### remove<span class="signature">(node)</span>
 
 
 
@@ -13757,7 +14045,8 @@ Remove the either given node/connector or the selected element from diagram
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13772,7 +14061,7 @@ diagram.remove();
 
 
 
-#### sameHeight<span class="signature">()</span>
+### sameHeight<span class="signature">()</span>
 
 
 
@@ -13787,7 +14076,8 @@ Update the height of the objects in the selection list to the height of first ob
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -13803,7 +14093,7 @@ diagram.sameHeight();
 
 
 
-#### sameSize<span class="signature">()</span>
+### sameSize<span class="signature">()</span>
 
 
 
@@ -13818,7 +14108,8 @@ Update the size of the objects in the selection list to the size of first object
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -13834,7 +14125,7 @@ diagram.sameSize();
 
 
 
-#### sameWidth<span class="signature">()</span>
+### sameWidth<span class="signature">()</span>
 
 
 
@@ -13849,7 +14140,8 @@ Update the width of the objects in the selection list to the width of first obje
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -13865,7 +14157,7 @@ diagram.sameWidth();
 
 
 
-#### save<span class="signature">()</span>
+### save<span class="signature">()</span>
 
 
 
@@ -13894,7 +14186,8 @@ Save the diagram .
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13909,7 +14202,7 @@ diagram.save();
 
 
 
-#### scrollToNode<span class="signature">(node)</span>
+### scrollToNode<span class="signature">(node)</span>
 
 
 
@@ -13940,7 +14233,8 @@ Bring the node into view
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13956,7 +14250,7 @@ diagram.scrollToNode(node);
 
 
 
-#### selectAll<span class="signature">()</span>
+### selectAll<span class="signature">()</span>
 
 
 
@@ -13971,7 +14265,8 @@ Select all nodes and connector in diagram
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -13986,7 +14281,7 @@ diagram.selectAll();
 
 
 
-#### sendBackward<span class="signature">()</span>
+### sendBackward<span class="signature">()</span>
 
 
 
@@ -14001,7 +14296,8 @@ Decrease the Z-index value of selected object by 1
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14016,7 +14312,7 @@ diagram.sendBackward();
 
 
 
-#### sendToBack<span class="signature">()</span>
+### sendToBack<span class="signature">()</span>
 
 
 
@@ -14031,7 +14327,8 @@ Move the selected object behind all other intersected objects
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14046,7 +14343,7 @@ diagram.sendToBack();
 
 
 
-#### spaceAcross<span class="signature">()</span>
+### spaceAcross<span class="signature">()</span>
 
 
 
@@ -14061,7 +14358,8 @@ Update horizontal space between the objects as equal and within selection bounda
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14076,7 +14374,7 @@ diagram.spaceAcross();
 
 
 
-#### spaceDown<span class="signature">()</span>
+### spaceDown<span class="signature">()</span>
 
 
 
@@ -14091,7 +14389,8 @@ Update vertical space between the objects as equal and within the selection boun
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>        
@@ -14107,7 +14406,7 @@ diagram.spaceDown();
 
 
 
-#### startLabelEdit<span class="signature">(node, label)</span>
+### startLabelEdit<span class="signature">(node, label)</span>
 
 
 
@@ -14143,7 +14442,8 @@ Start the editing of the specified label of the given node
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14159,7 +14459,7 @@ diagram.startLabelEdit(node,node.labels[0]);
 
 
 
-#### undo<span class="signature">()</span>
+### undo<span class="signature">()</span>
 
 
 
@@ -14174,7 +14474,8 @@ Reverse the last action that was performed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14189,7 +14490,7 @@ diagram.undo();
 
 
 
-#### ungroup<span class="signature">()</span>
+### ungroup<span class="signature">()</span>
 
 
 
@@ -14204,7 +14505,8 @@ Ungroup the selected group
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14219,7 +14521,7 @@ diagram.ungroup();
 
 
 
-#### update<span class="signature">(name, options)</span>
+### update<span class="signature">(name, options)</span>
 
 
 
@@ -14255,7 +14557,8 @@ Update Diagram with its specific properties
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14271,7 +14574,7 @@ diagram.updateDiagram(diagram.name, { constraints: value });
 
 
 
-#### updateConnector<span class="signature">(name, options)</span>
+### updateConnector<span class="signature">(name, options)</span>
 
 
 
@@ -14307,7 +14610,8 @@ Update Connector with their its properties
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14323,7 +14627,7 @@ diagram.updateConnector(connector.name, { constraints: value });
 
 
 
-#### updateLabel<span class="signature">(nodeName, label, obj)</span>
+### updateLabel<span class="signature">(nodeName, label, obj)</span>
 
 
 
@@ -14364,7 +14668,8 @@ Update the given label with its specific properties
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14382,7 +14687,7 @@ diagram.updateLabel(node.name,node.labels[0],label);
 
 
 
-#### updateNode<span class="signature">(name, options)</span>
+### updateNode<span class="signature">(name, options)</span>
 
 
 
@@ -14418,7 +14723,8 @@ Update Node with its specific properties
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14434,7 +14740,7 @@ diagram.updateNode(node.name, { constraints: value });
 
 
 
-#### updateSelectedObject<span class="signature">(name)</span>
+### updateSelectedObject<span class="signature">(name)</span>
 
 
 
@@ -14465,7 +14771,8 @@ Update the specified node as selected object.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14480,7 +14787,7 @@ diagram.updateSelectedObject(name);
 
 
 
-#### updateSelection<span class="signature">(isDragging)</span>
+### updateSelection<span class="signature">(isDragging)</span>
 
 
 
@@ -14511,7 +14818,8 @@ Update the selection of target node/connector
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14526,7 +14834,7 @@ diagram.updateSelection(true);
 
 
 
-#### updateUserHandles<span class="signature">(node)</span>
+### updateUserHandles<span class="signature">(node)</span>
 
 
 
@@ -14557,7 +14865,8 @@ Update userhandles with respect to the given node
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14573,7 +14882,7 @@ diagram.updateUSerHandles(node);
 
 
 
-#### updateViewPort<span class="signature">()</span>
+### updateViewPort<span class="signature">()</span>
 
 
 
@@ -14588,7 +14897,8 @@ To update viewport when window resize
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14603,7 +14913,7 @@ diagram.updateViewPort();
 
 
 
-#### upgrade<span class="signature">(data)</span>
+### upgrade<span class="signature">(data)</span>
 
 
 
@@ -14634,7 +14944,8 @@ To Upgrade the diagram from old version .
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14650,7 +14961,7 @@ diagram.load(jsonData);
 
 
 
-#### zoomTo<span class="signature">(zoom)</span>
+### zoomTo<span class="signature">(zoom)</span>
 
 
 
@@ -14681,7 +14992,8 @@ Used to zoomIn/zoomOut diagram
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
@@ -14697,7 +15009,7 @@ diagram.zoomTo(zoom);
 
 
 
-### Events
+## Events
 
 
 
@@ -14706,7 +15018,7 @@ diagram.zoomTo(zoom);
 
 
 
-#### autoScrollChange
+### autoScrollChange
 
 
 
@@ -14742,7 +15054,8 @@ Triggers When auto scroll is changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// autoScrollChange event for diagram
@@ -14756,7 +15069,7 @@ autoScrollChange:function (args)  {}
 
 
 
-#### click
+### click
 
 
 
@@ -14804,7 +15117,8 @@ Triggers when click node/connector
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  click event for diagram
@@ -14818,7 +15132,7 @@ click:function (args)  {}
 
 
 
-#### connectionChange
+### connectionChange
 
 
 
@@ -14876,7 +15190,8 @@ Triggers when the connection is changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// connectionChange event for diagram
@@ -14890,7 +15205,7 @@ connectionChange:function (args)  {}
 
 
 
-#### connectorCollectionChange
+### connectorCollectionChange
 
 
 
@@ -14943,7 +15258,8 @@ Triggers When connector collection is changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// connectorCollectionChange event for diagram
@@ -14957,7 +15273,7 @@ connectorCollectionChange:function (args) {}
 
 
 
-#### connectorSourceChange
+### connectorSourceChange
 
 
 
@@ -14998,7 +15314,8 @@ Triggers when the connectors' source point is changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// connectorSourceChange event for diagram
@@ -15012,7 +15329,7 @@ connectorSourceChange:function (args)  {}
 
 
 
-#### connectorTargetChange
+### connectorTargetChange
 
 
 
@@ -15053,7 +15370,8 @@ Triggers when the connectors target point is changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// connectorTargetChange event for diagram
@@ -15067,7 +15385,7 @@ connectorTargetChange:function (args)  {}
 
 
 
-#### contextMenuBeforeOpen
+### contextMenuBeforeOpen
 
 
 
@@ -15098,7 +15416,8 @@ Triggers before open the context menu
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// contextMenuBeforeOpen event for diagram
@@ -15112,7 +15431,7 @@ contextMenuBeforeOpen:function (args)  {}
 
 
 
-#### contextMenuClick
+### contextMenuClick
 
 
 
@@ -15143,7 +15462,8 @@ Triggers when context menu item is clicked
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// contextMenuClick event for diagram
@@ -15157,7 +15477,7 @@ contextMenuClick:function (args)  {}
 
 
 
-#### doubleClick
+### doubleClick
 
 
 
@@ -15210,7 +15530,8 @@ Triggers when doubleClick node/connector
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  doubleClick event for diagram
@@ -15224,7 +15545,7 @@ doubleClick:function (args)  {}
 
 
 
-#### drag
+### drag
 
 
 
@@ -15272,7 +15593,8 @@ Triggers while dragging the elements in diagram
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  deag event for diagram
@@ -15286,7 +15608,7 @@ drag:function (args)  {}
 
 
 
-#### drop
+### drop
 
 
 
@@ -15334,7 +15656,8 @@ Triggers when drag and drop symbols from palette to drawing area
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  drop event for diagram
@@ -15348,7 +15671,7 @@ drop:function (args)  {}
 
 
 
-#### itemClick
+### itemClick
 
 
 
@@ -15411,7 +15734,8 @@ Triggers when the diagram/diagram element is clicked
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// itemClick event for diagram
@@ -15425,7 +15749,7 @@ itemClick:function (args) {}
 
 
 
-#### mouseEnter
+### mouseEnter
 
 
 
@@ -15483,7 +15807,8 @@ Triggers When mouse enter node/connector
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  mouseEnter event for diagram
@@ -15497,7 +15822,7 @@ mouseEnter:function (args)  {}
 
 
 
-#### mouseLeave
+### mouseLeave
 
 
 
@@ -15555,7 +15880,8 @@ Triggers When mouse leaves node/connector
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  mouseLeave event for diagram
@@ -15569,7 +15895,7 @@ mouseLeave:function (args)  {}
 
 
 
-#### mouseOver
+### mouseOver
 
 
 
@@ -15627,7 +15953,8 @@ Triggers when mouse hover on node/connector
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  mouseOver event for diagram
@@ -15641,7 +15968,7 @@ mouseOver:function (args)  {}
 
 
 
-#### nodeCollectionChange
+### nodeCollectionChange
 
 
 
@@ -15694,7 +16021,8 @@ Triggers When node collection is changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// nodeCollectionChange event for diagram
@@ -15708,7 +16036,7 @@ nodeCollectionChange:function (args)  {}
 
 
 
-#### nodeSizeChange
+### nodeSizeChange
 
 
 
@@ -15766,7 +16094,8 @@ Triggers When node size has been changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// sizeChange event for diagram
@@ -15780,7 +16109,7 @@ sizeChange:function (args)  {}
 
 
 
-#### rotationChange
+### rotationChange
 
 
 
@@ -15833,7 +16162,8 @@ Triggers when the element is rotated
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// rotationChange event for diagram
@@ -15847,7 +16177,7 @@ rotationChange:function (args)  {}
 
 
 
-#### selectionChanged
+### selectionChanged
 
 
 
@@ -15900,7 +16230,8 @@ Triggers When selection is changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  selectionChange event for diagram
@@ -15914,7 +16245,7 @@ selectionChange:function (args)  {}
 
 
 
-#### textchanged
+### textchanged
 
 
 
@@ -15967,7 +16298,8 @@ Triggers When label editing is ended
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// textChanged event for diagram

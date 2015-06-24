@@ -18,7 +18,7 @@ The TagCloud allows the user to display a list of links or tags with a structure
 
 
 
-#### $(element).ejTagCloud<span class="signature">()</span>
+## $(element).ejTagCloud<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ The TagCloud allows the user to display a list of links or tags with a structure
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -54,7 +55,7 @@ $(function () {
 
 
 
-### Requires
+## Requires
 
 
 
@@ -73,7 +74,7 @@ $(function () {
 
 
 
-### Members
+## Members
 
 
 
@@ -82,7 +83,7 @@ $(function () {
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -113,7 +114,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -130,7 +132,7 @@ Default Value:
 
 
 
-#### dataSource<span class="type-signature type object">object</span>
+### dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -161,7 +163,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -178,7 +181,7 @@ $("#tagcloud").ejTagCloud({ dataSource: window.websiteCollection,titleText: "Tec
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -209,7 +212,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -226,7 +230,7 @@ Default Value:
 
 
 
-#### fields<span class="type-signature type object">Object</span>
+### fields<span class="type-signature type object">Object</span>
 
 
 
@@ -257,7 +261,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -280,7 +285,7 @@ fields: { text: "text" , url:"url",frequency: "frequency"}
 
 
 
-#### fields.frequency<span class="type-signature type number">Number</span>
+### fields.frequency<span class="type-signature type number">Number</span>
 
 
 
@@ -301,7 +306,7 @@ Defines the frequency number to categorize the font size.
 
 
 
-#### fields.htmlAttributes<span class="type-signature type object">Object</span>
+### fields.htmlAttributes<span class="type-signature type object">Object</span>
 
 
 
@@ -322,7 +327,7 @@ Defines the html attributes for the anchor elements inside the each tag items.
 
 
 
-#### fields.text<span class="type-signature type string">String</span>
+### fields.text<span class="type-signature type string">String</span>
 
 
 
@@ -343,7 +348,7 @@ Defines the tag value or display text.
 
 
 
-#### fields.url<span class="type-signature type string">String</span>
+### fields.url<span class="type-signature type string">String</span>
 
 
 
@@ -364,7 +369,7 @@ Defines the url link to navigate while click the tag.
 
 
 
-#### format<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### format<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
 
 
 
@@ -395,7 +400,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -412,7 +418,7 @@ Default Value:
 
 
 
-#### maxFontSize<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### maxFontSize<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -443,7 +449,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -460,7 +467,7 @@ Default Value:
 
 
 
-#### minFontSize<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### minFontSize<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -491,7 +498,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -508,7 +516,7 @@ Default Value:
 
 
 
-#### query<span class="type-signature type object">object</span>
+### query<span class="type-signature type object">object</span>
 
 
 
@@ -539,7 +547,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -565,7 +574,7 @@ $("#tagcloud").ejTagCloud({
 
 
 
-#### showTitle<span class="type-signature type boolean">boolean</span>
+### showTitle<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -596,7 +605,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -613,7 +623,7 @@ Default Value:
 
 
 
-#### titleImage<span class="type-signature type string">string</span>
+### titleImage<span class="type-signature type string">string</span>
 
 
 
@@ -644,7 +654,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -661,7 +672,7 @@ Default Value:
 
 
 
-#### titleText<span class="type-signature type string">string</span>
+### titleText<span class="type-signature type string">string</span>
 
 
 
@@ -692,7 +703,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -707,7 +719,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -716,7 +728,7 @@ Default Value:
 
 
 
-#### insert<span class="signature">()</span>
+### insert<span class="signature">()</span>
 
 
 
@@ -731,7 +743,8 @@ Inserts a new item into the TagCloud
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -776,7 +789,7 @@ $("#tagcloud").ejTagCloud("insert", tag);
 
 
 
-#### insertAt<span class="signature">()</span>
+### insertAt<span class="signature">()</span>
 
 
 
@@ -791,7 +804,8 @@ Inserts a new item into the TagCloud at a particular position.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -833,7 +847,7 @@ $("#tagcloud").ejTagCloud("insertAt", tag, 2);
 
 
 
-#### remove<span class="signature">(name)</span>
+### remove<span class="signature">(name)</span>
 
 
 
@@ -864,7 +878,8 @@ Removes the item from the TagCloud based on the name. It removes all the tags wh
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -910,7 +925,7 @@ $("#tagcloud").ejTagCloud("remove", tag);
 
 
 
-#### removeAt<span class="signature">(position)</span>
+### removeAt<span class="signature">(position)</span>
 
 
 
@@ -941,7 +956,8 @@ Removes the item from the TagCloud based on the position. It removes the tags fr
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -982,7 +998,7 @@ $("#tagcloud").ejTagCloud("removeAt", 4);
 
 
 
-### Events
+## Events
 
 
 
@@ -991,7 +1007,7 @@ $("#tagcloud").ejTagCloud("removeAt", 4);
 
 
 
-#### click
+### click
 
 
 
@@ -1059,7 +1075,8 @@ Event triggers when the TagCloud items are clicked
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1080,7 +1097,7 @@ $("#tagcloud").ejTagCloud({
 
 
 
-#### create
+### create
 
 
 
@@ -1138,7 +1155,8 @@ Event triggers when the TagCloud are created
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1159,7 +1177,7 @@ $("#tagcloud").ejTagCloud({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1217,7 +1235,8 @@ Event triggers when the TagCloud are destroyed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1238,7 +1257,7 @@ $("#tagcloud").ejTagCloud({
 
 
 
-#### mouseout
+### mouseout
 
 
 
@@ -1306,7 +1325,8 @@ Event triggers when the cursor leaves out from a tag item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1327,7 +1347,7 @@ $("#tagcloud").ejTagCloud({
 
 
 
-#### mouseover
+### mouseover
 
 
 
@@ -1395,7 +1415,8 @@ Event triggers when the cursor hovers on a tag item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

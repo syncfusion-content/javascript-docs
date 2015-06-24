@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Footer control.
+# Custom Design for Html Footer control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Footer control.
 
 
 
-#### $(element).ejmFooter<span class="signature">()</span>
+## $(element).ejmFooter<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Footer control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -51,7 +52,7 @@ $("#footer").ejmFooter();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -82,7 +83,7 @@ $("#footer").ejmFooter();
 
 
 
-### Members
+## Members
 
 
 
@@ -91,7 +92,7 @@ $("#footer").ejmFooter();
 
 
 
-#### android
+### android
 
 
 
@@ -112,7 +113,7 @@ Section for android rendermode specific functionalities.
 
 
 
-#### android.leftButtonStyle<span class="type-signature type enum">enum</span>
+### android.leftButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -143,7 +144,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -178,7 +180,7 @@ $("#footer").ejmFooter({"android":{"leftButtonStyle": "back"}})
 
 
 
-#### android.rightButtonStyle<span class="type-signature type enum">enum</span>
+### android.rightButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -209,7 +211,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -244,7 +247,7 @@ $("#footer").ejmFooter({"android":{"rightButtonStyle": "normal"}})
 
 
 
-#### android.showLeftButton<span class="type-signature type boolean">boolean</span>
+### android.showLeftButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -275,7 +278,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -307,7 +311,7 @@ $("#footer").ejmFooter ("option", "android.showLeftButton", true);              
 
 
 
-#### android.showRightButton<span class="type-signature type boolean">boolean</span>
+### android.showRightButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -338,7 +342,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -370,7 +375,7 @@ $("#footer").ejmFooter ("option", "android.showRightButton", true);             
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -401,7 +406,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -432,7 +438,7 @@ $("#footer").ejmFooter ("option", "cssClass", "customclass");                   
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -463,7 +469,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -494,7 +501,7 @@ $("#footer").ejmFooter ("option", "enablePersistence", true);                   
 
 
 
-#### flat
+### flat
 
 
 
@@ -515,7 +522,7 @@ Section for flat rendermode specific functionalities.
 
 
 
-#### flat.leftButtonStyle<span class="type-signature type enum">enum</span>
+### flat.leftButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -546,7 +553,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -581,7 +589,7 @@ $("#footer").ejmFooter({"flat":{"leftButtonStyle": "back"}})
 
 
 
-#### flat.rightButtonStyle<span class="type-signature type enum">enum</span>
+### flat.rightButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -612,7 +620,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -647,7 +656,7 @@ $("#footer").ejmFooter({"flat":{"rightButtonStyle": "normal"}})
 
 
 
-#### flat.showLeftButton<span class="type-signature type boolean">boolean</span>
+### flat.showLeftButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -678,7 +687,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -710,7 +720,7 @@ $("#footer").ejmFooter ("option", "flat.showLeftButton", true);                 
 
 
 
-#### flat.showRightButton<span class="type-signature type boolean">boolean</span>
+### flat.showRightButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -741,7 +751,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -773,7 +784,7 @@ $("#footer").ejmFooter ("option", "flat.showRightButton", true);                
 
 
 
-#### hideForUnSupportedDevice<span class="type-signature type boolean">boolean</span>
+### hideForUnSupportedDevice<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -804,7 +815,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -836,7 +848,7 @@ $("#footer").ejmFooter ("option", "hideForUnSupportedDevice", "footer");        
 
 
 
-#### ios7
+### ios7
 
 
 
@@ -857,7 +869,7 @@ Section for ios7 rendermode specific functionalities.
 
 
 
-#### ios7.leftButtonStyle<span class="type-signature type enum">enum</span>
+### ios7.leftButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -888,7 +900,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -923,7 +936,7 @@ $("#footer").ejmFooter({"ios7":{"leftButtonStyle": "back"}})
 
 
 
-#### ios7.rightButtonStyle<span class="type-signature type enum">enum</span>
+### ios7.rightButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -954,7 +967,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -989,7 +1003,7 @@ $("#footer").ejmFooter({"ios7":{"rightButtonStyle": "normal"}})
 
 
 
-#### ios7.showLeftButton<span class="type-signature type boolean">boolean</span>
+### ios7.showLeftButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1020,7 +1034,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1052,7 +1067,7 @@ $("#footer").ejmFooter ("option", "ios7.showLeftButton", true);                 
 
 
 
-#### ios7.showRightButton<span class="type-signature type boolean">boolean</span>
+### ios7.showRightButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1083,7 +1098,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1115,7 +1131,7 @@ $("#footer").ejmFooter ("option", "ios7.showRightButton", true);                
 
 
 
-#### leftButtonCaption<span class="type-signature type string">string</span>
+### leftButtonCaption<span class="type-signature type string">string</span>
 
 
 
@@ -1146,7 +1162,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1178,7 +1195,7 @@ $("#footer").ejmFooter ("option", "leftButtonCaption", "Home");                 
 
 
 
-#### leftButtonNavigationUrl<span class="type-signature type string">string</span>
+### leftButtonNavigationUrl<span class="type-signature type string">string</span>
 
 
 
@@ -1209,7 +1226,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1241,7 +1259,7 @@ $("#footer").ejmFooter ("option", "leftButtonNavigationUrl", "footer");         
 
 
 
-#### leftButtonStyle<span class="type-signature type enum">enum</span>
+### leftButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -1272,7 +1290,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1306,7 +1325,7 @@ $("#footer").ejmFooter ("option", "leftButtonStyle","normal"); </code>
 
 
 
-#### position<span class="type-signature type enum">enum</span>
+### position<span class="type-signature type enum">enum</span>
 
 
 
@@ -1337,7 +1356,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1370,7 +1390,7 @@ $("#footer").ejmFooter ("option", "position", ej.mobile.Footer.Position.Fixed); 
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -1401,7 +1421,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1434,7 +1455,7 @@ $("#footer").ejmFooter ("option", "renderMode", ej.mobile.RenderMode.Auto);     
 
 
 
-#### rightButtonCaption<span class="type-signature type string">string</span>
+### rightButtonCaption<span class="type-signature type string">string</span>
 
 
 
@@ -1465,7 +1486,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1497,7 +1519,7 @@ $("#footer").ejmFooter ("option", "rightButtonCaption", "Next");                
 
 
 
-#### rightButtonNavigationUrl<span class="type-signature type string">string</span>
+### rightButtonNavigationUrl<span class="type-signature type string">string</span>
 
 
 
@@ -1528,7 +1550,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1560,7 +1583,7 @@ $("#footer").ejmFooter ("option", "rightButtonNavigationUrl", "footer");</code>
 
 
 
-#### rightButtonStyle<span class="type-signature type enum">enum</span>
+### rightButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -1575,7 +1598,8 @@ Specifies the style for the right button i.e. back button or normal button. See 
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1609,7 +1633,7 @@ $("#footer").ejmFooter ("option", "rightButtonStyle","normal");                 
 
 
 
-#### showLeftButton<span class="type-signature type boolean">boolean</span>
+### showLeftButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1640,7 +1664,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1671,7 +1696,7 @@ $("#footer").ejmFooter ("option", "showLeftButton", "true");                    
 
 
 
-#### showRightButton<span class="type-signature type boolean">boolean</span>
+### showRightButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1702,7 +1727,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1733,7 +1759,7 @@ $("#footer").ejmFooter ("option", "showRightButton", true);                     
 
 
 
-#### showTitle<span class="type-signature type boolean">boolean</span>
+### showTitle<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1764,7 +1790,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1795,7 +1822,7 @@ $("#footer").ejmFooter ("option", "showTitle", false);                          
 
 
 
-#### templateId<span class="type-signature type string">string</span>
+### templateId<span class="type-signature type string">string</span>
 
 
 
@@ -1826,7 +1853,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1840,7 +1868,7 @@ Default Value:
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -1871,7 +1899,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1904,7 +1933,7 @@ $("#footer").ejmFooter ("option", "theme", ej.mobile.Theme.Auto );              
 
 
 
-#### title<span class="type-signature type string">string</span>
+### title<span class="type-signature type string">string</span>
 
 
 
@@ -1935,7 +1964,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1966,7 +1996,7 @@ $("#footer").ejmFooter ("option", "title", "Footer");                   </code>
 
 
 
-#### windows
+### windows
 
 
 
@@ -1987,7 +2017,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-#### windows.leftButtonStyle<span class="type-signature type enum">enum</span>
+### windows.leftButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -2018,7 +2048,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2053,7 +2084,7 @@ $("#footer").ejmFooter({"windows":{"leftButtonStyle": "back"}})
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2084,7 +2115,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2098,7 +2130,7 @@ Default Value:
 
 
 
-#### windows.rightButtonStyle<span class="type-signature type enum">enum</span>
+### windows.rightButtonStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -2129,7 +2161,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2164,7 +2197,7 @@ $("#footer").ejmFooter({"windows":{"rightButtonStyle": "normal"}})
 
 
 
-#### windows.showLeftButton<span class="type-signature type boolean">boolean</span>
+### windows.showLeftButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2195,7 +2228,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2227,7 +2261,7 @@ $("#footer").ejmFooter ("option", "windows.showLeftButton", true);              
 
 
 
-#### windows.showRightButton<span class="type-signature type boolean">boolean</span>
+### windows.showRightButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2258,7 +2292,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2288,7 +2323,7 @@ $("#footer").ejmFooter ("option", "windows.showRightButton", true);             
 
 
 
-### Methods
+## Methods
 
 
 
@@ -2297,7 +2332,7 @@ $("#footer").ejmFooter ("option", "windows.showRightButton", true);             
 
 
 
-#### getTitle<span class="signature">()</span>
+### getTitle<span class="signature">()</span>
 
 
 
@@ -2312,7 +2347,8 @@ To get the footer's text
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2340,7 +2376,7 @@ $("#footer").ejmFooter("getTitle");
 
 
 
-### Events
+## Events
 
 
 
@@ -2349,7 +2385,7 @@ $("#footer").ejmFooter("getTitle");
 
 
 
-#### leftButtonTap
+### leftButtonTap
 
 
 
@@ -2395,7 +2431,8 @@ Event triggers when the left button is tapped. <a href="ejmFooter.html#showLeftB
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2422,7 +2459,7 @@ $("#footer").ejmFooter({showLeftButton:true, leftButtonTap:"test"});
 
 
 
-#### rightButtonTap
+### rightButtonTap
 
 
 
@@ -2468,7 +2505,8 @@ Event triggers when the right button is tapped. <a href="ejmFooter.html#showRigh
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

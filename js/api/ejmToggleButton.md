@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html ToggleButton control.
+# Custom Design for Html ToggleButton control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html ToggleButton control.
 
 
 
-#### $(element).ejmToggleButton<span class="signature">()</span>
+## $(element).ejmToggleButton<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html ToggleButton control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -51,7 +52,7 @@ $("#togglebutton").ejmToggleButton();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -79,7 +80,7 @@ $("#togglebutton").ejmToggleButton();
 
 
 
-### Members
+## Members
 
 
 
@@ -88,7 +89,7 @@ $("#togglebutton").ejmToggleButton();
 
 
 
-#### animate<span class="type-signature type boolean">boolean</span>
+### animate<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -119,7 +120,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -152,7 +154,7 @@ $("#togglebutton").ejmToggleButton ("option", "animate", true);
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -183,7 +185,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -216,7 +219,7 @@ $("#togglebutton").ejmToggleButton ("option", "cssClass", "customclass");
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -247,7 +250,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -280,7 +284,7 @@ $("#togglebutton").ejmToggleButton ("option", "enabled", true);
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -311,7 +315,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -344,7 +349,7 @@ $("#togglebutton").ejmToggleButton ("option", "enablePersistence", false);
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -375,7 +380,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -410,7 +416,7 @@ $("#togglebutton").ejmToggleButton ("option", "renderMode", ej.mobile.RenderMode
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -441,7 +447,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -476,7 +483,7 @@ $("#togglebutton").ejmToggleButton ("option", "theme", ej.mobile.Theme.Auto);
 
 
 
-#### toggleState<span class="type-signature type boolean">boolean</span>
+### toggleState<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -507,7 +514,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -540,7 +548,7 @@ $("#togglebutton").ejmToggleButton ("option", "toggleState", true);
 
 
 
-#### windows
+### windows
 
 
 
@@ -561,7 +569,7 @@ Section for windows mode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -592,7 +600,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -623,7 +632,7 @@ $("#togglebutton").ejmToggleButton("option", "windows.renderDefault", false);
 
 
 
-### Methods
+## Methods
 
 
 
@@ -632,7 +641,7 @@ $("#togglebutton").ejmToggleButton("option", "windows.renderDefault", false);
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -647,7 +656,8 @@ To disable the togglebutton.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -676,7 +686,7 @@ $("#togglebutton").ejmToggleButton("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -691,7 +701,8 @@ To enable the togglebutton.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -718,7 +729,7 @@ $("#togglebutton").ejmToggleButton("enable");
 
 
 
-### Events
+## Events
 
 
 
@@ -727,7 +738,7 @@ $("#togglebutton").ejmToggleButton("enable");
 
 
 
-#### change
+### change
 
 
 
@@ -790,7 +801,8 @@ Event triggers when the state change occurs.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -818,7 +830,7 @@ change: function (args) { //handle the event
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -881,7 +893,8 @@ Event triggers when touch end happens on the control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -909,7 +922,7 @@ touchEnd: function (args) { //handle the event
 
 
 
-#### touchStart
+### touchStart
 
 
 
@@ -972,7 +985,8 @@ Event triggers when touch start happens on the control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

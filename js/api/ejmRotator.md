@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Rotator control.
+# Custom Design for Html Rotator control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Rotator control.
 
 
 
-#### $(element).ejmRotator<span class="signature">()</span>
+## $(element).ejmRotator<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Rotator control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Render rotator in unobtrusive way
@@ -82,7 +83,7 @@ $("#rotator").ejmRotator({ targetId: "rotatorcontent" });
 
 
 
-### Requires
+## Requires
 
 
 
@@ -113,7 +114,7 @@ $("#rotator").ejmRotator({ targetId: "rotatorcontent" });
 
 
 
-### Members
+## Members
 
 
 
@@ -122,7 +123,7 @@ $("#rotator").ejmRotator({ targetId: "rotatorcontent" });
 
 
 
-#### adjustFixedPosition<span class="type-signature type boolean">boolean</span>
+### adjustFixedPosition<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -153,7 +154,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -215,7 +217,7 @@ $("#rotator").ejmRotator ("option", "adjustFixedPosition", true);            </c
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -246,7 +248,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -308,7 +311,7 @@ $("#rotator").ejmRotator ("option", "cssClass", "customclass");            </cod
 
 
 
-#### currentItemIndex<span class="type-signature type number">number</span>
+### currentItemIndex<span class="type-signature type number">number</span>
 
 
 
@@ -339,7 +342,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -401,7 +405,7 @@ $("#rotator").ejmRotator ("option", "currentItemIndex", 0);            </code>
 
 
 
-#### dataBinding<span class="type-signature type boolean">boolean</span>
+### dataBinding<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -432,7 +436,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -494,7 +499,7 @@ $("#rotator").ejmRotator ("option", "dataBinding", false);                      
 
 
 
-#### dataSource<span class="type-signature type data">data</span>
+### dataSource<span class="type-signature type data">data</span>
 
 
 
@@ -525,7 +530,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -569,7 +575,7 @@ $("#rotator").ejmRotator ("option", "dataSource", "window.imgdata");            
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -600,7 +606,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -662,7 +669,7 @@ $("#rotator").ejmRotator ("option", "enablePersistence", true);            </cod
 
 
 
-#### headerTitle<span class="type-signature type string">string</span>
+### headerTitle<span class="type-signature type string">string</span>
 
 
 
@@ -693,7 +700,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -755,7 +763,7 @@ $("#rotator").ejmRotator ("option", "headerTitle", "Title");            </code>
 
 
 
-#### orientation<span class="type-signature type enum">enum</span>
+### orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -786,7 +794,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -850,7 +859,7 @@ $("#rotator").ejmRotator ("option", "orientation", ej.mobile.Rotator.Orientation
 
 
 
-#### pagerPosition
+### pagerPosition
 
 
 
@@ -871,7 +880,7 @@ Section for pagerPosition specific functionalities.
 
 
 
-#### pagerPosition.horizontal<span class="type-signature type enum">enum</span>
+### pagerPosition.horizontal<span class="type-signature type enum">enum</span>
 
 
 
@@ -902,7 +911,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -966,7 +976,7 @@ $("#rotator").ejmRotator ("option", "pagerPosition.horizontal", ej.mobile.Rotato
 
 
 
-#### pagerPosition.vertical<span class="type-signature type enum">enum</span>
+### pagerPosition.vertical<span class="type-signature type enum">enum</span>
 
 
 
@@ -997,7 +1007,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1061,7 +1072,7 @@ $("#rotator").ejmRotator ("option", "pagerPosition.vertical", ej.mobile.Rotator.
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -1092,7 +1103,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1156,7 +1168,7 @@ $("#rotator").ejmRotator ("option", "renderMode", ej.mobile.RenderMode.Auto);   
 
 
 
-#### showHeader<span class="type-signature type boolean">boolean</span>
+### showHeader<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1187,7 +1199,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1249,7 +1262,7 @@ $("#rotator").ejmRotator ("option", "showHeader", false);            </code>
 
 
 
-#### showPager<span class="type-signature type boolean">boolean</span>
+### showPager<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1280,7 +1293,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1342,7 +1356,7 @@ $("#rotator").ejmRotator ("option", "showPager", true);            </code>
 
 
 
-#### targetHeight<span class="type-signature type string">string</span>
+### targetHeight<span class="type-signature type string">string</span>
 
 
 
@@ -1373,7 +1387,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1435,7 +1450,7 @@ $("#rotator").ejmRotator ("option", "targetHeight", "auto");            </code>
 
 
 
-#### targetId<span class="type-signature type string">string</span>
+### targetId<span class="type-signature type string">string</span>
 
 
 
@@ -1466,7 +1481,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1527,7 +1543,7 @@ $("#rotator").ejmRotator ("option", "targetId", "rotatorcontent");            </
 
 
 
-#### targetWidth<span class="type-signature type string">string</span>
+### targetWidth<span class="type-signature type string">string</span>
 
 
 
@@ -1558,7 +1574,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1620,7 +1637,7 @@ $("#rotator").ejmRotator ("option", "targetWidth", "auto");            </code>
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -1651,7 +1668,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1715,7 +1733,7 @@ $("#rotator").ejmRotator ("option", "theme", ej.mobile.Theme.Light);            
 
 
 
-#### windows
+### windows
 
 
 
@@ -1736,7 +1754,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1767,7 +1785,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1828,7 +1847,7 @@ $("#rotator").ejmRotator ("option", "windows.renderDefault", true);            <
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1837,7 +1856,7 @@ $("#rotator").ejmRotator ("option", "windows.renderDefault", true);            <
 
 
 
-#### renderDatasource<span class="signature">()</span>
+### renderDatasource<span class="signature">()</span>
 
 
 
@@ -1852,7 +1871,8 @@ To handle the rotator datasource
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -1891,7 +1911,7 @@ $("#rotator").ejmRotator("renderDatasource", imgdata);
 
 
 
-### Events
+## Events
 
 
 
@@ -1900,7 +1920,7 @@ $("#rotator").ejmRotator("renderDatasource", imgdata);
 
 
 
-#### change
+### change
 
 
 
@@ -1951,7 +1971,8 @@ Event triggers when the rotator changes from one slide to another slide
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2013,7 +2034,7 @@ $("#rotator").ejmRotator({
 
 
 
-#### pagerSelect
+### pagerSelect
 
 
 
@@ -2064,7 +2085,8 @@ Event triggers when the rotator's pager clicked
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2126,7 +2148,7 @@ $("#rotator").ejmRotator({
 
 
 
-#### swipeDown
+### swipeDown
 
 
 
@@ -2177,7 +2199,8 @@ Event triggers when the swipeDown happens in the Rotator
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2239,7 +2262,7 @@ $("#rotator").ejmRotator({
 
 
 
-#### swipeLeft
+### swipeLeft
 
 
 
@@ -2290,7 +2313,8 @@ Event triggers when the swipeLeft happens.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2352,7 +2376,7 @@ $("#rotator").ejmRotator({
 
 
 
-#### swipeRight
+### swipeRight
 
 
 
@@ -2403,7 +2427,8 @@ Event triggers when the swipeRight happens in the Rotator
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2465,7 +2490,7 @@ $("#rotator").ejmRotator({
 
 
 
-#### swipeUp
+### swipeUp
 
 
 
@@ -2516,7 +2541,8 @@ Event triggers when the swipeUp happens in the Rotator
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

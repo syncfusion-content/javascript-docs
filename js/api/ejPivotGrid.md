@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Pivot Grid control.
+# Custom Design for Pivot Grid control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Pivot Grid control.
 
 
 
-#### $(element).ejPivotGrid<span class="signature">()</span>
+## $(element).ejPivotGrid<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Pivot Grid control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $("#PivotGrid").ejPivotGrid(...);
 
 
 
-### Requires
+## Requires
 
 
 
@@ -78,7 +79,7 @@ $("#PivotGrid").ejPivotGrid(...);
 
 
 
-### Members
+## Members
 
 
 
@@ -87,7 +88,7 @@ $("#PivotGrid").ejPivotGrid(...);
 
 
 
-#### cssClass<span class="type-signature type string">String</span>
+### cssClass<span class="type-signature type string">String</span>
 
 
 
@@ -118,7 +119,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -139,7 +141,7 @@ $("#PivotGrid").ejPivotGrid({cssClass: "gradient-lime"});       </code>
 
 
 
-#### currentReport<span class="type-signature type string">String</span>
+### currentReport<span class="type-signature type string">String</span>
 
 
 
@@ -176,7 +178,7 @@ Default Value:
 
 
 
-#### customObject<span class="type-signature type object">Object</span>
+### customObject<span class="type-signature type object">Object</span>
 
 
 
@@ -207,7 +209,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -229,7 +232,7 @@ Default Value:
 
 
 
-#### enableCellContext<span class="type-signature type boolean">Boolean</span>
+### enableCellContext<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -260,7 +263,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -282,7 +286,7 @@ $("#PivotGrid").ejPivotGrid({enableCellContext: true});</code>
 
 
 
-#### enableJSONRendering<span class="type-signature type boolean">Boolean</span>
+### enableJSONRendering<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -313,7 +317,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -335,7 +340,7 @@ $("#PivotGrid").ejPivotGrid({enableJSONRendering: true});</code>
 
 
 
-#### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -366,7 +371,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -388,7 +394,7 @@ $("#PivotGrid").ejPivotGrid({enableRTL: true});</code>
 
 
 
-#### enableToolTip<span class="type-signature type boolean">Boolean</span>
+### enableToolTip<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -419,7 +425,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -441,7 +448,7 @@ $("#PivotGrid").ejPivotGrid({enableToolTip: true});</code>
 
 
 
-#### enableVirtualScrolling<span class="type-signature type boolean">Boolean</span>
+### enableVirtualScrolling<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -472,7 +479,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -494,7 +502,7 @@ $("#PivotGrid").ejPivotGrid({enableVirtualScrolling: true});</code>
 
 
 
-#### hyperlinkSettings<span class="type-signature type object">Object</span>
+### hyperlinkSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -525,7 +533,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -547,7 +556,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true, 
 
 
 
-#### hyperlinkSettings.enableColumnHeaderHyperlink<span class="type-signature type boolean">Boolean</span>
+### hyperlinkSettings.enableColumnHeaderHyperlink<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -578,7 +587,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -600,7 +610,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableColumnHeaderHyperlink: tru
 
 
 
-#### hyperlinkSettings.enableRowHeaderHyperlink<span class="type-signature type boolean">Boolean</span>
+### hyperlinkSettings.enableRowHeaderHyperlink<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -631,7 +641,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -653,7 +664,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableRowHeaderHyperlink: true}}
 
 
 
-#### hyperlinkSettings.enableSummaryCellHyperlink<span class="type-signature type boolean">Boolean</span>
+### hyperlinkSettings.enableSummaryCellHyperlink<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -684,7 +695,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -706,7 +718,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableSummaryCellHyperlink: true
 
 
 
-#### hyperlinkSettings.enableValueCellHyperlink<span class="type-signature type boolean">Boolean</span>
+### hyperlinkSettings.enableValueCellHyperlink<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -737,7 +749,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -759,7 +772,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true}}
 
 
 
-#### isResponsive<span class="type-signature type boolean">Boolean</span>
+### isResponsive<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -790,7 +803,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -812,7 +826,7 @@ $("#PivotGrid").ejPivotGrid({isResponsive: true});</code>
 
 
 
-#### jsonRecords<span class="type-signature type string">String</span>
+### jsonRecords<span class="type-signature type string">String</span>
 
 
 
@@ -849,7 +863,7 @@ Default Value:
 
 
 
-#### layout<span class="type-signature type enum">enum</span>
+### layout<span class="type-signature type enum">enum</span>
 
 
 
@@ -880,7 +894,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -902,7 +917,7 @@ $("#PivotGrid").ejPivotGrid({layout: ej.PivotGrid.Layout.NoSummaries});</code>
 
 
 
-#### locale<span class="type-signature type string">String</span>
+### locale<span class="type-signature type string">String</span>
 
 
 
@@ -933,7 +948,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -955,7 +971,7 @@ Default Value:
 
 
 
-#### serviceMethodSettings<span class="type-signature type object">Object</span>
+### serviceMethodSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -986,7 +1002,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1008,7 +1025,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings",  {initialize: "In
 
 
 
-#### serviceMethodSettings.drillDown<span class="type-signature type string">string</span>
+### serviceMethodSettings.drillDown<span class="type-signature type string">string</span>
 
 
 
@@ -1039,7 +1056,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1061,7 +1079,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.drillDown", "DrillG
 
 
 
-#### serviceMethodSettings.exportOptions<span class="type-signature type string">string</span>
+### serviceMethodSettings.exportOptions<span class="type-signature type string">string</span>
 
 
 
@@ -1092,7 +1110,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1114,7 +1133,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.exportOptions", "Ex
 
 
 
-#### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
+### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
 
 
 
@@ -1145,7 +1164,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1167,7 +1187,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.initialize", "Initi
 
 
 
-#### serviceMethodSettings.paging<span class="type-signature type string">string</span>
+### serviceMethodSettings.paging<span class="type-signature type string">string</span>
 
 
 
@@ -1198,7 +1218,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1220,7 +1241,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.paging",  "PagingMy
 
 
 
-#### url<span class="type-signature type string">String</span>
+### url<span class="type-signature type string">String</span>
 
 
 
@@ -1251,7 +1272,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1271,7 +1293,7 @@ $("#PivotGrid").ejPivotGrid("option","url", "/wcf/PivotGridService.svc" ); </cod
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1280,7 +1302,7 @@ $("#PivotGrid").ejPivotGrid("option","url", "/wcf/PivotGridService.svc" ); </cod
 
 
 
-#### doAjaxPost<span class="signature">()</span>
+### doAjaxPost<span class="signature">()</span>
 
 
 
@@ -1295,7 +1317,8 @@ Perform an asynchronous HTTP (Ajax) request.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1317,7 +1340,7 @@ gridObj.doAjaxPost("POST", "/PivotGridService.svc/Initialize", {"key", "Hello Wo
 
 
 
-#### doPostBack<span class="signature">()</span>
+### doPostBack<span class="signature">()</span>
 
 
 
@@ -1332,7 +1355,8 @@ Perform an asynchronous HTTP (FullPost) submit.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1354,7 +1378,7 @@ gridObj.doPostBack("/PivotGridService.svc/Initialize", {"key", "Hello World"});
 
 
 
-#### refreshPagedPivotGrid<span class="signature">()</span>
+### refreshPagedPivotGrid<span class="signature">()</span>
 
 
 
@@ -1369,7 +1393,8 @@ This function re-renders the Pivot Grid on clicking the navigating buttons on Pi
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1391,7 +1416,7 @@ gridObj.refreshPagedPivotGrid("series", 2);
 
 
 
-#### renderControlFromJSON<span class="signature">()</span>
+### renderControlFromJSON<span class="signature">()</span>
 
 
 
@@ -1406,7 +1431,8 @@ This function receives the JSON formatted datasource to render the Pivot Grid co
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1426,7 +1452,7 @@ gridObj.renderControlFromJSON({this.getJSONRecords()});
 
 
 
-### Events
+## Events
 
 
 
@@ -1435,7 +1461,7 @@ gridObj.renderControlFromJSON({this.getJSONRecords()});
 
 
 
-#### afterServiceInvoke
+### afterServiceInvoke
 
 
 
@@ -1508,7 +1534,8 @@ Fires after the service is invoked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1523,7 +1550,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### beforeServiceInvoke
+### beforeServiceInvoke
 
 
 
@@ -1596,7 +1623,8 @@ Fires before service invoked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1611,7 +1639,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### cellContext
+### cellContext
 
 
 
@@ -1679,7 +1707,8 @@ Fires when the cell is right clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1694,7 +1723,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### columnHeaderHyperlinkClick
+### columnHeaderHyperlinkClick
 
 
 
@@ -1762,7 +1791,8 @@ Fires when the column header cell is clicked once if Pivot Grid enabled with hyp
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1777,7 +1807,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### drillSuccess
+### drillSuccess
 
 
 
@@ -1835,7 +1865,8 @@ Fires after drill down of Pivot Grid.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1850,7 +1881,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### load
+### load
 
 
 
@@ -1928,7 +1959,8 @@ Fires when Pivot Grid Start loading.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1943,7 +1975,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### renderComplete
+### renderComplete
 
 
 
@@ -2021,7 +2053,8 @@ Fires when Pivot Grid completely finished its rendering.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2036,7 +2069,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### renderFailure
+### renderFailure
 
 
 
@@ -2119,7 +2152,8 @@ Fires while any discrepancies occurs during the rendering time.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2134,7 +2168,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### renderSuccess
+### renderSuccess
 
 
 
@@ -2212,7 +2246,8 @@ Fires when Pivot Grid successfully finished its rendering.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2227,7 +2262,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### rowHeaderHyperlinkClick
+### rowHeaderHyperlinkClick
 
 
 
@@ -2295,7 +2330,8 @@ Fires when the row header cell is clicked once if Pivot Grid enabled with hyperl
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2310,7 +2346,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### summaryCellHyperlinkClick
+### summaryCellHyperlinkClick
 
 
 
@@ -2378,7 +2414,8 @@ Fires when the summary cell is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2393,7 +2430,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 
-#### valueCellHyperlinkClick
+### valueCellHyperlinkClick
 
 
 
@@ -2461,7 +2498,8 @@ Fires when the value cell is clicked once if Pivot Grid enabled with hyperlink.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Slider control.
+# Custom Design for Html Slider control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Slider control.
 
 
 
-#### $(element).ejSlider<span class="signature">()</span>
+## $(element).ejSlider<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Slider control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -48,7 +49,7 @@ $('#slider').ejSlider();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -67,7 +68,7 @@ $('#slider').ejSlider();
 
 
 
-### Members
+## Members
 
 
 
@@ -76,7 +77,7 @@ $('#slider').ejSlider();
 
 
 
-#### animationSpeed<span class="type-signature type number">number</span>
+### animationSpeed<span class="type-signature type number">number</span>
 
 
 
@@ -107,7 +108,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -123,7 +125,7 @@ $("#slider").ejSlider({ animationSpeed: 500});
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -154,7 +156,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -170,7 +173,7 @@ Default Value:
 
 
 
-#### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -201,7 +204,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -217,7 +221,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -248,7 +252,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="slider"&gt; &lt;/div&gt; 
@@ -263,7 +268,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -294,7 +299,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="slider"&gt; &lt;/div&gt; 
@@ -309,7 +315,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -340,7 +346,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -358,7 +365,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">String</span>
+### height<span class="type-signature type string">String</span>
 
 
 
@@ -389,7 +396,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="slider"&gt; &lt;/div&gt; 
@@ -404,7 +412,7 @@ Default Value:
 
 
 
-#### incrementStep<span class="type-signature type number">number</span>
+### incrementStep<span class="type-signature type number">number</span>
 
 
 
@@ -435,7 +443,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;/br&gt;
@@ -452,7 +461,7 @@ Default Value:
 
 
 
-#### largeStep<span class="type-signature type number">number</span>
+### largeStep<span class="type-signature type number">number</span>
 
 
 
@@ -483,7 +492,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;/br&gt;
@@ -500,7 +510,7 @@ Default Value:
 
 
 
-#### maxValue<span class="type-signature type number">number</span>
+### maxValue<span class="type-signature type number">number</span>
 
 
 
@@ -531,7 +541,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;/br&gt;
@@ -548,7 +559,7 @@ Default Value:
 
 
 
-#### minValue<span class="type-signature type number">number</span>
+### minValue<span class="type-signature type number">number</span>
 
 
 
@@ -579,7 +590,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -597,7 +609,7 @@ Default Value:
 
 
 
-#### orientation<span class="type-signature type enum">enum</span>
+### orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -628,7 +640,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="slider"&gt; &lt;/div&gt; 
@@ -643,7 +656,7 @@ $("#slider").ejSlider({ orientation: ej.Orientation.Vertical});
 
 
 
-#### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -674,7 +687,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="slider"&gt; &lt;/div&gt; 
@@ -689,7 +703,7 @@ Default Value:
 
 
 
-#### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -720,7 +734,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="slider"&gt; &lt;/div&gt; 
@@ -735,7 +750,7 @@ Default Value:
 
 
 
-#### showScale<span class="type-signature type boolean">boolean</span>
+### showScale<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -766,7 +781,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;/br&gt;
@@ -783,7 +799,7 @@ Default Value:
 
 
 
-#### showSmallTicks<span class="type-signature type boolean">boolean</span>
+### showSmallTicks<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -814,7 +830,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;/br&gt;
@@ -831,7 +848,7 @@ Default Value:
 
 
 
-#### showTooltip<span class="type-signature type boolean">boolean</span>
+### showTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -862,7 +879,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -880,7 +898,7 @@ Default Value:
 
 
 
-#### sliderType<span class="type-signature type enum">enum</span>
+### sliderType<span class="type-signature type enum">enum</span>
 
 
 
@@ -911,7 +929,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -927,7 +946,7 @@ $("#slider").ejSlider({ sliderType: ej.SliderType.Default});
 
 
 
-#### smallStep<span class="type-signature type number">number</span>
+### smallStep<span class="type-signature type number">number</span>
 
 
 
@@ -958,7 +977,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;/br&gt;
@@ -975,7 +995,7 @@ Default Value:
 
 
 
-#### value<span class="type-signature type number">number</span>
+### value<span class="type-signature type number">number</span>
 
 
 
@@ -1006,7 +1026,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;/br&gt;
@@ -1023,7 +1044,7 @@ Default Value:
 
 
 
-#### values<span class="type-signature type array">array</span>
+### values<span class="type-signature type array">array</span>
 
 
 
@@ -1054,7 +1075,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;/br&gt;
@@ -1071,7 +1093,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">String</span>
+### width<span class="type-signature type string">String</span>
 
 
 
@@ -1102,7 +1124,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1116,7 +1139,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1125,7 +1148,7 @@ Default Value:
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -1140,7 +1163,8 @@ To disable the slider
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1169,7 +1193,7 @@ $("#slider").ejSlider("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -1184,7 +1208,8 @@ To enable the slider
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1213,7 +1238,7 @@ $("#slider").ejSlider("enable");
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -1228,7 +1253,8 @@ To get value from slider handle
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1255,7 +1281,7 @@ $("#slider").ejSlider("getValue");
 
 
 
-### Events
+## Events
 
 
 
@@ -1264,7 +1290,7 @@ $("#slider").ejSlider("getValue");
 
 
 
-#### change
+### change
 
 
 
@@ -1337,7 +1363,8 @@ Fires when Slider control value is changed successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1355,7 +1382,7 @@ $("#slider").ejSlider({
 
 
 
-#### create
+### create
 
 
 
@@ -1413,7 +1440,8 @@ Fires when Slider control has been created successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1431,7 +1459,7 @@ $("#slider").ejSlider({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1489,7 +1517,8 @@ Fires when Slider control has been destroyed successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1507,7 +1536,7 @@ $("#slider").ejSlider({
 
 
 
-#### slide
+### slide
 
 
 
@@ -1580,7 +1609,8 @@ Fires when Slider control is sliding successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1598,7 +1628,7 @@ $("#slider").ejSlider({
 
 
 
-#### start
+### start
 
 
 
@@ -1671,7 +1701,8 @@ Fires when Slider control is started successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1689,7 +1720,7 @@ $("#slider").ejSlider({
 
 
 
-#### stop
+### stop
 
 
 
@@ -1762,7 +1793,8 @@ Fires when Slider control is stopped successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

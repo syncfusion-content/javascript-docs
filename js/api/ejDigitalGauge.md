@@ -18,7 +18,7 @@ The Digital gauge can be easily configured to the DOM element, such as div. you 
 
 
 
-#### $(element).ejDigitalGauge<span class="signature">(options)</span>
+## $(element).ejDigitalGauge<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ The Digital gauge can be easily configured to the DOM element, such as div. you 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -62,7 +63,7 @@ $('#DigitalCore').ejDigitalGauge();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -81,7 +82,7 @@ $('#DigitalCore').ejDigitalGauge();
 
 
 
-### Members
+## Members
 
 
 
@@ -90,7 +91,7 @@ $('#DigitalCore').ejDigitalGauge();
 
 
 
-#### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -121,7 +122,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -137,7 +139,7 @@ $("#DigitalCore").ejDigitalGauge({ enableResize: true });
 
 
 
-#### frame<span class="type-signature type object">object</span>
+### frame<span class="type-signature type object">object</span>
 
 
 
@@ -168,7 +170,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -184,7 +187,7 @@ $("#DigitalCore").ejDigitalGauge({ frame:{backgroundImageUrl: null, innerWidth:6
 
 
 
-#### frame.backgroundImageUrl<span class="type-signature type string">string</span>
+### frame.backgroundImageUrl<span class="type-signature type string">string</span>
 
 
 
@@ -215,7 +218,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -231,7 +235,7 @@ $("#DigitalCore").ejDigitalGauge({frame:{ backgroundImageUrl: "styles\images\Car
 
 
 
-#### frame.innerWidth<span class="type-signature type number">number</span>
+### frame.innerWidth<span class="type-signature type number">number</span>
 
 
 
@@ -262,7 +266,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -278,7 +283,7 @@ $("#DigitalCore").ejDigitalGauge({frame:{ innerWidth: 30 }});
 
 
 
-#### frame.outerWidth<span class="type-signature type number">number</span>
+### frame.outerWidth<span class="type-signature type number">number</span>
 
 
 
@@ -309,7 +314,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -325,7 +331,7 @@ $("#DigitalCore").ejDigitalGauge({frame: { outerWidth: 30 } });
 
 
 
-#### height<span class="type-signature type number">number</span>
+### height<span class="type-signature type number">number</span>
 
 
 
@@ -356,7 +362,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -372,7 +379,7 @@ $("#DigitalCore").ejDigitalGauge({ height: 60 });
 
 
 
-#### items<span class="type-signature type object">object</span>
+### items<span class="type-signature type object">object</span>
 
 
 
@@ -403,7 +410,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -419,7 +427,7 @@ $("#DigitalCore").ejDigitalGauge({width: 500});
 
 
 
-#### items.characterSettings<span class="type-signature type object">Object</span>
+### items.characterSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -450,7 +458,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -466,7 +475,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {count: 4} }] });
 
 
 
-#### items.characterSettings.count<span class="type-signature type number">number</span>
+### items.characterSettings.count<span class="type-signature type number">number</span>
 
 
 
@@ -497,7 +506,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -513,7 +523,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {count: 4} }] });
 
 
 
-#### items.characterSettings.opacity<span class="type-signature type number">number</span>
+### items.characterSettings.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -544,7 +554,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -560,7 +571,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {opacity: 1} }] }
 
 
 
-#### items.characterSettings.spacing<span class="type-signature type number">number</span>
+### items.characterSettings.spacing<span class="type-signature type number">number</span>
 
 
 
@@ -591,7 +602,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -607,7 +619,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {spacing: 3} }] }
 
 
 
-#### items.characterSettings.type<span class="type-signature type enum">enum</span>
+### items.characterSettings.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -638,7 +650,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -654,7 +667,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{characterSettings:{ type: "eightcross
 
 
 
-#### items.enableCustomFont<span class="type-signature type boolean">boolean</span>
+### items.enableCustomFont<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -686,7 +699,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -702,7 +716,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ enableCustomFont: true }] });
 
 
 
-#### items.font<span class="type-signature type object">Object</span>
+### items.font<span class="type-signature type object">Object</span>
 
 
 
@@ -734,7 +748,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -750,7 +765,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { size:
 
 
 
-#### items.font.fontFamily<span class="type-signature type string">string</span>
+### items.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -782,7 +797,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -798,7 +814,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontF
 
 
 
-#### items.font.fontStyle<span class="type-signature type enum">enum</span>
+### items.font.fontStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -830,7 +846,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -846,7 +863,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontS
 
 
 
-#### items.font.size<span class="type-signature type string">string</span>
+### items.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -878,7 +895,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -894,7 +912,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true,font: { size: 
 
 
 
-#### items.position<span class="type-signature type object">object</span>
+### items.position<span class="type-signature type object">object</span>
 
 
 
@@ -926,7 +944,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -942,7 +961,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{position: { x: 10, y: 20 } }]});
 
 
 
-#### items.position.x<span class="type-signature type number">number</span>
+### items.position.x<span class="type-signature type number">number</span>
 
 
 
@@ -974,7 +993,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -990,7 +1010,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{position : { x: 10,y:0} }]});
 
 
 
-#### items.position.y<span class="type-signature type number">number</span>
+### items.position.y<span class="type-signature type number">number</span>
 
 
 
@@ -1022,7 +1042,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1038,7 +1059,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{position: { x:0,y: 20 } }]});
 
 
 
-#### items.segmentSettings<span class="type-signature type object">Object</span>
+### items.segmentSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -1070,7 +1091,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1086,7 +1108,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {length: 2} }] });
 
 
 
-#### items.segmentSettings.color<span class="type-signature type string">string</span>
+### items.segmentSettings.color<span class="type-signature type string">string</span>
 
 
 
@@ -1118,7 +1140,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1134,7 +1157,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {color: "#FF1F2F"} 
 
 
 
-#### items.segmentSettings.gradient<span class="type-signature type object">Object</span>
+### items.segmentSettings.gradient<span class="type-signature type object">Object</span>
 
 
 
@@ -1166,7 +1189,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1182,7 +1206,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {gradient: { colorI
 
 
 
-#### items.segmentSettings.length<span class="type-signature type number">number</span>
+### items.segmentSettings.length<span class="type-signature type number">number</span>
 
 
 
@@ -1214,7 +1238,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1230,7 +1255,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {length: 2} }] });
 
 
 
-#### items.segmentSettings.opacity<span class="type-signature type number">number</span>
+### items.segmentSettings.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -1262,7 +1287,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1278,7 +1304,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {opacity: 2} }] });
 
 
 
-#### items.segmentSettings.spacing<span class="type-signature type number">number</span>
+### items.segmentSettings.spacing<span class="type-signature type number">number</span>
 
 
 
@@ -1310,7 +1336,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1326,7 +1353,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {spacing: 1} }] });
 
 
 
-#### items.segmentSettings.width<span class="type-signature type number">number</span>
+### items.segmentSettings.width<span class="type-signature type number">number</span>
 
 
 
@@ -1358,7 +1385,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1374,7 +1402,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {width: 1} }] });
 
 
 
-#### items.shadowBlur<span class="type-signature type number">number</span>
+### items.shadowBlur<span class="type-signature type number">number</span>
 
 
 
@@ -1406,7 +1434,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1422,7 +1451,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowBlur:  1 }] });
 
 
 
-#### items.shadowColor<span class="type-signature type string">string</span>
+### items.shadowColor<span class="type-signature type string">string</span>
 
 
 
@@ -1453,7 +1482,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1469,7 +1499,7 @@ $("#DigitalCore").ejDigitalGauge({ items: [{shadowColor: "#FF1F2F" }]});
 
 
 
-#### items.shadowOffsetX<span class="type-signature type number">number</span>
+### items.shadowOffsetX<span class="type-signature type number">number</span>
 
 
 
@@ -1501,7 +1531,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1517,7 +1548,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowOffsetX:  2 }] });
 
 
 
-#### items.shadowOffsetY<span class="type-signature type number">number</span>
+### items.shadowOffsetY<span class="type-signature type number">number</span>
 
 
 
@@ -1549,7 +1580,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1565,7 +1597,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowOffsetY:  2 }] });
 
 
 
-#### items.textAlign<span class="type-signature type string">string</span>
+### items.textAlign<span class="type-signature type string">string</span>
 
 
 
@@ -1596,7 +1628,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1612,7 +1645,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ textAlign:  "right" }] });
 
 
 
-#### items.textColor<span class="type-signature type string">string</span>
+### items.textColor<span class="type-signature type string">string</span>
 
 
 
@@ -1643,7 +1676,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -1659,7 +1693,7 @@ $("#DigitalCore").ejDigitalGauge({ items: [{textColor: "#FF1F2F" }]});
 
 
 
-#### items.value<span class="type-signature type string">string</span>
+### items.value<span class="type-signature type string">string</span>
 
 
 
@@ -1690,7 +1724,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -1706,7 +1741,7 @@ $("#DigitalCore").ejDigitalGauge({ items: [{value: "Welcome" }]});
 
 
 
-#### matrixSegmentData
+### matrixSegmentData
 
 
 
@@ -1727,7 +1762,7 @@ Specifies the matrixSegmentData for the DigitalGauge.
 
 
 
-#### segmentData
+### segmentData
 
 
 
@@ -1748,7 +1783,7 @@ Specifies the segmentData for the DigitalGauge.
 
 
 
-#### themes<span class="type-signature type string">string</span>
+### themes<span class="type-signature type string">string</span>
 
 
 
@@ -1779,7 +1814,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1795,7 +1831,7 @@ $("#DigitalCore").ejDigitalGauge({ themes: "flatlight" });
 
 
 
-#### value<span class="type-signature type string">string</span>
+### value<span class="type-signature type string">string</span>
 
 
 
@@ -1826,7 +1862,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1842,7 +1879,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ value: "Welcome" }] });
 
 
 
-#### width<span class="type-signature type number">number</span>
+### width<span class="type-signature type number">number</span>
 
 
 
@@ -1873,7 +1910,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1887,7 +1925,7 @@ $("#DigitalCore").ejDigitalGauge({ width: 300 });
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1896,7 +1934,7 @@ $("#DigitalCore").ejDigitalGauge({ width: 300 });
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -1911,7 +1949,8 @@ To destroy the digital gauge
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1929,7 +1968,7 @@ gphObj.destroy();
 
 
 
-#### exportImage<span class="signature">(fileName, fileType)</span>
+### exportImage<span class="signature">(fileName, fileType)</span>
 
 
 
@@ -1965,7 +2004,8 @@ To export Digital Gauge as Image
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1983,7 +2023,7 @@ DigitalGaugeObj.exportImage("myImage","jpeg");
 
 
 
-#### getPosition<span class="signature">(itemIndex)</span>
+### getPosition<span class="signature">(itemIndex)</span>
 
 
 
@@ -2014,7 +2054,8 @@ Gets the location of an item that is displayed on the gauge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2032,7 +2073,7 @@ DigitalGaugeObj.getPosition(0);
 
 
 
-#### getValue<span class="signature">(itemIndex)</span>
+### getValue<span class="signature">(itemIndex)</span>
 
 
 
@@ -2063,7 +2104,8 @@ ClientSideMethod getValue Gets the value of an item that is displayed on the gau
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2081,7 +2123,7 @@ DigitalGaugeObj.getValue(0);
 
 
 
-#### refresh<span class="signature">()</span>
+### refresh<span class="signature">()</span>
 
 
 
@@ -2096,7 +2138,8 @@ Refresh the digital gauge widget
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2114,7 +2157,7 @@ GaugeObj.refresh();
 
 
 
-#### setPosition<span class="signature">(itemIndex, value)</span>
+### setPosition<span class="signature">(itemIndex, value)</span>
 
 
 
@@ -2150,7 +2193,8 @@ ClientSideMethod Set Position Sets the location of an item to be displayed in th
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2168,7 +2212,7 @@ DigitalGaugeObj.setPosition(0,{ x:50, y:40 });
 
 
 
-#### setValue<span class="signature">(itemIndex, value)</span>
+### setValue<span class="signature">(itemIndex, value)</span>
 
 
 
@@ -2204,7 +2248,8 @@ ClientSideMethod SetValue Sets the value of an item to be displayed in the gauge
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2220,7 +2265,7 @@ DigitalGaugeObj.setValue(0,"Welcome");
 
 
 
-### Events
+## Events
 
 
 
@@ -2229,7 +2274,7 @@ DigitalGaugeObj.setValue(0,"Welcome");
 
 
 
-#### init
+### init
 
 
 
@@ -2290,7 +2335,8 @@ Triggers when the gauge is initialized.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2308,7 +2354,7 @@ $("#DigitalCore").ejDigitalGauge({
 
 
 
-#### itemRendering
+### itemRendering
 
 
 
@@ -2364,7 +2410,8 @@ Triggers when the gauge item rendering.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2382,7 +2429,7 @@ $("#DigitalCore").ejDigitalGauge({
 
 
 
-#### load
+### load
 
 
 
@@ -2438,7 +2485,8 @@ Triggers when the gauge is start to load.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2456,7 +2504,7 @@ $("#DigitalCore").ejDigitalGauge({
 
 
 
-#### renderComplete
+### renderComplete
 
 
 
@@ -2512,7 +2560,8 @@ Triggers when the gauge render is completed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

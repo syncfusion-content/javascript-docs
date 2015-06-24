@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for dragging HTML elements.
+# Custom Design for dragging HTML elements.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for dragging HTML elements.
 
 
 
-#### $(element).ejDraggable<span class="signature">()</span>
+## $(element).ejDraggable<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for dragging HTML elements.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $('#dragable').ejDraggable();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -60,7 +61,7 @@ $('#dragable').ejDraggable();
 
 
 
-### Members
+## Members
 
 
 
@@ -69,7 +70,7 @@ $('#dragable').ejDraggable();
 
 
 
-#### clone<span class="type-signature type boolean">boolean</span>
+### clone<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -100,7 +101,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -120,7 +122,7 @@ Default Value:
 
 
 
-#### cursorAt<span class="type-signature type object">object</span>
+### cursorAt<span class="type-signature type object">object</span>
 
 
 
@@ -151,7 +153,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -171,7 +174,7 @@ Default Value:
 
 
 
-#### distance<span class="type-signature type number">number</span>
+### distance<span class="type-signature type number">number</span>
 
 
 
@@ -202,7 +205,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -222,7 +226,7 @@ Default Value:
 
 
 
-#### dragArea<span class="type-signature type boolean">boolean</span>
+### dragArea<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -253,7 +257,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -273,7 +278,7 @@ Default Value:
 
 
 
-#### handle<span class="type-signature type string">string</span>
+### handle<span class="type-signature type string">string</span>
 
 
 
@@ -304,7 +309,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -324,7 +330,7 @@ Default Value:
 
 
 
-#### scope<span class="type-signature type string">string</span>
+### scope<span class="type-signature type string">string</span>
 
 
 
@@ -355,7 +361,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -373,7 +380,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -382,7 +389,7 @@ Default Value:
 
 
 
-#### _destroy<span class="signature">()</span>
+### _destroy<span class="signature">()</span>
 
 
 
@@ -397,7 +404,8 @@ destroy in the dragable.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -413,7 +421,7 @@ dragableObj.destroy();
 
 
 
-### Events
+## Events
 
 
 
@@ -422,7 +430,7 @@ dragableObj.destroy();
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -463,7 +471,8 @@ This event is triggered when dragging events are destroyed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -478,7 +487,7 @@ $("#dragable").ejDraggable({
 
 
 
-#### drag
+### drag
 
 
 
@@ -519,7 +528,8 @@ This event is triggered when the mouse is moved during the dragging.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -534,7 +544,7 @@ $("#dragable").ejDraggable({
 
 
 
-#### dragStart
+### dragStart
 
 
 
@@ -575,7 +585,8 @@ Supply a callback function to handle the drag start event as an init option.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -590,7 +601,7 @@ $("#dragable").ejDraggable({
 
 
 
-#### dragStop
+### dragStop
 
 
 
@@ -631,7 +642,8 @@ This event is triggered when the mouse is moved during the dragging.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -646,7 +658,7 @@ $("#dragable").ejDraggable({
 
 
 
-#### helper
+### helper
 
 
 
@@ -687,7 +699,8 @@ This event is triggered when dragged.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html slider control.
+# Custom Design for Html slider control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html slider control.
 
 
 
-#### $(element).ejmSlider<span class="signature">()</span>
+## $(element).ejmSlider<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html slider control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -51,7 +52,7 @@ $("#slider").ejmSlider();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -79,7 +80,7 @@ $("#slider").ejmSlider();
 
 
 
-### Members
+## Members
 
 
 
@@ -88,7 +89,7 @@ $("#slider").ejmSlider();
 
 
 
-#### animationSpeed<span class="type-signature type int">int</span>
+### animationSpeed<span class="type-signature type int">int</span>
 
 
 
@@ -119,7 +120,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -152,7 +154,7 @@ $("#slider").ejmSlider ("option", "animationSpeed", 400);
 
 
 
-#### enableAnimation<span class="type-signature type bool">bool</span>
+### enableAnimation<span class="type-signature type bool">bool</span>
 
 
 
@@ -183,7 +185,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -216,7 +219,7 @@ $("#slider").ejmSlider ("option", "enableAnimation", false);
 
 
 
-#### enabled<span class="type-signature type bool">bool</span>
+### enabled<span class="type-signature type bool">bool</span>
 
 
 
@@ -247,7 +250,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -280,7 +284,7 @@ $("#slider").ejmSlider ("option", "enabled", true);
 
 
 
-#### enablePersistence<span class="type-signature type bool">bool</span>
+### enablePersistence<span class="type-signature type bool">bool</span>
 
 
 
@@ -311,7 +315,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -344,7 +349,7 @@ $("#slider").ejmSlider ("option", "enablePersistence", false);
 
 
 
-#### enableRange<span class="type-signature type bool">bool</span>
+### enableRange<span class="type-signature type bool">bool</span>
 
 
 
@@ -375,7 +380,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -408,7 +414,7 @@ $("#slider").ejmSlider ("option", "enableRange", false);
 
 
 
-#### incrementStep<span class="type-signature type int">int</span>
+### incrementStep<span class="type-signature type int">int</span>
 
 
 
@@ -439,7 +445,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -472,7 +479,7 @@ $("#slider").ejmSlider ("option", "incrementStep", 1);
 
 
 
-#### ios7
+### ios7
 
 
 
@@ -493,7 +500,7 @@ Section for ios7 mode specific functionalities.
 
 
 
-#### ios7.thumbStyle<span class="type-signature type enum">enum</span>
+### ios7.thumbStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -524,7 +531,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -556,7 +564,7 @@ $("#slider").ejmSlider("option", "ios7.thumbStyle", ej.mobile.Slider.ThumbStyle.
 
 
 
-#### maxValue<span class="type-signature type int">int</span>
+### maxValue<span class="type-signature type int">int</span>
 
 
 
@@ -587,7 +595,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -620,7 +629,7 @@ $("#slider").ejmSlider ("option", "maxValue", 100);
 
 
 
-#### minValue<span class="type-signature type int">int</span>
+### minValue<span class="type-signature type int">int</span>
 
 
 
@@ -651,7 +660,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -684,7 +694,7 @@ $("#slider").ejmSlider ("option", "minValue", 0);
 
 
 
-#### orientation<span class="type-signature type enum">enum</span>
+### orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -715,7 +725,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -748,7 +759,7 @@ $("#slider").ejmSlider ("option", "orientation", ej.mobile.Slider.Orientation.Ho
 
 
 
-#### readOnly<span class="type-signature type bool">bool</span>
+### readOnly<span class="type-signature type bool">bool</span>
 
 
 
@@ -779,7 +790,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -812,7 +824,7 @@ $("#slider").ejmSlider ("option", "readOnly", false);
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -843,7 +855,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -877,7 +890,7 @@ $("#slider").ejmSlider ("option", "renderMode", ej.mobile.RenderMode.Android);
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -908,7 +921,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -943,7 +957,7 @@ $("#slider").ejmSlider ("option", "theme", ej.mobile.Theme.Dark);
 
 
 
-#### value<span class="type-signature type int">int</span>
+### value<span class="type-signature type int">int</span>
 
 
 
@@ -974,7 +988,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1007,7 +1022,7 @@ $("#slider").ejmSlider ("option", "value", 0);
 
 
 
-#### values<span class="type-signature type int[]">int[]</span>
+### values<span class="type-signature type int[]">int[]</span>
 
 
 
@@ -1038,7 +1053,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1073,7 +1089,7 @@ $("#slider").ejmSlider ("option", "values", [20,80]);
 
 
 
-#### windows
+### windows
 
 
 
@@ -1094,7 +1110,7 @@ Section for windows mode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1125,7 +1141,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1155,7 +1172,7 @@ $("#slider").ejmSlider("option", "windows.renderDefault", false);
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1164,7 +1181,7 @@ $("#slider").ejmSlider("option", "windows.renderDefault", false);
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -1179,7 +1196,8 @@ To get the current value.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1207,7 +1225,7 @@ $("#slider").ejmSlider("getValue");
 
 
 
-### Events
+## Events
 
 
 
@@ -1216,7 +1234,7 @@ $("#slider").ejmSlider("getValue");
 
 
 
-#### change
+### change
 
 
 
@@ -1279,7 +1297,8 @@ Event triggers when the value changed.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1307,7 +1326,7 @@ $("#slider").ejmSlider({
 
 
 
-#### load
+### load
 
 
 
@@ -1375,7 +1394,8 @@ Event triggers before the control get loaded.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1403,7 +1423,7 @@ $("#slider").ejmSlider({
 
 
 
-#### slide
+### slide
 
 
 
@@ -1471,7 +1491,8 @@ Event triggers when touch move happens on the control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1499,7 +1520,7 @@ $("#slider").ejmSlider({
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -1562,7 +1583,8 @@ Event triggers when touch end happens on the control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1590,7 +1612,7 @@ $("#slider").ejmSlider({
 
 
 
-#### touchStart
+### touchStart
 
 
 
@@ -1653,7 +1675,8 @@ Event triggers when touch start happens on the control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

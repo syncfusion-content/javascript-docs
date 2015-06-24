@@ -24,7 +24,13 @@ You can add the page content with text-area by referring to this section.
             <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/undo.png" data-ej-text="Undo"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $('#defaultradialmenu').ejRadialMenu({ width: "250" });
         });
@@ -32,7 +38,6 @@ You can add the page content with text-area by referring to this section.
         $("#rteSampleone").select(function (e) {
             $('#defaultradialmenu').ejRadialMenu("show");
         });
-    </script>
 
 
 {% endhighlight %}

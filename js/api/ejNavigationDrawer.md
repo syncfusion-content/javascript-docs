@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Navigation Drawer control.
+# Custom Design for Html Navigation Drawer control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Navigation Drawer control.
 
 
 
-#### $(element).ejNavigationDrawer<span class="signature">()</span>
+## $(element).ejNavigationDrawer<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Navigation Drawer control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -68,7 +69,7 @@ $("#navpane").ejNavigationDrawer();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -87,7 +88,7 @@ $("#navpane").ejNavigationDrawer();
 
 
 
-### Members
+## Members
 
 
 
@@ -96,7 +97,7 @@ $("#navpane").ejNavigationDrawer();
 
 
 
-#### contentid<span class="type-signature type string">string</span>
+### contentid<span class="type-signature type string">string</span>
 
 
 
@@ -127,7 +128,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer contentId on initialization. 
@@ -166,7 +168,7 @@ $("#navpane").ejNavigationDrawer ("option", "contentId", "container");
 
 
 
-#### cssclass<span class="type-signature type string">string</span>
+### cssclass<span class="type-signature type string">string</span>
 
 
 
@@ -197,7 +199,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer direction on initialization. 
@@ -248,7 +251,7 @@ $("#navpane").ejNavigationDrawer ("option", "cssClass", "customclass");
 
 
 
-#### direction<span class="type-signature type enum">enum</span>
+### direction<span class="type-signature type enum">enum</span>
 
 
 
@@ -279,7 +282,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer direction on initialization. 
@@ -329,7 +333,7 @@ $("#navpane").ejNavigationDrawer ("option", "direction", "left");
 
 
 
-#### enablelistview<span class="type-signature type boolean">boolean</span>
+### enablelistview<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -360,7 +364,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer listview on initialization. 
@@ -410,7 +415,7 @@ $("#navpane").ejNavigationDrawer ("option", "enableListView", "false");
 
 
 
-#### items<span class="type-signature type array">array</span>
+### items<span class="type-signature type array">array</span>
 
 
 
@@ -441,7 +446,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer listview items on initialization. 
@@ -491,7 +497,7 @@ $("#navpane").ejNavigationDrawer ("option", "items", [{text:"Item1"},{text:"Item
 
 
 
-#### listviewsettings<span class="type-signature type object">object</span>
+### listviewsettings<span class="type-signature type object">object</span>
 
 
 
@@ -506,7 +512,8 @@ Sets all the properties of listview to render in navigation drawer
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer listview on initialization. 
@@ -556,7 +563,7 @@ $("#navpane").ejNavigationDrawer ("option", "listViewSettings.width", "200");
 
 
 
-#### position<span class="type-signature type enum">enum</span>
+### position<span class="type-signature type enum">enum</span>
 
 
 
@@ -587,7 +594,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer position on initialization. 
@@ -637,7 +645,7 @@ $("#navpane").ejNavigationDrawer ("option", "position", "fixed");
 
 
 
-#### targetid<span class="type-signature type string">string</span>
+### targetid<span class="type-signature type string">string</span>
 
 
 
@@ -668,7 +676,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer direction on initialization. 
@@ -719,7 +728,7 @@ $("#navpane").ejNavigationDrawer ("option", "targetId", "left");
 
 
 
-#### type<span class="type-signature type enum">enum</span>
+### type<span class="type-signature type enum">enum</span>
 
 
 
@@ -750,7 +759,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer type on initialization. 
@@ -800,7 +810,7 @@ $("#navpane").ejNavigationDrawer ("option", "type", "overlay");
 
 
 
-#### width<span class="type-signature type int">int</span>
+### width<span class="type-signature type int">int</span>
 
 
 
@@ -831,7 +841,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set Navigation Drawer width on initialization. 
@@ -879,7 +890,7 @@ $("#navpane").ejNavigationDrawer ("option", "width", "overlay");
 
 
 
-### Methods
+## Methods
 
 
 
@@ -888,7 +899,7 @@ $("#navpane").ejNavigationDrawer ("option", "width", "overlay");
 
 
 
-#### close<span class="signature">()</span>
+### close<span class="signature">()</span>
 
 
 
@@ -903,7 +914,8 @@ To close the navigation drawer control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -941,7 +953,7 @@ $(function(){
 
 
 
-#### open<span class="signature">()</span>
+### open<span class="signature">()</span>
 
 
 
@@ -956,7 +968,8 @@ To open the navigation drawer control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -994,7 +1007,7 @@ $(function(){
 
 
 
-#### toggle<span class="signature">()</span>
+### toggle<span class="signature">()</span>
 
 
 
@@ -1009,7 +1022,8 @@ To Toggle the navigation drawer control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1045,7 +1059,7 @@ $(function(){
 
 
 
-### Events
+## Events
 
 
 
@@ -1054,7 +1068,7 @@ $(function(){
 
 
 
-#### beforeclose
+### beforeclose
 
 
 
@@ -1122,7 +1136,8 @@ Event triggers before the control gets closed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1162,7 +1177,7 @@ $("#navpane").ejNavigationDrawer("close");
 
 
 
-#### open
+### open
 
 
 
@@ -1230,7 +1245,8 @@ Event triggers when the control open.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1270,7 +1286,7 @@ $("#navpane").ejNavigationDrawer("open");
 
 
 
-#### swipe
+### swipe
 
 
 
@@ -1338,7 +1354,8 @@ Event triggers when the Swipe happens.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

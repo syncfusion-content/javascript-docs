@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Bullet graph.
+# Custom Design for Bullet graph.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Bullet graph.
 
 
 
-#### $(element).ejBulletGraph<span class="signature">()</span>
+## $(element).ejBulletGraph<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Bullet graph.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $('#bulletGraph1').ejBulletGraph();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -66,7 +67,7 @@ $('#bulletGraph1').ejBulletGraph();
 
 
 
-### Members
+## Members
 
 
 
@@ -75,7 +76,7 @@ $('#bulletGraph1').ejBulletGraph();
 
 
 
-#### applyRangeStrokeToLabels<span class="type-signature type boolean">boolean</span>
+### applyRangeStrokeToLabels<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -106,7 +107,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -123,7 +125,7 @@ applyRangeStrokeToLabels : true
 
 
 
-#### applyRangeStrokeToTicks<span class="type-signature type boolean">boolean</span>
+### applyRangeStrokeToTicks<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -154,7 +156,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -171,7 +174,7 @@ applyRangeStrokeToTicks : true
 
 
 
-#### captionSettings<span class="type-signature type object">object</span>
+### captionSettings<span class="type-signature type object">object</span>
 
 
 
@@ -192,7 +195,7 @@ Contains property to customize the caption in bullet graph.
 
 
 
-#### captionSettings.enableTrim<span class="type-signature type boolean">boolean</span>
+### captionSettings.enableTrim<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -223,7 +226,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -240,7 +244,7 @@ captionSettings :{ enableTrim : true }
 
 
 
-#### captionSettings.font<span class="type-signature type object">object</span>
+### captionSettings.font<span class="type-signature type object">object</span>
 
 
 
@@ -261,7 +265,7 @@ Contains property to customize the font of caption.
 
 
 
-#### captionSettings.font.color<span class="type-signature type string">string</span>
+### captionSettings.font.color<span class="type-signature type string">string</span>
 
 
 
@@ -292,7 +296,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -309,7 +314,7 @@ captionSettings :{font :{color : "green"}}
 
 
 
-#### captionSettings.font.fontFamily<span class="type-signature type string">string</span>
+### captionSettings.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -340,7 +345,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -357,7 +363,7 @@ captionSettings :{font :{fontFamily : "algerian"}}
 
 
 
-#### captionSettings.font.fontStyle<span class="type-signature type enum">enum</span>
+### captionSettings.font.fontStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -388,7 +394,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -405,7 +412,7 @@ captionSettings :{font :{fontStyle : "italic"}}
 
 
 
-#### captionSettings.font.fontWeight<span class="type-signature type enum">enum</span>
+### captionSettings.font.fontWeight<span class="type-signature type enum">enum</span>
 
 
 
@@ -436,7 +443,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -453,7 +461,7 @@ captionSettings :{font :{fontWeight : "lighter"}}
 
 
 
-#### captionSettings.font.opacity<span class="type-signature type number">number</span>
+### captionSettings.font.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -484,7 +492,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -501,7 +510,7 @@ captionSettings :{font :{opacity : 0.5}}
 
 
 
-#### captionSettings.font.size<span class="type-signature type string">string</span>
+### captionSettings.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -532,7 +541,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -549,7 +559,7 @@ captionSettings :{font :{size : "14px"}}
 
 
 
-#### captionSettings.indicator<span class="type-signature type object">object</span>
+### captionSettings.indicator<span class="type-signature type object">object</span>
 
 
 
@@ -570,7 +580,7 @@ Contains property to customize the indicator.
 
 
 
-#### captionSettings.indicator.font<span class="type-signature type object">object</span>
+### captionSettings.indicator.font<span class="type-signature type object">object</span>
 
 
 
@@ -591,7 +601,7 @@ Contains property to customize the font of indicator.
 
 
 
-#### captionSettings.indicator.font.color<span class="type-signature type string">string</span>
+### captionSettings.indicator.font.color<span class="type-signature type string">string</span>
 
 
 
@@ -622,7 +632,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -639,7 +650,7 @@ captionSettings :{indicator :{font : { color :"green" }}}
 
 
 
-#### captionSettings.indicator.font.fontFamily<span class="type-signature type string">string</span>
+### captionSettings.indicator.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -670,7 +681,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -687,7 +699,7 @@ captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}
 
 
 
-#### captionSettings.indicator.font.fontStyle<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.font.fontStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -718,7 +730,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -735,7 +748,7 @@ captionSettings :{indicator :{font : { fontStyle :"italic" }}}
 
 
 
-#### captionSettings.indicator.font.fontWeight<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.font.fontWeight<span class="type-signature type enum">enum</span>
 
 
 
@@ -766,7 +779,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -783,7 +797,7 @@ captionSettings :{indicator :{font : { fontWeight :"lighter" }}}
 
 
 
-#### captionSettings.indicator.font.opacity<span class="type-signature type number">Number</span>
+### captionSettings.indicator.font.opacity<span class="type-signature type number">Number</span>
 
 
 
@@ -814,7 +828,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -831,7 +846,7 @@ captionSettings :{indicator :{font : { opacity : 0.5 }}}
 
 
 
-#### captionSettings.indicator.font.size<span class="type-signature type string">string</span>
+### captionSettings.indicator.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -862,7 +877,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -879,7 +895,7 @@ captionSettings :{indicator :{font : { size :"14px" }}}
 
 
 
-#### captionSettings.indicator.location<span class="type-signature type object">object</span>
+### captionSettings.indicator.location<span class="type-signature type object">object</span>
 
 
 
@@ -900,7 +916,7 @@ Contains property to customize the location of indicator.
 
 
 
-#### captionSettings.indicator.location.x<span class="type-signature type number">number</span>
+### captionSettings.indicator.location.x<span class="type-signature type number">number</span>
 
 
 
@@ -931,7 +947,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -948,7 +965,7 @@ captionSettings :{indicator :{location : { x :12 }}}
 
 
 
-#### captionSettings.indicator.location.y<span class="type-signature type number">number</span>
+### captionSettings.indicator.location.y<span class="type-signature type number">number</span>
 
 
 
@@ -979,7 +996,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -996,7 +1014,7 @@ captionSettings :{indicator :{location : { y :60 }}}
 
 
 
-#### captionSettings.indicator.padding<span class="type-signature type number">number</span>
+### captionSettings.indicator.padding<span class="type-signature type number">number</span>
 
 
 
@@ -1027,7 +1045,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1044,7 +1063,7 @@ captionSettings :{ indicator: {padding: 5}}
 
 
 
-#### captionSettings.indicator.symbol<span class="type-signature type object">object</span>
+### captionSettings.indicator.symbol<span class="type-signature type object">object</span>
 
 
 
@@ -1065,7 +1084,7 @@ Contains property to customize the symbol of indicator.
 
 
 
-#### captionSettings.indicator.symbol.border<span class="type-signature type object">object</span>
+### captionSettings.indicator.symbol.border<span class="type-signature type object">object</span>
 
 
 
@@ -1086,7 +1105,7 @@ Contains property to customize the border of indicator symbol.
 
 
 
-#### captionSettings.indicator.symbol.border.color<span class="type-signature type string">string</span>
+### captionSettings.indicator.symbol.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -1117,7 +1136,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1134,7 +1154,7 @@ captionSettings :{indicator :{symbol : { border: { color :"green" } }}}
 
 
 
-#### captionSettings.indicator.symbol.border.width<span class="type-signature type number">Number</span>
+### captionSettings.indicator.symbol.border.width<span class="type-signature type number">Number</span>
 
 
 
@@ -1165,7 +1185,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1182,7 +1203,7 @@ captionSettings :{indicator :{symbol : { border: { width : 2 } }}}
 
 
 
-#### captionSettings.indicator.symbol.color<span class="type-signature type string">string</span>
+### captionSettings.indicator.symbol.color<span class="type-signature type string">string</span>
 
 
 
@@ -1213,7 +1234,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1230,7 +1252,7 @@ captionSettings :{indicator :{symbol : { color :"green" }}}
 
 
 
-#### captionSettings.indicator.symbol.imageURL<span class="type-signature type string">string</span>
+### captionSettings.indicator.symbol.imageURL<span class="type-signature type string">string</span>
 
 
 
@@ -1261,7 +1283,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1278,7 +1301,7 @@ captionSettings :{indicator :{symbol : { imageURL :"../BulletIndicator.png" }}}
 
 
 
-#### captionSettings.indicator.symbol.opacity<span class="type-signature type number">number</span>
+### captionSettings.indicator.symbol.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -1309,7 +1332,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1326,7 +1350,7 @@ captionSettings :{indicator :{symbol : { opacity :0.5 }}}
 
 
 
-#### captionSettings.indicator.symbol.shape<span class="type-signature type string">string</span>
+### captionSettings.indicator.symbol.shape<span class="type-signature type string">string</span>
 
 
 
@@ -1357,7 +1381,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1374,7 +1399,7 @@ captionSettings :{indicator :{symbol : { shape :"triangle" }}}
 
 
 
-#### captionSettings.indicator.symbol.size<span class="type-signature type object">object</span>
+### captionSettings.indicator.symbol.size<span class="type-signature type object">object</span>
 
 
 
@@ -1395,7 +1420,7 @@ Contains property to customize the size of indicator symbol.
 
 
 
-#### captionSettings.indicator.symbol.size.height<span class="type-signature type number">number</span>
+### captionSettings.indicator.symbol.size.height<span class="type-signature type number">number</span>
 
 
 
@@ -1426,7 +1451,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1443,7 +1469,7 @@ captionSettings :{indicator :{symbol : { size : { height: 10 } }}}
 
 
 
-#### captionSettings.indicator.symbol.size.width<span class="type-signature type number">number</span>
+### captionSettings.indicator.symbol.size.width<span class="type-signature type number">number</span>
 
 
 
@@ -1474,7 +1500,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1491,7 +1518,7 @@ captionSettings :{indicator :{symbol : { size : { width: 10 }}}
 
 
 
-#### captionSettings.indicator.text<span class="type-signature type string">string</span>
+### captionSettings.indicator.text<span class="type-signature type string">string</span>
 
 
 
@@ -1522,7 +1549,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1539,7 +1567,7 @@ captionSettings :{ indicator :{text : "Power Production"} }
 
 
 
-#### captionSettings.indicator.textAlignment<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.textAlignment<span class="type-signature type enum">enum</span>
 
 
 
@@ -1570,7 +1598,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1587,7 +1616,7 @@ captionSettings :{ indicator:{textAlignment: 'Far'}}
 
 
 
-#### captionSettings.indicator.textAnchor<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.textAnchor<span class="type-signature type enum">enum</span>
 
 
 
@@ -1618,7 +1647,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1635,7 +1665,7 @@ captionSettings :{ indicator: {textAnchor: 'end'}}
 
 
 
-#### captionSettings.indicator.textAngle<span class="type-signature type number">number</span>
+### captionSettings.indicator.textAngle<span class="type-signature type number">number</span>
 
 
 
@@ -1666,7 +1696,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1683,7 +1714,7 @@ captionSettings :{ indicator :{textAngle :10} }
 
 
 
-#### captionSettings.indicator.textPosition<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.textPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -1714,7 +1745,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1731,7 +1763,7 @@ captionSettings :{ indicator: {textPosition: 'Top'}}
 
 
 
-#### captionSettings.indicator.textSpacing<span class="type-signature type number">number</span>
+### captionSettings.indicator.textSpacing<span class="type-signature type number">number</span>
 
 
 
@@ -1762,7 +1794,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1779,7 +1812,7 @@ captionSettings :{ indicator :{textSpacing :10} }
 
 
 
-#### captionSettings.indicator.visibile<span class="type-signature type boolean">boolean</span>
+### captionSettings.indicator.visibile<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1810,7 +1843,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1827,7 +1861,7 @@ captionSettings :{ indicator :{visible : true} }
 
 
 
-#### captionSettings.location<span class="type-signature type object">object</span>
+### captionSettings.location<span class="type-signature type object">object</span>
 
 
 
@@ -1848,7 +1882,7 @@ Contains property to customize the location.
 
 
 
-#### captionSettings.location.x<span class="type-signature type number">number</span>
+### captionSettings.location.x<span class="type-signature type number">number</span>
 
 
 
@@ -1879,7 +1913,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1896,7 +1931,7 @@ captionSettings :{location :{x :15}}
 
 
 
-#### captionSettings.location.y<span class="type-signature type number">number</span>
+### captionSettings.location.y<span class="type-signature type number">number</span>
 
 
 
@@ -1927,7 +1962,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1944,7 +1980,7 @@ captionSettings :{location :{y :15}}
 
 
 
-#### captionSettings.padding<span class="type-signature type number">number</span>
+### captionSettings.padding<span class="type-signature type number">number</span>
 
 
 
@@ -1975,7 +2011,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1992,7 +2029,7 @@ captionSettings :{padding: 2}
 
 
 
-#### captionSettings.subTitle<span class="type-signature type object">object</span>
+### captionSettings.subTitle<span class="type-signature type object">object</span>
 
 
 
@@ -2013,7 +2050,7 @@ Contains property to customize the subtitle.
 
 
 
-#### captionSettings.subTitle.font<span class="type-signature type object">object</span>
+### captionSettings.subTitle.font<span class="type-signature type object">object</span>
 
 
 
@@ -2034,7 +2071,7 @@ Contains property to customize the font of subtitle.
 
 
 
-#### captionSettings.subTitle.font.color<span class="type-signature type string">string</span>
+### captionSettings.subTitle.font.color<span class="type-signature type string">string</span>
 
 
 
@@ -2065,7 +2102,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2082,7 +2120,7 @@ captionSettings :{subTitle :{font : { color :"green" }}}
 
 
 
-#### captionSettings.subTitle.font.fontFamily<span class="type-signature type string">string</span>
+### captionSettings.subTitle.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -2113,7 +2151,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2130,7 +2169,7 @@ captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}
 
 
 
-#### captionSettings.subTitle.font.fontStyle<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.font.fontStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -2161,7 +2200,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2178,7 +2218,7 @@ captionSettings :{subTitle :{font : { fontStyle :"italic" }}}
 
 
 
-#### captionSettings.subTitle.font.fontWeight<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.font.fontWeight<span class="type-signature type enum">enum</span>
 
 
 
@@ -2209,7 +2249,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2226,7 +2267,7 @@ captionSettings :{subTitle :{font : { fontWeight :"lighter" }}}
 
 
 
-#### captionSettings.subTitle.font.opacity<span class="type-signature type number">number</span>
+### captionSettings.subTitle.font.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -2257,7 +2298,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2274,7 +2316,7 @@ captionSettings :{subTitle :{font : { opacity :0.5 }}}
 
 
 
-#### captionSettings.subTitle.font.size<span class="type-signature type string">string</span>
+### captionSettings.subTitle.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -2305,7 +2347,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2322,7 +2365,7 @@ captionSettings :{subTitle :{font : { size :"14px" }}}
 
 
 
-#### captionSettings.subTitle.location<span class="type-signature type object">object</span>
+### captionSettings.subTitle.location<span class="type-signature type object">object</span>
 
 
 
@@ -2343,7 +2386,7 @@ Contains property to customize the location of subtitle.
 
 
 
-#### captionSettings.subTitle.location.x<span class="type-signature type number">number</span>
+### captionSettings.subTitle.location.x<span class="type-signature type number">number</span>
 
 
 
@@ -2374,7 +2417,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2391,7 +2435,7 @@ captionSettings :{subTitle :{location : { x :12 }}}
 
 
 
-#### captionSettings.subTitle.location.y<span class="type-signature type number">number</span>
+### captionSettings.subTitle.location.y<span class="type-signature type number">number</span>
 
 
 
@@ -2422,7 +2466,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2439,7 +2484,7 @@ captionSettings :{subTitle :{location : { y :50 }}}
 
 
 
-#### captionSettings.subTitle.padding<span class="type-signature type number">number</span>
+### captionSettings.subTitle.padding<span class="type-signature type number">number</span>
 
 
 
@@ -2470,7 +2515,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2487,7 +2533,7 @@ captionSettings :{subTitle:{padding: 8}}
 
 
 
-#### captionSettings.subTitle.text<span class="type-signature type string">string</span>
+### captionSettings.subTitle.text<span class="type-signature type string">string</span>
 
 
 
@@ -2518,7 +2564,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2535,7 +2582,7 @@ captionSettings :{ subTitle :{text : "Power Production"} }
 
 
 
-#### captionSettings.subTitle.textAlignment<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.textAlignment<span class="type-signature type enum">enum</span>
 
 
 
@@ -2566,7 +2613,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2583,7 +2631,7 @@ captionSettings :{subTitle:{textAlignment: 'Far'}}
 
 
 
-#### captionSettings.subTitle.textAnchor<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.textAnchor<span class="type-signature type enum">enum</span>
 
 
 
@@ -2614,7 +2662,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2631,7 +2680,7 @@ captionSettings :{ subTitle: {textAnchor: 'end'}}
 
 
 
-#### captionSettings.subTitle.textAngle<span class="type-signature type number">number</span>
+### captionSettings.subTitle.textAngle<span class="type-signature type number">number</span>
 
 
 
@@ -2662,7 +2711,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2679,7 +2729,7 @@ captionSettings :{ subTitle :{textAngle :10} }
 
 
 
-#### captionSettings.subTitle.textPosition<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.textPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -2710,7 +2760,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2727,7 +2778,7 @@ captionSettings :{ subTitle:{textPosition: 'Right'}}
 
 
 
-#### captionSettings.text<span class="type-signature type string">string</span>
+### captionSettings.text<span class="type-signature type string">string</span>
 
 
 
@@ -2758,7 +2809,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2775,7 +2827,7 @@ captionSettings :{text : "Production"}
 
 
 
-#### captionSettings.textAlignment<span class="type-signature type enum">enum</span>
+### captionSettings.textAlignment<span class="type-signature type enum">enum</span>
 
 
 
@@ -2806,7 +2858,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2823,7 +2876,7 @@ captionSettings :{textAlignment: 'Center'}
 
 
 
-#### captionSettings.textAnchor<span class="type-signature type enum">enum</span>
+### captionSettings.textAnchor<span class="type-signature type enum">enum</span>
 
 
 
@@ -2854,7 +2907,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2871,7 +2925,7 @@ captionSettings :{textAnchor: 'middle'}
 
 
 
-#### captionSettings.textAngle<span class="type-signature type number">number</span>
+### captionSettings.textAngle<span class="type-signature type number">number</span>
 
 
 
@@ -2902,7 +2956,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2919,7 +2974,7 @@ captionSettings :{textAngle : 5}
 
 
 
-#### captionSettings.textPosition<span class="type-signature type enum">enum</span>
+### captionSettings.textPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -2950,7 +3005,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2967,7 +3023,7 @@ captionSettings :{textPosition: 'Top'}
 
 
 
-#### comparativeMeasureValue<span class="type-signature type number">number</span>
+### comparativeMeasureValue<span class="type-signature type number">number</span>
 
 
 
@@ -2998,7 +3054,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3015,7 +3072,7 @@ comparativeMeasureValue : 1
 
 
 
-#### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3046,7 +3103,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3063,7 +3121,7 @@ enableAnimation : false
 
 
 
-#### enableResizing<span class="type-signature type boolean">boolean</span>
+### enableResizing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3094,7 +3152,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3111,7 +3170,7 @@ enableResizing : false
 
 
 
-#### flowDirection<span class="type-signature type enum">enum</span>
+### flowDirection<span class="type-signature type enum">enum</span>
 
 
 
@@ -3142,7 +3201,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3159,7 +3219,7 @@ flowDirection : "backward"
 
 
 
-#### height<span class="type-signature type number">number</span>
+### height<span class="type-signature type number">number</span>
 
 
 
@@ -3190,7 +3250,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3207,7 +3268,7 @@ height : 600
 
 
 
-#### orientation<span class="type-signature type enum">enum</span>
+### orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -3238,7 +3299,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3255,7 +3317,7 @@ orientation : "vertical"
 
 
 
-#### qualitativeRanges<span class="type-signature type array">array</span>
+### qualitativeRanges<span class="type-signature type array">array</span>
 
 
 
@@ -3276,7 +3338,7 @@ Contains property to customize the qualitative ranges.
 
 
 
-#### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
 
 
 
@@ -3307,7 +3369,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3324,7 +3387,7 @@ qualitativeRanges :[{rangeEnd : 4.5}]
 
 
 
-#### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
 
 
 
@@ -3355,7 +3418,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3372,7 +3436,7 @@ qualitativeRanges :[{rangeEnd : 7}]
 
 
 
-#### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
 
 
 
@@ -3403,7 +3467,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3420,7 +3485,7 @@ qualitativeRanges :[{rangeEnd : 5}]
 
 
 
-#### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
 
 
 
@@ -3451,7 +3516,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3468,7 +3534,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 
-#### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
 
 
 
@@ -3499,7 +3565,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3516,7 +3583,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 
-#### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
 
 
 
@@ -3547,7 +3614,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3564,7 +3632,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 
-#### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
 
 
 
@@ -3595,7 +3663,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3612,7 +3681,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 
-#### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
 
 
 
@@ -3643,7 +3712,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3660,7 +3730,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 
-#### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
 
 
 
@@ -3691,7 +3761,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3708,7 +3779,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 
-#### qualitativeRangeSize<span class="type-signature type number">number</span>
+### qualitativeRangeSize<span class="type-signature type number">number</span>
 
 
 
@@ -3739,7 +3810,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3756,7 +3828,7 @@ qualitativeRangeSize : 35
 
 
 
-#### quantitativeScaleLength<span class="type-signature type number">number</span>
+### quantitativeScaleLength<span class="type-signature type number">number</span>
 
 
 
@@ -3787,7 +3859,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3804,7 +3877,7 @@ quantitativeScaleLength :500
 
 
 
-#### quantitativeScaleSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3825,7 +3898,7 @@ Contains all the properties to customize quantitative scale.
 
 
 
-#### quantitativeScaleSettings.comparativeMeasureSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.comparativeMeasureSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3846,7 +3919,7 @@ Contains property to customize the comparative measure.
 
 
 
-#### quantitativeScaleSettings.comparativeMeasureSettings.stroke<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.comparativeMeasureSettings.stroke<span class="type-signature type number">number</span>
 
 
 
@@ -3877,7 +3950,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3894,7 +3968,7 @@ quantitativeScaleSettings : { comparativeMeasureSettings :{ stroke :2} }
 
 
 
-#### quantitativeScaleSettings.comparativeMeasureSettings.width<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.comparativeMeasureSettings.width<span class="type-signature type number">number</span>
 
 
 
@@ -3925,7 +3999,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3942,7 +4017,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-#### quantitativeScaleSettings.featuredMeasureSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.featuredMeasureSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3963,7 +4038,7 @@ Contains property to customize the featured measure.
 
 
 
-#### quantitativeScaleSettings.featuredMeasureSettings.stroke<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.featuredMeasureSettings.stroke<span class="type-signature type number">number</span>
 
 
 
@@ -3994,7 +4069,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4011,7 +4087,7 @@ quantitativeScaleSettings : { featuredMeasureSettings :{stroke : 2} }
 
 
 
-#### quantitativeScaleSettings.featuredMeasureSettings.width<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.featuredMeasureSettings.width<span class="type-signature type number">number</span>
 
 
 
@@ -4042,7 +4118,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4059,7 +4136,7 @@ Default Value:
 
 
 
-#### quantitativeScaleSettings.featureMeasures<span class="type-signature type array">array</span>
+### quantitativeScaleSettings.featureMeasures<span class="type-signature type array">array</span>
 
 
 
@@ -4080,7 +4157,7 @@ Contains property to customize the featured measure.
 
 
 
-#### quantitativeScaleSettings.featureMeasures.category<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.featureMeasures.category<span class="type-signature type string">string</span>
 
 
 
@@ -4111,7 +4188,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4128,7 +4206,7 @@ quantitativeScaleSettings : { featureMeasures :[{ category :null}] }
 
 
 
-#### quantitativeScaleSettings.featureMeasures.comparativeMeasureValue<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.featureMeasures.comparativeMeasureValue<span class="type-signature type number">number</span>
 
 
 
@@ -4159,7 +4237,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4176,7 +4255,7 @@ quantitativeScaleSettings : { featureMeasures :[{ comparativeMeasureValue :2}] }
 
 
 
-#### quantitativeScaleSettings.featureMeasures.value<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.featureMeasures.value<span class="type-signature type number">number</span>
 
 
 
@@ -4207,7 +4286,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4224,7 +4304,7 @@ quantitativeScaleSettings : { featureMeasures :[{ value :2}] }
 
 
 
-#### quantitativeScaleSettings.fields<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.fields<span class="type-signature type object">object</span>
 
 
 
@@ -4245,7 +4325,7 @@ Contains property to customize the fields.
 
 
 
-#### quantitativeScaleSettings.fields.category<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.category<span class="type-signature type string">string</span>
 
 
 
@@ -4276,7 +4356,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4293,7 +4374,7 @@ fields :{category : "ProductId"}
 
 
 
-#### quantitativeScaleSettings.fields.comparativeMeasure<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.comparativeMeasure<span class="type-signature type string">string</span>
 
 
 
@@ -4324,7 +4405,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4341,7 +4423,7 @@ fields :{comparativeMeasure : "comparativeMeasureValue"}
 
 
 
-#### quantitativeScaleSettings.fields.dataSource<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.fields.dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -4372,7 +4454,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4424,7 +4507,7 @@ fields : {datasource :{ej.DataManger :{url : "http://mvc.syncfusion.com/Services
 
 
 
-#### quantitativeScaleSettings.fields.featureMeasures<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.featureMeasures<span class="type-signature type string">string</span>
 
 
 
@@ -4455,7 +4538,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4472,7 +4556,7 @@ fields :{featureMeasures : "UnitPrice"}
 
 
 
-#### quantitativeScaleSettings.fields.query<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.query<span class="type-signature type string">string</span>
 
 
 
@@ -4509,7 +4593,7 @@ Default Value:
 
 
 
-#### quantitativeScaleSettings.fields.tableName<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.tableName<span class="type-signature type string">string</span>
 
 
 
@@ -4540,7 +4624,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4557,7 +4642,7 @@ fields :{tableName : "Product"}
 
 
 
-#### quantitativeScaleSettings.interval<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.interval<span class="type-signature type number">number</span>
 
 
 
@@ -4588,7 +4673,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4605,7 +4691,7 @@ quantitativeScaleSettings : { interval : 2 }
 
 
 
-#### quantitativeScaleSettings.labelSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.labelSettings<span class="type-signature type object">object</span>
 
 
 
@@ -4626,7 +4712,7 @@ Contains property to customize the labels.
 
 
 
-#### quantitativeScaleSettings.labelSettings.font<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.labelSettings.font<span class="type-signature type object">object</span>
 
 
 
@@ -4647,7 +4733,7 @@ Contains property to customize the font of the labels in bullet graph.
 
 
 
-#### quantitativeScaleSettings.labelSettings.font.fontFamily<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.labelSettings.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -4678,7 +4764,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4695,7 +4782,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" 
 
 
 
-#### quantitativeScaleSettings.labelSettings.font.fontStyle<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.labelSettings.font.fontStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -4726,7 +4813,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4743,7 +4831,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } }
 
 
 
-#### quantitativeScaleSettings.labelSettings.font.fontWeight<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.labelSettings.font.fontWeight<span class="type-signature type enum">enum</span>
 
 
 
@@ -4774,7 +4862,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4791,7 +4880,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontWeight : "lighter" }
 
 
 
-#### quantitativeScaleSettings.labelSettings.font.opacity<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.labelSettings.font.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -4822,7 +4911,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4839,7 +4929,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 
 
 
-#### quantitativeScaleSettings.labelSettings.labelPlacement<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.labelSettings.labelPlacement<span class="type-signature type enum">enum</span>
 
 
 
@@ -4870,7 +4960,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4887,7 +4978,7 @@ quantitativeScaleSettings : { labelSettings : { labelPlacement : "inside" } }
 
 
 
-#### quantitativeScaleSettings.labelSettings.labelPrefix<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.labelSettings.labelPrefix<span class="type-signature type string">string</span>
 
 
 
@@ -4918,7 +5009,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4935,7 +5027,7 @@ quantitativeScaleSettings : { labelSettings : { labelPrefix : "$" } }
 
 
 
-#### quantitativeScaleSettings.labelSettings.labelSuffix<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.labelSettings.labelSuffix<span class="type-signature type string">string</span>
 
 
 
@@ -4966,7 +5058,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4983,7 +5076,7 @@ quantitativeScaleSettings : { labelSettings : { labelSuffix : "K" } }
 
 
 
-#### quantitativeScaleSettings.labelSettings.offset<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.labelSettings.offset<span class="type-signature type number">number</span>
 
 
 
@@ -5014,7 +5107,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5031,7 +5125,7 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 
 
 
-#### quantitativeScaleSettings.labelSettings.position<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.labelSettings.position<span class="type-signature type enum">enum</span>
 
 
 
@@ -5062,7 +5156,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5079,7 +5174,7 @@ quantitativeScaleSettings : { labelSettings : { position : "above" } }
 
 
 
-#### quantitativeScaleSettings.labelSettings.size<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.labelSettings.size<span class="type-signature type number">number</span>
 
 
 
@@ -5110,7 +5205,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5127,7 +5223,7 @@ quantitativeScaleSettings : { labelSettings : { size : 10 } }
 
 
 
-#### quantitativeScaleSettings.labelSettings.stroke<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.labelSettings.stroke<span class="type-signature type string">string</span>
 
 
 
@@ -5158,7 +5254,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5175,7 +5272,7 @@ quantitativeScaleSettings : { labelSettings : { stroke : "green" } }
 
 
 
-#### quantitativeScaleSettings.location<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.location<span class="type-signature type object">object</span>
 
 
 
@@ -5196,7 +5293,7 @@ Contains property to customize the position of the quantitative scale
 
 
 
-#### quantitativeScaleSettings.location.x<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.location.x<span class="type-signature type number">number</span>
 
 
 
@@ -5227,7 +5324,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5244,7 +5342,7 @@ quantitativeScaleSettings : { location : { x : 15 } }
 
 
 
-#### quantitativeScaleSettings.location.y<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.location.y<span class="type-signature type number">number</span>
 
 
 
@@ -5275,7 +5373,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5292,7 +5391,7 @@ quantitativeScaleSettings : { location : { y : 15 } }
 
 
 
-#### quantitativeScaleSettings.majorTickSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.majorTickSettings<span class="type-signature type object">object</span>
 
 
 
@@ -5313,7 +5412,7 @@ Contains property to customize the major tick lines.
 
 
 
-#### quantitativeScaleSettings.majorTickSettings.size<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.majorTickSettings.size<span class="type-signature type number">number</span>
 
 
 
@@ -5344,7 +5443,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5361,7 +5461,7 @@ quantitativeScaleSettings : { majorTickSettings : { size : 15 } }
 
 
 
-#### quantitativeScaleSettings.majorTickSettings.stroke<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.majorTickSettings.stroke<span class="type-signature type string">string</span>
 
 
 
@@ -5392,7 +5492,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5409,7 +5510,7 @@ quantitativeScaleSettings : { majorTickSettings : { stroke : "red" } }
 
 
 
-#### quantitativeScaleSettings.majorTickSettings.width<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.majorTickSettings.width<span class="type-signature type number">number</span>
 
 
 
@@ -5440,7 +5541,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5457,7 +5559,7 @@ quantitativeScaleSettings : { majorTickSettings : { width : 1 } }
 
 
 
-#### quantitativeScaleSettings.maximum<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.maximum<span class="type-signature type number">number</span>
 
 
 
@@ -5488,7 +5590,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5505,7 +5608,7 @@ quantitativeScaleSettings : { maximum : 8 }
 
 
 
-#### quantitativeScaleSettings.minimum<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.minimum<span class="type-signature type number">number</span>
 
 
 
@@ -5536,7 +5639,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5553,7 +5657,7 @@ quantitativeScaleSettings : { minimum : 1 }
 
 
 
-#### quantitativeScaleSettings.minorTickSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.minorTickSettings<span class="type-signature type object">object</span>
 
 
 
@@ -5574,7 +5678,7 @@ Contains property to customize the minor ticks.
 
 
 
-#### quantitativeScaleSettings.minorTickSettings.size<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.minorTickSettings.size<span class="type-signature type number">number</span>
 
 
 
@@ -5605,7 +5709,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5622,7 +5727,7 @@ quantitativeScaleSettings : { minorTickSettings : { size : 10} }
 
 
 
-#### quantitativeScaleSettings.minorTickSettings.stroke<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.minorTickSettings.stroke<span class="type-signature type string">string</span>
 
 
 
@@ -5653,7 +5758,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5670,7 +5776,7 @@ quantitativeScaleSettings : { minorTickSettings : { stroke : "green" } }
 
 
 
-#### quantitativeScaleSettings.minorTickSettings.width<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.minorTickSettings.width<span class="type-signature type number">number</span>
 
 
 
@@ -5701,7 +5807,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5718,7 +5825,7 @@ quantitativeScaleSettings : { minorTickSettings : { width : 1 } }
 
 
 
-#### quantitativeScaleSettings.minorTicksPerInterval<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.minorTicksPerInterval<span class="type-signature type number">number</span>
 
 
 
@@ -5749,7 +5856,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5766,7 +5874,7 @@ quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 
 
 
-#### quantitativeScaleSettings.tickPlacement<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.tickPlacement<span class="type-signature type enum">enum</span>
 
 
 
@@ -5797,7 +5905,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5814,7 +5923,7 @@ quantitativeScaleSettings : { tickPlacement : "inside" }
 
 
 
-#### quantitativeScaleSettings.tickPosition<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.tickPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -5845,7 +5954,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5862,7 +5972,7 @@ quantitativeScaleSettings : { tickPosition : "near" }
 
 
 
-#### theme<span class="type-signature type string">string</span>
+### theme<span class="type-signature type string">string</span>
 
 
 
@@ -5893,7 +6003,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5910,7 +6021,7 @@ theme : "flatdark"
 
 
 
-#### tooltipSettings<span class="type-signature type object">object</span>
+### tooltipSettings<span class="type-signature type object">object</span>
 
 
 
@@ -5931,7 +6042,7 @@ Contains all the properties to customize tooltip.
 
 
 
-#### tooltipSettings.captionTemplate<span class="type-signature type string">string</span>
+### tooltipSettings.captionTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -5962,7 +6073,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5979,7 +6091,7 @@ tooltipSettings :{captionTemplate: "Tooltip"}
 
 
 
-#### tooltipSettings.enableCaptionTooltip<span class="type-signature type boolean">boolean</span>
+### tooltipSettings.enableCaptionTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6010,7 +6122,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6027,7 +6140,7 @@ tooltipSettings :{enableCaptionTooltip: true}
 
 
 
-#### tooltipSettings.template<span class="type-signature type string">string</span>
+### tooltipSettings.template<span class="type-signature type string">string</span>
 
 
 
@@ -6058,7 +6171,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6075,7 +6189,7 @@ tooltipSettings: { template : "tooltip"},
 
 
 
-#### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
+### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6106,7 +6220,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6123,7 +6238,7 @@ tooltipSettings :{visible: false}
 
 
 
-#### value<span class="type-signature type number">number</span>
+### value<span class="type-signature type number">number</span>
 
 
 
@@ -6154,7 +6269,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6171,7 +6287,7 @@ value : 1
 
 
 
-#### width<span class="type-signature type number">number</span>
+### width<span class="type-signature type number">number</span>
 
 
 
@@ -6202,7 +6318,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6217,7 +6334,7 @@ width : 600
 
 
 
-### Methods
+## Methods
 
 
 
@@ -6226,7 +6343,7 @@ width : 600
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -6241,7 +6358,8 @@ To destroy the bullet graph
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6268,7 +6386,7 @@ $("#bulletGraph1").ejButton("destroy");
 
 
 
-#### redraw<span class="signature">()</span>
+### redraw<span class="signature">()</span>
 
 
 
@@ -6283,7 +6401,8 @@ To redraw the bulet graph
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6310,7 +6429,7 @@ $("#butbulletGraph1ton1").ejButton("redraw");
 
 
 
-#### setComparativeMeasureSymbol<span class="signature">()</span>
+### setComparativeMeasureSymbol<span class="signature">()</span>
 
 
 
@@ -6346,7 +6465,8 @@ To set the value for comparative measure in bullet graph.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6373,7 +6493,7 @@ $("#bulletGraph1").ejBulletGraph("setComparativeMeasureSymbol(1,7)");
 
 
 
-#### setFeatureMeasureBarValue<span class="signature">()</span>
+### setFeatureMeasureBarValue<span class="signature">()</span>
 
 
 
@@ -6409,7 +6529,8 @@ To set the value for feature measure bar.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6434,7 +6555,7 @@ $("#bulletGraph1").ejBulletGraph("setFeatureMeasureBarValue(1,8)");
 
 
 
-### Events
+## Events
 
 
 
@@ -6443,7 +6564,7 @@ $("#bulletGraph1").ejBulletGraph("setFeatureMeasureBarValue(1,8)");
 
 
 
-#### drawCaption
+### drawCaption
 
 
 
@@ -6489,7 +6610,8 @@ Fires on rendering the caption of bullet graph.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6504,7 +6626,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-#### drawCategory
+### drawCategory
 
 
 
@@ -6550,7 +6672,8 @@ Fires on rendering the category.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6565,7 +6688,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-#### drawComparativeMeasureSymbol
+### drawComparativeMeasureSymbol
 
 
 
@@ -6611,7 +6734,8 @@ Fires on rendering the comparative measure symbol.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6626,7 +6750,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-#### drawFeatureMeasureBar
+### drawFeatureMeasureBar
 
 
 
@@ -6672,7 +6796,8 @@ Fires on rednering the feature measure bar.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6687,7 +6812,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-#### drawIndicator
+### drawIndicator
 
 
 
@@ -6733,7 +6858,8 @@ Fires on rendering the indicator of bullet graph.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6748,7 +6874,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-#### drawLabels
+### drawLabels
 
 
 
@@ -6794,7 +6920,8 @@ Fires on rendering the labels.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6809,7 +6936,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-#### drawQualitativeRanges
+### drawQualitativeRanges
 
 
 
@@ -6855,7 +6982,8 @@ Fires on rendering the qualitative ranges.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6870,7 +6998,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-#### load
+### load
 
 
 
@@ -6885,7 +7013,8 @@ Fires on loading bullet graph.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

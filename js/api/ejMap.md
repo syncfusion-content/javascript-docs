@@ -25,7 +25,7 @@ The map can be easily configured to the DOM element, such as div and can be crea
 
 
 
-#### $(element).ejMap<span class="signature">()</span>
+## $(element).ejMap<span class="signature">()</span>
 
 
 
@@ -37,7 +37,8 @@ The map can be easily configured to the DOM element, such as div and can be crea
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -56,7 +57,7 @@ $('#container').ejMap();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -75,7 +76,7 @@ $('#container').ejMap();
 
 
 
-### Members
+## Members
 
 
 
@@ -84,7 +85,7 @@ $('#container').ejMap();
 
 
 
-#### background<span class="type-signature type string">string</span>
+### background<span class="type-signature type string">string</span>
 
 
 
@@ -115,7 +116,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -136,7 +138,7 @@ Default Value:
 
 
 
-#### baseMapIndex<span class="type-signature type number">number</span>
+### baseMapIndex<span class="type-signature type number">number</span>
 
 
 
@@ -167,7 +169,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -188,7 +191,7 @@ Default Value:
 
 
 
-#### centerPosition<span class="type-signature type object">object</span>
+### centerPosition<span class="type-signature type object">object</span>
 
 
 
@@ -219,7 +222,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -240,7 +244,7 @@ Default Value:
 
 
 
-#### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -271,7 +275,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -293,7 +298,7 @@ Default Value:
 
 
 
-#### enableLayerChangeAnimation<span class="type-signature type boolean">boolean</span>
+### enableLayerChangeAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -324,7 +329,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -346,7 +352,7 @@ Default Value:
 
 
 
-#### enablePan<span class="type-signature type boolean">boolean</span>
+### enablePan<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -377,7 +383,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -399,7 +406,7 @@ Default Value:
 
 
 
-#### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -430,7 +437,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -452,7 +460,7 @@ Default Value:
 
 
 
-#### enableZoom<span class="type-signature type boolean">boolean</span>
+### enableZoom<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -483,7 +491,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -505,7 +514,7 @@ Default Value:
 
 
 
-#### enableZoomOnSelection<span class="type-signature type boolean">boolean</span>
+### enableZoomOnSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -536,7 +545,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -558,7 +568,7 @@ Default Value:
 
 
 
-#### factor<span class="type-signature type number">number</span>
+### factor<span class="type-signature type number">number</span>
 
 
 
@@ -589,7 +599,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -610,7 +621,7 @@ Default Value:
 
 
 
-#### layers<span class="type-signature type shapelayer">shapeLayer</span>
+### layers<span class="type-signature type shapelayer">shapeLayer</span>
 
 
 
@@ -641,7 +652,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -662,7 +674,7 @@ Default Value:
 
 
 
-#### level<span class="type-signature type number">number</span>
+### level<span class="type-signature type number">number</span>
 
 
 
@@ -693,7 +705,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -714,7 +727,7 @@ Default Value:
 
 
 
-#### maxValue<span class="type-signature type number">number</span>
+### maxValue<span class="type-signature type number">number</span>
 
 
 
@@ -745,7 +758,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -766,7 +780,7 @@ Default Value:
 
 
 
-#### minValue<span class="type-signature type number">number</span>
+### minValue<span class="type-signature type number">number</span>
 
 
 
@@ -797,7 +811,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -818,7 +833,7 @@ Default Value:
 
 
 
-#### model.navigationControl. absolutePosition<span class="type-signature type object">object</span>
+### model.navigationControl. absolutePosition<span class="type-signature type object">object</span>
 
 
 
@@ -849,7 +864,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -870,7 +886,7 @@ $("#container").ejMap(navigationControl:{absolutePosition:{x:5,y:20}});</code>
 
 
 
-#### model.navigationControl. content<span class="type-signature type string">string</span>
+### model.navigationControl. content<span class="type-signature type string">string</span>
 
 
 
@@ -901,7 +917,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -921,7 +938,7 @@ $("#container").ejMap(navigationControl:{content:null});</code>
 
 
 
-#### model.navigationControl. dockPosition<span class="type-signature type enum">enum</span>
+### model.navigationControl. dockPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -952,7 +969,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -973,7 +991,7 @@ $("#container").ejMap(navigationControl:{dockPosition:'centerleft'});</code>
 
 
 
-#### model.navigationControl. enableNavigation<span class="type-signature type boolean">boolean</span>
+### model.navigationControl. enableNavigation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1004,7 +1022,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1025,7 +1044,7 @@ $("#container").ejMap(navigationControl:{enableNavigation:false});</code>
 
 
 
-#### model.navigationControl. orientation<span class="type-signature type enum">enum</span>
+### model.navigationControl. orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -1056,7 +1075,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1077,7 +1097,7 @@ $("#container").ejMap(navigationControl:{orientation:'vertical'});</code>
 
 
 
-#### navigationControl<span class="type-signature type object">object</span>
+### navigationControl<span class="type-signature type object">object</span>
 
 
 
@@ -1098,7 +1118,7 @@ Enables or Disables the navigation control for map to perform zooming and pannin
 
 
 
-#### shapeLayer
+### shapeLayer
 
 
 
@@ -1119,7 +1139,7 @@ Layer for holding the map shapes
 
 
 
-#### shapeLayer.bingMapType<span class="type-signature type enum">enum</span>
+### shapeLayer.bingMapType<span class="type-signature type enum">enum</span>
 
 
 
@@ -1150,7 +1170,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -1171,7 +1192,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings<span class="type-signature type object">object</span>
+### shapeLayer.bubbleSettings<span class="type-signature type object">object</span>
 
 
 
@@ -1186,7 +1207,8 @@ Specifies the bubble settings for map
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1207,7 +1229,7 @@ Specifies the bubble settings for map
 
 
 
-#### shapeLayer.bubbleSettings.bubbleOpacity<span class="type-signature type number">number</span>
+### shapeLayer.bubbleSettings.bubbleOpacity<span class="type-signature type number">number</span>
 
 
 
@@ -1238,7 +1260,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1260,7 +1283,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.color<span class="type-signature type string">string</span>
+### shapeLayer.bubbleSettings.color<span class="type-signature type string">string</span>
 
 
 
@@ -1291,7 +1314,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1313,7 +1337,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.colorMappings<span class="type-signature type object">object</span>
+### shapeLayer.bubbleSettings.colorMappings<span class="type-signature type object">object</span>
 
 
 
@@ -1344,7 +1368,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1366,7 +1391,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.colorValuePath<span class="type-signature type string">string</span>
+### shapeLayer.bubbleSettings.colorValuePath<span class="type-signature type string">string</span>
 
 
 
@@ -1397,7 +1422,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1419,7 +1445,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.maxValue<span class="type-signature type number">number</span>
+### shapeLayer.bubbleSettings.maxValue<span class="type-signature type number">number</span>
 
 
 
@@ -1450,7 +1476,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1472,7 +1499,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.minValue<span class="type-signature type number">number</span>
+### shapeLayer.bubbleSettings.minValue<span class="type-signature type number">number</span>
 
 
 
@@ -1503,7 +1530,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1525,7 +1553,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.showBubble<span class="type-signature type boolean">boolean</span>
+### shapeLayer.bubbleSettings.showBubble<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1556,7 +1584,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1578,7 +1607,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.showTooltip<span class="type-signature type boolean">boolean</span>
+### shapeLayer.bubbleSettings.showTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1609,7 +1638,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1631,7 +1661,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.tooltipTemplate<span class="type-signature type string">string</span>
+### shapeLayer.bubbleSettings.tooltipTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -1662,7 +1692,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1684,7 +1715,7 @@ Default Value:
 
 
 
-#### shapeLayer.bubbleSettings.valuePath<span class="type-signature type string">string</span>
+### shapeLayer.bubbleSettings.valuePath<span class="type-signature type string">string</span>
 
 
 
@@ -1715,7 +1746,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1737,7 +1769,7 @@ Default Value:
 
 
 
-#### shapeLayer.dataSource<span class="type-signature type object">object</span>
+### shapeLayer.dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -1752,7 +1784,8 @@ Specifies the datasource for the shape layer
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the dataSource of layer during initialization.                        
@@ -1772,7 +1805,7 @@ Specifies the datasource for the shape layer
 
 
 
-#### shapeLayer.enableAnimation<span class="type-signature type boolean">boolean</span>
+### shapeLayer.enableAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1803,7 +1836,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -1824,7 +1858,7 @@ Default Value:
 
 
 
-#### shapeLayer.enableMouseHover<span class="type-signature type boolean">boolean</span>
+### shapeLayer.enableMouseHover<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1855,7 +1889,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -1876,7 +1911,7 @@ Default Value:
 
 
 
-#### shapeLayer.enableSelection<span class="type-signature type boolean">boolean</span>
+### shapeLayer.enableSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1907,7 +1942,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -1928,7 +1964,7 @@ Default Value:
 
 
 
-#### shapeLayer.key<span class="type-signature type string">string</span>
+### shapeLayer.key<span class="type-signature type string">string</span>
 
 
 
@@ -1959,7 +1995,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1980,7 +2017,7 @@ Default Value:
 
 
 
-#### shapeLayer.labelSettings<span class="type-signature type object">object</span>
+### shapeLayer.labelSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2001,7 +2038,7 @@ Options for enabling and configuring labelSettings labelPath, smartLabelSize, la
 
 
 
-#### shapeLayer.labelSettings.enableSmartLabel<span class="type-signature type boolean">boolean</span>
+### shapeLayer.labelSettings.enableSmartLabel<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2032,7 +2069,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the enableSmartLabel value of layer during initialization.                    
@@ -2052,7 +2090,7 @@ Default Value:
 
 
 
-#### shapeLayer.labelSettings.labelLength<span class="type-signature type number">number</span>
+### shapeLayer.labelSettings.labelLength<span class="type-signature type number">number</span>
 
 
 
@@ -2083,7 +2121,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the labelLength value of layer during initialization.                         
@@ -2103,7 +2142,7 @@ Default Value:
 
 
 
-#### shapeLayer.labelSettings.labelPath<span class="type-signature type string">string</span>
+### shapeLayer.labelSettings.labelPath<span class="type-signature type string">string</span>
 
 
 
@@ -2134,7 +2173,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the labelPath value of layer during initialization.                   
@@ -2154,7 +2194,7 @@ Default Value:
 
 
 
-#### shapeLayer.labelSettings.showLabels<span class="type-signature type boolean">boolean</span>
+### shapeLayer.labelSettings.showLabels<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2185,7 +2225,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the showLabel value of layer during initialization.                   
@@ -2205,7 +2246,7 @@ Default Value:
 
 
 
-#### shapeLayer.labelSettings.smartLabelSize<span class="type-signature type enum">enum</span>
+### shapeLayer.labelSettings.smartLabelSize<span class="type-signature type enum">enum</span>
 
 
 
@@ -2236,7 +2277,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the smartLabelSize value of layer during initialization.                      
@@ -2256,7 +2298,7 @@ Default Value:
 
 
 
-#### shapeLayer.layerType<span class="type-signature type enum">enum</span>
+### shapeLayer.layerType<span class="type-signature type enum">enum</span>
 
 
 
@@ -2287,7 +2329,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -2308,7 +2351,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings<span class="type-signature type object">object</span>
+### shapeLayer.legendSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2329,7 +2372,7 @@ Options for enabling and configuring legendSettings position, height, width, mod
 
 
 
-#### shapeLayer.legendSettings.dockOnMap<span class="type-signature type boolean">boolean</span>
+### shapeLayer.legendSettings.dockOnMap<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2360,7 +2403,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2381,7 +2425,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.dockPosition<span class="type-signature type enum">enum</span>
+### shapeLayer.legendSettings.dockPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -2412,7 +2456,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2433,7 +2478,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.height<span class="type-signature type number">number</span>
+### shapeLayer.legendSettings.height<span class="type-signature type number">number</span>
 
 
 
@@ -2464,7 +2509,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2485,7 +2531,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.icon<span class="type-signature type enum">enum</span>
+### shapeLayer.legendSettings.icon<span class="type-signature type enum">enum</span>
 
 
 
@@ -2516,7 +2562,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2537,7 +2584,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.iconHeight<span class="type-signature type number">number</span>
+### shapeLayer.legendSettings.iconHeight<span class="type-signature type number">number</span>
 
 
 
@@ -2568,7 +2615,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2589,7 +2637,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.iconWidth<span class="type-signature type number">number</span>
+### shapeLayer.legendSettings.iconWidth<span class="type-signature type number">number</span>
 
 
 
@@ -2620,7 +2668,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2641,7 +2690,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.labelOrientation<span class="type-signature type enum">enum</span>
+### shapeLayer.legendSettings.labelOrientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -2672,7 +2721,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2693,7 +2743,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.leftLabel<span class="type-signature type string">string</span>
+### shapeLayer.legendSettings.leftLabel<span class="type-signature type string">string</span>
 
 
 
@@ -2724,7 +2774,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2745,7 +2796,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.mode<span class="type-signature type enum">enum</span>
+### shapeLayer.legendSettings.mode<span class="type-signature type enum">enum</span>
 
 
 
@@ -2776,7 +2827,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2797,7 +2849,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.position<span class="type-signature type enum">enum</span>
+### shapeLayer.legendSettings.position<span class="type-signature type enum">enum</span>
 
 
 
@@ -2828,7 +2880,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2849,7 +2902,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.positionX<span class="type-signature type number">number</span>
+### shapeLayer.legendSettings.positionX<span class="type-signature type number">number</span>
 
 
 
@@ -2880,7 +2933,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2901,7 +2955,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.positionY<span class="type-signature type number">number</span>
+### shapeLayer.legendSettings.positionY<span class="type-signature type number">number</span>
 
 
 
@@ -2932,7 +2986,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2953,7 +3008,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.rightLabel<span class="type-signature type string">string</span>
+### shapeLayer.legendSettings.rightLabel<span class="type-signature type string">string</span>
 
 
 
@@ -2984,7 +3039,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3005,7 +3061,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.showLabels<span class="type-signature type boolean">boolean</span>
+### shapeLayer.legendSettings.showLabels<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3036,7 +3092,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3057,7 +3114,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.showLegend<span class="type-signature type boolean">boolean</span>
+### shapeLayer.legendSettings.showLegend<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3088,7 +3145,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3109,7 +3167,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.title<span class="type-signature type string">string</span>
+### shapeLayer.legendSettings.title<span class="type-signature type string">string</span>
 
 
 
@@ -3140,7 +3198,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3161,7 +3220,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.type<span class="type-signature type enum">enum</span>
+### shapeLayer.legendSettings.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -3192,7 +3251,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3213,7 +3273,7 @@ Default Value:
 
 
 
-#### shapeLayer.legendSettings.width<span class="type-signature type number">number</span>
+### shapeLayer.legendSettings.width<span class="type-signature type number">number</span>
 
 
 
@@ -3244,7 +3304,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3265,7 +3326,7 @@ Default Value:
 
 
 
-#### shapeLayer.mapItemsTemplate<span class="type-signature type string">string</span>
+### shapeLayer.mapItemsTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -3280,7 +3341,8 @@ Specifies the map items template for shapes.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the mapItemsTemplate of layer during initialization.                  
@@ -3300,7 +3362,7 @@ Specifies the map items template for shapes.
 
 
 
-#### shapeLayer.markers<span class="type-signature type marker">marker</span>
+### shapeLayer.markers<span class="type-signature type marker">marker</span>
 
 
 
@@ -3331,7 +3393,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -3352,7 +3415,7 @@ Default Value:
 
 
 
-#### shapeLayer.markerTemplate<span class="type-signature type string">string</span>
+### shapeLayer.markerTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -3383,7 +3446,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the markerTemplate of layer during initialization.                    
@@ -3403,7 +3467,7 @@ Default Value:
 
 
 
-#### shapeLayer.selectedMapShapes<span class="type-signature type object">object</span>
+### shapeLayer.selectedMapShapes<span class="type-signature type object">object</span>
 
 
 
@@ -3434,7 +3498,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3447,7 +3512,7 @@ Default Value:
 
 
 
-#### shapeLayer.selectionMode<span class="type-signature type enum">enum</span>
+### shapeLayer.selectionMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -3478,7 +3543,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -3499,7 +3565,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeData<span class="type-signature type object">object</span>
+### shapeLayer.shapeData<span class="type-signature type object">object</span>
 
 
 
@@ -3514,7 +3580,8 @@ Specifies the shape data for the shape layer
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the shapeData of layer during initialization.                         
@@ -3534,7 +3601,7 @@ Specifies the shape data for the shape layer
 
 
 
-#### shapeLayer.shapeSettings<span class="type-signature type object">object</span>
+### shapeLayer.shapeSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3549,7 +3616,8 @@ Specifies the shape settings of map layer
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the shapeSettings of layer during initialization.                     
@@ -3569,7 +3637,7 @@ Specifies the shape settings of map layer
 
 
 
-#### shapeLayer.shapeSettings.autoFill<span class="type-signature type boolean">boolean</span>
+### shapeLayer.shapeSettings.autoFill<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3600,7 +3668,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3622,7 +3691,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.colorMappings<span class="type-signature type object">object</span>
+### shapeLayer.shapeSettings.colorMappings<span class="type-signature type object">object</span>
 
 
 
@@ -3653,7 +3722,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3675,7 +3745,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.colorPalette<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.colorPalette<span class="type-signature type string">string</span>
 
 
 
@@ -3706,7 +3776,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3728,7 +3799,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.colorValuePath<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.colorValuePath<span class="type-signature type string">string</span>
 
 
 
@@ -3759,7 +3830,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3781,7 +3853,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.enableGradient<span class="type-signature type boolean">boolean</span>
+### shapeLayer.shapeSettings.enableGradient<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3812,7 +3884,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3834,7 +3907,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.fill<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.fill<span class="type-signature type string">string</span>
 
 
 
@@ -3865,7 +3938,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3887,7 +3961,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.highlightBorderWidth<span class="type-signature type number">number</span>
+### shapeLayer.shapeSettings.highlightBorderWidth<span class="type-signature type number">number</span>
 
 
 
@@ -3918,7 +3992,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3940,7 +4015,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.highlightColor<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.highlightColor<span class="type-signature type string">string</span>
 
 
 
@@ -3971,7 +4046,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3993,7 +4069,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.highlightStroke<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.highlightStroke<span class="type-signature type string">string</span>
 
 
 
@@ -4024,7 +4100,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4046,7 +4123,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.selectionColor<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.selectionColor<span class="type-signature type string">string</span>
 
 
 
@@ -4077,7 +4154,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4099,7 +4177,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.selectionStroke<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.selectionStroke<span class="type-signature type string">string</span>
 
 
 
@@ -4130,7 +4208,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4152,7 +4231,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.selectionStrokeWidth<span class="type-signature type number">number</span>
+### shapeLayer.shapeSettings.selectionStrokeWidth<span class="type-signature type number">number</span>
 
 
 
@@ -4183,7 +4262,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4205,7 +4285,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.stroke<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.stroke<span class="type-signature type string">string</span>
 
 
 
@@ -4236,7 +4316,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4258,7 +4339,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.strokeThickness<span class="type-signature type number">number</span>
+### shapeLayer.shapeSettings.strokeThickness<span class="type-signature type number">number</span>
 
 
 
@@ -4289,7 +4370,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4311,7 +4393,7 @@ Default Value:
 
 
 
-#### shapeLayer.shapeSettings.valuePath<span class="type-signature type string">string</span>
+### shapeLayer.shapeSettings.valuePath<span class="type-signature type string">string</span>
 
 
 
@@ -4342,7 +4424,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4364,7 +4447,7 @@ Default Value:
 
 
 
-#### shapeLayer.showMapItems<span class="type-signature type boolean">boolean</span>
+### shapeLayer.showMapItems<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4395,7 +4478,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -4416,7 +4500,7 @@ Default Value:
 
 
 
-#### shapeLayer.showTooltip<span class="type-signature type boolean">boolean</span>
+### shapeLayer.showTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4447,7 +4531,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -4468,7 +4553,7 @@ Default Value:
 
 
 
-#### shapeLayer.subLayers<span class="type-signature type shapelayer">shapeLayer</span>
+### shapeLayer.subLayers<span class="type-signature type shapelayer">shapeLayer</span>
 
 
 
@@ -4499,7 +4584,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -4520,7 +4606,7 @@ Default Value:
 
 
 
-#### shapeLayer.tooltipTemplate<span class="type-signature type string">string</span>
+### shapeLayer.tooltipTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -4535,7 +4621,8 @@ Specifies the tooltip template for shapes.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>// Set the tooltipTemplate of layer during initialization.                   
@@ -4555,7 +4642,7 @@ Specifies the tooltip template for shapes.
 
 
 
-#### shapeLayer.urlTemplate<span class="type-signature type string">string</span>
+### shapeLayer.urlTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -4586,7 +4673,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -4607,7 +4695,7 @@ Default Value:
 
 
 
-#### zoomSettings<span class="type-signature type object">object</span>
+### zoomSettings<span class="type-signature type object">object</span>
 
 
 
@@ -4626,7 +4714,7 @@ Enables or Disables the Zooming for map.
 
 
 
-### Methods
+## Methods
 
 
 
@@ -4635,7 +4723,7 @@ Enables or Disables the Zooming for map.
 
 
 
-#### navigateTo<span class="signature">(latitude, longitude, level)</span>
+### navigateTo<span class="signature">(latitude, longitude, level)</span>
 
 
 
@@ -4676,7 +4764,8 @@ Method for navigating to specific shape based on latitude, longitude and zoomlev
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4689,7 +4778,7 @@ $("#container").ejMap("navigateTo", lat, lon, level);</code>
 
 
 
-#### pan<span class="signature">(direction)</span>
+### pan<span class="signature">(direction)</span>
 
 
 
@@ -4720,7 +4809,8 @@ Method to perform map panning
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4733,7 +4823,7 @@ $("#container").ejMap("pan", direction);</code>
 
 
 
-#### refresh<span class="signature">()</span>
+### refresh<span class="signature">()</span>
 
 
 
@@ -4748,7 +4838,8 @@ Method to reload the map.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4761,7 +4852,7 @@ $("#container").ejMap("refresh");</code>
 
 
 
-#### refreshLayers<span class="signature">()</span>
+### refreshLayers<span class="signature">()</span>
 
 
 
@@ -4776,7 +4867,8 @@ Method to reload the shapeLayers with updated values
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4789,7 +4881,7 @@ $("#container").ejMap("refreshLayers");</code>
 
 
 
-#### refreshNavigationControl<span class="signature">(navigation)</span>
+### refreshNavigationControl<span class="signature">(navigation)</span>
 
 
 
@@ -4820,7 +4912,8 @@ Method to reload the navigation control with updated values.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4833,7 +4926,7 @@ $("#container").ejMap("refreshNavigationControl",navigation);</code>
 
 
 
-#### zoom<span class="signature">(level, isAnimate)</span>
+### zoom<span class="signature">(level, isAnimate)</span>
 
 
 
@@ -4869,7 +4962,8 @@ Method to perform map zooming.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4880,7 +4974,7 @@ $("#container").ejMap("zoom",level,isAnimate);</code>
 
 
 
-### Events
+## Events
 
 
 
@@ -4889,7 +4983,7 @@ $("#container").ejMap("zoom",level,isAnimate);</code>
 
 
 
-#### markerSelected
+### markerSelected
 
 
 
@@ -4920,7 +5014,8 @@ Triggered on selecting the map markers.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4935,7 +5030,7 @@ $("#container").ejMap({
 
 
 
-#### mouseleave
+### mouseleave
 
 
 
@@ -4966,7 +5061,8 @@ Triggers while leaving the hovered map shape
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4981,7 +5077,7 @@ $("#container").ejMap({
 
 
 
-#### mouseover
+### mouseover
 
 
 
@@ -5012,7 +5108,8 @@ Triggers while hovering the map shape.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5027,7 +5124,7 @@ $("#container").ejMap({
 
 
 
-#### onRenderComplete
+### onRenderComplete
 
 
 
@@ -5058,7 +5155,8 @@ Triggers once map render completed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5073,7 +5171,7 @@ $("#container").ejMap({
 
 
 
-#### panned
+### panned
 
 
 
@@ -5104,7 +5202,8 @@ Triggers when map panning ends.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5119,7 +5218,7 @@ $("#container").ejMap({
 
 
 
-#### shapeSelected
+### shapeSelected
 
 
 
@@ -5150,7 +5249,8 @@ Triggered on selecting the map shapes.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5165,7 +5265,7 @@ $("#container").ejMap({
 
 
 
-#### zoomedIn
+### zoomedIn
 
 
 
@@ -5201,7 +5301,8 @@ Triggered when map is zoomed-in.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5216,7 +5317,7 @@ $("#container").ejMap({
 
 
 
-#### zoomedOut
+### zoomedOut
 
 
 
@@ -5252,7 +5353,8 @@ Triggers when map is zoomed out.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html ejMaskEdit Textbox control.
+# Custom Design for Html ejMaskEdit Textbox control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html ejMaskEdit Textbox control.
 
 
 
-#### $(element).ejMaskEdit<span class="signature">()</span>
+## $(element).ejMaskEdit<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html ejMaskEdit Textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>     
@@ -49,7 +50,7 @@ $('#mask').ejMaskEdit();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -71,7 +72,7 @@ $('#mask').ejMaskEdit();
 
 
 
-### Members
+## Members
 
 
 
@@ -80,7 +81,7 @@ $('#mask').ejMaskEdit();
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -111,7 +112,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -128,7 +130,7 @@ Default Value:
 
 
 
-#### customCharacter<span class="type-signature type string">string</span>
+### customCharacter<span class="type-signature type string">string</span>
 
 
 
@@ -159,7 +161,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -176,7 +179,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -207,7 +210,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -224,7 +228,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -255,7 +259,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -272,7 +277,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">string</span>
+### height<span class="type-signature type string">string</span>
 
 
 
@@ -303,7 +308,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -320,7 +326,7 @@ Default Value:
 
 
 
-#### hidePromptOnLeave<span class="type-signature type boolean">boolean</span>
+### hidePromptOnLeave<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -351,7 +357,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -368,7 +375,7 @@ Default Value:
 
 
 
-#### inputMode<span class="type-signature type enum">enum</span>
+### inputMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -399,7 +406,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -416,7 +424,7 @@ Default Value:
 
 
 
-#### maskFormat<span class="type-signature type string">string</span>
+### maskFormat<span class="type-signature type string">string</span>
 
 
 
@@ -447,7 +455,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -464,7 +473,7 @@ Default Value:
 
 
 
-#### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -495,7 +504,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -512,7 +522,7 @@ Default Value:
 
 
 
-#### showError<span class="type-signature type boolean">boolean</span>
+### showError<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -543,7 +553,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -560,7 +571,7 @@ Default Value:
 
 
 
-#### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -591,7 +602,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -608,7 +620,7 @@ Default Value:
 
 
 
-#### textAlign<span class="type-signature type enum">enum</span>
+### textAlign<span class="type-signature type enum">enum</span>
 
 
 
@@ -639,7 +651,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -656,7 +669,7 @@ Default Value:
 
 
 
-#### validationMessage<span class="type-signature type object">object</span>
+### validationMessage<span class="type-signature type object">object</span>
 
 
 
@@ -687,7 +700,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -704,7 +718,7 @@ Default Value:
 
 
 
-#### validationRules<span class="type-signature type object">object</span>
+### validationRules<span class="type-signature type object">object</span>
 
 
 
@@ -735,7 +749,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -752,7 +767,7 @@ Default Value:
 
 
 
-#### value<span class="type-signature type string">string</span>
+### value<span class="type-signature type string">string</span>
 
 
 
@@ -783,7 +798,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;input id="mask" type="text" /&gt; 
@@ -799,7 +815,7 @@ Default Value:
 
 
 
-#### watermarkText<span class="type-signature type string">string</span>
+### watermarkText<span class="type-signature type string">string</span>
 
 
 
@@ -830,7 +846,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -847,7 +864,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">string</span>
+### width<span class="type-signature type string">string</span>
 
 
 
@@ -878,7 +895,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -893,7 +911,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -902,7 +920,7 @@ Default Value:
 
 
 
-#### clear<span class="signature">()</span>
+### clear<span class="signature">()</span>
 
 
 
@@ -917,7 +935,8 @@ To clear the text in maskedit textbox control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -947,7 +966,7 @@ $("#mask").ejMaskEdit("clear");
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -962,7 +981,8 @@ To disable the maskedit textbox control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -992,7 +1012,7 @@ $("#mask").ejMaskEdit("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -1007,7 +1027,8 @@ To enable the maskedit textbox control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1037,7 +1058,7 @@ $("#mask").ejMaskEdit("enable");
 
 
 
-#### get_StrippedValue<span class="signature">()</span>
+### get_StrippedValue<span class="signature">()</span>
 
 
 
@@ -1052,7 +1073,8 @@ To obtained the pure value of the textvalue, removes all the symbols in maskedit
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1081,7 +1103,7 @@ alert( $("#mask").ejMaskEdit("get_StrippedValue"));
 
 
 
-#### get_UnstrippedValue<span class="signature">()</span>
+### get_UnstrippedValue<span class="signature">()</span>
 
 
 
@@ -1096,7 +1118,8 @@ To obtained the textbox value as such that, Just replace all '_' to ' '(space) i
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1123,7 +1146,7 @@ alert($("#mask").ejMaskEdit("get_UnstrippedValue"));
 
 
 
-### Events
+## Events
 
 
 
@@ -1132,7 +1155,7 @@ alert($("#mask").ejMaskEdit("get_UnstrippedValue"));
 
 
 
-#### change
+### change
 
 
 
@@ -1200,7 +1223,8 @@ Fires when value changed in mask edit textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1220,7 +1244,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### create
+### create
 
 
 
@@ -1261,7 +1285,8 @@ Fires after MaskEdit control is created.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1281,7 +1306,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1322,7 +1347,8 @@ Fires when the MaskEdit is destroyed successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1342,7 +1368,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### focusIn
+### focusIn
 
 
 
@@ -1410,7 +1436,8 @@ Fires when focused in mask edit textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1430,7 +1457,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### focusOut
+### focusOut
 
 
 
@@ -1498,7 +1525,8 @@ Fires when focused out in mask edit textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1518,7 +1546,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### keydown
+### keydown
 
 
 
@@ -1586,7 +1614,8 @@ Fires when keydown in mask edit textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1606,7 +1635,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### keyPress
+### keyPress
 
 
 
@@ -1674,7 +1703,8 @@ Fires when keypress in mask edit textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1694,7 +1724,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### keyup
+### keyup
 
 
 
@@ -1762,7 +1792,8 @@ Fires when keyup in mask edit textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;input id="mask" type="text" /&gt; 
@@ -1781,7 +1812,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### mouseout
+### mouseout
 
 
 
@@ -1849,7 +1880,8 @@ Fires when mouse out in mask edit textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1869,7 +1901,7 @@ $("#mask").ejMaskEdit({
 
 
 
-#### mouseover
+### mouseover
 
 
 
@@ -1937,7 +1969,8 @@ Fires when mouse over in mask edit textbox control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

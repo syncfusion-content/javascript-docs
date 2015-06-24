@@ -18,7 +18,7 @@ The grid can be easily configured to the DOM element, such as div. you can creat
 
 
 
-#### $(element).ejGrid<span class="signature">(options)</span>
+## $(element).ejGrid<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ The grid can be easily configured to the DOM element, such as div. you can creat
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -63,7 +64,7 @@ $('#Grid').ejGrid({
 
 
 
-### Requires
+## Requires
 
 
 
@@ -130,7 +131,7 @@ $('#Grid').ejGrid({
 
 
 
-### Members
+## Members
 
 
 
@@ -139,7 +140,7 @@ $('#Grid').ejGrid({
 
 
 
-#### allowCellMerging<span class="type-signature type boolean">boolean</span>
+### allowCellMerging<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -170,7 +171,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -187,7 +189,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowGrouping<span class="type-signature type boolean">boolean</span>
+### allowGrouping<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -218,7 +220,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -236,7 +239,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -267,7 +270,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -285,7 +289,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowMultipleExporting<span class="type-signature type boolean">boolean</span>
+### allowMultipleExporting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -316,7 +320,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -334,7 +339,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowMultiSorting<span class="type-signature type boolean">boolean</span>
+### allowMultiSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -365,7 +370,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -384,7 +390,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowPaging<span class="type-signature type boolean">boolean</span>
+### allowPaging<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -415,7 +421,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>            
@@ -433,7 +440,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowReordering<span class="type-signature type boolean">boolean</span>
+### allowReordering<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -464,7 +471,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>                     
@@ -482,7 +490,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowResizeToFit<span class="type-signature type boolean">boolean</span>
+### allowResizeToFit<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -513,7 +521,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -531,7 +540,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowResizing<span class="type-signature type boolean">boolean</span>
+### allowResizing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -562,7 +571,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -582,7 +592,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowScrolling<span class="type-signature type boolean">boolean</span>
+### allowScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -613,7 +623,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -631,7 +642,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowSearching<span class="type-signature type boolean">boolean</span>
+### allowSearching<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -662,7 +673,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -681,7 +693,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowSelection<span class="type-signature type boolean">boolean</span>
+### allowSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -712,7 +724,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -730,7 +743,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowSorting<span class="type-signature type boolean">boolean</span>
+### allowSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -761,7 +774,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -779,7 +793,7 @@ $("#Grid").ejGrid({
 
 
 
-#### allowTextWrap<span class="type-signature type boolean">boolean</span>
+### allowTextWrap<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -810,7 +824,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -828,7 +843,7 @@ $("#Grid").ejGrid({
 
 
 
-#### childGrid<span class="type-signature type object">object</span>
+### childGrid<span class="type-signature type object">object</span>
 
 
 
@@ -859,7 +874,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>            
@@ -880,7 +896,7 @@ queryString: "EmployeeID",
 
 
 
-#### columns<span class="type-signature type array">array</span>
+### columns<span class="type-signature type array">array</span>
 
 
 
@@ -911,7 +927,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -929,7 +946,7 @@ var value = $("#Grid").ejGrid("option", "columns");
 
 
 
-#### columns.allowEditing<span class="type-signature type boolean">boolean</span>
+### columns.allowEditing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -960,7 +977,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -978,7 +996,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.allowFiltering<span class="type-signature type boolean">boolean</span>
+### columns.allowFiltering<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1009,7 +1027,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1027,7 +1046,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.allowGrouping<span class="type-signature type boolean">boolean</span>
+### columns.allowGrouping<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1058,7 +1077,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1076,7 +1096,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.allowSorting<span class="type-signature type boolean">boolean</span>
+### columns.allowSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1107,7 +1127,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1125,7 +1146,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.commands<span class="type-signature type array">array</span>
+### columns.commands<span class="type-signature type array">array</span>
 
 
 
@@ -1156,7 +1177,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1188,7 +1210,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.commands.buttonOptions<span class="type-signature type object">object</span>
+### columns.commands.buttonOptions<span class="type-signature type object">object</span>
 
 
 
@@ -1219,7 +1241,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1250,7 +1273,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.commands.type<span class="type-signature type enum">enum</span>
+### columns.commands.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -1281,7 +1304,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1312,7 +1336,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.cssClass<span class="type-signature type string">string</span>
+### columns.cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -1343,7 +1367,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1364,7 +1389,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.customAttributes<span class="type-signature type object">object</span>
+### columns.customAttributes<span class="type-signature type object">object</span>
 
 
 
@@ -1395,7 +1420,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;          
@@ -1412,7 +1438,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.dataSource<span class="type-signature type array">array</span>
+### columns.dataSource<span class="type-signature type array">array</span>
 
 
 
@@ -1443,7 +1469,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;  
@@ -1460,7 +1487,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.defaultValue<span class="type-signature type string/number/boolean/date">string/number/boolean/date</span>
+### columns.defaultValue<span class="type-signature type string/number/boolean/date">string/number/boolean/date</span>
 
 
 
@@ -1491,7 +1518,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;          
@@ -1510,7 +1538,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.disableHtmlEncode<span class="type-signature type boolean">boolean</span>
+### columns.disableHtmlEncode<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1541,7 +1569,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1558,7 +1587,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.editParams<span class="type-signature type object">object</span>
+### columns.editParams<span class="type-signature type object">object</span>
 
 
 
@@ -1589,7 +1618,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1607,7 +1637,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.editTemplate<span class="type-signature type object">object</span>
+### columns.editTemplate<span class="type-signature type object">object</span>
 
 
 
@@ -1638,7 +1668,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1657,7 +1688,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.editType<span class="type-signature type enum">enum</span>
+### columns.editType<span class="type-signature type enum">enum</span>
 
 
 
@@ -1688,7 +1719,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1706,7 +1738,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.field<span class="type-signature type string">string</span>
+### columns.field<span class="type-signature type string">string</span>
 
 
 
@@ -1737,7 +1769,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1754,7 +1787,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.foreignKeyField<span class="type-signature type string">string</span>
+### columns.foreignKeyField<span class="type-signature type string">string</span>
 
 
 
@@ -1785,7 +1818,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;          
@@ -1802,7 +1836,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.foreignKeyValue<span class="type-signature type string">string</span>
+### columns.foreignKeyValue<span class="type-signature type string">string</span>
 
 
 
@@ -1833,7 +1867,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;  
@@ -1850,7 +1885,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.format<span class="type-signature type string">string</span>
+### columns.format<span class="type-signature type string">string</span>
 
 
 
@@ -1881,7 +1916,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;          
@@ -1898,7 +1934,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.headerTemplateID<span class="type-signature type string">string</span>
+### columns.headerTemplateID<span class="type-signature type string">string</span>
 
 
 
@@ -1929,7 +1965,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1950,7 +1987,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.headerText<span class="type-signature type string">string</span>
+### columns.headerText<span class="type-signature type string">string</span>
 
 
 
@@ -1981,7 +2018,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -1998,7 +2036,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.headerTextAlign<span class="type-signature type enum">enum</span>
+### columns.headerTextAlign<span class="type-signature type enum">enum</span>
 
 
 
@@ -2029,7 +2067,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2046,7 +2085,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.isFrozen<span class="type-signature type boolean">boolean</span>
+### columns.isFrozen<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2077,7 +2116,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2096,7 +2136,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.isIdentity<span class="type-signature type boolean">boolean</span>
+### columns.isIdentity<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2127,7 +2167,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2144,7 +2185,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.isPrimaryKey<span class="type-signature type boolean">boolean</span>
+### columns.isPrimaryKey<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2175,7 +2216,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2193,7 +2235,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.isUnbound<span class="type-signature type boolean">boolean</span>
+### columns.isUnbound<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2224,7 +2266,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2241,7 +2284,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.template<span class="type-signature type boolean">boolean</span>
+### columns.template<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2272,7 +2315,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2292,7 +2336,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.templateID<span class="type-signature type string">string</span>
+### columns.templateID<span class="type-signature type string">string</span>
 
 
 
@@ -2323,7 +2367,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2343,7 +2388,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.textAlign<span class="type-signature type enum">enum</span>
+### columns.textAlign<span class="type-signature type enum">enum</span>
 
 
 
@@ -2374,7 +2419,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2391,7 +2437,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.type<span class="type-signature type string">string</span>
+### columns.type<span class="type-signature type string">string</span>
 
 
 
@@ -2422,7 +2468,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2439,7 +2486,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.validationRules<span class="type-signature type object">object</span>
+### columns.validationRules<span class="type-signature type object">object</span>
 
 
 
@@ -2454,7 +2501,8 @@ Gets or sets a value that indicates to define constraints for saving data to the
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;          
@@ -2472,7 +2520,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.visible<span class="type-signature type boolean">boolean</span>
+### columns.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2503,7 +2551,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2520,7 +2569,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columns.width<span class="type-signature type number">number</span>
+### columns.width<span class="type-signature type number">number</span>
 
 
 
@@ -2551,7 +2600,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;          
@@ -2568,7 +2618,7 @@ $("#Grid").ejGrid({
 
 
 
-#### contextMenuSettings<span class="type-signature type object">Object</span>
+### contextMenuSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -2589,7 +2639,7 @@ Gets or sets an object that indicates whether to customize the context menu beha
 
 
 
-#### contextMenuSettings.contextMenuItems<span class="type-signature type array">array</span>
+### contextMenuSettings.contextMenuItems<span class="type-signature type array">array</span>
 
 
 
@@ -2620,7 +2670,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2642,7 +2693,7 @@ $("#Grid").ejGrid({
 
 
 
-#### contextMenuSettings.customContextMenuItems<span class="type-signature type array">array</span>
+### contextMenuSettings.customContextMenuItems<span class="type-signature type array">array</span>
 
 
 
@@ -2673,7 +2724,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2692,7 +2744,7 @@ $("#Grid").ejGrid({
 
 
 
-#### contextMenuSettings.enableContextMenu<span class="type-signature type boolean">boolean</span>
+### contextMenuSettings.enableContextMenu<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2723,7 +2775,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2745,7 +2798,7 @@ $("#Grid").ejGrid({
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -2776,7 +2829,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2802,7 +2856,7 @@ $("#Grid").ejGrid({
 
 
 
-#### dataSource<span class="type-signature type object">object</span>
+### dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -2833,7 +2887,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2850,7 +2905,7 @@ $("#Grid").ejGrid({
 
 
 
-#### detailsTemplate<span class="type-signature type string">string</span>
+### detailsTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -2881,7 +2936,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2908,7 +2964,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings<span class="type-signature type object">Object</span>
+### editSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -2929,7 +2985,7 @@ Gest or sets an object that indicates whether to customize the editing behavior 
 
 
 
-#### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
+### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2960,7 +3016,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -2979,7 +3036,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
+### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3010,7 +3067,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -3029,7 +3087,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
+### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3060,7 +3118,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -3079,7 +3138,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.allowEditOnDblClick<span class="type-signature type boolean">boolean</span>
+### editSettings.allowEditOnDblClick<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3110,7 +3169,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>Defining editEvent with edit option:
@@ -3130,7 +3190,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.dialogEditorTemplateID<span class="type-signature type string">string</span>
+### editSettings.dialogEditorTemplateID<span class="type-signature type string">string</span>
 
 
 
@@ -3161,7 +3221,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>               
@@ -3200,7 +3261,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.editMode<span class="type-signature type enum">enum</span>
+### editSettings.editMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -3231,7 +3292,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -3250,7 +3312,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.externalFormTemplateID<span class="type-signature type string">string</span>
+### editSettings.externalFormTemplateID<span class="type-signature type string">string</span>
 
 
 
@@ -3281,7 +3343,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>               
@@ -3320,7 +3383,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.formPosition<span class="type-signature type enum">enum</span>
+### editSettings.formPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -3351,7 +3414,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -3370,7 +3434,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.inlineFormTemplateID<span class="type-signature type string">string</span>
+### editSettings.inlineFormTemplateID<span class="type-signature type string">string</span>
 
 
 
@@ -3401,7 +3465,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>               
@@ -3440,7 +3505,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.rowPosition<span class="type-signature type enum">enum</span>
+### editSettings.rowPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -3471,7 +3536,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -3490,7 +3556,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.showConfirmDialog<span class="type-signature type boolean">boolean</span>
+### editSettings.showConfirmDialog<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3521,7 +3587,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -3540,7 +3607,7 @@ $("#Grid").ejGrid({
 
 
 
-#### editSettings.showDeleteConfirmDialog<span class="type-signature type boolean">boolean</span>
+### editSettings.showDeleteConfirmDialog<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3571,7 +3638,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -3590,7 +3658,7 @@ $("#Grid").ejGrid({
 
 
 
-#### enableAltRow<span class="type-signature type boolean">boolean</span>
+### enableAltRow<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3621,7 +3689,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -3638,7 +3707,7 @@ $("#Grid").ejGrid({
 
 
 
-#### enableAutoSaveOnSelectionChange<span class="type-signature type boolean">boolean</span>
+### enableAutoSaveOnSelectionChange<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3669,7 +3738,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3690,7 +3760,7 @@ $("#Grid").ejGrid({
 
 
 
-#### enableHeaderHover<span class="type-signature type boolean">boolean</span>
+### enableHeaderHover<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3721,7 +3791,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3739,7 +3810,7 @@ $("#Grid").ejGrid({
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3770,7 +3841,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -3789,7 +3861,7 @@ $("#Grid").ejGrid({
 
 
 
-#### enableResponsiveRow<span class="type-signature type boolean">boolean</span>
+### enableResponsiveRow<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3820,7 +3892,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -3840,7 +3913,7 @@ $("#Grid").ejGrid({
 
 
 
-#### enableRowHover<span class="type-signature type boolean">boolean</span>
+### enableRowHover<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3871,7 +3944,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3889,7 +3963,7 @@ $("#Grid").ejGrid({
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3920,7 +3994,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -3937,7 +4012,7 @@ $("#Grid").ejGrid({
 
 
 
-#### enableTouch<span class="type-signature type boolean">boolean</span>
+### enableTouch<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3968,7 +4043,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3986,7 +4062,7 @@ $("#Grid").ejGrid({
 
 
 
-#### filterSettings<span class="type-signature type object">Object</span>
+### filterSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -4007,7 +4083,7 @@ Gets or sets an object that indicates whether to customize the filtering behavio
 
 
 
-#### filterSettings.enableCaseSensitivity<span class="type-signature type boolean">boolean</span>
+### filterSettings.enableCaseSensitivity<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4038,7 +4114,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4056,7 +4133,7 @@ $("#Grid").ejGrid({
 
 
 
-#### filterSettings.filterBarMode<span class="type-signature type enum">enum</span>
+### filterSettings.filterBarMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -4087,7 +4164,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4105,7 +4183,7 @@ $("#Grid").ejGrid({
 
 
 
-#### filterSettings.filteredColumns<span class="type-signature type object">object</span>
+### filterSettings.filteredColumns<span class="type-signature type object">object</span>
 
 
 
@@ -4142,7 +4220,7 @@ Default Value:
 
 
 
-#### filterSettings.filterType<span class="type-signature type enum">enum</span>
+### filterSettings.filterType<span class="type-signature type enum">enum</span>
 
 
 
@@ -4173,7 +4251,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4191,7 +4270,7 @@ $("#Grid").ejGrid({
 
 
 
-#### filterSettings.maxFilterChoices<span class="type-signature type number">number</span>
+### filterSettings.maxFilterChoices<span class="type-signature type number">number</span>
 
 
 
@@ -4222,7 +4301,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4240,7 +4320,7 @@ $("#Grid").ejGrid({
 
 
 
-#### filterSettings.showFilterBarMessage<span class="type-signature type boolean">boolean</span>
+### filterSettings.showFilterBarMessage<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4271,7 +4351,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4289,7 +4370,7 @@ $("#Grid").ejGrid({
 
 
 
-#### filterSettings.showPredicate<span class="type-signature type boolean">boolean</span>
+### filterSettings.showPredicate<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4320,7 +4401,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4338,7 +4420,7 @@ $("#Grid").ejGrid({
 
 
 
-#### groupSettings<span class="type-signature type object">Object</span>
+### groupSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -4359,7 +4441,7 @@ Gets or sets an object that indicates whether to customize the grouping behavior
 
 
 
-#### groupSettings.captionFormat<span class="type-signature type string">string</span>
+### groupSettings.captionFormat<span class="type-signature type string">string</span>
 
 
 
@@ -4390,7 +4472,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4408,7 +4491,7 @@ $("#Grid").ejGrid({
 
 
 
-#### groupSettings.enableDropAreaAnimation<span class="type-signature type boolean">boolean</span>
+### groupSettings.enableDropAreaAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4439,7 +4522,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4457,7 +4541,7 @@ $("#Grid").ejGrid({
 
 
 
-#### groupSettings.enableDropAreaAutoSizing<span class="type-signature type boolean">boolean</span>
+### groupSettings.enableDropAreaAutoSizing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4488,7 +4572,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4506,7 +4591,7 @@ $("#Grid").ejGrid({
 
 
 
-#### groupSettings.groupedColumns<span class="type-signature type object">object</span>
+### groupSettings.groupedColumns<span class="type-signature type object">object</span>
 
 
 
@@ -4537,7 +4622,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4555,7 +4641,7 @@ $("#Grid").ejGrid({
 
 
 
-#### groupSettings.showDropArea<span class="type-signature type boolean">boolean</span>
+### groupSettings.showDropArea<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4586,7 +4672,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4605,7 +4692,7 @@ $("#Grid").ejGrid({
 
 
 
-#### groupSettings.showGroupedColumn<span class="type-signature type boolean">boolean</span>
+### groupSettings.showGroupedColumn<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4636,7 +4723,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4654,7 +4742,7 @@ $("#Grid").ejGrid({
 
 
 
-#### groupSettings.showToggleButton<span class="type-signature type boolean">boolean</span>
+### groupSettings.showToggleButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4685,7 +4773,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4703,7 +4792,7 @@ $("#Grid").ejGrid({
 
 
 
-#### groupSettings.showUngroupButton<span class="type-signature type boolean">boolean</span>
+### groupSettings.showUngroupButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4734,7 +4823,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -4752,7 +4842,7 @@ $("#Grid").ejGrid({
 
 
 
-#### isResponsive<span class="type-signature type boolean">boolean</span>
+### isResponsive<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4783,7 +4873,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -4802,7 +4893,7 @@ $("#Grid").ejGrid({
 
 
 
-#### keySettings<span class="type-signature type object">object</span>
+### keySettings<span class="type-signature type object">object</span>
 
 
 
@@ -4833,7 +4924,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>            
@@ -4854,7 +4946,7 @@ moveCellRight: "13",
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -4885,7 +4977,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4907,7 +5000,7 @@ $("#Grid").ejGrid({
 
 
 
-#### minWidth<span class="type-signature type number">number</span>
+### minWidth<span class="type-signature type number">number</span>
 
 
 
@@ -4938,7 +5031,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -4956,7 +5050,7 @@ $("#Grid").ejGrid({
 
 
 
-#### pageSettings<span class="type-signature type object">Object</span>
+### pageSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -4977,7 +5071,7 @@ Gets or sets an object that indicates whether to modify the pager default config
 
 
 
-#### pageSettings.currentPage<span class="type-signature type number">number</span>
+### pageSettings.currentPage<span class="type-signature type number">number</span>
 
 
 
@@ -5008,7 +5102,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5026,7 +5121,7 @@ $("#Grid").ejGrid({
 
 
 
-#### pageSettings.enableQueryString<span class="type-signature type boolean">boolean</span>
+### pageSettings.enableQueryString<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -5057,7 +5152,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5075,7 +5171,7 @@ $("#Grid").ejGrid({
 
 
 
-#### pageSettings.enableTemplates<span class="type-signature type bool">bool</span>
+### pageSettings.enableTemplates<span class="type-signature type bool">bool</span>
 
 
 
@@ -5106,7 +5202,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5127,7 +5224,7 @@ $("#Grid").ejGrid({
 
 
 
-#### pageSettings.pageCount<span class="type-signature type number">number</span>
+### pageSettings.pageCount<span class="type-signature type number">number</span>
 
 
 
@@ -5158,7 +5255,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5176,7 +5274,7 @@ $("#Grid").ejGrid({
 
 
 
-#### pageSettings.pageSize<span class="type-signature type number">number</span>
+### pageSettings.pageSize<span class="type-signature type number">number</span>
 
 
 
@@ -5207,7 +5305,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5225,7 +5324,7 @@ $("#Grid").ejGrid({
 
 
 
-#### pageSettings.showDefaults<span class="type-signature type bool">bool</span>
+### pageSettings.showDefaults<span class="type-signature type bool">bool</span>
 
 
 
@@ -5256,7 +5355,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5277,7 +5377,7 @@ $("#Grid").ejGrid({
 
 
 
-#### pageSettings.template<span class="type-signature type string">string</span>
+### pageSettings.template<span class="type-signature type string">string</span>
 
 
 
@@ -5308,7 +5408,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5329,7 +5430,7 @@ $("#Grid").ejGrid({
 
 
 
-#### pageSettings.totalPages<span class="type-signature type number">number</span>
+### pageSettings.totalPages<span class="type-signature type number">number</span>
 
 
 
@@ -5360,7 +5461,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -5380,7 +5482,7 @@ $("#print").text("TotalPages: " + value);
 
 
 
-#### pageSettings.totalRecordsCount<span class="type-signature type number">number</span>
+### pageSettings.totalRecordsCount<span class="type-signature type number">number</span>
 
 
 
@@ -5411,7 +5513,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -5431,7 +5534,7 @@ $("#print").text("TotalRecordsCount: " + value);
 
 
 
-#### query<span class="type-signature type object">object</span>
+### query<span class="type-signature type object">object</span>
 
 
 
@@ -5462,7 +5565,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -5482,7 +5586,7 @@ $("#Grid").ejGrid({
 
 
 
-#### rowTemplate<span class="type-signature type string">string</span>
+### rowTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -5513,7 +5617,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5541,7 +5646,7 @@ $("#Grid").ejGrid({
 
 
 
-#### scrollSettings<span class="type-signature type object">Object</span>
+### scrollSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -5562,7 +5667,7 @@ Gets or sets an object that indicates whether to customize the scrolling behavio
 
 
 
-#### scrollSettings.allowVirtualScrolling<span class="type-signature type boolean">boolean</span>
+### scrollSettings.allowVirtualScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -5593,7 +5698,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5611,7 +5717,7 @@ $("#Grid").ejGrid({
 
 
 
-#### scrollSettings.enableTouchScroll<span class="type-signature type boolean">boolean</span>
+### scrollSettings.enableTouchScroll<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -5642,7 +5748,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5660,7 +5767,7 @@ $("#Grid").ejGrid({
 
 
 
-#### scrollSettings.frozenColumns<span class="type-signature type number">number</span>
+### scrollSettings.frozenColumns<span class="type-signature type number">number</span>
 
 
 
@@ -5691,7 +5798,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5709,7 +5817,7 @@ $("#Grid").ejGrid({
 
 
 
-#### scrollSettings.frozenRows<span class="type-signature type number">number</span>
+### scrollSettings.frozenRows<span class="type-signature type number">number</span>
 
 
 
@@ -5740,7 +5848,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5758,7 +5867,7 @@ $("#Grid").ejGrid({
 
 
 
-#### scrollSettings.height<span class="type-signature type number">number</span>
+### scrollSettings.height<span class="type-signature type number">number</span>
 
 
 
@@ -5789,7 +5898,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5807,7 +5917,7 @@ $("#Grid").ejGrid({
 
 
 
-#### scrollSettings.virtualScrollMode<span class="type-signature type enum">enum</span>
+### scrollSettings.virtualScrollMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -5838,7 +5948,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -5856,7 +5967,7 @@ $("#Grid").ejGrid({
 
 
 
-#### scrollSettings.width<span class="type-signature type number">number</span>
+### scrollSettings.width<span class="type-signature type number">number</span>
 
 
 
@@ -5887,7 +5998,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -5905,7 +6017,7 @@ $("#Grid").ejGrid({
 
 
 
-#### selectedRecords<span class="type-signature type array">array</span>
+### selectedRecords<span class="type-signature type array">array</span>
 
 
 
@@ -5936,7 +6048,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -5957,7 +6070,7 @@ $("#Grid").ejGrid("model.selectedRecords")
 
 
 
-#### selectedRowIndex<span class="type-signature type number">number</span>
+### selectedRowIndex<span class="type-signature type number">number</span>
 
 
 
@@ -5988,7 +6101,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6006,7 +6120,7 @@ $("#Grid").ejGrid({
 
 
 
-#### selectionSettings<span class="type-signature type object">Object</span>
+### selectionSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -6027,7 +6141,7 @@ This property is used to configure the selection behavior of the grid.
 
 
 
-#### selectionSettings.enableToggle<span class="type-signature type boolean">boolean</span>
+### selectionSettings.enableToggle<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6058,7 +6172,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -6076,7 +6191,7 @@ $("#Grid").ejGrid({
 
 
 
-#### selectionSettings.selectionMode<span class="type-signature type enum">enum</span>
+### selectionSettings.selectionMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -6107,7 +6222,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -6125,7 +6241,7 @@ $("#Grid").ejGrid({
 
 
 
-#### selectionType<span class="type-signature type enum">enum</span>
+### selectionType<span class="type-signature type enum">enum</span>
 
 
 
@@ -6156,7 +6272,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6174,7 +6291,7 @@ $("#Grid").ejGrid({
 
 
 
-#### showAddNewRow<span class="type-signature type boolean">boolean</span>
+### showAddNewRow<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6205,7 +6322,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6224,7 +6342,7 @@ editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", show
 
 
 
-#### showAddNewRow<span class="type-signature type boolean">boolean</span>
+### showAddNewRow<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6255,7 +6373,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6274,7 +6393,7 @@ editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", show
 
 
 
-#### showColumnChooser<span class="type-signature type boolean">boolean</span>
+### showColumnChooser<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6305,7 +6424,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>            
@@ -6323,7 +6443,7 @@ $("#Grid").ejGrid({
 
 
 
-#### showStackedHeader<span class="type-signature type boolean">boolean</span>
+### showStackedHeader<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6354,7 +6474,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -6385,7 +6506,7 @@ $("#Grid").ejGrid({
 
 
 
-#### showSummary<span class="type-signature type boolean">boolean</span>
+### showSummary<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6416,7 +6537,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6436,7 +6558,7 @@ $("#Grid").ejGrid({
 
 
 
-#### sortSettings<span class="type-signature type object">Object</span>
+### sortSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -6457,7 +6579,7 @@ Gets or sets a value that indicates whether to customize the sorting behavior of
 
 
 
-#### sortSettings.sortedColumns.direction<span class="type-signature type string">string</span>
+### sortSettings.sortedColumns.direction<span class="type-signature type string">string</span>
 
 
 
@@ -6488,7 +6610,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;          
@@ -6506,7 +6629,7 @@ $("#Grid").ejGrid({
 
 
 
-#### sortSettings.sortedColumns.field<span class="type-signature type string">string</span>
+### sortSettings.sortedColumns.field<span class="type-signature type string">string</span>
 
 
 
@@ -6537,7 +6660,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;          
@@ -6555,7 +6679,7 @@ $("#Grid").ejGrid({
 
 
 
-#### stackedHeaderRows<span class="type-signature type array">array</span>
+### stackedHeaderRows<span class="type-signature type array">array</span>
 
 
 
@@ -6586,7 +6710,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -6617,7 +6742,7 @@ $("#Grid").ejGrid({
 
 
 
-#### stackedHeaderRows.stackedHeaderColumns<span class="type-signature type array">array</span>
+### stackedHeaderRows.stackedHeaderColumns<span class="type-signature type array">array</span>
 
 
 
@@ -6648,7 +6773,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -6679,7 +6805,7 @@ $("#Grid").ejGrid({
 
 
 
-#### stackedHeaderRows.stackedHeaderColumns.column<span class="type-signature type string">string</span>
+### stackedHeaderRows.stackedHeaderColumns.column<span class="type-signature type string">string</span>
 
 
 
@@ -6710,7 +6836,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -6741,7 +6868,7 @@ $("#Grid").ejGrid({
 
 
 
-#### stackedHeaderRows.stackedHeaderColumns.cssClass<span class="type-signature type string">string</span>
+### stackedHeaderRows.stackedHeaderColumns.cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -6772,7 +6899,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -6807,7 +6935,7 @@ $("#Grid").ejGrid({
 
 
 
-#### stackedHeaderRows.stackedHeaderColumns.headerText<span class="type-signature type string">string</span>
+### stackedHeaderRows.stackedHeaderColumns.headerText<span class="type-signature type string">string</span>
 
 
 
@@ -6838,7 +6966,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -6869,7 +6998,7 @@ $("#Grid").ejGrid({
 
 
 
-#### stackedHeaderRows.stackedHeaderColumns.textAlign<span class="type-signature type string">string</span>
+### stackedHeaderRows.stackedHeaderColumns.textAlign<span class="type-signature type string">string</span>
 
 
 
@@ -6900,7 +7029,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -6931,7 +7061,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows<span class="type-signature type array">array</span>
+### summaryRows<span class="type-signature type array">array</span>
 
 
 
@@ -6962,7 +7092,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -6988,7 +7119,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.showCaptionSummary<span class="type-signature type boolean">boolean</span>
+### summaryRows.showCaptionSummary<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -7019,7 +7150,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7047,7 +7179,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.showTotalSummary<span class="type-signature type boolean">boolean</span>
+### summaryRows.showTotalSummary<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -7078,7 +7210,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7105,7 +7238,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.summaryColumns<span class="type-signature type object">object</span>
+### summaryRows.summaryColumns<span class="type-signature type object">object</span>
 
 
 
@@ -7136,7 +7269,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7162,7 +7296,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.summaryColumns.customSummaryValue<span class="type-signature type string">string</span>
+### summaryRows.summaryColumns.customSummaryValue<span class="type-signature type string">string</span>
 
 
 
@@ -7193,7 +7327,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7220,7 +7355,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.summaryColumns.dataMember<span class="type-signature type string">string</span>
+### summaryRows.summaryColumns.dataMember<span class="type-signature type string">string</span>
 
 
 
@@ -7251,7 +7386,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7277,7 +7413,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.summaryColumns.displayColumn<span class="type-signature type string">string</span>
+### summaryRows.summaryColumns.displayColumn<span class="type-signature type string">string</span>
 
 
 
@@ -7308,7 +7444,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7334,7 +7471,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.summaryColumns.format<span class="type-signature type string">string</span>
+### summaryRows.summaryColumns.format<span class="type-signature type string">string</span>
 
 
 
@@ -7365,7 +7502,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7392,7 +7530,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.summaryColumns.prefix<span class="type-signature type string">string</span>
+### summaryRows.summaryColumns.prefix<span class="type-signature type string">string</span>
 
 
 
@@ -7423,7 +7561,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7449,7 +7588,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.summaryColumns.suffix<span class="type-signature type string">string</span>
+### summaryRows.summaryColumns.suffix<span class="type-signature type string">string</span>
 
 
 
@@ -7480,7 +7619,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7507,7 +7647,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.summaryColumns.summaryType<span class="type-signature type object">object</span>
+### summaryRows.summaryColumns.summaryType<span class="type-signature type object">object</span>
 
 
 
@@ -7538,7 +7678,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7564,7 +7705,7 @@ $("#Grid").ejGrid({
 
 
 
-#### summaryRows.title<span class="type-signature type string">string</span>
+### summaryRows.title<span class="type-signature type string">string</span>
 
 
 
@@ -7595,7 +7736,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7621,7 +7763,7 @@ $("#Grid").ejGrid({
 
 
 
-#### toolbarSettings<span class="type-signature type object">Object</span>
+### toolbarSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -7642,7 +7784,7 @@ Gets or sets an object that indicates whether to enable the toolbar in the grid 
 
 
 
-#### toolbarSettings.customToolbarItems<span class="type-signature type object">object</span>
+### toolbarSettings.customToolbarItems<span class="type-signature type object">object</span>
 
 
 
@@ -7673,7 +7815,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7696,7 +7839,7 @@ $("#Grid").ejGrid({
 
 
 
-#### toolbarSettings.showToolbar<span class="type-signature type boolean">boolean</span>
+### toolbarSettings.showToolbar<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -7727,7 +7870,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7746,7 +7890,7 @@ $("#Grid").ejGrid({
 
 
 
-#### toolbarSettings.toolbarItems<span class="type-signature type enum">enum</span>
+### toolbarSettings.toolbarItems<span class="type-signature type enum">enum</span>
 
 
 
@@ -7777,7 +7921,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -7794,7 +7939,7 @@ $("#Grid").ejGrid({
 
 
 
-### Methods
+## Methods
 
 
 
@@ -7803,7 +7948,7 @@ $("#Grid").ejGrid({
 
 
 
-#### addRecord<span class="signature">()</span>
+### addRecord<span class="signature">()</span>
 
 
 
@@ -7818,7 +7963,8 @@ Add a new record in grid control even allowAdding is set as false.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7842,7 +7988,7 @@ $("#Editing").ejGrid("addRecord",{OrderID:12333})
 
 
 
-#### batchCancel<span class="signature">()</span>
+### batchCancel<span class="signature">()</span>
 
 
 
@@ -7857,7 +8003,8 @@ Cancel the modified changes in grid control when edit mode is "batch".
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7881,7 +8028,7 @@ $("#Grid").ejGrid("batchCancel");
 
 
 
-#### batchSave<span class="signature">()</span>
+### batchSave<span class="signature">()</span>
 
 
 
@@ -7896,7 +8043,8 @@ Save the modified changes to data source in grid control when edit mode is "batc
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7920,7 +8068,7 @@ $("#Grid").ejGrid("batchSave");
 
 
 
-#### cancelEdit<span class="signature">()</span>
+### cancelEdit<span class="signature">()</span>
 
 
 
@@ -7935,7 +8083,8 @@ Send a cancel request in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7959,7 +8108,7 @@ $("#Grid").ejGrid("cancelEdit");
 
 
 
-#### clearCellSelection<span class="signature">()</span>
+### clearCellSelection<span class="signature">()</span>
 
 
 
@@ -7974,7 +8123,8 @@ It is used to clear all the cell selection.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7997,7 +8147,7 @@ $("#Grid").ejGrid("clearCellSelection");
 
 
 
-#### clearColumnSelection<span class="signature">(<span class="optional">index</span>)</span>
+### clearColumnSelection<span class="signature">(<span class="optional">index</span>)</span>
 
 
 
@@ -8028,7 +8178,8 @@ It is used to clear all the row selection or at specific row selection based on 
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8054,7 +8205,7 @@ $("#Grid").ejGrid("clearColumnSelection");
 
 
 
-#### clearSelection<span class="signature">(<span class="optional">index</span>)</span>
+### clearSelection<span class="signature">(<span class="optional">index</span>)</span>
 
 
 
@@ -8085,7 +8236,8 @@ Clear all the row selection or at specific row selection based on the index prov
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8111,7 +8263,7 @@ $("#Grid").ejGrid("clearSelection");
 
 
 
-#### clearSorting<span class="signature">()</span>
+### clearSorting<span class="signature">()</span>
 
 
 
@@ -8126,7 +8278,8 @@ Clear the sorting from columns in the grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8150,7 +8303,7 @@ $("#Grid").ejGrid("clearSorting");
 
 
 
-#### collapseAll<span class="signature">()</span>
+### collapseAll<span class="signature">()</span>
 
 
 
@@ -8165,7 +8318,8 @@ Collapse all the group caption rows in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8189,7 +8343,7 @@ $("#Grid").ejGrid("collapseAll");
 
 
 
-#### collapseGroupDropArea<span class="signature">()</span>
+### collapseGroupDropArea<span class="signature">()</span>
 
 
 
@@ -8204,7 +8358,8 @@ Collapse the group drop area in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8228,7 +8383,7 @@ $("#Grid").ejGrid("collapseGroupDropArea");
 
 
 
-#### columns<span class="signature">(columndetails, <span class="optional">action</span>)</span>
+### columns<span class="signature">(columndetails, <span class="optional">action</span>)</span>
 
 
 
@@ -8264,7 +8419,8 @@ Add or remove columns in grid column collections
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8292,7 +8448,7 @@ $("#Grid").ejGrid("columns","CustomerID", "add");
 
 
 
-#### dataSource<span class="signature">(datasource)</span>
+### dataSource<span class="signature">(datasource)</span>
 
 
 
@@ -8323,7 +8479,8 @@ Refresh the grid with new data source
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8347,7 +8504,7 @@ $("#Grid").ejGrid("dataSource", data);
 
 
 
-#### deleteRecord<span class="signature">(fieldName, data)</span>
+### deleteRecord<span class="signature">(fieldName, data)</span>
 
 
 
@@ -8383,7 +8540,8 @@ Delete a record in grid control even allowDeleting is set as false
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8407,7 +8565,7 @@ $("#Grid").ejGrid("deleteRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -8422,7 +8580,8 @@ Destroy the grid widget all events bound using this._on will be unbind automatic
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8444,7 +8603,7 @@ $("#Grid").ejGrid("destroy");
 
 
 
-#### editCell<span class="signature">(index, fieldName)</span>
+### editCell<span class="signature">(index, fieldName)</span>
 
 
 
@@ -8480,7 +8639,8 @@ Edit a particular cell based on the row index and field name provided in "batch"
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -8502,7 +8662,7 @@ $("#Grid").ejGrid("editCell", 2, "OrderID");
 
 
 
-#### endEdit<span class="signature">()</span>
+### endEdit<span class="signature">()</span>
 
 
 
@@ -8517,7 +8677,8 @@ Send a save request in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8541,7 +8702,7 @@ $("#Grid").ejGrid("endEdit");
 
 
 
-#### expandAll<span class="signature">()</span>
+### expandAll<span class="signature">()</span>
 
 
 
@@ -8556,7 +8717,8 @@ Expand all the group caption rows in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8580,7 +8742,7 @@ $("#Grid").ejGrid("expandAll");
 
 
 
-#### expandCollapse<span class="signature">($target)</span>
+### expandCollapse<span class="signature">($target)</span>
 
 
 
@@ -8611,7 +8773,8 @@ Expand or collapse the row based on the row state in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8635,7 +8798,7 @@ $("#Grid").ejGrid("expandCollapse", $("tr td.recordplusexpand &gt; div").first()
 
 
 
-#### expandGroupDropArea<span class="signature">()</span>
+### expandGroupDropArea<span class="signature">()</span>
 
 
 
@@ -8650,7 +8813,8 @@ Expand the group drop area in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8674,7 +8838,7 @@ $("#Grid").ejGrid("expandGroupDropArea");
 
 
 
-#### filterColumn<span class="signature">(fieldName, filterOperator, filterValue, predicate, <span class="optional">matchcase</span>)</span>
+### filterColumn<span class="signature">(fieldName, filterOperator, filterValue, predicate, <span class="optional">matchcase</span>)</span>
 
 
 
@@ -8725,7 +8889,8 @@ Send a filtering request to grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8748,7 +8913,7 @@ $("#Grid").ejGrid("filterColumn","OrderID","equal","10248","and", true);
 
 
 
-#### getBatchChanges<span class="signature">()</span>
+### getBatchChanges<span class="signature">()</span>
 
 
 
@@ -8763,7 +8928,8 @@ Get the batch changes of edit, delete and add operations of grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -8785,7 +8951,7 @@ $("#Grid").ejGrid("getBatchChanges");
 
 
 
-#### getBrowserDetails<span class="signature">()</span>
+### getBrowserDetails<span class="signature">()</span>
 
 
 
@@ -8800,7 +8966,8 @@ Get the browser details
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8826,7 +8993,7 @@ $("#Grid").ejGrid("getBrowserDetails");
 
 
 
-#### getColumnByField<span class="signature">(fieldName)</span>
+### getColumnByField<span class="signature">(fieldName)</span>
 
 
 
@@ -8857,12 +9024,13 @@ Get the column details based on the given field in grid
 
 
 
-##### Returns:
+#### Returns:
 
 Object
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8886,7 +9054,7 @@ $("#Grid").ejGrid("getColumnByField", "OrderID");
 
 
 
-#### getColumnByHeaderText<span class="signature">(headerText)</span>
+### getColumnByHeaderText<span class="signature">(headerText)</span>
 
 
 
@@ -8917,12 +9085,13 @@ Get the column details based on the given header text in grid.
 
 
 
-##### Returns:
+#### Returns:
 
 Object
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8946,7 +9115,7 @@ $("#Grid").ejGrid("getColumnByHeaderText", "Order ID");
 
 
 
-#### getColumnByIndex<span class="signature">(columnIndex)</span>
+### getColumnByIndex<span class="signature">(columnIndex)</span>
 
 
 
@@ -8977,12 +9146,13 @@ Get the column details based on the given column index in grid
 
 
 
-##### Returns:
+#### Returns:
 
 Object
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9006,7 +9176,7 @@ $("#Grid").ejGrid("getColumnByIndex", 1);
 
 
 
-#### getColumnFieldNames<span class="signature">()</span>
+### getColumnFieldNames<span class="signature">()</span>
 
 
 
@@ -9021,7 +9191,8 @@ Get the list of field names from column collection in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9045,7 +9216,7 @@ $("#Grid").ejGrid("getColumnFieldNames");
 
 
 
-#### getColumnIndexByField<span class="signature">(fieldName)</span>
+### getColumnIndexByField<span class="signature">(fieldName)</span>
 
 
 
@@ -9076,12 +9247,13 @@ Get the column index of the given field in grid.
 
 
 
-##### Returns:
+#### Returns:
 
 Index
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9107,7 +9279,7 @@ $("#Grid").ejGrid("getColumnIndexByField", "OrderID");
 
 
 
-#### getContent<span class="signature">()</span>
+### getContent<span class="signature">()</span>
 
 
 
@@ -9122,7 +9294,8 @@ Get the content div element of grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9146,7 +9319,7 @@ $("#Grid").ejGrid("getContent");
 
 
 
-#### getContentTable<span class="signature">()</span>
+### getContentTable<span class="signature">()</span>
 
 
 
@@ -9161,7 +9334,8 @@ Get the content table element of grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9185,7 +9359,7 @@ $("#Grid").ejGrid("getContentTable");
 
 
 
-#### getCurrentEditCellData<span class="signature">()</span>
+### getCurrentEditCellData<span class="signature">()</span>
 
 
 
@@ -9200,7 +9374,8 @@ Get the data of currently edited cell value in "batch" edit mode
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9224,7 +9399,7 @@ $("#Grid").ejGrid("getCurrentEditCellData");
 
 
 
-#### getCurrentIndex<span class="signature">()</span>
+### getCurrentIndex<span class="signature">()</span>
 
 
 
@@ -9239,12 +9414,13 @@ Get the current page index in grid pager.
 
 
 
-##### Returns:
+#### Returns:
 
 PageIndex
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9268,7 +9444,7 @@ $("#Grid").ejGrid("getCurrentIndex");
 
 
 
-#### getCurrentViewData<span class="signature">()</span>
+### getCurrentViewData<span class="signature">()</span>
 
 
 
@@ -9283,7 +9459,8 @@ Get the current page data source of grid..
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9307,7 +9484,7 @@ $("#Grid").ejGrid("getCurrentViewData");
 
 
 
-#### getFieldNameByHeaderText<span class="signature">(headerText)</span>
+### getFieldNameByHeaderText<span class="signature">(headerText)</span>
 
 
 
@@ -9338,7 +9515,8 @@ Get the column field name from the given header text in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9362,7 +9540,7 @@ $("#Grid").ejGrid("getFieldNameByHeaderText", "Order ID");
 
 
 
-#### getFilterBar<span class="signature">()</span>
+### getFilterBar<span class="signature">()</span>
 
 
 
@@ -9377,7 +9555,8 @@ Get the filter bar of grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9401,7 +9580,7 @@ $("#Grid").ejGrid("getFilterBar");
 
 
 
-#### getFilteredRecords<span class="signature">()</span>
+### getFilteredRecords<span class="signature">()</span>
 
 
 
@@ -9416,7 +9595,8 @@ Get the records filtered or searched in Grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9440,7 +9620,7 @@ $("#Grid").ejGrid("getFilteredRecords");
 
 
 
-#### getFooterContent<span class="signature">()</span>
+### getFooterContent<span class="signature">()</span>
 
 
 
@@ -9455,7 +9635,8 @@ Get the footer content of grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9479,7 +9660,7 @@ $("#Grid").ejGrid("getFooterContent");
 
 
 
-#### getFooterTable<span class="signature">()</span>
+### getFooterTable<span class="signature">()</span>
 
 
 
@@ -9494,7 +9675,8 @@ Get the footer table element of grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9518,7 +9700,7 @@ $("#Grid").ejGrid("getFooterTable");
 
 
 
-#### getHeaderContent<span class="signature">()</span>
+### getHeaderContent<span class="signature">()</span>
 
 
 
@@ -9533,7 +9715,8 @@ Get the header content div element of grid..
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9557,7 +9740,7 @@ $("#Grid").ejGrid("getHeaderContent");
 
 
 
-#### getHeaderTable<span class="signature">()</span>
+### getHeaderTable<span class="signature">()</span>
 
 
 
@@ -9572,7 +9755,8 @@ Get the header table element of grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9596,7 +9780,7 @@ $("#Grid").ejGrid("getHeaderTable");
 
 
 
-#### getHeaderTextByFieldName<span class="signature">(field)</span>
+### getHeaderTextByFieldName<span class="signature">(field)</span>
 
 
 
@@ -9627,7 +9811,8 @@ Get the column header text from the given field name in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9650,7 +9835,7 @@ $("#Grid").ejGrid("getHeaderTextByFieldName", "OrderID");
 
 
 
-#### getHiddenColumnNames<span class="signature">()</span>
+### getHiddenColumnNames<span class="signature">()</span>
 
 
 
@@ -9665,7 +9850,8 @@ Get the names of all the hidden column collections in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9689,7 +9875,7 @@ $("#Grid").ejGrid("getHiddenColumnNames");
 
 
 
-#### getIndexByRow<span class="signature">($tr)</span>
+### getIndexByRow<span class="signature">($tr)</span>
 
 
 
@@ -9720,12 +9906,13 @@ Get the row index based on the given tr element in grid.
 
 
 
-##### Returns:
+#### Returns:
 
 index
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9749,7 +9936,7 @@ $("#Grid").ejGrid("getIndexByRow", $(".gridcontent tr").first());
 
 
 
-#### getPager<span class="signature">()</span>
+### getPager<span class="signature">()</span>
 
 
 
@@ -9764,7 +9951,8 @@ Get the pager of grid..
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9788,7 +9976,7 @@ $("#Grid").ejGrid("getPager");
 
 
 
-#### getPrimaryKeyFieldNames<span class="signature">()</span>
+### getPrimaryKeyFieldNames<span class="signature">()</span>
 
 
 
@@ -9803,12 +9991,13 @@ Get the names of primary key columns in Grid
 
 
 
-##### Returns:
+#### Returns:
 
 key fields
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9832,7 +10021,7 @@ $("#Grid").ejGrid("getPrimaryKeyFieldNames");
 
 
 
-#### getRowByIndex<span class="signature">(from, to)</span>
+### getRowByIndex<span class="signature">(from, to)</span>
 
 
 
@@ -9868,7 +10057,8 @@ Get the rows(tr element) from the given from and to row index in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9892,7 +10082,7 @@ $("#Grid").ejGrid("getRowByIndex", 3, 6);
 
 
 
-#### getRowHeight<span class="signature">()</span>
+### getRowHeight<span class="signature">()</span>
 
 
 
@@ -9907,7 +10097,8 @@ Get the row height of grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9931,7 +10122,7 @@ $("#Grid").ejGrid("getRowHeight");
 
 
 
-#### getRows<span class="signature">()</span>
+### getRows<span class="signature">()</span>
 
 
 
@@ -9946,7 +10137,8 @@ Get the rows(tr element)of grid which is displayed in the current page.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9970,7 +10162,7 @@ $("#Grid").ejGrid("getRows");
 
 
 
-#### getScrollObject<span class="signature">()</span>
+### getScrollObject<span class="signature">()</span>
 
 
 
@@ -9985,7 +10177,8 @@ Get the scroller object of grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10009,7 +10202,7 @@ $("#Grid").ejGrid("getScrollObject");
 
 
 
-#### getSelectedRecords<span class="signature">()</span>
+### getSelectedRecords<span class="signature">()</span>
 
 
 
@@ -10024,7 +10217,8 @@ Get the selected records details in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10048,7 +10242,7 @@ $("#Grid").ejGrid("getSelectedRecords");
 
 
 
-#### getVisibleColumnNames<span class="signature">()</span>
+### getVisibleColumnNames<span class="signature">()</span>
 
 
 
@@ -10063,7 +10257,8 @@ Get the names of all the visible column collections in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10087,7 +10282,7 @@ $("#Grid").ejGrid("getVisibleColumnNames");
 
 
 
-#### gotoPage<span class="signature">(pageIndex)</span>
+### gotoPage<span class="signature">(pageIndex)</span>
 
 
 
@@ -10118,7 +10313,8 @@ Send a paging request to specified page in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10142,7 +10338,7 @@ $("#Grid").ejGrid("gotoPage", 3);
 
 
 
-#### groupColumn<span class="signature">(fieldName)</span>
+### groupColumn<span class="signature">(fieldName)</span>
 
 
 
@@ -10173,7 +10369,8 @@ Send a column grouping request in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10197,7 +10394,7 @@ $("#Grid").ejGrid("groupColumn", "OrderID");
 
 
 
-#### hideColumns<span class="signature">(headerText)</span>
+### hideColumns<span class="signature">(headerText)</span>
 
 
 
@@ -10228,7 +10425,8 @@ Hide columns from the grid based on the header text
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10254,7 +10452,7 @@ $("#Grid").ejGrid("hideColumns", ["Order ID", "Customer ID"]);
 
 
 
-#### print<span class="signature">()</span>
+### print<span class="signature">()</span>
 
 
 
@@ -10269,7 +10467,8 @@ Print the grid control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10295,7 +10494,7 @@ $("#Grid").ejGrid("print");
 
 
 
-#### refreshBatchEditChanges<span class="signature">()</span>
+### refreshBatchEditChanges<span class="signature">()</span>
 
 
 
@@ -10310,7 +10509,8 @@ It is used to refresh and reset the changes made in "batch" edit mode
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10334,7 +10534,7 @@ $("#Grid").ejGrid("refreshBatchEditChanges");
 
 
 
-#### refreshContent<span class="signature">(<span class="optional">templateRefresh</span>)</span>
+### refreshContent<span class="signature">(<span class="optional">templateRefresh</span>)</span>
 
 
 
@@ -10365,7 +10565,8 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10393,7 +10594,7 @@ $("#Grid").ejGrid("refreshContent", true);
 
 
 
-#### refreshTemplate<span class="signature">()</span>
+### refreshTemplate<span class="signature">()</span>
 
 
 
@@ -10408,7 +10609,8 @@ Refresh the template of the grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10432,7 +10634,7 @@ $("#Grid").ejGrid("refreshTemplate");
 
 
 
-#### refreshToolbar<span class="signature">()</span>
+### refreshToolbar<span class="signature">()</span>
 
 
 
@@ -10447,7 +10649,8 @@ Refresh the toolbar items in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10473,7 +10676,7 @@ $("#Grid").ejGrid("refreshToolbar");
 
 
 
-#### removeSortedColumns<span class="signature">(fieldName)</span>
+### removeSortedColumns<span class="signature">(fieldName)</span>
 
 
 
@@ -10504,7 +10707,8 @@ Remove a column or collection of columns from a sorted column collections in gri
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10532,7 +10736,7 @@ $("#Grid").ejGrid("removeSortedColumns", ["CustomerID", "ShipCity"]);
 
 
 
-#### render<span class="signature">()</span>
+### render<span class="signature">()</span>
 
 
 
@@ -10547,7 +10751,8 @@ Creates a grid control
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10573,7 +10778,7 @@ $("#Grid").ejGrid("render");
 
 
 
-#### reorderColumns<span class="signature">(fromFieldName, toFieldName)</span>
+### reorderColumns<span class="signature">(fromFieldName, toFieldName)</span>
 
 
 
@@ -10609,7 +10814,8 @@ Re-order the column in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10633,7 +10839,7 @@ $("#Grid").ejGrid("reorderColumns", "OrderID", "CustomerID");
 
 
 
-#### resetModelCollections<span class="signature">()</span>
+### resetModelCollections<span class="signature">()</span>
 
 
 
@@ -10648,7 +10854,8 @@ Reset the model collections like pageSettings, groupSettings, filterSettings, so
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10672,7 +10879,7 @@ $("#Grid").ejGrid("resetModelCollections");
 
 
 
-#### rowHeightRefresh<span class="signature">()</span>
+### rowHeightRefresh<span class="signature">()</span>
 
 
 
@@ -10687,7 +10894,8 @@ Resolves row height issue when unbound column is used with FrozenColumn
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10712,7 +10920,7 @@ $("#Grid").ejGrid("rowHeightRefresh");
 
 
 
-#### search<span class="signature">(searchString)</span>
+### search<span class="signature">(searchString)</span>
 
 
 
@@ -10743,7 +10951,8 @@ Send a search request to grid with specified string passed in it
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10766,7 +10975,7 @@ $("#Grid").ejGrid("search", "France");
 
 
 
-#### selectCells<span class="signature">(rowCellIndexes)</span>
+### selectCells<span class="signature">(rowCellIndexes)</span>
 
 
 
@@ -10797,7 +11006,8 @@ Select cells in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10821,7 +11031,7 @@ $("#Grid").ejGrid("selectCells", [[1, [4, 3, 2]]]);
 
 
 
-#### selectColumns<span class="signature">(fromIndex)</span>
+### selectColumns<span class="signature">(fromIndex)</span>
 
 
 
@@ -10852,7 +11062,8 @@ Select columns in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10876,7 +11087,7 @@ $("#Grid").ejGrid("selectColumns", 1, 4);
 
 
 
-#### selectRows<span class="signature">(fromIndex, toIndex)</span>
+### selectRows<span class="signature">(fromIndex, toIndex)</span>
 
 
 
@@ -10912,7 +11123,8 @@ Select rows in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10936,7 +11148,7 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 
 
 
-#### setValidationToField<span class="signature">(fieldName, rules)</span>
+### setValidationToField<span class="signature">(fieldName, rules)</span>
 
 
 
@@ -10972,7 +11184,8 @@ Set validation to a field during editing.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10996,7 +11209,7 @@ $("#Grid").ejGrid("setValidationToField", "OrderID", { required: true });
 
 
 
-#### showColumns<span class="signature">(headerText)</span>
+### showColumns<span class="signature">(headerText)</span>
 
 
 
@@ -11027,7 +11240,8 @@ Show columns in the grid based on the header text
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11053,7 +11267,7 @@ $("#Grid").ejGrid("showColumns", ["Order ID", "Customer ID"]);
 
 
 
-#### sortColumn<span class="signature">(columnName, <span class="optional">sortingDirection</span>)</span>
+### sortColumn<span class="signature">(columnName, <span class="optional">sortingDirection</span>)</span>
 
 
 
@@ -11089,7 +11303,8 @@ Send a sorting request in grid.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11112,7 +11327,7 @@ $("#Grid").ejGrid("sortColumn", "OrderID", "ascending");
 
 
 
-#### startEdit<span class="signature">($tr)</span>
+### startEdit<span class="signature">($tr)</span>
 
 
 
@@ -11143,7 +11358,8 @@ Send an edit record request in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11167,7 +11383,7 @@ $("#Grid").ejGrid("startEdit", $(".gridcontent tr").first());
 
 
 
-#### ungroupColumn<span class="signature">(fieldName)</span>
+### ungroupColumn<span class="signature">(fieldName)</span>
 
 
 
@@ -11198,7 +11414,8 @@ Un-group a column from grouped columns collection in grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11222,7 +11439,7 @@ $("#Grid").ejGrid("ungroupColumn", "OrderID");
 
 
 
-#### updateRecord<span class="signature">(fieldName, data)</span>
+### updateRecord<span class="signature">(fieldName, data)</span>
 
 
 
@@ -11258,7 +11475,8 @@ Update a edited record in grid control even allowEditing is set as false.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11280,7 +11498,7 @@ $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });
 
 
 
-### Events
+## Events
 
 
 
@@ -11289,7 +11507,7 @@ $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });
 
 
 
-#### actionBegin
+### actionBegin
 
 
 
@@ -12003,7 +12221,8 @@ Triggered for every grid action before its starts.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12020,7 +12239,7 @@ $("#Grid").ejGrid({
 
 
 
-#### actionComplete
+### actionComplete
 
 
 
@@ -12819,7 +13038,8 @@ Triggered for every grid action success event.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -12835,7 +13055,7 @@ $("#Grid").ejGrid({
 
 
 
-#### actionFailure
+### actionFailure
 
 
 
@@ -13424,7 +13644,8 @@ Triggered for every grid action server failure event.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -13440,7 +13661,7 @@ $("#Grid").ejGrid({
 
 
 
-#### batchAdd
+### batchAdd
 
 
 
@@ -13523,7 +13744,8 @@ Triggered when record batch add.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -13539,7 +13761,7 @@ $("#Grid").ejGrid({
 
 
 
-#### batchDelete
+### batchDelete
 
 
 
@@ -13597,7 +13819,8 @@ Triggered when record batch delete.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -13613,7 +13836,7 @@ $("#Grid").ejGrid({
 
 
 
-#### beforeBatchAdd
+### beforeBatchAdd
 
 
 
@@ -13681,7 +13904,8 @@ Triggered before the batch add.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -13697,7 +13921,7 @@ $("#Grid").ejGrid({
 
 
 
-#### beforeBatchDelete
+### beforeBatchDelete
 
 
 
@@ -13775,7 +13999,8 @@ Triggered before the batch delete.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -13791,7 +14016,7 @@ $("#Grid").ejGrid({
 
 
 
-#### beforeBatchSave
+### beforeBatchSave
 
 
 
@@ -13854,7 +14079,8 @@ Triggered before the batch save.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -13870,7 +14096,7 @@ $("#Grid").ejGrid({
 
 
 
-#### beginEdit
+### beginEdit
 
 
 
@@ -13948,7 +14174,8 @@ Triggered before the record is going to be edited.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -13964,7 +14191,7 @@ $("#Grid").ejGrid({
 
 
 
-#### cellEdit
+### cellEdit
 
 
 
@@ -14062,7 +14289,8 @@ Triggered when record cell edit.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14078,7 +14306,7 @@ $("#Grid").ejGrid({
 
 
 
-#### cellSave
+### cellSave
 
 
 
@@ -14171,7 +14399,8 @@ Triggered when record cell save.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14187,7 +14416,7 @@ $("#Grid").ejGrid({
 
 
 
-#### cellSelected
+### cellSelected
 
 
 
@@ -14275,7 +14504,8 @@ Triggered after the cell is selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14291,7 +14521,7 @@ $("#Grid").ejGrid({
 
 
 
-#### cellSelecting
+### cellSelecting
 
 
 
@@ -14384,7 +14614,8 @@ Triggered before the cell is going to be selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14400,7 +14631,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columnDrag
+### columnDrag
 
 
 
@@ -14473,7 +14704,8 @@ Triggered when the column is being dragged.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14489,7 +14721,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columnDragStart
+### columnDragStart
 
 
 
@@ -14562,7 +14794,8 @@ Triggered when column dragging begins.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14578,7 +14811,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columnDrop
+### columnDrop
 
 
 
@@ -14651,7 +14884,8 @@ Triggered when the column is dropped.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -14667,7 +14901,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columnSelected
+### columnSelected
 
 
 
@@ -14755,7 +14989,8 @@ Triggered after the column is selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14771,7 +15006,7 @@ $("#Grid").ejGrid({
 
 
 
-#### columnSelecting
+### columnSelecting
 
 
 
@@ -14864,7 +15099,8 @@ Triggered before the column is going to be selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14880,7 +15116,7 @@ $("#Grid").ejGrid({
 
 
 
-#### contextClick
+### contextClick
 
 
 
@@ -14953,7 +15189,8 @@ Triggered when context menu item is clicked
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -14969,7 +15206,7 @@ $("#Grid").ejGrid({
 
 
 
-#### contextOpen
+### contextOpen
 
 
 
@@ -15042,7 +15279,8 @@ Triggered before the context menu is opened.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -15058,7 +15296,7 @@ $("#Grid").ejGrid({
 
 
 
-#### create
+### create
 
 
 
@@ -15116,7 +15354,8 @@ Triggered when the grid is rendered completely.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -15132,7 +15371,7 @@ $("#Grid").ejGrid({
 
 
 
-#### dataBound
+### dataBound
 
 
 
@@ -15190,7 +15429,8 @@ Triggered the grid is bound with data during initial rendering.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -15206,7 +15446,7 @@ $("#Grid").ejGrid({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -15264,7 +15504,8 @@ Triggered when grid going to destroy.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -15280,7 +15521,7 @@ $("#Grid").ejGrid({
 
 
 
-#### detailsCollapse
+### detailsCollapse
 
 
 
@@ -15358,7 +15599,8 @@ Triggered when detail template row is clicked to collapse.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -15374,7 +15616,7 @@ $("#Grid").ejGrid({
 
 
 
-#### detailsDataBound
+### detailsDataBound
 
 
 
@@ -15442,7 +15684,8 @@ Triggered detail template row is initialized.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -15458,7 +15701,7 @@ $("#Grid").ejGrid({
 
 
 
-#### detailsExpand
+### detailsExpand
 
 
 
@@ -15536,7 +15779,8 @@ Triggered when detail template row is clicked to expand.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -15553,7 +15797,7 @@ $("#Grid").ejGrid({
 
 
 
-#### endAdd
+### endAdd
 
 
 
@@ -15611,7 +15855,8 @@ Triggered after the record is added.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -15628,7 +15873,7 @@ $("#Grid").ejGrid({
 
 
 
-#### endDelete
+### endDelete
 
 
 
@@ -15686,7 +15931,8 @@ Triggered after the record is deleted.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -15702,7 +15948,7 @@ $("#Grid").ejGrid({
 
 
 
-#### endEdit
+### endEdit
 
 
 
@@ -15760,7 +16006,8 @@ Triggered after the record is edited.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -15777,7 +16024,7 @@ $("#Grid").ejGrid({
 
 
 
-#### load
+### load
 
 
 
@@ -15835,7 +16082,8 @@ Triggered initial load.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -15851,7 +16099,7 @@ $("#Grid").ejGrid({
 
 
 
-#### mergeCellInfo
+### mergeCellInfo
 
 
 
@@ -15944,7 +16192,8 @@ Triggered every time a request is made to access particular cell information, el
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -15960,7 +16209,7 @@ $("#Grid").ejGrid({
 
 
 
-#### queryCellInfo
+### queryCellInfo
 
 
 
@@ -16043,7 +16292,8 @@ Triggered every time a request is made to access particular cell information, el
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -16059,7 +16309,7 @@ $("#Grid").ejGrid({
 
 
 
-#### recordClick
+### recordClick
 
 
 
@@ -16137,7 +16387,8 @@ Triggered when record is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -16153,7 +16404,7 @@ $("#Grid").ejGrid({
 
 
 
-#### recordDoubleClick
+### recordDoubleClick
 
 
 
@@ -16231,7 +16482,8 @@ Triggered when record is double clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -16247,7 +16499,7 @@ $("#Grid").ejGrid({
 
 
 
-#### resized
+### resized
 
 
 
@@ -16330,7 +16582,8 @@ Triggered after column resized.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -16346,7 +16599,7 @@ $("#Grid").ejGrid({
 
 
 
-#### resizeEnd
+### resizeEnd
 
 
 
@@ -16434,7 +16687,8 @@ Triggered when column resize end.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -16450,7 +16704,7 @@ $("#Grid").ejGrid({
 
 
 
-#### resizeStart
+### resizeStart
 
 
 
@@ -16528,7 +16782,8 @@ Triggered when column resize start.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -16544,7 +16799,7 @@ $("#Grid").ejGrid({
 
 
 
-#### rightClick
+### rightClick
 
 
 
@@ -16637,7 +16892,8 @@ Triggered when right clicked on grid element.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -16653,7 +16909,7 @@ $("#Grid").ejGrid({
 
 
 
-#### rowDataBound
+### rowDataBound
 
 
 
@@ -16726,7 +16982,8 @@ Triggered every time a request is made to access row information, element and da
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -16743,7 +17000,7 @@ $("#Grid").ejGrid({
 
 
 
-#### rowSelected
+### rowSelected
 
 
 
@@ -16831,7 +17088,8 @@ Triggered after the row is selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -16848,7 +17106,7 @@ $("#Grid").ejGrid({
 
 
 
-#### rowSelecting
+### rowSelecting
 
 
 
@@ -16931,7 +17189,8 @@ Triggered before the row is going to be selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -16947,7 +17206,7 @@ $("#Grid").ejGrid({
 
 
 
-#### templateRefresh
+### templateRefresh
 
 
 
@@ -17025,7 +17284,8 @@ Triggered when refresh the template column elements in the Grid.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt;
@@ -17041,7 +17301,7 @@ $("#Grid").ejGrid({
 
 
 
-#### toolBarClick
+### toolBarClick
 
 
 
@@ -17114,7 +17374,8 @@ Triggered when toolbar item is clicked in grid.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 

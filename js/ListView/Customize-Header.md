@@ -17,7 +17,7 @@ Refer the following code example.
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 
         <div id="defaultlistbox">
@@ -34,19 +34,22 @@ Refer the following code example.
             <li data-ej-text="School-age Crafts"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+ 
         $(function () {
             $("#defaultlistbox").ejListView({showHeader:true, **showHeaderBackButton:true, headerBackButtonText :"Menu"**, width:400});
         });
-    </script>
-
-
 
 {% endhighlight %}
 
 
 
-**Screenshot:**
+Run the code to get the following output
 
 {% include image.html url="/js/ListView/Customize-Header_images/Customize-Header_img1.png" %}
 

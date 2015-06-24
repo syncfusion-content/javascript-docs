@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html CheckBox control.
+# Custom Design for Html CheckBox control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html CheckBox control.
 
 
 
-#### $(element).ejmCheckBox<span class="signature">()</span>
+## $(element).ejmCheckBox<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html CheckBox control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -52,7 +53,7 @@ $("#chkbox").ejmCheckBox();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -80,7 +81,7 @@ $("#chkbox").ejmCheckBox();
 
 
 
-### Members
+## Members
 
 
 
@@ -89,7 +90,7 @@ $("#chkbox").ejmCheckBox();
 
 
 
-#### checked<span class="type-signature type boolean">boolean</span>
+### checked<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -120,7 +121,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -151,7 +153,7 @@ Default Value:
 
 
 
-#### checkState<span class="type-signature type enum">enum</span>
+### checkState<span class="type-signature type enum">enum</span>
 
 
 
@@ -182,7 +184,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -213,7 +216,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -244,7 +247,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -274,7 +278,7 @@ $("#chkbox").ejmCheckBox ("option", "cssClass", "customclass");            </cod
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -305,7 +309,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -336,7 +341,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -367,7 +372,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -397,7 +403,7 @@ Default Value:
 
 
 
-#### enableTriState<span class="type-signature type boolean">boolean</span>
+### enableTriState<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -428,7 +434,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -459,7 +466,7 @@ Default Value:
 
 
 
-#### preventDefault<span class="type-signature type boolean">boolean</span>
+### preventDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -490,7 +497,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -521,7 +529,7 @@ $("#chkbox").ejmCheckBox ("option", "preventDefault", false);</code>
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -552,7 +560,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -582,7 +591,7 @@ $("#chkbox").ejmCheckBox ("option", "renderMode", ej.mobile.RenderMode.Auto);   
 
 
 
-#### text<span class="type-signature type string">string</span>
+### text<span class="type-signature type string">string</span>
 
 
 
@@ -613,7 +622,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -643,7 +653,7 @@ Default Value:
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -674,7 +684,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -705,7 +716,7 @@ Default Value:
 
 
 
-#### windows
+### windows
 
 
 
@@ -726,7 +737,7 @@ Section for windows mode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -757,7 +768,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -785,7 +797,7 @@ $("#chkbox").ejmCheckBox("option", "windows.renderDefault", false); </code>
 
 
 
-### Methods
+## Methods
 
 
 
@@ -794,7 +806,7 @@ $("#chkbox").ejmCheckBox("option", "windows.renderDefault", false); </code>
 
 
 
-#### isChecked<span class="signature">()</span>
+### isChecked<span class="signature">()</span>
 
 
 
@@ -809,7 +821,8 @@ To change the checked state.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -834,7 +847,7 @@ $("#chkbox").ejmCheckBox("isChecked");
 
 
 
-### Events
+## Events
 
 
 
@@ -843,7 +856,7 @@ $("#chkbox").ejmCheckBox("isChecked");
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -911,7 +924,8 @@ Event triggers when touch end happens on the control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -942,7 +956,7 @@ $("#chkbox").ejmCheckBox({
 
 
 
-#### touchStart
+### touchStart
 
 
 
@@ -1010,7 +1024,8 @@ Event triggers when touch start happens on the control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

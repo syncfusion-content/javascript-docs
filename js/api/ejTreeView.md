@@ -18,7 +18,7 @@ The treeview can be easily configured with the DOM element, such as div or ul. y
 
 
 
-#### $(element).ejTreeView<span class="signature">(options)</span>
+## $(element).ejTreeView<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ The treeview can be easily configured with the DOM element, such as div or ul. y
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -90,7 +91,7 @@ $('#treeView').ejTreeView();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -121,7 +122,7 @@ $('#treeView').ejTreeView();
 
 
 
-### Members
+## Members
 
 
 
@@ -130,7 +131,7 @@ $('#treeView').ejTreeView();
 
 
 
-#### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
+### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -161,7 +162,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -207,7 +209,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### allowDragAndDropAcrossControl<span class="type-signature type boolean">boolean</span>
+### allowDragAndDropAcrossControl<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -238,7 +240,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -285,7 +288,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### allowDropSibling<span class="type-signature type boolean">boolean</span>
+### allowDropSibling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -316,7 +319,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -363,7 +367,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### allowEditing<span class="type-signature type boolean">boolean</span>
+### allowEditing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -394,7 +398,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -440,7 +445,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -471,7 +476,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -517,7 +523,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### autoCheck<span class="type-signature type boolean">boolean</span>
+### autoCheck<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -548,7 +554,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -595,7 +602,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### autoCheckParentNode<span class="type-signature type boolean">boolean</span>
+### autoCheckParentNode<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -626,7 +633,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -673,7 +681,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### checkedNodes<span class="type-signature type array">array</span>
+### checkedNodes<span class="type-signature type array">array</span>
 
 
 
@@ -704,7 +712,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -751,7 +760,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -782,7 +791,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -828,7 +838,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -859,7 +869,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -905,7 +916,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -936,7 +947,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -982,7 +994,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1013,7 +1025,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1059,7 +1072,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1090,7 +1103,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1136,7 +1150,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### expandedNodes<span class="type-signature type array">array</span>
+### expandedNodes<span class="type-signature type array">array</span>
 
 
 
@@ -1167,7 +1181,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1213,7 +1228,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### expandOn<span class="type-signature type string">string</span>
+### expandOn<span class="type-signature type string">string</span>
 
 
 
@@ -1244,7 +1259,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1290,7 +1306,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### fields<span class="type-signature type object">object</span>
+### fields<span class="type-signature type object">object</span>
 
 
 
@@ -1321,7 +1337,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1339,7 +1356,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### fields.child<span class="type-signature type string">String</span>
+### fields.child<span class="type-signature type string">String</span>
 
 
 
@@ -1360,7 +1377,7 @@ It receives the child level or inner level data source such as Essential DataMan
 
 
 
-#### fields.dataSource<span class="type-signature type object">Object</span>
+### fields.dataSource<span class="type-signature type object">Object</span>
 
 
 
@@ -1381,7 +1398,7 @@ It receives Essential DataManager object and JSON object.
 
 
 
-#### fields.expanded<span class="type-signature type boolean">Boolean</span>
+### fields.expanded<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1402,7 +1419,7 @@ Specifies the node to be in expanded state.
 
 
 
-#### fields.hasChild<span class="type-signature type boolean">Boolean</span>
+### fields.hasChild<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1423,7 +1440,7 @@ Its allow us to indicate whether the node has child or not in load on demand
 
 
 
-#### fields.htmlAttribute<span class="type-signature type object">Object</span>
+### fields.htmlAttribute<span class="type-signature type object">Object</span>
 
 
 
@@ -1444,7 +1461,7 @@ Specifies the html attributes to &ldquo;li&rdquo; item list.
 
 
 
-#### fields.id<span class="type-signature type string">String</span>
+### fields.id<span class="type-signature type string">String</span>
 
 
 
@@ -1465,7 +1482,7 @@ Specifies the id to TreeView node items list.
 
 
 
-#### fields.imageAttribute<span class="type-signature type string">String</span>
+### fields.imageAttribute<span class="type-signature type string">String</span>
 
 
 
@@ -1486,7 +1503,7 @@ Specifies the image attribute to &ldquo;img&rdquo; tag inside items list
 
 
 
-#### fields.imageUrl<span class="type-signature type string">String</span>
+### fields.imageUrl<span class="type-signature type string">String</span>
 
 
 
@@ -1507,7 +1524,7 @@ Specifies the html attributes to &ldquo;li&rdquo; item list.
 
 
 
-#### fields.isChecked<span class="type-signature type boolean">Boolean</span>
+### fields.isChecked<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1528,7 +1545,7 @@ If its true Checkbox node will be checked when rendered with checkbox.
 
 
 
-#### fields.linkAttribute<span class="type-signature type string">String</span>
+### fields.linkAttribute<span class="type-signature type string">String</span>
 
 
 
@@ -1549,7 +1566,7 @@ Specifies the link attribute to &ldquo;a&rdquo; tag in item list.
 
 
 
-#### fields.parentId<span class="type-signature type string">String</span>
+### fields.parentId<span class="type-signature type string">String</span>
 
 
 
@@ -1570,7 +1587,7 @@ Specifies the parent id of the node. The nodes are listed as child nodes of the 
 
 
 
-#### fields.query<span class="type-signature type object">Object</span>
+### fields.query<span class="type-signature type object">Object</span>
 
 
 
@@ -1591,7 +1608,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 
 
-#### fields.selected<span class="type-signature type boolean">Boolean</span>
+### fields.selected<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1612,7 +1629,7 @@ Allow us to specify the node to be in selected state
 
 
 
-#### fields.spriteCssClass<span class="type-signature type string">String</span>
+### fields.spriteCssClass<span class="type-signature type string">String</span>
 
 
 
@@ -1633,7 +1650,7 @@ Specifies the sprite CSS class to &ldquo;li&rdquo; item list.
 
 
 
-#### fields.tableName<span class="type-signature type string">String</span>
+### fields.tableName<span class="type-signature type string">String</span>
 
 
 
@@ -1654,7 +1671,7 @@ It receives the table name to execute query on the corresponding table.
 
 
 
-#### fields.text<span class="type-signature type string">String</span>
+### fields.text<span class="type-signature type string">String</span>
 
 
 
@@ -1675,7 +1692,7 @@ Specifies the text of TreeView node items list.
 
 
 
-#### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -1706,7 +1723,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1752,7 +1770,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### loadOnDemand<span class="type-signature type boolean">boolean</span>
+### loadOnDemand<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1783,7 +1801,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1829,7 +1848,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### selectedNode<span class="type-signature type number">number</span>
+### selectedNode<span class="type-signature type number">number</span>
 
 
 
@@ -1860,7 +1879,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1906,7 +1926,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### showCheckbox<span class="type-signature type boolean">boolean</span>
+### showCheckbox<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1937,7 +1957,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1983,7 +2004,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### template<span class="type-signature type string">string</span>
+### template<span class="type-signature type string">string</span>
 
 
 
@@ -2014,7 +2035,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2076,7 +2098,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -2107,7 +2129,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2151,7 +2174,7 @@ $("#treeView").ejTreeView({
 
 
 
-### Methods
+## Methods
 
 
 
@@ -2160,7 +2183,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### addNode<span class="signature">(newNodeText, target)</span>
+### addNode<span class="signature">(newNodeText, target)</span>
 
 
 
@@ -2196,7 +2219,8 @@ To add Node in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2279,7 +2303,7 @@ treeObj.addNode(obj, $("#Music"));
 
 
 
-#### checkAll<span class="signature">()</span>
+### checkAll<span class="signature">()</span>
 
 
 
@@ -2294,7 +2318,8 @@ To check all the TreeView nodes.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2375,7 +2400,7 @@ $("#treeView").ejTreeView("checkAll");
 
 
 
-#### checkNode<span class="signature">(element)</span>
+### checkNode<span class="signature">(element)</span>
 
 
 
@@ -2406,7 +2431,8 @@ To Check particular node checkbox in TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2487,7 +2513,7 @@ $("#treeView").ejTreeView("checkNode",$("#book"));
 
 
 
-#### collapseAll<span class="signature">()</span>
+### collapseAll<span class="signature">()</span>
 
 
 
@@ -2502,7 +2528,8 @@ To collapse all the TreeView nodes.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2583,7 +2610,7 @@ $("#treeView").ejTreeView("collapseAll");
 
 
 
-#### collapseNode<span class="signature">(element)</span>
+### collapseNode<span class="signature">(element)</span>
 
 
 
@@ -2614,7 +2641,8 @@ To collapseNode particular node in TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2697,7 +2725,7 @@ $("#treeView").ejTreeView("collapseNode",$("#art"));
 
 
 
-#### disableNode<span class="signature">(node)</span>
+### disableNode<span class="signature">(node)</span>
 
 
 
@@ -2728,7 +2756,8 @@ To disable the node in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2808,7 +2837,7 @@ $("#treeView").ejTreeView("disableNode",$("#book"));
 
 
 
-#### enableNode<span class="signature">(node)</span>
+### enableNode<span class="signature">(node)</span>
 
 
 
@@ -2839,7 +2868,8 @@ To enable the node in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2924,7 +2954,7 @@ $("#treeView").ejTreeView("enableNode",$("#book"));
 
 
 
-#### expandAll<span class="signature">()</span>
+### expandAll<span class="signature">()</span>
 
 
 
@@ -2939,7 +2969,8 @@ To expand all the TreeView nodes.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3020,7 +3051,7 @@ $("#treeView").ejTreeView("expandAll");
 
 
 
-#### expandNode<span class="signature">(element)</span>
+### expandNode<span class="signature">(element)</span>
 
 
 
@@ -3051,7 +3082,8 @@ To expandNode particular node in TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3134,7 +3166,7 @@ $("#treeView").ejTreeView("expandNode",$("#book"));
 
 
 
-#### getCheckedNodes<span class="signature">()</span>
+### getCheckedNodes<span class="signature">()</span>
 
 
 
@@ -3149,7 +3181,8 @@ To getCheckedNodes in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3232,7 +3265,7 @@ $("#treeView").ejTreeView("getCheckedNodes");
 
 
 
-#### getSelectedNode<span class="signature">()</span>
+### getSelectedNode<span class="signature">()</span>
 
 
 
@@ -3247,7 +3280,8 @@ To get the selected nodes in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3328,7 +3362,7 @@ $("#treeView").ejTreeView("getSelectedNode");
 
 
 
-#### getText<span class="signature">(node)</span>
+### getText<span class="signature">(node)</span>
 
 
 
@@ -3359,7 +3393,8 @@ To get the text of the nodes in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3440,7 +3475,7 @@ $("#treeView").ejTreeView("getText",$("#book"));
 
 
 
-#### hasChildNode<span class="signature">(element)</span>
+### hasChildNode<span class="signature">(element)</span>
 
 
 
@@ -3471,7 +3506,8 @@ To retrive the status of the collection of childs for the given TreeView node.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3552,7 +3588,7 @@ $("#treeView").ejTreeView("hasChildNode",$("#book"));
 
 
 
-#### hide<span class="signature">()</span>
+### hide<span class="signature">()</span>
 
 
 
@@ -3567,7 +3603,8 @@ To show nodes in TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3648,7 +3685,7 @@ $("#treeView").ejTreeView("hide");
 
 
 
-#### hideNode<span class="signature">(element)</span>
+### hideNode<span class="signature">(element)</span>
 
 
 
@@ -3679,7 +3716,8 @@ To hideNode particular node in TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3760,7 +3798,7 @@ $("#treeView").ejTreeView("hideNode",$("#book"));
 
 
 
-#### isExpanded<span class="signature">(element)</span>
+### isExpanded<span class="signature">(element)</span>
 
 
 
@@ -3791,7 +3829,8 @@ To retrive the expand status of the given TreeView node.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3872,7 +3911,7 @@ $("#treeView").ejTreeView("isExpanded",$("#book"));
 
 
 
-#### isNodeChecked<span class="signature">(element)</span>
+### isNodeChecked<span class="signature">(element)</span>
 
 
 
@@ -3903,7 +3942,8 @@ To retrive the checked status of the given TreeView node.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3984,7 +4024,7 @@ $("#treeView").ejTreeView("isNodeChecked",$("#book"));
 
 
 
-#### refresh<span class="signature">()</span>
+### refresh<span class="signature">()</span>
 
 
 
@@ -3999,7 +4039,8 @@ To refresh the TreeView
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4080,7 +4121,7 @@ $("#treeView").ejTreeView("refresh");
 
 
 
-#### removeNode<span class="signature">(element)</span>
+### removeNode<span class="signature">(element)</span>
 
 
 
@@ -4111,7 +4152,8 @@ To remove Node in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4192,7 +4234,7 @@ $("#treeView").ejTreeView("removeNode",$("#book"));
 
 
 
-#### selectNode<span class="signature">(node)</span>
+### selectNode<span class="signature">(node)</span>
 
 
 
@@ -4223,7 +4265,8 @@ To select the node in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4304,7 +4347,7 @@ $("#treeView").ejTreeView("selectNode",$("#book"));
 
 
 
-#### show<span class="signature">()</span>
+### show<span class="signature">()</span>
 
 
 
@@ -4319,7 +4362,8 @@ To show nodes in TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4400,7 +4444,7 @@ $("#treeView").ejTreeView("show");
 
 
 
-#### showNode<span class="signature">(element)</span>
+### showNode<span class="signature">(element)</span>
 
 
 
@@ -4431,7 +4475,8 @@ To showNode particular node in TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4512,7 +4557,7 @@ $("#treeView").ejTreeView("showNode",$("#book"));
 
 
 
-#### unCheckAll<span class="signature">()</span>
+### unCheckAll<span class="signature">()</span>
 
 
 
@@ -4527,7 +4572,8 @@ To uncheck all the TreeView nodes.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4608,7 +4654,7 @@ $("#treeView").ejTreeView("unCheckAll");
 
 
 
-#### uncheckNode<span class="signature">(element)</span>
+### uncheckNode<span class="signature">(element)</span>
 
 
 
@@ -4639,7 +4685,8 @@ To Uncheck particular node checkbox in TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4722,7 +4769,7 @@ $("#treeView").ejTreeView("uncheckNode",$("#book"));
 
 
 
-#### unselectNode<span class="signature">(node)</span>
+### unselectNode<span class="signature">(node)</span>
 
 
 
@@ -4753,7 +4800,8 @@ To unselect the node in the TreeView.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4832,7 +4880,7 @@ $("#treeView").ejTreeView("unselectNode",$("#book"));
 
 
 
-### Events
+## Events
 
 
 
@@ -4841,7 +4889,7 @@ $("#treeView").ejTreeView("unselectNode",$("#book"));
 
 
 
-#### beforeCollapse
+### beforeCollapse
 
 
 
@@ -4892,7 +4940,8 @@ Fires when beforeCollapse successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4938,7 +4987,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### beforeEdit
+### beforeEdit
 
 
 
@@ -4984,7 +5033,8 @@ Fires when beforeEdit successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5030,7 +5080,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### beforeExpand
+### beforeExpand
 
 
 
@@ -5086,7 +5136,8 @@ Fires when beforeExpand successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5132,7 +5183,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### created
+### created
 
 
 
@@ -5173,7 +5224,8 @@ Fires when created successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5219,7 +5271,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### destroyed
+### destroyed
 
 
 
@@ -5260,7 +5312,8 @@ Fires when destroyed successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5306,7 +5359,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### inlineEditValidation
+### inlineEditValidation
 
 
 
@@ -5362,7 +5415,8 @@ Fires when inlineEditValidation successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5408,7 +5462,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### keyPress
+### keyPress
 
 
 
@@ -5479,7 +5533,8 @@ Fires when keyPress successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5525,7 +5580,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeCheck
+### nodeCheck
 
 
 
@@ -5596,7 +5651,8 @@ Fires when nodeCheck successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;ul id="treeView"&gt;
@@ -5642,7 +5698,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeClick
+### nodeClick
 
 
 
@@ -5698,7 +5754,8 @@ Fires when nodeClick successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5744,7 +5801,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeCollapse
+### nodeCollapse
 
 
 
@@ -5805,7 +5862,8 @@ Fires when nodeCollapse successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5851,7 +5909,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeDrag
+### nodeDrag
 
 
 
@@ -5902,7 +5960,8 @@ Fires when nodeDrag successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5948,7 +6007,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeDragStart
+### nodeDragStart
 
 
 
@@ -5999,7 +6058,8 @@ Fires when nodeDragStart successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6045,7 +6105,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeDragStop
+### nodeDragStop
 
 
 
@@ -6101,7 +6161,8 @@ Fires when nodeDragStop successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6147,7 +6208,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeDropped
+### nodeDropped
 
 
 
@@ -6203,7 +6264,8 @@ Fires when nodeDropped successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6249,7 +6311,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeExpand
+### nodeExpand
 
 
 
@@ -6315,7 +6377,8 @@ Fires when nodeExpand successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6361,7 +6424,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeSelect
+### nodeSelect
 
 
 
@@ -6422,7 +6485,8 @@ Fires when nodeSelect successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6468,7 +6532,7 @@ $("#treeView").ejTreeView({
 
 
 
-#### nodeUncheck
+### nodeUncheck
 
 
 
@@ -6539,7 +6603,8 @@ Fires when nodeUncheck successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
