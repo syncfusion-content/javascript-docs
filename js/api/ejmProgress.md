@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom design for Html Progressbar control.
+# Custom Design for Html Progressbar control.
 
 
 
@@ -18,7 +18,7 @@ Custom design for Html Progressbar control.
 
 
 
-#### $(element).ejmProgress<span class="signature">()</span>
+## $(element).ejmProgress<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom design for Html Progressbar control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -51,7 +52,7 @@ $("#progress").ejmProgress();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -79,7 +80,7 @@ $("#progress").ejmProgress();
 
 
 
-### Members
+## Members
 
 
 
@@ -88,7 +89,7 @@ $("#progress").ejmProgress();
 
 
 
-#### enableCustomText<span class="type-signature type bool">bool</span>
+### enableCustomText<span class="type-signature type bool">bool</span>
 
 
 
@@ -119,7 +120,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -152,7 +154,7 @@ $("#progress").ejmProgress ("option", "enableCustomText", false);            </c
 
 
 
-#### enabled<span class="type-signature type bool">bool</span>
+### enabled<span class="type-signature type bool">bool</span>
 
 
 
@@ -183,7 +185,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -216,7 +219,7 @@ $("#progress").ejmProgress ("option", "enabled", true);            </code>
 
 
 
-#### enablePersistence<span class="type-signature type bool">bool</span>
+### enablePersistence<span class="type-signature type bool">bool</span>
 
 
 
@@ -247,7 +250,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -280,7 +284,7 @@ $("#progress").ejmProgress ("option", "enablePersistence", false);            </
 
 
 
-#### height<span class="type-signature type int">int</span>
+### height<span class="type-signature type int">int</span>
 
 
 
@@ -311,7 +315,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -343,7 +348,7 @@ $("#progress").ejmProgress ("option", "height", 10);            </code>
 
 
 
-#### incrementStep<span class="type-signature type int">int</span>
+### incrementStep<span class="type-signature type int">int</span>
 
 
 
@@ -374,7 +379,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -405,7 +411,7 @@ $("#progress").ejmProgress ("option", "incrementStep", 2);            </code>
 
 
 
-#### maxValue<span class="type-signature type int">int</span>
+### maxValue<span class="type-signature type int">int</span>
 
 
 
@@ -436,7 +442,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -468,7 +475,7 @@ $("#progress").ejmProgress ("option", "maxValue", 90);            </code>
 
 
 
-#### minValue<span class="type-signature type int">int</span>
+### minValue<span class="type-signature type int">int</span>
 
 
 
@@ -499,7 +506,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -531,7 +539,7 @@ $("#progress").ejmProgress ("option", "minValue", 10);            </code>
 
 
 
-#### orientation<span class="type-signature type enum">enum</span>
+### orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -562,7 +570,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//Set the orientation property in unobtrusive way.
@@ -595,7 +604,7 @@ $("#progress").ejmProgress ("option", "orientation", ej.mobile.Progress.Orientat
 
 
 
-#### percentage<span class="type-signature type int">int</span>
+### percentage<span class="type-signature type int">int</span>
 
 
 
@@ -626,7 +635,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -658,7 +668,7 @@ $("#progress").ejmProgress ("option", "percentage", 35);            </code>
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -689,7 +699,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -725,7 +736,7 @@ $("#progress").ejmProgress ("option", "renderMode", ej.mobile.RenderMode.Auto); 
 
 
 
-#### text<span class="type-signature type string">string</span>
+### text<span class="type-signature type string">string</span>
 
 
 
@@ -756,7 +767,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -789,7 +801,7 @@ $("#progress").ejmProgress ("option", "text", "in-progress");            </code>
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -820,7 +832,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -855,7 +868,7 @@ $("#progress").ejmProgress ("option", "theme", ej.mobile.Theme.Auto);           
 
 
 
-#### value<span class="type-signature type int">int</span>
+### value<span class="type-signature type int">int</span>
 
 
 
@@ -886,7 +899,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -918,7 +932,7 @@ $("#progress").ejmProgress ("option", "value", 35);            </code>
 
 
 
-#### width<span class="type-signature type int">int</span>
+### width<span class="type-signature type int">int</span>
 
 
 
@@ -949,7 +963,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -979,7 +994,7 @@ $("#progress").ejmProgress ("option", "width", 350);            </code>
 
 
 
-### Methods
+## Methods
 
 
 
@@ -988,7 +1003,7 @@ $("#progress").ejmProgress ("option", "width", 350);            </code>
 
 
 
-#### getPercentage<span class="signature">()</span>
+### getPercentage<span class="signature">()</span>
 
 
 
@@ -1003,7 +1018,8 @@ Get current value in percentage
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1028,7 +1044,7 @@ $("#progress").ejmProgress("getPercentage");
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -1043,7 +1059,8 @@ Gets the currentvalue.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1068,7 +1085,7 @@ $("#progress").ejmProgress("getValue");
 
 
 
-#### setCustomText<span class="signature">()</span>
+### setCustomText<span class="signature">()</span>
 
 
 
@@ -1083,7 +1100,8 @@ Set the custom text on each action conplete.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1106,7 +1124,7 @@ $("#progress").ejmProgress("setCustomText", "Downloading..");
 
 
 
-### Events
+## Events
 
 
 
@@ -1115,7 +1133,7 @@ $("#progress").ejmProgress("setCustomText", "Downloading..");
 
 
 
-#### change
+### change
 
 
 
@@ -1183,7 +1201,8 @@ Event triggers when the value change happens.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1211,7 +1230,7 @@ $("#progress").ejmProgress({
 
 
 
-#### complete
+### complete
 
 
 
@@ -1279,7 +1298,8 @@ Event triggers when the complete happens.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1307,7 +1327,7 @@ $("#progress").ejmProgress({
 
 
 
-#### create
+### create
 
 
 
@@ -1375,7 +1395,8 @@ Event triggers when the create happens.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1403,7 +1424,7 @@ $("#progress").ejmProgress({
 
 
 
-#### start
+### start
 
 
 
@@ -1471,7 +1492,8 @@ Event triggers when the start happens.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

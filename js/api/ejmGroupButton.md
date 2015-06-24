@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html GroupButton control.
+# Custom Design for Html GroupButton control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html GroupButton control.
 
 
 
-#### $(element).ejmGroupButton<span class="signature">()</span>
+## $(element).ejmGroupButton<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html GroupButton control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -114,7 +115,7 @@ $("#grpbtn").ejmGroupButton();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -142,7 +143,7 @@ $("#grpbtn").ejmGroupButton();
 
 
 
-### Members
+## Members
 
 
 
@@ -151,7 +152,7 @@ $("#grpbtn").ejmGroupButton();
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -182,7 +183,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -227,7 +229,7 @@ $("#grpbtn").ejmGroupButton ({ cssClass: "customclass" });
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -258,7 +260,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -303,7 +306,7 @@ $("#grpbtn").ejmGroupButton ({ enablePersistence: true });
 
 
 
-#### imageclass<span class="type-signature type string">string</span>
+### imageclass<span class="type-signature type string">string</span>
 
 
 
@@ -334,7 +337,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -354,7 +358,7 @@ Default Value:
 
 
 
-#### imageurl<span class="type-signature type string">string</span>
+### imageurl<span class="type-signature type string">string</span>
 
 
 
@@ -385,7 +389,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -405,7 +410,7 @@ Default Value:
 
 
 
-#### items<span class="type-signature type string">string</span>
+### items<span class="type-signature type string">string</span>
 
 
 
@@ -436,7 +441,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -453,7 +459,7 @@ $("#group-button").ejmGroupButton({ items: [{ imageUrl: "style" }, { imageUrl: "
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -484,7 +490,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -531,7 +538,7 @@ $("#grpbtn").ejmGroupButton ("option", "renderMode", ej.mobile.RenderMode.Auto);
 
 
 
-#### selectedItemIndex<span class="type-signature type number">number</span>
+### selectedItemIndex<span class="type-signature type number">number</span>
 
 
 
@@ -562,7 +569,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -599,7 +607,7 @@ $("#grpbtn").ejmGroupButton ({ selectedItemIndex: 1 });
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -630,7 +638,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -677,7 +686,7 @@ $("#grpbtn").ejmGroupButton ({ theme: ej.mobile.Theme.Auto });
 
 
 
-#### windows
+### windows
 
 
 
@@ -698,7 +707,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -729,7 +738,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -771,7 +781,7 @@ $("#grpbtn").ejmGroupButton("option", "windows.renderDefault", false); </code>
 
 
 
-### Methods
+## Methods
 
 
 
@@ -780,7 +790,7 @@ $("#grpbtn").ejmGroupButton("option", "windows.renderDefault", false); </code>
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -795,7 +805,8 @@ destroy the GroupButton widget all events bound using this._on will be unbind au
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -832,7 +843,7 @@ $("#grpbtn").ejmGroupButton("destroy");
 
 
 
-### Events
+## Events
 
 
 
@@ -841,7 +852,7 @@ $("#grpbtn").ejmGroupButton("destroy");
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -904,7 +915,8 @@ Event triggers when the touchend happens in the groupbutton
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -947,7 +959,7 @@ touchEnd: function (args) { //handle the event
 
 
 
-#### touchStart
+### touchStart
 
 
 
@@ -1010,7 +1022,8 @@ Event triggers when the touchstart happens in the groupbutton
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

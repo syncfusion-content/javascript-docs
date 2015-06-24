@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Menu control.
+# Custom Design for Menu control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Menu control.
 
 
 
-#### $(element).ejMenu<span class="signature">()</span>
+## $(element).ejMenu<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Menu control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -77,7 +78,7 @@ $("#menu").ejMenu({height: 22});
 
 
 
-### Requires
+## Requires
 
 
 
@@ -102,7 +103,7 @@ $("#menu").ejMenu({height: 22});
 
 
 
-### Members
+## Members
 
 
 
@@ -111,7 +112,7 @@ $("#menu").ejMenu({height: 22});
 
 
 
-#### animationType<span class="type-signature type enum">enum</span>
+### animationType<span class="type-signature type enum">enum</span>
 
 
 
@@ -142,7 +143,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -190,7 +192,7 @@ Default Value:
 
 
 
-#### contextMenuTarget<span class="type-signature type string">string</span>
+### contextMenuTarget<span class="type-signature type string">string</span>
 
 
 
@@ -221,7 +223,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>     &lt;div id="target" class="textarea"&gt;
@@ -255,7 +258,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -286,7 +289,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -333,7 +337,7 @@ Default Value:
 
 
 
-#### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -364,7 +368,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -412,7 +417,7 @@ Default Value:
 
 
 
-#### enableCenterAlign<span class="type-signature type boolean">boolean</span>
+### enableCenterAlign<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -443,7 +448,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -491,7 +497,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -522,7 +528,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -570,7 +577,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -601,7 +608,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -649,7 +657,7 @@ Default Value:
 
 
 
-#### enableSeparator<span class="type-signature type boolean">boolean</span>
+### enableSeparator<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -680,7 +688,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -728,7 +737,7 @@ Default Value:
 
 
 
-#### excludeTarget<span class="type-signature type string">string</span>
+### excludeTarget<span class="type-signature type string">string</span>
 
 
 
@@ -759,7 +768,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>     &lt;div id="target" class="textarea"&gt;
@@ -796,7 +806,7 @@ $("#contextMenu").ejMenu({ menuType:ej.MenuType.ContextMenu,height:22,contextMen
 
 
 
-#### fields<span class="type-signature type object">Object</span>
+### fields<span class="type-signature type object">Object</span>
 
 
 
@@ -827,7 +837,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;ul id="menu"&gt;
@@ -845,7 +856,7 @@ Default Value:
 
 
 
-#### fields.child<span class="type-signature type object">Object</span>
+### fields.child<span class="type-signature type object">Object</span>
 
 
 
@@ -866,7 +877,7 @@ It receives the child data for the inner level.
 
 
 
-#### fields.dataSource<span class="type-signature type object">Object</span>
+### fields.dataSource<span class="type-signature type object">Object</span>
 
 
 
@@ -887,7 +898,7 @@ datasource receives Essential DataManager object and JSON object.
 
 
 
-#### fields.htmlAttribute<span class="type-signature type string">string</span>
+### fields.htmlAttribute<span class="type-signature type string">string</span>
 
 
 
@@ -908,7 +919,7 @@ Specifies the html attributes to &ldquo;li&rdquo; item list.
 
 
 
-#### fields.id<span class="type-signature type string">string</span>
+### fields.id<span class="type-signature type string">string</span>
 
 
 
@@ -929,7 +940,7 @@ Specifies the id to menu items list
 
 
 
-#### fields.imageAttribute<span class="type-signature type string">string</span>
+### fields.imageAttribute<span class="type-signature type string">string</span>
 
 
 
@@ -950,7 +961,7 @@ Specifies the image attribute to &ldquo;img&rdquo; tag inside items list.
 
 
 
-#### fields.imageUrl<span class="type-signature type string">string</span>
+### fields.imageUrl<span class="type-signature type string">string</span>
 
 
 
@@ -971,7 +982,7 @@ Specifies the image URL to &ldquo;img&rdquo; tag inside item list.
 
 
 
-#### fields.linkAttribute<span class="type-signature type string">string</span>
+### fields.linkAttribute<span class="type-signature type string">string</span>
 
 
 
@@ -992,7 +1003,7 @@ Adds custom attributes like "target" to the anchor tag of the menu items.
 
 
 
-#### fields.parentId<span class="type-signature type string">string</span>
+### fields.parentId<span class="type-signature type string">string</span>
 
 
 
@@ -1013,7 +1024,7 @@ Specifies the parent id of the table.
 
 
 
-#### fields.query<span class="type-signature type object">Object</span>
+### fields.query<span class="type-signature type object">Object</span>
 
 
 
@@ -1034,7 +1045,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 
 
-#### fields.spriteCssClass<span class="type-signature type string">string</span>
+### fields.spriteCssClass<span class="type-signature type string">string</span>
 
 
 
@@ -1055,7 +1066,7 @@ Specifies the sprite CSS class to &ldquo;li&rdquo; item list
 
 
 
-#### fields.tableName<span class="type-signature type string">string</span>
+### fields.tableName<span class="type-signature type string">string</span>
 
 
 
@@ -1076,7 +1087,7 @@ It receives table name to execute query on the corresponding table
 
 
 
-#### fields.text<span class="type-signature type string">string</span>
+### fields.text<span class="type-signature type string">string</span>
 
 
 
@@ -1097,7 +1108,7 @@ Specifies the text of menu items list.
 
 
 
-#### fields.url<span class="type-signature type string">string</span>
+### fields.url<span class="type-signature type string">string</span>
 
 
 
@@ -1118,7 +1129,7 @@ Specifies the url to the anchor tag in menu item list.
 
 
 
-#### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -1149,7 +1160,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1196,7 +1208,7 @@ Default Value:
 
 
 
-#### menuType<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
+### menuType<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
 
 
 
@@ -1227,7 +1239,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1275,7 +1288,7 @@ Default Value:
 
 
 
-#### openOnClick<span class="type-signature type boolean">boolean</span>
+### openOnClick<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1306,7 +1319,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1354,7 +1368,7 @@ Default Value:
 
 
 
-#### orientation<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
+### orientation<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
 
 
 
@@ -1385,7 +1399,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1433,7 +1448,7 @@ Default Value:
 
 
 
-#### showRooltLevelArrows<span class="type-signature type boolean">boolean</span>
+### showRooltLevelArrows<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1464,7 +1479,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1512,7 +1528,7 @@ Default Value:
 
 
 
-#### showSubLevelArrows<span class="type-signature type boolean">boolean</span>
+### showSubLevelArrows<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1543,7 +1559,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1591,7 +1608,7 @@ Default Value:
 
 
 
-#### subMenuDirection<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
+### subMenuDirection<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
 
 
 
@@ -1622,7 +1639,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1670,7 +1688,7 @@ Default Value:
 
 
 
-#### titleText<span class="type-signature type string">string</span>
+### titleText<span class="type-signature type string">string</span>
 
 
 
@@ -1701,7 +1719,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1749,7 +1768,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 
 
 
@@ -1780,7 +1799,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1826,7 +1846,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1835,7 +1855,7 @@ Default Value:
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -1850,7 +1870,8 @@ Disables the Menu control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1940,7 +1961,7 @@ $("#menu").ejMenu("disable");
 
 
 
-#### disableItem<span class="signature">(itemtext)</span>
+### disableItem<span class="signature">(itemtext)</span>
 
 
 
@@ -1971,7 +1992,8 @@ Specifies the Menu Item to be disabled by using the Menu Item Text.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2061,7 +2083,7 @@ $("#menu").ejMenu("disableItem","Home");
 
 
 
-#### disableItembyID<span class="signature">(itemid)</span>
+### disableItembyID<span class="signature">(itemid)</span>
 
 
 
@@ -2092,7 +2114,8 @@ Specifies the Menu Item to be disabled by using the Menu Item Id.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2182,7 +2205,7 @@ $("#menu").ejMenu("disableItemByID","More");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -2197,7 +2220,8 @@ Enables the Menu control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2287,7 +2311,7 @@ $("#menu").ejMenu("enable");
 
 
 
-#### enableItem<span class="signature">(itemtext)</span>
+### enableItem<span class="signature">(itemtext)</span>
 
 
 
@@ -2318,7 +2342,8 @@ Specifies the Menu Item to be enabled by using the Menu Item Text.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2412,7 +2437,7 @@ $("#menu").ejMenu("enableItem","Search Jobs");
 
 
 
-#### enableItembyID<span class="signature">(itemid)</span>
+### enableItembyID<span class="signature">(itemid)</span>
 
 
 
@@ -2443,7 +2468,8 @@ Specifies the Menu Item to be enabled by using the Menu Item Id.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2535,7 +2561,7 @@ $("#menu").ejMenu("enableItemByID","More");
 
 
 
-#### hideContextMenu<span class="signature">()</span>
+### hideContextMenu<span class="signature">()</span>
 
 
 
@@ -2550,7 +2576,8 @@ Hides the Context Menu control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2640,7 +2667,7 @@ $("#menu").ejMenu("hideContextMenu");
 
 
 
-#### insert<span class="signature">(item, target)</span>
+### insert<span class="signature">(item, target)</span>
 
 
 
@@ -2676,7 +2703,8 @@ Insert the menu item as child of target node.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2772,7 +2800,7 @@ $("#menu").ejMenu("insert",[{
 
 
 
-#### insertAfter<span class="signature">(item, target)</span>
+### insertAfter<span class="signature">(item, target)</span>
 
 
 
@@ -2808,7 +2836,8 @@ Insert the menu item after the target node.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2904,7 +2933,7 @@ $("#menu").ejMenu("insertAfter",[{
 
 
 
-#### insertBefore<span class="signature">(item, target)</span>
+### insertBefore<span class="signature">(item, target)</span>
 
 
 
@@ -2940,7 +2969,8 @@ Insert the menu item before the target node.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3036,7 +3066,7 @@ $("#menu").ejMenu("insertBefore",[{
 
 
 
-#### remove<span class="signature">(target)</span>
+### remove<span class="signature">(target)</span>
 
 
 
@@ -3067,7 +3097,8 @@ Remove Menu item.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3157,7 +3188,7 @@ $("#menu").ejMenu("remove",["#Home"]);
 
 
 
-#### showContextMenu<span class="signature">(locationX, locationY, targetElement, event)</span>
+### showContextMenu<span class="signature">(locationX, locationY, targetElement, event)</span>
 
 
 
@@ -3203,7 +3234,8 @@ Shows the Context Menu .
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3291,7 +3323,7 @@ $("#menu").ejMenu("ShowContextMenu");
 
 
 
-### Events
+## Events
 
 
 
@@ -3300,7 +3332,7 @@ $("#menu").ejMenu("ShowContextMenu");
 
 
 
-#### beforeContextOpen
+### beforeContextOpen
 
 
 
@@ -3363,7 +3395,8 @@ Fires before context menu gets open.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3412,7 +3445,7 @@ Fires before context menu gets open.
 
 
 
-#### click
+### click
 
 
 
@@ -3485,7 +3518,8 @@ Fires when mouse click on menu items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3534,7 +3568,7 @@ Fires when mouse click on menu items.
 
 
 
-#### contextClose
+### contextClose
 
 
 
@@ -3592,7 +3626,8 @@ Fire when context menu on close.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3641,7 +3676,7 @@ Fire when context menu on close.
 
 
 
-#### contextOpen
+### contextOpen
 
 
 
@@ -3699,7 +3734,8 @@ Fires when context menu on open.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3748,7 +3784,7 @@ Fires when context menu on open.
 
 
 
-#### create
+### create
 
 
 
@@ -3801,7 +3837,8 @@ Fires to create menu items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3850,7 +3887,7 @@ Fires to create menu items.
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -3903,7 +3940,8 @@ Fires to destroy menu items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3952,7 +3990,7 @@ Fires to destroy menu items.
 
 
 
-#### keydown
+### keydown
 
 
 
@@ -4020,7 +4058,8 @@ Fires when key down on menu items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4069,7 +4108,7 @@ Fires when key down on menu items.
 
 
 
-#### mouseout
+### mouseout
 
 
 
@@ -4137,7 +4176,8 @@ Fires when mouse out from menu items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;ul id="menu"&gt;
@@ -4185,7 +4225,7 @@ Fires when mouse out from menu items.
 
 
 
-#### mouseover
+### mouseover
 
 
 
@@ -4253,7 +4293,8 @@ Fires when mouse over the Menu items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

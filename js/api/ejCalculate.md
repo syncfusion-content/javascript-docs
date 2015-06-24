@@ -18,7 +18,7 @@ Custom engine to perfom calculation like excel sheet
 
 
 
-#### $(element).ejCalculate<span class="signature">()</span>
+## $(element).ejCalculate<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom engine to perfom calculation like excel sheet
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -45,7 +46,7 @@ var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 
 
 
-### Requires
+## Requires
 
 
 
@@ -61,7 +62,7 @@ var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 
 
 
-### Methods
+## Methods
 
 
 
@@ -70,7 +71,7 @@ var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 
 
 
-#### addCustomFunction<span class="signature">(FormulaName, FunctionName)</span>
+### addCustomFunction<span class="signature">(FormulaName, FunctionName)</span>
 
 
 
@@ -106,7 +107,8 @@ Add the custom formuls with function in CalcEngine library
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -137,7 +139,7 @@ calcObj.addCustomFunction("ADD", "customAdd");
 
 
 
-#### addNamedRange<span class="signature">(Name, cellRange)</span>
+### addNamedRange<span class="signature">(Name, cellRange)</span>
 
 
 
@@ -173,7 +175,8 @@ Adds a named range to the NamedRanges collection
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Grid"&gt;&lt;/div&gt; 
@@ -194,7 +197,7 @@ calcObj.addNamedRange("FIRSTCELL","A1");
 
 
 
-#### adjustRangeArg<span class="signature">(Name)</span>
+### adjustRangeArg<span class="signature">(Name)</span>
 
 
 
@@ -225,12 +228,13 @@ Accepts a possible parsed formula and returns the calculated value without quote
 
 
 
-##### Returns:
+#### Returns:
 
 range
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
@@ -245,7 +249,7 @@ calcObj.addNamedRange("FIRSTCELL","A1");
 
 
 
-#### clearFormulaDependentCells<span class="signature">(Cell)</span>
+### clearFormulaDependentCells<span class="signature">(Cell)</span>
 
 
 
@@ -276,7 +280,8 @@ When a formula cell changes, call this method to clear it from its dependent cel
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
@@ -289,7 +294,7 @@ calcObj.clearFormulaDependentCells("A1");
 
 
 
-#### clearLibraryComputationException<span class="signature">()</span>
+### clearLibraryComputationException<span class="signature">()</span>
 
 
 
@@ -304,7 +309,8 @@ Call this method to clear whether an exception was raised during the computation
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
@@ -317,7 +323,7 @@ calcObj.clearLibraryComputationException();
 
 
 
-#### colIndex<span class="signature">(Cell)</span>
+### colIndex<span class="signature">(Cell)</span>
 
 
 
@@ -348,7 +354,8 @@ Get the column index from a cell reference passed in.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
@@ -361,7 +368,7 @@ calcObj.colIndex("A1");
 
 
 
-#### computedValue<span class="signature">(Formula)</span>
+### computedValue<span class="signature">(Formula)</span>
 
 
 
@@ -392,12 +399,13 @@ Evaluates a parsed formula.
 
 
 
-##### Returns:
+#### Returns:
 
 value of formula
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
@@ -410,7 +418,7 @@ calcObj.computedValue("&rsquo;n10n2a&rsquo;");
 
 
 
-#### computeFormula<span class="signature">(Formula)</span>
+### computeFormula<span class="signature">(Formula)</span>
 
 
 
@@ -441,12 +449,13 @@ Evaluates a parsed formula.
 
 
 
-##### Returns:
+#### Returns:
 
 value of formula
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));

@@ -7,20 +7,21 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Textbox Control.
+# Custom Design for Html Textbox Control.
 
 
 
 
 
-#### $(element).ejTextBoxes<span class="signature">()</span>
+## $(element).ejTextBoxes<span class="signature">()</span>
 
 
 
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -33,7 +34,7 @@ $('#percentage').ejPercentageTextbox({value:100});
 
 
 
-### Requires
+## Requires
 
 
 * module:jQuery
@@ -47,12 +48,12 @@ $('#percentage').ejPercentageTextbox({value:100});
 * module:ej.editor.js
 
 
-### Members
+## Members
 
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -70,7 +71,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -79,7 +81,7 @@ Default Value:
 
 
 
-#### decimalPlaces<span class="type-signature type number">number</span>
+### decimalPlaces<span class="type-signature type number">number</span>
 
 
 
@@ -97,7 +99,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -106,7 +109,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -124,7 +127,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -133,7 +137,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -151,7 +155,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -160,7 +165,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -178,7 +183,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -187,7 +193,7 @@ Default Value:
 
 
 
-#### enableStrictMode<span class="type-signature type boolean">boolean</span>
+### enableStrictMode<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -205,7 +211,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -214,7 +221,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">String</span>
+### height<span class="type-signature type string">String</span>
 
 
 
@@ -232,7 +239,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -241,7 +249,7 @@ Default Value:
 
 
 
-#### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes<span class="type-signature type object">object</span>
 
 
 
@@ -259,7 +267,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -268,7 +277,7 @@ Default Value:
 
 
 
-#### incrementStep<span class="type-signature type number">number</span>
+### incrementStep<span class="type-signature type number">number</span>
 
 
 
@@ -286,7 +295,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -295,7 +305,7 @@ Default Value:
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -313,7 +323,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -322,7 +333,7 @@ Default Value:
 
 
 
-#### maxValue<span class="type-signature type number">number</span>
+### maxValue<span class="type-signature type number">number</span>
 
 
 
@@ -340,7 +351,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -349,7 +361,7 @@ Default Value:
 
 
 
-#### minValue<span class="type-signature type number">number</span>
+### minValue<span class="type-signature type number">number</span>
 
 
 
@@ -367,7 +379,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -376,7 +389,7 @@ Default Value:
 
 
 
-#### name<span class="type-signature type string">string</span>
+### name<span class="type-signature type string">string</span>
 
 
 
@@ -394,7 +407,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -403,7 +417,7 @@ Default Value:
 
 
 
-#### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -421,7 +435,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -430,7 +445,7 @@ Default Value:
 
 
 
-#### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -448,7 +463,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -457,7 +473,7 @@ Default Value:
 
 
 
-#### showSpinButton<span class="type-signature type boolean">boolean</span>
+### showSpinButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -475,7 +491,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -484,7 +501,7 @@ Default Value:
 
 
 
-#### validateOnType<span class="type-signature type number">number</span>
+### validateOnType<span class="type-signature type number">number</span>
 
 
 
@@ -502,7 +519,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -511,7 +529,7 @@ Default Value:
 
 
 
-#### validationMessage<span class="type-signature type object">object</span>
+### validationMessage<span class="type-signature type object">object</span>
 
 
 
@@ -529,7 +547,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -538,7 +557,7 @@ Default Value:
 
 
 
-#### validationRules<span class="type-signature type object">object</span>
+### validationRules<span class="type-signature type object">object</span>
 
 
 
@@ -556,7 +575,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -565,7 +585,7 @@ Default Value:
 
 
 
-#### value<span class="type-signature type number">number</span>
+### value<span class="type-signature type number">number</span>
 
 
 
@@ -583,7 +603,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -592,7 +613,7 @@ Default Value:
 
 
 
-#### watermarkText<span class="type-signature type string">string</span>
+### watermarkText<span class="type-signature type string">string</span>
 
 
 
@@ -610,7 +631,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -619,7 +641,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">String</span>
+### width<span class="type-signature type string">String</span>
 
 
 
@@ -637,7 +659,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -645,12 +668,12 @@ Default Value:
 //To set width API value during initialization          $("#numeric").ejNumericTextbox({ width: "143px", value:5 });            $("#currency").ejCurrencyTextbox({ width: "143px", value:55 });        $("#percentage").ejPercentageTextbox({ width: "143px", value:555 });                    &lt;/script&gt;</code></pre>
 
 
-### Methods
+## Methods
 
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -659,7 +682,8 @@ destroy the editor widgets all events are unbind automatically and bring the con
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -670,7 +694,7 @@ destroy the editor widgets all events are unbind automatically and bring the con
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -679,7 +703,8 @@ To disable the corresponding editors
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -690,7 +715,7 @@ To disable the corresponding editors
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -699,7 +724,8 @@ To enable the corresponding editors
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -710,7 +736,7 @@ To enable the corresponding editors
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -719,7 +745,8 @@ To get value from corresponding editors
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -729,12 +756,12 @@ To get value from corresponding editors
  &lt;script&gt;$("#numeric").ejNumericTextbox({value:20});$("#currency").ejCurrencyTextbox({value:500});$("#percentage").ejPercentageTextbox({value:1000});// get value from editors$("#numeric").ejNumericTextbox("getValue");$("#currency").ejCurrencyTextbox("getValue");$("#percentage").ejPercentageTextbox("getValue");               &lt;/script&gt;</code></pre>
 
 
-### Events
+## Events
 
 
 
 
-#### change
+### change
 
 
 
@@ -743,7 +770,8 @@ Fires after editor control value is changed.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from editors.<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be cancelled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the corresponding editor model.</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event.</td></tr><tr><td class="name"><code>value</code></td><td class="type"><span class="param-type">number</span></td><td class="description last">returns the corresponding editor control value.</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -752,7 +780,7 @@ Fires after editor control value is changed.
 
 
 
-#### create
+### create
 
 
 
@@ -761,7 +789,8 @@ Fires after editor control is created.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument.cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>argument.model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the editor model</td></tr><tr><td class="name"><code>argument.type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -770,7 +799,7 @@ Fires after editor control is created.
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -779,7 +808,8 @@ Fires when the editor is destroyed successfully.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument.cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>argument.model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the editor model</td></tr><tr><td class="name"><code>argument.type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -788,7 +818,7 @@ Fires when the editor is destroyed successfully.
 
 
 
-#### focusIn
+### focusIn
 
 
 
@@ -797,7 +827,8 @@ Fires after editor control is focused.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from editors.<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be cancelled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the corresponding editor model.</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event.</td></tr><tr><td class="name"><code>value</code></td><td class="type"><span class="param-type">number</span></td><td class="description last">returns the corresponding editor control value.</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 
@@ -806,7 +837,7 @@ Fires after editor control is focused.
 
 
 
-#### focusOut
+### focusOut
 
 
 
@@ -815,7 +846,8 @@ Fires after editor control is loss the focus.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from editors.<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be cancelled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the corresponding editor model.</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event.</td></tr><tr><td class="name"><code>value</code></td><td class="type"><span class="param-type">number</span></td><td class="description last">returns the corresponding editor control value.</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="numeric" type="text" /&gt; 
  &lt;input id="currency" type="text" /&gt; 
  &lt;input id="percentage" type="text" /&gt; 

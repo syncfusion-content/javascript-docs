@@ -18,7 +18,7 @@ The grid can be easily configured to the DOM element, such as div. you can creat
 
 
 
-#### $(element).ejmGrid<span class="signature">(options)</span>
+## $(element).ejmGrid<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ The grid can be easily configured to the DOM element, such as div. you can creat
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -69,7 +70,7 @@ $("#mobilegrid").ejmGrid({ dataSource:data,columns: [
 
 
 
-### Requires
+## Requires
 
 
 
@@ -124,7 +125,7 @@ $("#mobilegrid").ejmGrid({ dataSource:data,columns: [
 
 
 
-### Members
+## Members
 
 
 
@@ -133,7 +134,7 @@ $("#mobilegrid").ejmGrid({ dataSource:data,columns: [
 
 
 
-#### allowFiltering<span class="type-signature type boolean">boolean</span>
+### allowFiltering<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -164,7 +165,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -186,7 +188,7 @@ $("#mobilegrid").ejmGrid ({ allowFiltering: false,dataSource:data,columns: [
 
 
 
-#### allowPaging<span class="type-signature type boolean">boolean</span>
+### allowPaging<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -217,7 +219,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -239,7 +242,7 @@ $("#mobilegrid").ejmGrid ({ allowPaging: true,dataSource:data,columns: [
 
 
 
-#### allowScrolling<span class="type-signature type boolean">boolean</span>
+### allowScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -270,7 +273,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -292,7 +296,7 @@ $("#mobilegrid").ejmGrid ({ allowScrolling: false,dataSource:data,columns: [
 
 
 
-#### allowSelection<span class="type-signature type boolean">boolean</span>
+### allowSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -323,7 +327,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -345,7 +350,7 @@ $("#mobilegrid").ejmGrid ({ allowSelection: false,dataSource:data,columns: [
 
 
 
-#### allowSorting<span class="type-signature type boolean">boolean</span>
+### allowSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -360,7 +365,8 @@ Enable or disable the sorting behavior for the Grid and we can able to sort the 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -382,7 +388,7 @@ $("#mobilegrid").ejmGrid ({ allowSorting: false,dataSource:data,columns: [
 
 
 
-#### caption<span class="type-signature type string">string</span>
+### caption<span class="type-signature type string">string</span>
 
 
 
@@ -413,7 +419,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -435,7 +442,7 @@ $("#mobilegrid").ejmGrid ({ caption: "caption", showCaption: true,dataSource:dat
 
 
 
-#### columns<span class="type-signature type array">array</span>
+### columns<span class="type-signature type array">array</span>
 
 
 
@@ -466,7 +473,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div  id="mobilegrid" &gt;&lt;/div&gt;
@@ -487,7 +495,7 @@ $("#mobilegrid").ejGrid({ dataSource:data,columns: [
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -518,7 +526,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -540,7 +549,7 @@ $("#mobilegrid").ejmGrid ({ cssClass: "Customclass",dataSource:data,columns: [
 
 
 
-#### dataSource<span class="type-signature type data">data</span>
+### dataSource<span class="type-signature type data">data</span>
 
 
 
@@ -571,7 +580,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -593,7 +603,7 @@ $("#mobilegrid").ejmGrid ({ dataSource:data,columns: [
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -624,7 +634,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -646,7 +657,7 @@ $("#mobilegrid").ejmGrid ({ enablePersistence: false,dataSource:data,columns: [
 
 
 
-#### filterSettings
+### filterSettings
 
 
 
@@ -667,7 +678,7 @@ This property is used to customize the filtering behavior of the grid.
 
 
 
-#### filterSettings.filterBarMode<span class="type-signature type enum">enum</span>
+### filterSettings.filterBarMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -698,7 +709,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -722,7 +734,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### filterSettings.filteredColumns<span class="type-signature type object">object</span>
+### filterSettings.filteredColumns<span class="type-signature type object">object</span>
 
 
 
@@ -753,7 +765,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -777,7 +790,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### filterSettings.interval<span class="type-signature type number">number</span>
+### filterSettings.interval<span class="type-signature type number">number</span>
 
 
 
@@ -808,7 +821,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -832,7 +846,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### pageSettings
+### pageSettings
 
 
 
@@ -853,7 +867,7 @@ This property is used to modify pager default configuration.
 
 
 
-#### pageSettings.currentPage<span class="type-signature type number">number</span>
+### pageSettings.currentPage<span class="type-signature type number">number</span>
 
 
 
@@ -884,7 +898,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -908,7 +923,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### pageSettings.display<span class="type-signature type enum">enum</span>
+### pageSettings.display<span class="type-signature type enum">enum</span>
 
 
 
@@ -939,7 +954,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -963,7 +979,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### pageSettings.pageSize<span class="type-signature type number">number</span>
+### pageSettings.pageSize<span class="type-signature type number">number</span>
 
 
 
@@ -994,7 +1010,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1018,7 +1035,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### pageSettings.totalRecordsCount<span class="type-signature type number">number</span>
+### pageSettings.totalRecordsCount<span class="type-signature type number">number</span>
 
 
 
@@ -1049,7 +1066,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1071,7 +1089,7 @@ $("#print").text("TotalRecordsCount: " + value);
 
 
 
-#### pageSettings.type<span class="type-signature type enum">enum</span>
+### pageSettings.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -1102,7 +1120,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1126,7 +1145,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -1157,7 +1176,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1179,7 +1199,7 @@ $("#mobilegrid").ejmGrid ({ renderMode: ej.mobile.RenderMode.Auto,dataSource:dat
 
 
 
-#### scrollSettings
+### scrollSettings
 
 
 
@@ -1200,7 +1220,7 @@ Used to enable grid column and row scrolling
 
 
 
-#### scrollSettings.enableColumnScrolling<span class="type-signature type boolean">boolean</span>
+### scrollSettings.enableColumnScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1231,7 +1251,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1255,7 +1276,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### scrollSettings.enableNativeScrolling<span class="type-signature type boolean">boolean</span>
+### scrollSettings.enableNativeScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1286,7 +1307,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1310,7 +1332,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### scrollSettings.enableRowScrolling<span class="type-signature type boolean">boolean</span>
+### scrollSettings.enableRowScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1341,7 +1363,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -1365,7 +1388,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### scrollSettings.height<span class="type-signature type string">string</span>
+### scrollSettings.height<span class="type-signature type string">string</span>
 
 
 
@@ -1396,7 +1419,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1420,7 +1444,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### scrollSettings.width<span class="type-signature type string">string</span>
+### scrollSettings.width<span class="type-signature type string">string</span>
 
 
 
@@ -1451,7 +1475,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1475,7 +1500,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### selectedRowIndex<span class="type-signature type number">number</span>
+### selectedRowIndex<span class="type-signature type number">number</span>
 
 
 
@@ -1506,7 +1531,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1530,7 +1556,7 @@ $("#mobilegrid").ejmGrid ({ selectedRowIndex: 1,dataSource:data,columns: [
 
 
 
-#### sortSettings
+### sortSettings
 
 
 
@@ -1551,7 +1577,7 @@ This property is used to modify sorting default configuration.
 
 
 
-#### sortSettings.allowMultiSorting<span class="type-signature type boolean">boolean</span>
+### sortSettings.allowMultiSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1582,7 +1608,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1606,7 +1633,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### sortSettings.sortedColumns<span class="type-signature type object">object</span>
+### sortSettings.sortedColumns<span class="type-signature type object">object</span>
 
 
 
@@ -1637,7 +1664,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1661,7 +1689,7 @@ $("#mobilegrid").ejmGrid ({
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -1692,7 +1720,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1714,7 +1743,7 @@ $("#mobilegrid").ejmGrid ({ theme: ej.mobile.Theme.Auto,dataSource:data,columns:
 
 
 
-#### transition<span class="type-signature type string">string</span>
+### transition<span class="type-signature type string">string</span>
 
 
 
@@ -1745,7 +1774,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1767,7 +1797,7 @@ $("#mobilegrid").ejmGrid ({ transition: "slide",dataSource:data,columns: [
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1776,7 +1806,7 @@ $("#mobilegrid").ejmGrid ({ transition: "slide",dataSource:data,columns: [
 
 
 
-#### getColumnByField<span class="signature">()</span>
+### getColumnByField<span class="signature">()</span>
 
 
 
@@ -1791,7 +1821,8 @@ To get column by field
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1816,7 +1847,7 @@ $("#mobilegrid").ejGrid("getColumnByField", "OrderID");
 
 
 
-#### getColumnByHeaderText<span class="signature">()</span>
+### getColumnByHeaderText<span class="signature">()</span>
 
 
 
@@ -1831,7 +1862,8 @@ To get column by header text
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1856,7 +1888,7 @@ $("#mobilegrid").ejmGrid("getColumnByHeaderText", "Order ID");
 
 
 
-#### getColumnByIndex<span class="signature">()</span>
+### getColumnByIndex<span class="signature">()</span>
 
 
 
@@ -1871,7 +1903,8 @@ To get column by index
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1896,7 +1929,7 @@ $("#mobilegrid").ejmGrid("getColumnByIndex",1);
 
 
 
-#### getColumnFieldNames<span class="signature">()</span>
+### getColumnFieldNames<span class="signature">()</span>
 
 
 
@@ -1911,7 +1944,8 @@ To get column field names
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1936,7 +1970,7 @@ $("#mobilegrid").ejmGrid("getColumnFieldNames");
 
 
 
-#### getColumnIndexByField<span class="signature">()</span>
+### getColumnIndexByField<span class="signature">()</span>
 
 
 
@@ -1951,7 +1985,8 @@ To get column index by field
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1976,7 +2011,7 @@ $("#mobilegrid").ejmGrid("getColumnIndexByField","OrderID");
 
 
 
-#### getColumnMemberByIndex<span class="signature">()</span>
+### getColumnMemberByIndex<span class="signature">()</span>
 
 
 
@@ -1991,7 +2026,8 @@ To get column member by index
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2016,7 +2052,7 @@ $("#mobilegrid").ejmGrid("getColumnMemberByIndex",1);
 
 
 
-#### hideColumns<span class="signature">()</span>
+### hideColumns<span class="signature">()</span>
 
 
 
@@ -2031,7 +2067,8 @@ To hide the specified column
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2056,7 +2093,7 @@ $("#mobilegrid").ejmGrid("hideColumns","Order ID");
 
 
 
-#### refreshContent<span class="signature">()</span>
+### refreshContent<span class="signature">()</span>
 
 
 
@@ -2087,7 +2124,8 @@ It is used to refresh the grid contents
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2111,7 +2149,7 @@ $("#mobilegrid").ejmGrid("refreshContent");
 
 
 
-#### scrollRefresh<span class="signature">()</span>
+### scrollRefresh<span class="signature">()</span>
 
 
 
@@ -2126,7 +2164,8 @@ To refersh grid scrollpanel
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2151,7 +2190,7 @@ $("#mobilegrid").ejmGrid("scrollRefresh");
 
 
 
-#### showColumns<span class="signature">()</span>
+### showColumns<span class="signature">()</span>
 
 
 
@@ -2166,7 +2205,8 @@ To show the specified column
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2189,7 +2229,7 @@ $("#mobilegrid").ejmGrid("showColumns","Order ID");
 
 
 
-### Events
+## Events
 
 
 
@@ -2198,7 +2238,7 @@ $("#mobilegrid").ejmGrid("showColumns","Order ID");
 
 
 
-#### actionBegin
+### actionBegin
 
 
 
@@ -2266,7 +2306,8 @@ Triggered for every grid action before its starts.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2290,7 +2331,7 @@ function actionBegin(args) { //handle the event }
 
 
 
-#### actionComplete
+### actionComplete
 
 
 
@@ -2358,7 +2399,8 @@ Event triggers when grid data loading action succeeds.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2382,7 +2424,7 @@ function actionComplete(args) { //handle the event }
 
 
 
-#### actionFailure
+### actionFailure
 
 
 
@@ -2450,7 +2492,8 @@ Event triggers when grid data loading action fails.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2473,7 +2516,7 @@ function actionFailure(args) { //handle the event }
 
 
 
-#### actionSuccess
+### actionSuccess
 
 
 
@@ -2541,7 +2584,8 @@ Triggered for every grid action success.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2565,7 +2609,7 @@ function actionSuccess(args) { //handle the event }
 
 
 
-#### load
+### load
 
 
 
@@ -2633,7 +2677,8 @@ Triggered for every grid load.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2656,7 +2701,7 @@ function load(args) { //handle the event }
 
 
 
-#### modelChange
+### modelChange
 
 
 
@@ -2724,7 +2769,8 @@ Triggered every time while a model value changed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2748,7 +2794,7 @@ function modelChange(args) { //handle the event }
 
 
 
-#### queryCellInfo
+### queryCellInfo
 
 
 
@@ -2821,7 +2867,8 @@ Triggered every time a request is made to access particular cell information, el
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2845,7 +2892,7 @@ function queryCellInfo(args) { //handle the event }
 
 
 
-#### rowDataBound
+### rowDataBound
 
 
 
@@ -2913,7 +2960,8 @@ Triggered every time a request is made to access row information, element and da
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2937,7 +2985,7 @@ function rowDataBound(args) { //handle the event }
 
 
 
-#### rowSelected
+### rowSelected
 
 
 
@@ -3020,7 +3068,8 @@ Triggered after the row is selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3043,7 +3092,7 @@ function rowSelected(args) { //handle the event }
 
 
 
-#### rowSelecting
+### rowSelecting
 
 
 
@@ -3126,7 +3175,8 @@ Triggered before the row is going to be selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

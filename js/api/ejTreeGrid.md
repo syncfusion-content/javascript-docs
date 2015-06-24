@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Tree grid control.
+# Custom Design for Html Tree grid control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Tree grid control.
 
 
 
-#### $(element).ejTreeGrid<span class="signature">()</span>
+## $(element).ejTreeGrid<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Tree grid control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $('#treegrid').ejTreeGrid();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -69,7 +70,7 @@ $('#treegrid').ejTreeGrid();
 
 
 
-### Members
+## Members
 
 
 
@@ -78,7 +79,7 @@ $('#treegrid').ejTreeGrid();
 
 
 
-#### allowColumnResize<span class="type-signature type boolean">boolean</span>
+### allowColumnResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -109,7 +110,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -124,7 +126,7 @@ Default Value:
 
 
 
-#### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
+### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -155,7 +157,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -171,7 +174,7 @@ Default Value:
 
 
 
-#### allowFiltering<span class="type-signature type boolean">boolean</span>
+### allowFiltering<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -202,7 +205,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -218,7 +222,7 @@ Default Value:
 
 
 
-#### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -249,7 +253,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -264,7 +269,7 @@ Default Value:
 
 
 
-#### allowMultiSorting<span class="type-signature type boolean">boolean</span>
+### allowMultiSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -295,7 +300,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -310,7 +316,7 @@ Default Value:
 
 
 
-#### allowSelection<span class="type-signature type boolean">boolean</span>
+### allowSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -341,7 +347,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -356,7 +363,7 @@ Default Value:
 
 
 
-#### allowSorting<span class="type-signature type boolean">boolean</span>
+### allowSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -387,7 +394,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -403,7 +411,7 @@ Default Value:
 
 
 
-#### altRowTemplateID<span class="type-signature type string">string</span>
+### altRowTemplateID<span class="type-signature type string">string</span>
 
 
 
@@ -434,7 +442,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -452,7 +461,7 @@ Default Value:
 
 
 
-#### columns<span class="type-signature type array">array</span>
+### columns<span class="type-signature type array">array</span>
 
 
 
@@ -467,7 +476,8 @@ It is to specify data values to the field.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="treegrid"&gt;&lt;/div&gt; 
@@ -487,7 +497,7 @@ It is to specify data values to the field.
 
 
 
-#### columns.allowFiltering<span class="type-signature type boolean">boolean</span>
+### columns.allowFiltering<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -518,7 +528,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -534,7 +545,7 @@ Default Value:
 
 
 
-#### columns.allowSorting<span class="type-signature type boolean">boolean</span>
+### columns.allowSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -565,7 +576,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -581,7 +593,7 @@ Default Value:
 
 
 
-#### columns.editType<span class="type-signature type string">string</span>
+### columns.editType<span class="type-signature type string">string</span>
 
 
 
@@ -612,7 +624,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -627,7 +640,7 @@ Default Value:
 
 
 
-#### columns.field<span class="type-signature type string">string</span>
+### columns.field<span class="type-signature type string">string</span>
 
 
 
@@ -658,7 +671,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -673,7 +687,7 @@ Default Value:
 
 
 
-#### columns.filterEditType<span class="type-signature type string">string</span>
+### columns.filterEditType<span class="type-signature type string">string</span>
 
 
 
@@ -704,7 +718,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -719,7 +734,7 @@ Default Value:
 
 
 
-#### columns.headerText<span class="type-signature type string">string</span>
+### columns.headerText<span class="type-signature type string">string</span>
 
 
 
@@ -750,7 +765,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -765,7 +781,7 @@ Default Value:
 
 
 
-#### columns.visible<span class="type-signature type boolean">boolean</span>
+### columns.visible<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -796,7 +812,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -811,7 +828,7 @@ Default Value:
 
 
 
-#### contextMenuSettings<span class="type-signature type object">object</span>
+### contextMenuSettings<span class="type-signature type object">object</span>
 
 
 
@@ -832,7 +849,7 @@ Specifies the contextMenuSettings options.
 
 
 
-#### contextMenuSettings.contextMenuItems<span class="type-signature type array">array</span>
+### contextMenuSettings.contextMenuItems<span class="type-signature type array">array</span>
 
 
 
@@ -863,7 +880,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -878,7 +896,7 @@ Default Value:
 
 
 
-#### contextMenuSettings.showContextMenu<span class="type-signature type boolean">boolean</span>
+### contextMenuSettings.showContextMenu<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -909,7 +927,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -924,7 +943,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -955,7 +974,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -970,7 +990,7 @@ Default Value:
 
 
 
-#### dataSource<span class="type-signature type array">array</span>
+### dataSource<span class="type-signature type array">array</span>
 
 
 
@@ -1001,7 +1021,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1019,7 +1040,7 @@ Default Value:
 
 
 
-#### dragTooltip<span class="type-signature type object">object</span>
+### dragTooltip<span class="type-signature type object">object</span>
 
 
 
@@ -1040,7 +1061,7 @@ Specifies the drag Tooltip options.
 
 
 
-#### dragTooltip.showTooltip<span class="type-signature type boolean">boolean</span>
+### dragTooltip.showTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1071,7 +1092,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1086,7 +1108,7 @@ Default Value:
 
 
 
-#### dragTooltip.tooltipItems<span class="type-signature type array">array</span>
+### dragTooltip.tooltipItems<span class="type-signature type array">array</span>
 
 
 
@@ -1117,7 +1139,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1132,7 +1155,7 @@ Default Value:
 
 
 
-#### dragTooltip.tooltipTemplate<span class="type-signature type string">string</span>
+### dragTooltip.tooltipTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -1163,7 +1186,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1178,7 +1202,7 @@ Default Value:
 
 
 
-#### editSettings<span class="type-signature type object">object</span>
+### editSettings<span class="type-signature type object">object</span>
 
 
 
@@ -1199,7 +1223,7 @@ Specifies the editSettings options in treegrid.
 
 
 
-#### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
+### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1230,7 +1254,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1245,7 +1270,7 @@ Default Value:
 
 
 
-#### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
+### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1276,7 +1301,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1291,7 +1317,7 @@ Default Value:
 
 
 
-#### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
+### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1322,7 +1348,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1337,7 +1364,7 @@ Default Value:
 
 
 
-#### editSettings.editMode<span class="type-signature type string">string</span>
+### editSettings.editMode<span class="type-signature type string">string</span>
 
 
 
@@ -1368,7 +1395,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1383,7 +1411,7 @@ Default Value:
 
 
 
-#### editSettings.rowPosition<span class="type-signature type string">string</span>
+### editSettings.rowPosition<span class="type-signature type string">string</span>
 
 
 
@@ -1414,7 +1442,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1429,7 +1458,7 @@ Default Value:
 
 
 
-#### enableAltRow<span class="type-signature type boolean">boolean</span>
+### enableAltRow<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1460,7 +1489,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1475,7 +1505,7 @@ Default Value:
 
 
 
-#### enableCollapseAll<span class="type-signature type boolean">boolean</span>
+### enableCollapseAll<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1506,7 +1536,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1524,7 +1555,7 @@ Default Value:
 
 
 
-#### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1555,7 +1586,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1570,7 +1602,7 @@ Default Value:
 
 
 
-#### enableVirtualization<span class="type-signature type boolean">boolean</span>
+### enableVirtualization<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1601,7 +1633,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1616,7 +1649,7 @@ Default Value:
 
 
 
-#### filterBarMode<span class="type-signature type enum">enum</span>
+### filterBarMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -1647,7 +1680,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1663,7 +1697,7 @@ Default Value:
 
 
 
-#### idMapping<span class="type-signature type string">string</span>
+### idMapping<span class="type-signature type string">string</span>
 
 
 
@@ -1694,7 +1728,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1709,7 +1744,7 @@ Default Value:
 
 
 
-#### parentIdMapping<span class="type-signature type string">string</span>
+### parentIdMapping<span class="type-signature type string">string</span>
 
 
 
@@ -1740,7 +1775,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1755,7 +1791,7 @@ Default Value:
 
 
 
-#### query<span class="type-signature type object">object</span>
+### query<span class="type-signature type object">object</span>
 
 
 
@@ -1786,7 +1822,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="treegrid"&gt;&lt;/div&gt; 
@@ -1803,7 +1840,7 @@ Default Value:
 
 
 
-#### rowHeight<span class="type-signature type number">number</span>
+### rowHeight<span class="type-signature type number">number</span>
 
 
 
@@ -1834,7 +1871,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1851,7 +1889,7 @@ Default Value:
 
 
 
-#### rowTemplateID<span class="type-signature type string">string</span>
+### rowTemplateID<span class="type-signature type string">string</span>
 
 
 
@@ -1882,7 +1920,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1900,7 +1939,7 @@ Default Value:
 
 
 
-#### selectedItem<span class="type-signature type numeric">numeric</span>
+### selectedItem<span class="type-signature type numeric">numeric</span>
 
 
 
@@ -1931,7 +1970,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1946,7 +1986,7 @@ Default Value:
 
 
 
-#### selectedRowIndex<span class="type-signature type number">number</span>
+### selectedRowIndex<span class="type-signature type number">number</span>
 
 
 
@@ -1977,7 +2017,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1995,7 +2036,7 @@ Default Value:
 
 
 
-#### selectionType<span class="type-signature type string">string</span>
+### selectionType<span class="type-signature type string">string</span>
 
 
 
@@ -2026,7 +2067,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2041,7 +2083,7 @@ Default Value:
 
 
 
-#### showColumnChooser<span class="type-signature type boolean">boolean</span>
+### showColumnChooser<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2072,7 +2114,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2087,7 +2130,7 @@ Default Value:
 
 
 
-#### showGridCellTooltip<span class="type-signature type boolean">boolean</span>
+### showGridCellTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2118,7 +2161,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2134,7 +2178,7 @@ Default Value:
 
 
 
-#### showGridExpandCellTooltip<span class="type-signature type boolean">boolean</span>
+### showGridExpandCellTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2165,7 +2209,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2181,7 +2226,7 @@ Default Value:
 
 
 
-#### sizeSettings<span class="type-signature type object">object</span>
+### sizeSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2202,7 +2247,7 @@ Specifies the size options for Treegrid.
 
 
 
-#### sizeSettings.height<span class="type-signature type string">string</span>
+### sizeSettings.height<span class="type-signature type string">string</span>
 
 
 
@@ -2233,7 +2278,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2248,7 +2294,7 @@ Default Value:
 
 
 
-#### sizeSettings.width<span class="type-signature type string">string</span>
+### sizeSettings.width<span class="type-signature type string">string</span>
 
 
 
@@ -2279,7 +2325,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2294,7 +2341,7 @@ Default Value:
 
 
 
-#### sortSettings<span class="type-signature type object">object</span>
+### sortSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2315,7 +2362,7 @@ Specifes the sorting options for Treegrid.
 
 
 
-#### sortSettings.sortedColumns<span class="type-signature type array">array</span>
+### sortSettings.sortedColumns<span class="type-signature type array">array</span>
 
 
 
@@ -2346,7 +2393,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2361,7 +2409,7 @@ Default Value:
 
 
 
-#### toolbarSettings<span class="type-signature type object">object</span>
+### toolbarSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2382,7 +2430,7 @@ Specifies the toolbarSettings options.
 
 
 
-#### toolbarSettings.showToolBar<span class="type-signature type boolean">boolean</span>
+### toolbarSettings.showToolBar<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2413,7 +2461,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2428,7 +2477,7 @@ Default Value:
 
 
 
-#### toolbarSettings.toolbarItems<span class="type-signature type array">array</span>
+### toolbarSettings.toolbarItems<span class="type-signature type array">array</span>
 
 
 
@@ -2459,7 +2508,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2474,7 +2524,7 @@ Default Value:
 
 
 
-#### treeColumnIndex<span class="type-signature type number">number</span>
+### treeColumnIndex<span class="type-signature type number">number</span>
 
 
 
@@ -2505,7 +2555,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2521,7 +2572,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -2530,7 +2581,7 @@ Default Value:
 
 
 
-#### clearSelection<span class="signature">(index)</span>
+### clearSelection<span class="signature">(index)</span>
 
 
 
@@ -2561,7 +2612,8 @@ To clear all the selection in treegrid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2588,7 +2640,7 @@ $("#treegrid").ejTreeGrid("clearSelection",2);
 
 
 
-#### collapseAll<span class="signature">()</span>
+### collapseAll<span class="signature">()</span>
 
 
 
@@ -2603,7 +2655,8 @@ To collapse all the parent items in tree grid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2630,7 +2683,7 @@ $("#treegrid").ejTreeGrid("collapseAll");
 
 
 
-#### hideColumn<span class="signature">(headerText)</span>
+### hideColumn<span class="signature">(headerText)</span>
 
 
 
@@ -2661,7 +2714,8 @@ To hide the column by using header text
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2680,7 +2734,7 @@ treegridObj.hideColumn("Task Name");
 
 
 
-#### refresh<span class="signature">(dataSource, query)</span>
+### refresh<span class="signature">(dataSource, query)</span>
 
 
 
@@ -2716,7 +2770,8 @@ To refresh the changes in tree grid
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2736,7 +2791,7 @@ treegridObj.refresh(dataManager, query) // To refresh the tree grid content
 
 
 
-#### saveCell<span class="signature">()</span>
+### saveCell<span class="signature">()</span>
 
 
 
@@ -2751,7 +2806,8 @@ To save the edited cell in treegrid
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2778,7 +2834,7 @@ $("#treegrid").ejTreeGrid("saveCell");
 
 
 
-#### search<span class="signature">(searchString)</span>
+### search<span class="signature">(searchString)</span>
 
 
 
@@ -2809,7 +2865,8 @@ To search an item with search string provided at the run time
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2836,7 +2893,7 @@ $("#treegrid").ejTreeGrid("search","Plan");
 
 
 
-#### showColumn<span class="signature">(headerText)</span>
+### showColumn<span class="signature">(headerText)</span>
 
 
 
@@ -2867,7 +2924,8 @@ To show the column by using header text
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2885,7 +2943,7 @@ treegridObj.showColumn("Task Name");
 
 
 
-#### sortColumn<span class="signature">(columnName, columnSortDirection)</span>
+### sortColumn<span class="signature">(columnName, columnSortDirection)</span>
 
 
 
@@ -2921,7 +2979,8 @@ To sorting the data based on the particular fields
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2946,7 +3005,7 @@ $("#treegrid").ejTreeGrid("sortColumn","Start Date", ej.sortOrder.Descending);
 
 
 
-### Events
+## Events
 
 
 
@@ -2955,7 +3014,7 @@ $("#treegrid").ejTreeGrid("sortColumn","Start Date", ej.sortOrder.Descending);
 
 
 
-#### actionBegin
+### actionBegin
 
 
 
@@ -3154,7 +3213,8 @@ Triggered before every success event of Treegrid action.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3171,7 +3231,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### actionComplete
+### actionComplete
 
 
 
@@ -3434,7 +3494,8 @@ Triggered for every Treegrid action success event.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3451,7 +3512,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### beginEdit
+### beginEdit
 
 
 
@@ -3519,7 +3580,8 @@ Triggered while enter the edit mode in the treegrid cell
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3536,7 +3598,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### collapsed
+### collapsed
 
 
 
@@ -3594,7 +3656,8 @@ Triggered after collapsed the TreeGrid record
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3611,7 +3674,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### collapsing
+### collapsing
 
 
 
@@ -3669,7 +3732,8 @@ Triggered while collapsing the TreeGrid record
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3686,7 +3750,7 @@ $("#TreeGrid").ejTreeGrid({
 
 
 
-#### contextMenuOpen
+### contextMenuOpen
 
 
 
@@ -3754,7 +3818,8 @@ Triggered while Context Menu is rendered in TreeGrid control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3771,7 +3836,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### endEdit
+### endEdit
 
 
 
@@ -3844,7 +3909,8 @@ Triggered after saved the modified cellValue in treegrid
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3861,7 +3927,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### expanded
+### expanded
 
 
 
@@ -3919,7 +3985,8 @@ Triggered after expand the record
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3936,7 +4003,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### expanding
+### expanding
 
 
 
@@ -3994,7 +4061,8 @@ Triggered while expanding the TreeGrid record
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4011,7 +4079,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### load
+### load
 
 
 
@@ -4069,7 +4137,8 @@ Triggered while Treegrid is loaded
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4086,7 +4155,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### queryCellInfo
+### queryCellInfo
 
 
 
@@ -4154,7 +4223,8 @@ Triggered while rendering each cell in the treegrid
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4171,7 +4241,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### rowDataBound
+### rowDataBound
 
 
 
@@ -4229,7 +4299,8 @@ Triggered while rendering each row
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4246,7 +4317,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### rowDrag
+### rowDrag
 
 
 
@@ -4334,7 +4405,8 @@ Triggered while dragging a row in TreeGrid control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4351,7 +4423,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### rowDragStart
+### rowDragStart
 
 
 
@@ -4424,7 +4496,8 @@ Triggered while start to drag row in TreeGrid control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4441,7 +4514,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### rowDragStop
+### rowDragStop
 
 
 
@@ -4524,7 +4597,8 @@ Triggered while drop a row in TreeGrid control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4541,7 +4615,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### rowSelected
+### rowSelected
 
 
 
@@ -4604,7 +4678,8 @@ Triggered after the row is selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4621,7 +4696,7 @@ $("#treegrid").ejTreeGrid({
 
 
 
-#### rowSelecting
+### rowSelecting
 
 
 
@@ -4684,7 +4759,8 @@ Triggered before the row is going to be selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html File Explorer control.
+# Custom Design for Html File Explorer control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html File Explorer control.
 
 
 
-#### $(element).ejFileExplorer<span class="signature">(options)</span>
+## $(element).ejFileExplorer<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ Custom Design for Html File Explorer control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -74,7 +75,7 @@ ajaxSettings: {
 
 
 
-### Requires
+## Requires
 
 
 
@@ -153,7 +154,7 @@ ajaxSettings: {
 
 
 
-### Members
+## Members
 
 
 
@@ -162,7 +163,7 @@ ajaxSettings: {
 
 
 
-#### ajaxAction<span class="type-signature type string">string</span>
+### ajaxAction<span class="type-signature type string">string</span>
 
 
 
@@ -193,7 +194,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -221,7 +223,7 @@ ajaxSettings: {
 
 
 
-#### ajaxSettings<span class="type-signature type object">Object</span>
+### ajaxSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -252,7 +254,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -280,7 +283,7 @@ ajaxSettings: {
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -311,7 +314,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -340,7 +344,7 @@ ajaxSettings: {
 
 
 
-#### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -371,7 +375,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -400,7 +405,7 @@ ajaxSettings: {
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -431,7 +436,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -460,7 +466,7 @@ ajaxSettings: {
 
 
 
-#### fileTypes<span class="type-signature type string">string</span>
+### fileTypes<span class="type-signature type string">string</span>
 
 
 
@@ -491,7 +497,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -520,7 +527,7 @@ ajaxSettings: {
 
 
 
-#### filterSettings<span class="type-signature type object">Object</span>
+### filterSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -541,7 +548,7 @@ Gets or sets an object that indicates whether to customize the filtering behavio
 
 
 
-#### filterSettings.caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
+### filterSettings.caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -572,7 +579,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -601,7 +609,7 @@ ajaxSettings: {
 
 
 
-#### filterSettings.filterType<span class="type-signature type enum">enum</span>
+### filterSettings.filterType<span class="type-signature type enum">enum</span>
 
 
 
@@ -632,7 +640,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -661,7 +670,7 @@ ajaxSettings: {
 
 
 
-#### gridSettings<span class="type-signature type object">Object</span>
+### gridSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -682,7 +691,7 @@ Gets or sets an object that indicates whether to customize the grid behavior in 
 
 
 
-#### gridSettings.allowSearching<span class="type-signature type boolean">boolean</span>
+### gridSettings.allowSearching<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -713,7 +722,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -742,7 +752,7 @@ ajaxSettings: {
 
 
 
-#### gridSettings.allowSorting<span class="type-signature type boolean">boolean</span>
+### gridSettings.allowSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -773,7 +783,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -802,7 +813,7 @@ ajaxSettings: {
 
 
 
-#### gridSettings.columns<span class="type-signature type array">array</span>
+### gridSettings.columns<span class="type-signature type array">array</span>
 
 
 
@@ -833,7 +844,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -862,7 +874,7 @@ ajaxSettings: {
 
 
 
-#### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -893,7 +905,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -922,7 +935,7 @@ ajaxSettings: {
 
 
 
-#### isResponsive<span class="type-signature type boolean">boolean</span>
+### isResponsive<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -953,7 +966,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -982,7 +996,7 @@ ajaxSettings: {
 
 
 
-#### layout<span class="type-signature type enum">enum</span>
+### layout<span class="type-signature type enum">enum</span>
 
 
 
@@ -1013,7 +1027,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1042,7 +1057,7 @@ ajaxSettings: {
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -1073,7 +1088,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1102,7 +1118,7 @@ ajaxSettings: {
 
 
 
-#### path<span class="type-signature type string">string</span>
+### path<span class="type-signature type string">string</span>
 
 
 
@@ -1133,7 +1149,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1162,7 +1179,7 @@ ajaxAction: "@Url.Content("~/ImageBrowser/FileAction")"
 
 
 
-#### showContextMenu<span class="type-signature type boolean">boolean</span>
+### showContextMenu<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1193,7 +1210,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1222,7 +1240,7 @@ ajaxSettings: {
 
 
 
-#### showFooter<span class="type-signature type boolean">boolean</span>
+### showFooter<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1253,7 +1271,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1282,7 +1301,7 @@ ajaxSettings: {
 
 
 
-#### showLayout<span class="type-signature type boolean">boolean</span>
+### showLayout<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1313,7 +1332,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1342,7 +1362,7 @@ ajaxSettings: {
 
 
 
-#### showToolbar<span class="type-signature type boolean">boolean</span>
+### showToolbar<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1373,7 +1393,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1402,7 +1423,7 @@ ajaxSettings: {
 
 
 
-#### showTreeview<span class="type-signature type boolean">boolean</span>
+### showTreeview<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1433,7 +1454,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1462,7 +1484,7 @@ ajaxSettings: {
 
 
 
-#### tools<span class="type-signature type object">object</span>
+### tools<span class="type-signature type object">object</span>
 
 
 
@@ -1493,7 +1515,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1530,7 +1553,7 @@ ajaxSettings: {
 
 
 
-#### toolsList<span class="type-signature type array">array</span>
+### toolsList<span class="type-signature type array">array</span>
 
 
 
@@ -1561,7 +1584,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1590,7 +1614,7 @@ ajaxSettings: {
 
 
 
-#### uploadBoxSettings<span class="type-signature type object">Object</span>
+### uploadBoxSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -1611,7 +1635,7 @@ Gets or sets an object that indicates whether to customize the upload behavior i
 
 
 
-#### uploadBoxSettings.fileSize<span class="type-signature type number">number</span>
+### uploadBoxSettings.fileSize<span class="type-signature type number">number</span>
 
 
 
@@ -1642,7 +1666,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1671,7 +1696,7 @@ ajaxSettings: {
 
 
 
-#### uploadBoxSettings.multipleFilesSelection<span class="type-signature type boolean">boolean</span>
+### uploadBoxSettings.multipleFilesSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1702,7 +1727,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1731,7 +1757,7 @@ ajaxSettings: {
 
 
 
-#### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -1762,7 +1788,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1789,7 +1816,7 @@ ajaxSettings: {
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1798,7 +1825,7 @@ ajaxSettings: {
 
 
 
-#### disableToolbarItem<span class="signature">()</span>
+### disableToolbarItem<span class="signature">()</span>
 
 
 
@@ -1813,7 +1840,8 @@ Disable the particular toolbar item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1844,7 +1872,7 @@ feObj.disableToolbarItem("fileExplorerSearchbar"); // disable search bar
 
 
 
-#### enableToolbarItem<span class="signature">()</span>
+### enableToolbarItem<span class="signature">()</span>
 
 
 
@@ -1859,7 +1887,8 @@ Enable the particular toolbar item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1888,7 +1917,7 @@ feObj.enableToolbarItem("fileExplorerSearchbar"); // enable search bar
 
 
 
-### Events
+## Events
 
 
 
@@ -1897,7 +1926,7 @@ feObj.enableToolbarItem("fileExplorerSearchbar"); // enable search bar
 
 
 
-#### copy
+### copy
 
 
 
@@ -1965,7 +1994,8 @@ Fires while file or folder has been copied from one place to another place suces
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1994,7 +2024,7 @@ copy: function (args) {}
 
 
 
-#### createFolder
+### createFolder
 
 
 
@@ -2052,7 +2082,8 @@ Fires when new folder has been created sucessfully in file system
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2081,7 +2112,7 @@ createFolder: function (args) {}
 
 
 
-#### layoutChange
+### layoutChange
 
 
 
@@ -2144,7 +2175,8 @@ Fires when the file view type has been changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2173,7 +2205,7 @@ layoutChange: function (args) {}
 
 
 
-#### move
+### move
 
 
 
@@ -2241,7 +2273,8 @@ Fires while file or folder has been moved from one place to another place sucesf
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2270,7 +2303,7 @@ move: function (args) {}
 
 
 
-#### open
+### open
 
 
 
@@ -2338,7 +2371,8 @@ Fires while files has been opened successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2367,7 +2401,7 @@ open: function (args) {}
 
 
 
-#### remove
+### remove
 
 
 
@@ -2435,7 +2469,8 @@ Fires when file or folder ahs been deleted sucessfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2464,7 +2499,7 @@ remove: function (args) {}
 
 
 
-#### select
+### select
 
 
 
@@ -2537,7 +2572,8 @@ Fires when the items from grid view or tile view of fileexplorer control has bee
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

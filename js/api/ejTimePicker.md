@@ -18,7 +18,7 @@ Time selection with the input field.
 
 
 
-#### $(element).ejTimePicker<span class="signature">()</span>
+## $(element).ejTimePicker<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Time selection with the input field.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -46,7 +47,7 @@ $("#timepicker").ejTimePicker();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -74,7 +75,7 @@ $("#timepicker").ejTimePicker();
 
 
 
-### Members
+## Members
 
 
 
@@ -83,7 +84,7 @@ $("#timepicker").ejTimePicker();
 
 
 
-#### cssClass<span class="type-signature type string">String</span>
+### cssClass<span class="type-signature type string">String</span>
 
 
 
@@ -114,7 +115,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -131,7 +133,7 @@ Default Value:
 
 
 
-#### enableAnimation<span class="type-signature type boolean">Boolean</span>
+### enableAnimation<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -162,7 +164,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -179,7 +182,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -210,7 +213,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -227,7 +231,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">Boolean</span>
+### enablePersistence<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -258,7 +262,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -275,7 +280,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -306,7 +311,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -323,7 +329,7 @@ Default Value:
 
 
 
-#### enableStrictMode<span class="type-signature type boolean">Boolean</span>
+### enableStrictMode<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -354,7 +360,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -370,7 +377,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -401,7 +408,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -418,7 +426,7 @@ Default Value:
 
 
 
-#### hourInterval<span class="type-signature type number">Number</span>
+### hourInterval<span class="type-signature type number">Number</span>
 
 
 
@@ -449,7 +457,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -466,7 +475,7 @@ Default Value:
 
 
 
-#### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes<span class="type-signature type object">object</span>
 
 
 
@@ -497,7 +506,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -514,7 +524,7 @@ Default Value:
 
 
 
-#### interval<span class="type-signature type number">Number</span>
+### interval<span class="type-signature type number">Number</span>
 
 
 
@@ -545,7 +555,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -562,7 +573,7 @@ Default Value:
 
 
 
-#### locale<span class="type-signature type string">String</span>
+### locale<span class="type-signature type string">String</span>
 
 
 
@@ -593,7 +604,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -610,7 +622,7 @@ Default Value:
 
 
 
-#### maxTime<span class="type-signature type string">String</span>
+### maxTime<span class="type-signature type string">String</span>
 
 
 
@@ -641,7 +653,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -658,7 +671,7 @@ Default Value:
 
 
 
-#### minTime<span class="type-signature type string">String</span>
+### minTime<span class="type-signature type string">String</span>
 
 
 
@@ -689,7 +702,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -706,7 +720,7 @@ Default Value:
 
 
 
-#### minutesInterval<span class="type-signature type number">Number</span>
+### minutesInterval<span class="type-signature type number">Number</span>
 
 
 
@@ -737,7 +751,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -754,7 +769,7 @@ Default Value:
 
 
 
-#### popupHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### popupHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -785,7 +800,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -802,7 +818,7 @@ Default Value:
 
 
 
-#### popupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### popupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -833,7 +849,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -850,7 +867,7 @@ Default Value:
 
 
 
-#### readOnly<span class="type-signature type boolean">Boolean</span>
+### readOnly<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -881,7 +898,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -898,7 +916,7 @@ Default Value:
 
 
 
-#### secondsInterval<span class="type-signature type number">Number</span>
+### secondsInterval<span class="type-signature type number">Number</span>
 
 
 
@@ -929,7 +947,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -946,7 +965,7 @@ Default Value:
 
 
 
-#### showPopupButton<span class="type-signature type boolean">Boolean</span>
+### showPopupButton<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -977,7 +996,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -994,7 +1014,7 @@ Default Value:
 
 
 
-#### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
+### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1025,7 +1045,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1042,7 +1063,7 @@ Default Value:
 
 
 
-#### timeFormat<span class="type-signature type string">String</span>
+### timeFormat<span class="type-signature type string">String</span>
 
 
 
@@ -1073,7 +1094,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1090,7 +1112,7 @@ Default Value:
 
 
 
-#### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
 
 
 
@@ -1121,7 +1143,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1138,7 +1161,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -1169,7 +1192,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1184,7 +1208,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1193,7 +1217,7 @@ Default Value:
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -1208,7 +1232,8 @@ To disable the timepicker
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1235,7 +1260,7 @@ $("#timepicker").ejTimePicker("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -1250,7 +1275,8 @@ To enable the timepicker
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1277,7 +1303,7 @@ $("#timepicker").ejTimePicker("enable");
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -1292,7 +1318,8 @@ returns the current time value
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1319,7 +1346,7 @@ $("#timepicker").ejTimePicker("getValue");
 
 
 
-#### setCurrentTime<span class="signature">()</span>
+### setCurrentTime<span class="signature">()</span>
 
 
 
@@ -1334,7 +1361,8 @@ updates the current system time to timepicker
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1359,7 +1387,7 @@ $("#timepicker").ejTimePicker("setCurrentTime");
 
 
 
-### Events
+## Events
 
 
 
@@ -1368,7 +1396,7 @@ $("#timepicker").ejTimePicker("setCurrentTime");
 
 
 
-#### beforeChange
+### beforeChange
 
 
 
@@ -1431,7 +1459,8 @@ Fires when the time value changed in the TimePicker.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1450,7 +1479,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### beforeOpen
+### beforeOpen
 
 
 
@@ -1501,7 +1530,8 @@ Fires when the TimePicker popup before opened .
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1520,7 +1550,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### change
+### change
 
 
 
@@ -1583,7 +1613,8 @@ Fires when the time value changed in the TimePicker.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1602,7 +1633,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### close
+### close
 
 
 
@@ -1653,7 +1684,8 @@ Fires when the TimePicker popup closed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1672,7 +1704,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### create
+### create
 
 
 
@@ -1713,7 +1745,8 @@ Fires when create TimePicker successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1732,7 +1765,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1773,7 +1806,8 @@ Fires when the TimePicker is destroyed successfully.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1792,7 +1826,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### focusIn
+### focusIn
 
 
 
@@ -1855,7 +1889,8 @@ Fires when the timepicker control gets focus.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1874,7 +1909,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### focusOut
+### focusOut
 
 
 
@@ -1937,7 +1972,8 @@ Fires when the timepicker control get lost focus.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1956,7 +1992,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### open
+### open
 
 
 
@@ -2007,7 +2043,8 @@ Fires when the TimePicker popup opened.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2026,7 +2063,7 @@ $("#timepicker").ejTimePicker({
 
 
 
-#### select
+### select
 
 
 
@@ -2089,7 +2126,8 @@ Fires when the value is selected from the timepicker dropdownlist.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

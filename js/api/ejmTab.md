@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom design for Html Tab control.
+# Custom Design for Html Tab control.
 
 
 
@@ -18,7 +18,7 @@ Custom design for Html Tab control.
 
 
 
-#### $(element).ejmTab<span class="signature">()</span>
+## $(element).ejmTab<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom design for Html Tab control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -64,7 +65,7 @@ $("#tab").ejmTab();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -101,7 +102,7 @@ $("#tab").ejmTab();
 
 
 
-### Members
+## Members
 
 
 
@@ -110,7 +111,7 @@ $("#tab").ejmTab();
 
 
 
-#### ajaxSettings
+### ajaxSettings
 
 
 
@@ -131,7 +132,7 @@ Section for ajaxSettings specific functionalities.
 
 
 
-#### ajaxSettings.async<span class="type-signature type boolean">boolean</span>
+### ajaxSettings.async<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -162,7 +163,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -207,7 +209,7 @@ $("#tab").ejmTab ("option", "ajaxSettings", { async: true });            </code>
 
 
 
-#### ajaxSettings.cache<span class="type-signature type boolean">boolean</span>
+### ajaxSettings.cache<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -238,7 +240,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -283,7 +286,7 @@ $("#tab").ejmTab ("option", "ajaxSettings", { cache: false });            </code
 
 
 
-#### ajaxSettings.contentType<span class="type-signature type string">string</span>
+### ajaxSettings.contentType<span class="type-signature type string">string</span>
 
 
 
@@ -314,7 +317,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -359,7 +363,7 @@ $("#tab").ejmTab ("option", "ajaxSettings", { contentType: "html" });           
 
 
 
-#### ajaxSettings.data<span class="type-signature type jsonobject">JSONObject</span>
+### ajaxSettings.data<span class="type-signature type jsonobject">JSONObject</span>
 
 
 
@@ -390,7 +394,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -435,7 +440,7 @@ $("#tab").ejmTab ("option", "ajaxSettings", {data: {}});            </code>
 
 
 
-#### ajaxSettings.dataType<span class="type-signature type string">string</span>
+### ajaxSettings.dataType<span class="type-signature type string">string</span>
 
 
 
@@ -466,7 +471,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -511,7 +517,7 @@ $("#tab").ejmTab ("option", "ajaxSettings", { dataType: "html" });            </
 
 
 
-#### ajaxSettings.type<span class="type-signature type jsonobject">JSONObject</span>
+### ajaxSettings.type<span class="type-signature type jsonobject">JSONObject</span>
 
 
 
@@ -542,7 +548,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -586,7 +593,7 @@ $("#tab").ejmTab ("option", "ajaxSettings", { type: 'GET'});            </code>
 
 
 
-#### ajaxSettings.url<span class="type-signature type string">string</span>
+### ajaxSettings.url<span class="type-signature type string">string</span>
 
 
 
@@ -617,7 +624,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -662,7 +670,7 @@ $("#tab").ejmTab ("option", "ajaxSettings", { url: "" });            </code>
 
 
 
-#### allowScrolling<span class="type-signature type boolean">boolean</span>
+### allowScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -693,7 +701,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -761,7 +770,7 @@ $("#tab").ejmTab ("option", "allowScrolling", "true");            </code>
 
 
 
-#### android
+### android
 
 
 
@@ -782,7 +791,7 @@ Section for android rendermode specific functionalities.
 
 
 
-#### android.contentType<span class="type-signature type enum">enum</span>
+### android.contentType<span class="type-signature type enum">enum</span>
 
 
 
@@ -813,7 +822,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -881,7 +891,7 @@ $("#tab").ejmTab("option", "android.ContentType", "ej.mobile.Tab.Android.Content
 
 
 
-#### android.imageClass<span class="type-signature type string">string</span>
+### android.imageClass<span class="type-signature type string">string</span>
 
 
 
@@ -912,7 +922,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -943,7 +954,7 @@ Favourites content here
 
 
 
-#### android.position<span class="type-signature type enum">enum</span>
+### android.position<span class="type-signature type enum">enum</span>
 
 
 
@@ -974,7 +985,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1042,7 +1054,7 @@ $("#tab").ejmTab("option", "android.position",  ej.mobile.Tab.Android.Position.F
 
 
 
-#### badge
+### badge
 
 
 
@@ -1063,7 +1075,7 @@ Section for badge specific functionalities.
 
 
 
-#### badge.enabled<span class="type-signature type boolean">boolean</span>
+### badge.enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1094,7 +1106,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1162,7 +1175,7 @@ $("#tab").ejmTab ("option", "badge.enabled", "true");            </code>
 
 
 
-#### badge.maxValue<span class="type-signature type number">number</span>
+### badge.maxValue<span class="type-signature type number">number</span>
 
 
 
@@ -1193,7 +1206,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1261,7 +1275,7 @@ $("#tab").ejmTab ("option", "badge.maxValue", "100");            </code>
 
 
 
-#### badge.minValue<span class="type-signature type number">number</span>
+### badge.minValue<span class="type-signature type number">number</span>
 
 
 
@@ -1292,7 +1306,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1360,7 +1375,7 @@ $("#tab").ejmTab ("option", "badge.minValue", "10");            </code>
 
 
 
-#### badge.value<span class="type-signature type number">number</span>
+### badge.value<span class="type-signature type number">number</span>
 
 
 
@@ -1391,7 +1406,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1458,7 +1474,7 @@ $("#tab").ejmTab ("option", "badge.value", "2");            </code>
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -1489,7 +1505,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1545,7 +1562,7 @@ $("#tab").ejmTab ("option", "cssClass", "customclass");            </code>
 
 
 
-#### enableAjax<span class="type-signature type boolean">boolean</span>
+### enableAjax<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1576,7 +1593,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1629,7 +1647,7 @@ $("#tab").ejmTab ("option", "enableAjax", "true");            </code>
 
 
 
-#### enableCache<span class="type-signature type boolean">boolean</span>
+### enableCache<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1660,7 +1678,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1716,7 +1735,7 @@ $("#tab").ejmTab ("option", "enableCache", "true");            </code>
 
 
 
-#### enableNativeScrolling<span class="type-signature type boolean">boolean</span>
+### enableNativeScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1747,7 +1766,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1815,7 +1835,7 @@ $("#tab").ejmTab ("option", "enableNativeScrolling", "true");            </code>
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1846,7 +1866,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1913,7 +1934,7 @@ $("#tab").ejmTab ("option", "enablePersistence", true);            </code>
 
 
 
-#### flat
+### flat
 
 
 
@@ -1934,7 +1955,7 @@ Section for flat rendermode specific functionalities.
 
 
 
-#### flat.position<span class="type-signature type enum">enum</span>
+### flat.position<span class="type-signature type enum">enum</span>
 
 
 
@@ -1965,7 +1986,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2033,7 +2055,7 @@ $("#tab").ejmTab("option", "flat.position",  ej.mobile.Tab.Flat.Fixed); </code>
 
 
 
-#### ios7
+### ios7
 
 
 
@@ -2054,7 +2076,7 @@ Section for ios7 rendermode specific functionalities.
 
 
 
-#### ios7.imageClass<span class="type-signature type string">string</span>
+### ios7.imageClass<span class="type-signature type string">string</span>
 
 
 
@@ -2085,7 +2107,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2116,7 +2139,7 @@ Favourites content here
 
 
 
-#### ios7.overflowBadge
+### ios7.overflowBadge
 
 
 
@@ -2137,7 +2160,7 @@ Section for overflow badge specific functionalities.
 
 
 
-#### ios7.overflowBadge.enabled<span class="type-signature type boolean">boolean</span>
+### ios7.overflowBadge.enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2168,7 +2191,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2236,7 +2260,7 @@ $("#tab").ejmTab("option", "ios7.overflowBadge.enabled", true); </code>
 
 
 
-#### ios7.overflowBadge.maxValue<span class="type-signature type number">number</span>
+### ios7.overflowBadge.maxValue<span class="type-signature type number">number</span>
 
 
 
@@ -2267,7 +2291,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2335,7 +2360,7 @@ $("#tab").ejmTab("option", "ios7.overflowBadge.maxValue",100); </code>
 
 
 
-#### ios7.overflowBadge.minValue<span class="type-signature type number">number</span>
+### ios7.overflowBadge.minValue<span class="type-signature type number">number</span>
 
 
 
@@ -2366,7 +2391,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2434,7 +2460,7 @@ $("#tab").ejmTab("option", "ios7.overflowBadge.minValue",10); </code>
 
 
 
-#### ios7.overflowBadge.value<span class="type-signature type number">number</span>
+### ios7.overflowBadge.value<span class="type-signature type number">number</span>
 
 
 
@@ -2465,7 +2491,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2533,7 +2560,7 @@ $("#tab").ejmTab("option", "ios7.overflowBadge.value",2); </code>
 
 
 
-#### prefetchAjaxContent<span class="type-signature type boolean">boolean</span>
+### prefetchAjaxContent<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2564,7 +2591,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2620,7 +2648,7 @@ $("#tab").ejmTab ("option", "prefetchAjaxContent", "true");            </code>
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -2651,7 +2679,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2718,7 +2747,7 @@ $("#tab").ejmTab ("option", "renderMode", ej.mobile.RenderMode.Android);        
 
 
 
-#### selectedItemIndex<span class="type-signature type number">number</span>
+### selectedItemIndex<span class="type-signature type number">number</span>
 
 
 
@@ -2749,7 +2778,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2816,7 +2846,7 @@ $("#tab").ejmTab ("option", "selectedItemIndex", "1");            </code>
 
 
 
-#### showAjaxPopup<span class="type-signature type boolean">boolean</span>
+### showAjaxPopup<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2847,7 +2877,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2903,7 +2934,7 @@ $("#tab").ejmTab ("option", "showAjaxPopup", "false");            </code>
 
 
 
-#### showScrollbars<span class="type-signature type boolean">boolean</span>
+### showScrollbars<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2934,7 +2965,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3002,7 +3034,7 @@ $("#tab").ejmTab ("option", "showScrollbars", "false");            </code>
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -3033,7 +3065,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3102,7 +3135,7 @@ $("#tab").ejmTab ("option", "theme", ej.mobile.Theme.Dark);            </code>
 
 
 
-#### windows
+### windows
 
 
 
@@ -3123,7 +3156,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-#### windows.enableCustomText<span class="type-signature type boolean">boolean</span>
+### windows.enableCustomText<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3154,7 +3187,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3222,7 +3256,7 @@ $("#tab").ejmTab("option", "windows.enableCustomText", "true"); </code>
 
 
 
-#### windows.enableTouchMove
+### windows.enableTouchMove
 
 
 
@@ -3253,7 +3287,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3321,7 +3356,7 @@ $("#tab").ejmTab("option", "windows.enableTouchMove", "true"); </code>
 
 
 
-#### windows.position<span class="type-signature type enum">enum</span>
+### windows.position<span class="type-signature type enum">enum</span>
 
 
 
@@ -3352,7 +3387,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3420,7 +3456,7 @@ $("#tab").ejmTab("option", "windows.position",  ej.mobile.Tab.Windows.Position.F
 
 
 
-#### windows.preventContentSwipe<span class="type-signature type boolean">boolean</span>
+### windows.preventContentSwipe<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3451,7 +3487,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3519,7 +3556,7 @@ $("#tab").ejmTab("option", "windows.preventContentSwipe", "true"); </code>
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3550,7 +3587,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3616,7 +3654,7 @@ $("#tab").ejmTab("option", "windows.renderDefault", "false"); </code>
 
 
 
-### Methods
+## Methods
 
 
 
@@ -3625,7 +3663,7 @@ $("#tab").ejmTab("option", "windows.renderDefault", "false"); </code>
 
 
 
-#### addItem<span class="signature">()</span>
+### addItem<span class="signature">()</span>
 
 
 
@@ -3640,7 +3678,8 @@ To add a tab item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3676,7 +3715,7 @@ $("#tab").ejmTab("addItem","addTab",3);
 
 
 
-#### addOverflowItem<span class="signature">()</span>
+### addOverflowItem<span class="signature">()</span>
 
 
 
@@ -3691,7 +3730,8 @@ To add tab item in more option
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3727,7 +3767,7 @@ $("#tab").ejmTab("addOverflowItem","addMoreTab",3);
 
 
 
-#### disableContent<span class="signature">()</span>
+### disableContent<span class="signature">()</span>
 
 
 
@@ -3742,7 +3782,8 @@ To disable the tab item content
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3778,7 +3819,7 @@ $("#tab").ejmTab("disableContent",1);
 
 
 
-#### disableItem<span class="signature">()</span>
+### disableItem<span class="signature">()</span>
 
 
 
@@ -3793,7 +3834,8 @@ To disable the tab item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3829,7 +3871,7 @@ $("#tab").ejmTab("disableItem",1);
 
 
 
-#### enableContent<span class="signature">()</span>
+### enableContent<span class="signature">()</span>
 
 
 
@@ -3844,7 +3886,8 @@ To enable the tab item content
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3880,7 +3923,7 @@ $("#tab").ejmTab("enableContent",1);
 
 
 
-#### enableItem<span class="signature">()</span>
+### enableItem<span class="signature">()</span>
 
 
 
@@ -3895,7 +3938,8 @@ To enable the tab item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3931,7 +3975,7 @@ $("#tab").ejmTab("enableItem",1);
 
 
 
-#### getActiveItem<span class="signature">()</span>
+### getActiveItem<span class="signature">()</span>
 
 
 
@@ -3946,7 +3990,8 @@ Get the current active item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3982,7 +4027,7 @@ $("#tab").ejmTab("getActiveItem");
 
 
 
-#### getActiveItemText<span class="signature">()</span>
+### getActiveItemText<span class="signature">()</span>
 
 
 
@@ -3997,7 +4042,8 @@ Get the current active item text
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4033,7 +4079,7 @@ $("#tab").ejmTab("getActiveItemText");
 
 
 
-#### getItemsCount<span class="signature">()</span>
+### getItemsCount<span class="signature">()</span>
 
 
 
@@ -4048,7 +4094,8 @@ To return the tab item count
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4084,7 +4131,7 @@ $("#tab").ejmTab("getItemsCount");
 
 
 
-#### getOverflowItemCount<span class="signature">()</span>
+### getOverflowItemCount<span class="signature">()</span>
 
 
 
@@ -4099,7 +4146,8 @@ Get the overflow tab item count
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4135,7 +4183,7 @@ $("#tab").ejmTab("getOverflowItemCount");
 
 
 
-#### hideBadge<span class="signature">()</span>
+### hideBadge<span class="signature">()</span>
 
 
 
@@ -4150,7 +4198,8 @@ To hide a badge
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4186,7 +4235,7 @@ $("#tab").ejmTab("hideBadge",1);
 
 
 
-#### removeItem<span class="signature">()</span>
+### removeItem<span class="signature">()</span>
 
 
 
@@ -4201,7 +4250,8 @@ To remove tab item
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4237,7 +4287,7 @@ $("#tab").ejmTab("removeItem",1);
 
 
 
-#### removeOverflowItem<span class="signature">()</span>
+### removeOverflowItem<span class="signature">()</span>
 
 
 
@@ -4252,7 +4302,8 @@ To remove tab item in overflow option
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4288,7 +4339,7 @@ $("#tab").ejmTab("removeOverflowItem",1);
 
 
 
-#### selectItem<span class="signature">()</span>
+### selectItem<span class="signature">()</span>
 
 
 
@@ -4303,7 +4354,8 @@ To make the tab item to be active
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4339,7 +4391,7 @@ $("#tab").ejmTab("selectItem",1);
 
 
 
-#### showBadge<span class="signature">()</span>
+### showBadge<span class="signature">()</span>
 
 
 
@@ -4354,7 +4406,8 @@ To show the tab's badge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4390,7 +4443,7 @@ $("#tab").ejmTab("showBadge",1);
 
 
 
-#### updateBadgeValue<span class="signature">()</span>
+### updateBadgeValue<span class="signature">()</span>
 
 
 
@@ -4405,7 +4458,8 @@ To update the badge value
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4439,7 +4493,7 @@ $("#tab").ejmTab("updateBadgeValue",1,"Music Collection");
 
 
 
-### Events
+## Events
 
 
 
@@ -4448,7 +4502,7 @@ $("#tab").ejmTab("updateBadgeValue",1,"Music Collection");
 
 
 
-#### ajaxBeforeLoad
+### ajaxBeforeLoad
 
 
 
@@ -4499,7 +4553,8 @@ Event triggers when the ajaxBeforeLoad happens in the Tab
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -4562,7 +4617,7 @@ $("#tab").ejmTab({
 
 
 
-#### ajaxComplete
+### ajaxComplete
 
 
 
@@ -4603,7 +4658,8 @@ Event triggers when the ajaxComplete happens in the tab.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -4666,7 +4722,7 @@ $("#tab").ejmTab({
 
 
 
-#### ajaxError
+### ajaxError
 
 
 
@@ -4732,7 +4788,8 @@ Event triggers when the ajaxError happens in the tab
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -4795,7 +4852,7 @@ $("#tab").ejmTab({
 
 
 
-#### ajaxSuccess
+### ajaxSuccess
 
 
 
@@ -4856,7 +4913,8 @@ Event triggers when the ajaxSuccess happens in the tab
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -4919,7 +4977,7 @@ $("#tab").ejmTab({
 
 
 
-#### load
+### load
 
 
 
@@ -4960,7 +5018,8 @@ Event triggers when the load happens in the Tab
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -5024,7 +5083,7 @@ $("#tab").ejmTab({
 
 
 
-#### loadComplete
+### loadComplete
 
 
 
@@ -5075,7 +5134,8 @@ Event triggers when the loadComplete happens in the Tab
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -5139,7 +5199,7 @@ $("#tab").ejmTab({
 
 
 
-#### prefetchContentLoaded
+### prefetchContentLoaded
 
 
 
@@ -5205,7 +5265,8 @@ Event triggered after ajax contents are prefetched.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -5267,7 +5328,7 @@ $("#tab").ejmTab({enableAjax: true, enableCache: true, prefetchAjaxContent:true}
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -5313,7 +5374,8 @@ Event triggers when the touchEnd happens in the Tab
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -5377,7 +5439,7 @@ $("#tab").ejmTab({
 
 
 
-#### touchStart
+### touchStart
 
 
 
@@ -5423,7 +5485,8 @@ Event triggers when the touchStart happens in the Tab
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             

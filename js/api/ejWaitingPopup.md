@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Button control.
+# Custom Design for Html Button control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Button control.
 
 
 
-#### $(element).ejWaitingPopup<span class="signature">()</span>
+## $(element).ejWaitingPopup<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Button control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -58,7 +59,7 @@ $("#target").ejWaitingPopup({ showOnInit: true });
 
 
 
-### Requires
+## Requires
 
 
 
@@ -77,7 +78,7 @@ $("#target").ejWaitingPopup({ showOnInit: true });
 
 
 
-### Members
+## Members
 
 
 
@@ -86,7 +87,7 @@ $("#target").ejWaitingPopup({ showOnInit: true });
 
 
 
-#### cssClass<span class="type-signature type string">String</span>
+### cssClass<span class="type-signature type string">String</span>
 
 
 
@@ -117,7 +118,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -145,7 +147,7 @@ Default Value:
 
 
 
-#### showImage<span class="type-signature type boolean">Boolean</span>
+### showImage<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -176,7 +178,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -204,7 +207,7 @@ Default Value:
 
 
 
-#### showOnInit<span class="type-signature type boolean">Boolean</span>
+### showOnInit<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -235,7 +238,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -263,7 +267,7 @@ Default Value:
 
 
 
-#### template<span class="type-signature type object">object</span>
+### template<span class="type-signature type object">object</span>
 
 
 
@@ -294,7 +298,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -361,7 +366,7 @@ Default Value:
 
 
 
-#### text<span class="type-signature type string">String</span>
+### text<span class="type-signature type string">String</span>
 
 
 
@@ -392,7 +397,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -418,7 +424,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -427,7 +433,7 @@ Default Value:
 
 
 
-#### hide<span class="signature">()</span>
+### hide<span class="signature">()</span>
 
 
 
@@ -442,7 +448,8 @@ To hide the waiting popup
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -494,7 +501,7 @@ $("#target").ejWaitingPopup('hide');
 
 
 
-#### refresh<span class="signature">()</span>
+### refresh<span class="signature">()</span>
 
 
 
@@ -509,7 +516,8 @@ Refreshes the WaitingPopup control by resetting the pop-up panel position and co
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -560,7 +568,7 @@ $("#target").ejWaitingPopup('refresh');
 
 
 
-#### show<span class="signature">()</span>
+### show<span class="signature">()</span>
 
 
 
@@ -575,7 +583,8 @@ To show the waiting popup
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -625,7 +634,7 @@ $("#target").ejWaitingPopup("show");
 
 
 
-### Events
+## Events
 
 
 
@@ -634,7 +643,7 @@ $("#target").ejWaitingPopup("show");
 
 
 
-#### create
+### create
 
 
 
@@ -675,7 +684,8 @@ Fires after Create waitingpopup successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -703,7 +713,7 @@ Fires after Create waitingpopup successfully
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -744,7 +754,8 @@ Fires after Destroy waitingpopup successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html ReportViewer control.
+# Custom Design for Html ReportViewer control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html ReportViewer control.
 
 
 
-#### $(element).ejReportViewer<span class="signature">()</span>
+## $(element).ejReportViewer<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html ReportViewer control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
@@ -46,7 +47,7 @@ $('#reportviewer').ejReportViewer();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -125,7 +126,7 @@ $('#reportviewer').ejReportViewer();
 
 
 
-### Members
+## Members
 
 
 
@@ -134,7 +135,7 @@ $('#reportviewer').ejReportViewer();
 
 
 
-#### dataSources<span class="type-signature type array">array</span>
+### dataSources<span class="type-signature type array">array</span>
 
 
 
@@ -165,7 +166,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -186,7 +188,7 @@ Default Value:
 
 
 
-#### dataSources.name<span class="type-signature type string">string</span>
+### dataSources.name<span class="type-signature type string">string</span>
 
 
 
@@ -217,7 +219,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -237,7 +240,7 @@ Default Value:
 
 
 
-#### dataSources.values<span class="type-signature type object">object</span>
+### dataSources.values<span class="type-signature type object">object</span>
 
 
 
@@ -268,7 +271,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -288,7 +292,7 @@ Default Value:
 
 
 
-#### exportSettings<span class="type-signature type object">object</span>
+### exportSettings<span class="type-signature type object">object</span>
 
 
 
@@ -309,7 +313,7 @@ Specifies the export settings.
 
 
 
-#### exportSettings.excelFormat<span class="type-signature type enum">enum</span>
+### exportSettings.excelFormat<span class="type-signature type enum">enum</span>
 
 
 
@@ -340,7 +344,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -358,7 +363,7 @@ Default Value:
 
 
 
-#### exportSettings.exportOptions<span class="type-signature type enum">enum</span>
+### exportSettings.exportOptions<span class="type-signature type enum">enum</span>
 
 
 
@@ -389,7 +394,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -407,7 +413,7 @@ Default Value:
 
 
 
-#### exportSettings.wordFormat<span class="type-signature type enum">enum</span>
+### exportSettings.wordFormat<span class="type-signature type enum">enum</span>
 
 
 
@@ -438,7 +444,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -456,7 +463,7 @@ Default Value:
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -487,7 +494,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -505,7 +513,7 @@ Default Value:
 
 
 
-#### pageSettings<span class="type-signature type object">object</span>
+### pageSettings<span class="type-signature type object">object</span>
 
 
 
@@ -526,7 +534,7 @@ Specifies the page settings.
 
 
 
-#### pageSettings.orientation<span class="type-signature type enum">enum</span>
+### pageSettings.orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -557,7 +565,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -575,7 +584,7 @@ Default Value:
 
 
 
-#### pageSettings.paperSize<span class="type-signature type enum">enum</span>
+### pageSettings.paperSize<span class="type-signature type enum">enum</span>
 
 
 
@@ -606,7 +615,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -624,7 +634,7 @@ Default Value:
 
 
 
-#### parameters<span class="type-signature type array">array</span>
+### parameters<span class="type-signature type array">array</span>
 
 
 
@@ -655,7 +665,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -676,7 +687,7 @@ Default Value:
 
 
 
-#### parameters.labels<span class="type-signature type array">array</span>
+### parameters.labels<span class="type-signature type array">array</span>
 
 
 
@@ -707,7 +718,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -727,7 +739,7 @@ Default Value:
 
 
 
-#### parameters.name<span class="type-signature type string">string</span>
+### parameters.name<span class="type-signature type string">string</span>
 
 
 
@@ -758,7 +770,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -778,7 +791,7 @@ Default Value:
 
 
 
-#### parameters.nullable<span class="type-signature type boolean">boolean</span>
+### parameters.nullable<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -809,7 +822,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -829,7 +843,7 @@ Default Value:
 
 
 
-#### parameters.prompt<span class="type-signature type string">string</span>
+### parameters.prompt<span class="type-signature type string">string</span>
 
 
 
@@ -860,7 +874,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -880,7 +895,7 @@ Default Value:
 
 
 
-#### parameters.values<span class="type-signature type array">array</span>
+### parameters.values<span class="type-signature type array">array</span>
 
 
 
@@ -911,7 +926,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -931,7 +947,7 @@ Default Value:
 
 
 
-#### printMode<span class="type-signature type boolean">boolean</span>
+### printMode<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -962,7 +978,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -980,7 +997,7 @@ Default Value:
 
 
 
-#### processingMode<span class="type-signature type enum">enum</span>
+### processingMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -1011,7 +1028,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1026,7 +1044,7 @@ Default Value:
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -1057,7 +1075,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1072,7 +1091,7 @@ Default Value:
 
 
 
-#### reportPath<span class="type-signature type string">string</span>
+### reportPath<span class="type-signature type string">string</span>
 
 
 
@@ -1103,7 +1122,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -1117,7 +1137,7 @@ Default Value:
 
 
 
-#### reportServerUrl<span class="type-signature type string">string</span>
+### reportServerUrl<span class="type-signature type string">string</span>
 
 
 
@@ -1148,7 +1168,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1163,7 +1184,7 @@ Default Value:
 
 
 
-#### reportServiceUrl<span class="type-signature type string">string</span>
+### reportServiceUrl<span class="type-signature type string">string</span>
 
 
 
@@ -1194,7 +1215,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
@@ -1208,7 +1230,7 @@ Default Value:
 
 
 
-#### toolbarSettings<span class="type-signature type object">object</span>
+### toolbarSettings<span class="type-signature type object">object</span>
 
 
 
@@ -1229,7 +1251,7 @@ Specifies the toolbar settings.
 
 
 
-#### toolbarSettings.click<span class="type-signature type string">string</span>
+### toolbarSettings.click<span class="type-signature type string">string</span>
 
 
 
@@ -1260,7 +1282,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1278,7 +1301,7 @@ Default Value:
 
 
 
-#### toolbarSettings.items<span class="type-signature type enum">enum</span>
+### toolbarSettings.items<span class="type-signature type enum">enum</span>
 
 
 
@@ -1309,7 +1332,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1327,7 +1351,7 @@ Default Value:
 
 
 
-#### toolbarSettings.showToolbar<span class="type-signature type boolean">boolean</span>
+### toolbarSettings.showToolbar<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1358,7 +1382,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1376,7 +1401,7 @@ Default Value:
 
 
 
-#### toolbarSettings.showTooltip<span class="type-signature type boolean">boolean</span>
+### toolbarSettings.showTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1407,7 +1432,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1425,7 +1451,7 @@ Default Value:
 
 
 
-#### toolbarSettings.templateId<span class="type-signature type string">string</span>
+### toolbarSettings.templateId<span class="type-signature type string">string</span>
 
 
 
@@ -1456,7 +1482,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1474,7 +1501,7 @@ Default Value:
 
 
 
-#### zoomFactor<span class="type-signature type number">number</span>
+### zoomFactor<span class="type-signature type number">number</span>
 
 
 
@@ -1505,7 +1532,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1518,7 +1546,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1527,7 +1555,7 @@ Default Value:
 
 
 
-#### exportReport<span class="signature">()</span>
+### exportReport<span class="signature">()</span>
 
 
 
@@ -1542,7 +1570,8 @@ Export the report to the specified format.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1559,7 +1588,7 @@ reportviewerObj.exportReport(); //Exports the reports
 
 
 
-#### fitToPage<span class="signature">()</span>
+### fitToPage<span class="signature">()</span>
 
 
 
@@ -1574,7 +1603,8 @@ Fit the report page to the container.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1591,7 +1621,7 @@ reportviewerObj.fitToPage(); // To fit the report page.
 
 
 
-#### fitToPageHeight<span class="signature">()</span>
+### fitToPageHeight<span class="signature">()</span>
 
 
 
@@ -1606,7 +1636,8 @@ Fit the report page height to the container.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1623,7 +1654,7 @@ reportviewerObj.fitToPageHeight(); // To fit the report page height.
 
 
 
-#### fitToPageWidth<span class="signature">()</span>
+### fitToPageWidth<span class="signature">()</span>
 
 
 
@@ -1638,7 +1669,8 @@ Fit the report page width to the container.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1655,7 +1687,7 @@ reportviewerObj.fitToPageWidth(); // To fit the report page width.
 
 
 
-#### getDataSetNames<span class="signature">()</span>
+### getDataSetNames<span class="signature">()</span>
 
 
 
@@ -1670,7 +1702,8 @@ Get the available datasets name of the rdlc report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1687,7 +1720,7 @@ reportviewerObj.getDataSetNames(); // To get the dataset names.
 
 
 
-#### getParameters<span class="signature">()</span>
+### getParameters<span class="signature">()</span>
 
 
 
@@ -1702,7 +1735,8 @@ Get the available parameters of the report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1719,7 +1753,7 @@ reportviewerObj.getParameters(); // To get the parameters.
 
 
 
-#### gotoFirstPage<span class="signature">()</span>
+### gotoFirstPage<span class="signature">()</span>
 
 
 
@@ -1734,7 +1768,8 @@ Navigate to first page of report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1751,7 +1786,7 @@ reportviewerObj.gotoFirstPage(); // To navigate to first page
 
 
 
-#### gotoLastPage<span class="signature">()</span>
+### gotoLastPage<span class="signature">()</span>
 
 
 
@@ -1766,7 +1801,8 @@ Navigate to last page of the report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1783,7 +1819,7 @@ reportviewerObj.gotoLastPage(); // Navigate to the last page
 
 
 
-#### gotoNextPage<span class="signature">()</span>
+### gotoNextPage<span class="signature">()</span>
 
 
 
@@ -1798,7 +1834,8 @@ Navigate to next page from the current page.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1815,7 +1852,7 @@ reportviewerObj.gotoNextPage(); //To navigate to the next page
 
 
 
-#### gotoPageIndex<span class="signature">()</span>
+### gotoPageIndex<span class="signature">()</span>
 
 
 
@@ -1830,7 +1867,8 @@ Go to specific page index of the report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1847,7 +1885,7 @@ reportviewerObj.gotoPageIndex(5); // To navigate the specific page
 
 
 
-#### gotoPreviousPage<span class="signature">()</span>
+### gotoPreviousPage<span class="signature">()</span>
 
 
 
@@ -1862,7 +1900,8 @@ Navigate to previous page from the current page.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1879,7 +1918,7 @@ reportviewerObj.gotoPreviousPage(); // To navigate to the previous page
 
 
 
-#### print<span class="signature">()</span>
+### print<span class="signature">()</span>
 
 
 
@@ -1894,7 +1933,8 @@ Print the report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1911,7 +1951,7 @@ reportviewerObj.print(); //To perform print operation.
 
 
 
-#### printLayout<span class="signature">()</span>
+### printLayout<span class="signature">()</span>
 
 
 
@@ -1926,7 +1966,8 @@ Apply print layout to the report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1943,7 +1984,7 @@ reportviewerObj.printLayout(); //Changes between print layout and normal modes.
 
 
 
-#### refresh<span class="signature">()</span>
+### refresh<span class="signature">()</span>
 
 
 
@@ -1958,7 +1999,8 @@ Refresh the report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1973,7 +2015,7 @@ reportviewerObj.refresh(); // To refresh the report.
 
 
 
-### Events
+## Events
 
 
 
@@ -1982,7 +2024,7 @@ reportviewerObj.refresh(); // To refresh the report.
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -2040,7 +2082,8 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2059,7 +2102,7 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 
 
 
-#### drillThrough
+### drillThrough
 
 
 
@@ -2122,7 +2165,8 @@ Fires during drill through action done in report.If you want to perform any oper
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2141,7 +2185,7 @@ Fires during drill through action done in report.If you want to perform any oper
 
 
 
-#### renderingBegin
+### renderingBegin
 
 
 
@@ -2199,7 +2243,8 @@ Fires before report rendering is completed.If you want to perform any operation 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2220,7 +2265,7 @@ Fires before report rendering is completed.If you want to perform any operation 
 
 
 
-#### renderingComplete
+### renderingComplete
 
 
 
@@ -2288,7 +2333,8 @@ Fires after report rendering completed.If you want to perform any operation afte
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2309,7 +2355,7 @@ Fires after report rendering completed.If you want to perform any operation afte
 
 
 
-#### reportError
+### reportError
 
 
 
@@ -2372,7 +2418,8 @@ Fires when any error occurred while rendering the report.If you want to perform 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2391,7 +2438,7 @@ Fires when any error occurred while rendering the report.If you want to perform 
 
 
 
-#### reportLoaded
+### reportLoaded
 
 
 
@@ -2449,7 +2496,8 @@ Fires when the report is loaded.If you want to perform any operation after the s
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2469,7 +2517,7 @@ Fires when the report is loaded.If you want to perform any operation after the s
 
 
 
-#### viewReportClick
+### viewReportClick
 
 
 
@@ -2532,7 +2580,8 @@ Fires when click the View Report Button.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

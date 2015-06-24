@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Gantt control.
+# Custom Design for Html Gantt control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Gantt control.
 
 
 
-#### $(element).ejGantt<span class="signature">()</span>
+## $(element).ejGantt<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Gantt control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $('#gantt').ejGantt();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -69,7 +70,7 @@ $('#gantt').ejGantt();
 
 
 
-### Members
+## Members
 
 
 
@@ -78,7 +79,7 @@ $('#gantt').ejGantt();
 
 
 
-#### addDialogFields<span class="type-signature type array">Array</span>
+### addDialogFields<span class="type-signature type array">Array</span>
 
 
 
@@ -109,7 +110,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -127,7 +129,7 @@ Default Value:
 
 
 
-#### allowColumnResize<span class="type-signature type boolean">boolean</span>
+### allowColumnResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -158,7 +160,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -173,7 +176,7 @@ Default Value:
 
 
 
-#### allowGanttChartEditing<span class="type-signature type boolean">boolean</span>
+### allowGanttChartEditing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -204,7 +207,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -222,7 +226,7 @@ Default Value:
 
 
 
-#### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -253,7 +257,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -268,7 +273,7 @@ Default Value:
 
 
 
-#### allowMultiSorting<span class="type-signature type boolean">boolean</span>
+### allowMultiSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -299,7 +304,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -314,7 +320,7 @@ Default Value:
 
 
 
-#### allowSelection<span class="type-signature type boolean">boolean</span>
+### allowSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -345,7 +351,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -360,7 +367,7 @@ Default Value:
 
 
 
-#### allowSorting<span class="type-signature type boolean">boolean</span>
+### allowSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -391,7 +398,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -406,7 +414,7 @@ Default Value:
 
 
 
-#### baselineColor<span class="type-signature type string">string</span>
+### baselineColor<span class="type-signature type string">string</span>
 
 
 
@@ -437,7 +445,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -455,7 +464,7 @@ Default Value:
 
 
 
-#### baselineEndDateMapping<span class="type-signature type string">string</span>
+### baselineEndDateMapping<span class="type-signature type string">string</span>
 
 
 
@@ -486,7 +495,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -501,7 +511,7 @@ Default Value:
 
 
 
-#### baselineStartDateMapping<span class="type-signature type string">string</span>
+### baselineStartDateMapping<span class="type-signature type string">string</span>
 
 
 
@@ -532,7 +542,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -547,7 +558,7 @@ Default Value:
 
 
 
-#### childMapping<span class="type-signature type string">string</span>
+### childMapping<span class="type-signature type string">string</span>
 
 
 
@@ -578,7 +589,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -593,7 +605,7 @@ Default Value:
 
 
 
-#### connectorLineBackground<span class="type-signature type string">string</span>
+### connectorLineBackground<span class="type-signature type string">string</span>
 
 
 
@@ -624,7 +636,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -640,7 +653,7 @@ Default Value:
 
 
 
-#### connectorlineWidth<span class="type-signature type number">number</span>
+### connectorlineWidth<span class="type-signature type number">number</span>
 
 
 
@@ -671,7 +684,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -687,7 +701,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -718,7 +732,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -733,7 +748,7 @@ Default Value:
 
 
 
-#### dataSource<span class="type-signature type array">array</span>
+### dataSource<span class="type-signature type array">array</span>
 
 
 
@@ -764,7 +779,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -782,7 +798,7 @@ Default Value:
 
 
 
-#### dateFormat<span class="type-signature type string">string</span>
+### dateFormat<span class="type-signature type string">string</span>
 
 
 
@@ -813,7 +829,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -831,7 +848,7 @@ Default Value:
 
 
 
-#### durationMapping<span class="type-signature type string">string</span>
+### durationMapping<span class="type-signature type string">string</span>
 
 
 
@@ -862,7 +879,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -877,7 +895,7 @@ Default Value:
 
 
 
-#### durationUnit<span class="type-signature type enum">enum</span>
+### durationUnit<span class="type-signature type enum">enum</span>
 
 
 
@@ -908,7 +926,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -924,7 +943,7 @@ Default Value:
 
 
 
-#### editDialogFields<span class="type-signature type array">Array</span>
+### editDialogFields<span class="type-signature type array">Array</span>
 
 
 
@@ -955,7 +974,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -973,7 +993,7 @@ Default Value:
 
 
 
-#### editSettings<span class="type-signature type object">object</span>
+### editSettings<span class="type-signature type object">object</span>
 
 
 
@@ -994,7 +1014,7 @@ Specifies the editSettings options in gantt.
 
 
 
-#### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
+### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1025,7 +1045,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1040,7 +1061,7 @@ Default Value:
 
 
 
-#### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
+### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1071,7 +1092,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1086,7 +1108,7 @@ Default Value:
 
 
 
-#### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
+### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1117,7 +1139,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1132,7 +1155,7 @@ Default Value:
 
 
 
-#### editSettings.editMode<span class="type-signature type string">string</span>
+### editSettings.editMode<span class="type-signature type string">string</span>
 
 
 
@@ -1163,7 +1186,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1178,7 +1202,7 @@ Default Value:
 
 
 
-#### enableAltRow<span class="type-signature type boolean">boolean</span>
+### enableAltRow<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1209,7 +1233,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1224,7 +1249,7 @@ Default Value:
 
 
 
-#### enableCollapseAll<span class="type-signature type boolean">boolean</span>
+### enableCollapseAll<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1255,7 +1280,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1273,7 +1299,7 @@ Default Value:
 
 
 
-#### enableContextMenu<span class="type-signature type boolean">boolean</span>
+### enableContextMenu<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1304,7 +1330,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1322,7 +1349,7 @@ Default Value:
 
 
 
-#### enableProgressBarResizing<span class="type-signature type boolean">boolean</span>
+### enableProgressBarResizing<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1353,7 +1380,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1368,7 +1396,7 @@ Default Value:
 
 
 
-#### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1399,7 +1427,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1417,7 +1446,7 @@ Default Value:
 
 
 
-#### enableTaskbarDragTooltip<span class="type-signature type boolean">boolean</span>
+### enableTaskbarDragTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1448,7 +1477,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1464,7 +1494,7 @@ Default Value:
 
 
 
-#### enableTaskbarTooltip<span class="type-signature type boolean">boolean</span>
+### enableTaskbarTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1495,7 +1525,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1510,7 +1541,7 @@ Default Value:
 
 
 
-#### enableVirtualization<span class="type-signature type boolean">boolean</span>
+### enableVirtualization<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1541,7 +1572,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1556,7 +1588,7 @@ Default Value:
 
 
 
-#### endDateMapping<span class="type-signature type string">string</span>
+### endDateMapping<span class="type-signature type string">string</span>
 
 
 
@@ -1587,7 +1619,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1602,7 +1635,7 @@ Default Value:
 
 
 
-#### highlightWeekends<span class="type-signature type boolean">boolean</span>
+### highlightWeekends<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1633,7 +1666,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1648,7 +1682,7 @@ Default Value:
 
 
 
-#### holidays<span class="type-signature type array">array</span>
+### holidays<span class="type-signature type array">array</span>
 
 
 
@@ -1679,7 +1713,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1697,7 +1732,7 @@ Default Value:
 
 
 
-#### includeWeekend<span class="type-signature type boolean">boolean</span>
+### includeWeekend<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1728,7 +1763,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1743,7 +1779,7 @@ Default Value:
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -1774,7 +1810,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1789,7 +1826,7 @@ Default Value:
 
 
 
-#### milestoneMapping<span class="type-signature type string">string</span>
+### milestoneMapping<span class="type-signature type string">string</span>
 
 
 
@@ -1820,7 +1857,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1835,7 +1873,7 @@ Default Value:
 
 
 
-#### parentProgressbarBackground<span class="type-signature type string">string</span>
+### parentProgressbarBackground<span class="type-signature type string">string</span>
 
 
 
@@ -1866,7 +1904,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1882,7 +1921,7 @@ Default Value:
 
 
 
-#### parentTaskbarBackground<span class="type-signature type string">string</span>
+### parentTaskbarBackground<span class="type-signature type string">string</span>
 
 
 
@@ -1913,7 +1952,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1929,7 +1969,7 @@ Default Value:
 
 
 
-#### parentTaskIdMapping<span class="type-signature type string">string</span>
+### parentTaskIdMapping<span class="type-signature type string">string</span>
 
 
 
@@ -1960,7 +2000,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1975,7 +2016,7 @@ Default Value:
 
 
 
-#### predecessorMapping<span class="type-signature type string">string</span>
+### predecessorMapping<span class="type-signature type string">string</span>
 
 
 
@@ -2006,7 +2047,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2021,7 +2063,7 @@ Default Value:
 
 
 
-#### progressbarBackground<span class="type-signature type string">string</span>
+### progressbarBackground<span class="type-signature type string">string</span>
 
 
 
@@ -2052,7 +2094,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2068,7 +2111,7 @@ Default Value:
 
 
 
-#### progressbarHeight<span class="type-signature type number">number</span>
+### progressbarHeight<span class="type-signature type number">number</span>
 
 
 
@@ -2099,7 +2142,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2115,7 +2159,7 @@ Default Value:
 
 
 
-#### progressbarTooltipTemplate<span class="type-signature type string">string</span>
+### progressbarTooltipTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -2146,7 +2190,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2164,7 +2209,7 @@ Default Value:
 
 
 
-#### progressbarTooltipTemplateId<span class="type-signature type string">string</span>
+### progressbarTooltipTemplateId<span class="type-signature type string">string</span>
 
 
 
@@ -2195,7 +2240,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2213,7 +2259,7 @@ Default Value:
 
 
 
-#### progressMapping<span class="type-signature type string">string</span>
+### progressMapping<span class="type-signature type string">string</span>
 
 
 
@@ -2244,7 +2290,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2259,7 +2306,7 @@ Default Value:
 
 
 
-#### query<span class="type-signature type object">object</span>
+### query<span class="type-signature type object">object</span>
 
 
 
@@ -2290,7 +2337,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="gantt"&gt;&lt;/div&gt; 
@@ -2307,7 +2355,7 @@ Default Value:
 
 
 
-#### renderBaseline<span class="type-signature type boolean">boolean</span>
+### renderBaseline<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2338,7 +2386,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2356,7 +2405,7 @@ Default Value:
 
 
 
-#### resourceIdMapping<span class="type-signature type string">string</span>
+### resourceIdMapping<span class="type-signature type string">string</span>
 
 
 
@@ -2387,7 +2436,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2405,7 +2455,7 @@ Default Value:
 
 
 
-#### resourceInfoMapping<span class="type-signature type string">string</span>
+### resourceInfoMapping<span class="type-signature type string">string</span>
 
 
 
@@ -2436,7 +2486,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2451,7 +2502,7 @@ Default Value:
 
 
 
-#### resourceNameMapping<span class="type-signature type string">string</span>
+### resourceNameMapping<span class="type-signature type string">string</span>
 
 
 
@@ -2482,7 +2533,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2500,7 +2552,7 @@ Default Value:
 
 
 
-#### resources<span class="type-signature type array">array</span>
+### resources<span class="type-signature type array">array</span>
 
 
 
@@ -2531,7 +2583,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2549,7 +2602,7 @@ Default Value:
 
 
 
-#### roundOffDayworkingTime<span class="type-signature type boolean">boolean</span>
+### roundOffDayworkingTime<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2580,7 +2633,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2596,7 +2650,7 @@ Default Value:
 
 
 
-#### rowHeight<span class="type-signature type number">number</span>
+### rowHeight<span class="type-signature type number">number</span>
 
 
 
@@ -2627,7 +2681,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2644,7 +2699,7 @@ Default Value:
 
 
 
-#### scheduleEndDate<span class="type-signature type string">string</span>
+### scheduleEndDate<span class="type-signature type string">string</span>
 
 
 
@@ -2675,7 +2730,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2693,7 +2749,7 @@ Default Value:
 
 
 
-#### scheduleHeaderSettings<span class="type-signature type object">object</span>
+### scheduleHeaderSettings<span class="type-signature type object">object</span>
 
 
 
@@ -2714,7 +2770,7 @@ Specifies the options for customizing schedule header.
 
 
 
-#### scheduleHeaderSettings.dayHeaderFormat<span class="type-signature type string">string</span>
+### scheduleHeaderSettings.dayHeaderFormat<span class="type-signature type string">string</span>
 
 
 
@@ -2745,7 +2801,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2762,7 +2819,7 @@ Default Value:
 
 
 
-#### scheduleHeaderSettings.hourHeaderFormat<span class="type-signature type string">string</span>
+### scheduleHeaderSettings.hourHeaderFormat<span class="type-signature type string">string</span>
 
 
 
@@ -2793,7 +2850,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2810,7 +2868,7 @@ Default Value:
 
 
 
-#### scheduleHeaderSettings.minutesPerInterval<span class="type-signature type enum">enum</span>
+### scheduleHeaderSettings.minutesPerInterval<span class="type-signature type enum">enum</span>
 
 
 
@@ -2841,7 +2899,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2857,7 +2916,7 @@ Default Value:
 
 
 
-#### scheduleHeaderSettings.monthHeaderFormat<span class="type-signature type string">string</span>
+### scheduleHeaderSettings.monthHeaderFormat<span class="type-signature type string">string</span>
 
 
 
@@ -2888,7 +2947,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2905,7 +2965,7 @@ Default Value:
 
 
 
-#### scheduleHeaderSettings.scheduleHeaderType<span class="type-signature type enum">enum</span>
+### scheduleHeaderSettings.scheduleHeaderType<span class="type-signature type enum">enum</span>
 
 
 
@@ -2936,7 +2996,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2953,7 +3014,7 @@ Default Value:
 
 
 
-#### scheduleHeaderSettings.weekendBackground<span class="type-signature type string">string</span>
+### scheduleHeaderSettings.weekendBackground<span class="type-signature type string">string</span>
 
 
 
@@ -2984,7 +3045,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3000,7 +3062,7 @@ Default Value:
 
 
 
-#### scheduleHeaderSettings.weekHeaderFormat<span class="type-signature type string">string</span>
+### scheduleHeaderSettings.weekHeaderFormat<span class="type-signature type string">string</span>
 
 
 
@@ -3031,7 +3093,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3048,7 +3111,7 @@ Default Value:
 
 
 
-#### scheduleHeaderSettings.yearHeaderFormat<span class="type-signature type string">string</span>
+### scheduleHeaderSettings.yearHeaderFormat<span class="type-signature type string">string</span>
 
 
 
@@ -3079,7 +3142,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3096,7 +3160,7 @@ Default Value:
 
 
 
-#### scheduleStartDate<span class="type-signature type string">string</span>
+### scheduleStartDate<span class="type-signature type string">string</span>
 
 
 
@@ -3127,7 +3191,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3145,7 +3210,7 @@ Default Value:
 
 
 
-#### selectedItem<span class="type-signature type number">number</span>
+### selectedItem<span class="type-signature type number">number</span>
 
 
 
@@ -3176,7 +3241,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3194,7 +3260,7 @@ Default Value:
 
 
 
-#### selectedRowIndex<span class="type-signature type number">number</span>
+### selectedRowIndex<span class="type-signature type number">number</span>
 
 
 
@@ -3225,7 +3291,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3243,7 +3310,7 @@ Default Value:
 
 
 
-#### showColumnChooser<span class="type-signature type boolean">boolean</span>
+### showColumnChooser<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3274,7 +3341,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3289,7 +3357,7 @@ Default Value:
 
 
 
-#### showGridCellTooltip<span class="type-signature type boolean">boolean</span>
+### showGridCellTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3320,7 +3388,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3336,7 +3405,7 @@ Default Value:
 
 
 
-#### showGridExpandCellTooltip<span class="type-signature type boolean">boolean</span>
+### showGridExpandCellTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3367,7 +3436,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3383,7 +3453,7 @@ Default Value:
 
 
 
-#### showProgressStatus<span class="type-signature type boolean">boolean</span>
+### showProgressStatus<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3414,7 +3484,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3430,7 +3501,7 @@ Default Value:
 
 
 
-#### showResourceNames<span class="type-signature type boolean">boolean</span>
+### showResourceNames<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3461,7 +3532,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3477,7 +3549,7 @@ Default Value:
 
 
 
-#### showTaskNames<span class="type-signature type boolean">boolean</span>
+### showTaskNames<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3508,7 +3580,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3524,7 +3597,7 @@ Default Value:
 
 
 
-#### sizeSettings<span class="type-signature type object">object</span>
+### sizeSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3545,7 +3618,7 @@ Specifies the size option of gantt control.
 
 
 
-#### sizeSettings.height<span class="type-signature type string">string</span>
+### sizeSettings.height<span class="type-signature type string">string</span>
 
 
 
@@ -3576,7 +3649,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3594,7 +3668,7 @@ Default Value:
 
 
 
-#### sizeSettings.width<span class="type-signature type string">string</span>
+### sizeSettings.width<span class="type-signature type string">string</span>
 
 
 
@@ -3625,7 +3699,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3643,7 +3718,7 @@ Default Value:
 
 
 
-#### sortSettings<span class="type-signature type object">object</span>
+### sortSettings<span class="type-signature type object">object</span>
 
 
 
@@ -3664,7 +3739,7 @@ Specifies the sorting options for gantt.
 
 
 
-#### sortSettings.sortedColumns<span class="type-signature type array">array</span>
+### sortSettings.sortedColumns<span class="type-signature type array">array</span>
 
 
 
@@ -3695,7 +3770,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3710,7 +3786,7 @@ Default Value:
 
 
 
-#### splitterPosition<span class="type-signature type string">string</span>
+### splitterPosition<span class="type-signature type string">string</span>
 
 
 
@@ -3741,7 +3817,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3756,7 +3833,7 @@ Default Value:
 
 
 
-#### startDateMapping<span class="type-signature type string">string</span>
+### startDateMapping<span class="type-signature type string">string</span>
 
 
 
@@ -3787,7 +3864,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3802,7 +3880,7 @@ Default Value:
 
 
 
-#### stripLines<span class="type-signature type string">string</span>
+### stripLines<span class="type-signature type string">string</span>
 
 
 
@@ -3833,7 +3911,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3856,7 +3935,7 @@ Default Value:
 
 
 
-#### taskbarBackground<span class="type-signature type string">string</span>
+### taskbarBackground<span class="type-signature type string">string</span>
 
 
 
@@ -3887,7 +3966,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3903,7 +3983,7 @@ Default Value:
 
 
 
-#### taskbarEditingTooltipTemplate<span class="type-signature type string">string</span>
+### taskbarEditingTooltipTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -3934,7 +4014,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3952,7 +4033,7 @@ Default Value:
 
 
 
-#### taskbarEditingTooltipTemplateId<span class="type-signature type string">string</span>
+### taskbarEditingTooltipTemplateId<span class="type-signature type string">string</span>
 
 
 
@@ -3983,7 +4064,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4001,7 +4083,7 @@ Default Value:
 
 
 
-#### taskbarTooltipTemplate<span class="type-signature type string">string</span>
+### taskbarTooltipTemplate<span class="type-signature type string">string</span>
 
 
 
@@ -4032,7 +4114,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4050,7 +4133,7 @@ Default Value:
 
 
 
-#### taskbarTooltipTemplateId<span class="type-signature type string">string</span>
+### taskbarTooltipTemplateId<span class="type-signature type string">string</span>
 
 
 
@@ -4081,7 +4164,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4099,7 +4183,7 @@ Default Value:
 
 
 
-#### taskIdMapping<span class="type-signature type string">string</span>
+### taskIdMapping<span class="type-signature type string">string</span>
 
 
 
@@ -4130,7 +4214,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4145,7 +4230,7 @@ Default Value:
 
 
 
-#### taskNameMapping<span class="type-signature type string">string</span>
+### taskNameMapping<span class="type-signature type string">string</span>
 
 
 
@@ -4176,7 +4261,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4191,7 +4277,7 @@ Default Value:
 
 
 
-#### toolbarSettings<span class="type-signature type object">object</span>
+### toolbarSettings<span class="type-signature type object">object</span>
 
 
 
@@ -4212,7 +4298,7 @@ Specifies the toolbarSettings options.
 
 
 
-#### toolbarSettings.showToolBar<span class="type-signature type boolean">boolean</span>
+### toolbarSettings.showToolBar<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4243,7 +4329,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4258,7 +4345,7 @@ Default Value:
 
 
 
-#### toolbarSettings.toolbarItems<span class="type-signature type array">array</span>
+### toolbarSettings.toolbarItems<span class="type-signature type array">array</span>
 
 
 
@@ -4289,7 +4376,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4304,7 +4392,7 @@ Default Value:
 
 
 
-#### treeColumnIndex<span class="type-signature type number">number</span>
+### treeColumnIndex<span class="type-signature type number">number</span>
 
 
 
@@ -4335,7 +4423,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4353,7 +4442,7 @@ Default Value:
 
 
 
-#### weekendBackground<span class="type-signature type string">string</span>
+### weekendBackground<span class="type-signature type string">string</span>
 
 
 
@@ -4384,7 +4473,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4402,7 +4492,7 @@ Default Value:
 
 
 
-#### workingTimeScale<span class="type-signature type enum">enum</span>
+### workingTimeScale<span class="type-signature type enum">enum</span>
 
 
 
@@ -4433,7 +4523,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4448,7 +4539,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -4457,7 +4548,7 @@ Default Value:
 
 
 
-#### addRecord<span class="signature">()</span>
+### addRecord<span class="signature">()</span>
 
 
 
@@ -4472,7 +4563,8 @@ To add item in gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4501,7 +4593,7 @@ $("#gantt").ejGantt("addRecord",data);
 
 
 
-#### cancelEdit<span class="signature">()</span>
+### cancelEdit<span class="signature">()</span>
 
 
 
@@ -4516,7 +4608,8 @@ To cancel the edited state of an item in gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4543,7 +4636,7 @@ $("#gantt").ejGantt("cancelEdit");
 
 
 
-#### collapseAllItems<span class="signature">()</span>
+### collapseAllItems<span class="signature">()</span>
 
 
 
@@ -4558,7 +4651,8 @@ To collapse all the parent items in gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4585,7 +4679,7 @@ $("#gantt").ejGantt("collapseAllItems");
 
 
 
-#### deleteItem<span class="signature">()</span>
+### deleteItem<span class="signature">()</span>
 
 
 
@@ -4600,7 +4694,8 @@ To delete a selected item in gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4627,7 +4722,7 @@ $("#gantt").ejGantt("deleteItem");
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -4642,7 +4737,8 @@ destroy the gantt widget all events bound using this._on will be unbind automati
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4669,7 +4765,7 @@ $("#gantt").ejGantt("destroy");
 
 
 
-#### expandAllItems<span class="signature">()</span>
+### expandAllItems<span class="signature">()</span>
 
 
 
@@ -4684,7 +4780,8 @@ To Expand all the parent items in gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4711,7 +4808,7 @@ $("#gantt").ejGantt("expandAllItems");
 
 
 
-#### expandCollapseRecord<span class="signature">()</span>
+### expandCollapseRecord<span class="signature">()</span>
 
 
 
@@ -4726,7 +4823,8 @@ To expand and collapse an item in gantt using item's ID
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4753,7 +4851,7 @@ $("#gantt").ejGantt("expandCollapseRecord" , "23");
 
 
 
-#### hideColumn<span class="signature">(width)</span>
+### hideColumn<span class="signature">(width)</span>
 
 
 
@@ -4784,7 +4882,8 @@ To hide the column by using header text
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4802,7 +4901,7 @@ gantObj.ejGantt("hideColumn","Task Name");
 
 
 
-#### indentItem<span class="signature">()</span>
+### indentItem<span class="signature">()</span>
 
 
 
@@ -4817,7 +4916,8 @@ To indent a selected item in gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4844,7 +4944,7 @@ $("#gantt").ejGantt("indentItem");
 
 
 
-#### openAddDialog<span class="signature">()</span>
+### openAddDialog<span class="signature">()</span>
 
 
 
@@ -4859,7 +4959,8 @@ To Open the dialog to add new task to the gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4886,7 +4987,7 @@ $("#gantt").ejGantt("openAddDialog");
 
 
 
-#### openEditDialog<span class="signature">()</span>
+### openEditDialog<span class="signature">()</span>
 
 
 
@@ -4901,7 +5002,8 @@ To Open the dialog to edit existing task to the gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4928,7 +5030,7 @@ $("#gantt").ejGantt("openEditDialog");
 
 
 
-#### outdentItem<span class="signature">()</span>
+### outdentItem<span class="signature">()</span>
 
 
 
@@ -4943,7 +5045,8 @@ To outdent a selected item in gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4970,7 +5073,7 @@ $("#gantt").ejGantt("outdentItem");
 
 
 
-#### saveEdit<span class="signature">()</span>
+### saveEdit<span class="signature">()</span>
 
 
 
@@ -4985,7 +5088,8 @@ To save the edited state of an item in gantt
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5012,7 +5116,7 @@ $("#gantt").ejGantt("saveEdit");
 
 
 
-#### searchItem<span class="signature">()</span>
+### searchItem<span class="signature">()</span>
 
 
 
@@ -5027,7 +5131,8 @@ To search an item with search string provided at the run time
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5054,7 +5159,7 @@ $("#gantt").ejGantt("searchItem",$("#text").val());
 
 
 
-#### setSplitterPosition<span class="signature">(width)</span>
+### setSplitterPosition<span class="signature">(width)</span>
 
 
 
@@ -5085,7 +5190,8 @@ To set the grid width in gantt
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5103,7 +5209,7 @@ gantObj.ejGantt("setSplitterPosition","40%");
 
 
 
-#### showColumn<span class="signature">(width)</span>
+### showColumn<span class="signature">(width)</span>
 
 
 
@@ -5134,7 +5240,8 @@ To show the column by using header text
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5150,7 +5257,7 @@ gantObj.ejGantt("showColumn","Task Name");
 
 
 
-### Events
+## Events
 
 
 
@@ -5159,7 +5266,7 @@ gantObj.ejGantt("showColumn","Task Name");
 
 
 
-#### actionBegin
+### actionBegin
 
 
 
@@ -5422,7 +5529,8 @@ Triggered for every gantt action before its starts.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5439,7 +5547,7 @@ $("#gantt").ejGantt({
 
 
 
-#### actionComplete
+### actionComplete
 
 
 
@@ -5702,7 +5810,8 @@ Triggered for every gantt action success event.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5719,7 +5828,7 @@ $("#gantt").ejGantt({
 
 
 
-#### beginEdit
+### beginEdit
 
 
 
@@ -5787,7 +5896,8 @@ Triggered while enter the edit mode in the tree grid cell
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5804,7 +5914,7 @@ $("#gantt").ejGantt({
 
 
 
-#### collapsed
+### collapsed
 
 
 
@@ -5862,7 +5972,8 @@ Triggered after collapsed the gantt record
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5879,7 +5990,7 @@ $("#gantt").ejGantt({
 
 
 
-#### collapsing
+### collapsing
 
 
 
@@ -5937,7 +6048,8 @@ Triggered while collapsing the gantt record
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5954,7 +6066,7 @@ $("#gantt").ejGantt({
 
 
 
-#### contextMenuOpen
+### contextMenuOpen
 
 
 
@@ -6022,7 +6134,8 @@ Triggered while Context Menu is rendered in Gantt control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6039,7 +6152,7 @@ $("#gantt").ejGantt({
 
 
 
-#### endEdit
+### endEdit
 
 
 
@@ -6112,7 +6225,8 @@ Triggered after save the modified cellValue in gantt.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6129,7 +6243,7 @@ $("#gantt").ejGantt({
 
 
 
-#### expanded
+### expanded
 
 
 
@@ -6187,7 +6301,8 @@ Triggered after expand the record
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6204,7 +6319,7 @@ $("#gantt").ejGantt({
 
 
 
-#### expanding
+### expanding
 
 
 
@@ -6262,7 +6377,8 @@ Triggered while expanding the gantt record
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6279,7 +6395,7 @@ $("#gantt").ejGantt({
 
 
 
-#### load
+### load
 
 
 
@@ -6337,7 +6453,8 @@ Triggered while gantt is loaded
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6354,7 +6471,7 @@ $("#gantt").ejGantt({
 
 
 
-#### queryCellInfo
+### queryCellInfo
 
 
 
@@ -6422,7 +6539,8 @@ Triggered while rendering each cell in the tree grid
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6439,7 +6557,7 @@ $("#gantt").ejGantt({
 
 
 
-#### queryTaskbarInfo
+### queryTaskbarInfo
 
 
 
@@ -6502,7 +6620,8 @@ Triggered while rendering each taskbar in the gantt chart
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6519,7 +6638,7 @@ $("#gantt").ejGantt({
 
 
 
-#### rowDataBound
+### rowDataBound
 
 
 
@@ -6577,7 +6696,8 @@ Triggered while rendering each row
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6594,7 +6714,7 @@ $("#gantt").ejGantt({
 
 
 
-#### rowSelected
+### rowSelected
 
 
 
@@ -6657,7 +6777,8 @@ Triggered after the row is selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6674,7 +6795,7 @@ $("#gantt").ejGantt({
 
 
 
-#### rowSelecting
+### rowSelecting
 
 
 
@@ -6737,7 +6858,8 @@ Triggered before the row is going to be selected.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6754,7 +6876,7 @@ $("#gantt").ejGantt({
 
 
 
-#### taskbarEdited
+### taskbarEdited
 
 
 
@@ -6842,7 +6964,8 @@ Triggered after completing the editing operation in taskbar
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6859,7 +6982,7 @@ $("#gantt").ejGantt({
 
 
 
-#### taskbarEditing
+### taskbarEditing
 
 
 
@@ -6927,7 +7050,8 @@ Triggered while editing the gantt chart (dragging, resizing the taskbar )
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

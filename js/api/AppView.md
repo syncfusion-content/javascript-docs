@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Appview.
+# Custom Design for Html Appview.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Appview.
 
 
 
-#### $(element).AppView<span class="signature">()</span>
+## $(element).AppView<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Appview.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -43,7 +44,7 @@ Custom Design for Html Appview.
 
 
 
-### Requires
+## Requires
 
 
 
@@ -62,7 +63,7 @@ Custom Design for Html Appview.
 
 
 
-### Members
+## Members
 
 
 
@@ -71,7 +72,7 @@ Custom Design for Html Appview.
 
 
 
-#### addMetaTags<span class="type-signature type boolean">boolean</span>
+### addMetaTags<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -102,7 +103,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -117,7 +119,7 @@ Default Value:
 
 
 
-#### pageTransition<span class="type-signature type enum">enum</span>
+### pageTransition<span class="type-signature type enum">enum</span>
 
 
 
@@ -148,7 +150,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -163,7 +166,7 @@ Default Value:
 
 
 
-#### renderEJMControlsByDef<span class="type-signature type boolean">boolean</span>
+### renderEJMControlsByDef<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -194,7 +197,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -207,7 +211,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -216,7 +220,7 @@ Default Value:
 
 
 
-#### activeHistory<span class="signature">()</span>
+### activeHistory<span class="signature">()</span>
 
 
 
@@ -231,7 +235,8 @@ To return the Current Page History
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -246,7 +251,7 @@ To return the Current Page History
 
 
 
-#### add<span class="signature">()</span>
+### add<span class="signature">()</span>
 
 
 
@@ -261,7 +266,8 @@ To Add the Page History
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -276,7 +282,7 @@ To Add the Page History
 
 
 
-#### clearForward<span class="signature">()</span>
+### clearForward<span class="signature">()</span>
 
 
 
@@ -291,7 +297,8 @@ To Clear the Forward History
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -306,7 +313,7 @@ To Clear the Forward History
 
 
 
-#### convertToRelativeUrl<span class="signature">()</span>
+### convertToRelativeUrl<span class="signature">()</span>
 
 
 
@@ -321,7 +328,8 @@ To convert absolute url to relative url
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -336,7 +344,7 @@ To convert absolute url to relative url
 
 
 
-#### createPage<span class="signature">()</span>
+### createPage<span class="signature">()</span>
 
 
 
@@ -351,7 +359,8 @@ To create a Appview Page
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -366,7 +375,7 @@ To create a Appview Page
 
 
 
-#### find<span class="signature">()</span>
+### find<span class="signature">()</span>
 
 
 
@@ -381,7 +390,8 @@ To find url in History
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -396,7 +406,7 @@ To find url in History
 
 
 
-#### getLocation<span class="signature">()</span>
+### getLocation<span class="signature">()</span>
 
 
 
@@ -411,7 +421,8 @@ To get the URL location of current page
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             
@@ -425,7 +436,7 @@ To get the URL location of current page
 
 
 
-#### hasProtocol<span class="signature">()</span>
+### hasProtocol<span class="signature">()</span>
 
 
 
@@ -440,7 +451,8 @@ To check url has protocol
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -455,7 +467,7 @@ To check url has protocol
 
 
 
-#### initPage<span class="signature">()</span>
+### initPage<span class="signature">()</span>
 
 
 
@@ -470,7 +482,8 @@ To Initalize the dynamically created appview
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -485,7 +498,7 @@ To Initalize the dynamically created appview
 
 
 
-#### lastHistory<span class="signature">()</span>
+### lastHistory<span class="signature">()</span>
 
 
 
@@ -500,7 +513,8 @@ To return the Last Page History
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -515,7 +529,7 @@ To return the Last Page History
 
 
 
-#### loadView<span class="signature">()</span>
+### loadView<span class="signature">()</span>
 
 
 
@@ -530,7 +544,8 @@ To load a specific view page
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -545,7 +560,7 @@ To load a specific view page
 
 
 
-#### makeUrlAbsolute<span class="signature">()</span>
+### makeUrlAbsolute<span class="signature">()</span>
 
 
 
@@ -560,7 +575,8 @@ To Get Compelete Url
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -575,7 +591,7 @@ To Get Compelete Url
 
 
 
-#### nextHistory<span class="signature">()</span>
+### nextHistory<span class="signature">()</span>
 
 
 
@@ -590,7 +606,8 @@ To return the Current Next History
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -605,7 +622,7 @@ To return the Current Next History
 
 
 
-#### prevHistory<span class="signature">()</span>
+### prevHistory<span class="signature">()</span>
 
 
 
@@ -620,7 +637,8 @@ To return the Current Previous History
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -635,7 +653,7 @@ To return the Current Previous History
 
 
 
-#### replace<span class="signature">()</span>
+### replace<span class="signature">()</span>
 
 
 
@@ -650,7 +668,8 @@ To Replace the Page History
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -665,7 +684,7 @@ To Replace the Page History
 
 
 
-#### setPageRenderMode<span class="signature">()</span>
+### setPageRenderMode<span class="signature">()</span>
 
 
 
@@ -680,7 +699,8 @@ To set page rendermode
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -695,7 +715,7 @@ To set page rendermode
 
 
 
-#### splitUrl<span class="signature">()</span>
+### splitUrl<span class="signature">()</span>
 
 
 
@@ -710,7 +730,8 @@ To Split URL
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -725,7 +746,7 @@ To Split URL
 
 
 
-#### transferPage<span class="signature">()</span>
+### transferPage<span class="signature">()</span>
 
 
 
@@ -740,7 +761,8 @@ To transfer one page to another page
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -762,7 +784,7 @@ To transfer one page to another page
 
 
 
-#### userAgent<span class="signature">()</span>
+### userAgent<span class="signature">()</span>
 
 
 
@@ -777,7 +799,8 @@ To get the userAgent Name
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>             

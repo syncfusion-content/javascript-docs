@@ -18,7 +18,7 @@ defined values to render symbolpalette
 
 
 
-#### $(element).ejSymbolPalette<span class="signature">()</span>
+## $(element).ejSymbolPalette<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ defined values to render symbolpalette
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -46,7 +47,7 @@ $("#symbolpalette").ejSymbolPalette();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -77,7 +78,7 @@ $("#symbolpalette").ejSymbolPalette();
 
 
 
-### Members
+## Members
 
 
 
@@ -86,7 +87,7 @@ $("#symbolpalette").ejSymbolPalette();
 
 
 
-#### allowDrag<span class="type-signature type boolean">Boolean</span>
+### allowDrag<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -117,7 +118,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -131,7 +133,7 @@ $("#symbolpalette").ejSymbolPalette({allowDrag: true});
 
 
 
-#### cssClass<span class="type-signature type string">String</span>
+### cssClass<span class="type-signature type string">String</span>
 
 
 
@@ -162,7 +164,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -176,7 +179,7 @@ $("#symbolpalette").ejSymbolPalette({cssClass: "e-symbolpalette"});
 
 
 
-#### diagramId<span class="type-signature type object">Object</span>
+### diagramId<span class="type-signature type object">Object</span>
 
 
 
@@ -207,7 +210,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -221,7 +225,7 @@ $("#symbolpalette").ejSymbolPalette({diagramId: "diagram"});
 
 
 
-#### headerHeight<span class="type-signature type number">Number</span>
+### headerHeight<span class="type-signature type number">Number</span>
 
 
 
@@ -252,7 +256,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -266,7 +271,7 @@ $("#symbolpalette").ejSymbolPalette({headerHeight: 30});
 
 
 
-#### height<span class="type-signature type number">Number</span>
+### height<span class="type-signature type number">Number</span>
 
 
 
@@ -297,7 +302,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -311,7 +317,7 @@ $("#symbolpalette").ejSymbolPalette({height:500});
 
 
 
-#### paletteItemHeight<span class="type-signature type number">Number</span>
+### paletteItemHeight<span class="type-signature type number">Number</span>
 
 
 
@@ -342,7 +348,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -356,7 +363,7 @@ $("#symbolpalette").ejSymbolPalette({paletteItemHeight: 50});
 
 
 
-#### paletteItemWidth<span class="type-signature type number">Number</span>
+### paletteItemWidth<span class="type-signature type number">Number</span>
 
 
 
@@ -387,7 +394,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -401,7 +409,7 @@ $("#symbolpalette").ejSymbolPalette({paletteItemWidth: 50});
 
 
 
-#### palettes<span class="type-signature type array">Array</span>
+### palettes<span class="type-signature type array">Array</span>
 
 
 
@@ -432,7 +440,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -446,7 +455,7 @@ $("#symbolpalette").ejSymbolPalette({palettes: palette});
 
 
 
-#### previewHeight<span class="type-signature type number">Number</span>
+### previewHeight<span class="type-signature type number">Number</span>
 
 
 
@@ -477,7 +486,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -491,7 +501,7 @@ $("#symbolpalette").ejSymbolPalette({previewHeight: 100});
 
 
 
-#### previewOffset<span class="type-signature type object">Object</span>
+### previewOffset<span class="type-signature type object">Object</span>
 
 
 
@@ -522,7 +532,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -536,7 +547,7 @@ $("#symbolpalette").ejSymbolPalette({previewOffset: {x: 102, y: 102 }});
 
 
 
-#### previewWidth<span class="type-signature type number">Number</span>
+### previewWidth<span class="type-signature type number">Number</span>
 
 
 
@@ -567,7 +578,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -581,7 +593,7 @@ $("#symbolpalette").ejSymbolPalette({previewWidth: 100});
 
 
 
-#### selectedPaletteName<span class="type-signature type number">Number</span>
+### selectedPaletteName<span class="type-signature type number">Number</span>
 
 
 
@@ -612,7 +624,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -626,7 +639,7 @@ $("#symbolpalette").ejSymbolPalette({selectedPaletteName: "paletteName"});
 
 
 
-#### showPaletteItemText<span class="type-signature type boolean">Boolean</span>
+### showPaletteItemText<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -657,7 +670,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -671,7 +685,7 @@ $("#symbolpalette").ejSymbolPalette({showPaletteItemText: true});
 
 
 
-#### width<span class="type-signature type number">Number</span>
+### width<span class="type-signature type number">Number</span>
 
 
 
@@ -702,7 +716,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
@@ -714,7 +729,7 @@ $("#symbolpalette").ejSymbolPalette({width:300});
 
 
 
-### Events
+## Events
 
 
 
@@ -723,7 +738,7 @@ $("#symbolpalette").ejSymbolPalette({width:300});
 
 
 
-#### selectionChanged
+### selectionChanged
 
 
 
@@ -776,7 +791,8 @@ Triggers When selection is changed
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>//  selectionChange event for diagram

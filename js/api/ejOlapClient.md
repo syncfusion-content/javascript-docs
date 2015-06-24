@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html OLAP Client control.
+# Custom Design for Html OLAP Client control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html OLAP Client control.
 
 
 
-#### $(element).ejOlapClient<span class="signature">()</span>
+## $(element).ejOlapClient<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html OLAP Client control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -47,7 +48,7 @@ $("#OlapClient").ejOlapClient(...);
 
 
 
-### Requires
+## Requires
 
 
 
@@ -123,7 +124,7 @@ $("#OlapClient").ejOlapClient(...);
 
 
 
-### Members
+## Members
 
 
 
@@ -132,7 +133,7 @@ $("#OlapClient").ejOlapClient(...);
 
 
 
-#### chartType<span class="type-signature type enum">enum</span>
+### chartType<span class="type-signature type enum">enum</span>
 
 
 
@@ -163,7 +164,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -185,7 +187,7 @@ $("#OlapClient").ejOlapClient({ chartType: ej.olap.OlapChart.ChartTypes.Spline }
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -216,7 +218,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -238,7 +241,7 @@ $("#OlapClient").ejOlapClient({ cssClass: "Olive" });</code>
 
 
 
-#### customObject<span class="type-signature type object">Object</span>
+### customObject<span class="type-signature type object">Object</span>
 
 
 
@@ -269,7 +272,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -291,7 +295,7 @@ $("#OlapClient").ejOlapClient({ customObject: {"MyObject": "Hi Syncfusion!!"} })
 
 
 
-#### displaySettings<span class="type-signature type object">object</span>
+### displaySettings<span class="type-signature type object">object</span>
 
 
 
@@ -322,7 +326,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -344,7 +349,7 @@ $("#OlapClient").ejOlapClient("option", "displaySettings", {mode: "chartandgrid"
 
 
 
-#### displaySettings.controlPlacement<span class="type-signature type enum">enum</span>
+### displaySettings.controlPlacement<span class="type-signature type enum">enum</span>
 
 
 
@@ -375,7 +380,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -397,7 +403,7 @@ $("#OlapClient").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.Olap
 
 
 
-#### displaySettings.defaultView<span class="type-signature type enum">enum</span>
+### displaySettings.defaultView<span class="type-signature type enum">enum</span>
 
 
 
@@ -428,7 +434,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -450,7 +457,7 @@ $("#OlapClient").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClien
 
 
 
-#### displaySettings.enableFullScreen<span class="type-signature type boolean">boolean</span>
+### displaySettings.enableFullScreen<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -481,7 +488,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -503,7 +511,7 @@ $("#OlapClient").ejOlapClient({ displaySettings.enableFullScreen: true });</code
 
 
 
-#### displaySettings.enableTogglePanel<span class="type-signature type boolean">boolean</span>
+### displaySettings.enableTogglePanel<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -534,7 +542,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -556,7 +565,7 @@ $("#OlapClient").ejOlapClient({ displaySettings.enableTogglePanel: true });</cod
 
 
 
-#### displaySettings.mode<span class="type-signature type enum">enum</span>
+### displaySettings.mode<span class="type-signature type enum">enum</span>
 
 
 
@@ -587,7 +596,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -609,7 +619,7 @@ $("#OlapClient").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.Disp
 
 
 
-#### enableMeasureGroups<span class="type-signature type boolean">boolean</span>
+### enableMeasureGroups<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -640,7 +650,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -662,7 +673,7 @@ $("#OlapClient").ejOlapClient({ enableMeasureGroups : true });</code>
 
 
 
-#### gridLayout<span class="type-signature type enum">enum</span>
+### gridLayout<span class="type-signature type enum">enum</span>
 
 
 
@@ -693,7 +704,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -715,7 +727,7 @@ $("#OlapClient").ejOlapClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });<
 
 
 
-#### isResponsive<span class="type-signature type boolean">Boolean</span>
+### isResponsive<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -746,7 +758,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -768,7 +781,7 @@ $("#OlapClient1").ejOlapClient({isResponsive: true});</code>
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -799,7 +812,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -821,7 +835,7 @@ $("#OlapClient").ejOlapClient({ locale: "en-US" });</code>
 
 
 
-#### serviceMethodSettings<span class="type-signature type object">object</span>
+### serviceMethodSettings<span class="type-signature type object">object</span>
 
 
 
@@ -852,7 +866,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -874,7 +889,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings",  {initialize: "
 
 
 
-#### serviceMethodSettings.cubeChanged<span class="type-signature type string">string</span>
+### serviceMethodSettings.cubeChanged<span class="type-signature type string">string</span>
 
 
 
@@ -905,7 +920,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -927,7 +943,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.cubeChanged","Cub
 
 
 
-#### serviceMethodSettings.fetchMemberTreeNodes<span class="type-signature type string">string</span>
+### serviceMethodSettings.fetchMemberTreeNodes<span class="type-signature type string">string</span>
 
 
 
@@ -958,7 +974,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -980,7 +997,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.fetchMemberTreeNo
 
 
 
-#### serviceMethodSettings.fetchReportList<span class="type-signature type string">string</span>
+### serviceMethodSettings.fetchReportList<span class="type-signature type string">string</span>
 
 
 
@@ -1011,7 +1028,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>                     
@@ -1033,7 +1051,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.fetchReportList",
 
 
 
-#### serviceMethodSettings.filterElement<span class="type-signature type string">string</span>
+### serviceMethodSettings.filterElement<span class="type-signature type string">string</span>
 
 
 
@@ -1064,7 +1082,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1086,7 +1105,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.filterElement", "
 
 
 
-#### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
+### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
 
 
 
@@ -1117,7 +1136,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1139,7 +1159,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.initialize", "Ini
 
 
 
-#### serviceMethodSettings.loadReport<span class="type-signature type string">string</span>
+### serviceMethodSettings.loadReport<span class="type-signature type string">string</span>
 
 
 
@@ -1170,7 +1190,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1192,7 +1213,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.loadReport", "Loa
 
 
 
-#### serviceMethodSettings.measureGroupChanged<span class="type-signature type string">string</span>
+### serviceMethodSettings.measureGroupChanged<span class="type-signature type string">string</span>
 
 
 
@@ -1223,7 +1244,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1245,7 +1267,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.measureGroupChang
 
 
 
-#### serviceMethodSettings.memberExpand<span class="type-signature type string">string</span>
+### serviceMethodSettings.memberExpand<span class="type-signature type string">string</span>
 
 
 
@@ -1276,7 +1298,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1298,7 +1321,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.memberExpand", "M
 
 
 
-#### serviceMethodSettings.nodeDropped<span class="type-signature type string">string</span>
+### serviceMethodSettings.nodeDropped<span class="type-signature type string">string</span>
 
 
 
@@ -1329,7 +1352,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1351,7 +1375,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.nodeDropped","Nod
 
 
 
-#### serviceMethodSettings.removeSplitButton<span class="type-signature type string">string</span>
+### serviceMethodSettings.removeSplitButton<span class="type-signature type string">string</span>
 
 
 
@@ -1382,7 +1406,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1404,7 +1429,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.removeSplitButton
 
 
 
-#### serviceMethodSettings.saveReport<span class="type-signature type string">string</span>
+### serviceMethodSettings.saveReport<span class="type-signature type string">string</span>
 
 
 
@@ -1435,7 +1460,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1457,7 +1483,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.saveReport", "Sav
 
 
 
-#### serviceMethodSettings.toolbarServices<span class="type-signature type string">string</span>
+### serviceMethodSettings.toolbarServices<span class="type-signature type string">string</span>
 
 
 
@@ -1488,7 +1514,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1510,7 +1537,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.toolbarServices",
 
 
 
-#### serviceMethodSettings.updateReport<span class="type-signature type string">string</span>
+### serviceMethodSettings.updateReport<span class="type-signature type string">string</span>
 
 
 
@@ -1541,7 +1568,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1563,7 +1591,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.updateReport", "U
 
 
 
-#### title<span class="type-signature type string">string</span>
+### title<span class="type-signature type string">string</span>
 
 
 
@@ -1594,7 +1622,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1616,7 +1645,7 @@ $("#OlapClient").ejOlapClient({ title: "Olap Browser" });</code>
 
 
 
-#### url<span class="type-signature type string">string</span>
+### url<span class="type-signature type string">string</span>
 
 
 
@@ -1647,7 +1676,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1667,7 +1697,7 @@ $("#OlapClient").ejOlapClient({ url: "/wcf/OlapClientService.svc" });</code>
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1676,7 +1706,7 @@ $("#OlapClient").ejOlapClient({ url: "/wcf/OlapClientService.svc" });</code>
 
 
 
-#### chartDrillSuccess<span class="signature">()</span>
+### chartDrillSuccess<span class="signature">()</span>
 
 
 
@@ -1691,7 +1721,8 @@ This function is used to drill down the OLAP Grid widget once OLAP Chart drill d
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1713,7 +1744,7 @@ clientObj.gridDrillSuccess(ej.proxy(function(){}, this));
 
 
 
-#### cubeChanged<span class="signature">()</span>
+### cubeChanged<span class="signature">()</span>
 
 
 
@@ -1728,7 +1759,8 @@ This function is raised while changing the cube.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1750,7 +1782,7 @@ clientObj.cubeChanged(ej.proxy(function(){}, this));
 
 
 
-#### doAjaxPost<span class="signature">()</span>
+### doAjaxPost<span class="signature">()</span>
 
 
 
@@ -1765,7 +1797,8 @@ Perform an asynchronous HTTP (Ajax) request.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1787,7 +1820,7 @@ clientObj.doAjaxPost("POST", "/OlapClientService.svc/Initialize", {"key", "Hello
 
 
 
-#### getAxisPosition<span class="signature">()</span>
+### getAxisPosition<span class="signature">()</span>
 
 
 
@@ -1802,7 +1835,8 @@ This function is used to get the position of the axis element builders.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1824,7 +1858,7 @@ clientObj.getAxisPosition(eve);
 
 
 
-#### gridDrillSuccess<span class="signature">()</span>
+### gridDrillSuccess<span class="signature">()</span>
 
 
 
@@ -1839,7 +1873,8 @@ This function is used to drill down the OLAP Chart widget once OLAP Grid compone
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1861,7 +1896,7 @@ clientObj.gridDrillSuccess(ej.proxy(function(){}, this));
 
 
 
-#### nodeDropped<span class="signature">()</span>
+### nodeDropped<span class="signature">()</span>
 
 
 
@@ -1876,7 +1911,8 @@ This function is used to perform required action after dropping a tree node in A
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1898,7 +1934,7 @@ clientObj.nodeDropped(ej.proxy(function(){}, this));
 
 
 
-#### onDropped<span class="signature">()</span>
+### onDropped<span class="signature">()</span>
 
 
 
@@ -1913,7 +1949,8 @@ This function is raised after dropping the element in Axis Element Builder.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1935,7 +1972,7 @@ clientObj.onDropped(ej.proxy(function(){}, this));
 
 
 
-#### onTabClick<span class="signature">()</span>
+### onTabClick<span class="signature">()</span>
 
 
 
@@ -1950,7 +1987,8 @@ This function is raised while tab changes.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1972,7 +2010,7 @@ clientObj.onTabClick(ej.proxy(function(){}, this));
 
 
 
-#### reportChanged<span class="signature">()</span>
+### reportChanged<span class="signature">()</span>
 
 
 
@@ -1987,7 +2025,8 @@ This function is raised while changing the report.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2009,7 +2048,7 @@ clientObj.reportChanged(ej.proxy(function(){}, this));
 
 
 
-#### setSplitBtnTargetPos<span class="signature">()</span>
+### setSplitBtnTargetPos<span class="signature">()</span>
 
 
 
@@ -2024,7 +2063,8 @@ This function is used to set the position to currently dropped split button in r
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2044,7 +2084,7 @@ clientObj.setSplitBtnTargetPos(eve);
 
 
 
-### Events
+## Events
 
 
 
@@ -2053,7 +2093,7 @@ clientObj.setSplitBtnTargetPos(eve);
 
 
 
-#### afterServiceInvoke
+### afterServiceInvoke
 
 
 
@@ -2126,7 +2166,8 @@ Fires after the service is invoked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2141,7 +2182,7 @@ $("#OlapClient").ejOlapClient({
 
 
 
-#### beforeServiceInvoke
+### beforeServiceInvoke
 
 
 
@@ -2214,7 +2255,8 @@ Fires when the summary cell is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2229,7 +2271,7 @@ $("#OlapClient").ejOlapClient({
 
 
 
-#### chartLoad
+### chartLoad
 
 
 
@@ -2302,7 +2344,8 @@ Fires before rendering the chart
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2317,7 +2360,7 @@ $("#OlapClient").ejOlapClient({
 
 
 
-#### load
+### load
 
 
 
@@ -2380,7 +2423,8 @@ Fires on loading the control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2395,7 +2439,7 @@ $("#OlapClient").ejOlapClient({
 
 
 
-#### renderComplete
+### renderComplete
 
 
 
@@ -2463,7 +2507,8 @@ Fires on completion of rendering control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2478,7 +2523,7 @@ $("#OlapClient").ejOlapClient({
 
 
 
-#### renderFailure
+### renderFailure
 
 
 
@@ -2551,7 +2596,8 @@ Fires when error occured in rendering the control
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2566,7 +2612,7 @@ $("#OlapClient").ejOlapClient({
 
 
 
-#### renderSuccess
+### renderSuccess
 
 
 
@@ -2634,7 +2680,8 @@ Fires when the control is rendered success
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

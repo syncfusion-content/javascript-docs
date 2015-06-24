@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Schedule control.
+# Custom Design for Html Schedule control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Schedule control.
 
 
 
-#### $(element).ejSchedule<span class="signature">()</span>
+## $(element).ejSchedule<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html Schedule control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -46,7 +47,7 @@ $('#Schedule').ejSchedule();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -110,7 +111,7 @@ $('#Schedule').ejSchedule();
 
 
 
-### Members
+## Members
 
 
 
@@ -119,7 +120,7 @@ $('#Schedule').ejSchedule();
 
 
 
-#### allowDragDrop<span class="type-signature type boolean">boolean</span>
+### allowDragDrop<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -150,7 +151,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -178,7 +180,7 @@ Default Value:
 
 
 
-#### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -209,7 +211,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -225,7 +228,7 @@ Default Value:
 
 
 
-#### appointmentSettings<span class="type-signature type object">Object</span>
+### appointmentSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -256,7 +259,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -283,7 +287,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.allDay<span class="type-signature type string">string</span>
+### appointmentSettings.allDay<span class="type-signature type string">string</span>
 
 
 
@@ -314,7 +318,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -341,7 +346,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.categorize<span class="type-signature type string">string</span>
+### appointmentSettings.categorize<span class="type-signature type string">string</span>
 
 
 
@@ -372,7 +377,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -400,7 +406,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.dataSource<span class="type-signature type object">object</span>
+### appointmentSettings.dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -431,7 +437,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -458,7 +465,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.description<span class="type-signature type string">string</span>
+### appointmentSettings.description<span class="type-signature type string">string</span>
 
 
 
@@ -489,7 +496,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -516,7 +524,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.endTime<span class="type-signature type string">string</span>
+### appointmentSettings.endTime<span class="type-signature type string">string</span>
 
 
 
@@ -547,7 +555,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -574,7 +583,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.id<span class="type-signature type string">string</span>
+### appointmentSettings.id<span class="type-signature type string">string</span>
 
 
 
@@ -605,7 +614,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -632,7 +642,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.location<span class="type-signature type string">string</span>
+### appointmentSettings.location<span class="type-signature type string">string</span>
 
 
 
@@ -663,7 +673,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -692,7 +703,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.priority<span class="type-signature type string">string</span>
+### appointmentSettings.priority<span class="type-signature type string">string</span>
 
 
 
@@ -723,7 +734,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -753,7 +765,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.query<span class="type-signature type object">object</span>
+### appointmentSettings.query<span class="type-signature type object">object</span>
 
 
 
@@ -784,7 +796,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -811,7 +824,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.recurrence<span class="type-signature type string">string</span>
+### appointmentSettings.recurrence<span class="type-signature type string">string</span>
 
 
 
@@ -842,7 +855,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -869,7 +883,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.recurrenceRule<span class="type-signature type string">string</span>
+### appointmentSettings.recurrenceRule<span class="type-signature type string">string</span>
 
 
 
@@ -900,7 +914,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -927,7 +942,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.resourceFields<span class="type-signature type string">string</span>
+### appointmentSettings.resourceFields<span class="type-signature type string">string</span>
 
 
 
@@ -958,7 +973,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -996,7 +1012,7 @@ Default Value:
 
 
 
-#### appointmentSettings.startTime<span class="type-signature type string">string</span>
+### appointmentSettings.startTime<span class="type-signature type string">string</span>
 
 
 
@@ -1027,7 +1043,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1054,7 +1071,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.subject<span class="type-signature type string">string</span>
+### appointmentSettings.subject<span class="type-signature type string">string</span>
 
 
 
@@ -1085,7 +1102,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1112,7 +1130,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSettings.tableName<span class="type-signature type string">string</span>
+### appointmentSettings.tableName<span class="type-signature type string">string</span>
 
 
 
@@ -1143,7 +1161,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1171,7 +1190,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentTemplateId<span class="type-signature type string">string</span>
+### appointmentTemplateId<span class="type-signature type string">string</span>
 
 
 
@@ -1202,7 +1221,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1218,7 +1238,7 @@ Default Value:
 
 
 
-#### businessEndHour<span class="type-signature type number">number</span>
+### businessEndHour<span class="type-signature type number">number</span>
 
 
 
@@ -1249,7 +1269,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1265,7 +1286,7 @@ Default Value:
 
 
 
-#### businessStartHour<span class="type-signature type number">number</span>
+### businessStartHour<span class="type-signature type number">number</span>
 
 
 
@@ -1296,7 +1317,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1312,7 +1334,7 @@ Default Value:
 
 
 
-#### categorizeSettings<span class="type-signature type object">Object</span>
+### categorizeSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -1343,7 +1365,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1363,7 +1386,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### categorizeSettings.allowMultiple<span class="type-signature type boolean">boolean</span>
+### categorizeSettings.allowMultiple<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1394,7 +1417,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1410,7 +1434,7 @@ Default Value:
 
 
 
-#### categorizeSettings.color<span class="type-signature type string">string</span>
+### categorizeSettings.color<span class="type-signature type string">string</span>
 
 
 
@@ -1441,7 +1465,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1475,7 +1500,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### categorizeSettings.dataSource<span class="type-signature type object">object</span>
+### categorizeSettings.dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -1506,7 +1531,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1531,7 +1557,7 @@ Default Value:
 
 
 
-#### categorizeSettings.enable<span class="type-signature type boolean">boolean</span>
+### categorizeSettings.enable<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1562,7 +1588,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1578,7 +1605,7 @@ Default Value:
 
 
 
-#### categorizeSettings.fontColor<span class="type-signature type string">string</span>
+### categorizeSettings.fontColor<span class="type-signature type string">string</span>
 
 
 
@@ -1609,7 +1636,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1643,7 +1671,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### categorizeSettings.id<span class="type-signature type string">string</span>
+### categorizeSettings.id<span class="type-signature type string">string</span>
 
 
 
@@ -1674,7 +1702,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1708,7 +1737,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### categorizeSettings.text<span class="type-signature type string">string</span>
+### categorizeSettings.text<span class="type-signature type string">string</span>
 
 
 
@@ -1739,7 +1768,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1773,7 +1803,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### cellHeight<span class="type-signature type string">string</span>
+### cellHeight<span class="type-signature type string">string</span>
 
 
 
@@ -1804,7 +1834,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1820,7 +1851,7 @@ Default Value:
 
 
 
-#### cellWidth<span class="type-signature type string">string</span>
+### cellWidth<span class="type-signature type string">string</span>
 
 
 
@@ -1851,7 +1882,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1867,7 +1899,7 @@ Default Value:
 
 
 
-#### contextMenuSettings<span class="type-signature type object">Object</span>
+### contextMenuSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -1898,7 +1930,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -1918,7 +1951,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### contextMenuSettings.enable<span class="type-signature type boolean">boolean</span>
+### contextMenuSettings.enable<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1949,7 +1982,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1965,7 +1999,7 @@ Default Value:
 
 
 
-#### contextMenuSettings.menuItems<span class="type-signature type object">object</span>
+### contextMenuSettings.menuItems<span class="type-signature type object">object</span>
 
 
 
@@ -1996,7 +2030,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2034,7 +2069,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -2065,7 +2100,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2081,7 +2117,7 @@ Default Value:
 
 
 
-#### currentDate<span class="type-signature type date">date</span>
+### currentDate<span class="type-signature type date">date</span>
 
 
 
@@ -2112,7 +2148,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2128,7 +2165,7 @@ Default Value:
 
 
 
-#### currentView<span class="type-signature type enum">enum</span>
+### currentView<span class="type-signature type enum">enum</span>
 
 
 
@@ -2159,7 +2196,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2174,7 +2212,7 @@ Default Value:
 
 
 
-#### dateFormat<span class="type-signature type string">String</span>
+### dateFormat<span class="type-signature type string">String</span>
 
 
 
@@ -2205,7 +2243,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2220,7 +2259,7 @@ Default Value:
 
 
 
-#### enableAppointmentNavigation<span class="type-signature type boolean">boolean</span>
+### enableAppointmentNavigation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2251,7 +2290,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2280,7 +2320,7 @@ Default Value:
 
 
 
-#### enableAppointmentResize<span class="type-signature type boolean">boolean</span>
+### enableAppointmentResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2311,7 +2351,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2339,7 +2380,7 @@ Default Value:
 
 
 
-#### enableLoadOnDemand<span class="type-signature type boolean">boolean</span>
+### enableLoadOnDemand<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2370,7 +2411,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2386,7 +2428,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2417,7 +2459,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2433,7 +2476,7 @@ Default Value:
 
 
 
-#### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2464,7 +2507,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2480,7 +2524,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2511,7 +2555,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2527,7 +2572,7 @@ Default Value:
 
 
 
-#### endHour<span class="type-signature type number">number</span>
+### endHour<span class="type-signature type number">number</span>
 
 
 
@@ -2558,7 +2603,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2574,7 +2620,7 @@ Default Value:
 
 
 
-#### group<span class="type-signature type object">Object</span>
+### group<span class="type-signature type object">Object</span>
 
 
 
@@ -2605,7 +2651,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2654,7 +2701,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">string</span>
+### height<span class="type-signature type string">string</span>
 
 
 
@@ -2685,7 +2732,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2701,7 +2749,7 @@ Default Value:
 
 
 
-#### highlightBusinessHours<span class="type-signature type boolean">boolean</span>
+### highlightBusinessHours<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2732,7 +2780,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2748,7 +2797,7 @@ Default Value:
 
 
 
-#### isResponsive<span class="type-signature type boolean">boolean</span>
+### isResponsive<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2779,7 +2828,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2795,7 +2845,7 @@ Default Value:
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -2826,7 +2876,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2842,7 +2893,7 @@ Default Value:
 
 
 
-#### maxDate<span class="type-signature type date">date</span>
+### maxDate<span class="type-signature type date">date</span>
 
 
 
@@ -2873,7 +2924,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2889,7 +2941,7 @@ Default Value:
 
 
 
-#### minDate<span class="type-signature type date">date</span>
+### minDate<span class="type-signature type date">date</span>
 
 
 
@@ -2920,7 +2972,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2936,7 +2989,7 @@ Default Value:
 
 
 
-#### orientation<span class="type-signature type enum">enum</span>
+### orientation<span class="type-signature type enum">enum</span>
 
 
 
@@ -2967,7 +3020,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2982,7 +3036,7 @@ Default Value:
 
 
 
-#### prioritySettings.dataSource<span class="type-signature type object">object</span>
+### prioritySettings.dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -3013,7 +3067,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3032,7 +3087,7 @@ Default Value:
 
 
 
-#### <code>prioritySettings.enable<span class="type-signature type boolean">boolean</span></code>
+### <code>prioritySettings.enable<span class="type-signature type boolean">boolean</span></code>
 
 
 
@@ -3063,7 +3118,7 @@ Default Value:
 
 
 
-##### <code>Example</code>
+#### <code>Example</code>
 
 <pre class="prettyprint">
 <code><code> 
@@ -3079,7 +3134,7 @@ Default Value:
 
 
 
-#### prioritySettings.id<span class="type-signature type string">string</span>
+### prioritySettings.id<span class="type-signature type string">string</span>
 
 
 
@@ -3110,7 +3165,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -3147,7 +3203,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### <code>prioritySettings.template<span class="type-signature type boolean">boolean</span></code>
+### <code>prioritySettings.template<span class="type-signature type boolean">boolean</span></code>
 
 
 
@@ -3178,7 +3234,7 @@ $("#Schedule").ejSchedule({
 
 
 
-##### <code>Example</code>
+#### <code>Example</code>
 
 <pre class="prettyprint">
 <code><code> 
@@ -3197,7 +3253,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### <code>prioritySettings.text<span class="type-signature type string">string</span></code>
+### <code>prioritySettings.text<span class="type-signature type string">string</span></code>
 
 
 
@@ -3228,7 +3284,7 @@ $("#Schedule").ejSchedule({
 
 
 
-##### <code>Example</code>
+#### <code>Example</code>
 
 <pre class="prettyprint">
 <code><code>       
@@ -3265,7 +3321,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### <code>prioritySettings.value<span class="type-signature type string">string</span></code>
+### <code>prioritySettings.value<span class="type-signature type string">string</span></code>
 
 
 
@@ -3296,7 +3352,7 @@ $("#Schedule").ejSchedule({
 
 
 
-##### <code>Example</code>
+#### <code>Example</code>
 
 <pre class="prettyprint">
 <code><code>       
@@ -3333,7 +3389,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### <code>readOnly<span class="type-signature type boolean">boolean</span></code>
+### <code>readOnly<span class="type-signature type boolean">boolean</span></code>
 
 
 
@@ -3364,7 +3420,7 @@ $("#Schedule").ejSchedule({
 
 
 
-##### <code>Example</code>
+#### <code>Example</code>
 
 <pre class="prettyprint">
 <code><code> 
@@ -3380,7 +3436,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### reminderSettings<span class="type-signature type object">Object</span>
+### reminderSettings<span class="type-signature type object">Object</span>
 
 
 
@@ -3411,7 +3467,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -3431,7 +3488,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### reminderSettings.alertBefore<span class="type-signature type number">number</span>
+### reminderSettings.alertBefore<span class="type-signature type number">number</span>
 
 
 
@@ -3462,7 +3519,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3478,7 +3536,7 @@ Default Value:
 
 
 
-#### reminderSettings.enable<span class="type-signature type boolean">boolean</span>
+### reminderSettings.enable<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3509,7 +3567,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3525,7 +3584,7 @@ Default Value:
 
 
 
-#### renderDates<span class="type-signature type object">Object</span>
+### renderDates<span class="type-signature type object">Object</span>
 
 
 
@@ -3556,7 +3615,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3578,7 +3638,7 @@ Default Value:
 
 
 
-#### resourceHeaderTemplateId<span class="type-signature type string">string</span>
+### resourceHeaderTemplateId<span class="type-signature type string">string</span>
 
 
 
@@ -3609,7 +3669,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3625,7 +3686,7 @@ Default Value:
 
 
 
-#### resources<span class="type-signature type object">Object</span>
+### resources<span class="type-signature type object">Object</span>
 
 
 
@@ -3656,7 +3717,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3694,7 +3756,7 @@ Default Value:
 
 
 
-#### showAllDayRow<span class="type-signature type boolean">boolean</span>
+### showAllDayRow<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3725,7 +3787,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3741,7 +3804,7 @@ Default Value:
 
 
 
-#### showCurrentTimeIndicator<span class="type-signature type boolean">boolean</span>
+### showCurrentTimeIndicator<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3772,7 +3835,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3788,7 +3852,7 @@ Default Value:
 
 
 
-#### showLocationField<span class="type-signature type boolean">boolean</span>
+### showLocationField<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3819,7 +3883,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
@@ -3834,7 +3899,7 @@ Default Value:
 
 
 
-#### showQuickWindow<span class="type-signature type boolean">boolean</span>
+### showQuickWindow<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3865,7 +3930,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
@@ -3880,7 +3946,7 @@ Default Value:
 
 
 
-#### startHour<span class="type-signature type number">number</span>
+### startHour<span class="type-signature type number">number</span>
 
 
 
@@ -3911,7 +3977,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3927,7 +3994,7 @@ Default Value:
 
 
 
-#### timeMode<span class="type-signature type enum">enum</span>
+### timeMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -3958,7 +4025,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3973,7 +4041,7 @@ Default Value:
 
 
 
-#### timeZone<span class="type-signature type string">string</span>
+### timeZone<span class="type-signature type string">string</span>
 
 
 
@@ -4004,7 +4072,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4020,7 +4089,7 @@ Default Value:
 
 
 
-#### timezoneCollection<span class="type-signature type object">Object</span>
+### timezoneCollection<span class="type-signature type object">Object</span>
 
 
 
@@ -4051,7 +4120,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -4070,7 +4140,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### timezoneCollection.dataSource<span class="type-signature type object">object</span>
+### timezoneCollection.dataSource<span class="type-signature type object">object</span>
 
 
 
@@ -4101,7 +4171,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4127,7 +4198,7 @@ Default Value:
 
 
 
-#### timezoneCollection.id<span class="type-signature type string">string</span>
+### timezoneCollection.id<span class="type-signature type string">string</span>
 
 
 
@@ -4158,7 +4229,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -4188,7 +4260,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### timezoneCollection.text<span class="type-signature type string">string</span>
+### timezoneCollection.text<span class="type-signature type string">string</span>
 
 
 
@@ -4219,7 +4291,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -4249,7 +4322,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### timezoneCollection.value<span class="type-signature type string">string</span>
+### timezoneCollection.value<span class="type-signature type string">string</span>
 
 
 
@@ -4280,7 +4353,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>       
@@ -4310,7 +4384,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### views<span class="type-signature type array.string">Array.string</span>
+### views<span class="type-signature type array.string">Array.string</span>
 
 
 
@@ -4341,7 +4415,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4356,7 +4431,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">string</span>
+### width<span class="type-signature type string">string</span>
 
 
 
@@ -4387,7 +4462,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4401,7 +4477,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -4410,7 +4486,7 @@ Default Value:
 
 
 
-#### deleteAppointment<span class="signature">()</span>
+### deleteAppointment<span class="signature">()</span>
 
 
 
@@ -4441,7 +4517,8 @@ It is used to delete the appointment. The id is based on the argument passed alo
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4470,7 +4547,7 @@ schObj.deleteAppointment(105); //Appointments id number.
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -4485,7 +4562,8 @@ destroy the schedule widget all events bound using this._on will be unbind autom
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4503,7 +4581,7 @@ schObj.destroy(); // destroy the schedule
 
 
 
-#### exportSchedule<span class="signature">()</span>
+### exportSchedule<span class="signature">()</span>
 
 
 
@@ -4544,7 +4622,8 @@ It used to Export the appointments from the schedule control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4574,7 +4653,7 @@ schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single ap
 
 
 
-#### filterAppointments<span class="signature">()</span>
+### filterAppointments<span class="signature">()</span>
 
 
 
@@ -4605,7 +4684,8 @@ It used search the appointments from appointment list of schedule control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4640,7 +4720,7 @@ var appointments=schObj.filterAppointments(filter); // Gets the appointments lis
 
 
 
-#### getAppointments<span class="signature">()</span>
+### getAppointments<span class="signature">()</span>
 
 
 
@@ -4655,7 +4735,8 @@ It is used to get the appointment list of schedule control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4684,7 +4765,7 @@ var appointments=schObj.getAppointments(); // Gets the appointments list of sche
 
 
 
-#### print<span class="signature">()</span>
+### print<span class="signature">()</span>
 
 
 
@@ -4699,7 +4780,8 @@ It is used to print the schedule.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4727,7 +4809,7 @@ schObj.print();
 
 
 
-#### refreshScroller<span class="signature">()</span>
+### refreshScroller<span class="signature">()</span>
 
 
 
@@ -4742,7 +4824,8 @@ It used to Refresh Scroller while using schedule control in some other controls.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4760,7 +4843,7 @@ schObj.refreshScroller(); // To refresh scroller while using schedule control in
 
 
 
-#### saveAppointment<span class="signature">()</span>
+### saveAppointment<span class="signature">()</span>
 
 
 
@@ -4791,7 +4874,8 @@ It is used to save the appointment. The appointment obj is based on the argument
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4819,7 +4903,7 @@ schObj.saveAppointment(obj); //obj contains collection of appointment.
 
 
 
-#### searchAppointments<span class="signature">()</span>
+### searchAppointments<span class="signature">()</span>
 
 
 
@@ -4865,7 +4949,8 @@ It used search the appointments from appointment list of schedule control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4892,7 +4977,7 @@ var appointments=schObj.searchAppointments("gold"); // Gets the appointments lis
 
 
 
-### Events
+## Events
 
 
 
@@ -4901,7 +4986,7 @@ var appointments=schObj.searchAppointments("gold"); // Gets the appointments lis
 
 
 
-#### actionBegin
+### actionBegin
 
 
 
@@ -5283,7 +5368,8 @@ Triggers before the action begin of the schedule.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
@@ -5300,7 +5386,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### actionComplete
+### actionComplete
 
 
 
@@ -5662,7 +5748,8 @@ Triggers after the action completion of the schedule.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
@@ -5679,7 +5766,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentClick
+### appointmentClick
 
 
 
@@ -5730,7 +5817,8 @@ Triggers after the appointment is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5758,7 +5846,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentDeleted
+### appointmentDeleted
 
 
 
@@ -5809,7 +5897,8 @@ Triggers after the appointment is deleted.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5837,7 +5926,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentEdited
+### appointmentEdited
 
 
 
@@ -5888,7 +5977,8 @@ Triggers after the appointment is edited.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5916,7 +6006,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentSaved
+### appointmentSaved
 
 
 
@@ -5992,7 +6082,8 @@ Triggers after the appointment is saved.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6010,7 +6101,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### appointmentWindowOpen
+### appointmentWindowOpen
 
 
 
@@ -6106,7 +6197,8 @@ Triggers before the appointment window is opened.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6124,7 +6216,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### beforeContextMenuOpen
+### beforeContextMenuOpen
 
 
 
@@ -6175,7 +6267,8 @@ Triggers before the context menu open up.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
@@ -6192,7 +6285,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### cellClick
+### cellClick
 
 
 
@@ -6253,7 +6346,8 @@ Triggers after the cell is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
@@ -6270,7 +6364,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### cellDoubleClick
+### cellDoubleClick
 
 
 
@@ -6331,7 +6425,8 @@ Triggers after the cell is clicked twice.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6349,7 +6444,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### drag
+### drag
 
 
 
@@ -6400,7 +6495,8 @@ Triggers while the appointment is being dragged over the workcells.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6428,7 +6524,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### dragStart
+### dragStart
 
 
 
@@ -6479,7 +6575,8 @@ Triggers when the appointment dragging begins.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6507,7 +6604,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### dragStop
+### dragStop
 
 
 
@@ -6558,7 +6655,8 @@ Triggers when the appointment is dropped.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6586,7 +6684,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### menuItemClick
+### menuItemClick
 
 
 
@@ -6637,7 +6735,8 @@ Triggers after the context menu is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
@@ -6654,7 +6753,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### navigation
+### navigation
 
 
 
@@ -6790,7 +6889,8 @@ Triggers after the Schedule view or date is navigated.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6808,7 +6908,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### reminder
+### reminder
 
 
 
@@ -6854,7 +6954,8 @@ Triggers when the reminder is raised for an appointment.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
@@ -6871,7 +6972,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### resize
+### resize
 
 
 
@@ -6922,7 +7023,8 @@ Triggers while resizing the appointment.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6950,7 +7052,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### resizeStart
+### resizeStart
 
 
 
@@ -7001,7 +7103,8 @@ Triggers when the appointment resizing begins.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7029,7 +7132,7 @@ $("#Schedule").ejSchedule({
 
 
 
-#### resizeStop
+### resizeStop
 
 
 
@@ -7085,7 +7188,8 @@ Triggers when appointment resizing is stopped.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

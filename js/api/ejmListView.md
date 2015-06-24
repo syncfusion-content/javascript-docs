@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html ListView control.
+# Custom Design for Html ListView control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html ListView control.
 
 
 
-#### $(element).ejmListView<span class="signature">()</span>
+## $(element).ejmListView<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Custom Design for Html ListView control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -78,7 +79,7 @@ $("#lb").ejmListView();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -127,7 +128,7 @@ $("#lb").ejmListView();
 
 
 
-### Members
+## Members
 
 
 
@@ -136,7 +137,7 @@ $("#lb").ejmListView();
 
 
 
-#### adjustFixedPosition<span class="type-signature type boolean">boolean</span>
+### adjustFixedPosition<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -167,7 +168,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -226,7 +228,7 @@ $("#lb").ejmListView ("option", "adjustFixedPosition", true);
 
 
 
-#### ajaxSettings<span class="type-signature type jsonobject">JSONObject</span>
+### ajaxSettings<span class="type-signature type jsonobject">JSONObject</span>
 
 
 
@@ -241,7 +243,8 @@ Specifies the settings option for ajax request.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -292,7 +295,7 @@ $("#lb").ejmListView ("option", "ajaxSettings", { type: 'GET',cache: false,async
 
 
 
-#### allowScrolling<span class="type-signature type boolean">boolean</span>
+### allowScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -323,7 +326,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -382,7 +386,7 @@ $("#lb").ejmListView ("option", "allowScrolling", true);
 
 
 
-#### autoAdjustHeight<span class="type-signature type boolean">boolean</span>
+### autoAdjustHeight<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -413,7 +417,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -472,7 +477,7 @@ $("#lb").ejmListView ("option", "autoAdjustHeight", true);
 
 
 
-#### autoAdjustScrollHeight<span class="type-signature type boolean">boolean</span>
+### autoAdjustScrollHeight<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -503,7 +508,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -562,7 +568,7 @@ $("#lb").ejmListView ("option", "autoAdjustScrollHeight", true);
 
 
 
-#### checkDOMChanges<span class="type-signature type boolean">boolean</span>
+### checkDOMChanges<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -593,7 +599,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -652,7 +659,7 @@ $("#lb").ejmListView ("option", "checkDOMChanges", true);
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -683,7 +690,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -742,7 +750,7 @@ $("#lb").ejmListView ("option", "cssClass", "customclass");
 
 
 
-#### dataSource<span class="type-signature type jsonarray">JSONArray</span>
+### dataSource<span class="type-signature type jsonarray">JSONArray</span>
 
 
 
@@ -773,7 +781,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -826,7 +835,7 @@ $("#lb").ejmListView ("option", "dataSource", true);
 
 
 
-#### enableAjax<span class="type-signature type boolean">boolean</span>
+### enableAjax<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -857,7 +866,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -902,7 +912,7 @@ $("#lb").ejmListView ("option", "enableAjax", true);
 
 
 
-#### enableCache<span class="type-signature type boolean">boolean</span>
+### enableCache<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -933,7 +943,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -978,7 +989,7 @@ $("#lb").ejmListView ("option", "enableCache", true);
 
 
 
-#### enableCheckMark<span class="type-signature type boolean">boolean</span>
+### enableCheckMark<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1009,7 +1020,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1068,7 +1080,7 @@ $("#lb").ejmListView ("option", "enableCheckMark", true);
 
 
 
-#### enableFiltering<span class="type-signature type boolean">boolean</span>
+### enableFiltering<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1099,7 +1111,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1158,7 +1171,7 @@ $("#lb").ejmListView ("option", "enableFiltering", true);
 
 
 
-#### enableGroupList<span class="type-signature type boolean">boolean</span>
+### enableGroupList<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1189,7 +1202,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1256,7 +1270,7 @@ $("#lb").ejmListView ("option", "enableGroupList", true);
 
 
 
-#### enableNativeScrolling<span class="type-signature type boolean">boolean</span>
+### enableNativeScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1287,7 +1301,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1346,7 +1361,7 @@ $("#lb").ejmListView ("option", "enableNativeScrolling", true);
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1377,7 +1392,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1436,7 +1452,7 @@ $("#lb").ejmListView ("option", "enablePersistence", true);
 
 
 
-#### fieldSettings<span class="type-signature type jsonarray">JSONArray</span>
+### fieldSettings<span class="type-signature type jsonarray">JSONArray</span>
 
 
 
@@ -1451,7 +1467,8 @@ Specifies the field settings to map the datasource.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1520,7 +1537,7 @@ $("#lb").ejmListView ("option", "fieldSettings", true);
 
 
 
-#### headerBackButtonText<span class="type-signature type string">string</span>
+### headerBackButtonText<span class="type-signature type string">string</span>
 
 
 
@@ -1551,7 +1568,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1610,7 +1628,7 @@ $("#lb").ejmListView ("option", "headerBackButtonText", "Back");
 
 
 
-#### headerTitle<span class="type-signature type string">string</span>
+### headerTitle<span class="type-signature type string">string</span>
 
 
 
@@ -1641,7 +1659,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1700,7 +1719,7 @@ $("#lb").ejmListView ("option", "headerTitle", "Title");
 
 
 
-#### height<span class="type-signature type number">number</span>
+### height<span class="type-signature type number">number</span>
 
 
 
@@ -1731,7 +1750,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1783,7 +1803,7 @@ $("#lb").ejmListView ("option", "height", 300);</code>
 
 
 
-#### hideHeaderForUnsupportedDevice<span class="type-signature type boolean">boolean</span>
+### hideHeaderForUnsupportedDevice<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1814,7 +1834,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1873,7 +1894,7 @@ $("#lb").ejmListView ("option", "hideHeaderForUnsupportedDevice", true);
 
 
 
-#### ios7.inline<span class="type-signature type boolean">boolean</span>
+### ios7.inline<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -1904,7 +1925,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1963,7 +1985,7 @@ $("#lb").ejmListView ("option", "ios7.inline", true);
 
 
 
-#### items<span class="type-signature type jsonarray">JSONarray</span>
+### items<span class="type-signature type jsonarray">JSONarray</span>
 
 
 
@@ -1994,7 +2016,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2050,7 +2073,7 @@ $("#lb").ejmListView ("option", "items", "window.dbitem");
 
 
 
-#### persistSelection<span class="type-signature type boolean">boolean</span>
+### persistSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2081,7 +2104,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2140,7 +2164,7 @@ $("#lb").ejmListView ("option", "persistSelection", true);
 
 
 
-#### preventSelection<span class="type-signature type boolean">boolean</span>
+### preventSelection<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2171,7 +2195,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2230,7 +2255,7 @@ $("#lb").ejmListView ("option", "preventSelection", true);
 
 
 
-#### query<span class="type-signature type ej.query">ej.Query</span>
+### query<span class="type-signature type ej.query">ej.Query</span>
 
 
 
@@ -2261,7 +2286,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2309,7 +2335,7 @@ $("#lb").ejmListView ("option", "query", true);
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -2340,7 +2366,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2399,7 +2426,7 @@ $("#lb").ejmListView ("option", "renderMode", "auto");
 
 
 
-#### renderTemplate<span class="type-signature type boolean">boolean</span>
+### renderTemplate<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2430,7 +2457,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2458,7 +2486,7 @@ Default Value:
 
 
 
-#### selectedItemIndex<span class="type-signature type number">number</span>
+### selectedItemIndex<span class="type-signature type number">number</span>
 
 
 
@@ -2489,7 +2517,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2541,7 +2570,7 @@ $("#lb").ejmListView ("option", "selectedItemIndex", 2);</code>
 
 
 
-#### showHeader<span class="type-signature type boolean">boolean</span>
+### showHeader<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2572,7 +2601,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2631,7 +2661,7 @@ $("#lb").ejmListView ("option", "showHeader", true);
 
 
 
-#### showHeaderBackButton<span class="type-signature type boolean">boolean</span>
+### showHeaderBackButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2662,7 +2692,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2721,7 +2752,7 @@ $("#lb").ejmListView ("option", "showHeaderBackButton", true);
 
 
 
-#### showScrollbars<span class="type-signature type boolean">boolean</span>
+### showScrollbars<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2752,7 +2783,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2811,7 +2843,7 @@ $("#lb").ejmListView ("option", "showScrollbars", true);
 
 
 
-#### templateId<span class="type-signature type boolean">boolean</span>
+### templateId<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -2842,7 +2874,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2870,7 +2903,7 @@ Default Value:
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -2901,7 +2934,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2960,7 +2994,7 @@ $("#lb").ejmListView ("option", "theme", "auto");
 
 
 
-#### transition<span class="type-signature type string">string</span>
+### transition<span class="type-signature type string">string</span>
 
 
 
@@ -2991,7 +3025,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3050,7 +3085,7 @@ $("#lb").ejmListView ("option", "transition", "slide");
 
 
 
-#### width<span class="type-signature type number">number</span>
+### width<span class="type-signature type number">number</span>
 
 
 
@@ -3081,7 +3116,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3133,7 +3169,7 @@ $("#lb").ejmListView ("option", "width", 200);</code>
 
 
 
-#### windows
+### windows
 
 
 
@@ -3154,7 +3190,7 @@ Section for windows mode specific functionalities.
 
 
 
-#### windows.enableCustomText<span class="type-signature type boolean">boolean</span>
+### windows.enableCustomText<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3185,7 +3221,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3244,7 +3281,7 @@ $("#lb").ejmListView ("option", "windows.enableHeaderCustomText", true);
 
 
 
-#### windows.preventSkew<span class="type-signature type boolean">boolean</span>
+### windows.preventSkew<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3275,7 +3312,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3334,7 +3372,7 @@ $("#lb").ejmListView ("option", "windows.preventSkew", true);
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -3365,7 +3403,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3422,7 +3461,7 @@ $("#lb").ejmListView ("option", "windows.renderDefault", true);
 
 
 
-### Methods
+## Methods
 
 
 
@@ -3431,7 +3470,7 @@ $("#lb").ejmListView ("option", "windows.renderDefault", true);
 
 
 
-#### addItem<span class="signature">()</span>
+### addItem<span class="signature">()</span>
 
 
 
@@ -3446,7 +3485,8 @@ To add item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3477,7 +3517,7 @@ $("#lb").ejmListView("addItem",$("&amp;ltli data-ej-text='Comic / Cartoon'&gt;&l
 
 
 
-#### checkAllItem<span class="signature">()</span>
+### checkAllItem<span class="signature">()</span>
 
 
 
@@ -3492,7 +3532,8 @@ To check all the items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3523,7 +3564,7 @@ $("#lb").ejmListView("checkAllItem");
 
 
 
-#### checkItem<span class="signature">()</span>
+### checkItem<span class="signature">()</span>
 
 
 
@@ -3538,7 +3579,8 @@ To check item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3569,7 +3611,7 @@ $("#lb").ejmListView("checkItem",2);
 
 
 
-#### clear<span class="signature">()</span>
+### clear<span class="signature">()</span>
 
 
 
@@ -3584,7 +3626,8 @@ To clear all the list item in the control before updating with new datasource.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3619,7 +3662,7 @@ function touchend(){
 
 
 
-#### deActive<span class="signature">()</span>
+### deActive<span class="signature">()</span>
 
 
 
@@ -3634,7 +3677,8 @@ To make the item in the given index to be default state.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3666,7 +3710,7 @@ $("#lb").ejmListView("deActive",2);
 
 
 
-#### disableItem<span class="signature">()</span>
+### disableItem<span class="signature">()</span>
 
 
 
@@ -3681,7 +3725,8 @@ To disable item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3712,7 +3757,7 @@ $("#lb").ejmListView("disableItem",2);
 
 
 
-#### enableItem<span class="signature">()</span>
+### enableItem<span class="signature">()</span>
 
 
 
@@ -3727,7 +3772,8 @@ To enable item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3758,7 +3804,7 @@ $("#lb").ejmListView("enableItem",2);
 
 
 
-#### getActiveItem<span class="signature">()</span>
+### getActiveItem<span class="signature">()</span>
 
 
 
@@ -3773,7 +3819,8 @@ To get the active item.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3804,7 +3851,7 @@ $("#lb").ejmListView("getActiveItem");
 
 
 
-#### getActiveItemText<span class="signature">()</span>
+### getActiveItemText<span class="signature">()</span>
 
 
 
@@ -3819,7 +3866,8 @@ To get the text of the active item.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3850,7 +3898,7 @@ $("#lb").ejmListView("getActiveItemText");
 
 
 
-#### getCheckedItems<span class="signature">()</span>
+### getCheckedItems<span class="signature">()</span>
 
 
 
@@ -3865,7 +3913,8 @@ To get all the checked items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3896,7 +3945,7 @@ $("#lb").ejmListView("getCheckedItems");
 
 
 
-#### getCheckedItemsText<span class="signature">()</span>
+### getCheckedItemsText<span class="signature">()</span>
 
 
 
@@ -3911,7 +3960,8 @@ To get the text of all the checked items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3942,7 +3992,7 @@ $("#lb").ejmListView("getCheckedItemsText");
 
 
 
-#### getItemsCount<span class="signature">()</span>
+### getItemsCount<span class="signature">()</span>
 
 
 
@@ -3957,7 +4007,8 @@ To get the total item count.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3988,7 +4039,7 @@ $("#lb").ejmListView("getItemsCount");
 
 
 
-#### getItemText<span class="signature">()</span>
+### getItemText<span class="signature">()</span>
 
 
 
@@ -4003,7 +4054,8 @@ To get the text of the item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4034,7 +4086,7 @@ $("#lb").ejmListView("getItemText",2);
 
 
 
-#### hasChild<span class="signature">()</span>
+### hasChild<span class="signature">()</span>
 
 
 
@@ -4049,7 +4101,8 @@ To check whether the item in the given index has child item.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4080,7 +4133,7 @@ $("#lb").ejmListView("hasChild",2);
 
 
 
-#### hide<span class="signature">()</span>
+### hide<span class="signature">()</span>
 
 
 
@@ -4095,7 +4148,8 @@ To hide the list.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4126,7 +4180,7 @@ $("#lb").ejmListView("hide");
 
 
 
-#### hideItem<span class="signature">()</span>
+### hideItem<span class="signature">()</span>
 
 
 
@@ -4141,7 +4195,8 @@ To hide item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4172,7 +4227,7 @@ $("#lb").ejmListView("hideItem",2);
 
 
 
-#### isChecked<span class="signature">()</span>
+### isChecked<span class="signature">()</span>
 
 
 
@@ -4187,7 +4242,8 @@ To check whether item in the given index is checked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4218,7 +4274,7 @@ $("#lb").ejmListView("isChecked",2);
 
 
 
-#### loadAjaxContent<span class="signature">()</span>
+### loadAjaxContent<span class="signature">()</span>
 
 
 
@@ -4233,7 +4289,8 @@ To load the ajax content while selecting the item.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4257,7 +4314,7 @@ $("#lb").ejmListView("loadAjaxContent","load1.html");
 
 
 
-#### removeCheckMark<span class="signature">()</span>
+### removeCheckMark<span class="signature">()</span>
 
 
 
@@ -4272,7 +4329,8 @@ To remove the check mark either for specific item in the given index or for all 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4304,7 +4362,7 @@ $("#lb").ejmListView("removeCheckMark",2);
 
 
 
-#### removeItem<span class="signature">()</span>
+### removeItem<span class="signature">()</span>
 
 
 
@@ -4319,7 +4377,8 @@ To remove item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4350,7 +4409,7 @@ $("#lb").ejmListView("removeItem",3);
 
 
 
-#### selectItem<span class="signature">()</span>
+### selectItem<span class="signature">()</span>
 
 
 
@@ -4365,7 +4424,8 @@ To select item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4397,7 +4457,7 @@ $("#lb").ejmListView("selectItem",2);
 
 
 
-#### setActive<span class="signature">()</span>
+### setActive<span class="signature">()</span>
 
 
 
@@ -4412,7 +4472,8 @@ To make the item in the given index to be active state.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4444,7 +4505,7 @@ $("#lb").ejmListView("setActive",2);
 
 
 
-#### show<span class="signature">()</span>
+### show<span class="signature">()</span>
 
 
 
@@ -4459,7 +4520,8 @@ To show the list.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4490,7 +4552,7 @@ $("#lb").ejmListView("show");
 
 
 
-#### showItem<span class="signature">()</span>
+### showItem<span class="signature">()</span>
 
 
 
@@ -4505,7 +4567,8 @@ To show item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4536,7 +4599,7 @@ $("#lb").ejmListView("showItem",2);
 
 
 
-#### unCheckAllItem<span class="signature">()</span>
+### unCheckAllItem<span class="signature">()</span>
 
 
 
@@ -4551,7 +4614,8 @@ To uncheck all the items.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4582,7 +4646,7 @@ $("#lb").ejmListView("unCheckAllItem");
 
 
 
-#### unCheckItem<span class="signature">()</span>
+### unCheckItem<span class="signature">()</span>
 
 
 
@@ -4597,7 +4661,8 @@ To uncheck item in the given index.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4626,7 +4691,7 @@ $("#lb").ejmListView("unCheckItem",2);
 
 
 
-### Events
+## Events
 
 
 
@@ -4635,7 +4700,7 @@ $("#lb").ejmListView("unCheckItem",2);
 
 
 
-#### ajaxBeforeLoad
+### ajaxBeforeLoad
 
 
 
@@ -4698,7 +4763,8 @@ Event triggers before the ajax request happens.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4736,7 +4802,7 @@ $("#lb").ejmListView({
 
 
 
-#### ajaxComplete
+### ajaxComplete
 
 
 
@@ -4794,7 +4860,8 @@ Event triggers after the ajax content loaded completely.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4832,7 +4899,7 @@ $("#lb").ejmListView({
 
 
 
-#### ajaxError
+### ajaxError
 
 
 
@@ -4915,7 +4982,8 @@ Event triggers when the ajax request failed.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4953,7 +5021,7 @@ $("#lb").ejmListView({
 
 
 
-#### ajaxSuccess
+### ajaxSuccess
 
 
 
@@ -5036,7 +5104,8 @@ Event triggers after the ajax content loaded successfully.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5074,7 +5143,7 @@ $("#lb").ejmListView({
 
 
 
-#### headerBackButtonTap
+### headerBackButtonTap
 
 
 
@@ -5137,7 +5206,8 @@ Event triggers when touch end happens on the back button in the header.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5187,7 +5257,7 @@ $("#lb").ejmListView({
 
 
 
-#### load
+### load
 
 
 
@@ -5245,7 +5315,8 @@ Event triggers before the items loaded.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5297,7 +5368,7 @@ $("#lb").ejmListView({
 
 
 
-#### loadComplete
+### loadComplete
 
 
 
@@ -5355,7 +5426,8 @@ Event triggers after the items loaded.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5407,7 +5479,7 @@ $("#lb").ejmListView({
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -5500,7 +5572,8 @@ Event triggers when touch end happens on the item.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5552,7 +5625,7 @@ $("#lb").ejmListView({
 
 
 
-#### touchStart
+### touchStart
 
 
 
@@ -5645,7 +5718,8 @@ Event triggers when touch start happens on the item.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

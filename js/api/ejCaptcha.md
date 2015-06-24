@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Captcha control.
+# Custom Design for Html Captcha control.
 
 
 
@@ -18,7 +18,7 @@ Custom Design for Html Captcha control.
 
 
 
-#### $(element).ejCaptcha<span class="signature">(options)</span>
+## $(element).ejCaptcha<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ Custom Design for Html Captcha control.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -63,7 +64,7 @@ $('#Captcha1').ejCaptcha();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -82,7 +83,7 @@ $('#Captcha1').ejCaptcha();
 
 
 
-### Members
+## Members
 
 
 
@@ -91,7 +92,7 @@ $('#Captcha1').ejCaptcha();
 
 
 
-#### characterSet<span class="type-signature type string">string</span>
+### characterSet<span class="type-signature type string">string</span>
 
 
 
@@ -122,7 +123,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -139,7 +141,7 @@ Default Value:
 
 
 
-#### customErrorMessage<span class="type-signature type string">string</span>
+### customErrorMessage<span class="type-signature type string">string</span>
 
 
 
@@ -170,7 +172,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -187,7 +190,7 @@ Default Value:
 
 
 
-#### enableAutoValidation<span class="type-signature type boolean">boolean</span>
+### enableAutoValidation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -218,7 +221,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -235,7 +239,7 @@ Default Value:
 
 
 
-#### enableCaseSensitivity<span class="type-signature type boolean">boolean</span>
+### enableCaseSensitivity<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -266,7 +270,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -283,7 +288,7 @@ Default Value:
 
 
 
-#### enablePattern<span class="type-signature type boolean">boolean</span>
+### enablePattern<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -314,7 +319,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -331,7 +337,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -362,7 +368,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -379,7 +386,7 @@ Default Value:
 
 
 
-#### hatchStyle<span class="type-signature type enum">enum</span>
+### hatchStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -410,7 +417,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -427,7 +435,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type number">number</span>
+### height<span class="type-signature type number">number</span>
 
 
 
@@ -458,7 +466,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -475,7 +484,7 @@ Default Value:
 
 
 
-#### mapper<span class="type-signature type string">string</span>
+### mapper<span class="type-signature type string">string</span>
 
 
 
@@ -506,7 +515,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -523,7 +533,7 @@ Default Value:
 
 
 
-#### maximumLength<span class="type-signature type number">number</span>
+### maximumLength<span class="type-signature type number">number</span>
 
 
 
@@ -554,7 +564,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -571,7 +582,7 @@ Default Value:
 
 
 
-#### minimumLength<span class="type-signature type number">number</span>
+### minimumLength<span class="type-signature type number">number</span>
 
 
 
@@ -602,7 +613,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -619,7 +631,7 @@ Default Value:
 
 
 
-#### requestMapper<span class="type-signature type string">string</span>
+### requestMapper<span class="type-signature type string">string</span>
 
 
 
@@ -650,7 +662,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -667,7 +680,7 @@ Default Value:
 
 
 
-#### showAudioButton<span class="type-signature type boolean">boolean</span>
+### showAudioButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -698,7 +711,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -715,7 +729,7 @@ Default Value:
 
 
 
-#### showRefreshButton<span class="type-signature type boolean">boolean</span>
+### showRefreshButton<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -746,7 +760,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -763,7 +778,7 @@ Default Value:
 
 
 
-#### targetButton<span class="type-signature type string">string</span>
+### targetButton<span class="type-signature type string">string</span>
 
 
 
@@ -794,7 +809,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -812,7 +828,7 @@ Default Value:
 
 
 
-#### targetInput<span class="type-signature type string">string</span>
+### targetInput<span class="type-signature type string">string</span>
 
 
 
@@ -843,7 +859,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -860,7 +877,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type number">number</span>
+### width<span class="type-signature type number">number</span>
 
 
 
@@ -891,7 +908,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -906,7 +924,7 @@ Default Value:
 
 
 
-### Events
+## Events
 
 
 
@@ -915,7 +933,7 @@ Default Value:
 
 
 
-#### refreshBegin
+### refreshBegin
 
 
 
@@ -956,7 +974,8 @@ Fires when captch refresh begins.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="captcha1"&gt;&lt;/div&gt; 
@@ -974,7 +993,7 @@ Fires when captch refresh begins.
 
 
 
-#### refreshComplete
+### refreshComplete
 
 
 
@@ -1015,7 +1034,8 @@ Fires after captch refresh completed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="captcha1"&gt;&lt;/div&gt; 
@@ -1033,7 +1053,7 @@ Fires after captch refresh completed.
 
 
 
-#### refreshFailure
+### refreshFailure
 
 
 
@@ -1074,7 +1094,8 @@ Fires when captch refresh fails to load.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="captcha1"&gt;&lt;/div&gt; 
@@ -1092,7 +1113,7 @@ Fires when captch refresh fails to load.
 
 
 
-#### refreshSuccess
+### refreshSuccess
 
 
 
@@ -1133,7 +1154,8 @@ Fires after captch refresh succeeded.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;div id="captcha1"&gt;&lt;/div&gt; 

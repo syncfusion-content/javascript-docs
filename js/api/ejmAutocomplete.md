@@ -7,27 +7,28 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html Autocomplete control.
+# Custom Design for Html Autocomplete control.
 
 
 
 
 
-#### $(element).ejmAutocomplete<span class="signature">()</span>
+## $(element).ejmAutocomplete<span class="signature">()</span>
 
 
 
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> // Create the autocomplete control in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Create autocomplete on initialization.&lt;input id="autocomplete" /&gt;
 &lt;script&gt; // Create autocomplete  $("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" }); &lt;/script&gt;</code></pre>
 
 
 
-### Requires
+## Requires
 
 
 * module:jQuery
@@ -51,12 +52,12 @@ Custom Design for Html Autocomplete control.
 * module:ej.touch
 
 
-### Members
+## Members
 
 
 
 
-#### allowScrolling<span class="type-signature type boolean">boolean</span>
+### allowScrolling<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -74,7 +75,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the allowScrolling property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-allowscrolling=true data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the allowScrolling on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set allowscrolling API value $("#autocomplete").ejmAutocomplete ({ allowScrolling:true, dataSource:"window.datasrc", field:"name" });                        &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the  allowScrolling, after initialization:
@@ -82,7 +84,7 @@ Default Value:
 
 
 
-#### allowSorting<span class="type-signature type boolean">boolean</span>
+### allowSorting<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -100,7 +102,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the allowSorting property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-allowsorting=true data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the allowSorting on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the allowSorting API value $("#autocomplete").ejmAutocomplete ({ allowSorting:true, dataSource:"window.datasrc", field:"name" });                  &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the allowSorting, after initialization:
@@ -108,7 +111,7 @@ Default Value:
 
 
 
-#### caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
+### caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -126,7 +129,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the caseSensitiveSearch property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-casesensitivesearch=false data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the caseSensitiveSearch on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the caseSensitiveSearch API value $("#autocomplete").ejmAutocomplete ({ caseSensitiveSearch:false, dataSource:"window.datasrc", field:"name" });                  &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the caseSensitiveSearch, after initialization:
@@ -134,7 +138,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -152,7 +156,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the cssClass property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-cssclass="customclass" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the cssClass on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the cssClass API value $("#autocomplete").ejmAutocomplete ({ cssClass:"customclass", dataSource:"window.datasrc", field:"name" });                     &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the cssClass, after initialization:
@@ -160,7 +165,7 @@ Default Value:
 
 
 
-#### dataSource<span class="type-signature type data">data</span>
+### dataSource<span class="type-signature type data">data</span>
 
 
 
@@ -178,7 +183,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the dataSource property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the dataSource on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the dataSource API value $("#autocomplete").ejmAutocomplete ({ dataSource:"window.datasrc", field:"name" });                     &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the dataSource, after initialization:
@@ -186,7 +192,7 @@ Default Value:
 
 
 
-#### delimiterChar<span class="type-signature type string">string</span>
+### delimiterChar<span class="type-signature type string">string</span>
 
 
 
@@ -204,7 +210,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the delimiterChar property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-enablemultiselect="true" data-ej-delimiterchar="," data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the delimiterChar on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the delimiterChar API value $("#autocomplete").ejmAutocomplete ({ enableMultiSelect:true, delimiterChar:",", dataSource:"window.datasrc", field:"name"  });                 &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the delimiterChar, after initialization:
@@ -212,7 +219,7 @@ Default Value:
 
 
 
-#### emptyResultText<span class="type-signature type string">string</span>
+### emptyResultText<span class="type-signature type string">string</span>
 
 
 
@@ -230,7 +237,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the emptyResultText property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-emptyresulttext="No suggestions" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the emptyResultText on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the emptyResultText API value $("#autocomplete").ejmAutocomplete ({ emptyResultText:"No suggestions", dataSource:"window.datasrc", field:"name" });                   &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the  emptyResultText, after initialization:
@@ -238,7 +246,7 @@ Default Value:
 
 
 
-#### enableAutoFill<span class="type-signature type boolean">boolean</span>
+### enableAutoFill<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -256,7 +264,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the enableAutoFill property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-enableautofill=false data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the enableAutoFill on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the enableAutoFill API value $("#autocomplete").ejmAutocomplete ({ enableAutoFill:false, dataSource:"window.datasrc", field:"name" });                       &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the enableAutoFill, after initialization:
@@ -264,7 +273,7 @@ Default Value:
 
 
 
-#### enableCheckbox<span class="type-signature type boolean">boolean</span>
+### enableCheckbox<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -282,7 +291,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the enableCheckbox property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-multivalue=true data-ej-enablecheckbox=true data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the enableCheckbox on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the enableCheckbox API value $("#autocomplete").ejmAutocomplete ({ enableCheckbox:true, dataSource:"window.datasrc", field:"name" });                        &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the autocomplete enableCheckbox, after initialization:
@@ -290,7 +300,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -308,7 +318,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the enabled property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-enabled=true data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the enabled on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the enabled API value $("#autocomplete").ejmAutocomplete ({ enabled:true, dataSource:"window.datasrc", field:"name" });                       &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the  enabled, after initialization:
@@ -316,7 +327,7 @@ Default Value:
 
 
 
-#### enableDistinct<span class="type-signature type boolean">boolean</span>
+### enableDistinct<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -334,7 +345,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the enableDistinct property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-enabledistinct=false data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the enableDistinct on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the enableDistinct API value $("#autocomplete").ejmAutocomplete ({ enableDistinct:false, dataSource:"window.datasrc", field:"name" });                       &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the enableDistinct, after initialization:
@@ -342,7 +354,7 @@ Default Value:
 
 
 
-#### enableMultiSelect<span class="type-signature type boolean">boolean</span>
+### enableMultiSelect<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -360,7 +372,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the enableMultiSelect property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-enablemultiselect=false data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the enableMultiSelect on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the enableMultiSelect API value $("#autocomplete").ejmAutocomplete ({ enableMultiSelect:false, dataSource:"window.datasrc", field:"name" });                    &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the enableMultiSelect, after initialization:
@@ -368,7 +381,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -386,7 +399,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the enablePersistence property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-enablepersistence=false data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the enablePersistence on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the enablePersistence API value $("#autocomplete").ejmAutocomplete ({ enablePersistence:false, dataSource:"window.datasrc", field:"name" });                    &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the enablePersistence, after initialization:
@@ -394,7 +408,7 @@ Default Value:
 
 
 
-#### field<span class="type-signature type string">string</span>
+### field<span class="type-signature type string">string</span>
 
 
 
@@ -412,7 +426,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the field property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the field on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the field API value $("#autocomplete").ejmAutocomplete ({ dataSource:"window.datasrc", field:"name" });                     &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the field, after initialization:
@@ -420,7 +435,7 @@ Default Value:
 
 
 
-#### filterType<span class="type-signature type enum">enum</span>
+### filterType<span class="type-signature type enum">enum</span>
 
 
 
@@ -438,7 +453,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the filterType property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-filtertype="contains" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the filterType on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the filterType API value $("#autocomplete").ejmAutocomplete ({ filterType:"ej.mobile.Autocomplete.FilterType.Contains", dataSource:"window.datasrc", field:"name" });                    &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the filterType, after initialization:
@@ -446,7 +462,7 @@ Default Value:
 
 
 
-#### imageClass<span class="type-signature type string">string</span>
+### imageClass<span class="type-signature type string">string</span>
 
 
 
@@ -464,7 +480,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the imageClass property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-imageclass="image" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the imageClass on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the imageClass API value $("#autocomplete").ejmAutocomplete ({ imageClass:"image", dataSource:"window.datasrc", field:"name" });                 &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the imageClass, after initialization:
@@ -472,7 +489,7 @@ Default Value:
 
 
 
-#### imageField<span class="type-signature type string">string</span>
+### imageField<span class="type-signature type string">string</span>
 
 
 
@@ -490,7 +507,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the imageField property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-imagefield="image" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the imageField on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the imageField API value $("#autocomplete").ejmAutocomplete ({ imageField:"image", dataSource:"window.datasrc", field:"name" });                 &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the imageField, after initialization:
@@ -498,7 +516,7 @@ Default Value:
 
 
 
-#### itemsCount<span class="type-signature type number">number</span>
+### itemsCount<span class="type-signature type number">number</span>
 
 
 
@@ -516,7 +534,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the itemsCount property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-itemscount=5 data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the itemsCount on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the itemsCount API value $("#autocomplete").ejmAutocomplete ({ itemsCount:5, dataSource:"window.datasrc", field:"name" });                       &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the itemsCount, after initialization:
@@ -524,7 +543,7 @@ Default Value:
 
 
 
-#### mapper<span class="type-signature type string">string</span>
+### mapper<span class="type-signature type string">string</span>
 
 
 
@@ -542,7 +561,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the mapper property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-mapper="http://mvc.syncfusion.com/Services/Northwnd.svc/Suppliers" data-ej-datasource="window.datasrc" data-ej-field="ContactName" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the mapper on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the mapper API value $("#autocomplete").ejmAutocomplete ({ mapper: "http://mvc.syncfusion.com/Services/Northwnd.svc/Suppliers", dataSource:"window.datasrc", field:"ContactName" });                 &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the mapper, after initialization:
@@ -550,7 +570,7 @@ Default Value:
 
 
 
-#### minCharacter<span class="type-signature type number">number</span>
+### minCharacter<span class="type-signature type number">number</span>
 
 
 
@@ -568,7 +588,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the minCharacter property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-mincharacter=1 data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the minCharacter on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the minCharacter API value $("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name",minCharacter:2 });                       &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the minCharacter, after initialization:
@@ -576,7 +597,7 @@ Default Value:
 
 
 
-#### mode<span class="type-signature type enum">enum</span>
+### mode<span class="type-signature type enum">enum</span>
 
 
 
@@ -594,7 +615,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the mode property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-mode="default" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the mode on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the mode API value $("#autocomplete").ejmAutocomplete ({ mode:ej.mobile.Autocomplete.Mode.Default, dataSource:"window.datasrc", field:"name" });                   &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the mode, after initialization:
@@ -602,7 +624,7 @@ Default Value:
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -620,7 +642,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the renderMode property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-rendermode="auto" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the renderMode on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the renderMode API value $("#autocomplete").ejmAutocomplete ({ renderMode: ej.mobile.RenderMode.Auto, dataSource:"window.datasrc", field:"name" });                      &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the  renderMode, after initialization:
@@ -628,7 +651,7 @@ Default Value:
 
 
 
-#### showEmptyResultText<span class="type-signature type boolean">boolean</span>
+### showEmptyResultText<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -646,7 +669,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the showEmptyResultText property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-showemptyresulttext=true data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the showEmptyResultText on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the showEmptyResultText API value $("#autocomplete").ejmAutocomplete ({ showEmptyResultText:true, dataSource:"window.datasrc", field:"name" });                   &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the showEmptyResultText, after initialization:
@@ -654,7 +678,7 @@ Default Value:
 
 
 
-#### sortOrder<span class="type-signature type enum">enum</span>
+### sortOrder<span class="type-signature type enum">enum</span>
 
 
 
@@ -672,7 +696,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the sortOrder property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-sortorder="ascending" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the sortOrder on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the sortOrder API value $("#autocomplete").ejmAutocomplete ({ sortOrder:ej.mobile.SortOrder.Ascending, dataSource:"window.datasrc", field:"name" });                    &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the sortOrder, after initialization:
@@ -680,7 +705,7 @@ Default Value:
 
 
 
-#### templateId<span class="type-signature type string">string</span>
+### templateId<span class="type-signature type string">string</span>
 
 
 
@@ -698,7 +723,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the templateId property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-templateId="template" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the templateId on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the templateId API value $("#autocomplete").ejmAutocomplete ({ templateId:"template", dataSource:"window.datasrc", field:"name" });                      &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the templateId, after initialization:
@@ -706,7 +732,7 @@ Default Value:
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -724,7 +750,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the theme property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-theme="auto" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the theme on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the theme API value $("#autocomplete").ejmAutocomplete ({ theme: ej.mobile.Theme.Auto, dataSource:"window.datasrc", field:"name" });                        &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the autocomplete theme, after initialization:
@@ -732,7 +759,7 @@ Default Value:
 
 
 
-#### value<span class="type-signature type string">string</span>
+### value<span class="type-signature type string">string</span>
 
 
 
@@ -750,7 +777,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the value property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-value="Text" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the value on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the value API value $("#autocomplete").ejmAutocomplete ({ value:"Text", dataSource:"window.datasrc", field:"name" });                       &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the value, after initialization:
@@ -758,7 +786,7 @@ Default Value:
 
 
 
-#### watermarkText<span class="type-signature type string">string</span>
+### watermarkText<span class="type-signature type string">string</span>
 
 
 
@@ -776,7 +804,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //Set the watermarkText property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-watermarktext="Search" data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the watermarkText on initialization. &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the watermarkText API value $("#autocomplete").ejmAutocomplete ({ watermarkText: "Search", dataSource:"window.datasrc", field:"name" });                    &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the watermarkText, after initialization:
@@ -784,7 +813,7 @@ Default Value:
 
 
 
-#### windows
+### windows
 
 
 
@@ -796,7 +825,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -814,18 +843,19 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> // Set the windows mode renderDefault property in unobtrusive way.&lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-rendermode="windows" data-ej-windows-renderdefault=true data-ej-datasource="window.datasrc" data-ej-field="name" /&gt;
 </code></pre><pre class="prettyprint"><code> // To set the windows mode renderDefault property API value &lt;input id="autocomplete" /&gt;
 &lt;script&gt; //To set the windows mode renderDefault API value $("#autocomplete").ejmAutocomplete({renderMode:"windows", windows:{ renderDefault: true }, dataSource:"window.datasrc", field:"name" });   &lt;/script&gt;</code></pre><pre class="prettyprint"><code> // Get or set the windows mode renderDefault API, after initialization:// Get the windows mode renderDefault value  $("#autocomplete").ejmAutocomplete("option", "windows.renderDefault");   // Set the windows mode renderDefault value $("#autocomplete").ejmAutocomplete("option", "renderMode", "windows"); $("#autocomplete").ejmAutocomplete("option", "windows.renderDefault", true); </code></pre>
 
 
-### Methods
+## Methods
 
 
 
 
-#### clearText<span class="signature">()</span>
+### clearText<span class="signature">()</span>
 
 
 
@@ -834,14 +864,15 @@ Clears the selected items in AutoComplete
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" /&gt;
 &lt;script&gt;$(function(){// Create the autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });var auto = $("#autocomplete").data("ejmAutocomplete");auto.clearText(); // Get the value of autocomplete});&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="autocomplete" /&gt;
 &lt;script&gt;$(function(){// Clears text of autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });$("#autocomplete").ejmAutocomplete("clearText");});&lt;/script&gt;</code></pre>
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -850,14 +881,15 @@ To disable AutoComplete
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" /&gt;
 &lt;script&gt;$(function(){// Create the autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });var auto = $("#autocomplete").data("ejmAutocomplete");auto.disable(); // Disables the autocomplete});&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="autocomplete" /&gt;
 &lt;script&gt;$(function(){// Disable autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });$("#autocomplete").ejmAutocomplete("disable");});&lt;/script&gt;</code></pre>
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -866,14 +898,15 @@ To enable AutoComplete
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete"/&gt;
 &lt;script&gt;$(function(){// Create the autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });var auto = $("#autocomplete").data("ejmAutocomplete");auto.enable(); // Enables the autocomplete});&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="autocomplete"/&gt;
 &lt;script&gt;$(function(){// Enable the autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });$("#autocomplete").ejmAutocomplete("enable");});&lt;/script&gt;</code></pre>
 
 
 
-#### getSelectedItems<span class="signature">()</span>
+### getSelectedItems<span class="signature">()</span>
 
 
 
@@ -882,14 +915,15 @@ To get the list of items selected in AutoComplete
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" /&gt;
 &lt;script&gt;$(function(){// Create the autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });var auto = $("#autocomplete").data("ejmAutocomplete");auto.getSelectedItems(); // Get the value of autocomplete});&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="autocomplete" /&gt;
 &lt;script&gt;$(function(){// GetSelectedItems of  autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });$("#autocomplete").ejmAutocomplete("getSelectedItems");});&lt;/script&gt;</code></pre>
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -898,18 +932,19 @@ To get the value of AutoComplete
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" /&gt;
 &lt;script&gt;$(function(){// Create the autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });var auto = $("#autocomplete").data("ejmAutocomplete");auto.getValue(); // Get the value of autocomplete});&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="autocomplete" /&gt;
 &lt;script&gt;$(function(){// Getvalue of  autocomplete$("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name" });$("#autocomplete").ejmAutocomplete("getValue");});&lt;/script&gt;</code></pre>
 
 
-### Events
+## Events
 
 
 
 
-#### change
+### change
 
 
 
@@ -918,14 +953,15 @@ Event triggers when the AutoComplete text box content changed.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from autocomplete<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the autocomplete model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr><tr><td class="name"><code>element</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">returns the current element</td></tr><tr><td class="name"><code>currentText</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the current item text</td></tr><tr><td class="name"><code>isChecked</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns whether the current item is checked or not</td></tr><tr><td class="name"><code>checkedItemsText</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns all checked item's text</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" data-ej-change="onChange" /&gt;
 &lt;script&gt; // change event for autocomplete  function onChange(args){ //handle the event}&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //change event for autocomplete&lt;input id="autocomplete" /&gt;
 &lt;script&gt; $("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name",  change: function (args) { //handle the event }});           &lt;/script&gt;</code></pre>
 
 
 
-#### focusIn
+### focusIn
 
 
 
@@ -934,14 +970,15 @@ Event triggers when focused in to the Autocomplete text box
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from autocomplete<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the autocomplete model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" data-ej-focusin="onfocusIn" /&gt;
 &lt;script&gt; // focusIn event for autocomplete  function onfocusIn(args){ //handle the event}&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //focusIn event for autocomplete&lt;input id="autocomplete" /&gt;
 &lt;script&gt; $("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name",  focusIn: function (args) { //handle the event }});           &lt;/script&gt;</code></pre>
 
 
 
-#### focusOut
+### focusOut
 
 
 
@@ -950,14 +987,15 @@ Event triggers when focused out from the Autocomplete text box
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from autocomplete<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the autocomplete model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" data-ej-focusout="onfocusOut" /&gt;
 &lt;script&gt; // focusOut event for autocomplete  function onfocusOut(args){ //handle the event}&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //focusOut event for autocomplete&lt;input id="autocomplete" /&gt;
 &lt;script&gt; $("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name",  focusOut: function (args) { //handle the event }});           &lt;/script&gt;</code></pre>
 
 
 
-#### keyPress
+### keyPress
 
 
 
@@ -966,14 +1004,15 @@ Event triggers when pressed a key
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from autocomplete<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the autocomplete model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" data-ej-keypress="onkeyPress" /&gt;
 &lt;script&gt; // keyPress event for autocomplete  function onkeyPress(args){ //handle the event}&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //keyPress event for autocomplete&lt;input id="autocomplete" /&gt;
 &lt;script&gt; $("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name",  keyPress: function (args) { //handle the event }});           &lt;/script&gt;</code></pre>
 
 
 
-#### select
+### select
 
 
 
@@ -982,14 +1021,15 @@ Event triggers when we select a element from AutoComplete suggestion list.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from autocomplete<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the autocomplete model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr><tr><td class="name"><code>element</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">returns the current element</td></tr><tr><td class="name"><code>currentText</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the current item text</td></tr><tr><td class="name"><code>isChecked</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns whether the current item is checked or not</td></tr><tr><td class="name"><code>checkedItemsText</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns all checked item's text</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" data-ej-select="onSelect" /&gt;
 &lt;script&gt; // select event for autocomplete  function onSelect(args){ //handle the event}&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //select event for autocomplete&lt;input id="autocomplete" /&gt;
 &lt;script&gt; $("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name",  select: function (args) { //handle the event }});           &lt;/script&gt;</code></pre>
 
 
 
-#### touchEnd
+### touchEnd
 
 
 
@@ -998,7 +1038,8 @@ Event triggers when the touch end happens in the AutoComplete suggestion list.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from autocomplete<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the autocomplete model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr><tr><td class="name"><code>element</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">returns the current element</td></tr><tr><td class="name"><code>currentText</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the current item text</td></tr><tr><td class="name"><code>isChecked</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns whether the current item is checked or not</td></tr><tr><td class="name"><code>checkedItemsText</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns all checked item's text</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="autocomplete" data-role="ejmautocomplete" data-ej-datasource="window.datasrc" data-ej-field="name" data-ej-touchend="onTouchEnd" /&gt;
 &lt;script&gt; // touchEnd event for autocomplete  function onTouchEnd(args){//handle the event}&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //touchEnd event for autocomplete&lt;input id="autocomplete" /&gt;
 &lt;script&gt; $("#autocomplete").ejmAutocomplete({ dataSource:"window.datasrc", field:"name",  touchEnd: function (args) { //handle the event }});           &lt;/script&gt;</code></pre>

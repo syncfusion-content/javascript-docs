@@ -18,7 +18,7 @@ Date and Time selection with the input field.
 
 
 
-#### $(element).ejDateTimePicker<span class="signature">(options)</span>
+## $(element).ejDateTimePicker<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ Date and Time selection with the input field.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -62,7 +63,7 @@ $("#datetime").ejDateTimePicker();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -96,7 +97,7 @@ $("#datetime").ejDateTimePicker();
 
 
 
-### Members
+## Members
 
 
 
@@ -105,7 +106,7 @@ $("#datetime").ejDateTimePicker();
 
 
 
-#### buttonText<span class="type-signature type jsonobject">JSONObject</span>
+### buttonText<span class="type-signature type jsonobject">JSONObject</span>
 
 
 
@@ -136,7 +137,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -152,7 +154,7 @@ Default Value:
 
 
 
-#### buttonText.done<span class="type-signature type string">String</span>
+### buttonText.done<span class="type-signature type string">String</span>
 
 
 
@@ -167,7 +169,8 @@ Sets the text for the Done button inside the datetime popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -183,7 +186,7 @@ Sets the text for the Done button inside the datetime popup.
 
 
 
-#### buttonText.now<span class="type-signature type string">String</span>
+### buttonText.now<span class="type-signature type string">String</span>
 
 
 
@@ -198,7 +201,8 @@ Sets the text for the Now button inside the datetime popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -214,7 +218,7 @@ Sets the text for the Now button inside the datetime popup.
 
 
 
-#### buttonText.timeTitle<span class="type-signature type string">String</span>
+### buttonText.timeTitle<span class="type-signature type string">String</span>
 
 
 
@@ -229,7 +233,8 @@ Sets the header text for the Time dropdown.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -245,7 +250,7 @@ Sets the header text for the Time dropdown.
 
 
 
-#### buttonText.today<span class="type-signature type string">String</span>
+### buttonText.today<span class="type-signature type string">String</span>
 
 
 
@@ -260,7 +265,8 @@ Sets the text for the Today button inside the datetime popup.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -276,7 +282,7 @@ Sets the text for the Today button inside the datetime popup.
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -307,7 +313,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;input type="text" id="datetime" /&gt;
@@ -322,7 +329,7 @@ Default Value:
 
 
 
-#### dateTimeFormat<span class="type-signature type string">String</span>
+### dateTimeFormat<span class="type-signature type string">String</span>
 
 
 
@@ -353,7 +360,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -369,7 +377,7 @@ Default Value:
 
 
 
-#### dayHeaderFormat<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### dayHeaderFormat<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
 
 
 
@@ -400,7 +408,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -416,7 +425,7 @@ Default Value:
 
 
 
-#### depthLevel<span class="type-signature type enum">enum</span>
+### depthLevel<span class="type-signature type enum">enum</span>
 
 
 
@@ -447,7 +456,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -463,7 +473,7 @@ Default Value:
 
 
 
-#### enableAnimation<span class="type-signature type boolean">Boolean</span>
+### enableAnimation<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -494,7 +504,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -511,7 +522,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -542,7 +553,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -558,7 +570,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">Boolean</span>
+### enablePersistence<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -589,7 +601,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -605,7 +618,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -636,7 +649,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -652,7 +666,7 @@ Default Value:
 
 
 
-#### enableStrictMode<span class="type-signature type boolean">Boolean</span>
+### enableStrictMode<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -683,7 +697,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -699,7 +714,7 @@ Default Value:
 
 
 
-#### headerFormat<span class="type-signature type string">String</span>
+### headerFormat<span class="type-signature type string">String</span>
 
 
 
@@ -730,7 +745,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -746,7 +762,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -777,7 +793,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -793,7 +810,7 @@ Default Value:
 
 
 
-#### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes<span class="type-signature type object">object</span>
 
 
 
@@ -824,7 +841,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -840,7 +858,7 @@ Default Value:
 
 
 
-#### interval<span class="type-signature type number">Number</span>
+### interval<span class="type-signature type number">Number</span>
 
 
 
@@ -871,7 +889,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -887,7 +906,7 @@ Default Value:
 
 
 
-#### locale<span class="type-signature type string">string</span>
+### locale<span class="type-signature type string">string</span>
 
 
 
@@ -918,7 +937,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -934,7 +954,7 @@ Default Value:
 
 
 
-#### maxDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### maxDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
 
 
 
@@ -965,7 +985,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -981,7 +1002,7 @@ Default Value:
 
 
 
-#### minDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### minDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
 
 
 
@@ -1012,7 +1033,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1028,7 +1050,7 @@ Default Value:
 
 
 
-#### readOnly<span class="type-signature type boolean">Boolean</span>
+### readOnly<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1059,7 +1081,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1075,7 +1098,7 @@ Default Value:
 
 
 
-#### showOtherMonths<span class="type-signature type boolean">Boolean</span>
+### showOtherMonths<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1106,7 +1129,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1122,7 +1146,7 @@ Default Value:
 
 
 
-#### showPopupButton<span class="type-signature type boolean">Boolean</span>
+### showPopupButton<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1153,7 +1177,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1169,7 +1194,7 @@ Default Value:
 
 
 
-#### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
+### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -1200,7 +1225,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1216,7 +1242,7 @@ Default Value:
 
 
 
-#### startDay<span class="type-signature type number">Number</span>
+### startDay<span class="type-signature type number">Number</span>
 
 
 
@@ -1247,7 +1273,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1263,7 +1290,7 @@ Default Value:
 
 
 
-#### startLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### startLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
 
 
 
@@ -1294,7 +1321,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1310,7 +1338,7 @@ Default Value:
 
 
 
-#### stepMonths<span class="type-signature type number">Number</span>
+### stepMonths<span class="type-signature type number">Number</span>
 
 
 
@@ -1341,7 +1369,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1357,7 +1386,7 @@ Default Value:
 
 
 
-#### timeDisplayFormat<span class="type-signature type string">String</span>
+### timeDisplayFormat<span class="type-signature type string">String</span>
 
 
 
@@ -1388,7 +1417,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1404,7 +1434,7 @@ Default Value:
 
 
 
-#### timePopupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### timePopupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -1435,7 +1465,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1451,7 +1482,7 @@ Default Value:
 
 
 
-#### validationMessage<span class="type-signature type object">object</span>
+### validationMessage<span class="type-signature type object">object</span>
 
 
 
@@ -1482,7 +1513,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1505,7 +1537,7 @@ Default Value:
 
 
 
-#### validationRules<span class="type-signature type object">object</span>
+### validationRules<span class="type-signature type object">object</span>
 
 
 
@@ -1536,7 +1568,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1556,7 +1589,7 @@ Default Value:
 
 
 
-#### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
 
 
 
@@ -1587,7 +1620,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1603,7 +1637,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -1634,7 +1668,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1648,7 +1683,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -1657,7 +1692,7 @@ Default Value:
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -1672,7 +1707,8 @@ Disables the DateTimePicker control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1699,7 +1735,7 @@ $("#datetime").ejDateTimePicker("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -1714,7 +1750,8 @@ Enables the DateTimePicker control.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1741,7 +1778,7 @@ $("#datetime").ejDateTimePicker("enable");
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -1756,12 +1793,13 @@ Returns the current datetime value in the DateTimePicker.
 
 
 
-##### Returns:
+#### Returns:
 
 value
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1788,7 +1826,7 @@ $("#datetime").ejDateTimePicker("getValue");
 
 
 
-#### hide<span class="signature">()</span>
+### hide<span class="signature">()</span>
 
 
 
@@ -1803,7 +1841,8 @@ Hides or closes the DateTimePicker popup.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1830,7 +1869,7 @@ $("#datetime").ejDateTimePicker("hide");
 
 
 
-#### setCurrentDateTime<span class="signature">()</span>
+### setCurrentDateTime<span class="signature">()</span>
 
 
 
@@ -1845,7 +1884,8 @@ Updates the current system date value and time value to the DateTimePicker.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1872,7 +1912,7 @@ $("#datetime").ejDateTimePicker("setCurrentDateTime");
 
 
 
-#### show<span class="signature">()</span>
+### show<span class="signature">()</span>
 
 
 
@@ -1887,7 +1927,8 @@ Shows or opens the DateTimePicker popup.
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1912,7 +1953,7 @@ $("#datetime").ejDateTimePicker("show");
 
 
 
-### Events
+## Events
 
 
 
@@ -1921,7 +1962,7 @@ $("#datetime").ejDateTimePicker("show");
 
 
 
-#### change
+### change
 
 
 
@@ -1977,7 +2018,8 @@ Fires when the datetime value changed in the DateTimePicker textbox.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1995,7 +2037,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-#### close
+### close
 
 
 
@@ -2046,7 +2088,8 @@ Fires when DateTimePicker popup closes.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2064,7 +2107,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-#### create
+### create
 
 
 
@@ -2105,7 +2148,8 @@ Fires after DateTimePicker control is created.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2123,7 +2167,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -2164,7 +2208,8 @@ Fires when the DateTimePicker is destroyed successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2182,7 +2227,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-#### focusIn
+### focusIn
 
 
 
@@ -2228,7 +2273,8 @@ Fires when the focus-in happens in the DateTimePicker textbox.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2246,7 +2292,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-#### focusOut
+### focusOut
 
 
 
@@ -2292,7 +2338,8 @@ Fires when the focus-out happens in the DateTimePicker textbox.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2310,7 +2357,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-#### open
+### open
 
 
 
@@ -2361,7 +2408,8 @@ Fires when DateTimePicker popup opens.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

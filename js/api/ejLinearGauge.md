@@ -18,7 +18,7 @@ The Linera gauge can be easily configured to the DOM element, such as div. you c
 
 
 
-#### $(element).ejLinearGauge<span class="signature">(options)</span>
+## $(element).ejLinearGauge<span class="signature">(options)</span>
 
 
 
@@ -46,7 +46,8 @@ The Linera gauge can be easily configured to the DOM element, such as div. you c
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -62,7 +63,7 @@ $('#LinearGauge1').ejLinearGauge();
 
 
 
-### Requires
+## Requires
 
 
 
@@ -78,7 +79,7 @@ $('#LinearGauge1').ejLinearGauge();
 
 
 
-### Members
+## Members
 
 
 
@@ -87,7 +88,7 @@ $('#LinearGauge1').ejLinearGauge();
 
 
 
-#### animationSpeed<span class="type-signature type number">number</span>
+### animationSpeed<span class="type-signature type number">number</span>
 
 
 
@@ -118,7 +119,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -134,7 +136,7 @@ Default Value:
 
 
 
-#### backgroundColor<span class="type-signature type string">string</span>
+### backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -165,7 +167,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -181,7 +184,7 @@ Default Value:
 
 
 
-#### borderColor<span class="type-signature type string">string</span>
+### borderColor<span class="type-signature type string">string</span>
 
 
 
@@ -212,7 +215,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -228,7 +232,7 @@ Default Value:
 
 
 
-#### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -259,7 +263,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -275,7 +280,7 @@ Default Value:
 
 
 
-#### enableMarkerPointerAnimation<span class="type-signature type boolean">boolean</span>
+### enableMarkerPointerAnimation<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -306,7 +311,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -322,7 +328,7 @@ Default Value:
 
 
 
-#### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -353,7 +359,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -369,7 +376,7 @@ Default Value:
 
 
 
-#### frame<span class="type-signature type object">object</span>
+### frame<span class="type-signature type object">object</span>
 
 
 
@@ -400,7 +407,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>  
@@ -417,7 +425,7 @@ $("#LinearGauge1").ejLinearGauge({ frame: { backgroundImageUrl:null, outerWidth:
 
 
 
-#### frame.backgroundImageUrl<span class="type-signature type string">string</span>
+### frame.backgroundImageUrl<span class="type-signature type string">string</span>
 
 
 
@@ -448,7 +456,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -464,7 +473,7 @@ Default Value:
 
 
 
-#### frame.innerWidth<span class="type-signature type number">number</span>
+### frame.innerWidth<span class="type-signature type number">number</span>
 
 
 
@@ -495,7 +504,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -511,7 +521,7 @@ Default Value:
 
 
 
-#### frame.outerWidth<span class="type-signature type number">number</span>
+### frame.outerWidth<span class="type-signature type number">number</span>
 
 
 
@@ -542,7 +552,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -558,7 +569,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type number">number</span>
+### height<span class="type-signature type number">number</span>
 
 
 
@@ -589,7 +600,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -605,7 +617,7 @@ Default Value:
 
 
 
-#### labelColor<span class="type-signature type string">string</span>
+### labelColor<span class="type-signature type string">string</span>
 
 
 
@@ -636,7 +648,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -652,7 +665,7 @@ Default Value:
 
 
 
-#### maximum<span class="type-signature type number">number</span>
+### maximum<span class="type-signature type number">number</span>
 
 
 
@@ -683,7 +696,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -699,7 +713,7 @@ Default Value:
 
 
 
-#### minimum<span class="type-signature type number">number</span>
+### minimum<span class="type-signature type number">number</span>
 
 
 
@@ -730,7 +744,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -746,7 +761,7 @@ Default Value:
 
 
 
-#### orientation<span class="type-signature type string">string</span>
+### orientation<span class="type-signature type string">string</span>
 
 
 
@@ -777,7 +792,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -793,7 +809,7 @@ Default Value:
 
 
 
-#### outerCustomLabelPosition<span class="type-signature type enum">enum</span>
+### outerCustomLabelPosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -824,7 +840,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -841,7 +858,7 @@ $("#CoreLinearGauge").ejLinearGauge({  outerCustomLabelPosition:"top" });
 
 
 
-#### pointerGradient1<span class="type-signature type object">Object</span>
+### pointerGradient1<span class="type-signature type object">Object</span>
 
 
 
@@ -872,7 +889,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -888,7 +906,7 @@ Default Value:
 
 
 
-#### pointerGradient2<span class="type-signature type object">object</span>
+### pointerGradient2<span class="type-signature type object">object</span>
 
 
 
@@ -919,7 +937,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -935,7 +954,7 @@ Default Value:
 
 
 
-#### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -966,7 +985,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -982,7 +1002,7 @@ Default Value:
 
 
 
-#### scales<span class="type-signature type object">Object</span>
+### scales<span class="type-signature type object">Object</span>
 
 
 
@@ -1013,7 +1033,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1029,7 +1050,7 @@ Default Value:
 
 
 
-#### scales.backgroundColor<span class="type-signature type string">string</span>
+### scales.backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -1060,7 +1081,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1076,7 +1098,7 @@ Default Value:
 
 
 
-#### scales.barPointers<span class="type-signature type array">Array</span>
+### scales.barPointers<span class="type-signature type array">Array</span>
 
 
 
@@ -1107,7 +1129,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1123,7 +1146,7 @@ Default Value:
 
 
 
-#### scales.barPointers.backgroundColor<span class="type-signature type string">string</span>
+### scales.barPointers.backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -1154,7 +1177,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1170,7 +1194,7 @@ Default Value:
 
 
 
-#### scales.barPointers.border<span class="type-signature type object">object</span>
+### scales.barPointers.border<span class="type-signature type object">object</span>
 
 
 
@@ -1201,7 +1225,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1217,7 +1242,7 @@ Default Value:
 
 
 
-#### scales.barPointers.border.color<span class="type-signature type string">string</span>
+### scales.barPointers.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -1248,7 +1273,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1264,7 +1290,7 @@ Default Value:
 
 
 
-#### scales.barPointers.border.width<span class="type-signature type number">number</span>
+### scales.barPointers.border.width<span class="type-signature type number">number</span>
 
 
 
@@ -1295,7 +1321,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1311,7 +1338,7 @@ Default Value:
 
 
 
-#### scales.barPointers.distanceFromScale<span class="type-signature type number">number</span>
+### scales.barPointers.distanceFromScale<span class="type-signature type number">number</span>
 
 
 
@@ -1342,7 +1369,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1358,7 +1386,7 @@ Default Value:
 
 
 
-#### scales.barPointers.gradients<span class="type-signature type object">object</span>
+### scales.barPointers.gradients<span class="type-signature type object">object</span>
 
 
 
@@ -1389,7 +1417,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1405,7 +1434,7 @@ Default Value:
 
 
 
-#### scales.barPointers.opacity<span class="type-signature type number">number</span>
+### scales.barPointers.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -1436,7 +1465,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1452,7 +1482,7 @@ Default Value:
 
 
 
-#### scales.barPointers.value<span class="type-signature type number">number</span>
+### scales.barPointers.value<span class="type-signature type number">number</span>
 
 
 
@@ -1483,7 +1513,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1499,7 +1530,7 @@ Default Value:
 
 
 
-#### scales.barPointers.width<span class="type-signature type number">number</span>
+### scales.barPointers.width<span class="type-signature type number">number</span>
 
 
 
@@ -1530,7 +1561,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1546,7 +1578,7 @@ Default Value:
 
 
 
-#### scales.border<span class="type-signature type object">object</span>
+### scales.border<span class="type-signature type object">object</span>
 
 
 
@@ -1577,7 +1609,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1593,7 +1626,7 @@ Default Value:
 
 
 
-#### scales.border.color<span class="type-signature type string">string</span>
+### scales.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -1624,7 +1657,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1640,7 +1674,7 @@ Default Value:
 
 
 
-#### scales.border.width<span class="type-signature type number">number</span>
+### scales.border.width<span class="type-signature type number">number</span>
 
 
 
@@ -1671,7 +1705,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1687,7 +1722,7 @@ Default Value:
 
 
 
-#### scales.customLabels<span class="type-signature type array">Array</span>
+### scales.customLabels<span class="type-signature type array">Array</span>
 
 
 
@@ -1718,7 +1753,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1734,7 +1770,7 @@ Default Value:
 
 
 
-#### scales.customLabels.color<span class="type-signature type number">number</span>
+### scales.customLabels.color<span class="type-signature type number">number</span>
 
 
 
@@ -1765,7 +1801,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1781,7 +1818,7 @@ Default Value:
 
 
 
-#### scales.customLabels.font<span class="type-signature type object">object</span>
+### scales.customLabels.font<span class="type-signature type object">object</span>
 
 
 
@@ -1812,7 +1849,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1828,7 +1866,7 @@ Default Value:
 
 
 
-#### scales.customLabels.font.fontFamily<span class="type-signature type string">string</span>
+### scales.customLabels.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -1859,7 +1897,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1875,7 +1914,7 @@ Default Value:
 
 
 
-#### scales.customLabels.font.fontStyle<span class="type-signature type enum">enum</span>
+### scales.customLabels.font.fontStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -1906,7 +1945,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1922,7 +1962,7 @@ Default Value:
 
 
 
-#### scales.customLabels.font.size<span class="type-signature type string">string</span>
+### scales.customLabels.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -1953,7 +1993,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1969,7 +2010,7 @@ Default Value:
 
 
 
-#### scales.customLabels.opacity<span class="type-signature type string">string</span>
+### scales.customLabels.opacity<span class="type-signature type string">string</span>
 
 
 
@@ -2000,7 +2041,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2016,7 +2058,7 @@ Default Value:
 
 
 
-#### scales.customLabels.position<span class="type-signature type object">object</span>
+### scales.customLabels.position<span class="type-signature type object">object</span>
 
 
 
@@ -2047,7 +2089,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2063,7 +2106,7 @@ Default Value:
 
 
 
-#### scales.customLabels.position.x<span class="type-signature type number">number</span>
+### scales.customLabels.position.x<span class="type-signature type number">number</span>
 
 
 
@@ -2094,7 +2137,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2110,7 +2154,7 @@ Default Value:
 
 
 
-#### scales.customLabels.position.y<span class="type-signature type number">number</span>
+### scales.customLabels.position.y<span class="type-signature type number">number</span>
 
 
 
@@ -2141,7 +2185,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2157,7 +2202,7 @@ Default Value:
 
 
 
-#### scales.customLabels.positionType<span class="type-signature type object">object</span>
+### scales.customLabels.positionType<span class="type-signature type object">object</span>
 
 
 
@@ -2188,7 +2233,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2204,7 +2250,7 @@ Default Value:
 
 
 
-#### scales.customLabels.textAngle<span class="type-signature type number">number</span>
+### scales.customLabels.textAngle<span class="type-signature type number">number</span>
 
 
 
@@ -2235,7 +2281,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2251,7 +2298,7 @@ Default Value:
 
 
 
-#### scales.customLabels.value<span class="type-signature type string">string</span>
+### scales.customLabels.value<span class="type-signature type string">string</span>
 
 
 
@@ -2282,7 +2329,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2298,7 +2346,7 @@ Default Value:
 
 
 
-#### scales.direction<span class="type-signature type enum">enum</span>
+### scales.direction<span class="type-signature type enum">enum</span>
 
 
 
@@ -2329,7 +2377,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2345,7 +2394,7 @@ Default Value:
 
 
 
-#### scales.indicators<span class="type-signature type array">Array</span>
+### scales.indicators<span class="type-signature type array">Array</span>
 
 
 
@@ -2376,7 +2425,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2396,7 +2446,7 @@ Default Value:
 
 
 
-#### scales.indicators.backgroundColor<span class="type-signature type string">string</span>
+### scales.indicators.backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -2427,7 +2477,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2448,7 +2499,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.border<span class="type-signature type number">number</span>
+### scales.indicators.border<span class="type-signature type number">number</span>
 
 
 
@@ -2479,7 +2530,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2500,7 +2552,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.border.color<span class="type-signature type string">string</span>
+### scales.indicators.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -2531,7 +2583,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2552,7 +2605,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.border.width<span class="type-signature type number">number</span>
+### scales.indicators.border.width<span class="type-signature type number">number</span>
 
 
 
@@ -2583,7 +2636,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2604,7 +2658,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.font<span class="type-signature type object">object</span>
+### scales.indicators.font<span class="type-signature type object">object</span>
 
 
 
@@ -2635,7 +2689,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2655,7 +2710,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.font.fontFamily<span class="type-signature type string">string</span>
+### scales.indicators.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -2686,7 +2741,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2706,7 +2762,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.font.fontStyle<span class="type-signature type enum">enum</span>
+### scales.indicators.font.fontStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -2737,7 +2793,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2757,7 +2814,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.font.size<span class="type-signature type string">string</span>
+### scales.indicators.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -2788,7 +2845,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2808,7 +2866,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.height<span class="type-signature type number">number</span>
+### scales.indicators.height<span class="type-signature type number">number</span>
 
 
 
@@ -2839,7 +2897,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2860,7 +2919,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.opacity<span class="type-signature type number">number</span>
+### scales.indicators.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -2891,7 +2950,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2910,7 +2970,7 @@ value: 0, backgroundColor: "Red", border:{color: "Green"}, opacity:0.5}]}]});
 
 
 
-#### scales.indicators.position<span class="type-signature type object">object</span>
+### scales.indicators.position<span class="type-signature type object">object</span>
 
 
 
@@ -2941,7 +3001,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -2962,7 +3023,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.position.x<span class="type-signature type number">number</span>
+### scales.indicators.position.x<span class="type-signature type number">number</span>
 
 
 
@@ -2993,7 +3054,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3014,7 +3076,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.position.y<span class="type-signature type number">number</span>
+### scales.indicators.position.y<span class="type-signature type number">number</span>
 
 
 
@@ -3045,7 +3107,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3066,7 +3129,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.stateRanges<span class="type-signature type array">Array</span>
+### scales.indicators.stateRanges<span class="type-signature type array">Array</span>
 
 
 
@@ -3097,7 +3160,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3117,7 +3181,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.stateRanges.backgroundColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -3148,7 +3212,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3169,7 +3234,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.stateRanges.borderColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.borderColor<span class="type-signature type string">string</span>
 
 
 
@@ -3200,7 +3265,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3221,7 +3287,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.stateRanges.endValue<span class="type-signature type number">number</span>
+### scales.indicators.stateRanges.endValue<span class="type-signature type number">number</span>
 
 
 
@@ -3252,7 +3318,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3272,7 +3339,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.stateRanges.startValue<span class="type-signature type number">number</span>
+### scales.indicators.stateRanges.startValue<span class="type-signature type number">number</span>
 
 
 
@@ -3303,7 +3370,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3323,7 +3391,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.stateRanges.text<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.text<span class="type-signature type string">string</span>
 
 
 
@@ -3354,7 +3422,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3374,7 +3443,7 @@ Default Value:
 
 
 
-#### scales.indicators.stateRanges.textColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.textColor<span class="type-signature type string">string</span>
 
 
 
@@ -3405,7 +3474,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3425,7 +3495,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.textLocation<span class="type-signature type object">object</span>
+### scales.indicators.textLocation<span class="type-signature type object">object</span>
 
 
 
@@ -3456,7 +3526,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3476,7 +3547,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.textLocation.x<span class="type-signature type number">number</span>
+### scales.indicators.textLocation.x<span class="type-signature type number">number</span>
 
 
 
@@ -3507,7 +3578,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3527,7 +3599,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.textLocation.y<span class="type-signature type number">number</span>
+### scales.indicators.textLocation.y<span class="type-signature type number">number</span>
 
 
 
@@ -3558,7 +3630,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3578,7 +3651,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.type<span class="type-signature type enum">enum</span>
+### scales.indicators.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -3609,7 +3682,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3630,7 +3704,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.indicators.width<span class="type-signature type number">number</span>
+### scales.indicators.width<span class="type-signature type number">number</span>
 
 
 
@@ -3661,7 +3735,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3682,7 +3757,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### scales.labels<span class="type-signature type array">Array</span>
+### scales.labels<span class="type-signature type array">Array</span>
 
 
 
@@ -3713,7 +3788,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3729,7 +3805,7 @@ Default Value:
 
 
 
-#### scales.labels.angle<span class="type-signature type number">number</span>
+### scales.labels.angle<span class="type-signature type number">number</span>
 
 
 
@@ -3760,7 +3836,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3776,7 +3853,7 @@ Default Value:
 
 
 
-#### scales.labels.distanceFromScale<span class="type-signature type object">object</span>
+### scales.labels.distanceFromScale<span class="type-signature type object">object</span>
 
 
 
@@ -3807,7 +3884,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3823,7 +3901,7 @@ Default Value:
 
 
 
-#### scales.labels.distanceFromScale.x<span class="type-signature type number">number</span>
+### scales.labels.distanceFromScale.x<span class="type-signature type number">number</span>
 
 
 
@@ -3854,7 +3932,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3870,7 +3949,7 @@ Default Value:
 
 
 
-#### scales.labels.distanceFromScale.y<span class="type-signature type number">number</span>
+### scales.labels.distanceFromScale.y<span class="type-signature type number">number</span>
 
 
 
@@ -3901,7 +3980,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3917,7 +3997,7 @@ Default Value:
 
 
 
-#### scales.labels.font<span class="type-signature type object">object</span>
+### scales.labels.font<span class="type-signature type object">object</span>
 
 
 
@@ -3948,7 +4028,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -3964,7 +4045,7 @@ Default Value:
 
 
 
-#### scales.labels.font.fontFamily<span class="type-signature type string">string</span>
+### scales.labels.font.fontFamily<span class="type-signature type string">string</span>
 
 
 
@@ -3995,7 +4076,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4011,7 +4093,7 @@ Default Value:
 
 
 
-#### scales.labels.font.fontStyle<span class="type-signature type enum">enum</span>
+### scales.labels.font.fontStyle<span class="type-signature type enum">enum</span>
 
 
 
@@ -4042,7 +4124,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4058,7 +4141,7 @@ Default Value:
 
 
 
-#### scales.labels.font.size<span class="type-signature type string">string</span>
+### scales.labels.font.size<span class="type-signature type string">string</span>
 
 
 
@@ -4089,7 +4172,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4105,7 +4189,7 @@ Default Value:
 
 
 
-#### scales.labels.includeFirstValue<span class="type-signature type boolean">boolean</span>
+### scales.labels.includeFirstValue<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -4136,7 +4220,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4152,7 +4237,7 @@ Default Value:
 
 
 
-#### scales.labels.opacity<span class="type-signature type number">number</span>
+### scales.labels.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -4183,7 +4268,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4199,7 +4285,7 @@ Default Value:
 
 
 
-#### scales.labels.placement<span class="type-signature type enum">enum</span>
+### scales.labels.placement<span class="type-signature type enum">enum</span>
 
 
 
@@ -4230,7 +4316,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4246,7 +4333,7 @@ Default Value:
 
 
 
-#### scales.labels.textColor<span class="type-signature type string">string</span>
+### scales.labels.textColor<span class="type-signature type string">string</span>
 
 
 
@@ -4277,7 +4364,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4293,7 +4381,7 @@ $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{textColor: "green"}]}]});
 
 
 
-#### scales.labels.type<span class="type-signature type enum">enum</span>
+### scales.labels.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -4324,7 +4412,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4340,7 +4429,7 @@ Default Value:
 
 
 
-#### scales.labels.unitText<span class="type-signature type string">string</span>
+### scales.labels.unitText<span class="type-signature type string">string</span>
 
 
 
@@ -4371,7 +4460,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4387,7 +4477,7 @@ Default Value:
 
 
 
-#### scales.labels.unitTextPlacement<span class="type-signature type enum">enum</span>
+### scales.labels.unitTextPlacement<span class="type-signature type enum">enum</span>
 
 
 
@@ -4418,7 +4508,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4434,7 +4525,7 @@ Default Value:
 
 
 
-#### scales.length<span class="type-signature type number">number</span>
+### scales.length<span class="type-signature type number">number</span>
 
 
 
@@ -4465,7 +4556,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4481,7 +4573,7 @@ Default Value:
 
 
 
-#### scales.majorIntervalValue<span class="type-signature type number">number</span>
+### scales.majorIntervalValue<span class="type-signature type number">number</span>
 
 
 
@@ -4512,7 +4604,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4528,7 +4621,7 @@ Default Value:
 
 
 
-#### scales.markerPointers<span class="type-signature type array">Array</span>
+### scales.markerPointers<span class="type-signature type array">Array</span>
 
 
 
@@ -4559,7 +4652,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4575,7 +4669,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.backgroundColor<span class="type-signature type string">string</span>
+### scales.markerPointers.backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -4606,7 +4700,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4622,7 +4717,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.border<span class="type-signature type object">object</span>
+### scales.markerPointers.border<span class="type-signature type object">object</span>
 
 
 
@@ -4653,7 +4748,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4669,7 +4765,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.border.color<span class="type-signature type string">string</span>
+### scales.markerPointers.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -4700,7 +4796,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4716,7 +4813,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.border.width<span class="type-signature type number">number</span>
+### scales.markerPointers.border.width<span class="type-signature type number">number</span>
 
 
 
@@ -4747,7 +4844,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4763,7 +4861,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.distanceFromScale<span class="type-signature type number">number</span>
+### scales.markerPointers.distanceFromScale<span class="type-signature type number">number</span>
 
 
 
@@ -4794,7 +4892,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4810,7 +4909,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.gradients<span class="type-signature type object">object</span>
+### scales.markerPointers.gradients<span class="type-signature type object">object</span>
 
 
 
@@ -4841,7 +4940,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4857,7 +4957,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.length<span class="type-signature type number">number</span>
+### scales.markerPointers.length<span class="type-signature type number">number</span>
 
 
 
@@ -4888,7 +4988,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4904,7 +5005,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.opacity<span class="type-signature type number">number</span>
+### scales.markerPointers.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -4935,7 +5036,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4951,7 +5053,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.placement<span class="type-signature type enum">enum</span>
+### scales.markerPointers.placement<span class="type-signature type enum">enum</span>
 
 
 
@@ -4982,7 +5084,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -4998,7 +5101,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.type<span class="type-signature type enum">enum</span>
+### scales.markerPointers.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -5029,7 +5132,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5045,7 +5149,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.value<span class="type-signature type number">number</span>
+### scales.markerPointers.value<span class="type-signature type number">number</span>
 
 
 
@@ -5076,7 +5180,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5092,7 +5197,7 @@ Default Value:
 
 
 
-#### scales.markerPointers.width<span class="type-signature type number">number</span>
+### scales.markerPointers.width<span class="type-signature type number">number</span>
 
 
 
@@ -5123,7 +5228,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5139,7 +5245,7 @@ Default Value:
 
 
 
-#### scales.maximum<span class="type-signature type number">number</span>
+### scales.maximum<span class="type-signature type number">number</span>
 
 
 
@@ -5170,7 +5276,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5186,7 +5293,7 @@ Default Value:
 
 
 
-#### scales.minimum<span class="type-signature type number">number</span>
+### scales.minimum<span class="type-signature type number">number</span>
 
 
 
@@ -5217,7 +5324,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5233,7 +5341,7 @@ Default Value:
 
 
 
-#### scales.minorIntervalValue<span class="type-signature type number">number</span>
+### scales.minorIntervalValue<span class="type-signature type number">number</span>
 
 
 
@@ -5264,7 +5372,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5280,7 +5389,7 @@ Default Value:
 
 
 
-#### scales.opacity<span class="type-signature type number">number</span>
+### scales.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -5311,7 +5420,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5327,7 +5437,7 @@ Default Value:
 
 
 
-#### scales.position<span class="type-signature type object">object</span>
+### scales.position<span class="type-signature type object">object</span>
 
 
 
@@ -5358,7 +5468,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5374,7 +5485,7 @@ Default Value:
 
 
 
-#### scales.position.x<span class="type-signature type number">number</span>
+### scales.position.x<span class="type-signature type number">number</span>
 
 
 
@@ -5405,7 +5516,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5421,7 +5533,7 @@ Default Value:
 
 
 
-#### scales.position.y<span class="type-signature type number">number</span>
+### scales.position.y<span class="type-signature type number">number</span>
 
 
 
@@ -5452,7 +5564,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5468,7 +5581,7 @@ Default Value:
 
 
 
-#### scales.ranges<span class="type-signature type array">Array</span>
+### scales.ranges<span class="type-signature type array">Array</span>
 
 
 
@@ -5499,7 +5612,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5515,7 +5629,7 @@ Default Value:
 
 
 
-#### scales.ranges.backgroundColor<span class="type-signature type string">string</span>
+### scales.ranges.backgroundColor<span class="type-signature type string">string</span>
 
 
 
@@ -5546,7 +5660,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5562,7 +5677,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.border<span class="type-signature type object">Object</span>
+### scales.ranges.border<span class="type-signature type object">Object</span>
 
 
 
@@ -5593,7 +5708,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5609,7 +5725,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.border.color<span class="type-signature type string">string</span>
+### scales.ranges.border.color<span class="type-signature type string">string</span>
 
 
 
@@ -5640,7 +5756,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5656,7 +5773,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.border.width<span class="type-signature type number">number</span>
+### scales.ranges.border.width<span class="type-signature type number">number</span>
 
 
 
@@ -5687,7 +5804,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5703,7 +5821,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.distanceFromScale<span class="type-signature type number">number</span>
+### scales.ranges.distanceFromScale<span class="type-signature type number">number</span>
 
 
 
@@ -5734,7 +5852,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5750,7 +5869,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.endValue<span class="type-signature type number">number</span>
+### scales.ranges.endValue<span class="type-signature type number">number</span>
 
 
 
@@ -5781,7 +5900,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5797,7 +5917,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.endWidth<span class="type-signature type number">number</span>
+### scales.ranges.endWidth<span class="type-signature type number">number</span>
 
 
 
@@ -5828,7 +5948,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5844,7 +5965,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.gradients<span class="type-signature type object">object</span>
+### scales.ranges.gradients<span class="type-signature type object">object</span>
 
 
 
@@ -5875,7 +5996,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5891,7 +6013,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.opacity<span class="type-signature type number">number</span>
+### scales.ranges.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -5922,7 +6044,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5938,7 +6061,7 @@ Default Value:
 
 
 
-#### scales.ranges.placement<span class="type-signature type enum">enum</span>
+### scales.ranges.placement<span class="type-signature type enum">enum</span>
 
 
 
@@ -5969,7 +6092,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -5985,7 +6109,7 @@ Default Value:
 
 
 
-#### scales.ranges.startValue<span class="type-signature type number">number</span>
+### scales.ranges.startValue<span class="type-signature type number">number</span>
 
 
 
@@ -6016,7 +6140,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6032,7 +6157,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.ranges.startWidth<span class="type-signature type number">number</span>
+### scales.ranges.startWidth<span class="type-signature type number">number</span>
 
 
 
@@ -6063,7 +6188,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6079,7 +6205,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-#### scales.shadowOffset<span class="type-signature type number">number</span>
+### scales.shadowOffset<span class="type-signature type number">number</span>
 
 
 
@@ -6110,7 +6236,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6126,7 +6253,7 @@ Default Value:
 
 
 
-#### scales.showBarPointers<span class="type-signature type boolean">boolean</span>
+### scales.showBarPointers<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6157,7 +6284,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6173,7 +6301,7 @@ Default Value:
 
 
 
-#### scales.showCustomLabels<span class="type-signature type boolean">boolean</span>
+### scales.showCustomLabels<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6204,7 +6332,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6220,7 +6349,7 @@ Default Value:
 
 
 
-#### scales.showIndicators<span class="type-signature type boolean">boolean</span>
+### scales.showIndicators<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6251,7 +6380,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6267,7 +6397,7 @@ Default Value:
 
 
 
-#### scales.showLabels<span class="type-signature type boolean">boolean</span>
+### scales.showLabels<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6298,7 +6428,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6314,7 +6445,7 @@ Default Value:
 
 
 
-#### scales.showMarkerPointers<span class="type-signature type boolean">boolean</span>
+### scales.showMarkerPointers<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6345,7 +6476,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6361,7 +6493,7 @@ Default Value:
 
 
 
-#### scales.showRanges<span class="type-signature type boolean">boolean</span>
+### scales.showRanges<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6392,7 +6524,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6408,7 +6541,7 @@ Default Value:
 
 
 
-#### scales.showTicks<span class="type-signature type boolean">boolean</span>
+### scales.showTicks<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -6439,7 +6572,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6455,7 +6589,7 @@ Default Value:
 
 
 
-#### scales.ticks<span class="type-signature type array">Array</span>
+### scales.ticks<span class="type-signature type array">Array</span>
 
 
 
@@ -6486,7 +6620,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6502,7 +6637,7 @@ Default Value:
 
 
 
-#### scales.ticks.angle<span class="type-signature type number">number</span>
+### scales.ticks.angle<span class="type-signature type number">number</span>
 
 
 
@@ -6533,7 +6668,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6549,7 +6685,7 @@ Default Value:
 
 
 
-#### scales.ticks.color<span class="type-signature type string">string</span>
+### scales.ticks.color<span class="type-signature type string">string</span>
 
 
 
@@ -6580,7 +6716,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6596,7 +6733,7 @@ Default Value:
 
 
 
-#### scales.ticks.distanceFromScale<span class="type-signature type object">object</span>
+### scales.ticks.distanceFromScale<span class="type-signature type object">object</span>
 
 
 
@@ -6627,7 +6764,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6643,7 +6781,7 @@ Default Value:
 
 
 
-#### scales.ticks.distanceFromScale.x<span class="type-signature type number">number</span>
+### scales.ticks.distanceFromScale.x<span class="type-signature type number">number</span>
 
 
 
@@ -6674,7 +6812,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6690,7 +6829,7 @@ Default Value:
 
 
 
-#### scales.ticks.distanceFromScale.y<span class="type-signature type number">number</span>
+### scales.ticks.distanceFromScale.y<span class="type-signature type number">number</span>
 
 
 
@@ -6721,7 +6860,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6737,7 +6877,7 @@ Default Value:
 
 
 
-#### scales.ticks.height<span class="type-signature type number">number</span>
+### scales.ticks.height<span class="type-signature type number">number</span>
 
 
 
@@ -6768,7 +6908,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6784,7 +6925,7 @@ Default Value:
 
 
 
-#### scales.ticks.opacity<span class="type-signature type number">number</span>
+### scales.ticks.opacity<span class="type-signature type number">number</span>
 
 
 
@@ -6815,7 +6956,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6831,7 +6973,7 @@ Default Value:
 
 
 
-#### scales.ticks.placement<span class="type-signature type enum">enum</span>
+### scales.ticks.placement<span class="type-signature type enum">enum</span>
 
 
 
@@ -6862,7 +7004,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6878,7 +7021,7 @@ Default Value:
 
 
 
-#### scales.ticks.type<span class="type-signature type enum">enum</span>
+### scales.ticks.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -6909,7 +7052,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6925,7 +7069,7 @@ Default Value:
 
 
 
-#### scales.ticks.width<span class="type-signature type number">number</span>
+### scales.ticks.width<span class="type-signature type number">number</span>
 
 
 
@@ -6956,7 +7100,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -6972,7 +7117,7 @@ Default Value:
 
 
 
-#### scales.type<span class="type-signature type enum">enum</span>
+### scales.type<span class="type-signature type enum">enum</span>
 
 
 
@@ -7003,7 +7148,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7019,7 +7165,7 @@ Default Value:
 
 
 
-#### scales.width<span class="type-signature type number">number</span>
+### scales.width<span class="type-signature type number">number</span>
 
 
 
@@ -7050,7 +7196,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7066,7 +7213,7 @@ Default Value:
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -7097,7 +7244,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7113,7 +7261,7 @@ Default Value:
 
 
 
-#### tickColor<span class="type-signature type string">string</span>
+### tickColor<span class="type-signature type string">string</span>
 
 
 
@@ -7144,7 +7292,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7160,7 +7309,7 @@ Default Value:
 
 
 
-#### tooltip<span class="type-signature type object">object</span>
+### tooltip<span class="type-signature type object">object</span>
 
 
 
@@ -7191,7 +7340,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7208,7 +7358,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true,showCusto
 
 
 
-#### tooltip.showCustomLabelTooltip<span class="type-signature type boolean">boolean</span>
+### tooltip.showCustomLabelTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -7239,7 +7389,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7256,7 +7407,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showCustomLabelTooltip: true} })
 
 
 
-#### tooltip.showLabelTooltip<span class="type-signature type boolean">boolean</span>
+### tooltip.showLabelTooltip<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -7287,7 +7438,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7304,7 +7456,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true} });
 
 
 
-#### tooltip.templateID<span class="type-signature type string">string</span>
+### tooltip.templateID<span class="type-signature type string">string</span>
 
 
 
@@ -7335,7 +7487,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7352,7 +7505,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true, template
 
 
 
-#### value<span class="type-signature type number">number</span>
+### value<span class="type-signature type number">number</span>
 
 
 
@@ -7383,7 +7536,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7399,7 +7553,7 @@ $("#LinearGauge1").ejLinearGauge({  size: 5.5});
 
 
 
-#### width<span class="type-signature type number">number</span>
+### width<span class="type-signature type number">number</span>
 
 
 
@@ -7430,7 +7584,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7444,7 +7599,7 @@ Default Value:
 
 
 
-### Methods
+## Methods
 
 
 
@@ -7453,7 +7608,7 @@ Default Value:
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -7468,7 +7623,8 @@ destroy the linear gauge all events bound using this._on will be unbind automati
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7486,7 +7642,7 @@ linearGaugeobj.destroy();
 
 
 
-#### exportImage<span class="signature">()</span>
+### exportImage<span class="signature">()</span>
 
 
 
@@ -7522,7 +7678,8 @@ To export Image
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7540,7 +7697,7 @@ LinearGaugeObj.exportImage("myImage","jpeg");
 
 
 
-#### getBarDistanceFromScale<span class="signature">()</span>
+### getBarDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -7576,7 +7733,8 @@ To get Bar Distance From Scale in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7594,7 +7752,7 @@ LinearGaugeObj.getBarDistanceFromScale(0,0);
 
 
 
-#### getBarPointerValue<span class="signature">()</span>
+### getBarPointerValue<span class="signature">()</span>
 
 
 
@@ -7630,7 +7788,8 @@ To get Bar Pointer Value in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7648,7 +7807,7 @@ LinearGaugeObj.getBarPointerValue(0,0);
 
 
 
-#### getBarWidth<span class="signature">()</span>
+### getBarWidth<span class="signature">()</span>
 
 
 
@@ -7684,7 +7843,8 @@ To get Bar Width in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7703,7 +7863,7 @@ LinearGaugeObj.getBarWidth(0,0);
 
 
 
-#### getCustomLabelAngle<span class="signature">()</span>
+### getCustomLabelAngle<span class="signature">()</span>
 
 
 
@@ -7739,7 +7899,8 @@ To get CustomLabel Angle in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7757,7 +7918,7 @@ LinearGaugeObj.getCustomLabelAngle(0,0);
 
 
 
-#### getCustomLabelValue<span class="signature">()</span>
+### getCustomLabelValue<span class="signature">()</span>
 
 
 
@@ -7793,7 +7954,8 @@ To get CustomLabel Value in string
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7811,7 +7973,7 @@ LinearGaugeObj.getCustomLabelValue(0,0);
 
 
 
-#### getLabelAngle<span class="signature">()</span>
+### getLabelAngle<span class="signature">()</span>
 
 
 
@@ -7847,7 +8009,8 @@ To get Label Angle in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7865,7 +8028,7 @@ LinearGaugeObj.getLabelAngle(0,0);
 
 
 
-#### getLabelPlacement<span class="signature">()</span>
+### getLabelPlacement<span class="signature">()</span>
 
 
 
@@ -7901,7 +8064,8 @@ To get LabelPlacement in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7919,7 +8083,7 @@ LinearGaugeObj.getLabelPlacement(0,0);
 
 
 
-#### getLabelStyle<span class="signature">()</span>
+### getLabelStyle<span class="signature">()</span>
 
 
 
@@ -7955,7 +8119,8 @@ To get LabelStyle in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -7973,7 +8138,7 @@ LinearGaugeObj.getLabelStyle(0,0);
 
 
 
-#### getLabelXDistanceFromScale<span class="signature">()</span>
+### getLabelXDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -8009,7 +8174,8 @@ To get Label XDistance From Scale in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8027,7 +8193,7 @@ LinearGaugeObj.getLabelXDistanceFromScale(0,0);
 
 
 
-#### getLabelYDistanceFromScale<span class="signature">()</span>
+### getLabelYDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -8063,7 +8229,8 @@ To get PointerValue in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8081,7 +8248,7 @@ LinearGaugeObj.getLabelYDistanceFromScale(0,0);
 
 
 
-#### getMajorIntervalValue<span class="signature">()</span>
+### getMajorIntervalValue<span class="signature">()</span>
 
 
 
@@ -8112,7 +8279,8 @@ To get Major Interval Value in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8130,7 +8298,7 @@ LinearGaugeObj.getMajorIntervalValue(0);
 
 
 
-#### getMarkerStyle<span class="signature">()</span>
+### getMarkerStyle<span class="signature">()</span>
 
 
 
@@ -8166,7 +8334,8 @@ To get MarkerStyle in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8184,7 +8353,7 @@ LinearGaugeObj.getMarkerStyle(0,0);
 
 
 
-#### getMaximumValue<span class="signature">()</span>
+### getMaximumValue<span class="signature">()</span>
 
 
 
@@ -8215,7 +8384,8 @@ To get Maximum Value in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8233,7 +8403,7 @@ LinearGaugeObj.getMaximumValue(0);
 
 
 
-#### getMinimumValue<span class="signature">()</span>
+### getMinimumValue<span class="signature">()</span>
 
 
 
@@ -8269,7 +8439,8 @@ To get PointerValue in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8287,7 +8458,7 @@ LinearGaugeObj.getMinimumValue(0,0);
 
 
 
-#### getMinorIntervalValue<span class="signature">()</span>
+### getMinorIntervalValue<span class="signature">()</span>
 
 
 
@@ -8318,7 +8489,8 @@ To get Minor Interval Value in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8336,7 +8508,7 @@ LinearGaugeObj.getMinorIntervalValue(0);
 
 
 
-#### getPointerDistanceFromScale<span class="signature">()</span>
+### getPointerDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -8372,7 +8544,8 @@ To get Pointer Distance From Scale in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8390,7 +8563,7 @@ LinearGaugeObj.getPointerDistanceFromScale(0,0);
 
 
 
-#### getPointerHeight<span class="signature">()</span>
+### getPointerHeight<span class="signature">()</span>
 
 
 
@@ -8426,7 +8599,8 @@ To get PointerHeight in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8444,7 +8618,7 @@ LinearGaugeObj.getPointerHeight(0,0);
 
 
 
-#### getPointerPlacement<span class="signature">()</span>
+### getPointerPlacement<span class="signature">()</span>
 
 
 
@@ -8480,7 +8654,8 @@ To get Pointer Placement in String
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8498,7 +8673,7 @@ LinearGaugeObj.getPointerPlacement(0,0);
 
 
 
-#### getPointerValue<span class="signature">()</span>
+### getPointerValue<span class="signature">()</span>
 
 
 
@@ -8534,7 +8709,8 @@ To get PointerValue in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8552,7 +8728,7 @@ LinearGaugeObj.getPointerValue(0,0);
 
 
 
-#### getPointerWidth<span class="signature">()</span>
+### getPointerWidth<span class="signature">()</span>
 
 
 
@@ -8588,7 +8764,8 @@ To get PointerWidth in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8606,7 +8783,7 @@ LinearGaugeObj.getPointerWidth(0,0);
 
 
 
-#### getRangeBorderWidth<span class="signature">()</span>
+### getRangeBorderWidth<span class="signature">()</span>
 
 
 
@@ -8642,7 +8819,8 @@ To get Range Border Width in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8660,7 +8838,7 @@ LinearGaugeObj.getRangeBorderWidth(0,0);
 
 
 
-#### getRangeDistanceFromScale<span class="signature">()</span>
+### getRangeDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -8696,7 +8874,8 @@ To get Range Distance From Scale in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8714,7 +8893,7 @@ LinearGaugeObj.getRangeDistanceFromScale(0,0);
 
 
 
-#### getRangeEndValue<span class="signature">()</span>
+### getRangeEndValue<span class="signature">()</span>
 
 
 
@@ -8750,7 +8929,8 @@ To get Range End Value in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8768,7 +8948,7 @@ LinearGaugeObj.getRangeEndValue(0,0);
 
 
 
-#### getRangeEndWidth<span class="signature">()</span>
+### getRangeEndWidth<span class="signature">()</span>
 
 
 
@@ -8804,7 +8984,8 @@ To get Range End Width in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8822,7 +9003,7 @@ LinearGaugeObj.getRangeEndWidth(0,0);
 
 
 
-#### getRangePosition<span class="signature">()</span>
+### getRangePosition<span class="signature">()</span>
 
 
 
@@ -8858,7 +9039,8 @@ To get Range Position in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8876,7 +9058,7 @@ LinearGaugeObj.getRangePosition(0,0);
 
 
 
-#### getRangeStartValue<span class="signature">()</span>
+### getRangeStartValue<span class="signature">()</span>
 
 
 
@@ -8912,7 +9094,8 @@ To get Range Start Value in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8930,7 +9113,7 @@ LinearGaugeObj.getRangeStartValue(0,0);
 
 
 
-#### getRangeStartWidth<span class="signature">()</span>
+### getRangeStartWidth<span class="signature">()</span>
 
 
 
@@ -8966,7 +9149,8 @@ To get Range Start Width in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -8984,7 +9168,7 @@ LinearGaugeObj.getRangeStartWidth(0,0);
 
 
 
-#### getScaleBarLength<span class="signature">()</span>
+### getScaleBarLength<span class="signature">()</span>
 
 
 
@@ -9015,7 +9199,8 @@ To get ScaleBarLength in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9033,7 +9218,7 @@ LinearGaugeObj.getScaleBarLength(0);
 
 
 
-#### getScaleBarSize<span class="signature">()</span>
+### getScaleBarSize<span class="signature">()</span>
 
 
 
@@ -9069,7 +9254,8 @@ To get Scale Bar Size in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9087,7 +9273,7 @@ LinearGaugeObj.getScaleBarSize(0,0);
 
 
 
-#### getScaleBorderWidth<span class="signature">()</span>
+### getScaleBorderWidth<span class="signature">()</span>
 
 
 
@@ -9118,7 +9304,8 @@ To get Scale Border Width in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9136,7 +9323,7 @@ LinearGaugeObj.getScaleBorderWidth(0);
 
 
 
-#### getScaleDirection<span class="signature">()</span>
+### getScaleDirection<span class="signature">()</span>
 
 
 
@@ -9167,7 +9354,8 @@ To get Scale Direction in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9185,7 +9373,7 @@ LinearGaugeObj.getScaleDirection(0,0);
 
 
 
-#### getScaleLocation<span class="signature">()</span>
+### getScaleLocation<span class="signature">()</span>
 
 
 
@@ -9216,7 +9404,8 @@ To get Scale Location in object
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9234,7 +9423,7 @@ LinearGaugeObj.getScaleLocation(0);
 
 
 
-#### getScaleStyle<span class="signature">()</span>
+### getScaleStyle<span class="signature">()</span>
 
 
 
@@ -9265,7 +9454,8 @@ To get Scale Style in string
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9283,7 +9473,7 @@ LinearGaugeObj.getScaleStyle(0);
 
 
 
-#### getTickAngle<span class="signature">()</span>
+### getTickAngle<span class="signature">()</span>
 
 
 
@@ -9319,7 +9509,8 @@ To get Tick Angle in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9337,7 +9528,7 @@ LinearGaugeObj.getTickAngle(0,0);
 
 
 
-#### getTickHeight<span class="signature">()</span>
+### getTickHeight<span class="signature">()</span>
 
 
 
@@ -9373,7 +9564,8 @@ To get Tick Height in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9391,7 +9583,7 @@ LinearGaugeObj.getTickHeight(0,0);
 
 
 
-#### getTickPlacement<span class="signature">()</span>
+### getTickPlacement<span class="signature">()</span>
 
 
 
@@ -9427,7 +9619,8 @@ To get getTickPlacement in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9445,7 +9638,7 @@ LinearGaugeObj.getTickPlacement(0,0);
 
 
 
-#### getTickStyle<span class="signature">()</span>
+### getTickStyle<span class="signature">()</span>
 
 
 
@@ -9481,7 +9674,8 @@ To get Tick Style in string
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9499,7 +9693,7 @@ LinearGaugeObj.getTickStyle(0,0);
 
 
 
-#### getTickWidth<span class="signature">()</span>
+### getTickWidth<span class="signature">()</span>
 
 
 
@@ -9535,7 +9729,8 @@ To get Tick Width in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9553,7 +9748,7 @@ LinearGaugeObj.getTickWidth(0,0);
 
 
 
-#### getTickXDistanceFromScale<span class="signature">()</span>
+### getTickXDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -9589,7 +9784,8 @@ To get get Tick XDistance From Scale in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9607,7 +9803,7 @@ LinearGaugeObj.getTickXDistanceFromScale(0,0);
 
 
 
-#### getTickYDistanceFromScale<span class="signature">()</span>
+### getTickYDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -9643,7 +9839,8 @@ To get Tick YDistance From Scale in number
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9661,7 +9858,7 @@ LinearGaugeObj.getTickYDistanceFromScale(0,0);
 
 
 
-#### scales<span class="signature">()</span>
+### scales<span class="signature">()</span>
 
 
 
@@ -9692,7 +9889,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9708,7 +9906,7 @@ Default Value:
 
 
 
-#### setBarDistanceFromScale<span class="signature">()</span>
+### setBarDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -9749,7 +9947,8 @@ To set setBarDistanceFromScale
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9767,7 +9966,7 @@ LinearGaugeObj.setBarDistanceFromScale(0,0,30);
 
 
 
-#### setBarPointerValue<span class="signature">()</span>
+### setBarPointerValue<span class="signature">()</span>
 
 
 
@@ -9808,7 +10007,8 @@ To set setBarPointerValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9826,7 +10026,7 @@ LinearGaugeObj.setBarPointerValue(0,0,30);
 
 
 
-#### setBarWidth<span class="signature">()</span>
+### setBarWidth<span class="signature">()</span>
 
 
 
@@ -9867,7 +10067,8 @@ To set setBarWidth
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9885,7 +10086,7 @@ LinearGaugeObj.setBarWidth(0,0,30);
 
 
 
-#### setCustomLabelAngle<span class="signature">()</span>
+### setCustomLabelAngle<span class="signature">()</span>
 
 
 
@@ -9926,7 +10127,8 @@ To set setCustomLabelAngle
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -9944,7 +10146,7 @@ LinearGaugeObj.setCustomLabelAngle(0,0,30);
 
 
 
-#### setCustomLabelValue<span class="signature">()</span>
+### setCustomLabelValue<span class="signature">()</span>
 
 
 
@@ -9985,7 +10187,8 @@ To set setCustomLabelValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10003,7 +10206,7 @@ LinearGaugeObj.setCustomLabelValue(0,0,"text");
 
 
 
-#### setLabelAngle<span class="signature">()</span>
+### setLabelAngle<span class="signature">()</span>
 
 
 
@@ -10044,7 +10247,8 @@ To set setLabelAngle
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10062,7 +10266,7 @@ LinearGaugeObj.setLabelAngle(0,0,20);
 
 
 
-#### setLabelPlacement<span class="signature">()</span>
+### setLabelPlacement<span class="signature">()</span>
 
 
 
@@ -10103,7 +10307,8 @@ To set setLabelPlacement
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10121,7 +10326,7 @@ LinearGaugeObj.setLabelPlacement(0,0,"far");
 
 
 
-#### setLabelStyle<span class="signature">()</span>
+### setLabelStyle<span class="signature">()</span>
 
 
 
@@ -10162,7 +10367,8 @@ To set setLabelStyle
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10180,7 +10386,7 @@ LinearGaugeObj.setLabelStyle(0,0,"major");
 
 
 
-#### setLabelXDistanceFromScale<span class="signature">()</span>
+### setLabelXDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -10221,7 +10427,8 @@ To set setLabelXDistanceFromScale
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10239,7 +10446,7 @@ LinearGaugeObj.setLabelXDistanceFromScale(0,0,20);
 
 
 
-#### setLabelYDistanceFromScale<span class="signature">()</span>
+### setLabelYDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -10280,7 +10487,8 @@ To set setLabelYDistanceFromScale
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10298,7 +10506,7 @@ LinearGaugeObj.setLabelYDistanceFromScale(0,0,20);
 
 
 
-#### setMajorIntervalValue<span class="signature">()</span>
+### setMajorIntervalValue<span class="signature">()</span>
 
 
 
@@ -10334,7 +10542,8 @@ To set setMajorIntervalValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10352,7 +10561,7 @@ LinearGaugeObj.setMajorIntervalValue(0,5);
 
 
 
-#### setMarkerStyle<span class="signature">()</span>
+### setMarkerStyle<span class="signature">()</span>
 
 
 
@@ -10393,7 +10602,8 @@ To set setMarkerStyle
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10411,7 +10621,7 @@ LinearGaugeObj.setMarkerStyle(0,0,"triangle");
 
 
 
-#### setMaximumValue<span class="signature">()</span>
+### setMaximumValue<span class="signature">()</span>
 
 
 
@@ -10447,7 +10657,8 @@ To set setMaximumValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10465,7 +10676,7 @@ LinearGaugeObj.setMaximumValue(0,20);
 
 
 
-#### setMinimumValue<span class="signature">()</span>
+### setMinimumValue<span class="signature">()</span>
 
 
 
@@ -10501,7 +10712,8 @@ To set setMinimumValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10519,7 +10731,7 @@ LinearGaugeObj.setMinimumValue(0,20);
 
 
 
-#### setMinorIntervalValue<span class="signature">()</span>
+### setMinorIntervalValue<span class="signature">()</span>
 
 
 
@@ -10555,7 +10767,8 @@ To set setMinorIntervalValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10573,7 +10786,7 @@ LinearGaugeObj.setMinorIntervalValue(0,2);
 
 
 
-#### setPointerDistanceFromScale<span class="signature">()</span>
+### setPointerDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -10614,7 +10827,8 @@ To set setPointerDistanceFromScale
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10632,7 +10846,7 @@ LinearGaugeObj.setPointerDistanceFromScale(0,0,30);
 
 
 
-#### setPointerHeight<span class="signature">()</span>
+### setPointerHeight<span class="signature">()</span>
 
 
 
@@ -10673,7 +10887,8 @@ To set PointerHeight
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10691,7 +10906,7 @@ LinearGaugeObj.setPointerHeight(0,0,30);
 
 
 
-#### setPointerPlacement<span class="signature">()</span>
+### setPointerPlacement<span class="signature">()</span>
 
 
 
@@ -10732,7 +10947,8 @@ To set setPointerPlacement
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10750,7 +10966,7 @@ LinearGaugeObj.setPointerPlacement(0,0,"far");
 
 
 
-#### setPointerValue<span class="signature">()</span>
+### setPointerValue<span class="signature">()</span>
 
 
 
@@ -10791,7 +11007,8 @@ To set PointerValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10809,7 +11026,7 @@ LinearGaugeObj.setPointerValue(0,0,30);
 
 
 
-#### setPointerWidth<span class="signature">()</span>
+### setPointerWidth<span class="signature">()</span>
 
 
 
@@ -10850,7 +11067,8 @@ To set PointerWidth
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10868,7 +11086,7 @@ LinearGaugeObj.setPointerWidth(0,0,30);
 
 
 
-#### setRangeBorderWidth<span class="signature">()</span>
+### setRangeBorderWidth<span class="signature">()</span>
 
 
 
@@ -10909,7 +11127,8 @@ To set setRangeBorderWidth
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10927,7 +11146,7 @@ LinearGaugeObj.setRangeBorderWidth(0,0,2);
 
 
 
-#### setRangeDistanceFromScale<span class="signature">()</span>
+### setRangeDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -10968,7 +11187,8 @@ To set setRangeDistanceFromScale
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -10986,7 +11206,7 @@ LinearGaugeObj.setRangeDistanceFromScale(0,0,20);
 
 
 
-#### setRangeEndValue<span class="signature">()</span>
+### setRangeEndValue<span class="signature">()</span>
 
 
 
@@ -11027,7 +11247,8 @@ To set setRangeEndValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11045,7 +11266,7 @@ LinearGaugeObj.setRangeEndValue(0,0,20);
 
 
 
-#### setRangeEndWidth<span class="signature">()</span>
+### setRangeEndWidth<span class="signature">()</span>
 
 
 
@@ -11086,7 +11307,8 @@ To set setRangeEndWidth
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11104,7 +11326,7 @@ LinearGaugeObj.setRangeEndWidth(0,0,20);
 
 
 
-#### setRangePosition<span class="signature">()</span>
+### setRangePosition<span class="signature">()</span>
 
 
 
@@ -11145,7 +11367,8 @@ To set setRangePosition
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11163,7 +11386,7 @@ LinearGaugeObj.setRangePosition(0,0,20);
 
 
 
-#### setRangeStartValue<span class="signature">()</span>
+### setRangeStartValue<span class="signature">()</span>
 
 
 
@@ -11204,7 +11427,8 @@ To set setRangeStartValue
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11222,7 +11446,7 @@ LinearGaugeObj.setRangeStartValue(0,0,20);
 
 
 
-#### setRangeStartWidth<span class="signature">()</span>
+### setRangeStartWidth<span class="signature">()</span>
 
 
 
@@ -11263,7 +11487,8 @@ To set setRangeStartWidth
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11281,7 +11506,7 @@ LinearGaugeObj.setRangeStartWidth(0,0,20);
 
 
 
-#### setScaleBarLength<span class="signature">()</span>
+### setScaleBarLength<span class="signature">()</span>
 
 
 
@@ -11317,7 +11542,8 @@ To set setScaleBarLength
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11335,7 +11561,7 @@ LinearGaugeObj.setScaleBarLength(0,150);
 
 
 
-#### setScaleBarSize<span class="signature">()</span>
+### setScaleBarSize<span class="signature">()</span>
 
 
 
@@ -11371,7 +11597,8 @@ To set setScaleBarSize
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11389,7 +11616,7 @@ LinearGaugeObj.setScaleBarSize(0,20);
 
 
 
-#### setScaleBorderWidth<span class="signature">()</span>
+### setScaleBorderWidth<span class="signature">()</span>
 
 
 
@@ -11425,7 +11652,8 @@ To set setScaleBorderWidth
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11443,7 +11671,7 @@ LinearGaugeObj.setScaleBorderWidth(0,10);
 
 
 
-#### setScaleDirection<span class="signature">()</span>
+### setScaleDirection<span class="signature">()</span>
 
 
 
@@ -11479,7 +11707,8 @@ To set setScaleDirection
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11497,7 +11726,7 @@ LinearGaugeObj.setScaleDirection(0,"counterclockwise");
 
 
 
-#### setScaleLocation<span class="signature">()</span>
+### setScaleLocation<span class="signature">()</span>
 
 
 
@@ -11533,7 +11762,8 @@ To set setScaleLocation
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11551,7 +11781,7 @@ LinearGaugeObj.setScaleLocation(0,{x:20,y:20});
 
 
 
-#### setScaleStyle<span class="signature">()</span>
+### setScaleStyle<span class="signature">()</span>
 
 
 
@@ -11587,7 +11817,8 @@ To set setScaleStyle
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11605,7 +11836,7 @@ LinearGaugeObj.setScaleStyle(0,"thermometer");
 
 
 
-#### setTickAngle<span class="signature">()</span>
+### setTickAngle<span class="signature">()</span>
 
 
 
@@ -11646,7 +11877,8 @@ To set setTickAngle
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11664,7 +11896,7 @@ LinearGaugeObj.setTickAngle(0,0,20);
 
 
 
-#### setTickHeight<span class="signature">()</span>
+### setTickHeight<span class="signature">()</span>
 
 
 
@@ -11705,7 +11937,8 @@ To set setTickHeight
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11723,7 +11956,7 @@ LinearGaugeObj.setTickHeight(0,0,10);
 
 
 
-#### setTickPlacement<span class="signature">()</span>
+### setTickPlacement<span class="signature">()</span>
 
 
 
@@ -11764,7 +11997,8 @@ To set setTickPlacement
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11782,7 +12016,7 @@ LinearGaugeObj.setTickPlacement(0,0,"far");
 
 
 
-#### setTickStyle<span class="signature">()</span>
+### setTickStyle<span class="signature">()</span>
 
 
 
@@ -11823,7 +12057,8 @@ To set setTickStyle
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11841,7 +12076,7 @@ LinearGaugeObj.setTickStyle(0,0,"major");
 
 
 
-#### setTickWidth<span class="signature">()</span>
+### setTickWidth<span class="signature">()</span>
 
 
 
@@ -11882,7 +12117,8 @@ To set setTickWidth
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11900,7 +12136,7 @@ LinearGaugeObj.setTickWidth(0,0,5);
 
 
 
-#### setTickXDistanceFromScale<span class="signature">()</span>
+### setTickXDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -11941,7 +12177,8 @@ To set setTickXDistanceFromScale
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -11959,7 +12196,7 @@ LinearGaugeObj.setTickXDistanceFromScale(0,0,20);
 
 
 
-#### setTickYDistanceFromScale<span class="signature">()</span>
+### setTickYDistanceFromScale<span class="signature">()</span>
 
 
 
@@ -12000,7 +12237,8 @@ To set setTickYDistanceFromScale
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12016,7 +12254,7 @@ LinearGaugeObj.setTickYDistanceFromScale(0,0,20);
 
 
 
-### Events
+## Events
 
 
 
@@ -12025,7 +12263,7 @@ LinearGaugeObj.setTickYDistanceFromScale(0,0,20);
 
 
 
-#### drawBarPointers
+### drawBarPointers
 
 
 
@@ -12111,7 +12349,8 @@ Triggers while the bar pointer are being drawn on the gauge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12129,7 +12368,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### drawCustomLabel
+### drawCustomLabel
 
 
 
@@ -12210,7 +12449,8 @@ Triggers while the customLabel are being drawn on the gauge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12228,7 +12468,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### drawIndicators
+### drawIndicators
 
 
 
@@ -12309,7 +12549,8 @@ Triggers while the Indicator are being drawn on the gauge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12327,7 +12568,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### drawLabels
+### drawLabels
 
 
 
@@ -12435,7 +12676,8 @@ Triggers while the label are being drawn on the gauge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12453,7 +12695,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### drawMarkerPointers
+### drawMarkerPointers
 
 
 
@@ -12544,7 +12786,8 @@ Triggers while the marker are being drawn on the gauge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12562,7 +12805,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### drawRange
+### drawRange
 
 
 
@@ -12643,7 +12886,8 @@ Triggers while the range are being drawn on the gauge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12661,7 +12905,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### drawTicks
+### drawTicks
 
 
 
@@ -12769,7 +13013,8 @@ Triggers while the ticks are being drawn on the gauge.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12787,7 +13032,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### init
+### init
 
 
 
@@ -12843,7 +13088,8 @@ Triggers when the gauge is initialized.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12861,7 +13107,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### load
+### load
 
 
 
@@ -12917,7 +13163,8 @@ Triggers while the gauge start to Load.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -12935,7 +13182,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### mouseClick
+### mouseClick
 
 
 
@@ -13021,7 +13268,8 @@ Triggers when the left mouse button is clicked.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -13040,7 +13288,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### mouseClickMove
+### mouseClickMove
 
 
 
@@ -13143,7 +13391,8 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -13162,7 +13411,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### mouseClickUp
+### mouseClickUp
 
 
 
@@ -13248,7 +13497,8 @@ Triggers when the mouse click is released.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -13267,7 +13517,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-#### renderComplete
+### renderComplete
 
 
 
@@ -13323,7 +13573,8 @@ Triggers while the rendering of the gauge completed.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

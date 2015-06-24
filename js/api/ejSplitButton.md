@@ -18,7 +18,7 @@ The Split button allows you to perform an action using clicking the button and c
 
 
 
-#### $(element).ejSplitButton<span class="signature">()</span>
+## $(element).ejSplitButton<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ The Split button allows you to perform an action using clicking the button and c
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -51,7 +52,7 @@ The Split button allows you to perform an action using clicking the button and c
 
 
 
-### Requires
+## Requires
 
 
 
@@ -79,7 +80,7 @@ The Split button allows you to perform an action using clicking the button and c
 
 
 
-### Members
+## Members
 
 
 
@@ -88,7 +89,7 @@ The Split button allows you to perform an action using clicking the button and c
 
 
 
-#### arrowPosition<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### arrowPosition<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
 
 
 
@@ -119,7 +120,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -141,7 +143,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-#### buttonMode<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### buttonMode<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
 
 
 
@@ -172,7 +174,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -194,7 +197,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-#### contentType<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### contentType<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
 
 
 
@@ -225,7 +228,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;button id="sbutton"&gt;File&lt;/button&gt;
@@ -245,7 +249,7 @@ $("#sbutton").ejSplitButton({ targetID: "target",width:100, contentType:  ej.Con
 
 
 
-#### cssClass<span class="type-signature type string">String</span>
+### cssClass<span class="type-signature type string">String</span>
 
 
 
@@ -276,7 +280,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -297,7 +302,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,cssClass: "gradient-li
 
 
 
-#### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -328,7 +333,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -349,7 +355,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,enabled:  true });
 
 
 
-#### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL<span class="type-signature type boolean">Boolean</span>
 
 
 
@@ -380,7 +386,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -401,7 +408,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,enableRTL : true});
 
 
 
-#### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -432,7 +439,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;button id="sbutton"&gt;File&lt;/button&gt;
@@ -452,7 +460,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,height: 28 });
 
 
 
-#### imagePosition<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### imagePosition<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
 
 
 
@@ -483,7 +491,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -505,7 +514,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-#### prefixIcon<span class="type-signature type string">String</span>
+### prefixIcon<span class="type-signature type string">String</span>
 
 
 
@@ -536,7 +545,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -557,7 +567,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,contentType: "imageonl
 
 
 
-#### showRoundedCorner<span class="type-signature type string">String</span>
+### showRoundedCorner<span class="type-signature type string">String</span>
 
 
 
@@ -588,7 +598,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -609,7 +620,7 @@ $("#sbutton").ejSplitButton({ targetID:"target",width:100,showRoundedCorner: tru
 
 
 
-#### size<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### size<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
 
 
 
@@ -640,7 +651,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -661,7 +673,7 @@ Default Value:
 
 
 
-#### suffixIcon<span class="type-signature type string">String</span>
+### suffixIcon<span class="type-signature type string">String</span>
 
 
 
@@ -692,7 +704,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -713,7 +726,7 @@ $("#sbutton").ejSplitButton({targetID:"target",width:100,contentType:"imageboth"
 
 
 
-#### targetID<span class="type-signature type string">String</span>
+### targetID<span class="type-signature type string">String</span>
 
 
 
@@ -744,7 +757,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -765,7 +779,7 @@ $("#sbutton").ejSplitButton({targetID:"target",width:100 });
 
 
 
-#### text<span class="type-signature type string">String</span>
+### text<span class="type-signature type string">String</span>
 
 
 
@@ -796,7 +810,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -817,7 +832,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100, text: "New" });
 
 
 
-#### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 
 
 
@@ -848,7 +863,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -867,7 +883,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100 });
 
 
 
-### Methods
+## Methods
 
 
 
@@ -876,7 +892,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100 });
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -891,7 +907,8 @@ destroy the split button widget all events bound using this._on will be unbind a
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -928,7 +945,7 @@ $("#sbutton").ejSplitButton("destroy");
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -943,7 +960,8 @@ To disable the split button
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -980,7 +998,7 @@ $("#sbutton").ejSplitButton("disable");
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -995,7 +1013,8 @@ To Enable the split button
 
 
 
-##### Examples
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1030,7 +1049,7 @@ $("#sbutton").ejSplitButton("enable");
 
 
 
-### Events
+## Events
 
 
 
@@ -1039,7 +1058,7 @@ $("#sbutton").ejSplitButton("enable");
 
 
 
-#### beforeOpen
+### beforeOpen
 
 
 
@@ -1080,7 +1099,8 @@ Fires before menu of the split button control is opened.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1102,7 +1122,7 @@ Fires before menu of the split button control is opened.
 
 
 
-#### click
+### click
 
 
 
@@ -1170,7 +1190,8 @@ Fires when Button control is clicked successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1194,7 +1215,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-#### create
+### create
 
 
 
@@ -1252,7 +1273,8 @@ Fires after Split Button control is created.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1276,7 +1298,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -1334,7 +1356,8 @@ Fires when the Split Button is destroyed successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1358,7 +1381,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-#### itemMouseOut
+### itemMouseOut
 
 
 
@@ -1448,7 +1471,8 @@ Fires when a menu item is Hovered out successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1472,7 +1496,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-#### itemMouseOver
+### itemMouseOver
 
 
 
@@ -1562,7 +1586,8 @@ Fires when a menu item is Hovered in successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 
@@ -1586,7 +1611,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-#### itemSelected
+### itemSelected
 
 
 
@@ -1664,7 +1689,8 @@ Fires when a menu item is clicked successfully
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code> 

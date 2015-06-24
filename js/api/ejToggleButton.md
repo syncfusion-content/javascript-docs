@@ -13,14 +13,15 @@ The Toggle Button allows you to perform the toggle option by using checked and u
 
 
 
-#### $(element).ejToggleButton<span class="signature">()</span>
+## $(element).ejToggleButton<span class="signature">()</span>
 
 
 
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Create ToggleButton 
@@ -30,7 +31,7 @@ $('#toggle').ejToggleButton({defaultText:"Play",activeText:"Pause"});
 
 
 
-### Requires
+## Requires
 
 
 * module:jQuery
@@ -42,12 +43,12 @@ $('#toggle').ejToggleButton({defaultText:"Play",activeText:"Pause"});
 * module:ej.checkbox.js
 
 
-### Members
+## Members
 
 
 
 
-#### activePrefixIcon<span class="type-signature type string">string</span>
+### activePrefixIcon<span class="type-signature type string">string</span>
 
 
 
@@ -65,14 +66,15 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the activePrefixIcon during initialization.                              $("#toggle").ejToggleButton({    defaultText:"Play",activeText:"Pause",   contentType: "textandimage",   defaultPrefixIcon: "e-mediaplay e-uiLight",   activePrefixIcon: "e-mediapause e-uiLight", });                    &lt;/script&gt; </code></pre>
 
 
 
-#### activeSuffixIcon<span class="type-signature type string">string</span>
+### activeSuffixIcon<span class="type-signature type string">string</span>
 
 
 
@@ -90,7 +92,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the activeSuffixIcon during initialization.                              $("#toggle").ejToggleButton({    contentType: "imageboth",   defaultSuffixIcon: "e-mediaplay e-uiLight",   activeSuffixIcon: "e-mediapause e-uiLight", });                    &lt;/script&gt; 
@@ -98,7 +101,7 @@ Default Value:
 
 
 
-#### activeText<span class="type-signature type string">string</span>
+### activeText<span class="type-signature type string">string</span>
 
 
 
@@ -116,7 +119,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set activeText API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});                                                   &lt;/script&gt; 
@@ -124,7 +128,7 @@ Default Value:
 
 
 
-#### contentType<span class="type-signature type enum">enum</span>
+### contentType<span class="type-signature type enum">enum</span>
 
 
 
@@ -142,7 +146,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the button contentType on initialization.                                $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",contentType : ej.ContentType.TextOnly });                    &lt;/script&gt; 
@@ -150,7 +155,7 @@ Default Value:
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -168,7 +173,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the CSS class during initialization.                             $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",cssClass : "gradient-lime" });                        &lt;/script&gt; 
@@ -176,7 +182,7 @@ Default Value:
 
 
 
-#### defaultPrefixIcon<span class="type-signature type string">string</span>
+### defaultPrefixIcon<span class="type-signature type string">string</span>
 
 
 
@@ -194,7 +200,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the defaultPrefixIcon during initialization.                             $("#toggle").ejToggleButton({    defaultText:"Play",activeText:"Pause",   contentType: "textandimage",   defaultPrefixIcon: "e-mediaplay e-uiLight",   activePrefixIcon: "e-mediapause e-uiLight", });                    &lt;/script&gt; 
@@ -202,7 +209,7 @@ Default Value:
 
 
 
-#### defaultSuffixIcon<span class="type-signature type string">string</span>
+### defaultSuffixIcon<span class="type-signature type string">string</span>
 
 
 
@@ -220,7 +227,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the defaultSuffixIcon during initialization.                      $("#toggle").ejToggleButton({    defaultText:"Play",activeText:"Pause",   contentType: "textandimage",   defaultSuffixIcon: "e-mediaplay e-uiLight",   activeSuffixIcon: "e-mediapause e-uiLight", });                    &lt;/script&gt; 
@@ -228,7 +236,7 @@ Default Value:
 
 
 
-#### defaultText<span class="type-signature type string">string</span>
+### defaultText<span class="type-signature type string">string</span>
 
 
 
@@ -246,7 +254,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set defaultText API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});                                           &lt;/script&gt; 
@@ -254,7 +263,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -272,7 +281,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set enabled API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",enabled: true });                                            &lt;/script&gt; 
@@ -280,7 +290,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -298,7 +308,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the rounded corner during initialization.                                $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",enablePersistence : true });                         &lt;/script&gt; 
@@ -306,7 +317,7 @@ Default Value:
 
 
 
-#### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -324,7 +335,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the enableRTL during initialization.                             $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",enableRTL : true });                  &lt;/script&gt; 
@@ -332,7 +344,7 @@ Default Value:
 
 
 
-#### height<span class="type-signature type string">String</span>
+### height<span class="type-signature type string">String</span>
 
 
 
@@ -350,14 +362,15 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set height API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",height: "28px" });                                           &lt;/script&gt;         </code></pre>
 
 
 
-#### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes<span class="type-signature type object">object</span>
 
 
 
@@ -375,7 +388,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // To Set HtmlAttributes on initialization.                             $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",htmlAttributes: {disabled:"disabled"} });                    &lt;/script&gt; 
@@ -383,7 +397,7 @@ Default Value:
 
 
 
-#### imagePosition<span class="type-signature type enum">enum</span>
+### imagePosition<span class="type-signature type enum">enum</span>
 
 
 
@@ -401,7 +415,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the image position for toggle button during initialization.                              $("#toggle").ejToggleButton({   contentType: ej.ContentType.TextAndImage,   imagePosition: ej.ImagePosition.ImageRight,   defaultText:"Play",activeText:"Pause",   defaultPrefixIcon: "e-mediaplay e-uiLight",   activePrefixIcon: "e-mediapause e-uiLight"});                     &lt;/script&gt; 
@@ -409,7 +424,7 @@ Default Value:
 
 
 
-#### preventToggle<span class="type-signature type boolean">boolean</span>
+### preventToggle<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -427,7 +442,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set preventToggle API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",preventToggle: false});                                              &lt;/script&gt; 
@@ -435,7 +451,7 @@ Default Value:
 
 
 
-#### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -453,7 +469,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 // Set the rounded corner during initialization.                                $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",showRoundedCorner : true });                         &lt;/script&gt; 
@@ -461,7 +478,7 @@ Default Value:
 
 
 
-#### size<span class="type-signature type enum">enum</span>
+### size<span class="type-signature type enum">enum</span>
 
 
 
@@ -479,7 +496,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set size API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",size: ej.ButtonSize.Mini});                                                                  &lt;/script&gt; 
@@ -487,7 +505,7 @@ Default Value:
 
 
 
-#### toggleState<span class="type-signature type boolean">boolean</span>
+### toggleState<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -505,7 +523,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set toggleState API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",toggleState: false });       &lt;/script&gt; 
@@ -513,7 +532,7 @@ Default Value:
 
 
 
-#### type<span class="type-signature type enum">enum</span>
+### type<span class="type-signature type enum">enum</span>
 
 
 
@@ -531,7 +550,8 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set type API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",type:ej.ButtonType.Submit});                                                                 &lt;/script&gt; 
@@ -539,7 +559,7 @@ Default Value:
 
 
 
-#### width<span class="type-signature type string">String</span>
+### width<span class="type-signature type string">String</span>
 
 
 
@@ -557,19 +577,20 @@ Default Value:
 
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //To set width API value during initialization          $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",width: "100px" });                                           &lt;/script&gt; 
                     </code></pre>
 
 
-### Methods
+## Methods
 
 
 
 
-#### destroy<span class="signature">()</span>
+### destroy<span class="signature">()</span>
 
 
 
@@ -578,14 +599,15 @@ To destroy the toggle button
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" / &gt; 
  &lt;script&gt;// Create toggle button$("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});var toggleObj = $("#toggle").data("ejToggleButton");toggleObj.destroy(); // destroy the toggle button&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" / &gt; 
  &lt;script&gt;// destroy the toggle button$("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});$("#toggle").ejToggleButton("destroy"); &lt;/script&gt;</code></pre>
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -594,14 +616,15 @@ To disable the toggle button
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" / &gt; 
  &lt;script&gt;// Create toggle button$("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});var toggleObj = $("#toggle").data("ejToggleButton");toggleObj.disable(); // disable the toggle button&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" / &gt; 
  &lt;script&gt;// disable the toggle button$("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});$("#toggle").ejToggleButton("disable"); &lt;/script&gt;</code></pre>
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -610,18 +633,19 @@ To enable the toggle button
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" / &gt; 
  &lt;script&gt;// Create toggle button$("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});var toggleObj = $("#toggle").data("ejToggleButton");toggleObj.enable(); // enable the toggle button&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" / &gt; 
  &lt;script&gt;// enable the toggle button$("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});$("#toggle").ejToggleButton("enable");  &lt;/script&gt;</code></pre>
 
 
-### Events
+## Events
 
 
 
 
-#### change
+### change
 
 
 
@@ -630,7 +654,8 @@ Fires when ToggleButton control state is changed successfully.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from toggle button<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be cancelled; otherwise, false.</td></tr><tr><td class="name"><code>isChecked</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">return the toggle button checked state</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the toggle button model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //change event for toggle button$("#toggle").ejToggleButton({   defaultText:"Play",activeText:"Pause",   change: function (args) {}});  &lt;/script&gt; 
@@ -638,7 +663,7 @@ Fires when ToggleButton control state is changed successfully.
 
 
 
-#### click
+### click
 
 
 
@@ -647,7 +672,8 @@ Fires when ToggleButton control is clicked successfully.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from toggle button<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be cancelled; otherwise, false.</td></tr><tr><td class="name"><code>isChecked</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">return the toggle button checked state</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the toggle button model</td></tr><tr><td class="name"><code>status</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">return the toggle button state</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //click event for toggle button$("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",   click: function (args) {}}); &lt;/script&gt; 
@@ -655,7 +681,7 @@ Fires when ToggleButton control is clicked successfully.
 
 
 
-#### create
+### create
 
 
 
@@ -664,7 +690,8 @@ Fires when ToggleButton control is created successfully.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from toggle button<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be cancelled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the toggle button model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //create event for toggle button$("#toggle").ejToggleButton({   defaultText:"Play",activeText:"Pause",   create: function (args) {}});   &lt;/script&gt; 
@@ -672,7 +699,7 @@ Fires when ToggleButton control is created successfully.
 
 
 
-#### destroy
+### destroy
 
 
 
@@ -681,7 +708,8 @@ Fires when ToggleButton control is destroyed successfully.
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from toggle button<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be cancelled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the toggle button model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Example
+Example
+{:.example}
 <pre class="prettyprint"><code> &lt;input id="toggle" type="checkbox" /&gt; 
         &lt;script&gt; 
 //destroy event for toggle button$("#toggle").ejToggleButton({   defaultText:"Play",activeText:"Pause",   destroy: function (args) {}});  &lt;/script&gt; 

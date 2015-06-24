@@ -7,20 +7,21 @@ metaname:
 metacontent: 
 ---
 
-Custom Design for Html TextBox control.
+# Custom Design for Html TextBox control.
 
 
 
 
 
-#### $(element).ejmTextBox<span class="signature">()</span>
+## $(element).ejmTextBox<span class="signature">()</span>
 
 
 
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code>//To create the textbox &lt;input id="textbox" /&gt;
 &lt;script&gt; //Create the textbox  $("#textbox").ejmTextBox(); &lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="textbox" data-role="ejmtextbox" /&gt;
 </code></pre><pre class="prettyprint"><code> //To create the password&lt;input id="password" /&gt;
@@ -33,7 +34,7 @@ Custom Design for Html TextBox control.
 
 
 
-### Requires
+## Requires
 
 
 * module:jQuery
@@ -51,12 +52,12 @@ Custom Design for Html TextBox control.
 * module:ej.touch
 
 
-### Members
+## Members
 
 
 
 
-#### cssClass<span class="type-signature type string">string</span>
+### cssClass<span class="type-signature type string">string</span>
 
 
 
@@ -74,7 +75,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code>// For TextBox //Set the cssClass property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-cssclass="customclass" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the cssClass on initialization. //To set the cssClass API value &lt;input id="textbox"/&gt;
 &lt;script&gt;$("#textbox").ejmTextBox ({ value: "" });               &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the TextBox cssClass, after initialization:
@@ -91,7 +93,7 @@ Default Value:
 
 
 
-#### enabled<span class="type-signature type boolean">boolean</span>
+### enabled<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -109,7 +111,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> // For TextBox//Set the enabled property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-enabled=true /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the enabled on initialization. //To set the enabled API value&lt;input id="textbox"/&gt;
 &lt;script&gt;$("#textbox").ejmTextBox ({ enabled: true });           &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the  enabled, after initialization:
@@ -126,7 +129,7 @@ Default Value:
 
 
 
-#### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -144,7 +147,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> // For TextBox//Set the enablePersistence property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-enablepersistence=false /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the enablePersistence on initialization. //To set the enablePersistence API value &lt;input id="textbox"/&gt;
 &lt;script&gt;$("#textbox").ejmTextBox ({ enablePersistence: false });        &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the enablePersistence, after initialization:
@@ -161,7 +165,7 @@ Default Value:
 
 
 
-#### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -179,7 +183,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> // For TextBox//Set the readOnly property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-readonly=false /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the readOnly on initialization. //To set the readOnly API value&lt;input id="textbox"/&gt;
 &lt;script&gt;$("#textbox").ejmTextBox ({ readOnly: false });         &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the readOnly, after initialization:
@@ -196,7 +201,7 @@ Default Value:
 
 
 
-#### renderMode<span class="type-signature type enum">enum</span>
+### renderMode<span class="type-signature type enum">enum</span>
 
 
 
@@ -214,7 +219,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> // For textbox //Set the renderMode property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-rendermode="auto" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the renderMode on initialization. //To set the renderMode API value &lt;input id="textbox" data-role="ejmtextbox"/&gt;
 &lt;script&gt;$(function () {$("#textbox").ejmTextBox ({ renderMode:ej.mobile.RenderMode.Auto });    });&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the  renderMode, after initialization:
@@ -234,7 +240,7 @@ Default Value:
 
 
 
-#### showBorder<span class="type-signature type boolean">boolean</span>
+### showBorder<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -252,7 +258,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code>// For TextBox //Set the showBorder property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-showborder=true /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the showBorder on initialization. //To set the showBorder API value &lt;input id="textbox" data-role="ejmtextbox"/&gt;
 &lt;script&gt;$("#textbox").ejmTextBox ({ showBorder: true });&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the showBorder, after initialization:
@@ -272,7 +279,7 @@ Default Value:
 
 
 
-#### theme<span class="type-signature type enum">enum</span>
+### theme<span class="type-signature type enum">enum</span>
 
 
 
@@ -290,7 +297,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code>// For TextBox  //Set the theme property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-theme="auto" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the theme on initialization. //To set the theme API value &lt;input id="textbox" data-role="ejmtextbox" /&gt;
 &lt;script&gt;$(function () {$("#textbox").ejmTextBox ({ theme: ej.mobile.Theme.Auto });     });&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the theme, after initialization:
@@ -310,7 +318,7 @@ Default Value:
 
 
 
-#### value<span class="type-signature type string">string</span>
+### value<span class="type-signature type string">string</span>
 
 
 
@@ -328,7 +336,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code>// For TextBox //Set the value property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-value="" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the value on initialization. //To set the value API value &lt;input id="textbox"/&gt;
 &lt;script&gt;$("#textbox").ejmTextBox ({ value: "" });               &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the TextBox value, after initialization:
@@ -345,7 +354,7 @@ Default Value:
 
 
 
-#### watermarkText<span class="type-signature type string">string</span>
+### watermarkText<span class="type-signature type string">string</span>
 
 
 
@@ -363,7 +372,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> // For TextBox//Set the watermarkText property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-watermarktext="" /&gt;
 </code></pre><pre class="prettyprint"><code> // Set the watermarkText on initialization. //To set the watermarkText API value &lt;input id="textbox"/&gt;
 &lt;script&gt;$("#textbox").ejmTextBox ({ watermarkText: "" });&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Get or set the watermarkText, after initialization:
@@ -380,7 +390,7 @@ Default Value:
 
 
 
-#### windows
+### windows
 
 
 
@@ -392,7 +402,7 @@ Section for windows rendermode specific functionalities.
 
 
 
-#### windows.allowReset<span class="type-signature type boolean">boolean</span>
+### windows.allowReset<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -410,7 +420,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //For TextBox Control// Set the windows mode allowReset property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-rendermode="windows" data-ej-windows-allowreset=true /&gt;
 </code></pre><pre class="prettyprint"><code> // To set the windows mode allowReset property API value &lt;input id="textbox"/&gt;
 &lt;script&gt;$(function () {$("#textbox").ejmTextBox({ windows:{allowReset: true},renderMode:ej.mobile.RenderMode.Windows});   });&lt;/script&gt;</code></pre><pre class="prettyprint"><code> // Get or set the windows mode allowReset API, after initialization:// Get the windows mode allowReset value  &lt;script&gt;$("#textbox").ejmTextBox("option", "windows.allowReset");   // Set the windows mode allowReset value $("#textbox").ejmTextBox("option", "windows.allowReset", true);&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password Control// Set the windows mode allowReset property in unobtrusive way.&lt;input id="password" data-role="ejmpassword" data-ej-rendermode="windows" data-ej-windows-allowreset=true /&gt;
@@ -423,7 +434,7 @@ Default Value:
 
 
 
-#### windows.renderDefault<span class="type-signature type boolean">boolean</span>
+### windows.renderDefault<span class="type-signature type boolean">boolean</span>
 
 
 
@@ -441,7 +452,8 @@ Default Value:
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //For TextBox Control// Set the windows mode renderDefault property in unobtrusive way.&lt;input id="textbox" data-role="ejmtextbox" data-ej-rendermode="windows" data-ej-windows-renderDefault=false /&gt;
 </code></pre><pre class="prettyprint"><code> // To set the windows mode renderDefault property API value &lt;input id="textbox"/&gt;
 &lt;script&gt;$(function () {$("#textbox").ejmTextBox({ windows:{renderDefault: false},renderMode:ej.mobile.RenderMode.Windows});});&lt;/script&gt;</code></pre><pre class="prettyprint"><code> // Get or set the windows mode renderDefault API, after initialization:// Get the windows mode renderDefault value  &lt;script&gt;$("#textbox").ejmTextBox("option", "windows.renderDefault");   // Set the windows mode renderDefault value $("#textbox").ejmTextBox("option", "windows.renderDefault", false);&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password Control// Set the windows mode renderDefault property in unobtrusive way.&lt;input id="password" data-role="ejmpassword" data-ej-rendermode="windows" data-ej-windows-renderDefault=false /&gt;
@@ -453,12 +465,12 @@ Default Value:
 &lt;script&gt;$(function () {$("#textarea").ejmTextArea({windows:{renderDefault: false},renderMode:ej.mobile.RenderMode.Windows});   });&lt;/script&gt;</code></pre><pre class="prettyprint"><code> // Get or set the windows mode renderDefault API, after initialization:// Get the windows mode renderDefault value  &lt;script&gt;$("#textarea").ejmTextArea("option", "windows.renderDefault");   // Set the windows mode renderDefault value $("#textarea").ejmTextArea("option", "windows.renderDefault", false); &lt;/script&gt;</code></pre>
 
 
-### Methods
+## Methods
 
 
 
 
-#### disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 
 
 
@@ -467,7 +479,8 @@ To handle the TextBox, or Password or MaskEdit or TextArea to disable
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //For TextBox&lt;input id="textbox" /&gt;
 &lt;script&gt;// Create the textbox$("#textbox").ejmTextBox();var textbox = $("#textbox").data("ejmTextBox");textbox.disable(); // Returns the textbox to disable mode.&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="textbox"/&gt;
 &lt;script&gt;// Get the textbox to disable$("#textbox").ejmTextBox();$("#textbox").ejmTextBox("disable");    &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password&lt;input id="password" /&gt;
@@ -480,7 +493,7 @@ To handle the TextBox, or Password or MaskEdit or TextArea to disable
 
 
 
-#### enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 
 
 
@@ -489,7 +502,8 @@ To handle the TextBox, or Password or MaskEdit or TextArea to enable
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //For TextBox&lt;input id="textbox" /&gt;
 &lt;script&gt;// Create the textbox$("#textbox").ejmTextBox();var textbox = $("#textbox").data("ejmTextBox");textbox.enable(); // Returns the textbox to enable mode.&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="textbox"/&gt;
 &lt;script&gt;// Get the textbox to enable$("#textbox").ejmTextBox();$("#textbox").ejmTextBox("enable");     &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password&lt;input id="password" /&gt;
@@ -502,7 +516,7 @@ To handle the TextBox, or Password or MaskEdit or TextArea to enable
 
 
 
-#### getStrippedValue<span class="signature">()</span>
+### getStrippedValue<span class="signature">()</span>
 
 
 
@@ -511,7 +525,8 @@ To handle the TextBox, or Password or MaskEdit or TextArea to getStrippedValue
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //For TextBox&lt;input id="textbox" /&gt;
 &lt;script&gt;// Create the textbox$("#textbox").ejmTextBox();var textbox = $("#textbox").data("ejmTextBox");textbox.getStrippedValue(); // Returns the textbox value with stripped mode.&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="textbox"/&gt;
 &lt;script&gt;// Get the textbox to getStrippedValue$("#textbox").ejmTextBox();$("#textbox").ejmTextBox("getStrippedValue");   &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password&lt;input id="password" /&gt;
@@ -524,7 +539,7 @@ To handle the TextBox, or Password or MaskEdit or TextArea to getStrippedValue
 
 
 
-#### getUnstrippedValue<span class="signature">()</span>
+### getUnstrippedValue<span class="signature">()</span>
 
 
 
@@ -533,7 +548,8 @@ To handle the TextBox, or Password or MaskEdit or TextArea to getUnstrippedValue
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //For TextBox&lt;input id="textbox" /&gt;
 &lt;script&gt;// Create the textbox$("#textbox").ejmTextBox();var textbox = $("#textbox").data("ejmTextBox");textbox.getUnstrippedValue(); // Returns the textbox value with unstripped mode.&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="textbox"/&gt;
 &lt;script&gt;// Get the textbox to getUnstrippedValue$("#textbox").ejmTextBox();$("#textbox").ejmTextBox("getUnstrippedValue"); &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password&lt;input id="password" /&gt;
@@ -546,7 +562,7 @@ To handle the TextBox, or Password or MaskEdit or TextArea to getUnstrippedValue
 
 
 
-#### getValue<span class="signature">()</span>
+### getValue<span class="signature">()</span>
 
 
 
@@ -555,7 +571,8 @@ To handle the TextBox, or Password or MaskEdit or TextArea to getValue
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //For TextBox&lt;input id="textbox" /&gt;
 &lt;script&gt;// Create the textbox$("#textbox").ejmTextBox();var textbox = $("#textbox").data("ejmTextBox");textbox.getValue(); // Returns the textbox value.&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="textbox"/&gt;
 &lt;script&gt;// Get the textbox to getValue$("#textbox").ejmTextBox();$("#textbox").ejmTextBox("getValue");   &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password&lt;input id="password" /&gt;
@@ -568,7 +585,7 @@ To handle the TextBox, or Password or MaskEdit or TextArea to getValue
 
 
 
-#### getWatermarkText<span class="signature">()</span>
+### getWatermarkText<span class="signature">()</span>
 
 
 
@@ -577,7 +594,8 @@ To handle the TextBox, or Password or MaskEdit or TextArea to getWatermarkText
 
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> //For TextBox&lt;input id="textbox" /&gt;
 &lt;script&gt;// Create the textbox$("#textbox").ejmTextBox();var textbox = $("#textbox").data("ejmTextBox");textbox.getWatermarkText(); // Returns the textbox watermarkText.&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input id="textbox"/&gt;
 &lt;script&gt;//Get the textbox to getWatermarkText$("#textbox").ejmTextBox();$("#textbox").ejmTextBox("getWatermarkText");   &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password&lt;input id="password" /&gt;
@@ -589,12 +607,12 @@ To handle the TextBox, or Password or MaskEdit or TextArea to getWatermarkText
 &lt;script&gt;// Get the textarea to getWatermarkText$("#textarea").ejmTextArea();$("#textarea").ejmTextArea("getWatermarkText"); &lt;/script&gt;</code></pre>
 
 
-### Events
+## Events
 
 
 
 
-#### change
+### change
 
 
 
@@ -603,7 +621,8 @@ Event triggers when the Textbox or Password or Maskedit or textarea value change
 <table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from Textbox or Password or Maskedit or textarea<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the Textbox or Password or Maskedit or textarea model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the name of the event</td></tr><tr><td class="name"><code>element</code></td><td class="type"><span class="param-type">object</span></td><td class="description last">returns the current element</td></tr><tr><td class="name"><code>value</code></td><td class="type"><span class="param-type">string</span></td><td class="description last">returns the value of the control</td></tr></tbody></table></td></tr></tbody></table>
 
 
-##### Examples
+Example
+{:.example}
 <pre class="prettyprint"><code> // For TextBox&lt;input id="textbox" data-role="ejmtextbox" data-ej-change="onChange"/&gt;
 &lt;script&gt; // Change event for textboxfunction onChange(args) { //handle the event }&lt;/script&gt;</code></pre><pre class="prettyprint"><code> //Change event for textbox&lt;input id="textbox" data-role="ejmtextbox" data-ej-change="onChange"/&gt;
 &lt;script&gt;$("#textbox").ejmTextBox({  change: function (args) { //handle the event }});  &lt;/script&gt;</code></pre><pre class="prettyprint"><code> //For Password&lt;input id="password" data-role="ejmpassword" data-ej-change="onChange"/&gt;

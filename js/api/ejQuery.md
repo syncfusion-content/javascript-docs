@@ -18,7 +18,7 @@ Communicates with data source and returns the desired result based on the Query 
 
 
 
-#### $(element).ejQuery<span class="signature">()</span>
+## $(element).ejQuery<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Communicates with data source and returns the desired result based on the Query 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -50,7 +51,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-### Methods
+## Methods
 
 
 
@@ -59,7 +60,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### addParams<span class="signature">(key, value)</span>
+### addParams<span class="signature">(key, value)</span>
 
 
 
@@ -95,7 +96,8 @@ Passes custom parameters to our API URL.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -108,7 +110,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/O
 
 
 
-#### clone<span class="signature">()</span>
+### clone<span class="signature">()</span>
 
 
 
@@ -123,7 +125,8 @@ clone is used to dublicate the data.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -145,7 +148,7 @@ $(".table tbody").html(tbody);
 
 
 
-#### excute<span class="signature">(dataManager)</span>
+### excute<span class="signature">(dataManager)</span>
 
 
 
@@ -176,12 +179,13 @@ It is used to excute the query on URL Binding
 
 
 
-##### Returns:
+#### Returns:
 
 method executes all operations immediately and does not wait for each individual operation to complete. The result of each operation will be handled once the result is available.
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -196,7 +200,7 @@ promise.done(function(e){})
 
 
 
-#### excuteLocal<span class="signature">(dataManager)</span>
+### excuteLocal<span class="signature">(dataManager)</span>
 
 
 
@@ -227,7 +231,8 @@ It is used to excute the query on Local Binding
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -241,7 +246,7 @@ var promise =  ej.Query().select(["OrderID", "CustomerID", "ShipName", "ShipCity
 
 
 
-#### expand<span class="signature">(tables)</span>
+### expand<span class="signature">(tables)</span>
 
 
 
@@ -272,7 +277,8 @@ expand is used to performs complex binding.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -286,7 +292,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
 
 
 
-#### foreignKey<span class="signature">(key)</span>
+### foreignKey<span class="signature">(key)</span>
 
 
 
@@ -317,7 +323,8 @@ Relates two tables. A foreign key is a column or combination of columns which is
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -333,7 +340,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
 
 
 
-#### from<span class="signature">(tableName)</span>
+### from<span class="signature">(tableName)</span>
 
 
 
@@ -364,7 +371,8 @@ Specifies the name of table(s) to retrieve data.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -384,7 +392,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### group<span class="signature">(fieldName)</span>
+### group<span class="signature">(fieldName)</span>
 
 
 
@@ -415,7 +423,8 @@ Groups records based on the given field name.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -435,7 +444,7 @@ for(var i=0;i&lt;3;i++){ row="dm[0].items[i];" tbody="" +="String.format("&lt;tr
 
 
 
-#### hierarchy<span class="signature">(query)</span>
+### hierarchy<span class="signature">(query)</span>
 
 
 
@@ -466,7 +475,8 @@ Displays the records in hierarchical relationships. The foreign key is used to r
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -482,7 +492,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
 
 
 
-#### page<span class="signature">(pageIndex, pageSize)</span>
+### page<span class="signature">(pageIndex, pageSize)</span>
 
 
 
@@ -518,7 +528,8 @@ Retrieves records based on the given page index and size.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -539,7 +550,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### range<span class="signature">(start, end)</span>
+### range<span class="signature">(start, end)</span>
 
 
 
@@ -575,7 +586,8 @@ The range property is used to retrieve the records based on the given start and 
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -596,7 +608,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### requiresCount<span class="signature">()</span>
+### requiresCount<span class="signature">()</span>
 
 
 
@@ -611,7 +623,8 @@ It is used to count records.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
@@ -624,7 +637,7 @@ var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().requiresCount()
 
 
 
-#### search<span class="signature">(fieldName, operator, value, ignoreCase)</span>
+### search<span class="signature">(fieldName, operator, value, ignoreCase)</span>
 
 
 
@@ -670,7 +683,8 @@ It is used to search the given search key value in JSON data
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -692,7 +706,7 @@ $(".table tbody").html(tbody);
 
 
 
-#### select<span class="signature">(fieldName)</span>
+### select<span class="signature">(fieldName)</span>
 
 
 
@@ -723,7 +737,8 @@ Selects specified columns from the data source.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -743,7 +758,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### skip<span class="signature">(nos)</span>
+### skip<span class="signature">(nos)</span>
 
 
 
@@ -774,7 +789,8 @@ Skips the given count of records from the data source.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -794,7 +810,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### sortBy<span class="signature">(fieldName)</span>
+### sortBy<span class="signature">(fieldName)</span>
 
 
 
@@ -825,7 +841,8 @@ Sort items or records in an ordered sequence.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -845,7 +862,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### sortByDesc<span class="signature">(fieldName)</span>
+### sortByDesc<span class="signature">(fieldName)</span>
 
 
 
@@ -876,7 +893,8 @@ Sort items or records in descending order.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -896,7 +914,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### take<span class="signature">(nos)</span>
+### take<span class="signature">(nos)</span>
 
 
 
@@ -927,7 +945,8 @@ Picks the given count of records from the top of the datasource.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -947,7 +966,7 @@ for(var i=0;i&lt;5;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-#### using<span class="signature">(dataManager)</span>
+### using<span class="signature">(dataManager)</span>
 
 
 
@@ -978,7 +997,8 @@ using is a method used to query the data manager.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
@@ -1001,7 +1021,7 @@ var tbody = "";
 
 
 
-#### where<span class="signature">(fieldName, operator, value, ignoreCase)</span>
+### where<span class="signature">(fieldName, operator, value, ignoreCase)</span>
 
 
 
@@ -1047,7 +1067,8 @@ It is used to filter records based on the filter condition.
 
 
 
-##### Example
+Example
+{:.example}
 
 <pre class="prettyprint">
 <code>&lt;style&gt;
