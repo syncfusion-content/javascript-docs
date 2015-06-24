@@ -21,9 +21,7 @@ In the above screenshot, you can select the mailbox items. You can write the fun
 
 **Create the Splitter** 
 
-The **Essential JavaScript Splitter** property is a **layout** control that allows you to divide a web page into distinct areas by using resizable panes. Many **Splitter** panes are created and placed inside the **Splitter** control where the split bars are inserted automatically in between the adjacent panes. For more information about the **Splitter** refer the following link: 
-
-[http://help.syncfusion.com/ug/js/default.htm#!Documents/gettingstarted30.htm](http://help.syncfusion.com/ug/js/default.htm)
+The **Essential JavaScript Splitter** property is a **layout** control that allows you to divide a web page into distinct areas by using resizable panes. Many **Splitter** panes are created and placed inside the **Splitter** control where the split bars are inserted automatically in between the adjacent panes. For more information about the **Splitter** refer [here](/js/splitter/getting-started).
 
 Create an HTML file and add the following template in your application.
 
