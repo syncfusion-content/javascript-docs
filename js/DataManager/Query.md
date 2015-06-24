@@ -50,7 +50,7 @@ The **“select”** query of the data manager is used to select only some parti
 <script id="tableTemplate" type="text/x-jsrender">
    <tr>
        <td>{{>OrderID}}</td>
-       <td>{{>CustomerID}</td>
+       <td>{{>CustomerID}}</td>
        <td>{{>EmployeeID}}</td>
        <td>{{>Freight}}</td>
        <td>{{>ShipCountry}}</td>         
@@ -207,7 +207,7 @@ The “expand” query of the data manager is used to perform complex data bindi
    $(function () {// Document is ready.
        //oData Adaptor with DataManager
        var dataManager = ej.DataManager({
-           url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"****
+           url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
        });
    
        var query = ej.Query()            

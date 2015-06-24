@@ -7,7 +7,7 @@ control: DataManager
 documentation: ug
 ---
 
-# Overview  {{site.releaseversion}}
+# Overview  
 
 **DataManager** helps in managing relational data in **JavaScript**. Its rich features make querying data sources easier. **JavaScript** **OData** **Client** fully supports **oData** queries that are enabled in **Web API** & **WCF** data services.
 

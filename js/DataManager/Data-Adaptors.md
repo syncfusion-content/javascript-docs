@@ -491,6 +491,7 @@ Custom adaptor is a key technique to customize adaptors in **DataManager**. It i
    </script>
 </body>
 
+{% endhighlight %}
 
 Result of above code example is as follows.
 
