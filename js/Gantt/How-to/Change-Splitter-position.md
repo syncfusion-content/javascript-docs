@@ -9,11 +9,7 @@ documentation: ug
 
 # Change Splitter position
 
-In Gantt control, Splitter separates the Treegrid section from the Chart section. 
-
-{% include image.html url="/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img1.png"%}
-
-It is possible to change the position of the Splitter while loading the Gantt by using the `splitterPosition` property, thereby varying the width of the Treegrid and Chart sections in the control.  `SplitterPosition` property denotes the percentage of the Treegrid section’s width to be rendered and this property supports both pixels and percentage values.
+In Gantt control, Splitter separates the Treegrid section from the Chart section,and is possible to change the position of the Splitter while loading the Gantt by using the `splitterPosition` property, thereby varying the width of the Treegrid and Chart sections in the control.  `SplitterPosition` property denotes the percentage of the Treegrid section’s width to be rendered and this property supports both pixels and percentage values.
 
 The following code example explains how to define the `splitterPosition` property in the Gantt.
 
