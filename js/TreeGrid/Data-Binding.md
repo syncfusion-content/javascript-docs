@@ -13,16 +13,16 @@ documentation: ug
 
 ## Local Data Binding
 
-In **Local Data Binding**, datasource for rendering the **TreeGrid** control is retrieved from the same application locally.
+In **Local Data Binding**, datasource for rendering the TreeGrid control is retrieved from the same application locally.
 
-Two types of **Data Binding** are possible with **TreeGrid** control, 
+Two types of Data Binding are possible with TreeGrid control, 
 
 * Hierarchical Datasource Binding
 * Self-Referential Data Binding (Flat Data)
 
 ### Hierarchy Datasource Binding
 
-The following code example shows you how to bind the **Hierarchical** local data into the **TreeGrid** control.
+The following code example shows you how to bind the **Hierarchical** local data into the TreeGrid control.
 
 {% highlight js %}
             var projectData = [
@@ -78,10 +78,10 @@ The output of the above steps is as follows:
 
 ###Self-Referential Data Binding (Flat Data)
 
-**TreeGrid** is rendered from **Self-Referential** data structures by providing two fields: `**ID**` field and `**parent ID**` field.
+**TreeGrid** is rendered from **Self-Referential** data structures by providing two fields: **ID** field and **parent ID** field.
 
-* `**ID Field**`- This field contains unique values used to identify nodes. Its name is assigned to the `**idMapping**` property.
-* `**Parent ID Field**`- This field contains values that indicate parent nodes. Its name is assigned to the `**parentIdMapping**` property.
+* **ID Field** - This field contains unique values used to identify nodes. Its name is assigned to the `idMapping` property.
+* **Parent ID Field** - This field contains values that indicate parent nodes. Its name is assigned to the `parentIdMapping` property.
 
 {% highlight js %}
 
