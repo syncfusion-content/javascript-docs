@@ -127,7 +127,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure the **ColorP
 
  
     jQuery(function ($) {
-        $('#colorPicker').ejColorPicker({ value: "#278787", displayInline: true });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         $(document).on("keydown", function (e) {
             if (e.altKey && e.keyCode === 74) { // j- key code.
                 $("#colorPickerWrapper").focus();

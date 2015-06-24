@@ -106,7 +106,13 @@ In the **HTML** page, add the following button elements to configure **Split 
 
 {% endhighlight %}
 
-
+{% highlight css %}
+<style>
+    .e-split {
+      float: left;
+      padding-left: 65px;
+    }
+</style>
 
 Execute the above code to render the following output.
 

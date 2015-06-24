@@ -13,7 +13,7 @@ This section explains briefly about how to create a **ColorPicker** in your appl
 
 In this example, you can learn how to customize **ColorPicker** control in a category Application. 
 
-{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img1.png" Caption="ColorPicker Control"%}
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img1.png" %}
 
 In the following sections you can learn, How to:
 
@@ -93,10 +93,10 @@ The following code example is used to create the Priority form using **ListBox**
 {% highlight html %}
 
 
-<div class="content-container-fluid">
+<div class="priorityWrapper">
     <div class="row">
-        <div class="cols-sample-area">
-            <div class="frame">
+        <div class="element-area">
+            <div class="frameWrapper">
                 <div id="control">
                     <ul id="selectcheck">
                         <li><span class="color high"></span>High</li>
@@ -105,32 +105,31 @@ The following code example is used to create the Priority form using **ListBox**
                     </ul>
                 </div>
             </div>
-        </div>
-        <div id="Properties">
-            <table class="prop-grid">
-                <tr class="row">
-                    <td class="column">
-                        Name
-                    </td>
-                    <td class="column">
-                        <input type="text" id="categoryName" />
-                    </td>
-                </tr>
-                <tr class="row">
-                    <td class="column">
-                        Color
-                    </td>
-                    <td class="column">
-                        <!--Colorpicker element-->
-                        <input type="text" id="CategoryColor" />
-                    </td>
-                    <td class="column">
-                        <!--Add button for add the new category-->
-                        <input type="button" class="e-btn e-select" id="AddCategory" />
-                    </td>
-                </tr>
-                <tr class="row"></tr>
-            </table>
+
+            <div id="Properties">
+                <table class="prop-grid">
+                    <tr class="row">
+                        <td class="column">Name
+                        </td>
+                        <td class="column">
+                            <input type="text" id="categoryName" />
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="column">Color
+                        </td>
+                        <td class="column">
+                            <!--Colorpicker element-->
+                            <input type="text" id="CategoryColor" />
+                        </td>
+                        <td class="column">
+                            <!--Add button for add the new category-->
+                            <input type="button" class="e-btn e-select" id="AddCategory" />
+                        </td>
+                    </tr>
+                    <tr class="row"></tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -168,11 +167,22 @@ Add the following style section to align form fields.
 {% highlight css %}
 
 <style>
-    .content-container-fluid > .row {
-        width: 410px;
+    
+    .row .element-area {
+        height: 270px;
+        width: 415px;
+    }
+
+    .priorityWrapper > .row {
+        width: 415px;
         border: 1px solid #bbbcbb;
         padding: 16px;
-        height: 272px;
+        height: 275px;
+        background-color: #fff;
+    }
+
+    .frameWrapper {
+        float: left;
     }
 
     .color.high {
@@ -187,11 +197,11 @@ Add the following style section to align form fields.
         background-color: blue;
     }
 
-    .cols-sample-area {
+    .element-area {
         width: 205px;
     }
 
-    .cols-sample-area, #Properties {
+    .element-area, #Properties {
         display: inline-block;
         float: left;
     }
@@ -209,6 +219,11 @@ Add the following style section to align form fields.
 
     #Properties .row {
         padding: 10px 0px 5px 0px;
+    }
+
+    #Properties {
+        margin-left: 20px;
+        width: 192px;
     }
 
     .color {

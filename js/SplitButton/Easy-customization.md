@@ -225,6 +225,10 @@ Configure the styles.
     .control {
         width: 500px;
     }
+    .e-split {
+        float: left;
+        padding-left: 10px;
+    }
 </style>
 
 
@@ -408,6 +412,10 @@ Configure the styles.
 <style>
     .control {
         width: 500px;
+    }
+    .e-split {
+      float: left;
+      padding-left: 15px;
     }
 </style>
 
@@ -645,6 +653,10 @@ Configure the styles.
     .control {
         width: 420px;
     }
+    .e-split {
+      float: left;
+      padding-left: 25px;
+    }
 </style>
 
 
@@ -830,6 +842,10 @@ Configure the **CSS** styles to apply on buttons.
     }
     .e-split .customCss5.e-btn.e-select .e-icon, .e-split .customCss5.e-btn.e-select .e-btntxt {
         color: #534f4f;
+    }
+    .e-split {
+      float: left;
+      padding-left: 25px;
     }
 </style>
 
