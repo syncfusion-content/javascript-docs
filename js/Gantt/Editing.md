@@ -9,24 +9,20 @@ documentation: ug
 
 # Editing
 
-The **Gantt** control provides built-in support to add, insert and update the task inside **Gantt**. **Gantt** provides three types of editing, they are:
+The Gantt control provides built-in support to add, insert and update the tasks. The following are the types of editing available in Gantt,
 
 * Cell Editing
-
 * Normal Editing
-
 * Taskbar Editing
-
 * Predecessor Editing
 
 ### Cell Editing
 
-Update the task details through grid cell editing by setting editMode as cellEditing.
+Update the task details through grid cell editing by setting editMode as `cellEditing`.
 
-The following code example shows you how to enable cellEditing in Gantt control.
+The following code example shows you how to enable `cellEditing` in Gantt control.
 
 {% highlight js %}
-
 
     $("#GanttContainer").ejGantt({
         //...
@@ -40,13 +36,13 @@ The following code example shows you how to enable cellEditing in Gantt control.
 
 The output of Gantt with cellEditing is as follows.
 
-{% include image.html url="/js/Gantt/Editing_images/Editing_img1.png" Caption="Gantt with cellEdit"%}
+{% include image.html url="/js/Gantt/Editing_images/Editing_img1.png"%}
 
 ### Normal Editing
 
-Update the task details through edit dialog by setting **EditMode** as normal.
+Update the task details through edit dialog by setting `editMode` as `normal`.
 
-The following code example shows you how to enable normal editing in **Gantt** control.
+The following code example shows you how to enable normal editing in Gantt control.
 
 {% highlight js %}
 
@@ -54,25 +50,25 @@ The following code example shows you how to enable normal editing in **Gantt** c
         //...
         editSettings: {
             allowEditing: true,
-            editMode: "normal"   
-     }
+            editMode: "normal"
+        }
     });
 
 {% endhighlight %}
 
-The following screenshot shows the output of normal editing.
+The following screenshot shows the output of `normal` editing.
 
-{% include image.html url="/js/Gantt/Editing_images/Editing_img2.png" Caption="Normal Editing"%}
+{% include image.html url="/js/Gantt/Editing_images/Editing_img2.png"%}
 
 ### Taskbar Editing
 
-Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows you how to enable taskbar resizing in **Gantt** control.
+Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows you how to enable taskbar resizing in Gantt control.
 
 {% highlight js %}
 
     $("#GanttContainer").ejGantt({
         //...
-        allowGanttChartEditing:true
+        allowGanttChartEditing: true
     });
 
 {% endhighlight %}
@@ -84,15 +80,15 @@ Update the predecessor details of a task using mouse interactions. The following
 {% highlight js %}
 
           $("#GanttContainer").ejGantt({
-                //...
-                dataSource: data,
-                allowGanttChartEditing:true,
-                predecessorMapping: "predecessor",
-              });
+              //...
+              dataSource: data,
+              allowGanttChartEditing: true,
+              predecessorMapping: "predecessor",
+          });
 
 {% endhighlight %}
 
-The following screen shot shows the predecessor editing in **Gantt** control.
+The following screen shot shows the predecessor editing in Gantt control.
 
-{% include image.html url="/js/Gantt/Editing_images/Editing_img3.png" Caption="Predecessor Editing"%}
+{% include image.html url="/js/Gantt/Editing_images/Editing_img3.png"%}
 
