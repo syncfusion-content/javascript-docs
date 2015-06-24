@@ -13,7 +13,7 @@ documentation: ug
 
 ##Enabling Drill Down
 
-**Treemap** elements can be drilled down by setting the **enableDrillDown** property to true. You can view the hierarchy of the **Treemap** by clicking on the treemap items and can move to the previous level by clicking on the drill down header. The header color can be customized by changing the values in the property **drillDownHeaderColor** and the selection color can be done by changing the **drillDownSelectionColor** property.
+**Treemap** elements can be drilled down by setting the `enableDrillDown` property to true. You can view the hierarchy of the **Treemap** by clicking on the treemap items and can move to the previous level by clicking on the drill down header. The header color can be customized by changing the values in the property `drillDownHeaderColor` and the selection color can be done by changing the `drillDownSelectionColor` property.
 
 <table>
 <tr>
