@@ -14,7 +14,7 @@ documentation: ug
 
 **Exporting** is a server-side operation and JS Grid is a Client-side operation. So it is not feasible to export in pure Javascript platform. For **HTTP** Content read and write, you need server-side control. You can use **REST** service like **WebApi** to achieve server-side support while exporting in **JS Grid**.
 
-Also since JS Grid is a Client-side, it does not have **mapper** property for custom URL mapping. You can achieve this by **Grid Toolbar Click** event and **exportGrid** method.
+Also since JS Grid is a Client-side, it does not have `mapper` property for custom URL mapping. You can achieve this by **Grid Toolbar Click** event and **exportGrid** method.
 
 {% highlight html %}
 

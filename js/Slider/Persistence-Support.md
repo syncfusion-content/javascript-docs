@@ -18,7 +18,7 @@ In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** 
 {% highlight html %}
 
 
-   <div id="ejSlider"></div>
+   <div id="ejSlider"> </div>
 
 {% endhighlight %}
 
@@ -27,7 +27,7 @@ In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** 
 
 
         // When initializing the Slider widget, enable the enablePersistence property as follows.
-    
+        
         $("#ejSlider").ejSlider({
             height: "15",
             width: "500",

@@ -19,15 +19,14 @@ The following steps explain the **State Maintenance** in the **MaskEdit** contro
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
 {% highlight js %}
 
-        $(function () {
-            $("#maskedit").ejMaskEdit(
-            {
+        $(function() {
+            $("#maskedit").ejMaskEdit({
                 name: "mask",
                 inputMode: ej.InputMode.Text,
                 maskFormat: "99-999-99999",
@@ -42,9 +41,9 @@ Output of MaskEdit with **enablePersistence** is as follows.
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img1.png" Caption=" MaskEdit at initial load"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img1.png"%}
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img2.png" Caption=" MaskEdit after changing the value and after page refresh "%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img2.png"%}
 
 ## Enabled or Disabled
 
@@ -58,7 +57,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
@@ -79,9 +78,10 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 Output when **enabled** is **“false”** and when **enabled** is “**true**”**.**
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="MaskEdit with enabled as false"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img3.png"%}
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="MaskEdit with enabled as true"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img4.png"%}
+
 ## Adjusting MaskEdit Size
 
 **MaskEdit** size can be modified by using the **height** and **width** properties. You can customize the size of **MaskEdit** by using these properties.
@@ -93,7 +93,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
@@ -119,7 +119,7 @@ Output of MaskEdit after setting “**height**” and “**width**” is as foll
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img5.png" Caption="MaskEdit with height and width" %}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img5.png" %}
 
 ## Define Value
 
@@ -132,7 +132,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
@@ -157,7 +157,7 @@ Output of MaskEdit with the **value** property is as follows**.**
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img6.png" Caption="MaskEdit with value"%} 
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img6.png"%} 
 
 ## Read Only Support
 
@@ -170,7 +170,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
@@ -194,7 +194,7 @@ Output of **MaskEdit** when **readOnly** is “**true**” is as follows. MaskEd
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img7.png" Caption="MaskEdit with readOnly "%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img7.png"%}
 
 ## Error Visibility
 
@@ -207,7 +207,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
     
 {% endhighlight %}
 
@@ -233,7 +233,7 @@ Output for **MaskEdit** when **showError** is “**true**” is as follows**.**
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="Textbox with showError"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img8.png"%}
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="Textbox without error"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img9.png"%}
 

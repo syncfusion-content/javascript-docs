@@ -15,9 +15,9 @@ Add the following code in your **HTML** page.
 
 {% highlight html %}
 
-    <div class="rte">
-        <textarea id="disable_tool"></textarea>
-    </div>
+<div class="rte">
+    <textarea id="disable_tool"></textarea>
+</div>
 
 {% endhighlight %}
 
@@ -35,5 +35,5 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/Enable-or-disable_images/Enable-or-disable_img1.png" Caption="Showcase for disable the insert image in toolbar"%}
+{% include image.html url="/js/RichTextEditor/Enable-or-disable_images/Enable-or-disable_img1.png" %}
 

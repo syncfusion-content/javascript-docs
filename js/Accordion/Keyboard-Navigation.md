@@ -46,7 +46,7 @@ End</td><td>
 Moves to the last accordion panel</td></tr>
 </table>
 
-**Configure keyboard interaction**
+### Configure keyboard interaction
 
 The following steps explains you on how to enable keyboard interaction for an **Accordion** widget.
 
@@ -55,29 +55,29 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 {% highlight html %}
 
 
-    <div id="accordion" style="width: 400px">
-        <h3>
-            <a href="#">Orubase</a>
-        </h3>
-        <div>
-            <!-- add accordion contents here to load contents under this header -->
-            Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
-        </div>
-        <h3>
-            <a href="#">WinRTXAML</a>
-        </h3>
-        <div>
-            <!-- add accordion contents here to load contents under this header -->
-            Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
-        </div>
-        <h3>
-            <a href="#">Metro Studio</a>
-        </h3>
-        <div>
-            <!-- add accordion contents here to load contents under this header -->
-            Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
-        </div>
+<div id="accordion" style="width: 500px">
+    <h3>
+        <a href="#">Orubase</a>
+    </h3>
+    <div>
+        <!-- add accordion contents here to load contents under this header -->
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
     </div>
+    <h3>
+        <a href="#">WinRTXAML</a>
+    </h3>
+    <div>
+        <!-- add accordion contents here to load contents under this header -->
+        Essential Studio for WinRT contains all the controls you need to build line-of-business tablet applications including grid, chart, map, tree map, SSRS report viewer, rich-text editor, pdf viewer, gauges, barcode, editors, and much more. It also includes a unique set of controls for reading and writing Excel, Word, and PDF documents in Windows store apps.
+    </div>
+    <h3>
+        <a href="#">Metro Studio</a>
+    </h3>
+    <div>
+        <!-- add accordion contents here to load contents under this header -->
+        Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates that can be easily customized to create thousands of unique Metro icons.
+    </div>
+</div>
 
 
 {% endhighlight %}
@@ -85,19 +85,19 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 {% highlight js %}
 
 
-        $(function () {
-            // Configure Keyboard navigation for Accordion by setting allowKeyboardNavigation property to true. Now define the script to focus the Accordion widget on AccessKey + J
-            $("#accordion").ejAccordion({
-                allowKeyboardNavigation: true
-            });
-
-            // Define script to focus into the Accordion control on Alt + J shortcut keys.
-            $(document).on("keydown", function (e) {
-                if (e.altKey && e.keyCode === 74) { // j- key code.
-                    $("#accordion").focus();
-                }
-            });
+    $(function () {
+        // Configure Keyboard navigation for Accordion by setting allowKeyboardNavigation property to true. Now define the script to focus the Accordion widget on AccessKey + J
+        $("#accordion").ejAccordion({
+            allowKeyboardNavigation: true
         });
+    
+        // Define script to focus into the Accordion control on Alt + J shortcut keys.
+        $(document).on("keydown", function (e) {
+            if (e.altKey && e.keyCode === 74) { // j- key code.
+                $("#accordion").focus();
+            }
+        });
+    });
 
 
 {% endhighlight %}
@@ -105,6 +105,6 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 
 Output for Accordion widget focused and navigated to last item using Keyboard navigation is as follows.
 
-{% include image.html url="/js/Accordion/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" Caption="Accordion with enabled keyboard navigation"%}
+{% include image.html url="/js/Accordion/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" %}
 
 

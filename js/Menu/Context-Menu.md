@@ -48,12 +48,11 @@ Add the following code in your **HTML** page.
    
     // Add the following code in your script section.
     jQuery(function ($) {
-        $("#contextMenu").ejMenu(
-            {
-                menuType: ej.MenuType.ContextMenu,
-                openOnClick: false,
-                contextMenuTarget: "#target"
-            });
+        $("#contextMenu").ejMenu({            
+            menuType: ej.MenuType.ContextMenu,
+            openOnClick: false,
+            contextMenuTarget: "#target"
+        });
     });
 
 
@@ -82,12 +81,12 @@ Add the following code in your style section.
 
 The following screen shot displays the output of the above code.
 
-{% include image.html url="/js/Menu/Context-Menu_images/Context-Menu_img1.png" Caption="Context Menu"%}
+{% include image.html url="/js/Menu/Context-Menu_images/Context-Menu_img1.png" %}
 
 
 You can hide and show the context menu using the following methods.
 
-**HideContextMenu**
+## HideContextMenu
 
 Hides the context menu control. Add the following script code in the sample in order to hide the context menu.
 
@@ -95,12 +94,11 @@ Hides the context menu control. Add the following script code in the sample in o
 
 
     jQuery(function ($) {
-        $("#contextMenu").ejMenu(
-            {
-                menuType: ej.MenuType.ContextMenu,
-                openOnClick: false,
-                contextMenuTarget: "#target"
-            });
+        $("#contextMenu").ejMenu({            
+            menuType: ej.MenuType.ContextMenu,
+            openOnClick: false,
+            contextMenuTarget: "#target"
+        });
         //initialize the menu object
         var menuObj = $("#contextMenu ").data("ejMenu");
         //To hide the context menu
@@ -111,7 +109,7 @@ Hides the context menu control. Add the following script code in the sample in o
 {% endhighlight %}
 
 
-**ShowContextMenu**
+## ShowContextMenu
 
 Shows the context menu control. Add the following script code in the sample in order to show the context menu.
 
@@ -120,12 +118,11 @@ Shows the context menu control. Add the following script code in the sample in o
 
 
     jQuery(function ($) {
-        $("#contextMenu").ejMenu(
-            {
-                menuType: ej.MenuType.ContextMenu,
-                openOnClick: false,
-                contextMenuTarget: "#target"
-            });
+        $("#contextMenu").ejMenu({            
+            menuType: ej.MenuType.ContextMenu,
+            openOnClick: false,
+            contextMenuTarget: "#target"
+        });
         //initialize the menu object
         var menuObj = $("#contextMenu ").data("ejMenu");
         //To show the context menu

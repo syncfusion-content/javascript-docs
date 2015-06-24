@@ -32,7 +32,7 @@ You can specify the width and height in pixels to change the dimension of the Ch
 
 In the above code, the width is set as 800px and height as 600px that displays the following Chart with the dimension 800*600.
 
-{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png" Caption="Chart with the dimension 800*600"%}
+{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png" %}
 
 ## Setting dimension in percentage values
 
@@ -55,5 +55,5 @@ You can also set the width and height of the **Chart** in percentage. The Chart 
         
 {% endhighlight %}  
 
-{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" Caption="Chart with dimension"%}
+{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" %}
 

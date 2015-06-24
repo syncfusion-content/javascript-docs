@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Diagram** in your application with **JavaScript**.
+This section explains briefly about how to create a Diagram in your application with JavaScript.
 
 ## Create your first Diagram in JavaScript
 
@@ -74,7 +74,7 @@ $("#DiagramContent").ejDiagram({
 
 ## Mapping Data Source
 
-Then, you can configure this “Employee Information” with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how **dataSourceSetting** is used to map ‘id’ and ‘parent’ with property name identifiers for employee information.
+Then, you can configure this “Employee Information” with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how `dataSourceSetting` is used to map `id` and `parent` with property name identifiers for employee information.
 
 {% highlight js %}
 //Initialize data source...
@@ -111,7 +111,7 @@ $("#DiagramContent").ejDiagram({
             height: 30,
             shape: {
                 type: "rectangle",
-                "cornerRadius": 5
+                cornerRadius: 5
             },
             labels: [{
                 name: "label1",
@@ -125,7 +125,7 @@ $("#DiagramContent").ejDiagram({
         //Set the default properties of connectors.
         connector: {
             segments: [{
-                "type": "orthogonal"
+               "type: "orthogonal"
             }],
             targetDecorator: {
                 shape: "arrow"
@@ -220,7 +220,7 @@ $("#DiagramContent").ejDiagram({
                     height: 30,
                     shape: {
                         type: "rectangle",
-                        "cornerRadius": 5
+                        cornerRadius: 5
                     },
                     labels: [{
                         name: "label1",
@@ -233,7 +233,7 @@ $("#DiagramContent").ejDiagram({
 
                 //Set the default properties of connectors.
                 connector: {
-                    segments: [{ "type": "orthogonal" }],
+                    segments: [{ type: "orthogonal" }],
                     targetDecorator: { shape: "arrow" }
                 }
             },

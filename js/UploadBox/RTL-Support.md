@@ -17,9 +17,9 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight html %}
 
-    <div class="control">
-        <div id="Uploadbox"></div>
-    </div>
+<div class="control">
+    <div id="Uploadbox"></div>
+</div>
 
 {% endhighlight %}
 
@@ -42,7 +42,7 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/RTL-Support_images/RTL-Support_img1.png" Caption="Uploadbox with RTL"%}
+{% include image.html url="/js/UploadBox/RTL-Support_images/RTL-Support_img1.png" %}
 
 
 

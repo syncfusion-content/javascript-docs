@@ -17,15 +17,15 @@ Markers are notes that is used to leave some message on the map.
 
 There are two ways to set marker for map.
 
-1. Using markers and marker template
+1. Marker and marker template
 
 2. Adding marker objects to map.
 
 ###Marker and Marker Template 
 
-The **markers** property has a list of objects that contains the data for Annotation. You can visualize these data by using **markerTemplate** property.
+The `markers` property has a list of objects that contains the data for Annotation. You can visualize these data by using `markerTemplate` property.
 
-{% highlight html %}
+{% highlight js %}
 
     var markers = [
         { latitude: 37.0000, longitude: -120.0000, city: "California" },
@@ -59,15 +59,15 @@ The **markers** property has a list of objects that contains the data for Annota
 
 ###Adding Marker objects to map
 
-Without datasource, n number of markers can be added to shape layers with **markers** property. Each marker object contains the following list of properties.
+Without datasource, n number of markers can be added to shape layers with `markers` property. Each marker object contains the following list of properties.
 
-* **label** - Text that displays some information about the annotation in text format.
-* **latitude** - Latitude point determine the Y-axis position of annotation.
-* **longitude** - Longitude point determine the X-axis position of annotation.
+* `label` - Text that displays some information about the annotation in text format.
+* `latitude` - Latitude point determine the Y-axis position of annotation.
+* `longitude` - Longitude point determine the X-axis position of annotation.
 
 
 
-{% highlight html %}
+{% highlight js %}
 
     var markers = [
         { latitude: 37.0000, longitude: -120.0000, city: "California" },
@@ -105,7 +105,7 @@ Without datasource, n number of markers can be added to shape layers with **mark
 
 Bubbles in the **Maps** control represent the underlying data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
 
-Bubbles are included when data binding and the **bubbleSettings** is set to the shape layers. 
+Bubbles are included when data binding and the `bubbleSettings` is set to the shape layers. 
 
 ###Properties
 
@@ -160,13 +160,13 @@ Gets or sets the tooltip template for bubbles.</td></tr>
 
 ###Adding Bubbles to a Map
 
-To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the **maxValue**, **minValue**, and **valuePath** properties as illustrated in the following code sample.
+To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the `maxValue`, `minValue`, and `valuePath` properties as illustrated in the following code sample.
 
-> _**Note:**_ Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section.
+>**Note**_: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section._
 
 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -209,7 +209,7 @@ A legend is a key used on a map, contains swatches of symbols with descriptions.
 
 ###Visibility
 
-The Legends can be made visible by setting the **showLegend** property of legendSettings. 
+The Legends can be made visible by setting the `showLegend` property of legendSettings. 
 
 ###Positioning of Legend
 
@@ -221,7 +221,7 @@ The legend can be positioned in two ways.
 
 ####Absolute Position
 
-Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of **positionX** and **positionY** properties available in **legendSettings**. For positioning the legend based on margins corresponding to a map, **position** value is set as _‘_none’.
+Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of `positionX` and `positionY` properties available in `legendSettings`. For positioning the legend based on margins corresponding to a map, `position` value is set as ‘_none_’.
 
 ####Dock Position
 
@@ -249,21 +249,21 @@ The map legends can be positioned in following locations within the container.
 
 11. none
 
-You can set this option by using **position** property in **legendSettings**.
+You can set this option by using `position` property in `legendSettings`.
 
 ###Legend Size
 
-The map legend size can be modified using **height** and **width** properties in legendSettings.
+The map legend size can be modified using `height` and `width` properties in legendSettings.
 
 ###Legend for Shapes
 
 The Layer shape type legends can be generated for each color mappings in shape settings. 
 
-> _**Note:**_ Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred.
+>**Note**_: Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred._
 
 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -289,21 +289,21 @@ The Layer shape type legends can be generated for each color mappings in shape s
 
 ###Interactive Legend
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting **mode** property in **legendSettings** value as “interactive” and default value of **mode** property is “default” to enable the normal legend.
+The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting `mode` property in `legendSettings` value as “interactive” and default value of `mode` property is “default” to enable the normal legend.
 
 ####Title for Interactive Legend
 
-You can provide the title for interactive legend by using **title** property in **legendSettings**.
+You can provide the title for interactive legend by using `title` property in `legendSettings`.
 
 ####Label for Interactive Legend
 
-You can provide the left and right labels to interactive legend by using **leftLabel** and **rightLabel** properties in **legendSettings**. 
+You can provide the left and right labels to interactive legend by using `leftLabel` and `rightLabel` properties in `legendSettings`. 
 
-> _**Note:**_ Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred.
+>**Note**_: Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred._
 
 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -334,9 +334,9 @@ You can provide the left and right labels to interactive legend by using **leftL
 
 ###Bubble Legend
 
-A bubble legend feature is used to provide the key (legend) for another map element bubble. You can activate the Bubble legend by setting the enum “type” in legendSettings as “bubble” and this enables you to easily identify what value a particular bubble is representing.
+A bubble legend feature is used to provide the key (legend) for another map element bubble. You can activate the Bubble legend by setting the enum `type` in `legendSettings` as “bubble” and this enables you to easily identify what value a particular bubble is representing.
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#map").ejMap({

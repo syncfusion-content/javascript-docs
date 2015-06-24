@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Behavior-Settings
-description: behavior settings
+title: Behaviour-Settings
+description: behaviour settings
 platform: js
 control: ListBox
 documentation: ug
 ---
 
-# Behavior Settings
+# Behaviour Settings
 
-The following are some miscellaneous properties that helps you to change the behavior of **ListBox** control.
+The following are some miscellaneous properties that helps you to change the behaviour of **ListBox** control.
 
-**Target ID**
+## Target ID
 
 You can append a list with **ListBox** by using **targetId** property. Define a **&lt;ul&gt;**, **&lt; li&gt;** tag that you want to display on **ListBox** and then set the id of parent **&lt;ul&gt;** tag to **targetId** property. And its data type is string. 
 
@@ -21,29 +21,29 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 {% highlight html %}
 
-    <div id="control">
-        <h5 class="ctrllabel">Select a font style</h5>
-        <ul id="listboxSample"></ul>
-    
-        <ul id="targetlist">
-            <li>Algerian</li>
-            <li>ARIAL</li>
-            <li>Bimini</li>
-            <li>Courier</li>
-            <li>Cursive</li>
-            <li>Fantasy</li>
-            <li>Georgia</li>
-            <li>Impact</li>
-            <li>New york</li>
-            <li>Sans-Serif</li>
-            <li>Scripts</li>
-            <li>Times</li>
-            <li>Times New Roman</li>
-            <li>Verdana</li>
-            <li>Western</li>
-            <li>Zapfellipt bt</li>
-        </ul>
-    </div>
+<div id="control">
+    <h5 class="ctrllabel">Select a font style</h5>
+    <ul id="listboxSample"></ul>
+
+    <ul id="targetlist">
+        <li>Algerian</li>
+        <li>ARIAL</li>
+        <li>Bimini</li>
+        <li>Courier</li>
+        <li>Cursive</li>
+        <li>Fantasy</li>
+        <li>Georgia</li>
+        <li>Impact</li>
+        <li>New york</li>
+        <li>Sans-Serif</li>
+        <li>Scripts</li>
+        <li>Times</li>
+        <li>Times New Roman</li>
+        <li>Verdana</li>
+        <li>Western</li>
+        <li>Zapfellipt bt</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
@@ -58,9 +58,9 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img1.png" Caption="ListBox with target id property"%}
+{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img1.png" %}
 
-**Select the value by index** 
+## Select the value by index
 
 **ListBox** widget provides you support to select an item by mentioning the index of the item. The **selectedItemIndex** property helps you to select the particular item from the list. Its date type is number. 
 
@@ -71,10 +71,10 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 {% highlight html %}
 
 
-    <div id="control">
-        <h5 class="ctrllabel">Select a skill</h5>
-        <ul id="listboxsample"></ul>
-    </div>
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxsample"></ul>
+</div>
 
  
 {% endhighlight %}
@@ -102,9 +102,9 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img2.png" Caption="ListBox with selectedItemIndex property"%}
+{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img2.png" %}
 
-**Enable or Disable the ListBox Widget**
+## Enable or Disable the ListBox Widget
 
 This features enables you to set the enable or disable options for **ListBox** by setting Boolean type value to **enabled** property. 
 
@@ -114,10 +114,10 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 {% highlight html %}
 
-    <div id="control">
-        <h5 class="ctrllabel">Select a skill</h5>
-        <ul id="listboxSample"></ul>
-    </div>
+<div id="control">
+    <h5 class="ctrllabel">Select a skill</h5>
+    <ul id="listboxSample"></ul>
+</div>
 
 {% endhighlight %}
 
@@ -140,8 +140,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 {% endhighlight %}
 
-
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img3.png" Caption="ListBox with disabled"%}
+{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img3.png" %}
 

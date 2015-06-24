@@ -9,13 +9,13 @@ documentation: ug
 
 # Data Binding
 
-**Diagram** can be populated with the node and connector based on information from an external data source using data binding. Diagram supports binding data sources containing hierarchical data and supports both local data and remote data, for retrieving data from a specified data source. Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
+Diagram can be populated with the node and connector based on information from an external data source using data binding. Diagram supports binding data sources containing hierarchical data and supports both local data and remote data, for retrieving data from a specified data source. Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
-You can populate **Diagram** elements using data binding support such as **JSON** and **OData** services.
+You can populate Diagram elements using data binding support such as `JSON` and `OData` services.
 
 #### DataSource Settings
 
-The **DataSourceSettings** property of **Diagram** includes the required data source fields and it can be set with appropriate values as follows.
+The `dataSourceSettings` property of Diagram includes the required data source fields and it can be set with appropriate values as follows.
 
 <table>
 <tr>
@@ -48,7 +48,7 @@ Specifies the parent id of the data source items.</td></tr>
 
 ## Local Data
 
-To bind the **Local Data** to the Diagram control, map the user-defined **JSON** data names with its appropriate data source field. You can bind data to the **Diagram** by mapping fields such as **dataSource, id** and **parent.** The following code example illustrates how to bind local data to the **Diagram.**
+To bind the **Local Data** to the Diagram control, map the user-defined `JSON` data names with its appropriate data source field. You can bind data to the Diagram by mapping fields such as `dataSource`, `id` and `parent`. The following code example illustrates how to bind local data to the Diagram.
 
 {% highlight js %}
 
@@ -104,7 +104,7 @@ $("#diagram").ejDiagram({
       //set the default properties of the connector.         
       connector: {
          segments: [{
-            "type": "orthogonal"
+            type: "orthogonal"
          }],
          targetDecorator: {
             shape: "none"
@@ -119,8 +119,6 @@ $("#diagram").ejDiagram({
    dataSourceSettings: {
       id: "Name",
       parent: "ReportingPerson",
-      
-      //specifies the dataSource
       dataSource: data 
    }
 });         
@@ -131,9 +129,9 @@ $("#diagram").ejDiagram({
 
 ## Remote Data
 
-You can bind the **Diagram** to Remote Data using **dataManager** and the query in fields is used to retrieve the data. **dataManager** supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. For further details refer link [dataManager](/js/DataManager)
+You can bind the Diagram to Remote Data using `dataManager` and the query in fields is used to retrieve the data. `dataManager` supports the following types of data-binding: `JSON`, `Web Services`, `oData`. It uses two different classes: `ej.DataManager` for processing and ej.Query for serving data. `ej.DataManager` communicates with data source and `ej.Query` generates data queries that are read by the `dataManager`. For further details refer link [dataManager](/js/DataManager)
 
-The following code illustrates how to bind remote data to the **Diagram**.
+The following code illustrates how to bind remote data to the Diagram.
 
 {% highlight js %}
 
@@ -210,7 +208,7 @@ dataSourceSettings: {
 
 ## HTML Binding
 
-The Diagram provides support to form diagram from the **HTML table**. It is flexible to convert **HTML** table to diagram using **Data Manager**. The following code example illustrates how to convert **HTML** table to diagram.
+The Diagram provides support to form diagram from the **HTML table**. It is flexible to convert HTML table to diagram using **Data Manager**. The following code example illustrates how to convert HTML table to diagram.
 
 {% highlight html %}
 

@@ -44,62 +44,61 @@ To use the gallery feature, include the following properties under **tabgroups**
        </ul>
        <div id="paste" style="height: 40px; width: 43px;">Paste</div>
        <script type="text/javascript">
-          $(function () {
-           $("#defaultRibbon").ejRibbon({
-               width: "800",
-               applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu" },
-               tabs: [{
-                   id: "home", text: "HOME", groups: [{
-                       text: "Clipboard", type: "custom", contentID: "paste"
-                   },
-          {
-          text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
-          groups: [
-          {
-          id: "Gallery1",
-          columns: 2,
-          itemHeight: 54,
-          itemWidth: 68,
-          expandedColumns: 3,
-          type: ej.Ribbon.type.gallery,
-          galleryItems: [{
-          text: "Content1",
-          toolTip: "Content1",
-          },
-          {
-          text: "Content2",
-          toolTip: "Content2",
-          }
-          ,
-          {
-          text: "Content3",
-          toolTip: "Content3"
-          },
-          {
-          text: "Content4",
-          toolTip: "Content4"
-          },
-          {
-          text: "Content5",
-          toolTip: "Content5"
-          }
-          ],          
-          customGalleryItems: [
-          {
-          text: "Save Selection as new quick style",
-          toolTip: "Save",
-          customItemType: ej.Ribbon. customItemType.button,
-          },
-          {
-          customItemType: ej.Ribbon. customItemType.menu,
-          menuId: "custommenu"
-          }]
-          }]
-          }]
-          }]
-               }]
-           });
-          });
+            $(function() {
+                $("#defaultRibbon").ejRibbon({
+                    width: "800",
+                    applicationTab: {
+                        Type: "ApplicationMenu",
+                        itemID: "ribbonmenu"
+                    },
+                    tabs: [{
+                        id: "home",
+                        text: "HOME",
+                        groups: [{
+                            text: "Clipboard",
+                            type: "custom",
+                            contentID: "paste"
+                        }, {
+                            text: "Gallery",
+                            alignType: ej.Ribbon.alignType.rows,
+                            content: [{
+                                groups: [{
+                                    id: "Gallery1",
+                                    columns: 2,
+                                    itemHeight: 54,
+                                    itemWidth: 68,
+                                    expandedColumns: 3,
+                                    type: ej.Ribbon.type.gallery,
+                                    galleryItems: [{
+                                        text: "Content1",
+                                        toolTip: "Content1",
+                                    }, {
+                                        text: "Content2",
+                                        toolTip: "Content2",
+                                    }, {
+                                        text: "Content3",
+                                        toolTip: "Content3"
+                                    }, {
+                                        text: "Content4",
+                                        toolTip: "Content4"
+                                    }, {
+                                        text: "Content5",
+                                        toolTip: "Content5"
+                                    }],
+                                    customGalleryItems: [{
+                                        text: "Save Selection as new quick style",
+                                        toolTip: "Save",
+                                        customItemType: ej.Ribbon.customItemType.button,
+                                    }, {
+                                        customItemType: ej.Ribbon.customItemType.menu,
+                                        menuId: "custommenu"
+                                    }]
+                                }]
+                            }]
+                        }]
+                    }]
+                });
+            });
        </script>
     </body>
     <!-- ... -->

@@ -13,33 +13,32 @@ This section explains briefly on how to create a **ListView** control in your ap
 
 ## Create your first ListView in JavaScript
 
-The **Essential JavaScript ListView** widget builds an interactive list view interface. This control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry.    __
+The **Essential JavaScript ListView** widget builds an interactive list view interface. This control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry.
 
 
-
-{% include image.html url="/js/ListView/Getting-Started_images/Getting-Started_img1.png" Caption="List view Control "%}
+{% include image.html url="/js/ListView/Getting-Started_images/Getting-Started_img1.png" %}
 
 **Create a simple ListView**
 
 The following steps guide you to add a **ListView** control.
 
-1. Create an **HTML** file and add the following references to the required libraries.
+Create a **HTML** file and add the following references to the required libraries.
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 
 <html>
 <head>
-<linkhref="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
-<scriptsrc="[http://code.jquery.com/jquery-2.0.0.min.js](http://code.jquery.com/jquery-2.0.0.min.js)"></script>
-<scriptsrc="[http://borismoore.github.io/jsrender/jsrender.min.js](http://borismoore.github.io/jsrender/jsrender.min.js)"></script>
-<scriptsrc="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<script src="[http://code.jquery.com/jquery-2.0.0.min.js](http://code.jquery.com/jquery-2.0.0.min.js)"></script>
+<script src="[http://borismoore.github.io/jsrender/jsrender.min.js](http://borismoore.github.io/jsrender/jsrender.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
 
 </head>
 <body>
-        <!—Add Listview control template element here-->
+        <!-- Add Listview control template element here -->
 
 </body>
 </html>
@@ -49,24 +48,24 @@ The following steps guide you to add a **ListView** control.
 
 
 
-2. Add a **&lt;div&gt;** element. It is a container for **ListView** control.
+Add a **&lt;div&gt;** element. It is a container for **ListView** control.
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 
-<div id="listview">
-  <ul>
-    <li data-ej-text="Inbox"></li>
-    <li data-ej-text="VIP"></li>
-    <li data-ej-text="Drafts"></li>
-    <li data-ej-text="Sent"></li>
-    <li data-ej-text="Junk"></li>
-    <li data-ej-text="All mails"></li>
-    <li data-ej-text="Mail"></li> 
-</ul>
-</div>
+    <div id="listview">
+        <ul>
+            <li data-ej-text="Inbox"></li>
+            <li data-ej-text="VIP"></li>
+            <li data-ej-text="Drafts"></li>
+            <li data-ej-text="Sent"></li>
+            <li data-ej-text="Junk"></li>
+            <li data-ej-text="All mails"></li>
+            <li data-ej-text="Mail"></li>
+        </ul>
+    </div>
 
 
 
@@ -74,20 +73,18 @@ The following steps guide you to add a **ListView** control.
 
 
 
-3. Create the **ListView** control as follows.
+Create the **ListView** control as follows.
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
-<head>
-<!-- ... -->
-<script type="text/javascript">
-$(function () {
-            $("#listview").ejListView();
-          });
-</script>
-</head>
+
+        <script type="text/javascript">
+            $(function () {
+                $("#listview").ejListView();
+            });
+        </script>
 
 
 {% endhighlight %}
@@ -96,7 +93,7 @@ $(function () {
 
 Run the above code to render the following output.
 
-{% include image.html url="/js/ListView/Getting-Started_images/Getting-Started_img2.png" Caption="List view without header"%}
+{% include image.html url="/js/ListView/Getting-Started_images/Getting-Started_img2.png" %}
 
 **Add Header** 
 
@@ -104,14 +101,14 @@ You can add a header for **ListView**. Refer to the following code example.
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-$(function () {
-            $("#listview").ejListView({ **showHeader: true, headerTitle: "Mailbox"**});
-});
-</script>
+    $(function () {
+        $("#listview").ejListView({ **showHeader: true, headerTitle: "Mailbox"**});
+    });
+    </script>
 
 
 
@@ -121,5 +118,5 @@ $(function () {
 
 Run the above code to render the following output.
 
-{% include image.html url="/js/ListView/Getting-Started_images/Getting-Started_img3.png" Caption="List view Control with header"%}
+{% include image.html url="/js/ListView/Getting-Started_images/Getting-Started_img3.png" %}
 

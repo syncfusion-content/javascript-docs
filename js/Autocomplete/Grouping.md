@@ -19,7 +19,7 @@ The following steps explain you how to configure **Grouping** for an AutoComplet
 
 {% highlight html %}
 
-         <input type="text" id="autocomplete" />
+<input type="text" id="autocomplete" />
 
 
 {% endhighlight %}
@@ -51,20 +51,20 @@ The following steps explain you how to configure **Grouping** for an AutoComplet
 
 {% highlight js %}
 
-          $('#autocomplete').ejAutocomplete({
-                dataSource: countries,
-                filterType: ej.filterType.Contains,
-                minCharacter: 2,// starts search only after entering 2 texts
-                width: 205,
-                allowGrouping: true,
-                highlightSearch: true,
-                popupHeight: "200px"
-            });
+    $('#autocomplete').ejAutocomplete({
+        dataSource: countries,
+        filterType: ej.filterType.Contains,
+        minCharacter: 2, // starts search only after entering 2 texts
+        width: 205,
+        allowGrouping: true,
+        highlightSearch: true,
+        popupHeight: "200px"
+    });
 
 {% endhighlight %}
 
 
 The following image is the output for AutoComplete control that provides Grouping.
 
-{% include image.html url="/js/Autocomplete/Grouping_images/Grouping_img1.png" Caption="AutoComplete popup panel with grouping"%}
+{% include image.html url="/js/Autocomplete/Grouping_images/Grouping_img1.png"%}
 

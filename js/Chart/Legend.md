@@ -42,7 +42,7 @@ documentation: ug
 
 The following screenshot displays **Legend Title**:
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img1.png" Caption="Legend Title"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img1.png" %}
 
 ## Legend Position
 
@@ -62,7 +62,7 @@ You can position the **legend** at top, bottom, left or right position of the Ch
 
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img2.png" Caption="Chart with Legend position"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img2.png" %}
 
 ## Customization
 
@@ -87,7 +87,7 @@ In **EjChart**, you can customize the legend shape with different symbols like r
 
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img3.png" Caption="Chart with customized Legend border and shape"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img3.png" %}
 
 ### Legend rowCount and columnCount
 
@@ -107,7 +107,7 @@ In **EjChart**, you can customize the legend shape with different symbols like r
 
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img4.png" Caption="Chart with customized Legend RowCount and ColumnCount"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img4.png" %}
 
 ### Legend item style and border customization
 
@@ -134,7 +134,7 @@ EjChart allows you to customize the legend item size, and border color and width
 
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img5.png" Caption="Chart with Legend item size and border customization"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img5.png" %}
 
 ### Legend font
 
@@ -160,7 +160,7 @@ You can customize the legend font family, font style, font weight and size and f
 
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img6.png" Caption="Chart with Customized Legend Font"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img6.png" %}
 
 ### Legend opacity and item padding
 
@@ -186,7 +186,7 @@ You can customize the legend font family, font style, font weight and size and f
 
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img7.png" Caption="Chart with customized Legend Opacity and Item Padding"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img7.png" %}
 
 ### Scrollbar for legends
 
@@ -214,7 +214,7 @@ Scrollbar is enabled for the legends, when the legend size is greater than the u
 
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img8.jpeg" Caption="Legends with scroll bar"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img8.jpeg" %}
 
 ### Custom Legend Icons
 
@@ -237,5 +237,5 @@ You can customize the shape of the legend icon. Normally the available shapes ar
 
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img9.png" Caption="Customized Legend Icon"%}
+{% include image.html url="/js/Chart/Legend_images/Legend_img9.png" %}
 

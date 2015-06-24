@@ -9,12 +9,10 @@ documentation: ug
 
 # Filtering
 
-Filtering is used to filter particular or related records in **Grid** to review details of records. To enable filtering behavior in **Grid** you can add **allowFiltering** property at **Grid** initialize. There are three types of filtering features in grid. They are
+Filtering is used to filter particular or related records in **Grid** to review details of records. To enable filtering behavior in **Grid** you can add `allowFiltering` property at **Grid** initialize. There are three types of filtering features in grid. They are
 
 * Filter menu
-
 * Filter Bar
-
 * Excel styled menu
 
 ## Filter Menu 
@@ -24,11 +22,8 @@ After you enable **Filter Menu** in **Grid**, it shows filter menu to filter rec
 **Filter menu types**
 
 * String menu filtering 
-
 * Numeric menu filtering
-
 * Date menu filtering
-
 * Boolean menu filtering
 
 Filter menus are a good **UI** based filtering option. It visibly denotes filtering option and is flexible to filter records. In String menu filtering, **ejAutoComplete** is used as default control to filter; in Numeric menu filtering, **ejNumericTextbox** is used as default control to filter. In Date menu filtering, **ejDatePicker** control is used as default control to filter and in Boolean menu filtering, **ejCheckBox** is used for filtering. 
@@ -55,7 +50,7 @@ Filter menus are a good **UI** based filtering option. It visibly denotes filter
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img1.png" Caption="Filter menu"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img1.png"%}
 
 ## Filter Bar
 
@@ -118,11 +113,11 @@ Boolean filter bar works with either <b>true</b> or <b>false</b>.</td></tr>
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img2.png" Caption="Filter Bar"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img2.png"%}
 
 ## Excel styled menu
 
-You can enable the Excel like filter menu by setting the **filterType** as “excel” of the **filterSettings** property. The filter menu is displayed after clicking the filter icon in the column headers. 
+You can enable the Excel like filter menu by setting the `filterType` as “excel” of the `filterSettings` property. The filter menu is displayed after clicking the filter icon in the column headers. 
 
 The filter menu contains options such as Sorting, Clear filter, submenu for the advanced filter options, 
 
@@ -132,9 +127,9 @@ The Checkbox list is available in the menu that contains the possible filter val
 
 The output of the excel like filterin as shown as below.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img3.png" Caption="Checkbox list"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img3.png"%}
 
-A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the **maxFilterChoices** property of the **filterSettings**. 
+A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the `maxFilterChoices` property of the `filterSettings`. 
 
 ### Advanced Filter
 
@@ -142,9 +137,9 @@ The Submenu items in the filter menu provide the advanced filtering options for 
 
 The ourput of the custom filter menu was showed in below screenshot.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img4.png" Caption="Advanced Filter"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img4.png"%}
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img5.png" Caption="Custom Filter"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img5.png"%}
 
 {% highlight html %}
 
@@ -184,9 +179,9 @@ _List of Column type and Filter operators_
 
 <table>
 <tr>
-<td>
-<b>Column type</b></td><td>
-<b>Filter operators</b></td></tr>
+<th>
+<b>Column type</b></th><th>
+<b>Filter operators</b></th></tr>
 <tr>
 <td>
 Number</td><td>
@@ -301,5 +296,5 @@ ej.FilterOperators.equal</td></tr>
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Filtering_images/Filtering_img6.png" Caption="Dynamic Filtering"%}
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img6.png"%}
 

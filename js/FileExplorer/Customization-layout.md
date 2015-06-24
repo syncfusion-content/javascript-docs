@@ -17,8 +17,7 @@ To render **FileExplorer** with the above customizing options, include the fol
 
 {% highlight html %}
 
-    <div id="fileExplorer"></div>
-
+<div id="fileExplorer"></div>
 
 {% endhighlight %}
 
@@ -30,33 +29,30 @@ Add the following code in your script section.
 
 {% highlight js %}
 
-
-    $(function () {
-        var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
-        $("#fileExplorer").ejFileExplorer({
-            fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
-            layout: "list",
-            path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-            ajaxAction: localServ,
-            showToolbar: false,
-            ajaxSettings: {
-                upload: {
-                    url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-                },
-                download: {
-                    url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-                }
-            }
-        });
+    $(function() {
+       var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+       $("#fileExplorer").ejFileExplorer({
+          fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
+          layout: "list",
+          path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+          ajaxAction: localServ,
+          showToolbar: false,
+          ajaxSettings: {
+             upload: {
+                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
+             },
+             download: {
+                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
+             }
+          }
+       });
     });
-
-
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/FileExplorer/Customization-layout_images/Customization-layout_img1.png" Caption=" File Explorer with toolbar disabled"%}
+{% include image.html url="/js/FileExplorer/Customization-layout_images/Customization-layout_img1.png"%}
 
 To render **FileExplorer** with the above disable tree view and footer options, include the following code in your **HTML** page.
 
@@ -64,8 +60,7 @@ To render **FileExplorer** with the above disable tree view and footer options
 
 {% highlight html %}
 
-    <div id="fileExplorer"></div>
-
+<div id="fileExplorer"></div>
 
 {% endhighlight %}
 
@@ -77,34 +72,30 @@ Add the following code in your script section.
 
 {% highlight js %}
 
-
-
-        $(function () {
-            var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
-            $("#fileExplorer").ejFileExplorer({
-                fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
-                layout: "tile",
-                path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-                ajaxAction: localServ,
-                showToolbar: false,
-                showTreeview: false,
-                showFooter: false,
-                ajaxSettings: {
-                    upload: {
-                        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-                    },
-                    download: {
-                        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-                    }
-                }
-            });
-        });
-
-
+    $(function() {
+       var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+       $("#fileExplorer").ejFileExplorer({
+          fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
+          layout: "tile",
+          path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+          ajaxAction: localServ,
+          showToolbar: false,
+          showTreeview: false,
+          showFooter: false,
+          ajaxSettings: {
+             upload: {
+                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
+             },
+             download: {
+                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
+             }
+          }
+       });
+    });
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/FileExplorer/Customization-layout_images/Customization-layout_img2.png" Caption="FileExplorer with tree view and footer disabled"%}
+{% include image.html url="/js/FileExplorer/Customization-layout_images/Customization-layout_img2.png"%}
 

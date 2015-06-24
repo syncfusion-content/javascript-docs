@@ -12,20 +12,15 @@ documentation: ug
 **Summary** is a key feature of **Grid** that is used to aggregate a particular column. This is useful to analyse the details of a particular column. It has the following types:
 
 * Sum
-
 * Average 
-
 * Count
-
 * Minimum
-
 * Maximum
-
 * Custom
 
 ## Default Summary
 
-There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary rows using **showSummary** and **summaryRows** property in **ejGrid.**
+There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary rows using `showSummary` and `summaryRows` property in **ejGrid.**
 
 {% highlight html %}
 
@@ -62,11 +57,11 @@ There are some default summary types available for basic summary formula. The fo
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img1.png" Caption="Summary"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img1.png"%}
 
 ## Custom Summary by String
 
-This property helps you to create custom summary formula for summary. The following code example is for custom summary using **Essential JavaScript**. Using **customSummaryValue** property to achieve custom summay for ejGrid.
+This property helps you to create custom summary formula for summary. The following code example is for custom summary using **Essential JavaScript**. Using `customSummaryValue` property to achieve custom summary for ejGrid.
 
 {% highlight html %}
 
@@ -106,7 +101,7 @@ This property helps you to create custom summary formula for summary. The follow
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img2.png" Caption="Custom Summary"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img2.png"%}
 
 ## Custom Summary by Function
 
@@ -151,7 +146,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img3.png" Caption="Custom Summary by Function"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img3.png" Caption="Custom Summary by Function"%}
 
 ## Group Summary
 
@@ -194,11 +189,11 @@ This property helps you to enable the group summary column in **Grid**. The foll
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img4.png" Caption="Group Summary"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img4.png"%}
 
 ## Caption Summary
 
-This property is used to create Caption Summary column in **Grid**. **showCaptionSummary** property is used to show the caption summary in grid. The following code example is for Caption Summary.
+This property is used to create Caption Summary column in **Grid**. `showCaptionSummary` property is used to show the caption summary in grid. The following code example is for Caption Summary.
 
 {% highlight html %}
 
@@ -232,5 +227,5 @@ This property is used to create Caption Summary column in **Grid**. **showCaptio
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Summary_images/Summary_img5.png" Caption="Caption Summary"%}
+{% include image.html url="/js/Grid/Summary_images/Summary_img5.png"%}
 

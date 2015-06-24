@@ -17,12 +17,13 @@ In the **HTML** page, add the following button elements to configure **Button
 
 {% highlight html %}
 
-    <button id="dropdownbtn">login</button>
-    <ul id="menu">
-        <li><span>User</span></li>
-        <li><span>Guest</span></li>
-        <li><span>Admin</span></li>
-    </ul>
+<button id="dropdownbtn">login</button>
+<ul id="menu">
+    <li><span>User</span></li>
+    <li><span>Guest</span></li>
+    <li><span>Admin</span></li>
+</ul>
+
 {% endhighlight %}
 
 {% highlight js %}
@@ -45,5 +46,5 @@ In the **HTML** page, add the following button elements to configure **Button
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Concepts-and-Features/Dropdown-Button_images/Dropdown-Button_img1.png" Caption="Dropdown Button with content"%}
+{% include image.html url="/js/SplitButton/Concepts-and-Features/Dropdown-Button_images/Dropdown-Button_img1.png" %}
 

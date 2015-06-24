@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about how to create **Maps** in your application with **JavaScript.**
 
-## Configure a Map
+## Create your first Map in JavaScript
 
 You can configure an **Essential JavaScript** Map in simple steps. In this example, you can learn how to configure USA population map with customized appearance and tooltip.
 
@@ -49,7 +49,7 @@ In this example, USA shape is used as shape data by utilizing the “**United St
 
 **..\ Maps_GeoJSON\All Countries with States**
 
-You can assign the complete contents in “**United States of America.json**” file to new **JSON** object. For your better understanding, a JS file “**usa.js”** is already created to store **JSON** data in **JSON** object “usMap”.
+You can assign the complete contents in “**United States of America.json**” file to new JSON object. For your better understanding, a JS file “**usa.js**” is already created to store JSON data in JSON object “usMap”.
 
 **[usa.js]**
 
@@ -61,7 +61,7 @@ You can assign the complete contents in “**United States of America.json**” 
 
 ###Prepare DataSource
 
-The datasource is populated with **JSON** data relative to shape data and stored in **JSON** object. U.S.A population as datasource is used for better understanding. The “**populationData.js”** file is used to store **JSON** data in **JSON** object “**populationData**”.
+The datasource is populated with JSON data relative to shape data and stored in JSON object. USA population as datasource is used for better understanding. The “**populationData.js**” file is used to store JSON data in JSON object “**populationData**”.
 
 **[populationData.js]**
 
@@ -225,15 +225,15 @@ The following properties in shape layers are used for binding data in **Map** co
 
 ###DataSource
 
-The **dataSource** property accepts collection values as input. For example, the list of objects can be provided as input.
+The `dataSource` property accepts collection values as input. For example, the list of objects can be provided as input.
 
 ###Shape Data Path
 
-The **shapeDataPath** property used to refer the data ID in dataSource. For example, ‘populationData’ **JSON** object contains data ids ‘name’ and ‘population’. The **shapeDataPath** and the **shapePropertyPath** properties are related to each other (refer to **shapePropertyPath** for more details).
+The `shapeDataPath` property used to refer the data ID in dataSource. For example, "populationData" JSON object contains data ids ‘name’ and ‘population’. The `shapeDataPath` and the `shapePropertyPath` properties are related to each other (refer to `shapePropertyPath` for more details).
 
 ###Shape Property Path
 
-The **shapePropertyPath** property is similar to the **shapeDataPath** that refers the column name in the **shapeData** property of shape layers to identify the shape. When the values of the **shapeDataPath** property in the **dataSource** property and the value of **shapePropertyPath** in the shapeDataproperty match, then the associated object from the **dataSource** is bound to the corresponding shape.
+The `shapePropertyPath` property is similar to the `shapeDataPath` that refers the column name in the `shapeData` property of shape layers to identify the shape. When the values of the `shapeDataPath` property in the `dataSource` property and the value of `shapePropertyPath` in the shapeDataproperty match, then the associated object from the `dataSource` is bound to the corresponding shape.
 
 The **JSON** object “populationData” is used as dataSource in the following code example.
 
@@ -258,7 +258,7 @@ The **JSON** object “populationData” is used as dataSource in the following 
 
 ##Customize Map Appearance 
 
-You can customize the shape’s color by using **fill**, **stroke** and **strokeThickness** properties in **shapeSettings.**
+You can customize the shape’s color by using `fill`, `stroke` and `strokeThickness` properties in `shapeSettings`.
 
 {% highlight html %}
 
@@ -294,9 +294,9 @@ You can customize the shape’s color by using **fill**, **stroke** and **stroke
 
 ###Customize Map Appearance by Range
 
-The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The **from** and **to** properties defines the value ranges and the **gradientColors** property defines the equivalent color ranges respective to their value ranges.
+The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The `from` and `to` properties defines the value ranges and the `gradientColors` property defines the equivalent color ranges respective to their value ranges.
 
-> _**Note:**_ The enableGradient property value should be true to apply gradient colors for maps
+>**Note**_: The enableGradient property value should be true to apply gradient colors for maps._
 
 
 
@@ -362,7 +362,7 @@ The following screenshot illustrates a map with gradient color property enable.
 
 ##Enable Tooltip
 
-The tooltip is displayed only when **showTooltip** is set to “**True**” in the shape layers. By default, it takes the property of the bound object that is referred in the **valuePath** and displays its content on hovering the corresponding shape. The **tooltipTemplate** property is used for customizing the template for tooltip.	
+The tooltip is displayed only when `showTooltip` is set to “**True**” in the shape layers. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The `tooltipTemplate` property is used for customizing the template for tooltip.	
 
 {% highlight html %}
 
@@ -392,19 +392,19 @@ The following screenshot illustrates a map control displaying a Tooltip.
 
 ##Legend
 
-A Legend can be made visible by setting the **showLegend** property in legendSetting. 
+A Legend can be made visible by setting the `showLegend` property in legendSetting. 
 
 ###Interactive Legend
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend, when the mouse hovers on the corresponding shape. You can enable this option by setting **mode** property in **legendSettings** value as _‘_**Interactive’**. The default value of **mode** property is ‘**Default’** to enable the normal legend.
+The legends can be made interactive with an arrow mark indicating the exact range color in the legend, when the mouse hovers on the corresponding shape. You can enable this option by setting `mode` property in `legendSettings` value as "**Interactive**". The default value of `mode` property is "**Default**" to enable the normal legend.
 
 ####Title
 
-Use the **title** property to provide title for interactive legend.
+Use the `title` property to provide title for interactive legend.
 
 ####Label
 
-You can use **leftLabel** and **rightLabel** property to provide left and right labels for interactive legend.
+You can use `leftLabel` and `rightLabel` property to provide left and right labels for interactive legend.
 
 {% highlight html %}
 

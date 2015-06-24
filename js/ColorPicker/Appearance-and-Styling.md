@@ -69,7 +69,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
+<input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="ColorPicker rendered with Palette Model"%}
+{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
 
 ## palette
 
@@ -259,7 +259,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
+<input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -275,7 +275,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="ColorPicker with Presets"%}
+{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
 
 ## custompalette
 
@@ -288,7 +288,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% highlight html %}
 
 
-    <input type="text" id="colorPicker" />    
+<input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -306,7 +306,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="ColorPicker with Customized Colors"%}
+{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
 
 ## displayInline
 
@@ -336,7 +336,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render **ColorPicker** wi
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="ColorPicker in Display Inline"%}
+{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" %}
 
 ## Theme Support
 
@@ -400,7 +400,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="ColorPicker with Theme Support"%}
+{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img5.png"%}
 
 ## CustomCss
 
@@ -413,7 +413,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% highlight html %}
 
 
-     <input type="text" id="colorPicker" />    
+<input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
@@ -429,7 +429,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 {% endhighlight %}
 
 
-* Custom Css Styles.
+Custom Css Styles.
 
 
 
@@ -452,5 +452,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of above steps.
 
-{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="ColorPicker with Custom Theme"%}
+{% include image.html url="/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img6.png"%}
 

@@ -13,7 +13,7 @@ Columns are a key feature in **Grid** to define schema in a control based on a d
 
 ## Formatting
 
-**Formatting** is used to convert data values to human readable formats by using specific culture settings. In **ejGrid**, you have an option to format a particular column through the **format** property. For more details about **globalize.js**, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in **Grid**.
+**Formatting** is used to convert data values to human readable formats by using specific culture settings. In **ejGrid**, you have an option to format a particular column through the `format` property. For more details about **globalize.js**, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in **Grid**.
 
 {% highlight html %}
 
@@ -45,11 +45,11 @@ Columns are a key feature in **Grid** to define schema in a control based on a d
 
 The following is the result of column formatting.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img1.png" Caption="Column formatting"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img1.png" %}
 
 ## Template
 
-A **template** is used to render a specific template to a particular column using **Template** and **templateID** property. These columns are not bound to **Grid**.
+A **template** is used to render a specific template to a particular column using `Template` and `templateID` property. These columns are not bound to **Grid**.
 
 {% highlight html %}
 
@@ -82,7 +82,7 @@ A **template** is used to render a specific template to a particular column usin
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img2.png" Caption="Column Template"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img2.png"%}
 
 ## Custom Attribute
 
@@ -121,11 +121,11 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img3.png" Caption="Column Customization"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img3.png"%}
 
 ## Read only
 
-**allowEditing** enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set **allowEditing** as **False for** that column. The following code example shows **Essential JavaScript** column as **read-only**.
+`allowEditing` enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set `allowEditing` as **False for** that column. The following code example shows **Essential JavaScript** column as **read-only**.
 
 {% highlight html %}
 
@@ -157,11 +157,11 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img4.png" Caption="Read-only"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img4.png"%}
 
 ## Controlling Grid actions
 
-In **ejGrid**, you can control **Grid** actions through **allowSorting, allowGrouping, allowFiltering**. The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
+In **ejGrid**, you can control **Grid** actions through `allowSorting, allowGrouping, allowFiltering`. The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
 
 {% highlight html %}
 
@@ -196,7 +196,7 @@ In **ejGrid**, you can control **Grid** actions through **allowSorting, allowGro
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img5.png" Caption="Control Grid actions"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img5.png"%}
 
 ## Auto-generate column
 
@@ -223,7 +223,7 @@ The columns are automatically generated from the datasource and you do not need 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img6.png" Caption="Auto-generate columns"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img6.png"%}
 
 ## Foreign key columns
 
@@ -258,11 +258,11 @@ Foreign key is a field in relational table. It matches the specific key columns 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img7.png" Caption="Foreign key columns"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img7.png"%}
 
 ## Cell Merging
 
-Cell merging feature enables to merge cells based on your requirement. The following code example illustrates Cell Merging. **allowCellMerging** property allowed to enable cell merging feature.
+Cell merging feature enables to merge cells based on your requirement. The following code example illustrates Cell Merging. `allowCellMerging` property allowed to enable cell merging feature.
 
 {% highlight html %}
 
@@ -299,13 +299,13 @@ Cell merging feature enables to merge cells based on your requirement. The follo
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img8.png" Caption=""%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img8.png"%}
 
 _Cell Merging_
 
 ## AutoWrap Column Cells
 
-AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. **autoTextWrap** property allowed to enable auto wrap feature.
+AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. `allowTextWrap` property allowed to enable auto wrap feature.
 
 {% highlight html %}
 
@@ -332,11 +332,11 @@ AutoWrap feature allows you to wrap cell content to next line when the content e
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img9.png" Caption="AutoWrap Column Cells"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img9.png"%}
 
 ## Column Chooser
 
-**Column Chooser** is used to view or hide particular column. To enable column chooser set **showColumnChooser** property as true. Use the following code example to enable column Chooser.
+**Column Chooser** is used to view or hide particular column. To enable column chooser set `showColumnChooser` property as true. Use the following code example to enable column Chooser.
 
 {% highlight html %}
 
@@ -357,13 +357,13 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img10.png" Caption="Grid with Column chooser"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img10.png"%}
 
 ## DisableHtmlEncode
 
-**disableHtmlEncode** property helps you show the encoded **HTML** view of **Grid** content and header elements. 
+`disableHtmlEncode` property helps you show the encoded **HTML** view of **Grid** content and header elements. 
 
-The following code example shows you how to set **disableHtmlEncode**:
+The following code example shows you how to set `disableHtmlEncode`:
 
 {% highlight html %}
 
@@ -392,11 +392,11 @@ The following code example shows you how to set **disableHtmlEncode**:
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img11.png" Caption="DisableHTMLEncode"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img11.png"%}
 
 ## Stacked Header
 
-The **Stacked Header** feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel **Stacked Headers** as well. Enable the **Stacked Header** by setting the **showStackedHeader** property to **true** and set the stacked header row by using the **stakedHeaderRows** property. The **Stacked Header** feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
+The **Stacked Header** feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel **Stacked Headers** as well. Enable the **Stacked Header** by setting the `showStackedHeader` property to **true** and set the stacked header row by using the `stakedHeaderRows` property. The **Stacked Header** feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
 
 {% highlight html %}
 
@@ -427,7 +427,7 @@ The **Stacked Header** feature allows additional header rows that span across th
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img12.png" Caption="Stacked Header"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img12.png" Caption="Stacked Header" % }
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Columns_images/Columns_img13.png" Caption="Stacked Header with Grouping"%}
+{% include image.html url="/js/Grid/Columns_images/Columns_img13.png" Caption="Stacked Header with Grouping support"%}
 

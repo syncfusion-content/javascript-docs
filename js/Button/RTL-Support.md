@@ -17,12 +17,12 @@ In the **HTML** page, add the following button elements to configure button widg
 
 {% highlight html %}
 
-    <button id="button_rtl">button</button>
+   <button id="button_rtl">button</button>
 
 {% endhighlight %}
 
 {% highlight js %}
-
+    
     $(function () {
         $("#button_rtl").ejButton({
             size: "large", contentType: ej.ContentType.TextAndImage,
@@ -39,5 +39,5 @@ In above mentioned code example prefixIcon property is used and the icon that is
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/RTL-Support_images/RTL-Support_img1.png" Caption="Button in Right to left format"%}
+{% include image.html url="/js/Button/RTL-Support_images/RTL-Support_img1.png" %}
 

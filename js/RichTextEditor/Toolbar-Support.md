@@ -15,7 +15,7 @@ The **RichTextEditor** control provides a number of tool items that provide a ri
 
 All the formatting tools allow you to change the appearance of text. Formatted text is visually interesting and easy for the visitor to read. Formatting tags provide emphasis or act as markers to help the visitor, find information. Some text styling options are also available as a drop-down list. Upon clicking them, the list opens and you can select a styling option.
 
-### List of Toolbar Items
+## List of Toolbar Items
 
 * Alignment Formatting Tools: Left, right, center, and justify.
 * Color palette
@@ -26,8 +26,8 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 * Subscript and Superscript 
 * Text with subscript and superscript placed after or before the baseline respectively.
 * Font options
-* Font Name http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font – Typeface that is applied to the document text.
-* Font Size http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size – Determines how big or small the text will be.
+* Font Name [http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font –](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Font –) Typeface that is applied to the document text.
+* Font Size [http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size –](http://docs.cksource.com/CKEditor_3.x/Users_Guide/Styling/Size –) Determines how big or small the text will be.
 * Format
 * Predefined sets of formatting features that can be applied to block and to make elements of the document inline.
 * Upper & lower case conversion
@@ -49,51 +49,44 @@ To render RichTextEditor with the above toolbar options, include the following c
 
 {% highlight html %}
 
-    <div>
-        <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
-        </textarea>
-    </div>
+<div>
+   <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+   </textarea>
+</div>
 
 {% endhighlight %}
 
 Add the following code in your script section.
 
-
 {% highlight js %}
 
-
-    $(function(){
-            $("#rteSample").ejRTE({
-                width: "850px",
-                showFooter: true,
-                tools: {
-                    font: ["fontName", "fontSize", "fontColor", "backgrounColor"],
-                    style: ["bold", "italic", "underline", "strikethrough"],
-                    alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
-                    lists: ["unorderedList", "orderedList"],
-                    copyPaste: ["cut", "copy", "paste"],
-                    doAction: ["undo", "redo"],
-                    clear: ["clearFormat", "clearAll"],
-                    links: ["createLink"],
-                    images: ["image", "video"],
-                    tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
-                    scripts: ["superscript", "subscript"],
-                    casing: ["upperCase", "lowerCase"],
-                    paragraph: ["paragraph"]
-                }
-            });
+    $(function() {
+       $("#rteSample").ejRTE({
+          width: "850px",
+          showFooter: true,
+          tools: {
+             font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
+             style: ["bold", "italic", "underline", "strikethrough"],
+             alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
+             lists: ["unorderedList", "orderedList"],
+             copyPaste: ["cut", "copy", "paste"],
+             doAction: ["undo", "redo"],
+             clear: ["clearFormat", "clearAll"],
+             links: ["createLink"],
+             images: ["image", "video"],
+             tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
+             scripts: ["superscript", "subscript"],
+             casing: ["upperCase", "lowerCase"],
+             paragraph: ["paragraph"]
+          }
+       });
     });
 
 {% endhighlight %}
 
-
-
-
-
-{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img1.png" Caption="List of Toolbar items"%}
+{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img1.png"%}
 
 The following image consists of formatted content by using the available toolbar items in **RTE** control.
 
-
-{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img2.png" Caption="Formatted content"%}
+{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img2.png"%}
 

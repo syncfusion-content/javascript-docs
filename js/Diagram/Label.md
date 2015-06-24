@@ -9,22 +9,22 @@ documentation: ug
 
 # Label
 
-**Label** is a block of text that is displayed over a node or a connector. **Label** is used to textually represent an object with a string that can be edited in run time. **Label** has properties for text appearance, customization and alignment. You can add **Multiple Labels** to a node/connector.
+**Label** is a block of text that is displayed over a node or a connector. Label is used to textually represent an object with a string that can be edited in run time. Label has properties for text appearance, customization and alignment. You can add Multiple Labels to a node/connector.
 
 ## Create Label
 
-Node’s/Connector’s **labels** property holds an array of **Label** objects. The following code illustrates how to create a **Label**.
+`Node`’s/`Connector`’s `labels` property holds an array of **Label** objects. The following code illustrates how to create a Label.
 
 {% highlight js %}
 //create a label 
 var node = {
    name: "node",
-   labels: [{ "text": "Label" }]
+   labels: [{ text: "Label" }]
 };
 
 var connector = {
    name: "connector",
-   labels: [{ "text": "Label" }]
+   labels: [{ text: "Label" }]
 };
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ var connector = {
 
 ## Displacement
 
-A **Label** can be displaced from its original position both interactively, that is, by dragging and programmatically. The following code illustrates how to enable **Label Displacement** through interaction.
+A **Label** can be displaced from its original position both interactively, that is, by dragging and programmatically. The following code illustrates how to enable label dragging.
 
 {% highlight js %}
 
@@ -54,7 +54,7 @@ var connector = {
 
 {% include image.html url="/js/Diagram/Label_images/Label_img2.png" %}
 
-The following code illustrates how to displace labels through API.
+The following code illustrates how to displace `label` through API.
 
 {% highlight js %}
 
@@ -63,8 +63,8 @@ var node = {
    width: 150,
    height: 60,
    labels: [{
-      "text": "Progress",
-      margin: { "left": 100, "top": 100 },
+      text: "Progress",
+      margin: { left: 100, top: 100 },
       offset: { x: 0, y: 0 },
       horizontalAlignment: "left",
       verticalAlignment: "top"
@@ -77,7 +77,7 @@ var node = {
 
 ## Label Rotation
 
-**Diagram** provides support to rotate labels. You can rotate labels to some specified angles. The following code illustrates how to specify the rotation angle for labels.
+Diagram provides support to rotate labels. You can rotate labels to some specified angles. The following code illustrates how to specify the `rotateAngle` for labels.
 
 {% highlight js %}
 
@@ -109,14 +109,14 @@ You can customize the **Label appearance** and position using its properties.
 
 //set various appearance properties to label
 var label = {
-   "text": "Label Text",
-   "fontSize": 12,
-   "fontFamily": "TimesNewRoman",
+   text: "Label Text",
+   fontSize: 12,
+   fontFamily: "TimesNewRoman",
    italic: true,
-   "fontColor": "black",
-   "fillColor": "White",
-   "borderColor": "black",
-   "borderWidth": 1,
+   fontColor: "black",
+   fillColor: "White",
+   borderColor: "black",
+   borderWidth: 1,
    wrapText: true,
    textDecoration: ej.datavisualization.Diagram.TextDecorations.LineThrough
 };
@@ -127,12 +127,12 @@ var label = {
 
 ## Label Editing
 
-Label can be edited at runtime, programmatically or interactively. By default, label is in **view** mode. But it can be brought to edit mode in two ways; by double clicking on the label, or by programmatically setting the mode to ‘**Edit’** as shown in the following code example. Label editing is automatically terminated when the Edit box loses its focus or by setting its mode back to **view**.
+Label can be edited at runtime, programmatically or interactively. By default, label is in `view` mode. But it can be brought to edit mode in two ways; by double clicking on the label, or by programmatically setting the mode to `Edit` as shown in the following code example. Label editing is automatically terminated when the Edit box loses its focus or by setting its mode back to **view**.
 
 {% highlight js %}
 //label edit mode
 var label = {
-   "text": "Label",
+   text: "Label",
    mode: ej.datavisualization.Diagram.LabelEditMode.Edit
 };
 var diagram = $("#Diagram").ejDiagram("instance");
@@ -145,7 +145,7 @@ diagram.updateLabel(node.name, node.labels[0], label);
 
 ## Read-only Label
 
-To prevent label editing, set Label’s **readOnly** property as **“True”.** After setting the **Label** to **readOnly** mode, when you double clicking on the Label, it is not moved to **Edit** mode. However, even after **readOnly** is set as true, you can programmatically move the label to edit mode.
+To prevent label editing, set Label’s `readOnly` property as `True`. After setting the Label to `readOnly` mode, when you double clicking on the Label, it is not moved to `Edit` mode. However. Even after `readOnly` is set as true, you can programmatically move the label to edit mode.
 
 {% highlight js %}
 //label readOnly mode
@@ -241,7 +241,7 @@ Bottom</td><td>
 
 ## Text Wrapping
 
-**Wrapping** property of label allows to specify whether or not to wrap the text, when it reaches the edge of the containing node. 
+`wrapping` property of `label` allows to specify whether or not to wrap the text, when it reaches the edge of the containing node. 
 
 The following code illustrates how to wrap text.
 
@@ -280,7 +280,7 @@ Text-wrapping occurs when the text overflows beyond the available node width. Ho
 
 ### Width
 
-By default, label wraps the text based on its parent element’s size (node/group/connector). You can override this by using **width** property. When the label width is set, label acts like a container and wraps the label based on width specified. The following code example illustrates how to set the label width.
+By default, label wraps the text based on its parent element’s size (node/group/connector). You can override this by using `width` property. When the label width is set, label acts like a container and wraps the label based on width specified. The following code example illustrates how to set the label width.
 
 {% highlight js %}
 

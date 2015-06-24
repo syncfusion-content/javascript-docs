@@ -85,7 +85,7 @@ The following example illustrates the horizontal and vertical spacing of Hierarc
 
 ### Orientation
 
-The **Orientation** property, **ej.datavisualization.Diagram.LayoutOrientations**, of layout is used to specify the tree orientation.
+The `Orientation` property, `ej.datavisualization.Diagram.LayoutOrientations`, of layout is used to specify the tree orientation.
 
 * **TopToBottom**- Places the root node at the top and the child nodes are arranged below the root node.
 * **BottomToTop**- Places the root node at the bottom and the child nodes are arranged above the root node.
@@ -98,7 +98,7 @@ The following image displays “Bottom to Top” orientation of layout.
 
 ## Organizational Chart
 
-An **organizational chart** is a diagram that displays the structure of an organization and the relationships. Diagram provides support to layout the nodes automatically. 
+An `organizational chart` is a diagram that displays the structure of an organization and the relationships. Diagram provides support to layout the nodes automatically. 
 
 ### How to create a basic organizational chart
 
@@ -172,11 +172,11 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 ### GetLayoutInfo
 
-You can set Chart orientations, chart types and offset to be left between parent and child nodes by overriding the method **diagram.model.layout.getLayoutInfo.**
+You can set Chart orientations, chart types and offset to be left between parent and child nodes by overriding the method `diagram.model.layout.getLayoutInfo`.
 
 #### Arguments
 
-The **getLayoutInfo** method is called to configure every subtree of the organizational chart. And it takes the following arguments.
+The `getLayoutInfo` method is called to configure every subtree of the organizational chart. And it takes the following arguments.
 
 1. diagram (Reference of diagram)
 2. node (Parent node to that options are to be customized)
@@ -326,7 +326,7 @@ function getLayoutInfo(diagram, node, options) {
 
 ### Assistant Support
 
-Diagram provides support to layout assistant nodes. You can add assistants at runtime by using the **getLayoutInfo** method. The **assistants** property of the “options” argument is an empty array by default. When any of the child nodes are to be set as Assistant, move those nodes to options.assistants from options.children. The following code example illustrates how to add assistants to layout.
+Diagram provides support to layout assistant nodes. You can add assistants at runtime by using the `getLayoutInfo` method. The `assistants` property of the `options` argument is an empty array by default. When any of the child nodes are to be set as Assistant, move those nodes to options.assistants from options.children. The following code example illustrates how to add assistants to layout.
 
 {% highlight js %}
 

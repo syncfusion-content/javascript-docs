@@ -19,74 +19,73 @@ In the HTML page, add &lt;ul&gt; and &lt;li&gt; element to configure TreeView.
 
 {% highlight html %}
 
-    <ul id="treeView">
-        <li class="expanded">
-            <a>Favorites</a>
-            <ul>
-                <li>Desktop<div class="cont-del"></div>
-                </li>
-                <li>Downloads<div class="cont-del"></div>
-                </li>
-                <li>Recent places<div class="cont-del"></div>
-                </li>
-            </ul>
-        </li>
-        <li class="expanded">
-            <a>Libraries</a>
-            <ul>
-                <li>
-                    <a>Documents</a>
-                    <ul>
-                        <li>My Documents<div class="cont-del"></div>
-                        </li>
-                        <li>Public Documents<div class="cont-del"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a>Pictures</a>
-                    <ul>
-                        <li>My Pictures<div class="cont-del"></div>
-                        </li>
-                        <li>Public Pictures<div class="cont-del"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a>Music</a>
-                    <ul>
-                        <li>My Music<div class="cont-del"></div>
-                        </li>
-                        <li>Public Music<div class="cont-del"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li><a>Subversion</a></li>
-            </ul>
-        </li>
-        <li>
-            <a>Computer</a>
-            <ul>
-                <li>Folder(C)<div class="cont-del"></div>
-                </li>
-                <li>Folder(D)<div class="cont-del"></div>
-                </li>
-                <li>Folder(F)<div class="cont-del"></div>
-                </li>
-            </ul>
-        </li>
-    </ul>
+<ul id="treeView">
+    <li class="expanded">
+        <a>Favorites</a>
+        <ul>
+            <li>Desktop<div class="cont-del"></div>
+            </li>
+            <li>Downloads<div class="cont-del"></div>
+            </li>
+            <li>Recent places<div class="cont-del"></div>
+            </li>
+        </ul>
+    </li>
+    <li class="expanded">
+        <a>Libraries</a>
+        <ul>
+            <li>
+                <a>Documents</a>
+                <ul>
+                    <li>My Documents<div class="cont-del"></div>
+                    </li>
+                    <li>Public Documents<div class="cont-del"></div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Pictures</a>
+                <ul>
+                    <li>My Pictures<div class="cont-del"></div>
+                    </li>
+                    <li>Public Pictures<div class="cont-del"></div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Music</a>
+                <ul>
+                    <li>My Music<div class="cont-del"></div>
+                    </li>
+                    <li>Public Music<div class="cont-del"></div>
+                    </li>
+                </ul>
+            </li>
+            <li><a>Subversion</a></li>
+        </ul>
+    </li>
+    <li>
+        <a>Computer</a>
+        <ul>
+            <li>Folder(C)<div class="cont-del"></div>
+            </li>
+            <li>Folder(D)<div class="cont-del"></div>
+            </li>
+            <li>Folder(F)<div class="cont-del"></div>
+            </li>
+        </ul>
+    </li>
+</ul>
 
 {% endhighlight %}
 
 {% highlight js %}
 
     $("#treeView").ejTreeView();
-            var treeObj = $("#treeView").data("ejTreeView");
-            $("#treeView").find(".cont-del").bind("click", function (e) {
-                treeObj.removeNode($(e.target).parents("li").first());
-            });
-        });
+    var treeObj = $("#treeView").data("ejTreeView");
+    $("#treeView").find(".cont-del").bind("click", function(e) {
+        treeObj.removeNode($(e.target).parents("li").first());
+    });
 
 {% endhighlight %}
 
@@ -110,5 +109,5 @@ Adding the style for TreeView control as follows.
 
 The **TreeView** control template displays the following output.
 
-{% include image.html url="/js/TreeView/Ul-Li-Template_images/Ul-Li-Template_img1.png" Caption="TreeView with template"%}
+{% include image.html url="/js/TreeView/Ul-Li-Template_images/Ul-Li-Template_img1.png"%}
 

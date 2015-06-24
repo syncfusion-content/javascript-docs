@@ -19,40 +19,54 @@ You can refer the following code example of Thumbnail in Rotator.
 
   {% highlight html %}
   
-  	<div class="cols-sample-area">
-	    <ul id="slidercontent">
-	        <li>
-	            <img class="image" src="../images/rotator/green.jpg" title="green" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/snow.jpg" title="snow" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/wheat.jpg" title="wheat" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/tablet.jpg" title="tablet" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/sea.jpg" title="sea" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/bread.jpg" title="bread" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/snowfall.jpg" title="snowfall" /></li>
-	    </ul>
-	    <ul id="thumbElement" style="display: none">
-	        <li>
-	            <img src="../images/rotator/green.jpg" title="green" /></li>
-	        <li>
-	            <img src="../images/rotator/snow.jpg" title="snow" /></li>
-	        <li>
-	            <img src="../images/rotator/wheat.jpg" title="wheat" /></li>
-	        <li>
-	            <img src="../images/rotator/tablet.jpg" title="tablet" /></li>
-	        <li>
-	            <img src="../images/rotator/sea.jpg" title="sea" /></li>
-	        <li>
-	            <img src="../images/rotator/bread.jpg" title="bread" /></li>
-	        <li>
-	            <img src="../images/rotator/snowfall.jpg" title="snowfall" /></li>
-	    </ul>
-	</div> 
+<div class="cols-sample-area">
+   <ul id="slidercontent">
+      <li>
+         <img class="image" src="../images/rotator/green.jpg" title="green" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/snow.jpg" title="snow" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/wheat.jpg" title="wheat" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/tablet.jpg" title="tablet" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/sea.jpg" title="sea" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/bread.jpg" title="bread" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/snowfall.jpg" title="snowfall" />
+      </li>
+   </ul>
+   <ul id="thumbElement" style="display: none">
+      <li>
+         <img src="../images/rotator/green.jpg" title="green" />
+      </li>
+      <li>
+         <img src="../images/rotator/snow.jpg" title="snow" />
+      </li>
+      <li>
+         <img src="../images/rotator/wheat.jpg" title="wheat" />
+      </li>
+      <li>
+         <img src="../images/rotator/tablet.jpg" title="tablet" />
+      </li>
+      <li>
+         <img src="../images/rotator/sea.jpg" title="sea" />
+      </li>
+      <li>
+         <img src="../images/rotator/bread.jpg" title="bread" />
+      </li>
+      <li>
+         <img src="../images/rotator/snowfall.jpg" title="snowfall" />
+      </li>
+   </ul>
+</div>
 
 
   {% endhighlight %}
@@ -62,34 +76,33 @@ You can refer the following code example of Thumbnail in Rotator.
 
   
 
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({
-	            slideWidth: "600px",
-	            frameSpace: "0px",
-	            displayItemsCount: "1",
-	            slideHeight: "350px",
-	            navigateSteps: "1",
-	            enableResize: true,
-	            pagerPosition: ej.Rotator.PagerPosition.Outside,
-	            showThumbnail: true,
-	            thumbnailSourceID: "thumbElement",
-	            orientation: ej.Orientation.Horizontal,
-	            showPager: false,
-	            enabled: true,
-	            showCaption: false,
-	            allowKeyboardNavigation: true,
-	            showPlayButton: true,
-	            enableAutoPlay: false,
-	            animationType: "slide"
-	        });
-	
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({
+            slideWidth: "600px",
+            frameSpace: "0px",
+            displayItemsCount: "1",
+            slideHeight: "350px",
+            navigateSteps: "1",
+            enableResize: true,
+            pagerPosition: ej.Rotator.PagerPosition.Outside,
+            showThumbnail: true,
+            thumbnailSourceID: "thumbElement",
+            orientation: ej.Orientation.Horizontal,
+            showPager: false,
+            enabled: true,
+            showCaption: false,
+            allowKeyboardNavigation: true,
+            showPlayButton: true,
+            enableAutoPlay: false,
+            animationType: "slide"
+        });    
+    });
 
 
 
   {% endhighlight %}
 
 
-{% include image.html url="/js/Rotator/Thumbnail_images/Thumbnail_img1.png" Caption="Rotator control with thumb nail"%}
+{% include image.html url="/js/Rotator/Thumbnail_images/Thumbnail_img1.png"%}
 

@@ -19,9 +19,9 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
 
-**Create a Linear Gauge**
+## Create a Linear Gauge
 
-* First create an HTML file, and then add references to the required libraries.
+First create an HTML file, and then add references to the required libraries.
 
 
 
@@ -98,7 +98,7 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
-**Set animate option and Label Color**
+## Set animate option and Label Color
 
 * You can draw the Thermometer with Label color and set animate property to _True_.  
 
@@ -126,7 +126,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
 
-**Provide scale values**
+## Provide scale values
 
 * You can change the Scale Style of Thermometer using **type** property.
 
@@ -176,7 +176,7 @@ On executing the above code sample renders a customized gauge with ranges as fol
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img5.png" Caption=""%}
 
-**Add pointers data**
+## Add pointers data
 
 In **Linear gauge** there are two types of pointers available such as marker pointer and bar pointer.
 
@@ -219,7 +219,7 @@ On executing the above code sample renders a **Linear Gauge** with bar marker as
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
 
-**Add Label Customization**
+## Add Label Customization
 
 * You can display the label value on both sides to get temperature in different scales. For that you can add two label values in an array.
 
@@ -263,7 +263,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img7.png" Caption=""%}
 
-**Add Ticks Details**
+## Add Ticks Details
 
 * You can set the width and height of the major ticks greater than the Minor ticks. You can set dark background for tick Color to have a better visibility.
 
@@ -323,7 +323,7 @@ On executing the above code sample renders a **Linear Gauge** with custom labels
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img8.png" Caption=""%}
 
-**Add Custom Label Details**
+## Add Custom Label Details
 
 * You can specify the texts using **Custom labels** which displays in the gauge and customize them using various properties.
 
@@ -373,7 +373,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img9.png" Caption=""%}
 
-**Change scale Degree to Fahrenheit**
+## Change scale Degree to Fahrenheit
 
 You can add a function to convert the temperature from Degrees to Fahrenheit values in the label by having index value as 1.
 
@@ -409,7 +409,7 @@ On executing the above code sample renders a **Linear Gauge** with values in Deg
 
 {% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img10.png" Caption=""%}
 
-**Add Custom label for Current Value**
+## Add Custom label for Current Value
 
 You can add the function that displays the current temperature value in the custom label.
 

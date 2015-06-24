@@ -19,7 +19,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight html %}
 
-      <div id="Uploadbox"></div>
+<div id="Uploadbox"></div>
 
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ Configure the handler to save the file. Create a folder (for example, uploadfile
 
 The following screenshot displays the output. 
 
-{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img1.png" Caption="Uploadbox with saveUrl property"%}
+{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img1.png" %}
 
 ## Remove File Action 
 
@@ -96,7 +96,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight html %}
 
-      <div id="Uploadbox"></div>
+<div id="Uploadbox"></div>
 
 {% endhighlight %}
 
@@ -159,7 +159,7 @@ removeFiles.ashx
 
 The following screenshot displays the output. 
 
-{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img2.png" Caption="Uploadbox with removeUrl property"%}
+{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img2.png" %}
 
 ##  Auto Upload
 
@@ -171,7 +171,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight html %}
 
-      <div id="Uploadbox"></div>
+<div id="Uploadbox"></div>
 
 {% endhighlight %}
 
@@ -195,5 +195,5 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img3.png" Caption="Uploadbox with autoUpload property"%}
+{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img3.png" %}
 

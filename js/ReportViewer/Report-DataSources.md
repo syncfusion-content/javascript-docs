@@ -48,9 +48,9 @@ $("#viewer")
                     Ingredients: "Onions, Grilled chicken, Chicken salami & Tomatoes.",
                     ProductImage: ""
                            }
-                           ],
+                   ],
             name: "list"
-                                }]
+                     }]
     });
 
 {% endhighlight %}
@@ -74,8 +74,6 @@ public class ReportsController : ApiController, IReportController
             ProductList productList = new ProductList();
             reportOptions.ReportModel.DataSources.Add(new ReportDataSource { Name = "list", Value = productList.GetData() });            
         }
-
-
     }
 
 public class ProductList
@@ -104,7 +102,7 @@ public class ProductList
 
 {% endhighlight %}
 
-**DataSource Credentials**
+##DataSource Credentials##
 
 The **DataSource** credentials can be given at **Web API** Controller to connect data source.
 

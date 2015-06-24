@@ -442,7 +442,7 @@ Once the **fr-Fr** culture is set to the **Schedule** control, the **Schedule** 
 
 **RTL**
 
-* The **enableRTL** option allows the schedule control to display it in the right to left direction. By default, this option is set to ‘false’ in the **Schedule** control.
+The **enableRTL** option allows the schedule control to display it in the right to left direction. By default, this option is set to ‘false’ in the **Schedule** control.
 
 The following code example explains how to enable the **rtl** property of the **Schedule** control.
 

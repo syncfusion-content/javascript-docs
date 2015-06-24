@@ -42,7 +42,7 @@ You can choose any of the Chart axis type using the” **valueType**” property
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img1.png" Caption="Chart with Axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img1.png" %}
 
 ## Double 
 
@@ -86,7 +86,7 @@ By default, the **rangePadding** for Numerical Axis is none.
 
 The following screenshot displays a Chart’s x-axis with **rangePadding** set to **none**.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img2.png" Caption="Chart with double axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img2.png" %}
 
 #### Additional
 
@@ -94,7 +94,7 @@ If **rangePadding** for Numerical Axis is set to **additional**, the interval of
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **additional**.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img3.png" Caption="Chart’s x-axis with RangePadding set to Additional"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img3.png" %}
 
 #### Normal
 
@@ -102,7 +102,7 @@ Normal **rangePadding** for a Numerical Axis is used mostly for the y-axis to ha
 
 The following screenshot illustrates a Chart’s y-axis with **rangePadding** set to **normal**.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img4.png" Caption="Chart’s y-axis with RangePadding set to Normal"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img4.png" %}
 
 #### Round
 
@@ -110,7 +110,7 @@ Round **rangePadding** for a Numerical Axis rounds the range of the Chart axis t
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **Round**.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img5.png" Caption="Chart’s x-axis with RangePadding set to Round"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img5.png" %}
 
 ## DateTime Axis
 
@@ -162,7 +162,7 @@ The **Interval** property of **DateTime** Axis can be any double value based on 
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img6.png" Caption="Chart with DateTime Axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img6.png" %}
 
 With the default auto range calculation, the **rangePadding** properties for date-time axis allow you to customize the automatic range calculation.
 
@@ -174,7 +174,7 @@ By default, the **rangePadding** for a **DateTime** Axis is none.
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **none**. 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img7.png" Caption="Chart’s x-axis with RangePadding set to None"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img7.png" %}
 
 #### Additional
 
@@ -182,7 +182,7 @@ If **rangePadding** for **DateTime** Axis is set to **additional**, the **DateTi
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **Additional**.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img8.png" Caption="Chart’s x-axis with RangePadding set to Additional"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img8.png" %}
 
 #### Round
 
@@ -190,7 +190,7 @@ Round **rangePadding** for a **DateTime** Axis rounds the range of the Chart axi
 
 The following screenshot illustrates a Chart’s x-axis with **rangePadding** set to **Round**.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img9.png" Caption="Chart’s x-axis with RangePadding set to Round"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img9.png" %}
 
 ## Category Axis
 
@@ -223,7 +223,7 @@ Category (x) axis displays text labels instead of numerical intervals. By defaul
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img10.png" Caption="Chart with Category Axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img10.png" %}
 
 ## Logarithmic Axis
 
@@ -254,7 +254,7 @@ An axis displaying a logarithmic scale is very useful when your data values span
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img11.png" Caption="Chart with Logarthimic Axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img11.png" %}
 
 ## Chart Axis Properties
 
@@ -338,11 +338,11 @@ In cases of multiple series, a **Chart** can have multiple x and y axes to repre
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img12.png" Caption="Chart with Multiple Axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img12.png" %}
 
 In the above code, you can remove the **rowDefinition** and **rowIndex** from axis to arrange the axes in the side-by- side mode.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img13.png" Caption="Chart with Multiple Axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img13.png" %}
 
 ### Spanning Axis
 
@@ -428,7 +428,7 @@ In the above code, you can remove the **rowDefinition** and **rowIndex** from ax
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img14.png" Caption="Chart with Spanning Axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img14.png" %}
 
 ## Axis Title
 
@@ -454,15 +454,15 @@ You can customize the ejChart Axis title text, font styles and color using “**
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img15.png" Caption="Chart with Axis Title"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img15.png" %}
 
 ### Trim Title
 
 **EjChart** supports **Trimming****Axis****Titles** with the properties, **enableTrim** and **maximumTitleWidth**. These are useful for shortening the lengthy titles. On hovering with the mouse, you can see the full title in the tooltip.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img16.png" Caption="X-Axis Title Trim         "%}
+{% include image.html url="/js/Chart/Axis_images/axis_img16.png" %}
 
-{% include image.html url="/js/Chart/Axis_images/axis_img17.png" Caption="Y-Axis Title Trim"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img17.png" %}
 
 {% highlight js %}
 
@@ -523,7 +523,7 @@ The axis labels are present along the axis **showing** the value of the data it 
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img18.png" Caption="Chart with Axis Labels"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img18.png" %}
 
 ### LabelPlacement
 
@@ -554,9 +554,9 @@ $("#chartcontainer").ejChart({
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img19.png" Caption="Chart with LabelPlacement OnTicks"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img19.png" %}
 
-{% include image.html url="/js/Chart/Axis_images/axis_img20.png" Caption="Chart with LabelPlacement BetweenTicks"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img20.png" %}
 
 ### Label Position
 
@@ -580,7 +580,7 @@ Axis labels can further be customized to render inside the chart area using the 
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img21.png" Caption="Label inside Chart"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img21.png" %}
 
 ### Axis label trimming
 
@@ -611,7 +611,7 @@ Axis labels can further be customized to render inside the chart area using the 
 
 The following screenshot displays the **Chart Axis** with **trimming**.
 
-{% include image.html url="/js/Chart/Axis_images/axis_img22.png" Caption="Axis Label Trimming"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img22.png" %}
 
 ## Tick Marks
 
@@ -657,7 +657,7 @@ It is rendered between the major tick lines of Chart axis. To display **minorTic
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img23.png" Caption="Chart with Tick lines"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img23.png" %}
 
 ### Tick lines placement
 
@@ -679,7 +679,7 @@ You can customize tick lines and render them inside the chart area using the pro
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img24.png" Caption="Tick Lines inside chart"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img24.png" %}
 
 ## Grid Lines	
 
@@ -729,7 +729,7 @@ It is rendered between the **major gridlines** of Chart area.To display **minor 
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img25.png" Caption="Chart with Grid lines"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img25.png" %}
 
 ### Alternate Grid Band
 
@@ -769,7 +769,7 @@ Immediate adjacent band of every even grid bands are Odd Grid Bands**.** You can
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img26.png" Caption="Chart explaining grid band"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img26.png" %}
 
 ## Inversed Axis
 
@@ -790,7 +790,7 @@ You can display the Chart series in to inversed position using “**isInversed**
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img27.png" Caption="Chart with Inversed Axis"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img27.png" %}
 
 ## Opposed Position
 
@@ -816,7 +816,7 @@ By default, the x-axis is arranged horizontally at the bottom of the Chart and t
 
 
 
-{% include image.html url="/js/Chart/Axis_images/axis_img28.png" Caption="Chart with OpposedPosition set to True"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img28.png" %}
 
 ## Smart Axis Labels
 
@@ -846,5 +846,5 @@ Sometimes the Chart dimensions could cause the labels to intersect. You can avoi
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Axis_images/axis_img29.png" Caption="Chart with Smart Axis Labels"%}
+{% include image.html url="/js/Chart/Axis_images/axis_img29.png" %}
 

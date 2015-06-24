@@ -9,7 +9,7 @@ documentation: ug
 
 # Predefined Shapes
 
-**Diagram** has several in built shapes. The inbuilt shapes are categorized as follows.
+Diagram has several in built shapes. The inbuilt shapes are categorized as follows.
 
 1. Basic Shapes
 2. Flow Shapes
@@ -111,7 +111,7 @@ End Event</td><td>
 **Representation of different BPMN events**
 <table>
 <tr>
-<rh>
+<th>
 Event</th><th>
 Image</th></tr>
 <tr>

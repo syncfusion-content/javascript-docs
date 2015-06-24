@@ -77,5 +77,5 @@ The following example depicts the way to bind data to the **TreeView** control t
 
 The following screenshot displays the output of the above code.
 
-{% include image.html url="/js/TreeView/Knockout-Binding_images/Knockout-Binding_img1.png" Caption="TreeView with Knockout Binding"%}
+{% include image.html url="/js/TreeView/Knockout-Binding_images/Knockout-Binding_img1.png"%}
 

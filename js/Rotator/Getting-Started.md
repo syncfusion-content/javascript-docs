@@ -9,17 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Rotator** in your application with **JavaScript**.
-
-## Create your first Rotator in JavaScript
-
-**Essential** **JavaScript** **Image Rotator** comes with a visual that has a spectacular zoom in and fade out effect. A single line of code invokes the **JavaScript** **Rotator** effect. Using the following guidelines you can create **Rotator** widget for a real-time website banner. It has five images that slide automatically. When you click the center button, image slides in a rotating manner and on second click the rotation stops.
+This section explains briefly about how to create a **Rotator** in your application with JavaScript. **Essential** **JavaScript** **Image Rotator** comes with a visual that has a spectacular zoom in and fade out effect. A single line of code invokes the **JavaScript** **Rotator** effect. Using the following guidelines you can create **Rotator** widget for a real-time website banner. It has five images that slide automatically. When you click the center button, image slides in a rotating manner and on second click the rotation stops.
 
 The following screenshot demonstrates the functionality of **Rotator** widget.
 
-{% include image.html url="/js/Rotator/Getting-Started_images/Getting-Started_img1.png" Caption="Rotator"%}
+{% include image.html url="/js/Rotator/Getting-Started_images/Getting-Started_img1.png"%}
 
-### Create Rotator Widget
+## Create Rotator Widget
 
 A Rotator widget can be made by the following steps.
 
@@ -31,63 +27,56 @@ A Rotator widget can be made by the following steps.
 <!doctype html>
 
 <html>
-<head>
-    <title>Essential Studio for JavaScript : Rotator Default Functionalities</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-          <!-- Style sheet for default theme (flat azure) -->
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
-    <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-    <!--Add custom scripts here -->
-</head>
-<body>
-    <!-- Add Rotator element here. -->
-</body>
+   <head>
+      <title>Essential Studio for JavaScript : Rotator Default Functionalities</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+      <!-- Style sheet for default theme (flat azure) -->
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <!--Scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <!--Add custom scripts here -->
+   </head>
+   <body>
+      <!-- Add Rotator element here. -->
+   </body>
 </html>
-
 
 {% endhighlight %}
 
-### Configure Images
+## Configure Images
 
 The following guidelines help you to configure images.
 
-   Copy the following codes in the **HTML** file. 
-
-   Ensure you have saved images in the **Rotator/imi** folder.
-
+* Copy the following codes in the **HTML** file. 
+* Ensure you have saved images in the **Rotator/imi** folder.
 
 
 {% highlight html %}
 
 <div class="content-container-fluid">
-<div class="row">
-<div class="cols-sample-area">
-<div class="frame">
-<ul id="sliderContent">
-   <li><img class="image" src="../imi/Untitled.png"/></li>
-   <li><img class="image" src="../imi/Untitled1.png"/></li>
-   <li><img class="image" src="../imi/Untitled2.png"/></li>
-   <li><img class="image" src="../imi/Untitled3.png"/></li>
-   <li><img class="image" src="../imi/Untitled4.png"/></li>
-</ul>
-</div>
-</div>
-</div>
+   <div class="row">
+      <div class="cols-sample-area">
+         <div class="frame">
+            <ul id="sliderContent">
+               <li><img class="image" src="../imi/Untitled.png"/></li>
+               <li><img class="image" src="../imi/Untitled1.png"/></li>
+               <li><img class="image" src="../imi/Untitled2.png"/></li>
+               <li><img class="image" src="../imi/Untitled3.png"/></li>
+               <li><img class="image" src="../imi/Untitled4.png"/></li>
+            </ul>
+         </div>
+      </div>
+   </div>
 </div>
 
 
 
 {% endhighlight %}
 
-### Configure Styles
+## Configure Styles
 
 Add the following style in the **HTML** file.
 
@@ -109,7 +98,7 @@ Add the following style in the **HTML** file.
 
 {% endhighlight %}
 
-### Set Actions
+## Set Actions
 
 Add the following script in the **HTML** file.
 
@@ -117,7 +106,6 @@ Add the following script in the **HTML** file.
 
 
     $(function () {
-
         // declaration
         $("#sliderContent").ejRotator({
             slideWidth: "600px",
@@ -144,5 +132,5 @@ Add the following script in the **HTML** file.
 
 The above code gives the output displayed in following screenshot.
 
-{% include image.html url="/js/Rotator/Getting-Started_images/Getting-Started_img2.png" Caption="Rotator"%}
+{% include image.html url="/js/Rotator/Getting-Started_images/Getting-Started_img2.png"%}
 

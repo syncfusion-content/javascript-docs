@@ -9,20 +9,18 @@ documentation: ug
 
 # Columns
 
-The **TreeGrid** column displays the information from a bounded data source and it will be editable to update the task details through **TreeGrid**.
+The TreeGrid column displays the information from a bounded data source and it will be editable to update the task details through **TreeGrid**.
 
 ### Column Resizing
 
-You can change the width of the column in **TreeGrid** to show the entire text of the column by resizing the column. The following code example shows you how to enable the Column Resize feature at **Gantt** initialize.
+You can change the width of the column in TreeGrid to show the entire text of the column by resizing the column. The following code example shows you how to enable the Column Resize feature at **Gantt** initialize.
 
 {% highlight js %}
-
 
      $("#GanttContainer").ejGantt({
         //...
         allowColumnResize: true
     });
-
 
 {% endhighlight %}
 
@@ -30,7 +28,7 @@ You can change the width of the column in **TreeGrid** to show the entire text o
 
 Column template is used to customize the column’s look and feel, based on requirement. 
 
-The following code example shows you how to display the icon in the **TreeGrid** column.
+The following code example shows you how to display the icon in the TreeGrid column.
 
 {% highlight html %}
 
@@ -176,28 +174,25 @@ The following code example shows you how to display the icon in the **TreeGrid**
 
 The following screenshot displays the customized column in Gantt control.
 
-{% include image.html url="/js/Gantt/Columns_images/Columns_img1.png" Caption="Customized column"%}
+{% include image.html url="/js/Gantt/Columns_images/Columns_img1.png"%}
 
 ### Column Chooser
 
-**Gantt** supports enabling and disabling the visibility of the columns dynamically with the **showColumnChooser** property. The visibility of the custom columns can also be toggled with this property. **Column chooser** option is rendered as a sub menu item within the column menu in the Gantt columns. 
+Gantt supports enabling and disabling the visibility of the columns dynamically with the `showColumnChooser` property. The visibility of the custom columns can also be toggled with this property. Column chooser option is rendered as a sub menu item within the column menu in the Gantt columns. 
 
-{% include image.html url="/js/Gantt/Columns_images/Columns_img2.png" Caption="Column menu with column chooser    "%}
+{% include image.html url="/js/Gantt/Columns_images/Columns_img2.png"%}
 
-The column menu is enabled with the **showColumnChooser** property, where the default value for this property is **false.**
+The column menu is enabled with the `showColumnChooser` property, where the default value for this property is `false`.
 
 The column menu provides the following options:
 
 * Sort Ascending
-
 * Sort Descending
-
 * Columns 
 
-**Sort Ascending** and **Sort Descending** options can be enabled or disabled with the **allowSorting** property. Single level sorting can be performed with these options. To perform multilevel sorting, **allowMultiSorting** property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the **visible** property to **false**.
+Sort Ascending and Sort Descending options can be enabled or disabled with the `allowSorting` property. Single level sorting can be performed with these options. To perform multilevel sorting, `allowMultiSorting` property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
 
 {% highlight js %}
-
 
     $("#gantt").ejGantt(
     {   
@@ -210,7 +205,7 @@ The column menu provides the following options:
 
 {% endhighlight %}
 
-The following screenshot displays the column chooser in the **Gantt** control.
+The following screenshot displays the column chooser in the Gantt control.
 
-{% include image.html url="/js/Gantt/Columns_images/Columns_img3.png" Caption="Column chooser in Gantt control"%}
+{% include image.html url="/js/Gantt/Columns_images/Columns_img3.png"%}
 

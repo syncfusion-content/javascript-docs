@@ -25,47 +25,47 @@ documentation: ug
 
 _field_
 
-* This option holds the field name to be bound to each level of the resources.
+This option holds the field name to be bound to each level of the resources.
 
 _title_
 
-* This option accepts a title string from the user that is displayed as the appropriate title for the resource field on the appointment window.
+This option accepts a title string from the user that is displayed as the appropriate title for the resource field on the appointment window.
 
 _name_
 
-* It uniquely identifies each resource level while grouping.
+It uniquely identifies each resource level while grouping.
 
 _resourceSettings_
 
-* It accepts the dataSource and bind field names related to the resources data. The sub-options present within it are as follows,
+It accepts the dataSource and bind field names related to the resources data. The sub-options present within it are as follows,
 
 _dataSource_
 
-* It either accepts the local JSON data or remote data for the resource related information. The field names it accepts are 
+It either accepts the local JSON data or remote data for the resource related information. The field names it accepts are 
 
 _text_
 
-* It holds the binding name for text field in the resource dataSource.
+It holds the binding name for text field in the resource dataSource.
 
 _id_
 
-* It holds the binding name for id field in the resource dataSource.
+It holds the binding name for id field in the resource dataSource.
 
 _groupId_
 
-* It holds the binding name for group id field in the resource dataSource.
+It holds the binding name for group id field in the resource dataSource.
 
 _color_
 
-* It holds the binding name for color field in the resource dataSource.
+It holds the binding name for color field in the resource dataSource.
 
 _appointmentClass_
 
-* It specifies the custom css class name to be applied for the appointments that belongs to each resource.
+It specifies the custom css class name to be applied for the appointments that belongs to each resource.
 
 _allowMultiple_
 
-* This property enables or disables the multiple selections of each resource in the appointment window. 
+This property enables or disables the multiple selections of each resource in the appointment window. 
 
 The following code example explains how to render the multiple resources on the **Schedule** control,
 

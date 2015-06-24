@@ -24,7 +24,7 @@ Apply the plugin and property assigning to the **TimePicker** widget element thr
 
 To know more details about Angular binding, refer the following link location,
 
-http://help.syncfusion.com/ug/js/documents/angularjs.htm
+[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
 
 The following code example depicts you the way to bind data to the **TimePicker** widget through angular support,
 
@@ -39,15 +39,10 @@ The following code example depicts you the way to bind data to the **TimePicker*
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"> </script>
 </head>
@@ -98,5 +93,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/TimePicker/Angular-Support_images/Angular-Support_img1.png" Caption="TimePicker with Angular Support"%}
+{% include image.html url="/js/TimePicker/Angular-Support_images/Angular-Support_img1.png" %}
 

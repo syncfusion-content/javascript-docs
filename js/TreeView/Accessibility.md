@@ -87,68 +87,68 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 {% highlight html %}
 
-        <ul id="treeView">
-        <li class="expanded">Favorites
+<ul id="treeView">
+<li class="expanded">Favorites
+        <ul>
+            <li>Desktop</li>
+            <li>Downloads</li>
+            <li>Recent places</li>
+        </ul>
+</li>
+<li class="expanded">Libraries
+        <ul>
+            <li>Documents
                 <ul>
-                    <li>Desktop</li>
-                    <li>Downloads</li>
-                    <li>Recent places</li>
+                    <li>My Documents</li>
+                    <li>Public Documents</li>
                 </ul>
-        </li>
-        <li class="expanded">Libraries
+            </li>
+            <li>Pictures
                 <ul>
-                    <li>Documents
-                        <ul>
-                            <li>My Documents</li>
-                            <li>Public Documents</li>
-                        </ul>
-                    </li>
-                    <li>Pictures
-                        <ul>
-                            <li>My Pictures</li>
-                            <li>Public Pictures</li>
-                        </ul>
-                    </li>
-                    <li>Music
-                        <ul>
-                            <li>My Music</li>
-                            <li>Public Music</li>
-                        </ul>
-                    </li>
-                    <li>Subversion</li>
+                    <li>My Pictures</li>
+                    <li>Public Pictures</li>
                 </ul>
-        </li>
-        <li>Computer
+            </li>
+            <li>Music
                 <ul>
-                    <li>Folder(C)</li>
-                    <li>Folder(D)</li>
-                    <li>Folder(F)</li>
+                    <li>My Music</li>
+                    <li>Public Music</li>
                 </ul>
-        </li>
-    </ul>
+            </li>
+            <li>Subversion</li>
+        </ul>
+</li>
+<li>Computer
+        <ul>
+            <li>Folder(C)</li>
+            <li>Folder(D)</li>
+            <li>Folder(F)</li>
+        </ul>
+</li>
+</ul>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-	$(function () {
-        $("#treeView").ejTreeView({
-            showCheckbox: true,
-            allowEditing: true,
-            allowKeyboardNavigation:true
-        });
-        //Control focus key
-        $(document).on("keydown", function (e) {
-            if (e.altKey && e.keyCode === 74) {
-                // j- key code.
-                $("#treeView").focus();
-            }
-        });
-    });
+	$(function() {
+	    $("#treeView").ejTreeView({
+	        showCheckbox: true,
+	        allowEditing: true,
+	        allowKeyboardNavigation: true
+	    });
+	    //Control focus key
+	    $(document).on("keydown", function(e) {
+	        if (e.altKey && e.keyCode === 74) {
+	            // j- key code.
+	            $("#treeView").focus();
+	        }
+	    });
+	});
 
 
 {% endhighlight %}
 
 The output for **TreeView** when **allowKeyboardNavigation** is set to “**True**”.
 
-{% include image.html url="/js/TreeView/Accessibility_images/Accessibility_img1.png" Caption="TreeView with allowKeyboardNavigation"%}
+{% include image.html url="/js/TreeView/Accessibility_images/Accessibility_img1.png"%}

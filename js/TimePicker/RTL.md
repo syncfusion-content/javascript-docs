@@ -11,7 +11,7 @@ documentation: ug
 
 This feature supports to change the left-to-right alignment of the **TimePicker** widget to right-to-left(**RTL**). The custom template **TimePicker** also supports **RTL**.
 
-### Enabling Right-To-Left Support
+## Enabling Right-To-Left Support
 
 The following steps explains you in enabling the right-to-left property for the **TimePicker**.
 
@@ -19,7 +19,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 {% highlight html %}
 
-    <input type="text" id="time" />
+<input type="text" id="time" />
 
 {% endhighlight %}
 
@@ -37,5 +37,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 The following screenshot illustrates a **TimePicker** control when **enableRTL** is set to **“true”**
 
-{% include image.html url="/js/TimePicker/RTL_images/RTL_img1.png" Caption="TimePicker template with RTL support"%}
+{% include image.html url="/js/TimePicker/RTL_images/RTL_img1.png" %}
 

@@ -19,8 +19,8 @@ The following code example illustrates how to bind data to the diagram through K
 
 <!-- References to be added for knockout support. -->
 <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
-<script src="http://cdn.syncfusion.com/js/web/ej.unobtrusive-latest.min.js"></script>
-<script src="http://cdn.syncfusion.com/js/ej.widget.ko-latest.min.js"></script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js"></script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js"></script>
 
 <!-- Initializes diagram. -->
 <div id="diagram" data-bind="ejDiagram: ({

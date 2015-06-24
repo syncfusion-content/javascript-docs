@@ -9,7 +9,7 @@ documentation: ug
 
 # Hierarchy Grid
 
-**Hierarchy Grid** feature allows you to add the **Grid** control inside the **Grid** row. When you want to view the child Grid, you can expand the **Grid**. Bind the data to child Grid by assign the foreign key field to **queryString** property.
+**Hierarchy Grid** feature allows you to add the **Grid** control inside the **Grid** row. When you want to view the child Grid, you can expand the **Grid**. Bind the data to child Grid by assign the foreign key field to `queryString` property.
 
 {% highlight html %}
 
@@ -51,5 +51,5 @@ documentation: ug
 
 
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Hierarchy-Grid_images/Hierarchy-Grid_img1.png" Caption="Hierarchy Grid"%}
+{% include image.html url="/js/Grid/Hierarchy-Grid_images/Hierarchy-Grid_img1.png"%}
 

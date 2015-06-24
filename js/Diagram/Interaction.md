@@ -70,7 +70,7 @@ diagram.deactivateTool();
 
 ### Single selection
 
-The Nodes/Connectors in Diagram surface is selected when the **Select** constraint is enabled. **Selection** is done through the following two ways. 
+The Nodes/Connectors in Diagram surface is selected when the `Select` constraint is enabled. Selection is done through the following two ways. 
 
 * Mouse Click
 * addSelection method.
@@ -81,7 +81,7 @@ The node/connector is selected by clicking on a desired node/connector.
 
 #### addSelection method
 
-Diagram provides public API **addSelection** for adding node/connector to the selection. The following code illustrates how to add node/connector to selection.
+Diagram provides public API `addSelection` for adding node/connector to the selection. The following code illustrates how to add node/connector to selection.
 
 {% highlight js %}
 
@@ -96,11 +96,11 @@ diagram.addSelection(node);
 
 ### Multiple Selections
 
-**Multiple selection** is done using rubber band selection, Ctrl + Click and Ctrl + A. During **Multiple selections**, the selector binds all the selected items.
+Multiple selection is done using rubber band selection, Ctrl + Click and Ctrl + A. During Multiple selections, the selector binds all the selected items.
 
 **Rubber band Selection**
 
-**Rubber band selection** is done by clicking and dragging mouse pointer on Diagram canvas and rectangle helper appears during **Rubber band selection**. The diagram Nodes/Connectors that intersect in the selection rectangle bounds are added to the selection list.
+Rubber band selection is done by clicking and dragging mouse pointer on Diagram canvas and rectangle helper appears during Rubber band selection. The diagram Nodes/Connectors that intersect in the selection rectangle bounds are added to the selection list.
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img2.png" %}
 
@@ -171,15 +171,15 @@ boolean</td><td>
 Gets or sets whether the User handle is enabled for  multiple selection </td></tr>
 </table>
 
-The following example describes how to create **delete user handle** in diagram.
+The following example describes how to create 'userHandle' in diagram to delete selected objects.
 
 * Create handle
 * Create tool for handle
 * Add handle in diagram
 
-### Create Delete Userhandle
+### Create Userhandle
 
-The following code illustrates how to create **Delete User handle**
+The following code illustrates how to create and add a `userHandle`.
 
 {% highlight js %}
 
@@ -200,7 +200,7 @@ userHandles.push(deleteHandle);
 
 ### Create tool for Delete Userhandle
 
-The following code illustrates how to create tool for **Delete User handle.**
+The following code illustrates how to create tool to delete selected objects.
 
 {% highlight js %}
 
@@ -258,7 +258,7 @@ $("#Diagram").ejDiagram(selectedItems: { userHandles: userHandles } );
 
 ## Zoom 
 
-The Diagram is zoomed in and out. **Zooming** is achieved in the following two ways.
+The Diagram is zoomed in and out. Zooming is achieved in the following two ways.
 
 * Using the zoom commands.
 * Using the mouse wheel.
@@ -269,7 +269,7 @@ Press the CTRL key and roll the mouse wheel up to zoom in or down to zoom out.
 
 ### Zoom Factor
 
-Diagram allows you to set the **zoomFactor** by which you can zoom in or out. This factor can be specified using the **zoomFactor** property. The default value is 0.2.
+Diagram allows you to set the zoomFactor by which you can zoom in or out. This factor can be specified using the `zoomFactor` property. The default value is 0.2.
 
 {% highlight js %}
 
@@ -346,7 +346,7 @@ Zoom(Zoom in/Zoom out the diagram)</td></tr>
 
 ## Touch
 
-**Touch** support for Diagram view has the following features:
+Touch support for Diagram view has the following features:
 
 * Drag and Drop from the SymbolPalette
 * Dragging the Node and Line Connector on drawing area
@@ -364,7 +364,7 @@ Zoom(Zoom in/Zoom out the diagram)</td></tr>
 
 ### SnapToGrid
 
-The **snap-to-grid** feature allows diagram objects to snap the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design. The **snapToGrid** feature is enabled by using a snapSetting’s **SnapConstraints** property.
+The **snap-to-grid** feature allows diagram objects to snap the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design. The snapToGrid feature is enabled by using a `snapSetting`’s `SnapConstraints` property.
 
 <table>
 <tr>
@@ -401,7 +401,7 @@ Gets or sets whether snapping to gridlines option is enabled or not</td></tr>
 
 ### Enable snapping 
 
-Snapping to gridlines is enabled or disabled by changing the value of snap Setting’s **SnapConstraints** as **ej.datavisualization.Diagram.SnapConstraints**
+Snapping to gridlines is enabled or disabled by changing the value of snap Setting’s `SnapConstraints` as `ej.datavisualization.Diagram.SnapConstraints`
 
 {% highlight js %}
 
@@ -427,7 +427,7 @@ $("#Diagram").ejDiagram({
 
 ### SnapInterval
 
-You can customize the position to which a diagram object snaps by changing the value of the **snapInterval** property of grid lines. **snapInterval** is a double collection that determines the space between patterns of gridlines.
+You can customize the position to which a diagram object snaps by changing the value of the `snapInterval` property of grid lines. `snapInterval` is a double collection that determines the space between patterns of gridlines.
 
 {% highlight js %}
 //set snap interval
@@ -452,7 +452,7 @@ The **snap-to-object** feature provides visual cues to assist with aligning and 
 
 ### Enabling and Disabling snapping to objects
 
-**snapSettings.enableSnapToObject** determines whether nodes are snapped to object.
+`snapSettings.enableSnapToObject` determines whether nodes are snapped to object.
 
 {% highlight js %}
 
@@ -467,7 +467,7 @@ $("#Diagram").ejDiagram({
 
 ### SnapAngle
 
-You can rotate the Node with multiples of **snapAngle**.
+You can rotate the Node with multiples of `snapAngle`.
 
 {% highlight js %}
 

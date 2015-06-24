@@ -13,20 +13,20 @@ documentation: ug
 
 ##Shape Settings
 
-The **shapeSettings** defines the basic customization settings of shapes in the map. 
+The `shapeSettings` defines the basic customization settings of shapes in the map. 
 
-The important property that makes an impact on shape colors is **autoFill**. This **autoFill** property is available in the **shapeSettings**. 
+The important property that makes an impact on shape colors is `autoFill`. This `autoFill` property is available in the `shapeSettings`. 
 
-* **fill** - It is used to set the fill color of the shapes in the map.
-* **stroke** - It is used to set the border color of the shape in the map.
-* **strokeThickness** - It is used to set the border thickness of the shape in the map.
-* **highlightColor** - It is used to set the mouse hover color for shapes in the map.
-* **highlightBorderWidth** - It is used to set the mouse hover border width for shapes in the map.
-* **selectionColor** - It is used to set the selection color for shapes in the map.
+* `fill` - It is used to set the fill color of the shapes in the map.
+* `stroke` - It is used to set the border color of the shape in the map.
+* `strokeThickness` - It is used to set the border thickness of the shape in the map.
+* `highlightColor` - It is used to set the mouse hover color for shapes in the map.
+* `highlightBorderWidth` - It is used to set the mouse hover border width for shapes in the map.
+* `selectionColor` - It is used to set the selection color for shapes in the map.
 
-The above properties of **shapeSettings** are applied only when **autoFill** property value is false. By map, **autoFill** property value is false.
+The above properties of `shapeSettings` are applied only when `autoFill` property value is false. By map, `autoFill` property value is false.
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -61,9 +61,9 @@ The above properties of **shapeSettings** are applied only when **autoFill** pro
 
 The **Color Mapping** support enables the customization of shape colors based on the underlying value of shape received from bounded data.
 
-* **colorValuePath** - It renders the field value that is to be fetched from data for each shape used for determining the shape color.
-* **valuePath** - It renders the field value that is to be fetched from data for each shape. This support also provides a tree map-like impact on the map UI. The various types of Color Mapping supported in maps are listed as follows.
-* **rangeColorMapping** - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
+* `colorValuePath` - It renders the field value that is to be fetched from data for each shape used for determining the shape color.
+* `valuePath` - It renders the field value that is to be fetched from data for each shape. This support also provides a tree map-like impact on the map UI. The various types of Color Mapping supported in maps are listed as follows.
+* `rangeColorMapping` - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
 
 <table>
 <tr>
@@ -99,7 +99,7 @@ Gets or sets the start point and end point gradient colors to be applied for spe
 </table>
 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -153,7 +153,7 @@ When the underlying value is below any of the given sorted range or above the so
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img2.png"%}
 
-* **equalColorMapping** - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
+* `equalColorMapping` - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
 
 <table>
 <tr>
@@ -172,7 +172,7 @@ color</td><td>
 String</td><td>
 Gets or sets the color for mapping.</td></tr>
 </table>
-In equal color mapping, value property contains the values of the field set in **colorValuePath** property of shape settings.
+In equal color mapping, value property contains the values of the field set in `colorValuePath` property of shape settings.
 
 Here USA election data is considered as input datasource and stored in “electionData.js”.
 
@@ -234,7 +234,7 @@ Here USA election data is considered as input datasource and stored in “electi
     
  {% endhighlight %}
  
- {% highlight html %}
+ {% highlight js %}
    
         jQuery(function($) {            
             $("#mapContainer").ejMap({                
@@ -272,9 +272,9 @@ Here USA election data is considered as input datasource and stored in “electi
 
 ### AutoFill
 
-When **autoFill** property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
+When `autoFill` property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function($) {
         $("#mapContainer").ejMap({
@@ -298,15 +298,15 @@ When **autoFill** property is set to true, shapes are filled with default colors
 
 ###Color Palette
 
-The **colorPalette** property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
+The `colorPalette` property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
-The **colorPalette** property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
+The `colorPalette` property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
 
-The **customPalette** property is used to set an array of colors to be auto filled in shapes.
+The `customPalette` property is used to set an array of colors to be auto filled in shapes.
 
-This property is enabled only when **colorPalette** property value is set to “custompalette”.
+This property is enabled only when `colorPalette` property value is set to “custompalette”.
 
-{% highlight html %}
+{% highlight js %}
 
 
     jQuery(function ($) {
@@ -335,9 +335,9 @@ This property is enabled only when **colorPalette** property value is set to “
 
 ##Tooltip
 
-The tooltip is displayed only when you set showTooltip to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the valuePath and displays its content on hovering the corresponding shape. 
+The tooltip is displayed only when you set `showTooltip` to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {	
         $("#mapContainer").ejMap({
@@ -363,7 +363,7 @@ The tooltip is displayed only when you set showTooltip to “True” in the shap
 
 ###Tooltip Template
 
-The tooltipTemplate property is used for customizing the template for tooltip.
+The `tooltipTemplate` property is used for customizing the template for tooltip.
 
 {% highlight html %}
 

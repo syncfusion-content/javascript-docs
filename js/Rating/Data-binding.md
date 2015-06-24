@@ -22,9 +22,9 @@ documentation: ug
 
 **Two-way binding** supports both the processes; it applies the observable values to the Rating properties and the changes made in the Rating control are also reflected back and triggered within the observable collections. The Rating property that supports two-way binding is value.
 
-Apply the plugin and the property assigning the **Rating** element through the directive that starts with the letter “e-“**.** 
+Apply the plugin and the property assigning the **Rating** element through the directive that starts with the letter “e-“. 
 
-The following example depicts the way to bind data to the **Rating** control through K**nockout** support.
+The following example depicts the way to bind data to the **Rating** control through **Knockout** support.
 
  Add the following HTML to render rating with Knockout support.
 
@@ -33,56 +33,54 @@ The following example depicts the way to bind data to the **Rating** control thr
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
-</head>
-<body>
-    <div class="control" style="float: left">
-        <div class="ctrllabel"></div>
-        <input id="apiRating" type="text" class="rating" data-bind="ejRating: { value: ratingValue, width: '161px', precision: 'exact' }" />
-    </div>
-    <div class="control" style="float: left; margin-left: 20px; height: 30px">
-        <div class="ctrllabel"></div>
-        <input type="text" name="rating" class="input ejinputtext" value="" data-bind="value: ratingValue" />
-    </div>
-
-    <script type="text/javascript">
-
-        window.viewModel = {
-            ratingValue: ko.observable(3),
-        };
-
-        $(function () {
-            ko.applyBindings(viewModel);
-        });
-
-    </script>
-    <style type="text/css">
-        .control {
-            margin-top: 10px;
-        }
-
-        .input {
-            height: 27px;
-            text-indent: 10px;
-            width: 81%;
-        }
-    </style>
-</body>
+   <head>
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+   </head>
+   <body>
+      <div class="control" style="float: left">
+         <div class="ctrllabel"></div>
+         <input id="apiRating" type="text" class="rating" data-bind="ejRating: { value: ratingValue, width: '161px', precision: 'exact' }" />
+      </div>
+      <div class="control" style="float: left; margin-left: 20px; height: 30px">
+         <div class="ctrllabel"></div>
+         <input type="text" name="rating" class="input ejinputtext" value="" data-bind="value: ratingValue" />
+      </div>
+      <script type="text/javascript">
+         window.viewModel = {
+             ratingValue: ko.observable(3),
+         };
+         
+         $(function () {
+             ko.applyBindings(viewModel);
+         });
+         
+      </script>
+      <style type="text/css">
+         .control {
+               margin-top: 10px;
+         }
+         .input {
+               height: 27px;
+               text-indent: 10px;
+               width: 81%;
+         }
+      </style>
+   </body>
 </html>
+
 
 {% endhighlight %}
 
 
 The following screenshot illustrates **Rating** with **Knockout** support.
 
-{% include image.html url="/js/Rating/Data-binding_images/Data-binding_img1.png" Caption="Rating-Knockout Binding"%}
+{% include image.html url="/js/Rating/Data-binding_images/Data-binding_img1.png" %}
 
 ## Angular Binding
 
@@ -105,60 +103,53 @@ The following example depicts the way to bind data to the **Rating** control by 
 
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="syncApp">
-<head>
-    <title>Essential Studio for JavaScript :  Angular</title>
-    <!-- style sheet for default theme(flat azure) -->
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <!--scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
-</head>
-<body ng-controller="RatingCtrl">
-    <table>
-        <th>
+   <head>
+      <title>Essential Studio for JavaScript :  Angular</title>
+      <!-- style sheet for default theme(flat azure) -->
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <!--scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
+   </head>
+   <body ng-controller="RatingCtrl">
+      <table>
+         <th>
             <div id="control">
-                <input id="apiRating" type="text" class="rating" ej-rating e-value="ratingValue">
+               <input id="apiRating" type="text" class="rating" ej-rating e-value="ratingValue">
             </div>
-        </th>
-
-        <th>
+         </th>
+         <th>
             <div id="binding">
-                <input type="text" class="input ejinputtext" name="rating" value="" ng-model="ratingValue" />
+               <input type="text" class="input ejinputtext" name="rating" value="" ng-model="ratingValue" />
             </div>
-        </th>
-    </table>
-
-    <script type="text/javascript">
-        angular.module('syncApp', ['ejangular'])
-      .controller('RatingCtrl', function ($scope) {
-          $scope.ratingValue = 3;
-      });
-
-    </script>
-    <style type="text/css" class="cssStyles">
-        #binding {
-            margin-left: 150px;
-        }
-
-        .control {
-            margin-top: 10px;
-        }
-
-        .input {
-            height: 27px;
-            text-indent: 10px;
-            width: 81%;
-        }
-    </style>
-</body>
+         </th>
+      </table>
+      <script type="text/javascript">
+         angular.module('syncApp', ['ejangular'])
+         .controller('RatingCtrl', function ($scope) {
+           $scope.ratingValue = 3;
+         });
+         
+      </script>
+      <style type="text/css" class="cssStyles">
+         #binding {
+         margin-left: 150px;
+         }
+         .control {
+         margin-top: 10px;
+         }
+         .input {
+         height: 27px;
+         text-indent: 10px;
+         width: 81%;
+         }
+      </style>
+   </body>
 </html>
-
-
-
 
 {% endhighlight %}
 
@@ -166,5 +157,5 @@ The following example depicts the way to bind data to the **Rating** control by 
 
 The following screenshot displays the output of **Rating** with **Angular** support.
 
-{% include image.html url="/js/Rating/Data-binding_images/Data-binding_img2.png" Caption="Rating-Angular Binding "%}
+{% include image.html url="/js/Rating/Data-binding_images/Data-binding_img2.png" %}
 

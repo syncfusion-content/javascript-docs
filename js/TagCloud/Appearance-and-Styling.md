@@ -21,27 +21,27 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
-                 <div id="techweblist"></div>
+<div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-      // Assign the values for minFontSize  and maxFontSize properties below.
-
-        $("#techweblist").ejTagCloud({
-                minFontSize: "20px",
-                maxFontSize: "50px",
-                titleText: "Tech Sites",
-                dataSource: websiteCollection
-           });
+    // Assign the values for minFontSize  and maxFontSize properties below.
+    
+    $("#techweblist").ejTagCloud({
+        minFontSize: "20px",
+        maxFontSize: "50px",
+        titleText: "Tech Sites",
+        dataSource: websiteCollection
+    });
  
 {% endhighlight %}
 
 
 The following screenshot illustrates the **TagCloud** control with customized font sizes.
 
-{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="TagCloud with customized font sizes"%}
+{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
 
 
 
@@ -57,19 +57,18 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
-
  
-   <table>
-    <tr>
-        <td>
-            <span>Tag format cloud</span>
-            <div id="techwebcloud"></div>
-        </td>
-        <td>
-            <span>Tag format list</span>
-            <div id="techweblist"></div>
-        </td>
-    </tr>
+<table>
+   <tr>
+      <td>
+         <span>Tag format cloud</span>
+         <div id="techwebcloud"></div>
+      </td>
+      <td>
+         <span>Tag format list</span>
+         <div id="techweblist"></div>
+      </td>
+   </tr>
 </table>
 
 {% endhighlight %}
@@ -79,23 +78,22 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 
      // Assign the values for format property in TagCloud.
-
     $("#techweblist").ejTagCloud({
-                format:"list",
-                titleText: "Tech Sites List",
-                dataSource: websiteCollection
-            });
-            $("#techwebcloud").ejTagCloud({
-                format: "cloud",
-                titleText: "Tech Sites Cloud",
-                dataSource: websiteCollection
-            });
+        format: "list",
+        titleText: "Tech Sites List",
+        dataSource: websiteCollection
+    });
+    $("#techwebcloud").ejTagCloud({
+        format: "cloud",
+        titleText: "Tech Sites Cloud",
+        dataSource: websiteCollection
+    });
 
 {% endhighlight %}
 
 The following screenshot illustrates the **TagCloud** control with customized formats.
 
-{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="TagCloud using cloud and list formats"%}
+{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
 
 
 
@@ -131,20 +129,20 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
-         <div id="techweblist"></div>
+<div id="techweblist"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
 
-             // Add the cssClass property to TagCloud.
-   
-             $("#techweblist").ejTagCloud({
-                titleText: "Tech Sites",
-                dataSource: websiteCollection,
-                cssClass:"CustomCss"
-             });
+     // Add the cssClass property to TagCloud.
+    
+     $("#techweblist").ejTagCloud({
+        titleText: "Tech Sites",
+        dataSource: websiteCollection,
+        cssClass:"CustomCss"
+     });
     
 {% endhighlight %}
 
@@ -175,7 +173,7 @@ Define CSS class for customizing the **TagCloud** widget.
 
 The following screenshot illustrates the **TagCloud** with customized CSS class,
 
-{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="TagCloud with Custom CSS"%}
+{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
 
 
 

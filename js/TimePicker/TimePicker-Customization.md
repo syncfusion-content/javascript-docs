@@ -19,7 +19,7 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker**
 
 {% highlight html %}
 
-    <input type="text" id="time" />
+<input type="text" id="time" />
 
 {% endhighlight %}
 
@@ -37,5 +37,5 @@ The following screenshot illustrates you a default **TimePicker**.
 
 
 
-{% include image.html url="/js/TimePicker/TimePicker-Customization_images/TimePicker-Customization_img1.png" Caption="TimePicker Control"%}
+{% include image.html url="/js/TimePicker/TimePicker-Customization_images/TimePicker-Customization_img1.png" %}
 

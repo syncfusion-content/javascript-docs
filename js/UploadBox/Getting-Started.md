@@ -9,15 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create an **Uploadbox** in your application with **JavaScript.**
-
-## Create your first Uploadbox in JavaScript
-
-**Essential JavaScript Uploadbox** widget provides support to upload files or photos within your webpage. From the following guidelines, you can learn how to upload the files that are used in a Resume Upload scenario. This helps you to restrict some file extensions when you upload the resume in server by using **Uploadbox** control.
+This section explains briefly about how to create an **Uploadbox** in your application with **JavaScript.** **Essential JavaScript Uploadbox** widget provides support to upload files or photos within your webpage. From the following guidelines, you can learn how to upload the files that are used in a Resume Upload scenario. This helps you to restrict some file extensions when you upload the resume in server by using **Uploadbox** control.
 
 The following screenshot demonstrates the functionality of **Uploadbox** with the file extension.
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img1.png" Caption="Uploadbox Control with File restriction"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img1.png" %}
 
 In the above screenshot, you can upload a resume that restricts **.html** and **.txt** files and allows **.png** file extension. This helps you to avoid unsupported resume formats getting uploaded in a server.
 
@@ -25,7 +21,7 @@ In the above screenshot, you can upload a resume that restricts **.html** and **
 
 
 
-### Create Uploadbox widgets
+## Create Uploadbox widgets
 
 **Essential JavaScript Uploadbox** widget basically renders built-in features like upload multiple files, and deletes the files from **Uploadbox**. You can know the status of uploading the file whether it is completed or failed and you can retry uploading the files.  You can easily create the **Uploadbox** widget by using the following steps.
 
@@ -39,14 +35,10 @@ Create an **HTML** file and add the following template to the **HTML** file.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
     <!--Scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
     <!--Add custom scripts here -->
 </head>
@@ -63,9 +55,9 @@ Create an **HTML** file and add the following template to the **HTML** file.
 
 {% highlight html %}
     
-    <div id="targetElement">
-        <div id="UploadDefault"></div>
-    </div>
+<div id="targetElement">
+    <div id="UploadDefault"></div>
+</div>
 
 {% endhighlight %}
 
@@ -180,17 +172,17 @@ Initialize the script for **Uploadbox.**
 
 The following screenshot displays an **Uploadbox** control.
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img2.png" Caption="Create an Uploadbox Control"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img2.png" %}
 
 
 
 After you upload the files, the following screen shot is displayed. 
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img3.png" Caption="Upload a file in Uploadbox control"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img3.png" %}
 
 > **Note**: The above screenshot displays the Uploadbox control that shows the files are uploaded successfully.
 
-### Set Restriction for File Extension
+## Set Restriction for File Extension
 
 In a real-time scenario, some file extensions are restricted. You can allow files and restrict files by using the following two properties **extensionsAllow** and **extensionsDeny** enabled in **Uploadbox**. 
 
@@ -209,7 +201,7 @@ Add input elements to create elements for file extension.
 {% highlight html %}
 
 
-    <div id="targetElement">
+<div id="targetElement">
     <table id="uploadTable">
         <tr>
             <td>
@@ -234,7 +226,7 @@ Add input elements to create elements for file extension.
             </td>
         </tr>
     </table>
-   </div>
+</div>
 
 
 {% endhighlight %}
@@ -311,15 +303,15 @@ The following screenshot displays an **Uploadbox** control with the file extensi
 
 
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img4.png" Caption="Uploadbox with setting restrictions"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img4.png" %}
 
 The above screenshot shows the **Uploadbox** that allows “.**png**” files and restricts “**.txt”** and “**.html”** file formats. You can give the number file formats in both allow and deny textbox elements.
 
-### Upload Multiple Files
+## Upload Multiple Files
 
 You can click the **Browse** button and select the file to upload multiple files in **Uploadbox** control. You can see the selected files in **Uploadbox** control and you can upload all the files.
 
 The following screenshot displays an **Uploadbox** control with multiple files.
 
-{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img5.png" Caption="Upload multiple files"%}
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img5.png" %}
 
