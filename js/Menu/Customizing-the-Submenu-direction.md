@@ -33,8 +33,7 @@ Add the following code in your **HTML** page.
                             <li><a>Silverlight</a></li>
                         </ul>
                        </ul>
-                </li>
-            </ul>
+                </li>            
 
             <li id="Support">
                 <a>Support</a>
@@ -102,7 +101,7 @@ Add the following code in your **HTML** page.
                     <li><a>Careers</a></li>
                 </ul>
             </li>
-
+          </ul>
         </div>
     </div>
 </div>

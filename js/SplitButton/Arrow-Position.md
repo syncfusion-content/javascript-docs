@@ -114,6 +114,8 @@ In the **HTML** page, add the following button elements to configure **Split 
     }
 </style>
 
+{% endhighlight %}
+
 Execute the above code to render the following output.
 
 {% include image.html url="/js/SplitButton/Arrow-Position_images/Arrow-Position_img1.png" %}

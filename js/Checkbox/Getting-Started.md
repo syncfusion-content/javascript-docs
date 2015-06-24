@@ -49,7 +49,7 @@ Create an **HTML** file and add the following template to the **HTML** file.
 
 Add input element to render the **Checkbox.**
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
+{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img2.png" %}
 
 {% highlight html %}
 
@@ -282,5 +282,5 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
 
 Execute the code to render the resultant output.
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img4.png"}
+{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img4.png" %}
 
