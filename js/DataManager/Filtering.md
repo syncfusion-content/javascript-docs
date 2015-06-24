@@ -574,9 +574,9 @@ Result of the above code example is illustrated as follows.
 
 {% include image.html url="/js/DataManager/Filtering_images/Filtering_img9.png" %}
 
-##Predicate and predicate
+##and predicate
 
-The “and” predicate is used to add n-number of predicates with “and” condition and filter the data.
+The `and` predicate is used to add n-number of predicates with “and” condition and filter the data.
 
 
 

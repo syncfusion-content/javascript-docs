@@ -143,7 +143,7 @@ Reporting</td><td colspan = "3">
 <td>
 Others</td><td>
 <a href="/js/calculate/overview">Calculate</a></td><td colspan = "2">
-<a href="/js/DataManager/overview">DataManager</td></tr>
+<a href="/js/DataManager/overview">DataManager</a></td></tr>
 </table>
 
 Essential JS UI controls have **inbuilt frameworks** for databinding, [theming](/js/theming-in-essential-javascript-components), [localization](/js/localization) and [accessibility](/js/accessibility). The components are also compatible with other popular frameworks such as [AngularJS](/js/angularjs), [KnockoutJS](/js/knockoutjs), [TypeScript](/js/typescript), and RequireJS.

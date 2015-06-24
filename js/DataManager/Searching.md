@@ -9,7 +9,7 @@ documentation: ug
 
 # Searching
 
-Searching is a basic query technique in data manager. It is used to filter the records from the entire data source based on the 'search' key parameter.
+Searching is a basic query technique in data manager. It is used to filter the records from the entire data source based on the `search` key parameter.
 
 {% highlight html %}
 
