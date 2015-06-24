@@ -9,20 +9,19 @@ documentation: ug
 
 # Editing
 
-The **TreeGrid** control provides built-in support for **Editing** cell items. 
+The TreeGrid control provides built-in support for **Editing** cell items. 
 
 ### Cell Editing
 
-Update the task details through grid **Cell Editing** by setting `**editMode**` as `**cellEditing**`.
+Update the task details through grid **Cell Editing** by setting `editMode` as `cellEditing`.
 
-The following code example shows you how to enable `**cellEditing**` in **TreeGrid** control.
+The following code example shows you how to enable `cellEditing` in TreeGrid control.
 
 {% highlight js %}
 
     $("#TreeGridContainer").ejTreeGrid({
         //...
         editSettings: {
-
             allowEditing: true,
             editMode: "cellEditing"
 
@@ -31,7 +30,7 @@ The following code example shows you how to enable `**cellEditing**` in **Tre
 
 {% endhighlight %}
 
-The output of **TreeGrid** with `**cellEditing**` is as follows.
+The output of **TreeGrid** with `cellEditing` is as follows.
 
 {% include image.html url="/js/TreeGrid/Editing_images/Editing_img1.png"%}
 
