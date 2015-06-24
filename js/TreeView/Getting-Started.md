@@ -227,9 +227,7 @@ Execute this code example to render **TreeView** with **JSON** Data Source.
 
 You can design **TreeView to** look like the Mail options application. Create the Sprite **CSS** styles for using mail Icons from the following image source. The source image is taken from the following installed location. 
 
-**[Installed Drive]:**\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\XX.X.X.XX\JavaScript\samples\web\images\mail\ mailicons.png
-
-> **Note**: XX.X.X.XX represents the Essential Studio version number that you are using currently.
+**[Installed Drive]:**\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\samples\web\images\mail\ mailicons.png
 
 Copy the “**mailicons.png**” from the above location and paste it in the folder location of the **HTML** sample page. 
 

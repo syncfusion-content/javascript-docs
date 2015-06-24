@@ -13,7 +13,7 @@ documentation: ug
 
 #### Deferred update
 
-If you set enableDeferredUpdate****to true, the **rangeChanged** event gets fired after dragging and dropping the slider. By default the enableDeferredUpdate****is true. If enableDeferredUpdate****is false then the **rangeChanged** event gets fired while dragging the slider.
+If you set **enableDeferredUpdate**to true, the **rangeChanged** event gets fired after dragging and dropping the slider. By default the **enableDeferredUpdate**is true. If **enableDeferredUpdate**is false then the **rangeChanged** event gets fired while dragging the slider.
 
 
 {% highlight js %}
@@ -41,15 +41,14 @@ This event is handled when the **RangeNavigator** gets loaded. A parameter **sen
 {% highlight js %}
 
 
-$("#rangecontainer").ejRangeNavigator(
-               {   
-                   // ...             
-                        loaded: function (sender) {
-                     sender.model. enableAutoResizing = false;
-                    },
-         //...
-                    });
-        });         
+    $("#rangecontainer").ejRangeNavigator({
+    // ...             
+    loaded: function(sender) {
+        sender.model.enableAutoResizing = false;
+    },
+    //...
+    });
+    });
 
 
 {% endhighlight %}
@@ -62,15 +61,14 @@ This event gets fired whenever the selected range changes in **RangeNavigator**.
 {% highlight js %}
 
 
-$("#rangecontainer").ejRangeNavigator(
-               {   
-                   // ...             
-                        rangeChanged: function (sender) {
-                    console.log(sender.selectedRangeSettings.start);
-                    },
-                   // ...             
-                    });
-        });
+    $("#rangecontainer").ejRangeNavigator({
+    // ...             
+    rangeChanged: function(sender) {
+        console.log(sender.selectedRangeSettings.start);
+    },
+    // ...             
+    });
+    });
 
 
 {% endhighlight %}
@@ -84,35 +82,34 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
 {% highlight js %}
 
 
-$("#rangecontainer").ejRangeNavigator(
-               {   
-                   // ...             
-                          rangeChanged: onchartloaded
-                   // ...             
-                    });
-        });
-       // setting zoom factor and position for chart axis in rangeChanged event.
-  function onchartloaded(sender) {
-         var chartobj = $("#container").data("ejChart");
-         if (chartobj != null) {
-           chartobj.model.axes[0].zoomPosition = sender. zoomPosition;                                                               
-           chartobj.model.axes[0].zoomFactor = sender. zoomFactor;
-            }
-            $("#container").ejChart("redraw");
-     }
+    $("#rangecontainer").ejRangeNavigator({
+    // ...             
+    rangeChanged: onchartloaded
+        // ...             
+    });
+    });
+    // setting zoom factor and position for chart axis in rangeChanged event.
+    function onchartloaded(sender) {
+        var chartobj = $("#container").data("ejChart");
+        if (chartobj != null) {
+            chartobj.model.axes[0].zoomPosition = sender.zoomPosition;
+            chartobj.model.axes[0].zoomFactor = sender.zoomFactor;
+        }
+        $("#container").ejChart("redraw");
+    }
 
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img2.png/js/RangeNavigator_images_img13.png" %}
+{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img2.png" %}
 
 #### Thumb Template
 
 You can customize Thumb template by using **leftThumbTemplate** and **rightThumbTemplate** property. You can add the required template as a “div” element with an “id” to the web page and assign the id or assign the html string to this property under **navigatorStyleSettings**.
 
-{% highlight js %}
+{% highlight html %}
 
  
 <script type="text/x-jsrender" id="left" >

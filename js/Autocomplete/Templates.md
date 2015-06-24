@@ -27,7 +27,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 
  Define the **CSS** classes for the sprite images. You can find the images in the following location:
 
-**[Installed Drive]:**\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JS \Samples\ web \images\autocomplete\flags.png
+**[Installed Drive]:**\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JS\Samples\ web \images\autocomplete\flags.png
 
 {% highlight css %}
 

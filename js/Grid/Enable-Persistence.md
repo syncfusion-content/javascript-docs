@@ -9,7 +9,7 @@ documentation: ug
 
 # Enable Persistence
 
-**EnablePersistence** is used to maintain the current state of the **Grid** model. When you refresh the page, the current grid state is stored in **localStorage** and it renders from stored model. We can use **enablePersisitnce** property to use enable persistence feature.
+**EnablePersistence** is used to maintain the current state of the **Grid** model. When you refresh the page, the current grid state is stored in **localStorage** and it renders from stored model. We can use `enablePersisitnce` property to use enable persistence feature.
 
 {% highlight html %}
 
@@ -44,5 +44,5 @@ documentation: ug
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Concepts-and-Features/Enable-Persistence_images/Enable-Persistence_img1.png" Caption="EnablePersistence."%}
+{% include image.html url="/js/Grid/Enable-Persistence_images/Enable-Persistence_img1.png"%}
 

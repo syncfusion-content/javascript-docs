@@ -55,15 +55,10 @@ By default, the **tooltip** texts are automatically determined based on the data
 Some of the **labelFormat** for **DateTime** data area as follows:
 
 * 'MMM, yyyy'
-
 * 'dd, MMM'
-
 * 'dd/MM/yyyy'
-
 * 'dd, hh:mm'
-
 * 'hh:mm:ss'
-
 * 'hh:mm:ss:tt'
 
 
@@ -89,7 +84,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 By default the **tooltip** for RangeNavigator gets displayed. You can change this behavior using the **tooltipDisplayMode** property in the tooltip and it takes the following values.
 
-_Table_ _1__: Tooltip values_
+
 
 <table>
 <tr>

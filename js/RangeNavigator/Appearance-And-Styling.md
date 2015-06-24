@@ -17,49 +17,39 @@ The labels are found along the range, displaying the value of the data it corres
 
 {% highlight js %}
 
-
-$("#rangecontainer").ejRangeNavigator(
-               {   
-                   // ...             
-               labelSettings:
-        {
-           // customizing higher level labels.
-            higherLevel:
-               {                    
-                   style:
-                     {
-                         font:
-                          {
-                              color: '#ff0000',
-                              style: 'Normal',
-                              size: '12px',
-                              opacity: 1,
-                              weight: 'regular'
-                          },
-
-                     },                 
-               },
-                    // customizing lower level labels.
-            lowerLevel:
-               {   
-                   style:
-                     {
-                         font:
-                           {
-                               color: '#ff0000',
-                               style: 'Normal',
-                               size: '12px',
-                               opacity: 1,
-                               weight: 'regular'
-                           },  
-                     },   
-               }
-        },   
-                // ...             
-
-                    });
+        $("#rangecontainer").ejRangeNavigator({
+        // ...             
+        labelSettings: {
+            // customizing higher level labels.
+            higherLevel: {
+                style: {
+                    font: {
+                        color: '#ff0000',
+                        style: 'Normal',
+                        size: '12px',
+                        opacity: 1,
+                        weight: 'regular'
+                    },
+        
+                },
+            },
+            // customizing lower level labels.
+            lowerLevel: {
+                style: {
+                    font: {
+                        color: '#ff0000',
+                        style: 'Normal',
+                        size: '12px',
+                        opacity: 1,
+                        weight: 'regular'
+                    },
+                },
+            }
+        },
+        // ...             
+        
         });
-
+        });
 
 {% endhighlight %}
 
@@ -74,26 +64,20 @@ The following screen shot illustrates both the lower and higher level labels tha
 
 {% highlight js %}
 
-
-$("#rangecontainer").ejRangeNavigator(
-               {   
-                   // ...             
-          labelSettings: {
-                    higherLevel:
-                       {
-                           labelPlacement: "inside",
-                       },
-                    lowerLevel:
-                         {
-                           labelPlacement: "inside"
-                         }
-                },             
-                 // ...             
-
-                    });
+        $("#rangecontainer").ejRangeNavigator({
+        // ...             
+        labelSettings: {
+            higherLevel: {
+                labelPlacement: "inside",
+            },
+            lowerLevel: {
+                labelPlacement: "inside"
+            }
+        },
+        // ...             
+        
         });
-
-
+        });
 
 {% endhighlight %}
 
@@ -110,49 +94,61 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 {% highlight js %}
 
-
-$("#rangecontainer").ejRangeNavigator(
-               {   
-                   // ...    
-                   //  To customize the navigator element     
-                  navigatorStyleSettings: {
-
-             unselectedRegionColor: "white",
-             selectedRegionColor: "#5EABDE",
-             thumbColor: "white",
-             thumbRadius: 10,
-             thumbStroke: "#303030",
-             background: "transparent",
-             border: { color: "black", width: 3 },
-             majorGridLineStyle: { color: "transparent" },
-             minorGridLineStyle: { color: "transparent" }
-         },
-               //  To customize the labels
-   labelSettings: {
-
-         higherLevel: {
-                        style: {
-                                font: { color: 'black', size: '13px', opacity: 1}, 
-                                horizontalAlignment: "left"
-                        },
-                        intervalType: 'years',
-                        labelPlacement: "inside"
+        $("#rangecontainer").ejRangeNavigator({
+        // ...    
+        //  To customize the navigator element     
+        navigatorStyleSettings: {
+        
+            unselectedRegionColor: "white",
+            selectedRegionColor: "#5EABDE",
+            thumbColor: "white",
+            thumbRadius: 10,
+            thumbStroke: "#303030",
+            background: "transparent",
+            border: {
+                color: "black",
+                width: 3
+            },
+            majorGridLineStyle: {
+                color: "transparent"
+            },
+            minorGridLineStyle: {
+                color: "transparent"
+            }
+        },
+        //  To customize the labels
+        labelSettings: {
+        
+            higherLevel: {
+                style: {
+                    font: {
+                        color: 'black',
+                        size: '13px',
+                        opacity: 1
                     },
-         lowerLevel: {
-                      style: { 
-                             font: { color: 'black', size: '12px', opacity: 1  },  
-                             horizontalAlignment: "center"
-                          },
-                        intervalType: 'quarters',
-                        labelPlacement: "inside"
-                    }
+                    horizontalAlignment: "left"
                 },
-
-                // ...             
-
-                    });
+                intervalType: 'years',
+                labelPlacement: "inside"
+            },
+            lowerLevel: {
+                style: {
+                    font: {
+                        color: 'black',
+                        size: '12px',
+                        opacity: 1
+                    },
+                    horizontalAlignment: "center"
+                },
+                intervalType: 'quarters',
+                labelPlacement: "inside"
+            }
+        },
+        
+        // ...             
+        
         });
-
+        });
 
 
 {% endhighlight %}
@@ -165,43 +161,27 @@ $("#rangecontainer").ejRangeNavigator(
 
 **RangeNavigator** theme is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in JavaScript **RangeNavigator**.
 
-1. flatlight                  
-
-2. flatdark                  
-
-3. gradientlight           
-
-4. gradientdark           
-
+1. flatlight
+2. flatdark
+3. gradientlight 
+4. gradientdark 
 5. azure                      
-
 6. azuredark               
-
 7. lime 
-
 8. limedark
-
 9. saffron
-
 10. saffrondark
-
 11. gradientazure
-
 12. gradientazuredark
-
 13. gradientlime
-
 14. gradientlimedark
-
 15. gradientsaffron
-
 16. gradientsaffrondark
-
 
 {% highlight js %}
 
 
-$("#rangecontainer").ejRangeNavigator(
+               $("#rangecontainer").ejRangeNavigator(
                {   
                    // ...              
                       theme: 'azuredark',
