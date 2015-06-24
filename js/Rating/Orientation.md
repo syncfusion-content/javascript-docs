@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation
 
-**Rating** provides support for **vertical** orientation. By default Rating renders with **horizontal** orientation. You can the change the orientation by the ‘**orientation**’ property.
+**Rating** provides support for **vertical** orientation. By default Rating renders with **horizontal** orientation. You can the change the orientation by the **orientation** property.
 
 The following code example is used to render the Rating control with **vertical** **orientation**.
 
@@ -17,29 +17,29 @@ The following code example is used to render the Rating control with **vertical*
 
 {% highlight html %}
 
-   <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
-        <table>
-            <tr>
-                <td valign="top">Rating:
-                </td>
-                <td>
-                    <input id="rating" type="text" />
-                </td>
-            </tr>
-        </table>
-    </div>
+<div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
+    <table>
+        <tr>
+            <td valign="top">Rating:
+               </td>
+               <td>
+                   <input id="rating" type="text" />
+               </td>
+           </tr>
+      </table>
+ </div>
     
  {% endhighlight %}
 
 {% highlight js %}
 
-     // Add the following script to render Rating with customized orientation.
-
-     $("#rating").ejRating({ orientation: "vertical" });
+      // Add the following script to render Rating with customized orientation.
+    
+      $("#rating").ejRating({ orientation: "vertical" });
   
 {% endhighlight %}
 
 The following screenshot illustrates the **Rating** with **vertical orientation**.
 
-{% include image.html url="/js/Rating/Orientation_images/Orientation_img1.png" Caption="Rating with vertical orientation"%}
+{% include image.html url="/js/Rating/Orientation_images/Orientation_img1.png" %}
 

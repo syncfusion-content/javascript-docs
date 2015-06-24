@@ -19,14 +19,14 @@ Add the following code in your **HTML** section to initialize the **RTE** with S
 
 {% highlight html %}
 
-    <div class="rte">
-        <textarea id="rteSample">
-            Control de RTE es un fácil de hacer en el lado del cliente .
-            Cliente fácil de editar los contenidos y obtener el contenido HTML para el contenido mostrado .
-            Un control de RTE proporciona a los usuarios una barra de herramientas que ayuda a aplicar formatos
-            de texto enriquecido para el texto introducido en el área de texto .
-        </textarea>
-    </div>
+<div class="rte">
+    <textarea id="rteSample">
+        Control de RTE es un fácil de hacer en el lado del cliente .
+        Cliente fácil de editar los contenidos y obtener el contenido HTML para el contenido mostrado .
+        Un control de RTE proporciona a los usuarios una barra de herramientas que ayuda a aplicar formatos
+        de texto enriquecido para el texto introducido en el área de texto .
+    </textarea>
+</div>
 
 {% endhighlight %}
 
@@ -131,5 +131,5 @@ Add the following code in your **HTML** section to initialize the **RTE** with S
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/Localization_images/Localization_img1.png" Caption="Showcase of RTE with Spanish culture"%}
+{% include image.html url="/js/RichTextEditor/Localization_images/Localization_img1.png" %}
 

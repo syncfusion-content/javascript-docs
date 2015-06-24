@@ -70,14 +70,22 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% highlight html %}
 
-        <div id="spliter">
-            <div>
-                <div class="cont">Pane 1 </div>
-            </div>
-            <div>
-                <div class="cont">Pane 2 </div>
-            </div>
+<div id="splitter">
+    <div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Tools </h3>
+            Essential Tools is an collection of user interface components used to create interactive
+            ASP.NET MVC applications.
         </div>
+    </div>
+    <div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Grid </h3>
+            Essential Mvc Grid offers full featured a Grid control with extensive support for
+            Grouping and the display of hierarchical data.
+        </div>
+    </div>
+</div> 
 
 {% endhighlight %}
 
@@ -85,10 +93,10 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 
     $("#spliter").ejSplitter({
-        height: 250, width: 400,
-        properties: [{}, { paneSize: 80 }]
+        height: 280, 
+        width: 600
     });
-
+    
     //Control focus key
     $(document).on("keydown", function (e) {
         if (e.altKey && e.keyCode === 74) { // j- key code.
@@ -101,7 +109,5 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 Run the sample and press **Alt + J** to focus the **Splitter** widget. Perform provided functionality by using keyboard shortcuts.
 
-
-
-{% include image.html url="/js/Splitter/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" Caption="Splitter focused with keyboard shortcut"%}
+{% include image.html url="/js/Splitter/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" %}
 

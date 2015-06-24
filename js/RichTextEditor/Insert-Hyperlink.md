@@ -19,22 +19,21 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 
 {% highlight html %}
 
-    <div class="rte">
-        <textarea id="rteSample"></textarea>
-    </div>
+<div class="rte">
+    <textarea id="rteSample"></textarea>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
     // Add the following code in your script section to render RTE with default set of tools.
-    
-    $(function () {
-        $("#rteSample").ejRTE();
+    $(function() {
+       $("#rteSample").ejRTE();
     });
 
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/Insert-Hyperlink_images/Insert-Hyperlink_img1.png" Caption="Show case for inserting hyperlink in RTE content area"%}
+{% include image.html url="/js/RichTextEditor/Insert-Hyperlink_images/Insert-Hyperlink_img1.png" %}
 

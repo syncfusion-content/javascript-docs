@@ -21,7 +21,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-    <input id="numeric" type="text" />
+<input id="numeric" type="text" />
     
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 The output for **NumericTextBox** with **decimalPlaces** is as follows.
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img1.png" Caption="NumericTextBox with decimalPlaces"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img1.png" %}
 
 ## Persistence Support
 
@@ -113,7 +113,7 @@ The output for NumericTextBox when enableStrictMode is “True” is as follows.
 
 
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="NumericTextBox with enableStrictMode"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img4.png" %}
 
 ## Enabled or Disabled
 
@@ -165,7 +165,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-  <input id="numeric" type="text" />
+<input id="numeric" type="text" />
       
 {% endhighlight %}
 
@@ -184,7 +184,7 @@ The output for NumericTextBox after setting “**height**” and “**width**”
 
 
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img7.png" Caption="NumericTextBox with height and width                          		"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img7.png" %}
 
 ## Increment Step
 
@@ -198,7 +198,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-         <input id="numeric" type="text" />
+ <input id="numeric" type="text" />
          
 {% endhighlight %}
 
@@ -252,12 +252,6 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 {% endhighlight %}
 
 
-The output for **NumericTextBox** with the **name** property is as follows**.**
-
-
-
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img10.png" Caption="NumericTextBox with name"%}
-
 ## Define Value
 
 The value of **NumericTextBox** can be assigned by using the **value** property. The default value for **value** property is null.
@@ -271,7 +265,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <input id="numeric" type="text" />
+<input id="numeric" type="text" />
        
 {% endhighlight %}
 
@@ -288,7 +282,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **NumericTextBox** with the **value** property is as follows**.**
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img11.png" Caption="NumericTextBox with value"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img11.png" %}
 
 ## Define maxValue and minValue
 
@@ -308,7 +302,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-       <input id="numeric" type="text" />
+<input id="numeric" type="text" />
        
 {% endhighlight %}
 
@@ -365,7 +359,7 @@ The output for NumericTextBox when **readOnly** is “**True**” is as follows*
 
 
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img14.png" Caption="NumericTextBox with readOnly		"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img14.png" %}
 
 ## Appearance
 
@@ -401,7 +395,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-         <input id="numeric" type="text" />
+<input id="numeric" type="text" />
          
 {% endhighlight %}
 
@@ -420,18 +414,18 @@ Customize the CSS properties in custom CSS class.
 
 {% highlight css %}
 
-    <style>
-        .customCss .e-box {
-            border-color: #9d241b;
-        }
-        .customCss .e-input {
-            background-color: #f6db8d;            
-        }
-        .customCss .e-select {
-            background-color: #ecf6ac;
-            border-color: #3c36e7;
-        }
-    </style>
+<style>
+    .customCss .e-box {
+        border-color: #9d241b;
+    }
+    .customCss .e-input {
+        background-color: #f6db8d;            
+    }
+    .customCss .e-select {
+        background-color: #ecf6ac;
+        border-color: #3c36e7;
+    }
+</style>
 
 
 
@@ -443,7 +437,7 @@ The output for NumericTextBox after applying **cssClass** is as follows.
 
 
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img15.png" Caption="NumericTextBox with cssClass"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img15.png" %}
 
 ## Rounded Corner Support
 
@@ -457,7 +451,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-  <input id="numeric" type="text" />
+<input id="numeric" type="text" />
       
 {% endhighlight %}
 
@@ -476,7 +470,7 @@ The output for NumericTextBox when **showRoundedCorner** is “**True**”.
 
 
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img16.png" Caption="NumericTextBox with showRoundedCorner"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img16.png" %}
 
 ## Spin Button Support
 
@@ -511,7 +505,7 @@ The output for NumericTextBox when showSpinButton is “False”.
 
 
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img17.png" Caption="NumericTextBox with showSpinButton is False"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img17.png" %}
 
 ## Water Mark Text Support
 
@@ -545,5 +539,5 @@ The output for NumericTextBox after applying **watermarkText** is as follows.
 
 
 
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img18.png" Caption="NumericTextBox with watermark text"%}
+{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img18.png" %}
 

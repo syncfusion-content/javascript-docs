@@ -36,18 +36,18 @@ The following example describes the way to use localization for **PercentageText
 {% highlight html %}
 
 
-       <table cellpadding="10">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="percent">Percent</label>
-                    </td>
-                    <td>
-                        <input id="percent" type="text" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<table cellpadding="10">
+    <tbody>
+        <tr>
+            <td>
+                <label for="percent">Percent</label>
+            </td>
+            <td>
+                <input id="percent" type="text" />
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 {% endhighlight %}
 

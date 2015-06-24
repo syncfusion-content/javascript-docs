@@ -9,15 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **CurrencyTextBox** control in your application with **JavaScript**.
+This section explains briefly about how to create a **CurrencyTextBox** control in your application with **JavaScript**. From the following steps you can learn how to create and use **CurrencyTextBox** in your application. Here we have showcased, a small Electric bill calculator application using **Essential JavaScript CurrencyTextBox** widget.You will learn how to use our Essential JavaScript **CurrencyTextBox** widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
 
-## Create your first CurrencyTextBox in JavaScript
+{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img1.png" %}
 
-From the following steps you can learn how to create and use **CurrencyTextBox** in your application. Here we have showcased, a small Electric bill calculator application using **Essential JavaScript CurrencyTextBox** widget.You will learn how to use our Essential JavaScript **CurrencyTextBox** widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
-
-{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img1.png" Caption="Electricity Bill Calculator"%}
-
-### Create Textboxes Widgets
+## Create Textboxes Widgets
 
 Create an **HTML** file and add the following template to the html file for Textbox widget creation.
 
@@ -105,36 +101,36 @@ Initialize the **Textboxes widget** as shown in the following section.
 
 
 
-// Declares Necessary variable creation 
-
-          var kmcalc, servtax, amuntperkm;
-          $(function () {
-              // document ready
-              // simple Numeric creation
-              $("#unitmcalc").ejNumericTextbox({
-                watermarkText: "Units" // set watermark in numeric
-               });
-              // simple Percentage creation
-              $("#servTax").ejPercentageTextbox({
-                  watermarkText: "Service Tax" // sets watermark in percentage
-              });
-               // simple Currency creation
-              $("#amountperum").ejCurrencyTextbox({
-                  watermarkText: "Amount per unit" // sets watermark in currency                       
-              });
-              // simple MaskEdit creation
-              $("#mobiNo").ejMaskEdit({
-                  watermarkText: "Mobile No" // sets watermark in maskedit
-              });
-
-              // simple Button creation
-              $("#cbill").ejButton({
-                width: "100px",
-                height: "30px",
-                contentType: "textandimage",
-                prefixIcon: "e-calender"
-            });
-          });
+    // Declares Necessary variable creation 
+    
+    var kmcalc, servtax, amuntperkm;
+    $(function () {
+        // document ready
+        // simple Numeric creation
+        $("#unitmcalc").ejNumericTextbox({
+          watermarkText: "Units" // set watermark in numeric
+         });
+        // simple Percentage creation
+        $("#servTax").ejPercentageTextbox({
+            watermarkText: "Service Tax" // sets watermark in percentage
+        });
+         // simple Currency creation
+        $("#amountperum").ejCurrencyTextbox({
+            watermarkText: "Amount per unit" // sets watermark in currency                       
+        });
+        // simple MaskEdit creation
+        $("#mobiNo").ejMaskEdit({
+            watermarkText: "Mobile No" // sets watermark in maskedit
+        });
+    
+        // simple Button creation
+        $("#cbill").ejButton({
+          width: "100px",
+          height: "30px",
+          contentType: "textandimage",
+          prefixIcon: "e-calender"
+      });
+    });
 
 
 
@@ -142,9 +138,7 @@ Initialize the **Textboxes widget** as shown in the following section.
 
 
 
-You can add the following location in the **URL** path for the background image and to apply styling. 
-
-http://js.syncfusion.com/UG/Web/Content/electricity.png
+You can add the following location in the **URL** path for the background image and to apply styling. [http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
 
 
 
@@ -156,7 +150,7 @@ http://js.syncfusion.com/UG/Web/Content/electricity.png
          .ele-icon
         {
             display: inline-block;
-            background-image:url([http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png));
+            background-image:url(http://js.syncfusion.com/UG/Web/Content/electricity.png);
             background-repeat: no-repeat;
             background-size: contain;
             height: 50px;
@@ -197,10 +191,10 @@ http://js.syncfusion.com/UG/Web/Content/electricity.png
 
 The following screenshot displays the output when the above code is executed. 
 
-{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img2.png" Caption="Textboxes with watermark text"%}
+{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img2.png" %}
 
 
-### Set the MinValue, MaxValue and Value in Textboxes
+## Set the MinValue, MaxValue and Value in Textboxes
 
 You can set the **“minValue”,** **“maxValue”** and **“value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the default ranges and enter the phone number in the **Maskedit** widget by using the ”**maskFormat**” property. The following code example illustrates how to achieve this.
 
@@ -208,7 +202,7 @@ You can set the **“minValue”,** **“maxValue”** and **“value”** in Nu
 
 
 
-      // Declares the Necessary variable creation 
+          // Declares the Necessary variable creation 
           var kmcalc, servtax, amuntperkm;
           $(function () {
               // document ready
@@ -257,10 +251,10 @@ The following screenshot illustrates the output of the above code examples.
 
 
 
-{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img3.png" Caption="Textboxes with value"%}
+{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img3.png" %}
  
 
-### Set the Strict Mode Option
+## Set the Strict Mode Option
 
 You can set the “**StrictMode” option** to restrict entering values defined outside the range. The following code example illustrates how to set strict mode option. 
 
@@ -268,7 +262,7 @@ You can set the “**StrictMode” option** to restrict entering values defined 
 
 
 
-   // Declares Necessary variable creation
+          // Declares Necessary variable creation
     
           var kmcalc, servtax, amuntperkm;
           $(function () {
@@ -316,13 +310,13 @@ You can set the “**StrictMode” option** to restrict entering values defined 
 
 Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** range mentioned in the CurrencyTextBox****. 
 
-### Set Calculation process with Textboxes Widgets
+## Set Calculation process with Textboxes Widgets
 
 You can use events to calculate the total and display the value. You can achieve this with the help of “click” event in the button widget. The calculation steps have to be written in the call back function of button’s “click” event.
 
 {% highlight js %}
 
-   // Declares Necessary variable creation 
+          // Declares Necessary variable creation 
    
           var kmcalc, servtax, amuntperkm;
           $(function () {
@@ -357,5 +351,5 @@ You can use events to calculate the total and display the value. You can achieve
 
 Run the above code example, fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator. 
 
-{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img4.png" Caption="Electricity bill calculator with alert"%}
+{% include image.html url="/js/Currency/Getting-Started_images/Getting-Started_img4.png" %}
 

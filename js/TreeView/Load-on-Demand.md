@@ -21,7 +21,7 @@ In the **HTML** page, add a &lt;div&gt; element to configure TreeView.
 
 {% highlight html %}
 
-    <div id="treeView"></div>
+<div id="treeView"></div>
 
 {% endhighlight %}
 
@@ -57,5 +57,5 @@ In the **HTML** page, add a &lt;div&gt; element to configure TreeView.
 
 The output for TreeView when loadOnDemand is set to “True” is as follows.
 
-{% include image.html url="/js/TreeView/Load-on-Demand_images/Load-on-Demand_img1.png" Caption="TreeView with loadOnDemand"%}
+{% include image.html url="/js/TreeView/Load-on-Demand_images/Load-on-Demand_img1.png"%}
 

@@ -9,17 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section explains you briefly on how to create a **Button** in your application with **JavaScript**.
-
-## Create your first Button in JavaScript
-
-Essential JavaScript Button helps to display a Button widget within a webpage and allows you to Click, Toggle Click, Reset, and Submit. The following example illustrates how to customize Button control in a Media Player and Office Ribbon Application. 
+This section explains you briefly on how to create a **Button** in your application with **JavaScript**. Essential JavaScript Button helps to display a Button widget within a webpage and allows you to Click, Toggle Click, Reset, and Submit. The following example illustrates how to customize Button control in a Media Player and Office Ribbon Application. 
 
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
-{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img1.png" Caption="Button Controls"%}
+{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img1.png"%}
 
-**Create Button Widget**
+##Create Button Widget
 
 Essential JavaScript Button control has different functionalities such as Display as Only Image Content or Image Content with Text.
 
@@ -53,32 +49,32 @@ Add &lt;Button&gt; element to create a Button control.
 
 {% highlight html %}
 
-    <div class="case1">
-        <table>
-            <tr>
-                <td>
-                    <input type="checkbox" id="play" />
-                </td>
-                <td>
-                    <button id="start">Start</button>
-                </td>
-                <td>
-                    <button id="stop">stop</button>
-                </td>
-                <td>
-                    <button id="open">Open</button>
-                </td>
-                <td>
-                    <button id="save">Save</button>
-                    <ul id="menu1">
-                        <li><span>Open...</span></li>
-                        <li><span>Save</span></li>
-                        <li><span>Delete</span></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>      
+<div class="case1">
+    <table>
+        <tr>
+            <td>
+                <input type="checkbox" id="play" />
+            </td>
+            <td>
+                <button id="start">Start</button>
+            </td>
+            <td>
+                <button id="stop">stop</button>
+            </td>
+            <td>
+                <button id="open">Open</button>
+            </td>
+            <td>
+                <button id="save">Save</button>
+                <ul id="menu1">
+                    <li><span>Open...</span></li>
+                    <li><span>Save</span></li>
+                    <li><span>Delete</span></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>      
 
 
 {% endhighlight %}
@@ -168,45 +164,44 @@ Add the following styles to show the Button control in the center of a webpage.
 
 {% endhighlight %}
 
-**Create Multimedia Player**
+##Create Multimedia Player
 
 Add the following code inside the **&lt;body&gt;** tag.
 
 {% highlight html %}
 
-    <div class="audiodiv">
-        <audio controls id="demo">
-            <source src="song.ogg" type="audio/ogg">
-            <source src="song.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-
-    <div class="case1">
-        <table>
-            <tr>
-                <td>
-                    <input type="checkbox" id="play" />
-                </td>
-                <td>
-                    <button id="start">Start</button>
-                </td>
-                <td>
-                    <button id="stop">stop</button>
-                </td>
-                <td>
-                    <button id="open">Open</button>
-                </td>
-                <td>
-                    <button id="save">Save</button>
-                    <ul id="menu1">
-                        <li><span>Open...</span></li>
-                        <li><span>Save</span></li>
-                        <li><span>Delete</span></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
+<div class="audiodiv">
+    <audio controls id="demo">
+        <source src="song.ogg" type="audio/ogg"/>
+        <source src="song.mp3" type="audio/mpeg"/>
+    </audio>
+</div>
+<div class="case1">
+    <table>
+        <tr>
+            <td>
+                <input type="checkbox" id="play" />
+            </td>
+            <td>
+                <button id="start">Start</button>
+            </td>
+            <td>
+                <button id="stop">stop</button>
+            </td>
+            <td>
+                <button id="open">Open</button>
+            </td>
+            <td>
+                <button id="save">Save</button>
+                <ul id="menu1">
+                    <li><span>Open...</span></li>
+                    <li><span>Save</span></li>
+                    <li><span>Delete</span></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
 
 
 {% endhighlight %}
@@ -285,9 +280,9 @@ Add the following function in **&lt;script&gt;** tag.
 
 The following screenshot displays the output.
 
-{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img2.png" Caption="Button Controls"%}
+{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img2.png" %}
 
-**Create Office Ribbon Control**
+##Create Office Ribbon Control
 
 In a real-time scenario, MS Office Bold and Italic options work as **Toggle Button** and Underline option works as a **Split Button**. Here, you can learn how to use **Button** control feature using Office Ribbon options.
 
@@ -389,9 +384,9 @@ Add Function Definition from click event to Button function.
 
 The following screenshot displays Office Ribbon Application.
 
-{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img3.png" Caption="Office Ribbon"%}
+{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img3.png" %}
 
 The following screenshot displays **Office Ribbon** **Bold** Option.	
 
-{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img4.png" Caption="Office Ribbon with Bold option"%}
+{% include image.html url="/js/Button/Getting-Started_images/Getting-Started_img4.png"%}
 

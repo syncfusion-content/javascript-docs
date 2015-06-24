@@ -259,7 +259,7 @@ Execute the above code and then double-click on the required **Schedule** cells.
 {% include image.html url="/js/Schedule/Customization_images/Customization_img1.png" Caption=""%}
 
 
-* Add the required details on the above displayed appointment window and then click **Submit** button to save the appointment.
+Add the required details on the above displayed appointment window and then click **Submit** button to save the appointment.
 
 
 ## Editing Customized Appointment window
@@ -528,7 +528,7 @@ Only the bolded texts in the above code examples are added to open the custom ap
 {% include image.html url="/js/Schedule/Customization_images/Customization_img2.png" Caption=""%}
 
 
-* You can change the details in the above window and then click **Submit** button to save the updated values.
+You can change the details in the above window and then click **Submit** button to save the updated values.
 
 
 ## Hour Customization

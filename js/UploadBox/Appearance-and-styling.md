@@ -19,10 +19,10 @@ Sub-properties under buttonText property
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Description</b></td><td>
-<b>Data Type</b></td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 browse</td><td>
@@ -73,7 +73,7 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img1.png" Caption="Uploadbox with customized button text"%}
+{% include image.html url="/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img1.png" %}
 
 
 ## Customizing Upload Dialog
@@ -84,9 +84,9 @@ Subproperties under dialogText property
 
 <table>
 <tr>
-<td>
-<b>Name</b></td><td>
-<b>Description</b></td></tr>
+<th>
+Name</th><th>
+<th>Description</b></th></th>
 <tr>
 <td>
 title</td><td>
@@ -139,7 +139,7 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img2.png" Caption="Uploadbox with customized dialog text"%}
+{% include image.html url="/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img2.png" %}
 
 
 ## Show or Hide File details 
@@ -234,13 +234,13 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 {% highlight css %}
 
 
-  <style class="cssStyles">
-      .customcss.e-uploadbox.e-widget .e-selectpart.e-select{
-            background-color: #FFFFCC;
-            font-weight: bold; 
-            font-family: sans-serif;
-        }
-    </style>
+<style class="cssStyles">
+  .customcss.e-uploadbox.e-widget .e-selectpart.e-select{
+        background-color: #FFFFCC;
+        font-weight: bold; 
+        font-family: sans-serif;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -253,7 +253,7 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img3.png" Caption="Uploadbox with customized CSS"%}
+{% include image.html url="/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img3.png"%}
 
 
 

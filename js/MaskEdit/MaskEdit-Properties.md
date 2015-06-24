@@ -34,15 +34,14 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-    <input id="maskedit" type="text" />
+<input id="maskedit" type="text" />
 	
 {% endhighlight %}
 
 {% highlight js %}
 
-        $(function () {
-            $("#maskedit").ejMaskEdit(
-            {
+        $(function() {
+            $("#maskedit").ejMaskEdit({
                 name: "mask",
                 inputMode: ej.InputMode.Text,
                 maskFormat: "99-999-CCCC",

@@ -127,5 +127,5 @@ Add the following code in your style section.
 
 Following screenshot displays the output of the above code.
 
-{% include image.html url="/js/Menu/Look-and-feel_images/Look-and-feel_img1.png" Caption="Look and feel of a Menu"%}
+{% include image.html url="/js/Menu/Look-and-feel_images/Look-and-feel_img1.png" %}
 

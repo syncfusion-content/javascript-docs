@@ -9,15 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **ColorPicker** in your application with **JavaScript**.
-
-## Create your first ColorPicker in JavaScript
-
-The **Essential JavaScript ColorPicker** control provides you support for selecting the colors in different sources such as palettes, picker or custom palettes. You can also render the color value from control in three formats such as RGB, HSV and HEXCODE. 
+This section explains briefly about how to create a **ColorPicker** in your application with **JavaScript**. The **Essential JavaScript ColorPicker** control provides you support for selecting the colors in different sources such as palettes, picker or custom palettes. You can also render the color value from control in three formats such as RGB, HSV and HEXCODE. 
 
 In this example, you can learn how to customize **ColorPicker** control in a category Application. 
 
-{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img1.png" Caption="ColorPicker Control"%}
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img1.png" %}
 
 In the following sections you can learn, How to:
 
@@ -25,7 +21,7 @@ In the following sections you can learn, How to:
 * Initialize the other widgets
 * Add Value to ListBox Control
 
-### Create ColorPicker Control
+## Create ColorPicker Control
 
 Use the following steps to create the **ColorPicker** control.
 
@@ -60,7 +56,7 @@ Add the input element to render **ColorPicker** control.
 
 {% highlight html %}
 
-    <input type="text" id="CategoryColor" />
+<input type="text" id="CategoryColor" />
 
 {% endhighlight %}
 
@@ -81,14 +77,14 @@ Initialize **ColorPicker** element in **&lt;script&gt;** tag.
 
 Run the above code to render the following output.
 
-{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img2.png" Caption="Default Colorpicker Control"%}
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img2.png" %}
 
-### Initialize the other widgets
+## Initialize the other widgets
 
 To add the priority value to the **ListBox**, the text value is received from the input element and color for each priority is received by the **ColorPicker** control. To add each new priority value to the **ListBox** control click the **Add** button.
 
 You can refer the following link for more information on creation of **ListBox**.
-http://help.syncfusion.com
+[http://help.syncfusion.com](http://help.syncfusion.com)
 
 The following code example is used to create the Priority form using **ListBox** control and **ColorPicker** control.
 
@@ -97,10 +93,10 @@ The following code example is used to create the Priority form using **ListBox**
 {% highlight html %}
 
 
-<div class="content-container-fluid">
+<div class="priorityWrapper">
     <div class="row">
-        <div class="cols-sample-area">
-            <div class="frame">
+        <div class="element-area">
+            <div class="frameWrapper">
                 <div id="control">
                     <ul id="selectcheck">
                         <li><span class="color high"></span>High</li>
@@ -109,32 +105,31 @@ The following code example is used to create the Priority form using **ListBox**
                     </ul>
                 </div>
             </div>
-        </div>
-        <div id="Properties">
-            <table class="prop-grid">
-                <tr class="row">
-                    <td class="column">
-                        Name
-                    </td>
-                    <td class="column">
-                        <input type="text" id="categoryName" />
-                    </td>
-                </tr>
-                <tr class="row">
-                    <td class="column">
-                        Color
-                    </td>
-                    <td class="column">
-                        <!--Colorpicker element-->
-                        <input type="text" id="CategoryColor" />
-                    </td>
-                    <td class="column">
-                        <!--Add button for add the new category-->
-                        <input type="button" class="e-btn e-select" id="AddCategory" />
-                    </td>
-                </tr>
-                <tr class="row"></tr>
-            </table>
+
+            <div id="Properties">
+                <table class="prop-grid">
+                    <tr class="row">
+                        <td class="column">Name
+                        </td>
+                        <td class="column">
+                            <input type="text" id="categoryName" />
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="column">Color
+                        </td>
+                        <td class="column">
+                            <!--Colorpicker element-->
+                            <input type="text" id="CategoryColor" />
+                        </td>
+                        <td class="column">
+                            <!--Add button for add the new category-->
+                            <input type="button" class="e-btn e-select" id="AddCategory" />
+                        </td>
+                    </tr>
+                    <tr class="row"></tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -172,11 +167,22 @@ Add the following style section to align form fields.
 {% highlight css %}
 
 <style>
-    .content-container-fluid > .row {
-        width: 410px;
+    
+    .row .element-area {
+        height: 270px;
+        width: 415px;
+    }
+
+    .priorityWrapper > .row {
+        width: 415px;
         border: 1px solid #bbbcbb;
         padding: 16px;
-        height: 272px;
+        height: 275px;
+        background-color: #fff;
+    }
+
+    .frameWrapper {
+        float: left;
     }
 
     .color.high {
@@ -191,11 +197,11 @@ Add the following style section to align form fields.
         background-color: blue;
     }
 
-    .cols-sample-area {
+    .element-area {
         width: 205px;
     }
 
-    .cols-sample-area, #Properties {
+    .element-area, #Properties {
         display: inline-block;
         float: left;
     }
@@ -215,6 +221,11 @@ Add the following style section to align form fields.
         padding: 10px 0px 5px 0px;
     }
 
+    #Properties {
+        margin-left: 20px;
+        width: 192px;
+    }
+
     .color {
         width: 13px;
         height: 13px;
@@ -232,9 +243,9 @@ Add the following style section to align form fields.
 
 Run the above code to render the following output.
 
-{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img3.png" Caption="Color Picker control"%}
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img3.png" %}
 
-### Add value with Selected Color 
+## Add value with Selected Color 
 
 You can add the value to **ListBox** with selected color by performing the button click event. The following script section defines the click event for the button element.
 
@@ -265,5 +276,5 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
 
 The following screenshot illustrates the resultant output after you click **Add** button.
 
-{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img4.png" Caption="Value from Color Picker control"%}
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img4.png" %}
 

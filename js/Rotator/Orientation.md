@@ -27,10 +27,10 @@ This property sets the **Rotator** in **horizontal** **orientation**. You can re
 
   {% highlight js %}
 
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: ej.Orientation.Horizontal });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: ej.Orientation.Horizontal });
+    });
  
   {% endhighlight %}
   
@@ -39,10 +39,10 @@ This property sets the **Rotator** in **horizontal** **orientation**. You can re
 
   
   	
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: "Horizontal" });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: "Horizontal" });
+    });
 	
 
 
@@ -63,10 +63,10 @@ This property sets the **Rotator** in **vertical** **orientation**. You can refe
 
   	
 
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: ej.Orientation.Vertical });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: ej.Orientation.Vertical });
+    });
 	
 
   {% endhighlight %}
@@ -76,10 +76,10 @@ This property sets the **Rotator** in **vertical** **orientation**. You can refe
 
   
 
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: "Vertical" });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ slideWidth: 500, orientation: "Vertical" });
+    });
 	
 
   {% endhighlight %}

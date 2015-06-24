@@ -17,7 +17,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 {% highlight html %}
 
-    <input type="checkbox" id="toggle_rtl" />
+<input type="checkbox" id="toggle_rtl" />
 
 {% endhighlight %}
 
@@ -48,6 +48,6 @@ Output of above steps
 
 
 
-{% include image.html url="/js/ToggleButton/RTL-support_images/RTL-support_img1.png" Caption="Toggle button with RTL support"%}
+{% include image.html url="/js/ToggleButton/RTL-support_images/RTL-support_img1.png" %}
 
 

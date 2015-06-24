@@ -20,7 +20,7 @@ Keyboard Shortcuts
 <th>Shortcut Key</th><th>Description</th></tr>
 <tr>
 <td>
-<a href=http://en.wikipedia.org/wiki/Access_key>Access key</a><b> + j</b></td><td>
+<a href="http://en.wikipedia.org/wiki/Access_key">Access key</a><b> + j</b></td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -63,7 +63,7 @@ Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access
 
 
 
-{% include image.html url="/js/NumericTextBox/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" Caption="NumericTextBox focused with keyboard shortcut"%}
+{% include image.html url="/js/NumericTextBox/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
 
 
 

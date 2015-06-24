@@ -28,27 +28,23 @@ The following steps explain you how to get the **Localization**.
 In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
 
-  {% highlight html %}
+{% highlight html %}
 
-      <input id="datepicker" type="text" />
+<input id="datepicker" type="text" />
       
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight js %}
+{% highlight js %}
 
+    // Add the code to render the Localization  
+    $(function() {
+       $("#datepicker").ejDatePicker({
+          locale: "fr-FR",
+          buttonText: "aujourd'hui"
+       });
+    });
 
-        // Add the code to render the Localization
-        $(function () {
-            $("#datepicker").ejDatePicker({
-                locale: "fr-FR",
-                buttonText: "aujourd'hui"
-            });
-
-        });
-
-
-
-  {% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -56,5 +52,5 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Localization_images/Localization_img1.png" Caption="Localization Support in DatePicker"%}
+{% include image.html url="/js/DatePicker/Localization_images/Localization_img1.png"%}
 

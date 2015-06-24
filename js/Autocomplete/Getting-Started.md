@@ -9,19 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create an **AutoComplete** in your application with **JavaScript**.
+This section explains briefly about how to create an AutoComplete in your application with JavaScript and helps you to configure the AutoComplete control in your application and also helps you to learn on how to pass the required data to it and to customize its various options according to your requirements. 
 
-## Create your first AutoComplete in JavaScript
+The following screenshot illustrates the AutoComplete control that searches the list of components available in the database. 
 
-This section helps you to configure the **AutoComplete** control in your application and also helps you to learn on how to pass the required data to it and to customize its various options according to your requirements. 
+{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img1.png"%}
 
-The following screenshot illustrates the **AutoComplete** control that searches the list of components available in the database. 
+## Create an AutoComplete
 
-{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img1.png" Caption="Component Search textbox"%}
-
-### Create an AutoComplete
-
- Create an HTML file and add the following references to the required libraries.
+ Create an HTML file and add the following references.
 
 {% highlight html %}
 
@@ -45,13 +41,14 @@ The following screenshot illustrates the **AutoComplete** control that searches 
 
 
 
- Add a **&lt;div&gt;** element that acts as a container for AutoComplete widget.
+ Add a **&lt;input&gt;** element that acts as a container for AutoComplete widget.
 
 {% highlight html %}
 
-     Select a component:
-
-       <input type="text" id="autocomplete"/>
+<div>Search customers</div>
+<div class="control">
+   <input type="text" id="customerList" />
+</div>
 
 {% endhighlight %}
 
@@ -62,9 +59,9 @@ The following screenshot illustrates the **AutoComplete** control that searches 
 {% highlight js %}
 
     //Simple Autocomplete creation
-        $(function () {
-            $("#autocomplete").ejAutocomplete();
-        });
+    $(function () {
+        $("#customerList").ejAutocomplete();
+    });
 
 {% endhighlight %}
 
@@ -72,23 +69,23 @@ The following screenshot illustrates the **AutoComplete** control that searches 
 
  Execute the above code to create the AutoComplete textbox as shown in the following screen shot.
 
-{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img2.png" Caption="Empty AutoComplete textbox"%}
+{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img2.png"%}
 
-### Populate Data to AutoComplete
+## Populate Data to AutoComplete
 
-The data provided to the **AutoComplete** can customize the list of data either locally or remotely.  
+The data provided to the AutoComplete can customize the list of data either locally or remotely.  
 
-#### Remote Data Binding
+### Remote Data Binding
 
-You can assign the required data from the remote **URL** as a variable **DataManager** using DataManager, to the **DataSource** property. You can generate a query to get the required data from the remote file using **Query()**, then assign it to the query property of AutoComplete as shown in the following code example.
+You can assign the required data from the remote URL as a variable **DataManager** using DataManager, to the **DataSource** property. You can generate a query to get the required data from the remote file using **Query()**, then assign it to the query property of AutoComplete as shown in the following code example.
 
 {% highlight js %}
   
-        var dataManger = ej.DataManager({
-            url: "http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"
-        });
-        // Query creation
-          var query = ej.Query().from("ComponentLists").select("ComponentId", "ComponentName");
+            var dataManger = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+            // Query creation
+            var query = ej.Query().from("Suppliers").select("SupplierID", "ContactName");
 
 {% endhighlight %}
 
@@ -96,17 +93,13 @@ You can assign the **DataSource** property with the required values to bind the 
 
 {% highlight js %}
 
-    $(function () {
-      $('#autocomplete').ejAutocomplete({               
+    $('#customerList').ejAutocomplete({
         dataSource: dataManger,
         query: query,
-        fields: { 
-          text: "ComponentName", // Content to be displayed in list
-          key: "ComponentId"// keyvalue in the datasource to filter data
-        },
-        width: "500"
-     });
-});
+        fields: { text: "ContactName", key: "SupplierID" },
+        filterType: ej.filterType.StartsWith,
+        width: 500
+    });
 
 {% endhighlight %}
 
@@ -114,7 +107,7 @@ You can assign the **DataSource** property with the required values to bind the 
 
 You can also set some common customization changes to the **AutoComplete** textbox like enabling multiple-selection, highlight search and add dropdown icon in order to get the desired result. 
 
-### Configure Visual Mode with filter option
+## Configure Visual Mode with filter option
 
 
 
@@ -122,45 +115,34 @@ By default, the AutoComplete is rendered with single value selection that can be
 
 {% highlight js %}
 
-        $(function () {
-          $("#autocomplete").ejAutocomplete({
-           dataSource: dataManger ,
-           query: query,
-           fields: { 
-             text: "ComponentName", 
-             key: "ComponentId"
-           },
-           multiSelectMode: ej.MultiSelectMode.VisualMode,
-           filterType: "startswith",
-           height: "30",
-           width: "500"
-         });
-     });
+    $('#customerList').ejAutocomplete({
+        dataSource: dataManger,
+        query: query,
+        fields: { text: "ContactName", key: "SupplierID" },
+        filterType: ej.filterType.StartsWith,
+        width: 500,
+        multiSelectMode:ej.MultiSelectMode.VisualMode
+    });
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img3.png" Caption="Filter Option"%}
+{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img3.png"%}
 
-### Configure Highlight Search and Rounded corners
+## Configure Highlight Search and Rounded corners
 
 {% highlight js %}
 
-     $(function () {
-         $("#autocomplete").ejAutocomplete({
-             dataSource: dataManger ,
-             query: query,
-             fields: { 
-               text: "ComponentName", 
-               key: "ComponentId"
-             },
-             highlightSearch: true,
-             showRoundedCorner: true , 
-             height: "30",
-             width: "500",
-            });
-       });
+        $('#customerList').ejAutocomplete({
+            dataSource: dataManger,
+            query: query,
+            fields: { text: "ContactName", key: "SupplierID" },
+            filterType: ej.filterType.StartsWith,
+            width: 500,
+            highlightSearch: true,
+            showRoundedCorner: true,
+        });
 
 {% endhighlight %}
 
@@ -168,15 +150,15 @@ By default, the AutoComplete is rendered with single value selection that can be
 
 When you set the **highlightSearch** property to **“True”**, the characters typed in textbox gets highlighted in the suggestion list. To display textbox reforms from sharp ends to rounded ends, you can enable the **showRoundedCorner** property.
 
-{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img4.png" Caption="AutoComplete textbox with highlight search enabled"%}
+{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img4.png"%}
 
-### Configure DropDown button
+## Configure DropDown button
 
 To enable the **Popup** button, you can set **showPopupButton** property to **“True”** that displays the **DropDown** icon at the end of text box. By default, search icon replaces other icons and so you need to override the **CSS** classes as follows. The source image is taken from the installation location.
 
-[Installed Drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JS \Samples\ web\themes\images\icon-down.png 
+**[Installed Drive]**:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JS \Samples\ web\themes\images\icon-down.png 
 
- **Note:** X.X.X.X represents the Essential Studio version number that you are using currently.
+> **Note:** X.X.X.X represents the Essential Studio version number that you are using currently.
 
 Copy the “**icon-down.png**” from the above mentioned location and paste it in the folder location of your **HTML** sample page.
 
@@ -196,26 +178,20 @@ Now you can override the search icon class and replace the content to **DropDown
 
 {% highlight js %}
 
-     $(function () {
-          $("#autocomplete").ejAutocomplete({
-             dataSource: dataManger ,
-             query: query,
-             fields: { 
-               text: "ComponentName", 
-               key: "ComponentId"
-             },
-             multiSelectMode: ej.MultiSelectMode.VisualMode,
-             showPopupButton: true,
-             highlightSearch: true,
-             showRoundedCorner: true ,
-             height: "30",
-             width: "500"
-            });
-     });
+    $('#customerList').ejAutocomplete({
+        dataSource: dataManger,
+        query: query,
+        fields: { text: "ContactName", key: "SupplierID" },
+        filterType: ej.filterType.StartsWith,
+        width: 200,
+        highlightSearch: true,
+        showRoundedCorner: true,
+        multiSelectMode: ej.MultiSelectMode.VisualMode
+    });
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img5.png" Caption="AutoComplete textbox with Popup icon"%}
+{% include image.html url="/js/Autocomplete/Getting-Started_images/Getting-Started_img6.png"%}
 

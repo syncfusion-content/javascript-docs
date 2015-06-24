@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The **Essential JavaScript****Rotator** control displays a set of slides. Each slide may contain images or images with content, or content with user-defined transition between them. It supports Data Binding, Thumbnail, Pager, dynamic number of slide move options, and all custom animations. It supports all types of image formats (JPEG, GIF, and so on).
+The **Essential JavaScript Rotator** control displays a set of slides. Each slide may contain images or images with content, or content with user-defined transition between them. It supports Data Binding, Thumbnail, Pager, dynamic number of slide move options, and all custom animations. It supports all types of image formats (JPEG, GIF, and so on).
 
 **Key Features**
 

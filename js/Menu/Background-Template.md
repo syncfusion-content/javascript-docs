@@ -124,71 +124,71 @@ Add the following code in your style section.
 {% highlight css %}
 
 
-    <style type="text/css">
-        .temp {
-            height: 237px;
-            width: 375px;
-            font-family: segoe UI;
-            cursor: default;
-            background-size: 100% 100%;
-        }
+<style type="text/css">
+    .temp {
+        height: 237px;
+        width: 375px;
+        font-family: segoe UI;
+        cursor: default;
+        background-size: 100% 100%;
+    }
 
-        .temp span {
-            color: red;
-            float: left;
-            font-size: 20px;
-            left: 20px;
-            position: relative;
-            top: 25px;
-            width: 100px;
-        }
+    .temp span {
+        color: red;
+        float: left;
+        font-size: 20px;
+        left: 20px;
+        position: relative;
+        top: 25px;
+        width: 100px;
+    }
 
-        .temp ul {
-            float: left;
-            font-size: 14px;
-            left: -79px;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            top: 50px;
-            width: 128px;
-        }
+    .temp ul {
+        float: left;
+        font-size: 14px;
+        left: -79px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 50px;
+        width: 128px;
+    }
 
-        .temp ul li {
-            font-size: 13px;
-        }
+    .temp ul li {
+        font-size: 13px;
+    }
 
-        .temp ul li a {
-            text-decoration: underline;
-            cursor: pointer;
-            color: #000;
-        }
+    .temp ul li a {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #000;
+    }
 
-        .temp1 {
-            background-image: url("1.jpg");
-        }
+    .temp1 {
+        background-image: url("1.jpg");
+    }
 
-        .temp2 {
-            background-image: url("2.jpg");
-        }
+    .temp2 {
+        background-image: url("2.jpg");
+    }
 
-        .temp3 {
-            background-image: url("3.jpg");
-        }
+    .temp3 {
+        background-image: url("3.jpg");
+    }
 
-        .temp4 {
-            background-image: url("4.jpg");
-        }
+    .temp4 {
+        background-image: url("4.jpg");
+    }
 
-        .e-menu.e-horizontal li > ul, .e-menu.e-horizontal li > ul > li:hover {
-            background-color: #fff;
-        }
+    .e-menu.e-horizontal li > ul, .e-menu.e-horizontal li > ul > li:hover {
+        background-color: #fff;
+    }
 
-        .e-menu.e-horizontal > li > ul:after {
-            border-color: transparent transparent #fff;
-        }
-    </style>
+    .e-menu.e-horizontal > li > ul:after {
+        border-color: transparent transparent #fff;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -197,7 +197,7 @@ Add the following code in your style section.
 
 Execute the above code to render the following output.                       
 
-{% include image.html url="/js/Menu/Background-Template_images/Background-Template_img1.png" Caption="Template"%}
+{% include image.html url="/js/Menu/Background-Template_images/Background-Template_img1.png" %}
 
 
 

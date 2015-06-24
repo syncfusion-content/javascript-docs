@@ -256,15 +256,15 @@ Execute the above code to render the following output.
 
 ## Knockout JS
 
-* Knockout support allows you to bind the html elements against any of the available data models.Two types of knockout binding is supported as of angular,
+Knockout support allows you to bind the html elements against any of the available data models.Two types of knockout binding is supported as of angular,
 
  * one-way binding
 
  * two-way binding
 
-* **One way binding** refers to the process of applying observable values to all the available properties of the **Linear Gauge** control, but the changes made in it does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the **Linear Gauge** control.
+**One way binding** refers to the process of applying observable values to all the available properties of the **Linear Gauge** control, but the changes made in it does not reflect and trigger in turn to the observable collection. This kind of binding applies to all the properties of the **Linear Gauge** control.
 
-* **Two-way binding** supports both the processes – it applies the observable values to the **Linear Gauge** properties as well as the changes made in it is also reflected back and triggered within the observable collections. Only few of the schedule properties support two-way binding and they are as follows
+**Two-way binding** supports both the processes – it applies the observable values to the **Linear Gauge** properties as well as the changes made in it is also reflected back and triggered within the observable collections. Only few of the schedule properties support two-way binding and they are as follows
 
  * value
 

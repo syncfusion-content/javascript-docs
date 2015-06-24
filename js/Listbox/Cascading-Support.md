@@ -9,41 +9,38 @@ documentation: ug
 
 # Cascading Support 
 
-Using cascade option, you can create a behavior of cascade between **ListBox** controls. For this, create a database with single field that is common between two **ListBox** data fields and then mention that column id in value field. With this, you can set second **ListBox** id in **cascadeTo** property in first **ListBox**. 
+Using cascade option, you can create a behaviour of cascade between **ListBox** controls. For this, create a database with single field that is common between two **ListBox** data fields and then mention that column id in value field. With this, you can set second **ListBox** id in **cascadeTo** property in first **ListBox**. 
 
 In the following code example, in the first and second ListBox, "categoryid" is the common field. 
 
 The "categoryid" value of the selected item in the First **Listbox** that matches with "categoryid" value in the second Listbox, is retreived and the item is loaded.
 
-
-
-> **Note**: In case the second ListBox is to be disabled, until the first one is selected, you can set enable property as false in second ListBox that enables automatically once the value is selected in first one.
-
+> **Note:** In case the second ListBox is to be disabled, until the first one is selected, you can set enable property as false in second ListBox that enables automatically once the value is selected in first one.
 
 You can add any number of cascading **ListBoxes**. For this, create a Datasource with single field value that is common between the two consecutive cascading ListBoxes and cascading is achieved based on that common field.”  
 
-The following steps explains you the behavior of cascade **ListBox**. 
+The following steps explains you the behaviour of cascade **ListBox**. 
 
 In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widget.
 
 {% highlight html %}
 
-    <div id="control">
-        <div class="controlitem">
-            <h6>Cascading Listboxes</h6>
+<div id="control">
+    <div class="controlitem">
+        <h6>Cascading Listboxes</h6>
 
-            <ul id="groupsList"></ul>
-        </div>
-        <div class="controlitem">
-            <ul id="subcategoryList"></ul>
-        </div>
-        <div class="controlitem">
-            <ul id="productList"></ul>
-        </div>
-        <div class="controlitem">
-            <ul id="subproductList"></ul>
-        </div>
+        <ul id="groupsList"></ul>
     </div>
+    <div class="controlitem">
+        <ul id="subcategoryList"></ul>
+    </div>
+    <div class="controlitem">
+        <ul id="productList"></ul>
+    </div>
+    <div class="controlitem">
+        <ul id="subproductList"></ul>
+    </div>
+</div>
     
 {% endhighlight %}
 
@@ -56,7 +53,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
         var groups = [
         { categoryid: 'a', text: "Clothing" },
         { categoryid: 'b', text: "Furniture" }]
-
+    
         //first level child
         var category = [{ subcategoryid: 11, categoryid: 'a', text: "Men" },
         { subcategoryid: 12, categoryid: 'a', text: "Women" },
@@ -64,7 +61,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
         { subcategoryid: 14, categoryid: 'b', text: "Bedding" },
         ]
         //second level child
-
+    
         var subcategory = [{ productid: 101, subcategoryid: 11, text: "men shirts" },
         { productid: 102, subcategoryid: 11, text: "men pants" },
         { productid: 103, subcategoryid: 12, text: "Women shirts" },
@@ -74,7 +71,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
         { productid: 107, subcategoryid: 14, text: "bedsheets" },
         { productid: 108, subcategoryid: 14, text: "pillows" },
         ]
-
+    
         //third level child
         var subproduct = [{ productid: 101, text: "red men shirts" },
         { productid: 101, text: "blue men shirts" },
@@ -104,7 +101,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
             enabled: false,
             cascadeTo: 'productList'
         });
-
+    
         $('#productList').ejListBox({
             dataSource: subcategory,
             fields: { value: "productid" },
@@ -138,5 +135,5 @@ Configure the styles as follows.
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Cascading-Support_images/Cascading-Support_img1.png" Caption="ListBox with cascade property"%}
+{% include image.html url="/js/ListBox/Cascading-Support_images/Cascading-Support_img1.png" %}
 

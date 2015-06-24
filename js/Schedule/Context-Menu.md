@@ -9,27 +9,27 @@ documentation: ug
 
 # Context Menu
 
-* **Schedule** control is added with the context menu options that opens when you right-click over the cells or appointments. In addition to the default menu items available, it allows you to add the custom menu items and also the sub menu-items as per your requirement.
+**Schedule** control is added with the context menu options that opens when you right-click over the cells or appointments. In addition to the default menu items available, it allows you to add the custom menu items and also the sub menu-items as per your requirement.
 
 **contextMenuSettings**
 
-* It is a collection that holds the menu items data.
+It is a collection that holds the menu items data.
 
 **enable**
 
-* It specifies whether to enable/disable the Context menu options.
+It specifies whether to enable/disable the Context menu options.
 
 **menuItems**
 
-* It holds the appointment and cell related menu and custom-menu options.
+It holds the appointment and cell related menu and custom-menu options.
 
 **appointment**
 
-* This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the appointments. It can also include custom-menu items.
+This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the appointments. It can also include custom-menu items.
 
 **cells**
 
-* This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the **Schedule** cells. It  also include custom-menu items.
+This collection accepts the id, text and parent Id of the menu items that are to be displayed when you right-click the **Schedule** cells. It  also include custom-menu items.
 
 **Appointment Menu Items**
 
@@ -150,7 +150,7 @@ You can refer the following code example to render the categorize options in the
 
 
 
-* Execute the above code to render the following output with categorized appointments. Also when you right click “Appointment”, the context menu with categorize option is displayed as follows.
+Execute the above code to render the following output with categorized appointments. Also when you right click “Appointment”, the context menu with categorize option is displayed as follows.
 
 {% include image.html url="/js/Schedule/Context-Menu_images/Context-Menu_img2.png" Caption=""%}
 

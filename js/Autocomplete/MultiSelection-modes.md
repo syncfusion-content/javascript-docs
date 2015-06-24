@@ -47,22 +47,22 @@ The following steps explain the configuration of the **multiSelectMode** for an 
 {% highlight js %}
 
 
-           $("#delimit").ejAutocomplete({
-                width: 225,
-                multiSelectMode: ej.MultiSelectMode.Delimiter,
-                delimiterChar:";",
-                dataSource: carList
-            });
-            $("#none").ejAutocomplete({
-                width: 225,
-                multiSelectMode: ej.MultiSelectMode.None,
-                dataSource: carList
-            });
-            $("#visualmode").ejAutocomplete({
-                width: 225,
-                multiSelectMode: ej.MultiSelectMode.VisualMode,
-                dataSource: carList
-            }); 
+    $("#delimit").ejAutocomplete({
+        width: 225,
+        multiSelectMode: ej.MultiSelectMode.Delimiter,
+        delimiterChar: ";",
+        dataSource: carList
+    });
+    $("#none").ejAutocomplete({
+        width: 225,
+        multiSelectMode: ej.MultiSelectMode.None,
+        dataSource: carList
+    });
+    $("#visualmode").ejAutocomplete({
+        width: 225,
+        multiSelectMode: ej.MultiSelectMode.VisualMode,
+        dataSource: carList
+    });
 
 
 {% endhighlight %}
@@ -71,5 +71,5 @@ The following steps explain the configuration of the **multiSelectMode** for an 
 
 The following image is the output for **AutoComplete** control with configured multiple selection.
 
-{% include image.html url="/js/Autocomplete/MultiSelection-modes_images/MultiSelection-modes_img1.png" Caption="AutoComplete with MultiSelection"%}
+{% include image.html url="/js/Autocomplete/MultiSelection-modes_images/MultiSelection-modes_img1.png"%}
 

@@ -9,17 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Rating** control in your application with **JavaScript**. 
-
-## Create your first Rating widget in JavaScript
-
-**Essential JavaScript** **Rating** helps to select the number of stars that represent Rating. Here, you can learn how to create **Rating** control in a real-time movie download application and also learn how to rate the application.
+This section explains briefly about how to create a **Rating** control in your application with **JavaScript**. **Essential JavaScript** **Rating** helps to select the number of stars that represent Rating. Here, you can learn how to create **Rating** control in a real-time movie download application and also learn how to rate the application.
 
 The following screenshot illustrates the functionality of a Rating widget with a Rating range of 0 to 5. 
 
-{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img1.png" Caption="Rating"%}
+{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img1.png" %}
 
-**Create a Rating** **Widget**
+##Create a Rating Widget
 
 **Essential JavaScript Rating** widget is provided with built-in features such as precision, orientation and flexible API’s. You can create the **Rating** widget by using input textbox element as follows:
 
@@ -29,24 +25,20 @@ The following screenshot illustrates the functionality of a Rating widget with a
 
 <!doctype html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"charset="utf-8"  />
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"charset="utf-8"  />
       <!-- Style sheet for default theme (flat azure) -->
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
-
-    <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-    <!--Add custom scripts here -->
-</head>
-<body>
-   <! -- add rating element here -->
-</body>
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+      <!--Scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+      <script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <!--Add custom scripts here -->
+   </head>
+   <body>
+      <! -- add rating element here -->
+   </body>
 </html>
 
 
@@ -148,13 +140,18 @@ The following screenshot illustrates the functionality of a Rating widget with a
 
 {% highlight js %}
 
-
-        $(function () {
-            $("#moviesTab").ejTab();
-            $("#mosRating").ejRating({ value: 2 });
-            $("#wwzRating").ejRating({ value: 4 });
-            $("#univRating").ejRating({ value: 4 });
+    $(function() {
+        $("#moviesTab").ejTab();
+        $("#mosRating").ejRating({
+            value: 2
         });
+        $("#wwzRating").ejRating({
+            value: 4
+        });
+        $("#univRating").ejRating({
+            value: 4
+        });
+    });
 
 {% endhighlight %}
 
@@ -163,18 +160,16 @@ The following screenshot illustrates the functionality of a Rating widget with a
 
 {% highlight css %}
 
-    <style type="text/css" class="cssStyles">
-        .movies-img
-        {
-            width: 125px;
-        }
-
-        .movie-header
-        {
-            font-size: 20px;
-            font-weight: 600;
-        }
-    </style>
+<style type="text/css" class="cssStyles">
+    .movies-img {
+        width: 125px;
+    }
+    
+    .movie-header {
+        font-size: 20px;
+        font-weight: 600;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -183,9 +178,9 @@ The following screenshot illustrates the functionality of a Rating widget with a
 
  The following screenshot displays a Rating widget.
 
-{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img2.png" Caption="Rating"%}
+{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img2.png" %}
 
-**Set the Min and Max Value**
+##Set the Min and Max Value
 
 In a real-time scenario, you can extend the range by using the properties **minValue** and **maxValue** in the **Rating** widget. 
 
@@ -225,13 +220,11 @@ In a real-time scenario, you can extend the range by using the properties **minV
 
 {% endhighlight %}
 
-
-
 The above code example displays the following output.
 
-{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img3.png" Caption="Setting Min and Max Values"%}
+{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img3.png"%}
 
-**Set Precision**
+##Set Precision
 
 In a real-time movie **Rating** scenario, you can set precision in between two whole numbers, such as 2.5 or 3.7 and it is done using the property **precision** by changing the value to **ej.Rating.Precision.Half** or **ej.Rating.Precision.Exact.**
 
@@ -291,7 +284,7 @@ In a real-time movie **Rating** scenario, you can set precision in between two w
 
 The above code example displays the following output.
 
-{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img4.jpeg" Caption="Rating with accurate values"%}
+{% include image.html url="/js/Rating/Getting-Started_images/Getting-Started_img4.jpeg"%}
 
 You can also add additional functionalities such as orientation, event tracer and API’s to the **Rating**. 
 

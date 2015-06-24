@@ -19,7 +19,7 @@ The following steps explain how you can enable the **right-to-left** property fo
 
 {% highlight html %}
 
-         <input type="text" id="autocomplete" />
+<input type="text" id="autocomplete" />
 
 {% endhighlight %}
 
@@ -29,19 +29,19 @@ The following steps explain how you can enable the **right-to-left** property fo
 {% highlight js %}
 
 
-            $('#autocomplete').ejAutocomplete({
-                dataSource: countries,
-                width: 205,
-                popupHeight: "80px",
-                enableRTL: true,
-                template: '<div class="flag ${sprite}"> </div>' +
-                        '<div class="txt"> ${text} </div>'
-            });
+    $('#autocomplete').ejAutocomplete({
+        dataSource: countries,
+        width: 205,
+        popupHeight: "80px",
+        enableRTL: true,
+        template: '<div class="flag ${sprite}"> </div>' +
+            '<div class="txt"> ${text} </div>'
+    });
 
 {% endhighlight %}
 
 
 The following image is the output for AutoComplete when **enableRTL** is set to “**True”**.
 
-{% include image.html url="/js/Autocomplete/RTL-support_images/RTL-support_img1.png" Caption="AutoComplete template with RTL support"%}
+{% include image.html url="/js/Autocomplete/RTL-support_images/RTL-support_img1.png"%}
 

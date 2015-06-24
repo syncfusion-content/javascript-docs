@@ -59,13 +59,13 @@ When you want to browse the file within the fileSize, you can browse and upload 
 
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img1.png" Caption="Maximum upload size within the fileSize property"%}
+{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img1.png" %}
 
 When you try to browse the file with exceeded fileSize, we cannot browse and upload the files.
 
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img2.png" Caption="Maximum Upload Size with exceeded fileSize property"%}
+{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img2.png" %}
 
 ## Maximum File Upload Size in IIS
 
@@ -88,7 +88,7 @@ Maximum request size</th><th>
 Details</th></tr>
 <tr>
 <td>
-<a href=https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx>maxRequestLength</a></td><td>
+<a href="https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx">maxRequestLength</a></td><td>
 Property</td><td>
 28.6 MB</td><td>
 Maximum request sizesupported by ASP.NET.</td></tr>
@@ -102,7 +102,7 @@ Add the following code to your **web.config** file.
 [web.config]
 <configuration>
     <system.web>
-        <httpruntime maxRequestLength="102400" /> //kilobytes
+        <httpruntime maxRequestLength="102400"/> //kilobytes 
     </system.web>
 </configuration>
 
@@ -115,7 +115,7 @@ Add the following code to your **web.config** file.
 
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img3.png" Caption="Maximum file upload using maxRequestLength"%}
+{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img3.png" %}
 
 ### How to upload the files above 28.6 MB?
 
@@ -132,7 +132,7 @@ Default value</th><th>
 Details</th></tr>
 <tr>
 <td>
-<a href=https://msdn.microsoft.com/en-us/library/ms689462(v=vs.90).aspx>maxAllowedContentLength</a></td><td>
+<a href="https://msdn.microsoft.com/en-us/library/ms689462(v=vs.90).aspx">maxAllowedContentLength</a></td><td>
 Property</td><td>
 28.6 MB</td><td>
 maxAllowedContentLength specifies the maximum length of content in a request supported by IIS.</td></tr>
@@ -160,7 +160,7 @@ You can add the following code to your **web.config** file in order to set that 
 > **Note**: maxAllowedContentLength is measured in bytes.
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img4.png" Caption="Maximum file upload using maxAllowedContentLength"%}
+{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img4.png" %}
                        
 
 > * When you configure both maxAllowedContentLength, maxRequestLength attributes, then maxAllowedContentLength is considered for execution.
@@ -169,5 +169,5 @@ You can add the following code to your **web.config** file in order to set that 
 > * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img5.png" Caption="Maximum filesize for Uploadbox with multiple file upload"%}
+{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img5.png" %}
 

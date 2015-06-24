@@ -112,10 +112,10 @@ Add the following code for Keyboard navigation in your **Menu** control.
 
 
         // Add the following code in your script section.
-        jQuery(function ($) {
+        jQuery(function($) {
             $("#menucontrol").ejMenu();
             //Control focus key
-            $(document).on("keydown", function (e) {
+            $(document).on("keydown", function(e) {
                 if (e.altKey && e.keyCode === 74) { // j- key code.
                     $("#menucontrol").focus();
                 }
@@ -141,12 +141,12 @@ Add the following code in your style section.
 
 Following screenshot displays the output of the above code. 
 
-{% include image.html url="/js/Menu/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" Caption="Accessibility"%}
+{% include image.html url="/js/Menu/Keyboard-Navigation_images/Keyboard-Navigation_img1.png"%}
 
 
 When you press **alt+j,** the first item of the **Menu** control only gets focused as displayed in the following screenshot.
 
-{% include image.html url="/js/Menu/Keyboard-Navigation_images/Keyboard-Navigation_img2.png" Caption="Keyboard Navigation"%}
+{% include image.html url="/js/Menu/Keyboard-Navigation_images/Keyboard-Navigation_img2.png"%}
 
 
 Similarly you can access the **Menu** control using keyboard itself.

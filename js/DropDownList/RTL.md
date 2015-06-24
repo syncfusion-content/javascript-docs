@@ -11,7 +11,7 @@ documentation: ug
 
 This feature supports to change the left-to-right alignment of the **Dropdown** widget to right-to-left (**RTL**). 
 
-**Defining the RTL property**
+## Defining the RTL property
 
 The following steps explains you the configuration of **enableRTL** properties in **DropdownList**.
 
@@ -19,26 +19,25 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 
 {% highlight html %}
 
-    <input type="text" id="dropdownlist" />
+<input type="text" id="dropdownlist" />
 
-        <div id="list">
-            <ul>
-                <li>Art</li>
-                <li>Architecture</li>
-                <li>Biography</li>
-                <li>comics</li>
-                <li>Sports</li>
-                <li>Science</li>
-            </ul>
-
-        </div>
+<div id="list">
+    <ul>
+        <li>Art</li>
+        <li>Architecture</li>
+        <li>Biography</li>
+        <li>comics</li>
+        <li>Sports</li>
+        <li>Science</li>
+    </ul>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
     // Initialize the control in JavaScript
-   
+    
     $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
@@ -50,5 +49,4 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 
 Output of the above steps
 
-
-{% include image.html url="/js/DropDownList/RTL_images/RTL_img1.png" Caption="Dropdown with enableRTL property"%}
+{% include image.html url="/js/DropDownList/RTL_images/RTL_img1.png" %}

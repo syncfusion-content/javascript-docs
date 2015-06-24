@@ -26,7 +26,7 @@ The important property that makes an impact on shape colors is **autoFill**. Thi
 
 The above properties of **shapeSettings** are applied only when **autoFill** property value is false. By map, **autoFill** property value is false.
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -99,7 +99,7 @@ Gets or sets the start point and end point gradient colors to be applied for spe
 </table>
 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {
         $("#mapContainer").ejMap({
@@ -234,7 +234,7 @@ Here USA election data is considered as input datasource and stored in “electi
     
  {% endhighlight %}
  
- {% highlight html %}
+ {% highlight js %}
    
         jQuery(function($) {            
             $("#mapContainer").ejMap({                
@@ -274,7 +274,7 @@ Here USA election data is considered as input datasource and stored in “electi
 
 When **autoFill** property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function($) {
         $("#mapContainer").ejMap({
@@ -306,7 +306,7 @@ The **customPalette** property is used to set an array of colors to be auto fill
 
 This property is enabled only when **colorPalette** property value is set to “custompalette”.
 
-{% highlight html %}
+{% highlight js %}
 
 
     jQuery(function ($) {
@@ -337,7 +337,7 @@ This property is enabled only when **colorPalette** property value is set to “
 
 The tooltip is displayed only when you set showTooltip to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the valuePath and displays its content on hovering the corresponding shape. 
 
-{% highlight html %}
+{% highlight js %}
 
     jQuery(function ($) {	
         $("#mapContainer").ejMap({

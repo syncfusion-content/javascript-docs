@@ -21,13 +21,13 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
   {% highlight html %}
 
 
-    <div class="align">
-        <input type="checkbox" class="nodetext" id="checkbox_nonchecked" />
-        <label for="checkbox_nonchecked" class="clslab">Music</label>
-        <br />
-        <input type="checkbox" class="nodetext" id="checkbox_checked" />
-        <label for="checkbox_checked" class="clslab">Music</label>
-    </div>
+<div class="align">
+    <input type="checkbox" class="nodetext" id="checkbox_nonchecked" />
+    <label for="checkbox_nonchecked" class="clslab">Music</label>
+    <br />
+    <input type="checkbox" class="nodetext" id="checkbox_checked" />
+    <label for="checkbox_checked" class="clslab">Music</label>
+</div>
 
   {% endhighlight %}
   
@@ -48,7 +48,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img1.png" Caption="Checkbox in binary states"%}
+{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img1.png" %}
 
 
 ## Enable Tri-State
@@ -64,13 +64,13 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 
   {% highlight html %}
  
-    <div class="align">
-        <input type="checkbox" class="nodetext" id="checkbox_nonTriState" />
-        <label for="checkbox_nonTriState" class="clslab">Music</label>
-        <br />
-        <input type="checkbox" class="nodetext" id="checkbox_triState" />
-        <label for="checkbox_triState" class="clslab">Music</label>
-    </div>
+<div class="align">
+    <input type="checkbox" class="nodetext" id="checkbox_nonTriState" />
+    <label for="checkbox_nonTriState" class="clslab">Music</label>
+    <br />
+    <input type="checkbox" class="nodetext" id="checkbox_triState" />
+    <label for="checkbox_triState" class="clslab">Music</label>
+</div>
 
   {% endhighlight %}
 
@@ -89,7 +89,7 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img2.png" Caption="Checkbox with Non-Tri state and Tri-state"%}
+{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img2.png" %}
 
 
 
@@ -143,16 +143,16 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% highlight html %}
 
   
-    <div class="align">
-        <input type="checkbox" class="nodetext" id="check" />
-        <label for="check" class="clslab">Checked state</label>
-        <br />
-        <input type="checkbox" class="nodetext" id="uncheck" />
-        <label for="uncheck" class="clslab">Unchecked state</label>
-        <br />
-        <input type="checkbox" class="nodetext" id="indeterminate" />
-        <label for="indeterminate" class="clslab">Indeterminate state</label>
-    </div>
+<div class="align">
+    <input type="checkbox" class="nodetext" id="check" />
+    <label for="check" class="clslab">Checked state</label>
+    <br />
+    <input type="checkbox" class="nodetext" id="uncheck" />
+    <label for="uncheck" class="clslab">Unchecked state</label>
+    <br />
+    <input type="checkbox" class="nodetext" id="indeterminate" />
+    <label for="indeterminate" class="clslab">Indeterminate state</label>
+</div>
 
 
   {% endhighlight %}
@@ -175,7 +175,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img3.png" Caption="Checkbox in three different states"%}
+{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img3.png" %}
 
 
 
@@ -188,7 +188,6 @@ List of checkbox size:
 <table>
     <tr>
 <th>CheckBox size</th><th>Description</th></tr>
-<tr>
 <tr>
 <td>small</td><td>
 Creates checkbox with inbuilt small size height, width specified.</td></tr>
@@ -205,18 +204,18 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 
 
 
-  {% highlight html %}
+{% highlight html %}
   
-   <div class="align">
-        <input type="checkbox" class="nodetext" id="checkbox_small" />
-        <label for="checkbox_small" class="clslab">Small size</label>
-        <br />
-        <input type="checkbox" class="nodetext" id="checkbox_medium" />
-        <label for="checkbox_medium" class="clslab">Medium size</label>
-   </div>
+<div class="align">
+    <input type="checkbox" class="nodetext" id="checkbox_small" />
+    <label for="checkbox_small" class="clslab">Small size</label>
+    <br />
+    <input type="checkbox" class="nodetext" id="checkbox_medium" />
+    <label for="checkbox_medium" class="clslab">Medium size</label>
+</div>
 
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
   {% highlight js %}
@@ -233,7 +232,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img4.png" Caption="Checkbox in different sizes"%}
+{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img4.png" %}
 
 
 
@@ -250,9 +249,9 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% highlight html %}
 
   
-   <div class="align">
-        <input type="checkbox" class="nodetext" id="checkbox_text" />
-    </div>
+<div class="align">
+    <input type="checkbox" class="nodetext" id="checkbox_text" />
+</div>
 
 
   {% endhighlight %}
@@ -273,7 +272,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img5.png" Caption="Checkbox with text content"%}
+{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img5.png" %}
 
 
 
@@ -289,13 +288,13 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 
   {% highlight html %}
 
-  
-   <div class="align">
-        <input type="checkbox" class="nodetext" id="checkbox_normalCorner" />
-        <br />
-        <br />
-        <input type="checkbox" class="nodetext" id="checkbox_roundedCorner" />
-    </div>
+
+<div class="align">
+    <input type="checkbox" class="nodetext" id="checkbox_normalCorner" />
+    <br />
+    <br />
+    <input type="checkbox" class="nodetext" id="checkbox_roundedCorner" />
+</div>
 
 
   {% endhighlight %}
@@ -317,7 +316,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img6.png" Caption="Checkbox with non-rounded & rounded corner"%}
+{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img6.png" %}
 
 
 

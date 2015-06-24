@@ -13,7 +13,7 @@ documentation: ug
 
 **AngularJS** is an open-source web application framework. **AngularJS** extends HTML with new attributes. **AngularJS** is a JavaScript framework. It can be added to an **HTML** page with a **&lt;script&gt;** tag. **AngularJS** extends **HTML** attributes with **Directives**, and binds data to **HTML** with **Expressions**. The support is achieved by an integration JS library file. You can know more about the Angular support in our documentation. You can find the online documentation in the following link location. 
 
-http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm
+[http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm)
 
 Sometimes you need to use **DateTimePicker** value for sorting and retrieving the information from database. Consider you are going to sort the number of users registered in your site. Whenever you select the date and time from the **DateTimePicker** popup window the result of sorting should be changed based on date and timings. To achieve this, date and time value has to bind to the model while you change the value of date and time in **DateTimePicker** control. You can achieve data binding with lesser code by integrating the angular concept with your control.  
 
@@ -27,58 +27,54 @@ Add the following code in your **HTML** page.
   
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateTimeCtrl">
-<head>
-    <title>Essential Studio for JavaScript :  Angular</title>
-    <!-- style sheet for default theme(flat azure) -->
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <!--scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
-</head>
-<body ng-controller="DateTimePickerCtrl">
-    <table>
-        <th>
+   <head>
+      <title>Essential Studio for JavaScript :  Angular</title>
+      <!-- style sheet for default theme(flat azure) -->
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <!--scripts-->
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"></script>
+   </head>
+   <body ng-controller="DateTimePickerCtrl">
+      <table>
+         <th>
             <div id="control">
-                <input type="text" id="dateTime" ej-datetimepicker e-value="value" e-open='isOpen' e-close='isClose' e-change='isChange' />
+               <input type="text" id="dateTime" ej-datetimepicker e-value="value" e-width="width" e-open='isOpen' e-close='isClose' e-change='isChange' />
             </div>
-        </th>
-
-        <th>
+         </th>
+         <th>
             <div id="binding">
-                <input type="text" id="dateTime1" ej-datetimepicker e-value="value" />
+               <input type="text" id="dateTime1" ej-datetimepicker e-value="value" e-width="width" />
             </div>
-        </th>
-    </table>
-
-    <script type="text/javascript">
-
-        // Add the code in your script section to render DateTimePicker with Angular Binding
-
-        angular.module('DateTimeCtrl', ['ejangular'])
-        .controller('DateTimePickerCtrl', function ($scope) {
-            $scope.value = "9/17/2014 2:47 AM";
-        });
-
-    </script>
-    <style type="text/css" class="cssStyles">
-        #binding {
-            margin-left: 150px;
-        }
-    </style>
-</body>
+         </th>
+      </table>
+      <script type="text/javascript">
+         // Add the code in your script section to render DateTimePicker with Angular Binding
+         
+         angular.module('DateTimeCtrl', ['ejangular'])
+         .controller('DateTimePickerCtrl', function ($scope) {
+             $scope.value = "9/17/2014 2:47 AM";
+             $scope.width = "200px";
+         });
+         
+      </script>
+      <style type="text/css" class="cssStyles">
+         #binding {
+         margin-left: 150px;
+         }
+      </style>
+   </body>
 </html>
-
-
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/DateTimePicker/Integration_images/Integration_img1.png" Caption="Showcase of DateTimePicker with Angular Binding"%}
+{% include image.html url="/js/DateTimePicker/Integration_images/Integration_img1.png"%}
 
 ## Knockout Support
 
@@ -98,55 +94,52 @@ Add the following code in your **HTML** page.
    
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
-</head>
-<body>
-    <table>
-        <th>
+   <head>
+      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+   </head>
+   <body>
+      <table>
+         <th>
             <div id="control">
-
-                <input type="text" id="dateTime" data-bind="ejDateTimePicker: { value: value, width: '160px' }" />
+               <input type="text" id="dateTime" data-bind="ejDateTimePicker: { value: value, width: '160px' }" />
             </div>
-        </th>
-        <th>
+         </th>
+         <th>
             <div id="control1">
-                <input type="text" id="Text1" data-bind="ejDateTimePicker: { value: value, width: '160px' }" />
+               <input type="text" id="Text1" data-bind="ejDateTimePicker: { value: value, width: '160px' }" />
             </div>
-        </th>
-    </table>
-
-    <script type="text/javascript">
-
-        // Add the code in your script section to render the DateTimePicker with knockout binding
-
-        window.viewModel = {
-            value: ko.observable("3/18/2014 2:47 AM")
-        };
-
-        $(function () {
-            // declaration
-            ko.applyBindings(viewModel);
-        });
-
-    </script>
-    <style type="text/css" class="cssStyles">
-        #control1 {
-            margin-left: 150px;
-        }
-    </style>
-</body>
+         </th>
+      </table>
+      <script type="text/javascript">
+         // Add the code in your script section to render the DateTimePicker with knockout binding
+         
+         window.viewModel = {
+             value: ko.observable("3/18/2014 2:47 AM")
+         };
+         
+         $(function () {
+             // declaration
+             ko.applyBindings(viewModel);
+         });
+         
+      </script>
+      <style type="text/css" class="cssStyles">
+         #control1 {
+               margin-left: 150px;
+         }
+      </style>
+   </body>
 </html>
 
 
 {% endhighlight %}
 
 
-{% include image.html url="/js/DateTimePicker/Integration_images/Integration_img2.png" Caption="Showcase of DateTimePicker with Knockout binding"%}
+{% include image.html url="/js/DateTimePicker/Integration_images/Integration_img2.png"%}
 

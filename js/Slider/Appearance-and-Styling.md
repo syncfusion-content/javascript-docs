@@ -36,17 +36,16 @@ In an **HTML** page, specify the desired “**ej.widgets.all.min.css”** file t
 
 {% highlight html %}
 
-
-   //In _Layout page, specify the desired “ej.widgets.all.min.css” file to load the corresponding theme.
+<!--In _Layout page, specify the desired “ej.widgets.all.min.css” file to load the corresponding theme.-->
 <head>
-    <title>Slider</title>
-    <!--Flat-Lime theme-->
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css"rel="stylesheet"/>
-    <!--scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+   <title>Slider</title>
+   <!--Flat-Lime theme-->
+   <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-lime-dark/ej.web.all.min.css"rel="stylesheet"/>
+   <!--scripts-->
+   <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+   <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
+   <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+   <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -68,7 +67,7 @@ In an **HTML** page, specify the desired “**ej.widgets.all.min.css”** file t
             smallStep: 5,
             largeStep: 20
         });
-
+    
         $("#rangeSlider").ejSlider({
             sliderType: ej.SliderType.Range,
             values: [25,75],
@@ -84,7 +83,7 @@ In an **HTML** page, specify the desired “**ej.widgets.all.min.css”** file t
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Slider display after “flat-lime-dark” theme applied."%}
+{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
 
 ## Css Class
 
@@ -99,8 +98,8 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 {% highlight html %}
 
 
-   <div class="txt">Range Slider</div>
-   <div id="rangeSlider"></div>
+<div class="txt">Range Slider</div>
+<div id="rangeSlider"></div>
 
 
 {% endhighlight %}
@@ -123,45 +122,47 @@ Include the **cssClass** value before each style of the **Slider** widget and cu
 
 {% highlight css %}
 
+
+
 <style>
-    .purple.e-slider.e-widget {
-      background-color: burlywood;
-      border-color: #bbbcbb;
-    }
-    .purple.e-tooltip {
-      background: none repeat scroll 0 0 violet;
-      /* Old browsers */
-    
-      border-color: #1b95cf;
-      color: white;
-    }
-    .purple.e-slider .e-handle.e-select {
-      background-color: purple;
-      border-color: purple;
-    }
-    .purple.e-slider .e-handle.e-hover {
-      background-color: purple;
-      border-color: purple;
-    }
-    .purple.e-slider .e-handle.e-focus {
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    }
-    .purple.e-slider .e-range {
-      background: none repeat scroll 0 0 violet;
-      /* Old browsers */
-    
-    }
-    .purple.e-scale .e-tick {
-      background-image: url(images/dot.png);
-    }
+   .purple.e-slider.e-widget {
+       background-color: burlywood;
+       border-color: #bbbcbb;
+   }
+   .purple.e-tooltip {
+       background: none repeat scroll 0 0 violet;
+       /* Old browsers */
+       border-color: #1b95cf;
+       color: white;
+   }
+   .purple.e-slider .e-handle.e-select {
+       background-color: purple;
+       border-color: purple;
+   }
+   .purple.e-slider .e-handle.e-hover {
+       background-color: purple;
+       border-color: purple;
+   }
+   .purple.e-slider .e-handle.e-focus {
+       box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   }
+   .purple.e-slider .e-range {
+       background: none repeat scroll 0 0 violet;
+   /* Old browsers */
+   }
+   .purple.e-scale .e-tick {
+       background-image: url(images/dot.png);
+   }
 </style>
+
+
 
 {% endhighlight %}
 
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Slider with custom theme applied"%}
+{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
 
 ## Show Tooltip
 
@@ -173,8 +174,8 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Defaul
 
 {% highlight html %}
 
-   <div class="txt">Default Slider</div>
-   <div id="defaultSlider"></div>
+<div class="txt">Default Slider</div>
+<div id="defaultSlider"></div>
 
 {% endhighlight %}
 
@@ -201,25 +202,25 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 {% highlight html %}
 
-   <div class="txt">Default Slider</div>
-   <div id="defaultSlider"></div>
+<div class="txt">Default Slider</div>
+<div id="defaultSlider"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
 
-        // In JavaScript, during initialization enable the showRoundedCorner property.
-        $("#defaultSlider").ejSlider({
-            value: 60,
-            width: "500",
-            showRoundedCorner:true
-        });
+    // In JavaScript, during initialization enable the showRoundedCorner property.
+    $("#defaultSlider").ejSlider({
+        value: 60,
+        width: "500",
+        showRoundedCorner:true
+    });
 
 {% endhighlight %}
 
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" Caption="Slider with “roundedCorner” property enabled."%}
+{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
 

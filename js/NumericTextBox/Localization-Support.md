@@ -35,7 +35,8 @@ The following example describes the way to use localization for NumericTextBox w
 
 {% highlight html %}
 
-        <input id="numeric" type="text" />
+<input id="numeric" type="text" />
+        
 {% endhighlight %}
 
 {% highlight js %}

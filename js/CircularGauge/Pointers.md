@@ -130,7 +130,7 @@ The Pointers border is modified with the object called **border** as in scales. 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img3.png" Caption="Circular Gauge with customized pointer colors and borders"%}
+{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img3.png" Caption=""%}
 
 **Appearance**
 
@@ -229,47 +229,47 @@ Execute the above code to render the following output.
 
 * Circular gauge pointer has two types such as,
 
- * Needle
+  * Needle
 
- * Marker
+  * Marker
 
 * Needle type pointers are the default pointers that cannot be positioned and that is located at the center of the gauge. There are four different shapes of needle pointers such as 
 
- * Rectangle
+  * Rectangle
 
- * Triangle
+  * Triangle
 
- * Trapezoid 
+  * Trapezoid 
 
- * Arrow
+  * Arrow
  
- * Image
+  * Image
 
 * For marker pointer, the available dimensions are 
 
- * Rectangle
-
- * Triangle
-
- * Ellipse
-
- * Diamond
-
- * Pentagon
-
- * Circle 
-
- * Slider
-
- * Pointer
-
- * Wedge
-
- * Trapezoid
-
- * Rounded Rectangle
+  * Rectangle
  
- * Image
+  * Triangle
+
+  * Ellipse
+
+  * Diamond
+
+  * Pentagon
+
+  * Circle 
+
+  * Slider
+
+  * Pointer
+
+  * Wedge
+
+  * Trapezoid
+
+  * Rounded Rectangle
+ 
+  * Image
  
 ## Pointer Images
 
@@ -280,11 +280,11 @@ In JavaScript circular gauge, it is possible to replace the pointer with images.
 * To implement the pointer image we need to give the API called ImageUrl. It is a string datatype. 
 * Image type pointer is applicable for both marker as well as needle type pointers and it is possible with combine the normal marker pointer type wit image type. The three possibilities are
  
- * Needle Image
+  * Needle Image
  
- * Marker Image
+  * Marker Image
  
- * Marker pointer with Image
+  * Marker pointer with Image
  
 **Needle Image**
 
@@ -553,7 +553,7 @@ Execute the above code to render the following output.
 
 ## Pointer Value Text
 
-**Gauge Pointer value****text** is used to display the current value of the pointer in the **Circular Gauge** control.
+Gauge **Pointer value** **text** is used to display the current value of the pointer in the **Circular Gauge** control.
 
 **Positioning the text**
 

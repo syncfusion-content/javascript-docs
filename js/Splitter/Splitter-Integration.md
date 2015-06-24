@@ -19,59 +19,58 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 {% highlight html %}
 
-        <div id="splitter">
-            <div>
-                <div style="padding: 20px;">
-                    <h3>ASP.NET MVC</h3>
-                    <ul id="treeview">
-                        <li>
-                            Tools
-                            <ul>
-                                <li id="tools" class="_child">Description</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Chart
-                            <ul>
-                                <li id="chart" class="_child">Description </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Grid
-                            <ul>
-                                <li id="grid" class="_child">Description</li>
-                            </ul>
-                        </li>
+<div id="splitter">
+    <div>
+        <div style="padding: 20px;">
+            <h3> JavaScript </h3>
+            <ul id="treeview">
+                <li>
+                    Tools
+                    <ul>
+                        <li id="tools" class="_child">Description</li>
                     </ul>
-                </div>
+                </li>
+                <li>
+                    Chart
+                    <ul>
+                        <li id="chart" class="_child">Description </li>
+                    </ul>
+                </li>
+                <li>
+                    Grid
+                    <ul>
+                        <li id="grid" class="_child">Description</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div style="padding: 20px">
+            <div class="_content">
+                Select any product from the tree to show the description.
             </div>
-            <div>
-                <div style="padding: 20px">
-                    <div class="_content">
-                        Select any product from the tree to show the description.
-                    </div>
-                    <div class="tools" style="display: none">
-                        <h3>Tools</h3>
-                        Essential Tools is an collection of user interface components used to create interactive
-                        ASP.NET MVC applications.
-                    </div>
-                    <div class="chart" style="display: none">
-                        <h3>Chart</h3>
-                        Essential Chart is a business-oriented charting component.
-                    </div>
-                    <div class="grid" style="display: none">
-                        <h3>Grid</h3>
-                        Essential MVC Grid offers full featured a Grid control with extensive support for
-                        Grouping and the display of hierarchical data.
-                    </div>
-                </div>
+            <div class="tools" style="display: none">
+                <h3>Tools</h3>
+                Essential Tools is an collection of user interface components used to create interactive
+                JavaScript applications.
+            </div>
+            <div class="chart" style="display: none">
+                <h3>Chart</h3>
+                Essential Chart is a business-oriented charting component.
+            </div>
+            <div class="grid" style="display: none">
+                <h3>Grid</h3>
+                Essential JavaScript Grid offers full featured a Grid control with extensive support for
+                Grouping and the display of hierarchical data.
             </div>
         </div>
+    </div>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
-
 
         $("#treeview").ejTreeView({ nodeSelect: "treeClicked" }); /* Render TreeView inside Splitter pane */
         
@@ -86,17 +85,11 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
             }
         }
 
-
 {% endhighlight %}
-
 
 When the node is selected in **TreeView**, the integrated output is displayed in the second pane.
 
+{% include image.html url="/js/Splitter/Splitter-Integration_images/Splitter-Integration_img1.png" %}
 
-
-{% include image.html url="/js/Splitter/Splitter-Integration_images/Splitter-Integration_img1.png" Caption="Splitter Integration initially"%}
-
-
-
-{% include image.html url="/js/Splitter/Splitter-Integration_images/Splitter-Integration_img2.png" Caption="Integrated output of Splitter"%}
+{% include image.html url="/js/Splitter/Splitter-Integration_images/Splitter-Integration_img2.png" %}
 

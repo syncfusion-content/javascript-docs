@@ -44,19 +44,19 @@ List of Button types
 </table>
 
 
-The following steps explains you the details about rendering the **Button** with above mentioned button types.
+The following steps explains you the details about rendering the Button with above mentioned button types.
 
-In the **HTML** page, add the following button elements to configure **Button** widget.
+In the HTML page, add the following button elements to configure Button widget.
 
 {% highlight html %}
 
-    <button id="buttonType_button">button</button>
-    <br />
-    <br />
-    <button id="buttonType_submit">submit</button>
-    <br />
-    <br />
-    <button id="buttonType_reset">reset</button>
+<button id="buttonType_button">button</button>
+<br />
+<br />
+<button id="buttonType_submit">submit</button>
+<br />
+<br />
+<button id="buttonType_reset">reset</button>
 	
 {% endhighlight %}
 
@@ -89,5 +89,5 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Button-Type_images/Button-Type_img1.png" Caption="Different button types"%}
+{% include image.html url="/js/Button/Button-Type_images/Button-Type_img1.png" %}
 

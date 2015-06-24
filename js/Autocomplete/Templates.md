@@ -19,7 +19,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 
 {% highlight html %}
 
-         <input type="text" id="selectCountry" />
+<input type="text" id="selectCountry" />
 
 
 {% endhighlight %}
@@ -27,7 +27,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 
  Define the **CSS** classes for the sprite images. You can find the images in the following location:
 
-[Installed Drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JS \Samples\ web \images\autocomplete\flags.png
+**[Installed Drive]:**\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JS \Samples\ web \images\autocomplete\flags.png
 
 {% highlight css %}
 
@@ -128,12 +128,12 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 {% highlight js %}
 
 
-            $('#selectCountry').ejAutocomplete({
-                dataSource: countries,
-                width: 205,
-                template: '&lt;div class="flag ${sprite}"&gt; &lt;/div&gt;' +
-                        '&lt;div class="txt"&gt; ${text} &lt;/div&gt;'
-            });
+    $('#selectCountry').ejAutocomplete({
+        dataSource: countries,
+        width: 205,
+        template: '&lt;div class="flag ${sprite}"&gt; &lt;/div&gt;' +
+            '&lt;div class="txt"&gt; ${text} &lt;/div&gt;'
+    });
 
 
 {% endhighlight %}
@@ -141,5 +141,5 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 
 The following image is the output for **AutoComplete** widget with **Template** support.
 
-{% include image.html url="/js/Autocomplete/Templates_images/Templates_img1.png" Caption="AutoComplete with Custom template"%}
+{% include image.html url="/js/Autocomplete/Templates_images/Templates_img1.png"%}
 

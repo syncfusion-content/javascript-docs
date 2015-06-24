@@ -13,7 +13,7 @@ Responsive Layout is aimed at crafting sites to provide an optimal viewing exper
 
 [http://cdn.syncfusion.com/13.1.0.21/js/web/responsive-css/ej.responsive.css](http://cdn.syncfusion.com/13.1.0.21/js/web/responsive-css/ej.responsive.css)
 
-> {% include image.html url="/js/Menu/Responsive-Layout_images/Responsive-Layout_img1.png" Caption=""%}**Note**: Refer to the ej.responsive.css file after the ej.widgets.all.min.css file
+> **Note**: Refer to the ej.responsive.css file after the ej.widgets.all.min.css file
 
 Add the above **css** link in the code sample.         
 
@@ -84,5 +84,5 @@ Add the following code in your **HTML** page.
 
 The following screenshot displays the output for the above code. 
 
-{% include image.html url="/js/Menu/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Menu with responsive layout"%}
+{% include image.html url="/js/Menu/Responsive-Layout_images/Responsive-Layout_img2.png"%}
 

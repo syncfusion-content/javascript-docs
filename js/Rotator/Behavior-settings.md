@@ -16,24 +16,31 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
   {% highlight html %}
 
   
-   <div class="cols-sample-area">
-	    <ul id="slidercontent" accesskey="e">
-	        <li>
-	            <img class="image" src="../images/rotator/nature.jpg" title="Nature" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/bird.jpg" title="Beautiful Bird" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/seaview.jpg" title="Sea-View" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/snowfall.jpg" title="Snow Fall" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/card.jpg" title="Credit Card" /></li>
-	        <li>
-	            <img class="image" src="../images/rotator/night.jpg" title="Colorful Night" /></li>
-	    </ul>
-	</div>
+<div class="cols-sample-area">
+   <ul id="slidercontent" accesskey="e">
+      <li>
+         <img class="image" src="../images/rotator/nature.jpg" title="Nature" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/bird.jpg" title="Beautiful Bird" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/sculpture.jpg" title="Amazing Sculptures" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/seaview.jpg" title="Sea-View" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/snowfall.jpg" title="Snow Fall" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/card.jpg" title="Credit Card" />
+      </li>
+      <li>
+         <img class="image" src="../images/rotator/night.jpg" title="Colorful Night" />
+      </li>
+   </ul>
+</div>
 
 
   {% endhighlight %}
@@ -41,10 +48,10 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
 
   {% highlight js %}
 
-	    $(function () {
-	        // declaration
-	        $("#slidercontent").ejRotator({ enabled: true });
-	    });
+    $(function () {
+        // declaration
+        $("#slidercontent").ejRotator({ enabled: true });
+    });
 
   {% endhighlight %}
   
@@ -106,7 +113,7 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 
 {% highlight js %}
 
-
+    
     $(function () {
         // declaration
         $("#slidercontent").ejRotator({
@@ -120,7 +127,7 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 
 
 
-{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img1.png" Caption="Rotator control with pager position"%}
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img1.png"%}
 
 ### Show pager
 
@@ -137,7 +144,7 @@ The **“showPager”** property turns on or off the **pager** support in the **
 
 
 
-{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img2.png" Caption="Rotator control with no pager"%}
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img2.png"%}
 
 ## Show options
 
@@ -156,7 +163,7 @@ The “**showPlayButton**” property enables play / pause button on **Rotator**
 
 
 
-{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img3.png" Caption="Rotator control with play button"%}
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img3.png"%}
 
 ### Show navigate button
 
@@ -173,7 +180,7 @@ The “**showNavigateButton**” property turns on or off the slide buttons (nex
 
 
 
-{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img4.png" Caption="Rotator control with navigate button"%}
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img4.png" %}
 
 ### Show caption
 
@@ -190,5 +197,5 @@ When the **Rotator** Item is an image, you can specify a caption for the **Rotat
 
 
 
-{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img5.png" Caption="Rotator control with caption"%}
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img5.png" %}
 
