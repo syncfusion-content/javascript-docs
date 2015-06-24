@@ -23,15 +23,15 @@ documentation: ug
             </ul>
         </div>
     </div>
-    <script>
-        $("#navpane").ejNavigationDrawer({ position: "fixed", enableListView: true, listViewSettings: { width: 300 } });
-    </script>
-
-
 {% endhighlight %}
 
+Add the following code in the **script** tag.
+    
+{% highlight js %}   
 
+        $("#navpane").ejNavigationDrawer({ position: "fixed", enableListView: true, listViewSettings: { width: 300 } });
 
+{% endhighlight %}
 
 
 The following screenshot illustrates the output by swiping from left to right at the left end of the screen.

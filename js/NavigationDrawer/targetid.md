@@ -13,27 +13,27 @@ This property is used to define the target Id for **Navigation Drawer**. The dra
 
 {% highlight html %}
 
-<button id="drawerTarget" style="top:200px;left:600px;position:absolute"></button>
-
-<div id="navpane">
-        <ul>
-            <li>Settings</li>
-            <li>Read</li>
-            <li>Help</li>
-            <li>About</li>
-        </ul>
-</div>
+        <button id="drawerTarget" style="top:200px;left:600px;position:absolute"></button>
+        
+        <div id="navpane">
+                <ul>
+                    <li>Settings</li>
+                    <li>Read</li>
+                    <li>Help</li>
+                    <li>About</li>
+                </ul>
+        </div>
+        
 {% endhighlight %}
+
+Add the following code in the **script** tag.
+
 {% highlight js %}
     
         $("#navpane").ejNavigationDrawer({ position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
         $("#drawerTarget").ejButton({text:"Open Drawer"});
  
 {% endhighlight %}
-
-
-
-
 
 The following screenshots illustrates the output.
 
