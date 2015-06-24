@@ -105,7 +105,7 @@ Editors</td><td>
 <td rowspan = "4">
 Navigation</td><td>
 <a href="/js/ribbon/overview">Ribbon</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview39.htm">RadialMenu</a></td><td>
+<a href="/js/radialmenu/overview">RadialMenu</a></td><td>
 <a href="/js/rotator/overview">Rotator</a></td></tr>
 <tr>
 <td>
