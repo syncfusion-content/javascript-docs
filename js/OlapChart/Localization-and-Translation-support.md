@@ -3,7 +3,7 @@ layout: post
 title: Localization-and-Translation-support
 description: localization and translation support
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
@@ -111,9 +111,9 @@ $(function() {
 
 {% endhighlight %}
 
-> _**Note:** In order to render the localized OLAP Chart, you are required to reset the content available in both_
+> **Note:** In order to render the localized OlapChart, you are required to reset the content available in both
 
-   1. _**OLAP Chart Control**_
+   1. _**OlapChart Control**_
    2. _**OLAP Cube**_
 
 ##Localizing Control Information

@@ -3,13 +3,13 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
 #Getting Started
 
-This section explains briefly about how to create an **OLAP Chart** in your application with **JavaScript.**
+This section explains briefly about how to create an **OlapChart** in your application with **JavaScript.**
 
 ##Syncfusion OLAP Controls – Architecture
 
@@ -44,9 +44,9 @@ This process has the **OLAP Report** always updated. You cannot operate serializ
 
 ##Create an application
 
-This section encompasses on how to configure an **OLAP Chart** component in an application. You can also learn how to pass the required data to **OLAP Chart** and to customize its various options according to your requirements. 
+This section encompasses on how to configure an **OlapChart** component in an application. You can also learn how to pass the required data to **OlapChart** and to customize its various options according to your requirements. 
 
-In the following example, the **OLAP Chart** component displays the customer count over different fiscal years against various geographical locations. This helps you to analyze the summarized data over different fiscal years.
+In the following example, the **OlapChart** component displays the customer count over different fiscal years against various geographical locations. This helps you to analyze the summarized data over different fiscal years.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img3.png" %}
 
@@ -88,7 +88,7 @@ Click **OK**.
 
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
-> _**Note:** Please follow the following order while adding scripts and styles._
+> **Note:** Please follow the following order while adding scripts and styles.
 
 {% highlight html %}
 
@@ -123,7 +123,7 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 {% endhighlight %}
 
-##Add WCF service for OLAP Chart
+##Add WCF service for OlapChart
 
 ###Create WCF Services
 
@@ -193,9 +193,9 @@ namespace WebApplication2
 
 ###Implement Service Methods
 
-Add the following methods to the service, which is invoked during any server-side operations performed in **OLAP Chart**.
+Add the following methods to the service, which is invoked during any server-side operations performed in **OlapChart**.
 
-Initialize the **OLAP Charts** helper class and **OLAP DataManager** with appropriate connection string. 
+Initialize the **OlapChart** helper class and **OLAP DataManager** with appropriate connection string. 
 
 {% highlight c# %}
 
@@ -258,11 +258,8 @@ private OlapReport CreateOlapReport()
 ###Configuring Web.Config
 
 * You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is "**WebApplication2.OlapChartService**" where "**OlapChartService**" is the service class name and “**WebApplication2**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
-
    1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapChartService** contract and hence it is "**WebApplication2.IOlapChartService**".
-
    2. **Binding:** In your application, you use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
-
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows
 
 {% highlight xml %}
@@ -290,7 +287,7 @@ the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is th
 
 {% endhighlight %}
 
-> _**Note:** In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created._
+> **Note:** In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created.
 
 
 

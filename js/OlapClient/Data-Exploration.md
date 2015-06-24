@@ -3,13 +3,13 @@ layout: post
 title: Data-Exploration
 description: data exploration
 platform: js
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 
 # Data Exploration
 
-**OLAP Client** component allows its members to be sliced and diced. 
+**OlapClient** component allows its members to be sliced and diced. 
 
 * **Filtering**: Members can be either filtered by value or by name leading to a systematic reduction in the body of data into smaller parts or views yielding more precise information.
 * **Sorting**: Members can be arranged by their value based on condition resulting in an ordered view of the information. 
@@ -27,7 +27,7 @@ The above filter illustrates that the members France and Germany, along with Que
 
 ###Filtering by Value
 
-The Filtering tab in the Sorting and Filtering dialog box of **OLAP Client** provides you with options to specify custom filters on the multidimensional data. It enables you to filter the rows and columns of the current (active) Measure.
+The Filtering tab in the Sorting and Filtering dialog box of **OlapClient** provides you with options to specify custom filters on the multidimensional data. It enables you to filter the rows and columns of the current (active) Measure.
 
 ###Column Filter
 
@@ -59,7 +59,7 @@ The following screenshot displays the data after Filtering.
 
 ### Sorting By Value
 
-The Sorting tab in the Sorting and Filtering dialog box of **OLAP Client** provides you with options to sort the results by columns or rows, either in ascending or descending order.
+The Sorting tab in the Sorting and Filtering dialog box of **OlapClient** provides you with options to sort the results by columns or rows, either in ascending or descending order.
 
 ### Column Sorting
 

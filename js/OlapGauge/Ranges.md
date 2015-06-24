@@ -3,7 +3,7 @@ layout: post
 title: Ranges
 description: ranges
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 

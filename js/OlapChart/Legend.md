@@ -3,7 +3,7 @@ layout: post
 title: Legend
 description: legend
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 

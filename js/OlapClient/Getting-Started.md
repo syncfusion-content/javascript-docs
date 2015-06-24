@@ -3,13 +3,13 @@ layout: post
 title: Getting-Started
 description: getting started 
 platform: js
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 
 # Getting Started 
 
-This section explains briefly about how to create an **OLAP Client** in your application with **JavaScript**.
+This section explains briefly about how to create an **OlapClient** in your application with **JavaScript**.
 
 ##Syncfusion OLAP Controls – Architecture
 
@@ -42,14 +42,14 @@ When you perform any operation such as drill up/down, filtering, sorting etc., y
 Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again.
 This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
 
-   * **Saving and Loading Report in Database:**  you can save and load the reports available in **OLAP Client** control via service only. This is not applicable at the client-side. You can serialize the **OLAP Report** class in the **Syncfusion.Olap.Base** assembly and save to database as stream.  Also you can load back from database via service.
+   * **Saving and Loading Report in Database:**  you can save and load the reports available in **OlapClient** control via service only. This is not applicable at the client-side. You can serialize the **OLAP Report** class in the **Syncfusion.Olap.Base** assembly and save to database as stream.  Also you can load back from database via service.
    * **Exporting:** You can export **OLAP** values and information to excel sheet via service only. So this provides feasible option to save and view **OLAP** information.
 
 ##Create an application
 
-This section encompasses on how to configure the **OLAP Client** control in an application. You can also pass the required data to **OLAP Client** and customize it according to your requirements.
+This section encompasses on how to configure the **OlapClient** control in an application. You can also pass the required data to **OlapClient** and customize it according to your requirements.
 
-In this example, you can see how **OLAP Client** component plots the data of customer count over different fiscal years.
+In this example, you can see how **OlapClient** component plots the data of customer count over different fiscal years.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img3.png" %}
 
@@ -80,7 +80,7 @@ Click New Item and select HTML Page from the listed templates. Name the page as 
 
 Add the script files and CSS files in the &lt;title&gt; tag of the default.html page.
 
-> _**Note:** Use the following code sample while adding scripts and styles._
+> **Note:** Use the following code sample while adding scripts and styles.
 
 {% highlight html %}
 
@@ -117,7 +117,7 @@ Add the following code sample in the **&lt;body&gt;** tag in the **default.html*
 
 {% endhighlight %}
 
-##Add WCF Service for OLAP Client
+##Add WCF Service for OlapClient
 
 ###Create WCF Services
 
@@ -253,9 +253,9 @@ namespace WebApplication2
 
 ###Implement Service Methods
 
-You can add the following methods to the service that are invoked for any server-side operations performed in **OLAP Client**.
+You can add the following methods to the service that are invoked for any server-side operations performed in **OlapClient**.
 
-Initialize the OLAP Client helper class.
+Initialize the OlapClient helper class.
 
 {% highlight c# %}
 
@@ -280,7 +280,7 @@ public Dictionary<string, object> InitializeClient(string action, string customO
    return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-//This method provides the required information from the server side for initializing the OlapGrid.
+//This method provides the required information from the server side for initializing the PivotGrid.
 public Dictionary<string, object> InitializeGrid(string action, string currentReport, string gridLayout, string customObject)
 {
    OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -331,7 +331,7 @@ public Dictionary<string, object> FetchMemberTreeNodes(string action, string dim
    return olapClientHelper.GetJsonData(action, DataManager, dimensionName);
 }
 
-//This method provides the required information from the server side while drill up/down operation is performed in OlapGrid.
+//This method provides the required information from the server side while drill up/down operation is performed in PivotGrid.
 public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string clientReports, string headerInfo, string layout)
 {
    OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -444,12 +444,12 @@ private DataTable GetDataTable()
    return dSet.Tables[0];
 }
 
-//This method exports the OlapGrid content to an excel sheet.
+//This method exports the PivotGrid content to an excel sheet.
 public void ExportOptions(Stream stream)
 {
-   PivotGrid olapGridHelper = new PivotGrid();
+   PivotGrid pivotGridHelper = new PivotGrid();
    OlapDataManager DataManager = new OlapDataManager(connectionString);
-   olapGridHelper.ExportToExcel(DataManager, new StreamReader(stream).ReadToEnd(), "Sample.xls", HttpContext.Current.Response);
+   pivotGridHelper.ExportToExcel(DataManager, new StreamReader(stream).ReadToEnd(), "Sample.xls", HttpContext.Current.Response);
 }
 
 //This method carries the information about the default report which would be rendered within OlapClient initially.
@@ -505,7 +505,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-> _**Note:** In this example, “WebApplication2” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created._
+> **Note:** In this example, “WebApplication2” indicates the name of the project and “OlapClientService” indicates the name of the WCF service created.
 
 
 

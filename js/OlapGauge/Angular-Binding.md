@@ -3,7 +3,7 @@ layout: post
 title: Angular-Binding
 description: angular binding
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 

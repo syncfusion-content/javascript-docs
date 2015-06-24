@@ -3,13 +3,13 @@ layout: post
 title: Getting-Started
 description: getting started 
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 
 #Getting Started 
 
-This section explains briefly about how to create an **OLAP Gauge** in your application with **JavaScript.**
+This section explains briefly about how to create an **OlapGauge** in your application with **JavaScript.**
 
 ##Syncfusion OLAP Controls – Architecture
 
@@ -42,9 +42,9 @@ As the **OlapControl** is the key for each and every operation, initially you ne
 
 ##Create an application
 
-This section encompasses on how to configure the **OLAP Gauge** control in applications. You can also learn how to pass the required data to **OLAP Gauge** and to customize its various options according to your requirements.
+This section encompasses on how to configure the **OlapGauge** control in applications. You can also learn how to pass the required data to **OlapGauge** and to customize its various options according to your requirements.
 
-In the following example, **OLAP gauge** is used to visualize the Revenue for Reseller over a Fiscal Year 2004 on the product category - Accessories.
+In the following example, **OlapGauge** is used to visualize the Revenue for Reseller over a Fiscal Year 2004 on the product category - Accessories.
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img3.png" %}
 
@@ -81,7 +81,7 @@ Click on New Item and select HTML Page from the listed templates. Name the page 
 
 Add the script files and CSS files in the title tag of the default.html page.
 
-> _**Note:** Please follow the given order while adding scripts and styles._
+> **Note:** Please follow the given order while adding scripts and styles.
 
 {% highlight html %}
 
@@ -203,7 +203,7 @@ Add the following code inside the **&lt;body&gt;** tag in the **default.html** p
     
 {% endhighlight %}
 
-##Add WCF Service for OLAP Gauge
+##Add WCF Service for OlapGauge
 
 ###Create WCF Services
 
@@ -363,7 +363,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %} 
 
-> _**Note:** In this example, “WebApplication2” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created._
+> **Note:** In this example, “WebApplication2” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created.
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: OLAP-Client-Elements
-description: olap client elements 
+description: OlapClient Elements 
 platform: js
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 
-# OLAP Client Elements 
+# OlapClient Elements 
 
 ## Cube Selector
 
@@ -173,7 +173,7 @@ The nodes that are not allowed to be dragged are:
 
 ## Axis Element Builder
 
-Axis Element Builder allows you to build the element in an axis of the **OLAP Client**. It supports three axes namely: Categorical, Series and Slicer. Based on the elements constructed **OLAP Grid** and **OLAP Chart** will display the resultant data.
+Axis Element Builder allows you to build the element in an axis of the **OlapClient**. It supports three axes namely: Categorical, Series and Slicer. Based on the elements constructed **PivotGrid** and **OlapChart** will display the resultant data.
 
 ### Categorical (Column)
 
@@ -343,7 +343,7 @@ This option is used to display Grid and Chart in a maximized view, according to 
 
 ## Report List
 
-Report List will hold all the reports of the current session of the **OLAP Client** control.
+Report List will hold all the reports of the current session of the **OlapClient** control.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img26.png" %}
 
@@ -355,7 +355,7 @@ When a change is made in the report, **OLAP** visualization controls and Axis El
 
 The **PivotGrid** control for **JavaScript** is easily configurable, presentation-quality business control that reads **OLAP** data from a **Microsoft SQL Server Analysis Services** database, an **offline cube** or **XMLA**. The **OLAP** data is displayed with drill-up and drill-down capabilities and features exceptional performance.
 
-## OLAP Chart
+## OlapChart
 
-The **OLAP Chart** control for **JavaScript** is a lightweight control that reads **OLAP** information and visualizes it in graphical format with the ability to drill up and down.
+The **OlapChart** control for **JavaScript** is a lightweight control that reads **OLAP** information and visualizes it in graphical format with the ability to drill up and down.
 

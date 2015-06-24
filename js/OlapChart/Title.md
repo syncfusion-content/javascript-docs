@@ -3,7 +3,7 @@ layout: post
 title: Title
 description: title
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 

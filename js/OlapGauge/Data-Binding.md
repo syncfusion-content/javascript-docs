@@ -3,17 +3,17 @@ layout: post
 title: Data-Binding
 description: data binding
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 
 # Data Binding
 
-**OLAP Gauge** control enables you to retrieve multidimensional data either from **SSAS** or from any **XML/A** provider and present the OLAP information in a meaningful way.
+**OlapGauge** control enables you to retrieve multidimensional data either from **SSAS** or from any **XML/A** provider and present the OLAP information in a meaningful way.
 
 ## SSAS
 
-###Binding OLAP Gauge to the Offline Cube
+###Binding OlapGauge to the Offline Cube
 
 The following code illustrates how to connect to an offline cube:
 
@@ -25,7 +25,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-###Binding OLAP Gauge to the SQL Server (Local)
+###Binding OlapGauge to the SQL Server (Local)
 
 The following code illustrates how to connect to a Cube available in local SQL Server:
 

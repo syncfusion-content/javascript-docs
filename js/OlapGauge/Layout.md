@@ -3,13 +3,13 @@ layout: post
 title: Layout
 description: layout 
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 
 # Layout 
 
-The **OLAP Gauge** control provides support to display multiple gauges in a structured layout. You can customize the layout using the **ColumnsCount** and **RowsCount** properties. These properties are used to specify the number of columns and rows for displaying controls.
+The **OlapGauge** control provides support to display multiple gauges in a structured layout. You can customize the layout using the **ColumnsCount** and **RowsCount** properties. These properties are used to specify the number of columns and rows for displaying controls.
 
 ## Supported Layouts
 

@@ -3,7 +3,7 @@ layout: post
 title: Knockout-Binding
 description: knockout binding
 platform: js
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 

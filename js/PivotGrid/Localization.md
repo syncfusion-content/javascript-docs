@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
->_**Note**: This feature is currently not applicable for PivotTable Field List._
+> **Note**: This feature is currently not applicable for PivotTable Field List.
 
 **Localization** is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, data is displayed in a specific language and culture of a particular country or region. The **JavaScript PivotGrid** control provides inherent support to localize its UI.The following table lists the default English localization user interface based on French culture. 
 
@@ -84,9 +84,9 @@ url: "../wcf/PivotGridService.svc", locale: "fr-FR", enableVirtualScrolling: tru
 {% endhighlight %}
 
 
-> _**Note:** In order to render the localized PivotGrid, you can reset the content available in both_
+> **Note:** In order to render the localized PivotGrid, you can reset the content available in both
 
-1. _**OLAP Grid Control**_
+1. _**PivotGrid Control**_
 2. _**OLAP Cube**_
 
 ##Localizing Control Information:

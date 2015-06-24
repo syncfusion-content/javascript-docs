@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview 
 
-The **Pivot Grid** control is easily configurable, presentation-quality business control that reads **OLAP** data from a **Microsoft SQL Server Analysis Services** database, an offline cube or **XMLA** and **Relational** data sources from data table or data collection. The **OLAP** data is displayed with drill-up and drill-down capabilities and features exceptional performance.
+The **PivotGrid** control is easily configurable, presentation-quality business control that reads **OLAP** data from a **Microsoft SQL Server Analysis Services** database, an offline cube or **XMLA** and **Relational** data sources from data table or data collection. The **OLAP** data is displayed with drill-up and drill-down capabilities and features exceptional performance.
 
 ##Key Features
 

@@ -3,17 +3,17 @@ layout: post
 title: Data-Binding
 description: data binding
 platform: js
-control: OLAP Chart
+control: OlapChart
 documentation: ug
 ---
 
 #Data Binding
 
-**OLAP Chart** control enables you to retrieve multidimensional data either from **SSAS** or from any **XML/A** provider and present the OLAP information in a meaningful way.
+**OlapChart** control enables you to retrieve multidimensional data either from **SSAS** or from any **XML/A** provider and present the OLAP information in a meaningful way.
 
 ##SSAS
 
-###Binding OLAP Chart to an Offline Cube
+###Binding OlapChart to an Offline Cube
 
 The following code illustrates how to connect to an offline cube:
 
@@ -24,7 +24,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-###Binding OLAP Chart to the SQL Server (Local)
+###Binding OlapChart to the SQL Server (Local)
 
 The following code illustrates how to connect to a local Cube in SQL Server:
 
