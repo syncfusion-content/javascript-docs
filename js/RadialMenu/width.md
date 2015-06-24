@@ -24,15 +24,20 @@ You can add the page content with text-area by referring to this section.
             <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/sort.png" data-ej-text="Sort"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $('#defaultradialmenu').ejRadialMenu({ width: "250"});
         });
+        
         $("#rteSampleone").select(function (e) {
             $('#defaultradialmenu').ejRadialMenu("show");
         });
-    </script>
-
 
 {% endhighlight %}
 
