@@ -142,7 +142,7 @@ A Gantt chart is created as shown in the following screen shot.
 
 ### Enable Toolbar
 
-Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the `toolbar` option.
+Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the `[toolbarSettings](/js/api/ejgantt#toolbarsettingsspan-classtype-signature-type-objectobjectspan "toolbarSettings")` property.
 
 {% highlight js %}
 
