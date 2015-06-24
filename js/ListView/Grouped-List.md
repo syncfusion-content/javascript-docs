@@ -39,19 +39,22 @@ Refer the following code example.
             <li data-ej-text="Wallpaper"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $("#defaultlistbox").ejListView({ width:400, enableGroupList:true });
         });
-    </script>
-
-
 
 {% endhighlight %}
 
 
 
-**Screenshot:**
+Run the codes to get the following output
 
 {% include image.html url="/js/ListView/Grouped-List_images/Grouped-List_img1.png" %}
 
@@ -92,19 +95,22 @@ Refer the following code examples.
         </ul>
 
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $("#defaultlistbox").ejListView({showHeader: true, headerTitle: "Favourite", width:400, enableGroupList:true});
         });
-    </script>
-
-
 
 {% endhighlight %}
 
 
 
-**Screenshot:**
+Run the codes to get the following output
 
-{% include image.html url="/js/ListViewGrouped-List_images/Grouped-List_img2.png" %}
+{% include image.html url="/js/ListView/Grouped-List_images/Grouped-List_img2.png" %}
 

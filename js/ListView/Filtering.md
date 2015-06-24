@@ -33,12 +33,16 @@ Refer the following code examples.
             <li data-ej-text="School-age Crafts"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $("#defaultlistbox").ejListView({ width: 300, enableFiltering: true });
         });
-    </script>
-
 
 
 {% endhighlight %}
@@ -47,9 +51,9 @@ Refer the following code examples.
 
 **Screenshot:**
 
-{% include image.html url="/js/ListView/Filtering_images/Filtering_img1.png" Caption="Enable Filtering"%}
+{% include image.html url="/js/ListView/Filtering_images/Filtering_img1.png" Caption="Before Filtering"%}
 
 
 
-{% include image.html url="/js/ListView/Filtering_images/Filtering_img2.png" Caption="Enable Filtering"%}
+{% include image.html url="/js/ListView/Filtering_images/Filtering_img2.png" Caption="After Filtering"%}
 
