@@ -15,29 +15,27 @@ Filtering is a basic technique in **DataManager** query. The “where” query i
 
 Filter operators are generally used to specify the filter type. The various filter operators corresponding to the type of the column is listed in the following table.
 
-_Table_ _4__: Filter Operators_
-
 <table>
 <tr>
-<td>
-<b>Column type</b></td><td>
-<b>Filter operators</b></td></tr>
+<th>
+Column type</th><th>
+Filter operators</th></tr>
 <tr>
 <td>
 Number</td><td>
-ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOperators.lessThanej.FilterOperators.lessThanOrEqualej.FilterOperators.equal</td></tr>
+ej.FilterOperators.greaterThan<br/>ej.FilterOperators.greaterThanOrEqual<br/>ej.FilterOperators.lessThan<br/>ej.FilterOperators.lessThanOrEqual<br/>ej.FilterOperators.equal</td></tr>
 <tr>
 <td>
 String</td><td>
-ej.FilterOperators.startsWithej.FilterOperators.endsWithej.FilterOperators.containsej.FilterOperators.equalej.FilterOperators.notEqual</td></tr>
+ej.FilterOperators.startsWith<br/>ej.FilterOperators.endsWith<br/>ej.FilterOperators.contains<br/>ej.FilterOperators.equal<br/>ej.FilterOperators.notEqual</td></tr>
 <tr>
 <td>
 Boolean</td><td>
-ej.FilterOperators.equalej.FilterOperators.notEqual</td></tr>
+ej.FilterOperators.equal<br/>ej.FilterOperators.notEqual</td></tr>
 <tr>
 <td>
 Date</td><td>
-ej.FilterOperators.greaterThanej.FilterOperators.greaterThanOrEqualej.FilterOperators.lessThanej.FilterOperators.lessThanOrEqualej.FilterOperators.equal</td></tr>
+ej.FilterOperators.greaterThan<br/>ej.FilterOperators.greaterThanOrEqual<br/>ej.FilterOperators.lessThan<br/>ej.FilterOperators.lessThanOrEqual<br/>ej.FilterOperators.equal</td></tr>
 </table>
 
 
@@ -639,7 +637,7 @@ Result of the above code example is illustrated as follows.
 
 ##or predicate
 
-Using this method you can add n-number of predicates with “or” condition and filter the data.
+Using this method you can add n-number of predicates with `or` condition and filter the data.
 
 
 

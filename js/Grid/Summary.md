@@ -12,15 +12,10 @@ documentation: ug
 **Summary** is a key feature of **Grid** that is used to aggregate a particular column. This is useful to analyse the details of a particular column. It has the following types:
 
 * Sum
-
 * Average 
-
 * Count
-
 * Minimum
-
 * Maximum
-
 * Custom
 
 ## Default Summary

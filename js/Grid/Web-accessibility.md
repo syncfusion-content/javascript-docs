@@ -19,29 +19,28 @@ This helps enable better user interaction in **Grid** control and this uses the 
 
 This helps to support **Grid** control with keyboard interaction. The key descriptions are:
 
-{% highlight js %}
 
-Alt + j				= focus
-Ctrl + Home			= first row in Grid
-Ctrl + End			= last row in Grid
-PgDn				= next page to Grid
-PgUp				= previous page to Grid
-Home				= first cell in grid
-End			= last cell in grid
-F2			= Edit            //to enable editing [edit:{allowEditing:true}]
-Enter				= Save request
-Esc			= Cancel request
-Tab			= Move Cell right
-Shift					= Move Cell left
+
+Alt + j					= focus
+Ctrl + Home				= first row in Grid
+Ctrl + End                 = last row in Grid
+PgDn					   = next page to Grid
+PgUp					   = previous page to Grid
+Home					   = first cell in grid
+End						= last cell in grid
+F2						 = Edit            //to enable editing [edit:{allowEditing:true}]
+Enter					  = Save request
+Esc						= Cancel request
+Tab						= Move Cell right
+Shift					  = Move Cell left
 Ctrl + PgDn				= Last page in grid
-Ctrl + Alt + PgUp		= First page in grid
-Alt + Down Arrow		= Expand selected group //to enable [grouping{allowGrouping:true}]
-Alt + Up Arrow			= Collapse selected group //to enable [grouping{allowGrouping:true}]
-Ctrl + Down Arrow		= Expand All //to enable [grouping{allowGrouping:true}]
+Ctrl + Alt + PgUp		  = First page in grid
+Alt + Down Arrow		   = Expand selected group //to enable [grouping{allowGrouping:true}]
+Alt + Up Arrow			 = Collapse selected group //to enable [grouping{allowGrouping:true}]
+Ctrl + Down Arrow		  = Expand All //to enable [grouping{allowGrouping:true}]
 Ctrl + UP Arrow			= Collapse All //to enable [grouping{allowGrouping:true}]
 
 
-{% endhighlight %}
 
 
 

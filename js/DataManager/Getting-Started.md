@@ -379,8 +379,6 @@ When you execute the filter query and binding the result to the table, the follo
    </tr>
 </table>
 
-{% include image.html url="/js/DataManager/DataManager-GettingStarted/Data with Filtering.png" %}
-
 ##Sort
 
 You can generate the **Sort** query to sort the **Freight** column in descending order and that is executed using the **DataManager**. 

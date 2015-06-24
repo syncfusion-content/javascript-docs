@@ -145,7 +145,7 @@ Reporting</td><td colspan = "3">
 <td>
 Others</td><td>
 <a href="http://helpjs.syncfusion.com/js/calculate/overview">Calculate</a></td><td colspan = "2">
-DataManager</td></tr>
+<a href="http://helpjs.syncfusion.com/js/DataManager/overview">DataManager</td></tr>
 </table>
 
 All our web UI widgets supports the below listed major **key features** – which are more essential in building the web application in recent days.

@@ -54,7 +54,7 @@ Sorting is basic query in **DataManager**. It enables you to view the items or r
    </tr>
 </script>
 
-{% endhighlight %}
+{{% endhighlight %}}
 
 
 Result of the above code example is illustrated as follows.
@@ -65,7 +65,7 @@ Result of the above code example is illustrated as follows.
 
 ##SortByDesc
 
-The sortByDesc query of the data manager is used to sort the specified field in descending order by default. You can use the following code example for sortByDesc query.
+The `sortByDesc` query of the data manager is used to sort the specified field in descending order by default. You can use the following code example for `sortByDesc` query.
 
 
 {% highlight html %}

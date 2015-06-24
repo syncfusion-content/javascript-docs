@@ -14,15 +14,10 @@ documentation: ug
 **Toolbar** is one of the user interaction controls related with **Grid**. It is handy to use the **Toolbar** to trigger more actions. The default toolbar items created for **Grid** are:
 
 * Add
-
 * Edit
-
 * Delete
-
 * Update
-
 * Cancel
-
 * Search
 
 If you want **Toolbar** items other than the above items, you can make it using **customToolBarItems.**

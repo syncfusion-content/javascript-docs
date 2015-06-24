@@ -25,7 +25,7 @@ The ej provided several data utilization methods to achieve summary.
 
 ##Sum
 
-The Sum summary type provides the sum of the data. The Sum data utilization method accepts two parameters, they are **JSON** data and the field name where the sum is calculated. The following code example illustrates the Default Summary Types.
+The `Sum` summary type provides the sum of the data. The Sum data utilization method accepts two parameters, they are **JSON** data and the field name where the sum is calculated. The following code example illustrates the Default Summary Types.
 
 
 
@@ -83,7 +83,7 @@ The result of the above code example is illustrated as follows.
 
 ##Min
 
-The Minimum of a particular field can be calculated using the **ej.min** data utilization method and this method accepts the arguments such as **JSON** data/array, field name and the comparer used for the comparison. When the data to the min method is a **JSON** array then the whole record is returned.
+The Minimum of a particular field can be calculated using the `ej.min` data utilization method and this method accepts the arguments such as **JSON** data/array, field name and the comparer used for the comparison. When the data to the min method is a **JSON** array then the whole record is returned.
 
 The minimum of particular field can be calculated as follows.
 
@@ -138,7 +138,7 @@ The result of the above code example is illustrated as follows.
 
 ##Max
 
-The Maximum of a particular field can be calculated using the **ej.max** data utilization method and this method accepts the arguments such as **JSON** data/array, field name and the comparer used for the comparison. When the data to the max method is a **JSON** array then the whole record is returned.
+The Maximum of a particular field can be calculated using the `ej.max` data utilization method and this method accepts the arguments such as **JSON** data/array, field name and the comparer used for the comparison. When the data to the max method is a **JSON** array then the whole record is returned.
 
 The maximum of particular field can be calculated as follows.
 
@@ -249,7 +249,7 @@ The result of the above code example is illustrated as follows.
 
 In a data, a field may contain many duplicate values; and sometimes you only require to list the different (distinct) values. This can be achieved by using the **ej.distinct** method. This method accepts three parameters such as **JSON**/Array data, fieldname that you want to fetch as distinct and the third boolean parameter when set as true, returns the whole record when the data is a **JSON** array. 
 
-The following code example illustrates how to use the ej.distinct method. In the following code, the third param of distinct method is set as true and hence it fetches the whole record from the provided data.
+The following code example illustrates how to use the `ej.distinct` method. In the following code, the third param of distinct method is set as true and hence it fetches the whole record from the provided data.
 
 
 

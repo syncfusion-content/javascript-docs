@@ -68,7 +68,7 @@ Here, you can learn when and how each adaptor is used.
 The result of above code example is illustrated as follows.
 
 
-{% include image.html url="/js/DataManager/Data-Adaptors_images/Data-Adaptors_img1.png" %}__
+{% include image.html url="/js/DataManager/Data-Adaptors_images/Data-Adaptors_img1.png" %}
 
 ##URL Adaptor
 
@@ -193,7 +193,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Data-Adaptors_images/Data-Adaptors_img3.png" %}__
+{% include image.html url="/js/DataManager/Data-Adaptors_images/Data-Adaptors_img3.png" %}
 
 ##WebAPI Adaptor
 
