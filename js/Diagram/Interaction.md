@@ -37,7 +37,7 @@ Allows you to add new text or edit an existing text</td></tr>
 <tr>
 <td>
 endPointTool</td><td>
-Allow you to drag connector’s end point </td></tr>
+Allow you to drag connector's end point </td></tr>
 <tr>
 <td>
 resizeTool</td><td>
@@ -171,7 +171,7 @@ boolean</td><td>
 Gets or sets whether the User handle is enabled for  multiple selection </td></tr>
 </table>
 
-The following example describes how to create 'userHandle' in diagram to delete selected objects.
+The following example describes how to create `userHandle` in diagram to delete selected objects.
 
 * Create handle
 * Create tool for handle
@@ -364,7 +364,7 @@ Touch support for Diagram view has the following features:
 
 ### SnapToGrid
 
-The **snap-to-grid** feature allows diagram objects to snap the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design. The snapToGrid feature is enabled by using a `snapSetting`’s `SnapConstraints` property.
+The **snap-to-grid** feature allows diagram objects to snap the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design. The snapToGrid feature is enabled by using a `snapSetting`'s `SnapConstraints` property.
 
 <table>
 <tr>
@@ -401,7 +401,7 @@ Gets or sets whether snapping to gridlines option is enabled or not</td></tr>
 
 ### Enable snapping 
 
-Snapping to gridlines is enabled or disabled by changing the value of snap Setting’s `SnapConstraints` as `ej.datavisualization.Diagram.SnapConstraints`
+Snapping to gridlines is enabled or disabled by changing the value of `snapSetting`'s `SnapConstraints` as `ej.datavisualization.Diagram.SnapConstraints`
 
 {% highlight js %}
 

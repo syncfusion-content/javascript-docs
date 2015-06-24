@@ -168,11 +168,11 @@ $("#diagram").ejDiagram({
 
 ### Customizing the organizational chart
 
-Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function, explained as follows.
+Organizational chart layout starts parsing from root and iterate through all its child elements. `getLayoutInfo` method provides necessary information of a `node`'s `children` and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function, explained as follows.
 
 ### GetLayoutInfo
 
-You can set Chart orientations, chart types and offset to be left between parent and child nodes by overriding the method `diagram.model.layout.getLayoutInfo`.
+You can set Chart orientations, chart types and offset to be left between parent and child nodes by overriding the method `getLayoutInfo`.
 
 #### Arguments
 
@@ -205,7 +205,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-Following table illustrates the properties that “options” argument takes.
+Following table illustrates the properties that `options` argument takes.
 
 <table>
 <tr>

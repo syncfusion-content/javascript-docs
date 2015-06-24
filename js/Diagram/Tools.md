@@ -9,7 +9,7 @@ documentation: ug
 
 # Tools
 
-When interacting on a diagram’s surface, the `tool` property decides the action to be performed. When more than one tool is applied, using bitwise OR, the necessary tool is picked based on the interaction gesture, the value of Tool property and precedence.
+When interacting on a diagram's surface, the `tool` property decides the action to be performed. When more than one tool is applied, using bitwise OR, the necessary tool is picked based on the interaction gesture, the value of Tool property and precedence.
 
 <table>
 <tr>

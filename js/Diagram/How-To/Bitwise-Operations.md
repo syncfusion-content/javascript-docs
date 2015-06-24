@@ -13,7 +13,7 @@ documentation: ug
 
 ### Add Operation
 
-You can **add** or **enable** multiple values at a time by using **Bitwise** ‘\|’ (OR) **operator**.
+You can **add** or **enable** multiple values at a time by using **Bitwise** '\|' (OR) **operator**.
 
 {% highlight js %}
 
@@ -25,7 +25,7 @@ In the above example, you can do both selection and rotation.
 
 ### Remove Operation
 
-You can **remove** or **disable** values by using **Bitwise** ‘&#x0026;&#x007E;’ (XOR) **operator**.
+You can **remove** or **disable** values by using **Bitwise** '&#x0026;&#x007E;' (XOR) **operator**.
 
 {% highlight js %}
 
@@ -37,7 +37,7 @@ In the above example, **Rotation** is disabled but other constraints are enabled
 
 ### Check Operation 
 
-You can check any values using **Bitwise** ‘&’ (AND) **operator**.
+You can check any values using **Bitwise** '&' (AND) **operator**.
 
 {% highlight js %}
 

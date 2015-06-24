@@ -15,7 +15,7 @@ Nodes are graphical object that represents visual data to be placed on the page.
 
 ## Create Node
 
-Node is created from JSON data and added to the Diagram model using diagram model’s `node` property. The `node`’s `name` must be unique. The following code illustrates how to create a node and add it to the Diagram.
+Node is created from JSON data and added to the Diagram using `nodes` property. The `node`'s `name` must be unique. The following code illustrates how to create a node and add it to the Diagram.
 
 {% highlight js %}
 //create a node with default shape (Rectangle)
@@ -57,7 +57,7 @@ Diagram has a collection of predefined shapes. The shape to be drawn can be set 
 
 ### Rectangle
 
-You can create a rectangle shape by setting the type of `node`’s `type` as `ej.datavisualization.Diagram.Shapes.Basic` and `node`’s `shape` as `ej.datavisualization.Diagram.BasicShapes.Rectangle`. The following code illustrates how a rectangle node is created.
+You can create a rectangle shape by setting the type of `node`'s `type` as `ej.datavisualization.Diagram.Shapes.Basic` and `node`'s `shape` as `ej.datavisualization.Diagram.BasicShapes.Rectangle`. The following code illustrates how a rectangle node is created.
 
 {% highlight js %}
 
@@ -131,7 +131,7 @@ var node = {
 
 ### Path
 
-You can create complex shapes using **Path shape node**. It is achieved by assigning path string to `shape`’s `pathData`. The following code illustrates how a `Path` node is created.
+You can create complex shapes using **Path shape node**. It is achieved by assigning path string to `shape`'s `pathData`. The following code illustrates how a `Path` node is created.
 
 {% highlight js %}
 
@@ -149,7 +149,7 @@ var node = {
 
 ### Polygon
 
-You can create **Polygon** shape by setting `node`’s type as `ej.datavisualization.Diagram.Shapes.Polygon` and assigns the desired points to the `node`’s `point` property.
+You can create **Polygon** shape by setting `node`'s type as `ej.datavisualization.Diagram.Shapes.Polygon` and assigns the desired points to the `node`'s `point` property.
 
 {% highlight js %}
 
@@ -177,7 +177,7 @@ var node = {
 
 ### Native 
 
-Diagram supports to add **SVG** content as shape content. It is achieved by setting node’s type as `ej.datavisualization.Diagram.Shapes.Native` and assigns the template id to the `templateId` property. The `templateId` property receives id svg template. The following code illustrates how a Native node is created.
+Diagram supports to add **SVG** content as shape content. It is achieved by setting node's type as `ej.datavisualization.Diagram.Shapes.Native` and assigns the template id to the `templateId` property. The `templateId` property receives id svg template. The following code illustrates how a Native node is created.
 
 {% highlight html %}
 <!-- dependency scripts -->
@@ -205,7 +205,7 @@ var node = {
 
 > **Note:** Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
 
-> **Note:** Fill color will be applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node’s fill color is overridden by the specified color for the group.
+> **Note:** Fill color will be applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node's fill color is overridden by the specified color for the group.
 
 {% highlight html %}
 <svg>
@@ -218,7 +218,7 @@ var node = {
 
 ### Image
 
-You can add **Image** as a node to the Diagram by setting node’s type as `ej.datavisualization.Diagram.Shapes.Image` and set the image URL to `source` property of shape. The following code illustrates how an Image node is created.
+You can add **Image** as a node to the Diagram by setting node's type as `ej.datavisualization.Diagram.Shapes.Image` and set the image URL to `source` property of shape. The following code illustrates how an Image node is created.
 
 {% highlight js %}
 
@@ -352,7 +352,7 @@ var node = {
 
 **Node Constraints**
 
-You can enable or disable certain behaviors of Nodes by using `Node`’s `constraints` property.
+You can enable or disable certain behaviors of Nodes by using `Node`'s `constraints` property.
 
 <table>
 <tr>
@@ -461,4 +461,4 @@ node.constraints = node.constraints & ~(ej.datavisualization.Diagram.NodeConstra
 
 {% include image.html url="/js/Diagram/Node_images/Node_img14.png" %}
 
-> **Note:** Node’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
+> **Note:** Node's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).

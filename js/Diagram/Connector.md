@@ -15,7 +15,7 @@ Connectors are objects used to create a link between two nodes. A connector is a
 
 ## Create Connector
 
-`Connector` is created from JSON data and added to the Diagram using `diagram`'s `connectors` property. The `connector`’s `name` must be unique. By default, the connector type is `straight`. The following code illustrates how to create a Connector and add it to Diagram.
+`Connector` is created from JSON data and added to the Diagram using `diagram`'s `connectors` property. The `connector`'s `name` must be unique. By default, the connector type is `straight`. The following code illustrates how to create a Connector and add it to Diagram.
 
 {% highlight js %}
 
@@ -37,7 +37,7 @@ $("#Diagram").ejDiagram({
 
 ## Connecting Nodes
 
-Connector is connected to the bounds of the node and at a specific point on the node. You are required to assign the source node name to `connector`’s `sourceNode` property and target node name to `connector`’s `targetNode` property, in order to establish the connection. The port to port connection between specific points on node is established by assigning the name of the node’s port to `connector`’s `targetPort`/`sourcePort`. At runtime, you can change the point of connection while dragging or rotating node.
+Connector is connected to the bounds of the node and at a specific point on the node. You are required to assign the source node name to `connector`'s `sourceNode` property and target node name to `connector`'s `targetNode` property, in order to establish the connection. The port to port connection between specific points on node is established by assigning the name of the node's port to `connector`'s `targetPort`/`sourcePort`. At runtime, you can change the point of connection while dragging or rotating node.
 
 {% highlight js %}
 
@@ -122,7 +122,7 @@ Orthogonal segments are visually represented based on the specified length and d
 
 {% highlight js %}
 
-//initializing model.connectors
+//initializing connectors
 var connectors = [];
 
 //Default Orthogonal Segment
@@ -137,7 +137,7 @@ var connectors = [{
    targetPoint: { x: 400, y: 150 }
 }];
 
-//add connectors to diagram model
+//add connectors to diagram
 $("#Diagram").ejDiagram({
    connectors: connectors
 });
@@ -165,7 +165,7 @@ var connectors = [{
    targetPoint: { x: 400, y: 150}
 }];
 
-//add connectors to diagram model
+//add connectors to diagram
 $("#Diagram").ejDiagram({
    connectors: connectors
 });
@@ -254,7 +254,7 @@ The `segments` can be edited during runtime by dragging control thumbs. Segments
 
 ## Connector Padding
 
-`connectorPadding` allows you to adjust the space between connector’s end point and the object to which it is connected (Node, Group, or Port). 
+`connectorPadding` allows you to adjust the space between connector's end point and the object to which it is connected (Node, Group, or Port). 
 
 ### Endpoint adjustment specific to connector ends
 
@@ -312,7 +312,7 @@ var connector = [{
    constraints: constraint
 }];
 
-//Enable Line Bridging for all connectors added to diagram model
+//Enable Line Bridging for all connectors added to diagram
 var constraints = ej.datavisualization.Diagram.DiagramConstraints;
 var constraint = constraints1.Bridging | constraints1.Default;
 
@@ -328,7 +328,7 @@ When the connector constraint is set as `ConnectorConstraints.InheritBridging`, 
 
 ### Line Bridging Direction
 
-Direction of the Line Bridge can be customized using the `bridgeDirection` property. This property decides the intersecting segment that shows a bridge based on your preferred direction. The default value for the Diagram model’s `bridgeDirection` property is `ej.datavisualization.Diagram.BridgeDirection.Top`.
+Direction of the Line Bridge can be customized using the `bridgeDirection` property. This property decides the intersecting segment that shows a bridge based on your preferred direction. The default value for the Diagram's `bridgeDirection` property is `ej.datavisualization.Diagram.BridgeDirection.Top`.
 
 <table>
 <tr>
@@ -400,7 +400,7 @@ var connector = {
 
 ## Decorator
 
-You can decorate the source point and target point of the connector using decorator shape. The `sourceDecorator` and `targetDecorator` properties are used to add decorators to connector. The following code illustrates how decorator is created and added at connector’s target point.
+You can decorate the source point and target point of the connector using decorator shape. The `sourceDecorator` and `targetDecorator` properties are used to add decorators to connector. The following code illustrates how decorator is created and added at connector's target point.
 
 {% highlight js %}
 
@@ -553,4 +553,4 @@ The following code illustrates how to disable `select` constraints of `connector
 connector.constraints = connector.Constraints & ~(ej.datavisualization.Diagram.ConnectorConstraints.Select);
 {% endhighlight %}
 
-> **Note:** Connector’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations). 
+> **Note:** Connector's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations). 

@@ -51,7 +51,7 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 
 ## Define Employee Information
 
-Define “Employee Information” as JSON data. The following code example shows a list of employees whose ‘Name’ value is used as a unique identifier and the ‘ReportingPerson’ value is used to identify the person to whom they report to in the organization.
+Define “Employee Information” as JSON data. The following code example shows a list of employees whose `Name` value is used as a unique identifier and the `ReportingPerson` value is used to identify the person to whom they report to in the organization.
 
 {% highlight js %}
 //Include the script in the <Script> </Script> tag.

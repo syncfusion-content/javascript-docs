@@ -16,7 +16,7 @@ documentation: ug
 The following code illustrates how to create a port and add it to nodes port array.
 
 {% highlight js %}
-//create a port and it to node’s ports array. 
+//create a port and it to node's ports array. 
 var node = {
    ports: [{
       name: "port1",
@@ -34,7 +34,7 @@ var node = {
 
 ## Connecting Ports
 
-The connection between specific ports on the node is established by assigning the name of the node’s port to connector’s target port/source port. The following code illustrates how to establish a port connection:
+The connection between specific ports on the node is established by assigning the name of the node's port to connector's target port/source port. The following code illustrates how to establish a port connection:
 
 {% highlight js %}
 //create nodes with ports
@@ -145,7 +145,7 @@ var port = {
 
 ## Constraints
 
-You can enable or disable certain behaviors of Port using `Port`’s `constraints` property. 
+You can enable or disable certain behaviors of Port using `Port`'s `constraints` property. 
 
 <table>
 <tr>
@@ -166,10 +166,10 @@ The following code illustrates how to set port constraints.
 
 {% highlight js %}
 
-//set port’s "Connect" constraint
+//set port's "Connect" constraint
 var port = {
    constraints: ej.datavisualization.Diagram.PortConstraints.Connect
 };
 {% endhighlight %}
 
-> **Note:** Port’s constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
+> **Note:** Port's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).

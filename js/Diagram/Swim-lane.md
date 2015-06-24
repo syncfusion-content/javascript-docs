@@ -16,11 +16,11 @@ Swim-lane diagrams are typically used to visualize a relationship between a busi
 The following steps illustrates how to create a simple **swim lane**.
 
 ## Creating a Swim Lane 
-Creating a swim lane is as simple as adding a node with some nested properties. Just add an object in the node’s collection with the type as swimlane and specify its name, orientation, size, and position. The swim lane cannot be blank; therefore, lanes and phases have to be added.
+Creating a swim lane is as simple as adding a node with some nested properties. Just add an object in the node's collection with the type as swimlane and specify its name, orientation, size, and position. The swim lane cannot be blank; therefore, lanes and phases have to be added.
 {% highlight js %}
 var swimlane = {
       
-      // Type is used to identify which kind of node is added in the model.
+      // Type is used to identify which kind of node is added in the diagram.
       type: "swimlane",
       
       // Name is used as a unique identifier of the object.
@@ -29,7 +29,7 @@ var swimlane = {
       // Orientation is used to set the orientation.
       orientation: "horizontal",
       
-      // These specify the swim lane’s dimensions.
+      // These specify the swim lane's dimensions.
       offsetX: 400,
       offsetY: 200,
       height: 100,
@@ -37,7 +37,7 @@ var swimlane = {
 }
 {% endhighlight %}
 ## Adding Lanes 
-Any number of lanes can be added by using the lanes collection, as shown in the following code. To visualize the lanes, each lane’s size and color have to be specified.
+Any number of lanes can be added by using the lanes collection, as shown in the following code. To visualize the lanes, each lane's size and color have to be specified.
 {% highlight js %}
 var swimlane = {
     type: "swimlane",
@@ -52,7 +52,7 @@ var swimlane = {
 }
 {% endhighlight %}
 ## Adding Phases 
-Any number of phases can be added by using the phases collection, as shown in the following code. Offset is used to define the phase’s distance from the left side of the lane or from the previous phase.
+Any number of phases can be added by using the phases collection, as shown in the following code. Offset is used to define the phase's distance from the left side of the lane or from the previous phase.
 {% highlight js %}
 var swimlane = {
     type: "swimlane",

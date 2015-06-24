@@ -21,7 +21,7 @@ The Diagram is serialized as JSON data while saving and Diagram is loaded from t
 {% highlight js %}
 var diagram = $("#Diagram").ejDiagram("instance");
 
-//returns diagram model’s json data
+//returns diagram's json data
 var json = diagram.save();
 
 //load the diagram using saved json data 

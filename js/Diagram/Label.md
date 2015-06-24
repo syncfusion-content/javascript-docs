@@ -13,7 +13,7 @@ documentation: ug
 
 ## Create Label
 
-`Node`’s/`Connector`’s `labels` property holds an array of **Label** objects. The following code illustrates how to create a Label.
+`Node`'s/`Connector`'s `labels` property holds an array of **Label** objects. The following code illustrates how to create a Label.
 
 {% highlight js %}
 //create a label 
@@ -145,7 +145,7 @@ diagram.updateLabel(node.name, node.labels[0], label);
 
 ## Read-only Label
 
-To prevent label editing, set Label’s `readOnly` property as `True`. After setting the Label to `readOnly` mode, when you double clicking on the Label, it is not moved to `Edit` mode. However. Even after `readOnly` is set as true, you can programmatically move the label to edit mode.
+To prevent label editing, set `label`'s `readOnly` property as `True`. After setting the Label to `readOnly` mode, when you double clicking on the Label, it is not moved to `Edit` mode. However. Even after `readOnly` is set as true, you can programmatically move the label to edit mode.
 
 {% highlight js %}
 //label readOnly mode
@@ -280,7 +280,7 @@ Text-wrapping occurs when the text overflows beyond the available node width. Ho
 
 ### Width
 
-By default, label wraps the text based on its parent element’s size (node/group/connector). You can override this by using `width` property. When the label width is set, label acts like a container and wraps the label based on width specified. The following code example illustrates how to set the label width.
+By default, label wraps the text based on its parent element's size (node/group/connector). You can override this by using `width` property. When the label width is set, label acts like a container and wraps the label based on width specified. The following code example illustrates how to set the label width.
 
 {% highlight js %}
 

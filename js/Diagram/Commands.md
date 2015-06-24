@@ -176,7 +176,7 @@ diagram.sameWidth();
 
 ### Cut
 
-`cut` the selected elements from the Diagram to the Diagram’s clipboard. The following code illustrates how to execute Cut command.
+`cut` the selected elements from the Diagram to the `Diagram`'s clipboard. The following code illustrates how to execute Cut command.
 
 {% highlight js %}
 
@@ -187,7 +187,7 @@ diagram.cut();
 
 ### Copy
 
-`copy` the selected elements from the Diagram to the Diagram’s clipboard. The following code illustrates how to execute Copy command.
+`copy` the selected elements from the Diagram to the `Diagram`'s clipboard. The following code illustrates how to execute Copy command.
 
 {% highlight js %}
 
@@ -198,7 +198,7 @@ diagram.copy();
 
 ### Paste
 
-'paste` the Diagram’s clipboard data (nodes/connectors) into the Diagram. The following code illustrates how to execute Paste command.
+`paste` the `Diagram`'s clipboard data (nodes/connectors) into the Diagram. The following code illustrates how to execute Paste command.
 
 {% highlight js %}
 
@@ -247,7 +247,7 @@ These commands provide support to control overlapping objects.
 
 ### bringToFront Command
 
-The `bringToFront` command moves the selected element over other elements by increasing the selected element’s z-index to Diagram element’s maximum value. The following code illustrates how to execute the BringToFront command.
+The `bringToFront` command moves the selected element over other elements by increasing the selected element's z-index to Diagram element's maximum value. The following code illustrates how to execute the BringToFront command.
 
 {% highlight js %}
 
@@ -260,7 +260,7 @@ diagram.bringToFront();
 
 ### sendToBack Command
 
-The `sendToBack` command moves the selected element behind all other elements by setting the selected element’s z-index to zero. The following code illustrates how to execute sendToBack command.
+The `sendToBack` command moves the selected element behind all other elements by setting the selected element's z-index to zero. The following code illustrates how to execute sendToBack command.
 
 {% highlight js %}
 

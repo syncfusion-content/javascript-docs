@@ -15,7 +15,7 @@ documentation: ug
 
 ## SnapConstraints
 
-The Diagram model’s `snapSettings.SnapContraints` property is used to control snap to grid behavior and visibility of gridlines. 
+The Diagram's `snapSettings.SnapContraints` property is used to control snap to grid behavior and visibility of gridlines. 
 
 <table>
 <tr>

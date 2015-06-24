@@ -52,7 +52,7 @@ $("#palette").ejSymbolPalette({
 
 ## Adding Node and Connector
 
-The Diagram provides support for adding nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer. The desired palette item that is clicked, is added to the Diagram when you set the desired Diagram id to the Symbol Palette’s diagramId.
+The Diagram provides support for adding nodes and connectors through the Symbol Palette. To add a node to the Diagram, drag the desired symbol from the SymbolPalette to the drawing area and release the pointer. The desired palette item that is clicked, is added to the Diagram when you set the desired Diagram id to the Symbol Palette's `diagramId`.
 
 {% include image.html url="/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png" %}
 

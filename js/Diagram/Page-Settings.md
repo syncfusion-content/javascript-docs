@@ -98,8 +98,8 @@ When `multiplePage` is enabled, size of the page dynamically increases or decrea
 Autoscroll feature automatically scrolls the Diagram whenever the node or connector is beyond the boundary of the diagram so that, it is always visible during dragging, resizing and multiple selection operations. Autoscroll is automatically triggered when, any one of the following is dragged towards edges of the diagram.
 
 * Node dragging
-* Node’s control points: resizer, rotator
-* Connector’s control points: end point, segment
+* Node's control points: resizer, rotator
+* Connector's control points: end point, segment
 * Rubber band selection
 * Dropping item from palette
 

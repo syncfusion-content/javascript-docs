@@ -135,7 +135,7 @@ The following code illustrates how to bind remote data to the Diagram.
 
 {% highlight js %}
 
-//Initialize Diagram Model
+//Initialize Diagram
 $("#diagram").ejDiagram({
 
    //To customize node before rendering
