@@ -31,20 +31,22 @@ Refer to the following code examples.
             <li data-ej-text="School-age Crafts"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $("#defaultlistbox").ejListView({ width: 300, height: 600 });
         });
-    </script>
-
-
-
 
 {% endhighlight %}
 
 
 
-**Screenshot:**
+Run the code to get the following output
 
 {% include image.html url="/js/ListView/Dimensions_images/Dimensions_img1.png" %}
 

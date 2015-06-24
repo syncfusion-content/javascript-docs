@@ -16,7 +16,7 @@ You can customize the size of the **Tile** by using **“data-ej-tileSize”** a
 3. large
 4. wide
 
-The default **TileSize** value is set to s**mall.**
+The default **TileSize** value is set to **small**.
 
 Refer to the following code examples.
 
@@ -25,7 +25,9 @@ Refer to the following code examples.
     <div id="tile"></div>
     
 {% endhighlight %}   
-  
+
+Add the following code inside the **script** tag.
+
 {% highlight js %}
     
         $("#tile").ejTile({

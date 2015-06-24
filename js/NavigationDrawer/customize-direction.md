@@ -13,7 +13,7 @@ By using this property you can set the drawer to be open from right to left dire
 
 {% highlight html %}
 
-        <div id="main" style="height:700px;">
+    <div id="main" style="height:700px;">
         <div id="navpane">
             <ul>
                 <li>Settings</li>
@@ -26,14 +26,13 @@ By using this property you can set the drawer to be open from right to left dire
 
 {% endhighlight %}
 
+Add the following code in the **script** tag.
+
 {% highlight js %}
     
         $("#navpane").ejNavigationDrawer({ direction: "right", position: "fixed", enableListView: true, listViewSettings: { width: 300 } });
 
 {% endhighlight %}
-
-
-
 
 
 The following screenshot displays the output by swiping from right to left at the right side end of the screen.

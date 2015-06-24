@@ -32,6 +32,9 @@ Refer to the following code examples.
     <div id="tile"></div>
     
 {% endhighlight %}
+ 
+Add the following code inside the **script** tag.
+ 
 {% highlight js %}
 
     $("#tile").ejTile({ tileSize: "wide", imagePosition: "center", imageUrl: "http://js.syncfusion.com/UG/web/Content/tile/Weather_2.png", text: "weather" });
@@ -40,18 +43,19 @@ Refer to the following code examples.
 
 
 
-{% include image.html url="/js/Tile/Image-Configuration_images/Image-Configuration_img1.png" Caption="Tile - Image URL and Image Position"%}
+{% include image.html url="/js/Tile/Image-Configuration_images/Image-Configuration_img1.png"%}
 
 You can give images for each tile through **css** classes by using **"data-ej-imageclass”** attribute. You can define your desired styles in the specified class.
 
 Refer to the following code examples.
 
-{% highlight javascript %}
+{% highlight html %}
 
     <div id="tile"></div>
-<script>
-    $("#tile").ejTile({ tileSize: "medium", imagePosition: "center", **imageClass: "pictures"**, text: "Pictures" })
-</script>
+    
+{% endhighlight %}
+
+{% highlight css %}
     <style>
         .pictures {
             background: url("http://js.syncfusion.com/UG/web/Content/tile/pictures.png");
@@ -59,10 +63,15 @@ Refer to the following code examples.
         }
     </style>
 
+{% endhighlight %}
+
+Add the following code inside the **script** tag.
+
+{% highlight js %}
+
+    $("#tile").ejTile({ tileSize: "medium", imagePosition: "center", imageClass: "pictures", text: "Pictures" });
 
 {% endhighlight %}
 
-
-
-{% include image.html url="/js/Tile/Image-Configuration_images/Image-Configuration_img2.png" Caption="Tile – Image Class"%}
+{% include image.html url="/js/Tile/Image-Configuration_images/Image-Configuration_img2.png"%}
 
