@@ -13,34 +13,6 @@ This section explains briefly about how to create a **Gantt****chart** in your a
 
 ## Create your first Gantt in JavaScript
 
-### Control Structure
-
-Gantt chart is used to edit and visualize project schedule, and also to track progress of a task. The following screenshot illustrates the elements that constitute a **Gantt** chart.
-
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img1.png" Caption="Gantt chart"%}
-
-* **Toolbar** – It is a collection of toolbar buttons to add, edit, or delete a task. You can indent or outdent a task, using their respective buttons. Following screenshot illustrates the function of each toolbar button,
-
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img2.png" Caption="Toolbar of Gantt chart"%}
-
-* **Search Textbox** – It is used to search tasks that contain a search string.
-
-* **Resource Names** – It displays the names of the resources assigned to a task.
-
-* **Task bar** – It is a graphical representation of the duration of task.
-
-* **Task Progress** – It displays the percentage of the task completed.
-
-* **Header** – It represents time-scale based on which a task bar is drawn.
-
-* **Tree Grid** – It displays the tasks and its sub tasks in a hierarchical table.
-
-* **Task Relationship** – It determines when to start or finish a task.
-
-* **Interactive Editing** – You can edit the duration of a task, by simply dragging or resizing the task bar. Following screenshot illustrates how this works.
-
-{% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img3.png" Caption="Customization of Gantt "%}
-
 ### Create your Gantt chart
 
 In this tutorial, you can learn how to create a simple Gantt chart, add tasks or subtasks, and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial,
