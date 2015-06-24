@@ -669,7 +669,7 @@ When you execute the sort query and binding the result to the table, the followi
    </tr>
 </table>
 
-{% include image.html url="/js/DataManager/DataManager-GettingStarted/Data with Sorting.png" %}
+
 
 ##Page
 You can generate the **Paging** query to get the top four orders and it is executed using the **DataManager**.  
@@ -801,4 +801,4 @@ When you execute the paging query and binding the result to the table, the follo
    </tr>
 </table>
 
-{% include image.html url="/js/DataManager/DataManager-GettingStarted/Data with Paging.png" %}
+
