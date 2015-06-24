@@ -27,7 +27,7 @@ By default, there are **13** kinds of theming supports available for **Essential
 * gradient-saffron-dark
 * bootstrap-theme
 
-The **Essential Studio** Suite provides a css file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the **EJ web components**. All the above specified theme files are available within the **css** folder which is depicted [here](http://helpjs.syncfusion.com/js/installation-and-deployment#assets).
+The **Essential Studio** Suite provides a css file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the **EJ web components**. All the above specified theme files are available within the **css** folder which is depicted [here](/js/installation-and-deployment#assets).
 
 ## Adding specific theme to your application
 
@@ -170,7 +170,7 @@ Also, refer the required css file (**ej.web.all.min.css**) in your application a
 
 To replace the entire css file with your own customized CSS class name, you need to copy the non-minified version (Src->**assets-src** folder) of the required theme file into your application and then modify it as per your needs. Also, make sure that the reference to it has been made in the HTML page and also the Customized class name set to the **cssClass** property of the EJ components. 
 
-The non-minified version of the css files are present within the **assets-src** folder, as mentioned earlier in this [section](http://helpjs.syncfusion.com/js/installation-and-deployment#src). 
+The non-minified version of the css files are present within the **assets-src** folder, as mentioned earlier in this [section](/js/installation-and-deployment#src). 
 
 To customize the entire css file and refer it in your HTML page - Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the non-minified version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (non-minified) file present within the **flat-saffron** theme folder in our application)
 {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img6.png" %}

@@ -62,7 +62,7 @@ The date formats, day names and month names are automatically translated into th
 
 #### Example 1: Defining locale property in the DatePicker control using built-in localized texts - Static
 
-Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](http://helpjs.syncfusion.com/js/control-initialization). The very first requirement to localize the DatePicker control into **de-DE** culture is to refer the **globalize.culture.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
+Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](/js/control-initialization). The very first requirement to localize the DatePicker control into **de-DE** culture is to refer the **globalize.culture.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
 
 Copy the file **globalize.culture.de-DE.min.js** into the **Scripts** folder of your application and then refer it along with the other script and css reference in the head section. Also, define the **locale** property for the DatePicker control with the appropriate **culture-code [de-De]** as shown below,
 
