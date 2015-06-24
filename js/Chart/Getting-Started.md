@@ -15,7 +15,7 @@ This section explains briefly you on how to create a **Chart** in your applicati
 
 This section encompasses on how to configure the **Charts** for your business requirements. You can also pass the required data to default **Chart** and customize it according to your requirements. In this example, you can see how to display the average climate data for Washington, DC during the period 1961 -1990.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img1.png" Caption="Chart"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img1.png" %}
 
 ### Create a Chart
 
@@ -83,7 +83,7 @@ The above code example renders a **Chart** with the default **Column series** ty
 
 The following screenshot displays the Chart.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img2.png" Caption="Chart"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img2.png" %}
 
 ## Add a Chart series
 
@@ -133,7 +133,7 @@ By default, line series is used. To create a **series**, you need to add the fol
 
 The following screenshot displays a Chart series:
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img3.png" Caption="Chart Series"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img3.png" %}
 
 ## Add JSON data to the Chart
 
@@ -209,7 +209,7 @@ Now, set the **datasource** to the **Chart** series using **data, xName, yName**
 
 The following screenshot displays the Chart when **JSON** data is added.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img4.png" Caption="Chart with JSON data"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img4.png" %}
 
 ## Add Chart Axis of your choice
 
@@ -303,7 +303,7 @@ To assign the **axis** to the respective series, you can set **yAxisName** prope
 
 The following screenshot displays a Chart with the desired output.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img5.png" Caption="Chart with axes"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img5.png" %}
 
 ## Add Data Labels
 
@@ -344,7 +344,7 @@ The following screenshot displays a Chart with the desired output.
 
 The following screenshot displays a Chart when data labels are enabled.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img6.png" Caption="Chart with Data Labels"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img6.png" %}
 
 ## Enable Tooltip
 
@@ -389,5 +389,5 @@ To display the **tooltip** of **Chart** series, you can enable the “**visible*
 
 The following screenshot displays a Chart when tooltip is enabled.
 
-{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img7.png" Caption="Chart with ToolTip"%}
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img7.png" %}
 

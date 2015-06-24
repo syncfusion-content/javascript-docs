@@ -62,7 +62,7 @@ The following screenshot displays Accumulation Distribution indicator.
 
 
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img1.png" Caption="Accumulation Distribution indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img1.png" %}
 
 ## Average True Range Indicator
 
@@ -93,7 +93,7 @@ Average true range Indicator is one of the technical indicator supported by **ej
 
 The following screenshot displays the Average true range indicator.
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img2.png" Caption="Average true range indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img2.png" %}
 
 ## Bollinger Band Indicator
 
@@ -127,7 +127,7 @@ Bollinger Band Indicator is one of the technical indicator supported by **ejChar
 
 The following screenshot displays the Bollinger Band indicator.
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img3.png" Caption="Bollinger Band indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img3.png" %}
 
 ## Exponential Moving Average Indicator
 
@@ -156,7 +156,7 @@ Exponential Moving Average Indicator is one of the technical indicator supported
 
 The following screenshot displays the Exponential Moving Average Indicator
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img4.png" Caption="Exponential Moving Average Indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img4.png" %}
 
 ## Momentum Technical Indicator
 
@@ -188,7 +188,7 @@ Momentum is one of the technical indicator supported by **ejChart**. The indicat
 
 The following screenshot displays the momentum technical indicator.
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img5.png" Caption="Momentum technical indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img5.png" %}
 
 ## Moving Average Convergence Divergence Indicator
 
@@ -226,7 +226,7 @@ The following screenshot displays the momentum technical indicator.
 
 The following screenshot displays the MACD technical indicator
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img6.png" Caption="MACD Indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img6.png" %}
 
 ## Relative Strength Index Indicator
 
@@ -260,7 +260,7 @@ The following screenshot displays the MACD technical indicator
 
 The following screenshot displays the **RSI** technical indicator
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img7.png" Caption="RSI technical indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img7.png" %}
 
 ## Simple Moving Average Indicator
 
@@ -295,13 +295,13 @@ Simple Moving Average Indicator is one of the technical indicators supported by 
 
 The following screenshot displays the Simple Moving Average Indicator.
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img8.png" Caption="Simple Moving Average Indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img8.png" %}
 
 ## Stochastic Technical Indicator
 
 Stochastic technical indicator is one of the most common indicators used in technical analysis. The indicators render four lines namely upper line, lower line, stochastic line and signal line. Upper line always render at value 80 and lower line is render at value 20. Stochastic and Signal Lines are calculated based on stochastic formulas. You can also customize the width and color of the all lines. 
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img9.png" Caption="Stochastic technical indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img9.png" %}
 
 {% highlight js %}
 
@@ -358,7 +358,7 @@ Triangular Moving Average Indicator is one of the technical indicator supported 
 
 The following screenshot displays the Triangular Moving Average indicator.
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img10.png" Caption="Triangular Moving Average indicator"%}
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img10.png" %}
 
 
 

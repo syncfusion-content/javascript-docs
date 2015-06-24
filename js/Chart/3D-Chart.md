@@ -47,7 +47,7 @@ The following are **3D** series types:
 
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img1.png" Caption="3D Column Chart"%}
+{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img1.png" %}
 
 ### 3D Bar Chart
 
@@ -73,7 +73,7 @@ The following are **3D** series types:
 
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img2.png" Caption="3D Bar Chart"%}
+{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img2.png" %}
 
 ### 3D Stacking Column Chart
 
@@ -113,7 +113,7 @@ The following are **3D** series types:
 
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img3.png" Caption="3D Stacking Column Charts Chart"%}
+{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img3.png" %}
 
 ### 3D Stacking Bar Chart
 
@@ -150,7 +150,7 @@ The following are **3D** series types:
 
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img4.png" Caption="3D Stacking Bar"%}
+{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img4.png" %}
 
 ### 3D Pie Chart
 
@@ -184,7 +184,7 @@ The following are **3D** series types:
 
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img5.png" Caption="3D Pie Chart"%}
+{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img5.png" %}
 
 ### 3D Doughnut Chart
 
@@ -217,7 +217,7 @@ The following are **3D** series types:
 
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img6.png" Caption="3D Doughnut Chart"%}
+{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img6.png" %}
 
 ### 100% 3D Stacking Column
 
@@ -257,7 +257,7 @@ The following are **3D** series types:
 
 The following screenshot displays the **100% 3D Stacking Column.**
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img7.png" Caption="100% 3D Stacking Column"%}
+{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img7.png" %}
 
 ### 100% 3D Stacking Bar
 
@@ -297,5 +297,5 @@ The following screenshot displays the **100% 3D Stacking Column.**
 
 The following screenshot displays the **100% 3D Stacking Bar**.
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img8.png" Caption="100% 3D Stacking Bar."%}
+{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img8.png" %}
 

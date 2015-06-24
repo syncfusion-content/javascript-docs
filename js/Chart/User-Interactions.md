@@ -35,7 +35,7 @@ By default the visibility of **tooltip** is set to **false**, but you can change
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img1.png" Caption="Chart with Tooltip"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img1.png" %}
 
 ### Tooltip format
 
@@ -67,7 +67,7 @@ format: " **#point.x# #series.name# #point.high# #point.low# #point.open# #point
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img2.png" Caption="Chart with formatted ToolTip"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img2.png" %}
 
 ### Customize the tooltip border 
 
@@ -91,7 +91,7 @@ EjChart provides you options to customize the border of the tooltip. You can cha
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img3.png" Caption="Chart with Customized ToolTip border"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img3.png" %}
 
 ### Changing the tooltip fill color
 
@@ -113,7 +113,7 @@ You can modify the fill color of **tooltip**. By default the **tooltip** renders
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img4.png" Caption="Chart with Customized ToolTip Fill color"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img4.png" %}
 
 ### Customize the tooltip font
 
@@ -140,7 +140,7 @@ You can modify the fill color of **tooltip**. By default the **tooltip** renders
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img5.png" Caption="Chart with Customized ToolTip Font"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img5.png" %}
 
 ### Tooltip Animation
 
@@ -184,7 +184,7 @@ You can modify the fill color of **tooltip**. By default the **tooltip** renders
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img6.png" Caption="Chart with Animated ToolTip"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img6.png" %}
 
 ## Zooming and Panning
 
@@ -210,15 +210,15 @@ By default zooming is not enabled. You can enable it using the “enable” opti
 
 **Before zooming**
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img7.png" Caption="Chart before zooming"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img7.png" %}
 
 **Selection for zooming**
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img8.png" Caption="Chart with selected area for zooming"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img8.png" %}
 
 **After zooming**
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img9.png" Caption="Chart after zooming"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img9.png" %}
 
 ### Programmatic Zooming
 
@@ -260,7 +260,7 @@ Programmatically the Chart can be zoomed using **zoomPosition** and **zoomFactor
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img10.png" Caption="Chart with Programmatic zooming"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img10.png" %}
 
 ## Crosshair and Trackball
 
@@ -304,7 +304,7 @@ The following code example illustrates you on how to enable the **crosshair**.
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img11.png" Caption="Chart with Crosshairs enabled"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img11.png" %}
 
 ### Trackball
 
@@ -335,7 +335,7 @@ In order to track a data point closer to the mouse position or touch contact poi
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img12.png" Caption="Chart with Trackball"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img12.png" %}
 
 ## Drill Down
 
@@ -405,9 +405,9 @@ In order to track a data point closer to the mouse position or touch contact poi
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img13.png" Caption="Pie Chart with 2 parts"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img13.png" %}
 
 Details about the first segment/slice in pie Chart:
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img14.png" Caption="Details about the first segment or slice in Pie Chart"%}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img14.png" %}
 
