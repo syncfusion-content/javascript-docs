@@ -17,7 +17,7 @@ In the application that uses Gantt control, you can connect the data source gene
 
 ### Hierarchy Data-source Binding
 
-The following code example shows how to bind the hierarchical local data into the **Gantt** control.
+The following code example shows how to bind the hierarchical local data into the Gantt control.
 
 {% highlight js %}
 
@@ -76,24 +76,18 @@ The following code example shows how to bind the hierarchical local data into th
 
 {% endhighlight %}
 
-
-
 The output of the above steps is as follows.
 
-{% include image.html url="/js/Gantt/Data-Binding_images/Data-Binding_img1.png" Caption="Data Binding"%}
+{% include image.html url="/js/Gantt/Data-Binding_images/Data-Binding_img1.png"%}
 
 ### Self-Referential Data Binding (Flat Data)
 
 Gantt can be rendered from self-referential data structures, by providing two fields: ID field and parent ID field.
 
-* ID Field- This field must contain unique values used to identify nodes. It should be mapped to the **taskIdMapping** property.
-
-* Parent ID Field- This field must contain values that indicate parent nodes.  It should be mapped to the **parentTaskIdMapping** property.
-
-
+* ID Field- This field must contain unique values used to identify nodes. It should be mapped to the `taskIdMapping` property.
+* Parent ID Field- This field must contain values that indicate parent nodes.  It should be mapped to the `parentTaskIdMapping` property.
 
 {% highlight js %}
-
 
     var projectData1 = [
 
@@ -116,7 +110,6 @@ Gantt can be rendered from self-referential data structures, by providing two fi
     ];
 
         $(function () {
-
             $("#GanttContainer").ejGantt(
             {
                 dataSource: projectData,
@@ -136,12 +129,9 @@ Gantt can be rendered from self-referential data structures, by providing two fi
             });
         });
 
-
 {% endhighlight %}
-
-
 
 The following screenshot shows the output of the above steps.
 
-{% include image.html url="/js/Gantt/Data-Binding_images/Data-Binding_img2.png" Caption="Self-Referential Data Binding"%}
+{% include image.html url="/js/Gantt/Data-Binding_images/Data-Binding_img2.png"%}
 
