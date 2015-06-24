@@ -13,9 +13,9 @@ To make a **Tile** as grouped tile, you can use the following mentioned pre-defi
 
 <table>
 <tr>
-<td>
-<b>Class Name</b></td><td>
-<b>Explanation</b></td></tr>
+<th>
+Class Name</th><th>
+Explanation</th></tr>
 <tr>
 <td>
 group</td><td>
@@ -30,20 +30,17 @@ small-col-2</td><td>
 To align the small size tiles</td></tr>
 </table>
 
-
 To render group tile, refer to the following code example.
 
 {% highlight html %}
 
-<div class="**group**">
-    <div class="**column**">
-           <!— Add tile control here -->
+    <div class="**group**">
+        <div class="**column**">
+               <!— Add tile control here -->
+        </div>
     </div>
-</div>
 
 {% endhighlight %}
-
-
 
 To render **column** grouped tile, you need to render the number of tiles inside a **&lt;div&gt;** element with class ‘**column’**. Then that column group element is appended to a **&lt;div&gt;** with class ‘**group’**.     
 
@@ -52,39 +49,42 @@ To render **small-col-2** grouped tile, you need to render the number of tiles i
  Refer the following code examples.
 
 {% highlight html %}
-
-
-<div class="group">
-        <div class="column">
-            <div id="tile1">
+    
+    <div class="group">
+            <div class="column">
+                <div id="tile1">
+                </div>
+                <div id="tile2">
+                </div>
+                <div id="tile3">
+                </div>
+                <div id="tile4">
+                </div>
+                <div id="tile5">
+                </div>
             </div>
-            <div id="tile2">
-            </div>
-            <div id="tile3">
-            </div>
-            <div id="tile4">
-            </div>
-            <div id="tile5">
+            <div class="column">
+                <div id="tile6">
+                </div>
+                <div id="tile7">
+                </div>
+                <div id="tile8">
+                </div>
+                <div id="tile9">
+                </div>
+                <div id="tile10">
+                </div>
+                <div id="tile11">
+                </div>
             </div>
         </div>
-        <div class="column">
-            <div id="tile6">
-            </div>
-            <div id="tile7">
-            </div>
-            <div id="tile8">
-            </div>
-            <div id="tile9">
-            </div>
-            <div id="tile10">
-            </div>
-            <div id="tile11">
-            </div>
-        </div>
-    </div>
 
 {% endhighlight %}
+
+Add the following code inside the **script** tag.
+
 {% highlight js %}  
+       
         $("#tile1").ejTile({
             tileSize: "medium", 
             imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/alerts.png",
@@ -145,5 +145,5 @@ To render **small-col-2** grouped tile, you need to render the number of tiles i
 
 
 
-{% include image.html url="/js/Tile/Add-Group-Tiles_images/Add-Group-Tiles_img1.png" Caption="Tile - Group Tiles"%}
+{% include image.html url="/js/Tile/Add-Group-Tiles_images/Add-Group-Tiles_img1.png"%}
 
