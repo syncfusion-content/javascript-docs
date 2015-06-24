@@ -71,8 +71,6 @@ Define CSS class for customizing the TreeView.
 <style>
     .customCss .e-treeview {
         background-color: #E0E0E0;
-        /* Old browsers */
-        color: white;
         border: 1px solid transparent;
         border-image: initial;
     }

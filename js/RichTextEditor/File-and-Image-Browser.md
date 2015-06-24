@@ -37,18 +37,20 @@ Add the following code to initialize the **RTE** control in the page.
 
     // Render the RTE control in script section.
     var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
-    $(function () {
-        $("#rteSample").ejRTE({
-            //to showcase the image browser tool in rte toolbar
-            toolsList: ["images"],
-            tools: { images: ["image"] },
-            //This api enable the image browser support to the RTE control
-            imageBrowser: {
-                filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-                ajaxAction: fileService,
-                extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx"
-            },
-        });
+    $(function() {
+       $("#rteSample").ejRTE({
+          //to showcase the image browser tool in rte toolbar
+          toolsList: ["images"],
+          tools: {
+             images: ["image"]
+          },
+          //This api enable the image browser support to the RTE control
+          imageBrowser: {
+             filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+             ajaxAction: fileService,
+             extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx"
+          },
+       });
     });
 
 {% endhighlight %}
@@ -90,24 +92,26 @@ Add the following code to initialize the **RTE** control in the page.
 
     // Render the RTE control in script section
     var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
-    $(function () {
-        $("#rteSample").ejRTE({
-            //to showcase the image browser tool in rte toolbar
-            toolsList: ["images"],
-            tools: { images: ["image"] },
-            //This api enable the image browser support to the RTE control
-            imageBrowser: {
-                filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-                ajaxAction: fileService,
-                extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx"
-            },
-            //This api enable the file browser support to the RTE control
-            fileBrowser: {
-                filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-                ajaxAction: fileService,
-                extensionAllow: "*.txt, *.doc, *.pdf,*.docx"
-            }
-        });
+    $(function() {
+       $("#rteSample").ejRTE({
+          //to showcase the image browser tool in rte toolbar
+          toolsList: ["images"],
+          tools: {
+             images: ["image"]
+          },
+          //This api enable the image browser support to the RTE control
+          imageBrowser: {
+             filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+             ajaxAction: fileService,
+             extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx"
+          },
+          //This api enable the file browser support to the RTE control
+          fileBrowser: {
+             filePath: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+             ajaxAction: fileService,
+             extensionAllow: "*.txt, *.doc, *.pdf,*.docx"
+          }
+       });
     });
 
 {% endhighlight %}

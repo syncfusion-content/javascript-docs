@@ -30,19 +30,19 @@ Add the following code in your **HTML** page to initialize the **RTE** control.
 {% highlight html %}
 
 <div ng-app="syncApp" ng-controller="RTECtrl">
- <div id="control" style="float: left; width: 30%;">
-    <textarea id="rteSample" ej-rte e-width="100%" e-height="266" e-value="rteValue"></textarea>
-    <h6><span style="font-style: italic; font-weight: normal; position: absolute; ">Note:Two Way Angular Support</span></h6>
- </div>
- <div id="binding" style="float: left; margin-left:10px; width:27%;">
-    <textarea name="scroll" class="input ejinputarea" ng-model="rteValue" style="height: 262px;"></textarea>
- </div>
-<script>
-    angular.module('syncApp', ['ejangular'])
-        .controller('RTECtrl', function ($scope) {
-            $scope.rteValue = "Description: The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for";
-        });  
-</script>
+   <div id="control" style="float: left; width: 30%;">
+      <textarea id="rteSample" ej-rte e-width="100%" e-height="266" e-value="rteValue"></textarea>
+      <h6><span style="font-style: italic; font-weight: normal; position: absolute; ">Note:Two Way Angular Support</span></h6>
+   </div>
+   <div id="binding" style="float: left; margin-left:10px; width:27%;">
+      <textarea name="scroll" class="input ejinputarea" ng-model="rteValue" style="height: 262px;"></textarea>
+   </div>
+   <script>
+      angular.module('syncApp', ['ejangular'])
+          .controller('RTECtrl', function ($scope) {
+              $scope.rteValue = "Description: The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content for";
+          });  
+   </script>
 </div>
 
 {% endhighlight %}

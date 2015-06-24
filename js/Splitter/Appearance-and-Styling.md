@@ -53,7 +53,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
         height: 280, width: "100%",
         orientation: ej.Orientation.Vertical,
         properties: [{ paneSize: 60 }],
-        enableAutoResize: true,
+        enableAutoResize: true
     });
     
     $("#innersplitter").ejSplitter({           
@@ -62,11 +62,6 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% endhighlight %}
 
-The output for **Splitter** when **enableAutoResize** is “**True**”.
-
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" Caption="Splitter initially" %}
-
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" Caption="Automatically resized pane after window resizing" %}
 
 ## Animation Support
 
@@ -82,23 +77,32 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 <div id="splitter">
     <div>
-        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Tools </h3>
+            Essential Tools is an collection of user interface components used to create interactive
+            ASP.NET MVC applications.
+        </div>
     </div>
     <div>
-        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Grid </h3>
+            Essential Mvc Grid offers full featured a Grid control with extensive support for
+            Grouping and the display of hierarchical data.
+        </div>
     </div>
-</div> 
+</div>
 
 {% endhighlight %}
 
 
 {% highlight js %}
-
+    
     $("#splitter").ejSplitter({
-        height: 200, width: 200,
+        height: 280, width: 600,
         enableAnimation: true,
-        animationSpeed: 300           
-    });   
+        animationSpeed: 300        
+        properties: [{}, { collapsible: true}]
+    });
 
 {% endhighlight %}
 
@@ -140,20 +144,28 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 <div id="splitter">
     <div>
-        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Tools </h3>
+            Essential Tools is an collection of user interface components used to create interactive
+            ASP.NET MVC applications.
+        </div>
     </div>
     <div>
-        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Grid </h3>
+            Essential Mvc Grid offers full featured a Grid control with extensive support for
+            Grouping and the display of hierarchical data.
+        </div>
     </div>
-</div> 
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
     $("#splitter").ejSplitter({
-        height:200, width:200,
-        properties: [{}, { collapsible: true, minSize: 10, maxSize: 40, paneSize: 80, resizable: true }]
+        height: 280, width: 600,
+        properties: [{}, { collapsible: true, minSize: 100, maxSize: 800, paneSize: 300, resizable: true }]
     });
 
 {% endhighlight %}
@@ -197,10 +209,18 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 <div id="splitter">
     <div>
-        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 1</div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Tools </h3>
+            Essential Tools is an collection of user interface components used to create interactive
+            ASP.NET MVC applications.
+        </div>
     </div>
     <div>
-        <div style="padding: 10px 0 0 10px; text-align: center;">Pane 2</div>
+        <div style="padding: 0px 15px;">
+            <h3 class="h3">Grid </h3>
+            Essential Mvc Grid offers full featured a Grid control with extensive support for
+            Grouping and the display of hierarchical data.
+        </div>
     </div>
 </div> 
 
@@ -209,7 +229,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 {% highlight js %}
 
     $("#splitter").ejSplitter({
-        height: 200, width: 200,
+        height: 280, width: 600,
         cssClass: "customCSS"
     });
 

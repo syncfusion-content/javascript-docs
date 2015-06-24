@@ -252,12 +252,6 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 {% endhighlight %}
 
 
-The output for **NumericTextBox** with the **name** property is as follows**.**
-
-
-
-{% include image.html url="/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img10.png" %}
-
 ## Define Value
 
 The value of **NumericTextBox** can be assigned by using the **value** property. The default value for **value** property is null.

@@ -49,51 +49,44 @@ To render RichTextEditor with the above toolbar options, include the following c
 
 {% highlight html %}
 
-    <div>
-        <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
-        </textarea>
-    </div>
+<div>
+   <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+   </textarea>
+</div>
 
 {% endhighlight %}
 
 Add the following code in your script section.
 
-
 {% highlight js %}
 
-
-    $(function(){
-            $("#rteSample").ejRTE({
-                width: "850px",
-                showFooter: true,
-                tools: {
-                    font: ["fontName", "fontSize", "fontColor", "backgrounColor"],
-                    style: ["bold", "italic", "underline", "strikethrough"],
-                    alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
-                    lists: ["unorderedList", "orderedList"],
-                    copyPaste: ["cut", "copy", "paste"],
-                    doAction: ["undo", "redo"],
-                    clear: ["clearFormat", "clearAll"],
-                    links: ["createLink"],
-                    images: ["image", "video"],
-                    tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
-                    scripts: ["superscript", "subscript"],
-                    casing: ["upperCase", "lowerCase"],
-                    paragraph: ["paragraph"]
-                }
-            });
+    $(function() {
+       $("#rteSample").ejRTE({
+          width: "850px",
+          showFooter: true,
+          tools: {
+             font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
+             style: ["bold", "italic", "underline", "strikethrough"],
+             alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
+             lists: ["unorderedList", "orderedList"],
+             copyPaste: ["cut", "copy", "paste"],
+             doAction: ["undo", "redo"],
+             clear: ["clearFormat", "clearAll"],
+             links: ["createLink"],
+             images: ["image", "video"],
+             tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
+             scripts: ["superscript", "subscript"],
+             casing: ["upperCase", "lowerCase"],
+             paragraph: ["paragraph"]
+          }
+       });
     });
 
 {% endhighlight %}
 
-
-
-
-
-{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img1.png" Caption="List of Toolbar items"%}
+{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img1.png"%}
 
 The following image consists of formatted content by using the available toolbar items in **RTE** control.
 
-
-{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img2.png" Caption="Formatted content"%}
+{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img2.png"%}
 

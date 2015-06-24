@@ -147,7 +147,7 @@ You can add the following location in the **URL** path for the background image 
          .ele-icon
         {
             display: inline-block;
-            background-image:url([http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png));
+            background-image:url(http://js.syncfusion.com/UG/Web/Content/electricity.png);
             background-repeat: no-repeat;
             background-size: contain;
             height: 50px;

@@ -13,7 +13,7 @@ Videos can be included in **RTE** by rendering the embedded code of a video. In 
 
 {% include image.html url="/js/RichTextEditor/Insert-Video_images/Insert-Video_img1.png" %}
 
- > **Note**: Insert video option is enabled only in HTML5 support browsers.
+> **Note**: Insert video option is enabled only in HTML5 support browsers.
 
 
 

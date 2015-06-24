@@ -28,9 +28,8 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 {% highlight js %}
 
     // Add the following code in your script section to render RTE with default set of tools.
-    
-    $(function () {
-        $("#rteSample").ejRTE();
+    $(function() {
+       $("#rteSample").ejRTE();
     });
 
 {% endhighlight %}

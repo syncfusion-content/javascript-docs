@@ -341,12 +341,6 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 {% endhighlight %}
 
 
-The output for **PercentageTextBox** with the **name** property is as follows**.**
-
-
-
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img10.png" %}
-
 ## Define Value
 
 The value of **PercentageTextBox** can be assigned by using the **value** property. The default value for **value** property is null.
