@@ -30,7 +30,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
    
         $(function () {
             $("#toggle_roundedCorenr").ejToggleButton({
-                size: "small",
+                width: "100px",
+                height: "30px",
                 contentType: "textandimage",
                 //used to specify the rounded corner for toggle button
                 showRoundedCorner: true,
@@ -72,7 +73,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
    
         $(function () {
             $("#toggle_prevent").ejToggleButton({
-                size: "small",
+                size: "large",
                 contentType: "textandimage",
                 defaultText: "Play",
                 activeText: "Next",

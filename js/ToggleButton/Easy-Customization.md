@@ -880,7 +880,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             <label for="toggle_customCss5">Toggle</label>
         </td>
     </tr>
-     </table>
+</table>
 
 {% endhighlight %}
 

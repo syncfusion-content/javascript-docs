@@ -20,6 +20,16 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 {% highlight html %}
 
 <input type="text" id="dropdownlist" />
+    
+<div id="list">
+   <ul>
+      <li>Art</li>
+      <li>Architecture</li>
+      <li>Biography</li>
+      <li>comics</li>
+      <li>Sports</li>
+   </ul>
+</div>
 
 {% endhighlight %}
 

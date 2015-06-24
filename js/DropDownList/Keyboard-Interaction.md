@@ -87,7 +87,7 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 {% highlight js %}
 
     // Render Dropdownlist control
-    $('#dropdownlist”).ejDropDownList({
+    $('#dropdownlist').ejDropDownList({
                 width: 200,
                 targetID: "list"
     });

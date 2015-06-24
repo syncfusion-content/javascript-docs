@@ -91,7 +91,7 @@ Initialization of **ToggleButton** in script
     $(function () {
         // simple control creation
         $("#tbutton").ejToggleButton({
-            size: "small"
+            size: "large"
         });
     });
 

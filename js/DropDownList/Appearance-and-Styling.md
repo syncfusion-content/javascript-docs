@@ -48,6 +48,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
          $(function () {
             $('#dropdownlist').ejDropDownList({
                 targetID: "list",
+                width:"250px",
                 popupWidth: "250px",
                 popupHeight: "100px"              
             });
@@ -246,7 +247,8 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
     var target;
     $(function () {
         $('#dropdownlist').ejDropDownList({
-            targetID: "mailtoolslist"
+            targetID: "mailtoolslist",
+            width:"195px"
         });
     });	
 
