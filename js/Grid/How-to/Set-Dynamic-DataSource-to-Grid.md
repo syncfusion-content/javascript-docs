@@ -69,5 +69,5 @@ Enter EmployeeID Field Value:
 
 The following screenshot illustrates the output.
 
-{% include image.html url="/js/Grid/How-to/Set-Dynamic-DataSource-to-Grid_images/Set-Dynamic-DataSource-to-Grid_img1.png" Caption="Dynamic DataSource in Grid"%}
+{% include image.html url="/js/Grid/How-to/Set-Dynamic-DataSource-to-Grid_images/Set-Dynamic-DataSource-to-Grid_img1.png"%}
 

@@ -55,7 +55,9 @@ Also since JS Grid is a Client-side, it does not have `mapper` property for cust
       });
   });
 </script>
+{% endhighlight %}
 
+{% highlight c# %}
 public class OrdersController : ApiController
     {
         NORTHWNDEntities db = new NORTHWNDEntities();

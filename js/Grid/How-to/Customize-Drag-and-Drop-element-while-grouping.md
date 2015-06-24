@@ -43,5 +43,5 @@ In this section, you can learn how to customize drag and drop element. This drag
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/How-to/Customize-Drag-and-Drop-element-while-grouping_images/Customize-Drag-and-Drop-element-while-grouping_img1.png" Caption="Drag and Drop Element Customization"%}
+{% include image.html url="/js/Grid/How-to/Customize-Drag-and-Drop-element-while-grouping_images/Customize-Drag-and-Drop-element-while-grouping_img1.png"%}
 

@@ -52,5 +52,5 @@ The **allowEditOnDblClick** property can be set as **True** to enable editing th
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/How-to/Disable-double-click-edit_images/Disable-double-click-edit_img1.png" Caption="Disable double-click edit"%}
+{% include image.html url="/js/Grid/How-to/Disable-double-click-edit_images/Disable-double-click-edit_img1.png"%}
 
