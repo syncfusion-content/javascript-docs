@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting started with Syncfusion Essential Diagram for JavaScript
+description: Getting started walk through to create your first Organizational chart diagram. 
 platform: js
 control: Diagram
 documentation: ug
@@ -9,13 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a Diagram in your application with JavaScript.
-
-## Create your first Diagram in JavaScript
-
 Getting started with your **Essential JavaScript Diagram** is easy. You can start by creating a simple **Organizational Chart**.
 
-1\. Create an HTML file and add the necessary script and CSS files in the Head tag as shown in the following code example.
+## Initialize diagram
+
+1\. Create an `HTML` file and add the necessary scripts and CSS files in the `Head` tag as shown in the following code example.
 
 {% highlight html %}
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -31,7 +29,7 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 </html>
 {% endhighlight %}
 
-2\. Add the &lt;div&gt; element in the body tag to render the Diagram and initialize the Diagram widget as follows.
+2\. Add the `<div>` element in the `body` tag to render the Diagram and initialize the Diagram widget as follows.
 
 {% highlight html %}
 <body>
@@ -45,13 +43,13 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 </body>
 {% endhighlight %}
 
-3\. This creates an empty diagram. In the following section, you can learn how to add “Employee Details” in the Diagram.
+3\. This creates an empty diagram.
 
 {% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img2.png" %}
 
 ## Define Employee Information
 
-Define “Employee Information” as JSON data. The following code example shows a list of employees whose `Name` value is used as a unique identifier and the `ReportingPerson` value is used to identify the person to whom they report to in the organization.
+Define Employee Information as JSON data. The following code example shows a list of employees whose `Name` value is used as a unique identifier and the `ReportingPerson` value is used to identify the person to whom they report to in the organization.
 
 {% highlight js %}
 //Include the script in the <Script> </Script> tag.
@@ -94,7 +92,7 @@ Based on datasource and its settings, nodes and connector are automatically gene
 
 ## Visualize Employee
 
-Following code examples indicate how to define the default appearance of node and connector using defaultSetting. The NodeTemplate is used to update each node based on employee data. 
+Following code examples indicate how to define the default appearance of node and connector using `defaultSetting`. The `NodeTemplate` is used to update each node based on employee data. 
 
 {% highlight js %}
 // To Customize node before rendering
@@ -149,7 +147,7 @@ $("#DiagramContent").ejDiagram({
 
 ## Apply Organizational Chart Layout
 
-Next you need to arrange nodes in an organizational chart fashion, and to do this you can apply layout as shown in following code example. You can see that spacing, margin and orientation are defined, that can also be customized based on the needs. 
+Next you need to arrange nodes in an organizational chart structure, and to do this you can apply layout as shown in following code example. You can see that spacing, margin and orientation are defined, that can also be customized based on the needs. 
 
 {% highlight js %}
 //Initialize data source...
@@ -200,7 +198,6 @@ $("#DiagramContent").ejDiagram({
         }
 
         $("#DiagramContent").ejDiagram({
-
             //Use automatic layout to arrange elements on the page
             layout: {
                 type: ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart,
@@ -213,7 +210,6 @@ $("#DiagramContent").ejDiagram({
             },
 
             defaultSettings: {
-
                 //Set the default properties of nodes.
                 node: {
                     width: 70,
