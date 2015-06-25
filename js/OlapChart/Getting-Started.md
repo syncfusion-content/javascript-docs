@@ -77,10 +77,13 @@ The following screen shot illustrates how to refer **Syncfusion.Olap.Base.**
 Select the following assemblies: 
 
    * Microsoft.AnalysisServices.AdomdClient.dll,  
-   * Syncfusion.Core.dll,  Syncfusion.Linq.Base.dll, 
+   * Syncfusion.Linq.Base.dll, 
    * Syncfusion.Olap.Base.dll,  
    * Syncfusion.EJ.dll 
    * Syncfusion.EJ.Olap.dll.
+   * Syncfusion.Pdf.Base.dll
+   * Syncfusion.XlsIO.Base.dll
+   * Syncfusion.DocIO.dll
 
 Click **OK**.
 
@@ -112,12 +115,15 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
     </div>
     <script type="text/javascript">
           //Setting property and initializing ejOlapChart widget.
-          $(function () {
-                $("#OlapChart").ejOlapChart({
-                    url: "../wcf/OlapChartService.svc"
-
-                });
-            });
+          $(function() {
+              $("#OlapChart").ejOlapChart({
+                  url: "../wcf/OlapChartService.svc",
+                  size: {
+                      height: "350px",
+                      width: "540px"
+                  }
+              });
+          });
      </script>
 </div>
 

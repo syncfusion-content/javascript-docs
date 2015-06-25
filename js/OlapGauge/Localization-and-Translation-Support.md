@@ -78,6 +78,7 @@ $(function() {
     $("#OlapGauge1").ejOlapGauge({
         url: "../wcf/OlapGaugeService.svc",
         enableTooltip: true,
+        load: "loadGaugeTheme",
         locale: "fr-FR",
         backgroundColor: "transparent",
         scales: [{
@@ -107,7 +108,7 @@ $(function() {
             }],
             ticks: [{
                 type: "major",
-                distanceFromScale: 15,
+                distanceFromScale: 5,
                 height: 16,
                 width: 1,
                 color: "#8c8c8c"
@@ -146,7 +147,7 @@ $(function() {
             }, {
                 position: {
                     x: 180,
-                    y: 320
+                    y: 330
                 },
                 font: {
                     size: "10px",

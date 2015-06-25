@@ -19,11 +19,13 @@ The following code example illustrates how to save the document to Excel via a s
 
 {% highlight c# %}
 
-public void ExportOptions(Stream stream)
-{
-PivotGrid pivotGridHelper = new PivotGrid();
-OlapDataManager DataManager=new OlapDataManager(connectionString);
-pivotGridHelper.ExportToExcel(DataManager,newStreamReader(stream).ReadToEnd(),"Sample.xls",HttpContext.Current.Response);
+public void Export(Stream stream)
+ {
+System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
+OlapDataManager DataManager = new OlapDataManager(connectionString);
+string fileName = "Sample";
+olapClientHelper.ExportOlapClient(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 {% endhighlight %}

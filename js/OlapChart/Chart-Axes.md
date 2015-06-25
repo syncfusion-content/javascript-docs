@@ -24,7 +24,11 @@ $("#OlapChart1").ejOlapChart({
             visible: false
         }
     },
-})
+    size: {
+        height: "460px",
+        width: "950px"
+    }
+});
 
 {% endhighlight %}
 
@@ -70,6 +74,10 @@ $(function() {
                     fontWeight: 'lighter'
                 }
             }
+        },
+        size: {
+            height: "460px",
+            width: "950px"
         }
     });
 });
@@ -109,6 +117,10 @@ $("#OlapChart1").ejOlapChart({
         axisLine: {
             dashArray: "2,3"
         }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
 
@@ -134,8 +146,11 @@ $("#OlapChart1").ejOlapChart({
     },
     primaryYAxis: {
         opposedPosition: true
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
-}
 });
 
 
@@ -167,6 +182,10 @@ $("#OlapChart1").ejOlapChart({
             width: 4
         },
         background: "aqua"
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
 

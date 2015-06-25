@@ -24,6 +24,10 @@ A combination Chart combines two or more series types in a single Chart. But the
 $(function() {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
+        size: {
+            height: "460px",
+            width: "950px"
+        },
         animation: true,
         commonSeriesOptions: {
             type: ej.olap.OlapChart.ChartTypes.Column,
@@ -54,8 +58,12 @@ function onSeriesRenders(args) {
 $(function() {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
+        size: {
+            height: "460px",
+            width: "950px"
+        },
         commonSeriesOptions: {
-            type: ej.olap.OlapChart.chartTypes.Column
+            type: ej.olap.OlapChart.ChartTypes.Column
         },
         seriesRendering: "onSeriesRenders"
     });

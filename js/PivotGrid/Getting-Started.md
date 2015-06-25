@@ -43,7 +43,7 @@ After clicking **OK**, the referred assemblies look as follows.
 * In the **Solution Explorer**, right click the References folder and then click **Add Reference**.
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img6.png" %}
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img7.png" %}
-* Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll, Syncfusion.XlsIO.Base.dll, Syncfusion.PivotAnalysis.Base.dll and Syncfusion.Olap.Base.dll.
+* Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll, Syncfusion.XlsIO.Base.dll, Syncfusion.Pdf.Base.dll, Syncfusion.DocIO.Base.dll and Syncfusion.Olap.Base.dll.
 * Click OK.
 
 ###Add Scripts and Styles
@@ -351,7 +351,7 @@ After clicking OK, the referred assemblies look as follows.
 * In the Solution Explorer, right click the References folder and then click Add Reference.
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img16.png" %}
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img17.png" %}
-* Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll, Syncfusion.XlsIO.Base.dll, Syncfusion.PivotAnalysis.Base.dll and Syncfusion.Olap.Base.dll.
+* Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll,Syncfusion.PivotAnalysis.Base and Syncfusion.Olap.Base.dll.
 * Click OK.    
 
 ###Add Scripts and Styles
@@ -431,6 +431,9 @@ public interface IPivotGridService
    
    [OperationContract]
    Dictionary<string, object> NodeDropped(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport);
+   
+   [OperationContract]
+   Dictionary < string, object > Sorting(string action, string sortedHeaders, string currentReport);       
 }
 
 {% endhighlight %}
@@ -528,6 +531,14 @@ public Dictionary<string, object> FetchMembers(string action, string headerTag, 
    htmlHelper.PopulateData(currentReport);
    dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), headerTag, sortedHeaders);
    return dict;
+}
+
+//This method provides the required information from the server side when sorting values in PivotTable Field List.
+public Dictionary < string, object> Sorting(string action, string sortedHeaders, string currentReport) 
+{
+	htmlHelper.PopulateData(currentReport);
+	dict = htmlHelper.GetJsonData(action, ProductSales.GetSalesData(), sortedHeaders);
+	return dict;
 }
 
 //This method carries the information about the default report that is rendered within PivotGrid initially.

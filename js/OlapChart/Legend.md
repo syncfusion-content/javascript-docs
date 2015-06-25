@@ -51,6 +51,10 @@ $("#OlapChart1").ejOlapChart({
         shape: "Star",
         position: "top"
     },
+     size: {
+        height: "460px",
+        width: "950px"
+     }
 });
 
 {% endhighlight %}
@@ -72,6 +76,10 @@ $("#OlapChart1").ejOlapChart({
         visible: true,
         rowCount: 3,
         alignment: "Near"
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
 
@@ -98,6 +106,10 @@ $("#OlapChart1").ejOlapChart({
             color: 'red',
             width: 2
         }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
 
@@ -114,16 +126,22 @@ $("#OlapChart1").ejOlapChart({
 
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
+    size: {
+        height: "460px",
+        width: "950px"
+    },
     title: {
         text: "OLAP Chart in Essential Studio"
     },
     legend: {
         visible: true,
         rowCount: 3,
-        itemSize: {
+        itemStyle: {
+            height: 12,
+            width: 12,
             border: {
-                color: "green",
-                width: 0.5
+                color: 'magenta',
+                width: 1.5
             }
         }
     }
@@ -154,6 +172,10 @@ $("#OlapChart1").ejOlapChart({
             size: '13px'
         }
     },
+    size: {
+        height: "460px",
+        width: "950px"
+    }
 });
 
 
