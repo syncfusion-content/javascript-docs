@@ -1029,7 +1029,7 @@ _Parameters Table_
          added
       </td>
       <td rowspan = "3">
-         public ActionResult Remove(int key){}
+        public ActionResult BatchUpdate(List<Orders> changed, List<Orders> added, List<Orders> deleted){}(int key){}
       </td>
    </tr>
    <tr>
