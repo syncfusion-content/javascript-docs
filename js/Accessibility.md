@@ -11,7 +11,7 @@ documentation: ug
 
 All the Essential JS UI widgets provide built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. This ensures that the widgets work properly with  assistive technologies. WAI-ARIA complaince for the widgets have been achieved by providing proper keyboard navigation support as well as by defining the required ARIA attributes to the DOM elements.
 
-For example, the **button** widget, when created through JavaScript code will render in the web browser with HTML DOM elements (along with the assigned built-in ARIA attributes) as shown below,
+For example, the `ejButton` widget, when created through JavaScript code will render in the web browser with HTML DOM elements (along with the assigned built-in ARIA attributes) as shown below,
 
 {% highlight html %}
 
@@ -40,6 +40,6 @@ When the above code is executed on the browser, the button widget will render wi
 
 {% endhighlight %}
 
-Here, **aria-describedby** is the **ARIA property** assigned to the Syncfusion button widget so that the button description is notified to the user through assistive technologies.
+Here, `aria-describedby` is the ARIA property assigned to the Syncfusion button widget so that the button description is notified to the user through assistive technologies.
 
-Likewise, **aria-disabled** is one of the **ARIA state** assigned to the button, which states that if none of the button actions are currently available, then the button is said to be in an aria-disabled state.
+Likewise, `aria-disabled` is one of the ARIA state assigned to the button, which states that if none of the button actions are currently available, then the button is said to be in an `aria-disabled` state.
