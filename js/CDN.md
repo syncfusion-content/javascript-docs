@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CDN
-description: CDN
+title: CDN links for Syncfusion Essential JS widgets
+description: Adding CDN links for syncfusion essential js widgets and dependent scripts.
 platform: js
 control: Introduction
 documentation: ug
@@ -9,22 +9,21 @@ documentation: ug
 
 # CDN
 
-The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the scripts and style sheets of Syncfusion JavaScript components. 
+The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the scripts and style sheets of Syncfusion Esential JS components. 
 
 
-## CDN Script links
+## CDN script links
 
 ### External dependency libraries
-
-The first four common script libraries listed in the below table are more essential and mandatory to render any of the Syncfusion widgets on the application module.
 
 The basic syntax follows below,
 
 
-http://cdn.syncfusion.com/js/assets/external/<b>[fileName]</b>
+http://cdn.syncfusion.com/js/assets/external/**[fileName]**
 
-> Example: http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js
+_Example: http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js _
 
+> The first four script libraries listed below are mandatory to render any of the Syncfusion widgets.
 
 <table>
 <tr>
@@ -34,12 +33,12 @@ Details</th><th>
 CDN link</th></tr>
 <tr>
 <td>
-jquery 1.10.2</td><td>
-Common jquery script to render any of the Syncfusion widgets</td><td>
+jQuery 1.10.2</td><td>
+Common jQuery script to render any of the Syncfusion widgets</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js">http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js</a></td></tr>
 <tr>
 <td>
-jquery.easing</td><td>
+jQuery.easing</td><td>
 supports animation</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js</a></td></tr>
 <tr>
@@ -49,13 +48,13 @@ supports template rendering</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js">http://cdn.syncfusion.com/js/assets/external/jsrender.min.js</a>  </td></tr>
 <tr>
 <td>
-Jquery.Globalize</td><td>
+jQuery.Globalize</td><td>
 Supports Globalization</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js</a>     </td></tr>
 <tr>
 <td>
-Angular JS</td><td>
-Minified angular file to support custom directives.</td><td>
+AngularJS</td><td>
+Minified AngularJS file to support custom directives.</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/angular.min.js">http://cdn.syncfusion.com/js/assets/external/angular.min.js</a></td></tr>
 <tr>
 <td>
@@ -64,33 +63,33 @@ To support canvas element rendering in IE8 browser</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/excanvas.min.js">http://cdn.syncfusion.com/js/assets/external/excanvas.min.js</a></td></tr>
 <tr>
 <td>
-Knockout JS</td><td>
-Minified knockout file to support the observable binding. </td><td>
+KnockoutJS</td><td>
+Minified KnockoutJS file to support the observable binding. </td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/knockout.min.js">http://cdn.syncfusion.com/js/assets/external/knockout.min.js</a></td></tr>
 <tr>
 <td>
-requireJS</td><td>
+RequireJS</td><td>
 Supports loading of required dependencies</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/require.min.js">http://cdn.syncfusion.com/js/assets/external/require.min.js</a> </td></tr>
 <tr>
 <td>
-jquery.validate</td><td>
+jQuery.validate</td><td>
 Supports client-side validation</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js</a></td></tr>
 <tr>
 <td>
-Jquery.validate.unobtrusive</td><td>
+jQuery.validate.unobtrusive</td><td>
 To enable unobtrusive validation options in <b>data-*</b> attributes</td><td>
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.validate.unobtrusive.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.validate.unobtrusive.min.js</a></td></tr>
 </table>
 
 ### Syncfusion Dependency Libraries - Based on latest build version
 
-The **CDN** script files are maintained for each version of the **Essential Studio** individually. Refer the following syntax:
+The CDN script files are maintained for each version of the Essential Studio individually. Refer the following syntax:
 
-http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>fileName</b>]
+http://cdn.syncfusion.com/**[version]**/js/web/**[fileName]**
 
-> Example, to access the <b>ej.web.all.min.js</b> file in <b>{{ site.releaseversion }}</b> version – http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js
+_Example, to access the ej.web.all.min.js file in {{ site.releaseversion }} version – http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js_
 
 
 <table>
@@ -117,30 +116,30 @@ Supports Syncfusion widgets to render in HTML5 format.</td><td>
 <tr>
 <td>
 ej.widget.angular.min</td><td>
-Provides complete support for Angular JS </td><td>
+Provides support for AngularJS </td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js</a></td></tr>
 <tr>
 <td>
 ej.widget.ko.min</td><td>
-Provides complete support for Knockout JS</td><td>
+Provides support for KnockoutJS</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js</a></td></tr>
 </table>
 
 
 The **KnockoutJS** and **AngularJS** dependencies can be accessed through the following syntax,
 
-http://cdn.syncfusion.com/[<b>version</b>]/js/[<b>fileName</b>]
+http://cdn.syncfusion.com/**[version]**/js/**[fileName]**
 
-> Example, to access the <b>ej.widget.angular.min.js</b> file in <b>{{ site.releaseversion }}</b> version – http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js
+_Example, to access the ej.widget.angular.min.js file in {{ site.releaseversion }} version – http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js_
 
 
 ## CDN style sheet links
 
-The CDN links for all the css files (both core & theme related) are depicted together in the below table. Refer the following syntax:
+The CDN links for all the css files are provided in the below table. Refer the following syntax:
 
-http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>fileName</b>] – Core (ej.widgets.core.min.css)
+http://cdn.syncfusion.com/**[version]**/js/web/**[fileName]** – Core 
 
-http://cdn.syncfusion.com/[<b>version</b>]/js/web/[<b>theme-name</b>]/[<b>fileName</b>] – Theme related
+http://cdn.syncfusion.com/**[version]**/js/web/**[theme-name]**/**[fileName]** – Theme related
 
 
 <table>
@@ -221,10 +220,9 @@ To make the widget responsive, it is necessary to refer this css file.</td><td>
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css</a></td></tr>
 </table>
 
+## Refer CDN links for specific theme
 
-If in case, the user wants to refer the core and theme files of a specific theme separately (instead of the combined version of `ej.web.all.min.css` reference), then they can go with the below specified theme reference method. 
-
-Here – For example, we have depicted another way of theme reference for the `Flat-Azure` and `Flat-Azure Dark` themes in the below table. Likewise, you can refer for any of the 13 available themes (just by referring the required `ej.theme.min.css` available under each of the theme folders along with the widget core file).
+Below table provides the links for the `Flat-Azure` and `Flat-Azure Dark` themes . Likewise, you can refer for any of the 13 available themes just by referring the required `ej.theme.min.css` available under each of the theme folders along with the widget core file.
 
 <table>
 <tr>
@@ -297,6 +295,4 @@ One of the major risk with CDN links is that – sometimes it may go down due to
 </html>
 
 {% endhighlight %}
-
-
 
