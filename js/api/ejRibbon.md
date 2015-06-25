@@ -18,7 +18,7 @@ The ribbon can be easily configured to the DOM element, such as div. you can cre
 
 
 
-## $(element).ejRibbon<span class="signature">(options)</span>
+$(element).ejRibbon<span class="signature">(options)</span>
 
 
 
@@ -62,7 +62,8 @@ $('#Ribbon').ejRibbon();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejTextBoxes<span class="signature">()</span>
+$(element).ejTextBoxes<span class="signature">()</span>
 
 
 
@@ -34,7 +34,8 @@ $('#percentage').ejPercentageTextbox({value:100});
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

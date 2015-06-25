@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejMaskEdit<span class="signature">()</span>
+$(element).ejMaskEdit<span class="signature">()</span>
 
 
 
@@ -50,7 +50,8 @@ $('#mask').ejMaskEdit();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmListView<span class="signature">()</span>
+$(element).ejmListView<span class="signature">()</span>
 
 
 
@@ -79,7 +79,8 @@ $("#lb").ejmListView();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

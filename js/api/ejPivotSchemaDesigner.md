@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejPivotSchemaDesigner<span class="signature">()</span>
+$(element).ejPivotSchemaDesigner<span class="signature">()</span>
 
 
 
@@ -27,7 +27,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

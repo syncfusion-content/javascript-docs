@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmTile<span class="signature">()</span>
+$(element).ejmTile<span class="signature">()</span>
 
 
 
@@ -52,7 +52,8 @@ $("#tile").ejmTile({ imagePath: "themes/sample/tile", imageUrl: "people.png" });
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

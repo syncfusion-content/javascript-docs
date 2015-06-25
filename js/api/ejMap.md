@@ -25,7 +25,7 @@ The map can be easily configured to the DOM element, such as div and can be crea
 
 
 
-## $(element).ejMap<span class="signature">()</span>
+$(element).ejMap<span class="signature">()</span>
 
 
 
@@ -57,7 +57,8 @@ $('#container').ejMap();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

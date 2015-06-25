@@ -18,7 +18,7 @@ The TagCloud allows the user to display a list of links or tags with a structure
 
 
 
-## $(element).ejTagCloud<span class="signature">()</span>
+$(element).ejTagCloud<span class="signature">()</span>
 
 
 
@@ -55,7 +55,8 @@ $(function () {
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

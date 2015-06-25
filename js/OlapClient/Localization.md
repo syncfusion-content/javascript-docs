@@ -314,6 +314,6 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The following screenshot shows the OlapClient with French localization.
 
-{% include image.html url="/js/OlapClient/Concepts-and-Features/Localization_images/Localization_img1.png" %}
+{% include image.html url="/js/OlapClient/Localization_images/Localization_img1.png" %}
 
 

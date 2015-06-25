@@ -16,7 +16,7 @@ metacontent:
 
 
 
-## $(element).ejRating<span class="signature">()</span>
+$(element).ejRating<span class="signature">()</span>
 
 
 
@@ -30,7 +30,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

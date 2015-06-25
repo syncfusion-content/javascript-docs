@@ -18,7 +18,7 @@ Communicates with data source and returns the desired result based on the Query 
 
 
 
-## $(element).ejDataManager<span class="signature">(datasource, query, adaptor)</span>
+$(element).ejDataManager<span class="signature">(datasource, query, adaptor)</span>
 
 
 

@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmDatePicker<span class="signature">()</span>
+$(element).ejmDatePicker<span class="signature">()</span>
 
 
 
@@ -47,7 +47,8 @@ $("#datepicker").ejmDatePicker();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

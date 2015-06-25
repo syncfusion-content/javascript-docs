@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejMenu<span class="signature">()</span>
+$(element).ejMenu<span class="signature">()</span>
 
 
 
@@ -78,7 +78,8 @@ $("#menu").ejMenu({height: 22});
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

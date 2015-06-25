@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmToggleButton<span class="signature">()</span>
+$(element).ejmToggleButton<span class="signature">()</span>
 
 
 
@@ -52,7 +52,8 @@ $("#togglebutton").ejmToggleButton();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

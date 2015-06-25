@@ -21,20 +21,25 @@ The “**data-ej-badge-minvalue”** attribute is used to set the minimum badge 
 
 Refer to the following code examples.
 
-{% highlight javascript %}
+{% highlight html %}
+
     <div id="tile"></div>
+    
 {% endhighlight %}
+
+Add the following code inside the **script** tag.
+
 {% highlight js %}
 
         $("#tile").ejTile({
             tileSize: "medium", imagePosition: "center",
             badge: { enabled: true, minVlaue: 10, maxValue: 80, value: 88 },
             text: "Messages", imageUrl: "http://js.syncfusion.com/UG/Web/Content/tile/messages.png"
-        })
+        });
 
 {% endhighlight %}
 
 
 
-{% include image.html url="/js/Tile/Configure-Badge_images/Configure-Badge_img1.png" Caption="Tile - Badge"%}
+{% include image.html url="/js/Tile/Configure-Badge_images/Configure-Badge_img1.png"%}
 

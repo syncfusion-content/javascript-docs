@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejBulletGraph<span class="signature">()</span>
+$(element).ejBulletGraph<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $('#bulletGraph1').ejBulletGraph();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

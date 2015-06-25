@@ -13,7 +13,7 @@ The Toggle Button allows you to perform the toggle option by using checked and u
 
 
 
-## $(element).ejToggleButton<span class="signature">()</span>
+$(element).ejToggleButton<span class="signature">()</span>
 
 
 
@@ -31,7 +31,8 @@ $('#toggle').ejToggleButton({defaultText:"Play",activeText:"Pause"});
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

@@ -19,7 +19,7 @@ metacontent:
 
 
 
-## $(element).ejSplitter<span class="signature">(options)</span>
+$(element).ejSplitter<span class="signature">(options)</span>
 
 
 
@@ -70,7 +70,8 @@ $('#innerSplitter').ejSplitter();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

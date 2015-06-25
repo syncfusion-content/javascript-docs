@@ -61,14 +61,27 @@ You can add the page content with text-area by referring to this section.
             <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/draw.png" data-ej-text="Draw"></li>
         </ul>
     </div>
-    <script type="text/javascript">
+    
+{% endhighlight %}
+
+Add the following script in your code.
+    
+{% highlight js %}
+
         $(function () {
             $('#nestedradialmenu').ejRadialMenu({ imageClass: "imageclass", backImageClass: "backimageclass" });
         });
+        
         $("#rteSampleone").select(function (e) {
             $('#nestedradialmenu').ejRadialMenu("show");
         });
-    </script>
+    
+{% endhighlight %}
+
+Add the following styles in your code.
+    
+{% highlight css %}
+
     <style type="text/css" class="cssStyles">
         .e-radialmenu .imageclass {
             background-image: url(http://js.syncfusion.com/UG/web/Content/radial/main.png);

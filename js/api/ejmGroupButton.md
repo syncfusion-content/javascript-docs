@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmGroupButton<span class="signature">()</span>
+$(element).ejmGroupButton<span class="signature">()</span>
 
 
 
@@ -115,7 +115,8 @@ $("#grpbtn").ejmGroupButton();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

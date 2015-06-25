@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejAccordion<span class="signature">()</span>
+$(element).ejAccordion<span class="signature">()</span>
 
 
 
@@ -26,7 +26,9 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
+
 
 
 * module:jQuery

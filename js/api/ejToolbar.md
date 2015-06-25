@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejToolbar<span class="signature">()</span>
+$(element).ejToolbar<span class="signature">()</span>
 
 
 
@@ -26,7 +26,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

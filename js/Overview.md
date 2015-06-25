@@ -7,155 +7,27 @@ control: Introduction
 documentation: ug
 ---
 
-# Overview
+# Welcome to Syncfusion Essential JS
 
-**Syncfusion Essential Studio for JavaScript** (Essential JS) is a **HTML5** jQuery based control library for developing modern web applications. 
+Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 JavaScript components for building modern web applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including charts, grids, gantt, scheduler, diagram and much more.   
 
-It includes **80+** controls for web and mobile application development which can be categorized as follows:
+## How to best read this user guide
 
+* The best way to get started would be to read the "Getting Started" section of the documentation for the component that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
 
-<table>
-<tr>
-<th>
-Categories</th><th colspan = "3">
-Components</th></tr>
-<tr>
-<td rowspan = "2">
-Grid</td><td colspan = "3">
-<a href="/js/grid/overview">Grid</a></td></tr>
-<tr>
-<td colspan = "3">
-<a href="/js/treegrid/overview">TreeGrid</a></td></tr>
-<tr>
-<td rowspan = "4">
-DataVisualization</td><td>
-<a href="/js/chart/overview">Chart</a></td><td>
-<a href="/js/gantt/overview">Gantt</a></td><td>
-<a href="/js/diagram/overview">Diagram</a></td></tr>
-<tr>
-<td>
-<a href="/js/maps/overview">Maps</a></td><td>
-<a href="/js/treemap/overview">TreeMap</a></td><td>
-<a href="/js/bulletgraph/overview">BulletGraph</a></td></tr>
-<tr>
-<td>
-<a href="/js/circulargauge/overview">Radial Gauge</a></td><td>
-<a href="/js/lineargauge/overview">Linear Gauge</a></td><td>
-<a href="/js/digitalgauge/overview">Digital Gauge</a></td></tr>
-<tr>
-<td>
-<a href="/js/rangenavigator/overview">RangeNavigator</a></td><td>
-<a href="/js/barcode/overview">Barcode</a></td><td>
-<a href="/js/tagcloud/overview">TagCloud</a></td></tr>
-<tr><td>
-Schedule</td><td colspan = "3">
-<a href="/js/schedule/overview">Schedule</a></td></tr>
-<tr>
-<td rowspan = "2">
-Layout</td><td>
-<a href="/js/splitter/overview">Splitter</a></td><td colspan = "2">
-<a href="/js/dialog/overview">Dialog</a></td></tr>
-<tr>
-<td>
-<a href="/js/listview/overview">ListView</a></td><td colspan = "2">
-<a href="/js/tileview/overview">TileView</a></td></tr>
-<tr>
-<td rowspan = "10">
-Editors</td><td>
-<a href="/js/richtexteditor/overview">RichTextEditor</a></td><td colspan = "2">
-<a href="/js/colorpicker/overview">ColorPicker</a></td></tr>
-<tr>
-<td>
-<a href="/js/datepicker/overview">DatePicker</a></td><td colspan = "2">
-<a href="/js/timepicker/overview">TimePicker</a></td></tr>
-<tr>
-<td>
-<a href="/js/datetimepicker/overview">DateTimePicker</a></td><td colspan = "2">
-<a href="/js/numerictextbox/overview">NumericTextbox </a></td></tr>
-<tr>
-<td>
-<a href="/js/percentagetextbox/overview">PercentageTextBox</a></td><td colspan = "2">
-<a href="/js/currency/overview">CurrencyTextBox</a></td></tr>
-<tr>
-<td>
-<a href="/js/autocomplete/overview">AutoComplete</a></td><td colspan = "2">
-<a href="/js/rating/overview">Rating</a></td></tr>
-<tr>
-<td>
-<a href="/js/dropdownlist/overview">Dropdownlist</a></td><td colspan = "2">
-<a href="/js/listbox/overview">Listbox</a></td></tr>
-<tr>
-<td>
-<a href="/js/slider/overview">Slider</a></td><td colspan = "2">
-<a href="/js/button/overview">Button</a></td></tr>
-<tr>
-<td>
-<a href="/js/uploadbox/overview">UploadBox</a></td><td colspan = "2">
-<a href="/js/maskedit/overview">MaskEdit</a></td></tr>
-<tr>
-<td>
-<a href="/js/splitbutton/overview">Splitbutton</a></td><td colspan = "2">
-<a href="/js/togglebutton/overview">Togglebutton</a></td></tr>
-<tr>
-<td>
-<a href="/js/radiobutton/overview">Radiobutton</a></td><td colspan = "2">
-<a href="/js/checkbox/overview">Checkbox</a></td></tr>
+* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://js.syncfusion.com/demos/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario. 
 
-<tr>
-<td rowspan = "4">
-Navigation</td><td>
-<a href="/js/ribbon/overview">Ribbon</a></td><td>
-<a href="http://help.syncfusion.com/ug/js/Documents/overview39.htm">RadialMenu</a></td><td>
-<a href="/js/rotator/overview">Rotator</a></td></tr>
-<tr>
-<td>
-<a href="/js/fileexplorer/overview">FileExplorer</a></td><td>
-<a href="/js/treeview/overview">TreeView</a></td><td>
-<a href="/js/tab/overview">Tab</a></td></tr>
-<tr>
-<td>
-<a href="/js/menu/overview">Menu</a></td><td>
-<a href="/js/accordion/overview">Accordion</a></td><td>
-<a href="/js/scroller/overview">Scrollbar</a></td></tr>
-<tr>
-<td>
-<a href="/js/navigationdrawer/overview">NavigationDrawer</a></td><td colspan = "2">
-<a href="/js/toolbar/overview">Toolbar</a></td></tr>
-<tr>
-<td>
-Notification</td><td>
-<a href="/js/progressbar/overview">Progressbar</a></td><td colspan = "2">
-<a href="/js/waitingpopup/overview">WaitingPopup</a></td></tr>
-<tr>
-<td rowspan = "2">
-Business Intelligence</td><td>
-<a href="/js/olapclient/overview">OlapClient</a></td><td colspan = "2">
-<a href="/js/pivotgrid/overview">PivotGrid</a></td></tr>
-<tr>
-<td>
-<a href="/js/olapchart/overview">OlapChart</a></td><td colspan = "2">
-<a href="/js/olapgauge/overview">OlapGauge</a></td></tr>
-<tr>
-<td>
-Reporting</td><td colspan = "3">
-<a href="/js/reportviewer/overview">ReportViewer</a></td></tr>
-<tr>
-<td>
-Others</td><td>
-<a href="/js/calculate/overview">Calculate</a></td><td colspan = "2">
-<a href="/js/DataManager/overview">DataManager</a></td></tr>
-</table>
+* After you have integrated the component into your application using one of the sample code snippets as a starting point, it is likely that you would want additonal information on specific features and API. The best option would be to search a the specific topic using the search box that is available at the top of the user guide.
 
-Essential JS UI controls have **inbuilt frameworks** for databinding, [theming](/js/theming-in-essential-javascript-components), [localization](/js/localization) and [accessibility](/js/accessibility). The components are also compatible with other popular frameworks such as [AngularJS](/js/angularjs), [KnockoutJS](/js/knockoutjs), [TypeScript](/js/typescript), and RequireJS.
+* Another valuable resource is the [API reference](http://helpjs.syncfusion.com/js/api) which provides detailed information on the object hierarchy as well as the settings available on every object.
 
-Essential JS also includes the following **server side libraries** for .NET:
+## Additional help resources
 
-* [XlsIO](http://help.syncfusion.com/ug/js/index.html#!Documents/xlsio.htm) (Microsoft Excel Library)
-* [DocIO](http://help.syncfusion.com/ug/js/index.html#!Documents/overview19.htm) (Microsoft Word Library)
-* [Presentation](http://help.syncfusion.com/ug/js/index.html#!Documents/overview37.htm) (Microsoft Powerpoint presentation Library)
-* [PDF](http://help.syncfusion.com/ug/js/index.html#!Documents/overview36.htm)
-* [ReportViewer](/js/reportviewer/overview)
-* [PMML Predictive Analysis](http://help.syncfusion.com/predictive-analytics)
-* OLAP based libraries ([PivotGrid](/js/pivotgrid/overview), [OLAP Client](/js/olapclient/overview), [OLAP Chart](/js/olapchart/overview), [OLAP Gauge](/js/olapgauge/overview))
+* The [Knowledge Base](http://www.syncfusion.com/kb/javascript) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
 
+* Similar to the [Knowledge Base](http://www.syncfusion.com/kb/javascript), the [forum](http://www.syncfusion.com/forums/javascript) section also contains responses to questions that other customers have asked us in the past.
+
+## Create a support incident
+
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](http://www.syncfusion.com/support/) by creating a support ticket.
 

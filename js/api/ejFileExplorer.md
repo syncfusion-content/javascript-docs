@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejFileExplorer<span class="signature">(options)</span>
+$(element).ejFileExplorer<span class="signature">(options)</span>
 
 
 
@@ -75,7 +75,8 @@ ajaxSettings: {
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

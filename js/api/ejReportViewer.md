@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejReportViewer<span class="signature">()</span>
+$(element).ejReportViewer<span class="signature">()</span>
 
 
 
@@ -47,7 +47,8 @@ $('#reportviewer').ejReportViewer();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

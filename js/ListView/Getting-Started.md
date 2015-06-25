@@ -9,16 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly on how to create a **ListView** control in your application.
-
-## Create your first ListView in JavaScript
 
 The **Essential JavaScript ListView** widget builds an interactive list view interface. This control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry.
 
 
 {% include image.html url="/js/ListView/Getting-Started_images/Getting-Started_img1.png" %}
 
-**Create a simple ListView**
+## Create a simple ListView
 
 The following steps guide you to add a **ListView** control.
 
@@ -73,18 +70,16 @@ Add a **&lt;div&gt;** element. It is a container for **ListView** control.
 
 
 
-Create the **ListView** control as follows.
+Create the **ListView** control by adding script as follows.
 
 
 
-{% highlight html %}
+{% highlight js %}
 
 
-        <script type="text/javascript">
             $(function () {
                 $("#listview").ejListView();
             });
-        </script>
 
 
 {% endhighlight %}
@@ -97,20 +92,15 @@ Run the above code to render the following output.
 
 **Add Header** 
 
-You can add a header for **ListView**. Refer to the following code example.
+You can add a header for **ListView**. Refer to the following script.
 
 
 
-{% highlight html %}
-
-    <script type="text/javascript">
+{% highlight js %}
 
     $(function () {
-        $("#listview").ejListView({ **showHeader: true, headerTitle: "Mailbox"**});
+        $("#listview").ejListView({ showHeader: true, headerTitle: "Mailbox"});
     });
-    </script>
-
-
 
 {% endhighlight %}
 

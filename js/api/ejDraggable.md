@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejDraggable<span class="signature">()</span>
+$(element).ejDraggable<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $('#dragable').ejDraggable();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 
