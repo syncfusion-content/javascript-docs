@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting started documentation for ejChart
+description: Getting started documentation for ejChart. This page walks through the steps how to create a chart, popupate data to the chart, adding series, adding axes and other important features of ejChart.
 platform: js
 control: Chart
 documentation: ug
@@ -9,22 +9,17 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly on how to create a Chart in your application with JavaScript.
-
-## Create your first Chart in JavaScript
-
 This section encompasses on how to configure the **Chart** for your business requirements. You can also pass the required data to default **Chart** and customize it according to your requirements. In this example, you can see how to display the average climate data for Washington, DC during the period 1961 -1990.
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img1.png" %}
 
-### Create a Chart
+## Create a Chart
 
-Getting started with your **Essential JavaScript Chart** is very easy. You can start by creating a simple line **Chart**.
+Getting started with Essential JavaScript Chart is very easy. You can start by creating a simple line chart.
 
 1.Create an `HTML` page and add the following code example.
 
 {% highlight html %}
-
 
 <!DOCTYPE html>
 <html>
@@ -40,27 +35,20 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 </body>
 </html>
 
-
-
 {% endhighlight %}
 
-
-
-2.Create a `<div>` tag with an id and set height and width of the **Chart**.
+2.Add a `<div>` container to host the chart.
 
 {% highlight html %}
-
 
 <body>
     <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
 </body>
 
-
 {% endhighlight %}
 
 
-
-3.Add a script tag inside the `<Body>` tag and add the following code example.
+3.Initialize the chart as below.
 
 {% highlight html %}
 
@@ -78,23 +66,19 @@ Getting started with your **Essential JavaScript Chart** is very easy. You can s
 {% endhighlight %}
 
 
-
-The above code example renders a **Chart** with the default `Column series` type and some random values assigned to the column series. 
-
-The following screenshot displays the Chart.
+The above code example renders a chart as below with the default `Column series` type and some random values assigned to the column series. 
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img2.png" %}
 
 ## Add a Chart series
 
-By default, line series is used. To create a **series**, you need to add the following code example to the scripts. For example, the following steps illustrate how to add a column series to the **Chart**.
+The following steps illustrate how to add a `column series` to the chart.
 
-1. You need to add the name of the series displayed in Chart legend.
+1. Add the `name` of the series displayed in Chart legend.
 
-2. Then, you need to specify the type of series you want to render using [`type`](/js/api/ejchart#seriestypespan-classtype-signature-type-enumenumspan "series.type") property.
+2. Specify the [type](/js/api/ejchart#seriestypespan-classtype-signature-type-enumenumspan "series.type") of series that you want to render.
 
-3. You can add x and y [`points`](/js/api/ejchart#seriespointsspan-classtype-signature-type-arrayarrayspan "points") to the series as shown in the following code example.
-
+3. Add x and y [points](/js/api/ejchart#seriespointsspan-classtype-signature-type-arrayarrayspan "points") to the series as shown in the following code example.
 
 
 {% highlight js %}
@@ -123,23 +107,18 @@ By default, line series is used. To create a **series**, you need to add the fol
                 }
                 ],
                 // ...             
-
             });
 
 
 {% endhighlight %}
 
-
-
-The following screenshot displays a Chart series:
-
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img3.png" %}
 
-## Add JSON data to the Chart
+## Populate data
 
-You can add **JSON** data to the **Chart** using the [`dataSource`](/js/api/ejchart#seriesdatasourcespan-classtype-signature-type-objectobjectspan "dataSource") property in Chart series. Since you need to show the average High and Low temperature along with the Precipitation, you can create a **JSON** data as in the following code example. 
+You can bind [JSON](http://json.org/) data to the chart using the [`dataSource`](/js/api/ejchart#seriesdatasourcespan-classtype-signature-type-objectobjectspan "dataSource") property in chart series. You can use the sample JSON data is given below which is needed for this tutorial. 
 
-The precipitation data is taken from [http://www.usclimatedata.com/](http://www.usclimatedata.com/)
+> The precipitation data is taken from [http://www.usclimatedata.com/](http://www.usclimatedata.com/)
 
 {% highlight js %}
 
@@ -160,16 +139,11 @@ The precipitation data is taken from [http://www.usclimatedata.com/](http://www.
             { date: 'Dec', high: 45, low: 29, precipitation: 2.8 }
         ];
 
-
-
 {% endhighlight %}
 
-
-
-Now, set the datasource and corresponding x and y values to the **Chart** series using [`dataSource`](/js/api/ejchart#seriesdatasourcespan-classtype-signature-type-objectobjectspan "dataSource"), [`xName`](/js/api/ejchart#seriesxnamespan-classtype-signature-type-stringstringspan "xName"), [`yName`](/js/api/ejchart#seriesynamespan-classtype-signature-type-stringstringspan "yName") properties of the [`dataSource`](/js/api/ejchart#seriesdatasourcespan-classtype-signature-type-objectobjectspan "dataSource") as shown in the following code example.
+Now, set the [`dataSource`](/js/api/ejchart#seriesdatasourcespan-classtype-signature-type-objectobjectspan "dataSource"), [`xName`](/js/api/ejchart#seriesxnamespan-classtype-signature-type-stringstringspan "xName") and [`yName`](/js/api/ejchart#seriesynamespan-classtype-signature-type-stringstringspan "yName") as shown in the following code example.
 
 {% highlight js %}
-
 
     $(function () {
             $("#chartcontainer").ejChart(
@@ -206,27 +180,26 @@ Now, set the datasource and corresponding x and y values to the **Chart** series
 {% endhighlight %}
 
 
-
-The following screenshot displays the Chart when **JSON** data is added.
+The following screenshot displays the Chart when JSON data is added.
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img4.png" %}
 
-## Add Chart Axis of your choice
+## Add chart axis of your choice
 
-In the **Chart** when **JSON** is added, the axes are provided explicitly and **ejChart** initializes the right-axis based on the data type. You can also specify the axis type of your choice using `valueType` option and customize the options available in the axes. The following axes types are supported:
+In the chart when data is bound, the axes need to be configured explicitly whereas it initializes the right-axis based on the data type internally. You can also specify the axis type of your choice using `valueType` option and customize the options available in the axes. The following axes types are supported:
 
-* `Category` -   String data can be plotted using `category` axis. Category axis can be initialized only as x-axis.
-* `Double` -   Numeric values can be plotted using `double` axis.
-* `Datetime` -  DateTime can be plotted using `datetime` axis. This type of axis can be initialized only as x-axis.
-* `Logarithmic` -  Numeric values can be plotted using `logarithm` axis.
+* `category` -   String data can be plotted using `category` axis. Category axis can be initialized only as x-axis.
+* `double` -   Numeric values can be plotted using `double` axis.
+* `datetime` -  DateTime can be plotted using `datetime` axis. This type of axis can be initialized only as x-axis.
+* `logarithmic` -  Numeric values can be plotted using `logarithm` axis.
 
-You can use [`primaryXAxis`](/js/api/ejchart#primaryxaxisspan-classtype-signature-type-objectobjectspan "primaryXAxis") and [`primaryYAxis`](/js/api/ejchart#primaryyaxisspan-classtype-signature-type-objectobjectspan "primaryYAxis") options to initialize the axes. As the data contains string values along x-axis, you can set [`valueType`](/js/api/ejchart#primaryxaxisvaluetypespan-classtype-signature-type-enumenumspan "primaryXAxis.valueType") as `category` for [`primaryXAxis`](/js/api/ejchart#primaryxaxisspan-classtype-signature-type-objectobjectspan "primaryXAxis") and `double` for [`primaryYAxis`](/js/api/ejchart#primaryyaxisspan-classtype-signature-type-objectobjectspan "primaryYAxis"). 
+Initialize the [`primaryXAxis`](/js/api/ejchart#primaryxaxisspan-classtype-signature-type-objectobjectspan "primaryXAxis") and [`primaryYAxis`](/js/api/ejchart#primaryyaxisspan-classtype-signature-type-objectobjectspan "primaryYAxis") options. As the data contains string values along x-axis, set [`valueType`](/js/api/ejchart#primaryxaxisvaluetypespan-classtype-signature-type-enumenumspan "primaryXAxis.valueType") as `category` for [`primaryXAxis`](/js/api/ejchart#primaryxaxisspan-classtype-signature-type-objectobjectspan "primaryXAxis") and `double` for [`primaryYAxis`](/js/api/ejchart#primaryyaxisspan-classtype-signature-type-objectobjectspan "primaryYAxis"). 
 
-Since the values are in Farenheit for Temperature and Inches for Precipetation, you need to initialize different axis instance for each unit. You can use [`labelFormat`](/js/api/ejchart#primaryyaxislabelformatspan-classtype-signature-type-stringstringspan "primaryYAxis.labelFromat") option to add suffix for axis labels.
+Since the values are in Farenheit for Temperature and Inches for Precipitation, you need to initialize different axis instance for each unit. You can use [`labelFormat`](/js/api/ejchart#primaryyaxislabelformatspan-classtype-signature-type-stringstringspan "primaryYAxis.labelFromat") option to add suffix for axis labels.
 
-In order to add additional axes to the Chart other than [`primaryXAxis`](/js/api/ejchart#primaryxaxisspan-classtype-signature-type-objectobjectspan "primaryXAxis") and [`primaryYAxis`](/js/api/ejchart#primaryyaxisspan-classtype-signature-type-objectobjectspan "primaryYAxis"), you need to initialize `axes` option with collection of axis and set `name` for axis in the axes collection.
+In order to add additional axes to the chart other than [`primaryXAxis`](/js/api/ejchart#primaryxaxisspan-classtype-signature-type-objectobjectspan "primaryXAxis") and [`primaryYAxis`](/js/api/ejchart#primaryyaxisspan-classtype-signature-type-objectobjectspan "primaryYAxis"), you need to initialize `axes` option with collection of axis and set `name` for axis in the axes collection.
 
-The following code example illustrates how to add Chart axis.
+The following code example illustrates how to add chart axis.
 
 {% highlight js %}
 
@@ -307,7 +280,11 @@ The following screenshot displays a Chart with the desired output.
 
 ## Add Data Labels
 
-Data Labels display the series points in **Chart**. To display the data labels, you need to enable the [`visible`](/js/api/ejchart#seriesmarkerdatalabelvisiblespan-classtype-signature-type-booleanbooleanspan "dataLabel.visible") property of [`dataLabel`](/js/api/ejchart#seriesmarkerdatalabelspan-classtype-signature-type-objectobjectspan "dataLabel") in the [`marker`](/js/api/ejchart#seriesmarkerspan-classtype-signature-type-objectobjectspan "series.marker") of specific series. By default, it displays the Y-value with label format provided in axis (For example: 4.88 inch ). The following code example shows how to add Data Labels.
+To display the data labels, you need to enable the [`visible`](/js/api/ejchart#seriesmarkerdatalabelvisiblespan-classtype-signature-type-booleanbooleanspan "dataLabel.visible") property of [`dataLabel`](/js/api/ejchart#seriesmarkerdatalabelspan-classtype-signature-type-objectobjectspan "dataLabel") in the [`marker`](/js/api/ejchart#seriesmarkerspan-classtype-signature-type-objectobjectspan "series.marker") of specific series. 
+
+> ejChart `dataLabel` displays the Y-value with label format provided in axis by default. 
+
+The following code example shows how to add Data Labels.
 
 {% highlight js %}
 
@@ -348,7 +325,11 @@ The following screenshot displays a Chart when data labels are enabled.
 
 ## Enable Tooltip
 
-To display the [`tooltip`](/js/api/ejchart#seriestooltipspan-classtype-signature-type-objectobjectspan "tooltip") of **Chart** series, you can enable the [`visible`](/js/api/ejchart#seriestooltipvisiblespan-classtype-signature-type-booleanbooleanspan "tooltip.visible") property of [`tooltip`](/js/api/ejchart#seriestooltipspan-classtype-signature-type-objectobjectspan "tooltip") in the specific series. By default, it displays `X` and `Y` value of points when the mouse is hovered over the points. The following code example shows how to enable a Tooltip.
+To display the [`tooltip`](/js/api/ejchart#seriestooltipspan-classtype-signature-type-objectobjectspan "tooltip"), enable the [`visible`](/js/api/ejchart#seriestooltipvisiblespan-classtype-signature-type-booleanbooleanspan "tooltip.visible") property of [`tooltip`](/js/api/ejchart#seriestooltipspan-classtype-signature-type-objectobjectspan "tooltip") in the specific series. 
+
+> ejChart `tooltip` displays `X` and `Y` value of points when the mouse is hovered over the points by default. 
+
+The following code example shows how to enable a Tooltip.
 
 {% highlight js %}
 
@@ -390,4 +371,3 @@ To display the [`tooltip`](/js/api/ejchart#seriestooltipspan-classtype-signature
 The following screenshot displays a Chart when tooltip is enabled.
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img7.png" %}
-
