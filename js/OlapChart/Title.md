@@ -20,6 +20,10 @@ Title property allows you to set the default title for a Chart as follows.
 
 $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
+    size: {
+        height: "460px",
+        width: "950px"
+    },
     title: {
         text: "OLAP Chart in Essential Studio"
     }
@@ -39,6 +43,10 @@ You can customize the title text font using **title.font** property.
 $(function() {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
+        size: {
+            height: "460px",
+            width: "950px"
+        },
         title: {
             text: "OLAP Chart in Essential Studio"
         },

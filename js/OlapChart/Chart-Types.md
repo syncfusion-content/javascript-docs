@@ -39,6 +39,10 @@ $("#OlapChart1").ejOlapChart({
     }
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Column
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
 
@@ -62,6 +66,10 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StackingColumn
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
 
@@ -85,6 +93,10 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Bar
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
 
@@ -109,7 +121,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StackingBar
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 {% endhighlight %}
@@ -132,7 +148,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Pie
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 
@@ -156,7 +176,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Pyramid
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 {% endhighlight %}
@@ -179,7 +203,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Funnel
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 {% endhighlight %}
@@ -202,7 +230,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Line
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 {% endhighlight %}
@@ -225,7 +257,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StepLine
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 
@@ -249,7 +285,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Spline
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 {% endhighlight %}
@@ -272,7 +312,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.Area
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 
@@ -296,7 +340,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StepArea
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 {% endhighlight %}
@@ -319,7 +367,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.SplineArea
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }    
 });
 
 
@@ -343,7 +395,11 @@ $("#OlapChart1").ejOlapChart({
     },
     commonSeriesOptions: {
         type: ej.olap.OlapChart.ChartTypes.StackingArea
-    }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }   
 });
 
 

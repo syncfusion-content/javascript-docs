@@ -73,7 +73,7 @@ Click New Item and select HTML Page from the listed templates. Name the page as 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img6.png" %}
 * The following screen shot illustrates how to refer **Syncfusion.Olap.Base.**
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img7.png" %}
-* Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Core.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.Olap.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll and Syncfusion.XlsIO.Base.dll, System.Data.SqlServerCe.dll (Version: 4.0.0.0).
+* Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Linq.Base.dll, Syncfusion.Olap.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll and Syncfusion.XlsIO.Base.dll, Syncfusion.DocIO.Base.dll, Syncfusion.Pdf.Base.dll , System.Data.SqlServerCe.dll (Version: 4.0.0.0).
 * Click OK.
 
 ###Add Scripts and Styles 
@@ -195,7 +195,7 @@ public interface IOlapClientService
    Dictionary<string, object> MemberExpanded(string action, bool checkedStatus, string parentNode, string tag, string dimensionName, string cubeName, string olapReport, string clientReports);
         
    [OperationContract]
-   void ExportOptions(System.IO.Stream stream);
+   void Export(System.IO.Stream stream);
 
 }
 
@@ -445,11 +445,13 @@ private DataTable GetDataTable()
 }
 
 //This method exports the PivotGrid content to an excel sheet.
-public void ExportOptions(Stream stream)
+public void Export(Stream stream) 
 {
-   PivotGrid pivotGridHelper = new PivotGrid();
-   OlapDataManager DataManager = new OlapDataManager(connectionString);
-   pivotGridHelper.ExportToExcel(DataManager, new StreamReader(stream).ReadToEnd(), "Sample.xls", HttpContext.Current.Response);
+	System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+	string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
+	OlapDataManager DataManager = new OlapDataManager(connectionString);
+	string fileName = "Sample";
+	olapClientHelper.ExportOlapClient(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 //This method carries the information about the default report which would be rendered within OlapClient initially.
