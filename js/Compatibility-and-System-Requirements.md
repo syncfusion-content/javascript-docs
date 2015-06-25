@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Compatibility-and-System-Requirements
-description: compatibility and system requirements
+title: Compatibility and System Requirements of Essential JS components
+description: Supported Browsers, Prerequisites to work with our Syncfusion Essential JS/JavaScript components and Operating system compatibility.
 platform: js
 control: Introduction
 documentation: ug
@@ -33,9 +33,9 @@ Our Syncfusion JavaScript web components are compatible with all the major platf
 
 ## System Requirements
 
-* The first prerequisite for HTML file creation is any of the editors such as **Notepad** or **Notepad++**, in which we embed our Syncfusion control’s code.  
+* Any text editors such as **Notepad** or **Notepad++**.  
 
-* Another important requirement is any of the above specified compatible web browsers with [JavaScript enabled](https://support.microsoft.com/en-in/gp/howtoscript) in it, to run the HTML file.
+* Web browsers with [JavaScript enabled](https://support.microsoft.com/en-in/gp/howtoscript) in it.
 
-* If in case, the user needs to use the Reporting or Business Intelligence controls, then it is necessary to have one of the IDE – **Visual Studio (2010 +)** in the machine.
+* If you want to use Reporting or Business Intelligence controls, it is necessary to have one of the IDE – **Visual Studio 2010+** in the machine.
 
