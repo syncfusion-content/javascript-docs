@@ -27,7 +27,11 @@ $(function() {
     $("#OlapChart1").ejOlapChart({
         url: "../wcf/OlapChartService.svc",
         commonSeriesOptions: {
-            type: ej.olap.OlapChart.chartTypes.Line
+            type: ej.olap.OlapChart.ChartTypes.Line
+        },
+        size: {
+            height: "460px",
+            width: "950px"
         },
         seriesRendering: "onSeriesRenders"
     });
@@ -74,9 +78,12 @@ $("#OlapChart1").ejOlapChart({
             width: 2,
             color: 'red'
         }
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
-
 {% endhighlight %}
 
 {% include image.html url="/js/OlapChart/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img3.png" %}

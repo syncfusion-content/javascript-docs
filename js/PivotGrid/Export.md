@@ -17,11 +17,13 @@ The following code example illustrates how to save the document to Excel via ser
 
 {% highlight c# %}
 
-public void ExportOptions(Stream stream)
+public void Export(System.IO.Stream stream) 
 {
-PivotGrid pivotGridHelper = new PivotGrid();
-OlapDataManager DataManager=new OlapDataManager(connectionString);
-pivotGridHelper.ExportToExcel(DataManager, newStreamReader(stream).ReadToEnd(), "Sample.xls",HttpContext.Current.Response);
+System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
+OlapDataManager DataManager = new OlapDataManager(connectionString);
+string fileName = "Sample";
+htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 {% endhighlight %}
 
@@ -47,7 +49,7 @@ $(function() {
 
 function btnClick(e) {
     pivotGridObj = $('#PivotGrid').data("ejPivotGrid");
-    pivotGridObj.exportToExcel();
+    pivotGridObj.exportPivotGrid("excel");
 }
 
 {% endhighlight %}

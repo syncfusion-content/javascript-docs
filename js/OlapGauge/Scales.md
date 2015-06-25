@@ -21,6 +21,7 @@ $(function() {
     $("#OlapGauge1").ejOlapGauge({
         url: "../wcf/OlapGaugeService.svc",
         enableTooltip: true,
+        load: "loadGaugeTheme",
         backgroundColor: "transparent",
         scales: [{
             showRanges: true,
@@ -29,7 +30,6 @@ $(function() {
             size: 2,
             border: { 
                width: 2.5 
-                   
             },
             showIndicators: true,
             showLabels: true,
@@ -49,7 +49,7 @@ $(function() {
             }],
             ticks: [{
                 type: "major",
-                distanceFromScale: 2,
+                distanceFromScale: 5,
                 height: 16,
                 width: 1,
                 color: "#8c8c8c"

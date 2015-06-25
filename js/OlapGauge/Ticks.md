@@ -48,7 +48,7 @@ $(function() {
                 length: 25,
                 width: 15
             }],
-            ticks: [{ type: "major", distanceFromScale: 2, height: 16, width: 1, color: "red" 
+            ticks: [{ type: "major", distanceFromScale: 5, height: 16, width: 1, color: "red" 
             }, {  type: "minor", height: 6, width: 1, distanceFromScale: 2, color: "blue" 
             }],
             labels: [{
@@ -77,7 +77,7 @@ $(function() {
             }, {
                 position: {
                     x: 180,
-                    y: 320
+                    y: 330
                 },
                 font: {
                     size: "10px",
@@ -247,7 +247,7 @@ $(function() {
             }],
             ticks: [{
                 type: "major",
-                distanceFromScale: 15,
+                distanceFromScale: 5,
                 height: 18,
                 width: 2,
                 color: "red"
@@ -255,7 +255,7 @@ $(function() {
                 type: "minor",
                 height: 8,
                 width: 2,
-                distanceFromScale: 15,
+                distanceFromScale: 2,
                 color: "blue"
             }],
             labels: [{

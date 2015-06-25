@@ -105,6 +105,10 @@ $(function() {
         legend: {
             visible: true,
             rowCount: 3
+        },
+        size: {
+            height: "460px",
+            width: "950px"
         }
     });
 });

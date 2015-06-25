@@ -37,6 +37,10 @@ $("#OlapChart1").ejOlapChart({
             color: "red"
         },
     },
+    size: {
+        height: "460px",
+        width: "950px"
+    }
 });
 
 
@@ -54,6 +58,10 @@ $("#OlapChart1").ejOlapChart({
     url: "../wcf/OlapChartService.svc",
     primaryXAxis: {
         labelRotation: 45
+    },
+    size: {
+        height: "460px",
+        width: "950px"
     }
 });
 

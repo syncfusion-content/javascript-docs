@@ -237,6 +237,8 @@ RenameReport:"Renommer rapport",
 SaveReport:"Enregistrer le rapport",
 LoadReport:"Rapport de charge",
 ExportToExcel:"Exporter vers Excel",
+ExportToWord:"Exporter vers Word",
+ExportToPdf:"Exporter vers Pdf",
 FullScreen:"Plein écran",
 Grid:"Grille",
 Chart:"Graphiq",
@@ -279,6 +281,12 @@ Expand:"Développer",
 Collapse:"Effondrement",
 Exit:"Quitter"
 }
+ej.PivotGrid.locale["fr-FR"] = {
+ToolTipRow: "Rangée",
+ToolTipColumn: "Colonne",
+ToolTipValue: "Valeur"
+}
+
 
 {% endhighlight %}
 
