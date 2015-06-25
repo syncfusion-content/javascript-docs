@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dependencies
-description: dependencies
+title: Dependent scripts and .NET libraries for Syncfusion Essential JS widgets
+description: Common scripts and .NET libraries for Syncfusion components are listed.
 platform: js
 control: Introduction
 documentation: ug
@@ -18,11 +18,9 @@ documentation: ug
 * jQuery.easing - to support the animation effects in the components.
 * jQuery.Globalize - to support the globalization.
 
-Current version of Syncfusion components supports the latest version of jQuery (**jQuery 2.1.4**).
-
 ## Server-side Libraries
 
-Some JavaScript UI web widgets like Grid and Schedule that supports **Exporting** functionality. This requires the below assemblies to be referred in the application. 
+Some JavaScript UI web widgets like Grid and Schedule requires the below assemblies to support export functionality. 
 
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
@@ -32,7 +30,7 @@ Some JavaScript UI web widgets like Grid and Schedule that supports **Exporting*
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
 
-If the user wants to use the **Reporting** controls (ReportViewer), then the following `System` and other Syncfusion assemblies listed below are needed to be referred mandatorily in the application. 
+**Reporting** controls (ReportViewer) requires the following assemblies listed below are to be referred mandatorily in the application. 
 
 * System.Web.Routing  
 * System.Web.Http
@@ -51,7 +49,7 @@ If the user wants to use the **Reporting** controls (ReportViewer), then the fol
 * Syncfusion.Gauge.Wpf
 * Syncfusion.SfMaps.Wpf 
 
-The dependency files required for making use of **Business Intelligence Components** (PivotGrid, Olap Client, Olap Chart and Olap Gauge) in JavaScript platform are listed below -  
+**Business Intelligence** components (Pivot Grid, Olap Client, Olap Chart and Olap Gauge) require the below listed assemblies -  
 
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
@@ -65,7 +63,7 @@ The dependency files required for making use of **Business Intelligence Componen
 * Microsoft.AnalysisServices.AdomdClient
 * System.Data.SqlServerCe (Version: 4.0.0.0).
 
-The dependent assemblies required to use the **File Format** products (XlsIO, DocIO, PDF and Presentation) are as follows -  
+**File Format** products (XlsIO, DocIO, PDF and Presentation) require the below listed assemblies -  
 
 * Syncfusion.Compression.Base
 * Syncfusion.XlsIO.Base
@@ -84,5 +82,5 @@ The dependent assemblies required to use the **File Format** products (XlsIO, Do
 * Syncfusion.SfChart.WPF
 * Syncfusion.Shared.WPF
 
-All the above specified Syncfusion assemblies are available separately for the .NET framerworks **4.0**, **4.5** and **4.5.1**.
+All the above specified Syncfusion assemblies are available separately for the .NET Framerworks **4.0**, **4.5** and **4.5.1**.
 
