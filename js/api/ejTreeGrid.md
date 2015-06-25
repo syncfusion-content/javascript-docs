@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejTreeGrid<span class="signature">()</span>
+$(element).ejTreeGrid<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $('#treegrid').ejTreeGrid();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

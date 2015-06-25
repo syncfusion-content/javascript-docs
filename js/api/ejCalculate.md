@@ -18,7 +18,7 @@ Custom engine to perfom calculation like excel sheet
 
 
 
-## $(element).ejCalculate<span class="signature">()</span>
+$(element).ejCalculate<span class="signature">()</span>
 
 
 
@@ -46,7 +46,8 @@ var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejRadialMenu<span class="signature">()</span>
+$(element).ejRadialMenu<span class="signature">()</span>
 
 
 
@@ -26,7 +26,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

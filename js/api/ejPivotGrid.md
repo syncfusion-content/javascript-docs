@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejPivotGrid<span class="signature">()</span>
+$(element).ejPivotGrid<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $("#PivotGrid").ejPivotGrid(...);
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

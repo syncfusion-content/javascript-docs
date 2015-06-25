@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejBarcode<span class="signature">()</span>
+$(element).ejBarcode<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $('#barcode1').ejBarcode();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

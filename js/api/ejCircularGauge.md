@@ -13,7 +13,7 @@ The Circular gauge can be easily configured to the DOM element, such as div. you
 
 
 
-## $(element).ejCircularGauge<span class="signature">(options)</span>
+$(element).ejCircularGauge<span class="signature">(options)</span>
 
 
 
@@ -27,7 +27,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejCaptcha<span class="signature">(options)</span>
+$(element).ejCaptcha<span class="signature">(options)</span>
 
 
 
@@ -64,7 +64,8 @@ $('#Captcha1').ejCaptcha();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

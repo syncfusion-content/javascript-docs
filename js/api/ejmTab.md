@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmTab<span class="signature">()</span>
+$(element).ejmTab<span class="signature">()</span>
 
 
 
@@ -65,7 +65,8 @@ $("#tab").ejmTab();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmFooter<span class="signature">()</span>
+$(element).ejmFooter<span class="signature">()</span>
 
 
 
@@ -52,7 +52,8 @@ $("#footer").ejmFooter();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

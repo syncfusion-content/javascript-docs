@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejOlapClient<span class="signature">()</span>
+$(element).ejOlapClient<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $("#OlapClient").ejOlapClient(...);
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

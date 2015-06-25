@@ -18,7 +18,7 @@ The Split button allows you to perform an action using clicking the button and c
 
 
 
-## $(element).ejSplitButton<span class="signature">()</span>
+$(element).ejSplitButton<span class="signature">()</span>
 
 
 
@@ -52,7 +52,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

@@ -13,7 +13,7 @@ The treemap can be easily configured to the DOM element, such as div and can be 
 
 
 
-## $(element).ejTreeMap<span class="signature">()</span>
+$(element).ejTreeMap<span class="signature">()</span>
 
 
 
@@ -28,7 +28,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

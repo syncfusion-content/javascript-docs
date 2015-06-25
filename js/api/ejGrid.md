@@ -18,7 +18,7 @@ The grid can be easily configured to the DOM element, such as div. you can creat
 
 
 
-## $(element).ejGrid<span class="signature">(options)</span>
+$(element).ejGrid<span class="signature">(options)</span>
 
 
 
@@ -64,7 +64,8 @@ $('#Grid').ejGrid({
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

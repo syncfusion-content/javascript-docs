@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejCheckBox<span class="signature">()</span>
+$(element).ejCheckBox<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $("#chkbox").ejCheckBox();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

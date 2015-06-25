@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejGantt<span class="signature">()</span>
+$(element).ejGantt<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $('#gantt').ejGantt();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

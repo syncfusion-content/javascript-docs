@@ -18,7 +18,7 @@ The Rotator control displays a set of slides. Each slide may contain images or i
 
 
 
-## $(element).ejRotator<span class="signature">()</span>
+$(element).ejRotator<span class="signature">()</span>
 
 
 
@@ -56,7 +56,8 @@ $("#sliderContent").ejRotator();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejColorPicker<span class="signature">(options)</span>
+$(element).ejColorPicker<span class="signature">(options)</span>
 
 
 
@@ -64,7 +64,8 @@ $('#colorPick').ejColorPicker({ value: "#278787" });
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

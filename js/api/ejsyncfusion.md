@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejWaitingPopup<span class="signature">()</span>
+$(element).ejWaitingPopup<span class="signature">()</span>
 
 
 
@@ -59,7 +59,8 @@ $("#target").ejWaitingPopup({ showOnInit: true });
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

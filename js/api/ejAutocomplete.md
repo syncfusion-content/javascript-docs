@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejAutocomplete<span class="signature">()</span>
+$(element).ejAutocomplete<span class="signature">()</span>
 
 
 
@@ -27,7 +27,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

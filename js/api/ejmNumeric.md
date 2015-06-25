@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmNumeric<span class="signature">()</span>
+$(element).ejmNumeric<span class="signature">()</span>
 
 
 
@@ -53,7 +53,8 @@ $("#editor").ejmNumeric();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

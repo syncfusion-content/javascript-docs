@@ -18,7 +18,7 @@ The grid can be easily configured to the DOM element, such as div. you can creat
 
 
 
-## $(element).ejmGrid<span class="signature">(options)</span>
+$(element).ejmGrid<span class="signature">(options)</span>
 
 
 
@@ -70,7 +70,8 @@ $("#mobilegrid").ejmGrid({ dataSource:data,columns: [
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

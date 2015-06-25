@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmRadioButton<span class="signature">()</span>
+$(element).ejmRadioButton<span class="signature">()</span>
 
 
 
@@ -53,7 +53,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

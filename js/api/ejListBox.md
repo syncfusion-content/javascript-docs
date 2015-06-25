@@ -13,7 +13,7 @@ The Listbox control provides a list options to make user to choose an item from 
 
 
 
-## $(element).ejListBox<span class="signature">()</span>
+$(element).ejListBox<span class="signature">()</span>
 
 
 
@@ -26,7 +26,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

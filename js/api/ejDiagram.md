@@ -18,7 +18,7 @@ The diagram control provides 2D surface to visualize the data as shapes, lines, 
 
 
 
-## $(element).ejDiagram<span class="signature">()</span>
+$(element).ejDiagram<span class="signature">()</span>
 
 
 
@@ -47,7 +47,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

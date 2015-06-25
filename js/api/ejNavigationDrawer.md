@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejNavigationDrawer<span class="signature">()</span>
+$(element).ejNavigationDrawer<span class="signature">()</span>
 
 
 
@@ -69,7 +69,8 @@ $("#navpane").ejNavigationDrawer();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

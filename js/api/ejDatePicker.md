@@ -18,7 +18,7 @@ Date selection with the input field.
 
 
 
-## $(element).ejDatePicker<span class="signature">(options)</span>
+$(element).ejDatePicker<span class="signature">(options)</span>
 
 
 
@@ -63,7 +63,8 @@ $("#datepicker").ejDatePicker();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

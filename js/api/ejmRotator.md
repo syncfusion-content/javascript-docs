@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmRotator<span class="signature">()</span>
+$(element).ejmRotator<span class="signature">()</span>
 
 
 
@@ -83,7 +83,8 @@ $("#rotator").ejmRotator({ targetId: "rotatorcontent" });
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

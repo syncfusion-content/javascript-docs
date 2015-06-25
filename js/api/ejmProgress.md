@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejmProgress<span class="signature">()</span>
+$(element).ejmProgress<span class="signature">()</span>
 
 
 
@@ -52,7 +52,8 @@ $("#progress").ejmProgress();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

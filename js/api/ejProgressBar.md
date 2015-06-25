@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejProgressBar<span class="signature">()</span>
+$(element).ejProgressBar<span class="signature">()</span>
 
 
 
@@ -45,7 +45,8 @@ $("#progress").ejProgressBar({value: 50});
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

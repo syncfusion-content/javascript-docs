@@ -18,7 +18,7 @@ Date and Time selection with the input field.
 
 
 
-## $(element).ejDateTimePicker<span class="signature">(options)</span>
+$(element).ejDateTimePicker<span class="signature">(options)</span>
 
 
 
@@ -63,7 +63,8 @@ $("#datetime").ejDateTimePicker();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 
