@@ -18,7 +18,7 @@ The Linera gauge can be easily configured to the DOM element, such as div. you c
 
 
 
-## $(element).ejLinearGauge<span class="signature">(options)</span>
+$(element).ejLinearGauge<span class="signature">(options)</span>
 
 
 
@@ -63,7 +63,8 @@ $('#LinearGauge1').ejLinearGauge();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

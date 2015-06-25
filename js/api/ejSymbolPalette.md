@@ -18,7 +18,7 @@ defined values to render symbolpalette
 
 
 
-## $(element).ejSymbolPalette<span class="signature">()</span>
+$(element).ejSymbolPalette<span class="signature">()</span>
 
 
 
@@ -47,7 +47,8 @@ $("#symbolpalette").ejSymbolPalette();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

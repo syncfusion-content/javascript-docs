@@ -18,7 +18,7 @@ Communicates with data source and returns the desired result based on the Query 
 
 
 
-## $(element).ejQuery<span class="signature">()</span>
+$(element).ejQuery<span class="signature">()</span>
 
 
 
@@ -608,7 +608,8 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 
-### requiresCount<span class="signature">()</span>
+#Requires
+{:.require}Count<span class="signature">()</span>
 
 
 
@@ -628,7 +629,8 @@ Example
 
 <pre class="prettyprint">
 <code>&lt;script&gt;
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().requiresCount()));
+var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().Requires
+{:.require}Count()));
 &lt;/script&gt;</code>
 </pre>
 

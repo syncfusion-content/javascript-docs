@@ -18,7 +18,7 @@ The treeview can be easily configured with the DOM element, such as div or ul. y
 
 
 
-## $(element).ejTreeView<span class="signature">(options)</span>
+$(element).ejTreeView<span class="signature">(options)</span>
 
 
 
@@ -91,7 +91,8 @@ $('#treeView').ejTreeView();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

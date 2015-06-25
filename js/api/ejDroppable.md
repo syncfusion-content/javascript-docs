@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejDroppable<span class="signature">()</span>
+$(element).ejDroppable<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $('#dropable').ejDroppable();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

@@ -18,7 +18,7 @@ The rangenavigator can be easily configured to the DOM element, such as div. you
 
 
 
-## $(element).ejRangeNavigator<span class="signature">(options, options)</span>
+$(element).ejRangeNavigator<span class="signature">(options, options)</span>
 
 
 
@@ -69,7 +69,8 @@ $('#container').RangeNavigator();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

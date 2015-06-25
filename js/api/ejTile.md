@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejTile<span class="signature">()</span>
+$(element).ejTile<span class="signature">()</span>
 
 
 
@@ -47,7 +47,8 @@ $("#tile").ejTile({ imageUrl: "people.png" });
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

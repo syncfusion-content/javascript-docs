@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejButton<span class="signature">(options)</span>
+$(element).ejButton<span class="signature">(options)</span>
 
 
 
@@ -27,7 +27,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

@@ -18,7 +18,7 @@ The Digital gauge can be easily configured to the DOM element, such as div. you 
 
 
 
-## $(element).ejDigitalGauge<span class="signature">(options)</span>
+$(element).ejDigitalGauge<span class="signature">(options)</span>
 
 
 
@@ -63,7 +63,8 @@ $('#DigitalCore').ejDigitalGauge();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

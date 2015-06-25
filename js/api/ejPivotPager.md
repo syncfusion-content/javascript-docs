@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejPivotPager<span class="signature">()</span>
+$(element).ejPivotPager<span class="signature">()</span>
 
 
 
@@ -27,7 +27,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jquery-1.10.2.min.js

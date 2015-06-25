@@ -13,7 +13,7 @@ The chart can be easily configured to the DOM element, such as div. you can crea
 
 
 
-## $(element).ejChart<span class="signature">()</span>
+$(element).ejChart<span class="signature">()</span>
 
 
 
@@ -27,7 +27,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery.js

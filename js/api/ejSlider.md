@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejSlider<span class="signature">()</span>
+$(element).ejSlider<span class="signature">()</span>
 
 
 
@@ -49,7 +49,8 @@ $('#slider').ejSlider();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

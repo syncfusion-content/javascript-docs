@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejSchedule<span class="signature">()</span>
+$(element).ejSchedule<span class="signature">()</span>
 
 
 
@@ -47,7 +47,8 @@ $('#Schedule').ejSchedule();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

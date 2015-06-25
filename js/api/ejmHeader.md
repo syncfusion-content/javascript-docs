@@ -13,7 +13,7 @@ metacontent:
 
 
 
-## $(element).ejmHeader<span class="signature">()</span>
+$(element).ejmHeader<span class="signature">()</span>
 
 
 
@@ -28,7 +28,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

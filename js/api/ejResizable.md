@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejResizable<span class="signature">()</span>
+$(element).ejResizable<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $('#resizing').ejResizable();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

@@ -13,7 +13,7 @@ The DropDownList control provides a list options to make user to choose an item 
 
 
 
-## $(element).ejDropDownList<span class="signature">()</span>
+$(element).ejDropDownList<span class="signature">()</span>
 
 
 
@@ -27,7 +27,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 * module:jQuery

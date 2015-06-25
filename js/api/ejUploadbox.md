@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).ejUploadbox<span class="signature">()</span>
+$(element).ejUploadbox<span class="signature">()</span>
 
 
 
@@ -48,7 +48,8 @@ $('#uploadbox1').ejUploadbox();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

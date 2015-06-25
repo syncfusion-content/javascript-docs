@@ -18,7 +18,7 @@ Time selection with the input field.
 
 
 
-## $(element).ejTimePicker<span class="signature">()</span>
+$(element).ejTimePicker<span class="signature">()</span>
 
 
 
@@ -47,7 +47,8 @@ $("#timepicker").ejTimePicker();
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 

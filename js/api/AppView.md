@@ -18,7 +18,7 @@ metacontent:
 
 
 
-## $(element).AppView<span class="signature">()</span>
+$(element).AppView<span class="signature">()</span>
 
 
 
@@ -44,7 +44,8 @@ Example
 
 
 
-## Requires
+Requires
+{:.require}
 
 
 
