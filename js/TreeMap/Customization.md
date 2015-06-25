@@ -48,7 +48,7 @@ You can color, all the leaf nodes with the same color by setting the `color` val
 
 ###Range Color Mapping
 
-You can group the leaf nodes based on the range of the data’s color values. You can set a unique color for every ranges. To achieve this, specify the “`to`” and “`from`” values as range bound and “`color`” value to fill the leaf nodes of the particular range, through the `rangeColorMapping` property of the **TreeMap**.
+You can group the leaf nodes based on the range of the data’s color values. You can set a unique color for every ranges. To achieve this, specify the `to` and `from` values as range bound and `color` value to fill the leaf nodes of the particular range, through the `rangeColorMapping` property of the **TreeMap**.
 
 {% highlight js %}
 
