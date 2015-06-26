@@ -74,7 +74,7 @@ RenderingFailed</td><td>
 "Rendant pas "</td></tr>
 </table>
 
-The following code example shows how to localize **OlapChart’s User Interface** (UI) based on “French” culture.
+The following code example shows how to localize **OlapChart’s User Interface** (UI) based on “French” culture with the help of [locale](/js/api/ejOlapChart#localespan-classtype-signature-type-stringstringspan) property.
 
 {% highlight js %}
  
@@ -135,7 +135,7 @@ ej.olap.OlapChart.locale["zh-CN"] = {
 
 ##Localizing Cube Information
 
-To get the localized Cube information, “_Locale__Identifier"_ has to be set in the connection string:
+To get the localized Cube information, `Locale Identifier` has to be set in the connection string:
 
 {% highlight c# %}
 

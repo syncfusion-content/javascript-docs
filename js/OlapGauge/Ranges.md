@@ -13,7 +13,7 @@ documentation: ug
 
 ## Distance from Scale
 
-You can set the distance between the **ranges** and scales in **OlapGauge** using “**distanceFromScale”**.
+You can set the distance between the ranges and scales in **OlapGauge** using [distanceFromScale](/js/api/ejCircularGauge#scalesrangesdistancefromscalespan-classtype-signature-type-numbernumberspan) property.
 
 {% highlight js %}
 
@@ -113,7 +113,7 @@ $(function() {
 
 ## Style Customization 
 
-You can set the background color for the **ranges** in **OlapGauge** using “**backgroundColor**”.
+You can set the background color for the **ranges** in **OlapGauge** using [backgroundColor](/js/api/ejCircularGauge#scalesrangesbackgroundcolorspan-classtype-signature-type-stringstringspan) property.
 
 {% highlight js %}
 
@@ -217,7 +217,7 @@ $(function() {
 
 ## Size Setting
 
-You can customize the **Range size** using “**size**” property.
+You can customize the **Range size** using  [size](/js/api/ejCircularGauge#scalesrangessizespan-classtype-signature-type-numbernumberspan) property.
 
 {% highlight js %}
 

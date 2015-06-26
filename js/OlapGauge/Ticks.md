@@ -14,7 +14,7 @@ documentation: ug
    1. Major Ticks contains the range interval values.
    2. Minor Ticks contains only intervals between the major.
 
-You can further customize **Ticks** by setting color, width and height.
+You can further customize **Ticks** by setting [color](/js/api/ejCircularGauge#scalestickscolorspan-classtype-signature-type-stringstringspan), [width](/js/api/ejCircularGauge#scalestickswidthspan-classtype-signature-type-numbernumberspan) and [height](/js/api/ejCircularGauge#scalesticksheightspan-classtype-signature-type-numbernumberspan).
 
 {% highlight js %}
 
@@ -108,7 +108,7 @@ $(function() {
 
 ## Customizing the distance from Scale
 
-You can change the distance from the scale and the **Ticks** using “**distanceFromScale**” property.
+You can change the distance from the scale and the **Ticks** using [distanceFromScale](/js/api/ejCircularGauge#scalesticksdistancefromscalespan-classtype-signature-type-numbernumberspan) property.
 
 {% highlight js %}
 
@@ -211,7 +211,7 @@ $(function() {
 
 ## Height and Width Customization
 
-You can set the height and width of the **Ticks** using the “**tickWidth**” and “**tickHeight**” property.
+You can set the height and width of the **Ticks** using the [width](/js/api/ejCircularGauge#scalestickswidthspan-classtype-signature-type-numbernumberspan) and [height](/js/api/ejCircularGauge#scalesticksheightspan-classtype-signature-type-numbernumberspan) property.
 
 {% highlight js %}
 
@@ -314,7 +314,7 @@ $(function() {
 
 ## Hiding Ticks
 
-You can hide the **Ticks** that indicate the range values using “**showTicks**” property.
+You can hide the **Ticks** that indicate the range values using [showTicks](/js/api/ejCircularGauge#scalesshowticksspan-classtype-signature-type-booleanbooleanspan) property.
 
 {% highlight js %}
 

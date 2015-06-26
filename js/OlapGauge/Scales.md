@@ -13,7 +13,7 @@ documentation: ug
 
 ## Resizing the Scale Bar
 
-Radius of the **Scale Bar** is changed with the help of **scale Radius** property and in order to make **Scale Bar** visible, set **showScaleBar** property to ‘**true’**. You can set size of the **Scale Bar** with the help of **scaleBareSize** and border width using **scaleBorderWidth** property**.** 
+Radius of the **Scale Bar** is changed with the help of [scale Radius](/js/api/ejCircularGauge#scalesradiusspan-classtype-signature-type-numbernumberspan) property and in order to make **Scale Bar** visible, set [showScaleBar](/js/api/ejCircularGauge#scalesshowscalebarspan-classtype-signature-type-booleanbooleanspan) property to ‘**true’**. You can set size of the **Scale Bar** with the help of [size](/js/api/ejCircularGauge#scalessizespan-classtype-signature-type-numbernumberspan) and border width using [width](/js/api/ejCircularGauge#scalesborderwidthspan-classtype-signature-type-numbernumberspan) property**.** 
 
 {% highlight js %}
 

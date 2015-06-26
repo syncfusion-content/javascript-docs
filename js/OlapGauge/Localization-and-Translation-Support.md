@@ -58,7 +58,7 @@ RenderingFailed</td><td>
 "Rendant pas"</td></tr>
 </table>
 
-The following code example illustrates you on how to localize **OlapGauge’s** User Interface (UI) based on “French” culture.
+The following code example illustrates you on how to localize **OlapGauge’s** User Interface (UI) based on “French” culture with the help of [locale](/js/api/ejOlapGauge#localespan-classtype-signature-type-stringstringspan) property.
 
 {% highlight js %}
 
@@ -192,7 +192,7 @@ ej.olap.OlapGauge.locale["zh-CN"] = {
 
 ##Localizing Cube Information
 
-To render the localized Cube information, set **"Locale Identifier"** in the connection string.
+To render the localized Cube information, set `Locale Identifier` in the connection string.
 
 {% highlight c# %}
 

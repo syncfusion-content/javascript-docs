@@ -9,7 +9,7 @@ documentation: ug
 
 # Hyperlink
 
-The PivotGrid control supports **Hyperlink** option to link data for any individual cell. **Hyperlinks** are enabled individually for value, row, column, and summary cells by setting the **corresponding** property to **‘True’.** After enabling the property, the specified cells display **Hyperlink** on hovering. The name of the event to be triggered is passed to the **corresponding event** property. On clicking the cells, the passed event is triggered and the information of the cell is carried through a parameter.
+The PivotGrid control supports **Hyperlink** option to link data for any individual cell. [Hyperlinks](/js/api/ejPivotGrid#hyperlinksettingsspan-classtype-signature-type-objectobjectspan) are enabled individually for value, row, column, and summary cells by setting the **corresponding** property to **‘True’.** After enabling the property, the specified cells display **Hyperlink** on hovering. The name of the event to be triggered is passed to the **corresponding event** property. On clicking the cells, the passed event is triggered and the information of the cell is carried through a parameter.
 
 The following code example demonstrates how to create the **PivotGrid** control using **Hyperlink** support.
 

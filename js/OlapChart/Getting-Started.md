@@ -182,7 +182,7 @@ using System.Web.Script.Serialization;
 
 ###Create Class in Service file
 
-Create the **OlapChartService** class to implement the service methods. Inherit the class from **IOlapChartService** interface, which is created automatically when any new service is added.
+Create the `OlapChartService` class to implement the service methods. Inherit the class from `IOlapChartService` interface, which is created automatically when any new service is added.
 
 {% highlight c# %}
 
@@ -201,7 +201,7 @@ namespace WebApplication2
 
 Add the following methods to the service, which is invoked during any server-side operations performed in **OlapChart**.
 
-Initialize the **OlapChart** helper class and **OLAP DataManager** with appropriate connection string. 
+Initialize the `OlapChart` helper class and `OLAP DataManager` with appropriate connection string. 
 
 {% highlight c# %}
 
@@ -263,8 +263,8 @@ private OlapReport CreateOlapReport()
 
 ###Configuring Web.Config
 
-* You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is "**WebApplication2.OlapChartService**" where "**OlapChartService**" is the service class name and “**WebApplication2**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
-   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapChartService** contract and hence it is "**WebApplication2.IOlapChartService**".
+* You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is `WebApplication2.OlapChartService` where `OlapChartService` is the service class name and “**WebApplication2**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
+   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapChartService** contract and hence it is `WebApplication2.IOlapChartService`.
    2. **Binding:** In your application, you use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows
 
@@ -279,7 +279,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-* The **endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this **name** property. In the following code sample, "**WebApplication2.OlapChartServiceAspNetAjaxBehavior**" refers to the **OlapChartService** class under
+* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this `name` property. In the following code sample, `WebApplication2.OlapChartServiceAspNetAjaxBehavior` refers to the **OlapChartService** class under
 the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}

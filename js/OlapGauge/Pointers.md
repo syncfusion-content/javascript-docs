@@ -20,7 +20,7 @@ Two different types of pointer available in **OlapGauge** are:
 
 ## Changing Pointer Types
 
-You can set the **pointer** to Needle type by setting “**pointerType**”  property to “**Needle**” and the pointer to Marker type by setting the “**pointerType**" properties to  “**Marker**”.
+You can set the **pointer** to Needle type by setting [type](/js/api/ejCircularGauge#scalespointerstypespan-classtype-signature-type-enumenumspan)  property to “**Needle**” and the pointer to Marker type by setting the [type](/js/api/ejCircularGauge#scalespointerstypespan-classtype-signature-type-enumenumspan) properties to  “**Marker**”.
 
 {% highlight js %}
 
@@ -123,7 +123,7 @@ $(function() {
 
 ## Length and Width Customization
 
-You can customize the **Pointer** length and width using the “**pointerLength**” and “**pointerWidth**” property.
+You can customize the **Pointer** length and width using the [pointerLength](/js/api/ejCircularGauge#scalespointerslengthspan-classtype-signature-type-numbernumberspan) and [pointerWidth](/js/api/ejCircularGauge#scalespointerswidthspan-classtype-signature-type-numbernumberspan) property.
 
 {% highlight js %}
 
@@ -227,7 +227,7 @@ $(function() {
 
 ## Background Customization 
 
-You can customize the **Pointer background** color using “**backgroundcolor**” property.
+You can customize the **Pointer background** color using [backgroundcolor](/js/api/ejCircularGauge#scalespointersbackgroundcolorspan-classtype-signature-type-stringstringspan) property.
 
 {% highlight js %}
 
@@ -332,7 +332,7 @@ $(function() {
 
 ## Shapes Customization
 
-You can customize **Pointer shapes** using the “**needlestyle**” property. 
+You can customize **Pointer shapes** using the [needleType](/js/api/ejCircularGauge#scalespointersneedletypespan-classtype-signature-type-enumenumspan) property. 
 
 {% highlight js %}
 

@@ -13,7 +13,7 @@ documentation: ug
 
 ## Hiding Indicators
 
-You can hide the **Indicator** by changing the “**showIndicator**” property to “**false**”.
+You can hide the **Indicator** by changing the [showIndicator](/js/api/ejCircularGauge#scalesindicatorsspan-classtype-signature-type-arrayarrayspan) property to “**false**”.
 
 {% highlight js %}
 

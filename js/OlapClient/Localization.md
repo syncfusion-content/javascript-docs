@@ -210,7 +210,7 @@ And</td><td>
 " et "</td></tr>
 </table>
 
-The following code example shows how to localize OlapClient’s User Interface (UI) based on French culture.
+The following code example shows how to localize OlapClient’s User Interface (UI) based on French culture with the help of [locale](/js/api/ejOlapClient#localespan-classtype-signature-type-stringstringspan) property.
 
 {% highlight js %}
 
@@ -307,7 +307,7 @@ ej.olap.OlapClient.locale["zh-CN"]={
 
 ##Localizing Cube Information
 
-To get the localized Cube information,set **Locale Identifier** in the connection string.
+To get the localized Cube information,set `Locale Identifier` in the connection string.
 
 {% highlight c# %}
 

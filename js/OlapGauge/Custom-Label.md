@@ -15,7 +15,7 @@ documentation: ug
 
 ## Positioning the Custom Label
 
-You can set the location of the **custom label** in circular gauge using “**location**” property. Refer the following code example.
+You can set the location of the **custom label** in circular gauge using [Position](/js/api/ejCircularGauge#getcustomlabelanglespan-classsignaturespan) property. Refer the following code example.
 
 {% highlight js %}
 
@@ -118,7 +118,7 @@ $(function() {
 
 ## Font and Style Customization of Custom Label
 
-You can customize the **custom label** font with font style, font family, and size properties.
+You can customize the **custom label** font with [font style](/js/api/ejCircularGauge#getcustomlabelanglespan-classsignaturespan), [font family](/js/api/ejCircularGauge#getcustomlabelanglespan-classsignaturespan), and [size](/js/api/ejCircularGauge#getcustomlabelanglespan-classsignaturespan) properties.
 
 {% highlight js %}
 
