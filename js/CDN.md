@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CDN links for Syncfusion Essential JS widgets
-description: Adding CDN links for syncfusion essential js widgets and dependent scripts.
+description: Learn how to add  CDN links for syncfusion essential js widgets and dependent scripts.
 platform: js
 control: Introduction
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the scripts and style sheets of Syncfusion Esential JS components. 
 
 
-## CDN script links
+## CDN scripts links
 
 ### External dependency libraries
 
@@ -23,7 +23,7 @@ http://cdn.syncfusion.com/js/assets/external/**[fileName]**
 
 _Example: http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js _
 
-> The first four script libraries listed below are mandatory to render any of the Syncfusion widgets.
+> **Note:** The first four script libraries listed below are mandatory to render any of the Syncfusion Essential JS widgets.
 
 <table>
 <tr>
@@ -242,12 +242,12 @@ Here, the widget core file (<b>ej.widget.core.min.css</b>) is common and the the
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css</a><br/></td></tr>
 </table>
 
->   **Note:** All the provided CDN links can be accessed either through **http** or **https**.
+>   **Note:** All the provided CDN links can be accessed either through `http` or `https`.
 
 
-## Referring local Scripts and CSS, when CDN fails
+## Refer local Scripts and CSS, when CDN fails
 
-One of the major risk with CDN links is that – sometimes it may go down due to the network or connection problems which is so annoying. On such scenarios, we can refer the local scripts and css files dynamically in the application by checking if the scripts and css files loaded through CDN returns **undefined** as depicted below,
+One of the major risk with CDN links is that – sometimes it may go down due to the network or connection problems. On such scenarios, we can refer the local scripts and css files dynamically in the application by checking if the scripts and css files loaded through CDN returns `undefined` as depicted below,
 
 {% highlight html %}
 
