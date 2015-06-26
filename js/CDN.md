@@ -21,7 +21,7 @@ The basic syntax follows below,
 
 http://cdn.syncfusion.com/js/assets/external/**[fileName]**
 
-_Example: http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js _
+_Example: http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js_  
 
 > **Note:** The first four script libraries listed below are mandatory to render any of the Syncfusion Essential JS widgets.
 
