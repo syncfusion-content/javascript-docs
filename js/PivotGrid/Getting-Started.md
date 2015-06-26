@@ -102,7 +102,7 @@ In the **Add New Item** window, select **WCF Service** and name it as **PivotGri
 
 ###Add service methods inside Interface
 
-Add the following code example in the **IPivotGridService** interface available in **IPivotGridService.cs** file.
+Add the following code example in the `IPivotGridService` interface available in `IPivotGridService.cs` file.
 
 {% highlight c# %}
 
@@ -159,7 +159,7 @@ using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
 ###Create Class in Service file
 
-You can create the **PivotGridService class** to implement the service methods. You can inherit the class from the **IPivotGridService interface** that is created automatically when adding any new service.
+You can create the `PivotGridService class` to implement the service methods. You can inherit the class from the `IPivotGridService interface` that is created automatically when adding any new service.
 
 {% highlight c# %}
 
@@ -175,7 +175,7 @@ namespace WebApplication2
 
 ###Implement Service Methods
 
-You can add the following methods to the service that are invoked for any server-side operations to be performed in **PivotGrid**.
+You can add the following methods to the service that are invoked for any server-side operations to be performed in `PivotGrid`.
 
 Initialize the **PivotGrid helper class**. 
 
@@ -288,10 +288,10 @@ private OlapReport CreateOlapReport()
 
 ###Configure Web.Config
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service     class appears. The following are the properties that meet the appropriate endpoint.  
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.PivotGridService` where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service     class appears. The following are the properties that meet the appropriate endpoint.  
 
-   1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is "**WebApplication2.IPivotGridService**".
-   2. **Binding:** In your application, you use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
+   1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is `WebApplication2.IPivotGridService`.
+   2. **Binding:** In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows.
    
 {% highlight xml %}
@@ -305,7 +305,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example, "WebApplication2.PivotGridServiceAspNetAjaxBehavior" refers to the PivotGridService class under the namespace WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
+* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code example, `WebApplication2.PivotGridServiceAspNetAjaxBehavior` refers to the PivotGridService class under the namespace WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}
 
@@ -461,7 +461,7 @@ using Syncfusion.PivotAnalysis.Base;
 
 ###Create Class in Service file
 
-You can create the **PivotGridService** class to implement the **service** methods. You can inherit the class from the **IPivotGridService** interface that is created automatically when adding any new service.
+You can create the `PivotGridService` class to implement the **service** methods. You can inherit the class from the `IPivotGridService` interface that is created automatically when adding any new service.
 
 {% highlight c# %}
 
@@ -479,7 +479,7 @@ namespace WebApplication2
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in PivotGrid.
 
-Initialize the **PivotGrid helper class**. 
+Initialize the `PivotGrid helper class`. 
 
 {% highlight c# %}
 
@@ -659,10 +659,10 @@ namespace WebApplication2
 
 ###Configure Web.Config 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.PivotGridService" where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.  
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.PivotGridService` where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.  
 
-   1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is "**WebApplication2.IPivotGridService**".
-   2. **Binding:** In your application, use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
+   1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is `WebApplication2.IPivotGridService`.
+   2. **Binding:** In your application, use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows.
    
 {% highlight xml %}   
@@ -676,7 +676,7 @@ namespace WebApplication2
 
 {% endhighlight %}
 
-* The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property. In the following code sample, "WebApplication2.PivotGridServiceAspNetAjaxBehavior" refers to the PivotGridService class under the namespace WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
+* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this `name` property. In the following code sample, `WebApplication2.PivotGridServiceAspNetAjaxBehavior` refers to the PivotGridService class under the namespace WebApplication2 in PivotGridService.svc.cs file that is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}  
 

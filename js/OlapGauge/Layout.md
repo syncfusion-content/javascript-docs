@@ -23,7 +23,7 @@ You can customize/limit the number of gauges to be displayed in the table with t
 
 ### Row Count
 
-You can set the number of gauges to be displayed in row using **rowsCount** property. By default the value is **0**.
+You can set the number of gauges to be displayed in row using [rowsCount](/js/api/ejOlapGauge#rowscountspan-classtype-signature-type-numbernumberspan) property. By default the value is **0**.
 
 {% highlight js %}
 
@@ -128,7 +128,7 @@ $(function() {
 
 ### Column Count
 
-You can set the number of gauges to be displayed in column using **columnsCount** property. By default the value is **0**.
+You can set the number of gauges to be displayed in column using [columnsCount](/js/api/ejOlapGauge#columnscountspan-classtype-signature-type-numbernumberspan) property. By default the value is **0**.
 
 {% highlight js %}
 

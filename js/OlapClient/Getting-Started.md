@@ -135,7 +135,7 @@ In the Add New Item window, select **WCF Service** and name it **OlapClientServi
 
 ###Add service methods inside Interface
 
-Add the following code inside the **IOlapClientService** interface available in an **IOlapClientService.cs** file.
+Add the following code inside the `IOlapClientService` interface available in an **IOlapClientService.cs** file.
 
 {% highlight c# %}
 
@@ -233,7 +233,7 @@ using Syncfusion.JavaScript.Olap;
 
 ###Create Class in Service file
 
-You can create the **OlapClientService** class to implement the **service** methods. You can inherit the class from the **IOlapClientService** interface that is created automatically while adding any new service.
+You can create the `OlapClientService` class to implement the **service** methods. You can inherit the class from the `IOlapClientService` interface that is created automatically while adding any new service.
 
 {% highlight c# %}
 
@@ -253,7 +253,7 @@ namespace WebApplication2
 
 ###Implement Service Methods
 
-You can add the following methods to the service that are invoked for any server-side operations performed in **OlapClient**.
+You can add the following methods to the service that are invoked for any server-side operations performed in `OlapClient`.
 
 Initialize the OlapClient helper class.
 
@@ -476,10 +476,10 @@ private OlapReport CreateOlapReport()
 
 ###Configure Web.Config
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is "WebApplication2.OlapClientService" where "OlapClientService" is the service class name and “WebApplication2" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.OlapClientService` where `OlapClientService` is the service class name and `WebApplication2` is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
-   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapClientService** contract and hence it is "**WebApplication2.IOlapClientService**".
-   2. **Binding:** In your application, you can use **webHttpBinding** to post and receive the requests and responses between client-end and service-end.
+   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapClientService** contract and hence it is `WebApplication2.IOlapClientService`.
+   2. **Binding:** In your application, you can use `webHttpBinding` to post and receive the requests and responses between client-end and service-end.
    3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
 
 
@@ -495,7 +495,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-* **The endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, **"WebApplication2.OlapClientServiceAspNetAjaxBehavior"** refers to the **OlapClientService** class under the namespace **WebApplication2** in **OlapClientService.svc.cs** file that is the appropriate behavior for the endpoint.
+* **The endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, `WebApplication2.OlapClientServiceAspNetAjaxBehavior` refers to the **OlapClientService** class under the namespace **WebApplication2** in **OlapClientService.svc.cs** file that is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
 

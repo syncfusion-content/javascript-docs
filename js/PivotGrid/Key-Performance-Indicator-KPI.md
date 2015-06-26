@@ -22,7 +22,7 @@ The different types of available indicators are as follows:
 
 {% include image.html url="/js/PivotGrid/Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png" %}
 
-The following code example illustrates how to initialize **KPI** element within the **OLAP** Report:
+The following code example illustrates how to initialize `KPI` element within the **OLAP Report**:
 
 {% highlight c# %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-**Cell Context** support in **PivotGrid** allows you to choose the right-click event to access each cell for any desired operation. **Cell Context** is enabled by setting the **enableCellContext** property to ‘**True**’. The name of the event to trigger on right-clicking is stored in the **cellContextEvent** property. After enabling **Cell Context** on right-clicking a cell, the event triggers. The information about the cell is carried through a parameter.
+**Cell Context** support in **PivotGrid** allows you to choose the right-click event to access each cell for any desired operation. **Cell Context** is enabled by setting the [enableCellContext](/js/api/ejPivotGrid#enablecellcontextspan-classtype-signature-type-booleanbooleanspan) property to ‘**True**’. The name of the event to trigger on right-clicking is stored in the `cellContextEvent` property. After enabling **Cell Context** on right-clicking a cell, the event triggers. The information about the cell is carried through a parameter.
 
 The following code example illustrates how to create the **PivotGrid** control with the enabled **Cell Context**. Here, the **Cell Context** event displays a pop-up menu as follows.
 

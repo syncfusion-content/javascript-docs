@@ -214,7 +214,7 @@ Add the following code inside the **&lt;body&gt;** tag in the **default.html** p
 
 ###Add service methods inside Interface
 
-Add the following code inside the IOlapGaugeService interface available in the IOlapGaugeService.cs file.
+Add the following code inside the `IOlapGaugeService` interface available in the IOlapGaugeService.cs file.
 
 {% highlight c# %}
 
@@ -250,7 +250,7 @@ using Syncfusion.Olap.Reports;
 
 ###Create Class in Service file
 
-Create the **OlapGaugeService** class to implement the service methods. Inherit the class from the **IOlapGaugeService** interface created automatically when any new service is added.
+Create the `OlapGaugeService` class to implement the service methods. Inherit the class from the `IOlapGaugeService` interface created automatically when any new service is added.
 
 {% highlight c# %}
 
@@ -269,7 +269,7 @@ namespace WebApplication2
 
 Add the following methods to the service invoked for any server-side operations performed in **OlapGauge**.
 
-Initialize the **OlapGauges helper class**.
+Initialize the `OlapGauges helper class`.
 
 {% highlight c# %}
 
@@ -333,10 +333,10 @@ private OlapReport CreateOlapReport()
 
 ###Configure Web.Config 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is **"WebApplication2.OlapGaugeService"** where **"OlapGaugeService"** is the service class name and **“WebApplication2"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.OlapGaugeService` where **"OlapGaugeService"** is the service class name and **“WebApplication2"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
-   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapGaugeService** contract and hence it is "**WebApplication2.IOlapGaugeService**".
-   2. **Binding:** In your application, you can use **webHttpBinding** to post and receive the requests and responses between client-end and service-end.
+   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapGaugeService** contract and hence it is `WebApplication2.IOlapGaugeService`.
+   2. **Binding:** In your application, you can use `webHttpBinding` to post and receive the requests and responses between client-end and service-end.
    3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
 
 {% highlight xml %}
@@ -350,7 +350,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-* The **endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, **"WebApplication2.OlapGaugeServiceAspNetAjaxBehavior"** refers to the OlapGaugeService class under the namespace **WebApplication2** in **OlapGaugeService.svc.cs** file that is the appropriate behavior for the endpoint.
+* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, `WebApplication2.OlapGaugeServiceAspNetAjaxBehavior`` refers to the OlapGaugeService class under the namespace **WebApplication2** in **OlapGaugeService.svc.cs** file that is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
 

@@ -13,7 +13,7 @@ documentation: ug
 
 ##Setting Value To Chart Title
 
-Title property allows you to set the default title for a Chart as follows. 
+[Title](/js/api/ejChart#titlespan-classtype-signature-type-objectobjectspan) property allows you to set the default title for a Chart as follows. 
 
 
 {% highlight js %}
@@ -36,7 +36,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Title Text Customization
 
-You can customize the title text font using **title.font** property.
+You can customize the title text font using [title.font](/js/api/ejChart#titlefontspan-classtype-signature-type-objectobjectspan) property.
 
 {% highlight js %}
 

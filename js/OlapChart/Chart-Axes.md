@@ -132,7 +132,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Position Opposed
 
-**Position** of the primary X and Y axis is set to the top with the help **opposedPosition** property.
+**Position** of the primary X and Y axis is set to the top with the help [opposedPosition](/js/api/ejChart#primaryxaxisopposedpositionspan-classtype-signature-type-booleanbooleanspan) property.
 
 {% highlight js %}
 
@@ -163,9 +163,9 @@ $("#OlapChart1").ejOlapChart({
 
 Background, border color and outer width of the Chart Area is customized with the help of following properties.
 
-* **Background –** sets the background color for Chart Area.
-* **Color –** sets the color for the border.
-* **Width** – sets the width for the border.
+* [Background](/js/api/ejChart#chartareabackgroundspan-classtype-signature-type-stringstringspan) – sets the background color for Chart Area.
+* [Color](/js/api/ejChart#chartareabordercolorspan-classtype-signature-type-stringstringspan) – sets the color for the border.
+* [Width](/js/api/ejChart#chartareaborderwidthspan-classtype-signature-type-numbernumberspan) – sets the width for the border.
 
 
 

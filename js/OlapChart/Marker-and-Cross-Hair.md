@@ -19,7 +19,7 @@ You can view the information while moving the mouse pointer over the Chart Area 
 
 ##Marker Shape Customization
 
-In **OlapChart**, you can customize the marker shape with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
+In **OlapChart**, you can customize the marker [shape](/js/api/ejChart#seriesmarkershapespan-classtype-signature-type-enumenumspan) with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc.
 
 {% highlight js %}
 
@@ -49,7 +49,7 @@ function onSeriesRenders(args) {
 
 ##Cross Hair Customization
 
-In order to view the value at mouse position or touch contact point, you can use the **crosshair** property. You can customize the appearance using the following code example.
+In order to view the value at mouse position or touch contact point, you can use the [crosshair](/js/api/ejChart#crosshairspan-classtype-signature-type-objectobjectspan) property. You can customize the appearance using the following code example.
 
 {% highlight js %}
 

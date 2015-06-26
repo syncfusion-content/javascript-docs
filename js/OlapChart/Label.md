@@ -13,7 +13,7 @@ documentation: ug
 
 ##Label font and color customization 
 
-Font style and color of the label text is customized with the help of **font** and **color** properties within its respective axis.
+Font style and color of the label text is customized with the help of [font](/js/api/ejChart#primaryxaxisfontspan-classtype-signature-type-objectobjectspan) and [color](/js/api/ejChart#primaryxaxisfontfontstylespan-classtype-signature-type-enumenumspan) properties within its respective axis.
 
 {% highlight js %}
 
@@ -50,7 +50,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Rotating Axis Labels
 
-You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the **labelRotation** property.
+You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the [labelRotation](/js/api/ejChart#primaryxaxislabelrotationspan-classtype-signature-type-numbernumberspan) property.
 
 {% highlight js %}
 

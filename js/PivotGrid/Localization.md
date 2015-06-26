@@ -105,7 +105,7 @@ ej.PivotGrid.locale["zh-CN"] = {
 
 ##Localizing Cube Information
 
-To get the **Localized Cube Information** ,  ** “Locale Identifier"** is set in the connection string
+To get the **Localized Cube Information** , `Locale Identifier` is set in the connection string
 
 {% highlight c# %}
 
