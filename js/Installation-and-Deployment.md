@@ -34,7 +34,7 @@ Within the root `javascript` folder, the `assets` folder contains all the minifi
 
 The assets have been organized in the following folder structure
 
-* Assets – contains all the necessary cripts and stylesheets.
+* Assets – contains all the necessary scripts and stylesheets.
 * External – contains the external dependency files such as jquery, jquery.easing etc.
 * Samples  – contains sample code that demonstrate usage of all the components.
 
