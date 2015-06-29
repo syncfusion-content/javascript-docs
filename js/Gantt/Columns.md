@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns
 
-The TreeGrid column displays the information from a bounded data source and it will be editable to update the task details through **TreeGrid**.
+The TreeGrid column displays the information from a bounded data source and it will be editable to update the task details through TreeGrid.
 
 ### Column Resizing
 
@@ -33,7 +33,7 @@ The following code example shows you how to display the icon in the TreeGrid col
 {% highlight html %}
 
         <script type="text/x-jsrender" id="columnTemplate">        
-                 <div  style='height:20px;width:20px;margin:auto;background-image:url(".../images/\{\{:\~className\(\)\}\}")'/>              
+                 <div  style='height:20px;width:20px;margin:auto;background-image:url(".../images/{{"{{"}}:~className(){{}}}}")'/>              
         </script>
 
 {% endhighlight %}
