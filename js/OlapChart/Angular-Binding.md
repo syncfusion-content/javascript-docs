@@ -54,7 +54,11 @@ angular.module('chartCtrl', ['ejangular'])
 
 {% highlight html %}
 
-<div id="OlapChart" ej-olapchart e-url="url" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive="isResponsive" e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip" e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme' />
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="chartCtrl">
+ 
+<body ng-controller="OlapChartCtrl">
+    <div id="OlapChart" ej-olapchart e-url="url" e-title-text="title" e-showtooltip="showTooltip" e-isResponsive="isResponsive" e-animation="animation" e-commonseriesoptions-type="ctype" e-commonseriesoptions-tooltip-visible="showTooltip" e-size="size" e-primaryxaxis="primaryXAxis" e-primaryyaxis="primaryYAxis" e-legend="legend" e-load='loadTheme' />
+</body>
 
 {% endhighlight %}
 

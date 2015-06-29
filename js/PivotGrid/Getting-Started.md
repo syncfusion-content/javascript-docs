@@ -102,7 +102,7 @@ In the **Add New Item** window, select **WCF Service** and name it as **PivotGri
 
 ###Add service methods inside Interface
 
-Add the following code example in the `IPivotGridService` interface available in `IPivotGridService.cs` file.
+Add the following code example in the `IPivotGridService` interface available in **IPivotGridService.cs** file.
 
 {% highlight c# %}
 

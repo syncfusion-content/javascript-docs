@@ -16,7 +16,7 @@ documentation: ug
 
 ## Full Circle
 
-By default, frame type is **Full Circle**. You can also set frame type with [frameType](/js/api/ejCircularGauge#frameframetypespan-classtype-signature-type-enumenumspan) property to `fullCircle`.
+By default, frame type is **Full Circle**. You can also set frame type with [frameType](/js/api/ejCircularGauge#frameframetypespan-classtype-signature-type-enumenumspan) property to **fullCircle**.
 
 {% highlight js %}
 
@@ -120,7 +120,7 @@ $(function() {
 
 ## Half Circle
 
-You can set frame type as **halfCircle** with the help of [frameType](/js/api/ejCircularGauge#frameframetypespan-classtype-signature-type-enumenumspan) property to visualize the gauge control in `half circle`.
+You can set frame type as **halfCircle** with the help of [frameType](/js/api/ejCircularGauge#frameframetypespan-classtype-signature-type-enumenumspan) property to visualize the gauge control in **half circle**.
 
 {% highlight js %}
 

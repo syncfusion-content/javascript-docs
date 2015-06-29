@@ -36,7 +36,11 @@ angular.module('clientCtrl', ['ejangular'])
 
 {% highlight html %}
 
-<div id="OlapClient" ej-olapclient e-url="url" e-title="title" e-gridlayout="gridLayout" e-displayoptions="displaySettings" e-chartload='setChartProperties' />
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="clientCtrl">
+    
+<body ng-controller="OlapClientCtrl">
+    <div id="OlapClient" ej-olapclient e-url="url" e-title="title" e-gridlayout="gridLayout" e-displayoptions="displaySettings" e-chartload='setChartProperties' />
+</body>
 
 {% endhighlight %}
 

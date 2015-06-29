@@ -495,7 +495,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-* **The endpointBehaviors** contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, `WebApplication2.OlapClientServiceAspNetAjaxBehavior` refers to the **OlapClientService** class under the namespace **WebApplication2** in **OlapClientService.svc.cs** file that is the appropriate behavior for the endpoint.
+* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the `name` property. In the following code sample, `WebApplication2.OlapClientServiceAspNetAjaxBehavior` refers to the **OlapClientService** class under the namespace **WebApplication2** in **OlapClientService.svc.cs** file that is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
 
