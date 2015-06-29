@@ -40,30 +40,30 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
       <tr style="background-color:#F2F2F2;color:#000000;">
 
       <td class="border" style='height:30px;'>
-         <div>\{\{:\#data\['EmployeeID'\]\}\}</div>
+         <div>{{"{{"}}:#data['EmployeeID']{{}}}}</div>
       </td>
 
       <td class="border" style='height:30px;'>
          <div style="font-size:14px;">
-         \{\{:\#data\['Name'\]\}\}
-         <p style="font-size:9px;">\{\{:\#data\['Designation'\]\}\}</p>
+         {{"{{"}}:#data['Name']{{}}}}
+         <p style="font-size:9px;">{{"{{"}}:#data['Designation']{{}}}}</p>
          </div>
       </td>
 
       <td class="border">
       <div style="padding-top:5px;">
       <div style="display:inline-flex !important;">
-      <img src="../images/treegrid/\{\{:\#data\['Full Name'\]\}\}.png"/></div>
+      <img src="../images/treegrid/{{"{{"}}:#data['Full Name']{{}}}}.png"/></div>
       <div style="display:inline-block;padding-left:10px;">
-      \{\{:\#data\['Address'\]\}\}
-      <p>{{:#data['Country']}}</p>
-      <p style="font-size:12px;">\{\{:\#data\['Contact'\]\}\}</p>
+      {{"{{"}}:#data['Address']{{}}}}
+      <p>{{"{{"}}:#data['Country']{{}}}}</p>
+      <p style="font-size:12px;">{{"{{"}}:#data['Contact']{{}}}}</p>
       </div>
       </div>
       </td>
 
       <td class="border" style='height:30px;'>
-      <div>\{\{:\#data\['DOB'\]\}\}</div>
+      <div>{{"{{"}}:#data['DOB']{{}}}}</div>
       </td>
       
       </tr>
@@ -74,29 +74,29 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
       <tr style="background-color:#E6E6E6;color:#000000;">
 
        <td class="border" style='height:30px;'>
-       <div>\{\{:\#data\['EmployeeID'\]\}\}</div>
+       <div>{{"{{"}}:#data['EmployeeID']{{}}}}</div>
        </td>
 
       <td class="border" style='height:30px;'>
-      <div style="font-size:14px;">\{\{:\#data\['Name'\]\}\}
-      <p style="font-size:9px;">\{\{:\#data\['Designation'\]\}\}</p>
+      <div style="font-size:14px;">{{"{{"}}:#data['Name']{{}}}}
+      <p style="font-size:9px;">{{"{{"}}:#data['Designation']{{}}}}</p>
       </div>
       </td>
 
       <td class="border">
       <div style="padding-top:5px;">
       <div style="display:inline-flex !important;">
-      <img src="../images/treegrid/\{\{:\#data\['Full Name'\]\}\}.png"/></div>
+      <img src="../images/treegrid/{{"{{"}}:#data['Full Name']{{}}}}.png"/></div>
       <div style="display:inline-block;padding-left:10px;">
-      \{\{:\#data\['Address'\]\}\}
-      <p>\{\{:\#data\['Country'\]\}\}</p>
-      <p style="font-size:12px;">\{\{:\#data\['Contact'\]\}\}</p>
+      {{"{{"}}:#data['Address']{{}}}}
+      <p>{{"{{"}}:#data['Country']{{}}}}</p>
+      <p style="font-size:12px;">{{"{{"}}:#data['Contact']{{}}}}</p>
       </div>
       </div>
       </td>     
 
       <td class="border" style='height:30px;'>
-      <div>\{\{:\#data\['DOB'\]\}\}</div>
+      <div>{{"{{"}}:#data['DOB']{{}}}}</div>
       </td>
    
       </tr>
@@ -221,11 +221,11 @@ The following code shows how to render **row drag tooltip** with tooltip templat
       <script id="customTooltip" type="text/x-jsrender">
       <tr>
          <td class="border" style='height:30px;'>
-         <div>\{\{:\#data\['TaskId'\]\}\}</div>
+         <div>{{"{{"}}:#data['TaskId']{{}}}}</div>
          </td>
    
          <td class="border" style='height:30px;'>
-         <div>\{\{:\#data\['TaskName'\]\}\}</div>
+         <div>{{"{{"}}:#data['TaskName']{{}}}}</div>
          </td>
       </tr>
       </script>
