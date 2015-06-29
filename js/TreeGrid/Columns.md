@@ -27,7 +27,7 @@ You can change the width of the column in TreeGrid to show the entire text of 
 
 ### Column Template
 
-**Column Template** is used to customize the column’s look and feel based on requirement.
+Column Template is used to customize the column’s look and feel based on requirement.
 
 The following code example shows you how to display the icon in the TreeGrid column.
 
@@ -36,13 +36,13 @@ Code snippet to create a custom template element to be rendered
 {% highlight html %}
 
     <script type="text/x-jsrender" id="customColumnTemplate">     
-         <div  style='height:20px;' unselectable='on'> {{if hasChildRecords}}
-         <div class='intend' style='height:1px; float:left; width: {{:level*20}}px; display:inline-block;'> </div>
-         {{else !hasChildRecords}}
-         <div class='intend' style='height:1px; float:left; width:{{:(level)*20}}px; display:inline-block;'> </div>
-         {{/if}}                         
-         <div class='{{if expanded}}e-treegridexpand{{else hasChildRecords}} e-treegridcollapse{{/if}} {{if level===4}} e-doc {{/if}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;style='float: left;display:inline-block; unselectable='on'> </div>
-         <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{:#data['Name']}} </div>
+         <div  style='height:20px;' unselectable='on'> {{"{{"}}if hasChildRecords{{}}}}
+         <div class='intend' style='height:1px; float:left; width: {{"{{"}}:level*20{{}}}}px; display:inline-block;'> </div>
+         {{"{{"}}else !hasChildRecords{{}}}}
+         <div class='intend' style='height:1px; float:left; width:{{"{{"}}:(level)*20{{}}}}px; display:inline-block;'> </div>
+         {{"{{"}}/if{{}}}}                         
+         <div class='{{"{{"}}if expanded{{}}}}e-treegridexpand{{"{{"}}else hasChildRecords{{}}}} e-treegridcollapse{{"{{"}}/if{{}}}} {{"{{"}}if level===4{{}}}} e-doc {{"{{"}}/if{{}}}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;style='float: left;display:inline-block; unselectable='on'> </div>
+         <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{"{{"}}:#data['Name']{{}}}} </div>
          </div>
     </script>    
     
