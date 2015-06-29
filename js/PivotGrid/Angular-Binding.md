@@ -34,7 +34,12 @@ angular.module('gridCtrl', ['ejangular'])
 
 {% highlight html %}
 
-<div id="PivotGrid" ej-pivotgrid e-url="url" e-layout="gridLayout" e-isResponsive="isResponsive" />
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="gridCtrl">
+
+<body ng-controller="PivotGridCtrl">
+    <div id="PivotGrid" ej-pivotgrid e-url="url" e-layout="gridLayout" e-isResponsive="isResponsive" />
+</body>    
+  
 
 {% endhighlight %}
 

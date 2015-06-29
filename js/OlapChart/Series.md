@@ -51,7 +51,7 @@ function onSeriesRenders(args) {
 
 ##Series Points Customization
 
-**OlapChart** series is customized using `fill, border width and border color`. The stroke-width of the line, spline series is customized using [width](/js/api/ejChart#seriesborderwidthspan-classtype-signature-type-numbernumberspan) property of series.  The series color is customized using [fill](/js/api/ejChart#fillseriesfillspan-classtype-signature-type-stringstringspan) property of series. The border color and width of the column/bar is customized using [border](/js/api/ejChart#seriesborderspan-classtype-signature-type-objectobjectspan) property of series. And the column/bar chart are customized using the [fill](/js/api/ejChart#fillseriesfillspan-classtype-signature-type-stringstringspan) and [border](/js/api/ejChart#seriesborderspan-classtype-signature-type-objectobjectspan) property of each point.
+**OlapChart** series is customized using `fill, border width and border color`. The stroke-width of the line, spline series is customized using [width](/js/api/ejChart#seriesborderwidthspan-classtype-signature-type-numbernumberspan) property of series.  The series color is customized using [fill](/js/api/ejChart#seriesfillspan-classtype-signature-type-stringstringspan) property of series. The border color and width of the column/bar is customized using [border](/js/api/ejChart#seriesborderspan-classtype-signature-type-objectobjectspan) property of series. And the column/bar chart are customized using the [fill](/js/api/ejChart#seriesfillspan-classtype-signature-type-stringstringspan) and [border](/js/api/ejChart#seriesborderspan-classtype-signature-type-objectobjectspan) property of each point.
 
 {% highlight js %}
  

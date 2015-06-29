@@ -35,7 +35,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Axis Title Customization
 
-Primary axis title font appearance is further customized with the help of the following code example.
+Primary axis title [font](/js/api/ejChart#primaryxaxistitlefontspan-classtype-signature-type-objectobjectspan) appearance is further customized with the help of the following code example.
 
 {% highlight js %}
 

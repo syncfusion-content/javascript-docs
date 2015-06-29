@@ -123,7 +123,7 @@ $(function() {
 
 ## Length and Width Customization
 
-You can customize the **Pointer** length and width using the [pointerLength](/js/api/ejCircularGauge#scalespointerslengthspan-classtype-signature-type-numbernumberspan) and [pointerWidth](/js/api/ejCircularGauge#scalespointerswidthspan-classtype-signature-type-numbernumberspan) property.
+You can customize the **Pointer** length and width using the [length](/js/api/ejCircularGauge#scalespointerslengthspan-classtype-signature-type-numbernumberspan) and [width](/js/api/ejCircularGauge#scalespointerswidthspan-classtype-signature-type-numbernumberspan) property.
 
 {% highlight js %}
 

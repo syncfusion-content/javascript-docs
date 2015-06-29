@@ -36,7 +36,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Title Text Customization
 
-You can customize the title text font using [title.font](/js/api/ejChart#titlefontspan-classtype-signature-type-objectobjectspan) property.
+You can customize the title text font using [font](/js/api/ejChart#titlefontspan-classtype-signature-type-objectobjectspan) property.
 
 {% highlight js %}
 
