@@ -20,7 +20,7 @@ For ex, In the top section of each MD file,
 * Do not bold the words unnecessarily.
 * Use [inline code style](http://kramdown.gettalong.org/quickref.html#inline-code) wherever it is possible to highlight the keywords, variables or one line code snippets which comes within the paragraph.
 
-## Hyperlinks
+## Cross-reference
 * Todo -> How to link the content within the page?
 * Todo -> How to link to the other page in the documentation?
 
