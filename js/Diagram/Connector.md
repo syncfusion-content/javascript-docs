@@ -41,7 +41,6 @@ Connector is connected to the bounds of the node and at a specific point on the 
 
 {% highlight js %}
 
-//for node creation refer the link [Node creation](/js/Diagram/Node#create-node)
 //create a connection between headNode/tailNode using connector
 
 var connector = [{
@@ -388,8 +387,6 @@ diagram.update({
 `cornerRadius` support enables you to create connectors with rounded corners. The following code example illustrates how to set corner radius for connectors.
 
 {% highlight js %}
-//For node creation refer the link [Node creation](/js/Diagram/Node#create-node)
-//For Creating connection refer the link [Connecting nodes](/js/Diagram/Connector#create-connector)
 //Adding corner radius for connector
 var connector = {
    cornerRadius: 20
@@ -398,6 +395,7 @@ var connector = {
 
 {% include image.html url="/js/Diagram/Connector_images/Connector_img16.png" %}
 
+> **Note:** For node creation refer the link [Node creation](/js/Diagram/Node#create-node). And for creating connection refer the link [Connecting nodes](/js/Diagram/Connector#create-connector). 
 ## Decorator
 
 You can decorate the source point and target point of the connector using decorator shape. The `sourceDecorator` and `targetDecorator` properties are used to add decorators to connector. The following code illustrates how decorator is created and added at connector's target point.
