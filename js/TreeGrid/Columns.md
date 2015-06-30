@@ -187,7 +187,7 @@ The column menu provides the following options.
 * Sort Descending
 * Columns 
 
-The **Sort Ascending** and **Sort Descending** options are enabled or disabled by using the `allowSorting` property. With these options, single level sorting can be performed in the TreeGrid columns. To perform multilevel sorting, the `allowMultiSorting` property should be enabled. 
+The **Sort Ascending** and **Sort Descending** options are enabled or disabled by using the [`allowSorting`](/js/api/ejtreegrid#allowsortingspan-classtype-signature-type-booleanbooleanspan "allowSorting") property. With these options, single level sorting can be performed in the TreeGrid columns. To perform multilevel sorting, the [`allowMultiSorting`](/js/api/ejtreegrid#allowmultisortingspan-classtype-signature-type-booleanbooleanspan "allowMultiSorting") property should be enabled. 
 
 You can also disable the visibility of the particular column in column collection manually by setting the `visible` property to `false`.
 
