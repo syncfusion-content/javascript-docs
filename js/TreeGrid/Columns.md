@@ -13,7 +13,7 @@ The TreeGrid column displays the information from a bounded data source and it
 
 ### Column Resizing
 
-You can change the width of the column in TreeGrid to show the entire text of the column by resizing the column. The following code example shows you how to enable the **Column Resize** feature at **TreeGrid** initialize.
+You can change the width of the column in TreeGrid to show the entire text of the column by resizing the column. The following code example shows you how to enable the column resize feature at initializing TreeGrid.
 
 {% highlight js %}
 
@@ -41,7 +41,7 @@ Code snippet to create a custom template element to be rendered
          {{"{{"}}else !hasChildRecords{{}}}}
          <div class='intend' style='height:1px; float:left; width:{{"{{"}}:(level)*20{{}}}}px; display:inline-block;'> </div>
          {{"{{"}}/if{{}}}}                         
-         <div class='{{"{{"}}if expanded{{}}}}e-treegridexpand{{"{{"}}else hasChildRecords{{}}}} e-treegridcollapse{{"{{"}}/if{{}}}} {{"{{"}}if level===4{{}}}} e-doc {{"{{"}}/if{{}}}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;style='float: left;display:inline-block; unselectable='on'> </div>
+         <div class='{{"{{"}}if expanded{{}}}}e-treegridexpand{{"{{"}}else hasChildRecords{{}}}} e-treegridcollapse{{"{{"}}/if{{}}}} {{"{{"}}if level===4{{}}}} e-doc {{"{{"}}/if{{}}}}' style='height:20px;width:30px;margin:auto;float:left;margin-left:10px;display:inline-block;' unselectable='on'> </div>
          <div class='e-cell' style='display:inline-block;width:100%' unselectable='on'>{{"{{"}}:#data['Name']{{}}}} </div>
          </div>
     </script>    
@@ -105,14 +105,14 @@ The following screenshot displays the customized column in TreeGrid control.
 
 ### Column Filtering
 
-Column Filtering in TreeGrid is used to filter the records by single or multiple column conditions. In TreeGrid control, column filtering can be enabled with `allowFiltering` property, by setting this property to `true`, a filter bar is rendered in all available columns, providing filtering support to every columns. You can also limit filtering to specific column by setting `false` to `allowFiltering` property in each column object.
+Column Filtering in TreeGrid is used to filter the records by single or multiple column conditions. In TreeGrid control, column filtering can be enabled with [`allowFiltering`](/js/api/ejtreegrid#allowfilteringspan-classtype-signature-type-booleanbooleanspan "allowFiltering") property, by setting this property to `true`, a filter bar is rendered in all available columns, providing filtering support to every columns. You can also limit filtering to specific column by setting `false` to `allowFiltering` property in each column object.
 
-Filtering modes can be toggled between `immediate` and `onEnter` modes using `filterBarMode` property.
+Filtering modes can be toggled between `immediate` and `onEnter` modes using [`filterBarMode`](/js/api/ejtreegrid#filterbarmodespan-classtype-signature-type-enumenumspan "filterBarMode") property.
 
 * `immediate` - In this mode, filtering starts with key press event.
 * `onEnter` - In this mode, filtering starts when enter key is pressed.
 
-Filtering type can be defined by `filterEditType` property in each column object.
+Filtering type can be defined by [`filterEditType`](/js/api/ejtreegrid#columnsfilteredittypespan-classtype-signature-type-stringstringspan "filterEditType") property in each column object.
 
 The following are the types of column filtering types available in TreeGrid,
 
@@ -175,7 +175,7 @@ The following screenshot displays the column filtering in TreeGrid control.
 
 ### Column Chooser
 
-TreeGrid supports enabling and disabling the visibility of the columns dynamically with the `showColumnChooser` property. By using this property, the visibility of the custom columns can also be toggled. The **Column chooser** option is rendered as sub menu item within column menu in the TreeGrid columns.
+TreeGrid supports enabling and disabling the visibility of the columns dynamically with the [`showColumnChooser`](/js/api/ejtreegrid#showcolumnchooserspan-classtype-signature-type-booleanbooleanspan "showColumnChooser") property. By using this property, the visibility of the custom columns can also be toggled. The **Column chooser** option is rendered as sub menu item within column menu in the TreeGrid columns.
 
 {% include image.html url="/js/TreeGrid/Columns_images/Columns_img3.png"%}
 
