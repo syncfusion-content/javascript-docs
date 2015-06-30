@@ -36,6 +36,7 @@ For ex, In the top section of each MD file,
 * Caption is not necessary to provide for all images except for the case where we will have displayed more than one image.
 * Todo -> If we need to include the caption, how?
 * Todo -> What is the minimum & maximum size?
+* If you are including the image to show an output of a code block, make sure the exact output can see the user also when he executes the same code snippet.
 
 ## Code Blocks
 * Align the code snippets using following free formatters:
@@ -44,6 +45,7 @@ For ex, In the top section of each MD file,
 * Remove extra lines added within the code block.
 * Todo -> How to include the code block and what needs to be followed?
 * Todo -> How to use JSRender template syntax in the code block?
+* Make sure the given code block runs without any issues.
 
 ## Bullet style
 * Todo -> How to provide numbering bullet style?
