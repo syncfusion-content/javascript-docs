@@ -56,10 +56,15 @@ For ex, In the top section of each MD file,
 * Todo -> How to provide warning style
 * Todo -> How to provide other topics which we would like to highlight. For ex, Notes or Tips.
 
-## API Version information
+## API Reference 
+
+### Version information
 * Todo -> how to specify when the property is added.
 * Todo -> how to specify when the property is depricated.
 * Todo -> how to specify when the property is changed.
+
+### Naming Standards
+* Use the JS API naming standards mentioned in the following page - [API Naming Standards](https://syncfusion.atlassian.net/wiki/display/JS/API+Naming+Standards)
 
 ## See also
 * Todo -> How to add see also section? What is the syntax?
