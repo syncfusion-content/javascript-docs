@@ -21,34 +21,36 @@ Node and Connector are added to the Palette as Palette Items. The following code
 // palette array
 var paletteCollection = [];
 var basiShapes = {
-   name: "Basic Shapes"
+   name: "Basic Shapes", items: []
 };
 var connectors = {
-   name: "Connectors"
+   name: "Connectors", items: []
 };
 
 //add node/connector to palette
-basiShapes.Add(createNode(name, offsetX, offsety, height, width));
-connectors.Add(createConnector(name, segments, decorator));
+basiShapes.items.push(createNode(name, offsetX, offsety, height, width));
+connectors.items.push(createConnector(name, segments, decorator));
 
 //add palette to palette array
-paletteCollection.Add(basiShapes);
-paletteCollection.Add(connectors);
+paletteCollection.push(basiShapes);
+paletteCollection.push(connectors);
 
 //create node
 function createNode(name, offsetX, offsety, height, width) {
-   //note: for creating node refer the link [Node creation](/js/Diagram/Node#create-node)
+
 }
 
 //create connector
 function createConnector(name, segments, decorator) {
-   //note: for creating connector refer the link [Connector creation](/js/Diagram/Connector#create-connector)  
+
 }
 
 $("#palette").ejSymbolPalette({
    palettes: paletteCollection
 });
 {% endhighlight %}
+
+> **Note:** For creating node refer the link [Node creation](/js/Diagram/Node#create-node). And for creating connector refer the link [Connector creation](/js/Diagram/Connector#create-connector).
 
 ## Adding Node and Connector
 
