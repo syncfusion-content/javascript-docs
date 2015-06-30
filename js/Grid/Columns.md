@@ -49,7 +49,7 @@ The following is the result of column formatting.
 
 ## Template
 
-A **template** is used to render a specific template to a particular column using `Template` and `templateID` property. These columns are not bound to **Grid**.
+A **template** is used to render a specific template to a particular column using `template` and `templateID` property. These columns are not bound to **Grid**.
 
 {% highlight html %}
 
