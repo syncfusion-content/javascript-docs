@@ -125,7 +125,7 @@ The following output is displayed as a result of the above code example.
 
 ## Read only
 
-`allowEditing` enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set `allowEditing` as **False for** that column. The following code example shows **Essential JavaScript** column as **read-only**.
+`allowEditing` enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set `allowEditing` as **false** for that column. The following code example shows **CustomerID** column as **read-only**.
 
 {% highlight html %}
 
@@ -161,7 +161,7 @@ The following output is displayed as a result of the above code example.
 
 ## Controlling Grid actions
 
-In **ejGrid**, you can control **Grid** actions through `allowSorting, allowGrouping, allowFiltering`. The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
+In **ejGrid**, you can control **Grid** actions through `allowSorting`, `allowGrouping, `allowFiltering`. The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
 
 {% highlight html %}
 
@@ -200,7 +200,7 @@ The following output is displayed as a result of the above code example.
 
 ## Auto-generate column
 
-The columns are automatically generated from the datasource and you do not need specific column declarations. The following code example shows auto-generate column behavior with **Grid**.
+The columns are automatically generated from the datasource and you do not need specific column declarations. The following code example shows auto-generate column behavior.
 
 {% highlight html %}
 
