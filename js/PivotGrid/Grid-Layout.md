@@ -1,17 +1,15 @@
 ---
 layout: post
 title: Grid-Layout
-description: grid layout
+description: Layouts
 platform: js
 control: PivotGrid
 documentation: ug
 ---
 
-# Grid Layout
+# Layouts
 
 > **Note:** This feature is applicable only for OLAP datasource.
-
-Grid Layouts customize the position of summary elements in the **PivotGrid** control. Summary elements can be positioned at the top or bottom of each parent member.
 
 The four kinds of [Layouts](/js/api/ejPivotGrid#layoutspan-classtype-signature-type-enumenumspan) supported by the **PivotGrid** are as follows:
 

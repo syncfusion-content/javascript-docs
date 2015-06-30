@@ -9,11 +9,10 @@ documentation: ug
 
 # Knockout Binding
 
-> **Note:** This feature is applicable only for OLAP datasource.
 
 Knockout Binding allows you to bind HTML elements against any data model. It uses a Model-View-ViewModel(MVVM) design pattern, where the Model is your stored data, View is the visual representation of that data (UI), and ViewModel acts as the intermediary between Model and View.
 
-When using Knockout, the view page is simply a HTML document with declarative bindings that you can link to the ViewModel. ViewModel is nothing but an object, holding a list of items for creating the PivotGrid control by using Knockout Binding. When you call ko.applyBindings with a specific element it binds everything under that element.
+The data-bind attribute which we have add cannot be identified directly by the HTML tags and also the browser on which we run that page. Therefore, in order to work with Knockout, we need to declare the ko.applyBindings() function at the end of the script, so that the data-bind attribute will get recognised. Such Knockout code needs to be wrapped in a jQuery function as shown below within the script section, in order to work properly
 
 The following code example illustrates how to bind data to the PivotGrid through Knockout Binding.
 
@@ -42,4 +41,4 @@ $(function () {
 											
 {% endhighlight %}
 
-
+> **Note:** This feature is applicable only for OLAP datasource.

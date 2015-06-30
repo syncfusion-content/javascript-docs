@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appearance--Styling
-description: appearance & styling
+title: Styling--Appearance
+description:  Styling & Appearance
 platform: js
 control: PivotGrid
 documentation: ug
 ---
 
-# Appearance & Styling
+# Styling & Appearance
 
-**PivotGrid** control customizes its appearance using user-defined CSS. The custom CSS is applied to the control by referring the `custom theme CSS` next to **ej.widgets.all.min.css** in the view page. You can refer the custom CSS in **default.html** page.
+**PivotGrid** control customizes its appearance using user-defined cascade style sheet(CSS). The custom CSS is applied to the control by referring the `ej.custom-theme.css` next to **ej.widgets.all.min.css** in the view page. You can refer the custom CSS in **default.html** page.
 
 
 {% highlight html %}
@@ -17,7 +17,7 @@ documentation: ug
 <head>
     <title>PivotGrid Custom theme</title>
     <link href="../themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
-    <link href="custom-theme**/ej.custom-theme.css**" rel="stylesheet" type="text/css" />
+    <link href="custom-theme/ej.custom-theme.css" rel="stylesheet" type="text/css" />
 </head>
 
 {% endhighlight %}
