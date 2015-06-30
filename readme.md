@@ -114,7 +114,6 @@ to add the Syncfusion datepicker widget into the HTML page, refer the same steps
 * Always write out units (e.g. “megabytes”) rather than using abbreviations (e.g. “MB”.)
 
 ### Structural Formulations
-* There should be at least two headings at every nesting level. Within an “h2” block, there should be either: no “h3” blocks, 2 “h3” blocks, or more than 2 “h3” blocks.
 * Section headers are in title case (capitalize first, last, and all important words) and should effectively describe the contents of the section. In a single document you should strive to have section titles that are not redundant and grammatically consistent with each other.
 * Use paragraphs and paragraph breaks to increase clarity and flow. Avoid burying critical information in the middle of long paragraphs. Err on the side of shorter paragraphs.
 * Prefer shorter sentences to longer sentences. Use complex formations only as a last resort, if at all (e.g. compound complex structures that require semi-colons).
