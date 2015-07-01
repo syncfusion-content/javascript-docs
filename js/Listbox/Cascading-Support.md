@@ -47,48 +47,48 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 {% highlight js %}
 
 
-    var target;
     $(function () {
         // declaration
         var groups = [
-        { categoryid: 'a', text: "Clothing" },
-        { categoryid: 'b', text: "Furniture" }]
+            { categoryid: 'a', text: "Clothing" },
+            { categoryid: 'b', text: "Furniture" }
+        ]
     
         //first level child
         var category = [{ subcategoryid: 11, categoryid: 'a', text: "Men" },
-        { subcategoryid: 12, categoryid: 'a', text: "Women" },
-        { subcategoryid: 13, categoryid: 'b', text: "Home furniture" },
-        { subcategoryid: 14, categoryid: 'b', text: "Bedding" },
+            { subcategoryid: 12, categoryid: 'a', text: "Women" },
+            { subcategoryid: 13, categoryid: 'b', text: "Home furniture" },
+            { subcategoryid: 14, categoryid: 'b', text: "Bedding" },
         ]
         //second level child
     
         var subcategory = [{ productid: 101, subcategoryid: 11, text: "men shirts" },
-        { productid: 102, subcategoryid: 11, text: "men pants" },
-        { productid: 103, subcategoryid: 12, text: "Women shirts" },
-        { productid: 104, subcategoryid: 12, text: "Women pants" },
-        { productid: 105, subcategoryid: 13, text: "sofa" },
-        { productid: 106, subcategoryid: 13, text: "chairs" },
-        { productid: 107, subcategoryid: 14, text: "bedsheets" },
-        { productid: 108, subcategoryid: 14, text: "pillows" },
+            { productid: 102, subcategoryid: 11, text: "men pants" },
+            { productid: 103, subcategoryid: 12, text: "Women shirts" },
+            { productid: 104, subcategoryid: 12, text: "Women pants" },
+            { productid: 105, subcategoryid: 13, text: "sofa" },
+            { productid: 106, subcategoryid: 13, text: "chairs" },
+            { productid: 107, subcategoryid: 14, text: "bedsheets" },
+            { productid: 108, subcategoryid: 14, text: "pillows" },
         ]
     
         //third level child
         var subproduct = [{ productid: 101, text: "red men shirts" },
-        { productid: 101, text: "blue men shirts" },
-        { productid: 102, text: "red men pants" },
-        { productid: 102, text: "blue men pants" },
-        { productid: 103, text: "blueWomen shirts" },
-        { productid: 103, text: "red Women shirts" },
-        { productid: 104, text: "red women pants" },
-        { productid: 104, text: "blue women pants" },
-        { productid: 105, text: "red sofa" },
-        { productid: 105, text: "blue sofa" },
-        { productid: 106, text: "red chairs" },
-        { productid: 106, text: "blue chairs" },
-        { productid: 107, text: "red bedsheets" },
-        { productid: 107, text: "blue bedsheets" },
-        { productid: 108, text: "red pillows" },
-        { productid: 108, text: "blue pillows" }
+            { productid: 101, text: "blue men shirts" },
+            { productid: 102, text: "red men pants" },
+            { productid: 102, text: "blue men pants" },
+            { productid: 103, text: "blueWomen shirts" },
+            { productid: 103, text: "red Women shirts" },
+            { productid: 104, text: "red women pants" },
+            { productid: 104, text: "blue women pants" },
+            { productid: 105, text: "red sofa" },
+            { productid: 105, text: "blue sofa" },
+            { productid: 106, text: "red chairs" },
+            { productid: 106, text: "blue chairs" },
+            { productid: 107, text: "red bedsheets" },
+            { productid: 107, text: "blue bedsheets" },
+            { productid: 108, text: "red pillows" },
+            { productid: 108, text: "blue pillows" }
         ]
         $('#groupsList').ejListBox({
             dataSource: groups,

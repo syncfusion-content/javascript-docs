@@ -41,10 +41,10 @@ In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widge
                         { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
         ];
         $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
+            width: "300", dataSource: skillset,
             fields: { text: "skill" }, allowDragAndDrop: true
         });
-        $("#dragsample").ejListBox({ allowDragAndDrop: true });
+        $("#dragsample").ejListBox({ allowDragAndDrop: true, width: "300" });
     });
 
 

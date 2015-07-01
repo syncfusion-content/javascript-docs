@@ -20,8 +20,8 @@ Set **id** for RadioButton control as follows.
 
         $(function () {
             //set new id value as follows
-            $("#RadBtn_Male").ejRadioButton({ name: "Gender", **id: "male_type"** });
-            $("#RadBtm_female").ejRadioButton({ name: "Gender", **id: "female_type"** });
+            $("#Radio_Male").ejRadioButton({ name: "Gender", id: "male_type" });
+            $("#Radio_Female").ejRadioButton({ name: "Gender", id: "female_type" });
         });
 
 
@@ -39,8 +39,8 @@ Setting a new prefix id for **RadioButton** control is as follows.
 
         $(function () {
             //set new idPrefix value as follows
-            $("#Radio_Male").ejRadioButton({ name: "Gender", **idPrefix:"sync"**  });
-            $("#Radio_Female").ejRadioButton({ name: "Gender", **idPrefix:"sync"**  });
+            $("#Radio_Male").ejRadioButton({ name: "Gender", idPrefix:"sync"  });
+            $("#Radio_Female").ejRadioButton({ name: "Gender", idPrefix:"sync"  });
         });
 
 
@@ -68,8 +68,8 @@ Set name and value for each radio button control as follows.
 
         $(function () {
             //set name and value for each radio button as follows
-            $("#Radio_Male").ejRadioButton({ **name: "Gender", value: "male"**  });
-            $("#Radio_Female").ejRadioButton({ **name: "Gender", value: "female"** });
+            $("#Radio_Male").ejRadioButton({ name: "Gender", value: "male"  });
+            $("#Radio_Female").ejRadioButton({ name: "Gender", value: "female" });
         });
 
 

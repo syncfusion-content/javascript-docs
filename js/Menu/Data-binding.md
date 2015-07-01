@@ -131,7 +131,7 @@ Add the following code in your **HTML** page.
     ];
     jQuery(function ($) {
         $("#menujson").ejMenu({
-            fields: { dataSource: data, id: "id", parentId: "parentId", text: "text " }
+            fields: { dataSource: data, id: "id", parentId: "parentId", text: "text" }
         });
     });
  

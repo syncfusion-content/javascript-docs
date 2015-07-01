@@ -36,13 +36,14 @@ In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widge
     
         $('#listboxSample').ejListBox({
             dataSource: dataManger,
+            width: "350",
             fields: { text: "CustomerID" },
             query: query, enableLoadOnDemand: true, itemsCount: 91, itemRequest: "itemRequested"
         });
     });
     //Load set of items in itemRequested client-side method
     function itemRequested(args) {
-        var target = $("#selectCar").data("ejListBox");
+        var target = $("#listboxSample").data("ejListBox");
         target.model.query = ej.Query().from("Customers").range(args.start, args.start + 20);
         this.model.itemsCount = 20; //to load 20 items
     

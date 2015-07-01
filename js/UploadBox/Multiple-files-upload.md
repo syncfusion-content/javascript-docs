@@ -48,9 +48,9 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Multiple-files-upload_images/Multiple-files-upload_img1.png" Caption="Enables multiple selections"%}
+{% include image.html url="/js/UploadBox/Multiple-files-upload_images/Multiple-files-upload_img1.png"%}
 
 
 
-{% include image.html url="/js/UploadBox/Multiple-files-upload_images/Multiple-files-upload_img2.png" Caption="Uploadbox with multiple files "%}
+{% include image.html url="/js/UploadBox/Multiple-files-upload_images/Multiple-files-upload_img2.png"%}
 

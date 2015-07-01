@@ -47,7 +47,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
         ];
         //Render ListBox by mapping fields with JSON data
         $("#listboxSample").ejListBox({
-            width: "240", height: "302", dataSource: skillset,
+            width: "350", height: "302", dataSource: skillset,
             fields: { text: "skill" }
         });
     });
@@ -86,7 +86,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
         { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
         ];
         $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
+            width: "350", dataSource: skillset,
             fields: { text: "skill" }, showRoundedCorner: true
         });
     });

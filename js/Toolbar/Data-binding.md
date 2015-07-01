@@ -205,9 +205,7 @@ For more information about the knockout binding, refer the following link locati
 [http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
 
 
-> {% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img3.png"%}
-
-Note: Add the following script files along with the specified code to access knockout binding. It contains JS library for knockout binding.
+> **Note**: Add the following script files along with the specified code to access knockout binding. It contains JS library for knockout binding.
 
 * Knockout.min.js
 * ej.widget.ko.min.js

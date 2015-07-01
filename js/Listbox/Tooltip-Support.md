@@ -74,6 +74,7 @@ In an **HTML** page, add a &lt;ul&gt; element to configure **ListBox** widget.
        }];
        $("#listboxSample").ejListBox({
           dataSource: skillset,
+          width: "350",
           enableTooltip: true,
           fields: {
              text: "skill",

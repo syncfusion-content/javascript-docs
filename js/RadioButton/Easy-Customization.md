@@ -20,40 +20,40 @@ In the **HTML** page, add the following input elements to configure **RadioButto
 {% highlight html %}
 
 
-   <div class="page-align">
-        <table>
-            <tr>
-                <td>
-                    <input type="radio" id="Radio_checked" />
-                </td>
-                <td>
-                    <label for="Radio_checked" >Male</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" id="Radio_unchecked" />
-                </td>
-                <td>
-                    <label for="Radio_unchecked">Female</label>
-                </td>
-            </tr>
-        </table>
-    </div>
+<div class="page-align">
+    <table>
+        <tr>
+            <td>
+                <input type="radio" id="Radio_checked" />
+            </td>
+            <td>
+                <label for="Radio_checked" >Male</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="Radio_unchecked" />
+            </td>
+            <td>
+                <label for="Radio_unchecked">Female</label>
+            </td>
+        </tr>
+    </table>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
 
-        // Initialize the control in JavaScript
-        $(function () {
-            // Here we render checked and unchecked type of radio buttons in same group
-            // set checked state of radio button as follows
-            $("#Radio_checked").ejRadioButton({ name: "Gender", checked: true });
-            $("#Radio_unchecked").ejRadioButton({ name: "Gender" });
-
-        });
+    // Initialize the control in JavaScript
+    $(function () {
+        // Here we render checked and unchecked type of radio buttons in same group
+        // set checked state of radio button as follows
+        $("#Radio_checked").ejRadioButton({ name: "Gender", checked: true });
+        $("#Radio_unchecked").ejRadioButton({ name: "Gender" });
+    
+    });
     
 {% endhighlight %}
 
@@ -64,11 +64,11 @@ Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
 
-   <style>
-        .page-align {
-            margin: 100px;
-        }
-   </style>
+<style>
+    .page-align {
+        margin: 100px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -91,22 +91,22 @@ In the **HTML** page, add the following input elements to configure the **RadioB
 {% highlight html %}
 
 
-   <div class="page-align">
-        <table>
-            <tr>
-                <td>
-                    <!--here we did not use label tag-->
-                    <input type="radio" id="RadBtn_male" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                   <!-- here we did not use label tag-->
-                    <input type="radio" id="RadBtn_female" />
-                </td>
-            </tr>
-        </table>
-    </div>
+<div class="page-align">
+    <table>
+        <tr>
+            <td>
+                <!--here we did not use label tag-->
+                <input type="radio" id="RadBtn_male" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <!-- here we did not use label tag-->
+                <input type="radio" id="RadBtn_female" />
+            </td>
+        </tr>
+    </table>
+</div>
 
 
 {% endhighlight %}
@@ -114,12 +114,12 @@ In the **HTML** page, add the following input elements to configure the **RadioB
 {% highlight js %}
 
 
-        // Initialize the control in JavaScript
-        $(function () {
-            // radio button with text property
-            $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male" });
-            $("#RadBtn_female").ejRadioButton({ name: "Gender", text: "Female" });
-        });
+    // Initialize the control in JavaScript
+    $(function () {
+        // radio button with text property
+        $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male" });
+        $("#RadBtn_female").ejRadioButton({ name: "Gender", text: "Female" });
+    });
 
 {% endhighlight %}
 
@@ -130,11 +130,11 @@ Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
 
-   <style>
-        .page-align {
-            margin: 100px;
-        }
-    </style>
+<style>
+    .page-align {
+        margin: 100px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -172,59 +172,59 @@ In the HTML page, add the following input elements to configure RadioButton widg
 {% highlight html %}
 
 
-   <div class="page-align">
-        <table>
-            <tr>
-                <td>Small size Radio buttons
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" id="Radio_Male" />
-                    <label for="Radio_Male">Male</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" id="Radio_Female" />
-                    <label for="Radio_Female">Female</label>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td>Medium size Radio buttons
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" id="Radio1_Male" />
-                    <label for="Radio1_Male">Male</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" id="Radio1_Female" />
-                    <label for="Radio1_Female">Female</label>
-                </td>
-            </tr>
-        </table>
-    </div>
+<div class="page-align">
+    <table>
+        <tr>
+            <td>Small size Radio buttons
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="Radio_Male" />
+                <label for="Radio_Male">Male</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="Radio_Female" />
+                <label for="Radio_Female">Female</label>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Medium size Radio buttons
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="Radio1_Male" />
+                <label for="Radio1_Male">Male</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="Radio1_Female" />
+                <label for="Radio1_Female">Female</label>
+            </td>
+        </tr>
+    </table>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-        // Initialize the control in JavaScript
-        $(function () {
-            // small size of radio buttons in same group          
-            $("#Radio_Male").ejRadioButton({ name: "Gender", size: "small", checked: true });
-            $("#Radio_Female").ejRadioButton({ name: "Gender", size: "small" });
-            // Medium size of radio buttons in same group          
-            $("#Radio1_Male").ejRadioButton({ name: "Gender1", size: "medium", checked: true });
-            $("#Radio1_Female").ejRadioButton({ name: "Gender1", size: "medium" });
-
-        });
+    // Initialize the control in JavaScript
+    $(function () {
+        // small size of radio buttons in same group          
+        $("#Radio_Male").ejRadioButton({ name: "Gender", size: "small", checked: true });
+        $("#Radio_Female").ejRadioButton({ name: "Gender", size: "small" });
+        // Medium size of radio buttons in same group          
+        $("#Radio1_Male").ejRadioButton({ name: "Gender1", size: "medium", checked: true });
+        $("#Radio1_Female").ejRadioButton({ name: "Gender1", size: "medium" });
+    
+    });
 
 {% endhighlight %}
 
@@ -234,11 +234,11 @@ Configure the CSS styles to align the radio buttons.
 
 {% highlight css %}
 
-   <style>
-        .page-align {
-            margin: 100px;
-        }
-    </style>
+<style>
+    .page-align {
+        margin: 100px;
+    }
+</style>
 
 
 {% endhighlight %}
@@ -262,31 +262,31 @@ In the HTML page, add the following button elements to configure RadioButton wid
 {% highlight html %}
 
 
-   <div class="page-align">
-        <table class="rightAlign">
-            <tr>
-                <td>
-                    <input type="radio" id="RadBtn_male" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" id="RadBtn_female" />
-                </td>
-            </tr>
-        </table>
-    </div>
+<div class="page-align">
+    <table class="rightAlign">
+        <tr>
+            <td>
+                <input type="radio" id="RadBtn_male" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="RadBtn_female" />
+            </td>
+        </tr>
+    </table>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-        // Initialize the control in JavaScript
-        $(function () {
-            //set radio button with right to left format
-            $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male", enableRTL: true });
-            $("#RadBtn_female").ejRadioButton({ name: "Gender", text: "Female", enableRTL: true });
-        });
+    // Initialize the control in JavaScript
+    $(function () {
+        //set radio button with right to left format
+        $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male", enableRTL: true });
+        $("#RadBtn_female").ejRadioButton({ name: "Gender", text: "Female", enableRTL: true });
+    });
 
 {% endhighlight %}
 
@@ -299,14 +299,14 @@ Configure the CSS styles to align the RadioButtons.
 
 {% highlight css %}
 
-  <style>
-        .page-align {
-            margin: 100px;
-        }
-        .rightAlign {
-            text-align: right;
-        }
-    </style>
+<style>
+    .page-align {
+        margin: 100px;
+    }
+    .rightAlign {
+        text-align: right;
+    }
+</style>
 
 
 {% endhighlight %}

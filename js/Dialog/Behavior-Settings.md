@@ -22,7 +22,12 @@ In an HTML page set a &lt;div&gt; element with dialog content for rendering the 
 {% highlight html %}
 
 <div id="Dialog" title="Syncfusion Dialog">
-   The Syncfusion Dialog control is rendered.
+   <p>
+      Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
+   </p>
+   <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
+   <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
+   <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
 </div>
 
 {% endhighlight %}
@@ -59,7 +64,12 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 
 <div id="Dialog" title="Syncfusion Dialog">
-   The Syncfusion Dialog control is rendered.
+   <p>
+      Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
+   </p>
+   <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
+   <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
+   <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
 </div>
 	
 {% endhighlight %}
@@ -92,7 +102,12 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 {% highlight html %}
 
 <div id="Dialog" title="Syncfusion Dialog">
-   The Syncfusion Dialog control is rendered.
+   <p>
+      Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
+   </p>
+   <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
+   <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
+   <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
 </div>
 
 {% endhighlight %}
@@ -159,7 +174,12 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 {% highlight html %}
 
 <div id="Dialog" title="Syncfusion Dialog">
-   The Syncfusion Dialog control is rendered.
+   <p>
+      Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
+   </p>
+   <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
+   <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
+   <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
 </div>
 
 {% endhighlight %}
@@ -254,7 +274,12 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 {% highlight html %}
 
 <div id="Dialog" title="Syncfusion Dialog">
-   The Syncfusion Dialog control is rendered.
+   <p>
+      Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
+   </p>
+   <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
+   <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
+   <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
 </div>
 
 {% endhighlight %}
@@ -282,7 +307,12 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 {% highlight html %}
 
 <div id="Dialog" title="Syncfusion Dialog">
-   The Syncfusion Dialog control is rendered.
+   <p>
+      Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
+   </p>
+   <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
+   <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
+   <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
 </div>
 
 {% endhighlight %}
@@ -311,7 +341,12 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 {% highlight html %}
 
 <div id="Dialog" title="Syncfusion Dialog">
-   The Syncfusion Dialog control is rendered.
+   <p>
+      Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
+   </p>
+   <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
+   <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
+   <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
 </div>
 
 {% endhighlight %}
@@ -341,7 +376,12 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 {% highlight html %}
 
 <div id="Dialog" title="Syncfusion Dialog">
-   The Syncfusion Dialog control is rendered.
+   <p>
+      Essential Grid for ASP.NET MVC is a <span>lightweight, AJAX-enabled, high-performance grid component</span> built especially to suit the programming model of the ASP.NET MVC framework.
+   </p>
+   <p>It has a rich feature set that includes <span>hierarchies, grouping, sorting, paging, data binding, editing, filtering, and several built-in styles.</span> </p>
+   <p>Essential Grid is designed for performance and can easily handle millions of records. </p>
+   <p>AJAX is extensively used to reduce traffic—only the required data is sent between the client and server, minimizing data transfer and response time.</p>
 </div>
 	
 {% endhighlight %}

@@ -12,7 +12,7 @@ documentation: ug
 This section explains briefly about how to create a **Menu** control in your application with **JavaScript**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion’s** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
 
 
-{% include image.html url="/js/Menu/Getting-Started_images/Getting-Started_img1.png" Caption="Syncfusion Menu"%}
+{% include image.html url="/js/Menu/Getting-Started_images/Getting-Started_img1.png" %}
 
 ## Create a Menu
 
@@ -29,7 +29,7 @@ Create an **HTML** file and add the following template into it for **Menu** crea
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-2.1.4.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
@@ -80,30 +80,56 @@ Output of the above steps.
 
 ## Configure parent Menu items
 
-Every **Menu** has a list of **Menu** items with list of sub level **Menu** items. From the following guidelines, you can learn how to initialize the root level elements of **Menu** control with Remote data source value.  Initialize the **Menu** with data source value as illustrated in the following code example. 
+Every **Menu** has a list of **Menu** items with list of sub level **Menu** items. From the following guidelines, you can learn how to initialize the root level elements of **Menu** control with Local data source value.  Initialize the **Menu** with data source value as illustrated in the following code example. 
 
 {% highlight js %}
 
 
-        $(function () {// document ready
-            // DataManager creation
-            var dataManger = ej.DataManager({
-                // Assign the Remote data service path to url
-                url: "http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"
-            });
-
-            // used to retrieve the items from online data.
-            var query = ej.Query().from("RootLevelItems");
-            // simple Menu control creation
+        var data = [
+            { id: 1, text: "Products", parentId: null },
+            { id: 2, text: "Support", parentId: null },
+            { id: 3, text: "Purchase", parentId: null },
+            { id: 4, text: "Downloads", parentId: null },
+            { id: 5, text: "Resources", parentId: null },
+			 { id: 6, text: "Company", parentId: null },
+            //first level child
+            { id: 11, parentId: 1, text: "ASP.NET" },
+            { id: 12, parentId: 1, text: "ASP.NET MVC" },
+            { id: 13, parentId: 1, text: "Mobile MVC" },
+            { id: 14, parentId: 1, text: "Silverlight" },
+            { id: 15, parentId: 1, text: "Windows Forms" },
+            { id: 16, parentId: 1, text: "Windows Phone" },
+            { id: 17, parentId: 1, text: "WinRT (XMAL)" },
+            { id: 18, parentId: 1, text: "WPF" },
+            { id: 19, parentId: 1, text: "Orubase Studio" },
+            { id: 20, parentId: 1, text: "Metro Studio" },
+            { id: 21, parentId: 1, text: "What's New" },
+            { id: 22, parentId: 2, text: "Direct-Trac Support" },
+            { id: 23, parentId: 2, text: "Community Forums" },
+            { id: 24, parentId: 2, text: "Knowledge Base" },
+            { id: 25, parentId: 2, text: "Online Documentation" },
+            { id: 26, parentId: 2, text: "Services" },
+			{ id: 27, parentId: 4, text: "Evaluation" },
+			{ id: 28, parentId: 4, text: "Free E-Books" },
+			{ id: 29, parentId: 4, text: "Metro Studio" },
+			{ id: 30, parentId: 4, text: "Latest Version" },
+			{ id: 31, parentId: 4, text: "Version History" },
+			{ id: 32, parentId: 5, text: "Technology Resource Portal " },
+			{ id: 33, parentId: 5, text: "Case Studies" },
+			{ id: 34, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 35, parentId: 5, text: "FAQ" },
+            //second level child
+            {id: 111, parentId: 21, text: "WinRT (XMAL)" },
+            { id: 112, parentId: 21, text: "WPF" },
+            { id: 113, parentId: 21, text: "Silverlight" },
+            { id: 114, parentId: 21, text: "Windows Forms" },
+            { id: 115, parentId: 21, text: "Windows Phone" }
+            
+        ];
+        jQuery(function ($) {
             $("#syncfusionProducts").ejMenu({
-                // fields property used to bind the data source and also it includes list of field members such as id, text, parentId to render menu control. 
-                fields: {
-                    dataSource: dataManger, //Assign data source value to dataSource property
-                    query: query,
-                    id: "InfoID", // Mapping id fields with the data source items.
-                    text: "InfoText" // Mapping text field with the data source items.
-                }
-            })
+                fields: { dataSource: data, id: "id", parentId: "parentId", text: "text" }
+            });
         });
 
 
@@ -124,22 +150,50 @@ The following code example describes how to initialize first level sub menu item
 {% highlight js %}
 
 
-        $(function () {// document ready
-            // Define the DataManager and Query as per Above Code Snippet.
-            // simple Menu control creation
-
+       var data = [
+            { id: 1, text: "Products", parentId: null },
+            { id: 2, text: "Support", parentId: null },
+            { id: 3, text: "Purchase", parentId: null },
+            { id: 4, text: "Downloads", parentId: null },
+            { id: 5, text: "Resources", parentId: null },
+			 { id: 6, text: "Company", parentId: null },
+            //first level child
+            { id: 11, parentId: 1, text: "ASP.NET" },
+            { id: 12, parentId: 1, text: "ASP.NET MVC" },
+            { id: 13, parentId: 1, text: "Mobile MVC" },
+            { id: 14, parentId: 1, text: "Silverlight" },
+            { id: 15, parentId: 1, text: "Windows Forms" },
+            { id: 16, parentId: 1, text: "Windows Phone" },
+            { id: 17, parentId: 1, text: "WinRT (XMAL)" },
+            { id: 18, parentId: 1, text: "WPF" },
+            { id: 19, parentId: 1, text: "Orubase Studio" },
+            { id: 20, parentId: 1, text: "Metro Studio" },
+            { id: 21, parentId: 1, text: "What's New" },
+            { id: 22, parentId: 2, text: "Direct-Trac Support" },
+            { id: 23, parentId: 2, text: "Community Forums" },
+            { id: 24, parentId: 2, text: "Knowledge Base" },
+            { id: 25, parentId: 2, text: "Online Documentation" },
+            { id: 26, parentId: 2, text: "Services" },
+			{ id: 27, parentId: 4, text: "Evaluation" },
+			{ id: 28, parentId: 4, text: "Free E-Books" },
+			{ id: 29, parentId: 4, text: "Metro Studio" },
+			{ id: 30, parentId: 4, text: "Latest Version" },
+			{ id: 31, parentId: 4, text: "Version History" },
+			{ id: 32, parentId: 5, text: "Technology Resource Portal " },
+			{ id: 33, parentId: 5, text: "Case Studies" },
+			{ id: 34, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 35, parentId: 5, text: "FAQ" },
+            //second level child
+            {id: 111, parentId: 21, text: "WinRT (XMAL)" },
+            { id: 112, parentId: 21, text: "WPF" },
+            { id: 113, parentId: 21, text: "Silverlight" },
+            { id: 114, parentId: 21, text: "Windows Forms" },
+            { id: 115, parentId: 21, text: "Windows Phone" }
+            
+        ];
+        jQuery(function ($) {
             $("#syncfusionProducts").ejMenu({
-                fields: {
-                    dataSource: dataManger, query: query, id: "InfoID", text: "InfoText",
-                    //Define the Child level Menu Items through below child field
-                    child: {
-                        //Define the Sub level Menu Itmes Source
-                        dataSource: dataManger,
-                        tableName: "SubItems", // Sub Level Items
-                        // parentID field used to map root level menu item to its sub level menu item.
-                        id: "SubItemID", parentId: "InfoID", text: "SubItemText"
-                    }
-                }
+                fields: { dataSource: data, id: "id", parentId: "parentId", text: "text" }
             });
         });
 
@@ -164,28 +218,50 @@ To initialize multiple levels sub menu items, use the following code example.
 {% highlight js %}
 
 
-        $(function () {// document ready
-            // Define the DataManager and Query as per Above Code Snippet.
+        var data = [
+            { id: 1, text: "Products", parentId: null },
+            { id: 2, text: "Support", parentId: null },
+            { id: 3, text: "Purchase", parentId: null },
+            { id: 4, text: "Downloads", parentId: null },
+            { id: 5, text: "Resources", parentId: null },
+			 { id: 6, text: "Company", parentId: null },
+            //first level child
+            { id: 11, parentId: 1, text: "ASP.NET" },
+            { id: 12, parentId: 1, text: "ASP.NET MVC" },
+            { id: 13, parentId: 1, text: "Mobile MVC" },
+            { id: 14, parentId: 1, text: "Silverlight" },
+            { id: 15, parentId: 1, text: "Windows Forms" },
+            { id: 16, parentId: 1, text: "Windows Phone" },
+            { id: 17, parentId: 1, text: "WinRT (XMAL)" },
+            { id: 18, parentId: 1, text: "WPF" },
+            { id: 19, parentId: 1, text: "Orubase Studio" },
+            { id: 20, parentId: 1, text: "Metro Studio" },
+            { id: 21, parentId: 1, text: "What's New" },
+            { id: 22, parentId: 2, text: "Direct-Trac Support" },
+            { id: 23, parentId: 2, text: "Community Forums" },
+            { id: 24, parentId: 2, text: "Knowledge Base" },
+            { id: 25, parentId: 2, text: "Online Documentation" },
+            { id: 26, parentId: 2, text: "Services" },
+			{ id: 27, parentId: 4, text: "Evaluation" },
+			{ id: 28, parentId: 4, text: "Free E-Books" },
+			{ id: 29, parentId: 4, text: "Metro Studio" },
+			{ id: 30, parentId: 4, text: "Latest Version" },
+			{ id: 31, parentId: 4, text: "Version History" },
+			{ id: 32, parentId: 5, text: "Technology Resource Portal " },
+			{ id: 33, parentId: 5, text: "Case Studies" },
+			{ id: 34, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 35, parentId: 5, text: "FAQ" },
+            //second level child
+            {id: 111, parentId: 21, text: "WinRT (XMAL)" },
+            { id: 112, parentId: 21, text: "WPF" },
+            { id: 113, parentId: 21, text: "Silverlight" },
+            { id: 114, parentId: 21, text: "Windows Forms" },
+            { id: 115, parentId: 21, text: "Windows Phone" }
+            
+        ];
+        jQuery(function ($) {
             $("#syncfusionProducts").ejMenu({
-                fields: {
-                    dataSource: dataManger,
-                    query: query,
-                    id: "InfoID", text: "InfoText",
-                    child: {
-                        //Define the Sub level Menu Items
-                        dataSource: dataManger,
-                        tableName: "SubItems", // Sub Level Items table name
-                        id: "SubItemID", parentId: "InfoID", text: "SubItemText",
-
-                        child: {
-                            //Define the Inner Sub level Menu Items
-                            dataSource: dataManger,
-                            tableName: "InnerItems",// Inner Sub Level Items table name
-                            // parentID field used to map root level menu item to its sub level menu item.
-                            id: "InnerSubItemID", parentId: "SubItemID", text: "InnerSubItemText"
-                        }
-                    }
-                }
+                fields: { dataSource: data, id: "id", parentId: "parentId", text: "text" }
             });
         });
 
