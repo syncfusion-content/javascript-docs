@@ -1,7 +1,3 @@
-# Contents
-
-* [General guidelines](#General guidelines)
-
 # Documentation Guidelines
 
 This section contains guidelines on naming files, sections, documents and other document elements.
