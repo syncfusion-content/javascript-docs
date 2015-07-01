@@ -151,15 +151,15 @@ to add the Syncfusion datepicker widget into the HTML page, refer the same steps
 * Write from a real world usage perspective
   * For example, customers would use DocIO for one of the following purposes
 * Dynamically generate reports based on templates.
-  * Load Template
-  * Mail merge
-  * Save as Doc or PDF
+  1. Load Template
+  2. Mail merge
+  3. Save as Doc or PDF
 * Document structure manipulation
-  * Load document
-  * Find a specific table 
-  * Read its contents
-  * Replace with another table
-  * Save changes
+  1. Load document
+  2. Find a specific table 
+  3. Read its contents
+  4. Replace with another table
+  5. Save changes
 * Creating documents from code
   * Is there a reason why we need this in documentation since no end user would create the document from scratch instead of using a template since that option is a lot easier.
   * This can be documented as a side note under the "Dynamic document generation" section.
@@ -169,9 +169,9 @@ to add the Syncfusion datepicker widget into the HTML page, refer the same steps
 * Link to demos where necessary.
 * Let users edit sample code in playground.
 * Possible workflow
-  * Create document outline
-  * Document first purely using bullet points
-  * Form sentences using language guidelines.
+  1. Create document outline
+  2. Document first purely using bullet points
+  3. Form sentences using language guidelines.
  
  
 ### External references
