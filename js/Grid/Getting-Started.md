@@ -31,9 +31,9 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
     <meta charset="utf-8" />
     <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 </head>
 
@@ -71,7 +71,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
     $(function () {
         $("#Grid").ejGrid({            
             columns: [
-                { field: "Order", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
                 { field: "CustomerID", headerText: "Customer ID", width: 80 },
                 { field: "ShipName", headerText: "Ship Name", width: 100 },
                 { field: "ShipCity", headerText: "Ship City", width: 100 },
