@@ -119,8 +119,8 @@ to add the Syncfusion datepicker widget into the HTML page, refer the same steps
  
 ### General English guidelines
 * Use the second person instead of first person
-  * We will now see how to create a line chart - Incorrect
-  * _You can create a line chart as shown below_ - Correct
+    * We will now see how to create a line chart - Incorrect
+    * _You can create a line chart as shown below_ - Correct
 * Do not use a period after every item in a list
 * Write units in words
   * _50 megabytes_  - Correct
