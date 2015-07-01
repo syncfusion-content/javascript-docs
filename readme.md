@@ -18,13 +18,14 @@ For ex, In the top section of each MD file,
 
 **Description :** How to create a chart, add series, enable tooltip and other functionalities.
 
-## General
-* Do not bold the words unnecessarily.
-* Use [inline code style](http://kramdown.gettalong.org/quickref.html#inline-code) wherever it is possible to highlight the keywords, variables or one line code snippets which comes within the paragraph.
-* How to highlight the keyboard shortcuts like this? [Stackoverflow](http://meta.stackexchange.com/questions/26207/how-can-i-format-as-keyboard-keys)
 
 ## Markdown Syntax Guideline
 * Follow the syntax mentioned in this [link](http://kramdown.gettalong.org/syntax.html) for most of the elements. There are some elements which need special styling or additional settings to do. Those have been described in the below topics.
+
+## General
+* Do not bold the words unnecessarily.
+* Use [inline code style](http://kramdown.gettalong.org/quickref.html#inline-code) wherever it is possible to highlight the keywords, variables or one line code snippets which comes within the paragraph.
+* Todo -> How to highlight the keyboard shortcuts like this? [Stackoverflow](http://meta.stackexchange.com/questions/26207/how-can-i-format-as-keyboard-keys)
 
 ### Cross-reference
 * Todo -> How to link the content within the page?
