@@ -123,55 +123,55 @@ to add the Syncfusion datepicker widget into the HTML page, refer the same steps
     * _You can create a line chart as shown below_ - Correct
 * Do not use a period after every item in a list
 * Write units in words
-  * _50 megabytes_  - Correct
-  * 50 MB - Incorrect
+    * _50 megabytes_  - Correct
+    * 50 MB - Incorrect
 * Each paragraph should only talk about one topic. Each sentence should only talk about one idea.
 * Each sentence should have less than 25 words. 
 * Write in a neutral tone without marketing content
-  * Essential chart has built in support for over 10 powerful technical indicators - Incorrect
-  * Essential chart has built in support for over 10 technical indicators - Correct
+    * Essential chart has built in support for over 10 powerful technical indicators - Incorrect
+    * _Essential chart has built in support for over 10 technical indicators_ - Correct
 * Constantly review the document that you are writing to see if any words can be removed without changing the information conveyed.
 * You can use a colon after the words "following" or "follows." 
 * Use American English and date formats.
-  * Behavior vs Behaviour
+    * Behavior vs Behaviour
 * Prefer present tense to past tense
-  * You will have to send the corrupted word document for troubleshooting. - Incorrect
-  * Please send the corrupted word document for troubleshooting. - Correct
+    * You will have to send the corrupted word document for troubleshooting. - Incorrect
+    * _Please send the corrupted word document for troubleshooting._ - Correct
 * Avoid using gender specific words like she, he, him or her.
 * When you first use an acronym in a document, you should write out the full term and enclose the acronym in parentheses immediately after the term 
-  * This guide shows you how to configure the chart control within your favorite Integrated Development Environment (IDE)
+    * This guide shows you how to configure the chart control within your favorite Integrated Development Environment (IDE)
 * Use oxford comma when referring to a list of three or more items
-  * The data visualization suite consists of Chart, Gauge, and Map.
+    * The data visualization suite consists of Chart, Gauge, and Map.
 * Always refer to the control name with proper casing
-  * SfDataGrid vs Datagrid or Data Grid etc.
+    * SfDataGrid vs Datagrid or Data Grid etc.
 * Always spell check using a tool like Microsoft Word.
  
 ### Structure of good documentation
 * Getting started tutorials
 * Write from a real world usage perspective
-  * For example, customers would use DocIO for one of the following purposes
+    * For example, customers would use DocIO for one of the following purposes
 * Dynamically generate reports based on templates.
-  1. Load Template
-  2. Mail merge
-  3. Save as Doc or PDF
+    1. Load Template
+    2. Mail merge
+    3. Save as Doc or PDF
 * Document structure manipulation
-  1. Load document
-  2. Find a specific table 
-  3. Read its contents
-  4. Replace with another table
-  5. Save changes
+    1. Load document
+    2. Find a specific table 
+    3. Read its contents
+    4. Replace with another table
+    5. Save changes
 * Creating documents from code
-  * Is there a reason why we need this in documentation since no end user would create the document from scratch instead of using a template since that option is a lot easier.
-  * This can be documented as a side note under the "Dynamic document generation" section.
+    * Is there a reason why we need this in documentation since no end user would create the document from scratch instead of using a template since that option is a lot easier.
+    * This can be documented as a side note under the "Dynamic document generation" section.
 * Converting from one file format to another (DOC To PDF)
 * Document best practices. For example, do we create an invoice from scratch or is it recommended to start from a template?
 * Document the most common issues encountered.
 * Link to demos where necessary.
 * Let users edit sample code in playground.
 * Possible workflow
-  1. Create document outline
-  2. Document first purely using bullet points
-  3. Form sentences using language guidelines.
+    1. Create document outline
+    2. Document first purely using bullet points
+    3. Form sentences using language guidelines.
  
  
 ### External references
