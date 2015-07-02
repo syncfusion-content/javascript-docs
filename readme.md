@@ -3,18 +3,18 @@
 This section contains guidelines on naming files, sections, documents and other document elements.
 
 ## File naming Convention:
-* All files should have a .md extension.
-* Separate words in file names with hyphens (i.e. -.)
-* For most documents, file names should have a brief one or two word name that describes the material covered in the document. 
+* All files should have .md extension.
+* Separate words in file names should be hyphenated
+* File names of the documents should have one or two-word names that describe the material covered in the document. 
 * The full title of the document should be in the file name. 
-* Phrase title and description so users can determine what questions the text will answer, and material that will be addressed, without needing them to read the content. This shortens the amount of time that people spend looking for answers, and improvise search/scanning, and possibly “SEO.”
-* Prefer titles and headers in the form of “Using foo” over “How to Foo.”
+* Phrase title and description in a way that users can determine what questions the text will answer, and material that will be addressed, without reading the content. This eases the time spent looking for answers, and improvises search/scanning, and possibly “SEO.”
+* Provide titles and headers in the form of “Using foo” over “How to Foo.”
 
-For ex, In the top section of each MD file,
+For example, at the top section of each MD file,
 
 **Title :** Getting started with Chart widget for Syncfusion Essential JS 
 
-**Description :** How to create a chart, add series, enable tooltip and other functionalities.
+**Description :** File should describe or help the user how to create a chart, add series, enable tooltip and other functionalities.
 
 
 ## Markdown Syntax Guideline
@@ -22,7 +22,7 @@ For ex, In the top section of each MD file,
 
 ## General
 * Do not bold the words unnecessarily.
-* Use [inline code style](http://kramdown.gettalong.org/quickref.html#inline-code) wherever it is possible to highlight the keywords, variables or one line code snippets which comes within the paragraph.
+* Use [inline code style](http://kramdown.gettalong.org/quickref.html#inline-code) wherever it is possible to highlight the keywords, variables or one line code examples that come within the paragraph.
 * Todo -> How to highlight the keyboard shortcuts like this? [Stackoverflow](http://meta.stackexchange.com/questions/26207/how-can-i-format-as-keyboard-keys)
 
 ### Cross-reference
@@ -35,26 +35,26 @@ For ex, In the top section of each MD file,
 
 ### Table
 * Todo -> How to create a table and whatelse need to be instructed the content contributor
-* Todo -> can we give code snippet within the table? if possible, how?
+* Todo -> Can we give code example within the table? If yes, how?
 * Do not provide table captions.
 * Provide TH tag for table headers.
 
 ### Image
-* Make sure image is not resized or blurred.
-* Todo -> how to include the image?
-* Caption is not necessary to provide for all images except for the case where we will have displayed more than one image.
-* Todo -> If we need to include the caption, how?
-* Todo -> What is the minimum & maximum size?
-* If you are including the image to show an output of a code block, make sure the exact output can see the user also when he executes the same code snippet.
+* Image should not be resized or blurred.
+* Todo -> How to include the image?
+* Caption is not necessary to be provided for all images except for the case when it is required.
+* Todo -> How to include the caption?
+* Todo -> What are the minimum & maximum sizes?
+* If you are including the image to show an output of a code block, ensure to put the exact output that user can also see when he executes the same code example.
 
 ### Code Blocks
-* Align the code snippets using following free formatters:
+* Align the code examples using following free formatters:
 	[JS](http://jsbeautifier.org/) ,
 	[HTML](http://www.freeformatter.com/html-formatter.html)
 * Remove extra lines added within the code block.
 * Todo -> How to include the code block and what needs to be followed?
 * Todo -> How to use JSRender template syntax in the code block?
-* Make sure the given code block runs without any issues.
+* Ensure that the given code block runs without any issues.
 
 ### Bullet style
 * Todo -> How to provide numbering bullet style?
