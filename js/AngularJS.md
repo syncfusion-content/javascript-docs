@@ -368,5 +368,3 @@ The two-way data binding has been demonstrated in the below code,
 
 Here, just for the demonstration purpose, we are using two DatePicker controls (with id **mydatepicker1** and **mydatepicker2**), both of its value property is bound to the scope variable **dateValue**. Initially, both the DatePickers will be displayed with the value **01/01/2015** and whenever any of the DatePicker’s value is changed dynamically, it gets simultaneously reflected in another DatePicker too, as both of them shared the same scope variable.
 
-Though AngularJS comes with lot of advantages, at the same time it has some serious issues too - that the application written in AngularJS are not safe due to the pure JavaScript framework. Therefore, to overcome such issue, some kind of server-side authentication and authorization is necessary to keep the application more secure. 
-
