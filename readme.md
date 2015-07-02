@@ -26,7 +26,11 @@ For ex, In the top section of each MD file,
 * Todo -> How to highlight the keyboard shortcuts like this? [Stackoverflow](http://meta.stackexchange.com/questions/26207/how-can-i-format-as-keyboard-keys)
 
 ### Cross-reference
-* Todo -> How to link the content within the page?
+* Link within the page (if you have a title with space, use hyphen (-))
+>	**Syntax**: \[Link name](#link-id)
+
+>	**Example**: \[Link documents] (#how-to-best-read-this-user-guide)
+
 * Todo -> How to link to the other page in the documentation?
 
 ### Table
