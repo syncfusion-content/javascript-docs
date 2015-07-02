@@ -95,7 +95,7 @@ Add necessary input elements to render **Textboxes widget**.
 
 
 
-Initialize the **Textboxes widget** as shown in the following section.
+Initializes the **Textboxes widget** as shown in the following section.
 
 {% highlight js %}
 
@@ -308,7 +308,7 @@ You can set the “**StrictMode” option** to restrict entering values defined 
 
 
 
-Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** range mentioned in the CurrencyTextBox. 
+Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** ranges mentioned in the CurrencyTextBox. 
 
 ## Set Calculation process with Textboxes Widgets
 
