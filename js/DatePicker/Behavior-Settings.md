@@ -269,7 +269,7 @@ Add the following styles to specify the **fields mapping** in **DatePicker** wid
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img4.png"%}
+{% include image.html url="/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img2.png"%}
 
 ## Define start day of the week
 

@@ -68,7 +68,7 @@ You can create the **ProgressBar** widget by using a simple input **&lt;div&gt;*
             <div class="wrap_up">
                <!--Initializing password field*-->
                <label for="startButton">Password</label>
-               <input type="password" id="password" style="border-radius:10px"/>
+               <input type="password" id="password" style="border-radius:0px"/>
             </div>
             <div class="control">
                <!--initializing ProgressBar control-->
