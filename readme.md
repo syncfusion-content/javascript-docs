@@ -59,9 +59,9 @@ This section contains guidelines on naming files, sections, documents and other 
 
 * Adding Image :
 
-> **Syntax**: \{% include image.html url="image path"%}
+> **Syntax**: \![Alt text](imagepath)
 
-> **Example**: \{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
+> **Example**: \![Alt text](/path/to/img.jpg)
 
 * Adding image with caption:
 
