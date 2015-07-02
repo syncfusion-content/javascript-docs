@@ -3,18 +3,18 @@
 This section contains guidelines on naming files, sections, documents and other document elements.
 
 ## File naming Convention:
-* All files should have .md extension.
+* All files should have `.md` extension.
 * Separate words in file names should be hyphenated
 * File names of the documents should have one or two-word names that describe the material covered in the document. 
 * The full title of the document should be in the file name. 
 * Phrase title and description in a way that users can determine what questions the text will answer, and material that will be addressed, without reading the content. This eases the time spent looking for answers, and improvises search/scanning, and possibly **SEO**.
 * Provide titles and headers in the form of “Using foo” over “How to Foo.”
 
-For example, at the top section of each MD file,
+> For example, at the top section of each MD file,
 
-**Title :** Getting started with Chart widget for Syncfusion Essential JS 
+> **Title :** Getting started with Chart widget for Syncfusion Essential JS 
 
-**Description :** File should describe or help the user how to create a chart, add series, enable tooltip and other functionalities.
+> **Description :** File should describe or help the user how to create a chart, add series, enable tooltip and other functionalities.
 
 
 ## Markdown Syntax Guideline
@@ -180,16 +180,16 @@ Should start with `<table>` tag. Tag should be left indented and should have emp
 * Also, remember that "Less is more" when it comes to technical documentation.
 * Imagine that  every word takes up unnecessary space so constantly look for words that can be removed. Please note that this is different from not writing anything at all. We still need to convey the maximum possible information using the minimum possible words. 
 * Do not repeat content from other sections of documentation. Each section should serve a purpose and don’t let it overlap.
-  * For example, don’t talk about all the possible parameters that a method can take, just point to the class reference.
+    * For example, don’t talk about all the possible parameters that a method can take, just point to the class reference.
 * Avoid any form of marketing content.
 * Do not explain code.
-  * For example, here we are instantiating the chart using the overload that takes a string and a number, then we..
+    * For example, here we are instantiating the chart using the overload that takes a string and a number, then we..
 * Code samples should be accompanied by text that provides additional insights. 
-  * For example, DateTime axis has been used here but the chart also has built-in support for handling several other data types (link to other sections of user guide or API reference)
+    * For example, DateTime axis has been used here but the chart also has built-in support for handling several other data types (link to other sections of user guide or API reference)
 * Write content from an user perspective and not from the developer or product perspective.
 * Constantly check the flow of the document as you write it. Users shouldn’t feel lost.
 * Write documentation keeping the target audience in mind. In our case, we need to fix a specific level of technical user. 
-  * For example, we have to assume that the user would know how to create a project in Visual Studio and add reference to the required assemblies
+    * For example, we have to assume that the user would know how to create a project in Visual Studio and add reference to the required assemblies
 
 
 ### Referencing
