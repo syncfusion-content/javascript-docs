@@ -15,7 +15,7 @@ Here you can learn how to customize **ListBox** in Contact Selection tool. This 
 
 The following screenshot demonstrates the functionality of **ListBox** with **Multi-Selection** and **Drag and Drop** features.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img6.png" %}
+{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img1.png" %}
 
 In the above screenshot, you can select a list item from the first **ListBox** widget. After you select the item, you can move the selected item to the second **ListBox** widget. 
 

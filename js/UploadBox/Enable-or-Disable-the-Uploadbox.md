@@ -41,5 +41,5 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Enable-or-Disable_images/Enable-or-Disable-the-Uploadbox_img1.png" %}
+{% include image.html url="/js/UploadBox/Enable-or-Disable-the-Uploadbox_images/Enable-or-Disable-the-Uploadbox_img1.png" %}
 

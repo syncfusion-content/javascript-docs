@@ -7,11 +7,11 @@ control: TreeView
 documentation: ug
 ---
 
-# Treeview with context menu support
+### Treeview with context menu support
 
 **TreeView** control is availed with the context menu options that open on right-click, over the node. Other than the default menu items available, you can add the new node dynamically in **TreeView** and also delete the item, enable and disable the item in **TreeView**. It is achieved by adding the **Context Menu** option to the **TreeView**.
 
-## Menu Item
+#### Menu Item
 
 By default, the context menu options are provided with four items namely: **Add New Item, Delete Item, Enable Item** and **Disable Item**. When you want to customize and use your own custom menu items, then you can customize the **TreeView** with the desired collections. 
 
@@ -139,7 +139,7 @@ Define the events in the script as follows.
 
 
 
-{% include image.html url="/js/TreeView/How-To/Treeview-with-context-menu_images/Treeview-with-context-menu_img1.png"%}
+{% include image.html url="/js/TreeView/How-To/Treeview-with-context-menu_images/Treeview-with-context-menu-support_img1.png"%}
 
 
 

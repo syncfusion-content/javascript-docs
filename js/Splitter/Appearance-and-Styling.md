@@ -172,13 +172,13 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 The output for **Splitter** after adding the properties.
 
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" %}
+{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" Caption="Splitter at initial"%}
 
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" %}
+{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img5.png" Caption="Splitter after collapsing"%}
 
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" %}
+{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" Caption="Splitter with minSize"%}
 
-{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" %}
+{% include image.html url="/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" Caption="Splitter with maxSize"%}
 
 ## Theme
 

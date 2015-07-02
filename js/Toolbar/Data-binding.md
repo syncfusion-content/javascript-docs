@@ -83,9 +83,9 @@ And also you can add image, image styles, sprite css class, query and html attri
 
 {% highlight html %}
 
-<div class="cols-sample-area">
-    <div id="toolbarcontent"></div>
-</div>
+    <div class="cols-sample-area">
+        <div id="toolbarcontent"></div>
+    </div>
     
 {% endhighlight %}
 

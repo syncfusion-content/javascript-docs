@@ -160,7 +160,7 @@ Initialize the script for **Uploadbox.**
 
 
     $(function () {
-        //declaration
+        declaration
         $("#UploadDefault").ejUploadbox({
             saveUrl: "saveFiles.ashx",
             removeUrl: "removeFiles.ashx"

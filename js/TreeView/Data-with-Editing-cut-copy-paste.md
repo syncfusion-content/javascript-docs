@@ -80,5 +80,5 @@ In the HTML page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
 
 The following screenshot displays the appearance of Editing-cut-copy-paste the node in TreeView component.
 
-{% include image.html url="/js/TreeView/Data-with-Editing-cut-copy-paste_images/Hierarchical-data-with-Editing-cut-paste_img1.png"%}
+{% include image.html url="/js/TreeView/Hierarchical-data-with-Editing-cut-paste_images/Hierarchical-data-with-Editing-cut-paste_img1.png"%}
 
