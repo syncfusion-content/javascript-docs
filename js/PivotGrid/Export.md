@@ -9,52 +9,65 @@ documentation: ug
 
 # Export
 
-
-
-The **PivotGrid** is exported to a worksheet of an Excel Workbook. The Excel Workbook is saved from the browser to the local disk drive.
-
-The following code example illustrates how to save the document to Excel via service.
-
 > **Note:** This feature is applicable only for OLAP datasource.
 
-{% highlight c# %}
-
-public void Export(System.IO.Stream stream) 
-{
-System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
-string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
-OlapDataManager DataManager = new OlapDataManager(connectionString);
-string fileName = "Sample";
-htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
-}
-{% endhighlight %}
+The PivotGrid control can be exported to the following formats:
+* Excel (Cell Mode)
+* Word
+* PDF
+* CSV
 
 {% highlight html %}
 
-<button id="Button1">Export Grid</button>
-<div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"> </div>
+<div>
+    <button id="ExportBtn">Export</button>
+</div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-$(function() {
-    $("#PivotGrid1").ejPivotGrid({
-        url: "../wcf/PivotGridService.svc"
-    });
-    $("#Button1").ejButton({
-        size: "normal",
-        roundedCorner: true,
-        click: "btnClick"
-    });
+$(function () {
+     $("#PivotGrid").ejPivotGrid({ 
+           url: "../wcf/OLAPService.svc"
+     });
+     $("#ExportBtn").ejButton({
+           roundedCorner: true,
+           size: "small",
+           click: "exportBtnClick"
+     });
 });
-
-function btnClick(e) {
-    pivotGridObj = $('#PivotGrid').data("ejPivotGrid");
-    pivotGridObj.exportPivotGrid("excel");
+function exportBtnClick(args) {
+    var gridObj = $('#PivotGrid').data("ejPivotGrid");
+    gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
 }
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Export_images/Export_img1.png" %}
+Export type which is to be mentioned in the parameter takes any one of the enumerated values such as Excel, Word, PDF and CSV.
+
+The following service method needs to be added in-order to perform exporting in PivotGrid.
+
+{% highlight c# %}
+
+public void Export(System.IO.Stream stream)
+{
+    System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+    string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    string fileName = "PivotGrid";
+    htmlHelper.ExportPivotGrid(DataManager, args, fileName,
+    System.Web.HttpContext.Current.Response);
+}
+
+{% endhighlight %}
+
+{% include image.html url="/js/PivotGrid/Export_images/Export_img1.png" Caption="Exported PivotGrid in Excel"%}
+
+{% include image.html url="/js/PivotGrid/Export_images/Export_img2.png" Caption="Exported PivotGrid in Word"%}
+
+{% include image.html url="/js/PivotGrid/Export_images/Export_img3.png" Caption="Exported PivotGrid in PDF"%}
+
+{% include image.html url="/js/PivotGrid/Export_images/Export_img4.png" Caption="Exported PivotGrid in CSV"%}
+
 
