@@ -41,7 +41,7 @@ Configure the handler to save the file. Create a folder (for example, uploadfile
 
 {% highlight c# %}
 
-#saveFiles.ashx
+saveFiles.ashx
  
 
     public class saveFiles : IHttpHandler {

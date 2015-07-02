@@ -15,7 +15,7 @@ You can highlight the **week end** by using “**highlightWeekend”** property 
 
 You can find the sprite images in the following location when you have installed essential studio otherwise you can use your own image.
 
-**[Installed Drive]**:\Users\[username]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\samples\web\images\autocomplete\flags.png**
+**[Installed Drive]**:\Users\[username]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\samples\web\images\autocomplete\flags.png
 
 The following steps explain you how to get the highlighted week end and special dates.
 
