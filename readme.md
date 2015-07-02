@@ -57,11 +57,11 @@ This section contains guidelines on naming files, sections, documents and other 
 * Make sure image is not resized or blurred. 
 * Caption is not necessary to provide for all images except for the case where we will have displayed more than one image.
 
-* Adding Image :
+* Adding Image : General markdown [syntax](http://kramdown.gettalong.org/syntax.html#images) will work.
 
-> **Syntax**: \![Alt text](imagepath)
+> **Syntax**: \!\[Alt text](imagepath)
 
-> **Example**: \![Alt text](/path/to/img.jpg)
+> **Example**: \!\[Alt text](/path/to/img.jpg)
 
 * Adding image with caption:
 
