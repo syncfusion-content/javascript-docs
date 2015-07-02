@@ -69,5 +69,5 @@ Context menu can be customized by adding a new custom menu item to it. In TreeGr
 
 The following screenshot displays the customization of Context menu in TreeGrid control.
 
-{% include image.html url="/js/TreeGrid/Context-Menu_images/Context-Menu_img2.png"%}
+{% include image.html url="/js/TreeGrid/Context-Menu_images/Context-Menu_img2.jpg"%}
 
