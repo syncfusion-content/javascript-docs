@@ -31,7 +31,6 @@ In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widge
 
 {% highlight js %}
 
-    var target;
     var empList = [{
        text: "Erik Linden",
        eimg: "3",
@@ -59,8 +58,8 @@ In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widge
     }];
     $(function() {
        $('#selectexperts').ejListBox({
-          dataSource: empList,
-          height: "245",
+          dataSource: empList,          
+          width: "350",
           enableTooltip: true,
           template: '<div title="${tooltip}"><img class="eimg" src="images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/>' +
              '<div class="ename"> ${text} </div> <div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>'

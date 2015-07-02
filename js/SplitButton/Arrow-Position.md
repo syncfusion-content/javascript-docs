@@ -109,8 +109,8 @@ In the **HTML** page, add the following button elements to configure **Split 
 {% highlight css %}
 <style>
     .e-split {
-      float: left;
-      padding-left: 65px;
+        float: left;
+        padding-left: 65px;
     }
 </style>
 

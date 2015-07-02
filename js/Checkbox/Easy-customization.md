@@ -34,12 +34,12 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
   {% highlight js %}
 
   
-        $(function () {
-            //disable the checked status
-            $("#checkbox_nonchecked").ejCheckBox({ checked: false });
-            //enables the checked status
-            $("#checkbox_checked").ejCheckBox({ checked: true });
-        });
+    $(function () {
+        //Disables the checked status
+        $("#checkbox_nonchecked").ejCheckBox({ checked: false });
+        //Enables the checked status
+        $("#checkbox_checked").ejCheckBox({ checked: true });
+    });
 
   {% endhighlight %}
 
@@ -77,12 +77,12 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 
   {% highlight js %}
 
-        $(function () {
-            //disables the Tri- state for checkbox
-            $("#checkbox_nonTriState").ejCheckBox({ enableTriState: false });
-            //enables the Tri- state for checkbox
-            $("#checkbox_triState").ejCheckBox({ enableTriState: true, checkState:"indeterminate" });
-        });
+    $(function () {
+        //Disables the Tri- state for checkbox
+        $("#checkbox_nonTriState").ejCheckBox({ enableTriState: false });
+        //Enables the Tri- state for checkbox
+        $("#checkbox_triState").ejCheckBox({ enableTriState: true, checkState:"indeterminate" });
+    });
 
   {% endhighlight %}
 
@@ -161,12 +161,12 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% highlight js %}
 
 
-       $(function () {
-            //checkState property used to mention the state of checkbox
-            $("#check").ejCheckBox({ enableTriState: true, checkState: "check" });
-            $("#uncheck").ejCheckBox({ enableTriState: true, checkState: "uncheck" });
-            $("#indeterminate").ejCheckBox({ enableTriState: true, checkState: "indeterminate" });
-        });
+    $(function () {
+        //checkState property used to mention the state of checkbox
+        $("#check").ejCheckBox({ enableTriState: true, checkState: "check" });
+        $("#uncheck").ejCheckBox({ enableTriState: true, checkState: "uncheck" });
+        $("#indeterminate").ejCheckBox({ enableTriState: true, checkState: "indeterminate" });
+    });
 
 
   {% endhighlight %}
@@ -220,11 +220,11 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 
   {% highlight js %}
 
-        $(function () {
-            //size property is used to specify the checkbox size
-            $("#checkbox_small").ejCheckBox({ size: "small" });
-            $("#checkbox_medium").ejCheckBox({ size: "medium" });
-        });
+    $(function () {
+        //size property is used to specify the checkbox size
+        $("#checkbox_small").ejCheckBox({ size: "small" });
+        $("#checkbox_medium").ejCheckBox({ size: "medium" });
+    });
 
 
   {% endhighlight %}
@@ -260,10 +260,10 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% highlight js %}
 
  
-        $(function () {
-            //size property is used to set text for checkbox
-            $("#checkbox_text").ejCheckBox({ text: "Music" });
-        });
+    $(function () {
+        //size property is used to set text for checkbox
+        $("#checkbox_text").ejCheckBox({ text: "Music" });
+    });
 
 
   {% endhighlight %}
@@ -303,10 +303,10 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
   {% highlight js %}
 
 
-        $(function () {
-            $("#checkbox_normalCorner").ejCheckBox({ showRoundedCorner: false });
-            $("#checkbox_roundedCorner").ejCheckBox({ showRoundedCorner: true });
-        });
+    $(function () {
+        $("#checkbox_normalCorner").ejCheckBox({ showRoundedCorner: false });
+        $("#checkbox_roundedCorner").ejCheckBox({ showRoundedCorner: true });
+    });
 
 
   {% endhighlight %}

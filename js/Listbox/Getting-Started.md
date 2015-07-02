@@ -244,7 +244,7 @@ You can drag an item from a **ListBox** and drop it in a droppable element.To dr
         $("#select").ejListBox({
             allowDragAndDrop: true
         });
-        $("#selecteditems").ejListBox({ **allowDragAndDrop: true** });
+        $("#selecteditems").ejListBox({ allowDragAndDrop: true });
         // simple Button creation 
         // to add list item to selection ListBox
         $("#Add").ejButton({

@@ -19,7 +19,7 @@ The following screenshot displays the drag and drop support.
 
 ## Enable drag and drop 
 
-You can enable or disable drag and drop by using the **allowDragAndDrop** property. By default the **allowDragAndDrop** property is set as **False** in the **Uploadbox** control. You can enable drag and drop by setting the **allowDragAndDrop** property as **True**. When you want to drag and drop multiple files, you can enable multiple file selection by setting **multipleFilesSelection** as **True** in the** **Uploadbox** **control.
+You can enable or disable drag and drop by using the **allowDragAndDrop** property. By default, the **allowDragAndDrop** property is set as **False** in the **Uploadbox** control. You can enable drag and drop by setting the **allowDragAndDrop** property as **True**. When you want to drag and drop multiple files, you can enable multiple file selection by setting **multipleFilesSelection** as **True** in the **Uploadbox** control.
 
 The following steps explain how to enable the drag and drop in the **Uploadbox** control.
 

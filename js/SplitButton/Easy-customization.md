@@ -414,8 +414,8 @@ Configure the styles.
         width: 500px;
     }
     .e-split {
-      float: left;
-      padding-left: 15px;
+        float: left;
+        padding-left: 15px;
     }
 </style>
 
@@ -654,8 +654,8 @@ Configure the styles.
         width: 420px;
     }
     .e-split {
-      float: left;
-      padding-left: 25px;
+        float: left;
+        padding-left: 25px;
     }
 </style>
 
@@ -844,8 +844,8 @@ Configure the **CSS** styles to apply on buttons.
         color: #534f4f;
     }
     .e-split {
-      float: left;
-      padding-left: 25px;
+        float: left;
+        padding-left: 25px;
     }
 </style>
 

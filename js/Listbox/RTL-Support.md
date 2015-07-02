@@ -61,7 +61,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
           skill: "PHP"
        }];
        $("#listboxSample").ejListBox({
-          width: "240",
+          width: "350",
           dataSource: skillset,
           fields: {
              text: "skill"

@@ -103,14 +103,14 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
     jQuery(function ($) {
         // JSON data declaration
         var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+            { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+            { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+            { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+            { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
         ];
         //Render ListBox by mapping fields with JSON data
         $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
+            width: "350", dataSource: skillset,
             fields: { text: "skill" }
         });
     });
@@ -149,10 +149,11 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
         });
         // Query creation
         var query = ej.Query()
-               .from("Customers").take(6);
+               .from("Customers").take(16);
     
         $('#listboxSample').ejListBox({
             dataSource: dataManger,
+            width: "350",
             fields: { text: "CustomerID" },
             query: query,
         });
@@ -224,7 +225,7 @@ In the HTML page, add a &lt;ul&gt; element to configure ListBox widget.
 
 
     <script type="text/javascript">
-// Initialize the control and bind the data in JavaScript
+        // Initializes the control and binds the data in JavaScript
         var list = [
                     { empid: "cr1", text: "Dodge Avenger" },
                     { empid: "cr2", text: "Chrysler 200" },
@@ -352,6 +353,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
             color: #5c5c5c;
             height: 30px;
             outline: medium none;
+            text-indent: 10px;
         }
 
         #binding {

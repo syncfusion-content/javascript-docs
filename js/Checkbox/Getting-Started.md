@@ -49,7 +49,6 @@ Create an **HTML** file and add the following template to the **HTML** file.
 
 Add input element to render the **Checkbox.**
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img2.png" %}
 
 {% highlight html %}
 
@@ -105,6 +104,10 @@ Add input element to render the **Checkbox.**
             </td>
         </tr>
     </table>
+   <br />
+   <div>
+      <button id="button11">SUBMIT</button>
+   </div>
 </div>
 
 
@@ -142,35 +145,35 @@ Initialize **Checkbox** in script.
 
 {% highlight js %}
 
-
-        $(function () {
-            // declaration
-            // simple checkbox creation
-            $("#check1").ejCheckBox({ checked:true });
-            $("#Checkbox3").ejCheckBox();
-            $("#Checkbox4").ejCheckBox();
-            $("#Checkbox3").ejCheckBox();
-            $("#Checkbox1").ejCheckBox({ size: "medium", checked: true });
-            $("#Checkbox5").ejCheckBox({ size: "medium" });
-            $("#Checkbox6").ejCheckBox({ size: "medium" });
-            $("#Checkbox2").ejCheckBox({ size: "medium", enableTriState: true, checkState:"indeterminate" });
-            $("#Checkbox7").ejCheckBox({ size: "medium", enableTriState: true, checkState:"indeterminate"  });
-            $("#Checkbox8").ejCheckBox({ size: "medium", enableTriState: true });
-            $("#button11").ejButton({
-                size: "normal",
-                width:"60px",
-                showRoundedCorner: true,
-        });
-        $(document).ready(function () {      //Document ready
-            $("button").click(function () {
-                 var checkeditem = [];               
-                 $("input[type=checkbox]").each(function () {
-                     if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
-                        checkeditem.push($(this).val());
-                  });
-                  alert(checkeditem);
-             });
+    
+    // Simple checkbox creation    
+    $(function () {
+        // declaration
+        $("#check1").ejCheckBox({ checked:true });
+        $("#Checkbox3").ejCheckBox();
+        $("#Checkbox4").ejCheckBox();
+        $("#Checkbox3").ejCheckBox();
+        $("#Checkbox1").ejCheckBox({ size: "medium", checked: true });
+        $("#Checkbox5").ejCheckBox({ size: "medium" });
+        $("#Checkbox6").ejCheckBox({ size: "medium" });
+        $("#Checkbox2").ejCheckBox({ size: "medium", enableTriState: true, checkState:"indeterminate" });
+        $("#Checkbox7").ejCheckBox({ size: "medium", enableTriState: true, checkState:"indeterminate"  });
+        $("#Checkbox8").ejCheckBox({ size: "medium", enableTriState: true });
+        $("#button11").ejButton({
+            size: "normal",
+            width:"60px",
+            showRoundedCorner: true,
+    });
+    $(document).ready(function () {      //Document ready
+        $("button").click(function () {
+             var checkeditem = [];               
+             $("input[type=checkbox]").each(function () {
+                 if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
+                    checkeditem.push($(this).val());
+              });
+              alert(checkeditem);
          });
+     });
 
 
 {% endhighlight %}
@@ -251,30 +254,30 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
 
 {% highlight js %}
 
-
-          $(function () {
-               $("#Checkbox1").ejCheckBox();
-               $("#Checkbox2").ejCheckBox();
-               $("#Checkbox3").ejCheckBox();
-               $("#Checkbox4").ejCheckBox();
-               $("#Checkbox5").ejCheckBox();
-               $("#Checkbox6").ejCheckBox();
-               $("#button11").ejButton({
-                   size: "normal",
-                   width:"60px",
-                   showRoundedCorner: true,
-               });
-          });
-          $(document).ready(function () {
-               $("button").click(function () {
-				    var checkeditem = []; 
-                    $("input[type=checkbox]").each(function () {
-                         if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
-                            checkeditem.push($(this).val());
-                     });
-                     alert(checkeditem);
-               });
-           });
+    // Simple checkbox creation  
+    $(function () {
+       $("#Checkbox1").ejCheckBox();
+       $("#Checkbox2").ejCheckBox();
+       $("#Checkbox3").ejCheckBox();
+       $("#Checkbox4").ejCheckBox();
+       $("#Checkbox5").ejCheckBox();
+       $("#Checkbox6").ejCheckBox();
+       $("#button11").ejButton({
+           size: "normal",
+           width:"60px",
+           showRoundedCorner: true,
+       });
+    });
+    $(document).ready(function () {
+       $("button").click(function () {
+    	    var checkeditem = []; 
+            $("input[type=checkbox]").each(function () {
+                 if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
+                    checkeditem.push($(this).val());
+             });
+             alert(checkeditem);
+       });
+    });
 
 
 {% endhighlight %}

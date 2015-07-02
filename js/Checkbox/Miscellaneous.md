@@ -35,7 +35,7 @@ Set prefix id for **Checkbox** control as follows.
 
 {% highlight js %}
 
-
+        
         $(function () {
             $("#check1").ejCheckBox({ idPrefix: "JS" });
         });

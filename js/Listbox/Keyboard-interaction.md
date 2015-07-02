@@ -70,13 +70,13 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
     $(function () {
         var skillset = [
-        { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
-        { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
-        { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
-        { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+            { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+            { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+            { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+            { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
         ];
         $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
+            width: "350", dataSource: skillset,
             fields: { text: "skill" }
         });
         $(document).on("keydown", function (e) {

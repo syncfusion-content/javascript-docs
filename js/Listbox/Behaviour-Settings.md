@@ -50,7 +50,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 {% highlight js %}
 
     $(function () {
-        $('#listboxSample').ejListBox({ targetID: "targetlist" });
+        $('#listboxSample').ejListBox({ targetID: "targetlist", width:"350" });
     });
 
 {% endhighlight %}
@@ -92,7 +92,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
         ];
         //Render ListBox by mapping fields with JSON data
         $("#listboxsample").ejListBox({
-            width: "240", dataSource: skillset,
+            width: "350", dataSource: skillset,
             fields: { text: "skill" }, selectedItemIndex: 2
         });
     });
@@ -133,7 +133,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
         ];
         //Render ListBox by mapping fields with JSON data
         $("#listboxSample").ejListBox({
-            width: "240", dataSource: skillset,
+            width: "350", dataSource: skillset,
             fields: { text: "skill" }, enabled: false
         });
     });

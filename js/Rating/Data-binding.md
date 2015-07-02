@@ -137,15 +137,15 @@ The following example depicts the way to bind data to the **Rating** control by 
       </script>
       <style type="text/css" class="cssStyles">
          #binding {
-         margin-left: 150px;
+            margin-left: 150px;
          }
          .control {
-         margin-top: 10px;
+            margin-top: 10px;
          }
          .input {
-         height: 27px;
-         text-indent: 10px;
-         width: 81%;
+            height: 27px;
+            text-indent: 10px;
+            width: 81%;
          }
       </style>
    </body>

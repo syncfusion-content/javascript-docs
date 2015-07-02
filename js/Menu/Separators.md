@@ -11,14 +11,7 @@ documentation: ug
 
 Menu can also contain separators that are horizontal bars between menu items. You cannot select a separator. Separators are somewhat similar to [borders](http://docs.oracle.com/javase/tutorial/uiswing/components/border.html), except that they are genuine components and, as such, are drawn inside a control, rather than around the edges of the **Menu** control. **enableSeparator** is the property that is used to display the separators in the **Menu** control. It accepts the Boolean type value. Its default value is true. 
 
-Add the following **&lt;script&gt;** in the above code sample.
-
-
-
-
-The following screenshot displays the output for the above code sample.
-
-{% include image.html url="/js/Menu/Separators_images/Separators_img1.png" %}
+ 
 
 
 Add the following **&lt;script&gt;** in the above code sample to display the **Menu** control without separator by setting **enableSeparator** as **false**.
@@ -81,7 +74,7 @@ Add the following **&lt;script&gt;** in the above code sample to display the **M
     jQuery(function ($) {
         $("#menucontrol").ejMenu({
             width: 500,
-            enableSeparator: true
+            enableSeparator: false
         });
     });
 
