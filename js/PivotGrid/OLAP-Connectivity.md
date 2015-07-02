@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OLAP-Connectivity
-description: olap connectivity 
+title: OLAP-Connection-Types
+description: OLAP Connection Types
 platform: js
 control: PivotGrid
 documentation: ug
 ---
 
-# OLAP Connectivity 
+# OLAP Connection Types 
 
 **PivotGrid** control enables you to retrieve multidimensional data either from SSAS or from any XML/A provider and present the **OLAP** information in significant ways.
 

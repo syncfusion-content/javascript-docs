@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging
 
-> **Note:** This feature is applicable only for OLAP datasource.
+
 
 ##Pager
 
@@ -32,13 +32,15 @@ $("#Pager1").ejPivotPager({
 });
 {% endhighlight %}
 
+> **Note:** This feature is applicable only for OLAP datasource.
+
 The page size for categorical and series axes are set in the **OlapReport**. **Pager** is loaded with current page and total pages of **PivotGrid** is automatically displayed as illustrated in the following screenshot. The icons to move pages to next, last, previous and first are added.  Also you can directly navigate to the desired page by entering the appropriate numeric value into the text box.
 
 {% include image.html url="/js/PivotGrid/Paging_images/Paging_img1.png" %}
 
-##Virtual Scrolling
+##Virtual Paging
 
-The large **PivotGrid** data content is viewed page-by-page using `Virtual Scrolling` . The page size for categorical and series axes are set in **OlapReport**. By enabling [Virtual Scrolling](/js/api/ejPivotGrid#enablevirtualscrollingspan-classtype-signature-type-booleanbooleanspan) , the number of rows and columns for the **PivotGrid** are set as entered in the **OlapReport**. By scrolling the horizontal and vertical scrollbars, the categorical and series page numbers are obtained and **PivotGrid** contents are refreshed accordingly.
+The large **PivotGrid** data content is viewed page-by-page using **Virtual Paging** . The page size for categorical and series axes are set in **OlapReport**. By enabling [Virtual Scrolling](/js/api/ejPivotGrid#enablevirtualscrollingspan-classtype-signature-type-booleanbooleanspan) , the number of rows and columns for the **PivotGrid** are set as entered in the **OlapReport**. By scrolling the horizontal and vertical scrollbars, the categorical and series page numbers are obtained and **PivotGrid** contents are refreshed accordingly.
 
 {% highlight js %}
 $("#PivotGrid1").ejPivotGrid({

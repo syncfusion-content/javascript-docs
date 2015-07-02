@@ -9,15 +9,14 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **PivotGrid** in your application with **JavaScript.** First section of the document covers on creating an application with PivotGrid using OLAP datasource and later using Relational datasource briefly.
+This section explains briefly about how to create a **PivotGrid** in your application with **Essential JavaScript.** First section of the document covers on creating an application with PivotGrid using OLAP datasource and later using Relational datasource briefly.
 
 #OLAP
 
 ##Create an application with PivotGrid using OLAP datasource
 
-This section encompasses how to configure the **PivotGrid** component in an application. You can also pass the required data to **PivotGrid** and customize it according to your requirements.
-
-This example illustrates how the **PivotGrid** component tabulates the Internet Sales Amount over a period of fiscal years across different customer geographic locations. 
+This section illustrates how to add and configure the PivotGrid component in an application with AdventureWorks Cycle cube to assess the Internet Sales Amount over a period of fiscal years across different customer geographic locations."
+ 
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img2.png" %}
                                                                                    
@@ -177,7 +176,7 @@ namespace WebApplication2
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in `PivotGrid`.
 
-Initialize the **PivotGrid helper class**. 
+Initialize the PivotGrid helper class. 
 
 {% highlight c# %}
 
@@ -187,7 +186,7 @@ JavaScriptSerializer serializer = new JavaScriptSerializer();
 
 {% endhighlight %}
 
-Add the following relevant **service** methods.
+Add the following relevant service methods.
 
 {% highlight c# %}
 
@@ -288,7 +287,7 @@ private OlapReport CreateOlapReport()
 
 ###Configure Web.Config
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.PivotGridService` where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service     class appears. The following are the properties that meet the appropriate endpoint.  
+* You can expose services through the properties such as binding, contract and address using an endpoint.  
 
    1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is `WebApplication2.IPivotGridService`.
    2. **Binding:** In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
@@ -479,7 +478,7 @@ namespace WebApplication2
 
 You can add the following methods to the service that are invoked for any server-side operations to be performed in PivotGrid.
 
-Initialize the `PivotGrid helper class`. 
+Initialize the PivotGrid helper class. 
 
 {% highlight c# %}
 
@@ -659,7 +658,7 @@ namespace WebApplication2
 
 ###Configure Web.Config 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.PivotGridService` where "PivotGridService" is the service class name and “WebApplication2" is the namespace name where service class appears.The following are the properties that meet the appropriate endpoint.  
+* You can expose services through the properties such as binding, contract and address using an endpoint.
 
    1. **Contract:** This property indicates that the contract of the endpoint is exposing. Here you are referring **IPivotGridService** contract and hence it is `WebApplication2.IPivotGridService`.
    2. **Binding:** In your application, use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.

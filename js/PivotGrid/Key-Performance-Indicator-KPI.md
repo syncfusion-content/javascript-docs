@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Key-Performance-Indicator-KPI
-description: key performance indicator (kpi)
+description: key performance indicator (KPI)
 platform: js
 control: PivotGrid
 documentation: ug
 ---
 
-# Key Performance Indicator (KPI)
+# Key Performance Indicator 
 
 > **Note:** This feature is applicable only for OLAP datasource.
 
-**Key Performance Indicators** are a collection of calculations associated with a measure group that evaluates business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. **KPIs** also have additional metadata that provide information about how grid applications display the results of the **KPI** calculations.
+**Key Performance Indicators(KPI)** are a collection of calculations associated with a measure group that evaluates business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. **KPIs** also have additional metadata that provide information about how grid applications display the results of the calculations.
 
 The different types of available indicators are as follows:
 
@@ -22,7 +22,7 @@ The different types of available indicators are as follows:
 
 {% include image.html url="/js/PivotGrid/Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png" %}
 
-The following code example illustrates how to initialize `KPI` element within the **OLAP Report**:
+The following code example illustrates how to initialize **KPI** element within the **OLAP Report**:
 
 {% highlight c# %}
 

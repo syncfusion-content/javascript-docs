@@ -9,11 +9,13 @@ documentation: ug
 
 # Export
 
-> **Note:** This feature is applicable only for OLAP datasource.
 
-The **PivotGrid** is exported from cell mode to a worksheet of an Excel Workbook. The Excel Workbook is saved from the browser to the local disk drive.
+
+The **PivotGrid** is exported to a worksheet of an Excel Workbook. The Excel Workbook is saved from the browser to the local disk drive.
 
 The following code example illustrates how to save the document to Excel via service.
+
+> **Note:** This feature is applicable only for OLAP datasource.
 
 {% highlight c# %}
 
