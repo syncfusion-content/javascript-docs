@@ -35,9 +35,9 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 
   
     $(function () {
-        //disable the checked status
+        //Disables the checked status
         $("#checkbox_nonchecked").ejCheckBox({ checked: false });
-        //enables the checked status
+        //Enables the checked status
         $("#checkbox_checked").ejCheckBox({ checked: true });
     });
 
@@ -78,9 +78,9 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
   {% highlight js %}
 
     $(function () {
-        //disables the Tri- state for checkbox
+        //Disables the Tri- state for checkbox
         $("#checkbox_nonTriState").ejCheckBox({ enableTriState: false });
-        //enables the Tri- state for checkbox
+        //Enables the Tri- state for checkbox
         $("#checkbox_triState").ejCheckBox({ enableTriState: true, checkState:"indeterminate" });
     });
 
