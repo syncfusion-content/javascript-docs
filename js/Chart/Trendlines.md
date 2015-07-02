@@ -15,7 +15,7 @@ documentation: ug
 
 **EjChart** can automatically generate Trendlines for Cartesian axes type series (line, column, scatter, area, candle, hilo etc...) except bar type series.
 
-The following code snippet illustrates how to enable Trendlines feature in Chart.
+The following code example illustrates how to enable Trendlines feature in Chart.
 
 {% highlight js %}
 
@@ -88,7 +88,7 @@ EjChart supports the following type of Trendlines.
 
 These can be enabled by setting the value for the **Forward Forecasting** and **Backward Forecasting** properties. The value set for **Forward Forecasting** is used to determine the distance of moving towards the future and the value set for **Backward Forecasting** is used to determine the distance of moving backwards.
 
-The following code snippet illustrates how to enable **Forward Forecasting** in Trendlines.
+The following code example illustrates how to enable **Forward Forecasting** in Trendlines.
 
 {% highlight js %}
 
@@ -108,7 +108,7 @@ The following code snippet illustrates how to enable **Forward Forecasting** in 
 
 {% include image.html url="/js/Chart/Trendlines_images/Trendlines_img7.png" Caption="Adding ForwardForecast value to Chart Trendline"%}
 
-The following code snippet illustrates how to enable **Backward Forecasting** in Trendlines.
+The following code example illustrates how to enable **Backward Forecasting** in Trendlines.
 
 {% highlight js %}
 
@@ -132,6 +132,6 @@ The following code snippet illustrates how to enable **Backward Forecasting** in
 
 While setting trendlines visibility as **“visible”** or **“hidden”**, Trendlines legend appears with series legend collection in chart. We can do interaction with Trendlines legend as like series legends (show/hide series on legend click) and we can change the legend name using **“name”** property of Trendlines.
 
-The below screenshot illustrates hide the Trendline series on legend mouse click.
+The screenshot illustrates how to hide the Trendline series on legend mouse click.
 
 {% include image.html url="/js/Chart/Trendlines_images/Trendlines_img9.png" Caption="Hide the Trendline series on legend mouse click"%}
