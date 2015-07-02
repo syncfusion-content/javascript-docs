@@ -29,7 +29,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 {% highlight js %}
 
-        // Initialize the control in JavaScript.
+        // Initializes the control in JavaScript.
         $(function () {
             //Declaration.
             $("#Uploadbox").ejUploadbox({
