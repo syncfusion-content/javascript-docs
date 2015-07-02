@@ -28,9 +28,9 @@ This section contains guidelines on naming files, sections, documents and other 
 ### Cross-reference
 * Link within the page (if you have a title with space, use hyphen (-))
 
->	**Syntax**: \[Link name](#link-id)
+>	**Syntax**: \[Link name](#title-name)
 
->	**Example**: \[Link documents] (#how-to-best-read-this-user-guide)
+>	**Example**: \[How to best read this user guide] (#how-to-best-read-this-user-guide)
 
 * Link to the other page within the same platform documentation (using relative path). Tooltip text is optional.
 
@@ -39,11 +39,17 @@ This section contains guidelines on naming files, sections, documents and other 
 > **Example**: \[Barcode](/js/Barcode/Getting-Started "Barcode Getting Started")
 
 ### Table
-* **Creating Table**: Just use the HTML `table` tags to render the table in the Markdown file
-Should start with `<table>` tag. Tag should be left indented and should have empty space in left side. 
-* Provide `TH` tag for table headers.
+* Use the [kramdown syntax](http://kramdown.gettalong.org/syntax.html#tables) for creating the tables.
+* **Advanced tables**: If you want to create an advanced tables with row span or column span or with code snippets, you can go with the standard html table syntax as described below.
+
+> 1. start with `<table>` tag. Tag should be left indented and should have empty space in left side. 
+
+> 2. Provide `TH` tag for table headers.
+
+> 3. Code snippet can include within `<td> [code snippet] </td>`. Follow the same pattern like code snippet. 
+
 * Do not provide table captions.
-* **Inserting Code snippets**: Code snippet should be included within `<td> [code snippet] </td>`. Follow the same pattern like code snippet. 
+ 
 
 
 ### Image
@@ -70,84 +76,19 @@ Should start with `<table>` tag. Tag should be left indented and should have emp
 * If you are including the image to show an output of a code block, make sure the exact output can see the user also when he executes the same code snippet.
 
 ### Code Blocks
+* Refer [this page](http://haisum.github.io/2014/11/07/jekyll-pygments-supported-highlighters/) for Code block syntax and supported languages.
 * Align the code snippets using following free formatters:
 	[JS](http://jsbeautifier.org/) ,
 	[HTML](http://www.freeformatter.com/html-formatter.html)
 * Remove extra lines added within the code block.
 * Make sure the given code block runs without any issues.
-* Adding Code Block:
-
-> **Syntax**:
-
->\{% highlight \[languagename] %}
-
->Code Block 
-
->\{% endhighlight %}
-
-> **Example**:
-
-> {% highlight js %}
-
->    $(function() {
-
->  // declaration
-
->  $("#datepicker").ejDatePicker();
-
->    });
-
-> {% endhighlight %}
-
-* Supported Languages:
-
-|Platform|Syntax|
-|--------|------|
-|JavaScript|js|
-|CSharp|c#|
-|XML|xml|
-|Visual Basic|vbnet|
-|C++|cpp|
-|CSS|css|
-|SQL|sql|
-
 * JSRender template syntax can be rendered by the following syntax :
 
 > \{{"{{"}} code block here {{}}}}
 
 
 ### Bullet style
-* Use * for unordered list and provide numbers for Ordered list.
-* Provide 2 spaces before the start of line to create nested list. (In bitbucket, it wont show as nested list as it requires 4 spaces. Providing 4 spaces is also not a problem.)
-
-> **Example**:
-
-> **Unordered list**
-
-> \* Unordered list can use asterisks
-
-> \* Unordered list can use asterisks
-
-> **Ordered list**
-
-> 1. First 
-
-> 2. Second
-
-> **Combined list**
-
->  1. First 
-
->      \* Unordered sub-list
-
->      \* Unordered sub-list 
-
->  2. Second
-
->      1. Ordered sub-list
-
->      2. Ordered sub-list
-
+* Refer the syntax provided in the [Kramdown site](http://kramdown.gettalong.org/syntax.html#lists).
 * Do not provide a line gap between the bullet points.
 
 ### Notes style
