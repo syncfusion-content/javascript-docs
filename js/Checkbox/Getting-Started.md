@@ -146,7 +146,7 @@ Initialize **Checkbox** in script.
 {% highlight js %}
 
     
-    // simple checkbox creation    
+    // Simple checkbox creation    
     $(function () {
         // declaration
         $("#check1").ejCheckBox({ checked:true });
@@ -254,7 +254,7 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
 
 {% highlight js %}
 
-    // simple checkbox creation  
+    // Simple checkbox creation  
     $(function () {
        $("#Checkbox1").ejCheckBox();
        $("#Checkbox2").ejCheckBox();

@@ -46,7 +46,7 @@ In the **HTML** page, add the following input elements to configure **RadioButto
 {% highlight js %}
 
 
-    // Initialize the control in JavaScript
+    // Initializes the control in JavaScript
     $(function () {
         // Here we render checked and unchecked type of radio buttons in same group
         // set checked state of radio button as follows
@@ -114,7 +114,7 @@ In the **HTML** page, add the following input elements to configure the **RadioB
 {% highlight js %}
 
 
-    // Initialize the control in JavaScript
+    // Initializes the control in JavaScript
     $(function () {
         // radio button with text property
         $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male" });
@@ -215,7 +215,7 @@ In the HTML page, add the following input elements to configure RadioButton widg
 
 {% highlight js %}
 
-    // Initialize the control in JavaScript
+    // Initializes the control in JavaScript
     $(function () {
         // small size of radio buttons in same group          
         $("#Radio_Male").ejRadioButton({ name: "Gender", size: "small", checked: true });
@@ -281,7 +281,7 @@ In the HTML page, add the following button elements to configure RadioButton wid
 
 {% highlight js %}
 
-    // Initialize the control in JavaScript
+    // Initializes the control in JavaScript
     $(function () {
         //set radio button with right to left format
         $("#RadBtn_male").ejRadioButton({ name: "Gender", checked: true, text: "Male", enableRTL: true });

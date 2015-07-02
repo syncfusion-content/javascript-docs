@@ -35,7 +35,7 @@ Create an HTML file and add the following template to the HTML file to create Ra
     <!--Add custom scripts here -->
 </head>
     <body>
-        <!-- add RadioButton element here --> 
+        <!-- Add RadioButton element here --> 
     </body>
 </html>
 
@@ -90,7 +90,7 @@ Add input element to render a **RadioButton**.
 
 
 
-Initialize RadioButton in script.
+Initializes the RadioButton in script.
 
 
 

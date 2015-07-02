@@ -225,7 +225,7 @@ In the HTML page, add a &lt;ul&gt; element to configure ListBox widget.
 
 
     <script type="text/javascript">
-        // Initialize the control and bind the data in JavaScript
+        // Initializes the control and binds the data in JavaScript
         var list = [
                     { empid: "cr1", text: "Dodge Avenger" },
                     { empid: "cr2", text: "Chrysler 200" },
