@@ -23,8 +23,6 @@ Once the Generate button is clicked, the combining process of selected scripts i
 {% include image.html url="/js/Include-only-the-needed-Widgets_images/Include-only-the-needed-Widgets_img3.png" %}
 
 
->   **Note**: It is not necessary to sit idle for a long time, you can simply close the above information and proceed with your work, as an e-mail alert with the Custom script downloadable link will be sent to you automatically.
-
 
 ## Settings Customization
 
