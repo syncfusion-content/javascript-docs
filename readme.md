@@ -136,17 +136,17 @@ Should start with `<table>` tag. Tag should be left indented and should have emp
 
 > **Combined list**
 
-> 1. First 
+>  1. First 
 
->    * Unordered sub-list
+>      * Unordered sub-list
 
->    * Unordered sub-list 
+>      * Unordered sub-list 
 
-> 2. Second
+>  2. Second
 
->    1. Ordered sub-list
+>      1. Ordered sub-list
 
->    2. Ordered sub-list
+>      2. Ordered sub-list
 
 * Do not provide a line gap between the bullet points.
 
