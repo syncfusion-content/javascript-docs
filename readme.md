@@ -27,37 +27,120 @@ For example, at the top section of each MD file,
 
 ### Cross-reference
 * Link within the page (if you have a title with space, use hyphen (-))
+
 >	**Syntax**: \[Link name](#link-id)
 
 >	**Example**: \[Link documents] (#how-to-best-read-this-user-guide)
 
-* Todo -> How to link to the other page in the documentation?
+* Link to the other page within the same platform documentation (using relative path). Tooltip text is optional.
+
+> **Syntax**: \[Link name](relative path "Tooltip text")
+
+> **Example**: \[Barcode](/js/Barcode/Getting-Started "Barcode Getting Started")
 
 ### Table
-* Todo -> How to create a table and whatelse need to be instructed the content contributor
-* Todo -> Can we give code example within the table? If yes, how?
+* **Creating Table**: Just use the HTML `table` tags to render the table in the Markdown file
+Should start with `<table>` tag. Tag should be left indented and should have empty space in left side. 
+* Provide `TH` tag for table headers.
 * Do not provide table captions.
-* Provide TH tag for table headers.
+* **Inserting Code snippets**: Code snippet should be included within `<td> [code snippet] </td>`. Follow the same pattern like code snippet. 
+
 
 ### Image
-* Image should not be resized or blurred.
-* Todo -> How to include the image?
-* Caption is not necessary to be provided for all images except for the case when it is required.
-* Todo -> How to include the caption?
-* Todo -> What are the minimum & maximum sizes?
-* If you are including the image to show an output of a code block, ensure to put the exact output that user can also see when he executes the same code example.
+
+* Make sure image is not resized or blurred. 
+* Caption is not necessary to provide for all images except for the case where we will have displayed more than one image.
+
+* Adding Image :
+
+> **Syntax**: \{% include image.html url="image path"%}
+
+> **Example**: \{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
+
+* Adding image with caption:
+
+> **Syntax**: \{% include image.html url="image path" caption="caption text"%}
+
+> **Example**: \{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" caption="caption text"%}
+
+* Maximum width of the image should be 750 PX
+* Maximum height of the image should be 550 PX
+* Image format should be either .jpeg or .png format 
+* Size of the image should not exceed  20 to 40 KB  
+* If you are including the image to show an output of a code block, make sure the exact output can see the user also when he executes the same code snippet.
 
 ### Code Blocks
-* Align the code examples using following free formatters:
+* Align the code snippets using following free formatters:
 	[JS](http://jsbeautifier.org/) ,
 	[HTML](http://www.freeformatter.com/html-formatter.html)
 * Remove extra lines added within the code block.
-* Todo -> How to include the code block and what needs to be followed?
-* Todo -> How to use JSRender template syntax in the code block?
-* Ensure that the given code block runs without any issues.
+* Make sure the given code block runs without any issues.
+* Adding Code Block:
+
+> **Syntax**:
+
+>\{% highlight \[languagename] %}
+
+>Code Block 
+
+>\{% endhighlight %}
+
+> **Example**:
+
+> {% highlight js %}
+
+>    $(function() {
+
+>       // declaration
+
+>       $("#datepicker").ejDatePicker();
+
+>    });
+
+> {% endhighlight %}
+
+* Supported Languages:
+
+|Platform|Syntax|
+|--------|------|
+|JavaScript|js|
+|CSharp|c#|
+|XML|xml|
+|Visual Basic|vbnet|
+|C++|cpp|
+|CSS|css|
+|SQL|sql|
+
+* JSRender template syntax can be rendered by the following syntax :
+
+> \{{"{{"}} code block here {{}}}}
+
 
 ### Bullet style
-* Todo -> How to provide numbering bullet style?
+* Use * for unordered list and provide numbers for Ordered list.
+* Provide 2 spaces before the start of line to create nested list. (In bitbucket, it wont show as nested list as it requires 4 spaces. Providing 4 spaces is also not a problem.)
+
+> **Example**:
+
+> **Unordered list**
+
+> \* Unordered list can use asterisks
+
+> \* Unordered list can use asterisks
+
+> **Ordered list**
+
+> 1. First 
+> 2. Second
+
+> **Combined list**
+> 1. First 
+>	* Unordered sub-list
+>	* Unordered sub-list 
+> 2. Second
+>	1. Ordered sub-list
+>	2. Ordered sub-list
+
 * Do not provide a line gap between the bullet points.
 
 ### Notes style
