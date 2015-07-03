@@ -70,10 +70,10 @@ Create an HTML file using the following code example for creating a Code39 barco
    <head>
       <title>Getting Started Essential JS</title>
       <!-- Style sheet for default theme (flat azure)-->
-      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.widgets.all.min.css" rel="stylesheet" />
+      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.widgets.all.min.css" rel="stylesheet" />
       <!--scripts-->
       <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widgets.all.min.js"></script>
       <!--Add custom scripts here -->
    </head>
    <body>
