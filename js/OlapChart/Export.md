@@ -47,9 +47,9 @@ function exportBtnClick(args) {
 
 {% endhighlight %}
 
-Export type which is to be mentioned in the parameter takes any one of the enumerated values – Excel, Word, PDF, CSV, PNG, EMF, GIF, JPG and BMP.
+Export type that is mentioned in the parameter takes any one of the enumerated values – Excel, Word, PDF, CSV, PNG, EMF, GIF, JPG and BMP.
 
-The following service method needs to be added in-order to perform exporting in OlapChart.
+The following service method is added in-order to perform exporting in the OlapChart.
 
 {% highlight c# %}
 
