@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with Syncfusion Essential JS Barcode widget
+description: How to create one dimensional, two dimensional barcode and customizing the appearance of it. 
 platform: js
 control: Barcode
 documentation: ug
@@ -11,11 +11,9 @@ documentation: ug
 
 This section explains you briefly on how to create a barcode in your application with JavaScript.
 
-## Create your first Barcode in JavaScript
+You can easily configure the barcode to any DOM element such as `div` or `span`. It takes `text` and `symbol` as input and renders the encoded text as barcode.
 
-You can easily configure the barcode to any DOM element such as div or span. It takes text and symbol as input and renders the encoded text as barcode.
-
-###Add a QR Code to JavaScript application
+## Adding a QR Code to JavaScript application
 
 Create an HTML file using the following code example for `ejBarcode` creation.
 
@@ -26,10 +24,10 @@ Create an HTML file using the following code example for `ejBarcode` creation.
    <head>
       <title>Getting Started Essential JS</title>
       <!-- Style sheet for default theme (flat azure)-->
-      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.widgets.all.min.css" rel="stylesheet" />
+      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.widgets.all.min.css" rel="stylesheet" />
       <!--scripts-->
       <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widgets.all.min.js"></script>
       <!--Add custom scripts here -->
    </head>
    <body>
@@ -38,13 +36,13 @@ Create an HTML file using the following code example for `ejBarcode` creation.
 </html>
 {% endhighlight %}
 
-Add element for barcode rendering.
+Add `div` container for barcode rendering.
 
 {% highlight html %}
 <div id="barcode"></div>
 {% endhighlight %}
 
-Add the following script in the HTML file to initialize `ejBarcode` and to render the QR Code.
+Set the `symbologyType` and provide input URL to the `text` property to render the QR Code.
 
 {% highlight js %}
 <script type="text/javascript">
@@ -59,10 +57,9 @@ Add the following script in the HTML file to initialize `ejBarcode` and to rende
 </script>
 {% endhighlight %}
 
-The above code gives the output displayed in following screenshot.
 {% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
-###Add a Code39 Barcode to JavaScript application
+## Adding a Code39 Barcode to JavaScript application
 
 Create an HTML file using the following code example for creating a Code39 barcode.
 
@@ -85,7 +82,7 @@ Create an HTML file using the following code example for creating a Code39 barco
 </html>
 {% endhighlight %}
 
-Add element for barcode rendering.
+Add `div` container for barcode rendering.
 
 {% highlight html %}
 <div id="barcode"></div>
@@ -104,14 +101,14 @@ $("#barcode").ejBarcode({
 });
 {% endhighlight %}
 
-The above code gives the output displayed in following screenshot.
+
 {% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
-###Customizing the Barcode appearance
+## Customizing the Barcode appearance
 
-##Customizing the Barcode color
+### Customizing the Barcode color
 
-A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases the barcode can also be customized to suit the needs. You can achieve this by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) property.
+You can customize the barcode color by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) property.
 
 >   **Note:** This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
 
@@ -131,7 +128,7 @@ Execute the above code to render the following output.
 
 {% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img2.png" Caption=""%}
 
-##Customizing the Barcode height
+### Customizing the Barcode height
 The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan).
 
 {% highlight js %}
