@@ -9,7 +9,7 @@ documentation: ug
 
 #Conditional Formatting
 
-Conditional formatting in the PivotGrid control allows the user to define conditions on meeting which, the cells could be formatted with font, color, and border settings. Conditional formatting dialog provides options at the UI-level to customize the appearance of PivotGrid when conditions are satisfied. 
+Conditional formatting in the PivotGrid control allows you to define conditions on meeting that the cells are formatted with font, color and border settings. Conditional formatting dialog provides options at the UI-level to customize the appearance of the PivotGrid when conditions are satisfied. 
 
 {% include image.html url="/js/PivotGrid/Conditional-Formatting_images/Conditional-Formatting_img1.png" %}
 
