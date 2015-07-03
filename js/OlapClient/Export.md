@@ -13,7 +13,7 @@ Content in the OLAP Client control can be exported to Excel, Word and PDF docume
 
 {% include image.html url="/js/OlapClient/Export_images/Export_img1.png" %}
 
-Exporting feature also comes with a mode option that would allow users to export either OlapChart or PivotGrid or both. Below code sample illustrates the same. 
+Exporting feature comes with a mode option that allows you to export either OlapChart or PivotGrid or both. The following code example illustrates the same. 
 
 {% highlight js %}
 
@@ -25,7 +25,7 @@ $("#OlapClient").ejOlapClient({
 
 {% endhighlight %}
 
-The property `clientExportMode` takes any one of below value:
+The property `clientExportMode` takes any one of the following value:
 1. ChartAndGrid – Exports both OlapChart and PivotGrid controls. This is the default mode.
 2. ChartOnly – Exports OlapChart control alone.
 3. GridOnly – Exports PivotGrid control alone.
