@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AngularJS
-description: angularjs
+title: Using Essential JS in AngularJS applications
+description: How to use Essential JS widgets in AngularJS
 platform: js
 control: Introduction
 documentation: ug
@@ -9,74 +9,18 @@ documentation: ug
 
 # AngularJS
 
-**Essential JavaScript** has a complete support for [AngularJS](https://docs.angularjs.org/tutorial/step_02) by integrating a required angular JS library file. It lets you use HTML as your template language and lets you extend the HTML's syntax to express the application's components clearly. This support mainly covers the following topics, 
+Essential JS includes angular directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
-* Module
-* Directives
-* Controller
-* Data Binding
+{% highlight js %}
 
-## Required JavaScript libraries
-
-The following two JavaScript libraries are necessary to create AngularJS applications,
-
-* angular.min.js
-* ej.widget.angular.min.js
-
-You can find the common **angular.min.js** from the following installed location of your machine,
-
-<table>
-<tr>
-<td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external
-</td>
-</tr>
-<tr>
-<td> 
-<b>For example</b>, If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
-<br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external
-</td>
-</tr>
-</table>
-
-
-The **ej.widget.angular.min.js** file can be copied from the below specified location,
-
-<table>
-<tr>
-<td>
-<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common 
-</td>
-</tr>
-<tr>
-<td>
-<b>For example</b>, If you have installed the Essential Studio package within <b>C:\Program Files (x86)</b>, then navigate to the below location,
-<br/>
-<b>C:\Program Files (x86)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common
-</td>
-</tr>
-</table>
-
-
-## Directives
-
-In general, AngularJS directives are extended HTML attributes with the prefix **ng-**. The **ng-app** directive is a common directive that normally initializes the AngularJS applications. To do so, we need to define it in the &lt;html&gt; tag as depicted below,
-
-{% highlight html %}
-
-
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
-  <head>
-    <title>Essential Studio for JavaScript - Angular</title>
-  </head>
-  …
-  …
-</html>
+angular.module('DateCtrl', ['ejangular'])
+     .controller('DatePickerCtrl', function ($scope) {
+         $scope.dateValue = "2/3/2013";
+});
 
 {% endhighlight %}
 
-All the Syncfusion widget’s **control directives** are prefixed with **ej-** to avoid conflict with other library directives and its properties are defined using **e-** prefix followed by the property name. The code example for defining controls in **AngularJS** is as follows,
+All the Syncfusion widget’s control directives are prefixed with `ej-` to avoid conflict with other library directives and its properties are defined using `e-` prefix followed by the property name. The code example for defining controls in AngularJS is as follows,
 
 {% highlight html %}
 
@@ -92,76 +36,27 @@ All the Syncfusion widget’s **control directives** are prefixed with **ej-** t
 
 {% endhighlight %}
 
-In the above code snippet, **ej-datepicker** denotes the control directive for the Syncfusion’s datepicker widget and all its properties are prefixed with the letter **e-** (For example, **e-value**).
+In the above code snippet, `ej-datepicker` denotes the control directive for the Syncfusion’s datepicker widget and all its properties are prefixed with the letter `e-` (For example, `e-value`).
 
-## Controller
-
-AngularJS applications are controlled by the Controllers, which maintains the entire data of the application. Usually, it is defined by the keyword **ng-controller** within the &lt;body&gt; tag as shown below,
-
-{% highlight html %}
-
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
-  <head>
-    <title>Essential Studio for JavaScript : DatePicker - Angular</title>
-  </head>
-  <body ng-controller="DatePickerCtrl">
-    <input id="datepick" ej-datepicker  e-value="dateValue" e-enableStrictMode="true" />
-  </body>
-</html>
-
-{% endhighlight %}
-
-## Module
-
-A **Module** is a container for the various parts of an application that we create and it mainly defines an application. All the controllers within an application should belong to this module.
-
-To use our Syncfusion widgets in AngularJS applications, all the EJ directives are encapsulated into a single module called **ejangular**. Therefore, in order to make use of Syncfusion widget’s angular features, you need to set your application’s module name as **ejangular** as depicted in the below sample code, 
-
-{% highlight js %}
-
-angular.module('DateCtrl', ['ejangular'])
-     .controller('DatePickerCtrl', function ($scope) {
-         $scope.dateValue = "2/3/2013";
-});
-
-{% endhighlight %}
 
 ## Data binding
 
-Data-binding can be defined as an automatic synchronization of data between model and View components. Our Syncfusion widgets supports both one-way and two-way (**ng-model**) binding.
+When a widget's model (`ng-model`) attribute is bound to a scope variable, it can reflect the changes both ways. In general, we could have more than one property bound to the same variable. 
 
-### One way binding
-
-It is said one-way binding because the model values are directly bound to the widget’s properties and the changes in the property’s value won’t reflect in the model in any way. **All the properties of Syncfusion widgets support one-way binding**. The below code defines the one-way binding depicted in the DatePicker widget,
-
-{% highlight html %}
-
-    <input id="datepick" ej-datepicker  e-value="01/01/2015" e-enableStrictMode="true" />
-
-{% endhighlight %}
-
-Here, in the above code, the value property of the DatePicker widget is assigned with the direct value **01/01/2015**. Therefore, whenever we change the value of the DatePicker dynamically, the changes won’t get reflected in the value property.
-
-### Two way binding
-
-A two-way data binding can be defined as, when a model variable is bound to the widget’s properties instead of direct values, it can both change and display the value of the variable. In general, we could have more than one property bound to the same variable. 
-
-#### Two way binding properties
-
-The below table depicts the properties of all the Syncfusion widgets that supports two-way data-binding - 
+The below table depicts the properties of all the Syncfusion widgets that supports model binding - 
 
 <table>
 <tr>
 <th>
 Control</th><th>
-Supported Two way binding properties</th></tr>
+Supported properties</th></tr>
 <tr>
 <td>
 ejAccordion</td><td>
 -</td></tr>
 <tr>
 <td>
-ejAutocomplete</td><td>
+ejAutoComplete</td><td>
 value</td></tr>
 <tr>
 <td>
@@ -169,7 +64,7 @@ ejBarcode</td><td>
 -</td></tr>
 <tr>
 <td>
-ejBulletgraph</td><td>
+ejBulletGraph</td><td>
 value<br/>comparativeMeasureValue</td></tr>
 <tr>
 <td>
@@ -342,7 +237,7 @@ ejWaitingPopup</td><td>
 </table>
 
 
-The two-way data binding has been demonstrated in the below code,
+Model binding has been demonstrated in the below code,
 
 {% highlight html %}
 
@@ -366,5 +261,4 @@ The two-way data binding has been demonstrated in the below code,
 
 {% endhighlight %}
 
-Here, just for the demonstration purpose, we are using two DatePicker controls (with id **mydatepicker1** and **mydatepicker2**), both of its value property is bound to the scope variable **dateValue**. Initially, both the DatePickers will be displayed with the value **01/01/2015** and whenever any of the DatePicker’s value is changed dynamically, it gets simultaneously reflected in another DatePicker too, as both of them shared the same scope variable.
 
