@@ -7,9 +7,9 @@ control: Uploadbox
 documentation: ug
 ---
 
-# Enable or Disable the Uploadbox 
+# Enables or Disables the Uploadbox 
 
-This features helps to set the **enable** or **disable** option for **Uploadbox** by setting **Boolean** type value to **enabled** property. For **enable** or **disable** option, set **enabled** property to ‘**false**’. The data type is **Boolean**.
+This feature helps set the **enable** or **disable** option for **Uploadbox** by setting **Boolean** type value to **enabled** property. For **enable** or **disable** option, set **enabled** property to ‘**false**’. The data type is **Boolean**.
 
 The following steps explain the configuration of **enabled** property in **Uploadbox**. 
 
@@ -41,5 +41,5 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Enable-or-Disable-the-Uploadbox_images/Enable-or-Disable-the-Uploadbox_img1.png" %}
+{% include image.html url="/js/UploadBox/Enable-or-Disable_images/Enable-or-Disable_img1.png" %}
 

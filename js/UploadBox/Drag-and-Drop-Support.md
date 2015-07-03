@@ -191,7 +191,7 @@ You can click anywhere in the droppable area to browse and upload the files. The
 
 Enable the **allowDragAndDrop** property to achieve this feature. Next, set the **showBrowseButton** as **False** in Uploadbox Control.
 
-The following steps explains the droppable area containing the browse button behavior
+The following steps explain the droppable area containing the browse button behavior.
 
 In the **HTML** page, add a **&lt;div&gt;** element to enable drag and drop in the **Uploadbox** control.
 

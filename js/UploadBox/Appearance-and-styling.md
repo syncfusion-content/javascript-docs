@@ -86,7 +86,7 @@ Subproperties under dialogText property.
 <tr>
 <th>
 Name</th><th>
-<th>Description</th></th></tr>
+Description</th></tr>
 <tr>
 <td>
 title</td><td>
