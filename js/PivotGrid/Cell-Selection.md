@@ -9,9 +9,9 @@ documentation: ug
 
 #Cell Selection
 
-The PivotGrid control provides support to select specific ranges of value cells and display them in a format based on the user’s requirements. Selection can be done through simple mouse down and drag operation. This functionality doesn’t available by default and to enable this, user needs to set `enableCellSelection` property to "true".
+The PivotGrid control provides support to select specific range of value cells and display them in a format based on your requirements. Selection can be done through simple mouse down and drag operation. By default, this functionality is not available.To enable this functionality, set `enableCellSelection` property to "true".
 
-The following code example demonstrates on how to enable cell selection in the PivotGrid control.
+The following code example explains on how to enable cell selection in the PivotGrid control.
 
 {% highlight js %}
 
@@ -22,7 +22,7 @@ $(function() {
       cellSelection: "valueCellClick"
    });
    valueCellClick = function(evt) {
-      // The event lets the user to perform required operation with the selected set of cells. The details of the selected range would be obtained in the parameter of the event.
+      // The event lets you to perform required operation with the selected set of cells. The details of the selected range can be obtained in the parameter of the event.
       cellvalue = evt.JSONRecords;
       rowheaders = evt.rowHeader;
       colheaders = evt.columnHeader;
