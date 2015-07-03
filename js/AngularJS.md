@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AngularJS
-description: angularjs
+title: Using Essential JS in AngularJS applications
+description: How to use Essential JS widgets in AngularJS
 platform: js
 control: Introduction
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # AngularJS
 
-Essential JS includes angular directives for all controls in the **ej.widget.angular.min.js** script file. All the Essential JS directives have been encapsulated into a single module called **ejangular** so the first step would be to declare dependency for this module within your AngularJS application.
+Essential JS includes angular directives for all controls in the `ej.widget.angular.min.js` script file. All the Essential JS directives have been encapsulated into a single module called `ejangular` so the first step would be to declare dependency for this module within your AngularJS application.
 
 {% highlight js %}
 
@@ -20,7 +20,7 @@ angular.module('DateCtrl', ['ejangular'])
 
 {% endhighlight %}
 
-All the Syncfusion widget’s **control directives** are prefixed with **ej-** to avoid conflict with other library directives and its properties are defined using **e-** prefix followed by the property name. The code example for defining controls in **AngularJS** is as follows,
+All the Syncfusion widget’s control directives are prefixed with `ej-` to avoid conflict with other library directives and its properties are defined using `e-` prefix followed by the property name. The code example for defining controls in AngularJS is as follows,
 
 {% highlight html %}
 
@@ -36,45 +36,27 @@ All the Syncfusion widget’s **control directives** are prefixed with **ej-** t
 
 {% endhighlight %}
 
-In the above code snippet, **ej-datepicker** denotes the control directive for the Syncfusion’s datepicker widget and all its properties are prefixed with the letter **e-** (For example, **e-value**).
+In the above code snippet, `ej-datepicker` denotes the control directive for the Syncfusion’s datepicker widget and all its properties are prefixed with the letter `e-` (For example, `e-value`).
 
 
 ## Data binding
 
-Syncfusion widgets supports both one-way and two-way (**ng-model**) binding.
+When a widget's model (`ng-model`) attribute is bound to a scope variable, it can reflect the changes both ways. In general, we could have more than one property bound to the same variable. 
 
-### One way binding
-
-One way binding is a scenario when the model values are directly bound to the widget’s properties and the changes in the property’s value won’t reflect in the model in any way. **All the properties of Syncfusion widgets support one-way binding**. 
-
-{% highlight html %}
-
-    <input id="datepick" ej-datepicker  e-value="01/01/2015" e-enableStrictMode="true" />
-
-{% endhighlight %}
-
-In the above code, the value property of the DatePicker widget is assigned with the direct value **01/01/2015**. Therefore, whenever we change the value of the DatePicker dynamically, the changes won’t get reflected in the value property.
-
-### Two way binding
-
-Two way binding is when a model variable is bound to the widget’s properties instead of direct values, it can both change and display the value of the variable. In general, we could have more than one property bound to the same variable. 
-
-#### Two way binding properties
-
-The below table depicts the properties of all the Syncfusion widgets that supports two-way data-binding - 
+The below table depicts the properties of all the Syncfusion widgets that supports model binding - 
 
 <table>
 <tr>
 <th>
 Control</th><th>
-Supported Two way binding properties</th></tr>
+Supported properties</th></tr>
 <tr>
 <td>
 ejAccordion</td><td>
 -</td></tr>
 <tr>
 <td>
-ejAutocomplete</td><td>
+ejAutoComplete</td><td>
 value</td></tr>
 <tr>
 <td>
@@ -82,7 +64,7 @@ ejBarcode</td><td>
 -</td></tr>
 <tr>
 <td>
-ejBulletgraph</td><td>
+ejBulletGraph</td><td>
 value<br/>comparativeMeasureValue</td></tr>
 <tr>
 <td>
@@ -255,7 +237,7 @@ ejWaitingPopup</td><td>
 </table>
 
 
-Two-way data binding has been demonstrated in the below code,
+Model binding has been demonstrated in the below code,
 
 {% highlight html %}
 
