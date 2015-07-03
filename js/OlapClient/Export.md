@@ -26,6 +26,7 @@ $("#OlapClient").ejOlapClient({
 {% endhighlight %}
 
 The property `clientExportMode` takes any one of the following value:
+
 1. ChartAndGrid – Exports both OlapChart and PivotGrid controls. This is the default mode.
 2. ChartOnly – Exports OlapChart control alone.
 3. GridOnly – Exports PivotGrid control alone.

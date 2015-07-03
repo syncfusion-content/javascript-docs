@@ -12,6 +12,7 @@ documentation: ug
 > **Note:** This feature is applicable only for OLAP datasource.
 
 The PivotGrid control can be exported to the following formats:
+
 * Excel (Cell Mode)
 * Word
 * PDF

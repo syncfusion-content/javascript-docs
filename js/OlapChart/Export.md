@@ -10,6 +10,7 @@ documentation: ug
 # Export
 
 The OLAP Chart control can be exported to the following formats:
+
 * Excel
 * Word
 * PDF
