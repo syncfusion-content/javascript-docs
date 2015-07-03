@@ -41,6 +41,7 @@ function btnClick(e) {
 {% endhighlight %}
 
 The PivotGrid below is formatted with the following three conditions:
+
 * Value < 10000 is marked in light brown.
 * Value > 2500000 and Value < 3000000 are marked in green.
 * Value > 5000000 is marked in yellow.
