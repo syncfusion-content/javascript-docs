@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Wiring-Events
-description: wiring events
+title: Wiring events of Syncfusion Essential JS widgets
+description: How to wire the events of syncfusion essential js widgets
 platform: js
 control: Introduction
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Wiring Events
 
-Whenever the control undergoes some changes or action, it should be notified to the users properly. To notify such actions, the appropriate events are needed to be bind to the control. Events are wired the same way as jQuery events are bound, either **during or after control initialization**.
+Essential JS widgets events can be wired the same way as jQuery events are bound, either during or after control initialization.
 
 ## During Initialization
 
