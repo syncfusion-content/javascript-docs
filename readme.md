@@ -23,7 +23,6 @@ This section contains guidelines on naming files, sections, documents and other 
 ## General
 * Do not bold the words unnecessarily.
 * Use [inline code style](http://kramdown.gettalong.org/quickref.html#inline-code) wherever it is possible to highlight the keywords, variables or one line code examples that come within the paragraph.
-* Todo -> How to highlight the keyboard shortcuts like this? [Stackoverflow](http://meta.stackexchange.com/questions/26207/how-can-i-format-as-keyboard-keys)
 
 ### Cross-reference
 * Link within the page (if you have a title with space, use hyphen (-))
@@ -49,7 +48,14 @@ This section contains guidelines on naming files, sections, documents and other 
 > 3. Code snippet can include within `<td> [code snippet] </td>`. Follow the same pattern like code snippet. 
 
 * Do not provide table captions.
- 
+* You should use the below markdown syntax if you want within the html tags.
+
+> \{{'<MarkdownSyntax>' | markdownify }}
+
+> **Example**:
+
+> \{{'[syncfusion](http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js)'| markdownify }}
+
 
 
 ### Image
@@ -102,6 +108,8 @@ This section contains guidelines on naming files, sections, documents and other 
 ### JS Playground integration
 * Todo -> How to link the JS Playground link on top of the each code blocks?
 
+### Keyboard shortcuts
+* Enclose the each keys with `<kbd>` tag to display the keys with different styling. For ex, <kbd>Ctrl</kbd>+<kbd>A</kbd> .
 ## API Reference Guideline
 
 ### Version information
