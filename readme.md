@@ -2,6 +2,8 @@
 
 This section contains guidelines on naming files, sections, documents and other document elements.
 
+> **NOTE**: Some of the items are marked as TODO which will be documented later.
+
 ## File naming Convention:
 * All files should have `.md` extension.
 * Separate words in file names should be hyphenated
