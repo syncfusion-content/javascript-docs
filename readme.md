@@ -193,9 +193,9 @@ to add the Syncfusion datepicker widget into the HTML page, refer the same steps
     * _Essential chart has built in support for over 10 technical indicators_ - Correct
 * Constantly review the document that you are writing to see if any words can be removed without changing the information conveyed.
 * You can use a colon after the words "following" or "follows." 
-* Use American English and date formats.
+* Use [American English](https://syncfusion.atlassian.net/wiki/display/SYNC/American+and+British+English+spelling+differences) and date formats.
     * Behavior vs Behaviour
-* Prefer present tense to past tense
+* Prefer **present tense** always except in some special criteria to use other tenses.
     * You will have to send the corrupted word document for troubleshooting. - Incorrect
     * _Please send the corrupted word document for troubleshooting._ - Correct
 * Avoid using gender specific words like she, he, him or her.
@@ -205,6 +205,7 @@ to add the Syncfusion datepicker widget into the HTML page, refer the same steps
     * The data visualization suite consists of Chart, Gauge, and Map.
 * Always refer to the control name with proper casing
     * SfDataGrid vs Datagrid or Data Grid etc.
+* Make sure you do not confuse with these [tricky words](https://syncfusion.atlassian.net/wiki/display/SYNC/Similar+sounding+words+-+Homophones).
 * Always spell check using a tool like Microsoft Word.
  
 ### Structure of good documentation
