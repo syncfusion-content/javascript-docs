@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theming-in-Essential-JavaScript-Components
-description: theming in essential javascript components
+title: Using Syncfusion Essential JS Built-in themes
+description: How to use the built-in themes of essential js widgets in your application and customizing of the existing themes.
 platform: js
 control: Introduction
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Built-in Themes
 
-All our EJ components are developed with a unique theme and different styling effects to improve its appearance and to have the unique look and feel. It is possible to easily customize the default available themes through the API provided by **Essential JavaScript**.
+All our Syncfusion Essential JS widgets are developed with a unique theme and different styling effects to improve its appearance and to have the unique look and feel. It is possible to easily customize the default available themes through the APIs*.
 
-By default, there are **13** kinds of theming supports available for **Essential JavaScript** components. 
+By default, there are 13 themes available for Essential JavaScript widgets. 
 
 * default-theme
 * flat-azure-dark
@@ -27,23 +27,24 @@ By default, there are **13** kinds of theming supports available for **Essential
 * gradient-saffron-dark
 * bootstrap-theme
 
-The **Essential Studio** Suite provides a css file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the **EJ web components**. All the above specified theme files are available within the **css** folder which is depicted [here](/js/installation-and-deployment#assets).
+Syncfusion provides a css file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the widgets. All the above specified theme files are available within the **css** folder which is mentioned [here](/js/installation-and-deployment#install-location).
 
 ## Adding specific theme to your application
 
-To use only a single theme related stuffs in your application, it is not necessary to copy all the theme folders into your application. Just copy only the required files from the installed location and paste it within the **ej** folder present within the **Content** folder of your application. 
+To use only a single theme in your application, you can copy only the required files from the [installed location](/js/installation-and-deployment#install-location) and paste it in your application folder (for ex, Application\Content\ej). 
 
-For example – Here, we are showing you how to refer only the **flat-saffron** theme to be applied to the **EJ** components in your application. Likewise, you can choose whatever themes you want. The **common-images** folder and **ej.widgets.core.min.css** file are mandatory for any application and is commonly applicable for whatever theme selected. 
-{% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img1.png" %}
+This section explains what are all the files required to refer and the steps to apply the **flat-saffron** theme. 
 
->   **Note**: The **common-images** folder is needed to be copied into your application mandatorily for any of the theme selection, as it includes all the common font icons and other images required for the control to render.
+1. Create the following folders in the same structure under your application folder. 
 
-The below image depicts the files that are copied into the **Content** folder of your JS application,
-{% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img2.png" Caption="Folder structure depicting the copied theme files in the application"%}
+>   appfolder\Content\ej\flat-saffron
 
-In the above image, **flat-saffron** folder is added to include the theme and styling related to it. If in case, you need to refer the **flat-lime** theme in your application, then you can replace the flat-saffron folder with flat-lime (copying it from the above specified location) - keeping the **common-images** folder and **ej.widgets.core.min.css** file as it is.
+2. Copy **common-images** folder & **ej.widgets.core.min.css** file into the appfolder\Content\ej
 
-Once the required theme folders are copied into your application, it is necessary to refer the **ej.web.all.min.css** file in your HTML page within the &lt;head&gt; section before making any script reference as shown below,
+> Both of these folders and files are mandatory for any themes. 
+
+3. Copy the css files available in the installed location of the flat-saffron folder into your app location appfolder\Content\ej\flat-saffron
+4. Refer the **ej.web.all.min.css** file in your HTML page within the `<head>` section before making any script reference as shown below,
 
 {% highlight html %}
 
@@ -69,10 +70,7 @@ Once the required theme folders are copied into your application, it is necessar
 
 {% endhighlight %}
 
->   **Note**: The **ej.web.all.min.css** file is available separately for all the **13** available themes in their respective theme folders.
->   It is the combination of two files namely, **ej.theme.min.css** file (available separately within each of the theme folders) and **ej.widgets.core.min.css** – which is shown in the below image,   
->   {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img3.png" %}
-Since, **ej.web.all.min.css** file is a combination of two files (**ej.theme.min.css & ej.widgets.core.min.css**), therefore it is also possible to refer these two files directly in the place of its reference as shown below, 
+5. As **ej.web.all.min.css** file is a combination of **ej.theme.min.css & ej.widgets.core.min.css, it is also possible to refer these two files directly in the place of its reference as shown below, 
 
 {% highlight html %}
 
@@ -99,15 +97,13 @@ Since, **ej.web.all.min.css** file is a combination of two files (**ej.theme.min
 
 {% endhighlight %}
 
-## Custom CSS
+## Customizing themes
 
-Essential JavaScript provides a default API namely **cssClass**, which accepts the custom CSS class name defined with specific user-defined styles and themes to be applied for the partial/whole parts of the EJ components.
+Each of Essential JavaScript widgets provide a default API `cssClass`, which accepts the custom CSS class name defined with specific user-defined styles and themes to be applied for the partial/whole parts of the Essential JS widgets.
 
-### Applying CustomCSS to DatePicker control
+### Applying Custom CSS to DatePicker control
 
-Most of our EJ web components (like grid, schedule, datepicker and other tools controls) are built and developed by using one or more combinations of HTML child elements and some other components (dataVisualization controls like gauges, chart & bulletgraph) makes use of other elements like canvas, SVG and others. Therefore, each child-elements that are used to build a component is provided with a unique class name based on its purpose and usage. 
-
-By default, the root element of each web components are given a unique class name which indicates the control name prefixed with **e-** (For example, DatePicker widget has a root element with a class name **e-datepicker** and the grid component contains its root element named with a class **e-grid** & so on). 
+By default, the root element of each web widgets are given a unique class name which indicates the control name prefixed with **e-** (For example, DatePicker widget has a root element with a class name `e-datepicker` and the grid component contains its root element named with a class `e-grid` & so on). 
 
 There are two possible ways to customize the theming of the component either by – 
 
@@ -168,11 +164,11 @@ Also, refer the required css file (**ej.web.all.min.css**) in your application a
 
 #### Replacing the entire css file with the Customized CSS class name
 
-To replace the entire css file with your own customized CSS class name, you need to copy the non-minified version (Src->**assets-src** folder) of the required theme file into your application and then modify it as per your needs. Also, make sure that the reference to it has been made in the HTML page and also the Customized class name set to the **cssClass** property of the EJ components. 
+To replace the entire css file with your own customized CSS class name, you need to copy the uncompressed version (Src->**assets-src** folder) of the required theme file into your application and then modify it as per your needs. Also, make sure that the reference to it has been made in the HTML page and also the Customized class name set to the **cssClass** property of the EJ components. 
 
 The non-minified version of the css files are present within the **assets-src** folder, as mentioned earlier in this [section](/js/installation-and-deployment#src). 
 
-To customize the entire css file and refer it in your HTML page - Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the non-minified version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (non-minified) file present within the **flat-saffron** theme folder in our application)
+To customize the entire css file and refer it in your HTML page - Follow the usual steps as specified earlier for CSS reference, additionally copy and paste the uncompressed version of the required css file into your application and refer it in the HTML page as depicted below, (For example, we have copied the **ej.theme.css** (uncompressed) file present within the **flat-saffron** theme folder in our application)
 {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img6.png" %}
 
 {% highlight html %}
@@ -199,23 +195,23 @@ To customize the entire css file and refer it in your HTML page - Follow the usu
 
 {% endhighlight %}
 
-Now, to make particular changes in that file, you can directly open it and start making modifications. For example, The DatePicker control has its default root class name as **e-datepicker**. You can change it manually with the user-specified root class name such as **e-cutomdatepicker** in the css file as shown below,
+Now, to make particular changes in that file, you can directly open it and start making modifications. For example, The DatePicker control has its default root class name as `e-datepicker`. You can change it manually with the user-specified root class name such as `e-cutomdatepicker` in the css file as shown below,
 {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img7.png" Caption="CSS file with default root e-datepicker name"%}
 
 {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img8.png" Caption="CSS file with Customized root class name"%}
 
-To change/customize further the styles of the other child elements of the datepicker widget like header (**e-header** class), current-month and other-month, you need to modify the appropriate css properties within the **ej.theme.css** file as shown below,
+To change/customize further the styles of the other child elements of the datepicker widget like header (`e-header` class), current-month and other-month, you need to modify the appropriate css properties within the `ej.theme.css` file as shown below,
 
-**e-header** element with newly customized background-color
+`e-header` element with newly customized background-color
 {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img9.png" %}
 
-**current-month** element with newly customized background-color
+`current-month` element with newly customized background-color
 {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img10.png" %}
 
-**other-month** element with newly customized text color
+`other-month` element with newly customized text color
 {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img11.png" %}
 
-Save the changes made in the css file and then set the user-specified custom css class name(**e-customdatepicker**) to the **cssClass** property of the datepicker widget as shown below,
+Save the changes made in the css file and then set the user-specified custom css class name(`e-customdatepicker`) to the `cssClass` property of the datepicker widget as shown below,
 
 {% highlight html %}
 
@@ -243,36 +239,3 @@ Save the changes made in the css file and then set the user-specified custom css
 
 Run the above code, you can see the datepicker widget with one or more customized child-elements according to the changes done in the css files as shown below,
 {% include image.html url="/js/Theming-in-Essential-JavaScript-Components_images/Theming-in-Essential-JavaScript-Components_img12.png" %}
-
-Thus, the **cssClass** property of the EJ components can be used as per the user convenient to customize the widget style to improve its look and feel while using it within the application.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
