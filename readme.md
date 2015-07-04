@@ -112,8 +112,8 @@ This section contains guidelines on naming files, sections, documents and other 
 * Enclose the each keys with `<kbd>` tag to display the keys with different styling. For ex, <kbd>Ctrl</kbd>+<kbd>A</kbd> .
 ## API Reference Guideline
 
-### Product Release Version 
-* To add the version no in the documentation. Use the below constant variables that replace the corresponding version number for each release 
+### Product Release Version variable 
+* To add the version number in the documentation, use the below variables that replace the corresponding release version number while publishing. So that, always your content will contains the latest release version number. 
 
 | Variable Name     	           | Output         | Description            					                             |  
 | ---------------------------------|:--------------:|:----------------------------------------------------------------------:|  
