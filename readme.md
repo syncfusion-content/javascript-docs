@@ -16,7 +16,7 @@ This section contains guidelines on naming files, sections, documents and other 
 
 > **Title :** Getting started with Chart widget for Syncfusion Essential JS 
 
-> **Description :** File should describe or help the user how to create a chart, add series, enable tooltip and other functionalities.
+> **Description :** How to create a chart, add series, enable tooltip and other functionalities.
 
 
 ## Markdown Syntax Guideline
