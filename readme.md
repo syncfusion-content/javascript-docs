@@ -54,7 +54,7 @@ This section contains guidelines on naming files, sections, documents and other 
 
 > **Example**:
 
-> \{{'[syncfusion](http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js)'| markdownify }}
+> \{{'\[syncfusion](http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js)'| markdownify }}
 
 
 
