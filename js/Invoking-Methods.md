@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Invoking-Methods
-description: invoking methods
+title: Invoking methods of Syncfusion Essential JS widgets
+description: How to invoke the methods of Syncfusion Essential JS widgets. 
 platform: js
 control: Introduction
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Invoking Methods
 
-The functions can be invoked the same way the properties are accessed. The following syntaxes defines the ways to invoke the public methods of the widgets.
+The methods can be invoked the same way as the properties are accessed. The following syntaxes defines the ways to invoke the public methods of the widgets.
 
 {% highlight js %}
 
