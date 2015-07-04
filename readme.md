@@ -48,7 +48,7 @@ This section contains guidelines on naming files, sections, documents and other 
 > 3. Code snippet can include within `<td> [code snippet] </td>`. Follow the same pattern like code snippet. 
 
 * Do not provide table captions.
-* You should use the below markdown syntax if you want within the html tags.
+* You should use the below markdown syntax if you want to use markdown syntax within the html tags.
 
 > \{{'<MarkdownSyntax>' | markdownify }}
 
