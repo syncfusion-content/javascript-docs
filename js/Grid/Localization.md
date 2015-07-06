@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-The **Localization** concept in **ejGrid** supports switching the control language with various cultures. The `Locale` property in **ejGrid** is a string type used to define the culture code that has been declared by **JQuery globalize script** file. The default value for **Locale** in **ejGrid** is **en-US**.
+The localization concept in **ejGrid** supports switching the control language with various cultures. The `locale` property in **ejGrid** is a string type used to define the culture code that has been declared by **JQuery globalize script** file. The default value for `locale` in `ejGrid` is `en-US`.
 
 The following two script files are necessary to perform **Localization** in **ejGrid**.
 
@@ -17,9 +17,9 @@ The following two script files are necessary to perform **Localization** in **ej
 
 2. globalize.culture.en-US.min.js (Changeable)
 
-The **globalize.culture.en-US.min.js** scripts are changeable based on the culture name. Each culture has its own culture script file that differs by its culture code. For example **en-US** is the culture code for **English - United States**.
+The `globalize.culture.en-US.min.js` scripts are changeable based on the culture name. Each culture has its own culture script file that differs by its culture code. For example `en-US` is the culture code for **English - United States**.
 
-The following code example demonstrates how to switch the culture of **ejGrid** as **de-DE** (**German - Germany**).
+The following code example demonstrates how to switch the culture of `ejGrid` as `de-DE` (German - Germany).
 
 {% highlight html %}
 
@@ -52,7 +52,7 @@ The following code example demonstrates how to switch the culture of **ejGrid** 
 
 
 
-The **ejGrid** and **ejPager** has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side for all the above platforms.
+The `ejGrid` and `ejPager` has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side for all the above platforms.
 
 {% highlight js %}
 
@@ -90,7 +90,7 @@ The output for the above code example is displayed as the following screenshot.
 
 {% include image.html url="/js/Grid/Localization_images/Localization_img1.png"%}
 
-The default values of locale labels in **ejGrid** and **ejPager** are listed out in the following code example. You can change the label values based on the cultures with its corresponding meaning of words.
+The default values of locale labels in `ejGrid` and `ejPager` are listed out in the following code example. You can change the label values based on the cultures with its corresponding meaning of words.
 
 {% highlight js %}
 <script type="text/javascript">
