@@ -88,16 +88,12 @@ Add `div` container for barcode rendering.
 <div id="barcode"></div>
 {% endhighlight %}
 
-Add the following script in the HTML file to initialize `ejBarcode` and to render the Code39 barcode.
+Set the `symbologyType` and provide input to the `text` property to render the Code39 barcode.
 
 {% highlight js %}
 $("#barcode").ejBarcode({
    text: "SYNCFUSION",
-   symbologyType: "code39",
-   displayText: true,
-   quietZone: {
-      all: 30
-   }
+   symbologyType: "code39"
 });
 {% endhighlight %}
 
@@ -105,45 +101,8 @@ $("#barcode").ejBarcode({
 {% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
 ## Customizing the Barcode appearance
-
-### Customizing the Barcode color
-
-You can customize the barcode color by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) property.
+The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan). You can also customize the barcode color by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) and [lightBarColor](http://helpjs.syncfusion.com/js/api/ejbarcode#lightbarcolorspan-classtype-signature-type-objectobjectspan) properties.
 
 >   **Note:** This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
 
-{% highlight js %}
-$("#barcode").ejBarcode({
-   text: "B5330E8278BC4C797C49DD3ED5AD9715",
-   symbologyType: "code39",
-   displayText: true,
-   darkBarColor: "blue",
-   quietZone: {
-      all: 30
-   }
-});
-{% endhighlight %}
 
-Execute the above code to render the following output.
-
-{% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img2.png" Caption=""%}
-
-### Customizing the Barcode height
-The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan).
-
-{% highlight js %}
-$("#barcode").ejBarcode({
-   text: "B5330E8278BC4C797C49DD3ED5AD9715",
-   symbologyType: "code39",
-   displayText: true,
-   darkBarColor: "#990099",
-   barHeight: 45,
-   quietZone: {
-      all: 30
-   }
-});
-{% endhighlight %}
-
-Execute the above code to render the following output.
-
-{% include image.html url="/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img3.png" Caption=""%}
