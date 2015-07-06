@@ -1522,6 +1522,10 @@ buttonMode</td><td> Newly added
 htmlAttributes</td><td> Newly added
  </td></tr>
 <tr>
+<td></td><td>
+showClearButton</td><td> Newly added
+ </td></tr>
+<tr>
   <td> <b> Enum </b> </td>
 <td></td><td>
  ej.ColorPicker.ButtonMode = {<br/>
