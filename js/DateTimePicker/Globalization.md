@@ -7,7 +7,7 @@ control: DateTimePicker
 documentation: ug
 ---
 
-# Localization
+# Globalization
 
 You can globalize your **DateTimePicker** control. People of different culture can make use of it. All culture files are supported by Syncfusion components
 
@@ -25,7 +25,7 @@ You can also customize the culture to your own, using the following steps.
 * Open the **Culture** script file, included in your project.
 * Replace existing calendar locale information by your own culture information or to your customized format.
 
-Refer this section for more details: [localization](http://help.syncfusion.com/ug/js/default.htm)
+Refer this section for more details: [Globalization](http://help.syncfusion.com/ug/js/default.htm)
 
 For example, if you want to change month names to your culture month just replace month names with your culture month names or your customized format.
 

@@ -78,9 +78,9 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 Output when **enabled** is **“false”** and when **enabled** is “**true**”**.**
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img3.png"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="MaskEdit with disabled state"%}
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img4.png"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="MaskEdit with default state"%}
 
 ## Adjusting MaskEdit Size
 
@@ -233,7 +233,7 @@ Output for **MaskEdit** when **showError** is “**true**” is as follows**.**
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img8.png"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="MaskEdit with error class"%}
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img9.png"%}
+{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="MaskEdit with proper input value"%}
 

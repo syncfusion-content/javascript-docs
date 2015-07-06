@@ -7,13 +7,13 @@ control: TimePicker
 documentation: ug
 ---
 
-# Localization
+# Globalization
 
-**TimePicker** supports localization with different culture.
+**TimePicker** supports globalization with different culture.
 
-## Enabling Localization Support
+## Enabling Globalization Support
 
-The following steps explains you on how to enable **Localization** property for **TimePicker**.
+The following steps explains you on how to enable **Globalization** support for **TimePicker**.
 
 In an **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.   
 
@@ -68,5 +68,5 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker**
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/TimePicker/Localization_images/Localization_img1.png" %}
+{% include image.html url="/js/TimePicker/Globalization_images/Globalization_img1.png" %}
 
