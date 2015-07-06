@@ -9,13 +9,13 @@ documentation: ug
 
 # Web accessibility
 
-Web accessibility is an easy way to create a website or application by world wide users, including disabled users. You can develop sites with the help of assistive technologies. **Essential JavaScript** supports the **Web UI** accessibility resources. They are:
+Web accessibility is an easy way to create a website or application by world wide users, including disabled users. You can develop sites with the help of assistive technologies. The support includes:
 
-**WAI – ARIA supports in Essential JavaScript Grid**
+**WAI – ARIA**
 
-This helps enable better user interaction in **Grid** control and this uses the W3C’s Widget Design Patterns in the WAI specification and added customize attributes.
+This helps enable better user interaction in `ejGrid` and this uses the W3C’s Widget Design Patterns in the WAI specification and added customize attributes.
 
-**Full Keyboard control supports in Essential JavaScript Grid**
+**Full Keyboard Interactions**
 
 This helps to support **Grid** control with keyboard interaction. The key descriptions are:
 
@@ -34,7 +34,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Alt + j	
       </td>
       <td>
-         focus
+         Focus
       </td>
    </tr>
    <tr>
@@ -42,7 +42,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Ctrl + Home	
       </td>
       <td>
-         first row in Grid
+         Go to first row
       </td>
    </tr>
    <tr>
@@ -50,7 +50,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Ctrl + End   
       </td>
       <td>
-         last row in Grid
+         Go to last row
       </td>
    </tr>
    <tr>
@@ -58,15 +58,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          PgDn	
       </td>
       <td>
-         next page to Grid
-      </td>
-   </tr>
-   <tr>
-      <td>
-         PgDn	
-      </td>
-      <td>
-         next page to Grid
+         Go to next page
       </td>
    </tr>
    <tr>
@@ -74,7 +66,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          PgUp	
       </td>
       <td>
-         previous page to Grid
+         Go to previous page
       </td>
    </tr>
    <tr>
@@ -82,7 +74,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Home	
       </td>
       <td>
-         first cell in grid
+         Go to first cell
       </td>
    </tr>
    <tr>
@@ -90,7 +82,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          End	
       </td>
       <td>
-         last cell in grid
+         Go to last cell
       </td>
    </tr>
    <tr>
@@ -98,7 +90,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          F2	
       </td>
       <td>
-         Edit       //to enable editing [edit:{allowEditing:true}].
+         Start edit
       </td>
    </tr>
    <tr>
@@ -106,7 +98,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Enter
       </td>
       <td>
-         Save request
+         Save the current changes
       </td>
    </tr>
    <tr>
@@ -114,7 +106,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Esc
       </td>
       <td>
-         Cancel request
+         Cancel edit mode and discard changes.
       </td>
    </tr>
    <tr>
@@ -122,7 +114,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Tab	
       </td>
       <td>
-         Move Cell right
+         Go to next cell
       </td>
    </tr>
    <tr>
@@ -130,7 +122,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Shift
       </td>
       <td>
-         Move Cell left
+         Go to previous cell
       </td>
    </tr>
    <tr>
@@ -138,7 +130,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Ctrl + PgDn	
       </td>
       <td>
-         Last page in grid
+         Go to last page
       </td>
    </tr>
    <tr>
@@ -146,7 +138,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Ctrl + Alt + PgUp
       </td>
       <td>
-         First page in grid
+         Go to first page
       </td>
    </tr>
    <tr>
@@ -154,7 +146,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Alt + Down Arrow
       </td>
       <td>
-         Expand selected group //to enable [grouping{allowGrouping:true}]
+         Expand selected group
       </td>
    </tr>
    <tr>
@@ -162,15 +154,15 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Alt + Up Arrow	
       </td>
       <td>
-         Collapse selected group //to enable [grouping{allowGrouping:true}]
+         Collapse selected group
       </td>
    </tr>
    <tr>
       <td>
          Ctrl + Down Arrow	
       </td>
-      <td>https://jsfiddle.net/#run
-         Expand All //to enable [grouping{allowGrouping:true}]
+      <td>
+         Expand All visible groups
       </td>
    </tr>
    <tr>
@@ -178,7 +170,7 @@ This helps to support **Grid** control with keyboard interaction. The key descri
          Ctrl + UP Arrow	
       </td>
       <td>
-         Collapse All //to enable [grouping{allowGrouping:true}]
+         Collapse All visible groups
       </td>
    </tr>
 </table>
