@@ -130,11 +130,6 @@ This section contains guidelines on naming files, sections, documents and other 
 | {{ site.mvc5releaseversion }}    | 13.1500.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
 
 
-### Version information
-* Todo -> how to specify when the property is added.
-* Todo -> how to specify when the property is depricated.
-* Todo -> how to specify when the property is changed.
-
 ### Naming Standards
 * Use the JS API naming standards mentioned in the following page - [API Naming Standards](https://syncfusion.atlassian.net/wiki/display/JS/API+Naming+Standards)
 
