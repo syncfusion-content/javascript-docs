@@ -9,12 +9,16 @@ documentation: ug
 
 # Exporting
 
-**Exporting** feature provides support to export **Grid** data into excel, word and pdf files. The tool bar has **ExcelExport, WordExport, PdfExport** icons that are used to perform **exporting**. When you click the toolbar **exporting** icon, it internally invokes the **export() public** method of **Grid** object to make export. You can also invoke **export()** method manually to make export.
+Grid have support for exporting grid data to Excel, Word and Pdf file. Grid can be exported using `export` function, with export mapper as the parameter. Export can be added to UI in grid toolbar. The toolbar have option as `ExcelExport`, `WordExport` and `PdfExport` that are used to perform exporting. When you click the toolbar exporting icon, it internally invokes the `export` method.
 
+Currently grid data can be converted to different file formats in server-side only through our helper functions in `.Net`. So, to use exporting in your projects, it is required to create a server with any of the following.
+1.	ASP.Net MVC Controller Action
+2.	ASP.Net Webforms WebMethod
+3.	WebAPI
+4.	WCF Service
 
-**Exporting** is a server-side operation and JS Grid is a Client-side operation. So it is not feasible to export in pure Javascript platform. For **HTTP** Content read and write, you need server-side control. You can use **REST** service like **WebApi** to achieve server-side support while exporting in **JS Grid**.
+Following code snippet demonstrate exporting with WebAPI controller.
 
-Also since JS Grid is a Client-side, it does not have `mapper` property for custom URL mapping. You can achieve this by **Grid Toolbar Click** event and **exportGrid** method.
 
 {% highlight html %}
 
