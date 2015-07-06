@@ -23,7 +23,7 @@ You can refer the following online link reference for **globalize.culture.js**
 
 You can dynamically change the language based on their culture.
 
-The following steps explain you how to get the **Localization**.
+The following steps explain you how to get the **Globalization**.
 
 In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 

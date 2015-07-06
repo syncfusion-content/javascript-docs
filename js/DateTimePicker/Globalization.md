@@ -16,6 +16,7 @@ You can globalize your **DateTimePicker** control. People of different culture c
 [http://cdnjs.com/libraries/globalize/](http://cdnjs.com/libraries/globalize/)
 
 You can get the script file of various cultures from the following path also:
+
 **"&lt;Installed Location&gt;\Syncfusion\Essential Studio\&lt;version&gt;\JavaScript\assets\external\cultures**"
 
 If you want to use any cultures, add the script files of those corresponding culture in the sample. In order to add UK Culture in the **DateTimePicker** you can refer a script file named "**globalize.culture.es-ES.js**". 
@@ -29,7 +30,7 @@ Refer this section for more details: [Globalization](http://help.syncfusion.com/
 
 For example, if you want to change month names to your culture month just replace month names with your culture month names or your customized format.
 
-The following code example is used to know Spanish calendar locale information.
+The following code example is used to know Spanish calendar globalize information.
 
 {% highlight js %}
 
@@ -93,5 +94,5 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% include image.html url="/js/DateTimePicker/Localization_images/Localization_img1.png"%}
+{% include image.html url="/js/DateTimePicker/Globlization_images/Globalization_img1.png"%}
 
