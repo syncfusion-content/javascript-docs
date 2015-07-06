@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Unobtrusive-Support
-description: unobtrusive support
+title: Using Syncfusion Essential JS in unobtrusive mode
+description: How to use syncfusion essential js widgets in unobtrusive to achieve the clear separation of both HTML content and behavior.
 platform: js
 control: Introduction
 documentation: ug
