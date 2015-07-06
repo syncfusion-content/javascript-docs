@@ -9,13 +9,14 @@ documentation: ug
 
 # Hierarchy Grid
 
-**Hierarchy Grid** feature allows you to add the **Grid** control inside the **Grid** row. When you want to view the child Grid, you can expand the **Grid**. Bind the data to child Grid by assign the foreign key field to `queryString` property.
+**Hierarchy Grid** feature allows you to add the **Grid** control inside the Grid row. When you want to view the child Grid, you can expand the **Grid**. Bind the data to child Grid by assign the foreign key field to `queryString` property.
 
 {% highlight html %}
 
 <div id="Grid"></div>
 <script type="text/javascript">
   $(function () {
+      // the datasource "window.employeeView" is referred from jsondata.min.js
       var data = ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9));
       var dataManger = ej.DataManager({
           url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
