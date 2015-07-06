@@ -8,10 +8,15 @@ documentation: ug
 ---
 
 # Data Binding
+Grid supports different kinds of databinding methods such as 
+
+1. Local data
+2. Remote data
+3. HTML table
 
 ## Local data
 
-**Grid** data source can be set to client-side through **JavaScript**. It has full support for **JSON** array binding. It is used to bind records in client-side by using **JSON** data that is mostly helpful in **Single Page Application** (**SPA**).
+Grid can bind to local data source. To bind local data, directly the assign the JSON array to grid's `dataSource` property. 
 
 {% highlight html %}
 
@@ -52,7 +57,7 @@ Result of the above code example.
 
 ### oData Binding	
 
-**oData** is a standardized protocol for creating and consuming the data. You can retrieve data from **oData** **service** by using **DataManager.** The following code is a simple example of remote data binding by using **oData** **service**.
+**oData** is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using **DataManager.** The following code is a simple example of remote data binding by using oData service.
 
 {% highlight html %}
 
@@ -82,7 +87,7 @@ The following output is the result of the above code example.
 
 ### Load at once
 
-Through this **load at once** technique, you can load all remote data from the server to the **Grid** and process records in client-side. The following code example shows **load at once** with **Grid.** Loaf at once feature was enabled by setting `offline` property as true in ejDataManager
+Through this **load at once** technique, you can load all data from the server to the browser and process records in client-side. The following code example shows **load at once** with Grid. Load at once feature can be enabled by setting `offline` property as true in `ej.DataManager`
 
 {% highlight html %}
 
@@ -115,7 +120,7 @@ The following output is the result of the above code example.
 
 ### Load on demand
 
-**Load on demand** is a powerful technique used to reduce bandwidth size of consuming the data. In **ejGrid**, you have support to use **load on demand**. In the following example, **oData** **service** is used. At load time, it retrieves required data from service, only for the visible page and not for all the records. When you move to another page, it loads for current page. You do not have to configure **Grid** to enable **load on demand**, since **load on demand** is enabled by default in **Grid**. The following code example shows you how **load on demand** works with **Grid**.
+**Load on demand** is a technique used to reduce bandwidth size of consuming the data. This feature is enabled by default, when remote data is bound to Grid. In the following example, oData service is used. At load time, it retrieves required data from service, only for the visible page and not for all the records. When you move to another page, it loads for current page. The following code example shows you how load on demand works with `ejGrid`.
 
 {% highlight html %}
 
@@ -148,7 +153,7 @@ If you have developer tools, you can capture network transfer to check **Grid** 
 
 ### Cross domain
 
-ejGrid can use cross domain data service with the help of DataManager. The given configuration is for configuring in client-side. You must configure the server as well, to retrieve data from server code. For server configuration, you can refer this link ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)). The following code example shows you how to use or retrieve cross domain data from Grid.
+Cross domain data requests can be possible using `ej.DataManager`. This can be enabled using the property `crossDomain` in ej.DataManager options. This property is for configuring the client-side to make the cross domain request however you need configure the server as well, to retrieve data from server. For server configuration, you can refer this link ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)). The following code example shows you how to use or retrieve cross domain data from Grid.
 
 {% highlight html %}
 
@@ -181,7 +186,7 @@ The following screenshot is the result of the above code example.
 
 ### HTTP additional parameters
 
-In this section, you can learn how to customize or add an extra parameter for **HTTP** request. You can add parameter to **oDataserviceURL** using the `Query` property in **Grid**. **DataManager** uses this `Query` internally in **Grid**.
+In this section, you can learn how to customize or add an extra parameter for `HTTP` request. You can add parameter to oData service URL using the `Query` property in Grid. This value will be passed to `ej.DataManager` internally in Grid.
 
 {% highlight html %}
 
@@ -214,7 +219,7 @@ The following screenshot is the result of the above code example.
 
 ### Supported DataTypes
 
-**ejGrid** supports various DataTypes in **JavaScript** such as string, number, datetime and Boolean. By default, **ejGrid** reads DataTypes from **Grid** data source. By using these data types, **Grid** uses it to edit, add, save, filter and other operations. You can also customize these DataTypes through the column property type**.**It can override default data type reading**.
+ejGrid supports various DataTypes in JavaScript such as string, number, datetime and Boolean. By default, DataTypes will be read from first row of `dataSource`. You can also manually set the DataType to a column through property `type`.
 
 {% highlight html %}
 
@@ -236,12 +241,27 @@ The following screenshot is the result of the above code example.
 
 {% endhighlight %}
 
-### HTML binding
+## HTML table
 
-**ejGrid** provides support to form **Grid** from **HTML** table. It is flexible to convert from table to **Grid** with the help of the **DataManager**.
+Grid can be created from HTML table using DataManager. Please refer the following code snippet to achieve it.
 
 {% highlight html %}
 
+<script type="text/javascript">
+  $(function () {// Document is ready.
+      $("#Grid").ejGrid({
+        dataSource: ej.DataManager($("#Table1")), // binds table to grid
+          columns: [
+                   { field: "Laptop", headerText: "Laptop Brands"},
+                   { field: "Model", headerText: "Model" },
+                   { field: "Price", headerText: "Price", width: 90, textAlign: ej.TextAlign.Right, format: " ${0:c}" },
+                   { field: "OS", headerText: "Operating System" },
+                   { field: "RAM", headerText: "RAM", width: 120, textAlign: ej.TextAlign.Right },
+                   { field: "ScreenSize", headerText: "Screen Size", textAlign: ej.TextAlign.Right, width: 100, format: "{0:N1} inch" }
+          ]
+      });
+  });
+</script>
 
 <div id="Grid"></div>
 <table id="Table1">
@@ -310,21 +330,6 @@ The following screenshot is the result of the above code example.
     </tr>
   </tbody>
 </table>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-        dataSource: ej.DataManager($("#Table1")), // binds table to grid
-          columns: [
-                   { field: "Laptop", headerText: "Laptop Brands"},
-                   { field: "Model", headerText: "Model" },
-                   { field: "Price", headerText: "Price", width: 90, textAlign: ej.TextAlign.Right, format: " ${0:c}" },
-                   { field: "OS", headerText: "Operating System" },
-                   { field: "RAM", headerText: "RAM", width: 120, textAlign: ej.TextAlign.Right },
-                   { field: "ScreenSize", headerText: "Screen Size", textAlign: ej.TextAlign.Right, width: 100, format: "{0:N1} inch" }
-          ]
-      });
-  });
-</script>
 
 {% endhighlight %}
 
