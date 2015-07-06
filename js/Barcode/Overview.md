@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of Syncfusion Essential JS Barcode 
+description: Syncfusion Essential JS barcode widget has more than 10 different types of barcode which includes one dimensional and two dimensional
 platform: js
 control: Barcode
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Overview
 
-The **Barcode** control enables rendering of one dimension and two dimension **Barcodes** in web page. **Barcode** provides you a simple and inexpensive method of encoding text information that can be easily read by inexpensive electronic readers.
+The Syncfusion Essential JS Barcode widget enables rendering of one dimension and two dimension barcodes in web page. Barcode provides you a simple and inexpensive method of encoding text information that can be easily read by electronic readers.
 
 **Key Features**
 
-* Supports 10 one-dimensional Barcodes including **Code 39** and **Code 32** barcodes.
-* Supports 2 two-dimensional Barcodes such as **QR** and **DataMatrix** barcodes.
+* Supports 10 one-dimensional barcodes including Code 39 and Code 32 barcodes.
+* Supports 2 two-dimensional barcodes such as QR and DataMatrix barcodes.
