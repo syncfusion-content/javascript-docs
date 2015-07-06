@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you briefly on how to create a barcode in your application with JavaScript.
+This section explains you briefly on how to create one dimensional and two dimensional barcodes and customizing its appearance in your JavaScript application.
 
-You can easily configure the barcode to any DOM element such as `div` or `span`. It takes `text` and `symbol` as input and renders the encoded text as barcode.
+You can easily configure the barcode to any DOM element such as `div` or `span`. It takes [`text`](/js/api/ejbarcode#textspan-classtype-signature-type-stringstringspan) and [`symbologyType`](/js/api/ejbarcode#symbologytypespan-classtype-signature-type-enumenumspan) as input and renders the encoded text as barcode.
 
-## Adding a QR Code to JavaScript application
+## Adding a QR Code
 
 Create an HTML file using the following code example for `ejBarcode` creation.
 
@@ -59,7 +59,7 @@ Set the `symbologyType` and provide input URL to the `text` property to render t
 
 {% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
-## Adding a Code39 Barcode to JavaScript application
+## Adding a Code39 Barcode
 
 Create an HTML file using the following code example for creating a Code39 barcode.
 
@@ -101,8 +101,6 @@ $("#barcode").ejBarcode({
 {% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
 ## Customizing the Barcode appearance
-The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan). You can also customize the barcode color by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) and [lightBarColor](http://helpjs.syncfusion.com/js/api/ejbarcode#lightbarcolorspan-classtype-signature-type-objectobjectspan) properties.
+The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan). You can also customize the barcode color by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) and [lightBarColor](/js/api/ejbarcode#lightbarcolorspan-classtype-signature-type-objectobjectspan) properties.
 
 >   **Note:** This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
-
-
