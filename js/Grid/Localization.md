@@ -196,7 +196,7 @@ The default values of locale labels in `ejGrid` and `ejPager` are listed out in 
 
 
 
-> _**Note**: You can get the various minified and unminified formatted culture script files from the local folder “C:\Program Files (x86)\Syncfusion\Essential Studio\xx.x.x.xx\JavaScript\assets\external\cultures”. xx.x.x.xx denotes the current version of Essential Studio, for example 12.4.0.34._
+> _**Note**: You can get the various minified and unminified formatted culture script files from the local folder "[Installed path]\Syncfusion\Essential Studio\{{site.releaseversion}}\JavaScript\assets\external\cultures"._
 
 
 
