@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Localization-and-Translation-support
-description: localization and translation support
+title: Localization
+description: localization 
 platform: js
 control: OlapChart
 documentation: ug
 ---
 
-#Localization and Translation support
+#Localization 
 
-**Localization** is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, data is displayed in a language and culture specific to a particular country or region. The **JavaScript OlapChart** control provides inherent support to localize its UI.
+The **Essential JavaScript OlapChart** control provides inherent support to localize its UI.
 
 The following table lists the default English **localization User Interface** based on “French” culture.
 
-*Table: List of default English localization User Interface based on “French” culture*
 
 <table>
 <tr>

@@ -9,17 +9,16 @@ documentation: ug
 
 # Layout 
 
-The **OlapGauge** control provides support to display multiple gauges in a structured layout. You can customize the layout using the **ColumnsCount** and **RowsCount** properties. These properties are used to specify the number of columns and rows for displaying controls.
+The **OlapGauge** control provides support to display multiple gauges in a structured layout.
 
 ## Supported Layouts
 
    1. Wrap Layout: Based on the available space, gauges are aligned and displayed automatically.
-   2. Row count: Specifies the number of gauge controls to be displayed row-wise.
-   3. Column count: Specifies the number of gauge controls to be displayed column-wise.
+   2. Row-based Layout: Row-wise arrangement of specified number of gauge controls.
+   3. Columnar Layout: Column-wise arrangement of specified number of gauge controls.
 
 ## Layout Customization 
 
-You can customize/limit the number of gauges to be displayed in the table with the help of the **rowsCount** and **columnsCount** properties.
 
 ### Row Count
 

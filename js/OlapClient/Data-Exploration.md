@@ -39,9 +39,9 @@ Row Filter checks each and every column of a row against the filter condition. T
 
 The options in Filtering tab are as follows:
 
-	1. Measure: You can choose any one measure element from the list to apply the filter.
-	2. Condition: You can choose any one condition that needs to appear in the filter expression.
-	3. Value: You can enter the conditional value for the expression.
+   1. Measure: You can choose any one measure element from the list to apply the filter.
+   2. Condition: You can choose any one condition that needs to appear in the filter expression.
+   3. Value: You can enter the conditional value for the expression.
 
 The following screenshot displays the **Filtering** Dialog box.
 

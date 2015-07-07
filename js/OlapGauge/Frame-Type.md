@@ -9,14 +9,14 @@ documentation: ug
 
 # Frame Type 
 
-**OlapGauge** supports built-in frame types to provide effective rim styles. The **frameType** property is used to set the frame type of the **OlapGauge** control. The supported frame types are:
+**OlapGauge** supports built-in frame types to provide effective rim styles.
 
    1. Full Circle - displays full view of the OlapGauge.
    2. Half Circle - displays half view of the OlapGauge.
 
 ## Full Circle
 
-By default, frame type is **Full Circle**. You can also set frame type with [frameType](/js/api/ejCircularGauge#frameframetypespan-classtype-signature-type-enumenumspan) property to **fullCircle**.
+By default, frame type is `fullcircle`. You can also set frame type with [frameType](/js/api/ejCircularGauge#frameframetypespan-classtype-signature-type-enumenumspan) property.
 
 {% highlight js %}
 
@@ -120,7 +120,7 @@ $(function() {
 
 ## Half Circle
 
-You can set frame type as **halfCircle** with the help of [frameType](/js/api/ejCircularGauge#frameframetypespan-classtype-signature-type-enumenumspan) property to visualize the gauge control in **half circle**.
+You can set frame type as `halfcircle` with the help of [frameType](/js/api/ejCircularGauge#frameframetypespan-classtype-signature-type-enumenumspan) property to visualize the gauge control in **half circle**.
 
 {% highlight js %}
 

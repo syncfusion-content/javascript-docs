@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started 
 
-This section explains briefly about how to create an **OlapClient** in your application with **JavaScript**.
+This section explains briefly about how to create an **OlapClient** in your application with **Essential JavaScript**.
 
 ##Syncfusion OLAP Controls – Architecture
 
@@ -35,21 +35,18 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
 3. **MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap.Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
-4. **OLAP Report:** The **OLAP Report** class in the **Syncfusion.Olap.Base** holds the complete information of each axes such as column, row and slicer. Using **OLAP Report** class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
+4. **OLAP Report:** The **OLAP Report** holds the complete information of each axes such as column, row and slicer. Using OLAP Report, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
 
-As the **OLAP Control** is the key for each and every operation, initially you need to serialize the **OLAP Report** and send to client-side in a form of string.
-When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OLAP Report** from the client-side to the service in a de-serialized and updated format.
-Further operations are carried with updated **OLAP Reports** only and you can send the updated **OLAP Report** back to client-side with **JSON** data in a serialized format again.
-This process has the **OLAP Report** always updated. You cannot operate serialized **OLAP Report** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
-
-   * **Saving and Loading Report in Database:**  you can save and load the reports available in **OlapClient** control via service only. This is not applicable at the client-side. You can serialize the **OLAP Report** class in the **Syncfusion.Olap.Base** assembly and save to database as stream.  Also you can load back from database via service.
-   * **Exporting:** You can export **OLAP** values and information to excel sheet via service only. So this provides feasible option to save and view **OLAP** information.
+As the **OLAP Control** is the key for each and every operation, initially you need to serialize the OLAP Reports and send to client-side in a form of string.
+When you perform any operation such as drill up/down, filtering, sorting etc., you need to send OLAP Reports from the client-side to the service in a de-serialized and updated format.
+Further operations are carried with updated OLAP Reports only and you can send the updated OLAP Reports back to client-side with **JSON** data in a serialized format again.
+This process has the OLAP Reports always updated. You cannot operate serialized OLAP Reports in client-side and hence it is carried to service for performing  the update operation.
+   1. Saving and Loading Report in Database:  You can save and load the reports available in **OlapClient** control via service only. This is not applicable at the client-side. You can serialize the OLAP Report and save to database as stream.  Also you can load back from database via service.
+   2. Exporting: You can export **OLAP** values and information to excel sheet via service only. So this provides feasible option to save and view **OLAP** information.
 
 ##Create an application
 
-This section encompasses on how to configure the **OlapClient** control in an application. You can also pass the required data to **OlapClient** and customize it according to your requirements.
-
-In this example, you can see how **OlapClient** component plots the data of customer count over different fiscal years.
+This section illustrates how to add and configure the OlapClient component in an application with AdventureWorks Cycle cube to assess the Customer Count over different fiscal years.
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img3.png" %}
 
@@ -119,7 +116,7 @@ Add the following code sample in the **&lt;body&gt;** tag in the **default.html*
 
 ##Add WCF Service for OlapClient
 
-###Create WCF Services
+###Create WCF Service
 
 Right-click the project and select **Add > New Folder**.  Name the folder as **WCF.**
 
@@ -253,7 +250,7 @@ namespace WebApplication2
 
 ###Implement Service Methods
 
-You can add the following methods to the service that are invoked for any server-side operations performed in `OlapClient`.
+You can add the following methods to the service that are invoked for any server-side operations performed in OlapClient.
 
 Initialize the OlapClient helper class.
 

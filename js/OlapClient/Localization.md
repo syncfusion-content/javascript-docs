@@ -9,11 +9,10 @@ documentation: ug
 
 # Localization 
 
-Localization is the**process of customizing the UI** (User Interface) as locale-specific, in order to display regional data. Using this feature, data can be displayed in a specific language and culture, of a particular country or region. The **JavaScript OlapClient** control provides inherent support to localize its **UI**.
+The **Essential JavaScript OlapClient** control provides inherent support to localize its **UI**.
 
 The following table lists the default English localization User Interface based on French culture.
 
-_Table: List of default English localization User Interface based on French culture_
 
 <table>
 <tr>
