@@ -81,6 +81,7 @@ Requires
 
 
 ### addDialogFields<span class="type-signature type array">Array</span>
+{:#addDialogFields}
 
 
 
@@ -131,6 +132,7 @@ Example
 
 
 ### allowColumnResize<span class="type-signature type boolean">boolean</span>
+{:#allowColumnResize}
 
 
 
@@ -178,6 +180,7 @@ Example
 
 
 ### allowGanttChartEditing<span class="type-signature type boolean">boolean</span>
+{:#allowGanttChartEditing}
 
 
 
@@ -228,6 +231,7 @@ Example
 
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+{:#allowKeyboardNavigation}
 
 
 
@@ -275,6 +279,7 @@ Example
 
 
 ### allowMultiSorting<span class="type-signature type boolean">boolean</span>
+{:#allowMultiSorting}
 
 
 
@@ -322,6 +327,7 @@ Example
 
 
 ### allowSelection<span class="type-signature type boolean">boolean</span>
+{:#allowSelection}
 
 
 
@@ -369,6 +375,7 @@ Example
 
 
 ### allowSorting<span class="type-signature type boolean">boolean</span>
+{:#allowSorting}
 
 
 
@@ -416,6 +423,7 @@ Example
 
 
 ### baselineColor<span class="type-signature type string">string</span>
+{:#baselineColor}
 
 
 
@@ -466,6 +474,7 @@ Example
 
 
 ### baselineEndDateMapping<span class="type-signature type string">string</span>
+{:#baselineEndDateMapping}
 
 
 
@@ -513,6 +522,7 @@ Example
 
 
 ### baselineStartDateMapping<span class="type-signature type string">string</span>
+{:#baselineStartDateMapping}
 
 
 
@@ -560,6 +570,7 @@ Example
 
 
 ### childMapping<span class="type-signature type string">string</span>
+{:#childMapping}
 
 
 
@@ -607,6 +618,7 @@ Example
 
 
 ### connectorLineBackground<span class="type-signature type string">string</span>
+{:#connectorLineBackground}
 
 
 
@@ -655,6 +667,7 @@ Example
 
 
 ### connectorlineWidth<span class="type-signature type number">number</span>
+{:#connectorlineWidth}
 
 
 
@@ -703,6 +716,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -750,6 +764,7 @@ Example
 
 
 ### dataSource<span class="type-signature type array">array</span>
+{:#dataSource}
 
 
 
@@ -800,6 +815,7 @@ Example
 
 
 ### dateFormat<span class="type-signature type string">string</span>
+{:#dateFormat}
 
 
 
@@ -850,6 +866,7 @@ Example
 
 
 ### durationMapping<span class="type-signature type string">string</span>
+{:#durationMapping}
 
 
 
@@ -897,6 +914,7 @@ Example
 
 
 ### durationUnit<span class="type-signature type enum">enum</span>
+{:#durationUnit}
 
 
 
@@ -945,6 +963,7 @@ Example
 
 
 ### editDialogFields<span class="type-signature type array">Array</span>
+{:#editDialogFields}
 
 
 
@@ -995,6 +1014,7 @@ Example
 
 
 ### editSettings<span class="type-signature type object">object</span>
+{:#editSettings}
 
 
 
@@ -1016,6 +1036,7 @@ Specifies the editSettings options in gantt.
 
 
 ### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
+{:#editSettings-allowAdding}
 
 
 
@@ -1063,6 +1084,7 @@ Example
 
 
 ### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
+{:#editSettings-allowDeleting}
 
 
 
@@ -1110,6 +1132,7 @@ Example
 
 
 ### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
+{:#editSettings-allowEditing}
 
 
 
@@ -1157,6 +1180,7 @@ Example
 
 
 ### editSettings.editMode<span class="type-signature type string">string</span>
+{:#editSettings-editMode}
 
 
 
@@ -1204,6 +1228,7 @@ Example
 
 
 ### enableAltRow<span class="type-signature type boolean">boolean</span>
+{:#enableAltRow}
 
 
 
@@ -1251,6 +1276,7 @@ Example
 
 
 ### enableCollapseAll<span class="type-signature type boolean">boolean</span>
+{:#enableCollapseAll}
 
 
 
@@ -1301,6 +1327,7 @@ Example
 
 
 ### enableContextMenu<span class="type-signature type boolean">boolean</span>
+{:#enableContextMenu}
 
 
 
@@ -1351,6 +1378,7 @@ Example
 
 
 ### enableProgressBarResizing<span class="type-signature type boolean">boolean</span>
+{:#enableProgressBarResizing}
 
 
 
@@ -1398,6 +1426,7 @@ Example
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
+{:#enableResize}
 
 
 
@@ -1448,6 +1477,7 @@ Example
 
 
 ### enableTaskbarDragTooltip<span class="type-signature type boolean">boolean</span>
+{:#enableTaskbarDragTooltip}
 
 
 
@@ -1496,6 +1526,7 @@ Example
 
 
 ### enableTaskbarTooltip<span class="type-signature type boolean">boolean</span>
+{:#enableTaskbarTooltip}
 
 
 
@@ -1543,6 +1574,7 @@ Example
 
 
 ### enableVirtualization<span class="type-signature type boolean">boolean</span>
+{:#enableVirtualization}
 
 
 
@@ -1590,6 +1622,7 @@ Example
 
 
 ### endDateMapping<span class="type-signature type string">string</span>
+{:#endDateMapping}
 
 
 
@@ -1637,6 +1670,7 @@ Example
 
 
 ### highlightWeekends<span class="type-signature type boolean">boolean</span>
+{:#highlightWeekends}
 
 
 
@@ -1684,6 +1718,7 @@ Example
 
 
 ### holidays<span class="type-signature type array">array</span>
+{:#holidays}
 
 
 
@@ -1734,6 +1769,7 @@ Example
 
 
 ### includeWeekend<span class="type-signature type boolean">boolean</span>
+{:#includeWeekend}
 
 
 
@@ -1781,6 +1817,7 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
+{:#locale}
 
 
 
@@ -1828,6 +1865,7 @@ Example
 
 
 ### milestoneMapping<span class="type-signature type string">string</span>
+{:#milestoneMapping}
 
 
 
@@ -1875,6 +1913,7 @@ Example
 
 
 ### parentProgressbarBackground<span class="type-signature type string">string</span>
+{:#parentProgressbarBackground}
 
 
 
@@ -1923,6 +1962,7 @@ Example
 
 
 ### parentTaskbarBackground<span class="type-signature type string">string</span>
+{:#parentTaskbarBackground}
 
 
 
@@ -1971,6 +2011,7 @@ Example
 
 
 ### parentTaskIdMapping<span class="type-signature type string">string</span>
+{:#parentTaskIdMapping}
 
 
 
@@ -2018,6 +2059,7 @@ Example
 
 
 ### predecessorMapping<span class="type-signature type string">string</span>
+{:#predecessorMapping}
 
 
 
@@ -2065,6 +2107,7 @@ Example
 
 
 ### progressbarBackground<span class="type-signature type string">string</span>
+{:#progressbarBackground}
 
 
 
@@ -2113,6 +2156,7 @@ Example
 
 
 ### progressbarHeight<span class="type-signature type number">number</span>
+{:#progressbarHeight}
 
 
 
@@ -2161,6 +2205,7 @@ Example
 
 
 ### progressbarTooltipTemplate<span class="type-signature type string">string</span>
+{:#progressbarTooltipTemplate}
 
 
 
@@ -2211,6 +2256,7 @@ Example
 
 
 ### progressbarTooltipTemplateId<span class="type-signature type string">string</span>
+{:#progressbarTooltipTemplateId}
 
 
 
@@ -2261,6 +2307,7 @@ Example
 
 
 ### progressMapping<span class="type-signature type string">string</span>
+{:#progressMapping}
 
 
 
@@ -2308,6 +2355,7 @@ Example
 
 
 ### query<span class="type-signature type object">object</span>
+{:#query}
 
 
 
@@ -2357,6 +2405,7 @@ Example
 
 
 ### renderBaseline<span class="type-signature type boolean">boolean</span>
+{:#renderBaseline}
 
 
 
@@ -2407,6 +2456,7 @@ Example
 
 
 ### resourceIdMapping<span class="type-signature type string">string</span>
+{:#resourceIdMapping}
 
 
 
@@ -2457,6 +2507,7 @@ Example
 
 
 ### resourceInfoMapping<span class="type-signature type string">string</span>
+{:#resourceInfoMapping}
 
 
 
@@ -2504,6 +2555,7 @@ Example
 
 
 ### resourceNameMapping<span class="type-signature type string">string</span>
+{:#resourceNameMapping}
 
 
 
@@ -2554,6 +2606,7 @@ Example
 
 
 ### resources<span class="type-signature type array">array</span>
+{:#resources}
 
 
 
@@ -2604,6 +2657,7 @@ Example
 
 
 ### roundOffDayworkingTime<span class="type-signature type boolean">boolean</span>
+{:#roundOffDayworkingTime}
 
 
 
@@ -2652,6 +2706,7 @@ Example
 
 
 ### rowHeight<span class="type-signature type number">number</span>
+{:#rowHeight}
 
 
 
@@ -2701,6 +2756,7 @@ Example
 
 
 ### scheduleEndDate<span class="type-signature type string">string</span>
+{:#scheduleEndDate}
 
 
 
@@ -2751,6 +2807,7 @@ Example
 
 
 ### scheduleHeaderSettings<span class="type-signature type object">object</span>
+{:#scheduleHeaderSettings}
 
 
 
@@ -2772,6 +2829,7 @@ Specifies the options for customizing schedule header.
 
 
 ### scheduleHeaderSettings.dayHeaderFormat<span class="type-signature type string">string</span>
+{:#scheduleHeaderSettings-dayHeaderFormat}
 
 
 
@@ -2821,6 +2879,7 @@ Example
 
 
 ### scheduleHeaderSettings.hourHeaderFormat<span class="type-signature type string">string</span>
+{:#scheduleHeaderSettings-hourHeaderFormat}
 
 
 
@@ -2870,6 +2929,7 @@ Example
 
 
 ### scheduleHeaderSettings.minutesPerInterval<span class="type-signature type enum">enum</span>
+{:#scheduleHeaderSettings-minutesPerInterval}
 
 
 
@@ -2918,6 +2978,7 @@ Example
 
 
 ### scheduleHeaderSettings.monthHeaderFormat<span class="type-signature type string">string</span>
+{:#scheduleHeaderSettings-monthHeaderFormat}
 
 
 
@@ -2967,6 +3028,7 @@ Example
 
 
 ### scheduleHeaderSettings.scheduleHeaderType<span class="type-signature type enum">enum</span>
+{:#scheduleHeaderSettings-scheduleHeaderType}
 
 
 
@@ -3016,6 +3078,7 @@ Example
 
 
 ### scheduleHeaderSettings.weekendBackground<span class="type-signature type string">string</span>
+{:#scheduleHeaderSettings-weekendBackground}
 
 
 
@@ -3064,6 +3127,7 @@ Example
 
 
 ### scheduleHeaderSettings.weekHeaderFormat<span class="type-signature type string">string</span>
+{:#scheduleHeaderSettings-weekHeaderFormat}
 
 
 
@@ -3113,6 +3177,7 @@ Example
 
 
 ### scheduleHeaderSettings.yearHeaderFormat<span class="type-signature type string">string</span>
+{:#scheduleHeaderSettings-yearHeaderFormat}
 
 
 
@@ -3162,6 +3227,7 @@ Example
 
 
 ### scheduleStartDate<span class="type-signature type string">string</span>
+{:#scheduleStartDate}
 
 
 
@@ -3212,6 +3278,7 @@ Example
 
 
 ### selectedItem<span class="type-signature type number">number</span>
+{:#selectedItem}
 
 
 
@@ -3262,6 +3329,7 @@ Example
 
 
 ### selectedRowIndex<span class="type-signature type number">number</span>
+{:#selectedRowIndex}
 
 
 
@@ -3312,6 +3380,7 @@ Example
 
 
 ### showColumnChooser<span class="type-signature type boolean">boolean</span>
+{:#showColumnChooser}
 
 
 
@@ -3359,6 +3428,7 @@ Example
 
 
 ### showGridCellTooltip<span class="type-signature type boolean">boolean</span>
+{:#showGridCellTooltip}
 
 
 
@@ -3407,6 +3477,7 @@ Example
 
 
 ### showGridExpandCellTooltip<span class="type-signature type boolean">boolean</span>
+{:#showGridExpandCellTooltip}
 
 
 
@@ -3455,6 +3526,7 @@ Example
 
 
 ### showProgressStatus<span class="type-signature type boolean">boolean</span>
+{:#showProgressStatus}
 
 
 
@@ -3503,6 +3575,7 @@ Example
 
 
 ### showResourceNames<span class="type-signature type boolean">boolean</span>
+{:#showResourceNames}
 
 
 
@@ -3551,6 +3624,7 @@ Example
 
 
 ### showTaskNames<span class="type-signature type boolean">boolean</span>
+{:#showTaskNames}
 
 
 
@@ -3599,6 +3673,7 @@ Example
 
 
 ### sizeSettings<span class="type-signature type object">object</span>
+{:#sizeSettings}
 
 
 
@@ -3620,6 +3695,7 @@ Specifies the size option of gantt control.
 
 
 ### sizeSettings.height<span class="type-signature type string">string</span>
+{:#sizeSettings-height}
 
 
 
@@ -3670,6 +3746,7 @@ Example
 
 
 ### sizeSettings.width<span class="type-signature type string">string</span>
+{:#sizeSettings-width}
 
 
 
@@ -3720,6 +3797,7 @@ Example
 
 
 ### sortSettings<span class="type-signature type object">object</span>
+{:#sortSettings}
 
 
 
@@ -3741,6 +3819,7 @@ Specifies the sorting options for gantt.
 
 
 ### sortSettings.sortedColumns<span class="type-signature type array">array</span>
+{:#sortSettings-sortedColumns}
 
 
 
@@ -3788,6 +3867,7 @@ Example
 
 
 ### splitterPosition<span class="type-signature type string">string</span>
+{:#splitterPosition}
 
 
 
@@ -3835,6 +3915,7 @@ Example
 
 
 ### startDateMapping<span class="type-signature type string">string</span>
+{:#startDateMapping}
 
 
 
@@ -3882,6 +3963,7 @@ Example
 
 
 ### stripLines<span class="type-signature type string">string</span>
+{:#stripLines}
 
 
 
@@ -3937,6 +4019,7 @@ Example
 
 
 ### taskbarBackground<span class="type-signature type string">string</span>
+{:#taskbarBackground}
 
 
 
@@ -3985,6 +4068,7 @@ Example
 
 
 ### taskbarEditingTooltipTemplate<span class="type-signature type string">string</span>
+{:#taskbarEditingTooltipTemplate}
 
 
 
@@ -4035,6 +4119,7 @@ Example
 
 
 ### taskbarEditingTooltipTemplateId<span class="type-signature type string">string</span>
+{:#taskbarEditingTooltipTemplateId}
 
 
 
@@ -4085,6 +4170,7 @@ Example
 
 
 ### taskbarTooltipTemplate<span class="type-signature type string">string</span>
+{:#taskbarTooltipTemplate}
 
 
 
@@ -4135,6 +4221,7 @@ Example
 
 
 ### taskbarTooltipTemplateId<span class="type-signature type string">string</span>
+{:#taskbarTooltipTemplateId}
 
 
 
@@ -4185,6 +4272,7 @@ Example
 
 
 ### taskIdMapping<span class="type-signature type string">string</span>
+{:#taskIdMapping}
 
 
 
@@ -4232,6 +4320,7 @@ Example
 
 
 ### taskNameMapping<span class="type-signature type string">string</span>
+{:#taskNameMapping}
 
 
 
@@ -4279,6 +4368,7 @@ Example
 
 
 ### toolbarSettings<span class="type-signature type object">object</span>
+{:#toolbarSettings}
 
 
 
@@ -4300,6 +4390,7 @@ Specifies the toolbarSettings options.
 
 
 ### toolbarSettings.showToolBar<span class="type-signature type boolean">boolean</span>
+{:#toolbarSettings-showToolBar}
 
 
 
@@ -4347,6 +4438,7 @@ Example
 
 
 ### toolbarSettings.toolbarItems<span class="type-signature type array">array</span>
+{:#toolbarSettings-toolbarItems}
 
 
 
@@ -4394,6 +4486,7 @@ Example
 
 
 ### treeColumnIndex<span class="type-signature type number">number</span>
+{:#treeColumnIndex}
 
 
 
@@ -4444,6 +4537,7 @@ Example
 
 
 ### weekendBackground<span class="type-signature type string">string</span>
+{:#weekendBackground}
 
 
 
@@ -4494,6 +4588,7 @@ Example
 
 
 ### workingTimeScale<span class="type-signature type enum">enum</span>
+{:#workingTimeScale}
 
 
 
@@ -4550,6 +4645,7 @@ Example
 
 
 ### addRecord<span class="signature">()</span>
+{:#addRecord}
 
 
 
@@ -4595,6 +4691,7 @@ $("#gantt").ejGantt("addRecord",data);
 
 
 ### cancelEdit<span class="signature">()</span>
+{:#cancelEdit}
 
 
 
@@ -4638,6 +4735,7 @@ $("#gantt").ejGantt("cancelEdit");
 
 
 ### collapseAllItems<span class="signature">()</span>
+{:#collapseAllItems}
 
 
 
@@ -4681,6 +4779,7 @@ $("#gantt").ejGantt("collapseAllItems");
 
 
 ### deleteItem<span class="signature">()</span>
+{:#deleteItem}
 
 
 
@@ -4724,6 +4823,7 @@ $("#gantt").ejGantt("deleteItem");
 
 
 ### destroy<span class="signature">()</span>
+{:#destroy}
 
 
 
@@ -4767,6 +4867,7 @@ $("#gantt").ejGantt("destroy");
 
 
 ### expandAllItems<span class="signature">()</span>
+{:#expandAllItems}
 
 
 
@@ -4810,6 +4911,7 @@ $("#gantt").ejGantt("expandAllItems");
 
 
 ### expandCollapseRecord<span class="signature">()</span>
+{:#expandCollapseRecord}
 
 
 
@@ -4853,6 +4955,7 @@ $("#gantt").ejGantt("expandCollapseRecord" , "23");
 
 
 ### hideColumn<span class="signature">(width)</span>
+{:#hideColumn}
 
 
 
@@ -4903,6 +5006,7 @@ gantObj.ejGantt("hideColumn","Task Name");
 
 
 ### indentItem<span class="signature">()</span>
+{:#indentItem}
 
 
 
@@ -4946,6 +5050,7 @@ $("#gantt").ejGantt("indentItem");
 
 
 ### openAddDialog<span class="signature">()</span>
+{:#openAddDialog}
 
 
 
@@ -4989,6 +5094,7 @@ $("#gantt").ejGantt("openAddDialog");
 
 
 ### openEditDialog<span class="signature">()</span>
+{:#openEditDialog}
 
 
 
@@ -5032,6 +5138,7 @@ $("#gantt").ejGantt("openEditDialog");
 
 
 ### outdentItem<span class="signature">()</span>
+{:#outdentItem}
 
 
 
@@ -5075,6 +5182,7 @@ $("#gantt").ejGantt("outdentItem");
 
 
 ### saveEdit<span class="signature">()</span>
+{:#saveEdit}
 
 
 
@@ -5118,6 +5226,7 @@ $("#gantt").ejGantt("saveEdit");
 
 
 ### searchItem<span class="signature">()</span>
+{:#searchItem}
 
 
 
@@ -5161,6 +5270,7 @@ $("#gantt").ejGantt("searchItem",$("#text").val());
 
 
 ### setSplitterPosition<span class="signature">(width)</span>
+{:#setSplitterPosition}
 
 
 
@@ -5211,6 +5321,7 @@ gantObj.ejGantt("setSplitterPosition","40%");
 
 
 ### showColumn<span class="signature">(width)</span>
+{:#showColumn}
 
 
 
@@ -5268,6 +5379,7 @@ gantObj.ejGantt("showColumn","Task Name");
 
 
 ### actionBegin
+{:#actionBegin}
 
 
 
@@ -5549,6 +5661,7 @@ $("#gantt").ejGantt({
 
 
 ### actionComplete
+{:#actionComplete}
 
 
 
@@ -5830,6 +5943,7 @@ $("#gantt").ejGantt({
 
 
 ### beginEdit
+{:#beginEdit}
 
 
 
@@ -5916,6 +6030,7 @@ $("#gantt").ejGantt({
 
 
 ### collapsed
+{:#collapsed}
 
 
 
@@ -5992,6 +6107,7 @@ $("#gantt").ejGantt({
 
 
 ### collapsing
+{:#collapsing}
 
 
 
@@ -6068,6 +6184,7 @@ $("#gantt").ejGantt({
 
 
 ### contextMenuOpen
+{:#contextMenuOpen}
 
 
 
@@ -6154,6 +6271,7 @@ $("#gantt").ejGantt({
 
 
 ### endEdit
+{:#endEdit}
 
 
 
@@ -6245,6 +6363,7 @@ $("#gantt").ejGantt({
 
 
 ### expanded
+{:#expanded}
 
 
 
@@ -6321,6 +6440,7 @@ $("#gantt").ejGantt({
 
 
 ### expanding
+{:#expanding}
 
 
 
@@ -6397,6 +6517,7 @@ $("#gantt").ejGantt({
 
 
 ### load
+{:#load}
 
 
 
@@ -6473,6 +6594,7 @@ $("#gantt").ejGantt({
 
 
 ### queryCellInfo
+{:#queryCellInfo}
 
 
 
@@ -6559,6 +6681,7 @@ $("#gantt").ejGantt({
 
 
 ### queryTaskbarInfo
+{:#queryTaskbarInfo}
 
 
 
@@ -6640,6 +6763,7 @@ $("#gantt").ejGantt({
 
 
 ### rowDataBound
+{:#rowDataBound}
 
 
 
@@ -6716,6 +6840,7 @@ $("#gantt").ejGantt({
 
 
 ### rowSelected
+{:#rowSelected}
 
 
 
@@ -6797,6 +6922,7 @@ $("#gantt").ejGantt({
 
 
 ### rowSelecting
+{:#rowSelecting}
 
 
 
@@ -6878,6 +7004,7 @@ $("#gantt").ejGantt({
 
 
 ### taskbarEdited
+{:#taskbarEdited}
 
 
 
@@ -6984,6 +7111,7 @@ $("#gantt").ejGantt({
 
 
 ### taskbarEditing
+{:#taskbarEditing}
 
 
 

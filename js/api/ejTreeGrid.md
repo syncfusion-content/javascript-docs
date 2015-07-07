@@ -81,6 +81,7 @@ Requires
 
 
 ### allowColumnResize<span class="type-signature type boolean">boolean</span>
+{:#allowColumnResize}
 
 
 
@@ -128,6 +129,7 @@ Example
 
 
 ### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
+{:#allowDragAndDrop}
 
 
 
@@ -176,6 +178,7 @@ Example
 
 
 ### allowFiltering<span class="type-signature type boolean">boolean</span>
+{:#allowFiltering}
 
 
 
@@ -224,6 +227,7 @@ Example
 
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+{:#allowKeyboardNavigation}
 
 
 
@@ -271,6 +275,7 @@ Example
 
 
 ### allowMultiSorting<span class="type-signature type boolean">boolean</span>
+{:#allowMultiSorting}
 
 
 
@@ -318,6 +323,7 @@ Example
 
 
 ### allowSelection<span class="type-signature type boolean">boolean</span>
+{:#allowSelection}
 
 
 
@@ -365,6 +371,7 @@ Example
 
 
 ### allowSorting<span class="type-signature type boolean">boolean</span>
+{:#allowSorting}
 
 
 
@@ -413,6 +420,7 @@ Example
 
 
 ### altRowTemplateID<span class="type-signature type string">string</span>
+{:#altRowTemplateID}
 
 
 
@@ -463,6 +471,7 @@ Example
 
 
 ### columns<span class="type-signature type array">array</span>
+{:#columns}
 
 
 
@@ -499,6 +508,7 @@ Example
 
 
 ### columns.allowFiltering<span class="type-signature type boolean">boolean</span>
+{:#columns-allowFiltering}
 
 
 
@@ -547,6 +557,7 @@ Example
 
 
 ### columns.allowSorting<span class="type-signature type boolean">boolean</span>
+{:#columns-allowSorting}
 
 
 
@@ -595,6 +606,7 @@ Example
 
 
 ### columns.editType<span class="type-signature type string">string</span>
+{:#columns-editType}
 
 
 
@@ -642,6 +654,7 @@ Example
 
 
 ### columns.field<span class="type-signature type string">string</span>
+{:#columns-field}
 
 
 
@@ -689,6 +702,7 @@ Example
 
 
 ### columns.filterEditType<span class="type-signature type string">string</span>
+{:#columns-filterEditType}
 
 
 
@@ -736,6 +750,7 @@ Example
 
 
 ### columns.headerText<span class="type-signature type string">string</span>
+{:#columns-headerText}
 
 
 
@@ -783,6 +798,7 @@ Example
 
 
 ### columns.visible<span class="type-signature type boolean">boolean</span>
+{:#columns-visible}
 
 
 
@@ -830,6 +846,7 @@ Example
 
 
 ### contextMenuSettings<span class="type-signature type object">object</span>
+{:#contextMenuSettings}
 
 
 
@@ -851,6 +868,7 @@ Specifies the contextMenuSettings options.
 
 
 ### contextMenuSettings.contextMenuItems<span class="type-signature type array">array</span>
+{:#contextMenuSettings-contextMenuItems}
 
 
 
@@ -898,6 +916,7 @@ Example
 
 
 ### contextMenuSettings.showContextMenu<span class="type-signature type boolean">boolean</span>
+{:#contextMenuSettings-showContextMenu}
 
 
 
@@ -945,6 +964,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -992,6 +1012,7 @@ Example
 
 
 ### dataSource<span class="type-signature type array">array</span>
+{:#dataSource}
 
 
 
@@ -1042,6 +1063,7 @@ Example
 
 
 ### dragTooltip<span class="type-signature type object">object</span>
+{:#dragTooltip}
 
 
 
@@ -1063,6 +1085,7 @@ Specifies the drag Tooltip options.
 
 
 ### dragTooltip.showTooltip<span class="type-signature type boolean">boolean</span>
+{:#dragTooltip-showTooltip}
 
 
 
@@ -1110,6 +1133,7 @@ Example
 
 
 ### dragTooltip.tooltipItems<span class="type-signature type array">array</span>
+{:#dragTooltip-tooltipItems}
 
 
 
@@ -1157,6 +1181,7 @@ Example
 
 
 ### dragTooltip.tooltipTemplate<span class="type-signature type string">string</span>
+{:#dragTooltip-tooltipTemplate}
 
 
 
@@ -1204,6 +1229,7 @@ Example
 
 
 ### editSettings<span class="type-signature type object">object</span>
+{:#editSettings}
 
 
 
@@ -1225,6 +1251,7 @@ Specifies the editSettings options in treegrid.
 
 
 ### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
+{:#editSettings-allowAdding}
 
 
 
@@ -1272,6 +1299,7 @@ Example
 
 
 ### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
+{:#editSettings-allowDeleting}
 
 
 
@@ -1319,6 +1347,7 @@ Example
 
 
 ### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
+{:#editSettings-allowEditing}
 
 
 
@@ -1366,6 +1395,7 @@ Example
 
 
 ### editSettings.editMode<span class="type-signature type string">string</span>
+{:#editSettings-editMode}
 
 
 
@@ -1413,6 +1443,7 @@ Example
 
 
 ### editSettings.rowPosition<span class="type-signature type string">string</span>
+{:#editSettings-rowPosition}
 
 
 
@@ -1460,6 +1491,7 @@ Example
 
 
 ### enableAltRow<span class="type-signature type boolean">boolean</span>
+{:#enableAltRow}
 
 
 
@@ -1507,6 +1539,7 @@ Example
 
 
 ### enableCollapseAll<span class="type-signature type boolean">boolean</span>
+{:#enableCollapseAll}
 
 
 
@@ -1557,6 +1590,7 @@ Example
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
+{:#enableResize}
 
 
 
@@ -1604,6 +1638,7 @@ Example
 
 
 ### enableVirtualization<span class="type-signature type boolean">boolean</span>
+{:#enableVirtualization}
 
 
 
@@ -1651,6 +1686,7 @@ Example
 
 
 ### filterBarMode<span class="type-signature type enum">enum</span>
+{:#filterBarMode}
 
 
 
@@ -1699,6 +1735,7 @@ Example
 
 
 ### idMapping<span class="type-signature type string">string</span>
+{:#idMapping}
 
 
 
@@ -1746,6 +1783,7 @@ Example
 
 
 ### parentIdMapping<span class="type-signature type string">string</span>
+{:#parentIdMapping}
 
 
 
@@ -1793,6 +1831,7 @@ Example
 
 
 ### query<span class="type-signature type object">object</span>
+{:#query}
 
 
 
@@ -1842,6 +1881,7 @@ Example
 
 
 ### rowHeight<span class="type-signature type number">number</span>
+{:#rowHeight}
 
 
 
@@ -1891,6 +1931,7 @@ Example
 
 
 ### rowTemplateID<span class="type-signature type string">string</span>
+{:#rowTemplateID}
 
 
 
@@ -1941,6 +1982,7 @@ Example
 
 
 ### selectedItem<span class="type-signature type numeric">numeric</span>
+{:#selectedItem}
 
 
 
@@ -1988,6 +2030,7 @@ Example
 
 
 ### selectedRowIndex<span class="type-signature type number">number</span>
+{:#selectedRowIndex}
 
 
 
@@ -2038,6 +2081,7 @@ Example
 
 
 ### selectionType<span class="type-signature type string">string</span>
+{:#selectionType}
 
 
 
@@ -2085,6 +2129,7 @@ Example
 
 
 ### showColumnChooser<span class="type-signature type boolean">boolean</span>
+{:#showColumnChooser}
 
 
 
@@ -2132,6 +2177,7 @@ Example
 
 
 ### showGridCellTooltip<span class="type-signature type boolean">boolean</span>
+{:#showGridCellTooltip}
 
 
 
@@ -2180,6 +2226,7 @@ Example
 
 
 ### showGridExpandCellTooltip<span class="type-signature type boolean">boolean</span>
+{:#showGridExpandCellTooltip}
 
 
 
@@ -2228,6 +2275,7 @@ Example
 
 
 ### sizeSettings<span class="type-signature type object">object</span>
+{:#sizeSettings}
 
 
 
@@ -2249,6 +2297,7 @@ Specifies the size options for Treegrid.
 
 
 ### sizeSettings.height<span class="type-signature type string">string</span>
+{:#sizeSettings-height}
 
 
 
@@ -2296,6 +2345,7 @@ Example
 
 
 ### sizeSettings.width<span class="type-signature type string">string</span>
+{:#sizeSettings-width}
 
 
 
@@ -2343,6 +2393,7 @@ Example
 
 
 ### sortSettings<span class="type-signature type object">object</span>
+{:#sortSettings}
 
 
 
@@ -2364,6 +2415,7 @@ Specifes the sorting options for Treegrid.
 
 
 ### sortSettings.sortedColumns<span class="type-signature type array">array</span>
+{:#sortSettings-sortedColumns}
 
 
 
@@ -2411,6 +2463,7 @@ Example
 
 
 ### toolbarSettings<span class="type-signature type object">object</span>
+{:#toolbarSettings}
 
 
 
@@ -2432,6 +2485,7 @@ Specifies the toolbarSettings options.
 
 
 ### toolbarSettings.showToolBar<span class="type-signature type boolean">boolean</span>
+{:#toolbarSettings-showToolBar}
 
 
 
@@ -2479,6 +2533,7 @@ Example
 
 
 ### toolbarSettings.toolbarItems<span class="type-signature type array">array</span>
+{:#toolbarSettings-toolbarItems}
 
 
 
@@ -2526,6 +2581,7 @@ Example
 
 
 ### treeColumnIndex<span class="type-signature type number">number</span>
+{:#treeColumnIndex}
 
 
 
@@ -2583,6 +2639,7 @@ Example
 
 
 ### clearSelection<span class="signature">(index)</span>
+{:#clearSelection}
 
 
 
@@ -2642,6 +2699,7 @@ $("#treegrid").ejTreeGrid("clearSelection",2);
 
 
 ### collapseAll<span class="signature">()</span>
+{:#collapseAll}
 
 
 
@@ -2685,6 +2743,7 @@ $("#treegrid").ejTreeGrid("collapseAll");
 
 
 ### hideColumn<span class="signature">(headerText)</span>
+{:#hideColumn}
 
 
 
@@ -2736,6 +2795,7 @@ treegridObj.hideColumn("Task Name");
 
 
 ### refresh<span class="signature">(dataSource, query)</span>
+{:#refresh}
 
 
 
@@ -2793,6 +2853,7 @@ treegridObj.refresh(dataManager, query) // To refresh the tree grid content
 
 
 ### saveCell<span class="signature">()</span>
+{:#saveCell}
 
 
 
@@ -2836,6 +2897,7 @@ $("#treegrid").ejTreeGrid("saveCell");
 
 
 ### search<span class="signature">(searchString)</span>
+{:#search}
 
 
 
@@ -2895,6 +2957,7 @@ $("#treegrid").ejTreeGrid("search","Plan");
 
 
 ### showColumn<span class="signature">(headerText)</span>
+{:#showColumn}
 
 
 
@@ -2945,6 +3008,7 @@ treegridObj.showColumn("Task Name");
 
 
 ### sortColumn<span class="signature">(columnName, columnSortDirection)</span>
+{:#sortColumn}
 
 
 
@@ -3016,6 +3080,7 @@ $("#treegrid").ejTreeGrid("sortColumn","Start Date", ej.sortOrder.Descending);
 
 
 ### actionBegin
+{:#actionBegin}
 
 
 
@@ -3233,6 +3298,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### actionComplete
+{:#actionComplete}
 
 
 
@@ -3514,6 +3580,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### beginEdit
+{:#beginEdit}
 
 
 
@@ -3600,6 +3667,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### collapsed
+{:#collapsed}
 
 
 
@@ -3676,6 +3744,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### collapsing
+{:#collapsing}
 
 
 
@@ -3752,6 +3821,7 @@ $("#TreeGrid").ejTreeGrid({
 
 
 ### contextMenuOpen
+{:#contextMenuOpen}
 
 
 
@@ -3838,6 +3908,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### endEdit
+{:#endEdit}
 
 
 
@@ -3929,6 +4000,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### expanded
+{:#expanded}
 
 
 
@@ -4005,6 +4077,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### expanding
+{:#expanding}
 
 
 
@@ -4081,6 +4154,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### load
+{:#load}
 
 
 
@@ -4157,6 +4231,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### queryCellInfo
+{:#queryCellInfo}
 
 
 
@@ -4243,6 +4318,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowDataBound
+{:#rowDataBound}
 
 
 
@@ -4319,6 +4395,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowDrag
+{:#rowDrag}
 
 
 
@@ -4425,6 +4502,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowDragStart
+{:#rowDragStart}
 
 
 
@@ -4516,6 +4594,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowDragStop
+{:#rowDragStop}
 
 
 
@@ -4617,6 +4696,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowSelected
+{:#rowSelected}
 
 
 
@@ -4698,6 +4778,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowSelecting
+{:#rowSelecting}
 
 
 

@@ -99,6 +99,7 @@ Requires
 
 
 ### buttonText<span class="type-signature type string">String</span>
+{:#buttonText}
 
 
 
@@ -147,6 +148,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">String</span>
+{:#cssClass}
 
 
 
@@ -195,6 +197,7 @@ Example
 
 
 ### dateFormat<span class="type-signature type string">String</span>
+{:#dateFormat}
 
 
 
@@ -243,6 +246,7 @@ Example
 
 
 ### dayHeaderFormat<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+{:#dayHeaderFormat}
 
 
 
@@ -291,6 +295,7 @@ Example
 
 
 ### depthLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+{:#depthLevel}
 
 
 
@@ -339,6 +344,7 @@ Example
 
 
 ### displayDefaultDate<span class="type-signature type boolean">Boolean</span>
+{:#displayDefaultDate}
 
 
 
@@ -387,6 +393,7 @@ Example
 
 
 ### displayInline<span class="type-signature type boolean">Boolean</span>
+{:#displayInline}
 
 
 
@@ -435,6 +442,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">Boolean</span>
+{:#enableAnimation}
 
 
 
@@ -484,6 +492,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
+{:#enabled}
 
 
 
@@ -532,6 +541,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">Boolean</span>
+{:#enablePersistence}
 
 
 
@@ -580,6 +590,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
+{:#enableRTL}
 
 
 
@@ -628,6 +639,7 @@ Example
 
 
 ### enableStrictMode<span class="type-signature type boolean">Boolean</span>
+{:#enableStrictMode}
 
 
 
@@ -676,6 +688,7 @@ Example
 
 
 ### fields<span class="type-signature type object">object</span>
+{:#fields}
 
 
 
@@ -726,6 +739,7 @@ specialDates: window.spldays, fields: {date:"date",tooltip:"tooltip",icon:"icon"
 
 
 ### fields.date<span class="type-signature type string">String</span>
+{:#fields-date}
 
 
 
@@ -747,6 +761,7 @@ Specifies the date to datepicker.
 
 
 ### fields.icon<span class="type-signature type string">String</span>
+{:#fields-icon}
 
 
 
@@ -768,6 +783,7 @@ Specifies the icon to date.
 
 
 ### fields.tooltip<span class="type-signature type string">String</span>
+{:#fields-tooltip}
 
 
 
@@ -789,6 +805,7 @@ Specifies the tooltip to date.
 
 
 ### headerFormat<span class="type-signature type string">String</span>
+{:#headerFormat}
 
 
 
@@ -837,6 +854,7 @@ Example
 
 
 ### height<span class="type-signature type string">String</span>
+{:#height}
 
 
 
@@ -885,6 +903,7 @@ Example
 
 
 ### highlightSection<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+{:#highlightSection}
 
 
 
@@ -933,6 +952,7 @@ Example
 
 
 ### highlightWeekend<span class="type-signature type boolean">Boolean</span>
+{:#highlightWeekend}
 
 
 
@@ -981,6 +1001,7 @@ Example
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
+{:#htmlAttributes}
 
 
 
@@ -1029,6 +1050,7 @@ Example
 
 
 ### locale<span class="type-signature type string">String</span>
+{:#locale}
 
 
 
@@ -1077,6 +1099,7 @@ Example
 
 
 ### maxDate<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+{:#maxDate}
 
 
 
@@ -1125,6 +1148,7 @@ Example
 
 
 ### minDate<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+{:#minDate}
 
 
 
@@ -1173,6 +1197,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">Boolean</span>
+{:#readOnly}
 
 
 
@@ -1221,6 +1246,7 @@ Example
 
 
 ### showFooter<span class="type-signature type boolean">Boolean</span>
+{:#showFooter}
 
 
 
@@ -1269,6 +1295,7 @@ Example
 
 
 ### showOtherMonths<span class="type-signature type boolean">Boolean</span>
+{:#showOtherMonths}
 
 
 
@@ -1317,6 +1344,7 @@ Example
 
 
 ### showPopupButton<span class="type-signature type boolean">Boolean</span>
+{:#showPopupButton}
 
 
 
@@ -1365,6 +1393,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
+{:#showRoundedCorner}
 
 
 
@@ -1413,6 +1442,7 @@ Example
 
 
 ### showTooltip<span class="type-signature type boolean">Boolean</span>
+{:#showTooltip}
 
 
 
@@ -1461,6 +1491,7 @@ Example
 
 
 ### specialDates<span class="type-signature type object">object</span>
+{:#specialDates}
 
 
 
@@ -1510,6 +1541,7 @@ $("#datepicker").ejDatePicker({specialDates:window.spldays});
 
 
 ### startDay<span class="type-signature type number">Number</span>
+{:#startDay}
 
 
 
@@ -1558,6 +1590,7 @@ Example
 
 
 ### startLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+{:#startLevel}
 
 
 
@@ -1606,6 +1639,7 @@ Example
 
 
 ### stepMonths<span class="type-signature type number">Number</span>
+{:#stepMonths}
 
 
 
@@ -1654,6 +1688,7 @@ Example
 
 
 ### validationMessage<span class="type-signature type object">object</span>
+{:#validationMessage}
 
 
 
@@ -1709,6 +1744,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
+{:#validationRules}
 
 
 
@@ -1761,6 +1797,7 @@ Example
 
 
 ### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+{:#value}
 
 
 
@@ -1809,6 +1846,7 @@ Example
 
 
 ### watermarkText<span class="type-signature type string">String</span>
+{:#watermarkText}
 
 
 
@@ -1857,6 +1895,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span>
+{:#width}
 
 
 
@@ -1912,6 +1951,7 @@ Example
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 
 
 
@@ -1955,6 +1995,7 @@ $("#datepicker").ejDatePicker("disable");
 
 
 ### enable<span class="signature">()</span>
+{:#enable}
 
 
 
@@ -1998,6 +2039,7 @@ $("#datepicker").ejDatePicker("enable");
 
 
 ### getValue<span class="signature">()</span>
+{:#getValue}
 
 
 
@@ -2013,6 +2055,7 @@ Returns the current date value in the datepicker control
 
 
 #### Returns:
+{:#Returns:}
 
 value
 
@@ -2046,6 +2089,7 @@ $("#datepicker").ejDatePicker("getValue");
 
 
 ### hide<span class="signature">()</span>
+{:#hide}
 
 
 
@@ -2089,6 +2133,7 @@ $("#datepicker").ejDatePicker("hide");
 
 
 ### show<span class="signature">()</span>
+{:#show}
 
 
 
@@ -2139,6 +2184,7 @@ $("#datepicker").ejDatePicker("show");
 
 
 ### beforeDateCreate
+{:#beforeDateCreate}
 
 
 
@@ -2209,6 +2255,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### change
+{:#change}
 
 
 
@@ -2279,6 +2326,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### close
+{:#close}
 
 
 
@@ -2349,6 +2397,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### create
+{:#create}
 
 
 
@@ -2409,6 +2458,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### destroy
+{:#destroy}
 
 
 
@@ -2469,6 +2519,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### focusIn
+{:#focusIn}
 
 
 
@@ -2529,6 +2580,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### focusOut
+{:#focusOut}
 
 
 
@@ -2589,6 +2641,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### open
+{:#open}
 
 
 
@@ -2659,6 +2712,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### select
+{:#select}
 
 
 

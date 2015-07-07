@@ -78,6 +78,7 @@ Requires
 
 
 ### applyRangeStrokeToLabels<span class="type-signature type boolean">boolean</span>
+{:#applyRangeStrokeToLabels}
 
 
 
@@ -127,6 +128,7 @@ applyRangeStrokeToLabels : true
 
 
 ### applyRangeStrokeToTicks<span class="type-signature type boolean">boolean</span>
+{:#applyRangeStrokeToTicks}
 
 
 
@@ -176,6 +178,7 @@ applyRangeStrokeToTicks : true
 
 
 ### captionSettings<span class="type-signature type object">object</span>
+{:#captionSettings}
 
 
 
@@ -197,6 +200,7 @@ Contains property to customize the caption in bullet graph.
 
 
 ### captionSettings.enableTrim<span class="type-signature type boolean">boolean</span>
+{:#captionSettings-enableTrim}
 
 
 
@@ -246,6 +250,7 @@ captionSettings :{ enableTrim : true }
 
 
 ### captionSettings.font<span class="type-signature type object">object</span>
+{:#captionSettings-font}
 
 
 
@@ -267,6 +272,7 @@ Contains property to customize the font of caption.
 
 
 ### captionSettings.font.color<span class="type-signature type string">string</span>
+{:#captionSettings-font-color}
 
 
 
@@ -316,6 +322,7 @@ captionSettings :{font :{color : "green"}}
 
 
 ### captionSettings.font.fontFamily<span class="type-signature type string">string</span>
+{:#captionSettings-font-fontFamily}
 
 
 
@@ -365,6 +372,7 @@ captionSettings :{font :{fontFamily : "algerian"}}
 
 
 ### captionSettings.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#captionSettings-font-fontStyle}
 
 
 
@@ -414,6 +422,7 @@ captionSettings :{font :{fontStyle : "italic"}}
 
 
 ### captionSettings.font.fontWeight<span class="type-signature type enum">enum</span>
+{:#captionSettings-font-fontWeight}
 
 
 
@@ -463,6 +472,7 @@ captionSettings :{font :{fontWeight : "lighter"}}
 
 
 ### captionSettings.font.opacity<span class="type-signature type number">number</span>
+{:#captionSettings-font-opacity}
 
 
 
@@ -512,6 +522,7 @@ captionSettings :{font :{opacity : 0.5}}
 
 
 ### captionSettings.font.size<span class="type-signature type string">string</span>
+{:#captionSettings-font-size}
 
 
 
@@ -561,6 +572,7 @@ captionSettings :{font :{size : "14px"}}
 
 
 ### captionSettings.indicator<span class="type-signature type object">object</span>
+{:#captionSettings-indicator}
 
 
 
@@ -582,6 +594,7 @@ Contains property to customize the indicator.
 
 
 ### captionSettings.indicator.font<span class="type-signature type object">object</span>
+{:#captionSettings-indicator-font}
 
 
 
@@ -603,6 +616,7 @@ Contains property to customize the font of indicator.
 
 
 ### captionSettings.indicator.font.color<span class="type-signature type string">string</span>
+{:#captionSettings-indicator-font-color}
 
 
 
@@ -652,6 +666,7 @@ captionSettings :{indicator :{font : { color :"green" }}}
 
 
 ### captionSettings.indicator.font.fontFamily<span class="type-signature type string">string</span>
+{:#captionSettings-indicator-font-fontFamily}
 
 
 
@@ -701,6 +716,7 @@ captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}
 
 
 ### captionSettings.indicator.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#captionSettings-indicator-font-fontStyle}
 
 
 
@@ -750,6 +766,7 @@ captionSettings :{indicator :{font : { fontStyle :"italic" }}}
 
 
 ### captionSettings.indicator.font.fontWeight<span class="type-signature type enum">enum</span>
+{:#captionSettings-indicator-font-fontWeight}
 
 
 
@@ -799,6 +816,7 @@ captionSettings :{indicator :{font : { fontWeight :"lighter" }}}
 
 
 ### captionSettings.indicator.font.opacity<span class="type-signature type number">Number</span>
+{:#captionSettings-indicator-font-opacity}
 
 
 
@@ -848,6 +866,7 @@ captionSettings :{indicator :{font : { opacity : 0.5 }}}
 
 
 ### captionSettings.indicator.font.size<span class="type-signature type string">string</span>
+{:#captionSettings-indicator-font-size}
 
 
 
@@ -897,6 +916,7 @@ captionSettings :{indicator :{font : { size :"14px" }}}
 
 
 ### captionSettings.indicator.location<span class="type-signature type object">object</span>
+{:#captionSettings-indicator-location}
 
 
 
@@ -918,6 +938,7 @@ Contains property to customize the location of indicator.
 
 
 ### captionSettings.indicator.location.x<span class="type-signature type number">number</span>
+{:#captionSettings-indicator-location-x}
 
 
 
@@ -967,6 +988,7 @@ captionSettings :{indicator :{location : { x :12 }}}
 
 
 ### captionSettings.indicator.location.y<span class="type-signature type number">number</span>
+{:#captionSettings-indicator-location-y}
 
 
 
@@ -1016,6 +1038,7 @@ captionSettings :{indicator :{location : { y :60 }}}
 
 
 ### captionSettings.indicator.padding<span class="type-signature type number">number</span>
+{:#captionSettings-indicator-padding}
 
 
 
@@ -1065,6 +1088,7 @@ captionSettings :{ indicator: {padding: 5}}
 
 
 ### captionSettings.indicator.symbol<span class="type-signature type object">object</span>
+{:#captionSettings-indicator-symbol}
 
 
 
@@ -1086,6 +1110,7 @@ Contains property to customize the symbol of indicator.
 
 
 ### captionSettings.indicator.symbol.border<span class="type-signature type object">object</span>
+{:#captionSettings-indicator-symbol-border}
 
 
 
@@ -1107,6 +1132,7 @@ Contains property to customize the border of indicator symbol.
 
 
 ### captionSettings.indicator.symbol.border.color<span class="type-signature type string">string</span>
+{:#captionSettings-indicator-symbol-border-color}
 
 
 
@@ -1156,6 +1182,7 @@ captionSettings :{indicator :{symbol : { border: { color :"green" } }}}
 
 
 ### captionSettings.indicator.symbol.border.width<span class="type-signature type number">Number</span>
+{:#captionSettings-indicator-symbol-border-width}
 
 
 
@@ -1205,6 +1232,7 @@ captionSettings :{indicator :{symbol : { border: { width : 2 } }}}
 
 
 ### captionSettings.indicator.symbol.color<span class="type-signature type string">string</span>
+{:#captionSettings-indicator-symbol-color}
 
 
 
@@ -1254,6 +1282,7 @@ captionSettings :{indicator :{symbol : { color :"green" }}}
 
 
 ### captionSettings.indicator.symbol.imageURL<span class="type-signature type string">string</span>
+{:#captionSettings-indicator-symbol-imageURL}
 
 
 
@@ -1303,6 +1332,7 @@ captionSettings :{indicator :{symbol : { imageURL :"../BulletIndicator.png" }}}
 
 
 ### captionSettings.indicator.symbol.opacity<span class="type-signature type number">number</span>
+{:#captionSettings-indicator-symbol-opacity}
 
 
 
@@ -1352,6 +1382,7 @@ captionSettings :{indicator :{symbol : { opacity :0.5 }}}
 
 
 ### captionSettings.indicator.symbol.shape<span class="type-signature type string">string</span>
+{:#captionSettings-indicator-symbol-shape}
 
 
 
@@ -1401,6 +1432,7 @@ captionSettings :{indicator :{symbol : { shape :"triangle" }}}
 
 
 ### captionSettings.indicator.symbol.size<span class="type-signature type object">object</span>
+{:#captionSettings-indicator-symbol-size}
 
 
 
@@ -1422,6 +1454,7 @@ Contains property to customize the size of indicator symbol.
 
 
 ### captionSettings.indicator.symbol.size.height<span class="type-signature type number">number</span>
+{:#captionSettings-indicator-symbol-size-height}
 
 
 
@@ -1471,6 +1504,7 @@ captionSettings :{indicator :{symbol : { size : { height: 10 } }}}
 
 
 ### captionSettings.indicator.symbol.size.width<span class="type-signature type number">number</span>
+{:#captionSettings-indicator-symbol-size-width}
 
 
 
@@ -1520,6 +1554,7 @@ captionSettings :{indicator :{symbol : { size : { width: 10 }}}
 
 
 ### captionSettings.indicator.text<span class="type-signature type string">string</span>
+{:#captionSettings-indicator-text}
 
 
 
@@ -1569,6 +1604,7 @@ captionSettings :{ indicator :{text : "Power Production"} }
 
 
 ### captionSettings.indicator.textAlignment<span class="type-signature type enum">enum</span>
+{:#captionSettings-indicator-textAlignment}
 
 
 
@@ -1618,6 +1654,7 @@ captionSettings :{ indicator:{textAlignment: 'Far'}}
 
 
 ### captionSettings.indicator.textAnchor<span class="type-signature type enum">enum</span>
+{:#captionSettings-indicator-textAnchor}
 
 
 
@@ -1667,6 +1704,7 @@ captionSettings :{ indicator: {textAnchor: 'end'}}
 
 
 ### captionSettings.indicator.textAngle<span class="type-signature type number">number</span>
+{:#captionSettings-indicator-textAngle}
 
 
 
@@ -1716,6 +1754,7 @@ captionSettings :{ indicator :{textAngle :10} }
 
 
 ### captionSettings.indicator.textPosition<span class="type-signature type enum">enum</span>
+{:#captionSettings-indicator-textPosition}
 
 
 
@@ -1765,6 +1804,7 @@ captionSettings :{ indicator: {textPosition: 'Top'}}
 
 
 ### captionSettings.indicator.textSpacing<span class="type-signature type number">number</span>
+{:#captionSettings-indicator-textSpacing}
 
 
 
@@ -1814,6 +1854,7 @@ captionSettings :{ indicator :{textSpacing :10} }
 
 
 ### captionSettings.indicator.visibile<span class="type-signature type boolean">boolean</span>
+{:#captionSettings-indicator-visibile}
 
 
 
@@ -1863,6 +1904,7 @@ captionSettings :{ indicator :{visible : true} }
 
 
 ### captionSettings.location<span class="type-signature type object">object</span>
+{:#captionSettings-location}
 
 
 
@@ -1884,6 +1926,7 @@ Contains property to customize the location.
 
 
 ### captionSettings.location.x<span class="type-signature type number">number</span>
+{:#captionSettings-location-x}
 
 
 
@@ -1933,6 +1976,7 @@ captionSettings :{location :{x :15}}
 
 
 ### captionSettings.location.y<span class="type-signature type number">number</span>
+{:#captionSettings-location-y}
 
 
 
@@ -1982,6 +2026,7 @@ captionSettings :{location :{y :15}}
 
 
 ### captionSettings.padding<span class="type-signature type number">number</span>
+{:#captionSettings-padding}
 
 
 
@@ -2031,6 +2076,7 @@ captionSettings :{padding: 2}
 
 
 ### captionSettings.subTitle<span class="type-signature type object">object</span>
+{:#captionSettings-subTitle}
 
 
 
@@ -2052,6 +2098,7 @@ Contains property to customize the subtitle.
 
 
 ### captionSettings.subTitle.font<span class="type-signature type object">object</span>
+{:#captionSettings-subTitle-font}
 
 
 
@@ -2073,6 +2120,7 @@ Contains property to customize the font of subtitle.
 
 
 ### captionSettings.subTitle.font.color<span class="type-signature type string">string</span>
+{:#captionSettings-subTitle-font-color}
 
 
 
@@ -2122,6 +2170,7 @@ captionSettings :{subTitle :{font : { color :"green" }}}
 
 
 ### captionSettings.subTitle.font.fontFamily<span class="type-signature type string">string</span>
+{:#captionSettings-subTitle-font-fontFamily}
 
 
 
@@ -2171,6 +2220,7 @@ captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}
 
 
 ### captionSettings.subTitle.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#captionSettings-subTitle-font-fontStyle}
 
 
 
@@ -2220,6 +2270,7 @@ captionSettings :{subTitle :{font : { fontStyle :"italic" }}}
 
 
 ### captionSettings.subTitle.font.fontWeight<span class="type-signature type enum">enum</span>
+{:#captionSettings-subTitle-font-fontWeight}
 
 
 
@@ -2269,6 +2320,7 @@ captionSettings :{subTitle :{font : { fontWeight :"lighter" }}}
 
 
 ### captionSettings.subTitle.font.opacity<span class="type-signature type number">number</span>
+{:#captionSettings-subTitle-font-opacity}
 
 
 
@@ -2318,6 +2370,7 @@ captionSettings :{subTitle :{font : { opacity :0.5 }}}
 
 
 ### captionSettings.subTitle.font.size<span class="type-signature type string">string</span>
+{:#captionSettings-subTitle-font-size}
 
 
 
@@ -2367,6 +2420,7 @@ captionSettings :{subTitle :{font : { size :"14px" }}}
 
 
 ### captionSettings.subTitle.location<span class="type-signature type object">object</span>
+{:#captionSettings-subTitle-location}
 
 
 
@@ -2388,6 +2442,7 @@ Contains property to customize the location of subtitle.
 
 
 ### captionSettings.subTitle.location.x<span class="type-signature type number">number</span>
+{:#captionSettings-subTitle-location-x}
 
 
 
@@ -2437,6 +2492,7 @@ captionSettings :{subTitle :{location : { x :12 }}}
 
 
 ### captionSettings.subTitle.location.y<span class="type-signature type number">number</span>
+{:#captionSettings-subTitle-location-y}
 
 
 
@@ -2486,6 +2542,7 @@ captionSettings :{subTitle :{location : { y :50 }}}
 
 
 ### captionSettings.subTitle.padding<span class="type-signature type number">number</span>
+{:#captionSettings-subTitle-padding}
 
 
 
@@ -2535,6 +2592,7 @@ captionSettings :{subTitle:{padding: 8}}
 
 
 ### captionSettings.subTitle.text<span class="type-signature type string">string</span>
+{:#captionSettings-subTitle-text}
 
 
 
@@ -2584,6 +2642,7 @@ captionSettings :{ subTitle :{text : "Power Production"} }
 
 
 ### captionSettings.subTitle.textAlignment<span class="type-signature type enum">enum</span>
+{:#captionSettings-subTitle-textAlignment}
 
 
 
@@ -2633,6 +2692,7 @@ captionSettings :{subTitle:{textAlignment: 'Far'}}
 
 
 ### captionSettings.subTitle.textAnchor<span class="type-signature type enum">enum</span>
+{:#captionSettings-subTitle-textAnchor}
 
 
 
@@ -2682,6 +2742,7 @@ captionSettings :{ subTitle: {textAnchor: 'end'}}
 
 
 ### captionSettings.subTitle.textAngle<span class="type-signature type number">number</span>
+{:#captionSettings-subTitle-textAngle}
 
 
 
@@ -2731,6 +2792,7 @@ captionSettings :{ subTitle :{textAngle :10} }
 
 
 ### captionSettings.subTitle.textPosition<span class="type-signature type enum">enum</span>
+{:#captionSettings-subTitle-textPosition}
 
 
 
@@ -2780,6 +2842,7 @@ captionSettings :{ subTitle:{textPosition: 'Right'}}
 
 
 ### captionSettings.text<span class="type-signature type string">string</span>
+{:#captionSettings-text}
 
 
 
@@ -2829,6 +2892,7 @@ captionSettings :{text : "Production"}
 
 
 ### captionSettings.textAlignment<span class="type-signature type enum">enum</span>
+{:#captionSettings-textAlignment}
 
 
 
@@ -2878,6 +2942,7 @@ captionSettings :{textAlignment: 'Center'}
 
 
 ### captionSettings.textAnchor<span class="type-signature type enum">enum</span>
+{:#captionSettings-textAnchor}
 
 
 
@@ -2927,6 +2992,7 @@ captionSettings :{textAnchor: 'middle'}
 
 
 ### captionSettings.textAngle<span class="type-signature type number">number</span>
+{:#captionSettings-textAngle}
 
 
 
@@ -2976,6 +3042,7 @@ captionSettings :{textAngle : 5}
 
 
 ### captionSettings.textPosition<span class="type-signature type enum">enum</span>
+{:#captionSettings-textPosition}
 
 
 
@@ -3025,6 +3092,7 @@ captionSettings :{textPosition: 'Top'}
 
 
 ### comparativeMeasureValue<span class="type-signature type number">number</span>
+{:#comparativeMeasureValue}
 
 
 
@@ -3074,6 +3142,7 @@ comparativeMeasureValue : 1
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
+{:#enableAnimation}
 
 
 
@@ -3123,6 +3192,7 @@ enableAnimation : false
 
 
 ### enableResizing<span class="type-signature type boolean">boolean</span>
+{:#enableResizing}
 
 
 
@@ -3172,6 +3242,7 @@ enableResizing : false
 
 
 ### flowDirection<span class="type-signature type enum">enum</span>
+{:#flowDirection}
 
 
 
@@ -3221,6 +3292,7 @@ flowDirection : "backward"
 
 
 ### height<span class="type-signature type number">number</span>
+{:#height}
 
 
 
@@ -3270,6 +3342,7 @@ height : 600
 
 
 ### orientation<span class="type-signature type enum">enum</span>
+{:#orientation}
 
 
 
@@ -3319,6 +3392,7 @@ orientation : "vertical"
 
 
 ### qualitativeRanges<span class="type-signature type array">array</span>
+{:#qualitativeRanges}
 
 
 
@@ -3340,6 +3414,7 @@ Contains property to customize the qualitative ranges.
 
 
 ### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+{:#qualitativeRanges-rangeEnd}
 
 
 
@@ -3389,6 +3464,7 @@ qualitativeRanges :[{rangeEnd : 4.5}]
 
 
 ### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+{:#qualitativeRanges-rangeEnd}
 
 
 
@@ -3438,6 +3514,7 @@ qualitativeRanges :[{rangeEnd : 7}]
 
 
 ### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+{:#qualitativeRanges-rangeEnd}
 
 
 
@@ -3487,6 +3564,7 @@ qualitativeRanges :[{rangeEnd : 5}]
 
 
 ### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+{:#qualitativeRanges-rangeOpacity}
 
 
 
@@ -3536,6 +3614,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 ### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+{:#qualitativeRanges-rangeOpacity}
 
 
 
@@ -3585,6 +3664,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 ### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+{:#qualitativeRanges-rangeOpacity}
 
 
 
@@ -3634,6 +3714,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 ### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+{:#qualitativeRanges-rangeStroke}
 
 
 
@@ -3683,6 +3764,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 ### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+{:#qualitativeRanges-rangeStroke}
 
 
 
@@ -3732,6 +3814,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 ### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+{:#qualitativeRanges-rangeStroke}
 
 
 
@@ -3781,6 +3864,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 ### qualitativeRangeSize<span class="type-signature type number">number</span>
+{:#qualitativeRangeSize}
 
 
 
@@ -3830,6 +3914,7 @@ qualitativeRangeSize : 35
 
 
 ### quantitativeScaleLength<span class="type-signature type number">number</span>
+{:#quantitativeScaleLength}
 
 
 
@@ -3879,6 +3964,7 @@ quantitativeScaleLength :500
 
 
 ### quantitativeScaleSettings<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings}
 
 
 
@@ -3900,6 +3986,7 @@ Contains all the properties to customize quantitative scale.
 
 
 ### quantitativeScaleSettings.comparativeMeasureSettings<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-comparativeMeasureSettings}
 
 
 
@@ -3921,6 +4008,7 @@ Contains property to customize the comparative measure.
 
 
 ### quantitativeScaleSettings.comparativeMeasureSettings.stroke<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-comparativeMeasureSettings-stroke}
 
 
 
@@ -3970,6 +4058,7 @@ quantitativeScaleSettings : { comparativeMeasureSettings :{ stroke :2} }
 
 
 ### quantitativeScaleSettings.comparativeMeasureSettings.width<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-comparativeMeasureSettings-width}
 
 
 
@@ -4019,6 +4108,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### quantitativeScaleSettings.featuredMeasureSettings<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-featuredMeasureSettings}
 
 
 
@@ -4040,6 +4130,7 @@ Contains property to customize the featured measure.
 
 
 ### quantitativeScaleSettings.featuredMeasureSettings.stroke<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-featuredMeasureSettings-stroke}
 
 
 
@@ -4089,6 +4180,7 @@ quantitativeScaleSettings : { featuredMeasureSettings :{stroke : 2} }
 
 
 ### quantitativeScaleSettings.featuredMeasureSettings.width<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-featuredMeasureSettings-width}
 
 
 
@@ -4138,6 +4230,7 @@ Example
 
 
 ### quantitativeScaleSettings.featureMeasures<span class="type-signature type array">array</span>
+{:#quantitativeScaleSettings-featureMeasures}
 
 
 
@@ -4159,6 +4252,7 @@ Contains property to customize the featured measure.
 
 
 ### quantitativeScaleSettings.featureMeasures.category<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-featureMeasures-category}
 
 
 
@@ -4208,6 +4302,7 @@ quantitativeScaleSettings : { featureMeasures :[{ category :null}] }
 
 
 ### quantitativeScaleSettings.featureMeasures.comparativeMeasureValue<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-featureMeasures-comparativeMeasureValue}
 
 
 
@@ -4257,6 +4352,7 @@ quantitativeScaleSettings : { featureMeasures :[{ comparativeMeasureValue :2}] }
 
 
 ### quantitativeScaleSettings.featureMeasures.value<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-featureMeasures-value}
 
 
 
@@ -4306,6 +4402,7 @@ quantitativeScaleSettings : { featureMeasures :[{ value :2}] }
 
 
 ### quantitativeScaleSettings.fields<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-fields}
 
 
 
@@ -4327,6 +4424,7 @@ Contains property to customize the fields.
 
 
 ### quantitativeScaleSettings.fields.category<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-fields-category}
 
 
 
@@ -4376,6 +4474,7 @@ fields :{category : "ProductId"}
 
 
 ### quantitativeScaleSettings.fields.comparativeMeasure<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-fields-comparativeMeasure}
 
 
 
@@ -4425,6 +4524,7 @@ fields :{comparativeMeasure : "comparativeMeasureValue"}
 
 
 ### quantitativeScaleSettings.fields.dataSource<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-fields-dataSource}
 
 
 
@@ -4509,6 +4609,7 @@ fields : {datasource :{ej.DataManger :{url : "http://mvc.syncfusion.com/Services
 
 
 ### quantitativeScaleSettings.fields.featureMeasures<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-fields-featureMeasures}
 
 
 
@@ -4558,6 +4659,7 @@ fields :{featureMeasures : "UnitPrice"}
 
 
 ### quantitativeScaleSettings.fields.query<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-fields-query}
 
 
 
@@ -4595,6 +4697,7 @@ Default Value:
 
 
 ### quantitativeScaleSettings.fields.tableName<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-fields-tableName}
 
 
 
@@ -4644,6 +4747,7 @@ fields :{tableName : "Product"}
 
 
 ### quantitativeScaleSettings.interval<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-interval}
 
 
 
@@ -4693,6 +4797,7 @@ quantitativeScaleSettings : { interval : 2 }
 
 
 ### quantitativeScaleSettings.labelSettings<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-labelSettings}
 
 
 
@@ -4714,6 +4819,7 @@ Contains property to customize the labels.
 
 
 ### quantitativeScaleSettings.labelSettings.font<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-labelSettings-font}
 
 
 
@@ -4735,6 +4841,7 @@ Contains property to customize the font of the labels in bullet graph.
 
 
 ### quantitativeScaleSettings.labelSettings.font.fontFamily<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-labelSettings-font-fontFamily}
 
 
 
@@ -4784,6 +4891,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" 
 
 
 ### quantitativeScaleSettings.labelSettings.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#quantitativeScaleSettings-labelSettings-font-fontStyle}
 
 
 
@@ -4833,6 +4941,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } }
 
 
 ### quantitativeScaleSettings.labelSettings.font.fontWeight<span class="type-signature type enum">enum</span>
+{:#quantitativeScaleSettings-labelSettings-font-fontWeight}
 
 
 
@@ -4882,6 +4991,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontWeight : "lighter" }
 
 
 ### quantitativeScaleSettings.labelSettings.font.opacity<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-labelSettings-font-opacity}
 
 
 
@@ -4931,6 +5041,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 
 
 ### quantitativeScaleSettings.labelSettings.labelPlacement<span class="type-signature type enum">enum</span>
+{:#quantitativeScaleSettings-labelSettings-labelPlacement}
 
 
 
@@ -4980,6 +5091,7 @@ quantitativeScaleSettings : { labelSettings : { labelPlacement : "inside" } }
 
 
 ### quantitativeScaleSettings.labelSettings.labelPrefix<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-labelSettings-labelPrefix}
 
 
 
@@ -5029,6 +5141,7 @@ quantitativeScaleSettings : { labelSettings : { labelPrefix : "$" } }
 
 
 ### quantitativeScaleSettings.labelSettings.labelSuffix<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-labelSettings-labelSuffix}
 
 
 
@@ -5078,6 +5191,7 @@ quantitativeScaleSettings : { labelSettings : { labelSuffix : "K" } }
 
 
 ### quantitativeScaleSettings.labelSettings.offset<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-labelSettings-offset}
 
 
 
@@ -5127,6 +5241,7 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 
 
 ### quantitativeScaleSettings.labelSettings.position<span class="type-signature type enum">enum</span>
+{:#quantitativeScaleSettings-labelSettings-position}
 
 
 
@@ -5176,6 +5291,7 @@ quantitativeScaleSettings : { labelSettings : { position : "above" } }
 
 
 ### quantitativeScaleSettings.labelSettings.size<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-labelSettings-size}
 
 
 
@@ -5225,6 +5341,7 @@ quantitativeScaleSettings : { labelSettings : { size : 10 } }
 
 
 ### quantitativeScaleSettings.labelSettings.stroke<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-labelSettings-stroke}
 
 
 
@@ -5274,6 +5391,7 @@ quantitativeScaleSettings : { labelSettings : { stroke : "green" } }
 
 
 ### quantitativeScaleSettings.location<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-location}
 
 
 
@@ -5295,6 +5413,7 @@ Contains property to customize the position of the quantitative scale
 
 
 ### quantitativeScaleSettings.location.x<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-location-x}
 
 
 
@@ -5344,6 +5463,7 @@ quantitativeScaleSettings : { location : { x : 15 } }
 
 
 ### quantitativeScaleSettings.location.y<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-location-y}
 
 
 
@@ -5393,6 +5513,7 @@ quantitativeScaleSettings : { location : { y : 15 } }
 
 
 ### quantitativeScaleSettings.majorTickSettings<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-majorTickSettings}
 
 
 
@@ -5414,6 +5535,7 @@ Contains property to customize the major tick lines.
 
 
 ### quantitativeScaleSettings.majorTickSettings.size<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-majorTickSettings-size}
 
 
 
@@ -5463,6 +5585,7 @@ quantitativeScaleSettings : { majorTickSettings : { size : 15 } }
 
 
 ### quantitativeScaleSettings.majorTickSettings.stroke<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-majorTickSettings-stroke}
 
 
 
@@ -5512,6 +5635,7 @@ quantitativeScaleSettings : { majorTickSettings : { stroke : "red" } }
 
 
 ### quantitativeScaleSettings.majorTickSettings.width<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-majorTickSettings-width}
 
 
 
@@ -5561,6 +5685,7 @@ quantitativeScaleSettings : { majorTickSettings : { width : 1 } }
 
 
 ### quantitativeScaleSettings.maximum<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-maximum}
 
 
 
@@ -5610,6 +5735,7 @@ quantitativeScaleSettings : { maximum : 8 }
 
 
 ### quantitativeScaleSettings.minimum<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-minimum}
 
 
 
@@ -5659,6 +5785,7 @@ quantitativeScaleSettings : { minimum : 1 }
 
 
 ### quantitativeScaleSettings.minorTickSettings<span class="type-signature type object">object</span>
+{:#quantitativeScaleSettings-minorTickSettings}
 
 
 
@@ -5680,6 +5807,7 @@ Contains property to customize the minor ticks.
 
 
 ### quantitativeScaleSettings.minorTickSettings.size<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-minorTickSettings-size}
 
 
 
@@ -5729,6 +5857,7 @@ quantitativeScaleSettings : { minorTickSettings : { size : 10} }
 
 
 ### quantitativeScaleSettings.minorTickSettings.stroke<span class="type-signature type string">string</span>
+{:#quantitativeScaleSettings-minorTickSettings-stroke}
 
 
 
@@ -5778,6 +5907,7 @@ quantitativeScaleSettings : { minorTickSettings : { stroke : "green" } }
 
 
 ### quantitativeScaleSettings.minorTickSettings.width<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-minorTickSettings-width}
 
 
 
@@ -5827,6 +5957,7 @@ quantitativeScaleSettings : { minorTickSettings : { width : 1 } }
 
 
 ### quantitativeScaleSettings.minorTicksPerInterval<span class="type-signature type number">number</span>
+{:#quantitativeScaleSettings-minorTicksPerInterval}
 
 
 
@@ -5876,6 +6007,7 @@ quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 
 
 ### quantitativeScaleSettings.tickPlacement<span class="type-signature type enum">enum</span>
+{:#quantitativeScaleSettings-tickPlacement}
 
 
 
@@ -5925,6 +6057,7 @@ quantitativeScaleSettings : { tickPlacement : "inside" }
 
 
 ### quantitativeScaleSettings.tickPosition<span class="type-signature type enum">enum</span>
+{:#quantitativeScaleSettings-tickPosition}
 
 
 
@@ -5974,6 +6107,7 @@ quantitativeScaleSettings : { tickPosition : "near" }
 
 
 ### theme<span class="type-signature type string">string</span>
+{:#theme}
 
 
 
@@ -6023,6 +6157,7 @@ theme : "flatdark"
 
 
 ### tooltipSettings<span class="type-signature type object">object</span>
+{:#tooltipSettings}
 
 
 
@@ -6044,6 +6179,7 @@ Contains all the properties to customize tooltip.
 
 
 ### tooltipSettings.captionTemplate<span class="type-signature type string">string</span>
+{:#tooltipSettings-captionTemplate}
 
 
 
@@ -6093,6 +6229,7 @@ tooltipSettings :{captionTemplate: "Tooltip"}
 
 
 ### tooltipSettings.enableCaptionTooltip<span class="type-signature type boolean">boolean</span>
+{:#tooltipSettings-enableCaptionTooltip}
 
 
 
@@ -6142,6 +6279,7 @@ tooltipSettings :{enableCaptionTooltip: true}
 
 
 ### tooltipSettings.template<span class="type-signature type string">string</span>
+{:#tooltipSettings-template}
 
 
 
@@ -6191,6 +6329,7 @@ tooltipSettings: { template : "tooltip"},
 
 
 ### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
+{:#tooltipSettings-visible}
 
 
 
@@ -6240,6 +6379,7 @@ tooltipSettings :{visible: false}
 
 
 ### value<span class="type-signature type number">number</span>
+{:#value}
 
 
 
@@ -6289,6 +6429,7 @@ value : 1
 
 
 ### width<span class="type-signature type number">number</span>
+{:#width}
 
 
 
@@ -6345,6 +6486,7 @@ width : 600
 
 
 ### destroy<span class="signature">()</span>
+{:#destroy}
 
 
 
@@ -6388,6 +6530,7 @@ $("#bulletGraph1").ejButton("destroy");
 
 
 ### redraw<span class="signature">()</span>
+{:#redraw}
 
 
 
@@ -6431,6 +6574,7 @@ $("#butbulletGraph1ton1").ejButton("redraw");
 
 
 ### setComparativeMeasureSymbol<span class="signature">()</span>
+{:#setComparativeMeasureSymbol}
 
 
 
@@ -6495,6 +6639,7 @@ $("#bulletGraph1").ejBulletGraph("setComparativeMeasureSymbol(1,7)");
 
 
 ### setFeatureMeasureBarValue<span class="signature">()</span>
+{:#setFeatureMeasureBarValue}
 
 
 
@@ -6566,6 +6711,7 @@ $("#bulletGraph1").ejBulletGraph("setFeatureMeasureBarValue(1,8)");
 
 
 ### drawCaption
+{:#drawCaption}
 
 
 
@@ -6628,6 +6774,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawCategory
+{:#drawCategory}
 
 
 
@@ -6690,6 +6837,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawComparativeMeasureSymbol
+{:#drawComparativeMeasureSymbol}
 
 
 
@@ -6752,6 +6900,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawFeatureMeasureBar
+{:#drawFeatureMeasureBar}
 
 
 
@@ -6814,6 +6963,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawIndicator
+{:#drawIndicator}
 
 
 
@@ -6876,6 +7026,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawLabels
+{:#drawLabels}
 
 
 
@@ -6938,6 +7089,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawQualitativeRanges
+{:#drawQualitativeRanges}
 
 
 
@@ -7000,6 +7152,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### load
+{:#load}
 
 
 

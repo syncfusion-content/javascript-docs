@@ -94,6 +94,7 @@ Requires
 
 
 ### characterSet<span class="type-signature type string">string</span>
+{:#characterSet}
 
 
 
@@ -143,6 +144,7 @@ Example
 
 
 ### customErrorMessage<span class="type-signature type string">string</span>
+{:#customErrorMessage}
 
 
 
@@ -192,6 +194,7 @@ Example
 
 
 ### enableAutoValidation<span class="type-signature type boolean">boolean</span>
+{:#enableAutoValidation}
 
 
 
@@ -241,6 +244,7 @@ Example
 
 
 ### enableCaseSensitivity<span class="type-signature type boolean">boolean</span>
+{:#enableCaseSensitivity}
 
 
 
@@ -290,6 +294,7 @@ Example
 
 
 ### enablePattern<span class="type-signature type boolean">boolean</span>
+{:#enablePattern}
 
 
 
@@ -339,6 +344,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enableRTL}
 
 
 
@@ -388,6 +394,7 @@ Example
 
 
 ### hatchStyle<span class="type-signature type enum">enum</span>
+{:#hatchStyle}
 
 
 
@@ -437,6 +444,7 @@ Example
 
 
 ### height<span class="type-signature type number">number</span>
+{:#height}
 
 
 
@@ -486,6 +494,7 @@ Example
 
 
 ### mapper<span class="type-signature type string">string</span>
+{:#mapper}
 
 
 
@@ -535,6 +544,7 @@ Example
 
 
 ### maximumLength<span class="type-signature type number">number</span>
+{:#maximumLength}
 
 
 
@@ -584,6 +594,7 @@ Example
 
 
 ### minimumLength<span class="type-signature type number">number</span>
+{:#minimumLength}
 
 
 
@@ -633,6 +644,7 @@ Example
 
 
 ### requestMapper<span class="type-signature type string">string</span>
+{:#requestMapper}
 
 
 
@@ -682,6 +694,7 @@ Example
 
 
 ### showAudioButton<span class="type-signature type boolean">boolean</span>
+{:#showAudioButton}
 
 
 
@@ -731,6 +744,7 @@ Example
 
 
 ### showRefreshButton<span class="type-signature type boolean">boolean</span>
+{:#showRefreshButton}
 
 
 
@@ -780,6 +794,7 @@ Example
 
 
 ### targetButton<span class="type-signature type string">string</span>
+{:#targetButton}
 
 
 
@@ -830,6 +845,7 @@ Example
 
 
 ### targetInput<span class="type-signature type string">string</span>
+{:#targetInput}
 
 
 
@@ -879,6 +895,7 @@ Example
 
 
 ### width<span class="type-signature type number">number</span>
+{:#width}
 
 
 
@@ -935,6 +952,7 @@ Example
 
 
 ### refreshBegin
+{:#refreshBegin}
 
 
 
@@ -995,6 +1013,7 @@ Example
 
 
 ### refreshComplete
+{:#refreshComplete}
 
 
 
@@ -1055,6 +1074,7 @@ Example
 
 
 ### refreshFailure
+{:#refreshFailure}
 
 
 
@@ -1115,6 +1135,7 @@ Example
 
 
 ### refreshSuccess
+{:#refreshSuccess}
 
 
 

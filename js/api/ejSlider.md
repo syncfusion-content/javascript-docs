@@ -79,6 +79,7 @@ Requires
 
 
 ### animationSpeed<span class="type-signature type number">number</span>
+{:#animationSpeed}
 
 
 
@@ -127,6 +128,7 @@ $("#slider").ejSlider({ animationSpeed: 500});
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -175,6 +177,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
+{:#enableAnimation}
 
 
 
@@ -223,6 +226,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
+{:#enabled}
 
 
 
@@ -270,6 +274,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
+{:#enablePersistence}
 
 
 
@@ -317,6 +322,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enableRTL}
 
 
 
@@ -367,6 +373,7 @@ Example
 
 
 ### height<span class="type-signature type string">String</span>
+{:#height}
 
 
 
@@ -414,6 +421,7 @@ Example
 
 
 ### incrementStep<span class="type-signature type number">number</span>
+{:#incrementStep}
 
 
 
@@ -463,6 +471,7 @@ Example
 
 
 ### largeStep<span class="type-signature type number">number</span>
+{:#largeStep}
 
 
 
@@ -512,6 +521,7 @@ Example
 
 
 ### maxValue<span class="type-signature type number">number</span>
+{:#maxValue}
 
 
 
@@ -561,6 +571,7 @@ Example
 
 
 ### minValue<span class="type-signature type number">number</span>
+{:#minValue}
 
 
 
@@ -611,6 +622,7 @@ Example
 
 
 ### orientation<span class="type-signature type enum">enum</span>
+{:#orientation}
 
 
 
@@ -658,6 +670,7 @@ $("#slider").ejSlider({ orientation: ej.Orientation.Vertical});
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
+{:#readOnly}
 
 
 
@@ -705,6 +718,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+{:#showRoundedCorner}
 
 
 
@@ -752,6 +766,7 @@ Example
 
 
 ### showScale<span class="type-signature type boolean">boolean</span>
+{:#showScale}
 
 
 
@@ -801,6 +816,7 @@ Example
 
 
 ### showSmallTicks<span class="type-signature type boolean">boolean</span>
+{:#showSmallTicks}
 
 
 
@@ -850,6 +866,7 @@ Example
 
 
 ### showTooltip<span class="type-signature type boolean">boolean</span>
+{:#showTooltip}
 
 
 
@@ -900,6 +917,7 @@ Example
 
 
 ### sliderType<span class="type-signature type enum">enum</span>
+{:#sliderType}
 
 
 
@@ -948,6 +966,7 @@ $("#slider").ejSlider({ sliderType: ej.SliderType.Default});
 
 
 ### smallStep<span class="type-signature type number">number</span>
+{:#smallStep}
 
 
 
@@ -997,6 +1016,7 @@ Example
 
 
 ### value<span class="type-signature type number">number</span>
+{:#value}
 
 
 
@@ -1046,6 +1066,7 @@ Example
 
 
 ### values<span class="type-signature type array">array</span>
+{:#values}
 
 
 
@@ -1095,6 +1116,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span>
+{:#width}
 
 
 
@@ -1150,6 +1172,7 @@ Example
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 
 
 
@@ -1195,6 +1218,7 @@ $("#slider").ejSlider("disable");
 
 
 ### enable<span class="signature">()</span>
+{:#enable}
 
 
 
@@ -1240,6 +1264,7 @@ $("#slider").ejSlider("enable");
 
 
 ### getValue<span class="signature">()</span>
+{:#getValue}
 
 
 
@@ -1292,6 +1317,7 @@ $("#slider").ejSlider("getValue");
 
 
 ### change
+{:#change}
 
 
 
@@ -1384,6 +1410,7 @@ $("#slider").ejSlider({
 
 
 ### create
+{:#create}
 
 
 
@@ -1461,6 +1488,7 @@ $("#slider").ejSlider({
 
 
 ### destroy
+{:#destroy}
 
 
 
@@ -1538,6 +1566,7 @@ $("#slider").ejSlider({
 
 
 ### slide
+{:#slide}
 
 
 
@@ -1630,6 +1659,7 @@ $("#slider").ejSlider({
 
 
 ### start
+{:#start}
 
 
 
@@ -1722,6 +1752,7 @@ $("#slider").ejSlider({
 
 
 ### stop
+{:#stop}
 
 
 

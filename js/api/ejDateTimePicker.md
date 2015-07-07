@@ -108,6 +108,7 @@ Requires
 
 
 ### buttonText<span class="type-signature type jsonobject">JSONObject</span>
+{:#buttonText}
 
 
 
@@ -156,6 +157,7 @@ Example
 
 
 ### buttonText.done<span class="type-signature type string">String</span>
+{:#buttonText-done}
 
 
 
@@ -188,6 +190,7 @@ Example
 
 
 ### buttonText.now<span class="type-signature type string">String</span>
+{:#buttonText-now}
 
 
 
@@ -220,6 +223,7 @@ Example
 
 
 ### buttonText.timeTitle<span class="type-signature type string">String</span>
+{:#buttonText-timeTitle}
 
 
 
@@ -252,6 +256,7 @@ Example
 
 
 ### buttonText.today<span class="type-signature type string">String</span>
+{:#buttonText-today}
 
 
 
@@ -284,6 +289,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -331,6 +337,7 @@ Example
 
 
 ### dateTimeFormat<span class="type-signature type string">String</span>
+{:#dateTimeFormat}
 
 
 
@@ -379,6 +386,7 @@ Example
 
 
 ### dayHeaderFormat<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+{:#dayHeaderFormat}
 
 
 
@@ -427,6 +435,7 @@ Example
 
 
 ### depthLevel<span class="type-signature type enum">enum</span>
+{:#depthLevel}
 
 
 
@@ -475,6 +484,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">Boolean</span>
+{:#enableAnimation}
 
 
 
@@ -524,6 +534,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
+{:#enabled}
 
 
 
@@ -572,6 +583,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">Boolean</span>
+{:#enablePersistence}
 
 
 
@@ -620,6 +632,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
+{:#enableRTL}
 
 
 
@@ -668,6 +681,7 @@ Example
 
 
 ### enableStrictMode<span class="type-signature type boolean">Boolean</span>
+{:#enableStrictMode}
 
 
 
@@ -716,6 +730,7 @@ Example
 
 
 ### headerFormat<span class="type-signature type string">String</span>
+{:#headerFormat}
 
 
 
@@ -764,6 +779,7 @@ Example
 
 
 ### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#height}
 
 
 
@@ -812,6 +828,7 @@ Example
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
+{:#htmlAttributes}
 
 
 
@@ -860,6 +877,7 @@ Example
 
 
 ### interval<span class="type-signature type number">Number</span>
+{:#interval}
 
 
 
@@ -908,6 +926,7 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
+{:#locale}
 
 
 
@@ -956,6 +975,7 @@ Example
 
 
 ### maxDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+{:#maxDateTime}
 
 
 
@@ -1004,6 +1024,7 @@ Example
 
 
 ### minDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+{:#minDateTime}
 
 
 
@@ -1052,6 +1073,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">Boolean</span>
+{:#readOnly}
 
 
 
@@ -1100,6 +1122,7 @@ Example
 
 
 ### showOtherMonths<span class="type-signature type boolean">Boolean</span>
+{:#showOtherMonths}
 
 
 
@@ -1148,6 +1171,7 @@ Example
 
 
 ### showPopupButton<span class="type-signature type boolean">Boolean</span>
+{:#showPopupButton}
 
 
 
@@ -1196,6 +1220,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
+{:#showRoundedCorner}
 
 
 
@@ -1244,6 +1269,7 @@ Example
 
 
 ### startDay<span class="type-signature type number">Number</span>
+{:#startDay}
 
 
 
@@ -1292,6 +1318,7 @@ Example
 
 
 ### startLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+{:#startLevel}
 
 
 
@@ -1340,6 +1367,7 @@ Example
 
 
 ### stepMonths<span class="type-signature type number">Number</span>
+{:#stepMonths}
 
 
 
@@ -1388,6 +1416,7 @@ Example
 
 
 ### timeDisplayFormat<span class="type-signature type string">String</span>
+{:#timeDisplayFormat}
 
 
 
@@ -1436,6 +1465,7 @@ Example
 
 
 ### timePopupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#timePopupWidth}
 
 
 
@@ -1484,6 +1514,7 @@ Example
 
 
 ### validationMessage<span class="type-signature type object">object</span>
+{:#validationMessage}
 
 
 
@@ -1539,6 +1570,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
+{:#validationRules}
 
 
 
@@ -1591,6 +1623,7 @@ Example
 
 
 ### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+{:#value}
 
 
 
@@ -1639,6 +1672,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#width}
 
 
 
@@ -1694,6 +1728,7 @@ Example
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 
 
 
@@ -1737,6 +1772,7 @@ $("#datetime").ejDateTimePicker("disable");
 
 
 ### enable<span class="signature">()</span>
+{:#enable}
 
 
 
@@ -1780,6 +1816,7 @@ $("#datetime").ejDateTimePicker("enable");
 
 
 ### getValue<span class="signature">()</span>
+{:#getValue}
 
 
 
@@ -1795,6 +1832,7 @@ Returns the current datetime value in the DateTimePicker.
 
 
 #### Returns:
+{:#Returns:}
 
 value
 
@@ -1828,6 +1866,7 @@ $("#datetime").ejDateTimePicker("getValue");
 
 
 ### hide<span class="signature">()</span>
+{:#hide}
 
 
 
@@ -1871,6 +1910,7 @@ $("#datetime").ejDateTimePicker("hide");
 
 
 ### setCurrentDateTime<span class="signature">()</span>
+{:#setCurrentDateTime}
 
 
 
@@ -1914,6 +1954,7 @@ $("#datetime").ejDateTimePicker("setCurrentDateTime");
 
 
 ### show<span class="signature">()</span>
+{:#show}
 
 
 
@@ -1964,6 +2005,7 @@ $("#datetime").ejDateTimePicker("show");
 
 
 ### change
+{:#change}
 
 
 
@@ -2039,6 +2081,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### close
+{:#close}
 
 
 
@@ -2109,6 +2152,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### create
+{:#create}
 
 
 
@@ -2169,6 +2213,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### destroy
+{:#destroy}
 
 
 
@@ -2229,6 +2274,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### focusIn
+{:#focusIn}
 
 
 
@@ -2294,6 +2340,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### focusOut
+{:#focusOut}
 
 
 
@@ -2359,6 +2406,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### open
+{:#open}
 
 
 

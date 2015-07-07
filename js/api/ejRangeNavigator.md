@@ -105,6 +105,7 @@ Requires
 
 
 ### allowSnapping<span class="type-signature type boolean">boolean</span>
+{:#allowSnapping}
 
 
 
@@ -154,6 +155,7 @@ Example
 
 
 ### dataSource<span class="type-signature type object">object</span>
+{:#dataSource}
 
 
 
@@ -185,6 +187,7 @@ Example
 
 
 ### enableAutoResizing<span class="type-signature type boolean">boolean</span>
+{:#enableAutoResizing}
 
 
 
@@ -234,6 +237,7 @@ Example
 
 
 ### enableDeferredUpdate<span class="type-signature type boolean">boolean</span>
+{:#enableDeferredUpdate}
 
 
 
@@ -283,6 +287,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enableRTL}
 
 
 
@@ -332,6 +337,7 @@ Example
 
 
 ### labelSettings<span class="type-signature type object">object</span>
+{:#labelSettings}
 
 
 
@@ -353,6 +359,7 @@ Options for customizing the labels colors, font, style, size, horizontalAlignmen
 
 
 ### labelSettings.higherLevel<span class="type-signature type object">object</span>
+{:#labelSettings-higherLevel}
 
 
 
@@ -374,6 +381,7 @@ Options for customizing the higher level labels in range navigator.
 
 
 ### labelSettings.higherLevel.border<span class="type-signature type object">object</span>
+{:#labelSettings-higherLevel-border}
 
 
 
@@ -395,6 +403,7 @@ Options for customizing the border of grid lines in higher level.
 
 
 ### labelSettings.higherLevel.border.color<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-border-color}
 
 
 
@@ -444,6 +453,7 @@ Example
 
 
 ### labelSettings.higherLevel.border.width<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-border-width}
 
 
 
@@ -493,6 +503,7 @@ Example
 
 
 ### labelSettings.higherLevel.fill<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-fill}
 
 
 
@@ -542,6 +553,7 @@ Example
 
 
 ### labelSettings.higherLevel.gridLineStyle<span class="type-signature type object">object</span>
+{:#labelSettings-higherLevel-gridLineStyle}
 
 
 
@@ -563,6 +575,7 @@ Options for customizing the grid line colors, width, dashArray, border.
 
 
 ### labelSettings.higherLevel.gridLineStyle.color<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-gridLineStyle-color}
 
 
 
@@ -611,6 +624,7 @@ Example
 
 
 ### labelSettings.higherLevel.gridLineStyle.dashArray<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-gridLineStyle-dashArray}
 
 
 
@@ -660,6 +674,7 @@ Example
 
 
 ### labelSettings.higherLevel.gridLineStyle.width<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-gridLineStyle-width}
 
 
 
@@ -709,6 +724,7 @@ Example
 
 
 ### labelSettings.higherLevel.intervalType<span class="type-signature type enum">enum</span>
+{:#labelSettings-higherLevel-intervalType}
 
 
 
@@ -758,6 +774,7 @@ Example
 
 
 ### labelSettings.higherLevel.labelPlacement<span class="type-signature type enum">enum</span>
+{:#labelSettings-higherLevel-labelPlacement}
 
 
 
@@ -807,6 +824,7 @@ Example
 
 
 ### labelSettings.higherLevel.position<span class="type-signature type enum">enum</span>
+{:#labelSettings-higherLevel-position}
 
 
 
@@ -856,6 +874,7 @@ Example
 
 
 ### labelSettings.higherLevel.style<span class="type-signature type object">object</span>
+{:#labelSettings-higherLevel-style}
 
 
 
@@ -877,6 +896,7 @@ Options for customizing the style of higher level labels.
 
 
 ### labelSettings.higherLevel.style.font<span class="type-signature type object">object</span>
+{:#labelSettings-higherLevel-style-font}
 
 
 
@@ -898,6 +918,7 @@ Options for customizing the font properties.
 
 
 ### labelSettings.higherLevel.style.font.color<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-style-font-color}
 
 
 
@@ -947,6 +968,7 @@ Example
 
 
 ### labelSettings.higherLevel.style.font.fontFamily<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-style-font-fontFamily}
 
 
 
@@ -996,6 +1018,7 @@ Example
 
 
 ### labelSettings.higherLevel.style.font.fontStyle<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-style-font-fontStyle}
 
 
 
@@ -1045,6 +1068,7 @@ Example
 
 
 ### labelSettings.higherLevel.style.font.fontWeight<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-style-font-fontWeight}
 
 
 
@@ -1094,6 +1118,7 @@ Example
 
 
 ### labelSettings.higherLevel.style.font.opacity<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-style-font-opacity}
 
 
 
@@ -1143,6 +1168,7 @@ Example
 
 
 ### labelSettings.higherLevel.style.font.size<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-style-font-size}
 
 
 
@@ -1192,6 +1218,7 @@ Example
 
 
 ### labelSettings.higherLevel.style.horizontalAlignment<span class="type-signature type string">string</span>
+{:#labelSettings-higherLevel-style-horizontalAlignment}
 
 
 
@@ -1241,6 +1268,7 @@ Example
 
 
 ### labelSettings.higherLevel.visible<span class="type-signature type boolean">boolean</span>
+{:#labelSettings-higherLevel-visible}
 
 
 
@@ -1290,6 +1318,7 @@ Example
 
 
 ### labelSettings.lowerLevel<span class="type-signature type object">object</span>
+{:#labelSettings-lowerLevel}
 
 
 
@@ -1311,6 +1340,7 @@ Options for customizing the labels in lower level.
 
 
 ### labelSettings.lowerLevel.border<span class="type-signature type object">object</span>
+{:#labelSettings-lowerLevel-border}
 
 
 
@@ -1332,6 +1362,7 @@ Options for customizing the border of grid lines in lower level.
 
 
 ### labelSettings.lowerLevel.border.color<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-border-color}
 
 
 
@@ -1381,6 +1412,7 @@ Example
 
 
 ### labelSettings.lowerLevel.border.width<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-border-width}
 
 
 
@@ -1430,6 +1462,7 @@ Example
 
 
 ### labelSettings.lowerLevel.fill<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-fill}
 
 
 
@@ -1479,6 +1512,7 @@ Example
 
 
 ### labelSettings.lowerLevel.gridLineStyle<span class="type-signature type object">object</span>
+{:#labelSettings-lowerLevel-gridLineStyle}
 
 
 
@@ -1500,6 +1534,7 @@ Options for customizing the grid lines in lower level.
 
 
 ### labelSettings.lowerLevel.gridLineStyle.color<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-gridLineStyle-color}
 
 
 
@@ -1549,6 +1584,7 @@ Example
 
 
 ### labelSettings.lowerLevel.gridLineStyle.dashArray<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-gridLineStyle-dashArray}
 
 
 
@@ -1598,6 +1634,7 @@ Example
 
 
 ### labelSettings.lowerLevel.gridLineStyle.width<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-gridLineStyle-width}
 
 
 
@@ -1647,6 +1684,7 @@ Example
 
 
 ### labelSettings.lowerLevel.intervalTypes<span class="type-signature type enum">enum</span>
+{:#labelSettings-lowerLevel-intervalTypes}
 
 
 
@@ -1696,6 +1734,7 @@ Example
 
 
 ### labelSettings.lowerLevel.labelPlacement<span class="type-signature type enum">enum</span>
+{:#labelSettings-lowerLevel-labelPlacement}
 
 
 
@@ -1745,6 +1784,7 @@ Example
 
 
 ### labelSettings.lowerLevel.position<span class="type-signature type enum">enum</span>
+{:#labelSettings-lowerLevel-position}
 
 
 
@@ -1794,6 +1834,7 @@ Example
 
 
 ### labelSettings.lowerLevel.style<span class="type-signature type object">object</span>
+{:#labelSettings-lowerLevel-style}
 
 
 
@@ -1815,6 +1856,7 @@ Options for customizing the style of labels.
 
 
 ### labelSettings.lowerLevel.style.font<span class="type-signature type object">object</span>
+{:#labelSettings-lowerLevel-style-font}
 
 
 
@@ -1836,6 +1878,7 @@ Options for customizing the font of labels.
 
 
 ### labelSettings.lowerLevel.style.font.color<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-style-font-color}
 
 
 
@@ -1885,6 +1928,7 @@ Example
 
 
 ### labelSettings.lowerLevel.style.font.fontFamily<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-style-font-fontFamily}
 
 
 
@@ -1934,6 +1978,7 @@ Example
 
 
 ### labelSettings.lowerLevel.style.font.fontStyle<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-style-font-fontStyle}
 
 
 
@@ -1983,6 +2028,7 @@ Example
 
 
 ### labelSettings.lowerLevel.style.font.fontWeight<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-style-font-fontWeight}
 
 
 
@@ -2032,6 +2078,7 @@ Example
 
 
 ### labelSettings.lowerLevel.style.font.opacity<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-style-font-opacity}
 
 
 
@@ -2081,6 +2128,7 @@ Example
 
 
 ### labelSettings.lowerLevel.style.font.size<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-style-font-size}
 
 
 
@@ -2130,6 +2178,7 @@ Example
 
 
 ### labelSettings.lowerLevel.style.horizontalAlignment<span class="type-signature type string">string</span>
+{:#labelSettings-lowerLevel-style-horizontalAlignment}
 
 
 
@@ -2179,6 +2228,7 @@ Example
 
 
 ### labelSettings.lowerLevel.visible<span class="type-signature type boolean">boolean</span>
+{:#labelSettings-lowerLevel-visible}
 
 
 
@@ -2228,6 +2278,7 @@ Example
 
 
 ### labelSettings.style<span class="type-signature type object">object</span>
+{:#labelSettings-style}
 
 
 
@@ -2249,6 +2300,7 @@ Options for customizing the style of labels in range navigator.
 
 
 ### labelSettings.style.font<span class="type-signature type object">object</span>
+{:#labelSettings-style-font}
 
 
 
@@ -2270,6 +2322,7 @@ Options for customizing the font of labels in range navigator.
 
 
 ### labelSettings.style.font.color<span class="type-signature type string">string</span>
+{:#labelSettings-style-font-color}
 
 
 
@@ -2319,6 +2372,7 @@ Example
 
 
 ### labelSettings.style.font.family<span class="type-signature type string">string</span>
+{:#labelSettings-style-font-family}
 
 
 
@@ -2368,6 +2422,7 @@ Example
 
 
 ### labelSettings.style.font.opacity<span class="type-signature type number">number</span>
+{:#labelSettings-style-font-opacity}
 
 
 
@@ -2417,6 +2472,7 @@ Example
 
 
 ### labelSettings.style.font.size<span class="type-signature type string">string</span>
+{:#labelSettings-style-font-size}
 
 
 
@@ -2466,6 +2522,7 @@ Example
 
 
 ### labelSettings.style.font.style<span class="type-signature type enum">enum</span>
+{:#labelSettings-style-font-style}
 
 
 
@@ -2515,6 +2572,7 @@ Example
 
 
 ### labelSettings.style.font.weight<span class="type-signature type enum">enum</span>
+{:#labelSettings-style-font-weight}
 
 
 
@@ -2564,6 +2622,7 @@ Example
 
 
 ### labelSettings.style.horizontalAlignment<span class="type-signature type enum">enum</span>
+{:#labelSettings-style-horizontalAlignment}
 
 
 
@@ -2613,6 +2672,7 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
+{:#locale}
 
 
 
@@ -2662,6 +2722,7 @@ Example
 
 
 ### navigatorStyleSettings<span class="type-signature type object">object</span>
+{:#navigatorStyleSettings}
 
 
 
@@ -2683,6 +2744,7 @@ Options for customizing the range navigator.
 
 
 ### navigatorStyleSettings.background<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-background}
 
 
 
@@ -2732,6 +2794,7 @@ Example
 
 
 ### navigatorStyleSettings.border<span class="type-signature type object">object</span>
+{:#navigatorStyleSettings-border}
 
 
 
@@ -2753,6 +2816,7 @@ Options for customizing the border color and width of range navigator.
 
 
 ### navigatorStyleSettings.border.color<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-border-color}
 
 
 
@@ -2802,6 +2866,7 @@ Example
 
 
 ### navigatorStyleSettings.border.dashArray<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-border-dashArray}
 
 
 
@@ -2851,6 +2916,7 @@ Example
 
 
 ### navigatorStyleSettings.border.width<span class="type-signature type number">number</span>
+{:#navigatorStyleSettings-border-width}
 
 
 
@@ -2900,6 +2966,7 @@ Example
 
 
 ### navigatorStyleSettings.leftThumbTemplate<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-leftThumbTemplate}
 
 
 
@@ -2949,6 +3016,7 @@ Example
 
 
 ### navigatorStyleSettings.majorGridLineStyle<span class="type-signature type object">object</span>
+{:#navigatorStyleSettings-majorGridLineStyle}
 
 
 
@@ -2970,6 +3038,7 @@ Options for customizing the major grid lines.
 
 
 ### navigatorStyleSettings.majorGridLineStyle.color<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-majorGridLineStyle-color}
 
 
 
@@ -3019,6 +3088,7 @@ Example
 
 
 ### navigatorStyleSettings.majorGridLineStyle.visible<span class="type-signature type boolean">boolean</span>
+{:#navigatorStyleSettings-majorGridLineStyle-visible}
 
 
 
@@ -3068,6 +3138,7 @@ Example
 
 
 ### navigatorStyleSettings.minorGridLineStyle<span class="type-signature type object">object</span>
+{:#navigatorStyleSettings-minorGridLineStyle}
 
 
 
@@ -3089,6 +3160,7 @@ Options for customizing the minor grid lines.
 
 
 ### navigatorStyleSettings.minorGridLineStyle.color<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-minorGridLineStyle-color}
 
 
 
@@ -3137,6 +3209,7 @@ Example
 
 
 ### navigatorStyleSettings.minorGridLineStyle.visible<span class="type-signature type boolean">boolean</span>
+{:#navigatorStyleSettings-minorGridLineStyle-visible}
 
 
 
@@ -3186,6 +3259,7 @@ Example
 
 
 ### navigatorStyleSettings.opacity<span class="type-signature type number">number</span>
+{:#navigatorStyleSettings-opacity}
 
 
 
@@ -3235,6 +3309,7 @@ Example
 
 
 ### navigatorStyleSettings.rightThumbTemplate<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-rightThumbTemplate}
 
 
 
@@ -3284,6 +3359,7 @@ Example
 
 
 ### navigatorStyleSettings.selectedRegionColor<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-selectedRegionColor}
 
 
 
@@ -3333,6 +3409,7 @@ Example
 
 
 ### navigatorStyleSettings.selectedRegionOpacity<span class="type-signature type number">number</span>
+{:#navigatorStyleSettings-selectedRegionOpacity}
 
 
 
@@ -3382,6 +3459,7 @@ Example
 
 
 ### navigatorStyleSettings.thumbColor<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-thumbColor}
 
 
 
@@ -3431,6 +3509,7 @@ Example
 
 
 ### navigatorStyleSettings.thumbRadius<span class="type-signature type number">number</span>
+{:#navigatorStyleSettings-thumbRadius}
 
 
 
@@ -3480,6 +3559,7 @@ Example
 
 
 ### navigatorStyleSettings.thumbStroke<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-thumbStroke}
 
 
 
@@ -3529,6 +3609,7 @@ Example
 
 
 ### navigatorStyleSettings.unselectedRegionColor<span class="type-signature type string">string</span>
+{:#navigatorStyleSettings-unselectedRegionColor}
 
 
 
@@ -3578,6 +3659,7 @@ Example
 
 
 ### navigatorStyleSettings.unselectedRegionOpacity<span class="type-signature type number">number</span>
+{:#navigatorStyleSettings-unselectedRegionOpacity}
 
 
 
@@ -3627,6 +3709,7 @@ Example
 
 
 ### padding<span class="type-signature type string">string</span>
+{:#padding}
 
 
 
@@ -3676,6 +3759,7 @@ Example
 
 
 ### rangePadding<span class="type-signature type enum">enum</span>
+{:#rangePadding}
 
 
 
@@ -3725,6 +3809,7 @@ Example
 
 
 ### rangeSettings<span class="type-signature type object">object</span>
+{:#rangeSettings}
 
 
 
@@ -3746,6 +3831,7 @@ Options for customizing the starting and ending ranges.
 
 
 ### rangeSettings.end<span class="type-signature type string">string</span>
+{:#rangeSettings-end}
 
 
 
@@ -3795,6 +3881,7 @@ Example
 
 
 ### rangeSettings.start<span class="type-signature type string">string</span>
+{:#rangeSettings-start}
 
 
 
@@ -3843,6 +3930,7 @@ Example
 
 
 ### selectedData
+{:#selectedData}
 
 
 
@@ -3864,6 +3952,7 @@ selectedData is for getting the data when the "rangeChanged" event trigger from 
 
 
 ### selectedRangeSettings<span class="type-signature type object">object</span>
+{:#selectedRangeSettings}
 
 
 
@@ -3885,6 +3974,7 @@ Options for customizing the start and end range values.
 
 
 ### selectedRangeSettings.end<span class="type-signature type string">string</span>
+{:#selectedRangeSettings-end}
 
 
 
@@ -3934,6 +4024,7 @@ Example
 
 
 ### selectedRangeSettings.start<span class="type-signature type string">string</span>
+{:#selectedRangeSettings-start}
 
 
 
@@ -3983,6 +4074,7 @@ Example
 
 
 ### sizeSettings<span class="type-signature type object">object</span>
+{:#sizeSettings}
 
 
 
@@ -4004,6 +4096,7 @@ Contains property to customize the hight and width of range navigator.
 
 
 ### sizeSettings.height<span class="type-signature type string">string</span>
+{:#sizeSettings-height}
 
 
 
@@ -4053,6 +4146,7 @@ Example
 
 
 ### sizeSettings.width<span class="type-signature type string">string</span>
+{:#sizeSettings-width}
 
 
 
@@ -4102,6 +4196,7 @@ Example
 
 
 ### theme<span class="type-signature type string">string</span>
+{:#theme}
 
 
 
@@ -4151,6 +4246,7 @@ Example
 
 
 ### tooltipSettings<span class="type-signature type object">object</span>
+{:#tooltipSettings}
 
 
 
@@ -4180,6 +4276,7 @@ Example
 
 
 ### tooltipSettings.backgroundColor<span class="type-signature type string">string</span>
+{:#tooltipSettings-backgroundColor}
 
 
 
@@ -4229,6 +4326,7 @@ Example
 
 
 ### tooltipSettings.font<span class="type-signature type object">object</span>
+{:#tooltipSettings-font}
 
 
 
@@ -4250,6 +4348,7 @@ Options for customizing the font in tooltip.
 
 
 ### tooltipSettings.font.color<span class="type-signature type string">string</span>
+{:#tooltipSettings-font-color}
 
 
 
@@ -4299,6 +4398,7 @@ Example
 
 
 ### tooltipSettings.font.family<span class="type-signature type string">string</span>
+{:#tooltipSettings-font-family}
 
 
 
@@ -4348,6 +4448,7 @@ Example
 
 
 ### tooltipSettings.font.fontStyle<span class="type-signature type string">string</span>
+{:#tooltipSettings-font-fontStyle}
 
 
 
@@ -4397,6 +4498,7 @@ Example
 
 
 ### tooltipSettings.font.opacity<span class="type-signature type number">number</span>
+{:#tooltipSettings-font-opacity}
 
 
 
@@ -4446,6 +4548,7 @@ Example
 
 
 ### tooltipSettings.font.size<span class="type-signature type string">string</span>
+{:#tooltipSettings-font-size}
 
 
 
@@ -4495,6 +4598,7 @@ Example
 
 
 ### tooltipSettings.font.weight<span class="type-signature type string">string</span>
+{:#tooltipSettings-font-weight}
 
 
 
@@ -4544,6 +4648,7 @@ Example
 
 
 ### tooltipSettings.labelFormat<span class="type-signature type string">string</span>
+{:#tooltipSettings-labelFormat}
 
 
 
@@ -4593,6 +4698,7 @@ Example
 
 
 ### tooltipSettings.tooltipDisplayMode<span class="type-signature type string">string</span>
+{:#tooltipSettings-tooltipDisplayMode}
 
 
 
@@ -4642,6 +4748,7 @@ Example
 
 
 ### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
+{:#tooltipSettings-visible}
 
 
 
@@ -4691,6 +4798,7 @@ Example
 
 
 ### valueAxisSettings<span class="type-signature type object">object</span>
+{:#valueAxisSettings}
 
 
 
@@ -4712,6 +4820,7 @@ Options for configuring minor grid lines, major grid lines, axis line of axis.
 
 
 ### valueAxisSettings.axisLine<span class="type-signature type object">object</span>
+{:#valueAxisSettings-axisLine}
 
 
 
@@ -4733,6 +4842,7 @@ Options for customizing the axis line.
 
 
 ### valueAxisSettings.axisLine.visible<span class="type-signature type string">string</span>
+{:#valueAxisSettings-axisLine-visible}
 
 
 
@@ -4782,6 +4892,7 @@ Example
 
 
 ### valueAxisSettings.font<span class="type-signature type object">object</span>
+{:#valueAxisSettings-font}
 
 
 
@@ -4803,6 +4914,7 @@ Options for customizing the font of the axis.
 
 
 ### valueAxisSettings.font.size<span class="type-signature type string">string</span>
+{:#valueAxisSettings-font-size}
 
 
 
@@ -4852,6 +4964,7 @@ Example
 
 
 ### valueAxisSettings.majorGridLines<span class="type-signature type object">object</span>
+{:#valueAxisSettings-majorGridLines}
 
 
 
@@ -4873,6 +4986,7 @@ Options for customizing the major grid lines.
 
 
 ### valueAxisSettings.majorGridLines.visible<span class="type-signature type boolean">boolean</span>
+{:#valueAxisSettings-majorGridLines-visible}
 
 
 
@@ -4922,6 +5036,7 @@ Example
 
 
 ### valueAxisSettings.majorTickLines<span class="type-signature type object">object</span>
+{:#valueAxisSettings-majorTickLines}
 
 
 
@@ -4943,6 +5058,7 @@ Options for customizing the major tick lines in axis.
 
 
 ### valueAxisSettings.majorTickLines.size<span class="type-signature type number">number</span>
+{:#valueAxisSettings-majorTickLines-size}
 
 
 
@@ -4992,6 +5108,7 @@ Example
 
 
 ### valueAxisSettings.majorTickLines.visible<span class="type-signature type boolean">boolean</span>
+{:#valueAxisSettings-majorTickLines-visible}
 
 
 
@@ -5041,6 +5158,7 @@ Example
 
 
 ### valueAxisSettings.majorTickLines.width<span class="type-signature type number">number</span>
+{:#valueAxisSettings-majorTickLines-width}
 
 
 
@@ -5090,6 +5208,7 @@ Example
 
 
 ### valueAxisSettings.rangePadding<span class="type-signature type string">string</span>
+{:#valueAxisSettings-rangePadding}
 
 
 
@@ -5139,6 +5258,7 @@ Example
 
 
 ### valueAxisSettings.visible<span class="type-signature type boolean">boolean</span>
+{:#valueAxisSettings-visible}
 
 
 
@@ -5188,6 +5308,7 @@ Example
 
 
 ### valueType<span class="type-signature type enum">enum</span>
+{:#valueType}
 
 
 
@@ -5237,6 +5358,7 @@ Example
 
 
 ### xName<span class="type-signature type object">object</span>
+{:#xName}
 
 
 
@@ -5270,6 +5392,7 @@ Example
 
 
 ### yName<span class="type-signature type object">object</span>
+{:#yName}
 
 
 
@@ -5303,6 +5426,7 @@ Example
 
 
 ### zoomSettings.zoomFactor<span class="type-signature type string">string</span>
+{:#zoomSettings-zoomFactor}
 
 
 
@@ -5352,6 +5476,7 @@ Example
 
 
 ### zoomSettings.zoomPosition<span class="type-signature type string">string</span>
+{:#zoomSettings-zoomPosition}
 
 
 
@@ -5408,6 +5533,7 @@ Example
 
 
 ### _destroy<span class="signature">()</span>
+{:#_destroy}
 
 
 
@@ -5457,6 +5583,7 @@ $("#container").ejRangeNavigator("destroy");
 
 
 ### load
+{:#load}
 
 
 
@@ -5519,6 +5646,7 @@ $("#container").ejRangeNavigator({
 
 
 ### loaded
+{:#loaded}
 
 
 
@@ -5581,6 +5709,7 @@ $("#container").ejRangeNavigator({
 
 
 ### rangeChanged
+{:#rangeChanged}
 
 
 

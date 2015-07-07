@@ -165,6 +165,7 @@ Requires
 
 
 ### ajaxAction<span class="type-signature type string">string</span>
+{:#ajaxAction}
 
 
 
@@ -225,6 +226,7 @@ ajaxSettings: {
 
 
 ### ajaxSettings<span class="type-signature type object">Object</span>
+{:#ajaxSettings}
 
 
 
@@ -285,6 +287,7 @@ ajaxSettings: {
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -346,6 +349,7 @@ ajaxSettings: {
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
+{:#enableResize}
 
 
 
@@ -407,6 +411,7 @@ ajaxSettings: {
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enableRTL}
 
 
 
@@ -468,6 +473,7 @@ ajaxSettings: {
 
 
 ### fileTypes<span class="type-signature type string">string</span>
+{:#fileTypes}
 
 
 
@@ -529,6 +535,7 @@ ajaxSettings: {
 
 
 ### filterSettings<span class="type-signature type object">Object</span>
+{:#filterSettings}
 
 
 
@@ -550,6 +557,7 @@ Gets or sets an object that indicates whether to customize the filtering behavio
 
 
 ### filterSettings.caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
+{:#filterSettings-caseSensitiveSearch}
 
 
 
@@ -611,6 +619,7 @@ ajaxSettings: {
 
 
 ### filterSettings.filterType<span class="type-signature type enum">enum</span>
+{:#filterSettings-filterType}
 
 
 
@@ -672,6 +681,7 @@ ajaxSettings: {
 
 
 ### gridSettings<span class="type-signature type object">Object</span>
+{:#gridSettings}
 
 
 
@@ -693,6 +703,7 @@ Gets or sets an object that indicates whether to customize the grid behavior in 
 
 
 ### gridSettings.allowSearching<span class="type-signature type boolean">boolean</span>
+{:#gridSettings-allowSearching}
 
 
 
@@ -754,6 +765,7 @@ ajaxSettings: {
 
 
 ### gridSettings.allowSorting<span class="type-signature type boolean">boolean</span>
+{:#gridSettings-allowSorting}
 
 
 
@@ -815,6 +827,7 @@ ajaxSettings: {
 
 
 ### gridSettings.columns<span class="type-signature type array">array</span>
+{:#gridSettings-columns}
 
 
 
@@ -876,6 +889,7 @@ ajaxSettings: {
 
 
 ### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#height}
 
 
 
@@ -937,6 +951,7 @@ ajaxSettings: {
 
 
 ### isResponsive<span class="type-signature type boolean">boolean</span>
+{:#isResponsive}
 
 
 
@@ -998,6 +1013,7 @@ ajaxSettings: {
 
 
 ### layout<span class="type-signature type enum">enum</span>
+{:#layout}
 
 
 
@@ -1059,6 +1075,7 @@ ajaxSettings: {
 
 
 ### locale<span class="type-signature type string">string</span>
+{:#locale}
 
 
 
@@ -1120,6 +1137,7 @@ ajaxSettings: {
 
 
 ### path<span class="type-signature type string">string</span>
+{:#path}
 
 
 
@@ -1181,6 +1199,7 @@ ajaxAction: "@Url.Content("~/ImageBrowser/FileAction")"
 
 
 ### showContextMenu<span class="type-signature type boolean">boolean</span>
+{:#showContextMenu}
 
 
 
@@ -1242,6 +1261,7 @@ ajaxSettings: {
 
 
 ### showFooter<span class="type-signature type boolean">boolean</span>
+{:#showFooter}
 
 
 
@@ -1303,6 +1323,7 @@ ajaxSettings: {
 
 
 ### showLayout<span class="type-signature type boolean">boolean</span>
+{:#showLayout}
 
 
 
@@ -1364,6 +1385,7 @@ ajaxSettings: {
 
 
 ### showToolbar<span class="type-signature type boolean">boolean</span>
+{:#showToolbar}
 
 
 
@@ -1425,6 +1447,7 @@ ajaxSettings: {
 
 
 ### showTreeview<span class="type-signature type boolean">boolean</span>
+{:#showTreeview}
 
 
 
@@ -1486,6 +1509,7 @@ ajaxSettings: {
 
 
 ### tools<span class="type-signature type object">object</span>
+{:#tools}
 
 
 
@@ -1555,6 +1579,7 @@ ajaxSettings: {
 
 
 ### toolsList<span class="type-signature type array">array</span>
+{:#toolsList}
 
 
 
@@ -1616,6 +1641,7 @@ ajaxSettings: {
 
 
 ### uploadBoxSettings<span class="type-signature type object">Object</span>
+{:#uploadBoxSettings}
 
 
 
@@ -1637,6 +1663,7 @@ Gets or sets an object that indicates whether to customize the upload behavior i
 
 
 ### uploadBoxSettings.fileSize<span class="type-signature type number">number</span>
+{:#uploadBoxSettings-fileSize}
 
 
 
@@ -1698,6 +1725,7 @@ ajaxSettings: {
 
 
 ### uploadBoxSettings.multipleFilesSelection<span class="type-signature type boolean">boolean</span>
+{:#uploadBoxSettings-multipleFilesSelection}
 
 
 
@@ -1759,6 +1787,7 @@ ajaxSettings: {
 
 
 ### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#width}
 
 
 
@@ -1827,6 +1856,7 @@ ajaxSettings: {
 
 
 ### disableToolbarItem<span class="signature">()</span>
+{:#disableToolbarItem}
 
 
 
@@ -1874,6 +1904,7 @@ feObj.disableToolbarItem("fileExplorerSearchbar"); // disable search bar
 
 
 ### enableToolbarItem<span class="signature">()</span>
+{:#enableToolbarItem}
 
 
 
@@ -1928,6 +1959,7 @@ feObj.enableToolbarItem("fileExplorerSearchbar"); // enable search bar
 
 
 ### copy
+{:#copy}
 
 
 
@@ -2026,6 +2058,7 @@ copy: function (args) {}
 
 
 ### createFolder
+{:#createFolder}
 
 
 
@@ -2114,6 +2147,7 @@ createFolder: function (args) {}
 
 
 ### layoutChange
+{:#layoutChange}
 
 
 
@@ -2207,6 +2241,7 @@ layoutChange: function (args) {}
 
 
 ### move
+{:#move}
 
 
 
@@ -2305,6 +2340,7 @@ move: function (args) {}
 
 
 ### open
+{:#open}
 
 
 
@@ -2403,6 +2439,7 @@ open: function (args) {}
 
 
 ### remove
+{:#remove}
 
 
 
@@ -2501,6 +2538,7 @@ remove: function (args) {}
 
 
 ### select
+{:#select}
 
 
 

@@ -85,6 +85,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -134,6 +135,7 @@ Example
 
 
 ### dataSource<span class="type-signature type object">object</span>
+{:#dataSource}
 
 
 
@@ -183,6 +185,7 @@ $("#tagcloud").ejTagCloud({ dataSource: window.websiteCollection,titleText: "Tec
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enableRTL}
 
 
 
@@ -232,6 +235,7 @@ Example
 
 
 ### fields<span class="type-signature type object">Object</span>
+{:#fields}
 
 
 
@@ -287,6 +291,7 @@ fields: { text: "text" , url:"url",frequency: "frequency"}
 
 
 ### fields.frequency<span class="type-signature type number">Number</span>
+{:#fields-frequency}
 
 
 
@@ -308,6 +313,7 @@ Defines the frequency number to categorize the font size.
 
 
 ### fields.htmlAttributes<span class="type-signature type object">Object</span>
+{:#fields-htmlAttributes}
 
 
 
@@ -329,6 +335,7 @@ Defines the html attributes for the anchor elements inside the each tag items.
 
 
 ### fields.text<span class="type-signature type string">String</span>
+{:#fields-text}
 
 
 
@@ -350,6 +357,7 @@ Defines the tag value or display text.
 
 
 ### fields.url<span class="type-signature type string">String</span>
+{:#fields-url}
 
 
 
@@ -371,6 +379,7 @@ Defines the url link to navigate while click the tag.
 
 
 ### format<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+{:#format}
 
 
 
@@ -420,6 +429,7 @@ Example
 
 
 ### maxFontSize<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#maxFontSize}
 
 
 
@@ -469,6 +479,7 @@ Example
 
 
 ### minFontSize<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#minFontSize}
 
 
 
@@ -518,6 +529,7 @@ Example
 
 
 ### query<span class="type-signature type object">object</span>
+{:#query}
 
 
 
@@ -576,6 +588,7 @@ $("#tagcloud").ejTagCloud({
 
 
 ### showTitle<span class="type-signature type boolean">boolean</span>
+{:#showTitle}
 
 
 
@@ -625,6 +638,7 @@ Example
 
 
 ### titleImage<span class="type-signature type string">string</span>
+{:#titleImage}
 
 
 
@@ -674,6 +688,7 @@ Example
 
 
 ### titleText<span class="type-signature type string">string</span>
+{:#titleText}
 
 
 
@@ -730,6 +745,7 @@ Example
 
 
 ### insert<span class="signature">()</span>
+{:#insert}
 
 
 
@@ -791,6 +807,7 @@ $("#tagcloud").ejTagCloud("insert", tag);
 
 
 ### insertAt<span class="signature">()</span>
+{:#insertAt}
 
 
 
@@ -849,6 +866,7 @@ $("#tagcloud").ejTagCloud("insertAt", tag, 2);
 
 
 ### remove<span class="signature">(name)</span>
+{:#remove}
 
 
 
@@ -927,6 +945,7 @@ $("#tagcloud").ejTagCloud("remove", tag);
 
 
 ### removeAt<span class="signature">(position)</span>
+{:#removeAt}
 
 
 
@@ -1009,6 +1028,7 @@ $("#tagcloud").ejTagCloud("removeAt", 4);
 
 
 ### click
+{:#click}
 
 
 
@@ -1099,6 +1119,7 @@ $("#tagcloud").ejTagCloud({
 
 
 ### create
+{:#create}
 
 
 
@@ -1179,6 +1200,7 @@ $("#tagcloud").ejTagCloud({
 
 
 ### destroy
+{:#destroy}
 
 
 
@@ -1259,6 +1281,7 @@ $("#tagcloud").ejTagCloud({
 
 
 ### mouseout
+{:#mouseout}
 
 
 
@@ -1349,6 +1372,7 @@ $("#tagcloud").ejTagCloud({
 
 
 ### mouseover
+{:#mouseover}
 
 
 

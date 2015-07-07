@@ -87,6 +87,7 @@ for(var i=0;i&lt;5;i++){ row="dataManger.dataSource.json[0];;" tbody="" +="Strin
 
 
 ### excuteLocal<span class="signature">(query)</span>
+{:#excuteLocal}
 
 
 
@@ -139,6 +140,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### excuteQuery<span class="signature">(query)</span>
+{:#excuteQuery}
 
 
 
@@ -170,6 +172,7 @@ The executeQuery property is used to process the data based on the query on Url 
 
 
 #### Returns:
+{:#Returns:}
 
 result of each operation will be handled once the result is available.
 
@@ -192,6 +195,7 @@ promise.done(function(e){});
 
 
 ### insert<span class="signature">(data, tableName)</span>
+{:#insert}
 
 
 
@@ -256,6 +260,7 @@ for(var i=0;i&lt;3;i++){ var="" j="dm.dataSource.json[i];" tbody="" +="String.fo
 
 
 ### remove<span class="signature">(keyField, value, tableName)</span>
+{:#remove}
 
 
 
@@ -325,6 +330,7 @@ for(var i=0;i&lt;3;i++){ var="" j="dm.dataSource.json[i];" tbody="" +="String.fo
 
 
 ### saveChanges<span class="signature">(changes, key, tableName)</span>
+{:#saveChanges}
 
 
 
@@ -391,6 +397,7 @@ $(function (){});
 
 
 ### update<span class="signature">(keyField, value, tableName)</span>
+{:#update}
 
 
 

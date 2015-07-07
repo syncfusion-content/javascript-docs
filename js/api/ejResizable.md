@@ -72,6 +72,7 @@ Requires
 
 
 ### cursorAt<span class="type-signature type object">object</span>
+{:#cursorAt}
 
 
 
@@ -124,6 +125,7 @@ Example
 
 
 ### distance<span class="type-signature type number">number</span>
+{:#distance}
 
 
 
@@ -176,6 +178,7 @@ Example
 
 
 ### handle<span class="type-signature type string">string</span>
+{:#handle}
 
 
 
@@ -228,6 +231,7 @@ Example
 
 
 ### maxHeight<span class="type-signature type number">number</span>
+{:#maxHeight}
 
 
 
@@ -280,6 +284,7 @@ Example
 
 
 ### maxWidth<span class="type-signature type number">number</span>
+{:#maxWidth}
 
 
 
@@ -332,6 +337,7 @@ Example
 
 
 ### minHeight<span class="type-signature type number">number</span>
+{:#minHeight}
 
 
 
@@ -384,6 +390,7 @@ Example
 
 
 ### minWidth<span class="type-signature type number">number</span>
+{:#minWidth}
 
 
 
@@ -436,6 +443,7 @@ Example
 
 
 ### scope<span class="type-signature type string">string</span>
+{:#scope}
 
 
 
@@ -495,6 +503,7 @@ Example
 
 
 ### _destroy<span class="signature">()</span>
+{:#_destroy}
 
 
 
@@ -536,6 +545,7 @@ resizingObj.destroy();
 
 
 ### destroy
+{:#destroy}
 
 
 
@@ -593,6 +603,7 @@ $("#resizing").ejResizable({
 
 
 ### helper
+{:#helper}
 
 
 
@@ -657,6 +668,7 @@ $("#resizing").ejResizable({
 
 
 ### <code>resize</code>
+{:#}
 
 
 
@@ -714,6 +726,7 @@ $("#resizing").ejResizable({
 
 
 ### resizeStart
+{:#resizeStart}
 
 
 
@@ -771,6 +784,7 @@ $("#resizing").ejResizable({
 
 
 ### resizeStop
+{:#resizeStop}
 
 
 

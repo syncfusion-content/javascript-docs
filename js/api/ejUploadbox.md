@@ -87,6 +87,7 @@ Requires
 
 
 ### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
+{:#allowDragAndDrop}
 
 
 
@@ -136,6 +137,7 @@ Example
 
 
 ### asyncUpload<span class="type-signature type boolean">boolean</span>
+{:#asyncUpload}
 
 
 
@@ -185,6 +187,7 @@ Example
 
 
 ### autoUpload<span class="type-signature type boolean">boolean</span>
+{:#autoUpload}
 
 
 
@@ -234,6 +237,7 @@ Example
 
 
 ### buttonText<span class="type-signature type string">string</span>
+{:#buttonText}
 
 
 
@@ -283,6 +287,7 @@ Example
 
 
 ### buttonText.browse<span class="type-signature type string">String</span>
+{:#buttonText-browse}
 
 
 
@@ -316,6 +321,7 @@ Example
 
 
 ### buttonText.cancel<span class="type-signature type string">String</span>
+{:#buttonText-cancel}
 
 
 
@@ -349,6 +355,7 @@ Example
 
 
 ### buttonText.Close<span class="type-signature type string">String</span>
+{:#buttonText-Close}
 
 
 
@@ -382,6 +389,7 @@ Example
 
 
 ### buttonText.upload<span class="type-signature type string">String</span>
+{:#buttonText-upload}
 
 
 
@@ -415,6 +423,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -464,6 +473,7 @@ Example
 
 
 ### customFileDetails<span class="type-signature type object">object</span>
+{:#customFileDetails}
 
 
 
@@ -513,6 +523,7 @@ Example
 
 
 ### customFileDetails.action<span class="type-signature type boolean">boolean</span>
+{:#customFileDetails-action}
 
 
 
@@ -546,6 +557,7 @@ Example
 
 
 ### customFileDetails.name<span class="type-signature type boolean">boolean</span>
+{:#customFileDetails-name}
 
 
 
@@ -579,6 +591,7 @@ Example
 
 
 ### customFileDetails.size<span class="type-signature type boolean">boolean</span>
+{:#customFileDetails-size}
 
 
 
@@ -612,6 +625,7 @@ Example
 
 
 ### customFileDetails.status<span class="type-signature type boolean">boolean</span>
+{:#customFileDetails-status}
 
 
 
@@ -645,6 +659,7 @@ Example
 
 
 ### customFileDetails.title<span class="type-signature type boolean">boolean</span>
+{:#customFileDetails-title}
 
 
 
@@ -678,6 +693,7 @@ Example
 
 
 ### dialogAction<span class="type-signature type object">object</span>
+{:#dialogAction}
 
 
 
@@ -727,6 +743,7 @@ Example
 
 
 ### dialogAction.closeOnComplete<span class="type-signature type boolean">boolean</span>
+{:#dialogAction-closeOnComplete}
 
 
 
@@ -760,6 +777,7 @@ Example
 
 
 ### dialogAction.content<span class="type-signature type string">string</span>
+{:#dialogAction-content}
 
 
 
@@ -793,6 +811,7 @@ Example
 
 
 ### dialogAction.drag<span class="type-signature type boolean">boolean</span>
+{:#dialogAction-drag}
 
 
 
@@ -826,6 +845,7 @@ Example
 
 
 ### dialogAction.modal<span class="type-signature type boolean">boolean</span>
+{:#dialogAction-modal}
 
 
 
@@ -859,6 +879,7 @@ Example
 
 
 ### dialogPosition<span class="type-signature type jsonobject">JSONobject</span>
+{:#dialogPosition}
 
 
 
@@ -908,6 +929,7 @@ Example
 
 
 ### dialogText<span class="type-signature type string">string</span>
+{:#dialogText}
 
 
 
@@ -957,6 +979,7 @@ Example
 
 
 ### dialogText.name<span class="type-signature type string">String</span>
+{:#dialogText-name}
 
 
 
@@ -990,6 +1013,7 @@ Example
 
 
 ### dialogText.size<span class="type-signature type string">String</span>
+{:#dialogText-size}
 
 
 
@@ -1023,6 +1047,7 @@ Example
 
 
 ### dialogText.status<span class="type-signature type string">String</span>
+{:#dialogText-status}
 
 
 
@@ -1056,6 +1081,7 @@ Example
 
 
 ### dialogText.title<span class="type-signature type string">String</span>
+{:#dialogText-title}
 
 
 
@@ -1089,6 +1115,7 @@ Example
 
 
 ### dragAreaText<span class="type-signature type string">string</span>
+{:#dragAreaText}
 
 
 
@@ -1138,6 +1165,7 @@ Example
 
 
 ### dropAreaHeight<span class="type-signature type number">number</span> <span class="type-signature type string">string</span>
+{:#dropAreaHeight}
 
 
 
@@ -1187,6 +1215,7 @@ Example
 
 
 ### dropAreaWidth<span class="type-signature type number">number</span> <span class="type-signature type string">string</span>
+{:#dropAreaWidth}
 
 
 
@@ -1236,6 +1265,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
+{:#enabled}
 
 
 
@@ -1285,6 +1315,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enableRTL}
 
 
 
@@ -1334,6 +1365,7 @@ Example
 
 
 ### extensionsAllow<span class="type-signature type string">string</span>
+{:#extensionsAllow}
 
 
 
@@ -1383,6 +1415,7 @@ Example
 
 
 ### extensionsDeny<span class="type-signature type string">string</span>
+{:#extensionsDeny}
 
 
 
@@ -1432,6 +1465,7 @@ Example
 
 
 ### fileSize<span class="type-signature type number">number</span>
+{:#fileSize}
 
 
 
@@ -1481,6 +1515,7 @@ Example
 
 
 ### height<span class="type-signature type string">string</span>
+{:#height}
 
 
 
@@ -1530,6 +1565,7 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
+{:#locale}
 
 
 
@@ -1579,6 +1615,7 @@ Example
 
 
 ### multipleFilesSelection<span class="type-signature type boolean">boolean</span>
+{:#multipleFilesSelection}
 
 
 
@@ -1628,6 +1665,7 @@ Example
 
 
 ### pushFile<span class="type-signature type data">data</span>
+{:#pushFile}
 
 
 
@@ -1677,6 +1715,7 @@ Example
 
 
 ### removeUrl<span class="type-signature type string">string</span>
+{:#removeUrl}
 
 
 
@@ -1726,6 +1765,7 @@ Example
 
 
 ### saveUrl<span class="type-signature type string">string</span>
+{:#saveUrl}
 
 
 
@@ -1775,6 +1815,7 @@ Example
 
 
 ### showBrowseButton<span class="type-signature type boolean">boolean</span>
+{:#showBrowseButton}
 
 
 
@@ -1824,6 +1865,7 @@ Example
 
 
 ### showFileDetails<span class="type-signature type boolean">boolean</span>
+{:#showFileDetails}
 
 
 
@@ -1873,6 +1915,7 @@ Example
 
 
 ### uploadName<span class="type-signature type string">string</span>
+{:#uploadName}
 
 
 
@@ -1922,6 +1965,7 @@ Example
 
 
 ### width<span class="type-signature type string">string</span>
+{:#width}
 
 
 
@@ -1978,6 +2022,7 @@ Example
 
 
 ### destroy<span class="signature">()</span>
+{:#destroy}
 
 
 
@@ -2023,6 +2068,7 @@ $("#uploadbox1").ejUploadbox("destroy");
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 
 
 
@@ -2068,6 +2114,7 @@ $("#uploadbox1").ejUploadbox("disable");
 
 
 ### enable<span class="signature">()</span>
+{:#enable}
 
 
 
@@ -2120,6 +2167,7 @@ $("#uploadbox1").ejUploadbox("enable");
 
 
 ### begin
+{:#begin}
 
 
 
@@ -2198,6 +2246,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 ### cancel
+{:#cancel}
 
 
 
@@ -2276,6 +2325,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 ### complete
+{:#complete}
 
 
 
@@ -2359,6 +2409,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 ### create
+{:#create}
 
 
 
@@ -2437,6 +2488,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 ### destroy
+{:#destroy}
 
 
 
@@ -2515,6 +2567,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 ### error
+{:#error}
 
 
 
@@ -2603,6 +2656,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 ### fileSelect
+{:#fileSelect}
 
 
 
@@ -2680,6 +2734,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 ### remove
+{:#remove}
 
 
 

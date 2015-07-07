@@ -22,7 +22,17 @@ $(element).ejRadioButton<span class="signature">()</span>
 
 Example
 {:.example}
-<pre class="prettyprint"><code>&lt;input type="radio" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt; Fresher &lt;/label&gt;&lt;script&gt;$("#radiobtn").ejRadioButton({checked:true});$("#radiobtn1").ejRadioButton();&lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code>&lt;input type="radio" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt; Fresher &lt;/label&gt;
+&lt;script&gt;
+$("#radiobtn").ejRadioButton({checked:true});
+$("#radiobtn1").ejRadioButton();
+&lt;/script&gt;</code>
+</pre>
 
 
 
@@ -43,6 +53,7 @@ Requires
 
 
 ### checked<span class="type-signature type boolean">Boolean</span>
+{:#checked}
 
 
 
@@ -62,11 +73,24 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;//To set check API value during initialization          $("#radiobtn").ejRadioButton({ checked:  true });               $("#radiobtn1").ejRadioButton({ checked:  true });&lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+//To set check API value during initialization  
+        $("#radiobtn").ejRadioButton({ checked:  true });       
+        $("#radiobtn1").ejRadioButton({ checked:  true });
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -86,11 +110,24 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;// Set the root class for RadioButton control theme. This cssClass API helps to use custom skinning option for RadioButton control. By defining the root class using this API, we need to include this root class in CSS.                               $("#radiobtn").ejRadioButton({cssClass: "gradient-lime"});        $("#radiobtn1").ejRadioButton({cssClass: "gradient-lime"});&lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+// Set the root class for RadioButton control theme. This cssClass API helps to use custom skinning option for RadioButton control. By defining the root class using this API, we need to include this root class in CSS.                       
+        $("#radiobtn").ejRadioButton({cssClass: "gradient-lime"});
+        $("#radiobtn1").ejRadioButton({cssClass: "gradient-lime"});
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
+{:#enabled}
 
 
 
@@ -110,11 +147,25 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;// Enable RadioButton on initialization.         //To set width API value          $("#radiobtn").ejRadioButton ({ enabled: true });               $("#radiobtn1").ejRadioButton ({ enabled: true });     &lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+// Enable RadioButton on initialization. 
+        //To set width API value 
+         $("#radiobtn").ejRadioButton ({ enabled: true });      
+         $("#radiobtn1").ejRadioButton ({ enabled: true });     
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
+{:#enablePersistence}
 
 
 
@@ -134,11 +185,24 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;// To set enablePersistence API value $("#radiobtn").ejRadioButton({ enablePersistence: false });     $("#radiobtn1").ejRadioButton({ enablePersistence: false });&lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+// To set enablePersistence API value 
+$("#radiobtn").ejRadioButton({ enablePersistence: false });     
+$("#radiobtn1").ejRadioButton({ enablePersistence: false });
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enableRTL}
 
 
 
@@ -158,11 +222,24 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;// Set the enableRTL during initialization.                             $("#radiobtn").ejRadioButton({  enableRTL:true });              $("#radiobtn1").ejRadioButton({  enableRTL:true });     &lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+// Set the enableRTL during initialization.                     
+        $("#radiobtn").ejRadioButton({  enableRTL:true });      
+        $("#radiobtn1").ejRadioButton({  enableRTL:true });     
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
+{:#htmlAttributes}
 
 
 
@@ -182,11 +259,23 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;// Set the htmlAttributes during initialization.                                $("#radiobtn").ejRadioButton({ htmlAttributes: {disabled:"disabled"} });        &lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+// Set the htmlAttributes during initialization.                        
+        $("#radiobtn").ejRadioButton({ htmlAttributes: {disabled:"disabled"} });        
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### id<span class="type-signature type string">String</span>
+{:#id}
 
 
 
@@ -206,11 +295,24 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobtn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobtn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;//To set id API value during initialization          $("#radiobtn").ejRadioButton({  id: "sync" });        $("#radiobtn1").ejRadioButton({  id: "sync1" });&lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobtn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobtn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+//To set id API value during initialization  
+        $("#radiobtn").ejRadioButton({  id: "sync" });
+        $("#radiobtn1").ejRadioButton({  id: "sync1" });
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### idPrefix<span class="type-signature type string">String</span>
+{:#idPrefix}
 
 
 
@@ -230,11 +332,24 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;// To set  idPrefix  API value$("#radiobtn").ejRadioButton ({  idPrefix : "ej" }); $("#radiobtn1").ejRadioButton ({  idPrefix : "ej" }); &lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+// To set  idPrefix  API value
+$("#radiobtn").ejRadioButton ({  idPrefix : "ej" }); 
+$("#radiobtn1").ejRadioButton ({  idPrefix : "ej" }); 
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### name<span class="type-signature type string">String</span>
+{:#name}
 
 
 
@@ -256,6 +371,7 @@ Default Value:
 
 
 ### size<span class="type-signature type enum">enum</span>
+{:#size}
 
 
 
@@ -275,11 +391,24 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;//To set size API value during initialization          $("#radiobtn").ejRadioButton({  size: "medium"});               $("#radiobtn1").ejRadioButton({  size: "medium"});&lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+//To set size API value during initialization  
+        $("#radiobtn").ejRadioButton({  size: "medium"});       
+        $("#radiobtn1").ejRadioButton({  size: "medium"});
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### text<span class="type-signature type string">string</span>
+{:#text}
 
 
 
@@ -301,6 +430,7 @@ Default Value:
 
 
 ### validationMessage<span class="type-signature type object">object</span>
+{:#validationMessage}
 
 
 
@@ -320,11 +450,31 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;//To set validationMessage API during initialization  $("#radiobtn").ejRadioButton ({     validationRules:{                               required:true        },  validationMessage: {          required: "Required Radio value"        }});$("#radiobtn1").ejRadioButton ();&lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+//To set validationMessage API during initialization  
+$("#radiobtn").ejRadioButton ({   
+  validationRules:{                     
+          required:true
+        },
+  validationMessage: {
+          required: "Required Radio value"
+        }
+});
+$("#radiobtn1").ejRadioButton ();
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### validationRules<span class="type-signature type object">object</span>
+{:#validationRules}
 
 
 
@@ -344,11 +494,28 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;//To set validationRules API during initialization  $("#radiobtn").ejRadioButton ({     validationRules:{                               required:true        }});$("#radiobtn1").ejRadioButton ();&lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+//To set validationRules API during initialization  
+$("#radiobtn").ejRadioButton ({   
+  validationRules:{                     
+          required:true
+        }
+});
+$("#radiobtn1").ejRadioButton ();
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### value<span class="type-signature type string">String</span>
+{:#value}
 
 
 
@@ -368,7 +535,19 @@ Default Value:
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;&lt;script&gt;//To set value API value during initialization          $("#radiobtn").ejRadioButton({ value: "Experienced"});        $("#radiobtn1").ejRadioButton({ value: "Fresher"});&lt;/script&gt;         </code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;br/&gt; &lt;input type="radio" name="radiobutn" id="radiobtn1"/&gt;
+&lt;label for="radiobtn1"&gt;Fresher &lt;/label&gt;
+&lt;script&gt;
+//To set value API value during initialization  
+        $("#radiobtn").ejRadioButton({ value: "Experienced"});
+        $("#radiobtn1").ejRadioButton({ value: "Fresher"});
+&lt;/script&gt;         </code>
+</pre>
 
 
 ## Methods
@@ -377,6 +556,7 @@ Example
 
 
 ### destroy<span class="signature">()</span>
+{:#destroy}
 
 
 
@@ -387,11 +567,33 @@ destroy the RadioButton widget all events bound using this._on will be unbind au
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;script&gt; // Create RadioButton$("#radiobtn").ejRadioButton();var chkObj = $("#radiobtn").data("ejRadioButton");chkObj.destroy();&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;script&gt;// enable the RadioButton$("#radiobtn").ejRadioButton();$("#radiobtn").ejRadioButton("destroy");        &lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;script&gt; 
+// Create RadioButton
+$("#radiobtn").ejRadioButton();
+var chkObj = $("#radiobtn").data("ejRadioButton");
+chkObj.destroy();
+&lt;/script&gt;</code>
+</pre>
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;script&gt;
+// enable the RadioButton
+$("#radiobtn").ejRadioButton();
+$("#radiobtn").ejRadioButton("destroy");        
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 
 
 
@@ -402,11 +604,33 @@ To disable the RadioButton
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;           &lt;script&gt; // Create RadioButton$("#radiobtn").ejRadioButton();var chkObj = $("#radiobtn").data("ejRadioButton");chkObj.disable();&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;script&gt; // disable the RadioButton$("#radiobtn").ejRadioButton();$("#radiobtn").ejRadioButton("disable");        &lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;           
+&lt;script&gt; 
+// Create RadioButton
+$("#radiobtn").ejRadioButton();
+var chkObj = $("#radiobtn").data("ejRadioButton");
+chkObj.disable();
+&lt;/script&gt;</code>
+</pre>
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;script&gt; 
+// disable the RadioButton
+$("#radiobtn").ejRadioButton();
+$("#radiobtn").ejRadioButton("disable");        
+&lt;/script&gt;</code>
+</pre>
 
 
 
 ### enable<span class="signature">()</span>
+{:#enable}
 
 
 
@@ -417,7 +641,28 @@ To enable the RadioButton
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;script&gt; // Create RadioButton$("#radiobtn").ejRadioButton();var chkObj = $("#radiobtn").data("ejRadioButton");chkObj.enable();&lt;/script&gt;</code></pre><pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;script&gt; // enable the RadioButton$("#radiobtn").ejRadioButton();$("#radiobtn").ejRadioButton("enable"); &lt;/script&gt;</code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;script&gt; 
+// Create RadioButton
+$("#radiobtn").ejRadioButton();
+var chkObj = $("#radiobtn").data("ejRadioButton");
+chkObj.enable();
+&lt;/script&gt;</code>
+</pre>
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;script&gt; 
+// enable the RadioButton
+$("#radiobtn").ejRadioButton();
+$("#radiobtn").ejRadioButton("enable"); 
+&lt;/script&gt;</code>
+</pre>
 
 
 ## Events
@@ -426,61 +671,301 @@ Example
 
 
 ### beforeChange
+{:#beforeChange}
 
 
 
 
 Fires before the RadioButton is going to changed its state successfully
-<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from RadioButton<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the RadioButton model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the name of the event</td></tr><tr><td class="name"><code>data.element</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the current element</td></tr><tr><td class="name"><code>data.isChecked</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the status of the element</td></tr></tbody></table></td></tr></tbody></table>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>argument</code></td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from RadioButton
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>cancel</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name"><code>model</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the RadioButton model</td>
+</tr>
+<tr>
+<td class="name"><code>type</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name"><code>data.element</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the current element</td>
+</tr>
+<tr>
+<td class="name"><code>data.isChecked</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the status of the element</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;   &lt;script&gt;//beforeChange event for RadioButton$("#radiobtn").ejRadioButton({  beforeChange:function (args){ }});  &lt;/script&gt;         </code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;   
+&lt;script&gt;
+//beforeChange event for RadioButton
+$("#radiobtn").ejRadioButton({
+  beforeChange:function (args){ }
+});  
+&lt;/script&gt;         </code>
+</pre>
 
 
 
 ### change
+{:#change}
 
 
 
 
 Fires when the RadioButton state is changed successfully
-<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from RadioButton<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the RadioButton model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the name of the event</td></tr><tr><td class="name"><code>data.element</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the current element</td></tr><tr><td class="name"><code>data.isChecked</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the status of the element</td></tr></tbody></table></td></tr></tbody></table>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>argument</code></td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from RadioButton
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>cancel</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name"><code>model</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the RadioButton model</td>
+</tr>
+<tr>
+<td class="name"><code>type</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name"><code>data.element</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the current element</td>
+</tr>
+<tr>
+<td class="name"><code>data.isChecked</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the status of the element</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;script&gt;//change event for RadioButton$("#radiobtn").ejRadioButton({  change: function (args){}}); &lt;/script&gt;          </code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;script&gt;
+//change event for RadioButton
+$("#radiobtn").ejRadioButton({
+  change: function (args){}
+}); 
+&lt;/script&gt;          </code>
+</pre>
 
 
 
 ### create
+{:#create}
 
 
 
 
 Fires when the RadioButton created successfully
-<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from RadioButton<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the RadioButton model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>argument</code></td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from RadioButton
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>cancel</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name"><code>model</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the RadioButton model</td>
+</tr>
+<tr>
+<td class="name"><code>type</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;script&gt;// //create event for RadioButton$("#radiobtn").ejRadioButton({  create:function(args){}}); &lt;/script&gt;          </code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;script&gt;
+// //create event for RadioButton
+$("#radiobtn").ejRadioButton({
+  create:function(args){}
+}); 
+&lt;/script&gt;          </code>
+</pre>
 
 
 
 ### destroy
+{:#destroy}
 
 
 
 
 Fires when the RadioButton destroyed successfully
-<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>argument</code></td><td class="type"><span class="param-type">Object</span></td><td class="description last">Event parameters from RadioButton<table class="params"><thead><tr><th>Name</th><th>Type</th><th class="last">Description</th></tr></thead><tbody><tr><td class="name"><code>cancel</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">if the event should be canceled; otherwise, false.</td></tr><tr><td class="name"><code>model</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the RadioButton model</td></tr><tr><td class="name"><code>type</code></td><td class="type"><span class="param-type">boolean</span></td><td class="description last">returns the name of the event</td></tr></tbody></table></td></tr></tbody></table>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>argument</code></td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from RadioButton
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>cancel</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name"><code>model</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the RadioButton model</td>
+</tr>
+<tr>
+<td class="name"><code>type</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 Example
 {:.example}
-<pre class="prettyprint"><code> &lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;&lt;script&gt;// //destroy event for RadioButton$("#radiobtn").ejRadioButton({  destroy:function(args){}}); &lt;/script&gt;          </code></pre>
+
+<pre class="prettyprint">
+<code> 
+&lt;input type="radio" name="radiobutn" id="radiobtn"/&gt;
+&lt;label for="radiobtn"&gt;Experienced&lt;/label&gt;
+&lt;script&gt;
+// //destroy event for RadioButton
+$("#radiobtn").ejRadioButton({
+  destroy:function(args){}
+}); 
+&lt;/script&gt;          </code>
+</pre>
 
 

@@ -135,6 +135,7 @@ Requires
 
 
 ### chartType<span class="type-signature type enum">enum</span>
+{:#chartType}
 
 
 
@@ -189,6 +190,7 @@ $("#OlapClient").ejOlapClient({ chartType: ej.olap.OlapChart.ChartTypes.Spline }
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -243,6 +245,7 @@ $("#OlapClient").ejOlapClient({ cssClass: "Olive" });</code>
 
 
 ### customObject<span class="type-signature type object">Object</span>
+{:#customObject}
 
 
 
@@ -297,6 +300,7 @@ $("#OlapClient").ejOlapClient({ customObject: {"MyObject": "Hi Syncfusion!!"} })
 
 
 ### displaySettings<span class="type-signature type object">object</span>
+{:#displaySettings}
 
 
 
@@ -351,6 +355,7 @@ $("#OlapClient").ejOlapClient("option", "displaySettings", {mode: "chartandgrid"
 
 
 ### displaySettings.controlPlacement<span class="type-signature type enum">enum</span>
+{:#displaySettings-controlPlacement}
 
 
 
@@ -405,6 +410,7 @@ $("#OlapClient").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.Olap
 
 
 ### displaySettings.defaultView<span class="type-signature type enum">enum</span>
+{:#displaySettings-defaultView}
 
 
 
@@ -459,6 +465,7 @@ $("#OlapClient").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClien
 
 
 ### displaySettings.enableFullScreen<span class="type-signature type boolean">boolean</span>
+{:#displaySettings-enableFullScreen}
 
 
 
@@ -513,6 +520,7 @@ $("#OlapClient").ejOlapClient({ displaySettings.enableFullScreen: true });</code
 
 
 ### displaySettings.enableTogglePanel<span class="type-signature type boolean">boolean</span>
+{:#displaySettings-enableTogglePanel}
 
 
 
@@ -567,6 +575,7 @@ $("#OlapClient").ejOlapClient({ displaySettings.enableTogglePanel: true });</cod
 
 
 ### displaySettings.mode<span class="type-signature type enum">enum</span>
+{:#displaySettings-mode}
 
 
 
@@ -621,6 +630,7 @@ $("#OlapClient").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.Disp
 
 
 ### enableMeasureGroups<span class="type-signature type boolean">boolean</span>
+{:#enableMeasureGroups}
 
 
 
@@ -675,6 +685,7 @@ $("#OlapClient").ejOlapClient({ enableMeasureGroups : true });</code>
 
 
 ### gridLayout<span class="type-signature type enum">enum</span>
+{:#gridLayout}
 
 
 
@@ -729,6 +740,7 @@ $("#OlapClient").ejOlapClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });<
 
 
 ### isResponsive<span class="type-signature type boolean">Boolean</span>
+{:#isResponsive}
 
 
 
@@ -783,6 +795,7 @@ $("#OlapClient1").ejOlapClient({isResponsive: true});</code>
 
 
 ### locale<span class="type-signature type string">string</span>
+{:#locale}
 
 
 
@@ -837,6 +850,7 @@ $("#OlapClient").ejOlapClient({ locale: "en-US" });</code>
 
 
 ### serviceMethodSettings<span class="type-signature type object">object</span>
+{:#serviceMethodSettings}
 
 
 
@@ -891,6 +905,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings",  {initialize: "
 
 
 ### serviceMethodSettings.cubeChanged<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-cubeChanged}
 
 
 
@@ -945,6 +960,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.cubeChanged","Cub
 
 
 ### serviceMethodSettings.fetchMemberTreeNodes<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-fetchMemberTreeNodes}
 
 
 
@@ -999,6 +1015,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.fetchMemberTreeNo
 
 
 ### serviceMethodSettings.fetchReportList<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-fetchReportList}
 
 
 
@@ -1053,6 +1070,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.fetchReportList",
 
 
 ### serviceMethodSettings.filterElement<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-filterElement}
 
 
 
@@ -1107,6 +1125,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.filterElement", "
 
 
 ### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-initialize}
 
 
 
@@ -1161,6 +1180,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.initialize", "Ini
 
 
 ### serviceMethodSettings.loadReport<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-loadReport}
 
 
 
@@ -1215,6 +1235,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.loadReport", "Loa
 
 
 ### serviceMethodSettings.measureGroupChanged<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-measureGroupChanged}
 
 
 
@@ -1269,6 +1290,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.measureGroupChang
 
 
 ### serviceMethodSettings.memberExpand<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-memberExpand}
 
 
 
@@ -1323,6 +1345,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.memberExpand", "M
 
 
 ### serviceMethodSettings.nodeDropped<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-nodeDropped}
 
 
 
@@ -1377,6 +1400,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.nodeDropped","Nod
 
 
 ### serviceMethodSettings.removeSplitButton<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-removeSplitButton}
 
 
 
@@ -1431,6 +1455,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.removeSplitButton
 
 
 ### serviceMethodSettings.saveReport<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-saveReport}
 
 
 
@@ -1485,6 +1510,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.saveReport", "Sav
 
 
 ### serviceMethodSettings.toolbarServices<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-toolbarServices}
 
 
 
@@ -1539,6 +1565,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.toolbarServices",
 
 
 ### serviceMethodSettings.updateReport<span class="type-signature type string">string</span>
+{:#serviceMethodSettings-updateReport}
 
 
 
@@ -1593,6 +1620,7 @@ $("#OlapClient").ejOlapClient("option", "serviceMethodSettings.updateReport", "U
 
 
 ### title<span class="type-signature type string">string</span>
+{:#title}
 
 
 
@@ -1647,6 +1675,7 @@ $("#OlapClient").ejOlapClient({ title: "Olap Browser" });</code>
 
 
 ### url<span class="type-signature type string">string</span>
+{:#url}
 
 
 
@@ -1708,6 +1737,7 @@ $("#OlapClient").ejOlapClient({ url: "/wcf/OlapClientService.svc" });</code>
 
 
 ### chartDrillSuccess<span class="signature">()</span>
+{:#chartDrillSuccess}
 
 
 
@@ -1746,6 +1776,7 @@ clientObj.gridDrillSuccess(ej.proxy(function(){}, this));
 
 
 ### cubeChanged<span class="signature">()</span>
+{:#cubeChanged}
 
 
 
@@ -1784,6 +1815,7 @@ clientObj.cubeChanged(ej.proxy(function(){}, this));
 
 
 ### doAjaxPost<span class="signature">()</span>
+{:#doAjaxPost}
 
 
 
@@ -1822,6 +1854,7 @@ clientObj.doAjaxPost("POST", "/OlapClientService.svc/Initialize", {"key", "Hello
 
 
 ### getAxisPosition<span class="signature">()</span>
+{:#getAxisPosition}
 
 
 
@@ -1860,6 +1893,7 @@ clientObj.getAxisPosition(eve);
 
 
 ### gridDrillSuccess<span class="signature">()</span>
+{:#gridDrillSuccess}
 
 
 
@@ -1898,6 +1932,7 @@ clientObj.gridDrillSuccess(ej.proxy(function(){}, this));
 
 
 ### nodeDropped<span class="signature">()</span>
+{:#nodeDropped}
 
 
 
@@ -1936,6 +1971,7 @@ clientObj.nodeDropped(ej.proxy(function(){}, this));
 
 
 ### onDropped<span class="signature">()</span>
+{:#onDropped}
 
 
 
@@ -1974,6 +2010,7 @@ clientObj.onDropped(ej.proxy(function(){}, this));
 
 
 ### onTabClick<span class="signature">()</span>
+{:#onTabClick}
 
 
 
@@ -2012,6 +2049,7 @@ clientObj.onTabClick(ej.proxy(function(){}, this));
 
 
 ### reportChanged<span class="signature">()</span>
+{:#reportChanged}
 
 
 
@@ -2050,6 +2088,7 @@ clientObj.reportChanged(ej.proxy(function(){}, this));
 
 
 ### setSplitBtnTargetPos<span class="signature">()</span>
+{:#setSplitBtnTargetPos}
 
 
 
@@ -2095,6 +2134,7 @@ clientObj.setSplitBtnTargetPos(eve);
 
 
 ### afterServiceInvoke
+{:#afterServiceInvoke}
 
 
 
@@ -2184,6 +2224,7 @@ $("#OlapClient").ejOlapClient({
 
 
 ### beforeServiceInvoke
+{:#beforeServiceInvoke}
 
 
 
@@ -2273,6 +2314,7 @@ $("#OlapClient").ejOlapClient({
 
 
 ### chartLoad
+{:#chartLoad}
 
 
 
@@ -2362,6 +2404,7 @@ $("#OlapClient").ejOlapClient({
 
 
 ### load
+{:#load}
 
 
 
@@ -2441,6 +2484,7 @@ $("#OlapClient").ejOlapClient({
 
 
 ### renderComplete
+{:#renderComplete}
 
 
 
@@ -2525,6 +2569,7 @@ $("#OlapClient").ejOlapClient({
 
 
 ### renderFailure
+{:#renderFailure}
 
 
 
@@ -2614,6 +2659,7 @@ $("#OlapClient").ejOlapClient({
 
 
 ### renderSuccess
+{:#renderSuccess}
 
 
 

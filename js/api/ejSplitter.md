@@ -100,6 +100,7 @@ Requires
 
 
 ### animationSpeed<span class="type-signature type number">number</span>
+{:#animationSpeed}
 
 
 
@@ -155,6 +156,7 @@ $("#innerSplitter").ejSplitter({animationSpeed: 150 });
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssClass}
 
 
 
@@ -209,6 +211,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
+{:#enableAnimation}
 
 
 
@@ -264,6 +267,7 @@ Example
 
 
 ### enableAutoResize<span class="type-signature type boolean">boolean</span>
+{:#enableAutoResize}
 
 
 
@@ -318,6 +322,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enableRTL}
 
 
 
@@ -372,6 +377,7 @@ Example
 
 
 ### height<span class="type-signature type string">string</span>
+{:#height}
 
 
 
@@ -427,6 +433,7 @@ Example
 
 
 ### orientation<span class="type-signature type enum">Enum</span>
+{:#orientation}
 
 
 
@@ -481,6 +488,7 @@ $("#innerSplitter").ejSplitter({ orientation: ej.Orientation.Horizontal });
 
 
 ### properties<span class="type-signature type array">array</span>
+{:#properties}
 
 
 
@@ -536,6 +544,7 @@ Example
 
 
 ### width<span class="type-signature type string">string</span>
+{:#width}
 
 
 
@@ -598,6 +607,7 @@ Example
 
 
 ### addItem<span class="signature">(content, property, index)</span>
+{:#addItem}
 
 
 
@@ -681,6 +691,7 @@ $("#innerSplitter").ejSplitter("addItem","New pane 0",{ paneSize:20, minSize:20,
 
 
 ### collapse<span class="signature">()</span>
+{:#collapse}
 
 
 
@@ -738,6 +749,7 @@ $("#innerSplitter").ejSplitter("collpase");
 
 
 ### expand<span class="signature">()</span>
+{:#expand}
 
 
 
@@ -795,6 +807,7 @@ $("#innerSplitter").ejSplitter("expand");
 
 
 ### refresh<span class="signature">()</span>
+{:#refresh}
 
 
 
@@ -852,6 +865,7 @@ $("#innerSplitter").ejSplitter("refresh");
 
 
 ### removeItem<span class="signature">(index)</span>
+{:#removeItem}
 
 
 
@@ -932,6 +946,7 @@ $("#innerSplitter").ejSplitter("removeItem",0);
 
 
 ### beforeExpandCollapse
+{:#beforeExpandCollapse}
 
 
 
@@ -1031,6 +1046,7 @@ $("#innerSplitter").ejSplitter({
 
 
 ### create
+{:#create}
 
 
 
@@ -1114,6 +1130,7 @@ $("#innerSplitter").ejSplitter({
 
 
 ### destroy
+{:#destroy}
 
 
 
@@ -1197,6 +1214,7 @@ $("#innerSplitter").ejSplitter({
 
 
 ### expandCollapse
+{:#expandCollapse}
 
 
 
@@ -1296,6 +1314,7 @@ $("#innerSplitter").ejSplitter({
 
 
 ### resize
+{:#resize}
 
 
 

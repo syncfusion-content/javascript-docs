@@ -86,6 +86,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">String</span>
+{:#cssClass}
 
 
 
@@ -135,6 +136,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">Boolean</span>
+{:#enableAnimation}
 
 
 
@@ -184,6 +186,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
+{:#enabled}
 
 
 
@@ -233,6 +236,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">Boolean</span>
+{:#enablePersistence}
 
 
 
@@ -282,6 +286,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
+{:#enableRTL}
 
 
 
@@ -331,6 +336,7 @@ Example
 
 
 ### enableStrictMode<span class="type-signature type boolean">Boolean</span>
+{:#enableStrictMode}
 
 
 
@@ -379,6 +385,7 @@ Example
 
 
 ### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#height}
 
 
 
@@ -428,6 +435,7 @@ Example
 
 
 ### hourInterval<span class="type-signature type number">Number</span>
+{:#hourInterval}
 
 
 
@@ -477,6 +485,7 @@ Example
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
+{:#htmlAttributes}
 
 
 
@@ -526,6 +535,7 @@ Example
 
 
 ### interval<span class="type-signature type number">Number</span>
+{:#interval}
 
 
 
@@ -575,6 +585,7 @@ Example
 
 
 ### locale<span class="type-signature type string">String</span>
+{:#locale}
 
 
 
@@ -624,6 +635,7 @@ Example
 
 
 ### maxTime<span class="type-signature type string">String</span>
+{:#maxTime}
 
 
 
@@ -673,6 +685,7 @@ Example
 
 
 ### minTime<span class="type-signature type string">String</span>
+{:#minTime}
 
 
 
@@ -722,6 +735,7 @@ Example
 
 
 ### minutesInterval<span class="type-signature type number">Number</span>
+{:#minutesInterval}
 
 
 
@@ -771,6 +785,7 @@ Example
 
 
 ### popupHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#popupHeight}
 
 
 
@@ -820,6 +835,7 @@ Example
 
 
 ### popupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#popupWidth}
 
 
 
@@ -869,6 +885,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">Boolean</span>
+{:#readOnly}
 
 
 
@@ -918,6 +935,7 @@ Example
 
 
 ### secondsInterval<span class="type-signature type number">Number</span>
+{:#secondsInterval}
 
 
 
@@ -967,6 +985,7 @@ Example
 
 
 ### showPopupButton<span class="type-signature type boolean">Boolean</span>
+{:#showPopupButton}
 
 
 
@@ -1016,6 +1035,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
+{:#showRoundedCorner}
 
 
 
@@ -1065,6 +1085,7 @@ Example
 
 
 ### timeFormat<span class="type-signature type string">String</span>
+{:#timeFormat}
 
 
 
@@ -1114,6 +1135,7 @@ Example
 
 
 ### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+{:#value}
 
 
 
@@ -1163,6 +1185,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#width}
 
 
 
@@ -1219,6 +1242,7 @@ Example
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 
 
 
@@ -1262,6 +1286,7 @@ $("#timepicker").ejTimePicker("disable");
 
 
 ### enable<span class="signature">()</span>
+{:#enable}
 
 
 
@@ -1305,6 +1330,7 @@ $("#timepicker").ejTimePicker("enable");
 
 
 ### getValue<span class="signature">()</span>
+{:#getValue}
 
 
 
@@ -1348,6 +1374,7 @@ $("#timepicker").ejTimePicker("getValue");
 
 
 ### setCurrentTime<span class="signature">()</span>
+{:#setCurrentTime}
 
 
 
@@ -1398,6 +1425,7 @@ $("#timepicker").ejTimePicker("setCurrentTime");
 
 
 ### beforeChange
+{:#beforeChange}
 
 
 
@@ -1481,6 +1509,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### beforeOpen
+{:#beforeOpen}
 
 
 
@@ -1552,6 +1581,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### change
+{:#change}
 
 
 
@@ -1635,6 +1665,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### close
+{:#close}
 
 
 
@@ -1706,6 +1737,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### create
+{:#create}
 
 
 
@@ -1767,6 +1799,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### destroy
+{:#destroy}
 
 
 
@@ -1828,6 +1861,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### focusIn
+{:#focusIn}
 
 
 
@@ -1911,6 +1945,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### focusOut
+{:#focusOut}
 
 
 
@@ -1994,6 +2029,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### open
+{:#open}
 
 
 
@@ -2065,6 +2101,7 @@ $("#timepicker").ejTimePicker({
 
 
 ### select
+{:#select}
 
 
 

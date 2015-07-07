@@ -73,6 +73,7 @@ Requires
 
 
 ### addCustomFunction<span class="signature">(FormulaName, FunctionName)</span>
+{:#addCustomFunction}
 
 
 
@@ -141,6 +142,7 @@ calcObj.addCustomFunction("ADD", "customAdd");
 
 
 ### addNamedRange<span class="signature">(Name, cellRange)</span>
+{:#addNamedRange}
 
 
 
@@ -199,6 +201,7 @@ calcObj.addNamedRange("FIRSTCELL","A1");
 
 
 ### adjustRangeArg<span class="signature">(Name)</span>
+{:#adjustRangeArg}
 
 
 
@@ -230,6 +233,7 @@ Accepts a possible parsed formula and returns the calculated value without quote
 
 
 #### Returns:
+{:#Returns:}
 
 range
 
@@ -251,6 +255,7 @@ calcObj.addNamedRange("FIRSTCELL","A1");
 
 
 ### clearFormulaDependentCells<span class="signature">(Cell)</span>
+{:#clearFormulaDependentCells}
 
 
 
@@ -296,6 +301,7 @@ calcObj.clearFormulaDependentCells("A1");
 
 
 ### clearLibraryComputationException<span class="signature">()</span>
+{:#clearLibraryComputationException}
 
 
 
@@ -325,6 +331,7 @@ calcObj.clearLibraryComputationException();
 
 
 ### colIndex<span class="signature">(Cell)</span>
+{:#colIndex}
 
 
 
@@ -370,6 +377,7 @@ calcObj.colIndex("A1");
 
 
 ### computedValue<span class="signature">(Formula)</span>
+{:#computedValue}
 
 
 
@@ -401,6 +409,7 @@ Evaluates a parsed formula.
 
 
 #### Returns:
+{:#Returns:}
 
 value of formula
 
@@ -420,6 +429,7 @@ calcObj.computedValue("&rsquo;n10n2a&rsquo;");
 
 
 ### computeFormula<span class="signature">(Formula)</span>
+{:#computeFormula}
 
 
 
@@ -451,6 +461,7 @@ Evaluates a parsed formula.
 
 
 #### Returns:
+{:#Returns:}
 
 value of formula
 

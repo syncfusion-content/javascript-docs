@@ -74,6 +74,7 @@ Requires
 
 
 ### addMetaTags<span class="type-signature type boolean">boolean</span>
+{:#addMetaTags}
 
 
 
@@ -121,6 +122,7 @@ Example
 
 
 ### pageTransition<span class="type-signature type enum">enum</span>
+{:#pageTransition}
 
 
 
@@ -168,6 +170,7 @@ Example
 
 
 ### renderEJMControlsByDef<span class="type-signature type boolean">boolean</span>
+{:#renderEJMControlsByDef}
 
 
 
@@ -222,6 +225,7 @@ Example
 
 
 ### activeHistory<span class="signature">()</span>
+{:#activeHistory}
 
 
 
@@ -253,6 +257,7 @@ Example
 
 
 ### add<span class="signature">()</span>
+{:#add}
 
 
 
@@ -284,6 +289,7 @@ Example
 
 
 ### clearForward<span class="signature">()</span>
+{:#clearForward}
 
 
 
@@ -315,6 +321,7 @@ Example
 
 
 ### convertToRelativeUrl<span class="signature">()</span>
+{:#convertToRelativeUrl}
 
 
 
@@ -346,6 +353,7 @@ Example
 
 
 ### createPage<span class="signature">()</span>
+{:#createPage}
 
 
 
@@ -377,6 +385,7 @@ Example
 
 
 ### find<span class="signature">()</span>
+{:#find}
 
 
 
@@ -408,6 +417,7 @@ Example
 
 
 ### getLocation<span class="signature">()</span>
+{:#getLocation}
 
 
 
@@ -438,6 +448,7 @@ Example
 
 
 ### hasProtocol<span class="signature">()</span>
+{:#hasProtocol}
 
 
 
@@ -469,6 +480,7 @@ Example
 
 
 ### initPage<span class="signature">()</span>
+{:#initPage}
 
 
 
@@ -500,6 +512,7 @@ Example
 
 
 ### lastHistory<span class="signature">()</span>
+{:#lastHistory}
 
 
 
@@ -531,6 +544,7 @@ Example
 
 
 ### loadView<span class="signature">()</span>
+{:#loadView}
 
 
 
@@ -562,6 +576,7 @@ Example
 
 
 ### makeUrlAbsolute<span class="signature">()</span>
+{:#makeUrlAbsolute}
 
 
 
@@ -593,6 +608,7 @@ Example
 
 
 ### nextHistory<span class="signature">()</span>
+{:#nextHistory}
 
 
 
@@ -624,6 +640,7 @@ Example
 
 
 ### prevHistory<span class="signature">()</span>
+{:#prevHistory}
 
 
 
@@ -655,6 +672,7 @@ Example
 
 
 ### replace<span class="signature">()</span>
+{:#replace}
 
 
 
@@ -686,6 +704,7 @@ Example
 
 
 ### setPageRenderMode<span class="signature">()</span>
+{:#setPageRenderMode}
 
 
 
@@ -717,6 +736,7 @@ Example
 
 
 ### splitUrl<span class="signature">()</span>
+{:#splitUrl}
 
 
 
@@ -748,6 +768,7 @@ Example
 
 
 ### transferPage<span class="signature">()</span>
+{:#transferPage}
 
 
 
@@ -786,6 +807,7 @@ Example
 
 
 ### userAgent<span class="signature">()</span>
+{:#userAgent}
 
 
 
