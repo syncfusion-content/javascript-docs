@@ -7,6 +7,8 @@ metaname:
 metacontent: 
 ---
 
+# Custom Design for RangeNavigator.
+
 The rangenavigator can be easily configured to the DOM element, such as div. you can create a rangenavigator with a highly customizable look and feel.
 
 

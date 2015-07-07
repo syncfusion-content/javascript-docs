@@ -7,6 +7,8 @@ metaname:
 metacontent: 
 ---
 
+# Custom Design for Chart.
+
 The chart can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
 
 

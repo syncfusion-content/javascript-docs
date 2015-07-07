@@ -951,15 +951,10 @@ Represents the close values</td></tr>
 
 {% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img25.png" %}
 
-**bullFillColor**
 
-**BullFillColor** is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval.
+**bullFillColor** is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval.
 
-**bearFillColor**
-
-**BearFillColor** is used to specify a fill color for the segments that indicate a decrease in stock price in the measured time interval.
-
-**drawMode**
+**bearFillColor** is used to specify a fill color for the segments that indicate a decrease in stock price in the measured time interval.
 
 **drawMode** is used to specify the open and close draw mode to **hiloopenclose series**.
 
@@ -971,9 +966,9 @@ Represents the close values</td></tr>
 
 
 
-To create a simple **HiLoOpenCloseSeries** use the following code example.
+To create a simple **hiloopenclose series** use the following code example.
 
-{% highlight js %}
+{% highlight js %} 
 
 
         $("#chartcontainer").ejChart({
