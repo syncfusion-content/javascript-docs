@@ -63,6 +63,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssclass}
 {:#cssClass}
 
 
@@ -103,6 +104,7 @@ Example
 
 
 ### decimalPlaces<span class="type-signature type number">number</span>
+{:#decimalplaces}
 {:#decimalPlaces}
 
 
@@ -144,6 +146,7 @@ Example
 
 ### enabled<span class="type-signature type boolean">boolean</span>
 {:#enabled}
+{:#enabled}
 
 
 
@@ -183,6 +186,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
+{:#enablepersistence}
 {:#enablePersistence}
 
 
@@ -223,6 +227,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enablertl}
 {:#enableRTL}
 
 
@@ -263,6 +268,7 @@ Example
 
 
 ### enableStrictMode<span class="type-signature type boolean">boolean</span>
+{:#enablestrictmode}
 {:#enableStrictMode}
 
 
@@ -304,6 +310,7 @@ Example
 
 ### height<span class="type-signature type string">String</span>
 {:#height}
+{:#height}
 
 
 
@@ -343,6 +350,7 @@ Example
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
+{:#htmlattributes}
 {:#htmlAttributes}
 
 
@@ -383,6 +391,7 @@ Example
 
 
 ### incrementStep<span class="type-signature type number">number</span>
+{:#incrementstep}
 {:#incrementStep}
 
 
@@ -424,6 +433,7 @@ Example
 
 ### locale<span class="type-signature type string">string</span>
 {:#locale}
+{:#locale}
 
 
 
@@ -463,6 +473,7 @@ Example
 
 
 ### maxValue<span class="type-signature type number">number</span>
+{:#maxvalue}
 {:#maxValue}
 
 
@@ -503,6 +514,7 @@ Example
 
 
 ### minValue<span class="type-signature type number">number</span>
+{:#minvalue}
 {:#minValue}
 
 
@@ -544,6 +556,7 @@ Example
 
 ### name<span class="type-signature type string">string</span>
 {:#name}
+{:#name}
 
 
 
@@ -583,6 +596,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
+{:#readonly}
 {:#readOnly}
 
 
@@ -623,6 +637,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+{:#showroundedcorner}
 {:#showRoundedCorner}
 
 
@@ -663,6 +678,7 @@ Example
 
 
 ### showSpinButton<span class="type-signature type boolean">boolean</span>
+{:#showspinbutton}
 {:#showSpinButton}
 
 
@@ -703,6 +719,7 @@ Example
 
 
 ### validateOnType<span class="type-signature type number">number</span>
+{:#validateontype}
 {:#validateOnType}
 
 
@@ -743,6 +760,7 @@ Example
 
 
 ### validationMessage<span class="type-signature type object">object</span>
+{:#validationmessage}
 {:#validationMessage}
 
 
@@ -783,6 +801,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
+{:#validationrules}
 {:#validationRules}
 
 
@@ -824,6 +843,7 @@ Example
 
 ### value<span class="type-signature type number">number</span>
 {:#value}
+{:#value}
 
 
 
@@ -863,6 +883,7 @@ Example
 
 
 ### watermarkText<span class="type-signature type string">string</span>
+{:#watermarktext}
 {:#watermarkText}
 
 
@@ -903,6 +924,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span>
+{:#width}
 {:#width}
 
 
@@ -947,6 +969,7 @@ Example
 
 
 ### destroy<span class="signature">()</span>
+{:#destroy}
 {:#destroy}
 
 
@@ -1002,6 +1025,7 @@ $("#percentage").ejPercentageTextbox("destroy");
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 {:#disable}
 
 
@@ -1059,6 +1083,7 @@ $("#percentage").ejPercentageTextbox("disable");
 
 ### enable<span class="signature">()</span>
 {:#enable}
+{:#enable}
 
 
 
@@ -1114,6 +1139,7 @@ $("#percentage").ejPercentageTextbox("enable");
 
 
 ### getValue<span class="signature">()</span>
+{:#getvalue}
 {:#getValue}
 
 
@@ -1174,6 +1200,7 @@ $("#percentage").ejPercentageTextbox("getValue");
 
 
 ### change
+{:#change}
 {:#change}
 
 
@@ -1263,6 +1290,7 @@ $("#percentage").ejPercentageTextbox({
 
 ### create
 {:#create}
+{:#create}
 
 
 
@@ -1329,6 +1357,7 @@ $("#percentage").ejPercentageTextbox({
 
 ### destroy
 {:#destroy}
+{:#destroy}
 
 
 
@@ -1394,6 +1423,7 @@ $("#percentage").ejPercentageTextbox({
 
 
 ### focusIn
+{:#focusin}
 {:#focusIn}
 
 
@@ -1482,6 +1512,7 @@ $("#percentage").ejPercentageTextbox({
 
 
 ### focusOut
+{:#focusout}
 {:#focusOut}
 
 

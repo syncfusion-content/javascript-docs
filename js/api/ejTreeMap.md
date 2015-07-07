@@ -56,6 +56,7 @@ Requires
 
 
 ### borderBrush<span class="type-signature type string">string</span>
+{:#borderbrush}
 {:#borderBrush}
 
 
@@ -95,6 +96,7 @@ Example
 
 
 ### borderThickness<span class="type-signature type number">number</span>
+{:#borderthickness}
 {:#borderThickness}
 
 
@@ -135,6 +137,7 @@ Example
 
 ### color<span class="type-signature type string">string</span>
 {:#color}
+{:#color}
 
 
 
@@ -174,44 +177,6 @@ Example
 
 ### color<span class="type-signature type string">string</span>
 {:#color}
-
-
-
-
-Specifies the color for desaturationColorMapping
-
-
-Default Value:
-{:.param}
-
-
-
-* null
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set color API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ color:"#41B8C4" }});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the color API, after initialization:
-        //Gets the color value 
-  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.color;
- 
-        //Sets the color for desaturationColorMapping value 
-        $("#container").data("ejTreeMap").model.desaturationColorMapping = { color:"#41B8C4" }; </code>
-</pre>
-
-
-
-### color<span class="type-signature type string">string</span>
 {:#color}
 
 
@@ -251,6 +216,47 @@ Example
 
 
 ### color<span class="type-signature type string">string</span>
+{:#color}
+{:#color}
+
+
+
+
+Specifies the color for desaturationColorMapping
+
+
+Default Value:
+{:.param}
+
+
+
+* null
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+//To set color API value during initialization 
+  $("#container").ejTreeMap( {desaturationColorMapping{ color:"#41B8C4" }});</code>
+</pre>
+<pre class="prettyprint">
+<code> 
+//Get or set the color API, after initialization:
+        //Gets the color value 
+  var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.color;
+ 
+        //Sets the color for desaturationColorMapping value 
+        $("#container").data("ejTreeMap").model.desaturationColorMapping = { color:"#41B8C4" }; </code>
+</pre>
+
+
+
+### color<span class="type-signature type string">string</span>
+{:#color}
 {:#color}
 
 
@@ -291,6 +297,7 @@ Example
 
 ### colors<span class="type-signature type data">data</span>
 {:#colors}
+{:#colors}
 
 
 
@@ -329,6 +336,7 @@ Example
 
 
 ### colors<span class="type-signature type data">data</span>
+{:#colors}
 {:#colors}
 
 
@@ -368,6 +376,7 @@ Example
 
 
 ### colorValuePath<span class="type-signature type string">string</span>
+{:#colorvaluepath}
 {:#colorValuePath}
 
 
@@ -407,6 +416,7 @@ Example
 
 
 ### dataSource<span class="type-signature type object">object</span>
+{:#datasource}
 {:#dataSource}
 
 
@@ -446,6 +456,7 @@ Example
 
 
 ### desaturationColorMapping<span class="type-signature type object">object</span>
+{:#desaturationcolormapping}
 {:#desaturationColorMapping}
 
 
@@ -459,6 +470,7 @@ Specifies the desaturationColorMapping settings of the treemap
 
 
 ### dockPosition<span class="type-signature type enum">enum</span>
+{:#dockposition}
 {:#dockPosition}
 
 
@@ -498,6 +510,7 @@ Example
 
 
 ### drillDownHeaderColor<span class="type-signature type string">string</span>
+{:#drilldownheadercolor}
 {:#drillDownHeaderColor}
 
 
@@ -537,6 +550,7 @@ Example
 
 
 ### drillDownSelectionColor<span class="type-signature type string">string</span>
+{:#drilldownselectioncolor}
 {:#drillDownSelectionColor}
 
 
@@ -576,6 +590,7 @@ Example
 
 
 ### enableDrillDown<span class="type-signature type boolean">boolean</span>
+{:#enabledrilldown}
 {:#enableDrillDown}
 
 
@@ -615,6 +630,7 @@ Example
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
+{:#enableresize}
 {:#enableResize}
 
 
@@ -655,6 +671,7 @@ Example
 
 ### from<span class="type-signature type number">number</span>
 {:#from}
+{:#from}
 
 
 
@@ -694,6 +711,7 @@ Example
 
 ### from<span class="type-signature type number">number</span>
 {:#from}
+{:#from}
 
 
 
@@ -732,6 +750,7 @@ Example
 
 
 ### groupColorMapping<span class="type-signature type treemapgroupcolormapping">TreeMapGroupColorMapping</span>
+{:#groupcolormapping}
 {:#groupColorMapping}
 
 
@@ -772,6 +791,7 @@ Example
 
 ### height<span class="type-signature type number">number</span>
 {:#height}
+{:#height}
 
 
 
@@ -810,6 +830,7 @@ Example
 
 
 ### highlightBorderBrush<span class="type-signature type string">string</span>
+{:#highlightborderbrush}
 {:#highlightBorderBrush}
 
 
@@ -849,6 +870,7 @@ Example
 
 
 ### highlightBorderThickness<span class="type-signature type number">number</span>
+{:#highlightborderthickness}
 {:#highlightBorderThickness}
 
 
@@ -888,6 +910,7 @@ Example
 
 
 ### highlightGroupBorderBrush<span class="type-signature type string">string</span>
+{:#highlightgroupborderbrush}
 {:#highlightGroupBorderBrush}
 
 
@@ -927,6 +950,7 @@ Example
 
 
 ### highlightGroupBorderThickness<span class="type-signature type number">number</span>
+{:#highlightgroupborderthickness}
 {:#highlightGroupBorderThickness}
 
 
@@ -966,6 +990,7 @@ Example
 
 
 ### highlightGroupOnSelection<span class="type-signature type boolean">boolean</span>
+{:#highlightgrouponselection}
 {:#highlightGroupOnSelection}
 
 
@@ -1005,6 +1030,7 @@ Example
 
 
 ### highlightOnSelection<span class="type-signature type boolean">boolean</span>
+{:#highlightonselection}
 {:#highlightOnSelection}
 
 
@@ -1044,6 +1070,7 @@ Example
 
 
 ### iconHeight<span class="type-signature type number">number</span>
+{:#iconheight}
 {:#iconHeight}
 
 
@@ -1083,6 +1110,7 @@ Example
 
 
 ### iconWidth<span class="type-signature type number">number</span>
+{:#iconwidth}
 {:#iconWidth}
 
 
@@ -1122,6 +1150,7 @@ Example
 
 
 ### itemsLayoutMode<span class="type-signature type enum">enum</span>
+{:#itemslayoutmode}
 {:#itemsLayoutMode}
 
 
@@ -1161,6 +1190,7 @@ Example
 
 
 ### leafItemSettings<span class="type-signature type object">object</span>
+{:#leafitemsettings}
 {:#leafItemSettings}
 
 
@@ -1174,6 +1204,7 @@ Specifies the leaf settings of the treemap
 
 
 ### leafItemSettings.borderBrush<span class="type-signature type string">string</span>
+{:#leafitemsettings-borderbrush}
 {:#leafItemSettings-borderBrush}
 
 
@@ -1213,6 +1244,7 @@ Example
 
 
 ### leafItemSettings.borderThickness<span class="type-signature type number">number</span>
+{:#leafitemsettings-borderthickness}
 {:#leafItemSettings-borderThickness}
 
 
@@ -1252,6 +1284,7 @@ Example
 
 
 ### leafItemSettings.itemTemplate<span class="type-signature type string">string</span>
+{:#leafitemsettings-itemtemplate}
 {:#leafItemSettings-itemTemplate}
 
 
@@ -1291,6 +1324,7 @@ Example
 
 
 ### leafItemSettings.labelPath<span class="type-signature type string">string</span>
+{:#leafitemsettings-labelpath}
 {:#leafItemSettings-labelPath}
 
 
@@ -1330,6 +1364,7 @@ Example
 
 
 ### leafItemSettings.labelPosition<span class="type-signature type enum">enum</span>
+{:#leafitemsettings-labelposition}
 {:#leafItemSettings-labelPosition}
 
 
@@ -1369,6 +1404,7 @@ Example
 
 
 ### leafItemSettings.labelVisibilityMode<span class="type-signature type enum">enum</span>
+{:#leafitemsettings-labelvisibilitymode}
 {:#leafItemSettings-labelVisibilityMode}
 
 
@@ -1408,6 +1444,7 @@ Example
 
 
 ### leafItemSettings.showLabels<span class="type-signature type boolean">boolean</span>
+{:#leafitemsettings-showlabels}
 {:#leafItemSettings-showLabels}
 
 
@@ -1447,6 +1484,7 @@ Example
 
 
 ### legendSettings<span class="type-signature type object">object</span>
+{:#legendsettings}
 {:#legendSettings}
 
 
@@ -1460,6 +1498,7 @@ Specifies the legend settings of the treemap
 
 
 ### levels<span class="type-signature type treemaplevel">treeMapLevel</span>
+{:#levels}
 {:#levels}
 
 
@@ -1498,6 +1537,7 @@ Example
 
 
 ### paletteColorMapping<span class="type-signature type object">object</span>
+{:#palettecolormapping}
 {:#paletteColorMapping}
 
 
@@ -1511,6 +1551,7 @@ Specifies the paletteColorMapping of the treemap
 
 
 ### rangeColorMapping<span class="type-signature type treemaprangecolormapping">TreeMapRangeColorMapping</span>
+{:#rangecolormapping}
 {:#rangeColorMapping}
 
 
@@ -1541,6 +1582,7 @@ Example
 
 
 ### rangeMaximum<span class="type-signature type number">number</span>
+{:#rangemaximum}
 {:#rangeMaximum}
 
 
@@ -1580,6 +1622,7 @@ Example
 
 
 ### rangeMaximum<span class="type-signature type number">number</span>
+{:#rangemaximum}
 {:#rangeMaximum}
 
 
@@ -1619,6 +1662,7 @@ Example
 
 
 ### rangeMinimum<span class="type-signature type number">number</span>
+{:#rangeminimum}
 {:#rangeMinimum}
 
 
@@ -1658,6 +1702,7 @@ Example
 
 
 ### rangeMinimum<span class="type-signature type number">number</span>
+{:#rangeminimum}
 {:#rangeMinimum}
 
 
@@ -1697,6 +1742,7 @@ Example
 
 
 ### shapeLayer.groupSelectionMode<span class="type-signature type enum">enum</span>
+{:#shapelayer-groupselectionmode}
 {:#shapeLayer-groupSelectionMode}
 
 
@@ -1735,6 +1781,7 @@ Example
 
 
 ### showLegend<span class="type-signature type boolean">boolean</span>
+{:#showlegend}
 {:#showLegend}
 
 
@@ -1774,6 +1821,7 @@ Example
 
 
 ### showTooltip<span class="type-signature type boolean">boolean</span>
+{:#showtooltip}
 {:#showTooltip}
 
 
@@ -1814,6 +1862,7 @@ Example
 
 ### template<span class="type-signature type string">string</span>
 {:#template}
+{:#template}
 
 
 
@@ -1853,6 +1902,7 @@ Example
 
 ### to<span class="type-signature type number">number</span>
 {:#to}
+{:#to}
 
 
 
@@ -1892,6 +1942,7 @@ Example
 
 ### to<span class="type-signature type number">number</span>
 {:#to}
+{:#to}
 
 
 
@@ -1930,6 +1981,7 @@ Example
 
 
 ### tooltipTemplate<span class="type-signature type string">string</span>
+{:#tooltiptemplate}
 {:#tooltipTemplate}
 
 
@@ -1969,6 +2021,7 @@ Example
 
 
 ### TreeMapGroupColorMapping.groupID<span class="type-signature type string">string</span>
+{:#treemapgroupcolormapping-groupid}
 {:#TreeMapGroupColorMapping-groupID}
 
 
@@ -2007,6 +2060,7 @@ Example
 
 
 ### treeMapItems<span class="type-signature type treemapitem">TreeMapItem</span>
+{:#treemapitems}
 {:#treeMapItems}
 
 
@@ -2046,6 +2100,7 @@ Example
 
 
 ### treeMapLevel
+{:#treemaplevel}
 {:#treeMapLevel}
 
 
@@ -2059,6 +2114,7 @@ Hold the Level settings of TreeMap
 
 
 ### treeMapLevel.groupBackground<span class="type-signature type string">string</span>
+{:#treemaplevel-groupbackground}
 {:#treeMapLevel-groupBackground}
 
 
@@ -2097,6 +2153,7 @@ Example
 
 
 ### treeMapLevel.groupBorderColor<span class="type-signature type string">string</span>
+{:#treemaplevel-groupbordercolor}
 {:#treeMapLevel-groupBorderColor}
 
 
@@ -2135,6 +2192,7 @@ Example
 
 
 ### treeMapLevel.groupBorderThickness<span class="type-signature type number">number</span>
+{:#treemaplevel-groupborderthickness}
 {:#treeMapLevel-groupBorderThickness}
 
 
@@ -2173,6 +2231,7 @@ Example
 
 
 ### treeMapLevel.groupGap<span class="type-signature type number">number</span>
+{:#treemaplevel-groupgap}
 {:#treeMapLevel-groupGap}
 
 
@@ -2211,6 +2270,7 @@ Example
 
 
 ### treeMapLevel.groupPadding<span class="type-signature type number">number</span>
+{:#treemaplevel-grouppadding}
 {:#treeMapLevel-groupPadding}
 
 
@@ -2249,6 +2309,7 @@ Example
 
 
 ### treeMapLevel.groupPath<span class="type-signature type string">string</span>
+{:#treemaplevel-grouppath}
 {:#treeMapLevel-groupPath}
 
 
@@ -2278,6 +2339,7 @@ Example
 
 
 ### treeMapLevel.headerHeight<span class="type-signature type number">number</span>
+{:#treemaplevel-headerheight}
 {:#treeMapLevel-headerHeight}
 
 
@@ -2316,6 +2378,7 @@ Example
 
 
 ### treeMapLevel.headerTemplate<span class="type-signature type string">string</span>
+{:#treemaplevel-headertemplate}
 {:#treeMapLevel-headerTemplate}
 
 
@@ -2354,6 +2417,7 @@ Example
 
 
 ### treeMapLevel.headerVisibilityMode<span class="type-signature type enum">enum</span>
+{:#treemaplevel-headervisibilitymode}
 {:#treeMapLevel-headerVisibilityMode}
 
 
@@ -2393,6 +2457,7 @@ Example
 
 
 ### treeMapLevel.labelPosition<span class="type-signature type enum">enum</span>
+{:#treemaplevel-labelposition}
 {:#treeMapLevel-labelPosition}
 
 
@@ -2432,6 +2497,7 @@ Example
 
 
 ### treeMapLevel.labelTemplate<span class="type-signature type string">string</span>
+{:#treemaplevel-labeltemplate}
 {:#treeMapLevel-labelTemplate}
 
 
@@ -2470,6 +2536,7 @@ Example
 
 
 ### treeMapLevel.labelVisibilityMode<span class="type-signature type enum">enum</span>
+{:#treemaplevel-labelvisibilitymode}
 {:#treeMapLevel-labelVisibilityMode}
 
 
@@ -2509,6 +2576,7 @@ Example
 
 
 ### treeMapLevel.showHeader<span class="type-signature type bool">bool</span>
+{:#treemaplevel-showheader}
 {:#treeMapLevel-showHeader}
 
 
@@ -2547,6 +2615,7 @@ Example
 
 
 ### treeMapLevel.showLabels<span class="type-signature type boolean">boolean</span>
+{:#treemaplevel-showlabels}
 {:#treeMapLevel-showLabels}
 
 
@@ -2585,6 +2654,7 @@ Example
 
 
 ### treeMapRangeColorMapping.color<span class="type-signature type string">string</span>
+{:#treemaprangecolormapping-color}
 {:#treeMapRangeColorMapping-color}
 
 
@@ -2623,6 +2693,7 @@ Example
 
 
 ### treeMapRangeColorMapping.from<span class="type-signature type number">number</span>
+{:#treemaprangecolormapping-from}
 {:#treeMapRangeColorMapping-from}
 
 
@@ -2661,6 +2732,7 @@ Example
 
 
 ### treeMapRangeColorMapping.legendlabel<span class="type-signature type string">string</span>
+{:#treemaprangecolormapping-legendlabel}
 {:#treeMapRangeColorMapping-legendlabel}
 
 
@@ -2699,6 +2771,7 @@ Example
 
 
 ### treeMapRangeColorMapping.to<span class="type-signature type number">number</span>
+{:#treemaprangecolormapping-to}
 {:#treeMapRangeColorMapping-to}
 
 
@@ -2737,6 +2810,7 @@ Example
 
 
 ### uniColorMapping<span class="type-signature type object">object</span>
+{:#unicolormapping}
 {:#uniColorMapping}
 
 
@@ -2750,6 +2824,7 @@ Specifies the uniColorMapping settings of the treemap
 
 
 ### weightValuePath<span class="type-signature type string">string</span>
+{:#weightvaluepath}
 {:#weightValuePath}
 
 
@@ -2789,6 +2864,7 @@ Example
 
 
 ### width<span class="type-signature type number">number</span>
+{:#width}
 {:#width}
 
 
@@ -2833,6 +2909,7 @@ Example
 
 ### refresh<span class="signature">()</span>
 {:#refresh}
+{:#refresh}
 
 
 
@@ -2857,6 +2934,7 @@ $("#container").ejTreeMap("refresh");</code>
 
 
 ### treeMapItemSelected
+{:#treemapitemselected}
 {:#treeMapItemSelected}
 
 

@@ -79,6 +79,7 @@ Requires
 
 
 ### animationSpeed<span class="type-signature type number">number</span>
+{:#animationspeed}
 {:#animationSpeed}
 
 
@@ -128,6 +129,7 @@ $("#slider").ejSlider({ animationSpeed: 500});
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssclass}
 {:#cssClass}
 
 
@@ -177,6 +179,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
+{:#enableanimation}
 {:#enableAnimation}
 
 
@@ -227,6 +230,7 @@ Example
 
 ### enabled<span class="type-signature type boolean">boolean</span>
 {:#enabled}
+{:#enabled}
 
 
 
@@ -274,6 +278,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
+{:#enablepersistence}
 {:#enablePersistence}
 
 
@@ -322,6 +327,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enablertl}
 {:#enableRTL}
 
 
@@ -374,6 +380,7 @@ Example
 
 ### height<span class="type-signature type string">String</span>
 {:#height}
+{:#height}
 
 
 
@@ -421,6 +428,7 @@ Example
 
 
 ### incrementStep<span class="type-signature type number">number</span>
+{:#incrementstep}
 {:#incrementStep}
 
 
@@ -471,6 +479,7 @@ Example
 
 
 ### largeStep<span class="type-signature type number">number</span>
+{:#largestep}
 {:#largeStep}
 
 
@@ -521,6 +530,7 @@ Example
 
 
 ### maxValue<span class="type-signature type number">number</span>
+{:#maxvalue}
 {:#maxValue}
 
 
@@ -571,6 +581,7 @@ Example
 
 
 ### minValue<span class="type-signature type number">number</span>
+{:#minvalue}
 {:#minValue}
 
 
@@ -623,6 +634,7 @@ Example
 
 ### orientation<span class="type-signature type enum">enum</span>
 {:#orientation}
+{:#orientation}
 
 
 
@@ -670,6 +682,7 @@ $("#slider").ejSlider({ orientation: ej.Orientation.Vertical});
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
+{:#readonly}
 {:#readOnly}
 
 
@@ -718,6 +731,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+{:#showroundedcorner}
 {:#showRoundedCorner}
 
 
@@ -766,6 +780,7 @@ Example
 
 
 ### showScale<span class="type-signature type boolean">boolean</span>
+{:#showscale}
 {:#showScale}
 
 
@@ -816,6 +831,7 @@ Example
 
 
 ### showSmallTicks<span class="type-signature type boolean">boolean</span>
+{:#showsmallticks}
 {:#showSmallTicks}
 
 
@@ -866,6 +882,7 @@ Example
 
 
 ### showTooltip<span class="type-signature type boolean">boolean</span>
+{:#showtooltip}
 {:#showTooltip}
 
 
@@ -917,6 +934,7 @@ Example
 
 
 ### sliderType<span class="type-signature type enum">enum</span>
+{:#slidertype}
 {:#sliderType}
 
 
@@ -966,6 +984,7 @@ $("#slider").ejSlider({ sliderType: ej.SliderType.Default});
 
 
 ### smallStep<span class="type-signature type number">number</span>
+{:#smallstep}
 {:#smallStep}
 
 
@@ -1017,6 +1036,7 @@ Example
 
 ### value<span class="type-signature type number">number</span>
 {:#value}
+{:#value}
 
 
 
@@ -1067,6 +1087,7 @@ Example
 
 ### values<span class="type-signature type array">array</span>
 {:#values}
+{:#values}
 
 
 
@@ -1116,6 +1137,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span>
+{:#width}
 {:#width}
 
 
@@ -1173,6 +1195,7 @@ Example
 
 ### disable<span class="signature">()</span>
 {:#disable}
+{:#disable}
 
 
 
@@ -1219,6 +1242,7 @@ $("#slider").ejSlider("disable");
 
 ### enable<span class="signature">()</span>
 {:#enable}
+{:#enable}
 
 
 
@@ -1264,6 +1288,7 @@ $("#slider").ejSlider("enable");
 
 
 ### getValue<span class="signature">()</span>
+{:#getvalue}
 {:#getValue}
 
 
@@ -1317,6 +1342,7 @@ $("#slider").ejSlider("getValue");
 
 
 ### change
+{:#change}
 {:#change}
 
 
@@ -1411,6 +1437,7 @@ $("#slider").ejSlider({
 
 ### create
 {:#create}
+{:#create}
 
 
 
@@ -1489,6 +1516,7 @@ $("#slider").ejSlider({
 
 ### destroy
 {:#destroy}
+{:#destroy}
 
 
 
@@ -1566,6 +1594,7 @@ $("#slider").ejSlider({
 
 
 ### slide
+{:#slide}
 {:#slide}
 
 
@@ -1660,6 +1689,7 @@ $("#slider").ejSlider({
 
 ### start
 {:#start}
+{:#start}
 
 
 
@@ -1752,6 +1782,7 @@ $("#slider").ejSlider({
 
 
 ### stop
+{:#stop}
 {:#stop}
 
 

@@ -72,6 +72,7 @@ Requires
 
 
 ### ajaxSettings<span class="type-signature type object">object</span>
+{:#ajaxsettings}
 {:#ajaxSettings}
 
 
@@ -122,6 +123,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### ajaxSettings.async<span class="type-signature type boolean">Boolean</span>
+{:#ajaxsettings-async}
 {:#ajaxSettings-async}
 
 
@@ -135,6 +137,7 @@ It specifies, whether to enable or disable asynchronous request.
 
 
 ### ajaxSettings.cache<span class="type-signature type boolean">Boolean</span>
+{:#ajaxsettings-cache}
 {:#ajaxSettings-cache}
 
 
@@ -148,6 +151,7 @@ It specifies the page will be cached in the web browser.
 
 
 ### ajaxSettings.contentType<span class="type-signature type string">String</span>
+{:#ajaxsettings-contenttype}
 {:#ajaxSettings-contentType}
 
 
@@ -161,6 +165,7 @@ It specifies the type of data is send in the query string.
 
 
 ### ajaxSettings.data<span class="type-signature type object">Object</span>
+{:#ajaxsettings-data}
 {:#ajaxSettings-data}
 
 
@@ -174,6 +179,7 @@ It specifies the data as an object, will be passed in the query string.
 
 
 ### ajaxSettings.dataType<span class="type-signature type string">String</span>
+{:#ajaxsettings-datatype}
 {:#ajaxSettings-dataType}
 
 
@@ -187,6 +193,7 @@ It specifies the type of data that you're expecting back from the response.
 
 
 ### ajaxSettings.type<span class="type-signature type string">String</span>
+{:#ajaxsettings-type}
 {:#ajaxSettings-type}
 
 
@@ -200,6 +207,7 @@ It specifies the HTTP request type.
 
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+{:#allowkeyboardnavigation}
 {:#allowKeyboardNavigation}
 
 
@@ -248,6 +256,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### collapseSpeed<span class="type-signature type integer/string">integer/string</span>
+{:#collapsespeed}
 {:#collapseSpeed}
 
 
@@ -296,6 +305,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### collapsible<span class="type-signature type boolean">boolean</span>
+{:#collapsible}
 {:#collapsible}
 
 
@@ -346,6 +356,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### cssClass<span class="type-signature type string">String</span>
+{:#cssclass}
 {:#cssClass}
 
 
@@ -395,6 +406,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### customIcon<span class="type-signature type jsonobject">JSONObject</span>
+{:#customicon}
 {:#customIcon}
 
 
@@ -451,6 +463,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### disabledItems<span class="type-signature type integerarray">Integerarray</span>
+{:#disableditems}
 {:#disabledItems}
 
 
@@ -499,6 +512,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### enableAnimation<span class="type-signature type boolean">Boolean</span>
+{:#enableanimation}
 {:#enableAnimation}
 
 
@@ -550,6 +564,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
 {:#enabled}
+{:#enabled}
 
 
 
@@ -597,6 +612,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### enabledItems<span class="type-signature type integerarray">Integerarray</span>
+{:#enableditems}
 {:#enabledItems}
 
 
@@ -645,6 +661,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### enableMultipleOpen<span class="type-signature type boolean">boolean</span>
+{:#enablemultipleopen}
 {:#enableMultipleOpen}
 
 
@@ -693,6 +710,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### enablePersistence<span class="type-signature type boolean">Boolean</span>
+{:#enablepersistence}
 {:#enablePersistence}
 
 
@@ -742,6 +760,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enablertl}
 {:#enableRTL}
 
 
@@ -790,6 +809,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### events<span class="type-signature type string">String</span>
+{:#events}
 {:#events}
 
 
@@ -840,6 +860,7 @@ $("#accordion").ejAccordion({ events: "mouseover" });
 
 
 ### expandSpeed<span class="type-signature type integer/string">integer/string</span>
+{:#expandspeed}
 {:#expandSpeed}
 
 
@@ -889,6 +910,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 ### header<span class="type-signature type string">String</span>
 {:#header}
+{:#header}
 
 
 
@@ -930,6 +952,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### heightAdjustMode<span class="type-signature type enum/string">Enum/String</span>
+{:#heightadjustmode}
 {:#heightAdjustMode}
 
 
@@ -1002,6 +1025,7 @@ $("#accordion").ejAccordion({ heightAdjustMode : "auto" });
 
 
 ### selectedHeader<span class="type-signature type string">String</span>
+{:#selectedheader}
 {:#selectedHeader}
 
 
@@ -1046,6 +1070,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### selectedItemIndex<span class="type-signature type integer">Integer</span>
+{:#selecteditemindex}
 {:#selectedItemIndex}
 
 
@@ -1095,6 +1120,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### selectedItems<span class="type-signature type integerarray">Integerarray</span>
+{:#selecteditems}
 {:#selectedItems}
 
 
@@ -1143,6 +1169,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+{:#showroundedcorner}
 {:#showRoundedCorner}
 
 
@@ -1195,6 +1222,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### collapseAll<span class="signature">()</span>
+{:#collapseall}
 {:#collapseAll}
 
 
@@ -1263,6 +1291,7 @@ accObj.collapseAll(); //Calls the collapseAll method of Accordion.
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
+{:#destroy}
 
 
 
@@ -1326,6 +1355,7 @@ $("#Accordion").ejAccordion("destroy");
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 {:#disable}
 
 
@@ -1392,6 +1422,7 @@ accObj.disable(); //Calls the disable method of Accordion.
 
 
 ### disableItems<span class="signature">()</span>
+{:#disableitems}
 {:#disableItems}
 
 
@@ -1459,6 +1490,7 @@ accObj.disableItems(1); //Calls the disableItems method of Accordion.
 
 ### enable<span class="signature">()</span>
 {:#enable}
+{:#enable}
 
 
 
@@ -1524,6 +1556,7 @@ accObj.enable(); //Calls the enable method of Accordion.
 
 
 ### enableItems<span class="signature">()</span>
+{:#enableitems}
 {:#enableItems}
 
 
@@ -1594,6 +1627,7 @@ accObj.enableItems(1); //Calls the enable method of Accordion.
 
 
 ### expandAll<span class="signature">()</span>
+{:#expandall}
 {:#expandAll}
 
 
@@ -1661,6 +1695,7 @@ accObj.expandAll(); //Calls the expandAll method of Accordion.
 
 
 ### getItemsCount<span class="signature">()</span>
+{:#getitemscount}
 {:#getItemsCount}
 
 
@@ -1728,6 +1763,7 @@ accObj.getItemsCount(); //Calls the getItemsCount method of Accordion.
 
 ### hide<span class="signature">()</span>
 {:#hide}
+{:#hide}
 
 
 
@@ -1793,6 +1829,7 @@ accObj.hide(); //Calls the hide method of Accordion.
 
 
 ### show<span class="signature">()</span>
+{:#show}
 {:#show}
 
 
@@ -1863,6 +1900,7 @@ accObj.show(); //Calls the show method of Accordion.
 
 
 ### activate
+{:#activate}
 {:#activate}
 
 
@@ -1967,6 +2005,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### ajaxBeforeLoad
+{:#ajaxbeforeload}
 {:#ajaxBeforeLoad}
 
 
@@ -2056,6 +2095,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### ajaxError
+{:#ajaxerror}
 {:#ajaxError}
 
 
@@ -2150,6 +2190,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### ajaxLoad
+{:#ajaxload}
 {:#ajaxLoad}
 
 
@@ -2239,6 +2280,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### ajaxSuccess
+{:#ajaxsuccess}
 {:#ajaxSuccess}
 
 
@@ -2338,6 +2380,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### beforeActivate
+{:#beforeactivate}
 {:#beforeActivate}
 
 
@@ -2427,6 +2470,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### beforeInactivate
+{:#beforeinactivate}
 {:#beforeInactivate}
 
 
@@ -2522,6 +2566,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 ### create
 {:#create}
+{:#create}
 
 
 
@@ -2606,6 +2651,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 ### destroy
 {:#destroy}
+{:#destroy}
 
 
 
@@ -2689,6 +2735,7 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 
 
 ### inActivate
+{:#inactivate}
 {:#inActivate}
 
 

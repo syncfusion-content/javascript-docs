@@ -100,6 +100,7 @@ Requires
 
 ### contentid<span class="type-signature type string">string</span>
 {:#contentid}
+{:#contentid}
 
 
 
@@ -171,6 +172,7 @@ $("#navpane").ejNavigationDrawer ("option", "contentId", "container");
 
 
 ### cssclass<span class="type-signature type string">string</span>
+{:#cssclass}
 {:#cssclass}
 
 
@@ -256,6 +258,7 @@ $("#navpane").ejNavigationDrawer ("option", "cssClass", "customclass");
 
 ### direction<span class="type-signature type enum">enum</span>
 {:#direction}
+{:#direction}
 
 
 
@@ -338,6 +341,7 @@ $("#navpane").ejNavigationDrawer ("option", "direction", "left");
 
 
 ### enablelistview<span class="type-signature type boolean">boolean</span>
+{:#enablelistview}
 {:#enablelistview}
 
 
@@ -422,6 +426,7 @@ $("#navpane").ejNavigationDrawer ("option", "enableListView", "false");
 
 ### items<span class="type-signature type array">array</span>
 {:#items}
+{:#items}
 
 
 
@@ -505,6 +510,7 @@ $("#navpane").ejNavigationDrawer ("option", "items", [{text:"Item1"},{text:"Item
 
 ### listviewsettings<span class="type-signature type object">object</span>
 {:#listviewsettings}
+{:#listviewsettings}
 
 
 
@@ -571,6 +577,7 @@ $("#navpane").ejNavigationDrawer ("option", "listViewSettings.width", "200");
 
 
 ### position<span class="type-signature type enum">enum</span>
+{:#position}
 {:#position}
 
 
@@ -654,6 +661,7 @@ $("#navpane").ejNavigationDrawer ("option", "position", "fixed");
 
 
 ### targetid<span class="type-signature type string">string</span>
+{:#targetid}
 {:#targetid}
 
 
@@ -739,6 +747,7 @@ $("#navpane").ejNavigationDrawer ("option", "targetId", "left");
 
 ### type<span class="type-signature type enum">enum</span>
 {:#type}
+{:#type}
 
 
 
@@ -821,6 +830,7 @@ $("#navpane").ejNavigationDrawer ("option", "type", "overlay");
 
 
 ### width<span class="type-signature type int">int</span>
+{:#width}
 {:#width}
 
 
@@ -912,6 +922,7 @@ $("#navpane").ejNavigationDrawer ("option", "width", "overlay");
 
 ### close<span class="signature">()</span>
 {:#close}
+{:#close}
 
 
 
@@ -967,6 +978,7 @@ $(function(){
 
 ### open<span class="signature">()</span>
 {:#open}
+{:#open}
 
 
 
@@ -1021,6 +1033,7 @@ $(function(){
 
 
 ### toggle<span class="signature">()</span>
+{:#toggle}
 {:#toggle}
 
 
@@ -1083,6 +1096,7 @@ $(function(){
 
 
 ### beforeclose
+{:#beforeclose}
 {:#beforeclose}
 
 
@@ -1194,6 +1208,7 @@ $("#navpane").ejNavigationDrawer("close");
 
 ### open
 {:#open}
+{:#open}
 
 
 
@@ -1303,6 +1318,7 @@ $("#navpane").ejNavigationDrawer("open");
 
 
 ### swipe
+{:#swipe}
 {:#swipe}
 
 

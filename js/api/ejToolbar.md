@@ -82,6 +82,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssclass}
 {:#cssClass}
 
 
@@ -145,6 +146,7 @@ Example
 
 
 ### dataSource<span class="type-signature type objectarray">ObjectArray</span>
+{:#datasource}
 {:#dataSource}
 
 
@@ -213,6 +215,7 @@ $("#toolbar1").ejToolbar({ dataSource:  items});
 
 ### enabled<span class="type-signature type boolean">boolean</span>
 {:#enabled}
+{:#enabled}
 
 
 
@@ -275,6 +278,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enablertl}
 {:#enableRTL}
 
 
@@ -338,6 +342,7 @@ Example
 
 
 ### enableSeparator<span class="type-signature type boolean">boolean</span>
+{:#enableseparator}
 {:#enableSeparator}
 
 
@@ -401,6 +406,7 @@ Example
 
 
 ### fields<span class="type-signature type string">string</span>
+{:#fields}
 {:#fields}
 
 
@@ -474,6 +480,7 @@ $("#toolbar1").ejToolbar(
 
 ### fields.group<span class="type-signature type string">String</span>
 {:#fields-group}
+{:#fields-group}
 
 
 
@@ -486,6 +493,7 @@ Defines the group name for the item.
 
 
 ### fields.htmlAttributes<span class="type-signature type object">Object</span>
+{:#fields-htmlattributes}
 {:#fields-htmlAttributes}
 
 
@@ -500,6 +508,7 @@ Defines the html attributes such as id, class, styles for the item.
 
 ### fields.id<span class="type-signature type string">String</span>
 {:#fields-id}
+{:#fields-id}
 
 
 
@@ -512,6 +521,7 @@ Defines id for the tag.
 
 
 ### fields.imageAttributes<span class="type-signature type string">String</span>
+{:#fields-imageattributes}
 {:#fields-imageAttributes}
 
 
@@ -525,6 +535,7 @@ Defines the image attributes such as height, width, styles and so on.
 
 
 ### fields.imageUrl<span class="type-signature type string">String</span>
+{:#fields-imageurl}
 {:#fields-imageUrl}
 
 
@@ -538,6 +549,7 @@ Defines the imageURL for the image location.
 
 
 ### fields.spriteCssClass<span class="type-signature type string">String</span>
+{:#fields-spritecssclass}
 {:#fields-spriteCssClass}
 
 
@@ -552,6 +564,7 @@ Defines the sprite css for the image tag.
 
 ### fields.text<span class="type-signature type string">String</span>
 {:#fields-text}
+{:#fields-text}
 
 
 
@@ -564,6 +577,7 @@ Defines the text content for the tag.
 
 
 ### fields.tooltipText<span class="type-signature type string">String</span>
+{:#fields-tooltiptext}
 {:#fields-tooltipText}
 
 
@@ -577,6 +591,7 @@ Defines the tooltip text for the tag.
 
 
 ### height<span class="type-signature type number">number</span>
+{:#height}
 {:#height}
 
 
@@ -640,6 +655,7 @@ Example
 
 ### hide<span class="type-signature type boolean">boolean</span>
 {:#hide}
+{:#hide}
 
 
 
@@ -702,6 +718,7 @@ Example
 
 
 ### isResponsive<span class="type-signature type boolean">boolean</span>
+{:#isresponsive}
 {:#isResponsive}
 
 
@@ -766,6 +783,7 @@ Example
 
 ### orientation<span class="type-signature type enum">Enum</span> <span class="type-signature type string">String</span>
 {:#orientation}
+{:#orientation}
 
 
 
@@ -828,6 +846,7 @@ Example
 
 
 ### query<span class="type-signature type object">object</span>
+{:#query}
 {:#query}
 
 
@@ -902,6 +921,7 @@ var query = ej.Query()
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+{:#showroundedcorner}
 {:#showRoundedCorner}
 
 
@@ -969,6 +989,7 @@ Example
 
 
 ### deselectItem<span class="signature">()</span>
+{:#deselectitem}
 {:#deselectItem}
 
 
@@ -1023,6 +1044,7 @@ $("#toolbar1").ejToolbar("deselectItem",$("li")[3]); //Deselect the Toolbar item
 
 
 ### deselectItemByID<span class="signature">()</span>
+{:#deselectitembyid}
 {:#deselectItemByID}
 
 
@@ -1077,6 +1099,7 @@ $("#toolbar1").ejToolbar("deselectItemByID","left"); // To Deselect the Toolbar 
 
 
 ### destroy<span class="signature">()</span>
+{:#destroy}
 {:#destroy}
 
 
@@ -1134,6 +1157,7 @@ var toolbarObj = $("#toolbar1").data("ejToolbar");
 
 ### disable<span class="signature">()</span>
 {:#disable}
+{:#disable}
 
 
 
@@ -1186,6 +1210,7 @@ $("#toolbar1").ejToolbar("disable"); //Disable all item in the Toolbar
 
 
 ### disableItem<span class="signature">()</span>
+{:#disableitem}
 {:#disableItem}
 
 
@@ -1239,6 +1264,7 @@ $("#toolbar1").ejToolbar("disableItem",$("li")[3]);// to disable the third item 
 
 
 ### disableItemByID<span class="signature">()</span>
+{:#disableitembyid}
 {:#disableItemByID}
 
 
@@ -1293,6 +1319,7 @@ $("#toolbar1").ejToolbar("disableItemByID","left"); //Disable the Toolbar item b
 
 ### enable<span class="signature">()</span>
 {:#enable}
+{:#enable}
 
 
 
@@ -1345,6 +1372,7 @@ $("#toolbar1").ejToolbar("enable"); //enable all item in the Toolbar
 
 
 ### enableItem<span class="signature">()</span>
+{:#enableitem}
 {:#enableItem}
 
 
@@ -1398,6 +1426,7 @@ $("#toolbar1").ejToolbar("enableItem",$("li")[3]);// to enable the third item in
 
 
 ### enableItemByID<span class="signature">()</span>
+{:#enableitembyid}
 {:#enableItemByID}
 
 
@@ -1451,6 +1480,7 @@ $("#toolbar1").ejToolbar("enableItemByID","left"); //Disable the Toolbar item by
 
 
 ### hide<span class="signature">()</span>
+{:#hide}
 {:#hide}
 
 
@@ -1534,6 +1564,7 @@ $("#toolbar1").ejToolbar("hide");// to hide the toolbar
 
 
 ### removeItem<span class="signature">()</span>
+{:#removeitem}
 {:#removeItem}
 
 
@@ -1587,6 +1618,7 @@ $("#toolbar1").ejToolbar("removeItem",$("li")[3]); // Remove the Toolbar item
 
 
 ### removeItemByID<span class="signature">()</span>
+{:#removeitembyid}
 {:#removeItemByID}
 
 
@@ -1640,6 +1672,7 @@ $("#toolbar1").ejToolbar("removeItemByID","left"); // Remove the Toolbar item by
 
 
 ### selectItem<span class="signature">()</span>
+{:#selectitem}
 {:#selectItem}
 
 
@@ -1693,6 +1726,7 @@ $("#toolbar1").ejToolbar("selectItem",$("li")[3]);//Select the Toolbar item.
 
 
 ### selectItemByID<span class="signature">()</span>
+{:#selectitembyid}
 {:#selectItemByID}
 
 
@@ -1746,6 +1780,7 @@ $("#toolbar1").ejToolbar("selectItemByID","left");//Select the Toolbar item by i
 
 
 ### show<span class="signature">()</span>
+{:#show}
 {:#show}
 
 
@@ -1803,6 +1838,7 @@ $("#toolbar1").ejToolbar("show");// to show the toolbar
 
 
 ### click
+{:#click}
 {:#click}
 
 
@@ -1917,6 +1953,7 @@ Example
 
 ### create
 {:#create}
+{:#create}
 
 
 
@@ -2015,6 +2052,7 @@ Example
 
 ### destroy
 {:#destroy}
+{:#destroy}
 
 
 
@@ -2112,6 +2150,7 @@ $("#toolbar1").ejToolbar({
 
 
 ### itemHover
+{:#itemhover}
 {:#itemHover}
 
 
@@ -2225,6 +2264,7 @@ Example
 
 
 ### itemLeave
+{:#itemleave}
 {:#itemLeave}
 
 

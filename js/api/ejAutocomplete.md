@@ -58,6 +58,7 @@ Requires
 
 
 ### addNewText<span class="type-signature type string">string</span>
+{:#addnewtext}
 {:#addNewText}
 
 
@@ -92,6 +93,7 @@ Example
 
 
 ### allowAddNew<span class="type-signature type boolean">boolean</span>
+{:#allowaddnew}
 {:#allowAddNew}
 
 
@@ -126,6 +128,7 @@ $("#autocomplete").ejAutocomplete({dataSource: window.carList,allowAddNew: true 
 
 
 ### allowGrouping<span class="type-signature type boolean">boolean</span>
+{:#allowgrouping}
 {:#allowGrouping}
 
 
@@ -160,6 +163,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.vehicle, allowGrouping: t
 
 
 ### allowSorting<span class="type-signature type boolean">boolean</span>
+{:#allowsorting}
 {:#allowSorting}
 
 
@@ -194,6 +198,7 @@ $("#autocomplete").ejAutocomplete({dataSource: window.carList,allowSorting: fals
 
 
 ### autoFocus<span class="type-signature type boolean">boolean</span>
+{:#autofocus}
 {:#autoFocus}
 
 
@@ -228,6 +233,7 @@ Example
 
 
 ### caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
+{:#casesensitivesearch}
 {:#caseSensitiveSearch}
 
 
@@ -262,6 +268,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,caseSensitiveSear
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssclass}
 {:#cssClass}
 
 
@@ -296,6 +303,7 @@ Example
 
 
 ### dataSource<span class="type-signature type data">data</span>
+{:#datasource}
 {:#dataSource}
 
 
@@ -330,6 +338,7 @@ Example
 
 
 ### delaySuggestionTimeout<span class="type-signature type number">number</span>
+{:#delaysuggestiontimeout}
 {:#delaySuggestionTimeout}
 
 
@@ -364,6 +373,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,delaySuggestionTi
 
 
 ### delimiterChar<span class="type-signature type string">string</span>
+{:#delimiterchar}
 {:#delimiterChar}
 
 
@@ -398,6 +408,7 @@ Example
 
 
 ### emptyResultText<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#emptyresulttext}
 {:#emptyResultText}
 
 
@@ -432,6 +443,7 @@ Example
 
 
 ### enableAutoFill<span class="type-signature type boolean">boolean</span>
+{:#enableautofill}
 {:#enableAutoFill}
 
 
@@ -467,6 +479,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,enableAutoFill : 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
 {:#enabled}
+{:#enabled}
 
 
 
@@ -500,6 +513,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,enabled : false }
 
 
 ### enableDistinct<span class="type-signature type boolean">boolean</span>
+{:#enabledistinct}
 {:#enableDistinct}
 
 
@@ -534,6 +548,7 @@ $("#autocomplete").ejAutocomplete({dataSource: window.carList,enableDistinct: tr
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
+{:#enablepersistence}
 {:#enablePersistence}
 
 
@@ -568,6 +583,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,enablePersistence
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enablertl}
 {:#enableRTL}
 
 
@@ -603,6 +619,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,enableRTL   : tru
 
 ### fields<span class="type-signature type object">object</span>
 {:#fields}
+{:#fields}
 
 
 
@@ -637,6 +654,7 @@ Example
 
 ### fields.category<span class="type-signature type string">String</span>
 {:#fields-category}
+{:#fields-category}
 
 
 
@@ -649,6 +667,7 @@ Used to categorize the items. It is used when the grouping is enabled..
 
 
 ### fields.htmlAttributes<span class="type-signature type object">Object</span>
+{:#fields-htmlattributes}
 {:#fields-htmlAttributes}
 
 
@@ -663,6 +682,7 @@ Defines the html attributes such as id, class, styles for the item..
 
 ### fields.key<span class="type-signature type string">String</span>
 {:#fields-key}
+{:#fields-key}
 
 
 
@@ -676,6 +696,7 @@ Defines the key for the items to differentiate two items with same.
 
 ### fields.text<span class="type-signature type string">String</span>
 {:#fields-text}
+{:#fields-text}
 
 
 
@@ -688,6 +709,7 @@ Defines the tag value or display text..
 
 
 ### filterType<span class="type-signature type enum">enum</span>
+{:#filtertype}
 {:#filterType}
 
 
@@ -723,6 +745,7 @@ Example
 
 ### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#height}
+{:#height}
 
 
 
@@ -756,6 +779,7 @@ Example
 
 
 ### highlightSearch<span class="type-signature type boolean">boolean</span>
+{:#highlightsearch}
 {:#highlightSearch}
 
 
@@ -790,6 +814,7 @@ $("#autocomplete").ejAutocomplete({dataSource: window.carList, highlightSearch :
 
 
 ### itemsCount<span class="type-signature type number">number</span>
+{:#itemscount}
 {:#itemsCount}
 
 
@@ -824,6 +849,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,itemsCount : 2 })
 
 
 ### minCharacter<span class="type-signature type number">number</span>
+{:#mincharacter}
 {:#minCharacter}
 
 
@@ -858,6 +884,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,minCharacter : 3 
 
 
 ### multiSelectMode<span class="type-signature type enum">enum</span>
+{:#multiselectmode}
 {:#multiSelectMode}
 
 
@@ -892,6 +919,7 @@ Example
 
 
 ### popupHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#popupheight}
 {:#popupHeight}
 
 
@@ -926,6 +954,7 @@ Example
 
 
 ### popupWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#popupwidth}
 {:#popupWidth}
 
 
@@ -961,6 +990,7 @@ Example
 
 ### query<span class="type-signature type object">object</span>
 {:#query}
+{:#query}
 
 
 
@@ -995,6 +1025,7 @@ var queryString = ej.Query().from("Suppliers").select("ContactName");
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
+{:#readonly}
 {:#readOnly}
 
 
@@ -1029,6 +1060,7 @@ $("#autocomplete").ejAutocomplete({dataSource: window.carList,readOnly: true });
 
 
 ### selectValueByKey
+{:#selectvaluebykey}
 {:#selectValueByKey}
 
 
@@ -1053,6 +1085,7 @@ $('#autocomplete').ejAutocomplete({dataSource: window.vehicle,selectValueByKey:"
 
 
 ### showEmptyResultText<span class="type-signature type boolean">boolean</span>
+{:#showemptyresulttext}
 {:#showEmptyResultText}
 
 
@@ -1087,6 +1120,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList, showEmptyResultT
 
 
 ### showLoadingIcon<span class="type-signature type boolean">boolean</span>
+{:#showloadingicon}
 {:#showLoadingIcon}
 
 
@@ -1121,6 +1155,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,showLoadingIcon: 
 
 
 ### showPopupButton<span class="type-signature type boolean">boolean</span>
+{:#showpopupbutton}
 {:#showPopupButton}
 
 
@@ -1155,6 +1190,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.carList,showPopupButton :
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+{:#showroundedcorner}
 {:#showRoundedCorner}
 
 
@@ -1189,6 +1225,7 @@ $("#autocomplete").ejAutocomplete({dataSource: window.carList,showRoundedCorner:
 
 
 ### sortOrder<span class="type-signature type enum">enum</span>
+{:#sortorder}
 {:#sortOrder}
 
 
@@ -1224,6 +1261,7 @@ Example
 
 ### template<span class="type-signature type string">string</span>
 {:#template}
+{:#template}
 
 
 
@@ -1257,6 +1295,7 @@ $("#autocomplete").ejAutocomplete({ dataSource: window.countries,template:"&lt;d
 
 
 ### validationMessage<span class="type-signature type object">object</span>
+{:#validationmessage}
 {:#validationMessage}
 
 
@@ -1299,6 +1338,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
+{:#validationrules}
 {:#validationRules}
 
 
@@ -1339,6 +1379,7 @@ Example
 
 ### value<span class="type-signature type string">string</span>
 {:#value}
+{:#value}
 
 
 
@@ -1373,6 +1414,7 @@ Example
 
 ### visible<span class="type-signature type boolean">boolean</span>
 {:#visible}
+{:#visible}
 
 
 
@@ -1406,6 +1448,7 @@ $("#autocomplete").ejAutocomplete({dataSource: window.carList,visible: false });
 
 
 ### watermarkText<span class="type-signature type string">string</span>
+{:#watermarktext}
 {:#watermarkText}
 
 
@@ -1440,6 +1483,7 @@ Example
 
 
 ### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#width}
 {:#width}
 
 
@@ -1478,6 +1522,7 @@ Example
 
 
 ### clearText<span class="signature">()</span>
+{:#cleartext}
 {:#clearText}
 
 
@@ -1516,6 +1561,7 @@ $('#autocomplete').ejAutocomplete("clearText");
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
+{:#destroy}
 
 
 
@@ -1552,6 +1598,7 @@ $('#autocomplete').ejAutocomplete("destroy");
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 {:#disable}
 
 
@@ -1590,6 +1637,7 @@ $('#autocomplete').ejAutocomplete("disable");
 
 ### enable<span class="signature">()</span>
 {:#enable}
+{:#enable}
 
 
 
@@ -1626,6 +1674,7 @@ $('#autocomplete').ejAutocomplete("enable");
 
 
 ### getSelectedItems<span class="signature">()</span>
+{:#getselecteditems}
 {:#getSelectedItems}
 
 
@@ -1663,6 +1712,7 @@ $('#autocomplete').ejAutocomplete("getSelectedItems");
 
 
 ### getValue<span class="signature">()</span>
+{:#getvalue}
 {:#getValue}
 
 
@@ -1701,6 +1751,7 @@ $('#autocomplete').ejAutocomplete("getValue");
 
 ### search<span class="signature">()</span>
 {:#search}
+{:#search}
 
 
 
@@ -1737,6 +1788,7 @@ $('#autocomplete').ejAutocomplete("search");
 
 
 ### selectValueByKey<span class="signature">()</span>
+{:#selectvaluebykey}
 {:#selectValueByKey}
 
 
@@ -1775,6 +1827,7 @@ $('#autocomplete').ejAutocomplete("selectValueByKey","F");
 
 
 ### selectValueByText<span class="signature">()</span>
+{:#selectvaluebytext}
 {:#selectValueByText}
 
 
@@ -1816,6 +1869,7 @@ $('#autocomplete').ejAutocomplete("selectValueByText","BMW 7");
 
 
 ### change
+{:#change}
 {:#change}
 
 
@@ -1876,6 +1930,7 @@ $("#autocomplete").ejAutocomplete({
 
 ### close
 {:#close}
+{:#close}
 
 
 
@@ -1929,6 +1984,7 @@ $("#autocomplete").ejAutocomplete({
 
 
 ### create
+{:#create}
 {:#create}
 
 
@@ -1984,6 +2040,7 @@ $("#autocomplete").ejAutocomplete({
 
 ### destroy
 {:#destroy}
+{:#destroy}
 
 
 
@@ -2037,6 +2094,7 @@ $("#autocomplete").ejAutocomplete({
 
 
 ### focusIn
+{:#focusin}
 {:#focusIn}
 
 
@@ -2096,6 +2154,7 @@ $("#autocomplete").ejAutocomplete({
 
 
 ### focusOut
+{:#focusout}
 {:#focusOut}
 
 
@@ -2156,6 +2215,7 @@ $("#autocomplete").ejAutocomplete({
 
 ### open
 {:#open}
+{:#open}
 
 
 
@@ -2209,6 +2269,7 @@ $("#autocomplete").ejAutocomplete({
 
 
 ### select
+{:#select}
 {:#select}
 
 

@@ -76,6 +76,7 @@ Requires
 
 ### checked
 {:#checked}
+{:#checked}
 
 
 
@@ -125,6 +126,7 @@ $("#chkbox").ejCheckBox({ checked:  true });
 
 
 ### checkState<span class="type-signature type enum">enum</span>
+{:#checkstate}
 {:#checkState}
 
 
@@ -175,6 +177,7 @@ $("#chkbox").ejCheckBox({ enableTriState: true , checkState:"indeterminate"});
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssclass}
 {:#cssClass}
 
 
@@ -224,6 +227,7 @@ $("#chkbox").ejCheckBox({cssClass: "gradient-lime"});
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
+{:#enabled}
 {:#enabled}
 
 
@@ -275,6 +279,7 @@ $("#chkbox").ejCheckBox ({ enabled: true });
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
+{:#enablepersistence}
 {:#enablePersistence}
 
 
@@ -325,6 +330,7 @@ $("#chkbox").ejCheckBox({ enablePersistence : false });
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enablertl}
 {:#enableRTL}
 
 
@@ -375,6 +381,7 @@ $("#chkbox").ejCheckBox({  enableRTL : true });
 
 
 ### enableTriState<span class="type-signature type boolean">boolean</span>
+{:#enabletristate}
 {:#enableTriState}
 
 
@@ -426,6 +433,7 @@ $("#chkbox").ejCheckBox({  enableTriState: true });
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
+{:#htmlattributes}
 {:#htmlAttributes}
 
 
@@ -476,6 +484,7 @@ $("#chkbox").ejCheckBox({ htmlAttributes : {required:"required"}});
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
+{:#htmlattributes}
 {:#htmlAttributes}
 
 
@@ -527,6 +536,7 @@ Example
 
 ### id<span class="type-signature type string">String</span>
 {:#id}
+{:#id}
 
 
 
@@ -576,6 +586,7 @@ $("#chkbox").ejCheckBox({  id: "sync" });
 
 
 ### idPrefix<span class="type-signature type string">String</span>
+{:#idprefix}
 {:#idPrefix}
 
 
@@ -627,6 +638,7 @@ $("#chkbox").ejCheckBox ({  idPrefix : "ej" });
 
 ### name<span class="type-signature type string">String</span>
 {:#name}
+{:#name}
 
 
 
@@ -676,6 +688,7 @@ $("#chkbox").ejCheckBox({  name: "sync" });
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+{:#showroundedcorner}
 {:#showRoundedCorner}
 
 
@@ -727,6 +740,7 @@ $("#chkbox").ejCheckBox({ showRoundedCorner: true });
 
 ### size<span class="type-signature type enum">enum</span>
 {:#size}
+{:#size}
 
 
 
@@ -777,6 +791,7 @@ $("#chkbox").ejCheckBox({  size: "medium"});
 
 ### text<span class="type-signature type string">string</span>
 {:#text}
+{:#text}
 
 
 
@@ -825,6 +840,7 @@ $("#chkbox").ejCheckBox({ text: "Hello World"});
 
 
 ### validationMessage<span class="type-signature type object">object</span>
+{:#validationmessage}
 {:#validationMessage}
 
 
@@ -882,6 +898,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
+{:#validationrules}
 {:#validationRules}
 
 
@@ -936,6 +953,7 @@ Example
 
 
 ### value<span class="type-signature type string">String</span>
+{:#value}
 {:#value}
 
 
@@ -994,6 +1012,7 @@ $("#chkbox").ejCheckBox({ value: "Hello World"});
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
+{:#destroy}
 
 
 
@@ -1039,6 +1058,7 @@ $("#chkbox").ejCheckBox("destroy");
 
 
 ### disable<span class="signature">()</span>
+{:#disable}
 {:#disable}
 
 
@@ -1086,6 +1106,7 @@ $("#chkbox").ejCheckBox("disable");
 
 ### enable<span class="signature">()</span>
 {:#enable}
+{:#enable}
 
 
 
@@ -1131,6 +1152,7 @@ $("#chkbox").ejCheckBox("enable");
 
 
 ### isChecked<span class="signature">()</span>
+{:#ischecked}
 {:#isChecked}
 
 
@@ -1184,6 +1206,7 @@ $("#chkbox").ejCheckBox("isChecked");
 
 
 ### beforeChange
+{:#beforechange}
 {:#beforeChange}
 
 
@@ -1274,6 +1297,7 @@ beforeChange: function (args) {}
 
 ### change
 {:#change}
+{:#change}
 
 
 
@@ -1362,6 +1386,7 @@ change: function (args) {}
 
 ### create
 {:#create}
+{:#create}
 
 
 
@@ -1440,6 +1465,7 @@ $("#chkbox").ejCheckBox({
 
 
 ### destroy
+{:#destroy}
 {:#destroy}
 
 

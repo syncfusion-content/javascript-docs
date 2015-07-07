@@ -71,6 +71,7 @@ Requires
 
 
 ### animationSpeed<span class="type-signature type number">number</span>
+{:#animationspeed}
 {:#animationSpeed}
 
 
@@ -105,6 +106,7 @@ Example
 
 
 ### backgroundColor<span class="type-signature type string">string</span>
+{:#backgroundcolor}
 {:#backgroundColor}
 
 
@@ -139,6 +141,7 @@ $("#CoreCircularGauge").ejCircularGauge({  backgroundColor : "#F234F4" });
 
 
 ### distanceFromCorner<span class="type-signature type enum">enum</span>
+{:#distancefromcorner}
 {:#distanceFromCorner}
 
 
@@ -173,6 +176,7 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center", distanceFromC
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
+{:#enableanimation}
 {:#enableAnimation}
 
 
@@ -207,6 +211,7 @@ $("#CoreCircularGauge").ejCircularGauge({ enableAnimation: true,scales: [{ point
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
+{:#enableresize}
 {:#enableResize}
 
 
@@ -242,6 +247,7 @@ Example
 
 ### frame<span class="type-signature type object">object</span>
 {:#frame}
+{:#frame}
 
 
 
@@ -275,6 +281,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType:ej.datavisualization.
 
 
 ### frame.backgroundImageUrl<span class="type-signature type string">string</span>
+{:#frame-backgroundimageurl}
 {:#frame-backgroundImageUrl}
 
 
@@ -309,6 +316,7 @@ Example
 
 
 ### frame.frameType<span class="type-signature type enum">enum</span>
+{:#frame-frametype}
 {:#frame-frameType}
 
 
@@ -343,6 +351,7 @@ $("#CoreCircularGauge").ejCircularGauge({  frame:{frameType : "halfcircle"} });
 
 
 ### frame.halfCircleFrameEndAngle<span class="type-signature type number">number</span>
+{:#frame-halfcircleframeendangle}
 {:#frame-halfCircleFrameEndAngle}
 
 
@@ -377,6 +386,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfCircle",halfCi
 
 
 ### frame.halfCircleFrameStartAngle<span class="type-signature type number">number</span>
+{:#frame-halfcircleframestartangle}
 {:#frame-halfCircleFrameStartAngle}
 
 
@@ -411,6 +421,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfcircle",halfCi
 
 
 ### gaugePosition<span class="type-signature type enum">enum</span>
+{:#gaugeposition}
 {:#gaugePosition}
 
 
@@ -446,6 +457,7 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center" });
 
 ### height<span class="type-signature type number">number</span>
 {:#height}
+{:#height}
 
 
 
@@ -479,6 +491,7 @@ $("#CoreCircularGauge").ejCircularGauge({ height: 400 });
 
 
 ### interiorGradient<span class="type-signature type object">object</span>
+{:#interiorgradient}
 {:#interiorGradient}
 
 
@@ -513,6 +526,7 @@ $("#CoreCircularGauge").ejCircularGauge({ interiorGradient: { colorInfo:[{colorS
 
 
 ### isRadialGradient<span class="type-signature type boolean">boolean</span>
+{:#isradialgradient}
 {:#isRadialGradient}
 
 
@@ -548,6 +562,7 @@ Example
 
 ### maximum<span class="type-signature type number">number</span>
 {:#maximum}
+{:#maximum}
 
 
 
@@ -582,6 +597,7 @@ $("#CoreCircularGauge").ejCircularGauge({ maximum: 120 });
 
 ### minimum<span class="type-signature type number">number</span>
 {:#minimum}
+{:#minimum}
 
 
 
@@ -615,6 +631,7 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 
 
 ### outerCustomLabelPosition<span class="type-signature type enum">enum</span>
+{:#outercustomlabelposition}
 {:#outerCustomLabelPosition}
 
 
@@ -650,6 +667,7 @@ $("#CoreCircularGauge").ejCircularGauge({  outerCustomLabelPosition:"top" });
 
 ### radius<span class="type-signature type number">number</span>
 {:#radius}
+{:#radius}
 
 
 
@@ -683,6 +701,7 @@ $("#CoreCircularGauge").ejCircularGauge({ radius: 100 });
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
+{:#readonly}
 {:#readOnly}
 
 
@@ -718,6 +737,7 @@ $("#CoreCircularGauge").ejCircularGauge({  readOnly : false });
 
 ### scales<span class="type-signature type object">object</span>
 {:#scales}
+{:#scales}
 
 
 
@@ -751,6 +771,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true, size: 6,
 
 
 ### scales.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-backgroundcolor}
 {:#scales-backgroundColor}
 
 
@@ -786,6 +807,7 @@ Example
 
 ### scales.border<span class="type-signature type object">object</span>
 {:#scales-border}
+{:#scales-border}
 
 
 
@@ -819,6 +841,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ border:{color:null, width:1
 
 
 ### scales.border.color<span class="type-signature type string">string</span>
+{:#scales-border-color}
 {:#scales-border-color}
 
 
@@ -854,6 +877,7 @@ Example
 
 ### scales.border.width<span class="type-signature type number">number</span>
 {:#scales-border-width}
+{:#scales-border-width}
 
 
 
@@ -888,6 +912,7 @@ Example
 
 ### scales.direction<span class="type-signature type enum">enum</span>
 {:#scales-direction}
+{:#scales-direction}
 
 
 
@@ -921,6 +946,7 @@ Example
 
 
 ### scales.indicators<span class="type-signature type array">Array</span>
+{:#scales-indicators}
 {:#scales-indicators}
 
 
@@ -959,6 +985,7 @@ Example
 
 ### scales.indicators.height<span class="type-signature type number">number</span>
 {:#scales-indicators-height}
+{:#scales-indicators-height}
 
 
 
@@ -995,6 +1022,7 @@ Example
 
 
 ### scales.indicators.imageUrl<span class="type-signature type string">string</span>
+{:#scales-indicators-imageurl}
 {:#scales-indicators-imageUrl}
 
 
@@ -1033,6 +1061,7 @@ Example
 
 ### scales.indicators.position<span class="type-signature type object">object</span>
 {:#scales-indicators-position}
+{:#scales-indicators-position}
 
 
 
@@ -1069,6 +1098,7 @@ Example
 
 
 ### scales.indicators.position.x<span class="type-signature type number">number</span>
+{:#scales-indicators-position-x}
 {:#scales-indicators-position-x}
 
 
@@ -1107,6 +1137,7 @@ Example
 
 ### scales.indicators.position.y<span class="type-signature type number">number</span>
 {:#scales-indicators-position-y}
+{:#scales-indicators-position-y}
 
 
 
@@ -1143,6 +1174,7 @@ Example
 
 
 ### scales.indicators.stateRanges<span class="type-signature type array">Array</span>
+{:#scales-indicators-stateranges}
 {:#scales-indicators-stateRanges}
 
 
@@ -1180,6 +1212,7 @@ Example
 
 
 ### scales.indicators.stateRanges.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-indicators-stateranges-backgroundcolor}
 {:#scales-indicators-stateRanges-backgroundColor}
 
 
@@ -1217,6 +1250,7 @@ Example
 
 
 ### scales.indicators.stateRanges.borderColor<span class="type-signature type string">string</span>
+{:#scales-indicators-stateranges-bordercolor}
 {:#scales-indicators-stateRanges-borderColor}
 
 
@@ -1254,6 +1288,7 @@ Example
 
 
 ### scales.indicators.stateRanges.endValue<span class="type-signature type number">number</span>
+{:#scales-indicators-stateranges-endvalue}
 {:#scales-indicators-stateRanges-endValue}
 
 
@@ -1291,6 +1326,7 @@ Example
 
 
 ### scales.indicators.stateRanges.font<span class="type-signature type object">object</span>
+{:#scales-indicators-stateranges-font}
 {:#scales-indicators-stateRanges-font}
 
 
@@ -1329,6 +1365,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 
 
 ### scales.indicators.stateRanges.startValue<span class="type-signature type number">number</span>
+{:#scales-indicators-stateranges-startvalue}
 {:#scales-indicators-stateRanges-startValue}
 
 
@@ -1366,6 +1403,7 @@ Example
 
 
 ### scales.indicators.stateRanges.text<span class="type-signature type string">string</span>
+{:#scales-indicators-stateranges-text}
 {:#scales-indicators-stateRanges-text}
 
 
@@ -1404,6 +1442,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 
 
 ### scales.indicators.stateRanges.textColor<span class="type-signature type string">string</span>
+{:#scales-indicators-stateranges-textcolor}
 {:#scales-indicators-stateRanges-textColor}
 
 
@@ -1443,6 +1482,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Ye
 
 ### scales.indicators.type<span class="type-signature type enum">enum</span>
 {:#scales-indicators-type}
+{:#scales-indicators-type}
 
 
 
@@ -1479,6 +1519,7 @@ Example
 
 
 ### scales.indicators.width<span class="type-signature type number">number</span>
+{:#scales-indicators-width}
 {:#scales-indicators-width}
 
 
@@ -1517,6 +1558,7 @@ Example
 
 ### scales.labels<span class="type-signature type array">Array</span>
 {:#scales-labels}
+{:#scales-labels}
 
 
 
@@ -1551,6 +1593,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10, opaci
 
 ### scales.labels.angle<span class="type-signature type number">number</span>
 {:#scales-labels-angle}
+{:#scales-labels-angle}
 
 
 
@@ -1584,6 +1627,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10 }] }] 
 
 
 ### scales.labels.autoAngle<span class="type-signature type boolean">boolean</span>
+{:#scales-labels-autoangle}
 {:#scales-labels-autoAngle}
 
 
@@ -1619,6 +1663,7 @@ Example
 
 ### scales.labels.color<span class="type-signature type string">string</span>
 {:#scales-labels-color}
+{:#scales-labels-color}
 
 
 
@@ -1652,6 +1697,7 @@ Example
 
 
 ### scales.labels.distanceFromScale<span class="type-signature type number">number</span>
+{:#scales-labels-distancefromscale}
 {:#scales-labels-distanceFromScale}
 
 
@@ -1687,6 +1733,7 @@ Example
 
 ### scales.labels.font<span class="type-signature type object">object</span>
 {:#scales-labels-font}
+{:#scales-labels-font}
 
 
 
@@ -1720,6 +1767,7 @@ Example
 
 
 ### scales.labels.font.fontFamily<span class="type-signature type string">String</span>
+{:#scales-labels-font-fontfamily}
 {:#scales-labels-font-fontFamily}
 
 
@@ -1754,6 +1802,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontFami
 
 
 ### scales.labels.font.fontStyle<span class="type-signature type string">string</span>
+{:#scales-labels-font-fontstyle}
 {:#scales-labels-font-fontStyle}
 
 
@@ -1789,6 +1838,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontStyl
 
 ### scales.labels.font.size<span class="type-signature type string">string</span>
 {:#scales-labels-font-size}
+{:#scales-labels-font-size}
 
 
 
@@ -1822,6 +1872,7 @@ Example
 
 
 ### scales.labels.includeFirstValue<span class="type-signature type boolean">boolean</span>
+{:#scales-labels-includefirstvalue}
 {:#scales-labels-includeFirstValue}
 
 
@@ -1857,6 +1908,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ includeFirstValu
 
 ### scales.labels.opacity<span class="type-signature type number">number</span>
 {:#scales-labels-opacity}
+{:#scales-labels-opacity}
 
 
 
@@ -1890,6 +1942,7 @@ Example
 
 
 ### scales.labels.placement<span class="type-signature type enum">enum</span>
+{:#scales-labels-placement}
 {:#scales-labels-placement}
 
 
@@ -1925,6 +1978,7 @@ Example
 
 ### scales.labels.type<span class="type-signature type enum">enum</span>
 {:#scales-labels-type}
+{:#scales-labels-type}
 
 
 
@@ -1958,6 +2012,7 @@ Example
 
 
 ### scales.labels.unitText<span class="type-signature type string">string</span>
+{:#scales-labels-unittext}
 {:#scales-labels-unitText}
 
 
@@ -1992,6 +2047,7 @@ Example
 
 
 ### scales.labels.unitTextPosition<span class="type-signature type enum">enum</span>
+{:#scales-labels-unittextposition}
 {:#scales-labels-unitTextPosition}
 
 
@@ -2026,6 +2082,7 @@ Example
 
 
 ### scales.majorIntervalValue<span class="type-signature type number">number</span>
+{:#scales-majorintervalvalue}
 {:#scales-majorIntervalValue}
 
 
@@ -2061,6 +2118,7 @@ Example
 
 ### scales.maximum<span class="type-signature type number">number</span>
 {:#scales-maximum}
+{:#scales-maximum}
 
 
 
@@ -2095,6 +2153,7 @@ Example
 
 ### scales.minimum<span class="type-signature type number">number</span>
 {:#scales-minimum}
+{:#scales-minimum}
 
 
 
@@ -2128,6 +2187,7 @@ Example
 
 
 ### scales.minorIntervalValue<span class="type-signature type number">number</span>
+{:#scales-minorintervalvalue}
 {:#scales-minorIntervalValue}
 
 
@@ -2163,6 +2223,7 @@ Example
 
 ### scales.opacity<span class="type-signature type number">number</span>
 {:#scales-opacity}
+{:#scales-opacity}
 
 
 
@@ -2196,6 +2257,7 @@ Example
 
 
 ### scales.pointerCap<span class="type-signature type object">object</span>
+{:#scales-pointercap}
 {:#scales-pointerCap}
 
 
@@ -2230,6 +2292,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap:{radius: 7, bord
 
 
 ### scales.pointerCap.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-pointercap-backgroundcolor}
 {:#scales-pointerCap-backgroundColor}
 
 
@@ -2264,6 +2327,7 @@ Example
 
 
 ### scales.pointerCap.borderColor<span class="type-signature type string">string</span>
+{:#scales-pointercap-bordercolor}
 {:#scales-pointerCap-borderColor}
 
 
@@ -2298,6 +2362,7 @@ Example
 
 
 ### scales.pointerCap.borderWidth<span class="type-signature type number">number</span>
+{:#scales-pointercap-borderwidth}
 {:#scales-pointerCap-borderWidth}
 
 
@@ -2332,6 +2397,7 @@ Example
 
 
 ### scales.pointerCap.interiorGradient<span class="type-signature type object">Object</span>
+{:#scales-pointercap-interiorgradient}
 {:#scales-pointerCap-interiorGradient}
 
 
@@ -2366,6 +2432,7 @@ Example
 
 
 ### scales.pointerCap.radius<span class="type-signature type number">number</span>
+{:#scales-pointercap-radius}
 {:#scales-pointerCap-radius}
 
 
@@ -2401,6 +2468,7 @@ Example
 
 ### scales.pointers<span class="type-signature type array">Array</span>
 {:#scales-pointers}
+{:#scales-pointers}
 
 
 
@@ -2434,6 +2502,7 @@ Example
 
 
 ### scales.pointers.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-pointers-backgroundcolor}
 {:#scales-pointers-backgroundColor}
 
 
@@ -2468,6 +2537,7 @@ Example
 
 
 ### scales.pointers.backNeedleLength<span class="type-signature type number">number</span>
+{:#scales-pointers-backneedlelength}
 {:#scales-pointers-backNeedleLength}
 
 
@@ -2503,6 +2573,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 
 ### scales.pointers.border<span class="type-signature type object">object</span>
 {:#scales-pointers-border}
+{:#scales-pointers-border}
 
 
 
@@ -2536,6 +2607,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers:[{border:{color:nu
 
 
 ### scales.pointers.border.color<span class="type-signature type string">string</span>
+{:#scales-pointers-border-color}
 {:#scales-pointers-border-color}
 
 
@@ -2571,6 +2643,7 @@ Example
 
 ### scales.pointers.border.width<span class="type-signature type number">number</span>
 {:#scales-pointers-border-width}
+{:#scales-pointers-border-width}
 
 
 
@@ -2604,6 +2677,7 @@ Example
 
 
 ### scales.pointers.distanceFromScale<span class="type-signature type number">number</span>
+{:#scales-pointers-distancefromscale}
 {:#scales-pointers-distanceFromScale}
 
 
@@ -2639,6 +2713,7 @@ Example
 
 ### scales.pointers.gradients<span class="type-signature type object">Object</span>
 {:#scales-pointers-gradients}
+{:#scales-pointers-gradients}
 
 
 
@@ -2673,6 +2748,7 @@ Example
 
 ### scales.pointers.length<span class="type-signature type number">number</span>
 {:#scales-pointers-length}
+{:#scales-pointers-length}
 
 
 
@@ -2706,6 +2782,7 @@ Example
 
 
 ### scales.pointers.markerType<span class="type-signature type enum">enum</span>
+{:#scales-pointers-markertype}
 {:#scales-pointers-markerType}
 
 
@@ -2740,6 +2817,7 @@ Example
 
 
 ### scales.pointers.needleType<span class="type-signature type enum">enum</span>
+{:#scales-pointers-needletype}
 {:#scales-pointers-needleType}
 
 
@@ -2775,6 +2853,7 @@ Example
 
 ### scales.pointers.opacity<span class="type-signature type number">number</span>
 {:#scales-pointers-opacity}
+{:#scales-pointers-opacity}
 
 
 
@@ -2809,6 +2888,7 @@ Example
 
 ### scales.pointers.placement<span class="type-signature type enum">enum</span>
 {:#scales-pointers-placement}
+{:#scales-pointers-placement}
 
 
 
@@ -2842,6 +2922,7 @@ Example
 
 
 ### scales.pointers.pointerValueText<span class="type-signature type object">object</span>
+{:#scales-pointers-pointervaluetext}
 {:#scales-pointers-pointerValueText}
 
 
@@ -2876,6 +2957,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.angle<span class="type-signature type number">number</span>
+{:#scales-pointers-pointervaluetext-angle}
 {:#scales-pointers-pointerValueText-angle}
 
 
@@ -2910,6 +2992,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.autoAngle<span class="type-signature type boolean">boolean</span>
+{:#scales-pointers-pointervaluetext-autoangle}
 {:#scales-pointers-pointerValueText-autoAngle}
 
 
@@ -2944,6 +3027,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.color<span class="type-signature type string">string</span>
+{:#scales-pointers-pointervaluetext-color}
 {:#scales-pointers-pointerValueText-color}
 
 
@@ -2978,6 +3062,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.distance<span class="type-signature type number">number</span>
+{:#scales-pointers-pointervaluetext-distance}
 {:#scales-pointers-pointerValueText-distance}
 
 
@@ -3012,6 +3097,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.font<span class="type-signature type object">object</span>
+{:#scales-pointers-pointervaluetext-font}
 {:#scales-pointers-pointerValueText-font}
 
 
@@ -3046,6 +3132,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.font.fontFamily<span class="type-signature type string">string</span>
+{:#scales-pointers-pointervaluetext-font-fontfamily}
 {:#scales-pointers-pointerValueText-font-fontFamily}
 
 
@@ -3080,6 +3167,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.font.fontStyle<span class="type-signature type string">string</span>
+{:#scales-pointers-pointervaluetext-font-fontstyle}
 {:#scales-pointers-pointerValueText-font-fontStyle}
 
 
@@ -3114,6 +3202,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.font.size<span class="type-signature type string">string</span>
+{:#scales-pointers-pointervaluetext-font-size}
 {:#scales-pointers-pointerValueText-font-size}
 
 
@@ -3148,6 +3237,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.opacity<span class="type-signature type number">number</span>
+{:#scales-pointers-pointervaluetext-opacity}
 {:#scales-pointers-pointerValueText-opacity}
 
 
@@ -3182,6 +3272,7 @@ Example
 
 
 ### scales.pointers.pointerValueText.showValue<span class="type-signature type boolean">boolean</span>
+{:#scales-pointers-pointervaluetext-showvalue}
 {:#scales-pointers-pointerValueText-showValue}
 
 
@@ -3216,6 +3307,7 @@ Example
 
 
 ### scales.pointers.showBackNeedle<span class="type-signature type boolean">boolean</span>
+{:#scales-pointers-showbackneedle}
 {:#scales-pointers-showBackNeedle}
 
 
@@ -3251,6 +3343,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 
 ### scales.pointers.type<span class="type-signature type enum">enum</span>
 {:#scales-pointers-type}
+{:#scales-pointers-type}
 
 
 
@@ -3284,6 +3377,7 @@ Example
 
 
 ### scales.pointers.value<span class="type-signature type number">number</span>
+{:#scales-pointers-value}
 {:#scales-pointers-value}
 
 
@@ -3319,6 +3413,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ value: 50 }] }
 
 ### scales.pointers.width<span class="type-signature type number">number</span>
 {:#scales-pointers-width}
+{:#scales-pointers-width}
 
 
 
@@ -3352,6 +3447,7 @@ Example
 
 
 ### scales.radius<span class="type-signature type number">number</span>
+{:#scales-radius}
 {:#scales-radius}
 
 
@@ -3387,6 +3483,7 @@ Example
 
 ### scales.ranges<span class="type-signature type array">Array</span>
 {:#scales-ranges}
+{:#scales-ranges}
 
 
 
@@ -3420,6 +3517,7 @@ Example
 
 
 ### scales.ranges.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-ranges-backgroundcolor}
 {:#scales-ranges-backgroundColor}
 
 
@@ -3455,6 +3553,7 @@ Example
 
 ### scales.ranges.border<span class="type-signature type object">object</span>
 {:#scales-ranges-border}
+{:#scales-ranges-border}
 
 
 
@@ -3488,6 +3587,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ranges:[{border:{color:null
 
 
 ### scales.ranges.border.color<span class="type-signature type string">string</span>
+{:#scales-ranges-border-color}
 {:#scales-ranges-border-color}
 
 
@@ -3523,6 +3623,7 @@ Example
 
 ### scales.ranges.border.width<span class="type-signature type number">number</span>
 {:#scales-ranges-border-width}
+{:#scales-ranges-border-width}
 
 
 
@@ -3556,6 +3657,7 @@ Example
 
 
 ### scales.ranges.distanceFromScale<span class="type-signature type number">number</span>
+{:#scales-ranges-distancefromscale}
 {:#scales-ranges-distanceFromScale}
 
 
@@ -3590,6 +3692,7 @@ $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{di
 
 
 ### scales.ranges.endValue<span class="type-signature type number">number</span>
+{:#scales-ranges-endvalue}
 {:#scales-ranges-endValue}
 
 
@@ -3624,6 +3727,7 @@ Example
 
 
 ### scales.ranges.endWidth<span class="type-signature type number">number</span>
+{:#scales-ranges-endwidth}
 {:#scales-ranges-endWidth}
 
 
@@ -3659,6 +3763,7 @@ Example
 
 ### scales.ranges.gradients<span class="type-signature type object">object</span>
 {:#scales-ranges-gradients}
+{:#scales-ranges-gradients}
 
 
 
@@ -3692,6 +3797,7 @@ Example
 
 
 ### scales.ranges.opacity<span class="type-signature type number">number</span>
+{:#scales-ranges-opacity}
 {:#scales-ranges-opacity}
 
 
@@ -3727,6 +3833,7 @@ Example
 
 ### scales.ranges.placement<span class="type-signature type enum">enum</span>
 {:#scales-ranges-placement}
+{:#scales-ranges-placement}
 
 
 
@@ -3761,6 +3868,7 @@ Example
 
 ### scales.ranges.size<span class="type-signature type number">number</span>
 {:#scales-ranges-size}
+{:#scales-ranges-size}
 
 
 
@@ -3794,6 +3902,7 @@ Example
 
 
 ### scales.ranges.startValue<span class="type-signature type number">number</span>
+{:#scales-ranges-startvalue}
 {:#scales-ranges-startValue}
 
 
@@ -3828,6 +3937,7 @@ Example
 
 
 ### scales.ranges.startWidth<span class="type-signature type number">number</span>
+{:#scales-ranges-startwidth}
 {:#scales-ranges-startWidth}
 
 
@@ -3862,6 +3972,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{
 
 
 ### scales.shadowOffset<span class="type-signature type number">number</span>
+{:#scales-shadowoffset}
 {:#scales-shadowOffset}
 
 
@@ -3896,6 +4007,7 @@ Example
 
 
 ### scales.showIndicators<span class="type-signature type boolean">boolean</span>
+{:#scales-showindicators}
 {:#scales-showIndicators}
 
 
@@ -3930,6 +4042,7 @@ Example
 
 
 ### scales.showLabels<span class="type-signature type boolean">boolean</span>
+{:#scales-showlabels}
 {:#scales-showLabels}
 
 
@@ -3964,6 +4077,7 @@ Example
 
 
 ### scales.showPointers<span class="type-signature type boolean">boolean</span>
+{:#scales-showpointers}
 {:#scales-showPointers}
 
 
@@ -3998,6 +4112,7 @@ Example
 
 
 ### scales.showRanges<span class="type-signature type boolean">boolean</span>
+{:#scales-showranges}
 {:#scales-showRanges}
 
 
@@ -4032,6 +4147,7 @@ Example
 
 
 ### scales.showScaleBar<span class="type-signature type boolean">boolean</span>
+{:#scales-showscalebar}
 {:#scales-showScaleBar}
 
 
@@ -4066,6 +4182,7 @@ Example
 
 
 ### scales.showTicks<span class="type-signature type boolean">boolean</span>
+{:#scales-showticks}
 {:#scales-showTicks}
 
 
@@ -4101,6 +4218,7 @@ Example
 
 ### scales.size<span class="type-signature type number">number</span>
 {:#scales-size}
+{:#scales-size}
 
 
 
@@ -4134,6 +4252,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true, size: 6
 
 
 ### scales.startAngle<span class="type-signature type number">number</span>
+{:#scales-startangle}
 {:#scales-startAngle}
 
 
@@ -4168,6 +4287,7 @@ Example
 
 
 ### scales.subGauges<span class="type-signature type array">Array</span>
+{:#scales-subgauges}
 {:#scales-subGauges}
 
 
@@ -4206,6 +4326,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.height<span class="type-signature type number">number</span>
+{:#scales-subgauges-height}
 {:#scales-subGauges-height}
 
 
@@ -4244,6 +4365,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.position<span class="type-signature type object">object</span>
+{:#scales-subgauges-position}
 {:#scales-subGauges-position}
 
 
@@ -4282,6 +4404,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.position.x<span class="type-signature type number">number</span>
+{:#scales-subgauges-position-x}
 {:#scales-subGauges-position-x}
 
 
@@ -4320,6 +4443,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.position.y<span class="type-signature type number">number</span>
+{:#scales-subgauges-position-y}
 {:#scales-subGauges-position-y}
 
 
@@ -4358,6 +4482,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.width<span class="type-signature type number">number</span>
+{:#scales-subgauges-width}
 {:#scales-subGauges-width}
 
 
@@ -4396,6 +4521,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.sweepAngle<span class="type-signature type number">number</span>
+{:#scales-sweepangle}
 {:#scales-sweepAngle}
 
 
@@ -4431,6 +4557,7 @@ Example
 
 ### scales.ticks<span class="type-signature type array">Array</span>
 {:#scales-ticks}
+{:#scales-ticks}
 
 
 
@@ -4464,6 +4591,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ angle: 10, distan
 
 
 ### scales.ticks.angle<span class="type-signature type number">number</span>
+{:#scales-ticks-angle}
 {:#scales-ticks-angle}
 
 
@@ -4499,6 +4627,7 @@ Example
 
 ### scales.ticks.color<span class="type-signature type string">string</span>
 {:#scales-ticks-color}
+{:#scales-ticks-color}
 
 
 
@@ -4532,6 +4661,7 @@ Example
 
 
 ### scales.ticks.distanceFromScale<span class="type-signature type number">number</span>
+{:#scales-ticks-distancefromscale}
 {:#scales-ticks-distanceFromScale}
 
 
@@ -4567,6 +4697,7 @@ Example
 
 ### scales.ticks.height<span class="type-signature type number">number</span>
 {:#scales-ticks-height}
+{:#scales-ticks-height}
 
 
 
@@ -4600,6 +4731,7 @@ Example
 
 
 ### scales.ticks.placement<span class="type-signature type enum">enum</span>
+{:#scales-ticks-placement}
 {:#scales-ticks-placement}
 
 
@@ -4635,6 +4767,7 @@ Example
 
 ### scales.ticks.type<span class="type-signature type enum">enum</span>
 {:#scales-ticks-type}
+{:#scales-ticks-type}
 
 
 
@@ -4668,6 +4801,7 @@ Example
 
 
 ### scales.ticks.width<span class="type-signature type number">number</span>
+{:#scales-ticks-width}
 {:#scales-ticks-width}
 
 
@@ -4703,6 +4837,7 @@ Example
 
 ### theme<span class="type-signature type string">string</span>
 {:#theme}
+{:#theme}
 
 
 
@@ -4737,6 +4872,7 @@ Example
 
 ### tooltip<span class="type-signature type object">object</span>
 {:#tooltip}
+{:#tooltip}
 
 
 
@@ -4770,6 +4906,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true,showC
 
 
 ### tooltip.showCustomLabelTooltip<span class="type-signature type boolean">boolean</span>
+{:#tooltip-showcustomlabeltooltip}
 {:#tooltip-showCustomLabelTooltip}
 
 
@@ -4804,6 +4941,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showCustomLabelTooltip: true
 
 
 ### tooltip.showLabelTooltip<span class="type-signature type boolean">boolean</span>
+{:#tooltip-showlabeltooltip}
 {:#tooltip-showLabelTooltip}
 
 
@@ -4838,6 +4976,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true} });
 
 
 ### tooltip.templateID<span class="type-signature type string">string</span>
+{:#tooltip-templateid}
 {:#tooltip-templateID}
 
 
@@ -4873,6 +5012,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true, temp
 
 ### value<span class="type-signature type number">number</span>
 {:#value}
+{:#value}
 
 
 
@@ -4906,6 +5046,7 @@ $("#CoreCircularGauge").ejCircularGauge({ value: 30 });
 
 
 ### width<span class="type-signature type number">number</span>
+{:#width}
 {:#width}
 
 
@@ -4945,6 +5086,7 @@ $("#CoreCircularGauge").ejCircularGauge({ width: 400 });
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
+{:#destroy}
 
 
 
@@ -4970,6 +5112,7 @@ circulargaugeObj.destroy();
 
 
 ### exportImage<span class="signature">()</span>
+{:#exportimage}
 {:#exportImage}
 
 
@@ -5017,6 +5160,7 @@ circulargaugeObj.exportImage("myImage","jpeg");
 
 
 ### getBackNeedleLength<span class="signature">()</span>
+{:#getbackneedlelength}
 {:#getBackNeedleLength}
 
 
@@ -5064,6 +5208,7 @@ circulargaugeObj.getBackNeedleLength(0, 0);
 
 
 ### getCustomLabelAngle<span class="signature">()</span>
+{:#getcustomlabelangle}
 {:#getCustomLabelAngle}
 
 
@@ -5111,6 +5256,7 @@ circulargaugeObj.getCustomLabelAngle(0, 0);
 
 
 ### getCustomLabelValue<span class="signature">()</span>
+{:#getcustomlabelvalue}
 {:#getCustomLabelValue}
 
 
@@ -5158,6 +5304,7 @@ circulargaugeObj.getCustomLabelValue(0, 0);
 
 
 ### getLabelAngle<span class="signature">()</span>
+{:#getlabelangle}
 {:#getLabelAngle}
 
 
@@ -5205,6 +5352,7 @@ circulargaugeObj.getLabelAngle(0, 0);
 
 
 ### getLabelDistanceFromScale<span class="signature">()</span>
+{:#getlabeldistancefromscale}
 {:#getLabelDistanceFromScale}
 
 
@@ -5252,6 +5400,7 @@ circulargaugeObj.getLabelDistanceFromScale(0, 0);
 
 
 ### getLabelPlacement<span class="signature">()</span>
+{:#getlabelplacement}
 {:#getLabelPlacement}
 
 
@@ -5299,6 +5448,7 @@ circulargaugeObj.getLabelPlacement(0, 0);
 
 
 ### getLabelStyle<span class="signature">()</span>
+{:#getlabelstyle}
 {:#getLabelStyle}
 
 
@@ -5346,6 +5496,7 @@ circulargaugeObj.getLabelStyle(0, 0);
 
 
 ### getMajorIntervalValue<span class="signature">()</span>
+{:#getmajorintervalvalue}
 {:#getMajorIntervalValue}
 
 
@@ -5388,6 +5539,7 @@ circulargaugeObj.getMajorIntervalValue(0);
 
 
 ### getMarkerDistanceFromScale<span class="signature">()</span>
+{:#getmarkerdistancefromscale}
 {:#getMarkerDistanceFromScale}
 
 
@@ -5435,6 +5587,7 @@ circulargaugeObj.getMarkerDistanceFromScale(0, 0);
 
 
 ### getMarkerStyle<span class="signature">()</span>
+{:#getmarkerstyle}
 {:#getMarkerStyle}
 
 
@@ -5482,6 +5635,7 @@ circulargaugeObj.getMarkerStyle(0, 0);
 
 
 ### getMaximumValue<span class="signature">()</span>
+{:#getmaximumvalue}
 {:#getMaximumValue}
 
 
@@ -5524,6 +5678,7 @@ circulargaugeObj.getMaximumValue(0);
 
 
 ### getMinimumValue<span class="signature">()</span>
+{:#getminimumvalue}
 {:#getMinimumValue}
 
 
@@ -5566,6 +5721,7 @@ circulargaugeObj.getMinimumValue(0);
 
 
 ### getMinorIntervalValue<span class="signature">()</span>
+{:#getminorintervalvalue}
 {:#getMinorIntervalValue}
 
 
@@ -5608,6 +5764,7 @@ circulargaugeObj.getMinorIntervalValue(0);
 
 
 ### getNeedleStyle<span class="signature">()</span>
+{:#getneedlestyle}
 {:#getNeedleStyle}
 
 
@@ -5655,6 +5812,7 @@ circulargaugeObj.getNeedleStyle(0, 0);
 
 
 ### getPointerCapBorderWidth<span class="signature">()</span>
+{:#getpointercapborderwidth}
 {:#getPointerCapBorderWidth}
 
 
@@ -5697,6 +5855,7 @@ circulargaugeObj.getPointerCapBorderWidth(0);
 
 
 ### getPointerCapRadius<span class="signature">()</span>
+{:#getpointercapradius}
 {:#getPointerCapRadius}
 
 
@@ -5739,6 +5898,7 @@ circulargaugeObj.getPointerCapRadius(0);
 
 
 ### getPointerLength<span class="signature">()</span>
+{:#getpointerlength}
 {:#getPointerLength}
 
 
@@ -5786,6 +5946,7 @@ circulargaugeObj.getPointerLength(0, 0);
 
 
 ### getPointerNeedleType<span class="signature">()</span>
+{:#getpointerneedletype}
 {:#getPointerNeedleType}
 
 
@@ -5833,6 +5994,7 @@ circulargaugeObj.getPointerNeedleType(0, 0);
 
 
 ### getPointerPlacement<span class="signature">()</span>
+{:#getpointerplacement}
 {:#getPointerPlacement}
 
 
@@ -5880,6 +6042,7 @@ circulargaugeObj.getPointerPlacement(0, 0);
 
 
 ### getPointerValue<span class="signature">()</span>
+{:#getpointervalue}
 {:#getPointerValue}
 
 
@@ -5927,6 +6090,7 @@ circulargaugeObj.getPointerValue(0, 0);
 
 
 ### getPointerWidth<span class="signature">()</span>
+{:#getpointerwidth}
 {:#getPointerWidth}
 
 
@@ -5974,6 +6138,7 @@ circulargaugeObj.getPointerWidth(0, 0);
 
 
 ### getRangeBorderWidth<span class="signature">()</span>
+{:#getrangeborderwidth}
 {:#getRangeBorderWidth}
 
 
@@ -6021,6 +6186,7 @@ circulargaugeObj.getRangeBorderWidth(0, 0);
 
 
 ### getRangeDistanceFromScale<span class="signature">()</span>
+{:#getrangedistancefromscale}
 {:#getRangeDistanceFromScale}
 
 
@@ -6068,6 +6234,7 @@ circulargaugeObj.getRangeDistanceFromScale(0, 0);
 
 
 ### getRangeEndValue<span class="signature">()</span>
+{:#getrangeendvalue}
 {:#getRangeEndValue}
 
 
@@ -6115,6 +6282,7 @@ circulargaugeObj.getRangeEndValue(0, 0);
 
 
 ### getRangePosition<span class="signature">()</span>
+{:#getrangeposition}
 {:#getRangePosition}
 
 
@@ -6162,6 +6330,7 @@ circulargaugeObj.getRangePosition(0, 0);
 
 
 ### getRangeSize<span class="signature">()</span>
+{:#getrangesize}
 {:#getRangeSize}
 
 
@@ -6209,6 +6378,7 @@ circulargaugeObj.getRangeSize(0, 0);
 
 
 ### getRangeStartValue<span class="signature">()</span>
+{:#getrangestartvalue}
 {:#getRangeStartValue}
 
 
@@ -6256,6 +6426,7 @@ circulargaugeObj.getRangeStartValue(0, 0);
 
 
 ### getScaleBarSize<span class="signature">()</span>
+{:#getscalebarsize}
 {:#getScaleBarSize}
 
 
@@ -6298,6 +6469,7 @@ circulargaugeObj.getScaleBarSize(0);
 
 
 ### getScaleBorderWidth<span class="signature">()</span>
+{:#getscaleborderwidth}
 {:#getScaleBorderWidth}
 
 
@@ -6340,6 +6512,7 @@ circulargaugeObj.getScaleBorderWidth(0);
 
 
 ### getScaleDirection<span class="signature">()</span>
+{:#getscaledirection}
 {:#getScaleDirection}
 
 
@@ -6382,6 +6555,7 @@ circulargaugeObj.getScaleDirection(0);
 
 
 ### getScaleRadius<span class="signature">()</span>
+{:#getscaleradius}
 {:#getScaleRadius}
 
 
@@ -6424,6 +6598,7 @@ circulargaugeObj.getScaleRadius(0);
 
 
 ### getStartAngle<span class="signature">()</span>
+{:#getstartangle}
 {:#getStartAngle}
 
 
@@ -6466,6 +6641,7 @@ circulargaugeObj.getStartAngle(0);
 
 
 ### getSubGaugeLocation<span class="signature">()</span>
+{:#getsubgaugelocation}
 {:#getSubGaugeLocation}
 
 
@@ -6516,6 +6692,7 @@ circulargaugeObj.getSubGaugeLocation(0, 0);
 
 
 ### getSweepAngle<span class="signature">()</span>
+{:#getsweepangle}
 {:#getSweepAngle}
 
 
@@ -6558,6 +6735,7 @@ circulargaugeObj.getSweepAngle(0);
 
 
 ### getTickAngle<span class="signature">()</span>
+{:#gettickangle}
 {:#getTickAngle}
 
 
@@ -6605,6 +6783,7 @@ circulargaugeObj.getTickAngle(0, 0);
 
 
 ### getTickDistanceFromScale<span class="signature">()</span>
+{:#gettickdistancefromscale}
 {:#getTickDistanceFromScale}
 
 
@@ -6652,6 +6831,7 @@ circulargaugeObj.getTickDistanceFromScale(0, 0);
 
 
 ### getTickHeight<span class="signature">()</span>
+{:#gettickheight}
 {:#getTickHeight}
 
 
@@ -6699,6 +6879,7 @@ circulargaugeObj.getTickHeight(0, 0);
 
 
 ### getTickPlacement<span class="signature">()</span>
+{:#gettickplacement}
 {:#getTickPlacement}
 
 
@@ -6746,6 +6927,7 @@ circulargaugeObj.getTickPlacement(0, 0);
 
 
 ### getTickStyle<span class="signature">()</span>
+{:#gettickstyle}
 {:#getTickStyle}
 
 
@@ -6793,6 +6975,7 @@ circulargaugeObj.getTickStyle(0, 0);
 
 
 ### getTickWidth<span class="signature">()</span>
+{:#gettickwidth}
 {:#getTickWidth}
 
 
@@ -6840,6 +7023,7 @@ circulargaugeObj.getTickWidth(0, 0);
 
 
 ### includeFirstValue<span class="signature">()</span>
+{:#includefirstvalue}
 {:#includeFirstValue}
 
 
@@ -6893,6 +7077,7 @@ circulargaugeObj.includeFirstValue(0, 0, false);
 
 ### redraw<span class="signature">()</span>
 {:#redraw}
+{:#redraw}
 
 
 
@@ -6934,6 +7119,7 @@ circulargaugeObj.redraw("scale");
 
 
 ### setBackNeedleLength<span class="signature">()</span>
+{:#setbackneedlelength}
 {:#setBackNeedleLength}
 
 
@@ -6986,6 +7172,7 @@ circulargaugeObj.setBackNeedleLength(0, 0, 10);
 
 
 ### setCustomLabelAngle<span class="signature">()</span>
+{:#setcustomlabelangle}
 {:#setCustomLabelAngle}
 
 
@@ -7038,6 +7225,7 @@ circulargaugeObj.setCustomLabelAngle(0, 0, 10);
 
 
 ### setCustomLabelValue<span class="signature">()</span>
+{:#setcustomlabelvalue}
 {:#setCustomLabelValue}
 
 
@@ -7090,6 +7278,7 @@ circulargaugeObj.setCustomLabelValue(0, 0, "CircularGauge");
 
 
 ### setLabelAngle<span class="signature">()</span>
+{:#setlabelangle}
 {:#setLabelAngle}
 
 
@@ -7142,6 +7331,7 @@ circulargaugeObj.setLabelAngle(0, 0, 10);
 
 
 ### setLabelDistanceFromScale<span class="signature">()</span>
+{:#setlabeldistancefromscale}
 {:#setLabelDistanceFromScale}
 
 
@@ -7194,6 +7384,7 @@ circulargaugeObj.setLabelDistanceFromScale(0, 0, 10);
 
 
 ### setLabelPlacement<span class="signature">()</span>
+{:#setlabelplacement}
 {:#setLabelPlacement}
 
 
@@ -7246,6 +7437,7 @@ circulargaugeObj.setLabelPlacement(0, 0, "far");
 
 
 ### setLabelStyle<span class="signature">()</span>
+{:#setlabelstyle}
 {:#setLabelStyle}
 
 
@@ -7298,6 +7490,7 @@ circulargaugeObj.setLabelStyle(0, 0, "major");
 
 
 ### setMajorIntervalValue<span class="signature">()</span>
+{:#setmajorintervalvalue}
 {:#setMajorIntervalValue}
 
 
@@ -7345,6 +7538,7 @@ circulargaugeObj.setMajorIntervalValue(0, 10);
 
 
 ### setMarkerDistanceFromScale<span class="signature">()</span>
+{:#setmarkerdistancefromscale}
 {:#setMarkerDistanceFromScale}
 
 
@@ -7397,6 +7591,7 @@ circulargaugeObj.setMarkerDistanceFromScale(0, 0, 10);
 
 
 ### setMarkerStyle<span class="signature">()</span>
+{:#setmarkerstyle}
 {:#setMarkerStyle}
 
 
@@ -7449,6 +7644,7 @@ circulargaugeObj.setMarkerStyle(0, 0, "rectangle");
 
 
 ### setMaximumValue<span class="signature">()</span>
+{:#setmaximumvalue}
 {:#setMaximumValue}
 
 
@@ -7496,6 +7692,7 @@ circulargaugeObj.setMaximumValue(0, 130);
 
 
 ### setMinimumValue<span class="signature">()</span>
+{:#setminimumvalue}
 {:#setMinimumValue}
 
 
@@ -7543,6 +7740,7 @@ circulargaugeObj.setMinimumValue(0, 10);
 
 
 ### setMinorIntervalValue<span class="signature">()</span>
+{:#setminorintervalvalue}
 {:#setMinorIntervalValue}
 
 
@@ -7590,6 +7788,7 @@ circulargaugeObj.setMinorIntervalValue(0, 2);
 
 
 ### setNeedleStyle<span class="signature">()</span>
+{:#setneedlestyle}
 {:#setNeedleStyle}
 
 
@@ -7642,6 +7841,7 @@ circulargaugeObj.setNeedleStyle(0, 0, "arrow");
 
 
 ### setPointerCapBorderWidth<span class="signature">()</span>
+{:#setpointercapborderwidth}
 {:#setPointerCapBorderWidth}
 
 
@@ -7689,6 +7889,7 @@ circulargaugeObj.setPointerCapBorderWidth(0, 5);
 
 
 ### setPointerCapRadius<span class="signature">()</span>
+{:#setpointercapradius}
 {:#setPointerCapRadius}
 
 
@@ -7736,6 +7937,7 @@ circulargaugeObj.setPointerCapRadius(0, 10);
 
 
 ### setPointerLength<span class="signature">()</span>
+{:#setpointerlength}
 {:#setPointerLength}
 
 
@@ -7788,6 +7990,7 @@ circulargaugeObj.setPointerLength(0, 0, 90);
 
 
 ### setPointerNeedleType<span class="signature">()</span>
+{:#setpointerneedletype}
 {:#setPointerNeedleType}
 
 
@@ -7840,6 +8043,7 @@ circulargaugeObj.setPointerNeedleType(0, 0, "triangle");
 
 
 ### setPointerPlacement<span class="signature">()</span>
+{:#setpointerplacement}
 {:#setPointerPlacement}
 
 
@@ -7892,6 +8096,7 @@ circulargaugeObj.setPointerPlacement(0, 0,"near");
 
 
 ### setPointerValue<span class="signature">()</span>
+{:#setpointervalue}
 {:#setPointerValue}
 
 
@@ -7944,6 +8149,7 @@ circulargaugeObj.setPointerValue(0, 0, 10);
 
 
 ### setPointerWidth<span class="signature">()</span>
+{:#setpointerwidth}
 {:#setPointerWidth}
 
 
@@ -7996,6 +8202,7 @@ circulargaugeObj.setPointerWidth(0, 0, 10);
 
 
 ### setRangeBorderWidth<span class="signature">()</span>
+{:#setrangeborderwidth}
 {:#setRangeBorderWidth}
 
 
@@ -8048,6 +8255,7 @@ circulargaugeObj.setRangeBorderWidth(0, 0, 5);
 
 
 ### setRangeDistanceFromScale<span class="signature">()</span>
+{:#setrangedistancefromscale}
 {:#setRangeDistanceFromScale}
 
 
@@ -8100,6 +8308,7 @@ circulargaugeObj.setRangeDistanceFromScale(0, 0, 10);
 
 
 ### setRangeEndValue<span class="signature">()</span>
+{:#setrangeendvalue}
 {:#setRangeEndValue}
 
 
@@ -8152,6 +8361,7 @@ circulargaugeObj.setRangeEndValue(0, 0, 70);
 
 
 ### setRangePosition<span class="signature">()</span>
+{:#setrangeposition}
 {:#setRangePosition}
 
 
@@ -8204,6 +8414,7 @@ circulargaugeObj.setRangePosition(0, 0, "far");
 
 
 ### setRangeSize<span class="signature">()</span>
+{:#setrangesize}
 {:#setRangeSize}
 
 
@@ -8256,6 +8467,7 @@ circulargaugeObj.setRangeSize(0, 0, 10);
 
 
 ### setRangeStartValue<span class="signature">()</span>
+{:#setrangestartvalue}
 {:#setRangeStartValue}
 
 
@@ -8308,6 +8520,7 @@ circulargaugeObj.setRangeStartValue(0, 0, 10);
 
 
 ### setScaleBarSize<span class="signature">()</span>
+{:#setscalebarsize}
 {:#setScaleBarSize}
 
 
@@ -8355,6 +8568,7 @@ circulargaugeObj.setScaleBarSize(0, 160);
 
 
 ### setScaleBorderWidth<span class="signature">()</span>
+{:#setscaleborderwidth}
 {:#setScaleBorderWidth}
 
 
@@ -8402,6 +8616,7 @@ circulargaugeObj.setScaleBorderWidth(0, 3);
 
 
 ### setScaleDirection<span class="signature">()</span>
+{:#setscaledirection}
 {:#setScaleDirection}
 
 
@@ -8449,6 +8664,7 @@ circulargaugeObj.setScaleDirection(0, "clockwise");
 
 
 ### setScaleRadius<span class="signature">()</span>
+{:#setscaleradius}
 {:#setScaleRadius}
 
 
@@ -8496,6 +8712,7 @@ circulargaugeObj.setScaleRadius(0, 140);
 
 
 ### setStartAngle<span class="signature">()</span>
+{:#setstartangle}
 {:#setStartAngle}
 
 
@@ -8543,6 +8760,7 @@ circulargaugeObj.setStartAngle(0, 10);
 
 
 ### setSubGaugeLocation<span class="signature">()</span>
+{:#setsubgaugelocation}
 {:#setSubGaugeLocation}
 
 
@@ -8598,6 +8816,7 @@ circulargaugeObj.setSubGaugeLocation(0, 0, {x:50,y:100});
 
 
 ### setSweepAngle<span class="signature">()</span>
+{:#setsweepangle}
 {:#setSweepAngle}
 
 
@@ -8645,6 +8864,7 @@ circulargaugeObj.setSweepAngle(0, 220);
 
 
 ### setTickAngle<span class="signature">()</span>
+{:#settickangle}
 {:#setTickAngle}
 
 
@@ -8697,6 +8917,7 @@ circulargaugeObj.setTickAngle(0, 0, 10);
 
 
 ### setTickDistanceFromScale<span class="signature">()</span>
+{:#settickdistancefromscale}
 {:#setTickDistanceFromScale}
 
 
@@ -8749,6 +8970,7 @@ circulargaugeObj.setTickDistanceFromScale(0, 0, 15);
 
 
 ### setTickHeight<span class="signature">()</span>
+{:#settickheight}
 {:#setTickHeight}
 
 
@@ -8801,6 +9023,7 @@ circulargaugeObj.setTickHeight(0, 0, 10);
 
 
 ### setTickPlacement<span class="signature">()</span>
+{:#settickplacement}
 {:#setTickPlacement}
 
 
@@ -8853,6 +9076,7 @@ circulargaugeObj.setTickPlacement(0, 0, "near");
 
 
 ### setTickStyle<span class="signature">()</span>
+{:#settickstyle}
 {:#setTickStyle}
 
 
@@ -8905,6 +9129,7 @@ circulargaugeObj.setTickStyle(0, 0, "minor");
 
 
 ### setTickWidth<span class="signature">()</span>
+{:#settickwidth}
 {:#setTickWidth}
 
 
@@ -8961,6 +9186,7 @@ circulargaugeObj.setTickWidth(0, 0, 5);
 
 
 ### drawCustomLabel
+{:#drawcustomlabel}
 {:#drawCustomLabel}
 
 
@@ -9054,6 +9280,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### drawIndicators
+{:#drawindicators}
 {:#drawIndicators}
 
 
@@ -9147,6 +9374,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### drawLabels
+{:#drawlabels}
 {:#drawLabels}
 
 
@@ -9267,6 +9495,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### drawPointerCap
+{:#drawpointercap}
 {:#drawPointerCap}
 
 
@@ -9345,6 +9574,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### drawPointers
+{:#drawpointers}
 {:#drawPointers}
 
 
@@ -9465,6 +9695,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### drawRange
+{:#drawrange}
 {:#drawRange}
 
 
@@ -9558,6 +9789,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### drawTicks
+{:#drawticks}
 {:#drawTicks}
 
 
@@ -9679,6 +9911,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 ### load
 {:#load}
+{:#load}
 
 
 
@@ -9745,6 +9978,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 
 ### mouseClick
+{:#mouseclick}
 {:#mouseClick}
 
 
@@ -9865,6 +10099,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### mouseClickMove
+{:#mouseclickmove}
 {:#mouseClickMove}
 
 
@@ -9985,6 +10220,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### mouseClickUp
+{:#mouseclickup}
 {:#mouseClickUp}
 
 
@@ -10105,6 +10341,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### renderComplete
+{:#rendercomplete}
 {:#renderComplete}
 
 

@@ -90,6 +90,7 @@ Requires
 
 
 ### animationSpeed<span class="type-signature type number">number</span>
+{:#animationspeed}
 {:#animationSpeed}
 
 
@@ -139,6 +140,7 @@ Example
 
 
 ### backgroundColor<span class="type-signature type string">string</span>
+{:#backgroundcolor}
 {:#backgroundColor}
 
 
@@ -188,6 +190,7 @@ Example
 
 
 ### borderColor<span class="type-signature type string">string</span>
+{:#bordercolor}
 {:#borderColor}
 
 
@@ -237,6 +240,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
+{:#enableanimation}
 {:#enableAnimation}
 
 
@@ -286,6 +290,7 @@ Example
 
 
 ### enableMarkerPointerAnimation<span class="type-signature type boolean">boolean</span>
+{:#enablemarkerpointeranimation}
 {:#enableMarkerPointerAnimation}
 
 
@@ -335,6 +340,7 @@ Example
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
+{:#enableresize}
 {:#enableResize}
 
 
@@ -385,6 +391,7 @@ Example
 
 ### frame<span class="type-signature type object">object</span>
 {:#frame}
+{:#frame}
 
 
 
@@ -434,6 +441,7 @@ $("#LinearGauge1").ejLinearGauge({ frame: { backgroundImageUrl:null, outerWidth:
 
 
 ### frame.backgroundImageUrl<span class="type-signature type string">string</span>
+{:#frame-backgroundimageurl}
 {:#frame-backgroundImageUrl}
 
 
@@ -483,6 +491,7 @@ Example
 
 
 ### frame.innerWidth<span class="type-signature type number">number</span>
+{:#frame-innerwidth}
 {:#frame-innerWidth}
 
 
@@ -532,6 +541,7 @@ Example
 
 
 ### frame.outerWidth<span class="type-signature type number">number</span>
+{:#frame-outerwidth}
 {:#frame-outerWidth}
 
 
@@ -582,6 +592,7 @@ Example
 
 ### height<span class="type-signature type number">number</span>
 {:#height}
+{:#height}
 
 
 
@@ -630,6 +641,7 @@ Example
 
 
 ### labelColor<span class="type-signature type string">string</span>
+{:#labelcolor}
 {:#labelColor}
 
 
@@ -680,6 +692,7 @@ Example
 
 ### maximum<span class="type-signature type number">number</span>
 {:#maximum}
+{:#maximum}
 
 
 
@@ -728,6 +741,7 @@ Example
 
 
 ### minimum<span class="type-signature type number">number</span>
+{:#minimum}
 {:#minimum}
 
 
@@ -778,6 +792,7 @@ Example
 
 ### orientation<span class="type-signature type string">string</span>
 {:#orientation}
+{:#orientation}
 
 
 
@@ -826,6 +841,7 @@ Example
 
 
 ### outerCustomLabelPosition<span class="type-signature type enum">enum</span>
+{:#outercustomlabelposition}
 {:#outerCustomLabelPosition}
 
 
@@ -876,6 +892,7 @@ $("#CoreLinearGauge").ejLinearGauge({  outerCustomLabelPosition:"top" });
 
 
 ### pointerGradient1<span class="type-signature type object">Object</span>
+{:#pointergradient1}
 {:#pointerGradient1}
 
 
@@ -925,6 +942,7 @@ Example
 
 
 ### pointerGradient2<span class="type-signature type object">object</span>
+{:#pointergradient2}
 {:#pointerGradient2}
 
 
@@ -974,6 +992,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
+{:#readonly}
 {:#readOnly}
 
 
@@ -1024,6 +1043,7 @@ Example
 
 ### scales<span class="type-signature type object">Object</span>
 {:#scales}
+{:#scales}
 
 
 
@@ -1072,6 +1092,7 @@ Example
 
 
 ### scales.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-backgroundcolor}
 {:#scales-backgroundColor}
 
 
@@ -1121,6 +1142,7 @@ Example
 
 
 ### scales.barPointers<span class="type-signature type array">Array</span>
+{:#scales-barpointers}
 {:#scales-barPointers}
 
 
@@ -1170,6 +1192,7 @@ Example
 
 
 ### scales.barPointers.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-barpointers-backgroundcolor}
 {:#scales-barPointers-backgroundColor}
 
 
@@ -1219,6 +1242,7 @@ Example
 
 
 ### scales.barPointers.border<span class="type-signature type object">object</span>
+{:#scales-barpointers-border}
 {:#scales-barPointers-border}
 
 
@@ -1268,6 +1292,7 @@ Example
 
 
 ### scales.barPointers.border.color<span class="type-signature type string">string</span>
+{:#scales-barpointers-border-color}
 {:#scales-barPointers-border-color}
 
 
@@ -1317,6 +1342,7 @@ Example
 
 
 ### scales.barPointers.border.width<span class="type-signature type number">number</span>
+{:#scales-barpointers-border-width}
 {:#scales-barPointers-border-width}
 
 
@@ -1366,6 +1392,7 @@ Example
 
 
 ### scales.barPointers.distanceFromScale<span class="type-signature type number">number</span>
+{:#scales-barpointers-distancefromscale}
 {:#scales-barPointers-distanceFromScale}
 
 
@@ -1415,6 +1442,7 @@ Example
 
 
 ### scales.barPointers.gradients<span class="type-signature type object">object</span>
+{:#scales-barpointers-gradients}
 {:#scales-barPointers-gradients}
 
 
@@ -1464,6 +1492,7 @@ Example
 
 
 ### scales.barPointers.opacity<span class="type-signature type number">number</span>
+{:#scales-barpointers-opacity}
 {:#scales-barPointers-opacity}
 
 
@@ -1513,6 +1542,7 @@ Example
 
 
 ### scales.barPointers.value<span class="type-signature type number">number</span>
+{:#scales-barpointers-value}
 {:#scales-barPointers-value}
 
 
@@ -1562,6 +1592,7 @@ Example
 
 
 ### scales.barPointers.width<span class="type-signature type number">number</span>
+{:#scales-barpointers-width}
 {:#scales-barPointers-width}
 
 
@@ -1612,6 +1643,7 @@ Example
 
 ### scales.border<span class="type-signature type object">object</span>
 {:#scales-border}
+{:#scales-border}
 
 
 
@@ -1660,6 +1692,7 @@ Example
 
 
 ### scales.border.color<span class="type-signature type string">string</span>
+{:#scales-border-color}
 {:#scales-border-color}
 
 
@@ -1710,6 +1743,7 @@ Example
 
 ### scales.border.width<span class="type-signature type number">number</span>
 {:#scales-border-width}
+{:#scales-border-width}
 
 
 
@@ -1758,6 +1792,7 @@ Example
 
 
 ### scales.customLabels<span class="type-signature type array">Array</span>
+{:#scales-customlabels}
 {:#scales-customLabels}
 
 
@@ -1807,6 +1842,7 @@ Example
 
 
 ### scales.customLabels.color<span class="type-signature type number">number</span>
+{:#scales-customlabels-color}
 {:#scales-customLabels-color}
 
 
@@ -1856,6 +1892,7 @@ Example
 
 
 ### scales.customLabels.font<span class="type-signature type object">object</span>
+{:#scales-customlabels-font}
 {:#scales-customLabels-font}
 
 
@@ -1905,6 +1942,7 @@ Example
 
 
 ### scales.customLabels.font.fontFamily<span class="type-signature type string">string</span>
+{:#scales-customlabels-font-fontfamily}
 {:#scales-customLabels-font-fontFamily}
 
 
@@ -1954,6 +1992,7 @@ Example
 
 
 ### scales.customLabels.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#scales-customlabels-font-fontstyle}
 {:#scales-customLabels-font-fontStyle}
 
 
@@ -2003,6 +2042,7 @@ Example
 
 
 ### scales.customLabels.font.size<span class="type-signature type string">string</span>
+{:#scales-customlabels-font-size}
 {:#scales-customLabels-font-size}
 
 
@@ -2052,6 +2092,7 @@ Example
 
 
 ### scales.customLabels.opacity<span class="type-signature type string">string</span>
+{:#scales-customlabels-opacity}
 {:#scales-customLabels-opacity}
 
 
@@ -2101,6 +2142,7 @@ Example
 
 
 ### scales.customLabels.position<span class="type-signature type object">object</span>
+{:#scales-customlabels-position}
 {:#scales-customLabels-position}
 
 
@@ -2150,6 +2192,7 @@ Example
 
 
 ### scales.customLabels.position.x<span class="type-signature type number">number</span>
+{:#scales-customlabels-position-x}
 {:#scales-customLabels-position-x}
 
 
@@ -2199,6 +2242,7 @@ Example
 
 
 ### scales.customLabels.position.y<span class="type-signature type number">number</span>
+{:#scales-customlabels-position-y}
 {:#scales-customLabels-position-y}
 
 
@@ -2248,6 +2292,7 @@ Example
 
 
 ### scales.customLabels.positionType<span class="type-signature type object">object</span>
+{:#scales-customlabels-positiontype}
 {:#scales-customLabels-positionType}
 
 
@@ -2297,6 +2342,7 @@ Example
 
 
 ### scales.customLabels.textAngle<span class="type-signature type number">number</span>
+{:#scales-customlabels-textangle}
 {:#scales-customLabels-textAngle}
 
 
@@ -2346,6 +2392,7 @@ Example
 
 
 ### scales.customLabels.value<span class="type-signature type string">string</span>
+{:#scales-customlabels-value}
 {:#scales-customLabels-value}
 
 
@@ -2396,6 +2443,7 @@ Example
 
 ### scales.direction<span class="type-signature type enum">enum</span>
 {:#scales-direction}
+{:#scales-direction}
 
 
 
@@ -2444,6 +2492,7 @@ Example
 
 
 ### scales.indicators<span class="type-signature type array">Array</span>
+{:#scales-indicators}
 {:#scales-indicators}
 
 
@@ -2497,6 +2546,7 @@ Example
 
 
 ### scales.indicators.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-indicators-backgroundcolor}
 {:#scales-indicators-backgroundColor}
 
 
@@ -2552,6 +2602,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.indicators.border<span class="type-signature type number">number</span>
 {:#scales-indicators-border}
+{:#scales-indicators-border}
 
 
 
@@ -2605,6 +2656,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.border.color<span class="type-signature type string">string</span>
+{:#scales-indicators-border-color}
 {:#scales-indicators-border-color}
 
 
@@ -2660,6 +2712,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.indicators.border.width<span class="type-signature type number">number</span>
 {:#scales-indicators-border-width}
+{:#scales-indicators-border-width}
 
 
 
@@ -2714,6 +2767,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.indicators.font<span class="type-signature type object">object</span>
 {:#scales-indicators-font}
+{:#scales-indicators-font}
 
 
 
@@ -2766,6 +2820,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.font.fontFamily<span class="type-signature type string">string</span>
+{:#scales-indicators-font-fontfamily}
 {:#scales-indicators-font-fontFamily}
 
 
@@ -2819,6 +2874,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#scales-indicators-font-fontstyle}
 {:#scales-indicators-font-fontStyle}
 
 
@@ -2873,6 +2929,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.indicators.font.size<span class="type-signature type string">string</span>
 {:#scales-indicators-font-size}
+{:#scales-indicators-font-size}
 
 
 
@@ -2925,6 +2982,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.height<span class="type-signature type number">number</span>
+{:#scales-indicators-height}
 {:#scales-indicators-height}
 
 
@@ -2980,6 +3038,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.indicators.opacity<span class="type-signature type number">number</span>
 {:#scales-indicators-opacity}
+{:#scales-indicators-opacity}
 
 
 
@@ -3031,6 +3090,7 @@ value: 0, backgroundColor: "Red", border:{color: "Green"}, opacity:0.5}]}]});
 
 
 ### scales.indicators.position<span class="type-signature type object">object</span>
+{:#scales-indicators-position}
 {:#scales-indicators-position}
 
 
@@ -3086,6 +3146,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.indicators.position.x<span class="type-signature type number">number</span>
 {:#scales-indicators-position-x}
+{:#scales-indicators-position-x}
 
 
 
@@ -3140,6 +3201,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.indicators.position.y<span class="type-signature type number">number</span>
 {:#scales-indicators-position-y}
+{:#scales-indicators-position-y}
 
 
 
@@ -3193,6 +3255,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.stateRanges<span class="type-signature type array">Array</span>
+{:#scales-indicators-stateranges}
 {:#scales-indicators-stateRanges}
 
 
@@ -3246,6 +3309,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.stateRanges.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-indicators-stateranges-backgroundcolor}
 {:#scales-indicators-stateRanges-backgroundColor}
 
 
@@ -3300,6 +3364,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.stateRanges.borderColor<span class="type-signature type string">string</span>
+{:#scales-indicators-stateranges-bordercolor}
 {:#scales-indicators-stateRanges-borderColor}
 
 
@@ -3354,6 +3419,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.stateRanges.endValue<span class="type-signature type number">number</span>
+{:#scales-indicators-stateranges-endvalue}
 {:#scales-indicators-stateRanges-endValue}
 
 
@@ -3407,6 +3473,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.stateRanges.startValue<span class="type-signature type number">number</span>
+{:#scales-indicators-stateranges-startvalue}
 {:#scales-indicators-stateRanges-startValue}
 
 
@@ -3460,6 +3527,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.stateRanges.text<span class="type-signature type string">string</span>
+{:#scales-indicators-stateranges-text}
 {:#scales-indicators-stateRanges-text}
 
 
@@ -3513,6 +3581,7 @@ Example
 
 
 ### scales.indicators.stateRanges.textColor<span class="type-signature type string">string</span>
+{:#scales-indicators-stateranges-textcolor}
 {:#scales-indicators-stateRanges-textColor}
 
 
@@ -3566,6 +3635,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.textLocation<span class="type-signature type object">object</span>
+{:#scales-indicators-textlocation}
 {:#scales-indicators-textLocation}
 
 
@@ -3619,6 +3689,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.textLocation.x<span class="type-signature type number">number</span>
+{:#scales-indicators-textlocation-x}
 {:#scales-indicators-textLocation-x}
 
 
@@ -3672,6 +3743,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.textLocation.y<span class="type-signature type number">number</span>
+{:#scales-indicators-textlocation-y}
 {:#scales-indicators-textLocation-y}
 
 
@@ -3725,6 +3797,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### scales.indicators.type<span class="type-signature type enum">enum</span>
+{:#scales-indicators-type}
 {:#scales-indicators-type}
 
 
@@ -3780,6 +3853,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.indicators.width<span class="type-signature type number">number</span>
 {:#scales-indicators-width}
+{:#scales-indicators-width}
 
 
 
@@ -3834,6 +3908,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### scales.labels<span class="type-signature type array">Array</span>
 {:#scales-labels}
+{:#scales-labels}
 
 
 
@@ -3883,6 +3958,7 @@ Example
 
 ### scales.labels.angle<span class="type-signature type number">number</span>
 {:#scales-labels-angle}
+{:#scales-labels-angle}
 
 
 
@@ -3931,6 +4007,7 @@ Example
 
 
 ### scales.labels.distanceFromScale<span class="type-signature type object">object</span>
+{:#scales-labels-distancefromscale}
 {:#scales-labels-distanceFromScale}
 
 
@@ -3980,6 +4057,7 @@ Example
 
 
 ### scales.labels.distanceFromScale.x<span class="type-signature type number">number</span>
+{:#scales-labels-distancefromscale-x}
 {:#scales-labels-distanceFromScale-x}
 
 
@@ -4029,6 +4107,7 @@ Example
 
 
 ### scales.labels.distanceFromScale.y<span class="type-signature type number">number</span>
+{:#scales-labels-distancefromscale-y}
 {:#scales-labels-distanceFromScale-y}
 
 
@@ -4079,6 +4158,7 @@ Example
 
 ### scales.labels.font<span class="type-signature type object">object</span>
 {:#scales-labels-font}
+{:#scales-labels-font}
 
 
 
@@ -4127,6 +4207,7 @@ Example
 
 
 ### scales.labels.font.fontFamily<span class="type-signature type string">string</span>
+{:#scales-labels-font-fontfamily}
 {:#scales-labels-font-fontFamily}
 
 
@@ -4176,6 +4257,7 @@ Example
 
 
 ### scales.labels.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#scales-labels-font-fontstyle}
 {:#scales-labels-font-fontStyle}
 
 
@@ -4226,6 +4308,7 @@ Example
 
 ### scales.labels.font.size<span class="type-signature type string">string</span>
 {:#scales-labels-font-size}
+{:#scales-labels-font-size}
 
 
 
@@ -4274,6 +4357,7 @@ Example
 
 
 ### scales.labels.includeFirstValue<span class="type-signature type boolean">boolean</span>
+{:#scales-labels-includefirstvalue}
 {:#scales-labels-includeFirstValue}
 
 
@@ -4324,6 +4408,7 @@ Example
 
 ### scales.labels.opacity<span class="type-signature type number">number</span>
 {:#scales-labels-opacity}
+{:#scales-labels-opacity}
 
 
 
@@ -4373,6 +4458,7 @@ Example
 
 ### scales.labels.placement<span class="type-signature type enum">enum</span>
 {:#scales-labels-placement}
+{:#scales-labels-placement}
 
 
 
@@ -4421,6 +4507,7 @@ Example
 
 
 ### scales.labels.textColor<span class="type-signature type string">string</span>
+{:#scales-labels-textcolor}
 {:#scales-labels-textColor}
 
 
@@ -4471,6 +4558,7 @@ $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{textColor: "green"}]}]});
 
 ### scales.labels.type<span class="type-signature type enum">enum</span>
 {:#scales-labels-type}
+{:#scales-labels-type}
 
 
 
@@ -4519,6 +4607,7 @@ Example
 
 
 ### scales.labels.unitText<span class="type-signature type string">string</span>
+{:#scales-labels-unittext}
 {:#scales-labels-unitText}
 
 
@@ -4568,6 +4657,7 @@ Example
 
 
 ### scales.labels.unitTextPlacement<span class="type-signature type enum">enum</span>
+{:#scales-labels-unittextplacement}
 {:#scales-labels-unitTextPlacement}
 
 
@@ -4618,6 +4708,7 @@ Example
 
 ### scales.length<span class="type-signature type number">number</span>
 {:#scales-length}
+{:#scales-length}
 
 
 
@@ -4666,6 +4757,7 @@ Example
 
 
 ### scales.majorIntervalValue<span class="type-signature type number">number</span>
+{:#scales-majorintervalvalue}
 {:#scales-majorIntervalValue}
 
 
@@ -4715,6 +4807,7 @@ Example
 
 
 ### scales.markerPointers<span class="type-signature type array">Array</span>
+{:#scales-markerpointers}
 {:#scales-markerPointers}
 
 
@@ -4764,6 +4857,7 @@ Example
 
 
 ### scales.markerPointers.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-markerpointers-backgroundcolor}
 {:#scales-markerPointers-backgroundColor}
 
 
@@ -4813,6 +4907,7 @@ Example
 
 
 ### scales.markerPointers.border<span class="type-signature type object">object</span>
+{:#scales-markerpointers-border}
 {:#scales-markerPointers-border}
 
 
@@ -4862,6 +4957,7 @@ Example
 
 
 ### scales.markerPointers.border.color<span class="type-signature type string">string</span>
+{:#scales-markerpointers-border-color}
 {:#scales-markerPointers-border-color}
 
 
@@ -4911,6 +5007,7 @@ Example
 
 
 ### scales.markerPointers.border.width<span class="type-signature type number">number</span>
+{:#scales-markerpointers-border-width}
 {:#scales-markerPointers-border-width}
 
 
@@ -4960,6 +5057,7 @@ Example
 
 
 ### scales.markerPointers.distanceFromScale<span class="type-signature type number">number</span>
+{:#scales-markerpointers-distancefromscale}
 {:#scales-markerPointers-distanceFromScale}
 
 
@@ -5009,6 +5107,7 @@ Example
 
 
 ### scales.markerPointers.gradients<span class="type-signature type object">object</span>
+{:#scales-markerpointers-gradients}
 {:#scales-markerPointers-gradients}
 
 
@@ -5058,6 +5157,7 @@ Example
 
 
 ### scales.markerPointers.length<span class="type-signature type number">number</span>
+{:#scales-markerpointers-length}
 {:#scales-markerPointers-length}
 
 
@@ -5107,6 +5207,7 @@ Example
 
 
 ### scales.markerPointers.opacity<span class="type-signature type number">number</span>
+{:#scales-markerpointers-opacity}
 {:#scales-markerPointers-opacity}
 
 
@@ -5156,6 +5257,7 @@ Example
 
 
 ### scales.markerPointers.placement<span class="type-signature type enum">enum</span>
+{:#scales-markerpointers-placement}
 {:#scales-markerPointers-placement}
 
 
@@ -5205,6 +5307,7 @@ Example
 
 
 ### scales.markerPointers.type<span class="type-signature type enum">enum</span>
+{:#scales-markerpointers-type}
 {:#scales-markerPointers-type}
 
 
@@ -5254,6 +5357,7 @@ Example
 
 
 ### scales.markerPointers.value<span class="type-signature type number">number</span>
+{:#scales-markerpointers-value}
 {:#scales-markerPointers-value}
 
 
@@ -5303,6 +5407,7 @@ Example
 
 
 ### scales.markerPointers.width<span class="type-signature type number">number</span>
+{:#scales-markerpointers-width}
 {:#scales-markerPointers-width}
 
 
@@ -5353,6 +5458,7 @@ Example
 
 ### scales.maximum<span class="type-signature type number">number</span>
 {:#scales-maximum}
+{:#scales-maximum}
 
 
 
@@ -5402,6 +5508,7 @@ Example
 
 ### scales.minimum<span class="type-signature type number">number</span>
 {:#scales-minimum}
+{:#scales-minimum}
 
 
 
@@ -5450,6 +5557,7 @@ Example
 
 
 ### scales.minorIntervalValue<span class="type-signature type number">number</span>
+{:#scales-minorintervalvalue}
 {:#scales-minorIntervalValue}
 
 
@@ -5500,6 +5608,7 @@ Example
 
 ### scales.opacity<span class="type-signature type number">number</span>
 {:#scales-opacity}
+{:#scales-opacity}
 
 
 
@@ -5548,6 +5657,7 @@ Example
 
 
 ### scales.position<span class="type-signature type object">object</span>
+{:#scales-position}
 {:#scales-position}
 
 
@@ -5598,6 +5708,7 @@ Example
 
 ### scales.position.x<span class="type-signature type number">number</span>
 {:#scales-position-x}
+{:#scales-position-x}
 
 
 
@@ -5646,6 +5757,7 @@ Example
 
 
 ### scales.position.y<span class="type-signature type number">number</span>
+{:#scales-position-y}
 {:#scales-position-y}
 
 
@@ -5696,6 +5808,7 @@ Example
 
 ### scales.ranges<span class="type-signature type array">Array</span>
 {:#scales-ranges}
+{:#scales-ranges}
 
 
 
@@ -5744,6 +5857,7 @@ Example
 
 
 ### scales.ranges.backgroundColor<span class="type-signature type string">string</span>
+{:#scales-ranges-backgroundcolor}
 {:#scales-ranges-backgroundColor}
 
 
@@ -5794,6 +5908,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 ### scales.ranges.border<span class="type-signature type object">Object</span>
 {:#scales-ranges-border}
+{:#scales-ranges-border}
 
 
 
@@ -5842,6 +5957,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 ### scales.ranges.border.color<span class="type-signature type string">string</span>
+{:#scales-ranges-border-color}
 {:#scales-ranges-border-color}
 
 
@@ -5892,6 +6008,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 ### scales.ranges.border.width<span class="type-signature type number">number</span>
 {:#scales-ranges-border-width}
+{:#scales-ranges-border-width}
 
 
 
@@ -5940,6 +6057,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 ### scales.ranges.distanceFromScale<span class="type-signature type number">number</span>
+{:#scales-ranges-distancefromscale}
 {:#scales-ranges-distanceFromScale}
 
 
@@ -5989,6 +6107,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 ### scales.ranges.endValue<span class="type-signature type number">number</span>
+{:#scales-ranges-endvalue}
 {:#scales-ranges-endValue}
 
 
@@ -6038,6 +6157,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 ### scales.ranges.endWidth<span class="type-signature type number">number</span>
+{:#scales-ranges-endwidth}
 {:#scales-ranges-endWidth}
 
 
@@ -6088,6 +6208,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 ### scales.ranges.gradients<span class="type-signature type object">object</span>
 {:#scales-ranges-gradients}
+{:#scales-ranges-gradients}
 
 
 
@@ -6136,6 +6257,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 ### scales.ranges.opacity<span class="type-signature type number">number</span>
+{:#scales-ranges-opacity}
 {:#scales-ranges-opacity}
 
 
@@ -6186,6 +6308,7 @@ Example
 
 ### scales.ranges.placement<span class="type-signature type enum">enum</span>
 {:#scales-ranges-placement}
+{:#scales-ranges-placement}
 
 
 
@@ -6234,6 +6357,7 @@ Example
 
 
 ### scales.ranges.startValue<span class="type-signature type number">number</span>
+{:#scales-ranges-startvalue}
 {:#scales-ranges-startValue}
 
 
@@ -6283,6 +6407,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 ### scales.ranges.startWidth<span class="type-signature type number">number</span>
+{:#scales-ranges-startwidth}
 {:#scales-ranges-startWidth}
 
 
@@ -6332,6 +6457,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 ### scales.shadowOffset<span class="type-signature type number">number</span>
+{:#scales-shadowoffset}
 {:#scales-shadowOffset}
 
 
@@ -6381,6 +6507,7 @@ Example
 
 
 ### scales.showBarPointers<span class="type-signature type boolean">boolean</span>
+{:#scales-showbarpointers}
 {:#scales-showBarPointers}
 
 
@@ -6430,6 +6557,7 @@ Example
 
 
 ### scales.showCustomLabels<span class="type-signature type boolean">boolean</span>
+{:#scales-showcustomlabels}
 {:#scales-showCustomLabels}
 
 
@@ -6479,6 +6607,7 @@ Example
 
 
 ### scales.showIndicators<span class="type-signature type boolean">boolean</span>
+{:#scales-showindicators}
 {:#scales-showIndicators}
 
 
@@ -6528,6 +6657,7 @@ Example
 
 
 ### scales.showLabels<span class="type-signature type boolean">boolean</span>
+{:#scales-showlabels}
 {:#scales-showLabels}
 
 
@@ -6577,6 +6707,7 @@ Example
 
 
 ### scales.showMarkerPointers<span class="type-signature type boolean">boolean</span>
+{:#scales-showmarkerpointers}
 {:#scales-showMarkerPointers}
 
 
@@ -6626,6 +6757,7 @@ Example
 
 
 ### scales.showRanges<span class="type-signature type boolean">boolean</span>
+{:#scales-showranges}
 {:#scales-showRanges}
 
 
@@ -6675,6 +6807,7 @@ Example
 
 
 ### scales.showTicks<span class="type-signature type boolean">boolean</span>
+{:#scales-showticks}
 {:#scales-showTicks}
 
 
@@ -6725,6 +6858,7 @@ Example
 
 ### scales.ticks<span class="type-signature type array">Array</span>
 {:#scales-ticks}
+{:#scales-ticks}
 
 
 
@@ -6773,6 +6907,7 @@ Example
 
 
 ### scales.ticks.angle<span class="type-signature type number">number</span>
+{:#scales-ticks-angle}
 {:#scales-ticks-angle}
 
 
@@ -6823,6 +6958,7 @@ Example
 
 ### scales.ticks.color<span class="type-signature type string">string</span>
 {:#scales-ticks-color}
+{:#scales-ticks-color}
 
 
 
@@ -6871,6 +7007,7 @@ Example
 
 
 ### scales.ticks.distanceFromScale<span class="type-signature type object">object</span>
+{:#scales-ticks-distancefromscale}
 {:#scales-ticks-distanceFromScale}
 
 
@@ -6920,6 +7057,7 @@ Example
 
 
 ### scales.ticks.distanceFromScale.x<span class="type-signature type number">number</span>
+{:#scales-ticks-distancefromscale-x}
 {:#scales-ticks-distanceFromScale-x}
 
 
@@ -6969,6 +7107,7 @@ Example
 
 
 ### scales.ticks.distanceFromScale.y<span class="type-signature type number">number</span>
+{:#scales-ticks-distancefromscale-y}
 {:#scales-ticks-distanceFromScale-y}
 
 
@@ -7019,6 +7158,7 @@ Example
 
 ### scales.ticks.height<span class="type-signature type number">number</span>
 {:#scales-ticks-height}
+{:#scales-ticks-height}
 
 
 
@@ -7067,6 +7207,7 @@ Example
 
 
 ### scales.ticks.opacity<span class="type-signature type number">number</span>
+{:#scales-ticks-opacity}
 {:#scales-ticks-opacity}
 
 
@@ -7117,6 +7258,7 @@ Example
 
 ### scales.ticks.placement<span class="type-signature type enum">enum</span>
 {:#scales-ticks-placement}
+{:#scales-ticks-placement}
 
 
 
@@ -7165,6 +7307,7 @@ Example
 
 
 ### scales.ticks.type<span class="type-signature type enum">enum</span>
+{:#scales-ticks-type}
 {:#scales-ticks-type}
 
 
@@ -7215,6 +7358,7 @@ Example
 
 ### scales.ticks.width<span class="type-signature type number">number</span>
 {:#scales-ticks-width}
+{:#scales-ticks-width}
 
 
 
@@ -7263,6 +7407,7 @@ Example
 
 
 ### scales.type<span class="type-signature type enum">enum</span>
+{:#scales-type}
 {:#scales-type}
 
 
@@ -7313,6 +7458,7 @@ Example
 
 ### scales.width<span class="type-signature type number">number</span>
 {:#scales-width}
+{:#scales-width}
 
 
 
@@ -7362,6 +7508,7 @@ Example
 
 ### theme<span class="type-signature type enum">enum</span>
 {:#theme}
+{:#theme}
 
 
 
@@ -7410,6 +7557,7 @@ Example
 
 
 ### tickColor<span class="type-signature type string">string</span>
+{:#tickcolor}
 {:#tickColor}
 
 
@@ -7460,6 +7608,7 @@ Example
 
 ### tooltip<span class="type-signature type object">object</span>
 {:#tooltip}
+{:#tooltip}
 
 
 
@@ -7509,6 +7658,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true,showCusto
 
 
 ### tooltip.showCustomLabelTooltip<span class="type-signature type boolean">boolean</span>
+{:#tooltip-showcustomlabeltooltip}
 {:#tooltip-showCustomLabelTooltip}
 
 
@@ -7559,6 +7709,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showCustomLabelTooltip: true} })
 
 
 ### tooltip.showLabelTooltip<span class="type-signature type boolean">boolean</span>
+{:#tooltip-showlabeltooltip}
 {:#tooltip-showLabelTooltip}
 
 
@@ -7609,6 +7760,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true} });
 
 
 ### tooltip.templateID<span class="type-signature type string">string</span>
+{:#tooltip-templateid}
 {:#tooltip-templateID}
 
 
@@ -7660,6 +7812,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true, template
 
 ### value<span class="type-signature type number">number</span>
 {:#value}
+{:#value}
 
 
 
@@ -7708,6 +7861,7 @@ $("#LinearGauge1").ejLinearGauge({  size: 5.5});
 
 
 ### width<span class="type-signature type number">number</span>
+{:#width}
 {:#width}
 
 
@@ -7765,6 +7919,7 @@ Example
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
+{:#destroy}
 
 
 
@@ -7799,6 +7954,7 @@ linearGaugeobj.destroy();
 
 
 ### exportImage<span class="signature">()</span>
+{:#exportimage}
 {:#exportImage}
 
 
@@ -7855,6 +8011,7 @@ LinearGaugeObj.exportImage("myImage","jpeg");
 
 
 ### getBarDistanceFromScale<span class="signature">()</span>
+{:#getbardistancefromscale}
 {:#getBarDistanceFromScale}
 
 
@@ -7911,6 +8068,7 @@ LinearGaugeObj.getBarDistanceFromScale(0,0);
 
 
 ### getBarPointerValue<span class="signature">()</span>
+{:#getbarpointervalue}
 {:#getBarPointerValue}
 
 
@@ -7967,6 +8125,7 @@ LinearGaugeObj.getBarPointerValue(0,0);
 
 
 ### getBarWidth<span class="signature">()</span>
+{:#getbarwidth}
 {:#getBarWidth}
 
 
@@ -8024,6 +8183,7 @@ LinearGaugeObj.getBarWidth(0,0);
 
 
 ### getCustomLabelAngle<span class="signature">()</span>
+{:#getcustomlabelangle}
 {:#getCustomLabelAngle}
 
 
@@ -8080,6 +8240,7 @@ LinearGaugeObj.getCustomLabelAngle(0,0);
 
 
 ### getCustomLabelValue<span class="signature">()</span>
+{:#getcustomlabelvalue}
 {:#getCustomLabelValue}
 
 
@@ -8136,6 +8297,7 @@ LinearGaugeObj.getCustomLabelValue(0,0);
 
 
 ### getLabelAngle<span class="signature">()</span>
+{:#getlabelangle}
 {:#getLabelAngle}
 
 
@@ -8192,6 +8354,7 @@ LinearGaugeObj.getLabelAngle(0,0);
 
 
 ### getLabelPlacement<span class="signature">()</span>
+{:#getlabelplacement}
 {:#getLabelPlacement}
 
 
@@ -8248,6 +8411,7 @@ LinearGaugeObj.getLabelPlacement(0,0);
 
 
 ### getLabelStyle<span class="signature">()</span>
+{:#getlabelstyle}
 {:#getLabelStyle}
 
 
@@ -8304,6 +8468,7 @@ LinearGaugeObj.getLabelStyle(0,0);
 
 
 ### getLabelXDistanceFromScale<span class="signature">()</span>
+{:#getlabelxdistancefromscale}
 {:#getLabelXDistanceFromScale}
 
 
@@ -8360,6 +8525,7 @@ LinearGaugeObj.getLabelXDistanceFromScale(0,0);
 
 
 ### getLabelYDistanceFromScale<span class="signature">()</span>
+{:#getlabelydistancefromscale}
 {:#getLabelYDistanceFromScale}
 
 
@@ -8416,6 +8582,7 @@ LinearGaugeObj.getLabelYDistanceFromScale(0,0);
 
 
 ### getMajorIntervalValue<span class="signature">()</span>
+{:#getmajorintervalvalue}
 {:#getMajorIntervalValue}
 
 
@@ -8467,6 +8634,7 @@ LinearGaugeObj.getMajorIntervalValue(0);
 
 
 ### getMarkerStyle<span class="signature">()</span>
+{:#getmarkerstyle}
 {:#getMarkerStyle}
 
 
@@ -8523,6 +8691,7 @@ LinearGaugeObj.getMarkerStyle(0,0);
 
 
 ### getMaximumValue<span class="signature">()</span>
+{:#getmaximumvalue}
 {:#getMaximumValue}
 
 
@@ -8574,6 +8743,7 @@ LinearGaugeObj.getMaximumValue(0);
 
 
 ### getMinimumValue<span class="signature">()</span>
+{:#getminimumvalue}
 {:#getMinimumValue}
 
 
@@ -8630,6 +8800,7 @@ LinearGaugeObj.getMinimumValue(0,0);
 
 
 ### getMinorIntervalValue<span class="signature">()</span>
+{:#getminorintervalvalue}
 {:#getMinorIntervalValue}
 
 
@@ -8681,6 +8852,7 @@ LinearGaugeObj.getMinorIntervalValue(0);
 
 
 ### getPointerDistanceFromScale<span class="signature">()</span>
+{:#getpointerdistancefromscale}
 {:#getPointerDistanceFromScale}
 
 
@@ -8737,6 +8909,7 @@ LinearGaugeObj.getPointerDistanceFromScale(0,0);
 
 
 ### getPointerHeight<span class="signature">()</span>
+{:#getpointerheight}
 {:#getPointerHeight}
 
 
@@ -8793,6 +8966,7 @@ LinearGaugeObj.getPointerHeight(0,0);
 
 
 ### getPointerPlacement<span class="signature">()</span>
+{:#getpointerplacement}
 {:#getPointerPlacement}
 
 
@@ -8849,6 +9023,7 @@ LinearGaugeObj.getPointerPlacement(0,0);
 
 
 ### getPointerValue<span class="signature">()</span>
+{:#getpointervalue}
 {:#getPointerValue}
 
 
@@ -8905,6 +9080,7 @@ LinearGaugeObj.getPointerValue(0,0);
 
 
 ### getPointerWidth<span class="signature">()</span>
+{:#getpointerwidth}
 {:#getPointerWidth}
 
 
@@ -8961,6 +9137,7 @@ LinearGaugeObj.getPointerWidth(0,0);
 
 
 ### getRangeBorderWidth<span class="signature">()</span>
+{:#getrangeborderwidth}
 {:#getRangeBorderWidth}
 
 
@@ -9017,6 +9194,7 @@ LinearGaugeObj.getRangeBorderWidth(0,0);
 
 
 ### getRangeDistanceFromScale<span class="signature">()</span>
+{:#getrangedistancefromscale}
 {:#getRangeDistanceFromScale}
 
 
@@ -9073,6 +9251,7 @@ LinearGaugeObj.getRangeDistanceFromScale(0,0);
 
 
 ### getRangeEndValue<span class="signature">()</span>
+{:#getrangeendvalue}
 {:#getRangeEndValue}
 
 
@@ -9129,6 +9308,7 @@ LinearGaugeObj.getRangeEndValue(0,0);
 
 
 ### getRangeEndWidth<span class="signature">()</span>
+{:#getrangeendwidth}
 {:#getRangeEndWidth}
 
 
@@ -9185,6 +9365,7 @@ LinearGaugeObj.getRangeEndWidth(0,0);
 
 
 ### getRangePosition<span class="signature">()</span>
+{:#getrangeposition}
 {:#getRangePosition}
 
 
@@ -9241,6 +9422,7 @@ LinearGaugeObj.getRangePosition(0,0);
 
 
 ### getRangeStartValue<span class="signature">()</span>
+{:#getrangestartvalue}
 {:#getRangeStartValue}
 
 
@@ -9297,6 +9479,7 @@ LinearGaugeObj.getRangeStartValue(0,0);
 
 
 ### getRangeStartWidth<span class="signature">()</span>
+{:#getrangestartwidth}
 {:#getRangeStartWidth}
 
 
@@ -9353,6 +9536,7 @@ LinearGaugeObj.getRangeStartWidth(0,0);
 
 
 ### getScaleBarLength<span class="signature">()</span>
+{:#getscalebarlength}
 {:#getScaleBarLength}
 
 
@@ -9404,6 +9588,7 @@ LinearGaugeObj.getScaleBarLength(0);
 
 
 ### getScaleBarSize<span class="signature">()</span>
+{:#getscalebarsize}
 {:#getScaleBarSize}
 
 
@@ -9460,6 +9645,7 @@ LinearGaugeObj.getScaleBarSize(0,0);
 
 
 ### getScaleBorderWidth<span class="signature">()</span>
+{:#getscaleborderwidth}
 {:#getScaleBorderWidth}
 
 
@@ -9511,6 +9697,7 @@ LinearGaugeObj.getScaleBorderWidth(0);
 
 
 ### getScaleDirection<span class="signature">()</span>
+{:#getscaledirection}
 {:#getScaleDirection}
 
 
@@ -9562,6 +9749,7 @@ LinearGaugeObj.getScaleDirection(0,0);
 
 
 ### getScaleLocation<span class="signature">()</span>
+{:#getscalelocation}
 {:#getScaleLocation}
 
 
@@ -9613,6 +9801,7 @@ LinearGaugeObj.getScaleLocation(0);
 
 
 ### getScaleStyle<span class="signature">()</span>
+{:#getscalestyle}
 {:#getScaleStyle}
 
 
@@ -9664,6 +9853,7 @@ LinearGaugeObj.getScaleStyle(0);
 
 
 ### getTickAngle<span class="signature">()</span>
+{:#gettickangle}
 {:#getTickAngle}
 
 
@@ -9720,6 +9910,7 @@ LinearGaugeObj.getTickAngle(0,0);
 
 
 ### getTickHeight<span class="signature">()</span>
+{:#gettickheight}
 {:#getTickHeight}
 
 
@@ -9776,6 +9967,7 @@ LinearGaugeObj.getTickHeight(0,0);
 
 
 ### getTickPlacement<span class="signature">()</span>
+{:#gettickplacement}
 {:#getTickPlacement}
 
 
@@ -9832,6 +10024,7 @@ LinearGaugeObj.getTickPlacement(0,0);
 
 
 ### getTickStyle<span class="signature">()</span>
+{:#gettickstyle}
 {:#getTickStyle}
 
 
@@ -9888,6 +10081,7 @@ LinearGaugeObj.getTickStyle(0,0);
 
 
 ### getTickWidth<span class="signature">()</span>
+{:#gettickwidth}
 {:#getTickWidth}
 
 
@@ -9944,6 +10138,7 @@ LinearGaugeObj.getTickWidth(0,0);
 
 
 ### getTickXDistanceFromScale<span class="signature">()</span>
+{:#gettickxdistancefromscale}
 {:#getTickXDistanceFromScale}
 
 
@@ -10000,6 +10195,7 @@ LinearGaugeObj.getTickXDistanceFromScale(0,0);
 
 
 ### getTickYDistanceFromScale<span class="signature">()</span>
+{:#gettickydistancefromscale}
 {:#getTickYDistanceFromScale}
 
 
@@ -10057,6 +10253,7 @@ LinearGaugeObj.getTickYDistanceFromScale(0,0);
 
 ### scales<span class="signature">()</span>
 {:#scales}
+{:#scales}
 
 
 
@@ -10105,6 +10302,7 @@ Example
 
 
 ### setBarDistanceFromScale<span class="signature">()</span>
+{:#setbardistancefromscale}
 {:#setBarDistanceFromScale}
 
 
@@ -10166,6 +10364,7 @@ LinearGaugeObj.setBarDistanceFromScale(0,0,30);
 
 
 ### setBarPointerValue<span class="signature">()</span>
+{:#setbarpointervalue}
 {:#setBarPointerValue}
 
 
@@ -10227,6 +10426,7 @@ LinearGaugeObj.setBarPointerValue(0,0,30);
 
 
 ### setBarWidth<span class="signature">()</span>
+{:#setbarwidth}
 {:#setBarWidth}
 
 
@@ -10288,6 +10488,7 @@ LinearGaugeObj.setBarWidth(0,0,30);
 
 
 ### setCustomLabelAngle<span class="signature">()</span>
+{:#setcustomlabelangle}
 {:#setCustomLabelAngle}
 
 
@@ -10349,6 +10550,7 @@ LinearGaugeObj.setCustomLabelAngle(0,0,30);
 
 
 ### setCustomLabelValue<span class="signature">()</span>
+{:#setcustomlabelvalue}
 {:#setCustomLabelValue}
 
 
@@ -10410,6 +10612,7 @@ LinearGaugeObj.setCustomLabelValue(0,0,"text");
 
 
 ### setLabelAngle<span class="signature">()</span>
+{:#setlabelangle}
 {:#setLabelAngle}
 
 
@@ -10471,6 +10674,7 @@ LinearGaugeObj.setLabelAngle(0,0,20);
 
 
 ### setLabelPlacement<span class="signature">()</span>
+{:#setlabelplacement}
 {:#setLabelPlacement}
 
 
@@ -10532,6 +10736,7 @@ LinearGaugeObj.setLabelPlacement(0,0,"far");
 
 
 ### setLabelStyle<span class="signature">()</span>
+{:#setlabelstyle}
 {:#setLabelStyle}
 
 
@@ -10593,6 +10798,7 @@ LinearGaugeObj.setLabelStyle(0,0,"major");
 
 
 ### setLabelXDistanceFromScale<span class="signature">()</span>
+{:#setlabelxdistancefromscale}
 {:#setLabelXDistanceFromScale}
 
 
@@ -10654,6 +10860,7 @@ LinearGaugeObj.setLabelXDistanceFromScale(0,0,20);
 
 
 ### setLabelYDistanceFromScale<span class="signature">()</span>
+{:#setlabelydistancefromscale}
 {:#setLabelYDistanceFromScale}
 
 
@@ -10715,6 +10922,7 @@ LinearGaugeObj.setLabelYDistanceFromScale(0,0,20);
 
 
 ### setMajorIntervalValue<span class="signature">()</span>
+{:#setmajorintervalvalue}
 {:#setMajorIntervalValue}
 
 
@@ -10771,6 +10979,7 @@ LinearGaugeObj.setMajorIntervalValue(0,5);
 
 
 ### setMarkerStyle<span class="signature">()</span>
+{:#setmarkerstyle}
 {:#setMarkerStyle}
 
 
@@ -10832,6 +11041,7 @@ LinearGaugeObj.setMarkerStyle(0,0,"triangle");
 
 
 ### setMaximumValue<span class="signature">()</span>
+{:#setmaximumvalue}
 {:#setMaximumValue}
 
 
@@ -10888,6 +11098,7 @@ LinearGaugeObj.setMaximumValue(0,20);
 
 
 ### setMinimumValue<span class="signature">()</span>
+{:#setminimumvalue}
 {:#setMinimumValue}
 
 
@@ -10944,6 +11155,7 @@ LinearGaugeObj.setMinimumValue(0,20);
 
 
 ### setMinorIntervalValue<span class="signature">()</span>
+{:#setminorintervalvalue}
 {:#setMinorIntervalValue}
 
 
@@ -11000,6 +11212,7 @@ LinearGaugeObj.setMinorIntervalValue(0,2);
 
 
 ### setPointerDistanceFromScale<span class="signature">()</span>
+{:#setpointerdistancefromscale}
 {:#setPointerDistanceFromScale}
 
 
@@ -11061,6 +11274,7 @@ LinearGaugeObj.setPointerDistanceFromScale(0,0,30);
 
 
 ### setPointerHeight<span class="signature">()</span>
+{:#setpointerheight}
 {:#setPointerHeight}
 
 
@@ -11122,6 +11336,7 @@ LinearGaugeObj.setPointerHeight(0,0,30);
 
 
 ### setPointerPlacement<span class="signature">()</span>
+{:#setpointerplacement}
 {:#setPointerPlacement}
 
 
@@ -11183,6 +11398,7 @@ LinearGaugeObj.setPointerPlacement(0,0,"far");
 
 
 ### setPointerValue<span class="signature">()</span>
+{:#setpointervalue}
 {:#setPointerValue}
 
 
@@ -11244,6 +11460,7 @@ LinearGaugeObj.setPointerValue(0,0,30);
 
 
 ### setPointerWidth<span class="signature">()</span>
+{:#setpointerwidth}
 {:#setPointerWidth}
 
 
@@ -11305,6 +11522,7 @@ LinearGaugeObj.setPointerWidth(0,0,30);
 
 
 ### setRangeBorderWidth<span class="signature">()</span>
+{:#setrangeborderwidth}
 {:#setRangeBorderWidth}
 
 
@@ -11366,6 +11584,7 @@ LinearGaugeObj.setRangeBorderWidth(0,0,2);
 
 
 ### setRangeDistanceFromScale<span class="signature">()</span>
+{:#setrangedistancefromscale}
 {:#setRangeDistanceFromScale}
 
 
@@ -11427,6 +11646,7 @@ LinearGaugeObj.setRangeDistanceFromScale(0,0,20);
 
 
 ### setRangeEndValue<span class="signature">()</span>
+{:#setrangeendvalue}
 {:#setRangeEndValue}
 
 
@@ -11488,6 +11708,7 @@ LinearGaugeObj.setRangeEndValue(0,0,20);
 
 
 ### setRangeEndWidth<span class="signature">()</span>
+{:#setrangeendwidth}
 {:#setRangeEndWidth}
 
 
@@ -11549,6 +11770,7 @@ LinearGaugeObj.setRangeEndWidth(0,0,20);
 
 
 ### setRangePosition<span class="signature">()</span>
+{:#setrangeposition}
 {:#setRangePosition}
 
 
@@ -11610,6 +11832,7 @@ LinearGaugeObj.setRangePosition(0,0,20);
 
 
 ### setRangeStartValue<span class="signature">()</span>
+{:#setrangestartvalue}
 {:#setRangeStartValue}
 
 
@@ -11671,6 +11894,7 @@ LinearGaugeObj.setRangeStartValue(0,0,20);
 
 
 ### setRangeStartWidth<span class="signature">()</span>
+{:#setrangestartwidth}
 {:#setRangeStartWidth}
 
 
@@ -11732,6 +11956,7 @@ LinearGaugeObj.setRangeStartWidth(0,0,20);
 
 
 ### setScaleBarLength<span class="signature">()</span>
+{:#setscalebarlength}
 {:#setScaleBarLength}
 
 
@@ -11788,6 +12013,7 @@ LinearGaugeObj.setScaleBarLength(0,150);
 
 
 ### setScaleBarSize<span class="signature">()</span>
+{:#setscalebarsize}
 {:#setScaleBarSize}
 
 
@@ -11844,6 +12070,7 @@ LinearGaugeObj.setScaleBarSize(0,20);
 
 
 ### setScaleBorderWidth<span class="signature">()</span>
+{:#setscaleborderwidth}
 {:#setScaleBorderWidth}
 
 
@@ -11900,6 +12127,7 @@ LinearGaugeObj.setScaleBorderWidth(0,10);
 
 
 ### setScaleDirection<span class="signature">()</span>
+{:#setscaledirection}
 {:#setScaleDirection}
 
 
@@ -11956,6 +12184,7 @@ LinearGaugeObj.setScaleDirection(0,"counterclockwise");
 
 
 ### setScaleLocation<span class="signature">()</span>
+{:#setscalelocation}
 {:#setScaleLocation}
 
 
@@ -12012,6 +12241,7 @@ LinearGaugeObj.setScaleLocation(0,{x:20,y:20});
 
 
 ### setScaleStyle<span class="signature">()</span>
+{:#setscalestyle}
 {:#setScaleStyle}
 
 
@@ -12068,6 +12298,7 @@ LinearGaugeObj.setScaleStyle(0,"thermometer");
 
 
 ### setTickAngle<span class="signature">()</span>
+{:#settickangle}
 {:#setTickAngle}
 
 
@@ -12129,6 +12360,7 @@ LinearGaugeObj.setTickAngle(0,0,20);
 
 
 ### setTickHeight<span class="signature">()</span>
+{:#settickheight}
 {:#setTickHeight}
 
 
@@ -12190,6 +12422,7 @@ LinearGaugeObj.setTickHeight(0,0,10);
 
 
 ### setTickPlacement<span class="signature">()</span>
+{:#settickplacement}
 {:#setTickPlacement}
 
 
@@ -12251,6 +12484,7 @@ LinearGaugeObj.setTickPlacement(0,0,"far");
 
 
 ### setTickStyle<span class="signature">()</span>
+{:#settickstyle}
 {:#setTickStyle}
 
 
@@ -12312,6 +12546,7 @@ LinearGaugeObj.setTickStyle(0,0,"major");
 
 
 ### setTickWidth<span class="signature">()</span>
+{:#settickwidth}
 {:#setTickWidth}
 
 
@@ -12373,6 +12608,7 @@ LinearGaugeObj.setTickWidth(0,0,5);
 
 
 ### setTickXDistanceFromScale<span class="signature">()</span>
+{:#settickxdistancefromscale}
 {:#setTickXDistanceFromScale}
 
 
@@ -12434,6 +12670,7 @@ LinearGaugeObj.setTickXDistanceFromScale(0,0,20);
 
 
 ### setTickYDistanceFromScale<span class="signature">()</span>
+{:#settickydistancefromscale}
 {:#setTickYDistanceFromScale}
 
 
@@ -12502,6 +12739,7 @@ LinearGaugeObj.setTickYDistanceFromScale(0,0,20);
 
 
 ### drawBarPointers
+{:#drawbarpointers}
 {:#drawBarPointers}
 
 
@@ -12608,6 +12846,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### drawCustomLabel
+{:#drawcustomlabel}
 {:#drawCustomLabel}
 
 
@@ -12709,6 +12948,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### drawIndicators
+{:#drawindicators}
 {:#drawIndicators}
 
 
@@ -12810,6 +13050,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### drawLabels
+{:#drawlabels}
 {:#drawLabels}
 
 
@@ -12938,6 +13179,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### drawMarkerPointers
+{:#drawmarkerpointers}
 {:#drawMarkerPointers}
 
 
@@ -13049,6 +13291,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### drawRange
+{:#drawrange}
 {:#drawRange}
 
 
@@ -13150,6 +13393,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### drawTicks
+{:#drawticks}
 {:#drawTicks}
 
 
@@ -13279,6 +13523,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### init
 {:#init}
+{:#init}
 
 
 
@@ -13355,6 +13600,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### load
 {:#load}
+{:#load}
 
 
 
@@ -13430,6 +13676,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### mouseClick
+{:#mouseclick}
 {:#mouseClick}
 
 
@@ -13537,6 +13784,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### mouseClickMove
+{:#mouseclickmove}
 {:#mouseClickMove}
 
 
@@ -13661,6 +13909,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### mouseClickUp
+{:#mouseclickup}
 {:#mouseClickUp}
 
 
@@ -13768,6 +14017,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 ### renderComplete
+{:#rendercomplete}
 {:#renderComplete}
 
 

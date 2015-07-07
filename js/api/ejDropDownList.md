@@ -90,6 +90,7 @@ Requires
 
 
 ### allowGrouping<span class="type-signature type boolean">boolean</span>
+{:#allowgrouping}
 {:#allowGrouping}
 
 
@@ -124,6 +125,7 @@ $("#drpdwn").ejDropDownList({ dataSource: window.countriesField, fields: { text:
 
 
 ### allowMultiSelection<span class="type-signature type boolean">boolean</span>
+{:#allowmultiselection}
 {:#allowMultiSelection}
 
 
@@ -167,6 +169,7 @@ $("#drpdwn").ejDropDownList({targetID: "carsList",showCheckbox: true,allowMultiS
 
 
 ### cascadeTo<span class="type-signature type string">string</span>
+{:#cascadeto}
 {:#cascadeTo}
 
 
@@ -239,6 +242,7 @@ Example
 
 
 ### caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
+{:#casesensitivesearch}
 {:#caseSensitiveSearch}
 
 
@@ -283,6 +287,7 @@ $("#drpdwn").ejDropDownList({ targetID: "carsList",caseSensitiveSearch: true });
 
 
 ### checkAll<span class="type-signature type boolean">boolean</span>
+{:#checkall}
 {:#checkAll}
 
 
@@ -327,6 +332,7 @@ $("#drpdwn").ejDropDownList({ targetID: "carsList",showCheckbox: true, checkAll:
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssclass}
 {:#cssClass}
 
 
@@ -370,6 +376,7 @@ Example
 
 
 ### dataSource<span class="type-signature type data">data</span>
+{:#datasource}
 {:#dataSource}
 
 
@@ -404,6 +411,7 @@ Example
 
 
 ### delimiterChar<span class="type-signature type string">string</span>
+{:#delimiterchar}
 {:#delimiterChar}
 
 
@@ -438,6 +446,7 @@ Example
 
 
 ### disableItemsByIndex<span class="type-signature type string">string</span>
+{:#disableitemsbyindex}
 {:#disableItemsByIndex}
 
 
@@ -482,6 +491,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
+{:#enableanimation}
 {:#enableAnimation}
 
 
@@ -526,6 +536,7 @@ $("#drpdwn").ejDropDownList({targetID: "carsList", enableAnimation: true });
 
 ### enabled<span class="type-signature type boolean">boolean</span>
 {:#enabled}
+{:#enabled}
 
 
 
@@ -569,6 +580,7 @@ $("#drpdwn").ejDropDownList({ targetID: "carsList",enabled : false });
 
 
 ### enableIncrementalSearch<span class="type-signature type boolean">boolean</span>
+{:#enableincrementalsearch}
 {:#enableIncrementalSearch}
 
 
@@ -613,6 +625,7 @@ $("#drpdwn").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true 
 
 
 ### enableItemsByIndex<span class="type-signature type string">string</span>
+{:#enableitemsbyindex}
 {:#enableItemsByIndex}
 
 
@@ -657,6 +670,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
+{:#enablepersistence}
 {:#enablePersistence}
 
 
@@ -701,6 +715,7 @@ $("#drpdwn").ejDropDownList({ targetID: "carsList",enablePersistence : false });
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#enablertl}
 {:#enableRTL}
 
 
@@ -746,6 +761,7 @@ $("#drpdwn").ejDropDownList({ targetID: "carsList",enableRTL : true });
 
 ### fields<span class="type-signature type object">object</span>
 {:#fields}
+{:#fields}
 
 
 
@@ -780,6 +796,7 @@ Example
 
 ### fields.category<span class="type-signature type string">String</span>
 {:#fields-category}
+{:#fields-category}
 
 
 
@@ -792,6 +809,7 @@ Used to categorize the items. It is used when the grouping is enabled.
 
 
 ### fields.htmlAttributes<span class="type-signature type object">Object</span>
+{:#fields-htmlattributes}
 {:#fields-htmlAttributes}
 
 
@@ -806,6 +824,7 @@ Defines the html attributes such as id, class, styles for the item.
 
 ### fields.id<span class="type-signature type string">String</span>
 {:#fields-id}
+{:#fields-id}
 
 
 
@@ -818,6 +837,7 @@ Defines id for the tag.
 
 
 ### fields.imageAttributes<span class="type-signature type string">String</span>
+{:#fields-imageattributes}
 {:#fields-imageAttributes}
 
 
@@ -831,6 +851,7 @@ Defines the image attributes such as height, width, styles and so on.
 
 
 ### fields.imageUrl<span class="type-signature type string">String</span>
+{:#fields-imageurl}
 {:#fields-imageUrl}
 
 
@@ -845,6 +866,7 @@ Defines the imageURL for the image location.
 
 ### fields.selected<span class="type-signature type boolean">Boolean</span>
 {:#fields-selected}
+{:#fields-selected}
 
 
 
@@ -857,6 +879,7 @@ Defines the tag value to be selected initially
 
 
 ### fields.spriteCssClass<span class="type-signature type string">String</span>
+{:#fields-spritecssclass}
 {:#fields-spriteCssClass}
 
 
@@ -870,6 +893,7 @@ Defines the sprite css for the image tag.
 
 
 ### fields.tableName<span class="type-signature type string">String</span>
+{:#fields-tablename}
 {:#fields-tableName}
 
 
@@ -884,6 +908,7 @@ Defines the table name for tag value or display text while render with remote da
 
 ### fields.text<span class="type-signature type string">String</span>
 {:#fields-text}
+{:#fields-text}
 
 
 
@@ -897,6 +922,7 @@ Defines the text content for the tag.
 
 ### fields.value<span class="type-signature type string">String</span>
 {:#fields-value}
+{:#fields-value}
 
 
 
@@ -909,6 +935,7 @@ Defines the tag value or display text..
 
 
 ### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#height}
 {:#height}
 
 
@@ -953,6 +980,7 @@ Example
 
 
 ### itemsCount<span class="type-signature type number">number</span>
+{:#itemscount}
 {:#itemsCount}
 
 
@@ -997,6 +1025,7 @@ Example
 
 
 ### popupHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#popupheight}
 {:#popupHeight}
 
 
@@ -1041,6 +1070,7 @@ Example
 
 
 ### popupWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#popupwidth}
 {:#popupWidth}
 
 
@@ -1086,6 +1116,7 @@ Example
 
 ### query<span class="type-signature type object">object</span>
 {:#query}
+{:#query}
 
 
 
@@ -1121,6 +1152,7 @@ var queryString = ej.Query().from("Suppliers").select("ContactName");
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
+{:#readonly}
 {:#readOnly}
 
 
@@ -1165,6 +1197,7 @@ $("#drpdwn").ejDropDownList({targetID: "carsList",readOnly: true });
 
 
 ### selectedItemIndex<span class="type-signature type number">number</span>
+{:#selecteditemindex}
 {:#selectedItemIndex}
 
 
@@ -1209,6 +1242,7 @@ Example
 
 
 ### selectedItems<span class="type-signature type integerarray">integerarray</span>
+{:#selecteditems}
 {:#selectedItems}
 
 
@@ -1253,6 +1287,7 @@ Example
 
 
 ### showCheckbox<span class="type-signature type boolean">boolean</span>
+{:#showcheckbox}
 {:#showCheckbox}
 
 
@@ -1297,6 +1332,7 @@ $("#drpdwn").ejDropDownList({ targetID: "carsList",showCheckbox: true });
 
 
 ### showPopupOnLoad<span class="type-signature type boolean">boolean</span>
+{:#showpopuponload}
 {:#showPopupOnLoad}
 
 
@@ -1339,6 +1375,7 @@ $("#drpdwn").ejDropDownList({targetID: "carsList",showPopupOnLoad: true });
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+{:#showroundedcorner}
 {:#showRoundedCorner}
 
 
@@ -1383,6 +1420,7 @@ $("#drpdwn").ejDropDownList({targetID: "carsList",showRoundedCorner: true });
 
 
 ### targetID<span class="type-signature type string">string</span>
+{:#targetid}
 {:#targetID}
 
 
@@ -1428,6 +1466,7 @@ Example
 
 ### template<span class="type-signature type string">string</span>
 {:#template}
+{:#template}
 
 
 
@@ -1463,6 +1502,7 @@ $("#drpdwn").ejDropDownList({ dataSource: window.drpdwnempList, template: '&lt;i
 
 
 ### text<span class="type-signature type string">string</span>
+{:#text}
 {:#text}
 
 
@@ -1507,6 +1547,7 @@ Example
 
 
 ### uncheckAll<span class="type-signature type boolean">boolean</span>
+{:#uncheckall}
 {:#uncheckAll}
 
 
@@ -1551,6 +1592,7 @@ $("#drpdwn").ejDropDownList({ targetID: "carsList",showCheckbox: true, uncheckAl
 
 
 ### validationMessage<span class="type-signature type object">object</span>
+{:#validationmessage}
 {:#validationMessage}
 
 
@@ -1593,6 +1635,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
+{:#validationrules}
 {:#validationRules}
 
 
@@ -1632,6 +1675,7 @@ Example
 
 
 ### value<span class="type-signature type string">string</span>
+{:#value}
 {:#value}
 
 
@@ -1676,6 +1720,7 @@ Example
 
 
 ### watermarkText<span class="type-signature type string">string</span>
+{:#watermarktext}
 {:#watermarkText}
 
 
@@ -1720,6 +1765,7 @@ Example
 
 
 ### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#width}
 {:#width}
 
 
@@ -1768,6 +1814,7 @@ Example
 
 
 ### addItem<span class="signature">()</span>
+{:#additem}
 {:#addItem}
 
 
@@ -1804,6 +1851,7 @@ $('#drpdwn').ejDropDownList("addItem",{value:"value",image:{src:"Pictures/xhtml.
 
 
 ### checkAll<span class="signature">()</span>
+{:#checkall}
 {:#checkAll}
 
 
@@ -1861,6 +1909,7 @@ $('#drpdwn').ejDropDownList("checkAll");
 
 
 ### clearText<span class="signature">()</span>
+{:#cleartext}
 {:#clearText}
 
 
@@ -1919,6 +1968,7 @@ $('#drpdwn').ejDropDownList("clearText");
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
+{:#destroy}
 
 
 
@@ -1976,6 +2026,7 @@ $('#drpdwn').ejDropDownList("destroy");
 
 ### disable<span class="signature">()</span>
 {:#disable}
+{:#disable}
 
 
 
@@ -2032,6 +2083,7 @@ $('#drpdwn').ejDropDownList("disable");
 
 
 ### disableItemByIndex<span class="signature">()</span>
+{:#disableitembyindex}
 {:#disableItemByIndex}
 
 
@@ -2090,6 +2142,7 @@ $('#carsList').ejDropDownList("disableItemsByIndex" ,"3,5,7");
 
 ### enable<span class="signature">()</span>
 {:#enable}
+{:#enable}
 
 
 
@@ -2146,6 +2199,7 @@ $('#drpdwn').ejDropDownList("enable");
 
 
 ### enableItemByIndex<span class="signature">()</span>
+{:#enableitembyindex}
 {:#enableItemByIndex}
 
 
@@ -2203,6 +2257,7 @@ $('#carsList').ejDropDownList("enableItemsByIndex" ,"3,5,7");
 
 
 ### getSelectedItem<span class="signature">()</span>
+{:#getselecteditem}
 {:#getSelectedItem}
 
 
@@ -2260,6 +2315,7 @@ $('#drpdwn').ejDropDownList("getSelectedItem");
 
 
 ### getSelectedValue<span class="signature">()</span>
+{:#getselectedvalue}
 {:#getSelectedValue}
 
 
@@ -2321,6 +2377,7 @@ $('#drpdwn').ejDropDownList("getSelectedValue");
 
 
 ### getValue<span class="signature">()</span>
+{:#getvalue}
 {:#getValue}
 
 
@@ -2378,6 +2435,7 @@ $('#drpdwn').ejDropDownList("getValue");
 
 
 ### hidePopup<span class="signature">()</span>
+{:#hidepopup}
 {:#hidePopup}
 
 
@@ -2435,6 +2493,7 @@ $('#drpdwn').ejDropDownList("hidePopup");
 
 
 ### setSelectedText<span class="signature">()</span>
+{:#setselectedtext}
 {:#setSelectedText}
 
 
@@ -2496,6 +2555,7 @@ $('#drpdwn').ejDropDownList("setSelectedText","Computer IT");
 
 
 ### setSelectedValue<span class="signature">()</span>
+{:#setselectedvalue}
 {:#setSelectedValue}
 
 
@@ -2557,6 +2617,7 @@ $('#drpdwn').ejDropDownList("setSelectedValue","ComputerIT");
 
 
 ### showPopup<span class="signature">()</span>
+{:#showpopup}
 {:#showPopup}
 
 
@@ -2614,6 +2675,7 @@ $('#drpdwn').ejDropDownList("showPopup");
 
 
 ### unCheckAll<span class="signature">()</span>
+{:#uncheckall}
 {:#unCheckAll}
 
 
@@ -2671,6 +2733,7 @@ $('#drpdwn').ejDropDownList("unCheckAll");
 
 
 ### unselectItemByIndex<span class="signature">()</span>
+{:#unselectitembyindex}
 {:#unselectItemByIndex}
 
 
@@ -2734,6 +2797,7 @@ $('#drpdwn').ejDropDownList("unselectItemByIndex",0); // unselectItemByIndex for
 
 
 ### unselectItemByText<span class="signature">()</span>
+{:#unselectitembytext}
 {:#unselectItemByText}
 
 
@@ -2797,6 +2861,7 @@ $('#drpdwn').ejDropDownList("unselectItemByText","Computer IT");
 
 
 ### unselectItemByValue<span class="signature">()</span>
+{:#unselectitembyvalue}
 {:#unselectItemByValue}
 
 
@@ -2866,6 +2931,7 @@ $('#drpdwn').ejDropDownList("unselectItemByValue","ComputerIT");
 
 
 ### beforePopupHide
+{:#beforepopuphide}
 {:#beforePopupHide}
 
 
@@ -2940,6 +3006,7 @@ $("#drpdwn").ejDropDownList({
 
 
 ### beforePopupShown
+{:#beforepopupshown}
 {:#beforePopupShown}
 
 
@@ -3015,6 +3082,7 @@ $("#drpdwn").ejDropDownList({
 
 ### change
 {:#change}
+{:#change}
 
 
 
@@ -3078,6 +3146,7 @@ $("#drpdwn").ejDropDownList({
 
 
 ### checkChange
+{:#checkchange}
 {:#checkChange}
 
 
@@ -3143,6 +3212,7 @@ $("#drpdwn").ejDropDownList({
 
 ### create
 {:#create}
+{:#create}
 
 
 
@@ -3207,6 +3277,7 @@ $("#drpdwn").ejDropDownList({
 
 ### destroy
 {:#destroy}
+{:#destroy}
 
 
 
@@ -3270,6 +3341,7 @@ $("#drpdwn").ejDropDownList({
 
 
 ### popupHide
+{:#popuphide}
 {:#popupHide}
 
 
@@ -3338,6 +3410,7 @@ $("#drpdwn").ejDropDownList({
 
 
 ### popupShown
+{:#popupshown}
 {:#popupShown}
 
 
@@ -3412,6 +3485,7 @@ $("#drpdwn").ejDropDownList({
 
 
 ### select
+{:#select}
 {:#select}
 
 

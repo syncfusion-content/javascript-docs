@@ -73,6 +73,7 @@ Requires
 
 ### clone<span class="type-signature type boolean">boolean</span>
 {:#clone}
+{:#clone}
 
 
 
@@ -125,6 +126,7 @@ Example
 
 
 ### cursorAt<span class="type-signature type object">object</span>
+{:#cursorat}
 {:#cursorAt}
 
 
@@ -179,6 +181,7 @@ Example
 
 ### distance<span class="type-signature type number">number</span>
 {:#distance}
+{:#distance}
 
 
 
@@ -231,6 +234,7 @@ Example
 
 
 ### dragArea<span class="type-signature type boolean">boolean</span>
+{:#dragarea}
 {:#dragArea}
 
 
@@ -285,6 +289,7 @@ Example
 
 ### handle<span class="type-signature type string">string</span>
 {:#handle}
+{:#handle}
 
 
 
@@ -337,6 +342,7 @@ Example
 
 
 ### scope<span class="type-signature type string">string</span>
+{:#scope}
 {:#scope}
 
 
@@ -398,6 +404,7 @@ Example
 
 ### _destroy<span class="signature">()</span>
 {:#_destroy}
+{:#_destroy}
 
 
 
@@ -439,6 +446,7 @@ dragableObj.destroy();
 
 
 ### destroy
+{:#destroy}
 {:#destroy}
 
 
@@ -498,6 +506,7 @@ $("#dragable").ejDraggable({
 
 ### drag
 {:#drag}
+{:#drag}
 
 
 
@@ -555,6 +564,7 @@ $("#dragable").ejDraggable({
 
 
 ### dragStart
+{:#dragstart}
 {:#dragStart}
 
 
@@ -613,6 +623,7 @@ $("#dragable").ejDraggable({
 
 
 ### dragStop
+{:#dragstop}
 {:#dragStop}
 
 
@@ -671,6 +682,7 @@ $("#dragable").ejDraggable({
 
 
 ### helper
+{:#helper}
 {:#helper}
 
 

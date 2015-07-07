@@ -62,6 +62,7 @@ Requires
 
 
 ### columnsCount<span class="type-signature type number">number</span>
+{:#columnscount}
 {:#columnsCount}
 
 
@@ -101,6 +102,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
+{:#cssclass}
 {:#cssClass}
 
 
@@ -139,6 +141,7 @@ Example
 
 
 ### customObject<span class="type-signature type object">object</span>
+{:#customobject}
 {:#customObject}
 
 
@@ -178,6 +181,7 @@ Example
 
 
 ### enableTooltip<span class="type-signature type boolean">boolean</span>
+{:#enabletooltip}
 {:#enableTooltip}
 
 
@@ -217,6 +221,7 @@ Example
 
 
 ### isResponsive<span class="type-signature type boolean">Boolean</span>
+{:#isresponsive}
 {:#isResponsive}
 
 
@@ -256,6 +261,7 @@ $("#OlapGauge").ejOlapGauge({isResponsive: true});</code>
 
 
 ### labelFormatSettings<span class="type-signature type enum">enum</span>
+{:#labelformatsettings}
 {:#labelFormatSettings}
 
 
@@ -296,6 +302,7 @@ $("#OlapGauge").ejOlapGauge({  numberFormat: ej.olap.OlapGauge.numberFormat.Defa
 
 ### locale<span class="type-signature type string">string</span>
 {:#locale}
+{:#locale}
 
 
 
@@ -334,6 +341,7 @@ Example
 
 
 ### rowsCount<span class="type-signature type number">number</span>
+{:#rowscount}
 {:#rowsCount}
 
 
@@ -374,6 +382,7 @@ Example
 
 ### scales<span class="type-signature type object">object</span>
 {:#scales}
+{:#scales}
 
 
 
@@ -412,6 +421,7 @@ Example
 
 
 ### serviceMethodSettings<span class="type-signature type object">object</span>
+{:#servicemethodsettings}
 {:#serviceMethodSettings}
 
 
@@ -451,6 +461,7 @@ $("#OlapGauge").ejOlapGauge("option", "serviceMethodSettings",  {initialize: "My
 
 
 ### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
+{:#servicemethodsettings-initialize}
 {:#serviceMethodSettings-initialize}
 
 
@@ -490,6 +501,7 @@ $("#OlapGauge").ejOlapGauge("option", "serviceMethodSettings.initialize", "Initi
 
 
 ### showHeaderLabel<span class="type-signature type boolean">boolean</span>
+{:#showheaderlabel}
 {:#showHeaderLabel}
 
 
@@ -529,6 +541,7 @@ Example
 
 
 ### url<span class="type-signature type string">string</span>
+{:#url}
 {:#url}
 
 
@@ -573,6 +586,7 @@ Example
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
+{:#destroy}
 
 
 
@@ -607,6 +621,7 @@ $("#OlapGauge").ejOlapGauge("destroy");
 
 
 ### doAjaxPost<span class="signature">()</span>
+{:#doajaxpost}
 {:#doAjaxPost}
 
 
@@ -655,6 +670,7 @@ gaugeObj.doAjaxPost("POST", "/OlapGaugeService.svc/Initialize", {"key", "Hello W
 
 
 ### progressStatus<span class="signature">()</span>
+{:#progressstatus}
 {:#progressStatus}
 
 
@@ -704,6 +720,7 @@ gaugeObj.progressStatus({"OlapReport": this.getOlapReport(), "JsonRecords": this
 
 ### refresh<span class="signature">()</span>
 {:#refresh}
+{:#refresh}
 
 
 
@@ -751,6 +768,7 @@ gaugeObj.refresh();
 
 
 ### removeImg<span class="signature">()</span>
+{:#removeimg}
 {:#removeImg}
 
 
@@ -799,6 +817,7 @@ gaugeObj.removeImg();
 
 
 ### renderControlFromJSON<span class="signature">()</span>
+{:#rendercontrolfromjson}
 {:#renderControlFromJSON}
 
 
@@ -851,6 +870,7 @@ gaugeObj.renderControlFromJSON(this.getJSONRecords());
 
 
 ### afterServiceInvoke
+{:#afterserviceinvoke}
 {:#afterServiceInvoke}
 
 
@@ -932,6 +952,7 @@ $("#OlapGauge").ejOlapGauge({
 
 
 ### beforeServiceInvoke
+{:#beforeserviceinvoke}
 {:#beforeServiceInvoke}
 
 
@@ -1014,6 +1035,7 @@ $("#OlapGauge").ejOlapGauge({
 
 ### load
 {:#load}
+{:#load}
 
 
 
@@ -1079,6 +1101,7 @@ $("#OlapGauge").ejOlapGauge({
 
 
 ### renderComplete
+{:#rendercomplete}
 {:#renderComplete}
 
 
@@ -1155,6 +1178,7 @@ $("#OlapGauge").ejOlapGauge({
 
 
 ### renderFailure
+{:#renderfailure}
 {:#renderFailure}
 
 
@@ -1241,6 +1265,7 @@ $("#OlapGauge").ejOlapGauge({
 
 
 ### renderSuccess
+{:#rendersuccess}
 {:#renderSuccess}
 
 
