@@ -9,9 +9,9 @@ documentation: ug
 
 # RequireJS
 
-**Essential JavaScript** includes [RequireJS](http://www.requirejs.org/)****support for all of its components, which implements the **AMD** (Asynchronous Module Definition) specification. Its main goal is to load the user-specified multiple custom scripts/modules in a particular order – as one relies on the other. Also, it improves the speed and quality of the code.
+**Essential JavaScript** includes [RequireJS](http://www.requirejs.org/) support for all of its components, which implements the **AMD** (Asynchronous Module Definition) specification. Its main goal is to load the user-specified multiple custom scripts/modules in a particular order – as one relies on the other. Also, it improves the speed and quality of the code.
 
-In General, a single widget file **ej.web.all.min.js** file is used to load any of the Syncfusion widgets – but with the introduction of new **AMD****modules**, it is not necessary to refer the entire script files in the project – just adding the script reference for **RequireJS** is enough – as it loads only the required widgets scripts at the required time. 
+In General, a single widget file **ej.web.all.min.js** file is used to load any of the Syncfusion widgets – but with the introduction of new **AMD** **modules**, it is not necessary to refer the entire script files in the project – just adding the script reference for **RequireJS** is enough – as it loads only the required widgets scripts at the required time. 
 
 The local module structure is as follows – where all the widget modules are placed under the **assets** folder. For detailed information on **assets** folder structure, refer here.
 
@@ -19,14 +19,8 @@ The local module structure is as follows – where all the widget modules are pl
 
 You can find the **require.min.js** from the following installed location of your machine,
 
-{% highlight text %}
-
-> _**<installed location>\ Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external**_ 
-> _**For example, If you have installed the Essential Studio package within C:\Program Files (x86), then navigate to the below location,**_
-> _**C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external**_
-
-
-{% endhighlight %}
+`(installed location)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external`   
+_For example, If you have installed the Essential Studio package within `C:\Program Files (x86)`, then navigate to the location,_ **C:\Program Files (x86)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external  
 
 ## Using RequireJS to create a Syncfusion treeView widget
 
@@ -43,10 +37,10 @@ You can find the **require.min.js** from the following installed location of you
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
 
     <!-- style sheet for default theme(flat azure) -->
-**<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />**
+    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
     <!--script for RequireJS-->
-**<script src="http://cdn.syncfusion.com/js/assets/external/require.min.js"></script>**
+    <script src="http://cdn.syncfusion.com/js/assets/external/require.min.js"></script>
 
 </head>
 
@@ -63,11 +57,11 @@ You can find the **require.min.js** from the following installed location of you
 
         require.config({
             paths: {
-**jquery: 'http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min'**,
+                  jquery: 'http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min',
 
-**easing: 'http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min'**,
+                  easing: 'http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min',
 
-**scripts: 'http://cdn.syncfusion.com/13.1.0.21/js/assets/scripts'**
+                  scripts: 'http://cdn.syncfusion.com/13.1.0.21/js/assets/scripts'
             }
         });
 
@@ -82,7 +76,7 @@ You can find the **require.min.js** from the following installed location of you
 {% highlight js %}
 
 
-      require(["**jquery**", "**easing**", "**scripts/web/ej.treeview.min**"], function () {
+      require(["jquery", "easing", "scripts/web/ej.treeview.min"], function () {
 
             $("#tree").ejTreeView({  //initializes the TreeView
                 fields: {
@@ -109,7 +103,7 @@ You can find the **require.min.js** from the following installed location of you
 
 ### Local reference of Scripts and Stylesheets
 
-The above specified CDN links can also be replaced with the local scripts and Stylesheets. To do so, simply copy the assets folder from the installed location on your machine into the sample application directory and then refer it in your sample code as shown below. For referring the stylesheets locally, refer here**.**
+The above specified CDN links can also be replaced with the local scripts and Stylesheets. To do so, simply copy the assets folder from the installed location on your machine into the sample application directory and then refer it in your sample code as shown below. For referring the stylesheets locally, refer here.
 
 {% highlight html %}
 
@@ -120,7 +114,7 @@ The above specified CDN links can also be replaced with the local scripts and St
     <title>TreeView with RequireJS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
 
-<!-- style sheet for default theme(flat azure) follow the steps from here -->
+    <!-- style sheet for default theme(flat azure) follow the steps from here -->
     <link href="**Content/ej/web/default-theme/ej.web.all.min.css**" rel="stylesheet" />
 
     <!--script for RequireJS-->
@@ -134,13 +128,13 @@ The above specified CDN links can also be replaced with the local scripts and St
     <script>
         require.config({
             paths: {
-            jquery: **'assets/external/jquery-1.10.2.min'**,
-           easing: **'assets/external/jquery.easing.1.3.min'**
+            jquery: 'assets/external/jquery-1.10.2.min',
+           easing: 'assets/external/jquery.easing.1.3.min'
 
             }
         });
 
-   require(["jquery", "easing", "**assets/scripts/web/ej.treeview.min**"], function () {
+   require(["jquery", "easing", "assets/scripts/web/ej.treeview.min"], function () {
 
             $("#tree").ejTreeView({  // initializes the TreeView
                 fields: {
