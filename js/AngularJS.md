@@ -261,4 +261,29 @@ Model binding has been demonstrated in the below code,
 
 {% endhighlight %}
 
+##Event binding
 
+Events can be bind to controls using the prefix `e-` and particular event name. For example, to bind change event on ejDatePicker, we need to define attribute as `e-change="dateChanged"`. Refer the following snippet for complete example.
+{% highlight html %}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
+  <head>
+    <title>Essential Studio for JavaScript : DatePicker - Angular</title>
+    <!-- SCRIPT & CSS REFERENCE SECTION -->
+  </head>
+  <body ng-controller="DatePickerCtrl">
+    <input id="mydatepicker1" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
+    <script type="text/javascript">
+        angular.module('DateCtrl', ['ejangular'])
+           .controller('DatePickerCtrl', function ($scope) {
+               $scope.dateValue = "01/01/2015";
+               $scope.dateChanged = function(e){
+                   // console.log('Date value changed to ' + e.value)
+               }
+        });
+    </script>
+  </body>
+</html>
+
+{% endhighlight %}
