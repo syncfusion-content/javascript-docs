@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart-Axes
-description: chart axes 
+title: Axes
+description: axes 
 platform: js
 control: OlapChart
 documentation: ug
 ---
 
-#Chart Axes 
+#Axes 
 
 **OlapChart** typically have two axes that are used to measure and categorize data: a vertical Y-axis and a horizontal X-axis. By default vertical Y-axis and horizontal X-axis is added to the Chart with axis labels, gridlines, and tick lines. You can also customize this axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
 
@@ -89,7 +89,7 @@ $(function() {
 
 ##Axis Line
 
-**Axis line** is drawn in Chart to represent the end of the axis in **ChartArea**. It is customized with the help of following code example.
+**Axis line** is drawn in Chart to represent the end of the axis in **ChartArea**. It can be customized as shown below.
 
 {% highlight js %}
 
@@ -159,9 +159,9 @@ $("#OlapChart1").ejOlapChart({
 
 {% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img3.png" %}
 
-##Appearance Customization 
+##Area Customization 
 
-Background, border color and outer width of the Chart Area is customized with the help of following properties.
+Background, border color and outer width of the Chart Area can be customized with the help of following properties.
 
 * [Background](/js/api/ejChart#chartareabackgroundspan-classtype-signature-type-stringstringspan) – sets the background color for Chart Area.
 * [Color](/js/api/ejChart#chartareabordercolorspan-classtype-signature-type-stringstringspan) – sets the color for the border.
@@ -193,4 +193,68 @@ $("#OlapChart1").ejOlapChart({
 
 
 {% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img4.png" %}
+
+#Label
+
+**Label** represents the text on the axis data points in the Chart. Each axis data point are represented by separate label text information in order to provide precise information about each points. **Label** text is displayed in a customizable format.
+
+##Label font and color customization 
+
+Font style and color of the label text is customized with the help of [font](/js/api/ejChart#primaryxaxisfontspan-classtype-signature-type-objectobjectspan) and [color](/js/api/ejChart#primaryxaxisfontfontstylespan-classtype-signature-type-enumenumspan) properties within its respective axis.
+
+{% highlight js %}
+
+$("#OlapChart1").ejOlapChart({
+    url: "../wcf/OlapChartService.svc",
+    primaryXAxis: {
+        font: {
+            fontFamily: "Algerian",
+            fontWeight: "lighter",
+            fontStyle: "Italic",
+            size: "14px",
+            color: "red"
+        }
+    },
+    primaryYAxis: {
+        font: {
+            fontFamily: "Algerian",
+            fontWeight: "lighter",
+            fontStyle: "Italic",
+            size: "14px",
+            color: "red"
+        },
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }
+});
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Label_img1.png" %}
+
+##Rotating Axis Labels
+
+You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the [labelRotation](/js/api/ejChart#primaryxaxislabelrotationspan-classtype-signature-type-numbernumberspan) property.
+
+{% highlight js %}
+
+$("#OlapChart1").ejOlapChart({
+    url: "../wcf/OlapChartService.svc",
+    primaryXAxis: {
+        labelRotation: 45
+    },
+    size: {
+        height: "460px",
+        width: "950px"
+    }
+});
+
+
+{% endhighlight %}
+
+
+{% include image.html url="/js/OlapChart/Chart-Axes_images/Label_img2.png" %}
 

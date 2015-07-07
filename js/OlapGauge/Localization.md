@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Localization-and-Translation-Support
-description: localization and translation support
+title: Localization
+description: localization
 platform: js
 control: OlapGauge
 documentation: ug
 ---
 
-# Localization and Translation Support
+# Localization
 
-**Localization** is the process of customizing the user interface (UI) as locale-specific in order to display regional data. Using this feature, you can display the data in a specific language and culture, of a particular country or region. The **JavaScript OlapGauge** control provides inherent support to localize its UI.
+ The **Essential JavaScript OlapGauge** control provides inherent support to localize its UI.
 
 The following table lists the default English localization User Interface based on French culture.
 
-_Table: List of default English localization User Interface based on French culture_
 
 <table>
 <tr>
@@ -173,10 +172,7 @@ $(function() {
 {% endhighlight %}
 
 
-> **Note:** In order to render the localized OlapGauge, You are required to reset the content available in both
-
-   1. OlapGauge Control
-   2. OLAP Cube
+> **Note:** In order to render the localized OlapGauge, You are required to reset the content available in both OlapGauge Control and OLAP Cube.
 
 ##Localizing Control Information
 

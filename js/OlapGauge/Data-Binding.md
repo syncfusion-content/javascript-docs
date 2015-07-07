@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-**OlapGauge** control enables you to retrieve multidimensional data either from **SSAS** or from any **XML/A** provider and present the OLAP information in a meaningful way.
+**OlapGauge** control enables you to retrieve multidimensional data either from cube directly or through any **XML/A** provider and present the OLAP information in a meaningful way.
 
 ## SSAS
 
@@ -39,11 +39,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 ## XML/A
 
-**XML for Analysis** (XML/A) is a standard that allows the client applications to transfer multi-dimensional or OLAP data sources from an OLAP Server that is available online. The back and forth communication is done using the web standards – HTTP, SOAP, and XML. The query language used is MDX, which is most widely supported for reporting from multi-dimensional data stores.
-
 ###Use Case Scenarios
 
-**XML/A** provides the most efficient way to access an OLAP database over the Internet.
+**XML for Analysis** (XML/A) provides the most efficient way to access an OLAP database over the Internet.
 
 ###Connecting to SSAS Server (Online)
 

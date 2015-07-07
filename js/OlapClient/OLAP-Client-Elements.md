@@ -9,15 +9,8 @@ documentation: ug
 
 # OlapClient Elements 
 
-## Cube Selector
 
-Cube Selector allows you to browse and select a cube from the entire collection, populated by the data source.
-
-### Change the Cube
-
-Cube can be changed by selecting a cube name from the list of names available within the Cube Selector drop-down list. When a cube is changed, the following elements refresh according to the new cube.
-
-_Table: Components Table_
+_Table: Elements of OlapClient_
 
 <table>
 <tr>
@@ -50,13 +43,17 @@ Grid</td><td>
 A grid is a tabular representation of data, arranged in the form of rows and columns, categorized accordingly.</td></tr>
 </table>
 
+## Cube Selector
+
+Cube Selector allows user to select any one of the cube form the cubes available in connected database this can be achieved with dropdown list displaying names of cubes. On selecting a cube from the dropdown list it gets loaded.
+
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img1.png" %}
 
 ## Cube Dimension Browser
 
-Cube Dimension Browser is a tree-view-like structure that organizes the dimensions, hierarchies, measures etc… from the selected cube into independent, logical groups.
+Cube Dimension Browser is a tree-view-like structure that organizes the dimensions, hierarchies, measures, etc. from the selected cube into independent, logical groups.
 
-_Table: List of nodes_
+_Table: Types of Node in Cube Dimension Browser_
 
 <table>
 <tr>
@@ -130,46 +127,36 @@ _Table: Symbolic Representation of the Nodes inside Cube Dimension Browser_
 <tr>
 <th>
 Icon</th><th>
-Name</th></tr>
+Name</th><th>
+Node Type</th>
+<th>
+Is Draggable</th></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img4.png" alt="" width="25pt" height="25pt" %}</td><td>
-Display Folder</td></tr>
+Display Folder</td>/td><td>Display Folder</td><td>False</td></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img5.png" alt="" width="22pt" height="24pt" %}</td><td>
-Measure</td></tr>
+Measure</td><td>Measure</td><td>True</td></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img6.png" alt="" width="28pt" height="28pt" %}</td><td>
-Dimension</td></tr>
+Dimension</td></td><td>Dimension</td><td>True</td></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img7.png" alt="" width="29pt" height="28pt" %}</td><td>
-User Defined Hierarchy</td></tr>
+User Defined Hierarchy</td><td>Hierarchy</td><td>True</td></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img8.png" alt="" width="19pt" height="26pt" %}</td><td>
-Attribute Hierarchy</td></tr>
+Attribute Hierarchy</td><td>Hierarchy</td><td>True</td></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img9.png" alt="" width="22pt" height="24pt" %}</td><td>
-Level Element</td></tr>
+Level Element</td><td>Level Elements</td><td>True</td></tr>
 </table>
 
-### Draggable and non-draggable nodes in the Cube Dimension Browser
-
-The dragabble nodes are:
-
-* Measure
-* Dimension
-* Hierarchy
-* Level Elements
-
-The nodes that are not allowed to be dragged are:
-
-* Cube
-* Display Folder
 
 ## Axis Element Builder
 
@@ -191,33 +178,22 @@ The slicer axis is used as a filter to narrow the focus of the multidimensional 
 
 ### Addition of Elements to an Axis Element Builder
 
-#### Add Dimension, Hierarchy and Level to an Axis Element Builder 
+#### Adding Measure, Dimension, Measure, Hierarchy and Level to an Axis 
 
-The dimension, hierarchy and level elements can be dragged from the Cube Dimension Browser and dropped into the Axis Element Builder using the drag-and-drop operation. Also you can move the dimension, hierarchy and level elements from one axis to another by moving the appropriate Split Button.
+The measure, dimension, hierarchy and level elements can be dragged from the Cube Dimension Browser and dropped into the Axis Element Builder using the drag-and-drop operation. Also you can move the measure, dimension, hierarchy and level elements from one axis to another by moving the appropriate Split Button.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img11.png" %}
 
-#### Add Measure to an Axis Element Builder
-
-The measure elements can be dragged from Cube Dimension Browser and dropped into Axis Element Builder using drag-and-drop operation. Also user can move the measure elements from one axis to another by moving the Split Button named Measures.
-
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img12.png" %}
 
 ### Remove Elements from an Axis Element Builder
 
-#### Remove Dimension, Hierarchy and Level from an Axis Element Builder
+#### Remove Measure, Dimension, Measure, Hierarchy and Level from an Axis
 
-In order to remove dimension, hierarchy and level element from the Axis Element Builder, click the Remove symbol available next to the Split Button while hovering over it.
+In order to remove measure, dimension, hierarchy and level element from the Axis Element Builder, click the Remove symbol available next to the Split Button while hovering over it.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img13.png" %}
 
-#### Remove Measure from an Axis Element Builder
-
-To remove the measure element from the Axis Element Builder, click the Remove symbol available next to the Measures Split Button while hovering over it.
-
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img14.png" %}
-
-### Rearrange Elements in an Axis Element Builder
+### Rearrange Elements in an Axis
 
 Rearranging can be done by dragging an element one below the other.
 
@@ -257,38 +233,14 @@ To remove a measure, click the Remove button next to the corresponding measure
 
 ### Member Editor
 
-Member Editor is a tree-view control that displays the member elements of the current dimension.
+Member Editor is a tree-view control that displays the member of the current dimension.
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img22.png" %}
-
-#### Represent State of Nodes of a dimension
-
-Nodes are represented in two states, namely:
-
-* Checked
-* Unchecked
-
-#### Select and Clear Nodes of a Dimension in the Member Editor
-
-The option Select is provided in such a way that on selecting the parent node, its corresponding child nodes are automatically selected. If a leaf node is selected, it does not affect others since it is the final node on a tree.
-
-Unchecking the check box option is provided in such a way that on deselecting the parent node, its corresponding child nodes are automatically deselected. On deselecting all the child nodes, its corresponding parent node is automatically deselected.
-
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img23.png" %}
-
-#### Check All and Uncheck All
-
-* **Check All** – Will select all nodes in the tree view.
-* **Uncheck All** – Will uncheck all nodes in the tree view.
-
-
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img24.png" %}
 
 ## Toolbar
 
 {% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img25.png" %}
 
-_Table: Options Table_
 
 <table>
 <tr>
@@ -326,7 +278,7 @@ This option is used to export the Grid data to Excel format.</td></tr>
 <tr>
 <td>
 Report List</td><td>
-Select a report from the existing report collection.</td></tr>
+Report List will hold all the reports of the current session of the **OlapClient** control. And it is used to select a report from the existing report collection.</td></tr>
 <tr>
 <td>
 Filter/Sort column</td><td>
@@ -341,21 +293,7 @@ Full Screen View</td><td>
 This option is used to display Grid and Chart in a maximized view, according to the browsers height and width.</td></tr>
 </table>
 
-## Report List
 
-Report List will hold all the reports of the current session of the **OlapClient** control.
+## PivotGrid and OlapChart
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img26.png" %}
-
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img27.png" %}
-
-When a change is made in the report, **OLAP** visualization controls and Axis Element Builder get re-populated with the data contained in the selected report.
-
-## PivotGrid
-
-The **PivotGrid** control is easily configurable, presentation-quality business control that reads **OLAP** data from a **Microsoft SQL Server Analysis Services** database, an offline cube or **XMLA** and **Relational** data sources from data table or data collection. The **OLAP** data is displayed with drill-up and drill-down capabilities and features exceptional performance.
-
-## OlapChart
-
-The **OlapChart** control for **JavaScript** is a lightweight control that reads **OLAP** information and visualizes it in graphical format with the ability to drill up and down.
-
+The Controls PivotGrid and OlapChart  will be rendered with respect to the  operations done at axis element builder.

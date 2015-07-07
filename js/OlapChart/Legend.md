@@ -90,7 +90,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Legend Style
 
-You can draw and customize the outline of Chart legend using [border](/js/api/ejChart#legendborderspan-classtype-signature-type-objectobjectspan) property of legend. Default value of legend border color is “**Transparent**”.
+You can draw and customize the outline of Chart legend using [border](/js/api/ejChart#legendborderspan-classtype-signature-type-objectobjectspan) property of legend. Default value of legend border color is Transparent.
 
 {% highlight js %}
 
@@ -120,7 +120,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Legend Item
 
-**Legend item** is represented by an icon or image and a text. This gets rendered automatically corresponding to each Series in the **OlapChart**. You can customize the [Legend item](/js/api/ejChart#legenditemstylespan-classtype-signature-type-objectobjectspan).
+**Legend item** is represented by an icon or image and a text. This gets rendered automatically corresponding to each series in the **OlapChart**. You can customize the [Legend item](/js/api/ejChart#legenditemstylespan-classtype-signature-type-objectobjectspan).
 
 {% highlight js %}
 

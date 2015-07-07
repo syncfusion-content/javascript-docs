@@ -9,11 +9,7 @@ documentation: ug
 
 #Marker and Cross Hair 
 
-**Markers** are the symbols that represent on the series of the Chart Area. **Cross Hair** helps you to view the value at mouse position or touch contact point.
-
-##Real-time use of Cross Hair
-
-You can view the information while moving the mouse pointer over the Chart Area with the help of Cross Hair. For example, in a line chart you can get exact values of x and y axis while moving the mouse on Chart Area.
+**Markers** are the symbols that represent on the series of the Chart Area. **Cross Hair** helps you to view the value at mouse position or touch contact point. You can view the information while moving the mouse pointer over the Chart Area with the help of Cross Hair. For example, in a line chart you can get exact values of x and y axis while moving the mouse on Chart Area.
 
 {% include image.html url="/js/OlapChart/Marker-and-Cross-Hair_images/Marker-and-Cross-Hair_img1.png" %}
 
@@ -49,7 +45,7 @@ function onSeriesRenders(args) {
 
 ##Cross Hair Customization
 
-In order to view the value at mouse position or touch contact point, you can use the [crosshair](/js/api/ejChart#crosshairspan-classtype-signature-type-objectobjectspan) property. You can customize the appearance using the following code example.
+In order to view the value at mouse position or touch contact point, you can use the [crosshair](/js/api/ejChart#crosshairspan-classtype-signature-type-objectobjectspan) property. You can customize the appearance as shown below.
 
 {% highlight js %}
 

@@ -28,7 +28,7 @@ Essential **OlapChart JS** supports 14 different types of chart as follows:
 
 ## Column Chart
 
-**Column Chart** is the most commonly used chart types. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total or average of data in different categories. It is ideal to show the variations in the value of an item over a period of time.
+**Column Chart** is the most commonly used chart type. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total or average of data in different categories. It is ideal to show the variations in the value of an item over a period of time.
 
 {% highlight js %}
 $("#OlapChart1").ejOlapChart({
@@ -54,7 +54,7 @@ The following screenshot displays a **Column Chart**.
 
 ## Stacking Column Chart
 
-**Stacking Column** Chart is similar to column charts except the “Y-values”. These “Y-values” stack on top of each other in a specified series order. This helps to visualize the relationship of parts to the whole chart.
+**Stacking Column** Chart is similar to column charts except the Y-values. These Y-values stack on top of each other in a specified series order. This helps to visualize the relationship of parts to whole across categories.
 
 {% highlight js %}
 
@@ -75,13 +75,13 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-The following screenshot displays the **stacking Column Chart**.
+The following screenshot displays the **Stacking Column Chart**.
 
 {% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img2.png" %}
 
 ## Bar Chart
 
-The **Bar Chart** is the simplest and most versatile chart of statistical diagrams. It displays horizontal bars for each point in the series and points from adjacent series. **Bar Charts** are drawn as bars next to each other. **Bar charts** are used to compare values across categories, for displaying the variations in the value of an item over time or for comparing the values of several items at a single point in time.
+The **Bar Chart** displays horizontal bars for each point in the series and points from adjacent series. **Bar charts** are used to compare values across categories, for displaying the variations in the value of an item over time or for comparing the values of several items at a single point in time.
 
 {% highlight js %}
 
@@ -109,7 +109,7 @@ The following screenshot displays a **Bar Chart**.
 
 ## Stacking Bar Chart
 
-**Stacking Bar Chart** is a Regular **bar** chart with the X-values stacked on top of each other in the specified series order.
+**Stacking Bar Chart** is a regular **bar** chart with the X-values stacked on top of each other in the specified series order.
 
 {% highlight js %}
 
@@ -273,7 +273,7 @@ The following screenshot displays the **Step Line Chart.**
 
 ## Spline Chart
 
-The **spline chart** is similar to line charts except it connects different data points using curve lines instead of straight lines.
+The **Spline Chart** is similar to line charts except it connects different data points using curve lines instead of straight lines.
 
 {% highlight js %}
 
@@ -300,7 +300,7 @@ The following screenshot displays the **Spline Chart**.
 
 ## Area Chart
 
-**Area Chart** emphasizes the degree of change of values over a period of time. Instead of rendering data as discreet bars or columns, an area chart renders it in a continuous ebb-and-flow pattern as defined against the y-axis.
+**Area Chart** emphasizes the degree of change of values over a period of time. Instead of rendering data as discrete bars or columns, an area chart renders it in a continuous ebb-and-flow pattern as defined against the y-axis.
 
 {% highlight js %}
 
@@ -383,7 +383,7 @@ The following Screenshot displays a **Spline Area Chart.**
 
 ## Stacking Area Chart
 
-**Stacking Area** chart is similar to regular area chart except the “Y-values”. These “Y-values” stack on top of each other in the specified series order. This helps to visualize the relationship of parts to the whole data.
+**Stacking Area** chart is similar to regular area chart except the “Y-values”. These “Y-values” stack on top of each other in the specified series order. This helps to visualize the relationship of parts to whole across categories.
 
 {% highlight js %}
 
@@ -409,3 +409,40 @@ The following screenshot displays a **Stacking Area Chart.**
 
 {% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img13.png" %}
 
+##Combination Chart
+
+A combination Chart combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
+
+   1. Can’t combine Column and Bar series.
+   2. Pie Chart can’t be used with other series types.
+
+
+{% highlight js %}
+
+$(function() {
+    $("#OlapChart1").ejOlapChart({
+        url: "../wcf/OlapChartService.svc",
+        size: {
+            height: "460px",
+            width: "950px"
+        },
+        animation: true,
+        commonSeriesOptions: {
+            type: ej.olap.OlapChart.ChartTypes.Column,
+            tooltip: {
+                visible: true
+            }
+        },
+        seriesRendering: "onSeriesRenders"
+    });
+});
+
+function onSeriesRenders(args) {
+    this.model.series[5].type = ej.olap.OlapChart.ChartTypes.Line;
+    this.model.series[5].marker.visible = true;
+}
+
+{% endhighlight %}
+
+
+{% include image.html url="/js/OlapChart/Series_images/Series_img1.png" %}

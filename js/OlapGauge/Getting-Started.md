@@ -9,7 +9,7 @@ documentation: ug
 
 #Getting Started 
 
-This section explains briefly about how to create an **OlapGauge** in your application with **JavaScript.**
+This section explains briefly about how to create an **OlapGauge** in your application with **Essential JavaScript.**
 
 ##Syncfusion OLAP Controls – Architecture
 
@@ -35,10 +35,10 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
 3.**MDX Generator:** You can frame the MDX query using an MDX generator in **Syncfusion.Olap.Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
-4.**OLAP Report:** The OlapReport class in the Syncfusion.Olap.Base holds the complete information of each axes such as column, row and slicer. Using OlapReport class, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that
+4.**OLAP Report:** The OlapReport holds the complete information of each axes such as column, row and slicer. Using OlapReport, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that
 is included and excluded.
 
-As the **OlapControl** is the key for each and every operation, initially you need to serialize the **OlapReport** and send to client-side in a form of string. When you perform any operation such as drill up/down, filtering, sorting etc., you need to send **OlapReport** from the client-side to the service in a de-serialized and updated format. Further operations are carried with updated **OlapReports** only and you can send the updated **OlapReport** back to client-side with **JSON** data in a serialized format again. This process has the **OlapReport** always updated. You cannot operate serialized **OlapReport** in client-side and hence it is carried to service having its class in **Syncfusion.Olap.Base** assembly to perform the update operation.
+As the **OlapControl** is the key for each and every operation, initially you need to serialize the OLAP Reports and send to client-side in a form of string. When you perform any operation such as drill up/down, filtering, sorting etc., you need to send OLAP Reports from the client-side to the service in a de-serialized and updated format. Further operations are carried with updated OLAP Reports only and you can send the updated OLAP Reports back to client-side with **JSON** data in a serialized format again. This process has the OLAP Reports always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service for performing the update operation.
 
 ##Create an application
 
@@ -205,11 +205,9 @@ Add the following code inside the **&lt;body&gt;** tag in the **default.html** p
 
 ##Add WCF Service for OlapGauge
 
-###Create WCF Services
+###Create WCF Service
 
-1.Right-click the project and select Add > New Folder.  Name the folder as WCF.
-2.Right-click the WCF folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapGaugeService.svc
-3.Click Add.
+Right-click the project and select Add > New Folder.  Name the folder as WCF.Right-click the WCF folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapGaugeService.svc. And then Click Add.
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png" %}
 
 ###Add service methods inside Interface
@@ -269,7 +267,7 @@ namespace WebApplication2
 
 Add the following methods to the service invoked for any server-side operations performed in **OlapGauge**.
 
-Initialize the `OlapGauges helper class`.
+Initialize the OlapGauge helper class.
 
 {% highlight c# %}
 

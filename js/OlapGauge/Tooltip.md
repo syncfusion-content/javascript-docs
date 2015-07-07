@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-**Tooltip** provides the information about the **OlapGauge** when you move the mouse pointer over the control. You can enable it using [enableTooltip](/js/api/ejOlapGauge#enabletooltipspan-classtype-signature-type-booleanbooleanspan) property.
+You can enable it using [enableTooltip](/js/api/ejOlapGauge#enabletooltipspan-classtype-signature-type-booleanbooleanspan) property.
 
 {% highlight js %}
 
