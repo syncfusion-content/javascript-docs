@@ -346,11 +346,11 @@ It is possible to change the dimension of the marker pointer. Dimensions availab
                 // Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
-                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 45 }
+                    color: "#8c8c8c", distanceFromScale: { x: 45, y:-1  }
                 },
                 {
                     type: "minorinterval", width: 1, height: 6,
-                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 45 }
+                    color: "#8c8c8c", distanceFromScale: { x: 45, y: -1 }
                 }],
                 // Adding custom label collection
                 customLabels: [{

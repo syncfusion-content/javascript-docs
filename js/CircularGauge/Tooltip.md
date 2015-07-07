@@ -37,7 +37,7 @@ documentation: ug
             //Customizes the scale options.
             scales: [{
                 showLabels: true,
-                radius: 130,
+                radius: 150,
                 //Customizes the custom label options.
                 customLabels: [{
                     value: "095345",
@@ -51,7 +51,7 @@ documentation: ug
                 //Customizes the pointers options.
                 pointers: [{
                     value: 60,
-                    length: 95,
+                    length: 100,
                 }]
             }]
         });
@@ -97,12 +97,12 @@ $(function () {
                 // Enables the custom label tooltip.
                 showCustomLabelTooltip: true,
                 // Adds tooltip template.
-                templateID: “Tooltip”
+                templateID: "Tooltip"
             },
             // Customizes the scale options.
             scales: [{
                 showLabels: true,
-                radius: 130,
+                radius: 150,
                 // Customizes the custom label options.
                 customLabels: [{
                     value: "0 9 5 3 4 5",
@@ -116,7 +116,7 @@ $(function () {
     // Customizes the pointers options.
     pointers: [{
         value: 60,
-        length: 95,
+        length: 100,
     }]
     }]
     });

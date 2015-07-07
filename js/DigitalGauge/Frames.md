@@ -58,23 +58,24 @@ For a better appearance, you can set the **background****image** for the **Digit
 
 {% highlight js %}
 
- $(function () {
-        // For Digital Gauge rendering
-        $("#DigitalGauge1").ejDigitalGauge({
-            // For setting text
-            value: "RADAR",
-            frame: {
-                // For setting backgroung image
-                backgroundImageUrl: "board3.jpg",
-            },
-            items: [{
-                position: {
-                    x: 80,
-                    y: 10
-                }
-            }]
-        })
-    });
+$(function() {
+     // For Digital Gauge rendering
+     $("#DigitalGauge1").ejDigitalGauge({
+         // For setting text
+         value: "RADAR",
+         height: 300,
+         frame: {
+             // For setting backgroung image
+             backgroundImageUrl: "board3.jpg",
+         },
+         items: [{
+             position: {
+                 x: 95,
+                 y: 10
+             }
+         }]
+     })
+ });
 
 {% endhighlight %}
 
