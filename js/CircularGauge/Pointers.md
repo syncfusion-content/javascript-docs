@@ -104,7 +104,7 @@ The Pointers border is modified with the object called **border** as in scales. 
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
                 showScaleBar: true,
-                width: 10, radius: 110,
+                width: 10, radius: 150,
                 pointers: [{
                     // For setting pointer border
                     border: { color: "green", width: 2 },
@@ -113,7 +113,7 @@ The Pointers border is modified with the object called **border** as in scales. 
                     // For setting pointer value
                     value: 45,
                     // For setting pointer length
-                    length: 80,
+                    length: 100,
                     // For setting pointer width
                     width: 16,
                     // For setting pointer opacity
@@ -151,7 +151,7 @@ Based on the value, the**pointer** point out the label value. You can set the po
                 showScaleBar: true,
                 backgroundColor: "orange",
                 border: { width: 2, color: "Red" },
-                width: 10, radius: 110,
+                width: 10, radius: 150,
                 pointers: [{
                     // For setting pointer border
                     border: { color: "red", width: 2 },
@@ -160,7 +160,7 @@ Based on the value, the**pointer** point out the label value. You can set the po
                     // For setting pointer value
                     value: 45,
                     // For setting pointer length
-                    length: 80,
+                    length: 100,
                     // For setting pointer width
                     width: 16,
                     // For setting pointer opacity
@@ -191,31 +191,46 @@ Pointer can be positioned with the help of two properties such as **distanceFrom
 
 {% highlight js %}
 
- $(function () {
-        // For Circular Gauge rendering
-        $("#CircularGauge1").ejCircularGauge({
-            scales: [{
-                showScaleBar: true,
+$(function() {
+    // For Circular Gauge rendering
+    $("#CircularGauge1").ejCircularGauge({
+        scales: [{
+            showScaleBar: true,
+            backgroundColor: "orange",
+            border: {
+                width: 2,
+                color: "red"
+            },
+            width: 10,
+            radius: 150,
+            pointers: [{
+                type: "marker",
+                // For setting marker type
+                markerType: "triangle",
+                // For setting pointer position
+                placement: "near",
+                // For setting pointer distance from scale
+                distanceFromScale: 10,
+                // For setting pointer border
+                border: {
+                    color: "red",
+                    width: 2
+                },
+                // For setting pointer background
                 backgroundColor: "orange",
-                border: { width: 2, color: "Red" },
-                width: 10, radius: 110,
-                pointers: [{
-                    // For setting pointer border
-                    border: { color: "red", width: 2 },
-                    // For setting pointer background
-                    backgroundColor: "orange",
-                    // For setting pointer value
-                    value: 45,
-                    // For setting pointer length
-                    length: 80,
-                    // For setting pointer width
-                    width: 16,
-                    // For setting pointer opacity
-                    opacity: 0.6
-                }]
+                // For setting pointer value
+                value: 40,
+                // For setting pointer length
+                length: 20,
+                // For setting pointer width
+                width: 20,
+                // For setting pointer opacity
+                opacity: 0.6
+
             }]
-        });
+        }]
     });
+});
 
 
 {% endhighlight %}
@@ -516,14 +531,14 @@ Execute the above code to render the following output.
                 showScaleBar: true,
                 backgroundColor: "#DCEBF9",
                 border: { width: 2, color: "Green" },
-                width: 10, radius: 110,
+                width: 10, radius: 150,
                 pointers: [
                 // For setting pointer1
                 {
                     border: { color: "Green", width: 2 },
                     backgroundColor: "#DCEBF9",
                     value: 40,
-                    length: 80,
+                    length: 100,
                     width: 16,
                     opacity: 0.6
                 },

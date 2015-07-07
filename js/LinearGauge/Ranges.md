@@ -50,11 +50,11 @@ Range collection can be directly added to the scale object. Refer the following 
                 //Adding tick collection
                 ticks: [{
                     type: "majorinterval", width: 2,
-                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 25 }
+                    color: "#8c8c8c", distanceFromScale: { x: 25, y: -1 }
                 },
                 {
                     type: "minorinterval", width: 1, height: 6,
-                    color: "#8c8c8c", distanceFromScale: { x: 0, y: 25 }
+                    color: "#8c8c8c", distanceFromScale: { x: 25, y: -1 }
                 }],
                 //Adding range collection
                 ranges: [{

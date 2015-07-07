@@ -76,7 +76,7 @@ $(function () {
                 showIndicators: true, minorIntervalValue: 5,
                 backgroundColor: "#5DF243",
                 border: { width: 1.5, color: "black" },
-                showScaleBar: true, radius: 120, size: 5,
+                showScaleBar: true, radius: 150, size: 5,
                 pointers: [{
                     backgroundColor: "#5DF243",
                     border: { width: 1.5, color: "black" },

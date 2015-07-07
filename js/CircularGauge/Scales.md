@@ -41,7 +41,7 @@ $(function () {
   //For circular gauge rendering
     $("#CircularGauge1").ejCircularGauge({
         scales: [{
-            radius:130
+            radius:150
         }]
     })
     });
@@ -76,7 +76,7 @@ $(function () {
         $("#CircularGauge1").ejCircularGauge({
             scales: [{
                 showScaleBar: true,
-                radius: 110,
+                radius: 150,
                 backgroundColor: "Red",
                 border: {
                     //For scale border color
@@ -84,7 +84,7 @@ $(function () {
                     //For scale border width
                     width: 3
                 },
-                pointers: [{ length: 80 }]
+                pointers: [{ length: 100 }]
             }]
         })
     });
@@ -169,7 +169,7 @@ Execute the above code to render the following output.
                 // For setting scale minor interval
                 minorIntervalValue: 5,
                 // For setting scale direction
-                direction:ej.datavisualization.CircularGauge.Directions.CounterClockwise,**
+                direction:ej.datavisualization.CircularGauge.Directions.CounterClockwise,
                 // For setting scale background color
                 backgroundColor:"red",
                 // For setting scale bar opacity

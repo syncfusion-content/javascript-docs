@@ -95,7 +95,7 @@ You can set multiple sub gauges in a single **Circular Gauge** by adding an arra
 
 <div id="CircularGauge1"></div>
 <div id=" SubGauge1"> </div>
-<div id=" SubGauge2"> </div
+<div id=" SubGauge2"> </div>
 
 {% endhighlight %}
 

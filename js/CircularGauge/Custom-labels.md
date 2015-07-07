@@ -189,7 +189,7 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
               // Customizes the scale options.
               scales: [{
                   showLabels: true,
-                  radius: 130,
+                  radius: 150,
                   // Customizes the custom label options.
                   customLabels: [{
                       value: "Average Speed",
@@ -205,7 +205,7 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
                   // Customizes the pointers options.
                   pointers: [{
                       value: 60,
-                      length: 95,
+                      length: 100,
                   }]
               }]
           });
