@@ -19,44 +19,54 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 {% highlight js %}
 
- $(function () {
-        // For Digital Gauge rendering
-        $("#DigitalGauge1").ejDigitalGauge({
-            Width: 1300,
-            height: 300,
-            frame: {
-                backgroundImageUrl: "Board1.jpg"
-            },
-            items: [
+ $(function() {
+    // For Digital Gauge rendering
+    $("#DigitalGauge1").ejDigitalGauge({
+        Width: 1350,
+        height: 400,
+        frame: {
+            backgroundImageUrl: "Board1.png"
+        },
+        items: [
             // For Item 1
             {
                 // For setting text
-                value: "YELLOW",
-                segmentSettings: { color: "Yellow" },
+                value: "BLUE",
+                segmentSettings: {
+                    color: "blue"
+                },
                 position: {
-                    x: 80, y: 0
+                    x: 90,
+                    y: 0
                 }
             },
             // For Item 2
             {
                 // For setting text
                 value: "RED",
-                segmentSettings: { color: "red" },
+                segmentSettings: {
+                    color: "red"
+                },
                 position: {
-                    x: 80, y: 20
+                    x: 90,
+                    y: 15
                 }
             },
             // For Item 3
             {
                 // For setting text
-                value: "GREEN",
-                segmentSettings: { color: "Green" },
+                value: "PINK",
+                segmentSettings: {
+                    color: "pink"
+                },
                 position: {
-                    x: 80, y: 40
+                    x: 90,
+                    y: 30
                 }
-            }]
-        });
-    });   
+            }
+        ]
+    });
+});
 
 
 {% endhighlight %}

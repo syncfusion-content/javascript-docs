@@ -68,11 +68,11 @@ Font option is also available on the labels. The basic three properties of fonts
                 showScaleBar: true,
                 backgroundColor: "#FAF4B5",
                 border: { width: 2, color: "Yellow" },
-                width: 10, radius: 110,
+                width: 10, radius: 150,
                 pointers: [{
                     border: { color: "Yellow", width: 2 },
                     backgroundColor: "#FAF4B5",
-                    value: 40, length: 80,
+                    value: 40, length: 100,
                     width: 16,
                     opacity: 0.6
                 }],
