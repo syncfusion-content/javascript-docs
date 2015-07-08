@@ -41,7 +41,7 @@ documentation: ug
 
 ## Context Menu action
 
-If you want to display only selected items in Context Menu to use `contextMenuItems` property in `contextMenuSettings`.  We can bind the actions of `contextMenuItems` in `contextClick` event at Grid. The following code example illustrates you on how to create Context Menu with selected items.
+When you want to display only the selected items in the Context Menu, use `contextMenuItems` property in `contextMenuSettings`.  You can bind the actions of the `contextMenuItems` in `contextClick` event in the Grid. The following code example explains you on how to create Context Menu with selected items.
 
 {% highlight html %}
 
@@ -95,7 +95,7 @@ _Context Menu in Footer_
 
 ##Context Menu Items
 
-To enable the Context Menu feature, it shows all  options by default . If you want to display only selected items in Context Menu to use `contextMenuItems` property in `contextMenuSettings`. The following code example illustrates you on how to create Context Menu with selected items.
+To enable the Context Menu feature, it displays all the options by default . When you want to display only the selected items in the Context Menu, use `contextMenuItems` property in `contextMenuSettings`. The following code example explains you on how to create Context Menu with selected items.
     
 {% highlight html %}
 
@@ -129,7 +129,7 @@ To enable the Context Menu feature, it shows all  options by default . If you wa
 
 ##Custom Context Menu
 
-The Grid control has support to customize the context menu items using the `customContextMenuItems` property of the `contextMenuSettings`.To define the `customContextMenuItems` action by using `contextClick` event at Grid. The following code example illustrates you on how to create Custom Context Menu.
+The Grid control has support to customize the context menu items by using the `customContextMenuItems` property of the `contextMenuSettings`.To define the `customContextMenuItems` action, use `contextClick` event in the Grid. The following code example explains you on how to create Custom Context Menu.
 
 {% highlight html %}
 
