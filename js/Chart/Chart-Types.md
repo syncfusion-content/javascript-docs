@@ -1024,13 +1024,10 @@ Represents the close values</td></tr>
 
 {% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img26.png" %}
 
-**bullFillColor**
 
-**BullFillColor** is used to specify a fill color for the segment that indicates an increase in stock price in the measured time interval.
+**bullFillColor** is used to specify a fill color for the segment that indicates an increase in stock price in the measured time interval.
 
-**bearFillColor**
-
-**BearFillColor** is used to specify a fill color for the segment that indicates a decrease in stock price in the measured time interval.
+**bearFillColor** is used to specify a fill color for the segment that indicates a decrease in stock price in the measured time interval.
 
 To create a simple **Candle series** use the following code example.
 

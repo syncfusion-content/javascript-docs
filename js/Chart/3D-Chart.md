@@ -9,24 +9,24 @@ documentation: ug
 
 # 3D Chart
 
-Now **EJChart** allows you to create stunning **3D Charts** for Bar, Column, StackingBar, StackingColumn, Pie and Doughnut series. The representation of data in **3D Chart** is very clear and easy to understand when compared to 2D charts. Three dimensions of the series are seen by rotating them. The following properties enhance the perception of **3D Charts**.
+Now EJChart allows you to create stunning 3D Charts for Bar, Column, StackingBar, StackingColumn, 100%StackedColumn, 100%StackedBar, Pie and Doughnut series. The representation of data in 3D Chart is very clear and easy to understand when compared to 2D charts. Three dimensions of the series are seen by rotating them. The following properties enhance the perception of 3D Charts.
 
-* **enable3D**-The property **enable3D** renders **3D Charts** and accepts only the **Boolean** values.
-* **wallSize**-In **3D**, Cartesian axes lines are represented as walls. The property **wallSize** defines the width of the wall. The **wallSize** property does not support for **3D** Pie or Doughnut series because they do not have Cartesian axes lines.
-* **depth**-The **depth** property defines the depth of the **3D Chart** from front view of the series to wall.
-* **tilt**-The **tilt** property defines the angle of the slope of **3D Chart**. The positive and negative values declare the side where the slope is present.
-* **rotation**-The **rotation** property is used to spin the **3D chart**. The direction of the spin depends upon the positive and negative values of **rotation** property.
-* **enableRotation**-The **enableRotation** property allows rotation of **the 3D Chart** dynamically by dragging the mouse on **3D Chart**. Accepting value of this property is **Boolean**.
-* **perspectiveAngle**-The **perspectiveAngle** declares the appearance of the height, width, depth and wall of the **3D Chart**. When the **perspectiveAngle** is decreased, the **3D** object appears closer to viewer. But when it is increased, the **3D** object appears far away from the viewer.
-* **sideBySideSeriesPlacement**-The **sideBySideSeriesPlacement** property defines the appearance of the different sets of data on **3D Chart.** When it is set to **true**, the data is displayed side by side, otherwise it is displayed one by one.
+* `enable3D`-The property [`enable3D`](/js/api/ejchart#enable3dspan-classtype-signature-type-booleanbooleanspan "enable3D") renders 3D Charts and accepts only the `Boolean` values.
+* `wallSize`-In 3D, Cartesian axes lines are represented as walls. The property [`wallSize`](/js/api/ejchart#wallsizespan-classtype-signature-type-numbernumberspan "wallSize") defines the width of the wall. The [`wallSize`](/js/api/ejchart#wallsizespan-classtype-signature-type-numbernumberspan "wallSize") property does not support for 3D Pie or Doughnut series because they do not have Cartesian axes lines.
+* `depth`-The [`depth`](/js/api/ejchart#depthspan-classtype-signature-type-numbernumberspan "depth") property defines the depth of the 3D Chart from front view of the series to wall.
+* `tilt`-The [`tilt`](/js/api/ejchart#titlespan-classtype-signature-type-objectobjectspan "tilt") property defines the angle of the slope of 3D Chart. The positive and negative values declare the side where the slope is present.
+* `rotation`-The [`rotation`](/js/api/ejchart#rotationspan-classtype-signature-type-numbernumberspan "rotation") property is used to spin the 3D chart. The direction of the spin depends upon the positive and negative values of [`rotation`](/js/api/ejchart#rotationspan-classtype-signature-type-numbernumberspan "rotation") property.
+* `enableRotation`-The [`enableRotation`](/js/api/ejchart#enablerotationspan-classtype-signature-type-booleanbooleanspan "enableRotation") property allows rotation of the 3D Chart dynamically by dragging the mouse on 3D Chart. Accepting value of this property is `Boolean`.
+* `perspectiveAngle`-The [`perspectiveAngle`](/js/api/ejchart#perspectiveanglespan-classtype-signature-type-numbernumberspan "perspectiveAngle") declares the appearance of the height, width, depth and wall of the 3D Chart. When the [`perspectiveAngle`](/js/api/ejchart#perspectiveanglespan-classtype-signature-type-numbernumberspan "perspectiveAngle") is decreased, the 3D object appears closer to viewer. But when it is increased, the 3D object appears far away from the viewer.
+* `sideBySideSeriesPlacement`-The [`sideBySideSeriesPlacement`](/js/api/ejchart#sidebysideseriesplacementspan-classtype-signature-type-booleanbooleanspan "sideBySideSeriesPlacement") property defines the appearance of the different sets of data on 3D Chart. When it is set to `true`, the data is displayed side by side, otherwise it is displayed one by one.
 
 ## 3D Series Types
 
-The following are **3D** series types:
+The following are 3D series types:
 
 ### 3D Column Chart
 
-**Column charts** represent data in a vertical rectangular shape. The size of the shape depends upon the data. Different sets of data are compared by using column chart. The comparison is easy when it is set in **3 Dimensional** view. Now **EJChart** gives its support for **3D** by setting the property **enable3D** to **true**. For clear perception, rotate the **3D** column chart to 360 degrees by giving the value as **true** for **enableRotation** property. The depth, wall size, tilt, and rotation of the **3D** chart are customized by setting the property **depth**, **wallSize**, **tilt**, and **rotation** respectively.
+`Column charts` represent data in a vertical rectangular shape. The size of the shape depends upon the data. Different sets of data are compared by using `column chart`. The comparison is easy when it is set in 3 Dimensional view. Now EJChart gives its support for 3D by setting the property [`enable3D`](/js/api/ejchart#enable3dspan-classtype-signature-type-booleanbooleanspan "enable3D") to `true`. For clear perception, rotate the `3D column chart` to 360 degrees by giving the value as `true` for [`enableRotation`](/js/api/ejchart#enablerotationspan-classtype-signature-type-booleanbooleanspan "enableRotation") property. The depth, wall size, tilt, and rotation of the 3D chart are customized by setting the property [`depth`](/js/api/ejchart#depthspan-classtype-signature-type-numbernumberspan "depth"), [`wallSize`](/js/api/ejchart#wallsizespan-classtype-signature-type-numbernumberspan "wallSize"), [`tilt`](/js/api/ejchart#titlespan-classtype-signature-type-objectobjectspan "tilt"), and [`rotation`](/js/api/ejchart#rotationspan-classtype-signature-type-numbernumberspan "rotation") respectively.
 
 {% highlight js %}
 
@@ -51,7 +51,7 @@ The following are **3D** series types:
 
 ### 3D Bar Chart
 
-**3D Bar charts** are similar to **3D Column charts,** but it represents the data in horizontal rectangular shape. The size of the bar depends upon the data. You can customize the depth, wall size, tilt, and rotation of the **3D Bar chart** by setting the property **depth**, **wallSize**, **tilt**, and **rotation** respectively.
+`3D Bar charts` are similar to `3D Column charts`, but it represents the data in horizontal rectangular shape. The size of the bar depends upon the data. You can customize the depth, wall size, tilt, and rotation of the `3D Bar chart` by setting the property [`depth`](/js/api/ejchart#depthspan-classtype-signature-type-numbernumberspan "depth"), [`wallSize`](/js/api/ejchart#wallsizespan-classtype-signature-type-numbernumberspan "wallSize"), [`tilt`](/js/api/ejchart#titlespan-classtype-signature-type-objectobjectspan "tilt"), and [`rotation`](/js/api/ejchart#rotationspan-classtype-signature-type-numbernumberspan "rotation") respectively.
 
 {% highlight js %}
 
@@ -77,7 +77,7 @@ The following are **3D** series types:
 
 ### 3D Stacking Column Chart
 
-**3D Stacking Column Charts** are similar to **3D Column Charts,** but here the Y values of different sets of data are represented in a single vertical bar. You can set different colors and borders for different y values in a single vertical bar by setting the **fill** and **border** properties. You can customize the depth, wall size, tilt, and rotation of the **3D Stacking Column Chart** by setting the property **depth**, **wallSize**, **tilt**, and **rotation** respectively.
+`3D Stacking Column Charts` are similar to `3D Column Charts`, but here the Y values of different sets of data are represented in a single vertical bar. You can set different colors and borders for different y values in a single vertical bar by setting the [`fill`](/js/api/ejchart#seriesfillspan-classtype-signature-type-stringstringspan "fill") and [`border`](/js/api/ejchart#seriesborderspan-classtype-signature-type-objectobjectspan "border") properties. You can customize the depth, wall size, tilt, and rotation of the `3D Stacking Column Chart` by setting [`depth`](/js/api/ejchart#depthspan-classtype-signature-type-numbernumberspan "depth"), [`wallSize`](/js/api/ejchart#wallsizespan-classtype-signature-type-numbernumberspan "wallSize"), [`tilt`](/js/api/ejchart#titlespan-classtype-signature-type-objectobjectspan "tilt"), and [`rotation`](/js/api/ejchart#rotationspan-classtype-signature-type-numbernumberspan "rotation") respectively.
 
 {% highlight js %}
 
@@ -117,7 +117,7 @@ The following are **3D** series types:
 
 ### 3D Stacking Bar Chart
 
-**3D Stacking Bar Charts** are similar to **3D Bar Charts**, but here the Y values of different sets of data are represented in a single horizontal bar. So the comparison of different sets of data is easier than the normal bar chart. You can customize the depth, wall size, tilt, and rotation of the **3D Stacking Bar Chart** by setting the property **depth**, **wallSize**, **tilt**, and **rotation** respectively.
+`3D Stacking Bar Charts` are similar to `3D Bar Charts`, but here the Y values of different sets of data are represented in a single horizontal bar. So the comparison of different sets of data is easier than the normal bar chart. You can customize the depth, wall size, tilt, and rotation of the `3D Stacking Bar Chart` by setting the property [`depth`](/js/api/ejchart#depthspan-classtype-signature-type-numbernumberspan "depth"), [`wallSize`](/js/api/ejchart#wallsizespan-classtype-signature-type-numbernumberspan "wallSize"), [`tilt`](/js/api/ejchart#titlespan-classtype-signature-type-objectobjectspan "tilt"), and [`rotation`](/js/api/ejchart#rotationspan-classtype-signature-type-numbernumberspan "rotation") respectively.
 
 {% highlight js %}
 
@@ -154,7 +154,7 @@ The following are **3D** series types:
 
 ### 3D Pie Chart
 
-**Pie Charts** are circular with several segments. The segments are calculated from the **y** value of the series. Normally, in 2D only the front view of the **pie chart** can be seen. In 3D, there is an option to see the whole side of the **pie chart** by enabling the **enableRotation** property. You can explode a particular segment of pie series by setting the **explodeIndex** property. You can customize the color of each segment by setting the **fill** property, and can also customize the depth, perspective angle, rotation, tilt of the pie chart by setting the appropriate properties.
+`Pie Charts` are circular with several segments. The segments are calculated from the `y` value of the series. Normally, in 2D only the front view of the `pie chart` can be seen. In 3D, there is an option to see the whole side of the `pie chart` by enabling the [`enableRotation`](/js/api/ejchart#enablerotationspan-classtype-signature-type-booleanbooleanspan "enableRotation") property. You can explode a particular segment of pie series by setting the [`explodeIndex`](/js/api/ejchart#seriesexplodeindexspan-classtype-signature-type-numbernumberspan "explodeIndex") property. You can customize the color of each segment by setting the `fill` property, and can also customize the depth, perspective angle, rotation, tilt of the pie chart by setting the appropriate properties.
 
 {% highlight js %}
 
@@ -188,7 +188,7 @@ The following are **3D** series types:
 
 ### 3D Doughnut Chart
 
-**3D Doughnut charts** are similar to **3D Pie Charts** with the difference of having a hole in the center of the **Doughnut chart**. The size of the hole is customized by using the **doughnutCoefficient** property. The size of the **doughnut** is customized by using the **doughnutSize** property. You can rotate the **3D doughnut chart** to 360 degrees by enabling the **enableRotation** property. You can customize each segment’s color and border by setting **fill** and **border** property.
+`3D Doughnut charts` are similar to `3D Pie Charts*` with the difference of having a hole in the center of the `Doughnut chart`. The size of the hole is customized by using the [`doughnutCoefficient`](/js/api/ejchart#seriesdoughnutcoefficientspan-classtype-signature-type-numbernumberspan "doughnutCoefficient") property. The size of the `doughnut` is customized by using the [`doughnutSize`](/js/api/ejchart#seriesdoughnutsizespan-classtype-signature-type-numbernumberspan "doughnutSize") property. You can rotate the `3D doughnut chart` to 360 degrees by enabling the [`enableRotation`](/js/api/ejchart#enablerotationspan-classtype-signature-type-booleanbooleanspan "enableRotation") property. You can customize each segment’s color and border by setting `fill` and `border` property.
 
 {% highlight js %}
 
@@ -221,7 +221,7 @@ The following are **3D** series types:
 
 ### 100% 3D Stacking Column
 
-100% 3D Stacking Column charts are similar to 3D stacking Column charts. But here, the combined contribution of Y values is the combined total of the vertical bar with 100 percent. You can customize the depth, wall size, tilt and rotate the 100% 3D Stacking Column by using the depth, wall size, tilt and rotation property respectively.
+`100% 3D Stacking Column` charts are similar to `3D stacking Column` charts. But here, the combined contribution of Y values is the combined total of the vertical bar with 100 percent. You can customize the depth, wall size, tilt and rotate the `100% 3D Stacking Column` by using the [`depth`](/js/api/ejchart#depthspan-classtype-signature-type-numbernumberspan "depth"), [`wallSize`](/js/api/ejchart#wallsizespan-classtype-signature-type-numbernumberspan "wallSize"), [`tilt`](/js/api/ejchart#titlespan-classtype-signature-type-objectobjectspan "tilt"), and [`rotation`](/js/api/ejchart#rotationspan-classtype-signature-type-numbernumberspan "rotation") properties respectively.
 
 {% highlight js %}
 
@@ -261,7 +261,7 @@ The following screenshot displays the **100% 3D Stacking Column.**
 
 ### 100% 3D Stacking Bar
 
-**100% 3D Stacking Bar charts** are similar to 3D stacking Bar charts. But here, the combined contribution of Y values is the combined total of the horizontal bar with 100 percent. You can customize the depth, wall size, tilt and rotate the **100% 3D Stacking Bar** by using the depth, wall size, tilt and rotation properties respectively.
+`100% 3D Stacking Bar charts` are similar to 3D stacking Bar charts. But here, the combined contribution of Y values is the combined total of the horizontal bar with 100 percent. You can customize the depth, wall size, tilt and rotate the `100% 3D Stacking Bar` by using the [`depth`](/js/api/ejchart#depthspan-classtype-signature-type-numbernumberspan "depth"), [`wallSize`](/js/api/ejchart#wallsizespan-classtype-signature-type-numbernumberspan "wallSize"), [`tilt`](/js/api/ejchart#titlespan-classtype-signature-type-objectobjectspan "tilt"), and [`rotation`](/js/api/ejchart#rotationspan-classtype-signature-type-numbernumberspan "rotation") properties respectively..
 
 {% highlight js %}
 
@@ -295,7 +295,7 @@ The following screenshot displays the **100% 3D Stacking Column.**
 
 
 
-The following screenshot displays the **100% 3D Stacking Bar**.
+The following screenshot displays the `100% 3D Stacking Bar`.
 
 {% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img8.png" %}
 

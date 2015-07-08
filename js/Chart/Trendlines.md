@@ -11,9 +11,7 @@ documentation: ug
 
 ## Overview
 
-**Trendlines** are straight or curved line that indicate the general pattern or direction of series and used to analyse and display the trends in chart graphically. It is built on the assumptions based on current and past trends. This analysis is also called as regression analysis.
-
-**EjChart** can automatically generate Trendlines for Cartesian axes type series (line, column, scatter, area, candle, hilo etc...) except bar type series.
+**EjChart** can generate Trendlines for Cartesian axes type series (line, column, scatter, area, candle, hilo etc...) except bar type series.
 
 The following code example illustrates how to enable Trendlines feature in Chart.
 
