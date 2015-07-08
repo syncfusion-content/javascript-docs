@@ -74,7 +74,7 @@ Requires
 
 
 ### actionButtons<span class="type-signature type stringarray">StringArray</span>
-{:#actionbuttons}
+{:#members-actionbuttons}
 
 
 
@@ -109,7 +109,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### ajaxSettings<span class="type-signature type object">object</span>
-{:#ajaxsettings}
+{:#members-ajaxsettings}
 
 
 
@@ -143,7 +143,7 @@ Example
 
 
 ### ajaxSettings.async<span class="type-signature type boolean">Boolean</span>
-{:#ajaxsettings-async}
+{:#members-ajaxsettings-async}
 
 
 
@@ -156,7 +156,7 @@ It specifies, whether to enable or disable asynchronous request.
 
 
 ### ajaxSettings.cache<span class="type-signature type boolean">Boolean</span>
-{:#ajaxsettings-cache}
+{:#members-ajaxsettings-cache}
 
 
 
@@ -169,7 +169,7 @@ It specifies the page will be cached in the web browser.
 
 
 ### ajaxSettings.contentType<span class="type-signature type string">String</span>
-{:#ajaxsettings-contenttype}
+{:#members-ajaxsettings-contenttype}
 
 
 
@@ -182,7 +182,7 @@ It specifies the type of data is send in the query string.
 
 
 ### ajaxSettings.data<span class="type-signature type object">Object</span>
-{:#ajaxsettings-data}
+{:#members-ajaxsettings-data}
 
 
 
@@ -195,7 +195,7 @@ It specifies the data as an object, will be passed in the query string.
 
 
 ### ajaxSettings.dataType<span class="type-signature type string">String</span>
-{:#ajaxsettings-datatype}
+{:#members-ajaxsettings-datatype}
 
 
 
@@ -208,7 +208,7 @@ It specifies the type of data that you're expecting back from the response.
 
 
 ### ajaxSettings.type<span class="type-signature type string">String</span>
-{:#ajaxsettings-type}
+{:#members-ajaxsettings-type}
 
 
 
@@ -221,7 +221,7 @@ It specifies the HTTP request type.
 
 
 ### allowDraggable<span class="type-signature type boolean">Boolean</span>
-{:#allowdraggable}
+{:#members-allowdraggable}
 
 
 
@@ -256,7 +256,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">Boolean</span>
-{:#allowkeyboardnavigation}
+{:#members-allowkeyboardnavigation}
 
 
 
@@ -291,7 +291,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### closeIconTooltip<span class="type-signature type string">String</span>
-{:#closeicontooltip}
+{:#members-closeicontooltip}
 
 
 
@@ -326,7 +326,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### closeOnEscape<span class="type-signature type boolean">Boolean</span>
-{:#closeonescape}
+{:#members-closeonescape}
 
 
 
@@ -361,7 +361,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### content<span class="type-signature type string">String</span>
-{:#content}
+{:#members-content}
 
 
 
@@ -397,7 +397,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### contentType<span class="type-signature type string">String</span>
-{:#contenttype}
+{:#members-contenttype}
 
 
 
@@ -432,7 +432,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### contentUrl<span class="type-signature type string">String</span>
-{:#contenturl}
+{:#members-contenturl}
 
 
 
@@ -466,7 +466,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">String</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -501,7 +501,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
-{:#enableanimation}
+{:#members-enableanimation}
 
 
 
@@ -536,7 +536,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -571,7 +571,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### enableModal<span class="type-signature type boolean">Boolean</span>
-{:#enablemodal}
+{:#members-enablemodal}
 
 
 
@@ -606,7 +606,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### enablePersistence<span class="type-signature type boolean">Boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -641,7 +641,7 @@ $("#dialog").ejDialog({position: { X: 300, Y: 10 }, enablePersistence: true});
 
 
 ### enableResize<span class="type-signature type boolean">Boolean</span>
-{:#enableresize}
+{:#members-enableresize}
 
 
 
@@ -676,7 +676,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -711,7 +711,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### faviconCSS<span class="type-signature type string">String</span>
-{:#faviconcss}
+{:#members-faviconcss}
 
 
 
@@ -747,7 +747,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### height<span class="type-signature type string">String</span> <span class="type-signature type integer">integer</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -782,7 +782,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### isResponsive<span class="type-signature type boolean">Boolean</span>
-{:#isresponsive}
+{:#members-isresponsive}
 
 
 
@@ -817,7 +817,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### maxHeight<span class="type-signature type integer">Integer</span>
-{:#maxheight}
+{:#members-maxheight}
 
 
 
@@ -852,7 +852,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### maxWidth<span class="type-signature type integer">Integer</span>
-{:#maxwidth}
+{:#members-maxwidth}
 
 
 
@@ -887,7 +887,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### minHeight<span class="type-signature type integer">Integer</span>
-{:#minheight}
+{:#members-minheight}
 
 
 
@@ -922,7 +922,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### minWidth<span class="type-signature type integer">Integer</span>
-{:#minwidth}
+{:#members-minwidth}
 
 
 
@@ -957,7 +957,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### position<span class="type-signature type jsonobject">JSONobject</span>
-{:#position}
+{:#members-position}
 
 
 
@@ -992,7 +992,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### showHeader<span class="type-signature type boolean">Boolean</span>
-{:#showheader}
+{:#members-showheader}
 
 
 
@@ -1027,7 +1027,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### showOnInit<span class="type-signature type boolean">Boolean</span>
-{:#showoninit}
+{:#members-showoninit}
 
 
 
@@ -1062,7 +1062,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
-{:#showroundedcorner}
+{:#members-showroundedcorner}
 
 
 
@@ -1097,7 +1097,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### title<span class="type-signature type string">String</span>
-{:#title}
+{:#members-title}
 
 
 
@@ -1132,7 +1132,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### width<span class="type-signature type string">String</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -1167,7 +1167,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### zIndex<span class="type-signature type integer">Integer</span>
-{:#zindex}
+{:#members-zindex}
 
 
 
@@ -1206,7 +1206,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### close<span class="signature">()</span>
-{:#close}
+{:#methods-close}
 
 
 
@@ -1246,7 +1246,7 @@ $("#dialog").ejDialog("close");
 
 
 ### collapse<span class="signature">()</span>
-{:#collapse}
+{:#methods-collapse}
 
 
 
@@ -1288,7 +1288,7 @@ $("#dialog").ejDialog("collapse");
 
 
 ### destroy<span class="signature">()</span>
-{:#destroy}
+{:#methods-destroy}
 
 
 
@@ -1326,7 +1326,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### expand<span class="signature">()</span>
-{:#expand}
+{:#methods-expand}
 
 
 
@@ -1368,7 +1368,7 @@ $("#dialog").ejDialog("expand");
 
 
 ### isOpened<span class="signature">()</span>
-{:#isopened}
+{:#methods-isopened}
 
 
 
@@ -1408,7 +1408,7 @@ $("#dialog").ejDialog("isOpened");
 
 
 ### maximize<span class="signature">()</span>
-{:#maximize}
+{:#methods-maximize}
 
 
 
@@ -1450,7 +1450,7 @@ $("#dialog").ejDialog("maximize");
 
 
 ### minimize<span class="signature">()</span>
-{:#minimize}
+{:#methods-minimize}
 
 
 
@@ -1492,7 +1492,7 @@ $("#dialog").ejDialog("minimize");
 
 
 ### open<span class="signature">()</span>
-{:#open}
+{:#methods-open}
 
 
 
@@ -1534,7 +1534,7 @@ $("#dialog").ejDialog("open");
 
 
 ### pin<span class="signature">()</span>
-{:#pin}
+{:#methods-pin}
 
 
 
@@ -1576,7 +1576,7 @@ $("#dialog").ejDialog("pin");
 
 
 ### restore<span class="signature">()</span>
-{:#restore}
+{:#methods-restore}
 
 
 
@@ -1618,7 +1618,7 @@ $("#dialog").ejDialog("restore");
 
 
 ### unpin<span class="signature">()</span>
-{:#unpin}
+{:#methods-unpin}
 
 
 
@@ -1664,7 +1664,7 @@ $("#dialog").ejDialog("unpin");
 
 
 ### beforeOpen
-{:#beforeopen}
+{:#events-beforeopen}
 
 
 
@@ -1719,7 +1719,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### ajaxError
-{:#ajaxerror}
+{:#events-ajaxerror}
 
 
 
@@ -1784,7 +1784,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### ajaxSuccess
-{:#ajaxsuccess}
+{:#events-ajaxsuccess}
 
 
 
@@ -1849,7 +1849,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### beforeClose
-{:#beforeclose}
+{:#events-beforeclose}
 
 
 
@@ -1909,7 +1909,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### Close
-{:#close}
+{:#events-close}
 
 
 
@@ -1969,7 +1969,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### contentLoad
-{:#contentload}
+{:#events-contentload}
 
 
 
@@ -2034,7 +2034,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -2089,7 +2089,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -2143,7 +2143,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### drag
-{:#drag}
+{:#events-drag}
 
 
 
@@ -2203,7 +2203,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### dragStart
-{:#dragstart}
+{:#events-dragstart}
 
 
 
@@ -2263,7 +2263,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### dragStop
-{:#dragstop}
+{:#events-dragstop}
 
 
 
@@ -2323,7 +2323,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### open
-{:#open}
+{:#events-open}
 
 
 
@@ -2378,7 +2378,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### resize
-{:#resize}
+{:#events-resize}
 
 
 
@@ -2438,7 +2438,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### resizeStart
-{:#resizestart}
+{:#events-resizestart}
 
 
 
@@ -2498,7 +2498,7 @@ Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a comput
 
 
 ### resizeStop
-{:#resizestop}
+{:#events-resizestop}
 
 
 

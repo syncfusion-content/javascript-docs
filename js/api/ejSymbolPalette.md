@@ -89,7 +89,7 @@ Requires
 
 
 ### allowDrag<span class="type-signature type boolean">Boolean</span>
-{:#allowdrag}
+{:#members-allowdrag}
 
 
 
@@ -136,7 +136,7 @@ $("#symbolpalette").ejSymbolPalette({allowDrag: true});
 
 
 ### cssClass<span class="type-signature type string">String</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -183,7 +183,7 @@ $("#symbolpalette").ejSymbolPalette({cssClass: "e-symbolpalette"});
 
 
 ### diagramId<span class="type-signature type object">Object</span>
-{:#diagramid}
+{:#members-diagramid}
 
 
 
@@ -230,7 +230,7 @@ $("#symbolpalette").ejSymbolPalette({diagramId: "diagram"});
 
 
 ### headerHeight<span class="type-signature type number">Number</span>
-{:#headerheight}
+{:#members-headerheight}
 
 
 
@@ -277,7 +277,7 @@ $("#symbolpalette").ejSymbolPalette({headerHeight: 30});
 
 
 ### height<span class="type-signature type number">Number</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -324,7 +324,7 @@ $("#symbolpalette").ejSymbolPalette({height:500});
 
 
 ### paletteItemHeight<span class="type-signature type number">Number</span>
-{:#paletteitemheight}
+{:#members-paletteitemheight}
 
 
 
@@ -371,7 +371,7 @@ $("#symbolpalette").ejSymbolPalette({paletteItemHeight: 50});
 
 
 ### paletteItemWidth<span class="type-signature type number">Number</span>
-{:#paletteitemwidth}
+{:#members-paletteitemwidth}
 
 
 
@@ -418,7 +418,7 @@ $("#symbolpalette").ejSymbolPalette({paletteItemWidth: 50});
 
 
 ### palettes<span class="type-signature type array">Array</span>
-{:#palettes}
+{:#members-palettes}
 
 
 
@@ -465,7 +465,7 @@ $("#symbolpalette").ejSymbolPalette({palettes: palette});
 
 
 ### previewHeight<span class="type-signature type number">Number</span>
-{:#previewheight}
+{:#members-previewheight}
 
 
 
@@ -512,7 +512,7 @@ $("#symbolpalette").ejSymbolPalette({previewHeight: 100});
 
 
 ### previewOffset<span class="type-signature type object">Object</span>
-{:#previewoffset}
+{:#members-previewoffset}
 
 
 
@@ -559,7 +559,7 @@ $("#symbolpalette").ejSymbolPalette({previewOffset: {x: 102, y: 102 }});
 
 
 ### previewWidth<span class="type-signature type number">Number</span>
-{:#previewwidth}
+{:#members-previewwidth}
 
 
 
@@ -606,7 +606,7 @@ $("#symbolpalette").ejSymbolPalette({previewWidth: 100});
 
 
 ### selectedPaletteName<span class="type-signature type number">Number</span>
-{:#selectedpalettename}
+{:#members-selectedpalettename}
 
 
 
@@ -653,7 +653,7 @@ $("#symbolpalette").ejSymbolPalette({selectedPaletteName: "paletteName"});
 
 
 ### showPaletteItemText<span class="type-signature type boolean">Boolean</span>
-{:#showpaletteitemtext}
+{:#members-showpaletteitemtext}
 
 
 
@@ -700,7 +700,7 @@ $("#symbolpalette").ejSymbolPalette({showPaletteItemText: true});
 
 
 ### width<span class="type-signature type number">Number</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -754,7 +754,7 @@ $("#symbolpalette").ejSymbolPalette({width:300});
 
 
 ### selectionChanged
-{:#selectionchanged}
+{:#events-selectionchanged}
 
 
 

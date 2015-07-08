@@ -99,7 +99,7 @@ Requires
 
 
 ### buttonText<span class="type-signature type string">String</span>
-{:#buttontext}
+{:#members-buttontext}
 
 
 
@@ -148,7 +148,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">String</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -197,7 +197,7 @@ Example
 
 
 ### dateFormat<span class="type-signature type string">String</span>
-{:#dateformat}
+{:#members-dateformat}
 
 
 
@@ -246,7 +246,7 @@ Example
 
 
 ### dayHeaderFormat<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#dayheaderformat}
+{:#members-dayheaderformat}
 
 
 
@@ -295,7 +295,7 @@ Example
 
 
 ### depthLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#depthlevel}
+{:#members-depthlevel}
 
 
 
@@ -344,7 +344,7 @@ Example
 
 
 ### displayDefaultDate<span class="type-signature type boolean">Boolean</span>
-{:#displaydefaultdate}
+{:#members-displaydefaultdate}
 
 
 
@@ -393,7 +393,7 @@ Example
 
 
 ### displayInline<span class="type-signature type boolean">Boolean</span>
-{:#displayinline}
+{:#members-displayinline}
 
 
 
@@ -442,7 +442,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">Boolean</span>
-{:#enableanimation}
+{:#members-enableanimation}
 
 
 
@@ -492,7 +492,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -541,7 +541,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">Boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -590,7 +590,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -639,7 +639,7 @@ Example
 
 
 ### enableStrictMode<span class="type-signature type boolean">Boolean</span>
-{:#enablestrictmode}
+{:#members-enablestrictmode}
 
 
 
@@ -688,7 +688,7 @@ Example
 
 
 ### fields<span class="type-signature type object">object</span>
-{:#fields}
+{:#members-fields}
 
 
 
@@ -739,7 +739,7 @@ specialDates: window.spldays, fields: {date:"date",tooltip:"tooltip",icon:"icon"
 
 
 ### fields.date<span class="type-signature type string">String</span>
-{:#fields-date}
+{:#members-fields-date}
 
 
 
@@ -761,7 +761,7 @@ Specifies the date to datepicker.
 
 
 ### fields.icon<span class="type-signature type string">String</span>
-{:#fields-icon}
+{:#members-fields-icon}
 
 
 
@@ -783,7 +783,7 @@ Specifies the icon to date.
 
 
 ### fields.tooltip<span class="type-signature type string">String</span>
-{:#fields-tooltip}
+{:#members-fields-tooltip}
 
 
 
@@ -805,7 +805,7 @@ Specifies the tooltip to date.
 
 
 ### headerFormat<span class="type-signature type string">String</span>
-{:#headerformat}
+{:#members-headerformat}
 
 
 
@@ -854,7 +854,7 @@ Example
 
 
 ### height<span class="type-signature type string">String</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -903,7 +903,7 @@ Example
 
 
 ### highlightSection<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#highlightsection}
+{:#members-highlightsection}
 
 
 
@@ -952,7 +952,7 @@ Example
 
 
 ### highlightWeekend<span class="type-signature type boolean">Boolean</span>
-{:#highlightweekend}
+{:#members-highlightweekend}
 
 
 
@@ -1001,7 +1001,7 @@ Example
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
-{:#htmlattributes}
+{:#members-htmlattributes}
 
 
 
@@ -1050,7 +1050,7 @@ Example
 
 
 ### locale<span class="type-signature type string">String</span>
-{:#locale}
+{:#members-locale}
 
 
 
@@ -1099,7 +1099,7 @@ Example
 
 
 ### maxDate<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
-{:#maxdate}
+{:#members-maxdate}
 
 
 
@@ -1148,7 +1148,7 @@ Example
 
 
 ### minDate<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
-{:#mindate}
+{:#members-mindate}
 
 
 
@@ -1197,7 +1197,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">Boolean</span>
-{:#readonly}
+{:#members-readonly}
 
 
 
@@ -1246,7 +1246,7 @@ Example
 
 
 ### showFooter<span class="type-signature type boolean">Boolean</span>
-{:#showfooter}
+{:#members-showfooter}
 
 
 
@@ -1295,7 +1295,7 @@ Example
 
 
 ### showOtherMonths<span class="type-signature type boolean">Boolean</span>
-{:#showothermonths}
+{:#members-showothermonths}
 
 
 
@@ -1344,7 +1344,7 @@ Example
 
 
 ### showPopupButton<span class="type-signature type boolean">Boolean</span>
-{:#showpopupbutton}
+{:#members-showpopupbutton}
 
 
 
@@ -1393,7 +1393,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
-{:#showroundedcorner}
+{:#members-showroundedcorner}
 
 
 
@@ -1442,7 +1442,7 @@ Example
 
 
 ### showTooltip<span class="type-signature type boolean">Boolean</span>
-{:#showtooltip}
+{:#members-showtooltip}
 
 
 
@@ -1491,7 +1491,7 @@ Example
 
 
 ### specialDates<span class="type-signature type object">object</span>
-{:#specialdates}
+{:#members-specialdates}
 
 
 
@@ -1541,7 +1541,7 @@ $("#datepicker").ejDatePicker({specialDates:window.spldays});
 
 
 ### startDay<span class="type-signature type number">Number</span>
-{:#startday}
+{:#members-startday}
 
 
 
@@ -1590,7 +1590,7 @@ Example
 
 
 ### startLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#startlevel}
+{:#members-startlevel}
 
 
 
@@ -1639,7 +1639,7 @@ Example
 
 
 ### stepMonths<span class="type-signature type number">Number</span>
-{:#stepmonths}
+{:#members-stepmonths}
 
 
 
@@ -1688,7 +1688,7 @@ Example
 
 
 ### validationMessage<span class="type-signature type object">object</span>
-{:#validationmessage}
+{:#members-validationmessage}
 
 
 
@@ -1744,7 +1744,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
-{:#validationrules}
+{:#members-validationrules}
 
 
 
@@ -1797,7 +1797,7 @@ Example
 
 
 ### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
-{:#value}
+{:#members-value}
 
 
 
@@ -1846,7 +1846,7 @@ Example
 
 
 ### watermarkText<span class="type-signature type string">String</span>
-{:#watermarktext}
+{:#members-watermarktext}
 
 
 
@@ -1895,7 +1895,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -1951,7 +1951,7 @@ Example
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -1995,7 +1995,7 @@ $("#datepicker").ejDatePicker("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -2039,7 +2039,7 @@ $("#datepicker").ejDatePicker("enable");
 
 
 ### getValue<span class="signature">()</span>
-{:#getvalue}
+{:#methods-getvalue}
 
 
 
@@ -2055,7 +2055,7 @@ Returns the current date value in the datepicker control
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 value
 
@@ -2089,7 +2089,7 @@ $("#datepicker").ejDatePicker("getValue");
 
 
 ### hide<span class="signature">()</span>
-{:#hide}
+{:#methods-hide}
 
 
 
@@ -2133,7 +2133,7 @@ $("#datepicker").ejDatePicker("hide");
 
 
 ### show<span class="signature">()</span>
-{:#show}
+{:#methods-show}
 
 
 
@@ -2184,7 +2184,7 @@ $("#datepicker").ejDatePicker("show");
 
 
 ### beforeDateCreate
-{:#beforedatecreate}
+{:#events-beforedatecreate}
 
 
 
@@ -2255,7 +2255,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### change
-{:#change}
+{:#events-change}
 
 
 
@@ -2326,7 +2326,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### close
-{:#close}
+{:#events-close}
 
 
 
@@ -2397,7 +2397,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -2458,7 +2458,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -2519,7 +2519,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### focusIn
-{:#focusin}
+{:#events-focusin}
 
 
 
@@ -2580,7 +2580,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### focusOut
-{:#focusout}
+{:#events-focusout}
 
 
 
@@ -2641,7 +2641,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### open
-{:#open}
+{:#events-open}
 
 
 
@@ -2712,7 +2712,7 @@ $("#datepicker").ejDatePicker({
 
 
 ### select
-{:#select}
+{:#events-select}
 
 
 

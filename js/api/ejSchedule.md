@@ -122,7 +122,7 @@ Requires
 
 
 ### allowDragDrop<span class="type-signature type boolean">boolean</span>
-{:#allowdragdrop}
+{:#members-allowdragdrop}
 
 
 
@@ -183,7 +183,7 @@ Example
 
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
-{:#allowkeyboardnavigation}
+{:#members-allowkeyboardnavigation}
 
 
 
@@ -232,7 +232,7 @@ Example
 
 
 ### appointmentSettings<span class="type-signature type object">Object</span>
-{:#appointmentsettings}
+{:#members-appointmentsettings}
 
 
 
@@ -292,7 +292,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.allDay<span class="type-signature type string">string</span>
-{:#appointmentsettings-allday}
+{:#members-appointmentsettings-allday}
 
 
 
@@ -352,7 +352,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.categorize<span class="type-signature type string">string</span>
-{:#appointmentsettings-categorize}
+{:#members-appointmentsettings-categorize}
 
 
 
@@ -413,7 +413,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.dataSource<span class="type-signature type object">object</span>
-{:#appointmentsettings-datasource}
+{:#members-appointmentsettings-datasource}
 
 
 
@@ -473,7 +473,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.description<span class="type-signature type string">string</span>
-{:#appointmentsettings-description}
+{:#members-appointmentsettings-description}
 
 
 
@@ -533,7 +533,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.endTime<span class="type-signature type string">string</span>
-{:#appointmentsettings-endtime}
+{:#members-appointmentsettings-endtime}
 
 
 
@@ -593,7 +593,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.id<span class="type-signature type string">string</span>
-{:#appointmentsettings-id}
+{:#members-appointmentsettings-id}
 
 
 
@@ -653,7 +653,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.location<span class="type-signature type string">string</span>
-{:#appointmentsettings-location}
+{:#members-appointmentsettings-location}
 
 
 
@@ -715,7 +715,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.priority<span class="type-signature type string">string</span>
-{:#appointmentsettings-priority}
+{:#members-appointmentsettings-priority}
 
 
 
@@ -778,7 +778,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.query<span class="type-signature type object">object</span>
-{:#appointmentsettings-query}
+{:#members-appointmentsettings-query}
 
 
 
@@ -838,7 +838,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.recurrence<span class="type-signature type string">string</span>
-{:#appointmentsettings-recurrence}
+{:#members-appointmentsettings-recurrence}
 
 
 
@@ -898,7 +898,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.recurrenceRule<span class="type-signature type string">string</span>
-{:#appointmentsettings-recurrencerule}
+{:#members-appointmentsettings-recurrencerule}
 
 
 
@@ -958,7 +958,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.resourceFields<span class="type-signature type string">string</span>
-{:#appointmentsettings-resourcefields}
+{:#members-appointmentsettings-resourcefields}
 
 
 
@@ -1029,7 +1029,7 @@ Example
 
 
 ### appointmentSettings.startTime<span class="type-signature type string">string</span>
-{:#appointmentsettings-starttime}
+{:#members-appointmentsettings-starttime}
 
 
 
@@ -1089,7 +1089,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.subject<span class="type-signature type string">string</span>
-{:#appointmentsettings-subject}
+{:#members-appointmentsettings-subject}
 
 
 
@@ -1149,7 +1149,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSettings.tableName<span class="type-signature type string">string</span>
-{:#appointmentsettings-tablename}
+{:#members-appointmentsettings-tablename}
 
 
 
@@ -1210,7 +1210,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentTemplateId<span class="type-signature type string">string</span>
-{:#appointmenttemplateid}
+{:#members-appointmenttemplateid}
 
 
 
@@ -1259,7 +1259,7 @@ Example
 
 
 ### businessEndHour<span class="type-signature type number">number</span>
-{:#businessendhour}
+{:#members-businessendhour}
 
 
 
@@ -1308,7 +1308,7 @@ Example
 
 
 ### businessStartHour<span class="type-signature type number">number</span>
-{:#businessstarthour}
+{:#members-businessstarthour}
 
 
 
@@ -1357,7 +1357,7 @@ Example
 
 
 ### categorizeSettings<span class="type-signature type object">Object</span>
-{:#categorizesettings}
+{:#members-categorizesettings}
 
 
 
@@ -1410,7 +1410,7 @@ $("#Schedule").ejSchedule({
 
 
 ### categorizeSettings.allowMultiple<span class="type-signature type boolean">boolean</span>
-{:#categorizesettings-allowmultiple}
+{:#members-categorizesettings-allowmultiple}
 
 
 
@@ -1459,7 +1459,7 @@ Example
 
 
 ### categorizeSettings.color<span class="type-signature type string">string</span>
-{:#categorizesettings-color}
+{:#members-categorizesettings-color}
 
 
 
@@ -1526,7 +1526,7 @@ $("#Schedule").ejSchedule({
 
 
 ### categorizeSettings.dataSource<span class="type-signature type object">object</span>
-{:#categorizesettings-datasource}
+{:#members-categorizesettings-datasource}
 
 
 
@@ -1584,7 +1584,7 @@ Example
 
 
 ### categorizeSettings.enable<span class="type-signature type boolean">boolean</span>
-{:#categorizesettings-enable}
+{:#members-categorizesettings-enable}
 
 
 
@@ -1633,7 +1633,7 @@ Example
 
 
 ### categorizeSettings.fontColor<span class="type-signature type string">string</span>
-{:#categorizesettings-fontcolor}
+{:#members-categorizesettings-fontcolor}
 
 
 
@@ -1700,7 +1700,7 @@ $("#Schedule").ejSchedule({
 
 
 ### categorizeSettings.id<span class="type-signature type string">string</span>
-{:#categorizesettings-id}
+{:#members-categorizesettings-id}
 
 
 
@@ -1767,7 +1767,7 @@ $("#Schedule").ejSchedule({
 
 
 ### categorizeSettings.text<span class="type-signature type string">string</span>
-{:#categorizesettings-text}
+{:#members-categorizesettings-text}
 
 
 
@@ -1834,7 +1834,7 @@ $("#Schedule").ejSchedule({
 
 
 ### cellHeight<span class="type-signature type string">string</span>
-{:#cellheight}
+{:#members-cellheight}
 
 
 
@@ -1883,7 +1883,7 @@ Example
 
 
 ### cellWidth<span class="type-signature type string">string</span>
-{:#cellwidth}
+{:#members-cellwidth}
 
 
 
@@ -1932,7 +1932,7 @@ Example
 
 
 ### contextMenuSettings<span class="type-signature type object">Object</span>
-{:#contextmenusettings}
+{:#members-contextmenusettings}
 
 
 
@@ -1985,7 +1985,7 @@ $("#Schedule").ejSchedule({
 
 
 ### contextMenuSettings.enable<span class="type-signature type boolean">boolean</span>
-{:#contextmenusettings-enable}
+{:#members-contextmenusettings-enable}
 
 
 
@@ -2034,7 +2034,7 @@ Example
 
 
 ### contextMenuSettings.menuItems<span class="type-signature type object">object</span>
-{:#contextmenusettings-menuitems}
+{:#members-contextmenusettings-menuitems}
 
 
 
@@ -2105,7 +2105,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -2154,7 +2154,7 @@ Example
 
 
 ### currentDate<span class="type-signature type date">date</span>
-{:#currentdate}
+{:#members-currentdate}
 
 
 
@@ -2203,7 +2203,7 @@ Example
 
 
 ### currentView<span class="type-signature type enum">enum</span>
-{:#currentview}
+{:#members-currentview}
 
 
 
@@ -2251,7 +2251,7 @@ Example
 
 
 ### dateFormat<span class="type-signature type string">String</span>
-{:#dateformat}
+{:#members-dateformat}
 
 
 
@@ -2299,7 +2299,7 @@ Example
 
 
 ### enableAppointmentNavigation<span class="type-signature type boolean">boolean</span>
-{:#enableappointmentnavigation}
+{:#members-enableappointmentnavigation}
 
 
 
@@ -2361,7 +2361,7 @@ Example
 
 
 ### enableAppointmentResize<span class="type-signature type boolean">boolean</span>
-{:#enableappointmentresize}
+{:#members-enableappointmentresize}
 
 
 
@@ -2422,7 +2422,7 @@ Example
 
 
 ### enableLoadOnDemand<span class="type-signature type boolean">boolean</span>
-{:#enableloadondemand}
+{:#members-enableloadondemand}
 
 
 
@@ -2471,7 +2471,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -2520,7 +2520,7 @@ Example
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
-{:#enableresize}
+{:#members-enableresize}
 
 
 
@@ -2569,7 +2569,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -2618,7 +2618,7 @@ Example
 
 
 ### endHour<span class="type-signature type number">number</span>
-{:#endhour}
+{:#members-endhour}
 
 
 
@@ -2667,7 +2667,7 @@ Example
 
 
 ### group<span class="type-signature type object">Object</span>
-{:#group}
+{:#members-group}
 
 
 
@@ -2749,7 +2749,7 @@ Example
 
 
 ### height<span class="type-signature type string">string</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -2798,7 +2798,7 @@ Example
 
 
 ### highlightBusinessHours<span class="type-signature type boolean">boolean</span>
-{:#highlightbusinesshours}
+{:#members-highlightbusinesshours}
 
 
 
@@ -2847,7 +2847,7 @@ Example
 
 
 ### isResponsive<span class="type-signature type boolean">boolean</span>
-{:#isresponsive}
+{:#members-isresponsive}
 
 
 
@@ -2896,7 +2896,7 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
-{:#locale}
+{:#members-locale}
 
 
 
@@ -2945,7 +2945,7 @@ Example
 
 
 ### maxDate<span class="type-signature type date">date</span>
-{:#maxdate}
+{:#members-maxdate}
 
 
 
@@ -2994,7 +2994,7 @@ Example
 
 
 ### minDate<span class="type-signature type date">date</span>
-{:#mindate}
+{:#members-mindate}
 
 
 
@@ -3043,7 +3043,7 @@ Example
 
 
 ### orientation<span class="type-signature type enum">enum</span>
-{:#orientation}
+{:#members-orientation}
 
 
 
@@ -3091,7 +3091,7 @@ Example
 
 
 ### prioritySettings.dataSource<span class="type-signature type object">object</span>
-{:#prioritysettings-datasource}
+{:#members-prioritysettings-datasource}
 
 
 
@@ -3143,7 +3143,7 @@ Example
 
 
 ### <code>prioritySettings.enable<span class="type-signature type boolean">boolean</span></code>
-{:#}
+{:#members-}
 
 
 
@@ -3175,7 +3175,7 @@ Example
 
 
 #### <code>Example</code>
-{:#}
+{:#members-}
 
 <pre class="prettyprint">
 <code><code> 
@@ -3192,7 +3192,7 @@ Example
 
 
 ### prioritySettings.id<span class="type-signature type string">string</span>
-{:#prioritysettings-id}
+{:#members-prioritysettings-id}
 
 
 
@@ -3262,7 +3262,7 @@ $("#Schedule").ejSchedule({
 
 
 ### <code>prioritySettings.template<span class="type-signature type boolean">boolean</span></code>
-{:#}
+{:#members-}
 
 
 
@@ -3294,7 +3294,7 @@ $("#Schedule").ejSchedule({
 
 
 #### <code>Example</code>
-{:#}
+{:#members-}
 
 <pre class="prettyprint">
 <code><code> 
@@ -3314,7 +3314,7 @@ $("#Schedule").ejSchedule({
 
 
 ### <code>prioritySettings.text<span class="type-signature type string">string</span></code>
-{:#}
+{:#members-}
 
 
 
@@ -3346,7 +3346,7 @@ $("#Schedule").ejSchedule({
 
 
 #### <code>Example</code>
-{:#}
+{:#members-}
 
 <pre class="prettyprint">
 <code><code>       
@@ -3384,7 +3384,7 @@ $("#Schedule").ejSchedule({
 
 
 ### <code>prioritySettings.value<span class="type-signature type string">string</span></code>
-{:#}
+{:#members-}
 
 
 
@@ -3416,7 +3416,7 @@ $("#Schedule").ejSchedule({
 
 
 #### <code>Example</code>
-{:#}
+{:#members-}
 
 <pre class="prettyprint">
 <code><code>       
@@ -3454,7 +3454,7 @@ $("#Schedule").ejSchedule({
 
 
 ### <code>readOnly<span class="type-signature type boolean">boolean</span></code>
-{:#}
+{:#members-}
 
 
 
@@ -3486,7 +3486,7 @@ $("#Schedule").ejSchedule({
 
 
 #### <code>Example</code>
-{:#}
+{:#members-}
 
 <pre class="prettyprint">
 <code><code> 
@@ -3503,7 +3503,7 @@ $("#Schedule").ejSchedule({
 
 
 ### reminderSettings<span class="type-signature type object">Object</span>
-{:#remindersettings}
+{:#members-remindersettings}
 
 
 
@@ -3556,7 +3556,7 @@ $("#Schedule").ejSchedule({
 
 
 ### reminderSettings.alertBefore<span class="type-signature type number">number</span>
-{:#remindersettings-alertbefore}
+{:#members-remindersettings-alertbefore}
 
 
 
@@ -3605,7 +3605,7 @@ Example
 
 
 ### reminderSettings.enable<span class="type-signature type boolean">boolean</span>
-{:#remindersettings-enable}
+{:#members-remindersettings-enable}
 
 
 
@@ -3654,7 +3654,7 @@ Example
 
 
 ### renderDates<span class="type-signature type object">Object</span>
-{:#renderdates}
+{:#members-renderdates}
 
 
 
@@ -3709,7 +3709,7 @@ Example
 
 
 ### resourceHeaderTemplateId<span class="type-signature type string">string</span>
-{:#resourceheadertemplateid}
+{:#members-resourceheadertemplateid}
 
 
 
@@ -3758,7 +3758,7 @@ Example
 
 
 ### resources<span class="type-signature type object">Object</span>
-{:#resources}
+{:#members-resources}
 
 
 
@@ -3829,7 +3829,7 @@ Example
 
 
 ### showAllDayRow<span class="type-signature type boolean">boolean</span>
-{:#showalldayrow}
+{:#members-showalldayrow}
 
 
 
@@ -3878,7 +3878,7 @@ Example
 
 
 ### showCurrentTimeIndicator<span class="type-signature type boolean">boolean</span>
-{:#showcurrenttimeindicator}
+{:#members-showcurrenttimeindicator}
 
 
 
@@ -3927,7 +3927,7 @@ Example
 
 
 ### showLocationField<span class="type-signature type boolean">boolean</span>
-{:#showlocationfield}
+{:#members-showlocationfield}
 
 
 
@@ -3975,7 +3975,7 @@ Example
 
 
 ### showQuickWindow<span class="type-signature type boolean">boolean</span>
-{:#showquickwindow}
+{:#members-showquickwindow}
 
 
 
@@ -4023,7 +4023,7 @@ Example
 
 
 ### startHour<span class="type-signature type number">number</span>
-{:#starthour}
+{:#members-starthour}
 
 
 
@@ -4072,7 +4072,7 @@ Example
 
 
 ### timeMode<span class="type-signature type enum">enum</span>
-{:#timemode}
+{:#members-timemode}
 
 
 
@@ -4120,7 +4120,7 @@ Example
 
 
 ### timeZone<span class="type-signature type string">string</span>
-{:#timezone}
+{:#members-timezone}
 
 
 
@@ -4169,7 +4169,7 @@ Example
 
 
 ### timezoneCollection<span class="type-signature type object">Object</span>
-{:#timezonecollection}
+{:#members-timezonecollection}
 
 
 
@@ -4221,7 +4221,7 @@ $("#Schedule").ejSchedule({
 
 
 ### timezoneCollection.dataSource<span class="type-signature type object">object</span>
-{:#timezonecollection-datasource}
+{:#members-timezonecollection-datasource}
 
 
 
@@ -4280,7 +4280,7 @@ Example
 
 
 ### timezoneCollection.id<span class="type-signature type string">string</span>
-{:#timezonecollection-id}
+{:#members-timezonecollection-id}
 
 
 
@@ -4343,7 +4343,7 @@ $("#Schedule").ejSchedule({
 
 
 ### timezoneCollection.text<span class="type-signature type string">string</span>
-{:#timezonecollection-text}
+{:#members-timezonecollection-text}
 
 
 
@@ -4406,7 +4406,7 @@ $("#Schedule").ejSchedule({
 
 
 ### timezoneCollection.value<span class="type-signature type string">string</span>
-{:#timezonecollection-value}
+{:#members-timezonecollection-value}
 
 
 
@@ -4469,7 +4469,7 @@ $("#Schedule").ejSchedule({
 
 
 ### views<span class="type-signature type array.string">Array.string</span>
-{:#views}
+{:#members-views}
 
 
 
@@ -4517,7 +4517,7 @@ Example
 
 
 ### width<span class="type-signature type string">string</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -4573,7 +4573,7 @@ Example
 
 
 ### deleteAppointment<span class="signature">()</span>
-{:#deleteappointment}
+{:#methods-deleteappointment}
 
 
 
@@ -4635,7 +4635,7 @@ schObj.deleteAppointment(105); //Appointments id number.
 
 
 ### destroy<span class="signature">()</span>
-{:#destroy}
+{:#methods-destroy}
 
 
 
@@ -4670,7 +4670,7 @@ schObj.destroy(); // destroy the schedule
 
 
 ### exportSchedule<span class="signature">()</span>
-{:#exportschedule}
+{:#methods-exportschedule}
 
 
 
@@ -4743,7 +4743,7 @@ schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single ap
 
 
 ### filterAppointments<span class="signature">()</span>
-{:#filterappointments}
+{:#methods-filterappointments}
 
 
 
@@ -4811,7 +4811,7 @@ var appointments=schObj.filterAppointments(filter); // Gets the appointments lis
 
 
 ### getAppointments<span class="signature">()</span>
-{:#getappointments}
+{:#methods-getappointments}
 
 
 
@@ -4857,7 +4857,7 @@ var appointments=schObj.getAppointments(); // Gets the appointments list of sche
 
 
 ### print<span class="signature">()</span>
-{:#print}
+{:#methods-print}
 
 
 
@@ -4902,7 +4902,7 @@ schObj.print();
 
 
 ### refreshScroller<span class="signature">()</span>
-{:#refreshscroller}
+{:#methods-refreshscroller}
 
 
 
@@ -4937,7 +4937,7 @@ schObj.refreshScroller(); // To refresh scroller while using schedule control in
 
 
 ### saveAppointment<span class="signature">()</span>
-{:#saveappointment}
+{:#methods-saveappointment}
 
 
 
@@ -4998,7 +4998,7 @@ schObj.saveAppointment(obj); //obj contains collection of appointment.
 
 
 ### searchAppointments<span class="signature">()</span>
-{:#searchappointments}
+{:#methods-searchappointments}
 
 
 
@@ -5082,7 +5082,7 @@ var appointments=schObj.searchAppointments("gold"); // Gets the appointments lis
 
 
 ### actionBegin
-{:#actionbegin}
+{:#events-actionbegin}
 
 
 
@@ -5483,7 +5483,7 @@ $("#Schedule").ejSchedule({
 
 
 ### actionComplete
-{:#actioncomplete}
+{:#events-actioncomplete}
 
 
 
@@ -5864,7 +5864,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentClick
-{:#appointmentclick}
+{:#events-appointmentclick}
 
 
 
@@ -5945,7 +5945,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentDeleted
-{:#appointmentdeleted}
+{:#events-appointmentdeleted}
 
 
 
@@ -6026,7 +6026,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentEdited
-{:#appointmentedited}
+{:#events-appointmentedited}
 
 
 
@@ -6107,7 +6107,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentSaved
-{:#appointmentsaved}
+{:#events-appointmentsaved}
 
 
 
@@ -6203,7 +6203,7 @@ $("#Schedule").ejSchedule({
 
 
 ### appointmentWindowOpen
-{:#appointmentwindowopen}
+{:#events-appointmentwindowopen}
 
 
 
@@ -6319,7 +6319,7 @@ $("#Schedule").ejSchedule({
 
 
 ### beforeContextMenuOpen
-{:#beforecontextmenuopen}
+{:#events-beforecontextmenuopen}
 
 
 
@@ -6389,7 +6389,7 @@ $("#Schedule").ejSchedule({
 
 
 ### cellClick
-{:#cellclick}
+{:#events-cellclick}
 
 
 
@@ -6469,7 +6469,7 @@ $("#Schedule").ejSchedule({
 
 
 ### cellDoubleClick
-{:#celldoubleclick}
+{:#events-celldoubleclick}
 
 
 
@@ -6550,7 +6550,7 @@ $("#Schedule").ejSchedule({
 
 
 ### drag
-{:#drag}
+{:#events-drag}
 
 
 
@@ -6631,7 +6631,7 @@ $("#Schedule").ejSchedule({
 
 
 ### dragStart
-{:#dragstart}
+{:#events-dragstart}
 
 
 
@@ -6712,7 +6712,7 @@ $("#Schedule").ejSchedule({
 
 
 ### dragStop
-{:#dragstop}
+{:#events-dragstop}
 
 
 
@@ -6793,7 +6793,7 @@ $("#Schedule").ejSchedule({
 
 
 ### menuItemClick
-{:#menuitemclick}
+{:#events-menuitemclick}
 
 
 
@@ -6863,7 +6863,7 @@ $("#Schedule").ejSchedule({
 
 
 ### navigation
-{:#navigation}
+{:#events-navigation}
 
 
 
@@ -7019,7 +7019,7 @@ $("#Schedule").ejSchedule({
 
 
 ### reminder
-{:#reminder}
+{:#events-reminder}
 
 
 
@@ -7084,7 +7084,7 @@ $("#Schedule").ejSchedule({
 
 
 ### resize
-{:#resize}
+{:#events-resize}
 
 
 
@@ -7165,7 +7165,7 @@ $("#Schedule").ejSchedule({
 
 
 ### resizeStart
-{:#resizestart}
+{:#events-resizestart}
 
 
 
@@ -7246,7 +7246,7 @@ $("#Schedule").ejSchedule({
 
 
 ### resizeStop
-{:#resizestop}
+{:#events-resizestop}
 
 
 

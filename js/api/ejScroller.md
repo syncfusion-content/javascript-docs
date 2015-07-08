@@ -68,7 +68,7 @@ Requires
 
 
 ### buttonSize<span class="type-signature type number">number</span>
-{:#buttonsize}
+{:#members-buttonsize}
 
 
 
@@ -118,7 +118,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -168,7 +168,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -218,7 +218,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -268,7 +268,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### enableTouchScroll<span class="type-signature type boolean">boolean</span>
-{:#enabletouchscroll}
+{:#members-enabletouchscroll}
 
 
 
@@ -318,7 +318,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### height<span class="type-signature type number">number</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -368,7 +368,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### scrollerSize<span class="type-signature type number">number</span>
-{:#scrollersize}
+{:#members-scrollersize}
 
 
 
@@ -419,7 +419,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### scrollLeft<span class="type-signature type number">number</span>
-{:#scrollleft}
+{:#members-scrollleft}
 
 
 
@@ -469,7 +469,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### scrollOneStepBy<span class="type-signature type number">number</span>
-{:#scrollonestepby}
+{:#members-scrollonestepby}
 
 
 
@@ -519,7 +519,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### scrollTop<span class="type-signature type number">number</span>
-{:#scrolltop}
+{:#members-scrolltop}
 
 
 
@@ -569,7 +569,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### targetPane<span class="type-signature type string">string</span>
-{:#targetpane}
+{:#members-targetpane}
 
 
 
@@ -619,7 +619,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### width<span class="type-signature type number">number</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -673,7 +673,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### destroy<span class="signature">()</span>
-{:#destroy}
+{:#methods-destroy}
 
 
 
@@ -740,7 +740,7 @@ $("#scrollcontent").ejScroller("destroy");
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -809,7 +809,7 @@ $("#scrollcontent").ejScroller("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -878,7 +878,7 @@ $("#scrollcontent").ejScroller("enable");
 
 
 ### isHScroll<span class="signature">()</span>
-{:#ishscroll}
+{:#methods-ishscroll}
 
 
 
@@ -888,7 +888,7 @@ Returns horizontal scrollbar is shown or not.
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 value
 
@@ -950,7 +950,7 @@ $("#scrollcontent").ejScroller("isHScroll");
 
 
 ### isVScroll<span class="signature">()</span>
-{:#isvscroll}
+{:#methods-isvscroll}
 
 
 
@@ -960,7 +960,7 @@ Returns vertical scrollbar is shown or not.
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 value
 
@@ -1024,7 +1024,7 @@ $("#scrollcontent").ejScrollBar("isVScroll");
 
 
 ### refresh<span class="signature">()</span>
-{:#refresh}
+{:#methods-refresh}
 
 
 
@@ -1093,7 +1093,7 @@ $("#scrollcontent").ejScroller("refresh");
 
 
 ### scrollX<span class="signature">()</span>
-{:#scrollx}
+{:#methods-scrollx}
 
 
 
@@ -1164,7 +1164,7 @@ $("#scrollcontent").ejScroller("scrollX", 25,false,1000);       // call scrollX 
 
 
 ### scrollY<span class="signature">()</span>
-{:#scrolly}
+{:#methods-scrolly}
 
 
 
@@ -1239,7 +1239,7 @@ $("#scrollcontent").ejScroller("scrollY", 25,false,1000);       // call scrollY 
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -1325,7 +1325,7 @@ $("#scrollcontent").ejScroller({
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 

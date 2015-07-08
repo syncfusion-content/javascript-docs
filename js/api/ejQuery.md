@@ -61,7 +61,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### addParams<span class="signature">(key, value)</span>
-{:#addparams}
+{:#methods-addparams}
 
 
 
@@ -112,7 +112,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/O
 
 
 ### clone<span class="signature">()</span>
-{:#clone}
+{:#methods-clone}
 
 
 
@@ -151,7 +151,7 @@ $(".table tbody").html(tbody);
 
 
 ### excute<span class="signature">(dataManager)</span>
-{:#excute}
+{:#methods-excute}
 
 
 
@@ -183,7 +183,7 @@ It is used to excute the query on URL Binding
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 method executes all operations immediately and does not wait for each individual operation to complete. The result of each operation will be handled once the result is available.
 
@@ -205,7 +205,7 @@ promise.done(function(e){})
 
 
 ### excuteLocal<span class="signature">(dataManager)</span>
-{:#excutelocal}
+{:#methods-excutelocal}
 
 
 
@@ -252,7 +252,7 @@ var promise =  ej.Query().select(["OrderID", "CustomerID", "ShipName", "ShipCity
 
 
 ### expand<span class="signature">(tables)</span>
-{:#expand}
+{:#methods-expand}
 
 
 
@@ -299,7 +299,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
 
 
 ### foreignKey<span class="signature">(key)</span>
-{:#foreignkey}
+{:#methods-foreignkey}
 
 
 
@@ -348,7 +348,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
 
 
 ### from<span class="signature">(tableName)</span>
-{:#from}
+{:#methods-from}
 
 
 
@@ -401,7 +401,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### group<span class="signature">(fieldName)</span>
-{:#group}
+{:#methods-group}
 
 
 
@@ -454,7 +454,7 @@ for(var i=0;i&lt;3;i++){ row="dm[0].items[i];" tbody="" +="String.format("&lt;tr
 
 
 ### hierarchy<span class="signature">(query)</span>
-{:#hierarchy}
+{:#methods-hierarchy}
 
 
 
@@ -503,7 +503,7 @@ var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
 
 
 ### page<span class="signature">(pageIndex, pageSize)</span>
-{:#page}
+{:#methods-page}
 
 
 
@@ -562,7 +562,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### range<span class="signature">(start, end)</span>
-{:#range}
+{:#methods-range}
 
 
 
@@ -652,7 +652,7 @@ var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().Requires
 
 
 ### search<span class="signature">(fieldName, operator, value, ignoreCase)</span>
-{:#search}
+{:#methods-search}
 
 
 
@@ -722,7 +722,7 @@ $(".table tbody").html(tbody);
 
 
 ### select<span class="signature">(fieldName)</span>
-{:#select}
+{:#methods-select}
 
 
 
@@ -775,7 +775,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### skip<span class="signature">(nos)</span>
-{:#skip}
+{:#methods-skip}
 
 
 
@@ -828,7 +828,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### sortBy<span class="signature">(fieldName)</span>
-{:#sortby}
+{:#methods-sortby}
 
 
 
@@ -881,7 +881,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### sortByDesc<span class="signature">(fieldName)</span>
-{:#sortbydesc}
+{:#methods-sortbydesc}
 
 
 
@@ -934,7 +934,7 @@ for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### take<span class="signature">(nos)</span>
-{:#take}
+{:#methods-take}
 
 
 
@@ -987,7 +987,7 @@ for(var i=0;i&lt;5;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/
 
 
 ### using<span class="signature">(dataManager)</span>
-{:#using}
+{:#methods-using}
 
 
 
@@ -1043,7 +1043,7 @@ var tbody = "";
 
 
 ### where<span class="signature">(fieldName, operator, value, ignoreCase)</span>
-{:#where}
+{:#methods-where}
 
 
 

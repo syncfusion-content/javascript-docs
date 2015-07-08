@@ -107,7 +107,7 @@ Requires
 
 
 ### backgroundColor<span class="type-signature type string">String</span>
-{:#backgroundcolor}
+{:#members-backgroundcolor}
 
 
 
@@ -154,7 +154,7 @@ $("#diagramcontent").ejDiagram({ backgroundColor: "red"});
 
 
 ### backgroundImage<span class="type-signature type string">String</span>
-{:#backgroundimage}
+{:#members-backgroundimage}
 
 
 
@@ -201,7 +201,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png"});
 
 
 ### bridgeDirection<span class="type-signature type string">String</span>
-{:#bridgedirection}
+{:#members-bridgedirection}
 
 
 
@@ -249,7 +249,7 @@ $("#diagramContent").ejDiagram({bridgeDirection: "top"} });
 
 
 ### connectors<span class="type-signature type array">array</span>
-{:#connectors}
+{:#members-connectors}
 
 
 
@@ -297,7 +297,7 @@ $("#diagram").ejDiagram({ connectors:connectors });
 
 
 ### connectors.addInfo<span class="type-signature type object">Object</span>
-{:#connectors-addinfo}
+{:#members-connectors-addinfo}
 
 
 
@@ -347,7 +347,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.bridgeSpace<span class="type-signature type integer">Integer</span>
-{:#connectors-bridgespace}
+{:#members-connectors-bridgespace}
 
 
 
@@ -396,7 +396,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.constraints<span class="type-signature type enum">enum</span>
-{:#connectors-constraints}
+{:#members-connectors-constraints}
 
 
 
@@ -445,7 +445,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.cornerRadius<span class="type-signature type integer">Integer</span>
-{:#connectors-cornerradius}
+{:#members-connectors-cornerradius}
 
 
 
@@ -494,7 +494,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.horizontalAlign<span class="type-signature type horizontalalignment"><a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
-{:#connectors-horizontalalign}
+{:#members-connectors-horizontalalign}
 
 
 
@@ -543,7 +543,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.labels<span class="type-signature type array">Array</span>
-{:#connectors-labels}
+{:#members-connectors-labels}
 
 
 
@@ -593,7 +593,7 @@ $("#diagramcontent").ejDiagram({label:label});
 
 
 ### connectors.lineColor<span class="type-signature type string">String</span>
-{:#connectors-linecolor}
+{:#members-connectors-linecolor}
 
 
 
@@ -642,7 +642,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.lineDashArray<span class="type-signature type string">String</span>
-{:#connectors-linedasharray}
+{:#members-connectors-linedasharray}
 
 
 
@@ -691,7 +691,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.lineHitPadding<span class="type-signature type int">Int</span>
-{:#connectors-linehitpadding}
+{:#members-connectors-linehitpadding}
 
 
 
@@ -740,7 +740,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.lineWidth<span class="type-signature type int">Int</span>
-{:#connectors-linewidth}
+{:#members-connectors-linewidth}
 
 
 
@@ -789,7 +789,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.marginBottom<span class="type-signature type int">Int</span>
-{:#connectors-marginbottom}
+{:#members-connectors-marginbottom}
 
 
 
@@ -838,7 +838,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.marginLeft<span class="type-signature type int">Int</span>
-{:#connectors-marginleft}
+{:#members-connectors-marginleft}
 
 
 
@@ -887,7 +887,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.marginRight<span class="type-signature type int">Int</span>
-{:#connectors-marginright}
+{:#members-connectors-marginright}
 
 
 
@@ -936,7 +936,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.marginTop<span class="type-signature type int">Int</span>
-{:#connectors-margintop}
+{:#members-connectors-margintop}
 
 
 
@@ -985,7 +985,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.name<span class="type-signature type string">String</span>
-{:#connectors-name}
+{:#members-connectors-name}
 
 
 
@@ -1034,7 +1034,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.opacity<span class="type-signature type int">Int</span>
-{:#connectors-opacity}
+{:#members-connectors-opacity}
 
 
 
@@ -1083,7 +1083,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.parent<span class="type-signature type string">String</span>
-{:#connectors-parent}
+{:#members-connectors-parent}
 
 
 
@@ -1130,7 +1130,7 @@ var connector = [ {name: "rect",parent:"group1"}];
 
 
 ### connectors.segments<span class="type-signature type array">Array</span>
-{:#connectors-segments}
+{:#members-connectors-segments}
 
 
 
@@ -1180,7 +1180,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.segments.direction<span class="type-signature type string">String</span>
-{:#connectors-segments-direction}
+{:#members-connectors-segments-direction}
 
 
 
@@ -1229,7 +1229,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.segments.length<span class="type-signature type number">Number</span>
-{:#connectors-segments-length}
+{:#members-connectors-segments-length}
 
 
 
@@ -1278,7 +1278,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.segments.point<span class="type-signature type point">Point</span>
-{:#connectors-segments-point}
+{:#members-connectors-segments-point}
 
 
 
@@ -1327,7 +1327,7 @@ $("#diagramcontent").ejDiagram({segments:segments});
 
 
 ### connectors.segments.point1<span class="type-signature type point">Point</span>
-{:#connectors-segments-point1}
+{:#members-connectors-segments-point1}
 
 
 
@@ -1377,7 +1377,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.segments.point2<span class="type-signature type point">Point</span>
-{:#connectors-segments-point2}
+{:#members-connectors-segments-point2}
 
 
 
@@ -1427,7 +1427,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.segments.type<span class="type-signature type enum">enum</span>
-{:#connectors-segments-type}
+{:#members-connectors-segments-type}
 
 
 
@@ -1476,7 +1476,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.segments.vector1<span class="type-signature type point">Point</span>
-{:#connectors-segments-vector1}
+{:#members-connectors-segments-vector1}
 
 
 
@@ -1526,7 +1526,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.segments.vector2<span class="type-signature type point">Point</span>
-{:#connectors-segments-vector2}
+{:#members-connectors-segments-vector2}
 
 
 
@@ -1576,7 +1576,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.sourceDecorator<span class="type-signature type string">String</span>
-{:#connectors-sourcedecorator}
+{:#members-connectors-sourcedecorator}
 
 
 
@@ -1626,7 +1626,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.sourceDecorator.borderColor<span class="type-signature type string">String</span>
-{:#connectors-sourcedecorator-bordercolor}
+{:#members-connectors-sourcedecorator-bordercolor}
 
 
 
@@ -1675,7 +1675,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.borderColor<span class="type-signature type string">String</span>
-{:#connectors-sourcedecorator-bordercolor}
+{:#members-connectors-sourcedecorator-bordercolor}
 
 
 
@@ -1724,7 +1724,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.borderWidth<span class="type-signature type number">Number</span>
-{:#connectors-sourcedecorator-borderwidth}
+{:#members-connectors-sourcedecorator-borderwidth}
 
 
 
@@ -1773,7 +1773,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.fillColor<span class="type-signature type string">String</span>
-{:#connectors-sourcedecorator-fillcolor}
+{:#members-connectors-sourcedecorator-fillcolor}
 
 
 
@@ -1822,7 +1822,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.fillColor<span class="type-signature type string">String</span>
-{:#connectors-sourcedecorator-fillcolor}
+{:#members-connectors-sourcedecorator-fillcolor}
 
 
 
@@ -1871,7 +1871,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.height<span class="type-signature type number">Number</span>
-{:#connectors-sourcedecorator-height}
+{:#members-connectors-sourcedecorator-height}
 
 
 
@@ -1920,7 +1920,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.height<span class="type-signature type number">Number</span>
-{:#connectors-sourcedecorator-height}
+{:#members-connectors-sourcedecorator-height}
 
 
 
@@ -1969,7 +1969,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.pathData<span class="type-signature type string">String</span>
-{:#connectors-sourcedecorator-pathdata}
+{:#members-connectors-sourcedecorator-pathdata}
 
 
 
@@ -2018,7 +2018,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.pathData<span class="type-signature type string">String</span>
-{:#connectors-sourcedecorator-pathdata}
+{:#members-connectors-sourcedecorator-pathdata}
 
 
 
@@ -2067,7 +2067,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.shape<span class="type-signature type enum">enum</span>
-{:#connectors-sourcedecorator-shape}
+{:#members-connectors-sourcedecorator-shape}
 
 
 
@@ -2116,7 +2116,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.shape<span class="type-signature type enum">enum</span>
-{:#connectors-sourcedecorator-shape}
+{:#members-connectors-sourcedecorator-shape}
 
 
 
@@ -2165,7 +2165,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.width<span class="type-signature type number">Number</span>
-{:#connectors-sourcedecorator-width}
+{:#members-connectors-sourcedecorator-width}
 
 
 
@@ -2214,7 +2214,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceDecorator.width<span class="type-signature type number">Number</span>
-{:#connectors-sourcedecorator-width}
+{:#members-connectors-sourcedecorator-width}
 
 
 
@@ -2263,7 +2263,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.sourceNode<span class="type-signature type object">Object</span>
-{:#connectors-sourcenode}
+{:#members-connectors-sourcenode}
 
 
 
@@ -2314,7 +2314,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.sourcePadding<span class="type-signature type integer">Integer</span>
-{:#connectors-sourcepadding}
+{:#members-connectors-sourcepadding}
 
 
 
@@ -2363,7 +2363,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.sourcePoint<span class="type-signature type point">Point</span>
-{:#connectors-sourcepoint}
+{:#members-connectors-sourcepoint}
 
 
 
@@ -2413,7 +2413,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.sourcePort<span class="type-signature type object">Object</span>
-{:#connectors-sourceport}
+{:#members-connectors-sourceport}
 
 
 
@@ -2466,7 +2466,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.targetDecorator<span class="type-signature type string">String</span>
-{:#connectors-targetdecorator}
+{:#members-connectors-targetdecorator}
 
 
 
@@ -2516,7 +2516,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.targetDecorator.borderColor<span class="type-signature type string">String</span>
-{:#connectors-targetdecorator-bordercolor}
+{:#members-connectors-targetdecorator-bordercolor}
 
 
 
@@ -2565,7 +2565,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.targetDecorator.fillColor<span class="type-signature type string">String</span>
-{:#connectors-targetdecorator-fillcolor}
+{:#members-connectors-targetdecorator-fillcolor}
 
 
 
@@ -2614,7 +2614,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.targetDecorator.height<span class="type-signature type number">Number</span>
-{:#connectors-targetdecorator-height}
+{:#members-connectors-targetdecorator-height}
 
 
 
@@ -2663,7 +2663,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.targetDecorator.pathData<span class="type-signature type string">String</span>
-{:#connectors-targetdecorator-pathdata}
+{:#members-connectors-targetdecorator-pathdata}
 
 
 
@@ -2712,7 +2712,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.targetDecorator.shape<span class="type-signature type enum">enum</span>
-{:#connectors-targetdecorator-shape}
+{:#members-connectors-targetdecorator-shape}
 
 
 
@@ -2761,7 +2761,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.targetDecorator.width<span class="type-signature type number">Number</span>
-{:#connectors-targetdecorator-width}
+{:#members-connectors-targetdecorator-width}
 
 
 
@@ -2810,7 +2810,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 ### connectors.targetNode<span class="type-signature type object">Object</span>
-{:#connectors-targetnode}
+{:#members-connectors-targetnode}
 
 
 
@@ -2861,7 +2861,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.targetPadding<span class="type-signature type integer">Integer</span>
-{:#connectors-targetpadding}
+{:#members-connectors-targetpadding}
 
 
 
@@ -2910,7 +2910,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.targetPoint<span class="type-signature type point">Point</span>
-{:#connectors-targetpoint}
+{:#members-connectors-targetpoint}
 
 
 
@@ -2960,7 +2960,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.targetPort<span class="type-signature type object">Object</span>
-{:#connectors-targetport}
+{:#members-connectors-targetport}
 
 
 
@@ -3013,7 +3013,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.verticalAlign<span class="type-signature type verticalalignment"><a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
-{:#connectors-verticalalign}
+{:#members-connectors-verticalalign}
 
 
 
@@ -3062,7 +3062,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.visible<span class="type-signature type boolean">Boolean</span>
-{:#connectors-visible}
+{:#members-connectors-visible}
 
 
 
@@ -3111,7 +3111,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectors.zOrder<span class="type-signature type int">Int</span>
-{:#connectors-zorder}
+{:#members-connectors-zorder}
 
 
 
@@ -3160,7 +3160,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 ### connectorTemplate<span class="type-signature type object">object</span>
-{:#connectortemplate}
+{:#members-connectortemplate}
 
 
 
@@ -3208,7 +3208,7 @@ $("#diagram").ejDiagram({ connectorTemplate:connectorTemplate});
 
 
 ### constraints<span class="type-signature type enum">enum</span>
-{:#constraints}
+{:#members-constraints}
 
 
 
@@ -3256,7 +3256,7 @@ $("#diagramContent").ejDiagram({constraints: ej.datavisualization.Diagram.Diagra
 
 
 ### contextMenu
-{:#contextmenu}
+{:#members-contextmenu}
 
 
 
@@ -3278,7 +3278,7 @@ Object to customize context menu behavior of diagram
 
 
 ### contextMenu.items<span class="type-signature type object">Object</span>
-{:#contextmenu-items}
+{:#members-contextmenu-items}
 
 
 
@@ -3329,7 +3329,7 @@ $("#diagramContent").ejDiagram({contextMenu: contextMenu});
 
 
 ### contextMenu.showCustomMenuItemsOnly<span class="type-signature type boolean">Boolean</span>
-{:#contextmenu-showcustommenuitemsonly}
+{:#members-contextmenu-showcustommenuitemsonly}
 
 
 
@@ -3376,7 +3376,7 @@ $("#diagramcontent").ejDiagram({showCustomMenuItemsOnly: true});
 
 
 ### dataSourceSettings
-{:#datasourcesettings}
+{:#members-datasourcesettings}
 
 
 
@@ -3398,7 +3398,7 @@ Object to set dataSource to diagram
 
 
 ### dataSourceSettings.dataSource<span class="type-signature type object">object</span>
-{:#datasourcesettings-datasource}
+{:#members-datasourcesettings-datasource}
 
 
 
@@ -3445,7 +3445,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: {dataSource: localData}});
 
 
 ### dataSourceSettings.id<span class="type-signature type string">String</span>
-{:#datasourcesettings-id}
+{:#members-datasourcesettings-id}
 
 
 
@@ -3492,7 +3492,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: {id: "CategoryID"}});
 
 
 ### dataSourceSettings.parent<span class="type-signature type string">String</span>
-{:#datasourcesettings-parent}
+{:#members-datasourcesettings-parent}
 
 
 
@@ -3539,7 +3539,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: { parent: "reportingPerson"}});
 
 
 ### dataSourceSettings.query<span class="type-signature type object">object</span>
-{:#datasourcesettings-query}
+{:#members-datasourcesettings-query}
 
 
 
@@ -3586,7 +3586,7 @@ query: ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 
 
 ### dataSourceSettings.root<span class="type-signature type string">String</span>
-{:#datasourcesettings-root}
+{:#members-datasourcesettings-root}
 
 
 
@@ -3633,7 +3633,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: { root: "1"}});
 
 
 ### dataSourceSettings.tablename<span class="type-signature type string">String</span>
-{:#datasourcesettings-tablename}
+{:#members-datasourcesettings-tablename}
 
 
 
@@ -3680,7 +3680,7 @@ $("#diagram").ejDiagram({ dataSourceSettings:{tableName: "Categories"}});
 
 
 ### defaultSettings<span class="type-signature type object">object</span>
-{:#defaultsettings}
+{:#members-defaultsettings}
 
 
 
@@ -3727,7 +3727,7 @@ $("#diagram").ejDiagram({ defaultSettings: { node:  {width: 110, height: 40, fil
 
 
 ### defaultSettings.connector<span class="type-signature type object">object</span>
-{:#defaultsettings-connector}
+{:#members-defaultsettings-connector}
 
 
 
@@ -3774,7 +3774,7 @@ $("#diagram").ejDiagram({ defaultSettings:{ connector:{ lineColor: "gray", lineW
 
 
 ### defaultSettings.node<span class="type-signature type object">object</span>
-{:#defaultsettings-node}
+{:#members-defaultsettings-node}
 
 
 
@@ -3821,7 +3821,7 @@ $("#diagram").ejDiagram({ defaultSettings:{node: { fillColor: "#83A93F", borderC
 
 
 ### drawingTools<span class="type-signature type object">Object</span>
-{:#drawingtools}
+{:#members-drawingtools}
 
 
 
@@ -3868,7 +3868,7 @@ $("#diagramcontent").ejDiagram({ drawingTools: {textTool: ej.datavisualization.D
 
 
 ### drawType<span class="type-signature type object">Object</span>
-{:#drawtype}
+{:#members-drawtype}
 
 
 
@@ -3915,7 +3915,7 @@ $("#diagramcontent").ejDiagram({drawType:{type:"node"}});
 
 
 ### enableAutoScroll<span class="type-signature type boolean">Boolean</span>
-{:#enableautoscroll}
+{:#members-enableautoscroll}
 
 
 
@@ -3962,7 +3962,7 @@ $("#diagramcontent").ejDiagram({enableAutoScroll: true});
 
 
 ### enableContextMenu<span class="type-signature type boolean">Boolean</span>
-{:#enablecontextmenu}
+{:#members-enablecontextmenu}
 
 
 
@@ -4009,7 +4009,7 @@ $("#diagramcontent").ejDiagram({enableContextMenu: true});
 
 
 ### height<span class="type-signature type string">string</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -4056,7 +4056,7 @@ $("#diagram").ejDiagram({ height:"100%" });
 
 
 ### layout
-{:#layout}
+{:#members-layout}
 
 
 
@@ -4078,7 +4078,7 @@ To arrange the diagram elements on page
 
 
 ### layout. fixedNode<span class="type-signature type string">String</span>
-{:#layout-}
+{:#members-layout-}
 
 
 
@@ -4124,7 +4124,7 @@ $("#diagramContent").ejDiagram({layout: { fixedNode: "nodename"}}); </code>
 
 
 ### layout. getLayoutInfo<span class="type-signature type object">object</span>
-{:#layout-}
+{:#members-layout-}
 
 
 
@@ -4172,7 +4172,7 @@ $("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 
 ### layout. marginY<span class="type-signature type number">Number</span>
-{:#layout-}
+{:#members-layout-}
 
 
 
@@ -4218,7 +4218,7 @@ $("#diagramContent").ejDiagram({layout: { marginY: 0}}); </code>
 
 
 ### layout.horizontalSpacing<span class="type-signature type number">Number</span>
-{:#layout-horizontalspacing}
+{:#members-layout-horizontalspacing}
 
 
 
@@ -4264,7 +4264,7 @@ $("#diagramContent").ejDiagram({layout: {horizontalSpacing: 30}}); </code>
 
 
 ### layout.marginX<span class="type-signature type number">Number</span>
-{:#layout-marginx}
+{:#members-layout-marginx}
 
 
 
@@ -4310,7 +4310,7 @@ $("#diagramContent").ejDiagram({layout: {marginX: 0}}); </code>
 
 
 ### layout.orientation<span class="type-signature type string">String</span>
-{:#layout-orientation}
+{:#members-layout-orientation}
 
 
 
@@ -4356,7 +4356,7 @@ $("#diagramContent").ejDiagram({layout: {orientation: "topToBottom"}}); </code>
 
 
 ### layout.type<span class="type-signature type string">String</span>
-{:#layout-type}
+{:#members-layout-type}
 
 
 
@@ -4402,7 +4402,7 @@ $("#diagramContent").ejDiagram({layout: {type: "none"}}); </code>
 
 
 ### layout.verticalSpacing<span class="type-signature type number">Number</span>
-{:#layout-verticalspacing}
+{:#members-layout-verticalspacing}
 
 
 
@@ -4448,7 +4448,7 @@ $("#diagramContent").ejDiagram({layout: {verticalSpacing: 30}}); </code>
 
 
 ### locale<span class="type-signature type string">String</span>
-{:#locale}
+{:#members-locale}
 
 
 
@@ -4495,7 +4495,7 @@ $("#diagramcontent").ejDiagram({locale: "en-US"});
 
 
 ### nodes<span class="type-signature type array">array</span>
-{:#nodes}
+{:#members-nodes}
 
 
 
@@ -4543,7 +4543,7 @@ $("#diagram").ejDiagram({ nodes:nodes });
 
 
 ### nodes.activity<span class="type-signature type enum">enum</span>
-{:#nodes-activity}
+{:#members-nodes-activity}
 
 
 
@@ -4592,7 +4592,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.addInfo<span class="type-signature type object">Object</span>
-{:#nodes-addinfo}
+{:#members-nodes-addinfo}
 
 
 
@@ -4643,7 +4643,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",{addInf
 
 
 ### nodes.allowDrop<span class="type-signature type boolean">Boolean</span>
-{:#nodes-allowdrop}
+{:#members-nodes-allowdrop}
 
 
 
@@ -4692,7 +4692,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.borderColor<span class="type-signature type string">String</span>
-{:#nodes-bordercolor}
+{:#members-nodes-bordercolor}
 
 
 
@@ -4741,7 +4741,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.borderDashArray<span class="type-signature type string">String</span>
-{:#nodes-borderdasharray}
+{:#members-nodes-borderdasharray}
 
 
 
@@ -4790,7 +4790,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.borderWidth<span class="type-signature type number">Number</span>
-{:#nodes-borderwidth}
+{:#members-nodes-borderwidth}
 
 
 
@@ -4839,7 +4839,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.canUngroup<span class="type-signature type boolean">Boolean</span>
-{:#nodes-canungroup}
+{:#members-nodes-canungroup}
 
 
 
@@ -4889,7 +4889,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.children<span class="type-signature type array">Array</span>
-{:#nodes-children}
+{:#members-nodes-children}
 
 
 
@@ -4939,7 +4939,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.collection<span class="type-signature type boolean">Boolean</span>
-{:#nodes-collection}
+{:#members-nodes-collection}
 
 
 
@@ -4988,7 +4988,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.connectorPadding<span class="type-signature type int">Int</span>
-{:#nodes-connectorpadding}
+{:#members-nodes-connectorpadding}
 
 
 
@@ -5037,7 +5037,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.constraints<span class="type-signature type enum">enum</span>
-{:#nodes-constraints}
+{:#members-nodes-constraints}
 
 
 
@@ -5086,7 +5086,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.constraints<span class="type-signature type enum">enum</span>
-{:#nodes-constraints}
+{:#members-nodes-constraints}
 
 
 
@@ -5119,7 +5119,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.container<span class="type-signature type obj">obj</span>
-{:#nodes-container}
+{:#members-nodes-container}
 
 
 
@@ -5168,7 +5168,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.container.orientation<span class="type-signature type string">string</span>
-{:#nodes-container-orientation}
+{:#members-nodes-container-orientation}
 
 
 
@@ -5218,7 +5218,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.container.type<span class="type-signature type enum">enum</span>
-{:#nodes-container-type}
+{:#members-nodes-container-type}
 
 
 
@@ -5268,7 +5268,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.cornerRadius<span class="type-signature type integer">Integer</span>
-{:#nodes-cornerradius}
+{:#members-nodes-cornerradius}
 
 
 
@@ -5317,7 +5317,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.event<span class="type-signature type enum">enum</span>
-{:#nodes-event}
+{:#members-nodes-event}
 
 
 
@@ -5366,7 +5366,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.excludeFromLayout<span class="type-signature type boolean">Boolean</span>
-{:#nodes-excludefromlayout}
+{:#members-nodes-excludefromlayout}
 
 
 
@@ -5415,7 +5415,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.expanded<span class="type-signature type boolean">Boolean</span>
-{:#nodes-expanded}
+{:#members-nodes-expanded}
 
 
 
@@ -5464,7 +5464,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.fillColor<span class="type-signature type string">String</span>
-{:#nodes-fillcolor}
+{:#members-nodes-fillcolor}
 
 
 
@@ -5513,7 +5513,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gateway<span class="type-signature type enum">enum</span>
-{:#nodes-gateway}
+{:#members-nodes-gateway}
 
 
 
@@ -5562,7 +5562,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient
-{:#nodes-gradient}
+{:#members-nodes-gradient}
 
 
 
@@ -5584,7 +5584,7 @@ Smooth transition from one color to another color in node
 
 
 ### nodes.gradient.LinearGradient<span class="type-signature type object">object</span>
-{:#nodes-gradient-lineargradient}
+{:#members-nodes-gradient-lineargradient}
 
 
 
@@ -5606,7 +5606,7 @@ Paints an area with a linear gradient.
 
 
 ### nodes.gradient.LinearGradient.stops<span class="type-signature type array">Array</span>
-{:#nodes-gradient-lineargradient-stops}
+{:#members-nodes-gradient-lineargradient-stops}
 
 
 
@@ -5670,7 +5670,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.LinearGradient.x1<span class="type-signature type int">Int</span>
-{:#nodes-gradient-lineargradient-x1}
+{:#members-nodes-gradient-lineargradient-x1}
 
 
 
@@ -5724,7 +5724,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.LinearGradient.x2<span class="type-signature type int">Int</span>
-{:#nodes-gradient-lineargradient-x2}
+{:#members-nodes-gradient-lineargradient-x2}
 
 
 
@@ -5778,7 +5778,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.LinearGradient.y1<span class="type-signature type int">Int</span>
-{:#nodes-gradient-lineargradient-y1}
+{:#members-nodes-gradient-lineargradient-y1}
 
 
 
@@ -5832,7 +5832,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.LinearGradient.y2<span class="type-signature type int">Int</span>
-{:#nodes-gradient-lineargradient-y2}
+{:#members-nodes-gradient-lineargradient-y2}
 
 
 
@@ -5886,7 +5886,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.RadialGradient<span class="type-signature type object">object</span>
-{:#nodes-gradient-radialgradient}
+{:#members-nodes-gradient-radialgradient}
 
 
 
@@ -5908,7 +5908,7 @@ Paints an area with a radial gradient. A focal point defines the beginning of th
 
 
 ### nodes.gradient.RadialGradient.cx<span class="type-signature type int">Int</span>
-{:#nodes-gradient-radialgradient-cx}
+{:#members-nodes-gradient-radialgradient-cx}
 
 
 
@@ -5962,7 +5962,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.RadialGradient.cy<span class="type-signature type int">Int</span>
-{:#nodes-gradient-radialgradient-cy}
+{:#members-nodes-gradient-radialgradient-cy}
 
 
 
@@ -6016,7 +6016,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.RadialGradient.fx<span class="type-signature type int">Int</span>
-{:#nodes-gradient-radialgradient-fx}
+{:#members-nodes-gradient-radialgradient-fx}
 
 
 
@@ -6070,7 +6070,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.RadialGradient.fy<span class="type-signature type int">Int</span>
-{:#nodes-gradient-radialgradient-fy}
+{:#members-nodes-gradient-radialgradient-fy}
 
 
 
@@ -6124,7 +6124,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.RadialGradient.stops<span class="type-signature type array">Array</span>
-{:#nodes-gradient-radialgradient-stops}
+{:#members-nodes-gradient-radialgradient-stops}
 
 
 
@@ -6188,7 +6188,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.Stop<span class="type-signature type object">object</span>
-{:#nodes-gradient-stop}
+{:#members-nodes-gradient-stop}
 
 
 
@@ -6210,7 +6210,7 @@ Specifies the stops of the node gradients.
 
 
 ### nodes.gradient.Stop.color<span class="type-signature type string">String</span>
-{:#nodes-gradient-stop-color}
+{:#members-nodes-gradient-stop-color}
 
 
 
@@ -6273,7 +6273,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.Stop.offset<span class="type-signature type int">Int</span>
-{:#nodes-gradient-stop-offset}
+{:#members-nodes-gradient-stop-offset}
 
 
 
@@ -6336,7 +6336,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.gradient.Stop.opacity<span class="type-signature type int">Int</span>
-{:#nodes-gradient-stop-opacity}
+{:#members-nodes-gradient-stop-opacity}
 
 
 
@@ -6400,7 +6400,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.header<span class="type-signature type obj">obj</span>
-{:#nodes-header}
+{:#members-nodes-header}
 
 
 
@@ -6447,7 +6447,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  heade
 
 
 ### nodes.height<span class="type-signature type int">Int</span>
-{:#nodes-height}
+{:#members-nodes-height}
 
 
 
@@ -6496,7 +6496,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.horizontalAlign<span class="type-signature type horizontalalignment"><a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
-{:#nodes-horizontalalign}
+{:#members-nodes-horizontalalign}
 
 
 
@@ -6544,7 +6544,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.inEdges<span class="type-signature type array">Array</span>
-{:#nodes-inedges}
+{:#members-nodes-inedges}
 
 
 
@@ -6593,7 +6593,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.isSwimlane<span class="type-signature type boolean">Boolean</span>
-{:#nodes-isswimlane}
+{:#members-nodes-isswimlane}
 
 
 
@@ -6640,7 +6640,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  isSwi
 
 
 ### nodes.labels<span class="type-signature type array">Array</span>
-{:#nodes-labels}
+{:#members-nodes-labels}
 
 
 
@@ -6690,7 +6690,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.labels.bold<span class="type-signature type boolean">Boolean</span>
-{:#nodes-labels-bold}
+{:#members-nodes-labels-bold}
 
 
 
@@ -6739,7 +6739,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.borderColor<span class="type-signature type string">String</span>
-{:#nodes-labels-bordercolor}
+{:#members-nodes-labels-bordercolor}
 
 
 
@@ -6788,7 +6788,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.borderWidth<span class="type-signature type number">Number</span>
-{:#nodes-labels-borderwidth}
+{:#members-nodes-labels-borderwidth}
 
 
 
@@ -6837,7 +6837,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.fillColor<span class="type-signature type string">String</span>
-{:#nodes-labels-fillcolor}
+{:#members-nodes-labels-fillcolor}
 
 
 
@@ -6886,7 +6886,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.fontColor<span class="type-signature type string">String</span>
-{:#nodes-labels-fontcolor}
+{:#members-nodes-labels-fontcolor}
 
 
 
@@ -6935,7 +6935,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.fontFamily<span class="type-signature type string">String</span>
-{:#nodes-labels-fontfamily}
+{:#members-nodes-labels-fontfamily}
 
 
 
@@ -6984,7 +6984,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.fontSize<span class="type-signature type integer">Integer</span>
-{:#nodes-labels-fontsize}
+{:#members-nodes-labels-fontsize}
 
 
 
@@ -7033,7 +7033,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.horizontalAlignment<span class="type-signature type enum">Enum</span>
-{:#nodes-labels-horizontalalignment}
+{:#members-nodes-labels-horizontalalignment}
 
 
 
@@ -7082,7 +7082,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.italic<span class="type-signature type boolean">Boolean</span>
-{:#nodes-labels-italic}
+{:#members-nodes-labels-italic}
 
 
 
@@ -7131,7 +7131,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.margin<span class="type-signature type object">Object</span>
-{:#nodes-labels-margin}
+{:#members-nodes-labels-margin}
 
 
 
@@ -7180,7 +7180,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.mode<span class="type-signature type enum">Enum</span>
-{:#nodes-labels-mode}
+{:#members-nodes-labels-mode}
 
 
 
@@ -7229,7 +7229,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.name<span class="type-signature type string">String</span>
-{:#nodes-labels-name}
+{:#members-nodes-labels-name}
 
 
 
@@ -7278,7 +7278,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.offset<span class="type-signature type point">Point</span>
-{:#nodes-labels-offset}
+{:#members-nodes-labels-offset}
 
 
 
@@ -7327,7 +7327,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.readOnly<span class="type-signature type boolean">Boolean</span>
-{:#nodes-labels-readonly}
+{:#members-nodes-labels-readonly}
 
 
 
@@ -7376,7 +7376,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.rotateAngle<span class="type-signature type number">Number</span>
-{:#nodes-labels-rotateangle}
+{:#members-nodes-labels-rotateangle}
 
 
 
@@ -7425,7 +7425,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.text<span class="type-signature type string">String</span>
-{:#nodes-labels-text}
+{:#members-nodes-labels-text}
 
 
 
@@ -7474,7 +7474,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.textAlign<span class="type-signature type enum">Enum</span>
-{:#nodes-labels-textalign}
+{:#members-nodes-labels-textalign}
 
 
 
@@ -7523,7 +7523,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.textDecoration<span class="type-signature type enum">Enum</span>
-{:#nodes-labels-textdecoration}
+{:#members-nodes-labels-textdecoration}
 
 
 
@@ -7572,7 +7572,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.verticalAlignment<span class="type-signature type enum">Enum</span>
-{:#nodes-labels-verticalalignment}
+{:#members-nodes-labels-verticalalignment}
 
 
 
@@ -7621,7 +7621,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.visible<span class="type-signature type boolean">Boolean</span>
-{:#nodes-labels-visible}
+{:#members-nodes-labels-visible}
 
 
 
@@ -7670,7 +7670,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.width<span class="type-signature type interger">Interger</span>
-{:#nodes-labels-width}
+{:#members-nodes-labels-width}
 
 
 
@@ -7719,7 +7719,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.labels.wrapping<span class="type-signature type enum">Enum</span>
-{:#nodes-labels-wrapping}
+{:#members-nodes-labels-wrapping}
 
 
 
@@ -7768,7 +7768,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.lanes<span class="type-signature type array">Array</span>
-{:#nodes-lanes}
+{:#members-nodes-lanes}
 
 
 
@@ -7818,7 +7818,7 @@ var nodes = [ {type: "swimlane",name: "swimlane",lanes: []}
 
 
 ### nodes.lanes.addInfo<span class="type-signature type object">Object</span>
-{:#nodes-lanes-addinfo}
+{:#members-nodes-lanes-addinfo}
 
 
 
@@ -7865,7 +7865,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "lane",name: "lane",{addInfo: addIn
 
 
 ### nodes.lanes.children<span class="type-signature type array">Array</span>
-{:#nodes-lanes-children}
+{:#members-nodes-lanes-children}
 
 
 
@@ -7912,7 +7912,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 ### nodes.lanes.fillColor<span class="type-signature type string">String</span>
-{:#nodes-lanes-fillcolor}
+{:#members-nodes-lanes-fillcolor}
 
 
 
@@ -7959,7 +7959,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 ### nodes.lanes.header<span class="type-signature type obj">obj</span>
-{:#nodes-lanes-header}
+{:#members-nodes-lanes-header}
 
 
 
@@ -8006,7 +8006,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 ### nodes.lanes.isLane<span class="type-signature type boolean">Boolean</span>
-{:#nodes-lanes-islane}
+{:#members-nodes-lanes-islane}
 
 
 
@@ -8053,7 +8053,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 ### nodes.lanes.labels<span class="type-signature type string">String</span>
-{:#nodes-lanes-labels}
+{:#members-nodes-lanes-labels}
 
 
 
@@ -8100,7 +8100,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 ### nodes.lanes.name<span class="type-signature type string">String</span>
-{:#nodes-lanes-name}
+{:#members-nodes-lanes-name}
 
 
 
@@ -8147,7 +8147,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 ### nodes.lanes.orientation<span class="type-signature type string">String</span>
-{:#nodes-lanes-orientation}
+{:#members-nodes-lanes-orientation}
 
 
 
@@ -8194,7 +8194,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 ### nodes.marginBottom<span class="type-signature type int">Int</span>
-{:#nodes-marginbottom}
+{:#members-nodes-marginbottom}
 
 
 
@@ -8243,7 +8243,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.marginLeft<span class="type-signature type int">Int</span>
-{:#nodes-marginleft}
+{:#members-nodes-marginleft}
 
 
 
@@ -8292,7 +8292,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.marginRight<span class="type-signature type int">Int</span>
-{:#nodes-marginright}
+{:#members-nodes-marginright}
 
 
 
@@ -8341,7 +8341,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.marginTop<span class="type-signature type int">Int</span>
-{:#nodes-margintop}
+{:#members-nodes-margintop}
 
 
 
@@ -8390,7 +8390,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.maxHeight<span class="type-signature type int">Int</span>
-{:#nodes-maxheight}
+{:#members-nodes-maxheight}
 
 
 
@@ -8439,7 +8439,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.maxWidth<span class="type-signature type int">Int</span>
-{:#nodes-maxwidth}
+{:#members-nodes-maxwidth}
 
 
 
@@ -8488,7 +8488,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.minHeight<span class="type-signature type int">Int</span>
-{:#nodes-minheight}
+{:#members-nodes-minheight}
 
 
 
@@ -8537,7 +8537,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.minWidth<span class="type-signature type int">Int</span>
-{:#nodes-minwidth}
+{:#members-nodes-minwidth}
 
 
 
@@ -8586,7 +8586,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.name<span class="type-signature type string">String</span>
-{:#nodes-name}
+{:#members-nodes-name}
 
 
 
@@ -8635,7 +8635,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.offsetX<span class="type-signature type int">Int</span>
-{:#nodes-offsetx}
+{:#members-nodes-offsetx}
 
 
 
@@ -8685,7 +8685,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetX
 
 
 ### nodes.offsetY<span class="type-signature type int">Int</span>
-{:#nodes-offsety}
+{:#members-nodes-offsety}
 
 
 
@@ -8735,7 +8735,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetY
 
 
 ### nodes.opacity<span class="type-signature type number">Number</span>
-{:#nodes-opacity}
+{:#members-nodes-opacity}
 
 
 
@@ -8784,7 +8784,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.orientation<span class="type-signature type string">String</span>
-{:#nodes-orientation}
+{:#members-nodes-orientation}
 
 
 
@@ -8831,7 +8831,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  orien
 
 
 ### nodes.outEdges<span class="type-signature type array">Array</span>
-{:#nodes-outedges}
+{:#members-nodes-outedges}
 
 
 
@@ -8880,7 +8880,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.paddingBottom<span class="type-signature type int">Int</span>
-{:#nodes-paddingbottom}
+{:#members-nodes-paddingbottom}
 
 
 
@@ -8929,7 +8929,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.paddingLeft<span class="type-signature type int">Int</span>
-{:#nodes-paddingleft}
+{:#members-nodes-paddingleft}
 
 
 
@@ -8978,7 +8978,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.paddingRight<span class="type-signature type int">Int</span>
-{:#nodes-paddingright}
+{:#members-nodes-paddingright}
 
 
 
@@ -9027,7 +9027,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.paddingTop<span class="type-signature type int">Int</span>
-{:#nodes-paddingtop}
+{:#members-nodes-paddingtop}
 
 
 
@@ -9076,7 +9076,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.parent<span class="type-signature type string">String</span>
-{:#nodes-parent}
+{:#members-nodes-parent}
 
 
 
@@ -9123,7 +9123,7 @@ var node = [ {name: "rect",parent:"group1"}];
 
 
 ### nodes.pathData<span class="type-signature type string">String</span>
-{:#nodes-pathdata}
+{:#members-nodes-pathdata}
 
 
 
@@ -9172,7 +9172,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.phases<span class="type-signature type array">Array</span>
-{:#nodes-phases}
+{:#members-nodes-phases}
 
 
 
@@ -9222,7 +9222,7 @@ var nodes = [ {type: "swimlane",name: "swimlane",phases: []}
 
 
 ### nodes.phases.label<span class="type-signature type obj">obj</span>
-{:#nodes-phases-label}
+{:#members-nodes-phases-label}
 
 
 
@@ -9269,7 +9269,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phases.lineColor<span class="type-signature type string">String</span>
-{:#nodes-phases-linecolor}
+{:#members-nodes-phases-linecolor}
 
 
 
@@ -9316,7 +9316,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phases.lineDashArray<span class="type-signature type string">String</span>
-{:#nodes-phases-linedasharray}
+{:#members-nodes-phases-linedasharray}
 
 
 
@@ -9363,7 +9363,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phases.lineWidth<span class="type-signature type int">Int</span>
-{:#nodes-phases-linewidth}
+{:#members-nodes-phases-linewidth}
 
 
 
@@ -9410,7 +9410,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phases.name<span class="type-signature type string">String</span>
-{:#nodes-phases-name}
+{:#members-nodes-phases-name}
 
 
 
@@ -9457,7 +9457,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phases.offset<span class="type-signature type int">Int</span>
-{:#nodes-phases-offset}
+{:#members-nodes-phases-offset}
 
 
 
@@ -9504,7 +9504,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phases.orientation<span class="type-signature type string">String</span>
-{:#nodes-phases-orientation}
+{:#members-nodes-phases-orientation}
 
 
 
@@ -9551,7 +9551,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phases.parent<span class="type-signature type string">String</span>
-{:#nodes-phases-parent}
+{:#members-nodes-phases-parent}
 
 
 
@@ -9598,7 +9598,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phases.type<span class="type-signature type string">String</span>
-{:#nodes-phases-type}
+{:#members-nodes-phases-type}
 
 
 
@@ -9645,7 +9645,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 ### nodes.phaseSize<span class="type-signature type int">Int</span>
-{:#nodes-phasesize}
+{:#members-nodes-phasesize}
 
 
 
@@ -9692,7 +9692,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",phaseSi
 
 
 ### nodes.pivot<span class="type-signature type point">Point</span>
-{:#nodes-pivot}
+{:#members-nodes-pivot}
 
 
 
@@ -9741,7 +9741,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.points<span class="type-signature type array">Array</span>
-{:#nodes-points}
+{:#members-nodes-points}
 
 
 
@@ -9790,7 +9790,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports<span class="type-signature type array">Array</span>
-{:#nodes-ports}
+{:#members-nodes-ports}
 
 
 
@@ -9839,7 +9839,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.ports.borderColor<span class="type-signature type string">String</span>
-{:#nodes-ports-bordercolor}
+{:#members-nodes-ports-bordercolor}
 
 
 
@@ -9888,7 +9888,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.borderWidth<span class="type-signature type number">Number</span>
-{:#nodes-ports-borderwidth}
+{:#members-nodes-ports-borderwidth}
 
 
 
@@ -9937,7 +9937,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.connectorPadding<span class="type-signature type int">Int</span>
-{:#nodes-ports-connectorpadding}
+{:#members-nodes-ports-connectorpadding}
 
 
 
@@ -9985,7 +9985,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.constraints<span class="type-signature type enum">enum</span>
-{:#nodes-ports-constraints}
+{:#members-nodes-ports-constraints}
 
 
 
@@ -10034,7 +10034,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.fillColor<span class="type-signature type string">String</span>
-{:#nodes-ports-fillcolor}
+{:#members-nodes-ports-fillcolor}
 
 
 
@@ -10083,7 +10083,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.name;<span class="type-signature type string">String</span>
-{:#nodes-ports-name;}
+{:#members-nodes-ports-name;}
 
 
 
@@ -10132,7 +10132,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.offset<span class="type-signature type point">Point</span>
-{:#nodes-ports-offset}
+{:#members-nodes-ports-offset}
 
 
 
@@ -10181,7 +10181,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.pathData<span class="type-signature type string">String</span>
-{:#nodes-ports-pathdata}
+{:#members-nodes-ports-pathdata}
 
 
 
@@ -10230,7 +10230,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.shape<span class="type-signature type enum">enum</span>
-{:#nodes-ports-shape}
+{:#members-nodes-ports-shape}
 
 
 
@@ -10279,7 +10279,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.size<span class="type-signature type number">Number</span>
-{:#nodes-ports-size}
+{:#members-nodes-ports-size}
 
 
 
@@ -10328,7 +10328,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.ports.visibility<span class="type-signature type enum">enum</span>
-{:#nodes-ports-visibility}
+{:#members-nodes-ports-visibility}
 
 
 
@@ -10377,7 +10377,7 @@ $("#diagramcontent").ejDiagram({nodes:port});
 
 
 ### nodes.rotateAngle<span class="type-signature type number">Number</span>
-{:#nodes-rotateangle}
+{:#members-nodes-rotateangle}
 
 
 
@@ -10426,7 +10426,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.shadow<span class="type-signature type object">Object</span>
-{:#nodes-shadow}
+{:#members-nodes-shadow}
 
 
 
@@ -10475,7 +10475,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.shadow.angle<span class="type-signature type integer">Integer</span>
-{:#nodes-shadow-angle}
+{:#members-nodes-shadow-angle}
 
 
 
@@ -10524,7 +10524,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.shadow.distance<span class="type-signature type integer">Integer</span>
-{:#nodes-shadow-distance}
+{:#members-nodes-shadow-distance}
 
 
 
@@ -10573,7 +10573,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.shadow.opacity<span class="type-signature type float">float</span>
-{:#nodes-shadow-opacity}
+{:#members-nodes-shadow-opacity}
 
 
 
@@ -10622,7 +10622,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.shape<span class="type-signature type enum">Enum</span>
-{:#nodes-shape}
+{:#members-nodes-shape}
 
 
 
@@ -10671,7 +10671,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.source<span class="type-signature type string">String</span>
-{:#nodes-source}
+{:#members-nodes-source}
 
 
 
@@ -10720,7 +10720,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.subProcess<span class="type-signature type object">object</span>
-{:#nodes-subprocess}
+{:#members-nodes-subprocess}
 
 
 
@@ -10769,7 +10769,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.subProcess.adhoc<span class="type-signature type boolean">Boolean</span>
-{:#nodes-subprocess-adhoc}
+{:#members-nodes-subprocess-adhoc}
 
 
 
@@ -10818,7 +10818,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.subProcess.boundary<span class="type-signature type enum">enum</span>
-{:#nodes-subprocess-boundary}
+{:#members-nodes-subprocess-boundary}
 
 
 
@@ -10867,7 +10867,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.subProcess.compensation<span class="type-signature type boolean">Boolean</span>
-{:#nodes-subprocess-compensation}
+{:#members-nodes-subprocess-compensation}
 
 
 
@@ -10916,7 +10916,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.subProcess.loop<span class="type-signature type enum">enum</span>
-{:#nodes-subprocess-loop}
+{:#members-nodes-subprocess-loop}
 
 
 
@@ -10965,7 +10965,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.task<span class="type-signature type object">object</span>
-{:#nodes-task}
+{:#members-nodes-task}
 
 
 
@@ -11014,7 +11014,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.tasks.call<span class="type-signature type boolean">Boolean</span>
-{:#nodes-tasks-call}
+{:#members-nodes-tasks-call}
 
 
 
@@ -11063,7 +11063,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.tasks.compensation<span class="type-signature type boolean">Boolean</span>
-{:#nodes-tasks-compensation}
+{:#members-nodes-tasks-compensation}
 
 
 
@@ -11112,7 +11112,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.tasks.loop<span class="type-signature type enum">enum</span>
-{:#nodes-tasks-loop}
+{:#members-nodes-tasks-loop}
 
 
 
@@ -11161,7 +11161,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.tasks.type<span class="type-signature type enum">enum</span>
-{:#nodes-tasks-type}
+{:#members-nodes-tasks-type}
 
 
 
@@ -11210,7 +11210,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.templateId<span class="type-signature type string">string</span>
-{:#nodes-templateid}
+{:#members-nodes-templateid}
 
 
 
@@ -11259,7 +11259,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.textBlock<span class="type-signature type integer">Integer</span>
-{:#nodes-textblock}
+{:#members-nodes-textblock}
 
 
 
@@ -11310,7 +11310,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.trigger<span class="type-signature type enum">enum</span>
-{:#nodes-trigger}
+{:#members-nodes-trigger}
 
 
 
@@ -11359,7 +11359,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.type<span class="type-signature type enum">enum</span>
-{:#nodes-type}
+{:#members-nodes-type}
 
 
 
@@ -11408,7 +11408,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 ### nodes.vertical Align<span class="type-signature type verticalalignment"><a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
-{:#nodes-vertical}
+{:#members-nodes-vertical}
 
 
 
@@ -11457,7 +11457,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 ### nodes.visible<span class="type-signature type boolean">Boolean</span>
-{:#nodes-visible}
+{:#members-nodes-visible}
 
 
 
@@ -11506,7 +11506,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.width<span class="type-signature type int">Int</span>
-{:#nodes-width}
+{:#members-nodes-width}
 
 
 
@@ -11555,7 +11555,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodes.zOrder<span class="type-signature type int">Int</span>
-{:#nodes-zorder}
+{:#members-nodes-zorder}
 
 
 
@@ -11604,7 +11604,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 ### nodeTemplate<span class="type-signature type object">object</span>
-{:#nodetemplate}
+{:#members-nodetemplate}
 
 
 
@@ -11652,7 +11652,7 @@ $("#diagram").ejDiagram({ nodeTemplate:nodeTemplate});
 
 
 ### pageSettings
-{:#pagesettings}
+{:#members-pagesettings}
 
 
 
@@ -11674,7 +11674,7 @@ To define the page settings of diagram
 
 
 ### pageSettings.multiplePage<span class="type-signature type boolean">Boolean</span>
-{:#pagesettings-multiplepage}
+{:#members-pagesettings-multiplepage}
 
 
 
@@ -11720,7 +11720,7 @@ $("#diagramContent").ejDiagram({pageSettings: {multiplePage: false}}); </code>
 
 
 ### pageSettings.pageBackgroundColor<span class="type-signature type string">String</span>
-{:#pagesettings-pagebackgroundcolor}
+{:#members-pagesettings-pagebackgroundcolor}
 
 
 
@@ -11766,7 +11766,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBackgroundColor: "#ffffff"}})
 
 
 ### pageSettings.pageBorderColor<span class="type-signature type string">String</span>
-{:#pagesettings-pagebordercolor}
+{:#members-pagesettings-pagebordercolor}
 
 
 
@@ -11812,7 +11812,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBorderColor: "#565656"}}); </
 
 
 ### pageSettings.pageBorderWidth<span class="type-signature type number">Number</span>
-{:#pagesettings-pageborderwidth}
+{:#members-pagesettings-pageborderwidth}
 
 
 
@@ -11858,7 +11858,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBorderWidth: 3}}); </code>
 
 
 ### pageSettings.pageHeight<span class="type-signature type number">Number</span>
-{:#pagesettings-pageheight}
+{:#members-pagesettings-pageheight}
 
 
 
@@ -11904,7 +11904,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageHeight: 4500}}); </code>
 
 
 ### pageSettings.pageMargin<span class="type-signature type number">Number</span>
-{:#pagesettings-pagemargin}
+{:#members-pagesettings-pagemargin}
 
 
 
@@ -11950,7 +11950,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageMargin: 24}}); </code>
 
 
 ### pageSettings.pageWidth<span class="type-signature type number">Number</span>
-{:#pagesettings-pagewidth}
+{:#members-pagesettings-pagewidth}
 
 
 
@@ -11996,7 +11996,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageWidth: 4500}}); </code>
 
 
 ### pageSettings.showPageBreak<span class="type-signature type boolean">Boolean</span>
-{:#pagesettings-showpagebreak}
+{:#members-pagesettings-showpagebreak}
 
 
 
@@ -12042,7 +12042,7 @@ $("#diagramContent").ejDiagram({pageSettings: {showPageBreak: false}}); </code>
 
 
 ### selectedItems<span class="type-signature type object">object</span>
-{:#selecteditems}
+{:#members-selecteditems}
 
 
 
@@ -12064,7 +12064,7 @@ The object to define the behavior of the selected items
 
 
 ### selectedItems.constraints<span class="type-signature type enum">enum</span>
-{:#selecteditems-constraints}
+{:#members-selecteditems-constraints}
 
 
 
@@ -12112,7 +12112,7 @@ $("#diagramContent").ejDiagram({selectedItems:{constraints: ej.datavisualization
 
 
 ### selectedItems.height<span class="type-signature type number">Number</span>
-{:#selecteditems-height}
+{:#members-selecteditems-height}
 
 
 
@@ -12157,7 +12157,7 @@ $("#diagramContent").ejDiagram({selectedItems: {height: 50}}); </code>
 
 
 ### selectedItems.offsetX<span class="type-signature type number">Number</span>
-{:#selecteditems-offsetx}
+{:#members-selecteditems-offsetx}
 
 
 
@@ -12202,7 +12202,7 @@ $("#diagramContent").ejDiagram({selectedItems: {offsetX: 50}}); </code>
 
 
 ### selectedItems.offsetY<span class="type-signature type number">Number</span>
-{:#selecteditems-offsety}
+{:#members-selecteditems-offsety}
 
 
 
@@ -12247,7 +12247,7 @@ $("#diagramContent").ejDiagram({selectedItems: {offsetY: 50}}); </code>
 
 
 ### selectedItems.rotateAngle<span class="type-signature type number">Number</span>
-{:#selecteditems-rotateangle}
+{:#members-selecteditems-rotateangle}
 
 
 
@@ -12292,7 +12292,7 @@ $("#diagramContent").ejDiagram({selectedItems: {rotateAngle: 50}}); </code>
 
 
 ### selectedItems.userHandles<span class="type-signature type array">array</span>
-{:#selecteditems-userhandles}
+{:#members-selecteditems-userhandles}
 
 
 
@@ -12344,7 +12344,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 
 ### selectedItems.width<span class="type-signature type number">Number</span>
-{:#selecteditems-width}
+{:#members-selecteditems-width}
 
 
 
@@ -12389,7 +12389,7 @@ $("#diagramContent").ejDiagram({selectedItems: {width: 50}}); </code>
 
 
 ### showTooltip<span class="type-signature type boolean">Boolean</span>
-{:#showtooltip}
+{:#members-showtooltip}
 
 
 
@@ -12436,7 +12436,7 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 
 
 ### snapSettings<span class="type-signature type object">object</span>
-{:#snapsettings}
+{:#members-snapsettings}
 
 
 
@@ -12458,7 +12458,7 @@ Specifies the snap settings of the diagram.
 
 
 ### snapSettings.enableSnapToObject<span class="type-signature type boolean">Boolean</span>
-{:#snapsettings-enablesnaptoobject}
+{:#members-snapsettings-enablesnaptoobject}
 
 
 
@@ -12505,7 +12505,7 @@ $("#diagramContent").ejDiagram({snapSettings: snap}); </code>
 
 
 ### snapSettings.horizontalGridLines<span class="type-signature type object">object</span>
-{:#snapsettings-horizontalgridlines}
+{:#members-snapsettings-horizontalgridlines}
 
 
 
@@ -12527,7 +12527,7 @@ Specifies the settings of horizontal grid lines.
 
 
 ### snapSettings.horizontalGridLines.lineColor<span class="type-signature type string">string</span>
-{:#snapsettings-horizontalgridlines-linecolor}
+{:#members-snapsettings-horizontalgridlines-linecolor}
 
 
 
@@ -12577,7 +12577,7 @@ $("#diagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 
 ### snapSettings.horizontalGridLines.lineDashArray<span class="type-signature type string">string</span>
-{:#snapsettings-horizontalgridlines-linedasharray}
+{:#members-snapsettings-horizontalgridlines-linedasharray}
 
 
 
@@ -12625,7 +12625,7 @@ $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { lineDashArray: 
 
 
 ### snapSettings.horizontalGridLines.linesInterval<span class="type-signature type array">array</span>
-{:#snapsettings-horizontalgridlines-linesinterval}
+{:#members-snapsettings-horizontalgridlines-linesinterval}
 
 
 
@@ -12674,7 +12674,7 @@ $("#diagram").ejDiagram({ snapSettings: {
 
 
 ### snapSettings.horizontalGridLines.snapInterval<span class="type-signature type array">array</span>
-{:#snapsettings-horizontalgridlines-snapinterval}
+{:#members-snapsettings-horizontalgridlines-snapinterval}
 
 
 
@@ -12722,7 +12722,7 @@ $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { snapInterval: [
 
 
 ### snapSettings.snapAngle<span class="type-signature type number">Number</span>
-{:#snapsettings-snapangle}
+{:#members-snapsettings-snapangle}
 
 
 
@@ -12769,7 +12769,7 @@ $("#diagramContent").ejDiagram({snapSettings: snap}); </code>
 
 
 ### snapSettings.snapObjectDistance<span class="type-signature type number">Number</span>
-{:#snapsettings-snapobjectdistance}
+{:#members-snapsettings-snapobjectdistance}
 
 
 
@@ -12816,7 +12816,7 @@ $("#diagramContent").ejDiagram({snapSettings: snap}); </code>
 
 
 ### snapSettings.verticalGridLines<span class="type-signature type object">object</span>
-{:#snapsettings-verticalgridlines}
+{:#members-snapsettings-verticalgridlines}
 
 
 
@@ -12838,7 +12838,7 @@ Specifies the settings of vertical grid lines.
 
 
 ### snapSettings.verticalGridLines.lineColor<span class="type-signature type string">string</span>
-{:#snapsettings-verticalgridlines-linecolor}
+{:#members-snapsettings-verticalgridlines-linecolor}
 
 
 
@@ -12888,7 +12888,7 @@ $("#diagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 
 ### snapSettings.verticalGridLines.lineDashArray<span class="type-signature type string">string</span>
-{:#snapsettings-verticalgridlines-linedasharray}
+{:#members-snapsettings-verticalgridlines-linedasharray}
 
 
 
@@ -12936,7 +12936,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { lineDashArray: "2
 
 
 ### snapSettings.verticalGridLines.linesInterval<span class="type-signature type array">array</span>
-{:#snapsettings-verticalgridlines-linesinterval}
+{:#members-snapsettings-verticalgridlines-linesinterval}
 
 
 
@@ -12985,7 +12985,7 @@ $("#diagram").ejDiagram({ snapSettings: {
 
 
 ### snapSettings.verticalGridLines.snapInterval<span class="type-signature type array">array</span>
-{:#snapsettings-verticalgridlines-snapinterval}
+{:#members-snapsettings-verticalgridlines-snapinterval}
 
 
 
@@ -13033,7 +13033,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { snapInterval: [10
 
 
 ### tool<span class="type-signature type enum">enum</span>
-{:#tool}
+{:#members-tool}
 
 
 
@@ -13081,7 +13081,7 @@ $("#diagramContent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.Default}
 
 
 ### tooltipTemplateId<span class="type-signature type string">String</span>
-{:#tooltiptemplateid}
+{:#members-tooltiptemplateid}
 
 
 
@@ -13133,7 +13133,7 @@ $("#diagramcontent").ejDiagram({ tooltipTemplateId: "toolTipId"});
 
 
 ### version<span class="type-signature type string">String</span>
-{:#version}
+{:#members-version}
 
 
 
@@ -13180,7 +13180,7 @@ $("#diagramcontent").ejDiagram("instance");
 
 
 ### width<span class="type-signature type string">string</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -13227,7 +13227,7 @@ $("#diagram").ejDiagram({ width:"100%" });
 
 
 ### zoomFactor<span class="type-signature type number">Number</span>
-{:#zoomfactor}
+{:#members-zoomfactor}
 
 
 
@@ -13282,7 +13282,7 @@ $("#diagramContent").ejDiagram({zoomFactor: 1});
 
 
 ### activateTool<span class="signature">(toolName, singleAction)</span>
-{:#activatetool}
+{:#methods-activatetool}
 
 
 
@@ -13342,7 +13342,7 @@ diagram.activateTool("orthogonalTool",false);
 
 
 ### add<span class="signature">(node)</span>
-{:#add}
+{:#methods-add}
 
 
 
@@ -13392,7 +13392,7 @@ diagram.add(node);
 
 
 ### addPhase<span class="signature">(name, options)</span>
-{:#addphase}
+{:#methods-addphase}
 
 
 
@@ -13446,7 +13446,7 @@ diagram.addPhase("swimlane", { name: "CustomPhase", offset: 600, label: { text: 
 
 
 ### addPorts<span class="signature">(name, ports)</span>
-{:#addports}
+{:#methods-addports}
 
 
 
@@ -13501,7 +13501,7 @@ diagram.addPorts("Rect1", port);
 
 
 ### addSelection<span class="signature">(node)</span>
-{:#addselection}
+{:#methods-addselection}
 
 
 
@@ -13550,7 +13550,7 @@ diagram.addSelection(node);
 
 
 ### align<span class="signature">(direction)</span>
-{:#align}
+{:#methods-align}
 
 
 
@@ -13598,7 +13598,7 @@ diagram.align("left");
 
 
 ### bringIntoView<span class="signature">(bounds)</span>
-{:#bringintoview}
+{:#methods-bringintoview}
 
 
 
@@ -13646,7 +13646,7 @@ diagram.bringIntoView(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
 
 
 ### bringToCenter<span class="signature">(rect)</span>
-{:#bringtocenter}
+{:#methods-bringtocenter}
 
 
 
@@ -13694,7 +13694,7 @@ diagram.bringToCenter(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
 
 
 ### bringToFront<span class="signature">()</span>
-{:#bringtofront}
+{:#methods-bringtofront}
 
 
 
@@ -13726,7 +13726,7 @@ diagram.bringToFront();
 
 
 ### clear<span class="signature">()</span>
-{:#clear}
+{:#methods-clear}
 
 
 
@@ -13758,7 +13758,7 @@ diagram.clear();
 
 
 ### copy<span class="signature">()</span>
-{:#copy}
+{:#methods-copy}
 
 
 
@@ -13790,7 +13790,7 @@ diagram.copy();
 
 
 ### cut<span class="signature">()</span>
-{:#cut}
+{:#methods-cut}
 
 
 
@@ -13822,7 +13822,7 @@ diagram.cut();
 
 
 ### deactivateTool<span class="signature">()</span>
-{:#deactivatetool}
+{:#methods-deactivatetool}
 
 
 
@@ -13854,7 +13854,7 @@ diagram.deactivateTool();
 
 
 ### exportDiagram<span class="signature">(options)</span>
-{:#exportdiagram}
+{:#methods-exportdiagram}
 
 
 
@@ -13948,7 +13948,7 @@ diagram.exportDiagram(options);
 
 
 ### fitToPage<span class="signature">(mode, region, margin)</span>
-{:#fittopage}
+{:#methods-fittopage}
 
 
 
@@ -14007,7 +14007,7 @@ diagram.fitToPage(mode,region,margin);
 
 
 ### group<span class="signature">()</span>
-{:#group}
+{:#methods-group}
 
 
 
@@ -14039,7 +14039,7 @@ diagram.group();
 
 
 ### layout<span class="signature">()</span>
-{:#layout}
+{:#methods-layout}
 
 
 
@@ -14085,7 +14085,7 @@ diagram.layout();
 
 
 ### load<span class="signature">(data)</span>
-{:#load}
+{:#methods-load}
 
 
 
@@ -14133,7 +14133,7 @@ diagram.load(data);
 
 
 ### moveForward<span class="signature">()</span>
-{:#moveforward}
+{:#methods-moveforward}
 
 
 
@@ -14165,7 +14165,7 @@ diagram.moveForward();
 
 
 ### nudge<span class="signature">(direction, delta)</span>
-{:#nudge}
+{:#methods-nudge}
 
 
 
@@ -14218,7 +14218,7 @@ diagram.nudge("direction", 5);
 
 
 ### paste<span class="signature">()</span>
-{:#paste}
+{:#methods-paste}
 
 
 
@@ -14250,7 +14250,7 @@ diagram.paste();
 
 
 ### print<span class="signature">()</span>
-{:#print}
+{:#methods-print}
 
 
 
@@ -14283,7 +14283,7 @@ diagram.print();
 
 
 ### redo<span class="signature">()</span>
-{:#redo}
+{:#methods-redo}
 
 
 
@@ -14315,7 +14315,7 @@ diagram.redo();
 
 
 ### remove<span class="signature">(node)</span>
-{:#remove}
+{:#methods-remove}
 
 
 
@@ -14363,7 +14363,7 @@ diagram.remove();
 
 
 ### sameHeight<span class="signature">()</span>
-{:#sameheight}
+{:#methods-sameheight}
 
 
 
@@ -14396,7 +14396,7 @@ diagram.sameHeight();
 
 
 ### sameSize<span class="signature">()</span>
-{:#samesize}
+{:#methods-samesize}
 
 
 
@@ -14429,7 +14429,7 @@ diagram.sameSize();
 
 
 ### sameWidth<span class="signature">()</span>
-{:#samewidth}
+{:#methods-samewidth}
 
 
 
@@ -14462,7 +14462,7 @@ diagram.sameWidth();
 
 
 ### save<span class="signature">()</span>
-{:#save}
+{:#methods-save}
 
 
 
@@ -14508,7 +14508,7 @@ diagram.save();
 
 
 ### scrollToNode<span class="signature">(node)</span>
-{:#scrolltonode}
+{:#methods-scrolltonode}
 
 
 
@@ -14557,7 +14557,7 @@ diagram.scrollToNode(node);
 
 
 ### selectAll<span class="signature">()</span>
-{:#selectall}
+{:#methods-selectall}
 
 
 
@@ -14589,7 +14589,7 @@ diagram.selectAll();
 
 
 ### sendBackward<span class="signature">()</span>
-{:#sendbackward}
+{:#methods-sendbackward}
 
 
 
@@ -14621,7 +14621,7 @@ diagram.sendBackward();
 
 
 ### sendToBack<span class="signature">()</span>
-{:#sendtoback}
+{:#methods-sendtoback}
 
 
 
@@ -14653,7 +14653,7 @@ diagram.sendToBack();
 
 
 ### spaceAcross<span class="signature">()</span>
-{:#spaceacross}
+{:#methods-spaceacross}
 
 
 
@@ -14685,7 +14685,7 @@ diagram.spaceAcross();
 
 
 ### spaceDown<span class="signature">()</span>
-{:#spacedown}
+{:#methods-spacedown}
 
 
 
@@ -14718,7 +14718,7 @@ diagram.spaceDown();
 
 
 ### startLabelEdit<span class="signature">(node, label)</span>
-{:#startlabeledit}
+{:#methods-startlabeledit}
 
 
 
@@ -14772,7 +14772,7 @@ diagram.startLabelEdit(node,node.labels[0]);
 
 
 ### undo<span class="signature">()</span>
-{:#undo}
+{:#methods-undo}
 
 
 
@@ -14804,7 +14804,7 @@ diagram.undo();
 
 
 ### ungroup<span class="signature">()</span>
-{:#ungroup}
+{:#methods-ungroup}
 
 
 
@@ -14836,7 +14836,7 @@ diagram.ungroup();
 
 
 ### update<span class="signature">(name, options)</span>
-{:#update}
+{:#methods-update}
 
 
 
@@ -14890,7 +14890,7 @@ diagram.updateDiagram(diagram.name, { constraints: value });
 
 
 ### updateConnector<span class="signature">(name, options)</span>
-{:#updateconnector}
+{:#methods-updateconnector}
 
 
 
@@ -14944,7 +14944,7 @@ diagram.updateConnector(connector.name, { constraints: value });
 
 
 ### updateLabel<span class="signature">(nodeName, label, obj)</span>
-{:#updatelabel}
+{:#methods-updatelabel}
 
 
 
@@ -15005,7 +15005,7 @@ diagram.updateLabel(node.name,node.labels[0],label);
 
 
 ### updateNode<span class="signature">(name, options)</span>
-{:#updatenode}
+{:#methods-updatenode}
 
 
 
@@ -15059,7 +15059,7 @@ diagram.updateNode(node.name, { constraints: value });
 
 
 ### updateSelectedObject<span class="signature">(name)</span>
-{:#updateselectedobject}
+{:#methods-updateselectedobject}
 
 
 
@@ -15107,7 +15107,7 @@ diagram.updateSelectedObject(name);
 
 
 ### updateSelection<span class="signature">(isDragging)</span>
-{:#updateselection}
+{:#methods-updateselection}
 
 
 
@@ -15155,7 +15155,7 @@ diagram.updateSelection(true);
 
 
 ### updateUserHandles<span class="signature">(node)</span>
-{:#updateuserhandles}
+{:#methods-updateuserhandles}
 
 
 
@@ -15204,7 +15204,7 @@ diagram.updateUSerHandles(node);
 
 
 ### updateViewPort<span class="signature">()</span>
-{:#updateviewport}
+{:#methods-updateviewport}
 
 
 
@@ -15236,7 +15236,7 @@ diagram.updateViewPort();
 
 
 ### upgrade<span class="signature">(data)</span>
-{:#upgrade}
+{:#methods-upgrade}
 
 
 
@@ -15285,7 +15285,7 @@ diagram.load(jsonData);
 
 
 ### zoomTo<span class="signature">(zoom)</span>
-{:#zoomto}
+{:#methods-zoomto}
 
 
 
@@ -15343,7 +15343,7 @@ diagram.zoomTo(zoom);
 
 
 ### autoScrollChange
-{:#autoscrollchange}
+{:#events-autoscrollchange}
 
 
 
@@ -15395,7 +15395,7 @@ autoScrollChange:function (args)  {}
 
 
 ### click
-{:#click}
+{:#events-click}
 
 
 
@@ -15459,7 +15459,7 @@ click:function (args)  {}
 
 
 ### connectionChange
-{:#connectionchange}
+{:#events-connectionchange}
 
 
 
@@ -15533,7 +15533,7 @@ connectionChange:function (args)  {}
 
 
 ### connectorCollectionChange
-{:#connectorcollectionchange}
+{:#events-connectorcollectionchange}
 
 
 
@@ -15602,7 +15602,7 @@ connectorCollectionChange:function (args) {}
 
 
 ### connectorSourceChange
-{:#connectorsourcechange}
+{:#events-connectorsourcechange}
 
 
 
@@ -15659,7 +15659,7 @@ connectorSourceChange:function (args)  {}
 
 
 ### connectorTargetChange
-{:#connectortargetchange}
+{:#events-connectortargetchange}
 
 
 
@@ -15716,7 +15716,7 @@ connectorTargetChange:function (args)  {}
 
 
 ### contextMenuBeforeOpen
-{:#contextmenubeforeopen}
+{:#events-contextmenubeforeopen}
 
 
 
@@ -15763,7 +15763,7 @@ contextMenuBeforeOpen:function (args)  {}
 
 
 ### contextMenuClick
-{:#contextmenuclick}
+{:#events-contextmenuclick}
 
 
 
@@ -15810,7 +15810,7 @@ contextMenuClick:function (args)  {}
 
 
 ### doubleClick
-{:#doubleclick}
+{:#events-doubleclick}
 
 
 
@@ -15879,7 +15879,7 @@ doubleClick:function (args)  {}
 
 
 ### drag
-{:#drag}
+{:#events-drag}
 
 
 
@@ -15943,7 +15943,7 @@ drag:function (args)  {}
 
 
 ### drop
-{:#drop}
+{:#events-drop}
 
 
 
@@ -16007,7 +16007,7 @@ drop:function (args)  {}
 
 
 ### itemClick
-{:#itemclick}
+{:#events-itemclick}
 
 
 
@@ -16086,7 +16086,7 @@ itemClick:function (args) {}
 
 
 ### mouseEnter
-{:#mouseenter}
+{:#events-mouseenter}
 
 
 
@@ -16160,7 +16160,7 @@ mouseEnter:function (args)  {}
 
 
 ### mouseLeave
-{:#mouseleave}
+{:#events-mouseleave}
 
 
 
@@ -16234,7 +16234,7 @@ mouseLeave:function (args)  {}
 
 
 ### mouseOver
-{:#mouseover}
+{:#events-mouseover}
 
 
 
@@ -16308,7 +16308,7 @@ mouseOver:function (args)  {}
 
 
 ### nodeCollectionChange
-{:#nodecollectionchange}
+{:#events-nodecollectionchange}
 
 
 
@@ -16377,7 +16377,7 @@ nodeCollectionChange:function (args)  {}
 
 
 ### nodeSizeChange
-{:#nodesizechange}
+{:#events-nodesizechange}
 
 
 
@@ -16451,7 +16451,7 @@ sizeChange:function (args)  {}
 
 
 ### rotationChange
-{:#rotationchange}
+{:#events-rotationchange}
 
 
 
@@ -16520,7 +16520,7 @@ rotationChange:function (args)  {}
 
 
 ### selectionChanged
-{:#selectionchanged}
+{:#events-selectionchanged}
 
 
 
@@ -16589,7 +16589,7 @@ selectionChange:function (args)  {}
 
 
 ### textchanged
-{:#textchanged}
+{:#events-textchanged}
 
 
 

@@ -75,7 +75,7 @@ Requires
 
 
 ### autoOpen<span class="type-signature type boolean">boolean</span>
-{:#autoopen}
+{:#members-autoopen}
 
 
 
@@ -140,7 +140,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "autoOpen", true);
 
 
 ### backImageClass<span class="type-signature type string">string</span>
-{:#backimageclass}
+{:#members-backimageclass}
 
 
 
@@ -205,7 +205,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "backImageClass", "e-backimage")
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -270,7 +270,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "cssClass", "customclass");
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
-{:#enableanimation}
+{:#members-enableanimation}
 
 
 
@@ -335,7 +335,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "enableAnimation", true);
 
 
 ### imageClass<span class="type-signature type string">string</span>
-{:#imageclass}
+{:#members-imageclass}
 
 
 
@@ -400,7 +400,7 @@ $("#radialmenu").ejRadialMenu ("option", "imageClass", "e-radialimage");
 
 
 ### radius<span class="type-signature type int">int</span>
-{:#radius}
+{:#members-radius}
 
 
 
@@ -465,7 +465,7 @@ $("#radialmenu").ejRadialMenu ("option", "radius", 150);
 
 
 ### targetElementId<span class="type-signature type string">string</span>
-{:#targetelementid}
+{:#members-targetelementid}
 
 
 
@@ -534,7 +534,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "targetElementId", "target");
 
 
 ### hide<span class="signature">()</span>
-{:#hide}
+{:#methods-hide}
 
 
 
@@ -579,7 +579,7 @@ $("#defaultradialmenu").ejRadialMenu ("hide");
 
 
 ### menuHide<span class="signature">()</span>
-{:#menuhide}
+{:#methods-menuhide}
 
 
 
@@ -624,7 +624,7 @@ $("#defaultradialmenu").ejRadialMenu ("menuHide");
 
 
 ### show<span class="signature">()</span>
-{:#show}
+{:#methods-show}
 
 
 
@@ -673,7 +673,7 @@ $("#defaultradialmenu").ejRadialMenu ("show");
 
 
 ### mouseDown
-{:#mousedown}
+{:#events-mousedown}
 
 
 
@@ -772,7 +772,7 @@ $("#defaultradialmenu").ejRadialMenu({
 
 
 ### mouseUp
-{:#mouseup}
+{:#events-mouseup}
 
 
 
@@ -871,7 +871,7 @@ $("#defaultradialmenu").ejRadialMenu({
 
 
 ### select
-{:#select}
+{:#events-select}
 
 
 

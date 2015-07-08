@@ -137,7 +137,7 @@ Requires
 
 
 ### dataSources<span class="type-signature type array">array</span>
-{:#datasources}
+{:#members-datasources}
 
 
 
@@ -191,7 +191,7 @@ Example
 
 
 ### dataSources.name<span class="type-signature type string">string</span>
-{:#datasources-name}
+{:#members-datasources-name}
 
 
 
@@ -244,7 +244,7 @@ Example
 
 
 ### dataSources.values<span class="type-signature type object">object</span>
-{:#datasources-values}
+{:#members-datasources-values}
 
 
 
@@ -297,7 +297,7 @@ Example
 
 
 ### exportSettings<span class="type-signature type object">object</span>
-{:#exportsettings}
+{:#members-exportsettings}
 
 
 
@@ -319,7 +319,7 @@ Specifies the export settings.
 
 
 ### exportSettings.excelFormat<span class="type-signature type enum">enum</span>
-{:#exportsettings-excelformat}
+{:#members-exportsettings-excelformat}
 
 
 
@@ -370,7 +370,7 @@ Example
 
 
 ### exportSettings.exportOptions<span class="type-signature type enum">enum</span>
-{:#exportsettings-exportoptions}
+{:#members-exportsettings-exportoptions}
 
 
 
@@ -421,7 +421,7 @@ Example
 
 
 ### exportSettings.wordFormat<span class="type-signature type enum">enum</span>
-{:#exportsettings-wordformat}
+{:#members-exportsettings-wordformat}
 
 
 
@@ -472,7 +472,7 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
-{:#locale}
+{:#members-locale}
 
 
 
@@ -523,7 +523,7 @@ Example
 
 
 ### pageSettings<span class="type-signature type object">object</span>
-{:#pagesettings}
+{:#members-pagesettings}
 
 
 
@@ -545,7 +545,7 @@ Specifies the page settings.
 
 
 ### pageSettings.orientation<span class="type-signature type enum">enum</span>
-{:#pagesettings-orientation}
+{:#members-pagesettings-orientation}
 
 
 
@@ -596,7 +596,7 @@ Example
 
 
 ### pageSettings.paperSize<span class="type-signature type enum">enum</span>
-{:#pagesettings-papersize}
+{:#members-pagesettings-papersize}
 
 
 
@@ -647,7 +647,7 @@ Example
 
 
 ### parameters<span class="type-signature type array">array</span>
-{:#parameters}
+{:#members-parameters}
 
 
 
@@ -701,7 +701,7 @@ Example
 
 
 ### parameters.labels<span class="type-signature type array">array</span>
-{:#parameters-labels}
+{:#members-parameters-labels}
 
 
 
@@ -754,7 +754,7 @@ Example
 
 
 ### parameters.name<span class="type-signature type string">string</span>
-{:#parameters-name}
+{:#members-parameters-name}
 
 
 
@@ -807,7 +807,7 @@ Example
 
 
 ### parameters.nullable<span class="type-signature type boolean">boolean</span>
-{:#parameters-nullable}
+{:#members-parameters-nullable}
 
 
 
@@ -860,7 +860,7 @@ Example
 
 
 ### parameters.prompt<span class="type-signature type string">string</span>
-{:#parameters-prompt}
+{:#members-parameters-prompt}
 
 
 
@@ -913,7 +913,7 @@ Example
 
 
 ### parameters.values<span class="type-signature type array">array</span>
-{:#parameters-values}
+{:#members-parameters-values}
 
 
 
@@ -966,7 +966,7 @@ Example
 
 
 ### printMode<span class="type-signature type boolean">boolean</span>
-{:#printmode}
+{:#members-printmode}
 
 
 
@@ -1017,7 +1017,7 @@ Example
 
 
 ### processingMode<span class="type-signature type enum">enum</span>
-{:#processingmode}
+{:#members-processingmode}
 
 
 
@@ -1065,7 +1065,7 @@ Example
 
 
 ### renderMode<span class="type-signature type enum">enum</span>
-{:#rendermode}
+{:#members-rendermode}
 
 
 
@@ -1113,7 +1113,7 @@ Example
 
 
 ### reportPath<span class="type-signature type string">string</span>
-{:#reportpath}
+{:#members-reportpath}
 
 
 
@@ -1160,7 +1160,7 @@ Example
 
 
 ### reportServerUrl<span class="type-signature type string">string</span>
-{:#reportserverurl}
+{:#members-reportserverurl}
 
 
 
@@ -1208,7 +1208,7 @@ Example
 
 
 ### reportServiceUrl<span class="type-signature type string">string</span>
-{:#reportserviceurl}
+{:#members-reportserviceurl}
 
 
 
@@ -1255,7 +1255,7 @@ Example
 
 
 ### toolbarSettings<span class="type-signature type object">object</span>
-{:#toolbarsettings}
+{:#members-toolbarsettings}
 
 
 
@@ -1277,7 +1277,7 @@ Specifies the toolbar settings.
 
 
 ### toolbarSettings.click<span class="type-signature type string">string</span>
-{:#toolbarsettings-click}
+{:#members-toolbarsettings-click}
 
 
 
@@ -1328,7 +1328,7 @@ Example
 
 
 ### toolbarSettings.items<span class="type-signature type enum">enum</span>
-{:#toolbarsettings-items}
+{:#members-toolbarsettings-items}
 
 
 
@@ -1379,7 +1379,7 @@ Example
 
 
 ### toolbarSettings.showToolbar<span class="type-signature type boolean">boolean</span>
-{:#toolbarsettings-showtoolbar}
+{:#members-toolbarsettings-showtoolbar}
 
 
 
@@ -1430,7 +1430,7 @@ Example
 
 
 ### toolbarSettings.showTooltip<span class="type-signature type boolean">boolean</span>
-{:#toolbarsettings-showtooltip}
+{:#members-toolbarsettings-showtooltip}
 
 
 
@@ -1481,7 +1481,7 @@ Example
 
 
 ### toolbarSettings.templateId<span class="type-signature type string">string</span>
-{:#toolbarsettings-templateid}
+{:#members-toolbarsettings-templateid}
 
 
 
@@ -1532,7 +1532,7 @@ Example
 
 
 ### zoomFactor<span class="type-signature type number">number</span>
-{:#zoomfactor}
+{:#members-zoomfactor}
 
 
 
@@ -1587,7 +1587,7 @@ Example
 
 
 ### exportReport<span class="signature">()</span>
-{:#exportreport}
+{:#methods-exportreport}
 
 
 
@@ -1621,7 +1621,7 @@ reportviewerObj.exportReport(); //Exports the reports
 
 
 ### fitToPage<span class="signature">()</span>
-{:#fittopage}
+{:#methods-fittopage}
 
 
 
@@ -1655,7 +1655,7 @@ reportviewerObj.fitToPage(); // To fit the report page.
 
 
 ### fitToPageHeight<span class="signature">()</span>
-{:#fittopageheight}
+{:#methods-fittopageheight}
 
 
 
@@ -1689,7 +1689,7 @@ reportviewerObj.fitToPageHeight(); // To fit the report page height.
 
 
 ### fitToPageWidth<span class="signature">()</span>
-{:#fittopagewidth}
+{:#methods-fittopagewidth}
 
 
 
@@ -1723,7 +1723,7 @@ reportviewerObj.fitToPageWidth(); // To fit the report page width.
 
 
 ### getDataSetNames<span class="signature">()</span>
-{:#getdatasetnames}
+{:#methods-getdatasetnames}
 
 
 
@@ -1757,7 +1757,7 @@ reportviewerObj.getDataSetNames(); // To get the dataset names.
 
 
 ### getParameters<span class="signature">()</span>
-{:#getparameters}
+{:#methods-getparameters}
 
 
 
@@ -1791,7 +1791,7 @@ reportviewerObj.getParameters(); // To get the parameters.
 
 
 ### gotoFirstPage<span class="signature">()</span>
-{:#gotofirstpage}
+{:#methods-gotofirstpage}
 
 
 
@@ -1825,7 +1825,7 @@ reportviewerObj.gotoFirstPage(); // To navigate to first page
 
 
 ### gotoLastPage<span class="signature">()</span>
-{:#gotolastpage}
+{:#methods-gotolastpage}
 
 
 
@@ -1859,7 +1859,7 @@ reportviewerObj.gotoLastPage(); // Navigate to the last page
 
 
 ### gotoNextPage<span class="signature">()</span>
-{:#gotonextpage}
+{:#methods-gotonextpage}
 
 
 
@@ -1893,7 +1893,7 @@ reportviewerObj.gotoNextPage(); //To navigate to the next page
 
 
 ### gotoPageIndex<span class="signature">()</span>
-{:#gotopageindex}
+{:#methods-gotopageindex}
 
 
 
@@ -1927,7 +1927,7 @@ reportviewerObj.gotoPageIndex(5); // To navigate the specific page
 
 
 ### gotoPreviousPage<span class="signature">()</span>
-{:#gotopreviouspage}
+{:#methods-gotopreviouspage}
 
 
 
@@ -1961,7 +1961,7 @@ reportviewerObj.gotoPreviousPage(); // To navigate to the previous page
 
 
 ### print<span class="signature">()</span>
-{:#print}
+{:#methods-print}
 
 
 
@@ -1995,7 +1995,7 @@ reportviewerObj.print(); //To perform print operation.
 
 
 ### printLayout<span class="signature">()</span>
-{:#printlayout}
+{:#methods-printlayout}
 
 
 
@@ -2029,7 +2029,7 @@ reportviewerObj.printLayout(); //Changes between print layout and normal modes.
 
 
 ### refresh<span class="signature">()</span>
-{:#refresh}
+{:#methods-refresh}
 
 
 
@@ -2070,7 +2070,7 @@ reportviewerObj.refresh(); // To refresh the report.
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -2149,7 +2149,7 @@ Example
 
 
 ### drillThrough
-{:#drillthrough}
+{:#events-drillthrough}
 
 
 
@@ -2233,7 +2233,7 @@ Example
 
 
 ### renderingBegin
-{:#renderingbegin}
+{:#events-renderingbegin}
 
 
 
@@ -2314,7 +2314,7 @@ Example
 
 
 ### renderingComplete
-{:#renderingcomplete}
+{:#events-renderingcomplete}
 
 
 
@@ -2405,7 +2405,7 @@ Example
 
 
 ### reportError
-{:#reporterror}
+{:#events-reporterror}
 
 
 
@@ -2489,7 +2489,7 @@ Example
 
 
 ### reportLoaded
-{:#reportloaded}
+{:#events-reportloaded}
 
 
 
@@ -2569,7 +2569,7 @@ Example
 
 
 ### viewReportClick
-{:#viewreportclick}
+{:#events-viewreportclick}
 
 
 

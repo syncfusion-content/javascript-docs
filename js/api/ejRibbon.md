@@ -122,7 +122,7 @@ Requires
 
 
 ### allowResizing<span class="type-signature type boolean">boolean</span>
-{:#allowresizing}
+{:#members-allowresizing}
 
 
 
@@ -250,7 +250,7 @@ $(function () {
 
 
 ### applicationTab<span class="type-signature type object">object</span>
-{:#applicationtab}
+{:#members-applicationtab}
 
 
 
@@ -319,7 +319,7 @@ $(function () {
 
 
 ### applicationTab.itemID<span class="type-signature type string">string</span>
-{:#applicationtab-itemid}
+{:#members-applicationtab-itemid}
 
 
 
@@ -388,7 +388,7 @@ $(function () {
 
 
 ### applicationTab.menuSettings<span class="type-signature type object">object</span>
-{:#applicationtab-menusettings}
+{:#members-applicationtab-menusettings}
 
 
 
@@ -457,7 +457,7 @@ $(function () {
 
 
 ### applicationTab.Type<span class="type-signature type string">string</span>
-{:#applicationtab-type}
+{:#members-applicationtab-type}
 
 
 
@@ -526,7 +526,7 @@ $(function () {
 
 
 ### contextualTabs<span class="type-signature type array">array</span>
-{:#contextualtabs}
+{:#members-contextualtabs}
 
 
 
@@ -624,7 +624,7 @@ $(function () {
 
 
 ### contextualTabs.backgroundColor<span class="type-signature type string">string</span>
-{:#contextualtabs-backgroundcolor}
+{:#members-contextualtabs-backgroundcolor}
 
 
 
@@ -722,7 +722,7 @@ $(function () {
 
 
 ### contextualTabs.borderColor<span class="type-signature type string">string</span>
-{:#contextualtabs-bordercolor}
+{:#members-contextualtabs-bordercolor}
 
 
 
@@ -820,7 +820,7 @@ $(function () {
 
 
 ### contextualTabs.tabs<span class="type-signature type array">array</span>
-{:#contextualtabs-tabs}
+{:#members-contextualtabs-tabs}
 
 
 
@@ -918,7 +918,7 @@ $(function () {
 
 
 ### disabledItemIndex<span class="type-signature type array">array</span>
-{:#disableditemindex}
+{:#members-disableditemindex}
 
 
 
@@ -995,7 +995,7 @@ $(function () {
 
 
 ### enabledItemIndex<span class="type-signature type array">array</span>
-{:#enableditemindex}
+{:#members-enableditemindex}
 
 
 
@@ -1075,7 +1075,7 @@ $(function () {
 
 
 ### selectedItemIndex<span class="type-signature type number">number</span>
-{:#selecteditemindex}
+{:#members-selecteditemindex}
 
 
 
@@ -1151,7 +1151,7 @@ $(function () {
 
 
 ### tabs<span class="type-signature type array">array</span>
-{:#tabs}
+{:#members-tabs}
 
 
 
@@ -1227,7 +1227,7 @@ $(function () {
 
 
 ### tabs.groups<span class="type-signature type array">array</span>
-{:#tabs-groups}
+{:#members-tabs-groups}
 
 
 
@@ -1296,7 +1296,7 @@ $(function () {
 
 
 ### tabs.groups.alignType<span class="type-signature type enum">enum</span>
-{:#tabs-groups-aligntype}
+{:#members-tabs-groups-aligntype}
 
 
 
@@ -1365,7 +1365,7 @@ $(function () {
 
 
 ### tabs.groups.content<span class="type-signature type array">array</span>
-{:#tabs-groups-content}
+{:#members-tabs-groups-content}
 
 
 
@@ -1444,7 +1444,7 @@ $(function () {
 
 
 ### tabs.groups.content.defaults<span class="type-signature type object">object</span>
-{:#tabs-groups-content-defaults}
+{:#members-tabs-groups-content-defaults}
 
 
 
@@ -1533,7 +1533,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups<span class="type-signature type array">array</span>
-{:#tabs-groups-content-groups}
+{:#members-tabs-groups-content-groups}
 
 
 
@@ -1612,7 +1612,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.buttonSettings<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-buttonsettings}
+{:#members-tabs-groups-content-groups-buttonsettings}
 
 
 
@@ -1691,7 +1691,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.columns<span class="type-signature type number">number</span>
-{:#tabs-groups-content-groups-columns}
+{:#members-tabs-groups-content-groups-columns}
 
 
 
@@ -1819,7 +1819,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.contentID<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-contentid}
+{:#members-tabs-groups-content-groups-contentid}
 
 
 
@@ -1911,7 +1911,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.cssClass<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-cssclass}
+{:#members-tabs-groups-content-groups-cssclass}
 
 
 
@@ -1996,7 +1996,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customGalleryItems<span class="type-signature type array">array</span>
-{:#tabs-groups-content-groups-customgalleryitems}
+{:#members-tabs-groups-content-groups-customgalleryitems}
 
 
 
@@ -2124,7 +2124,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customGalleryItems.buttonSettings<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-customgalleryitems-buttonsettings}
+{:#members-tabs-groups-content-groups-customgalleryitems-buttonsettings}
 
 
 
@@ -2256,7 +2256,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customGalleryItems.customItemType<span class="type-signature type enum">enum</span>
-{:#tabs-groups-content-groups-customgalleryitems-customitemtype}
+{:#members-tabs-groups-content-groups-customgalleryitems-customitemtype}
 
 
 
@@ -2388,7 +2388,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customGalleryItems.customToolTip<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-customgalleryitems-customtooltip}
+{:#members-tabs-groups-content-groups-customgalleryitems-customtooltip}
 
 
 
@@ -2520,7 +2520,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customGalleryItems.menuId<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-customgalleryitems-menuid}
+{:#members-tabs-groups-content-groups-customgalleryitems-menuid}
 
 
 
@@ -2652,7 +2652,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customGalleryItems.menuSettings<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-customgalleryitems-menusettings}
+{:#members-tabs-groups-content-groups-customgalleryitems-menusettings}
 
 
 
@@ -2784,7 +2784,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customGalleryItems.text<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-customgalleryitems-text}
+{:#members-tabs-groups-content-groups-customgalleryitems-text}
 
 
 
@@ -2912,7 +2912,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customGalleryItems.toolTip<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-customgalleryitems-tooltip}
+{:#members-tabs-groups-content-groups-customgalleryitems-tooltip}
 
 
 
@@ -3040,7 +3040,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customToolTip<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-customtooltip}
+{:#members-tabs-groups-content-groups-customtooltip}
 
 
 
@@ -3127,7 +3127,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customToolTip.content<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-customtooltip-content}
+{:#members-tabs-groups-content-groups-customtooltip-content}
 
 
 
@@ -3214,7 +3214,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customToolTip.prefixIcon<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-customtooltip-prefixicon}
+{:#members-tabs-groups-content-groups-customtooltip-prefixicon}
 
 
 
@@ -3301,7 +3301,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.customToolTip.title<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-customtooltip-title}
+{:#members-tabs-groups-content-groups-customtooltip-title}
 
 
 
@@ -3388,7 +3388,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.dropdownSettings<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-dropdownsettings}
+{:#members-tabs-groups-content-groups-dropdownsettings}
 
 
 
@@ -3473,7 +3473,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.enableSeparator<span class="type-signature type boolean">boolean</span>
-{:#tabs-groups-content-groups-enableseparator}
+{:#members-tabs-groups-content-groups-enableseparator}
 
 
 
@@ -3563,7 +3563,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.expandedColumns<span class="type-signature type number">number</span>
-{:#tabs-groups-content-groups-expandedcolumns}
+{:#members-tabs-groups-content-groups-expandedcolumns}
 
 
 
@@ -3691,7 +3691,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.galleryItems<span class="type-signature type array">array</span>
-{:#tabs-groups-content-groups-galleryitems}
+{:#members-tabs-groups-content-groups-galleryitems}
 
 
 
@@ -3819,7 +3819,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.galleryItems.buttonSettings<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-galleryitems-buttonsettings}
+{:#members-tabs-groups-content-groups-galleryitems-buttonsettings}
 
 
 
@@ -3951,7 +3951,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.galleryItems.customToolTip<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-galleryitems-customtooltip}
+{:#members-tabs-groups-content-groups-galleryitems-customtooltip}
 
 
 
@@ -4083,7 +4083,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.galleryItems.text<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-galleryitems-text}
+{:#members-tabs-groups-content-groups-galleryitems-text}
 
 
 
@@ -4211,7 +4211,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.galleryItems.toolTip<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-galleryitems-tooltip}
+{:#members-tabs-groups-content-groups-galleryitems-tooltip}
 
 
 
@@ -4339,7 +4339,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.id<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-id}
+{:#members-tabs-groups-content-groups-id}
 
 
 
@@ -4418,7 +4418,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.isBig<span class="type-signature type boolean">boolean</span>
-{:#tabs-groups-content-groups-isbig}
+{:#members-tabs-groups-content-groups-isbig}
 
 
 
@@ -4497,7 +4497,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.itemHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#tabs-groups-content-groups-itemheight}
+{:#members-tabs-groups-content-groups-itemheight}
 
 
 
@@ -4625,7 +4625,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.itemWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#tabs-groups-content-groups-itemwidth}
+{:#members-tabs-groups-content-groups-itemwidth}
 
 
 
@@ -4753,7 +4753,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.splitButtonSettings<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-splitbuttonsettings}
+{:#members-tabs-groups-content-groups-splitbuttonsettings}
 
 
 
@@ -4837,7 +4837,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.text<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-text}
+{:#members-tabs-groups-content-groups-text}
 
 
 
@@ -4916,7 +4916,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.toggleButtonSettings<span class="type-signature type object">object</span>
-{:#tabs-groups-content-groups-togglebuttonsettings}
+{:#members-tabs-groups-content-groups-togglebuttonsettings}
 
 
 
@@ -4995,7 +4995,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.toolTip<span class="type-signature type string">string</span>
-{:#tabs-groups-content-groups-tooltip}
+{:#members-tabs-groups-content-groups-tooltip}
 
 
 
@@ -5074,7 +5074,7 @@ $(function () {
 
 
 ### tabs.groups.content.groups.type<span class="type-signature type enum">enum</span>
-{:#tabs-groups-content-groups-type}
+{:#members-tabs-groups-content-groups-type}
 
 
 
@@ -5153,7 +5153,7 @@ $(function () {
 
 
 ### tabs.groups.contentID<span class="type-signature type string">string</span>
-{:#tabs-groups-contentid}
+{:#members-tabs-groups-contentid}
 
 
 
@@ -5222,7 +5222,7 @@ $(function () {
 
 
 ### tabs.groups.customContent<span class="type-signature type string">string</span>
-{:#tabs-groups-customcontent}
+{:#members-tabs-groups-customcontent}
 
 
 
@@ -5289,7 +5289,7 @@ $(function () {
 
 
 ### tabs.groups.enableGroupExpander<span class="type-signature type boolean">boolean</span>
-{:#tabs-groups-enablegroupexpander}
+{:#members-tabs-groups-enablegroupexpander}
 
 
 
@@ -5358,7 +5358,7 @@ $(function () {
 
 
 ### tabs.groups.text<span class="type-signature type string">string</span>
-{:#tabs-groups-text}
+{:#members-tabs-groups-text}
 
 
 
@@ -5427,7 +5427,7 @@ $(function () {
 
 
 ### tabs.groups.type<span class="type-signature type string">string</span>
-{:#tabs-groups-type}
+{:#members-tabs-groups-type}
 
 
 
@@ -5496,7 +5496,7 @@ $(function () {
 
 
 ### tabs.id<span class="type-signature type string">string</span>
-{:#tabs-id}
+{:#members-tabs-id}
 
 
 
@@ -5565,7 +5565,7 @@ $(function () {
 
 
 ### tabs.text<span class="type-signature type string">string</span>
-{:#tabs-text}
+{:#members-tabs-text}
 
 
 
@@ -5634,7 +5634,7 @@ $(function () {
 
 
 ### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -5710,7 +5710,7 @@ $(function () {
 
 
 ### addContextualTabs<span class="signature">(contextualTabSet, index)</span>
-{:#addcontextualtabs}
+{:#methods-addcontextualtabs}
 
 
 
@@ -5839,7 +5839,7 @@ $("#Ribbon").ejRibbon("addContextualTabs",cTab,2);
 
 
 ### addTab<span class="signature">(tabText, ribbonGroups, index)</span>
-{:#addtab}
+{:#methods-addtab}
 
 
 
@@ -5981,7 +5981,7 @@ $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2);
 
 
 ### addTabGroup<span class="signature">(tabIndex, tabGroup, grpIndex)</span>
-{:#addtabgroup}
+{:#methods-addtabgroup}
 
 
 
@@ -6144,7 +6144,7 @@ $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2);
 
 
 ### addTabGroupContent<span class="signature">(tabIndex, grpIndex, subGrpIndex, content, contentIndex)</span>
-{:#addtabgroupcontent}
+{:#methods-addtabgroupcontent}
 
 
 
@@ -6298,7 +6298,7 @@ $(function () {$("#Ribbon").ejRibbon({
 
 
 ### collapse<span class="signature">()</span>
-{:#collapse}
+{:#methods-collapse}
 
 
 
@@ -6384,7 +6384,7 @@ $("#Ribbon").ejRibbon("collapse");
 
 
 ### destroy<span class="signature">()</span>
-{:#destroy}
+{:#methods-destroy}
 
 
 
@@ -6423,7 +6423,7 @@ $("#Ribbon").ejRibbon("destroy");
 
 
 ### expand<span class="signature">()</span>
-{:#expand}
+{:#methods-expand}
 
 
 
@@ -6511,7 +6511,7 @@ $("#Ribbon").ejRibbon("expand");
 
 
 ### getTabText<span class="signature">(index)</span>
-{:#gettabtext}
+{:#methods-gettabtext}
 
 
 
@@ -6543,7 +6543,7 @@ It is used to get text of the given index tab in the ribbon control.
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 of the given index tab in the ribbon control.
 
@@ -6619,7 +6619,7 @@ $("#Ribbon").ejRibbon("getTabText",1);
 
 
 ### hideTab<span class="signature">(string)</span>
-{:#hidetab}
+{:#methods-hidetab}
 
 
 
@@ -6721,7 +6721,7 @@ $("#Ribbon").ejRibbon("hideTab","HOME");
 
 
 ### isEnable<span class="signature">(string)</span>
-{:#isenable}
+{:#methods-isenable}
 
 
 
@@ -6753,7 +6753,7 @@ It is used to check given text tab in the ribbon control is enabled or not.
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 if it is in enabled state,false if it is in disabled state.
 
@@ -6829,7 +6829,7 @@ $("#Ribbon").ejRibbon("isEnable","HOME");
 
 
 ### isVisible<span class="signature">(string)</span>
-{:#isvisible}
+{:#methods-isvisible}
 
 
 
@@ -6861,7 +6861,7 @@ It is used to check given text tab in the ribbon control is visible or not.
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 if it is visible,false if it is invisible
 
@@ -6937,7 +6937,7 @@ $("#Ribbon").ejRibbon("isVisible","HOME");
 
 
 ### removeTab<span class="signature">(index)</span>
-{:#removetab}
+{:#methods-removetab}
 
 
 
@@ -7039,7 +7039,7 @@ $("#Ribbon").ejRibbon("removeTab",1);
 
 
 ### setTabText<span class="signature">(string, string)</span>
-{:#settabtext}
+{:#methods-settabtext}
 
 
 
@@ -7146,7 +7146,7 @@ $("#Ribbon").ejRibbon("setTabText","HOME","NEW");
 
 
 ### showTab<span class="signature">(string)</span>
-{:#showtab}
+{:#methods-showtab}
 
 
 
@@ -7255,7 +7255,7 @@ $("#Ribbon").ejRibbon("showTab","HOME");
 
 
 ### beforeTabRemove
-{:#beforetabremove}
+{:#events-beforetabremove}
 
 
 
@@ -7357,7 +7357,7 @@ $(function () {
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -7454,7 +7454,7 @@ $(function () {
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -7556,7 +7556,7 @@ $(function () {
 
 
 ### groupClick
-{:#groupclick}
+{:#events-groupclick}
 
 
 
@@ -7641,7 +7641,7 @@ $(function () {
 
 
 ### groupExpand
-{:#groupexpand}
+{:#events-groupexpand}
 
 
 
@@ -7726,7 +7726,7 @@ $(function () {
 
 
 ### onGalleryItemClick
-{:#ongalleryitemclick}
+{:#events-ongalleryitemclick}
 
 
 
@@ -7862,7 +7862,7 @@ $(function () {
 
 
 ### onTabAdd
-{:#ontabadd}
+{:#events-ontabadd}
 
 
 
@@ -7969,7 +7969,7 @@ $(function () {
 
 
 ### onTabClick
-{:#ontabclick}
+{:#events-ontabclick}
 
 
 
@@ -8086,7 +8086,7 @@ $(function () {
 
 
 ### onTabCreate
-{:#ontabcreate}
+{:#events-ontabcreate}
 
 
 
@@ -8188,7 +8188,7 @@ $(function () {
 
 
 ### onTabRemove
-{:#ontabremove}
+{:#events-ontabremove}
 
 
 
@@ -8295,7 +8295,7 @@ $(function () {
 
 
 ### onTabSelect
-{:#ontabselect}
+{:#events-ontabselect}
 
 
 
@@ -8412,7 +8412,7 @@ $(function () {
 
 
 ### onToggleButtonClick
-{:#ontogglebuttonclick}
+{:#events-ontogglebuttonclick}
 
 
 

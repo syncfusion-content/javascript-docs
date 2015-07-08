@@ -75,7 +75,7 @@ Requires
 
 
 ### checked
-{:#checked}
+{:#members-checked}
 
 
 
@@ -125,7 +125,7 @@ $("#chkbox").ejCheckBox({ checked:  true });
 
 
 ### checkState<span class="type-signature type enum">enum</span>
-{:#checkstate}
+{:#members-checkstate}
 
 
 
@@ -175,7 +175,7 @@ $("#chkbox").ejCheckBox({ enableTriState: true , checkState:"indeterminate"});
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -224,7 +224,7 @@ $("#chkbox").ejCheckBox({cssClass: "gradient-lime"});
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -275,7 +275,7 @@ $("#chkbox").ejCheckBox ({ enabled: true });
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -325,7 +325,7 @@ $("#chkbox").ejCheckBox({ enablePersistence : false });
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -375,7 +375,7 @@ $("#chkbox").ejCheckBox({  enableRTL : true });
 
 
 ### enableTriState<span class="type-signature type boolean">boolean</span>
-{:#enabletristate}
+{:#members-enabletristate}
 
 
 
@@ -426,7 +426,7 @@ $("#chkbox").ejCheckBox({  enableTriState: true });
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
-{:#htmlattributes}
+{:#members-htmlattributes}
 
 
 
@@ -476,7 +476,7 @@ $("#chkbox").ejCheckBox({ htmlAttributes : {required:"required"}});
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
-{:#htmlattributes}
+{:#members-htmlattributes}
 
 
 
@@ -526,7 +526,7 @@ Example
 
 
 ### id<span class="type-signature type string">String</span>
-{:#id}
+{:#members-id}
 
 
 
@@ -576,7 +576,7 @@ $("#chkbox").ejCheckBox({  id: "sync" });
 
 
 ### idPrefix<span class="type-signature type string">String</span>
-{:#idprefix}
+{:#members-idprefix}
 
 
 
@@ -626,7 +626,7 @@ $("#chkbox").ejCheckBox ({  idPrefix : "ej" });
 
 
 ### name<span class="type-signature type string">String</span>
-{:#name}
+{:#members-name}
 
 
 
@@ -676,7 +676,7 @@ $("#chkbox").ejCheckBox({  name: "sync" });
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#showroundedcorner}
+{:#members-showroundedcorner}
 
 
 
@@ -726,7 +726,7 @@ $("#chkbox").ejCheckBox({ showRoundedCorner: true });
 
 
 ### size<span class="type-signature type enum">enum</span>
-{:#size}
+{:#members-size}
 
 
 
@@ -776,7 +776,7 @@ $("#chkbox").ejCheckBox({  size: "medium"});
 
 
 ### text<span class="type-signature type string">string</span>
-{:#text}
+{:#members-text}
 
 
 
@@ -825,7 +825,7 @@ $("#chkbox").ejCheckBox({ text: "Hello World"});
 
 
 ### validationMessage<span class="type-signature type object">object</span>
-{:#validationmessage}
+{:#members-validationmessage}
 
 
 
@@ -882,7 +882,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
-{:#validationrules}
+{:#members-validationrules}
 
 
 
@@ -936,7 +936,7 @@ Example
 
 
 ### value<span class="type-signature type string">String</span>
-{:#value}
+{:#members-value}
 
 
 
@@ -993,7 +993,7 @@ $("#chkbox").ejCheckBox({ value: "Hello World"});
 
 
 ### destroy<span class="signature">()</span>
-{:#destroy}
+{:#methods-destroy}
 
 
 
@@ -1039,7 +1039,7 @@ $("#chkbox").ejCheckBox("destroy");
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -1085,7 +1085,7 @@ $("#chkbox").ejCheckBox("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -1131,7 +1131,7 @@ $("#chkbox").ejCheckBox("enable");
 
 
 ### isChecked<span class="signature">()</span>
-{:#ischecked}
+{:#methods-ischecked}
 
 
 
@@ -1184,7 +1184,7 @@ $("#chkbox").ejCheckBox("isChecked");
 
 
 ### beforeChange
-{:#beforechange}
+{:#events-beforechange}
 
 
 
@@ -1273,7 +1273,7 @@ beforeChange: function (args) {}
 
 
 ### change
-{:#change}
+{:#events-change}
 
 
 
@@ -1361,7 +1361,7 @@ change: function (args) {}
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -1440,7 +1440,7 @@ $("#chkbox").ejCheckBox({
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 

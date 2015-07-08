@@ -67,7 +67,7 @@ Requires
 
 
 ### ajaxSettings<span class="type-signature type object">object</span>
-{:#ajaxsettings}
+{:#members-ajaxsettings}
 
 
 
@@ -109,7 +109,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### ajaxSettings.async<span class="type-signature type boolean">Boolean</span>
-{:#ajaxsettings-async}
+{:#members-ajaxsettings-async}
 
 
 
@@ -122,7 +122,7 @@ It specifies, whether to enable or disable asynchronous request.
 
 
 ### ajaxSettings.cache<span class="type-signature type boolean">Boolean</span>
-{:#ajaxsettings-cache}
+{:#members-ajaxsettings-cache}
 
 
 
@@ -135,7 +135,7 @@ It specifies the page will be cached in the web browser.
 
 
 ### ajaxSettings.contentType<span class="type-signature type string">String</span>
-{:#ajaxsettings-contenttype}
+{:#members-ajaxsettings-contenttype}
 
 
 
@@ -148,7 +148,7 @@ It specifies the type of data is send in the query string.
 
 
 ### ajaxSettings.data<span class="type-signature type object">Object</span>
-{:#ajaxsettings-data}
+{:#members-ajaxsettings-data}
 
 
 
@@ -161,7 +161,7 @@ It specifies the data as an object, will be passed in the query string.
 
 
 ### ajaxSettings.dataType<span class="type-signature type string">String</span>
-{:#ajaxsettings-datatype}
+{:#members-ajaxsettings-datatype}
 
 
 
@@ -174,7 +174,7 @@ It specifies the type of data that you're expecting back from the response.
 
 
 ### ajaxSettings.type<span class="type-signature type string">String</span>
-{:#ajaxsettings-type}
+{:#members-ajaxsettings-type}
 
 
 
@@ -187,7 +187,7 @@ It specifies the HTTP request type.
 
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
-{:#allowkeyboardnavigation}
+{:#members-allowkeyboardnavigation}
 
 
 
@@ -233,7 +233,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### collapsible<span class="type-signature type boolean">boolean</span>
-{:#collapsible}
+{:#members-collapsible}
 
 
 
@@ -279,7 +279,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -325,7 +325,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### disabledItemIndex<span class="type-signature type integerarray">IntegerArray</span>
-{:#disableditemindex}
+{:#members-disableditemindex}
 
 
 
@@ -371,7 +371,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
-{:#enableanimation}
+{:#members-enableanimation}
 
 
 
@@ -417,7 +417,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -463,7 +463,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### enabledItemIndex<span class="type-signature type integerarray">IntegerArray</span>
-{:#enableditemindex}
+{:#members-enableditemindex}
 
 
 
@@ -510,7 +510,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -556,7 +556,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -602,7 +602,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### enableTabScroll<span class="type-signature type boolean">boolean</span>
-{:#enabletabscroll}
+{:#members-enabletabscroll}
 
 
 
@@ -648,7 +648,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### events<span class="type-signature type string">string</span>
-{:#events}
+{:#members-events}
 
 
 
@@ -694,7 +694,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### headerPosition<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
-{:#headerposition}
+{:#members-headerposition}
 
 
 
@@ -740,7 +740,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### headerSize<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#headersize}
+{:#members-headersize}
 
 
 
@@ -786,7 +786,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -832,7 +832,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### heightAdjustMode<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
-{:#heightadjustmode}
+{:#members-heightadjustmode}
 
 
 
@@ -878,7 +878,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### idPrefix<span class="type-signature type string">string</span>
-{:#idprefix}
+{:#members-idprefix}
 
 
 
@@ -924,7 +924,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### selectedItemIndex<span class="type-signature type number">number</span>
-{:#selecteditemindex}
+{:#members-selecteditemindex}
 
 
 
@@ -970,7 +970,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### showCloseButton<span class="type-signature type boolean">boolean</span>
-{:#showclosebutton}
+{:#members-showclosebutton}
 
 
 
@@ -1016,7 +1016,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### showReloadIcon<span class="type-signature type boolean">boolean</span>
-{:#showreloadicon}
+{:#members-showreloadicon}
 
 
 
@@ -1062,7 +1062,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#showroundedcorner}
+{:#members-showroundedcorner}
 
 
 
@@ -1108,7 +1108,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -1158,7 +1158,7 @@ It was originally implemented as part of web browsers so that client-side script
 
 
 ### addItem<span class="signature">(url, displayLabel, index)</span>
-{:#additem}
+{:#methods-additem}
 
 
 
@@ -1249,7 +1249,7 @@ $("#tab").ejTab("addItem","#new","New Item",3);
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -1310,7 +1310,7 @@ $("#tab").ejTab("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -1371,7 +1371,7 @@ $("#tab").ejTab("enable");
 
 
 ### getItemsCount<span class="signature">()</span>
-{:#getitemscount}
+{:#methods-getitemscount}
 
 
 
@@ -1432,7 +1432,7 @@ $("#tab").ejTab("getItemsCount");
 
 
 ### hide<span class="signature">()</span>
-{:#hide}
+{:#methods-hide}
 
 
 
@@ -1493,7 +1493,7 @@ $("#tab").ejTab("hide");
 
 
 ### removeItem<span class="signature">(index)</span>
-{:#removeitem}
+{:#methods-removeitem}
 
 
 
@@ -1570,7 +1570,7 @@ $("#tab").ejTab("removeItem",1);
 
 
 ### show<span class="signature">()</span>
-{:#show}
+{:#methods-show}
 
 
 
@@ -1635,7 +1635,7 @@ $("#tab").ejTab("show");
 
 
 ### active
-{:#active}
+{:#events-active}
 
 
 
@@ -1737,7 +1737,7 @@ width: "300px",
 
 
 ### ajaxBeforeLoad
-{:#ajaxbeforeload}
+{:#events-ajaxbeforeload}
 
 
 
@@ -1839,7 +1839,7 @@ width:"300px",
 
 
 ### ajaxError
-{:#ajaxerror}
+{:#events-ajaxerror}
 
 
 
@@ -1941,7 +1941,7 @@ width: "300px",
 
 
 ### ajaxLoad
-{:#ajaxload}
+{:#events-ajaxload}
 
 
 
@@ -2048,7 +2048,7 @@ width:"300px",
 
 
 ### ajaxSuccess
-{:#ajaxsuccess}
+{:#events-ajaxsuccess}
 
 
 
@@ -2150,7 +2150,7 @@ width: "300px",
 
 
 ### beforeActive
-{:#beforeactive}
+{:#events-beforeactive}
 
 
 
@@ -2252,7 +2252,7 @@ width: "300px",
 
 
 ### beforeItemRemove
-{:#beforeitemremove}
+{:#events-beforeitemremove}
 
 
 
@@ -2339,7 +2339,7 @@ width: "300px",
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -2426,7 +2426,7 @@ width: "300px",
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -2513,7 +2513,7 @@ width: "300px",
 
 
 ### itemAdd
-{:#itemadd}
+{:#events-itemadd}
 
 
 
@@ -2605,7 +2605,7 @@ width: "300px",
 
 
 ### itemRemove
-{:#itemremove}
+{:#events-itemremove}
 
 
 

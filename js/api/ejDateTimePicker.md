@@ -108,7 +108,7 @@ Requires
 
 
 ### buttonText<span class="type-signature type jsonobject">JSONObject</span>
-{:#buttontext}
+{:#members-buttontext}
 
 
 
@@ -157,7 +157,7 @@ Example
 
 
 ### buttonText.done<span class="type-signature type string">String</span>
-{:#buttontext-done}
+{:#members-buttontext-done}
 
 
 
@@ -190,7 +190,7 @@ Example
 
 
 ### buttonText.now<span class="type-signature type string">String</span>
-{:#buttontext-now}
+{:#members-buttontext-now}
 
 
 
@@ -223,7 +223,7 @@ Example
 
 
 ### buttonText.timeTitle<span class="type-signature type string">String</span>
-{:#buttontext-timetitle}
+{:#members-buttontext-timetitle}
 
 
 
@@ -256,7 +256,7 @@ Example
 
 
 ### buttonText.today<span class="type-signature type string">String</span>
-{:#buttontext-today}
+{:#members-buttontext-today}
 
 
 
@@ -289,7 +289,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -337,7 +337,7 @@ Example
 
 
 ### dateTimeFormat<span class="type-signature type string">String</span>
-{:#datetimeformat}
+{:#members-datetimeformat}
 
 
 
@@ -386,7 +386,7 @@ Example
 
 
 ### dayHeaderFormat<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#dayheaderformat}
+{:#members-dayheaderformat}
 
 
 
@@ -435,7 +435,7 @@ Example
 
 
 ### depthLevel<span class="type-signature type enum">enum</span>
-{:#depthlevel}
+{:#members-depthlevel}
 
 
 
@@ -484,7 +484,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">Boolean</span>
-{:#enableanimation}
+{:#members-enableanimation}
 
 
 
@@ -534,7 +534,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -583,7 +583,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">Boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -632,7 +632,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -681,7 +681,7 @@ Example
 
 
 ### enableStrictMode<span class="type-signature type boolean">Boolean</span>
-{:#enablestrictmode}
+{:#members-enablestrictmode}
 
 
 
@@ -730,7 +730,7 @@ Example
 
 
 ### headerFormat<span class="type-signature type string">String</span>
-{:#headerformat}
+{:#members-headerformat}
 
 
 
@@ -779,7 +779,7 @@ Example
 
 
 ### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -828,7 +828,7 @@ Example
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
-{:#htmlattributes}
+{:#members-htmlattributes}
 
 
 
@@ -877,7 +877,7 @@ Example
 
 
 ### interval<span class="type-signature type number">Number</span>
-{:#interval}
+{:#members-interval}
 
 
 
@@ -926,7 +926,7 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
-{:#locale}
+{:#members-locale}
 
 
 
@@ -975,7 +975,7 @@ Example
 
 
 ### maxDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
-{:#maxdatetime}
+{:#members-maxdatetime}
 
 
 
@@ -1024,7 +1024,7 @@ Example
 
 
 ### minDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
-{:#mindatetime}
+{:#members-mindatetime}
 
 
 
@@ -1073,7 +1073,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">Boolean</span>
-{:#readonly}
+{:#members-readonly}
 
 
 
@@ -1122,7 +1122,7 @@ Example
 
 
 ### showOtherMonths<span class="type-signature type boolean">Boolean</span>
-{:#showothermonths}
+{:#members-showothermonths}
 
 
 
@@ -1171,7 +1171,7 @@ Example
 
 
 ### showPopupButton<span class="type-signature type boolean">Boolean</span>
-{:#showpopupbutton}
+{:#members-showpopupbutton}
 
 
 
@@ -1220,7 +1220,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
-{:#showroundedcorner}
+{:#members-showroundedcorner}
 
 
 
@@ -1269,7 +1269,7 @@ Example
 
 
 ### startDay<span class="type-signature type number">Number</span>
-{:#startday}
+{:#members-startday}
 
 
 
@@ -1318,7 +1318,7 @@ Example
 
 
 ### startLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#startlevel}
+{:#members-startlevel}
 
 
 
@@ -1367,7 +1367,7 @@ Example
 
 
 ### stepMonths<span class="type-signature type number">Number</span>
-{:#stepmonths}
+{:#members-stepmonths}
 
 
 
@@ -1416,7 +1416,7 @@ Example
 
 
 ### timeDisplayFormat<span class="type-signature type string">String</span>
-{:#timedisplayformat}
+{:#members-timedisplayformat}
 
 
 
@@ -1465,7 +1465,7 @@ Example
 
 
 ### timePopupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
-{:#timepopupwidth}
+{:#members-timepopupwidth}
 
 
 
@@ -1514,7 +1514,7 @@ Example
 
 
 ### validationMessage<span class="type-signature type object">object</span>
-{:#validationmessage}
+{:#members-validationmessage}
 
 
 
@@ -1570,7 +1570,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
-{:#validationrules}
+{:#members-validationrules}
 
 
 
@@ -1623,7 +1623,7 @@ Example
 
 
 ### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
-{:#value}
+{:#members-value}
 
 
 
@@ -1672,7 +1672,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -1728,7 +1728,7 @@ Example
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -1772,7 +1772,7 @@ $("#datetime").ejDateTimePicker("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -1816,7 +1816,7 @@ $("#datetime").ejDateTimePicker("enable");
 
 
 ### getValue<span class="signature">()</span>
-{:#getvalue}
+{:#methods-getvalue}
 
 
 
@@ -1832,7 +1832,7 @@ Returns the current datetime value in the DateTimePicker.
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 value
 
@@ -1866,7 +1866,7 @@ $("#datetime").ejDateTimePicker("getValue");
 
 
 ### hide<span class="signature">()</span>
-{:#hide}
+{:#methods-hide}
 
 
 
@@ -1910,7 +1910,7 @@ $("#datetime").ejDateTimePicker("hide");
 
 
 ### setCurrentDateTime<span class="signature">()</span>
-{:#setcurrentdatetime}
+{:#methods-setcurrentdatetime}
 
 
 
@@ -1954,7 +1954,7 @@ $("#datetime").ejDateTimePicker("setCurrentDateTime");
 
 
 ### show<span class="signature">()</span>
-{:#show}
+{:#methods-show}
 
 
 
@@ -2005,7 +2005,7 @@ $("#datetime").ejDateTimePicker("show");
 
 
 ### change
-{:#change}
+{:#events-change}
 
 
 
@@ -2081,7 +2081,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### close
-{:#close}
+{:#events-close}
 
 
 
@@ -2152,7 +2152,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -2213,7 +2213,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -2274,7 +2274,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### focusIn
-{:#focusin}
+{:#events-focusin}
 
 
 
@@ -2340,7 +2340,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### focusOut
-{:#focusout}
+{:#events-focusout}
 
 
 
@@ -2406,7 +2406,7 @@ $("#datetime").ejDateTimePicker({
 
 
 ### open
-{:#open}
+{:#events-open}
 
 
 

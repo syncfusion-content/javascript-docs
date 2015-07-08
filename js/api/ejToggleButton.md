@@ -56,7 +56,7 @@ Requires
 
 
 ### activePrefixIcon<span class="type-signature type string">string</span>
-{:#activeprefixicon}
+{:#members-activeprefixicon}
 
 
 
@@ -96,7 +96,7 @@ Example
 
 
 ### activeSuffixIcon<span class="type-signature type string">string</span>
-{:#activesuffixicon}
+{:#members-activesuffixicon}
 
 
 
@@ -135,7 +135,7 @@ Example
 
 
 ### activeText<span class="type-signature type string">string</span>
-{:#activetext}
+{:#members-activetext}
 
 
 
@@ -170,7 +170,7 @@ Example
 
 
 ### contentType<span class="type-signature type enum">enum</span>
-{:#contenttype}
+{:#members-contenttype}
 
 
 
@@ -205,7 +205,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -240,7 +240,7 @@ Example
 
 
 ### defaultPrefixIcon<span class="type-signature type string">string</span>
-{:#defaultprefixicon}
+{:#members-defaultprefixicon}
 
 
 
@@ -280,7 +280,7 @@ Example
 
 
 ### defaultSuffixIcon<span class="type-signature type string">string</span>
-{:#defaultsuffixicon}
+{:#members-defaultsuffixicon}
 
 
 
@@ -320,7 +320,7 @@ Example
 
 
 ### defaultText<span class="type-signature type string">string</span>
-{:#defaulttext}
+{:#members-defaulttext}
 
 
 
@@ -355,7 +355,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -390,7 +390,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -425,7 +425,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -460,7 +460,7 @@ Example
 
 
 ### height<span class="type-signature type string">String</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -494,7 +494,7 @@ Example
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
-{:#htmlattributes}
+{:#members-htmlattributes}
 
 
 
@@ -529,7 +529,7 @@ Example
 
 
 ### imagePosition<span class="type-signature type enum">enum</span>
-{:#imageposition}
+{:#members-imageposition}
 
 
 
@@ -571,7 +571,7 @@ Example
 
 
 ### preventToggle<span class="type-signature type boolean">boolean</span>
-{:#preventtoggle}
+{:#members-preventtoggle}
 
 
 
@@ -606,7 +606,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#showroundedcorner}
+{:#members-showroundedcorner}
 
 
 
@@ -641,7 +641,7 @@ Example
 
 
 ### size<span class="type-signature type enum">enum</span>
-{:#size}
+{:#members-size}
 
 
 
@@ -676,7 +676,7 @@ Example
 
 
 ### toggleState<span class="type-signature type boolean">boolean</span>
-{:#togglestate}
+{:#members-togglestate}
 
 
 
@@ -711,7 +711,7 @@ Example
 
 
 ### type<span class="type-signature type enum">enum</span>
-{:#type}
+{:#members-type}
 
 
 
@@ -746,7 +746,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -785,7 +785,7 @@ Example
 
 
 ### destroy<span class="signature">()</span>
-{:#destroy}
+{:#methods-destroy}
 
 
 
@@ -822,7 +822,7 @@ $("#toggle").ejToggleButton("destroy");
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -859,7 +859,7 @@ $("#toggle").ejToggleButton("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -900,7 +900,7 @@ $("#toggle").ejToggleButton("enable");
 
 
 ### change
-{:#change}
+{:#events-change}
 
 
 
@@ -977,7 +977,7 @@ $("#toggle").ejToggleButton({
 
 
 ### click
-{:#click}
+{:#events-click}
 
 
 
@@ -1059,7 +1059,7 @@ defaultText:"Play",activeText:"Pause",
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -1131,7 +1131,7 @@ $("#toggle").ejToggleButton({
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 

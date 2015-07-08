@@ -52,7 +52,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">String</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -90,7 +90,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({cssClass: "gradient-lime"});   
 
 
 ### filters<span class="type-signature type array">Array</span>
-{:#filters}
+{:#members-filters}
 
 
 
@@ -129,7 +129,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({filterList: true});</code>
 
 
 ### height<span class="type-signature type string">String</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -167,7 +167,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({height: "630px"});     </code>
 
 
 ### pivotCalculations<span class="type-signature type array">Array</span>
-{:#pivotcalculations}
+{:#members-pivotcalculations}
 
 
 
@@ -206,7 +206,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });</code>
 
 
 ### pivotColumns<span class="type-signature type array">Array</span>
-{:#pivotcolumns}
+{:#members-pivotcolumns}
 
 
 
@@ -245,7 +245,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: true});</c
 
 
 ### pivotControl<span class="type-signature type object">object</span>
-{:#pivotcontrol}
+{:#members-pivotcontrol}
 
 
 
@@ -285,7 +285,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotControl: control});</code>
 
 
 ### pivotRows<span class="type-signature type array">Array</span>
-{:#pivotrows}
+{:#members-pivotrows}
 
 
 
@@ -324,7 +324,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotRowList: true});</code>
 
 
 ### pivotTableFields<span class="type-signature type array">Array</span>
-{:#pivottablefields}
+{:#members-pivottablefields}
 
 
 
@@ -363,7 +363,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });</code>
 
 
 ### url<span class="type-signature type string">String</span>
-{:#url}
+{:#members-url}
 
 
 
@@ -402,7 +402,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option","url", "/wcf/PivotServi
 
 
 ### width<span class="type-signature type string">String</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -444,7 +444,7 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({width: "415px"});      </code>
 
 
 ### doAjaxPost<span class="signature">()</span>
-{:#doajaxpost}
+{:#methods-doajaxpost}
 
 
 

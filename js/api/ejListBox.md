@@ -93,7 +93,7 @@ Requires
 
 
 ### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
-{:#allowdraganddrop}
+{:#members-allowdraganddrop}
 
 
 
@@ -138,7 +138,7 @@ $('#carsList').ejListBox({allowDragAndDrop: true});
 
 
 ### allowGrouping<span class="type-signature type boolean">boolean</span>
-{:#allowgrouping}
+{:#members-allowgrouping}
 
 
 
@@ -181,7 +181,7 @@ Example
 
 
 ### allowMultiSelection<span class="type-signature type boolean">boolean</span>
-{:#allowmultiselection}
+{:#members-allowmultiselection}
 
 
 
@@ -226,7 +226,7 @@ $('#carsList').ejListBox({allowMultiSelection: true});
 
 
 ### cascadeTo<span class="type-signature type string">string</span>
-{:#cascadeto}
+{:#members-cascadeto}
 
 
 
@@ -298,7 +298,7 @@ Example
 
 
 ### checkAll<span class="type-signature type boolean">boolean</span>
-{:#checkall}
+{:#members-checkall}
 
 
 
@@ -343,7 +343,7 @@ $('#carsList').ejListBox({showCheckbox: true, checkAll: true  });
 
 
 ### checkedItemlist<span class="type-signature type integerarray">integerarray</span>
-{:#checkeditemlist}
+{:#members-checkeditemlist}
 
 
 
@@ -388,7 +388,7 @@ $('#carsList').ejListBox({ showCheckbox:true,checkedItemlist  : [1,2] });
 
 
 ### checkItemsByIndex<span class="type-signature type string">string</span>
-{:#checkitemsbyindex}
+{:#members-checkitemsbyindex}
 
 
 
@@ -434,7 +434,7 @@ $('#carsList').ejListBox({checkItemsByIndex  : "2,3"});
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -476,7 +476,7 @@ Example
 
 
 ### dataSource<span class="type-signature type data">data</span>
-{:#datasource}
+{:#members-datasource}
 
 
 
@@ -509,7 +509,7 @@ Example
 
 
 ### disableItemsByIndex<span class="type-signature type string">string</span>
-{:#disableitemsbyindex}
+{:#members-disableitemsbyindex}
 
 
 
@@ -554,7 +554,7 @@ $('#carsList').ejListBox({disableItemsByIndex  : "2,3"});
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -600,7 +600,7 @@ $('#carsList').ejListBox({enabled : false  });
 
 
 ### enableItemsByIndex<span class="type-signature type string">string</span>
-{:#enableitemsbyindex}
+{:#members-enableitemsbyindex}
 
 
 
@@ -646,7 +646,7 @@ $('#carsList').ejListBox({enableItemsByIndex  : "2,3"});
 
 
 ### enableLoadOnDemand<span class="type-signature type boolean">boolean</span>
-{:#enableloadondemand}
+{:#members-enableloadondemand}
 
 
 
@@ -679,7 +679,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -724,7 +724,7 @@ $('#carsList').ejListBox({enablePersistence : false});
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -769,7 +769,7 @@ $('#carsList').ejListBox({enableRTL : true  });
 
 
 ### enableTooltip<span class="type-signature type boolean">boolean</span>
-{:#enabletooltip}
+{:#members-enabletooltip}
 
 
 
@@ -814,7 +814,7 @@ $('#carsList').ejListBox({enableTooltip : true  });
 
 
 ### enableVirtualScrolling<span class="type-signature type boolean">boolean</span>
-{:#enablevirtualscrolling}
+{:#members-enablevirtualscrolling}
 
 
 
@@ -847,7 +847,7 @@ Example
 
 
 ### fields<span class="type-signature type object">object</span>
-{:#fields}
+{:#members-fields}
 
 
 
@@ -880,7 +880,7 @@ Example
 
 
 ### fields.category<span class="type-signature type string">String</span>
-{:#fields-category}
+{:#members-fields-category}
 
 
 
@@ -893,7 +893,7 @@ Defines the category for data item.
 
 
 ### fields.htmlAttributes<span class="type-signature type object">Object</span>
-{:#fields-htmlattributes}
+{:#members-fields-htmlattributes}
 
 
 
@@ -906,7 +906,7 @@ Defines the html attributes such as id, class, styles for the item.
 
 
 ### fields.id<span class="type-signature type string">String</span>
-{:#fields-id}
+{:#members-fields-id}
 
 
 
@@ -919,7 +919,7 @@ Defines id for the tag.
 
 
 ### fields.imageAttributes<span class="type-signature type string">String</span>
-{:#fields-imageattributes}
+{:#members-fields-imageattributes}
 
 
 
@@ -932,7 +932,7 @@ Defines the image attributes such as height, width, styles and so on.
 
 
 ### fields.imageUrl<span class="type-signature type string">String</span>
-{:#fields-imageurl}
+{:#members-fields-imageurl}
 
 
 
@@ -945,7 +945,7 @@ Defines the imageURL for the image location.
 
 
 ### fields.selected<span class="type-signature type string">String</span>
-{:#fields-selected}
+{:#members-fields-selected}
 
 
 
@@ -958,7 +958,7 @@ Defines the tag value to be selected initially
 
 
 ### fields.spriteCssClass<span class="type-signature type string">String</span>
-{:#fields-spritecssclass}
+{:#members-fields-spritecssclass}
 
 
 
@@ -971,7 +971,7 @@ Defines the sprite css for the image tag.
 
 
 ### fields.tableName<span class="type-signature type string">String</span>
-{:#fields-tablename}
+{:#members-fields-tablename}
 
 
 
@@ -984,7 +984,7 @@ Defines the table name for tag value or display text while render with remote da
 
 
 ### fields.text<span class="type-signature type string">String</span>
-{:#fields-text}
+{:#members-fields-text}
 
 
 
@@ -997,7 +997,7 @@ Defines the text content for the tag.
 
 
 ### fields.toolTipText<span class="type-signature type object">Object</span>
-{:#fields-tooltiptext}
+{:#members-fields-tooltiptext}
 
 
 
@@ -1010,7 +1010,7 @@ Defines the tooltip text to be displayed for the data list item.
 
 
 ### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -1055,7 +1055,7 @@ $('#carsList').ejListBox({ height: "300"});
 
 
 ### query<span class="type-signature type object">object</span>
-{:#query}
+{:#members-query}
 
 
 
@@ -1090,7 +1090,7 @@ var queryString = ej.Query().from("Suppliers").select("Customers");
 
 
 ### selectedItemIndex<span class="type-signature type number">number</span>
-{:#selecteditemindex}
+{:#members-selecteditemindex}
 
 
 
@@ -1135,7 +1135,7 @@ $('#carsList').ejListBox({selectedItemIndex  : 2});
 
 
 ### selectedItemlist<span class="type-signature type integerarray">integerarray</span>
-{:#selecteditemlist}
+{:#members-selecteditemlist}
 
 
 
@@ -1180,7 +1180,7 @@ $('#carsList').ejListBox({ allowMultiSelection:true,selectedItemlist  : [1,2] })
 
 
 ### selectedItems<span class="type-signature type integerarray">integerarray</span>
-{:#selecteditems}
+{:#members-selecteditems}
 
 
 
@@ -1225,7 +1225,7 @@ $('#carsList').ejListBox({showCheckbox: true, selectedItems : [1,2]});
 
 
 ### showCheckbox<span class="type-signature type boolean">boolean</span>
-{:#showcheckbox}
+{:#members-showcheckbox}
 
 
 
@@ -1270,7 +1270,7 @@ $('#carsList').ejListBox({showCheckbox: true });
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#showroundedcorner}
+{:#members-showroundedcorner}
 
 
 
@@ -1315,7 +1315,7 @@ $('#carsList').ejListBox({ showRoundedCorner: true });
 
 
 ### template<span class="type-signature type string">string</span>
-{:#template}
+{:#members-template}
 
 
 
@@ -1351,7 +1351,7 @@ $("#carsList").ejListBox({ dataSource: window.carsListempList, template: '&lt;im
 
 
 ### unCheckAll<span class="type-signature type boolean">boolean</span>
-{:#uncheckall}
+{:#members-uncheckall}
 
 
 
@@ -1396,7 +1396,7 @@ $('#carsList').ejListBox({showCheckbox: true,  uncheckAll: true  });
 
 
 ### uncheckItemsByIndex<span class="type-signature type string">string</span>
-{:#uncheckitemsbyindex}
+{:#members-uncheckitemsbyindex}
 
 
 
@@ -1441,7 +1441,7 @@ $('#carsList').ejListBox({uncheckItemsByIndex  : "2,3"});
 
 
 ### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -1490,7 +1490,7 @@ $('#carsList').ejListBox({ width: "220"});
 
 
 ### addItem<span class="signature">()</span>
-{:#additem}
+{:#methods-additem}
 
 
 
@@ -1547,7 +1547,7 @@ $('#carsList').ejListBox("addItem","Java");
 
 
 ### checkAll<span class="signature">()</span>
-{:#checkall}
+{:#methods-checkall}
 
 
 
@@ -1604,7 +1604,7 @@ $('#carsList').ejListBox("checkAll");
 
 
 ### checkItemByIndex<span class="signature">()</span>
-{:#checkitembyindex}
+{:#methods-checkitembyindex}
 
 
 
@@ -1660,7 +1660,7 @@ $('#carsList').ejListBox("checkItemByIndex","2,3");
 
 
 ### checkitems<span class="signature">()</span>
-{:#checkitems}
+{:#methods-checkitems}
 
 
 
@@ -1717,7 +1717,7 @@ $('#carsList').ejListBox("checkitems");
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -1774,7 +1774,7 @@ $('#carsList').ejListBox("disable");
 
 
 ### disableItem<span class="signature">()</span>
-{:#disableitem}
+{:#methods-disableitem}
 
 
 
@@ -1831,7 +1831,7 @@ $('#carsList').ejListBox("disableItem");
 
 
 ### disableItemByIndex<span class="signature">()</span>
-{:#disableitembyindex}
+{:#methods-disableitembyindex}
 
 
 
@@ -1888,7 +1888,7 @@ $('#carsList').ejListBox("disableItemsByIndex" ,"3,5,7");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -1945,7 +1945,7 @@ $('#carsList').ejListBox("enable");
 
 
 ### enableItemByIndex<span class="signature">()</span>
-{:#enableitembyindex}
+{:#methods-enableitembyindex}
 
 
 
@@ -2002,7 +2002,7 @@ $('#carsList').ejListBox("enableItemsByIndex" ,"3,5");
 
 
 ### getCheckedItems<span class="signature">()</span>
-{:#getcheckeditems}
+{:#methods-getcheckeditems}
 
 
 
@@ -2059,7 +2059,7 @@ $('#carsList').ejListBox("getCheckedItems");
 
 
 ### getSelectedItem<span class="signature">()</span>
-{:#getselecteditem}
+{:#methods-getselecteditem}
 
 
 
@@ -2116,7 +2116,7 @@ $('#carsList').ejListBox("getSelectedItem");
 
 
 ### getSelectedItems<span class="signature">()</span>
-{:#getselecteditems}
+{:#methods-getselecteditems}
 
 
 
@@ -2173,7 +2173,7 @@ $('#carsList').ejListBox("getSelectedItems");
 
 
 ### moveDown<span class="signature">()</span>
-{:#movedown}
+{:#methods-movedown}
 
 
 
@@ -2230,7 +2230,7 @@ $('#carsList').ejListBox("moveDown");
 
 
 ### moveUp<span class="signature">()</span>
-{:#moveup}
+{:#methods-moveup}
 
 
 
@@ -2287,7 +2287,7 @@ $('#carsList').ejListBox("moveUp");
 
 
 ### removeItem<span class="signature">()</span>
-{:#removeitem}
+{:#methods-removeitem}
 
 
 
@@ -2344,7 +2344,7 @@ $('#carsList').ejListBox("removeItem");
 
 
 ### selectAll<span class="signature">()</span>
-{:#selectall}
+{:#methods-selectall}
 
 
 
@@ -2401,7 +2401,7 @@ $('#carsList').ejListBox("selectAll");
 
 
 ### selectItemByIndex<span class="signature">()</span>
-{:#selectitembyindex}
+{:#methods-selectitembyindex}
 
 
 
@@ -2458,7 +2458,7 @@ $('#carsList').ejListBox("selectItemByIndex" ,"2");
 
 
 ### selectItemsByIndex<span class="signature">()</span>
-{:#selectitemsbyindex}
+{:#methods-selectitemsbyindex}
 
 
 
@@ -2515,7 +2515,7 @@ $('#carsList').ejListBox("selectItemsByIndex","2,3");
 
 
 ### unCheckAll<span class="signature">()</span>
-{:#uncheckall}
+{:#methods-uncheckall}
 
 
 
@@ -2572,7 +2572,7 @@ $('#carsList').ejListBox("unCheckAll");
 
 
 ### uncheckItemByIndex<span class="signature">()</span>
-{:#uncheckitembyindex}
+{:#methods-uncheckitembyindex}
 
 
 
@@ -2628,7 +2628,7 @@ $('#carsList').ejListBox("uncheckItemByIndex","2,3");
 
 
 ### unSelectAll<span class="signature">()</span>
-{:#unselectall}
+{:#methods-unselectall}
 
 
 
@@ -2685,7 +2685,7 @@ $('#carsList').ejListBox("unSelectAll");
 
 
 ### unselectItemByIndex<span class="signature">()</span>
-{:#unselectitembyindex}
+{:#methods-unselectitembyindex}
 
 
 
@@ -2742,7 +2742,7 @@ $('#carsList').ejListBox("unselectItemByIndex","2");
 
 
 ### unselectItemsByIndex<span class="signature">()</span>
-{:#unselectitemsbyindex}
+{:#methods-unselectitemsbyindex}
 
 
 
@@ -2803,7 +2803,7 @@ $('#carsList').ejListBox("unselectItemsByIndex","2,3");
 
 
 ### checkChange
-{:#checkchange}
+{:#events-checkchange}
 
 
 
@@ -2860,7 +2860,7 @@ $('#carsList').ejListBox({      showCheckbox:true,checkChange: function(args) {}
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -2922,7 +2922,7 @@ $('#carsList').ejListBox({      create: function(args) {}});
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -2958,7 +2958,7 @@ $('#carsList').ejListBox({      destroy: function(args) {}});
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -2994,7 +2994,7 @@ $('#carsList').ejListBox({      destroy: function(args) {}});
 
 
 ### itemDrag
-{:#itemdrag}
+{:#events-itemdrag}
 
 
 
@@ -3051,7 +3051,7 @@ $('#carsList').ejListBox({      itemDrag: function(args) {}});
 
 
 ### itemDragStart
-{:#itemdragstart}
+{:#events-itemdragstart}
 
 
 
@@ -3108,7 +3108,7 @@ $('#carsList').ejListBox({      itemDragStart: function(args) {}});
 
 
 ### itemDragStop
-{:#itemdragstop}
+{:#events-itemdragstop}
 
 
 
@@ -3165,7 +3165,7 @@ $('#carsList').ejListBox({      itemDragStop: function(args) {}});
 
 
 ### itemDropped
-{:#itemdropped}
+{:#events-itemdropped}
 
 
 
@@ -3222,7 +3222,7 @@ $('#carsList').ejListBox({      itemDropped: function(args) {}});
 
 
 ### selected
-{:#selected}
+{:#events-selected}
 
 
 
@@ -3279,7 +3279,7 @@ $('#carsList').ejListBox({      selected: function(args) {}});
 
 
 ### selectIndexChanged
-{:#selectindexchanged}
+{:#events-selectindexchanged}
 
 
 

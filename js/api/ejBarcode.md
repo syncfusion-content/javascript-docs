@@ -72,7 +72,7 @@ Requires
 
 
 ### barcodeToTextGapHeight<span class="type-signature type number">number</span>
-{:#barcodetotextgapheight}
+{:#members-barcodetotextgapheight}
 
 
 
@@ -126,7 +126,7 @@ $("#barcode1").ejBarcode("option", "barcodeToTextGapHeight", 10 ); </code>
 
 
 ### barHeight<span class="type-signature type number">number</span>
-{:#barheight}
+{:#members-barheight}
 
 
 
@@ -180,7 +180,7 @@ $("#barcode1").ejBarcode("option", "barHeight", 150 ); </code>
 
 
 ### darkBarColor<span class="type-signature type object">object</span>
-{:#darkbarcolor}
+{:#members-darkbarcolor}
 
 
 
@@ -234,7 +234,7 @@ $("#barcode1").ejBarcode("option", "darkBarColor", "black" ); </code>
 
 
 ### displayText<span class="type-signature type boolean">boolean</span>
-{:#displaytext}
+{:#members-displaytext}
 
 
 
@@ -288,7 +288,7 @@ $("#barcode1").ejBarcode("option", "displayText", true ); </code>
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -342,7 +342,7 @@ $("#barcode1").ejBarcode("option", "enabled", true ); </code>
 
 
 ### encodeStartStopSymbol<span class="type-signature type number">number</span>
-{:#encodestartstopsymbol}
+{:#members-encodestartstopsymbol}
 
 
 
@@ -396,7 +396,7 @@ $("#barcode1").ejBarcode("option", "encodeStartStopSymbol", true ); </code>
 
 
 ### lightBarColor<span class="type-signature type object">object</span>
-{:#lightbarcolor}
+{:#members-lightbarcolor}
 
 
 
@@ -450,7 +450,7 @@ $("#barcode1").ejBarcode("option", "lightBarColor", "white" ); </code>
 
 
 ### narrowBarWidth<span class="type-signature type number">number</span>
-{:#narrowbarwidth}
+{:#members-narrowbarwidth}
 
 
 
@@ -504,7 +504,7 @@ $("#barcode1").ejBarcode("option", "narrowBarWidth", 1 ); </code>
 
 
 ### quietZone<span class="type-signature type object">object</span>
-{:#quietzone}
+{:#members-quietzone}
 
 
 
@@ -526,7 +526,7 @@ The blank margin on the side(s) which denotes the reader with the start and stop
 
 
 ### quietZone.all<span class="type-signature type number">number</span>
-{:#quietzone-all}
+{:#members-quietzone-all}
 
 
 
@@ -581,7 +581,7 @@ $("#barcode1").ejBarcode("option", "quietZone", {all: 5} ); </code>
 
 
 ### quietZone.bottom<span class="type-signature type number">number</span>
-{:#quietzone-bottom}
+{:#members-quietzone-bottom}
 
 
 
@@ -636,7 +636,7 @@ $("#barcode1").ejBarcode("option", "quietZone", {bottom: 5} ); </code>
 
 
 ### quietZone.left<span class="type-signature type number">number</span>
-{:#quietzone-left}
+{:#members-quietzone-left}
 
 
 
@@ -691,7 +691,7 @@ $("#barcode1").ejBarcode("option", "quietZone", {left: 5} ); </code>
 
 
 ### quietZone.right<span class="type-signature type number">number</span>
-{:#quietzone-right}
+{:#members-quietzone-right}
 
 
 
@@ -746,7 +746,7 @@ $("#barcode1").ejBarcode("option", "quietZone", {right: 5} ); </code>
 
 
 ### quietZone.top<span class="type-signature type number">number</span>
-{:#quietzone-top}
+{:#members-quietzone-top}
 
 
 
@@ -801,7 +801,7 @@ $("#barcode1").ejBarcode("option", "quietZone", {top: 5} ); </code>
 
 
 ### symbologyType<span class="type-signature type enum">enum</span>
-{:#symbologytype}
+{:#members-symbologytype}
 
 
 
@@ -856,7 +856,7 @@ $("#barcode1").ejBarcode("option", "symbologyType", "code39" ); </code>
 
 
 ### text<span class="type-signature type string">string</span>
-{:#text}
+{:#members-text}
 
 
 
@@ -910,7 +910,7 @@ $("#barcode1").ejBarcode("option", "text", "SYNCFUSION" ); </code>
 
 
 ### textColor<span class="type-signature type object">object</span>
-{:#textcolor}
+{:#members-textcolor}
 
 
 
@@ -964,7 +964,7 @@ $("#barcode1").ejBarcode("option", "textColor", "black" ); </code>
 
 
 ### wideBarWidth<span class="type-signature type number">number</span>
-{:#widebarwidth}
+{:#members-widebarwidth}
 
 
 
@@ -1018,7 +1018,7 @@ $("#barcode1").ejBarcode("option", "wideBarWidth", 3 ); </code>
 
 
 ### xDimension<span class="type-signature type number">number</span>
-{:#xdimension}
+{:#members-xdimension}
 
 
 
@@ -1079,7 +1079,7 @@ $("#barcode1").ejBarcode("option", "xDimension", 4 ); </code>
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -1123,7 +1123,7 @@ $("#barcode1").ejBarcode("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -1174,7 +1174,7 @@ $("#barcode1").ejBarcode("enable");
 
 
 ### load
-{:#load}
+{:#events-load}
 
 
 

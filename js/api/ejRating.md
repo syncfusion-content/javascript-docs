@@ -57,7 +57,7 @@ Requires
 
 
 ### allowReset<span class="type-signature type boolean">boolean</span>
-{:#allowreset}
+{:#members-allowreset}
 
 
 
@@ -91,7 +91,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -125,7 +125,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -159,7 +159,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -193,7 +193,7 @@ Example
 
 
 ### height<span class="type-signature type string">string</span>
-{:#height}
+{:#members-height}
 
 
 
@@ -226,7 +226,7 @@ Example
 
 
 ### incrementStep<span class="type-signature type number">number</span>
-{:#incrementstep}
+{:#members-incrementstep}
 
 
 
@@ -261,7 +261,7 @@ Example
 
 
 ### maxValue<span class="type-signature type number">number</span>
-{:#maxvalue}
+{:#members-maxvalue}
 
 
 
@@ -296,7 +296,7 @@ Example
 
 
 ### minValue<span class="type-signature type number">number</span>
-{:#minvalue}
+{:#members-minvalue}
 
 
 
@@ -332,7 +332,7 @@ Example
 
 
 ### orientation<span class="type-signature type enum">enum</span>
-{:#orientation}
+{:#members-orientation}
 
 
 
@@ -366,7 +366,7 @@ Example
 
 
 ### precision<span class="type-signature type enum">enum</span>
-{:#precision}
+{:#members-precision}
 
 
 
@@ -401,7 +401,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
-{:#readonly}
+{:#members-readonly}
 
 
 
@@ -435,7 +435,7 @@ Example
 
 
 ### shapeHeight<span class="type-signature type number">number</span>
-{:#shapeheight}
+{:#members-shapeheight}
 
 
 
@@ -469,7 +469,7 @@ Example
 
 
 ### shapeWidth<span class="type-signature type number">number</span>
-{:#shapewidth}
+{:#members-shapewidth}
 
 
 
@@ -503,7 +503,7 @@ Example
 
 
 ### showTooltip<span class="type-signature type boolean">boolean</span>
-{:#showtooltip}
+{:#members-showtooltip}
 
 
 
@@ -539,7 +539,7 @@ Example
 
 
 ### value<span class="type-signature type number">number</span>
-{:#value}
+{:#members-value}
 
 
 
@@ -575,7 +575,7 @@ Example
 
 
 ### width<span class="type-signature type string">string</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -612,7 +612,7 @@ Example
 
 
 ### destroy<span class="signature">()</span>
-{:#destroy}
+{:#methods-destroy}
 
 
 
@@ -649,7 +649,7 @@ $("#rating").ejRating("destroy");
 
 
 ### getValue<span class="signature">()</span>
-{:#getvalue}
+{:#methods-getvalue}
 
 
 
@@ -659,7 +659,7 @@ To get the current value of rating control
 
 
 #### Returns:
-{:#returns:}
+{:#methods-returns:}
 
 Rating value
 
@@ -691,7 +691,7 @@ $("#rating").ejRating("getValue");
 
 
 ### hide<span class="signature">()</span>
-{:#hide}
+{:#methods-hide}
 
 
 
@@ -728,7 +728,7 @@ $("#rating").ejRating("hide");
 
 
 ### refresh<span class="signature">()</span>
-{:#refresh}
+{:#methods-refresh}
 
 
 
@@ -765,7 +765,7 @@ $("#rating").ejRating("refresh");
 
 
 ### reset<span class="signature">()</span>
-{:#reset}
+{:#methods-reset}
 
 
 
@@ -802,7 +802,7 @@ $("#rating").ejRating("reset");
 
 
 ### setValue<span class="signature">()</span>
-{:#setvalue}
+{:#methods-setvalue}
 
 
 
@@ -839,7 +839,7 @@ $("#rating").ejRating("setValue");
 
 
 ### show<span class="signature">()</span>
-{:#show}
+{:#methods-show}
 
 
 
@@ -880,7 +880,7 @@ $("#rating").ejRating("show");
 
 
 ### change
-{:#change}
+{:#events-change}
 
 
 
@@ -960,7 +960,7 @@ $("#rating").ejRating({
 
 
 ### click
-{:#click}
+{:#events-click}
 
 
 
@@ -1040,7 +1040,7 @@ $("#rating").ejRating({
 
 
 ### create
-{:#create}
+{:#events-create}
 
 
 
@@ -1110,7 +1110,7 @@ $("#rating").ejRating({
 
 
 ### destroy
-{:#destroy}
+{:#events-destroy}
 
 
 
@@ -1180,7 +1180,7 @@ $("#rating").ejRating({
 
 
 ### mouseout
-{:#mouseout}
+{:#events-mouseout}
 
 
 
@@ -1260,7 +1260,7 @@ $("#rating").ejRating({
 
 
 ### mouseover
-{:#mouseover}
+{:#events-mouseover}
 
 
 

@@ -135,7 +135,7 @@ Requires
 
 
 ### allowEditing<span class="type-signature type boolean">boolean</span>
-{:#allowediting}
+{:#members-allowediting}
 
 
 
@@ -174,7 +174,7 @@ $("#rteSample").ejRTE({ allowEditing: false });
 
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
-{:#allowkeyboardnavigation}
+{:#members-allowkeyboardnavigation}
 
 
 
@@ -213,7 +213,7 @@ $("#rteSample").ejRTE({allowKeyboardNavigation: false });
 
 
 ### colorCode<span class="type-signature type object">object</span>
-{:#colorcode}
+{:#members-colorcode}
 
 
 
@@ -256,7 +256,7 @@ $("#rteSample").ejRTE({ colorCode: [
 
 
 ### colorPaletteColumns<span class="type-signature type number">number</span>
-{:#colorpalettecolumns}
+{:#members-colorpalettecolumns}
 
 
 
@@ -295,7 +295,7 @@ $("#rteSample").ejRTE({colorPaletteColumns: 70 });
 
 
 ### colorPaletteRows<span class="type-signature type number">number</span>
-{:#colorpaletterows}
+{:#members-colorpaletterows}
 
 
 
@@ -334,7 +334,7 @@ $("#rteSample").ejRTE({colorPaletteRows: 70 });
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -373,7 +373,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
+{:#members-enabled}
 
 
 
@@ -412,7 +412,7 @@ $("#rteSample").ejRTE({enabled: false });
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#enablepersistence}
+{:#members-enablepersistence}
 
 
 
@@ -451,7 +451,7 @@ $("#rteSample").ejRTE({enablePersistence: false });
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
-{:#enableresize}
+{:#members-enableresize}
 
 
 
@@ -490,7 +490,7 @@ $("#rteSample").ejRTE({enableResize: false });
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -529,7 +529,7 @@ $("#rteSample").ejRTE({enableRTL: true });
 
 
 ### enableXHTML<span class="type-signature type boolean">boolean</span>
-{:#enablexhtml}
+{:#members-enablexhtml}
 
 
 
@@ -568,7 +568,7 @@ $("#rteSample").ejRTE({enableXHTML: true });
 
 
 ### fileBrowser<span class="type-signature type object">object</span>
-{:#filebrowser}
+{:#members-filebrowser}
 
 
 
@@ -611,7 +611,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 
 
 ### fileBrowser.ajaxAction<span class="type-signature type string">string</span>
-{:#filebrowser-ajaxaction}
+{:#members-filebrowser-ajaxaction}
 
 
 
@@ -643,7 +643,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 ### fileBrowser.extensionAllow<span class="type-signature type string">string</span>
-{:#filebrowser-extensionallow}
+{:#members-filebrowser-extensionallow}
 
 
 
@@ -675,7 +675,7 @@ extensionAllow: "*.doc,*.docx,*.pdf,*.txt"
 
 
 ### fileBrowser.filePath<span class="type-signature type string">string</span>
-{:#filebrowser-filepath}
+{:#members-filebrowser-filepath}
 
 
 
@@ -707,7 +707,7 @@ $("#rteSample").ejRTE({  fileBrowser: {
 
 
 ### fontName<span class="type-signature type object">object</span>
-{:#fontname}
+{:#members-fontname}
 
 
 
@@ -752,20 +752,20 @@ $("#rteSample").ejRTE({format: [
 ## <code>", spriteCssClass: "e-h3" }, { text: "Heading 4", value: "</code>
 
 ### <code>", spriteCssClass: "e-h4" }, { text: "Heading 5", value: "</code>
-{:#}
+{:#members-}
 
 #### <code>", spriteCssClass: "e-h5" }, { text: "Heading 6", value: "</code>
-{:#}
+{:#members-}
 
 #### <code>", spriteCssClass: "e-h6" } ]}); &lt;/script&gt;</code>
-{:#}
+{:#members-}
 
 </blockquote>
 
 
 
 ### <code>fontSize<span class="type-signature type object">object</span></code>
-{:#}
+{:#members-}
 
 
 
@@ -784,7 +784,7 @@ $("#rteSample").ejRTE({format: [
 
 
 #### <code>Example</code>
-{:#}
+{:#members-}
 
 <pre class="prettyprint">
 <code><code> 
@@ -833,7 +833,7 @@ $("#rteSample").ejRTE({ fontSize: [
 
 
 ### format<span class="type-signature type string">string</span>
-{:#format}
+{:#members-format}
 
 
 
@@ -878,20 +878,20 @@ $("#rteSample").ejRTE({format: [
 ## <code>", spriteCssClass: "e-h3" }, { text: "Heading 4", value: "</code>
 
 ### <code>", spriteCssClass: "e-h4" }, { text: "Heading 5", value: "</code>
-{:#}
+{:#members-}
 
 #### <code>", spriteCssClass: "e-h5" }, { text: "Heading 6", value: "</code>
-{:#}
+{:#members-}
 
 #### <code>", spriteCssClass: "e-h6" } ]}); &lt;/script&gt;</code>
-{:#}
+{:#members-}
 
 </blockquote>
 
 
 
 ### <code>height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span></code>
-{:#}
+{:#members-}
 
 
 
@@ -910,7 +910,7 @@ $("#rteSample").ejRTE({format: [
 
 
 #### <code>Example</code>
-{:#}
+{:#members-}
 
 <pre class="prettyprint">
 <code><code> 
@@ -930,7 +930,7 @@ $("#rteSample").ejRTE({format: [
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
-{:#htmlattributes}
+{:#members-htmlattributes}
 
 
 
@@ -969,7 +969,7 @@ $("#rteSample").ejRTE({htmlAttributes: {readOnly : "readOnly" });
 
 
 ### iframeAttribute<span class="type-signature type string">string</span>
-{:#iframeattribute}
+{:#members-iframeattribute}
 
 
 
@@ -1008,7 +1008,7 @@ $("#rteSample").ejRTE({iframeAttribute: "color:#000" });
 
 
 ### imageBrowser<span class="type-signature type object">object</span>
-{:#imagebrowser}
+{:#members-imagebrowser}
 
 
 
@@ -1051,7 +1051,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 
 
 ### imageBrowser.ajaxAction<span class="type-signature type string">string</span>
-{:#imagebrowser-ajaxaction}
+{:#members-imagebrowser-ajaxaction}
 
 
 
@@ -1083,7 +1083,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 ### imageBrowser.extensionAllow<span class="type-signature type string">string</span>
-{:#imagebrowser-extensionallow}
+{:#members-imagebrowser-extensionallow}
 
 
 
@@ -1115,7 +1115,7 @@ extensionAllow: "*.doc,*.docx,*.tiff,*.jpeg"
 
 
 ### imageBrowser.filePath<span class="type-signature type string">string</span>
-{:#imagebrowser-filepath}
+{:#members-imagebrowser-filepath}
 
 
 
@@ -1147,7 +1147,7 @@ $("#rteSample").ejRTE({  imageBrowser: {
 
 
 ### imageBrowser.uploadAction<span class="type-signature type string">string</span>
-{:#imagebrowser-uploadaction}
+{:#members-imagebrowser-uploadaction}
 
 
 
@@ -1179,7 +1179,7 @@ uploadAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperatio
 
 
 ### imageBrowser.uploadAction<span class="type-signature type string">string</span>
-{:#imagebrowser-uploadaction}
+{:#members-imagebrowser-uploadaction}
 
 
 
@@ -1211,7 +1211,7 @@ uploadAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperatio
 
 
 ### isResponsive<span class="type-signature type boolean">boolean</span>
-{:#isresponsive}
+{:#members-isresponsive}
 
 
 
@@ -1250,7 +1250,7 @@ $("#rteSample").ejRTE({ isResponsive: true });
 
 
 ### locale<span class="type-signature type string">string</span>
-{:#locale}
+{:#members-locale}
 
 
 
@@ -1289,7 +1289,7 @@ $("#rteSample").ejRTE({locale: "en-US" });
 
 
 ### maxHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#maxheight}
+{:#members-maxheight}
 
 
 
@@ -1328,7 +1328,7 @@ $("#rteSample").ejRTE({ maxHeight: 900});
 
 
 ### maxLength<span class="type-signature type number">number</span>
-{:#maxlength}
+{:#members-maxlength}
 
 
 
@@ -1367,7 +1367,7 @@ $("#rteSample").ejRTE({ maxLength: 900});
 
 
 ### maxWidth<span class="type-signature type number">number</span>
-{:#maxwidth}
+{:#members-maxwidth}
 
 
 
@@ -1406,7 +1406,7 @@ $("#rteSample").ejRTE({ maxWidth: 900});
 
 
 ### minHeight<span class="type-signature type number">number</span>
-{:#minheight}
+{:#members-minheight}
 
 
 
@@ -1445,7 +1445,7 @@ $("#rteSample").ejRTE({ minHeight: 900});
 
 
 ### minWidth<span class="type-signature type number">number</span>
-{:#minwidth}
+{:#members-minwidth}
 
 
 
@@ -1484,7 +1484,7 @@ $("#rteSample").ejRTE({ minWidth: 900});
 
 
 ### name<span class="type-signature type string">string</span>
-{:#name}
+{:#members-name}
 
 
 
@@ -1523,7 +1523,7 @@ $("#rteSample").ejRTE({name: "ecommentblog" });
 
 
 ### showClearAll<span class="type-signature type boolean">boolean</span>
-{:#showclearall}
+{:#members-showclearall}
 
 
 
@@ -1553,7 +1553,7 @@ $("#rteSample").ejRTE({showClearAll: false });
 
 
 ### showClearFormat<span class="type-signature type boolean">boolean</span>
-{:#showclearformat}
+{:#members-showclearformat}
 
 
 
@@ -1592,7 +1592,7 @@ $("#rteSample").ejRTE({showClearFormat:true });
 
 
 ### showCustomTable<span class="type-signature type boolean">boolean</span>
-{:#showcustomtable}
+{:#members-showcustomtable}
 
 
 
@@ -1631,7 +1631,7 @@ $("#rteSample").ejRTE({showCustomTable: false });
 
 
 ### showDimensions<span class="type-signature type boolean">boolean</span>
-{:#showdimensions}
+{:#members-showdimensions}
 
 
 
@@ -1670,7 +1670,7 @@ $("#rteSample").ejRTE({showDimensions: false });
 
 
 ### showFontOption<span class="type-signature type boolean">boolean</span>
-{:#showfontoption}
+{:#members-showfontoption}
 
 
 
@@ -1709,7 +1709,7 @@ $("#rteSample").ejRTE({showFontOption: false });
 
 
 ### showFooter<span class="type-signature type boolean">boolean</span>
-{:#showfooter}
+{:#members-showfooter}
 
 
 
@@ -1748,7 +1748,7 @@ $("#rteSample").ejRTE({showFooter: true });
 
 
 ### showHtmlSource<span class="type-signature type boolean">boolean</span>
-{:#showhtmlsource}
+{:#members-showhtmlsource}
 
 
 
@@ -1787,7 +1787,7 @@ $("#rteSample").ejRTE({showHtmlSource: false });
 
 
 ### showHtmlTagInfo<span class="type-signature type boolean">boolean</span>
-{:#showhtmltaginfo}
+{:#members-showhtmltaginfo}
 
 
 
@@ -1826,7 +1826,7 @@ $("#rteSample").ejRTE({showHtmlTagInfo: false });
 
 
 ### showToolbar<span class="type-signature type boolean">boolean</span>
-{:#showtoolbar}
+{:#members-showtoolbar}
 
 
 
@@ -1865,7 +1865,7 @@ $("#rteSample").ejRTE({showToolbar: false });
 
 
 ### showWordCount<span class="type-signature type boolean">boolean</span>
-{:#showwordcount}
+{:#members-showwordcount}
 
 
 
@@ -1904,7 +1904,7 @@ $("#rteSample").ejRTE({showWordCount: false });
 
 
 ### tableColumns<span class="type-signature type number">number</span>
-{:#tablecolumns}
+{:#members-tablecolumns}
 
 
 
@@ -1943,7 +1943,7 @@ $("#rteSample").ejRTE({tableColumns: 70 });
 
 
 ### tableRows<span class="type-signature type number">number</span>
-{:#tablerows}
+{:#members-tablerows}
 
 
 
@@ -1982,7 +1982,7 @@ $("#rteSample").ejRTE({tableRows: 70 });
 
 
 ### tools<span class="type-signature type object">object</span>
-{:#tools}
+{:#members-tools}
 
 
 
@@ -2032,7 +2032,7 @@ tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColum
 
 
 ### tools.alignment<span class="type-signature type object">Object</span>
-{:#tools-alignment}
+{:#members-tools-alignment}
 
 
 
@@ -2064,7 +2064,7 @@ alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"]
 
 
 ### tools.doAction<span class="type-signature type object">Object</span>
-{:#tools-doaction}
+{:#members-tools-doaction}
 
 
 
@@ -2096,7 +2096,7 @@ doAction: ["undo", "redo"]
 
 
 ### tools.formatStyle<span class="type-signature type object">Object</span>
-{:#tools-formatstyle}
+{:#members-tools-formatstyle}
 
 
 
@@ -2128,7 +2128,7 @@ $("#rteSample").ejRTE({  tools: {
 
 
 ### tools.images<span class="type-signature type object">Object</span>
-{:#tools-images}
+{:#members-tools-images}
 
 
 
@@ -2160,7 +2160,7 @@ images: ["image", "video"]
 
 
 ### tools.indenting<span class="type-signature type object">Object</span>
-{:#tools-indenting}
+{:#members-tools-indenting}
 
 
 
@@ -2192,7 +2192,7 @@ indenting: ["outdent", "indent"]
 
 
 ### tools.links<span class="type-signature type object">Object</span>
-{:#tools-links}
+{:#members-tools-links}
 
 
 
@@ -2224,7 +2224,7 @@ links: ["createLink"]
 
 
 ### tools.lists<span class="type-signature type object">Object</span>
-{:#tools-lists}
+{:#members-tools-lists}
 
 
 
@@ -2256,7 +2256,7 @@ lists: ["unorderedList", "orderedList"]
 
 
 ### tools.style<span class="type-signature type object">Object</span>
-{:#tools-style}
+{:#members-tools-style}
 
 
 
@@ -2288,7 +2288,7 @@ style: ["bold", "italic", "underline", "strikethrough"]
 
 
 ### tools.tables<span class="type-signature type object">Object</span>
-{:#tools-tables}
+{:#members-tools-tables}
 
 
 
@@ -2320,7 +2320,7 @@ tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColum
 
 
 ### toolsList<span class="type-signature type object">object</span>
-{:#toolslist}
+{:#members-toolslist}
 
 
 
@@ -2359,7 +2359,7 @@ $("#rteSample").ejRTE({ toolsList: ["formatStyle", "font", "style", "scripts", "
 
 
 ### undoStackLimit<span class="type-signature type number">number</span>
-{:#undostacklimit}
+{:#members-undostacklimit}
 
 
 
@@ -2398,7 +2398,7 @@ $("#rteSample").ejRTE({undoStackLimit: 70 });
 
 
 ### value<span class="type-signature type string">string</span>
-{:#value}
+{:#members-value}
 
 
 
@@ -2437,7 +2437,7 @@ $("#rteSample").ejRTE({value: "The Rich Text Editor (RTE) control is an easy to 
 
 
 ### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#width}
+{:#members-width}
 
 
 
@@ -2480,7 +2480,7 @@ Example
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
+{:#methods-disable}
 
 
 
@@ -2526,7 +2526,7 @@ $("#rteSample").ejRTE("disable");// disable RTE
 
 
 ### disableToolbarItem<span class="signature">()</span>
-{:#disabletoolbaritem}
+{:#methods-disabletoolbaritem}
 
 
 
@@ -2573,7 +2573,7 @@ $("#rteSample").ejRTE("disableToolbarItem","rteSamplecreateTable");// disable to
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
+{:#methods-enable}
 
 
 
@@ -2620,7 +2620,7 @@ $("#rteSample").ejRTE("enable");// enable RTE
 
 
 ### enableToolbarItem<span class="signature">()</span>
-{:#enabletoolbaritem}
+{:#methods-enabletoolbaritem}
 
 
 
@@ -2667,7 +2667,7 @@ $("#rteSample").ejRTE("enableToolbarItem","rteSamplecreateTable");// enable tool
 
 
 ### executeCommand<span class="signature">()</span>
-{:#executecommand}
+{:#methods-executecommand}
 
 
 
@@ -2699,7 +2699,7 @@ rteeObj.executeCommand("bold", true); // gets the content as string from rte
 
 
 ### focus<span class="signature">()</span>
-{:#focus}
+{:#methods-focus}
 
 
 
@@ -2746,7 +2746,7 @@ $("#rteSample").ejRTE("focus");// enable toolbar item
 
 
 ### getCommandStatus<span class="signature">()</span>
-{:#getcommandstatus}
+{:#methods-getcommandstatus}
 
 
 
@@ -2778,7 +2778,7 @@ rteeObj.getCommandStatus(arguments); // gets the content as string from rte
 
 
 ### getHtml<span class="signature">()</span>
-{:#gethtml}
+{:#methods-gethtml}
 
 
 
@@ -2825,7 +2825,7 @@ $("#rteSample").ejRTE("getHtml");// getHtml from rte
 
 
 ### getSelectedHtml<span class="signature">()</span>
-{:#getselectedhtml}
+{:#methods-getselectedhtml}
 
 
 
@@ -2872,7 +2872,7 @@ $("#rteSample").ejRTE("getSelectedHtml");// getSelectedHtml from rte
 
 
 ### getText<span class="signature">()</span>
-{:#gettext}
+{:#methods-gettext}
 
 
 
@@ -2919,7 +2919,7 @@ $("#rteSample").ejRTE("getText");// getText from rte
 
 
 ### hide<span class="signature">()</span>
-{:#hide}
+{:#methods-hide}
 
 
 
@@ -2966,7 +2966,7 @@ $("#rteSample").ejRTE("hide");// hides rte
 
 
 ### refresh<span class="signature">()</span>
-{:#refresh}
+{:#methods-refresh}
 
 
 
@@ -3013,7 +3013,7 @@ $("#rteSample").ejRTE("refresh");// refresh rte
 
 
 ### removeToolbarItem<span class="signature">()</span>
-{:#removetoolbaritem}
+{:#methods-removetoolbaritem}
 
 
 
@@ -3060,7 +3060,7 @@ $("#rteSample").ejRTE("removeToolbarItem","rteSamplecreateTable");// remove tool
 
 
 ### setColorPickerType<span class="signature">()</span>
-{:#setcolorpickertype}
+{:#methods-setcolorpickertype}
 
 
 
@@ -3107,7 +3107,7 @@ $("#rteSample").ejRTE("setColorPickerType","picker");// set the picker mode
 
 
 ### setHtml<span class="signature">()</span>
-{:#sethtml}
+{:#methods-sethtml}
 
 
 
@@ -3149,7 +3149,7 @@ $("#rteSample").ejRTE("setHtml","The Rich Text Editor (RTE) control is an easy t
 
 
 ### show<span class="signature">()</span>
-{:#show}
+{:#methods-show}
 
 
 
@@ -3200,7 +3200,7 @@ $("#rteSample").ejRTE("show");// shows rte
 
 
 ### change
-{:#change}
+{:#events-change}
 
 
 
@@ -3259,7 +3259,7 @@ $("#rteSample").ejRTE({
 
 
 ### execute
-{:#execute}
+{:#events-execute}
 
 
 
@@ -3318,7 +3318,7 @@ $("#rteSample").ejRTE({
 
 
 ### keydown
-{:#keydown}
+{:#events-keydown}
 
 
 
@@ -3377,7 +3377,7 @@ $("#rteSample").ejRTE({
 
 
 ### keyup
-{:#keyup}
+{:#events-keyup}
 
 
 

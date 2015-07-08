@@ -90,7 +90,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">String</span>
-{:#cssclass}
+{:#members-cssclass}
 
 
 
@@ -144,7 +144,7 @@ $("#PivotGrid").ejPivotGrid({cssClass: "gradient-lime"});       </code>
 
 
 ### currentReport<span class="type-signature type string">String</span>
-{:#currentreport}
+{:#members-currentreport}
 
 
 
@@ -182,7 +182,7 @@ Default Value:
 
 
 ### customObject<span class="type-signature type object">Object</span>
-{:#customobject}
+{:#members-customobject}
 
 
 
@@ -237,7 +237,7 @@ Example
 
 
 ### enableCellContext<span class="type-signature type boolean">Boolean</span>
-{:#enablecellcontext}
+{:#members-enablecellcontext}
 
 
 
@@ -292,7 +292,7 @@ $("#PivotGrid").ejPivotGrid({enableCellContext: true});</code>
 
 
 ### enableJSONRendering<span class="type-signature type boolean">Boolean</span>
-{:#enablejsonrendering}
+{:#members-enablejsonrendering}
 
 
 
@@ -347,7 +347,7 @@ $("#PivotGrid").ejPivotGrid({enableJSONRendering: true});</code>
 
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
-{:#enablertl}
+{:#members-enablertl}
 
 
 
@@ -402,7 +402,7 @@ $("#PivotGrid").ejPivotGrid({enableRTL: true});</code>
 
 
 ### enableToolTip<span class="type-signature type boolean">Boolean</span>
-{:#enabletooltip}
+{:#members-enabletooltip}
 
 
 
@@ -457,7 +457,7 @@ $("#PivotGrid").ejPivotGrid({enableToolTip: true});</code>
 
 
 ### enableVirtualScrolling<span class="type-signature type boolean">Boolean</span>
-{:#enablevirtualscrolling}
+{:#members-enablevirtualscrolling}
 
 
 
@@ -512,7 +512,7 @@ $("#PivotGrid").ejPivotGrid({enableVirtualScrolling: true});</code>
 
 
 ### hyperlinkSettings<span class="type-signature type object">Object</span>
-{:#hyperlinksettings}
+{:#members-hyperlinksettings}
 
 
 
@@ -567,7 +567,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true, 
 
 
 ### hyperlinkSettings.enableColumnHeaderHyperlink<span class="type-signature type boolean">Boolean</span>
-{:#hyperlinksettings-enablecolumnheaderhyperlink}
+{:#members-hyperlinksettings-enablecolumnheaderhyperlink}
 
 
 
@@ -622,7 +622,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableColumnHeaderHyperlink: tru
 
 
 ### hyperlinkSettings.enableRowHeaderHyperlink<span class="type-signature type boolean">Boolean</span>
-{:#hyperlinksettings-enablerowheaderhyperlink}
+{:#members-hyperlinksettings-enablerowheaderhyperlink}
 
 
 
@@ -677,7 +677,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableRowHeaderHyperlink: true}}
 
 
 ### hyperlinkSettings.enableSummaryCellHyperlink<span class="type-signature type boolean">Boolean</span>
-{:#hyperlinksettings-enablesummarycellhyperlink}
+{:#members-hyperlinksettings-enablesummarycellhyperlink}
 
 
 
@@ -732,7 +732,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableSummaryCellHyperlink: true
 
 
 ### hyperlinkSettings.enableValueCellHyperlink<span class="type-signature type boolean">Boolean</span>
-{:#hyperlinksettings-enablevaluecellhyperlink}
+{:#members-hyperlinksettings-enablevaluecellhyperlink}
 
 
 
@@ -787,7 +787,7 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true}}
 
 
 ### isResponsive<span class="type-signature type boolean">Boolean</span>
-{:#isresponsive}
+{:#members-isresponsive}
 
 
 
@@ -842,7 +842,7 @@ $("#PivotGrid").ejPivotGrid({isResponsive: true});</code>
 
 
 ### jsonRecords<span class="type-signature type string">String</span>
-{:#jsonrecords}
+{:#members-jsonrecords}
 
 
 
@@ -880,7 +880,7 @@ Default Value:
 
 
 ### layout<span class="type-signature type enum">enum</span>
-{:#layout}
+{:#members-layout}
 
 
 
@@ -935,7 +935,7 @@ $("#PivotGrid").ejPivotGrid({layout: ej.PivotGrid.Layout.NoSummaries});</code>
 
 
 ### locale<span class="type-signature type string">String</span>
-{:#locale}
+{:#members-locale}
 
 
 
@@ -990,7 +990,7 @@ Example
 
 
 ### serviceMethodSettings<span class="type-signature type object">Object</span>
-{:#servicemethodsettings}
+{:#members-servicemethodsettings}
 
 
 
@@ -1045,7 +1045,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings",  {initialize: "In
 
 
 ### serviceMethodSettings.drillDown<span class="type-signature type string">string</span>
-{:#servicemethodsettings-drilldown}
+{:#members-servicemethodsettings-drilldown}
 
 
 
@@ -1100,7 +1100,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.drillDown", "DrillG
 
 
 ### serviceMethodSettings.exportOptions<span class="type-signature type string">string</span>
-{:#servicemethodsettings-exportoptions}
+{:#members-servicemethodsettings-exportoptions}
 
 
 
@@ -1155,7 +1155,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.exportOptions", "Ex
 
 
 ### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
-{:#servicemethodsettings-initialize}
+{:#members-servicemethodsettings-initialize}
 
 
 
@@ -1210,7 +1210,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.initialize", "Initi
 
 
 ### serviceMethodSettings.paging<span class="type-signature type string">string</span>
-{:#servicemethodsettings-paging}
+{:#members-servicemethodsettings-paging}
 
 
 
@@ -1265,7 +1265,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.paging",  "PagingMy
 
 
 ### url<span class="type-signature type string">String</span>
-{:#url}
+{:#members-url}
 
 
 
@@ -1327,7 +1327,7 @@ $("#PivotGrid").ejPivotGrid("option","url", "/wcf/PivotGridService.svc" ); </cod
 
 
 ### doAjaxPost<span class="signature">()</span>
-{:#doajaxpost}
+{:#methods-doajaxpost}
 
 
 
@@ -1366,7 +1366,7 @@ gridObj.doAjaxPost("POST", "/PivotGridService.svc/Initialize", {"key", "Hello Wo
 
 
 ### doPostBack<span class="signature">()</span>
-{:#dopostback}
+{:#methods-dopostback}
 
 
 
@@ -1405,7 +1405,7 @@ gridObj.doPostBack("/PivotGridService.svc/Initialize", {"key", "Hello World"});
 
 
 ### refreshPagedPivotGrid<span class="signature">()</span>
-{:#refreshpagedpivotgrid}
+{:#methods-refreshpagedpivotgrid}
 
 
 
@@ -1444,7 +1444,7 @@ gridObj.refreshPagedPivotGrid("series", 2);
 
 
 ### renderControlFromJSON<span class="signature">()</span>
-{:#rendercontrolfromjson}
+{:#methods-rendercontrolfromjson}
 
 
 
@@ -1490,7 +1490,7 @@ gridObj.renderControlFromJSON({this.getJSONRecords()});
 
 
 ### afterServiceInvoke
-{:#afterserviceinvoke}
+{:#events-afterserviceinvoke}
 
 
 
@@ -1580,7 +1580,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### beforeServiceInvoke
-{:#beforeserviceinvoke}
+{:#events-beforeserviceinvoke}
 
 
 
@@ -1670,7 +1670,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### cellContext
-{:#cellcontext}
+{:#events-cellcontext}
 
 
 
@@ -1755,7 +1755,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### columnHeaderHyperlinkClick
-{:#columnheaderhyperlinkclick}
+{:#events-columnheaderhyperlinkclick}
 
 
 
@@ -1840,7 +1840,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### drillSuccess
-{:#drillsuccess}
+{:#events-drillsuccess}
 
 
 
@@ -1915,7 +1915,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### load
-{:#load}
+{:#events-load}
 
 
 
@@ -2010,7 +2010,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### renderComplete
-{:#rendercomplete}
+{:#events-rendercomplete}
 
 
 
@@ -2105,7 +2105,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### renderFailure
-{:#renderfailure}
+{:#events-renderfailure}
 
 
 
@@ -2205,7 +2205,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### renderSuccess
-{:#rendersuccess}
+{:#events-rendersuccess}
 
 
 
@@ -2300,7 +2300,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### rowHeaderHyperlinkClick
-{:#rowheaderhyperlinkclick}
+{:#events-rowheaderhyperlinkclick}
 
 
 
@@ -2385,7 +2385,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### summaryCellHyperlinkClick
-{:#summarycellhyperlinkclick}
+{:#events-summarycellhyperlinkclick}
 
 
 
@@ -2470,7 +2470,7 @@ $("#PivotGrid").ejPivotGrid({
 
 
 ### valueCellHyperlinkClick
-{:#valuecellhyperlinkclick}
+{:#events-valuecellhyperlinkclick}
 
 
 
