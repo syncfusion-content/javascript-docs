@@ -54,7 +54,6 @@ Requires
 
 ### checked<span class="type-signature type boolean">Boolean</span>
 {:#checked}
-{:#checked}
 
 
 
@@ -92,7 +91,6 @@ Example
 
 ### cssClass<span class="type-signature type string">string</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -129,7 +127,6 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
 {:#enabled}
 
 
@@ -169,7 +166,6 @@ Example
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
 {:#enablepersistence}
-{:#enablePersistence}
 
 
 
@@ -207,7 +203,6 @@ $("#radiobtn1").ejRadioButton({ enablePersistence: false });
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
 {:#enablertl}
-{:#enableRTL}
 
 
 
@@ -245,7 +240,6 @@ Example
 
 ### htmlAttributes<span class="type-signature type object">object</span>
 {:#htmlattributes}
-{:#htmlAttributes}
 
 
 
@@ -281,7 +275,6 @@ Example
 
 
 ### id<span class="type-signature type string">String</span>
-{:#id}
 {:#id}
 
 
@@ -320,7 +313,6 @@ Example
 
 ### idPrefix<span class="type-signature type string">String</span>
 {:#idprefix}
-{:#idPrefix}
 
 
 
@@ -358,7 +350,6 @@ $("#radiobtn1").ejRadioButton ({  idPrefix : "ej" });
 
 ### name<span class="type-signature type string">String</span>
 {:#name}
-{:#name}
 
 
 
@@ -380,7 +371,6 @@ Default Value:
 
 
 ### size<span class="type-signature type enum">enum</span>
-{:#size}
 {:#size}
 
 
@@ -419,7 +409,6 @@ Example
 
 ### text<span class="type-signature type string">string</span>
 {:#text}
-{:#text}
 
 
 
@@ -442,7 +431,6 @@ Default Value:
 
 ### validationMessage<span class="type-signature type object">object</span>
 {:#validationmessage}
-{:#validationMessage}
 
 
 
@@ -487,7 +475,6 @@ $("#radiobtn1").ejRadioButton ();
 
 ### validationRules<span class="type-signature type object">object</span>
 {:#validationrules}
-{:#validationRules}
 
 
 
@@ -528,7 +515,6 @@ $("#radiobtn1").ejRadioButton ();
 
 
 ### value<span class="type-signature type string">String</span>
-{:#value}
 {:#value}
 
 
@@ -571,7 +557,6 @@ Example
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
-{:#destroy}
 
 
 
@@ -609,7 +594,6 @@ $("#radiobtn").ejRadioButton("destroy");
 
 ### disable<span class="signature">()</span>
 {:#disable}
-{:#disable}
 
 
 
@@ -646,7 +630,6 @@ $("#radiobtn").ejRadioButton("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
 {:#enable}
 
 
@@ -689,7 +672,6 @@ $("#radiobtn").ejRadioButton("enable");
 
 ### beforeChange
 {:#beforechange}
-{:#beforeChange}
 
 
 
@@ -769,7 +751,6 @@ $("#radiobtn").ejRadioButton({
 
 
 ### change
-{:#change}
 {:#change}
 
 
@@ -851,7 +832,6 @@ $("#radiobtn").ejRadioButton({
 
 ### create
 {:#create}
-{:#create}
 
 
 
@@ -921,7 +901,6 @@ $("#radiobtn").ejRadioButton({
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 

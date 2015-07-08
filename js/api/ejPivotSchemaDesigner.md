@@ -53,7 +53,6 @@ Requires
 
 ### cssClass<span class="type-signature type string">String</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -91,7 +90,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({cssClass: "gradient-lime"});   
 
 
 ### filters<span class="type-signature type array">Array</span>
-{:#filters}
 {:#filters}
 
 
@@ -132,7 +130,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({filterList: true});</code>
 
 ### height<span class="type-signature type string">String</span>
 {:#height}
-{:#height}
 
 
 
@@ -171,7 +168,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({height: "630px"});     </code>
 
 ### pivotCalculations<span class="type-signature type array">Array</span>
 {:#pivotcalculations}
-{:#pivotCalculations}
 
 
 
@@ -211,7 +207,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });</code>
 
 ### pivotColumns<span class="type-signature type array">Array</span>
 {:#pivotcolumns}
-{:#pivotColumns}
 
 
 
@@ -251,7 +246,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: true});</c
 
 ### pivotControl<span class="type-signature type object">object</span>
 {:#pivotcontrol}
-{:#pivotControl}
 
 
 
@@ -292,7 +286,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotControl: control});</code>
 
 ### pivotRows<span class="type-signature type array">Array</span>
 {:#pivotrows}
-{:#pivotRows}
 
 
 
@@ -332,7 +325,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotRowList: true});</code>
 
 ### pivotTableFields<span class="type-signature type array">Array</span>
 {:#pivottablefields}
-{:#pivotTableFields}
 
 
 
@@ -372,7 +364,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });</code>
 
 ### url<span class="type-signature type string">String</span>
 {:#url}
-{:#url}
 
 
 
@@ -411,7 +402,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option","url", "/wcf/PivotServi
 
 
 ### width<span class="type-signature type string">String</span>
-{:#width}
 {:#width}
 
 
@@ -455,7 +445,6 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({width: "415px"});      </code>
 
 ### doAjaxPost<span class="signature">()</span>
 {:#doajaxpost}
-{:#doAjaxPost}
 
 
 

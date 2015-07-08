@@ -88,7 +88,6 @@ Requires
 
 ### background<span class="type-signature type string">string</span>
 {:#background}
-{:#background}
 
 
 
@@ -143,7 +142,6 @@ Example
 
 ### baseMapIndex<span class="type-signature type number">number</span>
 {:#basemapindex}
-{:#baseMapIndex}
 
 
 
@@ -198,7 +196,6 @@ Example
 
 ### centerPosition<span class="type-signature type object">object</span>
 {:#centerposition}
-{:#centerPosition}
 
 
 
@@ -253,7 +250,6 @@ Example
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#enableanimation}
-{:#enableAnimation}
 
 
 
@@ -309,7 +305,6 @@ Example
 
 ### enableLayerChangeAnimation<span class="type-signature type boolean">boolean</span>
 {:#enablelayerchangeanimation}
-{:#enableLayerChangeAnimation}
 
 
 
@@ -365,7 +360,6 @@ Example
 
 ### enablePan<span class="type-signature type boolean">boolean</span>
 {:#enablepan}
-{:#enablePan}
 
 
 
@@ -421,7 +415,6 @@ Example
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
 {:#enableresize}
-{:#enableResize}
 
 
 
@@ -477,7 +470,6 @@ Example
 
 ### enableZoom<span class="type-signature type boolean">boolean</span>
 {:#enablezoom}
-{:#enableZoom}
 
 
 
@@ -533,7 +525,6 @@ Example
 
 ### enableZoomOnSelection<span class="type-signature type boolean">boolean</span>
 {:#enablezoomonselection}
-{:#enableZoomOnSelection}
 
 
 
@@ -589,7 +580,6 @@ Example
 
 ### factor<span class="type-signature type number">number</span>
 {:#factor}
-{:#factor}
 
 
 
@@ -643,7 +633,6 @@ Example
 
 
 ### layers<span class="type-signature type shapelayer">shapeLayer</span>
-{:#layers}
 {:#layers}
 
 
@@ -699,7 +688,6 @@ Example
 
 ### level<span class="type-signature type number">number</span>
 {:#level}
-{:#level}
 
 
 
@@ -754,7 +742,6 @@ Example
 
 ### maxValue<span class="type-signature type number">number</span>
 {:#maxvalue}
-{:#maxValue}
 
 
 
@@ -809,7 +796,6 @@ Example
 
 ### minValue<span class="type-signature type number">number</span>
 {:#minvalue}
-{:#minValue}
 
 
 
@@ -864,7 +850,6 @@ Example
 
 ### model.navigationControl. absolutePosition<span class="type-signature type object">object</span>
 {:#model-navigationcontrol-}
-{:#model-navigationControl-}
 
 
 
@@ -919,7 +904,6 @@ $("#container").ejMap(navigationControl:{absolutePosition:{x:5,y:20}});</code>
 
 ### model.navigationControl. content<span class="type-signature type string">string</span>
 {:#model-navigationcontrol-}
-{:#model-navigationControl-}
 
 
 
@@ -973,7 +957,6 @@ $("#container").ejMap(navigationControl:{content:null});</code>
 
 ### model.navigationControl. dockPosition<span class="type-signature type enum">enum</span>
 {:#model-navigationcontrol-}
-{:#model-navigationControl-}
 
 
 
@@ -1028,7 +1011,6 @@ $("#container").ejMap(navigationControl:{dockPosition:'centerleft'});</code>
 
 ### model.navigationControl. enableNavigation<span class="type-signature type boolean">boolean</span>
 {:#model-navigationcontrol-}
-{:#model-navigationControl-}
 
 
 
@@ -1083,7 +1065,6 @@ $("#container").ejMap(navigationControl:{enableNavigation:false});</code>
 
 ### model.navigationControl. orientation<span class="type-signature type enum">enum</span>
 {:#model-navigationcontrol-}
-{:#model-navigationControl-}
 
 
 
@@ -1138,7 +1119,6 @@ $("#container").ejMap(navigationControl:{orientation:'vertical'});</code>
 
 ### navigationControl<span class="type-signature type object">object</span>
 {:#navigationcontrol}
-{:#navigationControl}
 
 
 
@@ -1161,7 +1141,6 @@ Enables or Disables the navigation control for map to perform zooming and pannin
 
 ### shapeLayer
 {:#shapelayer}
-{:#shapeLayer}
 
 
 
@@ -1184,7 +1163,6 @@ Layer for holding the map shapes
 
 ### shapeLayer.bingMapType<span class="type-signature type enum">enum</span>
 {:#shapelayer-bingmaptype}
-{:#shapeLayer-bingMapType}
 
 
 
@@ -1239,7 +1217,6 @@ Example
 
 ### shapeLayer.bubbleSettings<span class="type-signature type object">object</span>
 {:#shapelayer-bubblesettings}
-{:#shapeLayer-bubbleSettings}
 
 
 
@@ -1278,7 +1255,6 @@ Example
 
 ### shapeLayer.bubbleSettings.bubbleOpacity<span class="type-signature type number">number</span>
 {:#shapelayer-bubblesettings-bubbleopacity}
-{:#shapeLayer-bubbleSettings-bubbleOpacity}
 
 
 
@@ -1334,7 +1310,6 @@ Example
 
 ### shapeLayer.bubbleSettings.color<span class="type-signature type string">string</span>
 {:#shapelayer-bubblesettings-color}
-{:#shapeLayer-bubbleSettings-color}
 
 
 
@@ -1390,7 +1365,6 @@ Example
 
 ### shapeLayer.bubbleSettings.colorMappings<span class="type-signature type object">object</span>
 {:#shapelayer-bubblesettings-colormappings}
-{:#shapeLayer-bubbleSettings-colorMappings}
 
 
 
@@ -1446,7 +1420,6 @@ Example
 
 ### shapeLayer.bubbleSettings.colorValuePath<span class="type-signature type string">string</span>
 {:#shapelayer-bubblesettings-colorvaluepath}
-{:#shapeLayer-bubbleSettings-colorValuePath}
 
 
 
@@ -1502,7 +1475,6 @@ Example
 
 ### shapeLayer.bubbleSettings.maxValue<span class="type-signature type number">number</span>
 {:#shapelayer-bubblesettings-maxvalue}
-{:#shapeLayer-bubbleSettings-maxValue}
 
 
 
@@ -1558,7 +1530,6 @@ Example
 
 ### shapeLayer.bubbleSettings.minValue<span class="type-signature type number">number</span>
 {:#shapelayer-bubblesettings-minvalue}
-{:#shapeLayer-bubbleSettings-minValue}
 
 
 
@@ -1614,7 +1585,6 @@ Example
 
 ### shapeLayer.bubbleSettings.showBubble<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-bubblesettings-showbubble}
-{:#shapeLayer-bubbleSettings-showBubble}
 
 
 
@@ -1670,7 +1640,6 @@ Example
 
 ### shapeLayer.bubbleSettings.showTooltip<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-bubblesettings-showtooltip}
-{:#shapeLayer-bubbleSettings-showTooltip}
 
 
 
@@ -1726,7 +1695,6 @@ Example
 
 ### shapeLayer.bubbleSettings.tooltipTemplate<span class="type-signature type string">string</span>
 {:#shapelayer-bubblesettings-tooltiptemplate}
-{:#shapeLayer-bubbleSettings-tooltipTemplate}
 
 
 
@@ -1782,7 +1750,6 @@ Example
 
 ### shapeLayer.bubbleSettings.valuePath<span class="type-signature type string">string</span>
 {:#shapelayer-bubblesettings-valuepath}
-{:#shapeLayer-bubbleSettings-valuePath}
 
 
 
@@ -1838,7 +1805,6 @@ Example
 
 ### shapeLayer.dataSource<span class="type-signature type object">object</span>
 {:#shapelayer-datasource}
-{:#shapeLayer-dataSource}
 
 
 
@@ -1876,7 +1842,6 @@ Example
 
 ### shapeLayer.enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-enableanimation}
-{:#shapeLayer-enableAnimation}
 
 
 
@@ -1931,7 +1896,6 @@ Example
 
 ### shapeLayer.enableMouseHover<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-enablemousehover}
-{:#shapeLayer-enableMouseHover}
 
 
 
@@ -1986,7 +1950,6 @@ Example
 
 ### shapeLayer.enableSelection<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-enableselection}
-{:#shapeLayer-enableSelection}
 
 
 
@@ -2041,7 +2004,6 @@ Example
 
 ### shapeLayer.key<span class="type-signature type string">string</span>
 {:#shapelayer-key}
-{:#shapeLayer-key}
 
 
 
@@ -2096,7 +2058,6 @@ Example
 
 ### shapeLayer.labelSettings<span class="type-signature type object">object</span>
 {:#shapelayer-labelsettings}
-{:#shapeLayer-labelSettings}
 
 
 
@@ -2119,7 +2080,6 @@ Options for enabling and configuring labelSettings labelPath, smartLabelSize, la
 
 ### shapeLayer.labelSettings.enableSmartLabel<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-labelsettings-enablesmartlabel}
-{:#shapeLayer-labelSettings-enableSmartLabel}
 
 
 
@@ -2173,7 +2133,6 @@ Example
 
 ### shapeLayer.labelSettings.labelLength<span class="type-signature type number">number</span>
 {:#shapelayer-labelsettings-labellength}
-{:#shapeLayer-labelSettings-labelLength}
 
 
 
@@ -2227,7 +2186,6 @@ Example
 
 ### shapeLayer.labelSettings.labelPath<span class="type-signature type string">string</span>
 {:#shapelayer-labelsettings-labelpath}
-{:#shapeLayer-labelSettings-labelPath}
 
 
 
@@ -2281,7 +2239,6 @@ Example
 
 ### shapeLayer.labelSettings.showLabels<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-labelsettings-showlabels}
-{:#shapeLayer-labelSettings-showLabels}
 
 
 
@@ -2335,7 +2292,6 @@ Example
 
 ### shapeLayer.labelSettings.smartLabelSize<span class="type-signature type enum">enum</span>
 {:#shapelayer-labelsettings-smartlabelsize}
-{:#shapeLayer-labelSettings-smartLabelSize}
 
 
 
@@ -2389,7 +2345,6 @@ Example
 
 ### shapeLayer.layerType<span class="type-signature type enum">enum</span>
 {:#shapelayer-layertype}
-{:#shapeLayer-layerType}
 
 
 
@@ -2444,7 +2399,6 @@ Example
 
 ### shapeLayer.legendSettings<span class="type-signature type object">object</span>
 {:#shapelayer-legendsettings}
-{:#shapeLayer-legendSettings}
 
 
 
@@ -2467,7 +2421,6 @@ Options for enabling and configuring legendSettings position, height, width, mod
 
 ### shapeLayer.legendSettings.dockOnMap<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-legendsettings-dockonmap}
-{:#shapeLayer-legendSettings-dockOnMap}
 
 
 
@@ -2522,7 +2475,6 @@ Example
 
 ### shapeLayer.legendSettings.dockPosition<span class="type-signature type enum">enum</span>
 {:#shapelayer-legendsettings-dockposition}
-{:#shapeLayer-legendSettings-dockPosition}
 
 
 
@@ -2577,7 +2529,6 @@ Example
 
 ### shapeLayer.legendSettings.height<span class="type-signature type number">number</span>
 {:#shapelayer-legendsettings-height}
-{:#shapeLayer-legendSettings-height}
 
 
 
@@ -2632,7 +2583,6 @@ Example
 
 ### shapeLayer.legendSettings.icon<span class="type-signature type enum">enum</span>
 {:#shapelayer-legendsettings-icon}
-{:#shapeLayer-legendSettings-icon}
 
 
 
@@ -2687,7 +2637,6 @@ Example
 
 ### shapeLayer.legendSettings.iconHeight<span class="type-signature type number">number</span>
 {:#shapelayer-legendsettings-iconheight}
-{:#shapeLayer-legendSettings-iconHeight}
 
 
 
@@ -2742,7 +2691,6 @@ Example
 
 ### shapeLayer.legendSettings.iconWidth<span class="type-signature type number">number</span>
 {:#shapelayer-legendsettings-iconwidth}
-{:#shapeLayer-legendSettings-iconWidth}
 
 
 
@@ -2797,7 +2745,6 @@ Example
 
 ### shapeLayer.legendSettings.labelOrientation<span class="type-signature type enum">enum</span>
 {:#shapelayer-legendsettings-labelorientation}
-{:#shapeLayer-legendSettings-labelOrientation}
 
 
 
@@ -2852,7 +2799,6 @@ Example
 
 ### shapeLayer.legendSettings.leftLabel<span class="type-signature type string">string</span>
 {:#shapelayer-legendsettings-leftlabel}
-{:#shapeLayer-legendSettings-leftLabel}
 
 
 
@@ -2907,7 +2853,6 @@ Example
 
 ### shapeLayer.legendSettings.mode<span class="type-signature type enum">enum</span>
 {:#shapelayer-legendsettings-mode}
-{:#shapeLayer-legendSettings-mode}
 
 
 
@@ -2962,7 +2907,6 @@ Example
 
 ### shapeLayer.legendSettings.position<span class="type-signature type enum">enum</span>
 {:#shapelayer-legendsettings-position}
-{:#shapeLayer-legendSettings-position}
 
 
 
@@ -3017,7 +2961,6 @@ Example
 
 ### shapeLayer.legendSettings.positionX<span class="type-signature type number">number</span>
 {:#shapelayer-legendsettings-positionx}
-{:#shapeLayer-legendSettings-positionX}
 
 
 
@@ -3072,7 +3015,6 @@ Example
 
 ### shapeLayer.legendSettings.positionY<span class="type-signature type number">number</span>
 {:#shapelayer-legendsettings-positiony}
-{:#shapeLayer-legendSettings-positionY}
 
 
 
@@ -3127,7 +3069,6 @@ Example
 
 ### shapeLayer.legendSettings.rightLabel<span class="type-signature type string">string</span>
 {:#shapelayer-legendsettings-rightlabel}
-{:#shapeLayer-legendSettings-rightLabel}
 
 
 
@@ -3182,7 +3123,6 @@ Example
 
 ### shapeLayer.legendSettings.showLabels<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-legendsettings-showlabels}
-{:#shapeLayer-legendSettings-showLabels}
 
 
 
@@ -3237,7 +3177,6 @@ Example
 
 ### shapeLayer.legendSettings.showLegend<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-legendsettings-showlegend}
-{:#shapeLayer-legendSettings-showLegend}
 
 
 
@@ -3292,7 +3231,6 @@ Example
 
 ### shapeLayer.legendSettings.title<span class="type-signature type string">string</span>
 {:#shapelayer-legendsettings-title}
-{:#shapeLayer-legendSettings-title}
 
 
 
@@ -3347,7 +3285,6 @@ Example
 
 ### shapeLayer.legendSettings.type<span class="type-signature type enum">enum</span>
 {:#shapelayer-legendsettings-type}
-{:#shapeLayer-legendSettings-type}
 
 
 
@@ -3402,7 +3339,6 @@ Example
 
 ### shapeLayer.legendSettings.width<span class="type-signature type number">number</span>
 {:#shapelayer-legendsettings-width}
-{:#shapeLayer-legendSettings-width}
 
 
 
@@ -3457,7 +3393,6 @@ Example
 
 ### shapeLayer.mapItemsTemplate<span class="type-signature type string">string</span>
 {:#shapelayer-mapitemstemplate}
-{:#shapeLayer-mapItemsTemplate}
 
 
 
@@ -3495,7 +3430,6 @@ Example
 
 ### shapeLayer.markers<span class="type-signature type marker">marker</span>
 {:#shapelayer-markers}
-{:#shapeLayer-markers}
 
 
 
@@ -3550,7 +3484,6 @@ Example
 
 ### shapeLayer.markerTemplate<span class="type-signature type string">string</span>
 {:#shapelayer-markertemplate}
-{:#shapeLayer-markerTemplate}
 
 
 
@@ -3604,7 +3537,6 @@ Example
 
 ### shapeLayer.selectedMapShapes<span class="type-signature type object">object</span>
 {:#shapelayer-selectedmapshapes}
-{:#shapeLayer-selectedMapShapes}
 
 
 
@@ -3651,7 +3583,6 @@ Example
 
 ### shapeLayer.selectionMode<span class="type-signature type enum">enum</span>
 {:#shapelayer-selectionmode}
-{:#shapeLayer-selectionMode}
 
 
 
@@ -3706,7 +3637,6 @@ Example
 
 ### shapeLayer.shapeData<span class="type-signature type object">object</span>
 {:#shapelayer-shapedata}
-{:#shapeLayer-shapeData}
 
 
 
@@ -3744,7 +3674,6 @@ Example
 
 ### shapeLayer.shapeSettings<span class="type-signature type object">object</span>
 {:#shapelayer-shapesettings}
-{:#shapeLayer-shapeSettings}
 
 
 
@@ -3782,7 +3711,6 @@ Example
 
 ### shapeLayer.shapeSettings.autoFill<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-shapesettings-autofill}
-{:#shapeLayer-shapeSettings-autoFill}
 
 
 
@@ -3838,7 +3766,6 @@ Example
 
 ### shapeLayer.shapeSettings.colorMappings<span class="type-signature type object">object</span>
 {:#shapelayer-shapesettings-colormappings}
-{:#shapeLayer-shapeSettings-colorMappings}
 
 
 
@@ -3894,7 +3821,6 @@ Example
 
 ### shapeLayer.shapeSettings.colorPalette<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-colorpalette}
-{:#shapeLayer-shapeSettings-colorPalette}
 
 
 
@@ -3950,7 +3876,6 @@ Example
 
 ### shapeLayer.shapeSettings.colorValuePath<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-colorvaluepath}
-{:#shapeLayer-shapeSettings-colorValuePath}
 
 
 
@@ -4006,7 +3931,6 @@ Example
 
 ### shapeLayer.shapeSettings.enableGradient<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-shapesettings-enablegradient}
-{:#shapeLayer-shapeSettings-enableGradient}
 
 
 
@@ -4062,7 +3986,6 @@ Example
 
 ### shapeLayer.shapeSettings.fill<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-fill}
-{:#shapeLayer-shapeSettings-fill}
 
 
 
@@ -4118,7 +4041,6 @@ Example
 
 ### shapeLayer.shapeSettings.highlightBorderWidth<span class="type-signature type number">number</span>
 {:#shapelayer-shapesettings-highlightborderwidth}
-{:#shapeLayer-shapeSettings-highlightBorderWidth}
 
 
 
@@ -4174,7 +4096,6 @@ Example
 
 ### shapeLayer.shapeSettings.highlightColor<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-highlightcolor}
-{:#shapeLayer-shapeSettings-highlightColor}
 
 
 
@@ -4230,7 +4151,6 @@ Example
 
 ### shapeLayer.shapeSettings.highlightStroke<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-highlightstroke}
-{:#shapeLayer-shapeSettings-highlightStroke}
 
 
 
@@ -4286,7 +4206,6 @@ Example
 
 ### shapeLayer.shapeSettings.selectionColor<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-selectioncolor}
-{:#shapeLayer-shapeSettings-selectionColor}
 
 
 
@@ -4342,7 +4261,6 @@ Example
 
 ### shapeLayer.shapeSettings.selectionStroke<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-selectionstroke}
-{:#shapeLayer-shapeSettings-selectionStroke}
 
 
 
@@ -4398,7 +4316,6 @@ Example
 
 ### shapeLayer.shapeSettings.selectionStrokeWidth<span class="type-signature type number">number</span>
 {:#shapelayer-shapesettings-selectionstrokewidth}
-{:#shapeLayer-shapeSettings-selectionStrokeWidth}
 
 
 
@@ -4454,7 +4371,6 @@ Example
 
 ### shapeLayer.shapeSettings.stroke<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-stroke}
-{:#shapeLayer-shapeSettings-stroke}
 
 
 
@@ -4510,7 +4426,6 @@ Example
 
 ### shapeLayer.shapeSettings.strokeThickness<span class="type-signature type number">number</span>
 {:#shapelayer-shapesettings-strokethickness}
-{:#shapeLayer-shapeSettings-strokeThickness}
 
 
 
@@ -4566,7 +4481,6 @@ Example
 
 ### shapeLayer.shapeSettings.valuePath<span class="type-signature type string">string</span>
 {:#shapelayer-shapesettings-valuepath}
-{:#shapeLayer-shapeSettings-valuePath}
 
 
 
@@ -4622,7 +4536,6 @@ Example
 
 ### shapeLayer.showMapItems<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-showmapitems}
-{:#shapeLayer-showMapItems}
 
 
 
@@ -4677,7 +4590,6 @@ Example
 
 ### shapeLayer.showTooltip<span class="type-signature type boolean">boolean</span>
 {:#shapelayer-showtooltip}
-{:#shapeLayer-showTooltip}
 
 
 
@@ -4732,7 +4644,6 @@ Example
 
 ### shapeLayer.subLayers<span class="type-signature type shapelayer">shapeLayer</span>
 {:#shapelayer-sublayers}
-{:#shapeLayer-subLayers}
 
 
 
@@ -4787,7 +4698,6 @@ Example
 
 ### shapeLayer.tooltipTemplate<span class="type-signature type string">string</span>
 {:#shapelayer-tooltiptemplate}
-{:#shapeLayer-tooltipTemplate}
 
 
 
@@ -4825,7 +4735,6 @@ Example
 
 ### shapeLayer.urlTemplate<span class="type-signature type string">string</span>
 {:#shapelayer-urltemplate}
-{:#shapeLayer-urlTemplate}
 
 
 
@@ -4880,7 +4789,6 @@ Example
 
 ### zoomSettings<span class="type-signature type object">object</span>
 {:#zoomsettings}
-{:#zoomSettings}
 
 
 
@@ -4910,7 +4818,6 @@ Enables or Disables the Zooming for map.
 
 ### navigateTo<span class="signature">(latitude, longitude, level)</span>
 {:#navigateto}
-{:#navigateTo}
 
 
 
@@ -4967,7 +4874,6 @@ $("#container").ejMap("navigateTo", lat, lon, level);</code>
 
 ### pan<span class="signature">(direction)</span>
 {:#pan}
-{:#pan}
 
 
 
@@ -5014,7 +4920,6 @@ $("#container").ejMap("pan", direction);</code>
 
 ### refresh<span class="signature">()</span>
 {:#refresh}
-{:#refresh}
 
 
 
@@ -5045,7 +4950,6 @@ $("#container").ejMap("refresh");</code>
 
 ### refreshLayers<span class="signature">()</span>
 {:#refreshlayers}
-{:#refreshLayers}
 
 
 
@@ -5076,7 +4980,6 @@ $("#container").ejMap("refreshLayers");</code>
 
 ### refreshNavigationControl<span class="signature">(navigation)</span>
 {:#refreshnavigationcontrol}
-{:#refreshNavigationControl}
 
 
 
@@ -5122,7 +5025,6 @@ $("#container").ejMap("refreshNavigationControl",navigation);</code>
 
 
 ### zoom<span class="signature">(level, isAnimate)</span>
-{:#zoom}
 {:#zoom}
 
 
@@ -5182,7 +5084,6 @@ $("#container").ejMap("zoom",level,isAnimate);</code>
 
 ### markerSelected
 {:#markerselected}
-{:#markerSelected}
 
 
 
@@ -5230,7 +5131,6 @@ $("#container").ejMap({
 
 
 ### mouseleave
-{:#mouseleave}
 {:#mouseleave}
 
 
@@ -5280,7 +5180,6 @@ $("#container").ejMap({
 
 ### mouseover
 {:#mouseover}
-{:#mouseover}
 
 
 
@@ -5329,7 +5228,6 @@ $("#container").ejMap({
 
 ### onRenderComplete
 {:#onrendercomplete}
-{:#onRenderComplete}
 
 
 
@@ -5377,7 +5275,6 @@ $("#container").ejMap({
 
 
 ### panned
-{:#panned}
 {:#panned}
 
 
@@ -5427,7 +5324,6 @@ $("#container").ejMap({
 
 ### shapeSelected
 {:#shapeselected}
-{:#shapeSelected}
 
 
 
@@ -5476,7 +5372,6 @@ $("#container").ejMap({
 
 ### zoomedIn
 {:#zoomedin}
-{:#zoomedIn}
 
 
 
@@ -5530,7 +5425,6 @@ $("#container").ejMap({
 
 ### zoomedOut
 {:#zoomedout}
-{:#zoomedOut}
 
 
 

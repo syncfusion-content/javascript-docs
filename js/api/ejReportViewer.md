@@ -138,7 +138,6 @@ Requires
 
 ### dataSources<span class="type-signature type array">array</span>
 {:#datasources}
-{:#dataSources}
 
 
 
@@ -193,7 +192,6 @@ Example
 
 ### dataSources.name<span class="type-signature type string">string</span>
 {:#datasources-name}
-{:#dataSources-name}
 
 
 
@@ -247,7 +245,6 @@ Example
 
 ### dataSources.values<span class="type-signature type object">object</span>
 {:#datasources-values}
-{:#dataSources-values}
 
 
 
@@ -301,7 +298,6 @@ Example
 
 ### exportSettings<span class="type-signature type object">object</span>
 {:#exportsettings}
-{:#exportSettings}
 
 
 
@@ -324,7 +320,6 @@ Specifies the export settings.
 
 ### exportSettings.excelFormat<span class="type-signature type enum">enum</span>
 {:#exportsettings-excelformat}
-{:#exportSettings-excelFormat}
 
 
 
@@ -376,7 +371,6 @@ Example
 
 ### exportSettings.exportOptions<span class="type-signature type enum">enum</span>
 {:#exportsettings-exportoptions}
-{:#exportSettings-exportOptions}
 
 
 
@@ -428,7 +422,6 @@ Example
 
 ### exportSettings.wordFormat<span class="type-signature type enum">enum</span>
 {:#exportsettings-wordformat}
-{:#exportSettings-wordFormat}
 
 
 
@@ -479,7 +472,6 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
-{:#locale}
 {:#locale}
 
 
@@ -532,7 +524,6 @@ Example
 
 ### pageSettings<span class="type-signature type object">object</span>
 {:#pagesettings}
-{:#pageSettings}
 
 
 
@@ -555,7 +546,6 @@ Specifies the page settings.
 
 ### pageSettings.orientation<span class="type-signature type enum">enum</span>
 {:#pagesettings-orientation}
-{:#pageSettings-orientation}
 
 
 
@@ -607,7 +597,6 @@ Example
 
 ### pageSettings.paperSize<span class="type-signature type enum">enum</span>
 {:#pagesettings-papersize}
-{:#pageSettings-paperSize}
 
 
 
@@ -658,7 +647,6 @@ Example
 
 
 ### parameters<span class="type-signature type array">array</span>
-{:#parameters}
 {:#parameters}
 
 
@@ -714,7 +702,6 @@ Example
 
 ### parameters.labels<span class="type-signature type array">array</span>
 {:#parameters-labels}
-{:#parameters-labels}
 
 
 
@@ -767,7 +754,6 @@ Example
 
 
 ### parameters.name<span class="type-signature type string">string</span>
-{:#parameters-name}
 {:#parameters-name}
 
 
@@ -822,7 +808,6 @@ Example
 
 ### parameters.nullable<span class="type-signature type boolean">boolean</span>
 {:#parameters-nullable}
-{:#parameters-nullable}
 
 
 
@@ -875,7 +860,6 @@ Example
 
 
 ### parameters.prompt<span class="type-signature type string">string</span>
-{:#parameters-prompt}
 {:#parameters-prompt}
 
 
@@ -930,7 +914,6 @@ Example
 
 ### parameters.values<span class="type-signature type array">array</span>
 {:#parameters-values}
-{:#parameters-values}
 
 
 
@@ -984,7 +967,6 @@ Example
 
 ### printMode<span class="type-signature type boolean">boolean</span>
 {:#printmode}
-{:#printMode}
 
 
 
@@ -1036,7 +1018,6 @@ Example
 
 ### processingMode<span class="type-signature type enum">enum</span>
 {:#processingmode}
-{:#processingMode}
 
 
 
@@ -1085,7 +1066,6 @@ Example
 
 ### renderMode<span class="type-signature type enum">enum</span>
 {:#rendermode}
-{:#renderMode}
 
 
 
@@ -1134,7 +1114,6 @@ Example
 
 ### reportPath<span class="type-signature type string">string</span>
 {:#reportpath}
-{:#reportPath}
 
 
 
@@ -1182,7 +1161,6 @@ Example
 
 ### reportServerUrl<span class="type-signature type string">string</span>
 {:#reportserverurl}
-{:#reportServerUrl}
 
 
 
@@ -1231,7 +1209,6 @@ Example
 
 ### reportServiceUrl<span class="type-signature type string">string</span>
 {:#reportserviceurl}
-{:#reportServiceUrl}
 
 
 
@@ -1279,7 +1256,6 @@ Example
 
 ### toolbarSettings<span class="type-signature type object">object</span>
 {:#toolbarsettings}
-{:#toolbarSettings}
 
 
 
@@ -1302,7 +1278,6 @@ Specifies the toolbar settings.
 
 ### toolbarSettings.click<span class="type-signature type string">string</span>
 {:#toolbarsettings-click}
-{:#toolbarSettings-click}
 
 
 
@@ -1354,7 +1329,6 @@ Example
 
 ### toolbarSettings.items<span class="type-signature type enum">enum</span>
 {:#toolbarsettings-items}
-{:#toolbarSettings-items}
 
 
 
@@ -1406,7 +1380,6 @@ Example
 
 ### toolbarSettings.showToolbar<span class="type-signature type boolean">boolean</span>
 {:#toolbarsettings-showtoolbar}
-{:#toolbarSettings-showToolbar}
 
 
 
@@ -1458,7 +1431,6 @@ Example
 
 ### toolbarSettings.showTooltip<span class="type-signature type boolean">boolean</span>
 {:#toolbarsettings-showtooltip}
-{:#toolbarSettings-showTooltip}
 
 
 
@@ -1510,7 +1482,6 @@ Example
 
 ### toolbarSettings.templateId<span class="type-signature type string">string</span>
 {:#toolbarsettings-templateid}
-{:#toolbarSettings-templateId}
 
 
 
@@ -1562,7 +1533,6 @@ Example
 
 ### zoomFactor<span class="type-signature type number">number</span>
 {:#zoomfactor}
-{:#zoomFactor}
 
 
 
@@ -1618,7 +1588,6 @@ Example
 
 ### exportReport<span class="signature">()</span>
 {:#exportreport}
-{:#exportReport}
 
 
 
@@ -1653,7 +1622,6 @@ reportviewerObj.exportReport(); //Exports the reports
 
 ### fitToPage<span class="signature">()</span>
 {:#fittopage}
-{:#fitToPage}
 
 
 
@@ -1688,7 +1656,6 @@ reportviewerObj.fitToPage(); // To fit the report page.
 
 ### fitToPageHeight<span class="signature">()</span>
 {:#fittopageheight}
-{:#fitToPageHeight}
 
 
 
@@ -1723,7 +1690,6 @@ reportviewerObj.fitToPageHeight(); // To fit the report page height.
 
 ### fitToPageWidth<span class="signature">()</span>
 {:#fittopagewidth}
-{:#fitToPageWidth}
 
 
 
@@ -1758,7 +1724,6 @@ reportviewerObj.fitToPageWidth(); // To fit the report page width.
 
 ### getDataSetNames<span class="signature">()</span>
 {:#getdatasetnames}
-{:#getDataSetNames}
 
 
 
@@ -1793,7 +1758,6 @@ reportviewerObj.getDataSetNames(); // To get the dataset names.
 
 ### getParameters<span class="signature">()</span>
 {:#getparameters}
-{:#getParameters}
 
 
 
@@ -1828,7 +1792,6 @@ reportviewerObj.getParameters(); // To get the parameters.
 
 ### gotoFirstPage<span class="signature">()</span>
 {:#gotofirstpage}
-{:#gotoFirstPage}
 
 
 
@@ -1863,7 +1826,6 @@ reportviewerObj.gotoFirstPage(); // To navigate to first page
 
 ### gotoLastPage<span class="signature">()</span>
 {:#gotolastpage}
-{:#gotoLastPage}
 
 
 
@@ -1898,7 +1860,6 @@ reportviewerObj.gotoLastPage(); // Navigate to the last page
 
 ### gotoNextPage<span class="signature">()</span>
 {:#gotonextpage}
-{:#gotoNextPage}
 
 
 
@@ -1933,7 +1894,6 @@ reportviewerObj.gotoNextPage(); //To navigate to the next page
 
 ### gotoPageIndex<span class="signature">()</span>
 {:#gotopageindex}
-{:#gotoPageIndex}
 
 
 
@@ -1968,7 +1928,6 @@ reportviewerObj.gotoPageIndex(5); // To navigate the specific page
 
 ### gotoPreviousPage<span class="signature">()</span>
 {:#gotopreviouspage}
-{:#gotoPreviousPage}
 
 
 
@@ -2002,7 +1961,6 @@ reportviewerObj.gotoPreviousPage(); // To navigate to the previous page
 
 
 ### print<span class="signature">()</span>
-{:#print}
 {:#print}
 
 
@@ -2038,7 +1996,6 @@ reportviewerObj.print(); //To perform print operation.
 
 ### printLayout<span class="signature">()</span>
 {:#printlayout}
-{:#printLayout}
 
 
 
@@ -2072,7 +2029,6 @@ reportviewerObj.printLayout(); //Changes between print layout and normal modes.
 
 
 ### refresh<span class="signature">()</span>
-{:#refresh}
 {:#refresh}
 
 
@@ -2114,7 +2070,6 @@ reportviewerObj.refresh(); // To refresh the report.
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 
@@ -2195,7 +2150,6 @@ Example
 
 ### drillThrough
 {:#drillthrough}
-{:#drillThrough}
 
 
 
@@ -2280,7 +2234,6 @@ Example
 
 ### renderingBegin
 {:#renderingbegin}
-{:#renderingBegin}
 
 
 
@@ -2362,7 +2315,6 @@ Example
 
 ### renderingComplete
 {:#renderingcomplete}
-{:#renderingComplete}
 
 
 
@@ -2454,7 +2406,6 @@ Example
 
 ### reportError
 {:#reporterror}
-{:#reportError}
 
 
 
@@ -2539,7 +2490,6 @@ Example
 
 ### reportLoaded
 {:#reportloaded}
-{:#reportLoaded}
 
 
 
@@ -2620,7 +2570,6 @@ Example
 
 ### viewReportClick
 {:#viewreportclick}
-{:#viewReportClick}
 
 
 

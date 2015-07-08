@@ -115,7 +115,6 @@ Requires
 
 ### animationType<span class="type-signature type enum">enum</span>
 {:#animationtype}
-{:#animationType}
 
 
 
@@ -197,7 +196,6 @@ Example
 
 ### contextMenuTarget<span class="type-signature type string">string</span>
 {:#contextmenutarget}
-{:#contextMenuTarget}
 
 
 
@@ -265,7 +263,6 @@ Example
 
 ### cssClass<span class="type-signature type string">string</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -346,7 +343,6 @@ Example
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#enableanimation}
-{:#enableAnimation}
 
 
 
@@ -428,7 +424,6 @@ Example
 
 ### enableCenterAlign<span class="type-signature type boolean">boolean</span>
 {:#enablecenteralign}
-{:#enableCenterAlign}
 
 
 
@@ -509,7 +504,6 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
 {:#enabled}
 
 
@@ -592,7 +586,6 @@ Example
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
 {:#enablertl}
-{:#enableRTL}
 
 
 
@@ -674,7 +667,6 @@ Example
 
 ### enableSeparator<span class="type-signature type boolean">boolean</span>
 {:#enableseparator}
-{:#enableSeparator}
 
 
 
@@ -756,7 +748,6 @@ Example
 
 ### excludeTarget<span class="type-signature type string">string</span>
 {:#excludetarget}
-{:#excludeTarget}
 
 
 
@@ -827,7 +818,6 @@ $("#contextMenu").ejMenu({ menuType:ej.MenuType.ContextMenu,height:22,contextMen
 
 ### fields<span class="type-signature type object">Object</span>
 {:#fields}
-{:#fields}
 
 
 
@@ -879,7 +869,6 @@ Example
 
 ### fields.child<span class="type-signature type object">Object</span>
 {:#fields-child}
-{:#fields-child}
 
 
 
@@ -902,7 +891,6 @@ It receives the child data for the inner level.
 
 ### fields.dataSource<span class="type-signature type object">Object</span>
 {:#fields-datasource}
-{:#fields-dataSource}
 
 
 
@@ -925,7 +913,6 @@ datasource receives Essential DataManager object and JSON object.
 
 ### fields.htmlAttribute<span class="type-signature type string">string</span>
 {:#fields-htmlattribute}
-{:#fields-htmlAttribute}
 
 
 
@@ -947,7 +934,6 @@ Specifies the html attributes to &ldquo;li&rdquo; item list.
 
 
 ### fields.id<span class="type-signature type string">string</span>
-{:#fields-id}
 {:#fields-id}
 
 
@@ -971,7 +957,6 @@ Specifies the id to menu items list
 
 ### fields.imageAttribute<span class="type-signature type string">string</span>
 {:#fields-imageattribute}
-{:#fields-imageAttribute}
 
 
 
@@ -994,7 +979,6 @@ Specifies the image attribute to &ldquo;img&rdquo; tag inside items list.
 
 ### fields.imageUrl<span class="type-signature type string">string</span>
 {:#fields-imageurl}
-{:#fields-imageUrl}
 
 
 
@@ -1017,7 +1001,6 @@ Specifies the image URL to &ldquo;img&rdquo; tag inside item list.
 
 ### fields.linkAttribute<span class="type-signature type string">string</span>
 {:#fields-linkattribute}
-{:#fields-linkAttribute}
 
 
 
@@ -1040,7 +1023,6 @@ Adds custom attributes like "target" to the anchor tag of the menu items.
 
 ### fields.parentId<span class="type-signature type string">string</span>
 {:#fields-parentid}
-{:#fields-parentId}
 
 
 
@@ -1062,7 +1044,6 @@ Specifies the parent id of the table.
 
 
 ### fields.query<span class="type-signature type object">Object</span>
-{:#fields-query}
 {:#fields-query}
 
 
@@ -1086,7 +1067,6 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 ### fields.spriteCssClass<span class="type-signature type string">string</span>
 {:#fields-spritecssclass}
-{:#fields-spriteCssClass}
 
 
 
@@ -1109,7 +1089,6 @@ Specifies the sprite CSS class to &ldquo;li&rdquo; item list
 
 ### fields.tableName<span class="type-signature type string">string</span>
 {:#fields-tablename}
-{:#fields-tableName}
 
 
 
@@ -1131,7 +1110,6 @@ It receives table name to execute query on the corresponding table
 
 
 ### fields.text<span class="type-signature type string">string</span>
-{:#fields-text}
 {:#fields-text}
 
 
@@ -1155,7 +1133,6 @@ Specifies the text of menu items list.
 
 ### fields.url<span class="type-signature type string">string</span>
 {:#fields-url}
-{:#fields-url}
 
 
 
@@ -1177,7 +1154,6 @@ Specifies the url to the anchor tag in menu item list.
 
 
 ### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#height}
 {:#height}
 
 
@@ -1259,7 +1235,6 @@ Example
 
 ### menuType<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
 {:#menutype}
-{:#menuType}
 
 
 
@@ -1341,7 +1316,6 @@ Example
 
 ### openOnClick<span class="type-signature type boolean">boolean</span>
 {:#openonclick}
-{:#openOnClick}
 
 
 
@@ -1422,7 +1396,6 @@ Example
 
 
 ### orientation<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
-{:#orientation}
 {:#orientation}
 
 
@@ -1505,7 +1478,6 @@ Example
 
 ### showRooltLevelArrows<span class="type-signature type boolean">boolean</span>
 {:#showrooltlevelarrows}
-{:#showRooltLevelArrows}
 
 
 
@@ -1587,7 +1559,6 @@ Example
 
 ### showSubLevelArrows<span class="type-signature type boolean">boolean</span>
 {:#showsublevelarrows}
-{:#showSubLevelArrows}
 
 
 
@@ -1669,7 +1640,6 @@ Example
 
 ### subMenuDirection<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
 {:#submenudirection}
-{:#subMenuDirection}
 
 
 
@@ -1751,7 +1721,6 @@ Example
 
 ### titleText<span class="type-signature type string">string</span>
 {:#titletext}
-{:#titleText}
 
 
 
@@ -1832,7 +1801,6 @@ Example
 
 
 ### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#width}
 {:#width}
 
 
@@ -1921,7 +1889,6 @@ Example
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
 {:#disable}
 
 
@@ -2030,7 +1997,6 @@ $("#menu").ejMenu("disable");
 
 ### disableItem<span class="signature">(itemtext)</span>
 {:#disableitem}
-{:#disableItem}
 
 
 
@@ -2154,7 +2120,6 @@ $("#menu").ejMenu("disableItem","Home");
 
 ### disableItembyID<span class="signature">(itemid)</span>
 {:#disableitembyid}
-{:#disableItembyID}
 
 
 
@@ -2278,7 +2243,6 @@ $("#menu").ejMenu("disableItemByID","More");
 
 ### enable<span class="signature">()</span>
 {:#enable}
-{:#enable}
 
 
 
@@ -2386,7 +2350,6 @@ $("#menu").ejMenu("enable");
 
 ### enableItem<span class="signature">(itemtext)</span>
 {:#enableitem}
-{:#enableItem}
 
 
 
@@ -2514,7 +2477,6 @@ $("#menu").ejMenu("enableItem","Search Jobs");
 
 ### enableItembyID<span class="signature">(itemid)</span>
 {:#enableitembyid}
-{:#enableItembyID}
 
 
 
@@ -2640,7 +2602,6 @@ $("#menu").ejMenu("enableItemByID","More");
 
 ### hideContextMenu<span class="signature">()</span>
 {:#hidecontextmenu}
-{:#hideContextMenu}
 
 
 
@@ -2747,7 +2708,6 @@ $("#menu").ejMenu("hideContextMenu");
 
 
 ### insert<span class="signature">(item, target)</span>
-{:#insert}
 {:#insert}
 
 
@@ -2883,7 +2843,6 @@ $("#menu").ejMenu("insert",[{
 
 ### insertAfter<span class="signature">(item, target)</span>
 {:#insertafter}
-{:#insertAfter}
 
 
 
@@ -3018,7 +2977,6 @@ $("#menu").ejMenu("insertAfter",[{
 
 ### insertBefore<span class="signature">(item, target)</span>
 {:#insertbefore}
-{:#insertBefore}
 
 
 
@@ -3153,7 +3111,6 @@ $("#menu").ejMenu("insertBefore",[{
 
 ### remove<span class="signature">(target)</span>
 {:#remove}
-{:#remove}
 
 
 
@@ -3277,7 +3234,6 @@ $("#menu").ejMenu("remove",["#Home"]);
 
 ### showContextMenu<span class="signature">(locationX, locationY, targetElement, event)</span>
 {:#showcontextmenu}
-{:#showContextMenu}
 
 
 
@@ -3423,7 +3379,6 @@ $("#menu").ejMenu("ShowContextMenu");
 
 ### beforeContextOpen
 {:#beforecontextopen}
-{:#beforeContextOpen}
 
 
 
@@ -3537,7 +3492,6 @@ Example
 
 
 ### click
-{:#click}
 {:#click}
 
 
@@ -3663,7 +3617,6 @@ Example
 
 ### contextClose
 {:#contextclose}
-{:#contextClose}
 
 
 
@@ -3773,7 +3726,6 @@ Example
 
 ### contextOpen
 {:#contextopen}
-{:#contextOpen}
 
 
 
@@ -3883,7 +3835,6 @@ Example
 
 ### create
 {:#create}
-{:#create}
 
 
 
@@ -3988,7 +3939,6 @@ Example
 
 ### destroy
 {:#destroy}
-{:#destroy}
 
 
 
@@ -4092,7 +4042,6 @@ Example
 
 
 ### keydown
-{:#keydown}
 {:#keydown}
 
 
@@ -4213,7 +4162,6 @@ Example
 
 ### mouseout
 {:#mouseout}
-{:#mouseout}
 
 
 
@@ -4331,7 +4279,6 @@ Example
 
 
 ### mouseover
-{:#mouseover}
 {:#mouseover}
 
 

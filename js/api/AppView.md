@@ -75,7 +75,6 @@ Requires
 
 ### addMetaTags<span class="type-signature type boolean">boolean</span>
 {:#addmetatags}
-{:#addMetaTags}
 
 
 
@@ -124,7 +123,6 @@ Example
 
 ### pageTransition<span class="type-signature type enum">enum</span>
 {:#pagetransition}
-{:#pageTransition}
 
 
 
@@ -173,7 +171,6 @@ Example
 
 ### renderEJMControlsByDef<span class="type-signature type boolean">boolean</span>
 {:#renderejmcontrolsbydef}
-{:#renderEJMControlsByDef}
 
 
 
@@ -229,7 +226,6 @@ Example
 
 ### activeHistory<span class="signature">()</span>
 {:#activehistory}
-{:#activeHistory}
 
 
 
@@ -261,7 +257,6 @@ Example
 
 
 ### add<span class="signature">()</span>
-{:#add}
 {:#add}
 
 
@@ -295,7 +290,6 @@ Example
 
 ### clearForward<span class="signature">()</span>
 {:#clearforward}
-{:#clearForward}
 
 
 
@@ -328,7 +322,6 @@ Example
 
 ### convertToRelativeUrl<span class="signature">()</span>
 {:#converttorelativeurl}
-{:#convertToRelativeUrl}
 
 
 
@@ -361,7 +354,6 @@ Example
 
 ### createPage<span class="signature">()</span>
 {:#createpage}
-{:#createPage}
 
 
 
@@ -393,7 +385,6 @@ Example
 
 
 ### find<span class="signature">()</span>
-{:#find}
 {:#find}
 
 
@@ -427,7 +418,6 @@ Example
 
 ### getLocation<span class="signature">()</span>
 {:#getlocation}
-{:#getLocation}
 
 
 
@@ -459,7 +449,6 @@ Example
 
 ### hasProtocol<span class="signature">()</span>
 {:#hasprotocol}
-{:#hasProtocol}
 
 
 
@@ -492,7 +481,6 @@ Example
 
 ### initPage<span class="signature">()</span>
 {:#initpage}
-{:#initPage}
 
 
 
@@ -525,7 +513,6 @@ Example
 
 ### lastHistory<span class="signature">()</span>
 {:#lasthistory}
-{:#lastHistory}
 
 
 
@@ -558,7 +545,6 @@ Example
 
 ### loadView<span class="signature">()</span>
 {:#loadview}
-{:#loadView}
 
 
 
@@ -591,7 +577,6 @@ Example
 
 ### makeUrlAbsolute<span class="signature">()</span>
 {:#makeurlabsolute}
-{:#makeUrlAbsolute}
 
 
 
@@ -624,7 +609,6 @@ Example
 
 ### nextHistory<span class="signature">()</span>
 {:#nexthistory}
-{:#nextHistory}
 
 
 
@@ -657,7 +641,6 @@ Example
 
 ### prevHistory<span class="signature">()</span>
 {:#prevhistory}
-{:#prevHistory}
 
 
 
@@ -689,7 +672,6 @@ Example
 
 
 ### replace<span class="signature">()</span>
-{:#replace}
 {:#replace}
 
 
@@ -723,7 +705,6 @@ Example
 
 ### setPageRenderMode<span class="signature">()</span>
 {:#setpagerendermode}
-{:#setPageRenderMode}
 
 
 
@@ -756,7 +737,6 @@ Example
 
 ### splitUrl<span class="signature">()</span>
 {:#spliturl}
-{:#splitUrl}
 
 
 
@@ -789,7 +769,6 @@ Example
 
 ### transferPage<span class="signature">()</span>
 {:#transferpage}
-{:#transferPage}
 
 
 
@@ -829,7 +808,6 @@ Example
 
 ### userAgent<span class="signature">()</span>
 {:#useragent}
-{:#userAgent}
 
 
 

@@ -69,7 +69,6 @@ Requires
 
 ### cssClass<span class="type-signature type string">string</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -108,7 +107,6 @@ Example
 
 ### currentReport<span class="type-signature type string">String</span>
 {:#currentreport}
-{:#currentReport}
 
 
 
@@ -131,7 +129,6 @@ Default Value:
 
 ### customObject<span class="type-signature type object">object</span>
 {:#customobject}
-{:#customObject}
 
 
 
@@ -171,7 +168,6 @@ Example
 
 ### isResponsive<span class="type-signature type boolean">Boolean</span>
 {:#isresponsive}
-{:#isResponsive}
 
 
 
@@ -210,7 +206,6 @@ $("#OlapChart").ejOlapChart({isResponsive: true});</code>
 
 
 ### locale<span class="type-signature type string">string</span>
-{:#locale}
 {:#locale}
 
 
@@ -251,7 +246,6 @@ Example
 
 ### serviceMethodSettings<span class="type-signature type object">object</span>
 {:#servicemethodsettings}
-{:#serviceMethodSettings}
 
 
 
@@ -291,7 +285,6 @@ $("#OlapChart").ejOlapChart("option", "serviceMethodSettings",  {initialize: "My
 
 ### serviceMethodSettings.drillDown<span class="type-signature type string">string</span>
 {:#servicemethodsettings-drilldown}
-{:#serviceMethodSettings-drillDown}
 
 
 
@@ -331,7 +324,6 @@ $("#OlapChart").ejOlapChart("option", "serviceMethodSettings.drillDown", "DrillC
 
 ### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
 {:#servicemethodsettings-initialize}
-{:#serviceMethodSettings-initialize}
 
 
 
@@ -370,7 +362,6 @@ $("#OlapChart").ejOlapChart("option", "serviceMethodSettings.initialize", "Ininl
 
 
 ### url<span class="type-signature type string">string</span>
-{:#url}
 {:#url}
 
 
@@ -415,7 +406,6 @@ Example
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
-{:#destroy}
 
 
 
@@ -451,7 +441,6 @@ $("#OlapChart").ejOlapChart("destroy");
 
 ### doAjaxPost<span class="signature">()</span>
 {:#doajaxpost}
-{:#doAjaxPost}
 
 
 
@@ -487,7 +476,6 @@ chartObj.doAjaxPost("POST", "/OlapChartService.svc/Initialize", {"key", "Hello W
 
 ### renderChartFromJSON<span class="signature">()</span>
 {:#renderchartfromjson}
-{:#renderChartFromJSON}
 
 
 
@@ -523,7 +511,6 @@ chartObj.renderControlFromJSON(this.getJSONRecords());
 
 ### renderControlSuccess<span class="signature">()</span>
 {:#rendercontrolsuccess}
-{:#renderControlSuccess}
 
 
 
@@ -563,7 +550,6 @@ chartObj.renderControlSuccess({"OlapReport": this.getOlapReport(), "JsonRecords"
 
 ### afterServiceInvoke
 {:#afterserviceinvoke}
-{:#afterServiceInvoke}
 
 
 
@@ -645,7 +631,6 @@ $("#OlapChart").ejOlapChart({
 
 ### beforeServiceInvoke
 {:#beforeserviceinvoke}
-{:#beforeServiceInvoke}
 
 
 
@@ -727,7 +712,6 @@ $("#OlapChart").ejOlapChart({
 
 ### drillSuccess
 {:#drillsuccess}
-{:#drillSuccess}
 
 
 
@@ -794,7 +778,6 @@ $("#OlapChart").ejOlapChart({
 
 ### renderComplete
 {:#rendercomplete}
-{:#renderComplete}
 
 
 
@@ -876,7 +859,6 @@ $("#OlapChart").ejOlapChart({
 
 ### renderFailure
 {:#renderfailure}
-{:#renderFailure}
 
 
 
@@ -963,7 +945,6 @@ $("#OlapChart").ejOlapChart({
 
 ### renderSuccess
 {:#rendersuccess}
-{:#renderSuccess}
 
 
 

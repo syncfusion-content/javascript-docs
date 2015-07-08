@@ -90,7 +90,6 @@ Requires
 
 ### cssClass<span class="type-signature type string">String</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -152,7 +151,6 @@ Example
 
 ### showImage<span class="type-signature type boolean">Boolean</span>
 {:#showimage}
-{:#showImage}
 
 
 
@@ -214,7 +212,6 @@ Example
 
 ### showOnInit<span class="type-signature type boolean">Boolean</span>
 {:#showoninit}
-{:#showOnInit}
 
 
 
@@ -275,7 +272,6 @@ Example
 
 
 ### template<span class="type-signature type object">object</span>
-{:#template}
 {:#template}
 
 
@@ -377,7 +373,6 @@ Example
 
 ### text<span class="type-signature type string">String</span>
 {:#text}
-{:#text}
 
 
 
@@ -445,7 +440,6 @@ Example
 
 
 ### hide<span class="signature">()</span>
-{:#hide}
 {:#hide}
 
 
@@ -516,7 +510,6 @@ $("#target").ejWaitingPopup('hide');
 
 ### refresh<span class="signature">()</span>
 {:#refresh}
-{:#refresh}
 
 
 
@@ -584,7 +577,6 @@ $("#target").ejWaitingPopup('refresh');
 
 
 ### show<span class="signature">()</span>
-{:#show}
 {:#show}
 
 
@@ -662,7 +654,6 @@ $("#target").ejWaitingPopup("show");
 
 ### create
 {:#create}
-{:#create}
 
 
 
@@ -733,7 +724,6 @@ Example
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 

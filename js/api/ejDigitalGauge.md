@@ -94,7 +94,6 @@ Requires
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
 {:#enableresize}
-{:#enableResize}
 
 
 
@@ -143,7 +142,6 @@ $("#DigitalCore").ejDigitalGauge({ enableResize: true });
 
 
 ### frame<span class="type-signature type object">object</span>
-{:#frame}
 {:#frame}
 
 
@@ -194,7 +192,6 @@ $("#DigitalCore").ejDigitalGauge({ frame:{backgroundImageUrl: null, innerWidth:6
 
 ### frame.backgroundImageUrl<span class="type-signature type string">string</span>
 {:#frame-backgroundimageurl}
-{:#frame-backgroundImageUrl}
 
 
 
@@ -244,7 +241,6 @@ $("#DigitalCore").ejDigitalGauge({frame:{ backgroundImageUrl: "styles\images\Car
 
 ### frame.innerWidth<span class="type-signature type number">number</span>
 {:#frame-innerwidth}
-{:#frame-innerWidth}
 
 
 
@@ -294,7 +290,6 @@ $("#DigitalCore").ejDigitalGauge({frame:{ innerWidth: 30 }});
 
 ### frame.outerWidth<span class="type-signature type number">number</span>
 {:#frame-outerwidth}
-{:#frame-outerWidth}
 
 
 
@@ -343,7 +338,6 @@ $("#DigitalCore").ejDigitalGauge({frame: { outerWidth: 30 } });
 
 
 ### height<span class="type-signature type number">number</span>
-{:#height}
 {:#height}
 
 
@@ -394,7 +388,6 @@ $("#DigitalCore").ejDigitalGauge({ height: 60 });
 
 ### items<span class="type-signature type object">object</span>
 {:#items}
-{:#items}
 
 
 
@@ -444,7 +437,6 @@ $("#DigitalCore").ejDigitalGauge({width: 500});
 
 ### items.characterSettings<span class="type-signature type object">Object</span>
 {:#items-charactersettings}
-{:#items-characterSettings}
 
 
 
@@ -494,7 +486,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {count: 4} }] });
 
 ### items.characterSettings.count<span class="type-signature type number">number</span>
 {:#items-charactersettings-count}
-{:#items-characterSettings-count}
 
 
 
@@ -544,7 +535,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {count: 4} }] });
 
 ### items.characterSettings.opacity<span class="type-signature type number">number</span>
 {:#items-charactersettings-opacity}
-{:#items-characterSettings-opacity}
 
 
 
@@ -594,7 +584,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {opacity: 1} }] }
 
 ### items.characterSettings.spacing<span class="type-signature type number">number</span>
 {:#items-charactersettings-spacing}
-{:#items-characterSettings-spacing}
 
 
 
@@ -644,7 +633,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {spacing: 3} }] }
 
 ### items.characterSettings.type<span class="type-signature type enum">enum</span>
 {:#items-charactersettings-type}
-{:#items-characterSettings-type}
 
 
 
@@ -694,7 +682,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{characterSettings:{ type: "eightcross
 
 ### items.enableCustomFont<span class="type-signature type boolean">boolean</span>
 {:#items-enablecustomfont}
-{:#items-enableCustomFont}
 
 
 
@@ -744,7 +731,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ enableCustomFont: true }] });
 
 
 ### items.font<span class="type-signature type object">Object</span>
-{:#items-font}
 {:#items-font}
 
 
@@ -796,7 +782,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { size:
 
 ### items.font.fontFamily<span class="type-signature type string">string</span>
 {:#items-font-fontfamily}
-{:#items-font-fontFamily}
 
 
 
@@ -847,7 +832,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontF
 
 ### items.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#items-font-fontstyle}
-{:#items-font-fontStyle}
 
 
 
@@ -897,7 +881,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontS
 
 
 ### items.font.size<span class="type-signature type string">string</span>
-{:#items-font-size}
 {:#items-font-size}
 
 
@@ -949,7 +932,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true,font: { size: 
 
 ### items.position<span class="type-signature type object">object</span>
 {:#items-position}
-{:#items-position}
 
 
 
@@ -999,7 +981,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{position: { x: 10, y: 20 } }]});
 
 
 ### items.position.x<span class="type-signature type number">number</span>
-{:#items-position-x}
 {:#items-position-x}
 
 
@@ -1051,7 +1032,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{position : { x: 10,y:0} }]});
 
 ### items.position.y<span class="type-signature type number">number</span>
 {:#items-position-y}
-{:#items-position-y}
 
 
 
@@ -1102,7 +1082,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{position: { x:0,y: 20 } }]});
 
 ### items.segmentSettings<span class="type-signature type object">Object</span>
 {:#items-segmentsettings}
-{:#items-segmentSettings}
 
 
 
@@ -1153,7 +1132,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {length: 2} }] });
 
 ### items.segmentSettings.color<span class="type-signature type string">string</span>
 {:#items-segmentsettings-color}
-{:#items-segmentSettings-color}
 
 
 
@@ -1204,7 +1182,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {color: "#FF1F2F"} 
 
 ### items.segmentSettings.gradient<span class="type-signature type object">Object</span>
 {:#items-segmentsettings-gradient}
-{:#items-segmentSettings-gradient}
 
 
 
@@ -1255,7 +1232,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {gradient: { colorI
 
 ### items.segmentSettings.length<span class="type-signature type number">number</span>
 {:#items-segmentsettings-length}
-{:#items-segmentSettings-length}
 
 
 
@@ -1306,7 +1282,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {length: 2} }] });
 
 ### items.segmentSettings.opacity<span class="type-signature type number">number</span>
 {:#items-segmentsettings-opacity}
-{:#items-segmentSettings-opacity}
 
 
 
@@ -1357,7 +1332,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {opacity: 2} }] });
 
 ### items.segmentSettings.spacing<span class="type-signature type number">number</span>
 {:#items-segmentsettings-spacing}
-{:#items-segmentSettings-spacing}
 
 
 
@@ -1408,7 +1382,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {spacing: 1} }] });
 
 ### items.segmentSettings.width<span class="type-signature type number">number</span>
 {:#items-segmentsettings-width}
-{:#items-segmentSettings-width}
 
 
 
@@ -1459,7 +1432,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {width: 1} }] });
 
 ### items.shadowBlur<span class="type-signature type number">number</span>
 {:#items-shadowblur}
-{:#items-shadowBlur}
 
 
 
@@ -1510,7 +1482,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowBlur:  1 }] });
 
 ### items.shadowColor<span class="type-signature type string">string</span>
 {:#items-shadowcolor}
-{:#items-shadowColor}
 
 
 
@@ -1560,7 +1531,6 @@ $("#DigitalCore").ejDigitalGauge({ items: [{shadowColor: "#FF1F2F" }]});
 
 ### items.shadowOffsetX<span class="type-signature type number">number</span>
 {:#items-shadowoffsetx}
-{:#items-shadowOffsetX}
 
 
 
@@ -1611,7 +1581,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowOffsetX:  2 }] });
 
 ### items.shadowOffsetY<span class="type-signature type number">number</span>
 {:#items-shadowoffsety}
-{:#items-shadowOffsetY}
 
 
 
@@ -1662,7 +1631,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowOffsetY:  2 }] });
 
 ### items.textAlign<span class="type-signature type string">string</span>
 {:#items-textalign}
-{:#items-textAlign}
 
 
 
@@ -1712,7 +1680,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ textAlign:  "right" }] });
 
 ### items.textColor<span class="type-signature type string">string</span>
 {:#items-textcolor}
-{:#items-textColor}
 
 
 
@@ -1761,7 +1728,6 @@ $("#DigitalCore").ejDigitalGauge({ items: [{textColor: "#FF1F2F" }]});
 
 
 ### items.value<span class="type-signature type string">string</span>
-{:#items-value}
 {:#items-value}
 
 
@@ -1812,7 +1778,6 @@ $("#DigitalCore").ejDigitalGauge({ items: [{value: "Welcome" }]});
 
 ### matrixSegmentData
 {:#matrixsegmentdata}
-{:#matrixSegmentData}
 
 
 
@@ -1835,7 +1800,6 @@ Specifies the matrixSegmentData for the DigitalGauge.
 
 ### segmentData
 {:#segmentdata}
-{:#segmentData}
 
 
 
@@ -1857,7 +1821,6 @@ Specifies the segmentData for the DigitalGauge.
 
 
 ### themes<span class="type-signature type string">string</span>
-{:#themes}
 {:#themes}
 
 
@@ -1908,7 +1871,6 @@ $("#DigitalCore").ejDigitalGauge({ themes: "flatlight" });
 
 ### value<span class="type-signature type string">string</span>
 {:#value}
-{:#value}
 
 
 
@@ -1957,7 +1919,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ value: "Welcome" }] });
 
 
 ### width<span class="type-signature type number">number</span>
-{:#width}
 {:#width}
 
 
@@ -2015,7 +1976,6 @@ $("#DigitalCore").ejDigitalGauge({ width: 300 });
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
-{:#destroy}
 
 
 
@@ -2051,7 +2011,6 @@ gphObj.destroy();
 
 ### exportImage<span class="signature">(fileName, fileType)</span>
 {:#exportimage}
-{:#exportImage}
 
 
 
@@ -2108,7 +2067,6 @@ DigitalGaugeObj.exportImage("myImage","jpeg");
 
 ### getPosition<span class="signature">(itemIndex)</span>
 {:#getposition}
-{:#getPosition}
 
 
 
@@ -2160,7 +2118,6 @@ DigitalGaugeObj.getPosition(0);
 
 ### getValue<span class="signature">(itemIndex)</span>
 {:#getvalue}
-{:#getValue}
 
 
 
@@ -2212,7 +2169,6 @@ DigitalGaugeObj.getValue(0);
 
 ### refresh<span class="signature">()</span>
 {:#refresh}
-{:#refresh}
 
 
 
@@ -2248,7 +2204,6 @@ GaugeObj.refresh();
 
 ### setPosition<span class="signature">(itemIndex, value)</span>
 {:#setposition}
-{:#setPosition}
 
 
 
@@ -2305,7 +2260,6 @@ DigitalGaugeObj.setPosition(0,{ x:50, y:40 });
 
 ### setValue<span class="signature">(itemIndex, value)</span>
 {:#setvalue}
-{:#setValue}
 
 
 
@@ -2368,7 +2322,6 @@ DigitalGaugeObj.setValue(0,"Welcome");
 
 
 ### init
-{:#init}
 {:#init}
 
 
@@ -2451,7 +2404,6 @@ $("#DigitalCore").ejDigitalGauge({
 
 ### itemRendering
 {:#itemrendering}
-{:#itemRendering}
 
 
 
@@ -2527,7 +2479,6 @@ $("#DigitalCore").ejDigitalGauge({
 
 
 ### load
-{:#load}
 {:#load}
 
 
@@ -2605,7 +2556,6 @@ $("#DigitalCore").ejDigitalGauge({
 
 ### renderComplete
 {:#rendercomplete}
-{:#renderComplete}
 
 
 

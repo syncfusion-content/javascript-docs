@@ -101,7 +101,6 @@ Requires
 
 ### animationSpeed<span class="type-signature type number">number</span>
 {:#animationspeed}
-{:#animationSpeed}
 
 
 
@@ -158,7 +157,6 @@ $("#innerSplitter").ejSplitter({animationSpeed: 150 });
 
 ### cssClass<span class="type-signature type string">string</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -214,7 +212,6 @@ Example
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#enableanimation}
-{:#enableAnimation}
 
 
 
@@ -271,7 +268,6 @@ Example
 
 ### enableAutoResize<span class="type-signature type boolean">boolean</span>
 {:#enableautoresize}
-{:#enableAutoResize}
 
 
 
@@ -327,7 +323,6 @@ Example
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
 {:#enablertl}
-{:#enableRTL}
 
 
 
@@ -382,7 +377,6 @@ Example
 
 
 ### height<span class="type-signature type string">string</span>
-{:#height}
 {:#height}
 
 
@@ -440,7 +434,6 @@ Example
 
 ### orientation<span class="type-signature type enum">Enum</span>
 {:#orientation}
-{:#orientation}
 
 
 
@@ -495,7 +488,6 @@ $("#innerSplitter").ejSplitter({ orientation: ej.Orientation.Horizontal });
 
 
 ### properties<span class="type-signature type array">array</span>
-{:#properties}
 {:#properties}
 
 
@@ -552,7 +544,6 @@ Example
 
 
 ### width<span class="type-signature type string">string</span>
-{:#width}
 {:#width}
 
 
@@ -617,7 +608,6 @@ Example
 
 ### addItem<span class="signature">(content, property, index)</span>
 {:#additem}
-{:#addItem}
 
 
 
@@ -702,7 +692,6 @@ $("#innerSplitter").ejSplitter("addItem","New pane 0",{ paneSize:20, minSize:20,
 
 ### collapse<span class="signature">()</span>
 {:#collapse}
-{:#collapse}
 
 
 
@@ -760,7 +749,6 @@ $("#innerSplitter").ejSplitter("collpase");
 
 
 ### expand<span class="signature">()</span>
-{:#expand}
 {:#expand}
 
 
@@ -820,7 +808,6 @@ $("#innerSplitter").ejSplitter("expand");
 
 ### refresh<span class="signature">()</span>
 {:#refresh}
-{:#refresh}
 
 
 
@@ -879,7 +866,6 @@ $("#innerSplitter").ejSplitter("refresh");
 
 ### removeItem<span class="signature">(index)</span>
 {:#removeitem}
-{:#removeItem}
 
 
 
@@ -961,7 +947,6 @@ $("#innerSplitter").ejSplitter("removeItem",0);
 
 ### beforeExpandCollapse
 {:#beforeexpandcollapse}
-{:#beforeExpandCollapse}
 
 
 
@@ -1062,7 +1047,6 @@ $("#innerSplitter").ejSplitter({
 
 ### create
 {:#create}
-{:#create}
 
 
 
@@ -1146,7 +1130,6 @@ $("#innerSplitter").ejSplitter({
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 
@@ -1232,7 +1215,6 @@ $("#innerSplitter").ejSplitter({
 
 ### expandCollapse
 {:#expandcollapse}
-{:#expandCollapse}
 
 
 
@@ -1332,7 +1314,6 @@ $("#innerSplitter").ejSplitter({
 
 
 ### resize
-{:#resize}
 {:#resize}
 
 

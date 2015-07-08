@@ -143,7 +143,6 @@ Requires
 
 ### allowCellMerging<span class="type-signature type boolean">boolean</span>
 {:#allowcellmerging}
-{:#allowCellMerging}
 
 
 
@@ -194,7 +193,6 @@ $("#Grid").ejGrid({
 
 ### allowGrouping<span class="type-signature type boolean">boolean</span>
 {:#allowgrouping}
-{:#allowGrouping}
 
 
 
@@ -246,7 +244,6 @@ $("#Grid").ejGrid({
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
 {:#allowkeyboardnavigation}
-{:#allowKeyboardNavigation}
 
 
 
@@ -298,7 +295,6 @@ $("#Grid").ejGrid({
 
 ### allowMultipleExporting<span class="type-signature type boolean">boolean</span>
 {:#allowmultipleexporting}
-{:#allowMultipleExporting}
 
 
 
@@ -350,7 +346,6 @@ $("#Grid").ejGrid({
 
 ### allowMultiSorting<span class="type-signature type boolean">boolean</span>
 {:#allowmultisorting}
-{:#allowMultiSorting}
 
 
 
@@ -403,7 +398,6 @@ $("#Grid").ejGrid({
 
 ### allowPaging<span class="type-signature type boolean">boolean</span>
 {:#allowpaging}
-{:#allowPaging}
 
 
 
@@ -455,7 +449,6 @@ $("#Grid").ejGrid({
 
 ### allowReordering<span class="type-signature type boolean">boolean</span>
 {:#allowreordering}
-{:#allowReordering}
 
 
 
@@ -507,7 +500,6 @@ $("#Grid").ejGrid({
 
 ### allowResizeToFit<span class="type-signature type boolean">boolean</span>
 {:#allowresizetofit}
-{:#allowResizeToFit}
 
 
 
@@ -559,7 +551,6 @@ $("#Grid").ejGrid({
 
 ### allowResizing<span class="type-signature type boolean">boolean</span>
 {:#allowresizing}
-{:#allowResizing}
 
 
 
@@ -613,7 +604,6 @@ $("#Grid").ejGrid({
 
 ### allowScrolling<span class="type-signature type boolean">boolean</span>
 {:#allowscrolling}
-{:#allowScrolling}
 
 
 
@@ -665,7 +655,6 @@ $("#Grid").ejGrid({
 
 ### allowSearching<span class="type-signature type boolean">boolean</span>
 {:#allowsearching}
-{:#allowSearching}
 
 
 
@@ -718,7 +707,6 @@ $("#Grid").ejGrid({
 
 ### allowSelection<span class="type-signature type boolean">boolean</span>
 {:#allowselection}
-{:#allowSelection}
 
 
 
@@ -770,7 +758,6 @@ $("#Grid").ejGrid({
 
 ### allowSorting<span class="type-signature type boolean">boolean</span>
 {:#allowsorting}
-{:#allowSorting}
 
 
 
@@ -822,7 +809,6 @@ $("#Grid").ejGrid({
 
 ### allowTextWrap<span class="type-signature type boolean">boolean</span>
 {:#allowtextwrap}
-{:#allowTextWrap}
 
 
 
@@ -874,7 +860,6 @@ $("#Grid").ejGrid({
 
 ### childGrid<span class="type-signature type object">object</span>
 {:#childgrid}
-{:#childGrid}
 
 
 
@@ -929,7 +914,6 @@ queryString: "EmployeeID",
 
 ### columns<span class="type-signature type array">array</span>
 {:#columns}
-{:#columns}
 
 
 
@@ -981,7 +965,6 @@ var value = $("#Grid").ejGrid("option", "columns");
 
 ### columns.allowEditing<span class="type-signature type boolean">boolean</span>
 {:#columns-allowediting}
-{:#columns-allowEditing}
 
 
 
@@ -1033,7 +1016,6 @@ $("#Grid").ejGrid({
 
 ### columns.allowFiltering<span class="type-signature type boolean">boolean</span>
 {:#columns-allowfiltering}
-{:#columns-allowFiltering}
 
 
 
@@ -1085,7 +1067,6 @@ $("#Grid").ejGrid({
 
 ### columns.allowGrouping<span class="type-signature type boolean">boolean</span>
 {:#columns-allowgrouping}
-{:#columns-allowGrouping}
 
 
 
@@ -1137,7 +1118,6 @@ $("#Grid").ejGrid({
 
 ### columns.allowSorting<span class="type-signature type boolean">boolean</span>
 {:#columns-allowsorting}
-{:#columns-allowSorting}
 
 
 
@@ -1188,7 +1168,6 @@ $("#Grid").ejGrid({
 
 
 ### columns.commands<span class="type-signature type array">array</span>
-{:#columns-commands}
 {:#columns-commands}
 
 
@@ -1255,7 +1234,6 @@ $("#Grid").ejGrid({
 
 ### columns.commands.buttonOptions<span class="type-signature type object">object</span>
 {:#columns-commands-buttonoptions}
-{:#columns-commands-buttonOptions}
 
 
 
@@ -1319,7 +1297,6 @@ $("#Grid").ejGrid({
 
 
 ### columns.commands.type<span class="type-signature type enum">enum</span>
-{:#columns-commands-type}
 {:#columns-commands-type}
 
 
@@ -1385,7 +1362,6 @@ $("#Grid").ejGrid({
 
 ### columns.cssClass<span class="type-signature type string">string</span>
 {:#columns-cssclass}
-{:#columns-cssClass}
 
 
 
@@ -1440,7 +1416,6 @@ $("#Grid").ejGrid({
 
 ### columns.customAttributes<span class="type-signature type object">object</span>
 {:#columns-customattributes}
-{:#columns-customAttributes}
 
 
 
@@ -1491,7 +1466,6 @@ $("#Grid").ejGrid({
 
 ### columns.dataSource<span class="type-signature type array">array</span>
 {:#columns-datasource}
-{:#columns-dataSource}
 
 
 
@@ -1542,7 +1516,6 @@ $("#Grid").ejGrid({
 
 ### columns.defaultValue<span class="type-signature type string/number/boolean/date">string/number/boolean/date</span>
 {:#columns-defaultvalue}
-{:#columns-defaultValue}
 
 
 
@@ -1595,7 +1568,6 @@ $("#Grid").ejGrid({
 
 ### columns.disableHtmlEncode<span class="type-signature type boolean">boolean</span>
 {:#columns-disablehtmlencode}
-{:#columns-disableHtmlEncode}
 
 
 
@@ -1646,7 +1618,6 @@ $("#Grid").ejGrid({
 
 ### columns.editParams<span class="type-signature type object">object</span>
 {:#columns-editparams}
-{:#columns-editParams}
 
 
 
@@ -1698,7 +1669,6 @@ $("#Grid").ejGrid({
 
 ### columns.editTemplate<span class="type-signature type object">object</span>
 {:#columns-edittemplate}
-{:#columns-editTemplate}
 
 
 
@@ -1751,7 +1721,6 @@ $("#Grid").ejGrid({
 
 ### columns.editType<span class="type-signature type enum">enum</span>
 {:#columns-edittype}
-{:#columns-editType}
 
 
 
@@ -1803,7 +1772,6 @@ $("#Grid").ejGrid({
 
 ### columns.field<span class="type-signature type string">string</span>
 {:#columns-field}
-{:#columns-field}
 
 
 
@@ -1854,7 +1822,6 @@ $("#Grid").ejGrid({
 
 ### columns.foreignKeyField<span class="type-signature type string">string</span>
 {:#columns-foreignkeyfield}
-{:#columns-foreignKeyField}
 
 
 
@@ -1905,7 +1872,6 @@ $("#Grid").ejGrid({
 
 ### columns.foreignKeyValue<span class="type-signature type string">string</span>
 {:#columns-foreignkeyvalue}
-{:#columns-foreignKeyValue}
 
 
 
@@ -1955,7 +1921,6 @@ $("#Grid").ejGrid({
 
 
 ### columns.format<span class="type-signature type string">string</span>
-{:#columns-format}
 {:#columns-format}
 
 
@@ -2007,7 +1972,6 @@ $("#Grid").ejGrid({
 
 ### columns.headerTemplateID<span class="type-signature type string">string</span>
 {:#columns-headertemplateid}
-{:#columns-headerTemplateID}
 
 
 
@@ -2062,7 +2026,6 @@ $("#Grid").ejGrid({
 
 ### columns.headerText<span class="type-signature type string">string</span>
 {:#columns-headertext}
-{:#columns-headerText}
 
 
 
@@ -2113,7 +2076,6 @@ $("#Grid").ejGrid({
 
 ### columns.headerTextAlign<span class="type-signature type enum">enum</span>
 {:#columns-headertextalign}
-{:#columns-headerTextAlign}
 
 
 
@@ -2164,7 +2126,6 @@ $("#Grid").ejGrid({
 
 ### columns.isFrozen<span class="type-signature type boolean">boolean</span>
 {:#columns-isfrozen}
-{:#columns-isFrozen}
 
 
 
@@ -2217,7 +2178,6 @@ $("#Grid").ejGrid({
 
 ### columns.isIdentity<span class="type-signature type boolean">boolean</span>
 {:#columns-isidentity}
-{:#columns-isIdentity}
 
 
 
@@ -2268,7 +2228,6 @@ $("#Grid").ejGrid({
 
 ### columns.isPrimaryKey<span class="type-signature type boolean">boolean</span>
 {:#columns-isprimarykey}
-{:#columns-isPrimaryKey}
 
 
 
@@ -2320,7 +2279,6 @@ $("#Grid").ejGrid({
 
 ### columns.isUnbound<span class="type-signature type boolean">boolean</span>
 {:#columns-isunbound}
-{:#columns-isUnbound}
 
 
 
@@ -2370,7 +2328,6 @@ $("#Grid").ejGrid({
 
 
 ### columns.template<span class="type-signature type boolean">boolean</span>
-{:#columns-template}
 {:#columns-template}
 
 
@@ -2425,7 +2382,6 @@ $("#Grid").ejGrid({
 
 ### columns.templateID<span class="type-signature type string">string</span>
 {:#columns-templateid}
-{:#columns-templateID}
 
 
 
@@ -2479,7 +2435,6 @@ $("#Grid").ejGrid({
 
 ### columns.textAlign<span class="type-signature type enum">enum</span>
 {:#columns-textalign}
-{:#columns-textAlign}
 
 
 
@@ -2529,7 +2484,6 @@ $("#Grid").ejGrid({
 
 
 ### columns.type<span class="type-signature type string">string</span>
-{:#columns-type}
 {:#columns-type}
 
 
@@ -2581,7 +2535,6 @@ $("#Grid").ejGrid({
 
 ### columns.validationRules<span class="type-signature type object">object</span>
 {:#columns-validationrules}
-{:#columns-validationRules}
 
 
 
@@ -2616,7 +2569,6 @@ $("#Grid").ejGrid({
 
 
 ### columns.visible<span class="type-signature type boolean">boolean</span>
-{:#columns-visible}
 {:#columns-visible}
 
 
@@ -2668,7 +2620,6 @@ $("#Grid").ejGrid({
 
 ### columns.width<span class="type-signature type number">number</span>
 {:#columns-width}
-{:#columns-width}
 
 
 
@@ -2719,7 +2670,6 @@ $("#Grid").ejGrid({
 
 ### contextMenuSettings<span class="type-signature type object">Object</span>
 {:#contextmenusettings}
-{:#contextMenuSettings}
 
 
 
@@ -2742,7 +2692,6 @@ Gets or sets an object that indicates whether to customize the context menu beha
 
 ### contextMenuSettings.contextMenuItems<span class="type-signature type array">array</span>
 {:#contextmenusettings-contextmenuitems}
-{:#contextMenuSettings-contextMenuItems}
 
 
 
@@ -2798,7 +2747,6 @@ $("#Grid").ejGrid({
 
 ### contextMenuSettings.customContextMenuItems<span class="type-signature type array">array</span>
 {:#contextmenusettings-customcontextmenuitems}
-{:#contextMenuSettings-customContextMenuItems}
 
 
 
@@ -2851,7 +2799,6 @@ $("#Grid").ejGrid({
 
 ### contextMenuSettings.enableContextMenu<span class="type-signature type boolean">boolean</span>
 {:#contextmenusettings-enablecontextmenu}
-{:#contextMenuSettings-enableContextMenu}
 
 
 
@@ -2907,7 +2854,6 @@ $("#Grid").ejGrid({
 
 ### cssClass<span class="type-signature type string">string</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -2967,7 +2913,6 @@ $("#Grid").ejGrid({
 
 ### dataSource<span class="type-signature type object">object</span>
 {:#datasource}
-{:#dataSource}
 
 
 
@@ -3018,7 +2963,6 @@ $("#Grid").ejGrid({
 
 ### detailsTemplate<span class="type-signature type string">string</span>
 {:#detailstemplate}
-{:#detailsTemplate}
 
 
 
@@ -3079,7 +3023,6 @@ $("#Grid").ejGrid({
 
 ### editSettings<span class="type-signature type object">Object</span>
 {:#editsettings}
-{:#editSettings}
 
 
 
@@ -3102,7 +3045,6 @@ Gest or sets an object that indicates whether to customize the editing behavior 
 
 ### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
 {:#editsettings-allowadding}
-{:#editSettings-allowAdding}
 
 
 
@@ -3155,7 +3097,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
 {:#editsettings-allowdeleting}
-{:#editSettings-allowDeleting}
 
 
 
@@ -3208,7 +3149,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
 {:#editsettings-allowediting}
-{:#editSettings-allowEditing}
 
 
 
@@ -3261,7 +3201,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.allowEditOnDblClick<span class="type-signature type boolean">boolean</span>
 {:#editsettings-alloweditondblclick}
-{:#editSettings-allowEditOnDblClick}
 
 
 
@@ -3315,7 +3254,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.dialogEditorTemplateID<span class="type-signature type string">string</span>
 {:#editsettings-dialogeditortemplateid}
-{:#editSettings-dialogEditorTemplateID}
 
 
 
@@ -3388,7 +3326,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.editMode<span class="type-signature type enum">enum</span>
 {:#editsettings-editmode}
-{:#editSettings-editMode}
 
 
 
@@ -3441,7 +3378,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.externalFormTemplateID<span class="type-signature type string">string</span>
 {:#editsettings-externalformtemplateid}
-{:#editSettings-externalFormTemplateID}
 
 
 
@@ -3514,7 +3450,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.formPosition<span class="type-signature type enum">enum</span>
 {:#editsettings-formposition}
-{:#editSettings-formPosition}
 
 
 
@@ -3567,7 +3502,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.inlineFormTemplateID<span class="type-signature type string">string</span>
 {:#editsettings-inlineformtemplateid}
-{:#editSettings-inlineFormTemplateID}
 
 
 
@@ -3640,7 +3574,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.rowPosition<span class="type-signature type enum">enum</span>
 {:#editsettings-rowposition}
-{:#editSettings-rowPosition}
 
 
 
@@ -3693,7 +3626,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.showConfirmDialog<span class="type-signature type boolean">boolean</span>
 {:#editsettings-showconfirmdialog}
-{:#editSettings-showConfirmDialog}
 
 
 
@@ -3746,7 +3678,6 @@ $("#Grid").ejGrid({
 
 ### editSettings.showDeleteConfirmDialog<span class="type-signature type boolean">boolean</span>
 {:#editsettings-showdeleteconfirmdialog}
-{:#editSettings-showDeleteConfirmDialog}
 
 
 
@@ -3799,7 +3730,6 @@ $("#Grid").ejGrid({
 
 ### enableAltRow<span class="type-signature type boolean">boolean</span>
 {:#enablealtrow}
-{:#enableAltRow}
 
 
 
@@ -3850,7 +3780,6 @@ $("#Grid").ejGrid({
 
 ### enableAutoSaveOnSelectionChange<span class="type-signature type boolean">boolean</span>
 {:#enableautosaveonselectionchange}
-{:#enableAutoSaveOnSelectionChange}
 
 
 
@@ -3905,7 +3834,6 @@ $("#Grid").ejGrid({
 
 ### enableHeaderHover<span class="type-signature type boolean">boolean</span>
 {:#enableheaderhover}
-{:#enableHeaderHover}
 
 
 
@@ -3957,7 +3885,6 @@ $("#Grid").ejGrid({
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
 {:#enablepersistence}
-{:#enablePersistence}
 
 
 
@@ -4010,7 +3937,6 @@ $("#Grid").ejGrid({
 
 ### enableResponsiveRow<span class="type-signature type boolean">boolean</span>
 {:#enableresponsiverow}
-{:#enableResponsiveRow}
 
 
 
@@ -4064,7 +3990,6 @@ $("#Grid").ejGrid({
 
 ### enableRowHover<span class="type-signature type boolean">boolean</span>
 {:#enablerowhover}
-{:#enableRowHover}
 
 
 
@@ -4116,7 +4041,6 @@ $("#Grid").ejGrid({
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
 {:#enablertl}
-{:#enableRTL}
 
 
 
@@ -4167,7 +4091,6 @@ $("#Grid").ejGrid({
 
 ### enableTouch<span class="type-signature type boolean">boolean</span>
 {:#enabletouch}
-{:#enableTouch}
 
 
 
@@ -4219,7 +4142,6 @@ $("#Grid").ejGrid({
 
 ### filterSettings<span class="type-signature type object">Object</span>
 {:#filtersettings}
-{:#filterSettings}
 
 
 
@@ -4242,7 +4164,6 @@ Gets or sets an object that indicates whether to customize the filtering behavio
 
 ### filterSettings.enableCaseSensitivity<span class="type-signature type boolean">boolean</span>
 {:#filtersettings-enablecasesensitivity}
-{:#filterSettings-enableCaseSensitivity}
 
 
 
@@ -4294,7 +4215,6 @@ $("#Grid").ejGrid({
 
 ### filterSettings.filterBarMode<span class="type-signature type enum">enum</span>
 {:#filtersettings-filterbarmode}
-{:#filterSettings-filterBarMode}
 
 
 
@@ -4346,7 +4266,6 @@ $("#Grid").ejGrid({
 
 ### filterSettings.filteredColumns<span class="type-signature type object">object</span>
 {:#filtersettings-filteredcolumns}
-{:#filterSettings-filteredColumns}
 
 
 
@@ -4385,7 +4304,6 @@ Default Value:
 
 ### filterSettings.filterType<span class="type-signature type enum">enum</span>
 {:#filtersettings-filtertype}
-{:#filterSettings-filterType}
 
 
 
@@ -4437,7 +4355,6 @@ $("#Grid").ejGrid({
 
 ### filterSettings.maxFilterChoices<span class="type-signature type number">number</span>
 {:#filtersettings-maxfilterchoices}
-{:#filterSettings-maxFilterChoices}
 
 
 
@@ -4489,7 +4406,6 @@ $("#Grid").ejGrid({
 
 ### filterSettings.showFilterBarMessage<span class="type-signature type boolean">boolean</span>
 {:#filtersettings-showfilterbarmessage}
-{:#filterSettings-showFilterBarMessage}
 
 
 
@@ -4541,7 +4457,6 @@ $("#Grid").ejGrid({
 
 ### filterSettings.showPredicate<span class="type-signature type boolean">boolean</span>
 {:#filtersettings-showpredicate}
-{:#filterSettings-showPredicate}
 
 
 
@@ -4593,7 +4508,6 @@ $("#Grid").ejGrid({
 
 ### groupSettings<span class="type-signature type object">Object</span>
 {:#groupsettings}
-{:#groupSettings}
 
 
 
@@ -4616,7 +4530,6 @@ Gets or sets an object that indicates whether to customize the grouping behavior
 
 ### groupSettings.captionFormat<span class="type-signature type string">string</span>
 {:#groupsettings-captionformat}
-{:#groupSettings-captionFormat}
 
 
 
@@ -4668,7 +4581,6 @@ $("#Grid").ejGrid({
 
 ### groupSettings.enableDropAreaAnimation<span class="type-signature type boolean">boolean</span>
 {:#groupsettings-enabledropareaanimation}
-{:#groupSettings-enableDropAreaAnimation}
 
 
 
@@ -4720,7 +4632,6 @@ $("#Grid").ejGrid({
 
 ### groupSettings.enableDropAreaAutoSizing<span class="type-signature type boolean">boolean</span>
 {:#groupsettings-enabledropareaautosizing}
-{:#groupSettings-enableDropAreaAutoSizing}
 
 
 
@@ -4772,7 +4683,6 @@ $("#Grid").ejGrid({
 
 ### groupSettings.groupedColumns<span class="type-signature type object">object</span>
 {:#groupsettings-groupedcolumns}
-{:#groupSettings-groupedColumns}
 
 
 
@@ -4824,7 +4734,6 @@ $("#Grid").ejGrid({
 
 ### groupSettings.showDropArea<span class="type-signature type boolean">boolean</span>
 {:#groupsettings-showdroparea}
-{:#groupSettings-showDropArea}
 
 
 
@@ -4877,7 +4786,6 @@ $("#Grid").ejGrid({
 
 ### groupSettings.showGroupedColumn<span class="type-signature type boolean">boolean</span>
 {:#groupsettings-showgroupedcolumn}
-{:#groupSettings-showGroupedColumn}
 
 
 
@@ -4929,7 +4837,6 @@ $("#Grid").ejGrid({
 
 ### groupSettings.showToggleButton<span class="type-signature type boolean">boolean</span>
 {:#groupsettings-showtogglebutton}
-{:#groupSettings-showToggleButton}
 
 
 
@@ -4981,7 +4888,6 @@ $("#Grid").ejGrid({
 
 ### groupSettings.showUngroupButton<span class="type-signature type boolean">boolean</span>
 {:#groupsettings-showungroupbutton}
-{:#groupSettings-showUngroupButton}
 
 
 
@@ -5033,7 +4939,6 @@ $("#Grid").ejGrid({
 
 ### isResponsive<span class="type-signature type boolean">boolean</span>
 {:#isresponsive}
-{:#isResponsive}
 
 
 
@@ -5086,7 +4991,6 @@ $("#Grid").ejGrid({
 
 ### keySettings<span class="type-signature type object">object</span>
 {:#keysettings}
-{:#keySettings}
 
 
 
@@ -5140,7 +5044,6 @@ moveCellRight: "13",
 
 
 ### locale<span class="type-signature type string">string</span>
-{:#locale}
 {:#locale}
 
 
@@ -5197,7 +5100,6 @@ $("#Grid").ejGrid({
 
 ### minWidth<span class="type-signature type number">number</span>
 {:#minwidth}
-{:#minWidth}
 
 
 
@@ -5249,7 +5151,6 @@ $("#Grid").ejGrid({
 
 ### pageSettings<span class="type-signature type object">Object</span>
 {:#pagesettings}
-{:#pageSettings}
 
 
 
@@ -5272,7 +5173,6 @@ Gets or sets an object that indicates whether to modify the pager default config
 
 ### pageSettings.currentPage<span class="type-signature type number">number</span>
 {:#pagesettings-currentpage}
-{:#pageSettings-currentPage}
 
 
 
@@ -5324,7 +5224,6 @@ $("#Grid").ejGrid({
 
 ### pageSettings.enableQueryString<span class="type-signature type boolean">boolean</span>
 {:#pagesettings-enablequerystring}
-{:#pageSettings-enableQueryString}
 
 
 
@@ -5376,7 +5275,6 @@ $("#Grid").ejGrid({
 
 ### pageSettings.enableTemplates<span class="type-signature type bool">bool</span>
 {:#pagesettings-enabletemplates}
-{:#pageSettings-enableTemplates}
 
 
 
@@ -5431,7 +5329,6 @@ $("#Grid").ejGrid({
 
 ### pageSettings.pageCount<span class="type-signature type number">number</span>
 {:#pagesettings-pagecount}
-{:#pageSettings-pageCount}
 
 
 
@@ -5483,7 +5380,6 @@ $("#Grid").ejGrid({
 
 ### pageSettings.pageSize<span class="type-signature type number">number</span>
 {:#pagesettings-pagesize}
-{:#pageSettings-pageSize}
 
 
 
@@ -5535,7 +5431,6 @@ $("#Grid").ejGrid({
 
 ### pageSettings.showDefaults<span class="type-signature type bool">bool</span>
 {:#pagesettings-showdefaults}
-{:#pageSettings-showDefaults}
 
 
 
@@ -5590,7 +5485,6 @@ $("#Grid").ejGrid({
 
 ### pageSettings.template<span class="type-signature type string">string</span>
 {:#pagesettings-template}
-{:#pageSettings-template}
 
 
 
@@ -5645,7 +5539,6 @@ $("#Grid").ejGrid({
 
 ### pageSettings.totalPages<span class="type-signature type number">number</span>
 {:#pagesettings-totalpages}
-{:#pageSettings-totalPages}
 
 
 
@@ -5699,7 +5592,6 @@ $("#print").text("TotalPages: " + value);
 
 ### pageSettings.totalRecordsCount<span class="type-signature type number">number</span>
 {:#pagesettings-totalrecordscount}
-{:#pageSettings-totalRecordsCount}
 
 
 
@@ -5752,7 +5644,6 @@ $("#print").text("TotalRecordsCount: " + value);
 
 
 ### query<span class="type-signature type object">object</span>
-{:#query}
 {:#query}
 
 
@@ -5807,7 +5698,6 @@ $("#Grid").ejGrid({
 
 ### rowTemplate<span class="type-signature type string">string</span>
 {:#rowtemplate}
-{:#rowTemplate}
 
 
 
@@ -5869,7 +5759,6 @@ $("#Grid").ejGrid({
 
 ### scrollSettings<span class="type-signature type object">Object</span>
 {:#scrollsettings}
-{:#scrollSettings}
 
 
 
@@ -5892,7 +5781,6 @@ Gets or sets an object that indicates whether to customize the scrolling behavio
 
 ### scrollSettings.allowVirtualScrolling<span class="type-signature type boolean">boolean</span>
 {:#scrollsettings-allowvirtualscrolling}
-{:#scrollSettings-allowVirtualScrolling}
 
 
 
@@ -5944,7 +5832,6 @@ $("#Grid").ejGrid({
 
 ### scrollSettings.enableTouchScroll<span class="type-signature type boolean">boolean</span>
 {:#scrollsettings-enabletouchscroll}
-{:#scrollSettings-enableTouchScroll}
 
 
 
@@ -5996,7 +5883,6 @@ $("#Grid").ejGrid({
 
 ### scrollSettings.frozenColumns<span class="type-signature type number">number</span>
 {:#scrollsettings-frozencolumns}
-{:#scrollSettings-frozenColumns}
 
 
 
@@ -6048,7 +5934,6 @@ $("#Grid").ejGrid({
 
 ### scrollSettings.frozenRows<span class="type-signature type number">number</span>
 {:#scrollsettings-frozenrows}
-{:#scrollSettings-frozenRows}
 
 
 
@@ -6100,7 +5985,6 @@ $("#Grid").ejGrid({
 
 ### scrollSettings.height<span class="type-signature type number">number</span>
 {:#scrollsettings-height}
-{:#scrollSettings-height}
 
 
 
@@ -6152,7 +6036,6 @@ $("#Grid").ejGrid({
 
 ### scrollSettings.virtualScrollMode<span class="type-signature type enum">enum</span>
 {:#scrollsettings-virtualscrollmode}
-{:#scrollSettings-virtualScrollMode}
 
 
 
@@ -6204,7 +6087,6 @@ $("#Grid").ejGrid({
 
 ### scrollSettings.width<span class="type-signature type number">number</span>
 {:#scrollsettings-width}
-{:#scrollSettings-width}
 
 
 
@@ -6256,7 +6138,6 @@ $("#Grid").ejGrid({
 
 ### selectedRecords<span class="type-signature type array">array</span>
 {:#selectedrecords}
-{:#selectedRecords}
 
 
 
@@ -6311,7 +6192,6 @@ $("#Grid").ejGrid("model.selectedRecords")
 
 ### selectedRowIndex<span class="type-signature type number">number</span>
 {:#selectedrowindex}
-{:#selectedRowIndex}
 
 
 
@@ -6363,7 +6243,6 @@ $("#Grid").ejGrid({
 
 ### selectionSettings<span class="type-signature type object">Object</span>
 {:#selectionsettings}
-{:#selectionSettings}
 
 
 
@@ -6386,7 +6265,6 @@ This property is used to configure the selection behavior of the grid.
 
 ### selectionSettings.enableToggle<span class="type-signature type boolean">boolean</span>
 {:#selectionsettings-enabletoggle}
-{:#selectionSettings-enableToggle}
 
 
 
@@ -6438,7 +6316,6 @@ $("#Grid").ejGrid({
 
 ### selectionSettings.selectionMode<span class="type-signature type enum">enum</span>
 {:#selectionsettings-selectionmode}
-{:#selectionSettings-selectionMode}
 
 
 
@@ -6490,7 +6367,6 @@ $("#Grid").ejGrid({
 
 ### selectionType<span class="type-signature type enum">enum</span>
 {:#selectiontype}
-{:#selectionType}
 
 
 
@@ -6542,7 +6418,6 @@ $("#Grid").ejGrid({
 
 ### showAddNewRow<span class="type-signature type boolean">boolean</span>
 {:#showaddnewrow}
-{:#showAddNewRow}
 
 
 
@@ -6595,7 +6470,6 @@ editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", show
 
 ### showAddNewRow<span class="type-signature type boolean">boolean</span>
 {:#showaddnewrow}
-{:#showAddNewRow}
 
 
 
@@ -6648,7 +6522,6 @@ editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", show
 
 ### showColumnChooser<span class="type-signature type boolean">boolean</span>
 {:#showcolumnchooser}
-{:#showColumnChooser}
 
 
 
@@ -6700,7 +6573,6 @@ $("#Grid").ejGrid({
 
 ### showStackedHeader<span class="type-signature type boolean">boolean</span>
 {:#showstackedheader}
-{:#showStackedHeader}
 
 
 
@@ -6765,7 +6637,6 @@ $("#Grid").ejGrid({
 
 ### showSummary<span class="type-signature type boolean">boolean</span>
 {:#showsummary}
-{:#showSummary}
 
 
 
@@ -6819,7 +6690,6 @@ $("#Grid").ejGrid({
 
 ### sortSettings<span class="type-signature type object">Object</span>
 {:#sortsettings}
-{:#sortSettings}
 
 
 
@@ -6842,7 +6712,6 @@ Gets or sets a value that indicates whether to customize the sorting behavior of
 
 ### sortSettings.sortedColumns.direction<span class="type-signature type string">string</span>
 {:#sortsettings-sortedcolumns-direction}
-{:#sortSettings-sortedColumns-direction}
 
 
 
@@ -6894,7 +6763,6 @@ $("#Grid").ejGrid({
 
 ### sortSettings.sortedColumns.field<span class="type-signature type string">string</span>
 {:#sortsettings-sortedcolumns-field}
-{:#sortSettings-sortedColumns-field}
 
 
 
@@ -6946,7 +6814,6 @@ $("#Grid").ejGrid({
 
 ### stackedHeaderRows<span class="type-signature type array">array</span>
 {:#stackedheaderrows}
-{:#stackedHeaderRows}
 
 
 
@@ -7011,7 +6878,6 @@ $("#Grid").ejGrid({
 
 ### stackedHeaderRows.stackedHeaderColumns<span class="type-signature type array">array</span>
 {:#stackedheaderrows-stackedheadercolumns}
-{:#stackedHeaderRows-stackedHeaderColumns}
 
 
 
@@ -7076,7 +6942,6 @@ $("#Grid").ejGrid({
 
 ### stackedHeaderRows.stackedHeaderColumns.column<span class="type-signature type string">string</span>
 {:#stackedheaderrows-stackedheadercolumns-column}
-{:#stackedHeaderRows-stackedHeaderColumns-column}
 
 
 
@@ -7141,7 +7006,6 @@ $("#Grid").ejGrid({
 
 ### stackedHeaderRows.stackedHeaderColumns.cssClass<span class="type-signature type string">string</span>
 {:#stackedheaderrows-stackedheadercolumns-cssclass}
-{:#stackedHeaderRows-stackedHeaderColumns-cssClass}
 
 
 
@@ -7210,7 +7074,6 @@ $("#Grid").ejGrid({
 
 ### stackedHeaderRows.stackedHeaderColumns.headerText<span class="type-signature type string">string</span>
 {:#stackedheaderrows-stackedheadercolumns-headertext}
-{:#stackedHeaderRows-stackedHeaderColumns-headerText}
 
 
 
@@ -7275,7 +7138,6 @@ $("#Grid").ejGrid({
 
 ### stackedHeaderRows.stackedHeaderColumns.textAlign<span class="type-signature type string">string</span>
 {:#stackedheaderrows-stackedheadercolumns-textalign}
-{:#stackedHeaderRows-stackedHeaderColumns-textAlign}
 
 
 
@@ -7340,7 +7202,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows<span class="type-signature type array">array</span>
 {:#summaryrows}
-{:#summaryRows}
 
 
 
@@ -7400,7 +7261,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.showCaptionSummary<span class="type-signature type boolean">boolean</span>
 {:#summaryrows-showcaptionsummary}
-{:#summaryRows-showCaptionSummary}
 
 
 
@@ -7462,7 +7322,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.showTotalSummary<span class="type-signature type boolean">boolean</span>
 {:#summaryrows-showtotalsummary}
-{:#summaryRows-showTotalSummary}
 
 
 
@@ -7523,7 +7382,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.summaryColumns<span class="type-signature type object">object</span>
 {:#summaryrows-summarycolumns}
-{:#summaryRows-summaryColumns}
 
 
 
@@ -7583,7 +7441,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.summaryColumns.customSummaryValue<span class="type-signature type string">string</span>
 {:#summaryrows-summarycolumns-customsummaryvalue}
-{:#summaryRows-summaryColumns-customSummaryValue}
 
 
 
@@ -7644,7 +7501,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.summaryColumns.dataMember<span class="type-signature type string">string</span>
 {:#summaryrows-summarycolumns-datamember}
-{:#summaryRows-summaryColumns-dataMember}
 
 
 
@@ -7704,7 +7560,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.summaryColumns.displayColumn<span class="type-signature type string">string</span>
 {:#summaryrows-summarycolumns-displaycolumn}
-{:#summaryRows-summaryColumns-displayColumn}
 
 
 
@@ -7764,7 +7619,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.summaryColumns.format<span class="type-signature type string">string</span>
 {:#summaryrows-summarycolumns-format}
-{:#summaryRows-summaryColumns-format}
 
 
 
@@ -7825,7 +7679,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.summaryColumns.prefix<span class="type-signature type string">string</span>
 {:#summaryrows-summarycolumns-prefix}
-{:#summaryRows-summaryColumns-prefix}
 
 
 
@@ -7885,7 +7738,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.summaryColumns.suffix<span class="type-signature type string">string</span>
 {:#summaryrows-summarycolumns-suffix}
-{:#summaryRows-summaryColumns-suffix}
 
 
 
@@ -7946,7 +7798,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.summaryColumns.summaryType<span class="type-signature type object">object</span>
 {:#summaryrows-summarycolumns-summarytype}
-{:#summaryRows-summaryColumns-summaryType}
 
 
 
@@ -8006,7 +7857,6 @@ $("#Grid").ejGrid({
 
 ### summaryRows.title<span class="type-signature type string">string</span>
 {:#summaryrows-title}
-{:#summaryRows-title}
 
 
 
@@ -8066,7 +7916,6 @@ $("#Grid").ejGrid({
 
 ### toolbarSettings<span class="type-signature type object">Object</span>
 {:#toolbarsettings}
-{:#toolbarSettings}
 
 
 
@@ -8089,7 +7938,6 @@ Gets or sets an object that indicates whether to enable the toolbar in the grid 
 
 ### toolbarSettings.customToolbarItems<span class="type-signature type object">object</span>
 {:#toolbarsettings-customtoolbaritems}
-{:#toolbarSettings-customToolbarItems}
 
 
 
@@ -8146,7 +7994,6 @@ $("#Grid").ejGrid({
 
 ### toolbarSettings.showToolbar<span class="type-signature type boolean">boolean</span>
 {:#toolbarsettings-showtoolbar}
-{:#toolbarSettings-showToolbar}
 
 
 
@@ -8199,7 +8046,6 @@ $("#Grid").ejGrid({
 
 ### toolbarSettings.toolbarItems<span class="type-signature type enum">enum</span>
 {:#toolbarsettings-toolbaritems}
-{:#toolbarSettings-toolbarItems}
 
 
 
@@ -8259,7 +8105,6 @@ $("#Grid").ejGrid({
 
 ### addRecord<span class="signature">()</span>
 {:#addrecord}
-{:#addRecord}
 
 
 
@@ -8301,7 +8146,6 @@ $("#Editing").ejGrid("addRecord",{OrderID:12333})
 
 ### batchCancel<span class="signature">()</span>
 {:#batchcancel}
-{:#batchCancel}
 
 
 
@@ -8343,7 +8187,6 @@ $("#Grid").ejGrid("batchCancel");
 
 ### batchSave<span class="signature">()</span>
 {:#batchsave}
-{:#batchSave}
 
 
 
@@ -8385,7 +8228,6 @@ $("#Grid").ejGrid("batchSave");
 
 ### cancelEdit<span class="signature">()</span>
 {:#canceledit}
-{:#cancelEdit}
 
 
 
@@ -8427,7 +8269,6 @@ $("#Grid").ejGrid("cancelEdit");
 
 ### clearCellSelection<span class="signature">()</span>
 {:#clearcellselection}
-{:#clearCellSelection}
 
 
 
@@ -8468,7 +8309,6 @@ $("#Grid").ejGrid("clearCellSelection");
 
 ### clearColumnSelection<span class="signature">(<span class="optional">index</span>)</span>
 {:#clearcolumnselection}
-{:#clearColumnSelection}
 
 
 
@@ -8528,7 +8368,6 @@ $("#Grid").ejGrid("clearColumnSelection");
 
 ### clearSelection<span class="signature">(<span class="optional">index</span>)</span>
 {:#clearselection}
-{:#clearSelection}
 
 
 
@@ -8588,7 +8427,6 @@ $("#Grid").ejGrid("clearSelection");
 
 ### clearSorting<span class="signature">()</span>
 {:#clearsorting}
-{:#clearSorting}
 
 
 
@@ -8630,7 +8468,6 @@ $("#Grid").ejGrid("clearSorting");
 
 ### collapseAll<span class="signature">()</span>
 {:#collapseall}
-{:#collapseAll}
 
 
 
@@ -8672,7 +8509,6 @@ $("#Grid").ejGrid("collapseAll");
 
 ### collapseGroupDropArea<span class="signature">()</span>
 {:#collapsegroupdroparea}
-{:#collapseGroupDropArea}
 
 
 
@@ -8713,7 +8549,6 @@ $("#Grid").ejGrid("collapseGroupDropArea");
 
 
 ### columns<span class="signature">(columndetails, <span class="optional">action</span>)</span>
-{:#columns}
 {:#columns}
 
 
@@ -8781,7 +8616,6 @@ $("#Grid").ejGrid("columns","CustomerID", "add");
 
 ### dataSource<span class="signature">(datasource)</span>
 {:#datasource}
-{:#dataSource}
 
 
 
@@ -8839,7 +8673,6 @@ $("#Grid").ejGrid("dataSource", data);
 
 ### deleteRecord<span class="signature">(fieldName, data)</span>
 {:#deleterecord}
-{:#deleteRecord}
 
 
 
@@ -8902,7 +8735,6 @@ $("#Grid").ejGrid("deleteRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
-{:#destroy}
 
 
 
@@ -8942,7 +8774,6 @@ $("#Grid").ejGrid("destroy");
 
 ### editCell<span class="signature">(index, fieldName)</span>
 {:#editcell}
-{:#editCell}
 
 
 
@@ -9003,7 +8834,6 @@ $("#Grid").ejGrid("editCell", 2, "OrderID");
 
 ### endEdit<span class="signature">()</span>
 {:#endedit}
-{:#endEdit}
 
 
 
@@ -9045,7 +8875,6 @@ $("#Grid").ejGrid("endEdit");
 
 ### expandAll<span class="signature">()</span>
 {:#expandall}
-{:#expandAll}
 
 
 
@@ -9087,7 +8916,6 @@ $("#Grid").ejGrid("expandAll");
 
 ### expandCollapse<span class="signature">($target)</span>
 {:#expandcollapse}
-{:#expandCollapse}
 
 
 
@@ -9145,7 +8973,6 @@ $("#Grid").ejGrid("expandCollapse", $("tr td.recordplusexpand &gt; div").first()
 
 ### expandGroupDropArea<span class="signature">()</span>
 {:#expandgroupdroparea}
-{:#expandGroupDropArea}
 
 
 
@@ -9187,7 +9014,6 @@ $("#Grid").ejGrid("expandGroupDropArea");
 
 ### filterColumn<span class="signature">(fieldName, filterOperator, filterValue, predicate, <span class="optional">matchcase</span>)</span>
 {:#filtercolumn}
-{:#filterColumn}
 
 
 
@@ -9264,7 +9090,6 @@ $("#Grid").ejGrid("filterColumn","OrderID","equal","10248","and", true);
 
 ### getBatchChanges<span class="signature">()</span>
 {:#getbatchchanges}
-{:#getBatchChanges}
 
 
 
@@ -9304,7 +9129,6 @@ $("#Grid").ejGrid("getBatchChanges");
 
 ### getBrowserDetails<span class="signature">()</span>
 {:#getbrowserdetails}
-{:#getBrowserDetails}
 
 
 
@@ -9348,7 +9172,6 @@ $("#Grid").ejGrid("getBrowserDetails");
 
 ### getColumnByField<span class="signature">(fieldName)</span>
 {:#getcolumnbyfield}
-{:#getColumnByField}
 
 
 
@@ -9381,7 +9204,6 @@ Get the column details based on the given field in grid
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 Object
 
@@ -9413,7 +9235,6 @@ $("#Grid").ejGrid("getColumnByField", "OrderID");
 
 ### getColumnByHeaderText<span class="signature">(headerText)</span>
 {:#getcolumnbyheadertext}
-{:#getColumnByHeaderText}
 
 
 
@@ -9446,7 +9267,6 @@ Get the column details based on the given header text in grid.
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 Object
 
@@ -9478,7 +9298,6 @@ $("#Grid").ejGrid("getColumnByHeaderText", "Order ID");
 
 ### getColumnByIndex<span class="signature">(columnIndex)</span>
 {:#getcolumnbyindex}
-{:#getColumnByIndex}
 
 
 
@@ -9511,7 +9330,6 @@ Get the column details based on the given column index in grid
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 Object
 
@@ -9543,7 +9361,6 @@ $("#Grid").ejGrid("getColumnByIndex", 1);
 
 ### getColumnFieldNames<span class="signature">()</span>
 {:#getcolumnfieldnames}
-{:#getColumnFieldNames}
 
 
 
@@ -9585,7 +9402,6 @@ $("#Grid").ejGrid("getColumnFieldNames");
 
 ### getColumnIndexByField<span class="signature">(fieldName)</span>
 {:#getcolumnindexbyfield}
-{:#getColumnIndexByField}
 
 
 
@@ -9618,7 +9434,6 @@ Get the column index of the given field in grid.
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 Index
 
@@ -9652,7 +9467,6 @@ $("#Grid").ejGrid("getColumnIndexByField", "OrderID");
 
 ### getContent<span class="signature">()</span>
 {:#getcontent}
-{:#getContent}
 
 
 
@@ -9694,7 +9508,6 @@ $("#Grid").ejGrid("getContent");
 
 ### getContentTable<span class="signature">()</span>
 {:#getcontenttable}
-{:#getContentTable}
 
 
 
@@ -9736,7 +9549,6 @@ $("#Grid").ejGrid("getContentTable");
 
 ### getCurrentEditCellData<span class="signature">()</span>
 {:#getcurrenteditcelldata}
-{:#getCurrentEditCellData}
 
 
 
@@ -9778,7 +9590,6 @@ $("#Grid").ejGrid("getCurrentEditCellData");
 
 ### getCurrentIndex<span class="signature">()</span>
 {:#getcurrentindex}
-{:#getCurrentIndex}
 
 
 
@@ -9795,7 +9606,6 @@ Get the current page index in grid pager.
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 PageIndex
 
@@ -9827,7 +9637,6 @@ $("#Grid").ejGrid("getCurrentIndex");
 
 ### getCurrentViewData<span class="signature">()</span>
 {:#getcurrentviewdata}
-{:#getCurrentViewData}
 
 
 
@@ -9869,7 +9678,6 @@ $("#Grid").ejGrid("getCurrentViewData");
 
 ### getFieldNameByHeaderText<span class="signature">(headerText)</span>
 {:#getfieldnamebyheadertext}
-{:#getFieldNameByHeaderText}
 
 
 
@@ -9927,7 +9735,6 @@ $("#Grid").ejGrid("getFieldNameByHeaderText", "Order ID");
 
 ### getFilterBar<span class="signature">()</span>
 {:#getfilterbar}
-{:#getFilterBar}
 
 
 
@@ -9969,7 +9776,6 @@ $("#Grid").ejGrid("getFilterBar");
 
 ### getFilteredRecords<span class="signature">()</span>
 {:#getfilteredrecords}
-{:#getFilteredRecords}
 
 
 
@@ -10011,7 +9817,6 @@ $("#Grid").ejGrid("getFilteredRecords");
 
 ### getFooterContent<span class="signature">()</span>
 {:#getfootercontent}
-{:#getFooterContent}
 
 
 
@@ -10053,7 +9858,6 @@ $("#Grid").ejGrid("getFooterContent");
 
 ### getFooterTable<span class="signature">()</span>
 {:#getfootertable}
-{:#getFooterTable}
 
 
 
@@ -10095,7 +9899,6 @@ $("#Grid").ejGrid("getFooterTable");
 
 ### getHeaderContent<span class="signature">()</span>
 {:#getheadercontent}
-{:#getHeaderContent}
 
 
 
@@ -10137,7 +9940,6 @@ $("#Grid").ejGrid("getHeaderContent");
 
 ### getHeaderTable<span class="signature">()</span>
 {:#getheadertable}
-{:#getHeaderTable}
 
 
 
@@ -10179,7 +9981,6 @@ $("#Grid").ejGrid("getHeaderTable");
 
 ### getHeaderTextByFieldName<span class="signature">(field)</span>
 {:#getheadertextbyfieldname}
-{:#getHeaderTextByFieldName}
 
 
 
@@ -10236,7 +10037,6 @@ $("#Grid").ejGrid("getHeaderTextByFieldName", "OrderID");
 
 ### getHiddenColumnNames<span class="signature">()</span>
 {:#gethiddencolumnnames}
-{:#getHiddenColumnNames}
 
 
 
@@ -10278,7 +10078,6 @@ $("#Grid").ejGrid("getHiddenColumnNames");
 
 ### getIndexByRow<span class="signature">($tr)</span>
 {:#getindexbyrow}
-{:#getIndexByRow}
 
 
 
@@ -10311,7 +10110,6 @@ Get the row index based on the given tr element in grid.
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 index
 
@@ -10343,7 +10141,6 @@ $("#Grid").ejGrid("getIndexByRow", $(".gridcontent tr").first());
 
 ### getPager<span class="signature">()</span>
 {:#getpager}
-{:#getPager}
 
 
 
@@ -10385,7 +10182,6 @@ $("#Grid").ejGrid("getPager");
 
 ### getPrimaryKeyFieldNames<span class="signature">()</span>
 {:#getprimarykeyfieldnames}
-{:#getPrimaryKeyFieldNames}
 
 
 
@@ -10402,7 +10198,6 @@ Get the names of primary key columns in Grid
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 key fields
 
@@ -10434,7 +10229,6 @@ $("#Grid").ejGrid("getPrimaryKeyFieldNames");
 
 ### getRowByIndex<span class="signature">(from, to)</span>
 {:#getrowbyindex}
-{:#getRowByIndex}
 
 
 
@@ -10497,7 +10291,6 @@ $("#Grid").ejGrid("getRowByIndex", 3, 6);
 
 ### getRowHeight<span class="signature">()</span>
 {:#getrowheight}
-{:#getRowHeight}
 
 
 
@@ -10539,7 +10332,6 @@ $("#Grid").ejGrid("getRowHeight");
 
 ### getRows<span class="signature">()</span>
 {:#getrows}
-{:#getRows}
 
 
 
@@ -10581,7 +10373,6 @@ $("#Grid").ejGrid("getRows");
 
 ### getScrollObject<span class="signature">()</span>
 {:#getscrollobject}
-{:#getScrollObject}
 
 
 
@@ -10623,7 +10414,6 @@ $("#Grid").ejGrid("getScrollObject");
 
 ### getSelectedRecords<span class="signature">()</span>
 {:#getselectedrecords}
-{:#getSelectedRecords}
 
 
 
@@ -10665,7 +10455,6 @@ $("#Grid").ejGrid("getSelectedRecords");
 
 ### getVisibleColumnNames<span class="signature">()</span>
 {:#getvisiblecolumnnames}
-{:#getVisibleColumnNames}
 
 
 
@@ -10707,7 +10496,6 @@ $("#Grid").ejGrid("getVisibleColumnNames");
 
 ### gotoPage<span class="signature">(pageIndex)</span>
 {:#gotopage}
-{:#gotoPage}
 
 
 
@@ -10765,7 +10553,6 @@ $("#Grid").ejGrid("gotoPage", 3);
 
 ### groupColumn<span class="signature">(fieldName)</span>
 {:#groupcolumn}
-{:#groupColumn}
 
 
 
@@ -10823,7 +10610,6 @@ $("#Grid").ejGrid("groupColumn", "OrderID");
 
 ### hideColumns<span class="signature">(headerText)</span>
 {:#hidecolumns}
-{:#hideColumns}
 
 
 
@@ -10883,7 +10669,6 @@ $("#Grid").ejGrid("hideColumns", ["Order ID", "Customer ID"]);
 
 ### print<span class="signature">()</span>
 {:#print}
-{:#print}
 
 
 
@@ -10927,7 +10712,6 @@ $("#Grid").ejGrid("print");
 
 ### refreshBatchEditChanges<span class="signature">()</span>
 {:#refreshbatcheditchanges}
-{:#refreshBatchEditChanges}
 
 
 
@@ -10969,7 +10753,6 @@ $("#Grid").ejGrid("refreshBatchEditChanges");
 
 ### refreshContent<span class="signature">(<span class="optional">templateRefresh</span>)</span>
 {:#refreshcontent}
-{:#refreshContent}
 
 
 
@@ -11031,7 +10814,6 @@ $("#Grid").ejGrid("refreshContent", true);
 
 ### refreshTemplate<span class="signature">()</span>
 {:#refreshtemplate}
-{:#refreshTemplate}
 
 
 
@@ -11073,7 +10855,6 @@ $("#Grid").ejGrid("refreshTemplate");
 
 ### refreshToolbar<span class="signature">()</span>
 {:#refreshtoolbar}
-{:#refreshToolbar}
 
 
 
@@ -11117,7 +10898,6 @@ $("#Grid").ejGrid("refreshToolbar");
 
 ### removeSortedColumns<span class="signature">(fieldName)</span>
 {:#removesortedcolumns}
-{:#removeSortedColumns}
 
 
 
@@ -11179,7 +10959,6 @@ $("#Grid").ejGrid("removeSortedColumns", ["CustomerID", "ShipCity"]);
 
 ### render<span class="signature">()</span>
 {:#render}
-{:#render}
 
 
 
@@ -11223,7 +11002,6 @@ $("#Grid").ejGrid("render");
 
 ### reorderColumns<span class="signature">(fromFieldName, toFieldName)</span>
 {:#reordercolumns}
-{:#reorderColumns}
 
 
 
@@ -11286,7 +11064,6 @@ $("#Grid").ejGrid("reorderColumns", "OrderID", "CustomerID");
 
 ### resetModelCollections<span class="signature">()</span>
 {:#resetmodelcollections}
-{:#resetModelCollections}
 
 
 
@@ -11328,7 +11105,6 @@ $("#Grid").ejGrid("resetModelCollections");
 
 ### rowHeightRefresh<span class="signature">()</span>
 {:#rowheightrefresh}
-{:#rowHeightRefresh}
 
 
 
@@ -11370,7 +11146,6 @@ $("#Grid").ejGrid("rowHeightRefresh");
 
 
 ### search<span class="signature">(searchString)</span>
-{:#search}
 {:#search}
 
 
@@ -11428,7 +11203,6 @@ $("#Grid").ejGrid("search", "France");
 
 ### selectCells<span class="signature">(rowCellIndexes)</span>
 {:#selectcells}
-{:#selectCells}
 
 
 
@@ -11486,7 +11260,6 @@ $("#Grid").ejGrid("selectCells", [[1, [4, 3, 2]]]);
 
 ### selectColumns<span class="signature">(fromIndex)</span>
 {:#selectcolumns}
-{:#selectColumns}
 
 
 
@@ -11544,7 +11317,6 @@ $("#Grid").ejGrid("selectColumns", 1, 4);
 
 ### selectRows<span class="signature">(fromIndex, toIndex)</span>
 {:#selectrows}
-{:#selectRows}
 
 
 
@@ -11607,7 +11379,6 @@ $("#Grid").ejGrid("selectRows", 1, 4);
 
 ### setValidationToField<span class="signature">(fieldName, rules)</span>
 {:#setvalidationtofield}
-{:#setValidationToField}
 
 
 
@@ -11670,7 +11441,6 @@ $("#Grid").ejGrid("setValidationToField", "OrderID", { required: true });
 
 ### showColumns<span class="signature">(headerText)</span>
 {:#showcolumns}
-{:#showColumns}
 
 
 
@@ -11730,7 +11500,6 @@ $("#Grid").ejGrid("showColumns", ["Order ID", "Customer ID"]);
 
 ### sortColumn<span class="signature">(columnName, <span class="optional">sortingDirection</span>)</span>
 {:#sortcolumn}
-{:#sortColumn}
 
 
 
@@ -11792,7 +11561,6 @@ $("#Grid").ejGrid("sortColumn", "OrderID", "ascending");
 
 ### startEdit<span class="signature">($tr)</span>
 {:#startedit}
-{:#startEdit}
 
 
 
@@ -11850,7 +11618,6 @@ $("#Grid").ejGrid("startEdit", $(".gridcontent tr").first());
 
 ### ungroupColumn<span class="signature">(fieldName)</span>
 {:#ungroupcolumn}
-{:#ungroupColumn}
 
 
 
@@ -11908,7 +11675,6 @@ $("#Grid").ejGrid("ungroupColumn", "OrderID");
 
 ### updateRecord<span class="signature">(fieldName, data)</span>
 {:#updaterecord}
-{:#updateRecord}
 
 
 
@@ -11978,7 +11744,6 @@ $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });
 
 ### actionBegin
 {:#actionbegin}
-{:#actionBegin}
 
 
 
@@ -12712,7 +12477,6 @@ $("#Grid").ejGrid({
 
 ### actionComplete
 {:#actioncomplete}
-{:#actionComplete}
 
 
 
@@ -13530,7 +13294,6 @@ $("#Grid").ejGrid({
 
 ### actionFailure
 {:#actionfailure}
-{:#actionFailure}
 
 
 
@@ -14138,7 +13901,6 @@ $("#Grid").ejGrid({
 
 ### batchAdd
 {:#batchadd}
-{:#batchAdd}
 
 
 
@@ -14240,7 +14002,6 @@ $("#Grid").ejGrid({
 
 ### batchDelete
 {:#batchdelete}
-{:#batchDelete}
 
 
 
@@ -14317,7 +14078,6 @@ $("#Grid").ejGrid({
 
 ### beforeBatchAdd
 {:#beforebatchadd}
-{:#beforeBatchAdd}
 
 
 
@@ -14404,7 +14164,6 @@ $("#Grid").ejGrid({
 
 ### beforeBatchDelete
 {:#beforebatchdelete}
-{:#beforeBatchDelete}
 
 
 
@@ -14501,7 +14260,6 @@ $("#Grid").ejGrid({
 
 ### beforeBatchSave
 {:#beforebatchsave}
-{:#beforeBatchSave}
 
 
 
@@ -14583,7 +14341,6 @@ $("#Grid").ejGrid({
 
 ### beginEdit
 {:#beginedit}
-{:#beginEdit}
 
 
 
@@ -14680,7 +14437,6 @@ $("#Grid").ejGrid({
 
 ### cellEdit
 {:#celledit}
-{:#cellEdit}
 
 
 
@@ -14797,7 +14553,6 @@ $("#Grid").ejGrid({
 
 ### cellSave
 {:#cellsave}
-{:#cellSave}
 
 
 
@@ -14909,7 +14664,6 @@ $("#Grid").ejGrid({
 
 ### cellSelected
 {:#cellselected}
-{:#cellSelected}
 
 
 
@@ -15016,7 +14770,6 @@ $("#Grid").ejGrid({
 
 ### cellSelecting
 {:#cellselecting}
-{:#cellSelecting}
 
 
 
@@ -15128,7 +14881,6 @@ $("#Grid").ejGrid({
 
 ### columnDrag
 {:#columndrag}
-{:#columnDrag}
 
 
 
@@ -15220,7 +14972,6 @@ $("#Grid").ejGrid({
 
 ### columnDragStart
 {:#columndragstart}
-{:#columnDragStart}
 
 
 
@@ -15312,7 +15063,6 @@ $("#Grid").ejGrid({
 
 ### columnDrop
 {:#columndrop}
-{:#columnDrop}
 
 
 
@@ -15404,7 +15154,6 @@ $("#Grid").ejGrid({
 
 ### columnSelected
 {:#columnselected}
-{:#columnSelected}
 
 
 
@@ -15511,7 +15260,6 @@ $("#Grid").ejGrid({
 
 ### columnSelecting
 {:#columnselecting}
-{:#columnSelecting}
 
 
 
@@ -15623,7 +15371,6 @@ $("#Grid").ejGrid({
 
 ### contextClick
 {:#contextclick}
-{:#contextClick}
 
 
 
@@ -15715,7 +15462,6 @@ $("#Grid").ejGrid({
 
 ### contextOpen
 {:#contextopen}
-{:#contextOpen}
 
 
 
@@ -15807,7 +15553,6 @@ $("#Grid").ejGrid({
 
 ### create
 {:#create}
-{:#create}
 
 
 
@@ -15884,7 +15629,6 @@ $("#Grid").ejGrid({
 
 ### dataBound
 {:#databound}
-{:#dataBound}
 
 
 
@@ -15960,7 +15704,6 @@ $("#Grid").ejGrid({
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 
@@ -16038,7 +15781,6 @@ $("#Grid").ejGrid({
 
 ### detailsCollapse
 {:#detailscollapse}
-{:#detailsCollapse}
 
 
 
@@ -16135,7 +15877,6 @@ $("#Grid").ejGrid({
 
 ### detailsDataBound
 {:#detailsdatabound}
-{:#detailsDataBound}
 
 
 
@@ -16222,7 +15963,6 @@ $("#Grid").ejGrid({
 
 ### detailsExpand
 {:#detailsexpand}
-{:#detailsExpand}
 
 
 
@@ -16320,7 +16060,6 @@ $("#Grid").ejGrid({
 
 ### endAdd
 {:#endadd}
-{:#endAdd}
 
 
 
@@ -16398,7 +16137,6 @@ $("#Grid").ejGrid({
 
 ### endDelete
 {:#enddelete}
-{:#endDelete}
 
 
 
@@ -16475,7 +16213,6 @@ $("#Grid").ejGrid({
 
 ### endEdit
 {:#endedit}
-{:#endEdit}
 
 
 
@@ -16553,7 +16290,6 @@ $("#Grid").ejGrid({
 
 ### load
 {:#load}
-{:#load}
 
 
 
@@ -16630,7 +16366,6 @@ $("#Grid").ejGrid({
 
 ### mergeCellInfo
 {:#mergecellinfo}
-{:#mergeCellInfo}
 
 
 
@@ -16742,7 +16477,6 @@ $("#Grid").ejGrid({
 
 ### queryCellInfo
 {:#querycellinfo}
-{:#queryCellInfo}
 
 
 
@@ -16844,7 +16578,6 @@ $("#Grid").ejGrid({
 
 ### recordClick
 {:#recordclick}
-{:#recordClick}
 
 
 
@@ -16941,7 +16674,6 @@ $("#Grid").ejGrid({
 
 ### recordDoubleClick
 {:#recorddoubleclick}
-{:#recordDoubleClick}
 
 
 
@@ -17037,7 +16769,6 @@ $("#Grid").ejGrid({
 
 
 ### resized
-{:#resized}
 {:#resized}
 
 
@@ -17140,7 +16871,6 @@ $("#Grid").ejGrid({
 
 ### resizeEnd
 {:#resizeend}
-{:#resizeEnd}
 
 
 
@@ -17247,7 +16977,6 @@ $("#Grid").ejGrid({
 
 ### resizeStart
 {:#resizestart}
-{:#resizeStart}
 
 
 
@@ -17344,7 +17073,6 @@ $("#Grid").ejGrid({
 
 ### rightClick
 {:#rightclick}
-{:#rightClick}
 
 
 
@@ -17456,7 +17184,6 @@ $("#Grid").ejGrid({
 
 ### rowDataBound
 {:#rowdatabound}
-{:#rowDataBound}
 
 
 
@@ -17549,7 +17276,6 @@ $("#Grid").ejGrid({
 
 ### rowSelected
 {:#rowselected}
-{:#rowSelected}
 
 
 
@@ -17657,7 +17383,6 @@ $("#Grid").ejGrid({
 
 ### rowSelecting
 {:#rowselecting}
-{:#rowSelecting}
 
 
 
@@ -17759,7 +17484,6 @@ $("#Grid").ejGrid({
 
 ### templateRefresh
 {:#templaterefresh}
-{:#templateRefresh}
 
 
 
@@ -17856,7 +17580,6 @@ $("#Grid").ejGrid({
 
 ### toolBarClick
 {:#toolbarclick}
-{:#toolBarClick}
 
 
 

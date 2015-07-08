@@ -63,7 +63,6 @@ Requires
 
 ### categoricalCurrentPage<span class="type-signature type number">number</span>
 {:#categoricalcurrentpage}
-{:#categoricalCurrentPage}
 
 
 
@@ -103,7 +102,6 @@ Example
 
 ### categoricalPageCount<span class="type-signature type number">number</span>
 {:#categoricalpagecount}
-{:#categoricalPageCount}
 
 
 
@@ -142,7 +140,6 @@ Example
 
 
 ### locale<span class="type-signature type string">string</span>
-{:#locale}
 {:#locale}
 
 
@@ -183,7 +180,6 @@ Example
 
 ### mode<span class="type-signature type enum">enum</span>
 {:#mode}
-{:#mode}
 
 
 
@@ -223,7 +219,6 @@ Example
 
 ### seriesCurrentPage<span class="type-signature type number">number</span>
 {:#seriescurrentpage}
-{:#seriesCurrentPage}
 
 
 
@@ -263,7 +258,6 @@ Example
 
 ### seriesPageCount<span class="type-signature type number">number</span>
 {:#seriespagecount}
-{:#seriesPageCount}
 
 
 
@@ -303,7 +297,6 @@ Example
 
 ### targetControlID<span class="type-signature type string">string</span>
 {:#targetcontrolid}
-{:#targetControlID}
 
 
 
@@ -347,7 +340,6 @@ Example
 
 ### initPagerProperties<span class="signature">()</span>
 {:#initpagerproperties}
-{:#initPagerProperties}
 
 
 
@@ -378,7 +370,6 @@ pagerObj.initPagerProperties(10, {CategorialPageSize: 1, SeriesPageSize: 1, Cate
 
 ### unwireEvents<span class="signature">()</span>
 {:#unwireevents}
-{:#unwireEvents}
 
 
 
@@ -409,7 +400,6 @@ pagerObj.unwireEvents();
 
 ### wireEvents<span class="signature">()</span>
 {:#wireevents}
-{:#wireEvents}
 
 
 

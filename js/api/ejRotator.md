@@ -90,7 +90,6 @@ Requires
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
 {:#allowkeyboardnavigation}
-{:#allowKeyboardNavigation}
 
 
 
@@ -146,7 +145,6 @@ Example
 
 ### animationSpeed<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#animationspeed}
-{:#animationSpeed}
 
 
 
@@ -202,7 +200,6 @@ Example
 
 ### animationType<span class="type-signature type string">string</span>
 {:#animationtype}
-{:#animationType}
 
 
 
@@ -258,7 +255,6 @@ Example
 
 ### circularMode<span class="type-signature type boolean">boolean</span>
 {:#circularmode}
-{:#circularMode}
 
 
 
@@ -314,7 +310,6 @@ Example
 
 ### cssClass<span class="type-signature type string">string</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -370,7 +365,6 @@ Example
 
 ### dataSource<span class="type-signature type object">object</span>
 {:#datasource}
-{:#dataSource}
 
 
 
@@ -420,7 +414,6 @@ Example
 
 
 ### delay<span class="type-signature type number">number</span>
-{:#delay}
 {:#delay}
 
 
@@ -477,7 +470,6 @@ Example
 
 ### displayItemsCount<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#displayitemscount}
-{:#displayItemsCount}
 
 
 
@@ -533,7 +525,6 @@ Example
 
 ### enableAutoPlay<span class="type-signature type boolean">boolean</span>
 {:#enableautoplay}
-{:#enableAutoPlay}
 
 
 
@@ -588,7 +579,6 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
 {:#enabled}
 
 
@@ -645,7 +635,6 @@ Example
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
 {:#enablertl}
-{:#enableRTL}
 
 
 
@@ -701,7 +690,6 @@ Example
 
 ### fields<span class="type-signature type object">object</span>
 {:#fields}
-{:#fields}
 
 
 
@@ -752,7 +740,6 @@ Example
 
 ### fields.linkAttribute<span class="type-signature type string">String</span>
 {:#fields-linkattribute}
-{:#fields-linkAttribute}
 
 
 
@@ -775,7 +762,6 @@ Specifies a link for the image.
 
 ### fields.targetAttribute<span class="type-signature type string">String</span>
 {:#fields-targetattribute}
-{:#fields-targetAttribute}
 
 
 
@@ -797,7 +783,6 @@ Specifies where to open a given link.
 
 
 ### fields.text<span class="type-signature type string">String</span>
-{:#fields-text}
 {:#fields-text}
 
 
@@ -821,7 +806,6 @@ Specifies a caption for the image.
 
 ### fields.thumbnailText<span class="type-signature type string">String</span>
 {:#fields-thumbnailtext}
-{:#fields-thumbnailText}
 
 
 
@@ -844,7 +828,6 @@ Specifies a caption for the thumbnail image.
 
 ### fields.thumbnailUrl<span class="type-signature type string">String</span>
 {:#fields-thumbnailurl}
-{:#fields-thumbnailUrl}
 
 
 
@@ -866,7 +849,6 @@ Specifies the URL for an thumbnail image.
 
 
 ### fields.url<span class="type-signature type string">String</span>
-{:#fields-url}
 {:#fields-url}
 
 
@@ -890,7 +872,6 @@ Specifies the URL for an image.
 
 ### frameSpace<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#framespace}
-{:#frameSpace}
 
 
 
@@ -946,7 +927,6 @@ Example
 
 ### isResponsive<span class="type-signature type boolean">boolean</span>
 {:#isresponsive}
-{:#isResponsive}
 
 
 
@@ -1002,7 +982,6 @@ Example
 
 ### navigateSteps<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#navigatesteps}
-{:#navigateSteps}
 
 
 
@@ -1057,7 +1036,6 @@ Example
 
 
 ### orientation<span class="type-signature type enum">enum</span>
-{:#orientation}
 {:#orientation}
 
 
@@ -1114,7 +1092,6 @@ Example
 
 ### pagerPosition<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
 {:#pagerposition}
-{:#pagerPosition}
 
 
 
@@ -1170,7 +1147,6 @@ Example
 
 ### query<span class="type-signature type string">string</span>
 {:#query}
-{:#query}
 
 
 
@@ -1209,7 +1185,6 @@ Default Value:
 
 ### showCaption<span class="type-signature type boolean">boolean</span>
 {:#showcaption}
-{:#showCaption}
 
 
 
@@ -1265,7 +1240,6 @@ Example
 
 ### showNavigateButton<span class="type-signature type boolean">boolean</span>
 {:#shownavigatebutton}
-{:#showNavigateButton}
 
 
 
@@ -1321,7 +1295,6 @@ Example
 
 ### showPager<span class="type-signature type boolean">boolean</span>
 {:#showpager}
-{:#showPager}
 
 
 
@@ -1377,7 +1350,6 @@ Example
 
 ### showPlayButton<span class="type-signature type boolean">boolean</span>
 {:#showplaybutton}
-{:#showPlayButton}
 
 
 
@@ -1433,7 +1405,6 @@ Example
 
 ### showThumbnail<span class="type-signature type boolean">boolean</span>
 {:#showthumbnail}
-{:#showThumbnail}
 
 
 
@@ -1497,7 +1468,6 @@ Example
 
 ### slideHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#slideheight}
-{:#slideHeight}
 
 
 
@@ -1553,7 +1523,6 @@ Example
 
 ### slideWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#slidewidth}
-{:#slideWidth}
 
 
 
@@ -1609,7 +1578,6 @@ Example
 
 ### startIndex<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#startindex}
-{:#startIndex}
 
 
 
@@ -1665,7 +1633,6 @@ Example
 
 ### stopOnHover<span class="type-signature type boolean">boolean</span>
 {:#stoponhover}
-{:#stopOnHover}
 
 
 
@@ -1721,7 +1688,6 @@ Example
 
 ### thumbnailSourceID<span class="type-signature type object">object</span>
 {:#thumbnailsourceid}
-{:#thumbnailSourceID}
 
 
 
@@ -1791,7 +1757,6 @@ Example
 
 ### disable<span class="signature">()</span>
 {:#disable}
-{:#disable}
 
 
 
@@ -1849,7 +1814,6 @@ $("#sliderContent").ejRotator();
 
 ### enable<span class="signature">()</span>
 {:#enable}
-{:#enable}
 
 
 
@@ -1906,7 +1870,6 @@ $("#sliderContent").ejRotator("enable");
 
 ### getIndex<span class="signature">()</span>
 {:#getindex}
-{:#getIndex}
 
 
 
@@ -1964,7 +1927,6 @@ $("#sliderContent").ejRotator();
 
 ### gotoIndex<span class="signature">(index)</span>
 {:#gotoindex}
-{:#gotoIndex}
 
 
 
@@ -2039,7 +2001,6 @@ $("#sliderContent").ejRotator();
 
 ### pause<span class="signature">()</span>
 {:#pause}
-{:#pause}
 
 
 
@@ -2096,7 +2057,6 @@ $("#sliderContent").ejRotator();
 
 
 ### play<span class="signature">()</span>
-{:#play}
 {:#play}
 
 
@@ -2155,7 +2115,6 @@ $("#sliderContent").ejRotator();
 
 ### slideNext<span class="signature">()</span>
 {:#slidenext}
-{:#slideNext}
 
 
 
@@ -2213,7 +2172,6 @@ $("#sliderContent").ejRotator();
 
 ### slidePrevious<span class="signature">()</span>
 {:#slideprevious}
-{:#slidePrevious}
 
 
 
@@ -2277,7 +2235,6 @@ $("#sliderContent").ejRotator();
 
 
 ### change
-{:#change}
 {:#change}
 
 
@@ -2372,7 +2329,6 @@ $("#sliderContent").ejRotator({
 
 ### create
 {:#create}
-{:#create}
 
 
 
@@ -2455,7 +2411,6 @@ $("#sliderContent").ejRotator({
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 
@@ -2540,7 +2495,6 @@ $("#sliderContent").ejRotator({
 
 ### pagerClick
 {:#pagerclick}
-{:#pagerClick}
 
 
 
@@ -2633,7 +2587,6 @@ $("#sliderContent").ejRotator({
 
 
 ### start
-{:#start}
 {:#start}
 
 
@@ -2728,7 +2681,6 @@ $("#sliderContent").ejRotator({
 
 ### stop
 {:#stop}
-{:#stop}
 
 
 
@@ -2822,7 +2774,6 @@ $("#sliderContent").ejRotator({
 
 ### thumbItemClick
 {:#thumbitemclick}
-{:#thumbItemClick}
 
 
 

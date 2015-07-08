@@ -73,7 +73,6 @@ Requires
 
 ### accept<span class="type-signature type object">object</span>
 {:#accept}
-{:#accept}
 
 
 
@@ -126,7 +125,6 @@ Example
 
 
 ### scope<span class="type-signature type string">string</span>
-{:#scope}
 {:#scope}
 
 
@@ -188,7 +186,6 @@ Example
 
 ### _destroy<span class="signature">()</span>
 {:#_destroy}
-{:#_destroy}
 
 
 
@@ -230,7 +227,6 @@ droppabaleObj.destroy();
 
 
 ### drop
-{:#drop}
 {:#drop}
 
 
@@ -290,7 +286,6 @@ $("#droppable").ejDroppable({
 
 ### out
 {:#out}
-{:#out}
 
 
 
@@ -348,7 +343,6 @@ $("#droppable").ejDroppable({
 
 
 ### over
-{:#over}
 {:#over}
 
 

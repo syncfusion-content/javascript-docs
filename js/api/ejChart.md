@@ -7,8 +7,6 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Chart.
-
 The chart can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
 
 
@@ -59,7 +57,6 @@ Requires
 
 ### annotations<span class="type-signature type array">array</span>
 {:#annotations}
-{:#annotations}
 
 
 
@@ -72,7 +69,6 @@ Contains properties for customizing the annotations in chart.
 
 
 ### annotations.angle<span class="type-signature type number">number</span>
-{:#annotations-angle}
 {:#annotations-angle}
 
 
@@ -108,7 +104,6 @@ annotations :[{ angle : 45}]
 
 ### annotations.content<span class="type-signature type string">string</span>
 {:#annotations-content}
-{:#annotations-content}
 
 
 
@@ -143,7 +138,6 @@ annotations :[{ content :"Template"}]
 
 ### annotations.coordinateUnit<span class="type-signature type enum">enum</span>
 {:#annotations-coordinateunit}
-{:#annotations-coordinateUnit}
 
 
 
@@ -178,7 +172,6 @@ annotations :[{ coordinateUnit :"pixels"}]
 
 ### annotations.horizontalAlignment<span class="type-signature type enum">enum</span>
 {:#annotations-horizontalalignment}
-{:#annotations-horizontalAlignment}
 
 
 
@@ -213,7 +206,6 @@ annotations :[{ horizontalAlignment :"left"}]
 
 ### annotations.margin<span class="type-signature type object">object</span>
 {:#annotations-margin}
-{:#annotations-margin}
 
 
 
@@ -226,7 +218,6 @@ Contains property to customize the margin values of annotation
 
 
 ### annotations.margin.bottom<span class="type-signature type number">number</span>
-{:#annotations-margin-bottom}
 {:#annotations-margin-bottom}
 
 
@@ -262,7 +253,6 @@ annotations :[{ margin :{ bottom:10}}]
 
 ### annotations.margin.left<span class="type-signature type number">number</span>
 {:#annotations-margin-left}
-{:#annotations-margin-left}
 
 
 
@@ -296,7 +286,6 @@ annotations :[{ margin :{ left:10}}]
 
 
 ### annotations.margin.right<span class="type-signature type number">number</span>
-{:#annotations-margin-right}
 {:#annotations-margin-right}
 
 
@@ -332,7 +321,6 @@ annotations :[{ margin :{ right:10}}]
 
 ### annotations.margin.top<span class="type-signature type number">number</span>
 {:#annotations-margin-top}
-{:#annotations-margin-top}
 
 
 
@@ -366,7 +354,6 @@ annotations :[{ margin :{ top:10}}]
 
 
 ### annotations.opacity<span class="type-signature type number">number</span>
-{:#annotations-opacity}
 {:#annotations-opacity}
 
 
@@ -402,7 +389,6 @@ annotations :[{ opacity : 0.5}]
 
 ### annotations.region<span class="type-signature type enum">enum</span>
 {:#annotations-region}
-{:#annotations-region}
 
 
 
@@ -437,7 +423,6 @@ annotations :[{ region :"series"}]
 
 ### annotations.verticalAlignment<span class="type-signature type enum">enum</span>
 {:#annotations-verticalalignment}
-{:#annotations-verticalAlignment}
 
 
 
@@ -471,7 +456,6 @@ annotations :[{ verticalAlignment :"top"}]
 
 
 ### annotations.visible<span class="type-signature type boolean">boolean</span>
-{:#annotations-visible}
 {:#annotations-visible}
 
 
@@ -507,7 +491,6 @@ annotations :[{ visible :true}]
 
 ### annotations.x<span class="type-signature type number">number</span>
 {:#annotations-x}
-{:#annotations-x}
 
 
 
@@ -542,7 +525,6 @@ annotations :[{ x : 100}]
 
 ### annotations.xAxisName<span class="type-signature type string">string</span>
 {:#annotations-xaxisname}
-{:#annotations-xAxisName}
 
 
 
@@ -576,7 +558,6 @@ annotations :[{ xAxisName : "xAxis1"}]
 
 
 ### annotations.y<span class="type-signature type number">number</span>
-{:#annotations-y}
 {:#annotations-y}
 
 
@@ -612,7 +593,6 @@ annotations :[{ y : 100}]
 
 ### annotations.yAxisName<span class="type-signature type string">string</span>
 {:#annotations-yaxisname}
-{:#annotations-yAxisName}
 
 
 
@@ -647,7 +627,6 @@ annotations :[{ yAxisName : "yAxis1"}]
 
 ### backGroundImageUrl<span class="type-signature type string">string</span>
 {:#backgroundimageurl}
-{:#backGroundImageUrl}
 
 
 
@@ -682,7 +661,6 @@ $("#container").ejChart({
 
 ### border<span class="type-signature type object">object</span>
 {:#border}
-{:#border}
 
 
 
@@ -695,7 +673,6 @@ Options for customizing the color, opacity and width of the border of chart.
 
 
 ### border.color<span class="type-signature type string">string</span>
-{:#border-color}
 {:#border-color}
 
 
@@ -731,7 +708,6 @@ $("#container").ejChart({
 
 ### border.opacity<span class="type-signature type number">number</span>
 {:#border-opacity}
-{:#border-opacity}
 
 
 
@@ -765,7 +741,6 @@ $("#container").ejChart({
 
 
 ### border.width<span class="type-signature type number">number</span>
-{:#border-width}
 {:#border-width}
 
 
@@ -801,7 +776,6 @@ $("#container").ejChart({
 
 ### canResize<span class="type-signature type boolean">boolean</span>
 {:#canresize}
-{:#canResize}
 
 
 
@@ -836,7 +810,6 @@ canResize : true
 
 ### chartArea<span class="type-signature type object">object</span>
 {:#chartarea}
-{:#chartArea}
 
 
 
@@ -850,7 +823,6 @@ Specifies options for configuring the border and background for chart plotting a
 
 ### chartArea.background<span class="type-signature type string">string</span>
 {:#chartarea-background}
-{:#chartArea-background}
 
 
 
@@ -885,7 +857,6 @@ $("#container").ejChart({
 
 ### chartArea.border<span class="type-signature type object">object</span>
 {:#chartarea-border}
-{:#chartArea-border}
 
 
 
@@ -899,7 +870,6 @@ Options for customizing the color, opacity and width of the border of chart plot
 
 ### chartArea.border.color<span class="type-signature type string">string</span>
 {:#chartarea-border-color}
-{:#chartArea-border-color}
 
 
 
@@ -934,7 +904,6 @@ $("#container").ejChart({
 
 ### chartArea.border.opacity<span class="type-signature type number">number</span>
 {:#chartarea-border-opacity}
-{:#chartArea-border-opacity}
 
 
 
@@ -969,7 +938,6 @@ $("#container").ejChart({
 
 ### chartArea.border.width<span class="type-signature type number">number</span>
 {:#chartarea-border-width}
-{:#chartArea-border-width}
 
 
 
@@ -1004,7 +972,6 @@ $("#container").ejChart({
 
 ### columnDefinitions<span class="type-signature type array">array</span>
 {:#columndefinitions}
-{:#columnDefinitions}
 
 
 
@@ -1030,7 +997,6 @@ $("#container").ejChart({
 
 ### commonSeriesOptions<span class="type-signature type object">object</span>
 {:#commonseriesoptions}
-{:#commonSeriesOptions}
 
 
 
@@ -1044,7 +1010,6 @@ Options for configuring the properties commonly for all the series. You can also
 
 ### commonSeriesOptions.border<span class="type-signature type object">object</span>
 {:#commonseriesoptions-border}
-{:#commonSeriesOptions-border}
 
 
 
@@ -1058,7 +1023,6 @@ Options for customizing the color, opacity and width of the border of series.
 
 ### commonSeriesOptions.border.color<span class="type-signature type string">string</span>
 {:#commonseriesoptions-border-color}
-{:#commonSeriesOptions-border-color}
 
 
 
@@ -1093,7 +1057,6 @@ commonSeriesOptions :{border :{ color : "green" } }
 
 ### commonSeriesOptions.border.width<span class="type-signature type number">number</span>
 {:#commonseriesoptions-border-width}
-{:#commonSeriesOptions-border-width}
 
 
 
@@ -1128,7 +1091,6 @@ commonSeriesOptions :{border :{ width : 2 } }
 
 ### commonSeriesOptions.dashArray<span class="type-signature type string">string</span>
 {:#commonseriesoptions-dasharray}
-{:#commonSeriesOptions-dashArray}
 
 
 
@@ -1163,7 +1125,6 @@ commonSeriesOptions :{dashArray : "2,3"}
 
 ### commonSeriesOptions.dataSource<span class="type-signature type object">object</span>
 {:#commonseriesoptions-datasource}
-{:#commonSeriesOptions-dataSource}
 
 
 
@@ -1198,7 +1159,6 @@ commonSeriesOptions : {dataSource: data.open }
 
 ### commonSeriesOptions.doughnutCoefficient<span class="type-signature type number">number</span>
 {:#commonseriesoptions-doughnutcoefficient}
-{:#commonSeriesOptions-doughnutCoefficient}
 
 
 
@@ -1233,7 +1193,6 @@ commonSeriesOptions :{ doughnutCoefficient : 0.5}
 
 ### commonSeriesOptions.doughnutSize<span class="type-signature type number">number</span>
 {:#commonseriesoptions-doughnutsize}
-{:#commonSeriesOptions-doughnutSize}
 
 
 
@@ -1268,7 +1227,6 @@ commonSeriesOptions :{ doughnutSize : 0.9}
 
 ### commonSeriesOptions.drawType<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-drawtype}
-{:#commonSeriesOptions-drawType}
 
 
 
@@ -1303,7 +1261,6 @@ commonSeriesOptions :{ drawType : "area"}
 
 ### commonSeriesOptions.enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-enableanimation}
-{:#commonSeriesOptions-enableAnimation}
 
 
 
@@ -1338,7 +1295,6 @@ commonSeriesOptions :{ enableAnimation : false}
 
 ### commonSeriesOptions.enableSmartLabels<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-enablesmartlabels}
-{:#commonSeriesOptions-enableSmartLabels}
 
 
 
@@ -1373,7 +1329,6 @@ commonSeriesOptions :{ enableSmartLabels : false}
 
 ### commonSeriesOptions.endAngle<span class="type-signature type number">number</span>
 {:#commonseriesoptions-endangle}
-{:#commonSeriesOptions-endAngle}
 
 
 
@@ -1408,7 +1363,6 @@ commonSeriesOptions :{ endAngle : 270}
 
 ### commonSeriesOptions.explode<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-explode}
-{:#commonSeriesOptions-explode}
 
 
 
@@ -1443,7 +1397,6 @@ commonSeriesOptions :{ explode : true}
 
 ### commonSeriesOptions.explodeAll<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-explodeall}
-{:#commonSeriesOptions-explodeAll}
 
 
 
@@ -1478,7 +1431,6 @@ commonSeriesOptions :{ explodeAll : true}
 
 ### commonSeriesOptions.explodeIndex<span class="type-signature type number">number</span>
 {:#commonseriesoptions-explodeindex}
-{:#commonSeriesOptions-explodeIndex}
 
 
 
@@ -1513,7 +1465,6 @@ commonSeriesOptions :{ explodeIndex : 2}
 
 ### commonSeriesOptions.explodeOffset<span class="type-signature type number">number</span>
 {:#commonseriesoptions-explodeoffset}
-{:#commonSeriesOptions-explodeOffset}
 
 
 
@@ -1548,7 +1499,6 @@ commonSeriesOptions :{ explodeOffset : 20}
 
 ### commonSeriesOptions.fill<span class="type-signature type string">string</span>
 {:#commonseriesoptions-fill}
-{:#commonSeriesOptions-fill}
 
 
 
@@ -1583,7 +1533,6 @@ commonSeriesOptions :{fill : "green"}
 
 ### commonSeriesOptions.font<span class="type-signature type object">object</span>
 {:#commonseriesoptions-font}
-{:#commonSeriesOptions-font}
 
 
 
@@ -1597,7 +1546,6 @@ Specifies the font that is common to all series. These are the properties involv
 
 ### commonSeriesOptions.font.color<span class="type-signature type string">string</span>
 {:#commonseriesoptions-font-color}
-{:#commonSeriesOptions-font-color}
 
 
 
@@ -1632,7 +1580,6 @@ commonSeriesOptions :{font :{color : "green"}}
 
 ### commonSeriesOptions.font.fontFamily<span class="type-signature type string">string</span>
 {:#commonseriesoptions-font-fontfamily}
-{:#commonSeriesOptions-font-fontFamily}
 
 
 
@@ -1667,7 +1614,6 @@ commonSeriesOptions :{ font : { fontFamily : "Algerian"}}
 
 ### commonSeriesOptions.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-font-fontstyle}
-{:#commonSeriesOptions-font-fontStyle}
 
 
 
@@ -1702,7 +1648,6 @@ commonSeriesOptions : {font :{fontStyle : "italic"}}
 
 ### commonSeriesOptions.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-font-fontweight}
-{:#commonSeriesOptions-font-fontWeight}
 
 
 
@@ -1737,7 +1682,6 @@ commonSeriesOptions :{font :{fontWeight : "lighter"}}
 
 ### commonSeriesOptions.font.opacity<span class="type-signature type number">number</span>
 {:#commonseriesoptions-font-opacity}
-{:#commonSeriesOptions-font-opacity}
 
 
 
@@ -1772,7 +1716,6 @@ commonSeriesOptions :{font :{opacity : 0.5}}
 
 ### commonSeriesOptions.font.size<span class="type-signature type string">string</span>
 {:#commonseriesoptions-font-size}
-{:#commonSeriesOptions-font-size}
 
 
 
@@ -1807,7 +1750,6 @@ commonSeriesOptions :{font :{size : "14px"}}
 
 ### commonSeriesOptions.funnelHeight
 {:#commonseriesoptions-funnelheight}
-{:#commonSeriesOptions-funnelHeight}
 
 
 
@@ -1842,7 +1784,6 @@ series : [{funnelHeight : '40%' }]
 
 ### commonSeriesOptions.funnelWidth
 {:#commonseriesoptions-funnelwidth}
-{:#commonSeriesOptions-funnelWidth}
 
 
 
@@ -1877,7 +1818,6 @@ series : [{funnelWidth : '40%' }]
 
 ### commonSeriesOptions.gapRatio<span class="type-signature type number">number</span>
 {:#commonseriesoptions-gapratio}
-{:#commonSeriesOptions-gapRatio}
 
 
 
@@ -1912,7 +1852,6 @@ commonSeriesOptions :{ gapRatio : 0.5}
 
 ### commonSeriesOptions.isClosed<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-isclosed}
-{:#commonSeriesOptions-isClosed}
 
 
 
@@ -1947,7 +1886,6 @@ commonSeriesOptions :{ isClosed : false}
 
 ### commonSeriesOptions.isStacking<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-isstacking}
-{:#commonSeriesOptions-isStacking}
 
 
 
@@ -1982,7 +1920,6 @@ commonSeriesOptions :{ isStacking : "true"}
 
 ### commonSeriesOptions.labelPosition<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-labelposition}
-{:#commonSeriesOptions-labelPosition}
 
 
 
@@ -2017,7 +1954,6 @@ commonSeriesOptions :{ labelPosition : "outside"}
 
 ### commonSeriesOptions.lineCap<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-linecap}
-{:#commonSeriesOptions-lineCap}
 
 
 
@@ -2052,7 +1988,6 @@ commonSeriesOptions :{lineCap : "butt"}
 
 ### commonSeriesOptions.lineJoin<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-linejoin}
-{:#commonSeriesOptions-lineJoin}
 
 
 
@@ -2087,7 +2022,6 @@ commonSeriesOptions :{lineCap : "round"}
 
 ### commonSeriesOptions.marker<span class="type-signature type object">object</span>
 {:#commonseriesoptions-marker}
-{:#commonSeriesOptions-marker}
 
 
 
@@ -2101,7 +2035,6 @@ Contains the customizing properties to add marker symbols to the points plotted 
 
 ### commonSeriesOptions.marker.border<span class="type-signature type object">object</span>
 {:#commonseriesoptions-marker-border}
-{:#commonSeriesOptions-marker-border}
 
 
 
@@ -2115,7 +2048,6 @@ Options for customizing the color, opacity and width of the border of marker.
 
 ### commonSeriesOptions.marker.border.color<span class="type-signature type string">string</span>
 {:#commonseriesoptions-marker-border-color}
-{:#commonSeriesOptions-marker-border-color}
 
 
 
@@ -2150,7 +2082,6 @@ commonSeriesOptions :{color : "green"}
 
 ### commonSeriesOptions.marker.border.width<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-border-width}
-{:#commonSeriesOptions-marker-border-width}
 
 
 
@@ -2185,7 +2116,6 @@ commonSeriesOptions :{marker :{border :{width : 2}}}
 
 ### commonSeriesOptions.marker.dataLabel<span class="type-signature type object">object</span>
 {:#commonseriesoptions-marker-datalabel}
-{:#commonSeriesOptions-marker-dataLabel}
 
 
 
@@ -2199,7 +2129,6 @@ Contains the customizing properties to add data labels of the points plotted in 
 
 ### commonSeriesOptions.marker.dataLabel.angle<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-angle}
-{:#commonSeriesOptions-marker-dataLabel-angle}
 
 
 
@@ -2234,7 +2163,6 @@ commonSeriesOptions :{marker :{dataLabel :{angle : 90}}
 
 ### commonSeriesOptions.marker.dataLabel.border<span class="type-signature type object">object</span>
 {:#commonseriesoptions-marker-datalabel-border}
-{:#commonSeriesOptions-marker-dataLabel-border}
 
 
 
@@ -2248,7 +2176,6 @@ Options for customizing the color, opacity and width of the border of datalabel.
 
 ### commonSeriesOptions.marker.dataLabel.border.color<span class="type-signature type string">string</span>
 {:#commonseriesoptions-marker-datalabel-border-color}
-{:#commonSeriesOptions-marker-dataLabel-border-color}
 
 
 
@@ -2283,7 +2210,6 @@ commonSeriesOptions :{marker :{dataLabel :{border : {color : "green"}}}}
 
 ### commonSeriesOptions.marker.dataLabel.border.width<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-border-width}
-{:#commonSeriesOptions-marker-dataLabel-border-width}
 
 
 
@@ -2318,7 +2244,6 @@ commonSeriesOptions :{marker :{dataLabel :{border :{ width :2 }}}}
 
 ### commonSeriesOptions.marker.dataLabel.connectorLine<span class="type-signature type object">object</span>
 {:#commonseriesoptions-marker-datalabel-connectorline}
-{:#commonSeriesOptions-marker-dataLabel-connectorLine}
 
 
 
@@ -2332,7 +2257,6 @@ Contains the options to customize the line connecting the point and the data lab
 
 ### commonSeriesOptions.marker.dataLabel.connectorLine.type<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-marker-datalabel-connectorline-type}
-{:#commonSeriesOptions-marker-dataLabel-connectorLine-type}
 
 
 
@@ -2367,7 +2291,6 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ type : "spline" }}}}
 
 ### commonSeriesOptions.marker.dataLabel.connectorLine.width<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-connectorline-width}
-{:#commonSeriesOptions-marker-dataLabel-connectorLine-width}
 
 
 
@@ -2402,7 +2325,6 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ width : 2 }}}}
 
 ### commonSeriesOptions.marker.dataLabel.fill<span class="type-signature type string">string</span>
 {:#commonseriesoptions-marker-datalabel-fill}
-{:#commonSeriesOptions-marker-dataLabel-fill}
 
 
 
@@ -2437,7 +2359,6 @@ commonSeriesOptions :{marker :{dataLabel :{fill : "green"}}}
 
 ### commonSeriesOptions.marker.dataLabel.font<span class="type-signature type object">object</span>
 {:#commonseriesoptions-marker-datalabel-font}
-{:#commonSeriesOptions-marker-dataLabel-font}
 
 
 
@@ -2451,7 +2372,6 @@ Specifies the font of the dataLabel. These are the properties involved in custom
 
 ### commonSeriesOptions.marker.dataLabel.font.fontFamily<span class="type-signature type string">string</span>
 {:#commonseriesoptions-marker-datalabel-font-fontfamily}
-{:#commonSeriesOptions-marker-dataLabel-font-fontFamily}
 
 
 
@@ -2486,7 +2406,6 @@ commonSeriesOptions :{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}
 
 ### commonSeriesOptions.marker.dataLabel.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-marker-datalabel-font-fontstyle}
-{:#commonSeriesOptions-marker-dataLabel-font-fontStyle}
 
 
 
@@ -2521,7 +2440,6 @@ commonSeriesOptions :{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}
 
 ### commonSeriesOptions.marker.dataLabel.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-marker-datalabel-font-fontweight}
-{:#commonSeriesOptions-marker-dataLabel-font-fontWeight}
 
 
 
@@ -2556,7 +2474,6 @@ commonSeriesOptions :{marker :{dataLabel :{font : { fontWeight : "lighter" }}}}
 
 ### commonSeriesOptions.marker.dataLabel.font.opacity<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-font-opacity}
-{:#commonSeriesOptions-marker-dataLabel-font-opacity}
 
 
 
@@ -2591,7 +2508,6 @@ commonSeriesOptions :{marker :{dataLabel :{font :{ opacity : 0.5 }}}}
 
 ### commonSeriesOptions.marker.dataLabel.font.size<span class="type-signature type string">string</span>
 {:#commonseriesoptions-marker-datalabel-font-size}
-{:#commonSeriesOptions-marker-dataLabel-font-size}
 
 
 
@@ -2626,7 +2542,6 @@ commonSeriesOptions :{marker :{dataLabel :{font : { size : "14px" }}}}
 
 ### commonSeriesOptions.marker.dataLabel.horizontalTextAlignment<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-marker-datalabel-horizontaltextalignment}
-{:#commonSeriesOptions-marker-dataLabel-horizontalTextAlignment}
 
 
 
@@ -2661,7 +2576,6 @@ commonSeriesOptions :{marker :{dataLabel :{horizontalTextAlignment : "far"}}}
 
 ### commonSeriesOptions.marker.dataLabel.margin<span class="type-signature type object">object</span>
 {:#commonseriesoptions-marker-datalabel-margin}
-{:#commonSeriesOptions-marker-dataLabel-margin}
 
 
 
@@ -2675,7 +2589,6 @@ Specifies the margin for the data label.
 
 ### commonSeriesOptions.marker.dataLabel.margin.bottom<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-margin-bottom}
-{:#commonSeriesOptions-marker-dataLabel-margin-bottom}
 
 
 
@@ -2710,7 +2623,6 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ bottom :10 }}}}
 
 ### commonSeriesOptions.marker.dataLabel.margin.left<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-margin-left}
-{:#commonSeriesOptions-marker-dataLabel-margin-left}
 
 
 
@@ -2745,7 +2657,6 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ left : 10}}}}
 
 ### commonSeriesOptions.marker.dataLabel.margin.right<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-margin-right}
-{:#commonSeriesOptions-marker-dataLabel-margin-right}
 
 
 
@@ -2780,7 +2691,6 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ right :10 }}}}
 
 ### commonSeriesOptions.marker.dataLabel.margin.top<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-margin-top}
-{:#commonSeriesOptions-marker-dataLabel-margin-top}
 
 
 
@@ -2815,7 +2725,6 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ top :10 } }}}
 
 ### commonSeriesOptions.marker.dataLabel.opacity<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-datalabel-opacity}
-{:#commonSeriesOptions-marker-dataLabel-opacity}
 
 
 
@@ -2850,7 +2759,6 @@ commonSeriesOptions :{marker :{dataLabel :{opacity : 0.5}}}
 
 ### commonSeriesOptions.marker.dataLabel.shape<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-marker-datalabel-shape}
-{:#commonSeriesOptions-marker-dataLabel-shape}
 
 
 
@@ -2885,7 +2793,6 @@ commonSeriesOptions :{marker :{dataLabel :{shape : "circle"}}}
 
 ### commonSeriesOptions.marker.dataLabel.textPosition<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-marker-datalabel-textposition}
-{:#commonSeriesOptions-marker-dataLabel-textPosition}
 
 
 
@@ -2920,7 +2827,6 @@ commonSeriesOptions :{marker :{dataLabel :{textPosition : "bottom"}}}
 
 ### commonSeriesOptions.marker.dataLabel.verticalTextAlignment<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-marker-datalabel-verticaltextalignment}
-{:#commonSeriesOptions-marker-dataLabel-verticalTextAlignment}
 
 
 
@@ -2955,7 +2861,6 @@ commonSeriesOptions :{marker :{dataLabel :{verticalTextAlignment : "far"}}}
 
 ### commonSeriesOptions.marker.dataLabel.visible<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-marker-datalabel-visible}
-{:#commonSeriesOptions-marker-dataLabel-visible}
 
 
 
@@ -2990,7 +2895,6 @@ commonSeriesOptions :{marker :{dataLabel :{visible : true}}
 
 ### commonSeriesOptions.marker.fill<span class="type-signature type string">string</span>
 {:#commonseriesoptions-marker-fill}
-{:#commonSeriesOptions-marker-fill}
 
 
 
@@ -3025,7 +2929,6 @@ commonSeriesOptions :{marker : { fill : "green" } }
 
 ### commonSeriesOptions.marker.imageUrl<span class="type-signature type string">string</span>
 {:#commonseriesoptions-marker-imageurl}
-{:#commonSeriesOptions-marker-imageUrl}
 
 
 
@@ -3060,7 +2963,6 @@ commonSeriesOptions :{marker :{ imageUrl: "../images/sample.png"}}
 
 ### commonSeriesOptions.marker.opacity<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-opacity}
-{:#commonSeriesOptions-marker-opacity}
 
 
 
@@ -3095,7 +2997,6 @@ commonSeriesOptions :{marker :{ opacity : 0.5 }}
 
 ### commonSeriesOptions.marker.shape<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-marker-shape}
-{:#commonSeriesOptions-marker-shape}
 
 
 
@@ -3130,7 +3031,6 @@ commonSeriesOptions :{marker :{ shape: "rectangle"}
 
 ### commonSeriesOptions.marker.size<span class="type-signature type object">object</span>
 {:#commonseriesoptions-marker-size}
-{:#commonSeriesOptions-marker-size}
 
 
 
@@ -3144,7 +3044,6 @@ Specifies the size of the marker.
 
 ### commonSeriesOptions.marker.size.height<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-size-height}
-{:#commonSeriesOptions-marker-size-height}
 
 
 
@@ -3179,7 +3078,6 @@ commonSeriesOptions :{marker :{size :{height : 5}}}
 
 ### commonSeriesOptions.marker.size.width<span class="type-signature type number">number</span>
 {:#commonseriesoptions-marker-size-width}
-{:#commonSeriesOptions-marker-size-width}
 
 
 
@@ -3214,7 +3112,6 @@ commonSeriesOptions :{marker :{ size :{ width : 2 } } }
 
 ### commonSeriesOptions.marker.visible<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-marker-visible}
-{:#commonSeriesOptions-marker-visible}
 
 
 
@@ -3249,7 +3146,6 @@ commonSeriesOptions :{marker :{ visible : true}}
 
 ### commonSeriesOptions.opacity<span class="type-signature type number">number</span>
 {:#commonseriesoptions-opacity}
-{:#commonSeriesOptions-opacity}
 
 
 
@@ -3284,7 +3180,6 @@ commonSeriesOptions :{opacity : 0.5}
 
 ### commonSeriesOptions.pieCoefficient<span class="type-signature type number">number</span>
 {:#commonseriesoptions-piecoefficient}
-{:#commonSeriesOptions-pieCoefficient}
 
 
 
@@ -3319,7 +3214,6 @@ commonSeriesOptions :{ pieCoefficient : 1}
 
 ### commonSeriesOptions.pyramidMode<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-pyramidmode}
-{:#commonSeriesOptions-pyramidMode}
 
 
 
@@ -3354,7 +3248,6 @@ commonSeriesOptions :{ pyramidMode : "linear"}
 
 ### commonSeriesOptions.startAngle<span class="type-signature type number">number</span>
 {:#commonseriesoptions-startangle}
-{:#commonSeriesOptions-startAngle}
 
 
 
@@ -3389,7 +3282,6 @@ commonSeriesOptions :{ startAngle : 150}
 
 ### commonSeriesOptions.tooltip<span class="type-signature type object">object</span>
 {:#commonseriesoptions-tooltip}
-{:#commonSeriesOptions-tooltip}
 
 
 
@@ -3403,7 +3295,6 @@ Contains all the properties to customize tooltip
 
 ### commonSeriesOptions.tooltip.border<span class="type-signature type object">object</span>
 {:#commonseriesoptions-tooltip-border}
-{:#commonSeriesOptions-tooltip-border}
 
 
 
@@ -3417,7 +3308,6 @@ Options for customizing the color, opacity and width of the border of tooltip.
 
 ### commonSeriesOptions.tooltip.border.color<span class="type-signature type string">string</span>
 {:#commonseriesoptions-tooltip-border-color}
-{:#commonSeriesOptions-tooltip-border-color}
 
 
 
@@ -3452,7 +3342,6 @@ commonSeriesOptions :{tooltip :{border:{ color : "green" }}}
 
 ### commonSeriesOptions.tooltip.border.width<span class="type-signature type number">number</span>
 {:#commonseriesoptions-tooltip-border-width}
-{:#commonSeriesOptions-tooltip-border-width}
 
 
 
@@ -3487,7 +3376,6 @@ commonSeriesOptions :{tooltip :{border :{ width : 2}}}
 
 ### commonSeriesOptions.tooltip.duration<span class="type-signature type string">string</span>
 {:#commonseriesoptions-tooltip-duration}
-{:#commonSeriesOptions-tooltip-duration}
 
 
 
@@ -3522,7 +3410,6 @@ commonSeriesOptions :{tooltip :{duration : "300ms"}}
 
 ### commonSeriesOptions.tooltip.enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-tooltip-enableanimation}
-{:#commonSeriesOptions-tooltip-enableAnimation}
 
 
 
@@ -3557,7 +3444,6 @@ commonSeriesOptions :{tooltip :{enableAnimation : false}}
 
 ### commonSeriesOptions.tooltip.fill<span class="type-signature type string">string</span>
 {:#commonseriesoptions-tooltip-fill}
-{:#commonSeriesOptions-tooltip-fill}
 
 
 
@@ -3592,7 +3478,6 @@ commonSeriesOptions :{tooltip :{fill : "green"}}
 
 ### commonSeriesOptions.tooltip.format<span class="type-signature type string">string</span>
 {:#commonseriesoptions-tooltip-format}
-{:#commonSeriesOptions-tooltip-format}
 
 
 
@@ -3627,7 +3512,6 @@ commonSeriesOptions :{ tooltip : { format : "#point.x# : #point.y#%" } }
 
 ### commonSeriesOptions.tooltip.opacity<span class="type-signature type number">number</span>
 {:#commonseriesoptions-tooltip-opacity}
-{:#commonSeriesOptions-tooltip-opacity}
 
 
 
@@ -3662,7 +3546,6 @@ commonSeriesOptions :{tooltip :{opacity : 0.5}}
 
 ### commonSeriesOptions.tooltip.template<span class="type-signature type string">string</span>
 {:#commonseriesoptions-tooltip-template}
-{:#commonSeriesOptions-tooltip-template}
 
 
 
@@ -3697,7 +3580,6 @@ commonSeriesOptions :{ tooltip: { template : "item" }}
 
 ### commonSeriesOptions.tooltip.visible<span class="type-signature type boolean">boolean</span>
 {:#commonseriesoptions-tooltip-visible}
-{:#commonSeriesOptions-tooltip-visible}
 
 
 
@@ -3732,7 +3614,6 @@ commonSeriesOptions :{ tooltip :{visible : true} }
 
 ### commonSeriesOptions.type<span class="type-signature type enum">enum</span>
 {:#commonseriesoptions-type}
-{:#commonSeriesOptions-type}
 
 
 
@@ -3767,7 +3648,6 @@ commonSeriesOptions :{ type : "spline"}
 
 ### commonSeriesOptions.xAxisName<span class="type-signature type string">string</span>
 {:#commonseriesoptions-xaxisname}
-{:#commonSeriesOptions-xAxisName}
 
 
 
@@ -3802,7 +3682,6 @@ commonSeriesOptions :{ xAxisName : "xAxis"}
 
 ### commonSeriesOptions.xName<span class="type-signature type string">string</span>
 {:#commonseriesoptions-xname}
-{:#commonSeriesOptions-xName}
 
 
 
@@ -3837,7 +3716,6 @@ commonSeriesOptions : {xName: "XValue" }
 
 ### commonSeriesOptions.yAxisName<span class="type-signature type string">string</span>
 {:#commonseriesoptions-yaxisname}
-{:#commonSeriesOptions-yAxisName}
 
 
 
@@ -3872,7 +3750,6 @@ commonSeriesOptions :{ yAxisName : "yAxis"}
 
 ### commonSeriesOptions.yName<span class="type-signature type string">string</span>
 {:#commonseriesoptions-yname}
-{:#commonSeriesOptions-yName}
 
 
 
@@ -3907,7 +3784,6 @@ commonSeriesOptions :{yName: "XValue" }
 
 ### crosshair<span class="type-signature type object">object</span>
 {:#crosshair}
-{:#crosshair}
 
 
 
@@ -3920,7 +3796,6 @@ Contains the properties to customize crosshair or trackball.
 
 
 ### crosshair.marker<span class="type-signature type object">object</span>
-{:#crosshair-marker}
 {:#crosshair-marker}
 
 
@@ -3935,7 +3810,6 @@ Contains property to customize the marker in crosshair.
 
 ### crosshair.marker.border<span class="type-signature type object">object</span>
 {:#crosshair-marker-border}
-{:#crosshair-marker-border}
 
 
 
@@ -3948,7 +3822,6 @@ Options for customizing the width of the border of marker.
 
 
 ### crosshair.marker.border.width<span class="type-signature type number">number</span>
-{:#crosshair-marker-border-width}
 {:#crosshair-marker-border-width}
 
 
@@ -3984,7 +3857,6 @@ crosshair :{marker :{border :{ width :2 }}}
 
 ### crosshair.marker.opacity<span class="type-signature type boolean">boolean</span>
 {:#crosshair-marker-opacity}
-{:#crosshair-marker-opacity}
 
 
 
@@ -4019,7 +3891,6 @@ crosshair :{marker :{opacity :2}}
 
 ### crosshair.marker.size<span class="type-signature type object">object</span>
 {:#crosshair-marker-size}
-{:#crosshair-marker-size}
 
 
 
@@ -4032,7 +3903,6 @@ Contains property to customize the size of marker.
 
 
 ### crosshair.marker.size.height<span class="type-signature type number">number</span>
-{:#crosshair-marker-size-height}
 {:#crosshair-marker-size-height}
 
 
@@ -4068,7 +3938,6 @@ crosshair :{marker :{size :{ height :15 }}}
 
 ### crosshair.marker.size.width<span class="type-signature type number">number</span>
 {:#crosshair-marker-size-width}
-{:#crosshair-marker-size-width}
 
 
 
@@ -4102,7 +3971,6 @@ crosshair :{marker :{size : {width :15}}}
 
 
 ### crosshair.marker.visible<span class="type-signature type boolean">boolean</span>
-{:#crosshair-marker-visible}
 {:#crosshair-marker-visible}
 
 
@@ -4138,7 +4006,6 @@ crosshair :{marker :{visible :false}}
 
 ### crosshair.type<span class="type-signature type enum">enum</span>
 {:#crosshair-type}
-{:#crosshair-type}
 
 
 
@@ -4172,7 +4039,6 @@ crosshair :{type : "trackball"}
 
 
 ### crosshair.visible<span class="type-signature type boolean">boolean</span>
-{:#crosshair-visible}
 {:#crosshair-visible}
 
 
@@ -4208,7 +4074,6 @@ crosshair :{visible :true}
 
 ### depth<span class="type-signature type number">number</span>
 {:#depth}
-{:#depth}
 
 
 
@@ -4243,7 +4108,6 @@ depth : 100
 
 ### enable3D<span class="type-signature type boolean">boolean</span>
 {:#enable3d}
-{:#enable3D}
 
 
 
@@ -4278,7 +4142,6 @@ enable3D : true
 
 ### enableCanvasRendering<span class="type-signature type boolean">boolean</span>
 {:#enablecanvasrendering}
-{:#enableCanvasRendering}
 
 
 
@@ -4313,7 +4176,6 @@ enableCanvasRendering : true
 
 ### enableRotation<span class="type-signature type boolean">boolean</span>
 {:#enablerotation}
-{:#enableRotation}
 
 
 
@@ -4348,7 +4210,6 @@ enableRotation : true
 
 ### indicators<span class="type-signature type array">array</span>
 {:#indicators}
-{:#indicators}
 
 
 
@@ -4362,7 +4223,6 @@ Contains properties for customizing the technical indicators.
 
 ### indicators.dPeriod<span class="type-signature type number">number</span>
 {:#indicators-dperiod}
-{:#indicators-dPeriod}
 
 
 
@@ -4397,7 +4257,6 @@ indicators :[{ dPeriod : 4}]
 
 ### indicators.enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#indicators-enableanimation}
-{:#indicators-enableAnimation}
 
 
 
@@ -4431,7 +4290,6 @@ indicators :[{ enableAnimation :  true}]
 
 
 ### indicators.fill<span class="type-signature type string">string</span>
-{:#indicators-fill}
 {:#indicators-fill}
 
 
@@ -4467,7 +4325,6 @@ indicators :[{ fill : "#ff0000"}]
 
 ### indicators.font<span class="type-signature type object">object</span>
 {:#indicators-font}
-{:#indicators-font}
 
 
 
@@ -4480,7 +4337,6 @@ Contains property to customize the font of the text in indicator.
 
 
 ### indicators.font.color<span class="type-signature type string">string</span>
-{:#indicators-font-color}
 {:#indicators-font-color}
 
 
@@ -4516,7 +4372,6 @@ indicators :[{ font :{ color: "#ff00ff" }}]
 
 ### indicators.font.fontFamily<span class="type-signature type string">string</span>
 {:#indicators-font-fontfamily}
-{:#indicators-font-fontFamily}
 
 
 
@@ -4551,7 +4406,6 @@ indicators :[{ font :{ fontFamily: "Algerian" }}]
 
 ### indicators.font.fontStyle<span class="type-signature type string">string</span>
 {:#indicators-font-fontstyle}
-{:#indicators-font-fontStyle}
 
 
 
@@ -4586,7 +4440,6 @@ indicators :[{ font :{ fontStyle: "Italic" }}]
 
 ### indicators.font.fontWeight<span class="type-signature type string">string</span>
 {:#indicators-font-fontweight}
-{:#indicators-font-fontWeight}
 
 
 
@@ -4620,7 +4473,6 @@ indicators :[{ font :{ fontWeight: "Regular" }}]
 
 
 ### indicators.font.opacity<span class="type-signature type number">number</span>
-{:#indicators-font-opacity}
 {:#indicators-font-opacity}
 
 
@@ -4656,7 +4508,6 @@ indicators :[{ font :{ opacity: 1 }}]
 
 ### indicators.font.size<span class="type-signature type string">string</span>
 {:#indicators-font-size}
-{:#indicators-font-size}
 
 
 
@@ -4691,7 +4542,6 @@ indicators :[{ font :{ size: "14px" }}]
 
 ### indicators.histogram<span class="type-signature type object">object</span>
 {:#indicators-histogram}
-{:#indicators-histogram}
 
 
 
@@ -4705,7 +4555,6 @@ Contains property to customize the histogram in macd indicator.
 
 ### indicators.histogram.border<span class="type-signature type object">object</span>
 {:#indicators-histogram-border}
-{:#indicators-histogram-border}
 
 
 
@@ -4718,7 +4567,6 @@ Contains property to customize the boder of histogram in macd indicator.
 
 
 ### indicators.histogram.border.color<span class="type-signature type string">string</span>
-{:#indicators-histogram-border-color}
 {:#indicators-histogram-border-color}
 
 
@@ -4754,7 +4602,6 @@ indicators :[{ histogram : {border: {color: "#ff0000"}}}]
 
 ### indicators.histogram.border.width<span class="type-signature type width">width</span>
 {:#indicators-histogram-border-width}
-{:#indicators-histogram-border-width}
 
 
 
@@ -4788,7 +4635,6 @@ indicators :[{ histogram : {border: {width: 2}}}]
 
 
 ### indicators.histogram.fill<span class="type-signature type string">string</span>
-{:#indicators-histogram-fill}
 {:#indicators-histogram-fill}
 
 
@@ -4824,7 +4670,6 @@ indicators :[{ histogram : {fill: "#ff0000"}}]
 
 ### indicators.histogram.opacity<span class="type-signature type number">number</span>
 {:#indicators-histogram-opacity}
-{:#indicators-histogram-opacity}
 
 
 
@@ -4859,7 +4704,6 @@ indicators :[{ histogram : {opacity: 0.5}}]
 
 ### indicators.kPeriod<span class="type-signature type number">number</span>
 {:#indicators-kperiod}
-{:#indicators-kPeriod}
 
 
 
@@ -4894,7 +4738,6 @@ indicators :[{ kPeriod : 4}]
 
 ### indicators.longPeriod<span class="type-signature type number">number</span>
 {:#indicators-longperiod}
-{:#indicators-longPeriod}
 
 
 
@@ -4929,7 +4772,6 @@ indicators :[{ longPeriod :  14"}]
 
 ### indicators.lowerLine<span class="type-signature type object">object</span>
 {:#indicators-lowerline}
-{:#indicators-lowerLine}
 
 
 
@@ -4943,7 +4785,6 @@ Contains property to customize the lower line in indicators.
 
 ### indicators.lowerLine.fill<span class="type-signature type string">string</span>
 {:#indicators-lowerline-fill}
-{:#indicators-lowerLine-fill}
 
 
 
@@ -4978,7 +4819,6 @@ indicators :[{ lowerLine : {fill: "#ff0000"}}]
 
 ### indicators.lowerLine.width<span class="type-signature type number">number</span>
 {:#indicators-lowerline-width}
-{:#indicators-lowerLine-width}
 
 
 
@@ -5013,7 +4853,6 @@ indicators :[{ lowerLine : {width: 3}}]
 
 ### indicators.macdLine<span class="type-signature type object">object</span>
 {:#indicators-macdline}
-{:#indicators-macdLine}
 
 
 
@@ -5027,7 +4866,6 @@ Contains property to customize the macd line in indicators.
 
 ### indicators.macdLine.fill<span class="type-signature type string">string</span>
 {:#indicators-macdline-fill}
-{:#indicators-macdLine-fill}
 
 
 
@@ -5062,7 +4900,6 @@ indicators :[{ macdLine : {fill: "#ff0000"}}]
 
 ### indicators.macdLine.width<span class="type-signature type number">number</span>
 {:#indicators-macdline-width}
-{:#indicators-macdLine-width}
 
 
 
@@ -5097,7 +4934,6 @@ indicators :[{ macdLine : {width: 3}}]
 
 ### indicators.macdType<span class="type-signature type string">string</span>
 {:#indicators-macdtype}
-{:#indicators-macdType}
 
 
 
@@ -5131,7 +4967,6 @@ indicators :[{ macdType :  "both"}]
 
 
 ### indicators.period<span class="type-signature type number">number</span>
-{:#indicators-period}
 {:#indicators-period}
 
 
@@ -5167,7 +5002,6 @@ indicators :[{ period : 20}]
 
 ### indicators.periodLine<span class="type-signature type object">object</span>
 {:#indicators-periodline}
-{:#indicators-periodLine}
 
 
 
@@ -5181,7 +5015,6 @@ Contains property to customize the period line in indicators.
 
 ### indicators.periodLine.fill<span class="type-signature type string">string</span>
 {:#indicators-periodline-fill}
-{:#indicators-periodLine-fill}
 
 
 
@@ -5216,7 +5049,6 @@ indicators :[{ periodLine : {fill: "#ff0000"}}]
 
 ### indicators.periodLine.width<span class="type-signature type number">number</span>
 {:#indicators-periodline-width}
-{:#indicators-periodLine-width}
 
 
 
@@ -5251,7 +5083,6 @@ indicators :[{ periodLine : {width: 3}}]
 
 ### indicators.seriesName<span class="type-signature type string">string</span>
 {:#indicators-seriesname}
-{:#indicators-seriesName}
 
 
 
@@ -5286,7 +5117,6 @@ indicators :[{ seriesName : "rsi"}]
 
 ### indicators.shortPeriod<span class="type-signature type number">number</span>
 {:#indicators-shortperiod}
-{:#indicators-shortPeriod}
 
 
 
@@ -5321,7 +5151,6 @@ indicators :[{ shortPeriod :  14"}]
 
 ### indicators.standardDeviations<span class="type-signature type number">number</span>
 {:#indicators-standarddeviations}
-{:#indicators-standardDeviations}
 
 
 
@@ -5356,7 +5185,6 @@ indicators :[{ standardDeviations : 3}]
 
 ### indicators.tooltip<span class="type-signature type object">object</span>
 {:#indicators-tooltip}
-{:#indicators-tooltip}
 
 
 
@@ -5370,7 +5198,6 @@ Contains property to customize the tooltip of indicators.
 
 ### indicators.tooltip.border<span class="type-signature type object">object</span>
 {:#indicators-tooltip-border}
-{:#indicators-tooltip-border}
 
 
 
@@ -5383,7 +5210,6 @@ Contains property to customize the border of the tooltip in indicators.
 
 
 ### indicators.tooltip.border.color<span class="type-signature type string">string</span>
-{:#indicators-tooltip-border-color}
 {:#indicators-tooltip-border-color}
 
 
@@ -5419,7 +5245,6 @@ indicators :[{ tooltip :{border : { color :"#0000ff"}} }]
 
 ### indicators.tooltip.border.width<span class="type-signature type number">number</span>
 {:#indicators-tooltip-border-width}
-{:#indicators-tooltip-border-width}
 
 
 
@@ -5453,7 +5278,6 @@ indicators :[{ tooltip :{border : { width :2}} }]
 
 
 ### indicators.tooltip.duration<span class="type-signature type string">string</span>
-{:#indicators-tooltip-duration}
 {:#indicators-tooltip-duration}
 
 
@@ -5489,7 +5313,6 @@ indicators :[{ tooltip :{duration : "300ms"}}]
 
 ### indicators.tooltip.enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#indicators-tooltip-enableanimation}
-{:#indicators-tooltip-enableAnimation}
 
 
 
@@ -5523,7 +5346,6 @@ indicators :[{ tooltip :{enableAnimation : false}}]
 
 
 ### indicators.tooltip.format<span class="type-signature type string">string</span>
-{:#indicators-tooltip-format}
 {:#indicators-tooltip-format}
 
 
@@ -5559,7 +5381,6 @@ indicators :[{ tooltip :{format : "#point.x#"}}]
 
 ### indicators.tooltip.format<span class="type-signature type string">string</span>
 {:#indicators-tooltip-format}
-{:#indicators-tooltip-format}
 
 
 
@@ -5593,7 +5414,6 @@ indicators :[{ tooltip :{format : "#point.x#"}}]
 
 
 ### indicators.tooltip.opacity<span class="type-signature type number">number</span>
-{:#indicators-tooltip-opacity}
 {:#indicators-tooltip-opacity}
 
 
@@ -5629,7 +5449,6 @@ indicators :[{ tooltip :{opacity : 0.5}}]
 
 ### indicators.tooltip.visible<span class="type-signature type boolaean">boolaean</span>
 {:#indicators-tooltip-visible}
-{:#indicators-tooltip-visible}
 
 
 
@@ -5663,7 +5482,6 @@ indicators :[{ tooltip :{visible : true}}]
 
 
 ### indicators.trigger<span class="type-signature type number">number</span>
-{:#indicators-trigger}
 {:#indicators-trigger}
 
 
@@ -5699,7 +5517,6 @@ indicators :[{ trigger :  14}]
 
 ### indicators.trigger<span class="type-signature type string">string</span>
 {:#indicators-trigger}
-{:#indicators-trigger}
 
 
 
@@ -5733,7 +5550,6 @@ indicators :[{ visibility :  "visible"}]
 
 
 ### indicators.type<span class="type-signature type string">string</span>
-{:#indicators-type}
 {:#indicators-type}
 
 
@@ -5769,7 +5585,6 @@ indicators :[{ type : "momentum"}]
 
 ### indicators.upperLine<span class="type-signature type object">object</span>
 {:#indicators-upperline}
-{:#indicators-upperLine}
 
 
 
@@ -5783,7 +5598,6 @@ Contains property to customize the upper line in indicators.
 
 ### indicators.upperLine.fill<span class="type-signature type string">string</span>
 {:#indicators-upperline-fill}
-{:#indicators-upperLine-fill}
 
 
 
@@ -5818,7 +5632,6 @@ indicators :[{ upperLine : {fill: "#ff0000"}}]
 
 ### indicators.upperLine.width<span class="type-signature type number">number</span>
 {:#indicators-upperline-width}
-{:#indicators-upperLine-width}
 
 
 
@@ -5852,7 +5665,6 @@ indicators :[{ upperLine : {width: 3}}]
 
 
 ### indicators.width<span class="type-signature type number">number</span>
-{:#indicators-width}
 {:#indicators-width}
 
 
@@ -5888,7 +5700,6 @@ indicators :[{ width :  3}]
 
 ### indicators.xAxisName<span class="type-signature type string">string</span>
 {:#indicators-xaxisname}
-{:#indicators-xAxisName}
 
 
 
@@ -5923,7 +5734,6 @@ indicators :[{ xAxisName :  "xAxis"}]
 
 ### indicators.yAxisName<span class="type-signature type string">string</span>
 {:#indicators-yaxisname}
-{:#indicators-yAxisName}
 
 
 
@@ -5958,7 +5768,6 @@ indicators :[{ yAxisName :  "yAxis"}]
 
 ### legend<span class="type-signature type object">object</span>
 {:#legend}
-{:#legend}
 
 
 
@@ -5971,7 +5780,6 @@ Contains all the properties to customize legend.
 
 
 ### legend.alignment<span class="type-signature type enum">enum</span>
-{:#legend-alignment}
 {:#legend-alignment}
 
 
@@ -6007,7 +5815,6 @@ legend :{alignment : "far"}
 
 ### legend.border<span class="type-signature type object">object</span>
 {:#legend-border}
-{:#legend-border}
 
 
 
@@ -6020,7 +5827,6 @@ Options for customizing the color and width of the border of legend.
 
 
 ### legend.border.color<span class="type-signature type string">string</span>
-{:#legend-border-color}
 {:#legend-border-color}
 
 
@@ -6056,7 +5862,6 @@ legend : {border :{ color :"green"}}
 
 ### legend.border.width<span class="type-signature type number">number</span>
 {:#legend-border-width}
-{:#legend-border-width}
 
 
 
@@ -6091,7 +5896,6 @@ legend :{ border :{width :2}}
 
 ### legend.columnCount<span class="type-signature type number">number</span>
 {:#legend-columncount}
-{:#legend-columnCount}
 
 
 
@@ -6125,7 +5929,6 @@ legend :{ columnCount : 2}
 
 
 ### legend.fill<span class="type-signature type string">string</span>
-{:#legend-fill}
 {:#legend-fill}
 
 
@@ -6161,7 +5964,6 @@ legend :{ fill : "green"}
 
 ### legend.font<span class="type-signature type object">object</span>
 {:#legend-font}
-{:#legend-font}
 
 
 
@@ -6175,7 +5977,6 @@ Specifies the legend font. These font properties are used to customize the legen
 
 ### legend.font.fontFamily<span class="type-signature type string">string</span>
 {:#legend-font-fontfamily}
-{:#legend-font-fontFamily}
 
 
 
@@ -6210,7 +6011,6 @@ legend :{ font :{fontFamily : "algerian"}}
 
 ### legend.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#legend-font-fontstyle}
-{:#legend-font-fontStyle}
 
 
 
@@ -6245,7 +6045,6 @@ legend :{ font :{fontStyle : "italic"}}
 
 ### legend.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#legend-font-fontweight}
-{:#legend-font-fontWeight}
 
 
 
@@ -6279,7 +6078,6 @@ legend :{ font :{fontWeight : "lighter"}}
 
 
 ### legend.font.size<span class="type-signature type string">string</span>
-{:#legend-font-size}
 {:#legend-font-size}
 
 
@@ -6315,7 +6113,6 @@ legend :{ font :{size : "14px"}}
 
 ### legend.itemPadding<span class="type-signature type number">number</span>
 {:#legend-itempadding}
-{:#legend-itemPadding}
 
 
 
@@ -6350,7 +6147,6 @@ legend :{itemPadding : 5}
 
 ### legend.itemStyle<span class="type-signature type object">object</span>
 {:#legend-itemstyle}
-{:#legend-itemStyle}
 
 
 
@@ -6364,7 +6160,6 @@ Contains property to customize the legend item style.
 
 ### legend.itemStyle.border<span class="type-signature type object">object</span>
 {:#legend-itemstyle-border}
-{:#legend-itemStyle-border}
 
 
 
@@ -6378,7 +6173,6 @@ Options for customizing the color and width of the border of legend.
 
 ### legend.itemStyle.border.color<span class="type-signature type string">string</span>
 {:#legend-itemstyle-border-color}
-{:#legend-itemStyle-border-color}
 
 
 
@@ -6413,7 +6207,6 @@ legend :{ itemStyle :{border : { color : "green' }}}
 
 ### legend.itemStyle.border.width<span class="type-signature type number">number</span>
 {:#legend-itemstyle-border-width}
-{:#legend-itemStyle-border-width}
 
 
 
@@ -6448,7 +6241,6 @@ legend :{ itemStyle :{border :{ width : 2 }}}
 
 ### legend.itemStyle.height<span class="type-signature type number">number</span>
 {:#legend-itemstyle-height}
-{:#legend-itemStyle-height}
 
 
 
@@ -6483,7 +6275,6 @@ legend :{ itemStyle :{height : 20}}
 
 ### legend.itemStyle.width<span class="type-signature type number">number</span>
 {:#legend-itemstyle-width}
-{:#legend-itemStyle-width}
 
 
 
@@ -6518,7 +6309,6 @@ legend :{ itemStyle :{width : 15}}
 
 ### legend.location<span class="type-signature type object">object</span>
 {:#legend-location}
-{:#legend-location}
 
 
 
@@ -6531,7 +6321,6 @@ Contains property to customize the position of the legend
 
 
 ### legend.location.x<span class="type-signature type number">number</span>
-{:#legend-location-x}
 {:#legend-location-x}
 
 
@@ -6567,7 +6356,6 @@ legend :{location :{x :20}}
 
 ### legend.location.y<span class="type-signature type number">number</span>
 {:#legend-location-y}
-{:#legend-location-y}
 
 
 
@@ -6601,7 +6389,6 @@ legend :{location : {y : 100}}
 
 
 ### legend.opacity<span class="type-signature type number">number</span>
-{:#legend-opacity}
 {:#legend-opacity}
 
 
@@ -6637,7 +6424,6 @@ legend :{ opacity : 0.5}
 
 ### legend.position<span class="type-signature type enum">enum</span>
 {:#legend-position}
-{:#legend-position}
 
 
 
@@ -6672,7 +6458,6 @@ legend :{ position : "top"}
 
 ### legend.rowCount<span class="type-signature type number">number</span>
 {:#legend-rowcount}
-{:#legend-rowCount}
 
 
 
@@ -6706,7 +6491,6 @@ legend :{ rowCount :2}
 
 
 ### legend.shape<span class="type-signature type enum">enum</span>
-{:#legend-shape}
 {:#legend-shape}
 
 
@@ -6742,7 +6526,6 @@ legend :{ shape : "circle" }
 
 ### legend.size<span class="type-signature type object">object</span>
 {:#legend-size}
-{:#legend-size}
 
 
 
@@ -6755,7 +6538,6 @@ Contains property to customize the size of legend.
 
 
 ### legend.size.height<span class="type-signature type number">number</span>
-{:#legend-size-height}
 {:#legend-size-height}
 
 
@@ -6791,7 +6573,6 @@ legend :{ size :{height : 20%}}
 
 ### legend.size.width<span class="type-signature type number">number</span>
 {:#legend-size-width}
-{:#legend-size-width}
 
 
 
@@ -6826,7 +6607,6 @@ legend :{ size :{width : 20%}}
 
 ### legend.title<span class="type-signature type object">object</span>
 {:#legend-title}
-{:#legend-title}
 
 
 
@@ -6839,7 +6619,6 @@ Specifies the title of the legend.
 
 
 ### legend.title.font<span class="type-signature type object">object</span>
-{:#legend-title-font}
 {:#legend-title-font}
 
 
@@ -6854,7 +6633,6 @@ Specifies the font options to customize the legend title.
 
 ### legend.title.font.fontFamily<span class="type-signature type string">string</span>
 {:#legend-title-font-fontfamily}
-{:#legend-title-font-fontFamily}
 
 
 
@@ -6889,7 +6667,6 @@ legend: { title: { font :{fontFamily: "Algerian" } } }
 
 ### legend.title.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#legend-title-font-fontstyle}
-{:#legend-title-font-fontStyle}
 
 
 
@@ -6924,7 +6701,6 @@ legend: { title: { font :{fontStyle: "normal" } } }
 
 ### legend.title.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#legend-title-font-fontweight}
-{:#legend-title-font-fontWeight}
 
 
 
@@ -6958,7 +6734,6 @@ legend: { title: { font :{fontWeight: "normal" } } }
 
 
 ### legend.title.font.size<span class="type-signature type string">string</span>
-{:#legend-title-font-size}
 {:#legend-title-font-size}
 
 
@@ -6994,7 +6769,6 @@ legend: { title: { font :{size: "14px" } } }
 
 ### legend.title.text<span class="type-signature type string">string</span>
 {:#legend-title-text}
-{:#legend-title-text}
 
 
 
@@ -7029,7 +6803,6 @@ legend: { title: { text : "Countries" } }
 
 ### legend.title.textAlignment<span class="type-signature type enum">enum</span>
 {:#legend-title-textalignment}
-{:#legend-title-textAlignment}
 
 
 
@@ -7063,7 +6836,6 @@ legend: { title: { textAlignment : "near" } }
 
 
 ### legend.visible<span class="type-signature type boolean">boolean</span>
-{:#legend-visible}
 {:#legend-visible}
 
 
@@ -7099,7 +6871,6 @@ legend :{visible : false}
 
 ### locale<span class="type-signature type string">string</span>
 {:#locale}
-{:#locale}
 
 
 
@@ -7134,7 +6905,6 @@ locale : "en-US"
 
 ### perspectiveAngle<span class="type-signature type number">number</span>
 {:#perspectiveangle}
-{:#perspectiveAngle}
 
 
 
@@ -7169,7 +6939,6 @@ perspectiveAngle : 60
 
 ### primaryXAxis<span class="type-signature type object">object</span>
 {:#primaryxaxis}
-{:#primaryXAxis}
 
 
 
@@ -7183,7 +6952,6 @@ This is a horizontal axis which contains options to configure axis. This is the 
 
 ### primaryXAxis.alternateGridBand<span class="type-signature type object">object</span>
 {:#primaryxaxis-alternategridband}
-{:#primaryXAxis-alternateGridBand}
 
 
 
@@ -7197,7 +6965,6 @@ This is a horizontal axis alternate grid band which contains options to highligh
 
 ### primaryXAxis.alternateGridBand.even<span class="type-signature type object">object</span>
 {:#primaryxaxis-alternategridband-even}
-{:#primaryXAxis-alternateGridBand-even}
 
 
 
@@ -7211,7 +6978,6 @@ Specifies the Even Alternative Grid Band.
 
 ### primaryXAxis.alternateGridBand.even.fill<span class="type-signature type string">string</span>
 {:#primaryxaxis-alternategridband-even-fill}
-{:#primaryXAxis-alternateGridBand-even-fill}
 
 
 
@@ -7246,7 +7012,6 @@ primaryXAxis: { alternateGridBand: { even :{ fill : "green" } } }
 
 ### primaryXAxis.alternateGridBand.even.opacity<span class="type-signature type number">number</span>
 {:#primaryxaxis-alternategridband-even-opacity}
-{:#primaryXAxis-alternateGridBand-even-opacity}
 
 
 
@@ -7281,7 +7046,6 @@ primaryXAxis: { alternateGridBand: { even :{ opacity : 0.5 } } }
 
 ### primaryXAxis.alternateGridBand.odd<span class="type-signature type object">object</span>
 {:#primaryxaxis-alternategridband-odd}
-{:#primaryXAxis-alternateGridBand-odd}
 
 
 
@@ -7295,7 +7059,6 @@ Specifies the Odd Alternative Grid Band.
 
 ### primaryXAxis.alternateGridBand.odd.fill<span class="type-signature type string">string</span>
 {:#primaryxaxis-alternategridband-odd-fill}
-{:#primaryXAxis-alternateGridBand-odd-fill}
 
 
 
@@ -7330,7 +7093,6 @@ primaryXAxis: { alternateGridBand: { odd :{ fill : "red" } } }
 
 ### primaryXAxis.alternateGridBand.odd.opacity<span class="type-signature type number">number</span>
 {:#primaryxaxis-alternategridband-odd-opacity}
-{:#primaryXAxis-alternateGridBand-odd-opacity}
 
 
 
@@ -7365,7 +7127,6 @@ primaryXAxis: { alternateGridBand: { odd :{ opacity : 0.5 } } }
 
 ### primaryXAxis.axisLine<span class="type-signature type object">object</span>
 {:#primaryxaxis-axisline}
-{:#primaryXAxis-axisLine}
 
 
 
@@ -7379,7 +7140,6 @@ Specifies the options to configure axis line.
 
 ### primaryXAxis.axisLine.dashArray<span class="type-signature type string">string</span>
 {:#primaryxaxis-axisline-dasharray}
-{:#primaryXAxis-axisLine-dashArray}
 
 
 
@@ -7414,7 +7174,6 @@ primaryXAxis: { axisLine : { dashArray : "2,3" } }
 
 ### primaryXAxis.axisLine.offset<span class="type-signature type number">number</span>
 {:#primaryxaxis-axisline-offset}
-{:#primaryXAxis-axisLine-offset}
 
 
 
@@ -7449,7 +7208,6 @@ primaryXAxis: { axisLine : { offset : 5 } }
 
 ### primaryXAxis.axisLine.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-axisline-visible}
-{:#primaryXAxis-axisLine-visible}
 
 
 
@@ -7484,7 +7242,6 @@ primaryXAxis: { axisLine : { visible : false } }
 
 ### primaryXAxis.axisLine.width<span class="type-signature type number">number</span>
 {:#primaryxaxis-axisline-width}
-{:#primaryXAxis-axisLine-width}
 
 
 
@@ -7519,7 +7276,6 @@ primaryXAxis: { axisLine : { width : 2 } }
 
 ### primaryXAxis.columnIndex<span class="type-signature type number">number</span>
 {:#primaryxaxis-columnindex}
-{:#primaryXAxis-columnIndex}
 
 
 
@@ -7554,7 +7310,6 @@ primaryXAxis: { columnIndex: 2 }
 
 ### primaryXAxis.columnSpan<span class="type-signature type number">number</span>
 {:#primaryxaxis-columnspan}
-{:#primaryXAxis-columnSpan}
 
 
 
@@ -7589,7 +7344,6 @@ primaryXAxis: { columnSpan: 2 }
 
 ### primaryXAxis.crosshairLabel<span class="type-signature type object">object</span>
 {:#primaryxaxis-crosshairlabel}
-{:#primaryXAxis-crosshairLabel}
 
 
 
@@ -7603,7 +7357,6 @@ Options to configure the visibility of the crosshair label.
 
 ### primaryXAxis.crosshairLabel.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-crosshairlabel-visible}
-{:#primaryXAxis-crosshairLabel-visible}
 
 
 
@@ -7638,7 +7391,6 @@ primaryXAxis: { crosshairLabel : { visible : true} }
 
 ### primaryXAxis.desiredIntervals<span class="type-signature type number">number</span>
 {:#primaryxaxis-desiredintervals}
-{:#primaryXAxis-desiredIntervals}
 
 
 
@@ -7673,7 +7425,6 @@ primaryXAxis: { desiredIntervals: 5 }
 
 ### primaryXAxis.edgeLabelPlacement<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-edgelabelplacement}
-{:#primaryXAxis-edgeLabelPlacement}
 
 
 
@@ -7708,7 +7459,6 @@ primaryXAxis: { edgeLabelPlacement : "shift" }
 
 ### primaryXAxis.enableTrim
 {:#primaryxaxis-enabletrim}
-{:#primaryXAxis-enableTrim}
 
 
 
@@ -7743,7 +7493,6 @@ primaryXAxis: { enableTrim : true }
 
 ### primaryXAxis.font<span class="type-signature type object">object</span>
 {:#primaryxaxis-font}
-{:#primaryXAxis-font}
 
 
 
@@ -7757,7 +7506,6 @@ Specifies the font of primaryXAxis.
 
 ### primaryXAxis.font.fontFamily<span class="type-signature type string">string</span>
 {:#primaryxaxis-font-fontfamily}
-{:#primaryXAxis-font-fontFamily}
 
 
 
@@ -7792,7 +7540,6 @@ primaryXAxis: { font : { fontFamily : "Algerian"} }
 
 ### primaryXAxis.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-font-fontstyle}
-{:#primaryXAxis-font-fontStyle}
 
 
 
@@ -7827,7 +7574,6 @@ primaryXAxis: { font : { fontStyle : "Italic"} }
 
 ### primaryXAxis.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-font-fontweight}
-{:#primaryXAxis-font-fontWeight}
 
 
 
@@ -7862,7 +7608,6 @@ primaryXAxis: { font : { fontWeight : "lighter"} }
 
 ### primaryXAxis.font.opacity<span class="type-signature type number">number</span>
 {:#primaryxaxis-font-opacity}
-{:#primaryXAxis-font-opacity}
 
 
 
@@ -7897,7 +7642,6 @@ primaryXAxis: { font : { opacity : 0.5} }
 
 ### primaryXAxis.font.size<span class="type-signature type string">string</span>
 {:#primaryxaxis-font-size}
-{:#primaryXAxis-font-size}
 
 
 
@@ -7932,7 +7676,6 @@ primaryXAxis: { font : { size : "12px"} }
 
 ### primaryXAxis.intervalType<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-intervaltype}
-{:#primaryXAxis-intervalType}
 
 
 
@@ -7967,7 +7710,6 @@ primaryXAxis: { intervalType: "days" }
 
 ### primaryXAxis.isInversed<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-isinversed}
-{:#primaryXAxis-isInversed}
 
 
 
@@ -8002,7 +7744,6 @@ primaryXAxis: { isInversed : true}
 
 ### primaryXAxis.labelFormat<span class="type-signature type string">string</span>
 {:#primaryxaxis-labelformat}
-{:#primaryXAxis-labelFormat}
 
 
 
@@ -8037,7 +7778,6 @@ primaryXAxis: { labelFormat: "{value}%" }
 
 ### primaryXAxis.labelIntersectAction<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-labelintersectaction}
-{:#primaryXAxis-labelIntersectAction}
 
 
 
@@ -8072,7 +7812,6 @@ primaryXAxis: { labelIntersectAction : "multipleRows" }
 
 ### primaryXAxis.labelPosition<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-labelposition}
-{:#primaryXAxis-labelPosition}
 
 
 
@@ -8107,7 +7846,6 @@ primaryXAxis: { labelPosition : "inside" }
 
 ### primaryXAxis.labelRotation<span class="type-signature type number">number</span>
 {:#primaryxaxis-labelrotation}
-{:#primaryXAxis-labelRotation}
 
 
 
@@ -8142,7 +7880,6 @@ primaryXAxis: { labelRotation: 90 }
 
 ### primaryXAxis.logBase<span class="type-signature type number">number</span>
 {:#primaryxaxis-logbase}
-{:#primaryXAxis-logBase}
 
 
 
@@ -8177,7 +7914,6 @@ primaryXAxis: { logBase: 5 }
 
 ### primaryXAxis.majorGridLines<span class="type-signature type object">object</span>
 {:#primaryxaxis-majorgridlines}
-{:#primaryXAxis-majorGridLines}
 
 
 
@@ -8191,7 +7927,6 @@ Options for configuring major grid lines color, width, dash arrays etc.,
 
 ### primaryXAxis.majorGridLines.dashArray<span class="type-signature type string">string</span>
 {:#primaryxaxis-majorgridlines-dasharray}
-{:#primaryXAxis-majorGridLines-dashArray}
 
 
 
@@ -8226,7 +7961,6 @@ $("#container").ejChart({
 
 ### primaryXAxis.majorGridLines.opacity<span class="type-signature type number">number</span>
 {:#primaryxaxis-majorgridlines-opacity}
-{:#primaryXAxis-majorGridLines-opacity}
 
 
 
@@ -8261,7 +7995,6 @@ primaryXAxis: { majorGridLines: { opacity: 0.5 } }
 
 ### primaryXAxis.majorGridLines.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-majorgridlines-visible}
-{:#primaryXAxis-majorGridLines-visible}
 
 
 
@@ -8296,7 +8029,6 @@ primaryXAxis: { majorGridLines: { visible: false } }
 
 ### primaryXAxis.majorGridLines.width<span class="type-signature type number">number</span>
 {:#primaryxaxis-majorgridlines-width}
-{:#primaryXAxis-majorGridLines-width}
 
 
 
@@ -8331,7 +8063,6 @@ $("#container").ejChart({
 
 ### primaryXAxis.majorTickLines<span class="type-signature type object">object</span>
 {:#primaryxaxis-majorticklines}
-{:#primaryXAxis-majorTickLines}
 
 
 
@@ -8345,7 +8076,6 @@ Options for configuring major tick lines color, width, dash arrays etc.,
 
 ### primaryXAxis.majorTickLines.size<span class="type-signature type number">number</span>
 {:#primaryxaxis-majorticklines-size}
-{:#primaryXAxis-majorTickLines-size}
 
 
 
@@ -8380,7 +8110,6 @@ primaryXAxis: { majorTickLines: { size: 2 } }
 
 ### primaryXAxis.majorTickLines.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-majorticklines-visible}
-{:#primaryXAxis-majorTickLines-visible}
 
 
 
@@ -8415,7 +8144,6 @@ primaryXAxis: { majorTickLines: { visible: false } }
 
 ### primaryXAxis.majorTickLines.width<span class="type-signature type number">number</span>
 {:#primaryxaxis-majorticklines-width}
-{:#primaryXAxis-majorTickLines-width}
 
 
 
@@ -8450,7 +8178,6 @@ primaryXAxis: { majorTickLines: { width: 2 } }
 
 ### primaryXAxis.maximumLabels<span class="type-signature type number">number</span>
 {:#primaryxaxis-maximumlabels}
-{:#primaryXAxis-maximumLabels}
 
 
 
@@ -8485,7 +8212,6 @@ primaryXAxis: { maximumLabels : 5 }
 
 ### primaryXAxis.maximumLabelWidth
 {:#primaryxaxis-maximumlabelwidth}
-{:#primaryXAxis-maximumLabelWidth}
 
 
 
@@ -8520,7 +8246,6 @@ primaryXAxis: { maximumLabelWidth :34.5 }
 
 ### primaryXAxis.minorGridLines<span class="type-signature type object">object</span>
 {:#primaryxaxis-minorgridlines}
-{:#primaryXAxis-minorGridLines}
 
 
 
@@ -8534,7 +8259,6 @@ Options for configuring minor grid lines color, width, dash arrays etc.,
 
 ### primaryXAxis.minorGridLines.dashArray<span class="type-signature type string">string</span>
 {:#primaryxaxis-minorgridlines-dasharray}
-{:#primaryXAxis-minorGridLines-dashArray}
 
 
 
@@ -8569,7 +8293,6 @@ primaryXAxis: { minorGridLines: { dashArray: "2,3" } }
 
 ### primaryXAxis.minorGridLines.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-minorgridlines-visible}
-{:#primaryXAxis-minorGridLines-visible}
 
 
 
@@ -8604,7 +8327,6 @@ primaryXAxis: { minorGridLines: { visible: true } }
 
 ### primaryXAxis.minorGridLines.width<span class="type-signature type number">number</span>
 {:#primaryxaxis-minorgridlines-width}
-{:#primaryXAxis-minorGridLines-width}
 
 
 
@@ -8639,7 +8361,6 @@ primaryXAxis: { minorGridLines: { width: 2 } }
 
 ### primaryXAxis.minorTickLines<span class="type-signature type object">object</span>
 {:#primaryxaxis-minorticklines}
-{:#primaryXAxis-minorTickLines}
 
 
 
@@ -8653,7 +8374,6 @@ Options for configuring minor tick lines color, width, dash arrays etc,.
 
 ### primaryXAxis.minorTickLines.size<span class="type-signature type number">number</span>
 {:#primaryxaxis-minorticklines-size}
-{:#primaryXAxis-minorTickLines-size}
 
 
 
@@ -8688,7 +8408,6 @@ primaryXAxis: { minorTickLines: { size: 2 } }
 
 ### primaryXAxis.minorTickLines.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-minorticklines-visible}
-{:#primaryXAxis-minorTickLines-visible}
 
 
 
@@ -8723,7 +8442,6 @@ primaryXAxis: { minorTickLines: { visible: true } }
 
 ### primaryXAxis.minorTickLines.width<span class="type-signature type number">number</span>
 {:#primaryxaxis-minorticklines-width}
-{:#primaryXAxis-minorTickLines-width}
 
 
 
@@ -8758,7 +8476,6 @@ primaryXAxis: { minorTickLines: { width: 2 } }
 
 ### primaryXAxis.minorTicksPerInterval<span class="type-signature type number">number</span>
 {:#primaryxaxis-minorticksperinterval}
-{:#primaryXAxis-minorTicksPerInterval}
 
 
 
@@ -8793,7 +8510,6 @@ primaryXAxis: { minorTicksPerInterval: 5 }
 
 ### primaryXAxis.name<span class="type-signature type string">string</span>
 {:#primaryxaxis-name}
-{:#primaryXAxis-name}
 
 
 
@@ -8828,7 +8544,6 @@ primaryXAxis: { name: "xAxis" }
 
 ### primaryXAxis.opposedPosition<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-opposedposition}
-{:#primaryXAxis-opposedPosition}
 
 
 
@@ -8863,7 +8578,6 @@ primaryXAxis: { opposedPosition : true }
 
 ### primaryXAxis.plotOffset<span class="type-signature type number">number</span>
 {:#primaryxaxis-plotoffset}
-{:#primaryXAxis-plotOffset}
 
 
 
@@ -8898,7 +8612,6 @@ primaryXAxis: { plotOffset: 0 }
 
 ### primaryXAxis.rangePadding<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-rangepadding}
-{:#primaryXAxis-rangePadding}
 
 
 
@@ -8933,7 +8646,6 @@ primaryXAxis: { rangePadding : "normal" }
 
 ### primaryXAxis.roundingPlaces<span class="type-signature type number">number</span>
 {:#primaryxaxis-roundingplaces}
-{:#primaryXAxis-roundingPlaces}
 
 
 
@@ -8968,7 +8680,6 @@ primaryXAxis: { roundingPlaces: 3 }
 
 ### primaryXAxis.stripLine<span class="type-signature type array">array</span>
 {:#primaryxaxis-stripline}
-{:#primaryXAxis-stripLine}
 
 
 
@@ -8991,7 +8702,6 @@ Default Value:
 
 ### primaryXAxis.stripLine.borderColor<span class="type-signature type string">string</span>
 {:#primaryxaxis-stripline-bordercolor}
-{:#primaryXAxis-stripLine-borderColor}
 
 
 
@@ -9026,7 +8736,6 @@ primaryXAxis: { stripLine:[{ borderColor: "green" }]}
 
 ### primaryXAxis.stripLine.color<span class="type-signature type string">string</span>
 {:#primaryxaxis-stripline-color}
-{:#primaryXAxis-stripLine-color}
 
 
 
@@ -9061,7 +8770,6 @@ primaryXAxis: { stripLine:[{ color: "green" }]}
 
 ### primaryXAxis.stripLine.end<span class="type-signature type number">number</span>
 {:#primaryxaxis-stripline-end}
-{:#primaryXAxis-stripLine-end}
 
 
 
@@ -9096,7 +8804,6 @@ primaryXAxis: { stripLine:[{ end: 5 }]}
 
 ### primaryXAxis.stripLine.font<span class="type-signature type object">object</span>
 {:#primaryxaxis-stripline-font}
-{:#primaryXAxis-stripLine-font}
 
 
 
@@ -9110,7 +8817,6 @@ Specifies the font of stripLine in primaryXAxis. These are font properties for s
 
 ### primaryXAxis.stripLine.font.color<span class="type-signature type string">string</span>
 {:#primaryxaxis-stripline-font-color}
-{:#primaryXAxis-stripLine-font-color}
 
 
 
@@ -9145,7 +8851,6 @@ primaryXAxis: { stripLine:[{ font : { color: "green"} }]}
 
 ### primaryXAxis.stripLine.font.fontFamily<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-stripline-font-fontfamily}
-{:#primaryXAxis-stripLine-font-fontFamily}
 
 
 
@@ -9180,7 +8885,6 @@ primaryXAxis: { stripLine:[{ font : { fontFamily : "Algerian"} }]}
 
 ### primaryXAxis.stripLine.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-stripline-font-fontstyle}
-{:#primaryXAxis-stripLine-font-fontStyle}
 
 
 
@@ -9215,7 +8919,6 @@ primaryXAxis: { stripLine:[{ font : { fontStyle: "Bold"} }]}
 
 ### primaryXAxis.stripLine.font.fontWeight<span class="type-signature type string">string</span>
 {:#primaryxaxis-stripline-font-fontweight}
-{:#primaryXAxis-stripLine-font-fontWeight}
 
 
 
@@ -9250,7 +8953,6 @@ primaryXAxis: { stripLine:[{ font : { fontWeight: "lighter"} }]}
 
 ### primaryXAxis.stripLine.font.opacity<span class="type-signature type number">number</span>
 {:#primaryxaxis-stripline-font-opacity}
-{:#primaryXAxis-stripLine-font-opacity}
 
 
 
@@ -9285,7 +8987,6 @@ primaryXAxis: { stripLine:[{ font : { opacity: 0.5} }]}
 
 ### primaryXAxis.stripLine.font.size<span class="type-signature type string">string</span>
 {:#primaryxaxis-stripline-font-size}
-{:#primaryXAxis-stripLine-font-size}
 
 
 
@@ -9320,7 +9021,6 @@ primaryXAxis: { stripLine:[{ font : { size: "15px"} }]}
 
 ### primaryXAxis.stripLine.start<span class="type-signature type number">number</span>
 {:#primaryxaxis-stripline-start}
-{:#primaryXAxis-stripLine-start}
 
 
 
@@ -9355,7 +9055,6 @@ primaryXAxis: { stripLine:[{ start: 2 }]}
 
 ### primaryXAxis.stripLine.startFromAxis<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-stripline-startfromaxis}
-{:#primaryXAxis-stripLine-startFromAxis}
 
 
 
@@ -9390,7 +9089,6 @@ primaryXAxis: { stripLine:[{ startFromAxis : true }]}
 
 ### primaryXAxis.stripLine.text<span class="type-signature type string">string</span>
 {:#primaryxaxis-stripline-text}
-{:#primaryXAxis-stripLine-text}
 
 
 
@@ -9425,7 +9123,6 @@ primaryXAxis: { stripLine:[{ text : "Empty Point" }]}
 
 ### primaryXAxis.stripLine.textAlignment<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-stripline-textalignment}
-{:#primaryXAxis-stripLine-textAlignment}
 
 
 
@@ -9460,7 +9157,6 @@ primaryXAxis: { stripLine:[{ textAlignment : "middletop" }]}
 
 ### primaryXAxis.stripLine.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-stripline-visible}
-{:#primaryXAxis-stripLine-visible}
 
 
 
@@ -9495,7 +9191,6 @@ primaryXAxis: { stripLine:[{ visible : true }]}
 
 ### primaryXAxis.stripLine.width<span class="type-signature type number">number</span>
 {:#primaryxaxis-stripline-width}
-{:#primaryXAxis-stripLine-width}
 
 
 
@@ -9530,7 +9225,6 @@ primaryXAxis: { stripLine:[{ width : 0 }]}
 
 ### primaryXAxis.stripLine.zIndex<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-stripline-zindex}
-{:#primaryXAxis-stripLine-zIndex}
 
 
 
@@ -9565,7 +9259,6 @@ primaryXAxis: { stripLine:[{ zIndex: "behind" }]}
 
 ### primaryXAxis.tickLinesPosition<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-ticklinesposition}
-{:#primaryXAxis-tickLinesPosition}
 
 
 
@@ -9600,7 +9293,6 @@ primaryXAxis: { tickLinesPosition : "inside" }
 
 ### primaryXAxis.title<span class="type-signature type object">object</span>
 {:#primaryxaxis-title}
-{:#primaryXAxis-title}
 
 
 
@@ -9614,7 +9306,6 @@ Contains property to customize the title in chart.
 
 ### primaryXAxis.title.enableTrim<span class="type-signature type object">Object</span>
 {:#primaryxaxis-title-enabletrim}
-{:#primaryXAxis-title-enableTrim}
 
 
 
@@ -9648,7 +9339,6 @@ primaryXAxis: { title:{enableTrim:true} }
 
 ### primaryXAxis.title.font<span class="type-signature type object">object</span>
 {:#primaryxaxis-title-font}
-{:#primaryXAxis-title-font}
 
 
 
@@ -9662,7 +9352,6 @@ Specifies the font. These font properties are customization are applied for titl
 
 ### primaryXAxis.title.font.fontFamily<span class="type-signature type string">string</span>
 {:#primaryxaxis-title-font-fontfamily}
-{:#primaryXAxis-title-font-fontFamily}
 
 
 
@@ -9697,7 +9386,6 @@ primaryXAxis: { title: { font : { fontFamily : "Algerain"} } }
 
 ### primaryXAxis.title.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-title-font-fontstyle}
-{:#primaryXAxis-title-font-fontStyle}
 
 
 
@@ -9732,7 +9420,6 @@ primaryXAxis: { title: { font : { fontStyle : "Italic"} } }
 
 ### primaryXAxis.title.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-title-font-fontweight}
-{:#primaryXAxis-title-font-fontWeight}
 
 
 
@@ -9767,7 +9454,6 @@ primaryXAxis: { title: { font : { fontWeight : "lighter"} } }
 
 ### primaryXAxis.title.font.opacity<span class="type-signature type number">number</span>
 {:#primaryxaxis-title-font-opacity}
-{:#primaryXAxis-title-font-opacity}
 
 
 
@@ -9802,7 +9488,6 @@ primaryXAxis: { title: { font : { opacity : 0.8} } }
 
 ### primaryXAxis.title.font.size<span class="type-signature type string">string</span>
 {:#primaryxaxis-title-font-size}
-{:#primaryXAxis-title-font-size}
 
 
 
@@ -9837,7 +9522,6 @@ primaryXAxis: { title: { font : { size : "14px"} } }
 
 ### primaryXAxis.title.maximumTitleWidth<span class="type-signature type number">number</span>
 {:#primaryxaxis-title-maximumtitlewidth}
-{:#primaryXAxis-title-maximumTitleWidth}
 
 
 
@@ -9871,7 +9555,6 @@ primaryYAxis: { title:{maximumTitleWidth: null} }
 
 ### primaryXAxis.title.text<span class="type-signature type string">string</span>
 {:#primaryxaxis-title-text}
-{:#primaryXAxis-title-text}
 
 
 
@@ -9906,7 +9589,6 @@ primaryXAxis: { title: { text: "Year" } }
 
 ### primaryXAxis.valueType<span class="type-signature type enum">enum</span>
 {:#primaryxaxis-valuetype}
-{:#primaryXAxis-valueType}
 
 
 
@@ -9941,7 +9623,6 @@ primaryXAxis: { valueType: "double" }
 
 ### primaryXAxis.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryxaxis-visible}
-{:#primaryXAxis-visible}
 
 
 
@@ -9976,7 +9657,6 @@ primaryXAxis: { visible: false }
 
 ### primaryXAxis.zoomFactor<span class="type-signature type number">number</span>
 {:#primaryxaxis-zoomfactor}
-{:#primaryXAxis-zoomFactor}
 
 
 
@@ -10011,7 +9691,6 @@ primaryXAxis: { zoomFactor : 0.5 }
 
 ### primaryXAxis.zoomPosition<span class="type-signature type number">number</span>
 {:#primaryxaxis-zoomposition}
-{:#primaryXAxis-zoomPosition}
 
 
 
@@ -10046,7 +9725,6 @@ primaryXAxis: { zoomPosition :0.5 }
 
 ### primaryYAxis<span class="type-signature type object">object</span>
 {:#primaryyaxis}
-{:#primaryYAxis}
 
 
 
@@ -10060,7 +9738,6 @@ This is a vertical axis which contains options to configure axis. This is the pr
 
 ### primaryYAxis.alternateGridBand<span class="type-signature type object">object</span>
 {:#primaryyaxis-alternategridband}
-{:#primaryYAxis-alternateGridBand}
 
 
 
@@ -10074,7 +9751,6 @@ This is a Vertical axis alternate grid band which contains options to highlight 
 
 ### primaryYAxis.alternateGridBand.even<span class="type-signature type object">object</span>
 {:#primaryyaxis-alternategridband-even}
-{:#primaryYAxis-alternateGridBand-even}
 
 
 
@@ -10088,7 +9764,6 @@ Specifies the Even Alternative Grid Band.
 
 ### primaryYAxis.alternateGridBand.even.fill<span class="type-signature type string">string</span>
 {:#primaryyaxis-alternategridband-even-fill}
-{:#primaryYAxis-alternateGridBand-even-fill}
 
 
 
@@ -10123,7 +9798,6 @@ primaryYAxis: { alternateGridBand: { even : {fill : "red" } } }
 
 ### primaryYAxis.alternateGridBand.even.opacity<span class="type-signature type number">number</span>
 {:#primaryyaxis-alternategridband-even-opacity}
-{:#primaryYAxis-alternateGridBand-even-opacity}
 
 
 
@@ -10158,7 +9832,6 @@ primaryYAxis: { alternateGridBand: { even : {opacity : 0.5 } } }
 
 ### primaryYAxis.alternateGridBand.odd<span class="type-signature type object">object</span>
 {:#primaryyaxis-alternategridband-odd}
-{:#primaryYAxis-alternateGridBand-odd}
 
 
 
@@ -10172,7 +9845,6 @@ Specifies the Odd Alternative Grid Band.
 
 ### primaryYAxis.alternateGridBand.odd.fill<span class="type-signature type string">string</span>
 {:#primaryyaxis-alternategridband-odd-fill}
-{:#primaryYAxis-alternateGridBand-odd-fill}
 
 
 
@@ -10207,7 +9879,6 @@ primaryYAxis: { alternateGridBand: { odd : { fill :"red" }  } }
 
 ### primaryYAxis.alternateGridBand.odd.opacity<span class="type-signature type number">number</span>
 {:#primaryyaxis-alternategridband-odd-opacity}
-{:#primaryYAxis-alternateGridBand-odd-opacity}
 
 
 
@@ -10242,7 +9913,6 @@ primaryYAxis: { alternateGridBand: { odd : { opacity :0.5 }  } }
 
 ### primaryYAxis.axisLine<span class="type-signature type object">object</span>
 {:#primaryyaxis-axisline}
-{:#primaryYAxis-axisLine}
 
 
 
@@ -10256,7 +9926,6 @@ Specifies the options to configure axis line.
 
 ### primaryYAxis.axisLine.dashArray<span class="type-signature type string">string</span>
 {:#primaryyaxis-axisline-dasharray}
-{:#primaryYAxis-axisLine-dashArray}
 
 
 
@@ -10291,7 +9960,6 @@ primaryYAxis: { crosshairLabel: { axisLine :{ dashArray : "2,3" } } }
 
 ### primaryYAxis.axisLine.offset<span class="type-signature type number">number</span>
 {:#primaryyaxis-axisline-offset}
-{:#primaryYAxis-axisLine-offset}
 
 
 
@@ -10326,7 +9994,6 @@ primaryYAxis: { axisLine: { offset : 5 } }
 
 ### primaryYAxis.axisLine.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-axisline-visible}
-{:#primaryYAxis-axisLine-visible}
 
 
 
@@ -10361,7 +10028,6 @@ primaryYAxis: { axisLine: { visible : false } }
 
 ### primaryYAxis.axisLine.width<span class="type-signature type number">number</span>
 {:#primaryyaxis-axisline-width}
-{:#primaryYAxis-axisLine-width}
 
 
 
@@ -10396,7 +10062,6 @@ primaryYAxis: { axisLine: { width : 2 } }
 
 ### primaryYAxis.crosshairLabel<span class="type-signature type object">object</span>
 {:#primaryyaxis-crosshairlabel}
-{:#primaryYAxis-crosshairLabel}
 
 
 
@@ -10410,7 +10075,6 @@ Options to configure the visibility of the crosshair label.
 
 ### primaryYAxis.crosshairLabel.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-crosshairlabel-visible}
-{:#primaryYAxis-crosshairLabel-visible}
 
 
 
@@ -10445,7 +10109,6 @@ primaryYAxis: { crosshairLabel: { visible : true } }
 
 ### primaryYAxis.desiredIntervals<span class="type-signature type number">number</span>
 {:#primaryyaxis-desiredintervals}
-{:#primaryYAxis-desiredIntervals}
 
 
 
@@ -10480,7 +10143,6 @@ primaryYAxis: { desiredIntervals: 5 }
 
 ### primaryYAxis.edgeLabelPlacement<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-edgelabelplacement}
-{:#primaryYAxis-edgeLabelPlacement}
 
 
 
@@ -10515,7 +10177,6 @@ primaryYAxis: { edgeLabelPlacement: "shift" }
 
 ### primaryYAxis.enableTrim
 {:#primaryyaxis-enabletrim}
-{:#primaryYAxis-enableTrim}
 
 
 
@@ -10550,7 +10211,6 @@ primaryYAxis: { enableTrim : true }
 
 ### primaryYAxis.font<span class="type-signature type object">object</span>
 {:#primaryyaxis-font}
-{:#primaryYAxis-font}
 
 
 
@@ -10564,7 +10224,6 @@ Specifies the font of primaryYAxis. These font properties are applied for the ax
 
 ### primaryYAxis.font.fontFamily<span class="type-signature type string">string</span>
 {:#primaryyaxis-font-fontfamily}
-{:#primaryYAxis-font-fontFamily}
 
 
 
@@ -10599,7 +10258,6 @@ primaryYAxis: { font: { fontFamily : "Algerian" } }
 
 ### primaryYAxis.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-font-fontstyle}
-{:#primaryYAxis-font-fontStyle}
 
 
 
@@ -10634,7 +10292,6 @@ primaryYAxis: { font: { fontStyle : "italic" } }
 
 ### primaryYAxis.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-font-fontweight}
-{:#primaryYAxis-font-fontWeight}
 
 
 
@@ -10669,7 +10326,6 @@ primaryYAxis: { font: { fontWeight : "normal" } }
 
 ### primaryYAxis.font.opacity<span class="type-signature type number">number</span>
 {:#primaryyaxis-font-opacity}
-{:#primaryYAxis-font-opacity}
 
 
 
@@ -10704,7 +10360,6 @@ primaryYAxis: { font: { opacity : 0.5 } }
 
 ### primaryYAxis.font.size<span class="type-signature type string">string</span>
 {:#primaryyaxis-font-size}
-{:#primaryYAxis-font-size}
 
 
 
@@ -10739,7 +10394,6 @@ primaryYAxis: { font: { size : "12px" } }
 
 ### primaryYAxis.intervalType<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-intervaltype}
-{:#primaryYAxis-intervalType}
 
 
 
@@ -10774,7 +10428,6 @@ primaryYAxis: { intervalType: "days" }
 
 ### primaryYAxis.isInversed<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-isinversed}
-{:#primaryYAxis-isInversed}
 
 
 
@@ -10809,7 +10462,6 @@ primaryYAxis: { isInversed : true}
 
 ### primaryYAxis.labelFormat<span class="type-signature type string">string</span>
 {:#primaryyaxis-labelformat}
-{:#primaryYAxis-labelFormat}
 
 
 
@@ -10844,7 +10496,6 @@ primaryYAxis: { labelFormat: "{value}F" }
 
 ### primaryYAxis.labelIntersectAction<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-labelintersectaction}
-{:#primaryYAxis-labelIntersectAction}
 
 
 
@@ -10879,7 +10530,6 @@ primaryYAxis: { labelIntersectAction: "multipleRows" }
 
 ### primaryYAxis.labelPosition<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-labelposition}
-{:#primaryYAxis-labelPosition}
 
 
 
@@ -10914,7 +10564,6 @@ primaryYAxis: { labelPosition : "inside" }
 
 ### primaryYAxis.logBase<span class="type-signature type number">number</span>
 {:#primaryyaxis-logbase}
-{:#primaryYAxis-logBase}
 
 
 
@@ -10949,7 +10598,6 @@ primaryYAxis: { logBase: 5 }
 
 ### primaryYAxis.majorGridLines<span class="type-signature type object">object</span>
 {:#primaryyaxis-majorgridlines}
-{:#primaryYAxis-majorGridLines}
 
 
 
@@ -10963,7 +10611,6 @@ Options for configuring major grid lines color, width, dash arrays etc.,
 
 ### primaryYAxis.majorGridLines.dashArray<span class="type-signature type string">string</span>
 {:#primaryyaxis-majorgridlines-dasharray}
-{:#primaryYAxis-majorGridLines-dashArray}
 
 
 
@@ -10998,7 +10645,6 @@ primaryYAxis: { majorGridLines : {dashArray : "2,3"} }
 
 ### primaryYAxis.majorGridLines.opacity<span class="type-signature type number">number</span>
 {:#primaryyaxis-majorgridlines-opacity}
-{:#primaryYAxis-majorGridLines-opacity}
 
 
 
@@ -11033,7 +10679,6 @@ primaryYAxis: { majorGridLines : {opacity : 0.5} }
 
 ### primaryYAxis.majorGridLines.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-majorgridlines-visible}
-{:#primaryYAxis-majorGridLines-visible}
 
 
 
@@ -11068,7 +10713,6 @@ primaryYAxis: { majorGridLines : {visible : false} }
 
 ### primaryYAxis.majorGridLines.width<span class="type-signature type number">number</span>
 {:#primaryyaxis-majorgridlines-width}
-{:#primaryYAxis-majorGridLines-width}
 
 
 
@@ -11103,7 +10747,6 @@ primaryYAxis: { majorGridLines : {width : 2} }
 
 ### primaryYAxis.majorTickLines<span class="type-signature type object">object</span>
 {:#primaryyaxis-majorticklines}
-{:#primaryYAxis-majorTickLines}
 
 
 
@@ -11117,7 +10760,6 @@ Options for configuring major tick lines color, width, dash arrays etc.,
 
 ### primaryYAxis.majorTickLines.size<span class="type-signature type number">number</span>
 {:#primaryyaxis-majorticklines-size}
-{:#primaryYAxis-majorTickLines-size}
 
 
 
@@ -11152,7 +10794,6 @@ primaryYAxis: { majorTickLines : {size : 2} }
 
 ### primaryYAxis.majorTickLines.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-majorticklines-visible}
-{:#primaryYAxis-majorTickLines-visible}
 
 
 
@@ -11187,7 +10828,6 @@ primaryYAxis: { majorTickLines : {visible : false} }
 
 ### primaryYAxis.majorTickLines.width<span class="type-signature type number">number</span>
 {:#primaryyaxis-majorticklines-width}
-{:#primaryYAxis-majorTickLines-width}
 
 
 
@@ -11222,7 +10862,6 @@ primaryYAxis: { majorTickLines : {width : 2} }
 
 ### primaryYAxis.maximumLabels<span class="type-signature type number">number</span>
 {:#primaryyaxis-maximumlabels}
-{:#primaryYAxis-maximumLabels}
 
 
 
@@ -11257,7 +10896,6 @@ primaryYAxis: { maximumLabels: 5 }
 
 ### primaryYAxis.maximumLabelWidth
 {:#primaryyaxis-maximumlabelwidth}
-{:#primaryYAxis-maximumLabelWidth}
 
 
 
@@ -11292,7 +10930,6 @@ primaryYAxis: { maximumLabelWidth :34.5 }
 
 ### primaryYAxis.minorGridLines<span class="type-signature type object">object</span>
 {:#primaryyaxis-minorgridlines}
-{:#primaryYAxis-minorGridLines}
 
 
 
@@ -11306,7 +10943,6 @@ Options for configuring minor grid lines color, width, dash arrays etc.,
 
 ### primaryYAxis.minorGridLines.dashArray<span class="type-signature type string">string</span>
 {:#primaryyaxis-minorgridlines-dasharray}
-{:#primaryYAxis-minorGridLines-dashArray}
 
 
 
@@ -11341,7 +10977,6 @@ primaryYAxis: { minorGridLines : {dashArray : "2,3"} }
 
 ### primaryYAxis.minorGridLines.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-minorgridlines-visible}
-{:#primaryYAxis-minorGridLines-visible}
 
 
 
@@ -11376,7 +11011,6 @@ primaryYAxis: { minorGridLines : {visible : true} }
 
 ### primaryYAxis.minorGridLines.width<span class="type-signature type number">number</span>
 {:#primaryyaxis-minorgridlines-width}
-{:#primaryYAxis-minorGridLines-width}
 
 
 
@@ -11411,7 +11045,6 @@ primaryYAxis: { minorGridLines : {width : 2} }
 
 ### primaryYAxis.minorTickLines<span class="type-signature type object">object</span>
 {:#primaryyaxis-minorticklines}
-{:#primaryYAxis-minorTickLines}
 
 
 
@@ -11425,7 +11058,6 @@ Options for configuring minor tick lines color, width, dash arrays etc.,
 
 ### primaryYAxis.minorTickLines.size<span class="type-signature type number">number</span>
 {:#primaryyaxis-minorticklines-size}
-{:#primaryYAxis-minorTickLines-size}
 
 
 
@@ -11460,7 +11092,6 @@ primaryYAxis: { minorTickLines : {size : 2} }
 
 ### primaryYAxis.minorTickLines.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-minorticklines-visible}
-{:#primaryYAxis-minorTickLines-visible}
 
 
 
@@ -11495,7 +11126,6 @@ primaryYAxis: { minorTickLines : {visible : true} }
 
 ### primaryYAxis.minorTickLines.width<span class="type-signature type number">number</span>
 {:#primaryyaxis-minorticklines-width}
-{:#primaryYAxis-minorTickLines-width}
 
 
 
@@ -11530,7 +11160,6 @@ primaryYAxis: { minorTickLines : {width : 2} }
 
 ### primaryYAxis.minorTicksPerInterval<span class="type-signature type number">number</span>
 {:#primaryyaxis-minorticksperinterval}
-{:#primaryYAxis-minorTicksPerInterval}
 
 
 
@@ -11565,7 +11194,6 @@ primaryYAxis: { minorTicksPerInterval: 3 }
 
 ### primaryYAxis.name<span class="type-signature type string">string</span>
 {:#primaryyaxis-name}
-{:#primaryYAxis-name}
 
 
 
@@ -11600,7 +11228,6 @@ primaryYAxis: { name: "yAxis" }
 
 ### primaryYAxis.opposedPosition<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-opposedposition}
-{:#primaryYAxis-opposedPosition}
 
 
 
@@ -11635,7 +11262,6 @@ primaryYAxis: { opposedPosition : true }
 
 ### primaryYAxis.plotOffset<span class="type-signature type number">number</span>
 {:#primaryyaxis-plotoffset}
-{:#primaryYAxis-plotOffset}
 
 
 
@@ -11670,7 +11296,6 @@ primaryYAxis: { plotOffset: 5 }
 
 ### primaryYAxis.rangePadding<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-rangepadding}
-{:#primaryYAxis-rangePadding}
 
 
 
@@ -11705,7 +11330,6 @@ primaryYAxis: { rangePadding : "none" }
 
 ### primaryYAxis.roundingPlaces<span class="type-signature type number">number</span>
 {:#primaryyaxis-roundingplaces}
-{:#primaryYAxis-roundingPlaces}
 
 
 
@@ -11740,7 +11364,6 @@ primaryYAxis: { roundingPlaces: 2 }
 
 ### primaryYAxis.rowIndex<span class="type-signature type number">number</span>
 {:#primaryyaxis-rowindex}
-{:#primaryYAxis-rowIndex}
 
 
 
@@ -11775,7 +11398,6 @@ primaryYAxis: { rowIndex: 1 }
 
 ### primaryYAxis.rowSpan<span class="type-signature type number">number</span>
 {:#primaryyaxis-rowspan}
-{:#primaryYAxis-rowSpan}
 
 
 
@@ -11810,7 +11432,6 @@ primaryYAxis: { rowSpan: 2 }
 
 ### primaryYAxis.stripLine<span class="type-signature type array">array</span>
 {:#primaryyaxis-stripline}
-{:#primaryYAxis-stripLine}
 
 
 
@@ -11833,7 +11454,6 @@ Default Value:
 
 ### primaryYAxis.stripLine.borderColor<span class="type-signature type string">string</span>
 {:#primaryyaxis-stripline-bordercolor}
-{:#primaryYAxis-stripLine-borderColor}
 
 
 
@@ -11868,7 +11488,6 @@ primaryYAxis: { stripLine:[{ borderColor: "green" }]}
 
 ### primaryYAxis.stripLine.color<span class="type-signature type string">string</span>
 {:#primaryyaxis-stripline-color}
-{:#primaryYAxis-stripLine-color}
 
 
 
@@ -11903,7 +11522,6 @@ primaryYAxis: { stripLine:[{ color: "green" }]}
 
 ### primaryYAxis.stripLine.end<span class="type-signature type number">number</span>
 {:#primaryyaxis-stripline-end}
-{:#primaryYAxis-stripLine-end}
 
 
 
@@ -11938,7 +11556,6 @@ primaryYAxis: { stripLine:[{ end: 5 }]}
 
 ### primaryYAxis.stripLine.font<span class="type-signature type object">object</span>
 {:#primaryyaxis-stripline-font}
-{:#primaryYAxis-stripLine-font}
 
 
 
@@ -11952,7 +11569,6 @@ Specifies the font of stripLine in primaryYAxis. These are font properties for s
 
 ### primaryYAxis.stripLine.font.color<span class="type-signature type string">string</span>
 {:#primaryyaxis-stripline-font-color}
-{:#primaryYAxis-stripLine-font-color}
 
 
 
@@ -11987,7 +11603,6 @@ primaryYAxis: { stripLine:[{ font : { color: "green"} }]}
 
 ### primaryYAxis.stripLine.font.fontFamily<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-stripline-font-fontfamily}
-{:#primaryYAxis-stripLine-font-fontFamily}
 
 
 
@@ -12022,7 +11637,6 @@ primaryYAxis: { stripLine:[{ font : { fontFamily : "Algerian"} }]}
 
 ### primaryYAxis.stripLine.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-stripline-font-fontstyle}
-{:#primaryYAxis-stripLine-font-fontStyle}
 
 
 
@@ -12057,7 +11671,6 @@ primaryYAxis: { stripLine:[{ font : { fontStyle: "Bold"} }]}
 
 ### primaryYAxis.stripLine.font.fontWeight<span class="type-signature type string">string</span>
 {:#primaryyaxis-stripline-font-fontweight}
-{:#primaryYAxis-stripLine-font-fontWeight}
 
 
 
@@ -12092,7 +11705,6 @@ primaryYAxis: { stripLine:[{ font : { fontWeight: "lighter"} }]}
 
 ### primaryYAxis.stripLine.font.opacity<span class="type-signature type number">number</span>
 {:#primaryyaxis-stripline-font-opacity}
-{:#primaryYAxis-stripLine-font-opacity}
 
 
 
@@ -12127,7 +11739,6 @@ primaryYAxis: { stripLine:[{ font : { opacity: 0.5} }]}
 
 ### primaryYAxis.stripLine.font.size<span class="type-signature type string">string</span>
 {:#primaryyaxis-stripline-font-size}
-{:#primaryYAxis-stripLine-font-size}
 
 
 
@@ -12162,7 +11773,6 @@ primaryYAxis: { stripLine:[{ font : { size: "15px"} }]}
 
 ### primaryYAxis.stripLine.start<span class="type-signature type number">number</span>
 {:#primaryyaxis-stripline-start}
-{:#primaryYAxis-stripLine-start}
 
 
 
@@ -12197,7 +11807,6 @@ primaryYAxis: { stripLine:[{ start: 2 }]}
 
 ### primaryYAxis.stripLine.startFromAxis<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-stripline-startfromaxis}
-{:#primaryYAxis-stripLine-startFromAxis}
 
 
 
@@ -12232,7 +11841,6 @@ primaryYAxis: { stripLine:[{ startFromAxis : true }]}
 
 ### primaryYAxis.stripLine.text<span class="type-signature type string">string</span>
 {:#primaryyaxis-stripline-text}
-{:#primaryYAxis-stripLine-text}
 
 
 
@@ -12267,7 +11875,6 @@ primaryYAxis: { stripLine:[{ text : "Empty Point" }]}
 
 ### primaryYAxis.stripLine.textAlignment<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-stripline-textalignment}
-{:#primaryYAxis-stripLine-textAlignment}
 
 
 
@@ -12302,7 +11909,6 @@ primaryYAxis: { stripLine:[{ textAlignment : "middletop" }]}
 
 ### primaryYAxis.stripLine.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-stripline-visible}
-{:#primaryYAxis-stripLine-visible}
 
 
 
@@ -12337,7 +11943,6 @@ primaryYAxis: { stripLine:[{ visible : true }]}
 
 ### primaryYAxis.stripLine.width<span class="type-signature type number">number</span>
 {:#primaryyaxis-stripline-width}
-{:#primaryYAxis-stripLine-width}
 
 
 
@@ -12372,7 +11977,6 @@ primaryYAxis: { stripLine:[{ width : 0 }]}
 
 ### primaryYAxis.stripLine.zIndex<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-stripline-zindex}
-{:#primaryYAxis-stripLine-zIndex}
 
 
 
@@ -12407,7 +12011,6 @@ primaryYAxis: { stripLine:[{ zIndex: "behind" }]}
 
 ### primaryYAxis.tickLinesPosition<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-ticklinesposition}
-{:#primaryYAxis-tickLinesPosition}
 
 
 
@@ -12442,7 +12045,6 @@ primaryYAxis: { tickLinesPosition : "inside" }
 
 ### primaryYAxis.title<span class="type-signature type object">object</span>
 {:#primaryyaxis-title}
-{:#primaryYAxis-title}
 
 
 
@@ -12456,7 +12058,6 @@ Options to configure the title font and alignment of the axis title.
 
 ### primaryYAxis.title.enableTrim<span class="type-signature type object">Object</span>
 {:#primaryyaxis-title-enabletrim}
-{:#primaryYAxis-title-enableTrim}
 
 
 
@@ -12490,7 +12091,6 @@ primaryXAxis: { title:{enableTrim:true} }
 
 ### primaryYAxis.title.font<span class="type-signature type object">object</span>
 {:#primaryyaxis-title-font}
-{:#primaryYAxis-title-font}
 
 
 
@@ -12504,7 +12104,6 @@ Specifies the font. These font properties are customization are applied for titl
 
 ### primaryYAxis.title.font.fontFamily<span class="type-signature type string">string</span>
 {:#primaryyaxis-title-font-fontfamily}
-{:#primaryYAxis-title-font-fontFamily}
 
 
 
@@ -12539,7 +12138,6 @@ primaryYAxis: { title :{ font :{ fontFamily: "Algerian" } } }
 
 ### primaryYAxis.title.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-title-font-fontstyle}
-{:#primaryYAxis-title-font-fontStyle}
 
 
 
@@ -12574,7 +12172,6 @@ primaryYAxis: { title :{ font :{ fontStyle : "Italic" } } }
 
 ### primaryYAxis.title.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-title-font-fontweight}
-{:#primaryYAxis-title-font-fontWeight}
 
 
 
@@ -12609,7 +12206,6 @@ primaryYAxis: { title :{ font :{ fontWeight: "normal" } } }
 
 ### primaryYAxis.title.font.opacity<span class="type-signature type number">number</span>
 {:#primaryyaxis-title-font-opacity}
-{:#primaryYAxis-title-font-opacity}
 
 
 
@@ -12644,7 +12240,6 @@ primaryYAxis: { title :{ font :{ opacity: 0.5 } } }
 
 ### primaryYAxis.title.font.size<span class="type-signature type string">string</span>
 {:#primaryyaxis-title-font-size}
-{:#primaryYAxis-title-font-size}
 
 
 
@@ -12679,7 +12274,6 @@ primaryYAxis: { title :{ font :{ size: "12px" } } }
 
 ### primaryYAxis.title.maximumTitleWidth<span class="type-signature type number">number</span>
 {:#primaryyaxis-title-maximumtitlewidth}
-{:#primaryYAxis-title-maximumTitleWidth}
 
 
 
@@ -12713,7 +12307,6 @@ primaryYAxis: { title:{maximumTitleWidth: null} }
 
 ### primaryYAxis.title.text<span class="type-signature type string">string</span>
 {:#primaryyaxis-title-text}
-{:#primaryYAxis-title-text}
 
 
 
@@ -12748,7 +12341,6 @@ primaryYAxis: { title :{ text: "yAxis" } }
 
 ### primaryYAxis.valueType<span class="type-signature type enum">enum</span>
 {:#primaryyaxis-valuetype}
-{:#primaryYAxis-valueType}
 
 
 
@@ -12783,7 +12375,6 @@ primaryYAxis: { valueType: "double" }
 
 ### primaryYAxis.visible<span class="type-signature type boolean">boolean</span>
 {:#primaryyaxis-visible}
-{:#primaryYAxis-visible}
 
 
 
@@ -12818,7 +12409,6 @@ primaryYAxis: { visible : false }
 
 ### primaryYAxis.zoomFactor<span class="type-signature type number">number</span>
 {:#primaryyaxis-zoomfactor}
-{:#primaryYAxis-zoomFactor}
 
 
 
@@ -12853,7 +12443,6 @@ primaryYAxis: { zoomFactor : 0.5 }
 
 ### primaryYAxis.zoomPosition<span class="type-signature type number">number</span>
 {:#primaryyaxis-zoomposition}
-{:#primaryYAxis-zoomPosition}
 
 
 
@@ -12887,7 +12476,6 @@ primaryYAxis: { zoomPosition : 0.5 }
 
 
 ### rotation<span class="type-signature type number">number</span>
-{:#rotation}
 {:#rotation}
 
 
@@ -12923,7 +12511,6 @@ rotation : 45
 
 ### rowDefinitions<span class="type-signature type array">array</span>
 {:#rowdefinitions}
-{:#rowDefinitions}
 
 
 
@@ -12949,7 +12536,6 @@ rowDefinitions :[{unit : "percentage"}]
 
 ### series<span class="type-signature type array">array</span>
 {:#series}
-{:#series}
 
 
 
@@ -12963,7 +12549,6 @@ Specifies the properties used for customizing the series.
 
 ### series.bearFillColor<span class="type-signature type string">string</span>
 {:#series-bearfillcolor}
-{:#series-bearFillColor}
 
 
 
@@ -12998,7 +12583,6 @@ series : [{bearFillColor: "blue" }]
 
 ### series.border<span class="type-signature type object">object</span>
 {:#series-border}
-{:#series-border}
 
 
 
@@ -13011,7 +12595,6 @@ Specifies the border of the series. These are the properties involved in customi
 
 
 ### series.border.color<span class="type-signature type string">string</span>
-{:#series-border-color}
 {:#series-border-color}
 
 
@@ -13047,7 +12630,6 @@ series :[{border :{ color : "green" } }]
 
 ### series.border.width<span class="type-signature type number">number</span>
 {:#series-border-width}
-{:#series-border-width}
 
 
 
@@ -13082,7 +12664,6 @@ series :[{border :{ width : 2 } }]
 
 ### series.bullFillColor<span class="type-signature type string">string</span>
 {:#series-bullfillcolor}
-{:#series-bullFillColor}
 
 
 
@@ -13117,7 +12698,6 @@ series : [{bullFillColor: "green" }]
 
 ### series.dashArray<span class="type-signature type string">string</span>
 {:#series-dasharray}
-{:#series-dashArray}
 
 
 
@@ -13152,7 +12732,6 @@ series :[{dashArray : "2,3"}]
 
 ### series.dataSource<span class="type-signature type object">object</span>
 {:#series-datasource}
-{:#series-dataSource}
 
 
 
@@ -13187,7 +12766,6 @@ series : [{dataSource: data.open }]
 
 ### series.doughnutCoefficient<span class="type-signature type number">number</span>
 {:#series-doughnutcoefficient}
-{:#series-doughnutCoefficient}
 
 
 
@@ -13222,7 +12800,6 @@ series : [{doughnutCoefficient : 0.5 }]
 
 ### series.doughnutSize<span class="type-signature type number">number</span>
 {:#series-doughnutsize}
-{:#series-doughnutSize}
 
 
 
@@ -13257,7 +12834,6 @@ series : [{doughnutSize : 0.6 }]
 
 ### series.drawType<span class="type-signature type boolean">boolean</span>
 {:#series-drawtype}
-{:#series-drawType}
 
 
 
@@ -13292,7 +12868,6 @@ series : [{drawType : false }]
 
 ### series.enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#series-enableanimation}
-{:#series-enableAnimation}
 
 
 
@@ -13327,7 +12902,6 @@ series : [{enableAnimation : false }]
 
 ### series.enableSmartLabels<span class="type-signature type number">number</span>
 {:#series-enablesmartlabels}
-{:#series-enableSmartLabels}
 
 
 
@@ -13362,7 +12936,6 @@ series : [{enableSmartLabels : false }]
 
 ### series.endAngle<span class="type-signature type number">number</span>
 {:#series-endangle}
-{:#series-endAngle}
 
 
 
@@ -13396,7 +12969,6 @@ series : [{endAngle: 270 }]
 
 
 ### series.explode<span class="type-signature type boolean">boolean</span>
-{:#series-explode}
 {:#series-explode}
 
 
@@ -13432,7 +13004,6 @@ series : [{explode: true }]
 
 ### series.explodeAll<span class="type-signature type boolean">boolean</span>
 {:#series-explodeall}
-{:#series-explodeAll}
 
 
 
@@ -13467,7 +13038,6 @@ series : [{explodeAll: true }]
 
 ### series.explodeIndex<span class="type-signature type number">number</span>
 {:#series-explodeindex}
-{:#series-explodeIndex}
 
 
 
@@ -13502,7 +13072,6 @@ series : [{explodeIndex : 2 }]
 
 ### series.explodeOffset<span class="type-signature type number">number</span>
 {:#series-explodeoffset}
-{:#series-explodeOffset}
 
 
 
@@ -13536,7 +13105,6 @@ series : [{explodeOffset : 20 }]
 
 
 ### series.fill<span class="type-signature type string">string</span>
-{:#series-fill}
 {:#series-fill}
 
 
@@ -13572,7 +13140,6 @@ series :[{fill : "green"}]
 
 ### series.font<span class="type-signature type object">object</span>
 {:#series-font}
-{:#series-font}
 
 
 
@@ -13585,7 +13152,6 @@ Specifies the font that is common to all series. These are the properties involv
 
 
 ### series.font.color<span class="type-signature type string">string</span>
-{:#series-font-color}
 {:#series-font-color}
 
 
@@ -13621,7 +13187,6 @@ series :[{font :{color : "green"}}]
 
 ### series.font.fontFamily<span class="type-signature type string">string</span>
 {:#series-font-fontfamily}
-{:#series-font-fontFamily}
 
 
 
@@ -13656,7 +13221,6 @@ series :[{ font : { fontFamily : "Algerian"}}]
 
 ### series.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#series-font-fontstyle}
-{:#series-font-fontStyle}
 
 
 
@@ -13691,7 +13255,6 @@ series : [{font :{fontStyle : "italic"}} ]
 
 ### series.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#series-font-fontweight}
-{:#series-font-fontWeight}
 
 
 
@@ -13725,7 +13288,6 @@ series :[{font :{fontWeight : "lighter"}}]
 
 
 ### series.font.opacity<span class="type-signature type number">number</span>
-{:#series-font-opacity}
 {:#series-font-opacity}
 
 
@@ -13761,7 +13323,6 @@ series :[{font :{opacity : 0.5}}]
 
 ### series.font.size<span class="type-signature type string">string</span>
 {:#series-font-size}
-{:#series-font-size}
 
 
 
@@ -13796,7 +13357,6 @@ series :[{font :{size : "14px"}}]
 
 ### series.funnelHeight<span class="type-signature type string">string</span>
 {:#series-funnelheight}
-{:#series-funnelHeight}
 
 
 
@@ -13831,7 +13391,6 @@ series : [{funnelHeight : '40%' }]
 
 ### series.funnelWidth<span class="type-signature type string">string</span>
 {:#series-funnelwidth}
-{:#series-funnelWidth}
 
 
 
@@ -13866,7 +13425,6 @@ series : [{funnelWidth : '40%' }]
 
 ### series.gapRatio<span class="type-signature type number">number</span>
 {:#series-gapratio}
-{:#series-gapRatio}
 
 
 
@@ -13901,7 +13459,6 @@ series : [{gapRatio : 0.2 }]
 
 ### series.isClosed<span class="type-signature type boolean">boolean</span>
 {:#series-isclosed}
-{:#series-isClosed}
 
 
 
@@ -13936,7 +13493,6 @@ series : [{isClosed : false }]
 
 ### series.isStacking<span class="type-signature type boolean">boolean</span>
 {:#series-isstacking}
-{:#series-isStacking}
 
 
 
@@ -13971,7 +13527,6 @@ series : [{isStacking : false }]
 
 ### series.labelPosition<span class="type-signature type enum">enum</span>
 {:#series-labelposition}
-{:#series-labelPosition}
 
 
 
@@ -14006,7 +13561,6 @@ series : [{labelPosition : "outside" }]
 
 ### series.lineCap<span class="type-signature type enum">enum</span>
 {:#series-linecap}
-{:#series-lineCap}
 
 
 
@@ -14041,7 +13595,6 @@ series :[{lineCap : "butt"}]
 
 ### series.lineJoin<span class="type-signature type enum">enum</span>
 {:#series-linejoin}
-{:#series-lineJoin}
 
 
 
@@ -14076,7 +13629,6 @@ series :[{lineJoin : "round"}]
 
 ### series.marker<span class="type-signature type object">object</span>
 {:#series-marker}
-{:#series-marker}
 
 
 
@@ -14090,7 +13642,6 @@ Contains the customizing properties to add marker symbols to the points plotted 
 
 ### series.marker.border<span class="type-signature type object">object</span>
 {:#series-marker-border}
-{:#series-marker-border}
 
 
 
@@ -14103,7 +13654,6 @@ Options for customizing the color, opacity and width of the border of marker.
 
 
 ### series.marker.border.color<span class="type-signature type string">string</span>
-{:#series-marker-border-color}
 {:#series-marker-border-color}
 
 
@@ -14139,7 +13689,6 @@ series :[{color : "green"}]
 
 ### series.marker.border.width<span class="type-signature type number">number</span>
 {:#series-marker-border-width}
-{:#series-marker-border-width}
 
 
 
@@ -14174,7 +13723,6 @@ series :[{marker :{border :{width : 2}}}]
 
 ### series.marker.dataLabel<span class="type-signature type object">object</span>
 {:#series-marker-datalabel}
-{:#series-marker-dataLabel}
 
 
 
@@ -14188,7 +13736,6 @@ Contains the customizing properties to add data labels of the points plotted in 
 
 ### series.marker.dataLabel.angle<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-angle}
-{:#series-marker-dataLabel-angle}
 
 
 
@@ -14223,7 +13770,6 @@ series :[{marker :{dataLabel :{angle : 90}}]
 
 ### series.marker.dataLabel.border<span class="type-signature type object">object</span>
 {:#series-marker-datalabel-border}
-{:#series-marker-dataLabel-border}
 
 
 
@@ -14237,7 +13783,6 @@ Options for customizing the color, opacity and width of the border of datalabel.
 
 ### series.marker.dataLabel.border.color<span class="type-signature type string">string</span>
 {:#series-marker-datalabel-border-color}
-{:#series-marker-dataLabel-border-color}
 
 
 
@@ -14272,7 +13817,6 @@ series :[{marker :{dataLabel :{border : {color : "green"}}}}]
 
 ### series.marker.dataLabel.border.width<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-border-width}
-{:#series-marker-dataLabel-border-width}
 
 
 
@@ -14307,7 +13851,6 @@ series :[{marker :{dataLabel :{border :{ width :2 }}}}]
 
 ### series.marker.dataLabel.connectorLine<span class="type-signature type object">object</span>
 {:#series-marker-datalabel-connectorline}
-{:#series-marker-dataLabel-connectorLine}
 
 
 
@@ -14321,7 +13864,6 @@ Contains the options to customize the line connecting the point and the data lab
 
 ### series.marker.dataLabel.connectorLine.type<span class="type-signature type enum">enum</span>
 {:#series-marker-datalabel-connectorline-type}
-{:#series-marker-dataLabel-connectorLine-type}
 
 
 
@@ -14356,7 +13898,6 @@ series :[{marker :{dataLabel :{connectorLine :{ type : "spline" }}}}]
 
 ### series.marker.dataLabel.connectorLine.width<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-connectorline-width}
-{:#series-marker-dataLabel-connectorLine-width}
 
 
 
@@ -14391,7 +13932,6 @@ series :[{marker :{dataLabel :{connectorLine :{ width : 2 }}}}]
 
 ### series.marker.dataLabel.fill<span class="type-signature type string">string</span>
 {:#series-marker-datalabel-fill}
-{:#series-marker-dataLabel-fill}
 
 
 
@@ -14426,7 +13966,6 @@ series :[{marker :{dataLabel :{fill : "green"}}}]
 
 ### series.marker.dataLabel.font<span class="type-signature type object">object</span>
 {:#series-marker-datalabel-font}
-{:#series-marker-dataLabel-font}
 
 
 
@@ -14440,7 +13979,6 @@ Specifies the font of the dataLabel. These are the properties involved in custom
 
 ### series.marker.dataLabel.font.fontFamily<span class="type-signature type string">string</span>
 {:#series-marker-datalabel-font-fontfamily}
-{:#series-marker-dataLabel-font-fontFamily}
 
 
 
@@ -14475,7 +14013,6 @@ series :[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]
 
 ### series.marker.dataLabel.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#series-marker-datalabel-font-fontstyle}
-{:#series-marker-dataLabel-font-fontStyle}
 
 
 
@@ -14510,7 +14047,6 @@ series :[{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}]
 
 ### series.marker.dataLabel.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#series-marker-datalabel-font-fontweight}
-{:#series-marker-dataLabel-font-fontWeight}
 
 
 
@@ -14545,7 +14081,6 @@ series :[{marker :{dataLabel :{font : { fontWeight : "lighter" }}}}]
 
 ### series.marker.dataLabel.font.opacity<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-font-opacity}
-{:#series-marker-dataLabel-font-opacity}
 
 
 
@@ -14580,7 +14115,6 @@ series :[{marker :{dataLabel :{font :{ opacity : 0.5 }}}}]
 
 ### series.marker.dataLabel.font.size<span class="type-signature type string">string</span>
 {:#series-marker-datalabel-font-size}
-{:#series-marker-dataLabel-font-size}
 
 
 
@@ -14615,7 +14149,6 @@ series :[{marker :{dataLabel :{font : { size : "14px" }}}}]
 
 ### series.marker.dataLabel.horizontalTextAlignment<span class="type-signature type enum">enum</span>
 {:#series-marker-datalabel-horizontaltextalignment}
-{:#series-marker-dataLabel-horizontalTextAlignment}
 
 
 
@@ -14650,7 +14183,6 @@ series :[{marker :{dataLabel :{horizontalTextAlignment : "far"}}}]
 
 ### series.marker.dataLabel.margin<span class="type-signature type object">object</span>
 {:#series-marker-datalabel-margin}
-{:#series-marker-dataLabel-margin}
 
 
 
@@ -14664,7 +14196,6 @@ Specifies the margin for the data label.
 
 ### series.marker.dataLabel.margin.bottom<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-margin-bottom}
-{:#series-marker-dataLabel-margin-bottom}
 
 
 
@@ -14699,7 +14230,6 @@ series :[{marker :{dataLabel :{margin :{ bottom :10 }}}}]
 
 ### series.marker.dataLabel.margin.left<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-margin-left}
-{:#series-marker-dataLabel-margin-left}
 
 
 
@@ -14734,7 +14264,6 @@ series :[{marker :{dataLabel :{margin :{ left : 10}}}}]
 
 ### series.marker.dataLabel.margin.right<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-margin-right}
-{:#series-marker-dataLabel-margin-right}
 
 
 
@@ -14769,7 +14298,6 @@ series :[{marker :{dataLabel :{margin :{ right :10 }}}}]
 
 ### series.marker.dataLabel.margin.top<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-margin-top}
-{:#series-marker-dataLabel-margin-top}
 
 
 
@@ -14804,7 +14332,6 @@ series :[{marker :{dataLabel :{margin :{ top :10 } }}}]
 
 ### series.marker.dataLabel.opacity<span class="type-signature type number">number</span>
 {:#series-marker-datalabel-opacity}
-{:#series-marker-dataLabel-opacity}
 
 
 
@@ -14839,7 +14366,6 @@ series :[{marker :{dataLabel :{opacity : 0.5}}}]
 
 ### series.marker.dataLabel.shape<span class="type-signature type enum">enum</span>
 {:#series-marker-datalabel-shape}
-{:#series-marker-dataLabel-shape}
 
 
 
@@ -14874,7 +14400,6 @@ series :[{marker :{dataLabel :{shape : "circle"}}}]
 
 ### series.marker.dataLabel.textPosition<span class="type-signature type enum">enum</span>
 {:#series-marker-datalabel-textposition}
-{:#series-marker-dataLabel-textPosition}
 
 
 
@@ -14909,7 +14434,6 @@ series :[{marker :{dataLabel :{textPosition : "bottom"}}}]
 
 ### series.marker.dataLabel.verticalTextAlignment<span class="type-signature type enum">enum</span>
 {:#series-marker-datalabel-verticaltextalignment}
-{:#series-marker-dataLabel-verticalTextAlignment}
 
 
 
@@ -14944,7 +14468,6 @@ series :[{marker :{dataLabel :{verticalTextAlignment : "far"}}}]
 
 ### series.marker.dataLabel.visible<span class="type-signature type boolean">boolean</span>
 {:#series-marker-datalabel-visible}
-{:#series-marker-dataLabel-visible}
 
 
 
@@ -14978,7 +14501,6 @@ series :[{marker :{dataLabel :{visible : true}}]
 
 
 ### series.marker.fill<span class="type-signature type string">string</span>
-{:#series-marker-fill}
 {:#series-marker-fill}
 
 
@@ -15014,7 +14536,6 @@ series :[{marker : { fill : "green" } }]
 
 ### series.marker.imageUrl<span class="type-signature type string">string</span>
 {:#series-marker-imageurl}
-{:#series-marker-imageUrl}
 
 
 
@@ -15048,7 +14569,6 @@ series :[{marker :{ imageUrl: "../images/sample.png"}}]
 
 
 ### series.marker.opacity<span class="type-signature type number">number</span>
-{:#series-marker-opacity}
 {:#series-marker-opacity}
 
 
@@ -15084,7 +14604,6 @@ series :[{marker :{ opacity : 0.5 }}]
 
 ### series.marker.shape<span class="type-signature type enum">enum</span>
 {:#series-marker-shape}
-{:#series-marker-shape}
 
 
 
@@ -15119,7 +14638,6 @@ series :[{marker :{ shape: "rectangle"}]
 
 ### series.marker.size<span class="type-signature type object">object</span>
 {:#series-marker-size}
-{:#series-marker-size}
 
 
 
@@ -15132,7 +14650,6 @@ Specifies the size of the marker.
 
 
 ### series.marker.size.height<span class="type-signature type number">number</span>
-{:#series-marker-size-height}
 {:#series-marker-size-height}
 
 
@@ -15168,7 +14685,6 @@ series :[{marker :{size :{height : 5}}}]
 
 ### series.marker.size.width<span class="type-signature type number">number</span>
 {:#series-marker-size-width}
-{:#series-marker-size-width}
 
 
 
@@ -15202,7 +14718,6 @@ series :[{marker :{ size :{ width : 2 } } }]
 
 
 ### series.marker.visible<span class="type-signature type boolean">boolean</span>
-{:#series-marker-visible}
 {:#series-marker-visible}
 
 
@@ -15238,7 +14753,6 @@ series :[{marker :{ visible : true}}]
 
 ### series.opacity<span class="type-signature type number">number</span>
 {:#series-opacity}
-{:#series-opacity}
 
 
 
@@ -15273,7 +14787,6 @@ series :[{opacity : 0.5}]
 
 ### series.pieCoefficient<span class="type-signature type number">number</span>
 {:#series-piecoefficient}
-{:#series-pieCoefficient}
 
 
 
@@ -15307,7 +14820,6 @@ series : [{pieCoefficient : 0.6 }]
 
 
 ### series.points<span class="type-signature type array">array</span>
-{:#series-points}
 {:#series-points}
 
 
@@ -15343,7 +14855,6 @@ series : [{points : [{x : 2000, y : 15}] }]
 
 ### series.pyramidMode<span class="type-signature type enum">enum</span>
 {:#series-pyramidmode}
-{:#series-pyramidMode}
 
 
 
@@ -15377,7 +14888,6 @@ series : [{pyramidMode : "linear" }]
 
 
 ### series.query<span class="type-signature type object">object</span>
-{:#series-query}
 {:#series-query}
 
 
@@ -15414,7 +14924,6 @@ series : [{query: query }]
 
 ### series.startAngle<span class="type-signature type number">number</span>
 {:#series-startangle}
-{:#series-startAngle}
 
 
 
@@ -15449,7 +14958,6 @@ series : [{startAngle: 140 }]
 
 ### series.tooltip<span class="type-signature type object">object</span>
 {:#series-tooltip}
-{:#series-tooltip}
 
 
 
@@ -15463,7 +14971,6 @@ Contains all the properties to customize tooltip
 
 ### series.tooltip.border<span class="type-signature type object">object</span>
 {:#series-tooltip-border}
-{:#series-tooltip-border}
 
 
 
@@ -15476,7 +14983,6 @@ Options for customizing the color, opacity and width of the border of tooltip.
 
 
 ### series.tooltip.border.color<span class="type-signature type string">string</span>
-{:#series-tooltip-border-color}
 {:#series-tooltip-border-color}
 
 
@@ -15512,7 +15018,6 @@ series : [{tooltip : {border : { color :"green"} }]
 
 ### series.tooltip.border.width<span class="type-signature type number">number</span>
 {:#series-tooltip-border-width}
-{:#series-tooltip-border-width}
 
 
 
@@ -15546,7 +15051,6 @@ series : [{tooltip : {border : { width :2} }]
 
 
 ### series.tooltip.duration<span class="type-signature type string">string</span>
-{:#series-tooltip-duration}
 {:#series-tooltip-duration}
 
 
@@ -15582,7 +15086,6 @@ series : [{tooltip : { duration: "300ms" }]
 
 ### series.tooltip.enableAnimation<span class="type-signature type boolean">boolean</span>
 {:#series-tooltip-enableanimation}
-{:#series-tooltip-enableAnimation}
 
 
 
@@ -15616,7 +15119,6 @@ series : [{tooltip : { enableAnimation: false }]
 
 
 ### series.tooltip.fill<span class="type-signature type string">string</span>
-{:#series-tooltip-fill}
 {:#series-tooltip-fill}
 
 
@@ -15652,7 +15154,6 @@ series : [{tooltip : {fill : "green"} }]
 
 ### series.tooltip.format<span class="type-signature type string">string</span>
 {:#series-tooltip-format}
-{:#series-tooltip-format}
 
 
 
@@ -15686,7 +15187,6 @@ series : [{tooltip : {format : "#point.x# : #point.y#"} }]
 
 
 ### series.tooltip.opacity<span class="type-signature type number">number</span>
-{:#series-tooltip-opacity}
 {:#series-tooltip-opacity}
 
 
@@ -15722,7 +15222,6 @@ series : [{tooltip : { opacity: 0.5 }]
 
 ### series.tooltip.template<span class="type-signature type string">string</span>
 {:#series-tooltip-template}
-{:#series-tooltip-template}
 
 
 
@@ -15756,7 +15255,6 @@ series : [{ tooltip: { template : "item" }}]
 
 
 ### series.tooltip.visible<span class="type-signature type boolean">boolean</span>
-{:#series-tooltip-visible}
 {:#series-tooltip-visible}
 
 
@@ -15792,7 +15290,6 @@ series : [{tooltip : {visible : true} }]
 
 ### series.type<span class="type-signature type enum">enum</span>
 {:#series-type}
-{:#series-type}
 
 
 
@@ -15826,7 +15323,6 @@ series : [{type : "column" }]
 
 
 ### series.visibility<span class="type-signature type string">string</span>
-{:#series-visibility}
 {:#series-visibility}
 
 
@@ -15862,7 +15358,6 @@ series : [{visibility: "hidden" }]
 
 ### series.xAxisName<span class="type-signature type string">string</span>
 {:#series-xaxisname}
-{:#series-xAxisName}
 
 
 
@@ -15897,7 +15392,6 @@ series : [{xAxisName: "xAxis" }]
 
 ### series.xName<span class="type-signature type string">string</span>
 {:#series-xname}
-{:#series-xName}
 
 
 
@@ -15932,7 +15426,6 @@ series : [{xName: "XValue" }]
 
 ### series.yAxisName<span class="type-signature type string">string</span>
 {:#series-yaxisname}
-{:#series-yAxisName}
 
 
 
@@ -15967,7 +15460,6 @@ series : [{yAxisName: "yAxis" }]
 
 ### series.yName<span class="type-signature type string">string</span>
 {:#series-yname}
-{:#series-yName}
 
 
 
@@ -16002,7 +15494,6 @@ series : [{yName: "YValue" }]
 
 ### sideBySideSeriesPlacement<span class="type-signature type boolean">boolean</span>
 {:#sidebysideseriesplacement}
-{:#sideBySideSeriesPlacement}
 
 
 
@@ -16036,7 +15527,6 @@ sideBySideSeriesPlacement : true
 
 
 ### theme<span class="type-signature type enum">enum</span>
-{:#theme}
 {:#theme}
 
 
@@ -16072,7 +15562,6 @@ theme : "flatdark"
 
 ### tilt<span class="type-signature type number">number</span>
 {:#tilt}
-{:#tilt}
 
 
 
@@ -16107,7 +15596,6 @@ tilt : 5
 
 ### title<span class="type-signature type object">object</span>
 {:#title}
-{:#title}
 
 
 
@@ -16120,7 +15608,6 @@ Specifies the chart title. This title property denotes the title of the chart.
 
 
 ### title.font<span class="type-signature type object">object</span>
-{:#title-font}
 {:#title-font}
 
 
@@ -16135,7 +15622,6 @@ Specifies the chart title. These are the font properties involved in chart title
 
 ### title.font.fontFamily<span class="type-signature type string">string</span>
 {:#title-font-fontfamily}
-{:#title-font-fontFamily}
 
 
 
@@ -16170,7 +15656,6 @@ title : { font : { fontFamily : "Algerian" } }
 
 ### title.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#title-font-fontstyle}
-{:#title-font-fontStyle}
 
 
 
@@ -16205,7 +15690,6 @@ title : { font : { fontStyle : "italic" } }
 
 ### title.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#title-font-fontweight}
-{:#title-font-fontWeight}
 
 
 
@@ -16239,7 +15723,6 @@ title : { font : { fontWeight : "lighter" } }
 
 
 ### title.font.opacity<span class="type-signature type number">number</span>
-{:#title-font-opacity}
 {:#title-font-opacity}
 
 
@@ -16275,7 +15758,6 @@ title : { font : { opacity : 0.8 } }
 
 ### title.font.size<span class="type-signature type string">string</span>
 {:#title-font-size}
-{:#title-font-size}
 
 
 
@@ -16310,7 +15792,6 @@ title : { font : { size : "22px" } }
 
 ### title.subTitle<span class="type-signature type object">object</span>
 {:#title-subtitle}
-{:#title-subTitle}
 
 
 
@@ -16324,7 +15805,6 @@ Specifies the options to customize the chart subtitle.
 
 ### title.subTitle.font<span class="type-signature type object">object</span>
 {:#title-subtitle-font}
-{:#title-subTitle-font}
 
 
 
@@ -16338,7 +15818,6 @@ Specifies the font options for customizing the subtitle.
 
 ### title.subTitle.font.fontFamily<span class="type-signature type string">string</span>
 {:#title-subtitle-font-fontfamily}
-{:#title-subTitle-font-fontFamily}
 
 
 
@@ -16373,7 +15852,6 @@ title: {subTitle : {font :{ fontFamily : "Algerian" } } }
 
 ### title.subTitle.font.fontStyle<span class="type-signature type enum">enum</span>
 {:#title-subtitle-font-fontstyle}
-{:#title-subTitle-font-fontStyle}
 
 
 
@@ -16408,7 +15886,6 @@ title: { subTitle : {font :{ fontStyle : "Normal" } } }
 
 ### title.subTitle.font.fontWeight<span class="type-signature type enum">enum</span>
 {:#title-subtitle-font-fontweight}
-{:#title-subTitle-font-fontWeight}
 
 
 
@@ -16443,7 +15920,6 @@ title: { subTitle : {font :{ fontWeight : "regular" } } }
 
 ### title.subTitle.font.opacity<span class="type-signature type double">double</span>
 {:#title-subtitle-font-opacity}
-{:#title-subTitle-font-opacity}
 
 
 
@@ -16478,7 +15954,6 @@ title: { subTitle : {font :{ opacity : 0.5 } } }
 
 ### title.subTitle.font.size<span class="type-signature type enum">enum</span>
 {:#title-subtitle-font-size}
-{:#title-subTitle-font-size}
 
 
 
@@ -16513,7 +15988,6 @@ title: { subTitle : {font :{ size : "14px" } } }
 
 ### title.subTitle.text<span class="type-signature type string">string</span>
 {:#title-subtitle-text}
-{:#title-subTitle-text}
 
 
 
@@ -16548,7 +16022,6 @@ title: { subTitle: { text : "Performace chart" } }
 
 ### title.subTitle.textAlignment<span class="type-signature type enum">enum</span>
 {:#title-subtitle-textalignment}
-{:#title-subTitle-textAlignment}
 
 
 
@@ -16582,7 +16055,6 @@ title: { subTitle: { textAlignment : "near" } }
 
 
 ### title.text<span class="type-signature type string">string</span>
-{:#title-text}
 {:#title-text}
 
 
@@ -16618,7 +16090,6 @@ title : { text : "Power Production"}
 
 ### title.textAlignment<span class="type-signature type enum">enum</span>
 {:#title-textalignment}
-{:#title-textAlignment}
 
 
 
@@ -16653,7 +16124,6 @@ title : { textAlignment : "near"}
 
 ### wallSize<span class="type-signature type number">number</span>
 {:#wallsize}
-{:#wallSize}
 
 
 
@@ -16688,7 +16158,6 @@ wallSize : 5
 
 ### zooming<span class="type-signature type object">object</span>
 {:#zooming}
-{:#zooming}
 
 
 
@@ -16701,7 +16170,6 @@ Contains property to customize zooming in chart.
 
 
 ### zooming.enable<span class="type-signature type boolean">boolean</span>
-{:#zooming-enable}
 {:#zooming-enable}
 
 
@@ -16737,7 +16205,6 @@ zooming :{enable :true}
 
 ### zooming.enableDeferredZoom<span class="type-signature type boolean">boolean</span>
 {:#zooming-enabledeferredzoom}
-{:#zooming-enableDeferredZoom}
 
 
 
@@ -16772,7 +16239,6 @@ zooming:{enableDeferredZoom : true}
 
 ### zooming.enableMouseWheel<span class="type-signature type boolean">boolean</span>
 {:#zooming-enablemousewheel}
-{:#zooming-enableMouseWheel}
 
 
 
@@ -16806,7 +16272,6 @@ zooming:{enableMouseWheel : true}
 
 
 ### zooming.type<span class="type-signature type string">string</span>
-{:#zooming-type}
 {:#zooming-type}
 
 
@@ -16846,7 +16311,6 @@ zooming :{type : "y"}
 
 ### exportChart<span class="signature">()</span>
 {:#exportchart}
-{:#exportChart}
 
 
 
@@ -16873,7 +16337,6 @@ this.href = dt;
 
 
 ### redraw<span class="signature">()</span>
-{:#redraw}
 {:#redraw}
 
 
@@ -16913,7 +16376,6 @@ $("#container").ejChart("redraw");
 
 ### animationComplete
 {:#animationcomplete}
-{:#animationComplete}
 
 
 
@@ -16968,7 +16430,6 @@ $("#container").ejChart({
 
 ### axesLabelRendering
 {:#axeslabelrendering}
-{:#axesLabelRendering}
 
 
 
@@ -17028,7 +16489,6 @@ $("#container").ejChart({
 
 ### axesLabelsInitialize
 {:#axeslabelsinitialize}
-{:#axesLabelsInitialize}
 
 
 
@@ -17083,7 +16543,6 @@ $("#container").ejChart({
 
 ### axesRangeCalculate
 {:#axesrangecalculate}
-{:#axesRangeCalculate}
 
 
 
@@ -17138,7 +16597,6 @@ $("#container").ejChart({
 
 ### axesTitleRendering
 {:#axestitlerendering}
-{:#axesTitleRendering}
 
 
 
@@ -17193,7 +16651,6 @@ $("#container").ejChart({
 
 ### chartAreaBoundsCalculate
 {:#chartareaboundscalculate}
-{:#chartAreaBoundsCalculate}
 
 
 
@@ -17248,7 +16705,6 @@ $("#container").ejChart({
 
 ### create
 {:#create}
-{:#create}
 
 
 
@@ -17269,7 +16725,6 @@ $("#container").ejChart("create");</code>
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 
@@ -17292,7 +16747,6 @@ $("#container").ejChart("destroy");</code>
 
 ### displayTextRendering
 {:#displaytextrendering}
-{:#displayTextRendering}
 
 
 
@@ -17347,7 +16801,6 @@ $("#container").ejChart({
 
 ### legendBoundsCalculate
 {:#legendboundscalculate}
-{:#legendBoundsCalculate}
 
 
 
@@ -17402,7 +16855,6 @@ $("#container").ejChart({
 
 ### legendItemClick
 {:#legenditemclick}
-{:#legendItemClick}
 
 
 
@@ -17457,7 +16909,6 @@ $("#container").ejChart({
 
 ### legendItemMouseMove
 {:#legenditemmousemove}
-{:#legendItemMouseMove}
 
 
 
@@ -17512,7 +16963,6 @@ $("#container").ejChart({
 
 ### legendItemRendering
 {:#legenditemrendering}
-{:#legendItemRendering}
 
 
 
@@ -17566,7 +17016,6 @@ $("#container").ejChart({
 
 
 ### load
-{:#load}
 {:#load}
 
 
@@ -17622,7 +17071,6 @@ $("#container").ejChart({
 
 ### pointRegionClick
 {:#pointregionclick}
-{:#pointRegionClick}
 
 
 
@@ -17677,7 +17125,6 @@ $("#container").ejChart({
 
 ### pointRegionMouseMove
 {:#pointregionmousemove}
-{:#pointRegionMouseMove}
 
 
 
@@ -17732,7 +17179,6 @@ $("#container").ejChart({
 
 ### preRender
 {:#prerender}
-{:#preRender}
 
 
 
@@ -17787,7 +17233,6 @@ $("#container").ejChart({
 
 ### seriesRendering
 {:#seriesrendering}
-{:#seriesRendering}
 
 
 
@@ -17842,7 +17287,6 @@ $("#container").ejChart({
 
 ### symbolRendering
 {:#symbolrendering}
-{:#symbolRendering}
 
 
 
@@ -17897,7 +17341,6 @@ $("#container").ejChart({
 
 ### titleRendering
 {:#titlerendering}
-{:#titleRendering}
 
 
 
@@ -17952,7 +17395,6 @@ $("#container").ejChart({
 
 ### toolTipInitialize
 {:#tooltipinitialize}
-{:#toolTipInitialize}
 
 
 
@@ -18007,7 +17449,6 @@ $("#container").ejChart({
 
 ### trackAxisToolTip
 {:#trackaxistooltip}
-{:#trackAxisToolTip}
 
 
 
@@ -18062,7 +17503,6 @@ $("#container").ejChart({
 
 ### trackToolTip
 {:#tracktooltip}
-{:#trackToolTip}
 
 
 

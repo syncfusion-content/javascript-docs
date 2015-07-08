@@ -69,7 +69,6 @@ Requires
 
 ### contentType<span class="type-signature type enum">enum</span>
 {:#contenttype}
-{:#contentType}
 
 
 
@@ -104,7 +103,6 @@ Example
 
 ### cssClass<span class="type-signature type string">string</span>
 {:#cssclass}
-{:#cssClass}
 
 
 
@@ -138,7 +136,6 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
 {:#enabled}
 
 
@@ -174,7 +171,6 @@ Example
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
 {:#enablertl}
-{:#enableRTL}
 
 
 
@@ -211,7 +207,6 @@ Example
 
 ### height<span class="type-signature type number">number</span>
 {:#height}
-{:#height}
 
 
 
@@ -246,7 +241,6 @@ Example
 
 ### htmlAttributes<span class="type-signature type object">object</span>
 {:#htmlattributes}
-{:#htmlAttributes}
 
 
 
@@ -281,7 +275,6 @@ Example
 
 ### imagePosition<span class="type-signature type enum">enum</span>
 {:#imageposition}
-{:#imagePosition}
 
 
 
@@ -321,7 +314,6 @@ Example
 
 ### prefixIcon<span class="type-signature type string">string</span>
 {:#prefixicon}
-{:#prefixIcon}
 
 
 
@@ -360,7 +352,6 @@ Example
 
 ### repeatButton<span class="type-signature type boolean">boolean</span>
 {:#repeatbutton}
-{:#repeatButton}
 
 
 
@@ -395,7 +386,6 @@ Example
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
 {:#showroundedcorner}
-{:#showRoundedCorner}
 
 
 
@@ -429,7 +419,6 @@ Example
 
 
 ### size<span class="type-signature type enum">enum</span>
-{:#size}
 {:#size}
 
 
@@ -465,7 +454,6 @@ Example
 
 ### suffixIcon<span class="type-signature type string">string</span>
 {:#suffixicon}
-{:#suffixIcon}
 
 
 
@@ -505,7 +493,6 @@ Example
 
 ### text<span class="type-signature type string">string</span>
 {:#text}
-{:#text}
 
 
 
@@ -540,7 +527,6 @@ Example
 
 ### timeInterval<span class="type-signature type string">string</span>
 {:#timeinterval}
-{:#timeInterval}
 
 
 
@@ -577,7 +563,6 @@ Example
 
 ### type<span class="type-signature type enum">enum</span> <span class="type-signature type string">string</span>
 {:#type}
-{:#type}
 
 
 
@@ -611,7 +596,6 @@ Example
 
 
 ### width<span class="type-signature type number">number</span>
-{:#width}
 {:#width}
 
 
@@ -651,7 +635,6 @@ Example
 
 ### destroy<span class="signature">()</span>
 {:#destroy}
-{:#destroy}
 
 
 
@@ -689,7 +672,6 @@ $("#button1").ejButton("destroy");
 
 ### disable<span class="signature">()</span>
 {:#disable}
-{:#disable}
 
 
 
@@ -726,7 +708,6 @@ $("#button1").ejButton("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#enable}
 {:#enable}
 
 
@@ -768,7 +749,6 @@ $("#button1").ejButton("enable");
 
 
 ### click
-{:#click}
 {:#click}
 
 
@@ -847,7 +827,6 @@ $("#button1").ejButton({
 
 ### create
 {:#create}
-{:#create}
 
 
 
@@ -919,7 +898,6 @@ $("#button1").ejButton({
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 

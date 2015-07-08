@@ -69,7 +69,6 @@ Requires
 
 ### buttonSize<span class="type-signature type number">number</span>
 {:#buttonsize}
-{:#buttonSize}
 
 
 
@@ -119,7 +118,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#enabled}
 {:#enabled}
 
 
@@ -171,7 +169,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
 {:#enablepersistence}
-{:#enablePersistence}
 
 
 
@@ -222,7 +219,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
 {:#enablertl}
-{:#enableRTL}
 
 
 
@@ -273,7 +269,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 ### enableTouchScroll<span class="type-signature type boolean">boolean</span>
 {:#enabletouchscroll}
-{:#enableTouchScroll}
 
 
 
@@ -323,7 +318,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### height<span class="type-signature type number">number</span>
-{:#height}
 {:#height}
 
 
@@ -375,7 +369,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 ### scrollerSize<span class="type-signature type number">number</span>
 {:#scrollersize}
-{:#scrollerSize}
 
 
 
@@ -427,7 +420,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 ### scrollLeft<span class="type-signature type number">number</span>
 {:#scrollleft}
-{:#scrollLeft}
 
 
 
@@ -478,7 +470,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 ### scrollOneStepBy<span class="type-signature type number">number</span>
 {:#scrollonestepby}
-{:#scrollOneStepBy}
 
 
 
@@ -529,7 +520,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 ### scrollTop<span class="type-signature type number">number</span>
 {:#scrolltop}
-{:#scrollTop}
 
 
 
@@ -580,7 +570,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 ### targetPane<span class="type-signature type string">string</span>
 {:#targetpane}
-{:#targetPane}
 
 
 
@@ -630,7 +619,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### width<span class="type-signature type number">number</span>
-{:#width}
 {:#width}
 
 
@@ -685,7 +673,6 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 ### destroy<span class="signature">()</span>
-{:#destroy}
 {:#destroy}
 
 
@@ -753,7 +740,6 @@ $("#scrollcontent").ejScroller("destroy");
 
 
 ### disable<span class="signature">()</span>
-{:#disable}
 {:#disable}
 
 
@@ -824,7 +810,6 @@ $("#scrollcontent").ejScroller("disable");
 
 ### enable<span class="signature">()</span>
 {:#enable}
-{:#enable}
 
 
 
@@ -894,7 +879,6 @@ $("#scrollcontent").ejScroller("enable");
 
 ### isHScroll<span class="signature">()</span>
 {:#ishscroll}
-{:#isHScroll}
 
 
 
@@ -905,7 +889,6 @@ Returns horizontal scrollbar is shown or not.
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 value
 
@@ -968,7 +951,6 @@ $("#scrollcontent").ejScroller("isHScroll");
 
 ### isVScroll<span class="signature">()</span>
 {:#isvscroll}
-{:#isVScroll}
 
 
 
@@ -979,7 +961,6 @@ Returns vertical scrollbar is shown or not.
 
 #### Returns:
 {:#returns:}
-{:#Returns:}
 
 value
 
@@ -1043,7 +1024,6 @@ $("#scrollcontent").ejScrollBar("isVScroll");
 
 
 ### refresh<span class="signature">()</span>
-{:#refresh}
 {:#refresh}
 
 
@@ -1114,7 +1094,6 @@ $("#scrollcontent").ejScroller("refresh");
 
 ### scrollX<span class="signature">()</span>
 {:#scrollx}
-{:#scrollX}
 
 
 
@@ -1186,7 +1165,6 @@ $("#scrollcontent").ejScroller("scrollX", 25,false,1000);       // call scrollX 
 
 ### scrollY<span class="signature">()</span>
 {:#scrolly}
-{:#scrollY}
 
 
 
@@ -1261,7 +1239,6 @@ $("#scrollcontent").ejScroller("scrollY", 25,false,1000);       // call scrollY 
 
 
 ### create
-{:#create}
 {:#create}
 
 
@@ -1348,7 +1325,6 @@ $("#scrollcontent").ejScroller({
 
 
 ### destroy
-{:#destroy}
 {:#destroy}
 
 
