@@ -429,7 +429,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Scales_images/Ticks_img1.png" %}
+{% include image.html url="/js/OlapGauge/Scales_images/Ticks_img2.png" %}
 
 ## Indicators
 

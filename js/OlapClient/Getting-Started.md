@@ -41,6 +41,7 @@ As the **OLAP Control** is the key for each and every operation, initially you n
 When you perform any operation such as drill up/down, filtering, sorting etc., you need to send OLAP Reports from the client-side to the service in a de-serialized and updated format.
 Further operations are carried with updated OLAP Reports only and you can send the updated OLAP Reports back to client-side with **JSON** data in a serialized format again.
 This process has the OLAP Reports always updated. You cannot operate serialized OLAP Reports in client-side and hence it is carried to service for performing  the update operation.
+   
    1. Saving and Loading Report in Database:  You can save and load the reports available in **OlapClient** control via service only. This is not applicable at the client-side. You can serialize the OLAP Report and save to database as stream.  Also you can load back from database via service.
    2. Exporting: You can export **OLAP** values and information to excel sheet via service only. So this provides feasible option to save and view **OLAP** information.
 
