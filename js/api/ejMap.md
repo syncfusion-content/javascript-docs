@@ -11,9 +11,6 @@ metacontent:
 
 
 
-# Class: ejMap
-
-
 The map can be easily configured to the DOM element, such as div and can be created with a highly customized look and feel.
 
 
@@ -5470,17 +5467,4 @@ $("#container").ejMap({
    zoomedOut: function () {}
 });</code>
 </pre>
-
-
-
-
-
-
-
-
-<a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
-
-
-
-
 

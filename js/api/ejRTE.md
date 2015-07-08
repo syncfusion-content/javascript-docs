@@ -3433,13 +3433,3 @@ $("#rteSample").ejRTE({
 &lt;/script&gt;    </code>
 </pre>
 
-
-
-<a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &#169; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
-
-
-<script type="text/javascript">
-prettyPrint();
-</script><script src="scripts/linenumber.js" type="text/javascript">
-</script><script src="scripts/main.js" type="text/javascript">
-</script>

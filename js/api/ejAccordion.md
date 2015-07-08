@@ -5552,8 +5552,3 @@ Syncfusion Metro Studio is a collection of over 2500 Metro-style icon templates 
 });
 &lt;/script&gt;</code>
 </pre>
-
-
----
-layout: post
-title: ejAccordion

@@ -730,19 +730,3 @@ $("#dragable").ejDraggable({
 });      
 </pre>
 
-
-
-
-
-
-
-<code><a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a></code>
-
-
-
-
-<script type="text/javascript">
-prettyPrint();
-</script><script src="scripts/linenumber.js" type="text/javascript">
-</script><script src="scripts/main.js" type="text/javascript">
-</script>
