@@ -95,7 +95,7 @@ _Context Menu in Footer_
 
 ##Context Menu Items
 
-To enable the Context Menu feature, it displays all the options by default . When you want to display only the selected items in the Context Menu, use `contextMenuItems` property in `contextMenuSettings`. The following code example explains you on how to create Context Menu with selected items.
+The Context Menu feature displays all the options by default . When you want to display only the selected items in the Context Menu, use `contextMenuItems` property in `contextMenuSettings`. The following code example explains you on how to create Context Menu with selected items.
     
 {% highlight html %}
 
