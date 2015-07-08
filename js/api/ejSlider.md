@@ -79,7 +79,7 @@ Requires
 
 
 ### animationSpeed<span class="type-signature type number">number</span>
-{:#members-animationspeed}
+{:#members:animationspeed}
 
 
 
@@ -128,7 +128,7 @@ $("#slider").ejSlider({ animationSpeed: 500});
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -177,7 +177,7 @@ Example
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
-{:#members-enableanimation}
+{:#members:enableanimation}
 
 
 
@@ -226,7 +226,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#members-enabled}
+{:#members:enabled}
 
 
 
@@ -274,7 +274,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#members-enablepersistence}
+{:#members:enablepersistence}
 
 
 
@@ -322,7 +322,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#members-enablertl}
+{:#members:enablertl}
 
 
 
@@ -373,7 +373,7 @@ Example
 
 
 ### height<span class="type-signature type string">String</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -421,7 +421,7 @@ Example
 
 
 ### incrementStep<span class="type-signature type number">number</span>
-{:#members-incrementstep}
+{:#members:incrementstep}
 
 
 
@@ -471,7 +471,7 @@ Example
 
 
 ### largeStep<span class="type-signature type number">number</span>
-{:#members-largestep}
+{:#members:largestep}
 
 
 
@@ -521,7 +521,7 @@ Example
 
 
 ### maxValue<span class="type-signature type number">number</span>
-{:#members-maxvalue}
+{:#members:maxvalue}
 
 
 
@@ -571,7 +571,7 @@ Example
 
 
 ### minValue<span class="type-signature type number">number</span>
-{:#members-minvalue}
+{:#members:minvalue}
 
 
 
@@ -622,7 +622,7 @@ Example
 
 
 ### orientation<span class="type-signature type enum">enum</span>
-{:#members-orientation}
+{:#members:orientation}
 
 
 
@@ -670,7 +670,7 @@ $("#slider").ejSlider({ orientation: ej.Orientation.Vertical});
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
-{:#members-readonly}
+{:#members:readonly}
 
 
 
@@ -718,7 +718,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#members-showroundedcorner}
+{:#members:showroundedcorner}
 
 
 
@@ -766,7 +766,7 @@ Example
 
 
 ### showScale<span class="type-signature type boolean">boolean</span>
-{:#members-showscale}
+{:#members:showscale}
 
 
 
@@ -816,7 +816,7 @@ Example
 
 
 ### showSmallTicks<span class="type-signature type boolean">boolean</span>
-{:#members-showsmallticks}
+{:#members:showsmallticks}
 
 
 
@@ -866,7 +866,7 @@ Example
 
 
 ### showTooltip<span class="type-signature type boolean">boolean</span>
-{:#members-showtooltip}
+{:#members:showtooltip}
 
 
 
@@ -917,7 +917,7 @@ Example
 
 
 ### sliderType<span class="type-signature type enum">enum</span>
-{:#members-slidertype}
+{:#members:slidertype}
 
 
 
@@ -966,7 +966,7 @@ $("#slider").ejSlider({ sliderType: ej.SliderType.Default});
 
 
 ### smallStep<span class="type-signature type number">number</span>
-{:#members-smallstep}
+{:#members:smallstep}
 
 
 
@@ -1016,7 +1016,7 @@ Example
 
 
 ### value<span class="type-signature type number">number</span>
-{:#members-value}
+{:#members:value}
 
 
 
@@ -1066,7 +1066,7 @@ Example
 
 
 ### values<span class="type-signature type array">array</span>
-{:#members-values}
+{:#members:values}
 
 
 
@@ -1116,7 +1116,7 @@ Example
 
 
 ### width<span class="type-signature type string">String</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -1172,7 +1172,7 @@ Example
 
 
 ### disable<span class="signature">()</span>
-{:#methods-disable}
+{:#methods:disable}
 
 
 
@@ -1218,7 +1218,7 @@ $("#slider").ejSlider("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#methods-enable}
+{:#methods:enable}
 
 
 
@@ -1264,7 +1264,7 @@ $("#slider").ejSlider("enable");
 
 
 ### getValue<span class="signature">()</span>
-{:#methods-getvalue}
+{:#methods:getvalue}
 
 
 
@@ -1317,7 +1317,7 @@ $("#slider").ejSlider("getValue");
 
 
 ### change
-{:#events-change}
+{:#events:change}
 
 
 
@@ -1410,7 +1410,7 @@ $("#slider").ejSlider({
 
 
 ### create
-{:#events-create}
+{:#events:create}
 
 
 
@@ -1488,7 +1488,7 @@ $("#slider").ejSlider({
 
 
 ### destroy
-{:#events-destroy}
+{:#events:destroy}
 
 
 
@@ -1566,7 +1566,7 @@ $("#slider").ejSlider({
 
 
 ### slide
-{:#events-slide}
+{:#events:slide}
 
 
 
@@ -1659,7 +1659,7 @@ $("#slider").ejSlider({
 
 
 ### start
-{:#events-start}
+{:#events:start}
 
 
 
@@ -1752,7 +1752,7 @@ $("#slider").ejSlider({
 
 
 ### stop
-{:#events-stop}
+{:#events:stop}
 
 
 

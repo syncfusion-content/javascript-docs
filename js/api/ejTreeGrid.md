@@ -81,7 +81,7 @@ Requires
 
 
 ### allowColumnResize<span class="type-signature type boolean">boolean</span>
-{:#members-allowcolumnresize}
+{:#members:allowcolumnresize}
 
 
 
@@ -129,7 +129,7 @@ Example
 
 
 ### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
-{:#members-allowdraganddrop}
+{:#members:allowdraganddrop}
 
 
 
@@ -178,7 +178,7 @@ Example
 
 
 ### allowFiltering<span class="type-signature type boolean">boolean</span>
-{:#members-allowfiltering}
+{:#members:allowfiltering}
 
 
 
@@ -227,7 +227,7 @@ Example
 
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
-{:#members-allowkeyboardnavigation}
+{:#members:allowkeyboardnavigation}
 
 
 
@@ -275,7 +275,7 @@ Example
 
 
 ### allowMultiSorting<span class="type-signature type boolean">boolean</span>
-{:#members-allowmultisorting}
+{:#members:allowmultisorting}
 
 
 
@@ -323,7 +323,7 @@ Example
 
 
 ### allowSelection<span class="type-signature type boolean">boolean</span>
-{:#members-allowselection}
+{:#members:allowselection}
 
 
 
@@ -371,7 +371,7 @@ Example
 
 
 ### allowSorting<span class="type-signature type boolean">boolean</span>
-{:#members-allowsorting}
+{:#members:allowsorting}
 
 
 
@@ -420,7 +420,7 @@ Example
 
 
 ### altRowTemplateID<span class="type-signature type string">string</span>
-{:#members-altrowtemplateid}
+{:#members:altrowtemplateid}
 
 
 
@@ -471,7 +471,7 @@ Example
 
 
 ### columns<span class="type-signature type array">array</span>
-{:#members-columns}
+{:#members:columns}
 
 
 
@@ -508,7 +508,7 @@ Example
 
 
 ### columns.allowFiltering<span class="type-signature type boolean">boolean</span>
-{:#members-columns-allowfiltering}
+{:#members:columns-allowfiltering}
 
 
 
@@ -557,7 +557,7 @@ Example
 
 
 ### columns.allowSorting<span class="type-signature type boolean">boolean</span>
-{:#members-columns-allowsorting}
+{:#members:columns-allowsorting}
 
 
 
@@ -606,7 +606,7 @@ Example
 
 
 ### columns.editType<span class="type-signature type string">string</span>
-{:#members-columns-edittype}
+{:#members:columns-edittype}
 
 
 
@@ -654,7 +654,7 @@ Example
 
 
 ### columns.field<span class="type-signature type string">string</span>
-{:#members-columns-field}
+{:#members:columns-field}
 
 
 
@@ -702,7 +702,7 @@ Example
 
 
 ### columns.filterEditType<span class="type-signature type string">string</span>
-{:#members-columns-filteredittype}
+{:#members:columns-filteredittype}
 
 
 
@@ -750,7 +750,7 @@ Example
 
 
 ### columns.headerText<span class="type-signature type string">string</span>
-{:#members-columns-headertext}
+{:#members:columns-headertext}
 
 
 
@@ -798,7 +798,7 @@ Example
 
 
 ### columns.visible<span class="type-signature type boolean">boolean</span>
-{:#members-columns-visible}
+{:#members:columns-visible}
 
 
 
@@ -846,7 +846,7 @@ Example
 
 
 ### contextMenuSettings<span class="type-signature type object">object</span>
-{:#members-contextmenusettings}
+{:#members:contextmenusettings}
 
 
 
@@ -868,7 +868,7 @@ Specifies the contextMenuSettings options.
 
 
 ### contextMenuSettings.contextMenuItems<span class="type-signature type array">array</span>
-{:#members-contextmenusettings-contextmenuitems}
+{:#members:contextmenusettings-contextmenuitems}
 
 
 
@@ -916,7 +916,7 @@ Example
 
 
 ### contextMenuSettings.showContextMenu<span class="type-signature type boolean">boolean</span>
-{:#members-contextmenusettings-showcontextmenu}
+{:#members:contextmenusettings-showcontextmenu}
 
 
 
@@ -964,7 +964,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -1012,7 +1012,7 @@ Example
 
 
 ### dataSource<span class="type-signature type array">array</span>
-{:#members-datasource}
+{:#members:datasource}
 
 
 
@@ -1063,7 +1063,7 @@ Example
 
 
 ### dragTooltip<span class="type-signature type object">object</span>
-{:#members-dragtooltip}
+{:#members:dragtooltip}
 
 
 
@@ -1085,7 +1085,7 @@ Specifies the drag Tooltip options.
 
 
 ### dragTooltip.showTooltip<span class="type-signature type boolean">boolean</span>
-{:#members-dragtooltip-showtooltip}
+{:#members:dragtooltip-showtooltip}
 
 
 
@@ -1133,7 +1133,7 @@ Example
 
 
 ### dragTooltip.tooltipItems<span class="type-signature type array">array</span>
-{:#members-dragtooltip-tooltipitems}
+{:#members:dragtooltip-tooltipitems}
 
 
 
@@ -1181,7 +1181,7 @@ Example
 
 
 ### dragTooltip.tooltipTemplate<span class="type-signature type string">string</span>
-{:#members-dragtooltip-tooltiptemplate}
+{:#members:dragtooltip-tooltiptemplate}
 
 
 
@@ -1229,7 +1229,7 @@ Example
 
 
 ### editSettings<span class="type-signature type object">object</span>
-{:#members-editsettings}
+{:#members:editsettings}
 
 
 
@@ -1251,7 +1251,7 @@ Specifies the editSettings options in treegrid.
 
 
 ### editSettings.allowAdding<span class="type-signature type boolean">boolean</span>
-{:#members-editsettings-allowadding}
+{:#members:editsettings-allowadding}
 
 
 
@@ -1299,7 +1299,7 @@ Example
 
 
 ### editSettings.allowDeleting<span class="type-signature type boolean">boolean</span>
-{:#members-editsettings-allowdeleting}
+{:#members:editsettings-allowdeleting}
 
 
 
@@ -1347,7 +1347,7 @@ Example
 
 
 ### editSettings.allowEditing<span class="type-signature type boolean">boolean</span>
-{:#members-editsettings-allowediting}
+{:#members:editsettings-allowediting}
 
 
 
@@ -1395,7 +1395,7 @@ Example
 
 
 ### editSettings.editMode<span class="type-signature type string">string</span>
-{:#members-editsettings-editmode}
+{:#members:editsettings-editmode}
 
 
 
@@ -1443,7 +1443,7 @@ Example
 
 
 ### editSettings.rowPosition<span class="type-signature type string">string</span>
-{:#members-editsettings-rowposition}
+{:#members:editsettings-rowposition}
 
 
 
@@ -1491,7 +1491,7 @@ Example
 
 
 ### enableAltRow<span class="type-signature type boolean">boolean</span>
-{:#members-enablealtrow}
+{:#members:enablealtrow}
 
 
 
@@ -1539,7 +1539,7 @@ Example
 
 
 ### enableCollapseAll<span class="type-signature type boolean">boolean</span>
-{:#members-enablecollapseall}
+{:#members:enablecollapseall}
 
 
 
@@ -1590,7 +1590,7 @@ Example
 
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
-{:#members-enableresize}
+{:#members:enableresize}
 
 
 
@@ -1638,7 +1638,7 @@ Example
 
 
 ### enableVirtualization<span class="type-signature type boolean">boolean</span>
-{:#members-enablevirtualization}
+{:#members:enablevirtualization}
 
 
 
@@ -1686,7 +1686,7 @@ Example
 
 
 ### filterBarMode<span class="type-signature type enum">enum</span>
-{:#members-filterbarmode}
+{:#members:filterbarmode}
 
 
 
@@ -1735,7 +1735,7 @@ Example
 
 
 ### idMapping<span class="type-signature type string">string</span>
-{:#members-idmapping}
+{:#members:idmapping}
 
 
 
@@ -1783,7 +1783,7 @@ Example
 
 
 ### parentIdMapping<span class="type-signature type string">string</span>
-{:#members-parentidmapping}
+{:#members:parentidmapping}
 
 
 
@@ -1831,7 +1831,7 @@ Example
 
 
 ### query<span class="type-signature type object">object</span>
-{:#members-query}
+{:#members:query}
 
 
 
@@ -1881,7 +1881,7 @@ Example
 
 
 ### rowHeight<span class="type-signature type number">number</span>
-{:#members-rowheight}
+{:#members:rowheight}
 
 
 
@@ -1931,7 +1931,7 @@ Example
 
 
 ### rowTemplateID<span class="type-signature type string">string</span>
-{:#members-rowtemplateid}
+{:#members:rowtemplateid}
 
 
 
@@ -1982,7 +1982,7 @@ Example
 
 
 ### selectedItem<span class="type-signature type numeric">numeric</span>
-{:#members-selecteditem}
+{:#members:selecteditem}
 
 
 
@@ -2030,7 +2030,7 @@ Example
 
 
 ### selectedRowIndex<span class="type-signature type number">number</span>
-{:#members-selectedrowindex}
+{:#members:selectedrowindex}
 
 
 
@@ -2081,7 +2081,7 @@ Example
 
 
 ### selectionType<span class="type-signature type string">string</span>
-{:#members-selectiontype}
+{:#members:selectiontype}
 
 
 
@@ -2129,7 +2129,7 @@ Example
 
 
 ### showColumnChooser<span class="type-signature type boolean">boolean</span>
-{:#members-showcolumnchooser}
+{:#members:showcolumnchooser}
 
 
 
@@ -2177,7 +2177,7 @@ Example
 
 
 ### showGridCellTooltip<span class="type-signature type boolean">boolean</span>
-{:#members-showgridcelltooltip}
+{:#members:showgridcelltooltip}
 
 
 
@@ -2226,7 +2226,7 @@ Example
 
 
 ### showGridExpandCellTooltip<span class="type-signature type boolean">boolean</span>
-{:#members-showgridexpandcelltooltip}
+{:#members:showgridexpandcelltooltip}
 
 
 
@@ -2275,7 +2275,7 @@ Example
 
 
 ### sizeSettings<span class="type-signature type object">object</span>
-{:#members-sizesettings}
+{:#members:sizesettings}
 
 
 
@@ -2297,7 +2297,7 @@ Specifies the size options for Treegrid.
 
 
 ### sizeSettings.height<span class="type-signature type string">string</span>
-{:#members-sizesettings-height}
+{:#members:sizesettings-height}
 
 
 
@@ -2345,7 +2345,7 @@ Example
 
 
 ### sizeSettings.width<span class="type-signature type string">string</span>
-{:#members-sizesettings-width}
+{:#members:sizesettings-width}
 
 
 
@@ -2393,7 +2393,7 @@ Example
 
 
 ### sortSettings<span class="type-signature type object">object</span>
-{:#members-sortsettings}
+{:#members:sortsettings}
 
 
 
@@ -2415,7 +2415,7 @@ Specifes the sorting options for Treegrid.
 
 
 ### sortSettings.sortedColumns<span class="type-signature type array">array</span>
-{:#members-sortsettings-sortedcolumns}
+{:#members:sortsettings-sortedcolumns}
 
 
 
@@ -2463,7 +2463,7 @@ Example
 
 
 ### toolbarSettings<span class="type-signature type object">object</span>
-{:#members-toolbarsettings}
+{:#members:toolbarsettings}
 
 
 
@@ -2485,7 +2485,7 @@ Specifies the toolbarSettings options.
 
 
 ### toolbarSettings.showToolBar<span class="type-signature type boolean">boolean</span>
-{:#members-toolbarsettings-showtoolbar}
+{:#members:toolbarsettings-showtoolbar}
 
 
 
@@ -2533,7 +2533,7 @@ Example
 
 
 ### toolbarSettings.toolbarItems<span class="type-signature type array">array</span>
-{:#members-toolbarsettings-toolbaritems}
+{:#members:toolbarsettings-toolbaritems}
 
 
 
@@ -2581,7 +2581,7 @@ Example
 
 
 ### treeColumnIndex<span class="type-signature type number">number</span>
-{:#members-treecolumnindex}
+{:#members:treecolumnindex}
 
 
 
@@ -2639,7 +2639,7 @@ Example
 
 
 ### clearSelection<span class="signature">(index)</span>
-{:#methods-clearselection}
+{:#methods:clearselection}
 
 
 
@@ -2699,7 +2699,7 @@ $("#treegrid").ejTreeGrid("clearSelection",2);
 
 
 ### collapseAll<span class="signature">()</span>
-{:#methods-collapseall}
+{:#methods:collapseall}
 
 
 
@@ -2743,7 +2743,7 @@ $("#treegrid").ejTreeGrid("collapseAll");
 
 
 ### hideColumn<span class="signature">(headerText)</span>
-{:#methods-hidecolumn}
+{:#methods:hidecolumn}
 
 
 
@@ -2795,7 +2795,7 @@ treegridObj.hideColumn("Task Name");
 
 
 ### refresh<span class="signature">(dataSource, query)</span>
-{:#methods-refresh}
+{:#methods:refresh}
 
 
 
@@ -2853,7 +2853,7 @@ treegridObj.refresh(dataManager, query) // To refresh the tree grid content
 
 
 ### saveCell<span class="signature">()</span>
-{:#methods-savecell}
+{:#methods:savecell}
 
 
 
@@ -2897,7 +2897,7 @@ $("#treegrid").ejTreeGrid("saveCell");
 
 
 ### search<span class="signature">(searchString)</span>
-{:#methods-search}
+{:#methods:search}
 
 
 
@@ -2957,7 +2957,7 @@ $("#treegrid").ejTreeGrid("search","Plan");
 
 
 ### showColumn<span class="signature">(headerText)</span>
-{:#methods-showcolumn}
+{:#methods:showcolumn}
 
 
 
@@ -3008,7 +3008,7 @@ treegridObj.showColumn("Task Name");
 
 
 ### sortColumn<span class="signature">(columnName, columnSortDirection)</span>
-{:#methods-sortcolumn}
+{:#methods:sortcolumn}
 
 
 
@@ -3080,7 +3080,7 @@ $("#treegrid").ejTreeGrid("sortColumn","Start Date", ej.sortOrder.Descending);
 
 
 ### actionBegin
-{:#events-actionbegin}
+{:#events:actionbegin}
 
 
 
@@ -3298,7 +3298,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### actionComplete
-{:#events-actioncomplete}
+{:#events:actioncomplete}
 
 
 
@@ -3580,7 +3580,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### beginEdit
-{:#events-beginedit}
+{:#events:beginedit}
 
 
 
@@ -3667,7 +3667,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### collapsed
-{:#events-collapsed}
+{:#events:collapsed}
 
 
 
@@ -3744,7 +3744,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### collapsing
-{:#events-collapsing}
+{:#events:collapsing}
 
 
 
@@ -3821,7 +3821,7 @@ $("#TreeGrid").ejTreeGrid({
 
 
 ### contextMenuOpen
-{:#events-contextmenuopen}
+{:#events:contextmenuopen}
 
 
 
@@ -3908,7 +3908,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### endEdit
-{:#events-endedit}
+{:#events:endedit}
 
 
 
@@ -4000,7 +4000,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### expanded
-{:#events-expanded}
+{:#events:expanded}
 
 
 
@@ -4077,7 +4077,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### expanding
-{:#events-expanding}
+{:#events:expanding}
 
 
 
@@ -4154,7 +4154,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### load
-{:#events-load}
+{:#events:load}
 
 
 
@@ -4231,7 +4231,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### queryCellInfo
-{:#events-querycellinfo}
+{:#events:querycellinfo}
 
 
 
@@ -4318,7 +4318,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowDataBound
-{:#events-rowdatabound}
+{:#events:rowdatabound}
 
 
 
@@ -4395,7 +4395,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowDrag
-{:#events-rowdrag}
+{:#events:rowdrag}
 
 
 
@@ -4502,7 +4502,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowDragStart
-{:#events-rowdragstart}
+{:#events:rowdragstart}
 
 
 
@@ -4594,7 +4594,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowDragStop
-{:#events-rowdragstop}
+{:#events:rowdragstop}
 
 
 
@@ -4696,7 +4696,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowSelected
-{:#events-rowselected}
+{:#events:rowselected}
 
 
 
@@ -4778,7 +4778,7 @@ $("#treegrid").ejTreeGrid({
 
 
 ### rowSelecting
-{:#events-rowselecting}
+{:#events:rowselecting}
 
 
 

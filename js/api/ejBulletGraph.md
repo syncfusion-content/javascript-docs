@@ -78,7 +78,7 @@ Requires
 
 
 ### applyRangeStrokeToLabels<span class="type-signature type boolean">boolean</span>
-{:#members-applyrangestroketolabels}
+{:#members:applyrangestroketolabels}
 
 
 
@@ -128,7 +128,7 @@ applyRangeStrokeToLabels : true
 
 
 ### applyRangeStrokeToTicks<span class="type-signature type boolean">boolean</span>
-{:#members-applyrangestroketoticks}
+{:#members:applyrangestroketoticks}
 
 
 
@@ -178,7 +178,7 @@ applyRangeStrokeToTicks : true
 
 
 ### captionSettings<span class="type-signature type object">object</span>
-{:#members-captionsettings}
+{:#members:captionsettings}
 
 
 
@@ -200,7 +200,7 @@ Contains property to customize the caption in bullet graph.
 
 
 ### captionSettings.enableTrim<span class="type-signature type boolean">boolean</span>
-{:#members-captionsettings-enabletrim}
+{:#members:captionsettings-enabletrim}
 
 
 
@@ -250,7 +250,7 @@ captionSettings :{ enableTrim : true }
 
 
 ### captionSettings.font<span class="type-signature type object">object</span>
-{:#members-captionsettings-font}
+{:#members:captionsettings-font}
 
 
 
@@ -272,7 +272,7 @@ Contains property to customize the font of caption.
 
 
 ### captionSettings.font.color<span class="type-signature type string">string</span>
-{:#members-captionsettings-font-color}
+{:#members:captionsettings-font-color}
 
 
 
@@ -322,7 +322,7 @@ captionSettings :{font :{color : "green"}}
 
 
 ### captionSettings.font.fontFamily<span class="type-signature type string">string</span>
-{:#members-captionsettings-font-fontfamily}
+{:#members:captionsettings-font-fontfamily}
 
 
 
@@ -372,7 +372,7 @@ captionSettings :{font :{fontFamily : "algerian"}}
 
 
 ### captionSettings.font.fontStyle<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-font-fontstyle}
+{:#members:captionsettings-font-fontstyle}
 
 
 
@@ -422,7 +422,7 @@ captionSettings :{font :{fontStyle : "italic"}}
 
 
 ### captionSettings.font.fontWeight<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-font-fontweight}
+{:#members:captionsettings-font-fontweight}
 
 
 
@@ -472,7 +472,7 @@ captionSettings :{font :{fontWeight : "lighter"}}
 
 
 ### captionSettings.font.opacity<span class="type-signature type number">number</span>
-{:#members-captionsettings-font-opacity}
+{:#members:captionsettings-font-opacity}
 
 
 
@@ -522,7 +522,7 @@ captionSettings :{font :{opacity : 0.5}}
 
 
 ### captionSettings.font.size<span class="type-signature type string">string</span>
-{:#members-captionsettings-font-size}
+{:#members:captionsettings-font-size}
 
 
 
@@ -572,7 +572,7 @@ captionSettings :{font :{size : "14px"}}
 
 
 ### captionSettings.indicator<span class="type-signature type object">object</span>
-{:#members-captionsettings-indicator}
+{:#members:captionsettings-indicator}
 
 
 
@@ -594,7 +594,7 @@ Contains property to customize the indicator.
 
 
 ### captionSettings.indicator.font<span class="type-signature type object">object</span>
-{:#members-captionsettings-indicator-font}
+{:#members:captionsettings-indicator-font}
 
 
 
@@ -616,7 +616,7 @@ Contains property to customize the font of indicator.
 
 
 ### captionSettings.indicator.font.color<span class="type-signature type string">string</span>
-{:#members-captionsettings-indicator-font-color}
+{:#members:captionsettings-indicator-font-color}
 
 
 
@@ -666,7 +666,7 @@ captionSettings :{indicator :{font : { color :"green" }}}
 
 
 ### captionSettings.indicator.font.fontFamily<span class="type-signature type string">string</span>
-{:#members-captionsettings-indicator-font-fontfamily}
+{:#members:captionsettings-indicator-font-fontfamily}
 
 
 
@@ -716,7 +716,7 @@ captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}
 
 
 ### captionSettings.indicator.font.fontStyle<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-indicator-font-fontstyle}
+{:#members:captionsettings-indicator-font-fontstyle}
 
 
 
@@ -766,7 +766,7 @@ captionSettings :{indicator :{font : { fontStyle :"italic" }}}
 
 
 ### captionSettings.indicator.font.fontWeight<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-indicator-font-fontweight}
+{:#members:captionsettings-indicator-font-fontweight}
 
 
 
@@ -816,7 +816,7 @@ captionSettings :{indicator :{font : { fontWeight :"lighter" }}}
 
 
 ### captionSettings.indicator.font.opacity<span class="type-signature type number">Number</span>
-{:#members-captionsettings-indicator-font-opacity}
+{:#members:captionsettings-indicator-font-opacity}
 
 
 
@@ -866,7 +866,7 @@ captionSettings :{indicator :{font : { opacity : 0.5 }}}
 
 
 ### captionSettings.indicator.font.size<span class="type-signature type string">string</span>
-{:#members-captionsettings-indicator-font-size}
+{:#members:captionsettings-indicator-font-size}
 
 
 
@@ -916,7 +916,7 @@ captionSettings :{indicator :{font : { size :"14px" }}}
 
 
 ### captionSettings.indicator.location<span class="type-signature type object">object</span>
-{:#members-captionsettings-indicator-location}
+{:#members:captionsettings-indicator-location}
 
 
 
@@ -938,7 +938,7 @@ Contains property to customize the location of indicator.
 
 
 ### captionSettings.indicator.location.x<span class="type-signature type number">number</span>
-{:#members-captionsettings-indicator-location-x}
+{:#members:captionsettings-indicator-location-x}
 
 
 
@@ -988,7 +988,7 @@ captionSettings :{indicator :{location : { x :12 }}}
 
 
 ### captionSettings.indicator.location.y<span class="type-signature type number">number</span>
-{:#members-captionsettings-indicator-location-y}
+{:#members:captionsettings-indicator-location-y}
 
 
 
@@ -1038,7 +1038,7 @@ captionSettings :{indicator :{location : { y :60 }}}
 
 
 ### captionSettings.indicator.padding<span class="type-signature type number">number</span>
-{:#members-captionsettings-indicator-padding}
+{:#members:captionsettings-indicator-padding}
 
 
 
@@ -1088,7 +1088,7 @@ captionSettings :{ indicator: {padding: 5}}
 
 
 ### captionSettings.indicator.symbol<span class="type-signature type object">object</span>
-{:#members-captionsettings-indicator-symbol}
+{:#members:captionsettings-indicator-symbol}
 
 
 
@@ -1110,7 +1110,7 @@ Contains property to customize the symbol of indicator.
 
 
 ### captionSettings.indicator.symbol.border<span class="type-signature type object">object</span>
-{:#members-captionsettings-indicator-symbol-border}
+{:#members:captionsettings-indicator-symbol-border}
 
 
 
@@ -1132,7 +1132,7 @@ Contains property to customize the border of indicator symbol.
 
 
 ### captionSettings.indicator.symbol.border.color<span class="type-signature type string">string</span>
-{:#members-captionsettings-indicator-symbol-border-color}
+{:#members:captionsettings-indicator-symbol-border-color}
 
 
 
@@ -1182,7 +1182,7 @@ captionSettings :{indicator :{symbol : { border: { color :"green" } }}}
 
 
 ### captionSettings.indicator.symbol.border.width<span class="type-signature type number">Number</span>
-{:#members-captionsettings-indicator-symbol-border-width}
+{:#members:captionsettings-indicator-symbol-border-width}
 
 
 
@@ -1232,7 +1232,7 @@ captionSettings :{indicator :{symbol : { border: { width : 2 } }}}
 
 
 ### captionSettings.indicator.symbol.color<span class="type-signature type string">string</span>
-{:#members-captionsettings-indicator-symbol-color}
+{:#members:captionsettings-indicator-symbol-color}
 
 
 
@@ -1282,7 +1282,7 @@ captionSettings :{indicator :{symbol : { color :"green" }}}
 
 
 ### captionSettings.indicator.symbol.imageURL<span class="type-signature type string">string</span>
-{:#members-captionsettings-indicator-symbol-imageurl}
+{:#members:captionsettings-indicator-symbol-imageurl}
 
 
 
@@ -1332,7 +1332,7 @@ captionSettings :{indicator :{symbol : { imageURL :"../BulletIndicator.png" }}}
 
 
 ### captionSettings.indicator.symbol.opacity<span class="type-signature type number">number</span>
-{:#members-captionsettings-indicator-symbol-opacity}
+{:#members:captionsettings-indicator-symbol-opacity}
 
 
 
@@ -1382,7 +1382,7 @@ captionSettings :{indicator :{symbol : { opacity :0.5 }}}
 
 
 ### captionSettings.indicator.symbol.shape<span class="type-signature type string">string</span>
-{:#members-captionsettings-indicator-symbol-shape}
+{:#members:captionsettings-indicator-symbol-shape}
 
 
 
@@ -1432,7 +1432,7 @@ captionSettings :{indicator :{symbol : { shape :"triangle" }}}
 
 
 ### captionSettings.indicator.symbol.size<span class="type-signature type object">object</span>
-{:#members-captionsettings-indicator-symbol-size}
+{:#members:captionsettings-indicator-symbol-size}
 
 
 
@@ -1454,7 +1454,7 @@ Contains property to customize the size of indicator symbol.
 
 
 ### captionSettings.indicator.symbol.size.height<span class="type-signature type number">number</span>
-{:#members-captionsettings-indicator-symbol-size-height}
+{:#members:captionsettings-indicator-symbol-size-height}
 
 
 
@@ -1504,7 +1504,7 @@ captionSettings :{indicator :{symbol : { size : { height: 10 } }}}
 
 
 ### captionSettings.indicator.symbol.size.width<span class="type-signature type number">number</span>
-{:#members-captionsettings-indicator-symbol-size-width}
+{:#members:captionsettings-indicator-symbol-size-width}
 
 
 
@@ -1554,7 +1554,7 @@ captionSettings :{indicator :{symbol : { size : { width: 10 }}}
 
 
 ### captionSettings.indicator.text<span class="type-signature type string">string</span>
-{:#members-captionsettings-indicator-text}
+{:#members:captionsettings-indicator-text}
 
 
 
@@ -1604,7 +1604,7 @@ captionSettings :{ indicator :{text : "Power Production"} }
 
 
 ### captionSettings.indicator.textAlignment<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-indicator-textalignment}
+{:#members:captionsettings-indicator-textalignment}
 
 
 
@@ -1654,7 +1654,7 @@ captionSettings :{ indicator:{textAlignment: 'Far'}}
 
 
 ### captionSettings.indicator.textAnchor<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-indicator-textanchor}
+{:#members:captionsettings-indicator-textanchor}
 
 
 
@@ -1704,7 +1704,7 @@ captionSettings :{ indicator: {textAnchor: 'end'}}
 
 
 ### captionSettings.indicator.textAngle<span class="type-signature type number">number</span>
-{:#members-captionsettings-indicator-textangle}
+{:#members:captionsettings-indicator-textangle}
 
 
 
@@ -1754,7 +1754,7 @@ captionSettings :{ indicator :{textAngle :10} }
 
 
 ### captionSettings.indicator.textPosition<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-indicator-textposition}
+{:#members:captionsettings-indicator-textposition}
 
 
 
@@ -1804,7 +1804,7 @@ captionSettings :{ indicator: {textPosition: 'Top'}}
 
 
 ### captionSettings.indicator.textSpacing<span class="type-signature type number">number</span>
-{:#members-captionsettings-indicator-textspacing}
+{:#members:captionsettings-indicator-textspacing}
 
 
 
@@ -1854,7 +1854,7 @@ captionSettings :{ indicator :{textSpacing :10} }
 
 
 ### captionSettings.indicator.visibile<span class="type-signature type boolean">boolean</span>
-{:#members-captionsettings-indicator-visibile}
+{:#members:captionsettings-indicator-visibile}
 
 
 
@@ -1904,7 +1904,7 @@ captionSettings :{ indicator :{visible : true} }
 
 
 ### captionSettings.location<span class="type-signature type object">object</span>
-{:#members-captionsettings-location}
+{:#members:captionsettings-location}
 
 
 
@@ -1926,7 +1926,7 @@ Contains property to customize the location.
 
 
 ### captionSettings.location.x<span class="type-signature type number">number</span>
-{:#members-captionsettings-location-x}
+{:#members:captionsettings-location-x}
 
 
 
@@ -1976,7 +1976,7 @@ captionSettings :{location :{x :15}}
 
 
 ### captionSettings.location.y<span class="type-signature type number">number</span>
-{:#members-captionsettings-location-y}
+{:#members:captionsettings-location-y}
 
 
 
@@ -2026,7 +2026,7 @@ captionSettings :{location :{y :15}}
 
 
 ### captionSettings.padding<span class="type-signature type number">number</span>
-{:#members-captionsettings-padding}
+{:#members:captionsettings-padding}
 
 
 
@@ -2076,7 +2076,7 @@ captionSettings :{padding: 2}
 
 
 ### captionSettings.subTitle<span class="type-signature type object">object</span>
-{:#members-captionsettings-subtitle}
+{:#members:captionsettings-subtitle}
 
 
 
@@ -2098,7 +2098,7 @@ Contains property to customize the subtitle.
 
 
 ### captionSettings.subTitle.font<span class="type-signature type object">object</span>
-{:#members-captionsettings-subtitle-font}
+{:#members:captionsettings-subtitle-font}
 
 
 
@@ -2120,7 +2120,7 @@ Contains property to customize the font of subtitle.
 
 
 ### captionSettings.subTitle.font.color<span class="type-signature type string">string</span>
-{:#members-captionsettings-subtitle-font-color}
+{:#members:captionsettings-subtitle-font-color}
 
 
 
@@ -2170,7 +2170,7 @@ captionSettings :{subTitle :{font : { color :"green" }}}
 
 
 ### captionSettings.subTitle.font.fontFamily<span class="type-signature type string">string</span>
-{:#members-captionsettings-subtitle-font-fontfamily}
+{:#members:captionsettings-subtitle-font-fontfamily}
 
 
 
@@ -2220,7 +2220,7 @@ captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}
 
 
 ### captionSettings.subTitle.font.fontStyle<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-subtitle-font-fontstyle}
+{:#members:captionsettings-subtitle-font-fontstyle}
 
 
 
@@ -2270,7 +2270,7 @@ captionSettings :{subTitle :{font : { fontStyle :"italic" }}}
 
 
 ### captionSettings.subTitle.font.fontWeight<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-subtitle-font-fontweight}
+{:#members:captionsettings-subtitle-font-fontweight}
 
 
 
@@ -2320,7 +2320,7 @@ captionSettings :{subTitle :{font : { fontWeight :"lighter" }}}
 
 
 ### captionSettings.subTitle.font.opacity<span class="type-signature type number">number</span>
-{:#members-captionsettings-subtitle-font-opacity}
+{:#members:captionsettings-subtitle-font-opacity}
 
 
 
@@ -2370,7 +2370,7 @@ captionSettings :{subTitle :{font : { opacity :0.5 }}}
 
 
 ### captionSettings.subTitle.font.size<span class="type-signature type string">string</span>
-{:#members-captionsettings-subtitle-font-size}
+{:#members:captionsettings-subtitle-font-size}
 
 
 
@@ -2420,7 +2420,7 @@ captionSettings :{subTitle :{font : { size :"14px" }}}
 
 
 ### captionSettings.subTitle.location<span class="type-signature type object">object</span>
-{:#members-captionsettings-subtitle-location}
+{:#members:captionsettings-subtitle-location}
 
 
 
@@ -2442,7 +2442,7 @@ Contains property to customize the location of subtitle.
 
 
 ### captionSettings.subTitle.location.x<span class="type-signature type number">number</span>
-{:#members-captionsettings-subtitle-location-x}
+{:#members:captionsettings-subtitle-location-x}
 
 
 
@@ -2492,7 +2492,7 @@ captionSettings :{subTitle :{location : { x :12 }}}
 
 
 ### captionSettings.subTitle.location.y<span class="type-signature type number">number</span>
-{:#members-captionsettings-subtitle-location-y}
+{:#members:captionsettings-subtitle-location-y}
 
 
 
@@ -2542,7 +2542,7 @@ captionSettings :{subTitle :{location : { y :50 }}}
 
 
 ### captionSettings.subTitle.padding<span class="type-signature type number">number</span>
-{:#members-captionsettings-subtitle-padding}
+{:#members:captionsettings-subtitle-padding}
 
 
 
@@ -2592,7 +2592,7 @@ captionSettings :{subTitle:{padding: 8}}
 
 
 ### captionSettings.subTitle.text<span class="type-signature type string">string</span>
-{:#members-captionsettings-subtitle-text}
+{:#members:captionsettings-subtitle-text}
 
 
 
@@ -2642,7 +2642,7 @@ captionSettings :{ subTitle :{text : "Power Production"} }
 
 
 ### captionSettings.subTitle.textAlignment<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-subtitle-textalignment}
+{:#members:captionsettings-subtitle-textalignment}
 
 
 
@@ -2692,7 +2692,7 @@ captionSettings :{subTitle:{textAlignment: 'Far'}}
 
 
 ### captionSettings.subTitle.textAnchor<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-subtitle-textanchor}
+{:#members:captionsettings-subtitle-textanchor}
 
 
 
@@ -2742,7 +2742,7 @@ captionSettings :{ subTitle: {textAnchor: 'end'}}
 
 
 ### captionSettings.subTitle.textAngle<span class="type-signature type number">number</span>
-{:#members-captionsettings-subtitle-textangle}
+{:#members:captionsettings-subtitle-textangle}
 
 
 
@@ -2792,7 +2792,7 @@ captionSettings :{ subTitle :{textAngle :10} }
 
 
 ### captionSettings.subTitle.textPosition<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-subtitle-textposition}
+{:#members:captionsettings-subtitle-textposition}
 
 
 
@@ -2842,7 +2842,7 @@ captionSettings :{ subTitle:{textPosition: 'Right'}}
 
 
 ### captionSettings.text<span class="type-signature type string">string</span>
-{:#members-captionsettings-text}
+{:#members:captionsettings-text}
 
 
 
@@ -2892,7 +2892,7 @@ captionSettings :{text : "Production"}
 
 
 ### captionSettings.textAlignment<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-textalignment}
+{:#members:captionsettings-textalignment}
 
 
 
@@ -2942,7 +2942,7 @@ captionSettings :{textAlignment: 'Center'}
 
 
 ### captionSettings.textAnchor<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-textanchor}
+{:#members:captionsettings-textanchor}
 
 
 
@@ -2992,7 +2992,7 @@ captionSettings :{textAnchor: 'middle'}
 
 
 ### captionSettings.textAngle<span class="type-signature type number">number</span>
-{:#members-captionsettings-textangle}
+{:#members:captionsettings-textangle}
 
 
 
@@ -3042,7 +3042,7 @@ captionSettings :{textAngle : 5}
 
 
 ### captionSettings.textPosition<span class="type-signature type enum">enum</span>
-{:#members-captionsettings-textposition}
+{:#members:captionsettings-textposition}
 
 
 
@@ -3092,7 +3092,7 @@ captionSettings :{textPosition: 'Top'}
 
 
 ### comparativeMeasureValue<span class="type-signature type number">number</span>
-{:#members-comparativemeasurevalue}
+{:#members:comparativemeasurevalue}
 
 
 
@@ -3142,7 +3142,7 @@ comparativeMeasureValue : 1
 
 
 ### enableAnimation<span class="type-signature type boolean">boolean</span>
-{:#members-enableanimation}
+{:#members:enableanimation}
 
 
 
@@ -3192,7 +3192,7 @@ enableAnimation : false
 
 
 ### enableResizing<span class="type-signature type boolean">boolean</span>
-{:#members-enableresizing}
+{:#members:enableresizing}
 
 
 
@@ -3242,7 +3242,7 @@ enableResizing : false
 
 
 ### flowDirection<span class="type-signature type enum">enum</span>
-{:#members-flowdirection}
+{:#members:flowdirection}
 
 
 
@@ -3292,7 +3292,7 @@ flowDirection : "backward"
 
 
 ### height<span class="type-signature type number">number</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -3342,7 +3342,7 @@ height : 600
 
 
 ### orientation<span class="type-signature type enum">enum</span>
-{:#members-orientation}
+{:#members:orientation}
 
 
 
@@ -3392,7 +3392,7 @@ orientation : "vertical"
 
 
 ### qualitativeRanges<span class="type-signature type array">array</span>
-{:#members-qualitativeranges}
+{:#members:qualitativeranges}
 
 
 
@@ -3414,7 +3414,7 @@ Contains property to customize the qualitative ranges.
 
 
 ### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
-{:#members-qualitativeranges-rangeend}
+{:#members:qualitativeranges-rangeend}
 
 
 
@@ -3464,7 +3464,7 @@ qualitativeRanges :[{rangeEnd : 4.5}]
 
 
 ### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
-{:#members-qualitativeranges-rangeend}
+{:#members:qualitativeranges-rangeend}
 
 
 
@@ -3514,7 +3514,7 @@ qualitativeRanges :[{rangeEnd : 7}]
 
 
 ### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
-{:#members-qualitativeranges-rangeend}
+{:#members:qualitativeranges-rangeend}
 
 
 
@@ -3564,7 +3564,7 @@ qualitativeRanges :[{rangeEnd : 5}]
 
 
 ### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
-{:#members-qualitativeranges-rangeopacity}
+{:#members:qualitativeranges-rangeopacity}
 
 
 
@@ -3614,7 +3614,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 ### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
-{:#members-qualitativeranges-rangeopacity}
+{:#members:qualitativeranges-rangeopacity}
 
 
 
@@ -3664,7 +3664,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 ### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
-{:#members-qualitativeranges-rangeopacity}
+{:#members:qualitativeranges-rangeopacity}
 
 
 
@@ -3714,7 +3714,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 ### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
-{:#members-qualitativeranges-rangestroke}
+{:#members:qualitativeranges-rangestroke}
 
 
 
@@ -3764,7 +3764,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 ### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
-{:#members-qualitativeranges-rangestroke}
+{:#members:qualitativeranges-rangestroke}
 
 
 
@@ -3814,7 +3814,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 ### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
-{:#members-qualitativeranges-rangestroke}
+{:#members:qualitativeranges-rangestroke}
 
 
 
@@ -3864,7 +3864,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 ### qualitativeRangeSize<span class="type-signature type number">number</span>
-{:#members-qualitativerangesize}
+{:#members:qualitativerangesize}
 
 
 
@@ -3914,7 +3914,7 @@ qualitativeRangeSize : 35
 
 
 ### quantitativeScaleLength<span class="type-signature type number">number</span>
-{:#members-quantitativescalelength}
+{:#members:quantitativescalelength}
 
 
 
@@ -3964,7 +3964,7 @@ quantitativeScaleLength :500
 
 
 ### quantitativeScaleSettings<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings}
+{:#members:quantitativescalesettings}
 
 
 
@@ -3986,7 +3986,7 @@ Contains all the properties to customize quantitative scale.
 
 
 ### quantitativeScaleSettings.comparativeMeasureSettings<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-comparativemeasuresettings}
+{:#members:quantitativescalesettings-comparativemeasuresettings}
 
 
 
@@ -4008,7 +4008,7 @@ Contains property to customize the comparative measure.
 
 
 ### quantitativeScaleSettings.comparativeMeasureSettings.stroke<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-comparativemeasuresettings-stroke}
+{:#members:quantitativescalesettings-comparativemeasuresettings-stroke}
 
 
 
@@ -4058,7 +4058,7 @@ quantitativeScaleSettings : { comparativeMeasureSettings :{ stroke :2} }
 
 
 ### quantitativeScaleSettings.comparativeMeasureSettings.width<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-comparativemeasuresettings-width}
+{:#members:quantitativescalesettings-comparativemeasuresettings-width}
 
 
 
@@ -4108,7 +4108,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### quantitativeScaleSettings.featuredMeasureSettings<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-featuredmeasuresettings}
+{:#members:quantitativescalesettings-featuredmeasuresettings}
 
 
 
@@ -4130,7 +4130,7 @@ Contains property to customize the featured measure.
 
 
 ### quantitativeScaleSettings.featuredMeasureSettings.stroke<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-featuredmeasuresettings-stroke}
+{:#members:quantitativescalesettings-featuredmeasuresettings-stroke}
 
 
 
@@ -4180,7 +4180,7 @@ quantitativeScaleSettings : { featuredMeasureSettings :{stroke : 2} }
 
 
 ### quantitativeScaleSettings.featuredMeasureSettings.width<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-featuredmeasuresettings-width}
+{:#members:quantitativescalesettings-featuredmeasuresettings-width}
 
 
 
@@ -4230,7 +4230,7 @@ Example
 
 
 ### quantitativeScaleSettings.featureMeasures<span class="type-signature type array">array</span>
-{:#members-quantitativescalesettings-featuremeasures}
+{:#members:quantitativescalesettings-featuremeasures}
 
 
 
@@ -4252,7 +4252,7 @@ Contains property to customize the featured measure.
 
 
 ### quantitativeScaleSettings.featureMeasures.category<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-featuremeasures-category}
+{:#members:quantitativescalesettings-featuremeasures-category}
 
 
 
@@ -4302,7 +4302,7 @@ quantitativeScaleSettings : { featureMeasures :[{ category :null}] }
 
 
 ### quantitativeScaleSettings.featureMeasures.comparativeMeasureValue<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-featuremeasures-comparativemeasurevalue}
+{:#members:quantitativescalesettings-featuremeasures-comparativemeasurevalue}
 
 
 
@@ -4352,7 +4352,7 @@ quantitativeScaleSettings : { featureMeasures :[{ comparativeMeasureValue :2}] }
 
 
 ### quantitativeScaleSettings.featureMeasures.value<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-featuremeasures-value}
+{:#members:quantitativescalesettings-featuremeasures-value}
 
 
 
@@ -4402,7 +4402,7 @@ quantitativeScaleSettings : { featureMeasures :[{ value :2}] }
 
 
 ### quantitativeScaleSettings.fields<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-fields}
+{:#members:quantitativescalesettings-fields}
 
 
 
@@ -4424,7 +4424,7 @@ Contains property to customize the fields.
 
 
 ### quantitativeScaleSettings.fields.category<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-fields-category}
+{:#members:quantitativescalesettings-fields-category}
 
 
 
@@ -4474,7 +4474,7 @@ fields :{category : "ProductId"}
 
 
 ### quantitativeScaleSettings.fields.comparativeMeasure<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-fields-comparativemeasure}
+{:#members:quantitativescalesettings-fields-comparativemeasure}
 
 
 
@@ -4524,7 +4524,7 @@ fields :{comparativeMeasure : "comparativeMeasureValue"}
 
 
 ### quantitativeScaleSettings.fields.dataSource<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-fields-datasource}
+{:#members:quantitativescalesettings-fields-datasource}
 
 
 
@@ -4609,7 +4609,7 @@ fields : {datasource :{ej.DataManger :{url : "http://mvc.syncfusion.com/Services
 
 
 ### quantitativeScaleSettings.fields.featureMeasures<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-fields-featuremeasures}
+{:#members:quantitativescalesettings-fields-featuremeasures}
 
 
 
@@ -4659,7 +4659,7 @@ fields :{featureMeasures : "UnitPrice"}
 
 
 ### quantitativeScaleSettings.fields.query<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-fields-query}
+{:#members:quantitativescalesettings-fields-query}
 
 
 
@@ -4697,7 +4697,7 @@ Default Value:
 
 
 ### quantitativeScaleSettings.fields.tableName<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-fields-tablename}
+{:#members:quantitativescalesettings-fields-tablename}
 
 
 
@@ -4747,7 +4747,7 @@ fields :{tableName : "Product"}
 
 
 ### quantitativeScaleSettings.interval<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-interval}
+{:#members:quantitativescalesettings-interval}
 
 
 
@@ -4797,7 +4797,7 @@ quantitativeScaleSettings : { interval : 2 }
 
 
 ### quantitativeScaleSettings.labelSettings<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-labelsettings}
+{:#members:quantitativescalesettings-labelsettings}
 
 
 
@@ -4819,7 +4819,7 @@ Contains property to customize the labels.
 
 
 ### quantitativeScaleSettings.labelSettings.font<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-labelsettings-font}
+{:#members:quantitativescalesettings-labelsettings-font}
 
 
 
@@ -4841,7 +4841,7 @@ Contains property to customize the font of the labels in bullet graph.
 
 
 ### quantitativeScaleSettings.labelSettings.font.fontFamily<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-labelsettings-font-fontfamily}
+{:#members:quantitativescalesettings-labelsettings-font-fontfamily}
 
 
 
@@ -4891,7 +4891,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" 
 
 
 ### quantitativeScaleSettings.labelSettings.font.fontStyle<span class="type-signature type enum">enum</span>
-{:#members-quantitativescalesettings-labelsettings-font-fontstyle}
+{:#members:quantitativescalesettings-labelsettings-font-fontstyle}
 
 
 
@@ -4941,7 +4941,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } }
 
 
 ### quantitativeScaleSettings.labelSettings.font.fontWeight<span class="type-signature type enum">enum</span>
-{:#members-quantitativescalesettings-labelsettings-font-fontweight}
+{:#members:quantitativescalesettings-labelsettings-font-fontweight}
 
 
 
@@ -4991,7 +4991,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontWeight : "lighter" }
 
 
 ### quantitativeScaleSettings.labelSettings.font.opacity<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-labelsettings-font-opacity}
+{:#members:quantitativescalesettings-labelsettings-font-opacity}
 
 
 
@@ -5041,7 +5041,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 
 
 ### quantitativeScaleSettings.labelSettings.labelPlacement<span class="type-signature type enum">enum</span>
-{:#members-quantitativescalesettings-labelsettings-labelplacement}
+{:#members:quantitativescalesettings-labelsettings-labelplacement}
 
 
 
@@ -5091,7 +5091,7 @@ quantitativeScaleSettings : { labelSettings : { labelPlacement : "inside" } }
 
 
 ### quantitativeScaleSettings.labelSettings.labelPrefix<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-labelsettings-labelprefix}
+{:#members:quantitativescalesettings-labelsettings-labelprefix}
 
 
 
@@ -5141,7 +5141,7 @@ quantitativeScaleSettings : { labelSettings : { labelPrefix : "$" } }
 
 
 ### quantitativeScaleSettings.labelSettings.labelSuffix<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-labelsettings-labelsuffix}
+{:#members:quantitativescalesettings-labelsettings-labelsuffix}
 
 
 
@@ -5191,7 +5191,7 @@ quantitativeScaleSettings : { labelSettings : { labelSuffix : "K" } }
 
 
 ### quantitativeScaleSettings.labelSettings.offset<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-labelsettings-offset}
+{:#members:quantitativescalesettings-labelsettings-offset}
 
 
 
@@ -5241,7 +5241,7 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 
 
 ### quantitativeScaleSettings.labelSettings.position<span class="type-signature type enum">enum</span>
-{:#members-quantitativescalesettings-labelsettings-position}
+{:#members:quantitativescalesettings-labelsettings-position}
 
 
 
@@ -5291,7 +5291,7 @@ quantitativeScaleSettings : { labelSettings : { position : "above" } }
 
 
 ### quantitativeScaleSettings.labelSettings.size<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-labelsettings-size}
+{:#members:quantitativescalesettings-labelsettings-size}
 
 
 
@@ -5341,7 +5341,7 @@ quantitativeScaleSettings : { labelSettings : { size : 10 } }
 
 
 ### quantitativeScaleSettings.labelSettings.stroke<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-labelsettings-stroke}
+{:#members:quantitativescalesettings-labelsettings-stroke}
 
 
 
@@ -5391,7 +5391,7 @@ quantitativeScaleSettings : { labelSettings : { stroke : "green" } }
 
 
 ### quantitativeScaleSettings.location<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-location}
+{:#members:quantitativescalesettings-location}
 
 
 
@@ -5413,7 +5413,7 @@ Contains property to customize the position of the quantitative scale
 
 
 ### quantitativeScaleSettings.location.x<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-location-x}
+{:#members:quantitativescalesettings-location-x}
 
 
 
@@ -5463,7 +5463,7 @@ quantitativeScaleSettings : { location : { x : 15 } }
 
 
 ### quantitativeScaleSettings.location.y<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-location-y}
+{:#members:quantitativescalesettings-location-y}
 
 
 
@@ -5513,7 +5513,7 @@ quantitativeScaleSettings : { location : { y : 15 } }
 
 
 ### quantitativeScaleSettings.majorTickSettings<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-majorticksettings}
+{:#members:quantitativescalesettings-majorticksettings}
 
 
 
@@ -5535,7 +5535,7 @@ Contains property to customize the major tick lines.
 
 
 ### quantitativeScaleSettings.majorTickSettings.size<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-majorticksettings-size}
+{:#members:quantitativescalesettings-majorticksettings-size}
 
 
 
@@ -5585,7 +5585,7 @@ quantitativeScaleSettings : { majorTickSettings : { size : 15 } }
 
 
 ### quantitativeScaleSettings.majorTickSettings.stroke<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-majorticksettings-stroke}
+{:#members:quantitativescalesettings-majorticksettings-stroke}
 
 
 
@@ -5635,7 +5635,7 @@ quantitativeScaleSettings : { majorTickSettings : { stroke : "red" } }
 
 
 ### quantitativeScaleSettings.majorTickSettings.width<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-majorticksettings-width}
+{:#members:quantitativescalesettings-majorticksettings-width}
 
 
 
@@ -5685,7 +5685,7 @@ quantitativeScaleSettings : { majorTickSettings : { width : 1 } }
 
 
 ### quantitativeScaleSettings.maximum<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-maximum}
+{:#members:quantitativescalesettings-maximum}
 
 
 
@@ -5735,7 +5735,7 @@ quantitativeScaleSettings : { maximum : 8 }
 
 
 ### quantitativeScaleSettings.minimum<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-minimum}
+{:#members:quantitativescalesettings-minimum}
 
 
 
@@ -5785,7 +5785,7 @@ quantitativeScaleSettings : { minimum : 1 }
 
 
 ### quantitativeScaleSettings.minorTickSettings<span class="type-signature type object">object</span>
-{:#members-quantitativescalesettings-minorticksettings}
+{:#members:quantitativescalesettings-minorticksettings}
 
 
 
@@ -5807,7 +5807,7 @@ Contains property to customize the minor ticks.
 
 
 ### quantitativeScaleSettings.minorTickSettings.size<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-minorticksettings-size}
+{:#members:quantitativescalesettings-minorticksettings-size}
 
 
 
@@ -5857,7 +5857,7 @@ quantitativeScaleSettings : { minorTickSettings : { size : 10} }
 
 
 ### quantitativeScaleSettings.minorTickSettings.stroke<span class="type-signature type string">string</span>
-{:#members-quantitativescalesettings-minorticksettings-stroke}
+{:#members:quantitativescalesettings-minorticksettings-stroke}
 
 
 
@@ -5907,7 +5907,7 @@ quantitativeScaleSettings : { minorTickSettings : { stroke : "green" } }
 
 
 ### quantitativeScaleSettings.minorTickSettings.width<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-minorticksettings-width}
+{:#members:quantitativescalesettings-minorticksettings-width}
 
 
 
@@ -5957,7 +5957,7 @@ quantitativeScaleSettings : { minorTickSettings : { width : 1 } }
 
 
 ### quantitativeScaleSettings.minorTicksPerInterval<span class="type-signature type number">number</span>
-{:#members-quantitativescalesettings-minorticksperinterval}
+{:#members:quantitativescalesettings-minorticksperinterval}
 
 
 
@@ -6007,7 +6007,7 @@ quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 
 
 ### quantitativeScaleSettings.tickPlacement<span class="type-signature type enum">enum</span>
-{:#members-quantitativescalesettings-tickplacement}
+{:#members:quantitativescalesettings-tickplacement}
 
 
 
@@ -6057,7 +6057,7 @@ quantitativeScaleSettings : { tickPlacement : "inside" }
 
 
 ### quantitativeScaleSettings.tickPosition<span class="type-signature type enum">enum</span>
-{:#members-quantitativescalesettings-tickposition}
+{:#members:quantitativescalesettings-tickposition}
 
 
 
@@ -6107,7 +6107,7 @@ quantitativeScaleSettings : { tickPosition : "near" }
 
 
 ### theme<span class="type-signature type string">string</span>
-{:#members-theme}
+{:#members:theme}
 
 
 
@@ -6157,7 +6157,7 @@ theme : "flatdark"
 
 
 ### tooltipSettings<span class="type-signature type object">object</span>
-{:#members-tooltipsettings}
+{:#members:tooltipsettings}
 
 
 
@@ -6179,7 +6179,7 @@ Contains all the properties to customize tooltip.
 
 
 ### tooltipSettings.captionTemplate<span class="type-signature type string">string</span>
-{:#members-tooltipsettings-captiontemplate}
+{:#members:tooltipsettings-captiontemplate}
 
 
 
@@ -6229,7 +6229,7 @@ tooltipSettings :{captionTemplate: "Tooltip"}
 
 
 ### tooltipSettings.enableCaptionTooltip<span class="type-signature type boolean">boolean</span>
-{:#members-tooltipsettings-enablecaptiontooltip}
+{:#members:tooltipsettings-enablecaptiontooltip}
 
 
 
@@ -6279,7 +6279,7 @@ tooltipSettings :{enableCaptionTooltip: true}
 
 
 ### tooltipSettings.template<span class="type-signature type string">string</span>
-{:#members-tooltipsettings-template}
+{:#members:tooltipsettings-template}
 
 
 
@@ -6329,7 +6329,7 @@ tooltipSettings: { template : "tooltip"},
 
 
 ### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
-{:#members-tooltipsettings-visible}
+{:#members:tooltipsettings-visible}
 
 
 
@@ -6379,7 +6379,7 @@ tooltipSettings :{visible: false}
 
 
 ### value<span class="type-signature type number">number</span>
-{:#members-value}
+{:#members:value}
 
 
 
@@ -6429,7 +6429,7 @@ value : 1
 
 
 ### width<span class="type-signature type number">number</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -6486,7 +6486,7 @@ width : 600
 
 
 ### destroy<span class="signature">()</span>
-{:#methods-destroy}
+{:#methods:destroy}
 
 
 
@@ -6530,7 +6530,7 @@ $("#bulletGraph1").ejButton("destroy");
 
 
 ### redraw<span class="signature">()</span>
-{:#methods-redraw}
+{:#methods:redraw}
 
 
 
@@ -6574,7 +6574,7 @@ $("#butbulletGraph1ton1").ejButton("redraw");
 
 
 ### setComparativeMeasureSymbol<span class="signature">()</span>
-{:#methods-setcomparativemeasuresymbol}
+{:#methods:setcomparativemeasuresymbol}
 
 
 
@@ -6639,7 +6639,7 @@ $("#bulletGraph1").ejBulletGraph("setComparativeMeasureSymbol(1,7)");
 
 
 ### setFeatureMeasureBarValue<span class="signature">()</span>
-{:#methods-setfeaturemeasurebarvalue}
+{:#methods:setfeaturemeasurebarvalue}
 
 
 
@@ -6711,7 +6711,7 @@ $("#bulletGraph1").ejBulletGraph("setFeatureMeasureBarValue(1,8)");
 
 
 ### drawCaption
-{:#events-drawcaption}
+{:#events:drawcaption}
 
 
 
@@ -6774,7 +6774,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawCategory
-{:#events-drawcategory}
+{:#events:drawcategory}
 
 
 
@@ -6837,7 +6837,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawComparativeMeasureSymbol
-{:#events-drawcomparativemeasuresymbol}
+{:#events:drawcomparativemeasuresymbol}
 
 
 
@@ -6900,7 +6900,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawFeatureMeasureBar
-{:#events-drawfeaturemeasurebar}
+{:#events:drawfeaturemeasurebar}
 
 
 
@@ -6963,7 +6963,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawIndicator
-{:#events-drawindicator}
+{:#events:drawindicator}
 
 
 
@@ -7026,7 +7026,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawLabels
-{:#events-drawlabels}
+{:#events:drawlabels}
 
 
 
@@ -7089,7 +7089,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### drawQualitativeRanges
-{:#events-drawqualitativeranges}
+{:#events:drawqualitativeranges}
 
 
 
@@ -7152,7 +7152,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 ### load
-{:#events-load}
+{:#events:load}
 
 
 
@@ -7179,4 +7179,2722 @@ $("#bulletGraph1").ejBulletGraph({
 </pre>
 
 
+
+---
+layout: post
+title: ejBulletGraph
+documentation: API
+platform: js
+metaname: 
+metacontent: 
+---
+
+# Custom Design for Bullet graph.
+
+
+
+
+
+
+
+
+
+
+$(element).ejBulletGraph<span class="signature">()</span>
+
+
+
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+ 
+&lt;script&gt;
+// Create BulletGraph
+$('#bulletGraph1').ejBulletGraph();     
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+Requires
+{:.require}
+
+
+
+
+* module:jQuery.js
+
+
+* module:ej.core.js
+
+
+* module:ej.data.js
+
+
+* module:ej.bulletgraph.js
+
+
+
+
+## Members
+
+
+
+
+
+
+
+
+### applyRangeStrokeToLabels<span class="type-signature type boolean">boolean</span>
+{:#members:applyrangestroketolabels}
+
+
+
+
+
+
+
+
+Toggles the visibility of the range stroke color of the labels.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+applyRangeStrokeToLabels : true                
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### applyRangeStrokeToTicks<span class="type-signature type boolean">boolean</span>
+{:#members:applyrangestroketoticks}
+
+
+
+
+
+
+
+
+Toggles the visibility of the range stroke color of the ticks.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+applyRangeStrokeToTicks : true               
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings<span class="type-signature type object">object</span>
+{:#members:captionsettings}
+
+
+
+
+
+
+
+
+Contains property to customize the caption in bullet graph.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.enableTrim<span class="type-signature type boolean">boolean</span>
+{:#members:captionsettings-enabletrim}
+
+
+
+
+
+
+
+
+Specifies whether trim the labels will be true or false.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ enableTrim : true }                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.font<span class="type-signature type object">object</span>
+{:#members:captionsettings-font}
+
+
+
+
+
+
+
+
+Contains property to customize the font of caption.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.font.color<span class="type-signature type string">string</span>
+{:#members:captionsettings-font-color}
+
+
+
+
+
+
+
+
+Specifies the color of the text in caption.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{font :{color : "green"}}                  
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.font.fontFamily<span class="type-signature type string">string</span>
+{:#members:captionsettings-font-fontfamily}
+
+
+
+
+
+
+
+
+Specifies the fontFamily of caption. Caption text render with this fontFamily
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "Segoe UI"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{font :{fontFamily : "algerian"}}
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-font-fontstyle}
+
+
+
+
+
+
+
+
+Specifies the fontStyle of caption. Caption text render with this fontStyle. See <a href="global.html#FontStyle">FontStyle</a>
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "Normal"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{font :{fontStyle : "italic"}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.font.fontWeight<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-font-fontweight}
+
+
+
+
+
+
+
+
+Specifies the fontWeight of caption. Caption text render with this fontWeight. See <a href="global.html#FontWeight">FontWeight</a>
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "regular"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{font :{fontWeight : "lighter"}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.font.opacity<span class="type-signature type number">number</span>
+{:#members:captionsettings-font-opacity}
+
+
+
+
+
+
+
+
+Specifies the opacity of caption. Caption text render with this opacity.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 1
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{font :{opacity : 0.5}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.font.size<span class="type-signature type string">string</span>
+{:#members:captionsettings-font-size}
+
+
+
+
+
+
+
+
+Specifies the size of caption. Caption text render with this size
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "12px"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{font :{size : "14px"}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator<span class="type-signature type object">object</span>
+{:#members:captionsettings-indicator}
+
+
+
+
+
+
+
+
+Contains property to customize the indicator.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.indicator.font<span class="type-signature type object">object</span>
+{:#members:captionsettings-indicator-font}
+
+
+
+
+
+
+
+
+Contains property to customize the font of indicator.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.indicator.font.color<span class="type-signature type string">string</span>
+{:#members:captionsettings-indicator-font-color}
+
+
+
+
+
+
+
+
+Specifies the color of the indicator's text.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{font : { color :"green" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.font.fontFamily<span class="type-signature type string">string</span>
+{:#members:captionsettings-indicator-font-fontfamily}
+
+
+
+
+
+
+
+
+Specifies the fontFamily of indicator. Indicator text render with this fontFamily.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "Segoe UI"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-indicator-font-fontstyle}
+
+
+
+
+
+
+
+
+Specifies the fontStyle of indicator. Indicator text render with this fontStyle. See <a href="global.html#FontStyle">FontStyle</a>
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "Normal"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{font : { fontStyle :"italic" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.font.fontWeight<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-indicator-font-fontweight}
+
+
+
+
+
+
+
+
+Specifies the fontWeight of indicator. Indicator text render with this fontWeight. See <a href="global.html#FontWeight">FontWeight</a>
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "regular"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{font : { fontWeight :"lighter" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.font.opacity<span class="type-signature type number">Number</span>
+{:#members:captionsettings-indicator-font-opacity}
+
+
+
+
+
+
+
+
+Specifies the opacity of indicator text. Indicator text render with this Opacity.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 1
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{font : { opacity : 0.5 }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.font.size<span class="type-signature type string">string</span>
+{:#members:captionsettings-indicator-font-size}
+
+
+
+
+
+
+
+
+Specifies the size of indicator. Indicator text render with this size.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "12px"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{font : { size :"14px" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.location<span class="type-signature type object">object</span>
+{:#members:captionsettings-indicator-location}
+
+
+
+
+
+
+
+
+Contains property to customize the location of indicator.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.indicator.location.x<span class="type-signature type number">number</span>
+{:#members:captionsettings-indicator-location-x}
+
+
+
+
+
+
+
+
+Specifies the horizontal position of the indicator.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 10
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{location : { x :12 }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.location.y<span class="type-signature type number">number</span>
+{:#members:captionsettings-indicator-location-y}
+
+
+
+
+
+
+
+
+Specifies the vertical position of the indicator.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 60
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{location : { y :60 }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.padding<span class="type-signature type number">number</span>
+{:#members:captionsettings-indicator-padding}
+
+
+
+
+
+
+
+
+Specifies the padding to be applied when text position is used.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 2
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ indicator: {padding: 5}}                 
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.symbol<span class="type-signature type object">object</span>
+{:#members:captionsettings-indicator-symbol}
+
+
+
+
+
+
+
+
+Contains property to customize the symbol of indicator.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.indicator.symbol.border<span class="type-signature type object">object</span>
+{:#members:captionsettings-indicator-symbol-border}
+
+
+
+
+
+
+
+
+Contains property to customize the border of indicator symbol.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.indicator.symbol.border.color<span class="type-signature type string">string</span>
+{:#members:captionsettings-indicator-symbol-border-color}
+
+
+
+
+
+
+
+
+Specifies the border color of indicator symbol.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{symbol : { border: { color :"green" } }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.symbol.border.width<span class="type-signature type number">Number</span>
+{:#members:captionsettings-indicator-symbol-border-width}
+
+
+
+
+
+
+
+
+Specifies the border width of indicator symbol.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 1
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{symbol : { border: { width : 2 } }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.symbol.color<span class="type-signature type string">string</span>
+{:#members:captionsettings-indicator-symbol-color}
+
+
+
+
+
+
+
+
+Specifies the color of indicator symbol.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{symbol : { color :"green" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.symbol.imageURL<span class="type-signature type string">string</span>
+{:#members:captionsettings-indicator-symbol-imageurl}
+
+
+
+
+
+
+
+
+Specifies the url of image that represents indicator symbol.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* ""
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{symbol : { imageURL :"../BulletIndicator.png" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.symbol.opacity<span class="type-signature type number">number</span>
+{:#members:captionsettings-indicator-symbol-opacity}
+
+
+
+
+
+
+
+
+Specifies the opacity of indicator symbol.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 1
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{symbol : { opacity :0.5 }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.symbol.shape<span class="type-signature type string">string</span>
+{:#members:captionsettings-indicator-symbol-shape}
+
+
+
+
+
+
+
+
+Specifies the shape of indicator symbol.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* ""
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{symbol : { shape :"triangle" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.symbol.size<span class="type-signature type object">object</span>
+{:#members:captionsettings-indicator-symbol-size}
+
+
+
+
+
+
+
+
+Contains property to customize the size of indicator symbol.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.indicator.symbol.size.height<span class="type-signature type number">number</span>
+{:#members:captionsettings-indicator-symbol-size-height}
+
+
+
+
+
+
+
+
+Specifies the height of indicator symbol.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 10
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{symbol : { size : { height: 10 } }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.symbol.size.width<span class="type-signature type number">number</span>
+{:#members:captionsettings-indicator-symbol-size-width}
+
+
+
+
+
+
+
+
+Specifies the width of indicator symbol.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 10
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{indicator :{symbol : { size : { width: 10 }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.text<span class="type-signature type string">string</span>
+{:#members:captionsettings-indicator-text}
+
+
+
+
+
+
+
+
+Specifies the text to be displayed as indicator text. By default difference between current value and target will be displayed
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* ""
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ indicator :{text : "Power Production"} }
+});
+&lt;/script&gt;e</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.textAlignment<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-indicator-textalignment}
+
+
+
+
+
+
+
+
+Specifies the alignment of indicator with respect to scale based on text position. Alignment will not be applied for float position.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 'Near'
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ indicator:{textAlignment: 'Far'}}
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.textAnchor<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-indicator-textanchor}
+
+
+
+
+
+
+
+
+Specifies where indicator text should be anchored when indicator overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same position. Anchoring is not applicable for float position.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 'start'
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ indicator: {textAnchor: 'end'}}
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.textAngle<span class="type-signature type number">number</span>
+{:#members:captionsettings-indicator-textangle}
+
+
+
+
+
+
+
+
+indicator text render in the specified angle.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 0
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ indicator :{textAngle :10} }                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.textPosition<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-indicator-textposition}
+
+
+
+
+
+
+
+
+Specifies where indicator should be placed.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 'float'
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ indicator: {textPosition: 'Top'}}
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.textSpacing<span class="type-signature type number">number</span>
+{:#members:captionsettings-indicator-textspacing}
+
+
+
+
+
+
+
+
+Specifies the space between indicator symbol and text.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 3
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ indicator :{textSpacing :10} }                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.indicator.visibile<span class="type-signature type boolean">boolean</span>
+{:#members:captionsettings-indicator-visibile}
+
+
+
+
+
+
+
+
+Specifies whether indicator will be visible or not.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ indicator :{visible : true} }                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.location<span class="type-signature type object">object</span>
+{:#members:captionsettings-location}
+
+
+
+
+
+
+
+
+Contains property to customize the location.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.location.x<span class="type-signature type number">number</span>
+{:#members:captionsettings-location-x}
+
+
+
+
+
+
+
+
+Specifies the position in horizontal direction
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 17
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{location :{x :15}}            
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.location.y<span class="type-signature type number">number</span>
+{:#members:captionsettings-location-y}
+
+
+
+
+
+
+
+
+Specifies the position in horizontal direction
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 30
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{location :{y :15}}
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.padding<span class="type-signature type number">number</span>
+{:#members:captionsettings-padding}
+
+
+
+
+
+
+
+
+Specifies the padding to be applied when text position is used.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 5
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{padding: 2}                 
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle<span class="type-signature type object">object</span>
+{:#members:captionsettings-subtitle}
+
+
+
+
+
+
+
+
+Contains property to customize the subtitle.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.subTitle.font<span class="type-signature type object">object</span>
+{:#members:captionsettings-subtitle-font}
+
+
+
+
+
+
+
+
+Contains property to customize the font of subtitle.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.subTitle.font.color<span class="type-signature type string">string</span>
+{:#members:captionsettings-subtitle-font-color}
+
+
+
+
+
+
+
+
+Specifies the color of the subtitle's text.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle :{font : { color :"green" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.font.fontFamily<span class="type-signature type string">string</span>
+{:#members:captionsettings-subtitle-font-fontfamily}
+
+
+
+
+
+
+
+
+Specifies the fontFamily of subtitle. Subtitle text render with this fontFamily.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "Segoe UI"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.font.fontStyle<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-subtitle-font-fontstyle}
+
+
+
+
+
+
+
+
+Specifies the fontStyle of subtitle. Subtitle text render with this fontStyle. See <a href="global.html#FontStyle">FontStyle</a>
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "Normal"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle :{font : { fontStyle :"italic" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.font.fontWeight<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-subtitle-font-fontweight}
+
+
+
+
+
+
+
+
+Specifies the fontWeight of subtitle. Subtitle text render with this fontWeight. See <a href="global.html#FontWeight">FontWeight</a>
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "regular"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle :{font : { fontWeight :"lighter" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.font.opacity<span class="type-signature type number">number</span>
+{:#members:captionsettings-subtitle-font-opacity}
+
+
+
+
+
+
+
+
+Specifies the opacity of subtitle. Subtitle text render with this opacity.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 1
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle :{font : { opacity :0.5 }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.font.size<span class="type-signature type string">string</span>
+{:#members:captionsettings-subtitle-font-size}
+
+
+
+
+
+
+
+
+Specifies the size of subtitle. Subtitle text render with this size.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "12px"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle :{font : { size :"14px" }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.location<span class="type-signature type object">object</span>
+{:#members:captionsettings-subtitle-location}
+
+
+
+
+
+
+
+
+Contains property to customize the location of subtitle.
+
+
+
+
+
+
+
+
+
+
+
+### captionSettings.subTitle.location.x<span class="type-signature type number">number</span>
+{:#members:captionsettings-subtitle-location-x}
+
+
+
+
+
+
+
+
+Specifies the horizontal position of the subtitle.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 10
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle :{location : { x :12 }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.location.y<span class="type-signature type number">number</span>
+{:#members:captionsettings-subtitle-location-y}
+
+
+
+
+
+
+
+
+Specifies the vertical position of the subtitle.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 45
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle :{location : { y :50 }}}                    
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.padding<span class="type-signature type number">number</span>
+{:#members:captionsettings-subtitle-padding}
+
+
+
+
+
+
+
+
+Specifies the padding to be applied when text position is used.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 5
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle:{padding: 8}}
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.text<span class="type-signature type string">string</span>
+{:#members:captionsettings-subtitle-text}
+
+
+
+
+
+
+
+
+Specifies the text to be displayed as subtitle.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* ""
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{ subTitle :{text : "Power Production"} }
+});
+&lt;/script&gt;e</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.textAlignment<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-subtitle-textalignment}
+
+
+
+
+
+
+
+
+Specifies the alignment of sub title text with respect to scale. Alignment will not be applied in float position.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 'Near'
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#bulletGraph1").ejBulletGraph({
+captionSettings :{subTitle:{textAlignment: 'Far'}}
+});
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### captionSettings.subTitle.textAnchor<span class="type-signature type enum">enum</span>
+{:#members:captionsettings-subtitle-textanchor}
+
+
+
+
+
+
+
+
+Specifies where subtitle text should be anchored when sub title text overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same position. Anchoring is not applicable for float position.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* 'start'
 

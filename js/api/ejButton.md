@@ -68,7 +68,7 @@ Requires
 
 
 ### contentType<span class="type-signature type enum">enum</span>
-{:#members-contenttype}
+{:#members:contenttype}
 
 
 
@@ -102,7 +102,7 @@ Example
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -136,7 +136,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#members-enabled}
+{:#members:enabled}
 
 
 
@@ -170,7 +170,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#members-enablertl}
+{:#members:enablertl}
 
 
 
@@ -206,7 +206,7 @@ Example
 
 
 ### height<span class="type-signature type number">number</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -240,7 +240,7 @@ Example
 
 
 ### htmlAttributes<span class="type-signature type object">object</span>
-{:#members-htmlattributes}
+{:#members:htmlattributes}
 
 
 
@@ -274,7 +274,7 @@ Example
 
 
 ### imagePosition<span class="type-signature type enum">enum</span>
-{:#members-imageposition}
+{:#members:imageposition}
 
 
 
@@ -313,7 +313,7 @@ Example
 
 
 ### prefixIcon<span class="type-signature type string">string</span>
-{:#members-prefixicon}
+{:#members:prefixicon}
 
 
 
@@ -351,7 +351,7 @@ Example
 
 
 ### repeatButton<span class="type-signature type boolean">boolean</span>
-{:#members-repeatbutton}
+{:#members:repeatbutton}
 
 
 
@@ -385,7 +385,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#members-showroundedcorner}
+{:#members:showroundedcorner}
 
 
 
@@ -419,7 +419,7 @@ Example
 
 
 ### size<span class="type-signature type enum">enum</span>
-{:#members-size}
+{:#members:size}
 
 
 
@@ -453,7 +453,7 @@ Example
 
 
 ### suffixIcon<span class="type-signature type string">string</span>
-{:#members-suffixicon}
+{:#members:suffixicon}
 
 
 
@@ -492,7 +492,7 @@ Example
 
 
 ### text<span class="type-signature type string">string</span>
-{:#members-text}
+{:#members:text}
 
 
 
@@ -526,7 +526,7 @@ Example
 
 
 ### timeInterval<span class="type-signature type string">string</span>
-{:#members-timeinterval}
+{:#members:timeinterval}
 
 
 
@@ -562,7 +562,7 @@ Example
 
 
 ### type<span class="type-signature type enum">enum</span> <span class="type-signature type string">string</span>
-{:#members-type}
+{:#members:type}
 
 
 
@@ -596,7 +596,7 @@ Example
 
 
 ### width<span class="type-signature type number">number</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -634,7 +634,7 @@ Example
 
 
 ### destroy<span class="signature">()</span>
-{:#methods-destroy}
+{:#methods:destroy}
 
 
 
@@ -671,7 +671,7 @@ $("#button1").ejButton("destroy");
 
 
 ### disable<span class="signature">()</span>
-{:#methods-disable}
+{:#methods:disable}
 
 
 
@@ -708,7 +708,7 @@ $("#button1").ejButton("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#methods-enable}
+{:#methods:enable}
 
 
 
@@ -749,7 +749,7 @@ $("#button1").ejButton("enable");
 
 
 ### click
-{:#events-click}
+{:#events:click}
 
 
 
@@ -826,7 +826,7 @@ $("#button1").ejButton({
 
 
 ### create
-{:#events-create}
+{:#events:create}
 
 
 
@@ -898,7 +898,7 @@ $("#button1").ejButton({
 
 
 ### destroy
-{:#events-destroy}
+{:#events:destroy}
 
 
 

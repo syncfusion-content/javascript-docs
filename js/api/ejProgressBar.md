@@ -75,7 +75,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">String</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -124,7 +124,7 @@ $("#progress").ejProgressBar({ cssClass: 'gradient-lime ',value: 50  });
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#members-enabled}
+{:#members:enabled}
 
 
 
@@ -172,7 +172,7 @@ $("#progress").ejProgressBar({ enabled: true,value: 50 });
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#members-enablepersistence}
+{:#members:enablepersistence}
 
 
 
@@ -221,7 +221,7 @@ $("#progress").ejProgressBar({ enablePersistence: true,value: 50 });
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#members-enablertl}
+{:#members:enablertl}
 
 
 
@@ -269,7 +269,7 @@ $("#progress").ejProgressBar({ enableRTL: true,value: 50 });
 
 
 ### height<span class="type-signature type number/string">Number/String</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -318,7 +318,7 @@ $("#progress").ejProgressBar({ height: 20,value: 50 });
 
 
 ### maxValue<span class="type-signature type number">Number</span>
-{:#members-maxvalue}
+{:#members:maxvalue}
 
 
 
@@ -367,7 +367,7 @@ $("#progress").ejProgressBar({ maxValue: 200 ,value: 200 });
 
 
 ### minValue<span class="type-signature type number">Number</span>
-{:#members-minvalue}
+{:#members:minvalue}
 
 
 
@@ -415,7 +415,7 @@ $("#progress").ejProgressBar({ minValue: 50,value: 50});
 
 
 ### percentage<span class="type-signature type number">Number</span>
-{:#members-percentage}
+{:#members:percentage}
 
 
 
@@ -463,7 +463,7 @@ $("#progress").ejProgressBar({ percentage : 35 });
 
 
 ### text<span class="type-signature type string">String</span>
-{:#members-text}
+{:#members:text}
 
 
 
@@ -512,7 +512,7 @@ $("#progress").ejProgressBar({ text: 'loading...',value: 50 });
 
 
 ### value<span class="type-signature type number">Number</span>
-{:#members-value}
+{:#members:value}
 
 
 
@@ -560,7 +560,7 @@ $("#progress").ejProgressBar({ value: 70 });
 
 
 ### width<span class="type-signature type number/string">Number/String</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -616,7 +616,7 @@ $("#progress").ejProgressBar({ width: 200,value: 50});
 
 
 ### destroy<span class="signature">()</span>
-{:#methods-destroy}
+{:#methods:destroy}
 
 
 
@@ -659,7 +659,7 @@ $("#progress").ejProgressBar("destroy");
 
 
 ### disable<span class="signature">()</span>
-{:#methods-disable}
+{:#methods:disable}
 
 
 
@@ -702,7 +702,7 @@ $("#progress").ejProgressBar("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#methods-enable}
+{:#methods:enable}
 
 
 
@@ -745,7 +745,7 @@ $("#progress").ejProgressBar("enable");
 
 
 ### getPercent<span class="signature">()</span>
-{:#methods-getpercent}
+{:#methods:getpercent}
 
 
 
@@ -788,7 +788,7 @@ $("#progress").ejProgressBar("getPercentage");
 
 
 ### getValue<span class="signature">()</span>
-{:#methods-getvalue}
+{:#methods:getvalue}
 
 
 
@@ -838,7 +838,7 @@ $("#progress").ejProgressBar("getValue");
 
 
 ### change
-{:#events-change}
+{:#events:change}
 
 
 
@@ -926,7 +926,7 @@ $("#progress").ejProgressBar({
 
 
 ### complete
-{:#events-complete}
+{:#events:complete}
 
 
 
@@ -1014,7 +1014,7 @@ $("#progress").ejProgressBar({
 
 
 ### create
-{:#events-create}
+{:#events:create}
 
 
 
@@ -1094,7 +1094,7 @@ $("#progress").ejProgressBar({
 
 
 ### destroy
-{:#events-destroy}
+{:#events:destroy}
 
 
 
@@ -1174,7 +1174,7 @@ $("#progress").ejProgressBar({
 
 
 ### start
-{:#events-start}
+{:#events:start}
 
 
 

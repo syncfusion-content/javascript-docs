@@ -73,7 +73,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -131,7 +131,7 @@ $("#lb").ejListView ("option", "cssClass", "customclass");
 
 
 ### dataSource<span class="type-signature type jsonarray">JSONArray</span>
-{:#members-datasource}
+{:#members:datasource}
 
 
 
@@ -185,7 +185,7 @@ $("#lb").ejListView ("option", "dataSource", true);
 
 
 ### enableAjax<span class="type-signature type boolean">boolean</span>
-{:#members-enableajax}
+{:#members:enableajax}
 
 
 
@@ -236,7 +236,7 @@ $("#lb").ejListView ("option", "enableAjax", true);
 
 
 ### enableCache<span class="type-signature type boolean">boolean</span>
-{:#members-enablecache}
+{:#members:enablecache}
 
 
 
@@ -287,7 +287,7 @@ $("#lb").ejListView ("option", "enableCache", true);
 
 
 ### enableCheckMark<span class="type-signature type boolean">boolean</span>
-{:#members-enablecheckmark}
+{:#members:enablecheckmark}
 
 
 
@@ -345,7 +345,7 @@ $("#lb").ejListView ("option", "enableCheckMark", true);
 
 
 ### enableFiltering<span class="type-signature type boolean">boolean</span>
-{:#members-enablefiltering}
+{:#members:enablefiltering}
 
 
 
@@ -403,7 +403,7 @@ $("#lb").ejListView ("option", "enableFiltering", true);
 
 
 ### enableGroupList<span class="type-signature type boolean">boolean</span>
-{:#members-enablegrouplist}
+{:#members:enablegrouplist}
 
 
 
@@ -465,7 +465,7 @@ $("#lb").ejListView ("option", "enableGroupList", true);
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#members-enablepersistence}
+{:#members:enablepersistence}
 
 
 
@@ -523,7 +523,7 @@ $("#lb").ejListView ("option", "enablePersistence", true);
 
 
 ### fieldSettings<span class="type-signature type object">object</span>
-{:#members-fieldsettings}
+{:#members:fieldsettings}
 
 
 
@@ -576,7 +576,7 @@ $("#lb").ejListView ("option", "fieldSettings", true);
 
 
 ### headerBackButtonText<span class="type-signature type string">string</span>
-{:#members-headerbackbuttontext}
+{:#members:headerbackbuttontext}
 
 
 
@@ -634,7 +634,7 @@ $("#lb").ejListView ("option", "headerBackButtonText", "Back");
 
 
 ### headerTitle<span class="type-signature type string">string</span>
-{:#members-headertitle}
+{:#members:headertitle}
 
 
 
@@ -692,7 +692,7 @@ $("#lb").ejListView ("option", "headerTitle", "Title");
 
 
 ### height<span class="type-signature type number">number</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -750,7 +750,7 @@ $("#lb").ejListView ("option", "height", 300);
 
 
 ### persistSelection<span class="type-signature type boolean">boolean</span>
-{:#members-persistselection}
+{:#members:persistselection}
 
 
 
@@ -808,7 +808,7 @@ $("#lb").ejListView ("option", "persistSelection", true);
 
 
 ### preventSelection<span class="type-signature type boolean">boolean</span>
-{:#members-preventselection}
+{:#members:preventselection}
 
 
 
@@ -866,7 +866,7 @@ $("#lb").ejListView ("option", "preventSelection", true);
 
 
 ### query<span class="type-signature type ej.query">ej.Query</span>
-{:#members-query}
+{:#members:query}
 
 
 
@@ -917,7 +917,7 @@ $("#lb").ejListView ("option", "query", true);
 
 
 ### renderTemplate<span class="type-signature type boolean">boolean</span>
-{:#members-rendertemplate}
+{:#members:rendertemplate}
 
 
 
@@ -967,7 +967,7 @@ $("#lb").ejListView ({ renderTemplate: true });
 
 
 ### selectedItemIndex<span class="type-signature type number">number</span>
-{:#members-selecteditemindex}
+{:#members:selecteditemindex}
 
 
 
@@ -1025,7 +1025,7 @@ $("#lb").ejListView ("option", "selectedItemIndex", 2);
 
 
 ### showHeader<span class="type-signature type boolean">boolean</span>
-{:#members-showheader}
+{:#members:showheader}
 
 
 
@@ -1083,7 +1083,7 @@ $("#lb").ejListView ("option", "showHeader", true);
 
 
 ### templateId<span class="type-signature type boolean">boolean</span>
-{:#members-templateid}
+{:#members:templateid}
 
 
 
@@ -1128,7 +1128,7 @@ Example
 
 
 ### width<span class="type-signature type number">number</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -1190,7 +1190,7 @@ $("#lb").ejListView ("option", "width", 200);
 
 
 ### addItem<span class="signature">()</span>
-{:#methods-additem}
+{:#methods:additem}
 
 
 
@@ -1230,7 +1230,7 @@ $("#lb").ejListView("addItem",$("&amp;ltli data-ej-text='Comic / Cartoon'&gt;&lt
 
 
 ### checkAllItem<span class="signature">()</span>
-{:#methods-checkallitem}
+{:#methods:checkallitem}
 
 
 
@@ -1270,7 +1270,7 @@ $("#lb").ejListView("checkAllItem");
 
 
 ### checkItem<span class="signature">()</span>
-{:#methods-checkitem}
+{:#methods:checkitem}
 
 
 
@@ -1310,7 +1310,7 @@ $("#lb").ejListView("checkItem",2);
 
 
 ### clear<span class="signature">()</span>
-{:#methods-clear}
+{:#methods:clear}
 
 
 
@@ -1361,7 +1361,7 @@ window.dbitem2 =
 
 
 ### deActive<span class="signature">()</span>
-{:#methods-deactive}
+{:#methods:deactive}
 
 
 
@@ -1401,7 +1401,7 @@ $("#lb").ejListView("deActive",2);
 
 
 ### disableItem<span class="signature">()</span>
-{:#methods-disableitem}
+{:#methods:disableitem}
 
 
 
@@ -1441,7 +1441,7 @@ $("#lb").ejListView("disableItem",2);
 
 
 ### enableItem<span class="signature">()</span>
-{:#methods-enableitem}
+{:#methods:enableitem}
 
 
 
@@ -1481,7 +1481,7 @@ $("#lb").ejListView("enableItem",2);
 
 
 ### getActiveItem<span class="signature">()</span>
-{:#methods-getactiveitem}
+{:#methods:getactiveitem}
 
 
 
@@ -1521,7 +1521,7 @@ $("#lb").ejListView("getActiveItem");
 
 
 ### getActiveItemText<span class="signature">()</span>
-{:#methods-getactiveitemtext}
+{:#methods:getactiveitemtext}
 
 
 
@@ -1561,7 +1561,7 @@ $("#lb").ejListView("getActiveItemText");
 
 
 ### getCheckedItems<span class="signature">()</span>
-{:#methods-getcheckeditems}
+{:#methods:getcheckeditems}
 
 
 
@@ -1601,7 +1601,7 @@ $("#lb").ejListView("getCheckedItems");
 
 
 ### getCheckedItemsText<span class="signature">()</span>
-{:#methods-getcheckeditemstext}
+{:#methods:getcheckeditemstext}
 
 
 
@@ -1641,7 +1641,7 @@ $("#lb").ejListView("getCheckedItemsText");
 
 
 ### getItemsCount<span class="signature">()</span>
-{:#methods-getitemscount}
+{:#methods:getitemscount}
 
 
 
@@ -1681,7 +1681,7 @@ $("#lb").ejListView("getItemsCount");
 
 
 ### getItemText<span class="signature">()</span>
-{:#methods-getitemtext}
+{:#methods:getitemtext}
 
 
 
@@ -1721,7 +1721,7 @@ $("#lb").ejListView("getItemText",2);
 
 
 ### hasChild<span class="signature">()</span>
-{:#methods-haschild}
+{:#methods:haschild}
 
 
 
@@ -1761,7 +1761,7 @@ $("#lb").ejListView("hasChild",2);
 
 
 ### hide<span class="signature">()</span>
-{:#methods-hide}
+{:#methods:hide}
 
 
 
@@ -1801,7 +1801,7 @@ $("#lb").ejListView("hide");
 
 
 ### hideItem<span class="signature">()</span>
-{:#methods-hideitem}
+{:#methods:hideitem}
 
 
 
@@ -1841,7 +1841,7 @@ $("#lb").ejListView("hideItem",2);
 
 
 ### isChecked<span class="signature">()</span>
-{:#methods-ischecked}
+{:#methods:ischecked}
 
 
 
@@ -1881,7 +1881,7 @@ $("#lb").ejListView("isChecked",2);
 
 
 ### loadAjaxContent<span class="signature">()</span>
-{:#methods-loadajaxcontent}
+{:#methods:loadajaxcontent}
 
 
 
@@ -1914,7 +1914,7 @@ $("#lb").ejListView("loadAjaxContent","load1.html");
 
 
 ### removeCheckMark<span class="signature">()</span>
-{:#methods-removecheckmark}
+{:#methods:removecheckmark}
 
 
 
@@ -1954,7 +1954,7 @@ $("#lb").ejListView("removeCheckMark",2);
 
 
 ### removeItem<span class="signature">()</span>
-{:#methods-removeitem}
+{:#methods:removeitem}
 
 
 
@@ -1994,7 +1994,7 @@ $("#lb").ejListView("removeItem",3);
 
 
 ### selectItem<span class="signature">()</span>
-{:#methods-selectitem}
+{:#methods:selectitem}
 
 
 
@@ -2034,7 +2034,7 @@ $("#lb").ejListView("selectItem",2);
 
 
 ### setActive<span class="signature">()</span>
-{:#methods-setactive}
+{:#methods:setactive}
 
 
 
@@ -2074,7 +2074,7 @@ $("#lb").ejListView("setActive",2);
 
 
 ### show<span class="signature">()</span>
-{:#methods-show}
+{:#methods:show}
 
 
 
@@ -2114,7 +2114,7 @@ $("#lb").ejListView("show");
 
 
 ### showItem<span class="signature">()</span>
-{:#methods-showitem}
+{:#methods:showitem}
 
 
 
@@ -2154,7 +2154,7 @@ $("#lb").ejListView("showItem",2);
 
 
 ### unCheckAllItem<span class="signature">()</span>
-{:#methods-uncheckallitem}
+{:#methods:uncheckallitem}
 
 
 
@@ -2194,7 +2194,7 @@ $("#lb").ejListView("unCheckAllItem");
 
 
 ### unCheckItem<span class="signature">()</span>
-{:#methods-uncheckitem}
+{:#methods:uncheckitem}
 
 
 
@@ -2238,7 +2238,7 @@ $("#lb").ejListView("unCheckItem",2);
 
 
 ### ajaxBeforeLoad
-{:#events-ajaxbeforeload}
+{:#events:ajaxbeforeload}
 
 
 
@@ -2321,7 +2321,7 @@ $("#lb").ejListView({enableAjax: true,
 
 
 ### ajaxComplete
-{:#events-ajaxcomplete}
+{:#events:ajaxcomplete}
 
 
 
@@ -2399,7 +2399,7 @@ $("#lb").ejListView({enableAjax: true,
 
 
 ### ajaxError
-{:#events-ajaxerror}
+{:#events:ajaxerror}
 
 
 
@@ -2502,7 +2502,7 @@ $("#lb").ejListView({enableAjax: true,
 
 
 ### ajaxSuccess
-{:#events-ajaxsuccess}
+{:#events:ajaxsuccess}
 
 
 
@@ -2605,7 +2605,7 @@ $("#lb").ejListView({enableAjax: true,
 
 
 ### load
-{:#events-load}
+{:#events:load}
 
 
 
@@ -2690,7 +2690,7 @@ $("#lb").ejListView({
 
 
 ### loadComplete
-{:#events-loadcomplete}
+{:#events:loadcomplete}
 
 
 
@@ -2775,7 +2775,7 @@ $("#lb").ejListView({
 
 
 ### mouseDown
-{:#events-mousedown}
+{:#events:mousedown}
 
 
 
@@ -2895,7 +2895,7 @@ $("#lb").ejListView({
 
 
 ### mouseUP
-{:#events-mouseup}
+{:#events:mouseup}
 
 
 

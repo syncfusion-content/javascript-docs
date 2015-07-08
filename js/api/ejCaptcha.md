@@ -94,7 +94,7 @@ Requires
 
 
 ### characterSet<span class="type-signature type string">string</span>
-{:#members-characterset}
+{:#members:characterset}
 
 
 
@@ -144,7 +144,7 @@ Example
 
 
 ### customErrorMessage<span class="type-signature type string">string</span>
-{:#members-customerrormessage}
+{:#members:customerrormessage}
 
 
 
@@ -194,7 +194,7 @@ Example
 
 
 ### enableAutoValidation<span class="type-signature type boolean">boolean</span>
-{:#members-enableautovalidation}
+{:#members:enableautovalidation}
 
 
 
@@ -244,7 +244,7 @@ Example
 
 
 ### enableCaseSensitivity<span class="type-signature type boolean">boolean</span>
-{:#members-enablecasesensitivity}
+{:#members:enablecasesensitivity}
 
 
 
@@ -294,7 +294,7 @@ Example
 
 
 ### enablePattern<span class="type-signature type boolean">boolean</span>
-{:#members-enablepattern}
+{:#members:enablepattern}
 
 
 
@@ -344,7 +344,7 @@ Example
 
 
 ### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#members-enablertl}
+{:#members:enablertl}
 
 
 
@@ -394,7 +394,7 @@ Example
 
 
 ### hatchStyle<span class="type-signature type enum">enum</span>
-{:#members-hatchstyle}
+{:#members:hatchstyle}
 
 
 
@@ -444,7 +444,7 @@ Example
 
 
 ### height<span class="type-signature type number">number</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -494,7 +494,7 @@ Example
 
 
 ### mapper<span class="type-signature type string">string</span>
-{:#members-mapper}
+{:#members:mapper}
 
 
 
@@ -544,7 +544,7 @@ Example
 
 
 ### maximumLength<span class="type-signature type number">number</span>
-{:#members-maximumlength}
+{:#members:maximumlength}
 
 
 
@@ -594,7 +594,7 @@ Example
 
 
 ### minimumLength<span class="type-signature type number">number</span>
-{:#members-minimumlength}
+{:#members:minimumlength}
 
 
 
@@ -644,7 +644,7 @@ Example
 
 
 ### requestMapper<span class="type-signature type string">string</span>
-{:#members-requestmapper}
+{:#members:requestmapper}
 
 
 
@@ -694,7 +694,7 @@ Example
 
 
 ### showAudioButton<span class="type-signature type boolean">boolean</span>
-{:#members-showaudiobutton}
+{:#members:showaudiobutton}
 
 
 
@@ -744,7 +744,7 @@ Example
 
 
 ### showRefreshButton<span class="type-signature type boolean">boolean</span>
-{:#members-showrefreshbutton}
+{:#members:showrefreshbutton}
 
 
 
@@ -794,7 +794,7 @@ Example
 
 
 ### targetButton<span class="type-signature type string">string</span>
-{:#members-targetbutton}
+{:#members:targetbutton}
 
 
 
@@ -845,7 +845,7 @@ Example
 
 
 ### targetInput<span class="type-signature type string">string</span>
-{:#members-targetinput}
+{:#members:targetinput}
 
 
 
@@ -895,7 +895,7 @@ Example
 
 
 ### width<span class="type-signature type number">number</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -952,7 +952,7 @@ Example
 
 
 ### refreshBegin
-{:#events-refreshbegin}
+{:#events:refreshbegin}
 
 
 
@@ -1013,7 +1013,7 @@ Example
 
 
 ### refreshComplete
-{:#events-refreshcomplete}
+{:#events:refreshcomplete}
 
 
 
@@ -1074,7 +1074,7 @@ Example
 
 
 ### refreshFailure
-{:#events-refreshfailure}
+{:#events:refreshfailure}
 
 
 
@@ -1135,7 +1135,7 @@ Example
 
 
 ### refreshSuccess
-{:#events-refreshsuccess}
+{:#events:refreshsuccess}
 
 
 

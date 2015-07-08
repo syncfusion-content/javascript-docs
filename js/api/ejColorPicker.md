@@ -106,7 +106,7 @@ Requires
 
 
 ### buttonText<span class="type-signature type string">string</span>
-{:#members-buttontext}
+{:#members:buttontext}
 
 
 
@@ -156,7 +156,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {apply: "Set", c
 
 
 ### columns<span class="type-signature type number">number</span>
-{:#members-columns}
+{:#members:columns}
 
 
 
@@ -206,7 +206,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", columns:
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -256,7 +256,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  cssClass : "gradient-lime"});
 
 
 ### custom<span class="type-signature type data">data</span>
-{:#members-custom}
+{:#members:custom}
 
 
 
@@ -306,7 +306,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette:
 
 
 ### displayInline<span class="type-signature type boolean">boolean</span>
-{:#members-displayinline}
+{:#members:displayinline}
 
 
 
@@ -356,7 +356,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  displayInline: true});
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#members-enabled}
+{:#members:enabled}
 
 
 
@@ -406,7 +406,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",  enabled: false});
 
 
 ### enableOpacity<span class="type-signature type boolean">boolean</span>
-{:#members-enableopacity}
+{:#members:enableopacity}
 
 
 
@@ -456,7 +456,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", enableOpacity: false });
 
 
 ### modelType<span class="type-signature type enum">enum</span>
-{:#members-modeltype}
+{:#members:modeltype}
 
 
 
@@ -506,7 +506,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette"});
 
 
 ### opacityValue<span class="type-signature type number">number</span>
-{:#members-opacityvalue}
+{:#members:opacityvalue}
 
 
 
@@ -556,7 +556,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", opacityValue: 20 });
 
 
 ### palette<span class="type-signature type enum">enum</span>
-{:#members-palette}
+{:#members:palette}
 
 
 
@@ -606,7 +606,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette:
 
 
 ### presetType<span class="type-signature type enum">enum</span>
-{:#members-presettype}
+{:#members:presettype}
 
 
 
@@ -656,7 +656,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", presetTy
 
 
 ### showPreview<span class="type-signature type boolean">boolean</span>
-{:#members-showpreview}
+{:#members:showpreview}
 
 
 
@@ -706,7 +706,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", showPreview: false});
 
 
 ### showRecentColors<span class="type-signature type boolean">boolean</span>
-{:#members-showrecentcolors}
+{:#members:showrecentcolors}
 
 
 
@@ -756,7 +756,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   showRecentColors: true});
 
 
 ### showTooltip<span class="type-signature type boolean">boolean</span>
-{:#members-showtooltip}
+{:#members:showtooltip}
 
 
 
@@ -806,7 +806,7 @@ $('#colorPick').ejColorPicker({ value: "#278787", showTooltip: true});
 
 
 ### toolIcon<span class="type-signature type string">string</span>
-{:#members-toolicon}
+{:#members:toolicon}
 
 
 
@@ -865,7 +865,7 @@ margin-left: 5px;
 
 
 ### tooltipText<span class="type-signature type object">object</span>
-{:#members-tooltiptext}
+{:#members:tooltiptext}
 
 
 
@@ -915,7 +915,7 @@ $('#colorPick').ejColorPicker({ value: "#278787",   tooltipText: { switcher: "Sw
 
 
 ### value<span class="type-signature type string">string</span>
-{:#members-value}
+{:#members:value}
 
 
 
@@ -972,7 +972,7 @@ $('#colorPick').ejColorPicker({ value: "#278787"});
 
 
 ### disable<span class="signature">()</span>
-{:#methods-disable}
+{:#methods:disable}
 
 
 
@@ -1020,7 +1020,7 @@ $("#colorPick").ejColorPicker("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#methods-enable}
+{:#methods:enable}
 
 
 
@@ -1068,7 +1068,7 @@ $("#colorPick").ejColorPicker("enable");
 
 
 ### getColor<span class="signature">()</span>
-{:#methods-getcolor}
+{:#methods:getcolor}
 
 
 
@@ -1118,7 +1118,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 ### getValue<span class="signature">()</span>
-{:#methods-getvalue}
+{:#methods:getvalue}
 
 
 
@@ -1166,7 +1166,7 @@ alert($("#colorPick").ejColorPicker("getValue"));
 
 
 ### hexCodeToRGB<span class="signature">()</span>
-{:#methods-hexcodetorgb}
+{:#methods:hexcodetorgb}
 
 
 
@@ -1216,7 +1216,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 ### hide<span class="signature">()</span>
-{:#methods-hide}
+{:#methods:hide}
 
 
 
@@ -1264,7 +1264,7 @@ $("#colorPick").ejColorPicker("hide");
 
 
 ### HSVToRGB<span class="signature">()</span>
-{:#methods-hsvtorgb}
+{:#methods:hsvtorgb}
 
 
 
@@ -1314,7 +1314,7 @@ alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
 
 
 ### RGBToHEX<span class="signature">()</span>
-{:#methods-rgbtohex}
+{:#methods:rgbtohex}
 
 
 
@@ -1364,7 +1364,7 @@ alert($("#colorPick").ejColorPicker("RGBToHEX",colorObj.getColor()));
 
 
 ### RGBToHSV<span class="signature">()</span>
-{:#methods-rgbtohsv}
+{:#methods:rgbtohsv}
 
 
 
@@ -1414,7 +1414,7 @@ alert("H="+color.r+", S="+color.g+", V="+color.b);
 
 
 ### show<span class="signature">()</span>
-{:#methods-show}
+{:#methods:show}
 
 
 
@@ -1469,7 +1469,7 @@ $("#colorPick").ejColorPicker("show");
 
 
 ### change
-{:#events-change}
+{:#events:change}
 
 
 
@@ -1556,7 +1556,7 @@ change: function (args) {
 
 
 ### close
-{:#events-close}
+{:#events:close}
 
 
 
@@ -1638,7 +1638,7 @@ close: function (args) {
 
 
 ### create
-{:#events-create}
+{:#events:create}
 
 
 
@@ -1720,7 +1720,7 @@ create: function (args) {
 
 
 ### destroy
-{:#events-destroy}
+{:#events:destroy}
 
 
 
@@ -1802,7 +1802,7 @@ destroy: function (args) {
 
 
 ### open
-{:#events-open}
+{:#events:open}
 
 
 
@@ -1884,7 +1884,7 @@ open: function (args) {
 
 
 ### select
-{:#events-select}
+{:#events:select}
 
 
 

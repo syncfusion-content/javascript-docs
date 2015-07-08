@@ -83,7 +83,7 @@ Requires
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -133,7 +133,7 @@ Example
 
 
 ### customCharacter<span class="type-signature type string">string</span>
-{:#members-customcharacter}
+{:#members:customcharacter}
 
 
 
@@ -183,7 +183,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#members-enabled}
+{:#members:enabled}
 
 
 
@@ -233,7 +233,7 @@ Example
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#members-enablepersistence}
+{:#members:enablepersistence}
 
 
 
@@ -283,7 +283,7 @@ Example
 
 
 ### height<span class="type-signature type string">string</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -333,7 +333,7 @@ Example
 
 
 ### hidePromptOnLeave<span class="type-signature type boolean">boolean</span>
-{:#members-hidepromptonleave}
+{:#members:hidepromptonleave}
 
 
 
@@ -383,7 +383,7 @@ Example
 
 
 ### inputMode<span class="type-signature type enum">enum</span>
-{:#members-inputmode}
+{:#members:inputmode}
 
 
 
@@ -433,7 +433,7 @@ Example
 
 
 ### maskFormat<span class="type-signature type string">string</span>
-{:#members-maskformat}
+{:#members:maskformat}
 
 
 
@@ -483,7 +483,7 @@ Example
 
 
 ### readOnly<span class="type-signature type boolean">boolean</span>
-{:#members-readonly}
+{:#members:readonly}
 
 
 
@@ -533,7 +533,7 @@ Example
 
 
 ### showError<span class="type-signature type boolean">boolean</span>
-{:#members-showerror}
+{:#members:showerror}
 
 
 
@@ -583,7 +583,7 @@ Example
 
 
 ### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#members-showroundedcorner}
+{:#members:showroundedcorner}
 
 
 
@@ -633,7 +633,7 @@ Example
 
 
 ### textAlign<span class="type-signature type enum">enum</span>
-{:#members-textalign}
+{:#members:textalign}
 
 
 
@@ -683,7 +683,7 @@ Example
 
 
 ### validationMessage<span class="type-signature type object">object</span>
-{:#members-validationmessage}
+{:#members:validationmessage}
 
 
 
@@ -733,7 +733,7 @@ Example
 
 
 ### validationRules<span class="type-signature type object">object</span>
-{:#members-validationrules}
+{:#members:validationrules}
 
 
 
@@ -783,7 +783,7 @@ Example
 
 
 ### value<span class="type-signature type string">string</span>
-{:#members-value}
+{:#members:value}
 
 
 
@@ -832,7 +832,7 @@ Example
 
 
 ### watermarkText<span class="type-signature type string">string</span>
-{:#members-watermarktext}
+{:#members:watermarktext}
 
 
 
@@ -882,7 +882,7 @@ Example
 
 
 ### width<span class="type-signature type string">string</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -939,7 +939,7 @@ Example
 
 
 ### clear<span class="signature">()</span>
-{:#methods-clear}
+{:#methods:clear}
 
 
 
@@ -986,7 +986,7 @@ $("#mask").ejMaskEdit("clear");
 
 
 ### disable<span class="signature">()</span>
-{:#methods-disable}
+{:#methods:disable}
 
 
 
@@ -1033,7 +1033,7 @@ $("#mask").ejMaskEdit("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#methods-enable}
+{:#methods:enable}
 
 
 
@@ -1080,7 +1080,7 @@ $("#mask").ejMaskEdit("enable");
 
 
 ### get_StrippedValue<span class="signature">()</span>
-{:#methods-get_strippedvalue}
+{:#methods:get_strippedvalue}
 
 
 
@@ -1126,7 +1126,7 @@ alert( $("#mask").ejMaskEdit("get_StrippedValue"));
 
 
 ### get_UnstrippedValue<span class="signature">()</span>
-{:#methods-get_unstrippedvalue}
+{:#methods:get_unstrippedvalue}
 
 
 
@@ -1179,7 +1179,7 @@ alert($("#mask").ejMaskEdit("get_UnstrippedValue"));
 
 
 ### change
-{:#events-change}
+{:#events:change}
 
 
 
@@ -1269,7 +1269,7 @@ $("#mask").ejMaskEdit({
 
 
 ### create
-{:#events-create}
+{:#events:create}
 
 
 
@@ -1332,7 +1332,7 @@ $("#mask").ejMaskEdit({
 
 
 ### destroy
-{:#events-destroy}
+{:#events:destroy}
 
 
 
@@ -1395,7 +1395,7 @@ $("#mask").ejMaskEdit({
 
 
 ### focusIn
-{:#events-focusin}
+{:#events:focusin}
 
 
 
@@ -1485,7 +1485,7 @@ $("#mask").ejMaskEdit({
 
 
 ### focusOut
-{:#events-focusout}
+{:#events:focusout}
 
 
 
@@ -1575,7 +1575,7 @@ $("#mask").ejMaskEdit({
 
 
 ### keydown
-{:#events-keydown}
+{:#events:keydown}
 
 
 
@@ -1665,7 +1665,7 @@ $("#mask").ejMaskEdit({
 
 
 ### keyPress
-{:#events-keypress}
+{:#events:keypress}
 
 
 
@@ -1755,7 +1755,7 @@ $("#mask").ejMaskEdit({
 
 
 ### keyup
-{:#events-keyup}
+{:#events:keyup}
 
 
 
@@ -1844,7 +1844,7 @@ $("#mask").ejMaskEdit({
 
 
 ### mouseout
-{:#events-mouseout}
+{:#events:mouseout}
 
 
 
@@ -1934,7 +1934,7 @@ $("#mask").ejMaskEdit({
 
 
 ### mouseover
-{:#events-mouseover}
+{:#events:mouseover}
 
 
 

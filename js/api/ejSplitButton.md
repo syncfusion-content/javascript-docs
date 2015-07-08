@@ -91,7 +91,7 @@ Requires
 
 
 ### arrowPosition<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#members-arrowposition}
+{:#members:arrowposition}
 
 
 
@@ -146,7 +146,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 ### buttonMode<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#members-buttonmode}
+{:#members:buttonmode}
 
 
 
@@ -201,7 +201,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 ### contentType<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#members-contenttype}
+{:#members:contenttype}
 
 
 
@@ -254,7 +254,7 @@ $("#sbutton").ejSplitButton({ targetID: "target",width:100, contentType:  ej.Con
 
 
 ### cssClass<span class="type-signature type string">String</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -308,7 +308,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,cssClass: "gradient-li
 
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
-{:#members-enabled}
+{:#members:enabled}
 
 
 
@@ -362,7 +362,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,enabled:  true });
 
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
-{:#members-enablertl}
+{:#members:enablertl}
 
 
 
@@ -416,7 +416,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,enableRTL : true});
 
 
 ### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -469,7 +469,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,height: 28 });
 
 
 ### imagePosition<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#members-imageposition}
+{:#members:imageposition}
 
 
 
@@ -524,7 +524,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 ### prefixIcon<span class="type-signature type string">String</span>
-{:#members-prefixicon}
+{:#members:prefixicon}
 
 
 
@@ -578,7 +578,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,contentType: "imageonl
 
 
 ### showRoundedCorner<span class="type-signature type string">String</span>
-{:#members-showroundedcorner}
+{:#members:showroundedcorner}
 
 
 
@@ -632,7 +632,7 @@ $("#sbutton").ejSplitButton({ targetID:"target",width:100,showRoundedCorner: tru
 
 
 ### size<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
-{:#members-size}
+{:#members:size}
 
 
 
@@ -686,7 +686,7 @@ Example
 
 
 ### suffixIcon<span class="type-signature type string">String</span>
-{:#members-suffixicon}
+{:#members:suffixicon}
 
 
 
@@ -740,7 +740,7 @@ $("#sbutton").ejSplitButton({targetID:"target",width:100,contentType:"imageboth"
 
 
 ### targetID<span class="type-signature type string">String</span>
-{:#members-targetid}
+{:#members:targetid}
 
 
 
@@ -794,7 +794,7 @@ $("#sbutton").ejSplitButton({targetID:"target",width:100 });
 
 
 ### text<span class="type-signature type string">String</span>
-{:#members-text}
+{:#members:text}
 
 
 
@@ -848,7 +848,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100, text: "New" });
 
 
 ### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -909,7 +909,7 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100 });
 
 
 ### destroy<span class="signature">()</span>
-{:#methods-destroy}
+{:#methods:destroy}
 
 
 
@@ -963,7 +963,7 @@ $("#sbutton").ejSplitButton("destroy");
 
 
 ### disable<span class="signature">()</span>
-{:#methods-disable}
+{:#methods:disable}
 
 
 
@@ -1017,7 +1017,7 @@ $("#sbutton").ejSplitButton("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#methods-enable}
+{:#methods:enable}
 
 
 
@@ -1078,7 +1078,7 @@ $("#sbutton").ejSplitButton("enable");
 
 
 ### beforeOpen
-{:#events-beforeopen}
+{:#events:beforeopen}
 
 
 
@@ -1143,7 +1143,7 @@ Example
 
 
 ### click
-{:#events-click}
+{:#events:click}
 
 
 
@@ -1237,7 +1237,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 ### create
-{:#events-create}
+{:#events:create}
 
 
 
@@ -1321,7 +1321,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 ### destroy
-{:#events-destroy}
+{:#events:destroy}
 
 
 
@@ -1405,7 +1405,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 ### itemMouseOut
-{:#events-itemmouseout}
+{:#events:itemmouseout}
 
 
 
@@ -1521,7 +1521,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 ### itemMouseOver
-{:#events-itemmouseover}
+{:#events:itemmouseover}
 
 
 
@@ -1637,7 +1637,7 @@ $("#sbutton"). ejSplitButton ({
 
 
 ### itemSelected
-{:#events-itemselected}
+{:#events:itemselected}
 
 
 

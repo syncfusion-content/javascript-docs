@@ -83,7 +83,7 @@ Requires
 
 
 ### badge<span class="type-signature type object">object</span>
-{:#members-badge}
+{:#members:badge}
 
 
 
@@ -105,7 +105,7 @@ Section for badge specific functionalities.
 
 
 ### badge.enabled<span class="type-signature type boolean">boolean</span>
-{:#members-badge-enabled}
+{:#members:badge-enabled}
 
 
 
@@ -164,7 +164,7 @@ $("#tile").ejTile("option", "badge.enabled", true);            </code>
 
 
 ### badge.maxValue<span class="type-signature type number">number</span>
-{:#members-badge-maxvalue}
+{:#members:badge-maxvalue}
 
 
 
@@ -223,7 +223,7 @@ $("#tile").ejTile("option", "badge.maxValue", 3);            </code>
 
 
 ### badge.minValue<span class="type-signature type number">number</span>
-{:#members-badge-minvalue}
+{:#members:badge-minvalue}
 
 
 
@@ -282,7 +282,7 @@ $("#tile").ejTile("option", "badge.minValue", 5);            </code>
 
 
 ### badge.text<span class="type-signature type string">string</span>
-{:#members-badge-text}
+{:#members:badge-text}
 
 
 
@@ -341,7 +341,7 @@ $("#tile").ejTile("option", "badge.text", "ten");            </code>
 
 
 ### badge.value<span class="type-signature type number">number</span>
-{:#members-badge-value}
+{:#members:badge-value}
 
 
 
@@ -400,7 +400,7 @@ $("#tile").ejTile("option", "badge.value", 5);            </code>
 
 
 ### captionTemplateId<span class="type-signature type string">string</span>
-{:#members-captiontemplateid}
+{:#members:captiontemplateid}
 
 
 
@@ -461,7 +461,7 @@ $("#tile").ejTile("option", "captionTemplateId", "sample");            </code>
 
 
 ### cssClass<span class="type-signature type string">string</span>
-{:#members-cssclass}
+{:#members:cssclass}
 
 
 
@@ -520,7 +520,7 @@ $("#tile").ejTile("option", "cssClass", "customclass");            </code>
 
 
 ### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#members-enablepersistence}
+{:#members:enablepersistence}
 
 
 
@@ -579,7 +579,7 @@ $("#tile").ejTile("option", "enablePersistence", true);            </code>
 
 
 ### height<span class="type-signature type number">number</span>
-{:#members-height}
+{:#members:height}
 
 
 
@@ -638,7 +638,7 @@ $("#tile").ejTile("option", "height", 300);            </code>
 
 
 ### imageClass<span class="type-signature type string">string</span>
-{:#members-imageclass}
+{:#members:imageclass}
 
 
 
@@ -703,7 +703,7 @@ $("#tile").ejTile("option", "imageClass", "sample");            </code>
 
 
 ### imagePosition<span class="type-signature type enum">enum</span>
-{:#members-imageposition}
+{:#members:imageposition}
 
 
 
@@ -762,7 +762,7 @@ $("#tile").ejTile("option", "imagePosition", "right");            </code>
 
 
 ### imageTemplateId<span class="type-signature type string">string</span>
-{:#members-imagetemplateid}
+{:#members:imagetemplateid}
 
 
 
@@ -823,7 +823,7 @@ $("#tile").ejTile("option", "imageTemplateId", "sample");            </code>
 
 
 ### imageUrl<span class="type-signature type string">string</span>
-{:#members-imageurl}
+{:#members:imageurl}
 
 
 
@@ -882,7 +882,7 @@ $("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png");       
 
 
 ### livetile<span class="type-signature type object">object</span>
-{:#members-livetile}
+{:#members:livetile}
 
 
 
@@ -904,7 +904,7 @@ Section for livetile specific functionalities.
 
 
 ### livetile.enabled<span class="type-signature type boolean">boolean</span>
-{:#members-livetile-enabled}
+{:#members:livetile-enabled}
 
 
 
@@ -963,7 +963,7 @@ $("#tile").ejTile("option", "liveTile.enabled", true);            </code>
 
 
 ### livetile.imageClass<span class="type-signature type string">string</span>
-{:#members-livetile-imageclass}
+{:#members:livetile-imageclass}
 
 
 
@@ -1036,7 +1036,7 @@ $("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);     
 
 
 ### livetile.imageTemplateId<span class="type-signature type string">string</span>
-{:#members-livetile-imagetemplateid}
+{:#members:livetile-imagetemplateid}
 
 
 
@@ -1101,7 +1101,7 @@ $("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);
 
 
 ### livetile.imageUrl<span class="type-signature type string">string</span>
-{:#members-livetile-imageurl}
+{:#members:livetile-imageurl}
 
 
 
@@ -1160,7 +1160,7 @@ $("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png
 
 
 ### livetile.type<span class="type-signature type enum">enum</span>
-{:#members-livetile-type}
+{:#members:livetile-type}
 
 
 
@@ -1219,7 +1219,7 @@ $("#tile").ejTile("option", "liveTile.type", "carousel");            </code>
 
 
 ### livetile.updateInterval<span class="type-signature type number">number</span>
-{:#members-livetile-updateinterval}
+{:#members:livetile-updateinterval}
 
 
 
@@ -1278,7 +1278,7 @@ $("#tile").ejTile("option", "liveTile.updateInterval", 1000);            </code>
 
 
 ### showText<span class="type-signature type boolean">boolean</span>
-{:#members-showtext}
+{:#members:showtext}
 
 
 
@@ -1337,7 +1337,7 @@ $("#tile").ejTile("option", "showText", false);            </code>
 
 
 ### text<span class="type-signature type string">string</span>
-{:#members-text}
+{:#members:text}
 
 
 
@@ -1396,7 +1396,7 @@ $("#tile").ejTile("option", "text", "Settings");            </code>
 
 
 ### textAlignment<span class="type-signature type enum">enum</span>
-{:#members-textalignment}
+{:#members:textalignment}
 
 
 
@@ -1455,7 +1455,7 @@ $("#tile").ejTile("option", "textAlignment", "left");            </code>
 
 
 ### tileSize<span class="type-signature type enum">enum</span>
-{:#members-tilesize}
+{:#members:tilesize}
 
 
 
@@ -1514,7 +1514,7 @@ $("#tile").ejTile("option", "tileSize", "medium");            </code>
 
 
 ### width<span class="type-signature type number">number</span>
-{:#members-width}
+{:#members:width}
 
 
 
@@ -1580,7 +1580,7 @@ $("#tile").ejTile("option", "width", 300);            </code>
 
 
 ### updateTemplate<span class="signature">()</span>
-{:#methods-updatetemplate}
+{:#methods:updatetemplate}
 
 
 
@@ -1628,7 +1628,7 @@ value.updateTemplate("sample2");
 
 
 ### mouseDown
-{:#events-mousedown}
+{:#events:mousedown}
 
 
 
@@ -1715,7 +1715,7 @@ mouseDown: function (args) {
 
 
 ### mouseUp
-{:#events-mouseup}
+{:#events:mouseup}
 
 
 
