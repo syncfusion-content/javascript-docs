@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-**OlapGauge** control enables you to retrieve multidimensional data either from cube directly or through any **XML/A** provider and present the OLAP information in a meaningful way.
+**OlapGauge** control enables you to retrieve multidimensional data either from **cube** directly or through any **XML/A** provider and present the OLAP information in a meaningful way.
 
 ## SSAS
 
@@ -38,8 +38,6 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ## XML/A
-
-###Use Case Scenarios
 
 **XML for Analysis** (XML/A) provides the most efficient way to access an OLAP database over the Internet.
 

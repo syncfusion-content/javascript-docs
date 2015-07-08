@@ -81,7 +81,7 @@ The following screenshot displays the **Stacking Column Chart**.
 
 ## Bar Chart
 
-The **Bar Chart** displays horizontal bars for each point in the series and points from adjacent series. **Bar charts** are used to compare values across categories, for displaying the variations in the value of an item over time or for comparing the values of several items at a single point in time.
+The **Bar Chart** displays horizontal bars for each point in the series and points from adjacent series. Bar charts are used to compare values across categories, for displaying the variations in the value of an item over time or for comparing the values of several items at a single point in time.
 
 {% highlight js %}
 

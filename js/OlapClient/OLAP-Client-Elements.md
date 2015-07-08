@@ -134,7 +134,7 @@ Is Draggable</th></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img4.png" alt="" width="25pt" height="25pt" %}</td><td>
-Display Folder</td>/td><td>Display Folder</td><td>False</td></tr>
+Display Folder</td><td>Display Folder</td><td>False</td></tr>
 <tr>
 <td>
 {% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img5.png" alt="" width="22pt" height="24pt" %}</td><td>

@@ -37,7 +37,6 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 ##XML/A
 
-###Use Case Scenarios
 
 **XML for Analysis** (XML/A) provides the most efficient way to access an OLAP database over the Internet.
 
