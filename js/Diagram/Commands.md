@@ -452,3 +452,188 @@ Specifies the region based on page settings</td></tr>
 ## Undo/Redo Command
 
 Refer the Link for [Undo/Redo Commands](/js/Diagram/Undo-and-Redo).
+
+## Command Manager
+
+Diagram provides support to map/bind command execution with desired combination of key gestures. By default, diagram maps some commands with a set of key gestures and they are illustrated in the following table.
+
+<table>
+<tr>
+<td>
+<b>Shortcut Key</b></td><td>
+<b>Command</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+Ctrl + A</td><td>
+selectAll</td><td>
+Select all nodes/connectors in diagram</td></tr>
+<tr>
+<td>
+Ctrl + C</td><td>
+copy</td><td>
+Copy the diagram selected elements</td></tr>
+<tr>
+<td>
+Ctrl + V</td><td>
+paste</td><td>
+Paste the copied elements</td></tr>
+<tr>
+<td>
+Ctrl + X</td><td>
+cut</td><td>
+Cut the selected elements</td></tr>
+<tr>
+<td>
+Ctrl + Z</td><td>
+undo</td><td>
+Undo(Reverse the last editing action performed on diagram)</td></tr>
+<tr>
+<td>
+Ctrl + Y</td><td>
+redo</td><td>
+Redo(Restores the last editing action if no other actions have occurred since the last undo on diagram)</td></tr>
+<tr>
+<td>
+Delete</td><td>
+delete</td><td>
+Delete the selected elements </td></tr>
+<tr>
+<td>
+F2</td><td>
+startEdit</td><td>
+Sets the selected element's label mode as “edit” </td></tr>
+<tr>
+<td>
+Esc</td><td>
+endEdit</td><td>
+Sets the selected element's label mode as “view” </td></tr>
+<tr>
+<td>
+Ctrl /Shift+ Click on object</td><td>
+</td><td>
+Multiple selection(Selector binds all selected nodes/connectors)</td></tr>
+<tr>
+<td>
+Up Arrow</td><td>
+nudge(“up”)</td><td>
+nudgeUp(move the selected elements towards up by one pixel)</td></tr>
+<tr>
+<td>
+Down Arrow</td><td>
+nudge(“down”)</td><td>
+nudgeDown(move the selected elements towards down by one pixel)</td></tr>
+<tr>
+<td>
+Left Arrow</td><td>
+nudge(“left”)</td><td>
+nudgeLeft(move the selected elements towards left by one pixel)</td></tr>
+<tr>
+<td>
+Right Arrow</td><td>
+nudge(“right”)</td><td>
+nudgeRight(move the selected elements towards right by one pixel)</td></tr>
+<tr>
+<td>
+Ctrl + MouseScroll</td><td>
+zoom</td><td>
+Zoom(Zoom in/Zoom out the diagram)</td></tr>
+<tr>
+<td>
+Ctrl+MouseScroll</td><td>
+zoom</td><td>
+Zoom(Zoom in/Zoom out the diagram)</td></tr>
+</table>
+
+_In built commands_
+
+Command Manager provides support to map custom commands with the set of desired key combinations. The defined custom commands will be executed when the specified key gesture is recognized.
+
+### Custom command
+
+A custom command has to be defined with a set of predefined fields as follows.
+
+<table>
+<tr>
+<td>
+<b>Property</b></td><td>
+<b>Type</b></td><td>
+<b>Default</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+gesture</td><td>
+Object</td><td>
+Null</td><td>
+Combination of keys and key modifiers to recognize when to execute the command</td></tr>
+<tr>
+<td>
+canExecute</td><td>
+Object</td><td>
+A method that returns true.</td><td>
+The method to define whether the command is executable at the current moment or not.It will be called when the specified key gesture is recognized.</td></tr>
+<tr>
+<td>
+execute</td><td>
+Object</td><td>
+Null</td><td>
+The execute method acts as the command handler and will be called when the canExecute method returns true.</td></tr>
+<tr>
+<td>
+parameter</td><td>
+Object</td><td>
+Null</td><td>
+parameter is an object. If specified, the parameter will be passed to the handler on command execution.</td></tr>
+</table>
+
+_Custom Command_
+
+The following code snippet illustrates how to define a custom command.
+
+{% highlight js %}
+
+$("#DiagramContent").ejDiagram({
+    commandManager: {
+        commands:{
+            //command to clone the selected item
+            "clone": {
+                //Method to define whether the command can be executed at the current moment
+                canExecute: function (args) {
+                    //Defines that the clone command can be executed, if and only if the selection list is not empty.
+                    if (args.model.selectedItems.length) return true;
+                },
+                //Command handler
+                execute: function (args) {
+                    //Logic to clone the selected element
+                    diagram.copy();
+                    diagram.paste();
+                },
+                //Defines that the clone command has to be executed on the recognition of Shift+C key press.
+                gesture: { key: ej.datavisualization.Diagram.Keys.C, keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift }
+            }
+        }
+    }
+});
+
+{% endhighlight %}
+
+### Modify the existing command
+
+By default, diagram maps certain commands with relevant key combination. If those commands are not desired for the specified keys, they can be disabled. If the functionality of a specific command has to be changed, the command can be completely rewritten. Following code snippet illustrates how to disable a command.
+
+{% highlight js %}
+
+$("#DiagramContent").ejDiagram({
+    //disable the nudging commands
+    commandManager: {
+        commands:{
+        //Assigning null value to an existing command, disables its execution
+        "nudgeUp": null,
+        "nudgeDown": null,
+        "nudgeRight": null,
+        "nudgeLeft": null
+        }
+  }
+});
+
+{% endhighlight %}
