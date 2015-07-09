@@ -740,26 +740,18 @@ Example
 &lt;script&gt;
 // Initialize the RTE with the fontName value specified.
 $("#rteSample").ejRTE({format: [
-                { text: "Paragraph", value: "
-", spriteCssClass: "e-paragraph" },
-                { text: "Quotation", value: "</code>
+                { text: "Paragraph", value: "", spriteCssClass: "e-paragraph" },
+                { text: "Quotation", value: "", spriteCssClass: "e-quotation" }, 
+                { text: "Heading 1", value: "", spriteCssClass: "e-h1" }, 
+                { text: "Heading 2", value: "", spriteCssClass: "e-h2" }, 
+                { text: "Heading 3", value: "", spriteCssClass: "e-h3" }, 
+                { text: "Heading 4", value: "", spriteCssClass: "e-h4" }, 
+                { text: "Heading 5", value: "", spriteCssClass: "e-h5" }, 
+                { text: "Heading 6", value: "", spriteCssClass: "e-h6" } ]}); &lt;/script&gt;
+                
+</code>
+{:#members:}
 </pre>
-**<code>", spriteCssClass: "e-quotation" }, { text: "Heading 1", value: "</code>
-# <code>", spriteCssClass: "e-h1" }, { text: "Heading 2", value: "</code>
-
-## <code>", spriteCssClass: "e-h2" }, { text: "Heading 3", value: "</code>
-
-## <code>", spriteCssClass: "e-h3" }, { text: "Heading 4", value: "</code>
-
-### <code>", spriteCssClass: "e-h4" }, { text: "Heading 5", value: "</code>
-{:#members:}
-
-#### <code>", spriteCssClass: "e-h5" }, { text: "Heading 6", value: "</code>
-{:#members:}
-
-#### <code>", spriteCssClass: "e-h6" } ]}); &lt;/script&gt;</code>
-{:#members:}
-
 </blockquote>
 
 
