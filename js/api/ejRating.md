@@ -8,7 +8,7 @@ metacontent:
 ---
 
 
-
+# Class: ejRating
 
 # Custom Design for Html Rating control.
 

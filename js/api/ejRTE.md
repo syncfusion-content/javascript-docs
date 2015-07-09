@@ -140,6 +140,7 @@ Requires
 
 
 
+
 Enables/Disables the editing of the content.
 
 
@@ -179,6 +180,7 @@ $("#rteSample").ejRTE({ allowEditing: false });
 
 
 
+
 RTE control comments can access through keyboard shortcut keys.
 
 
@@ -214,6 +216,7 @@ $("#rteSample").ejRTE({allowKeyboardNavigation: false });
 
 ### colorCode<span class="type-signature type object">object</span>
 {:#members:colorcode}
+
 
 
 
@@ -261,6 +264,7 @@ $("#rteSample").ejRTE({ colorCode: [
 
 
 
+
 Given number for columns render the color palete pop up.
 
 
@@ -296,6 +300,7 @@ $("#rteSample").ejRTE({colorPaletteColumns: 70 });
 
 ### colorPaletteRows<span class="type-signature type number">number</span>
 {:#members:colorpaletterows}
+
 
 
 
@@ -339,6 +344,7 @@ $("#rteSample").ejRTE({colorPaletteRows: 70 });
 
 
 
+
 Sets the root class for RTE theme. This cssClass API helps to use custom skinning option for RTE control. By defining the root class using this API, we need to include this root class in CSS.
 
 
@@ -374,6 +380,7 @@ Example
 
 ### enabled<span class="type-signature type boolean">boolean</span>
 {:#members:enabled}
+
 
 
 
@@ -417,6 +424,7 @@ $("#rteSample").ejRTE({enabled: false });
 
 
 
+
 enablePersistence the values in RTE.
 
 
@@ -452,6 +460,7 @@ $("#rteSample").ejRTE({enablePersistence: false });
 
 ### enableResize<span class="type-signature type boolean">boolean</span>
 {:#members:enableresize}
+
 
 
 
@@ -495,6 +504,7 @@ $("#rteSample").ejRTE({enableResize: false });
 
 
 
+
 shows enableRTL in RTE.
 
 
@@ -534,6 +544,7 @@ $("#rteSample").ejRTE({enableRTL: true });
 
 
 
+
 Enable | Disable the RTE control exporting Xhtml
 
 
@@ -569,6 +580,7 @@ $("#rteSample").ejRTE({enableXHTML: true });
 
 ### fileBrowser<span class="type-signature type object">object</span>
 {:#members:filebrowser}
+
 
 
 
@@ -616,6 +628,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 
 
 
+
 This API is used to receive the server side handler for file related operations.
 
 
@@ -644,6 +657,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 ### fileBrowser.extensionAllow<span class="type-signature type string">string</span>
 {:#members:filebrowser-extensionallow}
+
 
 
 
@@ -680,6 +694,7 @@ extensionAllow: "*.doc,*.docx,*.pdf,*.txt"
 
 
 
+
 Specify the directory to perform the operation like create, delete and rename folder &amp; files, upload the selected files to the current directory..
 
 
@@ -708,6 +723,7 @@ $("#rteSample").ejRTE({  fileBrowser: {
 
 ### fontName<span class="type-signature type object">object</span>
 {:#members:fontname}
+
 
 
 
@@ -759,7 +775,8 @@ $("#rteSample").ejRTE({ fontName: [
 
 
 ### fontSize<span class="type-signature type object">object</span>
-{:#members:fontSize}
+{:#members:fontsize}
+
 
 
 
@@ -831,6 +848,7 @@ $("#rteSample").ejRTE({ fontSize: [
 
 
 
+
 Sets the format in RTE.
 
 
@@ -875,7 +893,8 @@ $("#rteSample").ejRTE({format: [
 
 
 ### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:}
+{:#members:height}
+
 
 
 
@@ -919,6 +938,7 @@ Example
 
 
 
+
 Specifies the HTML Attributes of the ejRTE
 
 
@@ -958,6 +978,7 @@ $("#rteSample").ejRTE({htmlAttributes: {readOnly : "readOnly" });
 
 
 
+
 Sets the iframe attribute in RTE.
 
 
@@ -993,6 +1014,7 @@ $("#rteSample").ejRTE({iframeAttribute: "color:#000" });
 
 ### imageBrowser<span class="type-signature type object">object</span>
 {:#members:imagebrowser}
+
 
 
 
@@ -1040,6 +1062,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 
 
 
+
 This API is used to receive the server side handler for file related operations.
 
 
@@ -1068,6 +1091,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 ### imageBrowser.extensionAllow<span class="type-signature type string">string</span>
 {:#members:imagebrowser-extensionallow}
+
 
 
 
@@ -1104,6 +1128,7 @@ extensionAllow: "*.doc,*.docx,*.tiff,*.jpeg"
 
 
 
+
 Specify the directory to perform the operation like create, delete and rename folder &amp; files, upload the selected images to the current directory..
 
 
@@ -1136,6 +1161,7 @@ $("#rteSample").ejRTE({  imageBrowser: {
 
 
 
+
 Specifies the action which has to be performed after the file is pushed for uploading. Here we have to mention the server address which has to perform this action.
 
 
@@ -1168,6 +1194,7 @@ uploadAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperatio
 
 
 
+
 Specifies the action which has to be performed after the file is pushed for uploading. Here we have to mention the server address which has to perform this action.
 
 
@@ -1196,6 +1223,7 @@ uploadAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperatio
 
 ### isResponsive<span class="type-signature type boolean">boolean</span>
 {:#members:isresponsive}
+
 
 
 
@@ -1239,6 +1267,7 @@ $("#rteSample").ejRTE({ isResponsive: true });
 
 
 
+
 Sets the culture in RTE.
 
 
@@ -1274,6 +1303,7 @@ $("#rteSample").ejRTE({locale: "en-US" });
 
 ### maxHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#members:maxheight}
+
 
 
 
@@ -1317,6 +1347,7 @@ $("#rteSample").ejRTE({ maxHeight: 900});
 
 
 
+
 Set the max Length for RTE text.
 
 
@@ -1352,6 +1383,7 @@ $("#rteSample").ejRTE({ maxLength: 900});
 
 ### maxWidth<span class="type-signature type number">number</span>
 {:#members:maxwidth}
+
 
 
 
@@ -1395,6 +1427,7 @@ $("#rteSample").ejRTE({ maxWidth: 900});
 
 
 
+
 Set the minimum height for RTE outer wrapper element.
 
 
@@ -1430,6 +1463,7 @@ $("#rteSample").ejRTE({ minHeight: 900});
 
 ### minWidth<span class="type-signature type number">number</span>
 {:#members:minwidth}
+
 
 
 
@@ -1473,6 +1507,7 @@ $("#rteSample").ejRTE({ minWidth: 900});
 
 
 
+
 Sets the name in RTE.
 
 
@@ -1512,6 +1547,7 @@ $("#rteSample").ejRTE({name: "ecommentblog" });
 
 
 
+
 Shows ClearAll in RTE.
 
 
@@ -1538,6 +1574,7 @@ $("#rteSample").ejRTE({showClearAll: false });
 
 ### showClearFormat<span class="type-signature type boolean">boolean</span>
 {:#members:showclearformat}
+
 
 
 
@@ -1581,6 +1618,7 @@ $("#rteSample").ejRTE({showClearFormat:true });
 
 
 
+
 Shows CustomTable in RTE.
 
 
@@ -1616,6 +1654,7 @@ $("#rteSample").ejRTE({showCustomTable: false });
 
 ### showDimensions<span class="type-signature type boolean">boolean</span>
 {:#members:showdimensions}
+
 
 
 
@@ -1659,6 +1698,7 @@ $("#rteSample").ejRTE({showDimensions: false });
 
 
 
+
 Shows FontOption in RTE.
 
 
@@ -1694,6 +1734,7 @@ $("#rteSample").ejRTE({showFontOption: false });
 
 ### showFooter<span class="type-signature type boolean">boolean</span>
 {:#members:showfooter}
+
 
 
 
@@ -1737,6 +1778,7 @@ $("#rteSample").ejRTE({showFooter: true });
 
 
 
+
 Shows HtmlSource in RTE.
 
 
@@ -1772,6 +1814,7 @@ $("#rteSample").ejRTE({showHtmlSource: false });
 
 ### showHtmlTagInfo<span class="type-signature type boolean">boolean</span>
 {:#members:showhtmltaginfo}
+
 
 
 
@@ -1815,6 +1858,7 @@ $("#rteSample").ejRTE({showHtmlTagInfo: false });
 
 
 
+
 Shows toolbar in RTE.
 
 
@@ -1850,6 +1894,7 @@ $("#rteSample").ejRTE({showToolbar: false });
 
 ### showWordCount<span class="type-signature type boolean">boolean</span>
 {:#members:showwordcount}
+
 
 
 
@@ -1893,6 +1938,7 @@ $("#rteSample").ejRTE({showWordCount: false });
 
 
 
+
 Given number for columns render the insert table pop.
 
 
@@ -1932,6 +1978,7 @@ $("#rteSample").ejRTE({tableColumns: 70 });
 
 
 
+
 Given number for rows render the insert table pop.
 
 
@@ -1967,6 +2014,7 @@ $("#rteSample").ejRTE({tableRows: 70 });
 
 ### tools<span class="type-signature type object">object</span>
 {:#members:tools}
+
 
 
 
@@ -2021,6 +2069,7 @@ tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColum
 
 
 
+
 Include font alignment options in RTE toolbar.
 
 
@@ -2049,6 +2098,7 @@ alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"]
 
 ### tools.doAction<span class="type-signature type object">Object</span>
 {:#members:tools-doaction}
+
 
 
 
@@ -2085,6 +2135,7 @@ doAction: ["undo", "redo"]
 
 
 
+
 Include Format styles in RTE toolbar.
 
 
@@ -2113,6 +2164,7 @@ $("#rteSample").ejRTE({  tools: {
 
 ### tools.images<span class="type-signature type object">Object</span>
 {:#members:tools-images}
+
 
 
 
@@ -2149,6 +2201,7 @@ images: ["image", "video"]
 
 
 
+
 Include text indenting options in RTE toolbar.
 
 
@@ -2177,6 +2230,7 @@ indenting: ["outdent", "indent"]
 
 ### tools.links<span class="type-signature type object">Object</span>
 {:#members:tools-links}
+
 
 
 
@@ -2213,6 +2267,7 @@ links: ["createLink"]
 
 
 
+
 Include list type options in RTE toolbar.
 
 
@@ -2241,6 +2296,7 @@ lists: ["unorderedList", "orderedList"]
 
 ### tools.style<span class="type-signature type object">Object</span>
 {:#members:tools-style}
+
 
 
 
@@ -2277,6 +2333,7 @@ style: ["bold", "italic", "underline", "strikethrough"]
 
 
 
+
 Include tables options in RTE toolbar.
 
 
@@ -2305,6 +2362,7 @@ tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColum
 
 ### toolsList<span class="type-signature type object">object</span>
 {:#members:toolslist}
+
 
 
 
@@ -2348,6 +2406,7 @@ $("#rteSample").ejRTE({ toolsList: ["formatStyle", "font", "style", "scripts", "
 
 
 
+
 Undo operation provide the number of step limit.
 
 
@@ -2387,6 +2446,7 @@ $("#rteSample").ejRTE({undoStackLimit: 70 });
 
 
 
+
 Given string value to display in the editable area.
 
 
@@ -2422,6 +2482,7 @@ $("#rteSample").ejRTE({value: "The Rich Text Editor (RTE) control is an easy to 
 
 ### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#members:width}
+
 
 
 
@@ -2469,6 +2530,7 @@ Example
 
 
 
+
 disable the RTE control.
 
 
@@ -2511,6 +2573,7 @@ $("#rteSample").ejRTE("disable");// disable RTE
 
 ### disableToolbarItem<span class="signature">()</span>
 {:#methods:disabletoolbaritem}
+
 
 
 
@@ -2562,6 +2625,7 @@ $("#rteSample").ejRTE("disableToolbarItem","rteSamplecreateTable");// disable to
 
 
 
+
 enable the RTE control.
 
 
@@ -2605,6 +2669,7 @@ $("#rteSample").ejRTE("enable");// enable RTE
 
 ### enableToolbarItem<span class="signature">()</span>
 {:#methods:enabletoolbaritem}
+
 
 
 
@@ -2656,6 +2721,7 @@ $("#rteSample").ejRTE("enableToolbarItem","rteSamplecreateTable");// enable tool
 
 
 
+
 gets the content as string from the RTE control.
 
 
@@ -2684,6 +2750,7 @@ rteeObj.executeCommand("bold", true); // gets the content as string from rte
 
 ### focus<span class="signature">()</span>
 {:#methods:focus}
+
 
 
 
@@ -2735,6 +2802,7 @@ $("#rteSample").ejRTE("focus");// enable toolbar item
 
 
 
+
 gets the command status of the given RTE control.
 
 
@@ -2762,6 +2830,7 @@ rteeObj.getCommandStatus(arguments); // gets the content as string from rte
 
 
 ### getHtml<span class="signature">()</span>
+{:#methods:gethtml}
 {:#methods:gethtml}
 
 
@@ -2814,6 +2883,7 @@ $("#rteSample").ejRTE("getHtml");// getHtml from rte
 
 
 
+
 gets the command status of the given RTE control.
 
 
@@ -2857,6 +2927,7 @@ $("#rteSample").ejRTE("getSelectedHtml");// getSelectedHtml from rte
 
 ### getText<span class="signature">()</span>
 {:#methods:gettext}
+
 
 
 
@@ -2908,6 +2979,7 @@ $("#rteSample").ejRTE("getText");// getText from rte
 
 
 
+
 Hides the RTE control.
 
 
@@ -2951,6 +3023,7 @@ $("#rteSample").ejRTE("hide");// hides rte
 
 ### refresh<span class="signature">()</span>
 {:#methods:refresh}
+
 
 
 
@@ -3002,6 +3075,7 @@ $("#rteSample").ejRTE("refresh");// refresh rte
 
 
 
+
 removes the RTE toolbar item.
 
 
@@ -3045,6 +3119,7 @@ $("#rteSample").ejRTE("removeToolbarItem","rteSamplecreateTable");// remove tool
 
 ### setColorPickerType<span class="signature">()</span>
 {:#methods:setcolorpickertype}
+
 
 
 
@@ -3096,6 +3171,7 @@ $("#rteSample").ejRTE("setColorPickerType","picker");// set the picker mode
 
 
 
+
 sets the HTML string from the RTE control.
 
 
@@ -3134,6 +3210,7 @@ $("#rteSample").ejRTE("setHtml","The Rich Text Editor (RTE) control is an easy t
 
 ### show<span class="signature">()</span>
 {:#methods:show}
+
 
 
 
@@ -3185,6 +3262,7 @@ $("#rteSample").ejRTE("show");// shows rte
 
 ### change
 {:#events:change}
+
 
 
 
@@ -3248,6 +3326,7 @@ $("#rteSample").ejRTE({
 
 
 
+
 Fires when execute successfully.
 
 <table class="params">
@@ -3307,6 +3386,7 @@ $("#rteSample").ejRTE({
 
 
 
+
 Fires when keydown successfully.
 
 <table class="params">
@@ -3362,6 +3442,7 @@ $("#rteSample").ejRTE({
 
 ### keyup
 {:#events:keyup}
+
 
 
 

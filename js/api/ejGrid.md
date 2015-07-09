@@ -2327,7 +2327,7 @@ $("#Grid").ejGrid({
 
 
 
-### columns.template<span class="type-signature type string">string</span>
+### columns.template<span class="type-signature type boolean">boolean</span>
 {:#members:columns-template}
 
 
@@ -2350,7 +2350,7 @@ Default Value:
 
 
 
-* null
+* false
 
 
 
@@ -2370,7 +2370,7 @@ Example
 &lt;script&gt;
 $("#Grid").ejGrid({
  dataSource:window.gridData,
- columns:[{headerText:"Employee",template:'&lt;img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/&gt;'},{field:"EmployeeID"}]
+ columns:[{headerText:"Employee",template:true,templateID:"#columnTemplate"},{field:"EmployeeID"}]
 });
 &lt;/script&gt;</code>
 </pre>
