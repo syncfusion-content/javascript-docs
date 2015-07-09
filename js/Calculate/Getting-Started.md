@@ -38,89 +38,92 @@ Add the script files and CSS files in the title tag of the default.html page.
 
 1. Add the following code example inside the **&lt;body&gt;** tag in the default.html page.
 
-{% highlight html %} 
+   ~~~
 
-<!-- ... -->
-<head>
-<body>
-    <div id="Grid"></div>
-    </body>
-<!-- ... -->
-<script type="text/javascript">
-        $(function () {
+	<!-- ... -->
+	<head>
+	<body>
+		<div id="Grid"></div>
+		</body>
+	<!-- ... -->
+	<script type="text/javascript">
+			$(function () {
 
-            var calcObj = new CalcEngine($("#Grid"));
-            calcObj.setUseDependencies(true);
-            calcObj.registerGridAsSheet("Sheet1", $("#Grid"), "0");
-</script>
-</head>
-<!-- ... -->
+				var calcObj = new CalcEngine($("#Grid"));
+				calcObj.setUseDependencies(true);
+				calcObj.registerGridAsSheet("Sheet1", $("#Grid"), "0");
+	</script>
+	</head>
+	<!-- ... -->
 
-
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 
 2. Add the following code example in button click to compute the formula. Clicking on **CalcEngine** computes the required data from the grid and returns the result.
 
-{% highlight js %}
+   ~~~
 
- $("input:button").ejButton({
-                    click: function (args) {
-                        if (document.activeElement.value == "Compute") {
-                            try
-                            {
-                                var value = calcObj.parseAndComputeFormula($("#formulaTxt").val());
-                                document.getElementById("result").innerHTML = value;
-                            }
-                            catch(ex)
-                            {
-                                alert(ex.message);
-                            }
-                        }
-                        else if (document.activeElement.value == "OK") {
-                            $("#Grid").data("ejGrid")._triggerConfirm(args);
-                        }
-                        else if (document.activeElement.value == "Cancel") {
-                            $("#Grid").data("ejGrid")._triggerConfirm(args);
-                        }
-                    }
-                });
+	 $("input:button").ejButton({
+						click: function (args) {
+							if (document.activeElement.value == "Compute") {
+								try
+								{
+									var value = calcObj.parseAndComputeFormula($("#formulaTxt").val());
+									document.getElementById("result").innerHTML = value;
+								}
+								catch(ex)
+								{
+									alert(ex.message);
+								}
+							}
+							else if (document.activeElement.value == "OK") {
+								$("#Grid").data("ejGrid")._triggerConfirm(args);
+							}
+							else if (document.activeElement.value == "Cancel") {
+								$("#Grid").data("ejGrid")._triggerConfirm(args);
+							}
+						}
+					});
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 3. The following function must be included in the HTML file. These methods only act as intermediate to transfer the data between **CalcEngine** and the **Grid.**
 
 
 
-**GetValueFromRowCol**
+   **GetValueFromRowCol**
 
-Get the value of cell based on the excel like rowIndex and colIndex.
+   Get the value of cell based on the excel like rowIndex and colIndex.
 
-{% highlight js %}
+   ~~~
 
- calcObj.getValueRowCol = function (sheetID,row, col) {
-                   //return the data based on row and column index
-                }
+	 calcObj.getValueRowCol = function (sheetID,row, col) {
+					   //return the data based on row and column index
+					}
+
+   ~~~
+   {:.prettyprint}
 
 
-{% endhighlight %}
 
 
+   **SetValueFromRowCol**
 
-**SetValueFromRowCol**
+   Set the computed value of cell based on the excel like rowIndex and colIndex when formula is applied in cell.
 
-Set the computed value of cell based on the excel like rowIndex and colIndex when formula is applied in cell.
+   ~~~
 
-{% highlight js %}
-
-calcObj.setValueRowCol = function (sheetID, value, row, col) {
+   calcObj.setValueRowCol = function (sheetID, value, row, col) {
 
             //set the value to grid cell
         }
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 
