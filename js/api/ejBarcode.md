@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ejBarcode
-documentation: API
+title: Properties, options, methods and events of Essential JS ejBarcode widget
+documentation: How to use Properties, options, methods and events of Essential JS ejBarcode widget
 platform: js
 metaname: 
 metacontent: 
@@ -9,25 +9,7 @@ metacontent:
 
 # Custom Design for Barcode control.
 
-
-
-
-
-
-
-
-
-
 $(element).ejBarcode<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
 
 
 Example
@@ -35,11 +17,14 @@ Example
 
 <pre class="prettyprint">
 <code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
  
 &lt;script&gt;
-// Create Barcode
-$('#barcode1').ejBarcode();         
+//Create the barcode by setting the symbologyType and providing input URL to the text property. QR code is rendered by default.
+      $("#barcode").ejBarcode({
+         text: "http://www.syncfusion.com"
+      });         
 &lt;/script&gt;</code>
 </pre>
 
@@ -51,15 +36,8 @@ $('#barcode1').ejBarcode();
 Requires
 {:.require}
 
-
-
-
 * module:jQuery
-
-
 * module:ej.common.all
-
-
 
 
 ## Members
@@ -72,7 +50,6 @@ Requires
 
 
 ### barcodeToTextGapHeight<span class="type-signature type number">number</span>
-{:#members:barcodetotextgapheight}
 
 
 
@@ -81,9 +58,9 @@ Requires
 
 
 
-Specifies the distance between the bar and text in the Barcode. Applicable only for One dimensional barcode.
+Specifies the distance between the barcode and text below it.
 
-
+>   **Note:** This property is applicable only for one dimensional barcode.
 
 
 Default Value:
@@ -94,7 +71,7 @@ Default Value:
 
 
 
-* 10
+* 10 px
 
 
 
@@ -108,16 +85,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set barcodeToTextGapHeight API value during initialization  
-$("#barcode1").ejBarcode({ barcodeToTextGapHeight: 10 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the barcodeToTextGapHeight API, after initialization:
-//Gets the gap distance between the bar and the text
-$("#barcode1").ejBarcode("option", "barcodeToTextGapHeight");
-//Sets the gap distance between the bar and the text
-$("#barcode1").ejBarcode("option", "barcodeToTextGapHeight", 10 ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set barcodeToTextGapHeight during initialization  
+ $("#barcode").ejBarcode({
+     text: "SYNCFUSION",
+     symbologyType: "code39",
+     barcodeToTextGapHeight: 50
+ });
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -126,7 +105,6 @@ $("#barcode1").ejBarcode("option", "barcodeToTextGapHeight", 10 ); </code>
 
 
 ### barHeight<span class="type-signature type number">number</span>
-{:#members:barheight}
 
 
 
@@ -135,9 +113,9 @@ $("#barcode1").ejBarcode("option", "barcodeToTextGapHeight", 10 ); </code>
 
 
 
-Specifies the height of bars in the Barcode. Applicable only for One dimensional barcode.
+Specifies the height of bars in the Barcode. By modifying the barHeight, the entire barcode height can be customized. Please refer to [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan) for two dimensional barcode height customization.
 
-
+>   **Note:** This property is applicable only for one dimensional barcode.
 
 
 Default Value:
@@ -148,7 +126,7 @@ Default Value:
 
 
 
-* 150
+* 150 px
 
 
 
@@ -162,16 +140,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set barHeight API value during initialization  
-$("#barcode1").ejBarcode({ barHeight: 150 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the barHeight API, after initialization:
-//Gets the height of the bars  
-$("#barcode1").ejBarcode("option", "barHeight");
-//Sets the height of the bars 
-$("#barcode1").ejBarcode("option", "barHeight", 150 ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set barHeight during initialization  
+ $("#barcode").ejBarcode({
+     text: "SYNCFUSION",
+     symbologyType: "code39",
+     barHeight: 50
+ });
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -180,7 +160,6 @@ $("#barcode1").ejBarcode("option", "barHeight", 150 ); </code>
 
 
 ### darkBarColor<span class="type-signature type object">object</span>
-{:#members:darkbarcolor}
 
 
 
@@ -189,10 +168,10 @@ $("#barcode1").ejBarcode("option", "barHeight", 150 ); </code>
 
 
 
-Specifies the dark bar color of the Barcode. Applicable only for One dimensional barcode.
+Specifies the dark bar color of the Barcode. One dimensional barcode contains a series of dark and light bars which are usually colored as black and white respectively. 
 
-
-
+>   **Note:** 1. For the barcode should be properly detected by all scanners, choose the best possible contrast color.
+>             2. This property is applicable only for one dimensional barcode.
 
 Default Value:
 {:.param}
@@ -216,16 +195,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set dark bar color API value during initialization  
-$("#barcode1").ejBarcode({ darkBarColor: "black" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the dark bar color API, after initialization:
-//Gets the dark bar color value  
-$("#barcode1").ejBarcode("option", "darkBarColor");
-//Sets the dark bar color value 
-$("#barcode1").ejBarcode("option", "darkBarColor", "black" ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set darkBarColor during initialization  
+ $("#barcode").ejBarcode({
+     text: "SYNCFUSION",
+     symbologyType: "code39",
+     darkBarColor: "blue"
+ });
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -234,7 +215,6 @@ $("#barcode1").ejBarcode("option", "darkBarColor", "black" ); </code>
 
 
 ### displayText<span class="type-signature type boolean">boolean</span>
-{:#members:displaytext}
 
 
 
@@ -243,7 +223,9 @@ $("#barcode1").ejBarcode("option", "darkBarColor", "black" ); </code>
 
 
 
-Specifies whether to display original text. Applicable only for One dimensional barcode.
+Specifies whether the text below the barcode is visible or hidden.
+
+>   **Note:** This property is applicable only for one dimensional barcode.
 
 
 
@@ -270,16 +252,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set displayText API value during initialization  
-$("#barcode").ejBarcode({ displayText: true});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the displayText API, after initialization:
-//Gets the displayText value  
-$("#barcode1").ejBarcode("option", "displayText");
-//Sets the displayText value 
-$("#barcode1").ejBarcode("option", "displayText", true ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to hide displayText during initialization  
+ $("#barcode").ejBarcode({
+     text: "SYNCFUSION",
+     symbologyType: "code39",
+     displayText: false
+ });
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -288,7 +272,6 @@ $("#barcode1").ejBarcode("option", "displayText", true ); </code>
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
-{:#members:enabled}
 
 
 
@@ -319,30 +302,14 @@ Default Value:
 
 
 
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set enabled API value during initialization  
-$("#barcode").ejBarcode({ enabled: true});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the enabled API, after initialization:
-//Gets the enabled value  
-$("#barcode1").ejBarcode("option", "enabled");
-//Sets the enabled value 
-$("#barcode1").ejBarcode("option", "enabled", true ); </code>
-</pre>
 
 
 
 
 
 
-### encodeStartStopSymbol<span class="type-signature type number">number</span>
-{:#members:encodestartstopsymbol}
+
+### encodeStartStopSymbol<span class="type-signature type boolean">number</span>
 
 
 
@@ -351,7 +318,9 @@ $("#barcode1").ejBarcode("option", "enabled", true ); </code>
 
 
 
-Specifies whether to encode start and stop symbol in the Barcode. Applicable only for One dimensional barcode.
+Specifies the start and stop encode symbol in the Barcode. In one dimensional barcodes, an additional character is added as start and stop delimiters. These symbols are optional and the unique of the symbol allows the reader to determine the direction of the barcode being scanned.
+
+>   **Note:** This property is applicable only for one dimensional barcode.
 
 
 
@@ -364,7 +333,7 @@ Default Value:
 
 
 
-* 10
+* true
 
 
 
@@ -378,16 +347,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set encodeStartStopSymbol API value during initialization  
-$("#barcode1").ejBarcode({ encodeStartStopSymbol: true });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the encodeStartStopSymbol API, after initialization:
-//Gets the encodeStartStopSymbol value
-$("#barcode1").ejBarcode("option", "encodeStartStopSymbol");
-//Sets the whether to encode start and stop symbol value
-$("#barcode1").ejBarcode("option", "encodeStartStopSymbol", true ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to remove encodeStartStopSymbol during initialization  
+ $("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    encodeStartStopSymbol: false
+ });
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -396,7 +367,6 @@ $("#barcode1").ejBarcode("option", "encodeStartStopSymbol", true ); </code>
 
 
 ### lightBarColor<span class="type-signature type object">object</span>
-{:#members:lightbarcolor}
 
 
 
@@ -405,10 +375,10 @@ $("#barcode1").ejBarcode("option", "encodeStartStopSymbol", true ); </code>
 
 
 
-Specifies the light bar color of the Barcode. Applicable only for One dimensional barcode.
+ Specifies the light bar color of the Barcode. One dimensional barcode contains a series of dark and light bars which are usually colored as black and white respectively.
 
-
-
+>   **Note:** 1. For the barcode should be properly detected by all scanners, choose the best possible contrast color.
+>             2. This property is applicable only for one dimensional barcode.
 
 Default Value:
 {:.param}
@@ -432,16 +402,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set light bar color API value during initialization  
-$("#barcode1").ejBarcode({ lightBarColor: "white" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the light bar color API, after initialization:
-//Gets the light bar color value  
-$("#barcode1").ejBarcode("option", "lightBarColor");
-//Sets the light bar color value 
-$("#barcode1").ejBarcode("option", "lightBarColor", "white" ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set lightBarColor during initialization  
+ $("#barcode").ejBarcode({
+     text: "SYNCFUSION",
+     symbologyType: "code39",
+     lightBarColor: "blue"
+ });
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -450,7 +422,6 @@ $("#barcode1").ejBarcode("option", "lightBarColor", "white" ); </code>
 
 
 ### narrowBarWidth<span class="type-signature type number">number</span>
-{:#members:narrowbarwidth}
 
 
 
@@ -459,8 +430,9 @@ $("#barcode1").ejBarcode("option", "lightBarColor", "white" ); </code>
 
 
 
-Specifies the width of narrow bar in the Barcode. Applicable only for One dimensional barcode.
+Specifies the width of the narrow bars in the barcode. The dark bars in the one dimensional barcode contains random narrow and wide bars based on the provided input which can be specified during initialization.
 
+>   **Note:** This property is applicable only for one dimensional barcode.
 
 
 
@@ -472,7 +444,7 @@ Default Value:
 
 
 
-* 1
+* 1 px
 
 
 
@@ -486,16 +458,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set narrowBarWidth API value during initialization  
-$("#barcode1").ejBarcode({ narrowBarWidth: 1 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the narrowBarWidth API, after initialization:
-//Gets the width of the narrow bar value  
-$("#barcode1").ejBarcode("option", "narrowBarWidth");
-//Sets the width of the narrow bar value 
-$("#barcode1").ejBarcode("option", "narrowBarWidth", 1 ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set narrowBarWidth during initialization  
+ $("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    narrowBarWidth: 5
+ });
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -504,7 +478,6 @@ $("#barcode1").ejBarcode("option", "narrowBarWidth", 1 ); </code>
 
 
 ### quietZone<span class="type-signature type object">object</span>
-{:#members:quietzone}
 
 
 
@@ -513,8 +486,7 @@ $("#barcode1").ejBarcode("option", "narrowBarWidth", 1 ); </code>
 
 
 
-The blank margin on the side(s) which denotes the reader with the start and stop of the Barcode.
-
+Specifies the width of the quiet zone. In barcode, a quiet zone is the blank margin on either side of a barcode which informs the reader where a barcode's symbology starts and stops. The purpose of a quiet zone is to prevent the reader from picking up unrelated information.
 
 
 
@@ -526,7 +498,6 @@ The blank margin on the side(s) which denotes the reader with the start and stop
 
 
 ### quietZone.all<span class="type-signature type number">number</span>
-{:#members:quietzone-all}
 
 
 
@@ -548,7 +519,7 @@ Default Value:
 
 
 
-* 1
+* 1 px
 
 
 
@@ -562,17 +533,20 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { all: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.all");
-                 
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {all: 5} ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set quiet zone during initialization  
+$("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    quietZone: {
+        all: 10
+    }
+});
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -581,7 +555,6 @@ $("#barcode1").ejBarcode("option", "quietZone", {all: 5} ); </code>
 
 
 ### quietZone.bottom<span class="type-signature type number">number</span>
-{:#members:quietzone-bottom}
 
 
 
@@ -603,7 +576,7 @@ Default Value:
 
 
 
-* 1
+* 1 px
 
 
 
@@ -617,17 +590,20 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { bottom: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.bottom");
-                     
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {bottom: 5} ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set quiet zone during initialization  
+$("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    quietZone: {
+        bottom: 10
+    }
+});
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -636,7 +612,6 @@ $("#barcode1").ejBarcode("option", "quietZone", {bottom: 5} ); </code>
 
 
 ### quietZone.left<span class="type-signature type number">number</span>
-{:#members:quietzone-left}
 
 
 
@@ -658,7 +633,7 @@ Default Value:
 
 
 
-* 1
+* 1 px
 
 
 
@@ -672,17 +647,20 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { left: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.left");
-                        
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {left: 5} ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set quiet zone during initialization  
+$("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    quietZone: {
+        left: 10
+    }
+});
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -691,7 +669,6 @@ $("#barcode1").ejBarcode("option", "quietZone", {left: 5} ); </code>
 
 
 ### quietZone.right<span class="type-signature type number">number</span>
-{:#members:quietzone-right}
 
 
 
@@ -713,7 +690,7 @@ Default Value:
 
 
 
-* 1
+* 1 px
 
 
 
@@ -727,17 +704,20 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { right: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.right");
-                      
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {right: 5} ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set quiet zone during initialization  
+$("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    quietZone: {
+        right: 10
+    }
+});
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -746,7 +726,6 @@ $("#barcode1").ejBarcode("option", "quietZone", {right: 5} ); </code>
 
 
 ### quietZone.top<span class="type-signature type number">number</span>
-{:#members:quietzone-top}
 
 
 
@@ -768,7 +747,7 @@ Default Value:
 
 
 
-* 1
+* 1 px
 
 
 
@@ -782,17 +761,20 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { top: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.top");
-                   
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {top: 5} ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set quiet zone during initialization  
+$("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    quietZone: {
+        top: 10
+    }
+});
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -801,27 +783,11 @@ $("#barcode1").ejBarcode("option", "quietZone", {top: 5} ); </code>
 
 
 ### symbologyType<span class="type-signature type enum">enum</span>
-{:#members:symbologytype}
 
-
-
-
-
-
-
-
-Specifies the symbology type of the Barcode. See <a href="global.html#SymbologyType">SymbologyType</a>
-
-
-
+Specifies the type of the Barcode. See <a href="global.html#SymbologyType">SymbologyType</a>
 
 Default Value:
 {:.param}
-
-
-
-
-
 
 * ej.barcode.SymbologyType.qrbarcode
 
@@ -837,17 +803,17 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set symbology type API value during initialization  
-$("#barcode1").ejBarcode({ symbologyType: "code39" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the symbology type API, after initialization:
-//Gets the symbology type value  
-$("#barcode1").ejBarcode("option", "symbologyType");
-          
-//Sets the symbology type value 
-$("#barcode1").ejBarcode("option", "symbologyType", "code39" ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set the SymbologyType during initialization  
+$("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39"
+    }
+});
+&lt;/script&gt;
 </pre>
 
 
@@ -856,7 +822,6 @@ $("#barcode1").ejBarcode("option", "symbologyType", "code39" ); </code>
 
 
 ### text<span class="type-signature type string">string</span>
-{:#members:text}
 
 
 
@@ -865,7 +830,7 @@ $("#barcode1").ejBarcode("option", "symbologyType", "code39" ); </code>
 
 
 
-Specifies the text to encode.
+Specifies the text to be encoded in the barcode.
 
 
 
@@ -892,16 +857,16 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set text value during initialization  
-$("#barcode1").ejBarcode({ text:"SYNCFUSION" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the text API, after initialization:
-//Gets the text value  
-$("#barcode1").ejBarcode("option", "text");
-//Sets the text value 
-$("#barcode1").ejBarcode("option", "text", "SYNCFUSION" ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+ 
+&lt;script&gt;
+// All the below script to set the text to be encoded while initialization.
+      $("#barcode").ejBarcode({
+         text: "http://www.syncfusion.com"
+      });         
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -910,7 +875,6 @@ $("#barcode1").ejBarcode("option", "text", "SYNCFUSION" ); </code>
 
 
 ### textColor<span class="type-signature type object">object</span>
-{:#members:textcolor}
 
 
 
@@ -919,7 +883,9 @@ $("#barcode1").ejBarcode("option", "text", "SYNCFUSION" ); </code>
 
 
 
-Specifies the display text color of the Barcode. Applicable only for One dimensional barcode.
+Specifies the color of the text/data at the bottom of the barcode.
+
+>   **Note:** This property is applicable only for one dimensional barcode.
 
 
 
@@ -946,16 +912,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set text color API value during initialization  
-$("#barcode1").ejBarcode({ textColor: "black" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the text color API, after initialization:
-//Gets the text color value  
-$("#barcode1").ejBarcode("option", "textColor");
-//Sets the text color value 
-$("#barcode1").ejBarcode("option", "textColor", "black" ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+ 
+&lt;script&gt;
+// All the below script to set the textColor while initialization.
+$("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    textColor: "blue"
+});       
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -964,7 +932,6 @@ $("#barcode1").ejBarcode("option", "textColor", "black" ); </code>
 
 
 ### wideBarWidth<span class="type-signature type number">number</span>
-{:#members:widebarwidth}
 
 
 
@@ -973,9 +940,9 @@ $("#barcode1").ejBarcode("option", "textColor", "black" ); </code>
 
 
 
-Specifies the width of wide bar in the Barcode. Applicable only for One dimensional barcode.
+Specifies the width of the wide bars in the barcode. One dimensional barcode usually contains random narrow and wide bars based on the provided which can be customized during initialization.
 
-
+>   **Note:** This property is applicable only for one dimensional barcode.
 
 
 Default Value:
@@ -986,7 +953,7 @@ Default Value:
 
 
 
-* 3
+* 3 px
 
 
 
@@ -1000,16 +967,18 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set wideBarWidth API value during initialization  
-$("#barcode1").ejBarcode({ wideBarWidth: 1 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the wideBarWidth API, after initialization:
-//Gets the width of the wide bar value  
-$("#barcode1").ejBarcode("option", "wideBarWidth");
-//Sets the width of the wide bar value 
-$("#barcode1").ejBarcode("option", "wideBarWidth", 3 ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set wideBarWidth during initialization  
+ $("#barcode").ejBarcode({
+    text: "SYNCFUSION",
+    symbologyType: "code39",
+    wideBarWidth: 5
+ });
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -1018,7 +987,6 @@ $("#barcode1").ejBarcode("option", "wideBarWidth", 3 ); </code>
 
 
 ### xDimension<span class="type-signature type number">number</span>
-{:#members:xdimension}
 
 
 
@@ -1027,9 +995,9 @@ $("#barcode1").ejBarcode("option", "wideBarWidth", 3 ); </code>
 
 
 
-Specifies the size of each block in the Barcode. Applicable only for Two dimensional barcode.
+Specifies the width of the narrowest element(bar or space) in a barcode. The greater the x dimension, the more easily a barcode reader will scan.
 
-
+>   **Note:** This property is applicable only for two dimensional barcode.
 
 
 Default Value:
@@ -1040,7 +1008,7 @@ Default Value:
 
 
 
-* 4
+* 4 px
 
 
 
@@ -1054,16 +1022,17 @@ Example
 
 <pre class="prettyprint">
 <code> 
-//To set xDimension API value during initialization  
-$("#barcode1").ejBarcode({ xDimension: 4 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the xDimension API, after initialization:
-//Gets the size of each block
-$("#barcode1").ejBarcode("option", "xDimension");
-//Sets the size of each block
-$("#barcode1").ejBarcode("option", "xDimension", 4 ); </code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+&lt;script&gt;
+// Add the script below to set xDimension during initialization  
+$("#barcode").ejBarcode({
+    text: "http://www.syncfusion.com",
+    xDimension: 10
+});
+&lt;/script&gt;
+</code>
 </pre>
 
 
@@ -1079,7 +1048,6 @@ $("#barcode1").ejBarcode("option", "xDimension", 4 ); </code>
 
 
 ### disable<span class="signature">()</span>
-{:#methods:disable}
 
 
 
@@ -1098,22 +1066,24 @@ Example
 {:.example}
 
 <pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
+<code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt; &lt;/div&gt; 
  
 &lt;script&gt;
 // Create Barcode
-var btnObj = $("#barcode1").data("ejBarcode");
+var btnObj = $("#barcode").data("ejBarcode");
 btnObj.disable(); // disable the barcode
 &lt;/script&gt;</code>
 </pre>
 <pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
+<code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt; &lt;/div&gt; 
  
 &lt;script&gt;
 // disable the barcode
-$("#barcode1").ejBarcode("disable");    
+$("#barcode").ejBarcode("disable");    
 &lt;/script&gt;</code>
 </pre>
 
@@ -1123,7 +1093,6 @@ $("#barcode1").ejBarcode("disable");
 
 
 ### enable<span class="signature">()</span>
-{:#methods:enable}
 
 
 
@@ -1142,22 +1111,24 @@ Example
 {:.example}
 
 <pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
+<code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt; &lt;/div&gt; 
  
 &lt;script&gt;
 // Create Barcode
-var btnObj = $("#barcode1").data("ejBarcode");
+var btnObj = $("#barcode").data("ejBarcode");
 btnObj.enable(); // enable the barcode
 &lt;/script&gt;</code>
 </pre>
 <pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
+<code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt; &lt;/div&gt; 
  
 &lt;script&gt;
 // enable the barcode
-$("#barcode1").ejBarcode("enable");     
+$("#barcode").ejBarcode("enable");     
 &lt;/script&gt;</code>
 </pre>
 
@@ -1174,7 +1145,6 @@ $("#barcode1").ejBarcode("enable");
 
 
 ### load
-{:#events:load}
 
 
 
@@ -1241,1274 +1211,17 @@ Example
 {:.example}
 
 <pre class="prettyprint">
+<code>
+//Add div container for barcode rendering.
+&lt;div id="barcode"&gt; &lt;/div&gt; 
 <code> 
 //create event for barcode
-$("#barcode1").ejBarcode({
+$("#barcode").ejBarcode({
    load: function (args) {}
 });</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Bind create event using jquery "on"
-$("#barcode1").on("ejBarcodeload", function(e) {} );</code>
+$("#barcode").on("ejBarcodeload", function(e) {} );</code>
 </pre>
-
-
-
----
-layout: post
-title: ejBarcode
-documentation: API
-platform: js
-metaname: 
-metacontent: 
----
-
-# Custom Design for Barcode control.
-
-
-
-
-
-
-
-
-
-
-$(element).ejBarcode<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
- 
-&lt;script&gt;
-// Create Barcode
-$('#barcode1').ejBarcode();         
-&lt;/script&gt;</code>
-</pre>
-
-
-
-
-
-
-Requires
-{:.require}
-
-
-
-
-* module:jQuery
-
-
-* module:ej.common.all
-
-
-
-
-## Members
-
-
-
-
-
-
-
-
-### barcodeToTextGapHeight<span class="type-signature type number">number</span>
-{:#members:barcodetotextgapheight}
-
-
-
-
-
-
-
-
-Specifies the distance between the bar and text in the Barcode. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 10
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set barcodeToTextGapHeight API value during initialization  
-$("#barcode1").ejBarcode({ barcodeToTextGapHeight: 10 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the barcodeToTextGapHeight API, after initialization:
-//Gets the gap distance between the bar and the text
-$("#barcode1").ejBarcode("option", "barcodeToTextGapHeight");
-//Sets the gap distance between the bar and the text
-$("#barcode1").ejBarcode("option", "barcodeToTextGapHeight", 10 ); </code>
-</pre>
-
-
-
-
-
-
-### barHeight<span class="type-signature type number">number</span>
-{:#members:barheight}
-
-
-
-
-
-
-
-
-Specifies the height of bars in the Barcode. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 150
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set barHeight API value during initialization  
-$("#barcode1").ejBarcode({ barHeight: 150 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the barHeight API, after initialization:
-//Gets the height of the bars  
-$("#barcode1").ejBarcode("option", "barHeight");
-//Sets the height of the bars 
-$("#barcode1").ejBarcode("option", "barHeight", 150 ); </code>
-</pre>
-
-
-
-
-
-
-### darkBarColor<span class="type-signature type object">object</span>
-{:#members:darkbarcolor}
-
-
-
-
-
-
-
-
-Specifies the dark bar color of the Barcode. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* black
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set dark bar color API value during initialization  
-$("#barcode1").ejBarcode({ darkBarColor: "black" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the dark bar color API, after initialization:
-//Gets the dark bar color value  
-$("#barcode1").ejBarcode("option", "darkBarColor");
-//Sets the dark bar color value 
-$("#barcode1").ejBarcode("option", "darkBarColor", "black" ); </code>
-</pre>
-
-
-
-
-
-
-### displayText<span class="type-signature type boolean">boolean</span>
-{:#members:displaytext}
-
-
-
-
-
-
-
-
-Specifies whether to display original text. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set displayText API value during initialization  
-$("#barcode").ejBarcode({ displayText: true});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the displayText API, after initialization:
-//Gets the displayText value  
-$("#barcode1").ejBarcode("option", "displayText");
-//Sets the displayText value 
-$("#barcode1").ejBarcode("option", "displayText", true ); </code>
-</pre>
-
-
-
-
-
-
-### enabled<span class="type-signature type boolean">boolean</span>
-{:#members:enabled}
-
-
-
-
-
-
-
-
-Specifies whether the control is enabled.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set enabled API value during initialization  
-$("#barcode").ejBarcode({ enabled: true});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the enabled API, after initialization:
-//Gets the enabled value  
-$("#barcode1").ejBarcode("option", "enabled");
-//Sets the enabled value 
-$("#barcode1").ejBarcode("option", "enabled", true ); </code>
-</pre>
-
-
-
-
-
-
-### encodeStartStopSymbol<span class="type-signature type number">number</span>
-{:#members:encodestartstopsymbol}
-
-
-
-
-
-
-
-
-Specifies whether to encode start and stop symbol in the Barcode. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 10
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set encodeStartStopSymbol API value during initialization  
-$("#barcode1").ejBarcode({ encodeStartStopSymbol: true });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the encodeStartStopSymbol API, after initialization:
-//Gets the encodeStartStopSymbol value
-$("#barcode1").ejBarcode("option", "encodeStartStopSymbol");
-//Sets the whether to encode start and stop symbol value
-$("#barcode1").ejBarcode("option", "encodeStartStopSymbol", true ); </code>
-</pre>
-
-
-
-
-
-
-### lightBarColor<span class="type-signature type object">object</span>
-{:#members:lightbarcolor}
-
-
-
-
-
-
-
-
-Specifies the light bar color of the Barcode. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* white
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set light bar color API value during initialization  
-$("#barcode1").ejBarcode({ lightBarColor: "white" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the light bar color API, after initialization:
-//Gets the light bar color value  
-$("#barcode1").ejBarcode("option", "lightBarColor");
-//Sets the light bar color value 
-$("#barcode1").ejBarcode("option", "lightBarColor", "white" ); </code>
-</pre>
-
-
-
-
-
-
-### narrowBarWidth<span class="type-signature type number">number</span>
-{:#members:narrowbarwidth}
-
-
-
-
-
-
-
-
-Specifies the width of narrow bar in the Barcode. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 1
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set narrowBarWidth API value during initialization  
-$("#barcode1").ejBarcode({ narrowBarWidth: 1 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the narrowBarWidth API, after initialization:
-//Gets the width of the narrow bar value  
-$("#barcode1").ejBarcode("option", "narrowBarWidth");
-//Sets the width of the narrow bar value 
-$("#barcode1").ejBarcode("option", "narrowBarWidth", 1 ); </code>
-</pre>
-
-
-
-
-
-
-### quietZone<span class="type-signature type object">object</span>
-{:#members:quietzone}
-
-
-
-
-
-
-
-
-The blank margin on the side(s) which denotes the reader with the start and stop of the Barcode.
-
-
-
-
-
-
-
-
-
-
-
-### quietZone.all<span class="type-signature type number">number</span>
-{:#members:quietzone-all}
-
-
-
-
-
-
-
-
-Specifies the quiet zone around the Barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 1
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { all: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.all");
-                 
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {all: 5} ); </code>
-</pre>
-
-
-
-
-
-
-### quietZone.bottom<span class="type-signature type number">number</span>
-{:#members:quietzone-bottom}
-
-
-
-
-
-
-
-
-Specifies the bottom quiet zone of the Barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 1
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { bottom: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.bottom");
-                     
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {bottom: 5} ); </code>
-</pre>
-
-
-
-
-
-
-### quietZone.left<span class="type-signature type number">number</span>
-{:#members:quietzone-left}
-
-
-
-
-
-
-
-
-Specifies the left quiet zone of the Barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 1
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { left: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.left");
-                        
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {left: 5} ); </code>
-</pre>
-
-
-
-
-
-
-### quietZone.right<span class="type-signature type number">number</span>
-{:#members:quietzone-right}
-
-
-
-
-
-
-
-
-Specifies the right quiet zone of the Barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 1
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { right: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.right");
-                      
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {right: 5} ); </code>
-</pre>
-
-
-
-
-
-
-### quietZone.top<span class="type-signature type number">number</span>
-{:#members:quietzone-top}
-
-
-
-
-
-
-
-
-Specifies the top quiet zone of the Barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 1
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set the quiet zone API value during initialization  
-$("#barcode1").ejBarcode({ quietZone: { top: 5} });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the quietZone API, after initialization:
-//Gets the quiet zone value  
-$("#barcode1").ejBarcode("option", "quietZone.top");
-                   
-//Sets the quiet zone value 
-$("#barcode1").ejBarcode("option", "quietZone", {top: 5} ); </code>
-</pre>
-
-
-
-
-
-
-### symbologyType<span class="type-signature type enum">enum</span>
-{:#members:symbologytype}
-
-
-
-
-
-
-
-
-Specifies the symbology type of the Barcode. See <a href="global.html#SymbologyType">SymbologyType</a>
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.barcode.SymbologyType.qrbarcode
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set symbology type API value during initialization  
-$("#barcode1").ejBarcode({ symbologyType: "code39" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the symbology type API, after initialization:
-//Gets the symbology type value  
-$("#barcode1").ejBarcode("option", "symbologyType");
-          
-//Sets the symbology type value 
-$("#barcode1").ejBarcode("option", "symbologyType", "code39" ); </code>
-</pre>
-
-
-
-
-
-
-### text<span class="type-signature type string">string</span>
-{:#members:text}
-
-
-
-
-
-
-
-
-Specifies the text to encode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* empty
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set text value during initialization  
-$("#barcode1").ejBarcode({ text:"SYNCFUSION" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the text API, after initialization:
-//Gets the text value  
-$("#barcode1").ejBarcode("option", "text");
-//Sets the text value 
-$("#barcode1").ejBarcode("option", "text", "SYNCFUSION" ); </code>
-</pre>
-
-
-
-
-
-
-### textColor<span class="type-signature type object">object</span>
-{:#members:textcolor}
-
-
-
-
-
-
-
-
-Specifies the display text color of the Barcode. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* black
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set text color API value during initialization  
-$("#barcode1").ejBarcode({ textColor: "black" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the text color API, after initialization:
-//Gets the text color value  
-$("#barcode1").ejBarcode("option", "textColor");
-//Sets the text color value 
-$("#barcode1").ejBarcode("option", "textColor", "black" ); </code>
-</pre>
-
-
-
-
-
-
-### wideBarWidth<span class="type-signature type number">number</span>
-{:#members:widebarwidth}
-
-
-
-
-
-
-
-
-Specifies the width of wide bar in the Barcode. Applicable only for One dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 3
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set wideBarWidth API value during initialization  
-$("#barcode1").ejBarcode({ wideBarWidth: 1 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the wideBarWidth API, after initialization:
-//Gets the width of the wide bar value  
-$("#barcode1").ejBarcode("option", "wideBarWidth");
-//Sets the width of the wide bar value 
-$("#barcode1").ejBarcode("option", "wideBarWidth", 3 ); </code>
-</pre>
-
-
-
-
-
-
-### xDimension<span class="type-signature type number">number</span>
-{:#members:xdimension}
-
-
-
-
-
-
-
-
-Specifies the size of each block in the Barcode. Applicable only for Two dimensional barcode.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 4
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//To set xDimension API value during initialization  
-$("#barcode1").ejBarcode({ xDimension: 4 });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Get or set the xDimension API, after initialization:
-//Gets the size of each block
-$("#barcode1").ejBarcode("option", "xDimension");
-//Sets the size of each block
-$("#barcode1").ejBarcode("option", "xDimension", 4 ); </code>
-</pre>
-
-
-
-
-## Methods
-
-
-
-
-
-
-
-
-### disable<span class="signature">()</span>
-{:#methods:disable}
-
-
-
-
-
-
-
-
-To disable the barcode
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
- 
-&lt;script&gt;
-// Create Barcode
-var btnObj = $("#barcode1").data("ejBarcode");
-btnObj.disable(); // disable the barcode
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
- 
-&lt;script&gt;
-// disable the barcode
-$("#barcode1").ejBarcode("disable");    
-&lt;/script&gt;</code>
-</pre>
-
-
-
-
-
-
-### enable<span class="signature">()</span>
-{:#methods:enable}
-
-
-
-
-
-
-
-
-To enable the barcode
-
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
- 
-&lt;script&gt;
-// Create Barcode
-var btnObj = $("#barcode1").data("ejBarcode");
-btnObj.enable(); // enable the barcode
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;barcode id="barcode1"&gt;Barcode&lt;/barcode&gt; 
- 
-&lt;script&gt;
-// enable the barcode
-$("#barcode1").ejBarcode("enable");     
-&lt;/script&gt;</code>
-</pre>
-
-
-
-
-## Events
-
-
-
-
-
-
-
-
-### load
-{:#events:load}
-
-
-
-
-
-
-
-
-Fires after Barcode control is loaded.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>argument</code></td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from barcode
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>cancel</code></td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name"><code>model</code></td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the barcode model</td>
-</tr>
-<tr>
-<td class="name"><code>type</code></td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name"><code>status</code></td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the barcode state</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-Example
-{:.example}
-
-<pre class="prettyprint">
-<code> 
-//create event for barcode
-$("#barcode1").ejBarcode({
-   load: function (args) {}
-});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-//Bind create event using jquery "on"
-$("#barcode1").on("ejBarcodeload", function(e) {} );</code>
-</pre>
-
-
-
