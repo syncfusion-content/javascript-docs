@@ -730,7 +730,7 @@ Example
 
 <pre class="prettyprint">
 <code> 
-&lt;textarea   id="rteSample"&gt;     
+&lt;textarea id="rteSample"&gt;     
 &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
         &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
@@ -739,44 +739,45 @@ Example
         area. &lt;/p&gt;&lt;/textarea &gt;     
 &lt;script&gt;
 // Initialize the RTE with the fontName value specified.
-$("#rteSample").ejRTE({format: [
-                { text: "Paragraph", value: "", spriteCssClass: "e-paragraph" },
-                { text: "Quotation", value: "", spriteCssClass: "e-quotation" }, 
-                { text: "Heading 1", value: "", spriteCssClass: "e-h1" }, 
-                { text: "Heading 2", value: "", spriteCssClass: "e-h2" }, 
-                { text: "Heading 3", value: "", spriteCssClass: "e-h3" }, 
-                { text: "Heading 4", value: "", spriteCssClass: "e-h4" }, 
-                { text: "Heading 5", value: "", spriteCssClass: "e-h5" }, 
-                { text: "Heading 6", value: "", spriteCssClass: "e-h6" } ]}); &lt;/script&gt;
+$("#rteSample").ejRTE({ fontName: [
+                { text: "Segoe UI", value: "Segoe UI"},
+                { text: "Arial", value: "Arial,Helvetica,sans-serif"},
+                { text: "Courier New", value: "Courier New,Courier,monospace"},
+                { text: "Georgia", value: "Georgia,serif"},
+                { text: "Impact", value: "Impact,Charcoal,sans-serif"},
+                { text: "Lucida Console", value: "Lucida Console,Monaco,monospace"},
+                { text: "Tahoma", value: "Tahoma,Geneva,sans-serif"},
+                { text: "Times New Roman", value: "Times New Roman"},
+                { text: "Trebuchet MS", value: "Trebuchet MS,Helvetica,sans-serif"},
+                { text: "Verdana", value: "Verdana,Geneva,sans-serif"}]}); 
+&lt;/script&gt;
                 
 </code>
-{:#members:}
 </pre>
-</blockquote>
-
-
-
-### <code>fontSize<span class="type-signature type object">object</span></code>
-{:#members:}
 
 
 
 
-<code>Sets the fontSize in RTE.</code>
-
-
-<code>Default Value:
-{:.param}</code>
+### fontSize<span class="type-signature type object">object</span>
+{:#members:fontSize}
 
 
 
-* <code>null</code>
+Sets the fontSize in RTE.
+
+
+Default Value:
+{:.param}
+
+
+
+* null
 
 
 
 
-#### <code>Example</code>
-{:#members:}
+Example
+{:#example:}
 
 <pre class="prettyprint">
 <code><code> 
@@ -858,54 +859,45 @@ Example
 &lt;script&gt;
 // Initialize the RTE with the format value specified.
 $("#rteSample").ejRTE({format: [
-                { text: "Paragraph", value: "
-", spriteCssClass: "e-paragraph" },
-                { text: "Quotation", value: "</code>
+                { text: "Paragraph", value: "&lt;p&gt;", spriteCssClass: "e-paragraph" },
+                { text: "Quotation", value: "&lt;blockquote&gt;", spriteCssClass: "e-quotation" }, 
+                { text: "Heading 1", value: "&lt;h1&gt;", spriteCssClass: "e-h1" }, 
+                { text: "Heading 2", value: "&lt;h2&gt;", spriteCssClass: "e-h2" }, 
+                { text: "Heading 3", value: "&lt;h3&gt;", spriteCssClass: "e-h3" }, 
+                { text: "Heading 4", value: "&lt;h4&gt;", spriteCssClass: "e-h4" }, 
+                { text: "Heading 5", value: "&lt;h5&gt;", spriteCssClass: "e-h5" }, 
+                { text: "Heading 6", value: "&lt;h6&gt;", spriteCssClass: "e-h6" } ]}); 
+                &lt;/script&gt;
+                </code>
+{:#members:}
+
 </pre>
-**<code>", spriteCssClass: "e-quotation" }, { text: "Heading 1", value: "</code>
-# <code>", spriteCssClass: "e-h1" }, { text: "Heading 2", value: "</code>
-
-## <code>", spriteCssClass: "e-h2" }, { text: "Heading 3", value: "</code>
-
-## <code>", spriteCssClass: "e-h3" }, { text: "Heading 4", value: "</code>
-
-### <code>", spriteCssClass: "e-h4" }, { text: "Heading 5", value: "</code>
-{:#members:}
-
-#### <code>", spriteCssClass: "e-h5" }, { text: "Heading 6", value: "</code>
-{:#members:}
-
-#### <code>", spriteCssClass: "e-h6" } ]}); &lt;/script&gt;</code>
-{:#members:}
-
-</blockquote>
 
 
-
-### <code>height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span></code>
+### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#members:}
 
 
 
 
-<code>Defines the height of the RTE textbox.</code>
+Defines the height of the RTE textbox.
 
 
-<code>Default Value:
-{:.param}</code>
-
-
-
-* <code>370</code>
+Default Value:
+{:.param}
 
 
 
+* 370
 
-#### <code>Example</code>
-{:#members:}
+
+
+
+Example
+{:#example:}
 
 <pre class="prettyprint">
-<code><code> 
+<code>
 &lt;textarea   id="rteSample"&gt;     
 &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
         &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
@@ -916,7 +908,7 @@ $("#rteSample").ejRTE({format: [
 &lt;script&gt;
 //Initialize the RTE height property with the  value specified
         $("#rteSample").ejRTE({ height: 250 });
-&lt;/script&gt;</code></code>
+&lt;/script&gt;</code>
 </pre>
 
 
