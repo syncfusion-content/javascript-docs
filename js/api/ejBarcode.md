@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ejBarcode
-documentation: API
+title: Properties, options, methods and events of Essential JS ejBarcode widget
+documentation: How to use Properties, options, methods and events of Essential JS ejBarcode widget
 platform: js
 metaname: 
 metacontent: 
@@ -9,25 +9,7 @@ metacontent:
 
 # Custom Design for Barcode control.
 
-
-
-
-
-
-
-
-
-
 $(element).ejBarcode<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
 
 
 Example
@@ -54,15 +36,8 @@ Example
 Requires
 {:.require}
 
-
-
-
 * module:jQuery
-
-
 * module:ej.common.all
-
-
 
 
 ## Members
@@ -96,7 +71,7 @@ Default Value:
 
 
 
-* 10 pixel
+* 10 px
 
 
 
@@ -151,7 +126,7 @@ Default Value:
 
 
 
-* 150 pixel
+* 150 px
 
 
 
@@ -469,7 +444,7 @@ Default Value:
 
 
 
-* 1 pixel
+* 1 px
 
 
 
@@ -544,7 +519,7 @@ Default Value:
 
 
 
-* 1 pixel
+* 1 px
 
 
 
@@ -601,7 +576,7 @@ Default Value:
 
 
 
-* 1 pixel
+* 1 px
 
 
 
@@ -658,7 +633,7 @@ Default Value:
 
 
 
-* 1 pixel
+* 1 px
 
 
 
@@ -715,7 +690,7 @@ Default Value:
 
 
 
-* 1 pixel
+* 1 px
 
 
 
@@ -772,7 +747,7 @@ Default Value:
 
 
 
-* 1 pixel
+* 1 px
 
 
 
@@ -809,25 +784,10 @@ $("#barcode").ejBarcode({
 
 ### symbologyType<span class="type-signature type enum">enum</span>
 
-
-
-
-
-
-
-
 Specifies the type of the Barcode. See <a href="global.html#SymbologyType">SymbologyType</a>
-
-
-
 
 Default Value:
 {:.param}
-
-
-
-
-
 
 * ej.barcode.SymbologyType.qrbarcode
 
@@ -993,7 +953,7 @@ Default Value:
 
 
 
-* 3 pixel
+* 3 px
 
 
 
@@ -1048,7 +1008,7 @@ Default Value:
 
 
 
-* 4 pixel
+* 4 px
 
 
 
@@ -1265,6 +1225,3 @@ $("#barcode").ejBarcode({
 //Bind create event using jquery "on"
 $("#barcode").on("ejBarcodeload", function(e) {} );</code>
 </pre>
-
-
-
