@@ -52,12 +52,12 @@ _**ej.Ribbon.backStageItemType.button**_-to render backstage button.
        <script type="text/javascript">
         $(function() {
             $("#Ribbon").ejRibbon({
-                width: "600px",
+                width: "500px",
                 applicationTab: {
                     Type: "BackStagePage",
                     text: "FILE",
                     backStageHeight: 230,
-                    backStageWidth: 550,
+                    backStageWidth: 500,
                     backStagePage: [{
                         id: "info",
                         text: "Info",
