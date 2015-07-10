@@ -221,7 +221,7 @@ The following code example illustrates how to add chart axis.
                 opposedPosition: true,
                 name: 'Precipitation',
                 range:{min:0,max:6,interval:1},
-                labelFormat: '{value} inch',
+                labelFormat: '{value}"',
             },
             ]
         // ...
