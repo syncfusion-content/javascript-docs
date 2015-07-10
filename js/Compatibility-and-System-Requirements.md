@@ -34,8 +34,6 @@ Our Syncfusion JavaScript web components are compatible with all the major platf
 ## System Requirements
 
 * Any text editors such as **Notepad** or **Notepad++**.  
-
 * Web browsers with [JavaScript enabled](https://support.microsoft.com/en-in/gp/howtoscript) in it.
-
 * If you want to use Reporting or Business Intelligence controls, it is necessary to have one of the IDE – **Visual Studio 2010+** in the machine.
 
