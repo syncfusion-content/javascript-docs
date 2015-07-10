@@ -9,7 +9,7 @@ documentation: ug
 
 # Enable Persistence
 
-**EnablePersistence** is used to maintain the current state of the grid model in browser's `localStorage`. When you refresh the page, stored state will be automatically used to render the grid. We can use `enablePersisitnce` property to use enable persistence feature.
+**EnablePersistence** is used to maintain the current state of the grid model in browser's **local Storage**. When you refresh the page, stored state will be automatically used to render the grid. We can use [`enablePersistence`](/js/api/ejgrid#members:enablepersistence "enablePersistence") property to use enable persistence feature.
 
 {% highlight html %}
 

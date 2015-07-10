@@ -9,7 +9,7 @@ documentation: ug
 
 ### Disable double-click edit
 
-The **allowEditOnDblClick** property can be set as **True** to enable editing the record by double-clicking it. When it is set as **False**, it cannot be edited by double-clicking it. In that case, you can edit the record by using the **Toolbar** option only.
+The [`allowEditOnDblClick`](/js/api/ejgrid#members:editsettings-alloweditondblclick "allowEditOnDblClick") property can be set as **True** to enable editing the record by double-clicking it. When it is set as **False**, it cannot be edited by double-clicking it. In that case, you can edit the record by using the **Toolbar** option only.
 
 {% highlight html %}
 

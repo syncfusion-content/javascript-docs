@@ -9,11 +9,11 @@ documentation: ug
 
 # Paging
 
-Paging is a powerful technique in **Grid** that is used to navigate from one page to another. Using this pager, you can implement load on demand concept that loads only required data to **Grid**. To enable paging in **Grid** set `allowPaging` as **True** at **Grid Initialize**.
+Paging is a powerful technique in **Grid** that is used to navigate from one page to another. Using this pager, you can implement load on demand concept that loads only required data to **Grid**. To enable paging in **Grid** set [`allowPaging`](/js/api/ejgrid#members:allowpaging "allowPaging") as **True** at **Grid Initialize**.
 
 ## Default Paging
 
-When the `allowPaging` property is set as **True**, the properties in the `pagesettings` take the following default values.
+When the [`allowPaging`](/js/api/ejgrid#members:allowpaging "allowPaging") property is set as **True**, the properties in the [`pagesettings`](/js/api/ejgrid#members:pagesettings "pagesettings") take the following default values.
 
 * pageSize-12
 
@@ -49,7 +49,7 @@ The following output is displayed as a result of the above code example.
 
 ## External Paging
 
-In this section, you can see how to use external paging. The following code example is for external paging. Using **gotoPage** public api to reach the particular page.
+In this section, you can see how to use external paging. The following code example is for external paging. Using [`gotoPage`](/js/api/ejgrid#methods:gotopage "gotoPage") public api to reach the particular page.
 
 {% highlight html %}
 
@@ -92,7 +92,7 @@ The following output is displayed as a result of the above code example.
 
 ## Pager Templates
 
-**Pager Templates** feature provide support to render a specific custom template to a **Grid pager** using `enableTemplates` and `template` properties of `pageSettings`. `showDefaults` property is used to show/hide default pager for **Grid**.
+**Pager Templates** feature provide support to render a specific custom template to a **Grid pager** using [`enableTemplates`](/js/api/ejgrid#members:pagesettings-enabletemplates "enableTemplates") and [`template`](/js/api/ejgrid#members:pagesettings-template "template") properties of [`pagesettings`](/js/api/ejgrid#members:pagesettings "pagesettings") . [`showDefaults`](/js/api/ejgrid#members:pagesettings-showdefaults "showdefaults") property is used to show/hide default pager for **Grid**.
 
 {% highlight html %}
 
@@ -128,7 +128,7 @@ The following output is displayed as a result of the above code example.
 
 The following are the public methods of pager.
 
-* gotoPage
+* [gotoPage](/js/api/ejgrid#methods:gotopage "gotoPage")
 
 * refreshPager
 

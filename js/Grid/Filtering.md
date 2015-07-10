@@ -26,7 +26,7 @@ After you enable **Filter Menu** in **Grid**, it shows filter menu to filter rec
 * Date menu filtering
 * Boolean menu filtering
 
-Filter menus are a good **UI** based filtering option. It visibly denotes filtering option and is flexible to filter records. In String menu filtering, **ejAutoComplete** is used as default control to filter; in Numeric menu filtering, **ejNumericTextbox** is used as default control to filter. In Date menu filtering, **ejDatePicker** control is used as default control to filter and in Boolean menu filtering, **ejCheckBox** is used for filtering. 
+Filter menus are a good **UI** based filtering option. It visibly denotes filtering option and is flexible to filter records. In String menu filtering, [**ejAutoComplete** ](/js/autocomplete/overview "ejAutoComplete") is used as default control to filter; in Numeric menu filtering,[**ejNumericTextbox**](/js/currency/overview "ejNumericTextbox") is used as default control to filter. In Date menu filtering, [**ejDatePicker**](/js/datepicker/overview' "ejDatePicker") control is used as default control to filter and in Boolean menu filtering, [**ejCheckBox**](/js/checkbox/overview "ejCheckBox") is used for filtering. 
 
 {% highlight html %}
 
@@ -54,7 +54,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filter Bar
 
-**Filter bar** is one of the types of filtering. It is otherwise called **text filtering** as filter bar working is based on text boxes. Through this you can filter records. **Filter bars** have expression to filter records. They are based on type of column. 
+[**Filter bar**](/js/api/ejgrid#members:filtersettings-filterbarmode "Filter bar") is one of the types of filtering. It is otherwise called **text filtering** as filter bar working is based on text boxes. Through this you can filter records. [**Filter bars**](/js/api/ejgrid#members:filtersettings-filterbarmode "Filter bar") have expression to filter records. They are based on type of column. 
 
 _List of Filter Bar Expressions_
 
@@ -117,7 +117,7 @@ The following output is displayed as a result of the above code example.
 
 ## Excel styled menu
 
-You can enable the Excel like filter menu by setting the `filterType` as “excel” of the `filterSettings` property. The filter menu is displayed after clicking the filter icon in the column headers. 
+You can enable the Excel like filter menu by setting the [`filterType`](/js/api/ejgrid#members:filtersettings-filtertype "filterType") as “excel” of the [`filterSettings`](/js/api/ejgrid#members:filtersettings "filterSettings") property. The filter menu is displayed after clicking the filter icon in the column headers. 
 
 The filter menu contains options such as Sorting, Clear filter, submenu for the advanced filter options, 
 
@@ -129,7 +129,7 @@ The output of the excel like filterin as shown as below.
 
 {% include image.html url="/js/Grid/Filtering_images/Filtering_img3.png"%}
 
-A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the `maxFilterChoices` property of the `filterSettings`. 
+A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the [`maxFilterChoices`](/js/api/ejgrid#members:filtersettings-maxfilterchoices "maxFilterChoices") property of the [`filterSettings`](/js/api/ejgrid#members:filtersettings "filterSettings"). 
 
 ### Advanced Filter
 
@@ -173,7 +173,7 @@ The ourput of the custom filter menu was showed in below screenshot.
 
 ## Filter operators
 
-**ejGrid** uses filter operators from ej**DataManager**, that are used at the time of filtering. Filter operators are used to denote filtering type.
+**ejGrid** uses filter operators from [ej**DataManager**](/js/datamanager/filtering "ejDataManager"), that are used at the time of filtering. Filter operators are used to denote filtering type.
 
 _List of Column type and Filter operators_
 
