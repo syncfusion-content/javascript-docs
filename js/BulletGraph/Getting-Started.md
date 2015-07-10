@@ -69,7 +69,7 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 <!-- … -->
 <script type="text/javascript">
     $(function () {
-       “$("#Bullet").ejBulletGraph();
+       $("#Bullet").ejBulletGraph();
     });
 </script>
 </head>
