@@ -76,15 +76,15 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set the CSS name during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({cssClass: "gradient-lime"});   </code>
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({cssClass: "gradient-lime"}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set css class for initialization:
-        // Gets the css name.           
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "cssClass");                  
-        // Sets the css class to PivotSchemaDesigner
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "cssClass",  "gradient-lime" );               </code>
+// Gets the css name.           
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "cssClass");                  
+// Sets the css class to PivotSchemaDesigner
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "cssClass",  "gradient-lime" );</code>
 </pre>
 
 
@@ -119,11 +119,11 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({filterList: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the filter list, after initialization:
-        //Gets the filter list
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "filterList");
+//Gets the filter list
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "filterList");
                             
-        //Sets the filter list
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "filterList","true");                 *               </code>
+//Sets the filter list
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "filterList","true"); </code>
 </pre>
 
 
@@ -158,10 +158,10 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({height: "630px"});     </code>
 <pre class="prettyprint">
 <code> 
 //Get or set height for initialization:
-        // Gets the height.             
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "height");                    
-        // Sets the height to PivotSchemaDesigner
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "height",  "630px" );                 </code>
+// Gets the height.             
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "height");                    
+// Sets the height to PivotSchemaDesigner
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "height",  "630px" ); </code>
 </pre>
 
 
@@ -196,11 +196,11 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the pivot calculation list, after initialization:
-        //Gets the cell context state
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
+//Gets the cell context state
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
                    
-        //Sets the pivot calculation list value
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");                        *               </code>
+//Sets the pivot calculation list value
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");</code>
 </pre>
 
 
@@ -235,11 +235,11 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: true});</c
 <pre class="prettyprint">
 <code> 
 //Get or set the pivot column list, after initialization:
-        //Gets the pivot column list
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
+//Gets the pivot column list
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
                    
-        //Sets the pivot column list value
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");                        *               </code>
+//Sets the pivot column list value
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");</code>
 </pre>
 
 
@@ -275,11 +275,11 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotControl: control});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the pivot control, after initialization:
-        //Gets the pivot control value
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotControl");
+//Gets the pivot control value
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotControl");
                   
-        //Sets the pivot control
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotControl", control);                     *               </code>
+//Sets the pivot control
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotControl", control);</code>
 </pre>
 
 
@@ -314,11 +314,11 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotRowList: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the pivot row list, after initialization:
-        //Gets the pivot row list
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotRowList");
+//Gets the pivot row list
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotRowList");
           
-        //Sets the pivot row list
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotRowList","true");                       *               </code>
+//Sets the pivot row list
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotRowList","true"); </code>
 </pre>
 
 
@@ -353,11 +353,11 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the Pivot Table Field List, after initialization:
-        //Gets the virtual calling state
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
+//Gets the virtual calling state
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
            
-        //Sets the Pivot Table Field List 
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");                        *               </code>
+//Sets the Pivot Table Field List 
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true"); </code>
 </pre>
 
 
@@ -426,15 +426,15 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set the width during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({width: "415px"});      </code>
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({width: "415px"}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set width for initialization:
-        // Gets the width.              
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "width");                     
-        // Sets the width to PivotSchemaDesigner
-        $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "width",  "415px" );          </code>
+// Gets the width.              
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "width");                     
+// Sets the width to PivotSchemaDesigner
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "width",  "415px" ); </code>
 </pre>
 
 

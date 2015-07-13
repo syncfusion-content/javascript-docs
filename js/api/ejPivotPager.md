@@ -86,16 +86,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set categoricalCurrentPage API value during initialization  
-        $("#PivotPager").ejPivotPager({  categoricalCurrentPage: 1});                                   * </code>
+$("#PivotPager").ejPivotPager({  categoricalCurrentPage: 1}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the categoricalCurrentPage API, after initialization:
-        //Gets the categoricalCurrentPage value  
-        $("#PivotPager").ejPivotPager("option", "categoricalCurrentPage");
+//Gets the categoricalCurrentPage value  
+$("#PivotPager").ejPivotPager("option", "categoricalCurrentPage");
                   
-        //Sets the categoricalCurrentPage value 
-        $("#PivotPager").ejPivotPager("option", "categoricalCurrentPage", 2 ); </code>
+//Sets the categoricalCurrentPage value 
+$("#PivotPager").ejPivotPager("option", "categoricalCurrentPage", 2 ); </code>
 </pre>
 
 
@@ -125,16 +125,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set categPageCount API value during initialization  
-        $("#PivotPager").ejPivotPager({  categPageCount: 1});                                   * </code>
+$("#PivotPager").ejPivotPager({  categPageCount: 1}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the categPageCount API, after initialization:
-        //Gets the categPageCount value  
-        $("#PivotPager").ejPivotPager("option", "categPageCount");
+//Gets the categPageCount value  
+$("#PivotPager").ejPivotPager("option", "categPageCount");
                   
-        //Sets the categPageCount value 
-        $("#PivotPager").ejPivotPager("option", "categPageCount", 2 ); </code>
+//Sets the categPageCount value 
+$("#PivotPager").ejPivotPager("option", "categPageCount", 2 ); </code>
 </pre>
 
 
@@ -164,16 +164,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set localization API value during initialization  
-        $("#PivotPager").ejPivotPager({  locale: "en-US"});                                     * </code>
+$("#PivotPager").ejPivotPager({  locale: "en-US"});</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the localization API, after initialization:
-        //Gets the localization value  
-        $("#PivotPager").ejPivotPager("option", "locale");
+//Gets the localization value  
+$("#PivotPager").ejPivotPager("option", "locale");
                   
-        //Sets the localization value 
-        $("#PivotPager").ejPivotPager("option", "locale", "fr-FR" ); </code>
+//Sets the localization value 
+$("#PivotPager").ejPivotPager("option", "locale", "fr-FR" ); </code>
 </pre>
 
 
@@ -203,16 +203,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set pagerMode API value during initialization  
-        $("#PivotPager").ejPivotPager({  mode: ej.PivotPager.Mode.Series});                                     * </code>
+$("#PivotPager").ejPivotPager({  mode: ej.PivotPager.Mode.Series});</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the pagerMode API, after initialization:
-        //Gets the pagerMode value  
-        $("#PivotPager").ejPivotPager("option", "mode");
+//Gets the pagerMode value  
+$("#PivotPager").ejPivotPager("option", "mode");
                     
-        //Sets the pagerMode value 
-        $("#PivotPager").ejPivotPager("option", "mode", ej.PivotPager.Mode.Categorical ); </code>
+//Sets the pagerMode value 
+$("#PivotPager").ejPivotPager("option", "mode", ej.PivotPager.Mode.Categorical ); </code>
 </pre>
 
 
@@ -242,16 +242,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set seriesCurrentPage API value during initialization  
-        $("#PivotPager").ejPivotPager({  seriesCurrentPage: 1});                                        * </code>
+$("#PivotPager").ejPivotPager({  seriesCurrentPage: 1}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the seriesCurrentPage API, after initialization:
-        //Gets the seriesCurrentPage value  
-        $("#PivotPager").ejPivotPager("option", "seriesCurrentPage");
+//Gets the seriesCurrentPage value  
+$("#PivotPager").ejPivotPager("option", "seriesCurrentPage");
                        
-        //Sets the seriesCurrentPage value 
-        $("#PivotPager").ejPivotPager("option", "seriesCurrentPage", 2 ); </code>
+//Sets the seriesCurrentPage value 
+$("#PivotPager").ejPivotPager("option", "seriesCurrentPage", 2 ); </code>
 </pre>
 
 
@@ -281,16 +281,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set seriesPageCount API value during initialization  
-        $("#PivotPager").ejPivotPager({  seriesPageCount: 1});                                  * </code>
+$("#PivotPager").ejPivotPager({  seriesPageCount: 1});</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the seriesPageCount API, after initialization:
-        //Gets the seriesPageCount value  
-        $("#PivotPager").ejPivotPager("option", "seriesPageCount");
+//Gets the seriesPageCount value  
+$("#PivotPager").ejPivotPager("option", "seriesPageCount");
                  
-        //Sets the seriesPageCount value 
-        $("#PivotPager").ejPivotPager("option", "seriesPageCount", 2 ); </code>
+//Sets the seriesPageCount value 
+$("#PivotPager").ejPivotPager("option", "seriesPageCount", 2 ); </code>
 </pre>
 
 
@@ -320,16 +320,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set targetControlID API value during initialization  
-        $("#PivotPager").ejPivotPager({  targetControlID: "PivotGrid"});                                        * </code>
+$("#PivotPager").ejPivotPager({  targetControlID: "PivotGrid"});</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the targetControlID API, after initialization:
-        //Gets the targetControlID value  
-        $("#PivotPager").ejPivotPager("option", "targetControlID");
+//Gets the targetControlID value  
+$("#PivotPager").ejPivotPager("option", "targetControlID");
                  
-        //Sets the targetControlID value 
-        $("#PivotPager").ejPivotPager("option", "targetControlID",  "PivotGrid1" ); </code>
+//Sets the targetControlID value 
+$("#PivotPager").ejPivotPager("option", "targetControlID",  "PivotGrid1" ); </code>
 </pre>
 
 
@@ -359,7 +359,7 @@ Example
 // Initializing page count and numbers.
 $('#PivotPager').ejPivotPager({
       url: "Pager.svc",
-  });
+});
 var pagerObj = $("#PivotPager").data("ejPivotPager");
 pagerObj.initPagerProperties(10, {CategorialPageSize: 1, SeriesPageSize: 1, CategorialCurrentPage: 3, SeriesCurrentPage: 4});
 // Initializing page count and numbers.
@@ -389,7 +389,7 @@ Example
 // Unwiring events from Pivot Pager control.
 $('#PivotPager').ejPivotPager({
       url: "Pager.svc",
-  });
+});
 var pagerObj = $("#PivotPager").data("ejPivotPager");
 pagerObj.unwireEvents();
 // Unwiring events from Pivot Pager.
@@ -419,7 +419,7 @@ Example
 // Wiring events to Pivot Pager control.
 $('#PivotPager').ejPivotPager({
       url: "Pager.svc",
-  });
+});
 var pagerObj = $("#PivotPager").data("ejPivotPager");
 pagerObj.wireEvents();
 // Wiring events with Pivot Pager.
