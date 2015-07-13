@@ -101,14 +101,14 @@ This section contains guidelines on naming files, sections, documents and other 
 
 ### Notes style
 
-*To added the different type of predefined blockqoute use the below syntax 
+* To added the different type of predefined blockqoute use the below syntax 
 
 **Information**
 >**Syntax**: I> [Content]
 
 >**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
-**Warning
+**Warning**
 >**Syntax**: W> [Content]
 
 >**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
@@ -123,8 +123,8 @@ This section contains guidelines on naming files, sections, documents and other 
 
 >**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
-
-*For multiline blockqoute use the BR tag between the content  
+### Notes multiline style
+* For multiline blockqoute use the BR tag between the content  
 
 
 **Tips**
