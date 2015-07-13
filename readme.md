@@ -101,36 +101,36 @@ This section contains guidelines on naming files, sections, documents and other 
 
 ### Notes style
 
-* To added the different type of predefined blockqoute use the below syntax 
+* To add the different type of predefined blockqoute use the below syntax 
 
 **Information**
->**Syntax**: I> [Content]
+> **Syntax**: I> [Content]
 
->**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Warning**
->**Syntax**: W> [Content]
+> **Syntax**: W> [Content]
 
->**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Errors**
->**Syntax**: E> [Content]
+> **Syntax**: E> [Content]
 
->**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
-
-**Tips**
->**Syntax**: T> [Content]
-
->**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
-
-### Notes multiline style
-* For multiline blockqoute use the BR tag between the content  
-
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Tips**
->**Syntax**: T> [Content]
+> **Syntax**: T> [Content]
 
->**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. **<BR>**Duis volutpat, elit eget iaculis venenatis
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+### Notes multiple paragraph style
+* Use the BR tag between the content to enable multiple paragraph style.  
+
+
+**Tips**
+> **Syntax**: T> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. **<BR>**Duis volutpat, elit eget iaculis venenatis
 
 
 
@@ -138,16 +138,16 @@ This section contains guidelines on naming files, sections, documents and other 
 
 * See also section can be added at the bottom of the page using the below syntax 
 
->**Syntax**:
-{% seealso %}
-     [Content]
-{% endseealso %}
+> **Syntax**:
+> {% seealso %}
+>     [Content]
+> {% endseealso %}
 
 
->**Example**: 
-{% seealso %}
-    [See the Cross Reference section](#Cross-reference)
-{% endseealso %}
+> **Example**: 
+> {% seealso %}
+>    [See the Cross Reference section](#Cross-reference)
+> {% endseealso %}
 
 
 ### JS Playground integration
