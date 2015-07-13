@@ -104,33 +104,33 @@ This section contains guidelines on naming files, sections, documents and other 
 *To added the different type of predefined blockqoute use the below syntax 
 
 **Information**
-	>**Syntax**: I> [Content]
+>**Syntax**: I> [Content]
 
-	>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Warning
-	>**Syntax**: W> [Content]
+>**Syntax**: W> [Content]
 
-	>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Errors**
-	>**Syntax**: E> [Content]
+>**Syntax**: E> [Content]
 
-	>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Tips**
-	>**Syntax**: T> [Content]
+>**Syntax**: T> [Content]
 
-	>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 
 *For multiline blockqoute use the BR tag between the content  
 
 
 **Tips**
-	>**Syntax**: T> [Content]
+>**Syntax**: T> [Content]
 
-	>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. **<BR>**Duis volutpat, elit eget iaculis venenatis
+>**Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. **<BR>**Duis volutpat, elit eget iaculis venenatis
 
 
 
