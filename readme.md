@@ -100,12 +100,55 @@ This section contains guidelines on naming files, sections, documents and other 
 * Do not provide a line gap between the bullet points.
 
 ### Notes style
-* Todo -> How to provide Important style
-* Todo -> How to provide warning style
-* Todo -> How to provide other topics which we would like to highlight. For ex, Notes or Tips.
+
+* To add the different type of predefined blockqoute use the below syntax 
+
+**Information**
+> **Syntax**: I> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+**Warning**
+> **Syntax**: W> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+**Errors**
+> **Syntax**: E> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+**Tips**
+> **Syntax**: T> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+### Notes multiple paragraph style
+* Use the BR tag between the content to enable multiple paragraph style.  
+
+
+**Tips**
+> **Syntax**: T> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. **<BR>**Duis volutpat, elit eget iaculis venenatis
+
+
 
 ### See also
-* Todo -> How to add see also section? What is the syntax?
+
+* See also section can be added at the bottom of the page using the below syntax 
+
+> **Syntax**:
+> {% seealso %}
+>     [Content]
+> {% endseealso %}
+
+
+> **Example**: 
+> {% seealso %}
+>    [See the Cross Reference section](#Cross-reference)
+> {% endseealso %}
+
 
 ### JS Playground integration
 * Todo -> How to link the JS Playground link on top of the each code blocks?
