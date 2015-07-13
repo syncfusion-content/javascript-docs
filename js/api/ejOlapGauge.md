@@ -86,16 +86,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set columnsCount API value during initialization  
-        $("#OlapGauge").ejOlapGauge({  columnsCount: 1});                                       * </code>
+$("#OlapGauge").ejOlapGauge({  columnsCount: 1}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the columnsCount API, after initialization:
-        //Gets the columnsCount value  
-        $("#OlapGauge").ejOlapGauge("option", "columnsCount");
+//Gets the columnsCount value  
+$("#OlapGauge").ejOlapGauge("option", "columnsCount");
                       
-        //Sets the columnsCount value 
-        $("#OlapGauge").ejOlapGauge("option", "columnsCount", 2 ); </code>
+//Sets the columnsCount value 
+$("#OlapGauge").ejOlapGauge("option", "columnsCount", 2 ); </code>
 </pre>
 
 
@@ -125,15 +125,15 @@ Example
 <pre class="prettyprint">
 <code> 
 // Set the CSS class during initialization.                     
-        $("#OlapGauge").ejOlapGauge({  cssClass : "gradient-lime" });                   * </code>
+$("#OlapGauge").ejOlapGauge({  cssClass : "gradient-lime" }); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the CSS class after initialization:
-        // Gets the CSS class value.            
-        $("#OlapGauge").ejOlapGauge("option", "cssClass");                      
-        // Sets the CSS class to OLAP Gauge
-        $("#OlapGauge").ejOlapGauge("option", "cssClass",  "gradient-lime" );</code>
+// Gets the CSS class value.            
+$("#OlapGauge").ejOlapGauge("option", "cssClass");                      
+// Sets the CSS class to OLAP Gauge
+$("#OlapGauge").ejOlapGauge("option", "cssClass",  "gradient-lime" );</code>
 </pre>
 
 
@@ -163,16 +163,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set customObject API value during initialization  
-        $("#OlapGauge").ejOlapGauge({  customObject: {"key":"Hello World"}});                                   * </code>
+$("#OlapGauge").ejOlapGauge({  customObject: {"key":"Hello World"}}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the customObject API, after initialization:
-        //Gets the customObject value  
-        $("#OlapGauge").ejOlapGauge("option", "customObject");
+//Gets the customObject value  
+$("#OlapGauge").ejOlapGauge("option", "customObject");
                       
-        //Sets the customObject value 
-        $("#OlapGauge").ejOlapGauge("option", "customObject",  {"key":"Hi Syncfusion!"} ); </code>
+//Sets the customObject value 
+$("#OlapGauge").ejOlapGauge("option", "customObject",  {"key":"Hi Syncfusion!"} ); </code>
 </pre>
 
 
@@ -202,16 +202,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set enableTooltip API value during initialization  
-        $("#OlapGauge").ejOlapGauge({  enableTooltip: true});                                   * </code>
+$("#OlapGauge").ejOlapGauge({  enableTooltip: true}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the enableTooltip API, after initialization:
-        //Gets the enableTooltip value  
-        $("#OlapGauge").ejOlapGauge("option", "enableTooltip");
+//Gets the enableTooltip value  
+$("#OlapGauge").ejOlapGauge("option", "enableTooltip");
                      
-        //Sets the enableTooltip value 
-        $("#OlapGauge").ejOlapGauge("option", "enableTooltip", false ); </code>
+//Sets the enableTooltip value 
+$("#OlapGauge").ejOlapGauge("option", "enableTooltip", false ); </code>
 </pre>
 
 
@@ -246,11 +246,11 @@ $("#OlapGauge").ejOlapGauge({isResponsive: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the isResponsive, after initialization:
-        //Gets the isResponsive values state
-        $("#OlapGauge").ejOlapGauge("option", "isResponsive");
+//Gets the isResponsive values state
+$("#OlapGauge").ejOlapGauge("option", "isResponsive");
                       
-        //Sets the reponsive layout
-        $("#OlapGauge").ejOlapGauge("option", "isResponsive","true");                   *               </code>
+//Sets the reponsive layout
+$("#OlapGauge").ejOlapGauge("option", "isResponsive","true"); </code>
 </pre>
 
 
@@ -280,16 +280,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set numberFormat API value during initialization  
-$("#OlapGauge").ejOlapGauge({  numberFormat: ej.olap.OlapGauge.numberFormat.Default});                                  * </code>
+$("#OlapGauge").ejOlapGauge({  numberFormat: ej.olap.OlapGauge.numberFormat.Default}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the numberFormat API, after initialization:
-        //Gets the showHeaderLabel value  
-        $("#OlapGauge").ejOlapGauge("option", "numberFormat");
+//Gets the showHeaderLabel value  
+$("#OlapGauge").ejOlapGauge("option", "numberFormat");
                       
-        //Sets the numberFormat value 
-        $("#OlapGauge").ejOlapGauge("option", "numberFormat", ej.olap.OlapGauge.numberFormat.Default); </code>
+//Sets the numberFormat value 
+$("#OlapGauge").ejOlapGauge("option", "numberFormat", ej.olap.OlapGauge.numberFormat.Default); </code>
 </pre>
 
 
@@ -319,16 +319,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set localization API value during initialization  
-        $("#OlapGauge").ejOlapGauge({  locale: "fr-FR"});                                       * </code>
+$("#OlapGauge").ejOlapGauge({  locale: "fr-FR"}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the localization API, after initialization:
-        //Gets the localization value  
-        $("#OlapGauge").ejOlapGauge("option", "locale");
+//Gets the localization value  
+$("#OlapGauge").ejOlapGauge("option", "locale");
                     
-        //Sets the localization value 
-        $("#OlapGauge").ejOlapGauge("option", "locale",  "fr-FR" ); </code>
+//Sets the localization value 
+$("#OlapGauge").ejOlapGauge("option", "locale",  "fr-FR" ); </code>
 </pre>
 
 
@@ -358,16 +358,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set rowsCount API value during initialization  
-        $("#OlapGauge").ejOlapGauge({  rowsCount: 1});                                  * </code>
+$("#OlapGauge").ejOlapGauge({  rowsCount: 1}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the rowsCOunt API, after initialization:
-        //Gets the rowsCount value  
-        $("#OlapGauge").ejOlapGauge("option", "rowsCount");
+//Gets the rowsCount value  
+$("#OlapGauge").ejOlapGauge("option", "rowsCount");
                  
-        //Sets the rowsCount value 
-        $("#OlapGauge").ejOlapGauge("option", "rowsCount", 2); </code>
+//Sets the rowsCount value 
+$("#OlapGauge").ejOlapGauge("option", "rowsCount", 2); </code>
 </pre>
 
 
@@ -397,16 +397,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set scales API value during initialization  
-        $("#OlapGauge").ejOlapGauge({  scales: {showRanges: true, showIndicators: true}});                                      * </code>
+$("#OlapGauge").ejOlapGauge({  scales: {showRanges: true, showIndicators: true}}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the scales API, after initialization:
-        //Gets the scales value  
-        $("#OlapGauge").ejOlapGauge("option", "scales");
+//Gets the scales value  
+$("#OlapGauge").ejOlapGauge("option", "scales");
                     
-        //Sets the scales value 
-        $("#OlapGauge").ejOlapGauge("option", "scales", {showRanges: true, showIndicators: true}); </code>
+//Sets the scales value 
+$("#OlapGauge").ejOlapGauge("option", "scales", {showRanges: true, showIndicators: true}); </code>
 </pre>
 
 
@@ -435,7 +435,7 @@ Example
 
 <pre class="prettyprint">
 <code> 
-/To set serviceMethodSettings API value, to invoke the appropriate service method on UI operation.  
+//To set serviceMethodSettings API value, to invoke the appropriate service method on UI operation.  
 $("#OlapGauge").ejOlapGauge({  serviceMethodSettings: {initialize: "MyMethod"});</code>
 </pre>
 <pre class="prettyprint">
@@ -514,16 +514,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set showHeaderLabel API value during initialization  
-        $("#OlapGauge").ejOlapGauge({  showHeaderLabel: false});                                        * </code>
+$("#OlapGauge").ejOlapGauge({  showHeaderLabel: false}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the showHeaderLabel API, after initialization:
-        //Gets the showHeaderLabel value  
-        $("#OlapGauge").ejOlapGauge("option", "showHeaderLabel");
+//Gets the showHeaderLabel value  
+$("#OlapGauge").ejOlapGauge("option", "showHeaderLabel");
                    
-        //Sets the showHeaderLabel value 
-        $("#OlapGauge").ejOlapGauge("option", "showHeaderLabel", true); </code>
+//Sets the showHeaderLabel value 
+$("#OlapGauge").ejOlapGauge("option", "showHeaderLabel", true); </code>
 </pre>
 
 
@@ -553,16 +553,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set url API value during initialization  
-        $("#OlapGauge").ejOlapGauge({  url: "/OlapGaugeService.svc"});                                  * </code>
+$("#OlapGauge").ejOlapGauge({  url: "/OlapGaugeService.svc"}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the url API, after initialization:
-        //Gets the url value  
-        $("#OlapGauge").ejOlapGauge("option", "url");
+//Gets the url value  
+$("#OlapGauge").ejOlapGauge("option", "url");
                        
-        //Sets the url value 
-        $("#OlapGauge").ejOlapGauge("option", "url",  "/OlapGaugeService" ); </code>
+//Sets the url value 
+$("#OlapGauge").ejOlapGauge("option", "url",  "/OlapGaugeService" ); </code>
 </pre>
 
 
@@ -644,7 +644,7 @@ $('#OlapGauge').ejOlapGauge({
                    length: 25,
                    width: 15
                }]
-                                }]
+        }]
   });
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.doAjaxPost("POST", "/OlapGaugeService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
@@ -692,7 +692,7 @@ $('#OlapGauge').ejOlapGauge({
                    length: 25,
                    width: 15
                }]
-                                }]
+        }]
   });
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.progressStatus({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
@@ -740,7 +740,7 @@ $('#OlapGauge').ejOlapGauge({
                    length: 25,
                    width: 15
                }]
-                                }]
+        }]
   });
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.refresh();
@@ -788,7 +788,7 @@ $('#OlapGauge').ejOlapGauge({
                    length: 25,
                    width: 15
                }]
-                                }]
+        }]
   });
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.removeImg();
@@ -836,7 +836,7 @@ $('#OlapGauge').ejOlapGauge({
                    length: 25,
                    width: 15
                }]
-                                }]
+        }]
   });
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.renderControlFromJSON(this.getJSONRecords());
@@ -1235,7 +1235,7 @@ Example
 //renderFailure event for OLAP Gauge
 $("#OlapGauge").ejOlapGauge({
    renderFailure: function (args) {}
-});      </code>
+}); </code>
 </pre>
 
 
