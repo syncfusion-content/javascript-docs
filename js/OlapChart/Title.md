@@ -9,7 +9,7 @@ documentation: ug
 
 #Title
 
-**Title** is the area on top of the Chart control that displays the text explaining the **OlapChart** data.[Title](/js/api/ejChart#titlespan-classtype-signature-type-objectobjectspan) property allows you to set the default title for a Chart. 
+**Title** is the area on top of the Chart control that displays the text explaining the **OlapChart** data.[Title](/js/api/ejChart#members:title) property allows you to set the default title for a Chart. 
 
 
 {% highlight js %}
@@ -32,7 +32,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Title Customization
 
-You can customize the title text font using [font](/js/api/ejChart#titlefontspan-classtype-signature-type-objectobjectspan) property.
+You can customize the title text font using [font](/js/api/ejChart#members:title-font) property.
 
 {% highlight js %}
 

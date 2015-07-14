@@ -57,7 +57,7 @@ RenderingFailed</td><td>
 "Rendant pas"</td></tr>
 </table>
 
-The following code example illustrates you on how to localize **OlapGauge’s** User Interface (UI) based on “French” culture with the help of [locale](/js/api/ejOlapGauge#localespan-classtype-signature-type-stringstringspan) property.
+The following code example illustrates you on how to localize **OlapGauge’s** User Interface (UI) based on “French” culture with the help of [locale](/js/api/ejOlapGauge#members:locale) property.
 
 {% highlight js %}
 

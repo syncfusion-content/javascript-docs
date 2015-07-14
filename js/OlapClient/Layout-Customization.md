@@ -21,7 +21,7 @@ documentation: ug
 
 ###Tile View
 
-In [Tile](/js/api/ejOlapClient#displaysettingscontrolplacementspan-classtype-signature-type-enumenumspan) View representation, both **Grid** and **Chart** will be displayed one over the other, in the same layout. 
+In [Tile](/js/api/ejOlapClient#members:displaysettings-controlplacement) View representation, both **Grid** and **Chart** will be displayed one over the other, in the same layout. 
 
 {% highlight js %}
 
@@ -39,7 +39,7 @@ $("#OlapClient1").ejOlapClient({
 
 ### Tab View
 
-In [Tab](/js/api/ejOlapClient#displaysettingscontrolplacementspan-classtype-signature-type-enumenumspan) View representation, both **Grid** and **Chart** will be displayed in a separate tab.
+In [Tab](/js/api/ejOlapClient#members:displaysettings-controlplacement) View representation, both **Grid** and **Chart** will be displayed in a separate tab.
 
 {% highlight js %}
 
@@ -62,7 +62,7 @@ After you set **defaultView** property either to **Chart** or **Grid**, the corr
 
 ### Chart View
 
-To display/visualize Chart control by default, set [defaultView](/js/api/ejOlapClient#displaysettingsdefaultviewspan-classtype-signature-type-enumenumspan) to Chart.
+To display/visualize Chart control by default, set [defaultView](/js/api/ejOlapClient#members:displaysettings-defaultview) to Chart.
 
 {% highlight js %}
 
@@ -81,7 +81,7 @@ $("#OlapClient1").ejOlapClient({
 
 ### Grid View
 
-To display/visualize **Grid** control by default, set [defaultView](/js/api/ejOlapClient#displaysettingsdefaultviewspan-classtype-signature-type-enumenumspan) to **Grid**.
+To display/visualize **Grid** control by default, set [defaultView](/js/api/ejOlapClient#members:displaysettings-defaultview) to **Grid**.
 
 {% highlight js %}
 
@@ -102,7 +102,7 @@ $("#OlapClient1").ejOlapClient({
 
 ###Grid Only
 
-After you set the [displayMode](/js/api/ejOlapClient#displaysettingsmodespan-classtype-signature-type-enumenumspan) option to **GridOnly**, the **Chart** is hidden and the data is displayed only in **Grid**.
+After you set the [displayMode](/js/api/ejOlapClient#members:displaysettings-mode) option to **GridOnly**, the **Chart** is hidden and the data is displayed only in **Grid**.
 
 {% highlight js %}
 
@@ -121,7 +121,7 @@ $("#OlapClient1").ejOlapClient({
 
 ###Chart Only
 
-After you set the [displayMode](/js/api/ejOlapClient#displaysettingsmodespan-classtype-signature-type-enumenumspan) option to **ChartOnly**, the **Grid** is hidden and data is displayed only in **Chart**.
+After you set the [displayMode](/js/api/ejOlapClient#members:displaysettings-mode) option to **ChartOnly**, the **Grid** is hidden and data is displayed only in **Chart**.
 
 {% highlight js %}
 
@@ -140,7 +140,7 @@ $("#OlapClient1").ejOlapClient({
 
 ###Both Grid and Chart
 
-After you set the [displayMode](/js/api/ejOlapClient#displaysettingsmodespan-classtype-signature-type-enumenumspan) option to **ChartAndGrid**, data is displayed in both **Grid** and **Chart**.
+After you set the [displayMode](/js/api/ejOlapClient#members:displaysettings-mode) option to **ChartAndGrid**, data is displayed in both **Grid** and **Chart**.
 
 {% highlight js %}
 
@@ -159,7 +159,7 @@ $("#OlapClient1").ejOlapClient({
 
 ## Toggle Panel
 
-You are provided with an option to [toggle](/js/api/ejOlapClient#displaysettingsenabletogglepanelspan-classtype-signature-type-booleanbooleanspan) the visibility of Axis Element Builder and Cube Dimension Browser panels in **OlapClient**.
+You are provided with an option to [toggle](/js/api/ejOlapClient#members:displaysettings-enabletogglepanel) the visibility of Axis Element Builder and Cube Dimension Browser panels in **OlapClient**.
 
 {% highlight js %}
 
@@ -178,7 +178,7 @@ $("#OlapClient1").ejOlapClient({
 
 ## Maximized/Full Screen View
 
-You can maximize **PivotGrid** and **OlapChart** to [full screen mode](/js/api/ejOlapClient#displaysettingsenablefullscreenspan-classtype-signature-type-booleanbooleanspan) inside **OlapClient** for a precise view. By selecting Full Screen icon in the toolbar, **PivotGrid** and **OlapChart** are maximized depending on the current tab. You can also perform drilldown action in both **PivotGrid** and **OlapChart** in the maximized view.
+You can maximize **PivotGrid** and **OlapChart** to [full screen mode](/js/api/ejOlapClient#members:displaysettings-enablefullscreen) inside **OlapClient** for a precise view. By selecting Full Screen icon in the toolbar, **PivotGrid** and **OlapChart** are maximized depending on the current tab. You can also perform drilldown action in both **PivotGrid** and **OlapChart** in the maximized view.
 
 {% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img9.png" %}
 
