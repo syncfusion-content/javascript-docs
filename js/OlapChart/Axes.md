@@ -35,7 +35,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Axis Title Customization
 
-Primary axis title [font](/js/api/ejChart#primaryxaxistitlefontspan-classtype-signature-type-objectobjectspan) appearance is further customized with the help of the following code example.
+Primary axis title [font](/js/api/ejChart#members:primaryxaxis-title-font) appearance is further customized with the help of the following code example.
 
 {% highlight js %}
 
@@ -132,7 +132,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Position Opposed
 
-**Position** of the primary X and Y axis is set to the top with the help [opposedPosition](/js/api/ejChart#primaryxaxisopposedpositionspan-classtype-signature-type-booleanbooleanspan) property.
+**Position** of the primary X and Y axis is set to the top with the help [opposedPosition](/js/api/ejChart#members:primaryxaxis-opposedposition) property.
 
 {% highlight js %}
 
@@ -163,9 +163,9 @@ $("#OlapChart1").ejOlapChart({
 
 Background, border color and outer width of the Chart Area can be customized with the help of following properties.
 
-* [Background](/js/api/ejChart#chartareabackgroundspan-classtype-signature-type-stringstringspan) – sets the background color for Chart Area.
-* [Color](/js/api/ejChart#chartareabordercolorspan-classtype-signature-type-stringstringspan) – sets the color for the border.
-* [Width](/js/api/ejChart#chartareaborderwidthspan-classtype-signature-type-numbernumberspan) – sets the width for the border.
+* [Background](/js/api/ejChart#members:chartarea-background) – sets the background color for Chart Area.
+* [Color](/js/api/ejChart#members:chartarea-border-color) – sets the color for the border.
+* [Width](/js/api/ejChart#members:chartarea-border-width) – sets the width for the border.
 
 
 
@@ -200,7 +200,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Label font and color customization 
 
-Font style and color of the label text is customized with the help of [font](/js/api/ejChart#primaryxaxisfontspan-classtype-signature-type-objectobjectspan) and [color](/js/api/ejChart#primaryxaxisfontfontstylespan-classtype-signature-type-enumenumspan) properties within its respective axis.
+Font style and color of the label text is customized with the help of [font](/js/api/ejChart#members:primaryxaxis-font) and [color](/js/api/ejChart#members:primaryxaxis-font-fontstyle) properties within its respective axis.
 
 {% highlight js %}
 
@@ -237,7 +237,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Rotating Axis Labels
 
-You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the [labelRotation](/js/api/ejChart#primaryxaxislabelrotationspan-classtype-signature-type-numbernumberspan) property.
+You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the [labelRotation](/js/api/ejChart#members:primaryxaxis-labelrotation) property.
 
 {% highlight js %}
 

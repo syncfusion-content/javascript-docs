@@ -11,8 +11,8 @@ documentation: ug
 
 **Custom label** provides information about the members associated behind each OlapGauge. You can define multiple labels for OlapGauge and it can be positioned along X and Y co-ordinates based on location settings.
 
-* You can set the location of the custom label in circular gauge using [Position](/js/api/ejCircularGauge#getcustomlabelanglespan-classsignaturespan) property.
-* You can customize the custom label font with [font style](/js/api/ejCircularGauge#getcustomlabelanglespan-classsignaturespan), [font family](/js/api/ejCircularGauge#getcustomlabelanglespan-classsignaturespan), and [size](/js/api/ejCircularGauge#getcustomlabelanglespan-classsignaturespan) properties.
+* You can set the location of the custom label in circular gauge using [Position](/js/api/ejCircularGauge#setcustomlabelanglespan-classsignaturespan) property.
+* You can customize the custom label font with [font style](/js/api/ejCircularGauge#setcustomlabelanglespan-classsignaturespan), [font family](/js/api/ejCircularGauge#setcustomlabelanglespan-classsignaturespan), and [size](/js/api/ejCircularGauge#setcustomlabelanglespan-classsignaturespan) properties.
 
 {% highlight js %}
 

@@ -22,7 +22,7 @@ The **OlapGauge** control provides support to display multiple gauges in a struc
 
 ### Row Count
 
-You can set the number of gauges to be displayed in row using [rowsCount](/js/api/ejOlapGauge#rowscountspan-classtype-signature-type-numbernumberspan) property. By default the value is **0**.
+You can set the number of gauges to be displayed in row using [rowsCount](/js/api/ejOlapGauge#members:rowscount) property. By default the value is **0**.
 
 {% highlight js %}
 
@@ -127,7 +127,7 @@ $(function() {
 
 ### Column Count
 
-You can set the number of gauges to be displayed in column using [columnsCount](/js/api/ejOlapGauge#columnscountspan-classtype-signature-type-numbernumberspan) property. By default the value is **0**.
+You can set the number of gauges to be displayed in column using [columnsCount](/js/api/ejOlapGauge#members:columnscount) property. By default the value is **0**.
 
 {% highlight js %}
 

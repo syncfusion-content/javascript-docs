@@ -11,7 +11,7 @@ documentation: ug
 
 > **Note:** This feature is applicable only for OLAP datasource.
 
-The four kinds of [Layouts](/js/api/ejPivotGrid#layoutspan-classtype-signature-type-enumenumspan) supported by the **PivotGrid** are as follows:
+The four kinds of [Layouts](/js/api/ejPivotGrid#members:layout) supported by the **PivotGrid** are as follows:
 
  * Normal
  * Excel-like
