@@ -79,4 +79,4 @@ We can set height and width to backstage page using properties _**backStageHeigh
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Backstage_JS/Backstage-Page_images/Backstage-Page_img1.png" Caption=""%}
+{% include image.html url="/js/Ribbon/Backstage-Page_images/Backstage-Page_img1.png" Caption=""%}
