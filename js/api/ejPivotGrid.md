@@ -132,10 +132,10 @@ $("#PivotGrid").ejPivotGrid({cssClass: "gradient-lime"});       </code>
 <pre class="prettyprint">
 <code> 
 //Get or set css class for initialization:
-        // Gets the css name.           
-        $("#PivotGrid").ejPivotGrid("option", "cssClass");                      
-        // Sets the rounded corner to button
-        $("#PivotGrid").ejPivotGrid("option", "cssClass",  "gradient-lime" );           </code>
+// Gets the css name.           
+$("#PivotGrid").ejPivotGrid("option", "cssClass");                      
+// Sets the rounded corner to button
+$("#PivotGrid").ejPivotGrid("option", "cssClass",  "gradient-lime" );           </code>
 </pre>
 
 
@@ -219,16 +219,16 @@ Example
 <pre class="prettyprint">
 <code> 
 // To pass additional information between client-end and service-end   
- $("#PivotGrid").ejPivotGrid({customObject: { Language: "en-US" }}); </code>
+$("#PivotGrid").ejPivotGrid({customObject: { Language: "en-US" }}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the custom object API, after initialization:
-        //Gets the custom object value  
-        $("#PivotGrid").ejPivotGrid("option","customObject");
+//Gets the custom object value  
+$("#PivotGrid").ejPivotGrid("option","customObject");
                        
-        //Sets the custom object value 
-        $("#PivotGrid").ejPivotGrid("option","customObject", {Language: "en-US"} );             </code>
+//Sets the custom object value 
+$("#PivotGrid").ejPivotGrid("option","customObject", {Language: "en-US"} );             </code>
 </pre>
 
 
@@ -279,11 +279,11 @@ $("#PivotGrid").ejPivotGrid({enableCellContext: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the cell context, after initialization:
-        //Gets the cell context state
-        $("#PivotGrid").ejPivotGrid("option", "enableCellContext");
+//Gets the cell context state
+$("#PivotGrid").ejPivotGrid("option", "enableCellContext");
                  
-        //Sets the cell context value
-        $("#PivotGrid").ejPivotGrid("option", "enableCellContext","true");                      *               </code>
+//Sets the cell context value
+$("#PivotGrid").ejPivotGrid("option", "enableCellContext","true"); </code>
 </pre>
 
 
@@ -334,11 +334,11 @@ $("#PivotGrid").ejPivotGrid({enableJSONRendering: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the JSON Rendering, after initialization:
-        //Gets the JSON rendering state
-        $("#PivotGrid").ejPivotGrid("option", "enableJSONRendering");
+//Gets the JSON rendering state
+$("#PivotGrid").ejPivotGrid("option", "enableJSONRendering");
                
-        //Sets the JSON rendering 
-        $("#PivotGrid").ejPivotGrid("option", "enableJSONRendering","true");                    *               </code>
+//Sets the JSON rendering 
+$("#PivotGrid").ejPivotGrid("option", "enableJSONRendering","true"); </code>
 </pre>
 
 
@@ -389,11 +389,11 @@ $("#PivotGrid").ejPivotGrid({enableRTL: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the enableRTL, after initialization:
-        //Gets the enableRTL values state
-        $("#PivotGrid").ejPivotGrid("option", "enableRTL");
+//Gets the enableRTL values state
+$("#PivotGrid").ejPivotGrid("option", "enableRTL");
                  
-        //Sets the cell context value
-        $("#PivotGrid").ejPivotGrid("option", "enableRTL","true");                      *               </code>
+//Sets the cell context value
+$("#PivotGrid").ejPivotGrid("option", "enableRTL","true"); </code>
 </pre>
 
 
@@ -444,11 +444,11 @@ $("#PivotGrid").ejPivotGrid({enableToolTip: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the enableToolTip, after initialization:
-        //Gets the enableToolTip values state
-        $("#PivotGrid").ejPivotGrid("option", "enableToolTip");
+//Gets the enableToolTip values state
+$("#PivotGrid").ejPivotGrid("option", "enableToolTip");
                      
-        //Sets the cell context value
-        $("#PivotGrid").ejPivotGrid("option", "enableToolTip","true");                  *               </code>
+//Sets the cell context value
+$("#PivotGrid").ejPivotGrid("option", "enableToolTip","true"); </code>
 </pre>
 
 
@@ -499,11 +499,11 @@ $("#PivotGrid").ejPivotGrid({enableVirtualScrolling: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the virtual scrolling, after initialization:
-        //Gets the virtual calling state
-        $("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling");
+//Gets the virtual calling state
+$("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling");
             
-        //Sets the virtual scrolling 
-        $("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling","true");                 *               </code>
+//Sets the virtual scrolling 
+$("#PivotGrid").ejPivotGrid("option", "enableVirtualScrolling","true");</code>
 </pre>
 
 
@@ -554,11 +554,11 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true, 
 <pre class="prettyprint">
 <code> 
 //Get or set the hyperlink settings, after initialization:
-        //Gets the hyperlink settings
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the hyperlink settings
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                  
-        //Sets the hyperlink settings to Pivot Grid
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings", {enableValueCellHyperlink: true, enableRowHeaderHyperlink: true});                   *               </code>
+//Sets the hyperlink settings to Pivot Grid
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings", {enableValueCellHyperlink: true, enableRowHeaderHyperlink: true}); </code>
 </pre>
 
 
@@ -609,11 +609,11 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableColumnHeaderHyperlink: tru
 <pre class="prettyprint">
 <code> 
 //Get or set the hyper link for column header, after initialization:
-        //Gets the hyper link state
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the hyper link state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                                  
-        //Sets the column header hyper link state
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableColumnHeaderHyperlink","true");                  *               </code>
+//Sets the column header hyper link state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableColumnHeaderHyperlink","true"); </code>
 </pre>
 
 
@@ -664,11 +664,11 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableRowHeaderHyperlink: true}}
 <pre class="prettyprint">
 <code> 
 //Get or set the hyper link for row header, after initialization:
-        //Gets the row header hyperlink state
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the row header hyperlink state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
          
-        //Sets the row header hyperlink
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableRowHeaderHyperlink","true");                     *               </code>
+//Sets the row header hyperlink
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableRowHeaderHyperlink","true"); </code>
 </pre>
 
 
@@ -719,11 +719,11 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableSummaryCellHyperlink: true
 <pre class="prettyprint">
 <code> 
 //Get or set the hyper link for summary cell, after initialization:
-        //Gets the summary cell hyperlink state
-  $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the summary cell hyperlink state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                
-        //Sets the summary cell hyperlink 
-  $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableSummaryCellHyperlink","true");                 *               </code>
+//Sets the summary cell hyperlink 
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableSummaryCellHyperlink","true");</code>
 </pre>
 
 
@@ -774,11 +774,11 @@ $("#PivotGrid").ejPivotGrid({hyperlinkSettings:{enableValueCellHyperlink: true}}
 <pre class="prettyprint">
 <code> 
 //Get or set the hyper link for cell, after initialization:
-        //Gets the hyper link state
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
+//Gets the hyper link state
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings");
                  
-        //Sets the cell hyperlink value
-        $("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableValueCellHyperlink","true");                     *               </code>
+//Sets the cell hyperlink value
+$("#PivotGrid").ejPivotGrid("option", "hyperlinkSettings.enableValueCellHyperlink","true");</code>
 </pre>
 
 
@@ -829,11 +829,11 @@ $("#PivotGrid").ejPivotGrid({isResponsive: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the isResponsive, after initialization:
-        //Gets the isResponsive values state
-        $("#PivotGrid").ejPivotGrid("option", "isResponsive");
+//Gets the isResponsive values state
+$("#PivotGrid").ejPivotGrid("option", "isResponsive");
                       
-        //Sets the reponsive layout
-        $("#PivotGrid").ejPivotGrid("option", "isResponsive","true");                   *               </code>
+//Sets the reponsive layout
+$("#PivotGrid").ejPivotGrid("option", "isResponsive","true"); </code>
 </pre>
 
 
@@ -922,11 +922,11 @@ $("#PivotGrid").ejPivotGrid({layout: ej.PivotGrid.Layout.NoSummaries});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the grid layout, after initialization:
-        //Gets the layout value
-        $("#PivotGrid").ejPivotGrid("option", "layout");
+//Gets the layout value
+$("#PivotGrid").ejPivotGrid("option", "layout");
                     
-        //Sets the grid layout
-        $("#PivotGrid").ejPivotGrid("option", "layout",ej.PivotGrid.Layout.Normal);                     *               </code>
+//Sets the grid layout
+$("#PivotGrid").ejPivotGrid("option", "layout",ej.PivotGrid.Layout.Normal); </code>
 </pre>
 
 
@@ -972,16 +972,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //Sets the localized language    
- $("#PivotGrid").ejPivotGrid({locale: "en-US"}}); </code>
+$("#PivotGrid").ejPivotGrid({locale: "en-US"}}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the size API, after initialization:
-        //Gets the localization value  
-        $("#PivotGrid").ejPivotGrid("option","locale");
+//Gets the localization value  
+$("#PivotGrid").ejPivotGrid("option","locale");
                      
-        //Sets the localization value 
-        $("#PivotGrid").ejPivotGrid("option","locale", "en-US" );               </code>
+//Sets the localization value 
+$("#PivotGrid").ejPivotGrid("option","locale", "en-US" );</code>
 </pre>
 
 
@@ -1054,7 +1054,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings",  {initialize: "In
 
 
 
-Allows the user to set the custom name for the service method that&#65533;s responsible for drilling up/down operation in Pivot Grid.
+Allows the user to set the custom name for the service method that&#39;s responsible for drilling up/down operation in Pivot Grid.
 
 
 
@@ -1109,7 +1109,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.drillDown", "DrillG
 
 
 
-Allows the user to set the custom name for the service method that&#65533;s responsible for performing exporting operation in Pivot Grid.
+Allows the user to set the custom name for the service method that&#39;s responsible for performing exporting operation in Pivot Grid.
 
 
 
@@ -1164,7 +1164,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.exportOptions", "Ex
 
 
 
-Allows the user to set the custom name for the service method that&#65533;s responsible for initializing Pivot Grid.
+Allows the user to set the custom name for the service method that&#39;s responsible for initializing Pivot Grid.
 
 
 
@@ -1219,7 +1219,7 @@ $("#PivotGrid").ejPivotGrid("option", "serviceMethodSettings.initialize", "Initi
 
 
 
-Allows the user to set the custom name for the service method that&#65533;s responsible for performing paging operation in Pivot Grid.
+Allows the user to set the custom name for the service method that&#39;s responsible for performing paging operation in Pivot Grid.
 
 
 

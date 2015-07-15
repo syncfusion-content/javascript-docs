@@ -73,7 +73,7 @@ RenderingFailed</td><td>
 "Rendant pas "</td></tr>
 </table>
 
-The following code example shows how to localize **OlapChart’s User Interface** (UI) based on “French” culture with the help of [locale](/js/api/ejOlapChart#localespan-classtype-signature-type-stringstringspan) property.
+The following code example shows how to localize **OlapChart’s User Interface** (UI) based on “French” culture with the help of [locale](/js/api/ejOlapChart#members:locale) property.
 
 {% highlight js %}
  

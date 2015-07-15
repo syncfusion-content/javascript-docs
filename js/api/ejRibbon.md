@@ -259,7 +259,7 @@ $(function () {
 
 
 
-Specify the application tab to contain application menu in the ribbon control.
+Specify the application tab to contain application menu or backstage page in the ribbon control.
 
 
 
@@ -311,6 +311,977 @@ $(function () {
   });
 });             
 &lt;/script&gt;  </code>
+</pre>
+
+
+
+
+
+
+### applicationTab.text<span class="type-signature type string">string</span>
+{:#members:applicationtab-text}
+
+
+
+
+
+
+
+
+To specify the display text of application tab.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### applicationTab.backStageHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#members:applicationtab-backStageHeight}
+
+
+
+
+
+
+
+
+To specify the height of ribbon backstage page.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+### applicationTab.backStageWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#members:applicationtab-backStageWidth}
+
+
+
+
+
+
+
+
+To specify the width of ribbon backstage page.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### applicationTab.backStagePage<span class="type-signature type array">array</span>
+{:#members:applicationtab-backStagePage}
+
+
+
+
+
+
+
+
+To specify the ribbon backstage page with its tab and button elements.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* array
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### applicationTab.backStagePage.id<span class="type-signature type string">string</span>
+{:#members:applicationtab-backStagePage-id}
+
+
+
+
+
+
+
+
+To specify the id for ribbon backstage page's tab and button elements.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### applicationTab.backStagePage.text<span class="type-signature type string">string</span>
+{:#members:applicationtab-backStagePage-text}
+
+
+
+
+
+
+
+
+To specify the text for ribbon backstage page's tab header and button elements.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### applicationTab.backStagePage.backStageItemType<span class="type-signature type enum">enum</span>
+{:#members:applicationtab-backStagePage-backStageItemType}
+
+
+
+
+
+
+
+
+To specify the type for ribbon backstage page's contents.Set "ej.Ribbon.backStageItemType.tab" to render the tab or "ej.Ribbon.backStageItemType.button" to render the button.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* ej.Ribbon.backStageItemType.tab
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### applicationTab.backStagePage.contentId<span class="type-signature type string">string</span>
+{:#members:applicationtab-backStagePage-contentId}
+
+
+
+
+
+
+
+
+To specify the id of html elements(like div,ul,etc..,) as ribbon backstage page's tab content.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
+</pre>
+
+
+
+
+
+
+### applicationTab.backStagePage.enableSeparator<span class="type-signature type boolean">boolean</span>
+{:#members:applicationtab-backStagePage-enableSeparator}
+
+
+
+
+
+
+
+
+To specify the separator between backstage page's tab and button elements.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});	        
+&lt;/script&gt;</code>
 </pre>
 
 
@@ -466,7 +1437,7 @@ $(function () {
 
 
 
-To specify the type of application tab item.Specify the type of application tab as "ApplicationMenu" in the ribbon control.
+To specify the application menu or backstage page.Specify the type of application tab as "ApplicationMenu" to render the application menu or "BackStagePage" to render backstage page in the ribbon control.
 
 
 
@@ -7854,6 +8825,129 @@ $(function () {
   });
 });             
 &lt;/script&gt;  </code>
+</pre>
+
+
+
+
+
+### onBackStageItemClick
+{:#events:onbackstageitemclick}
+
+
+
+
+
+
+
+
+Triggered when a tab or button in the backstage page is clicked successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>argument.cancel</code></td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be cancelled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name"><code>argument.model</code></td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ribbon model.</td>
+</tr>
+<tr>
+<td class="name"><code>argument.type</code></td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name"><code>argument.target</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the item clicked in the gallery.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code> 
+&lt;div id="content1"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
+&lt;li&gt;Protect Workbook&lt;/li&gt;
+&lt;li&gt;Inspect Workbook&lt;/li&gt;
+&lt;li&gt;Versions&lt;/li&gt;
+&lt;li&gt;Browser View Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content2"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
+&lt;li&gt;Recent Workbooks&lt;/li&gt;
+&lt;li&gt;Computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="content3"&gt;
+&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
+&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
+&lt;li&gt;Change File Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="Ribbon"&gt;&lt;/div&gt;
+&lt;button id="btn"&gt;Home button&lt;/button&gt;
+&lt;script type="text/javascript"&gt;   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            Type: "BackStagePage",
+            text: "FILE",
+            backStageHeight: 250,
+            backStageWidth: 600,
+            backStagePage: [{
+                id: "info",
+                text: "Info",
+                backStageItemType: ej.Ribbon.backStageItemType.tab,
+                contentId: "content1"
+            }, {
+                id: "open",
+                text: "Open",
+                contentId: "content2"
+            }, {
+                id: "export",
+                text: "Export",
+                contentId: "content3",
+                enableSeparator: true
+            }, {
+                id: "exit",
+                text: "Exit",
+                backStageItemType: ej.Ribbon.backStageItemType.button
+            }]
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }],
+      onBackStageItemClick: function (args) {}
+    });
+});	        
+&lt;/script&gt; </code>
 </pre>
 
 

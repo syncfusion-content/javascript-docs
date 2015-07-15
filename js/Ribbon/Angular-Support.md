@@ -11,9 +11,7 @@ documentation: ug
 
 **Ribbon** control has angular support. It is possible to add object, array collection in the Ribbon control. The one way binding support is provided for Ribbon control. **ej-Ribbon** is the control tag where, ej is tag prefix and Ribbon is the control name.
 
-To know more details about the Angular binding, refer to the following link location,
-
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+To know more details about the Angular binding, refer [here](/js/angularjs).
 
 ## Rendering Tabs and Contextual tabs
 

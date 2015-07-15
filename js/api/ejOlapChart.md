@@ -92,15 +92,15 @@ Example
 <pre class="prettyprint">
 <code> 
 // Set the CSS class during initialization.                     
-        $("#OlapChart").ejOlapChart({  cssClass : "gradient-lime" });                   * </code>
+$("#OlapChart").ejOlapChart({  cssClass : "gradient-lime" });</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the CSS class after initialization:
-        // Gets the CSS class value.            
-        $("#OlapChart").ejOlapChart("option", "cssClass");                      
-        // Sets the CSS class to OLAP Chart
-        $("#OlapChart").ejOlapChart("option", "cssClass",  "gradient-lime" );</code>
+// Gets the CSS class value.            
+$("#OlapChart").ejOlapChart("option", "cssClass");                      
+// Sets the CSS class to OLAP Chart
+$("#OlapChart").ejOlapChart("option", "cssClass",  "gradient-lime" );</code>
 </pre>
 
 
@@ -152,16 +152,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set customObject API value during initialization  
-        $("#OlapChart").ejOlapChart({  customObject: {"key":"Hello World"}});                                   * </code>
+$("#OlapChart").ejOlapChart({  customObject: {"key":"Hello World"}});</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the customObject API, after initialization:
-        //Gets the customObject value  
-        $("#OlapChart").ejOlapChart("option", "customObject");
+//Gets the customObject value  
+$("#OlapChart").ejOlapChart("option", "customObject");
                       
-        //Sets the customObject value 
-        $("#OlapChart").ejOlapChart("option", "customObject",  {"key":"Hi Syncfusion!"} ); </code>
+//Sets the customObject value 
+$("#OlapChart").ejOlapChart("option", "customObject",  {"key":"Hi Syncfusion!"} ); </code>
 </pre>
 
 
@@ -196,11 +196,11 @@ $("#OlapChart").ejOlapChart({isResponsive: true});</code>
 <pre class="prettyprint">
 <code> 
 //Get or set the isResponsive, after initialization:
-        //Gets the isResponsive values state
-        $("#OlapChart").ejOlapChart("option", "isResponsive");
+//Gets the isResponsive values state
+$("#OlapChart").ejOlapChart("option", "isResponsive");
                       
-        //Sets the reponsive layout
-        $("#OlapChart").ejOlapChart("option", "isResponsive","true");                   *               </code>
+//Sets the reponsive layout
+$("#OlapChart").ejOlapChart("option", "isResponsive","true"); </code>
 </pre>
 
 
@@ -230,16 +230,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set localization API value during initialization  
-        $("#OlapChart").ejOlapChart({  locale: "fr-FR"});                                       * </code>
+$("#OlapChart").ejOlapChart({  locale: "fr-FR"}); </code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the localization API, after initialization:
-        //Gets the localization value  
-        $("#OlapChart").ejOlapChart("option", "locale");
+//Gets the localization value  
+$("#OlapChart").ejOlapChart("option", "locale");
                     
-        //Sets the localization value 
-        $("#OlapChart").ejOlapChart("option", "locale",  "fr-FR" ); </code>
+//Sets the localization value 
+$("#OlapChart").ejOlapChart("option", "locale",  "fr-FR" ); </code>
 </pre>
 
 
@@ -269,7 +269,7 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set serviceMethodSettings API value, to invoke the appropriate service method on UI operation.
-        $("#OlapChart").ejOlapChart({  serviceMethodSettings: {initialize: "MyMethod", drillDown: "DrillChart"});</code>
+$("#OlapChart").ejOlapChart({  serviceMethodSettings: {initialize: "MyMethod", drillDown: "DrillChart"});</code>
 </pre>
 <pre class="prettyprint">
 <code> 
@@ -386,16 +386,16 @@ Example
 <pre class="prettyprint">
 <code> 
 //To set url API value during initialization  
-        $("#OlapChart").ejOlapChart({  url: "/OlapChartService.svc"});                                  * </code>
+$("#OlapChart").ejOlapChart({  url: "/OlapChartService.svc"});</code>
 </pre>
 <pre class="prettyprint">
 <code> 
 //Get or set the url API, after initialization:
-        //Gets the url value  
-        $("#OlapChart").ejOlapChart("option", "url");
+//Gets the url value  
+$("#OlapChart").ejOlapChart("option", "url");
                        
-        //Sets the url value 
-        $("#OlapChart").ejOlapChart("option", "url",  "/OlapChartService.svc" ); </code>
+//Sets the url value 
+$("#OlapChart").ejOlapChart("option", "url",  "/OlapChartService.svc" ); </code>
 </pre>
 
 
@@ -771,7 +771,7 @@ Example
 //drillSuccess event for OLAP Chart
 $("#OlapChart").ejOlapChart({
    drillSuccess: function (args) {}
-});      </code>
+});</code>
 </pre>
 
 

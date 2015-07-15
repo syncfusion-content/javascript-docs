@@ -100,19 +100,61 @@ This section contains guidelines on naming files, sections, documents and other 
 * Do not provide a line gap between the bullet points.
 
 ### Notes style
-* Todo -> How to provide Important style
-* Todo -> How to provide warning style
-* Todo -> How to provide other topics which we would like to highlight. For ex, Notes or Tips.
+
+* To add the different type of predefined blockqoute use the below syntax. Since we will insert the title or relevant icon for this block of content, do not add the **"Title"**. 
+
+**Information** or **Notes**
+> **Syntax**: I> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+**Warning**
+> **Syntax**: W> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+**Errors**
+> **Syntax**: E> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+**Tips**
+> **Syntax**: T> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+### Notes multiple paragraph style
+* Use the BR tag between the content to enable multiple paragraph style.  
+
+
+**Tips**
+> **Syntax**: T> [Content]
+
+> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. **<BR>**Duis volutpat, elit eget iaculis venenatis
+
+
 
 ### See also
-* Todo -> How to add see also section? What is the syntax?
+
+* See also section can be added at the bottom of the page using the below syntax 
+
+> **Syntax**:
+> {% seealso %}
+>     [Content]
+> {% endseealso %}
+
+
+> **Example**: 
+> {% seealso %}
+>    [See the Cross Reference section](#Cross-reference)
+> {% endseealso %}
+
 
 ### JS Playground integration
 * Todo -> How to link the JS Playground link on top of the each code blocks?
 
 ### Keyboard shortcuts
 * Enclose the each keys with `<kbd>` tag to display the keys with different styling. For ex, <kbd>Ctrl</kbd>+<kbd>A</kbd> .
-## API Reference Guideline
 
 ### Product Release Version variable 
 * To add the version number in the documentation, use the below variables that replace the corresponding release version number while publishing. So that, always your content will contains the latest release version number. 
@@ -129,11 +171,10 @@ This section contains guidelines on naming files, sections, documents and other 
 | {{ site.mvc4releaseversion }}    | 13.1400.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 4.0         |  
 | {{ site.mvc5releaseversion }}    | 13.1500.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
 
+## API Reference Guideline
 
 ### Naming Standards
 * Use the JS API naming standards mentioned in the following page - [API Naming Standards](https://syncfusion.atlassian.net/wiki/display/JS/API+Naming+Standards)
-
-
 
 ## Style Guide
 

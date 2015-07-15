@@ -13,7 +13,7 @@ documentation: ug
 
 ##Legend Symbol
 
-In **OlapChart**, you can customize the legend symbol with different [shapes](/js/api/ejChart#legendshapespan-classtype-signature-type-enumenumspan) like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend `shape` is “Rectangle”.
+In **OlapChart**, you can customize the legend symbol with different [shapes](/js/api/ejChart#members:legend-shape) like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend `shape` is “Rectangle”.
 
 {% highlight js %}
 
@@ -36,7 +36,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Legend Position
 
-You can customize the [legend position](/js/api/ejChart#legendpositionspan-classtype-signature-type-enumenumspan) in top, bottom, left and right position of the Chart. Default value of legend `position` is “bottom”. 
+You can customize the [legend position](/js/api/ejChart#members:legend-position) in top, bottom, left and right position of the Chart. Default value of legend `position` is “bottom”. 
 
 {% highlight js %}
 
@@ -63,7 +63,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Legend Arrangement
 
-You can align the legend using [alignment](/js/api/ejChart#legendalignmentspan-classtype-signature-type-enumenumspan) property of legend. This allows you to align the legend in center, far and near position of Chart Area. The Default value of legend `alignment` is “Center”.
+You can align the legend using [alignment](/js/api/ejChart#members:legend-alignment) property of legend. This allows you to align the legend in center, far and near position of Chart Area. The Default value of legend `alignment` is “Center”.
 
 {% highlight js %}
 
@@ -90,7 +90,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Legend Style
 
-You can draw and customize the outline of Chart legend using [border](/js/api/ejChart#legendborderspan-classtype-signature-type-objectobjectspan) property of legend. Default value of legend border color is Transparent.
+You can draw and customize the outline of Chart legend using [border](/js/api/ejChart#members:legend-border) property of legend. Default value of legend border color is Transparent.
 
 {% highlight js %}
 
@@ -120,7 +120,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Legend Item
 
-**Legend item** is represented by an icon or image and a text. This gets rendered automatically corresponding to each series in the **OlapChart**. You can customize the [Legend item](/js/api/ejChart#legenditemstylespan-classtype-signature-type-objectobjectspan).
+**Legend item** is represented by an icon or image and a text. This gets rendered automatically corresponding to each series in the **OlapChart**. You can customize the [Legend item](/js/api/ejChart#members:legend-itemstyle).
 
 {% highlight js %}
 
@@ -153,7 +153,7 @@ $("#OlapChart1").ejOlapChart({
 
 ##Legend Text
 
-You can customize the **legend text** - font family, font style, font weight and size using [font](/js/api/ejChart#legendfontspan-classtype-signature-type-objectobjectspan) property of **legend**. The following code illustrates this.
+You can customize the **legend text** - font family, font style, font weight and size using [font](/js/api/ejChart#members:legend-font) property of **legend**. The following code illustrates this.
 
 {% highlight js %}
 
