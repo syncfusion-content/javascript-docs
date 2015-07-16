@@ -239,6 +239,40 @@ Bottom</td><td>
 
 {% include image.html url="/js/Diagram/Label_images/Label_img11.png" %}
 
+### Text Alignment
+
+Text Alignment property provides option to choose how to display text inside the label. Following code example illustrates how to set text align to a label.
+
+{% highlight js %}
+
+//align label text
+var label = { text: "Label, textAlign: ej.datavisualization.Diagram.TextAlign.Center };
+
+{% endhighlight %}
+
+<table>
+<tr>
+<td>
+<b>Text-Align</b></td><td>
+<b> Image</b></td></tr> <tr> <td>
+Center</td><td>
+<img src="/js/Diagram/Label_images/Label_img17.png" alt="" width="109pt" height="60pt"/></td></tr>
+<tr>
+<td>
+Right</td><td>
+<img src="/js/Diagram/Label_images/Label_img18.png" alt="" width="109pt" height="59pt"/></td></tr>
+<tr>
+<td>
+Left</td><td>
+<img src="/js/Diagram/Label_images/Label_img19.png" alt="" width="110pt" height="60pt"/></td></tr>
+<tr>
+<td>
+Justify</td><td>
+<img src="/js/Diagram/Label_images/Label_img20.png" alt="" width="138pt" height="60pt"/></td></tr>
+</table>
+
+_Text Alignment_
+
 ## Text Wrapping
 
 `wrapping` property of `label` allows to specify whether or not to wrap the text, when it reaches the edge of the containing node. 
