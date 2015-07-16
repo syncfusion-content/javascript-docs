@@ -241,7 +241,7 @@ Bottom</td><td>
 
 ### Text Alignment
 
-Text Alignment property provides option to choose how the text is to be displayed inside the label. Following code snippet illustrates how to set text align to a label.
+Text Alignment property provides option to choose how to display text inside the label. Following code example illustrates how to set text align to a label.
 
 {% highlight js %}
 
