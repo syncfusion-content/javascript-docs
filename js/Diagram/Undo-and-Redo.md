@@ -26,9 +26,9 @@ diagram.redo();
 
 ## History Manager
 
-Diagram provides inbuilt support to revert and restore the actions performed through interactions. If any other custom actions (changes through APIs) have to be tracked, it can be achieved using HistoryManager. History manager allows to push custom history entries and to handle them when undo/redo is executed.
+Diagram provides inbuilt support to revert and restore the actions performed through interactions. When any other custom actions (changes through APIs) have to be tracked, it can be achieved by using HistoryManager. History manager allows to push custom history entries and to handle them when undo/redo is executed.
 
-Following example illustrates how to revert the font color change of a text node.
+Following code example illustrates how to revert the font color change of a text node.
 
 1\. Before changing the font color, push the current state to history manager.
 
@@ -51,10 +51,10 @@ diagram.updateLabel(node.name, node.textBlock, { fontColor: "red" });
 
 $("#diagram").ejDiagram({
     historyManager: {
-        //will be called to revert a custom action
+        //Called to revert a custom action
         undo: customUndoRedo,
         
-        //will be called to restore a reverted custom action
+        //Called to restore a reverted custom action
         redo: customUndoRedo
     }
 });
