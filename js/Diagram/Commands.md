@@ -451,11 +451,11 @@ Specifies the region based on page settings</td></tr>
 
 ## Undo/Redo Command
 
-Refer the Link for [Undo/Redo Commands](/js/Diagram/Undo-and-Redo).
+Refer to the Link for [Undo/Redo Commands](/js/Diagram/Undo-and-Redo).
 
 ## Command Manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. By default, diagram maps some commands with a set of key gestures and they are illustrated in the following table.
+Diagram provides support to map/bind command execution with desired combination of key gestures. By default, the diagram maps some commands with a set of key gestures and they are illustrated in the following table.
 
 <table>
 <tr>
@@ -467,7 +467,7 @@ Diagram provides support to map/bind command execution with desired combination 
 <td>
 Ctrl + A</td><td>
 selectAll</td><td>
-Select all nodes/connectors in diagram</td></tr>
+Select all nodes/connectors in the diagram</td></tr>
 <tr>
 <td>
 Ctrl + C</td><td>
@@ -487,12 +487,12 @@ Cut the selected elements</td></tr>
 <td>
 Ctrl + Z</td><td>
 undo</td><td>
-Undo(Reverse the last editing action performed on diagram)</td></tr>
+Undo(Reverse the last editing action performed on the diagram)</td></tr>
 <tr>
 <td>
 Ctrl + Y</td><td>
 redo</td><td>
-Redo(Restores the last editing action if no other actions have occurred since the last undo on diagram)</td></tr>
+Redo(Restores the last editing action if no other actions have occurred since the last undo on the diagram)</td></tr>
 <tr>
 <td>
 Delete</td><td>
@@ -547,11 +547,11 @@ Zoom(Zoom in/Zoom out the diagram)</td></tr>
 
 _In built commands_
 
-Command Manager provides support to map custom commands with the set of desired key combinations. The defined custom commands will be executed when the specified key gesture is recognized.
+Command Manager provides support to map custom commands with the set of desired key combinations. The defined custom commands are executed when the specified key gesture is recognized.
 
 ### Custom command
 
-A custom command has to be defined with a set of predefined fields as follows.
+A custom command is defined with a set of predefined fields as follows.
 
 <table>
 <tr>
@@ -571,24 +571,24 @@ Combination of keys and key modifiers to recognize when to execute the command</
 canExecute</td><td>
 Object</td><td>
 A method that returns true.</td><td>
-The method to define whether the command is executable at the current moment or not.It will be called when the specified key gesture is recognized.</td></tr>
+The method to define whether the command is executable at the current moment or not.It is called when the specified key gesture is recognized.</td></tr>
 <tr>
 <td>
 execute</td><td>
 Object</td><td>
 Null</td><td>
-The execute method acts as the command handler and will be called when the canExecute method returns true.</td></tr>
+The execute method acts as the command handler and it is called when the canExecute method returns true.</td></tr>
 <tr>
 <td>
 parameter</td><td>
 Object</td><td>
 Null</td><td>
-parameter is an object. If specified, the parameter will be passed to the handler on command execution.</td></tr>
+parameter is an object. If specified, the parameter is passed to the handler on command execution.</td></tr>
 </table>
 
 _Custom Command_
 
-The following code snippet illustrates how to define a custom command.
+The following code example illustrates how to define a custom command.
 
 {% highlight js %}
 
@@ -619,7 +619,7 @@ $("#DiagramContent").ejDiagram({
 
 ### Modify the existing command
 
-By default, diagram maps certain commands with relevant key combination. If those commands are not desired for the specified keys, they can be disabled. If the functionality of a specific command has to be changed, the command can be completely rewritten. Following code snippet illustrates how to disable a command.
+By default, the diagram maps certain commands with the relevant key combination. If those commands are not desired for the specified keys, they can be disabled. If the functionality of a specific command has to be changed, the command can be completely rewritten. Following code example illustrates how to disable a command.
 
 {% highlight js %}
 
