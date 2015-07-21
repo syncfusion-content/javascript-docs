@@ -161,7 +161,7 @@ The following output is displayed as a result of the above code example.
 
 ## Controlling Grid actions
 
-In **ejGrid**, you can control **Grid** actions through [`allowSorting`](js/api/ejgrid#members-columns-allowsorting "allowSorting"), [`allowGrouping`](/js/api/ejgrid#members-columns-allowgrouping "allowGrouping"), [`allowFiltering`](/js/api/ejgrid#members-columns-allowfiltering "allowFiltering"). The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
+In **ejGrid**, you can control **Grid** actions through [`allowSorting`](/js/api/ejgrid#members-columns-allowsorting "allowSorting"), [`allowGrouping`](/js/api/ejgrid#members-columns-allowgrouping "allowGrouping"), [`allowFiltering`](/js/api/ejgrid#members-columns-allowfiltering "allowFiltering"). The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
 
 {% highlight html %}
 
