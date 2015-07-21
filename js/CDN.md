@@ -9,7 +9,7 @@ documentation: ug
 
 # CDN
 
-The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the scripts and style sheets of Syncfusion Esential JS components. 
+The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the scripts and style sheets of Syncfusion Essential JS components. 
 
 
 ## CDN scripts links
