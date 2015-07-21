@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-The localization concept in `ejGrid` supports switching the control language with various cultures. The `locale` property is used to define the culture code that has been declared by **jQuery globalize script** file. The default value for `locale` in `ejGrid` is `en-US`.
+The localization concept in `ejGrid` supports switching the control language with various cultures. The [`locale`](/js/api/ejgrid#members:locale "locale") property is used to define the culture code that has been declared by **jQuery globalize script** file. The default value for [`locale`](/js/api/ejgrid#members:locale "locale") in `ejGrid` is `en-US`.
 
 The following two script files are necessary to perform Localization in `ejGrid`.
 
@@ -52,7 +52,7 @@ The following code example demonstrates how to switch the culture of `ejGrid` as
 
 
 
-The `ejGrid` and `ejPager` has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side for all the above platforms.
+The **ejGrid** and **ejPager** has its own locale labels for applying the information about specific fields in its control. You can set them in the sample side for each culture based translation. The following code example is applied in the sample side for all the above platforms.
 
 {% highlight js %}
 

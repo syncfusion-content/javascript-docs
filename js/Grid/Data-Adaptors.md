@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Adaptors
 
-**DataManager** consists of three concepts, commonly called as **adaptors** that are used to manipulate data. There are four types of adaptors in **DataManager**. They are
+[**DataManager**](/js/datamanager/data-adaptors "DataManager") consists of three concepts, commonly called as **adaptors** that are used to manipulate data. There are four types of adaptors in [**DataManager**](/js/datamanager/data-adaptors "DataManager"). They are
 
 * **JSON Adaptor**
 * **OData Adaptor**
@@ -18,7 +18,7 @@ documentation: ug
 
 ## JSON Adaptor
 
-**JSON adaptor** is a powerful way to define **JSON data** to **Grid**.  Using this technique, you can use **DataManager** features to **JSON** before binding it to **Grid**.
+[**JSON adaptor**](/js/datamanager/data-adaptors#json-adaptor "JSON adaptor") is a powerful way to define **JSON data** to **Grid**.  Using this technique, you can use [**DataManager**](/js/datamanager/data-adaptors "DataManager")features to **JSON** before binding it to **Grid**.
 
 {% highlight html %}
 
@@ -52,7 +52,7 @@ The following screenshot is the result of the above code example.
 
 ## OData Adaptor
 
-Nowadays **oData** is a very useful technique in consuming data. You can use **oData** protocol through **DataManager**’s **ODataAdaptor**. The following code example demonstrates how you can use **oDataAdaptor** with **Grid**.
+Nowadays **oData** is a very useful technique in consuming data. You can use **oData** protocol through [**DataManager's**](/js/datamanager/data-adaptors "DataManager")  [**ODataAdaptor**](/js/datamanager/data-adaptors#odata-adaptor "ODataAdaptor"). The following code example demonstrates how you can use [**ODataAdaptor**](/js/datamanager/data-adaptors#odata-adaptor "ODataAdaptor") with **Grid**.
 
 {% highlight html %}
 
@@ -80,7 +80,7 @@ The following screenshot is the result of the above code example.
 
 ## Custom Adaptor
 
-**CustomAdaptor** is a technique used to customize adaptors in **ej.DataManager**. It helps you to make your own adaptor. Normally **ej.Adaptor** is used as the base class for all adaptors, so you must first inherit **ej.Adaptor** to develop a customized one.Then you can override functionality in **customAdaptor** with base class. The following code example shows you how to create **customAdaptor** and use it with **Grid**.
+[**CustomAdaptor**](/js/datamanager/data-adaptors#custom-adaptor "CustomAdaptor") is a technique used to customize adaptors in [**ej.DataManager**](/js/datamanager/data-adaptors "ej.DataManager"). It helps you to make your own adaptor. Normally **ej.Adaptor** is used as the base class for all adaptors, so you must first inherit **ej.Adaptor** to develop a customized one.Then you can override functionality in [**CustomAdaptor**](/js/datamanager/data-adaptors#custom-adaptor "CustomAdaptor") with base class. The following code example shows you how to create [**CustomAdaptor**](/js/datamanager/data-adaptors#custom-adaptor "CustomAdaptor") and use it with **Grid**.
 
 {% highlight html %}
 

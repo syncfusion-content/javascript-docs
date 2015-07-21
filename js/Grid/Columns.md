@@ -13,7 +13,7 @@ Columns are a key feature in **Grid** to define schema in a control based on a d
 
 ## Formatting
 
-**Formatting** is used to convert data values to human readable formats by using specific culture settings. In **ejGrid**, you have an option to format a particular column through the `format` property. For more details about **globalize.js**, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in **Grid**.
+**Formatting** is used to convert data values to human readable formats by using specific culture settings. In **ejGrid**, you have an option to format a particular column through the [`format`](/js/api/ejgrid#members:columns-format "format") property. For more details about **globalize.js**, refer to the link ([https://github.com/jquery/globalize](https://github.com/jquery/globalize)). The following code example shows you how to use formatting in **Grid**.
 
 {% highlight html %}
 
@@ -49,7 +49,7 @@ The following is the result of column formatting.
 
 ## Template
 
-A **template** is used to render a specific template to a particular column using `template` and `templateID` property. These columns are not bound to **Grid**.
+A **template** is used to render a specific template to a particular column using [`template`](/js/api/ejgrid#members-columns-template "template") and [`templateID`](/js/api/ejgrid#members-columns-templateid "templateID") property. These columns are not bound to **Grid**.
 
 {% highlight html %}
 
@@ -86,7 +86,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Attribute
 
-**Custom attribute** is a powerful feature of **Columns**. This is used to modify the styles and appearance of a particular column. 
+**Custom attribute** is a powerful feature of **Columns** using [`customAttributes`](/js/api/ejgrid#members-columns-customattributes "customAttributes") property. This is used to modify the styles and appearance of a particular column. 
 
 {% highlight html %}
 
@@ -125,7 +125,7 @@ The following output is displayed as a result of the above code example.
 
 ## Read only
 
-`allowEditing` enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set `allowEditing` as **false** for that column. The following code example shows **CustomerID** column as **read-only**.
+[`allowEditing`](/js/api/ejgrid#members-columns-allowediting "allowEditing") enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set [`allowEditing`](/js/api/ejgrid#members-columns-allowediting "allowEditing")  as **false** for that column. The following code example shows **CustomerID** column as **read-only**.
 
 {% highlight html %}
 
@@ -161,7 +161,7 @@ The following output is displayed as a result of the above code example.
 
 ## Controlling Grid actions
 
-In **ejGrid**, you can control **Grid** actions through `allowSorting`, `allowGrouping, `allowFiltering`. The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
+In **ejGrid**, you can control **Grid** actions through [`allowSorting`](/js/api/ejgrid#members-columns-allowsorting "allowSorting"), [`allowGrouping`](/js/api/ejgrid#members-columns-allowgrouping "allowGrouping"), [`allowFiltering`](/js/api/ejgrid#members-columns-allowfiltering "allowFiltering"). The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
 
 {% highlight html %}
 
@@ -227,7 +227,7 @@ The following output is displayed as a result of the above code example.
 
 ## Foreign key columns
 
-Foreign key is a field in relational table. It matches the specific key columns of another table. 
+Foreign key is a field in relational table using [`foreignKeyField`](/js/api/ejgrid#members-columns-foreignkeyfield "foreignKeyField") and [`foreignKeyValue`](/js/api/ejgrid#members-columns-foreignkeyvalue "foreignKeyValue") property. It matches the specific key columns of another table . 
 
 {% highlight html %}
 
@@ -262,7 +262,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Merging
 
-Cell merging feature enables to merge cells based on your requirement. The following code example illustrates Cell Merging. `allowCellMerging` property allowed to enable cell merging feature.
+Cell merging feature enables to merge cells based on your requirement. The following code example illustrates Cell Merging. [`allowCellMerging`](/js/api/ejgrid#members:allowcellmerging  "allowCellMerging") property allowed to enable cell merging feature.
 
 {% highlight html %}
 
@@ -305,7 +305,7 @@ _Cell Merging_
 
 ## AutoWrap Column Cells
 
-AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. `allowTextWrap` property allowed to enable auto wrap feature.
+AutoWrap feature allows you to wrap cell content to next line when the content exceeds the boundary of the Column cells. Use the following code example for Auto wrap in column cells. [`allowTextWrap`](/js/api/ejgrid#members-allowtextwrap "allowTextWrap") property allowed to enable auto wrap feature.
 
 {% highlight html %}
 
@@ -336,7 +336,7 @@ Execute the above code to render the following output.
 
 ## Column Chooser
 
-**Column Chooser** is used to view or hide particular column. To enable column chooser set `showColumnChooser` property as true. Use the following code example to enable column Chooser.
+**Column Chooser** is used to view or hide particular column. To enable column chooser set [`showColumnChooser`](/js/api/ejgrid#members-showcolumnchooser "showColumnChooser") property as true. Use the following code example to enable column Chooser.
 
 {% highlight html %}
 
@@ -361,9 +361,9 @@ Execute the above code to render the following output.
 
 ## DisableHtmlEncode
 
-`disableHtmlEncode` property helps you show the encoded **HTML** view of **Grid** content and header elements. 
+[`disableHtmlEncode`](/js/api/ejgrid#members-columns-disablehtmlencode "disableHtmlEncode") property helps you show the encoded **HTML** view of **Grid** content and header elements. 
 
-The following code example shows you how to set `disableHtmlEncode`:
+The following code example shows you how to set [`disableHtmlEncode`](/js/api/ejgrid#members-columns-disablehtmlencode "disableHtmlEncode"):
 
 {% highlight html %}
 
@@ -396,7 +396,7 @@ The following output is displayed as a result of the above code example.
 
 ## Stacked Header
 
-The **Stacked Header** feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel **Stacked Headers** as well. Enable the **Stacked Header** by setting the `showStackedHeader` property to **true** and set the stacked header row by using the `stakedHeaderRows` property. The **Stacked Header** feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
+The **Stacked Header** feature allows additional header rows that span across the grid columns. Columns can be grouped under such headers. You can effectively group extensive data with the help of multilevel **Stacked Headers** as well. Enable the **Stacked Header** by setting the [`showStackedHeader`](/js/api/ejgrid#members-showstackedheader "showStackedHeader") property to **true** and set the stacked header row by using the [`stakedHeaderRows`](/js/api/ejgrid#members-stackedheaderrows "stakedHeaderRows") property. The **Stacked Header** feature also supports all other grid features including Grouping, Sorting, Filtering, Reordering, etc. 
 
 {% highlight html %}
 

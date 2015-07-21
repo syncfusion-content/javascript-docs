@@ -9,7 +9,7 @@ documentation: ug
 
 # Print Grid
 
-Printing is easy with **Grid** control by using **Print Grid** feature. Toolbar has the **Print** icon, it allows to print the **Grid** records. When you click the **Print** icon, it internally calls the public **print()** method of **Grid** object to print the **Grid**. You can also use **print()** method manually to print.
+Printing is easy with **Grid** control by using **Print Grid** feature. Toolbar has the **Print** icon, it allows to print the **Grid** records. When you click the **Print** icon, it internally calls the public [**print()**](/js/api/ejgrid#methods:print "print()") method of **Grid** object to print the **Grid**. You can also use [**print()**](/js/api/ejgrid#methods:print "print()") method manually to print.
 
 {% highlight html %}
 

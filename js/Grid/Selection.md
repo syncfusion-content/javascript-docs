@@ -28,7 +28,7 @@ By default, the selection type is “**Single**”.
 
 **Row**
 
-By default, the selection mode of the grid is “**Row**”. This enables you to select the row in the grid. Refer to the following code example. Using `selectionMode` property in `selectionSettings` property to enable row selection.
+By default, the selection mode of the grid is “**Row**”. This enables you to select the row in the grid. Refer to the following code example. Using [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property in [`selectionSettings`]( /js/api/ejgrid#members:selectionsettings "selectionSettings") property to enable row selection.
 
 {% highlight html %}
 
@@ -65,7 +65,7 @@ The following screenshot displays the result of the above code.
 
 **Cell**
 
-Cell selection can be enabled using the `selectionMode` property. This enables you to select a cell in the grid. Refer to the following code example.
+Cell selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. This enables you to select a cell in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -102,7 +102,7 @@ The following screenshot displays the result of the above code.
 
 **Column**
 
-Column selection can be enabled using the `selectionMode` property. This enables you to select a particular column in the grid. Refer to the following code example.
+Column selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. This enables you to select a particular column in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -139,7 +139,7 @@ The following screenshot displays the result of the above code.
 
 ### Multiple Selection
 
-Multiple selection can be enabled using `selectionType` property. This allows you to select more than one row, cell and column at a time.
+Multiple selection can be enabled using [`selectionType`](/js/api/ejgrid#members:selectiontype "selectionType") property. This allows you to select more than one row, cell and column at a time.
 
 #### Selection Modes
 
@@ -185,7 +185,7 @@ The following screenshot displays the result of the above code.
 
 **Cell**
 
-Cell selection can be enabled using the `selectionMode` property. This enables you to select a cell in the grid. Refer to the following code example.
+Cell selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. This enables you to select a cell in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -225,7 +225,7 @@ The following screenshot displays the result of the above code.
 
 **Column**
 
-Column selection can be enabled using the `selectionMode` property. This enables you to select a particular column in the grid. Refer to the following code example.
+Column selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. This enables you to select a particular column in the grid. Refer to the following code example.
 
 {% highlight html %}
 
@@ -265,7 +265,7 @@ The following screenshot displays the result of the above code.
 
 ## Enable All Modes of selection
 
-You can also enable all the three modes of selection using `selectionMode` property. Refer to the following code example.
+You can also enable all the three modes of selection using [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. Refer to the following code example.
 
 {% highlight html %}
 
@@ -302,7 +302,7 @@ The following screenshot displays the result of the above code.
 
 ## Enable toggle
 
-You can toggle the selection using the `enableToggle` property. This provides support to toggle selection based on the Boolean value specified to the property. By default the `enableToggle` property is set to disabled. Refer to the following code example.
+You can toggle the selection using the [`enableToggle`](/js/api/ejgrid#members:selectionsettings-enabletoggle "enableToggle") property. This provides support to toggle selection based on the Boolean value specified to the property. By default the [`enableToggle`](/js/api/ejgrid#members:selectionsettings-enabletoggle "enableToggle") property is set to disabled. Refer to the following code example.
 
 {% highlight html %}
 

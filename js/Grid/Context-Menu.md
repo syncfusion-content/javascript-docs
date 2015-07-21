@@ -11,7 +11,7 @@ documentation: ug
 
 **Context Menu** is one of the user interaction controls related with **Grid**. It is handy to use the **Context Menu** to trigger more actions. The default Context Menu items created for **Grid** are:
 
-1. **Header**
+ **Header**
 
 * Sort In Ascending Order
 
@@ -21,7 +21,7 @@ documentation: ug
 
 * UnGrouping
 
-2. **Content**
+ **Content**
 
 * Add Record
 
@@ -29,7 +29,7 @@ documentation: ug
 
 * Delete Record                  
 
-3. **Footer** 
+ **Footer** 
 
 * Next Page     
 
@@ -37,11 +37,11 @@ documentation: ug
 
 * Previous Page
 
-11. First Page
+* First Page
 
-## Context Menu action
+## Enable Context Menu 
 
-When you want to display only the selected items in the Context Menu, use `contextMenuItems` property in `contextMenuSettings`.  You can bind the actions of the `contextMenuItems` in `contextClick` event in the Grid. The following code example explains you on how to create Context Menu with selected items.
+To enable the default Context Menu feature using [`enableContextMenu`](/js/api/ejgrid#members:contextmenusettings-enablecontextmenu "enableContextMenu") property in [`contextMenuSettings`](/js/api/ejgrid#members:contextmenusettings "contextMenuSettings") at **Grid**. The following code example explains you on how to enable Context Menu in Grid .
 
 {% highlight html %}
 
@@ -95,7 +95,7 @@ _Context Menu in Footer_
 
 ##Context Menu Items
 
-The Context Menu feature displays all the options by default . When you want to display only the selected items in the Context Menu, use `contextMenuItems` property in `contextMenuSettings`. The following code example explains you on how to create Context Menu with selected items.
+The Context Menu feature displays all the options by default . When you want to display only the selected items in the Context Menu, use [`contextMenuItems`](/js/api/ejgrid#members:contextmenusettings-contextmenuitems "contextMenuItems") property in [`contextMenuSettings`](/js/api/ejgrid#members:contextmenusettings "contextMenuSettings"). The following code example explains you on how to create Context Menu with selected items.
     
 {% highlight html %}
 
@@ -129,7 +129,7 @@ The Context Menu feature displays all the options by default . When you want to 
 
 ##Custom Context Menu
 
-The Grid control has support to customize the context menu items by using the `customContextMenuItems` property of the `contextMenuSettings`.To define the `customContextMenuItems` action, use `contextClick` event in the Grid. The following code example explains you on how to create Custom Context Menu.
+The Grid control has support to customize the context menu items by using the [`customContextMenuItems`](/js/api/ejgrid#members:contextmenusettings-customcontextmenuitems "customContextMenuItems") property of the [`contextMenuSettings`](/js/api/ejgrid#members:contextmenusettings "contextMenuSettings").To define the [`customContextMenuItems`](/js/api/ejgrid#members:contextmenusettings-customcontextmenuitems "customContextMenuItems") action, use [`contextClick`](/js/api/ejgrid#events:contextclick "contextClick") event in the Grid. The following code example explains you on how to create Custom Context Menu.
 
 {% highlight html %}
 

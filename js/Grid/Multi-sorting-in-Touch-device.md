@@ -60,7 +60,7 @@ The following output is displayed as a result of the above code example.
 
 ## Merge Sort
 
-In the normal way of sorting, first preference is given to capital letters and then small letters. When you do not want discrimination between small and capital letters, you can set “**enableLocalizedSort**” API as true to sort both small and capital letters.
+In the normal way of sorting, first preference is given to capital letters and then small letters. When you do not want discrimination between small and capital letters, you can set `enableLocalizedSort` API as true to sort both small and capital letters.
 
 {% highlight html %}
 

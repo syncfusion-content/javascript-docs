@@ -16,7 +16,7 @@ Grid supports different kinds of databinding methods such as
 
 ## Local data
 
-Grid can bind to local data source. To bind local data, directly assign the JSON array to grid's `dataSource` property. 
+Grid can bind to local data source. To bind local data, directly assign the JSON array to grid's [`dataSource`](/js/api/ejgrid#members:datasource "dataSource") property. 
 
 {% highlight html %}
 
@@ -57,7 +57,7 @@ Result of the above code example.
 
 ### oData Binding	
 
-**oData** is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using `ej.DataManager`. The following code is a simple example of remote data binding by using oData service.
+[**oData**](/js/datamanager/data-binding#odata-v4 "oData") is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using [`ej.DataManager`](/js/datamanager/data-binding "ej.DataManager"). The following code is a simple example of remote data binding by using oData service.
 
 {% highlight html %}
 
@@ -87,7 +87,7 @@ The following output is the result of the above code example.
 
 ### Load at once
 
-Through this **load at once** technique, you can load all data from the server to browser and process records in client-side. This can be enabled by setting `offline` property as true in `ej.DataManager`. The following code example shows **load at once** with Grid. 
+Through this [**load at once**](/js/datamanager/data-binding#offline-mode "load at once") technique, you can load all data from the server to browser and process records in client-side. This can be enabled by setting [`offline`](/js/datamanager/data-binding#offline-mode "offline") property as true in [`ej.DataManager`](/js/datamanager/data-binding "ej.DataManager"). The following code example shows **load at once** with Grid. 
 
 {% highlight html %}
 
@@ -120,7 +120,7 @@ The following output is the result of the above code example.
 
 ### Load on demand
 
-**Load on demand** is a technique used to reduce bandwidth size of consuming the data. This feature is enabled by default, when remote data is bound to Grid. In the following example, oData service is used. At load time, it retrieves required data from service, only for the visible page. When you move to another page, it loads for current page. The following code example shows you how load on demand works with remote data.
+[**Load on demand**](/js/datamanager/data-binding#load-on-demand "Load on demand") is a technique used to reduce bandwidth size of consuming the data. This feature is enabled by default, when remote data is bound to Grid. In the following example, oData service is used. At load time, it retrieves required data from service, only for the visible page. When you move to another page, it loads for current page. The following code example shows you how load on demand works with remote data.
 
 {% highlight html %}
 
@@ -153,7 +153,7 @@ If you have developer tools, you can capture network transfer to check **Grid** 
 
 ### Cross domain
 
-Cross domain data requests can be possible using `ej.DataManager`. This can be enabled using the property `crossDomain` in `ej.DataManager` options. This property is for configuring the client-side to make the cross domain request however you need configure the server as well, to retrieve data from server. For server configuration, you can refer this link ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)). The following code example shows you how to use or retrieve cross domain data from Grid.
+Cross domain data requests can be possible using [`ej.DataManager`](/js/datamanager/data-binding "ej.DataManager"). This can be enabled using the property [`crossDomain`](/js/datamanager/data-binding#cross-domain--jsonp "crossDomain") in [`ej.DataManager`](/js/datamanager/data-binding "ej.DataManager") options. This property is for configuring the client-side to make the cross domain request however you need configure the server as well, to retrieve data from server. For server configuration, you can refer this link ([https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)). The following code example shows you how to use or retrieve cross domain data from Grid.
 
 {% highlight html %}
 
@@ -186,7 +186,7 @@ The following screenshot is the result of the above code example.
 
 ### HTTP additional parameters
 
-In this section, you can learn how to customize or add an extra parameter for `HTTP` request. You can add additional parameter to web service using the grid's `query` property and DataManager Query's `addParams` functions. Query value will be passed to `ej.DataManager` internally in Grid.
+In this section, you can learn how to customize or add an extra parameter for `HTTP` request. You can add additional parameter to web service using the grid's `query` property and DataManager Query's `addParams` functions. Query value will be passed to [`ej.DataManager`](/js/datamanager/data-binding "ej.DataManager") internally in Grid.
 
 {% highlight html %}
 
@@ -243,7 +243,7 @@ ejGrid supports various data types in JavaScript such as string, number, datetim
 
 ## HTML table
 
-Grid can be created from HTML table using DataManager. Please refer the following code snippet to achieve it.
+Grid can be created from [**HTML table**](/js/datamanager/data-binding#html-table "HTML table") using [`ej.DataManager`](/js/datamanager/data-binding "ej.DataManager"). Please refer the following code snippet to achieve it.
 
 {% highlight html %}
 
