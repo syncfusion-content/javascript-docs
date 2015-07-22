@@ -293,8 +293,8 @@ $("#Grid").ejGrid({
 
 
 
-### allowMultipleExporting<span class="type-signature type boolean">boolean</span>
-{:#members:allowmultipleexporting}
+### allowFiltering<span class="type-signature type boolean">boolean</span>
+{:#members:allowFiltering}
 
 
 
