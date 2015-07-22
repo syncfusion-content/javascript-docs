@@ -37,7 +37,7 @@ _For example, If you have installed the Essential Studio package within `C:\Prog
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
 
     <!-- style sheet for default theme(flat azure) -->
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
     <!--script for RequireJS-->
     <script src="http://cdn.syncfusion.com/js/assets/external/require.min.js"></script>
@@ -61,7 +61,7 @@ _For example, If you have installed the Essential Studio package within `C:\Prog
 
                   easing: 'http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min',
 
-                  scripts: 'http://cdn.syncfusion.com/13.1.0.21/js/assets/scripts'
+                  scripts: 'http://cdn.syncfusion.com/{{ site.releaseversion }}/js/assets/scripts'
             }
         });
 

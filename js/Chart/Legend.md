@@ -236,6 +236,27 @@ You can customize the shape of the legend icon. Normally the available shapes ar
 {% endhighlight %}
 
 
-
 {% include image.html url="/js/Chart/Legend_images/Legend_img9.png" %}
 
+## Legend Selection
+
+Series visibility can be toggled through legend click, now we can control the legend click through **toggleSeriesVisibility** property in legend and this will be used to select or highlight the series through the legend.
+
+
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                visible: true, 
+                toggleSeriesVisibility: false  
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Legend_images/Legend_img10.png" %}

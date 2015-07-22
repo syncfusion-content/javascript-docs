@@ -28,10 +28,10 @@ Create a **HTML** file and add the following references to the required librarie
 
 <html>
 <head>
-<link href="[http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
+<link href="[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
 <script src="[http://code.jquery.com/jquery-2.0.0.min.js](http://code.jquery.com/jquery-2.0.0.min.js)"></script>
 <script src="[http://borismoore.github.io/jsrender/jsrender.min.js](http://borismoore.github.io/jsrender/jsrender.min.js)"></script>
-<script src="[http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js)"></script>
+<script src="[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js)"></script>
 
 </head>
 <body>

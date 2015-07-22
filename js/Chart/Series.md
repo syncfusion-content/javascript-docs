@@ -291,5 +291,337 @@ Data labels refer to the y values of data points, which appear on each point. Yo
 
 {% endhighlight %}
 
+## Highlighting Series
+
+You can hightlight the series or point in chart on mouse move by enabling the highlightSettings using **enable** property. Default value of highlightSettings enable property is set as **false**.
+
+{% highlight js %}
+
+
+     $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            highlightSettings:
+             {
+                enable: true, 
+             },         
+         }]      
+        //......      
+     });
+
+{% endhighlight %} 
+
+### Customization
+
+We can also customize the **color**, **opacity**, of the series or point on hightlight.
+
+{% highlight js %}
+
+
+      $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            highlightSettings:
+             {
+                enable: true, 
+                color : "pink",  
+                opacity: 0.8
+            },
+         }]
+         //......            
+     });
+
+{% endhighlight %} 
+
+{% include image.html url="/js/Chart/Series_images/Series_img8.png" %}
+
+### Customization of Border
+
+You can customize the outline of segment using border property of highlightSettings. Default value of the border **color** is transparent and **width** is 2. The border property can be used to set the size and color of the line/spline series on highlight.
+
+{% highlight js %}
+
+
+     $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            highlightSettings:
+             {
+                enable: true,
+                color:"purple",
+                border:{
+                        color : "olive", 
+                        width: 3 
+                       }
+             }
+         }]
+         //......            
+     });
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Series_images/Series_img9.png" %}
+
+### Highlight Mode
+
+you can hightlight either a point in series or entire series using **mode** property in **highlightSettings**. The default mode value is **series**.
+
+{% highlight js %}
+
+
+    $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            highlightSettings:
+             {
+                enable : true,
+                color : "purple",
+                mode : "point"  
+             }
+         }]
+         //......            
+     });
+
+{% endhighlight %}
+
+Following screen shot shows point highilight.
+
+{% include image.html url="/js/Chart/Series_images/Series_img10.png" %}
+
+Following screen shot shows series highilight.
+
+{% include image.html url="/js/Chart/Series_images/Series_img11.png" %}
+
+### HighLight Patterns and CustomPattern
+
+We can also highlight the series using pattern instead of color. The default value for **pattern** is none. Chart provides support for following patterns and also we can customize the pattern by using **customPattern** property
+
+ 1.	chessboard
+ 2.	crosshatch
+ 3.	dots
+ 4.	packman
+ 5.	grid
+ 6.	turquoise
+ 7.	star
+ 8.	triangle
+ 9.	circle
+ 10. tile
+ 11. horizontalDash
+ 12. verticalDash
+ 13. rectangle
+ 14. box
+ 
+ {% highlight js %}
+
+
+    $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            highlightSettings:
+             {
+                enable : true,
+                pattern :"checkerBoard" 
+             }
+         }]
+         //......            
+     });
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+    $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            highlightSettings:
+             {
+                enable : true,
+                pattern : "custom",  
+                customPattern : "pattern"  
+             }
+         }]
+         //......            
+     });
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Series_images/Series_img12.png" %}
+
+## Series Selection
+
+You can select the series or points in chart on mouseclick by setting **enable** property to true in **selectionSettings** .
+
+{% highlight js %}
+
+
+     $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            selectionSettings:
+             {
+                enable: true, 
+             },         
+         }]      
+        //......      
+     });
+
+{% endhighlight %}
+
+### Customization
+
+We can also customize the **color**, **opacity**, of the series or point on selection.
+
+{% highlight js %}
+
+
+      $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            selectionSettings:
+             {
+                enable: true, 
+                color : "pink",  
+                opacity: 0.8
+            },
+         }]
+         //......            
+     });
+
+{% endhighlight %} 
+
+{% include image.html url="/js/Chart/Series_images/Series_img8.png" %}
+
+### Customization of Border
+
+You can customize the outline of segment using **border** property of selectionSettings. Default value of the border **color** is transparent and **width** is 2. The border property can be used to set the size and color of the line/spline series on selection.
+
+{% highlight js %}
+
+
+     $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            selectionSettings:
+             {
+                enable: true,
+                color:"purple",
+                border:{
+                        color : "olive", 
+                        width: 3 
+                       }
+             }
+         }]
+         //......            
+     });
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Series_images/Series_img9.png" %}
+
+### Highlight Mode
+
+you can select either a point in series or entire series using **mode** property in **selectionSettings**. The default mode value is **series**.
+
+{% highlight js %}
+
+
+    $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            selectionSettings:
+             {
+                enable : true,
+                color : "purple",
+                mode : "point"  
+             }
+         }]
+         //......            
+     });
+
+{% endhighlight %}
+
+Following screen shot shows point highilight.
+
+{% include image.html url="/js/Chart/Series_images/Series_img10.png" %}
+
+Following screen shot shows series highilight.
+
+{% include image.html url="/js/Chart/Series_images/Series_img11.png" %}
+
+### Selection Patterns and CustomPattern
+
+We can also apply pattern instead of color to series on selection. The default value for **pattern** is none. Chart provides support for following patterns and also we can customize the pattern by using **customPattern** property
+
+ 1.	chessboard
+ 2.	crosshatch
+ 3.	dots
+ 4.	packman
+ 5.	grid
+ 6.	turquoise
+ 7.	star
+ 8.	triangle
+ 9.	circle
+ 10. tile
+ 11. horizontalDash
+ 12. verticalDash
+ 13. rectangle
+ 14. box
+ 
+ {% highlight js %}
+
+
+    $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            selectionSettings:
+             {
+                enable : true,
+                pattern :"checkerBoard" 
+             }
+         }]
+         //......            
+     });
+
+{% endhighlight %}
+
+{% highlight js %}
+
+
+    $("#chartcontainer").ejChart({
+         //......
+         series:
+         [{        
+            selectionSettingss:
+             {
+                enable : true,
+                pattern : "custom",  
+                customPattern : "pattern"  
+             }
+         }]
+         //......            
+     });
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Series_images/Series_img12.png" %}
+
+
+
+
+
+
+
 
 

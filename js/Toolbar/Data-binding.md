@@ -212,7 +212,7 @@ For more information about the knockout binding, refer the following link locati
 
 The link for the script file is as follows:
 
-[http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js)
+[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js)
 
 
 The following code example depicts you the way to bind data to the **Toolbar** through the knockout support. 
@@ -223,13 +223,13 @@ The following code example depicts you the way to bind data to the **Toolbar** t
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"> </script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js"></script>
    </head>
    <body>
       <div class="cols-sample-area">
@@ -275,15 +275,15 @@ The following code example depicts you the way to bind data to the **Toolbar** w
    <head>
       <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
+      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
       <!--scripts-->
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.angular.min.js"> </script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js"> </script>
    </head>
    <body ng-controller="ToolCtrl">
       <div class="cols-sample-area">

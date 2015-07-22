@@ -33,11 +33,11 @@ Create an **HTML** file and add the following template to the **HTML** file.
       <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
       <title>Getting Started Essential JS</title>
       <!-- Style sheet for default theme (flat azure) -->
-      <lin khref="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
+      <lin khref="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
       <!--Scripts-->
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
       <!--Add custom scripts here -->
    </head>
    <body>

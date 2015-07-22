@@ -33,11 +33,11 @@ The following code sample explains how to link these libraries from a [Content D
     <!--  jquery script  -->
       <script src="http://code.jquery.com/jquery-1.10.1.min.js"                      type="text/javascript"></script>
     <!-- Essential JS UI widget -->
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widgets.all.min.js"></script>
     <!-- JS Render widget -->
       <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>  
     <!-- Essential JS theme  -->
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" type="text/javascript"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" type="text/javascript"></script>
 
 {% endhighlight %}
 
@@ -125,13 +125,13 @@ The final **HTML** file is illustrated in the following code sample.
         <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
     
         <!-- Essential JS UI widget -->
-        <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widgets.all.min.js"></script>
 
         <!-- JS Render widget -->
         <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>
       
         <!-- Essential JS theme -->
-        <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" type="text/javascript"></script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" type="text/javascript"></script>
 
         <!-- TreeMapData -->
         <script type="text/javascript">

@@ -26,7 +26,7 @@ Create a usual HTML file along with the necessary scripts and stylesheets referr
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
 
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
@@ -36,7 +36,7 @@ Create a usual HTML file along with the necessary scripts and stylesheets referr
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 
 </head>
 

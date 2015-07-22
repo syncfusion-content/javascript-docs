@@ -24,12 +24,12 @@ This section explains briefly about how to create a **TagCloud** in your applica
 <html>
    <head>
       <!-- Style sheet for default theme (flat azure) -->
-      <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
       <!--Scripts-->
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-      <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
       <!--Add custom scripts here -->
    </head>
    <body>
