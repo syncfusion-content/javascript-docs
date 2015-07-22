@@ -16,21 +16,8 @@ documentation: ug
 {% highlight html %}
 
 
+  <div id="CircularGauge1">  </div>  
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Circular Gauge JS Default Functionalities</title>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js "></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>    
-</head>
-<body>
-    <div id="CircularGauge1">
-    </div>
-</body>
-</html>
 
 {% endhighlight %}
 
