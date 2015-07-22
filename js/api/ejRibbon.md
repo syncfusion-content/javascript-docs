@@ -427,7 +427,7 @@ $(function() {
 
 
 ### applicationTab.backStageHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backStageHeight}
+{:#members:applicationtab-backstageheight}
 
 
 
@@ -534,7 +534,7 @@ $(function() {
 
 
 ### applicationTab.backStageWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backStageWidth}
+{:#members:applicationtab-backstagewidth}
 
 
 
@@ -642,7 +642,7 @@ $(function() {
 
 
 ### applicationTab.backStagePage<span class="type-signature type array">array</span>
-{:#members:applicationtab-backStagePage}
+{:#members:applicationtab-backstagepage}
 
 
 
@@ -750,7 +750,7 @@ $(function() {
 
 
 ### applicationTab.backStagePage.id<span class="type-signature type string">string</span>
-{:#members:applicationtab-backStagePage-id}
+{:#members:applicationtab-backstagepage-id}
 
 
 
@@ -858,7 +858,7 @@ $(function() {
 
 
 ### applicationTab.backStagePage.text<span class="type-signature type string">string</span>
-{:#members:applicationtab-backStagePage-text}
+{:#members:applicationtab-backstagepage-text}
 
 
 
@@ -966,7 +966,7 @@ $(function() {
 
 
 ### applicationTab.backStagePage.backStageItemType<span class="type-signature type enum">enum</span>
-{:#members:applicationtab-backStagePage-backStageItemType}
+{:#members:applicationtab-backstagepage-backstageitemtype}
 
 
 
@@ -1074,7 +1074,7 @@ $(function() {
 
 
 ### applicationTab.backStagePage.contentId<span class="type-signature type string">string</span>
-{:#members:applicationtab-backStagePage-contentId}
+{:#members:applicationtab-backstagepage-contentid}
 
 
 
@@ -1182,7 +1182,7 @@ $(function() {
 
 
 ### applicationTab.backStagePage.enableSeparator<span class="type-signature type boolean">boolean</span>
-{:#members:applicationtab-backStagePage-enableSeparator}
+{:#members:applicationtab-backstagepage-enableseparator}
 
 
 
