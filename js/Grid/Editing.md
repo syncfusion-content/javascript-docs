@@ -369,7 +369,7 @@ The **External Form Edit Mode** helps you edit various data entries in the **Gri
 
 This is different from the **Dialog Editing** mode in that it allows you to see the other entries in the **Grid** while you are editing one.
 
-You can position the edit form either in the top-right corner or the bottom-left corner (by default) of the **Grid**. The following code example shows you how to set[`editMode`](/js/api/ejgrid#members:editsettings-editmode "editMode")as **External Form**.
+You can position the edit form either in the top-right corner or the bottom-left corner (by default) of the **Grid**. The following code example shows you how to set [`editMode`](/js/api/ejgrid#members:editsettings-editmode "editMode")as **External Form**.
 
 {% highlight html %}
 

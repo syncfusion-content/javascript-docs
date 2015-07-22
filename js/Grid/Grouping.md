@@ -13,7 +13,7 @@ documentation: ug
 
 ## Initial Grouping
 
-In **ejGrid**, there is an option to group columns at **Grid Initialize** that is rendered through [`groupedColumns](/js/api/ejgrid#members:groupsettings-groupedcolumns "groupedColumns") and [`allowGrouping`](/js/api/ejgrid#members:allowgrouping "allowGrouping") property in **Grid**. This is an important option because in some scenarios, need to analyse **Grid** records with **Grouping** may arise, at the time of initialize.
+In **ejGrid**, there is an option to group columns at **Grid Initialize** that is rendered through [`groupedColumns`](/js/api/ejgrid#members:groupsettings-groupedcolumns "groupedColumns") and [`allowGrouping`](/js/api/ejgrid#members:allowgrouping "allowGrouping") property in **Grid**. This is an important option because in some scenarios, need to analyse **Grid** records with **Grouping** may arise, at the time of initialize.
 
 {% highlight html %}
 

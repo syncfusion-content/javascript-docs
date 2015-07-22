@@ -54,7 +54,7 @@ The following output is displayed as a result of the above code example.
 
 ## Scroll Settings
 
-The [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings")` contains the properties to enable scrolling related functionalities in the **ejGrid**.
+The [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings") contains the properties to enable scrolling related functionalities in the **ejGrid**.
 
 ### To Enable Vertical Scrolling
 

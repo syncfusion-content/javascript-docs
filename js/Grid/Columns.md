@@ -49,7 +49,7 @@ The following is the result of column formatting.
 
 ## Template
 
-A **template** is used to render a specific template to a particular column using [`template`](/js/api/ejgrid#members-columns-template "template") and [`templateID`](/js/api/ejgrid#members-columns-templateid "templateID") property. These columns are not bound to **Grid**.
+A **template** is used to render a specific template to a particular column using [`template`](/js/api/ejgrid#members:columns-template "template") and [`templateID`](/js/api/ejgrid#members:columns-templateid "templateID") property. These columns are not bound to **Grid**.
 
 {% highlight html %}
 
@@ -86,7 +86,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Attribute
 
-**Custom attribute** is a powerful feature of **Columns** using [`customAttributes`](/js/api/ejgrid#members-columns-customattributes "customAttributes") property. This is used to modify the styles and appearance of a particular column. 
+**Custom attribute** is a powerful feature of **Columns** using [`customAttributes`](/js/api/ejgrid#members:columns-customattributes "customAttributes") property. This is used to modify the styles and appearance of a particular column. 
 
 {% highlight html %}
 
@@ -125,7 +125,7 @@ The following output is displayed as a result of the above code example.
 
 ## Read only
 
-[`allowEditing`](/js/api/ejgrid#members-columns-allowediting "allowEditing") enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set [`allowEditing`](/js/api/ejgrid#members-columns-allowediting "allowEditing")  as **false** for that column. The following code example shows **CustomerID** column as **read-only**.
+[`allowEditing`](/js/api/ejgrid#members:columns-allowediting "allowEditing") enables you to edit a column, but it prevents the fields from showing it as editable. When you want to make a column as **read-only** then set [`allowEditing`](/js/api/ejgrid#members:columns-allowediting "allowEditing")  as **false** for that column. The following code example shows **CustomerID** column as **read-only**.
 
 {% highlight html %}
 
@@ -161,7 +161,7 @@ The following output is displayed as a result of the above code example.
 
 ## Controlling Grid actions
 
-In **ejGrid**, you can control **Grid** actions through [`allowSorting`](/js/api/ejgrid#members-columns-allowsorting "allowSorting"), [`allowGrouping`](/js/api/ejgrid#members-columns-allowgrouping "allowGrouping"), [`allowFiltering`](/js/api/ejgrid#members-columns-allowfiltering "allowFiltering"). The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
+In **ejGrid**, you can control **Grid** actions through [`allowSorting`](/js/api/ejgrid#members:columns-allowsorting "allowSorting"), [`allowGrouping`](/js/api/ejgrid#members:columns-allowgrouping "allowGrouping"), [`allowFiltering`](/js/api/ejgrid#members:columns-allowfiltering "allowFiltering"). The following code example shows you how to disable a particular column. The following example has controlled grouping action in **CustomerID** column, filtering in **EmployeeID** column and sorting in **Freight** column.
 
 {% highlight html %}
 
@@ -227,7 +227,7 @@ The following output is displayed as a result of the above code example.
 
 ## Foreign key columns
 
-Foreign key is a field in relational table using [`foreignKeyField`](/js/api/ejgrid#members-columns-foreignkeyfield "foreignKeyField") and [`foreignKeyValue`](/js/api/ejgrid#members-columns-foreignkeyvalue "foreignKeyValue") property. It matches the specific key columns of another table . 
+Foreign key is a field in relational table using [`foreignKeyField`](/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") and [`foreignKeyValue`](/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue") property. It matches the specific key columns of another table . 
 
 {% highlight html %}
 
@@ -361,9 +361,9 @@ Execute the above code to render the following output.
 
 ## DisableHtmlEncode
 
-[`disableHtmlEncode`](/js/api/ejgrid#members-columns-disablehtmlencode "disableHtmlEncode") property helps you show the encoded **HTML** view of **Grid** content and header elements. 
+[`disableHtmlEncode`](/js/api/ejgrid#members:columns-disablehtmlencode "disableHtmlEncode") property helps you show the encoded **HTML** view of **Grid** content and header elements. 
 
-The following code example shows you how to set [`disableHtmlEncode`](/js/api/ejgrid#members-columns-disablehtmlencode "disableHtmlEncode"):
+The following code example shows you how to set [`disableHtmlEncode`](/js/api/ejgrid#members:columns-disablehtmlencode "disableHtmlEncode"):
 
 {% highlight html %}
 
