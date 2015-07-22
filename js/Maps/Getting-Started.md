@@ -33,7 +33,7 @@ You can link these libraries from a [Content Delivery Network (CDN)](https://en.
     <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
 
     <!-- Essential JS UI widget -->
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/
     ej.widgets.all.min.js"></script>
 
     <!-- JS Render widget -->
@@ -180,7 +180,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
         <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
 
         <!-- Essential JS UI widget -->
-        <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widgets.all.min.js"></script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widgets.all.min.js"></script>
 
         <!-- JS Render widget -->
         <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>     

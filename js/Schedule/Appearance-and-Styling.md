@@ -296,7 +296,7 @@ Replace the following code in Create Schedule Step1 to apply different theme to 
 
 {% highlight html %}
 
-<link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-saffron-dark/ej.web.all.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css" rel="stylesheet" />
 
 <!—You can replace the highlighted theme with any one of the above mentiond 12 themes-->
 

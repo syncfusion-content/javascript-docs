@@ -29,8 +29,8 @@ The following example depicts the way to bind data to the **TreeView** control t
     <title>Knockout support in Treeview Essential JS</title>
     <!--To add the following script in html page for knockout support-->
     <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.unobtrusive.min.js"></script>
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/ej.widget.ko.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js"></script>
 </head>
 <body data-autoinit="false">
     <div style="width: 250px">
