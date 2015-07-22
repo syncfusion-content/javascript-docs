@@ -9,7 +9,7 @@ documentation: ug
 
 # CDN
 
-The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the scripts and style sheets of Syncfusion Esential JS components. 
+The [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) links are provided individually for all the scripts and style sheets of Syncfusion Essential JS components. 
 
 
 ## CDN scripts links
@@ -107,30 +107,30 @@ Combined script file which includes the script of all the Syncfusion UI web widg
 <td>
 ej.webform.min</td><td>
 supports server-side event functionalities in ASP.NET controls</td><td>
-<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.webform.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.webform.min.js</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.webform.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.webform.min.js</a></td></tr>
 <tr>
 <td>
 ej.unobtrusive.min</td><td>
 Supports Syncfusion widgets to render in HTML5 format.</td><td>
-<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js</a>  </td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.unobtrusive.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.unobtrusive.min.js</a>  </td></tr>
 <tr>
 <td>
 ej.widget.angular.min</td><td>
 Provides support for AngularJS </td><td>
-<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js</a></td></tr>
 <tr>
 <td>
 ej.widget.ko.min</td><td>
 Provides support for KnockoutJS</td><td>
-<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js</a></td></tr>
+<a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js</a></td></tr>
 </table>
 
 
 The **KnockoutJS** and **AngularJS** dependencies can be accessed through the following syntax,
 
-http://cdn.syncfusion.com/**[version]**/js/**[fileName]**
+http://cdn.syncfusion.com/**[version]**/js/common/**[fileName]**
 
-_Example, to access the ej.widget.angular.min.js file in {{ site.releaseversion }} version – http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js_
+_Example, to access the ej.widget.angular.min.js file in {{ site.releaseversion }} version – http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js_
 
 
 ## CDN style sheet links

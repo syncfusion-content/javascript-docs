@@ -281,69 +281,6 @@ $("#Diagram").ejDiagram({ zoomFactor: 0.2 });
 
 Refer the link [ZoomCommand](/js/Diagram/Commands#zoom-command)
 
-## Keyboard
-
-Diagram has several keyboard functions support and they are listed as follows.
-
-<table>
-<tr>
-<th>
-Shortcut Key</th><th>
-Description</th></tr>
-<tr>
-<td>
-Ctrl + A</td><td>
-Select all nodes/connectors in diagram</td></tr>
-<tr>
-<td>
-Ctrl + C</td><td>
-Copy the diagram selected elements</td></tr>
-<tr>
-<td>
-Ctrl + V</td><td>
-Paste the copied elements</td></tr>
-<tr>
-<td>
-Ctrl + X</td><td>
-Cut the selected elements</td></tr>
-<tr>
-<td>
-Ctrl + Z</td><td>
-Undo(Reverse the last editing action performed on diagram)</td></tr>
-<tr>
-<td>
-Ctrl + Y</td><td>
-Redo(Restores the last editing action if no other actions have occurred since the last undo on diagram)</td></tr>
-<tr>
-<td>
-Delete</td><td>
-Delete the selected elements </td></tr>
-<tr>
-<td>
-Ctrl /Shift+ Click on object</td><td>
-Multiple selection(Selector binds all selected nodes/connectors)</td></tr>
-<tr>
-<td>
-Up Arrow</td><td>
-nudgeUp(move the selected elements towards up by one pixel)</td></tr>
-<tr>
-<td>
-Down Arrow</td><td>
-nudgeDown(move the selected elements towards down by one pixel)</td></tr>
-<tr>
-<td>
-Left Arrow</td><td>
-nudgeLeft(move the selected elements towards left by one pixel)</td></tr>
-<tr>
-<td>
-Right Arrow</td><td>
-nudgeRight(move the selected elements towards right by one pixel)</td></tr>
-<tr>
-<td>
-Ctrl+MouseScroll</td><td>
-Zoom(Zoom in/Zoom out the diagram)</td></tr>
-</table>
-
 ## Touch
 
 Touch support for Diagram view has the following features:
