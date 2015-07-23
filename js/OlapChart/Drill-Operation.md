@@ -17,7 +17,7 @@ Drill down, also called roll down, is the reverse of drill up. It navigates from
 
 {% include image.html url="/js/OlapChart/Drill-Operation_images/Drill_img1.png" Caption="Drill-down operation in OLAP Chart"%}
 
-{% include image.html url="/js/OlapChart/Drill-Operation_images/Drill_img2.png" Caption="Drill-up Operation in OLAP Chart"%}
+{% include image.html url="/js/OlapChart/Drill-Operation_images/Drill_img2.png" Caption="Drill-up operation in OLAP Chart"%}
 
 DrillSuccess event is triggered when you right-click on the OlapChart and select any option available from the Context Menu to perform drill up or drill down operation.
 
