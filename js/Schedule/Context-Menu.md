@@ -125,7 +125,7 @@ You can refer the following code example to render the categorize options in the
                 { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "white" },
                 { text: "Orange Category", id: 3, color: "#ffaa00", fontColor: "green" }
                 ],
-                text: "text", id: "id", color: "color",fontColor: "fontColor"**
+                text: "text", id: "id", color: "color",fontColor: "fontColor"
                 },
 
             appointmentSettings: {

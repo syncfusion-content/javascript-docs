@@ -238,22 +238,18 @@ Execute the above code to render the following output.
    <head>
       <!--Refer the necessary script here-->
    </head>
-   <body ng-controller="CircularGauge">
-      <div id="linearframe">
+   <body ng-controller="CircularGauge">     
          <ej-circulargauge id="CircularGauge1" e-backgroundcolor="transparent" e-value="nvalue" e-width="500" e-readonly="false" e-load="loadGaugeTheme" e-enableanimation="false">
             <e-scales>
                <e-scale e-showRanges="true" e-startAngle="122" e-sweepAngle="296"
                e-radius="130" e-showScaleBar="true" e-size="1"
-               <!--binding maximum value using angular JS -->
                e-maximum="nmaximum"
-               <!--binding minimum value using angular JS -->
                e-minimum="nminimum"
                e-majorIntervalValue="20"
                e-minorIntervalValue="10" e-border-width="0.5">
                <e-pointers>
                   <e-pointer e-showBackNeedle="true" e-backNeedleLength="20"
                   e-length="95" e-width="7"
-                  <!--binding pointer value using angular JS -->
                   e-value="nvalue"
                   e-pointerCap-radius="12">
                   </e-pointer>
@@ -278,9 +274,8 @@ Execute the above code to render the following output.
                </e-ranges>
                </e-scale>
             </e-scales>
-         </ej-circulargauge>
-      </div>
-      <input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox **ng-model="nvalue"**  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
+         </ej-circulargauge>     
+      <input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue"  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
       <script type="text/javascript">
          <!--binding the value to the scope variables in application controller-->
          angular.module('syncApp', ['ejangular'])
@@ -340,9 +335,9 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
       <script type="text/javascript">
          $(function () {
              window.viewModel = {
-               value: ko.observable(50),
-               minimum: ko.observable(0),
-               maximum: ko.observable(150)
+               samplevalue: ko.observable(50),
+               minimumValue: ko.observable(0),
+               maximumValue: ko.observable(150)
              };
              $(function () {
                  ko.applyBindings(viewModel);

@@ -27,8 +27,7 @@ You can print the **Schedule** control by using **print()** method. Use the foll
 </head>
 <body>
     <input class="print" type="button" value="Print" />
-    <div style="float: left" id="Div1" />
-    <div id="Div2"></div>
+    <div id="Schedule1"></div>
 </body>
 </html>
 

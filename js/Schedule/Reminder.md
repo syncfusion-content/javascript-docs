@@ -25,6 +25,7 @@ The following code example explains how to get the reminder list and display it 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Schedule JS Reminder options</title>
+   <!-- Refer necessary script here -->
 </head>
 <body>
     <!-- For Reminder list div elements-->
@@ -37,9 +38,7 @@ The following code example explains how to get the reminder list and display it 
     <!-- Notification div element-->
     <div class='notifications top-right'></div>
     <!-- Schedule div element-->
-    <div style="float: left" id="Div1">
-    </div>
-    <div id="Div2"></div>
+    <div id="Schedule1"></div>
 </body>
 </html>
 
@@ -48,7 +47,7 @@ The following code example explains how to get the reminder list and display it 
 {% highlight css %}
 
 <!-- Styles applied for the reminder list divs and notification -->
-<style>
+
     #reminderCount {
         position: relative;
         min-width: 6px;

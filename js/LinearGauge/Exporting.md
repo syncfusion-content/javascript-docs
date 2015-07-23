@@ -64,7 +64,7 @@ $(function () {
         var FileFormat = $("#fileFormat").ejDropDownList("option", "value");
         $("#LinearGauge1").ejLinearGauge("exportImage", FileName, FileFormat);
     }
-    $("#sampleProperties").ejPropertiesPanel();
+
 
 {% endhighlight %}
 

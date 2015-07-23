@@ -293,9 +293,9 @@ Knockout support allows you to bind the html elements against any of the availab
       <script type="text/javascript">
          $(function () {
              window.viewModel = {
-                 value: ko.observable(50),
-                 minimum: ko.observable(0),
-                 maximum: ko.observable(150)
+                 samplevalue: ko.observable(50),
+                 minimumValue: ko.observable(0),
+                 maximumValue: ko.observable(150)
              };
              $(function () {
                  ko.applyBindings(viewModel);

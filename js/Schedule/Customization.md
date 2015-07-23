@@ -393,7 +393,7 @@ background-color: #FF8A8A;
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             },
-            appointmentWindowOpen: "onAppointmentWindowOpen"*
+            appointmentWindowOpen: "onAppointmentWindowOpen"
             });
         // For sub-controls used within the custom appointment window
         $("#StartTime").ejDateTimePicker({ width: "150px" });

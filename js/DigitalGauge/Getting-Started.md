@@ -156,6 +156,25 @@ You can add a **&lt;div&gt;** element to set the background for the **Digital Ga
 
 {% endhighlight %}
 
+
+{% highlight js %}
+
+$(function () {
+        $("#DigitalGauge1").ejDigitalGauge({
+            height: 145,
+            width: 260,
+            items: [{
+                segmentSettings: { width: 2, length: 20 },
+                characterSettings: { type: "sevensegment", spacing: 12, },
+                value: "102",
+            }]
+        });
+    });
+
+
+{% endhighlight %}
+
+
 {% highlight css %}
 
 

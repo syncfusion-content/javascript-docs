@@ -158,9 +158,15 @@ You can also customize the appointments within the **Scheduler** using the **tem
 
 
 $(function () {
+        // DataManager creation
+        var dManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
+        });
+        // Query creation
+        var queryString = ej.Query().from("Events").take(10);
         $("#Schedule1").ejSchedule({
             appointmentTemplateId: "#apptemplate",
-            width: "100%", height: "550px",
+            width: "100%", height: "550px", 
             currentDate: new Date(2014, 4, 5),
             appointmentSettings: {
                 dataSource: dManager,
@@ -207,7 +213,7 @@ $(function () {
 	
 {% highlight html %}
 
-<div style="height: 100%">
+<div id="apptemplate" style="height: 100%">
     <div style='float: left; width: 50px;'>
         {{:~format(StartTime)}}
     </div>
@@ -294,7 +300,7 @@ You can change the view of the **Schedule** from **week** to **month** by using 
 {% highlight html %}
 
 
-<div style="height: 100%">
+<div id="apptemplate" style="height: 100%">
     <div style="float: left; width: 50px;">
         {{:~format(StartTime)}}
     </div>
@@ -389,7 +395,7 @@ The default height of an appointment is always suitable for the text.  In order 
 
 {% highlight html %}
 
-<div style="height: 100%">
+<div id="apptemplate" style="height: 100%">
     <div style='float: left; width: 50px;'>
         {{:~format(StartTime)}}
     </div>
@@ -511,7 +517,6 @@ When you click the recurrence appointment, a quick appointment window opens with
 
 $(function () {
         $("#Schedule1").ejSchedule({
-            appointmentTemplateId: "#apptemplate",
             width: "100%", height: "550px",
             currentDate: new Date(2014, 4, 5),
             appointmentSettings: {
