@@ -15632,11 +15632,6 @@ Triggers when the connectors' source point is changed
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns source port</td>
 </tr>
-<tr>
-<td class="name"><code>argument.cancel</code></td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">if the event should be cancelled ,otherwise fasle</td>
-</tr>
 </tbody>
 </table>
 
@@ -15688,11 +15683,6 @@ Triggers when the connectors target point is changed
 <td class="name"><code>argument.port</code></td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns target port</td>
-</tr>
-<tr>
-<td class="name"><code>argument.cancel</code></td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">if the event should be cancelled ,otherwise fasle</td>
 </tr>
 </tbody>
 </table>
