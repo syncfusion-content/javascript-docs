@@ -44,9 +44,25 @@ You can render the **Schedule** by using the following code example. Object in t
         e-appointmentsettings-allday="AllDay"
         e-appointmentsettings-recurrence="Recurrence"
         e-appointmentsettings-recurrencerule="RecurrenceRule"
-        e-width="100%" e-height="525px" e-currentview="setView"
+        e-width="100%" e-height="525px" e-currentview="drpvalue"
         e-currentdate="setDate" e-contextmenusettings-enable="true">
     </ej-schedule>
+    <script>
+        var list = [
+                   { empid: "day", text: "Day", value: "day" },
+                   { empid: "week", text: "Week", value: "week" },
+                   { empid: "workweek", text: "Work Week", value: "workweek" },
+                   { empid: "month", text: "Month", value: "month" }
+        ];
+        angular.module('syncApp', ['ejangular'])
+             .controller('Schedule', function ($scope) {
+                 $scope.appointments = window.Localization;
+                 $scope.dataList = list;
+                 $scope.setDate = new Date(2014, 4, 5);
+                 $scope.drpvalue = "week";
+             });
+
+    </script>
 </body>
 </html>
 
@@ -145,29 +161,29 @@ Execute the above codes to render the Resultant schedule as follows.
 
 <!DOCTYPE html>
 <html ng-app="syncApp" xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
-      <!—Refer the necessary script here-->
-   </head>
-   <body ng-controller="ScheduleCtrl" style="width: 50%">
-      Current View
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
+    <!—Refer the necessary script here-->
+</head>
+<body ng-controller="ScheduleCtrl" style="width: 50%">
+    Current View
       <input id="ddlView" ej-dropdownlist e-datasource="dataList" e-value="drpvalue" e-width="107px" />
-      Current Date
+    Current Date
       <input id="datepick1" ej-datepicker e-value="setDate" e-width="107px" />
-      <ej-schedule style="float: left" width="400" id="Ej-Schedule1"
-         e-appointmentsettings-datasource="appointments"
-         e-appointmentsettings-id="Id" e-appointmentsettings-subject="Subject"
-         e-appointmentsettings-starttime="StartTime"
-         e-appointmentsettings-endtime="EndTime"
-         e-appointmentsettings-description="Description"
-         e-appointmentsettings-allday="AllDay"
-         e-appointmentsettings-recurrence="Recurrence"
-         e-appointmentsettings-recurrencerule="RecurrenceRule"
-         e-width="100%" e-height="525px" e-currentview="setView"
-         e-currentdate="setDate" e-contextmenusettings-enable="true"
-         e-categorizesetting-enable="true" e-categorizesetting-allowmultiple="true"
-         e-categorizesetting-text="text" e-categorizesetting-color="color"
-         e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
+    <ej-schedule style="float: left" width="400" id="Ej-Schedule1"
+        e-appointmentsettings-datasource="appointments"
+        e-appointmentsettings-id="Id" e-appointmentsettings-subject="Subject"
+        e-appointmentsettings-starttime="StartTime"
+        e-appointmentsettings-endtime="EndTime"
+        e-appointmentsettings-description="Description"
+        e-appointmentsettings-allday="AllDay"
+        e-appointmentsettings-recurrence="Recurrence"
+        e-appointmentsettings-recurrencerule="RecurrenceRule"
+        e-width="100%" e-height="525px" e-currentview="drpvalue"
+        e-currentdate="setDate" e-contextmenusettings-enable="true"
+        e-categorizesetting-enable="true" e-categorizesetting-allowmultiple="true"
+        e-categorizesetting-text="text" e-categorizesetting-color="color"
+        e-categorizesetting-fontcolor="fontcolor" e-categorizesetting-id="id">
          <e-categorizesetting-datasource>
             <e-categorizesetting-datasource text="Blue category" color="Blue" fontcolor="Red" id="1"></e-categorizesetting-datasource>
             <e-categorizesetting-datasource text="yellow category" color="yellow" fontcolor="Red" id="2"></e-categorizesetting-datasource>
@@ -189,18 +205,25 @@ Execute the above codes to render the Resultant schedule as follows.
                e-id="gotodate" -text="Go to date"></e-contextMenuSettings-menuItems-cell>
          </e-contextMenuSettings-menuItems-cells>
       </ej-schedule>
-      <script>
-         <!--binding the value to the scope variables in application controller-->
-         angular.module('syncApp', ['ejangular'])
-         .controller('ScheduleCtrl', function ($scope) {
-         $scope.appointments = window.Localization;
-         $scope.setView = "week";
-         $scope.setDate = new Date();
-         });
-         $("#sampleProperties").ejPropertiesPanel();
-      </script>
-   </body>
+    <script>
+        var list = [
+                    { empid: "day", text: "Day", value: "day" },
+                    { empid: "week", text: "Week", value: "week" },
+                    { empid: "workweek", text: "Work Week", value: "workweek" },
+                    { empid: "month", text: "Month", value: "month" }
+        ];
+        <!--binding the value to the scope variables in application controller-->
+        angular.module('syncApp', ['ejangular'])
+        .controller('ScheduleCtrl', function ($scope) {
+            $scope.appointments = window.Localization;
+            $scope.dataList = list;
+            $scope.drpvalue = "week";
+            $scope.setDate = new Date(2014, 4, 5);
+        });
+    </script>
+</body>
 </html>
+
 
 
 {% endhighlight %}
@@ -222,7 +245,7 @@ Execute the above code to render the following output.
 
 * Apply the plugin and property assigning to the **Schedule** element through the directive that starts with a letter **“e-“.** The following example depicts the way to bind data to the **Schedule** control through the **knockout****support**.
 
-* [Click here](http://js.syncfusion.com/demos/web/) to see how Konckout binding works with schedule.
+* [Click here](http://js.syncfusion.com/demos/web/#!/azure/knockout/schedule/) to see how Konckout binding works with schedule.
 
 {% highlight html %}
 
@@ -248,7 +271,7 @@ Execute the above code to render the following output.
              window.viewModel = {
                  appointments: ko.observable(window.API),
                  view: ko.observable("week"),
-                 date: ko.observable(new Date())
+                 date: ko.observable(new Date(2014, 4, 5))
              };
              $(function () {
                  ko.applyBindings(viewModel);

@@ -26,13 +26,13 @@ documentation: ug
       <!—Refer the necessary script here-->
    </head>
    <body ng-controller="DigitalGauge">
-      <ej-digitalgauge id="digitalCore" e-height="500" e-load="loadGaugeTheme">
-      </ej-digitalgauge>
+      <ej-DigitalGauge id="digitalCore" e-height="500" e-load="loadGaugeTheme">
+      </ej-DigitalGauge>
       <script type="text/javascript">
-         <!—binding the value to the scope variables in application controller-->
+         <!--binding the value to the scope variables in application controller-->
          angular.module('syncApp', ['ejangular'])
          .controller('DigitalGauge', function ($scope) {
-             $scope.nvalue = “text”;
+             $scope.nvalue = "text";
          });
       </script>
    </body>
@@ -141,7 +141,7 @@ Knockout support allows you to bind the html elements against any of the availab
       <script type="text/javascript">
          $(function () {
              window.viewModel = {
-                 value: ko.observable("SyncFusion"),
+                 samplevalue: ko.observable("SyncFusion"),
              };
              $(function () {
                  ko.applyBindings(viewModel);

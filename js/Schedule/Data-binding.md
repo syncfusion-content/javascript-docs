@@ -93,7 +93,7 @@ It maps the corresponding categorize field name from the data table or JSON data
             width: "100%",
             height: "525px",
             currentDate: new Date(2014, 4, 5),
-            showLocationField: true,       // To display the Location field in the appointment Window need to enable this property
+            showLocationField: true,    // To display the Location field in the appointment Window need to enable this property
             appointmentSettings: {
                 dataSource: dManager,
                 id: "Id",
@@ -102,7 +102,7 @@ It maps the corresponding categorize field name from the data table or JSON data
                 endTime: "EndTime",
                 description: "Description",
                 allDay: "AllDay",
-                location: "Location",           // To display the Location value need to bind the property like this
+                location: "Location",        // To display the Location value need to bind the property like this
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             }
@@ -253,7 +253,7 @@ On executing the above specified code the **Scheduler** displays the appointment
 $(function () {
         var dManager = ej.DataManager({
             // referring data from remote service (url binding)
-            url: "[http://mvc.syncfusion.com/OdataServices/Northwnd.svc/](http://mvc.syncfusion.com/OdataServices/Northwnd.svc/)"
+            url:("http://mvc.syncfusion.com/OdataServices/Northwnd.svc/")
         });
         // query to fetch the records from the specified table “Events”
         var queryString = ej.Query().from("Events").take(10);

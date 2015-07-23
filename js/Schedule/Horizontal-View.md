@@ -58,16 +58,6 @@ The above example illustrates the horizontal view of **Schedule** control. Simil
 
 {% highlight html %}
 
-<!DOCTYPE html>
-
-<div class="content-container-fluid">
-    <div class="row">
-        <div class="cols-sample-area">
-            <div style="float: left" id="Div1">
-            </div>
-        </div>
-    </div>
-</div>
 <div id="Schedule1"></div>
 
 {% endhighlight %}
@@ -116,7 +106,7 @@ Execute the above code to render the following output.
         $("#Schedule1").ejSchedule({
             width: "100%",
             currentDate: new Date (2014,4,5),
-            currentView:”month”,
+            currentView:"month",
             //Setting Orientation as Horizontal mode
           orientation: ej.Schedule.Orientation.Horizontal,
             group: {
@@ -176,13 +166,13 @@ Execute the above code to render the following output.
 {% highlight js %}
 
 $(function () {
-        width: "100%",
-        currentDate: new Date (2014,4,5),
-        currentView: "week",
         var dManager = ej.DataManager(window.HorizontalResourcesData).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
             //Setting orientation as horizontal mode
           orientation: ej.Schedule.Orientation.Horizontal,
+          width: "100%",
+          currentDate: new Date (2014,4,5),
+          currentView: "week",
             //Grouping resources
           group: {
           resources: ["Rooms", "Owners"]

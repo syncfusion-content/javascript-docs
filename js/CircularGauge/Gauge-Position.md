@@ -38,7 +38,7 @@ The possible enum values for the gaugePosition are as follows:
 {% highlight html %}
 
 <div style="float: left" id="gauge1"></div>
-<div id=" CoreCircularGaugehalfright "></div>
+<div id="CoreCircularGaugehalfright"></div>
 
 {% endhighlight %}
 

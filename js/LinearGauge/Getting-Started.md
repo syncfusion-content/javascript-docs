@@ -349,15 +349,15 @@ The following code example illustrates how to use custom texts.
                 customLabels: [{
                     value: "(° C)",
                     position: { x: 44, y: 78 },
-                    font: "Bold 12px Segoe UI", color: "#666666"
+                    font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "bold" }, color: "#666666"
                 }, {
                     value: "(° F)",
                     position: { x: 56, y: 78 },
-                    font: "Bold 12px Segoe UI", color: "#666666"
+                    font: { size: "12px", fontFamily: "Segoe UI", fontStyle: "bold" }, color: "#666666"
                 },
                 {
                     position: { x: 51, y: 90 },
-                    font: "Bold 13px Segoe UI",
+                    font: { size: "13px", fontFamily: "Segoe UI", fontStyle: "bold" },
                     color: "#666666"
                 }]
             }]

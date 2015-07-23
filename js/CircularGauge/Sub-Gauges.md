@@ -47,7 +47,7 @@ Basic attributes such as **height** and **width** property are used to set heigh
 
 {% highlight html %}
 
-<div id=" SubGauge1"></div>
+<div id="SubGauge1"></div>
 <div id="CircularGauge1"> </div>
 
 {% endhighlight %}
@@ -94,8 +94,8 @@ You can set multiple sub gauges in a single **Circular Gauge** by adding an arra
 {% highlight html %}
 
 <div id="CircularGauge1"></div>
-<div id=" SubGauge1"> </div>
-<div id=" SubGauge2"> </div>
+<div id="SubGauge1"> </div>
+<div id="SubGauge2"> </div>
 
 {% endhighlight %}
 

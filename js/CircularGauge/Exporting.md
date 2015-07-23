@@ -14,7 +14,7 @@ documentation: ug
 {% highlight html %}
 
 <input type="submit" value="Export Image" id="btnExportImage">
-    <div id=" circulargauge "></div>
+    <div id="circulargauge"></div>
     <div id="txtFileName">FileName </div>
     <div id="ddlFileType">FileFormat </div>
 </input>

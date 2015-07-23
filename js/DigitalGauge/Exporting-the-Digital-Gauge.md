@@ -29,9 +29,9 @@ documentation: ug
      $(function () {
         $("#btnSubmit").ejButton({ width: "50px", text: "Export", click: "buttonclickevent", });
         $("#fileFormat").ejDropDownList({ selectedItemIndex: 0, width: "115px" });
-        $("# DigitalGauge1").ejDigitalgauge({ value: "Syncfusion" });
+        $("#DigitalGauge1").ejDigitalGauge({ value: "Syncfusion" });
     });
-    $("# DigitalGauge1").ejDigitalGauge("exportImage", "Digital", "JPEG");
+    $("#DigitalGauge1").ejDigitalGauge("exportImage", "Digital", "JPEG");
     function buttonclickevent() {
         var FileName = $("#fileName").val();
         var FileFormat = $("#fileFormat").ejDropDownList("option", "value");

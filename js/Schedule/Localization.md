@@ -420,15 +420,14 @@ To learn about localizing in the **Schedule** control on your required culture, 
 {% highlight html %}
 
 <head>
-    <link href="themes/default-theme/ej.widgets.all.min.css" rel="stylesheet" />
-    <script src="scripts/jquery-1.10.2.min.js"></script>
-    <script src="scripts/jquery.easing.1.3.min.js"></script>
-    <script src="scripts/jquery.globalize.min.js"></script>
-    <script src="scripts/jsondata.min.js"></script>
-    <script src="scripts/jsrender.min.js"></script>
+    <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
    <!-- To use the fr-FR culture in the schedule control, refer the below script file -->
-    <script src="scripts/cultures/globalize.culture.fr-FR.min.js"></script>
-    <script src="scripts/ej.web.all.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/cultures/globalize.culture.fr-FR.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
 </head>
 
 
