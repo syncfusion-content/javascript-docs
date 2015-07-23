@@ -33,13 +33,13 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
         <!--scripts-->
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
-        <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 
-        <script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.js"></script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js "></script>
 
