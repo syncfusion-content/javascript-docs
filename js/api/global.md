@@ -26,6 +26,7 @@ metacontent:
 
 
 ### Alignment<span class="type-signature type string">string</span>
+{:#members:alignment}
 
 
 
@@ -42,6 +43,7 @@ Enum for alignment. 12
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -93,6 +95,7 @@ Enum for alignment. 12
 
 
 ### ArrowShapes<span class="type-signature type arrowshapes"><a href="global.html#ArrowShapes">ArrowShapes</a></span>
+{:#members:arrowshapes}
 
 
 
@@ -109,6 +112,7 @@ Enum for the ArrowShapes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -190,6 +194,7 @@ Enum for the ArrowShapes in diagram
 
 
 ### autoScrollBorder<span class="type-signature type object">object</span>
+{:#members:autoscrollborder}
 
 
 
@@ -234,6 +239,7 @@ $("#diagramContent").ejDiagram({pageSettings: {autoScrollBorder: { left: 15, top
 
 
 ### BasicShapes<span class="type-signature type basicshapes"><a href="global.html#BasicShapes">BasicShapes</a></span>
+{:#members:basicshapes}
 
 
 
@@ -250,6 +256,7 @@ Enum for the BasicShapes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -367,6 +374,7 @@ Enum for the BasicShapes in diagram
 
 
 ### BingMapType<span class="type-signature type string">string</span>
+{:#members:bingmaptype}
 
 
 
@@ -383,6 +391,7 @@ Enum for Map Bing map types
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -434,6 +443,7 @@ Enum for Map Bing map types
 
 
 ### BPMNActivity<span class="type-signature type bpmnactivity"><a href="global.html#BPMNActivity">BPMNActivity</a></span>
+{:#members:bpmnactivity}
 
 
 
@@ -450,6 +460,7 @@ Enum for the BPMNActivity in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -501,6 +512,7 @@ Enum for the BPMNActivity in diagram
 
 
 ### BPMNBoundary<span class="type-signature type bpmnboundary"><a href="global.html#BPMNBoundary">BPMNBoundary</a></span>
+{:#members:bpmnboundary}
 
 
 
@@ -517,6 +529,7 @@ Enum for the BPMNBoundary in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -568,6 +581,7 @@ Enum for the BPMNBoundary in diagram
 
 
 ### BPMNDirections<span class="type-signature type bpmndirections"><a href="global.html#BPMNDirections">BPMNDirections</a></span>
+{:#members:bpmndirections}
 
 
 
@@ -584,6 +598,7 @@ Enum for the BPMNDirections in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -635,6 +650,7 @@ Enum for the BPMNDirections in diagram
 
 
 ### BPMNEvents<span class="type-signature type bpmnevents"><a href="global.html#BPMNEvents">BPMNEvents</a></span>
+{:#members:bpmnevents}
 
 
 
@@ -651,6 +667,7 @@ Enum for the BPMNEvents in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -714,6 +731,7 @@ Enum for the BPMNEvents in diagram
 
 
 ### BPMNGateways<span class="type-signature type bpmngateways"><a href="global.html#BPMNGateways">BPMNGateways</a></span>
+{:#members:bpmngateways}
 
 
 
@@ -730,6 +748,7 @@ Enum for the BPMNGateways in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -799,6 +818,7 @@ Enum for the BPMNGateways in diagram
 
 
 ### BPMNLoops<span class="type-signature type bpmnloops"><a href="global.html#BPMNLoops">BPMNLoops</a></span>
+{:#members:bpmnloops}
 
 
 
@@ -815,6 +835,7 @@ Enum for the BPMNLoops in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -872,6 +893,7 @@ Enum for the BPMNLoops in diagram
 
 
 ### BPMNShapes<span class="type-signature type bpmnshapes"><a href="global.html#BPMNShapes">BPMNShapes</a></span>
+{:#members:bpmnshapes}
 
 
 
@@ -888,6 +910,7 @@ Enum for the BPMNShapes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -975,6 +998,7 @@ Enum for the BPMNShapes in diagram
 
 
 ### BPMNTasks<span class="type-signature type bpmntasks"><a href="global.html#BPMNTasks">BPMNTasks</a></span>
+{:#members:bpmntasks}
 
 
 
@@ -991,6 +1015,7 @@ Enum for the BPMNTasks in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1084,6 +1109,7 @@ Enum for the BPMNTasks in diagram
 
 
 ### BPMNTriggers<span class="type-signature type bpmntriggers"><a href="global.html#BPMNTriggers">BPMNTriggers</a></span>
+{:#members:bpmntriggers}
 
 
 
@@ -1100,6 +1126,7 @@ Enum for the BPMNTriggers in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1193,6 +1220,7 @@ Enum for the BPMNTriggers in diagram
 
 
 ### ButtonStyle<span class="type-signature type string">string</span>
+{:#members:buttonstyle}
 
 
 
@@ -1209,6 +1237,7 @@ Enum for ej.mobile.Menu.IOS7.ButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1266,6 +1295,7 @@ Enum for ej.mobile.Menu.IOS7.ButtonStyle
 
 
 ### CancelButtonColor<span class="type-signature type string">string</span>
+{:#members:cancelbuttoncolor}
 
 
 
@@ -1282,6 +1312,7 @@ Enum for ej.mobile.Menu.IOS7.CancelButtonColor
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1345,6 +1376,7 @@ Enum for ej.mobile.Menu.IOS7.CancelButtonColor
 
 
 ### CharacterType<span class="type-signature type string">string</span>
+{:#members:charactertype}
 
 
 
@@ -1361,6 +1393,7 @@ Enum for gauge CharacterType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1424,6 +1457,7 @@ Enum for gauge CharacterType
 
 
 ### ChartOrientations<span class="type-signature type string">String</span>
+{:#members:chartorientations}
 
 
 
@@ -1440,6 +1474,7 @@ Enum for ChartOrientations in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1485,6 +1520,7 @@ Enum for ChartOrientations in diagram
 
 
 ### ChartTypes<span class="type-signature type string">String</span>
+{:#members:charttypes}
 
 
 
@@ -1501,6 +1537,7 @@ Enum for ChartTypes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1558,6 +1595,7 @@ Enum for ChartTypes in diagram
 
 
 ### CheckState<span class="type-signature type string">string</span>
+{:#members:checkstate}
 
 
 
@@ -1574,6 +1612,7 @@ Enum for CheckboxState
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1625,6 +1664,7 @@ Enum for CheckboxState
 
 
 ### Color<span class="type-signature type string">string</span>
+{:#members:color}
 
 
 
@@ -1641,6 +1681,7 @@ Enum for IOS7Color
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1704,6 +1745,7 @@ Enum for IOS7Color
 
 
 ### ColorPalette<span class="type-signature type string">string</span>
+{:#members:colorpalette}
 
 
 
@@ -1720,6 +1762,7 @@ Enum for Map color palette
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1777,6 +1820,7 @@ Enum for Map color palette
 
 
 ### ConnectorConstraints<span class="type-signature type connectorconstraints"><a href="global.html#ConnectorConstraints">ConnectorConstraints</a></span>
+{:#members:connectorconstraints}
 
 
 
@@ -1793,6 +1837,7 @@ Enum for ConnectorConstraints in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1892,6 +1937,7 @@ Enum for ConnectorConstraints in diagram
 
 
 ### ContainerType<span class="type-signature type string">string</span>
+{:#members:containertype}
 
 
 
@@ -1908,6 +1954,7 @@ Enum for various containerType in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -1953,6 +2000,7 @@ Enum for various containerType in diagram
 
 
 ### ContentType<span class="type-signature type string">string</span>
+{:#members:contenttype}
 
 
 
@@ -1969,6 +2017,7 @@ Enum for ContentType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2020,6 +2069,7 @@ Enum for ContentType
 
 
 ### ContentType<span class="type-signature type string">string</span>
+{:#members:contenttype}
 
 
 
@@ -2036,6 +2086,7 @@ Enum for Android tabContentType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2087,6 +2138,7 @@ Enum for Android tabContentType
 
 
 ### CrosshairType<span class="type-signature type string">string</span>
+{:#members:crosshairtype}
 
 
 
@@ -2103,6 +2155,7 @@ Enum for chart crosshairType.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2148,6 +2201,7 @@ Enum for chart crosshairType.
 
 
 ### CustomLabelPositionType<span class="type-signature type string">string</span>
+{:#members:customlabelpositiontype}
 
 
 
@@ -2164,6 +2218,7 @@ Enum for gauge CustomLabelPositionType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2209,6 +2264,7 @@ Enum for gauge CustomLabelPositionType
 
 
 ### CustomLabelPositionType<span class="type-signature type string">string</span>
+{:#members:customlabelpositiontype}
 
 
 
@@ -2225,6 +2281,7 @@ Enum for gauge CustomLabelPositionType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2270,6 +2327,7 @@ Enum for gauge CustomLabelPositionType
 
 
 ### dataTypes
+{:#members:datatypes}
 
 
 
@@ -2291,6 +2349,7 @@ datatypes to the default model values
 
 
 ### DecoratorShapes<span class="type-signature type string">string</span>
+{:#members:decoratorshapes}
 
 
 
@@ -2307,6 +2366,7 @@ Enum for various decorator shapes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2376,6 +2436,7 @@ Enum for various decorator shapes in diagram
 
 
 ### DiagramConstraints<span class="type-signature type diagramconstraints"><a href="global.html#DiagramConstraints">DiagramConstraints</a></span>
+{:#members:diagramconstraints}
 
 
 
@@ -2392,6 +2453,7 @@ Enum for the DiagramConstraints in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2479,6 +2541,7 @@ Enum for the DiagramConstraints in diagram
 
 
 ### Directions<span class="type-signature type string">string</span>
+{:#members:directions}
 
 
 
@@ -2495,6 +2558,7 @@ Enum for gauge Directions
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2540,6 +2604,7 @@ Enum for gauge Directions
 
 
 ### Directions<span class="type-signature type string">string</span>
+{:#members:directions}
 
 
 
@@ -2556,6 +2621,7 @@ Enum for gauge Directions
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2601,6 +2667,7 @@ Enum for gauge Directions
 
 
 ### DragState<span class="type-signature type dragstate"><a href="global.html#DragState">DragState</a></span>
+{:#members:dragstate}
 
 
 
@@ -2617,6 +2684,7 @@ Enum for the Dragstate of the connector in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2668,6 +2736,7 @@ Enum for the Dragstate of the connector in diagram
 
 
 ### DrawMode<span class="type-signature type string">string</span>
+{:#members:drawmode}
 
 
 
@@ -2684,6 +2753,7 @@ Enum for hilopenclose drawmode.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2735,6 +2805,7 @@ Enum for hilopenclose drawmode.
 
 
 ### DrawType<span class="type-signature type string">string</span>
+{:#members:drawtype}
 
 
 
@@ -2751,6 +2822,7 @@ Enum for chart drawType mode.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2802,6 +2874,7 @@ Enum for chart drawType mode.
 
 
 ### EdgeLabelPlacement<span class="type-signature type string">string</span>
+{:#members:edgelabelplacement}
 
 
 
@@ -2818,6 +2891,7 @@ Enum for chart edgeLabelPlacement.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2869,6 +2943,7 @@ Enum for chart edgeLabelPlacement.
 
 
 ### element
+{:#members:element}
 
 
 
@@ -2890,6 +2965,7 @@ Widget element will be automatically set in this
 
 
 ### ExportModes<span class="type-signature type exportmodes"><a href="global.html#ExportModes">ExportModes</a></span>
+{:#members:exportmodes}
 
 
 
@@ -2906,6 +2982,7 @@ Enum for the ExportModes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -2951,6 +3028,7 @@ Enum for the ExportModes in diagram
 
 
 ### FileFormats<span class="type-signature type fileformats"><a href="global.html#FileFormats">FileFormats</a></span>
+{:#members:fileformats}
 
 
 
@@ -2967,6 +3045,7 @@ Enum for the FileFormats in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3024,6 +3103,7 @@ Enum for the FileFormats in diagram
 
 
 ### FilterBarMode<span class="type-signature type string">string</span>
+{:#members:filterbarmode}
 
 
 
@@ -3040,6 +3120,7 @@ Enum for Grid Filter Bar mode
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3085,6 +3166,7 @@ Enum for Grid Filter Bar mode
 
 
 ### FilterType<span class="type-signature type string">string</span>
+{:#members:filtertype}
 
 
 
@@ -3101,6 +3183,7 @@ Enum for filtertype
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3146,6 +3229,7 @@ Enum for filtertype
 
 
 ### FitMode<span class="type-signature type fitmode"><a href="global.html#FitMode">FitMode</a></span>
+{:#members:fitmode}
 
 
 
@@ -3162,6 +3246,7 @@ Enum for the FitMode in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3213,6 +3298,7 @@ Enum for the FitMode in diagram
 
 
 ### FlowDirection<span class="type-signature type string">string</span>
+{:#members:flowdirection}
 
 
 
@@ -3229,6 +3315,7 @@ Enum for Bullet Graph Flow Direction
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3274,6 +3361,7 @@ Enum for Bullet Graph Flow Direction
 
 
 ### FlowShapes<span class="type-signature type flowshapes"><a href="global.html#FlowShapes">FlowShapes</a></span>
+{:#members:flowshapes}
 
 
 
@@ -3290,6 +3378,7 @@ Enum for the FlowShapes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3449,6 +3538,7 @@ Enum for the FlowShapes in diagram
 
 
 ### FontStyle<span class="type-signature type string">string</span>
+{:#members:fontstyle}
 
 
 
@@ -3465,6 +3555,7 @@ Enum for Font Style
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3516,6 +3607,7 @@ Enum for Font Style
 
 
 ### FontStyle<span class="type-signature type string">string</span>
+{:#members:fontstyle}
 
 
 
@@ -3532,6 +3624,7 @@ Enum for gauge FontStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3595,6 +3688,7 @@ Enum for gauge FontStyle
 
 
 ### FontStyle<span class="type-signature type string">string</span>
+{:#members:fontstyle}
 
 
 
@@ -3611,6 +3705,7 @@ Enum for gauge FontStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3674,6 +3769,7 @@ Enum for gauge FontStyle
 
 
 ### FontStyle<span class="type-signature type string">string</span>
+{:#members:fontstyle}
 
 
 
@@ -3690,6 +3786,7 @@ Enum for chart style of font.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3735,6 +3832,7 @@ Enum for chart style of font.
 
 
 ### FontWeight<span class="type-signature type string">string</span>
+{:#members:fontweight}
 
 
 
@@ -3751,6 +3849,7 @@ Enum for Font Weight
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3808,6 +3907,7 @@ Enum for Font Weight
 
 
 ### FontWeight<span class="type-signature type string">string</span>
+{:#members:fontweight}
 
 
 
@@ -3824,6 +3924,7 @@ Enum for weight of font.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3875,6 +3976,7 @@ Enum for weight of font.
 
 
 ### FooterLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerleftbuttonstyle}
 
 
 
@@ -3891,6 +3993,7 @@ Enum for IOS7FooterLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -3948,6 +4051,7 @@ Enum for IOS7FooterLeftButtonStyle
 
 
 ### FooterLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerleftbuttonstyle}
 
 
 
@@ -3964,6 +4068,7 @@ Enum for AndroidFooterLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4021,6 +4126,7 @@ Enum for AndroidFooterLeftButtonStyle
 
 
 ### FooterLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerleftbuttonstyle}
 
 
 
@@ -4037,6 +4143,7 @@ Enum for WindowsFooterLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4094,6 +4201,7 @@ Enum for WindowsFooterLeftButtonStyle
 
 
 ### FooterLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerleftbuttonstyle}
 
 
 
@@ -4110,6 +4218,7 @@ Enum for FlatFooterLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4167,6 +4276,7 @@ Enum for FlatFooterLeftButtonStyle
 
 
 ### FooterLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerleftbuttonstyle}
 
 
 
@@ -4183,6 +4293,7 @@ Enum for HeaderLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4234,6 +4345,7 @@ Enum for HeaderLeftButtonStyle
 
 
 ### FooterRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerrightbuttonstyle}
 
 
 
@@ -4250,6 +4362,7 @@ Enum for IOS7FooterRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4301,6 +4414,7 @@ Enum for IOS7FooterRightButtonStyle
 
 
 ### FooterRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerrightbuttonstyle}
 
 
 
@@ -4317,6 +4431,7 @@ Enum for AndroidFooterRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4368,6 +4483,7 @@ Enum for AndroidFooterRightButtonStyle
 
 
 ### FooterRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerrightbuttonstyle}
 
 
 
@@ -4384,6 +4500,7 @@ Enum for WindowsFooterRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4435,6 +4552,7 @@ Enum for WindowsFooterRightButtonStyle
 
 
 ### FooterRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerrightbuttonstyle}
 
 
 
@@ -4451,6 +4569,7 @@ Enum for FlatFooterRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4502,6 +4621,7 @@ Enum for FlatFooterRightButtonStyle
 
 
 ### FooterRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:footerrightbuttonstyle}
 
 
 
@@ -4518,6 +4638,7 @@ Enum for HeaderRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4563,6 +4684,7 @@ Enum for HeaderRightButtonStyle
 
 
 ### Frame<span class="type-signature type string">string</span>
+{:#members:frame}
 
 
 
@@ -4579,6 +4701,7 @@ Enum for gauge Frame
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4624,6 +4747,7 @@ Enum for gauge Frame
 
 
 ### gaugePosition<span class="type-signature type string">string</span>
+{:#members:gaugeposition}
 
 
 
@@ -4640,6 +4764,7 @@ Enum for gauge position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4727,6 +4852,7 @@ Enum for gauge position
 
 
 ### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerleftbuttonstyle}
 
 
 
@@ -4743,6 +4869,7 @@ Enum for IOS7HeaderLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4800,6 +4927,7 @@ Enum for IOS7HeaderLeftButtonStyle
 
 
 ### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerleftbuttonstyle}
 
 
 
@@ -4816,6 +4944,7 @@ Enum for AndroidHeaderLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4873,6 +5002,7 @@ Enum for AndroidHeaderLeftButtonStyle
 
 
 ### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerleftbuttonstyle}
 
 
 
@@ -4889,6 +5019,7 @@ Enum for WindowsHeaderLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -4946,6 +5077,7 @@ Enum for WindowsHeaderLeftButtonStyle
 
 
 ### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerleftbuttonstyle}
 
 
 
@@ -4962,6 +5094,7 @@ Enum for FlatHeaderLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5019,6 +5152,7 @@ Enum for FlatHeaderLeftButtonStyle
 
 
 ### HeaderLeftButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerleftbuttonstyle}
 
 
 
@@ -5035,6 +5169,7 @@ Enum for HeaderLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5086,6 +5221,7 @@ Enum for HeaderLeftButtonStyle
 
 
 ### HeaderLeftButtonStyle<span class="type-signature type string">String</span>
+{:#members:headerleftbuttonstyle}
 
 
 
@@ -5102,6 +5238,7 @@ Enum for headerLeftButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5153,6 +5290,7 @@ Enum for headerLeftButtonStyle
 
 
 ### HeaderRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerrightbuttonstyle}
 
 
 
@@ -5169,6 +5307,7 @@ Enum for IOS7HeaderRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5220,6 +5359,7 @@ Enum for IOS7HeaderRightButtonStyle
 
 
 ### HeaderRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerrightbuttonstyle}
 
 
 
@@ -5236,6 +5376,7 @@ Enum for AndroidHeaderRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5287,6 +5428,7 @@ Enum for AndroidHeaderRightButtonStyle
 
 
 ### HeaderRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerrightbuttonstyle}
 
 
 
@@ -5303,6 +5445,7 @@ Enum for WindowsHeaderRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5354,6 +5497,7 @@ Enum for WindowsHeaderRightButtonStyle
 
 
 ### HeaderRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerrightbuttonstyle}
 
 
 
@@ -5370,6 +5514,7 @@ Enum for FlatHeaderRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5421,6 +5566,7 @@ Enum for FlatHeaderRightButtonStyle
 
 
 ### HeaderRightButtonStyle<span class="type-signature type string">string</span>
+{:#members:headerrightbuttonstyle}
 
 
 
@@ -5437,6 +5583,7 @@ Enum for HeaderRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5482,6 +5629,7 @@ Enum for HeaderRightButtonStyle
 
 
 ### HeaderRightButtonStyle<span class="type-signature type string">String</span>
+{:#members:headerrightbuttonstyle}
 
 
 
@@ -5498,6 +5646,7 @@ Enum for headerRightButtonStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5543,6 +5692,7 @@ Enum for headerRightButtonStyle
 
 
 ### HeightAdjustMode<span class="type-signature type string">string</span>
+{:#members:heightadjustmode}
 
 
 
@@ -5559,6 +5709,7 @@ Enum for accordion height style
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5610,6 +5761,7 @@ Enum for accordion height style
 
 
 ### HorizontalAlignment<span class="type-signature type string">string</span>
+{:#members:horizontalalignment}
 
 
 
@@ -5626,6 +5778,7 @@ Enum for Horizontal Alignment of elements in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5677,6 +5830,7 @@ Enum for Horizontal Alignment of elements in diagram
 
 
 ### HourFormat<span class="type-signature type string">string</span>
+{:#members:hourformat}
 
 
 
@@ -5693,6 +5847,7 @@ Enum for Hour format
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5738,6 +5893,7 @@ Enum for Hour format
 
 
 ### IconName<span class="type-signature type string">string</span>
+{:#members:iconname}
 
 
 
@@ -5754,6 +5910,7 @@ Enum for toolbar icon name
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5907,6 +6064,7 @@ Enum for toolbar icon name
 
 
 ### ImagePosition<span class="type-signature type string">string</span>
+{:#members:imageposition}
 
 
 
@@ -5923,6 +6081,7 @@ Enum for ImagePosition
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -5968,6 +6127,7 @@ Enum for ImagePosition
 
 
 ### ImagePosition<span class="type-signature type string">string</span>
+{:#members:imageposition}
 
 
 
@@ -5984,6 +6144,7 @@ Enum for Tile ImagePosition
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6077,6 +6238,7 @@ Enum for Tile ImagePosition
 
 
 ### IndicatorType<span class="type-signature type string">string</span>
+{:#members:indicatortype}
 
 
 
@@ -6093,6 +6255,7 @@ Enum for gauge IndicatorType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6156,6 +6319,7 @@ Enum for gauge IndicatorType
 
 
 ### IndicatorType<span class="type-signature type string">string</span>
+{:#members:indicatortype}
 
 
 
@@ -6172,6 +6336,7 @@ Enum for gauge IndicatorType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6229,6 +6394,7 @@ Enum for gauge IndicatorType
 
 
 ### IntervalType<span class="type-signature type string">string</span>
+{:#members:intervaltype}
 
 
 
@@ -6245,6 +6411,7 @@ Enum for chart interval type.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6320,6 +6487,7 @@ Enum for chart interval type.
 
 
 ### ItemsLayoutMode<span class="type-signature type string">string</span>
+{:#members:itemslayoutmode}
 
 
 
@@ -6336,6 +6504,7 @@ Enum for TreeMap items layout mode
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6393,6 +6562,7 @@ Enum for TreeMap items layout mode
 
 
 ### LabelEditMode<span class="type-signature type string">string</span>
+{:#members:labeleditmode}
 
 
 
@@ -6409,6 +6579,7 @@ Enum for LabelEditMode of text in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6454,6 +6625,7 @@ Enum for LabelEditMode of text in diagram
 
 
 ### LabelIntersectAction<span class="type-signature type string">string</span>
+{:#members:labelintersectaction}
 
 
 
@@ -6470,6 +6642,7 @@ Enum for chart labelIntersectAction.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6545,6 +6718,7 @@ Enum for chart labelIntersectAction.
 
 
 ### LabelPlacement<span class="type-signature type string">string</span>
+{:#members:labelplacement}
 
 
 
@@ -6561,6 +6735,7 @@ Enum for Bullet Graph label placement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6606,6 +6781,7 @@ Enum for Bullet Graph label placement
 
 
 ### LabelPlacement<span class="type-signature type string">string</span>
+{:#members:labelplacement}
 
 
 
@@ -6622,6 +6798,7 @@ Enum for gauge LabelPlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6673,6 +6850,7 @@ Enum for gauge LabelPlacement
 
 
 ### LabelPlacement<span class="type-signature type string">string</span>
+{:#members:labelplacement}
 
 
 
@@ -6689,6 +6867,7 @@ Enum for gauge LabelPlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6740,6 +6919,7 @@ Enum for gauge LabelPlacement
 
 
 ### LabelPlacement<span class="type-signature type string">string</span>
+{:#members:labelplacement}
 
 
 
@@ -6756,6 +6936,7 @@ Enum for chart labelPlacement.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6801,6 +6982,7 @@ Enum for chart labelPlacement.
 
 
 ### LabelPosition<span class="type-signature type string">string</span>
+{:#members:labelposition}
 
 
 
@@ -6817,6 +6999,7 @@ Enum for Bullet Graph Label Position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6862,6 +7045,7 @@ Enum for Bullet Graph Label Position
 
 
 ### LabelPosition<span class="type-signature type string">string</span>
+{:#members:labelposition}
 
 
 
@@ -6878,6 +7062,7 @@ Enum for label position.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6923,6 +7108,7 @@ Enum for label position.
 
 
 ### LabelSize<span class="type-signature type string">string</span>
+{:#members:labelsize}
 
 
 
@@ -6939,6 +7125,7 @@ Enum for Map Label size
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -6984,6 +7171,7 @@ Enum for Map Label size
 
 
 ### LabelType<span class="type-signature type string">string</span>
+{:#members:labeltype}
 
 
 
@@ -7000,6 +7188,7 @@ Enum for gauge LabelType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7045,6 +7234,7 @@ Enum for gauge LabelType
 
 
 ### LabelType<span class="type-signature type string">string</span>
+{:#members:labeltype}
 
 
 
@@ -7061,6 +7251,7 @@ Enum for gauge LabelType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7106,6 +7297,7 @@ Enum for gauge LabelType
 
 
 ### LayerType<span class="type-signature type string">string</span>
+{:#members:layertype}
 
 
 
@@ -7122,6 +7314,7 @@ Enum for Map LayerType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7173,6 +7366,7 @@ Enum for Map LayerType
 
 
 ### LayoutOrientations<span class="type-signature type string">String</span>
+{:#members:layoutorientations}
 
 
 
@@ -7189,6 +7383,7 @@ Enum for LayoutOrientations in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7246,6 +7441,7 @@ Enum for LayoutOrientations in diagram
 
 
 ### LayoutTypes<span class="type-signature type string">String</span>
+{:#members:layouttypes}
 
 
 
@@ -7262,6 +7458,7 @@ Enum for LayoutTypes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7313,6 +7510,7 @@ Enum for LayoutTypes in diagram
 
 
 ### LegendIcons<span class="type-signature type string">string</span>
+{:#members:legendicons}
 
 
 
@@ -7329,6 +7527,7 @@ Enum for Map legend icons
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7374,6 +7573,7 @@ Enum for Map legend icons
 
 
 ### LegendMode<span class="type-signature type string">string</span>
+{:#members:legendmode}
 
 
 
@@ -7390,6 +7590,7 @@ Enum for Map Legend mode
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7435,6 +7636,7 @@ Enum for Map Legend mode
 
 
 ### LegendType<span class="type-signature type string">string</span>
+{:#members:legendtype}
 
 
 
@@ -7451,6 +7653,7 @@ Enum for Map Legend type
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7496,6 +7699,7 @@ Enum for Map Legend type
 
 
 ### LineCap<span class="type-signature type string">string</span>
+{:#members:linecap}
 
 
 
@@ -7512,6 +7716,7 @@ Enum for linecap.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7563,6 +7768,7 @@ Enum for linecap.
 
 
 ### LineJoin<span class="type-signature type string">string</span>
+{:#members:linejoin}
 
 
 
@@ -7579,6 +7785,7 @@ Enum for line join.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7630,6 +7837,7 @@ Enum for line join.
 
 
 ### LiveTileType<span class="type-signature type string">string</span>
+{:#members:livetiletype}
 
 
 
@@ -7646,6 +7854,7 @@ Enum for LiveTileType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7697,6 +7906,7 @@ Enum for LiveTileType
 
 
 ### MarkerType<span class="type-signature type string">string</span>
+{:#members:markertype}
 
 
 
@@ -7713,6 +7923,7 @@ Enum for gauge MarkerType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7818,6 +8029,7 @@ Enum for gauge MarkerType
 
 
 ### MarkerType<span class="type-signature type string">string</span>
+{:#members:markertype}
 
 
 
@@ -7834,6 +8046,7 @@ Enum for gauge MarkerType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -7939,6 +8152,7 @@ Enum for gauge MarkerType
 
 
 ### Mode<span class="type-signature type string">string</span>
+{:#members:mode}
 
 
 
@@ -7955,6 +8169,7 @@ Enum for mode
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8000,6 +8215,7 @@ Enum for mode
 
 
 ### Mode<span class="type-signature type string">string</span>
+{:#members:mode}
 
 
 
@@ -8016,6 +8232,7 @@ Enum for mode
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8073,6 +8290,7 @@ Enum for mode
 
 
 ### model
+{:#members:model}
 
 
 
@@ -8094,6 +8312,7 @@ User defined model will be automatically set in this
 
 
 ### NeedleType<span class="type-signature type string">string</span>
+{:#members:needletype}
 
 
 
@@ -8110,6 +8329,7 @@ Enum for gauge NeedleType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8173,6 +8393,7 @@ Enum for gauge NeedleType
 
 
 ### NodeConstraints<span class="type-signature type nodeconstraints"><a href="global.html#NodeConstraints">NodeConstraints</a></span>
+{:#members:nodeconstraints}
 
 
 
@@ -8189,6 +8410,7 @@ Enum for the NodeConstraints in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8342,6 +8564,7 @@ Enum for the NodeConstraints in diagram
 
 
 ### Orientation<span class="type-signature type string">string</span>
+{:#members:orientation}
 
 
 
@@ -8358,6 +8581,7 @@ Enum for Bullet Graph Orientation
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8403,6 +8627,7 @@ Enum for Bullet Graph Orientation
 
 
 ### Orientation<span class="type-signature type string">string</span>
+{:#members:orientation}
 
 
 
@@ -8419,6 +8644,7 @@ Enum for chart orientation.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8464,6 +8690,7 @@ Enum for chart orientation.
 
 
 ### Orientation<span class="type-signature type string">string</span>
+{:#members:orientation}
 
 
 
@@ -8480,6 +8707,7 @@ Enum for ProgressbarOrientation
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8525,6 +8753,7 @@ Enum for ProgressbarOrientation
 
 
 ### Orientation<span class="type-signature type string">string</span>
+{:#members:orientation}
 
 
 
@@ -8541,6 +8770,7 @@ Enum for RatingOrientation
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8586,6 +8816,7 @@ Enum for RatingOrientation
 
 
 ### Orientation<span class="type-signature type string">string</span>
+{:#members:orientation}
 
 
 
@@ -8602,6 +8833,7 @@ Enum for Orientation
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8647,6 +8879,7 @@ Enum for Orientation
 
 
 ### Orientation<span class="type-signature type string">string</span>
+{:#members:orientation}
 
 
 
@@ -8663,6 +8896,7 @@ Enum for slider
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8708,6 +8942,7 @@ Enum for slider
 
 
 ### OuterCustomLabelPosition<span class="type-signature type string">string</span>
+{:#members:outercustomlabelposition}
 
 
 
@@ -8724,6 +8959,7 @@ Enum for gauge OuterCustomLabelPosition
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8781,6 +9017,7 @@ Enum for gauge OuterCustomLabelPosition
 
 
 ### OuterCustomLabelPosition<span class="type-signature type string">string</span>
+{:#members:outercustomlabelposition}
 
 
 
@@ -8797,6 +9034,7 @@ Enum for gauge OuterCustomLabelPosition
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8854,6 +9092,7 @@ Enum for gauge OuterCustomLabelPosition
 
 
 ### pageOrientation<span class="type-signature type enum">enum</span>
+{:#members:pageorientation}
 
 
 
@@ -8899,6 +9138,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageOrientation: "portrait"}}); <
 
 
 ### PageOrientations<span class="type-signature type string">String</span>
+{:#members:pageorientations}
 
 
 
@@ -8915,6 +9155,7 @@ Enum for PageOrientations in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -8960,6 +9201,7 @@ Enum for PageOrientations in diagram
 
 
 ### PagerDisplay<span class="type-signature type string">string</span>
+{:#members:pagerdisplay}
 
 
 
@@ -8976,6 +9218,7 @@ Enum for Grid Pager Display
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9021,6 +9264,7 @@ Enum for Grid Pager Display
 
 
 ### PagerPositionHorizontal<span class="type-signature type string">string</span>
+{:#members:pagerpositionhorizontal}
 
 
 
@@ -9037,6 +9281,7 @@ Enum for PagerPositionHorizontal
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9082,6 +9327,7 @@ Enum for PagerPositionHorizontal
 
 
 ### PagerPositionVertical<span class="type-signature type string">string</span>
+{:#members:pagerpositionvertical}
 
 
 
@@ -9098,6 +9344,7 @@ Enum for PagerPositionVertical
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9143,6 +9390,7 @@ Enum for PagerPositionVertical
 
 
 ### PagerType<span class="type-signature type string">string</span>
+{:#members:pagertype}
 
 
 
@@ -9159,6 +9407,7 @@ Enum for Grid Pager Type
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9204,6 +9453,7 @@ Enum for Grid Pager Type
 
 
 ### PointerPlacement<span class="type-signature type string">string</span>
+{:#members:pointerplacement}
 
 
 
@@ -9220,6 +9470,7 @@ Enum for gauge PointerPlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9271,6 +9522,7 @@ Enum for gauge PointerPlacement
 
 
 ### PointerPlacement<span class="type-signature type string">string</span>
+{:#members:pointerplacement}
 
 
 
@@ -9287,6 +9539,7 @@ Enum for gauge PointerPlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9338,6 +9591,7 @@ Enum for gauge PointerPlacement
 
 
 ### PointerType<span class="type-signature type string">string</span>
+{:#members:pointertype}
 
 
 
@@ -9354,6 +9608,7 @@ Enum for gauge PointerType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9399,6 +9654,7 @@ Enum for gauge PointerType
 
 
 ### PortConstraints<span class="type-signature type portconstraints"><a href="global.html#PortConstraints">PortConstraints</a></span>
+{:#members:portconstraints}
 
 
 
@@ -9415,6 +9671,7 @@ Enum for PortConstraints in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9460,6 +9717,7 @@ Enum for PortConstraints in diagram
 
 
 ### PortShapes<span class="type-signature type string">string</span>
+{:#members:portshapes}
 
 
 
@@ -9476,6 +9734,7 @@ Enum for various port shapes in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9533,6 +9792,7 @@ Enum for various port shapes in diagram
 
 
 ### PortVisibility<span class="type-signature type portvisibility"><a href="global.html#PortVisibility">PortVisibility</a></span>
+{:#members:portvisibility}
 
 
 
@@ -9549,6 +9809,7 @@ Enum for port visibility in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9612,6 +9873,7 @@ Enum for port visibility in diagram
 
 
 ### Position<span class="type-signature type string">string</span>
+{:#members:position}
 
 
 
@@ -9628,6 +9890,7 @@ Enum for Map Navigation Control and Legend dock position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9721,6 +9984,7 @@ Enum for Map Navigation Control and Legend dock position
 
 
 ### Position<span class="type-signature type string">string</span>
+{:#members:position}
 
 
 
@@ -9737,6 +10001,7 @@ Enum for position.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9788,6 +10053,7 @@ Enum for position.
 
 
 ### Position<span class="type-signature type string">string</span>
+{:#members:position}
 
 
 
@@ -9804,6 +10070,7 @@ Enum for Position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9849,6 +10116,7 @@ Enum for Position
 
 
 ### Position<span class="type-signature type string">string</span>
+{:#members:position}
 
 
 
@@ -9865,6 +10133,7 @@ Enum for Position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9910,6 +10179,7 @@ Enum for Position
 
 
 ### Position<span class="type-signature type string">string</span>
+{:#members:position}
 
 
 
@@ -9926,6 +10196,7 @@ Enum for Position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -9995,6 +10266,7 @@ Enum for Position
 
 
 ### Position<span class="type-signature type string">string</span>
+{:#members:position}
 
 
 
@@ -10011,6 +10283,7 @@ Enum for Position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10056,6 +10329,7 @@ Enum for Position
 
 
 ### Position<span class="type-signature type string">string</span>
+{:#members:position}
 
 
 
@@ -10072,6 +10346,7 @@ Enum for toolbar position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10117,6 +10392,7 @@ Enum for toolbar position
 
 
 ### Precision<span class="type-signature type string">string</span>
+{:#members:precision}
 
 
 
@@ -10133,6 +10409,7 @@ Enum for RatingPrecision
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10184,6 +10461,7 @@ Enum for RatingPrecision
 
 
 ### PyramidMode<span class="type-signature type string">string</span>
+{:#members:pyramidmode}
 
 
 
@@ -10200,6 +10478,7 @@ Enum for chart pyramid mode.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10245,6 +10524,7 @@ Enum for chart pyramid mode.
 
 
 ### RangePadding<span class="type-signature type string">string</span>
+{:#members:rangepadding}
 
 
 
@@ -10261,6 +10541,7 @@ Enum for range padding.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10324,6 +10605,7 @@ Enum for range padding.
 
 
 ### RangePlacement<span class="type-signature type string">string</span>
+{:#members:rangeplacement}
 
 
 
@@ -10340,6 +10622,7 @@ Enum for gauge RangePlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10391,6 +10674,7 @@ Enum for gauge RangePlacement
 
 
 ### RangePlacement<span class="type-signature type string">string</span>
+{:#members:rangeplacement}
 
 
 
@@ -10407,6 +10691,7 @@ Enum for gauge RangePlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10458,6 +10743,7 @@ Enum for gauge RangePlacement
 
 
 ### Region<span class="type-signature type region"><a href="global.html#Region">Region</a></span>
+{:#members:region}
 
 
 
@@ -10474,6 +10760,7 @@ Enum for the Region in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10519,6 +10806,7 @@ Enum for the Region in diagram
 
 
 ### RenderMode<span class="type-signature type string">string</span>
+{:#members:rendermode}
 
 
 
@@ -10535,6 +10823,7 @@ Enum for RenderMode
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10592,6 +10881,7 @@ Enum for RenderMode
 
 
 ### ScaleType<span class="type-signature type string">string</span>
+{:#members:scaletype}
 
 
 
@@ -10608,6 +10898,7 @@ Enum for gauge ScaleType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10659,6 +10950,7 @@ Enum for gauge ScaleType
 
 
 ### scrollableArea<span class="type-signature type object">object</span>
+{:#members:scrollablearea}
 
 
 
@@ -10704,6 +10996,7 @@ $("#diagramContent").ejDiagram({pageSettings: {scrollableArea: { x: 0, y: 0, wid
 
 
 ### scrollLimit<span class="type-signature type enum">enum</span>
+{:#members:scrolllimit}
 
 
 
@@ -10749,6 +11042,7 @@ $("#diagramContent").ejDiagram({pageSettings: {scrollLimit: "infinity"}}); </cod
 
 
 ### ScrollLimit<span class="type-signature type string">String</span>
+{:#members:scrolllimit}
 
 
 
@@ -10765,6 +11059,7 @@ Enum for ScrollLimit in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10816,6 +11111,7 @@ Enum for ScrollLimit in diagram
 
 
 ### Segments<span class="type-signature type string">string</span>
+{:#members:segments}
 
 
 
@@ -10832,6 +11128,7 @@ Enum for various connector segments in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10883,6 +11180,7 @@ Enum for various connector segments in diagram
 
 
 ### SelectionMode<span class="type-signature type string">string</span>
+{:#members:selectionmode}
 
 
 
@@ -10899,6 +11197,7 @@ Enum for Map selection mode
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -10944,6 +11243,7 @@ Enum for Map selection mode
 
 
 ### SelectorConstraints<span class="type-signature type selectorconstraints"><a href="global.html#SelectorConstraints">SelectorConstraints</a></span>
+{:#members:selectorconstraints}
 
 
 
@@ -10960,6 +11260,7 @@ Enum to specify the SelectorConstraints in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11023,6 +11324,7 @@ Enum to specify the SelectorConstraints in diagram
 
 
 ### Shape<span class="type-signature type string">string</span>
+{:#members:shape}
 
 
 
@@ -11039,6 +11341,7 @@ Enum for the shape of indicator symbol
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11180,6 +11483,7 @@ Enum for the shape of indicator symbol
 
 
 ### Shape<span class="type-signature type string">string</span>
+{:#members:shape}
 
 
 
@@ -11196,6 +11500,7 @@ Enum for chart shape.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11349,6 +11654,7 @@ Enum for chart shape.
 
 
 ### Shape<span class="type-signature type string">string</span>
+{:#members:shape}
 
 
 
@@ -11365,6 +11671,7 @@ Enum for RatingShape
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11440,6 +11747,7 @@ Enum for RatingShape
 
 
 ### Shapes<span class="type-signature type string">string</span>
+{:#members:shapes}
 
 
 
@@ -11456,6 +11764,7 @@ Enum for various Shapes of node in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11537,6 +11846,7 @@ Enum for various Shapes of node in diagram
 
 
 ### ShowOn<span class="type-signature type string">string</span>
+{:#members:showon}
 
 
 
@@ -11553,6 +11863,7 @@ Enum for Menu ShowOn
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11598,6 +11909,7 @@ Enum for Menu ShowOn
 
 
 ### SnapConstraints<span class="type-signature type enum">enum</span>
+{:#members:snapconstraints}
 
 
 
@@ -11647,6 +11959,7 @@ $("#diagramContent").ejDiagram({snapSettings: gridline} });
 
 
 ### SnapConstraints<span class="type-signature type snapconstraints"><a href="global.html#SnapConstraints">SnapConstraints</a></span>
+{:#members:snapconstraints}
 
 
 
@@ -11663,6 +11976,7 @@ Enum for SnapConstraints in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11744,6 +12058,7 @@ Enum for SnapConstraints in diagram
 
 
 ### SortOrder<span class="type-signature type string">string</span>
+{:#members:sortorder}
 
 
 
@@ -11760,6 +12075,7 @@ Enum for sortorder
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11805,6 +12121,7 @@ Enum for sortorder
 
 
 ### Style<span class="type-signature type string">string</span>
+{:#members:style}
 
 
 
@@ -11821,6 +12138,7 @@ Enum for IOS7style
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11878,6 +12196,7 @@ Enum for IOS7style
 
 
 ### Style<span class="type-signature type string">string</span>
+{:#members:style}
 
 
 
@@ -11894,6 +12213,7 @@ Enum for AndroidStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -11945,6 +12265,7 @@ Enum for AndroidStyle
 
 
 ### Style<span class="type-signature type string">string</span>
+{:#members:style}
 
 
 
@@ -11961,6 +12282,7 @@ Enum for windowsstyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12006,6 +12328,7 @@ Enum for windowsstyle
 
 
 ### Style<span class="type-signature type string">string</span>
+{:#members:style}
 
 
 
@@ -12022,6 +12345,7 @@ Enum for FlatStyle
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12073,6 +12397,7 @@ Enum for FlatStyle
 
 
 ### SymbologyType<span class="type-signature type string">string</span>
+{:#members:symbologytype}
 
 
 
@@ -12089,6 +12414,7 @@ Enum for Symbol type.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12194,6 +12520,7 @@ Enum for Symbol type.
 
 
 ### TextAlign<span class="type-signature type string">string</span>
+{:#members:textalign}
 
 
 
@@ -12210,6 +12537,7 @@ Enum for the Text Alignment in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12261,6 +12589,7 @@ Enum for the Text Alignment in diagram
 
 
 ### TextAlign<span class="type-signature type string">string</span>
+{:#members:textalign}
 
 
 
@@ -12277,6 +12606,7 @@ Enum for gauge TextAlign
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12322,6 +12652,7 @@ Enum for gauge TextAlign
 
 
 ### TextAlignment<span class="type-signature type string">string</span>
+{:#members:textalignment}
 
 
 
@@ -12338,6 +12669,7 @@ Enum for text alignment.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12389,6 +12721,7 @@ Enum for text alignment.
 
 
 ### TextAlignment<span class="type-signature type string">string</span>
+{:#members:textalignment}
 
 
 
@@ -12405,6 +12738,7 @@ Enum for Tile TextAlignment
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12462,6 +12796,7 @@ Enum for Tile TextAlignment
 
 
 ### TextDecorations<span class="type-signature type string">string</span>
+{:#members:textdecorations}
 
 
 
@@ -12478,6 +12813,7 @@ Enum for TextDecorations in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12535,6 +12871,7 @@ Enum for TextDecorations in diagram
 
 
 ### TextPosition<span class="type-signature type string">string</span>
+{:#members:textposition}
 
 
 
@@ -12551,6 +12888,7 @@ Enum for Tile TextPosition
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12596,6 +12934,7 @@ Enum for Tile TextPosition
 
 
 ### TextWrapping<span class="type-signature type string">string</span>
+{:#members:textwrapping}
 
 
 
@@ -12612,6 +12951,7 @@ Enum for TextWrapping in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12663,6 +13003,7 @@ Enum for TextWrapping in diagram
 
 
 ### Theme<span class="type-signature type string">string</span>
+{:#members:theme}
 
 
 
@@ -12679,6 +13020,7 @@ Enum for chart themes.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12766,6 +13108,7 @@ Enum for chart themes.
 
 
 ### Theme<span class="type-signature type string">string</span>
+{:#members:theme}
 
 
 
@@ -12782,6 +13125,7 @@ Enum for Theme
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12833,6 +13177,7 @@ Enum for Theme
 
 
 ### Themes<span class="type-signature type string">string</span>
+{:#members:themes}
 
 
 
@@ -12849,6 +13194,7 @@ Enum for Bullet Graph Theme3
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12894,6 +13240,7 @@ Enum for Bullet Graph Theme3
 
 
 ### Themes<span class="type-signature type string">string</span>
+{:#members:themes}
 
 
 
@@ -12910,6 +13257,7 @@ Enum for gauge Themes
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -12955,6 +13303,7 @@ Enum for gauge Themes
 
 
 ### Themes<span class="type-signature type string">string</span>
+{:#members:themes}
 
 
 
@@ -12971,6 +13320,7 @@ Enum for gauge Themes
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13016,6 +13366,7 @@ Enum for gauge Themes
 
 
 ### Themes<span class="type-signature type string">string</span>
+{:#members:themes}
 
 
 
@@ -13032,6 +13383,7 @@ Enum for gauge Themes
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13077,6 +13429,7 @@ Enum for gauge Themes
 
 
 ### ThumbStyle<span class="type-signature type string">string</span>
+{:#members:thumbstyle}
 
 
 
@@ -13093,6 +13446,7 @@ Enum for slider
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13138,6 +13492,7 @@ Enum for slider
 
 
 ### TickPlacement<span class="type-signature type string">string</span>
+{:#members:tickplacement}
 
 
 
@@ -13154,6 +13509,7 @@ Enum for Bullet Graph tick placement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13199,6 +13555,7 @@ Enum for Bullet Graph tick placement
 
 
 ### TickPlacement<span class="type-signature type string">string</span>
+{:#members:tickplacement}
 
 
 
@@ -13215,6 +13572,7 @@ Enum for gauge TickPlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13266,6 +13624,7 @@ Enum for gauge TickPlacement
 
 
 ### TickPlacement<span class="type-signature type string">string</span>
+{:#members:tickplacement}
 
 
 
@@ -13282,6 +13641,7 @@ Enum for gauge TickPlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13333,6 +13693,7 @@ Enum for gauge TickPlacement
 
 
 ### TickPosition<span class="type-signature type string">string</span>
+{:#members:tickposition}
 
 
 
@@ -13349,6 +13710,7 @@ Enum for Bullet Graph Tick Position
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13400,6 +13762,7 @@ Enum for Bullet Graph Tick Position
 
 
 ### TickType<span class="type-signature type string">string</span>
+{:#members:ticktype}
 
 
 
@@ -13416,6 +13779,7 @@ Enum for gauge TickType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13461,6 +13825,7 @@ Enum for gauge TickType
 
 
 ### TickType<span class="type-signature type string">string</span>
+{:#members:ticktype}
 
 
 
@@ -13477,6 +13842,7 @@ Enum for gauge TickType
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13522,6 +13888,7 @@ Enum for gauge TickType
 
 
 ### TileSize<span class="type-signature type string">string</span>
+{:#members:tilesize}
 
 
 
@@ -13538,6 +13905,7 @@ Enum for Tile Size
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13595,6 +13963,7 @@ Enum for Tile Size
 
 
 ### Tool<span class="type-signature type tool"><a href="global.html#Tool">Tool</a></span>
+{:#members:tool}
 
 
 
@@ -13611,6 +13980,7 @@ Enum for the Tool in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13680,6 +14050,7 @@ Enum for the Tool in diagram
 
 
 ### Type<span class="type-signature type string">string</span>
+{:#members:type}
 
 
 
@@ -13696,6 +14067,7 @@ Enum for chart series type.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13891,6 +14263,7 @@ Enum for chart series type.
 
 
 ### Type<span class="type-signature type string">string</span>
+{:#members:type}
 
 
 
@@ -13907,6 +14280,7 @@ Enum for ej.mobile.Menu.IOS7.Type
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -13958,6 +14332,7 @@ Enum for ej.mobile.Menu.IOS7.Type
 
 
 ### Type<span class="type-signature type string">string</span>
+{:#members:type}
 
 
 
@@ -13974,6 +14349,7 @@ Enum for ej.mobile.Menu.Android.Type
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14031,6 +14407,7 @@ Enum for ej.mobile.Menu.Android.Type
 
 
 ### Type<span class="type-signature type string">string</span>
+{:#members:type}
 
 
 
@@ -14047,6 +14424,7 @@ Enum for ej.mobile.Menu.Windows.Type
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14092,6 +14470,7 @@ Enum for ej.mobile.Menu.Windows.Type
 
 
 ### Unit<span class="type-signature type string">string</span>
+{:#members:unit}
 
 
 
@@ -14108,6 +14487,7 @@ Enum for chart unit.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14153,6 +14533,7 @@ Enum for chart unit.
 
 
 ### UnitTextPlacement<span class="type-signature type string">string</span>
+{:#members:unittextplacement}
 
 
 
@@ -14169,6 +14550,7 @@ Enum for gauge UnitTextPlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14214,6 +14596,7 @@ Enum for gauge UnitTextPlacement
 
 
 ### UnitTextPlacement<span class="type-signature type string">string</span>
+{:#members:unittextplacement}
 
 
 
@@ -14230,6 +14613,7 @@ Enum for gauge UnitTextPlacement
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14275,6 +14659,7 @@ Enum for gauge UnitTextPlacement
 
 
 ### UserHandlePositions<span class="type-signature type string">String</span>
+{:#members:userhandlepositions}
 
 
 
@@ -14291,6 +14676,7 @@ Enum to specify the userhandle position in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14372,6 +14758,7 @@ Enum to specify the userhandle position in diagram
 
 
 ### ValueType<span class="type-signature type string">string</span>
+{:#members:valuetype}
 
 
 
@@ -14388,6 +14775,7 @@ Enum for chart valueType.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14445,6 +14833,7 @@ Enum for chart valueType.
 
 
 ### VerticalAlignment<span class="type-signature type string">string</span>
+{:#members:verticalalignment}
 
 
 
@@ -14461,6 +14850,7 @@ Enum for Vertical Alignment of elements in diagram
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14512,6 +14902,7 @@ Enum for Vertical Alignment of elements in diagram
 
 
 ### ZIndex<span class="type-signature type string">string</span>
+{:#members:zindex}
 
 
 
@@ -14528,6 +14919,7 @@ Enum for zIndex.
 
 
 #### Properties:
+{:#members:properties:}
 
 
 
@@ -14580,6 +14972,7 @@ Enum for zIndex.
 
 
 ### clearShapeSelection<span class="signature">()</span>
+{:#methods:clearshapeselection}
 
 
 
@@ -14601,6 +14994,7 @@ Clear Selected Map Shapes
 
 
 ### refreshMarkers<span class="signature">()</span>
+{:#methods:refreshmarkers}
 
 
 

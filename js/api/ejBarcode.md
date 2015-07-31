@@ -50,6 +50,7 @@ Requires
 
 
 ### barcodeToTextGapHeight<span class="type-signature type number">number</span>
+{:#members:barcodetotextgapheight}
 
 
 
@@ -105,6 +106,7 @@ Example
 
 
 ### barHeight<span class="type-signature type number">number</span>
+{:#members:barheight}
 
 
 
@@ -160,6 +162,7 @@ Example
 
 
 ### darkBarColor<span class="type-signature type object">object</span>
+{:#members:darkbarcolor}
 
 
 
@@ -215,6 +218,7 @@ Example
 
 
 ### displayText<span class="type-signature type boolean">boolean</span>
+{:#members:displaytext}
 
 
 
@@ -272,6 +276,7 @@ Example
 
 
 ### enabled<span class="type-signature type boolean">boolean</span>
+{:#members:enabled}
 
 
 
@@ -310,6 +315,7 @@ Default Value:
 
 
 ### encodeStartStopSymbol<span class="type-signature type boolean">number</span>
+{:#members:encodestartstopsymbol}
 
 
 
@@ -367,6 +373,7 @@ Example
 
 
 ### lightBarColor<span class="type-signature type object">object</span>
+{:#members:lightbarcolor}
 
 
 
@@ -422,6 +429,7 @@ Example
 
 
 ### narrowBarWidth<span class="type-signature type number">number</span>
+{:#members:narrowbarwidth}
 
 
 
@@ -478,6 +486,7 @@ Example
 
 
 ### quietZone<span class="type-signature type object">object</span>
+{:#members:quietzone}
 
 
 
@@ -498,6 +507,7 @@ Specifies the width of the quiet zone. In barcode, a quiet zone is the blank mar
 
 
 ### quietZone.all<span class="type-signature type number">number</span>
+{:#members:quietzone-all}
 
 
 
@@ -555,6 +565,7 @@ $("#barcode").ejBarcode({
 
 
 ### quietZone.bottom<span class="type-signature type number">number</span>
+{:#members:quietzone-bottom}
 
 
 
@@ -612,6 +623,7 @@ $("#barcode").ejBarcode({
 
 
 ### quietZone.left<span class="type-signature type number">number</span>
+{:#members:quietzone-left}
 
 
 
@@ -669,6 +681,7 @@ $("#barcode").ejBarcode({
 
 
 ### quietZone.right<span class="type-signature type number">number</span>
+{:#members:quietzone-right}
 
 
 
@@ -726,6 +739,7 @@ $("#barcode").ejBarcode({
 
 
 ### quietZone.top<span class="type-signature type number">number</span>
+{:#members:quietzone-top}
 
 
 
@@ -783,6 +797,7 @@ $("#barcode").ejBarcode({
 
 
 ### symbologyType<span class="type-signature type enum">enum</span>
+{:#members:symbologytype}
 
 Specifies the type of the Barcode. See <a href="global.html#SymbologyType">SymbologyType</a>
 
@@ -822,6 +837,7 @@ $("#barcode").ejBarcode({
 
 
 ### text<span class="type-signature type string">string</span>
+{:#members:text}
 
 
 
@@ -875,6 +891,7 @@ Example
 
 
 ### textColor<span class="type-signature type object">object</span>
+{:#members:textcolor}
 
 
 
@@ -932,6 +949,7 @@ $("#barcode").ejBarcode({
 
 
 ### wideBarWidth<span class="type-signature type number">number</span>
+{:#members:widebarwidth}
 
 
 
@@ -987,6 +1005,7 @@ Example
 
 
 ### xDimension<span class="type-signature type number">number</span>
+{:#members:xdimension}
 
 
 
@@ -1048,6 +1067,7 @@ $("#barcode").ejBarcode({
 
 
 ### disable<span class="signature">()</span>
+{:#methods:disable}
 
 
 
@@ -1093,6 +1113,7 @@ $("#barcode").ejBarcode("disable");
 
 
 ### enable<span class="signature">()</span>
+{:#methods:enable}
 
 
 
@@ -1145,6 +1166,7 @@ $("#barcode").ejBarcode("enable");
 
 
 ### load
+{:#events:load}
 
 
 
