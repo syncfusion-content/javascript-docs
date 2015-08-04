@@ -4290,6 +4290,19 @@ Default Value:
 * []
 
 
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
+&lt;script&gt;
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowFiltering: true, 
+   filterSettings: {  filterType: "menu", filteredColumns: [{ field: "ShipCity", operator: "startswith", value: "re", predicate: "and" }] }                     
+});
+&lt;/script&gt;</code>
+</pre>
 
 
 
