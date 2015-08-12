@@ -177,4 +177,4 @@ This section contains guidelines on naming files, sections, documents and other 
 * Use the JS API naming standards mentioned in the following page - [API Naming Standards](https://syncfusion.atlassian.net/wiki/display/JS/API+Naming+Standards)
 
 # See Also
-[Style Guide]()
+[Style Guide](/style-guide.md)
