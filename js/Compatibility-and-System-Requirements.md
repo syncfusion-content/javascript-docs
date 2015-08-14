@@ -14,6 +14,7 @@ documentation: ug
 Syncfusion JavaScript components are compatible with all the major browsers which includes the following - 
 
 * Internet Explorer 8 +
+* Microsoft Edge
 * Mozilla Firefox 22 +
 * Chrome 17 +
 * Opera 12 +
